@@ -8,7 +8,7 @@
 
 **Where the applications are.** An anomaly is a property of whatever fermions circulate and of whatever representation they carry, so the application is always a sector calculation, and this category has one:
 
-- The electroweak sector, where the fifteen fields of a generation sit in chiral representations and the four conditions $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$ and $\sum_{\mathrm{colour}}Y=0$ are the statement that the gauge anomaly cancels. The application is [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html), which verifies all four generation by generation.
+- The electroweak sector, where the fifteen fields of a generation sit in chiral representations and the four conditions $\sum Y=0$, $\sum Y^3=0$, $\sum YT_3^2=0$ and $\sum_{\mathrm{colour}}Y=0$ are the statement that the gauge anomaly cancels. The application is [Anomalies and Anomaly Cancellation in Pati–Salam Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html), which verifies all four generation by generation.
 - The strong sector, where the same axial current is broken by the same mechanism and the survivor is the flavour-singlet current. The application is [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html), which uses the density this derivation produces.
 
 ## The Measure and the Chiral Rotation
@@ -66,7 +66,7 @@ The algebra enters at two points, and neither is the coefficient.
 - **Imported.** The path-integral measure, the heat-kernel expansion, the regulator and the coefficient. These are standard field theory, transcribed.
 - **Not supplied.** A spectrum. This article names no multiplet; which fermions circulate, and in which representation, is the sector's business.
 
-**Where the applications are.** [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) applies the general coefficient to the electroweak spectrum and checks the four cancellation conditions. [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html) uses the density in the strong sector, where the broken current is the flavour-singlet axial one.
+**Where the applications are.** [Anomalies and Anomaly Cancellation in Pati–Salam Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) applies the general coefficient to the electroweak spectrum and checks the four cancellation conditions. [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html) uses the density in the strong sector, where the broken current is the flavour-singlet axial one.
 
 ## Summary of Notation
 

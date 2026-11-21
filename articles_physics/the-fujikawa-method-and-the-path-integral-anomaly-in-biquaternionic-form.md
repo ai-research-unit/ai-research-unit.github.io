@@ -42,7 +42,7 @@ The framework results used here are those of the companion articles:
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the topological density and the winding of the gauge field.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field strength and the invariants $I_1$ and $I_2$.
 - Companion article *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, for the one-sided gradient, the chiral pair, and the pseudoscalar.
-- Companion article *Anomalies and Anomaly Cancellation in Biquaternionic Form*, for the diagrammatic derivation with which the result is compared.
+- Companion article *Anomalies and Anomaly Cancellation in Pati–Salam Model: Four Conditions Become None*, for the diagrammatic derivation with which the result is compared.
 
 ## The Gradient, the Pseudoscalar and the Two Values
 

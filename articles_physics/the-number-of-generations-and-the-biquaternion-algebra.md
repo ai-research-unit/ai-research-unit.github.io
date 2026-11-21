@@ -18,7 +18,7 @@ The framework results used here are those of the companion articles:
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the topological charge and the zero-mode count per flavour.
 - Companion article *The Neutrino and Majorana Fermions in Biquaternionic Form*, for the reality structure $\mathcal{C}$ on the module.
 - Companion article *The Spinor Module in Biquaternionic Form and Its Lorentz Action*, for the module and the generation-independent trace.
-- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, for the place of the flavour question in the programme.
+- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the place of the flavour question in the programme.
 
 ## The Counting of Generations in the Standard Model
 

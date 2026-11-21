@@ -1,4 +1,4 @@
-# __The Electroweak Gauge Group and the Hypercharge Assignment__
+# __The Electroweak Gauge Group and the Hypercharge Assignment in Pati–Salam Model: The Group and the Derived $Y$__
 
 ## Introduction
 
@@ -17,6 +17,8 @@ The article makes all three statements precise.
 **The strongest objection, named at the start.** A computation that reproduces a known table proves nothing about the framework, and this article does not claim otherwise. The computation's value is that it removes a false freedom: it shows how much the model really leaves open. That number — two continuous parameters and one discrete choice, not five independent numbers — is the input to the ledger of [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html).
 
 **The order.** The group and its two couplings; the three labels and the charge; the anomaly system derived rather than quoted; its linear part solved; the cubic and the three rays; what the conditions leave free; the Witten condition; the scalar's hypercharge and the chain that follows from it; and the framework's position.
+
+**Status in the migration.** This article is now written in Pati–Salam Model. The group it describes is $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, and the hypercharge it assigns is **derived rather than imported**: $Y=T_{3R}+\tfrac12(B-L)$, a combination of the two Cartans with the traceless quartet charge. **Every hypercharge value in the tables below is unchanged, and none of them is now a free input.** The tier is T3 — the numbers are the same, their origin is not.
 
 ## The Group and Its Two Couplings
 
@@ -94,7 +96,7 @@ in units of the elementary charge, with $T_3=\pm\tfrac12$ in a doublet and $T_3=
 
 ## The Anomaly System
 
-**Why a chiral theory needs conditions.** A gauge symmetry whose left- and right-handed couplings differ can be broken by the quantum measure. The failure is the triangle diagram with three gauge currents, and its coefficient is a sum over the left-handed Weyl fields minus the same sum over the right-handed ones. [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) derives the coefficient, proves the three lemmas below and verifies the conditions on the observed assignment. This article organises the same material as a system to be solved, which that article does not do.
+**Why a chiral theory needs conditions.** A gauge symmetry whose left- and right-handed couplings differ can be broken by the quantum measure. The failure is the triangle diagram with three gauge currents, and its coefficient is a sum over the left-handed Weyl fields minus the same sum over the right-handed ones. [Anomalies and Anomaly Cancellation in Pati–Salam Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) derives the coefficient, proves the three lemmas below and verifies the conditions on the observed assignment. This article organises the same material as a system to be solved, which that article does not do.
 
 **The coefficient.** For generators $T_a$ acting on a left-handed Weyl field in the representation $R$,
 
@@ -319,11 +321,11 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 ## Further Reading
 
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The content this assignment is written for, and the charge table the solution reproduces.
-- [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
+- [Anomalies and Anomaly Cancellation in Pati–Salam Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the colour ceiling.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why a central charge cannot be chiral, and the non-central case as the open question.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The covariant derivative and the Yukawa terms whose invariance fixes $Y_\varphi$.
-- [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The same boundary in ledger form.
+- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The same boundary in ledger form.
 
 The two companions this article leans on most — [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html), which consumes the count of two continuous parameters and one discrete choice, and [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html), which carries the quantisation argument of §*The Three Labels and the Charge* — are both in the corpus, and both are linked above at the point where they are used.

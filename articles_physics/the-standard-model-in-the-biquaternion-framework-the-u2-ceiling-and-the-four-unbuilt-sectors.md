@@ -1,4 +1,4 @@
-# __The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors__
+# __The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors__
 
 ## Introduction
 
@@ -21,6 +21,8 @@ The discipline this forces on the article is the one the genre requires: **an ar
 **The spine of the article is the three gauge factors.** Each is stated with its source and its exact status: $\mathrm{U}(1)$ from the abelian gauge principle; $\mathrm{SU}(2)$ from the material-sector decomposition; $SU(3)$ from nothing. The matter and scalar sectors are treated next: the chiral-fermion issue is open, hypercharge is underived, and the scalar and symmetry-breaking sector is unbuilt.
 
 **Three temptations are refused.** (a) The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, whose commutator algebra contains $\mathrm{SU}(2)$, is **not** a derivation of $SU(2)_L$: weak isospin is a chiral structure, and the chirality problem must be resolved first. (b) The factors are **not** assembled into a product group and called the Standard Model's gauge group, because no hypercharge assignment is derived and one of the three factors is absent altogether. (c) Where the article counts what the framework supplies, it counts framework objects, not Standard Model parameters. These three refusals are the article's spine of caution, and each is argued where it arises.
+
+**Status in the migration.** The ceiling this article states is unchanged, and so is every sector it finds unbuilt. What changes is the status of the whole: the Standard Model is the **low-energy phase** of $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, and the ceiling is a statement about what the algebra's own action can carry, not about what the larger group can. **The tier is T2 — a framing change, and no equation touched.**
 
 ## What the Framework Already Reaches
 
@@ -189,7 +191,7 @@ The reality-class gap of the non-abelian article is a second, smaller obstacle o
 
 **Source.** No source. **Status.** **No route yet.**
 
-$SU(3)$ is not in the framework, on the present construction, for two independent reasons, both stated in the ceiling above: its algebra $\mathrm{SU}(3)$ has real dimension $8$, while every compact subalgebra of $\mathbb{B}$ under the commutator has dimension at most $4$; and its quark fundamental $\mathbf{3}$ would be a complex three-dimensional module, while every $\mathbb{B}$-module has complex dimension divisible by two. There is no colour group, no triplet, no octet, no colour coupling, and no confinement mechanism anywhere in the series. The article *Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall* carries this gap as its central open item and is the place where its consequences are developed; this article inherits the negative result and does not restate its argument.
+$SU(3)$ is not in the framework, on the present construction, for two independent reasons, both stated in the ceiling above: its algebra $\mathrm{SU}(3)$ has real dimension $8$, while every compact subalgebra of $\mathbb{B}$ under the commutator has dimension at most $4$; and its quark fundamental $\mathbf{3}$ would be a complex three-dimensional module, while every $\mathbb{B}$-module has complex dimension divisible by two. There is no colour group, no triplet, no octet, no colour coupling, and no confinement mechanism anywhere in the series. The article *Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated* carries this gap as its central open item and is the place where its consequences are developed; this article inherits the negative result and does not restate its argument.
 
 The one candidate ever named in the series is an enlargement of the carrier — a module built by tensoring the algebra's own with an internal factor $X$, or an endomorphism algebra built from the algebra's own structures — in which a larger internal factor could act. It is named as a **candidate only**, because it either assumes the answer by choosing $X = \mathbb{C}^3$ or has no known outcome. Writing $SU(3)$ down and proceeding is the fabricated premise the article exists to prevent. **No route yet.**
 
@@ -377,7 +379,7 @@ The article commits throughout to the article's central discipline: no section a
 
 - [The Neutrino and Majorana Fermions in Biquaternionic Form](the-neutrino-and-majorana-fermions-in-biquaternionic-form.html) — the Dirac/Weyl/Majorana distinction, the real-structure interpretation, and the explicit statement that the chiral $SU(2)_L$ assignment is empirical input.
 
-- [Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html) — the colour gap, the ceiling on the gauge algebra, and the three-way classification this article shares.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html) — the colour gap, the ceiling on the gauge algebra, and the three-way classification this article shares.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html) — the one-loop non-abelian beta function and the article's own statement that the group, matter, action, and regulator are inputs; the caution against reading a transcription as a derivation.
 - [Modules over the Biquaternion Algebra](../articles_maths/the-category-of-modules-in-the-biquaternion-algebra.html) and [Lie Algebras: A General Introduction](../articles_maths/lie-algebras-a-general-introduction.html) — the module structure and the compact-subalgebra facts behind the ceiling.
 - [The Spinor Module in Biquaternionic Form and Its Lorentz Action](the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html) and [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) — the spinor module, the mass term, and the real-structure origin of chirality.

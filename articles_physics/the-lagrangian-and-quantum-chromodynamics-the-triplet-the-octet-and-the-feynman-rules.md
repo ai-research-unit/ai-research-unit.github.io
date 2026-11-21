@@ -113,7 +113,7 @@ T^a=\frac{\lambda^a}{2} ,
 \{T^a,T^b\}=\frac13\delta^{ab}I+\sum_cd^{abc}T^c .
 $$
 
-The two invariant tensors $f^{abc}$ and $d^{abc}$, their nonzero components and the structure of the algebra are the subject of [The Gluon: An Octet Outside the Biquaternion Algebra](the-gluon-an-octet-outside-the-biquaternion-algebra.html), and they are not repeated here; what this article needs is one number from each of them.
+The two invariant tensors $f^{abc}$ and $d^{abc}$, their nonzero components and the structure of the algebra are the subject of [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html), and they are not repeated here; what this article needs is one number from each of them.
 
 **The normalisation, which is a choice.** The trace is fixed by convention,
 
@@ -482,12 +482,12 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 
 ## Further Reading
 
-- [The Gluon: An Octet Outside the Biquaternion Algebra](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The structure constants, the $d$ tensor and the embedded $\mathrm{SU}(3)$ elements that this article uses without repeating.
+- [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The structure constants, the $d$ tensor and the embedded $\mathrm{SU}(3)$ elements that this article uses without repeating.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The dimension bound quoted in the introduction.
 - [SU(3) Representations and the Gell-Mann–Okubo Mass Formula](su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html). The representation theory behind the decompositions of the section on the triplet and the octet.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sign rule, and the strong sector in its place among the four.
 - [Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html). The gauge-fixing mechanism that QCD borrows unchanged.
-- [Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). The classification that the ledger follows.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). The classification that the ledger follows.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The colour quantum numbers of the fifteen fields, and $\alpha_s$ among the parameters.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The abelian case, where the structure constants vanish and both self-couplings are absent.
 - [Asymptotic Freedom and the Running of the Strong Coupling](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The full one-loop arithmetic behind $b_0$, which this article hands on as $11C_A/3-4T_RN_f/3$.

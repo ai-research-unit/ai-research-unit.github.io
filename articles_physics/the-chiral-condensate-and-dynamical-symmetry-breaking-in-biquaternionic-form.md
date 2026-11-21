@@ -109,7 +109,7 @@ The framework results used here are those of the companion articles:
 - Companion article *The Dirac Equation in Biquaternionic Form*, for the massless equation, its chiral solutions and the fermion bilinears.
 - Companion article *Noether's Theorem in Biquaternionic Form*, for the axial current and its conservation law.
 - Companion article *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*, for the separation of the linear chiral pair from the real structure $\flat$.
-- Companion article *Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall*, for the status of colour and the strong dynamics that a condensate requires.
+- Companion article *Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated*, for the status of colour and the strong dynamics that a condensate requires.
 
 ## The Pair, the Two-Sided Equation and the Chirality
 

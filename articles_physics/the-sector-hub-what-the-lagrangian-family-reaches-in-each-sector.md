@@ -28,9 +28,9 @@
 **What exists.** One action, both of its phases, and the masses computed from it.
 
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the $SU(2)\times U(1)$ action, the unbroken and unitary displays, four Gauss constraints, and $m_W=gv/2$ as a product of one coupling and one vacuum value.
-- [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — the conventions the action uses.
+- [The Electroweak Gauge Group and the Hypercharge Assignment in Pati–Salam Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) — the conventions the action uses.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) — the breaking as a statement about a potential's minimum.
-- [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html) — where the algebra stops.
+- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html) — where the algebra stops.
 
 **What the sector's answer is.** Half-carried. The $\mathrm{U}(1)$ factor is exact in the algebra and the $SU(2)$ factor is carried only in part, which is why the action is written in components and the biquaternionic translation is claimed only where the algebra claims it. The breaking itself is classical and exact.
 
@@ -41,7 +41,7 @@
 **Why not.** The algebra's compact group is $\mathrm{U}(2)$, and colour needs $SU(3)$.
 
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html) — the dimension ceiling.
-- [The Gluon: An Octet Outside the Biquaternion Algebra](the-gluon-an-octet-outside-the-biquaternion-algebra.html) — why an embedding is not a derivation.
+- [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html) — why an embedding is not a derivation.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html) — what the transcription supplies and the family does not.
 
 **What the sector's answer is.** Absent, and absent for a stated reason. The absence is a boundary of the algebra and not of the method: a reader can see from the other three sectors what the method would do if the group existed.

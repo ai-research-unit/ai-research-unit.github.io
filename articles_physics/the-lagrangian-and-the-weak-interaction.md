@@ -195,4 +195,4 @@ with the second term of the expansion suppressed by $k^2/M_W^2$. At a momentum t
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the action the eliminated field belongs to.
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the charged and neutral currents in one action.
 - [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html) — the neutral-current counterpart of the elimination.
-- [Anomalies and Anomaly Cancellation in Biquaternionic Form](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the divergence of the axial current this action gauges.
+- [Anomalies and Anomaly Cancellation in Pati–Salam Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the divergence of the axial current this action gauges.

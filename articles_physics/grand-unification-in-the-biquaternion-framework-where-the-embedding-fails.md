@@ -29,9 +29,9 @@ This article draws the consequence for unification. The conclusion is a sharp st
 
 The article first sets the threshold that any unified group must clear, then locates the framework's reach below it, then shows what the enlargement to $M_n(\mathbb B)$ would cost, and finally states what the framework's unification actually is: electroweak, with the strong sector present only through its gauge-invariant composites.
 
-- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, for the programme this article constrains.
+- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the programme this article constrains.
 - Companion article *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for the unification of the electroweak and abelian factors.
-- Companion article *Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall*, for the colour-singlet programme.
+- Companion article *Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated*, for the colour-singlet programme.
 - Companion article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the ceiling itself.
 - Companion article *The Renormalization Group in Biquaternionic Form*, for the running of the couplings and the unification scale.
 
@@ -200,9 +200,30 @@ Three consequences for the framework.
 
 The ceiling has a direct consequence for the particle programme, and it is worth stating plainly because it shapes the framework's existing articles.
 
-The Standard-Model gauge group has three factors, and the framework reaches two of them intrinsically. The coloured sector is outside. Therefore a field valued in $\mathbb B$, or in a module of $\mathbb B$, cannot carry colour, and the quarks and gluons do not exist as algebra-valued fields. What does exist is the **colour-singlet content**: the hadrons, and more generally the operators invariant under the outside colour group. The framework's strong-interaction programme is accordingly a programme about the singlet sector, which is the content of the companion article *Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall* and of the ceiling article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*. This is why the framework's gauge articles treat the electroweak and abelian fields directly and the colour sector only through its composites, and why the informational interpretation of confinement in this corpus is an interpretation of information loss rather than a derivation of the colour group.
+The Standard-Model gauge group has three factors, and the framework reaches two of them intrinsically. The coloured sector is outside. Therefore a field valued in $\mathbb B$, or in a module of $\mathbb B$, cannot carry colour, and the quarks and gluons do not exist as algebra-valued fields. What does exist is the **colour-singlet content**: the hadrons, and more generally the operators invariant under the outside colour group. The framework's strong-interaction programme is accordingly a programme about the singlet sector, which is the content of the companion article *Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated* and of the ceiling article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*. This is why the framework's gauge articles treat the electroweak and abelian fields directly and the colour sector only through its composites, and why the informational interpretation of confinement in this corpus is an interpretation of information loss rather than a derivation of the colour group.
 
 The general structural statement is the following. **The biquaternion algebra unifies the electroweak and abelian gauge interactions, because they are the two summands of its compact algebra $\mathrm{U}(2)$; it does not unify them with the strong interaction, because the strong group has rank and dimension beyond any group the algebra carries, and because the algebra's modules have even complex dimension while colour is irreducibly three-dimensional.** Grand unification, in the strict sense of a single simple group and a single coupling, is outside the framework's reach; it is reachable by enlarging the carrier to matrices over the algebra, at the cost of losing the canonicity of the gauge group and of carrying unwanted factors. The framework's unification is electroweak, and this is a structural result about the algebra.
+
+## The Two Readings of the Failure
+
+The failure this article records is real, and it is also **a failure of one reading of the corpus's $\mathfrak{su}(4)$** — so it is stated here in both readings, and the corpus says which of the two it now adopts.
+
+**Reading one, and it is the article's own: the identification is not available.** The algebra's intrinsic compact gauge structure is $\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1)$, of rank two and dimension four. The colour group has rank two and dimension eight. **Neither the dimension nor the carrier matches**, and no amount of relabelling turns four into eight. On this reading the corpus's fifteen-dimensional $\mathfrak{su}(4)$, built from the algebra's own carrier, and Pati–Salam's fifteen-dimensional $\mathrm{SU}(4)$, built from a quartet of colours, share a symbol and a dimension and nothing else. **That reading is correct as an algebra statement, and nothing below overturns it.**
+
+**Reading two: the identification is available once the fourth colour is declared to be the unit line.** The corpus's $\mathfrak{su}(4)$ is the algebra of $M_4(\mathbb C)$ acting on $\mathbb C^4$. Its stabiliser of the first basis vector is $\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathbb R\,iD$, so $\mathfrak{su}(3)$ already sits inside it as $\mathrm{Stab}_{\mathfrak{su}(4)}(e_t)$, and the fifteen split as $15=8+1+6$. **If $e_t$ is declared to be a fourth colour rather than the temporal unit**, then the other three basis vectors are the three colours, $N_c=\dim B_V=4-1=3$, and the six in $\mathfrak m$ are leptoquarks. **What this reading adds is one declaration and no algebra**: the group, the split and the trace are already computed, and the trace is $\operatorname{tr}_{\mathbf4}(B-L)=3\cdot	frac13-1=0$, which is not a property of a group but of the eigenvalues assigned to the quartet.
+
+**The price of reading two, stated where the failure was recorded.** The identification is not an action on the algebra's carrier. $\mathfrak{su}(4)$ commutes with the Lorentz action $L(\mathbb H)$ only in $\mathfrak{su}(2)$, so a $\mathfrak{su}(4)$ acting on $\mathbb H$ and a Lorentz action would have to commute inside $M_4(\mathbb C)$, which they do not. **Colour therefore acts on a formal copy of the quartet, licensed by the canonical split and by nothing else.** The algebra hosts the group; the group acts on a copy; the copy is not the carrier. **A reader who takes reading two as a proof that the algebra contains colour has taken the one step the corpus refuses.**
+
+| | reading one | reading two |
+|---|---|---|
+| what is identified | $\mathfrak{u}(2)$ with $G_{\mathrm{SM}}$ | $\mathfrak{su}(4)$ with $\mathrm{SU}(4)_c$ |
+| the carrier | the algebra's own | a formal copy of the quartet |
+| status | proved | **declared** |
+| what it costs | colour is outside the framework | the declaration, and a copy |
+
+**Which the corpus adopts, and why it may.** Reading two, as a **declaration** and not as a result. Two things make the declaration cheap enough to state: the split is canonical, so the fourth line is singled out by the algebra and not chosen by hand; and every consequence is already computed, so the declaration can be checked against arithmetic rather than asserted. **Two things make it expensive.** It is load-bearing for an entire migration, and it does not make the theory chiral — the sixteen is assigned, not derived. **What would refute it is stated with the declaration**: a reason to prefer a different line, or a computation that the quartet's assignments cannot carry the observed spectrum.
+
+**And the article's own result survives untouched.** The framework cannot host colour *on its own carrier*, cannot host it *in its own algebra*, and does not unify the strong interaction with the electroweak *by derivation*. **The migration adds a group and a copy, and it removes exactly one of those three sentences** — the one about a group of dimension eight inside a group of dimension four.
 
 ## Summary
 

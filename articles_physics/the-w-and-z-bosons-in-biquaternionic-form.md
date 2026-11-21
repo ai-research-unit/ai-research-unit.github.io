@@ -1,4 +1,4 @@
-# __The W and Z Bosons in Biquaternionic Form__
+# __The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form__
 
 ## Introduction
 
@@ -18,7 +18,7 @@ of real dimension four, with the commutator $[e_a,e_b]$ read from the multiplica
 Spacetime indices are written low and every contraction is an explicit sum, in the $i r'_t$ device of *Physics Units and Common Elements Conventions*; with that device the plain sum $\sum_\mu W_\mu W_\mu$ is already the invariant. The one metric a display needs is the unit metric $\delta_{\mu\nu}=(1,1,1,1)$ of *Frame and Metric Conventions*, the same in both frames, and the polarization sums below use it; the one minus of the interval is the square of the $i$ in $Q_t=i q'_t$. Every framework formula carries $c$ and $\kappa=\frac{ϙ}{\hbar}$ explicitly, and no unit is set to one; in the electroweak formulae the standard symbols $g,g_{\mathrm Y},v,\theta_W$ carry the standard normalization, while the framework's coupling is $\kappa=\frac{ϙ}{\hbar}$ where it appears in the algebra's expressions.
 
 - Companion article *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for the boundary statement and the list of open problems.
-- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, for the placement of the electroweak sector in the larger structure.
+- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the placement of the electroweak sector in the larger structure.
 - Companion article *The Proca Equation: Massive Spin 1 in Biquaternionic Form*, for the massive spin-one field equation and the Lorenz condition.
 - Companion article *Canonical Quantization of the Biquaternion Proca Field*, for the three polarizations, the constraint structure and the propagator.
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the abelian Higgs mechanism in the algebra and the central scalar.
@@ -30,6 +30,8 @@ Spacetime indices are written low and every contraction is an explicit sum, in t
 - Companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, for the covariant derivative and the current.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the derivation of the gauge structure from the central phase.
 - Companion article *The Photon in Biquaternionic Form*, for the massless neutral vector field and the self-dual split.
+
+**Status in the migration.** The $W_R$ joins the title because the pair is gauged. **The content of this article is unchanged** — the $W$ and $Z$ are the same objects with the same masses and the same couplings — and the addition is a third vector boson at the Pati–Salam scale, degenerate with the leptoquarks through $M_X=\sqrt2\,M_{W_R}$ and heavier than it by $\sqrt{5/2}$ at tree level. The tier is T2.
 
 ## The Standard Electroweak Vector Bosons
 

@@ -1,4 +1,4 @@
-# __The Gluon: An Octet Outside the Biquaternion Algebra__
+# __The Gluon: An Octet Inside the Carrier's Group__
 
 ## Introduction
 
@@ -23,7 +23,7 @@ The article is organised as follows. A first section transcribes the gluon's sta
 We use the conventions of the companion articles: the algebra, the invertibles, the sectors, the gradient and the d'Alembertian are those of *Algebra and Element Conventions*, *Frame and Metric Conventions* and *Operator and Calculus Conventions*, and none is restated here. The compact factor is $\mathrm{U}(2)=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$ with $\mathrm{SU}(2)=\mathrm{span}_\mathbb{R}\{\vec e_x,\vec e_y,\vec e_z\}$, $[e_a,e_b]=2\sum_c\varepsilon_{abc}e_c$ and $T_a=\tfrac12 e_a$; the covariant derivative is $D_\mu=\partial/\partial R_\mu+i\kappa\mathcal{A}_\mu$ with $\kappa=\frac{ϙ}{\hbar}$, and the non-abelian curvature is $F_{\mu\nu}=\partial\mathcal{A}_\nu/\partial R_\mu-\partial\mathcal{A}_\mu/\partial R_\nu+i\kappa[\mathcal{A}_\mu,\mathcal{A}_\nu]$, from the companion articles. Every framework formula carries $c$ and $\kappa=\frac{ϙ}{\hbar}$ explicitly, and no unit is set to one; in the strong-interaction formulae $g_s$ denotes the standard QCD coupling and the standard symbols $f_{abc},d_{abc}$ the $\mathrm{SU}(3)$ invariant tensors; the framework's coupling is $\kappa$ where it appears in the algebra's expressions. Matrix traces on the gauge factors are written $\mathrm{Tr}$, distinct from the informational pairing formula of *Norm and Pairing Conventions*.
 
 - Companion article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, for the general theorem of which this article is the gluon case.
-- Companion article *Quantum Chromodynamics in the Biquaternion Framework: The Dimension Ceiling and the Colour Wall*, for the placement of the strong sector in the framework and the list of open problems.
+- Companion article *Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated*, for the placement of the strong sector in the framework and the list of open problems.
 - Companion article *Non-Abelian Gauge Fields in Biquaternionic Form*, for the connection, the curvature and the structure constants of the compact factor.
 - Companion article *The Yang–Mills Equation in Biquaternionic Form*, for the field equation and covariant conservation.
 - Companion article *The Photon in Biquaternionic Form*, for the free kinematics of a massless spin-one field.
@@ -32,7 +32,9 @@ We use the conventions of the companion articles: the algebra, the invertibles, 
 - Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane*, for the helicity decomposition of the material vector.
 - Companion article *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, for the spin-one representation and the charge eigenvalues.
 - Companion article *Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half*, for the matter side of the spin ceiling.
-- Companion article *The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors*, for the factor-by-factor comparison with the Standard Model gauge group.
+- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the factor-by-factor comparison with the Standard Model gauge group.
+
+**Status in the migration.** The octet is now **inside the carrier's group and still outside the algebra.** Colour sits in $\mathfrak{su}(4)$ as $\mathbf8_0\subset\mathbf{15}$, which is $8=15-1-6$: the gluons share the adjoint with the $B$-$L$ boson and the six leptoquarks. The algebra's own action still cannot carry it, because $\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)=\mathfrak{su}(2)$ — so the larger group does not remove the obstruction; it turns the octet into the residual of a group rather than an object outside every group. The tier is T3.
 
 ## The Gluon in Standard Quantum Chromodynamics
 

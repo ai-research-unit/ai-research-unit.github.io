@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This article writes the massive vector bosons of the electroweak sector as the extremum of one action, and shows that their masses are not parameters of that action but products of a coupling and a vacuum value. It is the action-first companion of *The W and Z Bosons in Biquaternionic Form*, which states the fields, the mixing and the masses; this article asks what functional produces the Proca-like equations of the two bosons, and where the masses in it come from.
+This article writes the massive vector bosons of the electroweak sector as the extremum of one action, and shows that their masses are not parameters of that action but products of a coupling and a vacuum value. It is the action-first companion of *The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form*, which states the fields, the mixing and the masses; this article asks what functional produces the Proca-like equations of the two bosons, and where the masses in it come from.
 
 **Its place in the sector.** The functional here is the gauge and scalar part of the sector's complete action, written in [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html). That article is the sector's action; this one is the $W$–$Z$ reading of it, and it stops at the two curvatures and the scalar's gradient term.
 
@@ -240,7 +240,7 @@ with the charge operator $Q=T_3+Y$, and its conservation is exact because the un
 
 ## Further Reading
 
-- [The W and Z Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) — the parent: the mixing, the pole observables and the effective angle.
+- [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) — the parent: the mixing, the pole observables and the effective angle.
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the same action in element form, with the four Gauss constraints written out.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html) — the vacuum and the potential's minimum.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) — this sector inside the assembled action.

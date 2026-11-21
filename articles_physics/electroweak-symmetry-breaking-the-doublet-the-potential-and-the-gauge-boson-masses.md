@@ -44,9 +44,9 @@ $$
 Y_\varphi=\tfrac12 ,
 $$
 
-which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_\varphi+Y_{e_R}=0$, that is $Y_\varphi=Y_{L_L}-Y_{e_R}=+\tfrac12$.
+which is four real fields. The hypercharge is not free here: it is fixed by the invariance of the Yukawa couplings, and [The Electroweak Gauge Group and the Hypercharge Assignment in Pati–Salam Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) derives it from $-Y_{L_L}+Y_\varphi+Y_{e_R}=0$, that is $Y_\varphi=Y_{L_L}-Y_{e_R}=+\tfrac12$.
 
-**The same object in the companion articles.** [The W and Z Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) writes this doublet as $\xi_{\mathrm{scl}}$ with components ${\xi_{\mathrm{scl}}}^\pm$ and ${\xi_{\mathrm{scl}}}^0$, and [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) writes the abelian scalar as $\tilde\Xi=\xi\,e_t$. The three names denote the same object at three levels of generality, and this article uses $\varphi$ throughout.
+**The same object in the companion articles.** [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) writes this doublet as $\xi_{\mathrm{scl}}$ with components ${\xi_{\mathrm{scl}}}^\pm$ and ${\xi_{\mathrm{scl}}}^0$, and [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html) writes the abelian scalar as $\tilde\Xi=\xi\,e_t$. The three names denote the same object at three levels of generality, and this article uses $\varphi$ throughout.
 
 **Why a doublet of complex fields is four real fields.** Each component is a complex number, so $2\times2=4$. The four are not independent in their charges: $\varphi^+$ and $\varphi^0$ each carry a real and an imaginary part, and the charges are $+1$ for both parts of $\varphi^+$ and $0$ for both parts of $\varphi^0$. The antiparticle of $\varphi^+$ is the field $\varphi^-=(\varphi^+)^*$, and it is not a fifth component.
 
@@ -208,7 +208,7 @@ Z_\mu=\cos\theta_W\,W^3_\mu-\sin\theta_W\,B_\mu ,
 \tan\theta_W=\frac{g_{\mathrm Y}}{g} ,
 $$
 
-which is the mixing of [The W and Z Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html), now derived from the mass matrix rather than quoted. The angle is not an independent input: it is the angle that diagonalises the neutral block, and its value is $\arctan(g_{\mathrm Y}/g)$.
+which is the mixing of [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html), now derived from the mass matrix rather than quoted. The angle is not an independent input: it is the angle that diagonalises the neutral block, and its value is $\arctan(g_{\mathrm Y}/g)$.
 
 **The trace sum rule.** The trace of $M^2$ is invariant under the rotation, so
 
@@ -472,9 +472,9 @@ For one doublet with $T=\tfrac12$ and $T_3=-\tfrac12$ the numerator is $v^2\left
 
 **The singlet cannot break the group, and this is the sharpest statement.** A field in the centre commutes with every element of the algebra, so it is annihilated by the $SU(2)$ action. A vacuum invariant under a group does not break it. The framework's scalar gives a mass to the abelian factor and to nothing else, and no amount of rewriting changes that: the obstruction is the representation, not the mechanism.
 
-**What the algebra does supply.** A two-dimensional module, since $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $\mathbb{C}^2$. A doublet-shaped object is therefore available. What is missing is the assignment of the two factors' actions on it, which is the content of [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) and which that article shows is imported.
+**What the algebra does supply.** A two-dimensional module, since $\mathbb{B}\cong M_2(\mathbb{C})$ acts on $\mathbb{C}^2$. A doublet-shaped object is therefore available. What is missing is the assignment of the two factors' actions on it, which is the content of [The Electroweak Gauge Group and the Hypercharge Assignment in Pati–Salam Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html) and which that article shows is imported.
 
-**The one place the framework's formula matches.** The abelian mass formula $M_A=\kappa v$ and the standard $M_W=gv/2$ are the same formula with $\kappa=g/2$. The factor of one half is the isospin of the scalar and not a property of the vector, and [The W and Z Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) records the identification. It is a genuine match of structure, and it is a match of one number with a reinterpreted charge, not a derivation.
+**The one place the framework's formula matches.** The abelian mass formula $M_A=\kappa v$ and the standard $M_W=gv/2$ are the same formula with $\kappa=g/2$. The factor of one half is the isospin of the scalar and not a property of the vector, and [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) records the identification. It is a genuine match of structure, and it is a match of one number with a reinterpreted charge, not a derivation.
 
 **What a derivation would need.** A scalar in the algebra's defining module, a hypercharge operator acting on it with the two chiralities distinguished, and a potential invariant under both. The corpus records the first as available and the second as open. Until both are settled, the electroweak sector is imported, and this article's computation is a computation about the model.
 
@@ -517,13 +517,13 @@ The framework supplies the abelian mechanism whole and stops at three items: the
 
 ## Further Reading
 
-- [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_\varphi=\tfrac12$, which this article takes as given.
+- [The Electroweak Gauge Group and the Hypercharge Assignment in Pati–Salam Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). Why $Y_\varphi=\tfrac12$, which this article takes as given.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The scalar sector in the assembled sum, and the sign rule that fixes the kinetic term.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). The abelian case in full, whose gap this article fills for the electroweak group.
-- [The W and Z Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The mixing and the masses, here derived from the mass matrix.
+- [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The mixing and the masses, here derived from the mass matrix.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). Where the two scalar parameters sit in the count of nineteen.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic group that the framework's scalar can and cannot break.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why the framework's central scalar is a singlet, and why a singlet breaks nothing.
-- [The Standard Model in the Biquaternion Framework: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The sector in ledger form, with this article's three items marked imported.
+- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). The sector in ledger form, with this article's three items marked imported.
 
 The two companions that §*The Numbers* leans on — [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html), for the sector at the other end of the mass ladder, and [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html), for the $\delta r$ and $\rho$ statements used above — are both in the corpus.
