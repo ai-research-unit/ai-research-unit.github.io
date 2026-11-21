@@ -343,7 +343,7 @@ $$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>boson</th>
+<th>generator multiplet, before mixing</th>
 <th>number</th>
 <th>mass scale</th>
 <th>group origin</th>
@@ -357,15 +357,15 @@ $$</p>
 <td>$\mathrm{SU}(3)_c\subset\mathrm{SU}(4)$</td>
 </tr>
 <tr>
-<td>$W_L^{\pm},Z_L$</td>
+<td>$W_L^{1,2,3}$</td>
 <td>$3$</td>
-<td>$\sim246$ GeV</td>
+<td>$0$ and $\sim246$ GeV</td>
 <td>$\mathrm{SU}(2)_L$</td>
 </tr>
 <tr>
-<td>$W_R^{\pm},Z_R$</td>
+<td>$W_R^{1,2,3}$</td>
 <td>$3$</td>
-<td>$\sim M_{PS}$</td>
+<td>$0$ and $\sim M_{PS}$</td>
 <td>$\mathrm{SU}(2)_R$</td>
 </tr>
 <tr>
@@ -375,13 +375,14 @@ $$</p>
 <td>$\mathrm{SU}(4)/\mathrm{SU}(3)$</td>
 </tr>
 <tr>
-<td>$B-L$ boson</td>
+<td>$B$</td>
 <td>$1$</td>
-<td>mixed</td>
+<td>—</td>
 <td>$\mathrm{U}(1)_{B-L}\subset\mathrm{SU}(4)$</td>
 </tr>
 </tbody>
 </table></div>
+<p><strong>The table counts generators, and $8+3+3+6+1=21$; counted as physical states it is $9+12$</strong>, because the three neutral entries $W^3_L$, $W^3_R$ and $B$ mix into the photon, the $Z$ and the $Z_R$. <strong>A reader who takes the row labels as mass eigenstates will think the spectrum has four neutral bosons and no photon</strong>; the article's §1 and §3 are the correction.</p>
 <p><strong>The $Z$ is a mixture of three neutral fields</strong>, $W^3_L$, $W^3_R$ and $B$, and the mixing is fixed by the charge formula. That is the content of §4.1.</p>
 <h3 id="34-custodial-symmetry-promoted">3.4 Custodial symmetry, promoted</h3>
 <p><strong>In the Standard Model</strong> the custodial $\mathrm{SU}(2)_V$ is an <em>accidental</em> global symmetry of the scalar potential. Nothing requires it; the doublet happens to have it, and that is why $\rho=1$ to a part in a thousand.</p>
@@ -945,7 +946,7 @@ $$</p>
 </tr>
 <tr>
 <td><strong>Biquaternion Particle Physics</strong></td>
-<td>$93+29=122$</td>
+<td>$92+29=121$</td>
 <td><strong>rename and restructure</strong></td>
 <td>see §12.3</td>
 </tr>
@@ -957,10 +958,10 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Eleven categories remain, and the arithmetic closes.</strong> $26+101+134+80+30+24+45+66+22+13=541$ articles stay outside the migration and $122$ are inside it. <strong>Nothing moves between categories except the twenty-nine</strong>, and nothing leaves the corpus. The reason the other nine are untouched is structural: every category that is <em>above</em> the gauge group (Universe) or <em>below</em> it (the approximations) or <em>beside</em> it (relativity, hydrodynamics, thermodynamics, gravity) is unaffected by a change of gauge group. Only the categories that are <em>about</em> the group can move.</p>
+<p><strong>Eleven categories remain, and the arithmetic closes.</strong> $26+101+134+80+30+24+45+66+22+13=541$ articles stay outside the migration and $121$ are inside it. <strong>Nothing moves between categories except the twenty-nine</strong>, and nothing leaves the corpus. The reason the other nine are untouched is structural: every category that is <em>above</em> the gauge group (Universe) or <em>below</em> it (the approximations) or <em>beside</em> it (relativity, hydrodynamics, thermodynamics, gravity) is unaffected by a change of gauge group. Only the categories that are <em>about</em> the group can move.</p>
 <p><strong>Why dissolving the category is the right move, in three arguments.</strong></p>
 <p><strong>First, the frame denies the split.</strong> Pati–Salam has no electromagnetic interaction to keep beside the strong and the weak: the photon is a mixture of three neutral generators, and $\mathrm{U}(1)_{\mathrm{em}}$ is the residual of the pair. A top-level category called <em>Biquaternion Electromagnetism</em>, standing beside <em>Biquaternion Particle Physics</em>, asserts the Standard Model's own decomposition — <strong>which is precisely the decomposition the migration replaces.</strong> Keeping it would leave the menu contradicting the frame in the one place a reader looks first.</p>
-<p><strong>Second, the size fits.</strong> At $122$ articles the merged category sits between <em>Biquaternion Relativistic Quantum Theory</em> ($134$) and <em>Biquaternion Relativity</em> ($101$), so the merge produces no outlier. The imbalance it removes is the other one: a category of $29$ beside one of $93$ that shares its subject.</p>
+<p><strong>Second, the size fits.</strong> At $121$ articles the merged category sits between <em>Biquaternion Relativistic Quantum Theory</em> ($134$) and <em>Biquaternion Relativity</em> ($101$), so the merge produces no outlier. The imbalance it removes is the other one: a category of $29$ beside one of $93$ that shares its subject.</p>
 <p><strong>Third, the build cost is zero, and that is checked, not assumed.</strong> <code>physics.md</code> already nests <code>###</code> inside <code>##</code> and <code>####</code> inside <code>###</code> — <em>Biquaternion Relativity</em> does exactly this — so the merge is the deletion of one <code>##</code> line and the demotion of its twenty-nine links. The slugs do not move, so the sitemaps, the per-page nav and <code>sync_index.py</code> are untouched. And <code>articles_internal/ai-physics-overview.md</code> is generated from the <code>##</code> lines by <code>build.py:write_ai_physics_overview</code>, so it regenerates itself with one block fewer and needs no hand edit.</p>
 <p><strong>What the merge costs, and what pays for it.</strong></p>
 <p><strong>The cost is discovery.</strong> Electromagnetism is the corpus's most common entry point: a reader who wants Maxwell looks for a category with that word in it, and after the merge the word appears at section level only. <strong>Three mitigations, and the first is structural.</strong> The section keeps the word in its own title — <em>Electromagnetism in Pati–Salam Model</em> — so a search for <em>electromagnetism</em> still lands on it. Its first sub-section is the field and not the frame, so a reader arriving with that intent is not made to read the group first. And the <code>toc</code> extension is enabled in <code>md_to_html</code>, so every heading carries an id and <code>physics.html#electromagnetism-in-pati-salam-form</code> is a working deep link.</p>
@@ -1037,7 +1038,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The arithmetic is a check, and it closes exactly.</strong> $18+24+33+29+6+9+3=122$ existing articles and $2+2+2+2+2+1+0+0=11$ new ones, with <strong>no article moving between sections</strong>. The previous draft moved three articles from the electroweak section to the electromagnetic one; the merge makes that unnecessary, which is a gain, because every article keeps the neighbours it already had.</p>
+<p><strong>The arithmetic is a check, and it closes exactly.</strong> $18+1+24+32+29+5+9+3=121$ existing articles and $11$ new ones, with <strong>no article moving between sections</strong>. The previous draft moved three articles from the electroweak section to the electromagnetic one; the merge makes that unnecessary, which is a gain, because every article keeps the neighbours it already had.</p>
 <p><strong>What each section contains, and what moved.</strong></p>
 <p><strong>Executed: nineteen, in two sub-sections.</strong> <em>The Model</em> holds the one article that names the group — promoted from <code>articles_internal/</code> and retitled <em>The Pati–Salam Model in the Biquaternion Framework: Four Colours, $21$ Generators, One Coupling</em> — and <em>The General Gauge Machinery</em> holds the eighteen, so that a reader meets the group before the machinery written for it. <strong>The defect this repairs is the only one the menu had</strong>: a section called <em>The Unified Group</em> that never said which group.</p>
 <p><strong>1. The Unified Group</strong> takes the eighteen articles now under <em>The Gauge Structure</em>, unchanged in title: the gauge principle, the covariant derivative, the curvature and Bianchi identity, the Hopf bundle, the index theorem, Yang–Mills and its path integral, lattice gauge theory, instantons, ADHM, the semiclassical expansion, the sigma model, the one-loop potential, the Fujikawa measure, the Stueckelberg mechanism. <strong>They are T0</strong>, because every one of them is written for a general group and reads correctly for $\mathrm{SU}(4)\times\mathrm{SU}(2)^2$. The section gains the frame article that names the group they are being applied to.</p>
@@ -1332,7 +1333,7 @@ $$</p>
 </tr>
 <tr>
 <td>the articles below $M_{PS}$</td>
-<td>$541$ outside the category; of the $122$ inside it, $8$ are renamed and the rest keep title and text</td>
+<td>$541$ outside the category; of the $121$ inside it, $8$ are renamed and the rest keep title and text</td>
 <td>the physics is unchanged</td>
 </tr>
 <tr>
@@ -1383,7 +1384,7 @@ $$</p>
 <td>$4$</td>
 <td>restructure the menu and dissolve the category</td>
 <td>$0$</td>
-<td>$122$ articles appear exactly once; the <code>##</code> count falls from $12$ to $11$; the five textual casualties of §12.5 are repaired</td>
+<td>$121$ articles appear exactly once; the <code>##</code> count falls from $12$ to $11$; the five textual casualties of §12.5 are repaired</td>
 </tr>
 <tr>
 <td>$5$</td>
@@ -1404,12 +1405,12 @@ $$</p>
 <p><code>the-leptoquark-sector-and-its-bounds.md</code> (six states, $Q=\pm\tfrac23$, $M_X=\sqrt2M_{W_R}$, and the bound $M_X\gtrsim2.5\times10^{2}$ TeV from $K_L\to\mu e$, with proton decay evaded because $B$ moves in thirds); <code>the-colour-wall-restated.md</code> (three walls distinguished, one moves, two do not); <code>the-scalar-sector-and-the-bidoublet.md</code> ($24$ real components against $21-9=12$ broken generators, so twelve survive and the failure is $m_d=m_e$, repairable); <code>the-anomaly-ledger-in-pati-salam-form.md</code> (four rows, all zero, in $\mathbb Q$); <code>the-photon-as-the-unbroken-mixture.md</code> ($(1,1,\sqrt{2/3})$, three derivations); <code>charge-quantisation-from-the-fourth-colour.md</code> ($\operatorname{tr}_{\mathbf4}(B-L)=0$).</p>
 <p><strong>Two of the six are worth flagging for the ledger.</strong></p>
 <p><strong>The colour wall article is the migration's negative result.</strong> Three obstructions are recorded in the corpus's ceiling notes and named separately: the <em>dimension</em> wall ($\dim\mathfrak{su}(3)=8>\dim\mathfrak{u}(2)=4$), the <em>carrier</em> wall (the algebra acts on four dimensions and colour needs a three-space that is not an invariant subspace), and the <em>chiral</em> wall. <strong>Only the first moves.</strong> The carrier wall does not, because $\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)=\mathfrak{su}(2)$ holds at the larger group exactly as it held at the smaller one, and the frame routes around it by acting on a formal copy rather than by breaching it. <strong>A migration that claimed to have removed "the colour wall" would have conflated three objections with one</strong>, and the article exists to make that conflation impossible.</p>
-<p><strong>The scalar article is where the frame is weakest, and the weakness is narrower than the first draft said.</strong> The minimal sector, $(\mathbf4,\mathbf1,\mathbf2)\oplus(\mathbf1,\mathbf2,\mathbf2)$, carries $16+8=24$ real components, and there are $21-9=12$ broken generators: <strong>twelve are eaten, twelve survive, and one survivor is a neutral scalar — so the minimal sector does have a $125$ GeV candidate.</strong> What it does not have is two independent Yukawa matrices, so it predicts $m_d=m_e$ and $m_u=m_\nu$ at $M_{PS}$, and $m_d/m_e\simeq2.2$ contradicts the first. <strong>The $(\mathbf{15},\mathbf2,\mathbf2)$, or a second bidoublet, is what splits the relations — and $\Sigma$ brings coloured triplets that can mediate proton decay at dimension six.</strong> The fork is then not "repair or not" but "which repair": forbid the diquark coupling with an unexplained discrete symmetry, or allow it and push $M_{PS}$ to $10^{15}$ GeV, where the leptoquark prediction becomes empty. <strong>That fork, not the running of $\sin^{2}\theta_W$, is the migration's sharpest open question.</strong></p>
-<p><strong>Phase $3$ is one file, and it is the hub.</strong> <code>the-pati-salam-ledger.md</code>: the inventory ($12\to11$, $122$ in scope, $541$ out, $11$ new, $8$ renamed, $0$ slugs moved), the tiers, the claim ledger in ten rows, the two walls, and the register of four open failures.</p>
+<p><strong>The scalar article is where the frame is weakest, and the weakness is narrower than the first draft said.</strong> The minimal sector, $(\mathbf4,\mathbf1,\mathbf2)\oplus(\mathbf1,\mathbf2,\mathbf2)$, carries $16+8=24$ real components, and there are $21-9=12$ broken generators: <strong>twelve are eaten and twelve survive: $\Phi$ keeps a colour triplet ($6$ real) and a charged singlet ($2$ real), $H$ keeps a charged pair and <strong>two</strong> neutral states that mix, and the lighter of the two is the $125$ GeV candidate (the count is $6+2+2+2=12$, set out at §2.4 of the scalar note).</strong> What it does not have is two independent Yukawa matrices, so it predicts $m_d=m_e$ and $m_u=m_\nu$ at $M_{PS}$, and $m_d/m_e\simeq2.2$ contradicts the first. <strong>The $(\mathbf{15},\mathbf2,\mathbf2)$, or a second bidoublet, is what splits the relations — and $\Sigma$ brings coloured triplets that can mediate proton decay at dimension six.</strong> The fork is then not "repair or not" but "which repair": forbid the diquark coupling with an unexplained discrete symmetry, or allow it and push $M_{PS}$ to $10^{15}$ GeV, where the leptoquark prediction becomes empty. <strong>That fork, not the running of $\sin^{2}\theta_W$, is the migration's sharpest open question.</strong></p>
+<p><strong>Phase $3$ is one file, and it is the hub.</strong> <code>the-pati-salam-ledger.md</code>: the inventory ($12\to11$, $121$ in scope, $541$ out, $11$ new, $8$ renamed, $0$ slugs moved), the tiers, the claim ledger in ten rows, the two walls, and the register of four open failures.</p>
 <p><strong>The claim ledger is four improve, four unchanged, two worse, and the shape is the honest one.</strong></p>
 <p>Four improve, and none of them changes a measurement: the group ($\mathfrak{su}(4)$ is the carrier's own), hypercharge (a combination), charge quantisation (a trace), the anomalies (four rows, all zero). <strong>Each is a different account of the same physics, and that is the whole form of the gain.</strong> Four unchanged: $\mathrm{SU}(3)$ physics, the fermion sector, Maxwell's equations, the chiral wall. Two worse: (A) is now load-bearing, and $\tfrac38$ does not run to $0.231$.</p>
 <p><strong>The failure register, with the status of each, because a ledger without one would be advertising.</strong></p>
-<p>$\mathrm{F1}$ the running; $\mathrm{F2}$ the wrong mass relation of the minimal scalar sector (twenty-four real components, twelve eaten, twelve surviving, so the sector has a neutral scalar; the failure is $m_d=m_e$ at $M_{PS}$, repairable by a second bidoublet or the $(\mathbf{15},\mathbf2,\mathbf2)$); $\mathrm{F3}$ the unseen leptoquarks and the diquark fork that can make them unseeable; $\mathrm{F4}$ the declared chirality, which is the corpus's oldest problem. <strong>Only one of the four is permanent in the sense that no repair is on the shelf, and it is F4</strong> — the ledger says which.</p>
+<p>$\mathrm{F1}$ the running; $\mathrm{F2}$ the wrong mass relation of the minimal scalar sector (twenty-four real components, twelve eaten, twelve surviving, so the sector has two mixing neutral states and the lighter is the $125$ GeV candidate; the failure is $m_d=m_e$ at $M_{PS}$, repairable by a second bidoublet or the $(\mathbf{15},\mathbf2,\mathbf2)$); $\mathrm{F3}$ the unseen leptoquarks and the diquark fork that can make them unseeable; $\mathrm{F4}$ the declared chirality, which is the corpus's oldest problem. <strong>Only one of the four is permanent in the sense that no repair is on the shelf, and it is F4</strong> — the ledger says which.</p>
 <p><strong>And one correction to this plan, recorded rather than silently made.</strong> The ledger was scheduled for section $7$; it belongs in section $6$, <em>The Mass Spectrum and the Ledger</em>, whose name already says so. <strong>Sections $6$ and $7$ therefore swap one new article each, and every total in §12.3 is unchanged.</strong></p>
 <p><strong>With phase $3$ closed, phases $0$ to $3$ are complete: eleven files, no menu touched, no slug moved.</strong> What remains is the only work that touches <code>physics.md</code>, and it is deliberately last.</p>
 <p><strong>Phases $4$ and $5$ are executed, and four things had to be decided that the plan had not.</strong></p>
@@ -1460,7 +1461,7 @@ $$</p>
 <tr>
 <td>$4$</td>
 <td>run the eleven checks of §13.7, including the two commands</td>
-<td>$0$ KaTeX errors and the sitemap still says $3137$</td>
+<td>$0$ KaTeX errors and $0$ broken links, and no build</td>
 </tr>
 <tr>
 <td>$5$</td>
@@ -1831,20 +1832,26 @@ $$</p>
 </tr>
 <tr>
 <td>11</td>
-<td>the article compiles and the site builds</td>
-<td>a KaTeX error, a broken link, or a sitemap count that is not $3137$</td>
+<td>the article parses and its links resolve</td>
+<td>a KaTeX error, or a link to a slug with no <code>.md</code> beside it</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two commands.</strong> The build writes into the deploy tree and prints the sitemap count; the KaTeX pass reports formulas and errors per file.</p>
+<p><strong>The two commands, and neither of them builds.</strong> <code>build.py</code> writes into the deploy tree, which a review must not touch; both of these read the working tree only.</p>
 <pre><code>cd /home/hp/Documents/1_Doc/Projects/ai-research/ai-research-unit
 
-.venv/bin/python build.py
-# -&gt; &quot;Wrote sitemap_codeberg.xml (3137 urls)&quot; then &quot;Done.&quot;
-# any other count means a page was added or lost, which is a migration failure
-
-node check.js articles_physics/&lt;slug&gt;.md   # absolute path if the harness sits elsewhere, e.g. /tmp/katexchk/check.js
+node /tmp/katexchk/check.js articles_physics/&lt;slug&gt;.md
 # -&gt; &quot;&lt;slug&gt;.md: N formulas, 0 errors&quot;
+
+python3 - articles_physics/&lt;slug&gt;.md &lt;&lt;'PY'
+import re, os, sys
+f = sys.argv[1]; d = os.path.dirname(f); bad = 0
+for m in re.finditer(r'\]\(([^)\s]+\.html)(#[^)]*)?\)', open(f, encoding='utf8').read()):
+    p = os.path.normpath(os.path.join(d, m.group(1)[:-5] + '.md'))
+    if not os.path.exists(p): print('MISSING', m.group(1)); bad += 1
+print(f'{f}: {bad} broken links')
+PY
+# -&gt; &quot;&lt;slug&gt;.md: 0 broken links&quot;
 </code></pre>
 <p><strong>The KaTeX harness.</strong> <code>check.js</code> is a short script beside a <code>node_modules</code> that holds <code>katex</code>; it is not part of the corpus. Where it is missing, restore it with <code>npm install katex</code> and the file below. <strong>It drops fenced blocks and inline spans before scanning</strong>, because a code sample that quotes <code>$</code> is not a formula and would report an error that is not there.</p>
 <pre><code class="language-js">const katex=require('katex'), fs=require('fs');
@@ -1900,7 +1907,7 @@ console.log(`TOTAL ${total} formulas, ${bad} errors`);
 </tr>
 <tr>
 <td><em>the minimal scalar sector leaves no scalar</em></td>
-<td>it leaves <strong>four singlets</strong>: $24$ real components, $12$ eaten, no doublet among the survivors</td>
+<td>it leaves <strong>twelve real components</strong>: a colour triplet and a charged singlet from $\Phi$, a charged pair and two neutral states from $H$, and no doublet among the survivors</td>
 </tr>
 <tr>
 <td><em>$\tfrac38$ is the prediction</em></td>
@@ -1941,7 +1948,7 @@ $$</p>
 <p><strong>The declaration.</strong> (A): the fourth colour is $\mathbb{C}e_t$, the only line no automorphism moves. The corpus refuses the identification; this note states it as an assumption and translates conditionally.</p>
 <p><strong>The ledger.</strong> Four rows improve, four unchanged, two worse. The walls do not move.</p>
 <p><strong>The procedure.</strong> §13: four shelves to read, five questions per article, eleven mechanical checks, seven traps, and one rule that admits no exception — no number below $M_{PS}$ moves. <strong>The frame articles say what the theory is; §13 says what a correct article looks like.</strong></p>
-<p><strong>The migration.</strong> One of the twelve categories is renamed and one is dissolved into it, leaving eleven; $122$ articles are in scope and $541$ are not; eleven articles are added, eight titles change and no slug moves. The menu is restructured last: the rewritten particle category takes eight sections in the order of the breaking chain — the unified group, the chain, then strong, electroweak and electromagnetic — so that no section uses a group a previous section has not introduced. <strong>The electromagnetic category becomes the fifth of those sections</strong>, keeping its twenty-nine articles and its six exercises unrenamed, its equations exact, and its frame stated once at its end. The declaration (A) is written before the frame, and the article that records the embedding failure is rewritten rather than overruled.</p>
+<p><strong>The migration.</strong> One of the twelve categories is renamed and one is dissolved into it, leaving eleven; $121$ articles are in scope and $541$ are not; eleven articles are added, eight titles change and no slug moves. The menu is restructured last: the rewritten particle category takes eight sections in the order of the breaking chain — the unified group, the chain, then strong, electroweak and electromagnetic — so that no section uses a group a previous section has not introduced. <strong>The electromagnetic category becomes the fifth of those sections</strong>, keeping its twenty-nine articles and its six exercises unrenamed, its equations exact, and its frame stated once at its end. The declaration (A) is written before the frame, and the article that records the embedding failure is rewritten rather than overruled.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
