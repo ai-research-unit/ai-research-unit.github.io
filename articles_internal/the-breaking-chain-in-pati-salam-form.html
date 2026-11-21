@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Breaking Chain in Pati–Salam Model: Three Vevs, Three Scales, One Object — Biquaternion Universe</title>
+  <meta name="description" content="The question. In what order does break, at what scales, by which vacuum directions, and what does each step cost in dimensions, in rank, and in bosons?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-breaking-chain-in-patisalam-model-three-vevs-three-scales-one-object"><strong>The Breaking Chain in Pati–Salam Model: Three Vevs, Three Scales, One Object</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> In what order does $G_{PS}$ break, at what scales, by which vacuum directions, and what does each step cost in dimensions, in rank, and in bosons?</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+G_{PS}\xrightarrow{\ M_{PS}\ }\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
+\xrightarrow{\ M_{R}\ }\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y
+\xrightarrow{\ M_{W}\ }\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}}
+\;}
+$$</p>
+<p>with $21\to15\to12\to9$ dimensions, $5\to5\to4\to3$ rank, and one vector in $\mathbb{CP}^{3}\times\mathbb{CP}^{1}\times\mathbb{CP}^{1}$ doing all of it.</p>
+<p><strong>The single idea of this note.</strong> The chain is <strong>not</strong> three independent breakings. It is one object — a flag of three lines — and every step is the stabiliser of one line. <strong>Written that way the chain has no free choices left except the three scales</strong>, and even the scales are tied to one another by the matching conditions of §6.</p>
+<p><strong>What this note is, in the migration.</strong> New article $3$ of §11.4, phase $1$. It uses <code>the-pati-salam-group-in-the-biquaternion-framework.md</code> for the frame and <code>the-fourth-colour-as-the-unit-line.md</code> for (A), and it feeds <code>the-boson-spectrum-and-the-three-neutral-states.md</code>.</p>
+<p><strong>What is claimed.</strong> That each step is a stabiliser; that the dimension and rank budgets close; that the three matching relations are exact and mutually consistent; and that the coupling boundary condition $\sin^{2}\theta_W(M_{PS})=\tfrac38$ is exact while the running down to $M_Z$ is where the frame's quantitative tension lives.</p>
+<p><strong>What is not claimed.</strong> That the three scales are predicted. That the minimal matter content runs correctly — <strong>it does not, and §7 says so with the sign of the failure</strong>. That $M_{R}$ and $M_{PS}$ are different: the minimal case sets them equal, and splitting them is a choice.</p>
+<h2 id="1-the-flag-which-is-the-chain">1. The Flag, Which Is the Chain</h2>
+<p><strong>Three lines, in three spaces, and the chain is the sequence of their stabilisers.</strong></p>
+<p><strong>1.1 The first line is the unit line, and it lives in the carrier.</strong> $\mathbb C e_t\subset\mathbb C^4$ is the line of <code>SU4-meaning.md</code>: the only line every automorphism fixes, the fibre over which $B-L$ takes its largest value. <strong>Its stabiliser is $\mathrm{SU}(3)$</strong>, and its stabiliser in the whole frame is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$.</p>
+<p>$$
+\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)=\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L},
+\qquad
+15\to 8+1 .
+$$</p>
+<p><strong>1.2 The second line lives in the $SU(2)_R$ doublet.</strong> The vacuum that breaks $\mathrm{SU}(4)$ does it with a field in the $(\mathbf 4,\mathbf 1,\mathbf 2)$: one $SU(2)_R$ doublet, and the breaking of $SU(2)_R$ is the choice of one of its two components. <strong>A doublet has exactly one line up to phase, so there is nothing to choose</strong>: $\mathrm{Stab}_{\mathrm{SU}(2)_R}(\text{line})=\mathrm{U}(1)_R$.</p>
+<p>$$
+\mathrm{Stab}_{\mathrm{SU}(2)_R}(\text{a line})=\mathrm{U}(1)_R,
+\qquad
+3\to 1 .
+$$</p>
+<p><strong>1.3 The third line lives in the $SU(2)_L$ doublet</strong>, and it is the electroweak one. Its stabiliser is $\mathrm{U}(1)_{\mathrm{em}}$.</p>
+<p>$$
+\mathrm{Stab}_{\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y}(\text{a line})=\mathrm{U}(1)_{\mathrm{em}},
+\qquad
+3+1\to 1 .
+$$</p>
+<p><strong>1.4 Why that is one object and not three.</strong> The three lines are nested in the sense that matters: each is a line in the module of the <em>unbroken</em> factor of the previous step. <strong>The chain is therefore a point of</strong></p>
+<p>$$
+\mathbb{CP}^{3}_{\ \text{(the carrier)}}\times\mathbb{CP}^{1}_{\ \text{(the }R\text{ doublet)}}\times\mathbb{CP}^{1}_{\ \text{(the }L\text{ doublet)}},
+$$</p>
+<p>and each factor of that product is a choice of vacuum, not a choice of group. <strong>The group is fixed; the vacuum is a point; the chain is the stabiliser of that point read off factor by factor.</strong> The corpus's $\mathbb{CP}^{3}$ — the one that separates Pati–Salam from the left–right model in <code>pati-salam-versus-left-right.md</code> — is exactly the first factor, and that is why the two models differ.</p>
+<p><strong>The check that the flag is complete.</strong> Rank $5=3+1+1$ at the top; rank $2+1+1+1=5$ after the first step; $2+1+1=4$ after the second; $2+1=3$ at the bottom. <strong>One rank is lost at each of the last two steps and none at the first</strong>, because the six generators lost at $M_{PS}$ are all non-Cartan. That asymmetry is the subject of §3.</p>
+<h2 id="2-the-dimension-budget">2. The Dimension Budget</h2>
+<p><strong>Each step, with what leaves and what stays.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>group before</th>
+<th>group after</th>
+<th>dim</th>
+<th>lost</th>
+<th>what leaves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_{PS}$</td>
+<td>$\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>$21\to15$</td>
+<td>$6$</td>
+<td>the leptoquarks</td>
+</tr>
+<tr>
+<td>$M_{R}$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$15\to12$</td>
+<td>$3$</td>
+<td>$W_R^{\pm}$ and one neutral</td>
+</tr>
+<tr>
+<td>$M_{W}$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$12\to9$</td>
+<td>$3$</td>
+<td>$W^{\pm}$ and $Z$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The budget closes, and the closing is the check.</strong></p>
+<p>$$
+6+3+3=12=21-9 .
+$$</p>
+<p><strong>Read it as masses.</strong> Twelve of the twenty-one become massive, nine stay massless, and the nine are the eight gluons and the photon. <strong>A frame that predicted any other total would be wrong before any dynamics were computed</strong>, and this is the arithmetic that <code>the-boson-spectrum-and-the-three-neutral-states.md</code> turns into a table.</p>
+<p><strong>Read it as rank.</strong> $5\to5\to4\to3$: the first step loses six dimensions and no rank, the second loses three and one, the third loses three and one. <strong>So each of the last two steps kills exactly one neutral boson and two charged ones</strong>: one neutral and one pair of $W$'s at $M_{R}$, one neutral and one pair at $M_{W}$.</p>
+<h2 id="3-why-the-first-step-is-different">3. Why the First Step Is Different</h2>
+<p><strong>The six that leave at $M_{PS}$ are all charged, and that is a structural fact worth stating.</strong></p>
+<p><strong>3.1 They are the $\mathfrak m$ of the $\mathrm{SU}(4)$.</strong> The six generators mixing $\mathbb C e_t$ with $B_V$ carry $B-L=\pm\tfrac43$ and are $SU(2)_L\times SU(2)_R$ singlets, so</p>
+<p>$$
+Q=T_{3L}+T_{3R}+\tfrac12(B-L)=\pm\tfrac23 .
+$$</p>
+<p><strong>They are the leptoquarks</strong>, and they are the only place in the whole chain where a <em>coloured</em> boson acquires a mass. <strong>The gluons never do</strong>, because $\mathrm{SU}(3)$ is a stabiliser at every scale.</p>
+<p><strong>3.2 They carry no rank.</strong> A Cartan generator is diagonal, and a generator with $B-L=\pm\frac43$ is off-diagonal by construction — it moves the unit line into $B_V$. <strong>So the first step is the only step that breaks a group without breaking a Cartan direction</strong>, and that is why rank is untouched while six bosons get mass.</p>
+<p><strong>3.3 Consequence for the neutral sector.</strong> After the first step there are still <strong>three</strong> neutral gauge bosons in play — $W_L^3$, $W_R^3$, and the surviving $B-L$ field — and two of them must eventually become $Z$ and $Z_R$. <strong>The three neutral states are a consequence of the first step not touching the Cartan</strong>, and that is why they are the subject of the next article rather than a detail of this one.</p>
+<h2 id="4-the-three-scales">4. The Three Scales</h2>
+<p><strong>One paragraph each, with what is measured and what is bounded.</strong></p>
+<p><strong>4.1 $M_{W}$ is measured.</strong> $M_W=80.377$ GeV, and the electroweak step is the only one of the three whose scale is a datum rather than a parameter.</p>
+<p><strong>4.2 $M_{PS}$ is bounded from below, and the bound is a leptoquark bound.</strong> The $X$ boson of §3.1 mediates $K_L\to\mu e$ at tree level, and the branching-ratio limit $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ requires</p>
+<p>$$
+M_{X}\gtrsim \text{a few hundred TeV},
+$$</p>
+<p>with the precise number depending on the leptoquark's chirality and on whether the diagram is scalar- or vector-mediated. <strong>This is the strongest model-independent statement in the whole frame</strong>, and it is a bound from a measured null result, not from a unification argument.</p>
+<p><strong>4.3 $M_{R}$ is bounded by the $W_R$.</strong> A gauged $\mathrm{SU}(2)_R$ with $g_R=g_L$ contributes a $W_R$ coupling to right-handed currents, and the null results push $M_{W_R}$ into the multi-TeV range. <strong>In the minimal frame $M_{R}=M_{PS}$</strong>, because the same $(\mathbf4,\mathbf1,\mathbf2)$ vacuum breaks both factors; splitting them needs a second field and a second scale.</p>
+<p><strong>4.4 Proton decay does not bound $M_{PS}$, and the reason is arithmetic.</strong> Each leptoquark vertex changes $B$ by $\tfrac13$, because it converts one quark into one lepton. <strong>A proton carries $B=1$, so destroying it needs three such vertices</strong>, and the leading $B$-violating operator is dimension nine. That is suppressed by $M_{PS}^{-6}$, far beyond reach — <strong>which is why the minimal frame is not excluded by proton decay and why the $K_L\to\mu e$ bound is the one that bites.</strong> Proton decay returns as a constraint only when the scalar sector is extended with diquark couplings, which produce dimension-six operators, and then it pushes $M_{PS}$ toward $10^{15}$ GeV — six orders above the leptoquark bound, and the tension between the two is the sharpest constraint on the scalar sector of the model.</p>
+<p><strong>The window, stated once.</strong> $M_{PS}$ sits above a few hundred TeV from leptoquarks, and any value in the range up to $10^{15}$ GeV is admissible if no diquark coupling is present. <strong>The frame does not fix it, and §7 shows that the running does not either, cleanly.</strong></p>
+<h2 id="5-the-matching-relations">5. The Matching Relations</h2>
+<p><strong>Three relations, one per step, and each one is the statement that the broken and unbroken descriptions agree at the threshold.</strong></p>
+<p><strong>5.1 At $M_{PS}$.</strong> The $\mathrm{SU}(4)$ coupling is one, and the $B-L$ field is the Cartan generator $T^{15}$:</p>
+<p>$$
+g_{3}=g_{4},\qquad
+g_{B-L}^{2}=\tfrac38\,g_{4}^{2},
+$$</p>
+<p>where the $\tfrac38$ is a normalisation and not a dynamical statement: $\operatorname{tr}(T^{15})^{2}=\tfrac12$ forces the generator of the quartet's $(1,-\tfrac13,-\tfrac13,-\tfrac13)$ to be $\sqrt{\tfrac38}$ times that array.</p>
+<p><strong>5.2 At $M_{R}$.</strong> Hypercharge is the diagonal combination $Y=T_{3R}+\tfrac12(B-L)$, so its field is a mixture of two gauge fields and its coupling is the harmonic sum:</p>
+<p>$$
+\frac{1}{g_{Y}^{2}}=\frac{1}{g_{R}^{2}}+\frac{1}{4g_{B-L}^{2}} .
+$$</p>
+<p><strong>5.3 At $M_{W}$.</strong> The photon is the mixture of $W^{3}_{L}$ and $B_{Y}$ that annihilates the doublet vacuum, so</p>
+<p>$$
+\frac{1}{e^{2}}=\frac{1}{g_{L}^{2}}+\frac{1}{g_{Y}^{2}},
+\qquad
+\sin^{2}\theta_{W}=\frac{g_{Y}^{2}}{g_{L}^{2}+g_{Y}^{2}} .
+$$</p>
+<p><strong>5.4 Composing them, and the number that comes out.</strong></p>
+<p>$$
+\frac{1}{g_{Y}^{2}}\Big|_{M_{PS}}=\frac{1}{g_{4}^{2}}+\frac{1}{4\cdot\tfrac38g_{4}^{2}}=\frac{1}{g_{4}^{2}}+\frac{2}{3g_{4}^{2}}=\frac{5}{3g_{4}^{2}}
+\;\;\Longrightarrow\;\;
+g_{Y}^{2}=\tfrac35g_{4}^{2}
+\;\;\Longrightarrow\;\;
+\sin^{2}\theta_{W}(M_{PS})=\frac{\tfrac35}{1+\tfrac35}=\tfrac38 .
+$$</p>
+<p><strong>5.5 The check that the relations are the same relations.</strong> The composition can be done in a second way, from the generator algebra alone, without any $B-L$ normalisation: write $Y$ in the $\mathrm{SU}(4)$ Cartan basis, $Y=q\,T^{15}+t\,T_{3R}$ with $q=1/(2\sqrt{3/8})$ and $t=1$, and the same harmonic sum gives</p>
+<p>$$
+\frac{1}{g_{Y}^{2}}=\frac{q^{2}}{g_{4}^{2}}+\frac{1}{g_{R}^{2}}=\frac{2/3}{g_{4}^{2}}+\frac{1}{g_{4}^{2}}=\frac{5}{3g_{4}^{2}} .
+$$</p>
+<p><strong>The two routes agree to machine precision, and they must</strong>: the first uses the normalisation of a generator, the second uses its expansion. <strong>A frame in which they disagreed would have a wrong normalisation somewhere, and this is the cheapest possible test of that.</strong> It passes.</p>
+<h2 id="6-the-photon-exactly">6. The Photon, Exactly</h2>
+<p><strong>One more product of the chain, and it is the sharpest single number in the frame.</strong></p>
+<p>The photon is the combination that survives both breakings, and the general rule for a sum of commuting generators is that the couplings add in parallel:</p>
+<p>$$
+A_\mu\propto\frac{1}{g_{L}}W^{3}_{L\mu}+\frac{1}{g_{R}}W^{3}_{R\mu}+\frac{1}{2g_{B-L}}B_\mu ,
+\qquad
+\frac{1}{e^{2}}=\frac{1}{g_{L}^{2}}+\frac{1}{g_{R}^{2}}+\frac{1}{4g_{B-L}^{2}} .
+$$</p>
+<p><strong>At $M_{PS}$</strong>, where $g_{L}=g_{R}=g_{4}$ and $g_{B-L}^{2}=\tfrac38g_{4}^{2}$:</p>
+<p>$$
+\frac{1}{e^{2}}=\frac{1}{g_{4}^{2}}+\frac{1}{g_{4}^{2}}+\frac{2}{3g_{4}^{2}}=\frac{8}{3g_{4}^{2}}
+\;\;\Longrightarrow\;\;
+e^{2}=\tfrac38g_{4}^{2},
+\qquad
+\sin^{2}\theta_{W}=\tfrac38 .
+$$</p>
+<p><strong>The three denominators are $1$, $1$ and $\tfrac23$, and their sum $\tfrac83$ is why the answer is $\tfrac38$.</strong> Every factor of $\tfrac38$ in the Pati–Salam literature traces back to this addition, and it is worth seeing once rather than quoting: <strong>two equal contributions from the two $SU(2)$'s, and two thirds of one from the $B-L$</strong>, the two thirds coming from the $\tfrac14$ in $Y=T_{3R}+\tfrac12(B-L)$ combined with the $\tfrac83$ in $g_{B-L}^{2}=\tfrac38g_{4}^{2}$.</p>
+<p><strong>Verified numerically</strong>: the null vector of the neutral mass matrix of the next article, computed with the two vacua, reproduces the ratios $(1,1,\tfrac{1}{2g_{B-L}})=\bigl(1,1,\sqrt{2/3}\bigr)$ to machine precision. <strong>So the photon's composition is not assumed in §6; it is derived twice, here from the couplings and there from the mass matrix.</strong></p>
+<h2 id="7-the-running-and-the-sign-of-the-failure">7. The Running, and the Sign of the Failure</h2>
+<p><strong>This section records a failure, because the frame has one and hiding it would make every number above look like a success.</strong></p>
+<p><strong>7.1 The boundary condition is exact.</strong> $\sin^{2}\theta_{W}(M_{PS})=\tfrac38$ follows from the two matching relations and nothing else. Its value at $M_{Z}$ follows from the matter content between the scales, and there the frame has a problem.</p>
+<p><strong>7.2 The problem, in the sign of one coefficient.</strong> With the Standard Model's content alone, the one-loop slopes are $b_{2}=-\tfrac{19}{6}$ and $b_{1}=\tfrac{41}{10}$. Running <strong>down</strong> from $M_{PS}$ with those slopes, the hypercharge inverse coupling $\alpha_{Y}^{-1}$ <em>decreases</em> relative to $\alpha_{2}^{-1}$ as the scale is lowered... which makes $\sin^{2}\theta_{W}=\alpha_{2}^{-1}/(\alpha_{2}^{-1}+\alpha_{Y}^{-1})$ <strong>increase</strong> away from $\tfrac38$. The measured value is $0.231$, which is <strong>below</strong> $\tfrac38$.</p>
+<p><strong>7.3 So the minimal content cannot do it.</strong> A boundary condition above the measured value, with a running that moves it further above, does not land on the measurement. <strong>Three ways out, and the frame must choose one.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>remedy</th>
+<th>cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>extra matter between $M_{W}$ and $M_{PS}$</td>
+<td>changes the slopes, is not predicted, and is the standard price</td>
+</tr>
+<tr>
+<td>$M_{PS}$ close to the leptoquark bound</td>
+<td>reduces the lever arm, needs threshold corrections to finish the job</td>
+</tr>
+<tr>
+<td>supersymmetry</td>
+<td>changes both slopes, and imports a whole sector the corpus does not have</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>7.4 What this does to the claim.</strong> It removes one claim and leaves the others. <strong>$\tfrac38$ is not a prediction of the measured $\sin^{2}\theta_{W}$; it is a boundary condition.</strong> The frame's genuine successes are elsewhere: the sixteen, the tracelessness that gives charge quantisation, the four anomaly conditions collapsing, and the absence of a free hypercharge. <strong>A migration that presented $\tfrac38$ as a successful prediction would be trading on a coincidence of notation, and the corpus does not do that.</strong></p>
+<h2 id="8-what-the-chain-buys-and-what-it-does-not">8. What the Chain Buys, and What It Does Not</h2>
+<p><strong>Buys, in four lines.</strong></p>
+<p>Colour is a stabiliser at every scale, so it is never broken and never needs explaining.</p>
+<p>Hypercharge is a combination, $Y=T_{3R}+\tfrac12(B-L)$, so it is not imported.</p>
+<p>The chain's three steps are three stabilisers of three lines, so the vacuum is a point of a product of projective spaces and the group is fixed.</p>
+<p>The dimension budget $21=9+12$ and the rank budget $5\to4\to3$ are exact, and they are the frame's cheapest tests.</p>
+<p><strong>Does not buy, in four lines.</strong></p>
+<p>The scales. $M_{PS}$ and $M_{R}$ are parameters, bounded but not fixed.</p>
+<p>The correct running. §7.</p>
+<p>The chiral assignment. The chain breaks a vector-like group; the chirality was declared before it, in the sixteen.</p>
+<p>The scalar sector. Which fields do the breaking is a choice, and <code>the-scalar-sector-and-the-bidoublet.md</code> prices it: $8+4=12$ real components against $12$ broken generators, so the minimal sector leaves no physical scalar.</p>
+<h2 id="9-the-checks">9. The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dimensions</td>
+<td>$21\to15\to12\to9$</td>
+<td>$15=8+3+3+1$; $12=8+3+1$; $9=8+1$</td>
+</tr>
+<tr>
+<td>the budget</td>
+<td>$6+3+3$</td>
+<td>$12=21-9$</td>
+</tr>
+<tr>
+<td>ranks</td>
+<td>$5\to5\to4\to3$</td>
+<td>$3{+}1{+}1$; $2{+}1{+}1{+}1$; $2{+}1{+}1$; $2{+}1$</td>
+</tr>
+<tr>
+<td>the leptoquark charge</td>
+<td>$Q=0+0+\tfrac12\cdot\tfrac43$</td>
+<td>$\pm\tfrac23$</td>
+</tr>
+<tr>
+<td>$g_{B-L}^{2}$</td>
+<td>$\operatorname{tr}(T^{15})^{2}=\tfrac12$ on $(1,-\tfrac13,-\tfrac13,-\tfrac13)$</td>
+<td>$\tfrac38g_{4}^{2}$, factor $0.612372$</td>
+</tr>
+<tr>
+<td>the matching, route A</td>
+<td>$q^{2}/g_{4}^{2}+1/g_{R}^{2}$, $q^{2}=\tfrac23$</td>
+<td>$\tfrac53g_{4}^{-2}$</td>
+</tr>
+<tr>
+<td>the matching, route B</td>
+<td>$1/g_{R}^{2}+1/(4g_{B-L}^{2})$</td>
+<td>$\tfrac53g_{4}^{-2}$, identical to $10^{-12}$</td>
+</tr>
+<tr>
+<td>$\sin^{2}$ at the scale</td>
+<td>$\tfrac35/(1+\tfrac35)$</td>
+<td>$\tfrac38$</td>
+</tr>
+<tr>
+<td>$1/e^{2}$</td>
+<td>$1+1+\tfrac23$ in units of $g_{4}^{-2}$</td>
+<td>$\tfrac83$, so $e^{2}=\tfrac38g_{4}^{2}$</td>
+</tr>
+<tr>
+<td>proton decay</td>
+<td>three leptoquark vertices per unit $B$</td>
+<td>dimension nine, no bound</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The chain.</strong> $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\to\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\to\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}}$.</p>
+<p><strong>The object.</strong> One point of $\mathbb{CP}^{3}\times\mathbb{CP}^{1}\times\mathbb{CP}^{1}$; three stabilisers; three lines; the group fixed.</p>
+<p><strong>The budget.</strong> $21\to15\to12\to9$ dimensions, $5\to5\to4\to3$ rank, $6+3+3=12$ massive and $9$ massless.</p>
+<p><strong>The relations.</strong> $g_{3}=g_{4}$; $g_{B-L}^{2}=\tfrac38g_{4}^{2}$; $1/g_{Y}^{2}=1/g_{R}^{2}+1/(4g_{B-L}^{2})$; $1/e^{2}=1/g_{L}^{2}+1/g_{Y}^{2}$.</p>
+<p><strong>The numbers.</strong> $\sin^{2}\theta_{W}(M_{PS})=\tfrac38$, $e^{2}=\tfrac38g_{4}^{2}$, and the photon is $(1,1,\sqrt{2/3})$ in the three neutral fields.</p>
+<p><strong>The failure.</strong> The minimal content runs $\tfrac38$ the wrong way; the boundary condition is exact and the running is not a prediction. <strong>Recorded in §7, not hidden.</strong></p>
+<p><strong>The bounds.</strong> $M_{PS}\gtrsim$ a few hundred TeV from $K_L\to\mu e$; $M_{W_R}$ multi-TeV; proton decay does not bound it, because $B$ moves in thirds.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_{PS}$</td>
+<td>the scale of $\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$</td>
+</tr>
+<tr>
+<td>$M_{R}$</td>
+<td>the scale of $\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}\to\mathrm{U}(1)_Y$; $=M_{PS}$ in the minimal frame</td>
+</tr>
+<tr>
+<td>$M_{W}$</td>
+<td>the electroweak scale, measured</td>
+</tr>
+<tr>
+<td>$T^{15}$</td>
+<td>the $\mathrm{SU}(4)$ Cartan generator proportional to $(1,-\tfrac13,-\tfrac13,-\tfrac13)$</td>
+</tr>
+<tr>
+<td>$q,t$</td>
+<td>the expansion coefficients of $Y$ in the basis $\{T^{15},T_{3R}\}$, $q^{2}=\tfrac23$, $t=1$</td>
+</tr>
+<tr>
+<td>$b_{1},b_{2},b_{3}$</td>
+<td>the one-loop slopes, $\tfrac{41}{10},-\tfrac{19}{6},-7$</td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^{3}\times\mathbb{CP}^{1}\times\mathbb{CP}^{1}$</td>
+<td>the vacuum manifold: the three lines of §1</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_internal/the-pati-salam-group-in-the-biquaternion-framework.md</code>, for the frame, the twenty-one and the sixteen.</li>
+<li><code>articles_internal/the-fourth-colour-as-the-unit-line.md</code>, for the unit line whose stabiliser is the first step.</li>
+<li><code>articles_internal/the-boson-spectrum-and-the-three-neutral-states.md</code>, for the $9$ against $12$ and the mass matrix of the three neutral states.</li>
+<li><code>articles_internal/three-interactions-in-pati-salam-form.md</code>, for the couplings, the ledger and the migration that this article belongs to.</li>
+<li><code>articles_internal/the-pati-salam-model.md</code>, for the literature's version: the same chain, the same $\tfrac38$, and the same running problem.</li>
+<li><code>articles_internal/pati-salam-versus-left-right.md</code>, for what changes when the first factor of the vacuum manifold is dropped.</li>
+<li><code>articles_internal/SU4-meaning.md</code>, <code>articles_internal/SU3-meaning.md</code>, for the stabiliser and the line.</li>
+<li><code>articles_internal/lagrangian-migration.md</code>, for the discipline this article follows: one sentence per claim, one check per number.</li>
+</ul>
+<p><strong>The traps.</strong> Do not read $M_{PS}$ as fixed by unification: §7 shows the running does not fix it, and it is bounded only from below. Do not read $\sin^{2}\theta_{W}=\tfrac38$ as a prediction of $0.231$; it is a boundary condition and the running moves it the wrong way. Do not read the three veils as three independent choices: two of the three lines have nothing to choose, and the only genuine choice is the first, which is (A). Do not read "proton decay does not bound it" as "proton decay is absent": $B$ is violated, in thirds, and dimension-nine operators are there — they are simply unreachable.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

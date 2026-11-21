@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pati–Salam Model in the Biquaternion Framework: Four Colours, $21$ Dimensions, One Coupling — Biquaternion Universe</title>
+  <meta name="description" content="The model, in the form the literature states it. Pati and Salam proposed in that the lepton be read as a fourth colour: that quarks and leptons sit in one…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-patisalam-model-in-the-biquaternion-framework-four-colours-math0-dimensions-one-coupling"><strong>The Pati–Salam Model in the Biquaternion Framework: Four Colours, $21$ Dimensions, One Coupling</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The model, in the form the literature states it.</strong> Pati and Salam proposed in $1974$ that the lepton be read as a fourth colour: that quarks and leptons sit in one multiplet of an $\mathrm{SU}(4)$ acting on four colours, with lepton number the charge that distinguishes the fourth colour from the other three. The gauge group is</p>
+<p>$$
+G_{PS}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R ,
+$$</p>
+<p>and one family is the sixteen</p>
+<p>$$
+\mathbf{16}=(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2),
+$$</p>
+<p>which contains a right-handed neutrino without one being added, cancels its own anomalies, and gives a group-theoretic reason for the charge quantisation the Standard Model only records. <strong>The price is six new gauge bosons</strong> — the leptoquarks — which carry colour and lepton number at once and mediate proton decay unless they are heavy. The chain to the Standard Model runs in two steps,</p>
+<p>$$
+G_{PS}\ \longrightarrow\ \mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\ \longrightarrow\ \mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}} ,
+$$</p>
+<p>so that colour survives the first step as a stabiliser, hypercharge is assembled at it, and the photon is the mixture that survives the second.</p>
+<p><strong>The question this article answers.</strong> Why this group, and where does each of its three factors come from in the biquaternion algebra? The algebra $\mathbb B\cong M_2(\mathbb C)$ is not an $\mathrm{SU}(4)$ and contains no colour of its own. <strong>What it does contain is a carrier of four complex dimensions and a two-sided product</strong>, and those two structures supply two of the three factors. This article says exactly how far that reaches and where the rest is declared — because the rest is declared, and a reader who is not told so will read the frame as a derivation.</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+G_{PS}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R,
+\qquad
+\dim_{\mathbb R}=15+3+3=21,
+\qquad
+\operatorname{rank}=3+1+1=5
+\;}
+$$</p>
+<p>with the two-sided structure of the algebra supplying the second and third factors, and the carrier supplying the first.</p>
+<p><strong>It opens the section, and it is the only article here that names a particular group.</strong> The eighteen that follow are written for a general gauge group — the principle, the connection, the curvature, the path integral, the lattice — and every one of them reads correctly for $G_{PS}$. <strong>This one says which group they are being read for</strong>, and it is placed first for that reason.</p>
+<p><strong>What is claimed.</strong> That the twenty-one dimensions split as $15+3+3$ and the fifteen as $8+1+6$; that the two $\mathrm{SU}(2)$ factors arise from the algebra's own two-sided action and not from an import; that the fermion content is the sixteen of $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$; that one covariant derivative with one coupling covers all twenty-one; and that the group acts on a <strong>formal copy</strong> of the carrier's quartet, for the reason computed in §6.</p>
+<p><strong>What is not claimed.</strong> That the algebra derives the group. It derives two of the three factors and the split of the third. <strong>The identification of that split with the quark–lepton quartet is a declaration, with a price</strong>, called (A) throughout and stated in §2 and §4. Nor that the group makes the theory chiral: it does not, and §7 says why the wall stands.</p>
+<h2 id="1-the-three-factors-and-what-each-one-is">1. The Three Factors, and What Each One Is</h2>
+<p><strong>1.1 The first factor is the carrier's own group.</strong> $\mathrm{SU}(4)$ is the unitary group of the four-dimensional complex space on which $\mathbb B$ acts, fifteen real dimensions, defined by $M^{\dagger}M=\mathrm I$ and $\det M=1$. <strong>The group is not an element of the algebra and not a corner of its endomorphisms; it is the whole group of the carrier.</strong></p>
+<p><strong>1.2 The other two factors are the algebra's two-sided action.</strong> Left and right multiplication by the imaginary units give two commuting $\mathfrak{su}(2)$'s inside $\mathfrak{so}(4)$:</p>
+<p>$$
+\mathfrak k_L=\{L_{\vec e_a}\},\qquad \mathfrak k_R=\{R_{\vec e_a}\},\qquad [L_{\vec e_a},R_{\vec e_b}]=0,\qquad \dim\mathfrak k_L=\dim\mathfrak k_R=3,
+$$</p>
+<p>so that $\exp\mathfrak k_L\times\exp\mathfrak k_R=\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, six dimensions. <strong>Nothing is imported here: the two factors are the two ways the algebra multiplies.</strong></p>
+<p><strong>1.3 The arithmetic, and it closes twice.</strong></p>
+<p>$$
+21=\underbrace{15}_{\mathrm{SU}(4)}+\underbrace{3}_{\mathrm{SU}(2)_L}+\underbrace{3}_{\mathrm{SU}(2)_R},
+\qquad
+15=\underbrace{8}_{\mathfrak{su}(3)}+\underbrace{1}_{\mathbb R\,iD}+\underbrace{6}_{\mathfrak m}.
+$$</p>
+<p><strong>The first equation is the frame; the second is the reason the frame can break to the Standard Model.</strong> The $8$ will survive as colour, the $1$ will mix into hypercharge, and the $6$ will become the leptoquarks. <strong>The ranks are $3+1+1=5$</strong>, and the chain takes $5\to4\to3$, one rank lost at each step.</p>
+<h2 id="2-the-sixteen">2. The Sixteen</h2>
+<p><strong>The fermions are not a choice of the group; they are the smallest anomaly-free assignment, and the algebra's split selects it.</strong></p>
+<p>$$
+\mathbf{16}=(\mathbf 4,\mathbf 2,\mathbf 1)\oplus(\bar{\mathbf 4},\mathbf 1,\mathbf 2),
+\qquad
+4\cdot2+4\cdot2=16 .
+$$</p>
+<p><strong>Read the two terms as the two chiralities.</strong> The first holds the left-handed doublet of the quartet — three quark colours and one lepton, each doubled by $SU(2)_L$. The second holds the right-handed partners as singlets of $SU(2)_L$ and doublets of $SU(2)_R$. <strong>So $\nu_R$ is not added: it is the fourth component of the $\bar{\mathbf 4}$, and it is required the moment the lepton is a colour.</strong></p>
+<p><strong>Why the split of §1.3 is what makes this work.</strong> $B-L$ is a generator of the $\mathrm{SU}(4)$, with eigenvalues $(1,-\tfrac13,-\tfrac13,-\tfrac13)$ on the quartet, and $\mathbf 4\to\mathbf 3\oplus\mathbf 1$ under $\mathrm{SU}(3)$. <strong>That is exactly the quark–lepton split</strong>, and it is (A): the algebra supplies the split $\mathbb C e_t\oplus B_V$, and the declaration says the line is the lepton.</p>
+<p><strong>The check that the assignment is forced, and not merely possible.</strong> Three conditions have to hold at once, and each one is a trace:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>evaluation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}Y$ over the sixteen</td>
+<td>$0$</td>
+<td>holds</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}Y^{3}$</td>
+<td>$-\tfrac29$ from $(\mathbf4,\mathbf2,\mathbf1)$, $+\tfrac29$ from $(\bar{\mathbf4},\mathbf1,\mathbf2)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$SU(2)_L$ doublets per family</td>
+<td>$4$</td>
+<td>even, so no Witten anomaly</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The middle row is the one worth reading.</strong> The left-handed quartet gives $-\tfrac29$, computed as</p>
+<p>$$
+6\cdot\Bigl(\tfrac16\Bigr)^{3}+2\cdot\Bigl(-\tfrac12\Bigr)^{3}=\tfrac{1}{36}-\tfrac14=-\tfrac29 ,
+$$</p>
+<p>and its conjugate gives $+\tfrac29$ with the signs reversed. <strong>The cancellation is between the quartet and its own conjugate</strong>, which is the structural statement: a real or vector-like assignment would cancel trivially, and this one cancels because the sixteen is built from a complex representation and its conjugate in equal measure.</p>
+<h2 id="3-one-covariant-derivative">3. One Covariant Derivative</h2>
+<p><strong>The whole gauge content is one line.</strong></p>
+<p>$$
+D_\mu=\partial_\mu-ig_4A^a_\mu T^{(4)a}-ig_LW^i_{L\mu}\tau^i-ig_RW^i_{R\mu}\tau^i ,
+\qquad a=1,\dots,15,\quad i=1,2,3 .
+$$</p>
+<p><strong>Twenty-one gauge fields, and at the Pati–Salam scale one coupling.</strong> The unification condition is not $\mathrm{SU}(5)$'s: there is no group above, only the statement that the three factors have a common origin at $M_{PS}$ in the sense that</p>
+<p>$$
+g_3=g_L=g_R=g_4\qquad\text{at }M_{PS},
+$$</p>
+<p>where $g_3$ is the coupling of the $\mathrm{SU}(3)$ that survives inside the $\mathrm{SU}(4)$. <strong>Whether that is a unification or a coincidence is a question the corpus cannot answer</strong>; what the frame supplies is that the three couplings have one boundary value if the frame is right.</p>
+<p><strong>What the twenty-one fields are, in the frame's own labels.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>count</th>
+<th>$SU(3)$</th>
+<th>$SU(2)_L$</th>
+<th>$SU(2)_R$</th>
+<th>fate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^a$, $a$ in the $\mathfrak{su}(3)$ corner</td>
+<td>$8$</td>
+<td>$\mathbf 8$</td>
+<td>$\mathbf 1$</td>
+<td>$\mathbf 1$</td>
+<td>the gluons</td>
+</tr>
+<tr>
+<td>$A^{15}$</td>
+<td>$1$</td>
+<td>$\mathbf 1$</td>
+<td>$\mathbf 1$</td>
+<td>$\mathbf 1$</td>
+<td>the $B-L$ boson, mixes into $\gamma$ and $Z$</td>
+</tr>
+<tr>
+<td>$A^a$, $a$ in $\mathfrak m$</td>
+<td>$6$</td>
+<td>$\mathbf 3+\bar{\mathbf3}$</td>
+<td>$\mathbf 1$</td>
+<td>$\mathbf 1$</td>
+<td>the leptoquarks</td>
+</tr>
+<tr>
+<td>$W_L^i$</td>
+<td>$3$</td>
+<td>$\mathbf 1$</td>
+<td>$\mathbf 3$</td>
+<td>$\mathbf 1$</td>
+<td>$W_L^{\pm}$, one neutral</td>
+</tr>
+<tr>
+<td>$W_R^i$</td>
+<td>$3$</td>
+<td>$\mathbf 1$</td>
+<td>$\mathbf 1$</td>
+<td>$\mathbf 3$</td>
+<td>$W_R^{\pm}$, one neutral</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is most of the boson spectrum.</strong> Its last three columns are the reason the spectrum counts $9$ massless against $12$ massive, and the two neutral entries in the last two rows join the $B$-$L$ boson in the mixing that produces the photon and the $Z$.</p>
+<h2 id="4-where-each-factor-comes-from-and-how-firmly">4. Where Each Factor Comes From, and How Firmly</h2>
+<p><strong>Three different strengths of derivation, and the difference has to be stated or the frame overclaims.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>factor</th>
+<th>where it comes from</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>$\exp L(\mathfrak k)\times\exp R(\mathfrak k)$</td>
+<td><strong>derived</strong> from the two-sided action, as an algebra statement</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>the unitary group of the carrier</td>
+<td><strong>derived</strong> as a group, given the carrier</td>
+</tr>
+<tr>
+<td>the split $\mathbf 4=\mathbf 1\oplus\mathbf 3$</td>
+<td>$\mathbb C e_t\oplus B_V$</td>
+<td><strong>derived</strong>; canonical, and the only canonical one</td>
+</tr>
+<tr>
+<td>the identification with the quark–lepton quartet</td>
+<td>—</td>
+<td><strong>declared</strong>, (A), phase $0$</td>
+</tr>
+<tr>
+<td>the chiral assignment $(4,2,1)\oplus(\bar4,1,2)$</td>
+<td>—</td>
+<td><strong>declared</strong>; the algebra does not choose a chirality</td>
+</tr>
+<tr>
+<td>$g_3=g_L=g_R$ at $M_{PS}$</td>
+<td>—</td>
+<td><strong>assumed</strong>, and tested only by the consequence $\sin^2\theta_W=\tfrac38$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth row is the declaration (A) and the fifth is the chiral wall.</strong> Neither is a defect of the frame; both are recorded so that no article downstream can quietly promote them.</p>
+<h2 id="5-why-this-group-and-not-a-larger-one">5. Why This Group and Not a Larger One</h2>
+<p><strong>Three competitors, and the corpus's reason for each refusal, stated in one line apiece.</strong></p>
+<p><strong>$\mathrm{SU}(5)$.</strong> Rank four, and its $\mathbf{10}+\bar{\mathbf5}$ has no $\nu_R$ and puts quarks and leptons in the same multiplet in a way the algebra's split does not suggest. <strong>The corpus's $\mathfrak{su}(4)$ is the carrier's group; $\mathfrak{su}(5)$ would be a group with no carrier in the algebra at all.</strong></p>
+<p><strong>$\mathrm{SO}(10)$.</strong> Rank five, the same rank as $G_{PS}$, and it contains $G_{PS}$ — so it is the natural enlargement rather than a competitor. But its spinor is a $\mathbf{16}$ obtained by a Clifford algebra the corpus does not otherwise use, and <strong>the rank-five coincidence is not an argument</strong>: two rank-five groups contain one another for reasons of dimension, not of structure.</p>
+<p><strong>$\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$.</strong> This is $G_{PS}$ after the $\mathrm{SU}(4)$ breaking, and it is the left–right model. <strong>It is the honest alternative</strong>: the difference is the six leptoquarks and the $\mathbb{CP}^{3}$ they generate, and the experiment that separates the two is a leptoquark search.</p>
+<p><strong>The one-line reason the frame is $\mathrm{SU}(4)$ and not the left–right group.</strong> The algebra's carrier is four-dimensional and its stabiliser is $\mathrm{SU}(3)$; <strong>a three-colour group inside a four-dimensional carrier with one line removed is $\mathrm{SU}(4)$, not $\mathrm{SU}(3)\times\mathrm{U}(1)$.</strong> Whether the fourth direction is gauged is the physics question, and the frame takes the answer that it is.</p>
+<h2 id="6-the-carrier-is-a-copy-and-here-is-the-theorem">6. The Carrier Is a Copy, and Here Is the Theorem</h2>
+<p><strong>The objection.</strong> If $\mathrm{SU}(4)$ acts on the same four dimensions as the Lorentz action, the two must commute, and then colour must be inside the commutant of the Lorentz algebra.</p>
+<p><strong>The computation.</strong> Let $L_{\vec e_a}$ be left multiplication on $\mathbb C^4$ by the three imaginary units. Then</p>
+<p>$$
+\mathfrak{su}(4)\cap\bigl\{X:[X,L_{\vec e_a}]=0\ \text{for }a=x,y,z\bigr\}
+=\operatorname{span}\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}\cong\mathfrak{su}(2),
+\qquad \dim_{\mathbb R}=3 .
+$$</p>
+<p><strong>Verified</strong>: the right multiplications commute with the left ones; each $R_{\vec e_a}$ is anti-Hermitian and traceless; $R_1$ is Hermitian and not traceless, so $iR_1$ is the only further anti-Hermitian element of the commutant and it is excluded. <strong>The full commutant of $L(\mathbb H)$ in $M_4(\mathbb C)$ is $R(\mathbb B)$, eight real dimensions, of which exactly three lie in $\mathfrak{su}(4)$.</strong></p>
+<p><strong>So the ceiling is $\mathrm{SU}(2)$, and the frame must be a tensor product.</strong></p>
+<p>$$
+(\text{internal }\mathbf 4)\otimes(\text{spinor}),
+\qquad
+\mathbf 4_{\text{int}}\cong\mathbb C e_t\oplus B_V ,
+$$</p>
+<p>where the internal quartet is a <strong>formal copy</strong> of the algebra's coordinate space: it inherits the split, because the split is canonical, and it does not inherit the Lorentz action, because it must not. <strong>This is the same wall the corpus already knows from the chiral side</strong>, met here from the colour side, and it is the same wall for the same reason: $M_4(\mathbb C)$ cannot host two large commuting compact groups.</p>
+<p><strong>What this article therefore asserts, in one sentence.</strong> <em>The frame is $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ acting on a formal copy of the carrier's quartet tensored with a spinor, and the copy is licensed by the canonical split and by nothing else.</em></p>
+<h2 id="7-the-chiral-wall-restated-for-this-group">7. The Chiral Wall, Restated for This Group</h2>
+<p><strong>The frame does not make the theory chiral, and no renaming will.</strong> The algebra's product is two-sided; a chiral gauge theory needs an action that distinguishes left from right at the level of the <em>gauge</em> coupling. <strong>In $G_{PS}$ that distinction is put in by the representation</strong>: $\mathrm{SU}(2)_L$ acts on $(\mathbf4,\mathbf2,\mathbf1)$ and $\mathrm{SU}(2)_R$ on $(\bar{\mathbf4},\mathbf1,\mathbf2)$, and the assignment is a declaration, the fifth row of §4's table.</p>
+<p><strong>What would count as the algebra supplying it.</strong> A one-sided action of the algebra on a chiral spinor module — the corpus's open problem, unchanged. <strong>What would be a fake solution, and is refused.</strong> Writing the sixteen in a single multiplet of a larger group and calling the chirality derived, when the multiplet is real. <strong>A real multiplet cannot be chiral</strong>, and the sixteen is complex, which is why it works and why the algebra's own carrier, being self-conjugate, cannot supply it.</p>
+<p><strong>The consequence for every article downstream.</strong> The wall is quoted, not solved. <a href="quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</a> says what the larger group moves and what it does not: one of three obstructions, and the one that moves is the dimension.</p>
+<h2 id="8-the-checks">8. The Checks</h2>
+<p><strong>Every number in this article, run again.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\dim G_{PS}$</td>
+<td>$15+3+3$</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td>the $15$</td>
+<td>$8+1+6$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the rank</td>
+<td>$3+1+1$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>the sixteen</td>
+<td>$4\cdot2+4\cdot2$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>the sixteen's hypercharge trace</td>
+<td>$3\cdot\tfrac16+3\cdot\tfrac16-\tfrac12-\tfrac12+3\cdot\tfrac23+3\cdot(-\tfrac13)+0-1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the cubic, left-handed half</td>
+<td>$6(\tfrac16)^{3}+2(-\tfrac12)^{3}$</td>
+<td>$-\tfrac29$</td>
+</tr>
+<tr>
+<td>the cubic, conjugate half</td>
+<td>$3(-\tfrac23)^{3}+3(\tfrac13)^{3}+1$</td>
+<td>$+\tfrac29$</td>
+</tr>
+<tr>
+<td>the cubic, total</td>
+<td>$-\tfrac29+\tfrac29$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$SU(2)_L$ doublets per family</td>
+<td>$4$</td>
+<td>even</td>
+</tr>
+<tr>
+<td>the commutant ceiling</td>
+<td>$\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)$</td>
+<td>$\mathfrak{su}(2)$, $\dim 3$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The frame.</strong> $G_{PS}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, $21=15+3+3$, rank $5$, one coupling at $M_{PS}$.</p>
+<p><strong>The decompositions.</strong> $15=8+1+6$; the sixteen $=(4,2,1)\oplus(\bar4,1,2)$; the eight of colour, the one that becomes $B-L$, the six leptoquarks.</p>
+<p><strong>What is derived.</strong> The two $SU(2)$'s from the two-sided action; the $\mathrm{SU}(4)$ from the carrier; the split $\mathbb C e_t\oplus B_V$, canonically.</p>
+<p><strong>What is declared.</strong> The identification of the split with the quark–lepton quartet (A); the chiral assignment; $g_3=g_L=g_R$ at the scale.</p>
+<p><strong>The ceiling.</strong> $\mathfrak{su}(4)$ commutes with the Lorentz action only in $\mathfrak{su}(2)$; so the carrier is a formal copy, licensed by the split and by nothing else.</p>
+<p><strong>The wall.</strong> The frame does not make the theory chiral; the chirality is in the representation, and the representation is declared.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G_{PS}$</td>
+<td>$\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, dimension $21$, rank $5$</td>
+</tr>
+<tr>
+<td>$T^{(4)a}$</td>
+<td>the fifteen $\mathrm{SU}(4)$ generators, anti-Hermitian and traceless</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>the six generators mixing $\mathbb C e_t$ with $B_V$, the leptoquark directions</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>$i\operatorname{diag}(-3,1,1,1)$, the diagonal generator of the $\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$L_{\vec e_a},R_{\vec e_a}$</td>
+<td>left and right multiplication by the imaginary units</td>
+</tr>
+<tr>
+<td>$\mathbf{16}$</td>
+<td>$(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, one family</td>
+</tr>
+<tr>
+<td>(A)</td>
+<td>the declaration that the fourth colour is the unit line</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-gauge-principle-in-biquaternionic-form.html">The Gauge Principle in Biquaternionic Form</a>. The general principle this frame is an instance of.</li>
+<li><a href="non-abelian-gauge-fields-in-biquaternionic-form.html">Non-Abelian Gauge Fields in Biquaternionic Form</a>. The connection, the curvature and the Yang–Mills action for a group of this size.</li>
+<li><a href="why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html">Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)</a>. The ceiling on the algebra's own compact structure, which §4 and §6 meet again.</li>
+<li><a href="the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html">The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock</a>. The two-sided action, before it is gauged.</li>
+<li><a href="the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html">The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</a>. What the algebra's own action carries, and what it does not.</li>
+<li><a href="grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a>. The same ceiling read as a statement about unification, in both readings.</li>
+<li><a href="quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html">Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated</a>. What the larger group moves of the colour obstruction and what it leaves standing.</li>
+</ul>
+<p><strong>The traps.</strong> Do not read "the group of the carrier" as "the group acting on spacetime"; §6 forbids it and the tensor product is the whole point. Do not read the two $\mathrm{SU}(2)$'s as the Lorentz group: in the frame they are gauged and internal, and the algebra supplies the mechanism, not the identification. Do not read $g_3=g_L=g_R$ as a prediction at accessible energy; it is a boundary condition at $M_{PS}$. Do not read the sixteen as evidence that the group is right: it is evidence that the sixteen is the natural multiplet, and a natural multiplet is not a measurement.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

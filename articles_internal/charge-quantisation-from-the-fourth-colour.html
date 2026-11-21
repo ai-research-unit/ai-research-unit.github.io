@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charge Quantisation from the Fourth Colour: One Trace, One Third — Biquaternion Universe</title>
+  <meta name="description" content="The question. Why is the proton&#x27;s charge exactly minus the electron&#x27;s? The Standard Model assigns hypercharges and checks anomalies; it does not explain…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="charge-quantisation-from-the-fourth-colour-one-trace-one-third"><strong>Charge Quantisation from the Fourth Colour: One Trace, One Third</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Why is the proton's charge exactly minus the electron's? The Standard Model assigns hypercharges and checks anomalies; <strong>it does not explain the equality, it imposes it.</strong> Does the frame do better?</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+\operatorname{tr}_{\mathbf4}(B-L)=3\Bigl(+\tfrac13\Bigr)+(-1)=0
+\quad\Longrightarrow\quad
+3q+\ell=0
+\quad\Longrightarrow\quad
+q=-\tfrac13\ell ,
+\;}
+$$</p>
+<p><strong>and the trace vanishes because the generator is a generator.</strong></p>
+<p><strong>What this note is, in the migration.</strong> New article $10$ of §11.4, phase $2$. It is the article that makes the migration's most quoted claim precise, and the precision matters: <strong>the claim is narrower than "charge is quantised" and stronger than "the charges happen to come out in thirds".</strong></p>
+<p><strong>What is claimed.</strong> That $B-L$ is a traceless generator of $\mathrm{SU}(4)$, so its eigenvalues on the quartet sum to zero; that this is exactly the quark–lepton charge relation; that the corpus's own display $D=\operatorname{diag}(-3,1,1,1)$ is the same equation; that the relation is a <em>statement about a trace</em>, not about a dynamics; and that what it explains is the <em>ratio</em> and not the overall scale.</p>
+<p><strong>What is not claimed.</strong> That it explains why the electron's charge has the value it has — <strong>it does not, and no group-theoretic argument can.</strong> That it is a derivation of the charges from the algebra — <strong>the quartet is (A), and the trace is a property of $\mathrm{SU}(4)$, which is the carrier's group.</strong> That the Standard Model lacks the fact: it has the fact as a coincidence and the frame has it as a trace.</p>
+<h2 id="1-what-charge-quantisation-means-exactly">1. What Charge Quantisation Means, Exactly</h2>
+<p><strong>Three statements that are often run together, and the frame separates them.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>content</th>
+<th>who gives it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>integrality</strong></td>
+<td>every charge is an integer multiple of $e/3$</td>
+<td>frame: because the eigenvalues of a traceless diagonal are rational with denominator $3$</td>
+</tr>
+<tr>
+<td><strong>the quark–lepton relation</strong></td>
+<td>$3q+\ell=0$ on $B-L$ eigenvalues, hence $Q_p+Q_e=0$</td>
+<td>frame: the trace of $B-L$</td>
+</tr>
+<tr>
+<td><strong>the absolute scale</strong></td>
+<td>$e$ has the value it has</td>
+<td>nobody: it is a measurement</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the second is the frame's achievement, and the first follows from it with one more step.</strong> §5 is about the third, and it is where the honest limits are.</p>
+<p><strong>1.1 Why the second is the interesting one.</strong> A hydrogen atom's neutrality is a <em>measured</em> fact of extraordinary precision. <strong>In the Standard Model it is a consequence of the hypercharge assignments being what they are</strong> — an assignment that anomaly cancellation constrains but does not determine. <strong>In the frame it is a consequence of one diagonal matrix being traceless</strong>, and that matrix is a generator of the group that was already there.</p>
+<p><strong>1.2 Why the first is nearly free.</strong> If $3q+\ell=0$ and $\ell$ is an integer multiple of $e$, then $q$ is an integer multiple of $e/3$. <strong>So integrality in thirds is not a separate mystery once the relation holds</strong> — it is bookkeeping.</p>
+<h2 id="2-the-trace-and-why-it-vanishes">2. The Trace, and Why It Vanishes</h2>
+<p><strong>The one-line computation, with its three justifications.</strong></p>
+<p><strong>2.1 The trace.</strong> $B-L$ acts on the quartet as $\operatorname{diag}\bigl(+\tfrac13,+\tfrac13,+\tfrac13,-1\bigr)$, so</p>
+<p>$$
+\operatorname{tr}_{\mathbf4}(B-L)=\tfrac13+\tfrac13+\tfrac13-1=0 .
+$$</p>
+<p><strong>2.2 Why it must vanish, stated three ways, all equivalent.</strong></p>
+<p><strong>(a) Generators are traceless.</strong> Every generator of a compact semisimple group is traceless on every finite-dimensional unitary representation; $\mathrm{SU}(4)$ is semisimple and $B-L$ is a linear combination of its Cartan generators. <strong>So the vanishing is not a numerical accident of the eigenvalue choice; it is forced by $B-L$ being a generator at all.</strong></p>
+<p><strong>(b) Unitarity.</strong> If $B-L$ were the eigenvalue array of a generator, $\exp(i\theta(B-L))$ must have determinant $1$, hence the trace must vanish. <strong>The same statement in the group rather than in the algebra.</strong></p>
+<p><strong>(c) The corpus's display.</strong> $D=\operatorname{diag}(-3,1,1,1)$ is traceless, $-3+1+1+1=0$, and it is the corpus's own $\mathfrak{su}(4)$ Cartan element. <strong>"$-3$ and three ones" is "$-1$ and three thirds" multiplied by three</strong>, and the equality of the two readings is the trace.</p>
+<p><strong>2.3 The step that is not automatic.</strong> The trace vanishing says the <em>sum</em> of the four eigenvalues is zero. <strong>Reading it as $3q+\ell=0$ requires that the three equal entries be the quarks and the single entry be the lepton</strong> — and that is (A), the split $\mathbf4\to\mathbf3\oplus\mathbf1$ with the line identified as the lepton. <strong>The trace gives the arithmetic; (A) gives the interpretation.</strong></p>
+<p><strong>2.4 So the claim, stated with both halves.</strong> <em>Given that the fourth direction is the lepton, the tracelessness of $B-L$ forces the quark charge to be a third of it.</em> <strong>Neither half alone is enough</strong>: without the trace there is no relation, and without (A) there is no quark–lepton assignment. <strong>The migration states both, in that order, which is why the declaration article comes before this one.</strong></p>
+<h2 id="3-the-relation-in-every-notation">3. The Relation in Every Notation</h2>
+<p><strong>The same equation four times, so that no reader is left with a different version.</strong></p>
+<p><strong>3.1 In trace form.</strong> $\operatorname{tr}_{\mathbf4}(B-L)=0$, i.e. the sum of the quartet's four $B-L$ eigenvalues vanishes.</p>
+<p><strong>3.2 In eigenvalue form.</strong> $3\cdot\tfrac13+(-1)=0$, i.e. three quarks at $+\tfrac13$ and one lepton at $-1$.</p>
+<p><strong>3.3 In charge form, computed on the proton and the electron directly.</strong> With $Q=T_{3L}+T_{3R}+\tfrac12(B-L)$, take a right-handed-like basis so that each constituent contributes its own $T_3$ and its own $B-L$:</p>
+<p>$$
+Q_p=\underbrace{\tfrac12+\tfrac12-\tfrac12}_{\text{three quarks},\,T_3}+\tfrac12\underbrace{\Bigl(\tfrac13+\tfrac13+\tfrac13\Bigr)}_{B-L}=+\tfrac12+\tfrac12=+1 ,
+$$</p>
+<p>$$
+Q_e=\underbrace{\Bigl(-\tfrac12\Bigr)}_{T_3}+\tfrac12\underbrace{\bigl(-1\bigr)}_{B-L}=-\tfrac12-\tfrac12=-1 ,
+$$</p>
+<p>so</p>
+<p>$$
+Q_p+Q_e=\bigl(T_{3}^{(p)}+T_{3}^{(e)}\bigr)+\tfrac12\bigl[(B-L)_p+(B-L)_e\bigr]=\bigl(\tfrac12-\tfrac12\bigr)+\tfrac12\bigl(1-1\bigr)=0 .
+$$</p>
+<p><strong>Two cancellations, and they are different cancellations.</strong> The $T_3$ parts cancel because the proton's three quarks and the electron carry $\sum T_3=0$; <strong>the $B-L$ parts cancel because the proton's constituents and the electron are <em>one full quartet</em> of $B-L$ eigenvalues, and a quartet sums to zero.</strong> The second cancellation is the trace, and it is the one the frame supplies; the first is the tracelessness of $T_3$, which any $\mathrm{SU}(2)$ has.</p>
+<p><strong>3.4 In the corpus's form.</strong> $D=\operatorname{diag}(-3,1,1,1)$ traceless; the eigenvalues are $-3,1,1,1$, and $-3+1+1+1=0$. <strong>Multiply by $\tfrac13$ and shift by the $\mathrm{SU}(2)$ piece and the Standard Model's charges appear.</strong></p>
+<p><strong>3.5 The check that the four forms agree.</strong> Each is a rewriting of $\sum_i\lambda_i=0$ with $\{\lambda_i\}=\{\tfrac13,\tfrac13,\tfrac13,-1\}$; <strong>so agreement is not a matter of computation but of notation, and the corpus's value is that its own $\mathfrak{su}(4)$ display already is one of the four.</strong></p>
+<h2 id="4-why-the-standard-model-cannot-do-this">4. Why the Standard Model Cannot Do This</h2>
+<p><strong>The comparison, stated fairly, because the frame's gain is real but narrow.</strong></p>
+<p><strong>4.1 What the Standard Model has.</strong> Six hypercharges per family, three anomaly conditions, hence a one-parameter family. <strong>Any member of that family is consistent</strong>, and the physical member is the one where the quark's charge is $-\tfrac13$ of the electron's — <strong>but that value is not selected by the conditions; it is selected by the requirement that the charges be the observed ones.</strong></p>
+<p><strong>4.2 Why the conditions do not select it.</strong> $\mathrm{tr}Y^{3}=0$ and $\mathrm{tr}Y=0$ are two equations on six unknowns; they fix ratios but leave an overall scale. <strong>The scale is fixed by the measured $e$, and once it is fixed the quark charge is $\tfrac13$ — but "$\tfrac13$" was already an input to the ratios.</strong> <strong>The Standard Model's anomaly conditions cannot distinguish thirds from, say, fifths</strong>, because the conditions are homogeneous.</p>
+<p><strong>4.3 What the frame has instead.</strong> One eigenvalue array, fixed by the multiplet, with one free parameter — the overall normalisation of $B-L$ — which the trace fixes to zero sum. <strong>There is no homogeneous freedom left</strong>, because the trace is not one of the anomaly conditions: it is a property of the generator, and it holds <em>before</em> any anomaly is computed.</p>
+<p><strong>4.4 The precise comparison, in one sentence each.</strong> <em>Standard Model: the charges are chosen so that the anomalies cancel, and the fact that they are in thirds is a feature of the chosen values.</em> <em>Frame: the anomalies cancel because the charges are eigenvalues of a traceless generator, and the thirds are the trace.</em></p>
+<p><strong>4.5 What the frame still does not explain.</strong> $\operatorname{tr}_{\mathbf4}(B-L)=0$ says the four eigenvalues sum to zero; <strong>it does not say that the lepton's is $-1$ rather than $-2$ and the quarks' $-\tfrac23$.</strong> The overall scale of $B-L$ is a normalisation, and the frame's normalisation convention ($\operatorname{tr}T^{2}=\tfrac12$) fixes the <em>coupling</em>, not the eigenvalues. <strong>So the frame explains the ratio exactly and the scale not at all</strong>, and §5 is about that.</p>
+<h2 id="5-what-is-explained-and-what-is-not">5. What Is Explained and What Is Not</h2>
+<p><strong>A four-row ledger, so that the claim cannot be inflated.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answered by</th>
+<th>answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>why is $Q_p=-Q_e$?</td>
+<td>tracelessness of $B-L$</td>
+<td>because $3q+\ell=0$</td>
+</tr>
+<tr>
+<td>why is every charge a multiple of $e/3$?</td>
+<td>the same, plus integrality of $\ell$</td>
+<td>bookkeeping</td>
+</tr>
+<tr>
+<td>why is the electron's charge $-1$?</td>
+<td>nothing</td>
+<td>it is a unit convention</td>
+</tr>
+<tr>
+<td>why is $e$ the value it is?</td>
+<td>nothing</td>
+<td>it is measured</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>5.1 The frame's genuine answer is the first row.</strong> Proton–electron neutrality is a theorem in the frame and a coincidence in the Standard Model. <strong>That is the migration's strongest claim about electromagnetic physics, and it is strong because it is small and exact.</strong></p>
+<p><strong>5.2 The third row is a unit convention and should be described as one.</strong> Saying "the electron has charge $-1$" is a choice of units; <strong>saying "the electron's charge is minus three times the down quark's" is a statement with content</strong>, and that is the one the trace gives.</p>
+<p><strong>5.3 The fourth row is outside any group theory.</strong> $e$ is a coupling; it runs; its value at $M_{PS}$ is $\tfrac38g_4^{2}$ and at $M_Z$ it is $\tfrac{1}{128}$. <strong>No trace fixes it, and the frame's relation $e^{2}=\tfrac38g_4^{2}$ relates it to another coupling rather than explaining it.</strong></p>
+<p><strong>5.4 Why this matters for the migration's credibility.</strong> The corpus has a habit of saying "charge quantisation is derived" without qualification. <strong>The qualification is two clauses long and this article is where it goes</strong>: the <em>ratio</em> is derived from a trace, the <em>scale</em> is measured, and the derivation needs (A) to say which eigenvalue is the lepton's.</p>
+<h2 id="6-the-same-trace-in-the-corpuss-own-language">6. The Same Trace in the Corpus's Own Language</h2>
+<p><strong>One section connecting this to the algebra, because the corpus's readers will ask.</strong></p>
+<p><strong>6.1 The corpus's $\mathfrak{su}(4)$.</strong> Its Cartan subalgebra is generated by three diagonal traceless matrices; $D=\operatorname{diag}(-3,1,1,1)$ is one of them, and its tracelessness is not a choice but the definition of $\mathfrak{su}(4)$ as a subalgebra of $\mathfrak{u}(4)$. <strong><code>SU4-meaning.md</code> states this and the statement is unchanged by the migration.</strong></p>
+<p><strong>6.2 What the migration adds.</strong> That $D$'s eigenvalue array, read as $(B-L)$ up to normalisation, <strong>is the one that distinguishes the fourth direction from the three</strong> — and that this reading is (A). <strong>So the migration does not change the algebra; it states which of the algebra's diagonal directions the physical $B-L$ is, and what that implies.</strong></p>
+<p><strong>6.3 The check the corpus can run.</strong> That the direction $D$ is <em>canonical</em>: it is the only traceless diagonal that is fixed by the subgroup $\mathrm{SU}(3)\times\mathrm{U}(1)$ and that vanishes on the three-space. <strong>Verified in the declaration article</strong>: the centraliser of $\mathfrak{su}(3)$ in $\mathfrak{su}(4)$ is one-dimensional and is spanned by $iD$. <strong>So there was no choice of which diagonal to call $B-L$, conditional on the split.</strong> The split is (A); the diagonal is forced.</p>
+<h2 id="7-the-checks">7. The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the trace</td>
+<td>$\tfrac13+\tfrac13+\tfrac13-1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the relation</td>
+<td>$3q+\ell$</td>
+<td>$0$, so $q=-\ell/3$</td>
+</tr>
+<tr>
+<td>the corpus's display</td>
+<td>$-3+1+1+1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the centraliser</td>
+<td>$\mathfrak z_{\mathfrak{su}(3)}(\mathfrak{su}(4))$</td>
+<td>one-dimensional, spanned by $iD$</td>
+</tr>
+<tr>
+<td>the four forms of §3</td>
+<td>all rewritings of $\sum\lambda_i=0$</td>
+<td>agree</td>
+</tr>
+<tr>
+<td>the Standard Model's freedom</td>
+<td>$6$ charges, $3$ conditions</td>
+<td>one-parameter family</td>
+</tr>
+<tr>
+<td>the frame's freedom</td>
+<td>one array, trace fixed</td>
+<td>none</td>
+</tr>
+<tr>
+<td>what is left unexplained</td>
+<td>the overall scale</td>
+<td>measured</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The relation.</strong> $\operatorname{tr}_{\mathbf4}(B-L)=0$, so $3q+\ell=0$, so the quark's charge is a third of the lepton's, so the proton and the electron cancel exactly.</p>
+<p><strong>Why it holds.</strong> Because $B-L$ is a generator of $\mathrm{SU}(4)$ and generators are traceless — not because the charges were chosen well.</p>
+<p><strong>What it needs.</strong> (A), to say that the single eigenvalue $-1$ is the lepton and the three $+\tfrac13$ are the quarks. <strong>The trace gives the arithmetic, the declaration gives the interpretation.</strong></p>
+<p><strong>The comparison.</strong> The Standard Model's conditions are homogeneous and cannot select thirds; the trace is not homogeneous and does.</p>
+<p><strong>The limits.</strong> The ratio is explained; the overall scale is a unit convention; the value of $e$ is measured.</p>
+<p><strong>The corpus's form.</strong> $D=\operatorname{diag}(-3,1,1,1)$ traceless, one-dimensional centraliser, so the diagonal was forced once the split was declared.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B-L$</td>
+<td>baryon number minus lepton number, a Cartan generator of $\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the corpus's traceless diagonal, $\propto B-L$</td>
+</tr>
+<tr>
+<td>$q,\ell$</td>
+<td>the quark and lepton eigenvalues of $B-L$, $+\tfrac13$ and $-1$</td>
+</tr>
+<tr>
+<td>$\mathfrak z_{\mathfrak{su}(3)}(\mathfrak{su}(4))$</td>
+<td>the centraliser of the colour subalgebra, one-dimensional</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_internal/the-fourth-colour-as-the-unit-line.md</code>, for (A) and the centraliser argument that the diagonal is forced.</li>
+<li><code>articles_internal/the-anomaly-ledger-in-pati-salam-form.md</code>, for $\operatorname{tr}_{\mathbf4}(B-L)=0$ as the row that removes the Standard Model's free normalisation.</li>
+<li><code>articles_internal/SU4-meaning.md</code>, for $\mathfrak{su}(4)$, $D$ and the tracelessness in the corpus's own language.</li>
+<li><code>articles_internal/the-pati-salam-group-in-the-biquaternion-framework.md</code>, for the sixteen and the charge table.</li>
+<li><code>articles_internal/the-photon-as-the-unbroken-mixture.md</code>, for the generator $Q$ whose eigenvalues these are.</li>
+<li><code>articles_internal/the-pati-salam-model.md</code>, for the literature's version of the same argument.</li>
+<li><code>articles_internal/three-interactions-in-pati-salam-form.md</code>, for §4.2, where the claim is made in one line.</li>
+</ul>
+<p><strong>The traps.</strong> Do not say "charge quantisation is derived" without the two clauses: the ratio is, the scale is not — §5.4. Do not drop (A): the trace alone gives no quark–lepton assignment — §2.3. Do not read the third rows of §5 as failures of the frame; they are outside any group theory, and the Standard Model does not answer them either — §5.3.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

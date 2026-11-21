@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Scalar Sector and the Bidoublet: $8+4=12$, and Why That Is a Problem — Biquaternion Universe</title>
+  <meta name="description" content="The question. Which scalar fields do the breaking of the chain, how many real components do they have, how many are eaten, and what survives?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-scalar-sector-and-the-bidoublet-math0-and-why-that-is-a-problem"><strong>The Scalar Sector and the Bidoublet: $8+4=12$, and Why That Is a Problem</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Which scalar fields do the breaking of the chain, how many real components do they have, how many are eaten, and what survives?</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+(\mathbf4,\mathbf1,\mathbf2):\ 8\ \text{real},\qquad
+(\mathbf1,\mathbf2,\mathbf2):\ 4\ \text{real},\qquad
+8+4=12=\dim G_{PS}-\dim H ,
+\;}
+$$</p>
+<p><strong>so the minimal scalar sector is eaten completely and leaves no physical doublet.</strong></p>
+<p><strong>What this note is, in the migration.</strong> New article $7$ of §11.4, phase $2$. It is the article with the least comfortable conclusion in the whole migration: <strong>the minimal scalar sector is exactly big enough to break the symmetry and exactly too small to give the fermions masses.</strong> Everything the Standard Model calls "the Higgs" has to come from the third field, which brings sixty real components and a colour problem of its own.</p>
+<p><strong>What is claimed.</strong> That the two-step chain is done by one $(\mathbf4,\mathbf1,\mathbf2)$ and one $(\mathbf1,\mathbf2,\mathbf2)$; that their real component count equals the number of broken generators exactly; that therefore no physical scalar survives at tree level; that the $(\mathbf{15},\mathbf2,\mathbf2)$ is mandatory rather than optional; and that the bidoublet's two vacuum expectation values are what put the $\rho$ parameter at risk.</p>
+<p><strong>What is not claimed.</strong> That the third field's potential is under control — <strong>it is not, and §6 says why.</strong> That the corpus can derive the scalar content: it cannot, and the scalar sector is the one place in the frame with no algebraic guidance at all.</p>
+<h2 id="1-the-fields-with-their-contents">1. The Fields, with Their Contents</h2>
+<p><strong>Three representations, and only the first two are needed for the breaking.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>$G_{PS}$</th>
+<th>real components</th>
+<th>role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi$</td>
+<td>$(\mathbf4,\mathbf1,\mathbf2)$</td>
+<td>$4\cdot1\cdot2\cdot2=8$</td>
+<td>breaks $\mathrm{SU}(4)\to\mathrm{SU}(3)$ and $\mathrm{SU}(2)_R\to\mathrm{U}(1)_R$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>$(\mathbf1,\mathbf2,\mathbf2)$</td>
+<td>$1\cdot2\cdot2\cdot2=4$</td>
+<td>breaks $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\to\mathrm{U}(1)_{\mathrm{em}}$</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>$(\mathbf{15},\mathbf2,\mathbf2)$</td>
+<td>$15\cdot2\cdot2\cdot2=60$</td>
+<td>fermion masses, and the $\rho$ parameter</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The factor of two in each count is the reality of a complex scalar</strong>: a complex field has two real components. <strong>The $(\mathbf4,\mathbf1,\mathbf2)$ is complex in the $\mathrm{SU}(4)$ index and complex in the $\mathrm{SU}(2)_R$ index, hence eight real numbers</strong> — and that number is the first thing the next section uses.</p>
+<p><strong>The $(\mathbf{15},\mathbf2,\mathbf2)$ has sixty, and that is why it is the expensive one.</strong> Fifteen is the adjoint of $\mathrm{SU}(4)$, so $\Sigma$ carries a coloured octet, a coloured triplet and antitriplet, and a singlet — <strong>and the coloured pieces can mediate proton decay, which is the fork of §6.</strong></p>
+<h2 id="2-the-eaten-count-which-is-exact">2. The Eaten Count, Which Is Exact</h2>
+<p><strong>The arithmetic of the whole chain, in one table, and it closes with no remainder.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>breaking</th>
+<th>generators broken</th>
+<th>who eats them</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$</td>
+<td>$15-9=6$</td>
+<td>six real components of $\Phi$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_R\to\mathrm{U}(1)_R$</td>
+<td>$3-1=2$</td>
+<td>two real components of $\Phi$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_R\times\mathrm{U}(1)_{B-L}\to\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$3+1+1-1=4$</td>
+<td>four real components of $H$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$6+2+4=12$</td>
+<td>$8+4=12$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two totals agree, and this is not a coincidence — it is the statement that the vacuum manifold of the two fields has exactly the dimension of the coset.</strong></p>
+<p><strong>2.1 The first field's eight, split as six and two.</strong> Six are the leptoquarks of the previous article. <strong>The other two are the $W_R^{\pm}$</strong>: the $\Phi$ vacuum has a direction in its $R$-doublet, and rotating that direction is two real flat directions.</p>
+<p><strong>2.2 The second field's four, and the four generators.</strong> The bidoublet's vacuum is $2\times2$ and its flat directions are the four broken generators of the electroweak pair — <strong>the $W^{\pm}$, the $Z$, and the $Z_R$.</strong> That the $Z_R$ is among them is the point most often missed: <strong>in the minimal model the $Z_R$ mass comes from the bidoublet through the mixing, not from a separate field</strong>, and the spectrum note's $\tfrac58g^2v_R^2$ is the eigenvalue, not a separate breaking.</p>
+<p><strong>2.3 The consequence, stated without softening.</strong> $12$ real components, $12$ eaten, <strong>zero physical scalars at tree level.</strong> The minimal model therefore has no scalar doublet to give the quarks and leptons their masses, no scalar to be the observed $125$ GeV state, and no scalar to run the couplings. <strong>The minimal sector breaks the symmetry correctly and describes no masses</strong>, and this is the sharpest single defect of the model as usually written.</p>
+<h2 id="3-why-the-third-field-is-mandatory">3. Why the Third Field Is Mandatory</h2>
+<p><strong>Three jobs the minimal sector cannot do, each needing $\Sigma$.</strong></p>
+<p><strong>3.1 Fermion masses.</strong> A Yukawa coupling needs a scalar that is a singlet of $\mathrm{SU}(3)$ and transforms as $(\mathbf2,\bar{\mathbf2})$ or $(\mathbf2,\mathbf2)$ under the electroweak pair. <strong>The bidoublet $H$ is a candidate but it is fully eaten</strong>, so the $(\mathbf{15},\mathbf2,\mathbf2)$ is what does the work: its colour-singlet component is a bidoublet, and its colour-octet components generate the mass splittings that make the model's fermion spectrum non-degenerate.</p>
+<p><strong>3.2 The $\rho$ parameter.</strong> Already visible in the spectrum note: with the minimal two fields, the tree-level relation is exact at $\sqrt{5/2}$ for the $Z_R/W_R$ ratio, with no free alignment. <strong>Add $\Sigma$ and the ratio acquires a dependence on its vacuum expectation value, which is either a freedom or a disaster</strong>, and §5 is where that is priced.</p>
+<p><strong>3.3 Neutrino masses.</strong> The $(\bar{\mathbf4},\mathbf1,\mathbf2)$ contains $\nu_R$, so a Majorana mass needs either a $(\mathbf{10},\mathbf1,\mathbf3)$-like triplet or the $\Sigma$; <strong>the minimal sector supplies neither</strong>, and the seesaw is therefore a property of the extended sector rather than of the frame.</p>
+<p><strong>The honest summary of §3.</strong> The frame's group is fine and its <em>matter</em> content is fixed; <strong>its scalar content is a menu</strong>, and the menu is chosen to satisfy the three jobs above. <strong>A migration that presented the scalar sector as derived would be inventing.</strong></p>
+<h2 id="4-the-scalar-and-the-centre">4. The Scalar and the Centre</h2>
+<p><strong>One structural remark the corpus can make and the literature cannot, and it is about where a scalar lives in the algebra.</strong></p>
+<p><strong>4.1 The corpus's own result.</strong> A spin-zero field is a line in the state module, not an element of the algebra's vector part: <code>spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module</code>. <strong>So the corpus's scalar is a central object</strong> — it commutes with the rotors, it multiplies from both sides identically, and it is the one field whose two-sidedness costs nothing.</p>
+<p><strong>4.2 What that means for the frame.</strong> A $(\mathbf4,\mathbf1,\mathbf2)$ has four $\mathrm{SU}(4)$ components and two $\mathrm{SU}(2)_R$ components, so it is <strong>not</strong> a central object in the algebra's sense. <strong>The scalar sector is therefore the one place where the frame's fields have no algebra-side home at all</strong> — not a line in the centre, not a vector in $B_V$, but a multiplet of a group acting on a copy.</p>
+<p><strong>4.3 The consequence for the migration's honesty.</strong> Every other sector has a partial translation: fermions as the sixteen (split-licensed), gauge fields as the twenty-one (stabiliser-licensed). <strong>The scalars have none</strong>, and <code>the-pati-salam-model.md</code> records that this is where the model is least constrained and most adjustable. <strong>The corpus's contribution here is the observation, not a construction.</strong></p>
+<h2 id="5-the-bidoublet-and-the-math70-parameter">5. The Bidoublet and the $\rho$ Parameter</h2>
+<p><strong>The one place where a scalar choice is measurable at low energy.</strong></p>
+<p><strong>5.1 The bidoublet has two vacuum expectation values.</strong> Write</p>
+<p>$$
+\langle H\rangle=\begin{pmatrix}\kappa&0\\0&\kappa'\end{pmatrix},
+\qquad
+v^2=\kappa^2+\kappa'^2\ \text{(up to convention)} .
+$$</p>
+<p><strong>Two vevs in one field is one too many for the electroweak sector</strong>: the Standard Model's single doublet has one, and the ratio $\kappa'/\kappa$ is a new parameter.</p>
+<p><strong>5.2 Why that threatens $\rho$.</strong> The tree-level relation $M_W^2=M_Z^2\cos^2\theta_W$ holds when the breaking is done by a single doublet per factor, because a global custodial $\mathrm{SU}(2)$ protects it. <strong>A second vev in the same bidoublet breaks that custodial symmetry</strong>, so $\rho-1$ becomes proportional to $\kappa\kappa'$ times a mixing factor. <strong>In the limit $\kappa'\to0$ — alignment — the relation is restored exactly.</strong></p>
+<p><strong>5.3 The three ways to keep $\rho=1$, and their prices.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mechanism</th>
+<th>price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alignment, $\kappa'\to0$</td>
+<td>a tuning, not a symmetry; radiative corrections re-introduce the deviation</td>
+</tr>
+<tr>
+<td>a triplet $(\mathbf1,\mathbf3,\mathbf1)$ and its mirror</td>
+<td>restores custodial symmetry exactly, adds two fields and a hierarchy problem</td>
+</tr>
+<tr>
+<td>the $(\mathbf{15},\mathbf2,\mathbf2)$ taking a suitable vacuum</td>
+<td>does the job, but its coloured components bring §6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>5.4 What the migration says.</strong> The frame predicts $\rho=1$ only in the alignment limit, <strong>and the measured $\rho$ is $1.00038\pm0.00020$</strong>, so the alignment is a real constraint on the scalar sector: $\kappa\kappa'$ is bounded to be small. <code>custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form</code> owns the details; <strong>this note records that the frame inherits the problem rather than solving it.</strong></p>
+<h2 id="6-the-coloured-scalars-and-proton-decay">6. The Coloured Scalars and Proton Decay</h2>
+<p><strong>The fork of the leptoquark article, now with its mechanism.</strong></p>
+<p><strong>6.1 Which components are coloured.</strong> $\Sigma$ in the $(\mathbf{15},\mathbf2,\mathbf2)$ decomposes under $\mathrm{SU}(3)$ as</p>
+<p>$$
+\mathbf{15}\to\mathbf8\oplus\mathbf3\oplus\bar{\mathbf3}\oplus\mathbf1 .
+$$</p>
+<p><strong>The $\mathbf3$ and $\bar{\mathbf3}$ are colour triplets with lepton number</strong>, so they can couple to $qq$ and to $q\ell$ at once — <strong>a diquark and a leptoquark coupling in the same field.</strong></p>
+<p><strong>6.2 What that does.</strong> A single $\Sigma$ exchange then gives a dimension-six operator $(qq)(q\ell)$:</p>
+<p>$$
+\mathcal O_6\sim\frac{\lambda^2}{M_\Sigma^{2}}\,(qq)(q\ell),
+\qquad
+\tau(p\to e^{+}\pi^{0})\ \propto\ \frac{M_\Sigma^{4}}{\lambda^{2}} .
+$$</p>
+<p><strong>The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim10^{15}$ GeV</strong> for order-one couplings.</p>
+<p><strong>6.3 The two branches, stated as a choice the corpus cannot make.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>branch</th>
+<th>consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>no diquark coupling</strong> (a discrete symmetry forbids $qq\Sigma$)</td>
+<td>proton is stable, $M_\Sigma$ can be at the leptoquark scale, and the symmetry is unexplained</td>
+</tr>
+<tr>
+<td><strong>diquark coupling allowed</strong></td>
+<td>$M_\Sigma\gtrsim10^{15}$ GeV, the coloured scalars are unreachable, and the leptoquark prediction of §3.3 of the previous article becomes empty</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>6.4 Why this is the migration's sharpest open question.</strong> The first branch needs a symmetry nobody derives; the second makes the model's one sharp prediction unobservable. <strong>A frame that needs an unexplained discrete symmetry to survive, and loses its predictions when it does not have one, is a frame on probation</strong> — and that is a fair description of Pati–Salam, not a defect of this translation.</p>
+<h2 id="7-what-the-scalar-sector-costs-the-migration">7. What the Scalar Sector Costs the Migration</h2>
+<p><strong>Three costs, and the third is the one to remember.</strong></p>
+<p><strong>7.1 The minimal sector cannot give masses.</strong> §2.3. The model must be extended before it can be compared with the fermion spectrum at all.</p>
+<p><strong>7.2 The extended sector is a menu.</strong> §3. Three jobs, several candidate fields, no algebraic guidance. <strong>The frame underdetermines its own scalars by more than it underdetermines its fermions</strong>, and the asymmetry is structural.</p>
+<p><strong>7.3 The one measurable consequence is a constraint, not a prediction.</strong> $\rho=1$ in the alignment limit, $\kappa\kappa'$ small. <strong>That is a bound the model must satisfy, not a number it produces.</strong></p>
+<h2 id="8-the-checks">8. The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the $(\mathbf4,\mathbf1,\mathbf2)$ count</td>
+<td>$4\cdot1\cdot2\cdot2$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>the $(\mathbf1,\mathbf2,\mathbf2)$ count</td>
+<td>$1\cdot2\cdot2\cdot2$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>the $(\mathbf{15},\mathbf2,\mathbf2)$ count</td>
+<td>$15\cdot2\cdot2\cdot2$</td>
+<td>$60$</td>
+</tr>
+<tr>
+<td>total eaten</td>
+<td>$6+2+4$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>total available</td>
+<td>$8+4$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>survivors</td>
+<td>$12-12$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the coset dimension</td>
+<td>$21-9$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>$\mathbf{15}$ under $\mathrm{SU}(3)$</td>
+<td>$\mathbf8+\mathbf3+\bar{\mathbf3}+\mathbf1$</td>
+<td>$8+3+3+1=15$</td>
+</tr>
+<tr>
+<td>the proton bound</td>
+<td>$\tau\propto M_\Sigma^{4}$</td>
+<td>$M_\Sigma\gtrsim10^{15}$ GeV</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The fields.</strong> $(\mathbf4,\mathbf1,\mathbf2)$ with $8$ real components, $(\mathbf1,\mathbf2,\mathbf2)$ with $4$, and $(\mathbf{15},\mathbf2,\mathbf2)$ with $60$.</p>
+<p><strong>The breaking.</strong> The first field breaks $\mathrm{SU}(4)$ and $\mathrm{SU}(2)_R$, eating six and two; the second breaks the electroweak pair, eating four.</p>
+<p><strong>The count.</strong> $8+4=12=21-9$, so the minimal sector is eaten completely and leaves no physical scalar.</p>
+<p><strong>The consequence.</strong> The third field is mandatory: for fermion masses, for the $\rho$ parameter, and for neutrino masses.</p>
+<p><strong>The $\rho$ parameter.</strong> The bidoublet's second vev breaks custodial symmetry; $\rho=1$ needs alignment or a triplet.</p>
+<p><strong>The fork.</strong> The $\mathbf{15}$ carries colour triplets that can mediate proton decay; forbidding their diquark coupling needs an unexplained symmetry, allowing it pushes $M_\Sigma$ to $10^{15}$ GeV and empties the leptoquark prediction.</p>
+<p><strong>The verdict.</strong> The frame's group and matter are constrained; its scalars are a menu, and this article is where the menu is shown.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi$</td>
+<td>the $(\mathbf4,\mathbf1,\mathbf2)$, eight real components, breaks $\mathrm{SU}(4)$ and $\mathrm{SU}(2)_R$</td>
+</tr>
+<tr>
+<td>$H$</td>
+<td>the bidoublet $(\mathbf1,\mathbf2,\mathbf2)$, four real components</td>
+</tr>
+<tr>
+<td>$\Sigma$</td>
+<td>the $(\mathbf{15},\mathbf2,\mathbf2)$, sixty real components, fermion masses</td>
+</tr>
+<tr>
+<td>$\kappa,\kappa'$</td>
+<td>the two vacuum expectation values of $H$</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$M_W^2/(M_Z^2\cos^2\theta_W)$, measured $1.00038\pm0.00020$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_internal/the-breaking-chain-in-pati-salam-form.md</code>, for the chain this sector realises and the vacuum manifold $\mathbb{CP}^{3}\times\mathbb{CP}^{1}\times\mathbb{CP}^{1}$.</li>
+<li><code>articles_internal/the-boson-spectrum-and-the-three-neutral-states.md</code>, for the masses the eaten components produce, and the $\sqrt{5/2}$.</li>
+<li><code>articles_internal/the-leptoquark-sector-and-its-bounds.md</code>, for the dimension-nine argument and the diquark fork.</li>
+<li><code>articles_internal/the-fourth-colour-as-the-unit-line.md</code>, for why the $(\mathbf4,\mathbf1,\mathbf2)$ vacuum is along the unit line.</li>
+<li><code>articles_internal/the-pati-salam-model.md</code>, for the literature's three fields, the same fork and the same $\rho$ problem.</li>
+<li><code>articles_physics/spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.md</code>, for why a scalar is a central object and why this sector has no algebra-side home.</li>
+<li><code>articles_physics/custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.md</code>, for the $\rho$ parameter in the corpus's own language.</li>
+</ul>
+<p><strong>The traps.</strong> Do not read $8+4=12$ as a virtue; it is exactly enough and therefore leaves nothing over — §2.3. Do not read the $(\mathbf{15},\mathbf2,\mathbf2)$ as optional: without it there are no fermion masses — §3. Do not read $\rho=1$ as automatic; it needs alignment, and alignment is a tuning — §5. Do not read the diquark fork as a technicality: it decides whether the model is testable — §6.3.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

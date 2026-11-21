@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Colour Wall, Restated: What a Larger Group Moves and What It Does Not — Biquaternion Universe</title>
+  <meta name="description" content="The question. The corpus has two notes saying the biquaternion algebra reaches but not, and one saying the gluon is an octet outside the algebra. Does…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-colour-wall-restated-what-a-larger-group-moves-and-what-it-does-not"><strong>The Colour Wall, Restated: What a Larger Group Moves and What It Does Not</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The corpus has two notes saying the biquaternion algebra reaches $\mathrm{SU}(2)$ but not $\mathrm{SU}(3)$, and one saying the gluon is an octet outside the algebra. <strong>Does moving to $\mathrm{SU}(4)$ change either verdict?</strong></p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;\text{No. Colour is a stabiliser, not a subalgebra of the algebra's own action; the wall moves from }\mathfrak{su}(3)\text{ to }\mathfrak m,\text{ and }\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)=\mathfrak{su}(2)\text{ is unchanged.}\;}
+$$</p>
+<p><strong>What this note is, in the migration.</strong> New article $6$ of §11.4, phase $2$, and the one article in the migration whose job is to say <strong>what the migration does not achieve</strong>. It is a companion to <code>the-gluon-an-octet-outside-the-biquaternion-algebra</code> and to <code>why-the-biquaternion-algebra-reaches-su-2-but-not-su-3</code>, and it supersedes neither.</p>
+<p><strong>What is claimed.</strong> That the three walls the corpus records are distinct and that only one of them moves; that the moving one is the <em>dimension</em> wall, and that it is replaced by a different obstruction of the same size; that the algebra's own action contains $\mathfrak{su}(2)$ and cannot contain $\mathfrak{su}(3)$ acting on the same carrier; and that the frame's colour is a stabiliser acting on a <em>copy</em>, which is a weaker claim than containment.</p>
+<p><strong>What is not claimed.</strong> That the migration breaches the wall. <strong>It does not, and any article that says it does is wrong.</strong> Nor that the wall is fatal: a frame can be right about a group it cannot house, and §5 says what that costs.</p>
+<h2 id="1-the-three-walls-distinguished">1. The Three Walls, Distinguished</h2>
+<p><strong>The corpus's obstruction has been stated three ways, and they are three different statements.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>wall</th>
+<th>statement</th>
+<th>kind</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>the dimension wall</strong></td>
+<td>$\dim\mathfrak{su}(3)=8>\dim\mathfrak{u}(2)=4$, the largest compact subalgebra of $\mathbb B$</td>
+<td>counting</td>
+</tr>
+<tr>
+<td><strong>the carrier wall</strong></td>
+<td>the algebra acts on a four-dimensional complex space; colour needs a three-dimensional space that is <em>not</em> one of its invariant subspaces</td>
+<td>structural</td>
+</tr>
+<tr>
+<td><strong>the chiral wall</strong></td>
+<td>the algebra's product is two-sided; a chiral gauge theory needs a one-sided action</td>
+<td>representation-theoretic</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the first is about numbers, and only the first is touched by the frame.</strong> $\mathfrak{su}(4)$ is fifteen-dimensional and has an eight-dimensional subalgebra, so the counting objection disappears the moment the group is $\mathrm{SU}(4)$.</p>
+<p><strong>The other two do not move, and §2 and §3 say why.</strong> <strong>A migration that claimed to have removed "the colour wall" would be conflating three objections with one</strong>, and the conflation is the most likely way for this migration to go wrong.</p>
+<h2 id="2-the-carrier-wall-does-not-move">2. The Carrier Wall Does Not Move</h2>
+<p><strong>The reason is the commutant theorem, and it is the sharpest statement in the migration.</strong></p>
+<p><strong>2.1 The theorem.</strong> If colour acted on the algebra's own carrier, it would have to commute with the algebra's own action — because both would be acting on the same four dimensions, and the carrier is what the algebra acts on, not something beside it. Then</p>
+<p>$$
+\mathfrak{su}(4)\cap\bigl\{X:[X,L_{\vec e_a}]=0,\ a=x,y,z\bigr\}=\operatorname{span}\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}\cong\mathfrak{su}(2),
+\qquad\dim_{\mathbb R}=3 .
+$$</p>
+<p><strong>Verified</strong>: the right multiplications commute with the left ones, each $R_{\vec e_a}$ is anti-Hermitian and traceless, and $R_1$ is Hermitian and not traceless, so $iR_1$ is the only further anti-Hermitian element and it is excluded. <strong>The full commutant of $L(\mathbb H)$ in $M_4(\mathbb C)$ is $R(\mathbb B)$, eight real dimensions, of which exactly three lie in $\mathfrak{su}(4)$.</strong></p>
+<p><strong>2.2 So the ceiling is $\mathrm{SU}(2)$, and it is the same ceiling as before.</strong> The corpus's old statement was that the maximal compact subalgebra of $\mathbb B$ is $\mathfrak{u}(2)$. The new statement is that the maximal subalgebra of $\mathfrak{su}(4)$ commuting with the algebra's action is $\mathfrak{su}(2)$. <strong>These are the same number seen at two levels, and the frame does not raise it.</strong></p>
+<p><strong>2.3 What the frame does instead.</strong> It declares the colour group to act on a <strong>formal copy</strong> of the carrier's quartet:</p>
+<p>$$
+(\text{internal }\mathbf 4)\otimes(\text{spinor}),
+\qquad
+\mathbf 4_{\text{int}}\cong\mathbb C e_t\oplus B_V .
+$$</p>
+<p><strong>The copy inherits the split, because the split is canonical; it does not inherit the Lorentz action, because it must not.</strong> So colour is a stabiliser acting on the copy, and the carrier wall is not breached — <strong>it is routed around, which is a different thing, and the difference has to be visible.</strong></p>
+<p><strong>2.4 The honest formulation, in one sentence.</strong> <em>Colour is not in the algebra; the split that colour needs is.</em> The migration's claim is about the split, and it must stay about the split.</p>
+<h2 id="3-the-chiral-wall-does-not-move">3. The Chiral Wall Does Not Move</h2>
+<p><strong>The third wall is untouched, and the reason is that it was never about the dimension of the group.</strong></p>
+<p><strong>3.1 What the wall says.</strong> The algebra's multiplication is two-sided: $L_x$ and $R_x$ both act, and every module is at least a bimodule. <strong>A chiral gauge theory needs an action that distinguishes left from right at the level of the gauge coupling.</strong> In the frame that distinction is put in by the representation assignment — $\mathrm{SU}(2)_L$ on $(\mathbf4,\mathbf2,\mathbf1)$, $\mathrm{SU}(2)_R$ on $(\bar{\mathbf4},\mathbf1,\mathbf2)$ — and the assignment is a declaration.</p>
+<p><strong>3.2 Why a larger group cannot supply it.</strong> Chirality is a property of the <em>module</em>, not of the group. <strong>$\mathrm{SU}(N)$ for any $N$ has both chiral and vector-like representations</strong>, and which one occurs is a choice. <strong>Enlarging $4\to 15$ changes which representations are available; it does not force the chiral one.</strong></p>
+<p><strong>3.3 The test that separates the two.</strong> A frame that had solved the chiral wall would produce the sixteen from an algebraic structure with no choice of representation. <strong>The migration does not: it writes the sixteen and declares the assignment.</strong> That is the diagnostic, and it is mechanical.</p>
+<p><strong>3.4 Consequence.</strong> Every article downstream quotes the wall. <strong>None solves it.</strong> The migration's largest structural gain is on the <em>group</em> side — the fourth colour, the tracelessness, the anomaly ledger — and its largest unchanged obstruction is on the <em>chirality</em> side. <strong>Saying both in one breath is what makes the migration honest.</strong></p>
+<h2 id="4-what-the-larger-group-does-move">4. What the Larger Group Does Move</h2>
+<p><strong>One thing genuinely moves, and it is worth its own section because it is the migration's real gain on this front.</strong></p>
+<p><strong>4.1 The colour group is now a stabiliser rather than a subalgebra.</strong> Previously, colour would have had to be <em>inside</em> the algebra, which is false. Now colour is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)$: it acts on a three-dimensional quotient, not as a subalgebra of the algebra's action. <strong>A stabiliser needs no containment</strong>, so the carrier wall of §2 is the only obstacle, and the group-theoretic existence question is settled.</p>
+<p><strong>4.2 The octet is now inside a group the frame owns.</strong> $\mathbf 8$ is the adjoint of $\mathrm{SU}(3)$ and the $\mathfrak{su}(3)$ block of $\mathfrak{su}(4)$, so <strong>the gluon is no longer an octet outside the frame's group</strong> — it is the octet of the stabiliser. <strong>The corpus's old title, <em>The Gluon: An Octet Inside the Carrier's Group<em>, becomes </em>An Octet Inside the Carrier's Group</em></strong> — the rename of §11.6 — and the rename is accurate precisely because it says <em>inside the carrier's group</em> and not <em>inside the algebra</em>.</p>
+<p><strong>4.3 The difference between the two phrasings is the whole article.</strong> <em>Inside the carrier's group</em> is true. <em>Inside the algebra</em> is false and stays false. <strong>A reader who drops the phrase "carrier's group" has misunderstood the migration</strong>, and the rename list is written to make that phrase un-droppable.</p>
+<h2 id="5-what-this-costs">5. What This Costs</h2>
+<p><strong>Three costs, and the second is the one that matters.</strong></p>
+<p><strong>5.1 The frame asserts a copy, and copies are cheap.</strong> A structure that transfers — one canonical line, one axis-free three-space, a traceless diagonal — can be found between many pairs of objects. <strong>What makes this copy more than an analogy is that the three properties Pati–Salam uses all transfer</strong> (the declaration note, §6); but a reader is entitled to ask for more than three properties, and the frame cannot give more.</p>
+<p><strong>5.2 The algebra's own multiplication remains unused by colour.</strong> The algebra multiplies; colour does not multiply. <strong>In the frame, colour is a symmetry of a vector space the algebra happens to be isomorphic to as a vector space, and the isomorphism uses no product.</strong> That is the residue of the wall, and it is not small: a group that acts on a space but not on its algebra is a group the algebra does not know about.</p>
+<p><strong>5.3 The wall will be quoted against the migration, and it should be.</strong> A critic will say: <em>you have renamed the obstruction instead of removing it.</em> <strong>The correct reply is not "no" but "we have removed one of three and we say so"</strong> — which is why this article exists and why it is placed in the migration rather than at its end.</p>
+<h2 id="6-what-would-actually-breach-the-wall">6. What Would Actually Breach the Wall</h2>
+<p><strong>Four candidate mechanisms, and the verdict on each, so that the wall is stated as a live problem rather than a prohibition.</strong></p>
+<p><strong>6.1 A larger carrier.</strong> If the algebra acted on a space of dimension $\ge6$, a commuting $\mathfrak{su}(3)$ would fit. <strong>The corpus's carrier is four-dimensional because the algebra is; a larger carrier means a different algebra</strong>, and that is a different programme.</p>
+<p><strong>6.2 A one-sided module.</strong> The corpus's open problem: a module on which the algebra acts on one side, chiral, of dimension $\ge3$. <strong>If it exists, the chiral wall and part of the carrier wall fall together.</strong> <code>internal-note-on-the-electroweak-interaction-in-the-corpus.md</code> states the four levels of the attempt.</p>
+<p><strong>6.3 Colour as an inner symmetry of the algebra's automorphism group.</strong> $\operatorname{Aut}_{\mathbb C}(\mathbb B)$ is six real dimensions and meets $\mathfrak{su}(4)$ in $\mathfrak{so}(3)$. <strong>$\mathrm{SO}(3)$ is not $\mathrm{SU}(3)$</strong>, and the intersection is a three-dimensional subgroup of a six-dimensional automorphism group: there is no room.</p>
+<p><strong>6.4 A Hopf fibration the corpus has not used.</strong> $\mathrm{SU}(4)/\mathrm{SU}(3)\cong S^{7}$ and $\mathrm{SU}(4)/S(\mathrm{U}(3)\times\mathrm{U}(1))\cong\mathbb{CP}^{3}$. <strong>These are the corpus's own quotients</strong>, and they say that the colour group is a sphere bundle over $\mathbb{CP}^{3}$. <strong>Whether that fibration can be written as an algebraic operation is the open question this article leaves</strong>, and it is a better question than "can the algebra host eight generators".</p>
+<h2 id="7-the-checks">7. The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dimension wall moves</td>
+<td>$\dim\mathfrak{su}(4)=15>8$</td>
+<td>moves</td>
+</tr>
+<tr>
+<td>the carrier wall does not</td>
+<td>$\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)=\mathfrak{su}(2)$</td>
+<td>$\dim 3$, unchanged</td>
+</tr>
+<tr>
+<td>the full commutant</td>
+<td>$R(\mathbb B)\subset M_4(\mathbb C)$</td>
+<td>$\dim_{\mathbb R}=8$</td>
+</tr>
+<tr>
+<td>the chiral wall does not</td>
+<td>chirality is a property of the module</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>colour is a stabiliser</td>
+<td>$\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$</td>
+<td>$\dim 9=\mathrm{U}(3)$</td>
+</tr>
+<tr>
+<td>the octet is inside the group</td>
+<td>$\mathfrak{su}(3)\subset\mathfrak{su}(4)$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>the octet is not inside the algebra</td>
+<td>$\mathfrak{su}(3)\not\subset\mathfrak{u}(2)$</td>
+<td>true, unchanged</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>Three walls, one of which moves.</strong> The dimension wall moves, because fifteen is bigger than eight. The carrier wall does not, because $\mathfrak{su}(4)$ commutes with the algebra's action only in $\mathfrak{su}(2)$. The chiral wall does not, because chirality belongs to the module.</p>
+<p><strong>What moves.</strong> Colour becomes a stabiliser instead of a subalgebra, so the existence question is settled; the octet becomes the adjoint of the stabiliser, so the gluon is inside the carrier's group.</p>
+<p><strong>What does not.</strong> The algebra still does not multiply by colour; the copy is licensed by the split and by nothing else; the sixteen is still declared chiral.</p>
+<p><strong>The verdict.</strong> The migration removes one of three obstructions and says which one. <strong>A migration that claimed all three would be false; this one is worth doing because the one it removes is the one that made the frame impossible.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\vec e_a},R_{\vec e_a}$</td>
+<td>left and right multiplication by the imaginary units on $\mathbb C^4$</td>
+</tr>
+<tr>
+<td>$\operatorname{Comm}L(\mathbb H)$</td>
+<td>the commutant of the left action, $R(\mathbb B)$, $\dim_{\mathbb R}8$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)$</td>
+<td>the maximal compact subalgebra of $\mathbb B$, $\dim4$</td>
+</tr>
+<tr>
+<td>$\mathbb{CP}^{3},S^{7}$</td>
+<td>the corpus's quotients, $\mathrm{SU}(4)/S(\mathrm U(3)\times\mathrm U(1))$ and $\mathrm{SU}(4)/\mathrm{SU}(3)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.md</code>, for the dimension wall in its original form, unchanged by this note.</li>
+<li><code>articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.md</code>, for the compact-subalgebra theorem.</li>
+<li><code>articles_internal/SU4-meaning.md</code>, for the fifteen, the stabiliser and the quotient.</li>
+<li><code>articles_internal/internal-note-on-the-electroweak-interaction-in-the-corpus.md</code>, for the four levels of the chiral wall.</li>
+<li><code>articles_internal/the-fourth-colour-as-the-unit-line.md</code>, for the commutant theorem and the tensor-product declaration.</li>
+<li><code>articles_internal/the-pati-salam-group-in-the-biquaternion-framework.md</code>, for §6, the same theorem in the frame's language.</li>
+<li><code>articles_internal/the-scalar-sector-and-the-bidoublet.md</code>, for the second carrier the scalar sector needs and what that costs.</li>
+</ul>
+<p><strong>The traps.</strong> Do not read "the colour wall is gone" into any sentence of this note; one of three walls moved — §1. Do not read the copy as a carrier: it inherits the split and not the action, and the difference is the whole of §2. Do not read <em>inside the carrier's group</em> as <em>inside the algebra</em>; the rename of §11.6 is worded to make that mistake impossible — §4.3.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

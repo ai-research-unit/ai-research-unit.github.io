@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourth Colour as the Unit Line: The Declaration the Migration Rests On — Biquaternion Universe</title>
+  <meta name="description" content="The question, and it is one sentence long. The corpus has a Lie algebra of dimension fifteen, called, built from its own carrier. Pati–Salam has a group…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourth-colour-as-the-unit-line-the-declaration-the-migration-rests-on"><strong>The Fourth Colour as the Unit Line: The Declaration the Migration Rests On</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question, and it is one sentence long.</strong> The corpus has a Lie algebra of dimension fifteen, called $\mathfrak{su}(4)$, built from its own carrier. Pati–Salam has a group of dimension fifteen, also called $\mathrm{SU}(4)$, built from a quartet of quark and lepton colours. <strong>Are they the same group acting on the same space?</strong></p>
+<p><strong>The corpus's recorded answer is no.</strong> <code>SU4-meaning.md</code> closes with the refusal in as many words: <em>"It is not $\mathrm{SU}(4)_c$ […] An identification of the two would be a claim about physics that this note does not make and the corpus does not support."</em> That refusal is correct as an algebra statement, and this note does not overturn it.</p>
+<p><strong>What this note does.</strong> It states the missing physics claim — call it <strong>(A)</strong> — as a declaration rather than a derivation, argues for it from the one structure the algebra <em>does</em> single out, and then states its price. <strong>Every article of the migration leans on (A), so (A) has to be inspectable and refutable before any of them is written.</strong></p>
+<p><strong>The declaration, in one line.</strong></p>
+<p>$$
+\boxed{\ \text{fourth colour}=\mathbb{C}e_t,\qquad \text{three colours}=B_V=\mathbb{C}e_x\oplus\mathbb{C}e_y\oplus\mathbb{C}e_z\ }
+$$</p>
+<p>with the consequence the migration uses everywhere:</p>
+<p>$$
+N_c=\dim B_V=4-1=3,\qquad B-L=\tfrac43P_t-\tfrac13\mathrm I,\qquad \operatorname{tr}_{\mathbf 4}(B-L)=1+3\cdot\bigl(-\tfrac13\bigr)=0 .
+$$</p>
+<p><strong>What is new here, and what is not.</strong> Nothing in §1 is new: the stabiliser, the quotient and the trace are the corpus's, and every number is rechecked in §1.4. What is new is §4, which says <em>why this line and no other</em>, §6, which states the price, and §8, which says what would make the declaration false or empty. <strong>The declaration itself is one sentence; the work is in the price.</strong></p>
+<p><strong>What is not claimed.</strong> That the algebra <em>derives</em> the identification. It does not, and §3 says exactly how far the algebra reaches. That Pati–Salam is true. That the corpus should assert (A) on a public page before §8's tests are stated. <strong>And not that colour is contained in the biquaternion algebra</strong> — it is not, and the two notes on the ceiling stand unchanged.</p>
+<h2 id="1-what-the-corpus-already-holds">1. What the Corpus Already Holds</h2>
+<p><strong>Three facts, each already proved elsewhere, and each rechecked below.</strong></p>
+<p><strong>1.1 The stabiliser.</strong> $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$: the subgroup of the fifteen-dimensional group that fixes the temporal unit. Equivalently, in the Lie algebra, the nine-dimensional $\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathbb{R}\,iD$ is the subalgebra annihilating the first column of the display.</p>
+<p><strong>1.2 The quotient.</strong> $\mathrm{SU}(4)/S(\mathrm U(3)\times\mathrm U(1))\cong\mathbb{CP}^3$, of complex dimension three, real dimension six — the orbit of the line. So the fifteen split as</p>
+<p>$$
+\mathfrak{su}(4)=\underbrace{\mathfrak{su}(3)}_{8}\oplus\underbrace{\mathbb{R}\,iD}_{1}\oplus\underbrace{\mathfrak m}_{6},
+\qquad 15=8+1+6 ,
+$$</p>
+<p>with $\mathfrak m$ the six that mix the unit line with the vector part. <strong>$9$ fixes the line, $6$ moves it.</strong></p>
+<p><strong>1.3 The diagonal generator.</strong> $D=\operatorname{diag}(-3,1,1,1)$, the corpus's own, traceless, and the only diagonal generator the split singles out.</p>
+<p><strong>1.4 The checks.</strong> Every number above, run in exact and floating arithmetic today.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the fifteen are anti-Hermitian and traceless</td>
+<td>$X^{\dagger}=-X$, $\operatorname{tr}X=0$, all fifteen</td>
+<td>true</td>
+</tr>
+<tr>
+<td>the stabiliser of $\mathbb{C}e_t$</td>
+<td>generators with zero first column</td>
+<td>$\dim=9$</td>
+</tr>
+<tr>
+<td>the mixing part</td>
+<td>the remainder</td>
+<td>$\dim=6=\dim_{\mathbb R}\mathbb{CP}^{3}$</td>
+</tr>
+<tr>
+<td>$D$ is admissible</td>
+<td>anti-Hermitian, traceless</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}D=0$, $\operatorname{tr}D^{2}=12$</td>
+<td>$-3+1+1+1$; $9+1+1+1$</td>
+<td>$0$; $12$</td>
+</tr>
+<tr>
+<td>$B-L=-\tfrac13D$</td>
+<td>$\operatorname{diag}(1,-\tfrac13,-\tfrac13,-\tfrac13)$</td>
+<td>$\operatorname{tr}(B-L)^{2}=\tfrac{12}{9}=\tfrac43$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}_{\mathbf 4}(B-L)=0$</td>
+<td>$\tfrac13\cdot3-1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the $3+5$ split of $\mathfrak{su}(3)$</td>
+<td>antisymmetric part closes; symmetric part does not</td>
+<td>residual $0$; residual $1.0$</td>
+</tr>
+<tr>
+<td>$\sin^{2}\theta_W(M_{PS})=\tfrac38$</td>
+<td>$\operatorname{tr}T_{3L}^{2}=2$, $\operatorname{tr}Y^{2}=\tfrac{10}{3}$</td>
+<td>$2/(2+\tfrac{10}{3})=\tfrac{6}{16}$</td>
+</tr>
+<tr>
+<td>$g_{B-L}^{2}=\tfrac38g_4^{2}$</td>
+<td>from $\tfrac1{g_Y^{2}}=\tfrac1{g_R^{2}}+\tfrac1{4g_{B-L}^{2}}$</td>
+<td>$0.6124\,g_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two facts that matter for the declaration are the first and the third.</strong> The first says the colour-like group is <em>the stabiliser of one line</em>. The third says the corpus already possesses a traceless diagonal that vanishes on nothing and is built from that line.</p>
+<h2 id="2-two-things-that-could-be-meant-by-the-group-of-the-carrier">2. Two Things That Could Be Meant by "the Group of the Carrier"</h2>
+<p><strong>The ambiguity is not verbal, and it has to be cleared before anything is declared.</strong></p>
+<p><strong>Reading one: the group is the group of the carrier.</strong> $\mathrm{SU}(4)$ is the unitary group of the four-dimensional complex vector space the algebra acts on — $15$ real dimensions, defined by two conditions that mention no element of $\mathbb B$. This is what <code>SU4-meaning.md</code> proves.</p>
+<p><strong>Reading two: the group is the gauge group of the strong and lepton interaction.</strong> $\mathrm{SU}(4)_c$ is the group whose fundamental is the quartet</p>
+<p>$$
+\mathbf 4=(\mathbf 3,\tfrac13)\oplus(\mathbf 1,-1),
+$$</p>
+<p>i.e. three colours of quark and one lepton, with the abelian charge the fourth component of the same label. This is Pati–Salam.</p>
+<p><strong>Abstractly the two groups are the same group, and that is not the question.</strong> Every $\mathrm{SU}(4)$ is isomorphic to every other. The question is whether the two <strong>carriers</strong> are the same space:</p>
+<p>$$
+\text{the corpus's carrier } \mathbb C e_t\oplus \mathbb C e_x\oplus\mathbb C e_y\oplus\mathbb C e_z
+\;\overset{?}{=}\;
+\text{Pati–Salam's carrier } (\mathbf 3,\tfrac13)\oplus(\mathbf 1,-1).
+$$</p>
+<p><strong>So the declaration is not about groups. It is about spaces.</strong> This is the form the refusal in <code>SU4-meaning.md</code> should be read in — it refuses the <em>carrier</em> identification, which is a physics claim, and it is right that no algebra theorem supplies one.</p>
+<h2 id="3-the-declaration-a">3. The Declaration (A)</h2>
+<p><strong>Stated in the form the migration uses.</strong></p>
+<blockquote>
+<p><strong>(A)</strong> The four-dimensional carrier on which the corpus's $\mathrm{SU}(4)$ acts is, up to the tensor factor that carries spin, Pati–Salam's quark–lepton quartet; the lepton is the fourth colour; and the fourth colour is the unit line $\mathbb C e_t$.</p>
+</blockquote>
+<p><strong>Three equivalent writings, in increasing strength, and the migration uses the weakest one that does the work.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>statement</th>
+<th>what it needs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>(A1) weak</strong></td>
+<td>the <em>split</em> $4=1+3$ that Pati–Salam uses is the corpus's split $\mathbb C e_t\oplus B_V$</td>
+<td>an isomorphism of the label space, not of the carrier</td>
+</tr>
+<tr>
+<td><strong>(A2) middle</strong></td>
+<td>the lepton number direction is the unit line, $B-L\propto P_t-\tfrac13P_V$</td>
+<td>a chosen normalisation, then $\operatorname{tr}=0$ fixes it</td>
+</tr>
+<tr>
+<td><strong>(A3) strong</strong></td>
+<td>the carrier <em>is</em> the algebra, so colour acts on $\mathbb C e_t\oplus B_V$ itself</td>
+<td>false unless colour and Lorentz commute — see §6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The migration adopts (A1) and (A2), and refuses (A3).</strong> §6 shows why (A3) cannot be had, and the refusal is not a retreat: (A1) and (A2) are enough for charge quantisation, for hypercharge as a combination, for the anomaly ledger and for the sixteen, which is everything the migration claims.</p>
+<p><strong>Where the algebra stops.</strong> It supplies the split, the line, the traceless diagonal and the quotient. It does not supply the assertion that these are <em>the</em> colour and <em>the</em> lepton number. <strong>That assertion is a physics claim of exactly the kind <code>SU4-meaning.md</code> says it is not making, and this note makes it openly, once, here.</strong></p>
+<h2 id="4-why-the-unit-line-and-no-other">4. Why the Unit Line, and No Other</h2>
+<p><strong>Four arguments, and the fourth is the one that decides.</strong></p>
+<p><strong>4.1 The line is canonical and every other line is not.</strong> $\mathbb C e_t$ is the only complex line in the carrier that every automorphism of the algebra fixes. $\operatorname{Aut}_{\mathbb C}(\mathbb B)$ is six real dimensions, it preserves $e_t$ because $e_t=1$ is the identity, and inside $B_V$ it acts as $\mathrm{SO}(3)$ — so it moves every line of $B_V$ and no automorphism moves $\mathbb C e_t$. <strong>A colour group needs a distinguished direction to be the stabiliser of, and the algebra supplies exactly one.</strong></p>
+<p><strong>4.2 There is no canonical axis, and that is the point.</strong> The user's structural intuition, made exact: $B_V$ has no canonical basis — $\vec e_x,\vec e_y,\vec e_z$ are a choice, related to one another by the automorphisms, so no one of them can serve as a colour label that the algebra knows about. What <em>is</em> canonical is the split</p>
+<p>$$
+\mathbb B=\mathbb C e_t\oplus B_V ,
+$$</p>
+<p>the centre plus the vector part, which is fixed by every conjugation and every automorphism. <strong>So the algebra can label a quartet $1+3$ and cannot label a $2+2$ or a $4$ with a marked axis inside the three.</strong> Pati–Salam needs $1+3$. The match is exact, and it is exact for a structural reason rather than a numerical one.</p>
+<p><strong>4.3 The alternatives cost more than they buy.</strong> Three other splits of the quartet are available to a group theorist and none is canonical:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>split</th>
+<th>canonical?</th>
+<th>why it fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2+2$</td>
+<td>no</td>
+<td>needs a complex structure on the carrier not fixed by the algebra; the two "pairs" are related by an automorphism</td>
+</tr>
+<tr>
+<td>$1+1+2$</td>
+<td>no</td>
+<td>needs two marked lines; $B_V$ has none</td>
+</tr>
+<tr>
+<td>$4$ unbroken</td>
+<td>yes</td>
+<td>but then there is no $\mathrm{SU}(3)$ stabiliser and no colour at all</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>4.4 The count closes, and it is the same three.</strong> $N_c=\dim B_V=4-1=3$. The number of colours is not put in and then checked; it is the dimension of the complement of the line, and the "minus one" is the lepton. <strong>This is what makes the sixteen work</strong>: $\dim\mathfrak{su}(3)=8=\dim\mathfrak{su}(4)-1-6$ is the same arithmetic as $3=4-1$, one level up.</p>
+<p><strong>What the four arguments do not do.</strong> They do not prove (A). They establish that if a $1+3$ split of the corpus's carrier is to be used at all, <strong>there is only one candidate</strong>, so (A) is not a choice between many. Uniqueness is not truth, and §8 is where truth is tested.</p>
+<h2 id="5-what-follows-immediately-and-it-is-a-lot">5. What Follows Immediately, and It Is a Lot</h2>
+<p><strong>5.1 Leptons and quarks are the two parts of one projector.</strong> Write $P_t$ for the projector onto the line and $P_V=\mathrm I-P_t$. Then</p>
+<p>$$
+D=\mathrm I-4P_t=P_V-3P_t ,
+$$</p>
+<p>which is the corpus's $D$ and explains its two entries at once: the three spatial directions get $+1$, the temporal one gets $-3$. Then</p>
+<p>$$
+B-L=-\tfrac13D=\tfrac43P_t-\tfrac13\mathrm I ,
+\qquad\text{eigenvalues } \bigl(1,-\tfrac13,-\tfrac13,-\tfrac13\bigr).
+$$</p>
+<p><strong>So $B-L$ is a measurement of how much of the state lies on the unit line.</strong> Lepton number is the projection onto the temporal unit, rescaled. That is the content of "the lepton is the fourth colour", written in the algebra's own objects.</p>
+<p><strong>5.2 The tracelessness is the dimension count.</strong> The normalisation is not free: $B-L$ must be traceless, and</p>
+<p>$$
+\operatorname{tr}_{\mathbf 4}(B-L)=\underbrace{1}_{\text{one lepton}}+\underbrace{3\cdot\bigl(-\tfrac13\bigr)}_{\text{three quarks}}=0 .
+$$</p>
+<p>The $1$ and the $3$ are $\dim\mathbb C e_t$ and $\dim B_V$. <strong>Charge quantisation is therefore the statement that the carrier is one line plus a three-space</strong> — not an extra assumption, and not a fact about the integers either: it is a fact about one dimension against three.</p>
+<p><strong>5.3 The table, and the reading that matters.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>$\mathrm{SU}(4)$</th>
+<th>$T_{3L}$</th>
+<th>$T_{3R}$</th>
+<th>$B-L$</th>
+<th>$Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u_L$</td>
+<td>$\mathbf 4$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_L$</td>
+<td>$\mathbf 4$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\nu_L$</td>
+<td>$\mathbf 4$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_L$</td>
+<td>$\mathbf 4$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>$\bar{\mathbf 4}$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$\bar{\mathbf 4}$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\nu_R$</td>
+<td>$\bar{\mathbf 4}$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$-1$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$\bar{\mathbf 4}$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The $B-L$ column is the same in the left half and the right half, and that is why a fourth colour can exist at all.</strong> The right-handed fields sit in the conjugate quartet, where the generator is the negative of the weight; the column lists the <strong>physical</strong> $B-L$, which is what $Q$ uses, and it is the same for a field and its chiral partner. $P_t$ is chirality-blind — it is a projector of the algebra, not of the spin — so $B-L$ labels a field and its partner identically. <strong>A charge that changed with chirality could not be a fourth colour of the same quartet</strong>; the corpus's $\mathbb C e_t$ can, for the same reason that made it canonical in §4.1.</p>
+<p><strong>5.4 The four facts the migration then uses.</strong> Each is proved in the interaction note and none is repeated here:</p>
+<p>$$
+Y=T_{3R}+\tfrac12(B-L),\qquad g_3=g_L=g_R=g_4,\qquad \sin^{2}\theta_W(M_{PS})=\tfrac38,\qquad \text{four anomaly conditions}\to\text{none}.
+$$</p>
+<h2 id="6-the-price-and-it-is-the-sharpest-thing-in-this-note">6. The Price, and It Is the Sharpest Thing in This Note</h2>
+<p><strong>The objection, in one sentence.</strong> If the carrier <em>is</em> the algebra, then colour acts on the same four dimensions as the Lorentz group, and the two must commute — but they cannot.</p>
+<p><strong>Why they cannot, computed.</strong> Let $L_{\vec e_a}$ be left multiplication by the three imaginary units on $\mathbb C^4$, i.e. the Lorentz action. The largest subalgebra of $\mathfrak{su}(4)$ commuting with all three is</p>
+<p>$$
+\mathfrak{su}(4)\cap\bigl\{X:X L_{\vec e_a}=L_{\vec e_a}X,\ a=x,y,z\bigr\}=\mathrm{span}\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}\cong\mathfrak{su}(2),
+\qquad \dim_{\mathbb R}=3 .
+$$</p>
+<p><strong>Verified</strong>: the right multiplications commute with the left ones; $R_{\vec e_a}$ is anti-Hermitian and traceless; $R_1$ is Hermitian, so $iR_1$ is the only other anti-Hermitian element and it is not traceless. <strong>The full commutant of $L(\mathbb H)$ in $M_4(\mathbb C)$ is $R(\mathbb B)$, eight real dimensions</strong>, and of that only the three purely imaginary right multiplications sit in $\mathfrak{su}(4)$.</p>
+<p><strong>So the verdict on (A3) is not "hard", it is "excluded".</strong> A $\mathrm{SU}(3)$ of colour commuting with the full Lorentz action does not fit in $\mathfrak{su}(4)$ on one carrier: the ceiling is $\mathrm{SU}(2)$. <strong>This is the same wall the corpus already knows</strong> — the one-sided action, the chiral wall — met from the colour side instead of the chiral side, and it is the same wall for the same reason: $M_4(\mathbb C)$ cannot host two large commuting compact groups.</p>
+<p><strong>Therefore (A) is adopted in its tensor-product form, and the migration adopts (A1)–(A2) only.</strong> The sixteen fields live in</p>
+<p>$$
+(\text{internal }\mathbf 4)\otimes(\text{spinor}),\qquad \mathbf 4_{\text{int}}\cong\mathbb C e_t\oplus B_V ,
+$$</p>
+<p>where the internal quartet is a <strong>formal copy</strong> of the algebra's own four-dimensional coordinate space, and the identification asserted by (A) is of the <strong>split</strong>, not of the carrier. <strong>The copy inherits the split because the split is the only canonical one (§4); it does not inherit the Lorentz action, and it must not.</strong></p>
+<p><strong>What this costs, stated plainly.</strong> The fourth colour is then the <em>image</em> of the unit line under an isomorphism, not the unit line itself. The identification is an analogy of structure — one line plus a three-space, with the line canonical and the three-space axis-free — and analogies of structure are cheap. <strong>What makes it more than an analogy is §5: the tracelessness, the count, and the chirality-blindness all transfer, and they are the three properties Pati–Salam needs.</strong> A split that transfers every property the physics uses is a split that has earned the label.</p>
+<h2 id="7-what-follows-and-what-does-not">7. What Follows, and What Does Not</h2>
+<p><strong>Follows from (A), with (A1)–(A2) only.</strong></p>
+<p>Charge quantisation as tracelessness, $3q+\ell=0$, with the corpus's own $D$.</p>
+<p>Hypercharge as a combination, $Y=T_{3R}+\tfrac12(B-L)$, so $Y$ is not imported.</p>
+<p>The sixteen as one multiplet per chirality, and $\nu_R$ as necessary rather than added.</p>
+<p>The anomaly cancellation, identically, with the cubic cancelling between $\mathbf 4$ and $\bar{\mathbf 4}$.</p>
+<p>$\sin^{2}\theta_W(M_{PS})=\tfrac38$ as a boundary condition, and $g_3=g_L=g_R$ at that scale.</p>
+<p><strong>Does not follow, and must not be claimed.</strong></p>
+<p>Colour inside the biquaternion algebra. It is not, and $\mathfrak{su}(4)$ is not $\operatorname{Aut}(\mathbb B)$ either — the two notes on the ceiling and on the trace stand unchanged.</p>
+<p>The chiral carrier. $\mathrm{SU}(4)$ does not make a one-sided action two-sided; the wall is in §<em>What the Translation Cannot Do</em> of the interaction note and it is untouched by (A).</p>
+<p>The scalar carrier. A spin-zero field is still a line, and a bidoublet still needs two indices; (A) adds one more multiplet to the debt, not a solution.</p>
+<p>The breaking scale. (A) says nothing about $M_{PS}$; it is fixed by experiment or not at all.</p>
+<p>The number of generations. Three generations are three copies of the quartet, and the algebra does not count them.</p>
+<p><strong>The rule that governs every sentence written under (A).</strong> <em>Derived from the algebra</em> is allowed for $\mathfrak{su}(4)$ as the group of the carrier, and for the split $\mathbb C e_t\oplus B_V$. It is forbidden for the identification of that split with the quark–lepton quartet. <strong>The prohibition is one sentence long and it is the whole integrity of the migration.</strong></p>
+<h2 id="8-what-would-refute-the-declaration">8. What Would Refute the Declaration</h2>
+<p><strong>(A) is not directly falsifiable, and saying so is part of stating it honestly.</strong> It is a claim about which space plays which role; a wrong assignment of roles shows up only through what the assignment predicts. So the test is indirect, and it has a direction.</p>
+<p><strong>8.1 The gauge sector.</strong> If the fourth colour is gauged, the six generators of $\mathfrak m$ are leptoquarks, with the quantum numbers $(3,\bar 3)$-like, coupling to a quark and a lepton. <strong>They have not been seen.</strong> The bounds are the ones the interaction note already lists: $K_L\to\mu e$ pushes $M_{X}$ to $10^{2}$–$10^{3}\,\mathrm{TeV}$, and scalar leptoquarks are excluded below about $1.5\,\mathrm{TeV}$.</p>
+<p><strong>8.2 The zero mode.</strong> If the fourth colour is gauged and unified, the proton can decay. <strong>It has not.</strong> The bound on $\tau(p\to e^{+}\pi^{0})$ pushes $M_{X}$ above $10^{15}\,\mathrm{GeV}$ for the simplest scalar-mediated diagrams.</p>
+<p><strong>8.3 The neutral sector.</strong> A gauged $\mathrm{SU}(2)_R$ contributes a $W_R$ and a $Z_R$; a right-handed neutrino mass needs a breaking scale. <strong>Neither is seen</strong>, which bounds $M_{R}$ from below.</p>
+<p><strong>8.4 What makes (A) empty rather than false.</strong> If the leptoquark and proton bounds are pushed so high that $M_{PS}$ exceeds any scale the framework can reach, then the fourth colour is either not gauged or not a colour at all, and (A) becomes a relabelling with no consequence. <strong>The declaration dies by emptiness at least as easily as by contradiction</strong>, and that is the more probable death.</p>
+<p><strong>8.5 What would make it false rather than empty.</strong> A leptoquark discovered with the wrong quantum numbers — a $\mathrm{SU}(4)$ singlet coupling to $q\bar q$ rather than to $q\ell$ — would show that the quartet is not the quark–lepton one. <strong>Or</strong>: a fourth-colour-like resonance whose $B-L$ is not the corpus's $D$, which would break the identification of the label space, not merely its dynamics.</p>
+<p><strong>8.6 The structural refutation, which is the one the corpus can actually deliver.</strong> A proof that some other split of $\mathbb C e_t\oplus B_V$ is canonical — that the algebra fixes a second line, or a canonical complex structure on $B_V$ — would make (A)'s uniqueness argument collapse. <strong>§4.1 is the load-bearing claim of this note, and it is the claim to attack.</strong></p>
+<h2 id="9-the-status-and-what-it-obliges">9. The Status, and What It Obliges</h2>
+<p><strong>Tier.</strong> This note is the phase-$0$ article of the migration: one new article, the one everything else leans on, written before the frame so that the assumption is not hidden inside a definition.</p>
+<p><strong>Where it lives.</strong> <code>articles_internal/</code>, because it is a declaration with a price and not yet a result. <strong>The promotion path is one file move</strong>: when §8's ledger is stated on a public page, this becomes <code>articles_physics/the-fourth-colour-as-the-unit-line</code> under the electromagnetic section's fifth sub-section, <em>The Field's Gauge Origin</em>, and it keeps its slug.</p>
+<p><strong>What it obliges the rest of the migration to do.</strong> Every article that uses charge quantisation, hypercharge as a combination, or the sixteen names this note. Every article that discusses the ceiling states that (A) does not breach it. And no article may cite (A) as a derivation of Pati–Salam from the biquaternions.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The question.</strong> Whether the corpus's fifteen-dimensional $\mathfrak{su}(4)$ and Pati–Salam's $\mathrm{SU}(4)_c$ act on the same space. The corpus's recorded answer is no, and abstractly the groups are trivially the same group — the question is about carriers.</p>
+<p><strong>The declaration (A).</strong> The fourth colour is the unit line $\mathbb C e_t$; the three colours are its complement $B_V$; $N_c=4-1=3$.</p>
+<p><strong>The three forms.</strong> (A1) the split, (A2) the lepton-number direction, (A3) the carrier identity. <strong>The migration adopts (A1) and (A2) and refuses (A3).</strong></p>
+<p><strong>Why this line.</strong> It is the only line every automorphism fixes; $B_V$ has no canonical axis; the split $\mathbb C e_t\oplus B_V$ is canonical where the alternatives are not; and the count $3=4-1$ is the same arithmetic as $8=15-1-6$.</p>
+<p><strong>What follows.</strong> $D=\mathrm I-4P_t$, $B-L=\tfrac43P_t-\tfrac13\mathrm I$, $\operatorname{tr}_{\mathbf 4}(B-L)=0$, so $3q+\ell=0$; then $Y=T_{3R}+\tfrac12(B-L)$, $\nu_R$ required, anomalies identical, $\sin^{2}\theta_W(M_{PS})=\tfrac38$, $g_3=g_L=g_R=g_4$.</p>
+<p><strong>The price.</strong> Colour cannot commute with the Lorentz action on one carrier: $\mathfrak{su}(4)\cap\{X:[X,L_{\vec e_a}]=0\}=\mathfrak{su}(2)$, three dimensions, verified. So (A) is a tensor-product declaration about a formal copy of the quartet, and the fourth colour is the image of the unit line rather than the line.</p>
+<p><strong>The status.</strong> Not derived, declared; inspectable, refutable by leptoquark quantum numbers or by a second canonical line; and liable to die by emptiness if $M_{PS}$ is pushed out of reach.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb C e_t$</td>
+<td>the unit line, the centre of the carrier, the temporal direction, canonical</td>
+</tr>
+<tr>
+<td>$B_V$</td>
+<td>the vector part, $\mathbb C e_x\oplus\mathbb C e_y\oplus\mathbb C e_z$, axis-free, $\dim=3$</td>
+</tr>
+<tr>
+<td>$P_t,P_V$</td>
+<td>the projectors onto the line and onto the vector part, $P_t+P_V=\mathrm I$</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)=\mathrm I-4P_t=P_V-3P_t$, the corpus's traceless diagonal</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>$-\tfrac13D=\tfrac43P_t-\tfrac13\mathrm I$, eigenvalues $(1,-\tfrac13,-\tfrac13,-\tfrac13)$</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>the six generators mixing $\mathbb C e_t$ with $B_V$, tangent to $\mathbb{CP}^{3}$</td>
+</tr>
+<tr>
+<td>$L_{\vec e_a},R_{\vec e_a}$</td>
+<td>left and right multiplication by the imaginary units on $\mathbb C^4$</td>
+</tr>
+<tr>
+<td>(A1), (A2), (A3)</td>
+<td>the weak, middle and strong forms of the declaration</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_internal/SU4-meaning.md</code> for $\mathfrak{su}(4)$ as the whole group of the carrier, $15=8+1+6$, $D=\operatorname{diag}(-3,1,1,1)$ and the refusal this note answers.</li>
+<li><code>articles_internal/SU3-meaning.md</code> for $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$ and the canonical line.</li>
+<li><code>articles_internal/SU4-worked-cases.md</code> for the fifteen generators written out and the residuals.</li>
+<li><code>articles_internal/three-interactions-in-pati-salam-form.md</code> for the translation this declaration underwrites: §1.3 states it, §11 schedules the migration.</li>
+<li><code>articles_internal/the-pati-salam-group-in-the-biquaternion-framework.md</code>, <code>articles_internal/the-breaking-chain-in-pati-salam-form.md</code>, <code>articles_internal/the-boson-spectrum-and-the-three-neutral-states.md</code> for phase $1$, which uses this declaration three times and quotes its ceiling.</li>
+<li><code>articles_internal/the-pati-salam-model.md</code> for the model, the scalar sector and the observational ledger.</li>
+<li><code>articles_internal/pati-salam-versus-left-right.md</code> for the $\mathbb{CP}^{3}$ that separates the two, and the axis question.</li>
+<li><code>articles_internal/left-and-right-actions-of-operators.md</code> for why $L$ and $R$ are different actions on the same carrier, which is §6.</li>
+<li><code>articles_physics/why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.md</code> and <code>articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.md</code> for the ceiling, unchanged by (A).</li>
+</ul>
+<p><strong>The traps.</strong> Do not read (A) as a theorem of the algebra's; §3 and §7 forbid it in as many words. Do not read $N_c=4-1$ as an explanation of why three and not two — the $4$ is the dimension of the carrier and the $3$ its complement, and nothing in the algebra forbids a carrier of another dimension. Do not read the chirality-blindness of $B-L$ as an accident; it is $P_t$ being a projector of the algebra and not of the spin, and it is the one place where the corpus's structure does real work for Pati–Salam. Do not read §6 as a defeat: (A3) is refused and (A1)–(A2) carry every claim the migration makes.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
