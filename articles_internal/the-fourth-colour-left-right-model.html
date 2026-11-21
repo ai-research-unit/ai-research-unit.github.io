@@ -1,0 +1,1918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Note: The Fourth-Colour Left–Right Model — Biquaternion Universe</title>
+  <meta name="description" content="Ledger note, binding since the coupling migration. Every coupling value in this note is a transcription of the literature or of a recomputation, not a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-note-the-fourth-colour-leftright-model">Internal Note: The Fourth-Colour Left–Right Model</h1>
+<p><strong>Ledger note, binding since the coupling migration.</strong> Every coupling value in this note is a transcription of the literature or of a recomputation, <strong>not a statement of the corpus's model</strong>. <strong>The corpus's single coupling statement is in <code>articles_physics/the-one-coupling-that-returns-the-standard-model.md</code></strong>; this file is a working record, and it is not a place where a coupling is claimed. An equality of the form $m_d=m_e$ at a scale, where it appears below, is the literature's published condition and not this model's prediction.</p>
+<h2 id="the-answer">The Answer</h2>
+<p><strong>The model is $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ with three couplings that are not required to be equal, and with a spin-0 sector whose multiplet content it does not fix.</strong> It keeps the group, the sixteen, charge quantisation, the anomaly ledger, the twenty-one bosons, the six leptoquarks and the selection rule for $K_S\to\mu e$. <strong>It drops one thing: the equality $g_4=g_L=g_R$.</strong> It claims nothing in place of it.</p>
+<p><strong>The spin-0 sector is kept, whole, and only its multiplet list is left open.</strong> The corpus's scalar sector is a structural result of the algebra — <strong>a spin-zero field takes its value in the centre $\mathbb B_C$, a line in the state module, with a central Klein–Gordon operator</strong> — and this model inherits it unchanged. <strong>What it does not fix is which gauge multiplets those scalars occupy</strong>: $(\mathbf4,\mathbf1,\mathbf2)$, $(\mathbf1,\mathbf2,\mathbf2)$, $(\mathbf{15},\mathbf2,\mathbf2)$ are declarations on top of the sector, not consequences of the fourth colour (§1.5). <strong>Because the multiplet list is open, no fermion mass relation is predicted, and none can contradict the model.</strong></p>
+<p><strong>Does it contain the Standard Model? Yes.</strong> Break $\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$ at $M_C$ and $\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}\to\mathrm{U}(1)_Y$ at $M_R$, and what is left is exactly $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, with the sixteen reducing to the fifteen Standard Model fields plus $\nu_R$. <strong>Below $M_R$ it is the Standard Model, so every measurement the Standard Model passes, this model passes, for the same reason.</strong> §1.6 is the proof.</p>
+<p><strong>Is it in contradiction with any experiment? No.</strong> §3.5 is the ledger, and no entry in it says <em>excluded</em>: <strong>every claim the model makes is either confirmed or a bound on a free parameter.</strong> Below $M_R$ the three measured couplings are reproduced by construction, with $g_R$ absorbing the difference, and a solution exists for $M_C/M_R$ up to about $10^{6}$–$10^{7}$, with an edge that is a consistency requirement rather than a measurement.</p>
+<p><strong>What it costs is the ability to be confirmed.</strong> Every remaining statement is either a bound on a free mass or a structural fact already known to hold. §6 separates the four that survive as predictions from the one that was withdrawn and the two that are left open.</p>
+<p><strong>The migration touches sixteen of the part's one hundred and twenty-four articles, five of them by a rewritten section.</strong> §8 is the guide: a dictionary, a triage, an enumerated work list, a list of forbidden sentences and ten verification checks.</p>
+<p><strong>Three things that blocked it are now settled, because the deleted translation article was recovered (§7.4).</strong> The five citations to it resolve as they stand. <strong>§12.4 exists and its numbering is exact</strong> — the four notes calling themselves articles $6$, $8$, $9$ and $10$ of phase $2$ are right — <strong>and it exposes one real gap: article $11$, the ledger hub, was never written</strong> (§8.7). <strong>The rename rule is settled against the corpus's own recovered rule</strong>: the recovered §12.1 said <em>the slug never moves</em>, and <strong>the author has overruled it — the files are renamed</strong> (§8.4a). <strong>Six files moved, $196$ link occurrences were rewritten in one pass, and the page count did not move from $3138$</strong> (§8.4a). <strong>Eight display titles change and two are deliberately kept</strong> (§8.4b).</p>
+<p><strong>Is taking the strip legitimate?</strong> §11 argues that it is, on a narrow ground that the recovered file supplies: <strong>the corpus wrote the equality as conditional on parity — §5 says the four couplings <em>"collapse to two, or to one"</em>, with $g_L=g_R$ marked <em>"(if parity is imposed)"</em>.</strong> So the strip is <strong>not the deletion of a derived prediction but the refusal to impose a parity assumption</strong> (§11.1). <strong>And the failure that remains is colour, not the angle</strong>: at $10^{13}$ GeV the angle reaches $\tfrac38$ and $\alpha_3^{-1}$ is $13\%$ short (§2.5). The section also states the alternative fairly — keep the equality and admit the unified version is falsified — because <strong>that position is defensible too</strong>, and the note takes one of them rather than pretending the choice is forced.</p>
+<h2 id="1-the-definition">1. The Definition</h2>
+<p><strong>1.1 The group and the content.</strong> The gauge group is</p>
+<p>$$
+G=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R ,
+\qquad
+\dim G=15+3+3=21 ,
+$$</p>
+<p>with no further factor and no simple group above it. <strong>One generation is one sixteen, in the two-piece form the algebra gives:</strong></p>
+<p>$$
+(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)
+=(\mathbf3,\mathbf2)_{\tfrac16}\oplus(\mathbf1,\mathbf2)_{-\tfrac12}\oplus(\bar{\mathbf3},\mathbf1)_{-\tfrac23}\oplus(\bar{\mathbf3},\mathbf1)_{\tfrac13}\oplus(\mathbf1,\mathbf1)_{1}\oplus(\mathbf1,\mathbf1)_{0}
+$$</p>
+<p>under the Standard Model subgroup, with $6+2+3+3+1+1=16$ components. <strong>The four entries on the second line are the conjugates of the right-handed fields, which is why their hypercharges read with the sign of $Y^{c}=-Y$</strong>; the last entry is $\nu_R$. <strong>The multiplets are not a choice for this note; they are the corpus's, and they are unchanged.</strong></p>
+<p><strong>1.2 The chain and the two scales.</strong> The breaking is two steps, and the two steps are independent:</p>
+<p>$$
+G\ \xrightarrow{\ M_C\ }\ \mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}
+\ \xrightarrow{\ M_R\ }\ \mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y .
+$$</p>
+<p><strong>The chain names three groups and two scales, and it does not name the multiplets that do the breaking.</strong> The spin-0 sector exists (§1.5, §2.2) — <strong>the symmetry is broken, so something breaks it</strong> — but <strong>which of the multiplets does each step is not fixed by the model</strong> (§1.5). The corpus's frame puts both steps at one scale; this model allows them to differ, and §3 shows that the difference is bounded from above.</p>
+<p><strong>1.3 The couplings, counted exactly.</strong> Three gauge couplings, and one of them is not free:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coupling</th>
+<th>what fixes it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_4$</td>
+<td><strong>equal to $g_3(M_C)$</strong>, because $\mathrm{SU}(3)$ sits inside $\mathrm{SU}(4)$; measured once $M_C$ is chosen</td>
+</tr>
+<tr>
+<td>$g_{B-L}$</td>
+<td><strong>not independent</strong>: $g_{B-L}^2=\tfrac38 g_4^2$ at $M_C$, from the generator normalisation</td>
+</tr>
+<tr>
+<td>$g_L$</td>
+<td>free</td>
+</tr>
+<tr>
+<td>$g_R$</td>
+<td>free, and determined in practice by the matching at $M_R$ (§3.1)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the strip removes exactly two relations — $g_L=g_4$ and $g_R=g_4$ — and leaves one, $g_4=g_3(M_C)$.</strong> That single relation is what makes the model still a statement about nature rather than a relabelling of the Standard Model, and it is also why the leptoquark floor does not weaken (§3.5).</p>
+<p><strong>1.4 The parameter count, and the sentence that must be written.</strong> The gauge sector has three scales-or-couplings that can be chosen, $M_C$, $M_R$ and $g_R$, against three measured numbers. <strong>The count says nothing by itself; §3 shows why the system is consistent, and the sentence that must appear in every article is this: <em>the model reproduces the three measured couplings for any $(M_C,M_R)$ in a stated region, by adjusting $g_R$, and predicts no value for them.</em></strong></p>
+<p><strong>1.5 What the model claims, and what it does not.</strong></p>
+<p><strong>The model is a statement about three things and nothing else.</strong> Stated as a list, because the boundary is the whole point:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>claimed by this model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the gauge group</td>
+<td>$\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+</tr>
+<tr>
+<td>the matter content</td>
+<td>one sixteen per generation, in the two pieces of §1.1</td>
+</tr>
+<tr>
+<td>the couplings</td>
+<td>three, independent, with $g_4=g_3(M_C)$ the only tie</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And three things it does not claim, each of which is a whole sector of physics in the unified version:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>not claimed</th>
+<th>consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the <strong>multiplet content</strong> of the spin-0 sector</td>
+<td><strong>which gauge multiplets the scalars occupy, and how many</strong></td>
+<td>no fermion-mass relation is predicted</td>
+</tr>
+<tr>
+<td>the fermion masses</td>
+<td>nothing beyond what the sixteen allows by symmetry</td>
+<td>$m_d$, $m_u$, $m_e$ and their ratios are not predicted</td>
+</tr>
+<tr>
+<td>the value of any coupling</td>
+<td>only their independence</td>
+<td>no angle, no ratio, no unification statement</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The spin-0 sector is not removed, and the sentence that must not be written is "the scalar sector is outside the model".</strong> The corpus has a scalar sector and it is a structural result of the algebra: <strong>a spin-zero field takes its value in the centre $\mathbb B_C$, a line in the state module and not an element of the vector part</strong>, with the Klein–Gordon operator central — <em>Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module</em>. <strong>That sector is the frame's, it stays, and this model inherits it unchanged.</strong></p>
+<p><strong>What the model does not fix is the index structure on top of it.</strong> A Pati–Salam theory places scalars in named multiplets — $(\mathbf4,\mathbf1,\mathbf2)$ on the carrier's four dimensions with its vacuum along the canonical line, $(\mathbf1,\mathbf2,\mathbf2)$, $(\mathbf{15},\mathbf2,\mathbf2)$ — and <strong>those assignments are declarations, not consequences of the fourth colour.</strong> The frame supplies the room: the centre, the carrier, the split $\mathbf4=\mathbf1\oplus\mathbf3$. <strong>It does not supply the guest list.</strong></p>
+<p><strong>The distinction, in one sentence each, because this is the point most easily lost.</strong></p>
+<ul>
+<li><strong>The sector</strong>: spin zero, valued in $\mathbb B_C$, central, decoupled in the Klein–Gordon equation. <strong>Frame. Kept.</strong></li>
+<li><strong>The multiplets</strong>: which of the $(\mathbf4,\mathbf1,\mathbf2)$, $(\mathbf1,\mathbf2,\mathbf2)$, $(\mathbf{15},\mathbf2,\mathbf2)$ are present, and how many. <strong>Declaration. Not fixed by this model.</strong></li>
+<li><strong>The mass relations</strong>: $m_d=m_e$ and the rest. <strong>A consequence of the second line, and therefore also not fixed</strong> — not because the sector is gone, but because the guest list is short.</li>
+</ul>
+<p><strong>Why the guest list cannot be derived here.</strong> The fermion bilinear is not a gauge singlet,</p>
+<p>$$
+(\bar{\mathbf4},\bar{\mathbf2},\mathbf1)\otimes(\bar{\mathbf4},\mathbf1,\mathbf2)
+$$</p>
+<p>contains no $(\mathbf1,\mathbf1,\mathbf1)$, so <strong>a scalar must be inserted with the right indices to write a mass term at all.</strong> Which indices is a choice among the multiplets the carrier admits, and <strong>the algebra does not select one</strong>. The corpus's scorecard says the same thing with a number: axis D scores zero for both Pati–Salam and the left–right model, <strong>with the reason given — the spin-zero carrier is a line.</strong></p>
+<p><strong>So: the sector is in, the multiplet list is open, and the mass relations go with the list.</strong> §2.2 and §3.4 use exactly this boundary.</p>
+<p><strong>1.6 Does the model contain the Standard Model? Yes, and here is the proof in two steps.</strong></p>
+<p><strong>First step: the group.</strong> Break $\mathrm{SU}(4)$ at $M_C$ and what remains is the Standard Model's colour times one circle:</p>
+<p>$$
+\mathrm{SU}(4)\ \longrightarrow\ \mathrm{SU}(3)\times\mathrm{U}(1)_{B-L},
+\qquad
+15=8+1+3+\bar{\mathbf3},
+$$</p>
+<p>so the fifteen generators split into the octet, one $B-L$ boson, and the six leptoquarks. <strong>Second step: the hypercharge.</strong> Break $\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ at $M_R$, with</p>
+<p>$$
+Y=T_{3R}+\tfrac12(B-L),
+$$</p>
+<p>and what remains is $\mathrm{U}(1)_Y$. <strong>Composing the two steps:</strong></p>
+<p>$$
+\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
+\ \xrightarrow{M_C}\
+\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}
+\ \xrightarrow{M_R}\
+\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y .
+$$</p>
+<p><strong>The group below $M_R$ is exactly the Standard Model's, with no extra factor and no extra $U(1)$.</strong></p>
+<p><strong>The content matches too, and it is the check that matters.</strong> The sixteen of §1.1 reduces to</p>
+<p>$$
+(\mathbf3,\mathbf2)_{\tfrac16}\oplus(\mathbf1,\mathbf2)_{-\tfrac12}\oplus(\bar{\mathbf3},\mathbf1)_{-\tfrac23}\oplus(\bar{\mathbf3},\mathbf1)_{\tfrac13}\oplus(\mathbf1,\mathbf1)_{1}\oplus(\mathbf1,\mathbf1)_{0},
+$$</p>
+<p>which is <strong>the fifteen Standard Model fields of one generation plus $\nu_R$</strong>, with the measured hypercharges. <strong>Nothing is missing and nothing is added.</strong></p>
+<p><strong>The consequence, which is the reason the model cannot contradict a measurement.</strong> Below $M_R$ it <strong>is</strong> the Standard Model: same group, same fields, same renormalisable Lagrangian, <strong>so every measurement the Standard Model passes, this model passes, for the same reason, with the same numbers.</strong> A reader who wants the Standard Model back gets it by taking $M_R\to\infty$. <strong>This is a containment, not an approximation</strong>, and it is the strongest statement the model can make. The price is stated in the same breath: <strong>a model that contains another contains all of its successes and inherits none of its explanations.</strong></p>
+<h2 id="2-the-strip-the-coupling-equality-removed-the-spin-0-sector-kept">2. The Strip: The Coupling Equality Removed, the Spin-0 Sector Kept</h2>
+<p><strong>2.1 What is removed, and it is a single thing.</strong> The corpus assumes $g_3=g_L=g_R=g_4$ at one scale. <strong>That assumption alone creates the failure</strong>: one boundary value, one scale, three measured couplings, over-determined by one, and no scale fits it. <strong>Removing it removes the failure entirely</strong>, because a relation that is not asserted cannot be violated. <strong>This is the whole of the strip.</strong></p>
+<p><strong>2.2 What is kept: the spin-0 sector, whole.</strong> The strip touches the couplings and nothing else. <strong>Spin-zero fields remain exactly what the corpus says they are — valued in the centre $\mathbb B_C$, a line in the state module, with a central Klein–Gordon operator — and every article in the scalar sector keeps its statements about that structure.</strong> The sector is the frame's result and it is not under review here.</p>
+<p><strong>2.3 What is left open: the multiplet list.</strong> The Pati–Salam scalar article names three multiplets — $(\mathbf4,\mathbf1,\mathbf2)$, $(\mathbf1,\mathbf2,\mathbf2)$, $(\mathbf{15},\mathbf2,\mathbf2)$ — and computes their components, their eaten count and their surviving spectrum. <strong>That list is a declaration on top of the sector, and this model does not fix it.</strong></p>
+<p><strong>The sector is not empty, and the corpus has already counted what is in it.</strong> For the minimal content: <strong>twenty-four real components, twelve of them eaten, and no doublet among the survivors</strong> — the survivors are four singlets. <strong>That count is the recovered translation article's own trap list, and it is the right thing to say when a reader asks whether "the multiplet list is open" is a polite name for "there are no scalars".</strong> There are scalars, and there are twelve fewer of them than the naive count. The distinction is in §1.5 and it is worth repeating in the form that matters here: <strong>the sector is in; the guest list is open.</strong></p>
+<p><strong>2.4 The consequence for the mass relations, said precisely, because it is the place a reader will suspect a dodge.</strong> The model does not predict $m_d=m_e$. <strong>It also does not predict anything else about fermion masses.</strong> Both statements are true at once, and neither is a claim of consistency:</p>
+<ul>
+<li><strong>Why no prediction is made.</strong> A mass relation is a statement about <strong>which multiplet sits in the Yukawa coupling</strong>, and the multiplet list is not fixed (§1.5). <strong>It is not that scalars are absent; it is that their index structure is not specified.</strong></li>
+<li><strong>Why that is not an evasion.</strong> The model's claims are checkable and are checked: the group, the content, the charges, the anomalies, the couplings (§3). <strong>A statement about a gauge group does not by itself fix Yukawa indices</strong>, and no theory of this kind does.</li>
+<li><strong>What it costs.</strong> A theory that predicts no mass ratio cannot be confirmed by one, and cannot be refuted by one either. <strong>The cost is on the credit side, not the debit side</strong>, and §6.2 records it as such.</li>
+</ul>
+<p><strong>An earlier draft of this note said the scalar sector was "outside the model", and that sentence is withdrawn.</strong> It was false to the corpus: the spin-0 sector is one of the frame's structural results, and the correct statement is narrower — <strong>the sector is kept, and only the multiplet assignment is left open.</strong></p>
+<p><strong>2.5 Why the equality is the thing that fails, and the angle is not.</strong> This is the sharpest available statement of what the strip repairs, and it comes from the recovered translation article's §10.</p>
+<p><strong>Run the Standard Model's one-loop slopes to the scale where $\sin^2\theta_W=\tfrac38$ exactly</strong>, which is about $10^{13}$ GeV. <strong>The two electroweak inverse couplings have met there</strong> — in $\mathrm{SU}(5)$ normalisation $\alpha_1^{-1}=\alpha_2^{-1}=42.4$ — <strong>and the angle is where Pati–Salam needs it. What misses is colour</strong>: $\alpha_3^{-1}=36.8$ at that scale, <strong>about $13\%$ low, that is $\alpha_3$ about $15\%$ high.</strong></p>
+<p><strong>So the boundary condition is reachable and the unification is not.</strong> The usual summary — "$\tfrac38$ is $38\%$ high at $250$ TeV" — is true and is a statement about a chosen scale. <strong>The sharper statement is that at the scale the angle actually reaches $\tfrac38$, the strong coupling has not arrived.</strong> The missing ingredient is matter that changes $b_3$, and <strong>that is a statement about content, not about the angle.</strong></p>
+<p><strong>Why this matters for the strip, in one sentence.</strong> If the failure were the angle, then removing the angle's prediction would be removing the failure — and a reader would be right to call that a dodge. <strong>The failure is colour arriving late, so removing $g_R=g_L$ does not remove it; it removes the requirement that all four meet at one scale.</strong> <strong>That is a narrower and more honest repair, and §11.3 states what it still costs.</strong></p>
+<p><strong>2.6 The claims, kept, dropped and open.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>claim</th>
+<th>under Pati–Salam</th>
+<th>under this model</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the group $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>declared, with the algebra's support</td>
+<td><strong>unchanged</strong></td>
+<td><strong>keep</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>the sixteen as $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$</td>
+<td>declared</td>
+<td><strong>unchanged</strong></td>
+<td><strong>keep</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>charge quantisation, $3q+\ell=0$</td>
+<td>derived from $\operatorname{tr}_{\mathbf4}(B-L)=0$</td>
+<td><strong>unchanged</strong></td>
+<td><strong>keep</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>anomaly freedom of the sixteen</td>
+<td>verified, four rows and Witten</td>
+<td><strong>unchanged</strong></td>
+<td><strong>keep</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>twenty-one bosons, nine massless</td>
+<td>count, robust</td>
+<td><strong>unchanged</strong></td>
+<td><strong>keep</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>six leptoquarks with fixed quantum numbers</td>
+<td>present</td>
+<td><strong>unchanged</strong></td>
+<td><strong>keep</strong></td>
+</tr>
+<tr>
+<td>7</td>
+<td>$\mathcal B(K_S\to\mu e)$ suppressed</td>
+<td>selection rule from chirality</td>
+<td><strong>unchanged</strong></td>
+<td><strong>keep</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>$g_4=g_L=g_R$ at one scale</td>
+<td>assumed</td>
+<td><strong>dropped</strong></td>
+<td><strong>withdraw</strong></td>
+</tr>
+<tr>
+<td>9</td>
+<td>$\sin^2\theta_W=\tfrac38$ at that scale</td>
+<td>consequence of 8</td>
+<td><strong>gone</strong></td>
+<td><strong>withdraw as a prediction</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>$m_d=m_e$</td>
+<td>consequence of one bidoublet</td>
+<td><strong>multiplet not fixed</strong></td>
+<td><strong>open, not predicted</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>$m_u=m_\nu$</td>
+<td>consequence of one bidoublet</td>
+<td><strong>multiplet not fixed</strong></td>
+<td><strong>open, not predicted</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>$M_X=\sqrt2\,M_{W_R}$</td>
+<td>consequence of $g_4=g_R$</td>
+<td><strong>becomes $M_X=\sqrt2\,(g_4/g_R)M_{W_R}\simeq(1.8\text{–}2.9)M_{W_R}$</strong></td>
+<td><strong>relabel</strong></td>
+</tr>
+<tr>
+<td>13</td>
+<td>one coupling</td>
+<td>the model's headline</td>
+<td><strong>three, of which one is tied to $g_3$</strong></td>
+<td><strong>relabel</strong></td>
+</tr>
+<tr>
+<td>14</td>
+<td>one scale $M_{PS}$</td>
+<td>one scale</td>
+<td><strong>two, $M_C$ and $M_R$</strong></td>
+<td><strong>relabel</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Row 8 is the strip, and it is the only row the strip touches.</strong> Row 9 falls with it as its consequence. <strong>Rows 10 and 11 are marked open rather than withdrawn</strong>, because they depend on a multiplet list the model does not fix. <strong>The scalar sector itself is present — rows 1 to 7 stand alongside it; it is the index structure that is open.</strong> <strong>Rows 12 to 14 are vocabulary.</strong> Rows 1 to 7 are untouched, and <strong>they are what the model is</strong>.</p>
+<h2 id="3-why-it-cannot-contradict-experiment">3. Why It Cannot Contradict Experiment</h2>
+<p><strong>3.1 The mechanism, in one paragraph.</strong> Below $M_R$ the theory is the Standard Model: the same group, the same fields, the same couplings. <strong>So the measured values of $g_3$, $g_L$ and $g_Y$ at $M_Z$ are reproduced by construction, not predicted.</strong> The matching at $M_R$,</p>
+<p>$$
+\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2},
+$$</p>
+<p>is one equation, and it is solved for $g_R$, which no experiment measures. <strong>The model spends its freedom there, and the price is that it says nothing about the electroweak angle.</strong></p>
+<p><strong>3.2 The computation, and where the solution exists.</strong> Fix $M_C$ and $M_R$; then $g_4=g_3(M_C)$ and $g_{B-L}(M_C)=\sqrt{\tfrac38}\,g_4$; run $g_{B-L}$ down to $M_R$; and solve the matching for $g_R$. <strong>A real $g_R$ requires that the bracket be positive:</strong></p>
+<p>$$
+\frac{1}{g_R^2}=\frac{1}{g_Y^2}-\frac{1}{4g_{B-L}^2}>0
+\quad\Longleftrightarrow\quad
+g_{B-L}(M_R)>\tfrac12\,g_Y(M_R) .
+$$</p>
+<p><strong>The numbers, with the Standard Model slopes below $M_R$ and $b_{B-L}=12$ between the scales:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M_C$ (TeV)</th>
+<th>$M_R$ (TeV)</th>
+<th>$g_4$</th>
+<th>$g_{B-L}(M_R)$</th>
+<th>$g_Y(M_R)$</th>
+<th>$g_R$</th>
+<th>$g_L$</th>
+<th>$g_R/g_L$</th>
+<th>$M_X/M_{W_R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$250$</td>
+<td>$100$</td>
+<td>$0.852$</td>
+<td>$0.429$</td>
+<td>$0.372$</td>
+<td>$0.413$</td>
+<td>$0.616$</td>
+<td>$0.67$</td>
+<td>$2.9$</td>
+</tr>
+<tr>
+<td>$250$</td>
+<td>$10$</td>
+<td>$0.852$</td>
+<td>$0.319$</td>
+<td>$0.367$</td>
+<td>$0.449$</td>
+<td>$0.627$</td>
+<td>$0.72$</td>
+<td>$2.7$</td>
+</tr>
+<tr>
+<td>$250$</td>
+<td>$2$</td>
+<td>$0.852$</td>
+<td>$0.279$</td>
+<td>$0.364$</td>
+<td>$0.480$</td>
+<td>$0.635$</td>
+<td>$0.76$</td>
+<td>$2.5$</td>
+</tr>
+<tr>
+<td>$10^{4}$</td>
+<td>$10^{3}$</td>
+<td>$0.766$</td>
+<td>$0.334$</td>
+<td>$0.377$</td>
+<td>$0.457$</td>
+<td>$0.605$</td>
+<td>$0.75$</td>
+<td>$2.4$</td>
+</tr>
+<tr>
+<td>$10^{4}$</td>
+<td>$100$</td>
+<td>$0.766$</td>
+<td>$0.274$</td>
+<td>$0.372$</td>
+<td>$0.507$</td>
+<td>$0.616$</td>
+<td>$0.82$</td>
+<td>$2.1$</td>
+</tr>
+<tr>
+<td>$10^{6}$</td>
+<td>$10^{4}$</td>
+<td>$0.688$</td>
+<td>$0.263$</td>
+<td>$0.383$</td>
+<td>$0.558$</td>
+<td>$0.595$</td>
+<td>$0.94$</td>
+<td>$1.8$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every row reproduces $\sin^2\theta_W=0.2312$, $\alpha_{\mathrm{em}}^{-1}=128$ and $\alpha_s=0.118$ at $M_Z$ exactly</strong>, because each is built from the measured $g_L$ and $g_Y$ below $M_R$. <strong>The table is the proof that there is no coupling failure left, and it is the computation the corpus has never done.</strong></p>
+<p><strong>3.3 The edge of the region, and what it is.</strong> As $M_C/M_R$ grows, $g_{B-L}$ runs down further and the condition fails. <strong>The edge sits between $10^{4}$ and $10^{7}$ in $M_C/M_R$, depending on $M_C$:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M_C$</th>
+<th>largest admissible $M_C/M_R$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$250$ TeV</td>
+<td>$8\times10^{6}$</td>
+</tr>
+<tr>
+<td>$10^{4}$ TeV</td>
+<td>$2\times10^{6}$</td>
+</tr>
+<tr>
+<td>$10^{8}$ TeV</td>
+<td>$7\times10^{4}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The edge is not experimental.</strong> It is the requirement that $\mathrm{U}(1)_{B-L}$ remain strong enough compared with $\mathrm{U}(1)_Y$ for the harmonic sum to be real. <strong>A model that exceeded it would have no real $g_R$, which is a statement about the model rather than about nature.</strong> <strong>The number also moves with $b_{B-L}$, so every appearance of it must name the coefficient it was computed for: $b_{B-L}=12$, the one-loop value for the minimal Pati–Salam content.</strong> Since this model does not fix the multiplet list (§2.3), <strong>a reader who changes the list must recompute the edge</strong>, and an article that quotes $10^{6}$ without the coefficient has quoted a result whose premise it hid.</p>
+<p><strong>3.4 The original failures, re-examined, and why not one of them is a failure of this model.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>failure</th>
+<th>what produced it</th>
+<th>its status here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the coupling triple</td>
+<td>one boundary value against three measurements</td>
+<td><strong>gone</strong>: the boundary value is not asserted, and $g_R$ absorbs the difference</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W$ off by $43\%$</td>
+<td>a consequence of that boundary value</td>
+<td><strong>gone</strong>: no boundary value, so no prediction to be wrong</td>
+</tr>
+<tr>
+<td>$m_d=m_e$</td>
+<td>one bidoublet, one vev serving both down quarks and charged leptons</td>
+<td><strong>not a claim here</strong>: the multiplet list is not fixed, so no relation is predicted</td>
+</tr>
+<tr>
+<td>$m_u=m_\nu$</td>
+<td>the same bidoublet</td>
+<td><strong>not in the model</strong>, for the same reason</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last two rows are the ones a reader will press on, so the distinction is worth stating exactly.</strong> They are not <em>repaired</em> and they are not <em>evaded</em>: <strong>they are consequences of a multiplet assignment that this model does not make.</strong> The spin-0 sector is present; <strong>what is absent is the choice of which multiplet the scalars sit in</strong>, and a theory of a gauge group and a matter content does not assert anything about Yukawa indices. The corpus's own scorecard already assigns zero to that axis for exactly this reason.</p>
+<p><strong>3.5 The confirmation, stated as a ledger rather than a claim.</strong> Every measured quantity that could bear on the model, and what the model says about it:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>measured quantity</th>
+<th>what the model says</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha_s$, $\alpha_{\mathrm{em}}$, $\sin^2\theta_W$ at $M_Z$</td>
+<td>reproduced exactly, by construction (§3.1)</td>
+<td><strong>confirmed</strong></td>
+</tr>
+<tr>
+<td>$Q_p+Q_e=0$</td>
+<td>follows from $\operatorname{tr}_{\mathbf4}(B-L)=0$</td>
+<td><strong>confirmed</strong></td>
+</tr>
+<tr>
+<td>the quantum numbers of one generation</td>
+<td>the sixteen, with the measured hypercharges (§1.6)</td>
+<td><strong>confirmed</strong></td>
+</tr>
+<tr>
+<td>anomaly cancellation</td>
+<td>four rows and Witten, satisfied</td>
+<td><strong>confirmed</strong></td>
+</tr>
+<tr>
+<td>$M_W/M_Z$, $\rho$</td>
+<td>inherited from the Standard Model below $M_R$; a constraint on the unspecified breaking sector, not on the group</td>
+<td><strong>consistent</strong></td>
+</tr>
+<tr>
+<td>$K_L\to\mu e$</td>
+<td>below the limit for $M_X\gtrsim2\times10^{2}$ TeV</td>
+<td><strong>consistent</strong></td>
+</tr>
+<tr>
+<td>$W_R$, $Z_R$ direct searches</td>
+<td>below the limit for $M_{W_R}\gtrsim$ a few TeV</td>
+<td><strong>consistent</strong></td>
+</tr>
+<tr>
+<td>proton lifetime</td>
+<td>dimension nine, $M^{-6}$, unobservably long</td>
+<td><strong>consistent</strong></td>
+</tr>
+<tr>
+<td>$\mu\to e\gamma$</td>
+<td>far below the limit</td>
+<td><strong>consistent</strong></td>
+</tr>
+<tr>
+<td>neutrino masses</td>
+<td>allowed, through the $\nu_R$ the sixteen contains; value unspecified</td>
+<td><strong>not contradicted</strong></td>
+</tr>
+<tr>
+<td>dark matter</td>
+<td>no candidate; silence, not conflict</td>
+<td><strong>not contradicted</strong></td>
+</tr>
+<tr>
+<td>baryon asymmetry</td>
+<td>no mechanism claimed; silence, not conflict</td>
+<td><strong>not contradicted</strong></td>
+</tr>
+<tr>
+<td>fermion masses and mixings</td>
+<td>no prediction made (§2.4)</td>
+<td><strong>not contradicted</strong></td>
+</tr>
+<tr>
+<td>the scalar spectrum</td>
+<td>the sector is the frame's (centre $\mathbb B_C$); its multiplet content is not fixed, so no mass is predicted</td>
+<td><strong>no claim</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the verdict column, and it has no entry saying "excluded". That is the confirmation the note can honestly give:</strong> no measured number contradicts any claim the model makes, because <strong>every claim it makes is either confirmed or is a bound on a free parameter.</strong> The rows marked <em>silence</em> are the price, and they are on the credit side: the model cannot be confirmed either.</p>
+<p><strong>3.6 What "no contradiction" costs, stated without softening.</strong></p>
+<ul>
+<li><strong>It is not confirmation.</strong> A null result in $K_L\to\mu e$ is what the model says; it is also what a hundred other models say. <strong>The corpus must stop reading null results as support.</strong></li>
+<li><strong>The leptoquark floor does not weaken.</strong> $g_4$ is pinned to $g_3(M_C)$, so the bound $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ still gives $M_X\gtrsim2\times10^{2}$ TeV. <strong>An earlier draft of this note claimed the floor weakens as $1/g_4$ because $g_4$ was taken free; that was wrong, and the error came from forgetting the $\mathrm{SU}(3)\subset\mathrm{SU}(4)$ tie.</strong></li>
+<li><strong>$g_R$ comes out below $g_L$ in every row of §3.2</strong>, by $6\%$ to $33\%$. <strong>That is the one number the model produces rather than assumes</strong>, and it is produced by the requirement that hypercharge come out right — not by a measurement of $g_R$.</li>
+<li><strong>Nothing is testable below the leptoquark mass.</strong> The model is a framework with a floor at a few hundred TeV.</li>
+</ul>
+<p><strong>3.7 Everything that is still only bounded.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>status</th>
+<th>the bound</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_X$, the leptoquark mass</td>
+<td>parameter, floored</td>
+<td>$\gtrsim2\times10^{2}$ TeV from $K_L\to\mu e$</td>
+</tr>
+<tr>
+<td>$M_{W_R}$</td>
+<td>parameter, floored</td>
+<td>$\gtrsim$ multi-TeV direct; $\simeq M_X/2.9$ to $M_X/1.8$ here</td>
+</tr>
+<tr>
+<td>$M_{Z_R}$</td>
+<td>parameter</td>
+<td>direct dilepton bounds</td>
+</tr>
+<tr>
+<td>$v_R$</td>
+<td>parameter</td>
+<td>fixed by $M_X$ and $g_4$</td>
+</tr>
+<tr>
+<td>$g_R$</td>
+<td>computed from $(M_C,M_R)$</td>
+<td>no direct measurement</td>
+</tr>
+<tr>
+<td>the scalar masses</td>
+<td>parameter</td>
+<td>Higgs-like bounds</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{QCD}}$</td>
+<td>inherited</td>
+<td>neutron EDM</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Not one row is a conflict, and not one row is a prediction of a number.</strong></p>
+<h2 id="4-differences-with-patisalam">4. Differences with Pati–Salam</h2>
+<p><strong>4.1 Same group, one claim fewer, and that is the whole of the difference at the level of structure.</strong> The group, the sixteen, the chain, the boson count, the leptoquark quantum numbers and the charge-quantisation argument are identical. <strong>What differs is the boundary condition on the couplings, and the absence of any scalar claim in either the unified version's strong form or a repaired one.</strong></p>
+<p><strong>4.2 What changes numerically.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>Pati–Salam (unified)</th>
+<th>this model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sin^2\theta_W$ at $M_{PS}$</td>
+<td>$\tfrac38$, exact</td>
+<td>not defined; $\tfrac38$ only if $g_R=g_L$</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W$ at $M_Z$</td>
+<td>$0.21$ to $0.33$, depending on the scale, all wrong</td>
+<td>$0.2312$ by construction</td>
+</tr>
+<tr>
+<td>$M_X/M_{W_R}$</td>
+<td>$\sqrt2$</td>
+<td>$1.8$ to $2.9$</td>
+</tr>
+<tr>
+<td>$g_R/g_L$</td>
+<td>$1$</td>
+<td>$0.67$ to $0.94$</td>
+</tr>
+<tr>
+<td>$m_d/m_e$</td>
+<td>$1$</td>
+<td><strong>not predicted</strong></td>
+</tr>
+<tr>
+<td>scale of the model</td>
+<td>one, $M_{PS}$</td>
+<td>two, $M_C$ and $M_R$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>4.3 What does not change, and must be said in the article that compares them.</strong> The proton-decay argument (dimension nine, $M^{-6}$), the leptoquark mass relation to $v_R$, the count of nine massless bosons against twelve massive, the $\mathrm{SU}(4)$ tracelessness, the anomaly ledger, and the chirality selection of $K_L$ over $K_S$. <strong>Six statements, all of them still true, and a migration that alters any of them has gone too far.</strong></p>
+<h2 id="5-differences-with-the-leftright-model">5. Differences with the Left–Right Model</h2>
+<p><strong>5.1 The containment, unchanged.</strong> $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ is what remains when $\mathrm{SU}(4)$ is broken. <strong>The fourth-colour model is the left–right model plus six gauge bosons and one relation.</strong></p>
+<p><strong>5.2 The one relation the strip keeps, and why it is not a prediction.</strong> $g_3(M_C)=g_4$ is the statement that colour and $B-L$ are one factor above $M_C$. <strong>It is a relation between two couplings at a scale, not a value</strong>, so it survives the strip intact: no experiment measures a number that it fixes. <strong>It is what the left–right model does not have</strong>, where $g_3$ and $g_{B-L}$ are unrelated.</p>
+<p><strong>5.3 Charge quantisation, which is the left–right model's real loss.</strong> In $\mathrm{SU}(4)$, $B-L=\mathrm{diag}(\tfrac13,\tfrac13,\tfrac13,-1)$ is traceless on the quartet because it is a generator, so $3q+\ell=0$. <strong>In the left–right model $B-L$ is an independent $\mathrm{U}(1)$ and the relation must be imposed by hand.</strong> That is a derivation the strip does not touch.</p>
+<p><strong>5.4 The scoreboard, updated for the strip.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>test</th>
+<th>this model</th>
+<th>left–right</th>
+<th>favors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>charge quantisation</td>
+<td>derived</td>
+<td>imposed</td>
+<td>this model</td>
+</tr>
+<tr>
+<td>$g_3$–$g_{B-L}$ relation</td>
+<td>present at $M_C$</td>
+<td>none</td>
+<td>this model</td>
+</tr>
+<tr>
+<td>gauge leptoquarks</td>
+<td>six, heavy</td>
+<td>none</td>
+<td>left–right</td>
+</tr>
+<tr>
+<td>proton decay</td>
+<td>dimension nine, unobservable</td>
+<td>stable</td>
+<td>neither, in practice</td>
+</tr>
+<tr>
+<td>$K_L\to\mu e$</td>
+<td>generated, floors $M_X$</td>
+<td>not generated</td>
+<td>left–right</td>
+</tr>
+<tr>
+<td>$m_d=m_e$</td>
+<td><strong>not predicted</strong></td>
+<td>not predicted</td>
+<td>neither</td>
+</tr>
+<tr>
+<td>$W_R$, $Z_R$, $\nu_R$</td>
+<td>predicted</td>
+<td>predicted</td>
+<td>neither</td>
+</tr>
+<tr>
+<td>number of gauge couplings</td>
+<td>three, one tied</td>
+<td>four, all free</td>
+<td>this model</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two lines favour this model and two favour the left–right model, and the two that favour it are derivations.</strong> That is a better position than the unified version had, and a worse one than the unified version claimed.</p>
+<p><strong>5.5 Which to prefer, and on what ground.</strong> The left–right model is safer because it has no leptoquark and no floor. <strong>This model is richer because colour and lepton number are one factor, which is the only reason charge is quantised rather than assumed.</strong> A reader who wants safety should take the left–right model; a reader who wants the fourth colour should take this. <strong>Neither can be excluded at current sensitivity, so the choice is structural and must be argued as such.</strong></p>
+<h2 id="6-what-the-model-predicts-and-what-it-only-allows">6. What the Model Predicts, and What It Only Allows</h2>
+<p><strong>6.1 The four predictions, in order of strength.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>prediction</th>
+<th>why it is a prediction</th>
+<th>test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3q+\ell=0$, hence $Q_p+Q_e=0$</td>
+<td>tracelessness of $B-L$ in $\mathrm{SU}(4)$</td>
+<td>confirmed to $10^{-21}$</td>
+</tr>
+<tr>
+<td>the sixteen, with $\nu_R$ in $(\bar{\mathbf4},\mathbf1,\mathbf2)$</td>
+<td>declared content, fixed quantum numbers</td>
+<td>confirmed, given the declaration</td>
+</tr>
+<tr>
+<td>nine massless and twelve massive bosons</td>
+<td>group theory, any vacuum</td>
+<td>consistent</td>
+</tr>
+<tr>
+<td>$K_S\to\mu e$ suppressed relative to $K_L\to\mu e$</td>
+<td>chirality structure of the operator</td>
+<td>consistent with the null result</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the fourth is a statement about a channel that has not been seen</strong>, and it is a <em>null</em> prediction: it says a signal would mean the operator is not the frame's.</p>
+<p><strong>6.2 The two that must be demoted, and the one that was never a claim.</strong></p>
+<ul>
+<li><strong>$\sin^2\theta_W$</strong>: from a prediction to an output. <strong>The $\tfrac38$ survives only as the statement "if $g_R=g_L$ then $\tfrac38$", which is a conditional and not a claim.</strong></li>
+<li><strong>The absolute scale</strong>: never was a prediction; now it is explicitly two parameters, $M_C$ and $M_R$.</li>
+<li><strong>The mass relations</strong>: not demoted but <strong>open</strong>. They were never consequences of the fourth colour; they follow from <em>which</em> multiplet is chosen, and the model does not choose (§1.5, §2.4). <strong>A migration that treats them as "weakened predictions" has still not understood the boundary</strong>; they are not predictions of this model at all. <strong>This is not a removal of the scalar sector, which stays.</strong></li>
+</ul>
+<p><strong>6.3 The one that is new, and what kind of statement it is.</strong> $g_R$ is not free in practice: the matching determines it from $(M_C,M_R)$, and it comes out <strong>below $g_L$, between $0.67$ and $0.94$ of it</strong>. <strong>A model in which $g_R<g_L$ has a $W_R$ lighter than the symmetric choice would give</strong>, and the ratio $M_X/M_{W_R}$ moves from $\sqrt2$ to $1.8$–$2.9$. <strong>That is not a prediction: it is determined once the two scales are chosen, which is the opposite of a prediction.</strong> It is the only new number the strip produces, and it is an output, not a test.</p>
+<h2 id="7-what-carries-over-from-the-translation-of-the-three-interactions">7. What Carries Over from the Translation of the Three Interactions</h2>
+<p><strong>The corpus's translation of the strong, weak and electromagnetic interactions into Pati–Salam form survives almost intact, because it is a translation of the <em>group</em> and not of the couplings.</strong> What must be re-read is the part that used $g_4=g_L=g_R$.</p>
+<p><strong>7.1 Strong.</strong> The fifteen $\mathrm{SU}(4)$ generators split as $8+1+6$: the octet of gluons, the $B-L$ boson, and the six leptoquarks. <strong>This is a statement about the adjoint and is untouched.</strong> $\alpha_s=\alpha_4$ at $M_C$ remains true. <strong>What changes is only the sentence that says $\alpha_s$ also equals $\alpha_L$ and $\alpha_R$ there.</strong></p>
+<p><strong>7.2 Weak.</strong> $\mathrm{SU}(2)_L$ is unbroken in the sense that matters: below $M_R$ its coupling runs exactly as in the Standard Model, and that is why §3's matching works. <strong>$\mathrm{SU}(2)_R$ is new and its coupling is computed, not assumed equal.</strong> The $W_R$ and $Z_R$ content, their charges and their couplings to fermions are unchanged.</p>
+<p><strong>7.3 Electromagnetic.</strong> The photon is still the unbroken mixture of three neutral states — $W_L^3$, $W_R^3$ and the $B-L$ boson — with coefficients proportional to the couplings. <strong>The mixture is unchanged; only the number $\tfrac38$ that it produced at one particular scale is withdrawn.</strong> The derivation of the $Z$ coupling as $T_3-\sin^2\theta_WQ$ is untouched, because it is a statement about one rotation.</p>
+<p><strong>7.4 The missing file was not lost, and restoring it settled three open questions at once.</strong> The translation was written as <code>articles_internal/three-interactions-in-pati-salam-form.md</code>; that file is absent from the repository, and <strong>five notes cite it</strong> (§7.4a). <strong>An earlier draft of this note said it must be restored "or the citation deleted", treating it as lost. It is not lost.</strong> A copy survives outside the article tree:</p>
+<pre><code>_reserve/The Three Interactions in Pati–Salam Model_ A Translation — Biquaternion Universe.html
+</code></pre>
+<p><strong>$1.4$ MB of HTML, a full rendering of the note</strong>, with a <code>_files</code> directory holding its assets, and it contains <strong>more than the article</strong>: its §12 is the migration plan in finished form, and its §13 is a working brief. <strong>The action is therefore restore, not delete</strong> — and the restoration must be a re-render from the HTML, not a re-derivation from memory, because §12.4's numbering and §12.6's rename list are the two things the rest of this note could not otherwise resolve.</p>
+<p><strong>7.4a The five citations, and what each expects to find there.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>note</th>
+<th>what it says it is citing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>structural-gut-comparisons.md</code></td>
+<td>the translation of the strong, weak and electromagnetic interactions</td>
+</tr>
+<tr>
+<td><code>the-photon-as-the-unbroken-mixture.md</code></td>
+<td>§4.1, where the mixture is fixed</td>
+</tr>
+<tr>
+<td><code>the-anomaly-ledger-in-fourth-colour-form.md</code></td>
+<td>§4.2, where the ledger is set out</td>
+</tr>
+<tr>
+<td><code>charge-quantisation-from-the-fourth-colour.md</code></td>
+<td>§4.2, where the claim is made precise</td>
+</tr>
+<tr>
+<td><code>the-fourth-colour-as-the-unit-line.md</code></td>
+<td>the translation this declaration depends on</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>All five expect §4.1 and §4.2, and both exist in the reserve copy</strong> — §4.1 is <em>the unbroken generator and the photon as a mixture</em>, §4.2 is <em>charge quantisation, derived</em>. <strong>So restoring the file resolves all five citations as they stand, with no edit to any of them.</strong> That is the cheapest possible fix and the one to take.</p>
+<p><strong>7.4b One defect in the recovered file, and one number that looked like a defect and is not.</strong></p>
+<ul>
+<li><strong>A number earlier drafts of this note called wrong, and the correction was the error.</strong> Its §9 says "the observed $m_d/m_e\simeq2.2$ contradicts the first", and an earlier draft of this note flagged $2.2$ as a factor-of-four mistake for $9.1$. <strong>It is not.</strong> The two numbers are the same ratio at two scales: $9.1$ is $m_d/m_e$ at $m_b$, which is what <code>the-scalar-sector-and-the-leptoquark-bounds.md</code> quotes in its §10.1; $2.2$ is the same ratio run up to $M_{PS}$, where quark masses fall faster than the electron's by roughly $(\alpha_s(M_{PS})/\alpha_s(m_b))^{4/7}\approx0.25$. <strong>The article compares at $M_{PS}$, so $2.2$ is the number it needs, and the restored text is right as it stands.</strong> <strong>The retraction is recorded here because the same "correction" would be made again by anyone who compares the two articles without checking the scales.</strong></li>
+<li><strong>A filename plan that was not followed.</strong> Its §12.8 names the phase-1 outputs <code>the-pati-salam-group-in-the-biquaternion-framework.md</code>, <code>the-breaking-chain-in-pati-salam-form.md</code> and <code>the-boson-spectrum-and-the-three-neutral-states.md</code>. <strong>None of the three exists under those names</strong>; the repository has <code>the-fourth-colour-left-right-model.md</code> and <code>the-breaking-chain-and-the-boson-spectrum.md</code>. <strong>The plan and the build diverged, and a restored §12.8 must say so rather than describe a tree that is not there.</strong></li>
+</ul>
+<p><strong>7.4d The restoration is done, and it is a re-render rather than a re-derivation.</strong> <code>articles_internal/three-interactions-in-pati-salam-form.md</code> now exists again, <strong>$102$ KB, $948$ formulas, $0$ KaTeX errors</strong>, rebuilt from the saved page by reading the TeX out of KaTeX's own <code>annotation</code> elements — so every formula is the formula that was rendered, not a reconstruction. <strong>All $25$ tables and all four code blocks came back intact, and the five citations resolve as they stand.</strong> <strong>The one addition is §12.4's build column and a sentence in §12.8 about the filename divergence, both written in as records rather than silently inserted.</strong></p>
+<p><strong>7.4c What the recovery is worth, beyond the five citations.</strong> Three things in the reserve copy are not reconstructible from the corpus as it stands: <strong>§12.4's numbered list of eleven new articles</strong> (which is what the four "phase 2" notes are citing — §8.7), <strong>§12.6's rename list with its two deliberate exceptions</strong>, and <strong>§12.1's slug rule</strong>. <strong>All three are used below, and none of them could be inferred.</strong></p>
+<p><strong>And one more thing, which this note does not attempt to reproduce: the recovered file's §13 is a working brief for the migration, and it is better than §8 of this note at the operational level.</strong> It gives <strong>five steps</strong>, <strong>a shelf listing every file and where it lives</strong>, <strong>five questions with the answer each one wants</strong>, <strong>the notation rules and their target forms</strong>, <strong>the shape of an article</strong>, <strong>eleven checks with the two commands that run them</strong>, and <strong>seven traps with the sentence that repairs each</strong>. <strong>The right division of labour is: this note decides <em>what</em> the migration claims; the recovered §13 decides <em>how</em> each article is edited.</strong> <strong>Two of its traps are the ones this note would most easily fall into</strong> — <em>"the minimal scalar sector leaves no scalar"</em>, repaired by <em>"it leaves four singlets: twenty-four real components, twelve eaten, no doublet among the survivors"</em> (§2.3), and <em>"$\tfrac38$ is the prediction"</em>, repaired by <em>"$\tfrac38$ is a boundary condition; the minimal content reaches it at $10^{13}$ GeV and misses by $\alpha_3$, not by $\alpha_2$"</em> (§2.5).</p>
+<h2 id="8-the-migration">8. The Migration</h2>
+<p><strong>8.1 The four rules.</strong> These are the constraints any edit must satisfy, and they are written to be checked mechanically.</p>
+<ol>
+<li><strong>Nothing new is claimed.</strong> The migration removes assertions; it does not add any. <strong>If an edit would make a sentence stronger, it is wrong.</strong></li>
+<li><strong>Demote rather than delete where the statement is still true.</strong> $M_X=\sqrt2M_{W_R}$ becomes a ratio with $g_4/g_R$; it is not struck out.</li>
+<li><strong>One vocabulary, used everywhere.</strong> The name is <em>the fourth-colour left–right model</em>; the scales are $M_C$ and $M_R$; the group is written in full at first mention in each article.</li>
+<li><strong>Every number keeps its derivation.</strong> A number whose derivation depended on $g_4=g_L=g_R$ must be recomputed or withdrawn, never left standing with a new label.</li>
+</ol>
+<p><strong>8.2 The dictionary.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>old</th>
+<th>new</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pati–Salam model</td>
+<td><strong>the fourth-colour left–right model</strong></td>
+<td>the group is kept; the unification claim is not</td>
+</tr>
+<tr>
+<td>"one coupling"</td>
+<td>"three couplings, one of them tied to $g_3$ at $M_C$"</td>
+<td>the strip</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W=\tfrac38$ "is predicted"</td>
+<td>"$\tfrac38$ holds only if $g_R=g_L$; the model does not assume it"</td>
+<td>the strip</td>
+</tr>
+<tr>
+<td>unification</td>
+<td><strong>the fourth-colour relation</strong></td>
+<td>no simple group above</td>
+</tr>
+<tr>
+<td>$M_{PS}$</td>
+<td>$M_C$ (colour) and $M_R$ (right)</td>
+<td>two steps</td>
+</tr>
+<tr>
+<td>the minimal scalar sector</td>
+<td><strong>a scalar sector whose multiplet list is not fixed</strong></td>
+<td>the sector is kept; the guest list is open (§1.5)</td>
+</tr>
+<tr>
+<td>$M_X=\sqrt2M_{W_R}$</td>
+<td>$M_X=\sqrt2\,(g_4/g_R)M_{W_R}\simeq(1.8\text{–}2.9)M_{W_R}$</td>
+<td>$g_R\ne g_4$</td>
+</tr>
+<tr>
+<td>"the model predicts"</td>
+<td>"the model requires" or "the model allows", as the case is</td>
+<td>§6</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>8.3 The triage, in the form an editor can apply.</strong> For each occurrence of a claim, the ruling:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>ruling</th>
+<th>the sentence to write instead</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_4=g_L=g_R$</td>
+<td><strong>strike</strong></td>
+<td>"the three couplings are independent above $M_C$"</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W=\tfrac38$</td>
+<td><strong>conditionalise</strong></td>
+<td>"$\tfrac38$ follows only if $g_R=g_L$, which is not assumed"</td>
+</tr>
+<tr>
+<td>$m_d=m_e$</td>
+<td><strong>mark as dependent on the multiplet list</strong></td>
+<td>"a single bidoublet would give $m_d=m_e$; the model fixes no multiplet, so predicts no mass relation"</td>
+</tr>
+<tr>
+<td>$m_u=m_\nu$</td>
+<td><strong>the same</strong></td>
+<td>the same, with the note that the sixteen contains $\nu_R$</td>
+</tr>
+<tr>
+<td>$M_X=\sqrt2M_{W_R}$</td>
+<td><strong>generalise</strong></td>
+<td>the ratio with $g_4/g_R$</td>
+</tr>
+<tr>
+<td>"unifies"</td>
+<td><strong>replace</strong></td>
+<td>"relates $g_3$ and $g_{B-L}$ at $M_C$"</td>
+</tr>
+<tr>
+<td>the $43\%$ discrepancy</td>
+<td><strong>recount as history</strong></td>
+<td>"the unified version failed this way; this model does not make the claim"</td>
+</tr>
+<tr>
+<td>"Pati–Salam predicts $X$"</td>
+<td><strong>name the model</strong></td>
+<td>"the fourth-colour model requires $X$"</td>
+</tr>
+<tr>
+<td><em>Pati–Salam</em> in a title, a filename or a menu heading</td>
+<td><strong>never</strong></td>
+<td>the name appears only in the three places listed below</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one rule the strip did not state, and the author supplied on 2026-11-21: the name <em>Pati–Salam</em> does not enter a title.</strong> Not a title of an article, not a filename, not a menu heading. <strong>The corpus is about biquaternions and about one model, the Fourth-Colour Left–Right Model</strong>; a title that names a different model states a claim the corpus does not make.</p>
+<p><strong>Where the name is still allowed, and only there, three places:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>place</th>
+<th>what it does there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the frame article's opening</td>
+<td>states the literature's proposal once — the group, the sixteen, the chain — as the thing this model is built on</td>
+</tr>
+<tr>
+<td>the frame article's section on the departure</td>
+<td>says what Pati–Salam asserts, what the Fourth-Colour Left–Right Model does not, and why the equality is the thing dropped</td>
+</tr>
+<tr>
+<td>the failure sections — the running, the coupling ledger, §12</td>
+<td>states the failure with its numbers</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Everything else says <em>the model</em>, or <em>the fourth-colour left–right model</em>, or <em>the fourth-colour model</em>.</strong> <strong>A reader who knows only the name <em>Pati–Salam</em> is not lost: the frame article's first paragraph carries the name and says what it is, and the reader arrives there from the menu that calls the model by its own name.</strong></p>
+<p><strong>8.4 The work list, article by article.</strong> Sixteen articles of the part's one hundred and twenty-four carry one of the three markers, and they divide by the size of the edit.</p>
+<p><strong>Class A — a section rewritten (five articles).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>the-fourth-colour-left-right-model.md</code></td>
+<td>the title's "One Coupling"; the factor table's last row from <em>assumed</em> to <em>not assumed</em>; the paragraph that says whether the common boundary value "is a unification or a coincidence" becomes a statement that it is neither asserted nor needed</td>
+</tr>
+<tr>
+<td><code>the-breaking-chain-and-the-boson-spectrum.md</code></td>
+<td>that article's §10.4 composition, which derives $\tfrac38$; that article's §11, whose three remedies exist only because of the failure; that article's §13 ledger of what the chain buys</td>
+</tr>
+<tr>
+<td><code>the-scalar-sector-and-the-leptoquark-bounds.md</code></td>
+<td>that article's §10.1 and §13.1, and its summary: the mass relations become <strong>consequences of a scalar choice the model does not make</strong>, and $m_d/m_e$ is stated as $9.1$ so the reader sees what a single bidoublet would cost</td>
+</tr>
+<tr>
+<td><code>the-weinberg-angle-the-neutral-current-and-the-z-coupling.md</code></td>
+<td><strong>not the title: it has already been renamed</strong> to <em>The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$</em>, which is §12.6's target. <strong>Only the "Status in the migration" paragraph changes</strong>, where $\tfrac38$ currently reads as a boundary condition rather than as conditional on $g_R=g_L$</td>
+</tr>
+<tr>
+<td><code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code></td>
+<td>the paragraph that uses the mass relations as a prediction</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Class B — a paragraph replaced (five articles).</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>article</th>
+<th>what changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.md</code></td>
+<td>the coupling in the rate becomes $g_4=g_3(M_C)$, and the floor is stated as unchanged by the strip</td>
+</tr>
+<tr>
+<td><code>electroweak-precision-observables-the-oblique-parameters-s-t-u.md</code></td>
+<td>the $\tfrac38$ reference becomes a conditional</td>
+</tr>
+<tr>
+<td><code>the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.md</code></td>
+<td>the parameter-count comparison, which now counts three couplings and two scales</td>
+</tr>
+<tr>
+<td><code>the-landau-pole-triviality-and-vacuum-stability.md</code></td>
+<td>the "one coupling" phrasing, twice</td>
+</tr>
+<tr>
+<td><code>the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.md</code></td>
+<td>the same</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Class C — a sentence (six articles).</strong></p>
+<p><code>the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.md</code>, <code>the-theta-parameter-and-strong-cp-in-biquaternionic-form.md</code>, <code>the-lagrangian-and-the-electroweak-theory.md</code>, <code>gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.md</code>, <code>the-parton-model-and-deep-inelastic-scattering.md</code>, and <code>grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.md</code> — the last not because it is wrong but because it becomes the <strong>reason</strong> the strip exists, and should say so in one sentence.</p>
+<p><strong>The sixteen, enumerated, in the form a script can consume.</strong> The three classes above partition the sixteen exactly, with no overlap and no remainder, and this list is the one §8.9's searches run over:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>file stem (under <code>articles_physics/</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td><code>the-fourth-colour-left-right-model</code></td>
+</tr>
+<tr>
+<td>A</td>
+<td><code>the-breaking-chain-and-the-boson-spectrum</code></td>
+</tr>
+<tr>
+<td>A</td>
+<td><code>the-scalar-sector-and-the-leptoquark-bounds</code></td>
+</tr>
+<tr>
+<td>A</td>
+<td><code>the-weinberg-angle-the-neutral-current-and-the-z-coupling</code></td>
+</tr>
+<tr>
+<td>A</td>
+<td><code>the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation</code></td>
+</tr>
+<tr>
+<td>B</td>
+<td><code>charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it</code></td>
+</tr>
+<tr>
+<td>B</td>
+<td><code>electroweak-precision-observables-the-oblique-parameters-s-t-u</code></td>
+</tr>
+<tr>
+<td>B</td>
+<td><code>the-standard-model-content-quantum-numbers-and-the-nineteen-parameters</code></td>
+</tr>
+<tr>
+<td>B</td>
+<td><code>the-landau-pole-triviality-and-vacuum-stability</code></td>
+</tr>
+<tr>
+<td>B</td>
+<td><code>the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>the-lagrangian-and-the-electroweak-theory</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>the-parton-model-and-deep-inelastic-scattering</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>the-theta-parameter-and-strong-cp-in-biquaternionic-form</code></td>
+</tr>
+<tr>
+<td>C</td>
+<td><code>grand-unification-in-the-biquaternion-framework-where-the-embedding-fails</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The list is computed, not remembered</strong>, and the computation is stated so it can be repeated: take the $124$ entries of <code>physics.md</code>'s <em>Biquaternion Particle Physics</em> part, and keep the files matching any of three patterns — <code>tfrac38</code>/<code>tfrac{3}{8}</code>/<code>0.375</code>, <code>one coupling</code>/<code>single coupling</code>/<code>g_4=g_L=g_R</code>/<code>g_3=g_L=g_R</code>, and <code>m_d=m_e</code>. <strong>That gives exactly sixteen, which is a check in itself: if a later edit makes the count seventeen, a new assertion has appeared.</strong></p>
+<p><strong>8.4a The rename decision: files are renamed, and the rename is done.</strong></p>
+<p><strong>An earlier draft of this note ruled that filenames never move</strong>, following the recovered translation article's §12.1: <em>"the slug never moves"</em>, on the ground of $663$ menu links and three sitemaps. <strong>That ruling is withdrawn.</strong> The author's preference is explicit, and the reason is not taste: <strong>a filename that says <em>Pati–Salam model</em> asserts the thing the strip removes, in every URL a reader shares.</strong> The title was already changed for that reason; leaving the filename leaves the claim in the one place a reader copies.</p>
+<p><strong>Six files moved on 2026-11-21, in one pass.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>old filename</th>
+<th>new filename</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+<td><code>articles_physics/the-fourth-colour-left-right-model.md</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/the-fourth-colour-left-right-model.md</code></td>
+<td><code>articles_internal/internal-note-the-fourth-colour-left-right-model.md</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/the-pati-salam-model.md</code></td>
+<td><code>articles_internal/the-fourth-colour-model.md</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/pati-salam-versus-left-right.md</code></td>
+<td><code>articles_internal/fourth-colour-versus-left-right.md</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/the-anomaly-ledger-in-pati-salam-form.md</code></td>
+<td><code>articles_internal/the-anomaly-ledger-in-fourth-colour-form.md</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/internal-note-on-the-experimental-status-of-pati-salam.md</code></td>
+<td><code>articles_internal/internal-note-on-the-experimental-status-of-the-fourth-colour-model.md</code> (absorbed and deleted, §8.10)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The commit boundary is not what an earlier draft of this section assumed.</strong> <code>articles_internal/</code> is listed in <code>.gitignore</code> — <em>"Internal review work - confidential, never published, never committed"</em> — <strong>so five of the six moves cannot enter a commit at all.</strong> The tracked part of the rename is the frame article (<code>git mv</code>), <code>build.py</code>'s alias column, the <code>physics.md</code> entry, and the regenerated sitemaps; <strong>the internal five live on disk only, and the deployed copies under <code>…-deploy/articles_internal/</code> are what a reader reaches.</strong> <strong>"One commit" was wrong, and the correction is not cosmetic: it decides which half of the rename can be reviewed in a diff.</strong></p>
+<p><strong>The collision is real and the build states it as a rule</strong>: <em>"A slug belongs to exactly one collection"</em>, on the ground that the menus are disjoint and a file's location is decided by which menu links it. <strong>The frame article has to take <code>the-fourth-colour-left-right-model</code>, so this note — internal, unlinked, unlisted — takes the prefix instead.</strong> <strong>Order matters: the note moved first, or the <code>sed</code> pass would have rewritten the frame article's references into pointers at the note.</strong></p>
+<p><strong>The sweep, and its counts.</strong> $196$ references were rewritten in one <code>sed</code> pass over <code>.md</code> and <code>.py</code>, longest stem first — the frame article's $164$, this note's $7$, the anomaly ledger's $10$, <code>the-pati-salam-model</code>'s $8$, the left–right comparison's $5$, and the experimental-status note's $2$. <strong>Longest first is not a style preference: <code>the-pati-salam-model</code> is a prefix of <code>the-pati-salam-model-in-the-biquaternion-framework</code>, and the short one applied first would have produced <code>the-fourth-colour-model-in-the-biquaternion-framework</code> in $164$ places.</strong></p>
+<p><strong>Old URLs are kept alive, because a rename that 404s an outside link is a rename that lost a reader.</strong> <code>build.py</code> already carries <code>LEGACY_COPIES</code>, a list of <em>"old URLs kept alive after a rename"</em> whose entries are byte copies of the new page at the old path. <strong>Six entries were added, one per file:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>new URL</th>
+<th>old URL, still served</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>articles_physics/the-fourth-colour-left-right-model.html</code></td>
+<td><code>…/the-pati-salam-model-in-the-biquaternion-framework.html</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/internal-note-the-fourth-colour-left-right-model.html</code></td>
+<td><code>…/the-fourth-colour-left-right-model.html</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/the-fourth-colour-model.html</code></td>
+<td><code>…/the-pati-salam-model.html</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/fourth-colour-versus-left-right.html</code></td>
+<td><code>…/pati-salam-versus-left-right.html</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/the-anomaly-ledger-in-fourth-colour-form.html</code></td>
+<td><code>…/the-anomaly-ledger-in-pati-salam-form.html</code></td>
+</tr>
+<tr>
+<td><code>articles_internal/the-coupling-sector-of-the-fourth-colour-model.html</code></td>
+<td><code>…/internal-note-on-the-experimental-status-of-pati-salam.html</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three checks, run and passed.</strong></p>
+<ol>
+<li><strong>Zero stale references, in the sense that matters.</strong> <code>grep -r</code> for each of the five old stems returns <strong>two</strong> kinds of hit and no third: <strong><code>build.py</code>'s alias column</strong>, where the old URLs must survive, and <strong>the table at the head of this subsection</strong>, which is the record of what moved. <strong>No <code>.md</code> file points at a filename that no longer exists.</strong></li>
+<li><strong>Page count unchanged: $3138$ urls</strong>, before and after. <strong>A rename moves a page; it does not add one.</strong> The internal collection is not in the sitemap at all, so the internal five could not move the count even if they tried.</li>
+<li><strong>The six aliases are byte-identical copies</strong> of their new pages — <code>md5sum</code> on each pair — so a bookmarked old URL now serves the renamed article rather than the stale one.</li>
+</ol>
+<p><strong>Two things this section no longer claims.</strong> The page count was quoted as $3137$ in an earlier draft; the tree's own baseline is $3138$. <strong>And the display titles are a separate list</strong>: renaming the file did not rename the articles. Of the eight §8.4b titles, <strong>seven were already renamed</strong> and one, the frame article's, is renamed here because the model's own name changed (§12.6, row $2$).</p>
+<p><strong>8.4b The eight renames the plan already specifies, and the two it refuses.</strong> The recovered file's §12.6 lists <strong>eight titles to change, all in the particle category, and two that are deliberately kept.</strong> <strong>This note does not need to invent a rename policy: it needs to finish one.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>§12.6's target title</th>
+<th>state today</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>The Electroweak Gauge Group and the Hypercharge Assignment in the Fourth-Colour Left–Right Model: The Group and the Derived $Y$</em></td>
+<td><strong>renamed</strong> — and past §12.6, which wrote <em>in Pati–Salam Model</em></td>
+</tr>
+<tr>
+<td><em>The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</em></td>
+<td><strong>renamed</strong></td>
+</tr>
+<tr>
+<td><em>Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated</em></td>
+<td><strong>renamed</strong></td>
+</tr>
+<tr>
+<td><em>Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model: Four Conditions Become None</em></td>
+<td><strong>renamed</strong> — and past §12.6, which wrote <em>in Pati–Salam Model</em></td>
+</tr>
+<tr>
+<td><em>Custodial Symmetry and the Rho Parameter: From Accidental to Gauged</em></td>
+<td><strong>renamed</strong></td>
+</tr>
+<tr>
+<td><em>The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$</em></td>
+<td><strong>renamed</strong> — and past §12.6, whose target kept <em>at the Pati–Salam Scale</em> and asserted $\tfrac38$ without its condition</td>
+</tr>
+<tr>
+<td><em>The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form</em></td>
+<td><strong>renamed</strong></td>
+</tr>
+<tr>
+<td><em>The Gluon: An Octet Inside the Carrier's Group</em></td>
+<td><strong>renamed</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>All eight are done, and two of them went further than §12.6 planned.</strong> The plan's target for the hypercharge article and for the anomaly article both said <em>in Pati–Salam Model</em>; <strong>the author's ruling of 2026-11-21 removed the name from titles altogether</strong>, so the substitution is <em>in the Fourth-Colour Left–Right Model</em>. <strong>The Weinberg target was worse than a name problem</strong>: §12.6 kept <em>at the Pati–Salam Scale</em> and the unconditional $\tfrac38$, and after the strip $\tfrac38$ holds only under $g_R=g_L$. <strong>The title now carries the condition, and the article's status paragraph says which part of the statement the group fixes and which part is the equality.</strong></p>
+<p><strong>The two that must stay as they are, and the second is a prohibition rather than a preference.</strong></p>
+<ul>
+<li><em>The Electroweak Pair…: The Quotient and the Parity Lock</em> — <strong>the parity lock is a statement about $\mathrm{U}(2)$, the quotient, and the glue; it does not depend on which larger group contains the pair</strong>, so the title stays true.</li>
+<li><em>Grand Unification…: Where the Embedding Fails</em> — <strong>this article records the corpus's refusal to identify its own $\mathfrak{su}(4)$ with the Pati–Salam $\mathrm{SU}(4)_c$.</strong> §12.6 calls reversing that refusal quietly <strong>"the single worst outcome of this migration"</strong>, and it is right. <strong>The correct edit is the opposite of a reversal</strong>: the article gains a section stating the two readings — <strong>the identification is unavailable</strong>, and <strong>the identification is available once the fourth colour is declared to be the unit line</strong> — <strong>and says which reading the corpus now adopts and why.</strong> <strong>That sentence is the whole difference between declaring an assumption and claiming a derivation</strong>, and it belongs in the article that documented the absence.</li>
+</ul>
+<p><strong>And the menu, done on 2026-11-21.</strong> <code>physics.md</code> had four places that named the old model: three <code>###</code> headings and one opening sentence. <strong>The three headings are renamed</strong>, to <em>The Strong Interaction in the Fourth-Colour Left–Right Model</em>, <em>The Electroweak Interaction in the Fourth-Colour Left–Right Model</em> and <em>Electromagnetism in the Fourth-Colour Left–Right Model</em>; <strong>the same section name in the Dirac index — <code>### Electromagnetism in Pati–Salam Model</code> in <code>the-dirac-object-every-article-on-one-equation.md</code> — moved with them</strong>, since an index heading that names a menu section is a pointer and would otherwise point at nothing.</p>
+<p><strong>The opening sentence is deleted rather than rewritten, on the author's instruction that the menu carries no prose.</strong> It said the frame article is the first entry and the authority for the group, the sixteen, the chain and the declaration (A) — <strong>true, and it belongs in the frame article, which already says all four things in its own introduction.</strong> The menu is a list of links; <strong>a sentence in it is read as a claim about the list rather than about the physics, and it was the only prose paragraph in the whole particle section, which is why it drew the eye.</strong> <strong>Nothing is lost: the pointer was duplicated material.</strong></p>
+<p><strong>One consequence, stated because it is a real change to the page rather than a rename.</strong> The section names grew from four words to nine, and <strong>the three sections are the ones a reader scans in the sidebar</strong>, so the longer forms are now the most repeated strings in the navigation. <strong>If the length is wrong, the shorter form is <em>in the Fourth-Colour Model</em>, which drops <em>Left–Right</em> and keeps the model's other name.</strong></p>
+<p><strong>8.5 What must not change.</strong> Six statements, each of which survives the strip and each of which a careless migration would break:</p>
+<ul>
+<li><strong>the sixteen</strong>, and its reduction to the fifteen Standard Model fields plus $\nu_R$;</li>
+<li><strong>$\operatorname{tr}_{\mathbf4}(B-L)=0$</strong>, and hence $3q+\ell=0$;</li>
+<li><strong>the four anomaly rows and the Witten condition</strong>, all still satisfied;</li>
+<li><strong>$21$ generators, $9$ massless, $12$ massive</strong>;</li>
+<li><strong>dimension-nine proton decay</strong> with its $M^{-6}$ suppression;</li>
+<li><strong>the $K_L$–$K_S$ selection</strong>, which depends on chirality and not on any coupling value.</li>
+</ul>
+<p><strong>8.6 The forbidden sentences.</strong> Each of these has appeared in the corpus or would naturally appear in a careless edit.</p>
+<ul>
+<li>"Pati–Salam predicts $\sin^2\theta_W$." It did; this model does not.</li>
+<li>"The model has one coupling." It has three.</li>
+<li>"The strong, weak and electromagnetic interactions are unified." They are related, at one scale, through one factor.</li>
+<li>"The bound confirms the model." A null result is consistent with it and with many others.</li>
+<li>"The theory is excluded." Nothing here is excluded; the statement is that it is untested.</li>
+<li>"$\mathrm{SO}(10)$ completes it." That route is unavailable on the carrier, as the grand-unification article records.</li>
+<li>"$M_X$ is predicted." It is bounded below and otherwise free.</li>
+<li>"The scalar sector is derived." It is not derived: <strong>the sector is frame, the multiplet list is declaration.</strong></li>
+<li>"The model has no scalar sector." <strong>False.</strong> It has the frame's spin-0 sector, valued in the centre $\mathbb B_C$. What it lacks is a fixed multiplet list.</li>
+<li>"The model predicts $m_d=m_e$." It does not; that is a statement about one bidoublet.</li>
+<li>"The strip repairs the scalar sector." The strip does not touch it, <strong>and the sector needs no repair.</strong></li>
+<li>"The model is in tension with $m_d/m_e$." No multiplet is fixed, so no mass relation is asserted, so nothing is in tension.</li>
+<li>"The model is confirmed." <strong>No.</strong> Nothing is confirmed; the ledger says only that nothing is excluded (§3.5, §10).</li>
+<li>"The strip proves the model." It proves nothing; <strong>it shows that one failure was a consequence of an assumption</strong> (§11.2).</li>
+<li>"The model is false, because the unified version failed." <strong>A verdict does not transfer across a changed claim</strong> (§11.5).</li>
+</ul>
+<p><strong>8.7 The numbering defect, now resolved: §12.4 exists, six of its eleven were built, three merged, one missing.</strong> Four notes — <code>the-colour-wall-restated.md</code>, <code>the-anomaly-ledger-in-fourth-colour-form.md</code>, <code>the-photon-as-the-unbroken-mixture.md</code> and <code>charge-quantisation-from-the-fourth-colour.md</code> — describe themselves as <em>new article 6, 8, 9 and 10 of §12.4, phase 2</em>. <strong>An earlier draft of this note reported that no §12.4 exists and that the reference could not be resolved. That was wrong: §12.4 exists, in the reserve copy of the translation article (§7.4), and it is a numbered list of eleven new articles with their sections and phases.</strong></p>
+<p><strong>The four citations are exactly right.</strong> §12.4's rows 6, 8, 9 and 10 are <code>the-colour-wall-restated</code>, <code>the-anomaly-ledger-in-fourth-colour-form</code>, <code>the-photon-as-the-unbroken-mixture</code> and <code>charge-quantisation-from-the-fourth-colour</code>, all in section $4$ or $5$ or $3$, <strong>all phase $2$</strong>. <strong>The numbers resolve, the phases match, and the four notes were telling the truth.</strong></p>
+<p><strong>The eleven, and what became of each. This is the table that could not be written before the recovery.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>§12.4 slug, under its current name</th>
+<th>section</th>
+<th>phase</th>
+<th>built?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td><code>the-fourth-colour-as-the-unit-line</code></td>
+<td>$1$</td>
+<td>$0$</td>
+<td><strong>yes</strong>, as planned</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td><code>the-fourth-colour-left-right-model</code></td>
+<td>$1$</td>
+<td>$1$</td>
+<td><strong>yes</strong>, as the published frame article</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td><code>the-breaking-chain-in-pati-salam-form</code></td>
+<td>$2$</td>
+<td>$1$</td>
+<td><strong>merged</strong> into <code>the-breaking-chain-and-the-boson-spectrum</code></td>
+</tr>
+<tr>
+<td>$4$</td>
+<td><code>the-boson-spectrum-and-the-three-neutral-states</code></td>
+<td>$2$</td>
+<td>$1$</td>
+<td><strong>merged</strong>, with $3$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td><code>the-leptoquark-sector-and-its-bounds</code></td>
+<td>$3$</td>
+<td>$2$</td>
+<td><strong>merged</strong> into <code>the-scalar-sector-and-the-leptoquark-bounds</code></td>
+</tr>
+<tr>
+<td>$6$</td>
+<td><code>the-colour-wall-restated</code></td>
+<td>$3$</td>
+<td>$2$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$7$</td>
+<td><code>the-scalar-sector-and-the-bidoublet</code></td>
+<td>$4$</td>
+<td>$2$</td>
+<td><strong>merged</strong>, with $5$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td><code>the-anomaly-ledger-in-fourth-colour-form</code></td>
+<td>$4$</td>
+<td>$2$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$9$</td>
+<td><code>the-photon-as-the-unbroken-mixture</code></td>
+<td>$5$</td>
+<td>$2$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$10$</td>
+<td><code>charge-quantisation-from-the-fourth-colour</code></td>
+<td>$5$</td>
+<td>$2$</td>
+<td><strong>yes</strong></td>
+</tr>
+<tr>
+<td>$11$</td>
+<td><code>the-pati-salam-ledger</code></td>
+<td>$6$</td>
+<td>$3$</td>
+<td><strong>no — never written</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three rows carry a name the plan did not use or should not use.</strong> Row $2$ was <code>the-pati-salam-model-in-the-biquaternion-framework</code> and is <code>the-fourth-colour-left-right-model</code> since the rename of §8.4a; row $8$ was <code>the-anomaly-ledger-in-pati-salam-form</code> and is <code>the-anomaly-ledger-in-fourth-colour-form</code>; <strong>row $11$, <code>the-pati-salam-ledger</code>, was never written and if it is written it is <code>the-coupling-ledger</code></strong>, because the naming rule of §8.2 forbids the name in a filename. <strong>The plan's own name for the ledger article contained the model name the strip removes, which is the one place the plan and the title decision disagree.</strong></p>
+<p><strong>Six built, three merges, one missing.</strong> An earlier draft of this heading said <em>four</em>, counting only the rows a note cites by number; <strong>rows $1$ and $2$ were built too and are cited by name, not by number, so the count of built rows is six.</strong> The merges are defensible: $3+4$ is the chain and its spectrum in one file, $5+7$ is the leptoquarks and the scalar that produces them. <strong>The gap is not defensible and is the only real defect here: article $11$, the ledger hub, was scheduled for phase $3$ and does not exist.</strong> §12.4 called it "the hub: what changes, what does not, the two walls, the tiers" — <strong>which is precisely the job this note does for the stripped model, and the reason the gap has gone unnoticed: this note is standing in for it.</strong></p>
+<p><strong>What phase $0$ had to do, in order, and did on 2026-11-21.</strong></p>
+<ol>
+<li><strong>Restore the translation article</strong> from the reserve copy. <strong>This alone resolves all five citations and makes the §12.4 reference resolvable.</strong> <strong>Done</strong> (§7.4d), <strong>and the "two defects" this step used to name were one defect and one misreading</strong>: the filename divergence is real and is now recorded in §12.8 of the restored file; the "wrong number" was a wrong reading of a right number, and §7.4b records the retraction.</li>
+<li><strong>Re-issue §12.4 inside the restored file with the merge map above</strong>, so that a reader who follows a "new article 6" reference finds a list in which rows $3$, $4$, $5$ and $7$ are marked <em>merged</em>, and <strong>the numbering keeps its original meaning rather than being renumbered.</strong> Renumbering would break the four notes again, which is the mistake to avoid twice.</li>
+<li><strong>Decide the fate of article $11$.</strong> Either write it, or mark it withdrawn in the restored list with the reason — <strong>that this note now carries its function for the stripped model.</strong> <strong>A list that names an article which does not exist is the same defect one level up</strong>, and it is the defect the notes were already suffering from.</li>
+</ol>
+<p><strong>8.8 The order of work. Five phases, and the first is not an edit to the theory at all.</strong></p>
+<p><strong>Phase 0 — restore the translation article and re-issue its §12.4.</strong> <strong>This is now a definite action rather than a choice</strong>: the file is recoverable (§7.4), all five citations point at §4.1 and §4.2, which the recovered copy contains, and §12.4's numbering resolves the four "phase 2" notes exactly (§8.7). <strong>The step is: restore from <code>_reserve/</code>, repair the wrong $m_d/m_e$ and the stale filename plan (§7.4b), then re-issue §12.4 with the merge map and decide the fate of article $11$ (§8.7).</strong> <strong>This is a change from an earlier draft, which put them after the frame article, and the reason is simple: a migration that fixes the frame but leaves five dangling citations has not finished, and a reader who follows a dangling citation stops reading.</strong> <strong>Neither defect is blocked by any other decision</strong> — the file is in hand and the numbering is resolved — so there is no reason to defer them.</p>
+<ol>
+<li><strong>The frame article and the breaking chain.</strong> They are the authority; every other article quotes them. <strong>Do these two before the rest, or the others will be rewritten twice.</strong></li>
+<li><strong>The scalar article and the Weinberg-angle article</strong>, which carry the two withdrawn predictions in their titles and their ledgers.</li>
+<li><strong>Class B, then Class C</strong>, which are paragraph and sentence edits against the new authority.</li>
+<li><strong>The menu and the cross-references</strong>, last, because the headings should follow the articles rather than lead them.</li>
+</ol>
+<p><strong>8.9 The verification the migration must pass.</strong> Five checks, all mechanical.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>how</th>
+<th>pass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>formulas still parse</td>
+<td>the KaTeX checker, per file</td>
+<td>zero errors</td>
+</tr>
+<tr>
+<td>no unqualified "one coupling"</td>
+<td>search the sixteen enumerated in §8.4 for <em>one coupling</em>, <em>single coupling</em>, <em>unification</em></td>
+<td>every hit qualified</td>
+</tr>
+<tr>
+<td>no $\tfrac38$ as a prediction</td>
+<td>search for $\tfrac38$</td>
+<td>every hit conditional or historical</td>
+</tr>
+<tr>
+<td>every leptoquark bound carries $g_4$</td>
+<td>search for $M_X\gtrsim$</td>
+<td>the $g_4=g_3(M_C)$ tie stated</td>
+</tr>
+<tr>
+<td>no citation to a missing file</td>
+<td>resolve every <code>.html</code> link <strong>and</strong> every backticked <code>.md</code> path from the article's own folder</td>
+<td>all resolve</td>
+</tr>
+<tr>
+<td>the edge is never quoted bare</td>
+<td>search for $10^{6}$, $10^{7}$, and <em>edge</em></td>
+<td>every hit names $b_{B-L}$</td>
+</tr>
+<tr>
+<td>the $K_S$ rule is never coupling-dependent</td>
+<td>search for $K_S$ in the sixteen</td>
+<td>every hit states that the rule is chirality, not a coupling value</td>
+</tr>
+<tr>
+<td>the sixteen-count still holds</td>
+<td>rerun the three-pattern search of §8.4</td>
+<td>exactly $16$</td>
+</tr>
+<tr>
+<td>the site still builds to the same page count</td>
+<td><code>.venv/bin/python build.py</code>, which prints the sitemap count</td>
+<td><strong>$3138$ urls</strong>, the tree's baseline; a restore or a rename must not move it</td>
+</tr>
+<tr>
+<td>the restored file's five citations resolve</td>
+<td>open each of §7.4a's five from its own folder</td>
+<td>all five</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The build check is the corpus's own, not this note's.</strong> The recovered translation article's §13.7 lists eleven checks, and the eleventh is <em>"the article compiles and the site builds"</em> against a sitemap count: <em>"any other count means a page was added or lost, which is a migration failure."</em> <strong>The number it quotes, $3137$, is one behind the tree's own baseline of $3138$, and the difference is that the count moves whenever a served page is added — the recovered text was written before the last one.</strong></p>
+<p><strong>And a restoration does not move the count at all, which an earlier draft of this note got wrong.</strong> The internal collection is excluded from <code>sitemap_urls()</code> by name — <em>"The internal collection stays out: no menu links it, and it holds drafts"</em> — <strong>so restoring a note into <code>articles_internal/</code> adds a deployed page and no sitemap entry.</strong> <strong>An earlier draft said a clean restore should move the count by exactly one, and that expectation would have produced a false alarm on a correct restore.</strong> The check that actually detects a botched restore is the citation check on the row above it.</p>
+<p><strong>One of these fails today — the missing citation. The rest are guards against edits that have not been made yet</strong>, and the note was written against the files rather than against memory precisely because the one that fails was found that way.</p>
+<p><strong>The edge check, spelled out, because it is the easiest to fail silently.</strong> The bound $M_C/M_R\lesssim10^{6}$–$10^{7}$ is a function of $b_{B-L}$, and $b_{B-L}$ is fixed by the scalar content, <strong>which this model leaves open (§2.3)</strong>. So the number the note quotes is computed for $b_{B-L}=12$ — the value for the minimal Pati–Salam content — and <strong>it moves if the multiplet list moves</strong>. <strong>An article that quotes $10^{6}$ without saying "for $b_{B-L}=12$" has quoted a number whose premises it did not state</strong>, and the check is a search for that.</p>
+<p><strong>The $K_S$ check, and why it is on the list at all.</strong> The selection rule is the one surviving prediction that is not a coupling statement, so it is the most tempting place to overclaim. <strong>The charged-lepton article already gets this right</strong> — §3.4 says the prediction is "a statement about the operator's chirality rather than about a coupling value" — <strong>and the check exists so that a later edit cannot undo it.</strong></p>
+<h2 id="9-the-checks">9. The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the group's dimension</td>
+<td>$15+3+3$</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td>the sixteen reduces correctly</td>
+<td>$\mathbf4\to\mathbf3+\mathbf1$ under $\mathrm{SU}(3)$, then $Y=T_{3R}+\tfrac12(B-L)$</td>
+<td>the fifteen plus $\nu_R$</td>
+</tr>
+<tr>
+<td>the Standard Model is contained</td>
+<td>the two-step chain of §1.6</td>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ exactly</td>
+</tr>
+<tr>
+<td>no prediction of a mass ratio</td>
+<td>the sector is kept, the multiplet list is open (§1.5)</td>
+<td>none made, none violated</td>
+</tr>
+<tr>
+<td>$g_4=g_3$ at $M_C$</td>
+<td>$\mathrm{SU}(3)\subset\mathrm{SU}(4)$</td>
+<td>one relation, kept</td>
+</tr>
+<tr>
+<td>$g_{B-L}^2=\tfrac38g_4^2$</td>
+<td>$\operatorname{tr}(T^{15})^2=\tfrac12$, $B-L=\sqrt{8/3}\,T^{15}$</td>
+<td>holds</td>
+</tr>
+<tr>
+<td>a real $g_R$ exists</td>
+<td>$g_{B-L}(M_R)>\tfrac12g_Y(M_R)$</td>
+<td>yes across §3.2's table</td>
+</tr>
+<tr>
+<td>the measured couplings are reproduced</td>
+<td>matching at $M_R$ with $g_L$, $g_Y$ as measured</td>
+<td>exact by construction</td>
+</tr>
+<tr>
+<td>the edge of the region</td>
+<td>$M_C/M_R$ scan</td>
+<td>$7\times10^{4}$ to $8\times10^{6}$</td>
+</tr>
+<tr>
+<td>$g_R<g_L$</td>
+<td>six rows of §3.2</td>
+<td>$0.67$ to $0.94$</td>
+</tr>
+<tr>
+<td>$M_X/M_{W_R}$</td>
+<td>$\sqrt2\,g_4/g_R$</td>
+<td>$1.8$ to $2.9$</td>
+</tr>
+<tr>
+<td>the leptoquark floor</td>
+<td>$\mathcal B\propto g_4^4/M_X^4$ with $g_4=g_3(M_C)$</td>
+<td>$\gtrsim2\times10^{2}$ TeV, unchanged</td>
+</tr>
+<tr>
+<td>charge quantisation survives</td>
+<td>tracelessness, no coupling used</td>
+<td>survives</td>
+</tr>
+<tr>
+<td>the anomaly ledger survives</td>
+<td>content unchanged</td>
+<td>survives</td>
+</tr>
+<tr>
+<td>the $K_S$ selection survives</td>
+<td>chirality of the operator, no coupling used</td>
+<td>survives</td>
+</tr>
+<tr>
+<td>the confirmation ledger has no "excluded"</td>
+<td>§3.5, fourteen rows</td>
+<td>none</td>
+</tr>
+<tr>
+<td>the affected articles</td>
+<td>pattern search over the part's $124$</td>
+<td>$16$, partitioned $5+5+6$ with no overlap</td>
+</tr>
+<tr>
+<td>the missing translation file</td>
+<td>existence test</td>
+<td><strong>absent</strong>, cited by <strong>five</strong> notes (§7.4)</td>
+</tr>
+<tr>
+<td>the §12.4 numbering</td>
+<td>search of the recovered file</td>
+<td><strong>found</strong>: eleven rows, and four citations that resolve exactly (§8.7)</td>
+</tr>
+<tr>
+<td>the eleven new articles</td>
+<td>existence test, one by one</td>
+<td>six built, three pairs merged, <strong>one never written: <code>the-pati-salam-ledger</code></strong></td>
+</tr>
+<tr>
+<td>the rename question</td>
+<td>link count to the frame article's file</td>
+<td><strong>$158$ occurrences in $121$ files</strong>, so the rename is one <code>sed</code> pass plus two assertions (§8.4a)</td>
+</tr>
+<tr>
+<td>the rename is complete</td>
+<td><code>grep -r</code> for each of the five old stems</td>
+<td><strong>no output</strong> outside <code>build.py</code>'s alias column, and the build still prints $3138$</td>
+</tr>
+<tr>
+<td>the $K_S$ rule is coupling-free</td>
+<td>reading the charged-lepton article §3.4</td>
+<td>already stated correctly</td>
+</tr>
+<tr>
+<td>the edge's premise</td>
+<td>$b_{B-L}$ named wherever the bound appears</td>
+<td>named in §3.2 and §3.3</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="10-the-two-confirmations-stated-plainly">10. The Two Confirmations, Stated Plainly</h2>
+<p><strong>10.1 Does the model contain the Standard Model? Yes.</strong></p>
+<p>$$
+\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R
+\ \xrightarrow{M_C}\
+\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}
+\ \xrightarrow{M_R}\
+\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y ,
+$$</p>
+<p><strong>with $Y=T_{3R}+\tfrac12(B-L)$, and with the sixteen reducing to the fifteen Standard Model fields plus $\nu_R$ at the measured hypercharges.</strong> Below $M_R$ it <strong>is</strong> the Standard Model — same group, same fields, same Lagrangian — <strong>so it inherits every Standard Model success, and the limit $M_R\to\infty$ returns the Standard Model exactly.</strong> §1.6 is the proof.</p>
+<p><strong>10.2 Is it in contradiction with any experiment? No.</strong></p>
+<ul>
+<li><strong>The couplings are not predicted, so no coupling measurement can be wrong.</strong> Below $M_R$ they are the measured ones by construction; the matching at $M_R$ determines $g_R$, which nothing measures (§3.1–§3.2).</li>
+<li><strong>The charges are derived and correct.</strong> $\operatorname{tr}_{\mathbf4}(B-L)=0$ gives $3q+\ell=0$, hence $Q_p+Q_e=0$, confirmed to $10^{-21}$.</li>
+<li><strong>The anomalies cancel.</strong> Four rows and the Witten condition, on content that is unchanged.</li>
+<li><strong>The leptoquarks and $W_R$ are heavy and free.</strong> Their masses are floored, not fixed: $M_X\gtrsim2\times10^{2}$ TeV, $M_{W_R}\gtrsim$ a few TeV. <strong>A bound on a free parameter is a bound, not a refutation.</strong></li>
+<li><strong>Proton decay is dimension nine.</strong> $M^{-6}$, unobservably long, and not a conflict either way.</li>
+<li><strong>The multiplet content of the spin-0 sector is not fixed, so no mass relation is asserted</strong> and none can be violated (§1.5, §2.4). <strong>The spin-0 sector itself is the frame's — valued in $\mathbb B_C$ — and is kept.</strong></li>
+</ul>
+<p><strong>§3.5 is the full ledger, and the verdict column contains no entry reading <em>excluded</em>.</strong> <strong>The honest form of the statement is therefore: no measured number contradicts any claim the model makes — not "the model is confirmed", and not "the model is safe."</strong> The confirmations are of containment and of silence, and both are stated as what they are.</p>
+<p><strong>10.3 What the confirmation does not cover, in one list.</strong></p>
+<ul>
+<li><strong>It does not confirm the group.</strong> $\mathrm{SU}(4)$ is declared; the algebra supports the module, not the identification with the quark–lepton quartet.</li>
+<li><strong>It does not confirm the leptoquarks.</strong> They are permitted and heavy; nothing has seen them.</li>
+<li><strong>It does not confirm the two scales.</strong> Both are free above their floors.</li>
+<li><strong>It does not confirm the fourth colour's physical reality.</strong> It confirms only that the fourth colour costs nothing measurable.</li>
+</ul>
+<h2 id="11-is-the-strip-legitimate">11. Is the Strip Legitimate?</h2>
+<p><strong>The question the whole note rests on, asked directly: is it legitimate to drop an assumption because the data exclude it?</strong></p>
+<p><strong>11.1 The answer, and the five reasons.</strong> Yes, and the reasons are checkable rather than rhetorical.</p>
+<p><strong>The strongest reason was already in the corpus's own words, and this note did not use it until the translation article was recovered.</strong> Its §5 writes the boundary condition as</p>
+<p>$$
+g_3(M_{PS})=g_4(M_{PS}),\qquad g_L(M_{PS})=g_R(M_{PS})\equiv g_4(M_{PS})\quad\text{(if parity is imposed)},
+$$</p>
+<p><strong>and its own summary of the collapse is "two, or to one", in that order, with the parity equality flagged.</strong> <strong>So the corpus did not assert the equality of $g_L$ and $g_R$ as a result; it asserted it conditionally on imposing parity.</strong> <strong>The strip is therefore not the deletion of a derived claim. It is the refusal to impose parity</strong> — a choice the corpus had already flagged as a choice, in a parenthesis and in a table row. <strong>A conditional that is not imposed leaves no unmet prediction behind, which is why the strip removes a failure rather than an embarrassment.</strong></p>
+<p><strong>The remaining four reasons:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reason</th>
+<th>the check</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>the equality was conditional on parity, and parity is not imposed here</strong></td>
+<td>the recovered translation article §5: <em>"the four couplings collapse to two, or to one"</em>, with $g_L=g_R$ written <strong>"(if parity is imposed)"</strong></td>
+</tr>
+<tr>
+<td><strong>the failure was created by the assumption, not by the group</strong></td>
+<td>the group, the sixteen, the charges, the anomalies and the boson count are untouched by the strip (§2.6, rows 1–7)</td>
+</tr>
+<tr>
+<td><strong>the assumption was never derived from the algebra</strong></td>
+<td>it was <em>assumed</em>, and the frame article's own factor table says so; the corpus tested it "only by the consequence $\sin^2\theta_W=\tfrac38$"</td>
+</tr>
+<tr>
+<td><strong>what remains is still a statement about nature</strong></td>
+<td>one tie survives, $g_4=g_3(M_C)$, from $\mathrm{SU}(3)\subset\mathrm{SU}(4)$ — so the model is not a relabelling of the Standard Model</td>
+</tr>
+<tr>
+<td><strong>the remaining failure is colour, not the angle</strong></td>
+<td>§2.5: at $10^{13}$ GeV the angle reaches $\tfrac38$ and $\alpha_3^{-1}$ is $13\%$ short</td>
+</tr>
+<tr>
+<td><strong>the model still contains the Standard Model</strong></td>
+<td>proved in §1.6, with $M_R\to\infty$ returning it exactly</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>11.2 What the strip is not.</strong> It is not a way to keep a dead model alive by deleting whatever killed it, and the distinction is the one that decides the case.</p>
+<ul>
+<li><strong>It removes one assumption.</strong> Not a prediction that failed, not a measurement, not a structural result.</li>
+<li><strong>It does not touch the scalar sector</strong> (§2.2), the anomalies, the charges, or the leptoquark content.</li>
+<li><strong>It does not claim the model is right.</strong> §3.5's ledger says no measurement contradicts it, and §10 says plainly that this is not confirmation.</li>
+</ul>
+<p><strong>A theory that retreats from a claim each time it is tested and never gives anything up is not legitimate.</strong> <strong>The test is whether the retreat costs something, and here it does: the model loses its only sharp electroweak prediction and its claim to unification.</strong> That is a real price, and §6.2 lists it.</p>
+<p><strong>11.3 The alternative, stated fairly, because it is also defensible.</strong> Keep $g_4=g_L=g_R$ and <strong>admit that the unified version is falsified</strong> by the coupling triple. <strong>That position has the merit of a theory that made a prediction and lost</strong>, and a reader who prefers it is not being unreasonable.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the strip</th>
+<th>keep the equality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the coupling failure</td>
+<td>removed with the assumption</td>
+<td><strong>admitted</strong>: the unified version is excluded</td>
+</tr>
+<tr>
+<td>what survives</td>
+<td>the group, the content, the charges, the anomalies, the leptoquarks, the $K_S$ rule</td>
+<td>the same, <strong>and</strong> the $\tfrac38$ prediction that failed</td>
+</tr>
+<tr>
+<td>the cost</td>
+<td>no sharp electroweak prediction, no unification claim</td>
+<td>a falsified model, kept as falsified</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The note takes the first column, and the reason is narrow: the structural content the corpus actually derives — charge quantisation from $\mathrm{SU}(4)$, the anomaly ledger, the fourth colour as the unit line — does not depend on the equality.</strong> <strong>Losing the equality costs a prediction; losing the group would cost the derivations.</strong> The strip keeps the second and drops the first, which is the right way round.</p>
+<p><strong>11.4 What would settle it.</strong> Not a measurement, because §3.7 shows every remaining quantity is a bound on a free parameter. <strong>What would settle it is a derivation</strong>: a reason, from the algebra or from the carrier, why $g_R$ should equal $g_L$ at some scale — or a reason why it should not. <strong>The corpus has neither</strong>, and until it does, the strip is a choice between two defensible positions rather than a consequence.</p>
+<p><strong>11.5 The sentence that must not be written on either side.</strong> Not "the strip proves the model", and not "the model is false because the unified version failed." <strong>The first overclaims a retreat as a success; the second transfers a verdict across a changed claim.</strong> Both are errors of the same kind, and §8.6's forbidden list exists to catch them.</p>
+<h2 id="12-the-synchronised-variant-adding-the-equality-back-at-a-higher-scale">12. The Synchronised Variant: Adding the Equality Back at a Higher Scale</h2>
+<p><strong>The proposal, stated fairly, because it deserves that.</strong> Keep everything in §1 and add a third scale: three scales $M_{PS}>M_C>M_R$, with $g_4=g_L=g_R$ imposed <strong>at $M_{PS}$</strong> and nothing changed below. <strong>The unified Pati–Salam model is then the special case $M_{PS}=M_C=M_R$, and the strip is the case where the condition is dropped entirely.</strong> Between the two there is this third thing, and the argument for it is real: <strong>the extra segment changes the running, so the couplings that failed to meet in one step might meet in three.</strong></p>
+<p><strong>This section computes it. The answer is that the variant is not empty, and that it is not a repair either — and the reason is structural, not numerical.</strong></p>
+<p><strong>12.1 The count, before any running.</strong> Two conditions are imposed — $g_L(M_{PS})=g_R(M_{PS})$ and $g_4(M_{PS})=g_L(M_{PS})$ — on three scales. <strong>Two equations with three unknowns is a curve, not a point.</strong> So the question "is it empty?" is the wrong first question; generically it is not. <strong>The right question is what a curve is worth: a curve means a free parameter, and a free parameter means nothing is predicted.</strong> The computation below decides whether the curve is real and where it lives.</p>
+<p><strong>12.2 The obstruction, and it can be seen before any number is run.</strong> Above $M_R$ the field content is parity-symmetric: $(\mathbf4,\mathbf2,\mathbf1)$ and $(\bar{\mathbf4},\mathbf1,\mathbf2)$, $(\mathbf1,\mathbf2,\mathbf1)$ and $(\mathbf1,\mathbf1,\mathbf2)$, and a bidoublet $(\mathbf1,\mathbf2,\mathbf2)$. <strong>Each $\mathrm{SU}(2)_L$ multiplet has an $\mathrm{SU}(2)_R$ partner of the same dimension, so the two beta coefficients are equal as a matter of symmetry, not of choice:</strong></p>
+<p>$$
+c_{2L}=c_{2R}.
+$$</p>
+<p><strong>Equal coefficients mean the difference of the inverse couplings is frozen</strong>, because running both from $M_R$ to $M_{PS}$ adds the same amount to each:</p>
+<p>$$
+\frac{1}{\alpha_L(M_{PS})}-\frac{1}{\alpha_R(M_{PS})}=\frac{1}{\alpha_L(M_R)}-\frac{1}{\alpha_R(M_R)}.
+$$</p>
+<p><strong>So the second condition is not a condition at $M_{PS}$ at all. It is a condition at $M_R$.</strong> The three-scale construction collapses to one equation, fixed at the lower end, and the third scale buys nothing for it:</p>
+<p>$$
+g_L(M_{PS})=g_R(M_{PS})\iff g_L(M_R)=g_R(M_R).
+$$</p>
+<p><strong>This is what the "the extra running gives colour more room" argument misses.</strong> The extra running does give colour more room — §12.5 shows exactly how much — <strong>but it does nothing whatever to $g_R$ relative to $g_L$, because parity makes their running identical.</strong> The obstruction is not colour.</p>
+<p><strong>12.3 The condition, evaluated.</strong> Hypercharge is the mixture $Y=T_{3R}+\tfrac12(B-L)$, so at $M_R$</p>
+<p>$$
+\frac{1}{\alpha_Y}=\frac{1}{\alpha_R}+\frac{1}{4\alpha_{B-L}},
+$$</p>
+<p>and $g_R=g_L$ requires $1/\alpha_R=1/\alpha_L$. <strong>Running the measured couplings up with the one-loop coefficients $c=(-41/10,\,19/6,\,7)$ for $(\mathrm U(1)_Y,\mathrm{SU}(2)_L,\mathrm{SU}(3))$, $c_{B-L}=-12$ and $c_4=32/3$:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M_C$</th>
+<th>$g_R/g_L$ at $M_R=M_C$</th>
+<th>at $M_R=M_C/10$</th>
+<th>at $M_C/100$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$250$ TeV</td>
+<td>$0.641$</td>
+<td>$0.628$</td>
+<td>$0.617$</td>
+</tr>
+<tr>
+<td>$10^{3}$ TeV</td>
+<td>$0.656$</td>
+<td>$0.643$</td>
+<td>$0.632$</td>
+</tr>
+<tr>
+<td>$10^{6}$ TeV</td>
+<td>$0.734$</td>
+<td>$0.721$</td>
+<td>$0.710$</td>
+</tr>
+<tr>
+<td>$10^{9}$ TeV</td>
+<td>$0.826$</td>
+<td>$0.813$</td>
+<td>$0.802$</td>
+</tr>
+<tr>
+<td>$10^{12}$ TeV</td>
+<td>$0.938$</td>
+<td>$0.925$</td>
+<td>$0.914$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>In the region the strip actually lives in — $M_C$ a few hundred TeV to a few thousand — $g_R$ comes out 27 to 38 per cent below $g_L$, and the ratio falls as $M_R$ moves down.</strong> The ratio is largest at $M_R=M_C$, so that is the most favourable point, and even there it is $0.64$.</p>
+<p><strong>The deficit does not close by running because it cannot close by running</strong>: the freeze of §12.2 means the only thing that could close it is starting closed.</p>
+<p><strong>12.4 Where it does close, and what happens there.</strong> The deficit is logarithmic, so it does close eventually. <strong>It closes at</strong></p>
+<p>$$
+M_C\simeq2.5\times10^{13}\ \text{TeV}\;=\;2.5\times10^{16}\ \text{GeV},
+$$</p>
+<p>and there, with $M_R=M_C$, the numbers are $1/\alpha_L=1/\alpha_R=46.3$, $1/\alpha_4=45.5$ at $M_C$ and $1/\alpha_Y=76.6$ — <strong>so the first condition is met exactly and the second is met a factor $2$ higher in energy</strong>, at $M_{PS}\simeq2M_C$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value at the meeting point</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_C=M_R$</td>
+<td>$2.5\times10^{13}$ TeV</td>
+</tr>
+<tr>
+<td>$M_{PS}$</td>
+<td>$5\times10^{13}$ TeV</td>
+</tr>
+<tr>
+<td>$1/\alpha_4=1/\alpha_L=1/\alpha_R$</td>
+<td>$46.7$</td>
+</tr>
+<tr>
+<td>running the couplings back down</td>
+<td>$29.57$, $98.33$, $8.47$ at $M_Z$</td>
+</tr>
+<tr>
+<td>measured</td>
+<td>$29.57$, $98.33$, $8.47$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last two rows are equal because they must be</strong>: $g_R$ was not predicted, it was solved from the matching. <strong>So this is not a success of the variant. It is the variant's own definition returning the input.</strong></p>
+<p><strong>12.5 What the extra running does buy, stated precisely.</strong> The colour half of the hope is real. <strong>Drop $g_R$ from the condition and require only $g_4(M_{PS})=g_L(M_{PS})$: a meeting exists for every $M_C$, because $c_4=32/3$ and $c_2=19/6$ differ.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M_C$</th>
+<th>$M_{PS}$ where $g_4=g_L$</th>
+<th>$M_{PS}/M_C$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$250$ TeV</td>
+<td>$2.1\times10^{8}$ TeV</td>
+<td>$8.4\times10^{5}$</td>
+</tr>
+<tr>
+<td>$10^{6}$ TeV</td>
+<td>$1.2\times10^{10}$ TeV</td>
+<td>$1.2\times10^{4}$</td>
+</tr>
+<tr>
+<td>$10^{12}$ TeV</td>
+<td>$1.0\times10^{13}$ TeV</td>
+<td>$10$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Colour does arrive on time, at a scale set by the choice of $M_C$ — and that last clause is the whole trouble.</strong> A meeting whose scale is a free function of a free parameter is a meeting that predicts nothing. <strong>The "colour was late" diagnosis of §2.5 is therefore correct about the one-scale model and irrelevant to the three-scale one</strong>: with a third scale, colour is never late, and nothing is ever early either.</p>
+<p><strong>12.6 What would rescue it, and the price, in numbers.</strong> The freeze of §12.2 is what blocks it, and the freeze is broken only by breaking parity above $M_R$. <strong>Then the gap can run, but it has to run a long way.</strong> At $M_C=250$ TeV and $M_R=25$ TeV the gap is $49.6$ in $1/\alpha$ and there are $15.9$ e-folds to the colour meeting, so the required asymmetry is</p>
+<p>$$
+\Delta c_2\simeq-2\pi\frac{49.6}{15.9}\simeq-20 .
+$$</p>
+<p><strong>A single Weyl doublet moves $c_2$ by $1/3$, so this asks for about sixty more $\mathrm{SU}(2)_L$ doublets than $\mathrm{SU}(2)_R$ doublets above $M_R$.</strong> That is not a threshold-correction-sized asymmetry; it is a different theory, and one with no reason behind the number sixty. <strong>Parity restoration is supposed to be the point of a left–right model, and this variant can only work by giving it up above $M_R$ — which is where it would be most natural.</strong></p>
+<p><strong>12.7 The verdict, in four sentences.</strong></p>
+<ul>
+<li><strong>Not empty.</strong> A solution exists, at $M_C\simeq M_R\simeq2.5\times10^{13}$ TeV and $M_{PS}\simeq5\times10^{13}$ TeV.</li>
+<li><strong>Not a repair.</strong> At that solution $g_R$ is fitted, not predicted, so the agreement at $M_Z$ is the input coming back; and $\tfrac38$ holds at $10^{16}$ GeV, which is eleven orders of magnitude above the leptoquark floor and unobservable in every way §3.7 counts.</li>
+<li><strong>Obstructed by the wrong coupling.</strong> The hope was that extra running fixes colour. It does — $g_4$ meets $g_L$ at every $M_C$ — but the meeting that fails is $g_R=g_L$, and parity freezes it above $M_R$.</li>
+<li><strong>One free parameter, zero predictions.</strong> The solution is a curve indexed by $M_C\ge2.5\times10^{13}$ TeV. <strong>A curve is freedom, and freedom spent on a scale is freedom not spent on a number.</strong></li>
+</ul>
+<p><strong>12.8 The sentence that must not be written.</strong> Not "the synchronised model unifies and reproduces the data" — it reproduces the data because $g_R$ is solved from them. <strong>The honest sentence is the shorter one: adding a third scale does not restore a prediction, because the third scale is what absorbs the mismatch.</strong> <strong>The strip is not a stepping stone to this variant. It is the variant with the free parameter left visible.</strong></p>
+<p><strong>12.9 The caveat that applies to every number here.</strong> These are one-loop estimates with the coefficients stated in §12.3, on minimal content with $b_{B-L}=12$. <strong>Two of them would move under a different content: the crossing scale of §12.4 and the meeting scales of §12.5.</strong> <strong>The conclusion does not move, because it rests on the freeze of §12.2 — an equality of beta coefficients forced by parity, not a numerical coincidence — and on the sign of the gap, which is $-27\%$ to $-38\%$ and would have to reverse.</strong> <strong>What a two-loop or threshold-corrected computation could change is where the curve lives, not whether it is a curve.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The model.</strong> $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, three independent couplings, two scales, <strong>and a spin-0 sector kept whole whose multiplet list is left open.</strong> <strong>The group, the sixteen, charge quantisation, the anomalies, the boson count, the leptoquarks and the $K_S$ rule are unchanged.</strong></p>
+<p><strong>One strip, not two.</strong> Dropping $g_4=g_L=g_R$ removes the coupling failure, and that is the entirety of what is removed. <strong>The spin-0 sector is not touched at all</strong>: it is the frame's — valued in the centre $\mathbb B_C$, a line in the state module — and it stays exactly as the corpus states it. <strong>What is left open is the multiplet list</strong>, which is a declaration on top of the sector and not a consequence of the fourth colour. <strong>A migration that deletes the scalar sector has destroyed a corpus result; a migration that adds a multiplet list has added a claim the model does not make.</strong></p>
+<p><strong>It contains the Standard Model, and that is proved rather than asserted.</strong> The chain to $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ is exact, the sixteen reduces to the fifteen plus $\nu_R$, and below $M_R$ it is the Standard Model. <strong>Every measurement the Standard Model passes, this model passes, and the $M_R\to\infty$ limit returns the Standard Model.</strong></p>
+<p><strong>It cannot contradict experiment, and the reason is structural.</strong> The three measured couplings are reproduced by construction, with $g_R$ absorbing the difference; every other number is a bound on a free parameter or a structural fact already holding. <strong>A solution exists for $M_C/M_R$ from unity to about $10^{6}$–$10^{7}$; the edge is the reality of $g_R$, not a measurement.</strong></p>
+<p><strong>What it costs.</strong> No prediction of $\sin^2\theta_W$, no mass relation, no unification, and therefore nothing that could confirm it.</p>
+<p><strong>And the number that looks like a prediction is not one, stated here because the summary is where it would be misread.</strong> <strong>$g_R/g_L$ comes out between $0.67$ and $0.94$, and that is an output, not a test.</strong> It is fixed once $(M_C,M_R)$ are chosen — which is the opposite of a prediction. <strong>What a prediction would look like is a number fixed without choosing anything</strong>, and the model has none. <strong>So the honest count of testable consequences is zero</strong>, and the honest count of confirmed structural facts is four: charge quantisation, the content, the anomalies, and the boson count.</p>
+<p><strong>Three bookkeeping matters, all closed now that the deleted file has been recovered.</strong> The missing translation article <strong>is not lost</strong> — a full copy sits in <code>_reserve/</code> — and <strong>it is restored</strong>: $948$ formulas, $0$ errors, and <strong>all five</strong> citations resolve at once, because each expects §4.1 or §4.2 and both are in the recovered text (§7.4, §7.4d). <strong>The §12.4 numbering resolves too</strong>: the list exists, six articles were built as planned, three pairs were merged, and <strong>one — the ledger hub — never was</strong> (§8.7). <strong>Filenames are renamed</strong>, on the author's instruction and against the recovered file's own <em>"the slug never moves"</em>: <strong>six files, $196$ link occurrences rewritten in one pass, six old URLs kept alive as aliases, and a build that still prints $3138$ urls</strong> (§8.4a). <strong>The frame article took the filename this note used to hold, so this note moved first — to <code>internal-note-the-fourth-colour-left-right-model.md</code>.</strong></p>
+<p><strong>The judgement, in one line.</strong> The corpus works under one model and one only — the Fourth-Colour Left–Right Model — and Pati–Salam is a <strong>special coupling case</strong> of it, the case $g_4=g_L=g_R$, which the data exclude. <strong>It contains the Standard Model, cannot contradict experiment, and cannot be confirmed either. That is a better position than the unified version had, and a worse one than the unified version claimed</strong> — and §11 argues why taking it is legitimate rather than convenient.</p>
+<h2 id="810-the-coupling-article-and-the-status-note-it-absorbed">8.10 The Coupling Article, and the Status Note It Absorbed</h2>
+<p><strong>The long article on the coupling sector now exists</strong>: <code>the-coupling-sector-of-the-fourth-colour-model.md</code>. It states the three open items — $g_R$ as an output, the parity freeze above $M_C$, and the reality condition on $g_R$ — and it is the only place in the corpus where those three are computed rather than asserted.</p>
+<p><strong>The earlier status note is deleted, and several of its numbers are corrected rather than carried across.</strong> <code>articles_internal/</code> is not under version control, so the deletion is final; the old URL now serves the new article through <code>LEGACY_COPIES</code>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>status note</th>
+<th>the coupling article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha_2^{-1}$ at $250$ TeV</td>
+<td>$13.3$</td>
+<td>$33.6$</td>
+</tr>
+<tr>
+<td>$\alpha_1^{-1}$ at $250$ TeV</td>
+<td>$22.5$</td>
+<td>$53.8$</td>
+</tr>
+<tr>
+<td>$\alpha_{\mathrm{em}}^{-1}$ at $250$ TeV</td>
+<td>$51$</td>
+<td>$123$</td>
+</tr>
+<tr>
+<td>$g_{B-L}$ at $100$ TeV</td>
+<td>$0.429$</td>
+<td>$0.512$</td>
+</tr>
+<tr>
+<td>$g_R/g_L$</td>
+<td>$0.67$–$0.94$</td>
+<td>$0.62$–$0.73$</td>
+</tr>
+<tr>
+<td>$M_X/M_{W_R}$</td>
+<td>$1.8$–$2.9$</td>
+<td>$2.2$–$3.1$</td>
+</tr>
+<tr>
+<td>the reality ceiling at $b_{B-L}=12$</td>
+<td>$10^{6}$–$10^{7}$</td>
+<td>none; the ceiling needs $b_{B-L}>4b_Y\approx27$</td>
+</tr>
+<tr>
+<td>the $g_R=g_L$ crossing</td>
+<td>$2.5\times10^{13}$ TeV</td>
+<td>$5\times10^{13}$ TeV</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The cause of the first four is a running table that ran $\alpha_1^{-1}$ and $\alpha_2^{-1}$ downwards</strong>, as if both were non-asymptotically-free; both rise. <strong>The cause of the seventh and eighth is a beta coefficient applied in the wrong normalisation</strong> — $b_1$ with the un-normalised $\alpha_Y^{-1}$ — and a $g_{B-L}$ column that implies $b_{B-L}\approx150$ while its caption says $12$.</p>
+<p><strong>No verdict moves.</strong> The coupling triple fails for Pati–Salam, the strip removes the failure, $g_R$ remains an output, and a third scale does not restore the equality. <strong>What changes is the sharpness of the statement about the third item: the reality of $g_R$ is a condition on the content, not a bound on the scales.</strong></p>
+<p><strong>What the note carried is not lost.</strong> The seventeen-row inventory is the inventory of §7 of the new article, the patch menu is its §8, and the comparison against the Standard Model is its §9.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

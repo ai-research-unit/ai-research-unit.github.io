@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement — Biquaternion Universe</title>
+  <meta name="description" content="Every coupling statement in this category is in this article, and nowhere else. That is a rule of the corpus, not a remark about this page. The rest of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-one-coupling-that-returns-the-standard-model-one-equation-one-scale-one-content-statement"><strong>The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Every coupling statement in this category is in this article, and nowhere else.</strong> That is a rule of the corpus, not a remark about this page. The rest of the particle category states the group, the carrier, the matter content, the charges, the anomalies, the boson count and the geometry. <strong>It states no coupling value, no boundary condition at a scale, no running, no matching, and no ratio called exact.</strong> Those live here, in one flagged place, so that a reader who wants the algebra is never handed a number and a reader who wants the number knows where the corpus keeps it.</p>
+<p><strong>The coupling that returns the Standard Model is a single equation.</strong> It is the matching of hypercharge to the two abelian factors above it:</p>
+<p>$$
+\boxed{\;\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}\quad\text{at }M_R\;}
+$$</p>
+<p><strong>One equation, and it is enough to recover the Standard Model's three measured couplings.</strong> That is the claim of this article, and it is arithmetic rather than a hope.</p>
+<p><strong>Three declarations are needed, not one.</strong> The equation is the first. <strong>The second is a scale</strong>, $M_R$, at which the equation is imposed. <strong>The third is a content statement</strong>: below $M_R$ the matter is exactly the Standard Model's, three generations with one doublet. <strong>An equation without a scale is not a statement, and a scale without content is not a prediction.</strong> The three are listed together because two of them alone prove nothing.</p>
+<h2 id="1-what-returns-the-standard-model-means">1. What "Returns the Standard Model" Means</h2>
+<p><strong>It means one thing, and it is worth separating from two things it does not mean.</strong></p>
+<p><strong>1.1 It is a recovery, not a derivation.</strong> Below $M_R$ the group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, the fields are the Standard Model's, and the couplings are the measured ones. <strong>The recovery says: given the group above, the measured numbers below are mutually consistent at one scale, through one relation.</strong> It does not say why the numbers have the values they have.</p>
+<p><strong>1.2 It fixes no number by itself.</strong> The equation has two unknowns, $g_R$ and $g_{B-L}$, against one measured $g_Y$, and one further relation above supplies the second: the normalisation</p>
+<p>$$
+g_{B-L}^2=\tfrac38\,g_4^2\quad\text{at }M_C ,
+$$</p>
+<p><strong>which is a trace identity, $\operatorname{tr}(T^{15})^2=\tfrac12$, and not a dynamical statement.</strong> With that identity in place the system closes, and what comes out is a value for $g_R$.</p>
+<p><strong>1.3 It is therefore a consistency statement with one output.</strong> The output is $g_R$, and §3 shows that the output is a function of the scale rather than a number the theory fixes. <strong>That is the honest description, and it is the reason the coupling is kept in one place: a value that moves with a choice must not be quoted as though it were a prediction.</strong></p>
+<h2 id="2-the-arithmetic-which-is-exact">2. The Arithmetic, Which Is Exact</h2>
+<p><strong>Three steps, each one an identity, and the third is the number every article on the electroweak sector quotes.</strong></p>
+<p><strong>2.1 At the first threshold.</strong> The $\mathrm{SU}(4)$ coupling is one, and the $B-L$ field is the fifteenth Cartan:</p>
+<p>$$
+g_3=g_4,\qquad g_{B-L}^2=\tfrac38g_4^2 .
+$$</p>
+<p><strong>2.2 At the second threshold.</strong> Hypercharge is the combination $Y=T_{3R}+\tfrac12(B-L)$, so its field is a mixture and its coupling is the harmonic sum, with the coefficient $\tfrac12$ squared:</p>
+<p>$$
+\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2} .
+$$</p>
+<p><strong>2.3 Composed, and the number that follows.</strong> Put $g_R=g_4$ and $g_{B-L}^2=\tfrac38g_4^2$ into the sum:</p>
+<p>$$
+\frac{1}{g_Y^2}=\frac{1}{g_4^2}+\frac{1}{4\cdot\tfrac38g_4^2}
+=\frac{1}{g_4^2}+\frac{2}{3g_4^2}=\frac{5}{3g_4^2}
+\;\;\Longrightarrow\;\;
+g_Y^2=\tfrac35g_4^2 .
+$$</p>
+<p><strong>The three denominators are $1$, $1$ and $\tfrac23$, and their sum $\tfrac83$ is why the answer is $\tfrac38$.</strong> Every appearance of $\tfrac38$ in this subject traces back to that addition. <strong>The photon's coupling is then the same sum with $g_L$ in place of $g_R$.</strong></p>
+<p>$$
+\frac{1}{e^2}=\frac{1}{g_L^2}+\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}
+=\frac{1}{g_4^2}\left(1+1+\frac23\right)=\frac{8}{3g_4^2}
+\;\;\Longrightarrow\;\;
+e^2=\tfrac38g_4^2 ,
+$$</p>
+<p><strong>so that</strong></p>
+<p>$$
+\sin^2\theta_W(M_{U})=\frac{e^2}{g_L^2}=\frac38 .
+$$</p>
+<p><strong>2.4 The same composition from the generator algebra, as a check.</strong> Write $Y=q\,T^{15}+t\,T_{3R}$ and read the coefficients off the charges. <strong>The expansion gives the identical sum, and it must</strong>: the first route uses the normalisation of a generator, the second uses its expansion, and a framework in which they disagreed would have a wrong normalisation somewhere.</p>
+<p>$$
+\frac{1}{g_Y^2}=\frac{q^2}{g_4^2}+\frac{1}{g_R^2}
+=\frac{2/3}{g_4^2}+\frac{1}{g_4^2}=\frac{5}{3g_4^2} .
+$$</p>
+<p><strong>That check is the whole of the corpus's claim in the gauge sector, and it is the reason this section exists.</strong> The number $\tfrac38$ is not a measurement and not a guess. <strong>It is the trace normalisation of one Cartan generator, added to one.</strong></p>
+<h2 id="3-the-one-scale-and-what-it-costs">3. The One Scale, and What It Costs</h2>
+<p><strong>The equation is imposed at a scale, and the scale is free.</strong> That single sentence is the price of the recovery, and it must be stated before the numbers, not after them.</p>
+<p><strong>3.1 The scale is bounded from below by one decay and from above by nothing.</strong> $K_L\to\mu e$ limits the leptoquark mass, and the leptoquark mass is set by the same vacuum that sets $M_X$:</p>
+<p>$$
+M_X^2=\tfrac12\,g_4^2\,v_R^2,\qquad M_{W_R}^2=\tfrac14\,g_R^2\,v_R^2,
+$$</p>
+<p><strong>so that</strong></p>
+<p>$$
+\frac{M_X}{M_{W_R}}=\sqrt2\,\frac{g_4}{g_R} .
+$$</p>
+<p><strong>The $\sqrt2$ is structural and survives every scale.</strong> The factor $g_4/g_R$ is not one in general, and that is the first place where the recovery shows its cost: <strong>a ratio that the group fixes at $\sqrt2$ is multiplied by a ratio the vacuum does not fix.</strong></p>
+<p><strong>3.2 The output is a value of $g_R$, and it moves.</strong> Solving the matching equation at a chosen pair of scales gives</p>
+<p>$$
+\frac{1}{g_R^2}=\frac{1}{g_Y^2(M_R)}-\frac{1}{4\,g_{B-L}^2(M_R)},
+$$</p>
+<p><strong>and the solution exists only while the bracket is positive.</strong> Two consequences follow at once, and both belong to this section rather than to the articles that used to carry them:</p>
+<ul>
+<li><strong>$g_R$ comes out below $g_L$</strong>, between $0.62$ and $0.73$ of it over the admissible region, <strong>so the fourth colour's right-handed sector is weaker than its left-handed one at the threshold.</strong></li>
+<li><strong>The ratio $M_X/M_{W_R}$ lies between $2.2$ and $3.1$</strong>, not at $\sqrt2$, <strong>and a leptoquark floor of $2\times10^{2}$ TeV therefore corresponds to a $W_R$ floor of $70$ to $90$ TeV rather than to $160$.</strong></li>
+</ul>
+<p><strong>3.3 The cost, stated as one sentence.</strong> The recovery reproduces $\alpha_{\mathrm{em}}$, $\alpha_s$ and $\sin^2\theta_W$ at $M_Z$ exactly and for any admissible pair of scales, because each is built from those three numbers at $M_Z$ and run up. <strong>A statement that reproduces its own inputs is a consistency condition, and a consistency condition confirms nothing.</strong></p>
+<h3 id="34-the-one-bound-that-a-coupling-produces-and-the-one-place-it-bites">3.4 The one bound that a coupling produces, and the one place it bites</h3>
+<p><strong>Above the $W_R$ floor, the model's single contact with a measurement is $K_L\to\mu e$.</strong> The operator is $g_4^2/(2M_X^2)$ times a hadronic matrix element, the rate scales as $M_X^{-4}$, and the coupling is fixed by the first matching relation $g_3=g_4$ at $M_C$:</p>
+<p>$$
+g_4^2=4\pi\,\alpha_s(M_X),\qquad
+\Gamma(K_L\to\mu e)=\frac{g_4^{4}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
+$$</p>
+<p><strong>Three rows are enough to show the shape, and the shape is sharp.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M_X$</th>
+<th>$g_4^2$</th>
+<th>$\mathcal B(K_L\to\mu e)$</th>
+<th>against $4.7\times10^{-12}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$200$ TeV</td>
+<td>$0.736$</td>
+<td>$8.9\times10^{-12}$</td>
+<td>excluded</td>
+</tr>
+<tr>
+<td>$233$ TeV</td>
+<td>$0.730$</td>
+<td>$4.7\times10^{-12}$</td>
+<td>at the limit</td>
+</tr>
+<tr>
+<td>$300$ TeV</td>
+<td>$0.718$</td>
+<td>$1.7\times10^{-12}$</td>
+<td>allowed, margin $2.8$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The bound is $M_X\gtrsim2.3\times10^{2}$ TeV, and it is a band of a factor of two rather than an order of magnitude</strong>, because the rate carries the fourth power of the mass. <strong>This is the only number in the model that a search can contradict, and it is a coupling's number</strong>: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$.</p>
+<p><strong>Why it is here and not in the article on the channel.</strong> The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are all structural, and they stayed in <a href="charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html">Charged Lepton Flavour Violation</a>. <strong>The substitution that turns the channel into a mass bound is a coupling statement, and it is in this article.</strong></p>
+<h2 id="4-the-boundary-condition-and-why-it-fails">4. The Boundary Condition, and Why It Fails</h2>
+<p><strong>The equal-coupling case is $g_4=g_L=g_R$ at one scale, and the reason it is discussed here is that it is the only case in which $\tfrac38$ is a prediction rather than a condition.</strong> Written as a boundary condition it is one sentence, and written as a check it is two numbers.</p>
+<p><strong>4.1 The condition, and the two ends it is read from.</strong> Impose $g_4=g_L=g_R$ at one scale and ask which scale each half of the condition prefers:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>the scale where it holds</th>
+<th>what is wrong there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sin^2\theta_W=\tfrac38$</td>
+<td>$1.02\times10^{13}$ GeV</td>
+<td>$\alpha_3^{-1}=36.8$ against $\alpha_L^{-1}=42.4$, <strong>$13\%$ short</strong></td>
+</tr>
+<tr>
+<td>$g_4=g_L$</td>
+<td>$9.79\times10^{16}$ GeV</td>
+<td>$\sin^2\theta_W=0.4365$ against $\tfrac38$, <strong>$16\%$ high</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two scales are four decades apart, and no single scale is both.</strong> That is the failure in one line: <strong>one boundary value cannot satisfy two conditions that hold at different energies.</strong></p>
+<p><strong>4.2 Why it fails, in one sentence, and why the sentence matters.</strong> The condition ties a coupling that runs at $c_4=\tfrac{32}{3}$ to one that runs at $c_2=\tfrac{19}{6}$, and their difference accumulates. <strong>The failure is not a mistake in the arithmetic; it is the statement that the equality is not preserved by the matter content between the thresholds.</strong></p>
+<p><strong>4.3 What the failure does and does not touch.</strong> It destroys the prediction $\tfrac38$ and it does not touch the group, the sixteen, the charges, the anomalies, the boson count or the leptoquark content. <strong>Those are algebraic and they are stated in the other articles of the category, which is why those articles carry no coupling at all.</strong></p>
+<h2 id="5-the-three-scale-variant-and-why-it-does-not-rescue-it">5. The Three-Scale Variant, and Why It Does Not Rescue It</h2>
+<p><strong>One repair is worth stating here, because it is the repair a reader will propose.</strong></p>
+<p><strong>5.1 The proposal.</strong> Add a scale: impose $g_4=g_L=g_R$ at $M_{U}>M_C>M_R$ and change nothing below. <strong>Two conditions on three scales is a curve, not a point, so the variant is not empty.</strong> The question is what a curve is worth.</p>
+<p><strong>5.2 The obstruction, and it is a symmetry rather than a number.</strong> Above $M_R$ the content is parity-symmetric, so every $\mathrm{SU}(2)_L$ multiplet has an $\mathrm{SU}(2)_R$ partner of the same dimension:</p>
+<p>$$
+c_{2L}=c_{2R}\quad\Longrightarrow\quad
+\frac{1}{\alpha_L(M_{U})}-\frac{1}{\alpha_R(M_{U})}
+=\frac{1}{\alpha_L(M_R)}-\frac{1}{\alpha_R(M_R)} .
+$$</p>
+<p><strong>Equal coefficients transport the gap unchanged, so the condition at $M_{U}$ is a condition at $M_R$.</strong></p>
+<p>$$
+g_L(M_{U})=g_R(M_{U})\iff g_L(M_R)=g_R(M_R) .
+$$</p>
+<p><strong>5.3 What that means in words.</strong> The third scale moves the meeting of $g_4$ with $g_L$, because $c_4\ne c_2$. <strong>It does nothing to the meeting of $g_R$ with $g_L$, because parity makes their running identical.</strong> A reader who expects the extra running to fix the whole triple will find that it fixes exactly the half that was not the problem.</p>
+<p><strong>5.4 What closing the gap would cost.</strong> Only breaking parity above $M_R$ lets the gap run, and the gap is $44.6$ in inverse-coupling units against $27$ e-folds to the colour meeting:</p>
+<p>$$
+\Delta c_2\simeq2\pi\frac{44.6}{27}\simeq10 .
+$$</p>
+<p><strong>A single Weyl doublet moves $c_2$ by $\tfrac13$, so this asks for about thirty more left doublets than right doublets.</strong> That is not a threshold correction. <strong>It is a different theory.</strong></p>
+<h2 id="6-the-yukawa-sector-the-same-test-applied">6. The Yukawa Sector: The Same Test, Applied</h2>
+<p><strong>The gauge couplings are not the only ones that carry a scale, and the Yukawa sector is where the rule bites next.</strong> The test is the same one, and it is mechanical.</p>
+<p><strong>6.1 The test.</strong> Can the sentence be written without naming a scale? <strong>If not, it is a scale-bearing coupling claim, and it belongs here.</strong> A coupling symbol in a Lagrangian passes the test. A relation between coupling <em>values</em> fails it, because a value without a scale is not a value.</p>
+<p><strong>6.2 What fails the test in the scalar sector.</strong> Two statements, and both were written with a scale attached:</p>
+<p>$$
+m_d=m_e,\qquad m_u=m_\nu\qquad\text{at }M_{U} .
+$$</p>
+<p><strong>Neither survives as a statement about this model's couplings, and both are therefore here.</strong> They are the one-bidoublet boundary conditions, and their status is the interesting part: <strong>the first is falsified by data, the second is falsified by data by seven orders of magnitude.</strong></p>
+<p><strong>6.3 What passes the test, and it is the whole argument.</strong> One bidoublet carries one Yukawa matrix $\lambda$ and applies it to both the down-type quarks and the charged leptons:</p>
+<p>$$
+\mathcal L_Y=\lambda\,\bar{\Psi}_L H\,\Psi_R+\text{h.c.}
+\quad\Longrightarrow\quad
+M_d\propto M_e ,
+$$</p>
+<p><strong>and that is a statement about the <em>number of matrices</em>, not about any value.</strong> One matrix serving two sectors forces the two mass matrices to be proportional, and proportional matrices have proportional spectra. <strong>That is counting, and it is scale-free: it holds at every scale, in every scheme, with any normalisation.</strong></p>
+<p><strong>6.4 The numbers, with their status.</strong> The proportionality is compared against the measured ratios, which are data:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>ratio</th>
+<th>measured</th>
+<th>against a common proportionality</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_d/m_e$</td>
+<td>$9.1$</td>
+<td><strong>fails by a factor $9$</strong></td>
+</tr>
+<tr>
+<td>$m_s/m_\mu$</td>
+<td>$0.88$</td>
+<td>holds to $12\%$</td>
+</tr>
+<tr>
+<td>$m_b/m_\tau$</td>
+<td>$2.35$ at $m_b$</td>
+<td>converges to unity once the running from $M_{U}$ to $m_b$ is included</td>
+</tr>
+<tr>
+<td>$m_u/m_\nu$</td>
+<td>about $4\times10^{7}$</td>
+<td><strong>fails outright</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last column is where the scale enters, and it enters twice</strong>: once in the ratio "at $m_b$", and once in the phrase "once the running is included". <strong>Both are coupling statements, and both are here.</strong></p>
+<p><strong>6.5 What the purge leaves standing, and why it matters.</strong> The argument that the minimal scalar sector is insufficient survives intact, because it was never a coupling argument. <strong>One bidoublet gives one matrix for two sectors; the data do not show proportional spectra; therefore the sector needs a second matrix.</strong> The repair is a second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$, or the colour-singlet component of a $(\mathbf{15},\mathbf2,\mathbf2)$.</p>
+<p><strong>So the open multiplet list of the model rests on a counting argument, and the counting argument is untouched by this migration.</strong> What was removed is the arithmetic that made the failure look like a number rather than like a mismatch of ranks.</p>
+<p><strong>6.6 The quartic, recorded for completeness.</strong> The scalar potential's quartic is a coupling with a value at a scale and a running like any other. <strong>No article in the category quotes its value</strong>, and none quotes its one-loop coefficient, so nothing had to move. <strong>When one is quoted, it comes here.</strong></p>
+<h2 id="7-the-register-what-was-removed-and-why">7. The Register: What Was Removed, and Why</h2>
+<p><strong>The purge is part of the rule, so it is recorded here rather than left to a reader to notice.</strong> Each row is a sentence that used to appear in another article of this category and now does not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the claim, as it stood</th>
+<th>where it stood</th>
+<th>its status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_X/M_{W_R}=\sqrt2$, "exact"</td>
+<td>breaking chain, scalar sector</td>
+<td><strong>conditional on $g_R=g_4$</strong>; here it is $\sqrt2\,g_4/g_R$</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W(M_{U})=\tfrac38$ as a prediction</td>
+<td>breaking chain, Weinberg angle</td>
+<td><strong>a boundary condition</strong>, and it fails (§4)</td>
+</tr>
+<tr>
+<td>the running of the triple to $M_{U}$</td>
+<td>breaking chain, Landau pole</td>
+<td>a computation with a chosen content, <strong>not a result</strong></td>
+</tr>
+<tr>
+<td>the matching at three thresholds</td>
+<td>breaking chain</td>
+<td><strong>one equation, one scale</strong> (§2)</td>
+</tr>
+<tr>
+<td>the three scales $M_W$, $M_R$, $M_{U}$ as a spectrum</td>
+<td>breaking chain</td>
+<td><strong>bounds on a free parameter</strong></td>
+</tr>
+<tr>
+<td>$g_R$ as a computed number</td>
+<td>frame article, note</td>
+<td><strong>an output that moves</strong> (§3.2)</td>
+</tr>
+<tr>
+<td>$m_d=m_e$ and $m_u=m_\nu$ at $M_{U}$</td>
+<td>scalar sector, frame article</td>
+<td><strong>boundary conditions on Yukawas</strong>, falsified (§6.2)</td>
+</tr>
+<tr>
+<td>the measured ratio comparison, and the running to $m_b$</td>
+<td>scalar sector</td>
+<td><strong>a scale-bearing comparison</strong>, kept here with its values (§6.4)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of the six are worth keeping in the category, and both are kept</strong>: the count of massless states, and the photon's composition. <strong>Neither is a coupling claim</strong> — the first is dimension arithmetic and the second is the statement that three fields mix, with the coefficients left symbolic.</p>
+<p><strong>What the register is for.</strong> A reader who remembers a number from an earlier version of this corpus will find it here, with its status attached. <strong>A corpus that quietly deletes a claim is worse than one that keeps it wrongly labelled; the register is the difference.</strong></p>
+<h2 id="8-what-this-section-is-and-what-it-is-not">8. What This Section Is, and What It Is Not</h2>
+<p><strong>The flagged section, in one paragraph.</strong> This is the only place in the particle category where a coupling is written as a number, a condition at a scale, a running, a matching or an exact ratio. <strong>The section is flagged for that reason, and the flag is not modesty: it is a boundary in the text.</strong></p>
+<p><strong>What it is.</strong> A single relation, derived twice, that ties the hypercharge coupling at $M_R$ to the $\mathrm{SU}(4)$ coupling at $M_C$; a scale at which the relation is imposed; a content statement below the scale; and an honest account of what the relation does not fix.</p>
+<p><strong>What it is not.</strong> It is not a unification. <strong>The three couplings are not required to be equal anywhere, and the model's own position is that they are not.</strong> It is not a prediction of $\alpha_{\mathrm{em}}$, $\alpha_s$ or $\sin^2\theta_W$: those are measured at $M_Z$ and the relation is imposed on top of them. <strong>And it is not a claim that the model is confirmed by the agreement it manufactures.</strong></p>
+<p><strong>The sentence that must be written after every number in this article.</strong> The relation reproduces the three measured couplings for any admissible pair of scales, by adjusting $g_R$, and it predicts none of them.</p>
+<h3 id="81-the-two-boundaries-of-the-rule-stated-so-that-they-can-be-enforced">8.1 The two boundaries of the rule, stated so that they can be enforced</h3>
+<p><strong>First boundary: measured Standard Model numbers are data, not coupling claims.</strong> When an article on the Standard Model sector writes $\alpha^{-1}(M_Z)=127.95$ or $\sin^2\theta_W=0.23122$ and uses them to compute a vacuum expectation value, it is quoting an input. <strong>The rule does not touch those numbers</strong>, because they are neither a value this model predicts nor a value it fixes. <strong>They are the data against which §3.3 says the recovery confirms nothing.</strong></p>
+<p><strong>Second boundary: this article governs gauge couplings, and the other couplings have their own homes.</strong> Yukawa couplings, the quartic of the scalar potential, and the mixing angles of the flavour sector appear in their own articles, with their own defects recorded there. <strong>The same discipline applies to them when they are next revised</strong>: one place, one statement, no value carried in an article whose subject is not a value. <strong>They are not moved here</strong>, because this article is about the fourth colour's gauge sector and would become unreadable if it also held the flavour sector.</p>
+<p><strong>Where the boundary is written down.</strong> These two boundaries were prose until the migration ended. <strong>They are now a register</strong>, with every article in the category sorted into the three categories and the test stated: <a href="the-data-boundary-which-articles-may-print-a-measured-strength.html">The Data Boundary</a>. <strong>A permission that is not written down is a permission nobody can check.</strong></p>
+<p><strong>What the two boundaries leave whole.</strong> Every article in the category that states a group, a carrier, a multiplet list, a charge, an anomaly identity, a boson count, a dimension budget or a diagram. <strong>That is almost all of them, and none of them lost a claim in this migration.</strong></p>
+<h2 id="9-the-checks">9. The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the denominators</td>
+<td>$1+1+\tfrac23$</td>
+<td>$\tfrac83$, so $e^2=\tfrac38g_4^2$</td>
+</tr>
+<tr>
+<td>the angle at the threshold</td>
+<td>$\tfrac35/(1+\tfrac35)$</td>
+<td>$\tfrac38$ exact</td>
+</tr>
+<tr>
+<td>the two routes to $g_Y$</td>
+<td>normalisation against expansion</td>
+<td>agree exactly</td>
+</tr>
+<tr>
+<td>the matching has a solution</td>
+<td>$1/g_Y^2>1/(4g_{B-L}^2)$</td>
+<td>holds for $g_R/g_L\in[0.62,0.73]$</td>
+</tr>
+<tr>
+<td>the $\tfrac38$ scale</td>
+<td>running the measured pair up</td>
+<td>$1.02\times10^{13}$ GeV</td>
+</tr>
+<tr>
+<td>the $g_4=g_L$ scale</td>
+<td>running the measured pair up</td>
+<td>$9.79\times10^{16}$ GeV</td>
+</tr>
+<tr>
+<td>the separation</td>
+<td>the two scales</td>
+<td>four decades, so no single scale is both</td>
+</tr>
+<tr>
+<td>the parity freeze</td>
+<td>$c_{2L}$ against $c_{2R}$ above $M_R$</td>
+<td>equal, so the gap does not run</td>
+</tr>
+<tr>
+<td>the required asymmetry</td>
+<td>$2\pi\times44.6/27$</td>
+<td>about $10$, or thirty doublets</td>
+</tr>
+<tr>
+<td>the ratio of masses</td>
+<td>$\sqrt2\,g_4/g_R$</td>
+<td>$2.2$ to $3.1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary">Summary</h2>
+<p><strong>The Standard Model is recovered from the fourth colour by one equation</strong>, $\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}$ at $M_R$, together with one scale and one statement of content below it.</p>
+<p><strong>The arithmetic is exact and short.</strong> The denominators are $1$, $1$ and $\tfrac23$; they sum to $\tfrac83$; the angle at the threshold is $\tfrac38$; and the same sum read from the generator algebra gives the identical result.</p>
+<p><strong>What it costs is stated in the same place.</strong> The scale is free above a leptoquark floor, $g_R$ is an output rather than a prediction, the mass ratio is $\sqrt2\,g_4/g_R$ rather than $\sqrt2$, and a value of $g_R$ that moves with the scale cannot be tested.</p>
+<p><strong>The unified case fails, and it fails as arithmetic.</strong> $\tfrac38$ is exact where colour is $13\%$ short, and colour is exact where the angle is $16\%$ high. <strong>The two conditions hold four decades apart.</strong></p>
+<p><strong>The three-scale repair does not rescue it, for a reason that is a symmetry and not a number.</strong> Parity makes the two $\mathrm{SU}(2)$ coefficients equal, so the extra scale moves the meeting of colour and leaves the meeting of the two chiral factors where it was.</p>
+<p><strong>The Yukawa sector passes the same test.</strong> The one-bidoublet conditions $m_d=m_e$ and $m_u=m_\nu$ were written with a scale attached, so they are here; <strong>the argument they supported survives without them</strong>, because one matrix for two sectors is a statement about counting, and counting needs no scale.</p>
+<p><strong>And the boundary of the text is the point of the article.</strong> Every coupling statement in this category is here. <strong>The other articles state the group, the carrier, the content, the charges, the anomalies, the boson count and the geometry, and they state no coupling.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_4$</td>
+<td>the $\mathrm{SU}(4)$ coupling, tied to $g_3$ at the first threshold</td>
+</tr>
+<tr>
+<td>$g_L$, $g_R$</td>
+<td>the $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ couplings</td>
+</tr>
+<tr>
+<td>$g_{B-L}$</td>
+<td>the abelian coupling of the fifteenth Cartan, $g_{B-L}^2=\tfrac38g_4^2$</td>
+</tr>
+<tr>
+<td>$g_Y$</td>
+<td>the hypercharge coupling below $M_R$</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>the electromagnetic coupling, the mixture of the three neutral fields</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W$</td>
+<td>$e^2/g_L^2$, the mixing angle written as a ratio</td>
+</tr>
+<tr>
+<td>$M_C$</td>
+<td>the scale of the first threshold</td>
+</tr>
+<tr>
+<td>$M_R$</td>
+<td>the scale where the equation of this article is imposed</td>
+</tr>
+<tr>
+<td>$M_{U}$</td>
+<td>the single scale of the unified case, $M_C=M_R=M_{U}$</td>
+</tr>
+<tr>
+<td>$c_2$, $c_4$</td>
+<td>the one-loop coefficients of the two factors, $\tfrac{19}{6}$ and $\tfrac{32}{3}$</td>
+</tr>
+<tr>
+<td>$T^{15}$</td>
+<td>the fifteenth $\mathrm{SU}(4)$ Cartan, the $B-L$ generator</td>
+</tr>
+<tr>
+<td>$M_X$</td>
+<td>the leptoquark mass, $\sqrt2\,(g_4/g_R)M_{W_R}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-fourth-colour-left-right-model.html">The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The group, the sixteen, the chain and the declarations, with no coupling value.</li>
+<li><a href="the-breaking-chain-and-the-boson-spectrum.html">The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons</a>. The chain as three stabilisers, and the dimension budget that fixes the count of states.</li>
+<li><a href="the-weinberg-angle-the-neutral-current-and-the-z-coupling.html">The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators</a>. The angle as a ratio, and the neutral current written symbolically.</li>
+<li><a href="the-scalar-sector-and-the-leptoquark-bounds.html">The Scalar Sector and the Leptoquark Bounds: Twenty-Four Real Components, Six Unseen States, Two Scales</a>. The multiplet list and the states, with the mass ratios referred here.</li>
+<li><a href="grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a>. Why the larger group that would close the gap is not available on the carrier.</li>
+<li><a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. What the recovery recovers, counted.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

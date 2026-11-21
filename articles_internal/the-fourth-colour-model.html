@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pati–Salam Model: Lepton Number as the Fourth Colour — Biquaternion Universe</title>
+  <meta name="description" content="Ledger note, binding since the coupling migration. Every coupling value in this note is a transcription of the literature or of a recomputation, not a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-patisalam-model-lepton-number-as-the-fourth-colour"><strong>The Pati–Salam Model: Lepton Number as the Fourth Colour</strong></h1>
+<p><strong>Ledger note, binding since the coupling migration.</strong> Every coupling value in this note is a transcription of the literature or of a recomputation, <strong>not a statement of the corpus's model</strong>. <strong>The corpus's single coupling statement is in <code>articles_physics/the-one-coupling-that-returns-the-standard-model.md</code></strong>; this file is a working record, and it is not a place where a coupling is claimed. An equality of the form $m_d=m_e$ at a scale, where it appears below, is the literature's published condition and not this model's prediction.</p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A working note on one external theory, not a site article. It fixes the group, the matter content, the quantum numbers and the breaking chain of the Pati–Salam model of 1974, verifies the counting claims that the secondary literature repeats, and records what the model does and does not deliver. Every number in it has been recomputed.</p>
+<p><strong>The model in one line.</strong> Colour has four values instead of three; the fourth is lepton number; one generation then fits in two multiplets of $SU(4)_c\times SU(2)_L\times SU(2)_R$, and hypercharge is assembled from two non-abelian factors rather than assumed.</p>
+<p><strong>The group and its two numbers.</strong> The gauge group is</p>
+<p>$$
+G_{\mathrm{PS}}=SU(4)_c\times SU(2)_L\times SU(2)_R ,
+\qquad
+\mathrm{rank}=3+1+1=5,
+\qquad
+\dim_\mathbb{R}=15+3+3=21 ,
+$$</p>
+<p>or its $\mathbb{Z}_2$ quotient. Both figures are computed from the factors, not quoted: the rank of $SU(4)$ is three and of $SU(2)$ is one, and the dimension of $SU(n)$ is $n^2-1$.</p>
+<p><strong>The matter content.</strong> Two multiplets per generation, of equal dimension eight:</p>
+<p>$$
+\boxed{\;(4,2,1)\;\oplus\;(\bar 4,1,2)\;=\;8+8=16\ \text{Weyl fields}\;}
+$$</p>
+<p>Twelve quarks and four leptons, both chiralities, with the right-handed neutrino present by necessity rather than by choice. The Standard Model generation has fifteen Weyl fields; the sixteenth is the one the model cannot omit.</p>
+<p><strong>Why the note is needed.</strong> Three claims about this model circulate and all three are stated loosely. That the fourth colour "unifies" electromagnetism with the strong force; that the model predicts proton decay; and that its mass relations are wrong in a specific way. The first is imprecise at the level of the group, the second is false at the gauge level, and the third is usually quoted with the relations reversed. §6, §8 and §9 fix all three.</p>
+<p><strong>How to use it.</strong> §1 fixes the group and the quotient, §2 the multiplets, §3 the hypercharge construction, §4 the charge quantisation, §5 the coupling prediction, §6 the scalar sector and the chain, §7 the monopoles, §8 what the model does not do, §9 the corpus's position, §10 the observational ledger.</p>
+<h2 id="1-the-group-and-its-quotient">1. The Group and Its Quotient</h2>
+<p><strong>The two writings.</strong> The gauge group is written either as the product $SU(4)\times SU(2)_L\times SU(2)_R$ or as the quotient by a $\mathbb{Z}_2$. The quotient is the correct one for the sixteen-field content, and the difference is the same kind of difference the corpus records for $\mathrm{U}(2)$ against $SU(2)\times\mathrm{U}(1)$.</p>
+<p><strong>The centre.</strong> The centre of the product is $\mathbb{Z}_4\times\mathbb{Z}_{2L}\times\mathbb{Z}_{2R}$, since the centre of $SU(n)$ is $\mathbb{Z}_n$. The quotient is by the diagonal $\mathbb{Z}_2$ generated by the element of order two in $\mathbb{Z}_4$ together with the non-trivial elements of both $\mathbb{Z}_2$'s.</p>
+<p><strong>What the quotient does.</strong> It removes a redundancy: the product group acts on the sixteen fields with a two-element kernel, so the physical group is the quotient. The consequence is the same one the corpus derives for its own $U(2)$: the abelian charge of a multiplet is locked to its spin parity. That is why the corpus's electroweak pair and this model are structurally comparable, and §9 states the comparison.</p>
+<p><strong>The extended group and parity.</strong> The group can be enlarged to a semidirect product</p>
+<p>$$
+\Bigl(\bigl[SU(4)\times SU(2)_L\times SU(2)_R\bigr]/\mathbb{Z}_2\Bigr)\rtimes\mathbb{Z}_2 ,
+$$</p>
+<p>by an automorphism that combines an outer automorphism of $SU(4)$ with the interchange of the two $SU(2)$'s. Under this extension $(4,2,1)\oplus(\bar4,1,2)$ becomes a single irreducible representation, which is the algebraic statement that left and right are one object. This is the model's original motivation: parity is a symmetry of the theory and a property of the vacuum, not a postulate of the Lagrangian.</p>
+<h2 id="2-the-matter-content-and-its-branching">2. The Matter Content and Its Branching</h2>
+<p><strong>The multiplets.</strong> Per generation, one left multiplet and one right multiplet. The $SU(4)$ index is the colour, running over red, green, blue and lepton number. The $SU(2)_L$ index acts on the left multiplet only, the $SU(2)_R$ index on the right one only.</p>
+<p><strong>The branching to the Standard Model.</strong> Under $SU(4)\supset SU(3)\times U(1)_{B-L}$ the quartet splits as $\mathbf 4=\mathbf 3_{1/3}\oplus\mathbf 1_{-1}$, and the sextet as $\mathbf 6=\mathbf 3_{-1/3}\oplus\bar{\mathbf 3}_{1/3}$. The branchings are then</p>
+<p>$$
+\begin{aligned}
+(4,2,1)&\to (3,2)_{1/6}\oplus(1,2)_{-1/2} &&(q_L,\ \ell_L)\\
+(\bar4,1,2)&\to (\bar3,1)_{1/3}\oplus(\bar3,1)_{-2/3}\oplus(1,1)_{1}\oplus(1,1)_{0} &&(d^c,u^c,e^c,\nu^c)\\
+(6,1,1)&\to (3,1)_{-1/3}\oplus(\bar3,1)_{1/3} &&\\
+(1,3,1)&\to (1,3)_{0} &&\\
+(1,1,3)&\to (1,1)_{1}\oplus(1,1)_{0}\oplus(1,1)_{-1} &&
+\end{aligned}
+$$</p>
+<p>with the subscript the corpus hypercharge $Y$ and $Q=T_{3L}+Y$. The first line is the whole content of the name: a quark doublet and a lepton doublet sit in one multiplet, with the same $SU(2)_L$ structure and the same $SU(4)$ label structure.</p>
+<p><strong>The sixteen fields, with their quantum numbers.</strong> The hypercharge in the table is computed from the two non-abelian labels by the relation of §3, not copied.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>state</th>
+<th>$SU(4)$</th>
+<th>$T_{3L}$</th>
+<th>$T_{3R}$</th>
+<th>$B-L$</th>
+<th>$Y$</th>
+<th>$Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u_L$</td>
+<td>$3$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac16$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_L$</td>
+<td>$3$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac16$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\nu_L$</td>
+<td>$1$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_L$</td>
+<td>$1$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>$3$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$3$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\nu_R$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pairing that carries the name.</strong> Read down the $T_{3R}$ column: the $SU(2)_R$ doublet with $T_{3R}=+\tfrac12$ is $\{u_R,\nu_R\}$ and the one with $T_{3R}=-\tfrac12$ is $\{d_R,e_R\}$. So the right-handed neutrino is the $SU(2)_R$ partner of the right-handed up quark, not an added singlet. Read across the $SU(4)$ column at fixed $T_{3R}$: the quartet with $T_{3R}=+\tfrac12$ is $\{u^r,u^g,u^b,\nu\}$. That is the fourth colour. Lepton number is the fourth colour in the literal sense: it is the same quantum label, and the quartet is one irreducible object.</p>
+<h2 id="3-hypercharge-is-not-fundamental">3. Hypercharge Is Not Fundamental</h2>
+<p><strong>The construction.</strong> There is no $U(1)_Y$ above the breaking scale. Hypercharge is the sum of a generator of $SU(2)_R$ and a generator of $SU(4)_c$:</p>
+<p>$$
+\boxed{\;\frac{Y}{2}=T_{3R}+\frac{B-L}{2},
+\qquad
+B-L=\mathrm{diag}\Bigl(\tfrac13,\tfrac13,\tfrac13,-1\Bigr)\in SU(4)_c,
+\qquad
+T_{3R}=\mathrm{diag}\Bigl(\tfrac12,-\tfrac12\Bigr)\in SU(2)_R\;}
+$$</p>
+<p>The first matrix is the $SU(4)$ generator that counts a quark as $\tfrac13$ and a lepton as $-1$; the second is the third generator of $SU(2)_R$.</p>
+<p><strong>Why this is the model's real content.</strong> The Standard Model has two electroweak factors and an abelian hypercharge that is put in as a postulate. Pati–Salam has no abelian factor at all. Both the $B-L$ direction and the $T_{3R}$ direction are directions inside non-abelian groups, and hypercharge appears only after both groups break. The claim that the model "unifies electromagnetism with the strong force" is therefore true in a precise and limited sense: the $U(1)_Y$ of the Standard Model is manufactured, and the $U(1)_{\mathrm{em}}$ with it, but the group that does the manufacturing is not simple, and the couplings it carries are not one coupling.</p>
+<p><strong>The check.</strong> Applied to the eight states of a generation, the relation reproduces the Standard Model hypercharges row by row, as §2's table shows. It also reproduces the right-handed neutrino's $Y=0$ without any adjustment, which is the sign that the pairing is right rather than fitted: $T_{3R}=+\tfrac12$ and $B-L=-1$ cancel exactly.</p>
+<h2 id="4-charge-quantisation-comes-from-the-quartet">4. Charge Quantisation Comes from the Quartet</h2>
+<p><strong>The statement.</strong> The electric charge generator lies in the Lie algebra of $SU(4)\times SU(2)_L\times SU(2)_R$, so it is traceless on every complete multiplet. On the colour-lepton quartet at fixed $SU(2)$ labels,</p>
+<p>$$
+\mathrm{tr}_{\mathbf 4}(B-L)=3\cdot\tfrac13+(-1)=0 ,
+$$</p>
+<p>and the same tracelessness, applied to $Q$, gives $3Q(q)+Q(\ell)=0$ for the matching pair.</p>
+<p><strong>The consequence.</strong> With the quark and lepton charges in a fixed ratio of three to one, the charge lattice is $\tfrac13\mathbb{Z}$. Charge quantisation is not assumed; it is the trace condition on a four-dimensional representation whose fourth component is the lepton. In the Standard Model the same lattice is observed and unexplained, and the corpus records it as the least step $q=6Y$ with the sixths imported from an $SU(5)$ embedding.</p>
+<p><strong>What the statement does not do.</strong> It fixes ratios and not the overall scale, exactly as the corpus's parity lock fixes parity and not scale. The electron charge remains a measured number. The gain is that the <em>ratios</em> are structural instead of empirical.</p>
+<p><strong>Why three colours and one lepton, and not the reverse.</strong> The trace condition alone does not fix the multiplicity three; it fixes the ratio of charges given the multiplicity. What fixes the multiplicity is the observed three colours, and the model's contribution is to make the fourth component of the same object the lepton. The claim "charge in thirds follows from colour being three-valued" is therefore right, and the further claim "and colour is three-valued because of the group" is not available.</p>
+<h2 id="5-the-coupling-math131">5. The Coupling: $\sin^2\theta_W=\tfrac38$</h2>
+<p><strong>The prediction.</strong> At the scale where the three factors have one common coupling, $g_4=g_L=g_R=g$, the weak mixing angle is fixed by the trace ratio over one complete generation,</p>
+<p>$$
+\sin^2\theta_W=\frac{\mathrm{tr}\,T_{3L}^2}{\mathrm{tr}\,Q^2}.
+$$</p>
+<p><strong>The computation.</strong> Over the sixteen states, with the colour multiplicity three for quarks,</p>
+<p>$$
+\mathrm{tr}\,T_{3L}^2=4\times\tfrac12=2,
+\qquad
+\mathrm{tr}\,Q^2=3\bigl(\tfrac49+\tfrac19\bigr)+1+3\bigl(\tfrac49+\tfrac19\bigr)+1=\tfrac{16}{3},
+$$</p>
+<p>where the four doublets contribute the first factor and the two charged singlets the last two terms. The ratio is</p>
+<p>$$
+\boxed{\;\sin^2\theta_W=\frac{2}{16/3}=\frac{3}{8}=0.375\;}
+$$</p>
+<p><strong>The value against measurement.</strong> The observed $\overline{\mathrm{MS}}$ value at $M_Z$ is $0.23122$. The gap is closed by running from the Pati–Salam scale down to $M_Z$, which needs the breaking scales as input. So the model computes the angle <em>at its own scale</em> and trades a prediction for two unknown thresholds. This is the same trade $SU(5)$ makes, and it is why the number $3/8$ is a boundary condition and not a prediction at accessible energy.</p>
+<p><strong>The trap in the arithmetic.</strong> The naive normalisation $\mathrm{tr}(Y/2)^2/(\mathrm{tr}T_{3L}^2+\mathrm{tr}(Y/2)^2)$ gives $0.294$, not $0.375$, because it treats the hypercharge normalisation as canonical. The trace ratio over $Q$ is the correct one, and it is the only one that uses the equality of the three couplings. The two differ by the normalisation of $B-L$, and a note that quotes $3/8$ without saying which ratio it used cannot be audited.</p>
+<h2 id="6-the-scalars-and-the-breaking-chain">6. The Scalars and the Breaking Chain</h2>
+<p><strong>The first step.</strong> A scalar in the $(\bar4,1,2)$ acquires a vacuum value along the lepton direction, $\langle(4,1,2)_H\rangle\propto\mathrm{diag}(0,0,0,1)$. This breaks $SU(4)_c\to SU(3)_c\times U(1)_{B-L}$ and gives mass to the leptoquark bosons, the ones that change a colour index into the lepton index.</p>
+<p><strong>The second step.</strong> A bidoublet $(1,2,2)_H$ with both vacuum values breaks $SU(2)_L\times SU(2)_R\to SU(2)_L\times U(1)_Y$, and the Standard Model follows. The bidoublet supplies the two $W$ and $Z$ masses and the fermion masses through the Yukawa coupling</p>
+<p>$$
+\mathcal{L}_Y\supset y_{ij}\,(4,2,1)_i\,(\bar4,1,2)_j\,(1,2,2)_H .
+$$</p>
+<p><strong>The seesaw.</strong> The right-handed neutrino gets its mass either from a $(10,1,3)$ or $(15,1,3)$ scalar, or from the $(\bar4,1,2)$-type field. Either way the mass is tied to the $SU(2)_R$ breaking scale, and the type-I seesaw follows with no field beyond the sixteen.</p>
+<p><strong>The scale ordering.</strong> The chain is</p>
+<p>$$
+SU(4)\times SU(2)_L\times SU(2)_R
+\;\xrightarrow{M_{PS}}\;
+SU(3)\times SU(2)_L\times U(1)_{B-L}\times SU(2)_R
+\;\xrightarrow{M_R}\;
+SU(3)\times SU(2)_L\times U(1)_Y
+\;\xrightarrow{v}\;
+SU(3)\times U(1)_{\mathrm{em}} .
+$$</p>
+<p><strong>The $(6,1,1)$ and the $(15,2,2)$.</strong> The sextet is available and can participate in the Yukawa sector. The $(15,2,2)$ is the standard repair of the mass relations of §8, and it is the representation that costs the coupling prediction of §5, because it changes the beta coefficients and shifts the running.</p>
+<h2 id="7-monopoles">7. Monopoles</h2>
+<p><strong>The statement.</strong> The second homotopy group of the coset is non-trivial,</p>
+<p>$$
+\pi_2\!\left(\frac{SU(4)\times SU(2)}{[SU(3)\times U(1)]/\mathbb{Z}_3}\right)=\mathbb{Z},
+$$</p>
+<p>so the model contains 't Hooft–Polyakov monopoles. The mechanism is the standard one: a non-trivial second homotopy group of the vacuum manifold forces a topological defect.</p>
+<p><strong>Why it is worth recording.</strong> A monopole is a non-perturbative object, and no Feynman diagram sees it. It is the same kind of object that distinguishes the product group from the quotient group in the corpus's electroweak pair: a statement invisible to perturbation theory and visible to a topological probe. The two sections make one structural point at two groups.</p>
+<p><strong>The caveat.</strong> The quoted homotopy group is the one of the coset as written, with the $\mathbb{Z}_3$ quotient of $SU(3)\times U(1)$ by the centre. The full chain to the Standard Model group carries a different quotient, and the monopole spectrum differs between the two writings. The number to remember is that the model predicts them; the multiplicity depends on which global form is taken.</p>
+<h2 id="8-what-the-model-does-not-do">8. What the Model Does Not Do</h2>
+<p><strong>It is not simple.</strong> The group is semisimple, with three factors, so there are three independent couplings before any symmetry is imposed and two after $g_L=g_R$ is imposed. The truly unified coupling needs $SO(10)$, in which the $\mathbf{16}$ is exactly $(4,2,1)\oplus(\bar4,1,2)$. Pati–Salam is therefore the intermediate step and not the destination.</p>
+<p><strong>It predicts no gauge-mediated proton decay.</strong> This is the model's survival advantage and is often stated as a coincidence. It is structural: the leptoquark gauge bosons carry $B-L$, so they conserve baryon number at the renormalisable level. The proton is stable against gauge exchange. Decay can proceed through Higgs-mediated three-quark fusion, at a rate far below the present bound. This is exactly why the model survived the 1990s, when minimal $SU(5)$ was excluded by $p\to e^+\pi^0$ at about $10^{31}$ years against a bound that now exceeds $2.4\times10^{34}$.</p>
+<p><strong>The mass relations are wrong with one bidoublet, and the usual statement of them is reversed.</strong> With a single bidoublet and the $SU(4)$-symmetric Yukawa of §6, the coupling is the same for the colour-triplet and the lepton-singlet components, so</p>
+<p>$$
+m_u=y v_u,\quad m_d=y v_d,\quad m_\nu=y v_u,\quad m_e=y v_d
+\quad\Longrightarrow\quad
+m_d=m_e,\qquad m_u=m_\nu .
+$$</p>
+<p>The relation is $m_d=m_e$ and $m_u=m_\nu$ at the Pati–Salam scale, not $m_u=m_d$ and $m_e=m_\nu$. The observed ratio $m_d/m_e\simeq2.2$ at $1$ GeV contradicts the first relation, since both run with the same anomalous dimension in a common gauge group. Neither relation can be repaired by a choice of vacuum values, because both are consequences of the single Yukawa coupling.</p>
+<p><strong>The repair costs the coupling prediction.</strong> A second bidoublet, or a $(15,2,2)$, separates the quark and lepton Yukawas and restores acceptable mass relations. Both change the beta coefficients, so the run of $\sin^2\theta_W$ from the Pati–Salam scale shifts, and the clean $3/8$ becomes a value with an extra threshold. $3/8$ itself is unaffected; what is lost is the ability to reach $0.231$ without additional input.</p>
+<p><strong>It does not explain the number of generations.</strong> Three families are put in by hand, one copy of the pair per family.</p>
+<h2 id="9-where-it-sits-against-the-corpus">9. Where It Sits Against the Corpus</h2>
+<p><strong>The rank ladder.</strong> The corpus records the ladder that starts at its own group:</p>
+<p>$$
+\underbrace{2}_{\mathrm{U}(2)}<\underbrace{4}_{G_{\mathrm{SM}},\ SU(5)}<\underbrace{5}_{SO(10),\ \text{Pati–Salam},\ \text{left--right}}<\underbrace{6}_{E_6}<\cdots
+$$</p>
+<p>Pati–Salam is one rung above the Standard Model and two above the framework's $\mathrm{U}(2)$. The framework's intrinsic compact group has rank two, so it cannot reach this model by any enlargement of the gauge construction inside $\mathbb{B}$: the obstruction is the same one that excludes $SU(3)_c$, and it is a dimension count, not a shortage of effort.</p>
+<p><strong>The structural parallel that is worth keeping.</strong> Both the corpus's electroweak pair and this model replace a product by a quotient, and both pay for it with a lock on the abelian charge. In the corpus the lock is $q\equiv2j\pmod2$ on the central charge; here it is the $\mathbb{Z}_2$ identification inside the centre of $SU(4)\times SU(2)_L\times SU(2)_R$, which is why the sixteen fields of a generation — and not fifteen — form a representation of the quotient. The two statements are the same statement at two different groups, and neither is dynamical.</p>
+<p><strong>The prior art the corpus already holds.</strong> <code>left-right-symmetric-fermions-from-complex-split-biquaternions-and-bioctonions.md</code> records the Pati–Salam multiplet assignment as an interpretation of a Clifford-algebra construction, not as a framework result, and leaves the commutator tests open. That is the correct posture: the group is used as a frame, and the frame is declared imported. This note is a description of the frame.</p>
+<p><strong>The classification.</strong> In the vocabulary of <code>Indistinguishable-theories-standard-model.md</code>, Pati–Salam is a class-2 imported completion: it generates dimension-six operators, its footprint is below the present reach, and it carries a scale. It is not a rewriting of the Standard Model and it is not unfalsifiable.</p>
+<h2 id="10-observation-the-ledger">10. Observation: the Ledger</h2>
+<p><strong>Consistent, not confirmed.</strong> Every entry below is a null result, and the model survives all of them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Probe</th>
+<th>What it does to the model</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$p\to e^+\pi^0$</td>
+<td>no gauge-mediated decay; stable at renormalisable level</td>
+<td>a plus, and the reason it outlived minimal $SU(5)$</td>
+</tr>
+<tr>
+<td>$K_L\to\mu e$</td>
+<td>leptoquark exchange; bound on $M_X$ of order $10^2$ to $10^3$ TeV, coupling-dependent</td>
+<td>no signal</td>
+</tr>
+<tr>
+<td>LHC leptoquark searches</td>
+<td>scalar leptoquarks excluded below roughly $1.5$ TeV, flavour-dependent</td>
+<td>no signal</td>
+</tr>
+<tr>
+<td>$W_R$ searches</td>
+<td>dijet, dilepton and $K_L\to\mu e$ push $M_{W_R}$ to a few TeV and above</td>
+<td>no signal</td>
+</tr>
+<tr>
+<td>$0\nu\beta\beta$</td>
+<td>the seesaw works; the rate is a prediction</td>
+<td>no signal, so untested rather than excluded</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W$</td>
+<td>$3/8$ at the Pati–Salam scale runs to $0.231$</td>
+<td>consistent with two thresholds</td>
+</tr>
+<tr>
+<td>Monopoles</td>
+<td>predicted by $\pi_2=\mathbb{Z}$</td>
+<td>no flux observed, and a cosmological bound on the model's history</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What would confirm it.</strong> A leptoquark with the right quantum numbers, a $W_R$ with the $SU(2)_R$ coupling, or $0\nu\beta\beta$ at the rate the seesaw fixes. <strong>What has excluded it in the past.</strong> Nothing has, and the model's original version remains alive; the refinements of the 1980s and 1990s were needed to repair the mass relations, and each added a threshold.</p>
+<p><strong>The honest summary.</strong> The model answers the question it was built to answer: hypercharge is not fundamental, and charge is quantised in thirds because lepton number is a fourth colour. It pays with three factors, a bidoublet's worth of wrong mass relations, a large intermediate scale, and the loss of the clean coupling prediction once those relations are repaired. It predicts leptoquarks and a $W_R$ and predicts no proton decay, and none of its predictions has been seen.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The group and its numbers.</strong></p>
+<p>$$
+G_{\mathrm{PS}}=SU(4)_c\times SU(2)_L\times SU(2)_R,\qquad \mathrm{rank}=5,\qquad \dim_\mathbb{R}=21,
+$$</p>
+<p>or the $\mathbb{Z}_2$ quotient when the centre's $\mathbb{Z}_2$ acts trivially.</p>
+<p><strong>The matter content.</strong></p>
+<p>$$
+(4,2,1)\oplus(\bar4,1,2)=16\ \text{Weyl fields}=15\ \text{Standard Model fields}+\nu_R .
+$$</p>
+<p><strong>Hypercharge, assembled and not assumed.</strong></p>
+<p>$$
+\frac{Y}{2}=T_{3R}+\frac{B-L}{2},
+\qquad B-L=\mathrm{diag}\bigl(\tfrac13,\tfrac13,\tfrac13,-1\bigr).
+$$</p>
+<p><strong>Charge quantisation.</strong></p>
+<p>$$
+\mathrm{tr}_{\mathbf4}(B-L)=3\cdot\tfrac13-1=0
+\quad\Longrightarrow\quad
+Q\in\tfrac13\mathbb{Z}.
+$$</p>
+<p><strong>The coupling at the unification scale.</strong></p>
+<p>$$
+\sin^2\theta_W=\frac{\mathrm{tr}\,T_{3L}^2}{\mathrm{tr}\,Q^2}=\frac{2}{16/3}=\frac38=0.375,
+\qquad\text{against }0.23122\text{ measured at }M_Z .
+$$</p>
+<p><strong>The four refusals.</strong></p>
+<ul>
+<li>The group is not simple: three factors, three couplings, and one coupling needs $SO(10)$.</li>
+<li>No gauge-mediated proton decay: structural, not accidental, because the leptoquarks carry $B-L$.</li>
+<li>One bidoublet gives $m_d=m_e$ and $m_u=m_\nu$, and the relations cannot be fixed by vacuum values.</li>
+<li>The number of generations and the overall charge scale are not derived.</li>
+</ul>
+<p><strong>The one-sentence version.</strong> Pati–Salam removes the $U(1)_Y$ by making hypercharge a sum of two non-abelian generators, which buys charge in thirds and a forced right-handed neutrino at the price of a semisimple group and a large intermediate scale.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$SU(4)_c$</td>
+<td>the four-colour group, containing $SU(3)_c$ and $U(1)_{B-L}$</td>
+</tr>
+<tr>
+<td>$SU(2)_L$, $SU(2)_R$</td>
+<td>the two chiral weak factors</td>
+</tr>
+<tr>
+<td>$(4,2,1)$, $(\bar4,1,2)$</td>
+<td>the two matter multiplets per generation</td>
+</tr>
+<tr>
+<td>$(4,1,2)_H$</td>
+<td>the scalar that breaks $SU(4)_c$</td>
+</tr>
+<tr>
+<td>$(1,2,2)_H$</td>
+<td>the bidoublet that breaks the electroweak factor</td>
+</tr>
+<tr>
+<td>$(15,2,2)$</td>
+<td>the scalar that repairs the mass relations</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>baryon number minus lepton number, the $SU(4)$ diagonal</td>
+</tr>
+<tr>
+<td>$T_{3L}$, $T_{3R}$</td>
+<td>third generators of the two $SU(2)$'s</td>
+</tr>
+<tr>
+<td>$Y$, $Q=T_{3L}+Y$</td>
+<td>hypercharge and electric charge, in the corpus convention</td>
+</tr>
+<tr>
+<td>$M_{PS}$, $M_R$</td>
+<td>the $SU(4)$ and $SU(2)_R$ breaking scales</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W$</td>
+<td>the weak mixing angle, $3/8$ at unification</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>In this order.</strong> Pati–Salam 1974 for the model; Baez–Huerta for the group theory and the branchings; Ross's <em>Grand Unified Theories</em> for the scalar sector; Mohapatra–Pati for the left–right extension; then the experimental reviews for the bounds.</p>
+<ul>
+<li>J. C. Pati and A. Salam, "Lepton number as the fourth colour", <em>Physical Review D</em> <strong>10</strong> (1974) 275–289.</li>
+<li>J. C. Baez and J. Huerta, "The algebra of grand unified theories", <em>Bulletin of the AMS</em> <strong>47</strong> (2010) 483–552, arXiv:0904.1556, for the quotient group and the representation theory.</li>
+<li>G. G. Ross, <em>Grand Unified Theories</em> (Benjamin/Cummings, 1985), for the breaking chain and the Higgs content.</li>
+<li>R. N. Mohapatra and J. C. Pati, "Left-right gauge symmetry and an isoconjugate model of CP violation", <em>Physical Review D</em> <strong>11</strong> (1975) 566.</li>
+<li>D. Wu and T.-Z. Li, "Proton decay, annihilation or fusion?", <em>Zeitschrift für Physik C</em> <strong>27</strong> (1985) 321, for the statement that only the Higgs mediates proton decay in this model.</li>
+<li><code>articles_internal/Indistinguishable-theories-standard-model.md</code>, for the class-2 classification used in §9.</li>
+</ul>
+<p><strong>The traps.</strong> Do not say the group is simple; do not say the model predicts proton decay at the gauge level; and do not quote the mass relations without checking the direction, since the common form $m_u=m_d$, $m_e=m_\nu$ is the reverse of what one bidoublet gives.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

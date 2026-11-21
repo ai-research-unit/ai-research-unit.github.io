@@ -190,7 +190,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/rotor-spin-pair-and-carrier-a-survey-of-the-closure-block.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-operators-of-the-algebra.html</loc>
@@ -1589,7 +1589,19 @@
     <lastmod>2026-11-20</lastmod>
   </url>
   <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-pati-salam-model-in-the-biquaternion-framework.html</loc>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-fourth-colour-left-right-model.html</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-breaking-chain-and-the-boson-spectrum.html</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html</loc>
     <lastmod>2026-11-21</lastmod>
   </url>
   <url>
@@ -1758,7 +1770,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/jets-the-qcd-cross-section-and-the-infrared-structure.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-electroweak-gauge-group-and-the-hypercharge-assignment.html</loc>
@@ -1862,10 +1874,6 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-lagrangian-and-the-w-and-z-bosons.html</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-weinberg-angle-the-neutral-current-and-the-z-coupling.html</loc>
     <lastmod>2026-11-21</lastmod>
   </url>
   <url>
@@ -2025,6 +2033,18 @@
     <lastmod>2026-11-20</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-one-coupling-that-returns-the-standard-model.html</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-weinberg-angle-the-neutral-current-and-the-z-coupling.html</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.html</loc>
+    <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html</loc>
     <lastmod>2026-11-21</lastmod>
   </url>
@@ -2042,7 +2062,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-hierarchy-problem-and-naturalness.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-21</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-landau-pole-triviality-and-vacuum-stability.html</loc>
