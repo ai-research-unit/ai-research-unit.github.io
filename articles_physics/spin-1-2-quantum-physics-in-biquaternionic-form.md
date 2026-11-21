@@ -4,14 +4,14 @@
 
 The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ is isomorphic, as an algebra, to the algebra $M_2(\mathbb{C})$ of $2 \times 2$ complex matrices (article 5). This is a structural fact: two algebras that are isomorphic have the same abstract structure, and any statement about one translates into a statement about the other.
 
-$M_2(\mathbb{C})$ is also, mathematically, the algebra of **observables of a two-state quantum system**. Its Hermitian elements are the observables of a **spin-1/2** particle, and the state space on which it acts is the two-dimensional complex vector space $\mathbb{C}^2$.
+$M_2(\mathbb{C})$ is also, mathematically, the algebra of observables of a two-state quantum system. Its Hermitian elements are the observables of a spin-1/2 particle, and the state space on which it acts is the two-dimensional complex vector space $\mathbb{C}^2$.
 
-The consequence is a **structural identification**:
+The consequence is a structural identification:
 
 > The biquaternion algebra $\mathbb{B}$ contains the complete algebraic structure of a spin-1/2 quantum-mechanical system.
 
 
-This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about **where** this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
+This article develops the identification in detail. It is not an article about new physics: the physics it describes (spin-1/2 quantum physics) is standard and well established. The article is about where this standard physics lives within the biquaternion algebra, and what structural features of the biquaternion framework it reveals.
 
 The article is organized as follows. First the two-state system of quantum physics is recalled. Then the isomorphism $\mathbb{B} \cong M_2(\mathbb{C})$ is stated explicitly. Then the identification of $\mathbb{B}_{\Psi}$ with the observables is given, and the idempotents with the states. Then the plain form is stated as the Born rule, with the pairing formula as its $2\times2$ reading. Then the relation to the four-vector space $\mathbb{B}_{\Phi}$ is discussed. The article closes with a summary of what the biquaternion framework does and does not contain.
 
@@ -23,7 +23,7 @@ A **two-state quantum system** is a quantum system whose state space is a two-di
 
 ### States
 
-A **pure state** is a unit vector $\tilde{Ξ} \in \mathbb{C}^2$, up to a global phase. In the density matrix formalism, the pure state is represented by the rank-1 projector
+A pure state is a unit vector $\tilde{Ξ} \in \mathbb{C}^2$, up to a global phase. In the density matrix formalism, the pure state is represented by the rank-1 projector
 
 $$
 \rho_{\mathrm{sp}} = |\tilde{Ξ}\rangle\langle\tilde{Ξ}|,
@@ -35,7 +35,7 @@ A general (mixed) state is a positive semidefinite Hermitian operator with trace
 
 ### Observables
 
-An **observable** is a Hermitian operator $A$ on $\mathbb{C}^2$. In the Pauli basis, every Hermitian operator has the form
+An observable is a Hermitian operator $A$ on $\mathbb{C}^2$. In the Pauli basis, every Hermitian operator has the form
 
 $$
 A = a_0 I_2 + a_1 \sigma_1 + a_2 \sigma_2 + a_3 \sigma_3,
@@ -51,7 +51,7 @@ The observables form a real 4-dimensional vector space, closed under addition an
 
 ### The Born Rule
 
-For a state $\rho$ and an observable $A$, the **expectation value** is
+For a state $\rho$ and an observable $A$, the expectation value is
 
 $$
 \langle A \rangle_\rho = \mathrm{Tr}(\rho A).
@@ -61,7 +61,7 @@ For a pure state $\rho_{\mathrm{sp}} = |\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and
 
 ### Spin-1/2
 
-The **spin-1/2 system** is the specific physical realization of a two-state system in which the observables are the spin components
+The spin-1/2 system is the specific physical realization of a two-state system in which the observables are the spin components
 
 $$
 S_\eta =\frac{\hbar}{2}\sigma_\eta, \qquad \eta = 1, 2, 3.
@@ -73,7 +73,7 @@ $$
 \tilde\Pi_{1,2}^{\vec u} = \frac{1}{2}\left(I_2 \pm \vec u\cdot\boldsymbol{\sigma}\right).
 $$
 
-These are Hermitian, idempotent, and of trace 1. They are the **pure-state projectors** of the spin system.
+These are Hermitian, idempotent, and of trace 1. They are the pure-state projectors of the spin system.
 
 The group of spin rotations is $SU(2)$, which acts on the spinor space $\mathbb{C}^2$ and is the double cover of the rotation group $SO(3)$.
 
@@ -117,23 +117,23 @@ $$
 \tilde H_\Psi \mapsto h_t I_2 + h'_x \sigma_1 + h'_y \sigma_2 + h'_z \sigma_3.
 $$
 
-This is a **Hermitian $2 \times 2$ matrix**. So $\mathbb{B}_{\Psi}$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
+This is a Hermitian $2 \times 2$ matrix. So $\mathbb{B}_{\Psi}$ is isomorphic to the space of Hermitian operators on $\mathbb{C}^2$.
 
-**Anti-Hermitian subspace $\mathbb{B}_{\Phi}$.** A general element is $\tilde{Q} = i x_0 e_t + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ with $x_\eta \in \mathbb{R}$. Under the isomorphism:
+Anti-Hermitian subspace $\mathbb{B}_{\Phi}$. A general element is $\tilde{Q} = i x_0 e_t + x_1 \vec e_x + x_2 \vec e_y + x_3 \vec e_z$ with $x_\eta \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde{Q} \mapsto i x_0 I_2 - i x_1 \sigma_1 - i x_2 \sigma_2 - i x_3 \sigma_3 = i\left(x_0 I_2 - x_1\sigma_1 - x_2\sigma_2 - x_3\sigma_3\right).
 $$
 
-This is $i$ times a Hermitian matrix, i.e., an **anti-Hermitian** matrix. So $\mathbb{B}_{\Phi}$ is isomorphic to the space of anti-Hermitian operators on $\mathbb{C}^2$.
+This is $i$ times a Hermitian matrix, i.e., an anti-Hermitian matrix. So $\mathbb{B}_{\Phi}$ is isomorphic to the space of anti-Hermitian operators on $\mathbb{C}^2$.
 
-**Real quaternion subspace $\mathbb{H}_\mathbb{B}$.** A general element is $\tilde{Q} = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $q_\eta \in \mathbb{R}$. Under the isomorphism:
+Real quaternion subspace $\mathbb{H}_\mathbb{B}$. A general element is $\tilde{Q} = q_t e_t + q_x \vec e_x + q_y \vec e_y + q_z \vec e_z$ with $q_\eta \in \mathbb{R}$. Under the isomorphism:
 
 $$
 \tilde{Q} \mapsto q_t I_2 - i q_x\sigma_1 - i q_y\sigma_2 - i q_z\sigma_3 = \begin{pmatrix} q_t - i q_z & -i(q_x - i q_y) \ -i(q_x + i q_y) & q_t + i q_z \end{pmatrix}.
 $$
 
-This is a four-real-dimensional subspace of $M_2(\mathbb{C})$: the span of $I_2, i\sigma_1, i\sigma_2, i\sigma_3$, equivalently the matrices of the form $\begin{pmatrix} x & -\bar{y} \ y & \bar{x} \end{pmatrix}$ with $x, y \in \mathbb{C}$. It is a subalgebra isomorphic to $\mathbb{H}$. It is **not** the full algebra $M_2(\mathbb{C})$: the full algebra is the image of the whole of $\mathbb{B}$ (eight real dimensions), obtained by letting all four coefficients be complex.
+This is a four-real-dimensional subspace of $M_2(\mathbb{C})$: the span of $I_2, i\sigma_1, i\sigma_2, i\sigma_3$, equivalently the matrices of the form $\begin{pmatrix} x & -\bar{y} \ y & \bar{x} \end{pmatrix}$ with $x, y \in \mathbb{C}$. It is a subalgebra isomorphic to $\mathbb{H}$. It is not the full algebra $M_2(\mathbb{C})$: the full algebra is the image of the whole of $\mathbb{B}$ (eight real dimensions), obtained by letting all four coefficients be complex.
 
 ## The Observables
 
@@ -141,15 +141,15 @@ The identification of $\mathbb{B}_{\Psi}$ with the observables is direct.
 
 **Statement.** The Hermitian subspace $\mathbb{B}_{\Psi}$ is isomorphic, as a real vector space, to the space of observables of a spin-1/2 quantum system.
 
-**Proof.** Under the isomorphism of the previous section, an element $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ with components $(h_t, h'_x, h'_y, h'_z)$ maps to the Hermitian matrix $h_t I_2 + h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.
+Proof. Under the isomorphism of the previous section, an element $\tilde H_\Psi \in \mathbb{B}_{\Psi}$ with components $(h_t, h'_x, h'_y, h'_z)$ maps to the Hermitian matrix $h_t I_2 + h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$. This is exactly the general Hermitian operator on $\mathbb{C}^2$, which is the general observable of a two-state quantum system.
 
 ### Corollaries
 
-**Real dimension.** $\mathbb{B}_{\Psi}$ has real dimension 4, matching the dimension of the space of Hermitian $2\times 2$ matrices. This is the same as the dimension of the space of observables of a two-state system.
+Real dimension. $\mathbb{B}_{\Psi}$ has real dimension 4, matching the dimension of the space of Hermitian $2\times 2$ matrices. This is the same as the dimension of the space of observables of a two-state system.
 
-**Basis.** The four elements $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ of $\mathbb{B}_{\Psi}$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.
+Basis. The four elements $e_t, i\vec e_x, i\vec e_y, i\vec e_z$ of $\mathbb{B}_{\Psi}$ map to $I_2, \sigma_1, \sigma_2, \sigma_3$ respectively. These are the standard generators of the observable algebra.
 
-**The identity and the traceless part.** The scalar part $h_t e_t$ maps to the identity component $h_t I_2$, which is the "trivial" observable. The vector part $i(h'_x \vec e_x + h'_y \vec e_y + h'_z \vec e_z)$ maps to the scalar-free part $h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$. The trace of an element of $\mathbb{B}_{\Psi}$ is $2c h_t$ (twice the scalar part), which corresponds to the trace of the matrix.
+The identity and the traceless part. The scalar part $h_t e_t$ maps to the identity component $h_t I_2$, which is the "trivial" observable. The vector part $i(h'_x \vec e_x + h'_y \vec e_y + h'_z \vec e_z)$ maps to the scalar-free part $h'_x\sigma_1 + h'_y\sigma_2 + h'_z\sigma_3$. The trace of an element of $\mathbb{B}_{\Psi}$ is $2c h_t$ (twice the scalar part), which corresponds to the trace of the matrix.
 
 ## The Idempotents as Pure States
 
@@ -163,16 +163,16 @@ $$
 
 where $\vec u = u_x \vec e_x + u_y \vec e_y + u_z \vec e_z$ is a unit pure real quaternion, $u_x^2 + u_y^2 + u_z^2 = 1$.
 
-**Properties.** Each such $\tilde\Pi_{1,2}$ satisfies:
+Properties. Each such $\tilde\Pi_{1,2}$ satisfies:
 
-1. **Hermitian:** $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{B}_{\Psi}$.
-2. **Idempotent:** $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.
-3. **Normalised:** $\langle\tilde\Pi_{1,2},e_t\rangle_{*} = \tfrac12\langle e_t\rangle$ (the reduction reads this as $2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$).
-4. **Rank one:** in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
+1. Hermitian: $\tilde\Pi_{1,2}^{*} = \tilde\Pi_{1,2}$, since $\tilde\Pi_{1,2} \in \mathbb{B}_{\Psi}$.
+2. Idempotent: $\tilde\Pi_{1,2}^2 = \tilde\Pi_{1,2}$.
+3. Normalised: $\langle\tilde\Pi_{1,2},e_t\rangle_{*} = \tfrac12\langle e_t\rangle$ (the reduction reads this as $2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 2\,\mathrm{Sc}(\tilde\Pi_{1,2}) = 1$).
+4. Rank one: in the matrix representation, $\tilde\Pi_{1,2}$ maps to a rank-1 projection matrix.
 
-**Proof.** The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{Ζ} i)$ with $\tilde{Ζ}$ a root of $-1$. The idempotents in $\mathbb{B}_{\Psi}$ correspond to the "real roots" $\tilde{Ζ} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent and normalisation properties are direct computations (article 3).
+Proof. The idempotent form follows from the classification in article 4: every idempotent of $\mathbb{B}$ is $\tfrac{1}{2}(e_t \pm \tilde{Ζ} i)$ with $\tilde{Ζ}$ a root of $-1$. The idempotents in $\mathbb{B}_{\Psi}$ correspond to the "real roots" $\tilde{Ζ} = \pm \vec u$ with $\vec u$ a unit pure real quaternion. The Hermitian, idempotent and normalisation properties are direct computations (article 3).
 
-**Identification with spin projectors.** Under the isomorphism, $\tilde\Pi_{1,2}$ maps to
+Identification with spin projectors. Under the isomorphism, $\tilde\Pi_{1,2}$ maps to
 
 $$
 \tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm u_x\sigma_1 \pm u_y\sigma_2 \pm u_z\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \vec u\cdot\boldsymbol{\sigma}\right).
@@ -180,7 +180,7 @@ $$
 
 This is exactly the spin projector $|\pm\vec u\rangle\langle\pm\vec u|$ onto the spin-up or spin-down state along the direction $\vec u$.
 
-So **every spin-1/2 pure state corresponds to exactly one idempotent of $\mathbb{B}_{\Psi}$**, and vice versa.
+So every spin-1/2 pure state corresponds to exactly one idempotent of $\mathbb{B}_{\Psi}$, and vice versa.
 
 ## The Hermitian Form as the Born Rule
 
@@ -192,9 +192,9 @@ $$
 \boxed{\;\langle \tilde H_\Psi \rangle_{\tilde\Pi} = \frac{\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}} = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})\;}
 $$
 
-is **real** and is the **Born-rule expectation value** of $\tilde H_\Psi$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
+is real and is the Born-rule expectation value of $\tilde H_\Psi$ in the state $\tilde\Pi$; in the $2\times2$ image it reads $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
 
-**Proof.** Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and $\tilde H_\Psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ maps to $\mathrm{Sc}(|\tilde{Ξ}\rangle\langle\tilde{Ξ}| H) = \tfrac12\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ is the same quantity, and the reduction formula is its $2\times2$ reading.
+Proof. Under the isomorphism, $\tilde\Pi$ maps to the projector $|\tilde{Ξ}\rangle\langle\tilde{Ξ}|$ and $\tilde H_\Psi$ maps to the Hermitian matrix $H$. The Hermitian form $\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ maps to $\mathrm{Sc}(|\tilde{Ξ}\rangle\langle\tilde{Ξ}| H) = \tfrac12\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$; dividing by $\langle\tilde\Pi,e_t\rangle_{*}=\tfrac12$ gives $\langle\tilde{Ξ}|H|\tilde{Ξ}\rangle$, which is the standard Born-rule expectation. The biquaternion expression $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$ is the same quantity, and the reduction formula is its $2\times2$ reading.
 
 ### Example
 
@@ -232,20 +232,20 @@ So the normalised Hermitian form reproduces the standard spin-1/2 expectation va
 
 ### The Spinor Space
 
-The state space of a spin-1/2 particle is the **spinor space** $\mathbb{C}^2$. It is a complex two-dimensional vector space, i.e., a real four-dimensional vector space.
+The state space of a spin-1/2 particle is the spinor space $\mathbb{C}^2$. It is a complex two-dimensional vector space, i.e., a real four-dimensional vector space.
 
 ### The Action of the Algebra
 
 The biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$ acts on the spinor space $\mathbb{C}^2$ by matrix multiplication. The action is complex-linear in the spinor.
 
-The action of $\mathbb{B}$ on $\mathbb{C}^2$ is the **fundamental representation** of $\mathbb{B}$. In the language of modules, $\mathbb{C}^2$ is the unique irreducible module of $\mathbb{B}$, and every finite-dimensional module is a direct sum of copies of it.
+The action of $\mathbb{B}$ on $\mathbb{C}^2$ is the fundamental representation of $\mathbb{B}$. In the language of modules, $\mathbb{C}^2$ is the unique irreducible module of $\mathbb{B}$, and every finite-dimensional module is a direct sum of copies of it.
 
 ### The Relation to $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$
 
 The subspaces $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ act on the spinor space in specific ways:
 
-- **Hermitian elements** (in $\mathbb{B}_{\Psi}$) act as **Hermitian operators** on $\mathbb{C}^2$. These are the observables, whose eigenvalues are real.
-- **Anti-Hermitian elements** (in $\mathbb{B}_{\Phi}$) act as **anti-Hermitian operators** on $\mathbb{C}^2$. These are the generators of $*$-unitary transformations, whose exponentials give the $*$-unitary group $\mathrm{U}(2)$.
+- Hermitian elements (in $\mathbb{B}_{\Psi}$) act as Hermitian operators on $\mathbb{C}^2$. These are the observables, whose eigenvalues are real.
+- Anti-Hermitian elements (in $\mathbb{B}_{\Phi}$) act as anti-Hermitian operators on $\mathbb{C}^2$. These are the generators of $*$-unitary transformations, whose exponentials give the $*$-unitary group $\mathrm{U}(2)$.
 
 The action of the algebra on the spinor space is the fundamental operation of quantum physics: the observables act on the states, and the generators act on the states to produce the dynamics.
 
@@ -259,7 +259,7 @@ The precise identification is:
 - Each summand is a copy of the spinor space.
 - The biquaternion algebra acts on each summand by matrix multiplication.
 
-So the spinor space is a **summand** of the biquaternion algebra viewed as a left module, not a subspace of it in the naive sense. The states of a spin-1/2 system live in this summand, and the algebra acts on them by the module structure.
+So the spinor space is a summand of the biquaternion algebra viewed as a left module, not a subspace of it in the naive sense. The states of a spin-1/2 system live in this summand, and the algebra acts on them by the module structure.
 
 This is a subtle point, but it is the correct statement. The simpler (and slightly imprecise) formulation is to say that the spinor space is the "fundamental representation" of the algebra, and to identify the states with elements of $\mathbb{C}^2$. The precise statement involves the module decomposition.
 
@@ -269,24 +269,24 @@ The $*$-unitary biquaternions generate the spin rotation group, and the Hermitia
 
 ### $*$-Unitary Biquaternions
 
-A biquaternion $\tilde Q$ is **$*$-unitary** if $\tilde Q\tilde Q^{*} = e_t$. In the matrix representation, $\tilde Q$ maps to a $*$-unitary matrix. The group of $*$-unitary biquaternions is $\mathrm{U}(2)$.
+A biquaternion $\tilde Q$ is $*$-unitary if $\tilde Q\tilde Q^{*} = e_t$. In the matrix representation, $\tilde Q$ maps to a $*$-unitary matrix. The group of $*$-unitary biquaternions is $\mathrm{U}(2)$.
 
-The subgroup of $\mathrm{U}(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the **spin rotation group**. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{B}_{\Phi}$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.
+The subgroup of $\mathrm{U}(2)$ with determinant 1 (in the matrix representation) is $SU(2)$, which is the spin rotation group. It acts on the spinor space $\mathbb{C}^2$ by matrix multiplication, and its action on the material space $\mathbb{B}_{\Phi}$ (by rotor conjugation) is the group of spatial rotations $SO(3)$.
 
 So the **spin rotations of a spin-1/2 particle are realized in the biquaternion framework by the $SU(2)$ subgroup of unit-norm biquaternions**.
 
 ### Hermitian Biquaternions
 
-The Hermitian biquaternions in $\mathbb{B}_{\Psi}$ with unit norm are the **boost biquaternions** $\tilde U = \cosh(\theta_{\mathrm{rpd}}/2) + i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$. They generate the Lorentz boosts, and their action on $\mathbb{B}_{\Phi}$ is the rotor conjugation.
+The Hermitian biquaternions in $\mathbb{B}_{\Psi}$ with unit norm are the boost biquaternions $\tilde U = \cosh(\theta_{\mathrm{rpd}}/2) + i\sinh(\theta_{\mathrm{rpd}}/2)\vec u_{\mathrm b}$. They generate the Lorentz boosts, and their action on $\mathbb{B}_{\Phi}$ is the rotor conjugation.
 
-In the quantum-mechanical context, the boosts are **not** $*$-unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-$*$-unitary but still **invertible**: a boost has unit norm, so it inverts to $\tilde U^{\natural}$, and it represents a reversible change of state — unlike the rank-one idempotent projections, which are not invertible.
+In the quantum-mechanical context, the boosts are not $*$-unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-$*$-unitary but still invertible: a boost has unit norm, so it inverts to $\tilde U^{\natural}$, and it represents a reversible change of state — unlike the rank-one idempotent projections, which are not invertible.
 
 The full group of unit-norm biquaternions is $SL(2,\mathbb{C})$, which is the double cover of the proper orthochronous Lorentz group $SO^+(1,3)$. It contains $SU(2)$ as the compact subgroup of spatial rotations, and the Hermitian elements as the non-compact set of boosts.
 
 So the biquaternion framework contains:
 
-- **$SU(2)$:** spin rotations of the quantum system.
-- **$SL(2,\mathbb{C})$:** the full Lorentz group, containing the spin rotations and the boosts.
+- $SU(2)$: spin rotations of the quantum system.
+- $SL(2,\mathbb{C})$: the full Lorentz group, containing the spin rotations and the boosts.
 
 The quantum-mechanical sector is $SU(2)$; the relativistic extension is $SL(2,\mathbb{C})$.
 
@@ -312,7 +312,7 @@ which is a first-order equation for the field $\tilde{Ξ}$. Here $k_m=mc/\hbar$ 
 
 ### The Interpretation as a Spinor Field
 
-The biquaternion field $\tilde{Ξ}$ is a **spinor field** on the four-dimensional material space $\mathbb{B}_{\Phi}$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a **pair of Weyl spinors** (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.
+The biquaternion field $\tilde{Ξ}$ is a spinor field on the four-dimensional material space $\mathbb{B}_{\Phi}$. At each point of spacetime, it takes values in the biquaternion algebra. Equivalently, at each point, the field can be viewed as a pair of Weyl spinors (one left-handed, one right-handed), following the standard identification of the biquaternion algebra with $M_2(\mathbb{C})$ and its action on $\mathbb{C}^2$.
 
 The Dirac equation is the equation of motion for a single spin-1/2 field. Its solutions describe relativistic spin-1/2 particles: electrons, muons, quarks, and other fermions.
 
@@ -320,18 +320,18 @@ The Dirac equation is the equation of motion for a single spin-1/2 field. Its so
 
 The biquaternionic Dirac equation contains:
 
-- The **kinematics** of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ for plane-wave solutions.
-- The **spin structure**: the polarization biquaternion $\tilde{Ξ}_{0}$ in the plane-wave solution has two independent components, corresponding to the two spin states.
-- The **mass term**: the linear, chirality-off-diagonal mass term $k_m\tilde{Ξ}_{L,R}$, which couples the two chiral components of the spinor.
+- The kinematics of a relativistic spin-1/2 particle: the mass-shell condition $\tilde P_{\Phi}\tilde P_{\Phi}^{\natural}= -m^{2}\,c^{2}$ for plane-wave solutions.
+- The spin structure: the polarization biquaternion $\tilde{Ξ}_{0}$ in the plane-wave solution has two independent components, corresponding to the two spin states.
+- The mass term: the linear, chirality-off-diagonal mass term $k_m\tilde{Ξ}_{L,R}$, which couples the two chiral components of the spinor.
 
 ### What the Dirac Equation Does Not Contain
 
 The biquaternionic Dirac equation, as presented, does not contain:
 
-- **Quantization**: the promotion of the classical field $\tilde{Ξ}$ to an operator-valued field $\tilde{Ξ}_{\mathrm{fop}}$ on Fock space.
-- **The full four-component Dirac spinor**: the biquaternion formulation describes the field as a pair of Weyl spinors (left-handed and right-handed). The four-component Dirac spinor, including the antiparticle components, is obtained by taking the direct sum of this pair with its complex conjugate.
-- **Many-body structure**: a single Dirac field describes a single particle (or a single field mode); many-particle states require tensor products.
-- **Interactions beyond electromagnetism**: the weak and strong interactions require additional structure beyond the biquaternion algebra.
+- Quantization: the promotion of the classical field $\tilde{Ξ}$ to an operator-valued field $\tilde{Ξ}_{\mathrm{fop}}$ on Fock space.
+- The full four-component Dirac spinor: the biquaternion formulation describes the field as a pair of Weyl spinors (left-handed and right-handed). The four-component Dirac spinor, including the antiparticle components, is obtained by taking the direct sum of this pair with its complex conjugate.
+- Many-body structure: a single Dirac field describes a single particle (or a single field mode); many-particle states require tensor products.
+- Interactions beyond electromagnetism: the weak and strong interactions require additional structure beyond the biquaternion algebra.
 
 ## What the Biquaternion Framework Contains
 
@@ -339,31 +339,31 @@ We can now make a precise statement about what the biquaternion framework contai
 
 ### Contains
 
-1. **The full algebra of observables of a spin-1/2 system.** The Hermitian subspace $\mathbb{B}_{\Psi}$ is the space of Hermitian operators on $\mathbb{C}^2$, i.e., the observables.
+1. The full algebra of observables of a spin-1/2 system. The Hermitian subspace $\mathbb{B}_{\Psi}$ is the space of Hermitian operators on $\mathbb{C}^2$, i.e., the observables.
 
-2. **The pure states.** The idempotents of $\mathbb{B}_{\Psi}$ are the rank-1 idempotents, i.e., the pure states of a spin-1/2 system.
+2. The pure states. The idempotents of $\mathbb{B}_{\Psi}$ are the rank-1 idempotents, i.e., the pure states of a spin-1/2 system.
 
-3. **The Born rule.** The normalised Hermitian form $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born-rule expectation; in the $2\times2$ image it reads $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
+3. The Born rule. The normalised Hermitian form $\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}/\langle\tilde\Pi,e_t\rangle_{*}$ is the Born-rule expectation; in the $2\times2$ image it reads $2\,\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*}) = 2\mathrm{Sc}(\tilde\Pi\tilde H_\Psi^{*})$.
 
-4. **The spin rotation group.** The $SU(2)$ subgroup of unit-norm biquaternions acts as the spin rotation group.
+4. The spin rotation group. The $SU(2)$ subgroup of unit-norm biquaternions acts as the spin rotation group.
 
-5. **The relativistic extension.** The full $SL(2,\mathbb{C})$ group of unit-norm biquaternions acts as the Lorentz group, and the Hermitian elements of $\mathbb{B}_{\Psi}$ generate the boosts.
+5. The relativistic extension. The full $SL(2,\mathbb{C})$ group of unit-norm biquaternions acts as the Lorentz group, and the Hermitian elements of $\mathbb{B}_{\Psi}$ generate the boosts.
 
-6. **The Dirac equation.** The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
+6. The Dirac equation. The biquaternionic Dirac equation is the equation of motion for a relativistic spin-1/2 field, expressed in terms of a pair of Weyl spinors.
 
-7. **Maxwell's equations.** The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{iqA_{\mu}}{\hbar}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
+7. Maxwell's equations. The biquaternion framework contains Maxwell's equations in the form $\tilde\nabla_\Phi\tilde{F} = -\sqrt{\mu}\,\tilde{J}_{\Phi}$ (companion article). The coupling of the spinor field to the electromagnetic field — the analogue of the standard minimal coupling $\partial/\partial R_\mu \to \partial/\partial R_\mu -\frac{iqA_{\mu}}{\hbar}$ — has a natural biquaternion form, but the precise expression depends on the representation conventions and is not developed in this article.
 
 ### Does Not Contain
 
-1. **Quantization.** The framework is classical. Promoting fields to operators requires additional structure (a Hilbert space, a Fock space, a quantization prescription).
+1. Quantization. The framework is classical. Promoting fields to operators requires additional structure (a Hilbert space, a Fock space, a quantization prescription).
 
-2. **Bosonic fields of higher spin.** The algebra's modules carry only spin one-half; the four-vector is carried by the adjoint action on $\mathbb{B}$, and its scalar component by the centre. Spin-3/2 and spin-2 have no subcarrier inside $\mathbb{B}$, and fields of higher spin require tensor products or larger algebras.
+2. Bosonic fields of higher spin. The algebra's modules carry only spin one-half; the four-vector is carried by the adjoint action on $\mathbb{B}$, and its scalar component by the centre. Spin-3/2 and spin-2 have no subcarrier inside $\mathbb{B}$, and fields of higher spin require tensor products or larger algebras.
 
-3. **Many-body structure.** A single spin-1/2 particle (or a single spin-1/2 field) is the natural content. Multiparticle states and entangled systems require tensor products of the algebra.
+3. Many-body structure. A single spin-1/2 particle (or a single spin-1/2 field) is the natural content. Multiparticle states and entangled systems require tensor products of the algebra.
 
-4. **Dynamics beyond the Dirac equation.** The framework contains the free Dirac equation and its coupling to electromagnetism. It does not contain the weak or strong interactions.
+4. Dynamics beyond the Dirac equation. The framework contains the free Dirac equation and its coupling to electromagnetism. It does not contain the weak or strong interactions.
 
-5. **The measurement problem.** The framework contains the idempotent projection as a formal operation, but the **physical interpretation** of measurement is not specified.
+5. The measurement problem. The framework contains the idempotent projection as a formal operation, but the physical interpretation of measurement is not specified.
 
 So the correct statement is:
 
@@ -375,19 +375,19 @@ This is a strong structural statement. The biquaternion algebra is not a specula
 
 The identification raises several questions.
 
-1. **Quantization.** The biquaternionic Dirac equation is classical. Can it be quantized? What is the natural Hilbert space, and how does the biquaternion algebra extend to the quantized theory?
+1. Quantization. The biquaternionic Dirac equation is classical. Can it be quantized? What is the natural Hilbert space, and how does the biquaternion algebra extend to the quantized theory?
 
-2. **Many-body extension.** The biquaternion algebra contains one spin-1/2 degree of freedom. How does it extend to multiple spin-1/2 particles, and how does the tensor product structure emerge?
+2. Many-body extension. The biquaternion algebra contains one spin-1/2 degree of freedom. How does it extend to multiple spin-1/2 particles, and how does the tensor product structure emerge?
 
-3. **The state space.** The spinor space $\mathbb{C}^2$ is the fundamental representation of the biquaternion algebra. Is there a natural interpretation of the spinor space in the material/informational dichotomy? Does the spinor space belong to $\mathbb{B}_{\Phi}$, or is it a separate structure?
+3. The state space. The spinor space $\mathbb{C}^2$ is the fundamental representation of the biquaternion algebra. Is there a natural interpretation of the spinor space in the material/informational dichotomy? Does the spinor space belong to $\mathbb{B}_{\Phi}$, or is it a separate structure?
 
-4. **The role of $\mathbb{B}_{\Phi}$.** In the identification, $\mathbb{B}_{\Psi}$ is the space of observables and $\mathbb{B}_{\Phi}$ is the space of generators. The state space is the fundamental module, which is not directly $\mathbb{B}_{\Phi}$ or $\mathbb{B}_{\Psi}$. Is there a natural interpretation of $\mathbb{B}_{\Phi}$ in the spin-1/2 framework (beyond being the generators of $*$-unitary evolution)?
+4. The role of $\mathbb{B}_{\Phi}$. In the identification, $\mathbb{B}_{\Psi}$ is the space of observables and $\mathbb{B}_{\Phi}$ is the space of generators. The state space is the fundamental module, which is not directly $\mathbb{B}_{\Phi}$ or $\mathbb{B}_{\Psi}$. Is there a natural interpretation of $\mathbb{B}_{\Phi}$ in the spin-1/2 framework (beyond being the generators of $*$-unitary evolution)?
 
-5. **The extension to higher spins.** The algebra's modules carry only spin one-half, and its adjoint action adds the vector of spin one; spin-3/2 and spin-2 have no subcarrier inside $\mathbb{B}$. How does the framework reach them? They would require tensor products or larger algebras.
+5. The extension to higher spins. The algebra's modules carry only spin one-half, and its adjoint action adds the vector of spin one; spin-3/2 and spin-2 have no subcarrier inside $\mathbb{B}$. How does the framework reach them? They would require tensor products or larger algebras.
 
-6. **The role of the Weyl spinors.** The biquaternion Dirac equation is expressed in terms of a pair of Weyl spinors. The full Dirac spinor is four-component. What is the precise relation between the two, and how does the chirality structure of the Standard Model fit into the biquaternion framework?
+6. The role of the Weyl spinors. The biquaternion Dirac equation is expressed in terms of a pair of Weyl spinors. The full Dirac spinor is four-component. What is the precise relation between the two, and how does the chirality structure of the Standard Model fit into the biquaternion framework?
 
-7. **The minimal coupling to electromagnetism.** The precise form of the coupling of the biquaternionic Dirac field to the electromagnetic field, in the biquaternion framework, deserves a dedicated treatment.
+7. The minimal coupling to electromagnetism. The precise form of the coupling of the biquaternionic Dirac field to the electromagnetic field, in the biquaternion framework, deserves a dedicated treatment.
 
 These questions are open.
 

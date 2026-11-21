@@ -2,19 +2,19 @@
 
 ## Introduction
 
-**The claim of this article is that the object of the relativistic quantum theory of this corpus is a fluid, and that the fluid is not a model laid over the theory but the algebra's own factorisation of one element.** The object is one element $\tilde\Xi$ of $\mathbb{B}$ at each event. Its polar word writes that element as four factors. Each factor is a variable a fluid is described by: a density, a velocity, a spin direction and an action. The word consumes every real datum of the element, so the reading adds no field and loses no datum.
+The claim of this article is that the object of the relativistic quantum theory of this corpus is a fluid, and that the fluid is not a model laid over the theory but the algebra's own factorisation of one element. The object is one element $\tilde\Xi$ of $\mathbb{B}$ at each event. Its polar word writes that element as four factors. Each factor is a variable a fluid is described by: a density, a velocity, a spin direction and an action. The word consumes every real datum of the element, so the reading adds no field and loses no datum.
 
-Three statements follow, and the article takes them in order. **The reading is exact where it exists**, because the word is a bijection on the invertibles of the algebra. **The reading has a domain**, because the word exists iff $N(\tilde\Xi)\neq0$, and the locus where it fails is the zero-divisor cone. **The reading has a price, and the price is that domain**: every statement of this block is a statement about the $N$-regular field.
+Three statements follow, and the article takes them in order. The reading is exact where it exists, because the word is a bijection on the invertibles of the algebra. The reading has a domain, because the word exists iff $N(\tilde\Xi)\neq0$, and the locus where it fails is the zero-divisor cone. The reading has a price, and the price is that domain: every statement of this block is a statement about the $N$-regular field.
 
 What the reading does not do is stated near the end. It is not second quantization, not thermodynamics, not a hidden-variable ontology, and not a superfluid in the condensed-matter sense. Each of those four is a distinct subject with its own article elsewhere in the corpus, and the fluid of this block is none of them.
 
-**The block has thirty-five entries and this is the first.** It is the first of twenty-six on the one element; between it and the rest of those twenty-six lies the
+The block has thirty-five entries and this is the first. It is the first of twenty-six on the one element; between it and the rest of those twenty-six lies the
 fluid layer, nine articles on ordinary fluid mechanics: the Euler and continuity equations in biquaternionic form, the vorticity form, viscosity and the dissipation
 function, the equation of state, the reverse Madelung map with its direction, its Clebsch hierarchy and its one exceptional linear case. The nine state a fluid's data
 and the obstructions to a wave reading — eight of them with no element of the algebra and no field at all — so that the reading that follows rests on a base stated
 in advance.
 
-**This article states the framework of the twenty-five that follow the fluid layer: the object, the word, the four variables, the domain and the four denials.** The rest is grouped by
+This article states the framework of the twenty-five that follow the fluid layer: the object, the word, the four variables, the domain and the four denials. The rest is grouped by
 spin, and the scalar group is a ladder. [The Schrödinger Fluid](the-schrodinger-fluid.html) and [The Charged Schrödinger Fluid](the-charged-schrodinger-fluid.html)
 take the first-order rung, on which the boost and the rotor are both absent, the density is the conserved one and no norm constrains the velocity.
 [The Spin-Zero Fluid](the-spin-zero-fluid.html) takes the scalar case, in which the word collapses to two factors, with [The Quantum Stress Tensor of the
@@ -37,7 +37,7 @@ $$
 
 with the basis $e_t=1$ and $\vec e_\eta^{2}=-e_t$. Nothing stands behind the element. There is no column, no spinor index, no separate state space, no minimal left ideal, no projector and no Clifford algebra. The field is the element and the operator is an element.
 
-**The two equations of the block are the algebra's own operators acting on that element.** The scalar case is the biquaternionic Klein–Gordon equation
+The two equations of the block are the algebra's own operators acting on that element. The scalar case is the biquaternionic Klein–Gordon equation
 
 $$
 \left(\Box_\Phi-k_m^{2}\right)\tilde\Xi=0,
@@ -54,17 +54,17 @@ $$
 
 Both are the subjects of their own articles ([the Klein–Gordon equation in biquaternionic form](the-klein-gordon-equation-in-biquaternionic-form.html), [the Dirac equation in biquaternionic form](the-dirac-equation-in-biquaternionic-form.html)), and this article reads neither derivation.
 
-**"Relativistic" is a property of the algebra and not an add-on.** A Lorentz transformation is invertible acting by multiplication, $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $N(\tilde M)=1$, and the quaternionic norm $N=\langle\tilde\Xi\rangle_{\natural}$ is central, so it is carried into itself. The d'Alembertian is central. Nothing is added to make the equation covariant; the covariance is the multiplication.
+"Relativistic" is a property of the algebra and not an add-on. A Lorentz transformation is invertible acting by multiplication, $\tilde\Xi\mapsto\tilde M\tilde\Xi$ with $N(\tilde M)=1$, and the quaternionic norm $N=\langle\tilde\Xi\rangle_{\natural}$ is central, so it is carried into itself. The d'Alembertian is central. Nothing is added to make the equation covariant; the covariance is the multiplication.
 
-**"Quantum" in this block is quantum-mechanical and not quantized.** The constant $\hbar$ enters twice: through the wave number $k_m=mc/\hbar$, and through the phase, which carries the action in units of $\hbar$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Quantum Fields*.
+"Quantum" in this block is quantum-mechanical and not quantized. The constant $\hbar$ enters twice: through the wave number $k_m=mc/\hbar$, and through the phase, which carries the action in units of $\hbar$. One field is present. There is no Fock space, no creation operator, no vacuum state and no trace. The block is first-quantized throughout, and the quantized field is the subject of *Biquaternion Quantum Fields*.
 
 ## Why a Fluid Is the Right Word
 
-**The objection has to come first.** A wave equation is not a fluid, and calling it one is cheap. Any complex field can be written as a modulus times a phase and the modulus called a density. A rewriting that decorates an equation with fluid words has explained nothing.
+The objection has to come first. A wave equation is not a fluid, and calling it one is cheap. Any complex field can be written as a modulus times a phase and the modulus called a density. A rewriting that decorates an equation with fluid words has explained nothing.
 
 **The answer is the count, and the count is exact.** The element has eight real data. The word has a scale, one number; an angle, one; a boost, which is a rapidity and a unit axis, three; and a rotor, which is an angle and a unit axis, three. That is $1+1+3+3=8$. The count uses every datum and leaves no parameter free. A re-description whose parameters can vary is a model of the field; a re-description whose parameters cannot vary is the field in other coordinates. The word is the second kind.
 
-**The factors are of four different types, and that is why the reading is a fluid and not a relabelling.** The scale is real and central, the phase is central imaginary, the boost is Hermitian positive, and the rotor is a real unit quaternion. Four algebraically distinct objects, four distinct physical roles. The word is
+The factors are of four different types, and that is why the reading is a fluid and not a relabelling. The scale is real and central, the phase is central imaginary, the boost is Hermitian positive, and the rotor is a real unit quaternion. Four algebraically distinct objects, four distinct physical roles. The word is
 
 $$
 \tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},
@@ -78,7 +78,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\
 
 ### The four variables
 
-**A fluid at an event is described by a density, a velocity and the internal variables that the fluid carries.** The word supplies exactly those, and it supplies nothing else.
+A fluid at an event is described by a density, a velocity and the internal variables that the fluid carries. The word supplies exactly those, and it supplies nothing else.
 
 | factor | type | range | fluid variable | read from |
 | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\
 | $\tilde U_{\Psi,\mathrm b}$ | Hermitian positive | $\theta_{\mathrm{rpd}}\ge0$, unit axis $\vec u_{\mathrm b}$ | four-velocity, $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ | the boost |
 | $\tilde u_{\mathrm r}$ | real unit | $\theta_{\mathrm{axr}}\in[0,2\pi]$, unit axis $\vec u_{\mathrm r}$ | spin direction, $\vec s=\tilde u_{\mathrm r}\vec e_z\tilde u_{\mathrm r}^{\natural}$ | the rotor |
 
-**The velocity and the spin are the two non-central factors, and each is read by its own bilinear.** The boost is the Hermitian factor and the rotor is the real-unitary factor, so the algebra separates what a fluid separates: the motion and the internal rotation. The current reads the density and the boost. The spin reads the density and the rotor. The phase is read by neither, and it is read only by the argument of the quaternionic norm.
+The velocity and the spin are the two non-central factors, and each is read by its own bilinear. The boost is the Hermitian factor and the rotor is the real-unitary factor, so the algebra separates what a fluid separates: the motion and the internal rotation. The current reads the density and the boost. The spin reads the density and the rotor. The phase is read by neither, and it is read only by the argument of the quaternionic norm.
 
 | bilinear | value | reads | does not read |
 | --- | --- | --- | --- |
@@ -95,15 +95,15 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\
 | $\tilde S_{\Psi}=\rho_{\mathrm{num}}\frac{\hbar}{2}i\vec s$ | a Hermitian element along $\vec s$ | $\rho_{\mathrm{num}}$, $\theta_{\mathrm{axr}}$, $\vec u_{\mathrm r}$ | $\theta_{\mathrm{pha}}$, $\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$ |
 | $\langle\tilde\Xi\rangle_{\natural}$ | $\rho_{\mathrm{num}}e^{2i\theta_{\mathrm{pha}}}$ | $\rho_{\mathrm{num}}$, $2\theta_{\mathrm{pha}}$ | the two frames |
 
-**The three rows are the fluid's whole observable content, and the last row is where the angle lives.** The angle enters no current and no spin. That is the precise sense in which the field carries an angle that no bilinear of the algebra sees, and it is the reason the phase can be moved between the factors of the word without consequence.
+The three rows are the fluid's whole observable content, and the last row is where the angle lives. The angle enters no current and no spin. That is the precise sense in which the field carries an angle that no bilinear of the algebra sees, and it is the reason the phase can be moved between the factors of the word without consequence.
 
-**The velocity row is the spinor row, and the scalar case reads its velocity from the phase.** $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ is the boost's own velocity and it is the four-velocity of the spinor fluid. A central field has $\tilde U_{\Psi,\mathrm b}=e_t$, so the formula returns $ic\,e_t$, the velocity of a field at rest, whatever the field's momentum. The scalar fluid's velocity is the phase gradient, $\tilde V_{\Phi}=\tilde P_{\Phi}/m$ with $\tilde P_{\Phi}=\tilde\nabla_\Phi S$, and the two agree in form, $\gamma(ic\,e_t+\vec v)$, because the momentum carries in its temporal component the $\gamma$ that the collapsed boost cannot supply. So *the current reads the density and the boost* is the spinor rule; the scalar rule is *the current reads the density and the phase*. [The Spin-Zero Fluid](the-spin-zero-fluid.html) works the second, and [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) the first.
+The velocity row is the spinor row, and the scalar case reads its velocity from the phase. $\tilde V_{\Phi}=ic\tilde U_{\Psi,\mathrm b}^{-2}$ is the boost's own velocity and it is the four-velocity of the spinor fluid. A central field has $\tilde U_{\Psi,\mathrm b}=e_t$, so the formula returns $ic\,e_t$, the velocity of a field at rest, whatever the field's momentum. The scalar fluid's velocity is the phase gradient, $\tilde V_{\Phi}=\tilde P_{\Phi}/m$ with $\tilde P_{\Phi}=\tilde\nabla_\Phi S$, and the two agree in form, $\gamma(ic\,e_t+\vec v)$, because the momentum carries in its temporal component the $\gamma$ that the collapsed boost cannot supply. So *the current reads the density and the boost* is the spinor rule; the scalar rule is *the current reads the density and the phase*. [The Spin-Zero Fluid](the-spin-zero-fluid.html) works the second, and [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html) the first.
 
-**The factor of two in the angle is not decoration.** The field carries $e^{i\theta_{\mathrm{pha}}}$ and the norm carries $e^{2i\theta_{\mathrm{pha}}}$, so every bilinear built from the norm runs at twice the field's rate. For a superposition of two branches the density beats at the difference of their rates and the norm's argument runs at their sum, and the density is insensitive to the sign of the angle.
+The factor of two in the angle is not decoration. The field carries $e^{i\theta_{\mathrm{pha}}}$ and the norm carries $e^{2i\theta_{\mathrm{pha}}}$, so every bilinear built from the norm runs at twice the field's rate. For a superposition of two branches the density beats at the difference of their rates and the norm's argument runs at their sum, and the density is insensitive to the sign of the angle.
 
 ## The Two Cases
 
-**The block has two cases, and they differ in how many factors survive and in whether the resulting system closes.**
+The block has two cases, and they differ in how many factors survive and in whether the resulting system closes.
 
 | | scalar case | spinor case |
 | --- | --- | --- |
@@ -116,7 +116,7 @@ with $\varrho>0$, $\theta_{\mathrm{pha}}\in(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, $\
 | domain | the cone is the nodal set | the cone is strictly larger than the nodal set |
 | article | [The Spin-Zero Fluid](the-spin-zero-fluid.html) | [The Spin-Half Fluid and the Takabayasi Correspondence](the-spin-half-fluid-and-the-takabayasi-correspondence.html) |
 
-**The scalar case closes because the boost has nothing to carry.** With a central field the boost is $e_t$ and the rotor is $\varepsilon e_t$, so two of the four factors collapse to the identity and a sign. A central element has $B^{2}=0$, so it lies on $\Sigma_{10}$, and there $\varepsilon=\pm1$ exactly; off that sector the sign of the scalar part is not a sign. One complex equation separates into two real equations, and the pair is the relativistic Madelung–Takabayasi system: a continuity equation and an energy equation.
+The scalar case closes because the boost has nothing to carry. With a central field the boost is $e_t$ and the rotor is $\varepsilon e_t$, so two of the four factors collapse to the identity and a sign. A central element has $B^{2}=0$, so it lies on $\Sigma_{10}$, and there $\varepsilon=\pm1$ exactly; off that sector the sign of the scalar part is not a sign. One complex equation separates into two real equations, and the pair is the relativistic Madelung–Takabayasi system: a continuity equation and an energy equation.
 
 **The spinor case does not close, and the failure is structural.** The derivative of the word separates into four brackets — scale, phase, boost connection, rotor connection — of four different algebraic types. The equation constrains them. No rule of the algebra fixes one from another, because the types are distinct. The non-closure is the underdetermination of the spin-half-fluid formulation, and it is the subject of [The Non-Uniqueness of the Spin-Half Fluid](the-non-uniqueness-of-the-spin-half-fluid.html).
 
@@ -130,56 +130,56 @@ $$
 
 The complement is the zero-divisor cone, a complex hypersurface: two real conditions, of real codimension two and of measure zero. There is no third case and no extension of the word to $N=0$.
 
-**The domain is a condition at each event, not an invariant of the flow.** $N(\tilde\Xi)\neq0$ is asked of the element at an event and is not conserved. The Klein–Gordon equation is second order, so a field that vanishes with a non-zero time derivative is off the nodal set at once: with $\Xi_t(0,x)=0$, $\partial_{t'}\Xi_t(0,x)$ an invertible element packet of width $2$ and $k_m=1$, the maximum modulus is $0.050$ at $t=0.05$ and $0.198$ at $t=0.2$. The Dirac field leaves the cone too, because the mass couples the two chiral pieces and a field carrying one piece alone does not keep one piece alone; [Why Biquaternions?](why-biquaternions.html) records the check, the modulus of the determinant rising from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$. Only the Schrödinger flow, which is left multiplication by an invertible element, has a multiplicative norm and a preserved cone. So the word is a chart on the field at an event, and the field can leave the chart's domain without leaving the equation.
+The domain is a condition at each event, not an invariant of the flow. $N(\tilde\Xi)\neq0$ is asked of the element at an event and is not conserved. The Klein–Gordon equation is second order, so a field that vanishes with a non-zero time derivative is off the nodal set at once: with $\Xi_t(0,x)=0$, $\partial_{t'}\Xi_t(0,x)$ an invertible element packet of width $2$ and $k_m=1$, the maximum modulus is $0.050$ at $t=0.05$ and $0.198$ at $t=0.2$. The Dirac field leaves the cone too, because the mass couples the two chiral pieces and a field carrying one piece alone does not keep one piece alone; [Why Biquaternions?](why-biquaternions.html) records the check, the modulus of the determinant rising from zero to $0.196$ at $t=0.2$ and $0.369$ at $t=0.4$. Only the Schrödinger flow, which is left multiplication by an invertible element, has a multiplicative norm and a preserved cone. So the word is a chart on the field at an event, and the field can leave the chart's domain without leaving the equation.
 
-**For the scalar field the cone is the nodal set.** On the centre $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}$, so $N=0$ iff $\Xi_t=0$. The word fails exactly where the wave has a node, and what fails there is the differentiability of the action, not the density, which vanishes with it.
+For the scalar field the cone is the nodal set. On the centre $\langle\tilde\Xi\rangle_{\natural}=\Xi_t^{2}$, so $N=0$ iff $\Xi_t=0$. The word fails exactly where the wave has a node, and what fails there is the differentiability of the action, not the density, which vanishes with it.
 
-**For the spinor field the cone is strictly larger than the nodal set.** Two families of fields lie on the cone with a density that is nowhere zero. A part of definite value, $\tilde X\vec e_z=\pm i\tilde X$, is a zero divisor at every amplitude, because $\tilde X(\vec e_z\mp ie_t)=0$ and the bracket is not zero. A one-sided plane wave, $\tilde K_{\Phi}\tilde\Xi_{0}=0$ with $\tilde K_{\Phi}$ null, has $N(\tilde\Xi_{0})=0$ everywhere: a null $\tilde K_{\Phi}$ is itself a non-zero zero divisor, it annihilates $\tilde\Xi_{0}$, and an element annihilated by a non-zero element is a zero divisor.
+For the spinor field the cone is strictly larger than the nodal set. Two families of fields lie on the cone with a density that is nowhere zero. A part of definite value, $\tilde X\vec e_z=\pm i\tilde X$, is a zero divisor at every amplitude, because $\tilde X(\vec e_z\mp ie_t)=0$ and the bracket is not zero. A one-sided plane wave, $\tilde K_{\Phi}\tilde\Xi_{0}=0$ with $\tilde K_{\Phi}$ null, has $N(\tilde\Xi_{0})=0$ everywhere: a null $\tilde K_{\Phi}$ is itself a non-zero zero divisor, it annihilates $\tilde\Xi_{0}$, and an element annihilated by a non-zero element is a zero divisor.
 
-**What survives on the cone is the two-factor decomposition.** Every element factors as $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry, and that factorisation is defined on the whole algebra. The four-factor word is the finer decomposition, and it is the one a fluid needs, because only it separates the velocity from the spin.
+What survives on the cone is the two-factor decomposition. Every element factors as $\tilde\Xi=\tilde\Xi_{H}\tilde\Xi_{0}$ with $\tilde\Xi_{H}$ Hermitian positive semidefinite and $\tilde\Xi_{0}$ a partial isometry, and that factorisation is defined on the whole algebra. The four-factor word is the finer decomposition, and it is the one a fluid needs, because only it separates the velocity from the spin.
 
-**The cone has its own article.** Its geometry, why the two families above lie on it while the field is at its loudest, and the three places where the reading is a limit
+The cone has its own article. Its geometry, why the two families above lie on it while the field is at its loudest, and the three places where the reading is a limit
 rather than an identity are [The Domain of the Polar Decomposition: Invertible Elements and the Zero-Divisor Cone](the-domain-of-the-polar-decomposition-invertible-elements-and-the-zero-divisor-cone.html); this section states only what the rest of the block uses.
 
-**The domain restriction is not an approximation.** Nothing in the block is expanded in a small parameter and nothing is dropped at a boundary. A field that reaches the cone has no fluid description at the event where it reaches it, and the articles say so at each statement rather than in a footnote.
+The domain restriction is not an approximation. Nothing in the block is expanded in a small parameter and nothing is dropped at a boundary. A field that reaches the cone has no fluid description at the event where it reaches it, and the articles say so at each statement rather than in a footnote.
 
 ## What the Presentation Is Not
 
 ### Not second quantization
 
-**One element is not a field operator.** The block has no Fock space, no creation or annihilation operator, no vacuum, no Wick theorem and no S-matrix. The quantized
+One element is not a field operator. The block has no Fock space, no creation or annihilation operator, no vacuum, no Wick theorem and no S-matrix. The quantized
 field, with its grading, its GNS construction and its scattering theory, is *Biquaternion Quantum Fields*, which opens with [The Biquaternion Vacuum as a Minimal
 Idempotent](the-biquaternion-vacuum-as-a-minimal-idempotent.html), and no result of that block is used here.
 
-**The word is a statement about single elements, not about operators.** The polar decomposition applies to the field operator's classical values, and that extension is not made here. The fluid of this block is the fluid of a classical element obeying a quantum-mechanical wave equation.
+The word is a statement about single elements, not about operators. The polar decomposition applies to the field operator's classical values, and that extension is not made here. The fluid of this block is the fluid of a classical element obeying a quantum-mechanical wave equation.
 
 ### Not thermodynamics
 
-**A density and a velocity are not a thermal state.** The block has no temperature, no entropy, no partition function and no equation of state at a point. A fluid needs
+A density and a velocity are not a thermal state. The block has no temperature, no entropy, no partition function and no equation of state at a point. A fluid needs
 a state as well as a kinematics, and the state is the subject of *Biquaternion Relativistic Quantum Thermodynamics*, which puts a density operator on the same field —
 the construction is [The Local Thermal State of a Fluid](the-local-thermal-state-of-a-fluid.html) — and takes the hydrodynamic limit of the result.
 
-**The two blocks meet at one object and nowhere else.** The stress tensor of the scalar field is an article of this block and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.
+The two blocks meet at one object and nowhere else. The stress tensor of the scalar field is an article of this block and it is also the object the thermal block's equation of state is built on. The meeting is recorded in both articles and is not a dependency of this one.
 
 ### Not a hidden-variable ontology
 
-**The word adds no beable.** The reading is a re-coordinatisation of one equation into two or four real equations, and every one of those equations is the original equation. Nothing is added to the theory's ontology, no trajectories of particles are posited, and no measurement theory is proposed.
+The word adds no beable. The reading is a re-coordinatisation of one equation into two or four real equations, and every one of those equations is the original equation. Nothing is added to the theory's ontology, no trajectories of particles are posited, and no measurement theory is proposed.
 
-**The guidance equation is a reading and not a postulate.** That $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ is the definition of the phase gradient in a fluid that has one, and the corpus states it as an identity. A reader who wants the Bohmian programme will find its algebra here and its ontology absent, deliberately.
+The guidance equation is a reading and not a postulate. That $\vec p=\hbar\nabla\theta_{\mathrm{pha}}$ is the definition of the phase gradient in a fluid that has one, and the corpus states it as an identity. A reader who wants the Bohmian programme will find its algebra here and its ontology absent, deliberately.
 
 ### Not a superfluid
 
-**The words agree and the objects do not.** In condensed matter a quantum fluid is a many-body state with a macroscopic wave function, an order parameter and a spectrum of excitations. Here there is one element, and the "wave function" is the field itself. The vocabulary of the block — density, velocity, vorticity, circulation, spin — is the vocabulary of fluid mechanics, and it is used because the algebra supplies those variables, not because a condensate is present.
+The words agree and the objects do not. In condensed matter a quantum fluid is a many-body state with a macroscopic wave function, an order parameter and a spectrum of excitations. Here there is one element, and the "wave function" is the field itself. The vocabulary of the block — density, velocity, vorticity, circulation, spin — is the vocabulary of fluid mechanics, and it is used because the algebra supplies those variables, not because a condensate is present.
 
-**The one place the vocabulary pays is the nodal set.** The quantisation of circulation around a nodal line is a theorem about this field, and it is the same theorem that a superfluid's circulation obeys. That agreement is stated in [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) as an agreement of formulas, with the physical difference named.
+The one place the vocabulary pays is the nodal set. The quantisation of circulation around a nodal line is a theorem about this field, and it is the same theorem that a superfluid's circulation obeys. That agreement is stated in [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) as an agreement of formulas, with the physical difference named.
 
 ## What Is Established and What Is Interpretation
 
-**Established.** That the field is one element with eight real data and no hidden structure. That the word is a bijection between the $N$-regular elements and the eight parameters, so the fluid's variables are a re-coordinatisation. That the four factors are of four algebraic types and that each is read by a different bilinear. That the current reads the scale and the boost and the spin reads the scale and the rotor, with the phase in neither. That the word exists exactly on the invertibles, and that the cone is the nodal set in the scalar case and strictly larger in the spinor case. That the two-factor decomposition survives on the cone.
+Established. That the field is one element with eight real data and no hidden structure. That the word is a bijection between the $N$-regular elements and the eight parameters, so the fluid's variables are a re-coordinatisation. That the four factors are of four algebraic types and that each is read by a different bilinear. That the current reads the scale and the boost and the spin reads the scale and the rotor, with the phase in neither. That the word exists exactly on the invertibles, and that the cone is the nodal set in the scalar case and strictly larger in the spinor case. That the two-factor decomposition survives on the cone.
 
-**Interpretation.** That this reading deserves the name of a fluid. The count and the types make it a canonical re-coordinatisation; they do not by themselves make the variables a fluid's. The physical identification — scale as density, boost as velocity, rotor as spin, phase gradient as momentum — is the programme's step, and it is taken here once and used throughout the block. It is supported by the limits: in the non-relativistic limit the pair becomes the Madelung system, and in the tensor formulation of the spinor case the same variables appear under other names.
+Interpretation. That this reading deserves the name of a fluid. The count and the types make it a canonical re-coordinatisation; they do not by themselves make the variables a fluid's. The physical identification — scale as density, boost as velocity, rotor as spin, phase gradient as momentum — is the programme's step, and it is taken here once and used throughout the block. It is supported by the limits: in the non-relativistic limit the pair becomes the Madelung system, and in the tensor formulation of the spinor case the same variables appear under other names.
 
-**Not claimed.** It is not claimed that the fluid is the fundamental object and the field derived from it. The order is the reverse: the element is given and the fluid is read from it. Nor is it claimed that every solution has a fluid description; the cone is the exception, and it is populated.
+Not claimed. It is not claimed that the fluid is the fundamental object and the field derived from it. The order is the reverse: the element is given and the fluid is read from it. Nor is it claimed that every solution has a fluid description; the cone is the exception, and it is populated.
 
 ## Summary
 

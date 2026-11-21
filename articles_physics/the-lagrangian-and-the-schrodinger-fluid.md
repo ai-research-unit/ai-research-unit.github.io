@@ -2,9 +2,7 @@
 
 ## Introduction
 
-**This article writes the action in the fluid's variables and varies them.** [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the equation and names the density, the velocity and the quantum potential. Here the same field is written as an action over the density and the phase, and the Euler–Lagrange equations are read. Nothing about the equation changes; what changes is which object is primitive.
-
-**Three results, and each is a computation.**
+This article writes the action in the fluid's variables and varies them. [The Schrödinger Fluid](the-schrodinger-fluid.html) reads the equation and names the density, the velocity and the quantum potential. Here the same field is written as an action over the density and the phase, and the Euler–Lagrange equations are read. Nothing about the equation changes; what changes is which object is primitive.
 
 *First, the action has two terms and the fluid's two ingredients are those terms.* Written in $\rho_{\mathrm{num}}$ and $S$, the Lagrangian density is
 
@@ -18,15 +16,15 @@ a phase term, a kinetic term, a gradient energy and an external potential. There
 
 *Third, the velocity is not canonical.* No time derivative of $\vec v$ appears, so its conjugate momentum vanishes identically on every configuration. That is the fluid form of the four vanishing momenta of [The Lagrangian and the Dirac Equation in Polar Variables](the-lagrangian-and-the-dirac-equation-in-polar-variables.html), at the rung where only one of the four survives to be stated.
 
-**Position in the block.** This is the variational companion of [The Schrödinger Fluid](the-schrodinger-fluid.html), and the first of the eight articles that write the action in the fluid variables. It sits at the bottom of the scalar ladder: at this rung the velocity has no norm, the density is the charge density, and the quantum potential carries the Laplacian, so every statement below is unconditional.
+This is the variational companion of [The Schrödinger Fluid](the-schrodinger-fluid.html), and the first of the eight articles that write the action in the fluid variables. It sits at the bottom of the scalar ladder: at this rung the velocity has no norm, the density is the charge density, and the quantum potential carries the Laplacian, so every statement below is unconditional.
 
 ## Conventions
 
-**The conventions are restated here so that every sign below is checkable from this page alone.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\hbar\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, $e_t=1$, $\vec e_\mu^{2}=-e_t$, $i$ central, $\mathrm{Sc}$ the coefficient of $e_t$, $2\,\mathrm{Sc}(\tilde Q)=2Q_t$. The conjugations are $*$ and $^{\natural}$; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout. The field is the central one, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$ with $\varrho>0$ and $\varepsilon=\pm1$, so $\rho_{\mathrm{num}}=\varrho^{2}$ and $S=\hbar\theta_{\mathrm{pha}}$. The time variable is $t'$ and the material time is $r'_t=ct'$; at this rung only $t'$ appears, because the equation has one time derivative. The action is a functional of two real fields over $(t',\vec r)$, and the domain is $\varrho>0$, which excludes the nodal set.
 
 ## The Action in the Fluid Variables
 
-**The element action is the one the polar companion varies, and the substitution is the word.** With $\tilde\Xi=\varrho e^{i\theta}\varepsilon e_t$, the three bilinears that appear are
+The element action is the one the polar companion varies, and the substitution is the word. With $\tilde\Xi=\varrho e^{i\theta}\varepsilon e_t$, the three bilinears that appear are
 
 $$
 \mathrm{Re}\,\mathrm{Sc}\bigl[i\tilde\Xi^{*}\partial_{t'}\tilde\Xi\bigr]=-\rho_{\mathrm{num}}\,\partial_{t'}\theta_{\mathrm{pha}},
@@ -38,7 +36,7 @@ $$
 
 The first is the whole of the kinetic term: the scale contributes $\pm i\varrho\dot \varrho$, which is imaginary and drops out of the real part, so the density carries no inertia at this rung. The second splits cleanly into the amplitude's gradient and the phase's gradient, and the split is exact because the two factors of the word commute — $\varepsilon$ is central and $e^{i\theta}$ is central, so no cross term survives. The third is the density and nothing else, because the phase cancels against its conjugate and $\varepsilon^{2}=1$.
 
-**Substituting and multiplying by $\hbar$ gives the Lagrangian in the fluid's variables.**
+Substituting and multiplying by $\hbar$ gives the Lagrangian in the fluid's variables.
 
 $$
 \boxed{\;\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}\Bigl(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V\Bigr)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}\;}
@@ -48,25 +46,25 @@ The four terms are, in order, the phase term, the kinetic energy of the flow, th
 
 **The coefficient of the gradient energy is fixed by the mass and by nothing else.** It is $\hbar^{2}/2m$ per unit of $(\vec\nabla_\Phi \varrho)^{2}$, which is $\hbar^{2}/8m$ per unit of $(\vec\nabla_\Phi\rho_{\mathrm{num}})^{2}/\rho_{\mathrm{num}}$. The two forms are the same number and not merely the same up to a total derivative, by the chain rule $\vec\nabla_\Phi\rho_{\mathrm{num}}=2\varrho\nabla \varrho$, and the second is the form in which the term appears in the Korteweg literature. No other coefficient is available: the term must have two derivatives, must be even in $\varrho$, and must be the only scalar the amplitude can make at that order.
 
-**What is absent is as informative as what is present.** There is no term in $\dot \varrho$ and no term in $\vec\nabla_\Phi\theta$ that is not inside the square. The first absence is why the density has no kinetic energy of its own; the second is why the flow's energy is the square of a gradient and therefore why the vorticity vanishes identically rather than by a constraint. Both are properties of the first-order rung. At the rung above, the two densities appear and the second absence disappears.
+What is absent is as informative as what is present. There is no term in $\dot \varrho$ and no term in $\vec\nabla_\Phi\theta$ that is not inside the square. The first absence is why the density has no kinetic energy of its own; the second is why the flow's energy is the square of a gradient and therefore why the vorticity vanishes identically rather than by a constraint. Both are properties of the first-order rung. At the rung above, the two densities appear and the second absence disappears.
 
 ### The Two Settings: The Velocity Is Not Canonical
 
-**No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid.** In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes
+No time derivative of the velocity appears, and that is a statement about the chart and not about the fluid. In the action above the velocity is $\vec\nabla_\Phi S/m$: a function of the phase and not a field. If it is promoted to an independent field, the action becomes
 
 $$
 \mathcal L_{\mathrm{fl}}=\rho_{\mathrm{num}}\Bigl(-\partial_{t'}S-\frac{m\vec v^{2}}{2}-V\Bigr)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}+\vec\lambda\cdot\Bigl(\vec v-\frac{\vec\nabla_\Phi S}{m}\Bigr),
 $$
 
-and the three variations are these. Varying $\vec\lambda$ returns the definition, so the constraint is the chart's and carries no physics. Varying $\vec v$ fixes the multiplier, $\vec\lambda=\rho_{\mathrm{num}}m\vec v$, which is the momentum density and nothing else. Varying $S$ gives continuity with $\vec j=\vec\lambda/m$, which is the same equation as before. **The promotion buys a name and no equation**, and the multiplier is not an independent field: it is determined by the equation that would have defined it.
+and the three variations are these. Varying $\vec\lambda$ returns the definition, so the constraint is the chart's and carries no physics. Varying $\vec v$ fixes the multiplier, $\vec\lambda=\rho_{\mathrm{num}}m\vec v$, which is the momentum density and nothing else. Varying $S$ gives continuity with $\vec j=\vec\lambda/m$, which is the same equation as before. The promotion buys a name and no equation, and the multiplier is not an independent field: it is determined by the equation that would have defined it.
 
-**What the promotion does buy is the correct statement of the constraint.** At the rungs above, the velocity's place is taken by the rapidity, and its momentum vanishes identically — the relativistic companion computes $\partial\mathcal L/\partial\dot\theta_{\mathrm{rpd}}=0$ on every configuration. Here the same fact is $p_{\vec v}=0$ once the velocity is promoted: it is then a coordinate with no kinetic term, so its conjugate is zero rather than small. **The two statements are the same statement in two charts**, and the fluid chart is the one in which it is visible without algebra; at this rung the density's momentum $p_r=0$ is the same fact in the chart that needs no promotion.
+What the promotion does buy is the correct statement of the constraint. At the rungs above, the velocity's place is taken by the rapidity, and its momentum vanishes identically — the relativistic companion computes $\partial\mathcal L/\partial\dot\theta_{\mathrm{rpd}}=0$ on every configuration. Here the same fact is $p_{\vec v}=0$ once the velocity is promoted: it is then a coordinate with no kinetic term, so its conjugate is zero rather than small. The two statements are the same statement in two charts, and the fluid chart is the one in which it is visible without algebra; at this rung the density's momentum $p_r=0$ is the same fact in the chart that needs no promotion.
 
-**A rotational fluid needs two more fields and cannot be written with $\vec v$ alone.** If the flow is not a gradient, the velocity must be represented as $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
+A rotational fluid needs two more fields and cannot be written with $\vec v$ alone. If the flow is not a gradient, the velocity must be represented as $\vec v=\vec\nabla_\Phi\phi_{\mathrm{clb}}+\alpha_{\mathrm{clb}}\vec\nabla_\Phi\beta_{\mathrm{clb}}$, the Clebsch form, and the action acquires the pair $(\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}})$ and their constraint. [The Clebsch Potentials and the Rank of the Vorticity](the-clebsch-potentials-and-the-rank-of-the-vorticity.html) states the representation and the rank it carries. At this rung the vorticity is zero identically, so the pair is absent and the action's two fields suffice; that is the fluid form of the statement that the phase is one function's worth of data.
 
 ## The Variation: Two of Them
 
-**Varying the phase gives continuity, and the variation is one line.** Since $\mathcal L_{\mathrm{fl}}$ depends on $S$ only through $\partial_{t'}S$ and $\vec\nabla_\Phi S$,
+Varying the phase gives continuity, and the variation is one line. Since $\mathcal L_{\mathrm{fl}}$ depends on $S$ only through $\partial_{t'}S$ and $\vec\nabla_\Phi S$,
 
 $$
 \partial_{t'}\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_{t'}S)}+\sum_j\partial_j\frac{\partial\mathcal L_{\mathrm{fl}}}{\partial(\partial_jS)}=0
@@ -74,9 +72,9 @@ $$
 \partial_{t'}\rho_{\mathrm{num}}+\sum_j\partial_j\bigl(\rho_{\mathrm{num}}v_j\bigr)=0,
 $$
 
-with $\vec v=\vec\nabla_\Phi S/m$. The current that appears is the canonical one, $\vec j=\rho_{\mathrm{num}}\vec v$, and it is also the Noether current of the phase shift: the Lagrangian is invariant under $S\mapsto S+\text{constant}$, and the associated density is exactly $\rho_{\mathrm{num}}$. **At this rung the conserved density and the charge density are the same object**, which is why the article can speak of one continuity equation and the relativistic articles cannot.
+with $\vec v=\vec\nabla_\Phi S/m$. The current that appears is the canonical one, $\vec j=\rho_{\mathrm{num}}\vec v$, and it is also the Noether current of the phase shift: the Lagrangian is invariant under $S\mapsto S+\text{constant}$, and the associated density is exactly $\rho_{\mathrm{num}}$. At this rung the conserved density and the charge density are the same object, which is why the article can speak of one continuity equation and the relativistic articles cannot.
 
-**Varying the amplitude gives the quantum Hamilton–Jacobi equation.** The variation is taken in $\varrho$ and not in $\rho_{\mathrm{num}}$, because $\varrho$ is the coordinate and $\rho_{\mathrm{num}}=\varrho^{2}$ is a function of it. The gradient term varies as
+Varying the amplitude gives the quantum Hamilton–Jacobi equation. The variation is taken in $\varrho$ and not in $\rho_{\mathrm{num}}$, because $\varrho$ is the coordinate and $\rho_{\mathrm{num}}=\varrho^{2}$ is a function of it. The gradient term varies as
 
 $$
 \delta\int-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}=\frac{\hbar^{2}}{m}\int\Delta_\Phi \varrho\,\delta \varrho,
@@ -98,17 +96,17 @@ $$
 
 because $\vec\nabla_\Phi(\vec\nabla_\Phi S)^{2}/2m=(\vec v\cdot\nabla)\vec v$ when the vorticity vanishes. The two displays are one statement differentiated, and the block's article says the same: continuity, energy and acceleration over-determine a fluid, and here the third is the second's gradient.
 
-**The pair is closed and the count is right.** Two real fields and two real equations, with the velocity a function of the phase. The action has no constraint and needs no multiplier, and that is the first-order rung's privilege: the word has two factors, the two factors are the two fields, and the map is a bijection away from $\varrho=0$. At the rung above, the word has four factors and the count breaks.
+The pair is closed and the count is right. Two real fields and two real equations, with the velocity a function of the phase. The action has no constraint and needs no multiplier, and that is the first-order rung's privilege: the word has two factors, the two factors are the two fields, and the map is a bijection away from $\varrho=0$. At the rung above, the word has four factors and the count breaks.
 
 ## The Constraints the Action Imposes: The Velocity Is a Definition
 
 **The velocity is not an independent field.** It is $\vec\pi/m$, a function of the phase's gradient and the vector potential, and the substitution that produces the fluid chart carries that relation into the action. **A relation that survives because its variable was never independent is not a constraint**: it is a definition, and no multiplier appears for it.
 
-**The count that results is stated by the variation section and not by a bracket.** The density carries one time derivative, on the phase, so the density is the phase's momentum; the amplitude carries none, so its momentum vanishes and the pair is second class. Two real fields and two real equations are what remains, and the count is the count the article records.
+The count that results is stated by the variation section and not by a bracket. The density carries one time derivative, on the phase, so the density is the phase's momentum; the amplitude carries none, so its momentum vanishes and the pair is second class. Two real fields and two real equations are what remains, and the count is the count the article records.
 
-**The mass and the potential add determinations.** The shell fixes the amplitude through the energy relation and the potential shifts the phase's rate. Neither removes data, so the count of two and two survives at every rung of the chart.
+The mass and the potential add determinations. The shell fixes the amplitude through the energy relation and the potential shifts the phase's rate. Neither removes data, so the count of two and two survives at every rung of the chart.
 
-**The contrast that fixes the reading.** The spin-one fluid needs a multiplier because its unit condition is a genuine relation among independent variables. This fluid needs none, and the difference between the two is the difference between a definition and a constraint, which is the sharpest statement the layer offers on the question.
+The contrast that fixes the reading. The spin-one fluid needs a multiplier because its unit condition is a genuine relation among independent variables. This fluid needs none, and the difference between the two is the difference between a definition and a constraint, which is the sharpest statement the layer offers on the question.
 
 ## The Structural Consequence: The Quantum Potential Is a Functional Derivative
 
@@ -136,7 +134,7 @@ $$
 \delta\mathcal E_{\mathrm{grad}}=-\frac{\hbar^{2}}{2m}\int\delta\rho_{\mathrm{num}}\,\frac{\Delta_\Phi \varrho}{\varrho}=\int\delta\rho_{\mathrm{num}}\,Q . \qquad\blacksquare
 $$
 
-**Three things follow, and they are the article's reason for existing.**
+Three things follow, and they are the article's reason for existing.
 
 *The quantum potential is not a potential.* It is the chemical potential of a density-gradient energy: the change in the fluid's energy when a particle is added at fixed volume. A potential in the usual sense is a function of position given from outside; this one is a functional of the density and disappears when the density is uniform. The distinction is not verbal — a potential can be subtracted by a gauge choice and this cannot, because it is a property of the state.
 
@@ -144,7 +142,7 @@ $$
 
 *The fluid is of Korteweg type and not of Euler type.* A Korteweg fluid is one whose stress depends on the gradients of the density, and that is exactly what the third term supplies. The literature on quantum hydrodynamics says this, and the action says why: the gradient energy is the only term the algebra permits at that order.
 
-**The sign is the sign of a pressure.** $Q$ is positive at the centre of a localised packet and falls as the density falls, so $\vec\nabla_\Phi Q$ points inward there and the force $-\vec\nabla_\Phi Q$ points outward. The packet spreads. Nothing in the action chooses this; it is the sign of the $\hbar^{2}$ term, which is the sign that makes the energy positive.
+The sign is the sign of a pressure. $Q$ is positive at the centre of a localised packet and falls as the density falls, so $\vec\nabla_\Phi Q$ points inward there and the force $-\vec\nabla_\Phi Q$ points outward. The packet spreads. Nothing in the action chooses this; it is the sign of the $\hbar^{2}$ term, which is the sign that makes the energy positive.
 
 ## The Noether Currents: Mass, Energy and What the Quantum Potential Touches
 
@@ -160,53 +158,53 @@ $$
 
 conserved by the continuity equation that the phase's variation gives. Translation invariance gives the energy–momentum, and there the quantum potential appears: the gradient energy contributes the stress $\hbar^{2}\partial_i\varrho\,\partial_j\varrho/m$ and the energy density $\hbar^{2}(\vec\nabla_\Phi\varrho)^{2}/2m$.
 
-**Why the split is forced.** The quantum potential is a functional derivative of a term that depends on $\varrho$ and not on $S$; the mass current is the derivative of the action with respect to $\partial S$, so it cannot see that term. A current that carried the quantum potential would have to come from a term linear in $\partial S$, and there is none.
+Why the split is forced. The quantum potential is a functional derivative of a term that depends on $\varrho$ and not on $S$; the mass current is the derivative of the action with respect to $\partial S$, so it cannot see that term. A current that carried the quantum potential would have to come from a term linear in $\partial S$, and there is none.
 
-**The sign.** The density is positive and the current flows with the phase's gradient, so the mass current's sign is the orientation of $S$. There is no charge here and therefore no sign convention to fix: the fluid is neutral, and the only sign that could be chosen is the overall one of the action, which cancels.
+The sign. The density is positive and the current flows with the phase's gradient, so the mass current's sign is the orientation of $S$. There is no charge here and therefore no sign convention to fix: the fluid is neutral, and the only sign that could be chosen is the overall one of the action, which cancels.
 
-**What the corpus keeps.** The energy is not the mass shell's value but the Legendre transform of the boxed Lagrangian, and the two differ by the quantum potential. That difference is the reason the fluid form of the Schrödinger fluid and the fluid form of the Klein–Gordon fluid do not agree term by term.
+What the corpus keeps. The energy is not the mass shell's value but the Legendre transform of the boxed Lagrangian, and the two differ by the quantum potential. That difference is the reason the fluid form of the Schrödinger fluid and the fluid form of the Klein–Gordon fluid do not agree term by term.
 
 ## What the Principle Adds and What It Relabels: In the Fluid Chart
 
-**Adds.** The two-term structure of the Lagrangian, which names the fluid's two ingredients as the two terms. The identification of the quantum potential as a functional derivative, which turns the block's computed identity into a definition and places the fluid in the Korteweg class. The direct derivation of continuity and the energy equation, with the acceleration law as a gradient and no wave equation in between. The statement that the velocity is not canonical, in the chart where it is a one-line count. And the identification of the reverse map's hypotheses with the action's structure: the flow is irrotational because the velocity is a gradient, inviscid because no time derivative of the velocity appears, and barotropic in the extended sense because the pressure is the gradient energy's and depends on the density and its gradients alone.
+Adds. The two-term structure of the Lagrangian, which names the fluid's two ingredients as the two terms. The identification of the quantum potential as a functional derivative, which turns the block's computed identity into a definition and places the fluid in the Korteweg class. The direct derivation of continuity and the energy equation, with the acceleration law as a gradient and no wave equation in between. The statement that the velocity is not canonical, in the chart where it is a one-line count. And the identification of the reverse map's hypotheses with the action's structure: the flow is irrotational because the velocity is a gradient, inviscid because no time derivative of the velocity appears, and barotropic in the extended sense because the pressure is the gradient energy's and depends on the density and its gradients alone.
 
-**Does not add.** No new equation: the Euler–Lagrange equations are the block's two, and the third is their gradient. No new solution: the flow is the block's flow. No closure of anything, because nothing is open at this rung. No thermodynamics: the action's energy is the mechanical one, and a temperature requires a state and a trace, which is the third category's subject. And no claim that the fluid's variables are more fundamental than the field's: the map between them is a bijection away from the nodes and the action is one functional written two ways.
+Does not add. No new equation: the Euler–Lagrange equations are the block's two, and the third is their gradient. No new solution: the flow is the block's flow. No closure of anything, because nothing is open at this rung. No thermodynamics: the action's energy is the mechanical one, and a temperature requires a state and a trace, which is the third category's subject. And no claim that the fluid's variables are more fundamental than the field's: the map between them is a bijection away from the nodes and the action is one functional written two ways.
 
-**The one asymmetry worth stating.** The polar action carries four vanishing momenta; the fluid action carries one. That is not a loss of content, because at this rung three of the polar variables are absent altogether: the boost is the identity and the rotor is the identity, so their momenta have nothing to be the momentum of. The count agrees once the variables are counted.
+The one asymmetry worth stating. The polar action carries four vanishing momenta; the fluid action carries one. That is not a loss of content, because at this rung three of the polar variables are absent altogether: the boost is the identity and the rotor is the identity, so their momenta have nothing to be the momentum of. The count agrees once the variables are counted.
 
 ## What the Principle Adds and What It Relabels: The Same Functional in Two Charts
 
-**The statement that organizes the eight articles of this layer.** The action is a functional of the field. Written in the field's components it is the element action; written in the polar parameters it is the polar companion's; written in the density, the phase and the velocity it is this article's. The three are one functional, and the maps between the charts are the word and its derivatives.
+The statement that organizes the eight articles of this layer. The action is a functional of the field. Written in the field's components it is the element action; written in the polar parameters it is the polar companion's; written in the density, the phase and the velocity it is this article's. The three are one functional, and the maps between the charts are the word and its derivatives.
 
 **The consequence is a statement about the nodal set.** The word is a bijection from the eight parameters onto the $N$-regular elements, and it fails at $\varrho=0$: the phase is undefined there and the chart is singular. The action does not fail — it is a functional of the field, and the field may vanish — but the fluid chart does. So the variational principle in fluid variables is stated on the complement of the nodal set, and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html) is the article that says what happens on the excluded set. **The exclusion is the price of the chart and not a defect of the action**, and it is the same exclusion the reverse map carries.
 
-**And the direction of the map matters here as it does there.** The forward map from the fluid's data to the field is exact away from the nodes: given $\rho_{\mathrm{num}}$ and $S$, the element is $\varrho e^{i\theta}\varepsilon e_t$ and there is nothing to solve. The reverse map, from an arbitrary barotropic irrotational inviscid flow to a wave, holds only on the image. The action sits on the fluid side and its stationarity conditions are the fluid's equations, so it does not need the reverse map at all; what it inherits is the map's domain. [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html) states the map and its qualification, and [The Fluid–Wave Correspondence: Which Constant Each Field Carries](the-fluid-wave-correspondence-which-constant-each-field-carries.html) states which direction is exact in which row. This article adds the observation that the action is the object the two directions share.
+And the direction of the map matters here as it does there. The forward map from the fluid's data to the field is exact away from the nodes: given $\rho_{\mathrm{num}}$ and $S$, the element is $\varrho e^{i\theta}\varepsilon e_t$ and there is nothing to solve. The reverse map, from an arbitrary barotropic irrotational inviscid flow to a wave, holds only on the image. The action sits on the fluid side and its stationarity conditions are the fluid's equations, so it does not need the reverse map at all; what it inherits is the map's domain. [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html) states the map and its qualification, and [The Fluid–Wave Correspondence: Which Constant Each Field Carries](the-fluid-wave-correspondence-which-constant-each-field-carries.html) states which direction is exact in which row. This article adds the observation that the action is the object the two directions share.
 
 ## What the Principle Adds and What It Relabels: The Fluid Alone
 
 **One object, three readings, and the difference is what each takes as primary.** The element reading starts from the field and asks what its polar word is; the limit reading starts from the truncated action and asks what survives; **the fluid reading starts from the velocity field and asks what the density must do for that velocity to be a flow.** The third is the only one of the three in which the velocity is given before the potential, and that ordering is the fluid's contribution.
 
-**What it adds: the transport as an identity.** In the fluid reading the continuity equation is not derived from a variation; it is what it means for a density to be carried by a velocity field. **The equation that the limit reading spends a section deriving is the fluid reading's definition**, and a reader who wants to know why the transport survives every truncation finds the answer here: the transport is kinematics.
+What it adds: the transport as an identity. In the fluid reading the continuity equation is not derived from a variation; it is what it means for a density to be carried by a velocity field. The equation that the limit reading spends a section deriving is the fluid reading's definition, and a reader who wants to know why the transport survives every truncation finds the answer here: the transport is kinematics.
 
-**What it adds: the quantum potential as a pressure.** The term the limit reading deletes and the element reading carries is, in the fluid reading, the gradient of a pressure that the density's inhomogeneity exerts on itself. **Calling it a pressure changes what a reader expects its size to be**: a pressure on a slowly varying density is small, and that is the same statement as the order count, made in a language that does not need an expansion parameter.
+What it adds: the quantum potential as a pressure. The term the limit reading deletes and the element reading carries is, in the fluid reading, the gradient of a pressure that the density's inhomogeneity exerts on itself. Calling it a pressure changes what a reader expects its size to be: a pressure on a slowly varying density is small, and that is the same statement as the order count, made in a language that does not need an expansion parameter.
 
-**What it adds: the rest frame.** The velocity field defines a local rest frame, and the fluid reading is the only one of the three that makes the frame explicit. **Every statement about what "the density's frame" means is inherited from here**, including the corpus's spin fluids' frame variables.
+What it adds: the rest frame. The velocity field defines a local rest frame, and the fluid reading is the only one of the three that makes the frame explicit. Every statement about what "the density's frame" means is inherited from here, including the corpus's spin fluids' frame variables.
 
-**What it does not add.** No new equation. **The fluid reading's three equations are the element reading's three equations**, and the article says so: the fluid is a reading of the same content and not a different theory.
+No new equation. The fluid reading's three equations are the element reading's three equations, and the article says so: the fluid is a reading of the same content and not a different theory.
 
-**What it inherits.** The nodal exception, which is now a place where the velocity is undefined rather than where the phase is. **The same failure in a third language**, and the article's one sentence about it is that the three languages agree about where the description stops.
+The nodal exception, which is now a place where the velocity is undefined rather than where the phase is. The same failure in a third language, and the article's one sentence about it is that the three languages agree about where the description stops.
 
 ## Summary
 
-**The action.** $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}$, four terms, no quantum potential and no barotropic pressure.
+The action. $\mathcal L_{\mathrm{fl}}=-\rho_{\mathrm{num}}(\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V)-\frac{\hbar^{2}}{2m}(\vec\nabla_\Phi \varrho)^{2}$, four terms, no quantum potential and no barotropic pressure.
 
-**The two variations.** The phase gives continuity, $\partial_{t'}\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec v)=0$. The amplitude gives $\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V+Q=0$, and its gradient is the acceleration law with the quantum force the only force.
+The two variations. The phase gives continuity, $\partial_{t'}\rho_{\mathrm{num}}+\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec v)=0$. The amplitude gives $\partial_{t'}S+\frac{(\vec\nabla_\Phi S)^{2}}{2m}+V+Q=0$, and its gradient is the acceleration law with the quantum force the only force.
 
-**The quantum potential.** $Q=\delta\mathcal E_{\mathrm{grad}}/\delta\rho_{\mathrm{num}}$, a chemical potential of a density-gradient energy; the stress $\sigma^{Q}_{ij}$ is that energy's pressure tensor; the fluid is of Korteweg type.
+The quantum potential. $Q=\delta\mathcal E_{\mathrm{grad}}/\delta\rho_{\mathrm{num}}$, a chemical potential of a density-gradient energy; the stress $\sigma^{Q}_{ij}$ is that energy's pressure tensor; the fluid is of Korteweg type.
 
-**The velocity.** Not canonical: no time derivative, so $p_{\vec v}=0$ identically. Promoting it to a field adds a multiplier that is the momentum density and a constraint that is the chart's definition. A rotational fluid needs the Clebsch pair.
+The velocity. Not canonical: no time derivative, so $p_{\vec v}=0$ identically. Promoting it to a field adds a multiplier that is the momentum density and a constraint that is the chart's definition. A rotational fluid needs the Clebsch pair.
 
-**The chart.** One action, three charts — element, polar, fluid — with the word the map between them, and the nodal set the singular set of the third.
+The chart. One action, three charts — element, polar, fluid — with the word the map between them, and the nodal set the singular set of the third.
 
 ## Summary of Notation
 
@@ -228,9 +226,9 @@ conserved by the continuity equation that the phase's variation gives. Translati
 
 ## Further Reading
 
-- Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* **40** (1926) 322–326, for the pair of equations this article varies.
-- David Bohm, "A suggested interpretation of the quantum theory in terms of hidden variables," *Physical Review* **85** (1952) 166–193, for the quantum potential read as a force, with the caveat that this block takes the action and not the ontology.
-- Takehiko Takabayasi, "On the formulation of the Schrödinger theory in terms of the hydrodynamical quantities," *Progress of Theoretical Physics* **8** (1952) 143–164, for the variational formulation of the same fluid and for the velocity treated as an independent variable.
+- Erwin Madelung, "Quantentheorie in hydrodynamischer Form," *Zeitschrift für Physik* 40 (1926) 322–326, for the pair of equations this article varies.
+- David Bohm, "A suggested interpretation of the quantum theory in terms of hidden variables," *Physical Review* 85 (1952) 166–193, for the quantum potential read as a force, with the caveat that this block takes the action and not the ontology.
+- Takehiko Takabayasi, "On the formulation of the Schrödinger theory in terms of the hydrodynamical quantities," *Progress of Theoretical Physics* 8 (1952) 143–164, for the variational formulation of the same fluid and for the velocity treated as an independent variable.
 - Peter R. Holland, *The Quantum Theory of Motion* (Cambridge University Press, 1993), chapter 3, for the Lagrangian in the fluid variables and the count of its fields.
-- Diederik J. Korteweg, "Sur la forme que prennent les équations du mouvement des fluides si l'on tient compte des forces capillaires causées par des variations de densité considérables mais continues," *Archives Néerlandaises des Sciences Exactes et Naturelles* **6** (1901) 1–24, for the class of fluids whose stress depends on the density's gradients — the class this action places the fluid in.
+- Diederik J. Korteweg, "Sur la forme que prennent les équations du mouvement des fluides si l'on tient compte des forces capillaires causées par des variations de densité considérables mais continues," *Archives Néerlandaises des Sciences Exactes et Naturelles* 6 (1901) 1–24, for the class of fluids whose stress depends on the density's gradients — the class this action places the fluid in.
 - The companion articles: [The Lagrangian and the Schrödinger Equation in Polar Variables](the-lagrangian-and-the-schrodinger-equation-in-polar-variables.html), the same action in the polar chart; [The Schrödinger Fluid](the-schrodinger-fluid.html), the equations this action varies; [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), where the stress is computed rather than derived from an energy; [The Reverse Madelung Map: Fluid to Nonlinear Wave](the-reverse-madelung-map-fluid-to-nonlinear-wave.html), for the map whose domain the chart inherits; and the charged companion [The Lagrangian and the Charged Schrödinger Fluid](the-lagrangian-and-the-charged-schrodinger-fluid.html), where the connection enters the same two terms.

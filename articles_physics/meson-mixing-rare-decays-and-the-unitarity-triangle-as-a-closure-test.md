@@ -2,22 +2,22 @@
 
 ## Introduction
 
-**The standing of this article.** Standard physics, transcribed. But this is the article where the corpus stops reporting inputs and exhibits a **consistency check**, and that is a different kind of claim from everything in the four articles before it. Lattice QCD reproduces one number; the triangle reproduces a *shape* from three independent measurements that were each made for a different reason.
+The standing of this article. Standard physics, transcribed. But this is the article where the corpus stops reporting inputs and exhibits a consistency check, and that is a different kind of claim from everything in the four articles before it. Lattice QCD reproduces one number; the triangle reproduces a *shape* from three independent measurements that were each made for a different reason.
 
-**What "closure" means here.** Take three quantities measured by three different physical processes: a ratio of semileptonic decay rates, measured in tree-level decays; a ratio of oscillation frequencies, measured in loop-induced mixing; and an angle measured in a decay that involves neither mixing nor loops. Unitarily, they must satisfy a relation. They do, at the degree level. No parameter was adjusted to make them, and no new particle was needed.
+What "closure" means here. Take three quantities measured by three different physical processes: a ratio of semileptonic decay rates, measured in tree-level decays; a ratio of oscillation frequencies, measured in loop-induced mixing; and an angle measured in a decay that involves neither mixing nor loops. Unitarily, they must satisfy a relation. They do, at the degree level. No parameter was adjusted to make them, and no new particle was needed.
 
-**The claim, in four parts.**
+The claim, in four parts.
 
-- **GIM is unitarity plus non-degeneracy, and that is a statement about the flavour factor.** The box amplitude sums $V_{id}V^{*}_{is}m_i^2$ over the internal quarks. The sum of the $V$ products vanishes because $V$ is unitary; what survives is the failure of the mass operator to be a multiple of the identity on the generation label. Written this way, the mechanism is not a trick about charm: it is the statement that a loop of a generation-universal coupling cancels unless the masses split.
-- **The charm prediction was a genuine prediction.** $\delta m_K$ was measured before charm existed. The box formula, read backwards with the GIM mechanism, gave $m_c\approx1.5$ GeV. The $J/\psi$ came in at $3.1$ GeV, and the current mass relevant to the loop is $1.27$ GeV — the hadron mass was never the right number, and the prediction was right anyway.
-- **The three mixing systems span fourteen orders of magnitude in $\delta m/m$ and their pattern is diagnostic.** $7.0\times10^{-15}$, $6.3\times10^{-14}$, $2.2\times10^{-12}$. The third is large enough that the $B_s$ oscillates essentially completely before it decays: $\chi_s=0.4993$, against a ceiling of $0.5$.
-- **The triangle closes, with one number that does not.** Four of the five measurements land within a per cent of the fit; $\varepsilon'/\varepsilon$ does not, and the article says so rather than presenting a triumph.
+- GIM is unitarity plus non-degeneracy, and that is a statement about the flavour factor. The box amplitude sums $V_{id}V^{*}_{is}m_i^2$ over the internal quarks. The sum of the $V$ products vanishes because $V$ is unitary; what survives is the failure of the mass operator to be a multiple of the identity on the generation label. Written this way, the mechanism is not a trick about charm: it is the statement that a loop of a generation-universal coupling cancels unless the masses split.
+- The charm prediction was a genuine prediction. $\delta m_K$ was measured before charm existed. The box formula, read backwards with the GIM mechanism, gave $m_c\approx1.5$ GeV. The $J/\psi$ came in at $3.1$ GeV, and the current mass relevant to the loop is $1.27$ GeV — the hadron mass was never the right number, and the prediction was right anyway.
+- The three mixing systems span fourteen orders of magnitude in $\delta m/m$ and their pattern is diagnostic. $7.0\times10^{-15}$, $6.3\times10^{-14}$, $2.2\times10^{-12}$. The third is large enough that the $B_s$ oscillates essentially completely before it decays: $\chi_s=0.4993$, against a ceiling of $0.5$.
+- The triangle closes, with one number that does not. Four of the five measurements land within a per cent of the fit; $\varepsilon'/\varepsilon$ does not, and the article says so rather than presenting a triumph.
 
-**The order.** The two-level system, then the box and GIM, then the charm prediction, then the kaon system, then the two $B$ systems, then the rare decays, then the triangle, then the closure test itself, then what closure does and does not prove, then the ledger.
+The order. The two-level system, then the box and GIM, then the charm prediction, then the kaon system, then the two $B$ systems, then the rare decays, then the triangle, then the closure test itself, then what closure does and does not prove, then the ledger.
 
 ## The Neutral Meson as a Two-Level System
 
-**The states.** A neutral meson that can turn into its antiparticle — $K^0$–$\bar K^0$, $B^0$–$\bar B^0$, $B_s^0$–$\bar B_s^0$, $D^0$–$\bar D^0$ — is a two-state system described by a non-Hermitian effective Hamiltonian,
+The states. A neutral meson that can turn into its antiparticle — $K^0$–$\bar K^0$, $B^0$–$\bar B^0$, $B_s^0$–$\bar B_s^0$, $D^0$–$\bar D^0$ — is a two-state system described by a non-Hermitian effective Hamiltonian,
 
 $$
 i\frac{d}{dt}\begin{pmatrix}\lvert P^0\rangle\ \lvert\bar P^0\rangle\end{pmatrix}
@@ -41,7 +41,7 @@ x=\frac{\delta m}{\Gamma},
 y=\frac{\delta\Gamma}{2\Gamma} .
 $$
 
-**The three systems, with numbers.**
+The three systems, with numbers.
 
 | System | $\delta m$ | $x=\delta m/\Gamma$ | $\delta m/m$ | $\chi$ (wrong-sign fraction) |
 |---|---|---|---|---|
@@ -57,7 +57,7 @@ $$
 
 which is the probability that a meson produced as $P^0$ decays as $\bar P^0$ after the oscillation has been integrated over. Its ceiling is $\tfrac12$, reached when $x\gg1$.
 
-**What the $B_s$ number says.** $\chi_s=0.4993$ against a ceiling of $0.5$: the $B_s$ oscillates so fast that by the time it decays it has, to three decimal places, forgotten which flavour it was born with. This is not a curiosity. It is why $B_s$ mixing is measured as a *frequency* rather than as a counting asymmetry, and why the measurement needs a vertex detector with proper-time resolution far below $1/\delta m_s\approx0.06$ ps.
+What the $B_s$ number says. $\chi_s=0.4993$ against a ceiling of $0.5$: the $B_s$ oscillates so fast that by the time it decays it has, to three decimal places, forgotten which flavour it was born with. This is not a curiosity. It is why $B_s$ mixing is measured as a *frequency* rather than as a counting asymmetry, and why the measurement needs a vertex detector with proper-time resolution far below $1/\delta m_s\approx0.06$ ps.
 
 **Why the mass difference ratio matters more than either mass difference.** The theoretical expression for $\delta m$ carries the hadronic matrix element — a decay constant and a bag parameter — and those are the quantities with the large uncertainties. Their ratio is much better known. Taking the ratio for the two $B$ systems cancels everything except a well-computed SU(3)-breaking factor $\xi$:
 
@@ -75,11 +75,11 @@ $$
 
 Since $V_{ts}\approx V_{cb}$ and $V_{td}\approx A\lambda^3 R_t$, this is a measurement of $R_t$ that uses no tree-level decay at all.
 
-**One sentence on the rotor, and it is a negative one.** The closure test is a statement about the unitary on generation space, and generation space is not a carrier of the rotor: the compact factor $\mathrm{SU}(2)=\mathrm{Spin}(3)$ acts on the spin index and identically on every generation. The test is therefore **neutral under the rotor**, and the loop that this article computes runs over flavours, not over the rotor's display tower. That is why the GIM mechanism here is a statement about cancellation between generations and has no counterpart among the algebra's carriers. The statement is worth recording because it locates the article: whatever mixes generations is not the gauge group, and the framework's account of it begins where this article ends.
+One sentence on the rotor, and it is a negative one. The closure test is a statement about the unitary on generation space, and generation space is not a carrier of the rotor: the compact factor $\mathrm{SU}(2)=\mathrm{Spin}(3)$ acts on the spin index and identically on every generation. The test is therefore **neutral under the rotor**, and the loop that this article computes runs over flavours, not over the rotor's display tower. That is why the GIM mechanism here is a statement about cancellation between generations and has no counterpart among the algebra's carriers. The statement is worth recording because it locates the article: whatever mixes generations is not the gauge group, and the framework's account of it begins where this article ends.
 
 ## The Box Diagram and the GIM Mechanism
 
-**The amplitude.** $M_{12}$ for a neutral meson comes from a box with two $W$ bosons and two internal quarks:
+The amplitude. $M_{12}$ for a neutral meson comes from a box with two $W$ bosons and two internal quarks:
 
 $$
 M_{12}\propto\sum_{i,j}V_{id}V^{*}_{is}V_{jd}V^{*}_{js}\,
@@ -103,7 +103,7 @@ M_{12}\propto\sum_{i,j}V_{id}V^{*}_{is}V_{jd}V^{*}_{js}\,
 \frac{m_i^2-m_j^2}{m_W^2}\times(\text{logarithm}) .
 $$
 
-**The framework reading, and it is exact.** $V$ is a change of basis on the generation label — [the CKM article's](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) operator — so $VV^{\dagger}=1$ is not an assumption but the definition of a $*$-unitary change of frame. The vanishing of the constant term is therefore **unitarity**. And the surviving term is proportional to the failure of the mass operator to be a scalar on that label: if $m_i=m_j$ for all $i,j$, the mass operator is a multiple of the identity on $\mathcal{F}$ and the whole loop cancels, exactly and to all orders.
+The framework reading, and it is exact. $V$ is a change of basis on the generation label — [the CKM article's](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) operator — so $VV^{\dagger}=1$ is not an assumption but the definition of a $*$-unitary change of frame. The vanishing of the constant term is therefore **unitarity**. And the surviving term is proportional to the failure of the mass operator to be a scalar on that label: if $m_i=m_j$ for all $i,j$, the mass operator is a multiple of the identity on $\mathcal{F}$ and the whole loop cancels, exactly and to all orders.
 
 So the GIM mechanism, in the corpus's language, reads:
 
@@ -111,7 +111,7 @@ So the GIM mechanism, in the corpus's language, reads:
 
 That is a structural statement about the algebra, not a numerical accident, and it is the one place in this article where the framework contributes something to the physics rather than to the bookkeeping. It also explains why the mechanism needs *two* generations to work and why it becomes a suppression rather than a cancellation with three: with a single generation there is nothing to subtract, and with three the subtraction leaves the splittings of whichever pair dominates.
 
-**Why this is a suppression and not a cancellation.** With $u$, $c$, $t$ in the loop, the constant cancels and what remains is
+Why this is a suppression and not a cancellation. With $u$, $c$, $t$ in the loop, the constant cancels and what remains is
 
 $$
 M_{12}\propto\frac{m_c^2-m_u^2}{m_W^2}\quad\text{for the kaon},
@@ -129,9 +129,9 @@ so the same diagram that gives the kaon its $7\times10^{-15}$ relative splitting
 
 ## The Charm Prediction
 
-**The situation in 1974.** $\delta m_K$ was measured. The box diagram with only the up quark in the loop gave an answer that diverged quadratically and had no business being finite, let alone correct. Glashow, Iliopoulos and Maiani proposed a fourth quark with a specific coupling pattern, and the constant term cancelled.
+The situation in 1974. $\delta m_K$ was measured. The box diagram with only the up quark in the loop gave an answer that diverged quadratically and had no business being finite, let alone correct. Glashow, Iliopoulos and Maiani proposed a fourth quark with a specific coupling pattern, and the constant term cancelled.
 
-**Reading the formula backwards.** What remained was proportional to $(m_c^2-m_u^2)/m_W^2$. Setting the coefficient to the measured $\delta m_K$ gave
+Reading the formula backwards. What remained was proportional to $(m_c^2-m_u^2)/m_W^2$. Setting the coefficient to the measured $\delta m_K$ gave
 
 $$
 m_c\approx1.5\ \mathrm{GeV} .
@@ -139,15 +139,15 @@ $$
 
 **What was found, and what the number actually meant.** The $J/\psi$ was discovered at $3.1$ GeV, and the $D$ meson at $1.87$ GeV. Neither is $1.5$ GeV, and both are the wrong kind of number: the mass in the box is the **current** mass of the charm quark, which is $1.27$ GeV, and the hadron masses include the binding energy of a light quark and a gluon cloud. So the prediction was right to about $15\%$ and the two numbers that "disconfirmed" it were not the quantity being predicted.
 
-**Why this is worth recording.** It is the cleanest case in the corpus of a prediction that is easy to mis-state. A reader who compares $1.5$ GeV with $1.87$ GeV concludes the prediction was wrong by $25\%$; a reader who compares with $1.27$ GeV concludes it was right to $18\%$ with the accuracy of a one-loop calculation with an uncomputed hadronic matrix element. The second comparison is the correct one, and the distinction is exactly the one [the hadron-structure article](hadron-structure-from-qcd-the-bound-state-problem.html) drew between current and constituent masses.
+Why this is worth recording. It is the cleanest case in the corpus of a prediction that is easy to mis-state. A reader who compares $1.5$ GeV with $1.87$ GeV concludes the prediction was wrong by $25\%$; a reader who compares with $1.27$ GeV concludes it was right to $18\%$ with the accuracy of a one-loop calculation with an uncomputed hadronic matrix element. The second comparison is the correct one, and the distinction is exactly the one [the hadron-structure article](hadron-structure-from-qcd-the-bound-state-problem.html) drew between current and constituent masses.
 
-**The status today.** The charm loop is now a precision input rather than a prediction: the measured $\delta m_K$ and the lattice-computed matrix element determine a combination of $V_{td}$ and $V_{ts}$ that agrees with the tree-level determination. The prediction has become a test, which is what happens to a successful prediction.
+The status today. The charm loop is now a precision input rather than a prediction: the measured $\delta m_K$ and the lattice-computed matrix element determine a combination of $V_{td}$ and $V_{ts}$ that agrees with the tree-level determination. The prediction has become a test, which is what happens to a successful prediction.
 
 ## The Kaon System
 
-**The two eigenstates, and why they are so different.** $K_S$ and $K_L$ differ in mass by $3.5\times10^{-12}$ MeV and in lifetime by a factor of $580$ ($0.0895$ ns against $51.2$ ns). The lifetime difference is not a small perturbation: it comes from the nearly complete cancellation of the $K^0\to\pi\pi$ amplitude by the GIM-suppressed box contribution, so $K_S$ decays to two pions and $K_L$ cannot (it is CP-forbidden) and must go to three.
+The two eigenstates, and why they are so different. $K_S$ and $K_L$ differ in mass by $3.5\times10^{-12}$ MeV and in lifetime by a factor of $580$ ($0.0895$ ns against $51.2$ ns). The lifetime difference is not a small perturbation: it comes from the nearly complete cancellation of the $K^0\to\pi\pi$ amplitude by the GIM-suppressed box contribution, so $K_S$ decays to two pions and $K_L$ cannot (it is CP-forbidden) and must go to three.
 
-**The three CP observables.**
+The three CP observables.
 
 | Observable | Value | What it measures |
 |---|---|---|
@@ -155,21 +155,21 @@ $$
 | $\mathrm{Re}(\varepsilon'/\varepsilon)$ | $1.66\times10^{-3}$ | CP violation in the decay amplitude itself |
 | $\delta m_K$ | $5.293\times10^{-3}\ \mathrm{ps}^{-1}$ | The mixing, and hence $\lvert V_{td}V_{ts}\rvert$ through the box |
 
-**The ratio of the two, and what it says.** $\mathrm{Re}(\varepsilon'/\varepsilon)/\lvert\varepsilon_K\rvert=0.745$. Both are nonzero, so CP is violated both in mixing and in the decay amplitude — which is the statement that the phase of $V$ enters twice, once through the mixing and once through the penguin amplitude's interference with the tree.
+The ratio of the two, and what it says. $\mathrm{Re}(\varepsilon'/\varepsilon)/\lvert\varepsilon_K\rvert=0.745$. Both are nonzero, so CP is violated both in mixing and in the decay amplitude — which is the statement that the phase of $V$ enters twice, once through the mixing and once through the penguin amplitude's interference with the tree.
 
 **The number that does not close.** $\varepsilon'/\varepsilon$ is the one measurement in the triangle programme that does not agree with its lattice prediction. The measured $1.66\times10^{-3}$ sits well above the $1.4\times10^{-4}$ that the current lattice calculation gives for the Standard Model, a difference of a factor of twelve and about two standard deviations once the (large) hadronic uncertainty is included. The article records this as a live tension rather than a confirmed conflict, and records the reason for caution: the prediction depends on the cancellation of two penguin contractions, and a quantity that is the difference of two large numbers is the last place to trust a first lattice calculation.
 
-**Why $\varepsilon_K$ is the one that measures $\eta$.** At leading order in the Wolfenstein parameters,
+Why $\varepsilon_K$ is the one that measures $\eta$. At leading order in the Wolfenstein parameters,
 
 $$
 \lvert\varepsilon_K\rvert\propto B_K\, f_K^2\, m_K\, \frac{m_t^2}{m_W^2}\,\eta\left(1-\rho\right)\times(\text{short-distance function}),
 $$
 
-so $\varepsilon_K$ is proportional to the **altitude of the triangle**. Its measurement is what first established that $\eta>0$, that is, that the triangle is not flat on the axis and CP is genuinely violated. Numerically $\lvert\varepsilon_K\rvert/\eta=6.3\times10^{-3}$, a constant of proportionality that absorbs $B_K$, $f_K$ and the short-distance function.
+so $\varepsilon_K$ is proportional to the altitude of the triangle. Its measurement is what first established that $\eta>0$, that is, that the triangle is not flat on the axis and CP is genuinely violated. Numerically $\lvert\varepsilon_K\rvert/\eta=6.3\times10^{-3}$, a constant of proportionality that absorbs $B_K$, $f_K$ and the short-distance function.
 
 ## The Two $B$ Systems
 
-**What the numbers are, and what sets them.** The three systems' splittings differ by the internal quark mass squared and by the meson decay constant squared:
+What the numbers are, and what sets them. The three systems' splittings differ by the internal quark mass squared and by the meson decay constant squared:
 
 | System | Internal quarks | $f_P^2 B_P$ | $\delta m$ |
 |---|---|---|---|
@@ -181,13 +181,13 @@ Read down the table: the kaon's small splitting is charm's, the $B$'s large spli
 
 **Why the $B_d$ measurement determines a side of the triangle and the kaon does not.** $\delta m_{B_d}\propto\lvert V_{td}\rvert^2$, and $\lvert V_{td}\rvert$ is the distance from the triangle's apex to the vertex at $(1,0)$ — the side $R_t$, in units of $A\lambda^3$. The kaon's $\delta m$ is dominated by the charm contribution, which carries no $\eta$ dependence at leading order, so it constrains a different combination. Hence: the kaon measures the height, the $B_d$ measures the right side.
 
-**The $B_s$ and the width difference.** $\delta\Gamma_s/\Gamma_s\approx0.12$ is measured, and it is the largest width difference of any neutral meson system. It matters because the two mass eigenstates have different CP content, so a decay into a CP eigenstate can be used to tag the flavour at production — the "same-side" or "opposite-side" tagging that makes $\delta m_s$ measurable at all.
+The $B_s$ and the width difference. $\delta\Gamma_s/\Gamma_s\approx0.12$ is measured, and it is the largest width difference of any neutral meson system. It matters because the two mass eigenstates have different CP content, so a decay into a CP eigenstate can be used to tag the flavour at production — the "same-side" or "opposite-side" tagging that makes $\delta m_s$ measurable at all.
 
 ## Rare Decays
 
-**Why loops are the interesting place.** A decay that is forbidden at tree level in the Standard Model and allowed at one loop is sensitive to anything that couples to the loop's internal particles. The two canonical cases are $b\to s\gamma$ and $B_s\to\mu\mu$.
+Why loops are the interesting place. A decay that is forbidden at tree level in the Standard Model and allowed at one loop is sensitive to anything that couples to the loop's internal particles. The two canonical cases are $b\to s\gamma$ and $B_s\to\mu\mu$.
 
-**$b\to s\gamma$.**
+$b\to s\gamma$.
 
 | Quantity | Value |
 |---|---|
@@ -197,7 +197,7 @@ Read down the table: the kaon's small splitting is charm's, the $B$'s large spli
 
 The agreement to $1\%$ is not a null result. The prediction requires the $W$–$t$ loop, the QCD corrections to two loops, and the $b$-quark mass; a factor-of-two error in any of them would show. The measurement constrains the Wilson coefficients $C_7$ and $C_8$ to a few per cent, and that is the tightest constraint on new physics in the dipole operators.
 
-**$B_s\to\mu\mu$.**
+$B_s\to\mu\mu$.
 
 | Quantity | Value |
 |---|---|
@@ -207,13 +207,13 @@ The agreement to $1\%$ is not a null result. The prediction requires the $W$–$
 
 The ratio is $0.91$, which is $1.4$ standard deviations below the prediction. Worth one sentence and no more: a $1.4\sigma$ is not evidence, and the quantity is helicity-suppressed by $m_\mu^2/m_{B_s}^2$ and therefore intrinsically small, so the experimental error dominates the comparison.
 
-**The anomalies that dissolved.** Between 2014 and 2021 the $b\to s\ell\ell$ angular observables and the lepton-universality ratios $R_K$ and $R_{K^*}$ showed a coherent pattern of deviations from the Standard Model, of a size that suggested a new vector coupling. The 2022 LHCb reanalysis, with a revised treatment of the charmed-hadron backgrounds, moved $R_K$ and $R_{K^*}$ onto the Standard Model prediction. The pattern is gone.
+The anomalies that dissolved. Between 2014 and 2021 the $b\to s\ell\ell$ angular observables and the lepton-universality ratios $R_K$ and $R_{K^*}$ showed a coherent pattern of deviations from the Standard Model, of a size that suggested a new vector coupling. The 2022 LHCb reanalysis, with a revised treatment of the charmed-hadron backgrounds, moved $R_K$ and $R_{K^*}$ onto the Standard Model prediction. The pattern is gone.
 
-**What the dissolution teaches, and this article's use of it.** A closure test is only as good as its inputs, and a coherent pattern of $3\sigma$ deviations is not a discovery. The corpus records the episode because it is the strongest available argument for the discipline the articles have followed: state the number, state its error, and do not narrate the anomaly until it survives an independent dataset.
+What the dissolution teaches, and this article's use of it. A closure test is only as good as its inputs, and a coherent pattern of $3\sigma$ deviations is not a discovery. The corpus records the episode because it is the strongest available argument for the discipline the articles have followed: state the number, state its error, and do not narrate the anomaly until it survives an independent dataset.
 
 ## The Unitarity Triangle
 
-**The construction.** Unitarity of the CKM matrix gives nine relations among its entries. The most useful is the $b$–$d$ relation,
+The construction. Unitarity of the CKM matrix gives nine relations among its entries. The most useful is the $b$–$d$ relation,
 
 $$
 V_{ud}V^{*}_{ub}+V_{cd}V^{*}_{cb}+V_{td}V^{*}_{tb}=0 ,
@@ -225,7 +225,7 @@ $$
 \bar\rho+i\bar\eta=-\frac{V_{ud}V^{*}_{ub}}{V_{cd}V^{*}_{cb}} .
 $$
 
-**The parameters.**
+The parameters.
 
 | Quantity | Value | Definition |
 |---|---|---|
@@ -236,7 +236,7 @@ $$
 | $R_b$ | $0.3866$ | $\sqrt{\bar\rho^2+\bar\eta^2}$ |
 | $R_t$ | $0.9117$ | $\sqrt{(1-\bar\rho)^2+\bar\eta^2}$ |
 
-**The three angles.**
+The three angles.
 
 $$
 \alpha=91.6^\circ ,
@@ -261,7 +261,7 @@ against $J=2.91\times10^{-5}$ computed exactly from the angles and $J=3.08\times
 
 ## The Closure Test
 
-**The five measurements, and what each uses.**
+The five measurements, and what each uses.
 
 | Quantity | Measured by | Physics used | Value | Uncertainty |
 |---|---|---|---|---|
@@ -271,7 +271,7 @@ against $J=2.91\times10^{-5}$ computed exactly from the angles and $J=3.08\times
 | $\gamma$ | $B\to DK$ | Pure tree, no mixing | $65.9^\circ$ | $3.5^\circ$ |
 | $\alpha$ | $B\to\pi\pi,\rho\rho,\rho\pi$ | Isospin analysis of trees | $91.9^\circ$ | $1.5^\circ$ |
 
-**Four different kinds of physics.** $R_b$ is a ratio of two tree-level rates, so it is as clean as a hadronic quantity gets. $R_t$ is a ratio of two loop-induced frequencies, so it depends on the top mass, on the box function and on a lattice matrix element — and the ratio cancels most of the last. $\gamma$ comes from interference between $b\to c\bar us$ and $b\to u\bar cs$, both trees, so it is sensitive to no loop at all and is the Standard Model's cleanest angle. $\beta$ comes from a decay that requires mixing to occur, so it is a loop quantity dressed as a tree measurement. $\alpha$ is extracted from three channels by isospin, and is the least clean of the three.
+Four different kinds of physics. $R_b$ is a ratio of two tree-level rates, so it is as clean as a hadronic quantity gets. $R_t$ is a ratio of two loop-induced frequencies, so it depends on the top mass, on the box function and on a lattice matrix element — and the ratio cancels most of the last. $\gamma$ comes from interference between $b\to c\bar us$ and $b\to u\bar cs$, both trees, so it is sensitive to no loop at all and is the Standard Model's cleanest angle. $\beta$ comes from a decay that requires mixing to occur, so it is a loop quantity dressed as a tree measurement. $\alpha$ is extracted from three channels by isospin, and is the least clean of the three.
 
 **The closure, in three equations.**
 
@@ -299,17 +299,17 @@ $$
 
 a difference of $0.8$ standard deviations. Neither difference is zero, and both are within the stated errors. That is what closure looks like: not exact agreement, but agreement at the accuracy of the inputs, with no parameter adjusted to produce it.
 
-**The comparison with the alternative.** A four-generation model, or a model with a $Z'$ coupling to $b$ quarks, would move one or more of these five numbers. The closure is therefore a constraint: it excludes any new physics that would shift $R_t$ or $\gamma$ by more than a per cent while leaving the others alone.
+The comparison with the alternative. A four-generation model, or a model with a $Z'$ coupling to $b$ quarks, would move one or more of these five numbers. The closure is therefore a constraint: it excludes any new physics that would shift $R_t$ or $\gamma$ by more than a per cent while leaving the others alone.
 
 ## What Closure Does and Does Not Prove
 
-**What it proves.** That the CKM picture is *self-consistent*: three angles and two sides, measured by five different experimental techniques spanning tree and loop physics, satisfy the unitarity relations of a $3\times3$ unitary matrix. That is a strong statement, because unitarity is a property of the group and not of any dynamical assumption, so the test has no adjustable content.
+What it proves. That the CKM picture is *self-consistent*: three angles and two sides, measured by five different experimental techniques spanning tree and loop physics, satisfy the unitarity relations of a $3\times3$ unitary matrix. That is a strong statement, because unitarity is a property of the group and not of any dynamical assumption, so the test has no adjustable content.
 
 **What it does not prove.** It does not prove that the CKM matrix is the *origin* of CP violation rather than a description of it. It does not exclude new physics that respects the same unitarity relations — a heavy particle that couples in a flavour-universal way, or one whose contributions cancel in the five observables. And it does not explain the pattern: the values $\lambda=0.2265$, $A=0.826$, $\bar\rho=0.159$, $\bar\eta=0.352$ are measured, and the corpus has no principle that selects them.
 
-**The distinction the corpus insists on.** There is a difference between "the model is consistent with all data" and "the model is the correct description". The closure test establishes the first. The second would require the model to be *unique* among consistent descriptions, and it is not, as the persistence of the flavour puzzle shows.
+The distinction the corpus insists on. There is a difference between "the model is consistent with all data" and "the model is the correct description". The closure test establishes the first. The second would require the model to be *unique* among consistent descriptions, and it is not, as the persistence of the flavour puzzle shows.
 
-**What would break it.** A sixth measurement of the same triangle by a different route, disagreeing at more than $3\sigma$:
+What would break it. A sixth measurement of the same triangle by a different route, disagreeing at more than $3\sigma$:
 
 | Candidate | Currently | Would test |
 |---|---|---|
@@ -323,17 +323,17 @@ None of the first four is available yet, and the closure is therefore a check wi
 
 ## What the Framework Supplies
 
-**Two structural statements, and neither is a number.**
+Two structural statements, and neither is a number.
 
 **GIM is a statement about the flavour factor.** As above: $VV^{\dagger}=1$ is the definition of a change of basis on the generation label, so the constant term in the loop vanishes by unitarity, and the surviving term measures the non-centrality of the mass operator. This is a genuine framework-level reading. It supplies no value, but it supplies the *reason* the mechanism has the form it has, and it explains in one sentence why one generation gives nothing and three give a suppression.
 
-**The triangle is a statement about $\mathrm{U}(3)$.** The three-vector sum closing is the unitarity of the mixing group, and the area being CP violation is the statement that a $*$-unitary operator with one phase cannot be made real by rephasing. [The CKM article](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) derived both. What the framework supplies is therefore the *necessity* of a triangle, not its shape.
+The triangle is a statement about $\mathrm{U}(3)$. The three-vector sum closing is the unitarity of the mixing group, and the area being CP violation is the statement that a $*$-unitary operator with one phase cannot be made real by rephasing. [The CKM article](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html) derived both. What the framework supplies is therefore the *necessity* of a triangle, not its shape.
 
-**What it transcribes.** Everything numerical: the box functions, the Inami–Lim results, the hadronic matrix elements, the measured frequencies, the rare-decay branching ratios, the five closure inputs and their errors.
+What it transcribes. Everything numerical: the box functions, the Inami–Lim results, the hadronic matrix elements, the measured frequencies, the rare-decay branching ratios, the five closure inputs and their errors.
 
-**What it does not supply, declared.** No loop calculation. No measure on the space of field configurations over which a loop integral is defined. No lattice. No hadronic matrix element. No mechanism for the values of $\lambda$, $A$, $\bar\rho$, $\bar\eta$. No explanation of why there are three generations. Each of these is an import, and the articles that own them are named in the ledger.
+What it does not supply, declared. No loop calculation. No measure on the space of field configurations over which a loop integral is defined. No lattice. No hadronic matrix element. No mechanism for the values of $\lambda$, $A$, $\bar\rho$, $\bar\eta$. No explanation of why there are three generations. Each of these is an import, and the articles that own them are named in the ledger.
 
-**The ledger.**
+The ledger.
 
 | Item | Status |
 |---|---|
@@ -352,7 +352,7 @@ None of the first four is available yet, and the closure is therefore a check wi
 | $\mathrm{U}(3)$ and the necessity of a closed triangle | **Framework**, per the CKM article |
 | Loop integrals, lattice matrix elements, the values of the four Wolfenstein parameters | **Not available** |
 
-**What this article does not do.** It does not compute a box diagram, a Wilson coefficient or a hadronic matrix element. It assembles the numbers, checks the arithmetic through the law of cosines, compares the two independent $R_t$ determinations and the one $\beta$ determination, and marks the boundary. The closure it reports is a closure of *numbers*, not of derivations.
+What this article does not do. It does not compute a box diagram, a Wilson coefficient or a hadronic matrix element. It assembles the numbers, checks the arithmetic through the law of cosines, compares the two independent $R_t$ determinations and the one $\beta$ determination, and marks the boundary. The closure it reports is a closure of *numbers*, not of derivations.
 
 ## Summary
 

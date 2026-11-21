@@ -132,7 +132,7 @@ The model is no longer presented. What replaced it:
 KEPT ON PURPOSE: the citation "A. K. Pati and S. L. Braunstein, Impossibility of deleting an unknown
 quantum state" in no-cloning — a different physicist, quantum information, nothing to do with the
 model. PROVENANCE: the Pati & Salam 1974 citation survives in two internal notes
-(`the-fourth-colour-model`, `Indistinguishable-theories-standard-model`) and in the coupling-sector
+(`the-pati-salam-model`, `Indistinguishable-theories-standard-model`) and in the coupling-sector
 note, which is where the coupling is now discussed. OUT OF SCOPE: `articles_external/Pati-Salam/`
 (source papers, not in any menu).
 

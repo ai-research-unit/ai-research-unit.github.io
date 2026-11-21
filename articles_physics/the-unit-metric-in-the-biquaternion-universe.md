@@ -38,7 +38,7 @@ $$
 \delta_{\mu\nu}=1\ \text{if}\ \mu=\nu,\qquad \delta_{\mu\nu}=0\ \text{otherwise}.
 $$
 
-**The four directions are unit directions.** Each basis element has norm one:
+The four directions are unit directions. Each basis element has norm one:
 
 $$
 \langle e_\mu\rangle_\natural=e_\mu e_\mu^\natural=+1,\qquad \mu\in\{t,x,y,z\}.
@@ -46,7 +46,7 @@ $$
 
 The two cases are computed directly: $e_te_t^\natural=e_te_t=1$, and $\vec e_\eta\vec e_\eta^\natural=\vec e_\eta(-\vec e_\eta)=-\vec e_\eta^2=+1$. No sign is inserted anywhere, because the quaternion conjugation supplies the sign and the square supplies it back.
 
-**That one line is the metric.** The Gram matrix of the quaternionic form on the base is
+That one line is the metric. The Gram matrix of the quaternionic form on the base is
 
 $$
 \langle e_\mu,e_\nu\rangle_\natural=\mathrm{Sc}\bigl(e_\mu^\natural e_\nu\bigr)=\delta_{\mu\nu},
@@ -54,15 +54,15 @@ $$
 
 and the four units are pairwise orthogonal, since $\mathrm{Sc}(e_x^\natural e_y)=-\mathrm{Sc}(\vec e_x\vec e_y)=-\mathrm{Sc}(\vec e_z)=0$. A base of four unit vectors, mutually orthogonal, has the identity as its Gram matrix. Nothing was chosen here: the base was given, the product was given, and the matrix came out.
 
-**It has no free parameter.** A symmetric $4\times4$ real matrix has ten independent entries. Here four are fixed at $+1$ by the norms of the four units, six at $0$ by their orthogonality, and every one of the ten by the multiplication. There is no sign to pick, no scale to fix and no convention to declare.
+It has no free parameter. A symmetric $4\times4$ real matrix has ten independent entries. Here four are fixed at $+1$ by the norms of the four units, six at $0$ by their orthogonality, and every one of the ten by the multiplication. There is no sign to pick, no scale to fix and no convention to declare.
 
-**A frame carries a coordinate, not a metric.** Both frames read the same $\delta_{\mu\nu}$, because both read the same norm. What separates them is the coordinate the norm is read in: $Q_\mu$ in $\mathbb{B}$, the real $x_\mu$ in $\mathbb{B}_{\Phi}$. A frame that carried a metric of its own would be a second object, and the rest of this article is about why the series keeps one.
+A frame carries a coordinate, not a metric. Both frames read the same $\delta_{\mu\nu}$, because both read the same norm. What separates them is the coordinate the norm is read in: $Q_\mu$ in $\mathbb{B}$, the real $x_\mu$ in $\mathbb{B}_{\Phi}$. A frame that carried a metric of its own would be a second object, and the rest of this article is about why the series keeps one.
 
 ## The Metric Is Read Off the Product
 
 ### The quaternionic form and the plain form
 
-Two bilinear forms live on the algebra, and they differ in one slot. The **plain** form takes the scalar part of the product, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The **quaternionic** form conjugates the first slot before multiplying, $\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$, and it is the one the quaternion conjugation supplies. On the base the two read
+Two bilinear forms live on the algebra, and they differ in one slot. The plain form takes the scalar part of the product, $\mathrm{Sc}(\tilde Q_1\tilde Q_2)$. The quaternionic form conjugates the first slot before multiplying, $\mathrm{Sc}(\tilde Q_1^\natural\tilde Q_2)$, and it is the one the quaternion conjugation supplies. On the base the two read
 
 $$
 \mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu},\qquad
@@ -77,7 +77,7 @@ with $\varepsilon=(1,-1,-1,-1)$ the plain weight. The two tables are:
 | $(\vec e_x,\vec e_x)$, $(\vec e_y,\vec e_y)$, $(\vec e_z,\vec e_z)$ | $-1$ each | $+1$ each |
 | every pair with $\mu\neq\nu$ | $0$ | $0$ |
 
-**The weight is what the conjugation does.** For each unit, $e_\mu^\natural=\varepsilon_\mu e_\mu$: the quaternion conjugation leaves the temporal unit and negates the three space units. So the two forms differ by the weight, applied entrywise, and the weight squares to the identity. **The metric is what is left when the weight has been applied twice.**
+The weight is what the conjugation does. For each unit, $e_\mu^\natural=\varepsilon_\mu e_\mu$: the quaternion conjugation leaves the temporal unit and negates the three space units. So the two forms differ by the weight, applied entrywise, and the weight squares to the identity. **The metric is what is left when the weight has been applied twice.**
 
 **The metric is a theorem of the table.** Solving the first display for the metric gives
 
@@ -130,7 +130,7 @@ On $\mathbb{B}$ the four coefficients are complex and the value of the norm is c
 
 **The metric did not move.** In all four rows the coefficient tuple is $\delta_{\mu\nu}=(1,1,1,1)$; the column that changes is the coordinate. So the answer to the question *how does a metric of $1,1,1,1$ give $-{r'_{t}}^2+r_x^2+r_y^2+r_z^2$* is: it gives the four coefficients $+1$, and the sign is delivered by the coordinate. The metric does its work as a coefficient, and the $i$ does the rest.
 
-**The sign is counted once.** Write $Q_t=i q'_t$ and the time term of the interval is negative. That is one use of the sign, and there is no second slot in the scheme that could hold another: the metric is the identity, so it carries no entry for a minus on the time direction.
+The sign is counted once. Write $Q_t=i q'_t$ and the time term of the interval is negative. That is one use of the sign, and there is no second slot in the scheme that could hold another: the metric is the identity, so it carries no entry for a minus on the time direction.
 
 ## Why the Sign Cannot Be Wrong
 
@@ -140,21 +140,21 @@ The answer has three steps.
 
 **A convention is a choice between writings the algebra cannot tell apart.** The tuple $1,1,1,1$ is not that. It is the Gram matrix of the quaternionic form on the base, and the quaternionic form is fixed by the norm, which is fixed by the product. Given this base, there is no second tuple that the same product would also support: the Gram matrix is computed, not selected.
 
-**The competing writing is distinguishable, and it is distinguishable in a specific place.** It changes the coefficient tuple from $\delta_{\mu\nu}$ to $-\varepsilon_\mu\delta_{\mu\nu}$, and it moves the $i$ from the coordinate into the array. That is a relocation of one symbol, not a value of a free parameter. It is a different notation for the same geometry.
+The competing writing is distinguishable, and it is distinguishable in a specific place. It changes the coefficient tuple from $\delta_{\mu\nu}$ to $-\varepsilon_\mu\delta_{\mu\nu}$, and it moves the $i$ from the coordinate into the array. That is a relocation of one symbol, not a value of a free parameter. It is a different notation for the same geometry.
 
-**Therefore the sign is checkable in one and not in the other.** In the unit scheme a reader checks the minus by squaring: $(i r'_t)^2=-{r'_{t}}^2$, and $i^2=-1$ is arithmetic. In the absorbed scheme the minus is an entry of an array, and the reader can only check it against the author's declaration. One of the two can be audited by a reader who does not trust the author.
+Therefore the sign is checkable in one and not in the other. In the unit scheme a reader checks the minus by squaring: $(i r'_t)^2=-{r'_{t}}^2$, and $i^2=-1$ is arithmetic. In the absorbed scheme the minus is an entry of an array, and the reader can only check it against the author's declaration. One of the two can be audited by a reader who does not trust the author.
 
-**What the signs still are.** The interval on $\mathbb{B}_{\Phi}$ has one negative direction and three positive, and this is a real statement. It belongs to the form read on a sector, and the series states it there. It does not belong to the metric: read as a real quadratic form, $\delta_{\mu\nu}$ is positive definite, and the $(3,1)$ of the material interval is what the complex coordinate does to the four coefficients that form is read on. Confusing the two is the mistake the unit metric exists to prevent.
+What the signs still are. The interval on $\mathbb{B}_{\Phi}$ has one negative direction and three positive, and this is a real statement. It belongs to the form read on a sector, and the series states it there. It does not belong to the metric: read as a real quadratic form, $\delta_{\mu\nu}$ is positive definite, and the $(3,1)$ of the material interval is what the complex coordinate does to the four coefficients that form is read on. Confusing the two is the mistake the unit metric exists to prevent.
 
 ## What the Choice Buys
 
 Four gains follow, and the table at the end of the section is their summary.
 
-**No index is raised.** With $\delta_{\mu\nu}$ the identity, a raised index would denote the same slot, so every index is written low and the position of an index carries no information. The sign that a raising would carry is carried by the weight instead, and the series writes it where it belongs.
+No index is raised. With $\delta_{\mu\nu}$ the identity, a raised index would denote the same slot, so every index is written low and the position of an index carries no information. The sign that a raising would carry is carried by the weight instead, and the series writes it where it belongs.
 
-**One substitution changes the frame.** $Q_t=i q'_t$ in physics, $Q_t=i q'_t$ in the algebra. No matrix, no transpose and no congruence: the substitution carries the interval at once, and there is nothing else to get right.
+One substitution changes the frame. $Q_t=i q'_t$ in physics, $Q_t=i q'_t$ in the algebra. No matrix, no transpose and no congruence: the substitution carries the interval at once, and there is nothing else to get right.
 
-**One formula serves every sector.** The norm is one polynomial in four variables. An author does not select a case, a branch or a sign before computing; the case is a condition on the coefficients, and the formula is blind to it.
+One formula serves every sector. The norm is one polynomial in four variables. An author does not select a case, a branch or a sign before computing; the case is a condition on the coefficients, and the formula is blind to it.
 
 **One symbol does two jobs.** The $i$ of $Q_t=i q'_t$ supplies the minus of the interval, by $i^2=-1$, and it also marks the temporal coefficient as imaginary, which is what the material reading of time stands on. A single symbol carries the geometry and the interpretation together. Absorption separates the two jobs: the minus moves into $g_{00}=-1$, and the $i$ either leaves the coordinate, taking the reading with it, or stays, and then the sign is written twice.
 
@@ -171,7 +171,7 @@ The two schemes write the minus in the same number of places, and the count is n
 
 ## The Alternative We Do Not Choose
 
-**The move.** Take the real coordinate and put the minus in a metric:
+The move. Take the real coordinate and put the minus in a metric:
 
 $$
 x_0=r'_{t},\qquad x_\eta=r_\eta,\qquad -{r'_{t}}^2+r_x^2+r_y^2+r_z^2=g_{\mu\nu}x_\mu x_\nu,\qquad g=\mathrm{diag}(-1,1,1,1).
@@ -189,25 +189,25 @@ because the real-coordinate interval is $-\varepsilon_\mu x_\mu^2$: the time ter
 
 ### What the absorbed form buys
 
-- **The familiar Clifford relation with a plus.** Setting $\gamma'_\mu=i\gamma_\mu$ gives $\{\gamma'_\mu,\gamma'_\nu\}=2g_{\mu\nu}I_4$ with the metric on the right having the textbook signs.
-- **The language of the textbooks and of general relativity.** There the metric is the leading object, and a reader arrives expecting it.
-- **A one-line translation.** $g=-\varepsilon$ and $\gamma'=i\gamma$ convert between the two schemes.
+- The familiar Clifford relation with a plus. Setting $\gamma'_\mu=i\gamma_\mu$ gives $\{\gamma'_\mu,\gamma'_\nu\}=2g_{\mu\nu}I_4$ with the metric on the right having the textbook signs.
+- The language of the textbooks and of general relativity. There the metric is the leading object, and a reader arrives expecting it.
+- A one-line translation. $g=-\varepsilon$ and $\gamma'=i\gamma$ convert between the two schemes.
 
 None of the three is a gain in content. Each is a gain in familiarity, and familiarity is not nothing: it is the reason the alternative is stated here in full rather than dismissed.
 
 ### What it costs
 
-1. **The $i$ is relocated, not removed.** With the original generators the relation reads $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}I_4$, carrying a stray minus; with the rescaled generators the $i$ sits inside each matrix, $\gamma'=i\gamma$. In both writings the $i$ is inside an object, where a reader cannot see it.
-2. **Two metrics instead of one.** The frame carries a metric again, so each frame must be declared with its metric and every display must say which is in force. That is a convention at the head of each article, and a convention can be stated wrongly.
-3. **A congruence law in place of a substitution.** The change of frame becomes a matrix statement, $g_{\mathbb{B}_{\Phi}}=\Lambda^{\mathsf T}g_{\mathbb{B}}\Lambda$, with a matrix, a transpose and a law. The unit scheme writes $Q_t=i q'_t$ and stops.
-4. **Index machinery returns.** With $g\neq\delta$ raising and lowering are live operations, so every index question acquires two parts: is it up or down, and in which metric.
-5. **The sign loses its provenance.** In the unit scheme the minus is checked by squaring. In the absorbed scheme it is a number in an array, checked only against the author's word, so a reader cannot audit it.
-6. **The material reading loses its anchor.** The imaginary temporal coefficient is what marks time as measured but not touched; a metric with $g_{00}=-1$ turns the same sign into a property of a matrix, and the reading has nothing algebraic left to stand on.
-7. **It opens the door to a mixed text.** A text that keeps $Q_t=i q'_t$ and also contracts with $g_{00}=-1$ has applied the sign twice, and its time term reads $+{r'_{t}}^2$. The error is silent: every other term is right, the algebra checks pass, and only the sign of the interval is wrong. Absorption done whole is consistent; the mixture is what the literature contains, and it is what a migration has to undo one article at a time.
+1. The $i$ is relocated, not removed. With the original generators the relation reads $\{\gamma_\mu,\gamma_\nu\}=-2g_{\mu\nu}I_4$, carrying a stray minus; with the rescaled generators the $i$ sits inside each matrix, $\gamma'=i\gamma$. In both writings the $i$ is inside an object, where a reader cannot see it.
+2. Two metrics instead of one. The frame carries a metric again, so each frame must be declared with its metric and every display must say which is in force. That is a convention at the head of each article, and a convention can be stated wrongly.
+3. A congruence law in place of a substitution. The change of frame becomes a matrix statement, $g_{\mathbb{B}_{\Phi}}=\Lambda^{\mathsf T}g_{\mathbb{B}}\Lambda$, with a matrix, a transpose and a law. The unit scheme writes $Q_t=i q'_t$ and stops.
+4. Index machinery returns. With $g\neq\delta$ raising and lowering are live operations, so every index question acquires two parts: is it up or down, and in which metric.
+5. The sign loses its provenance. In the unit scheme the minus is checked by squaring. In the absorbed scheme it is a number in an array, checked only against the author's word, so a reader cannot audit it.
+6. The material reading loses its anchor. The imaginary temporal coefficient is what marks time as measured but not touched; a metric with $g_{00}=-1$ turns the same sign into a property of a matrix, and the reading has nothing algebraic left to stand on.
+7. It opens the door to a mixed text. A text that keeps $Q_t=i q'_t$ and also contracts with $g_{00}=-1$ has applied the sign twice, and its time term reads $+{r'_{t}}^2$. The error is silent: every other term is right, the algebra checks pass, and only the sign of the interval is wrong. Absorption done whole is consistent; the mixture is what the literature contains, and it is what a migration has to undo one article at a time.
 
-**The decision.** The series keeps the metric $1,1,1,1$ and keeps the $i$ of $i r'_t$ and $i h'_{x_\eta}$ in the coordinate, separate and explicit. The sign is written in the product and in the coordinate, and in nothing else.
+The decision. The series keeps the metric $1,1,1,1$ and keeps the $i$ of $i r'_t$ and $i h'_{x_\eta}$ in the coordinate, separate and explicit. The sign is written in the product and in the coordinate, and in nothing else.
 
-**What the decision does not claim.** The absorbed form is not wrong. It is equivalent, and the equivalence is one line: $g=-\varepsilon$. An article that writes it describes the same interval, and a reader who comes from the textbooks should translate once and then work in the coordinate. What the series refuses is not the object but its price, and the price is the seven items above.
+What the decision does not claim. The absorbed form is not wrong. It is equivalent, and the equivalence is one line: $g=-\varepsilon$. An article that writes it describes the same interval, and a reader who comes from the textbooks should translate once and then work in the coordinate. What the series refuses is not the object but its price, and the price is the seven items above.
 
 ## Two Objections
 
@@ -243,15 +243,15 @@ The right-hand side is a product of two objects. The metric is the second factor
 
 **The weight looks like a metric, and that is the trap.** Since $g=-\varepsilon$, contracting the real coordinate with $\varepsilon$ rather than with $g$ gives $+{r'_{t}}^2-x^2-y^2-z^2$: the overall negative of the interval. Both objects are diagonal with entries $\pm1$, so the algebra does not catch the substitution, and only the sign of the interval records it.
 
-**A repeated label is a sum, never a contraction.** No index is raised or lowered, so the pairing of two elements is a quaternionic form and not an index operation. The weight does the sign work in a product; the metric does none, because it is the identity.
+A repeated label is a sum, never a contraction. No index is raised or lowered, so the pairing of two elements is a quaternionic form and not an index operation. The weight does the sign work in a product; the metric does none, because it is the identity.
 
 ## Physical Readings
 
 The choice of metric reads in three ways, each with the boundary that keeps it honest.
 
-- **The geometry is in the algebra.** The interval is a norm, the norm is a product, and the metric is the Gram matrix of the product. The framework therefore does not need a metric field to say what a distance is; it needs one only to say how the algebra is attached to a curved manifold, and that is the tetrad's job. Boundary: this is a statement about the flat pointwise geometry, and it says nothing about dynamics.
-- **The minus is arithmetic, not convention.** The Lorentzian minus is $i^2=-1$, so it is a fact about numbers and a reader can audit it. Boundary: the assertion that the *world* is Lorentzian is a physical premise; what the algebra supplies is that the premise costs nothing to state and one line to check.
-- **Time is measured and not touched.** The imaginary temporal coefficient is what distinguishes time from the three spatial coefficients, and it is also the source of the minus. Boundary: the reading of the placement as the difference between time and space is an interpretation, made in *The Temporal Dimension*; the mathematics fixes only the placement.
+- The geometry is in the algebra. The interval is a norm, the norm is a product, and the metric is the Gram matrix of the product. The framework therefore does not need a metric field to say what a distance is; it needs one only to say how the algebra is attached to a curved manifold, and that is the tetrad's job. Boundary: this is a statement about the flat pointwise geometry, and it says nothing about dynamics.
+- The minus is arithmetic, not convention. The Lorentzian minus is $i^2=-1$, so it is a fact about numbers and a reader can audit it. Boundary: the assertion that the *world* is Lorentzian is a physical premise; what the algebra supplies is that the premise costs nothing to state and one line to check.
+- Time is measured and not touched. The imaginary temporal coefficient is what distinguishes time from the three spatial coefficients, and it is also the source of the minus. Boundary: the reading of the placement as the difference between time and space is an interpretation, made in *The Temporal Dimension*; the mathematics fixes only the placement.
 
 ## Summary
 

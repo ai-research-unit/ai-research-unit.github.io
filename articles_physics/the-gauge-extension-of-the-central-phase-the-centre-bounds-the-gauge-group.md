@@ -30,19 +30,19 @@ properties are the whole of its relevance.
 
 The gauge principle asks for the local version: a phase $\theta_{\mathrm{cen}}(x)$ that depends on the point, and a
 connection $\tilde{A}_{\Phi,\mu}$ that transforms so that the covariant derivative
-$\partial/\partial x_\mu - iϙ\tilde{A}_{\Phi,\mu}$ is phase-covariant. **The framework has the phase and not the connection**,
+$\partial/\partial x_\mu - iϙ\tilde{A}_{\Phi,\mu}$ is phase-covariant. The framework has the phase and not the connection,
 and the reason is structural rather than technical: a connection is a field valued in the Lie algebra of the
 group, and the Lie algebra of the central phase is the one-dimensional span of $ie_t$, which is central. A
 central generator produces a field that commutes with everything, so the "connection" it generates cannot
 couple to anything and the covariant derivative collapses to the ordinary one. A gauged central phase is
-therefore **no gauge theory at all**: an abelian gauge field needs a matter field that transforms
+therefore no gauge theory at all: an abelian gauge field needs a matter field that transforms
 non-trivially, and the framework's matter lives in modules on which a central phase acts by a scalar.
 
 ## The Centre and the Gauge Group
 
 With the obstruction stated, the reason the gauge group stays at $\mathrm{U}(2)$ follows. The intrinsic gauge group of the
 algebra is the $*$-unitary slice $U=\{\tilde Q:\tilde Q\tilde Q^{*}=e_t\}\cong \mathrm{U}(2)$, the central product
-$(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, and the **abelian factor is exactly the central phase**. The structure of
+$(SU(2)\times \mathrm{U}(1))/\mathbb{Z}_2$, and the abelian factor is exactly the central phase. The structure of
 the group is the structure of the centre:
 
 | piece of the group | where it lives | what it does |
@@ -66,7 +66,7 @@ may look: it is the whole of the algebra's **uniform** symmetry, so it fixes the
 intrinsic group at $\mathrm{U}(1)$ and forbids a second uniform phase, and it does not by itself bound the group,
 which is bounded by the dimension of the anti-Hermitian sector.
 
-**The parity matching.** The central phase has period $2\pi i$, but its shifts are not independent of the module rotations. The kernel of the exponential on the diagonal part is the **parity-matched lattice**
+The parity matching. The central phase has period $2\pi i$, but its shifts are not independent of the module rotations. The kernel of the exponential on the diagonal part is the **parity-matched lattice**
 
 $$
 \boxed{\;L=\pi i m\,e_t+\pi n\,\vec U,
@@ -81,7 +81,7 @@ so a shift by $2\pi i$ in the phase and a shift by $2\pi$ in the rotation are ea
 Two interpretations of the extension problem are consistent with the algebra, and the article states both and
 chooses neither.
 
-**Reading A — the central extension is the whole extension.** The gauge structure of the framework is the
+Reading A — the central extension is the whole extension. The gauge structure of the framework is the
 central product $\mathrm{U}(2)$ and nothing else, and the physically meaningful statement is that the framework's
 gauge group is the extension of $SU(2)$ by the central phase. On this interpretation the framework is a
 $\mathrm{U}(2)$-gauge theory in which the abelian factor is the algebra's centre, hypercharge is the central phase and
@@ -89,7 +89,7 @@ weak isospin is the module action, and the ceiling is a result about the gauge g
 than a defect. The interpretation is the framework's own position and is labelled as an interpretation: the algebra fixes
 the group and not the names of its factors.
 
-**Reading B — the central phase is the trace of a local structure.** The gauge structure the framework
+Reading B — the central phase is the trace of a local structure. The gauge structure the framework
 should carry is a **local** one, and the central phase is the shadow of a connection that the algebra does
 not contain. On this interpretation the interesting object is the obstruction itself: a local phase gauge theory
 requires a non-central generator, the algebra has none, and the minimal carrier on which the obstruction
@@ -104,9 +104,9 @@ question is being asked.
 
 **The hypercharge clause of Reading A is false, and the disproof is one paragraph.** Write $\mathfrak u(2)=\mathfrak{su}(2)\oplus\mathfrak u(1)$ by the trace decomposition. Any Lie-algebra isomorphism onto that direct sum carries the centre onto the centre, because the centre is an invariant of the algebra and not of a chosen splitting; the centre of $\mathfrak u(2)$ is the line $\mathbb R\,ie_t$, and the line is one-dimensional. A connection valued in $\mathfrak u(1)$ therefore couples to every field through the single number that multiplies $ie_t$. Hypercharge requires six values on one generation, with $Y_L\neq Y_R$ for a single species, and a map that sends every element to a multiple of one generator cannot produce them.
 
-**So the two readings survive, with one clause removed.** Reading A remains true as a statement about the framework's group: the gauge group is $\mathrm U(2)$, the abelian factor is the central phase, and the ceiling is exact. What it cannot also claim is that this phase *is* hypercharge. Reading B is untouched, since it already denies that the algebra contains the needed structure.
+So the two readings survive, with one clause removed. Reading A remains true as a statement about the framework's group: the gauge group is $\mathrm U(2)$, the abelian factor is the central phase, and the ceiling is exact. What it cannot also claim is that this phase *is* hypercharge. Reading B is untouched, since it already denies that the algebra contains the needed structure.
 
-**Where the computation is.** The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Gauge Group and the Hypercharge Assignment in the Fourth-Colour Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
+Where the computation is. The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Gauge Group and the Hypercharge Assignment in the Fourth-Colour Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
 
 ## What Is Not Claimed
 
@@ -125,10 +125,10 @@ question is being asked.
   uniform symmetry is the abelian factor of its intrinsic gauge group, so a framework whose only
   uniform symmetry is a phase is a framework with a $\mathrm{U}(1)$ factor and no more. Owner: *The Centre of the
   Biquaternion Algebra as the Classical Sector*.
-- **Compactness is the discreteness of the charge.** The interpretation is that the charge carried by the central
+- Compactness is the discreteness of the charge. The interpretation is that the charge carried by the central
   phase is discrete because the phase is a circle, which is the same mechanism as the compact group of the
   gauge ceiling. Owner: *The Physical Interpretation of the 12 Products*.
-- **Non-centrality is non-locality's algebraic price.** The interpretation is that a local gauge symmetry costs a
+- Non-centrality is non-locality's algebraic price. The interpretation is that a local gauge symmetry costs a
   non-central generator, so the framework's globality is the price it pays for having a scalar centre, and
   the enlargement is the price it would pay to escape. Owners: *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* and *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
 

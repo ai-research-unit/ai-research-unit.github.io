@@ -2,15 +2,15 @@
 
 ## Introduction
 
-**The Dirac operator is mixed in position space and pure in momentum space, and the transform is the difference.** *The Dirac Equation in Biquaternionic Form* writes the dynamics as the chiral pair $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$. One term of the operator there is the anti-Hermitian gradient and the other is the Hermitian mass coefficient, so the two Hermiticity characters stand in the same equation with opposite signs of character. Nothing in position space separates them, because the operator there is differential and its character is a statement about its adjoint rather than about a multiplier.
+The Dirac operator is mixed in position space and pure in momentum space, and the transform is the difference. *The Dirac Equation in Biquaternionic Form* writes the dynamics as the chiral pair $\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$ and $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$. One term of the operator there is the anti-Hermitian gradient and the other is the Hermitian mass coefficient, so the two Hermiticity characters stand in the same equation with opposite signs of character. Nothing in position space separates them, because the operator there is differential and its character is a statement about its adjoint rather than about a multiplier.
 
-**Under the transform the separation is a multiplication by one central $i$.** The symbol rule of *Derivatives, Fields and Transforms* sends $\partial/\partial R_\mu$ to $2\pi\rho\,\omega_\mu$ with $\rho=i$, so the gradient becomes $i\tilde K_\Phi$ and its conjugate $i\tilde K_\Phi^{\natural}$. Multiplication by the central $i$ carries an anti-Hermitian element to a Hermitian one. The momentum-space operator is therefore Hermitian-valued everywhere, and the mixed character of the position-space operator is gone.
+Under the transform the separation is a multiplication by one central $i$. The symbol rule of *Derivatives, Fields and Transforms* sends $\partial/\partial R_\mu$ to $2\pi\rho\,\omega_\mu$ with $\rho=i$, so the gradient becomes $i\tilde K_\Phi$ and its conjugate $i\tilde K_\Phi^{\natural}$. Multiplication by the central $i$ carries an anti-Hermitian element to a Hermitian one. The momentum-space operator is therefore Hermitian-valued everywhere, and the mixed character of the position-space operator is gone.
 
-**Three statements organise the article.** The light cone is exactly the locus of idempotent momenta, and the idempotent it produces is $\tfrac12(e_t-i\hat n\cdot\vec e)$ with $\hat n$ the momentum's direction; the two signs of $\hat n$ are the two massless ideals. The transform preserves the Hermitian form and breaks the quaternionic norm, so the indefinite quadratic structure survives on the symbol as a level set and not on fields as a norm. And the mechanism behind both is one coefficient: the sector change from $\mathbb{B}_\Phi$ to $\mathbb{B}_\Psi$ is the $i$ in the multiplier, never a change in the image of a function.
+Three statements organise the article. The light cone is exactly the locus of idempotent momenta, and the idempotent it produces is $\tfrac12(e_t-i\hat n\cdot\vec e)$ with $\hat n$ the momentum's direction; the two signs of $\hat n$ are the two massless ideals. The transform preserves the Hermitian form and breaks the quaternionic norm, so the indefinite quadratic structure survives on the symbol as a level set and not on fields as a norm. And the mechanism behind both is one coefficient: the sector change from $\mathbb{B}_\Phi$ to $\mathbb{B}_\Psi$ is the $i$ in the multiplier, never a change in the image of a function.
 
-**The denial is stated once, here.** The transform acts on $\mathbb{B}$-valued functions and returns $\mathbb{B}$-valued functions. A $\mathbb{B}_\Phi$-valued field does not become $\mathbb{B}_\Psi$-valued. Every sector flip below is a statement about the coefficient of one multiplier, and none is a statement about a function.
+The denial is stated once, here. The transform acts on $\mathbb{B}$-valued functions and returns $\mathbb{B}$-valued functions. A $\mathbb{B}_\Phi$-valued field does not become $\mathbb{B}_\Psi$-valued. Every sector flip below is a statement about the coefficient of one multiplier, and none is a statement about a function.
 
-**Nothing here is a new prediction and nothing is a new solution.** The equation, its solutions and the physics are the parent's. What the transform adds is where the light cone sits in the wave-number variables, and what the transform does to the two forms the algebra carries.
+Nothing here is a new prediction and nothing is a new solution. The equation, its solutions and the physics are the parent's. What the transform adds is where the light cone sits in the wave-number variables, and what the transform does to the two forms the algebra carries.
 
 ## Conventions
 
@@ -38,13 +38,13 @@ with $\tilde K_\Phi=\tilde P_\Phi/\hbar=ik_t'e_t+\vec k_\Phi$ and $k_t'=\omega/c
 
 ### The Mixed Operator in Position Space
 
-**The gradient's character and the mass's are opposite, and the operator of the pair holds both.** The gradient is anti-Hermitian for the pairing, $(\tilde\nabla_\Phi)^{*}=-(\tilde\nabla_\Phi)^{\natural}$, so left multiplication by $\tilde\nabla_\Phi$ is anti-self-adjoint and multiplication by $(\tilde\nabla_\Phi)^{\natural}$ is self-adjoint. The mass coefficient $k_m$ is a real central number, hence Hermitian, and it multiplies the field without differentiating it.
+The gradient's character and the mass's are opposite, and the operator of the pair holds both. The gradient is anti-Hermitian for the pairing, $(\tilde\nabla_\Phi)^{*}=-(\tilde\nabla_\Phi)^{\natural}$, so left multiplication by $\tilde\nabla_\Phi$ is anti-self-adjoint and multiplication by $(\tilde\nabla_\Phi)^{\natural}$ is self-adjoint. The mass coefficient $k_m$ is a real central number, hence Hermitian, and it multiplies the field without differentiating it.
 
-**So the position-space operator has no single Hermiticity character.** A symbol is a multiplier, and a multiplier's character is decided by its sector. The position-space operator is not a multiplier at all: it is a differential operator, and its character is a statement about its adjoint. That is why the mixed character is invisible there. It is not hidden; it has no place to live.
+So the position-space operator has no single Hermiticity character. A symbol is a multiplier, and a multiplier's character is decided by its sector. The position-space operator is not a multiplier at all: it is a differential operator, and its character is a statement about its adjoint. That is why the mixed character is invisible there. It is not hidden; it has no place to live.
 
 ### The Pure Symbol in Momentum Space
 
-**In momentum space the operator is a multiplier, and every entry of it is Hermitian.**
+In momentum space the operator is a multiplier, and every entry of it is Hermitian.
 
 $$
 \mathcal{D}(\tilde K_\Phi)=
@@ -56,19 +56,19 @@ $$
 
 acting on the column of the two parts. The diagonal entries are the real central number $-k_m$, Hermitian. The off-diagonal entries are $i\tilde K_\Phi$ and its $\natural$-conjugate. The first is $-k_t'e_t+i\vec k_\Phi$: its temporal coefficient is real and its spatial ones are imaginary. The coefficient conjugation reverses the imaginary ones and the quaternion conjugation reverses the spatial sign, so the two together return every coefficient to itself, $(i\tilde K_\Phi)^{*}=i\tilde K_\Phi$, and the entry equals its own star. The second entry, $-k_t'e_t-i\vec k_\Phi$, is the same case with the signs of the spatial coefficients exchanged. The check is exact rather than numerical, and it was also run: over four random momenta with $k_m=0.7$, $\lvert(i\tilde K_\Phi-k_m)^{*}-(i\tilde K_\Phi-k_m)\rvert$ came out $0.0$ at every one.
 
-**That is what "pure $\mathbb{B}_\Psi$" means.** It is not that the operator is a single element of the Hermitian sector; it is that each of its entries is. The Hermitian sector is a real subspace, not an algebra, so a matrix of its elements is the only object that could be called a pure symbol, and this one is.
+That is what "pure $\mathbb{B}_\Psi$" means. It is not that the operator is a single element of the Hermitian sector; it is that each of its entries is. The Hermitian sector is a real subspace, not an algebra, so a matrix of its elements is the only object that could be called a pure symbol, and this one is.
 
 ### The One Central Factor
 
-**The sector change is one element, used in one place.** The parent's variational companion records that the $i$ inside the material time is what makes the temporal kinetic term self-adjoint without disturbing the spatial ones. Here the same central $i$ appears as the root of the transform and multiplies the whole wave-number element. In position space it sits in the coordinate, $R_t=ir_t'$, and splits the four directions into one anti-Hermitian and three Hermitian. In momentum space it sits in front of the symbol and makes all four directions Hermitian at once. **One element, two appearances, and the transform is what moves it from the coordinate to the multiplier.**
+The sector change is one element, used in one place. The parent's variational companion records that the $i$ inside the material time is what makes the temporal kinetic term self-adjoint without disturbing the spatial ones. Here the same central $i$ appears as the root of the transform and multiplies the whole wave-number element. In position space it sits in the coordinate, $R_t=ir_t'$, and splits the four directions into one anti-Hermitian and three Hermitian. In momentum space it sits in front of the symbol and makes all four directions Hermitian at once. **One element, two appearances, and the transform is what moves it from the coordinate to the multiplier.**
 
-**This is the mechanism the denial requires.** A reader who expects the transform to carry a material field into an informational one has the wrong object in view. The field's image is a $\mathbb{B}$-valued function either way, and its eight components at each wave number are the same eight components at each position, resummed. What changes sector is the multiplier's coefficient, and the coefficient that changes is the $i$.
+This is the mechanism the denial requires. A reader who expects the transform to carry a material field into an informational one has the wrong object in view. The field's image is a $\mathbb{B}$-valued function either way, and its eight components at each wave number are the same eight components at each position, resummed. What changes sector is the multiplier's coefficient, and the coefficient that changes is the $i$.
 
 ## The Massless Shell as the Idempotent Variety
 
 ### The Identity
 
-**On the light cone the wave-number element squares to twice its own temporal part times itself.**
+On the light cone the wave-number element squares to twice its own temporal part times itself.
 
 $$
 \tilde K_\Phi^{2}-2ik_t'\,\tilde K_\Phi
@@ -80,7 +80,7 @@ The right side is the interval: it vanishes exactly where the norm $\tilde K_\Ph
 
 ### The Projector
 
-**Divide by the temporal part and the wave-number element becomes a projector.** Put
+Divide by the temporal part and the wave-number element becomes a projector. Put
 
 $$
 \tilde\Pi=\frac{\tilde K_\Phi}{2ik_t'}=\tfrac12\bigl(e_t-i\hat n\cdot\vec e\bigr),
@@ -100,7 +100,7 @@ The computation is one line from the identity above, and the check covered five 
 
 ### The Two Signs of the Direction
 
-**The other sign of $\hat n$ is the other projector, and the two are orthogonal.**
+The other sign of $\hat n$ is the other projector, and the two are orthogonal.
 
 $$
 \tilde\Pi_{\pm}=\tfrac12\bigl(e_t\pm i\hat n\cdot\vec e\bigr),
@@ -114,11 +114,11 @@ with the product checked at $5.6\times10^{-17}$ over the same five momenta. The 
 
 ### The Generalisation of a Corpus Display
 
-*Degenerate Solutions of the Biquaternionic Dirac Equation* writes a null four-vector of the material sector as $i\kappa e_t+\kappa\vec n=2i\kappa\,\tilde\Pi(-\vec n)$, for a real unit $\vec n$ and a real $\kappa$, where $\tilde\Pi(\pm\vec n)=\tfrac12(e_t\pm i\vec n)$ is that article's name for the two projectors written $\tilde\Pi_\pm$ here. That display is the case $\kappa=k_t'$ of the projector above. **What the present section adds is the converse**: the light cone is not merely a locus where such a display can be written, it is exactly the locus where the divided wave-number element is idempotent, and the defect off the cone is the interval.
+*Degenerate Solutions of the Biquaternionic Dirac Equation* writes a null four-vector of the material sector as $i\kappa e_t+\kappa\vec n=2i\kappa\,\tilde\Pi(-\vec n)$, for a real unit $\vec n$ and a real $\kappa$, where $\tilde\Pi(\pm\vec n)=\tfrac12(e_t\pm i\vec n)$ is that article's name for the two projectors written $\tilde\Pi_\pm$ here. That display is the case $\kappa=k_t'$ of the projector above. What the present section adds is the converse: the light cone is not merely a locus where such a display can be written, it is exactly the locus where the divided wave-number element is idempotent, and the defect off the cone is the interval.
 
 ### The Two Massless Ideals
 
-**The two members of the pair annihilate the two complementary ideals.** With $\hat n$ the direction of $\vec k_\Phi$,
+The two members of the pair annihilate the two complementary ideals. With $\hat n$ the direction of $\vec k_\Phi$,
 
 $$
 \tilde K_\Phi=2ik_t'\,\tilde\Pi_-,
@@ -128,21 +128,21 @@ $$
 
 so the massless member $i\tilde K_\Phi\,w=0$ is $\tilde\Pi_-w=0$, whose solutions are $w=\tilde\Pi_+\,u$ for arbitrary $u$; and the conjugate member has the mirror statement. The check covered four null momenta: $\lvert i\tilde K_\Phi\,(\tilde\Pi_+u)\rvert$ came out at most $1.2\times10^{-16}$ and $\lvert i\tilde K_\Phi^{\natural}(\tilde\Pi_-u)\rvert$ at most $2.5\times10^{-16}$, while the control $\lvert i\tilde K_\Phi(\tilde\Pi_-u)\rvert$ was $2.01$.
 
-**The two solution spaces are the two complementary minimal left ideals of the algebra**, and the sign of the momentum's direction selects which member gets which. The parent's warning about values is not in play here: a value is a right ideal, and the kernel of a left multiplication by a projector is a left ideal. These are different objects, and the article states the ideal that the kernel actually is.
+The two solution spaces are the two complementary minimal left ideals of the algebra, and the sign of the momentum's direction selects which member gets which. The parent's warning about values is not in play here: a value is a right ideal, and the kernel of a left multiplication by a projector is a left ideal. These are different objects, and the article states the ideal that the kernel actually is.
 
 ## What the Transform Preserves and What It Breaks
 
 ### The Hermitian Form Survives
 
-**The kernel is central, so the transform acts on each coefficient separately, and a unitary transform on coefficients preserves the modulus-squared sum.** For two fields $f$ and $g$ the Hermitian pairing $\int\mathrm{Sc}(f^{*}g)$, read coefficientwise as $\sum_\alpha\int\bar c_{\alpha}g_{\alpha}$, is carried to itself. The check used 64 samples, two independent fields with generic complex coefficients, and a unitary discrete transform: the pairing differed by $2.8\times10^{-13}$ and the norm $\int\mathrm{Sc}(f^{*}f)$ by $4.6\times10^{-13}$, both at the level of the transform's own round-off.
+The kernel is central, so the transform acts on each coefficient separately, and a unitary transform on coefficients preserves the modulus-squared sum. For two fields $f$ and $g$ the Hermitian pairing $\int\mathrm{Sc}(f^{*}g)$, read coefficientwise as $\sum_\alpha\int\bar c_{\alpha}g_{\alpha}$, is carried to itself. The check used 64 samples, two independent fields with generic complex coefficients, and a unitary discrete transform: the pairing differed by $2.8\times10^{-13}$ and the norm $\int\mathrm{Sc}(f^{*}f)$ by $4.6\times10^{-13}$, both at the level of the transform's own round-off.
 
-**This is Plancherel, and it is the reason the corpus's Hermitian form is the one the wave-number notation rests on.** Every amplitude the corpus computes in momentum space is a Hermitian-pairing amplitude, and the transform would be useless without this exactness.
+This is Plancherel, and it is the reason the corpus's Hermitian form is the one the wave-number notation rests on. Every amplitude the corpus computes in momentum space is a Hermitian-pairing amplitude, and the transform would be useless without this exactness.
 
 ### The Quaternionic Norm Does Not
 
-**The other form is not preserved, and its failure is not a normalization.** The scalar part of the quaternionic norm of a field is $\mathrm{Sc}(ff^{\natural})=\sum_\alpha c_\alpha^{2}$ — a holomorphic quadratic form in the complex coefficients, with no conjugate anywhere. A unitary transform on coefficients preserves $\sum\bar c_\alpha c_\alpha$ and not $\sum c_\alpha^{2}$, because it mixes $c$ with $\bar c$.
+The other form is not preserved, and its failure is not a normalization. The scalar part of the quaternionic norm of a field is $\mathrm{Sc}(ff^{\natural})=\sum_\alpha c_\alpha^{2}$ — a holomorphic quadratic form in the complex coefficients, with no conjugate anywhere. A unitary transform on coefficients preserves $\sum\bar c_\alpha c_\alpha$ and not $\sum c_\alpha^{2}$, because it mixes $c$ with $\bar c$.
 
-**The numbers are unambiguous.** On the same 64 samples the summed scalar part of the quaternionic norm went from $-16.861768-42.722374\,i$ in position space to $-15.112387-17.526486\,i$ in momentum space: the real part moved by a tenth and the imaginary part changed by more than a factor of two. For a field with real coefficients the failure is starkest, because the quaternionic norm is then real and the transform's value is not. One 64-sample real field gave $56.651597$ before the transform and $-6.686526$ after, and the exact identity behind the number is
+The numbers are unambiguous. On the same 64 samples the summed scalar part of the quaternionic norm went from $-16.861768-42.722374\,i$ in position space to $-15.112387-17.526486\,i$ in momentum space: the real part moved by a tenth and the imaginary part changed by more than a factor of two. For a field with real coefficients the failure is starkest, because the quaternionic norm is then real and the transform's value is not. One 64-sample real field gave $56.651597$ before the transform and $-6.686526$ after, and the exact identity behind the number is
 
 $$
 \sum_k\hat c_k^{2}=\sum_n c_nc_{-n},
@@ -152,13 +152,13 @@ which held to $1.6\times10^{-13}$. **The transform of the norm is the reflected 
 
 ### Why They Differ
 
-**One form is holomorphic and the other is not, and that is the whole of it.** The Hermitian form pairs a coefficient with the conjugate of another. The quaternionic norm pairs a coefficient with itself. A unitary change of basis respects the first and cannot respect the second, because a complex-unitary matrix is orthogonal on the real and imaginary parts separately and quadratic in neither.
+One form is holomorphic and the other is not, and that is the whole of it. The Hermitian form pairs a coefficient with the conjugate of another. The quaternionic norm pairs a coefficient with itself. A unitary change of basis respects the first and cannot respect the second, because a complex-unitary matrix is orthogonal on the real and imaginary parts separately and quadratic in neither.
 
-**The consequence for the algebra is exact.** The quaternionic norm is indefinite — it is negative on the centre — so it could not have been a norm on a space even if it had survived. What it can be is a quadratic form evaluated on a single element, and the single element it is evaluated on is the symbol.
+The consequence for the algebra is exact. The quaternionic norm is indefinite — it is negative on the centre — so it could not have been a norm on a space even if it had survived. What it can be is a quadratic form evaluated on a single element, and the single element it is evaluated on is the symbol.
 
 ## The Interval as a Level Set
 
-**On the symbol both forms are evaluable, and they disagree.** For a wave-number element,
+On the symbol both forms are evaluable, and they disagree. For a wave-number element,
 
 $$
 \langle\tilde K_\Phi\rangle_\natural=-k_t'^{2}+k_\Phi^{2},
@@ -168,23 +168,23 @@ $$
 
 The first is indefinite and its level sets are hyperboloids; the second is positive and its level sets are spheres. On the mode $k_\Phi=3$, $k_t'=5$ the first is $-16$ and the second is $34$; the first takes the value $-k_m^{2}$ at $k_m=4$, so that mode lies on the shell of a particle of wave-number mass $4$, and the second form knows nothing about it. Only the hyperboloid terminates on the mass shell. *Wave–Particle Duality and the Fourier Transform* states this comparison for the general equation; the Dirac case adds the value of the level and the structure at its degenerate point.
 
-**The Dirac addition is the value and the degeneration.** The level is $-k_m^{2}$, so the shell the solutions live on is the level set of the symbol's own quaternionic norm at minus the mass squared. At $k_m=0$ the level is $0$, and the level set is the cone of the previous section, where the symbol divides into the two idempotents. **The mass shell of the Dirac equation is therefore a level set at nonzero mass and the idempotent variety at zero mass**, and the two descriptions are one description at two values of one number.
+The Dirac addition is the value and the degeneration. The level is $-k_m^{2}$, so the shell the solutions live on is the level set of the symbol's own quaternionic norm at minus the mass squared. At $k_m=0$ the level is $0$, and the level set is the cone of the previous section, where the symbol divides into the two idempotents. **The mass shell of the Dirac equation is therefore a level set at nonzero mass and the idempotent variety at zero mass**, and the two descriptions are one description at two values of one number.
 
-**This is why the corpus says the interval is the symbol.** A quadratic form that cannot survive as a norm on fields survives as a level set on the multiplier, and the transform is what makes the multiplier the only object it can be evaluated on.
+This is why the corpus says the interval is the symbol. A quadratic form that cannot survive as a norm on fields survives as a level set on the multiplier, and the transform is what makes the multiplier the only object it can be evaluated on.
 
 ## Limits
 
-**Constant coefficients.** The symbol is a constant element of $\mathbb{B}$ only where the operator's coefficients are constant. The mass is constant, so the free Dirac equation transforms exactly, and every display above is exact. With a potential the symbol depends on the position, the transform of the equation is a convolution, and the algebraic reading stops. *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* and *The Coupled Dirac Equation in Biquaternionic Form* are where that case is treated, and nothing here anticipates them.
+Constant coefficients. The symbol is a constant element of $\mathbb{B}$ only where the operator's coefficients are constant. The mass is constant, so the free Dirac equation transforms exactly, and every display above is exact. With a potential the symbol depends on the position, the transform of the equation is a convolution, and the algebraic reading stops. *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* and *The Coupled Dirac Equation in Biquaternionic Form* are where that case is treated, and nothing here anticipates them.
 
-**The transform's image is $\mathbb{B}$-valued, and the sector statements are about coefficients.** This is the denial of the introduction, repeated where it is used: the projector $\tilde\Pi$ is an element of $\mathbb{B}$ built from the symbol's coefficients, and it is not a statement that the field's values have moved to another sector.
+The transform's image is $\mathbb{B}$-valued, and the sector statements are about coefficients. This is the denial of the introduction, repeated where it is used: the projector $\tilde\Pi$ is an element of $\mathbb{B}$ built from the symbol's coefficients, and it is not a statement that the field's values have moved to another sector.
 
-**The transform's existence.** Plancherel holds for a root with $\rho^{*}=-\rho$, which the central imaginary satisfies; the constant and the sign of the exponent are convention, as *Derivatives, Fields and Transforms* records. No display above depends on either choice, because every one of them is an identity of elements.
+The transform's existence. Plancherel holds for a root with $\rho^{*}=-\rho$, which the central imaginary satisfies; the constant and the sign of the exponent are convention, as *Derivatives, Fields and Transforms* records. No display above depends on either choice, because every one of them is an identity of elements.
 
 ## Open Questions
 
-**The article closes; it leaves no question of its own.** Its findings are algebraic identities and exact checks, and none of them has an unresolved case.
+The article closes; it leaves no question of its own. Its findings are algebraic identities and exact checks, and none of them has an unresolved case.
 
-**Two adjacent questions belong to other articles.** A symbol that depends on position is the coupled article's subject, and the measure-theoretic reading of a level set is the subject of *Wave–Particle Duality and the Weight of a Level Set*. Neither is claimed or attempted here.
+Two adjacent questions belong to other articles. A symbol that depends on position is the coupled article's subject, and the measure-theoretic reading of a level set is the subject of *Wave–Particle Duality and the Weight of a Level Set*. Neither is claimed or attempted here.
 
 ## Summary
 

@@ -2,15 +2,15 @@
 
 ## Introduction
 
-**The question.** The corpus's scalar field articles are free: the action is quadratic, the equation is linear, and two solutions can be added. This article writes the smallest action that is not, the quartic self-interaction of one complex scalar, and asks what the variational principle says about it. The answer is short and it is not a scattering theory.
+The question. The corpus's scalar field articles are free: the action is quadratic, the equation is linear, and two solutions can be added. This article writes the smallest action that is not, the quartic self-interaction of one complex scalar, and asks what the variational principle says about it. The answer is short and it is not a scattering theory.
 
-**The answer in three sentences.** One action, the free Klein–Gordon action with $-\frac{\lambda}{4}\bigl(\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)\bigr)^{2}$ added, has the nonlinear equation $\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi=\lambda\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)\,\tilde\Xi$ as its Euler–Lagrange equation. The nonlinearity is a density-dependent mass: on a plane wave the dispersion relation gains $\lambda N$ with $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, so the field's own density acts as a mass. The current is unchanged, because the interaction depends on $\tilde\Xi^{*}\tilde\Xi$ and therefore commutes with the global phase.
+The answer in three sentences. One action, the free Klein–Gordon action with $-\frac{\lambda}{4}\bigl(\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)\bigr)^{2}$ added, has the nonlinear equation $\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi=\lambda\,\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)\,\tilde\Xi$ as its Euler–Lagrange equation. The nonlinearity is a density-dependent mass: on a plane wave the dispersion relation gains $\lambda N$ with $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, so the field's own density acts as a mass. The current is unchanged, because the interaction depends on $\tilde\Xi^{*}\tilde\Xi$ and therefore commutes with the global phase.
 
-**What is not done.** No scattering amplitude, no perturbation series, no Feynman rule, no loop, no renormalisation. This family has no quantised theory in which a four-point function could be computed, and this article does not manufacture one. What it has is the classical action, its exact equation, its exact current and its exact stress, and the observation that all three differ from the free ones in a controlled way.
+What is not done. No scattering amplitude, no perturbation series, no Feynman rule, no loop, no renormalisation. This family has no quantised theory in which a four-point function could be computed, and this article does not manufacture one. What it has is the classical action, its exact equation, its exact current and its exact stress, and the observation that all three differ from the free ones in a controlled way.
 
 ## Conventions
 
-**The conventions are the free companion's, with one addition.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$ with four complex coefficients; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian one, for the reasons the free article gives; the measure is $\mathrm{d}^{4}r$; $k_m=mc/\hbar$.
+The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; the field is one element $\tilde\Xi\in\mathbb{B}$ with four complex coefficients; the pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$, the Hermitian one, for the reasons the free article gives; the measure is $\mathrm{d}^{4}r$; $k_m=mc/\hbar$.
 
 The addition is the coupling $\lambda$, a real number with the dimensions that make $\lambda N$ a squared wave number, and the density
 
@@ -22,7 +22,7 @@ which is real and non-negative for every field, because $\tilde\Xi^{*}\tilde\Xi$
 
 ## The Action in Element Form
 
-**The free action plus one term.**
+The free action plus one term.
 
 $$
 S[\tilde\Xi,\tilde\Xi^{*}]=\int\mathrm{d}^{4}r\;\Bigl\{\mathrm{Sc}\Bigl[(\partial_{r'_t}\tilde\Xi)^{*}\partial_{r'_t}\tilde\Xi-\sum_\eta(\partial_{r_\eta}\tilde\Xi)^{*}\partial_{r_\eta}\tilde\Xi-k_m^{2}\tilde\Xi^{*}\tilde\Xi\Bigr]-\frac{\lambda}{4}N^{2}\Bigr\}.
@@ -30,17 +30,17 @@ $$
 
 The free part is the free article's, sign for sign, and the interaction is one central term. Three properties are checked in one line each.
 
-**It is real.** $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is real, so $N^{2}$ is real and positive; the coupling $\lambda$ is real; so the added term is real and so is the whole density.
+It is real. $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ is real, so $N^{2}$ is real and positive; the coupling $\lambda$ is real; so the added term is real and so is the whole density.
 
-**It is invariant under the global phase.** $\tilde\Xi\mapsto e^{i\theta}\tilde\Xi$ leaves $\tilde\Xi^{*}\tilde\Xi$ unchanged, because $e^{-i\theta}e^{i\theta}=e_t$, so $N$ and every term built from it are invariant. The interaction therefore does not break the symmetry whose current the free article computes; it changes the current's conservation not at all and the equation's linearity completely.
+It is invariant under the global phase. $\tilde\Xi\mapsto e^{i\theta}\tilde\Xi$ leaves $\tilde\Xi^{*}\tilde\Xi$ unchanged, because $e^{-i\theta}e^{i\theta}=e_t$, so $N$ and every term built from it are invariant. The interaction therefore does not break the symmetry whose current the free article computes; it changes the current's conservation not at all and the equation's linearity completely.
 
 **It is not a mass term.** A mass term is quadratic in the field; this is quartic, and it cannot be absorbed into $k_m^{2}$ because $N$ varies from point to point and from solution to solution. That distinction is the article's structural claim, and the next section but one makes it precise.
 
-**Why the coefficient is $\lambda/4$ and not $\lambda$.** So that the equation's right side carries $\lambda$ and not $2\lambda$: the derivative of $-\frac{\lambda}{4}N^{2}$ with respect to $N$ is $-\frac{\lambda}{2}N$, and the variation of $N$ contributes a factor two, as the next section shows. The convention is the corpus's and is stated once, here.
+Why the coefficient is $\lambda/4$ and not $\lambda$. So that the equation's right side carries $\lambda$ and not $2\lambda$: the derivative of $-\frac{\lambda}{4}N^{2}$ with respect to $N$ is $-\frac{\lambda}{2}N$, and the variation of $N$ contributes a factor two, as the next section shows. The convention is the corpus's and is stated once, here.
 
 ## The Variation
 
-**Varying the conjugate, with one new term.** The free part gives the free article's bracket after two integrations by parts. The interaction's variation is
+Varying the conjugate, with one new term. The free part gives the free article's bracket after two integrations by parts. The interaction's variation is
 
 $$
 \delta\Bigl(-\frac{\lambda}{4}N^{2}\Bigr)=-\frac{\lambda}{2}N\,\delta N
@@ -50,7 +50,7 @@ $$
 
 using that $N$ is real and that the second term is the conjugate of the first inside $\mathrm{Sc}$.
 
-**The equation.** Collecting with the free bracket,
+The equation. Collecting with the free bracket,
 
 $$
 \delta S=\int\mathrm{d}^{4}r\;\mathrm{Sc}\Bigl[\delta\tilde\Xi^{*}\Bigl(\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi-\lambda N\tilde\Xi\Bigr)\Bigr]
@@ -63,25 +63,25 @@ $$
 \bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi=\lambda\,\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)\,\tilde\Xi .
 $$
 
-**The boundary term is the free one.** The interaction carries no derivative, so it adds nothing to the surface term; the free article's discussion applies unchanged.
+The boundary term is the free one. The interaction carries no derivative, so it adds nothing to the surface term; the free article's discussion applies unchanged.
 
-**Two features worth naming.** The equation is nonlinear but *semilinear*: the second derivative appears linearly and the nonlinearity is algebraic in the field. And the right side is homogeneous of degree three, so the equation is invariant under $\tilde\Xi\mapsto-\tilde\Xi$ but not under a phase rotation of the field by a real scale: the $\mathbb{Z}_2$ survives, the $U(1)$ acts as a symmetry only because $N$ is invariant.
+Two features worth naming. The equation is nonlinear but *semilinear*: the second derivative appears linearly and the nonlinearity is algebraic in the field. And the right side is homogeneous of degree three, so the equation is invariant under $\tilde\Xi\mapsto-\tilde\Xi$ but not under a phase rotation of the field by a real scale: the $\mathbb{Z}_2$ survives, the $U(1)$ acts as a symmetry only because $N$ is invariant.
 
 ## The Constraints the Action Imposes: The Nonlinearity Is Not a Constraint
 
-**The count.** One real function, one second-order equation, an invertible momentum. The interaction changes none of the three, so the constraint structure is the free scalar's, and the free scalar's is empty.
+The count. One real function, one second-order equation, an invertible momentum. The interaction changes none of the three, so the constraint structure is the free scalar's, and the free scalar's is empty.
 
 **The interaction's only structural addition is a density-dependent mass.** The added term is $-\frac{\lambda}{4}N^{2}$ with $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$, which carries no derivative, so it enters the equation as a coefficient multiplying the field. **A coefficient that depends on the field is not a condition on the field**: it changes the equation and leaves the data free, and that is the whole difference between a nonlinearity and a restriction.
 
-**Why the absence is worth a section.** The constrained members of this family are the gauge fields, the Proca field and the sigma model. The interacting scalar is the case where the nonlinearity is the entire difficulty and the constraint count is the free article's, so a reader who expects a self-interaction to bring a Gauss law should be told here that it brings none.
+Why the absence is worth a section. The constrained members of this family are the gauge fields, the Proca field and the sigma model. The interacting scalar is the case where the nonlinearity is the entire difficulty and the constraint count is the free article's, so a reader who expects a self-interaction to bring a Gauss law should be told here that it brings none.
 
-**What the section does not claim.** It does not claim the action is integrable, that its solutions are global, or that its energy is bounded below. Those are properties of the potential and they belong to the limits section; the claim here is about the count of constraints, and the count is zero.
+What the section does not claim. It does not claim the action is integrable, that its solutions are global, or that its energy is bounded below. Those are properties of the potential and they belong to the limits section; the claim here is about the count of constraints, and the count is zero.
 
 ## The Structural Consequence: The Nonlinearity Is a Density-Dependent Mass
 
-**The article's claim, in one sentence.** The quartic term does not add a force of a new kind; it changes the mass that a mode of the field carries, and the change is proportional to the density the mode itself contributes.
+The article's claim, in one sentence. The quartic term does not add a force of a new kind; it changes the mass that a mode of the field carries, and the change is proportional to the density the mode itself contributes.
 
-**The hand check.** Take a plane wave $\tilde\Xi=\tilde\Xi_0\exp\bigl(-i(\omega r'_t/c-\vec k_\Phi\cdot\vec r)\bigr)$ with a constant amplitude and $N=\mathrm{Sc}(\tilde\Xi_0^{*}\tilde\Xi_0)$. Then $\Box_\Phi\tilde\Xi=-(\omega^{2}/c^{2}-k_\Phi^{2})\tilde\Xi$, and the equation becomes
+The hand check. Take a plane wave $\tilde\Xi=\tilde\Xi_0\exp\bigl(-i(\omega r'_t/c-\vec k_\Phi\cdot\vec r)\bigr)$ with a constant amplitude and $N=\mathrm{Sc}(\tilde\Xi_0^{*}\tilde\Xi_0)$. Then $\Box_\Phi\tilde\Xi=-(\omega^{2}/c^{2}-k_\Phi^{2})\tilde\Xi$, and the equation becomes
 
 $$
 \Bigl(\frac{\omega^{2}}{c^{2}}-k_\Phi^{2}\Bigr)\tilde\Xi_0=\bigl(k_m^{2}+\lambda N\bigr)\tilde\Xi_0 ,
@@ -89,7 +89,7 @@ $$
 
 so the dispersion relation is $\omega^{2}=c^{2}\bigl(k_\Phi^{2}+k_m^{2}+\lambda N\bigr)$. The mass squared has become $k_m^{2}+\lambda N$: one number, shifted by the amplitude's own density.
 
-**What follows from the shift.** For $\lambda>0$ the shift is positive and a denser wave is stiffer; for $\lambda<0$ it is negative and a sufficiently dense wave has a negative effective mass squared, so the constant-amplitude solution becomes unstable. That instability is the classical statement of what a quantised theory would call the instability of the symmetric vacuum, and the corpus can state it without quantising anything: it is a property of the dispersion relation.
+What follows from the shift. For $\lambda>0$ the shift is positive and a denser wave is stiffer; for $\lambda<0$ it is negative and a sufficiently dense wave has a negative effective mass squared, so the constant-amplitude solution becomes unstable. That instability is the classical statement of what a quantised theory would call the instability of the symmetric vacuum, and the corpus can state it without quantising anything: it is a property of the dispersion relation.
 
 **What the claim forbids.** It forbids describing the interaction as a potential energy between particles. There are no particles here: there is one field, and the only thing the quartic term does to it is to make the mass depend on the density. Any language of scattering would need states, and the corpus has no states.
 
@@ -103,7 +103,7 @@ $$
 
 the free article's bilinear, with the same sign convention. Its conservation on solutions is the statement that the equation's right side, $\lambda N\tilde\Xi$, transforms the same way as the left side under the phase: both are multiplied by $e^{i\theta}$, so the phase of the equation is not fixed and the current is conserved.
 
-**The stress gains one term.** Translation invariance gives the free stress plus the interaction's contribution, which is the term $+\frac{\lambda}{4}N^{2}$ in the energy density, since the interaction is a function of the field and not of its derivatives: the canonical energy density is
+The stress gains one term. Translation invariance gives the free stress plus the interaction's contribution, which is the term $+\frac{\lambda}{4}N^{2}$ in the energy density, since the interaction is a function of the field and not of its derivatives: the canonical energy density is
 
 $$
 T_{00}=\sum_\mu\bigl\lvert\partial_\mu\tilde\Xi\bigr\rvert^{2}+k_m^{2}N+\frac{\lambda}{4}N^{2},
@@ -111,17 +111,17 @@ $$
 
 in the flat notation, with the metric signs of the display. For $\lambda>0$ every term is positive and the energy is bounded below by zero.
 
-**The sign of the charge.** The charge is the integral of $j_{r'_t}$, and its sign is the sign of the phase's orientation, exactly as in the free case. The interaction changes neither the charge nor its sign; it changes only the energy's dependence on the density. That separation is the reason the article can state the current in one line and spend its length on the equation.
+The sign of the charge. The charge is the integral of $j_{r'_t}$, and its sign is the sign of the phase's orientation, exactly as in the free case. The interaction changes neither the charge nor its sign; it changes only the energy's dependence on the density. That separation is the reason the article can state the current in one line and spend its length on the equation.
 
 ## What the Principle Adds and What It Relabels
 
-**Adds.** One exact nonlinear equation with an exact current and an exact stress, and the identification of the nonlinearity as a density-dependent mass. That identification is genuinely useful: it tells a reader what to expect from the quartic term without any perturbation theory, and it explains why the term is the standard first interaction of a scalar.
+Adds. One exact nonlinear equation with an exact current and an exact stress, and the identification of the nonlinearity as a density-dependent mass. That identification is genuinely useful: it tells a reader what to expect from the quartic term without any perturbation theory, and it explains why the term is the standard first interaction of a scalar.
 
-**Relabels.** The free theory's structures. The current is unchanged, the symmetry is unchanged, the boundary term is unchanged. What the interaction does is to make the equation nonlinear, and that is the whole of the addition.
+Relabels. The free theory's structures. The current is unchanged, the symmetry is unchanged, the boundary term is unchanged. What the interaction does is to make the equation nonlinear, and that is the whole of the addition.
 
 **What it does not reach, and this family does not either.** A scattering amplitude requires asymptotic states, an $S$-matrix, a perturbative expansion and a renormalisation of $\lambda$; none of those exists here. A reader who wants the four-point function will find the action, the vertex's classical shadow in the quartic term, and no way to compute anything with it. The honest statement is that this family supplies the classical half of the theory and knows it.
 
-**One consequence worth keeping.** Because the equations are exact, the article can make exact statements — the dispersion shift $\lambda N$, the stability threshold at $k_m^{2}+\lambda N=0$, the positive energy for $\lambda>0$ — that a perturbative treatment would only approximate. Whatever the corpus lacks, it does not lack exactness where it has an equation.
+One consequence worth keeping. Because the equations are exact, the article can make exact statements — the dispersion shift $\lambda N$, the stability threshold at $k_m^{2}+\lambda N=0$, the positive energy for $\lambda>0$ — that a perturbative treatment would only approximate. Whatever the corpus lacks, it does not lack exactness where it has an equation.
 
 ## Summary
 

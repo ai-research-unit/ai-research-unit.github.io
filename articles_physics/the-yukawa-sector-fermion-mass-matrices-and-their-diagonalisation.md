@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The claim.** The fermion masses and the quark mixing are one object seen twice. Three complex $3\times3$ matrices couple the doublets to the scalar; after the breaking each becomes a mass matrix $M_f=Y_{f}v/\sqrt2$; the masses are its **singular values**, and the mixing is the **misalignment of the left singular bases of $M_u$ and $M_d$**. Nothing else in the sector is physical.
+The claim. The fermion masses and the quark mixing are one object seen twice. Three complex $3\times3$ matrices couple the doublets to the scalar; after the breaking each becomes a mass matrix $M_f=Y_{f}v/\sqrt2$; the masses are its singular values, and the mixing is the misalignment of the left singular bases of $M_u$ and $M_d$. Nothing else in the sector is physical.
 
 $$
 M_u=W_u\,D_u\,V_u^{\dagger} ,
@@ -12,25 +12,25 @@ M_d=W_d\,D_d\,V_d^{\dagger} ,
 V_{\mathrm{CKM}}=W_u^{\dagger}W_d .
 $$
 
-**Why this reading is worth the space.** The usual presentation lists nine masses, three angles and a phase as thirteen unrelated numbers. The decomposition above says what kind of number each is. A $3\times3$ complex matrix has exactly three bi-unitary invariants, so each of the three matrices contributes three numbers and the nine masses are those, three matrices' worth. The three angles and the phase are the residual misalignment of the two bases, which is four numbers and not nine. The count of thirteen then follows from a dimension count rather than from a table of measurements.
+Why this reading is worth the space. The usual presentation lists nine masses, three angles and a phase as thirteen unrelated numbers. The decomposition above says what kind of number each is. A $3\times3$ complex matrix has exactly three bi-unitary invariants, so each of the three matrices contributes three numbers and the nine masses are those, three matrices' worth. The three angles and the phase are the residual misalignment of the two bases, which is four numbers and not nine. The count of thirteen then follows from a dimension count rather than from a table of measurements.
 
-**The standing.** Standard theory, transcribed. The framework supplies the *home* of these matrices and not their entries, and §*The Framework's Position* states that precisely.
+The standing. Standard theory, transcribed. The framework supplies the *home* of these matrices and not their entries, and §*The Framework's Position* states that precisely.
 
-**Three results, and an honest word on novelty.** Only the third is this article's own. The first is stated in [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html), in its §*The Mass Matrices and the Origin of the Mixing*: the same $M=XDY^{\dagger}$, and the same observation that the right-handed unitaries drop out. The second is in the same article, §*The Jarlskog Invariant and the Condition for CP Violation* and §*The Jarlskog Area and the Six Triangles*. Both are repeated here because a sector survey should be able to state its own linear algebra and its own CP result without sending the reader elsewhere, and a repetition acknowledged as one is not a claim of priority. The third, the scheme audit of the Higgs width, is not in any companion; the lesson it teaches is drawn in *The Weinberg Angle* and *Electroweak Symmetry Breaking*, but the numbers are here.
+Three results, and an honest word on novelty. Only the third is this article's own. The first is stated in [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html), in its §*The Mass Matrices and the Origin of the Mixing*: the same $M=XDY^{\dagger}$, and the same observation that the right-handed unitaries drop out. The second is in the same article, §*The Jarlskog Invariant and the Condition for CP Violation* and §*The Jarlskog Area and the Six Triangles*. Both are repeated here because a sector survey should be able to state its own linear algebra and its own CP result without sending the reader elsewhere, and a repetition acknowledged as one is not a claim of priority. The third, the scheme audit of the Higgs width, is not in any companion; the lesson it teaches is drawn in *The Weinberg Angle* and *Electroweak Symmetry Breaking*, but the numbers are here.
 
-- **The masses are invariants, so they cannot be removed by a change of flavour basis.** The characteristic polynomial of $M_f^{\dagger}M_f$ is unchanged by $M_f\mapsto U^{\dagger}M_fV$, so its three coefficients are the only basis-independent content of the matrix. Verified below to $3\times10^{-15}$ over twenty random bi-unitary transformations.
-- **CP violation in the quark sector is one number and it is a determinant.** The Jarlskog invariant $J=\operatorname{Im}\left(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\right)$ is the same for every quartet of indices and for every rephasing, equals $s_{12}s_{23}s_{13}c_{12}c_{23}c_{13}^{2}\sin\delta$, equals twice the area of the unitarity triangle, and is fixed by the two mass matrices alone through $\operatorname{Im}\det\left[H_u,H_d\right]$. Its value, determined from the measured mixing elements, is $3.12\times10^{-5}$.
-- **The largest scheme ambiguity in the sector is in the quark masses, and the Higgs width is where it shows.** The Higgs width into $b\bar b$ computed with $m_b(m_b)=4.18$ GeV is $4.28$ MeV; computed with $m_b(M_H)\approx2.9$ GeV and the QCD factor it is about $2.49$ MeV; a fit to the measured $H\to b\bar b$ rate gives $2.37$. The factor $1.8$ between the first number and the last is not one effect. The running from $m_b(m_b)$ to $m_b(M_H)$ takes $4.28$ down to $2.07$, a factor $2.07$; the QCD correction at the Higgs scale brings it back up to $2.49$, a factor $1.20$; the reference $2.37$ is a further $1.05$ below that. The three compound to $2.07/1.20\times1.05=1.81$, which is $4.28/2.37$. Calling the whole of it "a running mass" credits one of three factors with the total.
+- The masses are invariants, so they cannot be removed by a change of flavour basis. The characteristic polynomial of $M_f^{\dagger}M_f$ is unchanged by $M_f\mapsto U^{\dagger}M_fV$, so its three coefficients are the only basis-independent content of the matrix. Verified below to $3\times10^{-15}$ over twenty random bi-unitary transformations.
+- CP violation in the quark sector is one number and it is a determinant. The Jarlskog invariant $J=\operatorname{Im}\left(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\right)$ is the same for every quartet of indices and for every rephasing, equals $s_{12}s_{23}s_{13}c_{12}c_{23}c_{13}^{2}\sin\delta$, equals twice the area of the unitarity triangle, and is fixed by the two mass matrices alone through $\operatorname{Im}\det\left[H_u,H_d\right]$. Its value, determined from the measured mixing elements, is $3.12\times10^{-5}$.
+- The largest scheme ambiguity in the sector is in the quark masses, and the Higgs width is where it shows. The Higgs width into $b\bar b$ computed with $m_b(m_b)=4.18$ GeV is $4.28$ MeV; computed with $m_b(M_H)\approx2.9$ GeV and the QCD factor it is about $2.49$ MeV; a fit to the measured $H\to b\bar b$ rate gives $2.37$. The factor $1.8$ between the first number and the last is not one effect. The running from $m_b(m_b)$ to $m_b(M_H)$ takes $4.28$ down to $2.07$, a factor $2.07$; the QCD correction at the Higgs scale brings it back up to $2.49$, a factor $1.20$; the reference $2.37$ is a further $1.05$ below that. The three compound to $2.07/1.20\times1.05=1.81$, which is $4.28/2.37$. Calling the whole of it "a running mass" credits one of three factors with the total.
 
-**The order.** Why no mass term exists; the three matrices and their audit; the mass matrix after breaking; bi-unitary diagonalisation; the two unitary factors; the four mixing parameters; where CP violation lives; the count of thirteen; the spectrum and its unexplained gaps; the Higgs coupling as the sector's test; neutrinos; and the framework's position.
+The order. Why no mass term exists; the three matrices and their audit; the mass matrix after breaking; bi-unitary diagonalisation; the two unitary factors; the four mixing parameters; where CP violation lives; the count of thirteen; the spectrum and its unexplained gaps; the Higgs coupling as the sector's test; neutrinos; and the framework's position.
 
 ## Why There Is No Mass Term
 
-**The reason, in one line.** A Dirac mass couples a left-handed field to a right-handed one, and in the Standard Model the two carry different $SU(2)_L$ representations and different hypercharges. No invariant contraction exists.
+The reason, in one line. A Dirac mass couples a left-handed field to a right-handed one, and in the Standard Model the two carry different $SU(2)_L$ representations and different hypercharges. No invariant contraction exists.
 
-**The same obstruction in the rotor's own terms, and what a mass term would have to be.** A mass term is the scalar part of a bilinear, $m\,\mathrm{Sc}(\bar\Xi_1\Xi_2)$, and it is invariant under the rotor — $\mathrm{SU}(2)=\mathrm{Spin}(3)$ — only when the bilinear it takes the scalar part of is central. The rotors act by left multiplication, so a bilinear of two fields moves as $\mathrm{Sc}(\tilde U\Xi_1\Xi_2\tilde U^{-1})$ only if the two slots are tied the way the Hermitian pair $\mathrm{Sd}$ ties them; left multiplication alone carries one slot and leaves the other free, and the scalar part of a product with one free slot is not invariant. That is why the mass term is forbidden by the algebra and not merely by the accounting of charges: the object that would make it invariant is a **pair of slots with a declared relation**, and the corpus's fermion carries one slot. The charges then do the bookkeeping: a term of this kind can only be written between two fields whose quantum numbers already cancel, and in the model none of the pairs does, so the absence is visible twice over — once as an algebra statement and once as a table.
+The same obstruction in the rotor's own terms, and what a mass term would have to be. A mass term is the scalar part of a bilinear, $m\,\mathrm{Sc}(\bar\Xi_1\Xi_2)$, and it is invariant under the rotor — $\mathrm{SU}(2)=\mathrm{Spin}(3)$ — only when the bilinear it takes the scalar part of is central. The rotors act by left multiplication, so a bilinear of two fields moves as $\mathrm{Sc}(\tilde U\Xi_1\Xi_2\tilde U^{-1})$ only if the two slots are tied the way the Hermitian pair $\mathrm{Sd}$ ties them; left multiplication alone carries one slot and leaves the other free, and the scalar part of a product with one free slot is not invariant. That is why the mass term is forbidden by the algebra and not merely by the accounting of charges: the object that would make it invariant is a pair of slots with a declared relation, and the corpus's fermion carries one slot. The charges then do the bookkeeping: a term of this kind can only be written between two fields whose quantum numbers already cancel, and in the model none of the pairs does, so the absence is visible twice over — once as an algebra statement and once as a table.
 
-**Written out.** A term $m\,\bar Q_Ld_R$ is not a singlet, and the arithmetic shows it. $\bar Q_L$ carries the negative of the doublet's hypercharge, $-1/6$, and $d_R$ carries $-1/3$; the product carries $-1/6-1/3=-1/2\neq0$, which is exactly the scalar's hypercharge with the sign reversed. The same computation fails for every pair of fields in article 1's table.
+Written out. A term $m\,\bar Q_Ld_R$ is not a singlet, and the arithmetic shows it. $\bar Q_L$ carries the negative of the doublet's hypercharge, $-1/6$, and $d_R$ carries $-1/3$; the product carries $-1/6-1/3=-1/2\neq0$, which is exactly the scalar's hypercharge with the sign reversed. The same computation fails for every pair of fields in article 1's table.
 
 **The count of failures is the count of successes.** There is one forbidden mass term per fermion type, and one Yukawa matrix per term — three of each in the minimal model, the fourth pair only if a right-handed neutrino exists. The correspondence is one to one:
 
@@ -41,13 +41,13 @@ $$
 | $m_e\bar L_Le_R$ | $Y=+1/2-1\neq0$ | $Y_{e}$ with $\varphi$ |
 | $m_\nu\bar L_L\nu_R$ | $Y=+1/2\neq0$; a doublet cannot contract with a singlet | $Y_{\nu}$ with $\tilde\varphi$ |
 
-**The last row differs in kind, and not in its quantum numbers.** All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_R$ carries $0$. What separates the last row is that $\nu_R$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
+The last row differs in kind, and not in its quantum numbers. All four fail the same two tests. Every left-handed field here is a doublet and every right-handed one a singlet, so no bare term is an $SU(2)_L$ singlet. And every bare term has non-zero hypercharge — the neutrino's is $+1/2$, since $\bar L_L$ carries $+1/2$ and $\nu_R$ carries $0$. What separates the last row is that $\nu_R$ is absent from the minimal model: the other three right-handed fields are in the spectrum and their mass terms are forbidden, while the neutrino's mass term is not forbidden so much as unavailable with the field. §*Neutrinos* records what the distinction changes.
 
-**What the gauge symmetry buys.** A mass term is a parameter that would have been arbitrary in the unbroken phase, with no relation to anything. Forbidding it removes three such terms per generation — four if a right-handed neutrino is added — and replaces them with coupling matrices whose *structure* is fixed by the quantum numbers. The price is that the entries are still free, and that is the thirteen.
+What the gauge symmetry buys. A mass term is a parameter that would have been arbitrary in the unbroken phase, with no relation to anything. Forbidding it removes three such terms per generation — four if a right-handed neutrino is added — and replaces them with coupling matrices whose *structure* is fixed by the quantum numbers. The price is that the entries are still free, and that is the thirteen.
 
 ## The Three Yukawa Matrices
 
-**The term.** Three matrices, one per fermion type, each $3\times3$ and complex:
+The term. Three matrices, one per fermion type, each $3\times3$ and complex:
 
 $$
 \mathcal{L}_{\mathrm{Yuk}}=-\sum_{a,b}\Bigl(\bar Q_{L,a}\varphi\,Y_{d,ab}\,d_{R,b}+\bar Q_{L,a}\tilde\varphi\,Y_{u,ab}\,u_{R,b}+\bar L_{L,a}\varphi\,Y_{e,ab}\,e_{R,b}\Bigr)+\text{h.c.}
@@ -55,9 +55,9 @@ $$
 
 with $a,b$ generation labels and $\tilde\varphi=i\sigma_2\varphi^{*}=\binom{\varphi^{0*}}{-\varphi^{+*}}$ of hypercharge $-\tfrac12$.
 
-**Why three and not one.** The three right-handed fields are distinct fields — hypercharge $-1/3$, $+2/3$, $-1$ — and a single matrix cannot couple the doublet to all three, because the three terms differ in the field they annihilate and not only in the scalar that compensates them. Two of the compensations happen to be the same scalar, $\varphi$ for the down and the lepton, and only the up-type needs $\tilde\varphi$; the count of matrices follows the count of right-handed fields, not the count of distinct scalar charges. The up-type term needs $\tilde\varphi$, because only $\varphi$'s conjugate has the hypercharge $-1/2$ that $\bar Q_L$ and $u_R$ leave unbalanced.
+Why three and not one. The three right-handed fields are distinct fields — hypercharge $-1/3$, $+2/3$, $-1$ — and a single matrix cannot couple the doublet to all three, because the three terms differ in the field they annihilate and not only in the scalar that compensates them. Two of the compensations happen to be the same scalar, $\varphi$ for the down and the lepton, and only the up-type needs $\tilde\varphi$; the count of matrices follows the count of right-handed fields, not the count of distinct scalar charges. The up-type term needs $\tilde\varphi$, because only $\varphi$'s conjugate has the hypercharge $-1/2$ that $\bar Q_L$ and $u_R$ leave unbalanced.
 
-**The audit, in the form of a sum.** Each term must carry total hypercharge zero:
+The audit, in the form of a sum. Each term must carry total hypercharge zero:
 
 | Term | $\bar\psi_L$ | scalar | $\psi_R$ | Sum |
 |---|---|---|---|---|
@@ -67,17 +67,17 @@ with $a,b$ generation labels and $\tilde\varphi=i\sigma_2\varphi^{*}=\binom{\var
 
 **The matrices are general.** No symmetry of the gauge sector constrains $Y_{f}$ beyond $3\times3$ complex. In particular nothing requires $Y_{f}$ to be Hermitian, symmetric, or diagonal, and each of those assumptions would be an addition to the model. The three matrices are $54$ real parameters, and §*The Count of Thirteen* turns that number into thirteen.
 
-**What the sector costs and what it buys.** It costs $54$ real parameters at the level of the Lagrangian, of which $41$ are removed by the freedom to redefine the flavour basis: thirteen are physical, and they are nine masses, three angles and one phase. It buys those thirteen, and nothing in the gauge sector could buy them instead. Without it the fermions are massless, the mixing is undefined and there is no CP violation in the quark sector at all.
+What the sector costs and what it buys. It costs $54$ real parameters at the level of the Lagrangian, of which $41$ are removed by the freedom to redefine the flavour basis: thirteen are physical, and they are nine masses, three angles and one phase. It buys those thirteen, and nothing in the gauge sector could buy them instead. Without it the fermions are massless, the mixing is undefined and there is no CP violation in the quark sector at all.
 
 ## After the Breaking: The Mass Matrix
 
-**The substitution.** With $\langle\varphi\rangle=\frac{1}{\sqrt2}\binom{0}{v}$, the neutral component of $\varphi$ is replaced by $(v+h)/\sqrt2$ and each Yukawa term becomes a mass term plus a coupling to $h$:
+The substitution. With $\langle\varphi\rangle=\frac{1}{\sqrt2}\binom{0}{v}$, the neutral component of $\varphi$ is replaced by $(v+h)/\sqrt2$ and each Yukawa term becomes a mass term plus a coupling to $h$:
 
 $$
 \mathcal{L}_{\mathrm{Yuk}}\supset-\frac{v}{\sqrt2}\sum_{a,b}\bar\psi_{L,a}Y_{f,ab}\psi_{R,b}\left(1+\frac{h}{v}\right)+\text{h.c.}
 $$
 
-**The mass matrix.** Define
+The mass matrix. Define
 
 $$
 M_f=\frac{v}{\sqrt2}\,Y_{f} ,
@@ -87,11 +87,11 @@ a general complex $3\times3$ matrix. The mass term is $-\bar\psi_LM_f\psi_R+\tex
 
 **Why the matrix is not Hermitian, and what that does and does not buy.** Hermiticity of $M_f$ would mean $Y_{f}^{\dagger}=Y_{f}$, a condition the gauge symmetry does not impose. It is worth being exact about what Hermiticity would forbid, because the tempting statement is wrong. A Hermitian $M_f$ is diagonalised by *one* unitary, so the left and right bases of a single sector would coincide and $V_f=W_f$. The mixing, however, is the misalignment between the *up* and *down* sectors: if $M_u=U_uD_uU_u^{\dagger}$ and $M_d=U_dD_dU_d^{\dagger}$ then $V_{\mathrm{CKM}}=U_u^{\dagger}U_d$, which is generic. Two Hermitian matrices need not commute. So the measured mixing is not evidence that the Yukawa matrices are non-Hermitian; it is evidence that the two sectors are not aligned in flavour space. What Hermiticity would remove is the separate right-handed basis, and with it half the parameters — nine real numbers per Hermitian matrix against eighteen per general one — which is why imposing it would be an addition to the model and not a reading of it.
 
-**One number per entry, one meaning per invariant.** A complex $3\times3$ matrix has nine complex entries, hence eighteen real numbers. Under a change of flavour basis it transforms as $M_f\mapsto U^{\dagger}M_fV$ with $U$ and $V$ unitary, and the only quantities unchanged by all such transformations are the three singular values. Those three are the masses.
+One number per entry, one meaning per invariant. A complex $3\times3$ matrix has nine complex entries, hence eighteen real numbers. Under a change of flavour basis it transforms as $M_f\mapsto U^{\dagger}M_fV$ with $U$ and $V$ unitary, and the only quantities unchanged by all such transformations are the three singular values. Those three are the masses.
 
 ## Bi-unitary Diagonalisation
 
-**The theorem.** For every complex $3\times3$ matrix $M$ there are unitaries $W$, $V$ and a diagonal $D$ with non-negative real entries such that
+The theorem. For every complex $3\times3$ matrix $M$ there are unitaries $W$, $V$ and a diagonal $D$ with non-negative real entries such that
 
 $$
 M=W\,D\,V^{\dagger} ,
@@ -103,11 +103,11 @@ $$
 
 The $m_i$ are the square roots of the eigenvalues of $M^{\dagger}M$, and they are unique up to order.
 
-**The construction.** $M^{\dagger}M$ is Hermitian and positive semidefinite, so it has an orthonormal eigenbasis $v_i$ with eigenvalues $m_i^2\ge0$; those give $V$ and $D$. Then $W=MVD^{-1}$ on the non-zero singular values, and its columns are orthonormal because $\langle W_i,W_j\rangle=m_i^{-1}m_j^{-1}\langle Mv_i,Mv_j\rangle=m_i^{-1}m_j^{-1}m_i^2\delta_{ij}$. The reconstruction closes in one line: $WDV^{\dagger}=MVD^{-1}DV^{\dagger}=MVV^{\dagger}=M$. If $M$ is rank deficient the corresponding columns of $W$ are not fixed by this and are taken as any orthonormal complement — the masses are then zero, and the direction is not physical. That is not a technicality in this article: a vanishing neutrino mass, and the massless limit of any Dirac fermion, both put $M$ on that boundary.
+The construction. $M^{\dagger}M$ is Hermitian and positive semidefinite, so it has an orthonormal eigenbasis $v_i$ with eigenvalues $m_i^2\ge0$; those give $V$ and $D$. Then $W=MVD^{-1}$ on the non-zero singular values, and its columns are orthonormal because $\langle W_i,W_j\rangle=m_i^{-1}m_j^{-1}\langle Mv_i,Mv_j\rangle=m_i^{-1}m_j^{-1}m_i^2\delta_{ij}$. The reconstruction closes in one line: $WDV^{\dagger}=MVD^{-1}DV^{\dagger}=MVV^{\dagger}=M$. If $M$ is rank deficient the corresponding columns of $W$ are not fixed by this and are taken as any orthonormal complement — the masses are then zero, and the direction is not physical. That is not a technicality in this article: a vanishing neutrino mass, and the massless limit of any Dirac fermion, both put $M$ on that boundary.
 
 **Why this is the right diagonalisation and not another.** The kinetic terms of the fifteen Weyl fields of one generation are invariant under independent unitary rotations of each multiplet — that is the flavour symmetry of the gauge sector. A diagonalisation that is not bi-unitary would not preserve them. So the singular-value decomposition is not a convenient choice among many; it is the only decomposition compatible with the rest of the Lagrangian.
 
-**The spectrum is basis independent, verified.** The characteristic polynomial of $M^{\dagger}M$ is
+The spectrum is basis independent, verified. The characteristic polynomial of $M^{\dagger}M$ is
 
 $$
 \det\left(\lambda\,\mathrm I-M^{\dagger}M\right)=\lambda^{3}-c_1\lambda^{2}+c_2\lambda-c_3 ,
@@ -121,9 +121,9 @@ $$
 
 and its coefficients are unchanged under $M\mapsto U^{\dagger}MV$, because that map sends $M^{\dagger}M$ to $V^{\dagger}\left(M^{\dagger}M\right)V$ — a unitary similarity, which preserves the whole spectrum and hence every coefficient. Checked numerically on a random complex $3\times3$ matrix and twenty random bi-unitary transformations built from Givens rotations: the largest relative change of the three coefficients was $3.1\times10^{-15}$. The relation $c_3=\lvert\det M\rvert^{2}$ is not a numerical check at all but an identity, $\det\left(M^{\dagger}M\right)=\det M^{\dagger}\det M=\lvert\det M\rvert^{2}$, exact at every entry; it is written here because it fixes the third coefficient to one number rather than three.
 
-**The signs.** The decomposition returns $m_i\ge0$. A negative eigenvalue of $M^{\dagger}M$ would be a negative mass squared, and the construction cannot produce one. A physical fermion mass is a non-negative singular value, and the sign of a fermion field is a convention absorbed into $V$.
+The signs. The decomposition returns $m_i\ge0$. A negative eigenvalue of $M^{\dagger}M$ would be a negative mass squared, and the construction cannot produce one. A physical fermion mass is a non-negative singular value, and the sign of a fermion field is a convention absorbed into $V$.
 
-**The three matrices, written once.** For the three sectors,
+The three matrices, written once. For the three sectors,
 
 $$
 M_u=W_uD_uV_u^{\dagger} ,
@@ -137,7 +137,7 @@ with $D_f=\operatorname{diag}(m_{f_1},m_{f_2},m_{f_3})$ and the masses in increa
 
 ## The Two Unitary Factors and the Charged Current
 
-**The field redefinition.** Define mass eigenstates by
+The field redefinition. Define mass eigenstates by
 
 $$
 u_{L}=W_u\,u_{L}' ,
@@ -151,7 +151,7 @@ $$
 
 with the lepton sector rotated by $W_e$ and $V_e$. In the primed basis each mass matrix is diagonal, by construction: substituting into $-\bar u_LM_uu_R$ gives $-\bar u_L'\left(W_u^{\dagger}M_uV_u\right)u_R'=-\bar u_L'D_uu_R'$. The daggers matter and point this way. Inserting $u_L=W_u^{\dagger}u_L'$ instead would leave $W_uM_uV_u^{\dagger}=W_u^{2}D_u\left(V_u^{\dagger}\right)^{2}$, which is not diagonal, and would give the charged current $W_uW_d^{\dagger}$ in place of the $W_u^{\dagger}W_d$ derived two paragraphs below.
 
-**The neutral current is unchanged.** The $Z$ couples to $-\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and its conjugate, so $W^{\dagger}W=\mathrm I$ and the coupling stays diagonal and flavour-blind. The same holds for the photon and the gluon. That is the tree-level form of the Glashow–Iliopoulos–Maiani mechanism, and it is why flavour-changing neutral currents are absent at this order.
+The neutral current is unchanged. The $Z$ couples to $-\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and its conjugate, so $W^{\dagger}W=\mathrm I$ and the coupling stays diagonal and flavour-blind. The same holds for the photon and the gluon. That is the tree-level form of the Glashow–Iliopoulos–Maiani mechanism, and it is why flavour-changing neutral currents are absent at this order.
 
 **The charged current is not.** The $W$ couples $u_L$ to $d_L$, and the two are rotated by *different* unitaries:
 
@@ -159,7 +159,7 @@ $$
 \mathcal{L}_{\mathrm{cc}}=-\frac{g}{\sqrt2}\sum_\mu\varepsilon_\mu W^{+}_\mu\bar u_{L}'\gamma_\mu\left(W_u^{\dagger}W_d\right)d_{L}'+\text{h.c.}
 $$
 
-**The CKM matrix is that product.** Define
+The CKM matrix is that product. Define
 
 $$
 V_{\mathrm{CKM}}=W_u^{\dagger}W_d .
@@ -167,11 +167,11 @@ $$
 
 It is unitary, being a product of unitaries. It is the only place where the misalignment of the two bases appears, and it appears because the $W$ is the only gauge boson that changes flavour.
 
-**Where the right-handed rotations went, and why not for the reason one expects.** Each gauge coupling is flavour universal: it acts as $-\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and on its conjugate, so the rotation cancels against its inverse, $V_f^{\dagger}V_f=\mathrm I$. That is the reason $V_u$ and $V_d$ do not appear — and it is a different reason from the fact that no gauge boson in the model couples a left-handed field to a right-handed one, which is true and would matter only if some gauge coupling were flavour-changing. They survive only in the Yukawa coupling to $h$, which is diagonal in the mass basis by construction. So the object that carries the misalignment is one $3\times3$ unitary and not a pair of rotations, which is why the next section counts its physical parameters rather than assuming nine.
+Where the right-handed rotations went, and why not for the reason one expects. Each gauge coupling is flavour universal: it acts as $-\sum_\mu\varepsilon_\mu\bar f\gamma_\mu f$ with the same rotation on the field and on its conjugate, so the rotation cancels against its inverse, $V_f^{\dagger}V_f=\mathrm I$. That is the reason $V_u$ and $V_d$ do not appear — and it is a different reason from the fact that no gauge boson in the model couples a left-handed field to a right-handed one, which is true and would matter only if some gauge coupling were flavour-changing. They survive only in the Yukawa coupling to $h$, which is diagonal in the mass basis by construction. So the object that carries the misalignment is one $3\times3$ unitary and not a pair of rotations, which is why the next section counts its physical parameters rather than assuming nine.
 
-**The singular-value reading, stated plainly.** $W_u$ and $W_d$ are the left singular bases of the two mass matrices. The masses are the singular values. The mixing is the angle between the two left bases. Nothing else about the matrices is observable, and the two statements "the masses are the singular values" and "the mixing is the misalignment" are one statement: they are the two halves of the singular-value decomposition.
+The singular-value reading, stated plainly. $W_u$ and $W_d$ are the left singular bases of the two mass matrices. The masses are the singular values. The mixing is the angle between the two left bases. Nothing else about the matrices is observable, and the two statements "the masses are the singular values" and "the mixing is the misalignment" are one statement: they are the two halves of the singular-value decomposition.
 
-**Verified.** The product of two unitaries is unitary to machine precision, and the construction reproduces the measured magnitudes when the angles are set to their measured values. With $\sin\theta_{12}=0.22501$, $\sin\theta_{23}=0.04183$, $\sin\theta_{13}=0.003732$ and $\delta=1.147$ rad:
+Verified. The product of two unitaries is unitary to machine precision, and the construction reproduces the measured magnitudes when the angles are set to their measured values. With $\sin\theta_{12}=0.22501$, $\sin\theta_{23}=0.04183$, $\sin\theta_{13}=0.003732$ and $\delta=1.147$ rad:
 
 | $\lvert V\rvert$ | $d$ | $s$ | $b$ |
 |---|---|---|---|
@@ -179,11 +179,11 @@ It is unitary, being a product of unitaries. It is the only place where the misa
 | $c$ | $0.2249$ | $0.9735$ | $0.0418$ |
 | $t$ | $0.0086$ | $0.0411$ | $0.9991$ |
 
-**The unitarity is checked, not assumed.** Summed from the four-digit entries printed above, the rows of $\lvert V_{ij}\rvert^{2}$ give $0.99990$, $1.00003$ and $0.99996$ — unity to the rounding of the table; summed from the parametrisation itself they give $1$ to machine precision, and the column sums likewise. The distinction matters at exactly the level at which the table is quoted. The three relations $\lvert V_{ud}\rvert^{2}+\lvert V_{us}\rvert^{2}+\lvert V_{ub}\rvert^{2}=1$ and its partners are what the table means by unitarity, and they are the relations the measurements test.
+The unitarity is checked, not assumed. Summed from the four-digit entries printed above, the rows of $\lvert V_{ij}\rvert^{2}$ give $0.99990$, $1.00003$ and $0.99996$ — unity to the rounding of the table; summed from the parametrisation itself they give $1$ to machine precision, and the column sums likewise. The distinction matters at exactly the level at which the table is quoted. The three relations $\lvert V_{ud}\rvert^{2}+\lvert V_{us}\rvert^{2}+\lvert V_{ub}\rvert^{2}=1$ and its partners are what the table means by unitarity, and they are the relations the measurements test.
 
 ## The Four Mixing Parameters
 
-**The count, from the matrix.** A $3\times3$ unitary matrix carries nine real parameters: three angles and six phases. Rephasing the six quark fields,
+The count, from the matrix. A $3\times3$ unitary matrix carries nine real parameters: three angles and six phases. Rephasing the six quark fields,
 
 $$
 u_{L,a}\mapsto e^{i\theta_{\mathrm{pha},a}}u_{L,a} ,
@@ -199,7 +199,7 @@ $$
 
 three angles and one phase. The subtraction is the same $2N-1=5$ that article 1 records, and it is a property of the field content rather than of the values.
 
-**The standard parametrisation.** The four are conventionally written as
+The standard parametrisation. The four are conventionally written as
 
 $$
 V=\begin{pmatrix}
@@ -211,7 +211,7 @@ $$
 
 with $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$. The three angles are $\theta_{12}=13.00^{\circ}$, $\theta_{23}=2.40^{\circ}$ and $\theta_{13}=0.214^{\circ}$; the phase is $\delta=65.7^{\circ}$.
 
-**The hierarchy of the angles, and what the Wolfenstein form adds.** The angles are not of comparable size: $\theta_{12}$ is thirteen degrees, $\theta_{23}$ is two, $\theta_{13}$ is a fifth of one. The Wolfenstein form makes the hierarchy explicit by expanding in $\lambda=s_{12}=0.225$:
+The hierarchy of the angles, and what the Wolfenstein form adds. The angles are not of comparable size: $\theta_{12}$ is thirteen degrees, $\theta_{23}$ is two, $\theta_{13}$ is a fifth of one. The Wolfenstein form makes the hierarchy explicit by expanding in $\lambda=s_{12}=0.225$:
 
 $$
 V=\begin{pmatrix}1-\lambda^{2}/2 & \lambda & A\lambda^{3}\left(\bar\rho-i\bar\eta\right)\\
@@ -225,17 +225,17 @@ with $A=0.826$ and $\bar\rho=0.159$, $\bar\eta=0.352$. The pair is the barred on
 
 ## Where CP Violation Lives
 
-**The invariant.** Define
+The invariant. Define
 
 $$
 J=\operatorname{Im}\left(V_{ud}V_{cs}V_{us}^{*}V_{cd}^{*}\right) .
 $$
 
-**It is the same for every quartet.** For any $i\neq j$ and $a\neq b$, $\operatorname{Im}\left(V_{ia}V_{jb}V_{ib}^{*}V_{ja}^{*}\right)$ equals $\pm J$, and the sign depends on the ordering of the indices. The unitarity of $V$ forces this, so a single number carries all the information about the imaginary parts.
+It is the same for every quartet. For any $i\neq j$ and $a\neq b$, $\operatorname{Im}\left(V_{ia}V_{jb}V_{ib}^{*}V_{ja}^{*}\right)$ equals $\pm J$, and the sign depends on the ordering of the indices. The unitarity of $V$ forces this, so a single number carries all the information about the imaginary parts.
 
-**It is invariant under rephasing.** The four factors carry two phases of the up type and two of the down type, and they cancel in pairs. So $J$ does not change when the flavour basis changes, which is what makes it a physical quantity. Verified: $J$ computed from $V$ and from a randomly rephased $V$ agree to every printed digit.
+It is invariant under rephasing. The four factors carry two phases of the up type and two of the down type, and they cancel in pairs. So $J$ does not change when the flavour basis changes, which is what makes it a physical quantity. Verified: $J$ computed from $V$ and from a randomly rephased $V$ agree to every printed digit.
 
-**Its value and its formula.** With the angles above,
+Its value and its formula. With the angles above,
 
 $$
 J=s_{12}s_{23}s_{13}c_{12}c_{23}c_{13}^{2}\sin\delta=3.117\times10^{-5} ,
@@ -243,9 +243,9 @@ $$
 
 and the definition gives the same number to four digits. The Wolfenstein form gives $J=A^{2}\lambda^{6}\bar\eta\left(1-\lambda^{2}/2\right)=3.04\times10^{-5}$, the difference of $2.6$ per cent from the exact value being the $O(\lambda^{4})$ terms dropped.
 
-**Why three numbers near $3\times10^{-5}$ circulate, and which is which.** The three are $3.117\times10^{-5}$, which is what the four parameters as quoted above produce; $3.04\times10^{-5}$, which is the Wolfenstein truncation of the same four; and $3.08\times10^{-5}$, which the global fit quotes as its direct determination of the invariant, and which [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html) uses as $J_{\mathrm{CKM}}$. The spread between the first and the third is $1.2$ per cent, the size of the fit's own uncertainty on $J$: it is a computation against a measurement, not two computations disagreeing. This article uses $3.12\times10^{-5}$ everywhere, because it follows from the four parameters the article states and a reader can reproduce it; the ratio in the lepton comparison below moves by $1$ per cent if $3.08$ is used instead, which is the least of the reasons that ratio is quoted to an order of magnitude.
+Why three numbers near $3\times10^{-5}$ circulate, and which is which. The three are $3.117\times10^{-5}$, which is what the four parameters as quoted above produce; $3.04\times10^{-5}$, which is the Wolfenstein truncation of the same four; and $3.08\times10^{-5}$, which the global fit quotes as its direct determination of the invariant, and which [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html) uses as $J_{\mathrm{CKM}}$. The spread between the first and the third is $1.2$ per cent, the size of the fit's own uncertainty on $J$: it is a computation against a measurement, not two computations disagreeing. This article uses $3.12\times10^{-5}$ everywhere, because it follows from the four parameters the article states and a reader can reproduce it; the ratio in the lepton comparison below moves by $1$ per cent if $3.08$ is used instead, which is the least of the reasons that ratio is quoted to an order of magnitude.
 
-**Why it is a determinant.** $J$ is not merely an invariant of $V$; it is the invariant of the two mass matrices, and that is Jarlskog's theorem. Put $H_u=M_uM_u^{\dagger}$ and $H_d=M_dM_d^{\dagger}$, the Hermitian products whose eigenvalues are the squared masses. Then
+Why it is a determinant. $J$ is not merely an invariant of $V$; it is the invariant of the two mass matrices, and that is Jarlskog's theorem. Put $H_u=M_uM_u^{\dagger}$ and $H_d=M_dM_d^{\dagger}$, the Hermitian products whose eigenvalues are the squared masses. Then
 
 $$
 \operatorname{Im}\det\left[H_u,H_d\right]=2J\prod_{i<j}\left(m_{u_i}^{2}-m_{u_j}^{2}\right)\prod_{i<j}\left(m_{d_i}^{2}-m_{d_j}^{2}\right) ,
@@ -253,9 +253,9 @@ $$
 
 with each product over the three masses of one charge. Each product is antisymmetric, so a permutation of one triple flips it; the two together are invariant under a simultaneous reordering, which is why the identity is unambiguous once both triples are ordered the same way, and they are taken in increasing order here. Both sides were computed on random complex mass matrices and agree to machine precision. Read one way it is a formula for the invariant in terms of the matrices alone, with no reference to the mixing angles; read the other way it says a non-zero $J$ needs non-degenerate masses of *both* charges, since either product vanishing makes the left side vanish too. That is what makes CP violation a property of the mass matrices and not of a parametrisation of $V$: the commutator vanishes if and only if $H_u$ and $H_d$ can be diagonalised together, and the denominator carries the degeneracies.
 
-**Why the smallness is not a fine-tuning.** $J$ carries $\lambda^{6}$, so the smallness of the mixing angles produces it: $J\sim0.225^{6}\approx1.3\times10^{-4}$ times the factors $A^{2}\eta\approx0.24$. CP violation in the quark sector is small because the mixing is hierarchical, not because a phase was tuned to zero.
+Why the smallness is not a fine-tuning. $J$ carries $\lambda^{6}$, so the smallness of the mixing angles produces it: $J\sim0.225^{6}\approx1.3\times10^{-4}$ times the factors $A^{2}\eta\approx0.24$. **CP violation in the quark sector is small because the mixing is hierarchical, not because a phase was tuned to zero.**
 
-**The unitarity triangle.** The relation $V_{ud}V_{ub}^{*}+V_{cd}V_{cb}^{*}+V_{td}V_{tb}^{*}=0$ is a triangle in the complex plane; in the rescaled coordinates of the Wolfenstein form its apex is $(\bar\rho,\bar\eta)$, and the angles computed from the pair above are
+The unitarity triangle. The relation $V_{ud}V_{ub}^{*}+V_{cd}V_{cb}^{*}+V_{td}V_{tb}^{*}=0$ is a triangle in the complex plane; in the rescaled coordinates of the Wolfenstein form its apex is $(\bar\rho,\bar\eta)$, and the angles computed from the pair above are
 
 $$
 \alpha=91.6^{\circ} ,
@@ -267,21 +267,21 @@ $$
 \alpha+\beta+\gamma=180^{\circ} .
 $$
 
-**Two things about those three numbers.** The third, $\gamma$, coincides numerically with the CP phase $\delta$ of the standard parametrisation, and that is neither a coincidence nor a typo: at leading order in $\lambda$ both equal $\arctan\left(\bar\eta/\bar\rho\right)$, and they separate only at $O(\lambda^{2})$. And the rounded inputs differ between articles: *The CKM Matrix and CP Violation in Biquaternionic Form* takes $\bar\eta=0.348$ and gets $22.5^{\circ}$, $65.4^{\circ}$ and $92^{\circ}$, while *Meson Mixing, Rare Decays and the Unitarity Triangle* takes $0.3523$ and gets the three above. The second set is used here because that article also reproduces $\sin2\beta=0.7128$ from its closure test, and the $0.3^{\circ}$ between the two sets is a rounding of the input rather than a disagreement about the triangle.
+Two things about those three numbers. The third, $\gamma$, coincides numerically with the CP phase $\delta$ of the standard parametrisation, and that is neither a coincidence nor a typo: at leading order in $\lambda$ both equal $\arctan\left(\bar\eta/\bar\rho\right)$, and they separate only at $O(\lambda^{2})$. And the rounded inputs differ between articles: *The CKM Matrix and CP Violation in Biquaternionic Form* takes $\bar\eta=0.348$ and gets $22.5^{\circ}$, $65.4^{\circ}$ and $92^{\circ}$, while *Meson Mixing, Rare Decays and the Unitarity Triangle* takes $0.3523$ and gets the three above. The second set is used here because that article also reproduces $\sin2\beta=0.7128$ from its closure test, and the $0.3^{\circ}$ between the two sets is a rounding of the input rather than a disagreement about the triangle.
 
 The area of the triangle is $\lvert J\rvert/2$, which is the geometric statement of the previous paragraph: the invariant, not the phase, is twice the area, and a degenerate triangle is no CP violation.
 
 **Three conditions, and all three are needed.** CP violation requires that no two quarks of the same charge be degenerate, that the two mass matrices not be simultaneously diagonalisable, and that the mixing be genuinely three-dimensional: all three $s_{ij}$ non-zero and $\sin\delta\neq0$. The first is a statement about the spectrum, the second about the mixing, the third about the angles and the phase. Any one failing gives $J=0$. The third deserves its extra clause, because stating it as "$\delta\neq0,\pi$" alone quietly assumes the rest: with $s_{13}=0$ the phase is not small but unphysical — removable by rephasing, undefined — and $J$'s closed form carries $s_{13}$ as a multiplicative factor, so no value of $\delta$ can rescue it. The three are jointly sufficient for $J\neq0$ — that is exactly what the closed form says — and not for a *large* $J$, which is the separate fact that the angles are hierarchical.
 
-**The size, for comparison.** $J\approx3.1\times10^{-5}$ in the quark sector. In the lepton sector, with [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html)'s angles $\theta_{12}=33.4^{\circ}$, $\theta_{23}=49.0^{\circ}$, $\theta_{13}=8.6^{\circ}$ and its fit value $\delta\approx-130^{\circ}$, the same formula gives $J_{\mathrm{PMNS}}\approx-0.026$, eight hundred times larger. The leptonic mixing is not hierarchical in the same way, and that difference is one of the open facts of the sector.
+The size, for comparison. $J\approx3.1\times10^{-5}$ in the quark sector. In the lepton sector, with [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html)'s angles $\theta_{12}=33.4^{\circ}$, $\theta_{23}=49.0^{\circ}$, $\theta_{13}=8.6^{\circ}$ and its fit value $\delta\approx-130^{\circ}$, the same formula gives $J_{\mathrm{PMNS}}\approx-0.026$, eight hundred times larger. The leptonic mixing is not hierarchical in the same way, and that difference is one of the open facts of the sector.
 
-**The ratio is not a stable number, and the phase is why.** The leptonic CP phase is the least measured quantity in either mixing sector, and $J$ is linear in $\sin\delta$: at $\delta=197^{\circ}$, which the normal-ordering fits prefer, the same angles give $J_{\mathrm{PMNS}}=-9.7\times10^{-3}$ and a ratio of three hundred rather than eight hundred. What survives the choice of phase is the order of magnitude and the reason for it — the leptonic angles are all large, so no small sine suppresses $J$, while the quark value carries the sixth power of $\lambda$. A comparison that quotes the ratio to two digits and not its phase assumes a measurement that has not been made.
+The ratio is not a stable number, and the phase is why. The leptonic CP phase is the least measured quantity in either mixing sector, and $J$ is linear in $\sin\delta$: at $\delta=197^{\circ}$, which the normal-ordering fits prefer, the same angles give $J_{\mathrm{PMNS}}=-9.7\times10^{-3}$ and a ratio of three hundred rather than eight hundred. What survives the choice of phase is the order of magnitude and the reason for it — the leptonic angles are all large, so no small sine suppresses $J$, while the quark value carries the sixth power of $\lambda$. A comparison that quotes the ratio to two digits and not its phase assumes a measurement that has not been made.
 
-**The other CP-odd parameter, and why this section does not contain it.** The model has a second source of CP violation: the QCD vacuum angle, $\bar\theta=\theta+\arg\det\left(M_uM_d\right)$, multiplying $G\tilde G$. It is a parameter of the gauge sector, so it does not appear in $\operatorname{Im}\det\left[H_u,H_d\right]$ and no statement about $J$ constrains it. Experimentally $\lvert\bar\theta\rvert<10^{-10}$, from the neutron electric dipole moment, and why it is so small is the strong CP problem — [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) carries that question. "CP violation is one number" is therefore true of the quark mixing and false of the model; every unqualified use of the phrase in this article means the first.
+The other CP-odd parameter, and why this section does not contain it. The model has a second source of CP violation: the QCD vacuum angle, $\bar\theta=\theta+\arg\det\left(M_uM_d\right)$, multiplying $G\tilde G$. It is a parameter of the gauge sector, so it does not appear in $\operatorname{Im}\det\left[H_u,H_d\right]$ and no statement about $J$ constrains it. Experimentally $\lvert\bar\theta\rvert<10^{-10}$, from the neutron electric dipole moment, and why it is so small is the strong CP problem — [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html) carries that question. "CP violation is one number" is therefore true of the quark mixing and false of the model; every unqualified use of the phrase in this article means the first.
 
 ## The Count of Thirteen
 
-**The arithmetic.** Each Yukawa matrix is $3\times3$ complex, hence eighteen real parameters; three matrices give fifty-four. The flavour symmetry is $U(3)_Q\times U(3)_u\times U(3)_d\times U(3)_L\times U(3)_e$, forty-five real parameters. Not all of them are usable, because some act trivially on the Yukawa matrices.
+The arithmetic. Each Yukawa matrix is $3\times3$ complex, hence eighteen real parameters; three matrices give fifty-four. The flavour symmetry is $U(3)_Q\times U(3)_u\times U(3)_d\times U(3)_L\times U(3)_e$, forty-five real parameters. Not all of them are usable, because some act trivially on the Yukawa matrices.
 
 | Sector | Real parameters | Flavour group | Acts trivially | Removed | Physical |
 |---|---|---|---|---|---|
@@ -289,11 +289,11 @@ The area of the triangle is $\lvert J\rvert/2$, which is the geometric statement
 | leptons | $18$ | $18$ | $3$ | $15$ | $3$ |
 | **total** | $\mathbf{54}$ | $\mathbf{45}$ | $\mathbf{4}$ | $\mathbf{41}$ | $\mathbf{13}$ |
 
-**The trivial parts, named.** For the quarks, the simultaneous phase rotation of $Q_L$, $u_R$ and $d_R$ leaves both matrices unchanged: one parameter, so the orbit is $27-1=26$ and $36-26=10$. For the leptons, $Y_{e}$ alone leaves $U(1)^{3}$ of the $U(3)_L\times U(3)_e$ — the three diagonal phase rotations in the basis where $Y_{e}$ is diagonal, which fix it — so the orbit is $18-3=15$ and $18-15=3$. The asymmetry with the quark row is the whole content of the two rows: with one matrix the residual symmetry of the matrix itself is what is left over, and with two matrices only the common phase survives, because the diagonal-phase freedom that fixes $Y_{u}$ does not fix $Y_{d}$.
+The trivial parts, named. For the quarks, the simultaneous phase rotation of $Q_L$, $u_R$ and $d_R$ leaves both matrices unchanged: one parameter, so the orbit is $27-1=26$ and $36-26=10$. For the leptons, $Y_{e}$ alone leaves $U(1)^{3}$ of the $U(3)_L\times U(3)_e$ — the three diagonal phase rotations in the basis where $Y_{e}$ is diagonal, which fix it — so the orbit is $18-3=15$ and $18-15=3$. The asymmetry with the quark row is the whole content of the two rows: with one matrix the residual symmetry of the matrix itself is what is left over, and with two matrices only the common phase survives, because the diagonal-phase freedom that fixes $Y_{u}$ does not fix $Y_{d}$.
 
-**The ten and the three.** The ten are six quark masses, three angles and one phase. The three are the charged-lepton masses. The sum is $10+3=13$, which is the flavour block of article 1's nineteen.
+The ten and the three. The ten are six quark masses, three angles and one phase. The three are the charged-lepton masses. The sum is $10+3=13$, which is the flavour block of article 1's nineteen.
 
-**The count as a function of $N_g$, because the $3$ is an input.** The table's $3\times3$ is not derived here. For general $N_g$ the quark sector gives $N_g^{2}+1$ — $4N_g^{2}$ real parameters in two matrices against $3N_g^{2}-1$ removable ones — and the lepton sector $N_g$, in one matrix against $2N_g^{2}-N_g$ removable. So the flavour block is
+The count as a function of $N_g$, because the $3$ is an input. The table's $3\times3$ is not derived here. For general $N_g$ the quark sector gives $N_g^{2}+1$ — $4N_g^{2}$ real parameters in two matrices against $3N_g^{2}-1$ removable ones — and the lepton sector $N_g$, in one matrix against $2N_g^{2}-N_g$ removable. So the flavour block is
 
 $$
 N_g^{2}+N_g+1 ,
@@ -303,11 +303,11 @@ which is $3$ at $N_g=1$, $7$ at $N_g=2$ and $13$ at $N_g=3$. The three cases che
 
 **Why the nine masses stay free.** A mass is an invariant of the matrix under the flavour group, and a $3\times3$ complex matrix has exactly three such invariants. So each matrix must leave three numbers behind, and no symmetry can fix them. The masses are free for the same reason that the eigenvalues of a generic Hermitian matrix are free: they are the invariants, and the model has no principle that selects them.
 
-**What the count does not include.** Neutrino masses add seven parameters on the Dirac hypothesis and nine on the Majorana one; §*Neutrinos* gives the arithmetic. The count of nineteen is the count with massless neutrinos, which is the minimal Standard Model.
+What the count does not include. Neutrino masses add seven parameters on the Dirac hypothesis and nine on the Majorana one; §*Neutrinos* gives the arithmetic. The count of nineteen is the count with massless neutrinos, which is the minimal Standard Model.
 
 ## The Mass Spectrum and Its Gaps
 
-**The couplings.** With $y_f=\sqrt2\,m_f/v$ and $v=246.22$ GeV. The last column is the one this article is about, so the two before it carry the scheme and the scale: a mass without them is not a number.
+The couplings. With $y_f=\sqrt2\,m_f/v$ and $v=246.22$ GeV. The last column is the one this article is about, so the two before it carry the scheme and the scale: a mass without them is not a number.
 
 | Fermion | $m_f$ | Scheme and scale | $y_f=\sqrt2m_f/v$ |
 |---|---|---|---|
@@ -321,9 +321,9 @@ which is $3$ at $N_g=1$, $7$ at $N_g=2$ and $13$ at $N_g=3$. The three cases che
 | $b$ | $4.18$ GeV | $\overline{\mathrm{MS}}$, $m_b$ | $2.40\times10^{-2}$ |
 | $t$ | $172.7$ GeV | pole | $9.92\times10^{-1}$ |
 
-**Three quark conventions in one column, and they are not interchangeable.** The light quarks are quoted at $2$ GeV because below the charm threshold that is where the lattice and sum-rule determinations live; the charm and bottom at their own masses, where the running stops being large; the top on shell, because it decays before it hadronises. So $y_b=2.40\times10^{-2}$ here is the coupling at $m_b$, while the $g_{hb\bar b}$ of §*What the Higgs Coupling Makes Testable* is the same coupling at $M_H$, where the mass is $2.9$ GeV, and appears there as $1.18\times10^{-2}$. The ratio is $2.03$, not $\sqrt2$ and not an arithmetic error, and a reader who tries to reconcile the two tables without a scale will not succeed.
+Three quark conventions in one column, and they are not interchangeable. The light quarks are quoted at $2$ GeV because below the charm threshold that is where the lattice and sum-rule determinations live; the charm and bottom at their own masses, where the running stops being large; the top on shell, because it decays before it hadronises. So $y_b=2.40\times10^{-2}$ here is the coupling at $m_b$, while the $g_{hb\bar b}$ of §*What the Higgs Coupling Makes Testable* is the same coupling at $M_H$, where the mass is $2.9$ GeV, and appears there as $1.18\times10^{-2}$. The ratio is $2.03$, not $\sqrt2$ and not an arithmetic error, and a reader who tries to reconcile the two tables without a scale will not succeed.
 
-**Two facts in the last column.** The top Yukawa is one to within one per cent, and the electron Yukawa is $3\times10^{-6}$. The span is
+Two facts in the last column. The top Yukawa is one to within one per cent, and the electron Yukawa is $3\times10^{-6}$. The span is
 
 $$
 \frac{y_t}{y_e}=\frac{m_t}{m_e}=3.4\times10^{5} ,
@@ -331,23 +331,23 @@ $$
 
 five and a half orders of magnitude, inside a sector whose parameters are all of the same kind and none of which is a hierarchy-generating scale.
 
-**The top Yukawa as a fixed point.** $y_t\approx1$ is not a coincidence of the numbers so much as a fixed-point behaviour: the renormalisation-group equation for a Yukawa coupling has an infrared fixed point at a value of order one, so a large coupling at a high scale is driven towards $y_t\approx1$ at the electroweak scale. That is an explanation of the order of magnitude and not of the value, and it does not extend to the other eight.
+The top Yukawa as a fixed point. $y_t\approx1$ is not a coincidence of the numbers so much as a fixed-point behaviour: the renormalisation-group equation for a Yukawa coupling has an infrared fixed point at a value of order one, so a large coupling at a high scale is driven towards $y_t\approx1$ at the electroweak scale. That is an explanation of the order of magnitude and not of the value, and it does not extend to the other eight.
 
-**The lepton coincidence.** The three charged-lepton masses satisfy
+The lepton coincidence. The three charged-lepton masses satisfy
 
 $$
 \frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^{2}}=\frac23 ,
 $$
 
-the Koide relation, and it holds to a relative accuracy of $9\times10^{-6}$ with the PDG charged-lepton masses. The digits should not be read as a measurement: the quantity is a ratio of two sums of order $10^{3}$ MeV and the claim concerns its fifth decimal place, so four-significant-figure input masses cannot resolve it — with the three masses rounded as they are in the table above the agreement degrades to $5\times10^{-5}$. It is written here because it is the sharpest unexplained numerical fact in the sector, and because the corpus's discipline requires that a striking number be reported with its status: **the relation is empirical, has no derivation in the Standard Model, and is not a prediction of any part of this article.** A reader who takes it as a hint is entitled to; a reader who takes it as established is not.
+the Koide relation, and it holds to a relative accuracy of $9\times10^{-6}$ with the PDG charged-lepton masses. The digits should not be read as a measurement: the quantity is a ratio of two sums of order $10^{3}$ MeV and the claim concerns its fifth decimal place, so four-significant-figure input masses cannot resolve it — with the three masses rounded as they are in the table above the agreement degrades to $5\times10^{-5}$. It is written here because it is the sharpest unexplained numerical fact in the sector, and because the corpus's discipline requires that a striking number be reported with its status: the relation is empirical, has no derivation in the Standard Model, and is not a prediction of any part of this article. A reader who takes it as a hint is entitled to; a reader who takes it as established is not.
 
 **What the sector does not explain.** Four things, in decreasing order of sharpness: the absolute scale of the masses, which is set by $v$ and is not explained by the sector; the hierarchy, five and a half orders; the pattern of the mixing angles, $0.22$, $0.042$, $0.0037$; and the Koide relation. The sector's role is to make all four exist as parameters of a renormalisable Lagrangian, and to relate the masses to the mixing through one decomposition.
 
-**Why the hierarchy is not a fine-tuning in the technical sense.** A hierarchical spectrum is stable under radiative corrections in the way the scalar mass is not: the Yukawa couplings run logarithmically, and their ratios change slowly. So the hierarchy is unexplained but not unnatural, and the two problems are different in kind.
+Why the hierarchy is not a fine-tuning in the technical sense. A hierarchical spectrum is stable under radiative corrections in the way the scalar mass is not: the Yukawa couplings run logarithmically, and their ratios change slowly. So **the hierarchy is unexplained but not unnatural**, and the two problems are different in kind.
 
 ## What the Higgs Coupling Makes Testable
 
-**The coupling is the mass over the scale.** Expanding the mass term to first order in $h$ gives
+The coupling is the mass over the scale. Expanding the mass term to first order in $h$ gives
 
 $$
 \mathcal{L}\supset-\frac{m_f}{v}\,h\,\bar\psi\psi ,
@@ -357,7 +357,7 @@ $$
 
 **The proportionality is the sector's prediction.** The Higgs couples to each fermion in proportion to its mass, with no free constant per flavour. The Yukawa matrix that sets the mass also sets the coupling, because both come from the same term. What the couplings measure is therefore the same numbers the masses do — the nine masses, taken in a different way. They are not the thirteen: the four mixing parameters do not enter a Higgs coupling at tree level, because the coupling is diagonal in the mass basis. The flavour structure is invisible to the scalar, and that is itself a testable statement.
 
-**The decays.** With $\Gamma\left(H\to f\bar f\right)=N_c\,m_f^{2}M_H\beta^{3}/\left(8\pi v^{2}\right)$ and $\beta=\sqrt{1-4m_f^{2}/M_H^{2}}$, and $M_H=125.09$ GeV:
+The decays. With $\Gamma\left(H\to f\bar f\right)=N_c\,m_f^{2}M_H\beta^{3}/\left(8\pi v^{2}\right)$ and $\beta=\sqrt{1-4m_f^{2}/M_H^{2}}$, and $M_H=125.09$ GeV:
 
 | Channel | $g_{hf\bar f}=m_f/v$ | Computed width | Reference value |
 |---|---|---|---|
@@ -365,29 +365,29 @@ $$
 | $\tau^+\tau^-$ | $7.22\times10^{-3}$ | $0.259$ MeV | $0.257$ MeV |
 | $c\bar c$ | $2.48\times10^{-3}$ | $0.110$ MeV | $0.118$ MeV |
 
-**The last column is not one kind of number, and the header used to say it was.** $\Gamma(H\to c\bar c)$ has never been measured — the charm Yukawa is constrained, not observed — so $0.118$ MeV is the Standard Model's own expectation, and comparing a tree-level-plus-$\alpha_s$ number with it compares two calculations. The $b$ and $\tau$ entries come from fits to measured signal strengths under Standard Model assumptions, so they too are not bare measurements, but they are at least informed by data. A table that calls all three "measured" invites a reader to treat agreement with $0.118$ as a test of nature, which it is not.
+The last column is not one kind of number, and the header used to say it was. $\Gamma(H\to c\bar c)$ has never been measured — the charm Yukawa is constrained, not observed — so $0.118$ MeV is the Standard Model's own expectation, and comparing a tree-level-plus-$\alpha_s$ number with it compares two calculations. The $b$ and $\tau$ entries come from fits to measured signal strengths under Standard Model assumptions, so they too are not bare measurements, but they are at least informed by data. A table that calls all three "measured" invites a reader to treat agreement with $0.118$ as a test of nature, which it is not.
 
-**Two conventions sit in one table, and the note belongs here rather than in a footnote.** The quark rows carry the next-to-leading QCD factor $1+5.67\alpha_s(M_H)/\pi=1.20$; the $\tau$ row does not, having no strong coupling to run. Evaluated as pure tree level from the same couplings the $b$ width is $2.07$ MeV, not $2.49$, and the $c$ width $0.092$, not $0.110$. A reader reproducing the table from the formula as printed will find the two quark rows about $17$ per cent low and the $\tau$ row already exact, which is the factor and not an error.
+Two conventions sit in one table, and the note belongs here rather than in a footnote. The quark rows carry the next-to-leading QCD factor $1+5.67\alpha_s(M_H)/\pi=1.20$; the $\tau$ row does not, having no strong coupling to run. Evaluated as pure tree level from the same couplings the $b$ width is $2.07$ MeV, not $2.49$, and the $c$ width $0.092$, not $0.110$. A reader reproducing the table from the formula as printed will find the two quark rows about $17$ per cent low and the $\tau$ row already exact, which is the factor and not an error.
 
-**The $b$ row is where the scheme enters, and it is the sharpest lesson of the sector.** Evaluating the formula with the $\overline{\mathrm{MS}}$ mass at its own scale, $m_b(m_b)=4.18$ GeV, gives $4.28$ MeV, a factor $1.8$ above the measurement. Running the mass to the Higgs scale gives $m_b(M_H)\approx2.9$ GeV and, with the QCD correction factor $1+5.67\alpha_s(M_H)/\pi\approx1.20$ at $\alpha_s(M_H)\approx0.113$, a width of about $2.5$ MeV. The gap between $4.28$ and $2.49$ is not an error in either calculation: it is the running mass, a factor $2.07$, moderated by the QCD correction, a factor $1.20$, and the two compound to $1.7$ — a change of definition and a change of order, not a disagreement. A reader who compares a tree-level Yukawa prediction with a measured width without naming the scale has compared two different statements, which is the same lesson as in *The Weinberg Angle* and *Electroweak Symmetry Breaking*.
+The $b$ row is where the scheme enters, and it is the sharpest lesson of the sector. Evaluating the formula with the $\overline{\mathrm{MS}}$ mass at its own scale, $m_b(m_b)=4.18$ GeV, gives $4.28$ MeV, a factor $1.8$ above the measurement. Running the mass to the Higgs scale gives $m_b(M_H)\approx2.9$ GeV and, with the QCD correction factor $1+5.67\alpha_s(M_H)/\pi\approx1.20$ at $\alpha_s(M_H)\approx0.113$, a width of about $2.5$ MeV. The gap between $4.28$ and $2.49$ is not an error in either calculation: it is the running mass, a factor $2.07$, moderated by the QCD correction, a factor $1.20$, and the two compound to $1.7$ — a change of definition and a change of order, not a disagreement. A reader who compares a tree-level Yukawa prediction with a measured width without naming the scale has compared two different statements, which is the same lesson as in *The Weinberg Angle* and *Electroweak Symmetry Breaking*.
 
-**The quark couplings in the table are the masses at the scale of the process, not at their own scale.** That is $m_q(M_H)$: $m_b(M_H)\approx2.9$ GeV and $m_c(M_H)\approx0.61$ GeV, the $c$ about half its $\overline{\mathrm{MS}}$ value at its own mass and the $b$ about two thirds of it. Quoting $m_f/v$ with the mass at its own scale instead inflates the $b$ width to $4.28$ MeV and the $c$ width to $0.40$ MeV, and neither number is wrong; each answers a different question.
+The quark couplings in the table are the masses at the scale of the process, not at their own scale. That is $m_q(M_H)$: $m_b(M_H)\approx2.9$ GeV and $m_c(M_H)\approx0.61$ GeV, the $c$ about half its $\overline{\mathrm{MS}}$ value at its own mass and the $b$ about two thirds of it. Quoting $m_f/v$ with the mass at its own scale instead inflates the $b$ width to $4.28$ MeV and the $c$ width to $0.40$ MeV, and neither number is wrong; each answers a different question.
 
-**The lepton row carries no such ambiguity.** The running of a lepton mass is electromagnetic only, and from $m_\tau$ to $M_H$ it is $0.7$ per cent: taking the one-loop anomalous dimension $3\alpha/(4\pi)$ over $\ln\left(M_H/m_\tau\right)=4.25$ gives $m_\tau(M_H)=1.764$ GeV against $1.777$ at its own scale. The width goes as the mass squared, so it moves by $1.5$ per cent — a shift that cancels in a comparison at the per-cent level and cannot produce a factor of two. The sector's clean tests are therefore the lepton ones, and its precision tests are the heavy-quark ones, where the running must be controlled.
+The lepton row carries no such ambiguity. The running of a lepton mass is electromagnetic only, and from $m_\tau$ to $M_H$ it is $0.7$ per cent: taking the one-loop anomalous dimension $3\alpha/(4\pi)$ over $\ln\left(M_H/m_\tau\right)=4.25$ gives $m_\tau(M_H)=1.764$ GeV against $1.777$ at its own scale. The width goes as the mass squared, so it moves by $1.5$ per cent — a shift that cancels in a comparison at the per-cent level and cannot produce a factor of two. The sector's clean tests are therefore the lepton ones, and its precision tests are the heavy-quark ones, where the running must be controlled.
 
-**The loop coupling to gluons and photons.** The Higgs couples to gluons through a top-quark triangle, so the $gg\to H$ amplitude is fixed by $y_t$ alone. It couples to photons through a top triangle and a $W$ loop that interferes with it destructively, so the $H\to\gamma\gamma$ amplitude is fixed by $y_t$ and by the $W$ coupling together, and by neither alone. The two rates are therefore a test of the top Yukawa at the scale of the loop momentum — at most $M_H/2$, not $m_t$ — and, in the photon channel, of the gauge sector as well. Both agree with the Standard Model at the ten per cent level.
+The loop coupling to gluons and photons. The Higgs couples to gluons through a top-quark triangle, so the $gg\to H$ amplitude is fixed by $y_t$ alone. It couples to photons through a top triangle and a $W$ loop that interferes with it destructively, so the $H\to\gamma\gamma$ amplitude is fixed by $y_t$ and by the $W$ coupling together, and by neither alone. The two rates are therefore a test of the top Yukawa at the scale of the loop momentum — at most $M_H/2$, not $m_t$ — and, in the photon channel, of the gauge sector as well. Both agree with the Standard Model at the ten per cent level.
 
-**What a deviation would mean.** A measured $g_{hf\bar f}$ different from $m_f/v$ would mean either a second scalar doublet, which splits the couplings by type, or a non-renormalisable correction suppressed by a new scale. The current agreement bounds such effects, and the bound is the sector's most direct handle on physics beyond it.
+What a deviation would mean. A measured $g_{hf\bar f}$ different from $m_f/v$ would mean either a second scalar doublet, which splits the couplings by type, or a non-renormalisable correction suppressed by a new scale. The current agreement bounds such effects, and the bound is the sector's most direct handle on physics beyond it.
 
 ## Neutrinos: the Same Sector with Two New Questions
 
-**The two questions.** A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\nu_L^{T}C\nu_L$ carries hypercharge $-1$ — each $\nu_L$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
+The two questions. A neutrino mass requires either a right-handed singlet, and then the same Yukawa structure applies, or a Majorana mass term for the left doublet. The second is forbidden twice over: the symmetric pair $\nu_L^{T}C\nu_L$ carries hypercharge $-1$ — each $\nu_L$ has $-\tfrac12$ in the convention $Y=Ϙ-T_3$ that article 1 uses — where a mass term needs $0$, so no gauge-invariant contraction exists, and it has dimension three, so it is not renormalisable either. A scalar triplet of hypercharge $+1$ would supply the missing charge — that is the type-II route — and the dimension-five operator below is the general low-energy statement, with the singlet and the fermion triplet integrated out.
 
-**The Dirac route.** Add $\nu_R$, a singlet of all three groups. Then $Y_{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
+The Dirac route. Add $\nu_R$, a singlet of all three groups. Then $Y_{\nu}$ is a fourth $3\times3$ complex matrix and the analysis of this article repeats verbatim: singular values for the masses, misalignment for the PMNS matrix. The count grows by seven: three masses, three angles, one phase.
 
-**The Majorana route.** A term $\overline{L_{L,c}}\,\tilde\varphi^{*}\,\lambda\,\tilde\varphi^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
+The Majorana route. A term $\overline{L_{L,c}}\,\tilde\varphi^{*}\,\lambda\,\tilde\varphi^{\dagger}L_L/M$ is the unique dimension-five operator, and it gives a mass matrix $M_\nu=\lambda v^{2}/(2M)$ after the breaking. The matrix is symmetric — not by assumption but because the two fermion factors in the operator are the same doublet, so the matrix is its own transpose — and a symmetric matrix has six complex entries and is diagonalised by one unitary; two of the phases cannot be removed by rephasing, so the count grows by nine: three masses, three angles, one Dirac phase and two Majorana phases.
 
-**The counts.**
+The counts.
 
 | Hypothesis | Flavour parameters | Total |
 |---|---|---|
@@ -395,33 +395,33 @@ $$
 | Dirac neutrinos | $13+7=20$ | $26$ |
 | Majorana neutrinos | $13+9=22$ | $28$ |
 
-**What is measured.** The two mass-squared differences $\delta m_{21}^{2}=7.42\times10^{-5}$ eV$^{2}$ and $\lvert\delta m_{31}^{2}\rvert=2.51\times10^{-3}$ eV$^{2}$; three angles $\theta_{12}=33.4^{\circ}$, $\theta_{23}=49^{\circ}$, $\theta_{13}=8.6^{\circ}$; and a CP phase that the global fits place near $\delta\approx-130^{\circ}$, with CP conservation disfavoured at $2$–$3\sigma$ and the normal-ordering fits preferring a value some $30^{\circ}$ away — the spread that §*Where CP Violation Lives* uses to explain why its ratio is quoted to an order of magnitude. With the lightest mass set to zero in the normal ordering the spectrum is $0$, $\sqrt{\delta m_{21}^{2}}=8.6$ meV and $\sqrt{\lvert\delta m_{31}^{2}\rvert+\delta m_{21}^{2}}=50.8$ meV, a sum of $59.4$ meV. The third mass is not $\sqrt{\lvert\delta m_{31}^{2}\rvert}=50.1$ meV: $\delta m_{31}^{2}$ is a difference of two squares, so the two masses differ by $1.5$ per cent while their squares differ by $3$ per cent, and that $3$ per cent is the size of the whole lightest-mass interval being probed.
+What is measured. The two mass-squared differences $\delta m_{21}^{2}=7.42\times10^{-5}$ eV$^{2}$ and $\lvert\delta m_{31}^{2}\rvert=2.51\times10^{-3}$ eV$^{2}$; three angles $\theta_{12}=33.4^{\circ}$, $\theta_{23}=49^{\circ}$, $\theta_{13}=8.6^{\circ}$; and a CP phase that the global fits place near $\delta\approx-130^{\circ}$, with CP conservation disfavoured at $2$–$3\sigma$ and the normal-ordering fits preferring a value some $30^{\circ}$ away — the spread that §*Where CP Violation Lives* uses to explain why its ratio is quoted to an order of magnitude. With the lightest mass set to zero in the normal ordering the spectrum is $0$, $\sqrt{\delta m_{21}^{2}}=8.6$ meV and $\sqrt{\lvert\delta m_{31}^{2}\rvert+\delta m_{21}^{2}}=50.8$ meV, a sum of $59.4$ meV. The third mass is not $\sqrt{\lvert\delta m_{31}^{2}\rvert}=50.1$ meV: $\delta m_{31}^{2}$ is a difference of two squares, so the two masses differ by $1.5$ per cent while their squares differ by $3$ per cent, and that $3$ per cent is the size of the whole lightest-mass interval being probed.
 
-**The orderings.** The sign of $\delta m_{31}^{2}$ is not known, so the spectrum is either the normal ordering above or the inverted one with two nearly degenerate heavy states. The two differ in the mass of the lightest state and in the rate of neutrinoless double beta decay, which is the experiment that would settle the Majorana question.
+The orderings. The sign of $\delta m_{31}^{2}$ is not known, so the spectrum is either the normal ordering above or the inverted one with two nearly degenerate heavy states. The two differ in the mass of the lightest state and in the rate of neutrinoless double beta decay, which is the experiment that would settle the Majorana question.
 
 **Why the same analysis applies, stated once.** The PMNS matrix is $W_\nu^{\dagger}W_e$ — the misalignment of the neutrino and charged-lepton bases, in exact analogy with $W_u^{\dagger}W_d$. The difference is that the neutrino masses are at most a few tens of millielectronvolts — seven orders of magnitude below the electron, twelve below the top — and that the mixing is large rather than hierarchical. The leptonic sector is the sector above with different numbers in it.
 
-**The link to the framework.** *The Seesaw Mechanism and Majorana Mass in Biquaternionic Form* carries the construction and the counting of states; this article only records where the parameters come from.
+The link to the framework. *The Seesaw Mechanism and Majorana Mass in Biquaternionic Form* carries the construction and the counting of states; this article only records where the parameters come from.
 
 ## The Framework's Position
 
-**The framework supplies the home of the matrices, and that is a real statement.** In the framework the fermion space is $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ with the algebra acting on $\mathcal{S}_{\mathrm{rep}}$ and trivially on the multiplicity factor. The operators that can appear as mass or Yukawa matrices are therefore exactly
+The framework supplies the home of the matrices, and that is a real statement. In the framework the fermion space is $\mathcal{S}_{\mathrm{rep}}\otimes\mathbb{C}^{N_g}$ with the algebra acting on $\mathcal{S}_{\mathrm{rep}}$ and trivially on the multiplicity factor. The operators that can appear as mass or Yukawa matrices are therefore exactly
 
 $$
 Y\in\mathrm I_{\mathcal{S}_{\mathrm{rep}}}\otimes M_{N_g}(\mathbb{C}) ,
 $$
 
-that is, the commutant of the algebra's action. So the framework says something precise and non-trivial about this sector: **the Yukawa matrices are the operators on the factor the algebra does not act on.** Their arbitrariness is structural. An algebra cannot constrain an operator that lives in its commutant, so a framework with a multiplicity factor must have arbitrary Yukawa couplings. The commutant's parameter space is $6N_g^{2}=54$ real numbers at $N_g=3$, and the thirteen of §*The Count of Thirteen* are that space reduced by the flavour symmetry.
+that is, the commutant of the algebra's action. So the framework says something precise and non-trivial about this sector: the Yukawa matrices are the operators on the factor the algebra does not act on. Their arbitrariness is structural. An algebra cannot constrain an operator that lives in its commutant, so a framework with a multiplicity factor must have arbitrary Yukawa couplings. The commutant's parameter space is $6N_g^{2}=54$ real numbers at $N_g=3$, and the thirteen of §*The Count of Thirteen* are that space reduced by the flavour symmetry.
 
 **What the framework does not supply is the coupling itself.** The chiral-fermion article's mass selection rule says a bare Dirac mass is invariant if and only if $ϙ_L=ϙ_R$. The compensating scalar must therefore carry the difference $ϙ_L-ϙ_R$, and a scalar that carries it is non-central. The framework's scalar is central, and a central charge acts identically on both parts, so it cannot compensate a chiral mass term at all.
 
-**The chain is not a chain, and saying so is part of the accounting.** Three statements are in play and only the first leads to the third. The framework establishes that a chiral fermion needs a compensating scalar, and the selection rule shows that the scalar must be non-central. It also constructs an abelian mechanism for a *central* scalar — but that mechanism masses the gauge boson and not the fermion: the field that acquires an expectation value is central, the mass comes from the $|D_\mu\varphi|^{2}$ term, and no Yukawa coupling of that field to the two chiralities is constructed or constructible, since a central charge acts identically on both. So the middle statement is a *different* mechanism, not a partial version of the missing one, and calling it "established for the abelian case" would credit the framework with half a step it has not taken. The missing link is the coupling of a non-central scalar to the two parts of the fermion, and it is absent.
+The chain is not a chain, and saying so is part of the accounting. **Three statements are in play and only the first leads to the third.** The framework establishes that a chiral fermion needs a compensating scalar, and the selection rule shows that the scalar must be non-central. It also constructs an abelian mechanism for a *central* scalar — but that mechanism masses the gauge boson and not the fermion: the field that acquires an expectation value is central, the mass comes from the $|D_\mu\varphi|^{2}$ term, and no Yukawa coupling of that field to the two chiralities is constructed or constructible, since a central charge acts identically on both. So the middle statement is a *different* mechanism, not a partial version of the missing one, and calling it "established for the abelian case" would credit the framework with half a step it has not taken. The missing link is the coupling of a non-central scalar to the two parts of the fermion, and it is absent.
 
-**The strongest objection, and the answer.** A reader may say that the commutant statement is empty, since any framework with a multiplicity factor would say the same. That is correct as far as it goes, and it is the reason the statement is presented as a consistency rather than as a derivation. Its content is negative and useful: it explains why no algebraic principle will ever fix the Yukawa entries, and it locates the missing physics precisely — not in the algebra but in the coupling of a non-central scalar.
+The strongest objection, and the answer. A reader may say that the commutant statement is empty, since any framework with a multiplicity factor would say the same. That is correct as far as it goes, and it is the reason the statement is presented as a consistency rather than as a derivation. Its content is negative and useful: it explains why no algebraic principle will ever fix the Yukawa entries, and it locates the missing physics precisely — not in the algebra but in the coupling of a non-central scalar.
 
-**What a derivation would need.** Three items: a scalar in the module $\mathcal{S}_{\mathrm{rep}}$ rather than in the centre, so that it carries a non-central charge; a hypercharge assignment acting differently on the two chiralities; and a potential and Yukawa term invariant under both. The first is available in the algebra as a module element, and the electroweak articles record that the module exists. The second is the one that *The Electroweak Gauge Group and the Hypercharge Assignment in the Fourth-Colour Left–Right Model: The Group and the Derived $Y$* identifies as the missing piece: an abelian generator that acts differently on the two sides of an element, which the central phase cannot supply because it multiplies both by the same charge. The third would follow from the first two.
+What a derivation would need. Three items: a scalar in the module $\mathcal{S}_{\mathrm{rep}}$ rather than in the centre, so that it carries a non-central charge; a hypercharge assignment acting differently on the two chiralities; and a potential and Yukawa term invariant under both. The first is available in the algebra as a module element, and the electroweak articles record that the module exists. The second is the one that *The Electroweak Gauge Group and the Hypercharge Assignment in the Fourth-Colour Left–Right Model: The Group and the Derived $Y$* identifies as the missing piece: an abelian generator that acts differently on the two sides of an element, which the central phase cannot supply because it multiplies both by the same charge. The third would follow from the first two.
 
-**What the corpus can say without that derivation.** That the masses are invariants and the mixing is a misalignment, which is linear algebra available to any framework; that the couplings are proportional to the masses, which is a consequence of the Standard Model's structure and not of the algebra; and that the thirteen numbers sit in the commutant, which is the framework's own statement about where they must live. Everything else in this article is transcription.
+What the corpus can say without that derivation. That the masses are invariants and the mixing is a misalignment, which is linear algebra available to any framework; that the couplings are proportional to the masses, which is a consequence of the Standard Model's structure and not of the algebra; and that the thirteen numbers sit in the commutant, which is the framework's own statement about where they must live. Everything else in this article is transcription.
 
 ## Summary
 
