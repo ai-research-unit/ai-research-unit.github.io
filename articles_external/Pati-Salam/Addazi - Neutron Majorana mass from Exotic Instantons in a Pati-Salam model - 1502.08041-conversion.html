@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neutron Majorana Mass from Exotic Instantons in a Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/futur/Pati-Salam/Addazi - Neutron Majorana mass from Exotic Instantons in a Pati-Salam model - 1502.08041.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="neutron-majorana-mass-from-exotic-instantons-in-a-patisalam-model"><strong>Neutron Majorana Mass from Exotic Instantons in a Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1502.08041 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Andrea Addazi, Massimo Bianchi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 27 February 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF; preprint number ROM2F/2015/03</td>
+</tr>
+<tr>
+<td>length</td>
+<td>21 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Addazi - Neutron Majorana mass from Exotic Instantons in a Pati-Salam model - 1502.08041-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/futur/Pati-Salam/Addazi - Neutron Majorana mass from Exotic Instantons in a Pati-Salam model - 1502.08041.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-neutron-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/futur/Pati-Salam/Addazi - Neutron Majorana mass from Exotic Instantons in a Pati-Salam model - 1502.08041.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper proposes an unoriented intersecting-D-brane quiver whose low-energy limit is a supersymmetric Pati–Salam-like model, and shows that a Euclidean D2-brane instanton generates the superpotential $S\Delta_6\Delta_6\Delta_6/M_0$. Once the colour singlet $S$ takes a vacuum expectation value, that term gives a <strong>Majorana mass to the neutron</strong> and induces $|\Delta B|=2$ neutron–antineutron oscillation, with no $|\Delta B|=1$ operator and therefore no fast proton decay. The same term, with $S$ replaced by its expectation value, is the right-handed neutrino Majorana mass, so one non-perturbative object gives the neutrino mass and the neutron mass together. The paper then maps the parameter space: depending on whether the instanton scale sits at $10^{19}$ GeV, $10^{13}$ GeV or $10$ TeV, the colour sextets land at the TeV scale, above the LHC, or in a post-sphaleron regime, and each branch has its own signature. It is a model-building paper: the numbers are estimates from one-loop and dimensional analysis, not a fit.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-quiver">The Quiver</h3>
+<p>The gauge group is $U(4)\times Sp(2)_L\times Sp(2)_R$. $U(4)$ comes from four D6-branes and their images under an $\Omega^+$-plane; the two $Sp(2)$ come from stacks of two D6-branes lying on the plane, so each is identified with its own image. Three generations of left and right fundamentals come from strings joining the $U(4)$ stack to $Sp(2)_L$ or $Sp(2)_R$; $h_{LR}=(2,2,1)$ sits between the two symplectic stacks; $\varphi_{RR}=(3,1,1)$ and $\varphi_{LL}=(1,3,1)$ are strings with both ends on one stack; and $\Delta(1,1,10)$ with its conjugate comes from strings joining the $U(4)$ stack to its own orientifold image $U'(4)$ — which is why it is a symmetric ten and not a bifundamental.</p>
+<p>The perturbative superpotential is</p>
+<p>$$
+W\sim y_1h_{LR}F_LF_R+\frac{1}{M_1}F_L\varphi_{LL}F_L\Delta+\frac{1}{M_2}F_R\varphi_{RR}F_R\Delta^c
++\frac{1}{M_3}h_{LR}\varphi_{RR}h_{RL}\varphi_{LL}+\mu h_{LR}h_{RL}
+$$
+$$
++m_\Delta\Delta\Delta^c+\frac{1}{4M_4}(\Delta\Delta^c)^2+\frac{1}{2}m_L\varphi_{LL}^2+\frac{1}{2}m_R\varphi_{RR}^2
++\frac{a_L}{3!}\varphi_{LL}^3+\frac{a_R}{3!}\varphi_{RR}^3 ,
+$$</p>
+<p>with the mass scales $M_{1,2,3,4}$ free and possibly near the string scale. In a T-dual type IIB picture the mass terms come from three-form fluxes, $m_\Delta\sim\Gamma^{ijk}\langle\tau H_{ijk}+iF_{ijk}\rangle$, and the flux choice can differ between the up-type and down-type sextets, $H^{dd},F^{dd}\neq H^{uu},F^{uu}$.</p>
+<h3 id="why-the-1310-cannot-be-used">Why the (1,3,10) Cannot Be Used</h3>
+<p>In an $SO(10)$ embedding the left–right breaking is done by $\Delta_R(1,3,10)$, whose decomposition is</p>
+<p>$$
+\Delta_R(1,3,10)=(1,3,1)_{-2}+(1,3,3)_{-2/3}+(1,3,6)_{2/3},
+$$</p>
+<p>with the singlet giving the right-handed neutrino mass through $\langle\Delta^c_{\nu^c\nu^c}\rangle\nu^c\nu^c$ and the sextet $\Delta^c_{q^cq^c}(1,3,6)_{2/3}$ carrying the diquark couplings.</p>
+<p><strong>That field cannot be built here.</strong> A perturbative open string has two ends, so it carries fundamental charges under at most two gauge groups. The $(1,3,10)$ is the triplet of $Sp(2)$, that is the symmetric product of two doublets, times the decuplet of $SU(4)$, the symmetric product of two tetraplets — a state with two ends on the $U(4)$ stack and two on the $Sp(2)$ stack, a multi-pronged string with no perturbative description. The breaking is therefore done by fields that do exist: $\varphi_{RR}(1,3,1)$ with $\langle\varphi_{RR}\rangle=v_R$ and $\langle\varphi_{LL}\rangle=0$ for left–right breaking, and $S$, the colour singlet inside $\Delta(1,1,10)$, with $\langle S\rangle=v_{B-L}$ for $U(1)_{B-L}$ breaking. The sextets live inside $\Delta(1,1,10)$ and not inside a $(1,3,10)$.</p>
+<h3 id="the-exotic-instanton">The Exotic Instanton</h3>
+<p>The interaction</p>
+<p>$$
+W_{E_2}=\frac{1}{M_0}\,\epsilon^{ijkl}\epsilon^{i'j'k'l'}\,\Delta^c_{ii'}\Delta^c_{jj'}\Delta^c_{kk'}\Delta^c_{ll'}
+$$</p>
+<p>is generated by a Euclidean D2-brane intersecting the $U(4)$ stack twice. The fermionic modulini $\tau^i_\alpha$, with $i=1..4$ a $U(4)$ index and $\alpha=1,2$ an $Sp(2)$ index, couple through</p>
+<p>$$
+\mathcal L_{E_2-D6-D6}\sim\tau^i_\alpha\Delta^{c(ij)}\tau^j_\beta\epsilon^{\alpha\beta}
++\tau'^{c\alpha}_i\Delta^{c(ij)}\tau'^{c\beta}_j\epsilon_{\alpha\beta},
+$$</p>
+<p>and integrating the eight modulini out gives the four-$\Delta^c$ term. The suppression scale is</p>
+<p>$$
+M_0\sim M_Se^{+S_{E_2}},
+$$</p>
+<p>where $S_{E_2}$ is the complexified volume of the three-cycle the instanton wraps. <strong>The paper stresses that $M_0$ is larger than $M_S$, and can be much larger</strong>: the term is non-renormalisable, so the exponential suppresses the operator rather than enhancing it. For small cycles $e^{S_{E_2}}\simeq1$ and $M_0\simeq M_S$; for $M_S=1$–$10$ TeV, $M_0$ can still reach $10^{13}$ GeV if $e^{S_{E_2}}=10^{10}$.</p>
+<h3 id="the-sextet-interaction-and-the-two-masses">The Sextet Interaction and the Two Masses</h3>
+<p>After $SU(4)\to SU(3)\times U(1)_{B-L}$ the decuplet splits as $10\to(6_{2/3},3_{-2/3},1_{-2})$, written $\Delta_6$, $T_3$, $S$. With $\langle S\rangle=v_{B-L}$ the four-$\Delta^c$ term produces</p>
+<p>$$
+\frac{v_{B-L}}{M_0}\,\epsilon^{SU(3)}_{ijk}\epsilon^{SU(3)}_{i'j'k'}\Delta_6^{c\,ii'}\Delta_6^{c\,jj'}\Delta_6^{c\,kk'},
+$$</p>
+<p>and, by the same term with the $SU(2)_R$-charged components, the cubic $\Delta^c_6\Delta^c_6S$ together with the neutrino mass</p>
+<p>$$
+m_N\sim\frac{v_R\,v_{B-L}}{M_2},
+\qquad\text{e.g. } m_N\simeq10^{12}\ \mathrm{GeV}\ \text{ for } v_R\simeq M_2,\ v_{B-L}\simeq10^{12}\ \mathrm{GeV},
+$$</p>
+<p><strong>where $m_N$ is the neutrino mass and not the neutron's</strong> — the paper's symbol collides with the standard one, and the neutron's mass is written nowhere; the neutron's new mass is $\Delta B=2$ and enters only through $G_{n\bar n}$ below.</p>
+<p><strong>The two masses have one origin.</strong> The neutrino Majorana mass and the neutron Majorana mass come from the same quartic term; the first is the singlet component, the second the sextet component. The paper says the generation of one is connected to the generation of the other.</p>
+<h3 id="neutronantineutron-oscillation">Neutron–Antineutron Oscillation</h3>
+<p>The operator</p>
+<p>$$
+W_{\Delta B=2}=\frac{1}{M_0}\,\epsilon^{ijkl}\epsilon^{i'j'k'l'}\,u^c_id^c_jd^c_k\nu^c_l\,u'^c_{i'}d'^c_{j'}d'^c_{k'}\nu'^c_{l'}
+$$</p>
+<p>with $S_{\nu^c\nu^c}\equiv\Delta^c_{\nu^c\nu^c}$ gives, through the diagram with two sextets, a gluino and squarks, the effective coupling</p>
+<p>$$
+G_{n\bar n}\simeq\frac{g_3^2}{16\pi}\,\frac{f_{11}^2\,v_{B-L}^2}{M^2_{\Delta_{u^cu^c}}M^2_{\Delta_{d^cd^c}}M_{SUSY}M_0},
+\qquad f_{11}=\frac{\tilde f_{11}v_R}{M_2},
+$$</p>
+<p>where $\tilde f_{11}$ are the Yukawa couplings in $\tilde f_{11}v_RQ^cQ^c\Delta^c/M_2$. $\Delta B=2$ is allowed and $\Delta B=1$ is forbidden: the conclusions state that no $|\Delta B|=1$ processes arise, so no fast proton decay.</p>
+<p><strong>Only $G_{n\bar n}$ is fixed, and it fixes a combination of four scales.</strong> A rate in the window testable next, corresponding to an operator scale of $300$–$1000$ TeV, can be obtained with very different choices of $M_0$, the sextet masses, $M_{SUSY}$ and $v_{B-L}$.</p>
+<h3 id="the-branches">The Branches</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>branch</th>
+<th>$M_0$</th>
+<th>sextet mass</th>
+<th>what it looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GUT-like</td>
+<td>$10^{19}$ GeV, or $10^{13}$ GeV with $e^{S_{E_2}}\sim1$</td>
+<td>$\sim1$ TeV</td>
+<td>like the $SO(10)$ scenario; sextets at the LHC, FCNC in meson mixing</td>
+</tr>
+<tr>
+<td>intermediate</td>
+<td>$M_0\simeq10^{13}$ GeV with $M_S\simeq1$–$10$ TeV</td>
+<td>TeV</td>
+<td>hierarchy problem of the Higgs softened; $Z'$ at the TeV scale</td>
+</tr>
+<tr>
+<td>post-sphaleron</td>
+<td>$M_0\simeq M_S\simeq10$ TeV</td>
+<td>$\gg$ TeV, from closed-string fluxes</td>
+<td>sextets out of LHC reach, FCNC suppressed, baryogenesis after the sphalerons</td>
+</tr>
+</tbody>
+</table></div>
+<p>The paper notes that $M_S$ can be as high as $10^{19}$ TeV (as printed) or as low as a few TeV, and that $M_S=1$–$10$ TeV removes the Higgs hierarchy problem.</p>
+<h3 id="the-exoticon">The Exoticon</h3>
+<p>$S$ need not take an expectation value. $U(1)_{B-L}$ can be broken dynamically by the instantons instead, and then $S$ survives as a light scalar coupled to the three sextets with strength $\mu_S$, with $v_{B-L}$ replaced by $\mu_S$ in $G_{n\bar n}$. The paper names it an <strong>exoticon</strong> and states two differences from a Majoron. It carries $B-L=-2$, so $n\to\bar n+S$ does not violate $B-L$; and the Majoron relation between mass and neutrino coupling, $g_{\phi\nu\nu}=m_\nu/v_L$, does not hold for it, so its couplings are not tied to the neutrino mass matrix. The phenomenology is</p>
+<ul>
+<li><strong>In vacuum</strong> CPT forbids $n\to\bar n+S$, because $m_n=m_{\bar n}$.</li>
+<li><strong>In a nucleus</strong> the transition is allowed and is followed by annihilation, $(Z,A)\to(Z,A-2)+3\pi$, with width $\Gamma\simeq(\delta m/\mu_S)^2\langle\Delta E\rangle$ and $\langle\Delta E\rangle\simeq10$–$100$ MeV. The existing bound $\Gamma^{-1}_{n\bar n}\sim10^{-32}$ yr gives $\mu_S>10^{30}\delta m\simeq$ keV.</li>
+<li><strong>Nucleon disappearance</strong> $nn\to S$, with $\Delta B=2$, gives $\Gamma\sim\kappa_{np}M_{n\bar n}^{-3}m_N^{14}G_{n\bar n}$ GeV, with $\kappa_{np}\sim10^{-6}$ for the hadronic correction, and an estimated lifetime of order $10^{40}$ yr.</li>
+<li><strong>Neutrinoless double beta decay with an exoticon</strong> does not violate lepton number, so the violation is only apparent; the bound is $(m_\nu/\mu_S)<10^{-5}$, that is $\mu_S>10$ keV. Supernova cooling through $\nu\to\nu^cS$ gives a competitive bound.</li>
+</ul>
+<h3 id="dark-matter-math136-and-d-parity">Dark Matter, $Z'$ and D-Parity</h3>
+<p>The model supplies dark matter candidates that minimal non-supersymmetric left–right models lack: neutralini and Stückelberg axini, called stückelini, mixed with each other, as WIMPs. The anomalous $U(1)$ gives the $Z'$ a Stückelberg mass, $m_{Z'}\simeq10^{-4}M_S$ to $M_S$, that is $1$–$10$ TeV for $M_S\simeq10$–$10^3$ TeV; the generalised Chern–Simons terms give the decay $Z'\to Z\gamma$, and the paper suggests $B\to\ell^+\ell^-\ell'^+\ell'^-K$ suppressed with respect to $B\to\ell^+\ell^-K$ as a signature.</p>
+<p>On D-parity the paper is explicit. D-parity, $D_P=\Gamma_7\gamma_5$, is a symmetry when $g_L=g_R$; it is the automorphism exchanging the two $SU(2)$ and conjugating $SU(4)$ representations, and it is a symmetry of $SO(10)$ breaking to Pati–Salam. <strong>In a string model it is not a symmetry</strong>: the gauge couplings depend on the sizes of the cycles the branes wrap, and unless the blow-up modes are tuned those sizes differ, so one can have $g_L\neq g_R$ at the string scale. The paper uses this: a CMS excess in $pp\to\ell_1\ell_2jj$ near $3\sigma$, read as $pp\to W_R\to\ell_1N_R\to\ell_1\ell_2W_R^*\to\ell_1\ell_2jj$, requires $g_R(M_{W_R})\simeq0.6\,g_L(M_{W_R})$ with $1.8\ \mathrm{TeV}<M_{W_R}<2.4$ TeV, and that is incompatible with a D-parity-preserving $SO(10)$ but natural here.</p>
+<p>The paper's stated falsification pattern is a combination of neutron–antineutron experiments, FCNC, LHC and dark matter searches; it also notes that $n\bar n$ at $10^{10}$ s together with left–right restoration at the TeV scale is possible here and not in the Babu–Mohapatra $SO(10)$ model, because $\langle S\rangle\neq\langle\varphi_{RR}\rangle$ in general.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-a-majorana-mass-for-the-neutron-and-the-corpuss-declared-gap">1. A Majorana mass for the neutron, and the corpus's declared gap</h3>
+<p><strong>The idea.</strong> The neutron acquires a mass term of the form $\delta m\,n^Tn+\text{h.c.}$, of baryon number two, generated by a four-sextet operator. The oscillation $n\leftrightarrow\bar n$ follows with a rate set by one effective coupling, and the classification of what is allowed and forbidden is: $\Delta B=2$ yes, $\Delta B=1$ no.</p>
+<p><strong>What it would add.</strong> An object the corpus declares unreachable. <code>articles_physics/the-neutron-in-biquaternionic-form.md</code> lists in its accounting table <em>"Baryon number — Outside — not a framework quantum number"</em> and <em>"Lifetime / beta decay — Outside"</em>. A Majorana mass for the neutron is the one neutron property that is a statement about the field and not about the composite: it is a self-conjugate pairing, the same algebraic object as the neutrino's, applied to a neutral spin-$\tfrac12$ field of a different carrier.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-neutron-in-biquaternionic-form.md</code> for the field, and <code>articles_physics/the-majorana-equation-in-biquaternionic-form.md</code> for the pairing. The corpus's Majorana articles treat the neutrino only; a search of the two files for "neutron" returns nothing.</p>
+<p><strong>What stands in the way.</strong> The neutron is neutral, so the corpus's charge operator does not forbid the pairing — that much can be said inside the algebra. But the operator that generates it in the paper is colour-carrying, and the corpus's neutron article states that colour, constituents and confinement are all outside. So the importable content is a one-line statement and not a derivation: <em>a neutral spin-$\tfrac12$ field admits a Majorana pairing; only the proton's charge forbids one for the proton</em>. The corpus would have to record it as a reading, with baryon number still outside.</p>
+<h3 id="2-math170-at-the-string-scale-d-parity-is-not-automatic">2. $g_L\neq g_R$ at the string scale: D-parity is not automatic</h3>
+<p><strong>The idea.</strong> D-parity, the exchange $SU(2)_L\leftrightarrow SU(2)_R$ combined with conjugation on $SU(4)$, is a symmetry only when $g_L=g_R$. In $SO(10)$ it is automatic. In a string model the two couplings are the volumes of the cycles the two stacks wrap, so $g_L\neq g_R$ is generic, and the ratio is a free parameter. The paper's application: the CMS $pp\to\ell_1\ell_2jj$ excess, read as $W_R$ production, needs $g_R\simeq0.6\,g_L$ with $M_{W_R}$ between $1.8$ and $2.4$ TeV.</p>
+<p><strong>What it would add.</strong> A quantified objection to an assumption the corpus marks as an assumption.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, whose table of derivations ends with the row <em>"$g_3=g_L=g_R$ at $M_{PS}$ — assumed, and tested only by the consequence $\sin^2\theta_W=\tfrac38$"</em>. The corpus also computes that the $\tfrac38$ route gives $0.31$ against $0.231$, a failure of $36\%$. A free ratio $g_R/g_L$ is one more parameter that could relieve that failure, and the corpus's ledger does not list it among the remedies it names (extra matter, threshold corrections, supersymmetry).</p>
+<p><strong>What stands in the way.</strong> The corpus's $g_3=g_L=g_R$ is forced by the algebra: the two triplets are $L_{\vec e_a}$ and $R_{\vec e_a}$ of one unit vector, so their couplings are the same number by construction. Introducing $g_R\neq g_L$ means the two-sided product carries two coupling constants, which is a change to the corpus's gauge construction and not a parameter. That is a large price, and it should be stated as a price before the idea is entertained.</p>
+<h3 id="3-two-different-sixes-and-only-one-of-them-is-in-the-corpus">3. Two different sixes, and only one of them is in the corpus</h3>
+<p><strong>The idea.</strong> The paper's sextet is the $\mathbf6$ inside the $\mathbf{10}$ of $SU(4)$, that is the symmetric square $\mathrm{Sym}^2(\mathbf4)$, a scalar diquark coupling to $qq$. The corpus's six is the $\mathbf{3}+\bar{\mathbf3}$ inside the adjoint, the leptoquark block of $15=8+1+6$, a vector coupling to $q\ell$.</p>
+<p><strong>What it would add.</strong> A distinction the corpus needs. Two objects both called "the six of $SU(4)$" sit in different representations of the same group, carry different $B-L$, and couple to different fermion pairs. The corpus's Pati–Salam article discusses the leptoquarks and their $K_L\to\mu e$ bound in detail and never mentions the symmetric square.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, in the section that decomposes $15=8+1+6$. The addition is one paragraph and one row: $\mathbf{10}=\mathrm{Sym}^2(\mathbf4)$, its splitting $10\to(6_{2/3},3_{-2/3},1_{-2})$ under $SU(3)\times U(1)_{B-L}$, and the statement that its sextet is real (a diquark) where the adjoint's six is complex (a leptoquark).</p>
+<p><strong>What stands in the way.</strong> The corpus's carrier is four-dimensional, so $\mathrm{Sym}^2$ of it is ten-dimensional and available as a space. But the corpus has no article on the symmetric square of the carrier, and the corpus's own account says the algebra supplies the carrier and the product, not the multilinear constructions on it. This is a genuine construction the corpus would have to add.</p>
+<h3 id="4-the-exponential-and-the-dimension-of-the-operator">4. The exponential and the dimension of the operator</h3>
+<p><strong>The idea.</strong> The same instanton gives a mass term of dimension three in the superpotential and a four-field term of dimension five. The mass comes out as $M_S e^{-S}$, the four-field term as $e^{-S}/M_S$, that is $1/M_0$ with $M_0=M_Se^{+S}$. <strong>The exponent's sign in the <em>scale</em> is not a convention: it follows from the dimension of the operator the instanton multiplies.</strong> The paper states the rule for the non-renormalisable case explicitly — $M_0$ is above $M_S$ because the term is non-renormalisable.</p>
+<p><strong>What it would add.</strong> A rule the corpus will need if it ever uses a non-perturbative scale, and one that prevents a mistake: "instanton masses are exponentially small" is true only for operators of low dimension.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code>, Open Question 2, and the corresponding idea in the conversion of 1510.00243, where the mass term is written $M_{ab}=Y_{ab}M_Se^{-S_{E_2}}$. <strong>The two papers of the same authors are consistent once the dimension is counted</strong>, and recording that removes an apparent contradiction between them.</p>
+<p><strong>What stands in the way.</strong> Nothing conceptual. The corpus has no instanton at all, so the rule is forward-looking: it is worth one paragraph in the corpus's section on non-perturbative objects, if such a section is ever written.</p>
+<h3 id="5-a-light-scalar-carrying-math217-the-exoticon-is-not-a-majoron">5. A light scalar carrying $B-L=-2$: the exoticon is not a Majoron</h3>
+<p><strong>The idea.</strong> If $S$ does not take an expectation value, it survives as a light scalar of $B-L=-2$ coupled to the sextets. Two statements separate it from a Majoron: the Majoron relation $g_{\phi\nu\nu}=m_\nu/v_L$ fails, so its couplings are not fixed by the neutrino masses; and CPT forbids $n\to\bar n+S$ in vacuum, because $m_n=m_{\bar n}$, while in a nucleus the transition runs at $\Gamma\simeq(\delta m/\mu_S)^2\langle\Delta E\rangle$ with $\langle\Delta E\rangle\simeq10$–$100$ MeV.</p>
+<p><strong>What it would add.</strong> A worked example of a light pseudo-Goldstone whose couplings are <em>not</em> tied to the symmetry-breaking scale, and a sharp statement of what CPT does and does not protect: it protects the vacuum channel and not the nuclear one.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.md</code> and <code>articles_physics/the-lagrangian-and-the-axion.md</code>. Both articles treat the axion as the central phase with a shift symmetry and a potential, and the corpus's axion is defined by the relation between its mass and its coupling. A second kind of light scalar, with no such relation, is a distinction the corpus does not draw.</p>
+<p><strong>What stands in the way.</strong> The corpus's light scalar is the central phase, and the central phase commutes with everything, so it cannot carry $B-L$. A $B-L$-carrying scalar is a module element and not a central one. The import is therefore a distinction of kinds, and the corpus can state it without adopting the quiver.</p>
+<h3 id="6-post-sphaleron-baryogenesis-with-the-sextets-above-the-colliders">6. Post-sphaleron baryogenesis with the sextets above the colliders</h3>
+<p><strong>The idea.</strong> In the branch $M_0\simeq M_S\simeq10$ TeV, the sextets are far above the LHC and the FCNC bounds are satisfied without tuning, while the same $G_{n\bar n}$ stays in the testable window by the compensation of $M_0$, $M_{SUSY}$ and $v_{B-L}$. Baryogenesis then proceeds after the sphalerons, through the sextets, and the neutron–antineutron rate is a surviving trace of it.</p>
+<p><strong>What it would add.</strong> A third route to the asymmetry, alongside the leptogenesis route of 1510.00243, in a corpus that has no baryogenesis at all beyond the sphaleron's negative statement.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.md</code>, which states that the Standard Model fails on baryogenesis and that the sphaleron forbids its own use. This paper's scenario is precisely the "use a new source after the sphalerons" answer, and the corpus's article names no such answer.</p>
+<p><strong>What stands in the way.</strong> The scenario needs the sextets, the discrete symmetry and a cosmology — the corpus has none of the three. The honest verdict is that the idea is a target, not an import.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$G_{224}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ and the breaking to the Standard Model: in the Pati–Salam article.</li>
+<li>The $B-L$ charge assignment and $\operatorname{tr}_{\mathbf4}(B-L)=0$: in the Pati–Salam article.</li>
+<li>The Stückelberg mass for an anomalous abelian factor: <strong>not</strong> in the corpus; recorded as idea 3 of the 1510.00243 conversion. Here it appears as a secondary use, and it is not counted twice.</li>
+<li>The $Z_R$ boson and its mixing: in the Pati–Salam article's boson table.</li>
+</ul>
+<h3 id="one-tension-recorded">One tension recorded</h3>
+<p>The CMS excess in $pp\to\ell_1\ell_2jj$ that this paper reads as $W_R$ production, with $g_R\simeq0.6\,g_L$ and $M_{W_R}\simeq1.8$–$2.4$ TeV, has not survived in later data. The conversion records it as the paper states it; it is a 2015 argument and not a standing measurement. No corpus article rests on it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

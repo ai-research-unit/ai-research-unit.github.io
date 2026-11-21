@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exotic See-Saw Mechanism for Neutrinos and Leptogenesis in a Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/futur/Pati-Salam/Addazi - Exotic see-saw mechanism for neutrinos and leptogenesis in a Pati-Salam model -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="exotic-see-saw-mechanism-for-neutrinos-and-leptogenesis-in-a-patisalam-model"><strong>Exotic See-Saw Mechanism for Neutrinos and Leptogenesis in a Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1510.00243 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Andrea Addazi, Massimo Bianchi, Giulia Ricciardi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 7 February 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Addazi - Exotic see-saw mechanism for neutrinos and leptogenesis in a Pati-Salam model - 1510.00243-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/futur/Pati-Salam/Addazi - Exotic see-saw mechanism for neutrinos and leptogenesis in a Pati-Salam model - 1510.00243.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/futur/Pati-Salam/Addazi - Exotic see-saw mechanism for neutrinos and leptogenesis in a Pati-Salam model - 1510.00243.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper builds a Pati–Salam-like model on unoriented intersecting D-branes and computes its neutrino sector. The right-handed Majorana masses are generated by Euclidean D2-branes, called exotic instantons, rather than by a symmetry-breaking vacuum expectation value; the authors name the resulting mechanism the <em>exotic see-saw</em>. Because the non-perturbative term dominates, the right-handed spectrum becomes compact and degenerate, above the Davidson–Ibarra bound, and eleven measured inputs then fix the four unknown neutrino parameters. The paper computes the baryon asymmetry through flavour-resolved leptogenesis and finds it of the observed size for one sign of the Dirac phase. It also predicts neutron–antineutron oscillation, with a proton-stabilising discrete symmetry that forbids $\Delta B=1$ and allows $\Delta B=2$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-quiver">The Quiver</h3>
+<p>The gauge group in the low-energy limit is $U(4)\times Sp(2)_L\times Sp(2)_R$. The $U(4)$ comes from a stack of four D6-branes and its image under the orientifold $\Omega$; $Sp(2)_{L,R}$ come from two stacks of two D6-branes lying on the $\Omega^+$-plane; three Euclidean D2-branes on the same plane give three $O(1)$ exotic instantons $E_2$, $E_2'$, $E_2''$. $Sp(2)$ is $SU(2)$; the symplectic groups, and the $U(4)$ instead of $SU(4)$, are what the orientifold allows, not a choice. Quarks and leptons are open strings from the $U(4)$ stack to the $Sp(2)_{L,R}$ stacks, so $F_L\equiv(\mathbf4,\mathbf2_L)$ and $F_R\equiv(\mathbf4^*,\mathbf2_R)$. The bidoublet $h_{LR}=(\mathbf2,\mathbf2,1)$ holds the standard Higgs.</p>
+<p>The breaking chain is</p>
+<p>$$
+U(4)\times Sp(2)_L\times Sp(2)_R
+\;\xrightarrow{\ \langle St\rangle\ }\;
+SU(4)\times Sp(2)_L\times Sp(2)_R
+\;\xrightarrow{\ \langle \bar H\rangle,\langle H\rangle,\langle h\rangle\ }\;
+SU(3)\times Sp(2)_L\times U(1)_Y ,
+$$</p>
+<p>followed by electroweak breaking from $\langle h_{LR}\rangle$. The $U(1)_4$ inside $U(4)$ is anomalous; a generalised Green–Schwarz mechanism cancels the anomaly and the $Z'$ gets its mass from a Stückelberg term, with no scalar. The fields that break $SU(4)\times SU(2)_R$ are $\bar H(\bar{\mathbf4},1,2)=(u^c_R,d^c_R,e^c_R,\nu^c_R)$ and $H(\mathbf4,1,2)$, whose vacuum expectation values sit on the sneutrino components, $\langle\bar H\rangle=\langle\nu^c_R\rangle$ and $\langle H\rangle=\langle\bar\nu^c_R\rangle$. The decuplet $\Delta=(\mathbf{10},1,1)$ splits as $\Delta^c=\Delta^c_{\mathbf6}+T^c+S^c$, with $\Delta_{\mathbf6}=\mathbf6_{Y=+2/3}$, $T=\mathbf3_{Y=-2/3}$, $S=\mathbf1_{Y=-2}$; $\langle S\rangle$ breaks $U(1)_{B-L}$.</p>
+<h3 id="the-exotic-instanton-and-the-exotic-see-saw">The Exotic Instanton and the Exotic See-Saw</h3>
+<p>The two instantons $E_2'$ and $E_2''$ intersect the $U(4)$ stack twice and generate the quartic superpotential</p>
+<p>$$
+W_{E_2',E_2''}=
+\frac{Y'^{(1)}_{ijkl\,i'j'k'l'}}{M'}\,
+\Delta_{ii'}\Delta_{jj'}\Delta_{kk'}\Delta_{ll'}
++
+\frac{Y''^{(1)}_{ijkl\,i'j'k'l'}}{M''}\,
+\Delta^c_{ii'}\Delta^c_{jj'}\Delta^c_{kk'}\Delta^c_{ll'} ,
+$$</p>
+<p>after integration over the fermionic modulini at the intersections. The dynamical scales are $M'=Y'^{(1)}M_S e^{S_{E_2'}}$ and $M''=Y''^{(1)}M_S e^{S_{E_2''}}$ (<strong>the paper prints the sign of the exponent as $+$ here and as $-$ in the neutrino mass below; the two occurrences are not reconciled in the text</strong>), with $S_{E_2}$ the volume of the three-cycle wrapped in the Calabi–Yau, in string units.</p>
+<p>The $E_2$ instanton then generates the right-handed Majorana mass</p>
+<p>$$
+W_{E_2}=\tfrac12 M_{ab}N_{Ra}N_{Rb},
+\qquad
+M_{ab}=Y^{(0')}_{ab}M_S\,e^{-S_{E_2}} ,
+$$</p>
+<p>and the total right-handed mass matrix is the sum of a perturbative and a non-perturbative part,</p>
+<p>$$
+M_R=M_R^P+M_R^{E_2},
+\qquad
+M_R^P=\frac{\langle\phi_{RR}\rangle\langle S^c\rangle}{M_2},
+\qquad
+M_R^{E_2}=M_{ab} .
+$$</p>
+<p>The see-saw is therefore</p>
+<p>$$
+m_\nu\simeq -\,m_D\left(M_R^P+M_R^{E_2}\right)^{-1}m_D .
+$$</p>
+<p>The authors assume the non-perturbative part dominates, element by element, $M_R^{E_2}\gg M_R^P$. Then $M_{ab}$ is of order $M_S e^{-S_{E_2}}$ for all three generations, the spectrum is nearly degenerate, and it sits in the range $10^{9}$–$10^{13}$ GeV that leptogenesis needs. The degeneracy of $M_2$ and $M_3$ is lifted, the authors state, when the compactness condition below is satisfied only approximately. This is the paper's central claim: <strong>the heavy scale of the see-saw is a non-perturbative exponential, not a symmetry-breaking scale, and it is the same exponential for all three generations.</strong></p>
+<h3 id="the-dirac-sector-and-quarklepton-symmetry">The Dirac Sector and Quark–Lepton Symmetry</h3>
+<p>Electroweak breaking by $\langle h_{LR}\rangle$ gives, at tree level,</p>
+<p>$$
+m_d=m_e,
+\qquad
+m_u=m_D,
+\qquad
+V_L=V_{\mathrm{CKM}} ,
+$$</p>
+<p>where $m_D$ is the Dirac neutrino mass matrix and $V_L$ the unitary matrix diagonalising it. The neutrino Dirac hierarchy is thus the up-quark hierarchy, and its mixing is the quark mixing. These relations hold at the Pati–Salam scale; renormalisation between that scale and $m_Z$ is not computed.</p>
+<h3 id="inverting-the-see-saw-the-compact-spectrum">Inverting the See-Saw: the Compact Spectrum</h3>
+<p>With $m_D=m_D^T$, the see-saw inverts:</p>
+<p>$$
+M_R\simeq -\,m_D\,m_\nu^{-1}\,m_D .
+$$</p>
+<p>Writing $m_D=V_L^{\dagger}\,m_D^{\mathrm{diag}}\,V_L^{*}$ and defining the symmetric matrix</p>
+<p>$$
+A=V_L^{*}\,m_\nu^{-1}\,V_L^{\dagger},
+$$</p>
+<p>equivalently $A=\left(V_LU_{PMNS}^{*}\right)^{*}\left(m_\nu^{\mathrm{diag}}\right)^{-1}\left(V_LU_{PMNS}^{*}\right)^{\dagger}$, the six independent elements of $M_R$ are given explicitly in the paper (its equation 21) as sums of $A_{ij}V_{L\,ia}^{*}V_{L\,jb}^{*}m_{Da}m_{Db}$.</p>
+<p>Assuming the quark-like hierarchy $m_{D1}\ll m_{D2}\ll m_{D3}$, the right-handed spectrum is compact when the entries multiplying $A_{23}$ and $A_{33}$ are suppressed:</p>
+<p>$$
+A_{23}=A_{33}=0 .
+$$</p>
+<p>This is the approximation that makes the model predictive: it turns two complex conditions into two real relations among observables.</p>
+<h3 id="free-parameters-and-predictions">Free Parameters and Predictions</h3>
+<p>Before the assumption, the neutrino sector has $22$ free parameters; under non-perturbative dominance, $13$:</p>
+<p>$$
+N_{\mathrm{f.p.}}\simeq n_{Y^{0}}+n_{Y^{0'}}+n_{E_2}=6+6+1=13 .
+$$</p>
+<p>Eleven measured quantities are taken as input: $m_u$, $m_c$, $m_t$ at $\Lambda=10^9$ GeV, $\Delta m^2_{21}$, $\Delta m^2_{31}$, the three CKM angles and phase, and the three PMNS angles, with $\theta_{13}\neq0$ at its best-fit value. The two real conditions from $A_{23}=A_{33}=0$ then determine the remaining unknowns. The inputs used are $m_u=0.00067$ GeV, $m_c=0.327$ GeV, $m_t=99.1$ GeV, $\Delta m^2_{21}=11.71\times10^{-5}$ eV$^2$, $\Delta m^2_{31}=3.84\times10^{-3}$ eV$^2$, $\theta'_{12}=13.03^\circ$, $\theta'_{23}=2.37^\circ$, $\theta'_{13}=0.24^\circ$, $\delta'=1.19$ rad, $\theta_{12}=33.5^\circ$, $\theta_{23}=42.3^\circ$, $\theta_{13}=8.5^\circ$, with the mass-squared differences run to $10^9$ GeV by a factor $r^2$, $r=1.25$.</p>
+<p>For $(\theta_{12},\theta_{23})=(-|\theta_{12}|,-|\theta_{23}|)$:</p>
+<p>$$
+m_1\simeq 2.5\times10^{-3}\ \mathrm{eV},\quad
+\delta\simeq\pm0.6,\quad
+\alpha\simeq\mp1.4,\quad
+\beta\simeq\mp0.9 ,
+$$</p>
+<p>and</p>
+<p>$$
+M_1\simeq3.5\times10^{9}\ \mathrm{GeV},\qquad
+M_2\simeq M_3\simeq8.7\times10^{9}\ \mathrm{GeV} .
+$$</p>
+<p>The four unknown low-energy parameters are therefore predicted, and the right-handed masses with them. The authors state that the sign of $\delta$ is decided by leptogenesis, not by the neutrino fit, because both signs give acceptable $m_1$ and $M_i$.</p>
+<h3 id="leptogenesis">Leptogenesis</h3>
+<p>In the basis where $M_R$ is diagonal, the CP asymmetry in $N_i\to\ell_\alpha$ is</p>
+<p>$$
+\varepsilon_{i\alpha}=\frac{1}{8\pi v^{2}}
+\sum_{k\neq i}
+\frac{\operatorname{Im}\left[\hat m_D^{\dagger}{}_{i\alpha}(\hat m_D)^{\dagger}_{\alpha k}(\hat m_D^{\dagger}\hat m_D)_{ik}\right]}{(\hat m_D^{\dagger}\hat m_D)_{ii}}
+\,f^{V}_{ik}\!\left(\frac{M_k^2}{M_i^2}\right)
++\ \text{(the lepton-flavour-violating wave term)} ,
+$$</p>
+<p>with $v=174$ GeV, $\hat m_D=m_DW^{*}$, one-loop functions $f^{V}$ and $f^{LC}$ given explicitly, and total width $\Gamma_i=M_i(\hat m_D^{\dagger}\hat m_D)_{ii}/(8\pi v^{2})$. The washout parameters are</p>
+<p>$$
+\tilde m_i=\frac{(\hat m_D^{\dagger}\hat m_D)_{ii}}{M_i},
+\qquad
+\tilde m_1\simeq7.6\times10^{-2}\ \mathrm{eV},
+\quad
+\tilde m_2\simeq\tilde m_3\simeq565\ \mathrm{eV},
+$$</p>
+<p>with flavour projectors $P_{i\alpha}=|\hat m_{D\,i\alpha}|^{2}/(\hat m_D^{\dagger}\hat m_D)_{ii}$: $P_{1e}\simeq0.02$, $P_{1\mu}\simeq0.42$, $P_{1\tau}\simeq0.56$. The flavour mixing matrix $A$ and the vector $C=-\frac{1}{358}(37,52,52)$ are taken from the literature. Solving the Boltzmann equations numerically and using</p>
+<p>$$
+Y_{\Delta B}=\frac{28}{79}\sum_\alpha Y_{\Delta_\alpha},
+$$</p>
+<p>the authors find</p>
+<p>$$
+Y_{\Delta B}\simeq 2.19\times10^{-10}
+\quad\text{against}\quad
+Y_{\Delta B}^{\mathrm{P/WMAP}}=(8.58\pm0.22)\times10^{-11} .
+$$</p>
+<p>The sign of $\delta$ selects the sign of the asymmetry: $\delta>0$ gives $+2.19\times10^{-10}$, $\delta<0$ gives $-0.23\times10^{-11}$. The second solution is discarded, so <strong>the model prefers $\delta>0$</strong>, a prediction for the next oscillation analyses. The authors note that the asymmetry is more sensitive to the input parameters than $m_1$ or $M_i$ are.</p>
+<h3 id="neutronantineutron-oscillation">Neutron–Antineutron Oscillation</h3>
+<p>The same instantons preserve a discrete symmetry $Z_2^{(\Delta B,\Delta L=1)}$: operators with $\Delta B=1$ are forbidden and operators with $\Delta B=2$ are allowed. The proton is therefore stable against the dangerous $\Delta B=1$ operators, while the neutron acquires a Majorana mass through the sextets $\Delta_{\mathbf6}$ contained in $\Delta^c$. The authors note that $\Delta B=2$ operators can still destabilise the proton once $\Delta L=1$ mixing terms are included, and they suppress those terms by a scale above $M_S$. The effective operator</p>
+<p>$$
+\frac{1}{\Lambda_{n\bar n}^{5}}\,(u^cd^cd^c)^2
+$$</p>
+<p>with</p>
+<p>$$
+\Lambda_{n\bar n}^{5}\simeq
+M_{E_2}M_{\Delta_{u^cu^c}}^{2}M_{\Delta_{d^cd^c}}^{2}
+\frac{M_{SUSY}}{v_{B-L}}
+$$</p>
+<p>can be as low as $\Lambda\simeq1000$ TeV, which the authors quote as vacuum transitions with $\tau_{n\bar n}\simeq100$ yr (as printed), that is $10^{-33}\,\tau_{p\text{-decay}}$. The FCNC bounds on the sextets are quoted as $M_{\Delta_{u^cu^c}}\simeq M_{\Delta_{d^cd^c}}>100$ TeV, stronger than the LHC ones and needed to keep the operators out of reach of meson mixing. The authors add a speculative note: a modulus-dependent coupling growing between the electroweak epoch and the present would evade the BBN bound.</p>
+<h3 id="falsification-and-the-price">Falsification and the Price</h3>
+<p>The model needs $M_{SUSY}\simeq M_S\gtrsim10^9$ GeV, so that supersymmetric particles do not contribute to right-handed neutrino decays. Supersymmetry or left–right symmetry at the LHC would therefore rule the model out. The left–right scale must satisfy $v_R\gtrsim10^9$ GeV with $v_{1,2}<v_R$, and $M_{F2}\gg10^9$ GeV for the non-perturbative dominance assumed; these are stated as natural for closed-string fluxes near the string scale. The geometric origin of the compact spectrum is the mixed-disk amplitude of the instanton with the three D6-brane stacks, which the authors say gives the same order of magnitude for the three generations without tuning.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank below is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-heavy-see-saw-scale-as-a-non-perturbative-exponential">1. The heavy see-saw scale as a non-perturbative exponential</h3>
+<p><strong>The idea.</strong> The Majorana mass of the right-handed neutrino is $M_{ab}=Y_{ab}M_Se^{-S_{E_2}}$, where $S_{E_2}$ is the volume of a wrapped three-cycle. Three consequences follow at once. The heavy scale is not a vacuum expectation value, so it is not tied to the left–right breaking scale. All three generations share one exponential, so the spectrum is degenerate by construction. And a hierarchy of five decades between $M_S$ and $M_R$ needs a volume of order ten, not a small coupling.</p>
+<p><strong>What it would add.</strong> A mechanism for an object the corpus names but does not produce.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code>. Its Open Questions 2 is exactly this: <em>"The origin of the heavy scale. Nothing in the framework fixes $M_R$ or explains why a heavy gauge singlet should exist. Whether the framework can relate the scale to a geometric or algebraic quantity is open."</em> The paper's answer is geometric in a sense the corpus does not have: the exponent of a cycle volume, not a length in the algebra.</p>
+<p><strong>What stands in the way.</strong> The mechanism needs a compactification with a Kähler modulus and a wrapped cycle. The corpus has no moduli, no compactification and no $M_S$. What can be imported is the <em>form</em> of the law, a mass $M\propto e^{-V}$, and the corpus would have to supply a volume. That is a real import, not a translation. Note also that the same exponent appears with both signs in the paper, so the normalisation is not settled there either.</p>
+<h3 id="2-the-dirac-mass-identified-with-the-up-quark-mass">2. The Dirac mass identified with the up-quark mass</h3>
+<p><strong>The idea.</strong> At the Pati–Salam scale, $m_D=m_u$, $m_d=m_e$, and the matrix diagonalising $m_D$ is $V_{\mathrm{CKM}}$. The neutrino Dirac hierarchy is the up-quark hierarchy; the large mixing of the PMNS matrix then comes entirely from the heavy sector, through the inversion $M_R\simeq-m_Dm_\nu^{-1}m_D$.</p>
+<p><strong>What it would add.</strong> Two sharp relations the corpus does not have, and an answer to a question the corpus leaves open: why the lepton mixing is large when the quark mixing is small.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.md</code> and <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code>. The first treats the two mass matrices as independent $3\times3$ matrices and counts thirteen parameters; the second treats the PMNS matrix as standard input. Neither relates the two sectors. The corpus's Pati–Salam article adopts the group that makes the relation possible but never states it.</p>
+<p><strong>What stands in the way.</strong> The relation holds at the Pati–Salam scale and is not run down. In the corpus's own numbers, $m_u(m_Z)$ and $m_D(m_Z)$ differ by the running and by the seesaw; the relation has to be stated at a scale. The corpus's Pati–Salam article places $M_{PS}\gtrsim250$ TeV, five decades below the $10^9$ GeV the paper uses, so the running between the two is long.</p>
+<h3 id="3-a-gauge-boson-mass-with-no-scalar-the-stuckelberg-term">3. A gauge-boson mass with no scalar: the Stückelberg term</h3>
+<p><strong>The idea.</strong> The $U(1)_4$ inside $U(4)$ is anomalous. A generalised Green–Schwarz term cancels the anomaly, and the $Z'$ acquires a mass by the Stückelberg mechanism, with no scalar field and no symmetry-breaking vacuum expectation value.</p>
+<p><strong>What it would add.</strong> A fourth way of giving a gauge boson a mass, alongside the Higgs, the confined and the topological routes, in a model where the scalar budget is the corpus's declared failure.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>. Its table of costs records F2: <em>"surviving scalars: none in the minimal sector"</em>, with the twelve components of the scalar sector exactly the twelve broken generators. If a $U(1)$ can be massive without a scalar, one row of that ledger changes. The nearest corpus treatment of anomalies is <code>articles_physics/anomalies-and-anomaly-cancellation-in-biquaternionic-form.md</code>, which turns the four anomaly conditions into identities on the sixteen; it treats the anomaly as a condition to be cancelled and never as a mass for the gauge boson.</p>
+<p><strong>What stands in the way.</strong> The Stückelberg mass needs an anomalous abelian factor and a Green–Schwarz coupling, which come from the string, not from the algebra. In the corpus the group is $SU(4)$, and the anomaly conditions come out as identities, so there is no anomalous abelian factor to mass. The importable kernel is narrower than the paper's use: <em>an anomalous abelian gauge boson can be massive without a physical scalar</em>, which is a statement about the model, not about $\mathbb B$.</p>
+<h3 id="4-the-compact-spectrum-as-the-escape-from-the-davidsonibarra-bound">4. The compact spectrum as the escape from the Davidson–Ibarra bound</h3>
+<p><strong>The idea.</strong> Leptogenesis with hierarchical right-handed neutrinos needs $M_1\gtrsim10^9$ GeV, and the left–right scale in a Pati–Salam model sits below that. The paper's escape is a compact spectrum: when $M_2\simeq M_3\simeq M_1$, the CP asymmetry is enhanced by $M_k^2/M_i^2$ and the bound does not apply. The condition is the one approximation $A_{23}=A_{33}=0$, which is a statement about the light neutrino matrix, not about the heavy one.</p>
+<p><strong>What it would add.</strong> A second constraint that pins the see-saw scale from below, and a demonstration that the constraint is evadable without resonance.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code>. Its section on the Weinberg operator fixes $\Lambda\simeq10^{14}$–$10^{15}$ GeV from $m_\nu=v^2/\Lambda$ alone; it never mentions that leptogenesis puts a <em>lower</em> bound of $10^9$ GeV on the same scale, so the allowed window is much narrower than the article suggests. That is a real gap, and it is independent of the paper's string model.</p>
+<p><strong>What stands in the way.</strong> The Boltzmann machinery is not in the corpus, so the enhancement can be stated and not computed. And the corpus's seesaw article already declares leptogenesis <em>"outside"</em>; importing the bound means importing a cosmology the corpus does not have.</p>
+<h3 id="5-math182-without-math183">5. $\Delta B=2$ without $\Delta B=1$</h3>
+<p><strong>The idea.</strong> The instantons preserve $Z_2^{(\Delta B,\Delta L=1)}$. Operators with one unit of baryon number are forbidden, so the proton survives; operators with two are allowed, so the neutron gets a Majorana mass and $n\bar n$ oscillation proceeds. Proton stability is not automatic in a model whose leptoquarks mediate $qq\to q\ell$ at tree level; it is a property of the discrete symmetry the instantons leave unbroken.</p>
+<p><strong>What it would add.</strong> The missing half of the Pati–Salam ledger. The corpus adopts a group with six leptoquarks and never asks what forbids proton decay.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, which discusses the leptoquarks, the $K_L\to\mu e$ bound and the $M_X=\sqrt2M_{W_R}$ relation, and does not discuss baryon number violation at all. A search of the physics menu returns no article on proton decay.</p>
+<p><strong>What stands in the way.</strong> The discrete symmetry is a property of the quiver, not of the group. The corpus would have to state it as an extra assumption on the model, exactly as it states (A) for the fourth colour, and count it as a second declaration under load. That is a cost, and the corpus's ledger is explicit about such costs.</p>
+<h3 id="6-flavour-resolved-leptogenesis-as-a-computable-map">6. Flavour-resolved leptogenesis as a computable map</h3>
+<p><strong>The idea.</strong> Given $m_\nu$, $m_D$ and $M_R$, the asymmetry is a number: CP asymmetries from the loop functions, washout parameters $\tilde m_i$, flavour projectors $P_{i\alpha}$, three Boltzmann equations, and $Y_{\Delta B}=\frac{28}{79}\sum_\alpha Y_{\Delta_\alpha}$. The map is explicit enough to be recomputed, and its output has a sign that selects $\delta>0$.</p>
+<p><strong>What it would add.</strong> A concrete meaning for the corpus's CP-violating phase. The corpus counts the phase in the CKM and PMNS matrices and leaves the count without a physical consequence.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code>, Open Question 4: <em>"The framework has no CP-violating phase for the heavy sector and no Boltzmann machinery; the question is outside this article."</em></p>
+<p><strong>What stands in the way.</strong> Six coupled differential equations, a flavour basis, and thermal field theory. This is a machinery import of a size the corpus has never taken, and the corpus's articles are algebraic, not numerical. The honest verdict is that the idea is worth recording and not worth importing yet.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$Y=T_{3R}+\tfrac12(B-L)$ and $\operatorname{tr}_{\mathbf4}(B-L)=0$ as the origin of charge quantisation: stated in the Pati–Salam article.</li>
+<li>The sixteen of $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$ with $\nu_R$ as the fourth component of the $\bar{\mathbf4}$: stated there.</li>
+<li>$15=8+1+6$ and the sextet: stated there, as a decomposition of the adjoint, that is of the gauge bosons. The paper's sextet is a scalar in the $\mathbf{10}$ of $SU(4)$, a different object; the corpus does not read it.</li>
+<li>The two-step breaking chain and the leptoquark mass relation: stated there, with $M_{PS}\gtrsim250$ TeV.</li>
+</ul>
+<h3 id="one-tension-recorded">One tension, recorded</h3>
+<p>The paper's leptogenesis picks $\delta\simeq+0.6$ rad ($\approx+34^\circ$). <code>articles_physics/the-pmns-matrix-and-lepton-mixing.md</code> quotes the later global fit as $\delta_{\mathrm{CP}}\approx-130^\circ$. The two numbers are not compared here: the sign of $\delta$ is convention-dependent, and a conversion does not resolve a convention. The comparison is worth making in a review pass, with both parametrisations written out.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
