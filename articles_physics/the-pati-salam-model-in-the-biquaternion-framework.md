@@ -58,7 +58,7 @@ with the two-sided structure of the algebra supplying the second and third facto
 | fermions per family | $15$ | $15$ | none: $\nu_R$ is the fourth component of the $\bar{\mathbf4}$, not an addition |
 | families | $3$ | $3$ | none; no fourth generation |
 | scalars | $4$ real degrees of freedom | $24$: eight and four complex components in a $(\mathbf4,\mathbf1,\mathbf2)$ and a $(\mathbf1,\mathbf2,\mathbf2)$ | a factor $6$, and the sector that genuinely costs |
-| surviving scalars | one Higgs | twelve real: four from the bidoublet, eight from $\Phi$ | $24$ real components against $12$ broken generators, so twelve survive; a light neutral state is among them, and the cost is elsewhere — see below |
+| surviving scalars | one Higgs | twelve real: four from the bidoublet, eight from $\Phi$ | $24$ real components against $12$ broken generators, so twelve survive; **two neutral states mix, and the lighter is the $125$ GeV candidate**, and the cost is elsewhere — see below |
 | scales | one | two | $M_{PS}\gtrsim250$ TeV, a ratio $M_{PS}/M_{Z}\gtrsim2.7\times10^{3}$ |
 | hierarchy | the electroweak scale, unexplained | $M_{PS}$ and $M_{EW}$ both | the same problem, with a new gap to stabilise |
 
@@ -80,9 +80,9 @@ $$
 M_X\gtrsim 2.5\times10^{2}\ \mathrm{TeV},
 $$
 
-which is a lower bound on the new physics and therefore no bound at all on the model's consistency. **Below that scale the two theories are the same theory**: the same group content, the same couplings, the same fields.
+which is a lower bound on the new physics rather than a bound on the model's consistency. **Below that scale the two theories are the same theory**: the same group content, the same couplings, the same fields.
 
-**The bound is not costless, and calling it "no bound" was too generous.** Satisfying $K_L\to\mu e$ requires $M_{PS}$ above $250$ TeV, and every cost of the model grows with $M_{PS}$: the hierarchy $M_{PS}/M_{EW}$ grows, the running in *The Number That Fails* gets worse, and the leptoquarks recede from reach. **The honest statement is that the null result is satisfied for $M_{PS}\gtrsim250$ TeV and that this pushes the model into the region where its other problems are sharpest.** It is a lower bound on the new physics and a lower bound on the model's discomfort.
+**The bound is not costless, and an earlier version of this section called the lower bound a statement with no cost, which was too generous.** Satisfying $K_L\to\mu e$ requires $M_{PS}$ above $250$ TeV, and every cost of the model grows with $M_{PS}$: the hierarchy $M_{PS}/M_{EW}$ grows, the running in *The Number That Fails* gets worse, and the leptoquarks recede from reach. **The honest statement is that the null result is satisfied for $M_{PS}\gtrsim250$ TeV and that this pushes the model into the region where its other problems are sharpest.** It is a lower bound on the new physics and a lower bound on the model's discomfort.
 
 **Agreement with experiment is cheap** — any extension that reduces to the Standard Model agrees with it — so this reason is necessary and not sufficient. It is listed first because a candidate that failed it would need no further discussion, not because it is evidence.
 
@@ -90,13 +90,15 @@ which is a lower bound on the new physics and therefore no bound at all on the m
 
 **3. The Pati–Salam model is fully compatible with the biquaternion algebra formalism, much more than the Standard Model. This is the strongest reason.** *Compatible* here does not mean *not in conflict*, which is cheap and true of any extension. It means that **each of the model's three factors is a structure the algebra's carrier or product already supplies**, while one of the Standard Model's three factors is a group the algebra's own compact action provably cannot carry and another is a factor whose charge table is put in by hand.
 
+**The reason is one of licensing and not of membership.** What matters is not what the algebra *contains* — that is an eight-dimensional space, and a group of twenty-one dimensions cannot be inside it. What matters is what the algebra *supplies*: a carrier of four complex dimensions, a canonical split of that carrier into a line and a three-space, and a two-sided action on it. The model is the group that those three structures license, acting on a formal copy of the carrier. **Stated as membership, the claim would be false; stated as licensing, it is the whole of the argument.**
+
 | group | generators | what supplies it |
 |---|---|---|
 | $\mathrm{SU}(4)$ | $15$ | the unitary group of the carrier, on its four complex dimensions |
-| $\mathrm{SU}(2)_L$ | $3$ | left multiplication, $\{L_{\vec e_a}\}$ — **elements of $\mathbb B$** |
-| $\mathrm{SU}(2)_R$ | $3$ | right multiplication, $\{R_{\vec e_a}\}$ — **elements of $\mathbb B$** |
+| $\mathrm{SU}(2)_L$ | $3$ | left multiplication, $\{L_{\vec e_a}\}$ — **endomorphisms whose parameter is $\vec e_a$** |
+| $\mathrm{SU}(2)_R$ | $3$ | right multiplication, $\{R_{\vec e_a}\}$ — **endomorphisms whose parameter is $\vec e_a$** |
 
-**The precision the slogan needs.** Six of the twenty-one generators are **elements of the algebra** — the two triplets, left and right multiplication. The other fifteen are **the unitary group of the carrier**, which is a group *of* the algebra's action and not *in* the algebra: $\dim_{\mathbb R}\mathbb B=8$, and fifteen does not fit inside eight. So the honest statement is not "twenty-one out of twenty-one live in the algebra" but **"twenty-one out of twenty-one are supplied by the algebra's carrier and product, and six of them are literally algebra elements"** — which is still a stronger claim than the Standard Model can make, and weaker than the slogan suggests. **The distinction matters because the fifteen are the factor that has to be declared**: the carrier is given, but that its four dimensions are colour is (A).
+**The precision the slogan needs.** One of the twenty-one generators is **an element of the algebra** — the central phase, $\mathbb R(ie_t)$. The six sides are **endomorphisms of length one whose parameters are the imaginary units**: $L_{\vec e_a}$ acts on an element, and the element it multiplies by is $\vec e_a$. The other fifteen are **the unitary group of the carrier**, which is a group *of* the algebra's action and not *in* the algebra: $\dim_{\mathbb R}\mathbb B=8$, and fifteen does not fit inside eight. So the honest statement is not "twenty-one out of twenty-one live in the algebra" but **"every one of the twenty-one is a structure the algebra supplies; one is literally in the algebra, six are endomorphisms whose parameters are algebra elements, and fifteen are the unitary group of the carrier"** — which is still a stronger claim than the Standard Model can make, and it is stronger because it is precise. **The distinction matters because the fifteen are the factor that has to be declared**: the carrier is given, but that its four dimensions are colour is (A).
 
 **The comparison factor by factor is the substance of the reason:**
 
@@ -106,7 +108,7 @@ which is a lower bound on the new physics and therefore no bound at all on the m
 | weak isospin, $3$ | the algebra's left action — the one factor the corpus derives | the left half of the two-sided product |
 | hypercharge, $1$ | the algebra has a $\mathrm{U}(1)$, but **which charge each field carries is chosen**: the step $q=6Y$ is selected to make the observed table integral | not a factor at all: $Y=T_{3R}+\tfrac12(B-L)$, with the quartet's eigenvalues fixed by $\operatorname{tr}_{\mathbf4}(B-L)=0$ |
 
-**One of the Standard Model's three factors is a structure the algebra can host; three of the model's three are.** That is what *fully compatible* means here, and it is why the model is not a larger group laid on top of the algebra but the group the algebra's own objects were shaped for: the carrier supplies the fifteen, the two-sided product supplies the six, and the fourth colour is a direction the carrier already has.
+**One of the Standard Model's three factors is a structure the algebra can host; all three of the model's are.** That is what *fully compatible* means here, and it is why the model is not a larger group laid on top of the algebra but the group the algebra's own objects were shaped for: the carrier supplies the fifteen, the two-sided action supplies the six, and the fourth colour is a direction the carrier already has. **Three of three by licensing, one of three by containment** — and the difference between the two counts is the difference the whole article turns on.
 
 **None of this is a derivation, and the difference matters.** The algebra supplies the carrier, the stabiliser, the two-sided product and the traceless diagonal; the model supplies the names of the particles that sit in them, and the identification of the fourth direction with the lepton is **declared**, not derived. **Where the corpus had a four-dimensional complex carrier and needed a group, the model is the group that uses exactly that space** — and a group chosen for the space it acts on, rather than a space chosen for the group, is the only kind of match worth anything here. The price is stated in *The Carrier Is a Copy*: the group acts on a formal copy of the quartet, because $\mathfrak{su}(4)$ commutes with the Lorentz action only in $\mathfrak{su}(2)$.
 
@@ -147,7 +149,7 @@ $$
 \mathfrak k_L=\{L_{\vec e_a}\},\qquad \mathfrak k_R=\{R_{\vec e_a}\},\qquad [L_{\vec e_a},R_{\vec e_b}]=0,\qquad \dim\mathfrak k_L=\dim\mathfrak k_R=3,
 $$
 
-so that $\exp\mathfrak k_L\times\exp\mathfrak k_R=\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, six dimensions. **Nothing is imported here: the two factors are the two ways the algebra multiplies.**
+so that $\exp\mathfrak k_L\times\exp\mathfrak k_R=\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, six dimensions. **Nothing is imported here: the two factors are the two ways the algebra multiplies.** They are endomorphisms of $\mathbb B$ and not elements of it — each is a length-one word whose parameter is an imaginary unit.
 
 **The arithmetic, and it closes twice.**
 
@@ -268,6 +270,8 @@ $$
 **What selects the group is the module, and this is where the frame's refusal of larger groups earns its keep.** The algebra supplies one four-dimensional complex module, its own carrier, so the largest compact simple group that can act faithfully on it is $\mathrm{SU}(4)$; $\mathrm{SU}(5)$ needs a five-dimensional module and $\mathrm{SO}(10)$ a sixteen-dimensional one, and the algebra supplies neither. **That is a statement about modules, and the length says only where the generators live.**
 
 **What the criterion does not buy.** It grades the group's address in the endomorphisms; it does not make the theory chiral. **Chirality is a property of the module, and the endomorphisms of $\mathbb B$ supply no one-sided action** — no length, however short, produces a representation on which the group acts on one side only. **A reader who takes a short word as a chiral matter sector has read a fourth claim into the ladder.**
+
+**The membership claim was corrected in this revision.** An earlier version of §*Why the Corpus Adopts the Pati–Salam Model* said that six of the twenty-one generators were elements of the algebra — a claim that was false, as the length ladder shows. The six sides are endomorphisms of length one, and their parameters are the imaginary units; only the central phase is in $\mathbb B$. Any article that quotes the old sentence should be read against the ladder.
 
 ## Why This Group and Not a Larger One
 
@@ -400,5 +404,7 @@ where the internal quartet is a **formal copy** of the algebra's coordinate spac
 **Do not read the two $\mathrm{SU}(2)$'s as the Lorentz group.** They are gauged and internal: left and right multiplication by the imaginary units of the algebra, not the Lorentz action. **The Lorentz group does live in this framework, and it lives somewhere else** — it is the group of norm-preserving automorphisms of the algebra's Hermitian structure, the $SL(2,\mathbb C)$ acting on the spinor module. [The Lorentz Group as Biquaternion Norm Automorphisms](the-lorentz-group-as-biquaternion-norm-automorphisms.html) is where it is built, and the reader who wants to know which group is which should read that article beside this one. **Internal and spacetime factors are different factors of one tensor product; that is the whole architecture.**
 
 **Do not read $g_3=g_L=g_R$ as a prediction at accessible energy.** It is a boundary condition at $M_{PS}$, and the one place where the boundary condition has been checked — the angle — fails.
+
+**Do not read "the algebra supplies the two-sided action" as "the $\mathrm{SU}(2)$ generators are elements of $\mathbb B$."** The action is an endomorphism; its parameter is the element. **This is the Layer A / Layer B distinction again**: the algebra acts on its own carrier in Layer A, and the group acts on a formal copy in Layer B, and in neither layer is a generator of $\mathrm{SU}(2)$ an element of the algebra.
 
 **Do not read the sixteen as evidence that the group is right.** It is evidence that the sixteen is the natural multiplet, and a natural multiplet is not a measurement. **The same multiplet appears in $\mathrm{SO}(10)$, which is how we know that a natural multiplet does not pick out a group.**

@@ -185,7 +185,7 @@ The agent reads the article to review.
 
 He searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
 
-For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector.
+For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector. Note: the two named foundation articles were merged into *The Algebraic Vocabulary: Element, Conjugations, Six Subspaces and Two Ledgers* and *The Two Sectors: The Hermitian Split and the Four Bridges*; the shelf is those two plus the three carrier introductions, and the two old titles are superseded, not missing.
 
 If needed, the agent then gathers interesting complementary information from the internet.
 
@@ -223,7 +223,7 @@ The agent reads the article.
 
 He searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
 
-For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector.
+For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector. Note: the two named foundation articles were merged into *The Algebraic Vocabulary: Element, Conjugations, Six Subspaces and Two Ledgers* and *The Two Sectors: The Hermitian Split and the Four Bridges*; the shelf is those two plus the three carrier introductions, and the two old titles are superseded, not missing.
 
 The agent does not waste time doing other things, checking unrelated things.
 
@@ -244,7 +244,7 @@ The agent reads carefully the convention articles.
 
 The agent searches in the menus (maths.md for maths articles and physics.md for physics articles), the interesting related articles to provide him some context and notational conventions.
 
-For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector.
+For example, for a physics article, among the articles to read, they are always 3 foundational articles, Introduction to the Biquaternion Universe, The Anti-Hermitian Subspace M- as the Material Sector, The Hermitian Subspace M+ as the Informational Sector. Note: the two named foundation articles were merged into *The Algebraic Vocabulary: Element, Conjugations, Six Subspaces and Two Ledgers* and *The Two Sectors: The Hermitian Split and the Four Bridges*; the shelf is those two plus the three carrier introductions, and the two old titles are superseded, not missing.
 
 The agent suggests some modifications about the article.
 

@@ -1293,6 +1293,8 @@
 
 ## Biquaternion Particle Physics
 
+**The frame article is the first entry below** — *The Pati–Salam Model in the Biquaternion Framework: Four Colours, $21$ Generators, One Coupling* — and it is the authority for the group, the sixteen, the chain and the declaration (A). Every verdict in this section is read against it. It is linked once, at the section head, so that the inventory stays at $121$; this sentence is a pointer and carries no second href.
+
 ### The Unified Group
 
 #### The Model
