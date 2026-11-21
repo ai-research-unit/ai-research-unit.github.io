@@ -4,9 +4,9 @@
 
 **The layer.** The field content lives on a formal copy of the carrier, and its one Layer-A remark is §1, where the algebra's own scalar turns out to be a line in the centre and nothing more.
 
-**The question.** Which scalar fields do the breaking of the chain, how many real components do they have, how many are eaten, what survives — and what do the six leptoquarks the breaking creates cost the model?
+**The question.** Which scalar fields do the breaking of the chain, how many real components do they have, how many are eaten, what survives — and what do the six leptoquarks the breaking creates require of the model?
 
-**The answer in one line.**
+**The answer.**
 
 $$
 \boxed{\;
@@ -23,25 +23,25 @@ B\ \text{moves in thirds, so proton decay is dimension nine}
 \;}
 $$
 
-**So the minimal sector breaks the symmetry correctly, leaves twelve real scalars, and predicts six states that nobody has seen — and it still gets the fermion masses wrong.**
+So the minimal sector breaks the symmetry correctly, leaves twelve real scalars, and predicts six states that nobody has seen — and it still gets the fermion masses wrong.
 
-**What is claimed.** That the two-step chain is done by one $(\mathbf4,\mathbf1,\mathbf2)$ and one $(\mathbf1,\mathbf2,\mathbf2)$; that they carry $24$ real components against $12$ broken generators, so $12$ survive at tree level; that the single bidoublet forces the down-type and charged-lepton mass matrices to be proportional; that the gauge sector's six leptoquarks are forced by the gauged fourth colour and are the only coloured massive states in the theory; that $M_X\gtrsim2.5\times10^{2}$ TeV from $K_L\to\mu e$; and that proton decay does not bound the gauge sector, because the leading operator is dimension nine.
+**What the article establishes.** That the two-step chain is done by one $(\mathbf4,\mathbf1,\mathbf2)$ and one $(\mathbf1,\mathbf2,\mathbf2)$; that they carry $24$ real components against $12$ broken generators, so $12$ survive at tree level; that the single bidoublet forces the down-type and charged-lepton mass matrices to be proportional; that the gauge sector's six leptoquarks are forced by the gauged fourth colour and are the only coloured massive states in the theory; that $M_X\gtrsim2.5\times10^{2}$ TeV from $K_L\to\mu e$; and that proton decay does not bound the gauge sector, because the leading operator is dimension nine.
 
-**What is not claimed.** That the third field's potential is under control — **it is not, and §11 and §12 say why.** That the leptoquarks exist. That the bound is precise: it is an order of magnitude, and §9 says why the literature's numbers differ by factors of a few. **That the corpus can derive the scalar content: it cannot, and the scalar sector is the one place in the frame with no algebraic guidance at all.**
+**Not established.** The third field's potential is not under control, and §11 and §12 say why. The leptoquarks have not been seen. The bound is an order of magnitude rather than a precise value, and §9 says why the literature's numbers differ by factors of a few. The corpus cannot derive the scalar content: the scalar sector is the one place in the frame with no algebraic guidance at all.
 
 ## 1. The Scalar and the Centre
 
-**One structural remark the corpus can make and the literature cannot, and it is about where a scalar lives in the algebra.**
+**One structural remark.** It is about where a scalar lives in the algebra, and it is available to the corpus and not to the literature.
 
-**1.1 The corpus's own result.** A spin-zero field is a line in the state module, not an element of the algebra's vector part: [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html). **So the corpus's scalar is a central object** — it commutes with the rotors, it multiplies from both sides identically, and it is the one field whose two-sidedness costs nothing.
+**1.1 The corpus's own result.** A spin-zero field is a line in the state module, not an element of the algebra's vector part: [Spin Zero and the Centre: Why the Scalar Field Lies Outside the State Module](spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.html). The corpus's scalar is therefore a central object — it commutes with the rotors, it multiplies from both sides identically, and it is the one field whose two-sidedness is free.
 
-**1.2 What that means for the frame, read against the criterion.** A generator is an element of $\operatorname{End}_{\mathbb C}(\mathbb B)$, a sum of the words $L_{e_\mu}R_{e_\nu}$; and the group acts on the carrier, the only space a $4\times4$ matrix acts on. **The structures that the frame's arguments use are the carrier, the canonical split $\mathbf 4=\mathbf 1\oplus\mathbf 3$, and the two-sided action.** The scalar sector uses the first two and not the third. The $(\mathbf4,\mathbf1,\mathbf2)$ sits on the carrier's four dimensions and its vacuum points along the canonical line — that is why the leptoquarks and the $B-L$ direction appear in it at all. But its $\mathrm{SU}(2)_R$ index is a copy index, not an element of $\mathbb B$: nothing in the algebra distinguishes the two components of that doublet from any other pair. **So the scalar sector is admitted exactly as far as the carrier and the split reach, and no further.**
+**1.2 The frame.** A generator is an element of $\operatorname{End}_{\mathbb C}(\mathbb B)$, a sum of the words $L_{e_\mu}R_{e_\nu}$; and the group acts on the carrier, the only space a $4\times4$ matrix acts on. The structures the frame's arguments use are the carrier, the canonical split $\mathbf 4=\mathbf 1\oplus\mathbf 3$, and the two-sided action. The scalar sector uses the first two and not the third. The $(\mathbf4,\mathbf1,\mathbf2)$ sits on the carrier's four dimensions and its vacuum points along the canonical line, which is why the leptoquarks and the $B-L$ direction appear in it at all. But its $\mathrm{SU}(2)_R$ index is a copy index, not an element of $\mathbb B$: nothing in the algebra distinguishes the two components of that doublet from any other pair. So the scalar sector is admitted exactly as far as the carrier and the split reach, and no further.
 
-**1.3 The consequence for honesty.** Every other sector has a partial translation: fermions as the sixteen, gauge fields as the twenty-one, scalars as the carrier and the split. **No sector has the third item, the two-sided action, for its matter content** — that is the chiral wall, and it is why every matter sector is written rather than derived. **The corpus's contribution here is the bookkeeping, not a construction**: it can say exactly which of the three structures each sector uses, and the scalar sector turns out to use two of them.
+**1.3 The consequence.** Every other sector has a partial translation: fermions as the sixteen, gauge fields as the twenty-one, scalars as the carrier and the split. No sector has the third item, the two-sided action, for its matter content — that is the chiral wall, and it is why every matter sector is written rather than derived. What the corpus adds here is a classification rather than a construction: it can say exactly which of the three structures each sector uses, and the scalar sector turns out to use two of them.
 
 ## 2. The Fields, with Their Contents
 
-**Three representations, and only the first two are needed for the breaking.**
+**Three representations.** Only the first two are needed for the breaking.
 
 | field | $G_{4LR}$ | complex components | real components | role |
 |---|---|---|---|---|
@@ -49,13 +49,13 @@ $$
 | $H$ | $(\mathbf1,\mathbf2,\mathbf2)$ | $1\cdot2\cdot2=4$ | $8$ | breaks $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\to\mathrm{U}(1)_{\mathrm{em}}$ |
 | $\Sigma$ | $(\mathbf{15},\mathbf2,\mathbf2)$ | $15\cdot2\cdot2=60$ | $120$ | splits the mass relations, and the $\rho$ parameter |
 
-**The factor of two is the reality of a complex scalar**: a complex field carries two real degrees of freedom. **The $(\mathbf4,\mathbf1,\mathbf2)$ is complex in the $\mathrm{SU}(4)$ index and complex in the $\mathrm{SU}(2)_R$ index**, so it holds eight complex components and sixteen real numbers — and that sixteen is the number §3 spends.
+**The factor of two.** It is the reality of a complex scalar: a complex field carries two real degrees of freedom. The $(\mathbf4,\mathbf1,\mathbf2)$ is complex in the $\mathrm{SU}(4)$ index and complex in the $\mathrm{SU}(2)_R$ index, so it holds eight complex components and sixteen real numbers, and that sixteen is the number §3 spends.
 
-**The $(\mathbf{15},\mathbf2,\mathbf2)$ has a hundred and twenty, and that is why it is the expensive one.** Fifteen is the adjoint of $\mathrm{SU}(4)$, so $\Sigma$ carries a coloured octet, a coloured triplet and antitriplet, and a singlet — **and the coloured pieces can mediate proton decay, which is the fork of §11.**
+**The expensive one.** That is why it is the expensive one. Fifteen is the adjoint of $\mathrm{SU}(4)$, so $\Sigma$ carries a coloured octet, a coloured triplet and antitriplet, and a singlet — and the coloured pieces can mediate proton decay, which is the fork of §11.
 
 ## 3. The Eaten Count, Which Is Exact
 
-**The arithmetic of the whole chain, in one table, and it closes with no remainder.**
+**The arithmetic.** It closes with no remainder.
 
 | breaking | generators broken | who eats them |
 |---|---|---|
@@ -65,29 +65,29 @@ $$
 | **total eaten** | $6+2+4=12$ | of $16+8=24$ available |
 | **total surviving** | $24-12$ | $12$ real |
 
-**The coset count and the eaten count agree, and this is not a coincidence — it is the statement that the two fields' vacuum manifold has exactly the dimension of the coset.** But agreement of two numbers is not exhaustion of the fields: **twelve is what the breaking spends, not what the multiplets contain.**
+**Why the two counts agree.** The coset count and the eaten count agree, and this is not a coincidence: it is the statement that the two fields' vacuum manifold has exactly the dimension of the coset. But agreement of two numbers is not exhaustion of the fields; twelve is what the breaking spends, not what the multiplets contain.
 
-**3.1 The first field's eight, split as six and two.** Six are the leptoquarks of §6. **The other two are the $W_R^{\pm}$**: the $\Phi$ vacuum has a direction in its $R$-doublet, and rotating that direction is two real flat directions.
+**3.1 The first field's eight.** Six are the leptoquarks of §6. The other two are the $W_R^{\pm}$: the $\Phi$ vacuum has a direction in its $R$-doublet, and rotating that direction is two real flat directions.
 
-**3.2 The second field's four, and the four generators.** The bidoublet's vacuum is $2\times2$ and its flat directions are the four broken generators of the electroweak pair — **the $W^{\pm}$, the $Z$, and the $Z_R$.** That the $Z_R$ is among them is the point most often missed: **in the minimal model the $Z_R$ mass comes from the bidoublet through the mixing, not from a separate field**, and the spectrum's $\tfrac58g^2v_R^2$ is the eigenvalue, not a separate breaking.
+**3.2 The second field's four.** The bidoublet's vacuum is $2\times2$ and its flat directions are the four broken generators of the electroweak pair — the $W^{\pm}$, the $Z$, and the $Z_R$. That the $Z_R$ is among them is the point most often missed: in the minimal model the $Z_R$ mass comes from the bidoublet through the mixing, not from a separate field, and the spectrum's $\tfrac58g^2v_R^2$ is the eigenvalue, not a separate breaking.
 
 ## 4. What Survives, and the Two Neutrals
 
-**Component by component, and the count is the whole content of the minimal sector.**
+**By component.** The count is the whole content of the minimal sector.
 
-**4.1 The first field keeps eight of its sixteen**: a colour triplet (six real) and one charged singlet (two real), and every one of them is an $\mathrm{SU}(2)_L$ singlet.
+**4.1 The first field** keeps eight of its sixteen: a colour triplet (six real) and one charged singlet (two real), and every one of them is an $\mathrm{SU}(2)_L$ singlet.
 
-**4.2 The second field keeps four of its eight**: a charged pair $H^{\pm}$ and two neutral states.
+**4.2 The second field** keeps four of its eight: a charged pair $H^{\pm}$ and two neutral states.
 
-**Why two neutrals and not one.** $H$ is a $2\times2$ matrix of complex fields, and its two diagonal entries are neutral while its two off-diagonal entries are charged. **So the eight real numbers split evenly: four charged and four neutral.** The charged four are spent on $W^{\pm}$ (two real) and leave $H^{\pm}$ (two); the neutral four are spent on $Z$ and $Z_R$ (two real) and leave two real neutral directions. **Two survive because the bidoublet has two diagonal entries and the breaking eats only one neutral direction at each of the last two steps.** The potential then mixes the pair, so the physical states are a lighter and a heavier neutral scalar.
+**Why two.** $H$ is a $2\times2$ matrix of complex fields, and its two diagonal entries are neutral while its two off-diagonal entries are charged. So the eight real numbers split evenly: four charged and four neutral. The charged four are spent on $W^{\pm}$ (two real) and leave $H^{\pm}$ (two); the neutral four are spent on $Z$ and $Z_R$ (two real) and leave two real neutral directions. Two survive because the bidoublet has two diagonal entries and the breaking eats only one neutral direction at each of the last two steps. The potential then mixes the pair, so the physical states are a lighter and a heavier neutral scalar.
 
-**So the minimal sector does contain neutral scalars, and the lighter of the two is the only candidate the model has for the observed $125$ GeV state. The minimal sector is not short of a Higgs. It is short of a second contribution to the fermion masses**, and §10 says why that is the defect.
+**Two neutral scalars.** The lighter of the two is the only candidate the model has for the observed $125$ GeV state. The minimal sector is not short of a Higgs. It is short of a second contribution to the fermion masses, and §10 says why that is the defect.
 
-**4.3 The count worth remembering.** $24$ real components, $12$ eaten, $12$ surviving, and $21-9=12$ broken generators. **Added up by field, the survivors are $6+2$ from $\Phi$ and $2+2$ from $H$, which is $12$.** **Three twelves that agree, and only the first two are the same twelve.**
+**4.3 The count.** $24$ real components, $12$ eaten, $12$ surviving, and $21-9=12$ broken generators. Added up by field, the survivors are $6+2$ from $\Phi$ and $2+2$ from $H$, which is $12$. Three twelves agree, and only the first two are the same twelve.
 
 ## 5. The Six That Are Forced
 
-**They are the off-diagonal block of one matrix, and they are unavoidable once the fourth colour is gauged.**
+**The off-diagonal block.** They come from one matrix, and they are unavoidable once the fourth colour is gauged.
 
 **5.1 The decomposition.** The fifteen generators of $\mathrm{SU}(4)$ split as the stabiliser of the unit line and its complement:
 
@@ -97,7 +97,7 @@ $$
 15=8+1+6 .
 $$
 
-**The $\mathfrak m$ carries $B-L=\pm\tfrac43$, and that value is not adjustable.** **The subscripts in that display are $B-L$; the same six are written $\mathbf3_{2/3}\oplus\bar{\mathbf3}_{-2/3}$ elsewhere, where the subscript is the electric charge.** It is the difference between the lepton's $B-L=-1$ and the quark's $B-L=+\tfrac13$:
+The $\mathfrak m$ carries $B-L=\pm\tfrac43$, and that value is not adjustable. The subscripts in that display are $B-L$; the same six are written $\mathbf3_{2/3}\oplus\bar{\mathbf3}_{-2/3}$ elsewhere, where the subscript is the electric charge. It is the difference between the lepton's $B-L=-1$ and the quark's $B-L=+\tfrac13$:
 
 $$
 (-1)-\Bigl(+\tfrac13\Bigr)=-\tfrac43 ,
@@ -111,25 +111,25 @@ $$
 Q(X)=0+0+\tfrac12\Bigl(\pm\tfrac43\Bigr)=\pm\tfrac23 .
 $$
 
-**So the six consist of three of charge $+\tfrac23$ and three of charge $-\tfrac23$, the second three carrying anticolour.** They are, in the standard notation, the $X$ bosons of the fourth-colour model reduced to their abelian content — **there is no $Y$ here of charge $\pm\tfrac13$ because the frame's $\mathrm{SU}(2)_R$ is a separate factor, and that is the difference between $\mathrm{SU}(4)$ and $\mathrm{SU}(5)$.**
+So the six consist of three of charge $+\tfrac23$ and three of charge $-\tfrac23$, the second three carrying anticolour. They are, in the standard notation, the $X$ bosons of the fourth-colour model reduced to their abelian content. There is no $Y$ here of charge $\pm\tfrac13$, because the frame's $\mathrm{SU}(2)_R$ is a separate factor, and that is the difference between $\mathrm{SU}(4)$ and $\mathrm{SU}(5)$.
 
-**5.3 Why they are the only coloured massive states.** Colour is the stabiliser of the unit line, so it is unbroken at every scale — nothing in the chain removes it. **Hence no coloured gauge boson can get a mass except by eating a Goldstone that carries colour, and the only such Goldstones are the six in $\mathfrak m$.** Read as a theorem: *in this frame the set of massive coloured gauge bosons is exactly $\mathfrak m$.*
+**5.3 The only coloured states.** Colour is the stabiliser of the unit line, so it is unbroken at every scale — nothing in the chain removes it. Hence no coloured gauge boson can get a mass except by eating a Goldstone that carries colour, and the only such Goldstones are the six in $\mathfrak m$. As a theorem: in this frame the set of massive coloured gauge bosons is exactly $\mathfrak m$.
 
 ## 6. What the Six Do
 
-**Three vertices, and the third is the one that is measured.**
+**Three vertices.** The third is the one that is measured.
 
-**6.1 They convert quarks into leptons and back.** A leptoquark couples one quark leg to one lepton leg:
+**6.1 Quarks into leptons.** A leptoquark couples one quark leg to one lepton leg:
 
 $$
 X_{\mu}:\quad q\to \ell,\qquad \bar q\to\bar\ell ,
 $$
 
-with the quantum numbers forcing $|\Delta B|=\tfrac13$ and $|\Delta L|=1$ per fermion leg. **On the legs alone $B-L$ would change by $\mp\tfrac43$, and it does not: the $X$ carries that same $B-L=\pm\tfrac43$.** So every vertex conserves $B-L$ exactly, which it must, because $\mathrm{U}(1)_{B-L}$ survives the first breaking and is still a gauge symmetry. **The leptoquark violates $B$ and violates $L$ and conserves $B-L$** — exactly what a $B-L$ gauge boson does, since a boson of a gauged charge carries that charge and cannot change the total.
+with the quantum numbers forcing $|\Delta B|=\tfrac13$ and $|\Delta L|=1$ per fermion leg. On the legs alone $B-L$ would change by $\mp\tfrac43$, and it does not: the $X$ carries that same $B-L=\pm\tfrac43$. So every vertex conserves $B-L$ exactly, which it must, because $\mathrm{U}(1)_{B-L}$ survives the first breaking and is still a gauge symmetry. The leptoquark violates $B$ and violates $L$ and conserves $B-L$ — exactly what a $B-L$ gauge boson does, since a boson of a gauged charge carries that charge and cannot change the total.
 
-**6.2 They mix with the photon and the $Z$, very slightly.** Since they are charged, they contribute to the oblique parameters and to $Z\to\ell\ell$ at loop level. **The corrections are suppressed by $(v/v_R)^2$ and are unobservable** for $M_X$ above a few hundred TeV.
+**6.2 Mixing with the photon and the $Z$** Since they are charged, they contribute to the oblique parameters and to $Z\to\ell\ell$ at loop level. The corrections are suppressed by $(v/v_R)^2$ and are unobservable for $M_X$ above a few hundred TeV.
 
-**6.3 They mediate $K_L\to\mu e$ at tree level, and that is the whole bound.** The diagram is $s\bar d\to X\to\mu\bar e$, with no loop and no CKM suppression:
+**6.3 $K_L\to\mu e$ at tree level.** That is the whole bound. The diagram is $s\bar d\to X\to\mu\bar e$, with no loop and no CKM suppression:
 
 $$
 \mathcal M\propto\frac{g_4^2}{M_X^2},
@@ -137,13 +137,15 @@ $$
 \mathcal B(K_L\to\mu e)\ \propto\ \frac{g_4^{4}}{M_X^{4}}f_K^2m_K .
 $$
 
-**Because it is a tree-level flavour-changing neutral current with no suppression, the bound is severe, and it is a coupling statement.** The measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ is converted into a bound on $M_X$ using $g_4^2=4\pi\alpha_s(M_X)$, a kaon decay constant, the generator normalisation $\operatorname{tr}T^{A}T^{B}=\tfrac12\delta^{AB}$ and the rate $g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$.
+Because it is a tree-level flavour-changing neutral current with no suppression, the bound is severe, and it is a coupling statement. The measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ is converted into a bound on $M_X$ using $g_4^2=4\pi\alpha_s(M_X)$, a kaon decay constant, the generator normalisation $\operatorname{tr}T^{A}T^{B}=\tfrac12\delta^{AB}$ and the rate $g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$.
 
-**The value of that bound is not stated here.** It depends on the leptoquark chirality and on the hadronic matrix element, and it is a number produced by a coupling. **It is quoted, with its inputs and its spread, in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html)**; what this article supplies is the channel, its quantum numbers, and the reason the channel is unsuppressed. **A reader who needs the number should read it there, and a reader who needs the diagram should read it here.**.3\times10^{2}$ TeV — so the round $2.5\times10^{2}$ used here is right to within the coefficient's band**: [Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html) does that calculation and carries the $K_S$ prediction that follows from the same operator. **This single number is the strongest model-independent statement in the frame**, and it is worth being clear what kind of statement it is: it is not a prediction, it is a *lower bound on a parameter*, obtained from a measured null result. §9 says how firm it is.
+**Not derived here.** It depends on the leptoquark chirality and on the hadronic matrix element, and it is a number produced by a coupling. It is quoted, with its inputs and its spread, in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html); what this article supplies is the channel, its quantum numbers, and the reason the channel is unsuppressed.
+
+**The order of magnitude.** The bound comes out at $M_X\gtrsim2.3\times10^{2}$ TeV, so the round $2.5\times10^{2}$ used here is right to within the coefficient's band: [Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html) does that calculation and carries the $K_S$ prediction that follows from the same operator. This single number is the strongest model-independent statement in the frame, and it is worth being clear what kind of statement it is: not a prediction, but a lower bound on a parameter, obtained from a measured null result. §9 says how firm it is.
 
 ## 7. The Mass, and the $\sqrt2$ That a Coupling Ratio Multiplies
 
-**The number that ties the sector to the spectrum, written so that it stays a structure.**
+**The mass relation.** It is written so that it stays a structure.
 
 **7.1 From the vacuum.** The breaking at the first threshold is done by the $(\mathbf 4,\mathbf 1,\mathbf 2)$ acquiring a value along its unit-line component. The six leptoquarks eat six of that field's eight real components and get
 
@@ -151,27 +153,27 @@ $$
 M_X^2=\tfrac12\,g_4^2\,v_R^2 ,
 $$
 
-**which is one half, one coupling squared, one vacuum squared, and no free number.**
+which is one half, one coupling squared, one vacuum squared, and no free number.
 
-**7.2 The ratio, as a structure.** With $M_{W_R}^2=\tfrac14g_R^2v_R^2$ the ratio is
+**7.2 The ratio.** With $M_{W_R}^2=\tfrac14g_R^2v_R^2$ the ratio is
 
 $$
 \frac{M_X}{M_{W_R}}=\sqrt2\;\frac{g_4}{g_R} .
 $$
 
-**The $\sqrt2$ is the prediction, and it is the group's**: half against a quarter, and the quarter comes from the $\mathrm{SU}(2)$ normalisation while the half comes from the leptoquark's own generator. **The factor $g_4/g_R$ is not one in general**, and this article does not assert that it is.
+The $\sqrt2$ is the prediction, and it is the group's: half against a quarter, and the quarter comes from the $\mathrm{SU}(2)$ normalisation while the half comes from the leptoquark's own generator. The factor $g_4/g_R$ is not one in general, and this article does not assert that it is.
 
-**7.3 What that means for a search, and it is the practical content of this section.** A bound on $M_X$ is a bound on $M_{W_R}$ up to the same factor: **the two masses differ by $\sqrt2$ times a coupling ratio, so the leptoquark is the heavier of the two by a factor between one and two, and never by more than that.** A search that fixes one therefore fixes the other to within that window.
+**7.3 For a search.** It is the practical content of this section. A bound on $M_X$ is a bound on $M_{W_R}$ up to the same factor: the two masses differ by $\sqrt2$ times a coupling ratio, so the leptoquark is the heavier of the two by a factor between one and two, and never by more than that. A search that fixes one therefore fixes the other to within that window.
 
-**7.4 What would change the ratio.** A $(\mathbf{15},\mathbf2,\mathbf2)$ with a vacuum expectation value, or a second $(\mathbf 4,\mathbf 1,\mathbf 2)$, splits the leptoquark masses from one another and from the $W_R$. **The $\sqrt2$ is the minimal-vacuum statement, and it is a statement about the vacuum rather than about the group.**
+**7.4 What would change it.** A $(\mathbf{15},\mathbf2,\mathbf2)$ with a vacuum expectation value, or a second $(\mathbf 4,\mathbf 1,\mathbf 2)$, splits the leptoquark masses from one another and from the $W_R$. The $\sqrt2$ is the minimal-vacuum statement, and it is a statement about the vacuum rather than about the group.
 
 ## 8. Proton Decay, and Why It Does Not Bite
 
-**The counting argument, which is the reason the model survives at all.**
+**The counting argument.** It is the reason the model survives at all.
 
-**8.1 Each vertex moves $B$ by a third.** A leptoquark converts one quark into one lepton, so $\Delta B=\pm\tfrac13$. **A proton has $B=1$ and a positron and a pion together have $B=0$**, so destroying the proton needs three leptoquark vertices.
+**8.1 A third per vertex.** A leptoquark converts one quark into one lepton, so $\Delta B=\pm\tfrac13$. A proton has $B=1$ and a positron and a pion together have $B=0$, so destroying the proton needs three leptoquark vertices.
 
-**8.2 Three vertices mean dimension nine.** With three fermion bilinears and three leptoquark propagators the operator is
+**8.2 Dimension nine.** With three fermion bilinears and three leptoquark propagators the operator is
 
 $$
 \mathcal O_9\sim\frac{1}{M_X^{6}}\,(qqq)(q\ell),
@@ -179,29 +181,29 @@ $$
 \Gamma\propto\frac{m_p^{11}}{M_X^{12}} .
 $$
 
-**The suppression is $M_X^{-6}$ and not $M_X^{-2}$**, and that is six powers of a scale that is already above $10^{5}$ GeV. **The rate is unobservably small, and proton decay does not constrain the gauge sector.**
+The suppression is $M_X^{-6}$ and not $M_X^{-2}$, and that is six powers of a scale that is already above $10^{5}$ GeV. The rate is unobservably small, and proton decay does not constrain the gauge sector.
 
-**8.3 What does bite, and it is the scalar sector.** The statement above holds for the *gauge* sector alone. If the scalar sector contains a colour triplet that couples to two quarks — a diquark coupling — then a single scalar exchange gives a dimension-six operator and the bound is ten orders of magnitude stronger; §11 is that fork.
+**8.3 The scalar sector.** The statement above holds for the gauge sector alone. If the scalar sector contains a colour triplet that couples to two quarks — a diquark coupling — then a single scalar exchange gives a dimension-six operator and the bound is ten orders of magnitude stronger; §11 is that fork.
 
-**8.4 Which bound is stronger, and why the answer is not the useful one.** On $M_X$ the proton-decay bound, where it applies, beats $K_L\to\mu e$ by about ten orders of magnitude — $10^{15}$ GeV against $2.5\times10^{2}$ TeV. **So the ordering is never in doubt; what is in doubt is whether the stronger bound applies at all**, and that is a question about the scalar content rather than about the gauge sector. **A reader who quotes the proton bound as the leptoquark bound has assumed diquark couplings**, which is exactly the assumption §11 shows to be expensive.
+**8.4 Which bound is stronger.** On $M_X$ the proton-decay bound, where it applies, beats $K_L\to\mu e$ by about ten orders of magnitude — $10^{15}$ GeV against $2.5\times10^{2}$ TeV. So the ordering is never in doubt; what is in doubt is whether the stronger bound applies at all, and that is a question about the scalar content rather than about the gauge sector. Quoting the proton bound as the leptoquark bound assumes diquark couplings, which is exactly the assumption §11 shows to be expensive.
 
 ## 9. How Firm the Bound Is
 
-**Three sources of spread, stated so that the number is not over-trusted.**
+**Three sources of spread.** They are stated so that the number is not over-trusted.
 
 **9.1 The chirality of the coupling.** A vector leptoquark couples to both chiralities and a scalar one to one; the $K_L\to\mu e$ amplitude depends on which, and the bound moves by a factor of about two.
 
 **9.2 The hadronic matrix element.** $\langle\mu e|(\bar s\gamma^\mu d)|K_L\rangle$ is a lattice-and-decay-constant object, and its uncertainty propagates as a fourth root into $M_X$.
 
-**9.3 Whether the leptoquark couples to the first generation.** In the minimal frame it does, because the $\mathrm{SU}(4)$ is generation-blind. **A frame with generation-dependent leptoquark couplings could suppress $K_L\to\mu e$ and evade the bound** — and that is a modification of the frame, not of its group.
+**9.3 First-generation coupling.** In the minimal frame it does, because the $\mathrm{SU}(4)$ is generation-blind. A frame with generation-dependent leptoquark couplings could suppress $K_L\to\mu e$ and evade the bound — and that is a modification of the frame, not of its group.
 
-**9.4 What the bound is not.** It is not a measurement of $M_X$; it is a floor. **Its role is to say that the six states cannot be light**, which is what makes them a prediction that has so far failed to materialise rather than one that has succeeded.
+**9.4 What the bound is not.** It is not a measurement of $M_X$; it is a floor. Its role is to say that the six states cannot be light, which is what makes them a prediction that has so far failed to materialise rather than one that has succeeded.
 
 ## 10. Why a Second Scalar Is Needed
 
-**Three jobs the minimal sector cannot do, and only the first is about masses.**
+**Three jobs the minimal sector cannot do.** Only the first is about masses.
 
-**10.1 The mass relation, which is the real defect, and it is a defect of counting.** A Yukawa coupling needs a scalar that is a singlet of $\mathrm{SU}(3)$ and transforms as $(\mathbf2,\bar{\mathbf2})$ or $(\mathbf2,\mathbf2)$ under the electroweak pair. **The bidoublet $H$ is exactly that field, and it is not eaten — it has four real survivors and it does the job.** The problem is that one bidoublet does the job twice with one matrix:
+**10.1 The mass relation.** It is the real defect, and it is a defect of counting. A Yukawa coupling needs a scalar that is a singlet of $\mathrm{SU}(3)$ and transforms as $(\mathbf2,\bar{\mathbf2})$ or $(\mathbf2,\mathbf2)$ under the electroweak pair. The bidoublet $H$ is exactly that field, it is not eaten, and it has four real survivors and does the job. The problem is that one bidoublet does the job twice with one matrix:
 
 $$
 \mathcal L_Y=\lambda\,\bar{\Psi}_L H\,\Psi_R+\text{h.c.}
@@ -209,33 +211,33 @@ $$
 M_d\propto M_e ,
 $$
 
-**because the up-type and down-type masses are read off the two vevs of the same $H$ from the same $\lambda$.** One matrix serving two sectors forces the two mass matrices to be proportional, and proportional matrices have proportional spectra.
+because the up-type and down-type masses are read off the two vevs of the same $H$ from the same $\lambda$. One matrix serving two sectors forces the two mass matrices to be proportional, and proportional matrices have proportional spectra.
 
-**Why that is the right way to state the defect.** Proportionality is a statement about **the number of independent matrices**, and the number is one. **It holds at every scale, in every scheme, and with any normalisation**, so it is a fact about the multiplet list and not about a coupling value. **The test against the measured spectrum — which ratios match and which do not, and by how much, and at which scale — is a coupling statement, and it is in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html), §6.**
+**Why proportionality.** Proportionality is a statement about the number of independent matrices, and the number is one. It holds at every scale, in every scheme, and with any normalisation, so it is a fact about the multiplet list and not about a coupling value. The test against the measured spectrum — which ratios match and which do not, and by how much, and at which scale — is a coupling statement, and it is in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html), §6.
 
-**What follows for the sector, and it is the load-bearing conclusion.** The measured spectra are not proportional, so one matrix is one too few. **The repair is a second matrix, and there are two ways to supply it.**
+**What follows for the sector.** The measured spectra are not proportional, so one matrix is one too few. The repair is a second matrix, and there are two ways to supply it.
 
-**Two repairs, and both cost.** A second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$ gives the down-type quarks and the charged leptons independent matrices, at the price of a second set of vevs and one more alignment to fix. The $(\mathbf{15},\mathbf2,\mathbf2)$ does the same job from the other side: **its colour-singlet component is a bidoublet, and its colour-octet components generate the mass splittings that make the fermion spectrum non-degenerate** — at the price of §11.
+**Two repairs, two consequences.** A second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$ gives the down-type quarks and the charged leptons independent matrices, and it brings a second set of vevs and one more alignment to fix. The $(\mathbf{15},\mathbf2,\mathbf2)$ does the same job from the other side: its colour-singlet component is a bidoublet, and its colour-octet components generate the mass splittings that make the fermion spectrum non-degenerate — and it brings §11.
 
-**A note on the classic statement, and how this article reads it.** The literature states the proportionality as a per-generation triple of equalities at a unification scale. **That phrasing is a boundary condition at a scale, and it is not repeated here.** What this article takes from it is the part that survives without a scale: **the triple is two-thirds successful**, so the mismatch is not a flat contradiction but a near miss with one member failing outright — **and a relation that nearly holds is a relation worth explaining.** The values, and the running that reconciles one of the three, are in the flagged coupling article.
+**The classical statement.** The literature states the proportionality as a per-generation triple of equalities at a unification scale. That phrasing is a boundary condition at a scale, and it is not repeated here. What this article takes from it is the part that survives without a scale: the triple is two-thirds successful, so the mismatch is not a flat contradiction but a near miss with one member failing outright, and a relation that nearly holds is a relation worth explaining. The values, and the running that reconciles one of the three, are in the coupling article.
 
-**10.2 The $\rho$ parameter.** Already visible in the spectrum: with the minimal two fields, the $Z_R/W_R$ ratio is fixed by the vacuum coefficients alone, with no free alignment. **Add a second bidoublet or $\Sigma$ and the ratio acquires a dependence on its vacuum expectation value, which is either a freedom or a disaster**, and §12 prices that.
+**10.2 The $\rho$ parameter.** It is already visible in the spectrum: with the minimal two fields, the $Z_R/W_R$ ratio is fixed by the vacuum coefficients alone, with no free alignment. Add a second bidoublet or $\Sigma$ and the ratio acquires a dependence on its vacuum expectation value, which is either a freedom or a failure, and §12 states what that brings.
 
-**10.3 Neutrino masses.** The $(\bar{\mathbf4},\mathbf1,\mathbf2)$ contains $\nu_R$, so a Majorana mass needs either a $(\mathbf{10},\mathbf1,\mathbf3)$-like triplet or the $\Sigma$; **the minimal sector supplies neither**, and the seesaw is therefore a property of the extended sector rather than of the frame. The minimal sector ties $m_u$ to $m_\nu$ through the same single matrix, and that tie is not a neutrino mass prediction but a symptom: **it is the same proportionality as above, read on the other vev.** **Its numerical size is in the flagged coupling article.**
+**10.3 Neutrino masses.** The $(\bar{\mathbf4},\mathbf1,\mathbf2)$ contains $\nu_R$, so a Majorana mass needs either a $(\mathbf{10},\mathbf1,\mathbf3)$-like triplet or the $\Sigma$; the minimal sector supplies neither, and the seesaw is therefore a property of the extended sector rather than of the frame. The minimal sector ties $m_u$ to $m_\nu$ through the same single matrix, and that tie is not a neutrino mass prediction but a symptom: it is the same proportionality as above, read on the other vev. Its numerical size is in the coupling article.
 
-**The honest summary of this section.** The group is fine and the *matter* content is fixed; **the scalar content is a menu**, and the menu is chosen to satisfy the three jobs above. **A presentation that offered the scalar sector as derived would be inventing** — and one that offered the minimal sector as empty would be mis-counting. It is neither: it is a sector with the right size and the wrong relations.
+**The summary.** The group is fine and the matter content is fixed; the scalar content is a set of open choices, and the choices are made to satisfy the three jobs above. A presentation that offered the scalar sector as derived would be inventing, and one that offered the minimal sector as empty would be mis-counting. It is neither: it is a sector with the right size and the wrong relations.
 
 ## 11. The Diquark Fork: Dimension Six
 
-**The fork the gauge sector's safety depends on, now with its mechanism.**
+**The fork.** The gauge sector's safety depends on it, and this section gives its mechanism.
 
-**11.1 Which components are coloured.** $\Sigma$ in the $(\mathbf{15},\mathbf2,\mathbf2)$ decomposes under $\mathrm{SU}(3)$ as
+**11.1 The coloured components.** $\Sigma$ in the $(\mathbf{15},\mathbf2,\mathbf2)$ decomposes under $\mathrm{SU}(3)$ as
 
 $$
 \mathbf{15}\to\mathbf8\oplus\mathbf3\oplus\bar{\mathbf3}\oplus\mathbf1 .
 $$
 
-**The $\mathbf3$ and $\bar{\mathbf3}$ are colour triplets with lepton number**, so they can couple to $qq$ and to $q\ell$ at once — **a diquark and a leptoquark coupling in the same field.**
+The $\mathbf3$ and $\bar{\mathbf3}$ are colour triplets with lepton number, so they can couple to $qq$ and to $q\ell$ at once — a diquark and a leptoquark coupling in the same field.
 
 **11.2 What that does.** A single $\Sigma$ exchange then gives a dimension-six operator $(qq)(q\ell)$:
 
@@ -245,22 +247,22 @@ $$
 \tau(p\to e^{+}\pi^{0})\ \propto\ \frac{M_\Sigma^{4}}{\lambda^{2}} .
 $$
 
-**The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim10^{15}$ GeV** for order-one couplings — four extra powers of the scale, and ten orders of magnitude above the leptoquark bound.
+The measured limit $\tau>2.4\times10^{34}$ yr then requires $M_\Sigma\gtrsim10^{15}$ GeV for order-one couplings — four extra powers of the scale, and ten orders of magnitude above the leptoquark bound.
 
-**11.3 The two branches, stated as a choice the model cannot make.**
+**11.3 The two branches.** The choice is stated, and the model cannot make it.
 
 | branch | consequence |
 |---|---|
 | **no diquark coupling** (a discrete symmetry forbids $qq\Sigma$) | proton is stable, $M_\Sigma$ can be at the leptoquark scale, and the symmetry is unexplained |
 | **diquark coupling allowed** | $M_\Sigma\gtrsim10^{15}$ GeV, the coloured scalars are unreachable, and the leptoquark prediction of §7 becomes empty |
 
-**11.4 Why this is the sharpest open question in the model.** The first branch needs a symmetry nobody derives; the second makes the model's one sharp prediction unobservable. **A frame that needs an unexplained discrete symmetry to survive, and loses its predictions when it does not have one, is a frame on probation** — and that is a fair description of the frame, not a defect of this translation.
+**11.4 The open question.** The first branch needs a symmetry nobody derives; the second makes the model's one sharp prediction unobservable. A frame that needs an unexplained discrete symmetry to survive, and loses its predictions when it does not have one, is a frame whose status rests on that symmetry.
 
 ## 12. The Bidoublet and the $\rho$ Parameter
 
-**The one place where a scalar choice is measurable at low energy.**
+**A measurable scalar.**
 
-**12.1 The bidoublet has two vacuum expectation values.** Write
+**12.1 Two vevs.** Write
 
 $$
 \langle H\rangle=\begin{pmatrix}\kappa&0\\0&\kappa'\end{pmatrix},
@@ -268,41 +270,39 @@ $$
 v^2=\kappa^2+\kappa'^2\ \text{(up to convention)} .
 $$
 
-**Two vevs in one field is one too many for the electroweak sector**: the Standard Model's single doublet has one, and the ratio $\kappa'/\kappa$ is a new parameter.
+Two vevs in one field is one too many for the electroweak sector: the Standard Model's single doublet has one, and the ratio $\kappa'/\kappa$ is a new parameter.
 
-**12.2 Why that threatens $\rho$.** The tree-level relation $M_W^2=M_Z^2\cos^2\theta_W$ holds when the breaking is done by a single doublet per factor, because a global custodial $\mathrm{SU}(2)$ protects it. **A second vev in the same bidoublet breaks that custodial symmetry**, so $\rho-1$ becomes proportional to $\kappa\kappa'$ times a mixing factor. **In the limit $\kappa'\to0$ — alignment — the relation is restored exactly.**
+**12.2 Why that threatens $\rho$.** The tree-level relation $M_W^2=M_Z^2\cos^2\theta_W$ holds when the breaking is done by a single doublet per factor, because a global custodial $\mathrm{SU}(2)$ protects it. A second vev in the same bidoublet breaks that custodial symmetry, so $\rho-1$ becomes proportional to $\kappa\kappa'$ times a mixing factor. In the limit $\kappa'\to0$ — alignment — the relation is restored exactly.
 
-**12.3 The three ways to keep $\rho=1$, and their prices.**
+**12.3 Three ways.** What each requires.
 
-| mechanism | price |
+| mechanism | requirement |
 |---|---|
 | alignment, $\kappa'\to0$ | a tuning, not a symmetry; radiative corrections re-introduce the deviation |
 | a triplet $(\mathbf1,\mathbf3,\mathbf1)$ and its mirror | restores custodial symmetry exactly, adds two fields and a hierarchy problem |
 | the $(\mathbf{15},\mathbf2,\mathbf2)$ taking a suitable vacuum | does the job, but its coloured components bring §11 |
 
-**12.4 What the frame says.** It predicts $\rho=1$ only in the alignment limit, **and the measured $\rho$ is $1.00038\pm0.00020$**, so the alignment is a real constraint on the scalar sector: $\kappa\kappa'$ is bounded to be small. [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html) owns the details; **this article records that the frame inherits the problem rather than solving it.**
+**12.4 What the frame says.** It predicts $\rho=1$ only in the alignment limit, and the measured $\rho$ is $1.00038\pm0.00020$, so the alignment is a real constraint on the scalar sector: $\kappa\kappa'$ is bounded to be small. [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html) owns the details; this article records that the frame inherits the problem rather than solving it.
 
-## 13. What the Sector Costs
+## 13. What the Sector Leaves Open
 
-**The costs, and the first is the one the register of failures records.**
+**13.1 Proportional spectra.** Proportional spectra are not observed (§10.1). One bidoublet means one Yukawa matrix for two sectors, and that is one matrix too few. The comparison against the measured ratios, with values, is in the coupling article; the conclusion drawn here needs none of them. The first-generation mismatch is repairable by a second bidoublet or the $(\mathbf{15},\mathbf2,\mathbf2)$, at the consequence stated in §10.1 and §11; the neutrino failure is repaired by a seesaw, which is a different field and a different scale. No amount of writing repairs an absent field; a relation that misses is repaired by adding the field that splits it, and the model has candidates for both.
 
-**13.1 The minimal sector gives proportional spectra, and proportional spectra are not observed.** §10.1. One bidoublet means one Yukawa matrix for two sectors, and that is one matrix too few. **The comparison against the measured ratios, with values, is in the flagged coupling article**; the conclusion drawn here needs none of them. **The first-generation mismatch is repairable** by a second bidoublet or the $(\mathbf{15},\mathbf2,\mathbf2)$, at a price stated in §10.1 and §11; **the neutrino failure is repaired by a seesaw, which is a different field and a different scale.** **No amount of writing repairs an absent field; a relation that misses is repaired by adding the field that splits it, and the model has candidates for both.**
+**13.2 Open choices.** (§10). Several jobs, several candidate fields, no algebraic guidance. The frame underdetermines its own scalars by more than it underdetermines its fermions, and the asymmetry is structural: the fermions are one sixteen, and the scalars are whichever multiplets the mass relations require.
 
-**13.2 The extended sector is a menu.** §10. Several jobs, several candidate fields, no algebraic guidance. **The frame underdetermines its own scalars by more than it underdetermines its fermions**, and the asymmetry is structural: the fermions are one sixteen, and the scalars are whichever multiplets the mass relations require.
+**13.3 A constraint, not a prediction.** $\rho=1$ in the alignment limit, $\kappa\kappa'$ small. That is a bound the model must satisfy, not a number it produces.
 
-**13.3 The one measurable consequence is a constraint, not a prediction.** $\rho=1$ in the alignment limit, $\kappa\kappa'$ small. **That is a bound the model must satisfy, not a number it produces.**
+**13.4 The large scale.** Whatever the bound turns out to be, it forces $v_R$ upward, and each of the model's difficulties grows with the scale it forces:
 
-**13.4 The cost of a large scale, stated without the number.** Whatever the bound turns out to be, it forces $v_R$ upward, and each of the model's costs grows with the scale it forces:
+- the hierarchy. $M_{C}/M_{Z}\gtrsim2.7\times10^{3}$ is the floor of the hierarchy problem, not its solution; the model has to explain a ratio that the bound has already made large.
+- the running. Any coupling that has to travel between the two scales travels further when the upper scale rises. How far it travels, and what it does on the way, is the coupling article's subject and not this one's.
+- the reach. Each factor of two in $M_X$ takes the leptoquarks and the $W_R$ further from any collider, which is §7.3 read as a consequence rather than as a table.
 
-- **the hierarchy.** $M_{C}/M_{Z}\gtrsim2.7\times10^{3}$ is the *floor* of the hierarchy problem, not its solution; the model has to explain a ratio that the bound has already made large.
-- **the running.** Any coupling that has to travel between the two scales travels further when the upper scale rises. **How far it travels, and what it does on the way, is the flagged coupling article's subject and not this one's.**
-- **the reach.** Each factor of two in $M_X$ takes the leptoquarks and the $W_R$ further from any collider, which is §7.3 read as a cost rather than as a table.
+So the statement has two halves, and both are needed: the bound is satisfied by a large vacuum, and it is not free, because it puts the model in the region where its hierarchy is worst.
 
-**So the honest statement has two halves, and both are needed**: the bound is satisfied by a large vacuum, and it is not costless, because it puts the model in the region where its hierarchy is worst.
+**13.5 The sector is forced.** Six states with fixed charge, fixed colour and a fixed mass ratio, appearing because one line was gauged. A frame that produced six adjustable states would explain nothing; this one produces six states with no freedom beyond $v_R$.
 
-**13.5 The sector is forced, and that is a virtue.** Six states with fixed charge, fixed colour and a fixed mass ratio, appearing because one line was gauged. **A frame that produced six adjustable states would explain nothing; this one produces six states with no freedom beyond $v_R$.**
-
-**13.6 Their absence is the model's largest problem, and it is a *null* problem.** Nothing is contradicted. **Six states that should exist and have not been seen** is the weakest possible form of failure and also the most persistent: it cannot be repaired by a better calculation, only by raising the scale — and raising it to $10^{15}$ GeV to satisfy a diquark bound makes the states unseeable rather than merely unseen, **so that the model's one sharp prediction becomes empty.**
+**13.6 A null problem.** Nothing is contradicted. Six states that should exist and have not been seen is the weakest possible form of failure and also the most persistent: it cannot be repaired by a better calculation, only by raising the scale — and raising it to $10^{15}$ GeV to satisfy a diquark bound makes the states unseeable rather than merely unseen, so that the model's one sharp prediction becomes empty.
 
 ## 14. The Checks
 
@@ -330,21 +330,45 @@ $$
 | the vertex quantum numbers | $B-L$ on the legs against the $X$'s own $B-L$ | $\pm\tfrac43$ both, conserved |
 | the only coloured massive states | colour is a stabiliser, so only $\mathfrak m$ | six |
 
+## 15. Distinctions That Are Easy to Lose
+
+$24$ against $12$ is not an exhaustion: twelve is what the breaking spends, not what the fields contain (§4).
+
+The minimal sector is not empty; it keeps twelve real scalars, among them a charged pair and two neutral states (§4.2).
+
+It is not safe either: the single bidoublet gives proportional spectra, and the measured spectra are not proportional (§10.1).
+
+That failure is not permanent: it is a false relation, and a second bidoublet or the $(\mathbf{15},\mathbf2,\mathbf2)$ repairs it (§13.1).
+
+$\rho=1$ is not automatic; it needs alignment, and alignment is a tuning (§12).
+
+The diquark fork is not a technicality: it decides whether the model is testable (§11.3).
+
+The leptoquark bound is not a measurement; it is a floor, and its coefficient is uncertain by a factor of a few (§9).
+
+"Proton decay does not bind" does not mean "proton decay does not happen": $B$ is violated in thirds and the operators are there, they are simply dimension nine (§8).
+
+$M_X=\sqrt2M_{W_R}$ is not a group relation; it is the minimal vacuum's, and the $(\mathbf{15},\mathbf2,\mathbf2)$ moves it (§7.4).
+
+The lower bound is not free, and the absence of a proton-decay bound is not the absence of any bound: $K_L\to\mu e$ does bind, at $250$ TeV, and the consequences fall in the hierarchy and the running (§13.4).
+
+A leptoquark vertex does not violate $B-L$: the $X$ carries $\pm\tfrac43$ and the vertex conserves it (§6.1).
+
 ## Summary
 
 **The fields.** $(\mathbf4,\mathbf1,\mathbf2)$ with $16$ real components, $(\mathbf1,\mathbf2,\mathbf2)$ with $8$, and $(\mathbf{15},\mathbf2,\mathbf2)$ with $120$.
 
 **The breaking.** The first field breaks $\mathrm{SU}(4)$ and $\mathrm{SU}(2)_R$, eating six and two; the second breaks the electroweak pair, eating four.
 
-**The count.** $16+8=24$ against $12$ broken generators: twelve eaten, twelve survive. **The minimal sector breaks correctly and keeps a scalar** — a colour triplet, a charged singlet, $H^{\pm}$ and two neutrals.
+**The count.** $16+8=24$ against $12$ broken generators: twelve eaten, twelve survive. The minimal sector breaks correctly and keeps a scalar — a colour triplet, a charged singlet, $H^{\pm}$ and two neutrals.
 
-**The defect.** One bidoublet means one Yukawa matrix for two sectors, so the down-type and charged-lepton mass matrices are proportional and their spectra must coincide in shape. **The measured spectra do not coincide**, and the comparison with its values is in the flagged coupling article. **The first-generation miss is repairable** by a second bidoublet or by the $(\mathbf{15},\mathbf2,\mathbf2)$; the neutrino one by a seesaw.
+**The defect.** One bidoublet means one Yukawa matrix for two sectors, so the down-type and charged-lepton mass matrices are proportional and their spectra must coincide in shape. The measured spectra do not coincide, and the comparison with its values is in the coupling article. The first-generation miss is repairable by a second bidoublet or by the $(\mathbf{15},\mathbf2,\mathbf2)$; the neutrino one by a seesaw.
 
-**The leptoquarks.** $\mathfrak m=\mathbf3_{2/3}\oplus\bar{\mathbf3}_{-2/3}$, six states, $B-L=\pm\tfrac43$, $Q=\pm\tfrac23$, colour triplet or antitriplet. **They exist because the fourth colour is gauged; colour being a stabiliser makes them the only coloured massive bosons in the theory.**
+**The leptoquarks.** $\mathfrak m=\mathbf3_{2/3}\oplus\bar{\mathbf3}_{-2/3}$, six states, $B-L=\pm\tfrac43$, $Q=\pm\tfrac23$, colour triplet or antitriplet. They exist because the fourth colour is gauged; colour being a stabiliser makes them the only coloured massive bosons in the theory.
 
 **What they do.** Convert quarks into leptons, $\Delta B=\tfrac13$ per fermion leg, with $B-L$ conserved because the $X$ carries $\pm\tfrac43$ itself; mediate $K_L\to\mu e$ at tree level with no suppression.
 
-**The bound.** A bound on $M_X$ and a bound on $M_{W_R}$ are the same bound up to $\sqrt2\,g_4/g_R$. **The numerical value is in the flagged coupling article**, because it is obtained by turning a coupling into a rate.
+**The bound.** A bound on $M_X$ and a bound on $M_{W_R}$ are the same bound up to $\sqrt2\,g_4/g_R$. The numerical value is in the coupling article, because it is obtained by turning a coupling into a rate.
 
 **The mass relation.** $M_X=\sqrt2\,(g_4/g_R)\,M_{W_R}$; the $\sqrt2$ is the group's, and the coupling ratio multiplies it.
 
@@ -352,7 +376,7 @@ $$
 
 **The $\rho$ parameter.** The bidoublet's second vev breaks custodial symmetry; $\rho=1$ needs alignment or a triplet.
 
-**The verdict.** The group and matter content are constrained; the scalars are a menu, and this article is where the menu is shown — a sector of the right size and the wrong shape, whose one sharp prediction is forced, unseen, and evadable only by making it empty.
+**The verdict.** The group and matter content are constrained; the scalars are open, and this article is where the openness is shown — a sector of the right size and the wrong shape, whose one sharp prediction is forced, unseen, and evadable only by making it empty.
 
 ## Summary of Notation
 
@@ -377,6 +401,4 @@ $$
 - [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The $\rho$ parameter in the corpus's own language, which §12 inherits rather than solves.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). Why a larger group is not available, which is what makes the fourth colour the only route to these six states.
 - [What the Standard Model Does Not Explain: Dark Matter, Baryogenesis and the Sphaleron](what-the-standard-model-does-not-explain-dark-matter-baryogenesis-and-the-sphaleron.html). The $B$ violation this sector supplies, and why it is not enough for baryogenesis.
-- [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The scale the leptoquark bound forces, read as a fine-tuning cost — §13.4.
-
-**The traps.** Do not read $24$ against $12$ as an exhaustion: twelve is what the breaking spends, not what the fields contain — §4. Do not read the minimal sector as empty; it keeps twelve real scalars, among them a charged pair and two neutral states — §4.2. Do not read it as safe either: the single bidoublet gives proportional spectra, and the measured spectra are not proportional — §10.1. Do not read that failure as permanent: it is a false relation, and a second bidoublet or the $(\mathbf{15},\mathbf2,\mathbf2)$ repairs it — §13.1. Do not read $\rho=1$ as automatic; it needs alignment, and alignment is a tuning — §12. Do not read the diquark fork as a technicality: it decides whether the model is testable — §11.3. Do not read the leptoquark bound as a measurement; it is a floor, and its coefficient is uncertain by a factor of a few — §9. Do not read "proton decay does not bind" as "proton decay does not happen": $B$ is violated in thirds and the operators are there, they are simply dimension nine — §8. Do not read $M_X=\sqrt2M_{W_R}$ as a group relation; it is the minimal vacuum's, and the $(\mathbf{15},\mathbf2,\mathbf2)$ moves it — §7.4. **Do not read the lower bound as free**, and do not read the absence of a proton-decay bound as the absence of any bound: $K_L\to\mu e$ does bind, at $250$ TeV, and the bill is paid in the hierarchy and the running — §13.4. **Do not read a leptoquark vertex as violating $B-L$**: the $X$ carries $\pm\tfrac43$ and the vertex conserves it — §6.1.
+- [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The scale the leptoquark bound forces, read as a fine-tuning problem — §13.4.
