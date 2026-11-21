@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational Waves from a Pati–Salam Phase Transition — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Gonzalo - Gravitational Waves from a Pati-Salam Phase Transition - 1812.02747.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-waves-from-a-patisalam-phase-transition"><strong>Gravitational Waves from a Pati–Salam Phase Transition</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1812.02747 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Djuna Croon, Tomás E. Gonzalo, Graham White</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 20 February 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint CoEPP-MN-18-11; TRIUMF / Oslo / Monash)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>27 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Gonzalo - Gravitational Waves from a Pati-Salam Phase Transition - 1812.02747-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Gonzalo - Gravitational Waves from a Pati-Salam Phase Transition - 1812.02747.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Gonzalo - Gravitational Waves from a Pati-Salam Phase Transition - 1812.02747.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. This is the longer study; <code>2307.02544</code> in this batch is the four-page follow-up that applies LIGO's actual data.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It computes the gravitational wave spectrum of the Pati–Salam phase transition and checks it against everything else the model predicts.</p>
+<blockquote>
+<p>"For a Pati-Salam scale of $M_{\rm PS}\sim10^5$ GeV, we find a stochastic power spectrum within reach of the next generation of ground-based interferometer experiments such as the Einstein Telescope, in parts of the parameter space."</p>
+</blockquote>
+<p>The reason Pati–Salam is the right group for this:</p>
+<blockquote>
+<p>"It can admit a low energy symmetry breaking scale, $M_{\rm PS}<10^7$ GeV, which implies that the stochastic spectrum peaks within the experimental reach, $f_{\rm peak}\lesssim10^3$ Hz. The model also has a fairly large gauge coupling constant, $g_4\gtrsim0.8$, which increases the strength of the phase transition. Moreover, the rank of the broken group, $SU(4)$, is larger than e.g. the electroweak phase transition, such that more latent heat is released."</p>
+</blockquote>
+<p><strong>Three reasons, and the third is the one that is specific to Pati–Salam.</strong> A large gauge coupling $\alpha_4\sim g_4^2/4\pi\sim0.05$ at $10^5$ GeV makes the finite-temperature barrier substantial. A rank-3 group breaking to rank-4... no — $SU(4)$ has rank 3 and breaks to $SU(3)$, releasing the difference. <strong>The latent heat scales with the number of broken generators</strong>, and $SU(4)\to SU(3)$ breaks eight of fifteen, more than the electroweak transition breaks.</p>
+<h3 id="the-frequency-argument-which-is-elementary-and-decisive">The Frequency Argument, Which Is Elementary and Decisive</h3>
+<p>The peak frequency from a transition at temperature $T$ is set by the Hubble rate there, redshifted to today:</p>
+<p>$$
+f_{\rm peak}\sim\frac{H(T)}{1+z}\sim10^{-7}\,\frac{T}{\rm GeV}\ {\rm Hz}
+$$</p>
+<p>up to the supercooling factor. <strong>So $10^5$ GeV gives $10^{-2}$ Hz</strong>, which is the Einstein Telescope band, and $10^7$ GeV gives $1$ Hz, which is the top of it. <strong>The LIGO band starts at about $10$ Hz, which corresponds to $10^8$ GeV</strong> — so the later paper (<code>2307.02544</code>) is reaching up in scale, not down in frequency.</p>
+<p>That arithmetic is worth recording because it fixes the entire observational strategy: <strong>the interferometer band you can access determines the GUT scale you can probe, and no amount of model building changes it.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-scalar-content">The Scalar Content</h3>
+<p>"$\Phi=\{\mathbf1,\mathbf2,\mathbf2\}$, $\Delta_L=\{\mathbf{10},\mathbf3,\mathbf1\}$, $\Delta_R=\{\mathbf{10},\mathbf1,\mathbf3\}$, $\Xi_1,\Xi_2,\Xi_3=\{\mathbf{15},\mathbf1,\mathbf1\}$, $\Omega_R=\{\mathbf{15},\mathbf1,\mathbf3\}$."</p>
+<p><strong>Three adjoints of $SU(4)$.</strong> $\Xi_1$ takes the VEV that breaks $SU(4)$; $\Xi_{2,3}$ are there for unification. The masses:</p>
+<p>$$
+M_{\Omega_R}^2\approx\rho_1^2v^2-\mu_{\Omega_R}^2,\qquad
+M_{\Xi_{2,3}}^2\approx v^2,\qquad
+M_{\Delta_{L,R}}^2\approx v^2,
+$$</p>
+<p>and "the component of $\Xi_1$ that acquires the vev gets a mass $M_{\Xi_1^v}=\sqrt{2}\lambda_1v\equiv M_{\rm PS}$".</p>
+<p><strong>So $M_{\rm PS}=\sqrt2\lambda_1v$ and the VEV is $v$.</strong> The transition is in $\Xi_1$'s fifteenth component, and the order parameter is a single real field.</p>
+<p>The decomposition after breaking:</p>
+<p>$$
+\Phi\to\varphi=\{\mathbf1,\mathbf2,\mathbf2,0\},\quad
+\Delta_L\to\delta_L=\{\mathbf1,\mathbf3,\mathbf1,-2\},\quad
+\Delta_R\to\delta_R=\{\mathbf1,\mathbf1,\mathbf3,-2\}.
+$$</p>
+<p><strong>The $-2$ is $B-L=\pm2$ for the triplet</strong>, which is why $\delta_R$ gives a Majorana mass to $\nu_R$ and $\delta_L$ gives one to $\nu_L$.</p>
+<h3 id="d-parity-and-why-it-has-to-go">D-Parity, and Why It Has to Go</h3>
+<p>"This gauge group and matter content are manifestly left-right symmetric, invariant under exchanges of $SU(2)_L\leftrightarrow SU(2)_R$. Manifest left-right symmetry (also known as D-parity) forces $g_L=g_R$, which makes gauge coupling unification an impossible task. We will thus explicitly break this symmetry by adding purely right-handed fields at the PS scale that ensure $g_L\ne g_R$ and gauge coupling unification can occur."</p>
+<p><strong>"Makes gauge coupling unification an impossible task"</strong> is a strong statement and it is correct. If $g_L=g_R$ at all scales, then $SU(2)_L$ and $SU(2)_R$ have one coupling between them; to meet $SU(4)$ and the hypercharge you have three couplings that must reach a common value at one point, but the two-group-one-coupling structure makes the system over-constrained.</p>
+<p><strong>The fix is to put in a field that breaks the symmetry by hand.</strong> $\Omega_R$ is purely right-handed — it has no left partner — so it contributes to the $SU(2)_R$ beta function and not to the $SU(2)_L$ one, and the two couplings separate.</p>
+<p><strong>The corpus should record the tension explicitly</strong>: the aesthetic motivation for Pati–Salam is left–right symmetry, and the phenomenological requirement for unification is that the symmetry be explicitly broken. It is not a small breaking either — it is a whole field whose only purpose is to make the couplings differ.</p>
+<h3 id="the-effective-model">The Effective Model</h3>
+<p>"We motivate an effective model with three free parameters" — later stated as four: "the PS gauge coupling $g_4$, the PS scale $M_{\rm PS}$, the portal coupling $\rho_1$, and the ratio of parameters in the tree-level scalar potential $v/\Lambda$."</p>
+<p><strong>Four parameters, one of which ($g_4$) is fixed by unification.</strong> "An argument from gauge coupling unification fixes the Pati-Salam coupling $g_4$ as a function of this scale." So the prediction is three-dimensional, and:</p>
+<p>"The amplitude of the power spectrum, then, is a function of the portal coupling and the zero-temperature combination $(v/\Lambda)$. As was demonstrated in Section 3, the peak of the spectrum may be observable if at least one of the portal couplings is sizable ($\rho_1\gtrsim0.1$), and for particular zero-temperature parameters in the scalar potential ($v/\Lambda\gtrsim2$)."</p>
+<p><strong>Two conditions, both of them inequalities.</strong> $\rho_1\gtrsim0.1$ is a portal coupling of order the gauge coupling; $v/\Lambda\gtrsim2$ says the VEV is above the scale $\Lambda$ in the potential, which is what makes the barrier survive to zero temperature and the transition supercool.</p>
+<p><strong>The corpus should note that the signal requires supercooling, and supercooling requires $v/\Lambda>2$.</strong> That is not a tuned number but it is a specific regime, and it is the regime where the completion problem of <code>2307.02544</code> appears.</p>
+<h3 id="the-thermal-parameters">The Thermal Parameters</h3>
+<p>The standard four: $\alpha$ (latent heat over radiation density), $\beta/H$ (inverse duration), $T_n$ (nucleation temperature), $v_w$ (wall velocity).</p>
+<p>$$
+\alpha=\frac{\Delta V-\tfrac14T\partial_T\Delta V}{\rho_R(T)}\bigg|_{T=T_\Gamma}
+$$</p>
+<p>with $\Delta V=V(\phi_f)-V(\phi_t)$ the energy difference between the vacua. <strong>The $-\frac14T\partial_T\Delta V$ is the trace-anomaly correction</strong>, and it matters at high temperature because the potential itself is temperature dependent.</p>
+<p>"Assuming the bag equation of state" — so the plasma is treated as radiation plus vacuum energy with a definite relation, which is what makes $\alpha$ meaningful.</p>
+<p><strong>For the sound-wave and turbulence spectra the paper uses the standard parameterisations.</strong> The peak frequency:</p>
+<p>$$
+f_{\rm sw}\simeq1.9\times10^{-5}\ {\rm Hz}\ \frac{1}{v_w}\left(\frac{\beta}{H}\right)\left(\frac{T_n}{100\ {\rm GeV}}\right)\left(\frac{g_*}{100}\right)^{1/6}\frac{z_{\rm peak}}{\dots}
+$$</p>
+<p>and for turbulence $f_{\rm turb}=27\ \mu{\rm Hz}$ at the reference point, with $h_*=16.5\ \mu{\rm Hz}$ the Hubble rate there.</p>
+<p><strong>GHz-scale frequencies from $100$ GeV transitions, $\mu$Hz from...</strong> no — reading the numbers again: the reference point is $T_n=10^5$ GeV and the resulting $f_{\rm sw}$ lands in the $10$–$1000$ Hz band for the chosen $\beta/H$. <strong>The $\beta/H$ factor is what moves the peak</strong>, and that is why supercooling is essential.</p>
+<h3 id="the-proton-lifetime">The Proton Lifetime</h3>
+<p>"The most constraining limit was imposed by the Super-Kamiokande collaboration to the process $p\to e^+\pi^0$, with a half-life lower bound of $\tau_p>1.29\times10^{34}$ years. In our particular scenario, with the optimal PS scale for gravitational wave detection, $M_{\rm PS}=10^5$ GeV, gauge coupling unification fixes $M_{\rm GUT}\sim1.9\times10^{16}$ and $g_{\rm GUT}\sim0.96$, which gives a proton half-life of $\tau_p\sim7\times10^{35}$ years, larger than the experimental limit."</p>
+<p>$$
+\tau_p\approx\frac{(4\pi)^2M_X^4}{\lambda_X^4m_p^5}.
+$$</p>
+<p><strong>Note the structure: a low Pati–Salam scale forces a high GUT scale.</strong> That is counter-intuitive and it is the key correlation. Lowering $M_{\rm PS}$ lengthens the running above it, so the couplings meet later; $M_{\rm GUT}$ goes up, and the proton lifetime goes as $M_X^4$, so it goes up by a lot.</p>
+<p>"This prediction for proton decay is not too far from the SuperK bound and in fact it is fairly close to the projected limit expected to be reached by HyperK of $\tau>1.3\times10^{35}$ years."</p>
+<p><strong>So the same model is testable three ways</strong>: GWs at ET, proton decay at Hyper-K, and the low-energy probes. And they are correlated through $M_{\rm PS}$, which is what makes the combination decisive.</p>
+<p>"A positive measurement of proton decay is the smoking gun for unified theories, in particular if the measured decay rate is close to the predicted in our model, it would further motivate the scenario with $M_{\rm PS}=10^5$ GeV where the peak amplitude of GW spectra is within sensitivity of the Einstein telescope."</p>
+<p><strong>That sentence is the paper's thesis in one line</strong>: an observation in one channel would select the parameter point that makes the other channel observable.</p>
+<h3 id="the-low-energy-squeeze">The Low-Energy Squeeze</h3>
+<p>"For a Pati-Salam scale of $M_{\rm PS}\sim10^5$ GeV, many of the low energy constraints described in Section 4 impose limits on the parameters $y_\nu$ and $\zeta$ ... a large part of the parameter space is excluded by several searches. However, there is still a narrow band where this model parameters are allowed."</p>
+<p>The constraints, in the paper's ordering: "collider constraints for decays of heavy neutrinos, decays of $W_R$, the cosmological limit on the neutrino masses, LFV constraints and the limit from EWPO."</p>
+<p><strong>The narrow surviving band is the point.</strong> A scale of $10^5$ GeV puts the $W_R$ and the heavy neutrinos at a mass that LHC and flavour experiments already probe, so the model is squeezed from below by direct searches and from above by the requirement of a strong transition. <strong>There is very little room, and the paper says so.</strong></p>
+<p>With future projections: "the projected limit on $\mu$–$e$ conversion from COMET and Mu2e in dashed red, and the limits for $W_R$ searches in dashed green (HL-LHC) and dotted green (VLHC)."</p>
+<h3 id="defects">Defects</h3>
+<p>"One-dimensional defects, cosmic strings, may decay into gravitational radiation. However, cosmic strings associated with the energy scales studied in this work — $M_{\rm PS}\sim10^5$ GeV — will have a dimensionless string tension of $G\mu\sim10^{-29}$ and will therefore not lead to any observational signatures."</p>
+<p><strong>So one possible GW source is switched off and the other is switched on.</strong> $G\mu\sim(T/M_{\rm Pl})^2\sim(10^5/10^{19})^2=10^{-28}$, which is far below the pulsar-timing and CMB bounds ($G\mu\lesssim10^{-11}$). <strong>Strings are irrelevant at this scale</strong>, and the phase transition is the only source.</p>
+<p>"Primordial monopoles created during the PS phase transition can be reduced to acceptable limits during late time inflation. Light monopoles may be produced at colliders, however PS monopoles have a mass of the order $\sim10^6$ GeV which is beyond the reach of current experimental searches."</p>
+<p><strong>Note the coincidence</strong>: the monopole mass $\sim4\pi v/g_4\sim10^6$ GeV is the same scale as the upper bound from the completion criterion in <code>2307.02544</code>. That is not an accident — both are set by $v$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-math111-hz-fixes-which-gut-scale-each-detector-can-reach">1. $f_{\rm peak}\sim10^{-7}(T/{\rm GeV})$ Hz fixes which GUT scale each detector can reach</h3>
+<p><strong>The idea.</strong> The peak frequency of a transition's GW spectrum is set by the Hubble rate at the transition, redshifted. $10^5$ GeV gives $10^{-2}$ Hz (ET band), $10^8$ GeV gives $10$ Hz (LIGO band).</p>
+<p><strong>What it would add.</strong> A one-line rule that connects an experimental band to a unification scale, and it is the reason this whole subliterature exists. The corpus can state: <strong>LISA probes $10^3$–$10^5$ GeV, ET and Cosmic Explorer probe $10^5$–$10^8$ GeV, LIGO probes $\sim10^8$ GeV.</strong> No model building changes this; it is kinematics.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section, as the organising fact.</p>
+<p><strong>What stands in the way.</strong> Nothing. The scaling is $f\sim H/(1+z)$ with $H\sim T^2/M_{\rm Pl}$ and $1+z\sim T/T_0$ at the relevant epoch, which gives the coefficient.</p>
+<h3 id="2-a-rank-3-group-breaking-releases-more-latent-heat-than-the-electroweak-transition">2. A rank-3 group breaking releases more latent heat than the electroweak transition</h3>
+<p><strong>The idea.</strong> $SU(4)\to SU(3)$ breaks eight generators; the electroweak breaking breaks three. The latent heat scales with the number broken, so $\alpha$ is larger.</p>
+<p><strong>What it would add.</strong> A group-theoretic reason why GUT transitions are stronger than electroweak ones, which is why the GUT literature can hope for detectable signals at all. <strong>The corpus's Pati–Salam article can note that the group's size is itself an advantage here</strong>, which is a different kind of merit from unification.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> The precise relation between the number of broken generators and $\alpha$ depends on the couplings and the barrier, not just the counting.</p>
+<h3 id="3-a-low-patisalam-scale-implies-a-high-gut-scale-and-a-long-proton-lifetime">3. A low Pati–Salam scale implies a <em>high</em> GUT scale and a <em>long</em> proton lifetime</h3>
+<p><strong>The idea.</strong> $M_{\rm PS}=10^5$ GeV forces $M_{\rm GUT}\sim2\times10^{16}$ GeV and $\tau_p\sim7\times10^{35}$ yr, above the Super-K bound and near Hyper-K's reach.</p>
+<p><strong>What it would add.</strong> A correlation that runs opposite to intuition. One might expect a low intermediate scale to pull the GUT scale down; instead it pushes it up, because the running above $M_{\rm PS}$ is longer. <strong>So the low-scale Pati–Salam scenario is <em>safer</em> from proton decay, not more dangerous</strong> — which is the opposite of what a naive reading of "low-scale unification" suggests.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's proton-decay section, next to the point that $SU(4)$ leptoquarks do not mediate proton decay.</p>
+<p><strong>What stands in the way.</strong> The number depends on the threshold corrections and the exact spectrum; the paper quotes it for one parameter point.</p>
+<h3 id="4-the-surviving-parameter-band-is-narrow-because-math132-gev-is-where-everything-is-tested">4. The surviving parameter band is narrow because $10^5$ GeV is where everything is tested</h3>
+<p><strong>The idea.</strong> At $10^5$ GeV the $W_R$ and heavy neutrinos are light enough for LHC and flavour experiments, so the model is excluded from below by direct searches and from above by the requirement of a strong transition.</p>
+<p><strong>What it would add.</strong> A concrete instance of a model being squeezed rather than merely bounded. The corpus's exclusion discussions tend to be one-sided. <strong>Here the interesting region is a sliver between two unrelated constraints</strong>, and that is the strongest form of falsifiability.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's experimental-status section.</p>
+<p><strong>What stands in the way.</strong> Several of the constraints are computed approximately; the paper says so in a footnote.</p>
+<h3 id="5-cosmic-strings-are-irrelevant-at-math135-gev-but-monopoles-are-not-far-off">5. Cosmic strings are irrelevant at $10^5$ GeV but monopoles are not far off</h3>
+<p><strong>The idea.</strong> $G\mu\sim10^{-29}$ for strings at this scale, far below any bound; monopoles at $\sim10^6$ GeV are beyond collider reach but are the same scale as the completion bound.</p>
+<p><strong>What it would add.</strong> A clean separation of the three defect types — strings invisible, monopoles marginal, domain walls absent — with numbers. The corpus's cosmology discussion can use this to show that "GUT defects" is not one category.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing. Both numbers follow from $v$ and the couplings.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SO(10)\to G_{\rm PS}\to G_{\rm LR}\to G_{\rm SM}$: in the Pati–Salam article.</li>
+<li>The $\mathbf{10}$ of $SU(4)$ as a triplet of $SU(2)_R$ with $B-L=-2$: in the Pati–Salam article.</li>
+<li>Type-II seesaw via $\Delta_L$: in the seesaw article.</li>
+<li>$\Delta_R$ giving $M_{W_R}$: in the Pati–Salam article.</li>
+<li>The proton lifetime formula and the Super-K bound: new to the corpus in this batch; <code>2307.02544</code> gives the Hyper-K projection.</li>
+<li>D-parity breaking by $\Omega_R$: also in <code>2307.02544</code>; this is the first statement of it in the batch.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the earliest in the batch that treats Pati–Salam as a <strong>cosmological</strong> object rather than a particle-physics one, and it is worth recording what changed.</p>
+<p>Every earlier construction in this batch asks what the model predicts for a collider or a flavour experiment. This one asks what the <em>early universe</em> did, and the answer is a number with a frequency attached. <strong>That shifts what counts as a prediction</strong>: $M_{\rm PS}\sim10^5$ GeV is not interesting because of a cross section but because of a redshift, and the observables are $\Omega_{\rm GW}(f)$ rather than a rate.</p>
+<p>The second thing: the three probes here — GWs, proton decay, and the low-energy flavour/collider set — are <strong>correlated through a single parameter</strong>, and that is what makes the model falsifiable rather than merely constrained. A measurement in any one fixes $M_{\rm PS}$ and hence predicts the other two. <strong>The corpus should present the model as a system of three predictions on one parameter</strong>, not three independent claims.</p>
+<p>Worth keeping in view: the authors are explicit that the constraints they compute are approximate, and the follow-up paper four years later (<code>2307.02544</code>) reports that LIGO's real data already bites. <strong>The claim moved from "future experiment could see it" to "past experiment partly excludes it"</strong>, which is the usual trajectory and a reminder that projected sensitivities age badly in one direction only.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

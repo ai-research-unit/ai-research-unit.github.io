@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SO(10) MSGUT: Spectra, Couplings and Threshold Effects — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Aulakh - MSGUT a la Pati-Salam - from Futility to Precision - hep-ph_0405074.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="so10-msgut-spectra-couplings-and-threshold-effects"><strong>SO(10) MSGUT: Spectra, Couplings and Threshold Effects</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0405074 (v4)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Charanjit S. Aulakh, Aarti Girdhar</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 29 June 2005</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>46 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Aulakh - MSGUT a la Pati-Salam - from Futility to Precision - hep-ph_0405074-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Aulakh - MSGUT a la Pati-Salam - from Futility to Precision - hep-ph_0405074.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Aulakh - MSGUT a la Pati-Salam - from Futility to Precision - hep-ph_0405074.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<p>A note on the name: the file is called <em>MSGUT a la Pati-Salam: from Futility to Precision</em>, but the PDF's own title page reads <em>SO(10) MSGUT: Spectra, Couplings and Threshold Effects</em>. The second title is the one printed, and it is the one used here.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper computes the complete superheavy spectrum and all couplings of the minimal supersymmetric $SO(10)$ GUT with Higgs content $210\oplus126\oplus\overline{126}\oplus10$, by decomposing $SO(10)$ labels into Pati–Salam labels. With the spectrum in hand it scans the single controlling parameter $\xi=\lambda M/\eta m$ and computes the threshold corrections to $\sin^2\theta_W$ and to $M_X$. The result contradicts a fifteen-year-old claim: for generic parameters the corrections are under $10\%$ of the one-loop values, not catastrophic, so precision calculation in this model is feasible. The paper also writes down the matter couplings, the $d=5$ baryon-violating operators and the fermion mass formulae. Its method is the point: the Pati–Salam subgroup is used as the readable coordinate system in which an $SO(10)$ computation can actually be finished.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model-and-why-it-is-called-minimal">The Model and Why It Is Called Minimal</h3>
+<p>The chiral supermultiplets are the antisymmetric tensors $210(\Phi_{ijkl})$, $126(\Sigma_{ijklm})$, $\overline{126}(\bar\Sigma^{ijklm})$ for symmetry breaking, the $10(H_i)$ for fermion masses, and three spinorial $16$-plets $\Psi_A$ for matter. The $126\oplus\overline{126}$ pair is there for a reason: it breaks $U(1)_R\times U(1)_{B-L}\to U(1)_Y$ while preserving supersymmetry, and it can generate realistic neutrino masses through the type I or type II seesaw.</p>
+<p>The superpotential is</p>
+<p>$$
+W_{AM}=\tfrac12 M H_i^2+\frac{m}{4!}\Phi_{ijkl}\Phi_{ijkl}+\frac{\lambda}{4!}\Phi_{ijkl}\Phi_{klmn}\Phi_{mnij}+\frac{M}{5!}\Sigma_{ijklm}\bar\Sigma^{ijklm}
++\frac{\eta}{4!}\Phi_{ijkl}\Sigma_{ijmno}\bar\Sigma^{klmno}+H_i\Phi_{jklm}(\gamma\Sigma_{ijklm}+\bar\gamma\bar\Sigma_{ijklm}),
+$$</p>
+<p>$$
+W_{FM}=h'_{AB}\,\psi_A^TC_2\gamma_i\psi_B H_i+\tfrac{1}{5!}f'_{AB}\,\psi_A^TC_2\gamma_{i_1\dots i_5}\psi_B\Sigma_{i_1\dots i_5}.
+$$</p>
+<p>Counting the parameters is the paper's argument for minimality. The seven complex parameters of $W_{AM}$ reduce to ten real ones after four phase redefinitions; the fifteen residual real parameters of $W_{FM}$ remain; one gauge coupling. <strong>$26$ non-soft parameters.</strong> The MSSM also has $26$: nine fermion masses, three neutrino masses, three quark and three lepton mixing angles, one quark and three lepton CP phases, three gauge couplings, and $\mu$. So the fifteen Yukawa parameters must account for twenty-two observables — which is what makes the model predictive and, in the authors' word, falsifiable.</p>
+<p>The convention that makes the rest work is stated in one line:</p>
+<p>$$
+Y=2T_{3R}+B-L .
+$$</p>
+<h3 id="the-calculation-and-why-patisalam-is-the-tool">The Calculation, and Why Pati–Salam Is the Tool</h3>
+<p>The paper's technique is not a computer scan of $SO(10)$ invariants. It is a translation: every $SO(10)$ tensor and spinor invariant is rewritten as a combination of Pati–Salam invariants, using the technology the authors developed in hep-ph/0204097. The reason is stated plainly — the embedding $SU(3)\times SU(2)_L\times U(1)_Y\subset SU(4)\times SU(2)_L\times SU(2)_R$ is trivial once you keep $Y=2T_{3R}+B-L$ in mind, so contact with MSSM phenomenology becomes transparent. The authors say the method is tedious but keeps track of every phase and normalisation without ambiguity, and is analytic where the competing computer-based computations are not, which lets them trace discrepancies.</p>
+<p>The output is the full gauge and chiral superheavy mass spectrum as functions of the single complex parameter</p>
+<p>$$
+\xi=\frac{\lambda M}{\eta m},
+$$</p>
+<p>which enters the cubic equation that determines the vevs. The paper calls $\xi$ "the most crucial determinant of the mass spectrum". The other couplings $\lambda,\eta,\gamma,\bar\gamma$ enter only logarithmically, and the authors report that changing $\lambda$ and $\eta$ by a factor of $100$ each leaves the plots indistinguishable.</p>
+<h3 id="the-question-the-paper-answers">The Question the Paper Answers</h3>
+<p>In 1989 Dixit and Sher argued that high-precision calculations in $SO(10)$ — and especially in supersymmetric $SO(10)$ with large representations such as $210,54,126$ — are futile, because the number of superheavy fields and the expected spread of their masses would produce enormous threshold corrections. The paper's framing of the test is sharp:</p>
+<blockquote>
+<p><em>Are the one-loop values of $\sin^2\theta_W$ and $M_X$ generically stable against superheavy threshold calculations?</em></p>
+</blockquote>
+<p>"Generically" meaning: on a non-singular subset of parameter space. The authors note that the negative expectation had never been checked by an explicit calculation, so cancellations that occur naturally would have been overlooked.</p>
+<h3 id="the-answer">The Answer</h3>
+<p>The corrections are computed with the standard Hall formulae,</p>
+<p>$$
+\frac{1}{\alpha_i(M_S)}=\frac{1}{\alpha_G(M_X)}+\frac{b_i}{8\pi}\ln\frac{M_X}{M_S}+\frac{1}{4\pi}\sum_j b_{ij}\ln X_j-\frac{1}{4\pi}\lambda_i(M_X),
+$$</p>
+<p>with</p>
+<p>$$
+\lambda_i(\mu)=-\frac{2}{21}(b_i^V+b_i^{GB})+2(b_i^V+b_i^{GB})\ln\frac{M_V}{\mu}+2b_i^S\ln\frac{M_V}{\mu}+2b_i^F\ln\frac{M_F}{\mu},
+$$</p>
+<p>and the MSSM coefficients $\{b_1,b_2,b_3\}=\frac{1}{16\pi^2}\{\frac{33}{5},1,-3\}$. The inputs are $\alpha_G^{-1}(M_X^0)=25.6$, $M_X^0=10^{16.25}$ GeV, $M_S=1$ TeV, $\alpha_1^{-1}=57.45$, $\alpha_2^{-1}=30.8$, $\alpha_3^{-1}=11.04$. The two-loop pieces alone give $\Delta_{2\text{-loop}}(\log_{10}M_X/M_S)=-0.08$ and $\Delta_{2\text{-loop}}(\sin^2\theta_W)=0.0026$.</p>
+<p>For the threshold piece the paper scans $\xi$ with $\lambda=0.12$, $\eta=0.21$, $\gamma=0.23$, $\bar\gamma=0.35$. The findings:</p>
+<ul>
+<li>for most real $\xi$, the correction to $\sin^2\theta_W(M_S)$ is <strong>under $10\%$</strong> of the one-loop value;</li>
+<li>three exceptional values of $\xi$ breach that, and even there the change reaches only about $25\%$;</li>
+<li>for large $|\xi|$ an asymptotic regime of about $10\%$ sets in;</li>
+<li>the correction to $\log_{10}M_X$ is also modest, but has regions reaching $-5$, which matter because the gauge contribution to the nucleon lifetime goes as $M_X^{-4}$.</li>
+</ul>
+<p><strong>The peaks in the plots sit at known special points</strong>: $\xi=-5$ and $\xi=10$ give $SU(5)$, $\xi=3$ gives the left–right group $G_{LR}$, and $\xi=-2/3$ gives flipped $SU(5)\times U(1)$. The paper calls the scan a global "tomograph" of the parameter space in the ratio $M/m$.</p>
+<h3 id="the-consistency-test-that-settled-a-dispute">The Consistency Test That Settled a Dispute</h3>
+<p>The paper's appendix reassembles the several hundred $G_{123}$-invariant mass terms into $SU(5)$-invariant mass terms at the $SU(5)$-preserving vevs $a=-\omega=p$, finding for instance</p>
+<p>$$
+2(M+10\eta p)\mathbf 1_\Sigma\mathbf 1_\Sigma+2(M+4\eta p)\bar{\mathbf 5}_\Sigma\mathbf 5_\Sigma+2(M-2\eta p)\mathbf{50}_\Sigma\mathbf{50}_\Sigma+\dots
+$$</p>
+<p>The authors call this "a much more fine-grained consistency test than any overall trace or determinant test". The point is not decorative: a competing group had claimed their spectrum failed $SU(5)$ consistency, using trace and determinant checks. The paper answers that those checks are convention-dependent, and that the term-wise reassembly passes. The final note records the outcome: the critics' preprint hep-ph/0412348 was reissued and <strong>the claims of inconsistency were totally retracted</strong>.</p>
+<h3 id="baryon-violation-and-fermion-masses">Baryon Violation and Fermion Masses</h3>
+<p>The matter couplings to the $210,126,\overline{126},10$ Higgses and to the gauginos are written explicitly, which identifies the channels for exotic $\Delta B\neq0$ processes and gives the bare $d=5$ operators, "some of both novel". The fermion mass section gives the charged-fermion mass matrices, the left- and right-handed Majorana mass terms, and the $SU(2)_L$ triplet micro-vev responsible for the type II mechanism.</p>
+<h3 id="what-the-paper-claims-beyond-the-model">What the Paper Claims Beyond the Model</h3>
+<p>The authors argue that above $M_X$ the $SO(10)$ coupling necessarily grows strong, and that this drives dynamical symmetry breaking at a scale $\Lambda_U$ just above $M_X$, determined by low-energy data and the structure of the theory. They describe this as opening a "new fundamental length scale $\Lambda_U^{-1}$ characterising the hearts of quarks". This part is programmatic; the calculation in this paper is the spectrum and the thresholds.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-patisalam-subgroup-as-the-coordinate-system-a-calculation-can-be-finished-in">1. The Pati–Salam subgroup as the coordinate system a calculation can be finished in</h3>
+<p><strong>The idea.</strong> $SO(10)$ invariants are rewritten as Pati–Salam invariants, and that rewriting is what makes a 46-page computation tractable. The authors say the embedding $SU(3)\times SU(2)_L\times U(1)_Y\subset SU(4)\times SU(2)_L\times SU(2)_R$ makes contact with the MSSM "trivial and transparent".</p>
+<p><strong>What it would add.</strong> An argument for the corpus's own choice of frame that the corpus does not make. <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code> justifies Pati–Salam by what it explains — charge quantisation, $B-L$ from the fourth colour, the seesaw — and records what it does not do. It does not say: <em>Pati–Salam is also the subgroup in which the larger algebra's bookkeeping becomes possible</em>. That is a different kind of virtue: not explanatory power but calculability.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article, in the introduction's list of reasons, and in the section that compares the frame with $\mathrm{SU}(5)$ and $SO(10)$.</p>
+<p><strong>What stands in the way.</strong> The corpus has no $SO(10)$ to decompose. But the claim is about <em>why the frame is the right one to compute in</em>, and it can be stated without importing the group: a decomposition into factors that match the observed quantum numbers turns a messy invariant into a product of understandable ones. The corpus already does this once, when it writes $SU(4)\to SU(3)\times U(1)$ and reads the leptoquark block off the $15\to8\oplus1\oplus6$ split.</p>
+<h3 id="2-threshold-corrections-are-small-which-sharpens-the-corpuss-own-failure">2. Threshold corrections are small — which sharpens the corpus's own failure</h3>
+<p><strong>The idea.</strong> A spectrum of hundreds of superheavy states corrects $\sin^2\theta_W$ by less than $10\%$ for generic parameters, and at most $25\%$ at exceptional points. The 1989 "futility" claim was wrong because it was never computed.</p>
+<p><strong>What it would add.</strong> A negative result the corpus can use. The Pati–Salam article records $\sin^2\theta_W=\frac38=0.375$ against $0.231$ measured — a $38\%$ discrepancy — and offers no diagnosis. Aulakh's number bounds one possible excuse: <strong>a large superheavy spectrum does not shift the one-loop value by $38\%$; it shifts it by about $10\%$.</strong> So the corpus's failure is not a threshold artefact. It is a failure of the assumption, which is what the corpus already suspects but has not been able to say quantitatively.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, the paragraph on the unification condition, and the ledger row recording the $\sin^2\theta_W$ failure. One sentence: <em>threshold corrections in a comparable model are below $10\%$, so they do not rescue a $38\%$ discrepancy</em>.</p>
+<p><strong>What stands in the way.</strong> The models differ: Aulakh's thresholds are computed in a supersymmetric $SO(10)$ desert, the corpus's in a non-supersymmetric Pati–Salam. The comparison is indicative, not exact, and must be labelled as such.</p>
+<h3 id="3-twenty-six-parameters-against-twenty-six-observables">3. Twenty-six parameters against twenty-six observables</h3>
+<p><strong>The idea.</strong> The MSGUT has exactly as many non-soft parameters as the MSSM has observables, and fifteen of them must produce twenty-two numbers.</p>
+<p><strong>What it would add.</strong> A sharp form of the predictivity argument. The corpus's Pati–Salam article counts bosons and records which are massive. It does not count <em>parameters against observables</em>, which is the count that decides whether a model is testable. Doing it once, in the corpus's own frame, would be a real strengthening.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article, near the ledger.</p>
+<p><strong>What stands in the way.</strong> The corpus's frame has far fewer parameters than the MSGUT's because it has far fewer fields. The comparison is a method, not a number.</p>
+<h3 id="4-a-convention-collision-worth-recording-math109-against-math110">4. A convention collision worth recording: $Y=T_{3R}+\frac12(B-L)$ against $Y=2T_{3R}+B-L$</h3>
+<p><strong>The idea.</strong> Aulakh writes $Y=2T_{3R}+B-L$ with $Q=T_{3L}+Y/2$. The corpus writes $Y=T_{3R}+\frac12(B-L)$ with $Q=T_{3L}+Y$. The two are the same statement in two normalisations of hypercharge, differing by a factor of two.</p>
+<p><strong>What it would add.</strong> A guard against a reader, or a future conversion, mistaking the difference for an error. The corpus already records that $q=6Y$ was chosen to make the charge table integral; this is the same freedom exercised differently.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article, in a footnote on conventions, and in the notation summary.</p>
+<p><strong>What stands in the way.</strong> Nothing. It is a one-line note, and it is the kind of note that saves a week.</p>
+<h3 id="5-a-consistency-test-that-is-term-wise-not-aggregate">5. A consistency test that is term-wise, not aggregate</h3>
+<p><strong>The idea.</strong> The spectrum is validated by reassembling it into $SU(5)$-invariant groups term by term, which the authors call finer-grained than any trace or determinant test. The dispute that prompted it ended in a retraction.</p>
+<p><strong>What it would add.</strong> A methodological rule the corpus can adopt: <em>check a decomposition by rebuilding the larger object term by term, not by checking an aggregate invariant</em>. Aggregate checks pass by coincidence; term-wise checks do not.</p>
+<p><strong>Where it lands.</strong> No physics article. It belongs in <code>_reserve/CONVERSION-RULES.md</code>'s neighbourhood as a note on how claims are checked, or in a future article on the corpus's method.</p>
+<p><strong>What stands in the way.</strong> Nothing, but it is a rule about method and the corpus's articles are about physics. It is worth one paragraph somewhere, not a section.</p>
+<h3 id="6-math117-operators-from-a-definite-higgs-content">6. $d=5$ operators from a definite Higgs content</h3>
+<p><strong>The idea.</strong> With the matter couplings written out, the $\Delta B\neq0$ channels are identifiable and the bare $d=5$ operators follow, with some new ones.</p>
+<p><strong>What it would add.</strong> A concrete instance of the corpus's proton-decay paragraph, which currently states the problem without an operator. The Pati–Salam article has one mention of proton decay; here is what the operator looks like when the Higgs content is fixed.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, the proton-decay paragraph.</p>
+<p><strong>What stands in the way.</strong> $d=5$ operators need supersymmetry and a superpotential. The corpus has neither. The importable part is the statement that <em>which baryon-violating operators exist is a property of the Higgs content, not of the gauge group</em> — which the corpus can hold as a caution.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SU(4)\to SU(3)\times U(1)$ and the leptoquark block: in the Pati–Salam article.</li>
+<li>The type I and type II seesaw: in <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code>, which already distinguishes the two mechanisms and their triplet scalar.</li>
+<li>$B-L$ from the fourth colour: in the Pati–Salam article.</li>
+<li>Gauge-coupling running with the MSSM coefficients: not in the corpus, and not importable without a desert.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

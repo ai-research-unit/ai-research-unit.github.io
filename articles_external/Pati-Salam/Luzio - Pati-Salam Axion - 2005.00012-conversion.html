@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pati–Salam Axion — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Luzio - Pati-Salam Axion - 2005.00012.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="patisalam-axion"><strong>Pati–Salam Axion</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2005.00012 [hep-ph] (v3)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Luca Di Luzio</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 24 June 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, DESY)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>33 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Luzio - Pati-Salam Axion - 2005.00012-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Luzio - Pati-Salam Axion - 2005.00012.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Luzio - Pati-Salam Axion - 2005.00012.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its 2025 counterpart in this batch is the composite axion of Gherghetta–Murayama–Quílez (<code>2505.08866</code>), which answers the objection this paper raises.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It puts the Peccei–Quinn symmetry into a minimal Pati–Salam model, and because the axion lives in a <strong>non-singlet</strong> of the group, the axion mass becomes a function of the Pati–Salam breaking scale.</p>
+<blockquote>
+<p>"I discuss the implementation of the Peccei-Quinn mechanism in a minimal realization of the Pati-Salam partial unification scheme. The axion mass is shown to be <strong>related to the Pati-Salam breaking scale</strong> and it is predicted via a two-loop renormalization group analysis to be in the window $m_a\in[10^{-11},\,3\times10^{-7}]$ eV, as a function of a sliding Left-Right symmetry breaking scale."</p>
+</blockquote>
+<p>"<strong>The main difference</strong> compared to [earlier work] is that here <strong>the axion field resides in a non-singlet representation of Pati-Salam.</strong> This allows in turn to connect the axion mass and the Pati-Salam breaking scale."</p>
+<p><strong>That is the mechanism and it is the point of the paper.</strong> In an ordinary axion model $f_a$ is a free parameter set by a scalar singlet's VEV. Here the axion is a component of a field that <em>also</em> breaks Pati–Salam, so $f_a$ and $M_{\rm PS}$ are the same number, and the unification analysis fixes one from the other.</p>
+<p><strong>The corpus should record this as the general trick</strong>: if the axion sits in a field that does symmetry breaking, its decay constant is not free. The cost is that the axion's couplings are then constrained by the gauge structure.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-extra-fields">Why the Extra Fields</h3>
+<p>The scalar sector: $S\sim(\mathbf{15},\mathbf1,\mathbf1)$, $\Delta_L\sim(\mathbf{10},\mathbf3,\mathbf1)$, $\Delta_R\sim(\mathbf{10},\mathbf1,\mathbf3)$, $\Phi_1\sim(\mathbf1,\mathbf2,\mathbf2)$, $\Phi_{15}\sim(\mathbf{15},\mathbf2,\mathbf2)$.</p>
+<p>"$S$ is introduced in order to allow for an intermediate breaking stage" — $G_{\rm PS}\to G_{\rm LR}$.</p>
+<p>"<strong>In fact, without $\Phi_{15}$ one would end up with a wrong mass relation between down-quarks and charged leptons, $M_d=M_e^T$.</strong> This is avoided by introducing $\Phi_{15}$ which transforms non-trivially under $SU(4)_{\rm PS}$, so that after $SU(4)_{\rm PS}$ breaking $\langle\Phi_{15}\rangle$ feeds differently into down-quarks and charged leptons."</p>
+<p><strong>That is Georgi–Jarlskog appearing as a necessity.</strong> With only $\Phi_1=(\mathbf1,\mathbf2,\mathbf2)$ the bidoublet gives $M_d=M_e$ exactly, which is wrong by factors of three for the first two generations. <strong>The $(\mathbf{15},\mathbf2,\mathbf2)$ fixes it because its $SU(4)$-breaking VEV gives the colour components a different weight from the lepton component.</strong> The corpus's Pati–Salam article presents the factor of $-3$ as a feature of the adjoint direction; here it is shown to be <em>required</em> by the fermion masses, and <code>1608.04124</code> shows why the $-3$ is exactly $-3$.</p>
+<p>The mass sum rules:
+$$
+M_u=Y_1v_1^u+Y_{15}v_{15}^u,\quad
+M_d=Y_1v_1^d+Y_{15}v_{15}^d,
+$$
+$$
+M_e=Y_1v_1^d-3Y_{15}v_{15}^d,\quad
+M_D=Y_1v_1^u-3Y_{15}v_{15}^u,
+$$
+$$
+M_L=Y_\Delta v_L,\qquad M_R=Y_\Delta v_R.
+$$</p>
+<p><strong>The $-3$ in the lepton rows and the $+1$ in the quark rows is the Georgi–Jarlskog structure</strong>, arising from the $\mathrm{Diag}(1,1,1,-3)$ direction of the $\mathbf{15}$.</p>
+<h3 id="the-pq-charges-and-why-they-are-imposed">The PQ Charges, and Why They Are Imposed</h3>
+<p>$$
+Q_L\to e^{i\frac\alpha2}Q_L,\quad Q_R\to e^{-i\frac\alpha2}Q_R,\quad
+\Delta_{L,R}\to e^{\mp i\alpha}\Delta_{L,R},\quad
+\Phi_{1,15}\to e^{i\alpha}\Phi_{1,15},
+$$</p>
+<p>"which <strong>enhances the predictivity of the Pati-Salam Yukawa sector by enforcing $\tilde Y_{1,15}\to0$</strong>."</p>
+<p><strong>Note that the SM quarks themselves carry PQ charge</strong>: $Q_L$ and $Q_R$ transform. So this is a <strong>DFSZ-type assignment</strong>, not a KSVZ one. <strong>That is what determines $E/N$, and it is where this paper and the 2025 composite axion diverge</strong> — see the last section.</p>
+<p>"The proliferation of Yukawa matrices in Eq. (2.6) makes the model not predictive for fermion masses and mixings. <strong>This provides a rationale for introducing ... a $U(1)_{\rm PQ}$</strong>."</p>
+<p><strong>A third motivation for the axion, besides strong CP and dark matter: it reduces the number of Yukawa matrices.</strong> Setting $\tilde Y\to0$ by the charge assignment removes half of them. That is a motive the corpus probably does not have and it is a genuinely different reason to impose PQ.</p>
+<h3 id="the-mass-prediction">The Mass Prediction</h3>
+<p>The axion decay constant is tied to the $SU(4)$ breaking VEV, and hence</p>
+<p>$$
+m_a\approx2.788\left(\frac{10^{13}\ {\rm GeV}}{M_{\rm PS}}\right)g_{\rm PS}\ \mu{\rm eV},
+$$</p>
+<p>using $m_a=5.691(51)\left(10^{12}\ {\rm GeV}/f_a\right)\mu$eV with $f_a\sim M_{\rm PS}/g_{\rm PS}$.</p>
+<p><strong>So the axion mass is inversely proportional to the Pati–Salam scale</strong>, and the gauge coupling $g_{\rm PS}$ enters linearly. <strong>That is a two-parameter prediction from a model with three inputs</strong>, which is the point.</p>
+<p>The RG result: "the Pati-Salam breaking scale (the axion mass) becomes a <strong>decreasing (increasing) function of a sliding Left-Right symmetry breaking scale</strong>."</p>
+<p>Two-loop windows:
+- $M_{\rm LR}\in[2.0\times10^4,\,4.7\times10^{13}]$ GeV, $M_{\rm PS}\in[1.4\times10^{18},\,4.7\times10^{13}]$ GeV, giving $m_a\in[10^{-11},\,3.4\times10^{-7}]$ eV.
+- With $P$ broken at $M_{\rm LR}$: $M_{\rm LR}\in[2.3\times10^5,\,4.7\times10^{13}]$ GeV, same $m_a$ window.</p>
+<p><strong>Read the first window carefully: $M_{\rm PS}$ ranges from $10^{18}$ GeV down to $5\times10^{13}$ GeV as $M_{\rm LR}$ goes from $10^4$ up.</strong> So a low left–right scale <em>requires</em> a Pati–Salam scale near the Planck mass. <strong>That is the correlation the whole paper is built on</strong>, and it is the same anti-intuitive direction as in <code>1812.02747</code>: lowering an intermediate scale pushes the higher one up.</p>
+<p>"<strong>A Left-Right symmetry breaking scenario as low as 20 TeV is obtained for a Pati-Salam breaking of the order of the reduced Planck mass.</strong>"</p>
+<p><strong>A 20 TeV $W_R$ is a collider target</strong>, and it is what the model predicts when $M_{\rm PS}\sim M_{\rm Pl}$.</p>
+<h3 id="the-experimental-reach">The Experimental Reach</h3>
+<p>"the whole parameter space of the Pati-Salam axion will be probed in the late phases of the axion DM experiments <strong>ABRACADABRA and CASPEr-Electric</strong>."</p>
+<p><strong>The window $10^{-11}$ to $3\times10^{-7}$ eV is the mass range those experiments target</strong>, so the prediction is entirely within reach and no part of it is inaccessible. <strong>That is a strong claim: every allowed point is testable.</strong></p>
+<p>"Possible correlated signatures connected with the breaking of the Left-Right symmetry group include future collider/flavour probes of a low-scale Left-Right breaking (as low as 20 TeV for a Pati-Salam breaking of the size of the reduced Planck mass) and, less generically, the imprint on the gravitational wave spectrum of the Left-Right phase transition."</p>
+<h3 id="the-self-criticism-which-is-the-most-valuable-part">The Self-Criticism, Which Is the Most Valuable Part</h3>
+<p>"While in the Introduction we have praised the nice aspects of the whole setup, here we would like to conclude with a <strong>more critical note</strong>. In the present formulation (as well as in <strong>all GUT$\times U(1)_{\rm PQ}$ models known to the author</strong>) the <strong>PQ symmetry is imposed by hand</strong>, while it would be more satisfactory for it to arise as an <strong>accidental symmetry, possibly due to some underlying gauge dynamics</strong>."</p>
+<p>"Moreover, since global symmetries need not to be exact, it is unclear why the PQ symmetry should be an extremely good symmetry of UV physics, and in particular of quantum gravity, not to spoil the solution of the strong CP problem. <strong>This is particularly problematic for axion GUTs, since the issue gets worse in the $f_a\to M_{\rm Pl}$ limit.</strong>"</p>
+<p>"While we have nothing to say on this important problem, it would be desirable to have some fresh new ideas on how to tackle it (especially in GUTs)."</p>
+<p><strong>That paragraph is a precise statement of the axion quality problem in GUTs, and it names the exact difficulty this model has.</strong> The model wants $M_{\rm PS}\sim M_{\rm Pl}$ for a low $M_{\rm LR}$ — and the quality problem is <em>worst</em> at $f_a\sim M_{\rm Pl}$, because the Planck-suppressed operators that violate PQ are least suppressed there.</p>
+<p><strong>So the paper's own preferred corner is the corner where its mechanism is least defensible.</strong> That is an unusually clear self-assessment and the corpus should record it.</p>
+<p><strong>And the 2025 composite axion paper (<code>2505.08866</code>) answers exactly this.</strong> Its construction makes PQ an accidental symmetry of a confining gauge theory, with the leading violating operator at dimension twelve — which is what permits $f_a\lesssim10^{11}$ GeV. <strong>So the two papers are a question and an answer across five years</strong>, and the batch happens to contain both.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-an-axion-in-a-non-singlet-makes-math65-calculable-but-ties-it-to-the-breaking-scale">1. An axion in a non-singlet makes $f_a$ calculable but ties it to the breaking scale</h3>
+<p><strong>The idea.</strong> If the axion is a component of the field that breaks Pati–Salam, then $f_a\sim M_{\rm PS}/g_{\rm PS}$ and the mass follows.</p>
+<p><strong>What it would add.</strong> A trade the corpus does not discuss. A singlet axion has a free $f_a$ and no prediction; a non-singlet axion has a calculable $f_a$ and no freedom. <strong>The corpus should present the choice explicitly</strong>, because most axion discussions assume the singlet and then wonder why nothing is predicted.</p>
+<p><strong>Where it lands.</strong> Any corpus axion section, and the Pati–Salam article's extended-scalar discussion.</p>
+<p><strong>What stands in the way.</strong> The relation $f_a\sim M_{\rm PS}/g_{\rm PS}$ depends on the scalar potential's structure and is quoted "up to scalar threshold effects."</p>
+<h3 id="2-math70-here-versus-math71-in-the-composite-axion">2. $E/N=8/3$ here versus $-7/3$ in the composite axion</h3>
+<p><strong>The idea.</strong> This model gives the SM quarks PQ charge (DFSZ-like) → $E/N=8/3$. The 2025 composite model keeps them neutral (KSVZ-like) with new confining fermions → $E/N=-7/3$.</p>
+<p>$$
+E=n_g\times(3Q_u^2+3Q_d^2+Q_e^2)(X_{Q_L}-X_{Q_R})=8,\qquad N=3,\qquad \frac EN=\frac83 .
+$$</p>
+<p><strong>What it would add.</strong> A precise, arithmetic reason why two "Pati–Salam axion" papers predict different photon couplings. <strong>Both embed the Standard Model in $\mathbf4$s; the difference is which fields carry PQ charge.</strong> The corpus should present the pair together, because a reader who sees only one will think "the Pati–Salam axion" has a unique $E/N$.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's axion section, with both numbers and the reason.</p>
+<p><strong>What stands in the way.</strong> Nothing. The computation is a sum over charges and both papers show it.</p>
+<h3 id="3-a-pq-symmetry-reduces-the-number-of-yukawa-matrices">3. A PQ symmetry reduces the number of Yukawa matrices</h3>
+<p><strong>The idea.</strong> Imposing $U(1)_{\rm PQ}$ with the charges above forces $\tilde Y_{1,15}\to0$, halving the Yukawa content.</p>
+<p><strong>What it would add.</strong> A motive for PQ that is neither strong CP nor dark matter: <strong>it is a flavour model-building tool.</strong> The corpus's axion discussion gives the usual two motives. This is a third and it is the one that makes the model predictive for fermions.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's Yukawa section, and the flavour articles.</p>
+<p><strong>What stands in the way.</strong> The charge assignment is chosen, not derived, so the "reduction" is a consequence of an assumption.</p>
+<h3 id="4-the-models-best-corner-is-where-its-quality-problem-is-worst">4. The model's best corner is where its quality problem is worst</h3>
+<p><strong>The idea.</strong> $M_{\rm PS}\sim M_{\rm Pl}$ gives $M_{\rm LR}\sim20$ TeV, which is the most attractive corner — and $f_a\sim M_{\rm Pl}$ is exactly where Planck-suppressed PQ violation is least suppressed.</p>
+<p><strong>What it would add.</strong> A worked instance of a tension that the corpus's axion discussion should carry in general: <strong>the larger $f_a$, the safer the cosmology and the less safe the strong CP solution.</strong> Here the model's own parameter scan pushes toward the unsafe end.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's axion section, and <code>2505.08866</code>'s conversion as the resolution.</p>
+<p><strong>What stands in the way.</strong> Nothing; the author states it.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$G_{\rm PS}=SU(4)\times SU(2)_L\times SU(2)_R$ with parity $P$: in the Pati–Salam article.</li>
+<li>$\Phi_{15}=(\mathbf{15},\mathbf2,\mathbf2)$ and the Georgi–Jarlskog $-3$: in the Pati–Salam article, and derived in <code>1608.04124</code> in this batch.</li>
+<li>The type-I/II seesaw with $Y_\Delta$ symmetric: in the seesaw article.</li>
+<li>$m_a=5.691(10^{12}\,{\rm GeV}/f_a)\,\mu$eV: standard; new to this batch.</li>
+<li>$E/N=8/3$ for DFSZ and GUT axions: quoted in <code>2505.08866</code> as the comparison value.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and <code>2505.08866</code> should be read as a pair, and the pair is the most instructive thing about the axion entries in this batch.</p>
+<p>Di Luzio (2020) does the obvious thing well: put PQ into a minimal Pati–Salam model, get a calculable $f_a$ from unification, predict a mass window that ABRACADABRA and CASPEr will cover. <strong>Then he closes by saying the symmetry is imposed by hand and that quantum gravity will spoil it, especially at large $f_a$ — which is where his own model wants to live.</strong></p>
+<p>Gherghetta–Murayama–Quílez (2025) do the hard thing: make PQ accidental, with the leading violating operator at dimension twelve so that $f_a$ can reach $10^{11}$ GeV. <strong>And they get a different $E/N$ because the PQ charges sit on new confining fermions rather than on the SM quarks.</strong></p>
+<p><strong>So the two papers are not variations on a theme; they are the two available strategies</strong>, and the difference in $E/N$ is a symptom of the deeper difference in what carries the charge. The corpus should say this once, clearly, and not present "Pati–Salam + axion" as a single thing.</p>
+<p>The second point: <strong>Luzio's window $10^{-11}$ to $3\times10^{-7}$ eV is fully covered by planned experiments</strong>, which is a strong claim of testability and is the paper's practical contribution regardless of the quality problem. Even if the model is wrong about UV physics, its low-energy prediction is falsifiable within a decade.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

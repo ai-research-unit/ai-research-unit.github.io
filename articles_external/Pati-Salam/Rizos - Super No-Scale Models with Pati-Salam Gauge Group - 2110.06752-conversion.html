@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super No-Scale Models with Pati–Salam Gauge Group — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Rizos - Super No-Scale Models with Pati-Salam Gauge Group - 2110.06752.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="super-no-scale-models-with-patisalam-gauge-group"><strong>Super No-Scale Models with Pati–Salam Gauge Group</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2110.06752 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>T. Florakis, J. Rizos, K. Violaris</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Ioannina)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>48 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Rizos - Super No-Scale Models with Pati-Salam Gauge Group - 2110.06752-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Rizos - Super No-Scale Models with Pati-Salam Gauge Group - 2110.06752.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Rizos - Super No-Scale Models with Pati-Salam Gauge Group - 2110.06752.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its cosmological root is <code>hep-ph/0505221</code> (the no-scale PS model).</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It breaks SUSY by Scherk–Schwarz and finds that Bose–Fermi degeneracy makes the vacuum energy exponentially small.</p>
+<blockquote>
+<p>"We construct and classify <strong>heterotic models where $N=1$ supersymmetry is spontaneously broken à la Scherk–Schwarz.</strong> The theories contain <strong>chiral matter transforming under an observable Pati–Salam gauge symmetry</strong> and are classified ... <strong>essentially controlled by two parameters that are easily computable in terms of the defining string data.</strong>"</p>
+<p>"By imposing <strong>Bose–Fermi degeneracy at the massless level, known as the super no-scale condition</strong>, it is possible to <strong>suppress the value of the effective potential to exponentially small values</strong>, provided the compactification scale is sufficiently lower than the string scale."</p>
+<p>"we compare the space of [vacua] ... <strong>on $SO(10)$ gauge symmetry and confirm the universality structure of their effective one-loop potentials.</strong>"</p>
+</blockquote>
+<p><strong>Two ideas: Scherk–Schwarz breaking, and super no-scale ("Bose–Fermi degeneracy") to make the vacuum energy small.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="scherkschwarz-breaking">Scherk–Schwarz Breaking</h3>
+<p><strong>The mechanism</strong>: <strong>compactify on a circle with a twisted boundary condition</strong>, so that <strong>fields pick up a phase when they go around the circle.</strong> <strong>The Kaluza–Klein modes then have masses $m_n\sim(n+\omega)/R$</strong>, and <strong>if $\omega\neq0$ the spectrum is non-supersymmetric</strong> — <strong>the bosons and fermions get different shifts, so their towers no longer pair up.</strong></p>
+<p><strong>And the breaking scale is $1/R$</strong>, which is a modulus. <strong>So SUSY breaking is tied to the compactification radius</strong>, <strong>and the gravitino mass is $m_{3/2}\sim1/R$.</strong></p>
+<p><strong>That is the batch's cleanest SUSY-breaking mechanism</strong>, because <strong>it is a boundary condition, not a hidden sector</strong>: <strong>no condensation, no messenger, no sequestering.</strong></p>
+<p><strong>The corpus should record it as the third mechanism</strong>, alongside:
+- <strong>gaugino condensation (<code>hep-ph/0505221</code>, <code>2501.08590</code>)</strong>,
+- <strong>flux/generic mediation (<code>2410.09093</code>, <code>2009.04582</code>)</strong>,
+- <strong>and Scherk–Schwarz (here)</strong>.</p>
+<h3 id="the-no-scale-structure">The No-Scale Structure</h3>
+<p><strong>"Scherk–Schwarz corresponds to a flat gauging generating a tree-level scalar potential of the no-scale type."</strong></p>
+<p><strong>No-scale</strong> means <strong>the tree-level potential vanishes identically</strong> — <strong>it is flat in the modulus $R$</strong> — <strong>so SUSY breaking does not generate a cosmological constant at tree level.</strong></p>
+<p><strong>That is the property that made no-scale supergravity attractive in the 1980s</strong>, and it is why <strong><code>hep-ph/0505221</code>'s PS model was a no-scale model.</strong></p>
+<p><strong>So the chain is</strong>: <strong>Scherk–Schwarz breaking → no-scale potential → flat direction $R$ → vacuum energy determined by radiative corrections.</strong></p>
+<h3 id="super-no-scale-bosefermi-degeneracy">Super No-Scale: Bose–Fermi Degeneracy</h3>
+<p>"<strong>Bose–Fermi degeneracy at the massless level, known as the super no-scale condition</strong>"</p>
+<p><strong>The idea, in plain terms.</strong> <strong>Even with a no-scale tree-level potential, the one-loop correction can be large</strong> — <strong>proportional to the number of bosonic minus fermionic degrees of freedom</strong>, $\sum(-1)^F m^4\ln m^2$.</p>
+<p><strong>If the massless spectrum has equal numbers of bosons and fermions</strong> — <strong>Bose–Fermi degeneracy</strong> — <strong>then the leading terms cancel</strong>, and <strong>the one-loop potential is suppressed.</strong></p>
+<p><strong>"suppress the value of the effective potential to exponentially small values, provided the compactification scale is sufficiently lower than the string scale"</strong></p>
+<p><strong>So the condition is</strong>: <strong>degenerate massless spectrum + $1/R\ll M_S$.</strong> <strong>Then the vacuum energy is exponentially small.</strong></p>
+<p><strong>The corpus should record this as the mechanism for a small cosmological constant</strong>, and <strong>it is the batch's only such mechanism.</strong></p>
+<p><strong>And note the parallel with <code>1807.03669</code>'s asymptotic safety</strong>: <strong>both are attempts to make the UV theory consistent without new physics at intermediate scales.</strong> <strong>Here the consistency is about the vacuum energy; there it was about the couplings.</strong></p>
+<h3 id="the-two-parameters">The Two Parameters</h3>
+<p>"essentially controlled by <strong>two parameters that are easily computable in terms of the defining string data</strong>"</p>
+<p><strong>So the classification is tractable</strong>: <strong>the phenomenology depends on two computable quantities</strong>, presumably <strong>the number of generations and the Bose–Fermi difference</strong>, or <strong>the compactification radius and the string coupling.</strong></p>
+<p><strong>That is a strong statement about predictivity</strong>: <strong>a landscape of models, each with two parameters, is far more tractable than a generic string vacuum.</strong></p>
+<p><strong>The corpus should note it</strong>: <strong>this is the heterotic branch's most predictive construction</strong>, because <strong>the effective potential is a function of two parameters.</strong></p>
+<h3 id="the-math10-comparison">The $SO(10)$ Comparison</h3>
+<p>"we compare the space of [vacua] ... on $SO(10)$ gauge symmetry and <strong>confirm the universality structure of their effective one-loop potentials</strong>"</p>
+<p><strong>So the same analysis was done for $SO(10)$ models</strong>, and <strong>the one-loop potentials have a universal structure</strong> — <strong>the same functional form across models.</strong></p>
+<p><strong>That is what makes the two-parameter description possible</strong>: <strong>the potential is universal up to the two parameters.</strong></p>
+<p><strong>The corpus should record the universality</strong>, because <strong>it is the technical basis of the predictivity claim.</strong></p>
+<h3 id="why-this-matters-for-the-corpus">Why This Matters for the Corpus</h3>
+<p><strong>The batch's cosmology section has been about domain walls, gravitational waves, and reheating.</strong> <strong>This paper adds the vacuum energy</strong>, <strong>which is the hardest cosmological problem.</strong></p>
+<p><strong>And it does so with a mechanism that is specific to string theory</strong>: <strong>Scherk–Schwarz breaking plus Bose–Fermi degeneracy has no field-theory analogue</strong>, because <strong>in field theory you cannot tune the massive spectrum's degeneracy.</strong></p>
+<p><strong>The corpus should say that</strong>: <strong>this is a place where the string construction supplies a solution that field theory cannot.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-scherkschwarz-breaking-ties-susy-breaking-to-a-compactification-radius">1. Scherk–Schwarz breaking ties SUSY breaking to a compactification radius</h3>
+<p><strong>The idea.</strong> A twisted boundary condition, with $m_{3/2}\sim1/R$.</p>
+<p><strong>What it would add.</strong> A third SUSY-breaking mechanism, and the cleanest in the batch.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-bosefermi-degeneracy-makes-the-vacuum-energy-exponentially-small">2. Bose–Fermi degeneracy makes the vacuum energy exponentially small</h3>
+<p><strong>The idea.</strong> Equal bosons and fermions at the massless level cancel the one-loop potential.</p>
+<p><strong>What it would add.</strong> The batch's only cosmological-constant mechanism, and a string-specific one.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> The degeneracy must be exact at the massless level.</p>
+<h3 id="3-the-potential-is-universal-and-two-parameter">3. The potential is universal and two-parameter</h3>
+<p><strong>The idea.</strong> All models share the one-loop potential's form; only two numbers vary.</p>
+<p><strong>What it would add.</strong> A predictivity claim unusual in landscape discussions.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> The universality is established for the $SO(10)$ class; the PS class must match it.</p>
+<h3 id="4-no-scale-is-the-link-to-hep-ph0505221">4. No-scale is the link to <code>hep-ph/0505221</code></h3>
+<p><strong>The idea.</strong> The 2005 no-scale PS model and this paper share the structure.</p>
+<p><strong>What it would add.</strong> A continuous thread in the batch's cosmology.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>No-scale Pati–Salam: in <code>hep-ph/0505221</code>.</li>
+<li>Gaugino condensation: in <code>2501.08590</code>, <code>2505.03664</code>.</li>
+<li>Asymptotic safety: in <code>1807.03669</code>.</li>
+<li>The heterotic landscape: in <code>1007.2268</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's most technically ambitious cosmology, and it is worth noting what it does <em>not</em> do.</p>
+<p><strong>It does not compute the cosmological constant.</strong> <strong>"Exponentially small" is not zero</strong>, and <strong>the observed value is $10^{-120}M_P^4$.</strong> <strong>Whether the mechanism reaches that is the open question.</strong></p>
+<p><strong>And it does not connect to the observed universe</strong>: <strong>no inflation, no reheating, no dark energy equation of state.</strong> <strong>The paper is about the vacuum's stability, not its history.</strong></p>
+<p><strong>The corpus should present it that way</strong>, and <strong>compare with <code>2504.01893</code> and <code>2004.02332</code></strong>, which do compute inflationary and gravitational-wave signals. <strong>The batch's cosmology is fragmented</strong>: <strong>some papers do the vacuum energy, some do the defects, some do the reheating, and none does all three.</strong></p>
+<p><strong>That is a fair characterisation and the corpus should state it</strong>: <strong>Pati–Salam's cosmology is a set of mechanisms, not a scenario.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

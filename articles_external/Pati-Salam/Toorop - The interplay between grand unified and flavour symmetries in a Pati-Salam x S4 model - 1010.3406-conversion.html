@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Interplay Between Grand Unified and Flavour Symmetries in a Pati–Salam $\times S_4$ Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Toorop - The interplay between grand unified and flavour symmetries in a Pati-Salam x S4…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-interplay-between-grand-unified-and-flavour-symmetries-in-a-patisalam-math0-model"><strong>The Interplay Between Grand Unified and Flavour Symmetries in a Pati–Salam $\times S_4$ Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1010.3406 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>R. de Adelhart Toorop, F. Bazzocchi, L. Merlo, A. Paris</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1 (proceedings)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (conference proceedings)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Toorop - The interplay between grand unified and flavour symmetries in a Pati-Salam x S4 model - 1010.3406-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Toorop - The interplay between grand unified and flavour symmetries in a Pati-Salam x S4 model - 1010.3406.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Toorop - The interplay between grand unified and flavour symmetries in a Pati-Salam x S4 model - 1010.3406.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. It is the proceedings summary of <code>1003.4502</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Six pages, and it states the model's claim and its two complications.</p>
+<blockquote>
+<p>"Both discrete flavour symmetries and Grand Unified symmetries <strong>explain apparent structures in the mass sector</strong> of the Standard Model. A model that combines both symmetries is therefore very appealing."</p>
+<p>"We construct a model with <strong>the $S_4$ flavour symmetry and the Pati–Salam unification.</strong> We show that <strong>this model can indeed explain many observable relations between the masses of the quarks and leptons</strong> and that <strong>it is predictive in the neutrino sector.</strong>"</p>
+<p>"<strong>However, the combination of the two symmetries leads to new complications in the Higgs sector and in the running of the renormalisation group equations.</strong>"</p>
+</blockquote>
+<p><strong>Two sentences: it works, and it costs.</strong> <strong>The corpus should quote both.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-claim">The Claim</h3>
+<p><strong>"many observable relations between the masses of the quarks and leptons"</strong> — <strong>the $S_4\times PS$ structure relates the sectors</strong>, <strong>so a single set of flavon VEVs fits $m_u,m_c,m_t$, $m_d,m_s,m_b$, $m_e,m_\mu,m_\tau$, the CKM, and the PMNS.</strong></p>
+<p><strong>That is the attraction of combining a GUT with a flavour group</strong>: <strong>the GUT relates the sectors, and the flavour group reduces the parameters.</strong> <strong>Together they over-determine the fit</strong>, <strong>which is what makes it predictive.</strong></p>
+<p><strong>The corpus should record the logic</strong>, because <strong>it is the argument for these models and it is sound</strong>: <strong>relations without a symmetry are accidents; symmetries without relations are unfalsifiable.</strong></p>
+<h3 id="the-two-complications">The Two Complications</h3>
+<p><strong>1. The Higgs sector.</strong> <strong>Breaking $S_4$ needs flavons</strong>, <strong>and in a SUSY model the flavons must not destabilise the GUT-scale vacuum</strong>, <strong>and their VEVs must be aligned.</strong> <strong>That is a large sector with a nontrivial potential.</strong></p>
+<p><strong>2. The RGE running.</strong> <strong>The GUT relations hold at the GUT scale</strong>, <strong>and the flavour fit is at the weak scale</strong>, <strong>so the running between them must be computed with the model's spectrum.</strong></p>
+<p><strong>And the two interact</strong>: <strong>the flavon sector changes the running</strong>, <strong>so the fit and the running cannot be done separately.</strong></p>
+<p><strong>The corpus should record this as the batch's clearest statement of a methodological difficulty</strong>, because <strong>it is the reason many flavour-and-GUT models are incomplete.</strong></p>
+<h3 id="the-predictivity-in-the-neutrino-sector">The Predictivity in the Neutrino Sector</h3>
+<p>"<strong>it is predictive in the neutrino sector</strong>"</p>
+<p><strong>Because the see-saw's structure is fixed by the flavour symmetry</strong>: <strong>the right-handed neutrino mass matrix's pattern is determined by the $S_4$ charges</strong>, <strong>so the light masses and mixings are predicted</strong>, <strong>not fitted.</strong></p>
+<p><strong>That is genuine predictivity</strong>, and <strong>the corpus should note it</strong>: <strong>the neutrino sector is where the model has the fewest free parameters and the most data.</strong></p>
+<p><strong>And that is why the TB mixing prediction was significant</strong>, and why its failure is significant.</p>
+<h3 id="why-the-proceedings-is-worth-keeping">Why the Proceedings Is Worth Keeping</h3>
+<p><strong>It states the problem in six pages</strong>, <strong>and the full paper (40 pages) buries it.</strong> <strong>The corpus should quote the proceedings for the two sentences and cite the full paper for the details.</strong></p>
+<p><strong>That is a useful editorial habit</strong>, and <strong>the corpus should use it consistently</strong>: <strong>proceedings for the claim, papers for the content.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-gut-relations-plus-flavour-symmetry-over-determine-the-fit">1. GUT relations plus flavour symmetry over-determine the fit</h3>
+<p><strong>The idea.</strong> The GUT relates sectors; the symmetry reduces parameters; the combination is predictive.</p>
+<p><strong>What it would add.</strong> The argument for combined models, stated cleanly.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-the-flavon-sector-and-the-rge-running-interact">2. The flavon sector and the RGE running interact</h3>
+<p><strong>The idea.</strong> You cannot fit at the weak scale and run separately; the flavons change the running.</p>
+<p><strong>What it would add.</strong> The methodological difficulty, and a reason many models are incomplete.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-neutrino-sector-is-where-the-predictivity-is">3. The neutrino sector is where the predictivity is</h3>
+<p><strong>The idea.</strong> Fewest parameters, most data, so the sharpest test.</p>
+<p><strong>What it would add.</strong> A reason to judge flavour models by their neutrino predictions.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The full model: in <code>1003.4502</code>.</li>
+<li>$S_4$ in PS: in <code>1605.02072</code>, <code>1111.3952</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This proceedings and <code>1003.4502</code> together make one point the corpus should carry into its flavour chapter.</p>
+<p><strong>The point</strong>: <strong>a combined GUT-and-flavour model is not a flavour model with a GUT bolted on.</strong> <strong>The two symmetries constrain each other</strong>, <strong>and the constraints show up in the Higgs sector and the running.</strong></p>
+<p><strong>So the corpus's flavour comparison should ask two questions of every model</strong>:
+1. <strong>Does it relate quarks and leptons?</strong> (a GUT question)
+2. <strong>Does it reduce the parameters predictively?</strong> (a flavour question)</p>
+<p><strong>And a third</strong>:
+3. <strong>Does it survive the running between the two scales?</strong></p>
+<p><strong>Models that answer only one are incomplete.</strong> <strong>The corpus should say that, and mark which models answer which.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

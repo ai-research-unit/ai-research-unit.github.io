@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pati–Salam Supersymmetric SM (PSSSM) — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Braam - The Pati-Salam Supersymmetric SM PSSSM - 0909.3081.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-patisalam-supersymmetric-sm-psssm"><strong>The Pati–Salam Supersymmetric SM (PSSSM)</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>0909.3081 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Felix Braam, Jürgen Reuter, Daniel Wiesler</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 16 September 2009</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF; conference-note length (4 pages)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>4 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Braam - The Pati-Salam Supersymmetric SM PSSSM - 0909.3081-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Braam - The Pati-Salam Supersymmetric SM PSSSM - 0909.3081.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Braam - The Pati-Salam Supersymmetric SM PSSSM - 0909.3081.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. The PDF is a scanned-typeset conference note; subscripts and superscripts in the superpotential survive only approximately.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The note reports a numerical study of a supersymmetric $E_6$ model in which the $\mathbf{27}$ carries a whole generation <strong>plus</strong> a right-handed neutrino, an NMSSM singlet $S$, and a leptoquark pair $D,D^c$. This content is what $E_6$ forces, and it is also what breaks the Minimal Supersymmetric Standard Model's unification: the extra matter shifts the beta functions, so the three couplings no longer meet at one point. Adding an intermediate Pati–Salam stage between $10^{16}$ and $10^{18}$ GeV repairs the meeting, because at that stage "there are only two independent couplings left to intersect, as $SU(2)_L$ and $SU(2)_R$ have identical particle content." The note then sets up a Markov-chain Monte Carlo over sixteen soft parameters, computes spectra, and shows a sample point with leptoquarks at $600$ GeV and a signal-to-background ratio of $127$ at the LHC.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-math11-and-what-the-math12-contains">Why $E_6$, and What the $\mathbf{27}$ Contains</h3>
+<p>"Grand Unified Theories based on an $E_6$ gauge group embed all Higgs- and matter fields within one $27$ dimensional fundamental representation. In addition each $27$ contains a right handed neutrino, an NMSSM-like standard model singlet and a pair of exotic particles, that couple quarks to leptons."</p>
+<p>The decomposition under the Standard-Model subgroup is spelled out: one full generation of quarks and leptons, the right-handed neutrino, "a full MSSM Higgs-sector, augmented by a SM singlet $S$ as in the NMSSM", and "a pair of exotic particles $D,D^c$ that may couple quarks to leptons and shall be denoted as leptoquarks". And the sentence that makes the note's problem: "Without the introduction of a further mechanism to render the exotic particle heavy at the $E_6$-breaking scale, the full particle content remains in the spectrum down to the TeV-scale."</p>
+<p><strong>That is the whole tension in one line.</strong> A single representation gives economy of content and then refuses to let the unwanted parts decouple.</p>
+<h3 id="the-intermediate-stage">The Intermediate Stage</h3>
+<p>"The extra matter changes the renormalization group equations and hence the running of the couplings: Simple unification of all three SM couplings as in the MSSM is spoiled." The repair is</p>
+<p>$$
+SU(4)\times SU(2)_L\times SU(2)_R\ [\times U(1)_\chi],
+$$</p>
+<p>with the square bracket marking an optional factor. The sample run unifies the Standard-Model groups to Pati–Salam "at $\sim10^{16}$ GeV" and reaches "Full $E_6$ unification ... at $\sim10^{18}$ GeV".</p>
+<p>Hypercharge is the corpus's standard formula, $Y=(B-L)/2+T^3_R$, with $T^{15}\propto(B-L)/2$ the $SU(4)$ Cartan generator and $T^3_R$ the $SU(2)_R$ one. The paper adds the practical remark that "the RGE evolution of the two $U(1)$ couplings introduces a non-trivial mixing among these groups, which can be taken into account by redefining $Q'$", and that the unbroken $U(1)'$ is "the unbroken linear combination of $(B-L)/2$, $T^3_R$ and $Q_\chi$ orthogonal to $Y$".</p>
+<h3 id="how-the-intermediate-group-breaks">How the Intermediate Group Breaks</h3>
+<p>"Some Higgs fields $H',\bar H'$ that transform as $27,\overline{27}$ under $E_6$ aquire a Vev in the direction of the right-handed neutrino. This generates Majorana masses for the right-handed neutrinos, arising from the effective operator $(27\,78\,27)^2$ which trigger a see-saw mechanism."</p>
+<p>Two things are worth isolating. The breaking is done <strong>by a component of the same multiplet that holds the matter</strong> — a $27$ whose $\nu_R$ direction takes the vev — so the scalar that breaks the group and the fermion that gets the Majorana mass are partners in one representation. And the operator is dimension five, $(27\,78\,27)^2$, so the Majorana mass is suppressed by the scale at which the $\mathbf{78}$ is integrated out rather than being a renormalisable coupling.</p>
+<h3 id="the-superpotential">The Superpotential</h3>
+<p>$$
+W=W_{\rm MSSM}+Y_S^H\,S\,H_uH_d+Y_S^D\,S\,DD^c
++Y_{D1}\,D\,u^ce^c+Y_{D2}\,D\,d^c\nu^c+Y_D\,D^cLQ,
+$$</p>
+<p>obtained "from decomposing an $E_6$-symmetric superpotential $W_{E_6}\propto\mathbf{27}^3$, omitting the terms involving the right handed neutrinos as well as the baryon-number violating interactions of the exotic particles".</p>
+<p><strong>The first footnote is the sharpest sentence in the note</strong>: "These particles could also have diquark couplings — only one should be allowed, in order to prevent the proton to decay. In this work, we focus on the leptoquark case." That is the standard dilemma in one clause: the exotic can couple to quarks–leptons or to quark–quark, and keeping both destroys the proton.</p>
+<p>Flavour is handled by a discrete symmetry: "in order to avoid flavor changing neutral currents, we introduce a so-called H-parity, that only allows one Higgs generation to acquire a Vev and couple to matter. This parity renders the lightest 'un-Higgs' stable and hence introduces a possible additional type of dark matter."</p>
+<h3 id="the-scan">The Scan</h3>
+<p>Sixteen parameters, "three of those are be fixed by the minimization of the Higgs-potential", with trilinear soft terms proportional to Yukawas, Yukawas diagonal, phases neglected. For each point the code solves the RGEs, minimises the potential, "checks for perturbativity of the theory up to the unification scale and negative scalar mass-squares", and compares to direct bounds; it is wrapped in an MCMC.</p>
+<p>The qualitative findings:</p>
+<ul>
+<li>"a more or less hierarchical structure of leptoquarks in the range from $500$ GeV to several TeV as their masses $m_D\propto\langle h_{S3}\rangle$ are proportional to the singlet vev";</li>
+<li>"a rather light gluino not much heavier than weak inos, because the QCD beta function vanishes at first order";</li>
+<li>"the lightest Higgs boson runs quite often in the NMSSM parameter channel where it can be as light as $90$ GeV";</li>
+<li>"the decays via the lightest pseudoscalars into four $b$ jets which already excluded discovery at LEP, render a discovery at LHC very intricate";</li>
+<li>$\mathrm{un}$-Higgses "rather heavy, i.e. $M_H\gtrsim1$ TeV", and a $Z'$ "above the current Tevatron limits and electroweak precision data limits".</li>
+</ul>
+<h3 id="the-sample-point">The Sample Point</h3>
+<p>Leptoquarks "order $600$ GeV", lightest Higgs around $110$ GeV, the other two Higgses "far in the decoupling limit at $1$ TeV or more", $Z'$ at "order $2$ TeV", and "the really spectacular feature are the light leptoquarks, which yield cross section in the picobarn range. With an integrated luminosity of $100$ fb$^{-1}$, around $100,000$ signal events could be collected ... This would allow a spectroscopy of the leptoquark sector, and maybe even a determination of the Yukawa couplings." The quoted single-production $p_T$ distribution has "a spectacular signal-to-background ratio of $127$".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-one-multiplet-holds-the-matter-the-higgs-the-singlet-and-the-leptoquark">1. One multiplet holds the matter, the Higgs, the singlet and the leptoquark</h3>
+<p><strong>The idea.</strong> The $\mathbf{27}$ of $E_6$ contains a full generation, the right-handed neutrino, an NMSSM singlet $S$, the MSSM Higgs sector, and the leptoquark pair $D,D^c$. The split between "matter" and "scalars" is not a difference of representations; it is a choice of which component takes a vev.</p>
+<p><strong>What it would add.</strong> The most economical answer the corpus has met to the question its Pati–Salam article keeps asking implicitly — <em>why are there two sectors at all?</em> The corpus's frame has fermions in $\psi$ and scalars in $\Phi$, and it must justify the split. Here the split is a <strong>choice of vacuum direction inside one object</strong>, and the breaking of the group is done by pointing a $27$ along its $\nu_R$ component. That is a genuinely different structure from "a bidoublet acquires a vev", and it explains why the same multiplet that gives the fermion masses also breaks the symmetry.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scalar-sector section, as a contrast: the bidoublet picture versus the single-multiplet picture.</p>
+<p><strong>What stands in the way.</strong> This is supersymmetric and the corpus is not. In a non-supersymmetric $\mathbf{27}$, the "Higgs" and the "fermion" components have different spins and cannot be the same field; only in a SUSY multiplet is the identification literal. So the import is a statement about <em>unified multiplets</em>, not about the corpus's fields. The honest version: <strong>the economy is available only if matter and scalars are superpartners</strong>, and the corpus would have to say whether it wants that.</p>
+<h3 id="2-the-leptoquark-mass-is-a-yukawa-mass-not-a-gauge-mass">2. The leptoquark mass is a Yukawa mass, not a gauge mass</h3>
+<p><strong>The idea.</strong> $m_D\propto\langle h_{S3}\rangle$, the singlet vev, and "this has to be big enough (which comes more or less for free on the other hand, driven by a possibly large leptoquark singlet Yukawa coupling)".</p>
+<p><strong>What it would add.</strong> A direct contradiction of the corpus's sharpest formal claim. The Pati–Salam article states that the leptoquark mass is fixed by the group, $M_X=\sqrt2\,M_{W_R}$, with no adjustable parameter. Here the leptoquark is a <strong>matter multiplet component</strong> and its mass comes from a Yukawa coupling times a vev, so it is adjustable and it sits wherever the scan puts it — $500$ GeV to several TeV. Both statements are correct about their own models. <strong>The difference is whether the leptoquark is a gauge boson or a scalar.</strong> The corpus's fixed relation holds for the vector leptoquark of the adjoint; a scalar leptoquark from a matter multiplet has no such relation.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's mass-relation paragraph, which should say which leptoquarks the relation covers.</p>
+<p><strong>What stands in the way.</strong> Nothing. It is a precision that the article needs anyway, since the 1804.05844 conversion already deals with <strong>scalar</strong> leptoquarks and their masses are free there too. Two conversions now say the same thing, and the corpus's one claim of a fixed mass belongs to the vector case.</p>
+<h3 id="3-extra-matter-destroys-unification-an-intermediate-group-restores-it">3. Extra matter destroys unification; an intermediate group restores it</h3>
+<p><strong>The idea.</strong> Adding the $\mathbf{27}$'s content to the MSSM spoils the meeting of the three couplings. Above $10^{16}$ GeV, however, only two couplings need to meet, because "$SU(2)_L$ and $SU(2)_R$ have identical particle content". Pati–Salam converts a three-coupling problem into a two-coupling problem.</p>
+<p><strong>What it would add.</strong> The mechanism the corpus's coupling section is missing. The corpus notes that $\sin^2\theta_W=\frac38$ fails and that the unification scale is spectrum-dependent, but it does not say <strong>why an intermediate group helps</strong>: not because it changes the group, but because it reduces the number of independent couplings that must meet at one scale. That is a counting argument, and it is the reason the intermediate stage is worth its complexity.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's coupling-unification paragraph, next to the Blanke and Babu scale numbers.</p>
+<p><strong>What stands in the way.</strong> Nothing, and it strengthens the article: the corpus can now present three papers with three different unification scales ($5\times10^{13}$, $10^{16}$, and the Aydemir low-$M_R$ case) and one explanation for the spread.</p>
+<h3 id="4-the-qcd-beta-function-vanishing-at-first-order-and-a-light-gluino">4. The QCD beta function vanishing at first order, and a light gluino</h3>
+<p><strong>The idea.</strong> With this much coloured matter, "the QCD beta function vanishes at first order", so the gluino mass runs very little and comes out "not much heavier than weak inos".</p>
+<p><strong>What it would add.</strong> A structural consequence of exotic colour content that the corpus has no analogue of. The corpus discusses anomalies (which are one-loop, exact) but not the <em>sign and size</em> of beta functions as a diagnostic. Here the number and nature of the colour representations is read off a single coefficient, and the coefficient's near-vanishing is a prediction about the spectrum. <strong>Colour content is not just an anomaly question; it is a running question</strong>, and the corpus's frame, which fixes colour content absolutely, would make a sharp statement here if it computed $b_3$.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's running section, as a worked example of what exotic colour does to $b_3$.</p>
+<p><strong>What stands in the way.</strong> The corpus's frame does not fix the number of coloured exotics beyond the leptoquark multiplet, so $b_3$ would be a prediction rather than a fit — which is the right way round but requires committing to a spectrum.</p>
+<h3 id="5-h-parity-and-dark-matter-from-an-un-higgs">5. H-parity, and dark matter from an un-Higgs</h3>
+<p><strong>The idea.</strong> A discrete symmetry lets only one Higgs generation take a vev and couple to matter, avoiding flavour-changing neutral currents, and it leaves the lightest un-Higgs stable — "a possible additional type of dark matter".</p>
+<p><strong>What it would add.</strong> A second, cheaper answer to the flavour problem than the ones already imported. Barbieri and Tesi use $U(2)^5$; Blanke and Crivellin use alignment plus localisation; this uses a discrete parity on the Higgs sector alone. <strong>Three different scales of symmetry — a continuous flavour group, a geometric alignment, and a discrete parity — solving the same problem</strong>, and the discrete one is the least demanding.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour paragraph, as the third entry in that list.</p>
+<p><strong>What stands in the way.</strong> H-parity is asserted, not derived, and its dark-matter candidate is the un-Higgs, whose mass is $\gtrsim1$ TeV in the scan — so the relic abundance is not computed here. Import it as a mechanism, not as a dark-matter claim.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$Y=(B-L)/2+T^3_R$ and $SU(3)_c\subset SU(4)$: in the Pati–Salam article.</li>
+<li>The leptoquark–diquark dilemma and the proton constraint: in the Pati–Salam article and the 1804.05844 conversion. This note states it in one footnote and picks a side.</li>
+<li>$\nu_R$ in the unified multiplet giving a Majorana mass and a seesaw: in the seesaw article and the Benli conversion.</li>
+<li>The intermediate-group repair of unification: asserted in the Pati–Salam article without the coupling-counting argument; supplied here.</li>
+<li>$E_6$'s $\mathbf{27}$ content and the extra degrees of freedom per generation: in the Benli conversion, counted there as "11 extra fermionic degrees of freedom".</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

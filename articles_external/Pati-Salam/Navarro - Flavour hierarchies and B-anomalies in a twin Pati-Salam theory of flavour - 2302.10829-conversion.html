@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavour Hierarchies and B-Anomalies in a Twin Pati–Salam Theory of Flavour — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Navarro - Flavour hierarchies and B-anomalies in a twin Pati-Salam theory of flavour -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="flavour-hierarchies-and-b-anomalies-in-a-twin-patisalam-theory-of-flavour"><strong>Flavour Hierarchies and B-Anomalies in a Twin Pati–Salam Theory of Flavour</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2302.10829 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>M. Fernández Navarro</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 9 March 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>DISCRETE 2022 proceedings (8th Symposium on Prospects in the Physics of Discrete Symmetries, Baden-Baden, 7–11 November 2022)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Navarro - Flavour hierarchies and B-anomalies in a twin Pati-Salam theory of flavour - 2302.10829-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Navarro - Flavour hierarchies and B-anomalies in a twin Pati-Salam theory of flavour - 2302.10829.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Navarro - Flavour hierarchies and B-anomalies in a twin Pati-Salam theory of flavour - 2302.10829.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Proceedings based on <code>2209.00276</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A second conference version of the twin Pati–Salam, given at DISCRETE 2022. Its distinctive content is a compact statement of the <strong>GIM-like mechanism</strong> and the <strong>common origin of Yukawa and leptoquark couplings</strong>.</p>
+<blockquote>
+<p>"I present a model which can simultaneously explain and connect the flavour hierarchies of the Standard Model with flavour anomalies in $B$-physics. I will briefly introduce the model and highlight the main features, including a <strong>common origin of Yukawa couplings and vector leptoquark $U_1$ couplings to Standard Model fermions</strong>. A GIM-like mechanism allows for large leptoquark couplings which can explain the $B$-anomalies, while <strong>protecting from the most dangerous FCNCs that could be mediated by a heavy coloron and $Z'$</strong>."</p>
+</blockquote>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-common-origin">The Common Origin</h3>
+<p>The model's premise, stated plainly: <code>U_1</code> couplings and SM Yukawa couplings come from the same mixing between chiral and vector-like fermions. So a fit to the fermion masses is a prediction for the leptoquark couplings, and vice versa.</p>
+<p><strong>That is the whole claim, and its consequence is that the model has far fewer parameters than a generic 4321 construction</strong> — which is what "theory of flavour" means here.</p>
+<h3 id="the-gim-like-protection">The GIM-Like Protection</h3>
+<p>This is the point the paper develops best:</p>
+<p>"A GIM-like mechanism allows for large leptoquark couplings which can explain the $B$-anomalies, while protecting from the most dangerous FCNCs that could be mediated by a heavy coloron and $Z'$."</p>
+<p><strong>Why this is necessary</strong>: the 4321 group contains a colour octet $g'$ and a $Z'$, both at the TeV scale. If those had generic flavour-changing couplings, $B_s-\bar B_s$ mixing and $K-\bar K$ mixing would exclude them immediately. <strong>So the model must have large flavour-changing couplings in the leptoquark sector and small ones in the neutral sector — which is precisely the SM's own arrangement.</strong></p>
+<p>The mechanism: the rotation that diagonalises the mass matrices appears in the <em>leptoquark</em> current (which is charged, so a CKM-like matrix is allowed) but cancels in the <em>neutral</em> currents (which must be diagonal). <strong>The same unitarity that gives GIM in the SM gives it here.</strong></p>
+<p><strong>So the construction's viability rests on reproducing the SM's flavour structure at the new scale</strong>, which is a strong requirement and the reason six vector-like families were needed.</p>
+<h3 id="the-status-after-2022">The Status After 2022</h3>
+<p>"The analysis has been updated with the late 2022 measurements of $R_{K^{(*)}}$ by LHCb."</p>
+<p>The consequence, from the parent paper: the model survives only if $R_{K^{(*)}}$ is close to the SM value, and $R(D^{(*)})$ works at $1\sigma$ in a narrow window.</p>
+<h3 id="the-signals">The Signals</h3>
+<p>The proceedings lists the low-energy channels: $\tau\to3\mu$, $\tau\to\mu\gamma$, $B\to K^{(*)}\nu\bar\nu$, and $K_L\to e\mu$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-charged-currents-may-be-flavour-changing-neutral-ones-may-not">1. Charged currents may be flavour-changing; neutral ones may not</h3>
+<p><strong>The idea.</strong> The rotation appears in the leptoquark current but cancels in the colouron and $Z'$ currents, because the latter are neutral.</p>
+<p><strong>What it would add.</strong> A statement of the SM's flavour structure as a <em>design requirement</em> for new physics. The corpus's FCNC discussion, if it has one, states GIM as a suppression mechanism in the SM. <strong>Here it is used constructively</strong>: the model is built so that the new charged current is CKM-like and the new neutral currents are diagonal, which is what allows a TeV colour octet to exist at all.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's gauge-sector section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the mechanism is stated and the earlier one-family failure demonstrates it is nontrivial.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Everything substantive is in <code>2209.00276</code> and <code>2106.03876</code>, both in this batch.</li>
+<li>The GIM-like mechanism is treated at greater length in <code>2209.00276</code>, §3.3.2.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>The twin Pati–Salam series now has four entries in this batch, and this one adds nothing that the others lack except a compact statement of the GIM mechanism. <strong>It is worth recording mainly so the corpus is complete on the series</strong>, and so a reader searching for "twin Pati–Salam" finds a dated chain: 2021 construction, 2022 Corfu summary, 2023 full analysis, 2023 Moriond summary.</p>
+<p>The one idea worth extracting is the constructive use of GIM. It reframes a familiar SM accident as a requirement: <strong>any model with TeV-scale colour-octet or $Z'$ vectors must arrange for their couplings to be flavour-diagonal to the accuracy that meson mixing demands, and the only known way to do that is to make the new charged current carry the entire rotation.</strong> That is a transferable design rule, not a fact about this model.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

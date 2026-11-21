@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modular $S_3$ Flavoured Pati–Salam Model with Two-Family Seesaw — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/King - Modular S_3 flavoured Pati-Salam model with two family seesaw - 2503.14610.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="modular-math0-flavoured-patisalam-model-with-two-family-seesaw"><strong>Modular $S_3$ Flavoured Pati–Salam Model with Two-Family Seesaw</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2503.14610 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. E. Cárcamo Hernández, Ivo de Medeiros Varzielas, S. F. King, Vishnudath K. N.</td>
+</tr>
+<tr>
+<td>version</td>
+<td>18 March 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, USM Valparaíso / CFTP Lisbon / Southampton)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/King - Modular S_3 flavoured Pati-Salam model with two family seesaw - 2503.14610-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/King - Modular S_3 flavoured Pati-Salam model with two family seesaw - 2503.14610.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/King - Modular S_3 flavoured Pati-Salam model with two family seesaw - 2503.14610.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It builds the minimal model of its kind — smallest unified group, smallest modular group — and turns a neutrino mechanism loose on the charged fermions.</p>
+<blockquote>
+<p>"We have proposed a model based on the <strong>smallest quark-lepton unified symmetry</strong>, the Pati-Salam gauge group and the <strong>smallest modular symmetry</strong>, $S_3$."</p>
+<p>"The masses of the <strong>third family</strong> of SM charged fermion arise from <strong>renormalisable Yukawa interactions</strong> involving a colourless scalar bi-doublet as well as a bi-doublet scalar in the adjoint representation of $SU(4)_C$. The <strong>first and second family masses are naturally suppressed due to a Pati-Salam version of the type I seesaw mechanism for neutrinos</strong>, but here <strong>mediated through heavier vector-like Pati-Salam fermions</strong>."</p>
+</blockquote>
+<p><strong>That is the paper's central idea and it is a good one.</strong> The seesaw explains why neutrino masses are small; here the <em>same diagram</em> explains why the first two generations are light. <strong>A hierarchy is generated by the same mechanism that generates the neutrino mass scale</strong>, which means one mechanism does two jobs.</p>
+<p>"The modular $S_3$ is <strong>perfect for implementing a two-family seesaw mechanism, since it admits doublet representations</strong> for the first two families, and a <strong>singlet representation for the third family</strong>."</p>
+<p><strong>That is the cleanest match of group to purpose in the batch.</strong> $S_3$ has exactly one doublet and two singlets; the data have exactly two light families and one heavy. <strong>The representation theory mirrors the mass spectrum</strong>, and no other group fits so economically.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-family-seesaw-for-charged-fermions">The Two-Family Seesaw for Charged Fermions</h3>
+<p>"The diagrams responsible for the effective Yukawa operators are <strong>similar to those of the type I seesaw mechanism for neutrinos, with two insertions of vacuum expectation values, where one of them breaks electroweak symmetry, and one does not.</strong>"</p>
+<p><strong>That sentence is the technical heart.</strong> In the neutrino seesaw, the light mass is $m_D M_R^{-1} m_D^T$: two insertions of the Dirac Yukawa and one heavy Majorana mass. <strong>For a charged fermion there is no Majorana mass to insert</strong> — but there is a vector-like mass $M$, and a VEV, and the diagram is structurally the same:</p>
+<p>$$
+m_f\sim\frac{\langle H\rangle\,M_V\,\langle\sigma\rangle}{M_V^2},
+$$</p>
+<p>so the effective Yukawa is suppressed by the ratio of the two VEVs to the vector-like mass. <strong>The heavy scale plays the role of $M_R$, and the small VEV plays the role of $m_D$.</strong></p>
+<p><strong>And because Pati–Salam relates quarks to leptons, the same suppression applies to the Dirac neutrino mass</strong> — the paper says so explicitly: "Due to the Pati-Salam symmetry, <strong>the same mechanism also suppresses first and second family Dirac neutrino masses</strong>".</p>
+<p><strong>So one diagram gives $m_u,m_d,m_e,m_\nu$ all light, and the third family light only by having no vector-like partner.</strong> That is elegant, and the corpus should record it as a structural idea rather than a fit.</p>
+<h3 id="the-math11-assignment-and-what-it-buys">The $S_3$ Assignment and What It Buys</h3>
+<p>"The three Pati-Salam families are essentially <strong>distinguished by whether they couple to heavier vector-like fermions (the first two families) or not (the third family)</strong>, and this is <strong>controlled by their $S_3$ assignments</strong>."</p>
+<p><strong>First and second families form the $S_3$ doublet; the third is a singlet.</strong> So the vector-like messengers $\Psi_n,\Psi^c_n$ ($n=1,2$) couple to the doublet, giving the seesaw to both light families at once — <strong>and the <em>two</em> messengers are what the doublet needs</strong>, which is why two and not one.</p>
+<p><strong>That is a genuine representation-theoretic necessity</strong>: a doublet needs two partners, and a two-family seesaw needs two messengers, and the two facts are the same fact.</p>
+<p>"The vector-like fermions $\Psi_n$ and $\Psi^c_n$ ($n=1,2$) transforming as $(\mathbf4,\mathbf1,\mathbf2)$ and $(\bar{\mathbf4},\mathbf1,\bar{\mathbf2})$ ... are the <strong>seesaw messengers which mix with the SM fermionic multiplet fields $F_i$ and $F^c_i$ ($i=1,2,3$)</strong>."</p>
+<p><strong>Note the full Pati–Salam multiplets</strong>: the messengers are $(\mathbf4,\mathbf1,\mathbf2)$, i.e. quark-lepton unified, so the messenger that suppresses $m_d$ also suppresses $m_e$ and $m_\nu$. <strong>That is where the quark-lepton relation comes from in this model — not from a GJ factor but from the messenger's multiplet structure.</strong></p>
+<h3 id="the-double-seesaw-for-neutrinos">The Double Seesaw for Neutrinos</h3>
+<p>"the tiny active Majorana neutrino masses then arise from a <strong>double seesaw mechanism</strong>."</p>
+<p>"in the neutrino sector there are additional fields leading to tiny active Majorana neutrino masses via a Double Seesaw mechanism."</p>
+<p><strong>So the chain is: two-family seesaw suppresses the Dirac mass → double seesaw suppresses the Majorana mass → $m_\nu$ is doubly suppressed.</strong> Two mechanisms in series, and the corpus should note that this is why the neutrino can be light without a GUT-scale $M_R$: <strong>the Dirac mass is already small, so the Majorana scale need not be astronomical.</strong></p>
+<h3 id="the-fit-and-the-modulus">The Fit and the Modulus</h3>
+<p>"The model is shown to describe all quark and lepton (including neutrino) masses and mixing angles, in terms of <strong>high energy mass scales, together with complex dimensionless Yukawa coefficients which are all of order unity, and a single complex modulus field $\tau$ with $\operatorname{Im}(\tau)\sim2$</strong>."</p>
+<p><strong>"All of order unity" is the naturalness claim</strong>, and it is the right claim for a modular model: the point of modular symmetry is that the <em>hierarchy</em> comes from the modular forms, not from small coefficients. <strong>And $\operatorname{Im}(\tau)\sim2$ is a specific region of moduli space</strong>, which is a prediction of sorts — the modulus sits near the self-dual point.</p>
+<p><strong>Compare <code>2404.06520</code>'s 19 real parameters with this model's order-unity coefficients and one $\tau$.</strong> If the count here is genuinely smaller, this is the more economical model; the corpus should say which and why.</p>
+<h3 id="the-predictions">The Predictions</h3>
+<p>"It provides a good fit to neutrino data, <strong>assuming a normal ordering</strong> of neutrino masses, while the <strong>inverted ordering is disfavoured</strong>. The associated prediction for neutrinoless double beta decay is <strong>partly within the reach of the nEXO experiment</strong>. In particular, the Dirac CP violating neutrino oscillation phase is predicted to lie in the range $\delta^\nu_{CP}\sim260^\circ$–$360^\circ$."</p>
+<p><strong>Two things stand out:</strong></p>
+<ol>
+<li>
+<p><strong>$m_{\beta\beta}$ partly within nEXO's reach</strong> — unlike <code>1406.7005</code> and <code>2404.06520</code>, which both say "too small to observe". <strong>So this model is distinguishable from its cousins by $0\nu\beta\beta$</strong>, which is exactly the kind of discrimination that makes a landscape useful.</p>
+</li>
+<li>
+<p><strong>$\delta^\nu_{CP}\sim260^\circ$–$360^\circ$ overlaps <code>1406.7005</code>'s $260^\circ\pm5^\circ$</strong> at the lower edge. <strong>Same author, eleven years apart, same CP-phase region</strong> — which is a consistency worth recording, and a reason to take the $260^\circ$ prediction seriously.</p>
+</li>
+</ol>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-seesaw-diagram-that-suppresses-neutrinos-can-suppress-charged-fermions">1. The seesaw diagram that suppresses neutrinos can suppress charged fermions</h3>
+<p><strong>The idea.</strong> With a vector-like messenger and a small VEV, the effective Yukawa is suppressed exactly as a neutrino mass is, and Pati–Salam applies it to all sectors at once.</p>
+<p><strong>What it would add.</strong> The most economical explanation of the charged-fermion hierarchy in the batch. <strong>Compare the alternatives</strong>: FN with flavons (<code>1406.7005</code>), modular forms (<code>2404.06520</code>), vector-like mixing without a seesaw (<code>2302.10829</code>). <strong>This one reuses a mechanism already needed for neutrinos.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's mass-hierarchy section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the diagram is standard.</p>
+<h3 id="2-math42s-doublet-plus-singlet-structure-matches-two-light-families-plus-one-heavy">2. $S_3$'s doublet-plus-singlet structure matches two light families plus one heavy</h3>
+<p><strong>The idea.</strong> The group's representation theory is the mass spectrum.</p>
+<p><strong>What it would add.</strong> The clearest example in the batch of a group chosen because its irreps match the data. <strong>And it explains why $S_3$ and not $A_4$</strong>: $A_4$'s triplet treats all three families alike, which is wrong when two are light and one is heavy.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section, as the minimal choice.</p>
+<p><strong>What stands in the way.</strong> Nothing; it is one line of group theory.</p>
+<h3 id="3-math46-distinguishes-this-model-from-its-cousins">3. $m_{\beta\beta}$ distinguishes this model from its cousins</h3>
+<p><strong>The idea.</strong> Here $m_{\beta\beta}$ can reach nEXO; in <code>1406.7005</code> and <code>2404.06520</code> it cannot.</p>
+<p><strong>What it would add.</strong> A concrete example of how $0\nu\beta\beta$ experiments discriminate within a family of models. <strong>The corpus should present the three predictions side by side</strong>, because together they show the discrimination working.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> Nothing; all three quote their ranges.</p>
+<h3 id="4-math49math50-repeated-across-a-decade">4. $\delta_{CP}\sim260^\circ$–$360^\circ$ repeated across a decade</h3>
+<p><strong>The idea.</strong> Two papers by the same group, different symmetry, same CP-phase region.</p>
+<p><strong>What it would add.</strong> Corroboration for a prediction that is currently testable. <strong>The corpus should record the repetition and note that it may reflect a shared structural feature</strong> (Pati–Salam's Yukawa relations) rather than coincidence.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> It may be the same author's prior rather than a prediction.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Type-I seesaw suppressing a Dirac mass: in <code>0805.3486</code>'s discussion, <code>2105.14029</code>.</li>
+<li>Double seesaw: new to the corpus.</li>
+<li>$S_3$ doublet/singlet assignments: partly in <code>2501.00302</code> in this batch.</li>
+<li>$\operatorname{Im}(\tau)\sim2$ as a preferred modulus: standard in modular flavour models.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper should be read as the endpoint of the progression <code>1406.7005</code> → <code>2404.06520</code> → here, and the progression is towards <em>reuse</em>.</p>
+<p>2014: two symmetries, flavons, CSD4, many parameters.
+2024: one modular symmetry, nineteen parameters, classification.
+2025: smallest group, smallest modular group, one mechanism doing three jobs, order-unity coefficients.</p>
+<p><strong>The direction is towards a single mechanism with multiple consequences</strong>, which is what a good unified model should look like. <strong>And the mechanism is the seesaw</strong> — the same diagram that makes neutrinos light makes the first two generations light.</p>
+<p><strong>The corpus should say this plainly</strong>: in Pati–Salam, a vector-like messenger with a small VEV is a hierarchy generator, and it works in every sector simultaneously because $SU(4)$ puts the sectors in the same multiplets. <strong>That is a Pati–Salam-specific advantage</strong> and it is not available in the SM, where quark and lepton masses come from independent Yukawas.</p>
+<p>The second point: the three flavour papers in this batch disagree about $m_{\beta\beta}$ and partly agree about $\delta_{CP}$. <strong>That is the ideal situation for a corpus</strong> — a set of related models with one discriminating observable and one corroborated prediction — and it is worth building the article's neutrino section around that contrast rather than around any single paper.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

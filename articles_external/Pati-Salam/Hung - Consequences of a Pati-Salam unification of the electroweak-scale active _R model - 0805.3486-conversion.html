@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consequences of a Pati–Salam Unification of the Electroweak-Scale Active $\nu_R$ Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Hung - Consequences of a Pati-Salam unification of the electroweak-scale active _R model -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="consequences-of-a-patisalam-unification-of-the-electroweak-scale-active-math0-model"><strong>Consequences of a Pati–Salam Unification of the Electroweak-Scale Active $\nu_R$ Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>0805.3486 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>P. Q. Hung</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 28 July 2008</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, University of Virginia)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Hung - Consequences of a Pati-Salam unification of the electroweak-scale active _R model - 0805.3486-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Hung - Consequences of a Pati-Salam unification of the electroweak-scale active _R model - 0805.3486.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Hung - Consequences of a Pati-Salam unification of the electroweak-scale active _R model - 0805.3486.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. The filename's <code>_R</code> is the mangled <code>ν_R</code> of the title.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It takes a model in which the right-handed neutrino is <strong>not a Standard Model singlet</strong> and asks what happens when you unify quarks and leptons on top of it.</p>
+<blockquote>
+<p>"If right-handed neutrinos are not singlets under the electroweak gauge group as it was proposed in a recent model, they can acquire <strong>electroweak scale masses</strong> and are thus accessible experimentally in the near future. When this idea is combined with quark-lepton unification à la Pati-Salam, <strong>one is forced to introduce new neutral particles which are singlets under the Standard Model</strong>. These 'sterile neutrinos' ... can have their own seesaw with <strong>masses in the keV range</strong> for the lighter of the two eigenstates."</p>
+</blockquote>
+<p><strong>The logic in one line: a non-singlet $\nu_R$ cannot fit into an $SU(4)$ quartet without a partner, and the partner is a new sterile state, and the sterile state ends up at keV.</strong> Three steps, each forced, and the last gives warm dark matter for free.</p>
+<p>"And argument is presented on why, in this model, <strong>it is natural to have four families</strong> which can obey existing constraints."</p>
+<p><strong>Four families is normally fatal</strong> (the $Z$ invisible width allows three light neutrinos, and a fourth chiral family is excluded). The paper's claim is that in <em>this</em> structure a fourth family is natural and survives, and that argument is the most interesting part.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-starting-point-an-active-math4">The Starting Point: an Active $\nu_R$</h3>
+<p>"The model of [4] is based on the assumption of the existence of <strong>mirror fermions</strong> (both quarks and leptons) in the SM: For every $SU(2)_L$ SM left-handed doublet (e.g. $(\nu,e)_L$) there is a <strong>mirror right-handed doublet</strong> (e.g. $(\nu,e^M)_R$) and for every $SU(2)_L$ right-handed singlet (e.g. $e_R$), there is a <strong>mirror left-handed singlet</strong> (e.g. $e^M_L$)."</p>
+<p><strong>So the model has a full mirror sector, and the mirroring is what makes $\nu_R$ a doublet member.</strong> In the mirror assignment, $(\nu,e^M)_R$ is a doublet of a <em>right-handed</em> $SU(2)$, and $\nu_R$ sits in it.</p>
+<p>"the right-handed neutrino masses are 'confined' to a rather 'narrow' range $M_Z/2<M_R<\Lambda_{\rm EW}$."</p>
+<p><strong>That window is not arbitrary: $M_R>M_Z/2$ keeps the $Z$ from decaying to $\nu_R\bar\nu_R$ invisibly, and $M_R<\Lambda_{\rm EW}$ is what makes the state "electroweak scale."</strong> Fine-tuning the mass into the window is the model's premise, and the corpus should note that it is a premise and not a consequence.</p>
+<p>"Electroweak scale SM active right-handed neutrinos have an appealing aspect to them: <strong>They can be proved or disproved at colliders.</strong> One of the characteristic signals is <strong>like-sign dilepton events</strong>."</p>
+<h3 id="why-patisalam-forces-new-sterile-states">Why Pati–Salam Forces New Sterile States</h3>
+<p>"Because our model contains mirror fermions, it turns out that <strong>unification à la Pati–Salam with the minimal particle content of [4] cannot be achieved unless one introduces new neutral leptons which are singlets under the SM</strong>: the 'sterile' neutrinos."</p>
+<p><strong>The representation counting is the argument.</strong> The $SU(2)_L$-singlet content is $d_R$, $d^M_L$, $u_R$, $u^M_L$, $e_R$, $e^M_L$. To make $SU(4)$ quartets you pair them: $(d_R,e_R)$ and $(d^M_L,e^M_L)$ work. <strong>But then $u_R$ and $u^M_L$ have no partner</strong> — the fourth slot of their quartets is empty, because the usual partner ($\nu_R$ and $\nu^M_L$) is <em>not</em> a singlet here; it is inside a doublet.</p>
+<p><strong>So you must add a singlet $N$ to fill the slot</strong>, giving $(u_R,N_R)$ and $(u^M_L,N_L)$. <strong>And that $N$ comes in both helicities, because you needed two quartets.</strong></p>
+<p><strong>This is the paper's central observation and it is a good one</strong>: the very assumption that makes the model interesting (active $\nu_R$) is the assumption that breaks the Pati–Salam completion, and the repair introduces exactly the kind of particle the assumption was meant to avoid.</p>
+<h3 id="why-the-sterile-neutrinos-are-not-constrained">Why the Sterile Neutrinos Are Not Constrained</h3>
+<p>"unlike generic models of sterile neutrinos where they are usually thought of as SM-singlet right-handed particles, <strong>these new neutral fermions come in both helicities</strong>: $N_L$ and $N_R$."</p>
+<p>"Unlike a typical model containing sterile neutrinos where there is usually an intrinsic link — and hence a tight constraint — between the active and sterile sectors, <strong>it will be seen below that this link is at best very weak in our model and one is not bound by constraints from the active sector.</strong>"</p>
+<p><strong>That is the mechanism that makes keV sterile neutrinos viable.</strong> In a normal seesaw, active-sterile mixing is $\theta\sim m_D/M_R$ and the X-ray and structure-formation bounds on a keV sterile state constrain $\theta$ tightly. <strong>Here the mixing is suppressed by the mirror structure</strong>, so the state is allowed.</p>
+<p><strong>And that is what makes it warm dark matter.</strong> A keV fermion with weak mixing is exactly the Dodelson–Widrow candidate, and it has the astrophysical consequences the abstract lists: "structure formation, supernova asymmetries, pulsar kicks".</p>
+<h3 id="the-four-family-argument">The Four-Family Argument</h3>
+<p>"The structure of the aforementioned gauge group and its fermionic representations is <strong>very suggestive of the way spinors of some orthogonal group decompose into spinors of its orthogonal subgroup</strong>. For instance, <strong>a spinor of $SO(2m+4)$ decomposes into $2^{m-1}\psi_+ + 2^{m-1}\psi_-$ of $SO(4)$ or $2^{m-1}$ families of $SO(4)$.</strong> With $SO(4)\approx SU(2)\otimes SU(2)$, it is argued in Section (VII) why the simplest, anomaly-free case where $m=3$ which corresponds to the group $SO(10)$ and to <strong>four families</strong> is an appealing scenario."</p>
+<p>"The group that gives rise to this feature is argued to be $SU(4)_{PS}\otimes SO(10)\otimes SO(10)'$ which breaks down to $SU(4)_{PS}\otimes SU(4)_H\otimes SU(2)_L\otimes SU(2)_R\otimes SU(4)'_H\otimes SU(2)'_L\otimes SU(2)'_R$ with $SU(4)_H$ and $SU(4)'_H$ being <strong>family gauge groups</strong>."</p>
+<p><strong>That is a genuinely different route to a family number and it deserves recording: the number of families is $2^{m-1}$ from a spinor decomposition, and $m=3$ gives four.</strong></p>
+<p><strong>Whether that is convincing is another matter</strong> — the "$2^{m-1}$" counting requires an $SO(2m+4)$ ultraviolet group whose existence is assumed — but it is the kind of explanation the corpus's article should mention, because the question "why three generations" otherwise has no answer beyond "because."</p>
+<p>"It is argued in Section (VII) how <strong>one might expect the fourth neutrino to be heavy</strong>."</p>
+<p><strong>And that is how the fourth family survives the $Z$ width</strong>: the fourth neutrino is heavy, so the invisible width sees only three.</p>
+<h3 id="the-gauge-group">The Gauge Group</h3>
+<p>"the group $SU(4)_{PS}\otimes SU(2)_L\otimes SU(2)_R\otimes SU(2)'_L\otimes SU(2)'_R$ ... This group is reminiscent of the <strong>Petite Unification</strong> model of [14] but differs from it in a major way, in terms of fermionic assignments and patterns of symmetry breaking."</p>
+<p>"The computation of $\sin^2\theta_W(M_Z)$ reveals the <strong>Pati-Salam scale to be of a typical GUT size</strong>. (In this sense, it has 'grown up' and is no longer 'Petite'.)"</p>
+<p><strong>Four $SU(2)$s, so a "doubly left-right" structure</strong>, and the unification analysis puts the scale at $10^{15}$ GeV. <strong>The joke about growing up is worth keeping</strong> — it is the author admitting that the original "petite" idea of a low unification scale did not survive contact with $\sin^2\theta_W$.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-a-non-singlet-math65-breaks-the-patisalam-completion-and-forces-a-new-sterile-state">1. A non-singlet $\nu_R$ breaks the Pati–Salam completion and forces a new sterile state</h3>
+<p><strong>The idea.</strong> If $\nu_R$ lives in a doublet, the $SU(4)$ quartets $(u_R,\nu_R)$ are not allowed, and a singlet $N$ must be added; $N$ then comes in both helicities.</p>
+<p><strong>What it would add.</strong> A clean example of a unified completion <em>punishing</em> an extension: the assumption that made the model attractive is the one that costs a new sector. <strong>The corpus should record this pattern</strong>, because it recurs (the twin-PS papers pay with six vector-like families for the same kind of reason).</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's fermion-assignment section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the quartet counting is explicit.</p>
+<h3 id="2-kev-sterile-neutrinos-with-suppressed-active-mixing-as-warm-dark-matter">2. keV sterile neutrinos with suppressed active mixing as warm dark matter</h3>
+<p><strong>The idea.</strong> $N_{L,R}$ both present, active–sterile mixing weak because of the mirror structure, mass in the keV range.</p>
+<p><strong>What it would add.</strong> A dark-matter candidate that is a <em>consequence</em> rather than an addition, and one with distinctive astrophysics (pulsar kicks, supernova asymmetry). <strong>The corpus's dark-matter discussion should include it</strong> as the fermionic alternative to the WIMP-ish options in <code>2504.01893</code>.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> keV sterile dark matter has its own tensions (structure formation, X-ray bounds), which the paper does not resolve.</p>
+<h3 id="3-math72-families-from-an-math73-spinor-decomposition">3. $2^{m-1}$ families from an $SO(2m+4)$ spinor decomposition</h3>
+<p><strong>The idea.</strong> $m=3$ gives four families, and this is why four is natural here.</p>
+<p><strong>What it would add.</strong> A candidate answer to "why this many generations" that is not numerology. <strong>The corpus should present it as a candidate, with the caveat</strong> that the ultraviolet group is assumed.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's generation-count discussion, if it has one.</p>
+<p><strong>What stands in the way.</strong> The argument is heuristic; no anomaly-free $SO(16)$-like completion is constructed.</p>
+<h3 id="4-petite-unification-grows-up">4. "Petite" unification grows up</h3>
+<p><strong>The idea.</strong> The original low-scale unification idea gives way to a $10^{15}$ GeV scale once $\sin^2\theta_W$ is computed.</p>
+<p><strong>What it would add.</strong> A datapoint on the recurring failure of low-scale unification, which is the same lesson as <code>2305.19356</code>'s PeV bound and <code>1812.02747</code>'s $10^{11}$ GeV constraint. <strong>Three papers in this batch, one conclusion: $SU(4)$ wants to be heavy.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's unification-scale section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SU(4)_{PS}$ with quartets $(u,\nu)$, $(d,e)$: in the Pati–Salam article.</li>
+<li>Mirror fermions and the $S$ parameter: partly in the corpus's precision-observables discussion.</li>
+<li>keV sterile neutrino dark matter: new to the corpus.</li>
+<li>The $\sin^2\theta_W$ determination of the unification scale: in the gauge-coupling articles.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's clearest example of a completion forcing new states, and reading it next to the twin-PS series is instructive.</p>
+<p>Hung wants an active $\nu_R$ at the electroweak scale. The Pati–Salam completion says: then add singlets. The result is a four-$SU(2)$ group, a mirror sector, keV dark matter, and four families.</p>
+<p>King wants a TeV vector leptoquark. The completion says: then add a second $SU(4)$, six vector-like families, and a colour octet.</p>
+<p><strong>In both cases the unification does not accommodate the desired low-energy feature; it exacts a price for it</strong>, and in both cases the price is a large new sector. That is the honest pattern of Pati–Salam model building and the corpus should show it twice rather than once.</p>
+<p>The second point: the "grown up, no longer petite" remark is the most quotable line in the batch and it records a real retreat. <strong>Petite unification promised a low scale; the calculation delivered $10^{15}$ GeV.</strong> The corpus's article should note that Pati–Salam's scale is not a free choice but an output of $\sin^2\theta_W$ and the proton-decay bounds, and it comes out high.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

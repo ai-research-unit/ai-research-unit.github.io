@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On the Phenomenological Implications of a Pati–Salam Model Spontaneously Broken by Higgs Fields in Fundamental Representations — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Leontaris - On the phenomenological implications of a Pati-Salam model spontaneously broken…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="on-the-phenomenological-implications-of-a-patisalam-model-spontaneously-broken-by-higgs-fields-in-fundamental-representations"><strong>On the Phenomenological Implications of a Pati–Salam Model Spontaneously Broken by Higgs Fields in Fundamental Representations</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2502.15614 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>George K. Leontaris, Ruiwen Ouyang, Ye-Ling Zhou</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 30 September 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Ioannina / Hangzhou IAS)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>25 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Leontaris - On the phenomenological implications of a Pati-Salam model spontaneously broken by Higgs fields in fundamental representations - 2502.15614-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Leontaris - On the phenomenological implications of a Pati-Salam model spontaneously broken by Higgs fields in fundamental representations - 2502.15614.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Leontaris - On the phenomenological implications of a Pati-Salam model spontaneously broken by Higgs fields in fundamental representations - 2502.15614.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It replaces the $\mathbf{15}$ by bifundamental $\mathbf4$s, and gets a conformal $SU(4)_C$ coupling for free.</p>
+<blockquote>
+<p>"We present a supersymmetric Pati-Salam model with <strong>small representations</strong> ... The model features a Higgs sector with <strong>bifundamental fields $H_R+\bar H_R=(\mathbf4,\mathbf1,\mathbf2)+(\bar{\mathbf4},\mathbf1,\mathbf2)$, $H_L+\bar H_L=(\mathbf4,\mathbf2,\mathbf1)+(\bar{\mathbf4},\mathbf2,\mathbf1)$</strong> as well as <strong>a pair of bi-doublet fields $h_a=(\mathbf1,\mathbf2,\mathbf2)$</strong> ... with three families of fermions accommodated in $(\mathbf4,\mathbf2,\mathbf1)+(\bar{\mathbf4},\mathbf1,\mathbf2)$ as usual."</p>
+<p>"Interestingly, <strong>the one-loop beta coefficient of the $SU(4)_C$ gauge coupling is zero in the minimal $Z_3$ model, rendering the corresponding gauge coupling near-conformal in the UV.</strong> Meanwhile, <strong>Landau poles are avoided up to the Planck scale and proton decay is suppressed, resulting in a proton lifetime beyond current experimental bounds.</strong>"</p>
+<p>"By virtue of the extended Higgs sector, <strong>the key advantage of this PS model is its ability to disentangle quark and lepton masses through higher-dimensional effective operators, addressing a common limitation in GUT models with small Higgs representations.</strong> This makes the model <strong>more economical and easier to be constructed from string theory, particularly in several heterotic and F-theory models where Higgses in the adjoint representation are absent.</strong>"</p>
+</blockquote>
+<p><strong>So the paper's four results are</strong>: no $\mathbf{15}$ (hence no Landau pole), $b_4=0$ (near-conformal), proton decay suppressed, and quark–lepton masses split. <strong>And the motivation is string-theoretic</strong>: heterotic and F-theory models often lack adjoints, so a $\mathbf{15}$-based breaking is unavailable there.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem-with-the-math12">The Problem With the $\mathbf{15}$</h3>
+<p>"introducing large representations such as <strong>the adjoint $\mathbf{15}\in SU(4)_C$ might lead to a Landau pole well below the Planck scale</strong> due to the rapid growing of the gauge couplings."</p>
+<p>"<strong>several appealing string derived constructions do not contain the adjoint representation</strong> and therefore, the associated benefits cannot be reaped."</p>
+<p><strong>Two independent problems, and the papers in this batch split on which they take seriously:</strong></p>
+<ul>
+<li><strong>The $\mathbf{15}$ is what makes the Georgi–Jarlskog factor possible</strong> — the $m_e/m_\mu$ correction — and <code>1608.04124</code>, <code>1701.04460</code>, <code>2305.19356</code>, <code>2305.19020</code> all use it.</li>
+<li><strong>But the $\mathbf{15}$ has a large Dynkin index</strong>, so it drives $SU(4)_C$ toward a Landau pole, and <strong>it is often absent in string constructions.</strong></li>
+</ul>
+<p><strong>So the choice is: use the $\mathbf{15}$ and get GJ, or do without and solve the mass relations another way.</strong> This paper chooses the second.</p>
+<p><strong>The corpus should frame the tension this way</strong>, because it recurs: <strong>the same representation that fixes the fermion masses destabilises the gauge coupling.</strong></p>
+<h3 id="the-replacement-bifundamental-math19s">The Replacement: Bifundamental $\mathbf4$s</h3>
+<p>"most of the PS models built in the context of the various limits of string theories <strong>do predict an excess of $SU(4)_C\times SU(2)_L\times SU(2)_R$ bifundamental representations $(\mathbf4,\mathbf2,\mathbf1)+(\bar{\mathbf4},\mathbf2,\mathbf1)$</strong> where additional Higgs fields can be accommodated."</p>
+<p><strong>So the string constructions supply $\mathbf4$-type Higgses abundantly</strong> — they are the matter multiplets' own representation — and the paper uses them.</p>
+<p>"When these Higgs fields acquire vevs, they play a crucial role in <strong>breaking the equality of quark-lepton mass matrices</strong> which are typically predicted by GUTs."</p>
+<p>"we demonstrate the ability to <strong>distinguish the down quark mass matrix from the charged lepton mass matrix</strong>. This distinction provides a unique opportunity to make accurate predictions of mass ratios at the electroweak scale."</p>
+<p><strong>That is the mechanism, and the corpus should record how it works.</strong> In the minimal Pati–Salam, $m_d=m_e$ at the PS scale because both come from the same $(\bar{\mathbf4},\mathbf1,\mathbf2)$ fields coupled to the same $\mathbf{10}$ Higgs. <strong>The GJ factor fixes $m_e/m_\mu$ but at the price of the $\mathbf{15}$.</strong></p>
+<p><strong>Here, a $\mathbf4$-Higgs VEV of the form $\langle H\rangle\propto\text{diag}(0,0,1)$ or similar modifies the down-quark and charged-lepton Yukawas differently</strong>, because the Higgs is itself in a matter-like representation and couples asymmetrically.</p>
+<p><strong>And the effect is generated at <em>higher dimension</em></strong> — "through higher-dimensional effective operators" — so it is suppressed by $1/M$ and controllable. <strong>That is the trade: no $\mathbf{15}$, but $1/M$ operators.</strong></p>
+<p><strong>The corpus should note the parallel with <code>2305.19356</code>'s flip</strong>: there, $SO(10)$ and flipped $SU(5)$ embeddings give different $m_d/m_s$ and $m_e/m_\mu$ relations. <strong>Here, the operator structure does the same job without the adjoint.</strong> <strong>Two routes to the same fix, and neither uses the GJ factor.</strong></p>
+<h3 id="math37-near-conformal-math38">$b_4=0$: Near-Conformal $SU(4)_C$</h3>
+<p>"<strong>the one-loop beta coefficient of the $SU(4)_C$ gauge coupling is zero in the minimal $Z_3$ model</strong>, rendering the corresponding gauge coupling <strong>near-conformal in the UV.</strong>"</p>
+<p><strong>That is a striking result and it deserves care.</strong> The one-loop coefficient is</p>
+<p>$$b_4=-\frac{11}{3}C_2(SU(4))+\frac{2}{3}\sum_{\rm Weyl}T(R)+\frac{1}{3}\sum_{\rm chiral}T(R),$$</p>
+<p><strong>and with the bifundamental Higgs content it can vanish.</strong> <strong>If $b_4=0$, the $SU(4)_C$ coupling does not run at one loop</strong>, so it neither hits a Landau pole nor runs to zero — it is <strong>marginal</strong>.</p>
+<p>"Landau poles are avoided up to the Planck scale and the rest of the gauge couplings are safe from developing a Landau pole."</p>
+<p><strong>So the model is UV-consistent</strong> in the sense that no coupling blows up below $M_P$. <strong>That is a real virtue and it is rare in this batch</strong> — <code>1807.03669</code> (asymptotically safe Pati–Salam) is the other paper that takes UV consistency seriously.</p>
+<p><strong>The corpus should compare them</strong>: <strong><code>1807.03669</code> makes the <em>whole</em> theory asymptotically safe via a UV fixed point; here one coupling is one-loop marginal by representation choice.</strong> <strong>The second is more modest and easier to arrange.</strong></p>
+<p><strong>And the caveat</strong>: <strong>one-loop marginality is not asymptotic safety</strong> — two-loop terms will typically push $b_4$ away from zero, and the paper says "near-conformal", not "conformal". <strong>The corpus should record the qualifier.</strong></p>
+<h3 id="proton-decay">Proton Decay</h3>
+<p>"proton decay is suppressed, resulting in <strong>a proton lifetime beyond current experimental bounds</strong>."</p>
+<p><strong>Why</strong>: with no $\mathbf{15}$ and the $Z_3$ symmetry forbidding the dangerous couplings, <strong>the proton-decay operators are absent at the renormalisable level and suppressed at higher dimension.</strong></p>
+<p><strong>That is the same conclusion <code>2604.00166</code> reaches with an accidental $U(1)_B$</strong>: <strong>remove the operator and the proton lives.</strong> <strong>And it is the opposite of <code>2105.14029</code> and <code>1905.04533</code>, which find that diquark scalars destroy the proton.</strong></p>
+<p><strong>The corpus should tabulate the proton-decay outcomes across the batch</strong>, because they depend entirely on the field content and symmetry, not on Pati–Salam itself.</p>
+<h3 id="the-domain-walls">The Domain Walls</h3>
+<p>"we explore the implications of spontaneous breaking of the $Z_3$ symmetry, particularly <strong>the formation of topological defects such as domain walls, with carefully adjusted energy scales</strong>, and we investigate <strong>the collapse of these domain walls and the conditions under which they can produce detectable gravitational waves.</strong>"</p>
+<p><strong>So the $Z_3$ that forbids the bad operators also produces domain walls</strong>, and the walls must be made to decay. <strong>That is the same trade-off as <code>2504.01893</code></strong> (the bias that makes walls decay) and <code>1812.02747</code>/<code>2307.02544</code>.</p>
+<p><strong>And the payoff is the same: gravitational waves.</strong> <strong>The batch now has four papers extracting a gravitational-wave signal from Pati–Salam defects</strong> (<code>2504.01893</code>, <code>1812.02747</code>, <code>2307.02544</code>, <code>2004.02332</code>, and here). <strong>That convergence is itself a finding.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-math51-buys-the-georgijarlskog-factor-but-costs-a-landau-pole">1. The $\mathbf{15}$ buys the Georgi–Jarlskog factor but costs a Landau pole</h3>
+<p><strong>The idea.</strong> The adjoint fixes $m_e/m_\mu$ and drives $SU(4)_C$ toward strong coupling; strings often lack it.</p>
+<p><strong>What it would add.</strong> A sharp statement of the central representation choice in Pati–Salam model building. <strong>The corpus's Yukawa section should present it as a trade, not a solution.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's Yukawa section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-bifundamental-math54-higgses-split-math55-from-math56-at-higher-dimension">2. Bifundamental $\mathbf4$ Higgses split $m_d$ from $m_e$ at higher dimension</h3>
+<p><strong>The idea.</strong> No adjoint; the splitting comes from $1/M$ operators involving $\mathbf4$-type Higgses.</p>
+<p><strong>What it would add.</strong> A second route to the fermion-mass fix, available where the $\mathbf{15}$ is not. <strong>The corpus should present both routes.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's Yukawa section.</p>
+<p><strong>What stands in the way.</strong> The $1/M$ suppression must be checked against the observed ratios.</p>
+<h3 id="3-math61-makes-math62-one-loop-marginal">3. $b_4=0$ makes $SU(4)_C$ one-loop marginal</h3>
+<p><strong>The idea.</strong> A representation choice sets the beta function to zero, avoiding a Landau pole.</p>
+<p><strong>What it would add.</strong> A modest UV-consistency argument, compared with <code>1807.03669</code>'s asymptotic safety. <strong>The corpus should note that one-loop marginality is fragile.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's unification section.</p>
+<p><strong>What stands in the way.</strong> Two-loop corrections.</p>
+<h3 id="4-the-math63-that-forbids-bad-operators-also-makes-domain-walls">4. The $Z_3$ that forbids bad operators also makes domain walls</h3>
+<p><strong>The idea.</strong> Symmetry needed for proton stability and fermion masses; its breaking makes walls; the walls decay and make gravitational waves.</p>
+<p><strong>What it would add.</strong> Another entry in the batch's defect-and-gravitational-wave convergence. <strong>The corpus should collect them.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> The wall collapse requires a bias, which must be justified.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The $\mathbf{15}$ and the GJ factor: in <code>1608.04124</code>, <code>1701.04460</code>, <code>2305.19356</code>.</li>
+<li>Asymptotic safety for Pati–Salam: in <code>1807.03669</code>.</li>
+<li>Domain walls and gravitational waves: in <code>2504.01893</code>, <code>2307.02544</code>, <code>2004.02332</code>.</li>
+<li>Suppressed proton decay from a discrete symmetry: in <code>2604.00166</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's most economical use of string constraints, and it is worth reading as a response to a specific string-theory fact.</p>
+<p><strong>The fact</strong>: heterotic and F-theory constructions often have no adjoint of $SU(4)_C$. <strong>So a Pati–Salam model that <em>needs</em> the $\mathbf{15}$ cannot be embedded there.</strong> <strong>The paper's whole design follows from taking that seriously.</strong></p>
+<p><strong>Compare <code>hep-ph/0409098</code> and <code>1007.2268</code></strong> — the heterotic Pati–Salam papers in this batch — which build the models from the string side. <strong>This paper works the other way</strong>: it asks what a string-compatible Pati–Salam model must look like and finds that it must do without the $\mathbf{15}$, hence without GJ, hence with higher-dimension operators.</p>
+<p><strong>The convergence is the interesting thing</strong>: <strong>two independent routes — field theory worrying about Landau poles, and string theory lacking adjoints — lead to the same conclusion: avoid the $\mathbf{15}$.</strong> <strong>The corpus should say so</strong>, because it is evidence that the small-representation choice is not arbitrary.</p>
+<p>The second point: $b_4=0$ is presented as a curiosity ("Interestingly") and it is more than that. <strong>A gauge coupling that does not run is a coupling whose value at low energy is a choice</strong> — so the model must fix $\alpha_4$ by hand, which is a cost the paper does not dwell on. <strong>The corpus should note the cost as well as the benefit.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

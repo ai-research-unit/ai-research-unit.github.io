@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leptogenesis after Inflation in a Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Raby - Leptogenesis after Inflation in a Pati-Salam Model - 1703.02558.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="leptogenesis-after-inflation-in-a-patisalam-model"><strong>Leptogenesis after Inflation in a Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1703.02558 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stuart Raby</td>
+</tr>
+<tr>
+<td>version</td>
+<td>conference talk</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (proceedings talk; model from Raby's earlier papers <code>[1]</code>)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Raby - Leptogenesis after Inflation in a Pati-Salam Model - 1703.02558-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Raby - Leptogenesis after Inflation in a Pati-Salam Model - 1703.02558.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Raby - Leptogenesis after Inflation in a Pati-Salam Model - 1703.02558.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It takes the $D_4$ Pati–Salam model of <code>hep-ph/0409098</code>, adds hybrid inflation, and fixes a sign problem with instant preheating.</p>
+<blockquote>
+<p>"In a recent paper [1] we have described <strong>a Pati–Salam model with a $D_4$ family symmetry which fits low energy data quite well</strong>"</p>
+<p>"<strong>The biggest discrepancy is in the fits for the up and down quark masses which are too large.</strong>"</p>
+<p>"Bicep2, Keck and Planck cosmological data are consistent with <strong>an inflationary early universe with an energy density during inflation of order a GUT scale, $10^{16}$ GeV.</strong> In the Pati–Salam model, <strong>this is the scale where Pati–Salam is broken to the Standard Model gauge symmetry in a process called 'hybrid inflation.'</strong>"</p>
+<p>"It is <strong>'subcritical hybrid inflation'</strong> since inflation begins <strong>after the waterfall field begins to slide down the side of the potential.</strong> Since <strong>the waterfall field breaks the PS symmetry, any monopoles formed will be severely diluted during inflation.</strong>"</p>
+<p>"the decay of <strong>the heaviest right-handed neutrino produces the correct sign of the baryon number asymmetry, while the lighter two generations produce the wrong sign.</strong>"</p>
+<p>"how can we obtain the correct sign of $n_B$ ... <strong>This can be accomplished due to the process of instant preheating</strong>"</p>
+</blockquote>
+<p><strong>That last item is the paper's real content</strong>: <strong>a sign problem, and its fix.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="subcritical-hybrid-inflation">Subcritical Hybrid Inflation</h3>
+<p><strong>Standard hybrid inflation</strong>: <strong>the inflaton rolls, and at a critical value the waterfall field destabilises and ends inflation.</strong></p>
+<p><strong>"Subcritical"</strong> means <strong>inflation begins <em>after</em> the waterfall field has started moving</strong> — <strong>the trajectory starts on the waterfall's slope.</strong></p>
+<p><strong>Why it matters</strong>: <strong>the waterfall field is the PS-breaking field</strong>, <strong>so its motion during inflation means the PS breaking happens <em>during</em> inflation</strong>, <strong>and the monopoles are diluted.</strong></p>
+<p><strong>The corpus should record the phrase and the mechanism</strong>, because <strong>it is the third variant of the "inflation dilutes monopoles" solution</strong> (after <code>1108.1771</code>'s simultaneous breaking and <code>1207.3730</code>'s).</p>
+<p><strong>And it is the cleanest</strong>: <strong>"the waterfall field breaks PS, so the monopoles are diluted."</strong> <strong>One sentence, one mechanism.</strong></p>
+<h3 id="the-math4-gev-scale">The $10^{16}$ GeV Scale</h3>
+<p><strong>"an energy density during inflation of order a GUT scale, $10^{16}$ GeV. In the PS model, this is the scale where PS is broken to the SM."</strong></p>
+<p><strong>So the inflationary scale <em>is</em> the PS scale.</strong> <strong>No new scale.</strong></p>
+<p><strong>And the corpus should compare with <code>hep-ph/0302216</code>'s window</strong> ($M_c<10^{14}$ GeV): <strong>$10^{16}$ is above it.</strong></p>
+<p><strong>So a tension exists</strong>, <strong>and the corpus should note it</strong>: <strong>the inflationary scale implied by the tensor-to-scalar ratio is higher than the minimal-SUSY PS window.</strong> <strong><code>1703.02558</code> chooses $10^{16}$; <code>hep-ph/0302216</code> allows at most $10^{14}$.</strong> <strong>The two cannot both be right in the same model.</strong></p>
+<p><strong>That is a quantitative conflict the corpus can surface, and no paper in the batch states it.</strong></p>
+<h3 id="the-sign-problem">The Sign Problem</h3>
+<p><strong>"the decay of the heaviest right-handed neutrino produces the correct sign of $n_B$, while the lighter two generations produce the wrong sign"</strong></p>
+<p><strong>That is a real problem</strong>: <strong>in the $D_4$ model, the CP asymmetries $\epsilon_i$ have signs $\epsilon_3<0$, $\epsilon_{1,2}>0$</strong>, <strong>so $N_3$'s decays give the right baryon asymmetry and $N_1$, $N_2$'s give the wrong one.</strong></p>
+<p><strong>So the <em>total</em> asymmetry can cancel or flip</strong>, <strong>depending on the washout.</strong></p>
+<p><strong>The corpus should record the phenomenon</strong>: <strong>hierarchical models often have $\epsilon_1>0$ and $\epsilon_2<0$ (or vice versa), and the sign of the asymmetry depends on which dominates.</strong> <strong>It is rarely discussed, and it is a genuine constraint.</strong></p>
+<h3 id="instant-preheating">Instant Preheating</h3>
+<p><strong>The fix</strong>: <strong>the inflaton couples to a field $\chi$ through $\frac{1}{2}\alpha^2\phi^2\chi^2$</strong>, <strong>and as $\phi$ passes through zero the $\chi$ mass vanishes</strong>, <strong>so $\chi$ particles are produced non-adiabatically.</strong></p>
+<p><strong>Then $\chi$ decays to the right-handed neutrinos</strong>, <strong>and the resulting spectrum is non-thermal.</strong></p>
+<p><strong>"Instant preheating"</strong> (Felder–Garcia-Bellido–Linde) <strong>is the mechanism</strong>, <strong>and its use here is to select the heaviest $N$'s contribution.</strong></p>
+<p><strong>The corpus should record it</strong>, because <strong>it is a genuinely different reheating mechanism from the perturbative decay in <code>1108.1771</code>/<code>1207.3730</code></strong>, <strong>and it changes the predicted asymmetry.</strong></p>
+<p><strong>And note the corpus's gain</strong>: <strong>three PS cosmology papers, three reheating mechanisms</strong> — <strong>perturbative decay (<code>1108.1771</code>), two-neutrino decay (<code>1207.3730</code>), instant preheating (here).</strong> <strong>The corpus should present them together.</strong></p>
+<h3 id="the-low-energy-discrepancy">The Low-Energy Discrepancy</h3>
+<p>"<strong>The biggest discrepancy is in the fits for the up and down quark masses which are too large.</strong>"</p>
+<p><strong>That is the $D_4$ model's known problem</strong> (<code>hep-ph/0409098</code>): <strong>the up and down masses come out too large.</strong></p>
+<p><strong>The corpus's conversion of <code>hep-ph/0409098</code> says the same</strong>, <strong>so the two are consistent</strong> — <strong>and the corpus should cite the talk as confirmation from the model's author.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-subcritical-hybrid-inflation-makes-the-waterfall-field-the-ps-breaking-field">1. Subcritical hybrid inflation makes the waterfall field the PS-breaking field</h3>
+<p><strong>The idea.</strong> Inflation during the breaking; monopoles diluted.</p>
+<p><strong>What it would add.</strong> The cleanest statement of the monopole solution, and a third reheating variant.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> The scale tension with <code>hep-ph/0302216</code>.</p>
+<h3 id="2-the-inflationary-scale-is-math28-gev-above-the-minimal-susy-ps-window">2. The inflationary scale is $10^{16}$ GeV, above the minimal-SUSY PS window</h3>
+<p><strong>The idea.</strong> $r$ fixes the scale; PS must be at that scale.</p>
+<p><strong>What it would add.</strong> A quantitative conflict the corpus can surface.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> $r$ is not yet measured.</p>
+<h3 id="3-leptogenesis-asymmetries-have-signs-and-they-can-cancel">3. Leptogenesis asymmetries have signs, and they can cancel</h3>
+<p><strong>The idea.</strong> $\epsilon_3<0$, $\epsilon_{1,2}>0$ in the $D_4$ model.</p>
+<p><strong>What it would add.</strong> A constraint rarely discussed, and a reason to compute the signs.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Washout can rescue it.</p>
+<h3 id="4-instant-preheating-is-a-third-reheating-mechanism">4. Instant preheating is a third reheating mechanism</h3>
+<p><strong>The idea.</strong> Non-adiabatic particle production at $\phi=0$.</p>
+<p><strong>What it would add.</strong> A variant that changes the predicted asymmetry.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The $D_4$ model: in <code>hep-ph/0409098</code>.</li>
+<li>The up/down mass problem: in <code>hep-ph/0409098</code>.</li>
+<li>Higgs inflation: in <code>1108.1771</code>, <code>1207.3730</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This talk is the batch's best short statement of the PS cosmology programme, and the corpus should use it as the entry point.</p>
+<p><strong>It says, in order</strong>: <strong>the model fits the data (with one flaw), the inflationary scale is the PS scale, the waterfall dilutes the monopoles, the leptogenesis has a sign problem, and instant preheating fixes it.</strong></p>
+<p><strong>That is a complete arc in twelve pages</strong>, <strong>and it is the arc the corpus's cosmology section should follow.</strong></p>
+<p><strong>And the talk is honest about the flaw</strong>: <strong>the up and down masses are too large.</strong> <strong>The corpus should note that the same author says so</strong>, <strong>which strengthens the corpus's own criticism of <code>hep-ph/0409098</code>.</strong></p>
+<p><strong>The corpus's cosmology section can then be built around three questions</strong>: <strong>does the model inflate? does it dilute the monopoles? does it make the right baryon asymmetry?</strong> <strong><code>1703.02558</code> answers yes, yes, and yes-with-a-fix.</strong> <strong><code>1108.1771</code> answers yes, yes, and yes-with-a-heavy-gravitino.</strong> <strong><code>2601.14580</code> answers yes, no, and no.</strong> <strong>That is a comparison worth making.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

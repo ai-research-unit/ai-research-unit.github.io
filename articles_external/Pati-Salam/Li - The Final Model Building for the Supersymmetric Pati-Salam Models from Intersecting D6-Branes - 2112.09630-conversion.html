@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Final Model Building for the Supersymmetric Pati–Salam Models from Intersecting D6-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - The Final Model Building for the Supersymmetric Pati-Salam Models from Intersecting…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-final-model-building-for-the-supersymmetric-patisalam-models-from-intersecting-d6-branes"><strong>The Final Model Building for the Supersymmetric Pati–Salam Models from Intersecting D6-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2112.09630 [hep-th] (v3)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Weikun He, Tianjun Li, Rui Sun, Lina Wu</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 6 May 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, KIAS / ITP Beijing)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - The Final Model Building for the Supersymmetric Pati-Salam Models from Intersecting D6-Branes - 2112.09630-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - The Final Model Building for the Supersymmetric Pati-Salam Models from Intersecting D6-Branes - 2112.09630.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - The Final Model Building for the Supersymmetric Pati-Salam Models from Intersecting D6-Branes - 2112.09630.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its companion is <code>2112.09632</code> in this batch; the source of the framework is <code>hep-th/0403061</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It closes the enumeration that <code>hep-th/0403061</code> began, with a definite number.</p>
+<blockquote>
+<p>"Implementing this algorithm with the help of a computer program, we find that in total there are <strong>202752 models</strong>. Because <strong>each equivalent class has 6144 models</strong>, we obtain that there are <strong>only 33 independent models with different gauge coupling relations at string scale</strong> after moduloing the equivalent relations."</p>
+</blockquote>
+<p>"Thus, for the string landscape study, <strong>it is very important to consider the equivalent relations.</strong>"</p>
+<blockquote>
+<p>"First, there is <strong>one and only one inequivalent model with gauge coupling unification</strong>, i.e., the strong, weak and hypercharge gauge couplings $g_a^2$, $g_b^2$ and $\frac{5}{3}g_Y^2$ satisfy
+$$g_a^2=g_b^2=\frac{5}{3}g_Y^2=g_c^2=\left(\frac{5}{3}g_Y^2\right)=4\sqrt{\frac{2}{3}}\frac{\pi e^{\phi_4}}{},$$
+where $\phi_4$ is the dilaton field."</p>
+</blockquote>
+<p><strong>So the answer to the fifteen-year search is: one.</strong> Out of <code>202752</code> configurations and <code>33</code> inequivalence classes, exactly one has gauge coupling unification at the string scale.</p>
+<p><strong>That is a definitive result and it should be recorded as such.</strong> The corpus can say: <strong>the D6-brane Pati–Salam landscape has been enumerated, and exact unification selects a single point.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-arithmetic-of-the-landscape">The Arithmetic of the Landscape</h3>
+<p><strong>Three numbers, and each means something different:</strong></p>
+<ul>
+<li><strong><code>202752</code> configurations</strong>: brane wrapping numbers satisfying tadpole cancellation, three families, and $N=1$ SUSY.</li>
+<li><strong><code>6144</code> per equivalence class</strong>: the size of the orbit under the equivalence relations (permutations of the three two-tori, T-dualities, relabelling of stacks).</li>
+<li><strong><code>33</code> independent gauge-coupling relations</strong>: <code>202752/6144 = 33</code>, exactly.</li>
+</ul>
+<p><strong>So the landscape's <em>size</em> is a symmetry-orbit effect, not a diversity of physics.</strong> The <code>202752</code> models fall into <code>33</code> physical classes. <strong>That is the paper's central methodological point</strong> ("it is very important to consider the equivalent relations"), and it is a warning: <strong>a naive count of solutions overstates a landscape by the size of its symmetry group.</strong></p>
+<p><strong>The corpus should record the ratio</strong>: a factor of <code>6144</code> between the naive and the physical count. <strong>Any landscape paper reporting only the raw number is reporting a symmetry artefact.</strong></p>
+<h3 id="the-unification-relation">The Unification Relation</h3>
+<p>$$g_a^2=g_b^2=g_c^2=\tfrac{5}{3}g_Y^2=4\sqrt{\tfrac{2}{3}}\,\pi e^{\phi_4}$$</p>
+<p><strong>Note what this says and what it does not.</strong> It says the three <em>string-scale</em> couplings of the $a$ (colour), $b$ ($SU(2)_L$), and $c$ ($SU(2)_R$) stacks are equal and equal to $\frac53 g_Y^2$. <strong>That is the standard Pati–Salam unification condition</strong> — the $\frac53$ is the hypercharge normalization.</p>
+<p><strong>But the $\sqrt{2/3}$ and the $e^{\phi_4}$ are string-specific</strong>: the overall magnitude is set by the dilaton, not by a GUT coupling constant. <strong>So "unification" here is a <em>relation</em> between couplings, not a <em>value</em></strong> — the value is a modulus.</p>
+<p><strong>The corpus should note the difference from field-theory unification</strong>: in a 4D GUT, unification fixes $\alpha_{\rm GUT}\approx1/25$; here the common value floats with $\langle\phi_4\rangle$, and the dilaton is stabilised by gaugino condensation.</p>
+<h3 id="the-four-confining-groups">The Four Confining Groups</h3>
+<p>"there are <strong>four confining $USp(2)$ gauge groups</strong>, and then we might <strong>stabilize the moduli and break SUSY via gaugino condensation</strong>."</p>
+<p><strong>Four, not two.</strong> The earlier papers (<code>hep-th/0403061</code>) required "at least two"; the unique unified model has four. <strong>More confining groups give more non-perturbative terms and better moduli stabilisation</strong>, which is why four is good.</p>
+<p><strong>And $USp(2)\cong SU(2)$</strong>, so these are $SU(2)$ gauge groups with gaugino condensation — the standard race-track or multi-condensate scenario.</p>
+<h3 id="the-three-representative-models">The Three Representative Models</h3>
+<p>"Model 1 in Table 3 is a representative model with <strong>gauge coupling unification at string scale</strong>; Model 2 ... and Model 3 ... are two kinds of models with the <strong>largest possible wrapping number 5</strong>, which are <strong>related to each other by exchanging $b$- and $c$-stacks of D6-branes up to equivalent relations</strong>."</p>
+<p>"The gauge symmetry groups in Model 1 has <strong>four $USp(2)$ groups with negative $\beta$ functions</strong>, so their moduli may be stabilized and supersymmetry might be broken via gaugino condensations. However, <strong>Models 2 and 3 contain two $USp(2)$ groups, and only one $USp(2)$ group has negative $\beta$ function.</strong>"</p>
+<p><strong>So the unified model is also the best on the hidden-sector criterion</strong>, which is a happy coincidence and worth noting — <strong>the one model with unification also has the most confining groups.</strong></p>
+<p>"In Model 1 ... <strong>the additional exotic particles can be decoupled</strong>. In Models 2 and 3 ... we can decouple the additional exotic particles <strong>except the four chiral multiplets under $SU(4)_C$ anti-symmetric representation.</strong>"</p>
+<p><strong>So the unified model's exotics can all be made heavy</strong>, while the large-wrapping models retain four chiral $\mathbf6$-of-$SU(4)$ multiplets permanently. <strong>That is decisive: Model 1 is the only one where the low-energy spectrum can be made to match the MSSM.</strong></p>
+<p><strong>The corpus should record this</strong>, because it is the real reason the single unified model matters — <strong>not unification alone, but unification plus a decoupled exotic sector.</strong></p>
+<h3 id="the-math31-of-math32-again">The $\mathbf6$ of $SU(4)$, Again</h3>
+<p><strong>Four chiral multiplets in the antisymmetric of $SU(4)$</strong> — these are the $(\mathbf6,\mathbf1,\mathbf1)$-type fields, i.e. diquarks, exactly the objects that <code>2105.14029</code> shows mediate proton decay.</p>
+<p><strong>So Models 2 and 3 are excluded by proton decay</strong>, because they retain four chiral diquarks. <strong>And Model 1 escapes only because its diquarks can be given GUT-scale masses.</strong></p>
+<p><strong>That connects this string paper to the field-theory proton-decay analysis in this batch</strong>, and the corpus should make the link: <strong>a string model's viability can hinge on whether its $\mathbf6$-type exotics are vector-like (decouple) or chiral (fatal).</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-landscape-has-202752-solutions-but-33-physics-classes-a-factor-of-6144">1. The landscape has 202752 solutions but 33 physics classes — a factor of 6144</h3>
+<p><strong>The idea.</strong> The raw count is a symmetry-orbit artefact.</p>
+<p><strong>What it would add.</strong> A methodological standard for reading landscape papers. <strong><code>2112.09632</code> reports the same numbers, and the two papers together are the definitive statement.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the arithmetic is stated.</p>
+<h3 id="2-exactly-one-of-the-33-classes-unifies-the-gauge-couplings">2. Exactly one of the 33 classes unifies the gauge couplings</h3>
+<p><strong>The idea.</strong> $g_a=g_b=g_c$ and $\frac53g_Y^2$, with the common value set by the dilaton.</p>
+<p><strong>What it would add.</strong> A definite, closed result. <strong>The corpus can say the question is answered</strong> rather than "models have been constructed".</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-unique-unified-model-is-the-only-one-whose-exotics-decouple">3. The unique unified model is the only one whose exotics decouple</h3>
+<p><strong>The idea.</strong> Models 2 and 3 keep four chiral $\mathbf6$ of $SU(4)$; Model 1's exotics all get masses.</p>
+<p><strong>What it would add.</strong> The <em>real</em> selection argument, and a link to the proton-decay papers. <strong>A chiral $\mathbf6$ is a diquark, and four chiral diquarks destroy the model.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section and its proton-decay section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the paper states both facts.</p>
+<h3 id="4-unification-here-is-a-relation-not-a-value-the-dilaton-sets-the-magnitude">4. Unification here is a relation, not a value; the dilaton sets the magnitude</h3>
+<p><strong>The idea.</strong> $4\sqrt{2/3}\,\pi e^{\phi_4}$ is a modulus, not $\alpha_{\rm GUT}^{-1}\approx25$.</p>
+<p><strong>What it would add.</strong> A precise distinction between string and field-theory unification. <strong>The corpus's unification discussion should not conflate them.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's unification section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The $4+2+2$ brane construction and splitting: in <code>hep-th/0403061</code>.</li>
+<li>The T-duality equivalence correction: in <code>1910.04530</code>.</li>
+<li>Chiral $\mathbf6$ of $SU(4)$ as a diquark: in <code>2105.14029</code>.</li>
+<li>Gaugino condensation for moduli stabilisation: in <code>hep-th/0403061</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and <code>2112.09632</code> are the batch's only papers that <em>close</em> a question rather than open one, and that makes them valuable as anchors.</p>
+<p><strong>The question</strong>: how many $N=1$ SUSY three-family Pati–Salam models are there on $T^6/(\mathbb Z_2\times\mathbb Z_2)$ with intersecting D6-branes? <strong>The answer</strong>: 33 physics classes, one with exact gauge unification.</p>
+<p><strong>That is a complete answer and it took eighteen years and four papers</strong> (<code>hep-th/0403061</code>, <code>1910.04530</code>, <code>1912.11633</code>, and these two). <strong>The corpus should present the arc</strong>, because a reader who sees only <code>hep-th/0403061</code>'s "11 models" will think the landscape is small and a reader who sees only <code>2112.09632</code>'s "202752" will think it is enormous. <strong>Both numbers are wrong without the equivalence classes.</strong></p>
+<p>The second point, and the more interesting one for the corpus's article: <strong>the unique unified model survives not because it unifies but because its exotics decouple.</strong> Unification without a decoupled exotic sector is worthless, and the paper's own comparison of Model 1 against Models 2 and 3 makes that clear. <strong>A model-building criterion that selects on unification alone would have picked the wrong model</strong> — or rather, would have found a model that cannot be the Standard Model at low energy.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

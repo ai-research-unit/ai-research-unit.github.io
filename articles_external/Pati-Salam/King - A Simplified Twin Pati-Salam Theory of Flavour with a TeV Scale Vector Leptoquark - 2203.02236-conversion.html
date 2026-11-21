@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Simplified Twin Pati–Salam Theory of Flavour with a TeV Scale Vector Leptoquark — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/King - A Simplified Twin Pati-Salam Theory of Flavour with a TeV Scale Vector Leptoquark -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-simplified-twin-patisalam-theory-of-flavour-with-a-tev-scale-vector-leptoquark"><strong>A Simplified Twin Pati–Salam Theory of Flavour with a TeV Scale Vector Leptoquark</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2203.02236 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stephen F. King</td>
+</tr>
+<tr>
+<td>version</td>
+<td>1 March 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Corfu Summer Institute 2021 proceedings (PoS), 29 August – 9 October 2021</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/King - A Simplified Twin Pati-Salam Theory of Flavour with a TeV Scale Vector Leptoquark - 2203.02236-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/King - A Simplified Twin Pati-Salam Theory of Flavour with a TeV Scale Vector Leptoquark - 2203.02236.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/King - A Simplified Twin Pati-Salam Theory of Flavour with a TeV Scale Vector Leptoquark - 2203.02236.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Conference summary of <code>2106.03876</code>; the full revised analysis is <code>2209.00276</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It is the conference version of the twin Pati–Salam construction, presented to a Corfu audience in 2021. Almost nothing here is new relative to the paper; the value is the compression.</p>
+<blockquote>
+<p>"In this talk, we discuss a simplified version of a recently proposed twin Pati-Salam (PS) theory of flavour broken to the $G_{4321}$ gauge group at high energies, then to the Standard Model at low energies, yielding a TeV scale vector leptoquark $U_1^\mu(\mathbf3,\mathbf1,2/3)$ which may be used to address the lepton universality anomalies $R_{K^{(*)}}$ and $R_{D^{(*)}}$ in $B$ decays. The model also accounts for quark and lepton mass hierarchies, providing a link between the flavour anomalies and a theory of flavour."</p>
+</blockquote>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-copy-structure">The Two-Copy Structure</h3>
+<p>"The model is based on two copies of the PS gauge group $SU(4)_{PS}\times SU(2)_L\times SU(2)_R$."</p>
+<p>$$
+G_{422}^{I}\times G_{422}^{II}\ \xrightarrow{M_{\rm high}}\ G_{4321}\ \xrightarrow{M_{\rm low}}\ G_{321} .
+$$</p>
+<p>"the vector leptoquark $U_1^\mu(\mathbf3,\mathbf1,2/3)$ from the $SU(4)^I_{PS}$, broken at $M_{\rm low}\sim1$ TeV, while the origin of quark and lepton masses depends on the full theory, including the high scale PS symmetry, broken at $M_{\rm high}\gtrsim1$ PeV".</p>
+<p><strong>Two scales, two functions, and they are separated by six orders of magnitude.</strong> The low copy provides the leptoquark; the high copy provides the flavour structure. <strong>That separation is what makes the model work</strong>: if the flavour-generating dynamics were at the same scale as the leptoquark, the leptoquark couplings would be fixed to values the data do not want.</p>
+<h3 id="what-simplified-means-here">What "Simplified" Means Here</h3>
+<p>"we discuss a simplified version" — the simplification is the same as in <code>2106.03876</code>: one vector-like family mediating the second and third generation masses, personal Higgs doublets (equivalent to a 2HDM), a $\mathbb Z_6$ for the texture zero.</p>
+<p><strong>And the simplification does not work</strong>, as the original paper says: "the predicted mass matrices, assuming natural values of the parameters, are not consistent with the single vector leptoquark solution to the $R_{D^{(*)}}$ anomaly, given its current value."</p>
+<p><strong>So the proceeding reports a model that is elegant and fails</strong>, which is an unusual thing to present at a conference and worth noting.</p>
+<h3 id="why-math13-specifically">Why $U_1$ Specifically</h3>
+<p>The leptoquark choice is not free. The vector $U_1$ is the only single leptoquark that can account for both $R(K^{(*)})$ and $R(D^{(*)})$ simultaneously — the scalar options require either two leptoquarks or additional structure, as <code>1905.05211</code> in this batch demonstrates from the scalar side.</p>
+<p><strong>And $U_1$ is hard to get from unification.</strong> In an $SU(5)$ or $SO(10)$ model the leptoquarks are scalars or the $X$/$Y$ vectors that mediate proton decay. <strong>Getting a TeV-scale vector leptoquark with chiral couplings requires a different construction</strong>, which is what $G_{4321}$ provides.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-six-orders-of-magnitude-between-the-flavour-scale-and-the-leptoquark-scale">1. Six orders of magnitude between the flavour scale and the leptoquark scale</h3>
+<p><strong>The idea.</strong> $M_{\rm high}\gtrsim1$ PeV, $M_{\rm low}\sim1$ TeV.</p>
+<p><strong>What it would add.</strong> A design principle: <strong>separate the scale that generates flavour from the scale that generates the anomaly.</strong> In most unified models the two are the same, and then the leptoquark couplings are fixed by the flavour fit and cannot be tuned to the anomaly. <strong>The twin construction buys freedom by paying a second gauge group.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the structure is explicit.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Everything in this proceeding appears in <code>2106.03876</code>, which is in this batch.</li>
+<li>$G_{4321}\equiv SU(4)\times SU(3)_c\times SU(2)_L\times U(1)_{Y'}$: defined in <code>2209.00276</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This is the third version of the same construction in the batch (<code>2106.03876</code>, this, <code>2209.00276</code>), and the three should be read as a sequence rather than as separate papers.</p>
+<p>The sequence is instructive: <strong>a proposal that is elegant and fails, a conference report of the failure, and a rebuild with six vector-like families that succeeds in a narrow window.</strong> That is how model building actually goes, and the corpus is better for having all three rather than only the successful one.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

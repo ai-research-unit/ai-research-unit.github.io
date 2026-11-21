@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gravitational Waves from Metastable Cosmic Strings in Pati–Salam Model in Light of New Pulsar Timing Array Data — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Nasri - Gravitational waves from metastable cosmic strings in Pati-Salam model in light of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravitational-waves-from-metastable-cosmic-strings-in-patisalam-model-in-light-of-new-pulsar-timing-array-data"><strong>Gravitational Waves from Metastable Cosmic Strings in Pati–Salam Model in Light of New Pulsar Timing Array Data</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2308.13248 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Waqas Ahmed, Talal Ahmed Chowdhury, Salah Nasri, Shaikh Saad</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 25 August 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Nasri - Gravitational waves from metastable cosmic strings in Pati-Salam model in light of new pulsar timing array data - 2308.13248-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Nasri - Gravitational waves from metastable cosmic strings in Pati-Salam model in light of new pulsar timing array data - 2308.13248.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Nasri - Gravitational waves from metastable cosmic strings in Pati-Salam model in light of new pulsar timing array data - 2308.13248.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It explains the pulsar-timing-array signal with Pati–Salam strings, and adds inflation and leptogenesis to make a complete cosmology.</p>
+<blockquote>
+<p>"A series of pulsar timing arrays (PTAs) recently observed <strong>gravitational waves at the nanohertz frequencies</strong>. Motivated by this remarkable result, we present a novel class of Pati-Salam models that give rise to <strong>a network of metastable cosmic strings</strong>, offering a plausible explanation for the observed PTA data."</p>
+<p>"Besides, <strong>we introduce a hybrid inflationary scenario to eliminate magnetic monopoles</strong> that arise during the subsequent phase transitions from the Pati-Salam symmetry to the Standard Model gauge group."</p>
+<p>"The resulting <strong>scalar spectral index is compatible with Planck data</strong>, and the <strong>tensor-to-scalar ratio is anticipated to be extremely small.</strong>"</p>
+<p>"Moreover, we incorporate a <strong>non-thermal leptogenesis</strong> to generate the required baryon asymmetry."</p>
+<p>"the gravitational wave spectra generated by the metastable cosmic strings <strong>not only correspond to signals observed in recent PTAs, including NANOGrav, but are also within the exploration capacity of both present and future ground-based and space-based experiments.</strong>"</p>
+</blockquote>
+<p><strong>This is the batch's only paper that does inflation, monopoles, strings, baryogenesis, and a GW signal at once.</strong> <strong>The corpus should treat it as the complete cosmology package.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="metastable-cosmic-strings">Metastable Cosmic Strings</h3>
+<p><strong>An ordinary cosmic string is stable</strong>; <strong>a <em>metastable</em> one can decay</strong>, via <strong>monopole–antimonopole pair nucleation on the string</strong> — <strong>the string breaks when a monopole and antimonopole appear on it and pull it apart.</strong></p>
+<p><strong>The decay rate is controlled by a suppression factor $\kappa$</strong>, and <strong>the resulting GW spectrum has a characteristic cutoff at a frequency set by $\kappa$.</strong> <strong>A metastable string network produces a spectrum that rises at low frequency and cuts off</strong> — <strong>exactly the shape PTA data prefer.</strong></p>
+<p><strong>And the corpus should record why metastability matters</strong>: <strong>a stable string network would over-produce GWs at high frequency (constrained by LIGO)</strong>, <strong>so the metastability is what makes the scenario viable.</strong></p>
+<p><strong>That is the key technical point</strong>: <strong>the network must decay, and PTA frequencies are where it decays.</strong></p>
+<h3 id="the-monopole-problem-and-hybrid-inflation">The Monopole Problem and Hybrid Inflation</h3>
+<p>"<strong>we introduce a hybrid inflationary scenario to eliminate magnetic monopoles</strong> that arise during the subsequent phase transitions from the Pati-Salam symmetry to the Standard Model"</p>
+<p><strong>This is the batch's recurring problem</strong>: <strong>a $SU(4)\to SU(3)\times U(1)$ breaking produces monopoles</strong> (since $\pi_2(SU(4)/[SU(3)\times U(1)])\neq0$), <strong>and they would overclose the universe unless inflated away.</strong></p>
+<p><strong>The standard fix is inflation after the breaking</strong>, <strong>and the paper uses hybrid inflation</strong> — <strong>a waterfall field triggered when the inflaton crosses a critical value.</strong></p>
+<p><strong>And crucially</strong>: <strong>"Magnetic monopoles could still be generated at the end of inflation"</strong>, so <strong>the inflation must end <em>before</em> the PS breaking, or the monopoles must be produced before the last $e$-folds.</strong></p>
+<p><strong>The corpus should record the ordering problem</strong>, because <strong>it is the sharpest constraint on a Pati–Salam cosmology</strong>: <strong>the sequence must be</strong>
+$$\text{PS breaking} \to \text{inflation} \to (\text{reheating}) \to \text{EW breaking},$$
+<strong>with the PS monopoles diluted and the EW monopoles (if any) absent.</strong></p>
+<p><strong>And <code>2601.14580</code> (Okada) has a different answer</strong>: <strong>symmetry non-restoration means PS never restores, so no monopoles are regenerated after inflation.</strong> <strong>The two papers solve the same problem in opposite ways, and the corpus should pair them.</strong></p>
+<h3 id="the-string-network-and-inflation-together">The String Network and Inflation Together</h3>
+<p><strong>A subtlety</strong>: <strong>inflation dilutes the string network too.</strong> <strong>So the strings that produce the PTA signal must be formed <em>after</em> inflation</strong> — <strong>which means the PS breaking that makes them must also be after inflation.</strong></p>
+<p><strong>And then the monopoles from that same breaking are <em>not</em> diluted</strong> — <strong>which is why the paper needs the metastable strings</strong>: **the strings decay, so they do not overclose; and the monopoles are... **</p>
+<p><strong>This is the tension the paper manages</strong>, and <strong>the corpus should present it as a fine-tuning of the ordering</strong>: <strong>the breaking must be after inflation (for strings), the monopoles must be diluted or absent (which needs either inflation after them, or non-restoration).</strong></p>
+<p><strong>The resolution in this paper is a hybrid-inflation scenario where the monopoles are produced before and diluted, and the strings form in a later transition.</strong> <strong>The corpus should say that the ordering is the model's substance</strong>, <strong>because that is where the physics is.</strong></p>
+<h3 id="non-thermal-leptogenesis">Non-Thermal Leptogenesis</h3>
+<p>"<strong>non-thermal leptogenesis</strong> to generate the required baryon asymmetry"</p>
+<p><strong>Non-thermal leptogenesis</strong> means <strong>the right-handed neutrinos are produced by the inflaton's decay</strong>, <strong>not thermally</strong> — <strong>so the reheating temperature can be lower than the thermal leptogenesis bound ($T_{\rm RH}\gtrsim10^9$ GeV).</strong></p>
+<p><strong>That matters because a low reheating temperature is preferred</strong> (it avoids gravitino overproduction, and it is compatible with <code>2601.14580</code>'s non-restoration).</p>
+<p><strong>The corpus should record the chain</strong>: <strong>inflaton → $N_R$ → lepton asymmetry → sphalerons → baryons.</strong> <strong>And note that it ties the inflation sector to the neutrino sector</strong>, <strong>which <code>hep-ph/9602414</code>-type models with seesaw can supply.</strong></p>
+<h3 id="the-pta-signal">The PTA Signal</h3>
+<p>"The GW spectra ... <strong>not only correspond to signals observed in recent PTAs, including NANOGrav, but are also within the exploration capacity of both present and future ground-based and space-based</strong> experiments"</p>
+<p><strong>The nanohertz signal (NANOGrav 2023) is fit</strong>, <strong>and the same spectrum's high-frequency tail is within LIGO/Virgo/KAGRA, Einstein Telescope, LISA, and BBO reach.</strong></p>
+<p><strong>So the model makes a two-band prediction</strong>: <strong>nanohertz now, and higher frequencies soon.</strong></p>
+<p><strong>The corpus should record that as the batch's most testable cosmological prediction</strong>, and <strong>compare with <code>2504.01893</code>'s domain-wall GW</strong>: <strong>two different PS defects, two different frequency bands, both testable.</strong></p>
+<h3 id="why-this-completes-the-picture">Why This Completes the Picture</h3>
+<p><strong>The corpus's earlier cosmology notes found the field fragmented</strong>: <strong><code>2504.01893</code> does domain walls, <code>2410.09093</code> does reheating, <code>2004.02332</code> does inflation and dark matter, <code>hep-ph/0505221</code> does inflation, and none does all.</strong></p>
+<p><strong>This paper does</strong>: <strong>inflation, monopoles, strings, GWs, and baryogenesis.</strong> <strong>It is the batch's only complete cosmology</strong>, and <strong>the corpus should say so and use it as the template.</strong></p>
+<p><strong>And note what it still omits</strong>: <strong>dark matter.</strong> <strong>The PS dark matter is <code>2606.29811</code> and <code>2603.24152</code>.</strong> <strong>So even this paper is not complete — the corpus should note the remaining gap.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-metastable-cosmic-strings-explain-the-nanohertz-signal">1. Metastable cosmic strings explain the nanohertz signal</h3>
+<p><strong>The idea.</strong> PS strings decay by monopole nucleation, and the spectrum matches PTA data.</p>
+<p><strong>What it would add.</strong> The batch's strongest direct confrontation with observation, and a reason the strings must be metastable.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> The fit has degeneracies.</p>
+<h3 id="2-the-ordering-problem-breaking-inflation-strings-monopoles">2. The ordering problem: breaking, inflation, strings, monopoles</h3>
+<p><strong>The idea.</strong> Strings need a post-inflation breaking; monopoles need dilution; the two pull opposite ways.</p>
+<p><strong>What it would add.</strong> The sharpest structural constraint on a PS cosmology, and the reason <code>2601.14580</code> matters.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-non-thermal-leptogenesis-ties-inflation-to-neutrinos">3. Non-thermal leptogenesis ties inflation to neutrinos</h3>
+<p><strong>The idea.</strong> Inflaton decays to $N_R$, which makes the asymmetry at low $T_{\rm RH}$.</p>
+<p><strong>What it would add.</strong> The baryogenesis mechanism, and a link between two sectors.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> The $N_R$ mass must be above the inflaton's.</p>
+<h3 id="4-two-defect-signals-in-two-bands">4. Two defect signals in two bands</h3>
+<p><strong>The idea.</strong> <code>2504.01893</code>'s domain walls and this paper's strings are both testable, in different frequency ranges.</p>
+<p><strong>What it would add.</strong> A comparison of the batch's GW predictions, and a sense of the observational reach.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Domain-wall GW: in <code>2504.01893</code>.</li>
+<li>Inflation and reheating: in <code>hep-ph/0505221</code>, <code>2004.02332</code>, <code>2410.09093</code>.</li>
+<li>PS monopoles: in the batch's breaking discussions.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's best answer to "what would Pati–Salam look like if it were true?", and the answer is a sequence, not a parameter.</p>
+<p><strong>The sequence:</strong>
+1. <strong>$E_6$ or $SO(10)$ or the string scale breaks to PS.</strong> <strong>Monopoles form.</strong>
+2. <strong>Inflation dilutes them.</strong> <strong>Hybrid inflation, with the waterfall after the breaking.</strong>
+3. <strong>Reheating produces the right-handed neutrinos.</strong> <strong>Non-thermal leptogenesis makes the asymmetry.</strong>
+4. <strong>A later transition forms the strings</strong> — <strong>metastable, so they decay.</strong>
+5. <strong>The decay's GWs reach us at nanohertz.</strong>
+6. <strong>The EW breaking happens last, with no monopoles</strong> (or diluted ones).</p>
+<p><strong>Six steps, each constrained, and the PTA data fixes step 5.</strong> <strong>That is a <em>cosmological history</em>, which is more than any other paper in the batch offers.</strong></p>
+<p><strong>And it is falsifiable</strong>: <strong>if the nanohertz signal is not from strings, or if LISA sees nothing in the predicted band, step 5 fails and the model must change.</strong></p>
+<p><strong>The corpus should present this as the template for what a complete Pati–Salam cosmology would have to do</strong> — <strong>and note that even this one leaves out dark matter, which <code>2606.29811</code> supplies separately.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

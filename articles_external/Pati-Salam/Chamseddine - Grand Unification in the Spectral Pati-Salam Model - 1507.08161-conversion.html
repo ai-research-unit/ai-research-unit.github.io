@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Unification in the Spectral Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Chamseddine - Grand Unification in the Spectral Pati-Salam Model - 1507.08161.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="grand-unification-in-the-spectral-patisalam-model"><strong>Grand Unification in the Spectral Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1507.08161 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ali H. Chamseddine, Alain Connes, Walter D. van Suijlekom</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 29 July 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (later JHEP 11 (2015) 011)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Chamseddine - Grand Unification in the Spectral Pati-Salam Model - 1507.08161-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Chamseddine - Grand Unification in the Spectral Pati-Salam Model - 1507.08161.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Chamseddine - Grand Unification in the Spectral Pati-Salam Model - 1507.08161.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>This is the numerical follow-up to <code>1304.8050</code>, and it does the calculation that paper deferred. The spectral action's gauge-kinetic terms come out with a common coefficient, so the action <strong>demands</strong> $g_R=g_L=g$ (Eq. 37). For the Standard Model the same demand fails against the measured couplings. For the spectral Pati–Salam model it succeeds, in all three scalar scenarios the framework allows — and that comparison is offered as "strong evidence for the spectral Pati–Salam model".</p>
+<p>The three scenarios differ only in the finite Dirac operator, and each gives a different one-loop beta triple and a different unification scale:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scenario</th>
+<th>scalars</th>
+<th>$(b_R,b_L,b)$</th>
+<th>$m_R$</th>
+<th>$\Lambda$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>composite, $k^\nu=k^u$, $k^e=k^d$</td>
+<td>$\varphi,\Delta$</td>
+<td>$(\tfrac73,3,\tfrac{31}{3})$</td>
+<td>$4.25\times10^{13}$</td>
+<td>$2.5\times10^{15}$</td>
+</tr>
+<tr>
+<td>composite, no quark–lepton unification</td>
+<td>$\varphi,\Delta,\Sigma$ in $(\mathbf1,\mathbf1,\mathbf{15})$</td>
+<td>$(\tfrac73,3,9)$</td>
+<td>$4.1\times10^{13}$</td>
+<td>$6.3\times10^{15}$</td>
+</tr>
+<tr>
+<td>fundamental, $H_{aI\dot b\dot J}=0$</td>
+<td>$\Sigma$, $H$</td>
+<td>$(-\tfrac{26}{3},-2,2)$</td>
+<td>$1.5\times10^{11}$</td>
+<td>$6.3\times10^{16}$</td>
+</tr>
+<tr>
+<td>left–right symmetric, fundamental</td>
+<td>$\Sigma$, $H$, $\tilde H$</td>
+<td>$(-\tfrac{26}{3},-\tfrac{26}{3},-\tfrac43)$</td>
+<td>$5.1\times10^{13}$</td>
+<td>$2.7\times10^{15}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>All four unify. The paper's claim is that this is not a coincidence but the only consistent outcome.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-uniqueness-result-has-improved">The Uniqueness Result Has Improved</h3>
+<p>The earlier paper reached $\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)$ by classifying finite geometries and imposing a <strong>symplectic constraint</strong> on the first factor — a step the authors called arbitrary. That has changed:</p>
+<blockquote>
+<p>"the original argument by classification of finite geometries ... has now been replaced by a much stronger uniqueness statement. This new result shows that the algebra $M_2(\mathbb H)\oplus M_4(\mathbb C)$ ... appears uniquely when writing the higher analogue of the Heisenberg commutation relations."</p>
+</blockquote>
+<p>The construction: "The higher analogue of the Heisenberg relations puts the spatial variables on similar footing by combining them into a single operator $Y$ using another set of $\gamma$ matrices and it is in this process that the algebra (1) appears canonically and uniquely in dimension 4." Concretely, "the above algebra comes out as a solution of the two-sided Heisenberg quantization relation between the Dirac operator $D$ and the two maps from the four spin-manifold and the two four spheres $S^4\times S^4$. This removes the arbitrary symplectic constraint and replaces it with a relation that quantize the four-volume in terms of two quanta of geometry."</p>
+<p><strong>That is a real strengthening and it is easy to miss.</strong> In 2013 the algebra was the answer to "which algebras survive the fermion-doubling and chirality constraints"; the symplectic step was a choice. In 2015 it is the answer to a quantisation condition, and the choice is gone. The corpus should record the difference, because the corpus's own case for the algebra rests on the 2013 kind of argument.</p>
+<p>And the scalar sector remains fixed: "the scalar sector can not be chosen freely, in contrast to the early work on Pati–Salam unification. In fact, there are only a few possibilities for the precise scalar content, depending on the assumptions made on the finite Dirac operator."</p>
+<h3 id="the-three-scales">The Three Scales</h3>
+<p>"There is a hierarchy of three energy scales: SM, an intermediate mass scale $m_R$ where symmetry breaking occurs and which is related to the neutrino Majorana masses ($10^{11}$–$10^{13}$ GeV), and the GUT scale $\Lambda$."</p>
+<p>That sentence is the paper's physical content in miniature. The intermediate scale is not a free parameter tuned to make unification work; it is <strong>identified with the see-saw scale</strong>, and the scan then asks whether unification follows. It does, at $m_R$ in the stated window.</p>
+<p>Why one loop: "at two loops, the gauge and scalar couplings are mixed and influence each other. Moreover, the running of the scalar mass terms can not be trusted at all because of quadratic divergences."</p>
+<h3 id="the-boundary-conditions-with-their-normalisation">The Boundary Conditions, With Their Normalisation</h3>
+<p>$$
+\frac{1}{g_L^2}=\frac{1}{g_2^2},
+\qquad
+\frac{1}{g_R^2}=\frac{2}{3}\frac{1}{g_1^2}+\frac{1}{g^2},
+\qquad
+\frac{1}{g_3^2}=\frac{1}{g^2},
+$$</p>
+<p>"in terms of the Standard Model gauge couplings $g_1,g_2,g_3$". The factor $\tfrac23$ is the trace normalisation of the $B-L$ generator — the same $\mathrm{tr}(\lambda^m\lambda^n)=2\delta^{mn}$ convention as in <code>1304.8050</code>, where $\lambda_{15}=\frac{1}{\sqrt6}\mathrm{diag}(3,-1,-1,-1)$. <strong>This is the one place in the corpus literature where the hypercharge embedding is fixed numerically rather than assumed</strong>, and the $\tfrac23$ is what encodes it.</p>
+<h3 id="the-scalar-content-in-two-tables">The Scalar Content, in Two Tables</h3>
+<p>For a first-order Dirac operator (Table I):</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>$SU(2)_R$</th>
+<th>$SU(2)_L$</th>
+<th>$SU(4)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varphi^{\dot b}_{\ a}$</td>
+<td>$\mathbf2$</td>
+<td>$\mathbf2$</td>
+<td>$\mathbf1$</td>
+</tr>
+<tr>
+<td>$\Delta^{\dot aI}$</td>
+<td>$\mathbf2$</td>
+<td>$\mathbf1$</td>
+<td>$\mathbf4$</td>
+</tr>
+<tr>
+<td>$\Sigma^I_J$</td>
+<td>$\mathbf1$</td>
+<td>$\mathbf1$</td>
+<td>$\mathbf{15}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>with "the field $\Sigma^I_J$ ... decoupled if there is quark-lepton coupling unification."</p>
+<p>For a general Dirac operator (Table II): $\Sigma$ in $\mathbf{2\times2\times(1+15)}$, $H$ in $\mathbf{3\times1\times10}$, $\tilde H$ in $\mathbf{1\times1\times6}$ — i.e. "$\Sigma^{\dot bJ}_{aI}=(\mathbf2_R,\mathbf2_L,\mathbf1)+(\mathbf2_R,\mathbf2_L,\mathbf{15})$", "$H_{aI\dot b\dot J}=(\mathbf1_R,\mathbf1_L,\mathbf6)+(\mathbf1_R,\mathbf3_L,\mathbf{10})$", "$\tilde H=(\mathbf1_R,\mathbf1_L,\mathbf6)+(\mathbf3_R,\mathbf1_L,\mathbf{10})$".</p>
+<p>Note the counting: $(\mathbf2,\mathbf2,\mathbf1)$ plus $(\mathbf2,\mathbf2,\mathbf{15})$ is $4+60=64$ real components in $\Sigma$ alone, before $\Delta$. <strong>That is why $b_L$ goes negative.</strong></p>
+<h3 id="the-three-models">The Three Models</h3>
+<p><em>Composite.</em> The finite Dirac operator is first-order relative to $\mathbb C\oplus\mathbb H_L\oplus M_3(\mathbb C)$, and "this condition is extremely constraining and forces the couplings of the right-handed neutrino to be with a singlet." The off-diagonal entry is $\delta^{1}_\alpha\delta^{\dot\beta0}_1\delta^I_1\delta^1_{K0}k^{*\nu_R}$, and the diagonal blocks are $2\times2$ with the Yukawa matrices in generation space. The scalars are the composites of Eq. (27),</p>
+<p>$$
+\Sigma^{\dot bJ}_{aI}=\big(k^\nu\varphi^{\dot b}_{\ a}+k^e\tilde\varphi^{\dot b}_{\ a}\big)\Sigma^J_I+\big(k^u\varphi^{\dot b}_{\ a}+k^d\tilde\varphi^{\dot b}_{\ a}\big)\delta^J_I-\Sigma^J_I,
+\qquad
+\tilde H^{\dot a}_{\ \dot b}\tilde{}^{J}_{\ I}=k^{*\nu_R}\Delta^{\dot aJ}_{\ \dot bI}\Delta^{\dot bI}_{\ \dot aI},
+$$</p>
+<p>with $\tilde\varphi^{\dot b}_{\ a}=\sigma_2\varphi^T\sigma_2$ "not an independent field". Beta triple $(\tfrac73,3,\tfrac{31}{3})$, $\Lambda\approx2.5\times10^{15}$ GeV at $m_R=4.25\times10^{13}$ GeV. Without the quark–lepton unification, the $(\mathbf1,\mathbf1,\mathbf{15})$ contributes and $(\tfrac73,3,9)$ gives $\Lambda\approx6.3\times10^{15}$ GeV at $m_R=4.1\times10^{13}$ GeV.</p>
+<p><em>Fundamental.</em> The general Dirac operator with $(\mathcal D_F)^{b0J0}_{aI}=0$ "implies that the Higgs field $H_{aI\dot b\dot J}=0$", and "the inner perturbations $\Sigma$ and $H$ are now themselves fundamental Higgs fields". Beta triple $(-\tfrac{26}{3},-2,2)$ — and the authors flag it: "Note that the $SU(2)_R$ and $SU(2)_L$-sectors are not asymptotically free, due to the large scalar sector. Nevertheless, we can still run the gauge couplings." Unification at $\Lambda\approx6.3\times10^{16}$ GeV with $m_R=1.5\times10^{11}$ GeV.</p>
+<p><em>Left–right symmetric fundamental.</em> Add $H_{aI\dot b\dot J}$ in $(\mathbf1_R,\mathbf3_L,\mathbf{10})+(\mathbf1_R,\mathbf1_L,\mathbf6)$. Beta triple $(-\tfrac{26}{3},-\tfrac{26}{3},-\tfrac43)$, $\Lambda\approx2.7\times10^{15}$ GeV at $m_R=5.1\times10^{13}$ GeV.</p>
+<h3 id="the-argument-that-matters">The Argument That Matters</h3>
+<p>Section III states it in four sentences and it is the strongest claim in the whole spectral programme.</p>
+<blockquote>
+<p>"the scale-invariant term $F_0a_4$ ... contains the terms $\frac{F_0}{2\pi^2}\big(g_L^2W_{\mu\nu L}^2+g_R^2W_{\mu\nu R}^2+g^2V_{\mu\nu}^2\big)$. Normalizing this to give the Yang-Mills Lagrangian demands $\frac{F_0}{2\pi^2}g_L^2=\frac{F_0}{2\pi^2}g_R^2=\frac{F_0}{2\pi^2}g^2=\frac14$, which requires gauge coupling unification, $g_R=g_L=g$. Note that the similar result for the Standard Model gauge couplings does not hold (at least at the one-loop level) because the three couplings actually do not meet, even though they are required to be unified in the spectral action. We consider this to be strong evidence for the spectral Pati–Salam model as a realistic possibility to go beyond the Standard Model."</p>
+</blockquote>
+<p><strong>Read the third sentence carefully.</strong> The Standard Model in the spectral framework <em>also</em> requires its three couplings to be equal at the cutoff — the same normalisation argument applies — and they are not. So the spectral Standard Model is internally inconsistent at one loop. Pati–Salam is the group for which the requirement is actually met.</p>
+<p>That is a different kind of argument from "the couplings happen to meet at $10^{16}$". It says the framework predicts its own breakdown in the Standard Model case and its own consistency in the Pati–Salam case. <strong>The corpus's <code>grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.md</code> says the embedding fails; this says the embedding fails <em>for a reason visible in the action</em>, not just in the numbers.</strong></p>
+<h3 id="the-conclusion">The Conclusion</h3>
+<p>"the spectral construction of particle physics models based on a spectral triple with a noncommutative space with metric dimension four and whose finite part has KO dimension $6$ leads directly to a family of Pati–Salam models ... Breaking of $SU(2)_R\times SU(4)$ to $U(1)\times SU(3)$ occurs at some scale $m_R\sim10^{11}$–$10^{13}$ GeV with a unification scale where the three coupling constants meet of the order of $10^{16}$ GeV."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-spectral-action-requires-unification-and-the-standard-model-violates-the-requirement">1. The spectral action <em>requires</em> unification, and the Standard Model violates the requirement</h3>
+<p><strong>The idea.</strong> The gauge-kinetic terms arrive with one common coefficient $F_0/2\pi^2$. Setting the Yang–Mills normalisation then forces $g_L^2=g_R^2=g^2$. Applied to the Standard Model the same step forces $g_1^2=g_2^2=g_3^2$, which the measured couplings violate.</p>
+<p><strong>What it would add.</strong> The mechanism behind the corpus's central negative result. The corpus's grand-unification article demonstrates that the embedding fails — the numbers do not work. This supplies the <em>structural</em> reason: the framework does not merely fail to predict unification, it <strong>demands</strong> it and is therefore falsified by its own spectrum unless the group is enlarged. That upgrades "the embedding fails" to "the Standard Model cannot be the whole answer, by its own action".</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.md</code>, as the opening argument rather than the closing one, and <code>articles_physics/the-spectral-triple-of-the-biquaternion-algebra.md</code>.</p>
+<p><strong>What stands in the way.</strong> The argument is one-loop and the authors say so. At two loops the scalar and gauge sectors mix and the normalisation argument becomes less clean. The corpus should record the loop order with the claim, since a one-loop argument for a structural conclusion invites exactly that objection.</p>
+<h3 id="2-the-intermediate-scale-is-the-see-saw-scale-not-a-fit-parameter">2. The intermediate scale is the see-saw scale, not a fit parameter</h3>
+<p><strong>The idea.</strong> $m_R$ is "related to the neutrino Majorana masses ($10^{11}$–$10^{13}$ GeV)" and "we take it to be the same scale that is present in the see-saw mechanism". Unification then follows at $10^{15}$–$10^{16}$ GeV.</p>
+<p><strong>What it would add.</strong> A prediction with only one input. The corpus's seesaw article derives the Majorana scale from the light neutrino masses; here that scale is fed into the running and the <em>output</em> is the unification scale. <strong>One measured quantity in, one predicted scale out</strong> — the correct logical shape for a unification claim, and the corpus currently has no instance of it. Every other unification number in this corpus (Babu's $5.2\times10^{13}$, Braam's $10^{16}$) comes from a fit.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-the-majorana-mass-in-biquaternionic-form.md</code> and the Pati–Salam article's coupling section.</p>
+<p><strong>What stands in the way.</strong> The authors "adopt the usual running of the SM gauge couplings" below $m_R$ and "leaving a full analysis of the effect of the scalar fields after Pati–Salam symmetry breaking to future work", plus they "ignore the presence of non-renormalizable terms". So the input is not as clean as the logic suggests. Import the shape of the argument, not the precision.</p>
+<h3 id="3-the-math124-window-is-fixed-by-the-scalar-content-and-the-scalar-content-is-fixed-by-the-dirac-operator">3. The $m_R$ window is fixed by the scalar content, and the scalar content is fixed by the Dirac operator</h3>
+<p><strong>The idea.</strong> Four scenarios, four beta triples, four $m_R$ values: $4.25\times10^{13}$, $4.1\times10^{13}$, $1.5\times10^{11}$, $5.1\times10^{13}$. The smallest $m_R$ belongs to the fundamental-Higgs scenario, which has the largest scalar sector.</p>
+<p><strong>What it would add.</strong> A correlation that is a genuine prediction. More scalars means more negative $b$, which means the Pati–Salam couplings run up faster, which means they meet the $SU(4)$ coupling sooner — so the required $m_R$ must be lower. <strong>The pattern is: bigger scalar sector, lower intermediate scale.</strong> The corpus can state that as a one-line rule and it is checkable against all four rows.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scalar-sector section, and the Aydemir conversions which consider low-$M_R$ scenarios.</p>
+<p><strong>What stands in the way.</strong> Four points is not a trend, and the fourth row ($b=-4/3$ for $SU(4)$, more scalars, yet $m_R=5.1\times10^{13}$) breaks the monotonicity. So state the rule and then note the exception and why — the left–right symmetric case has a much smaller $|b|$ for $SU(4)$ because the extra colour-triplet scalars are in small $SU(4)$ representations. The exception is instructive rather than fatal.</p>
+<h3 id="4-scalar-sectors-with-math141-the-patisalam-couplings-are-not-asymptotically-free">4. Scalar sectors with $b<0$: the Pati–Salam couplings are not asymptotically free</h3>
+<p><strong>The idea.</strong> $(-\tfrac{26}{3},-2,2)$ and $(-\tfrac{26}{3},-\tfrac{26}{3},-\tfrac43)$. "the $SU(2)_R$ and $SU(2)_L$-sectors are not asymptotically free, due to the large scalar sector."</p>
+<p><strong>What it would add.</strong> A tension the corpus should own. The corpus's <code>asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code> treats asymptotic freedom as a property to be explained; here the natural Pati–Salam scalar content destroys it above $m_R$ while preserving it for $SU(4)$ in one scenario and destroying it in another. <strong>Asymptotic freedom is not a constraint the framework respects</strong> — it is a property of the low-energy spectrum that does not extend upward.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code>, as the counterexample.</p>
+<p><strong>What stands in the way.</strong> Non-asymptotic freedom above $m_R$ implies a Landau pole at some finite scale, which must lie above $\Lambda$ for the theory to make sense. The paper does not check this. The corpus should note the omission rather than claim the model is excluded, since the unification point may well sit below the pole.</p>
+<h3 id="5-complexification-math150-math151-and-the-four-vanishing-blocks-of-math152">5. Complexification: $\gamma_F$, $J_F$, and the four vanishing blocks of $D_F$</h3>
+<p><strong>The idea.</strong> The finite Dirac operator is a $2\times2$ block matrix of the form $\begin{pmatrix}0&D^B_A\\D^B_{A'}&0\end{pmatrix}$ subject to $\gamma_FD_F=-D_F\gamma_F$ and $J_FD_F=D_FJ_F$, with explicit $12\times12$ matrix realisations of $\gamma_F$ and $J_F$. "These relations, together with the hermiticity of $D$ imply" relations among the blocks and force four of them to vanish, "leaving the components $(\mathcal D_F)^{\dot bJ}_{aI}$, $(\mathcal D_F)^{bJ}_{aI}$, $(\mathcal D_F)^{\dot bJ0}_{aI}$ arbitrary".</p>
+<p><strong>What it would add.</strong> The explicit index bookkeeping, in a form short enough to transcribe. The corpus asserts that its chirality structure and its real structure are compatible; here is a $12\times12$ pair of matrices that realise them and the resulting pattern of allowed and forbidden Yukawa blocks. <strong>The vanishing blocks are the content of the constraints</strong> — they are why only three of the seven blocks can be nonzero, and hence why the scalar content is finite.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/chiral-fermions-in-the-biquaternion-framework.md</code> and the spectral-triple article.</p>
+<p><strong>What stands in the way.</strong> The index conventions are the paper's own and would need translating into the corpus's. Doable, but it is a translation, not a transcription.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$M_2(\mathbb H)\oplus M_4(\mathbb C)$ and the split $\mathbb H_R\oplus\mathbb H_L$: in the spectral-triple article.</li>
+<li>Sixteen fermions per family, "4 leptons and 12 quarks": in the spectral-triple article and the Pati–Salam article.</li>
+<li>The $A^{(2)}$ quadratic term and the semigroup: in the <code>1304.8050</code> conversion, immediately above this one.</li>
+<li>The composite-versus-fundamental Higgs dichotomy: in the <code>1304.8050</code> conversion.</li>
+<li>$SU(2)_R\times SU(4)\to U(1)\times SU(3)$ and the $B-L$ generator: in the Pati–Salam article.</li>
+<li>The spectral action coefficients $-\frac{18}{\pi^2}C^2$, $+\frac{11}{\pi^2}R^*R^*$: in the <code>2511.07672</code> conversion.</li>
+</ul>
+<h3 id="two-tensions-recorded">Two tensions recorded</h3>
+<p><em>With the corpus's own coupling section.</em> The corpus's Pati–Salam article reports $\sin^2\theta_W=\frac38$ and the failure of the tree-level relation, and treats the failure as a defect of the group. This paper treats the same failure as evidence <em>for</em> the group, because the requirement of unification is structural and the alternative is worse. <strong>Both readings are available and they point opposite ways.</strong> The corpus should say which one it holds: if $\sin^2\theta_W=\frac38$ is a defect, the spectral programme is wrong; if it is a requirement that only Pati–Salam satisfies, the corpus's criticism is inverted.</p>
+<p><em>With Bochniak <code>2002.04506</code>.</em> As with <code>1304.8050</code>: this paper's entire scalar sector, and hence its entire beta-function analysis, presupposes that the Pati–Salam algebra survives without pseudo-Riemannian structure. Bochniak finds that adding the $\beta$ grading removes the leptoquarks. If Bochniak is right, every number in this paper's four tables describes a sector that is not there. The corpus is the place to note that the two literatures do not cite each other and that the disagreement is axiom-level.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pati–Salam Unification with a Spontaneous CP Violation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Suematsu - Pati-Salam unification with a spontaneous CP violation - 1906.10849.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="patisalam-unification-with-a-spontaneous-cp-violation"><strong>Pati–Salam Unification with a Spontaneous CP Violation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1906.10849 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Daijiro Suematsu</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 28 August 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, KANAZAWA-19-03)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>24 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Suematsu - Pati-Salam unification with a spontaneous CP violation - 1906.10849-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Suematsu - Pati-Salam unification with a spontaneous CP violation - 1906.10849.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Suematsu - Pati-Salam unification with a spontaneous CP violation - 1906.10849.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It makes the CP phases of both mixing matrices come from one spontaneously broken symmetry.</p>
+<blockquote>
+<p>"Recent neutrino oscillation experiments suggest that <strong>the PMNS matrix in the lepton sector has a CP violating phase as the CKM matrix in the quark sector. However, [the] origin of these phases in both matrices [is] not clarified.</strong>"</p>
+<p>"Although <strong>complex Yukawa couplings could induce these phases, they remain as free parameters</strong> ... If the CP symmetry is considered to be <strong>spontaneously broken</strong>, they are expected to be <strong>determined by some physics at a much lower energy scale than the Planck scale.</strong>"</p>
+<p>"We study such a possibility in a framework of <strong>Pati-Salam type unification.</strong>"</p>
+</blockquote>
+<p><strong>Plus</strong>: <strong>a Peccei–Quinn symmetry</strong> to protect $\bar\theta$, <strong>and the two phases related</strong> because <strong>the same CP-breaking sector couples to quarks and leptons.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="spontaneous-cp-violation">Spontaneous CP Violation</h3>
+<p><strong>The idea</strong>: <strong>the Lagrangian is CP-invariant</strong>, <strong>and the CP violation comes from complex VEVs.</strong></p>
+<p><strong>Then the phases are <em>computed</em> from the scalar potential's minimum</strong>, <strong>not chosen.</strong> <strong>That is the attraction</strong>: <strong>CP violation becomes a dynamical question.</strong></p>
+<p><strong>And in a unified theory the same VEV can feed both the CKM and the PMNS phases</strong>, <strong>so the two are related.</strong></p>
+<p><strong>The corpus should record the ambition</strong>: <strong>one source for both phases</strong>, <strong>which is what a unified theory ought to give.</strong></p>
+<p><strong>And note the difficulty</strong>: <strong>spontaneous CP violation tends to produce a large $\bar\theta$</strong>, <strong>because the same mechanism that makes the CKM phase also makes the QCD angle.</strong> <strong>The paper's whole structure is a response to that.</strong></p>
+<h3 id="the-bbp-mechanism-and-the-math2">The BBP Mechanism and the $Z_2$</h3>
+<p><strong>"A minimal simple example ... has been proposed by Bento, Branco and Parada (BBP). In this model, extra heavy vector-like down-type quarks are introduced, and a $Z_2$ symmetry is imposed ... which controls the down-type quark mass matrix so as not to bring about a contribution to $\bar\theta$ through $\arg(\det M_uM_d)$"</strong></p>
+<p><strong>The logic</strong>: <strong>$\bar\theta=\theta_{\rm QCD}+\arg\det(M_uM_d)$</strong>, <strong>so if $\arg\det(M_uM_d)=0$ the QCD angle is protected.</strong></p>
+<p><strong>And a symmetry that makes the determinant real</strong> — <strong>a $Z_2$, or a $U(1)$</strong> — <strong>does the job.</strong></p>
+<p><strong>The corpus should record the formula</strong>, because <strong>it is the heart of every strong-CP discussion</strong>: <strong>the physical angle is the sum of a gauge term and a fermion-mass determinant's phase.</strong> <strong>And the corpus's proton-decay and axion sections both need it.</strong></p>
+<h3 id="the-pq-upgrade">The PQ Upgrade</h3>
+<p>"If we impose <strong>a global $U(1)$ symmetry instead of the $Z_2$</strong> and assign its charge to these extra heavy quarks ... <strong>the model has [a] similar structure to an invisible axion model by KSVZ</strong> ... <strong>If the introduced global $U(1)$ works as the PQ symmetry, the contribution to $\bar\theta$ through radiative corrections to $\arg(\det M_uM_d)$ could be erased</strong>"</p>
+<p><strong>So the paper improves the BBP mechanism</strong>: <strong>a $Z_2$ protects $\bar\theta$ at tree level but not radiatively; a PQ $U(1)$ protects it at all orders</strong>, <strong>because the axion relaxes $\bar\theta$ dynamically.</strong></p>
+<p><strong>And the extra heavy quarks are KSVZ-like</strong>, <strong>so they generate the axion-gluon coupling.</strong></p>
+<p><strong>The corpus should record the upgrade</strong>, because <strong>it is a genuine technical improvement</strong>: <strong>a discrete symmetry is not enough against radiative corrections.</strong></p>
+<h3 id="the-two-phases-related">The Two Phases Related</h3>
+<p>"We study this scenario in a Pati–Salam type unified model, <strong>in which the CP phases in the CKM matrix and the PMNS matrix could be related.</strong>"</p>
+<p><strong>In PS the quarks and leptons share multiplets</strong>, <strong>so a CP-breaking VEV that enters the quark Yukawas also enters the lepton ones.</strong> <strong>Hence the phases are correlated.</strong></p>
+<p><strong>That is the model's distinctive prediction</strong>, and <strong>the corpus should record it</strong>: <strong>a relation between $\delta_{\rm CKM}$ and $\delta_{\rm PMNS}$.</strong></p>
+<p><strong>And it is testable</strong>, because <strong>$\delta_{\rm PMNS}$ is being measured</strong> (T2K, NOvA, DUNE) <strong>and $\delta_{\rm CKM}$ is known.</strong></p>
+<p><strong>The corpus should note that the paper does not give a sharp numerical relation in the abstract</strong>, and <strong>the conversion should not invent one.</strong></p>
+<h3 id="the-practical-problem">The Practical Problem</h3>
+<p><strong>Spontaneous CP violation with a PQ symmetry is a tightrope</strong>: <strong>the CP-breaking scale must be high enough to hide the scalars, low enough to be "much lower than the Planck scale", and the axion must not overclose the universe.</strong></p>
+<p><strong>The corpus should note the tension and that the paper's section 3 addresses "several phenomenological issues".</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-cp-violation-can-be-spontaneous-making-the-phases-computable">1. CP violation can be spontaneous, making the phases computable</h3>
+<p><strong>The idea.</strong> A CP-invariant Lagrangian with complex VEVs; the phases come from the potential.</p>
+<p><strong>What it would add.</strong> An answer to "where do the CKM and PMNS phases come from", which the corpus's flavour chapter otherwise leaves open.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Large $\bar\theta$ unless protected.</p>
+<h3 id="2-math24">2. $\bar\theta=\theta_{\rm QCD}+\arg\det(M_uM_d)$</h3>
+<p><strong>The idea.</strong> The physical strong-CP angle is a sum, and a symmetry on the mass matrices can cancel it.</p>
+<p><strong>What it would add.</strong> The formula every strong-CP discussion needs, and the logic of the BBP mechanism.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's strong-CP subsection.</p>
+<p><strong>What stands in the way.</strong> Radiative corrections.</p>
+<h3 id="3-a-pq-symmetry-upgrades-a-discrete-protection">3. A PQ symmetry upgrades a discrete protection</h3>
+<p><strong>The idea.</strong> $Z_2$ protects at tree level; PQ protects at all orders.</p>
+<p><strong>What it would add.</strong> A technical improvement, and a link to <code>1108.1771</code> and <code>1712.04880</code>'s axions.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's strong-CP subsection.</p>
+<p><strong>What stands in the way.</strong> The axion window.</p>
+<h3 id="4-ps-relates-the-ckm-and-pmns-phases">4. PS relates the CKM and PMNS phases</h3>
+<p><strong>The idea.</strong> Shared multiplets mean one CP source for both sectors.</p>
+<p><strong>What it would add.</strong> A unification-specific prediction, testable as $\delta_{\rm PMNS}$ is measured.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> The relation is not numerically sharp in the abstract.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>PQ and axion in PS: in <code>1108.1771</code>, <code>1712.04880</code>.</li>
+<li>The seesaw and neutrino masses: in <code>hep-ph/9602414</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper fills a gap the corpus's flavour chapter had: <strong>it addresses the <em>phases</em>.</strong></p>
+<p><strong>The corpus's flavour papers fit the magnitudes</strong> — <strong>masses and mixing angles</strong> — <strong>and leave the CP phases as free parameters.</strong> <strong>This paper makes them dynamical.</strong></p>
+<p><strong>That is important because the phases are where the next measurements are</strong>: <strong>$\delta_{\rm PMNS}$ is the target of DUNE and Hyper-K, and the leptonic CP violation is the gateway to leptogenesis.</strong></p>
+<p><strong>And the paper's structure ties three things together</strong>: <strong>the CKM phase, the PMNS phase, and the axion.</strong> <strong>One sector, three consequences.</strong></p>
+<p><strong>The corpus should say that, and should also say the limitation</strong>: <strong>the relation between $\delta_{\rm CKM}$ and $\delta_{\rm PMNS}$ is qualitative in the abstract</strong>, <strong>and a sharp prediction needs the potential's minimum computed.</strong> <strong>The corpus should mark it as a promised relation, not a delivered one.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

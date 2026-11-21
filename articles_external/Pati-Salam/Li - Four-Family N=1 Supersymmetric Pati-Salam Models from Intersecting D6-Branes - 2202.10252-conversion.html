@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four-Family Supersymmetric Pati–Salam Models from Intersecting D6-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Four-Family N=1 Supersymmetric Pati-Salam Models from Intersecting D6-Branes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="four-family-supersymmetric-patisalam-models-from-intersecting-d6-branes"><strong>Four-Family Supersymmetric Pati–Salam Models from Intersecting D6-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2202.10252 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tianjun Li, Adeel Mansha, Rui Sun, Lina Wu</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>34 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Four-Family N=1 Supersymmetric Pati-Salam Models from Intersecting D6-Branes - 2202.10252-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Four-Family N=1 Supersymmetric Pati-Salam Models from Intersecting D6-Branes - 2202.10252.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Four-Family N=1 Supersymmetric Pati-Salam Models from Intersecting D6-Branes - 2202.10252.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It repeats the three-family census with four families, and finds far more solutions.</p>
+<blockquote>
+<p>"We investigate the construction of <strong>four-family $N=1$ supersymmetric Pati-Salam models</strong> from Type IIA $T^6/(\mathbb Z_2\times\mathbb Z_2)$ orientifold with intersecting D6-branes. Utilizing the deterministic algorithm introduced in Ref. [1], we obtain <strong>274 types of models with three rectangular tori</strong> and distinct gauge coupling relations at string scale, while <strong>6 types of models with two rectangular tori and one tilted torus.</strong>"</p>
+<p>"In both cases, <strong>there exists a class of models with gauge coupling unification at string scale.</strong>"</p>
+<p>"In particular, for the models with <strong>two rectangular tori, one tilted torus and gauge coupling unification, the gaugino condensations are allowed</strong>, and thus <strong>supersymmetry breaking and moduli stabilization are possible</strong> for further phenomenological study."</p>
+</blockquote>
+<p><strong>The numbers are the point</strong>: <strong>274 + 6 = 280 four-family classes, against 33 three-family.</strong> <strong>An extra family multiplies the landscape by almost ten.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-four-families-are-allowed">Why Four Families Are Allowed</h3>
+<p><strong>The Standard Model has three generations, but three is not required by the gauge group.</strong> <strong>Four families are excluded by $Z$ physics</strong> (the invisible width of the $Z$ allows three light neutrinos), <strong>so a fourth family must be heavy</strong> — above $M_Z/2$.</p>
+<p><strong>And that is exactly what a four-family Pati–Salam model can give</strong>: <strong>the fourth generation is heavy because its Yukawa couplings are larger</strong>, or because its mass comes from a different operator. <strong>So four-family models are not excluded; they are constrained.</strong></p>
+<p><strong>The corpus should record this</strong>, because the literature often treats three families as a selection criterion. <strong>The D6-brane cluster explicitly searches both</strong>, and <code>hep-ph/0012255</code> in this batch builds four-family models too.</p>
+<h3 id="why-the-landscape-explodes">Why the Landscape Explodes</h3>
+<p><strong>The counting</strong>: a three-family configuration needs three copies of each matter multiplet in the right intersections; four families need four. <strong>The wrapping numbers must produce the right multiplicities, and there are more ways to do four than three</strong> because <strong>the intersection numbers are products of wrapping numbers, and the constraints are looser when the multiplicity is larger.</strong></p>
+<p><strong>So the jump from 33 to 280 is structural</strong>, not an artefact.</p>
+<p><strong>The corpus should note the consequence</strong>: <strong>any claim of the form "Pati–Salam from D-branes predicts few models" is false for four families.</strong> <strong>The landscape is family-number dependent.</strong></p>
+<h3 id="the-tilted-torus-and-gaugino-condensation">The Tilted Torus and Gaugino Condensation</h3>
+<p>"for the models with <strong>two rectangular tori, one tilted torus and gauge coupling unification, the gaugino condensations are allowed</strong>"</p>
+<p><strong>A tilted torus</strong> is one where the B-field is half-integral, so the lattice is shifted. <strong>That changes the intersection numbers and the allowed wrapping numbers</strong>, and it is the standard way to get more general models.</p>
+<p><strong>"Gaugino condensations are allowed"</strong> means <strong>the hidden sector gauge group is asymptotically free and becomes strongly coupled at a high scale</strong>, so $\langle\lambda\lambda\rangle\neq0$ and <strong>SUSY is broken by the condensate.</strong></p>
+<p><strong>That is the KKLT-like mechanism</strong>, and the paper's point is that only the two-rectangular-one-tilted models support it. <strong>So the tilted torus is what makes the model cosmologically complete</strong> — SUSY breaking and moduli stabilisation both need the condensate.</p>
+<p><strong>The corpus should record the logic</strong>: <strong>the three-family census produced models with unification but no working SUSY-breaking sector (<code>2112.09630</code>); the four-family tilted-torus models have one.</strong></p>
+<p><strong>That is a real advantage and it should be weighed against the fourth family's problems.</strong></p>
+<h3 id="deterministic-algorithm">"Deterministic Algorithm"</h3>
+<p>"Utilizing the <strong>deterministic algorithm</strong> introduced in Ref. [1]"</p>
+<p><strong>The algorithm is <code>2112.09632</code>'s</strong> — the systematic enumeration of wrapping numbers subject to tadpole and SUSY conditions. <strong>So this paper is an application, not a new method.</strong></p>
+<p><strong>The corpus should note that the cluster's power comes from this algorithm</strong>: <strong>without it, the landscape cannot be enumerated, and with it, 280 classes are a computation, not a guess.</strong></p>
+<h3 id="what-is-missing">What Is Missing</h3>
+<p><strong>No soft terms, no Yukawa analysis, no fermion masses.</strong> <strong>The paper stops at the spectrum and the unification condition.</strong></p>
+<p><strong>So the four-family landscape is enumerated but not tested.</strong> <strong>The corpus should say so</strong>: <strong>280 classes with unknown fermion fits.</strong> <strong>The three-family cluster took four papers to get from 33 to 17 viable; the four-family cluster has not started that filter.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-four-families-multiply-the-landscape-by-ten">1. Four families multiply the landscape by ten</h3>
+<p><strong>The idea.</strong> 280 classes against 33.</p>
+<p><strong>What it would add.</strong> A correction to any claim that the D-brane Pati–Salam landscape is small. <strong>The number depends on the family count.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-the-tilted-torus-enables-gaugino-condensation-and-moduli-stabilisation">2. The tilted torus enables gaugino condensation and moduli stabilisation</h3>
+<p><strong>The idea.</strong> Only the two-rectangular-one-tilted models have a working SUSY-breaking sector.</p>
+<p><strong>What it would add.</strong> A concrete reason to prefer a sub-class, and a link to the cosmology papers (<code>2504.01893</code>, <code>2004.02332</code>).</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-four-family-models-are-constrained-not-excluded">3. Four-family models are constrained, not excluded</h3>
+<p><strong>The idea.</strong> $Z$ width requires the fourth neutrino to be heavy, which the model can arrange.</p>
+<p><strong>What it would add.</strong> A caution against using three families as a selection criterion.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-the-four-family-landscape-has-no-fermion-mass-analysis-yet">4. The four-family landscape has no fermion-mass analysis yet</h3>
+<p><strong>The idea.</strong> 280 classes, zero Yukawa fits.</p>
+<p><strong>What it would add.</strong> An honest gap statement, and a direction for future work.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's open-questions section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The enumeration algorithm: in <code>2112.09632</code>.</li>
+<li>The three-family 33 classes: in <code>2112.09630</code>.</li>
+<li>Gaugino condensation and moduli: in <code>hep-ph/0505221</code>, <code>2504.01893</code>.</li>
+<li>Four-family models from branes: in <code>hep-ph/0012255</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's clearest demonstration that the landscape's size is a choice, not a fact.</p>
+<p><strong>Three families: 33 classes. Four families: 280 classes. Five families would be more.</strong> <strong>So "the Pati–Salam landscape" is not a well-defined object without a family count</strong>, and the corpus should always state which one it means.</p>
+<p><strong>And the tilted torus result is a small jewel</strong>: <strong>the subclass with unification and gaugino condensation is the only part of the 280 that could be a complete cosmology.</strong> <strong>A reader looking for a Pati–Salam model that could be the world should look there, not at the 33.</strong></p>
+<p><strong>The corpus should say that</strong>, because it inverts the cluster's usual emphasis: <strong>the three-family census is more studied but the four-family tilted models are more complete.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

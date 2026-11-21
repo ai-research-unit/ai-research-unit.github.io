@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pati–Salam Model in Curved Space-Time and Sheaf Quantization — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Pati-Salam model in curved space-time and sheaf quantization - 2208.05942.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="patisalam-model-in-curved-space-time-and-sheaf-quantization"><strong>Pati–Salam Model in Curved Space-Time and Sheaf Quantization</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2208.05942 [hep-th] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>De-Sheng Li</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 19 March 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Pati-Salam model in curved space-time and sheaf quantization - 2208.05942-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Pati-Salam model in curved space-time and sheaf quantization - 2208.05942.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Pati-Salam model in curved space-time and sheaf quantization - 2208.05942.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. It is the expanded version of <code>1412.2578</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It is the detailed account of the $U(k')\times U(k)$ construction, with the category-theory foundations written out.</p>
+<blockquote>
+<p>"This note aims to give a <strong>self-contain and detail explanation about $U(k')\times U(k)$ Pati-Salam model in curved space-time</strong> which [is] derived from <strong>$(1+n)$-dimensional square root Lorentz manifold by self-parallel transportation principle.</strong>"</p>
+<p>"The concepts foundation of manifold from view point of <strong>category theory, fiber bundle and sheaf theories</strong> are reviewed."</p>
+<p>"There are <strong>extra $U(k')\times U(k)$-principal bundle and $U(k)$-associated bundle</strong> than $(1+n)$-dimensional Lorentz [manifold]"</p>
+</blockquote>
+<p><strong>So the paper is the foundations, and the physics is a consequence.</strong> <strong>The corpus should read it as such.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-general-math6">The General $U(k')\times U(k)$</h3>
+<p><strong>The earlier paper's $U(4)\times U(4)$ is here a general $U(k')\times U(k)$</strong>, with <strong>$k=k'=4$ the Pati–Salam case.</strong></p>
+<p><strong>So the construction is a family</strong>, and <strong>Pati–Salam is one member.</strong> <strong>The corpus should note that</strong>: <strong>the framework is not specific to Pati–Salam</strong>, and <strong>the choice $k=4$ is the model-building step.</strong></p>
+<p><strong>That is consistent with the corpus's methodological point</strong>: <strong>a geometry that admits any $k$ does not select $k=4$.</strong> <strong>The selection is the declaration.</strong></p>
+<h3 id="the-two-bundles">The Two Bundles</h3>
+<p>"extra <strong>$U(k')\times U(k)$-principal bundle</strong> and <strong>$U(k)$-associated bundle</strong>"</p>
+<p><strong>A principal bundle carries the gauge connection; an associated bundle carries the matter.</strong> <strong>So the construction supplies both</strong>, which is what the claim of "deriving the SM content" rests on.</p>
+<p><strong>And the "self-parallel transportation principle"</strong> is <strong>the requirement that the connection's parallel transport be consistent with the bundle's structure</strong> — <strong>essentially the usual requirement, stated geometrically.</strong></p>
+<p><strong>The corpus should note that "self-parallel transportation" is the standard notion of a connection</strong>, renamed. <strong>That is not a criticism</strong> — <strong>the paper is being careful about what a connection is</strong> — <strong>but it means the principle is not an extra assumption; it is the definition.</strong></p>
+<h3 id="the-category-theory-review">The Category-Theory Review</h3>
+<p>"The concepts foundation of manifold from view point of <strong>category theory, fiber bundle and sheaf theories</strong> are reviewed."</p>
+<p><strong>A large part of the 35 pages is review</strong>, and the corpus should say so: <strong>the paper is partly expository.</strong></p>
+<p><strong>And the review's purpose is to justify the sheaf quantisation</strong>, which needs the sheaf-theoretic language.</p>
+<h3 id="sheaf-quantization-restated">Sheaf Quantization, Restated</h3>
+<p><strong>The proposal</strong>: <strong>quantisation as a sheaf over space-time</strong>, with <strong>local Hilbert spaces and gluing maps</strong>, <strong>rather than a single global Hilbert space.</strong></p>
+<p><strong>The corpus should compare it with algebraic quantum field theory</strong>, where <strong>the Haag–Kastler axioms define a net of local algebras</strong> — <strong>structurally the same idea, developed for sixty years.</strong></p>
+<p><strong>The paper does not make the comparison</strong>, and <strong>the corpus should note the omission</strong>: <strong>a reader of AQFT will recognise the structure and ask why the established framework is not cited.</strong> <strong>That is a fair observation and it should be recorded without hostility.</strong></p>
+<h3 id="what-the-paper-adds-to-the-earlier-one">What the Paper Adds to the Earlier One</h3>
+<p><strong>Three things</strong>: <strong>the general $k$, the foundations, and the sheaf quantisation in detail.</strong></p>
+<p><strong>And the corpus should note what it does not add</strong>: <strong>no new phenomenology, no comparison with data, no consistency check.</strong></p>
+<p><strong>So the pair <code>1412.2578</code> + <code>2208.05942</code> is a programme statement, not a model.</strong> <strong>The corpus should present it as such.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-construction-is-a-family-over-math16-and-patisalam-is-one-member">1. The construction is a family over $k$, and Pati–Salam is one member</h3>
+<p><strong>The idea.</strong> $U(k')\times U(k)$ with $k=4$ gives Pati–Salam; other $k$ give other models.</p>
+<p><strong>What it would add.</strong> A precise statement of what the framework does and does not select. <strong>The corpus should apply its "derives the group, not the model" test.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's "where the group comes from" section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-self-parallel-transportation-is-the-definition-of-a-connection">2. "Self-parallel transportation" is the definition of a connection</h3>
+<p><strong>The idea.</strong> The principle is not an extra assumption.</p>
+<p><strong>What it would add.</strong> A clarification that prevents over-reading the claim as a derivation from new principles.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's framework remark.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-sheaf-quantisation-resembles-algebraic-qfts-local-nets">3. Sheaf quantisation resembles algebraic QFT's local nets</h3>
+<p><strong>The idea.</strong> Local Hilbert spaces with gluing is the Haag–Kastler structure.</p>
+<p><strong>What it would add.</strong> A comparison the paper omits, and a way for the reader to place the proposal.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's framework remark.</p>
+<p><strong>What stands in the way.</strong> The proposal may differ in ways the abstract does not show.</p>
+<h3 id="4-the-pair-is-a-programme-statement-not-a-model">4. The pair is a programme statement, not a model</h3>
+<p><strong>The idea.</strong> No phenomenology, no data comparison.</p>
+<p><strong>What it would add.</strong> An honest placement, so the corpus's reader does not mistake scope for result.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's framework remark.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The biquaternion route to the group: in the frame article.</li>
+<li>The declaration (A): in the frame article.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper, with <code>1412.2578</code>, is the batch's only attempt at a <em>unified geometric origin</em> for the gauge group, gravity, and quantisation, and the corpus should record its position precisely.</p>
+<p><strong>Position: a programme, not a model.</strong> <strong>The geometry is stated; the phenomenology is not; and the matter assignment is a choice of $k$ and of representation content.</strong></p>
+<p><strong>That is exactly the situation the corpus's frame article describes for the biquaternion framework</strong>, and <strong>the two programmes should be compared in the corpus</strong>: <strong>both derive a group from an algebra, both claim gravity from the same structure, and both leave the matter content as a declaration.</strong></p>
+<p><strong>The honest statement the corpus can make</strong>: <strong>two independent programmes converge on the same shape — algebra + carrier + two-sided action → $SU(4)\times SU(2)\times SU(2)$ — and neither closes the gap to the Standard Model's matter content.</strong> <strong>That convergence is itself informative</strong>: <strong>it suggests the shape is not accidental.</strong></p>
+<p><strong>And the gap is the corpus's business</strong>, because <strong>the frame article is written to say where the gap is.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Pati–Salam Model from Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Rizos - A Pati-Salam model from branes - hep-ph_0012255.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-patisalam-model-from-branes"><strong>A Pati–Salam Model from Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0012255 (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>J. Rizos, K. Tamvakis</td>
+</tr>
+<tr>
+<td>version</td>
+<td>December 2000</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>16 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Rizos - A Pati-Salam model from branes - hep-ph_0012255-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Rizos - A Pati-Salam model from branes - hep-ph_0012255.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Rizos - A Pati-Salam model from branes - hep-ph_0012255.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. It is the batch's earliest D-brane Pati–Salam paper, predating <code>hep-ph/0202100</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It builds Pati–Salam on Type I branes with an unfamiliar hypercharge embedding, and gets a 5–7 TeV string scale.</p>
+<blockquote>
+<p>"We explore the possibility of embedding the Pati–Salam model in the context of <strong>Type I brane models</strong>. We study a generic model with $U(4)_C\times U(2)_L\times U(2)_R$ gauge symmetry and matter fields compatible with a Type I brane configuration."</p>
+<p>"Examining the anomaly cancellation conditions of <strong>the surplus abelian symmetries</strong> we find <strong>an alternative hypercharge embedding that is compatible with a low string/brane scale of the order of $5-7$ TeV</strong>, when the $U(4)_C$ and $U(2)_R$ brane stack couplings are equal."</p>
+<p>"<strong>Proton stability is assured as baryon number is associated to a global symmetry remnant of the broken abelian factors.</strong>"</p>
+<p>"It is also shown that this scenario can accommodate <strong>an extra low energy abelian symmetry that can be associated to lepton number.</strong> The issue of fermion and especially neutrino masses is also discussed."</p>
+</blockquote>
+<p><strong>Three results</strong>: a 5–7 TeV string scale, proton stability from a global $B$ remnant, and a low-energy $L$ symmetry.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-alternative-hypercharge-embedding">The Alternative Hypercharge Embedding</h3>
+<p><strong>In the standard Pati–Salam breaking, hypercharge is</strong>
+$$Y=\frac{1}{2}\left(B-L\right)+T_{3R},$$
+<strong>with $B-L$ the $U(4)_C$ diagonal generator.</strong> <strong>That fixes $Y$ once the embedding is chosen.</strong></p>
+<p><strong>In a brane model with surplus $U(1)$s there are other choices</strong>, because <strong>the anomalous $U(1)$s can mix into hypercharge before they become massive.</strong> <strong>The paper finds one that is compatible with a low string scale.</strong></p>
+<p><strong>The corpus should record that hypercharge is not unique in brane models</strong>: <strong>the extra $U(1)$s give a family of embeddings</strong>, and <strong>the choice affects the coupling unification and hence the string scale.</strong></p>
+<p><strong>This is the D-brane version of a familiar field-theory statement</strong>: <strong>$Y$ is a linear combination of the diagonal generators, and which combination is a model choice.</strong> <strong>In four-dimensional GUTs the choice is fixed by the fermion charges; in brane models it is a fit.</strong></p>
+<h3 id="the-57-tev-scale">The 5–7 TeV Scale</h3>
+<p>"compatible with a low string/brane scale of the order of $5-7$ TeV, <strong>when the $U(4)_C$ and $U(2)_R$ brane stack couplings are equal</strong>"</p>
+<p><strong>The condition is specific</strong>: <strong>two stacks have equal couplings.</strong> <strong>That is a geometric statement</strong> — <strong>the two stacks wrap cycles of equal volume.</strong></p>
+<p><strong>And it is the same phenomenon as <code>hep-ph/0202100</code>'s "single brane" limit</strong>: <strong>the observed couplings force relations among the stack volumes.</strong> <strong>Here the relation is equality of $a$ and $c$ volumes, and it gives 5–7 TeV.</strong></p>
+<p><strong>So the batch's two earliest brane papers both find that the couplings collapse the geometry</strong>, one to tens of TeV (<code>hep-ph/0202100</code>, single brane) and one to 5–7 TeV (here, equal volumes). <strong>The corpus should note the consistency.</strong></p>
+<p><strong>And compare <code>hep-ph/0303258</code>'s 10 TeV non-SUSY</strong>: <strong>three papers, three low-scale estimates in the same range.</strong> <strong>So the low-scale brane Pati–Salam prediction is robust across constructions</strong> — <strong>and all three are below the ~40 TeV leptoquark bound.</strong> <strong>The corpus should record the tension.</strong></p>
+<h3 id="proton-stability-from-a-global-math19">Proton Stability From a Global $B$</h3>
+<p>"<strong>Proton stability is assured as baryon number is associated to a global symmetry remnant of the broken abelian factors.</strong>"</p>
+<p><strong>The mechanism</strong>: <strong>the anomalous $U(1)$s are broken by the Green–Schwarz mechanism</strong>, but <strong>a combination survives as an <em>accidental</em> global symmetry</strong>, and <strong>that combination is baryon number.</strong></p>
+<p><strong>So $B$ is not gauged and not exact; it is a remnant.</strong> <strong>And a global symmetry is enough to forbid proton decay at the renormalisable level</strong>, because <strong>the dangerous operators violate $B$.</strong></p>
+<p><strong>The corpus should record this as a third route to proton stability</strong>, alongside:
+- <strong>a discrete symmetry ($Z_4^R$ in <code>1601.03749</code>, $Z_3$ in <code>2502.15614</code>)</strong>,
+- <strong>an accidental $U(1)_B$ from the field content (<code>2604.00166</code>)</strong>,
+- <strong>and a global remnant of broken gauge symmetries (here).</strong></p>
+<p><strong>All three are "accidental" in the technical sense</strong>: <strong>the symmetry is not imposed, it follows from what is absent.</strong> <strong>That is the modern understanding and this 2000 paper is an early example.</strong></p>
+<h3 id="the-lepton-number-math26">The Lepton Number $U(1)$</h3>
+<p>"an extra low energy abelian symmetry that can be associated to <strong>lepton number</strong>"</p>
+<p><strong>A gauged $U(1)_L$ at low energy</strong> would be a new force, constrained by fifth-force and beam-dump experiments. <strong>The paper's claim is that the brane model can supply one.</strong></p>
+<p><strong>The corpus should note it as an unusual prediction</strong>: <strong>a light $Z'$ coupled to lepton number</strong>, which is <strong>testable</strong> and <strong>distinctive</strong>.</p>
+<p><strong>And it links to <code>0908.1364</code>'s $L_e-L_\mu-L_\tau$</strong>: <strong>a gauged lepton-number symmetry at low energy is a recurring Pati–Salam-adjacent idea</strong>, because <strong>$B-L$ is already gauged above the PS scale and its remnants can be light.</strong></p>
+<h3 id="neutrino-masses">Neutrino Masses</h3>
+<p>"The issue of fermion and especially neutrino masses is also discussed."</p>
+<p><strong>In a low-scale brane model the seesaw is problematic</strong>: <strong>the right-handed neutrino mass must be at or below the string scale, so a 5–7 TeV seesaw gives too-light neutrinos unless the Yukawa is tiny.</strong></p>
+<p><strong>So the model must use a different mechanism</strong> — <strong>Dirac masses from a small Yukawa, or a low-scale inverse seesaw.</strong></p>
+<p><strong>The corpus should note the tension</strong>: <strong>a low Pati–Salam scale and a standard seesaw are incompatible.</strong> <strong>The TeV-scale papers in the batch (<code>2103.11889</code>, <code>2106.03876</code>) all face it.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-hypercharge-embedding-is-a-choice-in-brane-models">1. Hypercharge embedding is a choice in brane models</h3>
+<p><strong>The idea.</strong> The surplus $U(1)$s allow several $Y$ embeddings, with different unification consequences.</p>
+<p><strong>What it would add.</strong> A structural point about what "Pati–Salam" means in string constructions. <strong>The corpus should not treat the hypercharge as fixed.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-equal-stack-volumes-give-a-57-tev-string-scale">2. Equal stack volumes give a 5–7 TeV string scale</h3>
+<p><strong>The idea.</strong> The coupling relations collapse the geometry to a low scale.</p>
+<p><strong>What it would add.</strong> A third independent low-scale estimate, and a consistency check with <code>hep-ph/0202100</code> and <code>hep-ph/0303258</code>.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> The leptoquark bound tension.</p>
+<h3 id="3-baryon-number-as-a-global-remnant-of-broken-abelian-factors">3. Baryon number as a global remnant of broken abelian factors</h3>
+<p><strong>The idea.</strong> The Green–Schwarz breaking leaves an accidental global $B$.</p>
+<p><strong>What it would add.</strong> A third mechanism for proton stability, alongside discrete symmetries and accidental $U(1)_B$.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's proton-decay section.</p>
+<p><strong>What stands in the way.</strong> Global symmetries are expected to be violated by quantum gravity.</p>
+<h3 id="4-a-low-energy-gauged-lepton-number">4. A low-energy gauged lepton number</h3>
+<p><strong>The idea.</strong> A light $Z'$ coupled to $L$, testable.</p>
+<p><strong>What it would add.</strong> An unusual signature, and a link to <code>0908.1364</code>'s $L_e-L_\mu-L_\tau$.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's gauge-sector section.</p>
+<p><strong>What stands in the way.</strong> Fifth-force and beam-dump bounds.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Low-scale brane Pati–Salam: in <code>hep-ph/0202100</code>, <code>hep-ph/0303258</code>.</li>
+<li>The leptoquark bound: in <code>1210.3697</code>.</li>
+<li>Accidental $B$: in <code>2604.00166</code>.</li>
+<li>Gauged $L_e-L_\mu-L_\tau$: in <code>0908.1364</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This 2000 paper is the batch's first brane Pati–Salam model, and it already contains the tension the cluster never resolves.</p>
+<p><strong>The tension: a low string scale is attractive (testable, hierarchy solved) and gives a low leptoquark mass, which the rare-decay bounds exclude unless the mixing is tuned.</strong></p>
+<p><strong><code>hep-ph/0012255</code> (here)</strong>: 5–7 TeV, no discussion of the leptoquark bound.
+<strong><code>hep-ph/0202100</code></strong>: "single brane" limit, soft sum rule, no leptoquark bound.
+<strong><code>hep-ph/0303258</code></strong>: 10 TeV non-SUSY, no leptoquark bound.
+<strong><code>1210.3697</code></strong>: the bound is 38 TeV at best.</p>
+<p><strong>So three low-scale papers were written before the bound was sharp, and none of them addresses it.</strong> <strong>The corpus should say so</strong>, because <strong>it means the low-scale brane Pati–Salam programme was in tension with rare decays from the start</strong>, and <strong>the later TeV-scale leptoquark papers (<code>2103.11889</code>, <code>2106.03876</code>) are its descendants, inheriting the problem.</strong></p>
+<p><strong>And the resolution — small mixing-matrix elements — is available (<code>1210.3697</code>) but is a tuning, not a prediction.</strong> <strong>The corpus should present the low-scale branch with that caveat attached.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

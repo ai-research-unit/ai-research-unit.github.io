@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three-Family Supersymmetric Pati–Salam Flux Models from Rigid D-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Three-Family Supersymmetric Pati-Salam Flux Models from Rigid D-Branes - 2512.21141.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="three-family-supersymmetric-patisalam-flux-models-from-rigid-d-branes"><strong>Three-Family Supersymmetric Pati–Salam Flux Models from Rigid D-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2512.21141 [hep-th] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Adeel Mansha, Mudassar Sabir, Tianjun Li, Luyang Wang</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 12 May 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>78 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Three-Family Supersymmetric Pati-Salam Flux Models from Rigid D-Branes - 2512.21141-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Three-Family Supersymmetric Pati-Salam Flux Models from Rigid D-Branes - 2512.21141.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Three-Family Supersymmetric Pati-Salam Flux Models from Rigid D-Branes - 2512.21141.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its predecessors are <code>2505.03664</code> (rigid cycles) and <code>hep-th/0601064</code> (flux vacua).</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It combines the two fixes: rigid cycles <em>and</em> fluxes.</p>
+<blockquote>
+<p>"Intersecting D-brane model building often suffer from the <strong>unstabilized open-string moduli, leading to the unwanted massless adjoint scalars.</strong> In our previous work [1], <strong>this issue was resolved by employing the rigid D6-branes on the $T^6/(\mathbb Z_2\times\mathbb Z_2')$ orientifold with discrete torsion, where fractional cycles eliminate all adjoint scalars.</strong>"</p>
+<p>"In this paper, we construct <strong>new three-family flux models in the Type IIB setup on $T^6/(\mathbb Z_2\times\mathbb Z_2)$, T-dual to the Type IIA rigid D6-brane construction with discrete torsion, by introducing the quantized background $G_3$ flux that stabilizes the closed-string complex structure moduli and axio-dilaton.</strong>"</p>
+<p>"The resulting Pati-Salam gauge symmetry <strong>can be spontaneously broken down to the Standard Model via a supersymmetry-preserving Higgs mechanism. All the consistency conditions, including $N=1$ supersymmetry, RR tadpole cancellation, and K-theory constraints, are satisfied.</strong>"</p>
+<p>"We present the complete particle spectra for these models and <strong>discuss how exotic states dynamically decouple through strong dynamics in the hidden sector.</strong>"</p>
+</blockquote>
+<p><strong>So the two stabilisation routes are combined</strong>: <strong>rigid cycles kill the open-string moduli; $G_3$ flux kills the closed-string ones.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="two-moduli-problems-two-fixes">Two Moduli Problems, Two Fixes</h3>
+<p><strong>Open-string moduli</strong> come from brane positions and Wilson lines. <strong>Closed-string moduli</strong> are the complex-structure moduli, the Kähler moduli, the dilaton, and the axion.</p>
+<p><strong>Rigid cycles fix the first</strong>: "fractional cycles eliminate all adjoint scalars" — <strong>a fractional cycle is one that is invariant under the orientifold up to a shift, and it cannot move.</strong> <strong>So the branes have no position moduli.</strong></p>
+<p><strong>$G_3$ flux fixes the second</strong>: <strong>the quantized three-form flux</strong> generates a potential for the complex-structure moduli and the dilaton, <strong>and the flux quanta are integers, so the vacuum is discrete.</strong></p>
+<p><strong>So the model has no continuous moduli at all</strong> — <strong>which is what a realistic compactification needs</strong>, because <strong>massless moduli would mediate fifth forces and vary the constants.</strong></p>
+<p><strong>The corpus should record this as the batch's most complete stabilisation</strong>: <strong>no paper before this one fixes both sectors.</strong></p>
+<h3 id="the-t-duality-to-the-iia-construction">The T-Duality to the IIA Construction</h3>
+<p>"<strong>the Type IIB setup on $T^6/(\mathbb Z_2\times\mathbb Z_2)$, T-dual to the Type IIA rigid D6-brane construction with discrete torsion</strong>"</p>
+<p><strong>So the IIB flux model is the T-dual of the IIA rigid-cycle model.</strong> <strong>The rigid cycles become... rigid cycles under T-duality</strong>, and <strong>the discrete torsion becomes flux</strong> — <strong>or, more precisely, the IIA discrete torsion (a discrete B-field) maps to a IIB flux component.</strong></p>
+<p><strong>That is a clean and important statement</strong>: <strong>the discrete torsion of <code>2505.03664</code> is the T-dual image of a quantized flux.</strong> <strong>So the two constructions are the same physics in two frames.</strong></p>
+<p><strong>The corpus should record it</strong>, because it unifies the cluster's two "branches": <strong>the rigid-cycle branch and the flux branch are dual descriptions.</strong></p>
+<h3 id="the-three-checks-again">The Three Checks Again</h3>
+<p>"All the consistency conditions, including <strong>$N=1$ supersymmetry, RR tadpole cancellation, and K-theory constraints</strong>, are satisfied."</p>
+<p><strong>Three of <code>2505.03664</code>'s five.</strong> <strong>The missing two are the swampland rank bound and the exotic decoupling</strong>, and the paper addresses the second separately ("exotic states dynamically decouple through strong dynamics").</p>
+<p><strong>So the checklist is nearly complete.</strong> <strong>The corpus should note the one gap: the swampland gauge-rank bound is not checked.</strong></p>
+<h3 id="why-flux-models-have-fewer-exotics">Why Flux Models Have Fewer Exotics</h3>
+<p><strong>In the fluxless case the tadpoles force filler branes, and fillers give exotics</strong> (<code>hep-th/0601064</code>, <code>1002.2937</code>).</p>
+<p><strong>With flux, the RR charge is partly absorbed, so the fillers can be fewer or absent</strong>, <strong>and the exotics with them.</strong></p>
+<p><strong>But the paper is careful</strong>: <strong>the exotics "dynamically decouple through strong dynamics"</strong> — <strong>so some remain, and confinement hides them.</strong> <strong>The strong dynamics works because the rigid cycles give asymptotic freedom</strong>, <strong>the same chain as <code>2505.03664</code>.</strong></p>
+<p><strong>So the model uses both fixes at once</strong>: <strong>flux reduces the exotics; rigidity makes the survivors confine.</strong></p>
+<p><strong>The corpus should present the combination</strong>, because <strong>each fix alone is insufficient</strong> and <strong>this paper is the first to have both.</strong></p>
+<h3 id="the-78-pages">The 78 Pages</h3>
+<p><strong>Complete particle spectra for the models, plus the flux analysis.</strong> <strong>This is a reference work</strong>, and the corpus should cite it for spectra of the flux branch, as it cites <code>2409.09110</code> for the fluxless branch.</p>
+<h3 id="what-is-not-done">What Is Not Done</h3>
+<p><strong>No soft terms, no Yukawa fit, no dark matter.</strong> <strong>The paper stops at consistency and spectrum</strong>, like <code>2505.03664</code>.</p>
+<p><strong>So the flux branch has no phenomenology yet.</strong> <strong>That is the next step</strong>, and the corpus should say so: <strong>the machinery of <code>2410.09093</code> and <code>2409.09110</code> has not been applied here.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-rigid-cycles-fix-open-string-moduli-flux-fixes-closed-string-moduli">1. Rigid cycles fix open-string moduli; flux fixes closed-string moduli</h3>
+<p><strong>The idea.</strong> Two problems, two fixes, and this paper has both.</p>
+<p><strong>What it would add.</strong> The batch's most complete moduli stabilisation, and the reason the model has no massless scalars.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-discrete-torsion-is-the-t-dual-of-a-quantized-flux">2. Discrete torsion is the T-dual of a quantized flux</h3>
+<p><strong>The idea.</strong> The IIA rigid-cycle construction and the IIB flux construction are dual descriptions of one thing.</p>
+<p><strong>What it would add.</strong> A unification of the cluster's two branches. <strong>The corpus should stop presenting them as alternatives.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-flux-reduces-the-fillers-rigidity-confines-the-survivors">3. Flux reduces the fillers, rigidity confines the survivors</h3>
+<p><strong>The idea.</strong> Neither fix removes all exotics; together they do.</p>
+<p><strong>What it would add.</strong> A precise account of how the cluster's exotic problem is finally solved. <strong>The corpus should present the sequence.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> The composite spectrum needs checking.</p>
+<h3 id="4-the-swampland-rank-bound-is-still-unchecked">4. The swampland rank bound is still unchecked</h3>
+<p><strong>The idea.</strong> Three of five conditions are verified; the rank bound is not.</p>
+<p><strong>What it would add.</strong> An honest gap, and a direction for future work.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's open-questions section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Rigid cycles and discrete torsion: in <code>2505.03664</code>, <code>2501.08590</code>.</li>
+<li>Fluxes relaxing tadpoles: in <code>hep-th/0601064</code>.</li>
+<li>The five-condition checklist: in <code>2505.03664</code>.</li>
+<li>Filler exotics: in <code>hep-th/0403061</code>, <code>1002.2937</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the D6-brane cluster's most complete construction, and it closes a loop that opened in 2006.</p>
+<p><strong><code>hep-th/0601064</code> (2006)</strong>: fluxes relax the tadpoles, so model building does not need fillers — <strong>but the moduli are unstabilised</strong> (<code>2501.08590</code>'s problem).
+<strong><code>2505.03664</code> (2025)</strong>: rigid cycles stabilise the moduli — <strong>but the construction is fluxless</strong>.
+<strong>Here (2026)</strong>: both.</p>
+<p><strong>So the cluster's twenty-year arc ends with the two fixes combined</strong>, and the resulting model has:
+- <strong>no fillers (flux)</strong>,
+- <strong>no adjoints (rigidity)</strong>,
+- <strong>no closed-string moduli (flux)</strong>,
+- <strong>confinement to hide the exotics (rigidity)</strong>,
+- <strong>and three families, $N=1$, tadpoles, K-theory.</strong></p>
+<p><strong>What it does not have is a fermion-mass fit or a soft spectrum.</strong> <strong>The corpus should say that clearly</strong>: <strong>the string construction is essentially solved; the phenomenology is not.</strong></p>
+<p><strong>And that is a genuine achievement worth stating plainly</strong>, because <strong>most of the batch's string papers cannot get this far.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

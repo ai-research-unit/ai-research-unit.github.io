@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classification of Heterotic Pati–Salam Models — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Rizos - Classification of Heterotic Pati-Salam Models - 1007.2268.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classification-of-heterotic-patisalam-models"><strong>Classification of Heterotic Pati–Salam Models</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1007.2268 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>B. Assel, K. Christodoulides, A. E. Faraggi, C. Kounnas, J. Rizos</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>42 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Rizos - Classification of Heterotic Pati-Salam Models - 1007.2268-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Rizos - Classification of Heterotic Pati-Salam Models - 1007.2268.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Rizos - Classification of Heterotic Pati-Salam Models - 1007.2268.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its four-page summary is <code>1003.0458</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It gives the algebraic machinery for the classification, and the statistics that follow.</p>
+<blockquote>
+<p>"We extend the classification of <strong>free fermionic heterotic–string models</strong> to vacua in which <strong>the $SO(10)$ GUT symmetry is broken at the string level to the Pati–Salam subgroup.</strong>"</p>
+<p>"Using our classification method we recently presented <strong>the first example of a quasi–realistic heterotic–string vacuum that is free of massless exotic states.</strong>"</p>
+<p>"Within this method we are able to derive <strong>algebraic expressions for the Generalised GSO (GGSO) projections for all sectors</strong> that appear in the models. <strong>This facilitates the programming of the entire spectrum analysis in a computer code.</strong>"</p>
+<p>"<strong>The total number of vacua in the class of models that we classify is $2^{51}\sim10^{15}$.</strong> We perform a <strong>statistical sampling</strong> in this space of models and extract <strong>$10^{11}$ GGSO configurations with Pati–Salam gauge group.</strong>"</p>
+<p>"Our results demonstrate that <strong>one in every $10^6$ vacua correspond to a three generation exophobic model with the required Higgs states</strong>, needed to induce [spontaneous breaking to the Standard Model]."</p>
+</blockquote>
+<p><strong>So the paper's two contributions are the algebra and the statistic</strong>: <strong>$2^{51}$ vacua, $10^{11}$ Pati–Salam, one in $10^6$ viable.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="math7-where-the-number-comes-from">$2^{51}$: Where the Number Comes From</h3>
+<p><strong>In the free-fermionic construction the vacuum is specified by GGSO phases</strong> — a matrix of signs, one for each pair of boundary-condition vectors. <strong>With $N$ basis vectors there are $N(N-1)/2$ phases</strong>, and <strong>for the Pati–Salam class here $N=11$</strong>, giving <strong>$2^{55}$</strong> before symmetries, reduced to <strong>$2^{51}$</strong> after equivalences.</p>
+<p><strong>So the number is exact and computable</strong>, not an estimate. <strong>That is the strength of the method</strong>: <strong>the landscape is a finite set with a known size.</strong></p>
+<p><strong>The corpus should record the exactness</strong>, because <strong>it is unusual in landscape discussions</strong> — <strong>most "landscape" counts are estimates; this one is a count.</strong></p>
+<h3 id="the-ggso-algebra">The GGSO Algebra</h3>
+<p>"<strong>algebraic expressions for the Generalised GSO (GGSO) projections</strong> for all sectors ... <strong>facilitates the programming of the entire spectrum analysis in a computer code</strong>"</p>
+<p><strong>The GGSO projection</strong> is the generalised GSO projection that determines which states survive. <strong>In free-fermionic models it is a set of sign conditions on the vacuum's phase matrix.</strong></p>
+<p><strong>Writing them algebraically means the spectrum for any vacuum is a formula in the phases</strong>, and <strong>the formula can be evaluated in code.</strong> <strong>So the whole $2^{51}$ landscape can be scanned.</strong></p>
+<p><strong>The corpus should note the method's significance</strong>: <strong>it is the heterotic analogue of the D6-brane enumeration algorithm (<code>2112.09632</code>)</strong>, and <strong>it achieves the same thing — turning model building into a search.</strong></p>
+<p><strong>Two independent constructions, two enumeration algorithms, both in this batch.</strong> <strong>That is the methodology of modern string phenomenology, and the corpus should present it as such.</strong></p>
+<h3 id="the-first-exophobic-vacuum">The First Exophobic Vacuum</h3>
+<p>"<strong>the first example of a quasi–realistic heterotic–string vacuum that is free of massless exotic states.</strong>"</p>
+<p><strong>"Exophobic"</strong> — <strong>no fractionally charged states, no exotic colour triplets beyond the SM's.</strong></p>
+<p><strong>Why it is hard</strong>: <strong>the free-fermionic spectrum naturally contains fractionally charged states</strong>, because <strong>the $U(1)$ charges are rational and the surviving states can have $Q=\pm1/2,\pm1/3$ etc.</strong> <strong>Removing them requires the GGSO phases to project them all out</strong>, which is a strong condition.</p>
+<p><strong>And "quasi–realistic"</strong> means: <strong>three generations, the PS-breaking Higgs, and the SM Higgs doublets, with no exotics.</strong> <strong>So the model passes all five filters at once.</strong></p>
+<p><strong>The corpus should record the milestone</strong>: <strong>the first model in the batch's heterotic branch that could be the world's.</strong> <strong>And note that it was found by a search, not by construction</strong> — <strong>the classification produced it.</strong></p>
+<p><strong>That is a significant methodological point</strong>: <strong>a model that no one would have guessed was found by enumeration.</strong> <strong>Compare <code>2112.09630</code>'s unique unified D6-brane model</strong>, also found by search. <strong>Both branches' best models are search results.</strong></p>
+<h3 id="the-statistic-one-in-math16">The Statistic: One in $10^6$</h3>
+<p>"one in every $10^6$ vacua correspond to a three generation exophobic model with the required Higgs states"</p>
+<p><strong>So the viable region is $\sim10^5$ vacua out of $10^{11}$ Pati–Salam configurations.</strong> <strong>That is sparse but not vanishingly so</strong>, and <strong>the corpus should note that it is large enough to contain many distinct models</strong> — <strong>which is the landscape problem again.</strong></p>
+<p><strong>And it means the search is necessary</strong>: <strong>no amount of cleverness replaces scanning $10^{11}$ configurations.</strong></p>
+<h3 id="what-comes-next-in-the-batch">What Comes Next in the Batch</h3>
+<p><strong><code>1104.2264</code> takes one exophobic model and studies its top Yukawa</strong>, and finds that <strong>"in many models a top quark Yukawa may not exist at all."</strong> <strong>So the next filter — a viable flavour sector — cuts further.</strong></p>
+<p><strong>The corpus should chain the papers</strong>: <code>1003.0458</code> (the numbers) → <code>1007.2268</code> (the method and the first exophobic model) → <code>1104.2264</code> (the flavour test) → <code>2110.06752</code> (the no-scale potentials).</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-heterotic-patisalam-landscape-is-exactly-math21">1. The heterotic Pati–Salam landscape is exactly $2^{51}$</h3>
+<p><strong>The idea.</strong> A finite set with a computed size, not an estimate.</p>
+<p><strong>What it would add.</strong> A rare exactness in landscape discussions, and the method behind it.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-ggso-algebra-turns-the-search-into-code">2. GGSO algebra turns the search into code</h3>
+<p><strong>The idea.</strong> Spectrum formulas in the phases, evaluable by computer.</p>
+<p><strong>What it would add.</strong> The heterotic counterpart of the D6-brane algorithm, and a methodological pairing.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-first-exophobic-quasi-realistic-heterotic-vacuum">3. The first exophobic, quasi-realistic heterotic vacuum</h3>
+<p><strong>The idea.</strong> Three generations, the right Higgses, no exotics — found by search.</p>
+<p><strong>What it would add.</strong> The heterotic branch's flagship model, and evidence that enumeration finds what construction cannot.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> The flavour sector is not yet fitted.</p>
+<h3 id="4-viability-is-one-in-math22">4. Viability is one in $10^6$</h3>
+<p><strong>The idea.</strong> $\sim10^5$ viable vacua out of $10^{11}$.</p>
+<p><strong>What it would add.</strong> A measure of sparsity, and the reason searching is necessary.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The landscape numbers: in <code>1003.0458</code>.</li>
+<li>The top-Yukawa test: in <code>1104.2264</code>.</li>
+<li>The D6-brane enumeration: in <code>2112.09632</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the heterotic branch's centrepiece, and it is worth comparing directly with its D6-brane counterpart.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>free fermionic (<code>1007.2268</code>)</th>
+<th>D6-branes (<code>2112.09632</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>landscape</td>
+<td>$2^{51}\approx10^{15}$</td>
+<td>$2\times10^5$</td>
+</tr>
+<tr>
+<td>method</td>
+<td>GGSO algebra</td>
+<td>wrapping-number algorithm</td>
+</tr>
+<tr>
+<td>best model</td>
+<td>first exophobic, quasi-realistic</td>
+<td>unique unified, exotics decouple</td>
+</tr>
+<tr>
+<td>exotics</td>
+<td>removed by projection</td>
+<td>removed by decoupling</td>
+</tr>
+<tr>
+<td>found by</td>
+<td>search</td>
+<td>search</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern is identical and the scales are ten orders apart.</strong> <strong>So the methodology of string phenomenology is uniform</strong>: <strong>enumerate, filter, and inspect the survivors.</strong></p>
+<p><strong>And the corpus should present it that way</strong>, because <strong>it is more informative than presenting each cluster separately</strong>: <strong>the difference between heterotic and D6-brane model building is the size of the space and the technical filter, not the logic.</strong></p>
+<p><strong>The one real difference is the exotics' fate</strong>: <strong>free fermions project them out at the string level; D6-branes must decouple them dynamically.</strong> <strong>That is a genuine advantage of the heterotic construction, and the corpus should state it.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

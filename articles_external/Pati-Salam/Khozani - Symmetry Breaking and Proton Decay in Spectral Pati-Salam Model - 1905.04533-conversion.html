@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Symmetry Breaking and Proton Decay in the Spectral Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Khozani - Symmetry Breaking and Proton Decay in Spectral Pati-Salam Model - 1905.04533.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="symmetry-breaking-and-proton-decay-in-the-spectral-patisalam-model"><strong>Symmetry Breaking and Proton Decay in the Spectral Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1905.04533 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Hosein Karimi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>11 May 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, American University of Beirut)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>12 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Khozani - Symmetry Breaking and Proton Decay in Spectral Pati-Salam Model - 1905.04533-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Khozani - Symmetry Breaking and Proton Decay in Spectral Pati-Salam Model - 1905.04533.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Khozani - Symmetry Breaking and Proton Decay in Spectral Pati-Salam Model - 1905.04533.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. The PDF's author line reads "Hosein Karimi" while the filename says "Khozani"; the conversion keeps the filename.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It checks whether the Pati–Salam model that comes out of <strong>noncommutative geometry</strong> can actually break to the Standard Model, and concludes that it cannot.</p>
+<blockquote>
+<p>"We show the scalar potential in the spectral Pati-Salam model <strong>does not provide a suitable vacuum to break to the standard model</strong>. We see this potential <strong>is proton decay free although diquark and leptoquark vertices exist</strong>."</p>
+</blockquote>
+<p><strong>Two results, opposite in sign, and both worth recording.</strong> The construction fails at symmetry breaking and succeeds at proton stability, and the second is not a compensation.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-spectral-approach-fixes-and-what-it-costs">What the Spectral Approach Fixes, and What It Costs</h3>
+<p>"In noncommutative geometry approach, unlike usual grand unified models, <strong>our hands are not open to choose scalars and customize symmetry breaking along with fermionic mass spectrum. The Higgses and their representations are prescribed by the algebra</strong> in the theory, and the whole structure is further constrained by the spectral action principle."</p>
+<p><strong>That is the attraction and the trap, stated in one sentence.</strong> In an ordinary GUT you choose the Higgs sector to fit the breaking pattern. Here the algebra $H\oplus H\oplus M_4(\mathbb C)$ prescribes both the gauge group and the scalar content, and the spectral action prescribes the potential.</p>
+<p><strong>So the model is more constrained and therefore more predictive — and it has no freedom left to fix a problem.</strong></p>
+<p>"The scalar potential ... should be checked ... This is especially important in noncommutative geometry approach because here one does not have the free hand in manipulating the scalar sector which is the case in grand unified or effective field theories. <strong>In those cases, if there is a Higgs with correct representation, like a Higgs in the adjoint representation, one may often safely assume that there is a potential for it which provides just enough needed Goldstone bosons. Here however one needs to make sure of that by considering the vacuum of the given potential.</strong>"</p>
+<p><strong>That paragraph is the methodological heart of the paper.</strong> In a GUT paper "assume the adjoint gets a VEV" is a legitimate move because the potential can be arranged. <strong>Here it is not a legitimate move</strong>, because the potential is computed, not chosen.</p>
+<h3 id="the-failure-and-its-cause">The Failure, and Its Cause</h3>
+<p>"The model specially <strong>lacks the presence of Higgses in the adjoint representation</strong> and Higgses which decouple with the fermions in the action. Both of these are automatically true for Higgses on diagonal blocks ... <strong>However the algebra is even graded and odd parts of the Dirac operator cannot coexist with its even parts.</strong>"</p>
+<p><strong>That is the technical obstruction: the fields that would do the breaking live in the wrong grading.</strong> The Dirac operator splits into even and odd parts under the $\mathbb Z_2$ grading of the algebra, and the adjoint-type scalars would have to be odd while the fields that give fermion masses are even. <strong>You cannot have both in one operator</strong>, so the model has one or the other.</p>
+<p>"<strong>It is an important fact that spectral potential is in a way that no any Higgs can break the symmetry alone</strong> even if it is in the adjoint of the four-colour and the right symmetries. Therefore ... all the Higgses on diagonal blocks would be needed to break the symmetry in a complicated form."</p>
+<p><strong>So even if the adjoint were present it would not suffice</strong>, because the spectral potential's quartic structure prevents any single field from developing the needed VEV.</p>
+<h3 id="the-negative-mass-problem">The Negative Mass Problem</h3>
+<p>"A restriction however emerges when the quartic part of potential is not able to provide high masses for the components of $\mathbf8$ in $\Sigma$ ... <strong>Therefore $\Sigma$ will come with an overall negative mass term.</strong> The problem is originating from <strong>tight restrictions of two parts of the action. Bosonic part which does not possess all the possible quartic terms due to the spectral action principle, and the fermionic part which couples all the scalars to fermions.</strong>"</p>
+<p><strong>A negative mass-squared for a colour octet is a fatal instability, not a tuning problem.</strong> It means the vacuum is not where the model thinks it is. <strong>And the cause is that the spectral action omits quartic terms that an ordinary GUT would include.</strong> The same rigidity that makes the model predictive makes the potential incomplete.</p>
+<h3 id="the-proton-decay-result">The Proton-Decay Result</h3>
+<p>"The result is that <strong>the offdiagonal Higgses which violate baryonic and leptonic numbers in their Yukawa interactions do not lead to proton decay at tree level up to nine dimensional operators. This is despite the presence of dangerous leptoquark and diquark vertexes.</strong>"</p>
+<p><strong>That is a genuinely surprising and useful result, and it deserves the corpus's attention.</strong></p>
+<p>The expectation, from <code>2105.14029</code>, is that a scalar with both diquark and leptoquark couplings mediates proton decay at tree level — dimension four, no suppression. <strong>Here the model has exactly such scalars and the proton survives to dimension nine.</strong></p>
+<p><strong>The reason must be a cancellation or a selection rule</strong>, and the paper's appendix makes it checkable: the $\dot H^4$ potential terms are listed in $SU(3)\times SU(2)\times U(1)$ components, with the $\mathbf{10}$, $\mathbf{1}^{--}$, $\mathbf{1}^-$, $\mathbf{3}$, $\mathbf{3}^{1/3}$, $\mathbf{3}^{-4/3}$ pieces visible. <strong>The diquark and leptoquark components sit in the same multiplets but their couplings do not combine into a $B$-violating tree diagram</strong>, presumably because of the $B-L$ structure that makes each vertex conserve it.</p>
+<p><strong>So the group protects the proton here even where the multiplet mixes both couplings</strong> — which qualifies the <code>2105.14029</code> conclusion. <strong>The corpus should record both, because they disagree and the disagreement is about representation structure, not about the group.</strong></p>
+<h3 id="the-verdict">The Verdict</h3>
+<p>"With the current settings of noncommutative geometry approach <strong>it is not possible to arrange an acceptable scenario</strong> as it is seen here and in reference [22]."</p>
+<p>"The only way might be to add a real singlet on diagonal of Dirac operator. This couples with all the Higgses and might be able to provide a suitable minimum ... <strong>Anyways, it is essential to expand the geometry to generate more suitable fields and provide enough complexity to have proper symmetry breaking.</strong>"</p>
+<p>"We also conclude that <strong>the above project cannot be done by superficially splitting the Higgses to the needed representations with imposing algebraic conditions on the original discrete Dirac operator.</strong> ... <strong>It is certainly not legitimate to assume such process is automatically available and manipulate the scalar fields by imposing the first order condition</strong> or making any other request on the original, and not perturbed, Dirac operator. <strong>At the very least, this puts renormalizability in jeopardy.</strong>"</p>
+<p><strong>That last sentence is a criticism of a research programme, not of a model</strong>, and it is the paper's sharpest claim: you cannot get a working spectral Pati–Salam by hand-picking which algebraic conditions to impose, because the conditions are part of the definition of the geometry. <strong>The corpus should record this as a methodological objection</strong>, since the spectral approach appears in the literature (and in the biquaternion framing of the corpus's own anchor article) as a way of <em>deriving</em> the gauge group rather than choosing it.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-in-the-spectral-approach-the-potential-is-computed-and-cannot-be-adjusted">1. In the spectral approach, the potential is computed and cannot be adjusted</h3>
+<p><strong>The idea.</strong> The algebra prescribes the Higgs content; the spectral action prescribes the potential; there is no freedom to add a quartic term to make a vacuum work.</p>
+<p><strong>What it would add.</strong> The clearest statement of the trade the spectral approach makes. <strong>Every other paper in this batch chooses a scalar sector and assumes a vacuum exists.</strong> This one shows that when the sector is derived rather than chosen, the vacuum may not exist — and that is a real risk for the whole programme.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scalar-sector section, if it discusses the spectral or biquaternion derivation.</p>
+<p><strong>What stands in the way.</strong> Nothing; the argument is the paper's content.</p>
+<h3 id="2-no-single-spectral-higgs-can-break-the-symmetry-whatever-its-representation">2. No single spectral Higgs can break the symmetry, whatever its representation</h3>
+<p><strong>The idea.</strong> The spectral potential's quartic structure prevents any one field from developing the needed VEV, even in the adjoint.</p>
+<p><strong>What it would add.</strong> A constraint on derived models that does not exist in constructed ones. <strong>In a GUT you can always arrange a single adjoint to do the breaking; here you cannot</strong>, and the reason is structural rather than a bad choice.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's symmetry-breaking section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the potential is displayed in the appendix.</p>
+<h3 id="3-even-grading-prevents-adjoint-scalars-and-fermion-masses-coexisting">3. Even grading prevents adjoint scalars and fermion masses coexisting</h3>
+<p><strong>The idea.</strong> The Dirac operator splits into even and odd parts; the adjoint scalars would be odd; the mass-generating fields are even; they cannot both be present.</p>
+<p><strong>What it would add.</strong> A precise technical reason why the spectral construction fails, rather than a vague "does not work." <strong>The corpus should prefer the precise reason</strong>, because it tells a reader what would have to change.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's spectral section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the grading argument is stated.</p>
+<h3 id="4-diquark-plus-leptoquark-scalars-need-not-cause-proton-decay-contradicting-210514029">4. Diquark-plus-leptoquark scalars need not cause proton decay — contradicting <code>2105.14029</code></h3>
+<p><strong>The idea.</strong> Here the mixed scalars exist and the proton survives to dimension nine; there the mixed $\mathbf6$ gives renormalizable violation.</p>
+<p><strong>What it would add.</strong> A live disagreement in the batch, which the corpus should present as such and not resolve by picking one. <strong>The resolution is presumably that the spectral model's multiplets have a different $B-L$ assignment</strong>, and checking that is a concrete task for a reader.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's proton-decay section, with both claims and their sources.</p>
+<p><strong>What stands in the way.</strong> Nothing; both papers state their result and this paper's appendix lists the components.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SU(4)$'s leptoquark and diquark content: in <code>2105.14029</code>, <code>1808.07492</code> in this batch.</li>
+<li>The spectral triple and the algebra $H\oplus H\oplus M_4(\mathbb C)$: partly in the biquaternion article's derivation.</li>
+<li>Pati–Salam's $B-L$ structure protecting the proton: in <code>2307.02544</code>, <code>1808.07492</code>.</li>
+<li>The spectral action principle as a source of the potential: new to the corpus.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the only one in the batch that reports a <strong>failure of the construction itself</strong> rather than a failure of a fit, and it is therefore the most valuable negative result here.</p>
+<p>Every other paper says: the model works, subject to bounds. This one says: the model has no vacuum, and here is the term that is missing from the potential, and here is why the missing term cannot be added.</p>
+<p><strong>And the reason it matters for the corpus specifically</strong>: the biquaternion framing of the corpus's anchor article derives the Pati–Salam gauge group from a Clifford algebra, which is the same intellectual move as the spectral approach — derive rather than choose. <strong>This paper is evidence about what happens when that move is carried through to the scalar sector.</strong> The group comes out; the potential does not cooperate.</p>
+<p>That is worth one line in the corpus's article: <strong>deriving the gauge group does not derive the Higgs sector, and in the one case where the derivation was completed, the Higgs sector failed.</strong> The biquaternion construction stops at the group, which may be why it does not encounter this.</p>
+<p>The second point: the proton-decay result here — mixed diquark/leptoquark scalars surviving to dimension nine — should be checked against <code>2105.14029</code>'s claim that a $\Phi_6$ gives renormalizable violation. <strong>Both cannot be right in general</strong>, and the corpus should not present one without the other.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

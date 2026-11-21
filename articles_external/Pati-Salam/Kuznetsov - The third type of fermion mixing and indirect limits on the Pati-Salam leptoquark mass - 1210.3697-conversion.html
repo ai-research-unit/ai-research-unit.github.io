@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Third Type of Fermion Mixing and Indirect Limits on the Pati–Salam Leptoquark Mass — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Kuznetsov - The third type of fermion mixing and indirect limits on the Pati-Salam leptoquark…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-third-type-of-fermion-mixing-and-indirect-limits-on-the-patisalam-leptoquark-mass"><strong>The Third Type of Fermion Mixing and Indirect Limits on the Pati–Salam Leptoquark Mass</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1210.3697 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. V. Kuznetsov, N. V. Mikheev, A. V. Serghienko</td>
+</tr>
+<tr>
+<td>version</td>
+<td>13 October 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Yaroslavl State University)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>10 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Kuznetsov - The third type of fermion mixing and indirect limits on the Pati-Salam leptoquark mass - 1210.3697-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Kuznetsov - The third type of fermion mixing and indirect limits on the Pati-Salam leptoquark mass - 1210.3697.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Kuznetsov - The third type of fermion mixing and indirect limits on the Pati-Salam leptoquark mass - 1210.3697.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its precursor conference talk is <code>hep-ph/9505229</code> in this batch.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It identifies a mixing that other analyses miss, and shows that it weakens the leptoquark mass bound from thousands of TeV to about forty.</p>
+<blockquote>
+<p>"The low-energy manifestations of a minimal extension of the electroweak standard model based on the <strong>quark-lepton symmetry $SU(4)_V\otimes SU(2)_L\otimes G_R$ of the Pati–Salam type</strong> are analyzed. <strong>Given this symmetry the third type of mixing in the interactions of the $SU(4)_V$ leptoquarks with quarks and leptons is shown to be required.</strong>"</p>
+<p>"An additional arbitrariness of the mixing parameters <strong>could allow, in principle, to decrease noticeably the indirect lower bound on the vector leptoquark mass</strong> originated from the low-energy rare processes, strongly suppressed in the standard model."</p>
+<p>"the detailed analysis ... yields constraints on the vector leptoquark mass that always involve the elements of the unknown mixing matrix $D$ ... we have obtained in the case of identical mixings for left-handed and right-handed fermions the following lowest limit on the vector leptoquark mass: <strong>$M_X>38$ TeV</strong>. The lowest limit obtained in the asymmetric case ... appears to be: <strong>$M_X>41$ TeV</strong>."</p>
+</blockquote>
+<p><strong>So the bound is $\sim40$ TeV, not thousands.</strong> That matters for the corpus because it fixes how far Pati–Salam's leptoquark can be above the reach, and because it shows that the bound is <strong>mixing-dependent</strong>, not a hard number.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-three-mixings-are">What the Three Mixings Are</h3>
+<p><strong>In the Standard Model there are two mixing matrices</strong>: the CKM matrix for quarks and the PMNS matrix for leptons. <strong>In Pati–Salam the leptoquark couples a quark to a lepton, and there is a third matrix</strong> — the one that rotates between the quark and lepton mass bases in the leptoquark vertex.</p>
+<p><strong>Concretely</strong>: the leptoquark $X$ couples to $\bar q\,\ell$ through a matrix $D$, and $D$ is not determined by the CKM or PMNS matrices because <strong>the leptoquark couples left-handed quarks to right-handed leptons (and vice versa)</strong>, combinations that the SM does not constrain.</p>
+<p><strong>So Pati–Salam has a new source of flavour violation with its own mixing angles</strong>, and <strong>the existing bounds on rare decays like $K_L^0\to\mu^+\mu^-$ constrain $M_X$ only in combination with the unknown $D$ elements.</strong></p>
+<p><strong>That is the paper's structural point and the corpus should record it</strong>: <strong>the leptoquark mass bound is not a number; it is a surface in $(M_X, D)$ space.</strong> Papers that quote a single number are assuming a specific $D$.</p>
+<h3 id="the-bounds-dependence">The Bound's Dependence</h3>
+<p>"The constraints ... always involve the elements of the unknown mixing matrix $D$."</p>
+<p>"In the case of identical mixings for left-handed and right-handed fermions ... <strong>$M_X>38$ TeV</strong>. ... in the asymmetric case ... <strong>$M_X>41$ TeV</strong>."</p>
+<p><strong>And the individual constraints are much stronger</strong>: the table shows $M_X/|D_{\mu d}D_{\mu b}|^{1/2}>143$ TeV from $B^0\to\mu^+\mu^-$, and similar for $K_L^0\to e^\pm\mu^\mp$.</p>
+<p><strong>So the "38 TeV" is the minimum over all choices of $D$ that still satisfy every constraint</strong> — i.e. <strong>the best case</strong>. <strong>A reader should understand that the typical bound is hundreds of TeV, and 38 TeV is what you get by tuning $D$.</strong></p>
+<p><strong>The corpus should state both numbers</strong>, because quoting "38 TeV" alone would misrepresent the constraint. <strong><code>1002.2937</code> (Leontaris) and <code>hep-ph/0303258</code> (Prikas) in this batch quote other values, and the corpus should compare.</strong></p>
+<h3 id="why-this-matters-for-patisalam">Why This Matters for Pati–Salam</h3>
+<p><strong>Pati–Salam's leptoquark is not optional.</strong> The gauge bosons of $SU(4)_C$ include the $X$ and $Y$ that mediate quark–lepton transitions, so <strong>every Pati–Salam model has them</strong>, and their mass is the breaking scale (up to the mixing).</p>
+<p><strong>So the leptoquark bound is a lower bound on $M_{PS}$</strong>, and 38 TeV (or hundreds) is <strong>far above the TeV-scale models</strong> in this batch (<code>2103.11889</code>, <code>2106.03876</code>, <code>0805.3486</code>).</p>
+<p><strong>That is a tension the corpus must record</strong>: <strong>the TeV-scale vector-leptoquark papers need the leptoquark to be light enough to explain $B$-anomalies, while the rare-decay bounds push it to tens or hundreds of TeV.</strong> <strong>The resolution in those papers is always that the relevant coupling is small</strong> — which in this language means <strong>the $D$ matrix elements are small</strong>, exactly the freedom this paper identifies.</p>
+<p><strong>So <code>1210.3697</code> provides the technical justification for the TeV-scale papers' small couplings.</strong> The corpus should link them.</p>
+<h3 id="the-hierarchy-of-decays">The Hierarchy of Decays</h3>
+<p>From the precursor talk (<code>hep-ph/9505229</code>): "The decays $\mu\to e\gamma$, $\mu\to e\gamma\gamma$, and $\mu\to ee\bar e$ via the vector leptoquark are analysed and <strong>the specific hierarchy of the decay probabilities $\Gamma(\mu\to ee\bar e)\gg\Gamma(\mu\to e\gamma\gamma)\gg\Gamma(\mu\to e\gamma)$ is shown to exist.</strong> The upper limits on the branching ratios at a level of $10^{-18}$ for the $\mu\to e\gamma\gamma$ decay and at a level of $10^{-15}$ for the $\mu\to ee\bar e$ decay are established."</p>
+<p><strong>That hierarchy is a signature</strong>: the three-lepton final state dominates over the two-photon one over the single photon, which is the opposite of the usual dipole-dominated expectation. <strong>A leptoquark-mediated $\mu\to e$ conversion gives this pattern</strong>, and it is a clean discriminant between leptoquark and dipole operators.</p>
+<p><strong>The corpus should record the hierarchy</strong>, because it is a prediction with a distinctive shape — <strong>rare muon decays from a leptoquark are not just suppressed dipole transitions.</strong></p>
+<h3 id="the-method">The Method</h3>
+<p><strong>The analysis uses the standard "leading logarithm" resummation</strong> for the rare processes, running from $M_X$ down to the hadronic scale $\mu\sim1$ GeV, because "$\ln(M_X/\mu)\gg1$".</p>
+<p><strong>So the bounds come from a QCD-corrected effective field theory</strong>, not from a tree-level estimate. <strong>That is why the numbers are large</strong>: the running amplifies the operators.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-patisalam-has-a-third-mixing-matrix-beyond-ckm-and-pmns">1. Pati–Salam has a third mixing matrix beyond CKM and PMNS</h3>
+<p><strong>The idea.</strong> The leptoquark vertex has its own mixing $D$, undetermined by the SM.</p>
+<p><strong>What it would add.</strong> A structural fact about the model that the corpus probably lacks: <strong>Pati–Salam's flavour violation is not fixed by the known mixings.</strong> Every leptoquark bound is therefore conditional.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-the-leptoquark-mass-bound-is-a-surface-in-math42-not-a-number">2. The leptoquark mass bound is a surface in $(M_X,D)$, not a number</h3>
+<p><strong>The idea.</strong> 38 TeV is the minimum over mixing choices; typical bounds are hundreds of TeV.</p>
+<p><strong>What it would add.</strong> A precise way to read leptoquark bounds. <strong>The corpus should quote both the tuned minimum and the typical value, and never the former alone.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-small-math43-elements-are-what-make-tev-scale-leptoquarks-viable">3. Small $D$ elements are what make TeV-scale leptoquarks viable</h3>
+<p><strong>The idea.</strong> The TeV-scale vector-leptoquark papers need small couplings; here is the matrix that controls them.</p>
+<p><strong>What it would add.</strong> The technical bridge between <code>2103.11889</code>/<code>2106.03876</code> and the rare-decay bounds. <strong>Without small $D$, those models are excluded.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-leptoquark-mediated-math45-decays-have-an-inverted-hierarchy">4. Leptoquark-mediated $\mu\to e$ decays have an inverted hierarchy</h3>
+<p><strong>The idea.</strong> $\Gamma(\mu\to ee\bar e)\gg\Gamma(\mu\to e\gamma\gamma)\gg\Gamma(\mu\to e\gamma)$.</p>
+<p><strong>What it would add.</strong> A signature distinguishing leptoquark from dipole operators in rare muon decays. <strong>The corpus should record the shape, not just the limits.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark section.</p>
+<p><strong>What stands in the way.</strong> The hierarchy is a 1995 result; later analyses may refine it.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>TeV-scale vector leptoquarks and $B$-anomalies: in <code>2103.11889</code>, <code>2106.03876</code>.</li>
+<li>The leptoquark as a Pati–Salam gauge boson: the Pati–Salam article.</li>
+<li>Rare-decay bounds on $M_{PS}$: partly in <code>hep-ph/0303258</code>, <code>1002.2937</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and its 1995 precursor are the batch's only dedicated leptoquark-phenomenology papers, and they supply a number the whole field uses loosely.</p>
+<p><strong>The number is "the leptoquark mass bound", and it does not exist.</strong> What exists is a bound on $M_X$ given a mixing matrix, and <strong>the mixing matrix is unconstrained.</strong> So the honest statement is: $M_X>38$ TeV at best, hundreds of TeV typically.</p>
+<p><strong>The corpus should make this explicit</strong>, because the batch contains models at 1–10 TeV (<code>2103.11889</code>, <code>2106.03876</code>, <code>0812.4318</code>) and models at $10^{15}$ GeV (<code>2504.01893</code>, <code>2005.00012</code>), and <strong>the bounds' mixing-dependence is what lets them all coexist</strong>. <strong>A reader who took "38 TeV" as absolute would think the TeV models are dead; a reader who took "thousands of TeV" would too. Neither is right.</strong></p>
+<p>The second point: the inverted hierarchy $\mu\to ee\bar e\gg\mu\to e\gamma$ is worth keeping, because it is a <em>shape</em> prediction and shapes survive when bounds move. <strong>The corpus's leptoquark section should be organised around signatures, not limits.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

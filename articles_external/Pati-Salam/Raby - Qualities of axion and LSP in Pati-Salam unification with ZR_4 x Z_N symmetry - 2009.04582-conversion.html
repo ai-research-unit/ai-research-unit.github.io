@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qualities of Axion and LSP in Pati–Salam Unification with $Z_4^R\times Z_N$ Symmetry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Raby - Qualities of axion and LSP in Pati-Salam unification with ZR_4 x Z_N symmetry -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="qualities-of-axion-and-lsp-in-patisalam-unification-with-math0-symmetry"><strong>Qualities of Axion and LSP in Pati–Salam Unification with $Z_4^R\times Z_N$ Symmetry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2009.04582 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Junichiro Kawamura, Stuart Raby</td>
+</tr>
+<tr>
+<td>version</td>
+<td>9 September 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Ohio State / Keio)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>33 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Raby - Qualities of axion and LSP in Pati-Salam unification with ZR_4 x Z_N symmetry - 2009.04582-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Raby - Qualities of axion and LSP in Pati-Salam unification with ZR_4 x Z_N symmetry - 2009.04582.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Raby - Qualities of axion and LSP in Pati-Salam unification with ZR_4 x Z_N symmetry - 2009.04582.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. It belongs with the Raby programme's inflation and leptogenesis papers (<code>1601.03749</code>, <code>1612.04382</code>, <code>1703.09309</code>) in this batch.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It adds an invisible axion to the Raby Pati–Salam framework and confronts the axion's two hardest problems.</p>
+<blockquote>
+<p>"The models include two discrete symmetries, $Z_4^R\times Z_N$, which <strong>maintain the quality of the accidental Peccei-Quinn (PQ) symmetry and thus the solution to the strong CP problem</strong>."</p>
+<p>"We require that the <strong>discrete anomaly conditions are satisfied</strong> for both $Z_4^R\times G_{PS}$ and $Z_N\times G_{PS}^2$. <strong>The vacuum expectation value of the PQ field spontaneously breaks all the discrete symmetries.</strong> <strong>R-parity is violated if any of the PQ field(s) has an odd charge under $Z_4^R$.</strong>"</p>
+</blockquote>
+<p>"We present two explicit models ... a <strong>minimal model where R-parity violation is extremely suppressed</strong>, and a <strong>non-minimal model where R-parity violation is significant</strong>. In the latter model, <strong>the neutralino becomes unstable even if it is the Lightest Supersymmetric Particle (LSP), and, in addition, there are new low-energy vector-like states</strong>. In both examples, <strong>R-parity violation is sufficiently suppressed such that the proton is stable</strong>."</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-axion-quality-problem-which-is-the-real-subject">The Axion Quality Problem, Which Is the Real Subject</h3>
+<p>"The axion quality problem" is named as the target, and it is the reason for the whole construction.</p>
+<p><strong>The problem, stated plainly</strong>: the PQ symmetry must be <em>exact</em> to about one part in $10^{10}$ for the axion to solve strong CP. But quantum gravity is expected to violate all global symmetries, so Planck-suppressed operators like $\Phi^n/M_P^{n-4}$ should appear and shift the axion potential minimum away from $\theta=0$. <strong>Unless something forbids them, the axion does not solve the problem it was invented for.</strong></p>
+<p><strong>A gauge symmetry can forbid such operators because gauge symmetries are respected by gravity.</strong> So the standard fix is to make the PQ symmetry arise <em>accidentally</em> from a gauged discrete symmetry. <strong>That is exactly what this paper does</strong>, and it is the correct approach.</p>
+<p><strong>The corpus should record the logic</strong>, because it is a constraint on any Pati–Salam axion model (including <code>2005.00012</code> in this batch, the "Pati-Salam Axion" paper):</p>
+<p>$$\text{PQ must be exact to }10^{-10}\ \Longrightarrow\ \text{a global symmetry cannot be exact}\ \Longrightarrow\ \text{PQ must be accidental from a gauge symmetry.}$$</p>
+<p><strong>That syllogism is the reason <code>Z_4^R\times Z_N</code> appears</strong>, and it is more important than the model's specific field content.</p>
+<h3 id="why-math9-specifically">Why $Z_4^R$ Specifically</h3>
+<p>"The $Z_4^R$ symmetry is a <strong>unique anomaly-free symmetry consistent with the PS unification</strong> which can <strong>forbid the dimension-4 and dimension-5 operators responsible for proton decay, as well as the mass term of the Higgs doublets at the Planck scale</strong>."</p>
+<p><strong>Three jobs again, and the word "unique" is the striking one.</strong> Among discrete $R$-symmetries compatible with $SU(4)\times SU(2)\times SU(2)$ and anomaly-free, $Z_4^R$ is the only one that forbids dim-4 and dim-5 proton decay <em>and</em> the Planck-scale $\mu$ term.</p>
+<p><strong>That is a genuine derivation rather than a choice</strong>, and the corpus should record it: <strong>Pati–Salam plus anomaly freedom plus proton stability plus no $\mu$ problem selects $Z_4^R$ uniquely.</strong> Very few discrete symmetries in this literature are forced; this one is.</p>
+<p>"Without the PQ field, <strong>R-parity exists exactly if the $Z_4^R$ symmetry is broken by non-perturbative effects associated with SUSY breaking</strong>, and thus the LSP will contribute to the Dark Matter."</p>
+<p><strong>So $R$-parity is not imposed; it is a residual of $Z_4^R$ after SUSY breaking.</strong> That is the same argument as the automatic Nelson–Barr in <code>2604.00166</code>: <strong>an accidental symmetry from a broken discrete symmetry is more robust than one imposed by hand.</strong></p>
+<h3 id="the-tension-between-the-axion-and-math20-parity">The Tension Between the Axion and $R$-Parity</h3>
+<p>"The PQ field carries charges under both $Z_4^R$ and $Z_N$ symmetries, <strong>the non-zero VEV of it will break the discrete symmetries. Hence, there can be R-parity Violation (RPV) due to the spontaneous breaking of the $Z_4^R$ symmetry, if the PQ field carries odd R-charge.</strong>"</p>
+<p><strong>That is the paper's central tension and it is a real one.</strong> The axion needs a field with a large VEV that breaks the discrete symmetries. If that field has odd $R$-charge, breaking $Z_4^R$ breaks $R$-parity, and the LSP decays.</p>
+<p><strong>So the axion and the dark matter candidate are in conflict</strong>, structurally, and the paper's two models are the two resolutions:</p>
+<p>"(a) the RPV effect is so suppressed that the <strong>lifetime of the LSP is much longer than the age of universe</strong>. In this case, the <strong>low-energy R-parity is accidental, but is high quality</strong> such that the LSP contributes to the DM."</p>
+<p>"(b) the RPV is so large that the <strong>LSP decays before Big Bang Nucleosynthesis (BBN)</strong>, and thus the LSP is not the DM, i.e. <strong>the R-parity is low quality</strong>."</p>
+<p>"<strong>The intermediate case is excluded by experiments.</strong>"</p>
+<p><strong>That last sentence is the sharpest physics statement in the paper.</strong> An LSP with a lifetime between $10^{-2}$ s and $10^{13}$ s disrupts BBN: it decays during or after nucleosynthesis and destroys the light-element abundances. <strong>So there is a window of RPV that is simply forbidden</strong>, and the model must sit at one end or the other.</p>
+<p><strong>The corpus should record that window</strong>, because it constrains every model with an unstable LSP and it is not obvious: <strong>partial R-parity violation is worse than none.</strong></p>
+<h3 id="the-two-models-and-the-surprise">The Two Models and the Surprise</h3>
+<p>"In the minimal model, without $H,\Sigma,P'$, the anomaly conditions <strong>require that the MSSM particles do not carry $Z_N$ charges</strong>, so that the R-parity is respected very accurately and the LSP is sufficiently stable to be the DM."</p>
+<p><strong>So anomaly freedom, not preference, forces the MSSM to be $Z_N$-neutral in the minimal model.</strong> That is a nice example of anomaly conditions doing model selection: <strong>you want the MSSM charged to have freedom, and the anomaly conditions say no.</strong></p>
+<p>"An interesting feature of the RPV case is that the <strong>exotic vector-like triplets $(\sigma,\bar\sigma)$ and bi-doublet $H$ are predicted to have SUSY-breaking scale masses</strong>. Since the vector-like triplets may decay through the Yukawa couplings which are also induced by the SUSY breaking effects, <strong>the SUSY breaking scale is predicted to be larger than $O(100)$ TeV</strong>."</p>
+<p><strong>That is a genuine prediction from a failure mode.</strong> If you take the RPV branch, the exotic states must be at the SUSY-breaking scale, and their non-observation pushes that scale above $100$ TeV — <strong>which excludes the standard low-scale SUSY spectrum.</strong></p>
+<p><strong>So the two branches give</strong>: low-scale SUSY with the LSP as dark matter, or high-scale SUSY ($>100$ TeV) with the LSP decaying. <strong>The paper does not choose, and the choice is experimentally resolvable.</strong></p>
+<h3 id="the-forward-look">The Forward Look</h3>
+<p>"there are self-couplings of the PQ field $P$ at very high-order. It was recently proposed that the <strong>baryon asymmetry can be produced through the motion of a PQ field when kicked by an A-term of the self-coupling $P^n$, so-called lepto-axiogenesis</strong>. Our models may provide concrete examples which can accommodate the lepto-axiogenesis scenario."</p>
+<p><strong>Lepto-axiogenesis is the modern alternative to leptogenesis</strong>, and this model can host it. <strong>So the Raby programme has two baryogenesis routes in this batch</strong>: right-handed sneutrino leptogenesis (<code>1612.04382</code>) and lepto-axiogenesis here, depending on which model.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-axion-quality-syllogism-pq-must-be-accidental-from-a-gauge-symmetry">1. The axion quality syllogism: PQ must be accidental from a gauge symmetry</h3>
+<p><strong>The idea.</strong> A global PQ symmetry cannot survive quantum gravity, so it must emerge from a gauged discrete symmetry broken at a high scale.</p>
+<p><strong>What it would add.</strong> A constraint that the corpus's axion discussion must carry. <strong><code>2005.00012</code>'s "Pati-Salam Axion" needs this check too</strong>: if its PQ symmetry is global and exact, the quality problem applies.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's axion section, and the <code>2005.00012</code> conversion.</p>
+<p><strong>What stands in the way.</strong> Nothing; the argument is standard.</p>
+<h3 id="2-math39-is-the-unique-anomaly-free-choice-giving-proton-stability-and-no-math40-term">2. $Z_4^R$ is the unique anomaly-free choice giving proton stability and no $\mu$ term</h3>
+<p><strong>The idea.</strong> Pati–Salam + anomaly freedom + no dim-4/5 proton decay + Planck-scale $\mu$ forbidden selects one symmetry.</p>
+<p><strong>What it would add.</strong> A rare derivation of a discrete symmetry. <strong>The corpus should contrast it with the many <em>chosen</em> symmetries</strong> ($Z_5$ in <code>1406.7005</code>, $D_4$, $S_3$), where the choice is justified by fit rather than by consistency.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's discrete-symmetry section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the uniqueness claim is stated and checkable.</p>
+<h3 id="3-partial-r-parity-violation-is-excluded-by-bbn-the-lsp-must-be-stable-or-decay-fast">3. Partial R-parity violation is excluded by BBN; the LSP must be stable or decay fast</h3>
+<p><strong>The idea.</strong> An LSP lifetime between $10^{-2}$ and $10^{13}$ s destroys nucleosynthesis.</p>
+<p><strong>What it would add.</strong> A constraint with teeth that applies to every model with an unstable LSP in the batch. <strong>The corpus's dark-matter discussion should state it</strong>, because "the LSP might decay" is not a free option.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's dark-matter section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the bound is standard.</p>
+<h3 id="4-the-rpv-branch-predicts-susy-breaking-above-100-tev">4. The RPV branch predicts SUSY breaking above 100 TeV</h3>
+<p><strong>The idea.</strong> Exotic vector-like states at the SUSY scale, whose non-observation pushes that scale up.</p>
+<p><strong>What it would add.</strong> A route from a model-building choice to a measurable mass scale. <strong>The corpus's SUSY discussion should note that the exotic content of Pati–Salam models constrains the SUSY scale</strong>, not just the other way round.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> The argument depends on the exotic states' couplings, which are loop-induced.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$Z_4^R$ forbidding $\mu$ and dimension-5 proton decay: in <code>1601.03749</code>.</li>
+<li>The axion from a PQ field in Pati–Salam: in <code>2005.00012</code> in this batch.</li>
+<li>Lepto-axiogenesis: new to the corpus.</li>
+<li>Accidental symmetry from a broken discrete symmetry: in <code>2604.00166</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and <code>2005.00012</code> are the batch's two axion-in-Pati–Salam papers and they differ in exactly the way that matters.</p>
+<p><strong><code>2005.00012</code> (Luzio et al.)</strong>: the axion is built into the Pati–Salam structure, and the question is whether the axion's couplings respect the unified symmetry.</p>
+<p><strong>Here</strong>: the axion is added as an invisible-axion sector, and the question is whether the <strong>PQ symmetry itself survives Planck-suppressed operators</strong> — the quality problem.</p>
+<p><strong>Both questions are necessary and neither paper asks the other's.</strong> A complete Pati–Salam axion model would have to answer both: does the axion multiplet fit the unified representations, and is its shift symmetry protected from gravity? <strong>The corpus should present the two together</strong> and note that neither paper is sufficient alone.</p>
+<p>The second point: the BBN window for LSP decay is the sort of bound that should be in the corpus's summary rather than in a single paper's section, because it silently rules out a whole class of models that appear viable in isolation. <strong>Partial $R$-parity violation looks like a small perturbation and is actually fatal.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

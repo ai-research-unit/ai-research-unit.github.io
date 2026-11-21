@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safe Pati–Salam — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Wang - Safe Pati-Salam - 1807.03669.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="safe-patisalam"><strong>Safe Pati–Salam</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1807.03669 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>E. Molinaro, F. Sannino, Z. W. Wang</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 21 October 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint CP3-Origins-2018-026)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Molinaro - Safe Pati-Salam - 1807.03669-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Wang - Safe Pati-Salam - 1807.03669.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Wang - Safe Pati-Salam - 1807.03669.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. The filename is under "Wang"; the conversion keeps it.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It replaces the usual unification mechanism — a large gauge group at a high scale — with a <strong>dynamical</strong> one: an ultraviolet fixed point.</p>
+<blockquote>
+<p>"We provide an <strong>asymptotically safe</strong> Pati-Salam embedding of the Standard Model. Safety is achieved by adding to the theory <strong>gauged vector-like fermions</strong> and by employing recently developed large number-of-flavor techniques. We show that the <strong>gauge, scalar quartic and Yukawa couplings all achieve an interacting ultraviolet fixed point below the Planck scale</strong>."</p>
+</blockquote>
+<p>"The minimal model is a relevant example of a Standard-Model extension in which <strong>unification of all types of couplings occurs because of a dynamical principle, i.e. the presence of an ultraviolet fixed point</strong>. <strong>This extension differs from the usual Grand Unified Theories scenario in which only gauge couplings unify and become free with the remaining couplings left unsafe.</strong>"</p>
+<p><strong>That contrast is the paper's whole point and it is a real one.</strong> In a GUT, three gauge couplings meet at a point — and the Higgs quartic and the Yukawa couplings are left with Landau poles or triviality problems, i.e. they are not controlled in the ultraviolet. <strong>Here all four kinds of coupling (gauge, quartic, Yukawa, and the vector-like mass) become finite at a common fixed point.</strong></p>
+<p><strong>So "unification" is redefined</strong>: not the meeting of three lines, but the existence of a UV-complete trajectory. That is a different and stronger requirement.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-fundamental-scalars-need-this">Why Fundamental Scalars Need This</h3>
+<p>"Models in which scalar degrees of freedom are fundamental à la Wilson require the presence of <strong>scale invariance at short distances</strong>. A complete safe or free theory can therefore support elementary scalars as fundamental fields. <strong>Fundamentality and naturality are complementary concepts. Short distance scale invariance implies fundamentality while (near) long distance conformality and/or controllably broken symmetries help with naturality.</strong>"</p>
+<p><strong>That is a clean statement of the hierarchy problem's real content.</strong> An elementary scalar is only consistent if the theory is scale invariant at short distances — otherwise the mass is quadratically sensitive to the cutoff. <strong>Asymptotic safety provides that scale invariance without asymptotic freedom</strong>, which is what makes an elementary Higgs possible with gravity-like couplings included.</p>
+<p><strong>The corpus should record the distinction</strong>: asymptotic freedom (QCD-like) and asymptotic safety (fixed point) both give UV scale invariance, and only the second can accommodate the SM's gauge-Yukawa system.</p>
+<h3 id="the-large-math0-technique">The Large-$N$ Technique</h3>
+<p>"Recent progress in the <strong>large-$N$ safe dynamics of gauge-Yukawa theories</strong> has proven instrumental for the success of the project."</p>
+<p><strong>That is an honest attribution: the model depends on a technique, not just an idea.</strong> The fixed-point structure of a gauge theory with many flavours is under control only in the large-$N_f$ expansion, and the paper needs the expansion to claim the fixed point exists at all.</p>
+<p><strong>In order to ensure asymptotic safety in the UV for all the system ... we employ" the large-$N_f$ results, and "the fixed point is guaranteed by the <strong>pole structure</strong> occurring" in the beta functions.</strong></p>
+<p><strong>The "pole structure" is the key technical object</strong>: in the large-$N_f$ expansion, the two-loop gauge beta function has a zero whose location is controlled by the number of flavours, and that zero is the fixed point. <strong>So safety here is not a conjecture; it is a computed feature of a specific class of theories.</strong></p>
+<h3 id="the-field-content-and-the-result">The Field Content and the Result</h3>
+<p>"we add <strong>vector-like fermions</strong> to the time-honored Pati-Salam framework."</p>
+<p>"we have shown that the gauge, scalar quartic and Yukawa couplings achieve an interacting ultraviolet fixed point <strong>below the Planck scale</strong>."</p>
+<p><strong>"Below the Planck scale" is the requirement that makes the theory predictive</strong>: the fixed point must be reached before gravity matters, otherwise the gravitational corrections (which are not controlled) spoil the trajectory.</p>
+<h3 id="the-matching-which-is-the-hard-part">The Matching, Which Is the Hard Part</h3>
+<p>"<strong>Most importantly</strong>, we are able to show that <strong>starting from specific UV fixed points, some of the RG flows can match both the SM Higgs mass and Yukawa couplings (top and bottom)</strong>, which implies a truly UV completion of the Standard Model."</p>
+<p><strong>That is what distinguishes a real model from a proof of principle.</strong> Finding a fixed point is not enough; you must show that a trajectory from it lands on the measured Higgs mass and top Yukawa. <strong>The paper does this for a subset of flows, and "some of the RG flows" is the qualifier to keep.</strong></p>
+<h3 id="the-prediction">The Prediction</h3>
+<p>"<strong>It is also intriguing that, in this minimal model, the Pati-Salam symmetry breaking scale is close to $10^4$ TeV</strong> to yield a physically acceptable Higgs mass."</p>
+<p><strong>That is a scale of $10^7$ GeV — intermediate between the electroweak and GUT scales</strong>, and it is <em>predicted</em> rather than assumed, because the running from the fixed point must produce the right Higgs mass.</p>
+<p><strong>The corpus should record the number</strong>, because it is unusual: most Pati–Salam papers put the scale at $10^{11}$–$10^{16}$ GeV (see <code>2504.01893</code>'s $10^{11}$–$10^{13}$ GeV, <code>0805.3486</code>'s $10^{15}$ GeV). <strong>A $10^4$ TeV scale is low enough to be interesting for flavour and cosmology</strong>, and it comes from a completely different argument.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-unification-by-fixed-point-rather-than-by-coupling-intersection">1. Unification by fixed point rather than by coupling intersection</h3>
+<p><strong>The idea.</strong> All couplings — gauge, quartic, Yukawa — reach a common interacting UV fixed point; unification is the existence of a UV-complete trajectory.</p>
+<p><strong>What it would add.</strong> A second meaning of "unification" that the corpus almost certainly lacks. <strong>The standard meaning is "three lines cross at a point"; this one is "the theory is UV-complete"</strong>, and the second is what actually solves the fundamental-scalar problem.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's unification section, as an alternative mechanism.</p>
+<p><strong>What stands in the way.</strong> Nothing conceptually; the technical claim rests on the large-$N_f$ expansion.</p>
+<h3 id="2-elementary-scalars-are-only-consistent-with-short-distance-scale-invariance">2. Elementary scalars are only consistent with short-distance scale invariance</h3>
+<p><strong>The idea.</strong> Fundamentality implies scale invariance at short distances; asymptotic safety supplies it.</p>
+<p><strong>What it would add.</strong> A precise statement of why the hierarchy problem is a problem, and one route out. <strong>The corpus's naturalness discussion probably says "quadratic divergences"</strong>; this says <em>why</em> that matters — an elementary scalar without UV scale invariance is not a consistent fundamental field.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's naturalness section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-patisalam-scale-comes-out-near-math14-tev">3. The Pati–Salam scale comes out near $10^4$ TeV</h3>
+<p><strong>The idea.</strong> Getting the measured Higgs mass from the fixed point forces $M_{PS}\sim10^7$ GeV.</p>
+<p><strong>What it would add.</strong> A third, much lower unification scale, arrived at by a different route, which the corpus should set beside the $10^{11}$–$10^{16}$ GeV values from gauge-coupling and proton-decay arguments. <strong>If the numbers disagree by seven orders of magnitude, that is worth knowing.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale discussion.</p>
+<p><strong>What stands in the way.</strong> The result depends on the fixed point chosen and the matching procedure.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Pati–Salam with vector-like fermions: in <code>2103.11889</code>, <code>2201.04638</code> in this batch (for a different purpose).</li>
+<li>The unification scale from gauge couplings: in the gauge-coupling articles and <code>2504.01893</code>.</li>
+<li>Asymptotic safety as a UV completion: new to the corpus.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's only entry that changes what "unification" means, and it is worth reading for that alone.</p>
+<p>The other papers ask: at what scale do the couplings meet, and what does that imply? This one asks: is there a UV-complete trajectory at all, and what does <em>that</em> imply? <strong>The answers differ by seven orders of magnitude in the scale ($10^7$ GeV here, $10^{11}$–$10^{16}$ GeV elsewhere), which suggests the two questions are genuinely different and not two approximations of one.</strong></p>
+<p><strong>The corpus should present both</strong> and not silently prefer the coupling-intersection story, which is the one most articles tell. A reader who has only the GUT picture will think "Pati–Salam scale" has one meaning; it has at least three (gauge unification, proton decay, fixed-point matching).</p>
+<p>The second point: the paper's discipline is in the qualifier "some of the RG flows can match". <strong>Matching a fixed point to the measured Higgs mass is the step that separates model building from speculation</strong>, and the corpus should notice when papers do it and when they do not.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

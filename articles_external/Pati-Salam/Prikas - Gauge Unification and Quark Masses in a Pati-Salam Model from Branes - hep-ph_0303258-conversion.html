@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gauge Unification and Quark Masses in a Pati–Salam Model from Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Prikas - Gauge Unification and Quark Masses in a Pati-Salam Model from Branes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gauge-unification-and-quark-masses-in-a-patisalam-model-from-branes"><strong>Gauge Unification and Quark Masses in a Pati–Salam Model from Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0303258 (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. Prikas, N. D. Tracas</td>
+</tr>
+<tr>
+<td>version</td>
+<td>31 March 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, NTU Athens)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>11 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Prikas - Gauge Unification and Quark Masses in a Pati-Salam Model from Branes - hep-ph_0303258-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Prikas - Gauge Unification and Quark Masses in a Pati-Salam Model from Branes - hep-ph_0303258.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Prikas - Gauge Unification and Quark Masses in a Pati-Salam Model from Branes - hep-ph_0303258.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It asks how low the string scale can be in a brane-derived Pati–Salam model, and finds a large gap between the SUSY and non-SUSY answers.</p>
+<blockquote>
+<p>"We investigate the phase space of parameters in the Pati-Salam model derived in the context of D-branes scenarios, <strong>requiring low energy string scale.</strong>"</p>
+<p>"We find that <strong>a non-supersymmetric version complies with a string scale as low as $\sim10$ TeV</strong>, while in the <strong>supersymmetric version the string scale raises up to $\sim2\times10^7$ TeV.</strong>"</p>
+<p>"<strong>The limited energy region for RGE running demands a large $\tan\beta$</strong> in order to have experimentally acceptable masses for the top and bottom quarks."</p>
+</blockquote>
+<p><strong>Three numbers worth recording</strong>: 10 TeV (non-SUSY), $2\times10^7$ TeV (SUSY), and a large $\tan\beta$ required by the short running.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-a-low-string-scale-at-all">Why a Low String Scale at All</h3>
+<p><strong>The motivation is the hierarchy problem in its brane form</strong>: if the string scale is near the TeV scale, the hierarchy between the electroweak and Planck scales is solved by <strong>large extra dimensions</strong> (the Arkani-Hamed–Dimopoulos–Dvali picture), not by SUSY.</p>
+<p><strong>And the attraction is testability</strong>: a 10 TeV string scale means <strong>string resonances at the LHC</strong>, and <strong>Kaluza–Klein modes of the gauge bosons</strong> at accessible energies.</p>
+<p><strong>The corpus should record this as another route to a low Pati–Salam scale</strong>, distinct from the vector-leptoquark papers (<code>2103.11889</code>) and the 4321 model (<code>2106.03876</code>): here the scale is low because the <em>string</em> scale is low.</p>
+<p><strong>And it is the batch's only non-SUSY low-scale Pati–Salam proposal.</strong> <code>1807.03669</code> is non-SUSY but at $10^{15}$ GeV; the twin-PS and 4321 models are non-SUSY but TeV-scale for different reasons. <strong>This one is non-SUSY and TeV-scale because of large extra dimensions.</strong></p>
+<h3 id="why-susy-pushes-the-scale-up-by-three-orders">Why SUSY Pushes the Scale Up by Three Orders</h3>
+<p><strong>The argument, in plain terms.</strong> In a SUSY model the gauge couplings unify at the string scale via the MSSM RGEs, and <strong>the unification scale is fixed by the measured couplings and the spectrum.</strong> Adding the Pati–Salam exotics changes the running, and <strong>the required string scale moves up.</strong></p>
+<p><strong>"The limited energy region for RGE running demands a large $\tan\beta$"</strong> — because with the string scale at $2\times10^7$ TeV the running is short, so the $b$ and $t$ Yukawa couplings have little room to diverge, and <strong>a large $\tan\beta$ compensates by making $Y_b$ comparable to $Y_t$ at the string scale.</strong></p>
+<p><strong>So the SUSY version is squeezed twice</strong>: the unification condition pushes $M_S$ up, and the short running then requires a large $\tan\beta$ to fit $m_b/m_t$.</p>
+<p><strong>The corpus should record the pattern</strong>: <strong>the mass ratio $m_b/m_t$ is the constraint that fights a low string scale</strong>, because it needs either a long running distance or a large $\tan\beta$. <strong>That is the same tension as in <code>hep-ph/0303192</code></strong>, where exact Yukawa unification forced large $\tan\beta$ and heavy sfermions.</p>
+<h3 id="the-non-susy-10-tev-option">The Non-SUSY 10 TeV Option</h3>
+<p><strong>The non-SUSY version avoids the unification constraint</strong> because there is no SUSY desert: the couplings run from 10 TeV to $M_Z$ with the SM content, and <strong>the string scale can be as low as the experimental bounds allow.</strong></p>
+<p><strong>But the cost is the hierarchy problem</strong>, which large extra dimensions must solve, and <strong>the Pati–Salam breaking scale must be at or below the string scale</strong> — so $M_{PS}\sim10$ TeV.</p>
+<p><strong>That puts the leptoquark at 10 TeV</strong>, which is <strong>below the ~40 TeV bound from <code>1210.3697</code></strong> unless the mixing matrix $D$ is tuned. <strong>The corpus should note the tension</strong>: <strong>a 10 TeV Pati–Salam leptoquark needs the small-$D$ corner that the rare-decay papers identify.</strong></p>
+<h3 id="what-it-adds-to-the-batch">What It Adds to the Batch</h3>
+<p><strong>The batch now has a spectrum of scales</strong>, and this paper fills in the low end for the non-SUSY case:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>scale</th>
+<th>model</th>
+<th>basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–10 TeV</td>
+<td><code>2103.11889</code>, <code>2106.03876</code></td>
+<td>vector-like / 4321</td>
+</tr>
+<tr>
+<td>~10 TeV</td>
+<td>here (non-SUSY)</td>
+<td>low string scale, large extra dims</td>
+</tr>
+<tr>
+<td>$10^4$ GeV</td>
+<td><code>2501.00302</code> model I</td>
+<td>modular weight fit</td>
+</tr>
+<tr>
+<td>$10^7$ TeV</td>
+<td>here (SUSY)</td>
+<td>unification with exotics</td>
+</tr>
+<tr>
+<td>$10^{13}$–$10^{14}$ GeV</td>
+<td><code>2501.00302</code> II, III</td>
+<td>modular weight fit</td>
+</tr>
+<tr>
+<td>$10^{15}$–$10^{16}$ GeV</td>
+<td><code>2504.01893</code>, <code>1807.03669</code>, <code>0805.3486</code></td>
+<td>running / fixed point / $\sin^2\theta_W$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>That table is the corpus's most useful summary of the scale question</strong>, and its spread — twelve orders of magnitude — is the finding.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-a-non-susy-brane-patisalam-model-can-live-at-10-tev">1. A non-SUSY brane Pati–Salam model can live at 10 TeV</h3>
+<p><strong>The idea.</strong> Low string scale plus large extra dimensions, no SUSY, $M_{PS}\sim10$ TeV.</p>
+<p><strong>What it would add.</strong> The batch's lowest-scale non-SUSY Pati–Salam, and a testable one. <strong>But it collides with the leptoquark bound.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> The ~40 TeV leptoquark bound requires small mixing.</p>
+<h3 id="2-susy-pushes-the-string-scale-up-by-three-orders-of-magnitude">2. SUSY pushes the string scale up by three orders of magnitude</h3>
+<p><strong>The idea.</strong> Unification with the exotic content forces $M_S\sim2\times10^7$ TeV.</p>
+<p><strong>What it would add.</strong> A concrete demonstration that SUSY and a low string scale are in tension <strong>in Pati–Salam specifically</strong>, because of the exotics.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-math32-plus-short-running-demands-large-math33">3. $m_b/m_t$ plus short running demands large $\tan\beta$</h3>
+<p><strong>The idea.</strong> With a high string scale there is little running, so $\tan\beta$ must be large.</p>
+<p><strong>What it would add.</strong> The recurrence of a constraint the corpus's SUSY section needs: <strong>large $\tan\beta$ is forced by the mass ratio whenever the running distance is short or unification is imposed.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-the-scale-table-spanning-twelve-orders-of-magnitude">4. The scale table spanning twelve orders of magnitude</h3>
+<p><strong>The idea.</strong> Collect every computed $M_{PS}$ in the batch.</p>
+<p><strong>What it would add.</strong> The clearest statement that <strong>Pati–Salam does not predict its own breaking scale.</strong> <strong>A reader who sees one paper will think the scale is known; the table shows it is not.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>TeV-scale leptoquarks: in <code>2103.11889</code>, <code>2106.03876</code>.</li>
+<li>The ~40 TeV bound: in <code>1210.3697</code>.</li>
+<li>Large $\tan\beta$ from Yukawa unification: in <code>hep-ph/0303192</code>, <code>1703.09309</code>.</li>
+<li>Low-scale non-SUSY Pati–Salam at $10^{15}$ GeV: in <code>1807.03669</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is short and its value is in a single comparison: <strong>the same brane construction supports a 10 TeV non-SUSY model and a $2\times10^7$ TeV SUSY model.</strong></p>
+<p><strong>A factor of $2\times10^6$ between the two</strong>, from the same gauge group and the same brane origin, differing only in whether supersymmetry is present. <strong>That is the cleanest single illustration of the corpus's central point about the scale.</strong></p>
+<p><strong>And it explains the literature's confusion</strong>: papers quote "the Pati–Salam scale" as though it were a property of the group, when it is a property of the <em>spectrum and the mediation of SUSY breaking</em>. <strong><code>2504.01893</code> derives $10^{15}$ GeV from two-loop running; <code>2501.00302</code> fits $10^4$ GeV from modular weights; this paper gets 10 TeV non-SUSY and $10^7$ TeV SUSY. All are consistent with $SU(4)\times SU(2)\times SU(2)$.</strong></p>
+<p><strong>The corpus should make the group/scale distinction explicit in its first section</strong>, because every later section depends on it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

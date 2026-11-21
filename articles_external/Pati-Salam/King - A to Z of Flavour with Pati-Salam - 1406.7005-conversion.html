@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A to Z of Flavour with Pati–Salam — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/King - A to Z of Flavour with Pati-Salam - 1406.7005.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-to-z-of-flavour-with-patisalam"><strong>A to Z of Flavour with Pati–Salam</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1406.7005 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stephen F. King</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 4 September 2014</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Nucl. Phys. B 893 (2015) 261</td>
+</tr>
+<tr>
+<td>length</td>
+<td>40 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/King - A to Z of Flavour with Pati-Salam - 1406.7005-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/King - A to Z of Flavour with Pati-Salam - 1406.7005.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/King - A to Z of Flavour with Pati-Salam - 1406.7005.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It is the model this author's programme was built on: $A_4\times Z_5$ family symmetry inside Pati–Salam, giving a <strong>fully specified</strong> PMNS matrix and a Cabibbo angle.</p>
+<blockquote>
+<p>"We propose an elegant theory of flavour based on $A_4\times Z_5$ family symmetry with Pati-Salam unification which provides an <strong>excellent description of quark and lepton masses, mixing and CP violation</strong>."</p>
+</blockquote>
+<p>"The $A_4$ symmetry <strong>unifies the left-handed families and its vacuum alignment determines the columns of Yukawa matrices</strong>. The $Z_5$ symmetry <strong>distinguishes the right-handed families and its breaking controls CP violation</strong> in both the quark and lepton sectors."</p>
+<p>"The Pati-Salam symmetry <strong>relates the quark and lepton Yukawa matrices, with $Y^u=Y^\nu$ and $Y^d\sim Y^e$</strong>."</p>
+<p><strong>That third line is the Georgi–Jarlskog relation, and here it is derived from the family symmetry rather than imposed by hand.</strong> That is the paper's central claim: Pati–Salam gives the quark-lepton relation and $A_4$ gives the mixing pattern, and together they fix everything.</p>
+<blockquote>
+<p>"Using the see-saw mechanism with very hierarchical right-handed neutrinos and <strong>CSD4</strong> vacuum alignment, the model <strong>predicts the entire PMNS mixing matrix</strong> and gives a <strong>Cabibbo angle $\theta_C\approx1/4$</strong>."</p>
+</blockquote>
+<p>"In particular, for a discrete choice of $Z_5$ phases, it predicts <strong>maximal atmospheric mixing</strong>, $\theta_{23}^l=45^\circ\pm0.5^\circ$, and leptonic CP violating phase $\delta^l=260^\circ\pm5^\circ$. The reactor angle prediction is $\theta_{13}^l=9^\circ\pm0.5^\circ$, while the solar angle is $34^\circ\gtrsim\theta_{12}^l\gtrsim31^\circ$, for a lightest neutrino mass in the range $0\gtrsim m_1\gtrsim0.5$ meV, corresponding to a <strong>normal neutrino mass hierarchy and a very small rate for neutrinoless double beta decay</strong>."</p>
+<p><strong>Those are numbers, not bands, and they were predictions.</strong> In 2014 the reactor angle was known to be about $9^\circ$, the atmospheric angle about $45^\circ$, and $\delta$ unknown. <strong>So $\delta^l=260^\circ\pm5^\circ$ was the live prediction</strong>, and its falsification or confirmation is the test of the whole scheme.</p>
+<p><strong>Current data give $\delta\approx 200^\circ$–$240^\circ$ (normal ordering)</strong> — closer to $260^\circ$ than to zero but not comfortably inside $\pm5^\circ$. <strong>The corpus should record both the prediction and the present status</strong>, because it is a worked example of a precise flavour prediction meeting data.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-division-of-labour">The Division of Labour</h3>
+<p>"The $A_4$ symmetry unifies the left-handed families and its <strong>vacuum alignment determines the columns of Yukawa matrices</strong>. The $Z_5$ symmetry distinguishes the right-handed families and <strong>its breaking controls CP violation</strong>."</p>
+<p><strong>Two symmetries, two jobs, and the split is what makes the model work:</strong>
+- $A_4$ acts on the left-handed doublets as a triplet, so the three columns of the Yukawa matrix are <em>related</em> by the group.
+- $Z_5$ acts on the right-handed fields as three different singlets, so the three rows are <em>distinguished</em> — and the phases of the $Z_5$ breaking give CP violation.</p>
+<p><strong>That is the cleanest statement of why flavour models need two symmetries</strong>: one to relate, one to distinguish. A single $A_4$ gives tri-bimaximal mixing with a vanishing reactor angle; a single $Z_5$ gives nothing. <strong>Together they give the observed pattern.</strong></p>
+<h3 id="csd-and-the-reactor-angle">CSD and the Reactor Angle</h3>
+<p>"<strong>Constrained sequential dominance (CSD)</strong> involves the dominant right-handed neutrino [giving] ..."</p>
+<ul>
+<li>"<strong>CSD1</strong>: $(1,1,-1)$ leading to TB mixing with <strong>zero reactor angle</strong> $\theta_{13}$"</li>
+<li>"<strong>CSD2</strong>: $(1,2,0)$ giving $\theta_{13}$"</li>
+<li>"<strong>CSD3</strong>: $(1,3,1)$ with a relative phase $\pm\pi/3$ giving $\theta_{13}$"</li>
+<li>"<strong>CSD4</strong>: $(1,4,2)$, with a relative phase $\pm2\pi/5$ giving $\theta_{13}$"</li>
+</ul>
+<p><strong>The sequence is a measurement history written as model parameters.</strong> CSD1 was built for tri-bimaximal mixing when $\theta_{13}$ was thought to be zero; when Daya Bay measured $\theta_{13}\approx9^\circ$, the vacuum alignment was changed to CSD2, then CSD3, then CSD4.</p>
+<p><strong>The corpus should record this as a caution about the programme</strong>: a family symmetry's vacuum alignment can be adjusted to fit a newly measured angle, so a successful fit is weaker evidence than it appears. <strong>What is not adjustable is the relation between the angles</strong>, and that is where CSD4's predictive content lies.</p>
+<p>"From the point of view of extending to the quark sector, <strong>CSD4 seems to be the</strong> [most suitable]."</p>
+<p><strong>Because CSD4's alignment is the one whose structure is compatible with the $Z_5$ that also generates the quark CP phase.</strong> So the choice is not free once the quark sector is included — which is a genuine constraint and worth noting.</p>
+<h3 id="the-quarklepton-relation">The Quark–Lepton Relation</h3>
+<p>"The Pati-Salam symmetry relates the quark and lepton Yukawa matrices, with $Y^u=Y^\nu$ and $Y^d\sim Y^e$."</p>
+<p><strong>$Y^u=Y^\nu$ is exact in Pati–Salam at the unification scale</strong>, because $u$ and $\nu$ are in the same $SU(4)$ multiplet and couple to the same Higgs. <strong>$Y^d\sim Y^e$ with a factor of 3 is the Georgi–Jarlskog relation</strong>, which arises from the Higgs being in a $\mathbf{15}$ rather than a $\mathbf{1}$ of $SU(4)$.</p>
+<p><strong>So the model inherits one exact prediction and one factor-of-three relation, and the family symmetry must be consistent with both.</strong> That is the strongest form of unification available here: <strong>not just the gauge couplings but the Yukawa matrices.</strong></p>
+<h3 id="the-cost-of-exactness">The Cost of Exactness</h3>
+<p>"the largest Cabibbo angle $\theta_C\approx13^\circ$"</p>
+<p><strong>If $Y^u=Y^\nu$ exactly, then the CKM and PMNS matrices are built from the same rotations</strong>, and the Cabibbo angle must appear in both. <strong>The model predicts $\theta_C\approx1/4$ and gets it</strong>, but at the price that the leptonic mixing must accommodate the same rotation — which is why $\theta_{12}^l$ comes out at $31^\circ$–$34^\circ$ rather than the tri-bimaximal $35.3^\circ$.</p>
+<p><strong>That is a genuine success: the solar angle's deviation from tri-bimaximal is <em>explained</em> by the Cabibbo angle.</strong> The corpus should record it, because it is the clearest example in this batch of a unification relation producing a measured deviation.</p>
+<h3 id="the-math59-prediction">The $0\nu\beta\beta$ Prediction</h3>
+<p>"a lightest neutrino mass in the range $0\gtrsim m_1\gtrsim0.5$ meV, corresponding to a <strong>normal neutrino mass hierarchy and a very small rate for neutrinoless double beta decay</strong>."</p>
+<p><strong>$m_1<0.5$ meV is essentially $m_1=0$</strong>, so the model has a hierarchical normal spectrum and $m_{\beta\beta}$ near its minimum. <strong>That is a sharp prediction which the next generation of experiments will test</strong> — and it is the same conclusion as <code>2404.06520</code> in this batch, which also finds $0\nu\beta\beta$ too small to see.</p>
+<p><strong>Two independent models reaching the same $0\nu\beta\beta$ conclusion is worth recording</strong>, because it is the kind of convergence that makes a prediction credible.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-one-symmetry-to-relate-one-to-distinguish">1. One symmetry to relate, one to distinguish</h3>
+<p><strong>The idea.</strong> $A_4$ on the left-handed triplets fixes the columns; $Z_5$ on the right-handed singlets distinguishes the rows and supplies CP.</p>
+<p><strong>What it would add.</strong> The design principle behind a whole class of flavour models. <strong>Why $A_4\times Z_5$ and not $A_4$:</strong> a single non-Abelian group gives degenerate rows, and you need an Abelian factor to break the degeneracy. That is a structural statement the corpus should have.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the paper states the division of labour.</p>
+<h3 id="2-math70-makes-the-cabibbo-angle-appear-in-the-lepton-sector-and-explains-math71">2. $Y^u=Y^\nu$ makes the Cabibbo angle appear in the lepton sector — and explains $\theta_{12}^l<35.3^\circ$</h3>
+<p><strong>The idea.</strong> Exact quark-lepton Yukawa unification forces the same rotation into both sectors, so the solar angle's deviation from tri-bimaximal is a <em>prediction</em> from $\theta_C$.</p>
+<p><strong>What it would add.</strong> A unification relation with a measured consequence. <strong>This is the strongest kind of evidence for Pati–Salam flavour unification in the batch</strong>, because the deviation was measured before the explanation in this form.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's Yukawa-relation section, next to Georgi–Jarlskog.</p>
+<p><strong>What stands in the way.</strong> Nothing; the relation is exact at the unification scale.</p>
+<h3 id="3-csd1-csd2-csd3-csd4-is-a-fit-history-and-that-is-a-warning">3. CSD1 → CSD2 → CSD3 → CSD4 is a fit history, and that is a warning</h3>
+<p><strong>The idea.</strong> The vacuum alignment was changed as $\theta_{13}$ was measured, so the sequence tracks data rather than predicting it.</p>
+<p><strong>What it would add.</strong> A methodological caution with a concrete example. <strong>A flavour model whose alignment is adjusted to each new angle is not being tested</strong>; what can be tested is the <em>relation</em> between angles, which CSD4 does fix.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's methodology discussion.</p>
+<p><strong>What stands in the way.</strong> Nothing; the sequence is printed in the paper.</p>
+<h3 id="4-math74-versus-present-data">4. $\delta^l=260^\circ\pm5^\circ$ versus present data</h3>
+<p><strong>The idea.</strong> A 2014 prediction of the leptonic CP phase.</p>
+<p><strong>What it would add.</strong> A test that has partly happened. <strong>The corpus should record the prediction and note the current range</strong>, because a reader deserves to know whether a celebrated model survived.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> $\delta$ is still poorly measured; the comparison is indicative.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$A_4$ triplet assignment and vacuum alignment: in the flavour articles and <code>2404.06520</code>.</li>
+<li>Georgi–Jarlskog from the $\mathbf{15}$: in <code>1608.04124</code>, <code>1701.04460</code>.</li>
+<li>Tri-bimaximal mixing and its failure: in the neutrino-mixing articles.</li>
+<li>CSD and sequential dominance: partly in <code>1701.04460</code>'s discussion.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the ancestor of half the flavour entries in this batch, and reading the descendants (<code>2404.06520</code>, <code>2503.14610</code>, <code>2501.00302</code>, <code>1705.06320</code>) next to it shows what changed.</p>
+<p><strong>2014: discrete symmetry, vacuum alignment chosen, couplings from flavon VEVs, CSD4 with $Z_5$ phases.</strong>
+<strong>2024–2025: modular symmetry, the same $A_4$ or $S_3$, couplings fixed functions of $\tau$.</strong></p>
+<p><strong>The change is in what is allowed to vary.</strong> King's 2014 model has flavons with alignments, $Z_5$ charges, and CSD parameters — a dozen adjustable objects — and it fits. The modular models have one complex parameter $\tau$ and a set of modular weights, and they also fit.</p>
+<p><strong>If the modular models fit as well with far fewer parameters, that is progress, and the corpus should say so.</strong> If they fit worse, that is a reason the 2014 approach persists. Either way the comparison is the interesting thing, and it can only be made if both kinds of paper are in the corpus.</p>
+<p>The second point: "the entire PMNS mixing matrix" and a Cabibbo angle from one construction is a real achievement, and the fact that $\theta_{12}^l$ came out below tri-bimaximal <em>for the right reason</em> is the sort of thing that should be remembered when the model's $\delta$ prediction is assessed.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

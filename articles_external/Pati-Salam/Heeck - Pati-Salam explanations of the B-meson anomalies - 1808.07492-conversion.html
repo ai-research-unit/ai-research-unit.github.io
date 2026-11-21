@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pati–Salam Explanations of the B-Meson Anomalies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Heeck - Pati-Salam explanations of the B-meson anomalies - 1808.07492.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="patisalam-explanations-of-the-b-meson-anomalies"><strong>Pati–Salam Explanations of the B-Meson Anomalies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1808.07492 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Julian Heeck, Daniele Teresi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 12 December 2018</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>JHEP 12 (2018) 103</td>
+</tr>
+<tr>
+<td>length</td>
+<td>26 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Heeck - Pati-Salam explanations of the B-meson anomalies - 1808.07492-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Heeck - Pati-Salam explanations of the B-meson anomalies - 1808.07492.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Heeck - Pati-Salam explanations of the B-meson anomalies - 1808.07492.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. The Moriond proceedings version is <code>1905.05211</code> in this batch; this is the full paper.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It explains both $B$-anomalies with the scalar leptoquarks that minimal Pati–Salam already contains, and states the three structural advantages in one sentence.</p>
+<blockquote>
+<p>"Here we have shown that the Pati–Salam model naturally contains the relevant scalar LQs to address the B-meson anomalies and has additional welcome features: <strong>i) proton decay via LQs is avoided, ii) the LQ couplings are automatically chiral, iii) the couplings are restricted and related, making the model highly predictive.</strong>"</p>
+</blockquote>
+<p><strong>Those three advantages are the paper's thesis and each deserves its own line.</strong></p>
+<p><strong>i) No proton decay.</strong> The leptoquark $S_3$ couples $Q_L$ to $L_L$ — quark to lepton — which carries $B-L$ and not baryon number. A proton cannot decay through it because the final state must have the same baryon number. <strong>This is the same fact that lets Pati–Salam be light (<code>2307.02544</code>, <code>1812.02747</code>), used here for a different purpose.</strong></p>
+<p><strong>ii) Automatic chirality.</strong> The leptoquark couples to left-handed doublets only, because the $SU(4)$ structure pairs $Q_L$ with $L_L$ inside $\Psi_L$. <strong>So the scalar leptoquark has a chiral coupling without any symmetry being imposed to arrange it.</strong> Scalar leptoquarks in the SM effective theory couple to both chiralities, and the parity-violating structure is what makes them dangerous; here it is fixed.</p>
+<p><strong>iii) Restricted couplings.</strong> The Pati–Salam embedding ties the leptoquark couplings to the Yukawa couplings and to each other, which is what makes the model falsifiable.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-anomalies-and-why-math9-is-harder">The Two Anomalies and Why $R(D^{(*)})$ Is Harder</h3>
+<p>"Combined explanations for $R_{K^{(*)}}$ and $R_{D^{(*)}}$ can be found most easily in leptoquark models, although these are usually <strong>ad-hoc extensions without any relations to other processes or structures</strong>."</p>
+<p>"the most constraining observable here is $B\to K\nu\nu$ because the involved quark-level transition $b\to s\nu\nu$ is often related to" $b\to c\tau\nu$ — "with more than one" leptoquark "the active ones in $R_{D^{(*)}}$ typically do not run into problems with $B\to K\nu\nu$".</p>
+<p>"$R_{K^{(*)}}$ by itself is instead much easier since the EFT scale involved is $\Lambda\simeq31$ TeV."</p>
+<p><strong>So there is a scale separation and the paper states it: $R(K^{(*)})$ needs $31$ TeV, $R(D^{(*)})$ needs about $1$ TeV.</strong> That is why $R(D^{(*)})$ is the difficult one — it requires new physics at a scale that many other observables already probe.</p>
+<h3 id="the-math24-for-math25-and-what-it-predicts">The $S_3$ for $R(K^{(*)})$, and What It Predicts</h3>
+<p>"The anomaly in $R_{K^{(*)}}$ can be easily addressed by assuming an $S_3$ LQ around $10$ TeV. Within the Pati–Salam model the coupling structure is restricted to be <strong>symmetric in flavour space</strong> and can furthermore be related to the <strong>type-II seesaw neutrino mass structure</strong>, leading to interesting predictions for the neutrino mass parameters. This leads to testable rates for muonic LFV."</p>
+<p><strong>The symmetric coupling is a Pati–Salam consequence.</strong> The $\Delta_L=(\mathbf{10},\mathbf3,\mathbf1)$ is a symmetric two-index tensor of $SU(4)$, so its Yukawa $Y_\Delta$ is symmetric, so the leptoquark coupling is symmetric. <strong>That halves the number of parameters relative to a generic $S_3$</strong>, and it is why the neutrino mass matrix can be <em>the same matrix</em>.</p>
+<p><strong>And from that follows the normal-ordering requirement</strong> discussed at length in the proceedings conversion: the symmetric matrix that fits the neutrino data has a dominant $23$ block and small $12$ entries, which is exactly what evades $\mu\to e$ while explaining $b\to s\mu\mu$.</p>
+<h3 id="the-math37-for-math38-and-the-light-neutrino">The $S_1$ for $R(D^{(*)})$, and the Light Neutrino</h3>
+<p>"Explaining also the anomaly in $R_{D^{(*)}}$ requires one of the right-handed neutrinos to be <strong>sub-GeV</strong>, as well as an $S_1$ LQ around TeV."</p>
+<p><strong>Sub-GeV $\nu_R$ is a strange requirement and it is forced.</strong> The $R(D^{(*)})$ explanation needs $B\to D\tau N_R$ with $N_R$ light enough to be produced, and the same Pati–Salam relation that ties $S_1$'s coupling to the $N_R$ mass matrix means a heavy $N_R$ gives too small a coupling.</p>
+<p><strong>So the model demands a light sterile neutrino</strong>, which is testable in its own right — by beta decay, by cosmology ($\Delta N_{\rm eff}$), and by beam-dump experiments.</p>
+<p>"Pati–Salam once again heavily restricts the coupling structure, making it <strong>non-trivial to explain both $R_{K^{(*)}}$ and $R_{D^{(*)}}$ simultaneously</strong>. We have shown that one can obtain a near-perfect explanation for the anomalies despite the restricted couplings, leading again to highly testable predictions for processes such as $B\to K\nu\nu$ and $B\to K\mu\tau$, as well as direct collider searches."</p>
+<h3 id="the-cost">The Cost</h3>
+<p>"<strong>The connection to neutrino masses has to be sacrificed</strong>; it would be interesting to address it in an extension of the basic Pati–Salam model analyzed here."</p>
+<p><strong>So the choice is explicit and it is the same trade as in the proceedings: you can have the neutrino-mass link or both anomalies, not both.</strong> The corpus should state this as a single fact about the framework rather than as two separate results.</p>
+<h3 id="the-gauge-boson-problem">The Gauge-Boson Problem</h3>
+<p>"at new physics in the TeV range, such a light PS gauge boson would conflict with experiments" — the coloured $SU(4)$ gauge bosons must be above "$\sim1000$ TeV to satisfy constraints on $K_L\to e^\pm\mu^\mp$ induced by the heavy coloured PS gauge".</p>
+<p><strong>So the model has TeV-scale leptoquarks and $10^3$ TeV-scale gauge bosons.</strong> That is a splitting by three orders of magnitude within one group, and it requires the gauge bosons and the scalars to get their masses from different sources. <strong>The corpus should record this because it is the structural weakness of all TeV-scale Pati–Salam leptoquark models</strong>, and it is what motivates the 4321 constructions in this batch (<code>2106.03876</code> and following): $G_{4321}$ lets the vector leptoquark be light without the coloured gauge bosons being light.</p>
+<p>"A number of modifications to the PS model have been suggested to circumvent" this — which is the opening for the rest of the literature in this batch.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-three-structural-advantages-of-patisalam-leptoquarks-stated-once">1. Three structural advantages of Pati–Salam leptoquarks, stated once</h3>
+<p><strong>The idea.</strong> No proton decay; automatic chirality; restricted and related couplings.</p>
+<p><strong>What it would add.</strong> The cleanest available statement of why a unified origin for leptoquarks is better than an ad-hoc one. <strong>The corpus's leptoquark discussion, if it has one, treats them as effective-field-theory objects with free couplings.</strong> The three advantages are exactly the three things an EFT cannot give you, and each follows from the $SU(4)$ structure.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark section, as the organising claim.</p>
+<p><strong>What stands in the way.</strong> Nothing; the three follow from the representation content.</p>
+<h3 id="2-the-coupling-matrix-is-symmetric-because-math59-is-a-symmetric-tensor">2. The coupling matrix is symmetric because $\Delta_L$ is a symmetric tensor</h3>
+<p><strong>The idea.</strong> $(\mathbf{10},\mathbf3,\mathbf1)$ is the symmetric two-index tensor of $SU(4)$, so $Y_\Delta=Y_\Delta^T$, so the $S_3$ coupling is symmetric.</p>
+<p><strong>What it would add.</strong> A group-theoretic origin for a flavour assumption. The neutrino mass matrix is symmetric for a trivial reason (it is a Majorana mass); <strong>the leptoquark coupling being symmetric is not trivial and has the same origin.</strong> That is what makes the two the same matrix.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's Yukawa section.</p>
+<p><strong>What stands in the way.</strong> Nothing. The $\mathbf{10}$ of $SU(4)$ is symmetric; the $\mathbf{15}$ is the adjoint.</p>
+<h3 id="3-math67-needs-math68-tev-math69-needs-math70-tev">3. $R(K^{(*)})$ needs $31$ TeV; $R(D^{(*)})$ needs $1$ TeV</h3>
+<p><strong>The idea.</strong> A scale separation of a factor of thirty between the two anomalies' EFT scales.</p>
+<p><strong>What it would add.</strong> A quantitative reason why one is easy and the other is hard, and why the easy one is the one that gets tied to neutrino masses. <strong>The corpus should record the numbers</strong>, because the qualitative statement "one is harder" appears everywhere without them.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's $B$-anomaly section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the EFT scales are quoted.</p>
+<h3 id="4-tev-leptoquarks-plus-math72-tev-gauge-bosons-is-the-structural-weakness">4. TeV leptoquarks plus $10^3$ TeV gauge bosons is the structural weakness</h3>
+<p><strong>The idea.</strong> The scalar leptoquarks can be light (they get mass from the $\Delta$ VEVs) while the $SU(4)$ gauge bosons cannot (they are bounded by $K_L\to\mu e$).</p>
+<p><strong>What it would add.</strong> The problem that the whole 4321 subliterature exists to solve. <strong>The corpus's Pati–Salam article treats the leptoquarks and the gauge bosons as one sector</strong>; here they are split by three orders of magnitude, which is unnatural and is what motivates replacing $SU(4)$ with $SU(4)\times SU(3)'$.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's gauge-sector section, as the transition to the 4321 papers.</p>
+<p><strong>What stands in the way.</strong> Nothing; it is the paper's own statement.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$\Delta_L=(\mathbf{10},\mathbf3,\mathbf1)\to\Sigma_3\oplus S_3\oplus\delta_3$: in <code>1905.05211</code> in this batch.</li>
+<li>Type-II seesaw $M_\nu\propto\langle\delta_3\rangle y_L$: in the seesaw article.</li>
+<li>$U_1$ or $S_1+S_3$ for the combined explanation: in the twin-PS papers in this batch.</li>
+<li>Pati–Salam evading proton decay: in <code>2307.02544</code> in this batch.</li>
+<li>$B\to K\nu\nu$ as the falsifier: in <code>1905.05211</code>, <code>2209.00276</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the origin of the scalar-leptoquark programme in the batch, and reading it next to the twin-PS series shows what changed and why.</p>
+<p>Heeck–Teresi's advantage is <strong>economy</strong>: the leptoquarks are already in the minimal model, with no new gauge group. Their weakness is <strong>the gauge bosons</strong>: keeping $SU(4)$ intact means the coloured vectors are at $10^3$ TeV while the scalars are at TeV, a splitting the group does not explain.</p>
+<p>King's advantage is <strong>the light vector leptoquark</strong>, which the data prefer. The weakness is <strong>a second gauge group</strong> and a colour octet at $3.5$ TeV, plus six vector-like families.</p>
+<p><strong>So the two programmes trade a hierarchy problem for a proliferation problem</strong>, and neither is obviously better. That is worth stating plainly rather than presenting one as the successor of the other.</p>
+<p>The second thing: the discipline of this paper is that every advantage is a <em>consequence of the group</em>, not an added mechanism. No proton decay because of $B-L$; chirality because of the $\mathbf4$; symmetric couplings because the $\mathbf{10}$ is symmetric. <strong>Three features, one origin.</strong> That is the strongest form of the argument for unification and the corpus should use it as the model case.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

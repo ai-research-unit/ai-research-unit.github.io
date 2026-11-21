@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combining Pati–Salam and Flavour Symmetries — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Feldmann - Combining Pati-Salam and Flavour Symmetries - 1506.00782.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="combining-patisalam-and-flavour-symmetries"><strong>Combining Pati–Salam and Flavour Symmetries</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1506.00782 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thorsten Feldmann, Florian Hartmann, Wolfgang Kilian, Christoph Luhn</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 2 June 2015</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint QFET-2015-01, SI-HEP-2015-01, Siegen)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>36 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Feldmann - Combining Pati-Salam and Flavour Symmetries - 1506.00782-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Feldmann - Combining Pati-Salam and Flavour Symmetries - 1506.00782.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Feldmann - Combining Pati-Salam and Flavour Symmetries - 1506.00782.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It puts horizontal and vertical unification together: Pati–Salam for the vertical, a gauged $SU(3)_I\times SU(3)_{II}$ for the horizontal, and the Grinstein–Redi–Villadoro mechanism for making the flavour symmetry renormalisable.</p>
+<p>The full symmetry:</p>
+<p>$$
+G=\underbrace{SU(4)\times SU(2)\times SU(2)'}_{\text{Pati–Salam}}\times\underbrace{SU(3)_I\times SU(3)_{II}}_{\text{flavour}}\times Z_2 .
+$$</p>
+<p><strong>The $Z_2$ is not optional in this construction</strong> — it is what relates the two $SU(2)$s and gives left–right symmetry, and it is also what forces the particle content to double.</p>
+<p>The result that matters:</p>
+<blockquote>
+<p>"the effective SM Yukawa matrices are related to the VEVs of the flavon fields neither linearly as in the MFV approach nor in a simple inverse way as in the original GRV setup."</p>
+</blockquote>
+<p>Instead</p>
+<p>$$
+Y_{u,d}\simeq-\lambda\left(t_{u,d}^{-1}+s^{-1}\right),
+\qquad
+t_u\equiv s+t',\quad t_d\equiv s-t' .
+$$</p>
+<p><strong>One coupling $\lambda$, two flavon VEVs $s$ and $t'$, and a difference between up and down that comes from a sign.</strong> That is the whole flavour structure of the quark sector, and it explains why the model needs a flavon in the $SU(2)'$ triplet: with only the singlet $s$, $t_u=t_d$ and $Y_u=Y_d$, which is wrong.</p>
+<p>And the new-physics estimate:</p>
+<blockquote>
+<p>"all these effects are of order $\epsilon_{u,d}^2$, where $\epsilon_{u,d}=\langle h^0_{u,d}\rangle/M$ denotes the ratio of the Higgs VEV over the sole explicit mass scale $M$ of the model."</p>
+</blockquote>
+<p>With $M$ in the TeV range, $\epsilon^2\sim(246/1000)^2\sim0.06$ per Higgs component, so the effects land just below current sensitivity. <strong>The model predicts deviations at the few-percent level and is not yet excluded</strong>, which is exactly the position a flavour model wants to be in.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-flavour-has-to-be-added-by-hand">Why Flavour Has to Be Added by Hand</h3>
+<p>"Grand Unified Theories ... represent an attractive direction ... In particular, each generation of SM quarks and leptons fits into a 16-dimensional spinor representation of the group $SO(10)$ ... The theoretical complication re-enters when it comes to the question of how the GUT symmetry is broken ... It turns out that the SM group can be reached from $SO(10)$ via basically two separate routes: either via the Georgi-Glashow group $SU(5)$, or via the Pati-Salam group $SU(4)\times SU(2)\times SU(2)'$."</p>
+<p>"The intimate connection of the SM fermions, which is dictated by the GUT multiplet structure, generally relates the Yukawa matrices of different sectors in an unrealistic way. In order to accommodate the observed Yukawa structures, it is therefore necessary to introduce more than one GUT-breaking Higgs field. Flavour symmetries are then imposed to control the resulting Yukawa patterns by suitably chosen vacuum expectation values of scalar flavon fields."</p>
+<p><strong>That paragraph states the corpus's central tension in the authors' own words.</strong> Unification relates the Yukawa matrices, and the relations are wrong — $m_d=m_e$ at the simplest level, and worse. The standard fix is more Higgs fields plus a flavour symmetry. <strong>The GUT creates the problem and the flavour symmetry repairs it.</strong> That is worth recording as the standard architecture, because it is what most of the models in this corpus do.</p>
+<h3 id="the-grv-mechanism-and-why-it-is-different">The GRV Mechanism, and Why It Is Different</h3>
+<p>"In contrast to this traditional approach, we implement an idea first proposed by Grinstein, Redi and Villadoro (GRV), where the concept of gauged flavour symmetries is realized within a renormalizable field theory. Among others, this requires to introduce new heavy partners for the SM fermions in order to cancel gauge anomalies associated with the chiral representations of the flavour symmetry group. The new fermions can then be used to mediate flavour-symmetry breaking — which is realized by VEVs of new matrix-valued scalar flavon fields — to the SM sector."</p>
+<p>"With a minimal set of new fermions and scalars, the authors have shown that the SM Yukawa matrices $Y_{u,d}$ for up- and down-type quarks are effectively given by the inverse of the corresponding flavon VEVs."</p>
+<p><strong>The inversion is the point.</strong> In the usual Froggatt–Nielsen approach, a Yukawa coupling is a ratio of flavon VEVs to a cutoff, raised to a power — so small Yukawas come from <em>small</em> VEV ratios. In GRV the Yukawa is the <em>inverse</em> of the VEV, so <strong>small Yukawas come from large VEVs</strong>. The hierarchy is inverted, and that is not a cosmetic difference: it changes which fields are heavy and what the low-energy signatures are.</p>
+<p>"Here, the partner of the top quark $t'$ plays a special role: the large Yukawa coupling of the top quark implies that $t'$ can be relatively light (i.e. within the reach of direct searches at the LHC), and that it can have a substantial mixing with the SM top quark."</p>
+<p><strong>That is the observable consequence of the inversion</strong>: the third-generation partner is the lightest, because the top Yukawa is the largest and inverting it gives the smallest VEV. So the new physics is third-generation, which is why the model predicts effects in $B$ physics and top couplings rather than in kaon physics.</p>
+<h3 id="what-patisalam-forces">What Pati–Salam Forces</h3>
+<p>"The new essential ingredients in this work are a consequence of embedding the GRV mechanism in an explicit left-right (i.e. $Z_2$) symmetric PS GUT with a Higgs bi-doublet. First, this requires to introduce (at least) <strong>two partners for each conventional PS fermion multiplet</strong>. Second, in order to obtain realistic masses and mixing for quarks and leptons, one has to introduce <strong>different types of flavon fields</strong>."</p>
+<p>So the embeddings:</p>
+<p>$$
+q_L\sim(\mathbf4,\mathbf2,\mathbf1)_{(\mathbf3,\mathbf1)},\qquad
+q_R\sim(\mathbf4,\mathbf1,\mathbf2)_{(\mathbf1,\mathbf3)},\qquad
+H\sim(\mathbf1,\mathbf2,\mathbf2)_{(\mathbf1,\mathbf1)},
+$$</p>
+<p>with the heavy partners $\Sigma_L\sim(\mathbf4,\mathbf1,\mathbf2)_{(\mathbf1,\mathbf3)}$, $\Sigma_R\sim(\mathbf4,\mathbf1,\mathbf2)_{(\mathbf3,\mathbf1)}$, and $\Xi_{L,R}$ their $Z_2$ conjugates. "Since we impose an exact $Z_2$ symmetry, we have to introduce both pairs."</p>
+<p><strong>The doubling is forced by the $Z_2$, and that is a Pati–Salam-specific cost.</strong> In the SM the flavour group is $U(3)^3$ and one partner per fermion suffices; in Pati–Salam the flavour group is $SU(3)_I\times SU(3)_{II}$ acting on the two PS multiplets separately, and the $Z_2$ identifies the two, so the partner content doubles. "Notice that the maximal flavour-symmetry group in PS is smaller than in the SM, where we encounter a $U(3)^3$ symmetry in the quark sector and a $U(3)^2$ symmetry in the lepton sector."</p>
+<p><strong>Smaller flavour group, larger fermion content.</strong> That trade is the paper's structural finding and it is worth stating plainly.</p>
+<h3 id="the-triplet-flavon-and-why-math39-without-it">The Triplet Flavon, and Why $Y_u=Y_d$ Without It</h3>
+<p>"Due to the single Higgs bi-doublet $H$, a flavour symmetry breaking flavon field $S$ transforming trivially under PS cannot discriminate between the up-type and the down-type sector. In contrast to the original GRV model, it is therefore impossible to generate a non-trivial flavour structure without mediating the $SU(2)'$ breaking of the PS sector to the flavour sector. As a consequence, we are led to introduce PS non-singlet flavon fields, where the simplest case is realized by $T\sim(\mathbf1,\mathbf3,\mathbf1)_{(\mathbf3,\mathbf3)}$ and $T'\sim(\mathbf1,\mathbf1,\mathbf3)_{(\mathbf3,\mathbf3)}$, in addition to the singlet flavon $S$."</p>
+<p><strong>This is the paper's clearest technical insight and it is a group-theory argument.</strong> In the SM, the Higgs is a doublet and the up and down Yukawas come from $H$ and $\tilde H=\epsilon H^*$, which are different objects because $H$ and $\tilde H$ transform differently. In Pati–Salam with a single bidoublet $H\sim(\mathbf1,\mathbf2,\mathbf2)$, the up and down components sit in the <em>same</em> multiplet and couple through the same contraction, so a PS-singlet flavon cannot tell them apart. <strong>To split $Y_u$ from $Y_d$ you need a flavon carrying $SU(2)'$ indices</strong>, hence $T'$ in the $(\mathbf1,\mathbf1,\mathbf3)$.</p>
+<p>That is why the SU(2)' triplet appears at all, and it is a consequence of the bidoublet structure that the corpus's Pati–Salam article should record.</p>
+<h3 id="the-yukawa-relation-and-its-eight-solutions">The Yukawa Relation and Its Eight Solutions</h3>
+<p>$$
+Y_{u,d}\simeq-\lambda\left(t_{u,d}^{-1}+s^{-1}\right),
+\qquad t_u=s+t',\quad t_d=s-t' .
+$$</p>
+<p><strong>Both terms are inverse, and the sum is not.</strong> That is what makes the relation different from GRV's single inverse, and it is why the inversion is hard:</p>
+<p>"the relation between $Y_{u,d}$ and $s,t'$ is given by a coupled matrix equation, it is a non-trivial task to invert."</p>
+<p>"An important feature, already arising at this stage, is the existence of multiple solutions when inverting. This can be easily understood in the case of one generation, where the resulting two solutions can be expressed analytically. Explicitly, we find</p>
+<p>$$
+s=\frac{-8\lambda}{3y_u+3y_d\mp3\sqrt{(y_u-y_d)^2+\tfrac94 y_u y_d}} .
+$$</p>
+<p><strong>The $\mp$ is the whole story</strong>: two roots for one generation, and "there exists a total of eight solutions for the flavon VEVs, all giving the same approximate SM Yukawa matrices."</p>
+<p><strong>Eight vacua, one observable Yukawa sector.</strong> The model does not predict its own vacuum, and the paper says so: "In this work we have not addressed the question of the underlying dynamics which governs the vacuum structure of the flavon fields."</p>
+<p>Note also the discriminant: $(y_u-y_d)^2+\frac94y_uy_d$, which for $y_u\gg y_d$ is approximately $y_u^2+\frac94y_uy_d$, always positive. <strong>The roots are real for all physical Yukawas</strong>, so the eight solutions always exist — the non-uniqueness is structural, not a special case.</p>
+<h3 id="the-third-generation-breaks-the-approximation">The Third Generation Breaks the Approximation</h3>
+<p>"Comparing these with the physical values, we find that the approximate formulas of Eq. (2.11) do not adequately describe the third generation. Such a behaviour is expected and can be traced back to substantial mixing of the third generation of quarks with the corresponding heavy fermionic partners. In order to correct for this effect, we define adapted flavour parameters and take these as input for our numerical scan."</p>
+<p><strong>The failure is at the third generation, and the reason is the same inversion that makes the model work.</strong> The top Yukawa is largest, so its partner VEV is smallest, so the partner is lightest, so the mixing is largest, so the approximation that treats the partner as heavy fails first there. <strong>The mechanism's greatest success and its greatest inaccuracy are the same feature.</strong></p>
+<p>The scan: "Randomly generate a point ... Calculate $s$ and $t'$ by inverting ... randomly choose one of the eight solutions ... diagonalize these numerically ... Compare these with the experimentally allowed $3\sigma$ ranges." About $3{,}000$ points from the full range plus $30{,}000$ from a restricted scan, "which differ qualitatively from the full scan only in $U_{\rm CKM}'$, i.e. the coupling of the right-chiral quarks to the $W^\pm$ bosons."</p>
+<h3 id="what-is-new-in-the-observables">What Is New in the Observables</h3>
+<p>"Similarly to the GRV case, the construction of the model guarantees that non-standard flavour transitions between the first and the second generation are highly suppressed, while new physics effects involving the third generation of quarks are expected to be phenomenologically relevant. Characteristic effects include</p>
+<ul>
+<li>the non-unitarity of the effective CKM matrix,</li>
+<li>the coupling of the SM right-chiral quarks to the electroweak $W^\pm$ boson,</li>
+<li>anomalous couplings of the $Z$ as well as the Higgs boson to two SM quarks."</li>
+</ul>
+<p><strong>The first is the sharpest.</strong> In the SM the CKM matrix is unitary by construction, because it is a product of two unitary rotations. Here the light-quark mixing comes from diagonalising a $9\times9$ matrix and projecting onto the light $3\times3$ block, so the result is <strong>not unitary</strong> — it is the upper-left block of a larger unitary matrix. That is a generic prediction of any model with heavy partners mixing with the light states, and it is measurable: unitarity violations of the CKM are bounded at the per-mille level.</p>
+<p><strong>The second is Pati–Salam-specific.</strong> $U_{\rm CKM}'$, the right-chiral analogue of the CKM matrix, is physical in Pati–Salam because $SU(2)_R$ is gauged — the right-chiral quarks couple to $W_R$. In the SM $U_{\rm CKM}'$ is unphysical and can be rotated away. <strong>So a measurement of right-chiral quark mixing is a measurement of Pati–Salam structure</strong>, and it is why the second scan had to be done.</p>
+<h3 id="the-scales">The Scales</h3>
+<p>The hierarchy, in the paper's own numbers: $M$ at the TeV scale for the lightest fermion partner; $\Lambda_\phi$, and the flavon VEVs $\langle S\rangle,\langle T'\rangle$ up to $10^{10}$ GeV; $\Lambda_\nu$ above that; $M_{\rm PS}$ for the $W'$ and $Z'$ and the leptoquark; $M_{SU(3)}$ for the flavour gauge bosons; $M_{\rm GUT}$ at the top.</p>
+<p>"the largest singular values of $\langle S\rangle$ and $\langle T'\rangle$ take numerical values up to order $10^{10}$ GeV."</p>
+<p><strong>The spread is twelve orders of magnitude</strong>, from a TeV partner to a $10^{10}$ GeV flavon, and the paper is explicit that the ordering is fixed but the values are not: "the various scales of the model are only partially constrained. Their ordering is, however, determined."</p>
+<p>"we do not fully specify the breaking of $SU(4)$ or $SU(2)'$. Yet, already the flavon $\Phi^0$, which we have introduced for the purpose of generating light neutrino masses, breaks PS down to the SM. Therefore, the masses of the non-SM gauge bosons, including the $W'^\pm$ and the $Z'$, are bounded from below by $\Lambda_\phi$."</p>
+<p><strong>So the leptoquark and the $W'$ are pushed to the flavon scale</strong>, which is how the model evades the meson-decay bounds that dominate this batch. "While we argue that the new gauge bosons in this approach can be sufficiently heavy to be irrelevant at low energies, the fermionic partners of the SM quarks, in particular those for the third generation, can be relatively light."</p>
+<p><strong>That sentence is the model's strategy in one line</strong>: heavy gauge bosons, light fermions. The vector leptoquark that gives every other paper in this batch its bound is decoupled, and the new physics appears in fermion mixing instead.</p>
+<h3 id="the-lepton-sector-and-neutrino-masses">The Lepton Sector and Neutrino Masses</h3>
+<p>"the cancellation of flavour gauge anomalies entails a further extension of the fermionic particle content. This finds a natural realization in the lepton sector where light Majorana neutrino masses can be generated by introducing PS neutral fermions which acquire large Majorana masses from another set of flavon fields. These flavons break the flavour symmetry completely at a very high scale so that all flavour gauge bosons decouple from low-energy physics."</p>
+<p><strong>The anomaly cancellation and the neutrino mass mechanism are the same construction.</strong> The extra fermions needed for consistency are exactly the ones that give the seesaw. That is a good sign for a model — one ingredient doing two jobs — and it is the same pattern as the Dutka singlet in <code>2211.02054</code>, where the field needed for neutrino masses also created the problem.</p>
+<p>"In this work, we have presented a neutrino extension in which the flavour structure of the neutrinos decouples from the hierarchical patterns of the quark sector."</p>
+<p><strong>Neutrino flavour is decoupled from quark flavour in this model</strong>, which is a prediction: the PMNS structure does not follow from the CKM through unification. Given that the two matrices look nothing alike, that is a feature rather than a defect.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-a-patisalam-singlet-flavon-cannot-split-math100-from-math101">1. A Pati–Salam singlet flavon cannot split $Y_u$ from $Y_d$</h3>
+<p><strong>The idea.</strong> With one Higgs bidoublet $H\sim(\mathbf1,\mathbf2,\mathbf2)$, the up and down sectors couple through the same contraction. A flavon that is a PS singlet gives $Y_u=Y_d$. Splitting them requires a flavon in the $(\mathbf1,\mathbf1,\mathbf3)$.</p>
+<p><strong>What it would add.</strong> The sharpest statement available of what the bidoublet structure costs. The corpus's Pati–Salam article notes that the bidoublet gives a two-Higgs-doublet model. <strong>It does not note that the bidoublet also unifies the up and down Yukawa couplings at the level of the flavon sector</strong>, which is a distinct and stronger constraint: you cannot introduce flavour structure for one sector without affecting the other. In the SM, $H$ and $\tilde H$ are separate objects and you can weight them independently; here you cannot.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, in the Yukawa section.</p>
+<p><strong>What stands in the way.</strong> Nothing. The argument is representation-theoretic: a PS-singlet flavon contracts identically with the up and down components of $H$, so any VEV it takes affects both equally.</p>
+<h3 id="2-yukawa-as-the-inverse-of-a-flavon-vev-not-the-ratio">2. Yukawa as the inverse of a flavon VEV, not the ratio</h3>
+<p><strong>The idea.</strong> $Y\propto(\text{flavon VEV})^{-1}$, so the largest Yukawa comes from the smallest VEV, and the lightest new fermion is the partner of the top.</p>
+<p><strong>What it would add.</strong> A second mechanism for Yukawa hierarchies, and it is the opposite of the standard one. The corpus's flavour discussion, if it has one, is built on Froggatt–Nielsen, where $Y\sim(\langle\phi\rangle/\Lambda)^n$ and small Yukawas come from high powers. <strong>Here the relation is inverted, so the hierarchy of Yukawas becomes an inverse hierarchy of VEVs</strong>, and the phenomenology follows: new physics at the TeV scale in the third generation rather than in the first.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, in the flavour section, alongside Froggatt–Nielsen.</p>
+<p><strong>What stands in the way.</strong> The paper's relation is $Y\simeq-\lambda(t^{-1}+s^{-1})$, a sum of two inverses, not a single inverse. State it as the GRV mechanism modified by the $Z_2$.</p>
+<h3 id="3-patisalam-makes-the-right-chiral-ckm-matrix-physical">3. Pati–Salam makes the right-chiral CKM matrix physical</h3>
+<p><strong>The idea.</strong> $U_{\rm CKM}'$ cannot be rotated away here because $SU(2)_R$ is gauged, so the right-chiral quark mixing is an observable.</p>
+<p><strong>What it would add.</strong> A count of physical parameters that differs from the SM. The SM has four quark mixing parameters; Pati–Salam has four more for the right chirality, and they are physical. <strong>The model is more predictive in some ways and less in others, and this is a clean instance of the latter</strong> — eight parameters where the SM had four, but with the extra four measurable in principle. The corpus's parameter-counting discussion should have this.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section, next to the eight-mixing-matrix statement from the Dolan–Dutka–Volkas conversion (<code>2012.05976</code>).</p>
+<p><strong>What stands in the way.</strong> The paper treats $U_{\rm CKM}'$ as a scan parameter rather than a prediction, and notes the scan over it is inefficient. So the parameter is physical but not determined.</p>
+<h3 id="4-non-unitary-ckm-from-heavy-partner-mixing">4. Non-unitary CKM from heavy-partner mixing</h3>
+<p><strong>The idea.</strong> The light $3\times3$ mixing is the upper-left block of a $9\times9$ unitary matrix, so it is not unitary. The violation is of order $\epsilon^2=(\langle h\rangle/M)^2$.</p>
+<p><strong>What it would add.</strong> A model-independent signature of any construction with heavy partners, with a size attached. The corpus's unitarity discussion, if it has one, treats CKM unitarity as exact. <strong>Here it is violated at a computable level</strong>, and the level is tied to the scale of new physics — so a unitarity test is a measurement of $M$. That is a clean link between a precision observable and a new-physics scale.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-weinberg-angle-the-neutral-current-and-the-z-coupling.md</code>, and the Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing. The estimate $\epsilon^2$ with $M\sim1$ TeV gives per-mille-level violations, near current bounds.</p>
+<h3 id="5-eight-vacua-for-one-yukawa-sector">5. Eight vacua for one Yukawa sector</h3>
+<p><strong>The idea.</strong> Inverting $Y_{u,d}=-\lambda(t^{-1}+s^{-1})$ has eight solutions, all giving the same approximate Yukawas. Even one generation has two.</p>
+<p><strong>What it would add.</strong> A concrete instance of a model whose vacuum is not predicted by its own fit. The corpus's discussion of vacuum selection, if it has one, is about the string landscape; <strong>here the same problem appears in a four-dimensional field theory with a handful of fields</strong> — the data do not determine the vacuum, and the model needs a potential it does not have. That is worth recording because it shows the problem is not exclusively a string problem.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section, as the cost of the mechanism.</p>
+<p><strong>What stands in the way.</strong> Nothing. The one-generation formula with its $\mp$ makes it explicit.</p>
+<h3 id="6-anomaly-cancellation-and-the-seesaw-use-the-same-fermions">6. Anomaly cancellation and the seesaw use the same fermions</h3>
+<p><strong>The idea.</strong> The extra fermions needed to cancel the flavour-gauge anomalies are the PS-neutral fermions that get large Majorana masses and generate light neutrino masses.</p>
+<p><strong>What it would add.</strong> An example of one ingredient forced by consistency and then doing phenomenological work. The corpus's seesaw article treats the singlet as an addition motivated by data. <strong>Here it is forced by anomaly cancellation</strong>, which is a much stronger motivation, and the neutrino mass is a bonus.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-the-majorana-mass-in-biquaternionic-form.md</code>, as the anomaly-driven route.</p>
+<p><strong>What stands in the way.</strong> The paper says the realisation is "natural" in the lepton sector but does not prove it is unique.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SU(4)\times SU(2)\times SU(2)'$ with $q_L\sim(\mathbf4,\mathbf2,\mathbf1)$ and $q_R\sim(\mathbf4,\mathbf1,\mathbf2)$: in the Pati–Salam article.</li>
+<li>The bidoublet $H\sim(\mathbf1,\mathbf2,\mathbf2)$ giving a two-Higgs-doublet structure: in the Pati–Salam article.</li>
+<li>The two routes from $SO(10)$, via $SU(5)$ or via Pati–Salam: in the Pati–Salam article.</li>
+<li>$\nu_R$ inside $q_R$ and the seesaw: in the Pati–Salam article and the seesaw article.</li>
+<li>Froggatt–Nielsen as the standard flavour mechanism: not previously in the corpus in this batch; this paper is the first to contrast against it.</li>
+<li>The GRV gauged-flavour mechanism: new to the corpus.</li>
+<li>Eight physical mixing matrices in Pati–Salam: in the <code>2012.05976</code> conversion in this batch, and $U_{\rm CKM}'$ here is one of them.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the only one in this batch that treats <strong>flavour</strong> as the primary subject rather than as a constraint to be evaded, and its strategy is the mirror image of the rest.</p>
+<p>Every other paper in the batch is trying to push the Pati–Salam scale <strong>down</strong> and is fighting the flavour bounds on the vector leptoquark. This one pushes the gauge bosons <strong>up</strong> — "the new gauge bosons in this approach can be sufficiently heavy to be irrelevant at low energies" — and puts the new physics in light fermion partners at the TeV scale instead.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>most papers in this batch</th>
+<th>this paper</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>leptoquark</td>
+<td>light, TeV, constrained</td>
+<td>heavy, above $\Lambda_\phi$</td>
+</tr>
+<tr>
+<td>new physics</td>
+<td>gauge</td>
+<td>fermionic</td>
+</tr>
+<tr>
+<td>flavour bounds</td>
+<td>the obstacle</td>
+<td>the subject</td>
+</tr>
+<tr>
+<td>signature</td>
+<td>meson decays</td>
+<td>CKM non-unitarity, $W_R$ couplings</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the corpus should not present "low-scale Pati–Salam" as one programme.</strong> There are two, with opposite placements of the new states, and they are distinguished by which sector carries the new physics. This paper's version is arguably the more conservative — it does not need the leptoquark to be light, so it does not need the helicity suppression trick of <code>2012.05976</code> or the flavour alignment of <code>2211.02054</code>.</p>
+<p>Worth recording: the model gets its predictivity from the <em>inversion</em> of the Yukawa–flavon relation, and that same inversion is why the third generation needs special treatment. <strong>The mechanism that makes the model interesting is the one that limits its precision</strong>, and the authors are straightforward about it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

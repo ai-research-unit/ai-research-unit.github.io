@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leptogenesis and Neutrino Masses in an Inflationary SUSY Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Pallis - Leptogenesis and Neutrino Masses in an Inflationary SUSY Pati-Salam Model -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="leptogenesis-and-neutrino-masses-in-an-inflationary-susy-patisalam-model"><strong>Leptogenesis and Neutrino Masses in an Inflationary SUSY Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1207.3730 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>C. Pallis, N. Toumbas</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 16 July 2012</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Open Questions in Cosmology (proceedings chapter)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>30 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Pallis - Leptogenesis and Neutrino Masses in an Inflationary SUSY Pati-Salam Model - 1207.3730-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Pallis - Leptogenesis and Neutrino Masses in an Inflationary SUSY Pati-Salam Model - 1207.3730.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Pallis - Leptogenesis and Neutrino Masses in an Inflationary SUSY Pati-Salam Model - 1207.3730.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. It is the sequel to <code>1108.1771</code> and adds numerical constraints.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It turns the Higgs-inflation scenario into predictions for the right-handed neutrino masses.</p>
+<blockquote>
+<p>"We implement <strong>non-thermal leptogenesis</strong> in the framework of an inflationary model based on <strong>a supersymmetric Pati-Salam GUT.</strong>"</p>
+<p>"inflation is driven by <strong>a quartic potential associated with the Higgs fields involved in the spontaneous GUT symmetry breaking, in the presence of a non-minimal coupling of the inflaton field to gravity.</strong>"</p>
+<p>"The inflationary model <strong>relies on renormalizable superpotential terms and does not lead to overproduction of magnetic monopoles. It is largely independent of one-loop radiative corrections</strong>, and it can be consistent with current observational data on the inflationary observables, <strong>with the GUT symmetry breaking scale assuming its SUSY value.</strong>"</p>
+<p>"Non-thermal leptogenesis is realized by <strong>the out-of-equilibrium decay of the two lightest right-handed neutrinos</strong>, which are produced by the inflaton decay."</p>
+<p>"we constrain <strong>the masses of the RH neutrinos in the range $(10^{10}-10^{15})$ GeV and the Dirac neutrino masses of the two first generations to values between $0.1$ and $20$ GeV.</strong>"</p>
+</blockquote>
+<p><strong>So the paper's output is two mass windows</strong> — <strong>and the corpus should record them, because they are testable by leptogenesis and by neutrino experiments.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-paper-adds">What the Paper Adds</h3>
+<p><strong>Three things beyond <code>1108.1771</code></strong>:
+1. <strong>Both lightest right-handed neutrinos decay</strong> (not one), which <strong>increases the CP asymmetry</strong>.
+2. <strong>A numerical scan</strong>, giving the mass windows.
+3. <strong>The confrontation with "the GUT prediction for the heaviest Dirac neutrino mass"</strong> — <strong>the PS relation $m_{\nu,\rm Dirac}^{\rm heaviest}\sim m_t$ at the GUT scale</strong>, <strong>which is a genuine prediction</strong>.</p>
+<p><strong>The corpus should record the third point</strong>, because <strong>it is a Pati–Salam-specific relation</strong>: <strong>the top quark and the heaviest Dirac neutrino share a multiplet</strong>, <strong>so their masses are related at the PS scale.</strong> <strong>That is a statement no other group makes</strong>, and <strong>it constrains the seesaw.</strong></p>
+<h3 id="the-mass-windows">The Mass Windows</h3>
+<p><strong>$M_{N_{1,2}}\in(10^{10},10^{15})$ GeV</strong>, <strong>and $m_{D_{1,2}}\in(0.1,20)$ GeV.</strong></p>
+<p><strong>The lower end of $M_N$ is the thermal-leptogenesis-like bound</strong>; <strong>the upper end is the GUT scale.</strong></p>
+<p><strong>And $m_{D}\sim0.1$–$20$ GeV for the first two generations</strong> is <strong>a specific and unusual prediction</strong>: <strong>it is <em>not</em> the up- and down-quark masses</strong>, <strong>so the Dirac neutrino masses are not simply related to the charged-fermion masses.</strong></p>
+<p><strong>The corpus should record that</strong>, because <strong>it contradicts the naive PS expectation that all four components of a $\bar{\mathbf4}$ share a mass.</strong> <strong>The paper's window says the neutrino Dirac masses are heavier than the quark masses of the same generation</strong> — <strong>so the $\bar{\mathbf 4}$'s components are split.</strong></p>
+<p><strong>And the corpus should note that this splitting must come from the PS-breaking</strong>, <strong>which is a constraint on the Higgs sector.</strong></p>
+<h3 id="the-two-neutrino-decay">The Two-Neutrino Decay</h3>
+<p>"the out-of-equilibrium decay of the <strong>two lightest</strong> right-handed neutrinos"</p>
+<p><strong>Why two</strong>: <strong>the CP asymmetry from a single $N_R$ requires interference with another</strong>, <strong>so at least two are needed.</strong></p>
+<p><strong>And using both increases the asymmetry and relaxes the $T_{\rm RH}$ bound</strong>, <strong>which is why it helps with the gravitino problem.</strong></p>
+<p><strong>The corpus should note the mechanism</strong>: <strong>leptogenesis needs at least two right-handed neutrinos, and the PS model has three (one per family).</strong> <strong>So the model naturally supplies what leptogenesis needs</strong> — <strong>another instance of a Pati–Salam structure doing double duty.</strong></p>
+<h3 id="the-monopole-claim">The Monopole Claim</h3>
+<p>"<strong>does not lead to overproduction of magnetic monopoles</strong>"</p>
+<p><strong>Same as <code>1108.1771</code></strong>: <strong>inflation is simultaneous with the breaking</strong>, <strong>so the monopoles are diluted.</strong></p>
+<p><strong>And note what this paper adds</strong>: <strong>"it can be consistent with ... the GUT symmetry breaking scale assuming its SUSY value"</strong> — <strong>so the breaking scale is fixed at $M_{\rm GUT}\approx2\times10^{16}$ GeV</strong>, <strong>not a free parameter.</strong></p>
+<p><strong>That is important</strong>: <strong>the scenario does not tune $v_{PS}$; it uses the SUSY value.</strong> <strong>So its predictions are sharp.</strong></p>
+<h3 id="the-unitarity-problem-again">The Unitarity Problem, Again</h3>
+<p><strong>The non-minimal coupling is still there, and the paper does not address its cutoff.</strong></p>
+<p><strong>The corpus should note it in both conversions</strong>, because <strong>it is the scenario's main theoretical weakness</strong>, and <strong>the hype-free way to present the model is: "economical, predictive, and with a known UV problem".</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-heaviest-dirac-neutrino-mass-is-tied-to-the-top-mass">1. The heaviest Dirac neutrino mass is tied to the top mass</h3>
+<p><strong>The idea.</strong> Same multiplet, so the PS scale relates them.</p>
+<p><strong>What it would add.</strong> A Pati–Salam-specific prediction that constrains the seesaw. <strong>No other group makes it.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> The relation holds only at the PS scale.</p>
+<h3 id="2-the-numerical-windows-math15math16-gev-math17math18-gev">2. The numerical windows: $M_N\sim10^{10}$–$10^{15}$ GeV, $m_D\sim0.1$–$20$ GeV</h3>
+<p><strong>The idea.</strong> Leptogenesis plus the gravitino bound fix the ranges.</p>
+<p><strong>What it would add.</strong> Testable numbers, and a statement that the $\bar{\mathbf4}$'s components are split.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> The windows are broad.</p>
+<h3 id="3-leptogenesis-needs-two-right-handed-neutrinos-and-ps-supplies-three">3. Leptogenesis needs two right-handed neutrinos, and PS supplies three</h3>
+<p><strong>The idea.</strong> The model naturally has what the mechanism requires.</p>
+<p><strong>What it would add.</strong> Another instance of a PS structure doing double duty.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-the-scenario-uses-the-susy-gut-scale-not-a-tuned-one">4. The scenario uses the SUSY GUT scale, not a tuned one</h3>
+<p><strong>The idea.</strong> $v_{PS}\approx2\times10^{16}$ GeV is fixed, so the predictions are sharp.</p>
+<p><strong>What it would add.</strong> A contrast with the corpus's "PS scale is free" theme.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> The non-minimal coupling's cutoff.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The scenario: in <code>1108.1771</code>.</li>
+<li>Non-thermal leptogenesis: in <code>2308.13248</code>.</li>
+<li>The gravitino bound: in the SUSY cosmology literature.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's most predictive cosmology because it does not tune, and the corpus should present it as the benchmark.</p>
+<p><strong>The inputs</strong>: <strong>the PS group, its SUSY breaking scale, the PS Higgs as inflaton, and the PS relation between the top and the heaviest Dirac neutrino.</strong></p>
+<p><strong>The outputs</strong>: <strong>$n_s$, $r$, the baryon asymmetry, and the windows for $M_N$ and $m_D$.</strong></p>
+<p><strong>Nothing is tuned except the non-minimal coupling $\xi$</strong>, <strong>which the amplitude fixes.</strong> <strong>That is a real prediction, and it is falsifiable</strong>: <strong>if the right-handed neutrinos are outside $(10^{10},10^{15})$ GeV, the scenario dies.</strong></p>
+<p><strong>The corpus should say so, and should also say what the scenario cannot do</strong>: <strong>no strings (inflation dilutes them), no axion unless PQ is added, and a heavy gravitino.</strong> <strong>The costs are stated, the prediction is sharp, and the UV problem is known.</strong></p>
+<p><strong>That is what a good model in this field looks like, and the corpus should use it as the standard against which the others are read.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

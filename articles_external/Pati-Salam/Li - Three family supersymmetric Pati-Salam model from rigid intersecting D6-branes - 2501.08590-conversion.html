@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three-Family Supersymmetric Pati–Salam Model from Rigid Intersecting D6-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Three family supersymmetric Pati-Salam model from rigid intersecting D6-branes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="three-family-supersymmetric-patisalam-model-from-rigid-intersecting-d6-branes"><strong>Three-Family Supersymmetric Pati–Salam Model from Rigid Intersecting D6-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2501.08590 [hep-th] (v3)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Adeel Mansha, Mudassar Sabir, Tianjun Li, Luyang Wang</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 30 June 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>7 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Three family supersymmetric Pati-Salam model from rigid intersecting D6-branes - 2501.08590-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Three family supersymmetric Pati-Salam model from rigid intersecting D6-branes - 2501.08590.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Three family supersymmetric Pati-Salam model from rigid intersecting D6-branes - 2501.08590.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its companion with the full class is <code>2505.03664</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It uses discrete torsion to get rigid cycles, and rigid cycles fix the moduli problem.</p>
+<blockquote>
+<p>"We construct, <strong>for the first time, a three-family $N=1$ supersymmetric Pati-Salam model from rigid intersecting D6-branes on a factorizable $T^6/(\mathbb Z_2\times\mathbb Z_2')$ orientifold with discrete torsion.</strong>"</p>
+<p>"<strong>The factorizable geometry allows for explicit control over rigid cycles and moduli stabilization.</strong> We can <strong>break the Pati-Salam gauge symmetry down to the Standard Model gauge symmetry via the supersymmetry preserving Higgs mechanism</strong>, <strong>generate the SM fermion masses and mixings</strong>, and <strong>break the supersymmetry via gaugino condensations in the hidden sector.</strong>"</p>
+</blockquote>
+<p><strong>So this seven-page letter claims a complete chain: PS → SM by Higgs, masses and mixings, and SUSY breaking by condensation.</strong> <strong>That is the most complete single model in the cluster, and the key is "rigid cycles with discrete torsion".</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-rigid-matters">Why "Rigid" Matters</h3>
+<p><strong>A cycle is "rigid" if it has no continuous deformations</strong> — the D-brane wrapping it cannot move. <strong>A non-rigid cycle gives the brane a position modulus</strong>, and that modulus is a massless scalar in the four-dimensional theory.</p>
+<p><strong>And massless adjoints are fatal</strong>: <strong>a massless adjoint chiral multiplet contributes to the beta function and destroys asymptotic freedom</strong>, so <strong>the hidden sector never becomes strongly coupled and gaugino condensation cannot happen.</strong></p>
+<p><strong>So rigid cycles are the prerequisite for SUSY breaking by condensation</strong>, and the corpus should record the chain: <strong>rigid cycle → no position modulus → no massless adjoint → negative beta function → condensation → SUSY breaking.</strong></p>
+<p><strong>That chain is the paper's contribution and it is the batch's cleanest cosmological argument in the D-brane cluster.</strong></p>
+<h3 id="why-discrete-torsion-is-needed">Why "Discrete Torsion" Is Needed</h3>
+<p><strong>On a plain $T^6/(\mathbb Z_2\times\mathbb Z_2)$ orientifold, all the cycles are non-rigid</strong> — the torus is a product of circles and every cycle can slide.</p>
+<p><strong>Discrete torsion changes the orbifold's structure</strong>: it introduces <strong>twisted sectors with fixed points</strong>, and <strong>the cycles that pass through the fixed points become rigid.</strong></p>
+<p><strong>The cost</strong>: <strong>discrete torsion is a choice (a discrete B-field flux), and not every model admits it.</strong> <strong>And it modifies the spectrum</strong>: twisted-sector matter appears, and the tadpole conditions change.</p>
+<p><strong>The corpus should record the cost.</strong> <strong>The batch's other D-brane papers use the plain orientifold; this one needs the torsion.</strong> <strong>So the rigid-cycle models are a different branch</strong>, not a refinement of the 33.</p>
+<h3 id="the-complete-chain">The Complete Chain</h3>
+<p><strong>Three steps, and each is claimed:</strong></p>
+<ol>
+<li><strong>"break the Pati-Salam gauge symmetry down to the Standard Model gauge symmetry via the supersymmetry preserving Higgs mechanism"</strong> — the $\mathbf4$-Higgs VEV with $SU(2)_R$ doublet structure, preserving SUSY.</li>
+<li><strong>"generate the SM fermion masses and mixings"</strong> — through the three- and four-point worldsheet couplings, as in <code>2202.07048</code>.</li>
+<li><strong>"break the supersymmetry via gaugino condensations in the hidden sector"</strong> — the rigid cycles make this possible.</li>
+</ol>
+<p><strong>That is the whole programme in one sentence</strong>, and it is why the paper is short: <strong>it is a proof of existence for each step, not a detailed fit.</strong></p>
+<p><strong>The corpus should present it as such</strong> — <strong>the batch's most complete D-brane Pati–Salam model, with the least quantitative detail.</strong></p>
+<h3 id="the-factorizable-geometry">The Factorizable Geometry</h3>
+<p>"<strong>The factorizable geometry allows for explicit control over rigid cycles and moduli stabilization</strong>"</p>
+<p><strong>"Factorizable" means $T^6=T^2\times T^2\times T^2$</strong> with each torus a product of circles. <strong>That makes the cycle structure computable by hand</strong>, which is why the discrete-torsion construction can be done at all.</p>
+<p><strong>The corpus should note that the cluster's computability rests on factorizability</strong> — <strong>a general Calabi–Yau would be intractable.</strong> <strong>So the results are for a special class of compactifications</strong>, and that is a limitation the corpus should state.</p>
+<h3 id="what-is-not-claimed">What Is Not Claimed</h3>
+<p><strong>No soft terms, no quantitative fermion fit, no dark matter, no proton-decay estimate.</strong> <strong>Seven pages cannot contain them.</strong></p>
+<p><strong>The companion <code>2505.03664</code> (43 pages) presents the full class</strong> and adds the consistency checks.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-rigid-cycles-are-required-for-gaugino-condensation">1. Rigid cycles are required for gaugino condensation</h3>
+<p><strong>The idea.</strong> Non-rigid cycles give position moduli, which give massless adjoints, which destroy asymptotic freedom.</p>
+<p><strong>What it would add.</strong> The clearest causal chain in the cluster's cosmology. <strong>And an explanation of why the plain orientifold models (<code>2112.09630</code>) cannot break SUSY this way.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-discrete-torsion-is-the-price-of-rigidity">2. Discrete torsion is the price of rigidity</h3>
+<p><strong>The idea.</strong> Only the torsion orbifold has rigid cycles, and the torsion changes the spectrum.</p>
+<p><strong>What it would add.</strong> A structural distinction between branches of the landscape.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-a-complete-chain-in-one-model-with-no-numbers">3. A complete chain in one model, with no numbers</h3>
+<p><strong>The idea.</strong> PS→SM, masses, SUSY breaking, all claimed in seven pages.</p>
+<p><strong>What it would add.</strong> The batch's most complete existence proof — and a caution that "complete" here means "all steps present", not "all steps fitted".</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-factorizability-is-what-makes-the-computation-possible">4. Factorizability is what makes the computation possible</h3>
+<p><strong>The idea.</strong> $T^2\times T^2\times T^2$ is a special compactification, chosen for tractability.</p>
+<p><strong>What it would add.</strong> An honest statement of the framework's scope. <strong>The corpus should not generalise these results to arbitrary Calabi–Yau.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Gaugino condensation and moduli: in <code>hep-ph/0505221</code>, <code>2504.01893</code>, <code>2004.02332</code>.</li>
+<li>Three- and four-point Yukawas: in <code>2202.07048</code>.</li>
+<li>The plain orientifold landscape: in <code>2112.09630</code>.</li>
+<li>The full rigid-cycle class: in <code>2505.03664</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper marks the cluster's turn from taxonomy to completeness, and it does so by changing the background.</p>
+<p><strong><code>hep-th/0403061</code> → <code>2112.09630</code></strong>: the plain orientifold landscape, fully enumerated, 33 classes, one unification.
+<strong>Here → <code>2505.03664</code></strong>: a different background (discrete torsion, rigid cycles), a different branch, and a model that claims the full chain.</p>
+<p><strong>The move is significant</strong>: <strong>rather than search harder in the known landscape, change the compactification so that the missing ingredient (rigidity) exists.</strong> <strong>That is what a mature model-building programme does when a census comes up short.</strong></p>
+<p><strong>The corpus should present the cluster in two acts</strong> — <strong>the census of the plain orientifold, and the rigid-cycle branch</strong> — <strong>because the second is not a subset of the first.</strong></p>
+<p>The second point: the causal chain "rigid → no adjoint → asymptotic freedom → condensation" is the batch's best example of a <em>stringy</em> constraint doing real work. <strong>It cannot be stated in field theory</strong>, because in field theory you simply do not include the adjoint. <strong>The corpus should say so</strong>: <strong>this is a place where the string construction constrains the model in a way the field theory cannot.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

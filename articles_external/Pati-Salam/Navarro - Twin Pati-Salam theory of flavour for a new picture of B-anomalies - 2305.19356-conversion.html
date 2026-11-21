@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twin Pati–Salam Theory of Flavour for a New Picture of B-Anomalies — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Navarro - Twin Pati-Salam theory of flavour for a new picture of B-anomalies - 2305.19356.pdf…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="twin-patisalam-theory-of-flavour-for-a-new-picture-of-b-anomalies"><strong>Twin Pati–Salam Theory of Flavour for a New Picture of B-Anomalies</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2305.19356 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>M. Fernández Navarro</td>
+</tr>
+<tr>
+<td>version</td>
+<td>30 May 2023</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Moriond EW 2023 proceedings (Rencontres de Moriond)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>6 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Navarro - Twin Pati-Salam theory of flavour for a new picture of B-anomalies - 2305.19356-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Navarro - Twin Pati-Salam theory of flavour for a new picture of B-anomalies - 2305.19356.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Navarro - Twin Pati-Salam theory of flavour for a new picture of B-anomalies - 2305.19356.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Conference summary of <code>2209.00276</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>Six pages that state the twin Pati–Salam logic more clearly than the 67-page paper does.</p>
+<blockquote>
+<p>"We discuss a theory of flavour which can simultaneously explain and connect the origin of the Standard Model flavour hierarchies with the $U_1(\mathbf3,\mathbf1,2/3)$ leptoquark explanation of the B-decay flavour anomalies."</p>
+</blockquote>
+<p>The paper's real contribution is the argument for <strong>why the third family must be a singlet under $SU(4)$</strong>.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-math2-and-why-it-connects-the-two-anomalies">Why $U_1$ and Why It Connects the Two Anomalies</h3>
+<p>"The vector leptoquark $U_1(\mathbf3,\mathbf1,2/3)$ contributes at tree-level to the $R_{D^{(*)}}$ ratios via the contact interaction $(\bar c_L\gamma^\mu b_L)(\bar\tau_L\gamma_\mu\nu_L)$. This contribution is also connected to the contact interaction $(\bar s_L\gamma^\mu b_L)(\bar\tau_L\gamma_\mu\tau_L)$ via $SU(2)_L$ invariance. <strong>Remarkably, at the 1-loop level the latter provides a contribution to the LFU operator $(\bar s_L\gamma^\mu b_L)\bar\ell\gamma_\mu\ell$.</strong> Therefore, a vector leptoquark $U_1(\mathbf3,\mathbf1,2/3)$ explaining the $R_{D^{(*)}}$ anomalies naturally delivers a relevant LFU contribution to $b\to s\ell\ell$ that can reduce the tension with the experiment."</p>
+<p><strong>That is the mechanism that makes one leptoquark do both jobs, and it is worth recording precisely.</strong></p>
+<p>The chain: $U_1$ gives $b\to c\tau\nu$ at tree level (fixing $R(D^{(*)})$). $SU(2)_L$ invariance ties that coupling to $b\to s\tau\tau$. Then a loop closes the $\tau$ pair into a $Z$ or photon, giving $b\to s\ell\ell$ — the operator that $R(K^{(*)})$ measures.</p>
+<p><strong>So the two anomalies are connected by one coupling and one loop, not by two independent couplings.</strong> That is why a single $U_1$ can explain both, and why no scalar leptoquark can (the scalar $S_3$ has the right $b\to s\mu\mu$ coupling but no $b\to c\tau\nu$).</p>
+<h3 id="the-kaon-problem-and-the-4321-solution">The Kaon Problem and the 4321 Solution</h3>
+<p>"the explanation of the $R_{D^{(*)}}$ anomalies requires a TeV scale $U_1$. <strong>Such a light vector leptoquark arising from traditional Pati-Salam (PS) embeddings would be at odds with data from flavour-violating kaon decays.</strong>"</p>
+<p><strong>That is the obstruction and it is fatal for the obvious approach.</strong> A TeV-scale $SU(4)$ leptoquark couples to all three generations with equal strength (the group does not distinguish them), so it mediates $K_L\to\mu e$ at a rate that a TeV mass cannot suppress. <strong>The experimental bound forces the scale to a PeV or above, which is too heavy for $R(D^{(*)})$.</strong></p>
+<p>The escape: "the so-called '4321' gauge group ... which can provide a TeV scale $U_1$ <strong>as long as the first and second fermion families are singlets under $SU(4)$</strong>."</p>
+<p><strong>So the resolution is to make most fermions blind to the leptoquark.</strong> $U_1$ then couples only to whatever transforms under $SU(4)$, and if the light families are singlets, the kaon decay is automatically absent.</p>
+<h3 id="why-the-third-family-must-also-be-a-singlet-the-key-argument">Why the Third Family Must Also Be a Singlet — the Key Argument</h3>
+<p>"In recent years, several theories of flavour have been proposed assuming that <strong>the third SM family transforms non-trivially under $SU(4)$</strong>. However, all of them predict a <strong>sizable coupling of third family right-handed (RH) fermions to $U_1$, which is tightly constrained by direct searches at LHC</strong>. Instead, if the third family is a singlet under $SU(4)$, then the $U_1$ currents can be <strong>dominantly left-handed (LH)</strong>, a scenario compatible with current high energy data."</p>
+<p><strong>That is the paper's sharpest point.</strong> If $b_R$ transforms under $SU(4)$, then $U_1$ couples to $b_R$ with gauge strength, and the LHC's $pp\to U_1\to t\bar t$ or $\tau\bar\tau$ searches exclude it at a TeV. If $b_R$ is a singlet, the coupling is generated only through mixing with vector-like fermions, and it is naturally left-handed and small.</p>
+<p><strong>So the model must be "fermiophobic": every SM fermion is a singlet under $SU(4)$, and all $U_1$ couplings come from mixing.</strong> That is a strange-looking requirement — the leptoquark does not couple to anything at the renormalisable level — and it is what the data force.</p>
+<p>"In this so-called 'fermiophobic' scenario, the couplings of $U_1$ to SM fermions are all induced through mixing with vector-like fermions that transform non-trivially under $SU(4)$. Nevertheless, <strong>the flavour structure of such a model is ad-hoc</strong>, worsening the flavour puzzle with a bunch of extra parameters that give no information about the origin of flavour in the SM."</p>
+<p><strong>So the fermiophobic construction solves the LHC problem and creates a flavour problem.</strong> And that is exactly what the twin Pati–Salam is for:</p>
+<p>"We will show in the following a theory of flavour featuring a low scale fermiophobic 4321 model, <strong>which addresses the origin of flavour hierarchies in the SM</strong> and predicts an even richer phenomenology."</p>
+<h3 id="the-twin-structure-as-a-uv-completion">The Twin Structure as a UV Completion</h3>
+<p>"Given the structure of the fermiophobic 4321 group ... where a set of vector-like fermions transforms under $SU(4)$ while SM-like fermions transform under $SU(3)'$, <strong>a natural UV completion would be that of two commuting Pati-Salam groups, one for vector-like fermions and another one for SM-like fermions.</strong>"</p>
+<p><strong>That sentence is the cleanest justification of the twin construction in the literature.</strong> The 4321 group has two colour factors; the natural completion is two full Pati–Salam groups; the vector-like fermions live under one, the SM fermions under the other, and a scalar sector links them.</p>
+<p><strong>So the "twin" is not a doubling for its own sake — it is what the 4321 structure becomes when you complete it.</strong> That is a much better motivation than the original paper gives, and it is worth recording.</p>
+<h3 id="the-predictions">The Predictions</h3>
+<p>"the enhancement of $B\to K^{(*)}\nu\bar\nu$ over the SM prediction, which is within the future reach of the Belle II collaboration. <strong>Remarkably, given the dominantly LH nature of $U_1$ couplings in the Twin PS model, this signal is much more enhanced with respect to alternative constructions.</strong>"</p>
+<p><strong>So the left-handedness makes $B\to K^{(*)}\nu\bar\nu$ larger</strong>, which is both a prediction and a discriminator: the twin model gives a bigger rate than competing 4321 constructions with right-handed couplings. <strong>That is a way to tell the models apart with one measurement.</strong></p>
+<p>And $\tau\to3\mu$ from both $Z'$ and $U_1$, with the $Z'$ dominating.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<h3 id="1-one-loop-connects-math58-to-math59">1. One loop connects $R(D^{(*)})$ to $R(K^{(*)})$</h3>
+<p><strong>The idea.</strong> $U_1$ gives $b\to c\tau\nu$ at tree level; $SU(2)_L$ ties it to $b\to s\tau\tau$; a loop converts that into $b\to s\ell\ell$.</p>
+<p><strong>What it would add.</strong> The reason a single vector leptoquark can address both anomalies, stated as a mechanism rather than a fit. <strong>The corpus's $B$-anomaly discussion, if it has one, treats the two ratios separately.</strong> They are connected through $SU(2)_L$ and a loop, and that connection is what singles out $U_1$.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's $B$-anomaly section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the chain is explicit and standard.</p>
+<h3 id="2-a-tev-math69-leptoquark-is-excluded-by-math70-only-the-fermiophobic-4321-survives">2. A TeV $SU(4)$ leptoquark is excluded by $K_L\to\mu e$; only the fermiophobic 4321 survives</h3>
+<p><strong>The idea.</strong> $SU(4)$ couples all generations equally, so a light leptoquark mediates kaon decays; making the light families singlets removes the coupling.</p>
+<p><strong>What it would add.</strong> A sharp statement of why the simple Pati–Salam leptoquark cannot be light. The corpus's article presents the leptoquarks as a virtue (they come for free); <strong>here is the reason they must be heavy in the minimal model</strong> — and the reason a modified group is needed.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's gauge-sector section.</p>
+<p><strong>What stands in the way.</strong> Nothing. The bound is standard.</p>
+<h3 id="3-right-handed-couplings-are-excluded-by-the-lhc-so-the-third-family-must-be-a-singlet-too">3. Right-handed couplings are excluded by the LHC, so the third family must be a singlet too</h3>
+<p><strong>The idea.</strong> If $b_R$ is charged under $SU(4)$, $U_1$ couples to $b_R$ with gauge strength and di-top/di-tau searches exclude it. Singlet $b_R$ gives LH-dominated couplings through mixing.</p>
+<p><strong>What it would add.</strong> The most concrete argument in the batch for a specific representation assignment, derived from data rather than aesthetics. <strong>And it explains why the model is "fermiophobic"</strong> — a term that otherwise looks perverse.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's gauge-sector section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the LHC bounds are quoted.</p>
+<h3 id="4-the-twin-construction-is-the-uv-completion-of-fermiophobic-4321">4. The twin construction is the UV completion of fermiophobic 4321</h3>
+<p><strong>The idea.</strong> Two commuting Pati–Salam groups, one for vector-like fermions and one for SM fermions.</p>
+<p><strong>What it would add.</strong> A motive for the doubling that the original paper does not give. <strong>The twin is not an invention; it is what you are forced into</strong> when the fermiophobic 4321 needs a completion with two colour factors.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the argument is one paragraph.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$G_{4321}$ and the diagonal colour: in <code>2106.03876</code> and <code>2209.00276</code> in this batch.</li>
+<li>$U_1$ coupling both anomalies via $SU(2)_L$: introduced here in the batch; <code>1905.05211</code> has the scalar counterpart.</li>
+<li>Vector-like fermion mixing generating Yukawa structure: in <code>2106.03876</code>.</li>
+<li>$B\to K^{(*)}\nu\bar\nu$ as the falsifier: in <code>2209.00276</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This six-page proceeding contains the best argument in the batch for the twin construction, and it is buried in a conference report.</p>
+<p>The argument has three steps and each is a constraint from data rather than a preference:</p>
+<ol>
+<li>$R(D^{(*)})$ needs a TeV $U_1$.</li>
+<li>A TeV $SU(4)$ leptoquark is excluded by $K_L\to\mu e$, so light families must be $SU(4)$ singlets.</li>
+<li>A $U_1$ coupling to $b_R$ is excluded by the LHC, so the third family must be a singlet too.</li>
+</ol>
+<p><strong>That leaves a group in which the leptoquark couples to nothing at tree level</strong>, and then "the flavour structure ... is ad-hoc" — unless the couplings come from mixing with vector-like fermions, which needs a second Pati–Salam group to organise.</p>
+<p><strong>So the twin Pati–Salam is the answer to a sequence of exclusions</strong>, not a construction someone liked. That is the strongest form of model building and the corpus should present it that way. It also explains why the field content is so large: each exclusion closed off a simpler option.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

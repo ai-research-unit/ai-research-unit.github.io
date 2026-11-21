@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-Riemannian Structures in Pati–Salam Models — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Bochniak - Pseudo-Riemannian Structures in Pati-Salam models - 2002.04506.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="pseudo-riemannian-structures-in-patisalam-models"><strong>Pseudo-Riemannian Structures in Pati–Salam Models</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2002.04506 [math-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. Bochniak, T. E. Williams, P. Zalecki</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 11 February 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>prepared for submission to JHEP; not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Bochniak - Pseudo-Riemannian Structures in Pati-Salam models - 2002.04506-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Bochniak - Pseudo-Riemannian Structures in Pati-Salam models - 2002.04506.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spectral-triple-of-the-biquaternion-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Bochniak - Pseudo-Riemannian Structures in Pati-Salam models - 2002.04506.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. The Polish "Dowód" ("proof") markers survive extraction; the theorems are the boxed statements labelled Proposition 3.1 to 3.4.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper asks what happens to the family of Pati–Salam spectral triples when one adds the <strong>pseudo-Riemannian structure</strong> — an extra grading $\beta$ carrying a signature — that Bochniak and Sitarz had already shown the Standard Model's finite triple possesses. The answer is destructive and clean. For the full Pati–Salam algebra $\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)$ with the natural grading, <strong>no compatible $\beta$ exists that leaves a physically acceptable Dirac operator</strong>, so "no Pati–Salam model with the algebra $\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)$, grading $\gamma$, and with the pseudo-Riemannian structure $\beta$ is physically acceptable." For the reduced algebra $\mathbb H_R\oplus\mathbb H_L\oplus\mathbb C\oplus M_3(\mathbb C)$ exactly one $\beta$ survives, and it is the same one that in the Standard Model case forbids leptoquarks. The consequence: $\beta$ breaks $SU(4)$ to $U(1)\times U(3)$, "leptons are separated from quarks, i.e. they are not the fourth color, so there are no leptoquarks", and what remains is a <strong>generalised left–right symmetric model</strong>.</p>
+<p>This is the sharpest internal critique of the non-commutative Pati–Salam programme in the corpus. The Aydemir papers take $\mathcal A_F=\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)$ and read leptoquarks out of the spectral action. This paper accepts the same algebra and shows that a further axiom, one the Standard Model itself satisfies, removes the leptoquarks.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-algebra-and-the-fermions">The Algebra and the Fermions</h3>
+<p>$$
+\mathcal A=\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C),
+$$</p>
+<p>on $\mathcal H=F\oplus F^*$, with $F$ presented as a $4\times4$ array,</p>
+<p>$$
+v=\begin{pmatrix}
+\nu_R&u_{1R}&u_{2R}&u_{3R}\\
+e_R&d_{1R}&d_{2R}&d_{3R}\\
+\nu_L&u_{1L}&u_{2L}&u_{3L}\\
+e_L&d_{1L}&d_{2L}&d_{3L}
+\end{pmatrix},
+$$</p>
+<p>so that $\mathrm{End}_{\mathbb C}(\mathcal H)\cong M_4(\mathbb C)\otimes M_2(\mathbb C)\otimes M_4(\mathbb C)$, with the representation acting by $\alpha v\beta^t$ on one factor and $M_2(\mathbb C)$ on the other. <strong>The rows are $(\text{chirality}\otimes\text{isospin})$ and the columns are the $SU(4)$ index</strong>, which makes lepton number the fourth colour a statement about the shape of an array: the first column is the lepton column and the other three are colour.</p>
+<p>The paper distinguishes two chiral structures — $\gamma$ and $\gamma_*$ — because $\gamma_*$ "explicitly breaks the $SU(4)$-symmetry into $U(1)\times U(3)$". That remark is the seed of the whole result.</p>
+<h3 id="the-pseudo-riemannian-structure">The Pseudo-Riemannian Structure</h3>
+<p>A pseudo-Riemannian spectral triple is $(\mathcal A,\mathcal H,D,\gamma,J,\beta)$ of signature $(p,q)$, where $\beta=\beta^*$, $\beta^2=1$, $\beta$ commutes with the representation of $\mathcal A$, "and defines a Krein structure on the Hilbert space", subject to</p>
+<p>$$
+\beta\gamma=(-1)^p\gamma\beta,
+\qquad
+\beta J=(-1)^{\frac{p(p-1)}{2}}J\beta,
+\qquad
+D^*=(-1)^p\beta D\beta .
+$$</p>
+<p>The triple is <strong>time-oriented</strong> if $\beta$ "can be presented as the image of a certain Hochschild $p$-cycle". The Riemannian restriction is $D_+=\frac12(D+D^*)$ with $\beta D_+=(-1)^pD_+\beta$, "of the same KO-dimension as the one we started with".</p>
+<p>The physical motivation is stated in the introduction: the Standard Model's finite triple can be seen as "the shadow of some pseudo-Riemannian triple in such a way that the pseudo-Riemannian structure leads to the existence of some nontrivial grading on the Riemannian triple". The signature is taken to be $(0,2)$ because the Pati–Salam triple must have KO-dimension $6$.</p>
+<h3 id="the-theorems">The Theorems</h3>
+<p>The strategy is uniform: a $0$-cycle $\beta$ of one term has the form $\beta=\pi(q_1,q_2,m)J\pi(q_1',q_2',m')^*J^{-1}$, and the requirements that $\beta$ commute with $\mathcal A$, commute with $J$, and square to one force every entry to $\pm$ the identity. So the candidates are finite in number — three for the unreduced algebra, four for the reduced one, "only three of them ... nontrivial".</p>
+<p><strong>Proposition 3.1</strong> gives the most general $D=D_0+JD_0J^{-1}$ commuting with $\beta=\pi(\mathbf 1_2,-\mathbf 1_2,\mathbf 1_4)J\pi(\mathbf 1_2,-\mathbf 1_2,\mathbf 1_4)J^{-1}$: a block structure in the $SU(2)$ indices and an arbitrary $M_4(\mathbb C)$ entry $\tilde A_k$.</p>
+<p><strong>The obstruction</strong> is then stated in one paragraph, and it is worth quoting because it is the paper's centre: "Since $D$ anticommutes with $\gamma$, we see that the only possibility for such a $D$ to commute with the nontrivial $\beta$ discussed above is that terms of the form $\cdots\otimes e_{11}\otimes\cdots$ and $\cdots\otimes e_{22}\otimes\cdots$ must vanish. Notice that only models which contain these terms are physically acceptable as extensions of the Standard Model, for which case the Dirac operator has to contain terms $M_l\otimes e_{11}\otimes e_{11}$ and $M_q\otimes e_{11}\otimes(1-e_{11})$, which encode the Yukawa parameters for leptons and quarks."</p>
+<p>In words: $\beta$ forces the block that carries the Yukawa couplings — the off-diagonal block between the $\mathbf 1$ and the $\mathbf 3$ inside the $\mathbf 4$ — to vanish. No Yukawa couplings, no masses, no acceptable model. <strong>The unreduced algebra is dead.</strong></p>
+<p>For the reduced algebra, the $\beta$ of Proposition 3.3 survives, and with the grading $\gamma_*$ the Dirac operator is restricted to (3.22): the $M_2$ block $T_k,Z_k$, the $M_3$ block $C_k$, a scalar $\gamma_k$, and rectangular mixing blocks $E_{lk},F_{lk}$ between the lepton and quark parts. The paper's reading: "We can treat this model as an extension of the Standard Model with modified chiralities, i.e. in which left-handed (resp. right-handed) leptons have the same parity as right-handed (resp. left-handed) quarks."</p>
+<p>And with the ordinary grading $\gamma$: "the only $\beta$ which is admissible in this case is exactly the same one that prevented the existence of leptoquarks in the Standard Model ... Therefore, instead of the full $SU(2)_R\times SU(2)_L\times SU(4)$ Pati–Salam gauge group we must reduce to the case with $SU(2)_R\times SU(2)_L\times U(1)\times U(3)$."</p>
+<h3 id="the-generic-case">The Generic Case</h3>
+<p>Section 3.3 asks whether allowing $\beta$ to have several terms — not just one — reopens the door. It does not. Diagonal $\beta$ with signs $\eta_1,\dots,\eta_6$ is checked exhaustively, and: "the only case in which $\beta$ is a $0$-cycle and allows for an extension of the Standard Model ... is of the one term type and is exactly the same $\beta$ that prevented the existence of leptoquarks". The conclusion "is maintained when generalizing to allow, from the outset, for more general $\beta$s."</p>
+<h3 id="the-resulting-model">The Resulting Model</h3>
+<p>The reduced Pati–Salam model is $\mathbb H_R\oplus\mathbb H_L\oplus\mathbb C\oplus M_3(\mathbb C)$, i.e. gauge group</p>
+<p>$$
+SU(2)_R\times SU(2)_L\times SU(3)\times U(1)_{B-L},
+$$</p>
+<p>with</p>
+<p>$$
+q_L=(1,2,3,\tfrac13),\quad q_R=(2,1,3,\tfrac13),\quad l_L=(1,2,1,-1),\quad l_R=(2,1,1,-1),
+$$</p>
+<p>and $Q=I_{3L}+I_{3R}+\frac{B-L}{2}$. The paper's summary: this "generalizes both the Left-Right Symmetric Models and also the Chiral Electromagnetism Model", the latter being the $U(1)_R\times U(1)_L$ toy model of the Connes–Lott scheme.</p>
+<p>One point is recorded as surprising: "the pseudo-Riemannian structure still allows for the existence of $SU(2)$-doublets of right-handed particles. This is an interesting feature."</p>
+<h3 id="the-historical-obstacle-it-recalls">The Historical Obstacle It Recalls</h3>
+<p>In the left–right survey the paper repeats a result the corpus needs: "In [17] it was argued that in the almost-commutative Yang–Mills–Higgs models, parity cannot be spontaneously broken. This followed from the requirement that Poincaré duality must be satisfied."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-there-is-an-axiom-that-removes-the-leptoquark-and-the-standard-model-already-obeys-it">1. There is an axiom that removes the leptoquark, and the Standard Model already obeys it</h3>
+<p><strong>The idea.</strong> Add the pseudo-Riemannian structure $\beta$ to the finite triple. On the unreduced algebra the Yukawa block is forced to vanish; on the reduced algebra the only surviving $\beta$ is one that splits $SU(4)$ into $U(1)\times U(3)$ and thereby makes the lepton a singlet rather than a fourth colour.</p>
+<p><strong>What it would add.</strong> A <em>derivation</em> where the corpus currently has a <em>choice</em>. <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code> treats $SU(4)$ as the right group because of what it explains, and the corpus's spectral-triple article says the biquaternion algebra is not a Connes triple because it fails the first-order condition and the KO-dimension selection. This paper supplies a third fact of the same kind, and a stronger one: <strong>within the spectral-triple family the Pati–Salam algebra and the pseudo-Riemannian axiom are incompatible, and the axiom wins because the Standard Model satisfies it.</strong> The leptoquark is not excluded by data or by taste; it is excluded by the same requirement that gives the Standard Model its fermion content.</p>
+<p><strong>Where it lands.</strong> The spectral-triple article, in the section on the axioms — as the sharpest available statement of what a spectral-triple construction can and cannot deliver — and the Pati–Salam article, in its boundary statement.</p>
+<p><strong>What stands in the way.</strong> It cuts against the corpus's own Pati–Salam article, which treats the leptoquarks as a prediction. The corpus can hold both, but only by being explicit: <strong>the leptoquark survives only if the pseudo-Riemannian structure is dropped, and the price of dropping it is that the Standard Model's own triple loses the axiom that selects its fermion content.</strong> That is a real trade-off and the corpus should name it rather than pick a side silently.</p>
+<h3 id="2-math94-is-the-algebraic-form-of-the-lepton-is-the-singlet-and-colour-is-the-triplet">2. $M_4(\mathbb C)\to\mathbb C\oplus M_3(\mathbb C)$ is the algebraic form of "the lepton is the singlet and colour is the triplet"</h3>
+<p><strong>The idea.</strong> The reduced algebra represents $\mathbb C\oplus M_3(\mathbb C)$ on $\mathbb C^4$ block-diagonally, as $\mathrm{diag}(\lambda,N)$ with $\lambda\in\mathbb C$ and $N\in M_3(\mathbb C)$. The four-dimensional space splits as $\mathbf 1\oplus\mathbf 3$; the singlet carries $B-L$ and the triplet carries colour.</p>
+<p><strong>What it would add.</strong> The exact algebra behind a phrase the corpus uses descriptively. The corpus's Pati–Salam article says lepton number is "the fourth colour" and proves charge quantisation from $\operatorname{tr}_{\mathbf4}(B-L)=0$. The reduced algebra says the fourth direction is <strong>not a colour at all</strong> — it is the one-dimensional summand, and $B-L$ is the $U(1)$ that acts on it. Both statements are true of the same $4\times4$ array; they differ in whether the array's four columns are one orbit or a singlet plus a triplet.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's charge-quantisation paragraph, and <code>articles_physics/the-spectral-triple-of-the-biquaternion-algebra.md</code> where $M_2(\mathbb H)\cong M_4(\mathbb C)$ is discussed.</p>
+<p><strong>What stands in the way.</strong> The corpus's frame treats the four directions as one algebra acting transitively. Splitting them is a reduction of the algebra, and the corpus should present it as such: not "the fourth colour is wrong" but "the fourth colour and a separate $B-L$ are two readings of the same array, and an axiom decides between them".</p>
+<h3 id="3-a-generation-is-literally-a-math108-matrix">3. A generation is literally a $4\times4$ matrix</h3>
+<p><strong>The idea.</strong> $F$ is written as a $4\times4$ array whose rows are $(\text{chirality},\text{isospin})$ and whose columns are the four $SU(4)$ directions.</p>
+<p><strong>What it would add.</strong> A concrete realisation of a shape the corpus asserts. The corpus repeatedly treats the generation as an array — that is the point of a doubling framework — and here the array is written out with the entries named: $\nu_R$ and $e_R$ in the first column, the three up-type and three down-type right-handed quarks in the next three, and the left-handed states below. The tensor decomposition $\mathrm{End}_{\mathbb C}(\mathcal H)=M_4(\mathbb C)\otimes M_2(\mathbb C)\otimes M_4(\mathbb C)$ then says <strong>which algebra acts on rows, which on columns, and which on the particle–antiparticle doubling</strong>, and that is exactly the kind of structural statement the corpus makes qualitatively.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's fermion-assignment section, as the display of the array rather than a list of multiplets.</p>
+<p><strong>What stands in the way.</strong> Nothing. It is a table.</p>
+<h3 id="4-poincare-duality-forbids-spontaneous-parity-breaking-in-almost-commutative-models">4. Poincaré duality forbids spontaneous parity breaking in almost-commutative models</h3>
+<p><strong>The idea.</strong> Girelli's result, quoted here: "in the almost-commutative Yang–Mills–Higgs models, parity cannot be spontaneously broken. This followed from the requirement that Poincaré duality must be satisfied."</p>
+<p><strong>What it would add.</strong> The missing obstacle in the corpus's D-parity narrative. The corpus's chain is: Aulakh defines the exchange $D$; the 1509.01606 conversion shows $D$ is not $P$ and needs a separate scale $M_D$; Babu shows that without $P$ there is no explanation of $\bar\theta$. This paper adds the reason the non-commutative constructions have such trouble with $P$: <strong>an axiom of the framework forbids $P$ from breaking spontaneously</strong>, so any Pati–Salam triple with a broken parity must violate Poincaré duality.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's parity section, where the three-paper sequence is assembled.</p>
+<p><strong>What stands in the way.</strong> The corpus's frame does not impose Poincaré duality, so this is an obstacle for the spectral-triple route and not for the biquaternion one. That asymmetry is itself informative and should be said: <strong>the biquaternion frame pays for its freedom from the axioms by having no theorem that selects its content.</strong></p>
+<h3 id="5-the-surviving-model-is-a-generalised-leftright-symmetric-model-not-patisalam">5. The surviving model is a generalised left–right symmetric model, not Pati–Salam</h3>
+<p><strong>The idea.</strong> The endpoint of the reduction is $SU(2)_R\times SU(2)_L\times SU(3)_C\times U(1)_{B-L}$, which "generalizes both the Left-Right Symmetric Models and also the Chiral Electromagnetism Model".</p>
+<p><strong>What it would add.</strong> A precise statement of what the spectral-triple route can reach. The corpus's Pati–Salam article distinguishes the two groups by rank and by content; this paper says that the axiomatic route lands on the smaller one, and that it lands there <strong>for a reason</strong> — the same reason the Standard Model's own triple has only $U(1)\times SU(3)$ in its colour sector.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's comparison of the two groups, and the grand-unification article's rank discussion.</p>
+<p><strong>What stands in the way.</strong> Nothing, but the corpus's own conclusion should be that the axiomatic route is not the one that gets the leptoquarks, and that this is a <strong>choice of route</strong>, not a discovery about nature.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$\mathcal A_F=\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)$ and $\mathbb H\oplus\mathbb H\oplus M_4(\mathbb C)$: in the Aydemir 2511.07672 conversion, and the corpus's spectral-triple article.</li>
+<li>$Q=I_{3L}+I_{3R}+\frac12(B-L)$: in the Pati–Salam article.</li>
+<li>The first-order condition and the KO-dimension signs: in the spectral-triple article, with the same notation $J$, $\gamma$, $\varepsilon,\varepsilon',\varepsilon''$.</li>
+<li>$\gamma_*$ breaking $SU(4)$ into $U(1)\times U(3)$: not in the corpus; it is the mechanism behind idea 1.</li>
+<li>The claim that the biquaternion algebra is not a Connes triple: in the spectral-triple article, and this paper's result is the complementary statement about the Pati–Salam algebra.</li>
+</ul>
+<h3 id="one-tension-recorded">One tension recorded</h3>
+<p>The Aydemir papers and this one are both spectral-triple constructions, both with the same finite algebra, and they disagree about whether leptoquarks exist. The disagreement is traceable to one object: whether the pseudo-Riemannian grading $\beta$ is imposed. Neither paper states the other's assumption, and the corpus is the right place to record that the two programmes differ by an axiom rather than by a calculation.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

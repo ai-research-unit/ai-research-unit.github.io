@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Supersymmetric Pati–Salam Theory: Determination of Physical Scales — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Senjanovic - Minimal Supersymmetric Pati-Salam Theory - Determination of Physical Scales -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="minimal-supersymmetric-patisalam-theory-determination-of-physical-scales"><strong>Minimal Supersymmetric Pati–Salam Theory: Determination of Physical Scales</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0302216 (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Alejandra Melfo, Goran Senjanović</td>
+</tr>
+<tr>
+<td>version</td>
+<td>24 February 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, ICTP)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Senjanovic - Minimal Supersymmetric Pati-Salam Theory  - Determination of Physical Scales - hep-ph_0302216-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Senjanovic - Minimal Supersymmetric Pati-Salam Theory  - Determination of Physical Scales - hep-ph_0302216.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Senjanovic - Minimal Supersymmetric Pati-Salam Theory  - Determination of Physical Scales - hep-ph_0302216.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It computes the two-step breaking's scales and finds that parity restoration may be accessible.</p>
+<blockquote>
+<p>"We systematically study <strong>the minimal supersymmetric Pati-Salam theory</strong>, paying special attention to <strong>the unification constraints.</strong>"</p>
+<p>"We find that <strong>the $SU(4)_C$ scale $M_c$ and the left-right scale $M_R$ lie in the range $10^{10}\,\mathrm{GeV}<M_c<10^{14}\,\mathrm{GeV}$, $10^3\,\mathrm{GeV}<M_R<10^{10}\,\mathrm{GeV}$ (with single-step breaking at $10^{10}$ GeV), giving a potentially accessible scale of parity breaking.</strong>"</p>
+<p>"The theory includes the possibility of having <strong>doubly-charged supermultiplets at the supersymmetry breaking scale</strong>; <strong>colour octet states with mass $\sim M_R^2/M_c$</strong>; <strong>magnetic monopoles of intermediate mass that do not conflict with cosmology</strong>; and <strong>a "clean" (type I) form for the see-saw mechanism</strong> of neutrino mass."</p>
+</blockquote>
+<p><strong>Four results</strong>: <strong>$10^3$ GeV $\le M_R\le10^{10}$ GeV</strong>, <strong>doubly-charged states at the SUSY scale</strong>, <strong>octets at $M_R^2/M_c$</strong>, <strong>and no monopole problem.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-step-breaking-and-its-scales">The Two-Step Breaking and Its Scales</h3>
+<p><strong>Pati–Salam has two breaking steps</strong>:
+$$SU(4)_C\times SU(2)_L\times SU(2)_R\to SU(3)_C\times SU(2)_L\times U(1)_{B-L}\times SU(2)_R\to \text{SM}.$$
+<strong>The first is at $M_c$, the second at $M_R$.</strong></p>
+<p><strong>And the corpus should note the convention</strong>: <strong>$M_c$ is the colour-lepton scale and $M_R$ the left-right (parity) scale.</strong> <strong>Two scales, and their ordering matters.</strong></p>
+<p><strong>The paper's result</strong>: <strong>$M_c$ between $10^{10}$ and $10^{14}$ GeV, $M_R$ between $10^3$ and $10^{10}$ GeV.</strong></p>
+<p><strong>So $M_R\le M_c$ is required</strong>, <strong>and $M_R$ can be as low as a few TeV.</strong></p>
+<p><strong>That is the paper's headline, and the corpus should record it</strong>: <strong>the left-right scale need not be near the GUT scale.</strong> <strong>Parity restoration may be at the LHC.</strong></p>
+<p><strong>And that is what makes the left-right model testable</strong>: <strong>$W_R$ and $Z_R$ at TeV energies, with the signatures of <code>hep-ph/0302216</code>'s descendants (<code>1705.04125</code>, <code>2103.11889</code>).</strong></p>
+<h3 id="the-octets-at-math25">The Octets at $M_R^2/M_c$</h3>
+<p>"colour octet states with mass $\sim M_R^2/M_c$"</p>
+<p><strong>This is a see-saw formula for scalars</strong> — <strong>the "scalar see-saw"</strong>: <strong>a field that mixes through two heavy scales gets an intermediate mass equal to the product divided by the larger.</strong></p>
+<p><strong>So the octets are <em>between</em> the two scales</strong>: <strong>if $M_R=10^3$ and $M_c=10^{14}$, then $m_{\rm octet}\sim10^{-8}$ GeV</strong> — <strong>absurdly light, and excluded.</strong></p>
+<p><strong>So the formula constrains the range</strong>: <strong>the octets must be heavy enough to escape the LHC</strong>, <strong>which requires $M_R^2/M_c\gtrsim$ TeV</strong>, <strong>i.e. $M_R\gtrsim\sqrt{10^3\cdot10^{14}}=3\times10^8$ GeV.</strong></p>
+<p><strong>The corpus should record the constraint</strong>, because <strong>it is a real tension hidden in the abstract's window</strong>: <strong>the window $10^3$–$10^{10}$ GeV for $M_R$ is partly closed by the octets.</strong></p>
+<p><strong>That is exactly the kind of quantitative tension the corpus should surface</strong>, rather than repeating the window.</p>
+<h3 id="intermediate-mass-monopoles">Intermediate-Mass Monopoles</h3>
+<p>"<strong>magnetic monopoles of intermediate mass that do not conflict with cosmology</strong>"</p>
+<p><strong>Why intermediate</strong>: <strong>the monopoles form at the $SU(4)$ breaking</strong> ($M_c$), <strong>and their mass is $\sim M_c/g^2$</strong>, <strong>so they are heavy but not superheavy.</strong></p>
+<p><strong>And "do not conflict with cosmology"</strong>: <strong>intermediate-mass monopoles can be produced copiously and still be allowed</strong>, <strong>because their flux can be below the Parker bound</strong> — <strong>or because they decay/catalyse in ways that avoid the bounds.</strong></p>
+<p><strong>The corpus should record the claim</strong>, and note that <strong>it is a model-dependent statement</strong>: <strong>the monopole abundance depends on the thermal history</strong>, <strong>which <code>2601.14580</code> and <code>2308.13248</code> show is not fixed.</strong></p>
+<h3 id="doubly-charged-states-at-the-susy-scale">Doubly-Charged States at the SUSY Scale</h3>
+<p>"The theory includes the possibility of having <strong>doubly-charged supermultiplets at the supersymmetry breaking scale</strong>"</p>
+<p><strong>A doubly-charged scalar</strong> ($Q=\pm2$) <strong>comes from the PS Higgs sector</strong>: <strong>the $\mathbf{10}$ of $SO(10)$ contains a $(\mathbf1,\mathbf3,\mathbf1)$-like triplet under $SU(2)_R$ with $Q=2$.</strong></p>
+<p><strong>And at the SUSY scale it is light</strong>, <strong>so it is a collider target</strong>: <strong>same-sign dileptons, $H^{\pm\pm}\to\ell^\pm\ell^\pm$.</strong></p>
+<p><strong>The corpus should record it</strong>: <strong>the doubly-charged Higgs is a PS signature with a long literature</strong>, <strong>and its mass being at the SUSY scale makes it reachable.</strong></p>
+<h3 id="the-clean-type-i-seesaw">The Clean Type-I Seesaw</h3>
+<p>"a <strong>'clean' (type I)</strong> form for the see-saw"</p>
+<p><strong>"Clean"</strong> means <strong>the seesaw is the minimal one</strong>: <strong>a right-handed neutrino with a large Majorana mass and a Dirac coupling</strong>, <strong>with no extra states and no cancellations.</strong></p>
+<p><strong>That is a statement about the model's economy</strong>, <strong>and it is a consequence of PS having $N_R$ in the $\bar{\mathbf4}$</strong> — <strong>so the seesaw is automatic (<code>hep-ph/9602414</code>'s point).</strong></p>
+<p><strong>The corpus should note the phrase</strong>, because <strong>it distinguishes the PS seesaw from the extended ones in <code>2012.10492</code> (inverse) and the type-II variants.</strong></p>
+<h3 id="why-this-paper-is-a-reference-point">Why This Paper Is a Reference Point</h3>
+<p><strong>The corpus's scale discussions keep returning to this paper's window</strong>, and <strong>the corpus should use it as the benchmark</strong>:
+- <strong>$10^{10}<M_c<10^{14}$ GeV.</strong>
+- <strong>$10^3<M_R<10^{10}$ GeV.</strong>
+- <strong>$M_R\le M_c$.</strong></p>
+<p><strong>And the corpus should check each later paper's scale choice against these bounds</strong>, <strong>which most do not.</strong></p>
+<p><strong>That is a genuinely useful service the corpus can perform</strong>: <strong>a table of scales, with this paper's window as the allowed region, and a mark on each model.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-two-scales-and-parity-may-be-restored-at-the-tev-scale">1. Two scales, and parity may be restored at the TeV scale</h3>
+<p><strong>The idea.</strong> $M_c$ at $10^{10}$–$10^{14}$ GeV and $M_R$ as low as $10^3$ GeV.</p>
+<p><strong>What it would add.</strong> The allowed region for the PS scales, and the reason left-right models are testable.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> The octet constraint narrows $M_R$.</p>
+<h3 id="2-scalar-see-saw-puts-octets-at-math56">2. Scalar see-saw puts octets at $M_R^2/M_c$</h3>
+<p><strong>The idea.</strong> Two scales combine to give an intermediate mass.</p>
+<p><strong>What it would add.</strong> A quantitative constraint that narrows the window, and a pattern that recurs in PS spectra.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-doubly-charged-states-at-the-susy-scale-are-a-collider-target">3. Doubly-charged states at the SUSY scale are a collider target</h3>
+<p><strong>The idea.</strong> $H^{\pm\pm}\to\ell^\pm\ell^\pm$ at reachable masses.</p>
+<p><strong>What it would add.</strong> A sharp PS signature, with a dedicated search channel.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> The mass is model-dependent.</p>
+<h3 id="4-clean-type-i-seesaw-is-automatic-in-ps">4. "Clean" type-I seesaw is automatic in PS</h3>
+<p><strong>The idea.</strong> $N_R$ is in the $\bar{\mathbf4}$, so the seesaw needs nothing added.</p>
+<p><strong>What it would add.</strong> A contrast with the inverse and type-II variants, and an economy argument.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Seesaw from the $\bar{\mathbf4}$: in <code>hep-ph/9602414</code>.</li>
+<li>Left-right phenomenology: in <code>1705.04125</code>, <code>2103.11889</code>.</li>
+<li>Inverse seesaw alternative: in <code>2012.10492</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's most quantitative statement about the PS scales, and the corpus should build its scale table from it.</p>
+<p><strong>The table the corpus needs</strong>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>model</th>
+<th>$M_c$</th>
+<th>$M_R$</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>minimal SUSY PS</td>
+<td>$10^{10}$–$10^{14}$</td>
+<td>$10^3$–$10^{10}$</td>
+<td><code>hep-ph/0302216</code></td>
+</tr>
+<tr>
+<td>brane PS (2002)</td>
+<td>~$10^{12}$–$10^{16}$</td>
+<td>—</td>
+<td><code>hep-ph/0202100</code></td>
+</tr>
+<tr>
+<td>brane PS (2000)</td>
+<td>5–7 TeV (string)</td>
+<td>—</td>
+<td><code>hep-ph/0012255</code></td>
+</tr>
+<tr>
+<td>D6-brane (2011)</td>
+<td>$M_{\rm string}$</td>
+<td>—</td>
+<td><code>1106.5668</code></td>
+</tr>
+<tr>
+<td>heterotic flux PS</td>
+<td>$M_{\rm string}$</td>
+<td>—</td>
+<td><code>hep-th/0601064</code></td>
+</tr>
+<tr>
+<td>TeV leptoquark PS</td>
+<td>—</td>
+<td>few TeV</td>
+<td><code>2103.11889</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>And the corpus should mark which are consistent with the minimal-SUSY window and which are not.</strong> <strong>The TeV-string models (<code>hep-ph/0012255</code>, <code>hep-ph/0303258</code>) are outside it</strong>, <strong>and <code>1210.3697</code>'s leptoquark bound is the reason.</strong></p>
+<p><strong>That single table would be the corpus's most useful contribution to the scale discussion</strong>, <strong>because no paper in the batch assembles it.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

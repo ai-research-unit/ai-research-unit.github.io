@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generalized Three-Family Supersymmetric Pati–Salam Models from Type IIA Intersecting D6-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Generalized Three-Family Supersymmetric Pati-Salam Models from Type IIA Intersecting…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="generalized-three-family-supersymmetric-patisalam-models-from-type-iia-intersecting-d6-branes"><strong>Generalized Three-Family Supersymmetric Pati–Salam Models from Type IIA Intersecting D6-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2511.16565 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tianjun Li, Adeel Mansha, Rui Sun, Lina Wu (as printed on the preprint)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1 (2025)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>41 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Generalized Three-Family Supersymmetric Pati-Salam Models from Type IIA Intersecting D6-Branes - 2511.16565-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Generalized Three-Family Supersymmetric Pati-Salam Models from Type IIA Intersecting D6-Branes - 2511.16565.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Generalized Three-Family Supersymmetric Pati-Salam Models from Type IIA Intersecting D6-Branes - 2511.16565.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It relaxes the three-generation condition and finds that the "complete" landscape was not complete.</p>
+<blockquote>
+<p>"<strong>Generalizing three-family chiral fermion conditions to $I_{ac}=-(3+h)$ and $I_{ac'}=h$, with positive integer $h$</strong>, we extend the landscape of three-family $N=1$ supersymmetric Pati-Salam models in a broader region."</p>
+<p>"<strong>Differing from the former</strong> ... <strong>we do not restrict that the $a$ stack of D6-branes must be parallel to the orientifold image of the $c$-stack along one of the three two-tori.</strong>"</p>
+<p>"In this investigation, without the simple parallel construction, <strong>we find four new classes of supersymmetric Pati-Salam models</strong> that are allowed by the extended three generation condition with $I_{ac}=3$, $I_{ac'}=-6$ and $I_{ac}=-1$, $I_{ac'}=-2$"</p>
+<p>"with the $SU(2)_{L'}$ gauge coupling realized from $SU(2)_{L1}\times SU(2)_{L2}$ symmetry breaking, <strong>the canonical normalization requirement of the gauge kinetic term provides an alternative approach</strong> that can be imposed before the renormalization group equation evolution for $SU(2)_{L'}$ gauge coupling. <strong>This turns out to be an effective mechanism to realize the string-scale gauge coupling relation, especially for the models with large $g_b/g_a$ ratio.</strong>"</p>
+</blockquote>
+<p><strong>Two results: the landscape grows when an assumption is relaxed, and a new mechanism for string-scale unification appears.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-assumption-that-was-hidden">The Assumption That Was Hidden</h3>
+<p><strong>The earlier censuses (<code>2112.09630</code>, <code>2112.09632</code>) assumed $I_{ac}=-3$ and $I_{ac'}=0$</strong> — i.e. <strong>the $a$-stack intersects the $c$-stack three times and its image not at all.</strong> <strong>That gives three generations of $(\mathbf4,\mathbf2,\mathbf1)$ from the $a$–$c$ intersection.</strong></p>
+<p><strong>And they assumed "the $a$ stack of D6-branes must be parallel to the orientifold image of the $c$-stack along one of the three two-tori"</strong> — a simplifying geometric condition that makes the intersection numbers easy to compute.</p>
+<p><strong>This paper relaxes both.</strong> <strong>The general condition is $I_{ac}=-(3+h)$, $I_{ac'}=h$</strong>, which still gives three net generations (because the chiral index is $I_{ac}+I_{ac'}=-3$), <strong>but distributes them differently between the brane and its image.</strong></p>
+<p><strong>And it drops the parallelism assumption</strong>, which allows <strong>genuinely new geometry.</strong></p>
+<p><strong>The corpus should record this as a methodological lesson</strong>: <strong>"complete enumeration" means complete <em>within a set of assumptions</em>, and the assumptions are stated in equations, not in headlines.</strong> <strong>Two papers after the "complete" census (<code>2303.02864</code>, this one) have each found new models.</strong></p>
+<h3 id="the-four-new-classes">The Four New Classes</h3>
+<p>"four new classes ... with $I_{ac}=3$, $I_{ac'}=-6$ and $I_{ac}=-1$, $I_{ac'}=-2$"</p>
+<p><strong>Note the signs and the pattern</strong>: <strong>$I_{ac}=3$, $I_{ac'}=-6$ gives $I_{ac}+I_{ac'}=-3$</strong>, and <strong>$I_{ac}=-1$, $I_{ac'}=-2$ also gives $-3$.</strong> <strong>So the chiral index is preserved and the distribution changes.</strong></p>
+<p><strong>That is the right way to generalise</strong>: <strong>keep the physics (three generations) and vary the realisation.</strong></p>
+<p><strong>And it shows that the "33" was the count for one distribution, not all.</strong> <strong>The corpus should say the number is assumption-dependent.</strong></p>
+<h3 id="the-canonical-normalisation-trick">The Canonical Normalisation Trick</h3>
+<p>"the <strong>canonical normalization requirement of the gauge kinetic term</strong> provides an alternative approach that can be imposed <strong>before the renormalization group equation evolution</strong> for $SU(2)_{L'}$ gauge coupling"</p>
+<p><strong>In these models $SU(2)_L$ sometimes arises from $SU(2)_{L1}\times SU(2)_{L2}$ broken to the diagonal.</strong> <strong>The diagonal coupling is then $1/g_L^2=1/g_{L1}^2+1/g_{L2}^2$</strong>, and <strong>if $g_{L1}\neq g_{L2}$ the tree-level gauge kinetic term is not canonical.</strong></p>
+<p><strong>The standard procedure is to run the RGEs and then check.</strong> <strong>This paper imposes the canonical normalisation <em>first</em></strong>, which is equivalent to a field redefinition, and finds that <strong>the resulting relation is easier to satisfy.</strong></p>
+<p><strong>"especially for the models with large $g_b/g_a$ ratio"</strong> — <strong>so the trick works exactly where the standard approach failed</strong>: the models with a large hierarchy between the $b$ and $a$ couplings.</p>
+<p><strong>The corpus should record it as a technical device</strong>, and note that <strong>it is a normalisation choice, not new physics</strong> — but a choice that changes which models "unify".</p>
+<p><strong>That is important</strong>: <strong>the unification criterion is partly a convention.</strong> <strong>The corpus should be careful with any claim that a model "unifies at the string scale".</strong></p>
+<h3 id="why-this-matters-for-the-clusters-story">Why This Matters for the Cluster's Story</h3>
+<p><strong>The cluster's narrative was: 33 classes, all enumerated, one unifies.</strong>
+<strong>Now: 33 was incomplete; four more classes exist; and even the unification criterion depends on normalisation.</strong></p>
+<p><strong>The corpus should present the cluster as an <em>ongoing</em> enumeration</strong> rather than a finished census. <strong>The honest statement is: the landscape has at least 37 classes and more assumptions remain to be relaxed.</strong></p>
+<h3 id="the-rest-of-the-abstract">The Rest of the Abstract</h3>
+<p><strong>The paper also discusses the RGE evolution and the string-scale relations for the new models</strong>, along the lines of <code>2212.05875</code>. <strong>The technical content is in those sections and the corpus does not need it in detail</strong> — <strong>the structural point is that generalising the generation condition produces new models that also need the unification machinery.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-complete-enumeration-is-complete-only-within-stated-assumptions">1. "Complete enumeration" is complete only within stated assumptions</h3>
+<p><strong>The idea.</strong> The 33 classes assumed $I_{ac}=-3$, $I_{ac'}=0$ and a parallelism condition.</p>
+<p><strong>What it would add.</strong> A crucial caveat on every census claim in the cluster. <strong>The corpus should always state the assumptions.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-generalising-the-generation-condition-keeps-the-physics-and-changes-the-realisation">2. Generalising the generation condition keeps the physics and changes the realisation</h3>
+<p><strong>The idea.</strong> $I_{ac}+I_{ac'}=-3$ is preserved; the split varies.</p>
+<p><strong>What it would add.</strong> A method for extending the landscape systematically, and four new classes.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-unification-criterion-depends-on-normalisation-convention">3. The unification criterion depends on normalisation convention</h3>
+<p><strong>The idea.</strong> Imposing canonical normalisation before running changes which models unify.</p>
+<p><strong>What it would add.</strong> A caution about "unifies at the string scale" claims. <strong>The corpus should qualify them.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's unification section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-the-diagonal-math47-coupling-is-a-sum-of-inverses">4. The diagonal $SU(2)$ coupling is a sum of inverses</h3>
+<p><strong>The idea.</strong> $1/g_L^2=1/g_{L1}^2+1/g_{L2}^2$, and the normalisation of the diagonal field matters.</p>
+<p><strong>What it would add.</strong> The technical content behind the trick, for readers who want it.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The 33-class census: in <code>2112.09630</code>, <code>2112.09632</code>.</li>
+<li>Hidden-sector completion: in <code>2303.02864</code>.</li>
+<li>String-scale unification machinery: in <code>2212.05875</code>.</li>
+<li>The four-stack extension: in <code>2512.09057</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and <code>2303.02864</code> together show that the D6-brane census is a moving target, and the corpus should present it that way.</p>
+<p><strong>2021</strong>: 33 classes, complete.
+<strong>2023</strong>: hidden sectors were not scanned; the count is complete only for fixed hidden content.
+<strong>2025 (here)</strong>: generalised generation conditions; four more classes.
+<strong>2025 (<code>2512.09057</code>)</strong>: a fourth stack; 28 more classes.</p>
+<p><strong>So four papers, four extensions, and the "complete" landscape has grown from 33 to at least 65.</strong> <strong>The corpus's string section should say this plainly</strong>, because a reader who takes "complete" at face value will misjudge the field.</p>
+<p><strong>And the deeper lesson is about what a census is</strong>: <strong>a count of solutions to a <em>stated</em> system of equations.</strong> <strong>The system is a modelling choice, and modelling choices are revisable.</strong> <strong>That is not a criticism of the cluster — it is how string model building works — but the corpus should not present any of its numbers as final.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

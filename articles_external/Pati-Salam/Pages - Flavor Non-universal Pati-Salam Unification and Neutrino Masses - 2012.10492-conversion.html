@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavor Non-universal Pati–Salam Unification and Neutrino Masses — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Pages - Flavor Non-universal Pati-Salam Unification and Neutrino Masses - 2012.10492.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="flavor-non-universal-patisalam-unification-and-neutrino-masses"><strong>Flavor Non-universal Pati–Salam Unification and Neutrino Masses</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2012.10492 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Javier Fuentes-Martín, Gino Isidori, Julie Pagès, Ben A. Stefanek</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 18 December 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, MITP/20-083, ZU-TH-56/20)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>20 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Pages - Flavor Non-universal Pati-Salam Unification and Neutrino Masses - 2012.10492-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Pages - Flavor Non-universal Pati-Salam Unification and Neutrino Masses - 2012.10492.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Pages - Flavor Non-universal Pati-Salam Unification and Neutrino Masses - 2012.10492.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its proceedings version is <code>2109.13150</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It makes the gauge interaction itself flavour non-universal, and gets the $B$ anomalies and the mass hierarchies from one structure.</p>
+<blockquote>
+<p>"We analyze the neutrino mass spectrum and discuss <strong>the extra-dimensional interpretation of a three-site Pati-Salam model</strong> which</p>
+<p>"<strong>i) unifies all families of quark and leptons, ii) provides a natural description of the Standard Model Yukawa couplings, iii) could account for the recent $B$-physics anomalies.</strong>"</p>
+<p>"The key feature of the model is <strong>a breaking of the Pati-Salam and electroweak gauge symmetries localized on opposite sites, communicated to the other sites in an attenuated manner via nearest-neighbor interactions.</strong>"</p>
+<p>"gauge-singlet fermions localized on each site, receiving hierarchical Majorana masses, can allow the implementation of <strong>an inverse seesaw mechanism</strong> leading to <strong>light anarchic neutrino masses consistent with data.</strong>"</p>
+<p>"The continuum limit of this three-site setup has a natural interpretation in terms of <strong>a warped extra dimension with three defects</strong>, where the required exponential hierarchies can be achieved from $O(1)$ differences in the bulk field masses."</p>
+</blockquote>
+<p><strong>The idea is unusual and important</strong>: <strong>the gauge bosons themselves are family-dependent</strong>, because <strong>each family lives on a different site.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="three-sites-two-breakings">Three Sites, Two Breakings</h3>
+<p><strong>The model is a "deconstructed" extra dimension with three lattice sites.</strong> <strong>The PS group is broken at one end, the electroweak at the other</strong>, **and <strong>fields propagate between sites through nearest-neighbour (link) interactions.</strong></p>
+<p><strong>The physics</strong>: <strong>a field localised on site $i$ couples only to the gauge bosons of site $i$</strong>, <strong>and its couplings to the other sites' gauge bosons are attenuated by the link mixings.</strong></p>
+<p><strong>So the same gauge symmetry acts differently on different families</strong> — <strong>which is why the title says "flavor non-universal".</strong></p>
+<p><strong>And the pattern is exactly $U(2)^5$</strong>: <strong>the first two families sit on one site (or in one region) and share a $U(2)$ structure; the third sits elsewhere.</strong> <strong>That is the observed Yukawa structure, and the model derives it from the geometry.</strong></p>
+<p><strong>The corpus should record this as one of the batch's two genuinely distinctive flavour mechanisms</strong>, alongside <code>hep-ph/0409098</code>'s $D_4$ from fixed points: <strong>both put families at different places and get the symmetry from the geometry.</strong></p>
+<p><strong>And this one is <em>consecutive</em> with observation</strong>: <strong>the $U(2)^5$ pattern is measured, not assumed.</strong></p>
+<h3 id="the-math9-anomalies">The $B$ Anomalies</h3>
+<p>"could account for the recent $B$-physics anomalies"</p>
+<p><strong>The $B$ anomalies (2020 vintage: $R_K$, $R_{K^*}$, $P_5'$)</strong> pointed to <strong>a vector leptoquark $U_1$</strong> with <strong>couplings to the second and third generations</strong> and <strong>$U(2)^5$-compatible structure.</strong></p>
+<p><strong>A Pati–Salam model contains $U_1$-like gauge bosons</strong> — <strong>the leptoquarks of $SU(4)$</strong> — <strong>and here they are flavour non-universal</strong>, <strong>so the anomalous couplings come out with the right pattern.</strong></p>
+<p><strong>The corpus should record the logic</strong>: <strong>Pati–Salam's leptoquarks are a liability (proton decay, rare decays) and an asset (they can explain $B$ anomalies).</strong> <strong>The same particle does both.</strong></p>
+<p><strong>And the corpus should note the date</strong>: <strong>2020, when the anomalies were strong.</strong> *<em>The later data (`R_K$/$R_{K^<em>}$ in 2022) shifted.</em></em> <strong>The corpus should present the model as addressing a then-current anomaly, not a confirmed one.</strong></p>
+<h3 id="inverse-seesaw-and-anarchic-neutrinos">Inverse Seesaw and Anarchic Neutrinos</h3>
+<p><strong>"gauge-singlet fermions localized on each site, receiving hierarchical Majorana masses, can allow the implementation of an inverse seesaw"</strong></p>
+<p><strong>The inverse seesaw</strong> adds <strong>two singlet fermions per generation</strong> and a small lepton-number-violating mass $\mu$, giving
+$$m_\nu\sim\frac{m_D^2}{\mu}\frac{\mu}{M}\ \text{structure},$$
+<strong>so the light masses are suppressed by $\mu/M$ rather than by $m_D/M_R$.</strong> <strong>That allows $M_R$ at the TeV scale.</strong></p>
+<p><strong>And "anarchic"</strong> means <strong>the light neutrino mass matrix has $O(1)$ entries</strong> — <strong>no texture, no symmetry</strong> — <strong>which is consistent with the observed large PMNS mixing and the absence of a pattern.</strong></p>
+<p><strong>That is a significant claim</strong>: <strong>the model's neutrino sector needs no flavour structure at all.</strong> <strong>And it is a testable one</strong>: <strong>the proceedings (<code>2109.13150</code>) says "a prediction of this model is PMNS unitarity violation"</strong>, <strong>because the inverse seesaw's extra singlets mix into the light states.</strong></p>
+<p><strong>The corpus should record the prediction</strong>: <strong>PMNS non-unitarity at the $10^{-3}$–$10^{-4}$ level</strong>, <strong>testable in the next generation of oscillation and beta-decay experiments.</strong> <strong>That is a sharp, falsifiable statement, and the batch has few.</strong></p>
+<h3 id="the-warped-interpretation">The Warped Interpretation</h3>
+<p>"The continuum limit ... <strong>a warped extra dimension with three defects</strong>, where the required exponential hierarchies can be achieved from $O(1)$ differences in the bulk field masses"</p>
+<p><strong>So the three-site model is a discretisation of a warped 5d geometry with three branes</strong>, <strong>and the hierarchies are exponential in the bulk masses</strong> — <strong>the standard Randall–Sundrum mechanism for generating hierarchies.</strong></p>
+<p><strong>The corpus should note the structure</strong>: <strong>the exponential hierarchies of the fermion masses come from wavefunction overlaps in a warped dimension</strong>, <strong>which is the same mechanism as <code>hep-ph/0409098</code>'s localisation, in a different geometry.</strong></p>
+<p><strong>So the batch has two localisation mechanisms</strong>: <strong>orbifold fixed points (flat) and warped defects.</strong> <strong>Both give the hierarchical Yukawas from geometry.</strong> <strong>The corpus should present them together.</strong></p>
+<h3 id="why-this-paper-matters-for-the-corpuss-flavour-chapter">Why This Paper Matters for the Corpus's Flavour Chapter</h3>
+<p><strong>The corpus's flavour chapter has been a list of imposed symmetries.</strong> <strong>This paper and <code>hep-ph/0409098</code> supply the <em>origin</em>: geometry.</strong></p>
+<p><strong>And this paper goes further</strong>, because <strong>the geometry also explains the anomalies</strong>: <strong>the $U(2)^5$ structure that fits the Yukawas is the same structure that fits the $B$ data.</strong></p>
+<p><strong>That is the corpus's strongest flavour argument, and it should be presented as such</strong>: <strong>a single geometric structure accounts for the mass hierarchies, the mixing, and a set of anomalies.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-gauge-interactions-can-be-family-non-universal">1. Gauge interactions can be family non-universal</h3>
+<p><strong>The idea.</strong> Families live on different sites; each couples fully only to its own site's gauge bosons.</p>
+<p><strong>What it would add.</strong> A flavour mechanism with a UV completion, and an alternative to family symmetries.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Flavour-changing gauge couplings are constrained.</p>
+<h3 id="2-math32-from-geometry-and-the-math33-anomalies-from-the-same-structure">2. $U(2)^5$ from geometry, and the $B$ anomalies from the same structure</h3>
+<p><strong>The idea.</strong> One geometric pattern fits the Yukawas and the anomalous $B$ couplings.</p>
+<p><strong>What it would add.</strong> The corpus's strongest argument that Pati–Salam's flavour structure is not arbitrary.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> The anomalies have since weakened.</p>
+<h3 id="3-inverse-seesaw-with-anarchic-neutrinos-predicts-pmns-non-unitarity">3. Inverse seesaw with anarchic neutrinos predicts PMNS non-unitarity</h3>
+<p><strong>The idea.</strong> TeV-scale singlets mix into the light states; unitarity violation at $10^{-3}$–$10^{-4}$.</p>
+<p><strong>What it would add.</strong> A sharp, falsifiable prediction — rare in this batch.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> The effect is below current sensitivity.</p>
+<h3 id="4-two-localisation-mechanisms-orbifold-fixed-points-and-warped-defects">4. Two localisation mechanisms: orbifold fixed points and warped defects</h3>
+<p><strong>The idea.</strong> <code>hep-ph/0409098</code> localises on a flat orbifold; this paper on a warped dimension.</p>
+<p><strong>What it would add.</strong> A unified view of where the flavour structure comes from.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Imposed family symmetries: in <code>1406.7005</code>, <code>1605.02072</code>, <code>1111.3952</code>.</li>
+<li>The $Q_4$/$U(2)$ connection: in <code>2404.06520</code>.</li>
+<li>Localisation on fixed points: in <code>hep-ph/0409098</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's most sophisticated flavour model, and it is the one the corpus should put first in the flavour chapter.</p>
+<p><strong>The reason</strong>: <strong>it does not impose the flavour structure; it localises it.</strong> <strong>And the localisation reproduces the observed $U(2)^5$ pattern, which the corpus's other flavour papers take as an input to be justified.</strong></p>
+<p><strong>And it does something else the others do not</strong>: <strong>it explains a set of anomalies with the same structure.</strong> <strong>That is the strongest form of the argument — one geometry, two successes.</strong></p>
+<p><strong>The corpus should say so, and should also say the limitation</strong>: <strong>the $B$ anomalies are no longer significant, so the second success has faded.</strong> <strong>What remains is the first: a geometric origin for the Yukawa hierarchies and mixing.</strong></p>
+<p><strong>And that remains valuable</strong>, because <strong>it is the only explanation in the batch of <em>why</em> the Yukawas have the $U(2)^5$ shape, as opposed to <em>that</em> they do.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

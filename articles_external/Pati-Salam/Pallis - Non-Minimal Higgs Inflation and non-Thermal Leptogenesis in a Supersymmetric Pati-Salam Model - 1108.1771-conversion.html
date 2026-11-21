@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Minimal Higgs Inflation and Non-Thermal Leptogenesis in a Supersymmetric Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Pallis - Non-Minimal Higgs Inflation and non-Thermal Leptogenesis in a Supersymmetric…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="non-minimal-higgs-inflation-and-non-thermal-leptogenesis-in-a-supersymmetric-patisalam-model"><strong>Non-Minimal Higgs Inflation and Non-Thermal Leptogenesis in a Supersymmetric Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1108.1771 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>C. Pallis, N. Toumbas</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 23 November 2011</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, University of Cyprus)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>30 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Pallis - Non-Minimal Higgs Inflation and non-Thermal Leptogenesis in a Supersymmetric Pati-Salam Model - 1108.1771-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Pallis - Non-Minimal Higgs Inflation and non-Thermal Leptogenesis in a Supersymmetric Pati-Salam Model - 1108.1771.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Pallis - Non-Minimal Higgs Inflation and non-Thermal Leptogenesis in a Supersymmetric Pati-Salam Model - 1108.1771.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its sequel is <code>1207.3730</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It makes the PS-breaking Higgs the inflaton, with a non-minimal coupling to gravity.</p>
+<blockquote>
+<p>"We consider <strong>a supersymmetric GUT based on $G_{PS}=SU(4)_C\times SU(2)_L\times SU(2)_R$</strong>, which incorporates <strong>non-minimal chaotic inflation, driven by a quartic potential associated with [the] breaking of $G_{PS}$.</strong>"</p>
+<p>"The inflationary model <strong>relies on renormalizable superpotential terms and does not lead to overproduction of magnetic monopoles.</strong> It is <strong>largely independent of the one-loop radiative corrections</strong> and can become consistent with the inflationary observables, <strong>with the symmetry breaking scale of $G_{PS}$ assuming its SUSY value.</strong>"</p>
+<p>"Within our model, <strong>the strong CP and the $\mu$ problems of the minimal SUSY standard model can be resolved via a Peccei-Quinn symmetry.</strong>"</p>
+<p>"baryogenesis occurs via <strong>non-thermal leptogenesis</strong> realized by the out-of-equilibrium decay of [the right-handed neutrinos], which are produced by the inflaton's decay. We consider <strong>two versions</strong>, assuming that the inflaton can decay to the lightest or to the next-to-lightest right-handed neutrino."</p>
+<p>"Both scenaria can become compatible with the constraints arising from the baryon asymmetry, <strong>the gravitino limit on the reheating temperature and the upper bound on the light neutrino masses, provided that the gravitino is somehow heavy.</strong>"</p>
+</blockquote>
+<p><strong>The last clause is the honest caveat, and the corpus should keep it.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="higgs-inflation-with-a-non-minimal-coupling">Higgs Inflation With a Non-Minimal Coupling</h3>
+<p><strong>The idea</strong>: <strong>the inflaton is the PS-breaking Higgs</strong>, <strong>and it couples to gravity non-minimally</strong>:
+$$S\supset\int d^4x\sqrt{-g}\left[\frac{M_P^2+\xi|\Phi|^2}{2}R-|\partial\Phi|^2-V(\Phi)\right].$$</p>
+<p><strong>The non-minimal coupling $\xi$ flattens the potential at large field values</strong>, <strong>so a quartic potential $V=\lambda|\Phi|^4$ becomes a plateau</strong>, <strong>and slow-roll inflation works.</strong></p>
+<p><strong>That is Higgs inflation</strong> (Bezrukov–Shaposhnikov), <strong>applied to the Pati–Salam Higgs.</strong> <strong>And $\xi\sim10^4$ is needed for the observed amplitude.</strong></p>
+<p><strong>The corpus should record the mechanism</strong>, because <strong>it is the batch's most economical inflation</strong>: <strong>no new field, no new scale — the GUT Higgs is the inflaton.</strong></p>
+<p><strong>And note the tension</strong>: <strong>a large $\xi$ is technically natural but leads to a low cutoff</strong> ($\Lambda\sim M_P/\xi$), <strong>so the theory's UV completion matters.</strong> <strong>The corpus should flag the unitarity issue</strong>, because <strong>it is Higgs inflation's standard problem and the paper does not resolve it.</strong></p>
+<h3 id="monopoles">Monopoles</h3>
+<p>"<strong>does not lead to overproduction of magnetic monopoles</strong>"</p>
+<p><strong>Why</strong>: <strong>the inflationary potential is built from the PS-breaking Higgs's own quartic</strong>, <strong>so inflation happens <em>during</em> the PS breaking</strong>, <strong>and the monopoles formed at the end are diluted by the remaining $e$-folds.</strong></p>
+<p><strong>So the ordering is</strong>: <strong>PS breaking and inflation simultaneous</strong>, <strong>monopoles diluted</strong>, <strong>strings (if any) diluted too.</strong></p>
+<p><strong>The corpus should note the consequence</strong>: <strong>this model cannot produce a string network after inflation</strong>, <strong>so it cannot explain <code>2308.13248</code>'s PTA signal.</strong> <strong>The same incompatibility as <code>2601.14580</code>, from a different direction.</strong></p>
+<h3 id="the-pecceiquinn-solution">The Peccei–Quinn Solution</h3>
+<p>"<strong>the strong CP and the $\mu$ problems can be resolved via a Peccei-Quinn symmetry</strong>"</p>
+<p><strong>A PQ symmetry does two jobs</strong>: <strong>it makes $\theta_{\rm QCD}$ dynamical (solving strong CP) and it forbids the $\mu$ term, generating it from the PQ-breaking VEV.</strong></p>
+<p><strong>And the axion is a dark matter candidate</strong> — <strong>which the corpus's dark-matter section should note</strong>, <strong>because it is a PS-adjacent dark matter candidate distinct from the neutralino of <code>2606.29811</code>.</strong></p>
+<p><strong>The corpus should record the economy</strong>: <strong>one symmetry, two problems, one new particle (the axion).</strong> <strong>That is the kind of multiple-duty mechanism the corpus's "why this model" argument likes.</strong></p>
+<h3 id="the-two-leptogenesis-versions">The Two Leptogenesis Versions</h3>
+<p><strong>Version 1</strong>: <strong>inflaton decays to the lightest $N_R$.</strong> <strong>Version 2</strong>: <strong>to the next-to-lightest.</strong></p>
+<p><strong>The difference matters because the CP asymmetry is larger for $N_2$</strong> (it can interfere with $N_1$'s contributions), <strong>so version 2 is more efficient but needs $M_{N_2}$ above the inflaton's mass.</strong></p>
+<p><strong>And both need "the gravitino somehow heavy"</strong>, <strong>because</strong>:
+- <strong>non-thermal leptogenesis needs a high enough $T_{\rm RH}$</strong> (or a heavy enough $M_{N}$),
+- <strong>and a light gravitino is overproduced at high $T_{\rm RH}$.</strong></p>
+<p><strong>So the scenario forces a heavy gravitino</strong>, <strong>which means gravity mediation and a high SUSY scale</strong>, <strong>which the corpus should note</strong> — <strong>it is a strong statement about the soft sector from cosmology alone.</strong></p>
+<h3 id="the-relation-to-12073730">The Relation to <code>1207.3730</code></h3>
+<p><strong>The sequel</strong> (<code>1207.3730</code>) <strong>implements the same mechanism with "a quartic potential ... in the presence of a non-minimal coupling"</strong>, <strong>so it is the refined version.</strong> <strong>The corpus should treat <code>1108.1771</code> as the first formulation and <code>1207.3730</code> as the current one.</strong></p>
+<h3 id="why-this-matters-for-the-corpuss-cosmology">Why This Matters for the Corpus's Cosmology</h3>
+<p><strong>The batch's cosmology papers are fragmented</strong> (my earlier note). <strong>This one is one of the few that does inflation and baryogenesis together</strong>, <strong>and it does so with the GUT Higgs.</strong></p>
+<p><strong>And it states its costs plainly</strong>: <strong>a large $\xi$ (cutoff), a heavy gravitino, and no strings.</strong></p>
+<p><strong>That is a fair accounting, and the corpus should present it as a <em>scenario with costs</em>, not a success.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-ps-breaking-higgs-can-be-the-inflaton">1. The PS-breaking Higgs can be the inflaton</h3>
+<p><strong>The idea.</strong> Non-minimal coupling flattens the quartic; no new field is needed.</p>
+<p><strong>What it would add.</strong> The batch's most economical inflation, and a reason the GUT scale and the inflationary scale coincide.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> The large-$\xi$ unitarity problem.</p>
+<h3 id="2-simultaneous-breaking-and-inflation-dilutes-monopoles-but-also-strings">2. Simultaneous breaking and inflation dilutes monopoles but also strings</h3>
+<p><strong>The idea.</strong> Inflation during the breaking removes both defects.</p>
+<p><strong>What it would add.</strong> An ordering that forbids the PTA string scenario.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-a-pecceiquinn-symmetry-solves-strong-cp-and-the-math23-problem">3. A Peccei–Quinn symmetry solves strong CP and the $\mu$ problem</h3>
+<p><strong>The idea.</strong> One symmetry, two problems, and an axion.</p>
+<p><strong>What it would add.</strong> A multi-duty mechanism, and an alternative dark matter candidate.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY and dark-matter sections.</p>
+<p><strong>What stands in the way.</strong> Axion bounds.</p>
+<h3 id="4-non-thermal-leptogenesis-forces-a-heavy-gravitino">4. Non-thermal leptogenesis forces a heavy gravitino</h3>
+<p><strong>The idea.</strong> The required $T_{\rm RH}$ and $M_N$ need a heavy gravitino.</p>
+<p><strong>What it would add.</strong> A cosmological constraint on the soft sector — rare and useful.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> The bound is model-dependent.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Inflation from the GUT Higgs: partly in <code>hep-ph/0505221</code>.</li>
+<li>Non-thermal leptogenesis: in <code>2308.13248</code>.</li>
+<li>Neutralino dark matter: in <code>2603.24152</code>, <code>2606.29811</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and <code>1207.3730</code> are the batch's clearest examples of "the GUT Higgs does everything", and the corpus should record the pattern.</p>
+<p><strong>The PS-breaking Higgs</strong>: <strong>breaks the symmetry, inflates, and (through its couplings) seeds the right-handed neutrino production.</strong> <strong>Three jobs, one field.</strong></p>
+<p><strong>That is the opposite of the string constructions</strong>, where <strong>the breaking, the inflation, and the leptogenesis each need separate sectors</strong> (flux, moduli, hidden sector).</p>
+<p><strong>And the corpus should note the trade</strong>: <strong>the field-theory economy comes at the price of a large non-minimal coupling and a heavy gravitino; the string constructions avoid those but need more ingredients.</strong></p>
+<p><strong>That is a fair comparison, and it is the kind the corpus should make</strong>: <strong>not "which is better" but "what does each cost".</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fermion Masses and Mixings, Leptogenesis and Baryon Number Violation in Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Saad - Fermion Masses and Mixings, Leptogenesis and Baryon Number Violation in Pati-Salam…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="fermion-masses-and-mixings-leptogenesis-and-baryon-number-violation-in-patisalam-model"><strong>Fermion Masses and Mixings, Leptogenesis and Baryon Number Violation in Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1712.04880 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Shaikh Saad</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 10 May 2019</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Oklahoma State)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>35 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Saad - Fermion Masses and Mixings, Leptogenesis and Baryon Number Violation in Pati-Salam Model - 1712.04880-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Saad - Fermion Masses and Mixings, Leptogenesis and Baryon Number Violation in Pati-Salam Model - 1712.04880.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Saad - Fermion Masses and Mixings, Leptogenesis and Baryon Number Violation in Pati-Salam Model - 1712.04880.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It adds a Peccei–Quinn symmetry to Pati–Salam and gets the axion, the fermion masses, leptogenesis, and observable baryon violation from one model.</p>
+<blockquote>
+<p>"a predictive model based on <strong>a partially unified theory possessing the gauge symmetry of the Pati-Salam group, $SU(2)_L\times SU(2)_R\times SU(4)_C$ supplemented by a global Peccei-Quinn symmetry, $U(1)_{PQ}$.</strong>"</p>
+<p>"A <strong>comprehensive analysis of the Higgs potential</strong> is carried out in a <strong>minimal set-up.</strong>"</p>
+<p>"The assumed Peccei-Quinn symmetry along with <strong>solving the strong CP problem, can provide axion as the dark matter candidate.</strong>"</p>
+<p>"This minimal set-up with <strong>limited number of Yukawa parameters can successfully incorporate the hierarchies in the charged fermion masses and mixings.</strong>"</p>
+<p>"The <strong>automatic existence of the heavy Majorana neutrinos</strong> generate the extremely small light neutrino masses through the seesaw mechanism, which is <strong>also responsible for producing the observed cosmological matter-antimatter asymmetry</strong>"</p>
+<p>"processes mediated by <strong>the scalar diquarks and leptoquarks</strong> ... are found to be, $n,p\to\ell+m$, $\ell^c+m$ ($m=$ meson, $\ell=$ lepton, $\ell^c=$ antilepton) and $n,p\to\ell+\ell^c+\ell^c$. <strong>For some choice of the parameters of the theory, these decay rates can be within the observable [range]</strong>"</p>
+</blockquote>
+<p><strong>That last point is the surprising one</strong>: <strong>observable baryon-number violation</strong>, which the usual PS construction forbids.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-pq-extension">The PQ Extension</h3>
+<p><strong>Pati–Salam plus a global $U(1)_{PQ}$</strong>, <strong>with the PQ charges assigned to the fermions and scalars so that the strong CP angle is dynamical.</strong></p>
+<p><strong>And the axion is the dark matter.</strong> <strong>That makes this the batch's second axion paper</strong> (after <code>1108.1771</code>), <strong>and the more complete one</strong>, because <strong>it does the Higgs potential and the Yukawa fit.</strong></p>
+<p><strong>The corpus should note the pattern</strong>: <strong>PQ keeps appearing in PS models</strong>, <strong>because PS has a natural place for it</strong> — <strong>the $\bar{\mathbf4}$'s components and the PS Higgs carry the charges, and the PQ-breaking can be tied to the PS breaking.</strong></p>
+<p><strong>And the axion's mass and coupling are fixed by the PQ scale</strong>, <strong>which the corpus should note is a free parameter</strong> (between $10^9$ and $10^{12}$ GeV for the usual window).</p>
+<h3 id="the-higgs-potential-analysis">The Higgs Potential Analysis</h3>
+<p>"<strong>A comprehensive analysis of the Higgs potential is carried out in a minimal set-up.</strong>"</p>
+<p><strong>That is the paper's technical core</strong>, and <strong>the corpus should value it</strong>, because <strong>the PS Higgs potential is rarely analysed completely</strong>: <strong>three or four multiplets, all the cross-quartics, and the vacuum alignment.</strong></p>
+<p><strong>The output is a set of vacuum-alignment conditions</strong>, <strong>which determine whether the breaking pattern is the desired one.</strong> <strong>That is the kind of check most papers skip.</strong></p>
+<p><strong>The corpus should record it as the batch's most careful breaking-sector analysis</strong>, <strong>and note that <code>hep-ph/9602414</code> and <code>hep-ph/9811469</code> are the other two.</strong></p>
+<h3 id="the-yukawa-economy">The Yukawa Economy</h3>
+<p>"<strong>limited number of Yukawa parameters</strong> can successfully incorporate <strong>the hierarchies in the charged fermion masses and mixings</strong>"</p>
+<p><strong>"Limited"</strong> — <strong>the paper claims a small number of Yukawa couplings fits the masses and mixings.</strong> <strong>That is a genuine success</strong>, and <strong>it is what the corpus's flavour section needs: a PS model that fits without a family symmetry.</strong></p>
+<p><strong>The corpus should record the approach</strong>: <strong>the mass hierarchies come from the <em>Higgs sector's</em> structure (which VEVs couple to which operators), not from a flavour symmetry.</strong></p>
+<p><strong>So the batch now has three flavour strategies:</strong>
+1. <strong>Family symmetry imposed</strong> (<code>1406.7005</code>, <code>1111.3952</code>, <code>1605.02072</code>).
+2. <strong>Localisation</strong> (<code>hep-ph/0409098</code>, <code>2012.10492</code>).
+3. <strong>Higgs-sector structure with few parameters</strong> (here).</p>
+<p><strong>That is a useful taxonomy, and the corpus should present it.</strong></p>
+<h3 id="observable-baryon-violation">Observable Baryon Violation</h3>
+<p>"processes mediated by the <strong>scalar diquarks and leptoquarks</strong> ... $n,p\to\ell+m$, $\ell^c+m$ and $n,p\to\ell+\ell^c+\ell^c$. <strong>For some choice of the parameters, these decay rates can be within the observable [range]</strong>"</p>
+<p><strong>This is the paper's most striking claim.</strong> <strong>Pati–Salam's leptoquarks mediate proton decay</strong>, <strong>and the usual assumption is that the rate must be suppressed.</strong></p>
+<p><strong>The paper says the rate can be <em>observable</em></strong> — <strong>at the level of existing or near-future experiments</strong> — <strong>for some parameter choices.</strong></p>
+<p><strong>That is a significant and unusual statement</strong>, and <strong>the corpus should record it carefully</strong>: <strong>it means the model does not assume the PS scale is superheavy</strong>, <strong>and it predicts proton decay in reach.</strong></p>
+<p><strong>And note the channels</strong>: <strong>$n,p\to\ell+m$ (two-body, the classic), $n,p\to\ell+\ell^c+\ell^c$ (three-body, with a dilepton).</strong> <strong>The second is the more distinctive.</strong></p>
+<p><strong>The corpus should compare with <code>2502.15614</code>'s $Z_3$ symmetry</strong>: <strong>that model <em>forbids</em> the dangerous operators; this one <em>allows</em> them and predicts a rate.</strong> <strong>Two opposite strategies for the same problem.</strong></p>
+<h3 id="the-automatic-seesaw">The Automatic Seesaw</h3>
+<p>"the <strong>automatic existence</strong> of the heavy Majorana neutrinos"</p>
+<p><strong>Same point as <code>hep-ph/9602414</code></strong>: <strong>$N_R$ is in the $\bar{\mathbf4}$</strong>, <strong>so the seesaw needs nothing added.</strong></p>
+<p><strong>And here the same $N_R$ does leptogenesis</strong>, <strong>so one field, two jobs.</strong></p>
+<h3 id="why-this-paper-matters">Why This Paper Matters</h3>
+<p><strong>It is the batch's most complete field-theory PS model</strong>: <strong>Higgs potential, Yukawa fit, neutrino masses, leptogenesis, axion dark matter, and proton decay.</strong></p>
+<p><strong>And its predictions are sharp</strong>: <strong>the axion, the proton decay channels, and the leptogenesis scale.</strong></p>
+<p><strong>The corpus should present it as a benchmark</strong>, alongside <code>2603.24152</code>/<code>2606.29811</code> for the SUSY branch and <code>2012.10492</code> for the flavour branch.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-pq-plus-ps-gives-the-axion-and-solves-strong-cp">1. PQ plus PS gives the axion and solves strong CP</h3>
+<p><strong>The idea.</strong> The PQ symmetry is natural in PS, and the axion is dark matter.</p>
+<p><strong>What it would add.</strong> A dark-matter candidate distinct from the neutralino, and a solution to strong CP.</p>
+<p><strong>Where it lands.</strong> The Pati– Salam article's dark-matter section.</p>
+<p><strong>What stands in the way.</strong> The axion window and the PQ scale.</p>
+<h3 id="2-a-complete-higgs-potential-and-vacuum-alignment-analysis">2. A complete Higgs-potential and vacuum-alignment analysis</h3>
+<p><strong>The idea.</strong> All the multiplets and cross-quartics, checked.</p>
+<p><strong>What it would add.</strong> The batch's most careful breaking-sector analysis, and a model for the corpus's own checks.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's breaking section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-few-parameter-yukawa-fits-without-a-family-symmetry">3. Few-parameter Yukawa fits without a family symmetry</h3>
+<p><strong>The idea.</strong> The hierarchies come from the Higgs sector's structure.</p>
+<p><strong>What it would add.</strong> A third flavour strategy, competing with symmetries and localisation.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> The fit's quality needs checking.</p>
+<h3 id="4-baryon-violation-can-be-observable-not-just-suppressed">4. Baryon violation can be observable, not just suppressed</h3>
+<p><strong>The idea.</strong> Scalar diquarks and leptoquarks give proton decay in reach for some parameters.</p>
+<p><strong>What it would add.</strong> A falsifiable prediction, and the opposite strategy to <code>2502.15614</code>.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's proton-decay section.</p>
+<p><strong>What stands in the way.</strong> Current bounds are strong.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Seesaw from the $\bar{\mathbf4}$: in <code>hep-ph/9602414</code>.</li>
+<li>PQ in PS: in <code>1108.1771</code>.</li>
+<li>Proton-decay suppression by symmetry: in <code>2502.15614</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's best example of a PS model that <em>predicts</em> rather than <em>accommodates</em>, and the corpus should say why.</p>
+<p><strong>It predicts</strong>: <strong>an axion</strong> (with a mass and coupling), <strong>a proton-decay rate</strong> (possibly observable), <strong>a leptogenesis scale</strong>, <strong>and the Yukawa pattern from few parameters.</strong></p>
+<p><strong>And it does not tune the PS scale to be superheavy</strong>, <strong>which is what makes the proton-decay prediction possible.</strong></p>
+<p><strong>That is a genuinely different stance from the rest of the field-theory branch</strong>, where <strong>the PS scale is pushed up until the proton decays away.</strong></p>
+<p><strong>The corpus should present the trade plainly</strong>: <strong>a high PS scale hides the proton decay and makes the model untestable; a lower one predicts it and risks the bounds.</strong> <strong><code>1712.04880</code> takes the second option, and that is braver.</strong></p>
+<p><strong>And the corpus should note which experiments decide</strong>: <strong>Hyper-Kamiokande and DUNE for $p\to e^+\pi^0$ and $p\to K^+\bar\nu$; the axion haloscopes for the dark matter.</strong> <strong>Both are coming.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

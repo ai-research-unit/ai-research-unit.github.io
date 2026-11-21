@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consistent Three-Family Supersymmetric Pati–Salam Models from Rigid Intersecting D6-Branes with Discrete Torsion — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Three-family supersymmetric Pati-Salam models from intersecting D6-branes on rigid…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="consistent-three-family-supersymmetric-patisalam-models-from-rigid-intersecting-d6-branes-with-discrete-torsion"><strong>Consistent Three-Family Supersymmetric Pati–Salam Models from Rigid Intersecting D6-Branes with Discrete Torsion</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2505.03664 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Adeel Mansha, Mudassar Sabir, Tianjun Li, Luyang Wang</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1 (2025)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>43 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Three-family supersymmetric Pati-Salam models from intersecting D6-branes on rigid cycles - 2505.03664-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Three-family supersymmetric Pati-Salam models from intersecting D6-branes on rigid cycles - 2505.03664.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Three-family supersymmetric Pati-Salam models from intersecting D6-branes on rigid cycles - 2505.03664.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its seven-page letter is <code>2501.08590</code>.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It presents the full rigid-cycle class and checks every known consistency condition.</p>
+<blockquote>
+<p>"Intersecting D6-brane models <strong>without discrete torsion typically suffer from unstabilized open string moduli</strong>, arising from <strong>D-brane positions and Wilson lines</strong>. These moduli generate <strong>additional massless adjoint fields, obstructing the realization of negative beta functions necessary for asymptotic freedom</strong> unless they are decoupled around string scale. <strong>A viable solution involves utilizing rigid cycles, which eliminate these unwanted adjoint fields.</strong>"</p>
+<p>"we for the first time present <strong>a class of consistent three-family supersymmetric Pati-Salam models from rigid intersecting D6-branes</strong> on the factorizable $T^6/(\mathbb Z_2\times\mathbb Z_2')$ orientifold with discrete torsion."</p>
+<p>"These models <strong>satisfy all the known consistency conditions, including $N=1$ supersymmetry, K-theory constraints, tadpole cancellation, and recent swampland bounds on the maximal gauge group rank.</strong>"</p>
+<p>"We provide detailed particle spectra, analyze their phenomenological implications, and discuss <strong>the decoupling of exotic states through strong dynamics in the hidden sector.</strong>"</p>
+</blockquote>
+<p><strong>The list of checks is the paper's substance</strong>: <strong>$N=1$ SUSY, K-theory, tadpoles, swampland rank bounds, and exotic decoupling.</strong> <strong>No other paper in the batch checks all five.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem-stated-precisely">The Problem Stated Precisely</h3>
+<p>"<strong>unstabilized open string moduli</strong>, arising from D-brane positions and Wilson lines ... generate <strong>additional massless adjoint fields</strong>"</p>
+<p><strong>Two sources of open-string moduli:</strong>
+- <strong>Brane positions</strong>: a brane that can move has three complex position moduli (one per torus).
+- <strong>Wilson lines</strong>: a brane wrapping a cycle with a non-trivial one-cycle has a holonomy modulus.</p>
+<p><strong>Both give massless scalars.</strong> <strong>And each massless scalar that is an adjoint of the gauge group contributes to the beta function.</strong></p>
+<p><strong>"obstructing the realization of negative beta functions necessary for asymptotic freedom"</strong> — <strong>so the hidden sector coupling does not run to strong coupling, so no condensation, so no SUSY breaking.</strong></p>
+<p><strong>That is the sharpest statement of the problem in the batch</strong>, and it explains why <code>hep-ph/0505221</code>'s "confining" models needed a special construction: <strong>in the brane picture, confinement is not automatic.</strong></p>
+<h3 id="the-five-checks">The Five Checks</h3>
+<ol>
+<li><strong>$N=1$ supersymmetry</strong>: the brane configuration preserves four supercharges.</li>
+<li><strong>K-theory constraints</strong>: <strong>a condition on the brane content from K-theory</strong>, which is stronger than perturbative anomaly cancellation. <strong>It requires no $USp(2)$ stack to carry an odd number of fundamentals</strong>, roughly. <strong><code>hep-th/0403061</code> and <code>2112.09630</code> often omit it.</strong></li>
+<li><strong>Tadpole cancellation</strong>: RR charges cancel.</li>
+<li><strong>Swampland bounds on gauge group rank</strong>: <strong>recent conjectures limit the rank of the gauge group in a consistent quantum-gravity theory</strong> to $\lesssim\mathcal{O}(10)$–$30$, so <strong>a model with too many $U(1)$s is in the swampland.</strong></li>
+<li><strong>Exotic decoupling</strong>: the unwanted states get masses or confine.</li>
+</ol>
+<p><strong>The corpus should record the list</strong>, because it is a checklist the reader can apply to other papers. <strong><code>2112.09630</code>'s unique unified model passes (1), (3), and (5); whether it passes (2) and (4) is not stated.</strong></p>
+<p><strong>And that is a real gap in the cluster's flagship result</strong> — this paper shows that "consistent" requires five conditions and the earlier census checked three.</p>
+<h3 id="the-swampland-rank-bound">The Swampland Rank Bound</h3>
+<p>"<strong>recent swampland bounds on the maximal gauge group rank</strong>"</p>
+<p><strong>The "gauge rank" of a 4D theory is $n_g$</strong>, the number of Cartan generators. <strong>The Standard Model has rank 4</strong> ($SU(3)\times SU(2)\times U(1)$: 2+1+1). <strong>Pati–Salam has rank 6</strong> (3+1+2 or 3+1+1+1).</p>
+<p><strong>The swampland conjecture</strong> (from the distance conjecture and the species bound) is that <strong>$n_g\lesssim\mathcal{O}(1)\times\log(M_P/\Lambda)$</strong>, which for the observed couplings gives <strong>$n_g\lesssim30$ or so.</strong></p>
+<p><strong>So a D-brane model with many $U(1)$s and fillers can violate it.</strong> <strong>And this matters for the cluster</strong>: <strong>the models with many stacks and fillers have high rank.</strong></p>
+<p><strong>The corpus should record the bound and its consequence</strong>: <strong>the "many exotic $U(1)$s" that the D-brane constructions produce are not merely ugly; they may be forbidden.</strong> <strong>That is a new kind of constraint on model building, and it favours the minimal configurations — like <code>2212.09644</code>'s filler-free model.</strong></p>
+<p><strong>And it aligns with <code>2409.09110</code>'s swampland neutrino bound</strong>: <strong>two independent quantum-gravity constraints, both selecting the smallest models.</strong> <strong>The corpus should note the convergence.</strong></p>
+<h3 id="decoupling-through-strong-dynamics-in-the-hidden-sector">"Decoupling Through Strong Dynamics in the Hidden Sector"</h3>
+<p>"the decoupling of exotic states <strong>through strong dynamics in the hidden sector</strong>"</p>
+<p><strong>So the exotics are hidden by confinement, not by mass.</strong> <strong>That is possible here because the rigid cycles make the hidden sector asymptotically free</strong>, which is the whole point of the construction.</p>
+<p><strong>The chain closes</strong>: <strong>rigid cycles → no adjoints → asymptotic freedom → confinement → exotics hidden → SUSY broken by condensation.</strong></p>
+<p><strong>That is a complete and self-consistent story</strong>, and it is the batch's best.</p>
+<p><strong>The corpus should present the chain in full</strong>, because each link is needed for the next and no other paper does all of them.</p>
+<h3 id="what-is-still-missing">What Is Still Missing</h3>
+<p><strong>No soft terms, no fermion-mass fit, no dark matter, no $M_{PS}$ running.</strong> <strong>The paper is about consistency, not phenomenology.</strong></p>
+<p><strong>And that is the right scope</strong>: <strong>a model that fails consistency has no phenomenology to compute.</strong> <strong>The cluster's next step is to run <code>2410.09093</code>'s and <code>2409.09110</code>'s machinery on these rigid-cycle models.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-open-string-moduli-are-the-obstacle-to-confinement">1. Open-string moduli are the obstacle to confinement</h3>
+<p><strong>The idea.</strong> Position and Wilson-line moduli give massless adjoints, which keep the hidden sector conformal.</p>
+<p><strong>What it would add.</strong> The precise reason the plain-orientifold models cannot break SUSY by condensation. <strong>The corpus's cosmology section needs it.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-the-five-consistency-conditions-and-which-papers-check-which">2. The five consistency conditions, and which papers check which</h3>
+<p><strong>The idea.</strong> $N=1$, K-theory, tadpoles, swampland rank, exotic decoupling.</p>
+<p><strong>What it would add.</strong> A checklist for the corpus, and a way to see that the cluster's flagship result is incomplete.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-swampland-gauge-rank-bound-forbids-many-math16-models">3. The swampland gauge-rank bound forbids many-$U(1)$ models</h3>
+<p><strong>The idea.</strong> High-rank gauge groups are in the swampland, so minimal brane configurations are favoured.</p>
+<p><strong>What it would add.</strong> A quantum-gravity constraint that selects exactly the models this paper and <code>2212.09644</code> build. <strong>And a convergence with <code>2409.09110</code>'s neutrino bound.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> The bound's coefficient is not sharp.</p>
+<h3 id="4-the-complete-chain-from-rigid-cycles-to-susy-breaking">4. The complete chain from rigid cycles to SUSY breaking</h3>
+<p><strong>The idea.</strong> Rigid → no adjoint → asymptotically free → confine → hide exotics → condense → break SUSY.</p>
+<p><strong>What it would add.</strong> The batch's most complete cosmological mechanism, stated as one chain.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The rigidity requirement: in <code>2501.08590</code>.</li>
+<li>K-theory constraints: briefly in <code>hep-th/0403061</code>.</li>
+<li>Swampland neutrino bounds: in <code>2409.09110</code>.</li>
+<li>Confining models: in <code>hep-ph/0505221</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's most rigorous string model, and its rigour is what makes it modest.</p>
+<p><strong>It checks five conditions that the cluster's earlier papers check three of</strong>, and it does not claim a fermion fit. <strong>So it is more trustworthy and less complete than <code>2112.09630</code>.</strong></p>
+<p><strong>The corpus should present the trade honestly</strong>: <strong><code>2112.09630</code> has the census and the unification; <code>2505.03664</code> has the consistency and the cosmology.</strong> <strong>Neither is the finished article.</strong></p>
+<p><strong>And the swampland bounds are the reason the two might converge</strong>: <strong>a rank bound pushes toward minimal configurations, and the minimal configurations are the ones with the fewest stacks — which are exactly the ones this branch constructs.</strong> <strong>If the swampland conjectures are right, the D-brane Pati–Salam landscape is much smaller than 202752, and the survivors look like this paper's models.</strong></p>
+<p><strong>That is a prediction the corpus can record</strong>, with the caveat that it rests on conjectures.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Abelian Family Symmetries in Pati–Salam Unification — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Varzielas - Non-Abelian family symmetries in Pati-Salam unification - 1111.3952.pdf — a PDF…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="non-abelian-family-symmetries-in-patisalam-unification"><strong>Non-Abelian Family Symmetries in Pati–Salam Unification</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1111.3952 [hep-ph]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ivo de Medeiros Varzielas</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, TU Dortmund)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>26 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Varzielas - Non-Abelian family symmetries in Pati-Salam unification - 1111.3952-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Varzielas - Non-Abelian family symmetries in Pati-Salam unification - 1111.3952.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Varzielas - Non-Abelian family symmetries in Pati-Salam unification - 1111.3952.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It uses $SU(3)\times SU(3)$ as the family group, and argues that more non-abelian factors mean more predictivity.</p>
+<blockquote>
+<p>"We present a framework of underlying <strong>$SU(3)\times SU(3)$ family symmetries consistent with Pati–Salam unification</strong> and discuss <strong>advantages that can justify introducing multiple non-Abelian factors.</strong>"</p>
+<p>"<strong>Advantages include [in]creased predictivity.</strong> We explore in this framework <strong>deviations from tri-bi-maximal neutrinos, such as relatively large $\theta_{13}$.</strong>"</p>
+</blockquote>
+<p><strong>So the paper is about <em>why</em> $SU(3)\times SU(3)$, and about $\theta_{13}$.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-math5">Why $SU(3)\times SU(3)$?</h3>
+<p><strong>The standard choice is one non-abelian family group</strong> ($A_4$, $S_4$, $A_5$) <strong>times abelian factors.</strong> <strong>The paper uses two.</strong></p>
+<p><strong>The argument</strong>: <strong>one $SU(3)$ can fix the lepton sector, another the quark sector</strong>, <strong>so the two can be tuned independently</strong>, <strong>which increases predictivity</strong> — <strong>because the scheme is more constrained, not less.</strong></p>
+<p><strong>That is counter-intuitive but correct</strong>: <strong>more symmetry means fewer allowed operators</strong>, <strong>hence fewer parameters.</strong> <strong>The corpus should record the argument</strong>, because <strong>it is the standard justification for large discrete groups, stated well.</strong></p>
+<p><strong>And it explains the batch's trend toward bigger groups</strong> (<code>1406.7005</code>'s $S_4$, <code>1605.02072</code>'s $A_4$): <strong>larger group, fewer operators, more predictivity.</strong></p>
+<p><strong>With a caveat the corpus should state</strong>: <strong>beyond a point, the symmetry forbids the required operators too</strong>, <strong>and you need more flavons to break it</strong> — <strong>which is <code>1003.4502</code>'s "complications in the Higgs sector".</strong></p>
+<h3 id="math12-and-the-end-of-tri-bimaximal">$\theta_{13}$ and the End of Tri-Bimaximal</h3>
+<p>"deviations from tri-bi-maximal neutrinos, <strong>such as relatively large $\theta_{13}$</strong>"</p>
+<p><strong>In 2011 $\theta_{13}$ was being measured</strong> (Daya Bay, RENO, Double Chooz reported in 2012), <strong>and the TB prediction $\theta_{13}=0$ was dying.</strong></p>
+<p><strong>So the paper is a response</strong>: <strong>a framework that can accommodate a large $\theta_{13}$ naturally.</strong></p>
+<p><strong>And the corpus should record the date and the shift</strong>: <strong><code>1003.4502</code> (2010) still built on TB-compatible mixing; <code>1111.3952</code> (2011) is designed for $\theta_{13}\ne0$.</strong></p>
+<p><strong>That is a one-year transition, and it is visible in the batch.</strong> <strong>The corpus should present it as a case study in how flavour model building responds to data.</strong></p>
+<h3 id="the-relation-between-the-two-math18s">The Relation Between the Two $SU(3)$s</h3>
+<p><strong>The paper's framework</strong>: <strong>$SU(3)$ acting on the lepton doublets and another on the quark doublets</strong>, <strong>with the PS unification relating them.</strong></p>
+<p><strong>And the PS structure means the two sectors share the $\bar{\mathbf4}$</strong>: <strong>the leptons and quarks are in the same multiplet</strong>, <strong>so the two $SU(3)$s must be consistent with that.</strong></p>
+<p><strong>That is the "interplay" of <code>1003.4502</code>, in a different group.</strong></p>
+<h3 id="the-flavour-changing-problem">The Flavour-Changing Problem</h3>
+<p><strong>Any family symmetry with new gauge bosons</strong> — <strong>and $SU(3)\times SU(3)$ could be gauged or global</strong> — <strong>has FCNC constraints.</strong></p>
+<p><strong>The paper's framework is presumably global</strong> (a family symmetry broken by flavons), <strong>which avoids the gauge-boson FCNC.</strong> <strong>The corpus should note the distinction</strong>: <strong>gauged family symmetry (the three-site model of <code>2012.10492</code>) versus global (here, and most of the batch).</strong></p>
+<p><strong>And the trade</strong>: <strong>gauged gives a UV completion and testable gauge bosons; global gives fewer constraints but no UV completion.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-more-non-abelian-factors-means-more-predictivity">1. More non-abelian factors means more predictivity</h3>
+<p><strong>The idea.</strong> Two $SU(3)$s constrain more operators than one; the fit is more determined.</p>
+<p><strong>What it would add.</strong> The justification for large family groups, stated as an argument.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> The flavon sector grows.</p>
+<h3 id="2-flavour-models-respond-to-data-within-a-year">2. Flavour models respond to data within a year</h3>
+<p><strong>The idea.</strong> <code>1003.4502</code> predates the $\theta_{13}$ measurement; <code>1111.3952</code> is built for it.</p>
+<p><strong>What it would add.</strong> A case study in model building's responsiveness, and a caution about "predictions".</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-global-versus-gauged-family-symmetry">3. Global versus gauged family symmetry</h3>
+<p><strong>The idea.</strong> Global (flavons) has FCNC-free gauge sector but no UV completion; gauged has both.</p>
+<p><strong>What it would add.</strong> A distinction the corpus should make explicitly.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-the-ps-multiplet-ties-the-two-family-groups-together">4. The PS multiplet ties the two family groups together</h3>
+<p><strong>The idea.</strong> The $\bar{\mathbf4}$ puts leptons and quarks in one place, so the two $SU(3)$s must respect it.</p>
+<p><strong>What it would add.</strong> The "interplay" argument in a new setting.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$S_4$ and $A_4$ family symmetries: in <code>1406.7005</code>, <code>1605.02072</code>.</li>
+<li>The interplay with running: in <code>1003.4502</code>.</li>
+<li>Gauged family symmetry: in <code>2012.10492</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's best statement of <em>why</em> family groups are large, and the corpus should use it to explain a pattern that otherwise looks arbitrary.</p>
+<p><strong>The pattern</strong>: <strong>the groups grow over time</strong> — <strong>$S_3$ (early), then $A_4$/$S_4$ (2010s), then $SU(3)\times SU(3)$, then modular groups.</strong></p>
+<p><strong>The reason</strong>: <strong>each step constrains more operators, and each step needs more flavons or moduli to break.</strong></p>
+<p><strong>And the endpoint is the modular-symmetry idea (<code>2404.06520</code>)</strong>, <strong>where the group is infinite but the breaking is by the modulus, not by flavons</strong> — <strong>so the predictivity grows without a flavon sector.</strong></p>
+<p><strong>That arc is the flavour chapter's spine</strong>, and the corpus should present it: <strong>from imposed discrete groups to geometric and modular origins, driven by the same desire for predictivity without proliferating scalars.</strong></p>
+<p><strong><code>1111.3952</code> is a middle step, and it is the one that states the motive plainly.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

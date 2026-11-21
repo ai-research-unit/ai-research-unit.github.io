@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pati–Salam Models with $A_4$ Modular Symmetry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/King - Pati-Salam models with A_4 modular symmetry - 2404.06520.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="patisalam-models-with-math0-modular-symmetry"><strong>Pati–Salam Models with $A_4$ Modular Symmetry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2404.06520 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Gui-Jun Ding, Si-Yi Jiang, Stephen F. King, Jun-Nan Lu, Bu-Yao Qu</td>
+</tr>
+<tr>
+<td>version</td>
+<td>6 April 2024</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, USTC / Southampton)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>33 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/King - Pati-Salam models with A_4 modular symmetry - 2404.06520-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/King - Pati-Salam models with A_4 modular symmetry - 2404.06520.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/King - Pati-Salam models with A_4 modular symmetry - 2404.06520.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It is a systematic classification: all Pati–Salam models with $A_4$ modular symmetry, fitted, with four benchmarks.</p>
+<blockquote>
+<p>"We perform a <strong>systematic classification</strong> of Pati-Salam models according to the transformations of matter fields under the $A_4$ modular symmetry, and the general form of the fermion mass matrix is given. We present <strong>four phenomenologically viable benchmark models</strong> which provide excellent descriptions of masses and flavor mixing of quarks and leptons, including neutrinos."</p>
+</blockquote>
+<p>"In such models we find that the <strong>normal ordered neutrino mass spectrum is preferred</strong> over the inverted case, with <strong>neutrinoless double beta decay predicted to be too small to be observed</strong> by the next generation of experiments."</p>
+<p><strong>What is new relative to <code>1406.7005</code> is the word "classification".</strong> King's 2014 model chose one assignment; this paper enumerates all of them, fits each, and reports which survive. <strong>That is the right response to a model-building landscape</strong> and the corpus should note the genre.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-modular-and-why-math3">Why Modular, and Why $A_4$</h3>
+<p>"In comparison with the PS models based on traditional flavor symmetries, <strong>both flavons and driving fields are absent</strong> so that the modular invariant PS models are much more simpler, with <strong>$A_4$ being the minimal modular group which admits triplet representations</strong>."</p>
+<p><strong>Two claims, both about economy:</strong>
+- <strong>No flavons.</strong> In a traditional model the Yukawa couplings are $y\,(\phi/\Lambda)^n$ with a flavon $\phi$ getting a VEV. In a modular model the coupling is a <em>modular form</em> $Y(\tau)$, a fixed function of the modulus. So the flavon and its alignment are replaced by one complex number $\tau$.
+- <strong>No driving fields.</strong> Traditional $A_4$ models need a separate "driving" sector to align the flavon VEV. Modular models need none, because there is no VEV to align.</p>
+<p><strong>And "$A_4$ is the minimal modular group admitting triplets"</strong> — the same ladder argument as <code>1705.06320</code>, but here the relevant rung is the lowest one that has a triplet at all. $\Gamma_2\cong S_3$ has a doublet, $\Gamma_3\cong A_4$ has a triplet, and $A_4$ is where three generations can be a single irreducible.</p>
+<p><strong>That is the sharpest statement in the paper</strong>: modular symmetry does not just replace flavons, it removes the largest source of arbitrariness (the alignment). <strong>Whether it also removes enough parameters is the question the classification answers.</strong></p>
+<h3 id="the-answer-on-parameters-which-is-sobering">The Answer on Parameters, Which Is Sobering</h3>
+<p>"<strong>We find that many PS $\times A_4$ models are compatible with the experimental data, and the phenomenologically viable models depend on at least 19 real parameters including the real and imaginary parts of the modulus $\tau$.</strong>"</p>
+<p>"<strong>We notice that the models would be strongly constrained by modular symmetry and a large number of parameters are required to accommodate the data, if both $F_i$ and $F_i^c$ transform as triplet under $A_4$.</strong>"</p>
+<p><strong>19 real parameters is not a small number</strong>, and the paper says so without spin. <strong>The corpus should record it</strong>, because the selling point of modular symmetry is economy and this paper's own count shows the economy is partial: you remove the flavons but you keep the coupling constants $\alpha_i,\beta_i,\gamma_i$ as free complex numbers, each with a modulus and a phase.</p>
+<p><strong>So the modular framework removes flavons but not freedom.</strong> The freedom migrates into the coefficients of the modular forms. <strong>That is the honest assessment</strong> and the paper's classification is what makes it visible — a single benchmark model could hide it.</p>
+<h3 id="the-structure-they-impose">The Structure They Impose</h3>
+<p>"The three generations of the left-handed and right-handed fermions are assigned to be <strong>triplet or singlets</strong> of $A_4$."</p>
+<p>"we have dropped the assignment that <strong>both $F_i$ and $F_i^c$ are $A_4$ singlets, since the flavor symmetry would be essentially the $Z_3$ subgroup generated by modular generator $T$ and the different entries of the Yukawa couplings would be loosely correlated for this kind of assignment</strong>."</p>
+<p><strong>That is a useful technical exclusion, and it explains why the classification is short.</strong> If both left and right are singlets, only the $T$ generator acts nontrivially, and $T$ is Abelian — so the "non-Abelian" symmetry has collapsed to $Z_3$ and nothing relates the generations. <strong>The surviving models are those where at least one side is a triplet.</strong></p>
+<p><strong>So the classification space is: $F_i$ triplet and $F_i^c$ singlets, or $F_i$ singlets and $F_i^c$ triplet.</strong> Two families, and the four benchmarks sit in them.</p>
+<h3 id="the-georgijarlskog-factor-again">The Georgi–Jarlskog Factor, Again</h3>
+<p>"Two PS Higgs multiplets $\Phi\sim(\mathbf1,\mathbf2,\mathbf2)$, $\Sigma\sim(\mathbf{15},\mathbf2,\mathbf2)$ are introduced to trigger the electroweak symmetry breaking, and <strong>$\Sigma$ can lead to the Georgi-Jarlskog factor $-3$</strong> so that the difference in the mass spectrum of down type quarks and charged leptons can be accommodated."</p>
+<p><strong>Note the sign: $-3$, not $+3$.</strong> The negative factor is what makes the charged-lepton mass come out larger than the down quark at the relevant scale, and it is the same structure as <code>1608.04124</code>'s minimal model. <strong>The corpus should record the sign</strong>, because it distinguishes the $\mathbf{15}$ route from the $45$-route which gives a different factor.</p>
+<p><strong>And in a modular model the GJ factor is a consequence of the gauge structure, not a fitted number</strong> — the modular forms fix the texture and the $\mathbf{15}$ fixes the relative normalization. <strong>That is the division of labour the paper is exploiting: Pati–Salam for the inter-sector relation, $A_4$ modular for the intra-sector texture.</strong></p>
+<h3 id="the-predictions">The Predictions</h3>
+<p>"The neutrino mass spectrum is determined to be <strong>normal ordered in all these four models</strong>, since the best fit values of certain flavor observables lie outside the $3\sigma$ regions for inverted ordering."</p>
+<p>"The effective mass $|m_{\beta\beta}|$ of the neutrinoless double beta decay is expected to be <strong>in the range of $0.1$–$2$ meV which is below the sensitivities of the future tonn-scale experiments</strong>."</p>
+<p>"The predictions of the normal neutrino mass ordering, the atmospheric mixing angle $\theta_{23}^l$ and leptonic Dirac CP violation phase $\delta_{CP}^l$ are expected to be <strong>either confirmed or excluded by the forthcoming neutrino facilities such as DUNE and T2HK</strong>."</p>
+<p><strong>$0.1$–$2$ meV is below every planned $0\nu\beta\beta$ sensitivity</strong> ($\sim5$–$15$ meV for nEXO/LEGEND-1000). <strong>So the prediction is "no signal, ever"</strong> — which is a form of falsifiability: if $0\nu\beta\beta$ is seen at the next generation, these models die.</p>
+<p><strong>And that matches <code>1406.7005</code>'s conclusion exactly.</strong> Two papers, ten years apart, different symmetry (discrete $A_4\times Z_5$ versus modular $A_4$), same answer: hierarchical normal ordering, $m_{\beta\beta}$ too small to see. <strong>That agreement is informative</strong> — it suggests the conclusion follows from the Pati–Salam seesaw structure rather than from the flavour symmetry.</p>
+<p><strong>That is a claim the corpus could make</strong>: if two very different flavour models built on the same gauge group give the same $0\nu\beta\beta$ prediction, the prediction is about the gauge group.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-modular-symmetry-removes-flavons-but-not-free-parameters-19-of-them-here">1. Modular symmetry removes flavons but not free parameters — 19 of them here</h3>
+<p><strong>The idea.</strong> The selling point is economy, but the coupling coefficients of the modular forms remain free.</p>
+<p><strong>What it would add.</strong> A balanced assessment of the modular programme, with a number. <strong>The corpus should not describe modular models as parameter-free</strong>, and this paper's own count is the evidence.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section, when discussing modular symmetry.</p>
+<p><strong>What stands in the way.</strong> Nothing; the count is stated.</p>
+<h3 id="2-if-both-left-and-right-handed-fields-are-singlets-the-symmetry-is-only-math59">2. If both left- and right-handed fields are singlets, the symmetry is only $Z_3$</h3>
+<p><strong>The idea.</strong> Only the $T$ generator acts, and $T$ is Abelian, so nothing relates generations.</p>
+<p><strong>What it would add.</strong> A structural reason the classification is small, and a general lesson: <strong>a non-Abelian flavour symmetry is only non-Abelian if a triplet appears</strong>. That is transferable to any modular model.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-agreement-of-math62-predictions-across-two-very-different-flavour-models">3. The agreement of $0\nu\beta\beta$ predictions across two very different flavour models</h3>
+<p><strong>The idea.</strong> <code>1406.7005</code> and this paper both give normal ordering and $m_{\beta\beta}$ below reach.</p>
+<p><strong>What it would add.</strong> An argument that the prediction comes from the gauge group's seesaw structure, not from the flavour symmetry — which is a stronger claim and a more useful one. <strong>The corpus should test it by checking whether any model in the batch gets inverted ordering.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> Both papers use type-I seesaw with hierarchical right-handed neutrinos, so the agreement could come from that choice instead.</p>
+<h3 id="4-classification-is-the-right-genre-for-a-landscape">4. Classification is the right genre for a landscape</h3>
+<p><strong>The idea.</strong> Enumerate all assignments, fit each, report the survivors, give benchmarks.</p>
+<p><strong>What it would add.</strong> A methodological contrast with single-model papers. <strong>In a batch where most papers propose one model and show it works, this one asks how many work</strong> — and the answer ("many") is itself a result.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's methodology discussion.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$A_4$ triplets and modular forms: partly in <code>1406.7005</code> (discrete) and the modular flavour articles.</li>
+<li>Georgi–Jarlskog factor from the $\mathbf{15}$: in <code>1608.04124</code>, <code>1701.04460</code>.</li>
+<li>Type-I seesaw with hierarchical $M_R$: in <code>1406.7005</code>, <code>2305.19356</code>.</li>
+<li>DUNE/T2HK as CP-phase probes: standard.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's best guide to the modular programme's actual state, because it is a census rather than a showcase.</p>
+<p>The census says: many assignments work, each needs 19 real parameters, all prefer normal ordering, all predict unobservable $0\nu\beta\beta$. <strong>That is not a triumph and it is not a failure; it is a landscape</strong>, and the honest question is whether the landscape has any structure.</p>
+<p><strong>One piece of structure it does have</strong>: the excluded case (both singlets) is excluded for a clear reason, and the surviving cases all have one triplet. <strong>So at least one binary choice is fixed by logic rather than by fit.</strong></p>
+<p>The second point, for the corpus: <code>1406.7005</code> and this paper are the same author ten years apart, and the difference is the replacement of flavons by a modulus. <strong>If the 2024 model needs 19 parameters and the 2014 model needed a comparable number, the modular programme has bought simplicity of <em>structure</em> rather than of <em>fitting</em>.</strong> That distinction is worth making precisely, because the papers' rhetoric tends to blur it.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Analysis of a Supersymmetric Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/King - Global Analysis of a Supersymmetric Pati-Salam Model - hep-ph_0303192.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="global-analysis-of-a-supersymmetric-patisalam-model"><strong>Global Analysis of a Supersymmetric Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0303192 (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>T. Blažek, S. F. King, J. K. Parry</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 30 April 2003</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Southampton)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>40 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/King - Global Analysis of a Supersymmetric Pati-Salam Model - hep-ph_0303192-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/King - Global Analysis of a Supersymmetric Pati-Salam Model - hep-ph_0303192.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/King - Global Analysis of a Supersymmetric Pati-Salam Model - hep-ph_0303192.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It is the earliest global analysis in the batch, and its conclusion is that relaxing Yukawa unification lightens the squarks.</p>
+<blockquote>
+<p>"We perform a <strong>complete global phenomenological analysis of a realistic string-inspired model based on the supersymmetric Pati-Salam $SU(4)\times SU(2)_L\times SU(2)_R$ gauge group supplemented by a $U(1)$ family symmetry</strong>, and present predictions for <strong>all observables including muon $g-2$, $\tau\to\mu\gamma$, and the CHOOZ angle</strong>."</p>
+<p>"Our analysis demonstrates the <strong>compatibility of such a model with all laboratory data</strong> including charged fermion masses and mixing angles, LMA MSW and atmospheric neutrino masses and mixing angles, and $b\to s\gamma$, <strong>allowing for small deviations from third family Yukawa unification</strong>."</p>
+<p>"We show that in such models <strong>the squark and slepton masses may be rather light compared to similar models with exact Yukawa unification.</strong>"</p>
+</blockquote>
+<p><strong>That last sentence is the paper's punchline and it is a structural insight</strong>: <strong>exact Yukawa unification forces heavy sfermions; a small violation of it allows light ones.</strong> That is the same conclusion <code>1703.09309</code> reached fifteen years later ("choosing PS as the gauge group and modifying the Yukawa sector improves the fit"), and it is worth noting that the tension was known in 2003.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The Model</h3>
+<p>"the supersymmetric Pati-Salam $SU(4)\times SU(2)_L\times SU(2)_R$ gauge group extended by an <strong>additional $U(1)$ family symmetry</strong>."</p>
+<p>"Accepting minimality as [a guide] ... <strong>the third family Yukawa unification places the right-handed neutrinos into non-trivial [family representations]</strong>."</p>
+<p><strong>So this is the ancestor of the $S_4$ and $A_4$ models</strong>: a $U(1)$ family symmetry, third-family Yukawa unification, and right-handed neutrinos charged under the family group.</p>
+<p><strong>The corpus should note the lineage</strong>: $U(1)$ family symmetry (2003) → $S_4$ (<code>1406.7005</code>, 2014) → $A_4\times Z_5$ (<code>1605.02072</code>, 2016) → modular $A_4$ (<code>2404.06520</code>) → modular $S_3$ (<code>2503.14610</code>, <code>2501.00302</code>). <strong>The same author's programme, with the family group growing more structured and the flavons disappearing.</strong></p>
+<h3 id="why-exact-yukawa-unification-is-bad-for-the-spectrum">Why Exact Yukawa Unification Is Bad for the Spectrum</h3>
+<p><strong>The mechanism, in plain terms.</strong> Third-family Yukawa unification $Y_t=Y_b=Y_\tau$ at the GUT scale, run down with SUSY RGEs, <strong>forces a large $\tan\beta$ (around 50)</strong> and hence large $\tan\beta$-enhanced corrections to the $b$ and $\tau$ masses.</p>
+<p><strong>Those corrections must be kept under control</strong>, which requires <strong>heavy superpartners</strong> — in particular heavy stops and sbottoms — otherwise the predicted $m_b$ and $m_\tau$ miss their measured values.</p>
+<p><strong>So exact unification → heavy sfermions → no room for a light spectrum → the LHC sees nothing.</strong> <strong>That is the "little hierarchy" problem in its Yukawa-unified form</strong>, and it was recognised early.</p>
+<p>"allowing for <strong>small deviations from third family Yukawa unification</strong>" then <strong>lets $\tan\beta$ be smaller and the sfermions lighter</strong>, at the price of giving up exact unification.</p>
+<p><strong>The corpus should record this trade-off explicitly</strong>, because it is the central tension of the whole Yukawa-unification programme and it recurs in every paper in this batch that mentions $t$–$b$–$\tau$ unification.</p>
+<h3 id="the-observables">The Observables</h3>
+<p>"muon $g-2$, $\tau\to\mu\gamma$, and the CHOOZ angle"</p>
+<p><strong>Three predictions, and each is a different kind of test:</strong>
+- <strong>$g-2$</strong>: a loop effect needing light smuons — the same logic as <code>1605.02072</code>.
+- <strong>$\tau\to\mu\gamma$</strong>: lepton flavour violation from the family symmetry's off-diagonal couplings; a null result bounds the model.
+- <strong>CHOOZ angle</strong>: the reactor mixing angle $\theta_{13}$, which in 2003 was only bounded ($\theta_{13}\lesssim10^\circ$). <strong>The model predicted a value, and it was subsequently measured to be large.</strong></p>
+<p><strong>The CHOOZ prediction is the most interesting historically.</strong> <code>1406.7005</code> and the later models use <strong>CSD4 with $\eta\approx\pi/6$</strong>, which predicts $\theta_{13}\approx9^\circ$ — <strong>large, and confirmed by Daya Bay in 2012.</strong> <strong>So this 2003 paper's framework anticipated the large reactor angle</strong>, and the corpus should note that the model's $\theta_{13}$ prediction was validated.</p>
+<p><strong>That is a rare thing in this batch</strong>: a specific numerical prediction that was later measured and found right.</p>
+<h3 id="the-string-inspiration">The String Inspiration</h3>
+<p>"a realistic <strong>string-inspired</strong> model"</p>
+<p><strong>The model is motivated by string constructions but not derived from one</strong> — a field-theory model "inspired by" string theory. <strong>The corpus should distinguish this from the true D-brane constructions of <code>hep-th/0403061</code> and the heterotic models of <code>1007.2268</code></strong>: here the string enters only as motivation for the gauge group and the family symmetry.</p>
+<h3 id="its-place-in-the-programme">Its Place in the Programme</h3>
+<p>This is the first paper in the batch's King flavour programme, and it establishes the pattern:</p>
+<ol>
+<li><strong>A Pati–Salam gauge group</strong> with a family symmetry.</li>
+<li><strong>Third-family Yukawa unification</strong> as the boundary condition.</li>
+<li><strong>A global fit</strong> to masses, mixings, and the SUSY observables.</li>
+<li><strong>A spectrum prediction</strong> from the constrained soft masses.</li>
+</ol>
+<p><strong>The later papers keep the pattern and change the family group.</strong> <strong>The corpus should present the programme as one entry</strong>, with <code>1406.7005</code> and <code>2404.06520</code> as its mature forms.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-exact-yukawa-unification-forces-heavy-sfermions-small-deviations-allow-light-ones">1. Exact Yukawa unification forces heavy sfermions; small deviations allow light ones</h3>
+<p><strong>The idea.</strong> Large $\tan\beta$ from exact unification needs heavy stops and sbottoms to control the $b$ and $\tau$ mass corrections.</p>
+<p><strong>What it would add.</strong> The central tension of the unification programme, stated as a trade-off. <strong>It explains why <code>1703.09309</code> had to abandon exact unification to fit $\sin2\beta$ and the light quark masses</strong>, and it is the reason the "natural SUSY" and "Yukawa unification" programmes are in conflict.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the paper states it.</p>
+<h3 id="2-a-math39-prediction-that-was-later-confirmed">2. A $\theta_{13}$ prediction that was later confirmed</h3>
+<p><strong>The idea.</strong> The framework predicts a large reactor angle, before Daya Bay measured one.</p>
+<p><strong>What it would add.</strong> A genuine success to record. <strong>The corpus should note that the model's $\theta_{13}$ prediction was validated</strong>, and by the same CSD4 structure that <code>1406.7005</code> uses.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> The 2003 paper's $\theta_{13}$ may be a bound rather than a prediction; the sharp version is <code>1406.7005</code>'s.</p>
+<h3 id="3-the-lineage-of-family-symmetries-in-patisalam">3. The lineage of family symmetries in Pati–Salam</h3>
+<p><strong>The idea.</strong> $U(1)$ → $S_4$ → $A_4\times Z_5$ → modular $A_4$ → modular $S_3$.</p>
+<p><strong>What it would add.</strong> A single narrative for the batch's largest flavour programme. <strong>And a trend: the symmetry grows more structured and the flavons vanish.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-string-inspired-is-not-string-derived">4. "String-inspired" is not "string-derived"</h3>
+<p><strong>The idea.</strong> The model borrows the gauge group and family symmetry from string theory without deriving them.</p>
+<p><strong>What it would add.</strong> A distinction the corpus should keep. <strong>Compare <code>hep-th/0403061</code> (truly derived) and <code>1007.2268</code> (heterotic classification).</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Third-family Yukawa unification and its tensions: in <code>1703.09309</code>.</li>
+<li>CSD4 and $\theta_{13}\approx9^\circ$: in <code>1406.7005</code>.</li>
+<li>Pati–Salam with a $U(1)$ family symmetry: new to the corpus.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's earliest global analysis and it already contains the programme's central tension.</p>
+<p><strong>2003 (here)</strong>: exact Yukawa unification needs heavy sfermions; small deviations allow light ones; global fit works either way.</p>
+<p><strong>2016 (<code>1703.09309</code>)</strong>: the fermion fit in exact-unification $SO(10)$ is poor; switching to Pati–Salam and modifying the Yukawa sector fixes it.</p>
+<p><strong>2020s</strong>: the D6-brane cluster's soft-term papers (<code>2410.09093</code>, <code>2212.05875</code>) compute the spectrum from flux and find it constrained.</p>
+<p><strong>So the same trade-off recurs for eighteen years, in field theory and in string theory.</strong> <strong>That is what a real structural tension looks like</strong>: it does not go away when the framework changes, because it comes from the RGEs and the mass corrections, not from the model.</p>
+<p>The point for the corpus's article: <strong>a reader should understand that Pati–Salam's SUSY version is squeezed between unification and naturalness</strong>, and that this squeeze is independent of which family symmetry or which string construction is used. <strong>The corpus should say so once, in the SUSY section, and then refer back.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classification of Non-Supersymmetric Pati–Salam Heterotic String Models — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Faraggi - Classification of Non-Supersymmetric Pati-Salam Heterotic String Models -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classification-of-non-supersymmetric-patisalam-heterotic-string-models"><strong>Classification of Non-Supersymmetric Pati–Salam Heterotic String Models</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2011.04113 [hep-th] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Alon E. Faraggi, Viktor G. Matyas, Benjamin Percival</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 23 February 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Liverpool)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>39 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Faraggi - Classification of Non-Supersymmetric Pati-Salam Heterotic String Models - 2011.04113-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Faraggi - Classification of Non-Supersymmetric Pati-Salam Heterotic String Models - 2011.04113.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Faraggi - Classification of Non-Supersymmetric Pati-Salam Heterotic String Models - 2011.04113.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Dense and technical; the methodological statements and the negative result are quoted below, the GGSO algebra is summarised.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A systematic scan of non-supersymmetric Pati–Salam vacua in the free fermionic formulation, done in two classes, with a <strong>negative result that is the paper's main claim</strong>:</p>
+<blockquote>
+<p>"We show that Pati-Salam $\tilde S$–models do not contain heavy Higgs scalar representations that are required to break the PS symmetry to the Standard Model and are therefore not phenomenologically viable. Hence, we argue that in $\tilde S$–models the $SO(10)$ GUT symmetry must be broken at the string scale to the Standard–like Model subgroup."</p>
+</blockquote>
+<p>That is a statement about which breaking <em>chains</em> a class of string vacua permits. It is not a statement about Pati–Salam as a field theory; it is a statement about which Pati–Salam models string theory will build.</p>
+<p>The supporting numbers:</p>
+<ul>
+<li>Tachyon-free configurations survive with probability $\sim0.002$ ($\tilde S$-models) and $\sim0.01$ ($S$-models).</li>
+<li>The fertility methodology "increases the frequency of models that satisfy key phenomenological criteria by three orders of magnitude."</li>
+<li>Three-generation tachyon-free models are exhibited in both classes with $a_{00}=N_b^0-N_f^0=0$.</li>
+</ul>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-two-routes">The Two Routes</h3>
+<p>"Firstly, we will explore those PS models descending from the tachyonic ten–dimensional heterotic string which utilize the vector $\tilde S$. We will refer to these models as (PS) $\tilde S$-models. Secondly, we will explore models derived from the $SO(16)\times SO(16)$ heterotic string which contain the SUSY–generating basis vector $S$ and thus we will refer to these as $S$–models."</p>
+<p>The distinction is a single phase: "The choice of GGSO phase $C\bigl[\begin{smallmatrix}z_1\\z_2\end{smallmatrix}\bigr]=\pm1$ selects between the $E_8\times E_8$ or $SO(16)\times SO(16)$ heterotic strings in ten dimensions." And "Eq. (2.2) implies that the breaking of spacetime supersymmetry in ten dimensions is correlated with the breaking pattern $E_8\times E_8\to SO(16)\times SO(16)$." But "In lower dimensions eq. (2.2) does not hold and the two breakings are not correlated."</p>
+<p><strong>That last sentence is the point of studying both classes.</strong> In ten dimensions, breaking supersymmetry and breaking $E_8\times E_8$ are the same act. In four dimensions they are independent, so there are two ways to arrive at a non-supersymmetric four-dimensional vacuum, and the two ways give different physics. That is why the paper needs the $\tilde S$ and $S$ distinction at all.</p>
+<h3 id="the-tachyon-problem-stated-plainly">The Tachyon Problem, Stated Plainly</h3>
+<p>"Due to the absence of supersymmetry the analysis of whether on–shell tachyons arise in the spectrum of our models is of utmost importance."</p>
+<p>"on–shell tachyonic sectors will arise when $M_L^2=M_R^2<0$", and "We can deduce that there are 84 PS tachyonic sectors for us to consider once the $SO(10)$ tachyons are projected."</p>
+<p>The table of level-matched sectors:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mass level $(M_L^2,M_R^2)$</th>
+<th>sectors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(-1/2,-1/2)$</td>
+<td>$\alpha$, $z_1+\alpha$</td>
+</tr>
+<tr>
+<td>$(-3/8,-3/8)$</td>
+<td>$e_i+\alpha$, $e_i+z_1+\alpha$</td>
+</tr>
+<tr>
+<td>$(-1/4,-1/4)$</td>
+<td>$e_i+e_j+\alpha$, $e_i+e_j+z_1+\alpha$</td>
+</tr>
+<tr>
+<td>$(-1/8,-1/8)$</td>
+<td>$e_i+e_j+e_k+\alpha$, $e_i+e_j+e_k+z_1+\alpha$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern is the orbifold pattern</strong>: the mass level is set by how many of the six internal circles are shifted, and the four levels $-\frac12,-\frac38,-\frac14,-\frac18$ correspond to zero, one, two, three shifts. The $z_1+\alpha$ partners double each entry because the $\tilde S$ model has both an $S$-type and a $\tilde S$-type projection.</p>
+<p>"A first task in the construction of non–supersymmetric models is to ensure that all the physical tachyonic states are projected out from the physical spectrum." And the escape rate:</p>
+<p>"the probability of tachyon–free $SO(10)$ models was $\sim5\times10^{-3}$, and we can similarly find that the probability for PS $\tilde S$–models to be tachyon–free is $\sim2\times10^{-3}$, i.e. we have to filter out all but around 1 in 500 GGSO configurations."</p>
+<p><strong>One in five hundred.</strong> For $S$-models it is one in a hundred. Those are the odds that a randomly chosen set of GGSO phases gives a stable vacuum, and the paper's classification apparatus exists to avoid drawing those samples at random.</p>
+<h3 id="the-fertility-methodology">The Fertility Methodology</h3>
+<p>"The fertility methodology involves splitting the full parameter space of, in this case, PS models into two components $\Pi=\Pi_{SO(10)}\times\Pi_\alpha$ and performing a classification in two steps."</p>
+<p>Step one: classify the $SO(10)$ subspace — "the space of $2^{66}$ independent GGSO phase configurations for the 12 basis vectors" — for conditions that can be evaluated there alone. "These conditions we call 'fertility conditions' and the $SO(10)$ models satisfying them 'fertile cores'."</p>
+<p>Step two: "iterate over all independent choices of the GGSO phases involving $\alpha$ around these cores."</p>
+<p><strong>The gain</strong>: "application of the 'fertility methodology' increases the frequency of models that satisfy key phenomenological criteria by three orders of magnitude."</p>
+<p><strong>This is a computational-strategy paper as much as a physics paper</strong>, and the strategy is worth recording: $2^{66}$ is about $7\times10^{19}$, so a flat scan is impossible. Splitting the space so that the expensive criteria are checked on a small subspace first, and only the survivors are extended, makes the scan feasible. That is a hundred-fold saving on the exponent, which is the point.</p>
+<p>The fertility conditions for $\tilde S$-models:</p>
+<ol>
+<li>"Absence of the tachyonic sectors: $z_1$, $e_i+z_1$, $e_i+e_j+z_1$, $e_i+e_j+e_k+z_1$, $i\ne j\ne k=1,\dots,6$".</li>
+<li>"Constraints on $SO(10)$ spinorial states $n_{4_L}-n_{\bar4_L}=n_{\bar4_R}-n_{4_R}\ge6$, $n^F_{\bar4_R}>6$." With the explanation: "The first condition results in a high likelihood of having (at least) 3 fermion families and the second condition is used as a fermionic analogy to the condition for a Heavy Higgs, which would be $n^B_{\bar4_R}>1$ <strong>if the $\tilde S$-models had the scalar partners of $B$</strong>."</li>
+<li>"$N_{10}\ge2$ at the $SO(10)$ level" for "the presence of a SM higgs, i.e. $n_h\ge1$, and a $D(6,1,1)$, i.e. $n_6\ge1$".</li>
+<li>"Presence of a top quark mass coupling (TQMC) which amounts to fixing the following GGSO coefficients".</li>
+</ol>
+<p><strong>Condition 2 contains the paper's whole result in a subordinate clause.</strong> The $\tilde S$-models have no scalar partners of the $\mathbf{10}$-spinorial states, so the fertility condition that would normally require a heavy Higgs has to be replaced by a <em>fermionic</em> analogue. That substitution is not a technical convenience; it is forced by the absence, and the absence is what makes the models unviable.</p>
+<h3 id="the-missing-partner-mechanism-and-why-it-fails">The Missing Partner Mechanism and Why It Fails</h3>
+<p>The mechanism named: "the condition $n_6\ge1$ in 3), relates to the so–called Missing Partner Mechanism of Pati–Salam models for which we also require the $n^{(B)}_{4_R}$, $n^{(B)}_{\bar4_R}$."</p>
+<p><strong>The Missing Partner Mechanism, in the form the paper needs it</strong>: the Pati–Salam group is broken by a vev in a representation that has no partner to pair with, so the would-be Goldstone and the would-be light triplet are mismatched and the triplet gets a large mass. It requires a $\mathbf{10}$ (the $D(6,1,1)$ and the $\mathbf{1}$ inside it) plus the $\mathbf{4}_R,\bar{\mathbf4}_R$ scalars. Without the scalars, the breaking cannot be done, and the doublet–triplet splitting has no mechanism.</p>
+<p>"In regard to the second part of condition 2), having a $n^B_{4_R}-n^B_{\bar4_R}$ present we typically call having a heavy Higgs ... However, as already mentioned, the $\tilde S$–models have no such scalar components and so we cannot implement this condition."</p>
+<p><strong>So the $\tilde S$-class fails for a structural reason, not a statistical one.</strong> It is not that heavy-Higgs models are rare; it is that they do not exist in that class. That is why the conclusion is a statement about the class rather than about a parameter region.</p>
+<p>And the parallel is drawn explicitly: "We remark that this result is similar to the absence of viable supersymmetric models with $SO(10)\to SU(4)\times SU(2)\times U(1)$."</p>
+<p><strong>That parallel is worth keeping.</strong> The $SO(10)\to SU(4)\times SU(2)\times U(1)$ chain is the one with the intermediate Pati–Salam-like stage but without $SU(2)_R$; the paper says it also lacks the scalars needed. Both are cases where $SO(10)$ breaks to a subgroup that cannot complete the breaking, and in both the resolution is the same: break directly to the Standard-like Model at the string scale.</p>
+<h3 id="the-recommended-alternative">The Recommended Alternative</h3>
+<p>"Construction of $\tilde S$–models that satisfy this criteria is only possible by breaking the $SO(10)$ gauge symmetry to the Standard Model subgroup directly at the string scale."</p>
+<p>And the reason Standard-like models escape: "whereas the Standard–like models utilise Standard Model singlet states that are obtained from exotic sectors, as shown in ref. [15]."</p>
+<p><strong>The Standard-like Model does the job with singlets instead of a heavy Higgs.</strong> A singlet vev breaks nothing by itself, but combined with the exotic-sector states it can complete the chain. So the way out is not a bigger scalar multiplet but a different breaking route that uses only singlets — and that route is available only if you go directly to $SU(3)\times SU(2)\times U(1)$.</p>
+<h3 id="the-partition-function-and-math88">The Partition Function and $a_{00}=0$</h3>
+<p>"We present exemplary three generation $\tilde S$– and $S$–models that satisfy this criteria", where the criterion is "$a_{00}=N_b^0-N_f^0=0$, i.e. with equal number of bosonic and fermionic massless degrees of freedom."</p>
+<p>Two partition functions are given:</p>
+<p>$$
+Z=2q^0\bar q^{-1}+0\,q^0\bar q^0-668\,q^{1/8}\bar q^{1/8}-4224\,q^{1/4}\bar q^{1/4}+32\,q^{3/8}\bar q^{-5/8}+\cdots
+$$</p>
+<p>and</p>
+<p>$$
+Z=2q^0\bar q^{-1}+0\,q^0\bar q^0+16\,q^{1/8}\bar q^{1/8}-192\,q^{1/4}\bar q^{1/4}+192\,q^{3/8}\bar q^{3/8}-4\,q^{1/2}\bar q^{-1/2}+\cdots
+$$</p>
+<p>"Of particular interest was the observation of the misaligned supersymmetry phenomena, which guarantees the finiteness of the string amplitude in the absence of spacetime supersymmetry."</p>
+<p><strong>The $q^0\bar q^0$ coefficient is zero in both.</strong> That is $a_{00}=0$ — equal numbers of massless bosons and fermions — and it is the level at which the would-be cosmological constant vanishes. The higher levels are unequal: $-668$ against $-4224$ in the first, $16$ against $-192$ in the second.</p>
+<p><strong>Misaligned supersymmetry means the equality holds level by level only at the massless level, while the massive levels are paired in a shifted way.</strong> That is the mechanism by which a non-supersymmetric string can have a finite one-loop amplitude, and the partition functions above are the evidence.</p>
+<h3 id="on-coupling-unification-in-these-vacua">On Coupling Unification in These Vacua</h3>
+<p>"The issue of gauge coupling unification can therefore only be examined on a model by model basis and cannot be addressed in a broad classification, such as the one that we presented here."</p>
+<p>With the reasoning: "many observable sectors in the string models may still exhibit Bose–Fermi degeneracy of the Standard Model states, while differing in their charges under some other symmetries of the models. Because supersymmetry is broken, these states can no longer sit in super–multiplets, but as far as the Standard Model charges are concerned they appear just as in the supersymmetric models."</p>
+<p><strong>That is a genuinely interesting middle case</strong>: the spectrum is <em>not</em> supersymmetric, but the particles that carry Standard Model charges are degenerate in mass exactly as if it were. So the running of the gauge couplings matches the MSSM prediction even though there are no superpartners. <strong>Unification survives the loss of supersymmetry in these models</strong>, and the corpus's unification discussion, which treats the MSSM success as requiring superpartners, should note that degeneracy without supermultiplets does the same job.</p>
+<h3 id="on-stability-honestly">On Stability, Honestly</h3>
+<p>"Another problem of interest in non-supersymmetric string vacua is the existence of large tadpole diagrams that are generated due to the non–vanishing vacuum energy and reflect the instability of the string vacuum. As we cautioned above, in our view any argument of stability in non–supersymmetric string vacua is at best speculative."</p>
+<p>And the proposal: "heterotic–string models often contain an anomalous $U(1)_A$ symmetry. This anomalous $U(1)_A$ generates a non–vanishing amplitude at one–loop order in string perturbation theory, and one can envision that it can be used to cancel the one–loop diagram arising from the non–vanishing vacuum energy."</p>
+<p><strong>The anomalous $U(1)$ is proposed as the cancellation mechanism, and the paper is explicit that this is a hope rather than a result.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-a-breaking-chain-can-be-forbidden-by-the-absence-of-a-scalar-multiplet">1. A breaking chain can be forbidden by the absence of a scalar multiplet</h3>
+<p><strong>The idea.</strong> Pati–Salam needs a $\mathbf{10}$-type heavy Higgs plus $\mathbf{4}_R,\bar{\mathbf4}_R$ scalars to break to the Standard Model, and one class of string vacua simply has none. The chain is unavailable regardless of how many vacua you scan.</p>
+<p><strong>What it would add.</strong> The clearest available illustration that a breaking pattern is a <em>spectrum</em> question, not a <em>group theory</em> question. The corpus's Pati–Salam article presents the chain $SU(4)\times SU(2)\times SU(2)\to SU(3)\times SU(2)\times U(1)$ as a group-theoretic fact, which it is. But <strong>whether the chain can be realised depends on whether the required scalar exists in the spectrum</strong>, and in string constructions that is decided by the orbifold, not by you. This paper shows a whole class where the answer is no.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, in the breaking section, with the qualification that the chain needs a specific scalar content.</p>
+<p><strong>What stands in the way.</strong> Nothing. The statement is: the chain requires the $\mathbf{10}$ and the $\mathbf{4}_R,\bar{\mathbf4}_R$; those are absent in $\tilde S$-models; therefore the chain is unavailable there.</p>
+<h3 id="2-the-missing-partner-mechanism-needs-a-specific-multiplet-content">2. The Missing Partner Mechanism needs a specific multiplet content</h3>
+<p><strong>The idea.</strong> The doublet–triplet splitting in Pati–Salam is done by giving a vev to a representation with no partner. That requires the $D(6,1,1)$ and the $\mathbf{4}_R,\bar{\mathbf4}_R$, and the paper's $n_6\ge1$ condition is the mechanism's requirement.</p>
+<p><strong>What it would add.</strong> A concrete answer to "how does Pati–Salam keep the triplet heavy?" The corpus's Pati–Salam article presumably notes the doublet–triplet problem, which every unification scheme has. <strong>Here is a specific mechanism with a specific field content requirement</strong>, and the requirement is what fails in the $\tilde S$ class. That links the splitting mechanism to the spectrum in a way the corpus does not currently do.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's doublet–triplet section.</p>
+<p><strong>What stands in the way.</strong> The paper cites the mechanism (<code>[40]</code>) rather than deriving it. The corpus should record the requirement — $n_6\ge1$ plus $n_{4_R}^{B},n_{\bar4_R}^{B}$ — and note that the derivation is in the reference.</p>
+<h3 id="3-one-in-five-hundred-vacua-are-tachyon-free">3. One in five hundred vacua are tachyon-free</h3>
+<p><strong>The idea.</strong> $\sim2\times10^{-3}$ for $\tilde S$-models, $\sim10^{-2}$ for $S$-models.</p>
+<p><strong>What it would add.</strong> A number for how constrained a non-supersymmetric string vacuum is. The corpus's string discussion, if it has one, treats "string theory gives many vacua" as the landscape problem. <strong>Here the landscape is filtered by a physical requirement — no tachyons — down to one in five hundred</strong>, which is a strong constraint and it is applied before any phenomenology. That reframes the landscape from "too many vacua" to "few vacua survive the first test".</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string-construction paragraph, and any corpus discussion of the landscape.</p>
+<p><strong>What stands in the way.</strong> The number is for one class of constructions (free fermionic $Z_2\times Z_2$ orbifolds) and should not be generalised.</p>
+<h3 id="4-standard-model-charges-can-be-bosefermi-degenerate-without-supersymmetry">4. Standard Model charges can be Bose–Fermi degenerate without supersymmetry</h3>
+<p><strong>The idea.</strong> "many observable sectors in the string models may still exhibit Bose–Fermi degeneracy of the Standard Model states ... Because supersymmetry is broken, these states can no longer sit in super–multiplets, but as far as the Standard Model charges are concerned they appear just as in the supersymmetric models."</p>
+<p><strong>What it would add.</strong> A resolution to an apparent conflict the corpus carries. The corpus's unification article says the MSSM unifies and the SM does not. This paper says a non-supersymmetric string vacuum can have the <em>same</em> degeneracy and therefore the <em>same</em> unification, without superpartners. <strong>So the unification success is a property of the degeneracy, not of supersymmetry</strong>, and the corpus can say that with this as the example.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code>, as a qualification of the MSSM claim.</p>
+<p><strong>What stands in the way.</strong> The degeneracy is between states that differ in other charges, so it is not exact degeneracy — the paper says "while differing in their charges under some other symmetries". The running matches only for the Standard Model gauge couplings, not for everything.</p>
+<h3 id="5-misaligned-supersymmetry-math120-with-unequal-massive-levels">5. Misaligned supersymmetry: $a_{00}=0$ with unequal massive levels</h3>
+<p><strong>The idea.</strong> The partition functions have a zero at the massless level and unequal coefficients at every massive level, yet the one-loop amplitude is finite.</p>
+<p><strong>What it would add.</strong> A mechanism for finiteness without supersymmetry. The corpus's vacuum-energy discussion, if it has one, treats broken supersymmetry as implying a nonzero cosmological constant at the loop level. <strong>Misaligned supersymmetry is the known exception</strong>: the boson–fermion cancellation is redistributed across mass levels rather than lost. The two partition functions above are the concrete evidence: $2q^0\bar q^{-1}+0\cdot q^0\bar q^0-668\,q^{1/8}\bar q^{1/8}-\cdots$.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section, and any corpus discussion of the cosmological constant.</p>
+<p><strong>What stands in the way.</strong> Nothing for the statement; the mechanism's derivation is in the cited reference rather than in this paper.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SU(4)\times SU(2)\times SU(2)$ as an $SO(10)$ subgroup: in the Pati–Salam article.</li>
+<li>$\sin^2\theta_W=\frac38$ at the string scale from the canonical hypercharge embedding: in the Pati–Salam article; this paper states it as "the canonical prediction for the Weinberg angle $\sin^2\theta_W=3/8$ at $M_{\rm String}$".</li>
+<li>The free fermionic formulation and $Z_2\times Z_2$ orbifolds: not previously in the corpus; this is the first construction detail of that kind in the batch, alongside the Dent AdS/CFT orbifolds which are a different construction entirely.</li>
+<li>$SO(16)\times SO(16)$ heterotic string and $E_8\times E_8$: not previously in the corpus.</li>
+<li>Three-generation models from string constructions: appears in the Dent conversions (<code>0705.1995</code>, <code>0802.0180</code>) via a different route.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and the Dent AdS/CFT conversions in the same batch are both string constructions of Pati–Salam and they could not be more different in method.</p>
+<p>Dent orbifolds $AdS_5\otimes S^5$ by $Z_3$ or $Z_7$ and gets $SU(4)^3$ with three families, with the orbifold order doing the work and the family number fixed by the group theory of the orbifold. Faraggi, Matyas and Percival use free fermionic $Z_2\times Z_2$ orbifolds of the heterotic string and get $SU(4)\times SU(2)\times SU(2)$ with three families, where the family number comes from the number of spinorial $\mathbf{16}$s surviving the projections.</p>
+<p><strong>Both get three families, from different machinery, and both are called "Pati–Salam string models".</strong> That is worth recording because the corpus should not present "Pati–Salam from string theory" as one thing. The two constructions share the gauge group and the family count and nothing else: different dimensions, different orbifold groups, different supersymmetry, different breaking chains, different scales.</p>
+<p>The second thing to record is that this paper's negative result is <em>about its own class</em> and should not be read as a verdict on Pati–Salam. The $\tilde S$-models fail because of a missing multiplet, and the fix the authors propose is to break $SO(10)$ directly to the Standard-like Model at the string scale — that is, to abandon the Pati–Salam stage. Whether the $S$-models succeed is the question the paper answers affirmatively, and they do contain the heavy Higgs.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

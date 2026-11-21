@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUSY Breaking Soft Terms in the Supersymmetric Pati–Salam Landscape from Intersecting D6-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Susy breaking soft terms in the supersymmetric Pati-Salam landscape from Intersecting…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="susy-breaking-soft-terms-in-the-supersymmetric-patisalam-landscape-from-intersecting-d6-branes"><strong>SUSY Breaking Soft Terms in the Supersymmetric Pati–Salam Landscape from Intersecting D6-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2410.09093 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tianjun Li, Adeel Mansha, Rui Sun, Lina Wu</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>76 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Susy breaking soft terms in the supersymmetric Pati-Salam landscape from Intersecting D6-Branes - 2410.09093-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Susy breaking soft terms in the supersymmetric Pati-Salam landscape from Intersecting D6-Branes - 2410.09093.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Susy breaking soft terms in the supersymmetric Pati-Salam landscape from Intersecting D6-Branes - 2410.09093.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It computes the soft terms for every viable model, and finds that T-dual pairs do <em>not</em> have equal spectra.</p>
+<blockquote>
+<p>"We investigate the <strong>supersymmetry breaking soft terms for all the viable models</strong> in the complete landscape of three-family supersymmetric Pati-Salam models arising from intersecting D6-branes on a $T^6/(\mathbb Z_2\times\mathbb Z_2)$ orientifold."</p>
+<p>"The calculations are performed in the general scenario of <strong>$u$-moduli dominance with the $s$-moduli turned on</strong>, where the soft terms remain <strong>independent of the Yukawa couplings and the Wilson lines</strong>."</p>
+<p>"The results for the trilinear coupling, gaugino-masses, squared-mass parameters of squarks, sleptons and Higgs <strong>depend on the brane wrapping numbers and the susy breaking parameters.</strong>"</p>
+<p>"We find that <strong>unlike the Yukawa couplings which remain unchanged for the models dual under the exchange of two $SU(2)$ sectors, the corresponding soft term parameters only match for the trilinear coupling and the mass of the gluino.</strong> This can be explained by the internal geometry where <strong>the Yukawa interactions depend only on the triangular areas of the worldsheet instantons while the soft terms have an additional dependence on the orientation-angles of D6-branes in the three two-tori.</strong>"</p>
+<p>"<strong>In the special limit of parameter space we find universal masses for the Higgs and the gauginos.</strong>"</p>
+</blockquote>
+<p><strong>That T-duality breaking of the soft terms is the paper's most interesting result and it corrects the intuition from <code>1910.04530</code> and <code>1912.11633</code>.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-t-duality-fails-for-soft-terms">Why T-Duality Fails for Soft Terms</h3>
+<p><strong>The argument, in plain terms.</strong> The Yukawa coupling for a three-point interaction comes from a <strong>worldsheet instanton</strong> — a string worldsheet stretched between three branes — and its magnitude is $e^{-A}$ where <strong>$A$ is the area of a triangle</strong> in the internal space.</p>
+<p><strong>Area is invariant under the relevant relabelling of branes</strong>, so <strong>T-dual (or $L\leftrightarrow R$ exchanged) configurations have identical Yukawa couplings.</strong> <strong>That is why <code>1910.04530</code>'s equivalence classes work for the Yukawa sector.</strong></p>
+<p><strong>But the soft terms come from the <em>gravity-mediated</em> contributions</strong>, which involve <strong>the Kähler potential and its derivatives</strong>, and those depend on <strong>the orientation angles of the branes in each two-torus</strong> — not only on the areas.</p>
+<p><strong>Orientation angles are <em>not</em> invariant under the exchange of two stacks in general</strong>, so <strong>the soft terms differ even when the Yukawas agree.</strong></p>
+<p><strong>The corpus should record this as a sharp technical result</strong>: <strong>"equivalent models" in the Yukawa sense are not equivalent in the soft sector.</strong> <strong>And the reason is geometric</strong>: <strong>areas are symplectic invariants; angles are not.</strong></p>
+<h3 id="what-matches-and-what-does-not">What Matches and What Does Not</h3>
+<p>"the corresponding soft term parameters <strong>only match for the trilinear coupling and the mass of the gluino</strong>"</p>
+<p><strong>So two of the soft parameters survive the duality and the rest do not.</strong> <strong>The trilinear $A$-term and $M_3$ are the ones determined by the overall volume and the dilaton</strong>, which are duality-invariant; <strong>the scalar masses depend on the angles</strong>, which are not.</p>
+<p><strong>The corpus should note which observables this affects</strong>: <strong>squark and slepton masses, hence the LHC spectrum and the dark matter relic density.</strong> <strong>So the "33 models" of <code>2112.09630</code> are 33 <em>Yukawa</em> classes, and the soft sector sees more.</strong></p>
+<p><strong>That is a significant qualification and the corpus should attach it to every claim about "the 33 models".</strong></p>
+<h3 id="math9-moduli-dominance">$u$-Moduli Dominance</h3>
+<p>"the general scenario of <strong>$u$-moduli dominance with the $s$-moduli turned on</strong>"</p>
+<p><strong>The three Kähler moduli of $T^6/(\mathbb Z_2\times\mathbb Z_2)$ are usually called $t_i$ or $u_i$</strong>, and the dilaton is $s$. <strong>"$u$-moduli dominance" means the SUSY-breaking $F$-terms are dominated by the complex-structure moduli $u_i$</strong>, with the dilaton's contribution turned on as well.</p>
+<p><strong>That is a specific mediation scheme</strong>, not the general case, and it is chosen because <strong>in this limit the soft terms decouple from the Yukawa couplings and Wilson lines</strong>, which makes them computable.</p>
+<p><strong>The corpus should record the assumption</strong>: <strong>the soft-term results are for one mediation pattern.</strong> <strong>A different pattern (dilaton domination, or mirage mediation as in <code>2009.04582</code>) gives different answers.</strong></p>
+<h3 id="universal-masses-in-a-limit">Universal Masses in a Limit</h3>
+<p>"In the special limit of parameter space we find <strong>universal masses for the Higgs and the gauginos</strong>"</p>
+<p><strong>So there is a corner where the model becomes mSUGRA-like</strong>, which makes it comparable with the standard SUSY searches. <strong>That is the useful limit for collider work</strong>: <strong>the corpus can compare these models with the constrained MSSM in that corner.</strong></p>
+<p><strong>And outside it, the spectrum is non-universal</strong>, which is the interesting case for flavour physics but harder to search for.</p>
+<h3 id="the-scope">The Scope</h3>
+<p><strong>76 pages, all the viable models, all the soft parameters.</strong> <strong>This is a reference computation.</strong></p>
+<p><strong>The corpus should cite it for soft spectra</strong> rather than re-deriving, exactly as it cites <code>2409.09110</code> for Yukawas.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-yukawa-equivalent-models-are-not-soft-term-equivalent">1. Yukawa-equivalent models are not soft-term-equivalent</h3>
+<p><strong>The idea.</strong> Areas are invariant under stack exchange; orientation angles are not.</p>
+<p><strong>What it would add.</strong> A correction to the "33 models" claim, and a sharp geometric statement. <strong>The corpus must not treat the 33 classes as 33 complete models.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-only-math19-terms-and-math20-survive-the-duality">2. Only $A$-terms and $M_3$ survive the duality</h3>
+<p><strong>The idea.</strong> Volume- and dilaton-determined parameters are invariant; angle-dependent scalar masses are not.</p>
+<p><strong>What it would add.</strong> A precise statement of which observables see the extra models. <strong>The LHC spectrum and dark matter do.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-soft-terms-assume-math21-moduli-dominance">3. The soft terms assume $u$-moduli dominance</h3>
+<p><strong>The idea.</strong> The results are for one mediation pattern.</p>
+<p><strong>What it would add.</strong> A caveat the corpus must attach to any spectrum claim. <strong>Compare <code>2009.04582</code>'s mirage mediation.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-a-universal-mass-corner-exists">4. A universal-mass corner exists</h3>
+<p><strong>The idea.</strong> In a parameter limit the spectrum becomes mSUGRA-like.</p>
+<p><strong>What it would add.</strong> A bridge to the constrained-MSSM literature and the LHC searches.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's SUSY section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The 33-model census and T-duality equivalence: in <code>2112.09630</code>, <code>1910.04530</code>, <code>1912.11633</code>.</li>
+<li>Worldsheet instanton Yukawas: in <code>2202.07048</code>.</li>
+<li>Mirage mediation: in <code>2009.04582</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is a correction to the cluster's central count, and the corpus should treat it as such.</p>
+<p><strong><code>2112.09630</code> says: 33 equivalence classes.</strong> <strong>Here: those classes are defined by Yukawa couplings and gauge-coupling relations, and the soft terms distinguish more.</strong></p>
+<p><strong>So the landscape's true multiplicity depends on which sector you look at</strong>, and <strong>the corpus should stop saying "33 models" and start saying "33 Yukawa classes".</strong></p>
+<p><strong>The deeper point</strong>: <strong>this is the same lesson as <code>2303.02864</code>'s hidden-sector sensitivity</strong> — <strong>the census's equivalence relations are sector-dependent, and each sector reveals new distinctions.</strong> <strong>Two papers, two corrections, both reducing the confidence of a clean count.</strong></p>
+<p><strong>And that is the right way for a census to end</strong>: <strong>not with a number but with a map of what the number counts.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

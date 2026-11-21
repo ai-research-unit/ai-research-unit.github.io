@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lepton-flavour violation in a Pati–Salam model with gauged flavour symmetry — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Feldmann - Lepton-flavour violation in a Pati-Salam model with gauged flavour symmetry -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="lepton-flavour-violation-in-a-patisalam-model-with-gauged-flavour-symmetry"><strong>Lepton-flavour violation in a Pati–Salam model with gauged flavour symmetry</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1608.04124 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Thorsten Feldmann, Christoph Luhn, Paul Moch</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 14 August 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint QFET-2016-16, SI-HEP-2016-26, Siegen)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>29 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Feldmann - Lepton-flavour violation in a Pati-Salam model with gauged flavour symmetry - 1608.04124-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Feldmann - Lepton-flavour violation in a Pati-Salam model with gauged flavour symmetry - 1608.04124.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Feldmann - Lepton-flavour violation in a Pati-Salam model with gauged flavour symmetry - 1608.04124.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. This is the companion to <code>1506.00782</code> in the same batch and completes the lepton sector that paper left open.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It fixes the charged-lepton masses in the Feldmann–Hartmann–Kilian–Luhn model, and the fix is the interesting part.</p>
+<p>In the base model, $Y_\ell=Y_d$ exactly.</p>
+<blockquote>
+<p>"Turning to the charged leptons, we observe that the effective Yukawa matrix $Y_\ell$ is identical to the down-type quark Yukawa matrix $Y_d$. Although this provides a reasonable first approximation, it is clear that an extension of some sort is required."</p>
+</blockquote>
+<p><strong>That identity is a Pati–Salam prediction and it is off by a factor of about three.</strong> $m_\mu/m_s\approx3$ at unification scale, so the leading relation gives the muon a third of its mass (or the strange quark three times its mass — the direction depends on which you fit). The resolution:</p>
+<blockquote>
+<p>"The idea consists in enlarging the scalar sector by flavour symmetry breaking flavon fields which transform in the adjoint representation of $SU(4)$, i.e. in the $\mathbf{15}$."</p>
+</blockquote>
+<p>And then:</p>
+<blockquote>
+<p>"The presence of the adjoint entails a difference between quarks and leptons: the $SU(3)$ conserving direction of the $\mathbf{15}$, written as a matrix, is $\mathrm{Diag}(1,1,1,-3)$ so that the leptons pick up a relative factor of $-3$ compared to the quarks."</p>
+</blockquote>
+<p><strong>That $\mathrm{Diag}(1,1,1,-3)$ is the Georgi–Jarlskog factor, and here it comes from the structure of $SU(4)$ rather than from a chosen Higgs multiplet.</strong> The paper says so: "This so-called Georgi–Jarlskog factor was first discussed in the context of $SU(5)$ ... where the scalar sector was enlarged by a Higgs multiplet in the $\mathbf{45}$ which (contrary to the standard Higgs in the $\mathbf{5}$) treats quarks and leptons differently."</p>
+<p>So the paper's central structure is:</p>
+<p>$$
+s_q=s_1+s_{15},\quad t'_q=t'_1+t'_{15}
+\qquad\text{(quarks)}
+$$
+$$
+s_\ell=s_1-3s_{15},\quad t'_\ell=t'_1-3t'_{15}
+\qquad\text{(leptons)}
+$$</p>
+<p><strong>One flavon, two normalisations, factor $-3$.</strong> The same field sets both sectors, and the only difference is a number that the group theory fixes.</p>
+<p>Then the LFV analysis: $\mu\to e\gamma$, $\mu\to3e$, $\mu N\to eN$, and the $\tau$ modes.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-adjoint-and-why-it-is-not-optional">Why the Adjoint, and Why It Is Not Optional</h3>
+<p>"A setup where all $SU(4)$ singlet flavon fields are accompanied by flavons in the adjoint of $SU(4)$ therefore decouples the flavour structure of the quark and lepton sector completely."</p>
+<p><strong>Read that sentence carefully: it says "decouples".</strong> Adding the adjoint to every singlet gives the lepton sector its own independent flavon combinations $s_\ell$ and $t'_\ell$, built from the same fields but in different ratios. So the quark and lepton flavour structures are <em>independent</em> while still being generated by the same mechanism and the same fields. <strong>That is a stronger statement than "we added a field to fix the muon"</strong> — the lepton sector becomes as free as it needs to be, with no new parameters beyond the adjoint VEVs.</p>
+<p>The Yukawa Lagrangian gets a simple substitution:</p>
+<p>$$
+\Sigma_L(\kappa_S S)\Sigma_R\;\longrightarrow\;\Sigma_L(\kappa_{S_1}S_1+\kappa_{S_{15}}S_{15})\Sigma_R,
+$$</p>
+<p>with dimensionless matrices $s_i=\kappa_{S_i}\langle S_i\rangle/M$. So the new physics is a splitting of one coupling into two, not a new interaction.</p>
+<p><strong>The cost is one adjoint per singlet.</strong> The particle content grows by $S_{15}$ and $T'_{15}$, and the payoff is that $m_\mu/m_s$ comes out with the right factor instead of by hand.</p>
+<h3 id="where-the-math31-comes-from">Where the $-3$ Comes From</h3>
+<p>The adjoint of $SU(4)$ is fifteen-dimensional, and its $SU(3)$-conserving component is the generator</p>
+<p>$$
+\mathrm{Diag}(1,1,1,-3),
+$$</p>
+<p>whose trace is zero, as a generator must be. The first three entries act on colour, the fourth on lepton number. So a lepton in the fourth position picks up $-3$ times what a quark picks up.</p>
+<p><strong>That is the whole mechanism, and it is exact group theory.</strong> No tuning, no choice of parameters: the tracelessness of the Cartan generator forces the lepton entry to be minus the sum of the three quark entries, so the ratio is $-3$ and not something adjustable.</p>
+<p><strong>The corpus should record this as the Pati–Salam derivation of Georgi–Jarlskog.</strong> In $SU(5)$ the $-3$ comes from the relative normalisation of the $\mathbf{45}$ and the $\mathbf5$, which is a group-theory fact of $SU(5)$ with the same content. In $SU(4)$ it comes from the trace of the adjoint, which is the same fact seen in a smaller group. <strong>Both give $-3$ because both are counting the same thing: three colours against one lepton.</strong></p>
+<h3 id="why-math44-in-the-first-place">Why $Y_\ell=Y_d$ in the First Place</h3>
+<p>The reason is worth stating because it is the general Pati–Salam prediction: $q_L$ and $\ell_L$ sit in the same $\mathbf4$, and $q_R$, $\ell_R$ in the same $\mathbf4$ of the other chirality. A flavon that is an $SU(4)$ singlet cannot tell the fourth component from the first three, so whatever it does to the down-type quark it does identically to the charged lepton.</p>
+<p><strong>So $m_d=m_e$, $m_s=m_\mu$, $m_b=m_\tau$ at the Pati–Salam scale</strong>, and the third relation is approximately right while the first two are badly wrong. <strong>Pati–Salam predicts the $b$–$\tau$ unification correctly and fails on the other two by factors of order a few</strong>, which is the same pattern as $SU(5)$ and is the historical motivation for Georgi–Jarlskog.</p>
+<h3 id="the-lfv-calculation">The LFV Calculation</h3>
+<p>The $9\times9$ charged-lepton mass matrix, in the basis $\Psi_R^\ell=(q_R^\ell,\Sigma_R^\ell,\Xi_R^\ell)$,</p>
+<p>$$
+M_\ell=\begin{pmatrix}0&1&\lambda\epsilon_d\\1&0&\tfrac12(s_\ell-t'_\ell)\\ \lambda\epsilon_d&\tfrac12(s_\ell-t'_\ell)&0\end{pmatrix}M,
+$$</p>
+<p>with $\epsilon_d\equiv v_d/M$ built from the down-type Higgs VEV and $\epsilon_d\sim246\text{ GeV}/M$.</p>
+<p><strong>The zeros are the structure.</strong> The light lepton does not couple directly to the Higgs; it couples through one heavy partner, and the mass comes out as the product of two off-diagonal entries divided by $M$ — a seesaw, in the mass matrix rather than in the neutrinos. <strong>That is why the light masses are so small without small Yukawa couplings</strong>, and it is the same inversion as in <code>1506.00782</code>.</p>
+<p>Diagonalising this rotates the lepton fields, and the rotation does not commute with the gauge couplings, so the $W$ and $Z$ couplings become non-diagonal in the mass basis. <strong>Those off-diagonal couplings are the LFV.</strong> The paper's list: "anomalous couplings of the leptons to the electroweak gauge bosons $W$ and $Z$", plus "the anomalous Higgs coupling".</p>
+<h3 id="the-predictions">The Predictions</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>process</th>
+<th>current limit</th>
+<th>future limit</th>
+<th>this model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Br}(\mu\to e\gamma)$</td>
+<td>$4.2\times10^{-13}$</td>
+<td>$6\times10^{-14}$</td>
+<td>compatible, one-loop suppressed</td>
+</tr>
+<tr>
+<td>$\mathrm{Br}(\mu\to3e)$</td>
+<td>$1\times10^{-12}$</td>
+<td>$1\times10^{-16}$</td>
+<td>tree-level, reachable</td>
+</tr>
+<tr>
+<td>$\mathrm{Br}^{\rm Au}(\mu N\to eN)$</td>
+<td>$7\times10^{-13}$</td>
+<td>$1\times10^{-16}$</td>
+<td>tree-level, reachable</td>
+</tr>
+</tbody>
+</table></div>
+<p>"All three plots show the expected scaling of the branching fractions with the small parameter $\epsilon_d^4\propto1/M^4$."</p>
+<p>"The small values for the $\mu\to e\gamma$ branching ratio can be explained by the <strong>one-loop</strong> suppression of the effective Wilson coefficients relevant to this decay in our model. In contrast, the $\mu\to3e$ decay and $\mu\to e$ conversion are induced by <strong>tree-level</strong> processes which lead to larger effects, and thus the present and future experimental bounds cut stronger into the NP parameter space."</p>
+<p><strong>The pattern is the model's signature and it is worth stating precisely.</strong> Most LFV models — supersymmetry, little Higgs, left–right models — generate $\mu\to e\gamma$ at one loop through the dipole operator and generate $\mu\to3e$ from the same dipole by attaching a photon, so the two are locked together by $\mathrm{Br}(\mu\to3e)\approx\frac{\alpha}{3\pi}\mathrm{Br}(\mu\to e\gamma)$ up to logs. <strong>Here the dipole is one-loop and the four-fermion operators are tree-level, so the ratio is inverted</strong>: $\mu\to3e$ and $\mu N\to eN$ are enhanced relative to $\mu\to e\gamma$, not suppressed.</p>
+<p>"Both $\mu\to3e$ and $\mu N\to eN$ are strongly correlated, a feature also known from other LFV models where the dipole operators are suppressed compared to the 4-fermion operators ... On the other hand, the loop-induced decay $\mu\to e\gamma$ shows only weak correlations with both."</p>
+<p><strong>So the model makes a correlation prediction</strong>: measure $\mu\to3e$ and $\mu N\to eN$ and they should track each other; measure $\mu\to e\gamma$ and it should not track them. That is falsifiable in a way that "we predict LFV somewhere" is not.</p>
+<p>"Especially in the case of muon conversion, with the anticipated future sensitivity, our model could lead to clear LFV signals."</p>
+<h3 id="the-math93-sector-and-the-edm">The $\tau$ Sector and the EDM</h3>
+<p>"we found that the branching ratios predicted within our model turn out to be orders of magnitude smaller than the corresponding current experimental limits" — with $\mathrm{Br}(\tau\to\mu\gamma)<4.4\times10^{-8}$ and $\mathrm{Br}(\tau\to3\mu)<2.1\times10^{-8}$ as the comparisons.</p>
+<p>"Similarly, contributions to the electron EDM are parametrically suppressed and safely below the present experimental bound."</p>
+<p><strong>The $\tau$ modes are suppressed because the third generation is where the new physics is.</strong> That sounds backwards, and it is worth noting why it is not: the $\tau$ decays need a $\tau\to\mu$ transition, which requires the <em>mixing</em> between third and second generation in the new-physics sector, and that mixing is small because the third generation is where the flavon VEVs are smallest. <strong>The same inversion that makes the third generation the lightest partner also keeps the third-generation LFV small in absolute terms.</strong></p>
+<h3 id="the-neutrino-decoupling">The Neutrino Decoupling</h3>
+<p>"we do not pursue a numerical fit to neutrino oscillation data because the implementation of light Majorana neutrino masses in our model introduces the independent flavour structure of $\langle S_\nu\rangle$ so that a realistic PMNS mixing matrix can always be achieved regardless of quark and charged-lepton flavour."</p>
+<p>"In particular, the neutrino sector with the phenomenology of the PMNS matrix is completely decoupled from LFV in the charged-lepton sector."</p>
+<p><strong>That is a prediction of decoupling, and the corpus should hold it as one.</strong> The model does not relate the PMNS matrix to the CKM, and does not predict LFV from neutrino mixing. <strong>So a future measurement of $\mu\to e\gamma$ correlated with $\theta_{13}$ would not fit this model</strong>, and correlating the two is exactly what many leptogenesis and flavour-symmetry models do.</p>
+<h3 id="against-mfv">Against MFV</h3>
+<p>"our particular model ... leads to small flavour-violating effects in the charged-lepton sector, <strong>without imposing the concept of minimal flavour violation in the technical sense</strong>."</p>
+<p><strong>That is the paper's claim to interest.</strong> MFV postulates that the only flavour-breaking objects are the Yukawa matrices, which makes new physics automatically safe. Here the flavour breaking is done by flavon VEVs which are <em>not</em> the Yukawa matrices — they are the objects the Yukawas are built from — and the safety comes from the structure of the mechanism instead. <strong>So the model achieves MFV-like suppression without MFV's assumption</strong>, which is the distinction the paper is drawing and the reason it bothers to compute the LFV at all.</p>
+<h3 id="the-particle-content-complete">The Particle Content, Complete</h3>
+<p>Full symmetry $SU(4)\times SU(2)\times SU(2)'\times SU(3)_I\times SU(3)_{II}\times Z_2$ with</p>
+<ul>
+<li>$q_L\sim(\mathbf4,\mathbf2,\mathbf1)_{(\mathbf3,\mathbf1)}$, $q_R\sim(\mathbf4,\mathbf1,\mathbf2)_{(\mathbf1,\mathbf3)}$;</li>
+<li>$H\sim(\mathbf1,\mathbf2,\mathbf2)_{(\mathbf1,\mathbf1)}$ with VEVs $v_{u,d}$;</li>
+<li>$\Sigma_L\sim(\mathbf4,\mathbf1,\mathbf2)_{(\mathbf1,\mathbf3)}$, $\Sigma_R\sim(\mathbf4,\mathbf1,\mathbf2)_{(\mathbf3,\mathbf1)}$, and $\Xi_{L,R}$ the $Z_2$ conjugates;</li>
+<li>flavons $S_{1},S_{15}$ in $(\mathbf1+\mathbf{15},\mathbf1,\mathbf1)_{(\mathbf3,\mathbf3)}$, $T'_{1},T'_{15}$ in $(\mathbf1+\mathbf{15},\mathbf1,\mathbf3)_{(\mathbf3,\mathbf3)}$, $T_{1},T_{15}$ in $(\mathbf1+\mathbf{15},\mathbf3,\mathbf1)_{(\mathbf3,\mathbf3)}$;</li>
+<li>$\Theta_{L,R}$ PS-neutral in $(\mathbf1,\mathbf1,\mathbf1)_{(\mathbf3,\mathbf8),(\mathbf8,\mathbf3)}$ with Majorana masses from $S_\nu,S'_\nu$;</li>
+<li>$\Phi\sim(\mathbf4,\mathbf2,\mathbf1)_{(\mathbf8,\mathbf1)}$, $\Phi'\sim(\mathbf4,\mathbf1,\mathbf2)_{(\mathbf1,\mathbf8)}$ with VEV $\phi\Lambda_\phi$, which break PS to the SM.</li>
+</ul>
+<p><strong>The $\Phi$ and $\Phi'$ are the fields that break Pati–Salam</strong>, in the $\mathbf4$ rather than the $\mathbf{10}$ or the $\mathbf{126}$. So the breaking here is done by a fundamental of $SU(4)$, which is the minimal choice, and the leptoquark mass is tied to $\Lambda_\phi$.</p>
+<p>Note the flavour representations on $\Theta$: $(\mathbf3,\mathbf8)$ and $(\mathbf8,\mathbf3)$, which is what anomaly cancellation requires given the other fields. <strong>The adjoint of $SU(3)_I$ and the triplet of $SU(3)_{II}$</strong>, mismatched on purpose.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-georgijarlskog-factor-math135-is-the-trace-of-an-math136-generator">1. The Georgi–Jarlskog factor $-3$ is the trace of an $SU(4)$ generator</h3>
+<p><strong>The idea.</strong> The $SU(3)$-conserving direction of the $SU(4)$ adjoint is $\mathrm{Diag}(1,1,1,-3)$, so leptons get $-3$ times the quark contribution.</p>
+<p><strong>What it would add.</strong> A derivation rather than a postulate. Georgi–Jarlskog is usually introduced as a phenomenological fix — insert a factor $-3$ in the $\mu$–$s$ relation and the masses come out right at $10^{16}$ GeV. <strong>Here it is not a fix; it is forced.</strong> Tracelessness of the Cartan generator means the lepton entry must be minus the sum of the three colour entries, so the ratio is fixed at $-3$ with no freedom. The corpus's mass-relation discussion, which presumably states $m_\mu=3m_s$ as an empirical rule, can now say where the 3 comes from.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code> in the mass-relations section, and <code>articles_physics/asymptotic-freedom-and-the-running-of-the-strong-coupling.md</code> if the fermion mass relations are discussed there.</p>
+<p><strong>What stands in the way.</strong> Nothing. The statement is the generator's trace, and $1+1+1-3=0$.</p>
+<h3 id="2-patisalam-predicts-math148-math149-math150-at-the-ps-scale">2. Pati–Salam predicts $m_e=m_d$, $m_\mu=m_s$, $m_b=m_\tau$ at the PS scale</h3>
+<p><strong>The idea.</strong> $q$ and $\ell$ sit in the same $\mathbf4$, so an $SU(4)$-singlet Higgs or flavon cannot distinguish them, and $Y_\ell=Y_d$ identically.</p>
+<p><strong>What it would add.</strong> The complete statement of what Pati–Salam predicts for fermion masses, including which of the three relations works. $m_b=m_\tau$ is right to within the running. $m_\mu=m_s$ is off by about a factor of three and $m_e=m_d$ by a factor of about three in the other direction (the ratios are wrong in a pattern that $-3$ and $1/3$ fix simultaneously). <strong>That pattern — one relation right, two wrong by inverse factors — is the evidence for Georgi–Jarlskog</strong>, and the corpus should present it as such rather than as three independent coincidences.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's mass-relations section.</p>
+<p><strong>What stands in the way.</strong> The paper states $Y_\ell=Y_d$ and quotes the fix; the numerical comparison to data at the unification scale is in the companion paper and in the Georgi–Jarlskog paper itself.</p>
+<h3 id="3-tree-level-math162-with-loop-level-math163-inverts-the-usual-lfv-pattern">3. Tree-level $\mu\to3e$ with loop-level $\mu\to e\gamma$ inverts the usual LFV pattern</h3>
+<p><strong>The idea.</strong> The dipole is one loop, the four-fermion operators are tree. So $\mu\to3e$ and $\mu N\to eN$ are relatively enhanced, and correlated with each other but not with $\mu\to e\gamma$.</p>
+<p><strong>What it would add.</strong> A falsifiable pattern rather than a bound. Most LFV models give $\mathrm{Br}(\mu\to3e)\approx\frac{\alpha}{3\pi}\mathrm{Br}(\mu\to e\gamma)$, so a $\mu\to3e$ signal without a $\mu\to e\gamma$ signal would rule them out. <strong>This model predicts exactly that</strong>, which makes it distinguishable at Mu3e and Mu2e. The corpus's LFV discussion, if it has one, should record the pattern and not just the rates.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's lepton-flavour section.</p>
+<p><strong>What stands in the way.</strong> Nothing for the qualitative statement. The precise correlation depends on the mixing angles in $U_s$ and $V_s$, which the paper scans.</p>
+<h3 id="4-lfv-is-safe-without-imposing-mfv">4. LFV is safe without imposing MFV</h3>
+<p><strong>The idea.</strong> The flavon VEVs are not the Yukawa matrices, so MFV's assumption does not apply, yet the suppression is automatic.</p>
+<p><strong>What it would add.</strong> A counterexample to the belief that MFV is necessary for flavour safety. The corpus's flavour discussion, if it treats MFV as the standard answer to "why is new physics not seen in $K$–$\bar K$", can note that <strong>a model can be safe for a structural reason instead</strong> — the heavy partners couple through the flavon matrices, which are hierarchical, so the first two generations decouple automatically. That is the same mechanism as <code>1506.00782</code> and it is the programme's recurring claim.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> The paper says the suppression is "without imposing MFV in the technical sense" but does not prove that the first-two-generation suppression is generic rather than a feature of the scanned parameter range.</p>
+<h3 id="5-the-neutrino-sector-decouples-from-charged-lepton-lfv">5. The neutrino sector decouples from charged-lepton LFV</h3>
+<p><strong>The idea.</strong> $\langle S_\nu\rangle$ is an independent flavour structure, so the PMNS matrix can be fitted whatever the charged-lepton sector does.</p>
+<p><strong>What it would add.</strong> A negative prediction that excludes a class of correlations. Many models tie $\mu\to e\gamma$ to $\theta_{13}$ or to the leptogenesis phase through the same flavons. <strong>Here they are independent</strong>, so an observed correlation would disfavour this construction. Recording the decoupling is as useful as recording a prediction, because it tells you what the model does <em>not</em> say.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section, next to the seesaw discussion.</p>
+<p><strong>What stands in the way.</strong> Nothing. It is the authors' own statement.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SU(4)\times SU(2)\times SU(2)'\times SU(3)_I\times SU(3)_{II}\times Z_2$: introduced in the <code>1506.00782</code> conversion in this batch.</li>
+<li>Two heavy partners per SM fermion, forced by the $Z_2$: in <code>1506.00782</code>.</li>
+<li>$Y_{u,d}\simeq-\lambda(t^{-1}+s^{-1})$ and the eight vacua: in <code>1506.00782</code>.</li>
+<li>The $SU(2)'$ triplet flavon $T'$ needed to split $Y_u$ from $Y_d$: in <code>1506.00782</code>.</li>
+<li>The $b$–$\tau$ unification at the Pati–Salam scale: in the Pati–Salam article.</li>
+<li>Georgi–Jarlskog as an $SU(5)$ $\mathbf{45}$ effect: not previously in the corpus; this paper gives the $SU(4)$ version.</li>
+<li>$\mu\to e\gamma$, $\mu\to3e$ and $\mu N\to eN$ current bounds: new to the corpus.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and <code>1506.00782</code> are one model split across two papers by sector, and together they answer a question the corpus should be able to answer: <strong>does Pati–Salam predict anything about fermion masses that survives?</strong></p>
+<p>The answer is a qualified yes, in three layers.</p>
+<ol>
+<li><strong>The leading relations</strong> $m_d=m_e$, $m_s=m_\mu$, $m_b=m_\tau$ follow from the $\mathbf4$ multiplet structure and are free. One of the three ($b$–$\tau$) is good.</li>
+<li><strong>The factor $-3$</strong> follows from the $SU(4)$ adjoint and is also free, and it repairs the other two.</li>
+<li><strong>Everything else</strong> — the detailed Yukawa matrices — is <em>not</em> predicted; it is fitted by flavon VEVs, with eight vacua and a set of parameters that the model does not determine.</li>
+</ol>
+<p><strong>So Pati–Salam predicts two numbers ($1$ and $-3$) and fits the rest.</strong> That is a large claim for a unified theory and a modest one at the same time, and it is the honest summary. The corpus's Pati–Salam article should say exactly this, because it distinguishes Pati–Salam from $SU(5)$ (which gives $m_d=m_e$ but needs the $\mathbf{45}$ for the $-3$) and from $SO(10)$ (which gives $m_u=m_d$ at the renormalisable level, a relation that is badly wrong).</p>
+<p>The second thing to record: <strong>both papers put the new physics in the third generation and both find it just below current sensitivity.</strong> <code>1506.00782</code> finds effects of order $\epsilon^2\sim6\%$ in CKM unitarity and $Z$ couplings; this paper finds $\mu\to3e$ and $\mu N\to eN$ at the edge of Mu3e and Mu2e reach for $M\sim$ few TeV. <strong>The same TeV-scale fermion partners explain both, so the two sets of predictions rise and fall together.</strong> That is a genuine correlation between a quark-sector and a lepton-sector observable, and it comes from the shared new-physics scale rather than from a symmetry.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

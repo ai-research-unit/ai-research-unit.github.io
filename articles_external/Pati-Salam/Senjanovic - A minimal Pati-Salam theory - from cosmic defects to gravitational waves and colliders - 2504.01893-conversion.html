@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Minimal Pati–Salam Theory: From Cosmic Defects to Gravitational Waves and Colliders — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Senjanovic - A minimal Pati-Salam theory - from cosmic defects to gravitational waves and…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-minimal-patisalam-theory-from-cosmic-defects-to-gravitational-waves-and-colliders"><strong>A Minimal Pati–Salam Theory: From Cosmic Defects to Gravitational Waves and Colliders</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2504.01893 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Goran Senjanović, Michael Zantedeschi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>2 April 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, LMU Munich / INFN Pisa)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Senjanovic - A minimal Pati-Salam theory - from cosmic defects to gravitational waves and colliders - 2504.01893-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Senjanovic - A minimal Pati-Salam theory - from cosmic defects to gravitational waves and colliders - 2504.01893.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Senjanovic - A minimal Pati-Salam theory - from cosmic defects to gravitational waves and colliders - 2504.01893.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It takes the <em>minimal</em> renormalisable Pati–Salam theory — the one with <strong>doublet</strong> Higgs fields doing the breaking — and works out what it implies for cosmology.</p>
+<blockquote>
+<p>"We discuss a minimal renormalizable Pati-Salam theory based on the $SU(4)_C\times SU(2)_L\times SU(2)_R$ gauge group, <strong>with unification scale Higgs multiplets taken as $SU(2)_L$ and $SU(2)_R$ doublets</strong>, which lead to <strong>neutrino Dirac picture</strong>."</p>
+</blockquote>
+<p>"Although a number of scalar particles could be light, even lying at the LHC energies, <strong>the unification scale is hopelessly out of reach in any foreseeable future</strong>. Moreover, <strong>phase transition in the early Universe leads to the production of magnetic monopoles and domain walls, both incompatible with the standard cosmological model</strong>."</p>
+<p><strong>So the theory is unobservable at colliders and excluded by cosmology — and the paper's contribution is that the exclusion is diagnosable and the repair is predictive.</strong></p>
+<p>"A small explicit breaking of the discrete left-right symmetry allows the domain walls to decay, and in the process possibly sweep away the monopoles ... This leaves an <strong>important imprint of gravitational waves, within the reach of next generation searches, correlated with monopole detection and new light particles at collider energies</strong>."</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-choice-of-higgs-multiplet-matters-so-much">Why the Choice of Higgs Multiplet Matters So Much</h3>
+<p>"with unification scale Higgs multiplets taken as $SU(2)_L$ and $SU(2)_R$ doublets, which lead to neutrino <strong>Dirac</strong> picture."</p>
+<p><strong>This is the crux and it is worth stating carefully.</strong> In Pati–Salam the $B-L$ breaking can be done by different scalar representations, and the choice determines the neutrino mass mechanism:</p>
+<ul>
+<li>A <strong>$(\mathbf{10},\mathbf1,\mathbf3)$ or $(\mathbf{15},\mathbf1,\mathbf3)$</strong> gives a large Majorana mass to $\nu_R$ → type-I seesaw → Majorana neutrinos.</li>
+<li>A <strong>$(\mathbf1,\mathbf1,\mathbf3)$ or doublet-like</strong> field gives no large $\nu_R$ mass → neutrinos are <strong>Dirac</strong>, with the small mass coming from a small Yukawa.</li>
+</ul>
+<p><strong>So the Higgs sector choice is not cosmetic; it decides whether neutrinos are their own antiparticles.</strong> The corpus's article treats the seesaw as automatic in Pati–Salam, and this paper shows it is not: the minimal renormalisable model with doublets gives Dirac neutrinos.</p>
+<p>"the Dirac neutrino picture, the latter to the Majorana one based on the seesaw mechanism. Over the years, ... in the absence of any experimental hint of the neutrino Majorana feature, <strong>it is worthwhile to also consider the Dirac picture</strong> — after all, it was the original one."</p>
+<p><strong>That is a fair historical point</strong>: the seesaw was introduced because it explains smallness, not because data demanded Majorana. <strong>Given that $0\nu\beta\beta$ has not been seen, the Dirac option deserves the same attention.</strong></p>
+<p><strong>And a Dirac neutrino mass needs a tiny Yukawa ($\sim10^{-12}$), which is a different naturalness problem than the seesaw's large $M_R$.</strong> The paper accepts it.</p>
+<h3 id="the-unification-scale-and-why-it-is-hopeless">The Unification Scale, and Why It Is Hopeless</h3>
+<p>"The $M_{PS}$ scale we found in the 1-loop analysis is lowered, at most, by roughly 10% [at two loops]. Namely, assuming all the new scalar states are at $M_{PS}$, we find $M_{PS}^{\rm 2-loop}\simeq4.6\times10^{13}$ GeV as opposed to $M_{PS}^{\rm 1-loop}\simeq5\times10^{13}$ GeV."</p>
+<p>"if the [Higgs doublets] are also light, around TeV scale, we get the lower bound on PS scale $M_{PS}^{\rm 2-loop}\gtrsim4.1\times10^{11}$ GeV."</p>
+<p><strong>So the scale is $10^{11}$–$10^{13}$ GeV — high enough that no collider reaches it, low enough to be interesting for cosmology.</strong> That combination is exactly what makes the paper work: <strong>a scale too high to produce directly is still low enough to have left a phase-transition imprint.</strong></p>
+<p>"For arbitrary scalar mass thresholds, a light $(\mathbf3_C,\mathbf2_L)_{7/6\,Y}$ has the largest effect in lowering $M_{PS}$."</p>
+<p><strong>A scalar with electric charge $7/6$</strong> — that is a doubly-charged-plus-one object, a distinctive prediction, and it is the state that pulls the unification scale down. <strong>The corpus should record it</strong>: a $7/6$ scalar is a signature that would identify this model at a collider even though the unification scale is unreachable.</p>
+<h3 id="the-cosmological-disaster">The Cosmological Disaster</h3>
+<p>"phase transition in the early Universe leads to the production of <strong>magnetic monopoles and domain walls, both incompatible</strong> with the standard cosmological model."</p>
+<p><strong>Both, and for different reasons:</strong>
+- <strong>Monopoles</strong>: $SU(4)\to SU(3)\times U(1)$ leaves a monopole, and the Kibble mechanism produces them in abundance unless inflation or a later dilution removes them.
+- <strong>Domain walls</strong>: the discrete $L\leftrightarrow R$ parity is spontaneously broken, and the resulting walls would dominate the energy density.</p>
+<p><strong>The domain-wall problem is the worse one</strong> because walls do not dilute with expansion the way monopoles do — they scale as $1/a$ in energy density while matter scales as $1/a^3$, so they come to dominate. <strong>A stable domain wall is fatal</strong>, not merely problematic.</p>
+<h3 id="the-repair-and-why-it-gives-gravitational-waves">The Repair, and Why It Gives Gravitational Waves</h3>
+<p>"A <strong>small explicit breaking</strong> of the discrete left-right symmetry allows the domain walls to decay, and in the process <strong>possibly sweep away the monopoles</strong>."</p>
+<p><strong>The mechanism is worth spelling out</strong>: a small bias term makes the walls unstable, they annihilate, and as they do the monopoles are swept up and annihilated at the wall boundaries. <strong>One bias fixes both problems.</strong></p>
+<p><strong>And the wall annihilation produces gravitational waves</strong>, because the walls carry energy and their collapse is violent:</p>
+<p>$$
+\Omega_{\rm GW}h^2|_{\rm peak}=3\times10^{-7}\left(\frac{g_{\star s}(T_{\rm ann})}{100}\right)^{-4/3}\left(\frac{\sigma_{\rm Wall}}{10^{10}\ {\rm GeV}^3}\right)^2\left(\frac{10^{13}\ {\rm GeV}}{T_{\rm ann}}\right)^2,
+$$</p>
+<p>$$
+4\times10^{11}\ {\rm GeV}\lesssim\sigma_{\rm Wall}\sim M_{PS}\lesssim10^{13}\ {\rm GeV},\qquad
+10^8\ {\rm GeV}\lesssim T_{\rm ann}\lesssim10^{10}\ {\rm GeV},
+$$</p>
+<p>$$
+10\ {\rm Hz}\lesssim f_{\rm peak}\lesssim10^3\ {\rm Hz}.
+$$</p>
+<p><strong>That frequency range is the important output: 10 Hz to 1 kHz is where DECIGO, BBO, the Einstein Telescope and Cosmic Explorer operate</strong>, and it is above LISA's band. <strong>So the prediction is aimed at the next generation of ground-based and space-based detectors, and it is a range rather than a point.</strong></p>
+<p>"the amplitude of the signal becomes <strong>independent of the underlying model parameters</strong> and is represented by the horizontal blue line in Fig. 2."</p>
+<p><strong>That is the strongest form of prediction</strong>: not a curve depending on inputs, but a plateau that follows from the cosmology alone. <strong>And the paper notes that moving off it "likely reintroduces the monopole problem"</strong>, so the model's own consistency pins the signal.</p>
+<p><strong>The corpus should record the logic</strong>: a theory too heavy to test at colliders becomes testable through a phase transition, and the phase transition's consistency with monopole bounds <em>fixes</em> the gravitational-wave amplitude.</p>
+<h3 id="the-collider-and-dark-matter-bonuses">The Collider and Dark Matter Bonuses</h3>
+<p>"a new scalar state with SM numbers $(\mathbf3_C,\mathbf2_L)_{7/6\,Y}$ lies around 10 TeV."</p>
+<p>"the theory offers a natural WIMP contestant in a popular form of the <strong>inert SM scalar doublet</strong> — the scalar analog of the lepton doublet field, $\tilde\ell_L$. Since it is not coupled to the fermions, it can be sufficiently long lived to be the dark matter today, as long as it does not have direct linear couplings with other scalars. To be more precise, <strong>the couplings that must be small are of the type $H_L\Phi H_R$</strong> ... In the limit when its direct linear couplings go to zero, one has an <strong>accidental protective $Z_2$ symmetry</strong> ... The end result is that the masses of the inert doublet states must lie below roughly TeV."</p>
+<p><strong>So the inert doublet is a dark matter candidate protected by an accidental symmetry arising from the gauge structure</strong>, which is the same kind of argument as the automatic Nelson–Barr in <code>2604.00166</code>. <strong>The corpus should note the pattern</strong>: Pati–Salam's representation content keeps producing accidental symmetries that solve problems the model was not built for.</p>
+<h3 id="the-genesis-problem-stated-honestly">The Genesis Problem, Stated Honestly</h3>
+<p>"Since the authors do not adhere to any of the religious paradigms of genesis (they are open minded though), they are compelled to look for alternative explanations."</p>
+<p>"the former one [leptogenesis] is absent here — <strong>we are in the neutrino Dirac picture with conserved baryon and lepton numbers</strong>. The only other alternative is the <strong>electroweak genesis</strong> ... all that is needed then is an additional light doublet — which can then account for the first order phase transition at the electroweak temperatures."</p>
+<p><strong>That is a real consequence of the Dirac choice: leptogenesis is unavailable</strong>, because lepton number is conserved. So the baryon asymmetry must come from electroweak baryogenesis, which needs a first-order transition, which needs a light doublet — and the theory has plenty. <strong>One choice (doublet Higgs) propagates to neutrino nature, to the absence of leptogenesis, and to the baryogenesis mechanism.</strong></p>
+<p><strong>The joke about religious paradigms is the author's style and worth keeping</strong> — it is also a fair comment on how the field talks about "genesis".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-doublet-higgs-dirac-neutrinos-triplet-seesaw-majorana">1. Doublet Higgs → Dirac neutrinos; triplet → seesaw Majorana</h3>
+<p><strong>The idea.</strong> The choice of the $B-L$-breaking scalar representation decides whether $\nu_R$ gets a large Majorana mass.</p>
+<p><strong>What it would add.</strong> A correction to a common assumption. <strong>The corpus's article may treat type-I seesaw as built into Pati–Salam; it is not, it is a choice.</strong> And the choice is testable: Dirac neutrinos mean no $0\nu\beta\beta$, ever.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section, as the fork.</p>
+<p><strong>What stands in the way.</strong> Nothing; the representation argument is one line.</p>
+<h3 id="2-domain-walls-plus-monopoles-and-one-small-bias-that-fixes-both">2. Domain walls plus monopoles, and one small bias that fixes both</h3>
+<p><strong>The idea.</strong> $L\leftrightarrow R$ breaking gives walls; $SU(4)\to SU(3)\times U(1)$ gives monopoles; a small explicit parity breaking makes the walls decay and sweeps the monopoles away.</p>
+<p><strong>What it would add.</strong> A concrete cosmological history for a Pati–Salam model, with a mechanism rather than a fine-tuning. <strong>And it explains why the walls are the fatal defect</strong>: they scale as $1/a$ and dominate.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section, next to <code>2004.02332</code> and <code>2308.13248</code> in this batch.</p>
+<p><strong>What stands in the way.</strong> Nothing; the dynamics are standard.</p>
+<h3 id="3-the-gravitational-wave-plateau-at-10math42-hz-is-parameter-independent">3. The gravitational-wave plateau at 10–$10^3$ Hz is parameter-independent</h3>
+<p><strong>The idea.</strong> Consistency with monopole bounds pins the wall tension and annihilation temperature, so $\Omega_{\rm GW}$ is a fixed line rather than a family of curves.</p>
+<p><strong>What it would add.</strong> A prediction aimed at DECIGO/BBO/ET, with a <em>shape</em> rather than a number. <strong>The corpus's gravitational-wave entries (<code>1812.02747</code>, <code>2307.02544</code>, <code>2308.13248</code>, <code>2004.02332</code>) all give bands; this one gives a plateau</strong>, which is a stronger statement and should be contrasted.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's gravitational-wave section.</p>
+<p><strong>What stands in the way.</strong> Friction effects could lower the amplitude by four orders of magnitude, as the authors note.</p>
+<h3 id="4-a-math44-scalar-at-10-tev">4. A $(\mathbf3,\mathbf2)_{7/6}$ scalar at 10 TeV</h3>
+<p><strong>The idea.</strong> The state with the largest effect on unification, and it may be light.</p>
+<p><strong>What it would add.</strong> A collider target with an exotic charge, which is a distinctive signature for a model whose unification scale is unreachable. <strong>The corpus should record exotic-charge scalars</strong> because they are how such models can be found at all.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's collider section.</p>
+<p><strong>What stands in the way.</strong> Nothing; it is a two-loop threshold effect.</p>
+<h3 id="5-the-dirac-choice-removes-leptogenesis-and-forces-electroweak-baryogenesis">5. The Dirac choice removes leptogenesis and forces electroweak baryogenesis</h3>
+<p><strong>The idea.</strong> $B$ and $L$ conserved → no leptogenesis → need a first-order EW transition → need a light doublet.</p>
+<p><strong>What it would add.</strong> A chain of consequences from a single representation choice, across three sectors. <strong>That is the kind of connection unified models are supposed to make</strong>, and the corpus should use it as an example.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's baryogenesis section.</p>
+<p><strong>What stands in the way.</strong> Electroweak baryogenesis in this model is not computed, only asserted possible.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$G_{422}$ and its breaking by $(\mathbf{10},\mathbf1,\mathbf3)$: in the Pati–Salam article.</li>
+<li>Monopoles from $SU(4)\to SU(3)\times U(1)$: in <code>2307.02544</code> in this batch.</li>
+<li>Domain walls from discrete parity breaking: partly in <code>1812.02747</code>'s discussion.</li>
+<li>Type-I seesaw vs Dirac: in the seesaw article.</li>
+<li>Inert doublet dark matter: new to the corpus.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's most complete cosmology paper and it should be read as the counterpart to <code>2307.02544</code> and <code>1812.02747</code>.</p>
+<p>All three deal with the same problem — Pati–Salam's phase transitions leave defects — and they reach compatible but differently framed conclusions:</p>
+<ul>
+<li><code>1812.02747</code> (Gonzalo–Ibáñez–Valenzuela) computes the gravitational waves from the Pati–Salam phase transition for a range of breaking patterns.</li>
+<li><code>2307.02544</code> argues that the model is <em>falsifiable</em> by LIGO because the defects cannot be hidden.</li>
+<li>This paper goes the other way: the defects are fatal, the repair is a small bias, and the resulting plateau is a <em>prediction</em> for the next generation of detectors.</li>
+</ul>
+<p><strong>So the same physics yields a falsification, a constraint, and a target</strong>, depending on which breaking pattern and which defect one focuses on. <strong>The corpus should present the three together</strong>, because a reader who sees only one will get the wrong impression of whether Pati–Salam cosmology is a threat or an opportunity.</p>
+<p>The second point: the Dirac neutrino choice deserves more attention in the corpus than it probably gets. <strong>It is the only choice in the batch that makes $0\nu\beta\beta$ impossible</strong>, which is a clean experimental discriminator, and it changes the baryogenesis story completely. If the corpus's article presents seesaw as the Pati–Salam default, it should say that this is a choice and name the alternative.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

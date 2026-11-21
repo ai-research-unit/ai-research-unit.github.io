@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accidental Peccei–Quinn Symmetry from Discrete Flavour Symmetry and Pati–Salam — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/King - Accidental Peccei-Quinn Symmetry from Discrete Flavour Symmetry and Pati-Salam -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="accidental-pecceiquinn-symmetry-from-discrete-flavour-symmetry-and-patisalam"><strong>Accidental Peccei–Quinn Symmetry from Discrete Flavour Symmetry and Pati–Salam</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1711.05741 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Fredrik Björkeroth, Eung Jin Chun, Stephen F. King</td>
+</tr>
+<tr>
+<td>version</td>
+<td>15 November 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Lett. B 777 (2018) 428</td>
+</tr>
+<tr>
+<td>length</td>
+<td>15 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/King - Accidental Peccei-Quinn Symmetry from Discrete Flavour Symmetry and Pati-Salam - 1711.05741-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/King - Accidental Peccei-Quinn Symmetry from Discrete Flavour Symmetry and Pati-Salam - 1711.05741.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/King - Accidental Peccei-Quinn Symmetry from Discrete Flavour Symmetry and Pati-Salam - 1711.05741.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It gets an axion out of the flavour symmetry, and in doing so makes the axion <em>flavourful</em>.</p>
+<blockquote>
+<p>"We show how an <strong>accidental $U(1)$ Peccei-Quinn (PQ) symmetry can arise from a discrete $A_4$ family symmetry combined with a discrete flavour symmetry $Z_3\times Z_{25}$</strong>, in a realistic Pati-Salam unified theory of flavour."</p>
+<p>"<strong>Imposing only these discrete flavour symmetries, the axion solution to the strong CP problem is protected from PQ-breaking operators to the required degree.</strong>"</p>
+<p>"<strong>A QCD axion arises from a linear combination of $A_4$ triplet flavons</strong>, which are also responsible for fermion flavour structures due to their vacuum alignments."</p>
+<p>"We find that <strong>the requirement of an accidental PQ symmetry arising from a discrete flavour symmetry constrains the form of the Yukawa matrices, providing a link between flavour and the strong CP problem.</strong> Our model predicts <strong>specific flavour-violating couplings of the flavourful axion</strong> and thus puts a <strong>strong limit on the axion scale from kaon decays.</strong>"</p>
+</blockquote>
+<p><strong>That chain is the paper's achievement</strong>: from $A_4$ flavour symmetry, through the axion quality problem, to a kaon-decay bound on the axion scale. <strong>Four things the corpus needs</strong>: quality protection, accidental PQ, the flavourful axion, and the phenomenological bound.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-the-axion-must-be-accidental">Why the Axion Must Be Accidental</h3>
+<p><strong>The quality problem, stated as the paper states it</strong>: the PQ symmetry must survive to one part in $10^{10}$, but gravity violates global symmetries, so operators like $\Phi^n/M_P^{n-4}$ would spoil it.</p>
+<p><strong>The fix used here is different from <code>2009.04582</code>'s.</strong> There, a gauged discrete $R$-symmetry $Z_4^R\times Z_N$ protects PQ. <strong>Here, the <em>flavour</em> symmetry does it</strong>: $A_4\times Z_3\times Z_{25}$ is imposed to build the Yukawa matrices, and <strong>it happens to forbid all the dangerous PQ-breaking operators up to very high order.</strong></p>
+<p><strong>That is a more economical fix</strong>: the symmetry was needed anyway for flavour, and PQ protection comes free.</p>
+<p><strong>The corpus should compare the two approaches</strong>:
+- <strong><code>2009.04582</code></strong>: a dedicated $Z_4^R\times Z_N$ whose job is PQ protection (and proton stability, and the $\mu$ term).
+- <strong>Here</strong>: the flavour symmetry does the job as a by-product.</p>
+<p><strong>The second is better if it works</strong>, because it adds nothing. <strong>And the corpus should note that "the flavour symmetry protects the axion" is a genuinely new argument</strong> — the usual statement is that flavour symmetries and PQ symmetries are in tension.</p>
+<h3 id="the-flavourful-axion">The Flavourful Axion</h3>
+<p>"A QCD axion arises from <strong>a linear combination of $A_4$ triplet flavons</strong>, which are also responsible for fermion flavour structures due to their vacuum alignments."</p>
+<p><strong>This is the paper's most interesting idea.</strong> In a standard axion model the axion is a phase of a singlet field that couples to nothing but gluons (KSVZ) or to the Higgs doublets (DFSZ). <strong>Here the axion is a phase in a flavon multiplet that has <em>flavour-dependent</em> couplings, because the flavons are what give the fermions their masses.</strong></p>
+<p><strong>So the axion has generation-dependent couplings to quarks and leptons</strong> — it is "flavourful", in the literature's term, or an "axiflavon".</p>
+<p><strong>And that is a prediction with teeth</strong>: flavour-violating axion couplings are tightly constrained, especially by $K^+\to\pi^+a$.</p>
+<h3 id="the-kaon-bound">The Kaon Bound</h3>
+<p>"Contrary to the usual KSVZ or DFSZ axion model, <strong>a flavourful axion model allows general flavour-violating couplings of the axion which may constrain the axion scale more strongly. As noted in [12], a severe limit is obtained from the kaon decay $K^+\to\pi^+a$.</strong>"</p>
+<p>"The Yukawa structure in Eq. 14 leads to <strong>the mass matrix mis-aligned with the axion coupling matrix due to the flavour-dependent PQ charges</strong>. As a result, our model predicts a specific flavour-violating coupling to down ($d$) and strange ($s$) quarks
+$$\frac{a}{\ }\left[\operatorname{Re}(m^d_{21})\,\bar s\gamma_5d+\operatorname{Im}(m^d_{21})\,\bar sd\right],$$"</p>
+<p>"reach the sensitivity of $\mathcal B(K\to\pi a)<1.0\times10^{-12}$, probing $N_a f_a$ up to $2\times10^{11}$ [GeV]."</p>
+<p><strong>So the axion decay constant is bounded from below by the kaon measurement</strong>, not just from astrophysics. <strong>That is a constraint the corpus should record</strong>: <strong>a flavourful axion has a <em>lower</em> bound on $f_a$ from flavour physics, in addition to the usual upper bound from stellar cooling and the lower bound from SN1987A.</strong></p>
+<p><strong>And the bound is specific</strong>: $N_a f_a\lesssim2\times10^{11}$ GeV from $K\to\pi a$ sensitivity, so the axion cannot be too light.</p>
+<p><strong>The corpus's axion section should note the inversion</strong>: for a standard axion, flavour physics is irrelevant; for a flavourful axion, <strong>flavour physics sets the scale.</strong></p>
+<h3 id="the-link-between-flavour-and-strong-cp">The Link Between Flavour and Strong CP</h3>
+<p>"the requirement of an accidental PQ symmetry arising from a discrete flavour symmetry <strong>constrains the form of the Yukawa matrices</strong>, providing a link between flavour and the strong CP problem."</p>
+<p><strong>That is the paper's conceptual claim and it is worth examining.</strong> The argument: for the discrete symmetry to accidentally produce PQ, <strong>the flavon charges must satisfy certain conditions</strong>, and those conditions restrict which Yukawa textures are allowed.</p>
+<p><strong>So flavour model building and axion model building are not independent</strong> — a flavour texture that violates the condition cannot host an accidental PQ symmetry. <strong>That is a real constraint and the corpus should record it</strong>, because it means the two literatures are coupled.</p>
+<h3 id="the-patisalam-setting">The Pati–Salam Setting</h3>
+<p>The model is "a realistic Pati-Salam unified theory of flavour" with $A_4\times Z_3\times Z_{25}$.</p>
+<p><strong>Why Pati–Salam matters here</strong>: the flavon content and the Yukawa structure are those of the unified theory, so <strong>the axion's couplings to quarks and leptons are related by $SU(4)$</strong>. <strong>That is what makes the "flavourful" statement sharp</strong> — the axion couples to the down quark and the charged lepton through the same flavon, so their couplings are linked.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-flavour-symmetry-can-protect-the-axions-pq-quality-for-free">1. The flavour symmetry can protect the axion's PQ quality for free</h3>
+<p><strong>The idea.</strong> $A_4\times Z_3\times Z_{25}$, imposed for Yukawa textures, forbids the PQ-breaking operators to $10^{-10}$.</p>
+<p><strong>What it would add.</strong> An economical alternative to a dedicated $R$-symmetry. <strong>And a new argument: flavour and PQ are compatible, even mutually supportive.</strong> The corpus's axion section should present both routes.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's axion section.</p>
+<p><strong>What stands in the way.</strong> The protection holds up to a finite operator order; higher-order terms must be checked.</p>
+<h3 id="2-the-axion-is-a-flavon-so-it-is-flavourful">2. The axion is a flavon, so it is flavourful</h3>
+<p><strong>The idea.</strong> A linear combination of $A_4$ triplets, with generation-dependent couplings.</p>
+<p><strong>What it would add.</strong> A structurally distinct axion: <strong>not KSVZ, not DFSZ, but coupled through the flavour structure.</strong> The corpus should record it as a third category.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's axion section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the composition is stated.</p>
+<h3 id="3-flavour-physics-gives-a-lower-bound-on-math30-for-a-flavourful-axion">3. Flavour physics gives a lower bound on $f_a$ for a flavourful axion</h3>
+<p><strong>The idea.</strong> $K^+\to\pi^+a$ limits the axion's flavour-changing coupling, hence bounds $f_a$ from below.</p>
+<p><strong>What it would add.</strong> An inversion of the usual logic: <strong>for standard axions flavour physics is irrelevant; here it sets the scale.</strong> The corpus should note that "the axion scale" is not one number across models.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's axion section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the bound is quoted.</p>
+<h3 id="4-flavour-textures-and-accidental-pq-are-coupled-constraints">4. Flavour textures and accidental PQ are coupled constraints</h3>
+<p><strong>The idea.</strong> PQ-from-flavour requires conditions on flavon charges, which restrict the Yukawa matrices.</p>
+<p><strong>What it would add.</strong> A cross-link between two literatures the corpus treats separately. <strong>A flavour model may be incompatible with an axion, and that is checkable.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's axion section and its flavour section.</p>
+<p><strong>What stands in the way.</strong> The condition's generality is not established.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The $A_4\times Z_5$ flavour structure in Pati–Salam: in <code>1406.7005</code>, <code>1605.02072</code>.</li>
+<li>The axion quality problem and $Z_4^R$ protection: in <code>2009.04582</code>.</li>
+<li>The Pati–Salam axion's $SU(4)$-linked couplings: partly in <code>2005.00012</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>The batch now has three axion papers and they form a progression worth presenting together.</p>
+<p><strong><code>2005.00012</code></strong>: the axion is built into the Pati–Salam representations; the question is how its couplings respect $SU(4)$.</p>
+<p><strong><code>2009.04582</code></strong>: the axion is added with a dedicated $Z_4^R\times Z_N$; the question is the quality problem and the $R$-parity conflict.</p>
+<p><strong>Here</strong>: the axion emerges from the flavour symmetry; the question is whether flavour and PQ can coexist, and the answer is yes, with a kaon bound.</p>
+<p><strong>Together they cover the three things an axion needs</strong>: a home in the unified representations, protection from gravity, and consistency with flavour. <strong>No one paper does all three.</strong></p>
+<p>The point for the corpus's article: <strong>the "flavourful axion" is the batch's most original axion idea</strong>, because it makes the axion a <em>participant</em> in flavour physics rather than a spectator. <strong>And its cost — a lower bound on $f_a$ from $K\to\pi a$ — is the kind of price a good idea should pay.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Pati–Salam SUSY GUT with Yukawa Unification — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Raby - A Pati-Salam SUSY GUT with Yukawa Unification - 1703.09309.pdf — a PDF in a subfolder…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-patisalam-susy-gut-with-yukawa-unification"><strong>A Pati–Salam SUSY GUT with Yukawa Unification</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1703.09309 [hep-ph] (v3)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Zijie Poh, Stuart Raby, Zi-zhi Wang</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 18 April 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Ohio State / Peking University)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>22 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Raby - A Pati-Salam SUSY GUT with Yukawa Unification - 1703.09309-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Raby - A Pati-Salam SUSY GUT with Yukawa Unification - 1703.09309.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Raby - A Pati-Salam SUSY GUT with Yukawa Unification - 1703.09309.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. It belongs with the Raby programme's inflation and leptogenesis papers (<code>1601.03749</code>, <code>1612.04382</code>, <code>1703.02558</code>, <code>2009.04582</code>) in this batch.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It fixes the weak point of a long-running programme: the low-energy fit.</p>
+<blockquote>
+<p>"Previous studies of a three family Yukawa unified supersymmetric grand unified theory (SUSY GUT) with SO(10) or Pati-Salam (PS) gauge symmetry proposed by Raby and students show that this model is able to fit low energy and <strong>inflation</strong> observables. However, <strong>the fit to low energy observables is not great especially for $\sin2\beta$, and up and down quark masses</strong>."</p>
+</blockquote>
+<p>"In this paper, we show that <strong>by choosing PS as the gauge group and modifying the Yukawa sector, the low energy fit improves significantly while other qualities of the model are maintained.</strong>"</p>
+<p><strong>So the paper is a repair, and the repair is a change of gauge group from $SO(10)$ to Pati–Salam.</strong> That is worth recording: <strong>Pati–Salam is chosen here not for unification but because it offers more freedom in the Yukawa sector</strong> — $SO(10)$ relates the up and down Yukawas too tightly, and $G_{422}$ relaxes the relation enough to fit.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-model">The Model</h3>
+<p>A three-family Yukawa-unified SUSY Pati–Salam with a $D_4$ family symmetry, which is the framework of Raby's earlier work (<code>hep-ph/0409098</code>, <code>1612.04382</code> in this batch).</p>
+<p>"The model has 26 input parameters. The <strong>fermion sector has 17 parameters</strong> — 13 Yukawa parameters, $\tan\beta$, and 3 right-handed neutrino masses, while <strong>the SM has 19 observables</strong> — 9 fermion masses, 4 CKM matrix elements, 2 neutrino mass differences, 3 real neutrino mixing angles, and 1 neutrino CP violating phase. <strong>Hence, our model has 2 predictions in the fermion sector.</strong>"</p>
+<p><strong>That accounting is the paper's most valuable content and it is unusually honest.</strong> 17 parameters for 19 observables gives two predictions. <strong>Compare <code>2404.06520</code>'s 19 parameters and <code>2503.14610</code>'s order-unity coefficients</strong>: Raby's count is explicit, and "two predictions" is a modest claim that can be checked.</p>
+<p><strong>The corpus should record this kind of counting</strong>, because "the model fits" means nothing without knowing how many parameters it took. <strong>Two predictions from 17 parameters is a fit, not a prediction</strong>, and the paper does not pretend otherwise.</p>
+<h3 id="what-yukawa-unification-means-here">What "Yukawa Unification" Means Here</h3>
+<p>The name refers to the boundary condition that the third-family Yukawa couplings are unified at the GUT scale, which is the structure $SO(10)$ or Pati–Salam imposes through the Higgs representation.</p>
+<p><strong>In Pati–Salam the unification is partial</strong>: $Y_t=Y_\nu$ can be imposed (they share a multiplet), while $Y_b$ and $Y_\tau$ are related through the $\mathbf{15}$'s Georgi–Jarlskog factor. <strong>So "Yukawa unification" here means $t$–$b$–$\tau$–$\nu_\tau$ unification up to the GJ factor</strong>, which is a weaker and more flexible condition than the $SO(10)$ version.</p>
+<p><strong>And that flexibility is precisely the repair.</strong> The paper says the $SO(10)$ fit "is not great especially for $\sin2\beta$", and the Pati–Salam version allows $\tan\beta$ to be adjusted away from the $SO(10)$-forced value.</p>
+<h3 id="the-method">The Method</h3>
+<p>"The program that performs the renormalization group equation (RGE) running and calculation of low energy observables, <code>maton</code>, is <strong>developed in-house</strong> by Radovan Dermíšek."</p>
+<p><strong>A global $\chi^2$ fit with two-loop RGEs and SUSY threshold corrections</strong>, not an analytic estimate. <strong>That is what makes the "2 predictions" meaningful</strong>: the comparison is against the running masses at $M_Z$ with the full machinery.</p>
+<p><strong>The corpus should note the genre</strong>: this is a numerical global fit paper, and its claim is a $\chi^2$ improvement, not a mechanism. <strong>The mechanism (Yukawa unification with $D_4$) is inherited; the contribution is the fit.</strong></p>
+<h3 id="the-programme-it-belongs-to">The Programme It Belongs To</h3>
+<p>The abstract refers to "previous studies ... proposed by Raby and students", and the batch contains the whole sequence:</p>
+<ul>
+<li><code>1601.03749</code> — subcritical hybrid inflation with Pati–Salam, monopole dilution, $r<0.09$.</li>
+<li><code>1612.04382</code> — reheating and leptogenesis after that inflation, 44 pages.</li>
+<li><code>1703.02558</code> — a talk summarising the same chain.</li>
+<li><code>2009.04582</code> — axion and LSP in the same framework with $Z_4^R\times Z_N$.</li>
+<li>This paper — the fermion-sector fit.</li>
+</ul>
+<p><strong>Together they are the batch's only complete cosmological-plus-flavour programme</strong>: a model that fits fermion masses, inflates, dilutes monopoles, reheats, and makes the baryon asymmetry. <strong>The corpus should present it as a package</strong>, because no single paper is convincing alone.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-17-parameters-for-19-observables-means-two-predictions">1. 17 parameters for 19 observables means two predictions</h3>
+<p><strong>The idea.</strong> Raby counts explicitly and does not claim more.</p>
+<p><strong>What it would add.</strong> A standard of accounting the corpus can apply to every flavour model in the batch. <strong><code>1406.7005</code> has two symmetries and many alignments; <code>2404.06520</code> has 19 parameters; the twin-PS papers have a dozen.</strong> Without counts, "excellent description" is unfalsifiable.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section, and its methodology discussion.</p>
+<p><strong>What stands in the way.</strong> Nothing; the count is in the paper.</p>
+<h3 id="2-patisalam-chosen-over-math26-for-yukawa-flexibility">2. Pati–Salam chosen over $SO(10)$ for Yukawa flexibility</h3>
+<p><strong>The idea.</strong> $SO(10)$ over-constrains the Yukawa sector; $G_{422}$ loosens it enough to fit $\sin2\beta$ and the light quark masses.</p>
+<p><strong>What it would add.</strong> A pragmatic reason to prefer the smaller group, which complements the more common reason (smaller representations, easier breaking). <strong>And it implies $SO(10)$'s extra unification is a liability, not an asset, for fitting data.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's comparison with $SO(10)$.</p>
+<p><strong>What stands in the way.</strong> Nothing; the abstract states it.</p>
+<h3 id="3-the-complete-cosmological-programme-is-a-package-not-a-paper">3. The complete cosmological programme is a package, not a paper</h3>
+<p><strong>The idea.</strong> Inflation, monopole dilution, reheating, leptogenesis, and the fermion fit are five papers on one model.</p>
+<p><strong>What it would add.</strong> The batch's only example of a model carried through the whole early-Universe history. <strong>The corpus's cosmology section should treat the Raby programme as one entry with five sources</strong>, not five independent ones.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> None; the papers cross-reference each other explicitly.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Radiatively generated Georgi–Jarlskog: in <code>hep-ph/0409098</code>, <code>1612.04382</code>.</li>
+<li>$t$–$b$–$\tau$ Yukawa unification: in the Yukawa articles.</li>
+<li>Two-loop RGE fitting with threshold corrections: in the SUSY spectrum articles.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's clearest example of a fit paper, and reading it next to <code>1406.7005</code> and <code>2404.06520</code> shows three different standards of evidence.</p>
+<p><strong><code>1406.7005</code></strong>: a construction with a symmetry and predictions; the fit is excellent and the predictions are sharp.
+<strong><code>2404.06520</code></strong>: a classification with 19 parameters per model; the fit is excellent and the "predictions" are the survivors.
+<strong>Here</strong>: 17 parameters for 19 observables; <strong>two predictions, stated as two.</strong></p>
+<p><strong>The third is the most honest and the least impressive</strong>, and that is the useful contrast. <strong>A model with two predictions is a good fit; a model with none is a curve through data.</strong> The corpus should say where each paper in its flavour section sits, because the reader cannot tell from the word "excellent".</p>
+<p>The second point: the Raby programme's virtue is completeness rather than economy. <strong>17 parameters is a lot, but the same 17 parameters fit the fermion masses <em>and</em> fix the inflationary scale <em>and</em> set the leptogenesis rate.</strong> If one set of parameters does four jobs, the parameter count is less damning than it looks — and that is a general point about unified models the corpus should make.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

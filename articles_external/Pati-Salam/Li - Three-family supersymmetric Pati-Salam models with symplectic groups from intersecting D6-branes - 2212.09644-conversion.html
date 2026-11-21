@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Three-Family Supersymmetric Pati–Salam Models with $USp(2)$ Gauge Groups from Intersecting D6-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Three-family supersymmetric Pati-Salam models with symplectic groups from intersecting…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="new-three-family-supersymmetric-patisalam-models-with-math0-gauge-groups-from-intersecting-d6-branes"><strong>New Three-Family Supersymmetric Pati–Salam Models with $USp(2)$ Gauge Groups from Intersecting D6-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2212.09644 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Adeel Mansha, Tianjun Li</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>32 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Three-family supersymmetric Pati-Salam models with symplectic groups from intersecting D6-branes - 2212.09644-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Three-family supersymmetric Pati-Salam models with symplectic groups from intersecting D6-branes - 2212.09644.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Three-family supersymmetric Pati-Salam models with symplectic groups from intersecting D6-branes - 2212.09644.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It replaces a $U(2)$ with a symplectic group, and finds only five models.</p>
+<blockquote>
+<p>"We construct new three-family $N=1$ supersymmetric Pati-Salam models from intersecting D6-branes <strong>with original gauge group $U(4)_C\times USp(2)_L\times U(2)_R$</strong> on a Type IIA $T^6/(\mathbb Z_2\times\mathbb Z_2)$ orientifold."</p>
+<p>"We find that <strong>replacing a $U(2)$ with a $USp(2)$ group severely restricts the number of three-generation supersymmetric models such that there are only five inequivalent models.</strong> Exchanging the left and right sectors, we obtain <strong>five dual models with gauge group $U(4)_C\times U(2)_L\times USp(2)_R$</strong>. These ten models have different gauge coupling relations at string scale."</p>
+<p>"<strong>The highest wrapping number is 4, and one of the models contains no filler O6-planes.</strong> Moreover, we discuss in detail <strong>the particle spectra, the composite particles through strong coupling dynamics, and the exotic particle decouplings.</strong>"</p>
+</blockquote>
+<p><strong>So five plus five, and one with no filler branes — which is the rare case the corpus should note.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="math8-versus-math9-what-changes">$USp(2)$ Versus $U(2)$: What Changes</h3>
+<p><strong>A $U(2)$ stack is two D-branes not on an orientifold plane.</strong> Its gauge group is $U(2)=SU(2)\times U(1)$, it has <strong>fundamental matter</strong> and <strong>antisymmetric matter</strong> ($\mathbf{1}$ of $SU(2)$ plus the $U(1)$), and it can be separated from the orientifold.</p>
+<p><strong>A $USp(2)$ stack is two D-branes <em>on</em> an orientifold plane.</strong> Its gauge group is $USp(2)\cong SU(2)$ with <strong>no $U(1)$ factor</strong> and <strong>no antisymmetric representation</strong> (the antisymmetric of $USp(2N)$ is the singlet, which is projected out).</p>
+<p><strong>Two consequences, both important:</strong></p>
+<ol>
+<li><strong>No extra $U(1)$</strong>: the $U(1)_{B-L}$ or $U(1)_R$ that a $U(2)_R$ stack would carry is absent. <strong>So $B-L$ must come from $U(4)_C$'s diagonal $U(1)$</strong>, which it does.</li>
+<li><strong>No antisymmetric matter</strong>: the exotic $SU(2)$-triplet-like states disappear. <strong>That is a genuine simplification</strong> — fewer exotics to decouple.</li>
+</ol>
+<p><strong>And the cost</strong>: <strong>the antisymmetric matter was also the source of some Yukawa couplings</strong>, so <strong>removing it changes the flavour structure.</strong></p>
+<p><strong>The corpus should record the trade</strong>: <strong>$USp(2)$ removes exotics and removes couplings.</strong> <strong>That is why only five models survive</strong> — most configurations need the antisymmetric to get the masses right.</p>
+<h3 id="why-only-five">Why Only Five</h3>
+<p><strong>The paper's phrase is "severely restricts".</strong> <strong>The reason is the interplay of tadpole cancellation and the requirement of three generations.</strong></p>
+<p><strong>With a $USp(2)$ group, the stack contributes differently to the RR tadpoles</strong>, and <strong>the number of allowed fillers and wrappings shrinks</strong>. <strong>So the enumeration finds five.</strong></p>
+<p><strong>The corpus should note the number 5 against the 33</strong> — <strong>a factor of seven reduction from a single group replacement.</strong> <strong>That is a strong selection effect</strong>, and it means <strong>the symplectic branch of the landscape is small and nearly exhaustible.</strong></p>
+<h3 id="one-model-contains-no-filler-o6-planes">"One Model Contains No Filler O6-Planes"</h3>
+<p><strong>This is the paper's most surprising individual result and it deserves emphasis.</strong></p>
+<p><strong>Filler branes are the standard device for cancelling RR tadpoles</strong>: a stack of branes on top of an orientifold plane contributes a fixed amount to the tadpole, and fillers make up the difference. <strong>Every model in <code>hep-th/0403061</code> and most in <code>2112.09630</code> has them.</strong></p>
+<p><strong>"No filler O6-planes" means the model cancels its tadpoles with the visible stacks alone.</strong> <strong>That is a cleaner configuration</strong>: <strong>no extra hidden gauge group, no extra matter, no extra moduli from the fillers.</strong></p>
+<p><strong>The corpus should record it as a milestone</strong>, because <strong>a model with no fillers is the closest these constructions come to a minimal brane configuration.</strong> <strong><code>2112.09630</code>'s unique unified model may or may not have fillers; this one explicitly does not.</strong></p>
+<h3 id="composite-particles-from-strong-dynamics">Composite Particles from Strong Dynamics</h3>
+<p>"the <strong>composite particles through strong coupling dynamics</strong>"</p>
+<p><strong>The $USp(2)$ groups can become strongly coupled</strong>, and then <strong>the "elementary" exotics confine into composite states.</strong> <strong>That is a way to hide exotics</strong>: instead of giving them a large mass, let them confine.</p>
+<p><strong>That is the same mechanism as <code>hep-ph/0505221</code>'s "confining" Pati–Salam</strong> — <strong>SUSY breaking and exotic hiding by strong dynamics rather than by a large scale.</strong></p>
+<p><strong>The corpus should link them</strong>: <strong>two papers in the batch use confinement to remove exotics</strong>, one at the level of the whole model (<code>hep-ph/0505221</code>) and one for specific states here.</p>
+<h3 id="the-dual-models">The Dual Models</h3>
+<p>"Exchanging the left and right sectors, we obtain five dual models with gauge group $U(4)_C\times U(2)_L\times USp(2)_R$."</p>
+<p><strong>So the ten models are five plus their $L\leftrightarrow R$ swaps.</strong> <strong>That is the same duality as <code>1910.04530</code> and <code>2410.09093</code></strong> — <strong>and <code>2410.09093</code> shows the soft terms do not respect it.</strong></p>
+<p><strong>The corpus should attach the caveat</strong>: <strong>the ten models are ten in the Yukawa sector and more in the soft sector.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-math32-removes-exotics-but-also-removes-yukawa-couplings">1. $USp(2)$ removes exotics but also removes Yukawa couplings</h3>
+<p><strong>The idea.</strong> No antisymmetric matter means no exotic triplets and no couplings that needed them.</p>
+<p><strong>What it would add.</strong> A precise statement of the trade, and the reason only five models survive.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-one-model-has-no-filler-o6-planes">2. One model has no filler O6-planes</h3>
+<p><strong>The idea.</strong> Tadpoles cancelled by visible stacks alone.</p>
+<p><strong>What it would add.</strong> The batch's most minimal brane configuration, and a comparison point for <code>2112.09630</code>'s model.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-confinement-as-a-way-to-hide-exotics">3. Confinement as a way to hide exotics</h3>
+<p><strong>The idea.</strong> Strongly coupled $USp(2)$ confines the exotics into composites.</p>
+<p><strong>What it would add.</strong> A second mechanism for exotic removal, alongside decoupling. <strong>Link to <code>hep-ph/0505221</code>.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> The composite spectrum must be checked.</p>
+<h3 id="4-replacing-one-group-shrinks-the-landscape-sevenfold">4. Replacing one group shrinks the landscape sevenfold</h3>
+<p><strong>The idea.</strong> 33 → 5 from a single $U(2)\to USp(2)$.</p>
+<p><strong>What it would add.</strong> A measure of how constrained these constructions are.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$USp(2)$ filler branes: in <code>hep-th/0403061</code>, <code>2303.02864</code>.</li>
+<li>$L\leftrightarrow R$ duality: in <code>1910.04530</code>, <code>2410.09093</code>.</li>
+<li>Confining Pati–Salam: in <code>hep-ph/0505221</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is small in scope and contains two of the batch's sharpest facts.</p>
+<p><strong>First</strong>: <strong>the symplectic branch of the landscape is five models, not thirty-three.</strong> <strong>So the "landscape" is really two landscapes</strong>, unitary and symplectic, with very different sizes.</p>
+<p><strong>Second</strong>: <strong>a filler-free model exists.</strong> <strong>Every discussion of these models assumes filler branes are necessary</strong>; this shows they are not, in at least one case. <strong>The corpus should record it as an existence proof</strong>, because it means the "hidden" sector can sometimes be empty — which matters given <code>2303.02864</code>'s finding that hidden sectors are not decoupled.</p>
+<p><strong>The corpus's string section should present the cluster as a set of branches</strong> — unitary, symplectic, four-family, rigid-cycle — <strong>each with its own size and its own completest model</strong>, rather than as one landscape with one count.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

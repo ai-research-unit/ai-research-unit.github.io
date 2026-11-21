@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duality of a Supersymmetric Model with the Pati–Salam Group — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Maekawa - Duality of a Supersymmetric Model with the Pati-Salam group - hep-ph_9510426.pdf —…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="duality-of-a-supersymmetric-model-with-the-patisalam-group"><strong>Duality of a Supersymmetric Model with the Pati–Salam Group</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/9510426 (v3)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Nobuhiro Maekawa, Tomohiko Takahashi</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 1 August 1997</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, Kyoto University KUNS-1367)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>8 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Maekawa - Duality of a Supersymmetric Model with the Pati-Salam group - hep-ph_9510426-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Maekawa - Duality of a Supersymmetric Model with the Pati-Salam group - hep-ph_9510426.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Maekawa - Duality of a Supersymmetric Model with the Pati-Salam group - hep-ph_9510426.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. It is unlike anything else in the batch.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It applies Seiberg duality to a Pati–Salam model, and uses the gauge group to fix a missing Yukawa sector.</p>
+<blockquote>
+<p>"Recently one of the authors proposed a <strong>dual theory of a Supersymmetric Standard Model (SSM)</strong>, in which it is naturally understood that <strong>at least one quark (the top quark) should be heavy</strong>, i.e., almost the same order as the weak scale, and <strong>the supersymmetric Higgs mass parameter $\mu$ can naturally be expected to be small</strong>. However, <strong>the model cannot have Yukawa couplings of the lepton sector.</strong>"</p>
+<p>"In this paper, we examine <strong>a dual theory of a Supersymmetric Model with the Pati-Salam gauge group $SU(4)_{PS}\times SU(2)_L\times SU(2)_R$ with respect to the gauge group $SU(4)_{PS}$</strong>. In this scenario, <strong>Yukawa couplings of the lepton sector can be induced.</strong> In this model <strong>the Pati–Salam breaking scale should be around the SUSY breaking scale.</strong>"</p>
+</blockquote>
+<p><strong>So the paper's logic is: the SSM dual theory works for quarks but not leptons; adding Pati–Salam supplies the lepton Yukawas; therefore the breaking scale is tied to SUSY breaking.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-setting-seiberg-duality">The Setting: Seiberg Duality</h3>
+<p>"it has become clear that certain aspects of four dimensional supersymmetric field theories can be analyzed exactly ... One of the most interesting aspects is 'duality' ... <strong>By using 'duality', we can infer the low energy effective theory of a strong coupling gauge theory.</strong>"</p>
+<p><strong>Seiberg duality</strong> relates an $SU(N)$ gauge theory with $N_f$ flavours to an $SU(N_f-N)$ theory with the same flavour content. <strong>In the strongly coupled regime the dual description is weakly coupled, so you can compute.</strong></p>
+<p><strong>The idea of the "dual SSM"</strong>: take the MSSM and dualise its colour group, so that the strongly coupled top quark becomes calculable. <strong>The dual description then explains why the top is heavy</strong> — it is a dynamical effect in the magnetic theory, not a small parameter.</p>
+<p><strong>That is a genuinely different strategy from everything else in this batch</strong>: <strong>most papers impose a symmetry or a texture to make the top heavy; this one uses strong-coupling dynamics.</strong></p>
+<h3 id="the-problem-and-the-patisalam-fix">The Problem and the Pati–Salam Fix</h3>
+<p>"the model cannot have Yukawa couplings of the lepton sector."</p>
+<p><strong>The reason</strong>: in the dual SSM, <strong>the lepton Yukawas require a field that the dual spectrum does not provide.</strong> <strong>The magnetic theory's matter content is fixed by the duality, so the lepton Yukawas are simply absent.</strong></p>
+<p><strong>The fix</strong>: "examine a dual theory of a Supersymmetric Model with the <strong>Pati-Salam gauge group</strong> ... with respect to the gauge group $SU(4)_{PS}$."</p>
+<p><strong>So the Pati–Salam group is dualised instead of just the colour group</strong>, and <strong>since $SU(4)_{PS}$ contains both colour and lepton number, the dualised spectrum now includes the fields needed for lepton Yukawas.</strong></p>
+<p><strong>That is a clever use of Pati–Salam's defining feature</strong>: <strong>because quarks and leptons are in the same multiplets, a duality acting on $SU(4)$ acts on both at once</strong>, and the lepton Yukawas are generated by the same mechanism that makes the top heavy.</p>
+<p><strong>The corpus should record this</strong>, because it is the <em>only</em> paper in the batch where Pati–Salam's quark–lepton unification is used as a technical tool for a dynamical mechanism rather than as a mass relation.</p>
+<h3 id="the-scale-consequence">The Scale Consequence</h3>
+<p>"<strong>the Pati–Salam breaking scale should be around the SUSY breaking scale.</strong>"</p>
+<p><strong>Why</strong>: the duality is a statement about the gauge theory at strong coupling, and the Pati–Salam group is dualised as a whole. <strong>If the breaking scale were much higher than the SUSY scale, the duality would act on the unbroken $SU(4)$, and the effective theory below would be the MSSM — losing the mechanism.</strong> <strong>If it were much lower, the dual description would not apply to the observed leptons.</strong></p>
+<p><strong>So the scale is tied to SUSY breaking, which is $\sim$ TeV.</strong> <strong>That makes this the batch's most predictive scale statement</strong>: not fitted, but fixed by the mechanism's consistency.</p>
+<p><strong>And it is another entry in the corpus's table of scales</strong>, at the low end — and with the strongest justification of any, since it comes from a dynamical requirement rather than a fit.</p>
+<h3 id="why-this-paper-is-alone">Why This Paper Is Alone</h3>
+<p><strong>No other paper in the batch uses Seiberg duality</strong>, and the corpus should note why.</p>
+<p><strong>The approach requires the theory to be strongly coupled at the relevant scale and to have a known dual</strong>, which restricts it to SQCD-like models with specific matter content. <strong>Pati–Salam is $SU(4)\times SU(2)\times SU(2)$, not SQCD</strong>, so "dualising with respect to $SU(4)_{PS}$" means treating the $SU(4)$ as the strong group and the rest as spectators. <strong>That works only if $SU(4)$ is the strongly coupled factor</strong>, which is an assumption.</p>
+<p><strong>So the paper is a proof of principle</strong>, not a complete model, and it should be read as such.</p>
+<h3 id="the-date">The Date</h3>
+<p>The arXiv version is from 1997, two years after the original — <strong>Seiberg duality was announced in 1994</strong>, so this is an early application to phenomenology. <strong>That context matters for the corpus</strong>: <strong>the mid-1990s saw a wave of attempts to use duality for model building</strong>, and this is Pati–Salam's entry in that wave.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-patisalams-multiplets-let-one-duality-cover-quarks-and-leptons-at-once">1. Pati–Salam's multiplets let one duality cover quarks and leptons at once</h3>
+<p><strong>The idea.</strong> Dualising $SU(4)_{PS}$ acts on colour and lepton number together, so the lepton Yukawas appear alongside the top's.</p>
+<p><strong>What it would add.</strong> The batch's only <em>technical</em> use of quark–lepton unification. <strong>Every other paper uses $SU(4)$ for mass relations; this one uses it for a duality.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's "unusual uses" or model-building section.</p>
+<p><strong>What stands in the way.</strong> The duality's applicability to a non-SQCD group is assumed.</p>
+<h3 id="2-strong-coupling-dynamics-as-an-alternative-to-symmetries-and-textures">2. Strong-coupling dynamics as an alternative to symmetries and textures</h3>
+<p><strong>The idea.</strong> The top is heavy because of the magnetic theory's dynamics, not because of a small parameter.</p>
+<p><strong>What it would add.</strong> A third strategy for the flavour hierarchy, alongside FN ($1406.7005$) and modular forms (<code>2404.06520</code>). <strong>The corpus should list all three.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> The mechanism's quantitative status is unclear.</p>
+<h3 id="3-a-scale-fixed-by-the-mechanism-rather-than-fitted">3. A scale fixed by the mechanism rather than fitted</h3>
+<p><strong>The idea.</strong> $M_{PS}\sim M_{\rm SUSY}$ because otherwise the duality does not describe the observed leptons.</p>
+<p><strong>What it would add.</strong> The batch's strongest scale justification, and a low-scale entry in the twelve-decade table. <strong>Contrast with the modular fits (<code>2501.00302</code>).</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> The argument is qualitative.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Pati–Salam's quark–lepton multiplets: the Pati–Salam article.</li>
+<li>SUSY-breaking-scale Pati–Salam: in <code>0805.3486</code>, <code>2103.11889</code>.</li>
+<li>Seiberg duality: new to the corpus.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the batch's odd one out, and its value is as a boundary marker.</p>
+<p><strong>Everything else in the batch builds Pati–Salam from a symmetry principle</strong> — a family group, a modular group, a discrete $R$-symmetry, a brane configuration — <strong>and fits the data with the resulting texture.</strong> <strong>This paper builds it from a <em>dynamical</em> principle</strong> and gets the texture as a strong-coupling effect.</p>
+<p><strong>The contrast is instructive</strong>: <strong>the symmetry route gives many models with many parameters; the dynamical route gives one model with few, but the model is not under control.</strong> <strong>The corpus should present both</strong>, because a reader of the symmetry papers alone would think model building is the only method.</p>
+<p>The second point: the scale argument here is the most honest in the batch. <strong>Most papers compute or fit $M_{PS}$; this one says where it must be for the mechanism to work.</strong> <strong>That is what a prediction looks like</strong>, and even a rough one is worth more than a fitted number.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

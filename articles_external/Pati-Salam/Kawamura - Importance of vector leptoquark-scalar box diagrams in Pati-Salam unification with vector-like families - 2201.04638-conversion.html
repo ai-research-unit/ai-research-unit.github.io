@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Importance of Vector Leptoquark–Scalar Box Diagrams in Pati–Salam Unification with Vector-Like Families — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Kawamura - Importance of vector leptoquark-scalar box diagrams in Pati-Salam unification with…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="importance-of-vector-leptoquarkscalar-box-diagrams-in-patisalam-unification-with-vector-like-families"><strong>Importance of Vector Leptoquark–Scalar Box Diagrams in Pati–Salam Unification with Vector-Like Families</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2201.04638 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Syuhei Iguro, Junichiro Kawamura, Shohei Okawa, Yuji Omura</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 12 July 2022</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint P3H-22-008, TTP22-001, CTPU-PTC-22-01)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>31 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Kawamura - Importance of vector leptoquark-scalar box diagrams in Pati-Salam unification with vector-like families - 2201.04638-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Kawamura - Importance of vector leptoquark-scalar box diagrams in Pati-Salam unification with vector-like families - 2201.04638.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Kawamura - Importance of vector leptoquark-scalar box diagrams in Pati-Salam unification with vector-like families - 2201.04638.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. The model is the one of <code>2103.11889</code> in this batch; this paper finds the loop hole in its protection scheme.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It finds that the suppression mechanism of <code>2103.11889</code> does not survive at one loop, in a specific and instructive way.</p>
+<blockquote>
+<p>"We point out that there are <strong>inevitable one-loop contributions</strong> to those LFV processes from the <strong>box diagrams mediated by both one LQ and one scalar field</strong>, even if the tree-level contributions are suppressed."</p>
+</blockquote>
+<p>"we show that <strong>the vector-like fermion masses have an upper bound for a given LQ mass</strong> when the one-loop induced processes are consistent with the experimental limits. <strong>The vector-like fermion mass should be lighter than 3 TeV for a 20 TeV LQ</strong>, if a combination of the couplings does not suppress $K_L\to\mu e$ decay. Our findings would illustrate importance of the box diagrams involving both LQ and physical modes of symmetry breaking scalars in TeV scale vector LQ models."</p>
+<p><strong>Note the direction of the bound: an <em>upper</em> bound on the vector-like fermion mass.</strong> Normally a heavy particle decouples and its mass is bounded from <em>below</em>. Here increasing the vector-like mass makes the loop diagram <em>larger</em> — because the loop's flavour violation is proportional to a mass insertion — so the new fermions must be light, and the LHC can look for them.</p>
+<p><strong>That inversion is the paper's most useful result</strong> and it is worth recording precisely.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-conditions-that-were-supposed-to-work">The Three Conditions That Were Supposed to Work</h3>
+<p>"We clarify the conditions to suppress these processes up to at the one-loop level:
+(i) LQ couplings to the SM families are vanishing, i.e. $X_L=X_R\sim0$,
+(ii) Masses of vector-like down-type quarks and charged leptons are individually universal,
+(iii) $\Upsilon_L$ and $\Upsilon_R$ have a certain structure such that $K_L\to\mu e$ and $\mu\to e$ conversion are sufficiently small."</p>
+<p><strong>Condition (i) is the tree-level fix; condition (ii) is a GIM-like fix for two-LQ boxes.</strong></p>
+<p>"Once we impose the condition (ii) as well as the condition (i), the flavor violating processes from the box diagrams with <strong>two LQs</strong> are suppressed <strong>due to the unitarity of the LQ gauge couplings, in analogy with the $W$ boson coupling in the SM</strong>. We also argued that four-quarks, four-leptons and penguin operators are suppressed due to the unitarity. Therefore, the flavor violating processes like neutral meson mixing, $\mu\to e\gamma$ and $\mu\to eee$ are all suppressed under the conditions (i) and (ii)."</p>
+<p><strong>So the paper first confirms the standard argument, in the SM's own language: unitarity of the gauge coupling plus degenerate masses gives GIM.</strong> Two $W$s inside a box, with degenerate up-type masses, cancels. Two $U_1$s inside a box, with degenerate vector-like masses, cancels. <strong>The analogy is exact because both are gauge couplings.</strong></p>
+<h3 id="the-loophole">The Loophole</h3>
+<p>"<strong>Nonetheless, the condition (iii) is necessary</strong> to alleviate the constraints from the LFV processes induced by the box diagrams <strong>involving both vector LQ and scalars</strong>. <strong>We found that those diagrams are not suppressed even with the conditions (i) and (ii).</strong>"</p>
+<p>"Such contribution is well represented by a coupling structure $\Upsilon_A$ ($A=L,R$) ... whose <strong>SM blocks $\Upsilon_A^{ij}$ are the $3\times3$ unitary matrices</strong>. <strong>Because of the unitarity of $\Upsilon_A^{ij}$, we cannot realize $\Upsilon_A=0$ and hence the flavor violation via this coupling structure is unavoidable.</strong>"</p>
+<p><strong>That is the argument and it is clean.</strong> The two-$U_1$ box cancels by unitarity. The one-$U_1$-one-scalar box does <strong>not</strong>, because the scalar's coupling matrix is <em>not</em> the same matrix as the gauge coupling's — it is a Yukawa matrix, unitary in its own right but not proportional to the identity. <strong>Two unitary matrices that are not equal do not cancel.</strong></p>
+<p><strong>So the SM's GIM argument requires that all the couplings in the loop be the same coupling</strong>, and a scalar Yukawa is a different coupling. <strong>The loop therefore survives</strong>, and it is proportional to the misalignment between them.</p>
+<p><strong>This is a genuinely general lesson and the corpus should carry it</strong>: "unitarity protects the flavour sector" is true only for a single gauge coupling. Add a scalar with its own Yukawa and the protection fails, at one loop, unavoidably.</p>
+<h3 id="the-resulting-bounds-and-the-inversion">The Resulting Bounds, and the Inversion</h3>
+<p>Three cases for the $\Upsilon_A$ structure:</p>
+<p>"(a) the structure of $\Upsilon_A^{ij}$ allows the <strong>chiral enhanced</strong> $K_L\to\mu e$ decay, and hence $O(10\ {\rm TeV})$ LQ mass is required to be consistent with the experimental limit. <strong>It is remarkable that there are upper bounds on the vector-like fermion masses of $O({\rm TeV})$ to respect $K_L\to\mu e$. This result would encourage direct searches for the vector-like fermions at the LHC.</strong>"</p>
+<p>"(b) $K_L\to\mu e$ is not induced because of the structure of $\Upsilon_A^{ij}$, but $\mu\to e$ conversion arises. The resulting <strong>lower limit</strong> on the LQ mass is $6$ TeV currently and it will be improved to $15$ TeV at the future experiment with the aluminum target."</p>
+<p>"(c) both $K_L\to\mu e$ and $\mu\to e$ conversion are absent, so $B_d\to\mu e$ gives the strongest limit. Since the experimental limits are much weaker for this decay mode, <strong>$5$ TeV LQ is not excluded</strong>."</p>
+<p><strong>So the answer depends entirely on the flavour structure of one Yukawa matrix, and the three cases span $5$ TeV to $10$ TeV.</strong> The corpus should record the spread rather than a single number.</p>
+<p><strong>And the chirality enhancement in case (a) is the reason for the strength:</strong> a scalar coupling that flips chirality gives a $K_L\to\mu e$ amplitude proportional to the heaviest fermion mass in the loop, while a pure gauge coupling does not. <strong>That is a second general lesson</strong>: chirality-flipping new couplings are bounded much more tightly than chirality-conserving ones.</p>
+<h3 id="the-honest-closing">The Honest Closing</h3>
+<p>"In conclusion, while we suggested the conditions (i)–(iii) to suppress the flavor violating processes, <strong>it will be interesting to study what will be caused by the violation of these conditions. In particular, the tree-level contributions, namely the violation of the condition (i) is required to address the $R_{K^{(*)}}$ anomaly</strong>, so the <strong>full numerical analysis with both tree-level and one-loop contributions is crucial</strong>."</p>
+<p><strong>So the paper ends by admitting the tension is unresolvable within its own framework</strong>: to explain the anomaly you must violate condition (i), but violating (i) brings back the tree-level $K_L\to\mu e$. <strong>The loop analysis was done under an assumption that the physics requires breaking.</strong></p>
+<p><strong>That is a fair statement and it should be recorded</strong>, because a reader who takes the paper's bounds as a viability proof would be misled. The bounds apply to the protected corner, and the corner is not where the anomaly lives.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-unitarity-protects-only-a-single-gauge-coupling-not-a-gauge-plus-a-yukawa">1. Unitarity protects only a single gauge coupling, not a gauge plus a Yukawa</h3>
+<p><strong>The idea.</strong> Two-$U_1$ boxes cancel because the coupling is the same gauge coupling at both vertices. One-$U_1$-one-scalar boxes do not, because the scalar Yukawa is a different matrix.</p>
+<p><strong>What it would add.</strong> The most transferable idea in the batch. <strong>"GIM protection" is a statement about a single coupling's unitarity</strong>, and the corpus should state it that way, because the mistake of assuming it generalises is made in several of the leptoquark papers here. Any model that suppresses flavour violation by unitarity must check that no other coupling enters the same loop.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's FCNC section, and the twin-PS conversions (which invoke GIM without this caveat).</p>
+<p><strong>What stands in the way.</strong> Nothing; the argument is representation-theoretic and the loop functions are computed.</p>
+<h3 id="2-the-vector-like-fermion-mass-has-an-upper-bound">2. The vector-like fermion mass has an <em>upper</em> bound</h3>
+<p><strong>The idea.</strong> The box amplitude grows with the vector-like mass (mass insertion), so a heavier fermion violates the bound more, and the new states must be within LHC reach.</p>
+<p><strong>What it would add.</strong> An inversion of the usual decoupling logic, with a collider consequence. <strong>The corpus's naturalness discussions usually argue that new states must be <em>light</em> for hierarchy reasons</strong>; here they must be light for a <em>flavour</em> reason, which is a different and more robust argument.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's phenomenology section.</p>
+<p><strong>What stands in the way.</strong> The bound depends on the $\Upsilon$ structure; the paper quotes $3$ TeV for a $20$ TeV LQ.</p>
+<h3 id="3-chirality-flipping-couplings-are-bounded-far-more-tightly">3. Chirality-flipping couplings are bounded far more tightly</h3>
+<p><strong>The idea.</strong> Case (a)'s $K_L\to\mu e$ is chirally enhanced, giving a $10$ TeV LQ bound; case (b)'s $\mu\to e$ conversion gives $6$ TeV; case (c)'s $B_d\to\mu e$ gives $5$ TeV.</p>
+<p><strong>What it would add.</strong> A rule of thumb with numbers. <strong>The same model, with the same field content, spans a factor of two in the bound depending on which chirality structure the Yukawa has.</strong> The corpus should record that scalar leptoquarks are bounded harder than vector ones for this reason — which is part of why the data prefer $U_1$.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-the-protected-corner-is-not-where-the-anomaly-is">4. The protected corner is not where the anomaly is</h3>
+<p><strong>The idea.</strong> Conditions (i)–(iii) suppress LFV; explaining $R_{K^{(*)}}$ violates (i); so the analysis does not establish viability.</p>
+<p><strong>What it would add.</strong> A caution about how to read such papers. <strong>A bound derived under a condition that the physics must break is a bound on a model nobody uses.</strong> That is worth stating once, because the same pattern appears in several papers in this batch.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's methodology discussion.</p>
+<p><strong>What stands in the way.</strong> Nothing; the authors say it.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The model and its $0.2\%$ tuning: in <code>2103.11889</code> in this batch.</li>
+<li>$K_L\to\mu e$ as the binding constraint on $SU(4)$ leptoquarks: in <code>1808.07492</code>, <code>2103.11889</code>.</li>
+<li>GIM as unitarity: in <code>2302.10829</code> in this batch, stated for the SM.</li>
+<li>$\mu\to e$ conversion bounds: standard; new to this batch.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the most technically honest in the batch, and its honesty is why it matters.</p>
+<p>The sequence it completes: <code>2103.11889</code> suppresses flavour violation by a tuned texture and claims a TeV leptoquark is possible. This paper checks the same claim at one loop and finds that <strong>the suppression mechanism's own logic fails</strong> — unitarity cancels the gauge-gauge box but not the gauge-scalar box, and no choice of parameters can make a unitary matrix vanish. Then it derives bounds, and then it notes that the bounds apply only where the physics is not.</p>
+<p><strong>So the net result is that the vector-like-family route to a light $SU(4)$ leptoquark is in worse shape than the original paper claimed, for a reason that generalises to every model using unitarity as a flavour protection.</strong> The 4321 papers in this batch avoid the problem differently — by making the couplings vanish by symmetry rather than by cancellation — which is a structural advantage worth recording.</p>
+<p>The second point, which the corpus should carry as a design rule: <strong>when you claim a loop cancels by unitarity, list every field that can run in that loop.</strong> If two of them have different couplings, the cancellation is gone. This paper is the cautionary example.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

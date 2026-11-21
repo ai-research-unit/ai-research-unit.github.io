@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Pati–Salam Version of Subcritical Hybrid Inflation — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Raby - A Pati-Salam Version of Subcritical Hybrid Inflation - 1601.03749.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="a-patisalam-version-of-subcritical-hybrid-inflation"><strong>A Pati–Salam Version of Subcritical Hybrid Inflation</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1601.03749 [hep-ph] (v3)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>B. Charles Bryant, Stuart Raby</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 17 February 2016</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Rev. D 93 (2016) 095018</td>
+</tr>
+<tr>
+<td>length</td>
+<td>19 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Raby - A Pati-Salam Version of Subcritical Hybrid Inflation - 1601.03749-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Raby - A Pati-Salam Version of Subcritical Hybrid Inflation - 1601.03749.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Raby - A Pati-Salam Version of Subcritical Hybrid Inflation - 1601.03749.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Continues in <code>1612.04382</code> (reheating and leptogenesis) and <code>1703.09309</code> (the fermion fit) in this batch.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It makes inflation do the job that inflation is usually invoked to do — dilute the monopoles — but with the Pati–Salam breaking scale <em>inside</em> the inflationary epoch.</p>
+<blockquote>
+<p>"we present a model of <strong>subcritical hybrid inflation</strong> with a Pati-Salam [PS] symmetry group. <strong>Both the inflaton and waterfall fields contribute to the necessary e-foldings of inflation, while only the waterfall field spontaneously breaks PS — hence monopoles produced during inflation are diluted</strong> during the inflationary epoch."</p>
+</blockquote>
+<p>"The model is able to produce a <strong>tensor-to-scalar ratio $r<0.09$</strong> consistent with the latest BICEP2/Keck and Planck data, as well as scalar density perturbations and spectral index, $n_s$, consistent with Planck data. For particular values of the parameters, we find $r=0.084$ and $n_s=0.0963$."</p>
+<p><strong>That $n_s$ value is a typo in the abstract</strong> ($0.0963$ should presumably be $0.963$); the spectrum is red-tilted at $0.96$, not blue at $0.096$. <strong>Worth noting so a reader does not take it literally.</strong></p>
+<p>"The energy density during inflation is <strong>directly related to the PS breaking scale, $v_{PS}$</strong>."</p>
+<p>"The model also incorporates a <strong>$Z_4^R$ symmetry</strong> which can <strong>resolve the $\mu$ problem and suppress dimension 5 operators for proton decay, leaving over an exact R-parity</strong>."</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-subcritical">Why "Subcritical"</h3>
+<p>"the stage of inflation after the critical point may last for <strong>more than 60 e-folds</strong>."</p>
+<p>"Since <strong>the waterfall occurs before the last 60 e-foldings of inflation</strong>, the monopoles produced by the [PS breaking are diluted] ..."</p>
+<p>"Such a solution to the monopole problem has been presented previously in the context of [earlier work]."</p>
+<p><strong>The mechanism, stated precisely:</strong> in ordinary hybrid inflation, the waterfall transition that ends inflation also breaks the symmetry of the waterfall field. Monopoles form <em>at</em> the end and are <strong>not</strong> diluted, because inflation is over.</p>
+<p><strong>In subcritical hybrid inflation the waterfall happens <em>before</em> the end of inflation</strong>, and the inflaton continues to drive enough e-folds afterwards. <strong>So the symmetry breaking happens during inflation, and its defects are stretched away.</strong></p>
+<p><strong>That is the cleanest solution to the monopole problem in the batch, and it is structural rather than tuned.</strong> Compare <code>2504.01893</code>, which fixes the walls with a small bias and sweeps up the monopoles; and <code>1812.02747</code>/<code>2307.02544</code>, which accept the defects as a signal. <strong>Three different strategies, and this one is the tidiest.</strong></p>
+<p>"any monopole density formed during the breaking of Pati-Salam to the SM ... " — and the paper notes "a stage of tachyonic preheating occurs for a few e-folds but produces kinetic and gradient energy that ... <strong>considerably large number of e-folds can still be generated after symmetry breaking.</strong>"</p>
+<p><strong>So the tachyonic preheating does not consume the e-folds.</strong> That is a technical check the paper performs, and it is what makes the scenario viable.</p>
+<h3 id="the-energy-scale">The Energy Scale</h3>
+<p>"The energy density during inflation is <strong>directly related to the PS breaking scale, $v_{PS}$</strong>."</p>
+<p><strong>That identification is the model's predictive content</strong>: the amplitude of the primordial perturbations fixes $V^{1/4}$ during inflation, and if $V$ is controlled by $v_{PS}$, then <strong>$v_{PS}$ is determined by the CMB.</strong> </p>
+<p><strong>So Pati–Salam's breaking scale becomes a cosmological observable</strong>, which is the same logic as <code>2504.01893</code>'s gravitational waves but at a different scale: here the scale shows up in $r$ and $n_s$ rather than in a gravitational-wave plateau.</p>
+<h3 id="the-math19-symmetry">The $Z_4^R$ Symmetry</h3>
+<p>"The model also incorporates a $Z_4^R$ symmetry which can <strong>resolve the $\mu$ problem and suppress dimension 5 operators for proton decay, leaving over an exact R-parity</strong>."</p>
+<p><strong>Three jobs from one discrete symmetry, and the third is the most important for a SUSY GUT:</strong>
+- <strong>$\mu$ problem</strong>: the $Z_4^R$ forbids the bare $\mu$ term, so $\mu$ must arise from the Kähler potential or from a symmetry-breaking VEV at the right scale.
+- <strong>Dimension-5 proton decay</strong>: the dangerous operators $QQQL$ and $UUDE$ are forbidden by $R$-symmetry. <strong>This is the dominant proton-decay channel in SUSY GUTs</strong>, and forbidding it is essential.
+- <strong>Exact $R$-parity</strong>: which makes the LSP stable, hence a dark matter candidate.</p>
+<p><strong>The corpus should record the triple role</strong>, because it is the standard argument for $R$-symmetries in this literature and it explains why the Raby programme's later paper (<code>2009.04582</code>) is about the axion and the LSP in the same framework.</p>
+<h3 id="the-three-family-extension">The Three-Family Extension</h3>
+<p>"the model allows for a complete three family extension with a [Yukawa sector] ..."</p>
+<p>"The model has also been extended to a three family model for fermion masses and mixing angles which <strong>reproduces results found previously in the literature</strong>."</p>
+<p><strong>So the inflation and the flavour sector are compatible but not derived from each other</strong> — the same parameters do not do both jobs. <strong>The honest reading</strong>: the inflationary sector is an add-on that must be checked for consistency, not a consequence.</p>
+<h3 id="the-road-ahead-stated-bluntly">The Road Ahead, Stated Bluntly</h3>
+<p>"since our right-handed neutrino masses are <strong>hierarchical with typical values of order $10^{10}$, $10^{12}$, $10^{14}$ GeV</strong>, a discussion of leptogenesis will require a <strong>detailed analysis of the production of a lepton asymmetry as well as washout effects</strong>."</p>
+<p>"With degenerate gaugino masses at the GUT scale, <strong>the lightest neutralino is bino-like. This dark matter candidate typically over-closes the universe. However with mirage mediation it has been shown that one can obtain a well-tempered dark matter candidate.</strong>"</p>
+<p>"<strong>SUSY breaking must necessarily be decoupled from the inflationary sector such that the gravitino mass is less than the Hubble parameter during inflation</strong>, i.e. $m_{3/2}<H_{inf}$. In addition, the <strong>cosmological moduli and gravitino problems must be ameliorated.</strong>"</p>
+<p><strong>That paragraph is a list of three unsolved problems, and it is the most valuable part of the paper for a reader assessing the programme.</strong> A model that inflates and dilutes monopoles still faces:
+- <strong>Leptogenesis with washout</strong> — nontrivial, and addressed in <code>1612.04382</code>, <code>1703.02558</code>.
+- <strong>Bino dark matter over-closing the universe</strong> — which requires mirage mediation, i.e. a specific SUSY-breaking scheme.
+- <strong>The gravitino and moduli problems</strong> — $m_{3/2}<H_{inf}$ and a dilution mechanism.</p>
+<p><strong>The corpus should record that the Raby programme's completeness is a chain of papers each fixing one link</strong>, and that the chain is not yet closed.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-subcritical-hybrid-inflation-breaks-the-symmetry-during-inflation-so-monopoles-dilute">1. Subcritical hybrid inflation breaks the symmetry during inflation, so monopoles dilute</h3>
+<p><strong>The idea.</strong> The waterfall is not the end of inflation; enough e-folds follow that the defects are stretched away.</p>
+<p><strong>What it would add.</strong> The cleanest monopole solution in the batch, and a structural one. <strong>Compare the alternatives</strong>: inflation before breaking (usual, needs a second inflation), a bias that makes walls decay (<code>2504.01893</code>), or accepting the defects (<code>2307.02544</code>). <strong>This one needs neither a bias nor a second epoch.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's monopole section.</p>
+<p><strong>What stands in the way.</strong> The tachyonic preheating must not consume the e-folds, which the paper checks.</p>
+<h3 id="2-the-patisalam-scale-is-fixed-by-the-cmb-amplitude">2. The Pati–Salam scale is fixed by the CMB amplitude</h3>
+<p><strong>The idea.</strong> $V^{1/4}\sim v_{PS}$ and $V$ is set by the scalar perturbation amplitude, so $v_{PS}$ is measured cosmologically.</p>
+<p><strong>What it would add.</strong> A route to the scale that is not gauge unification or proton decay. <strong>The batch now has five routes to $M_{PS}$</strong> (<code>1807.03669</code> fixed point, <code>2504.01893</code> running, <code>2501.00302</code> fit, <code>0805.3486</code> $\sin^2\theta_W$, here inflation), and they disagree by many orders of magnitude. <strong>That disagreement is a finding.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scale section.</p>
+<p><strong>What stands in the way.</strong> The relation $V\sim v_{PS}^4$ assumes the inflaton potential is controlled by the PS-breaking field.</p>
+<h3 id="3-one-math42-fixes-math43-dimension-5-proton-decay-and-math44-parity">3. One $Z_4^R$ fixes $\mu$, dimension-5 proton decay, and $R$-parity</h3>
+<p><strong>The idea.</strong> Three problems, one discrete symmetry.</p>
+<p><strong>What it would add.</strong> The standard argument for $R$-symmetries, with its three targets named. <strong>The corpus's proton-decay section should say that in SUSY GUTs the leading channel is dimension five and that $R$-symmetry is what forbids it</strong>, which changes the whole picture relative to the non-SUSY dimension-six discussion.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's proton-decay section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-the-incomplete-chain-leptogenesis-bino-over-closure-gravitino">4. The incomplete chain: leptogenesis, bino over-closure, gravitino</h3>
+<p><strong>The idea.</strong> Inflation and monopole dilution work; three cosmological problems remain open.</p>
+<p><strong>What it would add.</strong> A caution against reading "consistent with Planck" as "complete". <strong>The corpus should record what a model has not done</strong>, not only what it has.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> <code>1612.04382</code> addresses leptogenesis; the other two remain open in this paper.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Hybrid inflation in SUSY GUTs: new to the corpus.</li>
+<li>The monopole problem from $SU(4)\to SU(3)\times U(1)$: in <code>2307.02544</code>, <code>2504.01893</code>.</li>
+<li>The $\mu$ problem and $R$-parity: in the SUSY-breaking articles.</li>
+<li>Dimension-5 proton decay in SUSY: partly in the proton-decay articles.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and <code>2504.01893</code> solve the same problem — Pati–Salam monopoles — with opposite philosophies, and the comparison is the useful thing.</p>
+<p><strong>Here</strong>: arrange the cosmology so the monopoles never form in appreciable density. Inflation happens after the breaking, the defects are diluted, nothing is left. <strong>The problem is removed.</strong></p>
+<p><strong>There</strong>: accept that the monopoles form, note that they and the domain walls together destroy the standard cosmology, and then <strong>use the repair (a bias) to predict a gravitational-wave signal</strong>. <strong>The problem is converted into an observable.</strong></p>
+<p><strong>Both are legitimate and they lead to different physics</strong>: this model predicts $r=0.084$ and nothing else; that one predicts a stochastic background at 10–$10^3$ Hz. <strong>The corpus should present them as the two strategies</strong>, because a reader who sees one will think Pati–Salam cosmology has one answer.</p>
+<p>The second point: the $n_s=0.0963$ in the abstract is a typo and should be quoted as $0.963$ if at all. <strong>Small errors in abstracts propagate into corpora</strong>, and the conversion notes it so that it does not.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

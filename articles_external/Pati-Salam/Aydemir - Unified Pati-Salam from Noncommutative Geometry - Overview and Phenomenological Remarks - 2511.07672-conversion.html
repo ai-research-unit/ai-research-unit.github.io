@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unified Pati–Salam from Noncommutative Geometry: Overview and Phenomenological Remarks — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Aydemir - Unified Pati-Salam from Noncommutative Geometry - Overview and Phenomenological…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="unified-patisalam-from-noncommutative-geometry-overview-and-phenomenological-remarks"><strong>Unified Pati–Salam from Noncommutative Geometry: Overview and Phenomenological Remarks</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2511.07672 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ufuk Aydemir</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 10 November 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Proceedings of the 28th Bled Workshop, <em>What Comes Beyond the Standard Models</em>, Bled, Slovenia, 6–17 July 2025</td>
+</tr>
+<tr>
+<td>length</td>
+<td>13 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Aydemir - Unified Pati-Salam from Noncommutative Geometry - Overview and Phenomenological Remarks - 2511.07672-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Aydemir - Unified Pati-Salam from Noncommutative Geometry - Overview and Phenomenological Remarks - 2511.07672.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-spectral-triple-of-the-biquaternion-algebra.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Aydemir - Unified Pati-Salam from Noncommutative Geometry - Overview and Phenomenological Remarks - 2511.07672.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>A conference review, by one of the authors of the leptoquark paper, of the Pati–Salam models that come out of noncommutative geometry. It is the most compact statement in the corpus of how the construction is assembled: the algebra, the spectral action, the order-one condition, the three models, the Yukawa sector written in one line, and the single leptoquark that survives. Two things make it worth converting rather than skimming. First, it states the <strong>finite algebra</strong> in the form $A_F=\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)$ — the quaternions are literally the factors. Second, it writes the scalar sector as one symbol split by symmetry brackets, which is a notation the corpus could adopt directly.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-construction">The Construction</h3>
+<p>The spectral triple is $(\mathcal A,\mathcal H,D)$ with an involution, a $\mathbb Z_2$ grading $\Gamma$ (a generalized $\gamma_5$) and an antilinear unitary $J$ (a generalized charge conjugation). The data is a product of a four-manifold with a finite space, "two sheeted spacetime with $M\times\mathbb Z_2$", and the action is</p>
+<p>$$
+S=S_F+S_B=(J\psi,D_A\psi)+\mathrm{Tr}\,\chi\left(\frac{D_A}{\Lambda}\right),
+$$</p>
+<p>where $\chi$ "acts as a regulator that selects the eigenvalues of the covariant Dirac operator $D_A$ smaller than the cutoff $\Lambda$". The covariant operator is</p>
+<p>$$
+D_A=D+A+JAJ^\dagger,
+\qquad
+A=\sum_i a_i[D,b_i],
+\qquad
+A=A^\ast,
+$$</p>
+<p>and the <strong>first-order condition</strong> is</p>
+<p>$$
+\left[[D,a],JbJ^{-1}\right]=0
+\qquad\forall a,b\in\mathcal A.
+$$</p>
+<p>The paper states the physical reading in one sentence: "the Higgs boson arises as the connection in the extra discrete dimension. The gauge transformations emerge from the unitary inner automorphisms of the algebra $\mathcal A$ while diffeomorphisms arise from the outer automorphisms."</p>
+<h3 id="the-two-algebras">The Two Algebras</h3>
+<p>For the Standard Model,</p>
+<p>$$
+\mathcal A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C),
+$$</p>
+<p>"where $\mathbb H\subset M_2(\mathbb C)$ is the algebra of quaternions, and $M_3(\mathbb C)$ is the algebra of $3\times3$ matrices with elements in $\mathbb C$." The correspondence with $U(1)$, $SU(2)$ and $SU(3)$ is immediate — <strong>the quaternions are the electroweak factor.</strong></p>
+<p>For Pati–Salam,</p>
+<p>$$
+\mathcal A_F=\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C),
+$$</p>
+<p>with the rest of the spectral data chosen accordingly. The coloured factor grows from $M_3(\mathbb C)$ to $M_4(\mathbb C)$, and the single quaternion becomes two, one per chirality.</p>
+<h3 id="the-bosonic-action-and-why-the-minimal-model-fails">The Bosonic Action and Why the Minimal Model Fails</h3>
+<p>The bosonic part contains the Einstein–Hilbert term, the cosmological constant, a non-minimal coupling $\xi_0R|H|^2$, the Gauss–Bonnet term, the Weyl term $\alpha_0C_{\mu\nu\rho\sigma}C^{\mu\nu\rho\sigma}$, and the gauge kinetic terms with a specific relative normalisation:</p>
+<p>$$
+\frac{f_0}{2\pi^2}\left(g_3^2G^i_{\mu\nu}G^{\mu\nu i}+g_2^2F^m_{\mu\nu}F^{\mu\nu m}+\frac{5}{3}g_1^2B_{\mu\nu}B^{\mu\nu}\right).
+$$</p>
+<p>The coefficients $5/3$ and $1$ and $1$ are where unification enters, and the condition is</p>
+<p>$$
+g_3^2=g_2^2=\tfrac53g_1^2
+$$</p>
+<p>at a scale $M_U$. The paper is explicit that this cannot work with Standard Model content: "the gauge coupling unification is not achievable with the usual perturbative RG running", and a modification that adds scalars was shown by another group to fail "regardless of the mass hierarchy of the extra fields". Hence the enlargement of the algebra.</p>
+<p>The paper is equally explicit that the minimal model gets the Higgs mass wrong, and that the repair is a singlet field.</p>
+<h3 id="the-three-models-and-one-symbol-for-the-scalars">The Three Models, and One Symbol for the Scalars</h3>
+<p>The scalar content is the now-familiar table (A: $\varphi(1,2,2)$, $\Sigma(15,1,1)$, $\tilde\Delta_R(4,1,2)$; B adds $\tilde\Sigma(15,2,2)$, $\Delta_R(10,1,3)$, $H_R(6,1,1)$; C adds $\Delta_L(10,3,1)$, $H_L(6,1,1)$ and is the left–right symmetric one). The breaking is</p>
+<p>$$
+\mathrm{NCG}\xRightarrow{M_U}G_{422D}\xrightarrow[\langle\Delta_R\rangle]{M_C}G_{321},
+$$</p>
+<p>with the left–right scale carried by the Standard-Model singlet inside $\Delta_R(10,1,3)$.</p>
+<p>The compact notation is this. The scalar fields are</p>
+<p>$$
+\Sigma_{\dot aI}^{\ \ bJ}=(1,2,2)+(15,2,2),
+\qquad
+H^{aIbJ}=(6,1,1)+(10,3,1),
+\qquad
+H^{\dot aI\dot bJ}=(6,1,1)+(10,1,3),
+$$</p>
+<p>and in Model C the second of these splits by symmetry of its indices:</p>
+<p>$$
+H^{aIbJ}=\Delta^{(ab)(IJ)}+H^{[ab][IJ]}=\Delta_L(10,3,1)_{422}+H_L(6,1,1)_{422}.
+$$</p>
+<p><strong>Round brackets on both index pairs give the symmetric $10$; square brackets give the antisymmetric $6$.</strong> One symbol, two multiplets, and the bracket type is the whole difference. The sextet then splits into the Standard Model as</p>
+<p>$$
+H_L(6,1,1)_{422}=H_{3L}\left(3,1,-\tfrac13\right)_{321}+H_{3L}\left(3,1,\tfrac13\right)_{321}.
+$$</p>
+<h3 id="the-yukawa-sector-and-where-the-math48-comes-from">The Yukawa Sector, and Where the $\gamma_5$ Comes From</h3>
+<p>The $G_{422D}$-invariant Yukawa terms are written as</p>
+<p>$$
+\mathcal L_Y=\psi^{\dot aI}\gamma_5\Sigma_{\dot aI}^{\ \ bJ}\psi_{bJ}
++\psi^{C\,aI}\gamma_5H^{aIbJ}\psi_{bJ}
++\psi^{C\,\dot aI}\gamma_5H^{\dot aI\dot bJ}\psi_{\dot bJ}+\mathrm{h.c.}
+$$</p>
+<p>The paper pauses on the $\gamma_5$: it "is due to the grading of the geometry", because the grading in the product $M\times F$ is $\Gamma=\gamma_5\otimes\gamma_F$, with $\gamma_5$ the chirality of the manifold and $\gamma_F$ the finite $\mathbb Z_2$ grading "responsible for the algebra of quaternionic matrices $M_2(\mathbb H)$ into $\mathbb H_R\oplus\mathbb H_L$".</p>
+<p>The three terms do three different jobs. The first "yields terms containing fermions with opposite chiralities ($LR$)"; the second and third give $LL$ and $RR$ terms, because those scalars "connect fermions and antifermions with the same chirality".</p>
+<h3 id="the-leptoquark">The Leptoquark</h3>
+<p>Decomposing the second term gives, per family,</p>
+<p>$$
+\bar\psi^{C\,aI}\gamma_5H^{[ab][IJ]}\psi_{bJ}=2\left(\bar d^C_{Lj}\nu_L-\bar u^C_{Lj}e_L\right)H^*_{3L}+\epsilon^{ijk}\bar u^C_{Li}\bar d_{Lj}H_{3Lk},
+$$</p>
+<p>so $H^*_{3L}$ is "the 'good' leptoquark that has left-handed couplings while lacking diquark couplings", and $H_{3L}$ "couples to diquarks, thus mediating proton decay, and should be taken heavy".</p>
+<p>The paper names the problem this avoids: in unified theories the Standard Model doublet and a leptoquark sit in one multiplet, and keeping one light and the other heavy "is known as the infamous double-triplet splitting problem". Here the splitting is not arranged by a fine tuning of parameters; the diquark coupling is simply not present, and the reason is geometric.</p>
+<p>It also records the cost. Because only left-handed couplings exist in $H_L$, the parameter space is reduced, and the left-handed-only $S_1$ loop "is suppressed and comes with a negative sign" in $a_\mu$ — "this would have been a problem for the $a_\mu$ discrepancy ... However, recent developments on both sides suggest that such a discrepancy may be absent."</p>
+<h3 id="why-the-framework-is-being-promoted">Why the Framework Is Being Promoted</h3>
+<p>The pitch is threefold: unification is <strong>required</strong> rather than optional, the scalar content is <strong>restricted</strong> rather than chosen, and the theory "reconciles also gravity on the same footing". The paper also states the honest caveats: the action is truncated at lowest order in $\Lambda$ and "is clearly not UV-complete in the common sense", and "a QFT formalism that is faithful to the NCG structure has not been completely established".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-quaternions-are-already-the-electroweak-algebra-of-the-standard-model">1. The quaternions are already the electroweak algebra of the Standard Model</h3>
+<p><strong>The idea.</strong> $\mathcal A_F=\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)$: the finite algebra of the Standard Model has $\mathbb H$ as its $SU(2)$ factor, and Pati–Salam replaces it by $\mathbb H_R\oplus\mathbb H_L$ and $M_3$ by $M_4$.</p>
+<p><strong>What it would add.</strong> A precedent the corpus does not have and badly needs. The corpus is built on $\mathbb H$ and $\mathbb C\otimes\mathbb H$, and its spectral-triple article concedes that the biquaternion algebra is "not a non-commutative geometry of the Standard-Model kind". But the Standard-Model kind of noncommutative geometry <em>contains</em> $\mathbb H$ — not the biquaternions, the quaternions alone, with the extra $\mathbb C$ supplied by $M_3(\mathbb C)$ and $\mathbb C$. That is a much closer relation than the corpus currently admits, and stating it correctly changes the shape of the comparison: the corpus's algebra is one complexification away from one factor of a known construction, not a different construction altogether.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-spectral-triple-of-the-biquaternion-algebra.md</code>, in <em>The Almost-Commutative Triple and the Finite Geometry</em>, as the paragraph that currently says the corpus is not of this kind. It should keep that sentence and add the precise one: <em>the Standard-Model finite algebra already uses $\mathbb H$; what the corpus does with the complex structure is what remains to be compared.</em></p>
+<p><strong>What stands in the way.</strong> The corpus's $\mathbb B_{\mathbb R}$ with $\flat=-{}^{*}$ is not $\mathbb H$, and $M_4(\mathbb C)$ is not $M_3(\mathbb C)\oplus\mathbb C$. The comparison is at the level of factors, and the corpus must not claim more.</p>
+<h3 id="2-the-chirality-of-the-finite-geometry-is-a-math88-and-it-is-what-puts-math89-in-the-yukawa-coupling">2. The chirality of the finite geometry is a $\gamma_F$, and it is what puts $\gamma_5$ in the Yukawa coupling</h3>
+<p><strong>The idea.</strong> $\Gamma=\gamma_5\otimes\gamma_F$; the $\gamma_F$ grades $\mathbb H_R\oplus\mathbb H_L$; the $\gamma_5$ that appears in every Yukawa term is the spacetime half of that product.</p>
+<p><strong>What it would add.</strong> The identification the corpus's spectral-triple article makes implicitly and never states in these terms. That article has a finite chirality $\xi$ with $\xi D_F+D_F\xi=0$ and a manifold chirality $G_M$, and warns that "the two gradings must not be confused". This paper is the worked case in which both appear and their <em>product</em> is what the Lagrangian uses. So the corpus's $\xi$ occupies exactly the slot of $\gamma_F$ — and the reason a $\gamma_5$ multiplies every Yukawa coupling is that the grading of the product space is a tensor product.</p>
+<p><strong>Where it lands.</strong> The spectral-triple article, the paragraph distinguishing $G_M$ from $\xi$. Also the Pati–Salam article, wherever a Yukawa coupling is written without explanation of the $\gamma_5$.</p>
+<p><strong>What stands in the way.</strong> Nothing. It is a clean structural identification, and it makes the corpus's notation mean something it currently only asserts.</p>
+<h3 id="3-one-symbol-two-multiplets-brackets-decide-between-the-math103-and-the-math104">3. One symbol, two multiplets: brackets decide between the $10$ and the $6$</h3>
+<p><strong>The idea.</strong> $H^{aIbJ}=\Delta^{(ab)(IJ)}+H^{[ab][IJ]}$ — the symmetric part of the index pair in both $SU(2)_L$ and $SU(4)$ gives the $(10,3,1)$, and the antisymmetric part gives the $(6,1,1)$.</p>
+<p><strong>What it would add.</strong> A notation for the corpus's own content. The Pati–Salam article has $15\to8\oplus1\oplus6$, where the $6$ is the antisymmetric two-index of $SU(4)$ and the leptoquark block. Writing the adjoint and the sextet as the symmetric and antisymmetric parts of one index pair is more compact than listing decompositions, and it makes the proton-stability distinction of the 1804.05844 conversion visible at a glance: <strong>one bracket type is proton-safe and the other is not.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's boson table and its notation section (if it has one).</p>
+<p><strong>What stands in the way.</strong> Nothing; it is a change of notation and the corpus's leptoquark section reads better for it.</p>
+<h3 id="4-double-triplet-splitting-and-a-way-to-avoid-it-that-is-not-fine-tuning">4. Double-triplet splitting, and a way to avoid it that is not fine tuning</h3>
+<p><strong>The idea.</strong> In $SU(5)$ and $SO(10)$ the Standard-Model doublet and a colour triplet share a multiplet, so keeping the doublet light and the triplet heavy needs the double-triplet splitting mechanism. In this construction the leptoquark's diquark coupling is absent by construction, so no splitting is needed to keep the proton stable.</p>
+<p><strong>What it would add.</strong> A named problem and a contrasting solution. The corpus's Pati–Salam article treats the leptoquark mass as a parameter with a $K_L\to\mu e$ bound. It never mentions that in a unified model the same multiplet contains the Higgs, and that the mass split is the hard part. Naming the problem is worth more than solving it: it explains why the corpus's free parameter is not free elsewhere.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark paragraph, and the Aulakh MSGUT conversion, where the doublet–triplet mass matrices are computed explicitly.</p>
+<p><strong>What stands in the way.</strong> The corpus's frame has no multiplet containing both, so the import is a comment on what a unified embedding would face.</p>
+<h3 id="5-the-sign-of-the-left-handed-only-leptoquarks-contribution-to-math116">5. The sign of the left-handed-only leptoquark's contribution to $a_\mu$</h3>
+<p><strong>The idea.</strong> An $S_1$ with only left-handed couplings gives a suppressed contribution to the muon anomalous magnetic moment "and comes with a negative sign". Since the observed discrepancy, if it exists, is positive, the model cannot explain it and can only be constrained by it.</p>
+<p><strong>What it would add.</strong> A falsifiable, sign-level statement about a leptoquark, of the kind the corpus's $g-2$ articles do not make. <code>articles_physics/the-anomalous-magnetic-moment-in-biquaternionic-form.md</code> computes the moment from the Dirac structure; it does not consider a loop of a coloured scalar. A one-loop leptoquark contribution with a stated sign is a different object and a testable one.</p>
+<p><strong>Where it lands.</strong> The anomalous-moment article, as a note on what new physics can and cannot contribute, and the Pati–Salam article's leptoquark paragraph.</p>
+<p><strong>What stands in the way.</strong> The corpus's frame is a Dirac theory; adding a scalar loop means adding a propagator and a vertex, which the corpus does elsewhere but not for coloured scalars. Also, the $a_\mu$ discrepancy itself has weakened since 2021, and the paper says so — the import must carry that caveat.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>The spectral action, inner fluctuations, the first-order condition, $D_F$ as the mass term: in the spectral-triple article.</li>
+<li>The three models and their scalar lists: in the 1804.05844 conversion.</li>
+<li>$\Delta_R(10,1,3)$ and the type II seesaw: in the seesaw article.</li>
+<li>$g_3=g_L=g_R$ and the $\sin^2\theta_W$ failure: in the Pati–Salam article.</li>
+</ul>
+<h3 id="two-tensions-recorded">Two tensions recorded</h3>
+<p>The $R_{D^{(*)}}$ anomaly that motivates the leptoquark section is stated as a deviation of "more than $3\sigma$" by the Heavy Flavor Averaging Group. Unlike $R_{K^{(*)}}$, this one has <strong>not</strong> gone away, but its significance and the Standard Model prediction for the relevant form factors remain contested; a reader should treat the number as live but not settled.</p>
+<p>The $a_\mu$ discrepancy is described by the paper itself as possibly absent, on both the experimental and the theoretical side. The sign statement about the leptoquark survives either way — it is a statement about the model, not about the measurement.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

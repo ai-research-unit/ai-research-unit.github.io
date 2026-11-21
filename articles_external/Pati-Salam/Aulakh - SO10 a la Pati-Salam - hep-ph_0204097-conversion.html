@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SO(10) à la Pati–Salam — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Aulakh - SO10 a la Pati-Salam - hep-ph_0204097.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="so10-a-la-patisalam"><strong>SO(10) à la Pati–Salam</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-ph/0204097 (v4)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Charanjit S. Aulakh, Aarti Girdhar</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v4, 9 February 2004</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>International Journal of Modern Physics A (in press, per the PDF)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>27 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Aulakh - SO10 a la Pati-Salam - hep-ph_0204097-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Aulakh - SO10 a la Pati-Salam - hep-ph_0204097.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Aulakh - SO10 a la Pati-Salam - hep-ph_0204097.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper supplies the translation rules that turn an $SO(10)$ invariant into a sum of Pati–Salam invariants, so that the Clebsch–Gordan coefficients of $SO(10)\to SU(4)\times SU(2)_L\times SU(2)_R$ become computable by hand. It uses the isomorphism $SO(10)\supset SO(6)\times SO(4)\cong SU(4)\times SU(2)_L\times SU(2)_R$ and gives separate rules for the tensor and the spinor sectors. It defines <strong>D-parity</strong>, $D=\exp(-i\pi J_{23})\exp(i\pi J_{67})$, and gives its action on every representation, which is what organises the signs. As a demonstration it computes the doublet and triplet mass matrices of the minimal supersymmetric $SO(10)$, and finds a new baryon-violating channel through the colour triplet living in the same multiplet as the right-handed neutrino mass. The authors claim the channel, and several of the coefficients, had not appeared before.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-patisalam-is-the-right-subgroup-to-decompose-into">Why Pati–Salam Is the Right Subgroup to Decompose Into</h3>
+<p>$SO(10)$ has two maximal subgroups: $SU(5)\times U(1)$ and the Pati–Salam group. The paper argues for the second, and the reasons are stated as defects of the first. Decomposing into $SU(5)\times U(1)$ labels, as a recent paper had done in the oscillator basis, suffers from "a certain lack of transparency, due precisely to the LR asymmetric nature of the embedding of $SU(5)\times U(1)$", and is "quite inappropriate for LR symmetric breaking chains". The Pati–Salam subgroup is the one in which left and right are treated alike, so it is the one in which a left–right symmetric chain can be followed.</p>
+<p>The essential content is therefore two translations: $SO(6)\leftrightarrow SU(4)$ and $SO(4)\leftrightarrow SU(2)_L\times SU(2)_R$. The paper notes that the tools "have long existed (in somewhat implicit form) in the work of Wilczek and Zee", but that no explicit results were available, and it says plainly that it disagrees with Wilczek and Zee about the form of the charge conjugation matrices for $SO(2N)$ spinors — and that "it is only after making the necessary corrections that the translation $SO(10)\leftrightarrow G_{PS}$ becomes feasible and transparent".</p>
+<h3 id="the-vocabulary">The Vocabulary</h3>
+<p>The index conventions are stated in full because the rules depend on them: $i,j=1..10$ for $SO(10)$ vectors; $a,b=1..6$ and $\tilde\alpha,\tilde\beta=7..10$ for the $6+4$ split; complexified to $\hat a=1..6$ and $\hat\alpha=7..10$; $\alpha,\beta=1,2$ and $\dot\alpha,\dot\beta=\dot1,\dot2$ for the two $SU(2)$s; $\mu,\nu=1..4$ for the $4$ of $SU(4)$ with $\bar\mu,\bar\nu=1,2,3$ for its $SU(3)$ part.</p>
+<p>The first nontrivial statement is the split of the colour quartet,</p>
+<p>$$
+4=(3,\tfrac13)\oplus(1,-1),
+$$</p>
+<p>so the lepton is the fourth colour and its $B-L$ is $-1$, and the antisymmetric two-index object,</p>
+<p>$$
+6=V_{\bar\mu}(3,-\tfrac23)\oplus V^*_{\bar\mu}(\bar3,\tfrac23),
+$$</p>
+<p>which is the sextet that will matter later. The translation of a contraction is then</p>
+<p>$$
+V_aW_a=\tfrac14\epsilon^{\mu\nu\lambda\sigma}V_{\mu\nu}W_{\lambda\sigma}\equiv\tfrac12\tilde V^{\mu\nu}W_{\mu\nu}.
+$$</p>
+<h3 id="d-parity">D-Parity</h3>
+<p>The organising device is a discrete symmetry defined as a product of two half-turns,</p>
+<p>$$
+D=\exp(-i\pi J_{23})\exp(i\pi J_{67}),
+$$</p>
+<p>that is, rotations through $\pi$ in the $(23)$ and $(67)$ planes. On a vector, the components $V_2,V_3,V_6,V_7$ change sign and the rest do not. In Pati–Salam labels this becomes</p>
+<p>$$
+V_{\mu\nu}\leftrightarrow(-)^{\mu+\nu+1}\tilde V^{\mu\nu},
+\qquad
+V_{2\dot2}\leftrightarrow V_{1\dot1},
+$$</p>
+<p>with $V_{1\dot2}$ and $V_{2\dot1}$ unchanged. For the self-dual multiplets of $SO(4)$,</p>
+<p>$$
+V^{(\pm)}_1\leftrightarrow V^{(\mp)}_1,
+\qquad
+V^{(\pm)}_{2,3}\leftrightarrow-V^{(\mp)}_{2,3},
+$$</p>
+<p>so that $\vec A_L\cdot\vec B_L\leftrightarrow\vec A_R\cdot\vec B_R$ — <strong>D-parity is the operation that exchanges the two $SU(2)$ factors.</strong> For an adjoint $A^\nu_{\ \mu}$ from the antisymmetric $15$, $A^\nu_{\ \mu}\leftrightarrow(-)^{\mu+\nu+1}A^\mu_{\ \nu}$; for an adjoint derived from a four-index antisymmetric via $\Phi_{ab}=\frac{1}{4!}\epsilon_{abcdef}\Phi_{cdef}$, the extra minus of the duality makes it "D-axial", $\phi^\nu_{\ \mu}\leftrightarrow(-)^{\mu+\nu}\phi^\mu_{\ \nu}$.</p>
+<p>The paper is explicit about why this matters: in the decomposition of $SO(10)$ invariants into Pati–Salam invariants, "D-parity proves valuable for organizing and cross checking relative signs". The rules also let one check a chain: $G_{PS}\times D$ is the group, and $D$ is the remnant of parity.</p>
+<h3 id="what-the-rules-buy">What the Rules Buy</h3>
+<p>The paper's demonstration is the minimal supersymmetric $SO(10)$ with a $210$, a $126\oplus\overline{126}$ and a $10$. The rules give the mass matrices of the $SU(2)_L$ doublets and the $SU(3)_c$ triplets that mix with those in the $10$ and $126$ — "the phenomenological heart of the model", in the sense that which linear combination stays light is what the low-energy theory is.</p>
+<h3 id="the-baryon-violating-effective-superpotential">The Baryon-Violating Effective Superpotential</h3>
+<p>The second demonstration is the bare $\Delta B\neq0$ superpotential, obtained from the triplet mass matrix,</p>
+<p>$$
+-\mathcal W_{eff}^{\Delta B\neq0}=L_{ABCD}\left(\tfrac12\epsilon Q_AQ_BQ_CL_D\right)+R_{ABCD}\left(\epsilon\bar e_A\bar u_B\bar u_C\bar d_D\right),
+$$</p>
+<p>with</p>
+<p>$$
+L_{ABCD}=S_{11}h_{AB}h_{CD}+S_{12}f_{AB}h_{CD}+S_{21}f_{AB}h_{CD}+S_{22}f_{AB}f_{CD},
+\qquad
+R_{ABCD}=L_{ABCD}-i\sqrt2S_{14}f_{AB}h_{CD}-i\sqrt2S_{24}f_{AB}f_{CD},
+$$</p>
+<p>where $S=T^{-1}$ is the inverse triplet mass matrix, and $h_{AB}=2\sqrt2h'_{AB}$, $f_{AB}=4\sqrt2f'_{AB}$.</p>
+<p><strong>The new channel is the point.</strong> Previous work on $\Sigma_{126}$-mediated decay considered only the triplets $t^{(2)},\bar t^{(2)}$ and found no contribution from $t^{(4)},\bar t^{(4)}$. The paper finds one. That triplet lives in $\Sigma_{126}(10,1,3)$ — <strong>the same Pati–Salam multiplet that contains the Higgs field giving the right-handed neutrino its Majorana mass.</strong> The paper states the consequence in one line: this "nominally strengthens the emergent link between neutrino mass and baryon decay".</p>
+<p>The paper is honest about the size. $t^{(4)}$ couples only to the right–right combinations $(\bar d_A\bar\nu_B+\bar e_A\bar u_B)$, so its exchange contributes only to the $RRRR$ channel, "which, at least in $SO(10)$, seems generically suppressed except at very large $\tan\beta$". Mixing in the triplet mass matrix could strengthen it.</p>
+<p>The paper also corrects a published error, and the correction is a matter of which multiplet exists at all: a recent paper had an anti-triplet from $(10,1,3)\in126$ coupling to $QL$, but $16\times16=126+\dots$ implies that the $126$ contains $(10,1,3)$ and not its conjugate.</p>
+<h3 id="a-remark-that-reaches-beyond-math81">A Remark That Reaches Beyond $SO(10)$</h3>
+<p>The closing paragraph notes that the rules "may also be applied in other contexts where one encounters these groups for example in 10 dimensional field theories where the Lorentz group is $SO(1,9)$ and a translation to $SU(4)$ labels instead of $SO(6)$ labels for the compactified sector may prove more convenient, specially for spinorial indices."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-d-parity-the-operation-that-exchanges-the-two-math85-factors-written-down">1. D-parity: the operation that exchanges the two $SU(2)$ factors, written down</h3>
+<p><strong>The idea.</strong> $D=\exp(-i\pi J_{23})\exp(-i\pi J_{67})$ is a product of two half-turns, one in a plane of the spacetime-like block and one in a plane of the internal block. It acts on the adjoints as $\vec A_L\cdot\vec B_L\leftrightarrow\vec A_R\cdot\vec B_R$. It is a discrete symmetry, not a gauge one, and it survives when the gauge group breaks.</p>
+<p><strong>What it would add.</strong> The corpus's chiral wall has exactly one missing object: an operation that swaps $L$ and $R$. The Pati–Salam article states that the algebra "does not choose a chirality" and that the assignment is declared. It never says <em>what the operation would be that exchanges the two choices</em>. D-parity is that operation, and it comes with an explicit action on every representation — signs included, $V_{\mu\nu}\leftrightarrow(-)^{\mu+\nu+1}\tilde V^{\mu\nu}$.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, the chiral-wall section. The corpus can then say something it cannot say now: the exchange exists, it is a half-turn in two planes, and the wall is that the vacuum does not realise it.</p>
+<p><strong>What stands in the way.</strong> The definition uses generators $J_{23}$ and $J_{67}$ of $\mathfrak{so}(10)$, which the corpus does not have. But a half-turn is the simplest operation the corpus's own algebra supports: in $\mathbb B$ a rotation by $\pi$ is multiplication by a unit bivector on one side, and the corpus already uses that. <strong>The importable content is the shape — two half-turns, one in each block, product equals exchange</strong> — and the corpus can define its own $D$ that way, honestly, as an analogue rather than a derivation.</p>
+<h3 id="2-the-neutrino-mass-higgs-and-the-proton-decay-higgs-are-the-same-multiplet">2. The neutrino mass Higgs and the proton-decay Higgs are the same multiplet</h3>
+<p><strong>The idea.</strong> $\Sigma_{126}(10,1,3)$ contains both the $SU(2)_R$ triplet whose vev gives $\nu_R$ its Majorana mass and the colour triplet $t^{(4)}$ that mediates $\Delta B\neq0$. One multiplet, two jobs, and no way to do one without the other.</p>
+<p><strong>What it would add.</strong> A structural reason, not an aesthetic one, why neutrino mass and proton decay are linked. The corpus's seesaw article treats the heavy scale as a free number and asks, in Open Question 2, whether it is a symmetry-breaking scale or an exponential. The corpus's Pati–Salam article mentions proton decay once. Neither says: <em>in a unified model, the field that makes the neutrino heavy is the field that makes the proton unstable, because they are the same field in different components.</em></p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code>, the section on where the heavy scale comes from, and the Pati–Salam article's proton-decay paragraph.</p>
+<p><strong>What stands in the way.</strong> The corpus's frame has no unified multiplet to split — its $\nu_R$ mass comes from a Yukawa with a scalar, and the scalar is not a component of anything larger. The import is therefore a warning rather than a mechanism: <em>if the corpus ever embeds the seesaw in a larger group, the heavy scalar will have coloured partners with baryon-violating couplings</em>. That is worth one paragraph.</p>
+<h3 id="3-math103-with-math104-labels-the-same-decomposition-one-dimension-up">3. $SO(1,9)$ with $SU(4)$ labels — the same decomposition, one dimension up</h3>
+<p><strong>The idea.</strong> The paper closes by noting that its rules apply to ten-dimensional field theory, where the Lorentz group is $SO(1,9)$ and $SU(4)$ labels may be more convenient than $SO(6)$ labels for the compactified sector, "specially for spinorial indices".</p>
+<p><strong>What it would add.</strong> A cross-reference that turns two unrelated-looking papers into one line of work. The GraviGUT conversion (Alexander et al., 2510.11674) builds its whole model on $\mathfrak{so}(1,9)_\mathbb C=\mathfrak{so}(1,3)_\mathbb C\oplus\mathfrak{so}(6)_\mathbb C\oplus(\mathbb C^{1,3}\otimes\mathbb C^6)$ and identifies $\mathfrak{so}(6)\cong\mathfrak{su}(4)$ as the Pati–Salam colour factor. Aulakh, three years before that paper existed in its current form and twenty-three years before its publication, had already built the translation machinery for exactly that split.</p>
+<p><strong>Where it lands.</strong> Both conversions, and the corpus's Pati–Salam article as a note on where the frame's group can live.</p>
+<p><strong>What stands in the way.</strong> Nothing but scale: Aulakh's rules are for $SO(10)$, Alexander's group is $SO(1,9)$. The blocks are the same, and the paper says so itself.</p>
+<h3 id="4-the-sextet-is-the-antisymmetric-two-index-seen-from-the-other-side">4. The sextet is the antisymmetric two-index, seen from the other side</h3>
+<p><strong>The idea.</strong> $6=V_{\bar\mu}(3,-\frac23)\oplus V^*_{\bar\mu}(\bar3,\frac23)$ — the colour triplet and antitriplet with $B-L=\mp\frac23$, arising as the two-index antisymmetric of $SU(4)$.</p>
+<p><strong>What it would add.</strong> A second route to the same object the corpus reaches through $15\to8\oplus1\oplus6$. The corpus's leptoquark block comes from the adjoint; this comes from the antisymmetric square. Same quantum numbers, different origin, and the two are often confused.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, the boson table, where the $6$ is listed with its $K_L\to\mu e$ bound.</p>
+<p><strong>What stands in the way.</strong> Nothing. It is a one-line identification, and it prevents a real error, because a reader who takes "the sextet" to mean one thing will mis-size the other.</p>
+<h3 id="5-translation-tables-as-a-method-and-what-the-corpuss-own-coefficients-rest-on">5. Translation tables as a method, and what the corpus's own coefficients rest on</h3>
+<p><strong>The idea.</strong> Every $SO(10)$ invariant can be rewritten as a sum of Pati–Salam invariants by a finite set of contraction rules, collected in an appendix, and the resulting coefficients are the Clebsch–Gordan coefficients of the embedding.</p>
+<p><strong>What it would add.</strong> A standard the corpus can be held to. When the corpus says $15\to8\oplus1\oplus6$ or $4=(3,\frac13)\oplus(1,-1)$, it is asserting coefficients. It does not say where they come from. Aulakh's appendix is what such a derivation looks like when it is done explicitly.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, in a note on derivations, and possibly a small appendix.</p>
+<p><strong>What stands in the way.</strong> The corpus's decompositions are of a small group and can be checked by dimension counting and by the trace identities the article already uses, which is weaker than term-wise translation but is not nothing. The importable content is the <em>standard</em>, not the tables.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$4=(3,\frac13)\oplus(1,-1)$ and $B-L$ from the fourth colour: in the Pati–Salam article.</li>
+<li>$15\to8\oplus1\oplus6$ with the leptoquark bound: in the Pati–Salam article.</li>
+<li>The type I seesaw and the triplet scalar: in the seesaw article.</li>
+<li>$SO(10)\supset SU(5)\times U(1)$ and the colour-triplet proton-decay operators: in the Aulakh MSGUT conversion, and one paragraph of the Pati–Salam article.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

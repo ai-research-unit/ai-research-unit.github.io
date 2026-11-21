@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universal Seesaw Pati–Salam Model with $P$ for Strong CP — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Babu - Universal Seesaw Pati-Salam Model with P for Strong CP - 2512.25028.pdf — a PDF in a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="universal-seesaw-patisalam-model-with-math0-for-strong-cp"><strong>Universal Seesaw Pati–Salam Model with $P$ for Strong CP</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2512.25028 [hep-ph] (v3)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>K. S. Babu, Sumit Biswas</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v3, 3 June 2026</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>43 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Babu - Universal Seesaw Pati-Salam Model with P for Strong CP - 2512.25028-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Babu - Universal Seesaw Pati-Salam Model with P for Strong CP - 2512.25028.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Babu - Universal Seesaw Pati-Salam Model with P for Strong CP - 2512.25028.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper builds a Pati–Salam model with the smallest possible scalar sector — one pair, $\{H_L(2,1,4)+H_R(1,2,4)\}$ — and gets fermion masses not from Yukawa couplings to a bidoublet but from <strong>mixing with vector-like fermions</strong>, the universal seesaw. Three things follow that matter outside the model. Neutrinos are exactly massless at tree level and get their mass at one loop. Parity, being a good high-energy symmetry, sets the QCD $\bar\theta$ to zero and makes the quark mass matrix's determinant real, so the strong CP problem is solved without an axion. And the parity solution survives the new one-loop diagrams the Pati–Salam structure introduces — colour sextets, colour octets, and leptoquark exchange — provided one of the vector-like masses sits well below the parity scale.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-fermion-and-scalar-content">The Fermion and Scalar Content</h3>
+<p>Each family sits in $\psi_L(2,1,4)+\psi_R(1,2,4)$ — the standard Pati–Salam assignment, with lepton number as the fourth colour. The scalar sector is one pair,</p>
+<p>$$
+\{H_L(2,1,4)+H_R(1,2,4)\},
+$$</p>
+<p>and nothing else. $H_R$ breaks $SU(2)_R\times SU(4)_c\to U(1)_Y\times SU(3)_c$ "at an energy scale well above the weak scale", and $H_L$ breaks $SU(2)_L\times U(1)_Y\to U(1)_{\rm em}$.</p>
+<p>This is a deliberate contrast with the standard construction, which the paper lists as three sets — $\{\Delta_L(3,1,10)+\Delta_R(1,3,10)\}$ for the Pati–Salam breaking and the right-handed Majorana mass, $\Phi(2,2,1)$, and $\Sigma(2,2,15)$ for fermion masses and electroweak breaking. The paper's objection is stated as an aesthetic with a physical consequence: "the proliferation of Higgs fields and the associated Higgs potential parameters may be viewed as a blemish of these realizations. For a detailed study of the Higgs sector of such models, see Ref. [2]. With this Higgs sector, it is difficult to solve the strong CP problem via parity symmetry as the determinant of the quark mass matrix is not real and contributes to the CP-violating parameter $\theta$ at tree-level."</p>
+<p>So the simplification is not cosmetic. <strong>Fewer scalars is what makes the parity solution to strong CP available.</strong></p>
+<h3 id="the-universal-seesaw">The Universal Seesaw</h3>
+<p>With no bidoublet, there is no Yukawa coupling of the ordinary form. Masses come from mixing. The vector-like set the paper finds minimal is</p>
+<p>$$
+(1,1,15)\quad\text{and}\quad\{(1,1,10)_L+(1,1,10)_R\},
+$$</p>
+<p>where the $15$ "contains a vector-like iso-singlet up-type quark" and the $10$s contain "a vector-like down-type quark as well as a lepton". The light masses are then proportional to a ratio of the mixing to the heavy mass, in the pattern of the original universal seesaw of Berezhiani and of Davidson and Wali.</p>
+<p>The paper reports that the close relation between the down-quark and charged-lepton mass matrices — the Pati–Salam prediction that would give $m_d=m_e$ at the unification scale — is broken not by a tuned Yukawa but by <strong>one-loop radiative corrections from the up-type or down-type quark sector</strong>, and it exhibits explicit benchmark points, one with $Y_{15}$-induced corrections and one with $Y_{10}$-induced corrections.</p>
+<h3 id="neutrinos-massless-at-tree-level">Neutrinos Massless at Tree Level</h3>
+<p>This is the sharpest result. Lepton number is broken, and yet "neutrino masses remain zero at the tree-level. This is because only one combination of $\nu_L$ and $\nu_L^c$ acquires mass via mixing with the SM singlet fermion contained in the $(1,1,15)$ fermion multiplet." One combination gets a mass; the orthogonal combination does not. The Majorana mass is generated at one loop, small and finite, and the paper checks it against oscillation data. It calls the outcome "a minimal radiative mechanism for neutrino mass generation".</p>
+<h3 id="strong-cp-by-parity">Strong CP by Parity</h3>
+<p>The mechanism is stated compactly. Parity invariance of the Lagrangian sets the QCD $\theta$-term to zero. The seesaw structure of the quark mass matrix, being parity symmetric, makes its determinant real — "at tree level, and also at the one-loop level" — so the physical $\bar\theta=\theta_{\rm QCD}+\arg\det M_q$ is small.</p>
+<p>What is new here is the audit. In the left–right symmetric $SU(3)_c\times SU(2)_L\times SU(2)_R\times U(1)_{B-L}$ model "all one-loop contributions vanish". In Pati–Salam they do not. Contributions arise from the colour octets in $(1,1,15)$, the colour sextets in the $(1,1,10)$ pair, and from diagrams "correcting the up-type and down-type quark mass matrices through the exchange of vector and scalar leptoquarks". The result is that most diagrams vanish, the survivors are "parametrically suppressed by the ratios $(M_{10}/\kappa_R)$ or $(M_{15}/\kappa_R)$", and the suppression is achieved if either vector-like multiplet has a bare mass much smaller than the parity restoration scale. The residual $\bar\theta$ is "not far below the constraint from the neutron electric dipole moment", so a neutron EDM measurement would test the model.</p>
+<h3 id="scales">Scales</h3>
+<p>The parity restoration scale is fixed by gauge coupling extrapolation: $\mu_P\simeq5.2\times10^{13}$ GeV, "which is the scale where the two $SU(2)$ gauge couplings become equal, $g_{2L}=g_{2R}$". The paper notes that other Pati–Salam variants with vector-like fermions were built to bring the scale down to multi-TeV, and that this one deliberately goes high: "new particles of the model are not directly accessible to experiments."</p>
+<h3 id="naturalness-of-the-scalar-sector">Naturalness of the Scalar Sector</h3>
+<p>With parity imposed, the potential "will have a single mass parameter in this setup. In the exact parity-symmetric limit, this setup does not introduce an additional independent Higgs-sector tuning beyond the usual tuning of the electroweak scale relative to a high cutoff". The paper remarks that very few models share this, naming this one, its left–right subgroup, and a parity-symmetric mirror model.</p>
+<h3 id="baryon-number">Baryon Number</h3>
+<p>The gauge and Yukawa interactions conserve $B$; the Higgs self-interactions do not. The predicted decays are $n\to e^+e^-\nu$ and $p\to e^+e^-\nu\pi^+\pi^0$, "but with lifetimes well outside of the sensitivity of current experiments".</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-universal-seesaw-a-third-way-to-make-a-mass-and-the-only-one-that-does-not-need-a-yukawa">1. Universal seesaw: a third way to make a mass, and the only one that does not need a Yukawa</h3>
+<p><strong>The idea.</strong> Masses arise from mixing between chiral and vector-like fermions, $m_{\rm light}\sim y\langle H\rangle\, M_{\rm mix}/M_{\rm heavy}$, with no bidoublet and no Yukawa coupling of the ordinary kind. The hierarchy comes from a ratio of masses, not from a hierarchy of dimensionless couplings.</p>
+<p><strong>What it would add.</strong> The corpus's seesaw article treats two mechanisms: the Dirac Yukawa with a heavy right-handed neutrino, and the type II triplet. Both need a coupling and a scale, and both leave the <em>charged-fermion</em> hierarchy unexplained — the corpus says so, and it is one of the open questions the article lists. The universal seesaw is a third route, and it explains the charged hierarchy with the same device.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.md</code>, a section on mechanisms, and the Pati–Salam article's Yukawa paragraph.</p>
+<p><strong>What stands in the way.</strong> The corpus's frame has one fermion field per species; a vector-like partner is a second field with the same quantum numbers. That is a structural addition, not a reinterpretation. But it is the cheapest addition the corpus could make to address the hierarchy question, and it needs no new algebra — a vector-like pair is two spinors with a mass term between them, which the corpus already writes.</p>
+<h3 id="2-if-the-two-chiralities-are-not-paired-by-a-symmetry-math37-has-no-explanation">2. If the two chiralities are not paired by a symmetry, $\bar\theta$ has no explanation</h3>
+<p><strong>The idea.</strong> Parity as a good high-energy symmetry sets $\theta_{\rm QCD}=0$ outright — not by relaxing it, not by an axion — and the parity-symmetric structure of the mass matrix keeps $\arg\det M_q$ real at tree and one loop.</p>
+<p><strong>What it would add.</strong> A <em>cost</em> attached to the corpus's chiral wall, which is currently described as a choice the algebra does not make. The corpus presents the wall as a fact about the algebra and treats the Standard Model's chirality as declared. This paper shows that the Standard Model's <strong>strong CP problem is a consequence of that declaration</strong>: if the high-energy theory had no operation exchanging the two chiralities, then nothing forces $\theta$ to vanish, and the observed smallness of the neutron EDM is unexplained. That converts an aesthetic asymmetry into a quantitative debt.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, the chiral-wall section — the same place the D-parity material from the Aulakh and 1509.01606 conversions belongs. The three together make a sequence: <em>the exchange exists (Aulakh defines it), the exchange is not $P$ but $D$ (1509.01606), and the exchange is what strong CP needs (here).</em></p>
+<p><strong>What stands in the way.</strong> The argument assumes parity is exact at high energy and broken spontaneously, which the corpus's frame does not assert. It can be stated conditionally, and conditionally it is still worth stating: <em>the wall costs an explanation of $\bar\theta$.</em></p>
+<h3 id="3-neutrino-mass-exactly-zero-at-tree-level-and-nonzero-at-one-loop">3. Neutrino mass exactly zero at tree level, and nonzero at one loop</h3>
+<p><strong>The idea.</strong> With a single Higgs pair and vector-like mixing, one combination of $\nu_L$ and $\nu_L^c$ gets a Dirac mass and the orthogonal combination gets nothing. Lepton number is broken, and the neutrino is still massless at tree level. The Majorana mass appears at one loop, finite.</p>
+<p><strong>What it would add.</strong> A third logical possibility for the corpus's seesaw article, which currently presents the mass as either a tree-level Majorana or a tree-level Dirac. "Zero at tree level, nonzero at one loop" is neither, and it has a distinctive signature: the mass is calculable, so its <em>value</em> is a prediction rather than a fit.</p>
+<p><strong>Where it lands.</strong> The seesaw article, in the section that asks whether the heavy scale is fundamental, and its Open Question 2.</p>
+<p><strong>What stands in the way.</strong> A one-loop mass in the corpus's frame means a loop with a scalar and a fermion, which the corpus computes elsewhere. The obstacle is only that the corpus has no vector-like partner to put in the loop — the same obstacle as idea 1.</p>
+<h3 id="4-one-higgs-pair-one-mass-parameter-no-extra-tuning">4. One Higgs pair, one mass parameter, no extra tuning</h3>
+<p><strong>The idea.</strong> Parity pairs $H_L$ with $H_R$, so the potential has a single mass parameter, and in the exact parity limit there is "no additional independent Higgs-sector tuning beyond the usual tuning of the electroweak scale".</p>
+<p><strong>What it would add.</strong> A naturalness argument the corpus does not make about its own scalar sector. The corpus's bidoublet has a potential with several parameters and no principle fixing them. Here the count is reduced by a symmetry, and the reduction is stated as the reason the model is attractive.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scalar-potential paragraph, if it has one; otherwise its ledger of open problems.</p>
+<p><strong>What stands in the way.</strong> The corpus's bidoublet is a single field, not a parity pair, so the argument does not transfer directly. What transfers is the <em>method</em>: count the mass parameters, and use a symmetry to reduce the count.</p>
+<h3 id="5-the-scale-where-math48-is-math49-gev">5. The scale where $g_{2L}=g_{2R}$ is $5.2\times10^{13}$ GeV</h3>
+<p><strong>The idea.</strong> Extrapolating the measured Standard Model couplings upward, the two $SU(2)$ couplings meet at about $5\times10^{13}$ GeV, and that is taken as the parity restoration scale.</p>
+<p><strong>What it would add.</strong> A number for where the corpus's frame would sit, obtained the way the corpus's own $\sin^2\theta_W$ failure was obtained — by running. The Pati–Salam article runs nothing and shows $\sin^2\theta_W=\frac38$ fails. Here is the same calculation done properly for a specific spectrum, with the answer that the meeting point is high, not at $10^{15}$, and that new particles are therefore unreachable.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's coupling-unification paragraph, as a worked comparison.</p>
+<p><strong>What stands in the way.</strong> The number depends on the spectrum, and the spectra differ between papers: the Aydemir conversion needs $M_R$ as low as $2\times10^5$ GeV with extra fields, this one gets $5\times10^{13}$ with none. The pair of numbers is the point — <em>the unification scale is a function of the spectrum, not of the group</em> — and that is a lesson the corpus should record rather than a value it should adopt.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Lepton number as the fourth colour and charge quantisation from the non-Abelian group: in the Pati–Salam article, with the trace identity $\operatorname{tr}_{\mathbf 4}(B-L)=0$.</li>
+<li>The standard three-set scalar sector, $\Delta_{L,R}(3,1,10)$ and $\Phi(2,2,1)$ and $\Sigma(2,2,15)$: partly in the Pati–Salam article (the bidoublet and the $\Delta$s) and partly in the 1804.05844 and 1509.01606 conversions.</li>
+<li>$P$ as a spontaneously broken symmetry giving the $(V-A)$ structure: asserted in the Pati–Salam article as a virtue of the frame, without the strong CP consequence.</li>
+<li>The type I and type II seesaw: in the seesaw article.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

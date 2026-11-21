@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GraviGUT Unification with a Revisited Pati–Salam Model — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Alexander - GraviGUT unification with revisited Pati-Salam model - 2510.11674.pdf — a PDF in…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="gravigut-unification-with-a-revisited-patisalam-model"><strong>GraviGUT Unification with a Revisited Pati–Salam Model</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2510.11674 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Stephon Alexander, Bruno Alexandre, Michael Fine, João Magueijo, Edžus Nākums</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1, 13 October 2025</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF</td>
+</tr>
+<tr>
+<td>length</td>
+<td>9 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Alexander - GraviGUT unification with revisited Pati-Salam model - 2510.11674-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Alexander - GraviGUT unification with revisited Pati-Salam model - 2510.11674.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Alexander - GraviGUT unification with revisited Pati-Salam model - 2510.11674.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>The paper removes the second weak $SU(2)$ of the Pati–Salam group by <strong>identifying it with one chiral half of the Lorentz group</strong>, so that it belongs to gravity and not to a second weak force. The identification is made inside the complexified orthogonal group $SO(1,9,\mathbb C)$, whose algebra splits as $\mathfrak{so}(1,3)_\mathbb C\oplus\mathfrak{so}(6)_\mathbb C\oplus(\mathbb C^{1,3}\otimes\mathbb C^6)$, with $\mathfrak{so}(6)\cong\mathfrak{su}(4)$ giving the Pati–Salam colour factor. A single gauge-invariant action on that connection, with a McDowell–Mansouri ansatz soldering the coset to the tetrad, reduces to Einstein–Cartan plus a Yang–Mills term for the surviving chirality. Matching to first-order gravity fixes the couplings: the weak coupling comes out $g_W\sim0.707$, against $g_2\simeq0.65$ measured. The paper is a construction with a phenomenology section that is explicitly left for later: birefringence of gravitational and electromagnetic waves, and graviton–gauge vertices whose coefficients are fixed by $G$ and $\Lambda$.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-problem-the-paper-targets">The Problem the Paper Targets</h3>
+<p>Pati–Salam unifies quarks and leptons in $SU(4)$ and puts left and right chiralities in two separate $SU(2)$ factors, $SU(4)\times SU(2)_+\times SU(2)_-$. The second factor predicts right-handed charged currents and $W_R$ bosons, and the LHC excludes $W_R$ up to about $6.4$ TeV under standard assumptions. The usual response is to break $SU(2)_-$ at a high scale by hand.</p>
+<p><strong>The paper's move is to refuse the breaking and reinterpret the factor.</strong> One $SU(2)$ is the weak force. The other is the chiral half of the Lorentz group — a part of gravity, not a force. The observable consequence is immediate: there is no second weak interaction in the infrared, because there was never a second weak interaction.</p>
+<h3 id="the-group-and-the-split">The Group and the Split</h3>
+<p>The gauge group is $SO(1,9,\mathbb C)$, gauged over four-dimensional Lorentzian spacetime. Its algebra splits as</p>
+<p>$$
+\mathfrak{so}(1,9)_\mathbb C=\underbrace{\mathfrak{so}(1,3)_\mathbb C}_{(\mathrm{Adj},1)}
+\oplus\underbrace{\mathfrak{so}(6)_\mathbb C}_{(1,\mathrm{Adj})}
+\oplus\underbrace{\mathbb C^{1,3}\otimes\mathbb C^6}_{(4,6)},
+$$</p>
+<p>so $45=6+15+24$ generators, with $M_{AB}$, $A,B=0,\dots,9$, splitting into $a,b=0..3$ and $I,J=4..9$. The reason for this group and not a larger one is stated: $SO(1,9,\mathbb C)$ is the smallest simple group containing $\mathfrak{so}(1,3)_\mathbb C\oplus\mathfrak{so}(6)_\mathbb C$ as a subalgebra whose coset carries bifundamental indices of the right shape to be a vierbein.</p>
+<p>The connection splits as $A=\omega+A+\phi$, with $\omega$ the $SO(1,3)$ part, $A$ the $SO(6)$ part and $\phi=\phi^{aI}M_{aI}$ the coset. The curvature components are</p>
+<p>$$
+F^{ab}=\mathcal R^{ab}+\phi^{aI}\wedge\phi_I^{\ b},\qquad
+F^{IJ}=F^{IJ}+\phi^{Ia}\wedge\phi_a^{\ J},\qquad
+F^{aI}=d\phi^{aI}+\omega^{a}_{\ c}\wedge\phi^{cI}+\phi^{aJ}\wedge A_J^{\ I}.
+$$</p>
+<h3 id="the-soldering-ansatz">The Soldering Ansatz</h3>
+<p>The coset field is not left free. The paper imposes</p>
+<p>$$
+\phi^{aI}=\frac{1}{\ell}\,e^a n^I,
+\qquad
+\phi^{Ia}=-\frac{1}{\ell}\,e^a n^I,
+$$</p>
+<p>with $e^a$ the tetrad, $\ell$ a constant and $n^I$ a normalized internal vector, $n^2=1$. The count drops from $6\times4\times4=96$ to $6+(4\times4)=22$ components. Then</p>
+<p>$$
+F^{ab}=\mathcal R^{ab}-\ell^{-2}e^a\wedge e^b,
+\qquad
+F^{aI}=\frac{1}{\ell}\left(T^a n^I+e^a\wedge P^I\right),
+$$</p>
+<p>with torsion $T^a\equiv De^a$ and the internal analogue $P^I\equiv Dn^I$. <strong>The cosmological constant is not put in; it arrives as $\ell^{-2}$</strong>, the curvature of the soldered coset.</p>
+<h3 id="the-action-and-the-chiral-selection">The Action and the Chiral Selection</h3>
+<p>The action is built from three terms — a curvature-squared kinetic term, a Stelle–West term with a five-index Higgs $U^{A_1\dots A_5}$, and a Pontryagin-like term with a pseudoscalar $\phi$:</p>
+<p>$$
+S=\frac{\alpha}{2}\int F^{AB}\wedge*F_{AB}
++\frac{\gamma\alpha}{4}\int\phi\,\epsilon_{A_1\dots A_{10}}F^{A_1A_2}\wedge*F^{A_3A_4}U^{A_5\dots A_{10}}
++\gamma\alpha\int\phi\,F^{AB}\wedge F_{AB}+\int[V(\phi)+V(U)]*1 .
+$$</p>
+<p>Parity acts as $\phi'=-\phi$, and the potentials $V(\phi)=\frac{\lambda}{4}(\phi^2-1)^2$ and $V(U)=\frac{\beta}{4}(U\cdot U-1)^2$ give $\langle\phi\rangle=\pm1$ and $U_0^{I_1\dots I_6}=\epsilon^{I_1\dots I_6}/6!$.</p>
+<p><strong>The chirality choice is dynamical.</strong> With $\gamma=i$ and $\langle\phi\rangle=1$, the Stelle–West term recombines with the leading term,</p>
+<p>$$
+\tfrac12F^{ab}\wedge*F_{ab}+\tfrac{i}{4}\epsilon_{abcd}F^{ab}\wedge*F^{cd}
+=F^{(+)ab}\wedge*F^{(+)}_{ab},
+$$</p>
+<p>so the surviving combination is the self-dual one. One chirality becomes the self-dual gravitational connection; the other becomes the Yang–Mills connection of the weak force.</p>
+<h3 id="the-resulting-lagrangian">The Resulting Lagrangian</h3>
+<p>Integrating out the topological terms and dropping torsion,</p>
+<p>$$
+\mathcal L=\frac{1}{32\pi G}\epsilon_{abcd}e^a\wedge e^b\wedge\mathcal R^{(-)cd}
+-\frac{\Lambda}{6}e^a\wedge e^b\wedge e^c\wedge e^d
+-\frac{3}{32\pi G}P^I\wedge*P_I
+-\frac{3}{64\pi G\Lambda}\mathcal R^{(+)}_{ab}\wedge*\mathcal R^{(+)ab}
++\tfrac12F^{IJ}\wedge*F_{IJ},
+$$</p>
+<p>with</p>
+<p>$$
+\alpha=-\frac{3}{32\pi G\cdot2\Lambda},
+\qquad
+\frac{1}{\ell^2}=\frac{2\Lambda}{3}.
+$$</p>
+<p>The first two terms are Einstein–Cartan with a cosmological constant. The next is a kinetic term for the internal one-form. The last two are kinetic terms for the surviving chiral connection and for the $SO(6)$ field strength.</p>
+<h3 id="the-coupling-comes-out-right">The Coupling Comes Out Right</h3>
+<p>The Yang–Mills coupling is read off as $\alpha=-1/(8g_W^2)$. With $\ell\sim\ell_{Pl}=\sqrt{8\pi G}$ this gives</p>
+<p>$$
+g_W\sim0.707,
+$$</p>
+<p>against the measured $g_2\simeq0.65$. The paper runs it: with $b_2^{\text{MSSM}}=+1$ above $M_{SUSY}\sim1$ TeV,</p>
+<p>$$
+\frac{1}{g^2(\mu)}=\frac{1}{g^2(\mu_0)}-\frac{b_2}{8\pi^2}\ln\frac{\mu}{\mu_0}
+$$</p>
+<p>from $\mu_0=\bar M_{Pl}$ to $M_Z$ gives $g_2(M_Z)\simeq0.65$. <strong>A single geometric length controls the normalisation of the gauge terms and the cosmological constant at once.</strong> The bare value $\Lambda_{bare}=-3/\ell^2$ is distinguished from the effective $\Lambda$.</p>
+<h3 id="math69-to-math70-to-math71">$SO(6)$ to $SU(4)$ to $SU(3)\times U(1)$</h3>
+<p>The map is made with a Clifford realisation: six matrices with $\{\Gamma^I,\Gamma^J\}=2\delta^{IJ}$ and $\sigma^{IJ}=\frac14[\Gamma^I,\Gamma^J]$, which satisfy the $\mathfrak{so}(6)$ relations and act on the chiral spinor as $\mathfrak{su}(4)$. The same connection then has two equivalent expansions, $A=\frac12A_{IJ}\sigma^{IJ}=A_iT_i$, and the same holds for the curvature. Decomposing the adjoint,</p>
+<p>$$
+15\to8\oplus1\oplus6,
+$$</p>
+<p>the connection components are $A_i=W^{\hat i},\psi^{\hat a},B$, with the $\mathrm{SU}(3)$ field strength acquiring a coset bilinear, $F^{\hat i}=dW^{\hat i}+\frac12f^{\hat i}_{\ \hat j\hat k}W^{\hat j}\wedge W^{\hat k}+\frac12f^{\hat i}_{\ \hat a\hat b}\psi^{\hat a}\wedge\psi^{\hat b}$, and the abelian one likewise, $F^{15}=dB+\frac12f^{15}_{\ \ \hat a\hat b}\psi^{\hat a}\wedge\psi^{\hat b}$.</p>
+<h3 id="the-surplus-coset-degrees-of-freedom">The Surplus Coset Degrees of Freedom</h3>
+<p>The ansatz leaves 22 components where the tetrad needs 16. The paper splits them covariantly,</p>
+<p>$$
+\phi^{aI}=\frac{1}{\ell}e^a n^I+\tau^{aI},
+\qquad
+\tau^{aI}\equiv Q^{I}_{\ J}\phi^{aJ},\quad n_I\tau^{aI}=0,
+$$</p>
+<p>with projectors $P^{IJ}=n^In^J$ and $Q^{IJ}=\delta^{IJ}-n^In^J$. The field $\tau^{aI}$ is the surplus, and it is not discarded: it mediates interactions between sectors that would otherwise decouple, because it appears in every curvature component,</p>
+<p>$$
+F^{ab}=\mathcal R^{ab}-\ell^{-2}e^a\wedge e^b+\tau^{a}_{\ I}\wedge\tau^{Ib},
+\qquad
+F^{aI}=\frac{1}{\ell}\left(T^an^I+e^a\wedge P^I\right)+d\tau^{aI}+\omega^a_{\ c}\wedge\tau^{cI}+\tau^{aJ}\wedge A_J^{\ I}.
+$$</p>
+<p>Integrating $\tau$ out at tree level with mass $m_\tau$ from the adjoint Higgs gives</p>
+<p>$$
+\mathcal L_{eff}\simeq\frac{c_1}{m_\tau^2}R_{\mu\nu\rho\sigma}F^{\mu\nu}F^{\rho\sigma}
++\frac{c_2}{m_\tau^2}R_{\mu\nu}F^{\mu\alpha}F^\alpha_{\ \nu}
++\frac{c_3}{m_\tau^2}RF^2,
+$$</p>
+<p>with $c_i\sim\alpha^2$. The first term is a graviton–gauge–gauge vertex, contributing to $h\to\gamma\gamma$, $h\to gg$, $h\to ZZ$ and $h\to W^+W^-$; the paper says the full computation is left for later work.</p>
+<h3 id="birefringence">Birefringence</h3>
+<p>With $\phi=1+\delta\phi$ the parity-odd term becomes a Chern–Simons correction to Einstein–Cartan gravity. Linearising around a torsionless FRW background,</p>
+<p>$$
+\Box h_{ij}\pm i\frac{\dot\phi}{M_{Pl}}\epsilon_{ikl}\partial^k\dot h^{l}_{\ j}=0,
+$$</p>
+<p>so the two helicities obey $\omega_\pm^2=k^2\pm k\dot\phi/M_{Pl}$ and accumulate a phase</p>
+<p>$$
+\Delta\Phi=\int^t\frac{\dot\phi}{M_{Pl}}\,dt'.
+$$</p>
+<p>The same happens for the gauge fields, where the $SO(6)$ parity-odd term projects onto the $U(1)$ of $SU(4)$ as $\frac{\kappa_\gamma}{4}\phi F\wedge F$, giving $A''_\pm+(k^2\pm k\kappa_\gamma\phi')A_\pm=0$. <strong>Gravitational and electromagnetic birefringence have one origin, the same field $\phi$ that chooses the chirality.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-second-math105-is-the-other-chirality-of-the-lorentz-group">1. The second $SU(2)$ is the other chirality of the Lorentz group</h3>
+<p><strong>The idea.</strong> $SU(2)_L\times SU(2)_R$ is not two forces. It is $\mathrm{SL}(2,\mathbb C)_+\oplus\mathrm{SL}(2,\mathbb C)_-$ — the two chiral halves of the Lorentz group — with one half gauged as the weak force and the other left as the gravitational connection. The selection between them is made dynamically by a pseudoscalar whose vacuum expectation value can be $+1$ or $-1$, and the choice of sign is the choice of which chirality becomes which.</p>
+<p><strong>What it would add.</strong> This is the closest thing in the whole corpus's external literature to what the corpus already asserts. <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code> derives $SU(2)_L\times SU(2)_R$ as $\exp L(\mathfrak k)\times\exp R(\mathfrak k)$ — the two-sided action of the algebra — and then records the consequence as a defect: the algebra "does not choose a chirality", and the assignment $(4,2,1)\oplus(\bar4,1,2)$ is <strong>declared</strong>, not derived. The corpus calls this the chiral wall.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article, in the section <em>Where Each Factor Comes From, and How Firmly</em>, whose table ends with the two declared rows. The paper supplies exactly the missing argument: if the two $SU(2)$ are the two chiral halves of one Lorentz structure, then the second one is not a gauge freedom to be broken but a gravitational chirality, and the question "why do we not see $W_R$" has an answer that is not a scale.</p>
+<p><strong>What stands in the way.</strong> The paper needs $\mathfrak{so}(1,9)_\mathbb C$, a complexified group gauged over real spacetime, and a Higgs in a five-index antisymmetric representation. The corpus's algebra is $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$, whose compact part is at most $\mathrm{U}(2)$ — not $\mathrm{SO}(1,9)$. So the identification cannot be imported as a derivation. But the <strong>statement</strong> can be imported as a reading of the corpus's own two-sided action, and that is worth more than the model: the corpus's $L$ and $R$ are a Lorentz pair, and the corpus has never said so in those words.</p>
+<h3 id="2-a-gauge-coupling-fixed-by-the-planck-length">2. A gauge coupling fixed by the Planck length</h3>
+<p><strong>The idea.</strong> $\alpha=-1/(8g_W^2)$ together with $\ell\sim\ell_{Pl}$ and $1/\ell^2=2\Lambda/3$ gives $g_W\sim0.707$, running to $g_2(M_Z)\simeq0.65$.</p>
+<p><strong>What it would add.</strong> A route to a gauge coupling that the corpus does not have, and a competitor to the one that fails. The corpus's Pati–Salam article takes $g_3=g_L=g_R$ as an assumption and tests it by $\sin^2\theta_W=\frac38$, which gives $0.31$ against $0.231$ — a $36\%$ failure that the article records. Here the weak coupling is not a free parameter at all: it is the inverse square root of the cosmological constant in Planck units.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, the paragraph that states the unification condition and its assumption, and the ledger row that records the $\sin^2\theta_W$ failure.</p>
+<p><strong>What stands in the way.</strong> The corpus's one-coupling statement is a boundary condition at $M_{PS}$, not at $M_{Pl}$. The paper's value is at the Planck scale, and reaching $M_Z$ needs a desert and MSSM matter content. The corpus has neither. What travels is the <em>form</em> of the claim — a coupling set by a length — and the corpus should record it as an alternative it cannot yet evaluate.</p>
+<h3 id="3-parity-broken-by-a-pseudoscalar-not-declared-away">3. Parity broken by a pseudoscalar, not declared away</h3>
+<p><strong>The idea.</strong> Parity is a symmetry of the high-energy action, realised as spatial inversion combined with an exchange of the two chiral sectors. It is broken spontaneously when $\phi$ takes $\langle\phi\rangle=\pm1$, and the two signs are two vacua. Nothing in the action prefers one.</p>
+<p><strong>What it would add.</strong> A mechanism where the corpus has a wall. The corpus states the chiral assignment as declared and does not offer a way it could be otherwise. Here the asymmetry of the world is a choice of vacuum among two, which is a different kind of statement: not "the algebra does not choose" but "the algebra offers two and the vacuum picks one".</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's chiral-wall row, and <code>articles_physics/the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.md</code>, which treats the discrete symmetry the weaker partner of the pair.</p>
+<p><strong>What stands in the way.</strong> The corpus's algebra has no pseudoscalar with the right quantum numbers, and no potential to minimise. The importable kernel is the logical form: <em>a discrete symmetry broken by a vacuum expectation value leaves two degenerate vacua and no preferred sign</em>. That is one sentence, and the corpus can hold it without the model.</p>
+<h3 id="4-gravitational-birefringence-from-one-field">4. Gravitational birefringence from one field</h3>
+<p><strong>The idea.</strong> $\omega_\pm^2=k^2\pm k\dot\phi/M_{Pl}$ for gravitational waves, and $A''_\pm+(k^2\pm\kappa_\gamma k\phi')A_\pm=0$ for light, both driven by the same $\phi$. The accumulated rotation is $\Delta\Phi=\int\dot\phi/M_{Pl}\,dt$.</p>
+<p><strong>What it would add.</strong> A parity-odd gravitational effect with the same structure as the electromagnetic one. The corpus's axion articles treat $aF\tilde F$ and cosmic birefringence for photons. The gravitational analogue, $R\tilde R$, is the same identity applied to a different curvature, and the corpus has never written it.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.md</code>, and <code>articles_physics/the-conformal-anomaly-in-biquaternionic-form.md</code>, whose subject is a curvature response.</p>
+<p><strong>What stands in the way.</strong> The corpus's birefringence treatment is electromagnetic and its gravitational side is the linearised Einstein equation. $R\tilde R$ needs the Riemann tensor's dual, which the corpus's frame article does not build. A real addition, not a paragraph.</p>
+<h3 id="5-counting-45-generators-24-in-the-coset-22-after-soldering">5. Counting: 45 generators, 24 in the coset, 22 after soldering</h3>
+<p><strong>The idea.</strong> The coset $\mathbb C^{1,3}\otimes\mathbb C^6$ has 24 real components, the ansatz removes all but 22, the tetrad needs 16, and the remaining 6 are a field $\tau^{aI}$ that cannot be discarded because it appears in every curvature component.</p>
+<p><strong>What it would add.</strong> A worked instance of the corpus's recurring count problem: how many components a connection has, how many the geometry needs, and what to do with the surplus. The corpus's frame article counts $21=15+3+3$ for Pati–Salam and records which are massive; here the count is $45=6+15+24$ with the surplus carried by a named field.</p>
+<p><strong>Where it lands.</strong> <code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code>, the boson table, and the corpus's frame article.</p>
+<p><strong>What stands in the way.</strong> Different group, different dimension. The <em>method</em> — count, solder, name the remainder — transfers; the numbers do not.</p>
+<h3 id="6-the-immirzi-parameter-as-a-dynamical-field">6. The Immirzi parameter as a dynamical field</h3>
+<p><strong>The idea.</strong> $\gamma\phi$ appears where the Immirzi parameter appears in self-dual gravity, so $\phi$ is a dynamical Immirzi parameter, and its vacuum expectation value is what makes the self-dual sector the gravitational one.</p>
+<p><strong>What it would add.</strong> A bridge between the corpus and loop-quantum-gravity language that the corpus has never used: the Immirzi parameter is normally a constant of the quantisation, here it is a field with a potential.</p>
+<p><strong>Where it lands.</strong> No corpus article. It would be a new one, or a paragraph in a future article on self-dual formulations.</p>
+<p><strong>What stands in the way.</strong> The corpus has no spin-foam and no Ashtekar variables. This is a forward-looking item and the paper itself calls the self-dual formulation a direction for later work.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SU(4)\to SU(3)\times U(1)$ with $15\to8\oplus1\oplus6$: in the Pati–Salam article, with the leptoquark block and its $K_L\to\mu e$ bound.</li>
+<li>The one-coupling condition and its failure: in the Pati–Salam article.</li>
+<li>$B-L$ from the fourth colour: in the Pati–Salam article.</li>
+<li>Chern–Simons birefringence for the photon: in the axion articles. The gravitational counterpart is idea 4.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

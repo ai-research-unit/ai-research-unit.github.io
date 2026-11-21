@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $N=1$ Supersymmetric Pati–Salam Models with Extra $SU(2)_{L_2/R_2}$ Gauge Symmetry from Intersecting D6-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - The N=1 supersymmetric Pati-Salam models with extra SU2_L_2-R_2 gauge symmetry from…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-supersymmetric-patisalam-models-with-extra-math1-gauge-symmetry-from-intersecting-d6-branes"><strong>The $N=1$ Supersymmetric Pati–Salam Models with Extra $SU(2)_{L_2/R_2}$ Gauge Symmetry from Intersecting D6-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2512.09057 [hep-th]</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tianjun Li, Adeel Mansha, Rui Sun, Lina Wu (as printed on the preprint)</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v1 (2025)</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>54 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - The N=1 supersymmetric Pati-Salam models with extra SU2_L_2-R_2 gauge symmetry from intersecting D6-branes - 2512.09057-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - The N=1 supersymmetric Pati-Salam models with extra SU2_L_2-R_2 gauge symmetry from intersecting D6-branes - 2512.09057.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - The N=1 supersymmetric Pati-Salam models with extra SU2_L_2-R_2 gauge symmetry from intersecting D6-branes - 2512.09057.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It adds a fourth stack of branes and gets rid of the filler branes.</p>
+<blockquote>
+<p>"By introducing <strong>an extra stack of D6-branes to standard $N=1$ supersymmetric Pati-Salam models</strong>, we extend the landscape of its complete search ... <strong>a $d$-stack of D6-branes is introduced besides the standard $a$, $b$, $c$-stacks.</strong>"</p>
+<p>"<strong>More intersections from the extra stacks of D6-branes appear, and thus Higgs/Higgs-like particles arise from more origins.</strong> Among these models, we complete with <strong>28 classes of $N=1$ supersymmetric Pati-Salam models</strong> under gauge symmetries $SU(4)_C\times SU(2)_L\times SU(2)_{R1}\times SU(2)_{R2}$ and $SU(4)_C\times SU(2)_{L1}\times SU(2)_R\times SU(2)_{L2}$."</p>
+<p>"The $SU(2)_{L1/R1}\times SU(2)_{L2/R2}$ can be broken down to the <strong>diagonal $SU(2)_{L/R}$</strong> gauge symmetry via bifundamental Higgs fields."</p>
+<p>"In such a way, we for the first time successfully constructed <strong>three-family supersymmetric Pati-Salam models from non-rigid D6-branes with extra [stacks]</strong>."</p>
+<p>"Interestingly, by introducing extra stack of D6-branes to the standard supersymmetric Pati-Salam models, <strong>the number of filler branes reduces in general, and eventually the models without any $USp(N)$ gauge symmetry present. This reduces the exotic particles from filler [branes].</strong>"</p>
+</blockquote>
+<p><strong>That last result is the important one</strong>: <strong>the fourth stack replaces the fillers.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-the-fourth-stack-does">What the Fourth Stack Does</h3>
+<p><strong>In the standard construction, three stacks $a$, $b$, $c$ carry $U(4)_C$, $U(2)_L$, $U(2)_R$.</strong> <strong>The RR tadpoles must cancel, and the leftover charge is absorbed by filler branes</strong> — $USp(2N)$ stacks on orientifold planes.</p>
+<p><strong>Adding a $d$-stack changes the accounting</strong>: <strong>the $d$-branes carry their own charge, so fewer fillers are needed, and in some models none.</strong></p>
+<p><strong>And the $d$-stack's gauge group becomes an extra $SU(2)$</strong>, which must be broken. <strong>"The $SU(2)_{L1/R1}\times SU(2)_{L2/R2}$ can be broken down to the diagonal $SU(2)_{L/R}$ via bifundamental Higgs fields"</strong> — <strong>a Higgs in the bifundamental $(\mathbf2,\mathbf2)$ gets a VEV and the diagonal survives.</strong></p>
+<p><strong>That is the standard left-right-symmetric breaking pattern</strong>, applied to the extra $SU(2)$.</p>
+<p><strong>The corpus should record the trade</strong>: <strong>a new stack removes fillers and their exotics, but adds an extra $SU(2)$ and its breaking sector.</strong> <strong>The net exotic count improves, as the paper says.</strong></p>
+<h3 id="why-this-is-a-real-advance">Why This Is a Real Advance</h3>
+<p><strong>The filler branes are the cluster's main source of unwanted states.</strong> <strong><code>2303.02864</code> struck that the hidden sector is not decoupled</strong>; <strong><code>2212.09644</code> found one model with no fillers</strong>; <strong>this paper constructs a whole class without them.</strong></p>
+<p><strong>So the three papers together solve the filler problem</strong>:
+- <code>2212.09644</code>: one filler-free model in the symplectic branch.
+- Here: a systematic construction of filler-free models.</p>
+<p><strong>The corpus should present this as the cluster's answer to its own exotic problem</strong> — <strong>not by decoupling the exotics, but by removing their source.</strong></p>
+<p><strong>And that is a general lesson</strong>: <strong>the exotics came from the tadpole bookkeeping, so changing the bookkeeping removes them.</strong> <strong>A field theorist would not think of that</strong>, because in field theory there are no tadpoles to cancel.</p>
+<h3 id="the-28-classes">The 28 Classes</h3>
+<p><strong>Twenty-eight, against 33.</strong> <strong>So the extra stack gives a comparable-sized landscape</strong>, and the total grows to at least 61.</p>
+<p><strong>And the gauge group is different</strong>: $SU(4)_C\times SU(2)_L\times SU(2)_{R1}\times SU(2)_{R2}$ — <strong>four factors, rank 7</strong> instead of Pati–Salam's rank 6.</p>
+<p><strong>The corpus should note the rank change</strong>, because of the swampland rank bound (<code>2505.03664</code>): <strong>a higher rank is more likely to be in the swampland.</strong> <strong>So the filler-free models may pay a rank penalty.</strong> <strong>The paper does not discuss it, and the corpus should flag the question.</strong></p>
+<h3 id="the-diagonal-breaking">The Diagonal Breaking</h3>
+<p>"broken down to the diagonal $SU(2)_{L/R}$"</p>
+<p><strong>The breaking $SU(2)_1\times SU(2)_2\to SU(2)_{\rm diag}$ is by a bifundamental VEV</strong>, $\langle\Phi\rangle=v\,I_2$. <strong>The resulting coupling is $1/g_{\rm diag}^2=1/g_1^2+1/g_2^2$</strong>, <strong>the same relation as <code>2511.16565</code>'s canonical normalisation issue.</strong></p>
+<p><strong>So the two 2025 papers share the technical problem</strong>: <strong>the diagonal coupling is a sum of inverses, and its normalisation matters for unification.</strong> <strong>The corpus should note the connection.</strong></p>
+<h3 id="the-date">The Date</h3>
+<p><strong>December 2025</strong> — the latest paper in the batch, with <code>2603.24152</code> and <code>2606.29811</code> following in 2026.</p>
+<p><strong>So the field is active and the cluster is still growing.</strong> <strong>The corpus should say so: this is not a closed chapter.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-a-fourth-stack-replaces-the-filler-branes">1. A fourth stack replaces the filler branes</h3>
+<p><strong>The idea.</strong> Extra $d$-branes carry the tadpole charge, so $USp$ fillers and their exotics disappear.</p>
+<p><strong>What it would add.</strong> The cluster's structural answer to its exotic problem, and a contrast with the decoupling approach. <strong>The corpus should present both routes.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-filler-exotics-come-from-tadpole-bookkeeping">2. Filler exotics come from tadpole bookkeeping</h3>
+<p><strong>The idea.</strong> The unwanted states are the price of cancelling RR charge with (USp) stacks.</p>
+<p><strong>What it would add.</strong> A clear causal account of where the cluster's exotics come from. <strong>It explains why the exotics are so hard to remove.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-the-diagonal-math36-breaking-and-the-sum-of-inverses-coupling">3. The diagonal $SU(2)$ breaking and the sum-of-inverses coupling</h3>
+<p><strong>The idea.</strong> $1/g_{\rm diag}^2=1/g_1^2+1/g_2^2$, and its normalisation affects unification.</p>
+<p><strong>What it would add.</strong> A link to <code>2511.16565</code>'s canonical-normalisation trick, and a caution on unification claims.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's unification section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-rank-7-versus-rank-6-and-the-swampland-bound">4. Rank 7 versus rank 6 and the swampland bound</h3>
+<p><strong>The idea.</strong> The extra $SU(2)$ raises the gauge rank, which the swampland conjectures may forbid.</p>
+<p><strong>What it would add.</strong> An open question the corpus can pose: <strong>do the filler-free models violate the rank bound that the filler models satisfy?</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> The paper does not compute it.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Filler branes and their exotics: in <code>hep-th/0403061</code>, <code>2303.02864</code>.</li>
+<li>One filler-free model: in <code>2212.09644</code>.</li>
+<li>Swampland rank bounds: in <code>2505.03664</code>.</li>
+<li>The $I_{ac}$ generalisation: in <code>2511.16565</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and <code>2511.16565</code> are the cluster's two 2025 directions, and they are different in kind.</p>
+<p><strong><code>2511.16565</code> relaxes an assumption</strong> — the generation condition — <strong>and finds more of the same kind of model.</strong>
+<strong>Here, a new ingredient is added</strong> — a fourth stack — <strong>and a new kind of model appears.</strong></p>
+<p><strong>The second is the more consequential</strong>, because <strong>it changes what a "model" is</strong>: <strong>from three stacks plus fillers to four stacks plus breaking.</strong> <strong>That is a different framework, and its 28 classes are not a subset of the 33.</strong></p>
+<p><strong>The corpus should present the cluster's landscape as a union of frameworks</strong>, not a single count:
+- three stacks, fillers (33 + hidden variants)
+- three stacks, one symplectic (5)
+- four stacks, no fillers (28)
+- rigid cycles, discrete torsion (a class)
+- four-family (280)</p>
+<p><strong>Each framework has its own consistency conditions and its own best model.</strong> <strong>"The Pati–Salam landscape from D-branes" is a union, and any single number for it is a statement about one framework.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

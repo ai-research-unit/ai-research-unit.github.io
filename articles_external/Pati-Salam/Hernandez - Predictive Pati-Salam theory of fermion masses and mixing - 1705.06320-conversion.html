@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictive Pati–Salam Theory of Fermion Masses and Mixing — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Hernandez - Predictive Pati-Salam theory of fermion masses and mixing - 1705.06320.pdf — a…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="predictive-patisalam-theory-of-fermion-masses-and-mixing"><strong>Predictive Pati–Salam Theory of Fermion Masses and Mixing</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1705.06320 [hep-ph] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>A. E. Cárcamo Hernández, Sergey Kovalenko, José W. F. Valle, C. A. Vaquera-Araujo</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 1 August 2017</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (prepared for JHEP)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>28 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Hernandez - Predictive Pati-Salam theory of fermion masses and mixing - 1705.06320-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Hernandez - Predictive Pati-Salam theory of fermion masses and mixing - 1705.06320.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Hernandez - Predictive Pati-Salam theory of fermion masses and mixing - 1705.06320.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It is the first fully realistic flavour realisation of Pati–Salam, and the authors say so with appropriate modesty.</p>
+<blockquote>
+<p>"this is the first time that a fully realistic and to some extent predictive flavor realization of a Pati-Salam scenario is given."</p>
+</blockquote>
+<p>The construction: Pati–Salam with a <strong>$\Delta(27)$</strong> family symmetry, giving a Froggatt–Nielsen-like quark mixing pattern and a predictive neutrino sector via inverse seesaw.</p>
+<blockquote>
+<p>"The theory realizes a realistic Froggatt-Nielsen picture of quark mixing and a predictive pattern of neutrino oscillations. We find that, for normal neutrino mass ordering, <strong>the atmospheric angle must lie in the higher octant, CP must be violated in oscillations, and there is a lower bound for the $0\nu\beta\beta$ decay rate</strong>. For the case of inverted mass ordering, we find that the <strong>lower atmospheric octant is preferred, and that CP can be conserved</strong> in oscillations."</p>
+</blockquote>
+<p><strong>Those are sharp, falsifiable statements and they are the paper's value.</strong> Each is a binary or one-sided prediction, which is much stronger than a fit.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-math2">Why $\Delta(27)$</h3>
+<p>"The $\Delta(27)$ discrete group is a <strong>subgroup of $SU(3)$</strong>, has 27 elements divided into 11 conjugacy classes ... These irreducible representations are: two triplets ... and <strong>9 singlets</strong>, i.e., $\mathbf1_{k,l}$ ($k,l=0,1,2$), where $k$ and $l$ correspond to the $Z_3$ and $Z_3'$ charges."</p>
+<p>"The $\Delta(27)$ discrete group is a <strong>simple group of the type $\Delta(3n^2)$ with $n=3$</strong> and is isomorphic to the semi-direct product group $(Z_3'\times Z_3'')\rtimes Z_3$. Indeed, <strong>the simplest group of the type $\Delta(3n^2)$ is $\Delta(3)\equiv Z_3$. The next group is $\Delta(12)$, which is isomorphic to $A_4$. Thus, the $\Delta(27)$ discrete group is the next simplest nontrivial group of the type $\Delta(3n^2)$.</strong>"</p>
+<p><strong>That is the reason to use it, stated as a sequence</strong>: $Z_3$, then $A_4$, then $\Delta(27)$. <strong>Each step up the $\Delta(3n^2)$ ladder buys one more triplet representation</strong> — and a model that needs to assign three generations to a triplet and also needs several distinct singlets for the Froggatt–Nielsen charges needs both.</p>
+<p><strong>The corpus should record the ladder</strong>, because it explains why $A_4$ (used in <code>2404.06520</code> in this batch) and $\Delta(27)$ appear in the same literature: they are consecutive rungs.</p>
+<p><strong>Nine singlets is a lot, and that is the point</strong> — Froggatt–Nielsen needs a hierarchy of charges, and nine singlets give you a fine-grained grading. $A_4$ has three singlets, which is too coarse.</p>
+<h3 id="the-quark-sector">The Quark Sector</h3>
+<p>"The theory realizes a realistic Froggatt-Nielsen picture of quark mixing."</p>
+<p><strong>A Froggatt–Nielsen <em>picture</em>, not a derivation</strong>, and the distinction matters. The charges are assigned to fit the observed hierarchy, so the "prediction" is the pattern rather than the numbers. <strong>The corpus should not treat FN fits as derivations</strong>, and this paper is honest about it in the phrase "picture of".</p>
+<h3 id="the-neutrino-sector-and-why-it-is-predictive">The Neutrino Sector, and Why It Is Predictive</h3>
+<p>"neutrino masses arise from an <strong>inverse seesaw</strong> mechanism and the allowed ranges for the atmospheric mixing angle $\theta_{23}$ and CP violating phase $\delta_{CP}$ are <strong>rather restricted once one takes into account the precise measurements of the remaining oscillation parameters. This makes the model rather predictive.</strong>"</p>
+<p><strong>Inverse seesaw is the reason the predictions survive.</strong> In a type-I seesaw the light neutrino mass matrix is $m_DM_R^{-1}m_D^T$, and the freedom in $M_R$ absorbs almost anything. In inverse seesaw the mass matrix has a $\mu$ parameter that is <em>small by construction</em> (it is the $L$-violating entry), so the structure of the Dirac sector shows through.</p>
+<p><strong>So the predictivity comes from choosing the seesaw that has fewer free parameters</strong>, which is the same logic as <code>2305.19356</code>'s fermiophobia: restrict the structure until the model says something.</p>
+<p>The resulting claims, which the paper states as conditional on the ordering:
+- <strong>Normal ordering</strong>: $\theta_{23}$ in the <strong>upper octant</strong>, $\delta_{CP}\neq0$, and $m_{\beta\beta}$ bounded below.
+- <strong>Inverted ordering</strong>: lower octant preferred, $\delta_{CP}$ may be zero.</p>
+<p><strong>The upper-octant prediction for normal ordering is the sharpest.</strong> Current data favour the upper octant slightly, so this is a live test, and the correlation with $0\nu\beta\beta$ makes it doubly checkable.</p>
+<h3 id="the-cost-admitted">The Cost, Admitted</h3>
+<p>"Admittedly, <strong>the model is rather complex, especially in its scalar sector</strong>. However, it serves as a 'proof-of-concept' attempt."</p>
+<p><strong>That is the fair summary and it should be kept.</strong> A $\Delta(27)$ with nine singlets and enough scalars to break Pati–Salam and generate the FN structure is a large field content, and the paper does not pretend otherwise.</p>
+<h3 id="the-lhc-portal">The LHC Portal</h3>
+<p>"neutrino masses arise from a low-scale seesaw mechanism, <strong>whose messengers can be produced by a $Z'$ portal at the LHC</strong>."</p>
+<p><strong>Because the inverse seesaw is at a low scale, the messengers are light enough to produce.</strong> The $Z'$ is the Pati–Salam $U(1)_{B-L}$-like gauge boson, and it decays to the pairs. <strong>So the model has a collider signature connected to the neutrino mass mechanism</strong>, which is the same structure as the twin-PS papers: a TeV vector boson whose couplings encode the flavour model.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-math43-ladder-math44-math45-math46-each-adding-a-triplet">1. The $\Delta(3n^2)$ ladder: $Z_3$, $A_4$, $\Delta(27)$, each adding a triplet</h3>
+<p><strong>The idea.</strong> $\Delta(3)\cong Z_3$, $\Delta(12)\cong A_4$, $\Delta(27)$, $\Delta(48)$...; each rung has one more triplet and more singlets.</p>
+<p><strong>What it would add.</strong> A map of the discrete groups used in this literature and the reason each is chosen: <strong>the number of singlets sets how fine a Froggatt–Nielsen grading you can impose.</strong> The corpus's flavour discussion should carry this, because otherwise $A_4$, $S_4$, $\Delta(27)$ look like arbitrary choices.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section, and <code>2404.06520</code>'s conversion.</p>
+<p><strong>What stands in the way.</strong> Nothing; the group theory is standard.</p>
+<h3 id="2-inverse-seesaw-makes-the-model-predictive-type-i-does-not">2. Inverse seesaw makes the model predictive; type-I does not</h3>
+<p><strong>The idea.</strong> Inverse seesaw's $\mu$ is small by construction, so the Dirac structure shows through and the oscillation parameters are correlated.</p>
+<p><strong>What it would add.</strong> A mechanism-level explanation for why some flavour models predict and others do not. <strong>The corpus's seesaw discussion treats the three types as alternatives with different scales</strong>; here the choice determines whether the model is falsifiable.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the mass matrix structure is explicit.</p>
+<h3 id="3-octant-and-math55-predictions-correlated-with-the-mass-ordering">3. Octant and $0\nu\beta\beta$ predictions correlated with the mass ordering</h3>
+<p><strong>The idea.</strong> Normal ordering → upper octant, CP violated, $m_{\beta\beta}$ bounded below. Inverted → lower octant, CP may be conserved.</p>
+<p><strong>What it would add.</strong> A binary, correlated prediction — the strongest kind, because a single measurement can kill it. <strong>The corpus should record that these predictions exist and what they are</strong>, since they are testable now.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's neutrino section.</p>
+<p><strong>What stands in the way.</strong> The predictions depend on the FN charge assignment, which is chosen.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Pati–Salam with a family symmetry: in the Toorop ($S_4$) and Varzielas papers, and <code>2404.06520</code> ($A_4$ modular).</li>
+<li>Inverse seesaw: in the seesaw article and in <code>2105.14029</code>'s low-scale case.</li>
+<li>$Z'$ portal to seesaw messengers: in the twin-PS papers.</li>
+<li>Froggatt–Nielsen from a discrete symmetry: in the flavour articles.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and the modular-symmetry papers in this batch (<code>2404.06520</code>, <code>2503.14610</code>, <code>2501.00302</code>) are two generations of the same programme, and the difference is instructive.</p>
+<p>Here the flavour symmetry is <strong>discrete and non-modular</strong>: you assign charges to fields and write higher-dimensional operators suppressed by a flavons' VEVs. <strong>The predictive content comes from the charge assignment</strong>, which is chosen.</p>
+<p>There the symmetry is <strong>modular</strong>: the same group, but the Yukawa couplings are fixed functions of a modulus $\tau$, so the "charges" are replaced by modular weights and the couplings are determined. <strong>The predictive content comes from the modulus</strong>, which is a single complex parameter.</p>
+<p><strong>So the modular papers are an attempt to remove exactly the freedom that this paper uses.</strong> Whether that succeeds is a separate question, but the corpus should present the two as a progression rather than as unrelated model-building choices — the same groups, a different way of fixing the couplings.</p>
+<p>The second point: "first time that a fully realistic and to some extent predictive flavor realization of a Pati-Salam scenario" is a claim worth dating. <strong>Pati–Salam was proposed in 1974 and took forty-three years to get a realistic flavour sector</strong>, which is a fact about how hard the flavour problem is and not about the group.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

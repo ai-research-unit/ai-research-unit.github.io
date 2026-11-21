@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generalized Supersymmetric Pati–Salam Models from Intersecting D6-Branes — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Generalized Supersymmetric Pati-Salam Models from Intersecting D6-branes -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="generalized-supersymmetric-patisalam-models-from-intersecting-d6-branes"><strong>Generalized Supersymmetric Pati–Salam Models from Intersecting D6-Branes</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>1912.11633 [hep-th] (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Tianjun Li, Adeel Mansha, Rui Sun</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 21 June 2020</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, ITP Beijing / Tsinghua)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>29 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Generalized Supersymmetric Pati-Salam Models from Intersecting D6-branes - 1912.11633-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Generalized Supersymmetric Pati-Salam Models from Intersecting D6-branes - 1912.11633.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Generalized Supersymmetric Pati-Salam Models from Intersecting D6-branes - 1912.11633.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It replaces the $4+2+2$ brane configuration with $12+2+2$ and $4+6+2$, and shows these reduce to Pati–Salam.</p>
+<blockquote>
+<p>"we for the first time systematically construct the $N=1$ supersymmetric $SU(12)_C\times SU(2)_L\times SU(2)_R$ models, $SU(4)_C\times SU(6)_L\times SU(2)_R$ models, and $SU(4)_C\times SU(2)_L\times SU(6)_R$ models from the Type IIA orientifolds on $T^6/(\mathbb Z_2\times\mathbb Z_2)$ with intersecting D6-branes."</p>
+<p>"These gauge symmetries can be <strong>broken down to the Pati-Salam gauge symmetry $SU(4)_C\times SU(2)_L\times SU(2)_R$ via three $SU(12)_C/SU(6)_L/SU(6)_R$ adjoint representation Higgs fields</strong>, and further down to the Standard Model (SM) via the D-brane splitting and Higgs mechanism."</p>
+<p>"we obtain three families of the SM fermions, and have the <strong>left-handed and right-handed three-family SM fermion unification</strong> in the $SU(12)_C\times SU(2)_L\times SU(2)_R$ models, the <strong>left-handed</strong> three-family unification in the $SU(4)_C\times SU(6)_L\times SU(2)_R$ models, and the <strong>right-handed</strong> three-family unification in the $SU(4)_C\times SU(2)_L\times SU(6)_R$ models."</p>
+</blockquote>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="what-generalized-means">What "Generalized" Means</h3>
+<p><strong>Pati–Salam has two $SU(2)$s and one $SU(4)$. This paper asks: what if you enlarge one of the three factors?</strong></p>
+<ul>
+<li>$SU(12)_C$: <strong>the colour group absorbs all three generations.</strong> Since $SU(12)\supset SU(4)\times SU(3)$, twelve branes can accommodate four colours times three families.</li>
+<li>$SU(6)_L$ or $SU(6)_R$: <strong>the weak group absorbs the generations</strong>, since $SU(6)\supset SU(2)\times SU(3)$.</li>
+<li>$SU(4)_C\times SU(2)_L\times SU(2)_R$: nothing enlarged, the ordinary case.</li>
+</ul>
+<p><strong>So the "generalization" is a choice of which factor carries the family index.</strong> And the three options are exhaustive: the generations can be in the colour stack, the left stack, or the right stack.</p>
+<p><strong>That is a genuinely interesting structural question and the corpus should record it</strong>: <strong>where do the generations live?</strong> In the ordinary Pati–Salam construction the three families come from <em>three copies</em> of the intersection pattern; here they come from <em>one enlarged stack</em>. <strong>Different origin, different phenomenology.</strong></p>
+<h3 id="the-breaking-by-adjoint-higgles">The Breaking by Adjoint Higgles</h3>
+<p>"$SU(12)_C$ ... broken down to the Pati-Salam gauge symmetry ... via three $SU(12)_C/SU(6)_L/SU(6)_R$ <strong>adjoint representation Higgs fields</strong>"</p>
+<p><strong>The adjoint of $SU(12)$ contains the adjoint of $SU(4)\times SU(3)$ plus bifundamentals</strong>, and a VEV along the $SU(4)\times SU(3)$ direction breaks $SU(12)\to SU(4)\times SU(3)$. <strong>Three such Higgses</strong> — one per generation? — complete the breaking.</p>
+<p><strong>"$SU(12)_C/SU(6)_L/SU(6)_R$ adjoint"</strong> in the text is a compression; the fields are adjoints of the respective groups.</p>
+<p><strong>And this is where the model is vulnerable</strong>: <strong>adjoint Higgs fields in string constructions are hard to obtain.</strong> The paper says these arise from open-string states, and the corpus should note that the breaking depends on their existence.</p>
+<h3 id="the-t-duality-relation-between-the-three-cases">The T-duality Relation Between the Three Cases</h3>
+<p>"the $SU(4)_C\times SU(6)_L\times SU(2)_R$ models and the $SU(4)_C\times SU(2)_L\times SU(6)_R$ models are <strong>related by the left and right gauge symmetry exchanging, as well as a variation of type II T-duality</strong>."</p>
+<p><strong>So two of the three cases are the same model seen through T-duality and $L\leftrightarrow R$.</strong> That is a consistency check and it is satisfying: <strong>the left-enlarged and right-enlarged models are mirror images</strong>, as they should be given Pati–Salam's left-right symmetry.</p>
+<p><strong>And the $SU(12)_C$ case is not related to the other two</strong>, because the colour group is not interchanged with anything.</p>
+<p><strong>Note also that this paper's T-duality claim is more careful than <code>1910.04530</code>'s</strong>: here the models are $L\leftrightarrow R$ <em>plus</em> T-dual, so the equivalence is stated correctly. <strong><code>1910.04530</code>'s correction is evidently absorbed.</strong></p>
+<h3 id="the-hidden-sector">The Hidden Sector</h3>
+<p>"the hidden sector contains $USp(n)$ branes, which are parallel with the orientifold planes or their $\mathbb Z_2$ images and <strong>might break the supersymmetry via gaugino condensations</strong>."</p>
+<p><strong>Same hidden sector as before</strong>, which is reassuring: the mechanism does not depend on the visible-sector generalisation.</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-the-generation-index-can-live-in-any-one-of-the-three-gauge-factors">1. The generation index can live in any one of the three gauge factors</h3>
+<p><strong>The idea.</strong> $SU(12)_C$, $SU(4)_C\times SU(6)_L$, or $SU(4)_C\times SU(2)_L\times SU(6)_R$ — the generations are three copies of one factor.</p>
+<p><strong>What it would add.</strong> A structural question the corpus probably does not ask: <strong>what is the origin of the family number?</strong> Three copies from geometry, or three from a gauge factor? <strong>The answers differ in what they predict</strong> — the $SU(6)$ version unifies the left-handed families into a single multiplet, which is a real statement about families.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's generation section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the embeddings are standard.</p>
+<h3 id="2-left-enlarged-and-right-enlarged-models-are-t-dual-mirrors">2. Left-enlarged and right-enlarged models are T-dual mirrors</h3>
+<p><strong>The idea.</strong> $SU(4)\times SU(6)_L\times SU(2)_R$ and $SU(4)\times SU(2)_L\times SU(6)_R$ are the same model with $L\leftrightarrow R$.</p>
+<p><strong>What it would add.</strong> A consistency check that the framework respects left-right symmetry, and a template for verifying such claims.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="3-adjoint-higgs-fields-are-the-weak-point-of-the-enlargement">3. Adjoint Higgs fields are the weak point of the enlargement</h3>
+<p><strong>The idea.</strong> Breaking $SU(12)\to SU(4)\times SU(3)$ needs an adjoint, and adjoints are scarce in string spectra.</p>
+<p><strong>What it would add.</strong> A caution: <strong>the generalised models' viability depends on a field the framework does not guarantee.</strong> The corpus should record the dependence.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> The paper asserts the adjoints exist in its spectra; verifying that is a technical task.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Brane splitting and the $N=2$ Higgs sector: in <code>hep-th/0403061</code>.</li>
+<li>The T-duality correction: in <code>1910.04530</code>.</li>
+<li>$USp$ hidden sectors: in <code>hep-th/0403061</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper is the cluster's most conceptually interesting entry, because it asks a question the rest do not.</p>
+<p><strong>Every other paper in the cluster takes the $4+2+2$ brane configuration as given and enumerates its solutions.</strong> This one asks whether the configuration itself should be generalised, and finds three inequivalent ways for the generations to be distributed among the stacks.</p>
+<p><strong>The answer it gives — that two of the three are T-dual mirrors of each other — is a partial unification of the landscape</strong>, and it is the kind of structural result that a pure enumeration cannot produce.</p>
+<p><strong>The corpus should note the contrast</strong>: <code>2112.09632</code> will show that the $4+2+2$ landscape has <code>202752</code> models and one with exact unification. <strong>If the generalised configurations add models with better properties, the "complete search" of the $4+2+2$ slice is not complete for the framework.</strong> Whether they do is not answered here, and that is a gap worth recording.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

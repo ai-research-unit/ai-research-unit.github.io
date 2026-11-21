@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TeV-Scale Vector Leptoquark from Pati–Salam Unification with Vectorlike Families — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Kawamura - TeV-scale vector leptoquark from Pati-Salam unification with vectorlike families -…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="tev-scale-vector-leptoquark-from-patisalam-unification-with-vectorlike-families"><strong>TeV-Scale Vector Leptoquark from Pati–Salam Unification with Vectorlike Families</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>2103.11889 [hep-ph] (v1)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Syuhei Iguro, Junichiro Kawamura, Shohei Okawa, Yuji Omura</td>
+</tr>
+<tr>
+<td>version</td>
+<td>22 March 2021</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>Phys. Rev. D 104 (2021) 075008</td>
+</tr>
+<tr>
+<td>length</td>
+<td>49 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Kawamura - TeV-scale vector leptoquark from Pati-Salam unification with vectorlike families - 2103.11889-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Kawamura - TeV-scale vector leptoquark from Pati-Salam unification with vectorlike families - 2103.11889.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Kawamura - TeV-scale vector leptoquark from Pati-Salam unification with vectorlike families - 2103.11889.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. Its sequel is <code>2201.04638</code> in this batch, which finds a loop hole in this paper's protection mechanism.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It shows how to make the $SU(4)$ vector leptoquark light <strong>without</strong> introducing a second gauge group — by adding vector-like families and tuning one texture.</p>
+<blockquote>
+<p>"The leptoquark mass is constrained to be heavier than PeV-scale by the measurement of a flavor violating kaon decay, $K_L\to\mu e$, in conventional models. <strong>This strong constraint can be avoided by introducing vectorlike families consistently with the quark and lepton masses and CKM and PMNS matrices.</strong>"</p>
+</blockquote>
+<p><strong>That is the alternative to the 4321 route, and it should be recorded as such.</strong> <code>2106.03876</code> and following replace $SU(4)$ with $SU(4)\times SU(3)'$; this paper keeps $SU(4)$ and arranges the fermion mass matrices so the leptoquark couples almost diagonally.</p>
+<p>"The other flavor violating processes are also suppressed. In this model, <strong>the vector leptoquark can be sufficiently light to explain the recent $b\to s\mu\mu$ anomaly</strong>, while <strong>the $b\to c\tau\nu$ anomaly is difficult to be explained</strong> due to the strong constraints from the $Z^0$ boson and vectorlike quark searches at the LHC."</p>
+<p><strong>So this route gets one anomaly and not the other</strong>, which is the opposite outcome from the twin-PS route's first version. Worth recording side by side.</p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="the-three-achievements-and-the-tuning">The Three Achievements and the Tuning</h3>
+<p>"We have proposed an explicit model with the PS gauge symmetry and extra vectorlike fermions that realizes
+- a vector leptoquark which accounts for the $b\to s\mu\mu$ anomaly
+- the realistic mass spectrum of the SM fermions
+- sufficiently suppressed $\mu$–$e$ flavor violations <strong>due to tuning of the parameters</strong>"</p>
+<p><strong>"Due to tuning" is in the list, and the abstract quantifies it: "$O(0.2\%)$ tuning is required in the fermion matrix."</strong> That is a one-in-five-hundred adjustment, and the corpus should record the number rather than the adjective.</p>
+<h3 id="why-math12-is-the-obstruction">Why $K_L\to\mu e$ Is the Obstruction</h3>
+<p>The $SU(4)$ vector leptoquark couples to $Q$ and $L$ with <strong>equal gauge strength for all generations</strong>, because the group does not distinguish them. The coupling matrix is the identity in the gauge basis, so it is the identity in <em>any</em> basis only if the rotation matrices are equal.</p>
+<p><strong>They are not</strong>: the up-type and down-type rotations differ by the CKM matrix, and the quark and lepton rotations differ by the PMNS matrix. So after rotating to mass eigenstates the leptoquark coupling is
+$$
+g_{U_1}\;\Omega_u^\dagger\Omega_d,\qquad \Omega_e^\dagger\Omega_\nu,
+$$
+and these contain the CKM and PMNS matrices — which have large off-diagonal entries. <strong>So the leptoquark mediates $K_L\to\mu e$ at a rate fixed by the PMNS mixing, and the mass must be above a PeV.</strong></p>
+<p><strong>That is the same obstruction as in <code>2305.19356</code>, derived from the other side.</strong> There the fix was to make the light families singlets; here the fix is to change the mass matrices so the rotations are nearly equal.</p>
+<h3 id="the-fix-vector-like-families-with-a-specific-texture">The Fix: Vector-Like Families with a Specific Texture</h3>
+<p>"The <strong>texture in Eq. (2.23) of the vectorlike fermion masses is a key idea</strong> to suppress the $\mu$–$e$ flavor violation, especially $K_L\to\mu e$ decay. We have showed in Fig. 1 that ${\rm BR}(K_L\to e\mu)$ is less than the current limit if we adopt the $O(0.2\%)$ tuning of the parameters."</p>
+<p><strong>So the tuning does one job: it makes the quark and lepton rotation matrices nearly aligned.</strong> The vector-like fermions enter the mass matrices in a way that lets the mixing angles be dialled, and the dials are set so the leptoquark's off-diagonal couplings vanish.</p>
+<p><strong>That is a different philosophy from the 4321 papers.</strong> There, an <em>exact</em> structure (singlet light families) removes the couplings. Here, a <em>fine-tuned</em> structure suppresses them. <strong>The first is robust; the second is not.</strong> The sequel <code>2201.04638</code> shows the second fails at one loop.</p>
+<h3 id="why-math23-fails">Why $b\to c\tau\nu$ Fails</h3>
+<p>"we have pointed out that the combination of the $Z'$ boson and vectorlike quark searches <strong>exclude</strong> the light leptoquark to explain the $b\to c\tau\nu$ anomaly."</p>
+<p><strong>The reason is structural: a $U_1$ coupling that produces $b\to c\tau\nu$ strongly must also produce $b\to s\tau\tau$ and $b\to b\tau\tau$</strong>, and the latter two are constrained by $Z\to\tau\tau$ and by di-tau searches. In the 4321 models the same problem appears but is evaded by the left-handed structure; here it is not.</p>
+<p><strong>So this route cannot explain $R(D^{(*)})$</strong>, and the paper says so plainly.</p>
+<h3 id="the-higgs-problem">The Higgs Problem</h3>
+<p>"<strong>sizable neutral meson mixings, induced by the extra Higgs doublets, are unavoidable.</strong>" "heavy Higgs bosons lighter than $4.8$ ($2.8$) TeV are excluded by the measurement of $B$ meson mixing when $\tan\beta=2$ ($50$)."</p>
+<p><strong>So the model has a second, independent problem: the extra scalars that give the leptoquark structure also mediate meson mixing.</strong> That is a cost of the vector-like-family route: the same $(\mathbf{15},\mathbf2,\mathbf2)$-type scalars that generate the texture generate flavour-changing neutral currents at tree level.</p>
+<p><strong>The 4321 papers avoid this because the third family is a singlet</strong>; here nothing is.</p>
+<h3 id="the-prediction">The Prediction</h3>
+<p>"the available parameter space to explain the $b\to s\mu\mu$ anomaly is probed by future searches for $\mu\to e\gamma$ and $\mu{\rm Al}\to e{\rm Al}$ processes. The former process is sensitive to the couplings with the SM leptons and vectorlike quarks, while the later is sensitive to the SM leptons and SM down quarks. The future experiments cover the parameter space that satisfies $|s_Q+s_\ell|\gtrsim0.002$ and $|s_Q-s_\ell|\gtrsim3.0\times10^{-5}$."</p>
+<p><strong>And a neutrino-oscillation prediction:</strong> "the neutron oscillation is also predicted by the couplings involving $\Sigma$. We estimate the transition amplitude and conclude that our prediction is much below the current experimental bound."</p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-two-routes-to-a-light-math44-leptoquark-exact-structure-versus-tuned-texture">1. Two routes to a light $SU(4)$ leptoquark: exact structure versus tuned texture</h3>
+<p><strong>The idea.</strong> 4321 makes the light families singlets (exact); this paper aligns the rotation matrices (tuned at $0.2\%$).</p>
+<p><strong>What it would add.</strong> The central methodological contrast in the batch's leptoquark literature, which the corpus should present as a choice rather than as one correct answer. <strong>And the sequel shows the tuned route fails at one loop</strong>, which is the argument for preferring exact structures.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark section, as the fork in the road.</p>
+<p><strong>What stands in the way.</strong> Nothing; both papers state their mechanism.</p>
+<h3 id="2-the-leptoquark-coupling-after-rotation-is-math46-and-math47">2. The leptoquark coupling after rotation is $\Omega_u^\dagger\Omega_d$ and $\Omega_e^\dagger\Omega_\nu$</h3>
+<p><strong>The idea.</strong> Because $SU(4)$ couples all generations equally, the physical leptoquark coupling is a product of rotation matrices — the CKM for quarks and the PMNS for leptons.</p>
+<p><strong>What it would add.</strong> A precise statement of why the minimal model cannot be light: <strong>the PMNS matrix is not small</strong>, so the off-diagonal leptoquark coupling is not small. This is the mechanism behind the PeV bound, and the corpus should state it in these terms rather than as a numerical bound.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's leptoquark section.</p>
+<p><strong>What stands in the way.</strong> Nothing; it is the standard matching calculation.</p>
+<h3 id="3-a-math49-tuning-is-what-buys-a-tev-leptoquark-here">3. A $0.2\%$ tuning is what buys a TeV leptoquark here</h3>
+<p><strong>The idea.</strong> The fermion mass matrix texture must be adjusted to one part in five hundred.</p>
+<p><strong>What it would add.</strong> A number attached to a claim of naturalness. <strong>The corpus should record such numbers</strong>, because "tuning" without a figure is not a criticism; $0.2\%$ is.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's phenomenology section, next to the twin-PS "mild tuning."</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-extra-higgs-doublets-mediating-meson-mixing-are-unavoidable-in-this-route">4. Extra Higgs doublets mediating meson mixing are unavoidable in this route</h3>
+<p><strong>The idea.</strong> The scalars that generate the texture have flavour-violating couplings, and $B$ mixing excludes them below $2.8$–$4.8$ TeV.</p>
+<p><strong>What it would add.</strong> A second cost of the vector-like-family route, independent of the leptoquark. <strong>Both routes to $B$ anomalies pay in flavour-changing scalars or in new gauge groups</strong>, and the corpus should record both prices.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's scalar-sector section.</p>
+<p><strong>What stands in the way.</strong> Nothing; the bounds are quoted.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>$SU(4)$'s leptoquark coupling tied to CKM/PMNS by rotation: related to the Georgi–Jarlskog discussion in <code>1608.04124</code>.</li>
+<li>The $K_L\to\mu e$ PeV bound on $SU(4)$ gauge bosons: in <code>1808.07492</code> in this batch.</li>
+<li>The 4321 alternative: in <code>2106.03876</code> and following in this batch.</li>
+<li>The $b\to s\mu\mu$ versus $b\to c\tau\nu$ tension: in <code>1808.07492</code>, <code>1905.05211</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This paper and the twin-PS series are the two answers to the same question — how do you get a TeV vector leptoquark out of Pati–Salam? — and the sequel settles it.</p>
+<p><strong>The answer here is a texture.</strong> Keep the group, add vector-like families, dial the mass matrices so the leptoquark's off-diagonal couplings cancel to $0.2\%$. The price: no $R(D^{(*)})$, extra-Higgs meson mixing, and a tuning that loop corrections can undo.</p>
+<p><strong>The answer there is a group.</strong> Replace $SU(4)$ with $SU(4)\times SU(3)'$, make the light families singlets, and the couplings are absent by symmetry. The price: a colour octet at $3.5$ TeV, six vector-like families, and a tuned 2-3 structure.</p>
+<p><strong>Both pay, and neither is obviously better</strong>, which is the honest state of the field in 2021 and worth recording as such. The sequel's finding — "the box diagrams are not suppressed even with the conditions (i) and (ii)" — is the technical reason the first route is worse than it looked, and it is the most important result in this pair.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

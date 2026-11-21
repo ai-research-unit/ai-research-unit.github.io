@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Type IIA Pati–Salam Flux Vacua — Biquaternion Universe</title>
+  <meta name="description" content="The original is /home/hp/Documents/Material/Pati-Salam/Li - Type IIA Pati-Salam Flux Vacua - hep-th_0601064.pdf — a PDF in a subfolder of…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="type-iia-patisalam-flux-vacua"><strong>Type IIA Pati–Salam Flux Vacua</strong></h1>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>arXiv</td>
+<td>hep-th/0601064 (v2)</td>
+</tr>
+<tr>
+<td>authors</td>
+<td>Ching-Ming Chen, Tianjun Li, Dimitri V. Nanopoulos</td>
+</tr>
+<tr>
+<td>version</td>
+<td>v2, 30 January 2006</td>
+</tr>
+<tr>
+<td>journal</td>
+<td>not printed in the PDF (preprint, ACT-01-06 / MIFP-06-02)</td>
+</tr>
+<tr>
+<td>length</td>
+<td>30 pages</td>
+</tr>
+<tr>
+<td>conversion</td>
+<td><code>articles_external/Pati-Salam/Li - Type IIA Pati-Salam Flux Vacua - hep-th_0601064-conversion.md</code></td>
+</tr>
+<tr>
+<td>source</td>
+<td><code>/home/hp/Documents/Material/Pati-Salam/Li - Type IIA Pati-Salam Flux Vacua - hep-th_0601064.pdf</code></td>
+</tr>
+<tr>
+<td>corpus anchor</td>
+<td><code>articles_physics/the-pati-salam-model-in-the-biquaternion-framework.md</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>The original is <code>/home/hp/Documents/Material/Pati-Salam/Li - Type IIA Pati-Salam Flux Vacua - hep-th_0601064.pdf</code> — a PDF in a subfolder of <code>/home/hp/Documents/Material/</code>, readable with <code>pdftotext</code> if the full text is needed. It is the ancestor of <code>2512.21141</code> and the conceptual key to the cluster's filler-brane problem.</p>
+<h2 id="what-the-paper-does">What the Paper Does</h2>
+<p>It shows that fluxes relax the tadpole condition, which removes the constraint that generates filler branes.</p>
+<blockquote>
+<p>"We show that <strong>for supersymmetric AdS vacua on Type IIA orientifolds with flux compactifications, the RR tadpole cancellation conditions can be completely relaxed</strong>, and then <strong>the four-dimensional $N=1$ supersymmetry conditions are the main constraints on consistent intersecting D6-brane model building.</strong>"</p>
+<p>"We construct two kinds of three-family Pati-Salam models. In the first kind ... <strong>the suitable three-family SM fermion masses and mixings can be generated at the stringy tree level, and then the rank one problem for the SM fermion Yukawa matrices can be solved.</strong> In the second kind ... <strong>only the third family of the SM fermions can obtain masses at tree level.</strong>"</p>
+<p>"In these models, <strong>the complex structure parameters can be determined by supersymmetric D6-brane configurations, and all the moduli may be stabilized.</strong>"</p>
+<p>"The initial gauge symmetries $U(4)_C\times U(2)_L\times U(2)_R$ and $U(4)_C\times USp(2)_L\times U(2)_R$ can be broken down to $SU(3)_C\times SU(2)_L\times U(1)_{B-L}\times U(1)_{I_3^R}$ due to the Green–Schwarz mechanism and D6-brane splittings, and further down to the SM ... <strong>Comparing to the previous model building, we have less bi-doublet Higgs fields. However, there generically exist some exotic particles.</strong>"</p>
+</blockquote>
+<p><strong>The first sentence is the paper's real content</strong>: <strong>tadpoles relaxed ⇒ no filler branes required ⇒ a different landscape.</strong></p>
+<h2 id="summary-in-the-authors-words">Summary in the Authors' Words</h2>
+<h3 id="why-relaxing-the-tadpole-matters">Why Relaxing the Tadpole Matters</h3>
+<p><strong>In the standard construction (<code>hep-th/0403061</code>, <code>2112.09630</code>), RR tadpole cancellation is a hard constraint</strong>: the total D6-brane charge must equal the O6-plane charge, <strong>so the brane content is fixed up to the filler branes.</strong></p>
+<p><strong>That is what generates the fillers, and the fillers generate the exotics.</strong> <strong><code>1002.2937</code> and <code>2303.02864</code> both trace the cluster's exotic problem to this.</strong></p>
+<p><strong>With fluxes, the RR charge can be absorbed by the flux</strong>: <strong>the integral of $H\wedge F$ over the internal space contributes to the tadpole</strong>, so <strong>the D-brane charge need not cancel exactly.</strong> <strong>And in an AdS vacuum the condition is relaxed completely.</strong></p>
+<p><strong>So the constraint disappears, and the model-building problem becomes: find a set of D6-branes satisfying $N=1$ SUSY, and let the flux do the rest.</strong></p>
+<p><strong>The corpus should record this as the cluster's most important structural insight</strong>, because it explains:
+- <strong>why <code>2512.21141</code> can build models without the filler problem</strong>,
+- <strong>why the "33 classes" is a statement about the fluxless case</strong>,
+- <strong>and why "complete enumeration" is framework-dependent</strong> (<code>2511.16565</code>).</p>
+<h3 id="the-two-kinds-of-model">The Two Kinds of Model</h3>
+<p><strong>First kind</strong>: "<strong>three-family SM fermion masses and mixings can be generated at the stringy tree level, and then the rank one problem for the SM fermion Yukawa matrices can be solved.</strong>"</p>
+<p><strong>The "rank one problem"</strong> is that <strong>the tree-level Yukawa matrix in these constructions is rank one</strong> — only one generation gets a mass. <strong>The paper's claim is that its first kind avoids this.</strong></p>
+<p><strong>That is a significant claim</strong>, because <strong>the rank-one problem is exactly what <code>1608.04124</code>'s vector-like family and <code>1406.7005</code>'s FN symmetry solve in field theory.</strong> <strong>Here the solution is a flux-induced coupling structure.</strong></p>
+<p><strong>Second kind</strong>: "only the third family of the SM fermions can obtain masses at tree level" — <strong>the rank-one problem is present</strong>, and <strong>the other generations must get masses radiatively or from higher-dimension operators.</strong></p>
+<p><strong>The corpus should record both</strong>, because <strong>the rank-one problem's presence or absence is the sharpest discriminator between these models</strong>, and it determines whether the model is realistic.</p>
+<h3 id="moduli-stabilisation">Moduli Stabilisation</h3>
+<p>"<strong>the complex structure parameters can be determined by supersymmetric D6-brane configurations, and all the moduli may be stabilized.</strong>"</p>
+<p><strong>That is a strong claim and it is the paper's other selling point.</strong> <strong>In the fluxless constructions the moduli are unstabilised</strong>, which is why <code>2501.08590</code> and <code>2505.03664</code> needed rigid cycles.</p>
+<p><strong>Here the flux stabilises the complex-structure moduli and the axio-dilaton</strong>, and <strong>the D6-brane configuration fixes the Kähler moduli.</strong> <strong>So all moduli are fixed.</strong></p>
+<p><strong>The corpus should note the contrast</strong>: <strong>two routes to moduli stabilisation — rigid cycles with discrete torsion (<code>2501.08590</code>), and fluxes (<code>hep-th/0601064</code>, <code>2512.21141</code>).</strong> <strong>The second is earlier and more standard.</strong></p>
+<h3 id="the-breaking-chain">The Breaking Chain</h3>
+<p>"$U(4)_C\times U(2)_L\times U(2)_R$ ... broken down to $SU(3)_C\times SU(2)_L\times U(1)_{B-L}\times U(1)_{I_3^R}$ <strong>due to the Green–Schwarz mechanism and D6-brane splittings</strong>, and further down to the SM ... <strong>via the supersymmetry preserving Higgs mechanism</strong>"</p>
+<p><strong>Three steps:</strong>
+1. <strong>Green–Schwarz</strong>: the anomalous $U(1)$s become massive, so $U(4)\to SU(4)$ and $U(2)\to SU(2)$.
+2. <strong>Brane splitting</strong>: the $U(4)$ stack splits into $U(3)\times U(1)$, giving $SU(3)_C\times U(1)_{B-L}$.
+3. <strong>Higgs</strong>: the $U(1)_{I_3^R}$ and the remaining $U(1)$s break to the SM.</p>
+<p><strong>That is the standard chain and the corpus should have it</strong>: <strong>Pati–Salam → SM in these models goes through $SU(3)\times SU(2)_L\times U(1)_{B-L}\times U(1)_{I_3^R}$</strong>, <strong>not directly.</strong> <strong>The intermediate group is the left-right-symmetric one</strong>, and <strong>that is why $U(1)_{B-L}$ is a physical intermediate symmetry.</strong></p>
+<h3 id="the-honest-caveat">The Honest Caveat</h3>
+<p>"<strong>However, there generically exist some exotic particles.</strong>"</p>
+<p><strong>The paper says it plainly: fluxes remove the <em>tadpole-generated</em> exotics, not all exotics.</strong> <strong>The remaining ones must be decoupled by mass or confinement.</strong></p>
+<p><strong>The corpus should record the caveat</strong>, because <strong>"no fillers" does not mean "no exotics"</strong> — <strong><code>2212.09644</code>'s filler-free model and <code>2512.09057</code>'s four-stack models still have to deal with them.</strong></p>
+<h2 id="ideas-not-yet-in-the-corpus">Ideas Not Yet in the Corpus</h2>
+<p>The rank is a judgement, ordered by how directly the corpus needs the object.</p>
+<h3 id="1-fluxes-relax-the-tadpole-condition-removing-the-need-for-filler-branes">1. Fluxes relax the tadpole condition, removing the need for filler branes</h3>
+<p><strong>The idea.</strong> In AdS flux vacua the RR charge need not cancel exactly, so $N=1$ SUSY is the only constraint.</p>
+<p><strong>What it would add.</strong> The structural key to the cluster's filler/exotic problem, and the explanation of why the "33 classes" is a fluxless statement. <strong>The corpus should present it before any census number.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's string section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="2-a-flux-construction-can-avoid-the-rank-one-yukawa-problem">2. A flux construction can avoid the rank-one Yukawa problem</h3>
+<p><strong>The idea.</strong> The first kind of model gives all three families masses at tree level.</p>
+<p><strong>What it would add.</strong> A string solution to a problem field theory solves with FN symmetries or vector-like families. <strong>Compare <code>1608.04124</code> and <code>1406.7005</code>.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's flavour section.</p>
+<p><strong>What stands in the way.</strong> The claim needs checking against the observed mass ratios.</p>
+<h3 id="3-fluxes-stabilise-all-moduli-rigid-cycles-are-the-alternative">3. Fluxes stabilise all moduli; rigid cycles are the alternative</h3>
+<p><strong>The idea.</strong> Complex structure and axio-dilaton by flux, Kähler by the brane configuration.</p>
+<p><strong>What it would add.</strong> Two routes to stabilisation, with different costs. <strong>The corpus should present both.</strong></p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's cosmology section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="4-the-breaking-chain-goes-through-the-left-right-group">4. The breaking chain goes through the left-right group</h3>
+<p><strong>The idea.</strong> $SU(4)\times SU(2)\times SU(2)\to SU(3)\times SU(2)_L\times U(1)_{B-L}\times U(1)_{I_3^R}\to$ SM.</p>
+<p><strong>What it would add.</strong> The correct intermediate symmetry, and a reason $B-L$ is physical.</p>
+<p><strong>Where it lands.</strong> The Pati–Salam article's breaking section.</p>
+<p><strong>What stands in the way.</strong> Nothing.</p>
+<h3 id="checked-and-already-in-the-corpus">Checked and already in the corpus</h3>
+<ul>
+<li>Filler branes and their exotics: in <code>hep-th/0403061</code>, <code>2303.02864</code>, <code>1002.2937</code>.</li>
+<li>Rigid cycles as the alternative: in <code>2501.08590</code>, <code>2505.03664</code>.</li>
+<li>The rank-one Yukawa problem: in <code>1608.04124</code>, <code>1406.7005</code>.</li>
+<li>The flux version: in <code>2512.21141</code>.</li>
+</ul>
+<h3 id="one-observation-about-the-corpuss-map">One observation about the corpus's map</h3>
+<p>This 2006 paper contains the answer to a problem the 2010–2023 papers rediscover, and the corpus should say so.</p>
+<p><strong><code>1002.2937</code> (2010)</strong>: "the main issue ... matter-Higgs mixing ... solved where these fields arise in different intersections."
+<strong><code>2303.02864</code> (2023)</strong>: "the gauge coupling relations [are] highly sensitive to ... the hidden sector."
+<strong><code>2512.09057</code> (2025)</strong>: "the number of filler branes reduces ... eventually the models without any $USp(N)$."</p>
+<p><strong>All three are consequences of the tadpole constraint, which <code>hep-th/0601064</code> (2006) already showed can be relaxed by flux.</strong></p>
+<p><strong>So the cluster spent fifteen years solving a problem that had a known solution in a different framework.</strong> <strong>The corpus should present the two frameworks side by side</strong> — <strong>fluxless (tadpoles, fillers, exotics) and flux (no tadpoles, no fillers, fewer exotics)</strong> — <strong>and note that the flux framework is older.</strong></p>
+<p><strong>That is not a criticism of the later papers</strong>: <strong>the flux framework has its own problems</strong> (the AdS vacuum, the flux quantisation, the dilaton). <strong>But a reader deserves to know that the constraint is optional.</strong></p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
