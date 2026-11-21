@@ -1,4 +1,4 @@
-# __Anomalies and Anomaly Cancellation in Pati–Salam Model: Four Conditions Become None__
+# __Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model: Four Conditions Become None__
 
 ## Introduction
 

@@ -148,7 +148,7 @@ $$
 \Big|\frac{g_A}{g_V}\Big|=\Big|1-4\sin^2\theta_W\Big|^{-1},
 $$
 
-and at $\sin^2\theta_W=0.23122$ the bracket is $Q_{W,e}=0.07512$, so the ratio is $1/|Q_{W,e}|=13.3$ and the vertex is far from null — invertible, with the determinant $(g_V^2-g_A^2)^2$ evaluated at that ratio. Nullness would need $4\sin^2\theta_W=0$ or $4\sin^2\theta_W=2$, that is $\sin^2\theta_W=0$, a pure vector coupling, or $\sin^2\theta_W=\tfrac12$, a pure axial one.
+and at the measured value of $\sin^2\theta_W$ the bracket is $Q_{W,e}=1-4\sin^2\theta_W$, a number near a thirteenth, so the ratio is $1/|Q_{W,e}|$ and the vertex is far from null — invertible, with the determinant $(g_V^2-g_A^2)^2$ evaluated at that ratio. Nullness would need $4\sin^2\theta_W=0$ or $4\sin^2\theta_W=2$, that is $\sin^2\theta_W=0$, a pure vector coupling, or $\sin^2\theta_W=\tfrac12$, a pure axial one.
 
 This is not a defect of the framework but a statement about the theory, and it has a measured face. The quantity $1-4\sin^2\theta_W$ is the weak charge $Q_W$ of the electron that the Møller article's parity-violating asymmetry is proportional to; the asymmetry is small because the vector coupling is small, and it vanishes at $\sin^2\theta_W=\tfrac14$, where the vertex is purely axial. That zero is not the null point, and the distinction is worth keeping: the asymmetry vanishes when the two chiral weights stand in the ratio $0:1$, and the vertex is null when they stand in the ratio $1:1$. The criterion and the measurement are two different statements about the same pair of weights; at the physical angle the charged vertex sits exactly on the null point and the neutral one misses it by a factor of $13.3$.
 
@@ -216,7 +216,7 @@ $$
 
 verified to $2.3\times10^{-16}$, so the chiral vertex is nilpotent if and only if $|g_A|=|g_V|$ and invertible otherwise. With the right multiplier normalised to the Peirce pair, the left multipliers are the informational-sector frame, $e_t$ and $-i\vec e_\eta$ for $P_L$ against $e_t$ and $+i\vec e_\eta$ for $P_R$, and the two chiralities differ only by the sign of that multiplier. The $V-A$ structure, which the Standard Model takes as input, is therefore exactly the condition that the weak vertex be null, and the identity it satisfies is Dirac's, derived here from the nilpotency of the Peirce element.
 
-The neutral current does not sit at the null point: its weight ratio is $(1-4\sin^2\theta_W)^{-1}=13.3$, and the smallness of the parity-violating asymmetry in Møller scattering is the measured face of that distance. Parity reverses the sign of the axial weight, $g_A\mapsto-g_A$, so it exchanges $V-A$ with $V+A$ and leaves only the pure vector self-conjugate; maximal violation is $|g_A|=|g_V|$, where the two halves enter with equal magnitude. The mass bilinear is chirality-odd, and the identity $P_LR_{\vec e_x}=R_{\vec e_x}P_R$ is what makes it vanish on a field of definite chirality. Two adjacent weak vertices on one line annihilate for every pair of indices, and a propagator between them revives the product; that is the chirality flip, and the pion ratio measures the same flip on one decay.
+The neutral current does not sit at the null point: its weight ratio is $(1-4\sin^2\theta_W)^{-1}$, a number near thirteen, and the smallness of the parity-violating asymmetry in Møller scattering is the measured face of that distance. Parity reverses the sign of the axial weight, $g_A\mapsto-g_A$, so it exchanges $V-A$ with $V+A$ and leaves only the pure vector self-conjugate; maximal violation is $|g_A|=|g_V|$, where the two halves enter with equal magnitude. The mass bilinear is chirality-odd, and the identity $P_LR_{\vec e_x}=R_{\vec e_x}P_R$ is what makes it vanish on a field of definite chirality. Two adjacent weak vertices on one line annihilate for every pair of indices, and a propagator between them revives the product; that is the chirality flip, and the pion ratio measures the same flip on one decay.
 
 What the framework does not supply is the coupling, the scale, the selection of the left half, the generations and the mixing. The rates are transcribed: $\tau_\mu=2.1873$ $\mu$s at the tree level against $2.1969811$ measured, and $\Gamma(\pi\to e\nu_e)/\Gamma(\pi\to\mu\nu_\mu)=1.2833\times10^{-4}$ against $1.2300\times10^{-4}$ measured. The one construction that would close the gap is the separate gauging of the basis operators, which the companion article on the $SO(4)$ route records as a proposal and not as a result. The table above does not supply it: a nilpotent multiplier is not a group element.
 
@@ -244,7 +244,7 @@ What the framework does not supply is the coupling, the scale, the selection of 
 | $v=(\sqrt2\,G_{\mathrm F})^{-1/2}=246.22$ GeV | Electroweak scale |
 | $g_V=T_3-2ϙ\sin^2\theta_W$, $g_A=T_3$ | Neutral current weights; the charged current has $g_V=g_A=1$ |
 | $\eta_P=iR_{\vec e_x}$ | Internal parity factor, $\eta_P^2=I_4$, $\eta_PP_R=P_L\eta_P$, $\eta_P\xi\eta_P=-\xi$ |
-| $Q_W=1-4\sin^2\theta_W=0.07512$ | Weak charge of the electron |
+| $Q_W=1-4\sin^2\theta_W$ | Weak charge of the electron; **its measured value is an input, and this article carries the symbol** |
 | $\tau_\mu=192\pi^3/(G_{\mathrm F}^2m_\mu^5)$ | Muon lifetime at the tree level |
 | $\Gamma(\pi\to l\nu_l)=G_{\mathrm F}^2f_\pi^2m_\pi m_l^2(1-m_l^2/m_\pi^2)^2/(8\pi)$ | Pion decay rate, $f_\pi=130.2$ MeV |
 

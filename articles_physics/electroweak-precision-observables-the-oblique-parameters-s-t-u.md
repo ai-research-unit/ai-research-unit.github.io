@@ -350,7 +350,7 @@ The framework supplies the transversality of the self-energy through article 7's
 ## Further Reading
 
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The tree-level masses and $\rho=1$ that the subtraction of this article refers to.
-- [The Weinberg Angle at the Pati–Salam Scale: $\tfrac38$ and the Three Neutral States](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The three angles and the scheme discipline that §*The Scheme, Stated Once* repeats.
+- [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The three angles and the scheme discipline that §*The Scheme, Stated Once* repeats.
 - [Gauge Fixing in the Electroweak Theory: $R_\xi$ Gauges, Ghosts and the Goldstone Equivalence Theorem](gauge-fixing-in-the-electroweak-theory-r-xi-gauges-ghosts-and-the-goldstone-equivalence-theorem.html). The projectors $P$ and $L$ and the Ward identity that force the self-energy to be transverse.
 - [Custodial Symmetry and the Rho Parameter: From Accidental to Gauged](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The group-theoretic content of the custodial relation, and the earlier use of $\alpha T\approx\rho-1$.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The parameter table and the scheme column that $S$, $T$ and $U$ are not in.

@@ -432,11 +432,11 @@ The framework supplies the null direction, and with it the light-cone decomposit
 
 ## Further Reading
 
-- [Asymptotic Freedom and the Running of the Strong Coupling](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_0$, $\alpha_s(Q^2)$ and the numbers the exponents here are built from.
+- [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_0$, $\alpha_s(Q^2)$ and the numbers the exponents here are built from.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). $C_F=\tfrac43$, the vertices the splitting functions are computed from.
 - [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). Why the partonic description is a description at a resolution, and what confinement does to it.
 - [The Proton in Biquaternionic Form](the-proton-in-biquaternionic-form.html). The spin-$\tfrac12$ carrier, and what the algebra does and does not say about compositeness.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The null direction and the exact unipotent null rotations that the light-cone construction uses.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The reason the constituents are not objects of the algebra.
-- [The Weinberg Angle at the Pati–Salam Scale: $\tfrac38$ and the Three Neutral States](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The $Z$ exchange that corrects the photon-only cross section, and $F_3$'s parity-odd partner.
+- [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The $Z$ exchange that corrects the photon-only cross section, and $F_3$'s parity-odd partner.
 - [Lattice Gauge Theory and the Biquaternion Path Integral](lattice-gauge-theory-and-the-biquaternion-path-integral.html). The method that computes what the densities can only be fitted to.

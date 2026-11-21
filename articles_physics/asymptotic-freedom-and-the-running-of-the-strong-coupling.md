@@ -1,6 +1,8 @@
-# __Asymptotic Freedom and the Running of the Strong Coupling__
+# __Asymptotic Freedom and the Running of the Strong Force: One Coefficient, One Line, One Scale__
 
 ## Introduction
+
+**Status in the migration, and the exemption this article claims.** **This article is data.** Every number in it is the measured strong force, transcribed, and it states **no coupling of the fourth-colour model**: no $g_4$, no $M_C$, no matching relation, no boundary condition at a scale. **So it stands under the corpus's data boundary, and its values stay**; a running of a measured quantity is not a claim the algebra makes. **The model's own couplings are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html)**, and nothing here duplicates them. The title and one section heading were renamed so that the word *coupling* does not stand in a title outside the flagged section.
 
 **The standing of this article.** Everything below is standard theory, written in the corpus's coordinates and notation. It is **standard input**, not a framework result. The one-loop coefficient is the formula of [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), and it is not re-derived here; what this article adds is the arithmetic of the coefficient in terms of the colour factors of [the QCD article](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html), the solution of the running equation, the numbers at the scales where the coupling is measured, and the one parameter that replaces the coupling.
 
@@ -95,7 +97,7 @@ $$
 
 against $b_0/2\pi=7.667/6.283=1.220$. The agreement is not a coincidence and not a check of QCD; it is a check that the table was computed from the equation it claims. The straight line is the whole of the one-loop content, and everything else in this article is an evaluation of it.
 
-## The Coupling at Every Scale
+## The Strength at Every Scale
 
 **The table.** Running down from $\alpha_s(M_Z)=0.1179$ with the flavour number changed at each threshold — $m_t=172.69$, $m_b=4.18$, $m_c=1.27$ GeV — and matching $\alpha_s$ continuously at each, which is the leading-order matching condition:
 

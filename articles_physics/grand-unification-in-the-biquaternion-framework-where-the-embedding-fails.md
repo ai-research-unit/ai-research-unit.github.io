@@ -8,7 +8,7 @@ $$
 G_{\mathrm{SM}}=SU(3)_c\times SU(2)_L\times \mathrm{U}(1)_Y
 $$
 
-into a single simple group $G_{\mathrm{GUT}}$, so that the three independent couplings become one at a high scale and the electric charge is quantised by the group's structure. The standard candidates are Georgi–Glashow $SU(5)$, Pati–Salam $SU(4)\times SU(2)_L\times SU(2)_R$, $SO(10)$ and $E_6$, with characteristic ranks and dimensions:
+into a single simple group $G_{\mathrm{GUT}}$, so that the three independent couplings become one at a high scale and the electric charge is quantised by the group's structure. The standard candidates are Georgi–Glashow $SU(5)$, the fourth-colour group $SU(4)\times SU(2)_L\times SU(2)_R$, $SO(10)$ and $E_6$, with characteristic ranks and dimensions:
 
 |  | $SU(3)\times SU(2)\times \mathrm{U}(1)$ | $SU(5)$ | $SO(10)$ | $E_6$ |
 |---|---|---|---|---|
@@ -27,7 +27,7 @@ $$
 
 This article draws the consequence for unification. The conclusion is a sharp structural statement: **the framework unifies the electroweak and abelian factors, because those are exactly the $\mathrm{U}(2)$ that the algebra carries, and it cannot unify them with colour, because $SU(3)_c$ is not inside the algebra and no grand-unified group containing both has rank at most two.** Grand unification in the strict sense is outside the algebra's reach. It is reachable only by enlarging the carrier, and every enlargement pays in canonicity and in unwanted structure. As in the companion ceiling article, this is a result about the framework and not a failure of effort.
 
-**The verdict survives the change of criterion, and it survives for a better reason.** Under the old test — *the group must sit inside the algebra* — this article's conclusion was right for the wrong count, because that test rejects $G_{PS}$ as well: $L_{\vec e_a}$ is an endomorphism, not an element. Under the frame's test — *the generators live in $\operatorname{End}_{\mathbb C}(\mathbb B)$, and the group acts on a module the algebra supplies* — $G_{PS}$ passes and the unified groups still fail, **and the failure is on the module**: the algebra supplies one four-dimensional complex carrier, $\mathrm{SU}(5)$ needs a five and $\mathrm{SO}(10)$ a sixteen, and neither exists. **A refusal on module grounds is stable under the new test; a refusal on containment grounds is not.** That is why the conclusion below is kept unchanged while its derivation is re-read, and it is the one place in the family where the change of criterion leaves the arithmetic of the verdict intact.
+**The verdict survives the change of criterion, and it survives for a better reason.** Under the old test — *the group must sit inside the algebra* — this article's conclusion was right for the wrong count, because that test rejects $G_{4LR}$ as well: $L_{\vec e_a}$ is an endomorphism, not an element. Under the frame's test — *the generators live in $\operatorname{End}_{\mathbb C}(\mathbb B)$, and the group acts on a module the algebra supplies* — $G_{4LR}$ passes and the unified groups still fail, **and the failure is on the module**: the algebra supplies one four-dimensional complex carrier, $\mathrm{SU}(5)$ needs a five and $\mathrm{SO}(10)$ a sixteen, and neither exists. **A refusal on module grounds is stable under the new test; a refusal on containment grounds is not.** That is why the conclusion below is kept unchanged while its derivation is re-read, and it is the one place in the family where the change of criterion leaves the arithmetic of the verdict intact.
 
 The article first sets the threshold that any unified group must clear, then locates the framework's reach below it, then shows what the enlargement to $M_n(\mathbb B)$ would cost, and finally states what the framework's unification actually is: electroweak, with the strong sector present only through its gauge-invariant composites.
 
@@ -165,7 +165,7 @@ The hypercharge of the $SU(5)$ embedding is one of the generators of the group, 
 
 Now place a generation in the enlarged carrier $\mathbb C^{2n}$ of $M_n(\mathbb B)$. The representation must be a direct sum of modules of $SU(5)$ plus singlets, and its total complex dimension must be even because $2n$ is even. The generation has dimension $15$, which is odd, so at least one singlet must be added, giving the $\bar{\mathbf 5}\oplus\mathbf{10}\oplus\mathbf 1$ of dimension $16$; the smallest even carrier into which a generation fits is therefore $\mathbb C^{16}$, which is $2n=16$, i.e. $n=8$ and the carrier $M_8(\mathbb B)\cong M_{16}(\mathbb C)$ with intrinsic group $\mathrm{U}(16)$. The $\mathbf{16}$ of $SO(10)$ fits the same way, and the $E_6$ $\mathbf{27}$ needs $\mathbb C^{28}$ and $n=14$. The even-dimension property of $\mathbb B$-modules therefore doubles the minimal carrier for the odd-dimensional unified representations and adds a spurious singlet: the framework cannot house a generation economically even after enlargement.
 
-**Alternative unifications and the rank ladder.** The non-simple alternatives do no better. The Pati–Salam group
+**Alternative unifications and the rank ladder.** The non-simple alternatives do no better. The fourth-colour group
 
 $$
 SU(4)\times SU(2)_L\times SU(2)_R
@@ -182,7 +182,7 @@ has rank $2+1+1+1=5$ and dimension $8+3+3+1=15$. Both are above the framework's 
 $$
 \boxed{\;\underbrace{2}_{\mathrm{U}(2),\ \text{framework}}<
 \underbrace{4}_{G_{\mathrm{SM}},\ SU(5)}<
-\underbrace{5}_{SO(10),\ \text{Pati–Salam},\ \text{left–right}}<
+\underbrace{5}_{SO(10),\ \text{four-colour},\ \text{left–right}}<
 \underbrace{6}_{E_6}<\underbrace{7}_{E_7}<\underbrace{8}_{E_8}<\underbrace{16}_{E_8\times E_8}\;},
 $$
 
@@ -210,7 +210,7 @@ The general structural statement is the following. **The biquaternion algebra un
 
 The failure this article records is real, and it is also **a failure of one reading of the corpus's $\mathfrak{su}(4)$** — so it is stated here in both readings, and the corpus says which of the two it now adopts.
 
-**Reading one, and it is the article's own: the identification is not available.** The algebra's intrinsic compact gauge structure is $\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1)$, of rank two and dimension four. The colour group has rank two and dimension eight. **Neither the dimension nor the carrier matches**, and no amount of relabelling turns four into eight. On this reading the corpus's fifteen-dimensional $\mathfrak{su}(4)$, built from the algebra's own carrier, and Pati–Salam's fifteen-dimensional $\mathrm{SU}(4)$, built from a quartet of colours, share a symbol and a dimension and nothing else. **That reading is correct as an algebra statement, and nothing below overturns it.**
+**Reading one, and it is the article's own: the identification is not available.** The algebra's intrinsic compact gauge structure is $\mathrm{U}(2)=\mathrm{SU}(2)\oplus\mathrm{U}(1)$, of rank two and dimension four. The colour group has rank two and dimension eight. **Neither the dimension nor the carrier matches**, and no amount of relabelling turns four into eight. On this reading the corpus's fifteen-dimensional $\mathfrak{su}(4)$, built from the algebra's own carrier, and the literature's fifteen-dimensional $\mathrm{SU}(4)$, built from a quartet of colours, share a symbol and a dimension and nothing else. **That reading is correct as an algebra statement, and nothing below overturns it.**
 
 **Reading two: the identification is available once the fourth colour is declared to be the unit line.** The corpus's $\mathfrak{su}(4)$ is the algebra of $M_4(\mathbb C)$ acting on $\mathbb C^4$. Its stabiliser of the first basis vector is $\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathbb R\,iD$, so $\mathfrak{su}(3)$ already sits inside it as $\mathrm{Stab}_{\mathfrak{su}(4)}(e_t)$, and the fifteen split as $15=8+1+6$. **If $e_t$ is declared to be a fourth colour rather than the temporal unit**, then the other three basis vectors are the three colours, $N_c=\dim B_V=4-1=3$, and the six in $\mathfrak m$ are leptoquarks. **What this reading adds is one declaration and no algebra**: the group, the split and the trace are already computed, and the trace is $\operatorname{tr}_{\mathbf4}(B-L)=3\cdot	frac13-1=0$, which is not a property of a group but of the eigenvalues assigned to the quartet.
 
@@ -266,7 +266,6 @@ A biquaternionic grand unification would require enlarging the carrier to $M_n(\
 
 - Howard Georgi and Sheldon L. Glashow, "Unity of all elementary-particle forces", *Physical Review Letters* 32 (1974) 438–441, for the $SU(5)$ grand-unified theory and the fermion representations.
 - Harald Fritzsch and Peter Minkowski, "Unified interactions of leptons and hadrons", *Annals of Physics* 93 (1975) 193–266, for the $SO(10)$ unification and the $\mathbf{16}$ spinor.
-- Jogesh C. Pati and Abdus Salam, "Lepton number as the fourth colour", *Physical Review D* 10 (1974) 275–289, for the $SU(4)\times SU(2)\times SU(2)$ unification.
 - F. Gürsey, Pierre Ramond and P. Sikivie, "A universal gauge theory model based on $E_6$", *Physics Letters B* 60 (1976) 177–180, for the $E_6$ unification.
 - Howard Georgi, *Lie Algebras in Particle Physics* (Westview, 2nd ed. 1999), for the rank and dimension counting of the unified groups and their representations.
 - R. Slansky, "Group theory for unified model building", *Physics Reports* 79 (1981) 1–128, for the branching rules and representation content of the unified models.

@@ -31,7 +31,7 @@ Spacetime indices are written low and every contraction is an explicit sum, in t
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the derivation of the gauge structure from the central phase.
 - Companion article *The Photon in Biquaternionic Form*, for the massless neutral vector field and the self-dual split.
 
-**Status in the migration.** The $W_R$ joins the title because the pair is gauged. **The content of this article is unchanged** — the $W$ and $Z$ are the same objects with the same masses and the same couplings — and the addition is a third vector boson at the Pati–Salam scale, degenerate with the leptoquarks through $M_X=\sqrt2\,M_{W_R}$ and heavier than it by $\sqrt{5/2}$ at tree level. The tier is T2.
+**Status in the migration.** The $W_R$ joins the title because the pair is gauged in the Fourth-Colour Left–Right Model. **The content of this article is unchanged** — the $W$ and $Z$ are the same objects with the same masses and the same couplings, all of them symbolic — and the addition is a third vector boson at the first threshold. **Its mass ratios involve $g_4$ and $g_R$ and are not stated here**; they are in the flagged coupling article. The tier is T2.
 
 ## The Standard Electroweak Vector Bosons
 

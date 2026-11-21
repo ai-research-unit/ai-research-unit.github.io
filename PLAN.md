@@ -63,6 +63,94 @@ When there is an issue, explain it clearly.
 
 Avoid verbiage, jargon, over-engineering, complacency.
 
+################################
+### RULE ON GAUGE COUPLINGS (BINDING)
+################################
+
+One coupling, one place. Every gauge-coupling statement of the particle category lives in
+`articles_physics/the-one-coupling-that-returns-the-standard-model.md`, which sits first in the
+flagged section *The Standard Model as the Low-Energy Phase: The One Coupling That Returns It*.
+
+A coupling statement is a **scale-bearing** statement: it cannot be written without naming a scale.
+The five forms are a value, a boundary condition at a scale, a running or a one-loop slope, a matching
+relation at a threshold, and a ratio called exact because two couplings are equal. Use the name
+**scale-bearing coupling** for the class, and the test "can the sentence drop the scale?" as the
+filter. Three categories follow: structural couplings (symbols, scale-free, stay everywhere);
+scale-bearing couplings (flagged article only); measured couplings (external data, may stay where
+used, marked as data).
+
+Yukawa couplings and the scalar quartic obey the same rule. The one-bidoublet defect survives as a
+counting statement (one matrix for two sectors, so proportional spectra); its values and its running
+are in the flagged article, section 6.
+
+DONE: the frame article is now "Four Colours, 21 Generators, One Declaration"; the menu entry, five
+backlinks, the internal note and the Landau section heading ("The Near Miss at the Planck Scale") were
+renamed with it.
+
+DONE: the running article is now "Asymptotic Freedom and the Running of the Strong Force: One
+Coefficient, One Line, One Scale", with section "The Strength at Every Scale" and a status block
+declaring it a data article: it states no coupling of the model and its values are the measured
+strong force. Twelve references renamed with it.
+
+DONE: the six internal notes quoting the one-bidoublet equality carry a binding ledger banner: the
+values in them are the literature's, the corpus's single coupling statement is the flagged article.
+The internal coupling-sector note is retired to "A Retired Working Record", kept for its
+recomputation history, and its own mass-relation sentence is now the counting form.
+
+DONE: the sixteen menu comments that carried model coupling claims are rewritten. The word survives
+in twenty-five comments where it names a structure (self-coupling, strong coupling as a regime,
+anomalous coupling, Yukawa normalisations), which is not a scale-bearing value.
+
+REMAINING, for a later session: the Standard Model data articles (deep inelastic scattering, jets,
+R ratio, Landau pole and triviality, QCD rules, hadron structure, the nineteen parameters) still print
+measured coupling values. They are data, not claims, and cutting them would gut the articles.
+"The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism" keeps the word in its title
+because minimal coupling is a covariant derivative and carries no scale.
+
+DONE: the boundary is now a page, not prose. `articles_physics/the-data-boundary-which-articles-may-print-a-measured-strength.md`
+is the third entry of the flagged section: three categories from one test, the claim register (2), the
+data register (16), the structural count (107), five tests for a new article, four abuses the boundary
+forbids. It carries no strength value of its own. Site baseline is now 3140 urls.
+
+PATI–SALAM PURGE, DONE (visible corpus): the name is gone from `articles_physics` and `articles_maths`.
+The model is no longer presented. What replaced it:
+- the group symbol: `G_{PS}` -> `G_{4LR}`, 55 occurrences in 6 articles, and every prose mention of
+  "the Pati–Salam scale" -> "the colour-breaking scale".
+- the scale symbol: `M_{PS}` -> `M_{C}` where it meant the SU(4) breaking scale (3 articles), and
+  `M_{PS}` -> `M_{U}` in the one-coupling article, where the equal-coupling threshold is a distinct
+  scale ($M_U > M_C > M_R$ in the three-scale variant).
+- the frame article: heading now "…and Where the Equal-Coupling Case Departs From It", with a
+  opening paragraph that defines the departure as a scale-bearing coupling, states that it fails,
+  and sends the equation and the number to the flagged article. The 1974 attribution sentence, the
+  bibliography entry and the model's name are gone.
+- the one-coupling article: "Pati–Salam is the case g_4=g_L=g_R" -> "The equal-coupling case is …".
+- the breaking chain: the coupling boundary-condition sentence removed and referred to the flagged
+  article.
+- stale link title in why-su-2 fixed (it still said "…One Coupling").
+- algebro: a reference to a menu section that no longer exists ("Electromagnetism in Pati–Salam
+  Model") replaced.
+KEPT ON PURPOSE: the citation "A. K. Pati and S. L. Braunstein, Impossibility of deleting an unknown
+quantum state" in no-cloning — a different physicist, quantum information, nothing to do with the
+model. PROVENANCE: the Pati & Salam 1974 citation survives in two internal notes
+(`the-fourth-colour-model`, `Indistinguishable-theories-standard-model`) and in the coupling-sector
+note, which is where the coupling is now discussed. OUT OF SCOPE: `articles_external/Pati-Salam/`
+(source papers, not in any menu).
+
+ELECTROWEAK CONFIRMATION: the sector needs no scale-bearing coupling to represent electromagnetism and
+the weak interaction. Seven articles, five with no measured value at all. Structural and scale-free:
+the group and the anomaly conditions; Q=T_3+Y/2; the covariant derivative; e=g sin(theta_W) as a
+DEFINITION of the angle; m_W/m_Z=cos(theta_W); rho=1 from custodial symmetry; the photon as the null
+vector of the neutral mass matrix. Scale-bearing only where data is confronted: v, G_F, the pole masses,
+the measured angle. Two of the seven print those, and both do so to compare two routes.
+
+Everything else in the category carries couplings as symbols only, with no value attached, and
+links to the flagged article instead of repeating the number. The one exception is the Weinberg
+angle article, which sits in the same flagged section.
+
+Never reintroduce a coupling number into an article outside that section, and never split a
+coupling claim across two articles. If a new number is needed, it goes into the flagged article,
+with its inputs and its status.
+
 
 
 ################################

@@ -41,6 +41,20 @@ LEGACY_COPIES = [
      "articles_maths/from-the-rotor-to-the-spin-of-the-rotor.html"),
     ("articles_maths/from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html",
      "articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html"),
+    # The fourth-colour left-right model: the files are renamed, the old URLs
+    # stay alive. The frame article first; the internal notes after it.
+    ("articles_physics/the-fourth-colour-left-right-model.html",
+     "articles_physics/the-pati-salam-model-in-the-biquaternion-framework.html"),
+    ("articles_internal/internal-note-the-fourth-colour-left-right-model.html",
+     "articles_internal/the-fourth-colour-left-right-model.html"),
+    ("articles_internal/the-fourth-colour-model.html",
+     "articles_internal/the-pati-salam-model.html"),
+    ("articles_internal/fourth-colour-versus-left-right.html",
+     "articles_internal/pati-salam-versus-left-right.html"),
+    ("articles_internal/the-anomaly-ledger-in-fourth-colour-form.html",
+     "articles_internal/the-anomaly-ledger-in-pati-salam-form.html"),
+    ("articles_internal/the-coupling-sector-of-the-fourth-colour-model.html",
+     "articles_internal/internal-note-on-the-experimental-status-of-pati-salam.html"),
 ]
 
 # One date for the whole site: the moment the last build started. build_diff.py

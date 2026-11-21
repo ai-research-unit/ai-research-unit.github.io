@@ -350,7 +350,7 @@ The framework supplies the null direction and the form of the interference, and 
 ## Further Reading
 
 - [The Parton Model and Deep Inelastic Scattering](the-parton-model-and-deep-inelastic-scattering.html). The splitting functions, their moments, and the convention that fixes their first moment.
-- [Asymptotic Freedom and the Running of the Strong Coupling](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $\alpha_s$ at every scale, and the discipline that every coupling carries a scale.
+- [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $\alpha_s$ at every scale, and the discipline that every coupling carries a scale.
 - [The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). $C_F$, $C_A$ and the vertices the real-emission diagrams are built from.
 - [Confinement and the Loss of Partonic Information in Biquaternionic Form](confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html). Why the parton description is a description at a resolution, and what the asymptotic algebra can and cannot see.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The null direction and the interference between the two helicity halves that the angular ordering resembles.

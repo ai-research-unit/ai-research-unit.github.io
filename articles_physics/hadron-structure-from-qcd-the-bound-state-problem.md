@@ -349,7 +349,7 @@ The framework represents the proton, the condensate, the anomaly and the winding
 
 ## Further Reading
 
-- [Asymptotic Freedom and the Running of the Strong Coupling](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_0$, dimensional transmutation, the conformal anomaly's first appearance, and where perturbation theory dies.
+- [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_0$, dimensional transmutation, the conformal anomaly's first appearance, and where perturbation theory dies.
 - [The Conformal Anomaly in Biquaternionic Form](the-conformal-anomaly-in-biquaternionic-form.html). The central scalar coefficient and its determinant reading.
 - [The Chiral Condensate and Dynamical Symmetry Breaking in Biquaternionic Form](the-chiral-condensate-and-dynamical-symmetry-breaking-in-biquaternionic-form.html). The order parameter, the gap equation, the critical coupling.
 - [The Chiral Theory and the Lagrangian: The Pion and the Decay Constant](the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html). Gell-Mann–Oakes–Renner and the numerical check of the condensate.

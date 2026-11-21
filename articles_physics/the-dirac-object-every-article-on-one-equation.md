@@ -77,7 +77,7 @@ The Dirac equation carries more structure than the other three objects and the c
 - [The Coupled Dirac Equation in the Non-Quantum Limit](the-coupled-dirac-equation-in-the-non-quantum-limit.html)
 - [The Lagrangian and the Coupled Dirac Equation in the Non-Quantum Limit](the-lagrangian-and-the-coupled-dirac-equation-in-the-non-quantum-limit.html)
 
-### Electromagnetism in Pati–Salam Model
+### Electromagnetism in the Fourth-Colour Left–Right Model
 
 - [The Parabolic Dirac Operator and the Fourier Reformulation of Maxwell's Equations](the-parabolic-dirac-operator-and-the-fourier-reformulation-of-maxwells-equations.html)
 

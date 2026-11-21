@@ -162,7 +162,7 @@ $$
 
 **What the bound is not.** It is not a bound on the Higgs mass in the real world. If the Higgs is composite, $\lambda$ is not a fundamental coupling and the argument does not apply. Triviality constrains a *fundamental* scalar, and whether the Higgs is fundamental is open.
 
-## The Near Miss of the Three Couplings
+## The Near Miss at the Planck Scale
 
 **The observation.** Run the three gauge couplings to the Planck scale with the one-loop coefficients above and they almost meet:
 
@@ -400,11 +400,11 @@ The framework supplies one structural result — the sign of $b_1$ — one regul
 ## Further Reading
 
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html). The exact flow equation, the regulator the algebra supplies, and the open question this article turns into a number.
-- [Asymptotic Freedom and the Running of the Strong Coupling](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_3=-7$ and the contrast with the abelian case.
+- [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). $b_3=-7$ and the contrast with the abelian case.
 - [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html). The other consequence of the scalar sector's couplings, and the same discipline about what a bound means.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Gauge Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html). The potential whose quartic is the subject of half this article.
 - [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). $g_{\mathrm Y}$, $\lambda$ and $m_H$ among the nineteen, and what kind of number each is.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3): Why the Biquaternion Algebra Reaches $SU(2)$ but Not $SU(3)$](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). Why neither a GUT nor a composite Higgs can be built here.
 - [The Path Integral in Biquaternionic Form](the-path-integral-in-biquaternionic-form.html). Why a bounce cannot be computed inside the algebra.
 - [The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form](the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html). The object whose quartic changes sign, in the framework's language.
-- [Anomalies and Anomaly Cancellation in Pati–Salam Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The conditions on the matter content that the $\beta$ coefficients inherit.
+- [Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The conditions on the matter content that the $\beta$ coefficients inherit.

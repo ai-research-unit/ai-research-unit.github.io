@@ -38,7 +38,7 @@ gives $\rho = 1$ for the doublet, $\rho > 1$ for a $T = 1$, $T_3 = 0$ triplet ad
 - Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the boundary that this article states — no doublet, no hypercharge, no chiral $SU(2)_L$.
 - Companion article *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for the vector-like obstruction and the electroweak quantum numbers.
 
-**Status in the migration.** Custodial symmetry is no longer accidental. In Pati–Salam form the global $\mathrm{SU}(2)$ the potential happens to possess is the **diagonal of a gauged pair**, $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ broken to its diagonal, so $\rho=1$ follows from a gauge symmetry and its breaking pattern rather than from a property of one scalar multiplet. **The measured value, the mass matrices and every coefficient below are unchanged; what changes is why the equality holds.** The tier is T3.
+**Status in the migration.** Custodial symmetry is no longer accidental. In the fourth-colour left–right form the global $\mathrm{SU}(2)$ the potential happens to possess is the **diagonal of a gauged pair**, $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ broken to its diagonal, so $\rho=1$ follows from a gauge symmetry and its breaking pattern rather than from a property of one scalar multiplet. **The measured value, the mass matrices and every coefficient below are unchanged; what changes is why the equality holds.** The tier is T3.
 
 ## The Custodial Symmetry of a Scalar Sector
 
