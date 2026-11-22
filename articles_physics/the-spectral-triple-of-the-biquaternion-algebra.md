@@ -365,6 +365,25 @@ The requirement that $D_F$ be odd under the chirality — that it anticommute wi
 
 **The scale.** The finite operator's entries have the dimensions of mass, and the spectral action's expansion builds the scalar potential out of them, so the framework's $m$ is the finite geometry's scale. In the Standard-Model triple this is the mechanism that ties the scalar sector to the finite geometry instead of postulating it, and it produces, at tree level, a relation between the Higgs mass and the gauge couplings at the unification scale. Whether the biquaternion factor produces a comparable relation is not computed here; what is established is only that $m$ is where a finite geometry's scale would sit.
 
+### A Pseudo-Riemannian Structure, and What It Would Cost
+
+**The object.** In the non-commutative-geometry literature a finite geometry may be equipped with a further structure $\beta$, an operator that fixes a *signature* on the finite Hilbert space — it says which directions are time-like and which space-like. It is not one of the axioms; it is an optional refinement, and it is very restrictive. The result reported there for Pati–Salam models is that on the full algebra $\mathbb H_L\oplus\mathbb H_R\oplus M_4(\mathbb C)$ no admissible $\beta$ exists unless the algebra is reduced, and the reduction removes the off-diagonal leptoquark directions together with the off-diagonal Yukawa block; on the reduced algebra exactly one $\beta$ survives, and it separates the lepton line from the three colour directions.
+
+**Why this candidate cannot adopt it.** It has no unitaries to quotient, as the consequences above show, and it fails the first-order condition, so $\beta$ cannot be formulated here as the literature formulates it. The result is therefore recorded as a statement about the class of models this framework sits next to, not as a constraint on the framework.
+
+**What can be stated, and needs none of that.** The carrier's compact group is $\mathrm{SU}(4)$, and $\mathfrak{su}(4)$ and $\mathfrak{su}(1,3)$ — the second preserving $\operatorname{diag}(1,-1,-1,-1)$ — are two real forms of $\mathfrak{sl}(4,\mathbb C)$ with the same dimension, $15$, and the same maximal compact subalgebra, $9$. The nine are the eight gluons and $B-L$; the remaining six are compact in $\mathfrak{su}(4)$ and non-compact in $\mathfrak{su}(1,3)$, where the non-compact part is $i$ times those six. So:
+
+$$
+\mathfrak{su}(4)=\underbrace{9}_{\text{compact in both}}\oplus\underbrace{6}_{\text{compact here only}},\qquad
+\mathfrak{su}(1,3)=9\oplus i\cdot 6 .
+$$
+
+**Any structure that fixes a signature on this carrier selects the second real form, and selecting it is exactly the statement that the six are not gauged.** In this language the leptoquark count is a compactness count: the leptoquarks are the directions that are compact in the compact real form and non-compact in the pseudo-unitary one.
+
+**And the choice is not free.** The six weak generators lie in $\mathfrak{su}(4)$ but not in $\mathfrak{su}(1,3)$, and no scalar multiple of one does, because each is half colour block and half leptoquark coset while the $i$-rotation that maps the coset into the pseudo-unitary form cannot map a mixture. A signature condition on this carrier would therefore remove the weak pair as well as the leptoquarks. That is why the models in which $\beta$ is imposed place the weak generators on a different index from the colour ones; on one $M_4(\mathbb C)$, with both actions on the same four coordinates, they overlap, and the overlap has a price.
+
+**A parity theorem, and the declaration it defends.** A second result from the same literature: in almost-commutative Yang–Mills–Higgs models parity cannot be broken spontaneously, because Poincaré duality forbids it. If that holds, a left–right asymmetric fermion spectrum cannot come from a vacuum expectation value — it can only be declared. That is the shape of this framework's own move, since the chiral assignment is declared and not derived, and it is worth recording that in that class of models the declaration is not a shortcut but the only option. The caveat is the one above: this candidate's triple is not in that class, so the statement is an analogy and not a theorem about it.
+
 ## What Is Established and What Is Interpretation
 
 **Established (framework and algebra).**

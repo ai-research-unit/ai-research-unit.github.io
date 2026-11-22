@@ -7899,8 +7899,14 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 
 #### The Operators on the Matrix Space
 
+<!-- one section, two layers: the operator theory of the four-dimensional matrix space itself, in two groups; then the operator block of the biquaternion algebra read in the $2\times2$ display, group for group as in ## Biquaternions, with the three spin carriers as sub-groups. The mirror keeps one article per biquaternion article; the endomorphism group carries the spine article by its proper title rather than a second link to the same file. -->
+
+##### The Endomorphism Algebra
+
 <a href="articles_maths/end-m2c-as-an-algebra-the-regular-representation.html">$\operatorname{End}(M_2(\mathbb{C}))$ as an Algebra: the Regular Representation</a>
 <!-- the endomorphism algebra of the four-dimensional matrix space as $M_4(\mathbb{C})$; the left and right multiplications and their commutation; the isomorphism $M_2\otimes M_2^{\mathrm{op}}\to M_4$ built from the sixteen products of matrix units; the double centraliser theorem at order two; the trace and determinant of $L_XR_Y$; and the two copies as mutual commutants meeting in the scalars. -->
+
+##### The Matrix Operators at $n=2$
 
 <a href="articles_maths/the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a>
 <!-- the left multiplication $L_X:Z\mapsto XZ$ as an injective representation of the algebra; its rank $2\operatorname{rank}X$, its kernel and its image as a space of matrices with columns in $\operatorname{im}X$; the spectrum of $X$ repeated twice; the transposed mirror of the right multiplications; the adjoints $L_{X^{*}}$ and the Hilbert–Schmidt norm $\sqrt2\|X\|$; the scalar intersection of the two copies; and the rank-one images as the minimal left ideals. -->
@@ -7916,15 +7922,6 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 
 <a href="articles_maths/the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-n-2.html">The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$</a>
 <!-- transposition as a conjugate-linear isometric involution of the matrix space; the involution $\theta(T)=\tau T\tau$ of the operator algebra with two eigenspaces of dimension sixteen each; the classification $Y=X^{\mathsf T}$ for symmetric and $Y=-X^{\mathsf T}$ for antisymmetric two-sided operators; the commutation of the involution with the adjoint; the commutator $[\tau,T]=-2T_-\tau$; and the antisymmetric part as a Lie ideal and the symmetric part as a subalgebra. -->
-
-#### The Operator Block Read in the $2\times2$ Display
-
-<!-- the biquaternion operator block written out a second time, in the $2\times2$ display of $M_2(\mathbb{C})$, one article per biquaternion article and in the same order, so that a reader can pass from one category to the other line by line. These are the in-depth matrix readings of the $M_2(\mathbb{C})$ statements: the algebra is $\mathbb{B}$, the display is injective and multiplicative, $N=\det$ and $Q_t=\tfrac12\operatorname{tr}$, so every statement below is the same statement and only the writing is new. Two articles are not repeated: the endomorphism algebra is *$\operatorname{End}(M_2(\mathbb{C}))$ as an Algebra: the Regular Representation* above, and the three display articles of the biquaternion category are not mirrored, the display being what this whole subsection already is. -->
-
-##### The Endomorphism Algebra
-
-<a href="articles_maths/end-m2c-as-an-algebra-the-regular-representation.html">The Endomorphisms of the Biquaternion Algebra in $M_2(\mathbb{C})$: the Same Article</a>
-<!-- read in the $2\times2$ display: the endomorphism algebra of the four-dimensional carrier as $M_4(\mathbb{C})$, with the left and right multiplications and their commutation, the trace form and its two real forms; this is the spine article *$\operatorname{End}(M_2(\mathbb{C}))$ as an Algebra: the Regular Representation* above, listed here so that the mirror stays one article per biquaternion article. -->
 
 ##### Operators of the Biquaternion Algebra
 
@@ -8057,7 +8054,6 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 
 <a href="articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>
 <!-- read in the $2\times2$ display: the two predicates taken together on the carrier and on the closure: on the vector part $N=B^{2}=\lvert\vec v\rvert^{2}$, so the two conditions coincide, the punctured triple lies in $\Sigma_{11}$, the origin in $\Sigma_{00}$ and the two mixed sectors are met by nothing, the carrier being the only space of the group on which both forms are positive definite; on the anti-Hermitian space $N=\lvert\vec v\rvert^{2}-\lambda^{2}$ and $B^{2}=\lvert\vec v\rvert^{2}$, so the sector is a function of the orbit invariants $(\lambda,\lvert\vec v\rvert)$ and the four sectors are the four regions cut in the orbit space by the lines $r=0$ and $r=\lvert\lambda\rvert$; the intersections with $\Sigma_{00}$ the origin, with $\Sigma_{10}$ the line $\mathbb{R}(ie_t)$ minus the origin, which is the scalar stratum again, with $\Sigma_{01}$ the null cone minus its apex, of real dimension three with two nappes, and with $\Sigma_{11}$ the open complement; the absence of any nonzero square-zero element of the closure, since a real vector of square-zero length is zero; and the comparison of the three proper closures, of which the anti-Hermitian space is the only one meeting all four sectors. -->
-
 ### Topology
 
 <a href="articles_maths/the-topology-of-m2c.html">The Topology of $M_2(\mathbb{C})$</a>
@@ -8414,17 +8410,36 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 
 #### The Operators on the Matrix Space
 
+<!-- the operator theory of the sixteen-dimensional matrix space in five groups: the algebra of endomorphisms; the one-sided operators with the images of the left multiplications; the two-sided operators with their Kronecker form, their coefficient matrices and their ranks; the geometry of the operator space, the length, the adjoints, the two halves and the numerical range; and the Peirce layer with its finite group and its orbits. -->
+
+##### The Endomorphism Algebra
+
 <a href="articles_maths/end-m4c-as-an-algebra-the-regular-representation.html">$\operatorname{End}(M_4(\mathbb{C}))$ as an Algebra: the Regular Representation</a>
 <!-- the endomorphism algebra of the sixteen-dimensional matrix space, of dimension $256$, isomorphic to $M_{16}(\mathbb{C})$; the left and the right multiplications as a copy of $M_4$ and a copy of the opposite algebra, commuting, meeting in the scalars and spanning $31$ dimensions, their product the whole algebra; the map $A\otimes B^{\mathrm{op}}\mapsto(X\mapsto AXB)$ as an isomorphism $M_4\otimes M_4^{\mathrm{op}}\to\operatorname{End}(M_4)$, with the two factors mutual centralisers; the traces $\operatorname{tr}L_A=4\operatorname{tr}A$ and the trace of $T_{A,B}$ as the product of the two traces, with $\det L_A=(\det A)^{4}$; and the axis-free frame, where the two families are signed permutations of the coefficient basis. -->
 
+##### The One-Sided Operators
+
 <a href="articles_maths/the-one-sided-operators-at-n-4.html">The One-Sided Operators at $n=4$</a>
 <!-- the left and the right multiplications of the biquaternion algebra as two four-dimensional families of operators on the coefficient space, commuting, meeting in the scalars and spanning seven dimensions; the two multiplication laws in the two orders; the axis-free frame, where each family consists of signed permutations of determinant one and both lie in $SO(4)$, the four units giving a copy of $Q_8$ and the two copies generating the group of order $32$; the stitch $D(L^{\mathrm{axf}})^{\mathsf T}D$ as the statement that the transpose is the quaternion conjugation; and the two families as the two Kronecker factors of the ambient matrix algebra, subalgebras meeting in the scalars. -->
+
+<a href="articles_maths/the-left-ideals-and-the-image-of-a-left-multiplication-at-n-4.html">The Left Ideals and the Image of a Left Multiplication at $n=4$</a>
+<!-- the image $M_4(\mathbb{C})A$ of a left multiplication as the left ideal generated by $A$, of complex dimension $4\operatorname{rank}A$, against the kernel of dimension $16-4\operatorname{rank}A$; the rank law $\operatorname{rank}L_A=4\operatorname{rank}A$; the assignment $A\mapsto\operatorname{im}L_A$ as a bijection between the left ideals of $M_4(\mathbb{C})$ and the subspaces of $\mathbb{C}^4$, the minimal ideals $M_4P$ of rank-one $P$ corresponding to the lines; the right version $AM_4$ and the two-sided image $AM_4B$; and the boundary against *The Modules and the Minimal Left Ideals of $M_4(\mathbb{C})$*, which classifies the minimal ones, and against *The One-Sided Operators at $n=4$*, which treats the operators and not their images. -->
+
+##### The Two-Sided Operators, the Kronecker Form and the Ranks
 
 <a href="articles_maths/the-two-sided-operators-and-the-segre-cone-at-n-4.html">The Two-Sided Operators and the Segre Cone at $n=4$</a>
 <!-- the operators $T_{a,b}(X)=aXb$ forming a sixteen-dimensional algebra with $T_{a,b}T_{c,d}=T_{ac,db}$; the sixteen operators on the units as signed permutations of determinant one forming a basis, orthogonal for the Hilbert–Schmidt pairing with squared norm four and an exact coordinate formula; the coefficient matrix of $T_{a,b}$ as the outer product of the two coefficient vectors, hence of rank one; the set of single products therefore as the Segre cone over $\mathbb{P}^{3}\times\mathbb{P}^{3}$ of complex dimension seven, with rank at most one as criterion; and over the reals the same cone, with its two boundaries as the two one-sided degenerations. -->
 
 <a href="articles_maths/the-sylvester-operator-and-the-kronecker-sum-of-m4c.html">The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$</a>
 <!-- the operator $\mathcal \mathcal{T}_{A,B}(X)=AX-XB$ as the difference $L_A-R_B$ of a left and a right multiplication; the matrix $I_4\otimes A-B^{\mathsf T}\otimes I_4$ in the column-stacking basis and $A\otimes I_4-I_4\otimes B^{\mathsf T}$ in the row form; the rank-one eigenvectors $uv^{\mathsf T}$ with eigenvalue $\lambda-\mu$; the spectrum $\operatorname{spec}\mathcal \mathcal{T}_{A,B}=\{\lambda_i(A)-\lambda_j(B)\}$ with algebraic multiplicities, by the triangular form of $A\otimes I-I\otimes B^{\mathsf T}$; the trace $4(\operatorname{tr}A-\operatorname{tr}B)$ and the determinant $\prod_{i,j}(\lambda_i-\lambda_j)$; the invertibility criterion $\operatorname{spec}A\cap\operatorname{spec}B=\varnothing$ and the resultant form; the kernel as the space of intertwiners $AX=XB$, the commutant for $A=B$, the dimension of the commutant of $\operatorname{diag}(1,1,2,3)$ as $6$, of a cyclic matrix as $4$ and of $J_4$ as $4$; the image of $\operatorname{ad}_A$ as the orthogonal complement of the commutant for the trace form; the Kronecker sum $A\oplus B$ and the criteria for $AX+XB=C$ and $AXB-X=C$; the contour integral $\frac{1}{2\pi i}\oint(zI-A)^{-1}C(zI-B)^{-1}dz$ for the Sylvester solution; the Lyapunov equation $AX+XA^{*}=-Q$ with the integral $\int_0^{\infty}e^{tA}Qe^{tA^{*}}dt$; the adjoint representation as the case $A=B$ with the root values on the matrix units; and the difference family $\{L_A-R_B\}$ of dimension $31$, against the cone of the products $L_AR_B$ that spans the whole of $\operatorname{End}(M_4)$. -->
+
+<a href="articles_maths/the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html">The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</a>
+<!-- one matrix computed in full: the sixteen traces, the matrix products for $T_{xt}$ and $T_{tx}$, the coefficient matrix, the rank by minors, the length $2$ against the ordinary rank $4$, the reconstruction and the factorisation $L_{e_t-e_x}R_{e_t}-L_{e_z}R_{e_y}$; the index-order trap $c_{xt}\neq c_{tx}$ and the row-split trap. -->
+
+<a href="articles_maths/the-ten-ranks-of-the-two-sided-operators-at-n-4.html">The Ten Ranks of the Two-Sided Operators at $n=4$</a>
+<!-- the rank of $T_{A,B}$ as a linear operator on the sixteen-dimensional space, equal to $\operatorname{rank}A\cdot\operatorname{rank}B$ through the Kronecker form, hence exactly the ten values $0,1,2,3,4,6,8,9,12,16$ and never $5,7,10,11,13,14,15$; the seven absences, each a product of two integers between zero and four; the comparison with the biquaternion two-sided operators, where both factors have rank at most two and the set is $\{0,1,2,4\}$; the stratification by the ten ranks, the rank-one stratum being the Segre cone; and the boundary against *The Length and the Two Ranks at $n=4$*, whose two ranks are the length and the matrix rank, both bounded by four, while the rank here is that of the operator on the operator space and reaches sixteen. -->
+
+##### The Geometry of the Operator Space
 
 <a href="articles_maths/the-length-and-the-two-ranks-at-n-4.html">The Length and the Two Ranks at $n=4$</a>
 <!-- the length of an operator as the rank of its coefficient matrix in the basis of two-sided products, between zero and four, four products always sufficing and four the generic value; the operators of length at most $k$ forming the determinantal variety of coefficient matrices of rank at most $k$; the matrix rank of a single product as the product of the ranks of its factors, so in $\{0,1,2,4\}$ and never three; the rank of a sum as unrestricted, with the explicit sum $-T_{tt}-T_{tx}-T_{xt}-T_{yy}$ of rank three and length three; and the independence of the two invariants, with $E_{11}$, the identity and $\operatorname{diag}(1,2,3,4)$ as the witnesses. -->
@@ -8435,22 +8450,173 @@ Rows: I.1 the ambient algebra, II.1 the two regular families, IV.1 the two-sided
 <a href="articles_maths/the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-n-4.html">The Symmetric and Antisymmetric Parts of the Operator Space at $n=4$</a>
 <!-- the operator space of complex dimension $256$ carrying two commuting involutions, the plain transpose and the Hilbert–Schmidt adjoint; the four simultaneous eigenspaces of real dimensions $136$, $136$, $120$ and $120$, summing to the real dimension $512$; the two complex-linear halves of dimensions $136$ and $120$ as the symmetric and antisymmetric parts of the $16\times16$ matrix space; the model operator $X\mapsto AXB$ with plain adjoint $X\mapsto BXA$ and Hilbert–Schmidt adjoint $X\mapsto A^{\ast}XB^{\ast}$; the commutator as a difference of two model operators, always anti-self-adjoint for the trace pairing and anti-self-adjoint for the Hilbert–Schmidt one exactly when $A$ is anti-Hermitian; and the two scales kept apart, ten and six inside sixteen against $136$ and $120$ inside $256$. -->
 
+<a href="articles_maths/the-numerical-range-of-the-two-sided-operators-of-m4c.html">The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$</a>
+<!-- the two-sided operator $T_{a,b}(X)=aXb$ on the sixteen-dimensional Hilbert space $M_4(\mathbb{C})$ with the Hilbert–Schmidt form, and its field of values $W(T_{a,b})=\{\operatorname{tr}(X^*aXb):\operatorname{tr}(X^*X)=1\}$; the model $T_{a,b}=a\otimes b^{\mathsf T}$ and the invariants: spectrum $\lambda_i(a)\lambda_j(b)$, trace $\operatorname{tr}a\operatorname{tr}b$, determinant $(\det a\det b)^4$, rank $\operatorname{rank}a\operatorname{rank}b$, singular values $s_i(a)s_j(b)$ and the multiplicative Schatten norms; the product bound $\operatorname{conv}(W(a)W(b))\subseteq W(T_{a,b})$ with equality when one factor is normal; the failure of the product rule for the matrix unit $E_{12}$, where the field of values is the disk of radius $1/2$ and the product hull the disk of radius $1/4$; the ellipse of the rank-one two-sided operator; the Hermitian, projection and unitary cases; the radius bounds $w(a)w(b)\le w(T_{a,b})\le\|a\|\|b\|\le4w(a)w(b)$; the nilpotent partial isometry lemma and the rank blindness of the field of values; the three radii of $T_{E_{12},E_{12}}$ against $J_2$ and $J_4$. -->
+
+##### The Peirce Layer, the Finite Group and the Orbits
+
 <a href="articles_maths/the-operators-of-the-peirce-decomposition-of-m4c.html">The Operators of the Peirce Decomposition of $M_4(\mathbb{C})$</a>
 <!-- $L_a$, $R_a$, $T_{a,b}$ and $\operatorname{ad}_a$ and their matrices; the action on the Peirce corners, $T_{a,b}$ carrying $A_{rs}$ to $A_{il}$; the derivations $\operatorname{Der}(M_4)=\mathfrak{sl}_4$ of dimension $15$; the inner automorphisms $PGL_4$ and the outer ones; the two-sided operator as a map of corners; and the notation warning that the $L_a,R_a,T_{a,b}$ of this article act on the sixteen-dimensional $M_4(\mathbb{C})$, unlike the $4\times4$ operators on $\mathbb{B}$ of the companion article. -->
-
-<a href="articles_maths/the-coefficient-matrix-of-a-two-sided-operator-a-worked-computation.html">The Coefficient Matrix of a Two-Sided Operator: A Worked Computation</a>
-<!-- one matrix computed in full: the sixteen traces, the matrix products for $T_{xt}$ and $T_{tx}$, the coefficient matrix, the rank by minors, the length $2$ against the ordinary rank $4$, the reconstruction and the factorisation $L_{e_t-e_x}R_{e_t}-L_{e_z}R_{e_y}$; the index-order trap $c_{xt}\neq c_{tx}$ and the row-split trap. -->
-
-<a href="articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>
-<!-- the orbits of $PGL_4$ as the Jordan types; the stabiliser of a cyclic element the torus $(\mathbb{C}^{\times})^{3}$; the flag variety $GL_4/B$ of dimension $6$; the Grassmannians $\operatorname{Gr}(1,4)=\mathbb{P}^{3}$ and $\operatorname{Gr}(2,4)$ of dimension $4$; the orbit–stabiliser count $15=12+3$; the gauge as the fibre over the root. -->
 
 <a href="articles_maths/the-extraspecial-group-of-the-two-sided-matrices-of-m4c.html">The Extraspecial Group of the Two-Sided Matrices of $M_4(\mathbb{C})$</a>
 <!-- the thirty-two matrices $\pm T_{\mu\nu}$ as the group $G$ of the two-sided operators; the three left generators and the three right generators; the two quaternion subgroups $\{\pm L_\mu\}\cong Q_8$ and $\{\pm R_\mu\}\cong Q_8$, commuting elementwise and meeting in $\{\pm I\}$, and the theorem $G\cong Q_8\circ Q_8$ of order $32$; the centre $\{\pm I\}$, the exponent $4$, the nineteen involutions and the quotient $G/\{\pm I\}\cong(\mathbb{Z}/2)^4$; the extraspecial structure and the alternating commutator form; the abelian subgroup $\langle L_x,R_x\rangle\cong\mathbb{Z}/4\times\mathbb{Z}/2$ of order $8$ and the maximal abelian subgroups; the conjugacy classes and the seventeen irreducible representations, sixteen of degree one and one of degree four, the defining representation on $\mathbb{C}^4$; the distinction from the two-qubit Pauli group, which modulo $\pm I$ is elementary abelian of order $32$, while $G$ is nonabelian extraspecial with $G'=\{\pm I\}$. -->
 
-<a href="articles_maths/the-numerical-range-of-the-two-sided-operators-of-m4c.html">The Numerical Range of the Two-Sided Operators of $M_4(\mathbb{C})$</a>
-<!-- the two-sided operator $T_{a,b}(X)=aXb$ on the sixteen-dimensional Hilbert space $M_4(\mathbb{C})$ with the Hilbert–Schmidt form, and its field of values $W(T_{a,b})=\{\operatorname{tr}(X^*aXb):\operatorname{tr}(X^*X)=1\}$; the model $T_{a,b}=a\otimes b^{\mathsf T}$ and the invariants: spectrum $\lambda_i(a)\lambda_j(b)$, trace $\operatorname{tr}a\operatorname{tr}b$, determinant $(\det a\det b)^4$, rank $\operatorname{rank}a\operatorname{rank}b$, singular values $s_i(a)s_j(b)$ and the multiplicative Schatten norms; the product bound $\operatorname{conv}(W(a)W(b))\subseteq W(T_{a,b})$ with equality when one factor is normal; the failure of the product rule for the matrix unit $E_{12}$, where the field of values is the disk of radius $1/2$ and the product hull the disk of radius $1/4$; the ellipse of the rank-one two-sided operator; the Hermitian, projection and unitary cases; the radius bounds $w(a)w(b)\le w(T_{a,b})\le\|a\|\|b\|\le4w(a)w(b)$; the nilpotent partial isometry lemma and the rank blindness of the field of values; the three radii of $T_{E_{12},E_{12}}$ against $J_2$ and $J_4$. -->
+<a href="articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety-of-m4c.html">The Adjoint Action, the Orbits and the Flag Variety of $M_4(\mathbb{C})$</a>
+<!-- the orbits of $PGL_4$ as the Jordan types; the stabiliser of a cyclic element the torus $(\mathbb{C}^{\times})^{3}$; the flag variety $GL_4/B$ of dimension $6$; the Grassmannians $\operatorname{Gr}(1,4)=\mathbb{P}^{3}$ and $\operatorname{Gr}(2,4)$ of dimension $4$; the orbit–stabiliser count $15=12+3$; the gauge as the fibre over the root. -->
+##### The Clebsch–Gordan Decomposition, the Spin, the Carriers and the Closures
 
-#### The Representations and the Spin Content
+<!-- the row $n=4$ written out in full, on the pattern of the biquaternion row and of the general row $M_n(\mathbb{C})$: the module $V_{3/2}$, the rule $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$, the four carriers $V_3,V_2,V_1,V_0$ of dimensions $7,5,3,1$, the four readings, the closures of a weight vector, the carriers one by one with their forms and their strata, and the two rows compared. The half-integer is the label of the module and of the minimal left ideal $M_4P$, never of a summand of the algebra, since the difference of two weights is an integer at every $n$. -->
+
+###### The Group and the Module
+
+<a href="articles_maths/the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html">The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</a>
+<!-- the principal copy as the image of $\operatorname{Sym}^{3}$, so that $\mathbb{C}^4=\operatorname{Sym}^{3}\mathbb{C}^2=V_{3/2}$; the generators $J_z,J_+,J_-$ with the weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, the brackets verified to $10^{-16}$; the two-sided action $X\mapsto\rho(q)X\rho(q)^{-1}$ with $\rho(q)^{\dagger}=\rho(q)^{-1}$; the kernel: $\rho(-\mathrm I)=(-1)^{3}\mathrm I=-\mathrm I$ on the module and $(-\mathrm I)X(-\mathrm I)^{-1}=X$ on the algebra, so the algebra action is $SO(3)=SU(2)/\{\pm\mathrm I\}$; faithfulness for the module and the factorisation for the algebra, which is the origin of the integer labels. -->
+
+<a href="articles_maths/from-the-spin-group-to-the-spin-of-a-single-rotor-at-n-4.html">From the Spin Group to the Spin of a Single Rotor at $n=4$: the Sign after $2\pi$ and the Return after $4\pi$</a>
+<!-- the rotor $\exp(\theta J)$ and its action on the module; the half angle $\theta/2$ read on each weight; the sign after a full turn, $\rho(-\mathrm I)=-\mathrm I$ because $2j=3$ is odd; the return after $4\pi$; the two signs as the two sheets of the double cover; the same rotor acting on the algebra without a sign, since the two $-1$ factors cancel; and the contrast with $n=2$, where the module is $V_{1/2}$ and the same mechanism gives the quaternion sign. -->
+
+<a href="articles_maths/the-four-weights-of-the-module-and-the-half-angle-at-n-4.html">The Four Weights of the Module and the Half Angle at $n=4$</a>
+<!-- the monomials $u^3,u^2v,uv^2,v^3$ as the weight basis; the string $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, all distinct, so the module is multiplicity-free; the lowering operator with its normalisations $\sqrt{j(j+1)-m(m-1)}$; the phase $e^{-im\theta}$ on each weight and the half angle on the lowest; why $2s+1=4$ counts the four dimensions; and the reason no smaller faithful module of the principal copy exists. -->
+
+<a href="articles_maths/the-quaternionic-structure-of-the-module-at-n-4.html">The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</a>
+<!-- the anti-linear intertwiner $T$ with $T\rho=\bar\rho T$, unique up to a scalar, and the Frobenius–Schur indicator computed from $T\bar T$: $-1$ for $j=\tfrac12$ and $j=\tfrac32$, $+1$ for $j=1$ and $j=2$; the half-integer carriers quaternionic and the integer ones real; the real form of dimension four inside $\mathbb{C}^4$; the passage to the real algebra $\mathbb{B}$ at $n=2$ and the absence of an eight-real-dimensional division algebra at $n=4$; and the reading that the half-integer carriers are the ones that admit a real structure, which is why the biquaternion row is a real algebra. -->
+
+<a href="articles_maths/the-minimal-left-ideals-of-m4c.html">The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$</a>
+<!-- the idempotent $P$ of rank one and the left ideal $M_4P$ of complex dimension four; the weights of left multiplication by $J_z$ on $M_4P$ equal to $+\tfrac32,+\tfrac12,-\tfrac12,-\tfrac32$, so that $M_4P\cong V_{3/2}$ as a left module; the exterior power $\Lambda^{3}V_{3/2}\cong V_{3/2}$ from the same weight string; the parametrisation of the minimal left ideals by the lines of $\mathbb{C}^4$; and the boundary against the summands: the ideal carries the label $\tfrac32$, no summand does. -->
+
+###### The Clebsch–Gordan Decomposition
+
+<a href="articles_maths/the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</a>
+<!-- the identification $\operatorname{End}(\mathbb{C}^4)\cong\mathbb{C}^4\otimes(\mathbb{C}^4)^{*}$ with the dual read as $V_{3/2}$ through the invariant form of the quaternionic type; the rule for $j=k=\tfrac32$, the four summands each once; the dimensions $7+5+3+1=16$ and the traceless part $7+5+3=15$; the Casimir $-\sum_i\operatorname{ad}_{J_i}^{2}$ with the spectrum $0,2,6,12$ of multiplicities $1,3,5,7$, computed; the projectors as Lagrange polynomials in the Casimir; and the general statement $\bigoplus_{k\le 2j}V_k$ with $2j=n-1$. -->
+
+<a href="articles_maths/the-spin-decomposition-of-m4c.html">The Spin Decomposition of $M_4(\mathbb{C})$: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</a>
+<!-- the weights of $\operatorname{ad}_{J_z}$ as the sixteen differences of $\{\tfrac32,\tfrac12,-\tfrac12,-\tfrac32\}$, that is $0$ four times, $\pm1$ three times, $\pm2$ twice and $\pm3$ once; the reading of the strings from the top as $V_3,V_2,V_1,V_0$; the four invariant subspaces of complex dimensions $7,5,3,1$; the reconstruction of the four labels from the multiplicities alone; and the check that the multiset is the difference set of the module's weights at every $n$. -->
+
+<a href="articles_maths/the-truncated-rule-the-product-of-two-carriers-at-n-4.html">The Truncated Rule: the Product of Two Carriers Is Not a Carrier</a>
+<!-- the product of two invariant subspaces and why it need not be invariant; the truncation of the Clebsch–Gordan sum at $2j$, so that $V_kV_l\subseteq\bigoplus_{m\le3}V_m$; the three cases written out, $V_3^{2}$, $V_2V_1$ and $V_0^{2}$; the failure of closure of each carrier under multiplication, so that none of the four is a subalgebra; the product with the centre as the only associative case; and the boundary against the ideals, which are the subspaces closed under multiplication by the whole algebra rather than by one carrier. -->
+
+<a href="articles_maths/the-parity-rule-the-two-squares-of-the-module-at-n-4.html">The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</a>
+<!-- the symmetric and the alternating square of the module; the criterion $k\equiv2j\pmod 2$, here $k$ odd for the symmetric square and $k$ even for the alternating one; the dimensions $10=7+3$ and $6=5+1$; the weights of $\operatorname{Sym}^{2}$ as $3,2,1,0,-1,-2,-3$ together with $1,0,-1$, and of $\Lambda^{2}$ as $2,1,0,-1,-2$ together with $0$, computed; the reading that parity is the only thing the two squares select; and the boundary against the parity at $n=2$, where $\operatorname{Sym}^{2}V_{1/2}=V_1$ and $\Lambda^{2}V_{1/2}=V_0$. -->
+
+<a href="articles_maths/neither-half-is-invariant-the-cartan-element-at-n-4.html">Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</a>
+<!-- the symmetric and antisymmetric halves of $M_4(\mathbb{C})$; the computation $[J_z,E_{01}+E_{10}]=E_{01}-E_{10}$, a symmetric matrix carried to an antisymmetric one; the consequence that no element of the copy preserves the splitting, although each single generator $\operatorname{ad}_{J_k}$ does preserve the Hermitian and anti-Hermitian halves; the distinction between the transpose involution and the Hermitian adjoint, which behave differently under the copy; and the reading that $\operatorname{Sym}^{2}$ splits while the half does not. -->
+
+<a href="articles_maths/the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4.html">The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</a>
+<!-- the real dimensions of $V_k$, of $V_k\cap\operatorname{Sym}$ and of $V_k\cap\Lambda$ equal to $14,8,6$ for $k=3$; $10,6,4$ for $k=2$; $6,4,2$ for $k=1$; and $2,2,0$ for $k=0$, each row summing to $\dim_\mathbb{R}V_k$; the constraint that the total over the four carriers is $20$ inside $\operatorname{Sym}$ and $12$ inside $\Lambda$; the method, the projectors of the Casimir applied to a real basis of each half; and the reading that every carrier straddles the two halves in a fixed proportion, so no carrier is contained in either. -->
+
+###### Where the Half-Integers Go at $n=4$
+
+<a href="articles_maths/where-the-half-integers-go-in-m4c.html">Where the Half-Integers Go in $M_4(\mathbb{C})$</a>
+<!-- the general statement at $n=4$: the module's label $\tfrac32$ and the algebra's labels $0,1,2,3$; the arithmetic, that the algebra's labels are differences of the module's weights and a difference of two half-integers is an integer; the half-integer appearing as the label of the minimal left ideal $M_4P$ and of the module, never as the label of a summand; the appearance of the pair $(\tfrac12,\tfrac12)$ in the factorised reading, of integer total spin; the two off-diagonal corners of the block reading; and the lesson that a half-integer in the algebra is a statement about a named group action. -->
+
+<a href="articles_maths/the-slot-and-the-summand-at-n-4.html">The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in $M_4(\mathbb{C})$</a>
+<!-- the parallel in one page: at $n=2$ the algebra is $S\otimes S^{*}$ with $S=V_{1/2}$ and at $n=4$ it is $V\otimes V^{*}$ with $V=V_{3/2}$; the slot as a factor and not a summand, so it is not the image of a projector of the algebra; the summands as the CG pieces, always integer; the same sentence holding at both rows with $\tfrac12$ replaced by $\tfrac32$; the left ideal as the place where the slot is visible inside the algebra; and the reason the biquaternion articles can speak of a spin-half subspace while the matrix articles speak of a spin-$\tfrac32$ ideal. -->
+
+<a href="articles_maths/why-the-conjugation-labels-are-integer-at-n-4.html">Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$</a>
+<!-- the conjugation action factoring through $SU(2)/\{\pm\mathrm I\}\cong SO(3)$; the irreducibles of $SO(3)$ as the integer spins, so that the labels of the summands are integers by the representation theory and not by a computation; the contrast with the module, where $-1$ acts as $-1$ and the label is a half-integer; the general form at every $n$; the odd-$n$ case, where the module's label is already an integer and the distinction disappears; and the check that the kernel is exactly $\{\pm\mathrm I\}$ and not larger. -->
+
+<a href="articles_maths/what-a-half-integer-summand-would-require-at-n-4.html">What a Half-Integer Summand Would Require at $n=4$</a>
+<!-- the requirement: a summand $V_{k/2}$ with $k$ odd, of even dimension $k+1$, equal to $4$ for $k=3$; the obstruction, the decomposition being multiplicity-free with labels $0,\dots,3$; the distinction between an invariant subspace and a summand, and why a non-invariant subspace of the module's label is not a carrier; the counterexample that is not one, a four-dimensional subspace invariant under a proper subgroup; and the finite check on the sixteen dimensions that no fourth carrier of even dimension is available. -->
+
+###### From the Spin to the Carriers and the Closures
+
+<a href="articles_maths/from-the-spin-to-the-carriers-and-the-closures-at-n-4.html">From the Spin to the Carriers and the Closures at $n=4$</a>
+<!-- the passage from a label to a space: a carrier as an irreducible invariant subspace and a closure as the smallest invariant subspace containing a given vector; the four carriers of the principal copy and their dimensions; the closure of a single weight vector as the whole carrier, since the weights generate; the chain $V_0\subset V_0\oplus V_1\subset\cdots$ of invariant sums and its dimensions $1,4,9,16$; and the boundary against the biquaternion closures, which are families indexed by a real axis, while here each closure is a single subspace because the module is multiplicity-free. -->
+
+<a href="articles_maths/the-four-carrier-lists-of-one-algebra-at-n-4.html">The Four Carrier Lists of One Algebra at $n=4$</a>
+<!-- the four groups acting by conjugation and their lists: the principal copy $7+5+3+1$; the full $U(4)$ as $\mathbb{C}\mathrm I$ and the irreducible $\mathfrak{sl}_4$ of dimensions $1+15$; the factorised copy on $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$ as $1+3+3+9$; and the block copy on $S_+\oplus S_-$ as $8+3+3+2$; the commutant computation that makes the traceless part irreducible for $U(4)$; the diagonal contents of each list; and the reading that the same sixteen dimensions carry four different decompositions, so a label without a named group is meaningless. -->
+
+<a href="articles_maths/which-spin-lives-in-which-reading-at-n-4.html">Which Spin Lives in Which Reading at $n=4$</a>
+<!-- the table of spins against the four readings; spin $3$ in the principal reading alone; spin $2$ in the factorised reading alone; the half-integer $\tfrac32$ on the module and on the minimal left ideal only; spin $1$ in three readings; the half-integer pair $(\tfrac12,\tfrac12)$ in the two off-diagonal corners of the block reading; the diagonal contents checked against the Clebsch–Gordan rule, $(1,1)\cong V_2\oplus V_1\oplus V_0$ giving $V_2\oplus3V_1\oplus2V_0$ of dimensions $5+9+2$; and the reading that the ambiguity of the phrase "the spins of $M_4$" is resolved only by naming the group. -->
+
+<a href="articles_maths/the-su2-of-m4c-acting-on-sixteen-dimensions.html">The $\mathrm{SU}(2)$ of $M_4(\mathbb{C})$ Acting on Sixteen Dimensions</a>
+<!-- the sixteen-dimensional real space of the algebra as a module of the principal copy; the decomposition into four carriers and the loss of the algebra structure under the action; the two commuting actions, left multiplication and the adjoint action, and the different decompositions they give; the comparison with the biquaternion case, where the algebra is four-real-dimensional and the action is the defining one; and the reading that the number $16$ is the only thing the two rows share. -->
+
+<a href="articles_maths/the-closures-of-a-weight-vector-at-n-4.html">The Closures of a Weight Vector: the Chain from $V_0$ to $V_3$</a>
+<!-- the closure of a single vector under the copy as the smallest invariant subspace containing it; the top weight vector of each carrier and the generation of the whole carrier from it; the four closures as the four carriers; the failure of a chain of strict inclusions, since the carriers are independent and not nested, with the invariant sums $1,4,9,16$ as the only chain available; and the reading that at $n=4$ a closure is a single space and not a family, in contrast with the biquaternion spin-half family indexed by the real axes. -->
+
+###### The Spin-Zero Carrier
+
+<a href="articles_maths/the-spin-zero-carrier-of-m4c.html">The Spin-Zero Carrier of $M_4(\mathbb{C})$: the Scalars</a>
+<!-- the carrier $V_0=\mathbb{C}\mathrm I_4$ of complex dimension one and real dimension two; the invariance under every conjugation action, since the scalars commute; the two real halves, the real line and the imaginary line, both of dimension one; the occurrence of $V_0$ in all four readings; the trace as the projector onto the carrier up to a factor, $\operatorname{tr}(X)/4$; and the reading that the centre is the one carrier that no reading can move. -->
+
+<a href="articles_maths/the-spin-zero-carrier-and-the-determinant-at-n-4.html">The Spin-Zero Carrier and the Determinant at $n=4$</a>
+<!-- the determinant restricted to the centre as the fourth power, $\det(\lambda\mathrm I_4)=\lambda^{4}$; the two strata, the invertible scalars and the single singular point; the determinant as the only polynomial invariant of degree four on the carrier; the comparison with $n=2$, where the exponent is two and the quaternionic norm is the determinant; and the reading that the spin-zero carrier is where the multiplicative invariant lives and the other three carriers carry none. -->
+
+<a href="articles_maths/the-spin-zero-carrier-and-the-spectral-strata-at-n-4.html">The Spin-Zero Carrier and the Spectral Strata at $n=4$</a>
+<!-- the characteristic polynomial on the centre as $(\lambda-t)^{4}$ for $X=t\mathrm I_4$; the single eigenvalue of multiplicity four; the location of the carrier inside the discriminant locus; the comparison of the strata, the centre inside the scalar stratum of the spectral classification; the four invariant subspaces against the four strata; and the reading that the spin-zero carrier is spectrally the most degenerate point of all. -->
+
+<a href="articles_maths/the-spin-zero-carrier-and-the-rank-strata-at-n-4.html">The Spin-Zero Carrier and the Rank Strata at $n=4$</a>
+<!-- the rank on the centre taking only the values four and zero; the carrier as the union of the two extreme rank strata; the singular point at the origin; the comparison with the carriers $V_1,V_2,V_3$, which meet the intermediate strata; the trace and the determinant as the two invariants that separate the two points; and the reading that the spin-zero carrier is the only one of the four whose rank is decided by a single nonzero scalar. -->
+
+###### The Spin-Three-Half Bispinor Spaces
+
+<a href="articles_maths/introduction-to-the-spin-three-halves-bispinor-spaces-at-n-4.html">Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$</a>
+<!-- the label $\tfrac32$ as the slot of the tensor square, $\mathbb{B}$ at $n=2$ becoming $M_4$ at $n=4$ with $S=V_{3/2}$; the left ideal $M_4P$ and the right ideal $QM_4$ as the two spinor spaces; their sum, which as a set is the whole algebra; the four-real-dimensional real form carried by the quaternionic structure; the parametrisation by the rank-one idempotents, hence by the lines of $\mathbb{C}^4$ and their duals; and the boundary against the summands, which carry no half-integer at all. -->
+
+<a href="articles_maths/spinors-and-dirac-spinors-at-n-4.html">Spinors and Dirac Spinors in $M_4(\mathbb{C})$</a>
+<!-- a spinor as an element of a minimal left ideal and a Dirac spinor as an element of the sum of a left and a right ideal; the left action on $M_4P$ and the right action on $QM_4$; the four components of a spinor as the coordinates in the weight basis of the ideal; the Dirac spinor as eight complex numbers split into two blocks; the pairing between the two ideals and the invariant form of quaternionic type; and the reading that the biquaternion Dirac spinor is the same construction at $n=2$ with two components per chirality. -->
+
+<a href="articles_maths/the-fierz-kofink-identities-at-n-4.html">The Fierz–Kofink Identities and the Classification of Spinors at $n=4$</a>
+<!-- the Fierz identities as the completeness relations of the sixteen matrix units read as a basis of $\operatorname{End}(V)$; the classification of spinors by rank, so by the dimension of the ideal generated; the five classes at $n=4$ corresponding to the five partitions of four through the Jordan type; the bilinear covariants built from a spinor and its conjugate, sixteen of them; the comparison with the biquaternion classification, where the invariants are the four real forms; and the reading that the identities are the statement that the sixteen units close on themselves. -->
+
+<a href="articles_maths/the-spin-three-halves-bispinors-and-the-minimal-left-ideals-at-n-4.html">The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</a>
+<!-- the parametrisation of the minimal left ideals by the lines of $\mathbb{C}^4$; the action of the copy on the set of ideals as the defining action on the lines, hence transitive; the stabiliser of one ideal and the orbit–stabiliser count; the dimension four of each ideal and its weight string $\pm\tfrac32,\pm\tfrac12$; the identification $\Lambda^{3}V_{3/2}\cong V_{3/2}$ as the reason the fourth exterior power returns the module; and the reading that the family of spinor spaces is a projective space, not a single space. -->
+
+<a href="articles_maths/the-spin-three-halves-bispinors-and-the-rank-strata-at-n-4.html">The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$</a>
+<!-- the rank of a spinor read as the rank of the matrix that represents it; the stratification of the ideal by rank; the generic spinor of full rank four against the pure spinors of lower rank; the link to the zero divisors and the Segre cone; the five Jordan types as the five classes of spinor; and the reading that the rank of a spinor is the only invariant of the ideal's coordinates that survives the action of the copy. -->
+
+<a href="articles_maths/the-spin-three-halves-bispinors-and-the-spectral-strata-at-n-4.html">The Spin-$\tfrac32$ Bispinors and the Spectral Strata at $n=4$</a>
+<!-- the characteristic polynomial of a spinor as a matrix element of the ideal; the spectral strata intersected with the ideal; the discriminant of the quartic and its vanishing locus; the comparison with the quaternion case, where the discriminant is quadratic and the strata are four; the degenerations inside the ideal, where the nilpotent part may be maximal; and the reading that the spectral classification of the ideal is inherited from the algebra and not from the copy. -->
+
+###### The Spin-One Carrier
+
+<a href="articles_maths/the-spin-one-carrier-of-m4c.html">The Spin-One Carrier of $M_4(\mathbb{C})$: the Adjoint Triplet</a>
+<!-- the carrier $V_1$ of complex dimension three; the identification with the Lie algebra of the copy, the three generators $J_z,J_+,J_-$ spanning it with rank three of three inside $V_1$, computed; the weight string $1,0,-1$; the two occurrences, in the factorised reading and in the block reading; the dual as itself, since the label is an integer; and the reading that $V_1$ is the only carrier that is also a Lie algebra. -->
+
+<a href="articles_maths/the-spin-one-carrier-and-the-trace-form-at-n-4.html">The Spin-One Carrier and the Trace Form at $n=4$</a>
+<!-- the trace form restricted to $V_1$; the reality of the carrier under the form, since $T\bar T=+1$; the signature on the real part, positive on $\mathfrak{su}(2)$ and of the split type on the complexification; the adjoint action as an isometry for the trace form, hence the copy inside $\mathfrak{so}(V_1)$; the Killing form as a multiple of the trace form on the triplet; and the reading that the spin-one carrier is the one where the metric and the Lie bracket agree. -->
+
+<a href="articles_maths/the-spin-one-carrier-and-the-spectral-strata-at-n-4.html">The Spin-One Carrier and the Spectral Strata at $n=4$</a>
+<!-- the spectrum of an element of $V_1$ as three numbers; the discriminant of its cubic characteristic polynomial restricted to the carrier; the regular and the singular points; the eigenvalue coincidences that the copy can and cannot remove; the comparison with the generic element of the algebra, whose quartic has four roots; and the reading that inside the triplet the spectrum is the adjoint weight string up to an additive constant. -->
+
+<a href="articles_maths/the-spin-one-carrier-and-the-rank-strata-at-n-4.html">The Spin-One Carrier and the Rank Strata at $n=4$</a>
+<!-- the rank of an element of $V_1$ taking the values two and three; the traceless part having no rank-one element; the nilpotent triad of the copy, $J_+$, $J_-$ and their brackets; the Jordan type of each stratum; the comparison with the antisymmetric sector, where rank two is the Pfaffian stratum; and the reading that the triplet carries no invertible-to-singular dichotomy of the kind the centre has. -->
+
+###### The Spin-Two Carrier
+
+<a href="articles_maths/the-spin-two-carrier-of-m4c.html">Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square</a>
+<!-- the carrier $V_2$ of complex dimension five as $\Lambda^{2}V_{3/2}$ minus $V_0$; the weight string $2,1,0,-1,-2$; the occurrence in the factorised reading alone, as the leading summand of $(1,1)$; the real form of dimension five, since $T\bar T=+1$; the analogy with the symmetric traceless rank-two tensor stated as an analogy and corrected: the correspondence holds for the label and not for the space, since $V_2$ lives in the alternating square; and the boundary against the principal reading, where $V_2$ is present as the CG summand $k=2$ but carries no separate geometric interpretation. -->
+
+<a href="articles_maths/the-spin-two-carrier-and-the-trace-form-at-n-4.html">The Spin-Two Carrier and the Trace Form at $n=4$</a>
+<!-- the trace form restricted to $V_2$; its invariance under the copy; the reality of the carrier; the signature on the real form of dimension five; the orthogonality of the four carriers for the trace form, since distinct labels do not mix; the Hilbert–Schmidt norm on the carrier and its values on the weight basis; and the reading that the orthogonality of the carriers is the operator-space form of the orthogonality of the irreducibles. -->
+
+<a href="articles_maths/the-spin-two-carrier-and-the-rank-strata-at-n-4.html">The Spin-Two Carrier and the Rank Strata at $n=4$</a>
+<!-- the rank of an element of $V_2$ taking the values two, three and four; the absence of rank one, since the carrier is traceless and a rank-one matrix has a nonzero trace in general; the explicit rank-one element and the proof that it lies outside the carrier; the Jordan types available inside $V_2$; the comparison with the alternating square at $n=2$, which is the line of the identity; and the reading that the middle carrier occupies the middle ranks. -->
+
+###### The Spin-Three Carrier
+
+<a href="articles_maths/the-spin-three-carrier-of-m4c.html">Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain</a>
+<!-- the carrier $V_3$ of complex dimension seven, the top of the chain and twice the spin of the module; the weight string $3,2,1,0,-1,-2,-3$; the top weight vector $E_{03}$; the occurrence in the principal reading alone; the symmetric square $\operatorname{Sym}^{2}V_{3/2}=V_3\oplus V_1$ with $10=7+3$; the real form of dimension seven, since $T\bar T=+1$; and the reading that the top carrier is the largest piece of the algebra and the one that no other group sees. -->
+
+<a href="articles_maths/the-spin-three-carrier-and-the-hermitian-form-at-n-4.html">The Spin-Three Carrier and the Hermitian Form at $n=4$</a>
+<!-- the Hermitian structure of the carrier and the splitting $V_3=H_3\oplus iH_3$ into two real spaces of dimension seven; the intersection of $H_3$ with the Hermitian matrices, of dimension eight in the larger space and reduced here; the parity obstruction to an invariant bilinear form from the copy; the form transported from the trace form and its signature; the seven real coordinates of a Hermitian element of the carrier; and the reading that the top carrier is real type, so its real form is the primary object and the complex space the complexification. -->
+
+<a href="articles_maths/the-spin-three-carrier-and-the-rank-strata-at-n-4.html">The Spin-Three Carrier and the Rank Strata at $n=4$</a>
+<!-- the rank of an element of $V_3$ taking the values three and four; the explicit rank-three element of the carrier and its construction from the top weight vector; the absence of rank one and two in the carrier; the Jordan types; the comparison with the module, where every vector is cyclic of full rank; and the reading that the highest carrier has the narrowest rank range, being the most rigid of the four. -->
+
+<a href="articles_maths/the-spin-three-carrier-and-the-spectral-strata-at-n-4.html">The Spin-Three Carrier and the Spectral Strata at $n=4$</a>
+<!-- the characteristic polynomial of an element of $V_3$ as a quartic with constrained coefficients; the discriminant restricted to the carrier; the regular elements and the singular ones; the eigenvalue patterns available, including the three-plus-one splitting; the comparison with the other three carriers, whose spectra are constrained differently; and the reading that the four carriers partition the algebra by the constraint each puts on the spectrum. -->
+
+###### The Rows Compared
+
+<a href="articles_maths/the-three-rows-biquaternion-m2c-and-m4c.html">The Three Rows: $\mathbb{B}$, $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$</a>
+<!-- the three rows side by side: $\mathbb{B}$ over the reals with the labels $0,\tfrac12,1$; $M_2(\mathbb{C})$ as the same row in the matrix display, with the operator product $2\cdot1=2$; and $M_4(\mathbb{C})$ with the module $V_{3/2}$ and the labels $0,1,2,3$; the dimensions $4,4,16$; the operator algebras $M_4,M_4,M_{16}$; the reason the first two rows are peers and the third is one level up; and the reading that the mirror of the biquaternion articles into the $M_2$ display is legitimate while a mirror into $M_4$ would be a category error. -->
+
+<a href="articles_maths/the-law-of-the-module-and-the-chain-of-carriers.html">The Law of the Module and the Chain of Carriers at Every $n$</a>
+<!-- the law: the module is $V_{(n-1)/2}$ and the algebra is $\bigoplus_{k=0}^{n-1}V_k$ with $\sum_k(2k+1)=n^{2}$; the check at $n=2$, $3+1=4$; at $n=3$, $5+3+1=9$; at $n=4$, $7+5+3+1=16$; the faithfulness of the module exactly at even $n$, where $2j$ is odd; the odd rows, where the module's label is an integer and the module is a carrier of the algebra; and the reading that the biquaternion series cannot be continued by adding $\tfrac32$ as a fourth carrier of $\mathbb{B}$, since $\tfrac32$ labels the module of $M_4$ and not a summand of any algebra. -->
+
+###### The Survey
 
 <a href="articles_maths/the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra</a>
 <!-- the module $\mathbb{C}^4$ as $V_{3/2}$ and the algebra as $V_3\oplus V_2\oplus V_1\oplus V_0$ with dimensions $7+5+3+1$; the traceless part $V_3\oplus V_2\oplus V_1$; the four carrier lists for the principal copy, the full unitary group, the factorised copy $1+3+3+9$ and the block copy $8+3+3+2$; spin $2$ only in the factorised reading and spin $3$ only in the principal one; the biquaternion series as the row $n=2$ -->

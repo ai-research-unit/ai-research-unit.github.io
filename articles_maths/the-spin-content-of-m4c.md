@@ -28,11 +28,13 @@ and under the three other natural groups the same sixteen dimensions give three 
 
 **The label of the module is the half-integer.** Since $2j=3$ is odd, $-\mathrm{I}$ acts as $-1$ and the copy is faithful: $\mathbb{C}^4$ is a genuine spinorial module, not a module of $SO(3)$. The label $\tfrac32$ is not available at $n=2$ or $n=3$ and is available here for the first time among the categories $M_n(\mathbb{C})$.
 
-### The Spin of the Module Is Not in the Algebra
+### The Spin of the Module Is Not a Summand of the Algebra
 
-**Proposition.** No carrier of spin $\tfrac32$ occurs in $M_4(\mathbb{C})$.
+**Proposition.** No summand of the conjugation decomposition of $M_4(\mathbb{C})$ carries spin $\tfrac32$.
 
-*Proof.* The decomposition of the algebra, proved below, has integer labels $0,1,2,3$. A carrier of spin $\tfrac32$ has dimension four and weights $\pm\tfrac32,\pm\tfrac12$, and no such string of weights occurs in the weight multiset $\{0^{4},\pm1^{3},\pm2^{2},\pm3\}$ of $\operatorname{ad}_{J_z}$.
+*Proof.* The decomposition of the algebra, proved below, has integer labels $0,1,2,3$. A summand of spin $\tfrac32$ would have dimension four and weights $\pm\tfrac32,\pm\tfrac12$, and no such string of weights occurs in the weight multiset $\{0^{4},\pm1^{3},\pm2^{2},\pm3\}$ of $\operatorname{ad}_{J_z}$.
+
+**What the proposition does not say.** It does not say that $M_4(\mathbb{C})$ contains no copy of $V_{3/2}$. It does. For a rank-one idempotent $P$, the minimal left ideal $M_4P$ has complex dimension four, is invariant under left multiplication, and the weights of left multiplication by $J_z$ on it are $+\tfrac32,+\tfrac12,-\tfrac12,-\tfrac32$, so $M_4P\cong V_{3/2}$ as a left module. The label $\tfrac32$ is present in the algebra as the label of an ideal, and absent from the summands alone, because $-1$ acts as $+\mathrm I$ on the algebra and turns every conjugation label into an integer. The distinction is the subject of *Where the Half-Integers Go in $M_4(\mathbb{C})$*.
 
 **The reading.** The module has spin below the top of the algebra. This is general: the module is $V_j$ and the algebra is $\bigoplus_{k\le2j}V_k$, so the top carrier of the algebra has twice the spin of the module, $2j=n-1$ against $j$, and the module is halfway up the chain, not at its top.
 

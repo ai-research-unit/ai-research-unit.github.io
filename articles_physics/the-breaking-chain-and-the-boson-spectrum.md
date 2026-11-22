@@ -125,6 +125,32 @@ They are the leptoquarks, and they are the only place in the whole chain where a
 
 **The only coloured massive states.** The six leptoquarks are the only coloured massive states in the theory. Colour is never broken, and the objects that carry colour and mass at once are exactly the six that mix the unit line with the vector part.
 
+### The nine that fix the line, the six that move it
+
+**A second sorting of the same fifteen, by what each generator does to the canonical line.** The line is $\mathbb C e_t$, and in the algebra's own form it is the time-like direction: the Krein norm is $\lvert Q_t\rvert^2-\lvert\vec Q\rvert^2$, signature $(1,3)$. Sorting the fifteen by their action on that line therefore sorts them by a signature the carrier already carries.
+
+| action on $\mathbb C e_t$ | count | generators | class |
+|---|---|---|---|
+| annihilate it, $X e_t=0$ | $8$ | $\mathfrak{su}(3)$ | gluons |
+| act on it as a phase | $1$ | $iD$ | $B-L$ |
+| have a nonzero entry in row $0$ or column $0$, off the diagonal | $6$ | $\mathfrak m$ | leptoquarks |
+
+$8+1+6=15$. The $8+1=9$ is the stabiliser of the split $\mathbb C e_t\oplus B_V$ and is a subgroup; the six are not, and that is the same statement as the first step losing dimension and no rank.
+
+**The third row must be worded exactly, because the loose form is false.** Only three of the six take $e_t$ out of its line; the other three annihilate $e_t$ and bring a colour direction in. What all six share is a nonzero entry in row $0$ or column $0$, which is why they leave the *split* and not the *line*: the stabiliser of the line alone is the larger parabolic, of dimension $12=8+1+3$.
+
+**The six split three and three, and the split is the $B-L$ grading.** With $D=\operatorname{diag}(3i,-i,-i,-i)$,
+
+$$
+[D,E_{0i}]=4i\,E_{0i},\qquad [D,E_{i0}]=-4i\,E_{i0},
+$$
+
+so three raise the line into a colour direction and three lower it back, carrying $B-L=\pm\tfrac43$ — the $\pm\tfrac23$ of the leptoquark charge once the $T_{3R}$ half is added. The $3+3$ is the particle–antiparticle pairing of the six, not a relabelling of one list.
+
+**And the weak pair sits at forty-five degrees to both blocks.** Projecting $L_{\vec e_a}$ onto $\mathfrak m$ gives $\sqrt2$ against a total norm of $2$, and the projection of $R_{\vec e_a}$ onto $\mathfrak m$ is *the same vector*. Two consequences: $L_{\vec e_a}-R_{\vec e_a}$ carries no leptoquark part at all, so it is pure colour; and the six weak generators reach only a three-dimensional subspace of the six-dimensional $\mathfrak m$. A weak generator is not a colour direction plus a leptoquark direction — it is an equal mixture of the two.
+
+> **Shape, not identity.** Leptoquarks and Lorentz boosts are both directions that mix the time line with a space line. That is a statement about the shape of these generators inside one matrix algebra, not a claim that leptoquarks are boosts. A boost is a spacetime transformation and the six are internal gauge directions. The four coordinates are read twice: once as time and space by the algebra's own form, and once as colour by the declaration (A).
+
 **The charge check.** No charge is put in by hand.
 
 $$

@@ -16,9 +16,9 @@ $$
 \langle\tilde X,\tilde Y\rangle_{*}=\operatorname{Sc}(\tilde X\tilde Y^{*})=\tfrac12\operatorname{tr}(XY^{\dagger}),
 $$
 
-and the two norms of an element are $|\tilde Q|^2=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu|Q_\mu|^2$ and $N(\tilde Q)=\det A$. The operator form on $\operatorname{End}$ is $\langle F,G\rangle=\operatorname{Tr}(F^{\dagger}G)$ on the arrays, the full Frobenius form, so that a signed-permutation array has norm two and the norm of an operator is $\sum_\mu\lVert F(e_\mu)\rVert^2$. Any $4\times4$ array printed here is the axis-free array and not the Pauli array: the axis-free family is the unique representative, among the $96$ signed-permutation bases, whose sixteen operator arrays are signed permutations, so its entries are the multiplication table read aloud and every identity checked in it is an integer check ([$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html)). The Pauli and gamma arrays are a translation and are refused as primary, because one entry of one of their matrices is diagonal by privilege, which puts a spatial direction into the notation; the privilege is canonical and fixes no invariant.
+and the two norms of an element are $|\tilde Q|^2=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu|Q_\mu|^2$ and $N(\tilde Q)=\det A$. The operator form on $\operatorname{End}$ is $\langle F,G\rangle=\operatorname{Tr}(F^{\dagger}G)$ on the arrays, the full Frobenius form; a signed-permutation array has norm two, and the norm of an operator is $\sum_\mu\lVert F(e_\mu)\rVert^2$ taken over an orthonormal basis of the carrier. Any $4\times4$ array printed here is the axis-free array and not the Pauli array: the axis-free family is the unique representative, among the $96$ signed-permutation bases, whose sixteen operator arrays are signed permutations, so its entries are the multiplication table read aloud and every identity checked in it is an integer check ([$M_4(\mathbb{C})$ Axis-Free Representation : Operators](m4c-axis-free-representation-operators.html)). The Pauli and gamma arrays are a translation and are refused as primary, because one entry of one of their matrices is diagonal by privilege, which puts a spatial direction into the notation; the privilege is canonical and fixes no invariant.
 
-**Boundaries.** The carrier and the form are the source article. The one-sided operators are [The One-Sided Operators at $n=2$](the-one-sided-operators-at-n-2.html). The two-sided cone is [The Two-Sided Operators and the Segre Cone at $n=2$](the-two-sided-operators-and-the-segre-cone-at-n-2.html). The polar decomposition of an operator is [The Adjoints and the Polar Decomposition of an Operator at $n=2$](the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-2.html).
+**Boundaries.** The carrier and the form are the source article. The one-sided operators are [The One-Sided Operators at $n=2$](the-one-sided-operators-at-n-2.html). The two-sided cone is [The Two-Sided Operators and the Segre Cone at $n=2$](the-two-sided-operators-and-the-segre-cone-at-n-2.html). The polar decomposition of an operator is [The Adjoints and the Polar Decomposition of an Operator at $n=2$](the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-2.html). The $n=2$ spine is [The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$](the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-n-2.html) and [$\operatorname{End}(M_2(\mathbb{C}))$ as an Algebra: the Regular Representation](end-m2c-as-an-algebra-the-regular-representation.html).
 
 **Letters.** The array of $F$ is $F\in M_4(\mathbb{C})$, its weights are $\rho_1\geq\rho_2\geq\rho_3\geq\rho_4\geq0$, the left singular vectors are $u_k$ and the right are $v_k$, both coefficient columns of unit norm. The adjoint is $F^{\dagger}$. The singular values of a $2\times2$ matrix $A$ are $s_1(A)\geq s_2(A)\geq0$.
 
@@ -28,10 +28,10 @@ and the two norms of an element are $|\tilde Q|^2=\langle\tilde Q,\tilde Q\rangl
 
 $$
 \langle\tilde X,\tilde Y\rangle_{*}=\tfrac12\operatorname{tr}(XY^{\dagger})
-=\sum_{\mu=1}^{4}\bar Y_\mu X_\mu ,
+=\tfrac12\sum_{i,j=1}^{2}\bar Y_{ij}X_{ij},
 $$
 
-so the coefficient column carries the standard Hermitian form of $\mathbb{C}^4$. The identity was checked on a hundred random pairs with residual below $2\cdot10^{-14}$.
+so in the Peirce frame the form is **half** the entrywise Euclidean form: a unit element has entrywise norm $\sqrt2$. In the basis of the four units $e_t,e_x,e_y,e_z$, which is orthonormal for the form, the same space is $\mathbb{C}^4$ with the standard form. The identity was checked on a hundred random pairs with residual below $2\cdot10^{-14}$.
 
 **The two norms.** The definite norm is the Euclidean norm of the coefficient column,
 
@@ -92,10 +92,10 @@ $$
 has the array
 
 $$
-\mathcal P_{\tilde U,\tilde V}=uv^{\dagger},
+\mathcal P_{\tilde U,\tilde V}=\tfrac12\,uv^{\mathsf T},
 $$
 
-where $u,v$ are the coefficient columns of $\tilde U,\tilde V$. *Proof.* $\langle X,V\rangle_{*}=v^{\dagger}x$ is a scalar, so the array is $u$ times the row $v^{\dagger}$. The residual on twenty random triples is below $10^{-14}$.
+where $u,v$ are the entry columns of $\tilde U,\tilde V$ in the Peirce frame, of entrywise norm $\sqrt2$ when the elements are units. In the basis of the four units the array is $uv^{\mathsf T}$ with $u,v$ of unit norm; the two displays differ by the frame and by nothing else. The transpose and not the dagger appears because the pairing is conjugate-linear in the first slot: the array acts on the conjugate column $\bar x$, and $\tfrac12uv^{\mathsf T}\bar x=\tfrac12\,u\,(v^{\mathsf T}\bar x)$ is the conjugate column of the value. *Proof.* $\langle X,V\rangle_{*}=\tfrac12 x^{\dagger}v$ is a scalar, so the array is $u$ times the row $\tfrac12v^{\mathsf T}$; its singular value is $\tfrac12\cdot\sqrt2\cdot\sqrt2=1$. The residual on a hundred random pairs is exactly $0$.
 
 **The reading.** The rank-one endomorphisms of the algebra are exactly the rank-one matrices of the display. The word *rank-one* is therefore the same word on both sides, and a sum of rank-one endomorphisms is a sum of rank-one matrices with no change of language.
 
@@ -139,7 +139,7 @@ F=\sum_k\rho_k\,\mathcal P_{\tilde U_k,\tilde V_k},
 F(\tilde X)=\sum_k\rho_k\,\tilde U_k\langle\tilde X,\tilde V_k\rangle_{*} .
 $$
 
-The two displays are one display, because $\mathcal P_{\tilde U,\tilde V}=uv^{\dagger}$.
+The two displays are one display, because $\mathcal P_{\tilde U,\tilde V}$ has the array $uv^{\mathsf T}$ in the basis of the four units, the transpose appearing because the pairing is conjugate-linear in the first slot.
 
 **The unitary factors.** The decomposition is $F=\mathcal U\Sigma\mathcal V^{\dagger}$ with $\mathcal U,\mathcal V$ unitary arrays and $\Sigma$ the diagonal of the weights. The unitary arrays that come from the algebra are the two regular copies $L_U$ and $R_U$ with $U$ unitary, and their products $L_{U_1}R_{U_2}$; the general unitary array of the display is not of that form, and the difference is treated in [The Length and the Two Ranks at $n=2$](the-length-and-the-two-ranks-at-n-2.html).
 
@@ -325,7 +325,7 @@ This is the Eckart–Young theorem, and it is the matrix form of the source's tr
 
 ## Summary
 
-The Hilbert–Schmidt form of the algebra is $\tfrac12\operatorname{tr}(XY^{\dagger})$, which on coefficient columns is the standard form of $\mathbb{C}^4$, and the rank-one endomorphism $\mathcal P_{\tilde U,\tilde V}$ has the array $uv^{\dagger}$. The SVD of an endomorphism is therefore the SVD of its $4\times4$ array: $F=\sum_k\rho_ku_kv_k^{\dagger}$, with the weights the singular values, the left and right singular vectors the coordinate columns.
+The Hilbert–Schmidt form of the algebra is $\tfrac12\operatorname{tr}(XY^{\dagger})$, which on coefficient columns is the standard form of $\mathbb{C}^4$, and the rank-one endomorphism $\mathcal P_{\tilde U,\tilde V}$ has the array $uv^{\mathsf T}$. The SVD of an endomorphism is therefore the SVD of its $4\times4$ array: $F=\sum_k\rho_ku_kv_k^{\dagger}$, with the weights the singular values, the left and right singular vectors the coordinate columns.
 
 The three identities hold: the product of the weights is $|\det F|$, the sum of their squares is the Frobenius norm and also $\sum_\mu\lVert F(e_\mu)\rVert^2$, and the largest weight is the operator norm. A left multiplier has the weights $s_1,s_1,s_2,s_2$ of its element, a two-sided operator has the pairwise products and its rank is the product of the two ranks, and the two-sided operator $L_AR_{A^{\dagger}}$ has the geometric pattern $s_1^2,s_1s_2,s_1s_2,s_2^2$.
 
@@ -338,7 +338,7 @@ The sixteen basis operators are signed permutations of weight $1,1,1,1$, orthogo
 | $\langle X,Y\rangle_{*}=\tfrac12\operatorname{tr}(XY^{\dagger})$ | the Hilbert–Schmidt form on elements |
 | $\langle F,G\rangle=\operatorname{Tr}(F^{\dagger}G)$ | the Frobenius form on operators |
 | $\mathcal P_{\tilde U,\tilde V}$ | the rank-one operator $X\mapsto\tilde U\langle X,\tilde V\rangle_{*}$ |
-| $uv^{\dagger}$ | the array of $\mathcal P_{\tilde U,\tilde V}$ |
+| $uv^{\mathsf T}$ | the array of $\mathcal P_{\tilde U,\tilde V}$ |
 | $\rho_k$ | the weights, the singular values of the array |
 | $s_1(A),s_2(A)$ | the singular values of the element |
 | $|\tilde Q|^2$ | the definite norm, $\sum_\mu|Q_\mu|^2$ |

@@ -1,0 +1,145 @@
+# __Introduction to the Spin-One Anti-Hermitian Subspace in $M_2(\mathbb{C})$__
+
+## Introduction
+
+**The question.** Which three-dimensional real subspace of $M_2(\mathbb{C})$ is carried onto itself by every unitary conjugation, which four-dimensional space contains it, and why is that space the skew-adjoint half rather than the Hermitian one?
+
+**Why it is the same statement.** This is the in-depth matrix reading of [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html). There the carrier is the vector part $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ and the closure is the anti-Hermitian half $\mathbb{R}(ie_t)\oplus\mathfrak{k}$; here the carrier is $\mathfrak{su}(2)=\mathbb{R}E_1\oplus\mathbb{R}E_2\oplus\mathbb{R}E_3$ and the closure is $\mathfrak{u}(2)=\mathbb{R}(i\mathrm I_2)\oplus\mathfrak{su}(2)$. The statements are the same statements, and only the writing is new.
+
+**What the article proves.** In this order. The carrier and its closure. The involution $A\mapsto A^{\dagger}$ and its two halves. Why the carrier forces the skew half. The Lie algebra $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$. The derived action of the generator, which is the cross product in the coefficient basis, with eigenvalues $0,\pm i$ and weights $0,\pm1$. The full turn and the half turn. The factor two against the plane.
+
+**What the article does not do.** It does not treat the determinant on the space, which is [The Spin-One Anti-Hermitian Subspace and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity-in-m2c.html); it does not treat the discriminant, which is [The Spin-One Anti-Hermitian Subspace and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-one-anti-hermitian-subspace-and-spectral-regularity-in-m2c.html); it does not derive the label $1$ from the Clebsch–Gordan series, which is [The Clebsch–Gordan Decomposition of the Biquaternion Algebra in $M_2(\mathbb{C})$](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra-in-m2c.html).
+
+**Conventions.** $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, so $\vec e_k\mapsto E_k=-i\sigma_k$. The adjoint is $A^{\dagger}=\bar A^{\mathsf T}$, the matrix adjoint. The unitary group is $\mathrm{U}(2)=\{U:UU^{\dagger}=\mathrm I_2\}$ and the conjugation is $\operatorname{Ad}_U(A)=UAU^{\dagger}$.
+
+**Boundaries.** The two halves of the algebra are [The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$](the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-n-2.html). The rotor is [The Adjoints and the Polar Decomposition of an Operator at $n=2$](the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-2.html). The spin table is [From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$](the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html). The $n=2$ spine is [The One-Sided Operators at $n=2$](the-one-sided-operators-at-n-2.html) and [The Two-Sided Operators and the Segre Cone at $n=2$](the-two-sided-operators-and-the-segre-cone-at-n-2.html), and the display is [$M_2(\mathbb{C})$ Pauli Representation : Operators](m2c-pauli-representation-operators.html).
+
+**Letters.** $A,B$ elements, $n$ a unit real axis with coordinates $n_k$, $U$ a unitary element, $\mathrm{ad}$ the derived adjoint action, $C(n)$ its array.
+
+## The Subspace
+
+**The carrier.**
+$$
+\mathfrak{su}(2)=\{A:A^{\dagger}=-A,\ \operatorname{tr}A=0\}=\mathbb{R}E_1\oplus\mathbb{R}E_2\oplus\mathbb{R}E_3,
+$$
+of real dimension three. The skew condition is a real four-dimensional space and the trace condition removes one real dimension.
+
+**The products.** $E_kE_l=-\delta_{kl}\mathrm I_2+\epsilon_{klm}E_m$, so the product of two elements of the carrier lies in $\mathfrak{su}(2)\oplus\mathbb{R}\mathrm I_2$ and in the carrier only when the scalar part vanishes.
+
+**The closure.**
+$$
+\mathfrak{u}(2)=\{A:A^{\dagger}=-A\}=\mathbb{R}(i\mathrm I_2)\oplus\mathfrak{su}(2),
+$$
+of real dimension four.
+
+**The action.** $\operatorname{Ad}_U$ for $U$ unitary preserves the adjoint: $(UAU^{\dagger})^{\dagger}=UA^{\dagger}U^{\dagger}$, so it preserves both halves and acts on $\mathfrak{u}(2)$ by conjugation.
+
+**The rotation.** On $\mathfrak{su}(2)$ the action is the rotation. The map $\mathrm{SU}(2)\to\mathrm{SO}(3)$ is onto with kernel $\{\pm\mathrm I_2\}$, and $\mathrm{U}(2)\to\mathrm{SO}(3)$ has kernel the central circle $\{e^{i\varphi}\mathrm I_2\}$.
+
+## The Star and the Two Halves
+
+**The involution.** $A^{\dagger\dagger}=A$, so
+$$
+M_2(\mathbb{C})=\mathfrak{h}\oplus\mathfrak{u}(2),\qquad \mathfrak{h}=\{A:A^{\dagger}=A\},\qquad \mathfrak{u}(2)=\{A:A^{\dagger}=-A\},
+$$
+as real vector spaces, each of real dimension four.
+
+**The two halves explicitly.** A skew matrix is $i$ times a Hermitian one: $\mathfrak{h}=i\,\mathfrak{u}(2)$, and $i\mathfrak{h}=\mathfrak{u}(2)$. Verified on random elements.
+
+**Why the carrier forces the choice.** The carrier lies in the skew half and meets the Hermitian half only at the origin:
+$$
+\mathfrak{su}(2)\subseteq\mathfrak{u}(2),\qquad \mathfrak{su}(2)\cap\mathfrak{h}=\{0\}.
+$$
+
+**The second reason.** The bracket of two skew matrices is skew and the bracket of two Hermitian matrices is skew:
+$$
+[\mathfrak{u}(2),\mathfrak{u}(2)]\subseteq\mathfrak{u}(2),\qquad [\mathfrak{h},\mathfrak{h}]\subseteq\mathfrak{u}(2),
+$$
+verified to $2\cdot10^{-15}$. The skew half is a Lie algebra and the Hermitian half is not.
+
+## The Lie Algebra Inside the Space
+
+**The split.**
+$$
+\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2),
+$$
+with centre $\mathbb{R}(i\mathrm I_2)$ and derived algebra $\mathfrak{su}(2)$. Dimensions $1+3=4$.
+
+**The carrier is the non-abelian summand.** The line is fixed pointwise by the action and carries the trivial carrier; the trace part carries no spin.
+
+## The Action and the Weights
+
+**The generator.** The rotor is $U=\exp(\theta\,\tfrac12 n\cdot\sigma)=\cos\tfrac{\theta}{2}\mathrm I_2+\sin\tfrac{\theta}{2}\,n\cdot E$, unitary because $n\cdot E$ is skew and squares to $-\mathrm I_2$. The derived operator is
+$$
+\operatorname{ad}\left(\tfrac12n\cdot\sigma\right)(A)=\left[\tfrac12n\cdot\sigma\,,\,A\right].
+$$
+
+**It is the cross product.** In the coefficient basis $(E_1,E_2,E_3)$ the array of the generator at $n=e_3$ is
+$$
+C(e_3)=\begin{pmatrix}0&-1&0\\ 1&0&0\\ 0&0&0\end{pmatrix},
+$$
+which is the cross product with $e_3$ acting on the coordinates: verified exactly, and the reason is $[E_3,E_1]=2E_2$ and $[E_3,E_2]=-2E_1$, so the factor $\tfrac12$ cancels the factor two of the commutator.
+
+**The eigenvalues.** The cross product with a unit vector has the eigenvalues $0$, $+i$, $-i$, verified: $0$ on the axis, $+i$ on $E_1+iE_2$, $-i$ on $E_1-iE_2$.
+
+**The weights.** A weight is an eigenvalue divided by $i$: the weights are $0$, $+1$, $-1$. The identity reads $2s+1=3=\dim_\mathbb{R}\mathfrak{su}(2)$, and the spin is $s=1$.
+
+**The full turn.** $\exp(2\pi C(n))=\mathrm I_3$ to $8\cdot10^{-15}$, and $\exp(\pi C(n))=\operatorname{diag}(-1,-1,1)$ in the axis frame: a half turn reverses the transverse plane and fixes the axis, a full turn returns everything. So the action of the rotors descends to $\mathrm{SO}(3)$ and the kernel $\{\pm\mathrm I_2\}$ acts trivially.
+
+## Why the Two Spectra Differ by a Factor of Two
+
+**The two operators.** The same generator acts on the carrier by the commutator and on the spinor plane by a single multiplication. The weights are $0,\pm1$ and $\pm\tfrac12$.
+
+**The reason.** The commutator consumes the axis twice, once on each side, and the single multiplication consumes it once. In the display the two consumptions appear as the cancellation of the $\tfrac12$.
+
+**The consequence.** The carrier holds integer weights and the plane half-integer weights, and the difference is in the actions, one two-sided and one one-sided.
+
+## The Space Among the Four
+
+**The dimensions.** Centre: real two. Plane: real two. Ideal: real four. Bispinor: real eight. Skew half: real four.
+
+**The overlaps.** The skew half meets the centre $\mathbb{C}\mathrm I_2$ in the line $\mathbb{R}(i\mathrm I_2)$ and the Hermitian half only at the origin.
+
+**What it is not.** The skew half is not a complex subspace: multiplication by $i$ carries it onto $\mathfrak{h}$. The adjoint is conjugate-linear, so it reverses $i$; that is the whole reason.
+
+## Worked Example
+
+**The axis $e_3$.** $U=\exp(\tfrac{\pi}{4}E_3)$ is a quarter-turn rotor, and
+$$
+UE_1U^{\dagger}=E_2,\qquad UE_2U^{\dagger}=-E_1,\qquad UE_3U^{\dagger}=E_3,
+$$
+verified. So the coordinates $(v_1,v_2,v_3)$ become $(-v_2,v_1,v_3)$: the cross product with $e_3$ applied once.
+
+## Where $n=2$ Differs
+
+**The source is imprecise at $n=2$.** The source's display lists the eigenvalues $\pm i$ and then states "so the spectrum is $\{+1,-1,0\}$". The eigenvalues of the cross product are $0,\pm i$; the numbers $\pm1$ are the weights, that is the eigenvalues divided by $i$. The matrix reading keeps both: the eigenvalues are $0,\pm i$ and the weights are $0,\pm1$. With the weights the identity $2s+1=3$ and the full turn $\exp(2\pi C)=\mathrm I_3$ are both consistent.
+
+**The carrier against the closure.** At $n=2$ the carrier has real dimension three and the closure four, the difference being the trace line. At order $n$ the skew-adjoint space has real dimension $n^2$, the traceless skew part $n^2-1$, and the "vector part" is no longer three-dimensional: the rotation group acting is $\mathrm{SU}(n)$ of dimension $n^2-1$, and there is no cross product.
+
+**What does not differ.** The closure is unique and does not depend on an axis, at every order; the split $\mathfrak{u}(n)=\mathfrak{u}(1)\oplus\mathfrak{su}(n)$ holds at every order.
+
+## Summary
+
+The carrier is $\mathfrak{su}(2)$, the real span of the three skew traceless generators $E_k=-i\sigma_k$, of real dimension three; the closure is the skew-adjoint space $\mathfrak{u}(2)=\mathbb{R}(i\mathrm I_2)\oplus\mathfrak{su}(2)$, of real dimension four. The carrier lies in the skew half and meets the Hermitian half only at the origin, and the skew half is the one closed under the bracket, so the closure is forced.
+
+The generator $\tfrac12 n\cdot\sigma$ acts by the commutator, which in the coefficient basis is the cross product with $n$; the eigenvalues are $0,\pm i$, the weights $0,\pm1$, the spin is $1$, and a full turn acts as the identity while a half turn reverses the transverse plane.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathfrak{su}(2)=\mathbb{R}E_1\oplus\mathbb{R}E_2\oplus\mathbb{R}E_3$ | the carrier, the skew traceless part |
+| $\mathfrak{u}(2)$ | the skew-adjoint half, the closure |
+| $\mathfrak{h}$ | the Hermitian half |
+| $E_k=-i\sigma_k$ | the generators |
+| $C(n)$ | the array of $\operatorname{ad}(\tfrac12 n\cdot\sigma)$ in the coefficient basis |
+| $U=\exp(\theta\tfrac12n\cdot\sigma)$ | the rotor |
+
+## Further Reading
+
+- [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the source's derivation from the two-sided action.
+- [The Spin-One Anti-Hermitian Subspace and N Norm Regularity in $M_2(\mathbb{C})$](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity-in-m2c.html), for the determinant on the space.
+- [The Spin-One Anti-Hermitian Subspace and Spectral Regularity in $M_2(\mathbb{C})$](the-spin-one-anti-hermitian-subspace-and-spectral-regularity-in-m2c.html), for the discriminant on the space.
+- [The Clebsch–Gordan Decomposition of the Biquaternion Algebra in $M_2(\mathbb{C})$](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra-in-m2c.html), for the label $1$ as the image of a projector.
+- [The Symmetric and Antisymmetric Parts of the Operator Space at $n=2$](the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-n-2.html), for the two halves of the module.
+- [The Carriers, the Representation, the Spin and the Closure in $M_2(\mathbb{C})$](the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html), for the spin table with all three carriers.
