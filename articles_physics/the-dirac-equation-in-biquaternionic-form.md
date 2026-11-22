@@ -587,7 +587,7 @@ which is the test of §*The Value Is a Rule* written as an eigenvalue problem. N
 
 **The category error.** Operator chirality is a membership in a subspace of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen. An idempotent is an element of $\mathbb{B}$, of complex dimension four. A membership in a subspace of operators cannot be read off a chosen element, and the four cases are fixed before any element is named. The confusion merges the third row of the table below with the first two.
 
-**The instructive case.** The basis operator $-iR_{\vec e_z}$ is a right multiplier, so its label is the right slot; it squares to $\mathrm I$, has trace zero and, its multiplier being traceless, the spectrum $\{+1,+1,-1,-1\}$. It behaves like a chirality element because it is an example of a side, and an example is not a definition: an object that has a chirality cannot be what chirality means.
+**The instructive case.** The basis operator $-iR_{\vec e_z}$ is a right multiplier, so its label is the right slot; it squares to $\mathrm I$, has trace zero and, its multiplier being scalar-free, the spectrum $\{+1,+1,-1,-1\}$. It behaves like a chirality element because it is an example of a side, and an example is not a definition: an object that has a chirality cannot be what chirality means.
 
 **What the letters are not.**
 

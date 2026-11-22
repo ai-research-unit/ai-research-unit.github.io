@@ -6,7 +6,7 @@
 
 The article builds the even part of the Clifford algebra, defines the rotor by $R\widetilde{R}=1$, proves that $X\mapsto RX\widetilde{R}$ is a rotation, proves that the kernel is $\{1,-1\}$, and reads the two cases $n=2$ and $n=3$ as complex numbers and quaternions. It then settles the square root question: every rotation of $\mathbb{R}^{n}$ is a square of a rotation, the root is never unique, and no continuous choice of it exists even on $\mathrm{SO}(2)$. The last section gives the dimension $2^{\lfloor n/2\rfloor}$ of the spin representation and the fundamental group $\mathbb{Z}/2$ of $\mathrm{SO}(n)$ for $n\ge3$. It assumes *The Exponential of the Antisymmetric Part: One-Parameter Rotations*.
 
-Throughout $n\ge2$, the sandwich product is written $RX\widetilde{R}$, and $\widetilde{R}$ is the reversal of $R$.
+Throughout $n\ge2$, the sandwich product is written $RX\widetilde{R}$, and $\widetilde{R}$ is the reversal of $R$. The case $n=3$ is the quaternion case, $\mathrm{Spin}(3)=S^3$, the group isomorphic to $SU(2)$; the quaternion name and the $SU(2)$ name belong to $n=3$ alone, and every statement below holds at its own $n$.
 
 ## The Clifford Algebra and Its Even Part
 

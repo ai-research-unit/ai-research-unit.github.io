@@ -144,7 +144,7 @@ The source of all of these is the coincidence of Dynkin diagrams of small rank, 
 | Symbol | Meaning |
 |---|---|
 | $\mathrm{Cl}^0_{n,0}\cong\mathrm{Cl}_{0,n-1}$ | Even part of a definite Clifford algebra |
-| $Sp(1)$ | Unit quaternions, $=SU(2)$ |
+| $Sp(1)$ | Unit quaternions, $\cong SU(2)$ |
 | $Sp(2)$ | Symplectic group of rank two |
 | $\mathrm{U}(1)$, $SU(2)$, $SU(4)$ | The unitary groups of the low-dimensional cases |
 | $SL(2,\mathbb{R})$, $SL(2,\mathbb{C})$, $SL(4,\mathbb{R})$ | The real forms of the low-dimensional cases |

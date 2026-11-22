@@ -106,7 +106,7 @@ it is surjective onto $S^3$, its kernel is the union of the spheres $2\pi kS^2$,
 
 | group | dimension | compact | simply connected | relation to the algebra |
 |---|---|---|---|---|
-| $S^3=\mathrm{Sp}(1)=SU(2)$ | $3$ | yes | yes | the versors |
+| $S^3\cong\mathrm{Sp}(1)\cong SU(2)$ | $3$ | yes | yes | the versors |
 | $SO(3)$ | $3$ | yes | no | the adjoint quotient |
 | $SO(4)$ | $6$ | yes | no | the two-sided quotient |
 | $\mathrm{Spin}(4)$ | $6$ | yes | yes | $S^3\times S^3$ |

@@ -497,7 +497,7 @@ and that is exactly the transpose: the three symmetric generators are fixed and 
 | $\mathbb{B}_{\Psi}$ | $\operatorname{span}\{e_t,i\vec e_x,i\vec e_z\}$ | $3$ | symmetric matrices |
 | $\mathbb{B}_{\Phi}$ | $\operatorname{span}\{\vec e_y\}$ | $1$ | antisymmetric matrices |
 
-The rows check each other three times. The centre and the vector part meet the split form in spaces of dimensions $1$ and $3$, whose sum is $4$: that is the decomposition of the split form into scalars and traceless part. The Hermitian and anti-Hermitian subspaces meet it in spaces of dimensions $3$ and $1$, whose sum is $4$: that is the eigenspace decomposition of the transpose. The quaternion and antiquaternion subspaces meet it in spaces of dimensions $2$ and $2$, whose sum is $4$: that is the decomposition into real and imaginary coefficients, the coefficient conjugation being an involution of the split form.
+The rows check each other three times. The centre and the vector part meet the split form in spaces of dimensions $1$ and $3$, whose sum is $4$: that is the decomposition of the split form into scalars and scalar-free part. The Hermitian and anti-Hermitian subspaces meet it in spaces of dimensions $3$ and $1$, whose sum is $4$: that is the eigenspace decomposition of the transpose. The quaternion and antiquaternion subspaces meet it in spaces of dimensions $2$ and $2$, whose sum is $4$: that is the decomposition into real and imaginary coefficients, the coefficient conjugation being an involution of the split form.
 
 **The intersections with the compact form.** The compact form is $\mathbb{B}_H$, and the table is shorter.
 

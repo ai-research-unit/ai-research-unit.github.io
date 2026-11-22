@@ -137,32 +137,29 @@ Each circle is a fibre of the Hopf fibration $S^3\to\mathbb{CP}^1=S^2$, over the
 
 ## The Split-Complex Comparison
 
-**The complex isotropic cone of $B$ is the complexification of the split-complex null quadric; the dual numbers give the degenerate case of a double line, and the three cases are the three real forms of the same quadratic equation.**
+**The complex isotropic cone of $B$ is the complexification of the split-complex null quadric, which is one of the two real forms of the same quadratic equation; the other is the definite form, and its cone is the origin.**
 
 **Definition.** The **split-complex numbers** are $\mathbb{R}[j]$ with $j^2=1$; the **null quadric** is the set of $x+yj$ with $x^2-y^2=0$.
 
-**Proposition (the four readings).** The equation $u^2+v^2=0$ has four readings:
+**Proposition (the three readings).** The equation $u^2+v^2=0$ has three readings:
 $$
 \begin{aligned}
 \text{real: } & u^2+v^2=0 \quad\text{(only the origin)},\\
 \text{split-complex: } & u^2-y^2=0 \quad\text{(two real lines)},\\
-\text{complex: } & Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2=0 \quad\text{(two complex lines)},\\
-\text{dual: } & u^2=0 \quad\text{(the axis, doubled)}.
+\text{complex: } & Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2=0 \quad\text{(two complex lines)}.
 \end{aligned}
 $$
-The split form is a real form of the complex form under the real structure $Q_{\blacktriangledown}=iy$; the definite form is the real form under $Q_{\blacktriangledown}=v$ real; the dual case is a degeneration, not a real form.
+The split form is a real form of the complex form under the real structure $Q_{\blacktriangledown}=iy$; the definite form is the real form under $Q_{\blacktriangledown}=v$ real.
 
-*Proof.* The dual numbers have $v^2=0$ and the equation reduces to $u^2=0$; the split-complex numbers have $j^2=1$ and the equation factors as $(u-y)(u+y)=0$; the complex numbers have $i^2=-1$ and the equation factors as $(Q_{\blacktriangle}+iQ_{\blacktriangledown})(Q_{\blacktriangle}-iQ_{\blacktriangledown})=0$. The change $Q_{\blacktriangledown}\mapsto iy$ carries the complex equation to $u^2-y^2=0$.
+*Proof.* The split-complex numbers have $j^2=1$ and the equation factors as $(u-y)(u+y)=0$; the complex numbers have $i^2=-1$ and the equation factors as $(Q_{\blacktriangle}+iQ_{\blacktriangledown})(Q_{\blacktriangle}-iQ_{\blacktriangledown})=0$. The change $Q_{\blacktriangledown}\mapsto iy$ carries the complex equation to $u^2-y^2=0$.
 
-**Remark (the real forms).** The complex quadratic form $Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2$ has two real forms: the **definite** form $x_1^2+x_2^2$, which has no nonzero isotropic vectors, and the **split** form $x_1^2-y^2$, which has two isotropic lines. **The complex cone is the complexification of the split cone**, and the definite real form sees only the origin. The dual case is the degeneration in which the two lines coincide.
-
-**Remark (the comparison with the dual numbers).** The dual numbers have $\epsilon^2=0$ and the null cone is the axis, counted twice. **The complex cone is the split case, not the dual case**: the equation is nondegenerate, and the cone has two distinct irreducible components. The dual case is the degeneration in which the two lines coincide; it is the subject of *Dual Numbers* and of *The Dual-Numbers Null Quadric and Projective Geometry*.
+**Remark (the real forms).** The complex quadratic form $Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2$ has two real forms: the **definite** form $x_1^2+x_2^2$, which has no nonzero isotropic vectors, and the **split** form $x_1^2-y^2$, which has two isotropic lines. **The complex cone is the complexification of the split cone**, and the definite real form sees only the origin.
 
 ## Summary
 
 The complex bilinear form $B(Q_1,Q_2)=Q_{1\blacktriangle}Q_{2\blacktriangle}+Q_{1\blacktriangledown}Q_{2\blacktriangledown}$ has inertia $(2,2)$ over the reals, and its isotropic cone $\mathcal{N}=\{Q_{\blacktriangle}^2+Q_{\blacktriangledown}^2=0\}$ is the union of the two complex lines $Q_{\blacktriangle}=\pm iQ_{\blacktriangledown}$. The lines are totally isotropic for $B$ and Lagrangian for the holomorphic symplectic form $\omega$; the Hermitian form $H$ is definite and has no isotropic vectors, so the three forms have three different isotropic geometries.
 
-The real locus of the cone is only the origin, but the cone as a real algebraic set is the union of two real two-planes in $\mathbb{R}^4$, and it is the intersection of the null cones of the real and imaginary parts of $B$. Its projective image is the two-point set $\{[i:1],[-i:1]\}\subset\mathbb{CP}^1$. Its intersection with $S^3$ is a pair of great circles, the Hopf fibres over the two points, and they form the Hopf link with linking number one. The cone is the complexification of the split-complex null quadric $x^2-y^2=0$; the dual numbers give the degenerate case of a double line.
+The real locus of the cone is only the origin, but the cone as a real algebraic set is the union of two real two-planes in $\mathbb{R}^4$, and it is the intersection of the null cones of the real and imaginary parts of $B$. Its projective image is the two-point set $\{[i:1],[-i:1]\}\subset\mathbb{CP}^1$. Its intersection with $S^3$ is a pair of great circles, the Hopf fibres over the two points, and they form the Hopf link with linking number one. The cone is the complexification of the split-complex null quadric $x^2-y^2=0$, and its two irreducible components are the two isotropic lines.
 
 ## Summary of Notation
 
@@ -176,7 +173,6 @@ The real locus of the cone is only the origin, but the cone as a real algebraic 
 | $[i:1],[-i:1]$ | the two isotropic directions in $\mathbb{CP}^1$ |
 | $C_\pm=\mathcal{N}\cap S^3\cap L_\pm$ | the two Hopf fibres of the cone |
 | $x^2-y^2=0$ | the split-complex null quadric |
-| $u^2=0$ | the dual-number null quadric |
 
 ## Further Reading
 
@@ -187,6 +183,4 @@ The real locus of the cone is only the origin, but the cone as a real algebraic 
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-c2.html), the next article, for $O(2,\mathbb{C})$ and the stabilizer of the cone.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), for the Hopf fibration and the linking number.
 - [Split-Complex Algebra](split-complex-algebra.html), for the null quadric $x^2-y^2=0$.
-- [Dual-Numbers Algebra](dual-numbers-algebra.html), for the degenerate null quadric $u^2=0$.
-- [The Dual-Numbers Null Quadric and Projective Geometry](dual-numbers-null-quadric-and-projective-geometry.html), for the projective picture in the dual case.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the glyphs and the typographic conventions of the corpus.

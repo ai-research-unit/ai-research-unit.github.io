@@ -26,7 +26,7 @@ $$
 \tilde{Ξ}=\tilde{Ξ}_{L}+\tilde{Ξ}_{R}\in\mathbb{B},
 $$
 
-whose two parts are the two eigenvalues of one basis operator, $\tilde{Ξ}_{L}$ the value L and $\tilde{Ξ}_{R}$ the value R (*Special Element Conventions*, §*The Chirality Convention*). The basis operator is a choice and the values are not: another traceless $u$ with $u^2=-e_t$ gives another basis operator with the same two values; every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality basis operator is the fifth basis operator of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
+whose two parts are the two eigenvalues of one basis operator, $\tilde{Ξ}_{L}$ the value L and $\tilde{Ξ}_{R}$ the value R (*Special Element Conventions*, §*The Chirality Convention*). The basis operator is a choice and the values are not: another scalar-free $u$ with $u^2=-e_t$ gives another basis operator with the same two values; every element of the algebra is such a field, and only the zero element has both parts zero. This article declares the axis $\vec u=\vec e_z$, the unit at which the chirality basis operator is the fifth basis operator of the material frame $\mathbb{B}_{\Phi}$. The free propagation is the biquaternion Dirac equation
 
 $$
 \tilde\nabla_\Phi\tilde{Ξ}_{R}=k_{m_p}\,\tilde{Ξ}_{L},

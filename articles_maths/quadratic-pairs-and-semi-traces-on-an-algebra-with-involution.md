@@ -174,7 +174,7 @@ $$
 \psi(a) = \operatorname{Trd}(a)\,1_A-a .
 $$
 
-**Proposition.** $\psi$ is an involution of $A$, it fixes the scalars and negates the traceless part; over a field with two invertible it is the conjugation of the quaternion algebra, and it is of symplectic type, with $\mathrm{sym}(A,\psi)$ the scalars of dimension one.
+**Proposition.** $\psi$ is an involution of $A$, it fixes the scalars and negates the scalar-free part; over a field with two invertible it is the conjugation of the quaternion algebra, and it is of symplectic type, with $\mathrm{sym}(A,\psi)$ the scalars of dimension one.
 
 *Proof.* Squaring, $\psi(\psi(a)) = \operatorname{Trd}(\psi(a))1_A-\psi(a)$, and $\operatorname{Trd}(\psi(a)) = \operatorname{Trd}(a)$, since $\operatorname{Trd}(1_A) = 2$ for a degree-two algebra; hence $\psi(\psi(a)) = a$. For the anti-multiplicativity, an element of a degree-two algebra satisfies the reduced characteristic identity
 

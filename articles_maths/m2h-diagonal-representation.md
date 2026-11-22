@@ -236,7 +236,7 @@ The three values are attained: $0$ at the zero element, $4$ on the union of the 
 $$
 {\mathbb{B}_{\mathrm{spl}}}^{\times}\cong\mathbb{H}^{\times}\times\mathbb{H}^{\times}\cong\bigl(SU(2)\times\mathbb{R}_{>0}\bigr)^{2},
 $$
-of real dimension eight, and the retract is $SU(2)\times SU(2)=S^{3}\times S^{3}$. This is the object the operators article uses: the group of invertibles is not connected, it has four components distinguished by the signs of the two real parts, and its compact retract is a product of two three-spheres and not a torus.
+of real dimension eight, and the retract is $S^{3}\times S^{3}$, whose standard display is $SU(2)\times SU(2)$. This is the object the operators article uses: the group of invertibles is not connected, it has four components distinguished by the signs of the two real parts, and its compact retract is a product of two three-spheres and not a torus.
 
 ## The Spectral Projectors
 

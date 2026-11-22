@@ -22,7 +22,7 @@ $$
 \tilde\Pi_\epsilon=\tfrac14\Bigl(e_t\otimes e_t+\sum_{k=1}^{3}\epsilon_k\,\vec e_k\otimes\vec e_k\Bigr),\qquad \epsilon_k=\pm1 ,
 $$
 
-each Hermitian, since $e_t\otimes e_t$ and each $\vec e_k\otimes\vec e_k$ are Hermitian, and each of trace one, since $\operatorname{tr}(e_t\otimes e_t)=4$ and $\operatorname{tr}(\vec e_k\otimes\vec e_k)=\operatorname{tr}(\vec e_k)^{2}=0$ because the quaternion units are traceless.
+each Hermitian, since $e_t\otimes e_t$ and each $\vec e_k\otimes\vec e_k$ are Hermitian, and each of trace one, since $\operatorname{tr}(e_t\otimes e_t)=4$ and $\operatorname{tr}(\vec e_k\otimes\vec e_k)=\operatorname{tr}(\vec e_k)^{2}=0$ because the quaternion units have vanishing scalar part.
 
 What the eight are, in the Pauli model. With $e_t=\mathrm I_2$ and $\vec e_k=i\sigma_k$,
 

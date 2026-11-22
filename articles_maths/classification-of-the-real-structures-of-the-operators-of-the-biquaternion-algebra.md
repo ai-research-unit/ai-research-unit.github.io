@@ -86,7 +86,7 @@ Two rows are subalgebras and two are Lie subalgebras only, and the four negative
 | subspace | $B_j\cap M_2(\mathbb{R})$ | $\dim_{\mathbb{R}}$ | in matrices | $L(B_j\cap M_2(\mathbb{R}))$ |
 |---|---|---|---|---|
 | $\mathbb{B}_C$ | $\mathbb{R}e_t$ | $1$ | $\mathbb{R}\mathrm{I}$ | $\mathbb{R}\mathrm{I}_4$ |
-| $\mathbb{B}_V$ | $\operatorname{span}\{\vec e_y,i\vec e_x,i\vec e_z\}$ | $3$ | traceless | $L(\mathfrak{sl}(2,\mathbb{R}))$ |
+| $\mathbb{B}_V$ | $\operatorname{span}\{\vec e_y,i\vec e_x,i\vec e_z\}$ | $3$ | scalar-free | $L(\mathfrak{sl}(2,\mathbb{R}))$ |
 | $\mathbb{B}_H$ | $\operatorname{span}\{e_t,\vec e_y\}$ | $2$ | $\mathbb{R}\mathrm{I}\oplus\mathbb{R}J$ | $L(\mathbb{C})$ |
 | $\mathbb{B}_{iH}$ | $\operatorname{span}\{i\vec e_x,i\vec e_z\}$ | $2$ | $\operatorname{span}\{\sigma_1,\sigma_3\}$ | $L(\mathbb{R}^2)$ |
 | $\mathbb{B}_{\Psi}$ | $\operatorname{span}\{e_t,i\vec e_x,i\vec e_z\}$ | $3$ | symmetric | $L(\text{symmetric})$ |

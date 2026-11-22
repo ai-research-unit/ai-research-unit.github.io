@@ -215,7 +215,7 @@ A statement about the two values is therefore not a statement about the sectors,
 
 ## Open Questions
 
-1. **Can the framework host a chiral gauge group?** The centre supplies only a scalar, vector-like abelian group. The two values need a non-central action, hence a gauge group beyond the scalar centre; the read-list gauge article's reality and tracelessness conditions are the prerequisite, and whether they admit a compact simple algebra inside the biquaternion algebra is not settled.
+1. **Can the framework host a chiral gauge group?** The centre supplies only a scalar, vector-like abelian group. The two values need a non-central action, hence a gauge group beyond the scalar centre; the read-list gauge article's reality and scalar-freeness conditions are the prerequisite, and whether they admit a compact simple algebra inside the biquaternion algebra is not settled.
 
 2. **Which interpretation of the phase is physical?** A central phase multiplies the two values alike; applied after the bar it multiplies them with opposite signs. Whether the physical field is read as it stands or through the bar decides between the vector-like and the axial reading, and this article does not decide it.
 

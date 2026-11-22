@@ -18,7 +18,7 @@ $$
 
 **Proof.** Expand: $[A,XY]=AXY-XYA$ and the right side is $AXY-XAY+XAY-XYA$, which is the same.
 
-**Corollary.** $\operatorname{ad}_A$ is a derivation of the associative algebra, and it is traceless as an operator on the algebra because its values lie in the traceless subspace.
+**Corollary.** $\operatorname{ad}_A$ is a derivation of the associative algebra, and the array of $\operatorname{ad}_A$ has zero trace because its values lie in the traceless subspace.
 
 **Proof.** The Leibniz rule is the derivation property; and $\operatorname{tr}([A,X])=0$ for every $X$, so every value of $\operatorname{ad}_A$ is traceless.
 

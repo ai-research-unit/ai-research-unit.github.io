@@ -39,6 +39,8 @@ $$
 $$
 that is $\operatorname{Spin}(n)$-equivariant over the double covering $\operatorname{Spin}(n) \to SO(n)$ of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*: the map $\zeta$ intertwines the right actions, $\zeta(n \cdot g_{\mathrm{spin}}) = \zeta(n) \cdot \rho(g_{\mathrm{spin}})$ for the covering homomorphism $\rho$. An oriented Riemannian manifold is a **spin manifold** if it admits a spin structure.
 
+**The case of three dimensions.** At $n=3$ the structure group $\operatorname{Spin}(3)$ is the sphere $S^3$, the group of unit quaternions, isomorphic to $SU(2)$; a rotor acts on space by the two-sided product and one-sidedly on the spinor fibre, and the spin is the label of that action. The flat theory of this case is *The Spin Group via $4\times4$ Real Matrices* and *From the Spin to the Carriers and the Closures*.
+
 **Proposition.** A spin structure exists if and only if the second Stiefel–Whitney class vanishes,
 $$
 w_2(TM) = 0 \in H^2(M; \mathbb{Z}/2),
@@ -65,7 +67,7 @@ is defined by the Clifford action of $v$ on the spin module, and it is a bundle 
 
 **Proof.** The statements are the module theory of the spin representations of *Spin Representations and Clifford Modules with Inner Conjugation*: the half-spin modules are the two simple modules of the even Clifford algebra, the odd elements exchange them, and for $n$ even the complex Clifford algebra is a full matrix algebra over $\Delta_n$, so the endomorphisms of the spin module are the Clifford algebra itself.
 
-**Example (the low-dimensional cases).** For $n = 3$ the spinor bundle has rank $2$ and $\operatorname{Spin}(3) = SU(2)$; the Clifford multiplication is by the Pauli-type matrices. For $n = 4$ the spinor bundle splits into two rank-$2$ bundles; the self-dual and anti-self-dual Weyl curvature act on the two halves. For $n = 2$ the spin module is two-dimensional and $\operatorname{Spin}(2) = \mathrm{U}(1)$, so both chiral halves of the spinor bundle are complex line bundles; the spin structures on a Riemann surface are the square roots $L$ of the canonical bundle, $L^{\otimes 2} = K$, and the Cauchy–Riemann operator on a spin surface is the $\bar\partial$-type operator twisted by $L$.
+**Example (the low-dimensional cases).** For $n = 3$ the spinor bundle has rank $2$ and $\operatorname{Spin}(3) \cong SU(2)$; the Clifford multiplication is by the Pauli-type matrices. For $n = 4$ the spinor bundle splits into two rank-$2$ bundles; the self-dual and anti-self-dual Weyl curvature act on the two halves. For $n = 2$ the spin module is two-dimensional and $\operatorname{Spin}(2) = \mathrm{U}(1)$, so both chiral halves of the spinor bundle are complex line bundles; the spin structures on a Riemann surface are the square roots $L$ of the canonical bundle, $L^{\otimes 2} = K$, and the Cauchy–Riemann operator on a spin surface is the $\bar\partial$-type operator twisted by $L$.
 
 ## The Cauchy–Riemann Operator
 

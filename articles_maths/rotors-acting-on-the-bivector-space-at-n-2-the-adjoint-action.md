@@ -100,7 +100,7 @@ It follows the biquaternion account of *The Endomorphisms of the Biquaternion Al
 
 **Proof.** The line is one-dimensional and the action on it is multiplication by $\det q$, which is a sign for an orthogonal rotor and a general nonzero scalar for a general one.
 
-**Corollary.** The angular information of a rotor at order two is carried by the symmetric plane and by the traceless part, not by the bivector line.
+**Corollary.** The angular information of a rotor at order two is carried by the symmetric plane and by the scalar-free part, not by the bivector line.
 
 **Proof.** The bivector line carries one sign, and the symmetric plane carries a full angle.
 

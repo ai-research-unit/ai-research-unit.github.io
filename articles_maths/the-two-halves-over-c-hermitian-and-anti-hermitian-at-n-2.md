@@ -68,7 +68,7 @@ so the determinant is a quadratic form of inertia $(1,3)$ on $\operatorname{Herm
 **Proposition (the structure constants).** With $S_{a}=i\sigma_{a}$,
 
 $$
-[S_{a},S_{b}]=-2i\,\epsilon_{abc}S_{c},
+[S_{a},S_{b}]=-2\epsilon_{abc}S_{c},
 $$
 
 so $\mathfrak{su}(2)$ is isomorphic to $\mathfrak{so}(3)$.

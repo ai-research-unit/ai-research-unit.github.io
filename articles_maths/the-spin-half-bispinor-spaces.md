@@ -4,13 +4,13 @@
 
 The carrier of spin $\tfrac12$ is a plane, of real dimension $2$, and its closure is not one subspace but a family. This article introduces that family: the plane, the two spinor spaces that contain it, and the bispinor spaces that are their sums.
 
-The family is infinite, and this is the point of the article. There is a plane for every invertible element real axis, two spinor spaces for every axis, and one bispinor space for every axis up to a sign, so the algebra carries infinitely many spaces of each kind. Nothing singles one of them out. The situation is the one known from the Peirce basis: a basis is a choice, and the algebra has as many bases as it has axes.
+The family is infinite, and this is the point of the article. There is a plane for every unit real axis, two spinor spaces for every axis, and one bispinor space for every axis up to a sign, so the algebra carries infinitely many spaces of each kind. Nothing singles one of them out. The situation is the one known from the Peirce basis: a basis is a choice, and the algebra has as many bases as it has axes.
 
 **The question in one line.** Which real subspaces of $\mathbb{B}$ of dimension $2$, $4$ and $8$ carry the action with weights $\pm\tfrac12$.
 
 **The answer in one line.** The plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, the spinor spaces $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$, and their sum, a bispinor space, which as a set is $\mathbb{B}$.
 
-Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation and ${}^{\natural}$ the natural conjugation; $G=\mathrm{U}(2)$ is the group of invertibles; and $\vec u_{\mathrm r}$ is a unit real axis, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it.
+Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation and ${}^{\natural}$ the natural conjugation; $G=\mathrm{U}(2)$ is the group of unitary elements; and $\vec u_{\mathrm r}$ is a unit real axis, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it.
 
 ## The Plane
 

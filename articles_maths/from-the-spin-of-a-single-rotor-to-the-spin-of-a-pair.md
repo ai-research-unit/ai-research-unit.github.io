@@ -30,7 +30,7 @@ is a surjective homomorphism with kernel $\{\pm e_t\}$. A rotation by $2\pi$ cor
 
 **The two names.** $Spin(3)$ and $S^3$ denote one object. For $n\ge4$ the spin group is a cover of $SO(n)$ of dimension $\binom n2$ and is not a sphere; the identification with the spin group is a statement about $n=3$ only.
 
-**Remark (the excluded sentence).** The sentence "the spin group is $SU(2)$" is excluded. $SU(2)$ is the image of the $2\times2$ complex display, and the isomorphism from $S^3$ to that image is a choice of display. Every statement below is a statement about $S^3$ and about real carriers, so the exclusion costs nothing here.
+**Remark (the sentence that costs a display).** The sentence "the spin group is $SU(2)$" is true as an isomorphism and false as an equality. $SU(2)$ is the image of the $2\times2$ complex display, and the isomorphism from $S^3$ to that image is a choice of display. Every statement below is a statement about $S^3$ and about real carriers, so no display is needed here.
 
 ## The Single Rotor
 
@@ -236,9 +236,9 @@ where $Q$ is the orthogonal projection onto the part of label $0$. On carrier A,
 
 ## Corrections
 
-**The sentences that must not be written.** Each is an error of fact or of scope, and each has a repair above.
+**The sentences that must not be written as they stand.** Each is an error of fact or of scope in the form given, and each has a repair above.
 
-1. **"The spin group is $SU(2)$."** The spin group is $S^3$. $SU(2)$ is the image of one complex display, and the isomorphism is a choice.
+1. **"The spin group is $SU(2)$", written as an equality of objects.** As an isomorphism the sentence is true, $\mathrm{Spin}(3)\cong SU(2)$; as an equality it is false. $SU(2)$ is the image of one complex display, and the isomorphism is a choice of display.
 2. **"The $L$-generators give all spins."** They give $\tfrac12$, on $\mathbb{R}^4$. Other spins need other carriers.
 3. **"A boost has $\tilde U_{\mathrm b}^{\natural}\ne\tilde U_{\mathrm b}^{-1}$, so the two-sided operator is not inverse-conjugation on the boost sector."** The premise is false: a boost has norm one, so $\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1}$ and the $\natural$-operator is inverse-conjugation on it. The operator that fails to be inverse-conjugation there is the $*$-operator, since $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}$.
 4. **"The pair contains spin $2$."** It contains $0$ and $1$. Spin $2$ needs four factors.

@@ -60,7 +60,7 @@ This label is not used below. It is named here only so that it is not confused w
 
 ### The Decomposition by a Declared Unit
 
-The second object is a **split of an element**, and it needs one choice. Declare a traceless element $u$ with $u^{2}=-e_t$. Then $R_u^{2}=-\mathrm{id}$, so $R_u$ has eigenvalues $\pm i$, and every element splits as
+The second object is a **split of an element**, and it needs one choice. Declare a scalar-free element $u$ with $u^{2}=-e_t$. Then $R_u^{2}=-\mathrm{id}$, so $R_u$ has eigenvalues $\pm i$, and every element splits as
 
 $$
 \tilde X=\tilde X_L+\tilde X_R,

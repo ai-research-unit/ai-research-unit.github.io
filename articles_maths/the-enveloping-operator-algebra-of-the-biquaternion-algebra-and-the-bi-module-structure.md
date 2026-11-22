@@ -245,7 +245,7 @@ The first is antisymmetric, the second diagonal, the third diagonal-less symmetr
 
 The quaternion formulation of the classical types is complete in dimension three and incomplete in dimension four.
 
-**Remark (the method degrades from three to four dimensions).** The antisymmetric, the diagonal and the diagonal-less symmetric functions exhaust the traceless maps that act on the vector part and fix the scalar. For a general traceless map the same three families no longer suffice: the symmetric part needs a function that mixes the scalar and the vector parts, and the source records that its expression is cumbersome and not useful. The four-dimensional $*$-unitary groups are therefore assembled from two $SO(4)$ factors rather than from a single quaternion closed form — the same asymmetry that the Lie-group article reads as the clean three-dimensional and the less clean four-dimensional parametrisations.
+**Remark (the method degrades from three to four dimensions).** The antisymmetric, the diagonal and the diagonal-less symmetric functions exhaust the maps of zero array trace that act on the vector part and fix the scalar. For a general map of zero array trace the same three families no longer suffice: the symmetric part needs a function that mixes the scalar and the vector parts, and the source records that its expression is cumbersome and not useful. The four-dimensional $*$-unitary groups are therefore assembled from two $SO(4)$ factors rather than from a single quaternion closed form — the same asymmetry that the Lie-group article reads as the clean three-dimensional and the less clean four-dimensional parametrisations.
 
 ## The Base Field and the Real Dimension Count
 

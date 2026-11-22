@@ -48,7 +48,7 @@ $$
 e^{\frac{i}{\hbar}S[\tilde A_\Phi]}\,e_t ,
 $$
 
-a central $*$-unitary element: scale one, angle $S/\hbar$, trivial boost, trivial rotor. The chart's coordinates describe an element of $\mathbb{B}_\Phi$, whose scalar part is a coefficient of $ie_t$ and whose vector part is real. A central element is neither anti-Hermitian nor Hermitian-traceless; it is outside the material sector entirely.
+a central $*$-unitary element: scale one, angle $S/\hbar$, trivial boost, trivial rotor. The chart's coordinates describe an element of $\mathbb{B}_\Phi$, whose scalar part is a coefficient of $ie_t$ and whose vector part is real. A central element is neither anti-Hermitian nor of the imaginary-vector type; it is outside the material sector entirely.
 
 **So the chart cannot read the weight, and the scalar chart's first sentence does not survive.** There the weight and the field value lived in the same chart, so "every configuration has scale one" was a statement inside the chart. Here the weight has a scale and an angle and the chart has neither: the chart's $\varrho$ is the magnitude of the *field value*, and the weight's modulus is one by construction. The two scales are different objects and the chart names only one of them.
 

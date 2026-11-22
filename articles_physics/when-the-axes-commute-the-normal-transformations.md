@@ -200,7 +200,7 @@ $$
 
 ### What the Spectrum Does
 
-The eigenvalues are $e^{\pm i\pi/2}=\pm i$, purely imaginary. So the half-turn is the rotation whose spectrum is as far from real as it can be, and whose rotor is traceless.
+The eigenvalues are $e^{\pm i\pi/2}=\pm i$, purely imaginary. So the half-turn is the rotation whose spectrum is as far from real as it can be, and whose rotor is scalar-free.
 
 ### What Commutes With It
 

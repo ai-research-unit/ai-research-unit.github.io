@@ -4,7 +4,11 @@
 
 **The model is shared and the subject is not.** The algebra $M_2(\mathbb{C})$ is the algebra of complex-linear endomorphisms of $\mathbb{C}^2$, and this article is about $\mathbb{C}^2$ and not about the algebra. The article fixes the space, the three structures it carries and the four readings those structures produce: the bilinear cone, the Hermitian cone, the spinor of the Lorentz group and the state space of the qubit. Every invariant of the algebra — its trace, its determinant, its Peirce decomposition, its conjugations — belongs to the biquaternion pair *$M_2(\mathbb{C})$ Pauli Representation*, and is cited here and never recomputed.
 
-**Why one algebra carries two articles.** The duo-complex category is the only one whose matrix model is an algebra another category already owns. The collision is at the level of the model and not of the subject. There, the objects are the frame, the product, the trace, the determinant, the projectors and the norms **of the algebra**; here, they are the column, the real structure $J$, the three forms, the lines, the flags and the spinor **of the module**. After that division no section and no object is shared: one pair reads $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, the other reads $\mathbb{C}^2$ as a space acted on. The name of the pair keeps the algebra in the title because the algebra is what provides the language, and the qualifier *defining* records that the subject is the defining module.
+**The answer in one line.** The carrier is a complex space of dimension two, so its basis is two vectors and every operator on it is a $2\times2$ matrix. With the reduced biquaternion product $j^{2}=1$ its regular representation is the two matrices $L(1)=I_2$ and $L(j)=\sigma_1$, with the generic member $L(z)=\begin{pmatrix}z_{\blacktriangle}&z_{\blacktriangledown}\\ z_{\blacktriangledown}&z_{\blacktriangle}\end{pmatrix}$, and in the bases $(e_+,e_-)$ and $(1,ij)$ the second generator is $\tfrac12(I_2-\sigma_3)$ and $-J_2$. The ambient space of all operators is $M_2(\mathbb{C})$, of complex dimension four, with the four units $E_{jk}$ as its basis. **Two matrices for the algebra, four units for the ambient space, and the two counts answer two different questions.**
+
+**Why one algebra carries three articles.** The duo-complex category is the only one whose matrix model is an algebra another category already owns. The collision is at the level of the model and not of the subject. There, the objects are the frame, the product, the trace, the determinant, the projectors and the norms **of the algebra**; here, they are the two basis vectors, the two generators, the ambient four units, the real structure $J$, the three forms, the lines, the flags and the spinor **of the module**. After that division no section and no object is shared: one pair reads $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, the other reads $\mathbb{C}^2$ as a space acted on. The name of the pair keeps the algebra in the title because the algebra is what provides the language, and the qualifier *defining* records that the subject is the defining module.
+
+**The three articles of the trio.** This article writes the carriers, the bases and the four readings. Its first companion, *$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms*, writes every quantity that involves two objects: the three pairings of two columns, the two pairings of two operators, the determinant as a quadratic form and the four norms. Its second companion, *$M_2(\mathbb{C})$ Defining Representation : Operators*, writes the two-sided family $u\phi^{\mathsf T}$ and its semigroup. **The split is the split of the biquaternion triplet**: one article for the object, one for the pair of objects, one for the family.
 
 **Why the space matters.** The physics corpus is written against this carrier: the Weyl spinor of the Lorentz group, the pure state of the qubit and the null direction of a light ray are three readings of the same point set, distinguished only by the form that is used on it. The mathematics corpus had the space, the forms and the endomorphisms, but read none of the three readings. This article supplies the reading, and the operator face is the companion article *$M_2(\mathbb{C})$ Defining Representation : Operators*.
 
@@ -17,7 +21,7 @@
 | the spinor | the alternating form $\omega$ and the action of $\mathrm{SL}_2(\mathbb{C})$ | the Weyl spinor and its null vector | complex $2$ |
 | the qubit | the definite $H$ and the action of $\mathrm{SU}(2)$ | the state space, the Bloch ball and its sphere | real $3$ |
 
-**Boundaries.** The space, its two scalar structures, the complex structure $J$ and the norm are *Duo-Complex Numbers*; the three forms with their Gram matrices, their inertias and their isotropic sets are *The Three Canonical Forms on $\mathbb{C}^2$*; the realification and the real and imaginary parts are *The Realification of $\mathbb{C}^2$*; the lattice of subspaces, the dual and the incidence are *The Subspaces of $\mathbb{C}^2$*; the endomorphism algebra, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$ and the centraliser of $J$ are *The Endomorphisms of $\mathbb{C}^2$*; the Hopf fibration is *The Unit Sphere and the Hopf Fibration*, the Grassmannians are *Grassmannians and Stiefel Manifolds*, and the general theory of holomorphic functions of two variables is *Several Complex Variables*. The operators $L_{u}R_{\phi}$, their composition, their length and their adjoints are the companion article. Nothing of the algebra's own structure theory is repeated: the Peirce frame, the determinant of an element and the four norms are the biquaternion pair.
+**Boundaries.** The space, its two scalar structures, the complex structure $J$ and the norm are *Duo-Complex Numbers*; the three forms with their Gram matrices, their isometry groups and their isotropic sets are *The Three Canonical Forms on $\mathbb{C}^2$*; the lattice of subspaces, the dual and the incidence are *The Subspaces of $\mathbb{C}^2$*; the endomorphism algebra, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$ and the centraliser of $J$ are *The Endomorphisms of $\mathbb{C}^2$*; the Hopf fibration is *The Unit Sphere and the Hopf Fibration*, the Grassmannians are *Grassmannians and Stiefel Manifolds*, and the general theory of holomorphic functions of two variables is *Several Complex Variables*. The operators $L_{u}R_{\phi}$, their composition, their length and their adjoints are the companion article. Nothing of the algebra's own structure theory is repeated: the Peirce frame, the determinant of an element and the four norms are the biquaternion pair.
 
 **Conventions.** The space is $V=\mathbb{C}^2$ with the complex basis $e_1,e_2$ and the coordinates
 $$
@@ -37,6 +41,224 @@ so that $H$ is **linear in the first slot and conjugate-linear in the second**, 
 $$
 L_{u}R_{\phi}=u\phi^{\mathsf T},\qquad L_{u}R_{\phi}(v)=\phi(v)\,u .
 $$
+
+## The Carrier and Its Basis
+
+**The carrier is a complex space of dimension two, so its basis has two elements and every operator on it is a $2\times2$ matrix.**
+
+**Definition.** The carrier is $V=\mathbb{C}^{2}$, the set of pairs $u=(u_{\blacktriangle},u_{\blacktriangledown})$ of complex numbers, with the basis
+$$
+e_1=(1,0),\qquad e_2=(0,1),\qquad u=u_{\blacktriangle}e_1+u_{\blacktriangledown}e_2 .
+$$
+
+**Proposition (the carrier has complex dimension two).** The pair $(e_1,e_2)$ is a basis of $V$ over $\mathbb{C}$: every $u$ is $u_{\blacktriangle}e_1+u_{\blacktriangledown}e_2$, and the two coefficients are unique.
+
+*Proof.* The difference of two expressions for $u$ is a relation $\alpha e_1+\beta e_2=0$ with $\alpha,\beta\in\mathbb{C}$, which reads $(\alpha,\beta)=(0,0)$ on the two coordinates, so $\alpha=\beta=0$. ∎
+
+| Field | Dimension | Basis |
+|---|---|---|
+| $\mathbb{C}$ | $2$ | $e_1,e_2$ |
+
+**Every operator is a $2\times2$ matrix, and its two columns are the two images of the two basis vectors.** For $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$,
+$$
+Au=\bigl(au_{\blacktriangle}+bu_{\blacktriangledown},\ cu_{\blacktriangle}+du_{\blacktriangledown}\bigr),
+\qquad
+Ae_1=(a,c),\qquad Ae_2=(b,d).
+$$
+**Two numbers fix a vector and four fix an operator**, and the reason is the display: the first column is the image of $e_1$ and the second is the image of $e_2$.
+
+## The Two Generators
+
+**A product on the carrier makes it the split algebra $\mathbb{C}[j]/(j^{2}-1)$, and its regular representation is two matrices: the identity and one more, written out below in full in three bases.**
+
+**The product.** The product that a pair of duo-complex numbers carries is the reduced biquaternion product (*Duo-Complex Numbers*, *Introduction to the Algebra of the Reduced Biquaternions*),
+$$
+(a+jb)(c+jd)=\bigl(ac+bd\bigr)+j\bigl(ad+bc\bigr),\qquad j^{2}=1,
+$$
+so that with $z=z_{\blacktriangle}+jz_{\blacktriangledown}$ the carrier is the commutative algebra $\mathbb{C}[j]/(j^{2}-1)$, of complex dimension two, with the basis $1,j$.
+
+**The left matrix, in full.** Left multiplication by $z$ is the map $x\mapsto zx$. Read on the basis $(1,j)$ it is the matrix whose first column is the coordinate column of $z\cdot1=z$ and whose second column is the coordinate column of $z\cdot j=z_{\blacktriangledown}+jz_{\blacktriangle}$,
+$$
+L(z)=
+\begin{pmatrix}
+z_{\blacktriangle}&z_{\blacktriangledown}\\
+z_{\blacktriangledown}&z_{\blacktriangle}
+\end{pmatrix},
+\qquad
+L(z)\bigl(x_{\blacktriangle}+jx_{\blacktriangledown}\bigr)
+=\bigl(z_{\blacktriangle}x_{\blacktriangle}+z_{\blacktriangledown}x_{\blacktriangledown}\bigr)+j\bigl(z_{\blacktriangle}x_{\blacktriangledown}+z_{\blacktriangledown}x_{\blacktriangle}\bigr).
+$$
+**Every entry is a coefficient of the element**, the diagonal carries $z_{\blacktriangle}$ twice and the off-diagonal carries $z_{\blacktriangledown}$ twice; the matrix is the split-complex pattern with complex scalars.
+
+**The two generators.** Setting $z=1$ and $z=j$ in the display,
+$$
+L(1)=I_2=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+L(j)=\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad
+L(z)=z_{\blacktriangle}I_2+z_{\blacktriangledown}\sigma_1 .
+$$
+**Two matrices generate the whole family**: with complex coefficients they span the plane $\{z_{\blacktriangle}I_2+z_{\blacktriangledown}\sigma_1\}$, of complex dimension two, and this is the whole regular representation.
+
+**The law.** For all $z_1,z_2$,
+$$
+L(z_1z_2)=L(z_1)L(z_2),
+$$
+which is associativity and nothing else: the second column of the left side is the coordinate column of $z_1(z_2 j)$ and the second column of the right side is $z_1$ applied to the coordinate column of $z_2j$. The first column of $L(z)$ recovers $z$, so $z\mapsto L(z)$ is injective, and its image is the two-dimensional subalgebra of $M_2(\mathbb{C})$ spanned by $I_2$ and $\sigma_1$.
+
+**The trace and the determinant are the two invariants of the element.**
+$$
+\operatorname{tr}L(z)=2z_{\blacktriangle},\qquad
+\det L(z)=z_{\blacktriangle}^{2}-z_{\blacktriangledown}^{2}=\bigl(z_{\blacktriangle}-z_{\blacktriangledown}\bigr)\bigl(z_{\blacktriangle}+z_{\blacktriangledown}\bigr),
+$$
+which is the norm of the reduced biquaternion algebra, $N(z)=z_{\blacktriangle}^{2}-z_{\blacktriangledown}^{2}$ (*Introduction to the Algebra of the Reduced Biquaternions*), and not the form $B=z_{\blacktriangle}^{2}+z_{\blacktriangledown}^{2}$ of the carrier. **The determinant vanishes exactly on the two lines $z_{\blacktriangle}=\pm z_{\blacktriangledown}$**, which are the isotropic lines of the split norm.
+
+**The right family.** The product is commutative, so right multiplication on the carrier is left multiplication and
+$$
+R(z)=L(z)=
+\begin{pmatrix}
+z_{\blacktriangle}&z_{\blacktriangledown}\\
+z_{\blacktriangledown}&z_{\blacktriangle}
+\end{pmatrix}.
+$$
+**On the dual the action is by the transpose**, and since the display is symmetric the two matrices there agree with the two above,
+$$
+R^{\mathsf T}(z)=L(z)^{\mathsf T}=L(z),
+$$
+so that left and right are one family at this size. **This is the one place where the duo-complex reading is simpler than the biquaternion one**, where the eight matrices $\{L(e_\mu)\}$ and $\{R(e_\mu)\}$ are two distinct groups and $L(\tilde Q)\neq R(\tilde Q)$ for every noncentral $\tilde Q$ (*The Axis-Free Construction of the Biquaternion Algebra*, §*The Left Multipliers* and §*The Right Family*). The reason is the commutativity, and nothing else.
+
+**The second generator is not unique, and the reason is that the second basis vector is not.** Three bases of the same algebra, each with the generic matrix written out in full:
+
+| Basis | Generic matrix | $\beta$ | $L(\beta)$ | $2L(\beta)-I_2$ |
+|---|---|---|---|---|
+| $1,\ j$ | $\begin{pmatrix}z_{\blacktriangle}&z_{\blacktriangledown}\\ z_{\blacktriangledown}&z_{\blacktriangle}\end{pmatrix}$ | $j$ | $\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix}$ | $\sigma_1$ |
+| $e_+,\ e_-$ | $\begin{pmatrix}z_{\blacktriangle}+z_{\blacktriangledown}&0\\ 0&z_{\blacktriangle}-z_{\blacktriangledown}\end{pmatrix}$ | $e_-$ | $\begin{pmatrix}0&0\\0&1\end{pmatrix}$ | $-\sigma_3$ |
+| $1,\ k$ | $\begin{pmatrix}z_{\blacktriangle}&iz_{\blacktriangledown}\\ -iz_{\blacktriangledown}&z_{\blacktriangle}\end{pmatrix}$ | $k$ | $-J_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ | $-J_2$ |
+
+with $\beta$ the second basis vector, the idempotents $e_{\pm}=\tfrac12(1\pm j)$, $e_{\pm}^{2}=e_{\pm}$, $e_+e_-=0$, and the third basis vector $k=ij$, $k^{2}=-1$. **Each row is read in its own basis**, the generic matrix and $L(\beta)$ both; in the basis $(1,j)$ the element $e_-$ has the matrix $\tfrac12(I_2-\sigma_1)$, and in its own basis it has $\tfrac12(I_2-\sigma_3)$.
+
+**The three change matrices**, the columns being the new basis vectors in the old basis,
+$$
+P_{1}=\frac12\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad
+P_{2}=\begin{pmatrix}1&0\\0&i\end{pmatrix},\qquad
+L^{\text{new}}=P^{-1}LP,
+$$
+for the passage from $(1,j)$ to $(e_+,e_-)$ and to $(1,k)$ respectively, with
+$$
+P_{1}^{-1}=\begin{pmatrix}1&1\\1&-1\end{pmatrix},\qquad
+P_{2}^{-1}=\begin{pmatrix}1&0\\0&-i\end{pmatrix},\qquad
+P_{1}^{-1}\sigma_1P_{1}=\sigma_3,\qquad
+P_{2}^{-1}(i\sigma_1)P_{2}=-J_2 ,
+$$
+**The identity is $I_2$ in all three bases, and the second generator is $\sigma_1$, $\tfrac12(I_2-\sigma_3)$ or $-J_2=-i\sigma_2$ according to the basis**: the traceless parts are $\sigma_1$, $-\sigma_3$ and $-i\sigma_2$, that is the three Pauli vector matrices up to sign, they are conjugate to one another inside $M_2(\mathbb{C})$, and the choice among them is a choice of basis and not a choice of algebra. **A matrix written without its basis is a matrix of nothing**, and this table is what the sentence means.
+
+**The plane and the rank-one cone.** The members of the plane are $\begin{pmatrix}\alpha&\beta\\ \beta&\alpha\end{pmatrix}$, of determinant $\alpha^{2}-\beta^{2}$, so the plane meets the rank-one locus exactly on the two lines $\alpha=\pm\beta$. **Those are the two isotropic lines of the split form and the two lines of the idempotents $e_+$ and $e_-$**, and the two generators reproduce two of the rank-one directions and not the whole cone.
+
+## The Ambient Space and Its Four Units
+
+**Without a product the operators are all of $M_2(\mathbb{C})$, of complex dimension four, and the four units are its basis; that is the ambient space and not a set of generators.**
+
+**Definition.** The **matrix units** are
+$$
+E_{11}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
+E_{12}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
+E_{21}=\begin{pmatrix}0&0\\1&0\end{pmatrix},\qquad
+E_{22}=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+$$
+that is $E_{jk}=e_je_k^{\mathsf T}$, the matrix with a single $1$, in row $j$ and column $k$.
+
+**Proposition (the multiplication table).** For all $j,k,l,m$, $E_{jk}E_{lm}=\delta_{kl}E_{jm}$, and the sixteen products are
+
+| | $E_{11}$ | $E_{12}$ | $E_{21}$ | $E_{22}$ |
+|---|---|---|---|---|
+| $E_{11}$ | $E_{11}$ | $E_{12}$ | $0$ | $0$ |
+| $E_{12}$ | $0$ | $0$ | $E_{11}$ | $E_{12}$ |
+| $E_{21}$ | $E_{21}$ | $E_{22}$ | $0$ | $0$ |
+| $E_{22}$ | $0$ | $0$ | $E_{21}$ | $E_{22}$ |
+
+*Proof.* The entry in row $j$ and column $m$ of the product is the product of the row $j$ of $E_{jk}$, whose only $1$ is in column $k$, with the column $m$ of $E_{lm}$, whose only $1$ is in row $l$. The product is $1$ exactly when $k=l$, and then it is $E_{jm}$.
+
+**Proposition (the four units are a basis).** The four are independent over $\mathbb{C}$ and are a basis of the operator space, which has complex dimension four; moreover
+$$
+I_2=E_{11}+E_{22},\qquad \operatorname{tr}E_{jk}=\delta_{jk},\qquad \det E_{jk}=0 .
+$$
+*Proof.* If $\sum_{j,k}w_{jk}E_{jk}=0$ then the four entries give $w_{jk}=0$. The identity is the sum of the two diagonal units, and a matrix with one nonzero entry has trace $\delta_{jk}$ and determinant $0$.
+
+**The four units are the four column-row products.** With the dual basis rows $\epsilon^{1}=(1,0)$ and $\epsilon^{2}=(0,1)$,
+$$
+L_{e_1}R_{\epsilon^{1}}=E_{11},\quad
+L_{e_1}R_{\epsilon^{2}}=E_{12},\quad
+L_{e_2}R_{\epsilon^{1}}=E_{21},\quad
+L_{e_2}R_{\epsilon^{2}}=E_{22},\qquad
+L_{u}R_{\phi}=u\phi^{\mathsf T}.
+$$
+**The count $4=2\times2$ is a column-row count**, and the general member has entries $u_j\phi_k$,
+$$
+(u\phi^{\mathsf T})_{jk}=u_j\phi_k,\qquad j,k=1,2 .
+$$
+**The two counts answer two questions.** A representation of a two-dimensional algebra needs two matrices, which are $I_2$ and $L_\beta$; the ambient algebra of all operators needs the four units, and the rank-one cone is a cone inside it. **Neither count contradicts the other and both are exact.**
+
+## The Pauli and the Other Bases
+
+**Five bases of the ambient space, each adapted to one question, and the dictionary between the units and the Pauli matrices written line by line.**
+
+| Basis | The four matrices | Adapted to |
+|---|---|---|
+| the matrix units | $E_{11},E_{12},E_{21},E_{22}$ | the table $\delta_{kl}E_{jm}$ |
+| the Pauli basis | $\sigma_0,\sigma_1,\sigma_2,\sigma_3$ | the Hermitian structure and the qubit |
+| the anti-Hermitian basis | $i\sigma_0,i\sigma_1,i\sigma_2,i\sigma_3$ | the Lie algebra $\mathfrak{u}(2)$ |
+| the symmetric and antisymmetric basis | $E_{11},E_{22},\sigma_1,J_2$ | the transpose and its two eigenspaces |
+| the diagonal-nilpotent basis | $I_2,\sigma_3,E_{12},E_{21}$ | the grading and the Peirce reading |
+
+**The Pauli basis.**
+$$
+\sigma_0=I_2=\begin{pmatrix}1&0\\0&1\end{pmatrix},\quad
+\sigma_1=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad
+\sigma_2=\begin{pmatrix}0&-i\\ i&0\end{pmatrix},\quad
+\sigma_3=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.
+$$
+They are Hermitian, $\sigma_k^{2}=\sigma_0$ for $k=1,2,3$, and $\sigma_1\sigma_2=i\sigma_3$, $\sigma_2\sigma_3=i\sigma_1$, $\sigma_3\sigma_1=i\sigma_2$. **A Hermitian operator is a real combination of the four**, which is the Pauli reading of §*The Hermitian Cone and the Light Cone*. **The second generators of the three bases of §*The Two Generators* are $\sigma_1$, $\tfrac12(I_2-\sigma_3)$ and $-J_2=-i\sigma_2$**: the bases above and the two generators of that section are the same object read in two ways, and both are written in the same four matrices.
+
+**The anti-Hermitian basis.**
+$$
+i\sigma_0=\begin{pmatrix}i&0\\0&i\end{pmatrix},\quad
+i\sigma_1=\begin{pmatrix}0&i\\ i&0\end{pmatrix},\quad
+i\sigma_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\quad
+i\sigma_3=\begin{pmatrix}i&0\\0&-i\end{pmatrix},
+$$
+which are the anti-Hermitian matrices; they close under the commutator, and $i\sigma_2=J_2$.
+
+**The symmetric and the antisymmetric basis.**
+$$
+\operatorname{Sym}=\Bigl\langle\begin{pmatrix}1&0\\0&0\end{pmatrix},\ \begin{pmatrix}0&0\\0&1\end{pmatrix},\ \begin{pmatrix}0&1\\1&0\end{pmatrix}\Bigr\rangle,\qquad
+\operatorname{Skew}=\Bigl\langle J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}\Bigr\rangle,
+$$
+of complex dimensions three and one, the two eigenspaces of the transpose.
+
+**The diagonal-nilpotent basis.** The pair $I_2,\sigma_3$ spans the diagonal, and the pair $E_{12},E_{21}$ is the two nilpotents, with $E_{jk}^{2}=0$ and $E_{12}E_{21}=E_{11}$, $E_{21}E_{12}=E_{22}$.
+
+**The dictionary between the units and the Pauli matrices.** The four expansions
+$$
+\sigma_0=E_{11}+E_{22},\qquad
+\sigma_1=E_{12}+E_{21},\qquad
+\sigma_2=-iE_{12}+iE_{21},\qquad
+\sigma_3=E_{11}-E_{22},
+$$
+invert to
+$$
+E_{11}=\tfrac12(\sigma_0+\sigma_3),\qquad
+E_{22}=\tfrac12(\sigma_0-\sigma_3),\qquad
+E_{12}=\tfrac12(\sigma_1+i\sigma_2),\qquad
+E_{21}=\tfrac12(\sigma_1-i\sigma_2).
+$$
+**Every line of the two displays is an identity between two $2\times2$ matrices**, and the eight lines together are the whole dictionary: the first display writes the Pauli matrices in the units and the second writes the units in the Pauli matrices. **The units make the multiplication trivial, the Pauli basis makes the dagger trivial, and no basis makes both trivial.**
+
+**The biquaternion basis.** The algebra pair uses the images of the four units of $\mathbb{B}\cong M_2(\mathbb{C})$,
+$$
+\mathrm I_2=\begin{pmatrix}1&0\\0&1\end{pmatrix},\quad
+-i\sigma_1=\begin{pmatrix}0&-i\\-i&0\end{pmatrix},\quad
+-i\sigma_2=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\quad
+-i\sigma_3=\begin{pmatrix}-i&0\\0&i\end{pmatrix},
+$$
+each of determinant one. It is the basis of *$M_2(\mathbb{C})$ Pauli Representation*, §*The Images of the Four Units*.
 
 ## The Column, the Dual and the Three Structures
 
@@ -58,26 +280,26 @@ $$
 
 ### The Complex Structure
 
-**Definition.** The **complex structure** is the real operator $J$ of multiplication by $i$, $J(u)=iu$ (*Duo-Complex Numbers*). On $V$ it is the scalar $iI_2$; on the realification $\mathbb{R}^4$ it is the block matrix with two copies of $\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, and it satisfies
+**Definition.** The **complex structure** is multiplication by $i$, $J(u)=iu$ (*Duo-Complex Numbers*). On $V$ it is the scalar $iI_2$, and
 $$
-J^{2}=-I_4 .
+J^{2}=-I_2 .
 $$
 
-**Proposition (the $\mathbb{C}$-linear maps are the maps that commute with $J$).** A real-linear $T:\mathbb{R}^4\to\mathbb{R}^4$ is complex-linear exactly when $TJ=JT$.
+**Proposition (the $\mathbb{C}$-linear maps are the maps that commute with $J$).** For a complex-linear map $T:V\to V$ one has $TJ=JT$, and conversely.
 
-*Proof.* If $T$ is complex-linear then $T(iu)=iT(u)$, which is $TJ=JT$. Conversely, if $TJ=JT$ then $T((\alpha+i\beta)u)=\alpha T(u)+\beta T(Ju)=\alpha T(u)+\beta J T(u)=(\alpha+i\beta)T(u)$ for real $\alpha,\beta$, which is the complex linearity.
+*Proof.* If $T$ is complex-linear then $T(iu)=iT(u)$, which is $TJ=JT$. Conversely, if $TJ=JT$ then $T((\alpha+i\beta)u)=\alpha T(u)+\beta T(Ju)=\alpha T(u)+\beta J T(u)=(\alpha+i\beta)T(u)$ for complex $\alpha,\beta$, which is the complex linearity. ∎
 
-**The centraliser of $J$ in the real algebra is therefore the complex algebra.** The real endomorphism algebra of dimension sixteen splits as $\operatorname{End}_{\mathbb{C}}(V)\oplus\operatorname{Hom}_{\bar{\mathbb{C}}}(V,V)$, of dimensions $8+8$, and the centraliser of $J$ is the first summand (*The Endomorphisms of $\mathbb{C}^2$*, and *The Realification of $\mathbb{C}^2$*). **The operator $J$ is the single datum that makes the real reading complex, and it is invisible to every complex-linear statement.**
+**The complex structure is a scalar, and that is the whole difference from the size-four case.** At this size $J=iI_2$ commutes with every matrix, so **every operator of the carrier is complex-linear**, and the centraliser of $J$ is the whole of $M_2(\mathbb{C})$; the scalar $i$ is the only complex structure of the space, up to sign.
 
 ### The Three Structures
 
 **Definition.** The three canonical forms of the carrier are $H$, $B$ and $\omega$ above. Their properties are proved in *The Three Canonical Forms on $\mathbb{C}^2$*; the table collects them with the two entries this article needs, the isometry group and the isotropic set.
 
-| Form | Kind | Inertia, realified | Isotropic set | Isometry group |
-|---|---|---|---|---|
-| $H$ | Hermitian, definite | $(4,0)$ | $\{0\}$ | $\mathrm{U}(2)$ |
-| $B$ | symmetric bilinear | $(2,2)$ | two complex lines | $\mathrm{O}_2(\mathbb{C})$ |
-| $\omega$ | alternating bilinear | symplectic | every complex line | $\mathrm{SL}_2(\mathbb{C})$ |
+| Form | Kind | Isotropic set | Isometry group |
+|---|---|---|---|
+| $H$ | Hermitian, definite | $\{0\}$ | $\mathrm{U}(2)$ |
+| $B$ | symmetric bilinear | two complex lines | $\mathrm{O}(2,\mathbb{C})$ |
+| $\omega$ | alternating bilinear | every complex line | $\mathrm{SL}_2(\mathbb{C})$ |
 
 **Proposition (the isometry group of $\omega$ is the special linear group).** For every $A\in M_2(\mathbb{C})$,
 $$
@@ -90,21 +312,6 @@ so $\omega(Au,Av)=\det(A)\,\omega(u,v)$, and $A$ preserves $\omega$ exactly when
 **Remark (the readings and their forms).** The spinor reading uses $\omega$ and the real structure; the qubit reading uses the definite $H$; the two readings put the same matrices on the same carrier and **differ only in the form that is used**. The bilinear cone uses $B$ and the dual, the Hermitian cone uses $H$ and the dagger, and no reading uses two forms at once.
 
 **Remark (three forms, three groups, three geometries).** The isometry group of $H$ is compact, that of $B$ is the complex orthogonal group of the split plane, and that of $\omega$ is the special linear group, which is the double cover of the Lorentz group developed below. **The same carrier carries a compact geometry, a split orthogonal geometry and a Lorentz geometry, and the choice of the form is the choice of the geometry.** No statement of this article is allowed to leave the form implicit.
-
-### The Real and the Imaginary Parts
-
-**The three complex forms produce six real forms, and the six are not new objects: they are the real and imaginary parts of the three.**
-
-| Real form | Kind | Role |
-|---|---|---|
-| $\operatorname{Re}H$ | symmetric, positive definite | the Euclidean metric of $\mathbb{R}^4$ |
-| $\operatorname{Im}H$ | alternating, of type $(1,1)$ | the Kähler form |
-| $\operatorname{Re}B$ | symmetric, inertia $(2,2)$ | the split metric |
-| $\operatorname{Im}B$ | symmetric, inertia $(2,2)$ | the second split metric |
-| $\operatorname{Re}\omega$ | symplectic | the real symplectic form |
-| $\operatorname{Im}\omega$ | symplectic | the second real symplectic form |
-
-**The form $\operatorname{Im}H$ is not $\omega$.** The first is invariant under $J$ and the second changes sign, $\omega(Ju,Jv)=-\omega(u,v)$; the Kähler form of the space is $-\operatorname{Im}H$ and not $\omega$ (*The Three Canonical Forms on $\mathbb{C}^2$*). The distinction matters here because the two cones below are cut by $\operatorname{Re}H$ and by $\det$, and not by the alternating forms.
 
 ## The Lines, the Flags and the Projective Line
 
@@ -199,13 +406,13 @@ $$
 \det M=w_{11}w_{22}-w_{12}w_{21}=0 .
 $$
 
-**Proposition (the determinant is a quadratic form of inertia $(2,2)$).** The polar form of $\det$ is
+**Proposition (the determinant is a nondegenerate quadratic form).** The polar form of $\det$ is
 $$
 \langle M,N\rangle=\tfrac12\bigl(w_{11}z_{22}+z_{11}w_{22}-w_{12}z_{21}-z_{12}w_{21}\bigr),
 $$
-whose Gram matrix has the eigenvalues $\pm\tfrac12$, each twice; the cone $\mathcal{C}$ is the isotropic cone of the form.
+and it is nondegenerate; the cone $\mathcal{C}$ is its isotropic cone.
 
-*Proof.* The polar form is computed from $\det(M+N)-\det M-\det N$ and is symmetric and bilinear. In the basis $(E_{11},E_{12},E_{21},E_{22})$ its Gram matrix has $\tfrac12$ in the entries $(1,4)$ and $(4,1)$, $-\tfrac12$ in the entries $(2,3)$ and $(3,2)$, and zero elsewhere; with the ordering $(E_{11},E_{22},E_{12},E_{21})$ it is block diagonal, with the blocks $\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}$ and $-\tfrac12\begin{pmatrix}0&1\\1&0\end{pmatrix}$, so its eigenvalues are $\pm\tfrac12$ twice each and the inertia is $(2,2)$. The isotropic set of the form is $\det M=0$.
+*Proof.* The polar form is computed from $\det(M+N)-\det M-\det N$ and is symmetric and bilinear. Nondegeneracy: paired with $I_2$ it reads $\tfrac12\operatorname{tr}N$, with $E_{11}-E_{22}$ it reads $\tfrac12(z_{22}-z_{11})$, with $E_{12}$ it reads $-\tfrac12 z_{21}$ and with $E_{21}$ it reads $-\tfrac12 z_{12}$, four independent functionals of $N$, so no nonzero $M$ is orthogonal to every $N$. The isotropy is $\det M=\langle M,M\rangle=0$. ∎
 
 ### The Isotropic Lines
 
@@ -224,8 +431,6 @@ so $T^{\mathsf T}T=0$ exactly when the column $u$ lies on one of the two isotrop
 *Proof.* $T^{\mathsf T}=\phi u^{\mathsf T}$, so $T^{\mathsf T}T=\phi\,(u^{\mathsf T}u)\,\phi^{\mathsf T}=\sigma\,\phi\phi^{\mathsf T}$, the scalar commuting with the two columns. The matrix $\phi\phi^{\mathsf T}$ is nonzero for $\phi\neq0$, so the vanishing is exactly $\sigma=0$, which is the isotropy of the column; the second statement is the same computation with the two slots exchanged.
 
 **The isotropic columns are the null directions of the operator.** A member of the cone with an isotropic column has $T^{\mathsf T}T=0$, hence is **isotropic** for the transpose form of the operator space, $\langle T,T\rangle=\operatorname{tr}(T^{\mathsf T}T)=0$. **This is isotropy and not nilpotence**: $T^{2}=\phi(u)T$ vanishes only when $\phi(u)=0$, which is a second condition on the row and not on the column, so a member with an isotropic column and $\phi(u)\neq0$ is a rank-one matrix that is null without being nilpotent. **The two isotropic lines of $B$ are therefore the two directions on which the operator becomes null for the transpose form**, and this is the only place where the isotropy of $B$ is visible as a property of an operator rather than as a property of a vector.
-
-**Remark (the same inertia, and no natural identification).** The inertia is the one of $\operatorname{Re}B$ on $V$, and the coincidence is not an accident of arithmetic: both are the split form in four real dimensions. **It is not an identification of the two spaces**, because $\det$ is a form on the operator space and $B$ is a form on the carrier, and no canonical map exchanges them beyond the rank-one correspondence itself.
 
 ## The Hermitian Cone and the Light Cone
 
@@ -298,9 +503,9 @@ and it is onto that cone; the trace is $\lVert u\rVert^{2}=2t$.
 | | bilinear cone $\mathcal{C}$ | Hermitian cone $\mathcal{C}_{H}$ |
 |---|---|---|
 | members | $u\phi^{\mathsf T}$ | $uu^{\dagger}$, positive semidefinite |
-| ambient | $M_2(\mathbb{C})$, real dimension $8$ | the Hermitian subspace, real dimension $4$ |
+| ambient | $M_2(\mathbb{C})$, complex dimension $4$ | the Hermitian subspace, dimension $4$ over $\mathbb{R}$ |
 | equation | $\det M=0$ | $\det M=0$ on the Hermitian subspace |
-| dimension | complex $3$, real $6$ | real $3$ |
+| dimension | complex $3$ | real $3$ |
 | projectivisation | $\mathbb{P}^{1}\times\mathbb{P}^{1}$ | $\mathbb{P}^{1}$ |
 | rulings | two, independent | one, the diagonal |
 | parameter | $(u,\phi)$ modulo the scaling | $u$ modulo the phase |
@@ -448,9 +653,9 @@ is a fibre bundle with fibre $S^{1}$, and its fibres are the phase circles $u\ma
 
 ## Summary
 
-The carrier of this pair is the module $V=\mathbb{C}^{2}$, of complex dimension two and real dimension four, and the article reads it through the three canonical forms. The Hermitian form $H$ is definite, of realified inertia $(4,0)$, with isometry group $\mathrm{U}(2)$; the symmetric form $B$ is indefinite of inertia $(2,2)$, with isometry group $\mathrm{O}_2(\mathbb{C})$ and isotropic set two complex lines; the alternating form $\omega$ is nondegenerate, with isometry group $\mathrm{SL}_2(\mathbb{C})$ because $A^{\mathsf T}J_2A=\det(A)J_2$, and every complex line is isotropic for it. Each of the three gives its own identification $V\to V^{*}$, and the third is the one that differs in linearity: $B$ and $\omega$ are complex bilinear and $H$ is sesquilinear.
+The carrier of this trio is the module $V=\mathbb{C}^{2}$, of complex dimension two, with the basis $e_1=(1,0)$ and $e_2=(0,1)$. An operator is a $2\times2$ matrix read by its two images $Ae_1=(a,c)$ and $Ae_2=(b,d)$. With the reduced biquaternion product $(a+jb)(c+jd)=(ac+bd)+j(ad+bc)$, $j^{2}=1$, the carrier is the commutative algebra $\mathbb{C}[j]/(j^{2}-1)$, and its regular representation is generated by the two matrices $L(1)=I_2$ and $L(j)=\sigma_1$, with $$L(z)=\begin{pmatrix}z_{\blacktriangle}&z_{\blacktriangledown}\\ z_{\blacktriangledown}&z_{\blacktriangle}\end{pmatrix},\qquad \operatorname{tr}L(z)=2z_{\blacktriangle},\qquad \det L(z)=z_{\blacktriangle}^{2}-z_{\blacktriangledown}^{2}.$$ In the bases $(e_+,e_-)$ and $(1,ij)$ the same family is the diagonal and the rotation form, and the second generator is $\tfrac12(I_2-\sigma_3)$ and $-J_2$; the traceless parts are $\sigma_1$, $-\sigma_3$ and $-i\sigma_2$, the three Pauli vector matrices up to sign, the three Pauli vector matrices. The right family equals the left, because the product is commutative. The two-sided family $\{L_uR_v\}$ is the plane spanned by the two generators, and the plane meets the rank-one cone in the two isotropic lines $\alpha=\pm\beta$. The ambient algebra of all operators has complex dimension four and the basis of the four matrix units $E_{jk}=e_je_k^{\mathsf T}$, with $E_{jk}E_{lm}=\delta_{kl}E_{jm}$, $I_2=E_{11}+E_{22}$ and $4=2\times2$ column-row products $L_{e_j}R_{\epsilon^{k}}$. Five bases of the ambient space are written out — the units, the Pauli basis, the anti-Hermitian basis, the symmetric and antisymmetric pair, and the diagonal-nilpotent pair — with the dictionary between the units and the Pauli matrices written line by line. The article then reads the space through the three canonical forms.
 
-A line is a point of $\mathbb{P}^{1}$, a rank-one Hermitian projector $\pi_u=uu^{\dagger}/(u^{\dagger}u)$, and a pure state; the projective line is $S^{2}$; a flag is a line with a ray, that is invertible column, and the flags are $S^{3}$ with the Hopf fibration over the lines. The rank-one operators $u\phi^{\mathsf T}$ form a cone of complex dimension three whose projectivisation is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, with the determinant as its equation and as a quadratic form of inertia $(2,2)$; the cone spans the operator space although the identity is not in it. The Hermitian rank-one matrices $uu^{\dagger}$ form a cone of real dimension three which is the fixed locus of the dagger inside the bilinear cone up to a real scale, with $\det=0$ and $\operatorname{tr}=\lVert u\rVert^{2}$, and which the Pauli coordinates identify with the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$. The two cones differ in dimension, in projectivisation and in their rulings, and the collapse of the two rulings to one is the phase quotient.
+A line is a point of $\mathbb{P}^{1}$, a rank-one Hermitian projector $\pi_u=uu^{\dagger}/(u^{\dagger}u)$, and a pure state; the projective line is $S^{2}$; a flag is a line with a ray, that is invertible column, and the flags are $S^{3}$ with the Hopf fibration over the lines. The rank-one operators $u\phi^{\mathsf T}$ form a cone of complex dimension three whose projectivisation is the Segre quadric $\mathbb{P}^{1}\times\mathbb{P}^{1}$, with the determinant as its equation and as a nondegenerate quadratic form; the cone spans the operator space although the identity is not in it. The Hermitian rank-one matrices $uu^{\dagger}$ form a cone of real dimension three which is the fixed locus of the dagger inside the bilinear cone up to a real scale, with $\det=0$ and $\operatorname{tr}=\lVert u\rVert^{2}$, and which the Pauli coordinates identify with the future light cone $t^{2}-\lvert\vec x\rvert^{2}=0$, $t\ge0$. The two cones differ in dimension, in projectivisation and in their rulings, and the collapse of the two rulings to one is the phase quotient.
 
 The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor of type $(\tfrac12,0)$, and its conjugate is the second module of the pair; the duality through $\omega$ makes the dual module the module itself, and a spinor produces a null vector by $u\mapsto uu^{\dagger}$, with the double cover of the Lorentz group of kernel $\{\pm I_2\}$ and the two signs of the spinor giving the same vector. On the trace-one slice the positive cone is the Bloch ball, the Bloch vector is $\vec s=2\vec x$, the purity is $\operatorname{tr}\rho^{2}=\tfrac12(1+\lvert\vec s\rvert^{2})$, and the pure states are the unit sphere, which is the projective line. The operators of the carrier, one-sided and two-sided, their composition, their length and their adjoints, are the companion article *$M_2(\mathbb{C})$ Defining Representation : Operators*.
 
@@ -458,7 +663,7 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 
 | Symbol | Meaning |
 |---|---|
-| $V=\mathbb{C}^{2}$ | the carrier, of complex dimension $2$ and real dimension $4$ |
+| $V=\mathbb{C}^{2}$ | the carrier, of complex dimension $2$ |
 | $e_1,e_2$ | the complex basis |
 | $u_{\blacktriangle},u_{\blacktriangledown}$ | the two complex coordinates |
 | $V^{*}$, $\phi$ | the dual and the row |
@@ -473,7 +678,8 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 | $\pi_u$ | the projector $uu^{\dagger}/(u^{\dagger}u)$ |
 | $\mathbb{P}^{1}$ | the projective line, the set of complex lines |
 | $\varkappa$ | the affine coordinate $u_{\blacktriangledown}/u_{\blacktriangle}$ |
-| $\sigma_0,\sigma_1,\sigma_2,\sigma_3$ | the Pauli basis of the Hermitian matrices |
+| $\sigma_0,\sigma_1,\sigma_2,\sigma_3$ | the Pauli basis of the Hermitian matrices; $\sigma_0=I_2$ |
+| $i\sigma_0,i\sigma_1,i\sigma_2,i\sigma_3$ | the anti-Hermitian basis, of $\mathfrak{u}(2)$ |
 | $t,x,y,z$ | the Pauli coordinates, $t=\tfrac12\operatorname{tr}M$ |
 | $\vec s=2\vec x$ | the Bloch vector |
 | $\rho$ | a state, Hermitian positive semidefinite of trace one |
@@ -482,6 +688,6 @@ The space is the defining module of $\mathrm{SL}_2(\mathbb{C})$, the Weyl spinor
 
 ## Further Reading
 
-*Duo-Complex Numbers* fixes the space, its two scalar structures, the complex structure and the norm, and is the entry point of the category. *The Three Canonical Forms on $\mathbb{C}^2$* proves the properties of $H$, $B$ and $\omega$, their Gram matrices, their inertias and their isotropic sets. *The Realification of $\mathbb{C}^2$* gives the real picture, the six real forms and the decomposition of the real endomorphism algebra. *The Subspaces of $\mathbb{C}^2$* carries the lattice, the flag, the dual, the Grassmannians and the isotropic and Lagrangian subspaces. *The Endomorphisms of $\mathbb{C}^2$* carries the algebra $M_2(\mathbb{C})$, the conjugate-linear maps, $\mathrm{GL}_2(\mathbb{C})$, $\mathrm{PGL}_2(\mathbb{C})$, the centraliser of $J$ and the biquaternion identification. *The Unit Sphere and the Hopf Fibration* carries the fibration, and *Grassmannians and Stiefel Manifolds* the general Grassmannian picture of which $\mathbb{P}^{1}$ is the first case.
+*Duo-Complex Numbers* fixes the space, its two scalar structures, the complex structure and the norm, and is the entry point of the category. *$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms* is the second article of this trio: the three pairings of two columns, their six real forms, the two pairings of two operators, the determinant as a quadratic form and the four norms. *$M_2(\mathbb{C})$ Defining Representation : Operators* is the third: the two-sided family and its semigroup. *The Three Canonical Forms on $\mathbb{C}^2$* proves the properties of $H$, $B$ and $\omega$, their Gram matrices, their isometry groups and their isotropic sets. *Duo-Complex Numbers* fixes the space, its scalar structures, the complex structure and the norm. *The Realification of $\mathbb{C}^2$* is a separate article of the corpus and is not used here: **this trio reads the carrier as a complex space of dimension two and every operator as a $2\times2$ complex matrix**, and no object of the three articles is a matrix of size four or a quadruple of real coordinates.
 
 On the algebra side, *$M_2(\mathbb{C})$ Pauli Representation* and its operators companion read $\mathbb{B}\cong M_2(\mathbb{C})$ as a set of matrices, with the frame, the Peirce decomposition, the trace, the determinant, the projectors, the adjugate and the norms. The companion of this article is *$M_2(\mathbb{C})$ Defining Representation : Operators*, which treats $L_{u}R_{\phi}$ as an operator, its composition, its length, its adjoints and the two cones as sets of operators. For the general size, *$M_4(\mathbb{C})$ Pauli Representation* gives the rank criterion and the determinantal variety, of which §*The Bilinear Cone and the Segre Quadric* is the two-dimensional case. For the analysis of the space, *Several Complex Variables* is the general theory and *Analysis on $\mathbb{C}^2$* its two-variable case.

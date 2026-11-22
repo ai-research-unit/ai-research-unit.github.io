@@ -6,7 +6,7 @@ The spin group is the group of unit quaternions, that is the sphere $S^3$. This 
 
 **The thread in one paragraph.** To act on an algebra while preserving its multiplication, an element must act on both sides. One-sided multiplication is not an algebra map. The two-sided product is therefore forced, and it is the only inner-type action available. The spin group is the compact group of elements whose two-sided product is conjugation by the inverse with no scalar in front. Left multiplication by such an element is a real $4\times4$ orthogonal matrix, the three generators are real antisymmetric matrices, and the sum of their squares is a multiple of the identity. That multiple is $-\tfrac34$, and the Hermitian normalization is $+\tfrac34$. The number $\tfrac34$ is $s(s+1)$ at $s=\tfrac12$.
 
-**What the article does not claim.** Three sentences are excluded by construction, and each is repaired in *Corrections*. The spin group is not $SU(2)$; $SU(2)$ is one of its displays. The spin group is not a matrix group; it is $S^3$, and a matrix group is an image of it. The three $L$-generators do not give all spins; they give one spin, on one carrier.
+**What the article does not claim.** Three sentences are excluded by construction, and each is repaired in *Corrections*. The spin group is $S^3=\mathrm{Spin}(3)$; it is isomorphic to $SU(2)$, and $SU(2)$ is the image of one of its displays. The spin group is not any matrix group; it is $S^3$, and a matrix group is an image of it. The three $L$-generators do not give all spins; they give one spin, on one carrier.
 
 **Roadmap.** The forcing of the two-sided form comes first, with the four conjugations of the biquaternion algebra and the two two-sided operators that matter. Then the spin group, its identification with the spin group, and its double cover. Then the $L$-generators, the Casimir, and the extraction of $\tfrac12$. Then two rotors, the split into $0\oplus1$, and the reason the split is forced. Then what the generators do not give, the corrections, and the numerical check.
 
@@ -299,9 +299,9 @@ The three values are $s(s+1)$ at $s=0,\tfrac12,1$. The same quadratic element gi
 
 ## Corrections
 
-**The sentences that must not be written.** Each is a real error, and each is repaired by one of the sections above.
+**The sentences that must not be written as they stand.** Each is a real error in the form given, and each is repaired by one of the sections above.
 
-1. **"The spin group is $SU(2)$."** The spin group is $S^3$. $SU(2)$ is the image of one display, the $2\times2$ complex one, and the isomorphism is a choice.
+1. **"The spin group is $SU(2)$", written as an equality of objects.** As an isomorphism the sentence is true, $\mathrm{Spin}(3)\cong SU(2)$; as an equality it is false. $SU(2)$ is the image of one display, the $2\times2$ complex one, and the isomorphism is that display.
 2. **"The spin group is a matrix group."** It is a subset of $\mathbb{H}$, which is an algebra. Every matrix group in this article is an image of it under a display.
 3. **"$Spin(n)$ is $S^3$."** $Spin(3)$ is $S^3$. For $n\ge4$ the spin group is a cover of $SO(n)$ of dimension $\binom n2$, and it is not a sphere.
 4. **"The $L$-generators give all spins."** They give $\tfrac12$, on $\mathbb{R}^4$. Another spin needs another carrier, and the same Casimir read there.

@@ -77,7 +77,7 @@ The decomposition of the algebra. Every element of $\mathbb{B}$ is a sum of four
 | real central | $a\,e_t$, $a\in\mathbb{R}$ | $1$ | the scale rate |
 | imaginary central | $ib\,e_t$, $b\in\mathbb{R}$ | $1$ | the phase rate |
 | Hermitian traceless | $i\vec g$, $\vec g\in\mathbb{R}^{3}$ | $3$ | the boost connection |
-| anti-Hermitian traceless | $\vec v$, $\vec v\in\mathbb{R}^{3}$ | $3$ | the rotor connection |
+| anti-Hermitian scalar-free | $\vec v$, $\vec v\in\mathbb{R}^{3}$ | $3$ | the rotor connection |
 
 The four add to eight, which is the algebra's real dimension, and the decomposition is direct because the types are distinguished by the two conjugations.
 
@@ -89,7 +89,7 @@ $$
 
 and the four terms are, in order, a real central number, an imaginary central number, a Hermitian scalar-free element and an anti-Hermitian traceless element. **The bracket is not four equations; it is one element read in its four types.**
 
-The symbol occupies two of the four. In the constant setting the symbol is $\hbar\omega\,e_t-\tilde H_\Psi$, whose imaginary central part vanishes and whose anti-Hermitian scalar-free part vanishes. What remains is the real central part $\hbar\omega-h_t$ and the Hermitian traceless part $i\vec h_\Psi$. The phase type and the rotor type are empty in frequency space, and the emptiness is the statement that a plane wave has a constant phase rate and a constant rotor.
+The symbol occupies two of the four. In the constant setting the symbol is $\hbar\omega\,e_t-\tilde H_\Psi$, whose imaginary central part vanishes and whose anti-Hermitian scalar-free part vanishes. What remains is the real central part $\hbar\omega-h_t$ and the imaginary-vector part $i\vec h_\Psi$. The phase type and the rotor type are empty in frequency space, and the emptiness is the statement that a plane wave has a constant phase rate and a constant rotor.
 
 The empty types are filled by a varying word. A field whose phase rate varies with $t'$, or whose rotor turns, has a logarithmic derivative with all four types present. Its transform is then not supported at one frequency: the effective number of modes of a chirped unit is $5.64$ at a chirp rate of $1$ and $26.20$ at a rate of $4$ on a grid of sixty-four points, against $1.00$ for an integer tone. The symbol is a model of the bracket, and the model is faithful exactly when the bracket is constant.
 

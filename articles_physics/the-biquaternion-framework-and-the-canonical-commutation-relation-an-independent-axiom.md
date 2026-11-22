@@ -50,7 +50,7 @@ In the framework the obstruction is immediate and is worth stating in its own no
 
 **Theorem.** There are no $\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}\in\mathbb{B}_{\Psi}$ and no non-zero central real $\lambda$ with $[\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]=\lambda\,i\,e_t$.
 
-Proof. Write $\tilde{H}_{\Psi,1}=h_{t,1}\,e_t+i\vec h_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=h_{t,2}\,e_t+i\vec h_{\Psi,2}$ with $h_{t,1},h_{t,2}\in\mathbb{R}$ and $\vec h_{\Psi,1},\vec h_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$; the cross terms contribute the symmetric $\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ part, and the antisymmetric part of the product is traceless. The same computation with $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ exchanged gives the identical scalar part, so
+Proof. Write $\tilde{H}_{\Psi,1}=h_{t,1}\,e_t+i\vec h_{\Psi,1}$ and $\tilde{H}_{\Psi,2}=h_{t,2}\,e_t+i\vec h_{\Psi,2}$ with $h_{t,1},h_{t,2}\in\mathbb{R}$ and $\vec h_{\Psi,1},\vec h_{\Psi,2}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{H}_{\Psi,1}\tilde{H}_{\Psi,2})=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$; the cross terms contribute the symmetric $\vec h_{\Psi,1}\cdot\vec h_{\Psi,2}$ part, and the antisymmetric part of the product is scalar-free. The same computation with $\tilde{H}_{\Psi,1}$ and $\tilde{H}_{\Psi,2}$ exchanged gives the identical scalar part, so
 $$
 \boxed{\;\mathrm{Sc}\bigl([\tilde{H}_{\Psi,1},\tilde{H}_{\Psi,2}]\bigr)=0\;}.
 $$

@@ -529,7 +529,7 @@ $$
 \mathcal{C}=\{u\phi^{\mathsf T}:u\in V,\ \phi\in V^{*}\},
 $$
 
-defined here as a set and nothing more. The pair *$M_2(\mathbb{C})$ Defining Representation* and its operators companion study the same cone as a semigroup and give it its composition law; the present article uses the set and its nonnegative span only. The decomposition says that every operator is a nonnegative linear combination of at most two points of that cone,
+defined here as a set and nothing more. The trio *$M_2(\mathbb{C})$ Defining Representation*, its products-forms-norms companion and its operators companion study the same cone as a semigroup and give it its composition law; the present article uses the set and its nonnegative span only. The decomposition says that every operator is a nonnegative linear combination of at most two points of that cone,
 
 $$
 A=\sigma_1u_1v_1^{\dagger}+\sigma_2u_2v_2^{\dagger},
@@ -740,6 +740,7 @@ The freedom of the decomposition is a phase per term when the weights are distin
 - [Duo-Complex Numbers](duo-complex-numbers.html), for the space, the two scalar structures, the complex structure $J$ and the Hermitian form $H$.
 - [The Endomorphisms of $\mathbb{C}^2$](the-endomorphisms-of-c2.html), for the algebra $\operatorname{End}_{\mathbb{C}}(\mathbb{C}^2)\cong M_2(\mathbb{C})$, its units, its trace and determinant, and the centraliser of $J$.
 - [$M_2(\mathbb{C})$ Defining Representation](m2c-defining-representation.html), for the space as the defining module, the three canonical forms and the two cones as point sets.
+- [$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms](m2c-defining-representation-products-forms-norms.html), for the pairings of two columns and of two operators, the determinant as a quadratic form and the four norms.
 - [$M_2(\mathbb{C})$ Defining Representation : Operators](m2c-defining-representation-operators.html), for the cone of rank-one operators, its composition law and the length that this article computes.
 - [The Three Canonical Forms on $\mathbb{C}^2$](the-three-canonical-forms-on-c2.html), for the Gram matrices and the real pictures of $H$, $B$ and $\omega$.
 - [The Classical Groups of $\mathbb{C}^2$](the-classical-groups-of-c2.html), for $\mathrm{U}(2)$, $\mathrm{SU}(2)$ and the groups defined by the three forms.

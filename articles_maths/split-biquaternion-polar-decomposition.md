@@ -453,7 +453,7 @@ $$
 \tilde{Q} = \tilde{U} , \qquad \langle\tilde{Q}\rangle_{\natural} = e_t .
 $$
 
-The element is its own rotor: the unit sphere of the algebra is $SU(2)$ $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ itself, of dimension six, and every element of it is already in polar form. This is the case in which the two factors of the decomposition are one, and it is the case the rotation theory of the companion article uses, in which a rotation of $\mathbb{R}^4$ is written by a pair of unit quaternions alone. The element $j = \tilde\Pi_1 - \tilde\Pi_2$ of the second example above is the least trivial illustration, its two halves being $e_t$ and $-e_t$, and the sign of the second half is the whole of its content.
+The element is its own rotor: the unit sphere of the algebra is $\mathrm{Sp}(1)\times\mathrm{Sp}(1)$ itself, of dimension six, and every element of it is already in polar form. This is the case in which the two factors of the decomposition are one, and it is the case the rotation theory of the companion article uses, in which a rotation of $\mathbb{R}^4$ is written by a pair of unit quaternions alone. The element $j = \tilde\Pi_1 - \tilde\Pi_2$ of the second example above is the least trivial illustration, its two halves being $e_t$ and $-e_t$, and the sign of the second half is the whole of its content.
 
 ### The Central Elements
 

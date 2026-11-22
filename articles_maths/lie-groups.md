@@ -268,7 +268,7 @@ Under it $\dim H = \dim\mathrm{H}$, and inclusions correspond to inclusions. For
 | $\mathbb{R}^n$ | yes | yes | no |
 | $T^n$, $n \geq 1$ | yes | no | yes |
 | $S^1 = \mathrm{U}(1)$ | yes | no | yes |
-| $S^3 = SU(2) = Sp(1)$ | yes | yes | yes |
+| $S^3 \cong SU(2) \cong Sp(1)$ | yes | yes | yes |
 | $GL_n(\mathbb{R})$, $n \geq 1$ | no | no | no |
 | $GL_n(\mathbb{C})$, $n \geq 1$ | yes | no | no |
 | $SL_n(\mathbb{R})$, $n \geq 2$ | yes | no | no |

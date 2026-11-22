@@ -140,7 +140,7 @@ Over $\mathbb{R}$ the definite Spin groups can be identified with the classical 
 **Theorem.** For the definite forms over $\mathbb{R}$,
 
 $$
-\boxed{\;\mathrm{Spin}(2)\cong \mathrm{U}(1),\quad \mathrm{Spin}(3)\cong Sp(1)=SU(2),\quad \mathrm{Spin}(4)\cong Sp(1)\times Sp(1)\;},
+\boxed{\;\mathrm{Spin}(2)\cong \mathrm{U}(1),\quad \mathrm{Spin}(3)\cong Sp(1)\cong SU(2),\quad \mathrm{Spin}(4)\cong Sp(1)\times Sp(1)\;},
 $$
 
 $$
@@ -175,7 +175,7 @@ $$
 1\to\{\pm1\}\to\mathrm{Pin}(V,\mathfrak{Q})\to O(V,\mathfrak{Q})\to1, \qquad 1\to\{\pm1\}\to\mathrm{Spin}(V,\mathfrak{Q})\to SO(V,\mathfrak{Q})\to1
 $$
 
-exhibit the double covers over $\mathbb{R}$, and over any field satisfying the two hypotheses of the theorem, the two-to-one being the identification $x\sim-x$. Cartan–Dieudonné guarantees the surjectivity, expressing every isometry as a product of at most $n$ reflections and every rotation as an even product. Over $\mathbb{R}$ the definite groups are $\mathrm{Spin}(2)\cong \mathrm{U}(1)$, $\mathrm{Spin}(3)\cong Sp(1)=SU(2)$, $\mathrm{Spin}(4)\cong Sp(1)\times Sp(1)$, $\mathrm{Spin}(5)\cong Sp(2)$ and $\mathrm{Spin}(6)\cong SU(4)$. For a degenerate form the construction collapses on the radical, and the spin groups exist only for the non-degenerate quotient.
+exhibit the double covers over $\mathbb{R}$, and over any field satisfying the two hypotheses of the theorem, the two-to-one being the identification $x\sim-x$. Cartan–Dieudonné guarantees the surjectivity, expressing every isometry as a product of at most $n$ reflections and every rotation as an even product. Over $\mathbb{R}$ the definite groups are $\mathrm{Spin}(2)\cong \mathrm{U}(1)$, $\mathrm{Spin}(3)\cong Sp(1)\cong SU(2)$, $\mathrm{Spin}(4)\cong Sp(1)\times Sp(1)$, $\mathrm{Spin}(5)\cong Sp(2)$ and $\mathrm{Spin}(6)\cong SU(4)$. For a degenerate form the construction collapses on the radical, and the spin groups exist only for the non-degenerate quotient.
 
 ## Summary of Notation
 

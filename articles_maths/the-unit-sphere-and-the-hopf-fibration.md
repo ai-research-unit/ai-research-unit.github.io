@@ -309,6 +309,7 @@ The exact sequence of the fibration gives $\pi_1(S^2)=0$, $\pi_2(S^2)=\mathbb{Z}
 
 ## Further Reading
 
+- [Duo-Complex Numbers](duo-complex-numbers.html), the entry point of the category, for the space, its two scalar structures and the complex structure.
 - [The Topology of $\mathbb{C}^2$](the-topology-of-c2.html), the earlier article, for the sphere as a topological space.
 - [The Compactifications of $\mathbb{C}^2$](the-compactifications-of-c2.html), the previous article, for the Hopf map as the attaching map at infinity.
 - [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-c2.html), for the projective line and the complex directions.

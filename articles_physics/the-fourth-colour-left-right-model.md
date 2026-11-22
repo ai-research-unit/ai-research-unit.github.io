@@ -294,7 +294,7 @@ The proof, in three counts, because this is load-bearing.
 
 **Second, Hermiticity inside it.** Of those eight dimensions, the anti-Hermitian part is four: $R_{\vec e_a}$ for $a=x,y,z$ (each anti-Hermitian, since $R_{\vec e_a}^{\dagger}=-R_{\vec e_a}$) together with $R_i=i\,\mathrm I_4$. The other four — $R_1=\mathrm I_4$ and $iR_{\vec e_a}$ — are Hermitian.
 
-**Third, tracelessness.** $\operatorname{tr}R_i=4i\neq0$, so $R_i$ is excluded by $\operatorname{tr}X=0$. Each $R_{\vec e_a}$ is traceless, because the matrix of right multiplication by an imaginary unit is two copies of a traceless block. What remains is exactly $\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}$, three real dimensions, and that is $\mathfrak{su}(2)$.
+**Third, the zero trace.** $\operatorname{tr}R_i=4i\neq0$, so $R_i$ is excluded by $\operatorname{tr}X=0$. Each $R_{\vec e_a}$ has an array of zero trace, because the matrix of right multiplication by an imaginary unit is two copies of a traceless block. What remains is exactly $\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\}$, three real dimensions, and that is $\mathfrak{su}(2)$.
 
 So the count is $8\to4\to3$, each step a computation rather than a search, and the result is not a coincidence of the basis: the two-sided product contributes a full $M_2(\mathbb C)$ to the commutant and the compact part of it is one $\mathfrak{su}(2)$. The ceiling is three, and no choice of generators changes it.
 

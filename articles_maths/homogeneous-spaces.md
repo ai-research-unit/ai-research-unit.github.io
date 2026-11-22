@@ -83,7 +83,7 @@ is a principal $H$-bundle: $H$ acts on $G$ by right translation, the action pres
 
 ### Examples
 
-**Example (spheres).** The sphere $S^n$ is the homogeneous space $SO(n+1)/SO(n)$, the stabiliser of a point being the rotations of the orthogonal complement; $\dim SO(n+1) - \dim SO(n) = n(n+1)/2 - n(n-1)/2 = n$, matching the dimension of the sphere. Likewise $S^{2n-1} = SU(n)/SU(n-1)$ and $S^{4n-1} = Sp(n)/Sp(n-1)$ realise the odd spheres as quotients of the unitary and symplectic groups, and $S^3 = SU(2) = Sp(1)$ as a group itself.
+**Example (spheres).** The sphere $S^n$ is the homogeneous space $SO(n+1)/SO(n)$, the stabiliser of a point being the rotations of the orthogonal complement; $\dim SO(n+1) - \dim SO(n) = n(n+1)/2 - n(n-1)/2 = n$, matching the dimension of the sphere. Likewise $S^{2n-1} = SU(n)/SU(n-1)$ and $S^{4n-1} = Sp(n)/Sp(n-1)$ realise the odd spheres as quotients of the unitary and symplectic groups, and $S^3 \cong SU(2) \cong Sp(1)$ as a group itself.
 
 **Example (projective spaces).** $\mathbb{RP}^{n} = SO(n+1)/O(n)$ and $\mathbb{CP}^n = SU(n+1)/(SU(n)\times \mathrm{U}(1))$; in each case the stabiliser is the image of the isotropy representation, the group preserving a line and its orthogonal complement. The dimension of $\mathbb{CP}^n$ is $(n+1)^2 - 1 - n^2 = 2n$, the real dimension of a complex $n$-manifold.
 

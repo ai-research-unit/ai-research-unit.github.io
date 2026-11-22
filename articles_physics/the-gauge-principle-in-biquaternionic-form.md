@@ -322,7 +322,7 @@ What the external construction gives this article is therefore not a new result 
 
 ## Open Questions
 
-1. **The non-abelian realization.** The curvature acquires $[A_\mu, A_\nu]$, and the algebra supplies the non-commutativity, but the reality and tracelessness conditions that would select a compact gauge algebra are not derived. Which simple gauge algebras, if any, are natural in $\mathbb{B}$?
+1. **The non-abelian realization.** The curvature acquires $[A_\mu, A_\nu]$, and the algebra supplies the non-commutativity, but the reality and scalar-freeness conditions that would select a compact gauge algebra are not derived. Which simple gauge algebras, if any, are natural in $\mathbb{B}$?
 
 2. **The gauge-fixing principle.** The quantization article establishes that the framework cannot fix the gauge. Does the gauge principle, or any other algebraic structure, supply a principle of selection, or is the choice irreducibly extrinsic?
 

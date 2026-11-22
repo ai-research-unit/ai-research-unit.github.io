@@ -37,7 +37,7 @@ Standing convention. Throughout, $\tilde Q=Q_te_t+\vec Q$ with $Q_t\in\mathbb{C}
 
 2. The square sends the material sector into the informational one, and the informational sector into itself. Verified on one hundred elements of each sector. The step is a one-way valve from $\mathbb{B}_{\Phi}$ to $\mathbb{B}_{\Psi}$: the material sector is not stable under it, and the informational one is.
 
-3. The critical set is the light cone plus the traceless slice. The determinant of the differential is $16\,NQ_t^{2}$, so the step is locally invertible exactly off $\mathscr{Z}\cup\{\tilde Q: Q_t=0\}$, and $\mathscr{Z}\cap\mathbb{B}_{\Phi}$ is the light cone.
+3. The critical set is the light cone plus the scalar-free slice. The determinant of the differential is $16\,NQ_t^{2}$, so the step is locally invertible exactly off $\mathscr{Z}\cup\{\tilde Q: Q_t=0\}$, and $\mathscr{Z}\cap\mathbb{B}_{\Phi}$ is the light cone.
 
 4. The spin-one carrier lies on the critical set. The triple $\mathfrak{k}$ is scalar-free, so $dF$ is singular on the whole carrier of spin one. Verified: the determinant vanishes to machine precision on one hundred random elements of $\mathfrak{k}$.
 

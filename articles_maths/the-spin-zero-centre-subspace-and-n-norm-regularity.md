@@ -76,9 +76,9 @@ $$
 
 So the isotropic lines of the real part are not null for the norm. The two statements are about different objects: the first is about one real form, the second about the complex form.
 
-**The imaginary part.** The form $2ab$ vanishes on the two coordinate lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ and is indefinite on the same plane, of inertia $(1,1)$. It too has two isotropic lines, the same pair, since $2ab$ and $a^{2}-b^{2}$ vanish together on $a=\pm b$ and nowhere else together.
+**The imaginary part.** The form $2ab$ vanishes on the two coordinate lines $\mathbb{R}e_t$ and $\mathbb{R}(ie_t)$ and is indefinite on the same plane, of inertia $(1,1)$. Its isotropic lines are those two coordinate lines, and they are not the isotropic lines of the real part: on $a=\pm b\neq0$ the product $2ab$ is $\pm2a^{2}$ and does not vanish. The two forms therefore vanish together at the origin alone, which is why the null cone of $N$ meets the centre there.
 
-**Remark (the two forms are one object).** The complex norm is the pair of the two real forms, and its null cone is the intersection of the two zero loci. That intersection is the origin, which is the statement of the corollary above. Neither real form alone carries it: each has a line of zeros, and the two lines coincide.
+**Remark (the two forms are one object).** The complex norm is the pair of the two real forms, and its null cone is the intersection of the two zero loci. That intersection is the origin, which is the statement of the corollary above. Neither real form alone carries it: each has its own pair of lines of zeros, the real part on $a=\pm b$ and the imaginary part on the axes, and the two pairs meet only at the origin.
 
 **Remark (why the lines are not idempotents).** A negligible remark, included because the elements $e_t\pm ie_t$ invite the comparison. The idempotents of the algebra are $\tfrac12(e_t\pm i\vec u_{\mathrm r})$ at a unit real axis $\vec u_{\mathrm r}$, and the axis is pure. The element $e_t$ is central and not pure, so $e_t\pm ie_t$ is not of that shape and is not idempotent. Its square is
 

@@ -195,7 +195,7 @@ with $SU(2)\cong S^3$ as the common compact core. The unitary groups act transit
 | $Sp(2,\mathbb{C})$ | symplectic, equal to $SL_2(\mathbb{C})$ |
 | $\Omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ | the symplectic matrix |
 | $PGL_2,PSL_2,PU(2),PSU(2)$ | the projective quotients by the centres |
-| $S^3=SU(2)$ | the unit sphere as the compact group |
+| $S^3\cong SU(2)$ | the unit sphere as the compact group |
 
 ## Further Reading
 

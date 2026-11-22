@@ -46,7 +46,7 @@ $$
 $$
 of real dimension $4$. The determinant-one elements inside it are the unit quaternions:
 $$
-\mathrm{U}(2)\cap SL(2,\mathbb{C})=S^3=SU(2),
+\mathrm{U}(2)\cap SL(2,\mathbb{C})=S^3=\mathrm{Spin}(3)\cong SU(2),
 $$
 consistently with the unit quaternions being the $*$-unitary part of the norm-one group. Every element of $\mathrm{U}(2)$ is the product of a unit quaternion and a unit complex scalar, and the two factors meet in $\{\pm e_t\}$:
 $$
@@ -59,7 +59,7 @@ $$
 
 ## The Enlarged Carrier and the Closed Forms for SU(3) and SU(4)
 
-The groups the algebra reaches directly are $SU(2)=S^3$ and the compact $\mathrm{U}(2)$ above, and the ceiling recorded in the physics article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* is the statement that no octet of generators with an $\mathfrak{su}(3)$ bracket sits **inside** $\mathbb{B}$. Classical closed forms for $SU(3)$ and $SU(4)$ in terms of biquaternions nevertheless exist, and they cost exactly one enlargement of the carrier: not the algebra but the matrices over the algebra.
+The groups the algebra reaches directly are $S^3=\mathrm{Spin}(3)$, whose standard display is $SU(2)$, and the compact $\mathrm{U}(2)$ above, and the ceiling recorded in the physics article *Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)* is the statement that no octet of generators with an $\mathfrak{su}(3)$ bracket sits **inside** $\mathbb{B}$. Classical closed forms for $SU(3)$ and $SU(4)$ in terms of biquaternions nevertheless exist, and they cost exactly one enlargement of the carrier: not the algebra but the matrices over the algebra.
 
 **Definition (matrices over the algebra).** Let $M_n(\mathbb{B})$ be the $\mathbb{C}$-algebra of $n\times n$ matrices with entries in $\mathbb{B}$, acting on $\mathbb{B}^n$. The identification $\mathbb{B}\cong M_2(\mathbb{C})$ extends entrywise, so
 

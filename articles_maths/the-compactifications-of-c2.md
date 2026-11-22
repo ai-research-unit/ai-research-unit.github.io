@@ -257,6 +257,7 @@ The cell decompositions are $\mathbb{CP}^2=e^0\cup e^2\cup e^4$ and $S^4=e^0\cup
 
 ## Further Reading
 
+- [Duo-Complex Numbers](duo-complex-numbers.html), the entry point of the category, for the space, its two scalar structures and the complex structure.
 - [The Topology of $\mathbb{C}^2$](the-topology-of-c2.html), the previous article, for the space, the ball and the sphere.
 - [The Unit Sphere and the Hopf Fibration](the-unit-sphere-and-the-hopf-fibration.html), the next article, for the Hopf map that attaches the boundary of the projective compactification.
 - [The Subspaces of $\mathbb{C}^2$](the-subspaces-of-c2.html), for the projective line and the complex directions.

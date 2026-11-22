@@ -10,7 +10,7 @@ The case is the opposite of the spin-zero case in one respect and the opposite o
 
 **The answer in one line.** The vector part $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, and the anti-Hermitian space $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$.
 
-Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation; $G=\mathrm{U}(2)$ is the group of invertibles; and $\vec u_{\mathrm r}$ is a unit real axis, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it.
+Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation; $G=\mathrm{U}(2)$ is the group of unitary elements; and $\vec u_{\mathrm r}$ is a unit real axis, with $\vec u_2,\vec u_3$ an oriented orthonormal pair completing it.
 
 ## The Subspace
 
@@ -23,9 +23,9 @@ $$
 
 the real span of the three pure units, of real dimension $3$.
 
-The three units anticommute in pairs and each squares to $-e_t$, so the span is closed under the commutator and under no other product: the product of two pure units is a pure unit, but the product of two elements of $\mathfrak{k}$ need not lie in $\mathfrak{k}$.
+The three units anticommute in pairs and each squares to $-e_t$, so the span is closed under the commutator and under no other product: the product of two distinct pure units is $\pm$ the third, the square of a pure unit is $-e_t$, and the product of two elements of $\mathfrak{k}$ therefore lies in $\mathfrak{k}\oplus\mathbb{R}e_t$ without lying in $\mathfrak{k}$ in general.
 
-**The action.** The conjugation by a unitary element, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{-1}=uXu^{*}$ for $u\in G$, the second equality because $u^{*}=u^{-1}$ at a unitary element. On the vector part the action is the rotation: for a rotor $\tilde u_{\mathrm r}$ of angle $\theta$ about an axis, $\operatorname{Ad}_{\tilde u_{\mathrm r}}$ turns $\mathfrak{k}$ through the angle $\theta$ about that axis. The map $G\to SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$, and the vector part is the space on which the rotation acts in the way the name suggests.
+**The action.** The conjugation by a unitary element, $\varrho_{\mathrm{ad}}(u)(X)=\operatorname{Ad}_u(X)=uXu^{-1}=uXu^{*}$ for $u\in G$, the second equality because $u^{*}=u^{-1}$ at a unitary element. On the vector part the action is the rotation: for a rotor $\tilde u_{\mathrm r}$ of angle $\theta$ about an axis, $\operatorname{Ad}_{\tilde u_{\mathrm r}}$ turns $\mathfrak{k}$ through the angle $\theta$ about that axis. The map $G\to SO(\mathfrak{k})$ is onto with kernel the central circle $\{\lambda e_t:\lambda\bar\lambda=1\}$, since an element acting trivially on the three pure units commutes with all of them and is therefore central; on the subgroup $Sp(1)$ of the rotors the kernel reduces to $\{\pm e_t\}$, and the vector part is the space on which the rotation acts in the way the name suggests.
 
 **The closure.** The anti-Hermitian space is
 

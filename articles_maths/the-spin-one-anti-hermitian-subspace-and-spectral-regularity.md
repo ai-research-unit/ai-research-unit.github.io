@@ -52,7 +52,7 @@ $$
 \operatorname{spec}(i\lambda+\vec v)=\bigl\{i(\lambda+\lvert\vec v\rvert),\ i(\lambda-\lvert\vec v\rvert)\bigr\}.
 $$
 
-*Proof.* The two eigenvalues are $Q_t\pm iB$ with $Q_t=i\lambda$ and $B=\lvert\vec v\rvert$, and $iB=\pm i\lvert\vec v\rvert$.
+*Proof.* The two eigenvalues are $Q_t\pm iB$, with $Q_t=i\lambda$ and $B=\lvert\vec v\rvert\ge0$, so the pair is $i(\lambda\pm\lvert\vec v\rvert)$.
 
 **Corollary (the spectrum is purely imaginary).** Both eigenvalues lie on the imaginary axis and are symmetric about $i\lambda$.
 

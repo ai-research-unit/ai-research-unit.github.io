@@ -10,7 +10,7 @@ The carrier is the smallest of the three and the one with no argument. The rotat
 
 **The answer in one line.** The real line $\mathbb{R}e_t$, and its closure $\mathbb{C}e_t$ of real dimension $2$.
 
-Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation; $G=\mathrm{U}(2)$ is the group of invertibles, the elements with $XX^{*}=e_t$; and a unit real axis is written $\vec u_{\mathrm r}$.
+Nothing below is a statement of physics. The elements are written $X,Y$; the units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $e_t$ the identity and $\vec e_k^{2}=-e_t$; $*$ is the Hermitian conjugation; $G=\mathrm{U}(2)$ is the group of unitary elements, the elements with $XX^{*}=e_t$; and a unit real axis is written $\vec u_{\mathrm r}$.
 
 ## The Subspace
 
@@ -58,11 +58,23 @@ The propositions above say that the centre is a fixed space. They do not yet say
 
 **Theorem (no other complex line is invariant).** Let $W$ be a complex line with $uWu^{*}\subseteq W$ for every unitary element $u$. Then $W=\mathbb{B}_C$.
 
-*Proof.* Let $w$ generate $W$. For a unitary element $u$ the element $uwu^{*}$ lies in $W$ and is nonzero, since $u$ is invertible, so $uwu^{*}=\chi(u)w$ for a nonzero complex number $\chi(u)$, and $\chi$ is a homomorphism of $G$ into the multiplicative group of $\mathbb{C}$. The norm is multiplicative and $N(uu^{*})=1$, so $N(uwu^{*})=N(w)$ and $\chi(u)^{2}=1$: the character takes values in $\{\pm1\}$. The group $G=\mathrm U(2)$ is connected, so $\chi$ is constant, and $\chi(e_t)=1$ gives $\chi=1$. Every element of $W$ is therefore fixed, and $W=\mathbb{B}_C$ by the previous theorem.
+*Proof.* Let $w\ne0$ generate $W$ and write $uwu^{*}=\chi(u)w$; the factor is nonzero and $\chi$ is a character. For $u=e^{tA}$ with $A\in\mathfrak{u}(2)$, differentiating at $t=0$ gives
+
+$$
+[A,w]=\mu(A)w,
+$$
+
+where $\mu(A)$ is the derivative of $\chi$ along that one-parameter subgroup. The map $A\mapsto[A,w]$ is $\mathbb{C}$-linear and $w\ne0$ spans a line, so $\mu$ is well defined and $\mathbb{C}$-linear on $\mathfrak{u}(2)$. The Jacobi identity writes $\mathrm{ad}_{[A,B]}$ as the commutator of $\mathrm{ad}_A$ and $\mathrm{ad}_B$, so
+
+$$
+\mu([A,B])w=\mathrm{ad}_{[A,B]}w=\mu(B)\mu(A)w-\mu(A)\mu(B)w=0,
+$$
+
+the two scalars commuting. Hence $\mu$ vanishes on the derived algebra $[\mathfrak{u}(2),\mathfrak{u}(2)]=\mathfrak{su}(2)$, and on the remaining direction $ie_t$ it vanishes too, because $\mathrm{ad}_{ie_t}=0$. So $\mu=0$ on $\mathfrak{u}(2)$, the commutator $[A,w]$ vanishes for every $A\in\mathfrak{u}(2)$, and $w$ commutes with a real subspace whose complex span is $M_2(\mathbb{C})=\mathbb{B}$. The element $w$ is central, and $W=\mathbb{C}e_t$.
+
+**Remark (why the proof does not use the norm).** The tempting argument multiplies $uwu^{*}=\chi(u)w$ by the norm: multiplicativity gives $\chi(u)^{2}N(w)=N(w)$, and $\chi(u)^{2}=1$ follows, but only when $N(w)\ne0$. The nilpotents are the very case in which the invariance is not visible element by element, so the norm is silent where the question is sharpest. The derivative argument used instead needs neither the norm nor the invertibility of $w$: only the Jacobi identity, and the fact that the bracket of $\mathfrak{u}(2)$ fills the traceless part.
 
 **Corollary (three descriptions, one line).** The real line $\mathbb{R}e_t$, the fixed space of the group, and the only invariant complex line are the same subspace read three ways. The first is the carrier, the second is its space of fixed points, and the third is its closure.
-
-**Remark (why the character argument is not a detour).** Without the invariance of the norm the conclusion fails: a complex line can be scaled by an arbitrary nonzero scalar by a conjugation, and the scaling would be a character with values outside the unit circle. The norm is what reduces the character to a sign, and the connectedness of the group is what reduces the sign to $1$.
 
 ## The Action and the Two Numbers
 

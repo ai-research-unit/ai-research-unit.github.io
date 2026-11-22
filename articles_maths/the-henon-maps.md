@@ -207,5 +207,4 @@ The degree of $H^n$ is $2^n$, the dynamical degree is $2$, and the topological e
 - [Hyperbolic Dynamics and Anosov Systems](hyperbolic-dynamics-and-anosov-systems.html), for the horseshoe and the uniformly hyperbolic theory.
 - [Several Complex Variables](several-complex-variables.html), for the plurisubharmonic Green functions and the currents.
 - [The Mandelbrot Set and the Quadratic Family](the-mandelbrot-set-and-the-quadratic-family.html), for the one-dimensional Mandelbrot set and the Julia sets.
-- [The Dual-Number Quadratic Family](the-dual-number-quadratic-family.html), for the degenerate analogue in the dual numbers.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the glyphs and the typographic conventions of the corpus.

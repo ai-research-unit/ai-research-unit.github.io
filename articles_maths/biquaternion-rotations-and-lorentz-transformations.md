@@ -8,7 +8,7 @@ The article is the Geometry slot of the Lie-theoretic block, extended with the r
 
 ## The Double Covers and the Lorentz Group
 
-The unit quaternions are the unit sphere $Sp(1)$, and they carry the motions of the definite form, with the double cover $SU(2)\to SO(3)$; their complexification $\mathbb{B}^\times_1\cong SL(2,\mathbb{C})$, the group of **Lorentz rotors**, carries the motions of the indefinite one. The centre $\{\pm e_t\}$ of $\mathbb{B}^\times_1$ is discrete, so the quotient is a Lie group, and
+The unit quaternions are the unit sphere $Sp(1)$, and they carry the motions of the definite form, with the double cover $S^3\to SO(3)$, written $SU(2)\to SO(3)$ in the standard matrix display; their complexification $\mathbb{B}^\times_1\cong SL(2,\mathbb{C})$, the group of **Lorentz rotors**, carries the motions of the indefinite one. The centre $\{\pm e_t\}$ of $\mathbb{B}^\times_1$ is discrete, so the quotient is a Lie group, and
 
 $$
 \mathbb{B}^\times_1/\{\pm e_t\} \cong SO^+(1,3),
