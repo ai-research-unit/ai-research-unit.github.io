@@ -118,7 +118,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/introduction-to-the-biquaternion-algebra-physical-interpretations.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-algebraic-vocabulary-element-conjugations-six-subspaces-and-two-ledgers.html</loc>
@@ -214,7 +214,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-exponential-and-its-three-pairings.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-quadratic-map-and-the-singular-sets.html</loc>
@@ -1918,7 +1918,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-field-strength-biquaternion-and-its-invariants.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/exercise-duality-rotation-and-the-riemann-silberstein-vector.html</loc>
@@ -10657,6 +10657,14 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-length-of-an-endomorphism-of-the-biquaternion-algebra.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-lengths-of-the-standard-endomorphisms-of-the-biquaternion-algebra.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/m4c-axis-free-representation-operators.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
@@ -10682,23 +10690,23 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/introduction-to-the-operators-on-the-four-sectors.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/one-sided-operators-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/two-sided-operators-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/one-sided-operators-on-the-n-degenerate-sector.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/two-sided-operators-on-the-n-degenerate-sector.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/the-spin-group-via-4x4-real-matrices.html</loc>
@@ -10771,14 +10779,6 @@
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html</loc>
     <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-length-of-an-endomorphism-of-the-biquaternion-algebra.html</loc>
-    <lastmod>2026-11-22</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-lengths-of-the-standard-endomorphisms-of-the-biquaternion-algebra.html</loc>
-    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/topology-in-the-space-of-biquaternions.html</loc>
@@ -12674,14 +12674,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_maths/comparison-of-automorphisms-and-derivations.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html</loc>
-    <lastmod>2026-11-19</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
