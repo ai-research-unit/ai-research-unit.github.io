@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The algebra has a module of label and the operator algebra has a module of label. The two labels are the same object read at two levels: the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-slot-and-the-summand-math0-in-math1-and-math2-in-the-operators"><strong>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The algebra has a module of label $\tfrac12$ and the operator algebra has a module of label $\tfrac32$. The two labels are the same object read at two levels: the operator module is the third symmetric power of the algebra module, and the label is the sum of three copies of $\tfrac12$. The article names the two readings, the slot and the summand, computes their dimensions, and shows that the doubling is an exact rule with no free parameter.</p>
+<p><strong>The order of the article.</strong> The two labels come first; the slot second. The summand follows, then the doubling, and the reading closes the article.</p>
+<p><strong>It assumes</strong> <em>The Four Weights of the Module and the Half Angle</em>, <em>The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</em> and <em>The Minimal Left Ideals and the Module $V_{3/2}$</em>. <strong>The row of the elements is</strong> the slot; the row of the operators is the summand.</p>
+<p><strong>The result in one line.</strong> The algebra is a slot of half-integer label $\tfrac12$ and dimension two, the operator algebra is a summand of label $\tfrac32$ and dimension four, and the passage is the symmetric cube, which multiplies the label by three.</p>
+<p><strong>Boundaries.</strong> The weights are <em>The Four Weights of the Module and the Half Angle</em>; the decomposition of the operator space is <em>The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</em>; the identity of the two labels is also read in <em>From the Spin Decomposition to the Weight Strings</em>.</p>
+<h2 id="the-two-labels">The Two Labels</h2>
+<p><strong>Definition.</strong> The <strong>label</strong> of a simple module of the copy is the highest weight of its weight string; the module of the algebra has label $\tfrac12$ and the module of the operators has label $\tfrac32$.</p>
+<p><em>Proof.</em> The weight strings are $\tfrac12,-\tfrac12$ and $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$.</p>
+<p><strong>Corollary.</strong> The two labels differ by one unit, and the dimensions differ by a factor two.</p>
+<p><em>Proof.</em> $\tfrac32-\tfrac12=1$ and $4/2=2$.</p>
+<p><strong>Corollary.</strong> The two labels are both half-integer, so both modules are quaternionic.</p>
+<p><em>Proof.</em> The type is decided by the parity of twice the label, and both are odd.</p>
+<p><strong>The reading.</strong> Two labels, one half-integer each, and a difference of one. The article explains where the one comes from and why it cannot be anything else.</p>
+<h2 id="the-slot">The Slot</h2>
+<p><strong>Proposition.</strong> The algebra is a slot: its module is the two-dimensional spinor space, the label is $\tfrac12$, and the slot is the pair (label, dimension) $=(\tfrac12,2)$.</p>
+<p><em>Proof.</em> The algebra is four-dimensional over the reals and two-dimensional over the complex numbers; the copy acts on it by left multiplication, and the weights are $\pm\tfrac12$.</p>
+<p><strong>Corollary.</strong> The slot is the smallest non-trivial module of the group, and it is the module on which the sign after a full turn is visible.</p>
+<p><em>Proof.</em> The weights are half-integers, so the rotor of angle $2\pi$ acts as $-1$.</p>
+<p><strong>Corollary.</strong> The slot is quaternionic and has real dimension four.</p>
+<p><em>Proof.</em> The complex dimension two and the negative square of the intertwiner.</p>
+<p><strong>The reading.</strong> The slot is the elementary object: one label, one dimension, one sign. Every other module of the theory is built from it by symmetric powers and tensor products, and the operator module is the first non-trivial power.</p>
+<h2 id="the-summand">The Summand</h2>
+<p><strong>Proposition.</strong> The operator algebra is a summand: its module is the four-dimensional space of the operators, the label is $\tfrac32$, and the summand is $(\tfrac32,4)$.</p>
+<p><em>Proof.</em> The module of the operators is the algebra as a left module, of complex dimension four; the weights are the four half-integers from $\tfrac32$ down.</p>
+<p><strong>Corollary.</strong> The summand is the third symmetric power of the slot, $\tfrac32=3\cdot\tfrac12$.</p>
+<p><em>Proof.</em> The weights of the symmetric cube are the sums of three weights of the slot, the largest being three times $\tfrac12$.</p>
+<p><strong>Corollary.</strong> The summand is quaternionic, with real dimension eight.</p>
+<p><em>Proof.</em> The label is half-integer.</p>
+<p><strong>The reading.</strong> The summand is the slot cubed, and the cube is the reason for the label $\tfrac32$. Nothing in the definition of the operator algebra mentions the copy; the label appears only when the copy is chosen, and then it appears as three times the slot.</p>
+<h2 id="the-doubling">The Doubling</h2>
+<p><strong>Theorem.</strong> The passage from the slot to the summand multiplies the label by three and the dimension by two, and no other passage preserves both the half-integer character and the symmetry of the strings.</p>
+<p><em>Proof.</em> The symmetric cube of a module of label $j$ has label $3j$; with $j=\tfrac12$ the label is $\tfrac32$. The dimension of the cube of a two-dimensional module is four. Any other power would give a label $kj$ with a different $k$, and the half-integer character would require $k$ odd.</p>
+<p><strong>Corollary.</strong> The next symmetric power, the fourth, would have label two and would be integral, so the string of the operator module stops at the cube because the algebra does.</p>
+<p><em>Proof.</em> The symmetric cube is the module of the operators, and there is no fourth symmetric power in the theory.</p>
+<p><strong>Corollary.</strong> The tensor square of the summand has the four integer labels, which is the spin decomposition of the operator space.</p>
+<p><em>Proof.</em> Twice $\tfrac32$ is three, and the series runs from zero to three.</p>
+<p><strong>The reading.</strong> The two operations, symmetric cube and tensor square, are the two passages of the theory: cube from the algebra to its operators, square from the operators to their algebra. The first doubles the label's denominator, the second removes it.</p>
+<h2 id="the-square-and-the-cube">The Square and the Cube</h2>
+<p><strong>Proposition.</strong> The algebra is the square of the slot and the module of the operators is its cube, and the two are different modules although both have dimension four.</p>
+<p><em>Proof.</em> The tensor square of a two-dimensional space has dimension four and splits as the triplet and the singlet; the third symmetric power of a two-dimensional space has dimension four and is irreducible, of label $\tfrac32$.</p>
+<p><strong>Corollary.</strong> The square of the slot contains the singlet, and the cube does not.</p>
+<p><em>Proof.</em> The square of the slot contains the alternating square of two slot vectors, which is one-dimensional and invariant; the cube has top weight $\tfrac32$ and every weight of it is half-integral, so no invariant line occurs in it.</p>
+<p><strong>Corollary.</strong> A statement about the algebra and a statement about the operators cannot be transferred by dimension alone, since the two spaces have the same dimension and different module structure.</p>
+<p><em>Proof.</em> The two decompositions $3+1$ and $4$.</p>
+<p><strong>The reading.</strong> The two spaces are twins of dimension four with different symmetry. The algebra keeps a singlet because it is a square, and the operators have none because they are a cube. This is the reason the operators carry the half-integer label and the algebra does not.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>One object, two names.</strong> The slot and the summand are the same module at two levels of one construction; the names record which level a statement belongs to. A statement about a spinor is a statement about the slot; a statement about an operator is a statement about the summand.</p>
+<p><strong>One arithmetic.</strong> The labels $\tfrac12$ and $\tfrac32$ differ by the number of factors in the cube, and the difference is the only thing the two rows do not share.</p>
+<p><strong>One warning.</strong> The label of the operator module is not the label of the algebra, and a formula that uses one where the other belongs will be off by a factor three in the exponent of a phase. The half angle is the place where the error shows first.</p>
+<p><strong>One check.</strong> The two dimensions, two and four, satisfy the binomial count of the symmetric cube, $\binom{2+3-1}{3}=4$, and the two labels satisfy the addition of three halves. The two identities are one identity read on dimensions and on weights.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle.html">The Four Weights of the Module and the Half Angle</a>, for the two strings.</li>
+<li><a href="the-spin-group-the-principal-copy-and-the-kernel.html">The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</a>, for the symmetric cube.</li>
+<li><a href="the-minimal-left-ideals-and-the-module.html">The Minimal Left Ideals and the Module $V_{3/2}$</a>, for the module of the operators as a left ideal.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html">The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</a>, for the square of the summand.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

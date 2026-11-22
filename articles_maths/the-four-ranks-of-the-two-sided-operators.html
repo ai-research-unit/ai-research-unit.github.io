@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Ranks of the Two-Sided Operators — Biquaternion Universe</title>
+  <meta name="description" content="The subject. A two-sided operator is a linear map of the algebra, and it has a rank in the sense of linear maps, distinct from the tensor rank of its…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-ranks-of-the-two-sided-operators"><strong>The Four Ranks of the Two-Sided Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A two-sided operator is a linear map of the algebra, and it has a rank in the sense of linear maps, distinct from the tensor rank of its coefficients. The article computes the map rank. On the sector where both parameters are invertible the rank is four, and at the vertex it is zero; the intermediate values appear only on the products of degenerate parameters, and they never appear on the cone of invertible pairs. The map rank therefore takes exactly four values, four, two, one and zero, and never the value three. It stratifies the operator space in the coarsest possible way, and the article explains the coarseness by the scarcity of the degenerate parameters: they fill only a hypersurface of the algebra.</p>
+<p><strong>The order of the article.</strong> The rank of a product comes first, then the strata on the cone, then the same count for the one-sided families. The general order follows, and the failure of the rank to separate points closes the article.</p>
+<p><strong>It assumes</strong> <em>The Two-Sided Operators and the Segre Cone</em>, <em>The Left Ideals and the Image of a Left Multiplication</em> and <em>N-Regularity and N-Degeneracy in the Biquaternion Algebra</em>. <strong>The row of the elements is</strong> where invertibility is decided by the norm; here the same decision is read as the rank of an operator.</p>
+<p><strong>The result in one line.</strong> The rank of a two-sided operator takes the value four on the invertible pairs, two on the products with exactly one degenerate factor, one on the products of two degenerate factors, and zero at the vertex; the value three never occurs.</p>
+<p><strong>Boundaries.</strong> The rank of the coefficient tensor is <em>The Length and the Two Ranks</em>; the images of a one-sided operator are <em>The Left Ideals and the Image of a Left Multiplication</em>; the strata read by the spectrum are <em>The Spin-Zero Carrier and the Rank Strata</em>.</p>
+<h2 id="the-rank-of-a-product">The Rank of a Product</h2>
+<p><strong>Definition.</strong> The <strong>rank</strong> of an operator is the dimension of its image.</p>
+<p><strong>Theorem.</strong> For every pair of parameters
+$$
+\operatorname{rank}T_{a,b}=\frac{\operatorname{rank}L_a\cdot\operatorname{rank}R_b}{4},
+$$
+so the rank of a two-sided operator takes the four values of the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>both parameters invertible</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>exactly one parameter degenerate</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>both parameters degenerate</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>a parameter zero</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Write $\mathbb{B}=\operatorname{End}(S)$ with $S$ of dimension two, and let $r(a)$ be the rank of $a$ as a map of $S$, so that $r(a)\in\{0,1,2\}$ and $\operatorname{rank}L_a=2r(a)$, since the image of $L_a$ consists of the maps into the image of $a$. The image of $T_{a,b}$ consists of the composites $aXb$, which vanish on the kernel of $b$ and take their values in the image of $a$; the space of such maps has dimension $r(a)r(b)$. Hence $\operatorname{rank}T_{a,b}=r(a)r(b)=\operatorname{rank}L_a\operatorname{rank}R_b/4$, and $r(a)$ is two, one or zero according as $a$ is invertible, a nonzero zero divisor or zero.</p>
+<p><strong>Corollary.</strong> The rank of $T_{a,b}$ is zero exactly at the vertex of the cone.</p>
+<p><em>Proof.</em> The operator is zero exactly when a parameter is zero.</p>
+<p><strong>Corollary.</strong> The rank of a product is a function of the pair of parameters through the two norms alone.</p>
+<p><em>Proof.</em> The four cases of the theorem are distinguished by the vanishing of the two norms, and nothing else enters.</p>
+<p><strong>The reading.</strong> The rank of a two-sided operator carries one bit of information about each parameter: whether it is invertible. All the continuous data of the parameters, their spectra and their coordinates, are invisible to the rank. This is the sharpest contrast with the general row, where a product can carry every rank from zero to four and the rank moves with the geometry of the two factors.</p>
+<h2 id="the-four-strata">The Four Strata</h2>
+<p><strong>Definition.</strong> The <strong>rank strata</strong> are the level sets of the rank on the operator space.</p>
+<p><strong>Theorem.</strong> On the cone of the products the rank strata are four, of complex dimensions seven, six, five and zero: the products of two invertible parameters, of rank four and opening the cone; the products with exactly one degenerate factor, of rank two; the products of two degenerate factors, of rank one; and the vertex.</p>
+<p><em>Proof.</em> The map from the pairs of parameters to the cone has one-dimensional fibres, the simultaneous scaling, so the image of a set of dimension $d$ has dimension $d-1$. The pairs of two invertible parameters form an open set of dimension $4+4=8$, of image dimension seven; the pairs with exactly one degenerate factor form a set of dimension $4+3=7$, of image dimension six; the pairs of two degenerate parameters form a set of dimension $3+3=6$, of image dimension five; and the pair of two zeros is a point, of image dimension zero. The ranks are read from the table.</p>
+<p><strong>Corollary.</strong> A product of two nonzero parameters never has rank three, and its rank is four when both are invertible, two when exactly one is degenerate and one when both are.</p>
+<p><em>Proof.</em> The theorem, whose table has four rows, giving the ranks four, two, one and zero.</p>
+<p><strong>Corollary.</strong> On the whole operator space the rank takes all five values, the determinantal variety of rank at most $k$ having complex dimension $8k-k^{2}$; the cone meets the variety of rank at most two in a proper subvariety of dimension six, one at most three. The cone is not contained in either, since it carries the identity of rank four.</p>
+<p><em>Proof.</em> Put $n=4$ in the dimension formula: seven, twelve, fifteen, sixteen. The cone has dimension seven, and a product has rank one exactly when both parameters are degenerate by the theorem, so the rank-one part of the cone is the image of the pairs of degenerate parameters, of dimension $3+3-1=5$, and the rank-two part adds the image of a degenerate with an arbitrary parameter, of dimension $3+4-1=6$.</p>
+<p><strong>The reading.</strong> Four strata on the cone and five on the space, and the one value the cone misses is three. The difference between the two counts is exactly the degenerate parameters, and the briefness of the list is the scarcity of the degenerate elements: an algebra in which the degenerate elements fill only a hypersurface of the parameters has only one value of the rank that the products cannot reach.</p>
+<h2 id="the-one-sided-families">The One-Sided Families</h2>
+<p><strong>Proposition.</strong> The rank of a left multiplication is four at an invertible parameter, two at a degenerate one, and zero at the origin.</p>
+<p><em>Proof.</em> The image of $L_a$ is the left ideal generated by $a$, and the left ideals have dimensions four, two and zero.</p>
+<p><strong>Corollary.</strong> The rank stratifies each one-sided family by the same rule as the cone, and the two families have the same three strata.</p>
+<p><em>Proof.</em> The computation for the left family, and the same computation for the right family, whose images are the right ideals.</p>
+<p><strong>Corollary.</strong> The rank of a one-sided operator and the rank of the two-sided operator it generates agree at every pair with an invertible partner.</p>
+<p><em>Proof.</em> Multiplying by an invertible operator preserves the rank.</p>
+<p><strong>The reading.</strong> The one-sided and the two-sided rows give the same stratification, because the rank is insensitive to composition with invertible factors. The one-sided families are four-dimensional and the cone is seven-dimensional, and the strata are the same three shapes cut in spaces of different sizes.</p>
+<h2 id="the-general-order">The General Order</h2>
+<p><strong>Proposition.</strong> For the algebra of all linear maps of an $n$-dimensional complex space, the rank of an operator takes the $n+1$ values $0,1,\dots,n$, and the determinantal variety of the operators of rank at most $k$ has dimension $2nk-k^{2}$.</p>
+<p><em>Proof.</em> The rank is the dimension of the image; the variety of operators whose image lies in a fixed $k$-dimensional subspace and whose kernel contains a fixed complementary subspace has the stated dimension, and it is the closure of the set of operators of rank exactly $k$.</p>
+<p><strong>Corollary.</strong> At the order of this row the general count gives five values and the sector where both parameters are invertible gives two, the collapse being from $n+1$ to $2$.</p>
+<p><em>Proof.</em> Put $n=4$ in the proposition for the five values; the collapse is the theorem on the cone.</p>
+<p><strong>Corollary.</strong> The determinantal variety of rank at most one has dimension seven, and the cone meets it in a subvariety of dimension five.</p>
+<p><em>Proof.</em> The formula with $k=1$ gives $2n-1=7$; the products of two degenerate parameters have rank one by the theorem, and the pairs of degenerate parameters form a set of dimension $3+3=6$ on which the scalars act, so the image has dimension five.</p>
+<p><strong>The reading.</strong> An algebra whose degenerate elements fill a hypersurface has the fewest possible rank strata above the middle and the most structure inside each. The five determinantal varieties of the general row collapse to three, and the information that they carried is carried here by the tensor rank of the coefficients, which is the subject of the companion article on the length.</p>
+<h2 id="the-failure-to-separate">The Failure to Separate</h2>
+<p><strong>Proposition.</strong> The rank does not separate the operators: two products with different spectra and different tensor coordinates have the same rank.</p>
+<p><em>Proof.</em> Every product of two invertible parameters has rank four, whatever the parameters, so the rank is constant on a seven-dimensional family.</p>
+<p><strong>Corollary.</strong> A second invariant is needed, and the tensor rank of the coefficients is the natural one.</p>
+<p><em>Proof.</em> The tensor rank varies between one and sixteen on the space while the map rank varies over three values, so the two invariants are independent.</p>
+<p><strong>Corollary.</strong> The pair of invariants determines neither the spectrum nor the orbit of the operator under the unit group.</p>
+<p><em>Proof.</em> The spectrum is invariant under conjugation by units and is not a function of the two ranks, and the orbit of a product under conjugation is the set of products with conjugated parameters, which the ranks do not distinguish.</p>
+<p><strong>The reading.</strong> The rank is coarse by construction. It answers one question, whether an operator is invertible or how badly not, and it answers it in three words. Every finer question about a two-sided operator is a question about its coefficients or its spectrum, and the article on the length takes the first of those routes.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{rank}T$</td>
+<td>the dimension of the image</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}T_{a,b}=4$</td>
+<td>both parameters invertible</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}T_{a,b}=2$</td>
+<td>exactly one parameter degenerate</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}T_{a,b}=0$</td>
+<td>the vertex of the cone</td>
+</tr>
+<tr>
+<td>$0$ and $15$ real dimensions</td>
+<td>the strata on the cone and on the space</td>
+</tr>
+<tr>
+<td>$2nk-k^{2}$</td>
+<td>the dimension of the general determinantal variety</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-two-sided-operators-and-the-segre-cone.html">The Two-Sided Operators and the Segre Cone</a>, for the cone on which the strata are cut.</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>, for the criterion of invertibility.</li>
+<li><a href="the-length-and-the-two-ranks.html">The Length and the Two Ranks</a>, for the second invariant.</li>
+<li><a href="the-spin-zero-carrier-and-the-rank-strata.html">The Spin-Zero Carrier and the Rank Strata</a>, for the rank restricted to the scalar line.</li>
+<li><a href="the-left-ideals-and-the-image-of-a-left-multiplication.html">The Left Ideals and the Image of a Left Multiplication</a>, for the images of the one-sided families.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

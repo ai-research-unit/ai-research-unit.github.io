@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoints and the Polar Decomposition of an Operator — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The operator space carries a positive definite form,, and every operator has an adjoint with respect to it. The article computes the adjoint…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoints-and-the-polar-decomposition-of-an-operator"><strong>The Adjoints and the Polar Decomposition of an Operator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The operator space carries a positive definite form, $\langle S,T\rangle=\operatorname{tr}(S^{\star}T)$, and every operator has an adjoint with respect to it. The article computes the adjoint of the two families and of the products, shows that the adjoint of the operator space commutes with the star of the algebra, and derives the polar decomposition of an invertible operator into a positive factor and a unitary one. For a product the decomposition splits: the positive factor of $T_{a,b}$ is the product of the positive factors of the two parameters, and the unitary factor is the product of their unitary factors.</p>
+<p><strong>The order of the article.</strong> The form and the adjoint come first; the adjoints of the families second; the commutation of the two involutions third. The polar decomposition follows, first in general and then for a product.</p>
+<p><strong>It assumes</strong> <em>Operators Acting on Two Sides</em>, <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em> and <em>$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</em>. <strong>The row of the elements is</strong> where the polar decomposition of an element is read; here it is read for an operator, and the product case borrows the decomposition of each parameter.</p>
+<p><strong>The result in one line.</strong> The adjoint is given by $T_{a,b}^{\dagger}=T_{a^{\star},b^{\star}}$, and every invertible operator is $U|T|$ with $|T|$ positive and $U$ unitary; for a product $|T_{a,b}|=T_{|a|,|b^{\star}|}$.</p>
+<p><strong>Boundaries.</strong> The complex-linear involution of the space is <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>; the values of the form on a single operator are <em>The Numerical Range of the Two-Sided Operators</em>; the products themselves are <em>The Two-Sided Operators and the Segre Cone</em>.</p>
+<h2 id="the-form-and-the-adjoint">The Form and the Adjoint</h2>
+<p><strong>Definition.</strong> For two operators put
+$$
+\langle S,T\rangle=\operatorname{tr}(S^{\star}T),
+$$
+where the star is the conjugation of the algebra applied entry by entry in the basis.</p>
+<p><strong>Proposition.</strong> The form is Hermitian, positive definite, and invariant under the adjoint action of the unitary group of the algebra.</p>
+<p><em>Proof.</em> Hermitian symmetry is the identity $\overline{\operatorname{tr}(S^{\star}T)}=\operatorname{tr}(T^{\star}S)$; positivity is $\operatorname{tr}(T^{\star}T)=\sum_{\mu}|t_{\mu}|^{2}$ for the sixteen coordinates; invariance is $\operatorname{tr}((US)^{\star}UT)=\operatorname{tr}(S^{\star}T)$ for a unitary $U$.</p>
+<p><strong>Definition.</strong> The <strong>adjoint</strong> of $T$ is the operator $T^{\dagger}$ with $\langle T^{\dagger}S,U\rangle=\langle S,TU\rangle$ for all $S,U$.</p>
+<p><strong>Proposition.</strong> The adjoint exists, is unique, and the map $T\mapsto T^{\dagger}$ is a conjugate-linear involution.</p>
+<p><em>Proof.</em> Existence and uniqueness are the Riesz representation of the form. Conjugate linearity: $(\lambda T)^{\dagger}=\bar\lambda T^{\dagger}$. Involution: $\langle T^{\dagger\dagger}S,U\rangle=\langle S,T^{\dagger}U\rangle=\overline{\langle T^{\dagger}U,S\rangle}=\overline{\langle U,TS\rangle}=\langle TS,U\rangle$.</p>
+<p><strong>Proposition.</strong> For the basis operators,
+$$
+T_{e_\mu,e_\nu}^{\dagger}=T_{e_\mu^{\star},e_\nu^{\star}},
+$$
+so that the adjoint of a real basis operator is itself up to the sign of the two vector entries.</p>
+<p><em>Proof.</em> Compute $\operatorname{tr}(T_{e_\alpha,e_\beta}^{\star}T_{e_\mu,e_\nu})=\operatorname{tr}(T_{e_\alpha^{\star},e_\beta^{\star}}T_{e_\mu,e_\nu})=4\,\mathrm{Sc}(e_\alpha^{\star}e_\mu)\,\mathrm{Sc}(e_\beta^{\star}e_\nu)$ and read the same expression from $T_{e_\mu^{\star},e_\nu^{\star}}$.</p>
+<p><strong>The reading.</strong> The adjoint is read in the basis without any computation: conjugate the two indices. This is the first sign that the operator space and the algebra are the same kind of object, and the identity will be used in every proof below.</p>
+<h2 id="the-adjoints-of-the-families">The Adjoints of the Families</h2>
+<p><strong>Theorem.</strong> The two families are adjoint-stable, and
+$$
+L_a^{\dagger}=L_{a^{\star}},\qquad R_b^{\dagger}=R_{b^{\star}},\qquad T_{a,b}^{\dagger}=T_{a^{\star},b^{\star}}.
+$$</p>
+<p><em>Proof.</em> For the first, $\langle L_aS,U\rangle=\operatorname{tr}(S^{\star}a^{\star}U)=\operatorname{tr}(S^{\star}L_{a^{\star}}U)=\langle S,L_{a^{\star}}U\rangle$. The second is the same on the other side. The third follows from the two, or directly from the basis computation.</p>
+<p><strong>Corollary.</strong> An operator is self-adjoint exactly when it is a real combination of the products of Hermitian parameters, and a product is self-adjoint exactly when both parameters are Hermitian.</p>
+<p><em>Proof.</em> The adjoint conjugates both parameters, so a product is fixed exactly when each parameter is fixed, and the products of Hermitian parameters span the fixed space by the basis computation.</p>
+<p><strong>Corollary.</strong> The adjoint of a product is the product of the adjoints in the same order, and the adjoint of a sum is the sum of the adjoints.</p>
+<p><em>Proof.</em> Both statements are the conjugate linearity together with the theorem.</p>
+<p><strong>The reading.</strong> The adjoint respects the two sides separately: it never exchanges the left parameter with the right one. This is the difference between the adjoint and the transposition of the sides, which does exchange them and is complex-linear; the two involutions are distinct and both are needed.</p>
+<h2 id="the-two-involutions">The Two Involutions</h2>
+<p><strong>Definition.</strong> The <strong>operator star</strong> of $T$ is $T^{\circledast}(X)=(T(X^{\star}))^{\star}$.</p>
+<p><strong>Proposition.</strong> The operator star is a conjugate-linear involution of the operator space, it commutes with the adjoint, and it agrees with the algebra star on each family.</p>
+<p><em>Proof.</em> Conjugate linearity and involution are immediate from the algebra star. For the commutation, apply both sides to a basis operator: each sends $T_{e_\mu,e_\nu}$ to $T_{e_\mu^{\star},e_\nu^{\star}}$ up to the same sign, by the two preceding computations. On the families, $L_a^{\circledast}=L_{a^{\star}}$.</p>
+<p><strong>Corollary.</strong> The four maps $T\mapsto T$, $T\mapsto T^{\dagger}$, $T\mapsto T^{\circledast}$, $T\mapsto T^{\dagger\circledast}$ form a group of order four acting on the operator space.</p>
+<p><em>Proof.</em> Both maps are involutions and they commute, so the group they generate has the four listed elements.</p>
+<p><strong>The reading.</strong> The adjoint and the star are two copies of the same conjugation, one read on the operators and one on the algebra. Their commutation is the statement that the two readings do not interfere, and it is what makes the polar decomposition of a product split.</p>
+<h2 id="the-polar-decomposition">The Polar Decomposition</h2>
+<p><strong>Theorem.</strong> Every invertible operator $T$ has a unique decomposition $T=UP$ with $U$ unitary and $P$ positive definite self-adjoint, and $P=|T|=(T^{\dagger}T)^{1/2}$.</p>
+<p><em>Proof.</em> The operator $T^{\dagger}T$ is self-adjoint and positive definite, hence has a positive definite square root $P$, which is invertible; put $U=TP^{-1}$. Then $U^{\dagger}U=P^{-1}T^{\dagger}TP^{-1}=P^{-1}P^{2}P^{-1}=\mathrm{I}$, so $U$ is unitary. Uniqueness: if $T=UP$ then $T^{\dagger}T=P^{2}$, so $P$ is determined as the positive square root, and then $U$ is determined.</p>
+<p><strong>Corollary.</strong> The positive operators are the exponentials of the self-adjoint ones, and the unitary operators are those preserving the form.</p>
+<p><em>Proof.</em> A positive definite self-adjoint operator is $\exp H$ with $H$ self-adjoint, by the spectral theorem applied to its logarithm; an operator preserves the form exactly when $U^{\dagger}U=\mathrm{I}$.</p>
+<p><strong>Corollary.</strong> The decomposition is unique up to the phase: the pairs $(UP)$ and $(U\zeta)(\bar\zeta P)$ with $|\zeta|=1$ give the same operator.</p>
+<p><em>Proof.</em> The scalar $\zeta$ is unitary and commutes with $P$, and the two products coincide.</p>
+<p><strong>The reading.</strong> The polar decomposition is the operator form of the polar form of a complex number, and it is the same decomposition in the two readings, since the form and the algebra share the star.</p>
+<h2 id="the-decomposition-of-a-product">The Decomposition of a Product</h2>
+<p><strong>Theorem.</strong> Let $a=u|a|$ and $b=|b^{\star}|v$ be the polar decompositions of the two parameters, with $|a|=(a^{\star}a)^{1/2}$ and $|b^{\star}|=(bb^{\star})^{1/2}$. Then
+$$
+|T_{a,b}|=T_{|a|,\,|b^{\star}|},\qquad T_{a,b}=(L_uR_v)\,|T_{a,b}| .
+$$</p>
+<p><em>Proof.</em> Compute $T_{a,b}^{\dagger}T_{a,b}=T_{a^{\star}a,\,bb^{\star}}=T_{|a|^{2},\,|b^{\star}|^{2}}$, whose positive square root is $T_{|a|,|b^{\star}|}$ because the two parameters are Hermitian positive and their eigenvalues are positive. The unitary factor is then $T_{a,b}$ times the inverse of that positive operator, which is $L_uR_v$.</p>
+<p><strong>Corollary.</strong> The eigenvalues of $|T_{a,b}|$ are the products $\alpha_i\beta_j$ of the eigenvalues of $|a|$ and of $|b^{\star}|$, each taken twice.</p>
+<p><em>Proof.</em> The two factors commute and are simultaneously diagonalisable, and each has two eigenvalues of multiplicity two.</p>
+<p><strong>Corollary.</strong> A product is positive self-adjoint exactly when both parameters are Hermitian positive, and unitary exactly when both are unitary.</p>
+<p><em>Proof.</em> The positive factor is a product of Hermitian parameters, and it is the identity exactly when both are unitary.</p>
+<p><strong>The reading.</strong> The polar decomposition of a product is the product of the polar decompositions of its parameters, with the phases collected on one side. Nothing in the operator needs a new computation: the positive part carries the two moduli, the unitary part the two phases, and the split is the split of the two parameters.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\langle S,T\rangle=\operatorname{tr}(S^{\star}T)$</td>
+<td>the positive definite form</td>
+</tr>
+<tr>
+<td>$T^{\dagger}$</td>
+<td>the adjoint of the operator</td>
+</tr>
+<tr>
+<td>$T^{\circledast}(X)=(T(X^{\star}))^{\star}$</td>
+<td>the operator star</td>
+</tr>
+<tr>
+<td>$T_{a,b}^{\dagger}=T_{a^{\star},b^{\star}}$</td>
+<td>the adjoint of a product</td>
+</tr>
+<tr>
+<td>$T=U|T|$</td>
+<td>the polar decomposition</td>
+</tr>
+<tr>
+<td>$|T_{a,b}|=T_{|a|,|b^{\star}|}$</td>
+<td>the modulus of a product</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html">The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</a>, for the star and the norms of a parameter.</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the family whose adjoint is computed here.</li>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space.html">The Symmetric and Antisymmetric Parts of the Operator Space</a>, for the complex-linear involution that the adjoint is not.</li>
+<li><a href="the-numerical-range-of-the-two-sided-operators.html">The Numerical Range of the Two-Sided Operators</a>, for the values of the same form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

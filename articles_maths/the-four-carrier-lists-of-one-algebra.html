@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Carrier Lists of One Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The operator space carries four group actions, and each action decomposes the sixteen in its own way. The article writes the lists, computes…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-carrier-lists-of-one-algebra"><strong>The Four Carrier Lists of One Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The operator space carries four group actions, and each action decomposes the sixteen in its own way. The article writes the lists, computes each one, and identifies which action produces which list. The lists are not interchangeable: two are isotypic, one is a line and a hyperplane, one is a block decomposition, and two are carrier lists. The title counts the four lists of the principal copy; the rotor copy adds two more, and the article writes all six.</p>
+<p><strong>The order of the article.</strong> The four actions come first; the lists second, one section each. The reading then puts the lists side by side.</p>
+<p><strong>It assumes</strong> <em>The Copy Acting on Sixteen Dimensions</em>, <em>Why the Conjugation Labels Are Integer</em> and <em>The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</em>. <strong>The row of the elements is</strong> where the same four actions give the four lists of the four-dimensional algebra.</p>
+<p><strong>The result in one line.</strong> The principal copy gives four copies of the module, the rotor copy eight copies of the spinor, the full unit group gives the identity line and the traceless hyperplane, the pair of copies gives the four blocks of a chosen splitting of the module, and the two conjugations give the carriers $7+5+3+1$ and the pieces $2+9+5$.</p>
+<p><strong>Boundaries.</strong> The carriers and their weights are <em>The Clebsch–Gordan Decomposition</em> and <em>The Spin Decomposition</em>; the conjugation orbits are <em>The Conjugation Action, the Orbits and the Flag Variety</em>; the unit group is <em>The Unitary Group of the Biquaternion Algebra</em>.</p>
+<h2 id="the-four-actions">The Four Actions</h2>
+<p><strong>Definition.</strong> The actions are: the <strong>principal copy</strong>, left multiplication by the elements of the copy; the <strong>full unit group</strong>, left multiplication by every unit of the algebra; the <strong>pair of copies</strong>, left multiplication by the copy and right multiplication by the copy simultaneously; and the <strong>conjugation</strong>, the commutator with an element of the copy.</p>
+<p><strong>Proposition.</strong> The four actions commute with one another in the sense that the first and the third are restrictions of the second, and the fourth is the difference of the two halves of the third.</p>
+<p><em>Proof.</em> The copy is contained in the unit group; the pair acts by left and right multiplication; and the commutator is the difference of the two.</p>
+<p><strong>Corollary.</strong> Every decomposition of one action is a refinement or a coarsening of the decomposition of the second, and the four lists measure the four ways the sixteen can be cut.</p>
+<p><em>Proof.</em> The containment of the groups and the definition of each action.</p>
+<p><strong>The reading.</strong> Four actions, one space. The lists differ because the actions differ, and the article computes each list on the same sixteen dimensions.</p>
+<h2 id="the-principal-copy-four-copies-of-the-module">The Principal Copy: Four Copies of the Module</h2>
+<p><strong>Theorem.</strong> Under left multiplication by the copy the operator space is isotypic,
+$$
+\operatorname{End}(\mathbb{B})\cong V_{3/2}^{\oplus 4},\qquad 16=4+4+4+4 .
+$$</p>
+<p><em>Proof.</em> The operators are the linear maps of the module, and the space of linear maps is the direct sum of four copies of the module, one for each value on a basis; left multiplication acts on the values.</p>
+<p><strong>Corollary.</strong> The Casimir of the left action is the scalar $\tfrac{15}{4}$ on the whole space, and no carrier of the left action is smaller than the module.</p>
+<p><em>Proof.</em> The Casimir acts by $j(j+1)$ on each copy, with $j=\tfrac32$.</p>
+<p><strong>Corollary.</strong> The four carriers $7+5+3+1$ are not the decomposition of the left action, and they belong to the conjugation action.</p>
+<p><em>Proof.</em> The left action is isotypic, so its only isotypic component is the whole space.</p>
+<p><strong>The reading.</strong> This is the first correction the article records: the four carriers are often attributed to the principal copy, and they are not its decomposition. The principal copy sees sixteen dimensions as four equal blocks and no more.</p>
+<h2 id="the-full-units-math8">The Full Units: $1+15$</h2>
+<p><strong>Proposition.</strong> Under left multiplication by the group of units the space splits into the line of the identity and the hyperplane of the traceless operators,
+$$
+16=1+15 .
+$$</p>
+<p><em>Proof.</em> The trace is invariant under left multiplication by a unit, since the trace is invariant under similarity; the identity is carried to a scalar multiple of itself, so its line is invariant; the traceless hyperplane is the kernel of the trace and is invariant as well.</p>
+<p><strong>Corollary.</strong> The two pieces are irreducible for the unit group, the line being acted on by the scalars and the hyperplane by the quotient.</p>
+<p><em>Proof.</em> The unit group acts transitively on the traceless hyperplane by left multiplications and scalings.</p>
+<p><strong>Corollary.</strong> The split $1+15$ is coarser than every other list, since the unit group contains all the other groups of the enumeration.</p>
+<p><em>Proof.</em> Containment of the groups and the invariance of the two pieces.</p>
+<p><strong>The reading.</strong> One line and one hyperplane: the unit group sees only the trace. Every finer list must respect this split, and the traceless hyperplane is where the three other actions do their work.</p>
+<h2 id="the-two-copies-math11">The Two Copies: $1+3+3+9$</h2>
+<p><strong>Proposition.</strong> Split the module as a line and a three-dimensional complement; then the space of the operators splits into the four blocks of dimensions $1,3,3,9$, and the pair of copies preserves the block structure:
+$$
+16=1\cdot1+1\cdot3+3\cdot1+3\cdot3 .
+$$</p>
+<p><em>Proof.</em> The module is the direct sum of the two pieces, and the linear maps of a direct sum decompose into the four blocks of maps between the summands; left multiplication acts on the source and right multiplication on the target, so the blocks are preserved.</p>
+<p><strong>Corollary.</strong> The block of dimension one is the projection onto the line along the complement, and the block of dimension nine is the space of the maps of the complement into itself.</p>
+<p><em>Proof.</em> The dimensions of the four blocks.</p>
+<p><strong>Corollary.</strong> The decomposition depends on the choice of the splitting, and the choice is a line of the module.</p>
+<p><em>Proof.</em> The blocks are defined by the two summands.</p>
+<p><strong>The reading.</strong> The list $1+3+3+9$ is the block decomposition of a chosen splitting, and it is the only one of the four lists that depends on a choice. It is useful for computations with a fixed spinor and useless for invariants.</p>
+<h2 id="the-conjugation-math15">The Conjugation: $7+5+3+1$</h2>
+<p><strong>Theorem.</strong> Under the conjugation action the space splits into the four carriers,
+$$
+16=7+5+3+1,
+$$
+with the labels $3,2,1,0$.</p>
+<p><em>Proof.</em> The weights of the conjugation action are the differences of the weights of the module, and the Clebsch–Gordan series of the square of the module gives the four summands; the dimensions are $2k+1$.</p>
+<p><strong>Corollary.</strong> The four carriers are the eigenspaces of the Casimir of the conjugation action, with the eigenvalues $12,6,2,0$.</p>
+<p><em>Proof.</em> The Casimir acts by $k(k+1)$ on the carrier of label $k$.</p>
+<p><strong>Corollary.</strong> The list is canonical, since the eigenvalues are distinct.</p>
+<p><em>Proof.</em> The eigenspaces of one operator are canonical.</p>
+<p><strong>The reading.</strong> The list $7+5+3+1$ is the only canonical list of the four, and it is the one attached to the algebra's own structure, the product and the commutator.</p>
+<h2 id="the-table-of-the-six-lists">The Table of the Six Lists</h2>
+<p>The algebra carries two copies of the spin group, the principal copy and the rotor copy, and each of them acts on the operator space in two ways, by multiplication and by conjugation. Six lists result.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>action</th>
+<th>list</th>
+<th>dimensions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>principal copy, left multiplication</td>
+<td>isotypic, Casimir $\tfrac{15}{4}$</td>
+<td>$4+4+4+4=16$</td>
+</tr>
+<tr>
+<td>rotor copy, left multiplication</td>
+<td>isotypic, Casimir $\tfrac34$</td>
+<td>$2$ taken eight times $=16$</td>
+</tr>
+<tr>
+<td>full unit group</td>
+<td>identity line and traceless hyperplane</td>
+<td>$1+15=16$</td>
+</tr>
+<tr>
+<td>two commuting copies</td>
+<td>four blocks of a chosen splitting</td>
+<td>$1+3+3+9=16$</td>
+</tr>
+<tr>
+<td>principal conjugation</td>
+<td>the four carriers</td>
+<td>$7+5+3+1=16$</td>
+</tr>
+<tr>
+<td>rotor conjugation</td>
+<td>two, nine and five</td>
+<td>$2+9+5=16$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading of the table.</strong> Each row adds to sixteen, as it must, and the rows are six different decompositions of one space. The two left actions are isotypic and differ only in the module: the principal copy acts through the module of label $\tfrac32$ and the rotor copy through the spinor taken twice, which is why their Casimirs are $\tfrac{15}{4}$ and $\tfrac34$. The two conjugations are the two carrier lists, the four carriers of the principal copy and the three pieces of the rotor copy.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>Four lists, four meanings.</strong> Isotypic, trace, blocks, carriers. A statement that quotes one list must say which action it belongs to, since the four lists have four different invariance groups.</p>
+<p><strong>The two conjugations.</strong> The list $7+5+3+1$ is the carrier list of the principal copy and $2+9+5$ is the carrier list of the rotor copy. Both are genuine decompositions of the same sixteen-dimensional space, and neither refines the other: the four carriers of the principal reading and the pieces $2$, $9$, $5$ of the rotor reading are cut by different commuting operators.</p>
+<p><strong>Six, not four.</strong> A list quoted without its copy is ambiguous. The four-carrier list belongs to the principal copy; the rotor copy gives three pieces, of dimensions two, nine and five, and its left action is isotypic with the smaller Casimir.</p>
+<p><strong>One rule of thumb.</strong> The finer the group, the coarser the list: the unit group gives two pieces, the pair of copies four blocks, the conjugation four carriers of unequal size, and the principal copy one isotypic block of four.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-copy-acting-on-sixteen-dimensions.html">The Copy Acting on Sixteen Dimensions</a>, for the left and the conjugation actions compared.</li>
+<li><a href="why-the-conjugation-labels-are-integer.html">Why the Conjugation Labels Are Integer</a>, for the arithmetic behind the list $7+5+3+1$.</li>
+<li><a href="the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for the unit group of the list $1+15$.</li>
+<li><a href="the-spin-decomposition-four-carriers-and-the-weight-multiset.html">The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</a>, for the weights of the sixteen.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

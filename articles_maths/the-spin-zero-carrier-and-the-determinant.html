@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Zero Carrier and the Determinant — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The determinant is the only multiplicative invariant of the algebra of the operators, and on the spin-zero carrier it is a power of a single…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-zero-carrier-and-the-determinant"><strong>The Spin-Zero Carrier and the Determinant</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The determinant is the only multiplicative invariant of the algebra of the operators, and on the spin-zero carrier it is a power of a single complex number. The article computes the exponent, splits the carrier into its invertible part and its singular point, shows that the determinant alone does not separate the points of the carrier, and compares the exponent with the exponent of the row of the elements.</p>
+<p><strong>The order of the article.</strong> The determinant of a scalar operator comes first; the two strata second. The multiplicative property follows, then the comparison with the elements, then the two invariants, and the reading closes.</p>
+<p><strong>It assumes</strong> <em>The Spin-Zero Carrier: the Scalars</em>, <em>The Element Rank, Trace, Determinant and Characteristic Polynomial</em> and <em>The Algebraic Norms $H,N,K$ of a Biquaternion</em>. <strong>The row of the spin-zero carrier is</strong> where the determinant of a scalar is the square of a square, with the exponent four.</p>
+<p><strong>The result in one line.</strong> The determinant of the operator of multiplication by $\lambda$ is $\lambda^{16}$ on the sixteen-dimensional space and $\lambda^{4}$ on the algebra, so it vanishes only at the origin of the carrier, where the operator is singular.</p>
+<p><strong>Boundaries.</strong> The carrier is <em>The Spin-Zero Carrier: the Scalars</em>; the spectra are <em>The Spin-Zero Carrier and the Spectral Strata</em>; the rank is <em>The Spin-Zero Carrier and the Rank Strata</em>.</p>
+<h2 id="the-determinant-of-a-scalar-operator">The Determinant of a Scalar Operator</h2>
+<p><strong>Definition.</strong> The determinant of an operator is the product of its eigenvalues, each counted with its algebraic multiplicity, and the characteristic polynomial is the polynomial whose roots are those eigenvalues.</p>
+<p><strong>Theorem.</strong> The operator of left composition with $\lambda\mathrm I$ on the sixteen-dimensional space has the determinant $\lambda^{16}$, and the operator $\lambda\mathrm I$ as a map of the algebra has the determinant $\lambda^{4}$.</p>
+<p><em>Proof.</em> Left composition with a scalar operator acts on the four copies of the module in the space of the operators, and it acts on each copy as the multiplication by $\lambda$. The determinant of the fourfold repetition is the fourth power of the determinant on one copy, which is $\lambda^{4}$; the determinant on the algebra is the fourth power of the multiplier, since the algebra has dimension four.</p>
+<p><strong>Corollary.</strong> The determinant of a scalar operator is the fourth power of the determinant of the same scalar read as a map of the algebra, so the two readings differ by the exponent of the space.</p>
+<p><em>Proof.</em> $\lambda^{16}=(\lambda^{4})^{4}$.</p>
+<p><strong>Corollary.</strong> The determinant of the carrier is a single power, and its degree is the dimension of the space in the first reading and of the algebra in the second.</p>
+<p><em>Proof.</em> The two exponents are sixteen and four.</p>
+<p><strong>The reading.</strong> The exponent is the only thing the determinant remembers about the carrier. It is the dimension of the space in which the operator acts, and the choice of reading is the choice of that dimension.</p>
+<h2 id="the-two-strata">The Two Strata</h2>
+<p><strong>Proposition.</strong> The carrier splits into the invertible scalars, for which $\lambda\neq0$, and the single singular point, for which $\lambda=0$.</p>
+<p><em>Proof.</em> The determinant vanishes exactly when the multiplier vanishes, and it is the only condition for the singularity of a scalar operator.</p>
+<p><strong>Corollary.</strong> The invertible stratum of the carrier is the punctured line, of complex dimension one and real dimension two minus a point.</p>
+<p><em>Proof.</em> The multiplier ranges over the complex numbers minus the origin.</p>
+<p><strong>Corollary.</strong> The singular stratum is a single point, the zero operator, and it is the only operator of the carrier that is not invertible.</p>
+<p><em>Proof.</em> The zero operator is the only scalar operator of vanishing multiplier.</p>
+<p><strong>The reading.</strong> Two strata, one open and one closed, and no others. The carrier is the simplest stratified object of the theory: a punctured line and a point, with the determinant as the coordinate that separates them.</p>
+<h2 id="the-multiplicative-invariant">The Multiplicative Invariant</h2>
+<p><strong>Theorem.</strong> The determinant is multiplicative, and it is the only multiplicative invariant of the algebra of the operators that is a polynomial of degree one in each factor.</p>
+<p><em>Proof.</em> The determinant of a product is the product of the determinants, since the product acts by composition. An invariant that is multiplicative and polynomial of degree one in each factor is determined by its values on the generators, and those values are the determinant's.</p>
+<p><strong>Corollary.</strong> The determinant of a product of two scalar operators is the product of their determinants, so the restriction of the determinant to the carrier is a character of the multiplicative group of the scalars.</p>
+<p><em>Proof.</em> $\det(\lambda\mu\,\mathrm I)=\lambda^{16}\mu^{16}$.</p>
+<p><strong>Corollary.</strong> The determinant is trivial on no element of the carrier except the units of modulus one to the appropriate power, and it is injective on the carrier only after the sixteenth root is taken.</p>
+<p><em>Proof.</em> The kernel of the determinant on the punctured line is the group of the sixteenth roots of unity.</p>
+<p><strong>The reading.</strong> The determinant is the multiplicative invariant, and on the carrier it is a power map. The kernel is finite, of order sixteen, and this is the only place of the theory where a finite group of that order appears from a single invariant.</p>
+<h2 id="the-comparison-with-the-elements">The Comparison with the Elements</h2>
+<p><strong>Proposition.</strong> On the algebra the determinant of the left multiplication by $X$ is the square of the algebraic norm, and its degree in $X$ is four.</p>
+<p><em>Proof.</em> The left multiplication by $X$ is, in the complex two-dimensional description, the map $Y\mapsto XY$ on the algebra of two-by-two complex combinations, and its determinant is $\det(X)^{2}$; the determinant of $X$ is the algebraic norm $N(X)$, a quadratic form in the four coefficients, so the square is of degree four.</p>
+<p><strong>Corollary.</strong> The exponent on the elements is four and the exponent on the operators is sixteen, and the ratio is the dimension of the module.</p>
+<p><em>Proof.</em> The determinant of the left multiplication adds two powers of the norm per factor, and the space of the operators repeats the module four times.</p>
+<p><strong>Corollary.</strong> For a scalar $X=\lambda$ the algebraic norm is $\lambda^{2}$ and the determinant of the left multiplication is $\lambda^{4}$, in agreement with the carrier computation.</p>
+<p><em>Proof.</em> The norm of a scalar biquaternion is the square of its complex value.</p>
+<p><strong>The reading.</strong> The two rows differ by the exponent and by nothing else: the invariant is the same determinant, raised to the dimension of the space in which it acts. At the elements the exponent is four, at the operators sixteen, and the algebraic norm is the square root in the first case and the fourth root in the second.</p>
+<h2 id="the-two-invariants">The Two Invariants</h2>
+<p><strong>Proposition.</strong> The trace and the determinant separate the points of the carrier, since the trace gives the multiplier and the determinant gives its sixteenth power.</p>
+<p><em>Proof.</em> The pair $(\operatorname{tr},\det)=(16\lambda,\lambda^{16})$ determines $\lambda$, and no other operator of the carrier shares both values.</p>
+<p><strong>Corollary.</strong> The two invariants are independent on the carrier and dependent on its image under the determinant, which is a sixteenth power.</p>
+<p><em>Proof.</em> The trace is linear and the determinant has degree sixteen.</p>
+<p><strong>Corollary.</strong> Away from the carrier the trace and the determinant do not separate the points, since the traceless part is invisible to both.</p>
+<p><em>Proof.</em> The traceless hyperplane has dimension fifteen and both invariants are constant on its translates along the scalar direction.</p>
+<p><strong>The reading.</strong> The carrier is the line on which the two classical invariants are a coordinate system. Elsewhere they need help, and the help is the rest of the characteristic polynomial.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-zero-carrier-of-the-biquaternion-operators.html">The Spin-Zero Carrier: the Scalars</a>, for the carrier itself.</li>
+<li><a href="the-element-rank-trace-determinant-characteristic-polynomial.html">The Element Rank, Trace, Determinant and Characteristic Polynomial</a>, for the determinant in general.</li>
+<li><a href="the-spin-zero-carrier-and-the-spectral-strata.html">The Spin-Zero Carrier and the Spectral Strata</a>, for the eigenvalues.</li>
+<li><a href="the-spin-zero-carrier-and-the-rank-strata.html">The Spin-Zero Carrier and the Rank Strata</a>, for the rank.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

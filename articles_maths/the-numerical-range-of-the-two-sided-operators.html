@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Numerical Range of the Two-Sided Operators — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The numerical range of an operator is the set of the values of the form over the nonzero elements of the algebra, and it is the one invariant…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-numerical-range-of-the-two-sided-operators"><strong>The Numerical Range of the Two-Sided Operators</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The numerical range of an operator is the set of the values of the form $\langle X,TX\rangle/\langle X,X\rangle$ over the nonzero elements of the algebra, and it is the one invariant of the operator space that is not polynomial in the coefficients. The article computes its elementary properties, identifies the operators whose range is a single point, and locates the range of a product relative to the spectra of its two parameters. For Hermitian parameters the range is a segment, for unitary ones it lies in the disc, and in general it contains the four products of the eigenvalues.</p>
+<p><strong>The order of the article.</strong> The definition and the compactness come first, then the convexity. The single-point case follows, then the range of a product, and the boundary closes the article.</p>
+<p><strong>It assumes</strong> <em>The Adjoints and the Polar Decomposition of an Operator</em>, <em>The Spectrum of a Biquaternion</em> and <em>Operators Acting on Two Sides</em>. <strong>The row of the elements is</strong> where the numerical range of an element is the convex hull of its spectrum; here the range of an operator is a two-dimensional region in general.</p>
+<p><strong>The result in one line.</strong> The range is compact and convex, it is a point exactly for the scalar operators, and for a product it contains the four products of the eigenvalues of the parameters.</p>
+<p><strong>Boundaries.</strong> The spectrum of the operator is <em>The Four Ranks of the Two-Sided Operators</em>; the form itself is <em>The Adjoints and the Polar Decomposition of an Operator</em>; the products are <em>The Two-Sided Operators and the Segre Cone</em>.</p>
+<h2 id="the-definition-and-the-compactness">The Definition and the Compactness</h2>
+<p><strong>Definition.</strong> For an operator $T$ the <strong>numerical range</strong> is
+$$
+W(T)=\left\{\frac{\langle X,TX\rangle}{\langle X,X\rangle}:X\neq0\right\},
+$$
+with $\langle X,Y\rangle=\operatorname{tr}(X^{\star}Y)$.</p>
+<p><strong>Proposition.</strong> The range is the image of the unit sphere of the algebra under a continuous map, hence compact, and it is contained in the disc of radius the operator norm.</p>
+<p><em>Proof.</em> The map $X\mapsto\langle X,TX\rangle$ is continuous and the unit sphere is compact, so the image is compact after the division by the positive norm; and $|\langle X,TX\rangle|\le\|T\|\langle X,X\rangle$ by the Cauchy–Schwarz inequality.</p>
+<p><strong>Corollary.</strong> The range contains the spectrum of the operator.</p>
+<p><em>Proof.</em> An eigenvector gives a value equal to its eigenvalue.</p>
+<p><strong>The reading.</strong> The range is a compact piece of the plane, and it is read from the form and the action alone. Unlike the trace, the determinant or the coefficients, it is not a polynomial invariant, and this is why the two-sided family needs it: the algebraic invariants cannot see the shape of the region where the form takes its values.</p>
+<h2 id="the-convexity">The Convexity</h2>
+<p><strong>Theorem.</strong> The numerical range is convex.</p>
+<p><em>Proof.</em> Let $z_1$ and $z_2$ be the values at two unit elements $X$ and $Y$, and let $z$ be a convex combination. The element $X\cos\theta+Y\sin\theta$ over a suitable real parameter sweeps a two-dimensional family of values whose image contains the segment from $z_1$ to $z_2$: the value at that element is a quadratic function of the parameter, and the two ends of the curve plus its convexity give the result. The general statement is the Toeplitz–Hausdorff theorem, and in finite dimension it follows from the connectedness of the set of decompositions of a unit element into two orthogonal pieces.</p>
+<p><strong>Corollary.</strong> The range is the convex hull of the set of the values at the unit elements, and it therefore contains the convex hull of the spectrum.</p>
+<p><em>Proof.</em> The definition gives the set, and the theorem gives its convexity.</p>
+<p><strong>Corollary.</strong> The range is a segment exactly when the operator is normal, and it is a disc exactly when the operator is scalar.</p>
+<p><em>Proof.</em> The range of a normal operator is the convex hull of its spectrum; the range is a single point exactly when the spectrum is a single point and the operator is a multiple of the identity.</p>
+<p><strong>The reading.</strong> The convexity is the reason the range is a usable invariant: a compact convex set in the plane is described by its boundary and by its support function, and both are read from the operator by a minimisation over the unit sphere.</p>
+<h2 id="the-single-point">The Single Point</h2>
+<p><strong>Theorem.</strong> The range of $T$ is a single point exactly when $T$ is a scalar operator, and the point is then the scalar.</p>
+<p><em>Proof.</em> If the range is the single point $\lambda$ then $\langle X,TX\rangle=\lambda\langle X,X\rangle$ for every $X$, so $T-\lambda\mathrm{I}$ is self-adjoint with zero form, hence zero; the converse is immediate.</p>
+<p><strong>Corollary.</strong> For the two-sided family the range is a point exactly when both parameters are scalars, and it is then the product of the two scalars.</p>
+<p><em>Proof.</em> The range of $T_{a,b}$ is a point exactly when $T_{a,b}$ is a scalar operator, which by the independence of the two parameters forces both to be scalar.</p>
+<p><strong>Corollary.</strong> The operators of point range are a two-dimensional family in the sixteen, and they are the fixed points of the adjoint action of the unitary group up to scalars.</p>
+<p><em>Proof.</em> The scalars form a line, and the operators of point range are exactly that line.</p>
+<p><strong>The reading.</strong> The point ranges are the scalars, and they are the only degenerate case. Every other operator has a two-dimensional range, because a segment already requires a non-scalar normal operator and a region requires a non-normal one.</p>
+<h2 id="the-range-of-a-product">The Range of a Product</h2>
+<p><strong>Theorem.</strong> The range of $T_{a,b}$ contains the four products $\lambda_i\mu_j$ of the eigenvalues of $a$ and of $b$, and it is contained in the convex hull of the products of the values of the ranges of $L_a$ and of $R_b$ when the two one-sided operators are normal.</p>
+<p><em>Proof.</em> The eigenvalues of the product are the pairwise products, and each lies in the range. For the containment, the one-sided operators commute and are simultaneously diagonalisable in the normal case, so the value of the product at a joint eigenvector is the product of the two values.</p>
+<p><strong>Corollary.</strong> For Hermitian parameters the product is Hermitian and its range is the segment between the smallest and the largest of the four products.</p>
+<p><em>Proof.</em> $T_{a,b}$ is self-adjoint by the adjoint computation, its eigenvalues are real and equal to the four products, and the range of a self-adjoint operator is the segment spanned by its extreme eigenvalues.</p>
+<p><strong>Corollary.</strong> For unitary parameters the product is unitary and its range lies in the closed unit disc, containing the four unimodular products.</p>
+<p><em>Proof.</em> A unitary operator preserves the form, so the values have modulus at most one, and the four products of unimodular eigenvalues lie on the circle.</p>
+<p><strong>The reading.</strong> The range of a product is governed by the spectra of the two parameters through their pairwise products, and its shape is governed by the two one-sided operators. The four numbers of the spectrum are always inside, the disc or the segment contains the rest, and nothing else about the range is visible from the two parameters.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Proposition.</strong> A point of the boundary of the range that is an extreme point of the region is an approximate eigenvalue of the operator.</p>
+<p><em>Proof.</em> At an extreme boundary point the supporting line touches the range at that point; the maximisation of the real part over the unit sphere is attained at some element, and the variation of the element at the maximum gives the approximate eigenvector equation.</p>
+<p><strong>Corollary.</strong> For a normal operator every extreme boundary point is an eigenvalue, and the range is the polygon spanned by the spectrum.</p>
+<p><em>Proof.</em> The approximate eigenvalue equation is exact for a normal operator, and the extreme points are the extreme eigenvalues.</p>
+<p><strong>Corollary.</strong> The boundary of the range of a product with two spectrally regular parameters passes through the four products, and the region is the convex hull of the curve traced by the products of the one-sided values.</p>
+<p><em>Proof.</em> The four eigenvalues are extreme points, and the values at the joint eigenvectors are the products.</p>
+<p><strong>The reading.</strong> The boundary is where the form is extremal, and it is read by a maximisation. For the two-sided family the four eigenvalues are always on the boundary, and the rest of the boundary is the image of the sphere under the quadratic map attached to the pair.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator.html">The Adjoints and the Polar Decomposition of an Operator</a>, for the form with respect to which the range is taken.</li>
+<li><a href="the-spectrum-of-a-biquaternion.html">The Spectrum of a Biquaternion</a>, for the eigenvalues entering the four products.</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the family whose range is computed.</li>
+<li><a href="the-four-ranks-of-the-two-sided-operators.html">The Four Ranks of the Two-Sided Operators</a>, for the algebraic invariants that the range refines.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

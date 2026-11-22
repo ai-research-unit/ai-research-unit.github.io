@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Length and the Two Ranks — Biquaternion Universe</title>
+  <meta name="description" content="The subject. Two numbers are attached to an operator and they are not the same number. The length is the least number of two-sided products whose sum the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-length-and-the-two-ranks"><strong>The Length and the Two Ranks</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> Two numbers are attached to an operator and they are not the same number. The <strong>length</strong> is the least number of two-sided products whose sum the operator is; the <strong>rank</strong> is the dimension of its image. The length is read from the coefficients and the rank from the action, and neither determines the other. The article computes both, gives a witness for each combination that occurs, and shows that the two-sided operators are exactly the operators of length one.</p>
+<p><strong>The order of the article.</strong> The length is defined and identified with the rank of the coefficient array; the two-sided operators are then identified as the length-one stratum. The rank follows, the independence is proved by witnesses, and the strata of each invariant close the article.</p>
+<p><strong>It assumes</strong> <em>The Coefficients of a Two-Sided Operator: A Worked Computation</em>, <em>The Four Ranks of the Two-Sided Operators</em> and <em>$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</em>. <strong>The row of the elements is</strong> where a sum of products has a length in the algebra; here the same question is asked of an operator.</p>
+<p><strong>The result in one line.</strong> The length takes the values one to four and equals the rank of the coefficient array; the map rank takes the values zero to four; the products are the operators of length one, and every length occurs with every rank that is compatible with the dimension count.</p>
+<p><strong>Boundaries.</strong> The cone of the length-one operators is <em>The Two-Sided Operators and the Segre Cone</em>; the map rank alone is <em>The Four Ranks of the Two-Sided Operators</em>; the sums of two products read as an operator on the one-sided families are <em>The Adjoints and the Polar Decomposition of an Operator</em>.</p>
+<h2 id="the-length">The Length</h2>
+<p><strong>Definition.</strong> The <strong>length</strong> of an operator $T$ is the least $k$ for which
+$$
+T=\sum_{i=1}^{k}T_{a_i,b_i},
+$$
+and the length of the zero operator is zero.</p>
+<p><strong>Theorem.</strong> The length of an operator is the rank of its coefficient array, hence a number between one and four, and the value four is attained.</p>
+<p><em>Proof.</em> An operator is a sum of products exactly when its coefficient array is a sum of rank-one arrays, because the coordinates of $T_{a,b}$ are the products $a_\mu b_\nu$. The least number of rank-one arrays summing to an array is the rank of the array as a map of a four-dimensional space into itself, whence the bound four and the attainment.</p>
+<p><strong>Corollary.</strong> The operators of length one are exactly the two-sided operators.</p>
+<p><em>Proof.</em> A length-one operator is a single product; a product has a rank-one array; and conversely a rank-one array is the outer product of two nonzero vectors and defines a product.</p>
+<p><strong>Corollary.</strong> The operators of length at most $k$ form the determinantal variety of the arrays of rank at most $k$, of complex dimension $8k-k^{2}$; the variety of length at most one has dimension seven.</p>
+<p><em>Proof.</em> The identification of the length with the array rank, and the dimension formula for the determinantal variety.</p>
+<p><strong>The reading.</strong> The length measures a decomposition, not an action. It counts how many products are needed, and the answer is the rank of the array of coefficients, a quantity that knows nothing about the algebra's product beyond the basis.</p>
+<h2 id="the-rank">The Rank</h2>
+<p><strong>Definition.</strong> The <strong>rank</strong> of an operator is the dimension of its image, and the <strong>nullity</strong> is the dimension of its kernel.</p>
+<p><strong>Theorem.</strong> The rank of an operator takes each of the values $0,1,2,3,4$ and satisfies the rank-nullity identity $\operatorname{rank}T+\dim\ker T=4$.</p>
+<p><em>Proof.</em> The image is a subspace of a four-dimensional space; a linear map with an image of any prescribed dimension exists, since the sixteen basis operators span all the maps; the identity is the dimension theorem of linear algebra.</p>
+<p><strong>Corollary.</strong> The operators of rank four are the invertible ones; the operators of rank zero are the zero operator; the intermediate ranks are carried by proper determinantal varieties.</p>
+<p><em>Proof.</em> A bijection of a four-dimensional space has rank four, and conversely.</p>
+<p><strong>Corollary.</strong> A two-sided operator has rank four, two, one or zero, and never three.</p>
+<p><em>Proof.</em> The rank of a two-sided operator is $\operatorname{rank}L_a\operatorname{rank}R_b/4$, and each one-sided rank is four, two or zero, so the values are four, two, one and zero. The value one occurs exactly when both parameters are degenerate, since $\operatorname{rank}L_a=2r(a)$ with $r$ the rank of the element as a map of the two-dimensional spinor, and then the image of the composite has dimension $r(a)r(b)=1$.</p>
+<p><strong>The reading.</strong> The rank measures the action. It counts dimensions in the image, and the answer depends on the parameters only through the vanishing of their norms. The two invariants therefore look at different objects: one at the coefficient array, the other at the map.</p>
+<h2 id="the-independence">The Independence</h2>
+<p><strong>Theorem.</strong> The length and the rank are independent. The witnesses are: length one with rank four, the identity; length one with rank two, a product with one degenerate parameter; length two with rank four, $T_{e_t,e_t}+2T_{\vec e_x,\vec e_x}$; length three with rank three, $T_{e_t,e_t}+2T_{\vec e_x,\vec e_x}+3T_{\vec e_y,\vec e_y}$; length four with rank four, $\sum_{\mu=0}^{3}(2^{\mu}+1)T_{e_\mu,e_\mu}$; length four with rank one, $X\mapsto\mathrm{Sc}(X)e_t$.</p>
+<p><em>Proof.</em> The arrays of the last four operators are diagonal with two, three, four and four distinct nonzero entries, so their ranks as arrays are two, three, four and four. The map ranks are computed directly from the four images of the basis: the identity is a bijection, a product with a degenerate parameter has rank two, the two-entry and the four-entry sums are bijections, the three-entry sum has a one-dimensional kernel spanned by the fourth basis element, and the scalar map has a three-dimensional kernel.</p>
+<p><strong>Corollary.</strong> No inequality between the two invariants holds beyond the trivial bounds $1\le\text{length}\le4$ and $0\le\text{rank}\le4$.</p>
+<p><em>Proof.</em> The witnesses give length four with rank four and length four with rank one, so the length does not bound the rank from above; the identity gives length one with rank four, so it does not bound it from below either.</p>
+<p><strong>Corollary.</strong> The operators of rank one and length one do not exist, and the shortest witness of a rank-one operator has length four.</p>
+<p><em>Proof.</em> A length-one operator is a product, and a product of two nonzero parameters has rank four, two or one. That the scalar map is not a product follows from its values: a product sending $e_t$ to a multiple of $e_t$ has its second parameter proportional to the inverse of the first, and its value at $\vec e_x$ is then a conjugate of $\vec e_x$, of zero scalar part, hence never a multiple of $e_t$.</p>
+<p><strong>The reading.</strong> The two invariants are orthogonal pieces of information. The length says how the operator is built from the two sides; the rank says what it does to the space. A reader who knows one knows nothing about the other beyond the crude bounds.</p>
+<h2 id="the-strata">The Strata</h2>
+<p><strong>Proposition.</strong> The strata of the length are the determinantal varieties of the coefficient array, nested as $\{0\}\subset D_1\subset D_2\subset D_3\subset D_4$, with complex dimensions $0,7,12,15,16$.</p>
+<p><em>Proof.</em> The dimension formula at $k=1,2,3,4$, and the inclusion of the arrays of rank at most $k$ in those of rank at most $k+1$.</p>
+<p><strong>Corollary.</strong> The two-sided operators are the stratum $D_1$: the cone of the products together with the zero operator.</p>
+<p><em>Proof.</em> $D_1$ is the set of the operators of length at most one, and the operators of length one are the products.</p>
+<p><strong>Proposition.</strong> The strata of the rank are the determinantal varieties of the operator as a map, with the same dimensions, nested in the same way.</p>
+<p><em>Proof.</em> The same dimension formula applied to the map instead of the array.</p>
+<p><strong>Corollary.</strong> The two stratifications have the same dimensions and are different stratifications: the length-one stratum is the cone of the products and the rank-one stratum is the variety of the maps onto a line, and the two meet only at the origin.</p>
+<p><em>Proof.</em> The rank-one stratum consists of the maps whose image is a line; a nonzero product has rank four, two or one, and it has rank one exactly when both parameters are degenerate.</p>
+<p><strong>The reading.</strong> Two nested families of varieties, of the same dimensions, cut by different conditions. The coincidence of the dimensions is the coincidence of the four and four of the two sides; the difference of the conditions is the difference between building an operator and acting with it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>length $T$</td>
+<td>the least number of products summing to $T$</td>
+</tr>
+<tr>
+<td>length $=$ array rank</td>
+<td>the identification, values one to four</td>
+</tr>
+<tr>
+<td>$D_k$, dimension $8k-k^{2}$</td>
+<td>the operators of length at most $k$</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}T$</td>
+<td>the dimension of the image, values zero to four</td>
+</tr>
+<tr>
+<td>$T_{e_t,e_t}$</td>
+<td>length one, rank four</td>
+</tr>
+<tr>
+<td>$X\mapsto\mathrm{Sc}(X)e_t$</td>
+<td>rank one, length four</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-coefficients-of-a-two-sided-operator-a-worked-computation.html">The Coefficients of a Two-Sided Operator: A Worked Computation</a>, for the array and its rank-one test.</li>
+<li><a href="the-four-ranks-of-the-two-sided-operators.html">The Four Ranks of the Two-Sided Operators</a>, for the rank of a product.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone.html">The Two-Sided Operators and the Segre Cone</a>, for the length-one stratum.</li>
+<li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator.html">The Adjoints and the Polar Decomposition of an Operator</a>, for a second reading of the same sixteen coefficients.</li>
+<li><a href="end-b-as-an-algebra-the-regular-representation.html">$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</a>, for the basis against which the coefficients are read.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

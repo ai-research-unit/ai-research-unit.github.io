@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The operator space is the tensor square of the module, and the tensor square of the highest weight decomposes into four summands of labels…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-clebschgordan-decomposition-math0"><strong>The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The operator space is the tensor square of the module, and the tensor square of the highest weight $\tfrac32$ decomposes into four summands of labels three, two, one and zero. The article proves the rule, computes the dimensions, identifies the highest weight of each summand, checks the multiplicity one, and reads the four summands as the four carriers of the space. It also compares the rule with the rule of the row of the elements.</p>
+<p><strong>The order of the article.</strong> The tensor square and the rule come first; the highest weights and the dimensions second. The multiplicity one follows, then the four carriers, and the comparison closes the article.</p>
+<p><strong>It assumes</strong> <em>The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</em>, <em>The Four Weights of the Module and the Half Angle</em> and <em>The Spin Decomposition: Four Carriers and the Weight Multiset</em>. <strong>The row of the elements is</strong> where the rule is $\tfrac12\otimes\tfrac12=V_1\oplus V_0$; here the same rule is applied to the doubled label and produces four summands.</p>
+<p><strong>The result in one line.</strong> $\tfrac32\otimes\tfrac32=V_3\oplus V_2\oplus V_1\oplus V_0$ with dimensions $7+5+3+1=16$, each summand occurring once, so the decomposition is canonical.</p>
+<p><strong>Boundaries.</strong> The weight multiset of the sixteen is <em>The Spin Decomposition: Four Carriers and the Weight Multiset</em>; the products of the carriers are <em>The Truncated Rule: the Product of Two Carriers Is Not a Carrier</em>; the squares of the module are <em>The Parity Rule</em>.</p>
+<h2 id="the-tensor-square">The Tensor Square</h2>
+<p><strong>Theorem.</strong> The operator algebra, as a module for the copy by left multiplication on the first factor and right multiplication on the second, is the tensor square of the module:
+$$
+\operatorname{End}(\mathbb{B})=\mathbb{B}\otimes\mathbb{B}^{*}\cong V_{3/2}\otimes V_{3/2},
+$$
+the last isomorphism by the self-duality of the module.</p>
+<p><em>Proof.</em> The operators are the linear maps of the module into itself, and the space of linear maps is the tensor product of the module with its dual; the module is self-dual, so the dual is the module again.</p>
+<p><strong>Corollary.</strong> The dimension of the operator space is the square of the dimension of the module, $16=4\cdot4$.</p>
+<p><em>Proof.</em> The tensor product of two four-dimensional spaces.</p>
+<p><strong>Corollary.</strong> The weights of the operator space are the sums of a weight and the negative of a weight of the module, that is, the sixteen differences.</p>
+<p><em>Proof.</em> The weight of a tensor product is the sum of the weights of the factors, and the dual carries the negative weights.</p>
+<p><strong>The reading.</strong> The operator space is the square of the module, and its weights are the differences of the weights of the module. Everything below follows from that single identification.</p>
+<h2 id="the-rule">The Rule</h2>
+<p><strong>Theorem.</strong> The tensor square decomposes as
+$$
+V_{3/2}\otimes V_{3/2}=V_3\oplus V_2\oplus V_1\oplus V_0,
+$$
+where $V_k$ is the simple module of label $k$, and the four summands have complex dimensions $7,5,3,1$.</p>
+<p><em>Proof.</em> The Clebsch–Gordan rule for the tensor square of the highest weight $j$ reads $V_j\otimes V_j=\bigoplus_{k=0}^{2j}V_k$, each summand once; with $j=\tfrac32$ the labels are $3,2,1,0$. The dimension of $V_k$ is $2k+1$, giving $7,5,3,1$.</p>
+<p><strong>Corollary.</strong> The dimensions sum to sixteen, and the count is the check of the rule at this row.</p>
+<p><em>Proof.</em> $7+5+3+1=16$, the dimension of the tensor square.</p>
+<p><strong>Corollary.</strong> No further summand occurs, since a fifth simple module would raise the dimension above sixteen.</p>
+<p><em>Proof.</em> The smallest unused label would contribute at least one dimension, and the sum is already exact.</p>
+<p><strong>The reading.</strong> The rule is the addition of the weights: each summand of label $k$ has a highest weight $k$, obtained by adding two weights of the module. The four labels are all the integers from zero to three, and this is the arithmetic of the doubled string.</p>
+<h2 id="the-highest-weights">The Highest Weights</h2>
+<p><strong>Proposition.</strong> The highest weight of $V_k$ in the tensor square is the product of the highest weight vector of the module with the lowest weight vector, of total weight $k$, or the sum of two weights adding to $k$.</p>
+<p><em>Proof.</em> The highest weight of the tensor square is $\tfrac32+\tfrac32=3$, and the lowering steps produce the weights $2,1,0$ for the other summands, each realised by a pair of a weight and the negative of a weight.</p>
+<p><strong>Corollary.</strong> The four highest weight vectors are $s^{3}\otimes t^{3}$, $s^{3}\otimes s^{2}t$, $s^{3}\otimes st^{2}$ and $s^{3}\otimes s^{3}$ up to the choice of pairing.</p>
+<p><em>Proof.</em> The monomials of the module have the weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, and the pairings displayed give the four highest weights.</p>
+<p><strong>Corollary.</strong> The highest weight vector of each summand is annihilated by the raising operator of the diagonal copy.</p>
+<p><em>Proof.</em> A vector of highest weight is annihilated by the raising part of the diagonal copy by definition.</p>
+<p><strong>The reading.</strong> The four highest weights are read on four products of monomials, and their weights are three, two, one, zero. The lowest weight of the module, $t^{3}$, plays the role of the dual and is what makes the differences appear.</p>
+<h2 id="the-multiplicity-one">The Multiplicity One</h2>
+<p><strong>Theorem.</strong> Each summand occurs exactly once in the tensor square, so the decomposition is canonical and no choice of a projector is needed.</p>
+<p><em>Proof.</em> The Clebsch–Gordan rule for the square of one module gives each label at most once; the dimension count then forces exactness.</p>
+<p><strong>Corollary.</strong> The four summands are the eigenspaces of the Casimir operator with the four distinct eigenvalues $12,6,2,0$.</p>
+<p><em>Proof.</em> The Casimir acts on $V_k$ by $k(k+1)$, giving $12,6,2,0$; distinct eigenvalues give the eigenspaces directly.</p>
+<p><strong>Corollary.</strong> A canonical projector onto $V_k$ is the Lagrange interpolation of the Casimir at the value $k(k+1)$.</p>
+<p><em>Proof.</em> The interpolation polynomial in the Casimir is the identity on the eigenspace of that eigenvalue and zero on the other three.</p>
+<p><strong>The reading.</strong> Multiplicity one is what makes the decomposition usable: the summands are the eigenspaces of one operator, and the projectors are polynomials in it. No frame and no choice of basis enters.</p>
+<h2 id="the-four-carriers-and-the-comparison">The Four Carriers and the Comparison</h2>
+<p><strong>Proposition.</strong> The four summands are the carriers of the operator space: the top $V_3$ of dimension seven, then $V_2$ of dimension five, $V_1$ of dimension three and $V_0$ of dimension one.</p>
+<p><em>Proof.</em> The decomposition of the theorem, and the dimensions.</p>
+<p><strong>Corollary.</strong> The carrier $V_0$ is the scalars, and $V_1$ is the three-dimensional space of the traceless part of the diagonal action.</p>
+<p><em>Proof.</em> The label zero is the trivial module, spanned by the identity; the label one is the adjoint module of the copy.</p>
+<p><strong>Corollary.</strong> The rule of the row of the elements is $\tfrac12\otimes\tfrac12=V_1\oplus V_0$, with dimensions $3+1=4$, and the passage to the operators replaces each label $k$ by $2k$.</p>
+<p><em>Proof.</em> The same Clebsch–Gordan rule at $j=\tfrac12$, and the doubling of the label from the module to the tensor square of the module.</p>
+<p><strong>The reading.</strong> One rule, two rows, and the difference is the label of the module. The four carriers of the operators are the four terms of one sum, and the terms are distinguished by the Casimir alone.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-group-the-principal-copy-and-the-kernel.html">The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</a>, for the module and the copy.</li>
+<li><a href="the-spin-decomposition-four-carriers-and-the-weight-multiset.html">The Spin Decomposition: Four Carriers and the Weight Multiset</a>, for the weights of the sixteen.</li>
+<li><a href="the-parity-rule-the-two-squares-of-the-module.html">The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</a>, for the split of the four carriers into the two squares.</li>
+<li><a href="the-truncated-rule-the-product-of-two-carriers-is-not-a-carrier.html">The Truncated Rule: the Product of Two Carriers Is Not a Carrier</a>, for the failure of the carriers to be closed under the product.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

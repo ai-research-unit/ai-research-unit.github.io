@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Spin Lives in Which Reading — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The number and the number both occur in the theory of the operators, and they are not the same number attached to two names: is the label of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="which-spin-lives-in-which-reading"><strong>Which Spin Lives in Which Reading</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The number $\tfrac32$ and the number $3$ both occur in the theory of the operators, and they are not the same number attached to two names: $\tfrac32$ is the label of the module, a weight that a vector of the space can have, and $3$ is the label of the largest carrier, a difference of two such weights. The article separates the two readings, lists what each one measures, and gives the rule that decides which one a given statement uses.</p>
+<p><strong>The order of the article.</strong> The two readings come first; the labels and their meaning second. The passage between the readings follows, then the mistaken uses, and the reading closes the article.</p>
+<p><strong>It assumes</strong> <em>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</em>, <em>Why the Conjugation Labels Are Integer</em> and <em>The Four Carrier Lists</em>. <strong>The row of the elements is</strong> where the two numbers are $\tfrac12$ and $1$, and the same separation applies.</p>
+<p><strong>The result in one line.</strong> The label $\tfrac32$ measures the module under the left action, the label $3$ measures the largest carrier under the conjugation action, and the two differ by a factor two, the square of the module.</p>
+<p><strong>Boundaries.</strong> The labels of the two rows are <em>The Slot and the Summand</em>; the integrality of the second reading is <em>Why the Conjugation Labels Are Integer</em>; the four lists are <em>The Four Carrier Lists</em>.</p>
+<h2 id="the-two-readings">The Two Readings</h2>
+<p><strong>Definition.</strong> A <strong>module label</strong> is the highest weight of a module of the copy; a <strong>carrier label</strong> is the highest weight of an invariant subspace of the conjugation action.</p>
+<p><strong>Proposition.</strong> The module labels of the theory are $\tfrac12$ and $\tfrac32$; the carrier labels are $0,1,2,3$ in the operator algebra and $0,1$ in the algebra.</p>
+<p><em>Proof.</em> The module strings and the conjugation strings, as computed in the two rows.</p>
+<p><strong>Corollary.</strong> The module labels are half-integers and the carrier labels are integers, in both rows.</p>
+<p><em>Proof.</em> The second reading subtracts two weights of the first.</p>
+<p><strong>Corollary.</strong> A statement using a module label is a statement about the left action, and a statement using a carrier label is a statement about the commutator.</p>
+<p><em>Proof.</em> The two actions and their weights.</p>
+<p><strong>The reading.</strong> Two numbers, two actions. The article's rule is that the label alone does not say which reading is meant, and that the action must be named.</p>
+<h2 id="what-the-module-label-measures">What the Module Label Measures</h2>
+<p><strong>Proposition.</strong> The module label $\tfrac32$ measures the dimension four of the module, the number of weights, the sign after a full turn, and the quaternionic type.</p>
+<p><em>Proof.</em> The dimension is $2j+1=4$; the number of weights is the same; the sign is $(-1)^{2j}=-1$; the type is quaternionic because the label is half-integer.</p>
+<p><strong>Corollary.</strong> The module label is the number that appears in the half angle, since a rotation of angle $\theta$ acts on the module by $\exp(\theta H/2)$.</p>
+<p><em>Proof.</em> The half angle and the weight.</p>
+<p><strong>Corollary.</strong> The module label is not visible in the weights of the operator space, and it is visible in every statement about phases.</p>
+<p><em>Proof.</em> The differences are integers, and the phases are half-integer.</p>
+<p><strong>The reading.</strong> The module label is the projective label: it measures how far the module is from being a representation of the rotation group. It is the label of the object that carries a sign.</p>
+<h2 id="what-the-carrier-label-measures">What the Carrier Label Measures</h2>
+<p><strong>Proposition.</strong> The carrier label $3$ measures the dimension seven of the largest carrier, the eigenvalue $12$ of the Casimir, the highest weight of the space, and the reality of the carrier.</p>
+<p><em>Proof.</em> The dimension is $2k+1=7$; the Casimir is $k(k+1)=12$; the highest weight is the largest difference of the module weights; the type is real because the label is an integer.</p>
+<p><strong>Corollary.</strong> The carrier label is visible in the weights of the operator space, since it is one of them.</p>
+<p><em>Proof.</em> The highest weight of the space is $3$, the largest difference.</p>
+<p><strong>Corollary.</strong> The carrier label is the integral label: it measures an invariant subspace and not a phase.</p>
+<p><em>Proof.</em> The carrier is an eigenspace of the Casimir of the conjugation action.</p>
+<p><strong>The reading.</strong> The carrier label is the algebraic label: it measures a subspace of the algebra, and it is visible to the algebra's own operators. It appears in dimensions and in Casimir eigenvalues and never in a phase.</p>
+<h2 id="the-passage">The Passage</h2>
+<p><strong>Theorem.</strong> The passage from the module label to the carrier label is the doubling: the square of a module of label $j$ has the carrier labels $0,1,\dots,2j$.</p>
+<p><em>Proof.</em> The differences of the weights of a module of label $j$ are the integers from $-2j$ to $2j$, and the carriers run from zero to $2j$.</p>
+<p><strong>Corollary.</strong> The passage from the module label $\tfrac32$ gives the carrier labels up to $3$, and the passage from the module label $\tfrac12$ gives the labels up to $1$.</p>
+<p><em>Proof.</em> Twice $\tfrac32$ is three and twice $\tfrac12$ is one.</p>
+<p><strong>Corollary.</strong> No passage returns from the carrier label to the module label, since the doubling loses the half.</p>
+<p><em>Proof.</em> Two modules of labels $j$ and $j+\tfrac12$ would give different carrier labels, but one module gives one list and the list does not encode the half.</p>
+<p><strong>The reading.</strong> The passage is the tensor square read on the labels, and it is one-way. A statement about carriers cannot be lifted to a statement about the module without extra data, and the extra data is the half-integer.</p>
+<h2 id="the-mistaken-uses">The Mistaken Uses</h2>
+<p><strong>Proposition.</strong> The two common mistakes are to attribute the carrier label to the module and to attribute the module label to a carrier.</p>
+<p><em>Proof.</em> The first mistake gives a module of dimension seven instead of four; the second gives a carrier of dimension four instead of seven.</p>
+<p><strong>Corollary.</strong> Both mistakes are detected by the dimension count: $2\cdot\tfrac32+1=4$ and $2\cdot3+1=7$.</p>
+<p><em>Proof.</em> The formula for the dimension of a module in terms of its label.</p>
+<p><strong>Corollary.</strong> The two labels coincide only at zero, where the module and the carrier are the scalars.</p>
+<p><em>Proof.</em> $j=2j$ only for $j=0$.</p>
+<p><strong>The reading.</strong> The dimension is the quickest test, and it decides the reading. A number quoted without its action is a number half understood, and the article's rule is to always name the action.</p>
+<h2 id="the-test-case-of-the-algebra-itself">The Test Case of the Algebra Itself</h2>
+<p><strong>Proposition.</strong> On the algebra of dimension four the same two readings give the module label $\tfrac12$ and the carrier label $1$, and the ratio is again three.</p>
+<p><em>Proof.</em> The algebra is the square of the slot: it is the tensor square of the two-dimensional spinor, whose weights are $\pm\tfrac12$, so as a module over the copy it is two copies of the slot; and under the conjugation the square splits as the triplet and the singlet, of labels $1$ and $0$.</p>
+<p><strong>Corollary.</strong> The half-integer belongs to the module in both rows and the integer to the carriers in both rows, and the displacement from the module string to the carrier string is the same multiplication by three.</p>
+<p><em>Proof.</em> The strings are $\pm\tfrac12$ against $0,\pm1$ in the algebra and $\pm\tfrac32,\pm\tfrac12$ against $0,\pm1,\pm2,\pm3$ in the operators, and in both cases the largest carrier label is three times the largest module label.</p>
+<p><strong>Corollary.</strong> A statement that confuses the two readings is detected by its number alone, without any computation on the space.</p>
+<p><em>Proof.</em> A label of the form $\tfrac12$ with an odd numerator can only be a module label, since the carrier labels are integers in both rows.</p>
+<p><strong>The reading.</strong> The algebra is the smallest case in which the two readings can be compared, and it shows that the separation of the two labels is not a feature of dimension sixteen. The half-integer records a module, the integer records an invariant subspace, and the factor three is the multiplication of the label by the cube.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-slot-and-the-summand.html">The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</a>, for the module labels of the two rows.</li>
+<li><a href="why-the-conjugation-labels-are-integer.html">Why the Conjugation Labels Are Integer</a>, for the carrier labels.</li>
+<li><a href="the-four-carrier-lists-of-one-algebra.html">The Four Carrier Lists</a>, for the actions and their decompositions.</li>
+<li><a href="the-spin-group-the-principal-copy-and-the-kernel.html">The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</a>, for the copy that carries both labels.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

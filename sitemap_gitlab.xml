@@ -1613,6 +1613,14 @@
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/an-introduction-to-flavour.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-excitation-ladder-theory-of-flavour.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-gauge-principle-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
@@ -1802,7 +1810,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/representation-is-a-function-of-spin.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-gauge-carrier-of-the-material-sector-why-the-action-is-one-sided.html</loc>
@@ -1814,7 +1822,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/electroweak-symmetry-breaking-the-doublet-the-potential-and-the-gauge-boson-masses.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-lagrangian-and-the-higgs-field.html</loc>
@@ -2354,11 +2362,11 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-cpt-theorem-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-discrete-lattice-and-the-thermal-circle.html</loc>
@@ -2746,7 +2754,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/matrix-representations-conventions.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/operator-and-calculus-conventions.html</loc>
@@ -3794,7 +3802,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-lie-jordan-decomposition-of-a-bilinear-product-and-the-jordan-triple-system.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/commutative-algebras.html</loc>
@@ -4494,7 +4502,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/quadratic-forms-and-polarisation.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/symplectic-forms-and-poisson-brackets.html</loc>
@@ -9806,7 +9814,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-axis-free-construction-of-the-quaternion-algebra.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-cayley-dickson-construction-of-the-quaternion-algebra.html</loc>
@@ -10522,7 +10530,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/worked-examples-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-quaternion-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html</loc>
@@ -10713,7 +10721,7 @@
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-group-via-4x4-real-matrices.html</loc>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
@@ -10783,6 +10791,238 @@
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html</loc>
     <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/end-b-as-an-algebra-the-regular-representation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-one-sided-operators-of-the-biquaternion-algebra.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-left-ideals-and-the-image-of-a-left-multiplication.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-two-sided-operators-and-the-segre-cone.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-sylvester-operator-and-the-kronecker-sum.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-coefficients-of-a-two-sided-operator-a-worked-computation.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-four-ranks-of-the-two-sided-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-length-and-the-two-ranks.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-adjoints-and-the-polar-decomposition-of-an-operator.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-numerical-range-of-the-two-sided-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-operators-of-the-peirce-decomposition.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-extraspecial-group-of-the-two-sided-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-adjoint-action-the-orbits-and-the-flag-variety.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-group-the-principal-copy-and-the-kernel.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/from-the-spin-group-to-the-spin-of-a-single-rotor-of-the-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-four-weights-of-the-module-and-the-half-angle.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-quaternionic-structure-of-the-module-and-the-real-forms.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-minimal-left-ideals-and-the-module.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-decomposition-four-carriers-and-the-weight-multiset.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-truncated-rule-the-product-of-two-carriers-is-not-a-carrier.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-parity-rule-the-two-squares-of-the-module.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/neither-half-is-invariant-the-cartan-element.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-intersection-table-of-the-carriers-with-the-two-halves.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/where-the-half-integers-go-in-the-biquaternion-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-slot-and-the-summand.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/why-the-conjugation-labels-are-integer.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/what-a-half-integer-summand-would-require.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/from-the-spin-to-the-carriers-and-the-closures.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-four-carrier-lists-of-one-algebra.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/which-spin-lives-in-which-reading.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-copy-acting-on-sixteen-dimensions.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-closures-of-a-weight-vector-the-chain.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-zero-carrier-of-the-biquaternion-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-zero-carrier-and-the-determinant.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-zero-carrier-and-the-spectral-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-zero-carrier-and-the-rank-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/introduction-to-the-spin-three-halves-bispinor-spaces.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/spinors-and-dirac-spinors.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors-of-the-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-three-halves-bispinors-and-the-minimal-left-ideals.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-three-halves-bispinors-and-the-rank-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-three-halves-bispinors-and-the-spectral-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-one-carrier-the-adjoint-triplet.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-one-carrier-and-the-trace-form.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-one-carrier-and-the-spectral-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-one-carrier-and-the-rank-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/introduction-to-the-spin-two-carrier-the-alternating-square.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-two-carrier-and-the-trace-form.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-two-carrier-and-the-rank-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/introduction-to-the-spin-three-carrier-the-top-of-the-chain.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-three-carrier-and-the-hermitian-form.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-three-carrier-and-the-rank-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-three-carrier-and-the-spectral-strata.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-three-rows-of-the-tower.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-law-of-the-module-and-the-chain-of-carriers-at-every-order.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-spin-content-of-the-biquaternion-operators.html</loc>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/topology-in-the-space-of-biquaternions.html</loc>
@@ -10866,7 +11106,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/biquaternion-fourier-inversion-on-the-degenerate-set.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.html</loc>
@@ -11698,7 +11938,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-two-halves-and-the-analysis-smooth-structures-and-the-exponential.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-geometry-of-the-two-halves-and-the-return-of-the-two-sided-operators.html</loc>
@@ -11794,7 +12034,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/ut2-as-a-linear-model-of-sym-2-same-space-wrong-product.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-trace-form-and-its-signature-on-the-two-halves-of-m2r.html</loc>
@@ -11878,7 +12118,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/simple-rotations-at-n-2-why-there-is-only-one-angle.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/where-the-rotor-leaves-m2c-the-even-subalgebra-and-cl-2.html</loc>
@@ -12410,7 +12650,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-gamma-frame-and-the-complexified-dirac-algebra-of-m4c.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/spectral-theory-and-the-spectral-projectors-of-m4c.html</loc>
@@ -12474,7 +12714,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-clifford-group-and-the-frame-stabiliser.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-mass-block-and-the-chiral-polar-decomposition-of-m4c.html</loc>

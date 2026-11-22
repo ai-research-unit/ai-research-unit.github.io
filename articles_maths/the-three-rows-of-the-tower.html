@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Rows of the Tower — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The biquaternion algebra sits in a tower of three rows. The first row is the algebra itself, of complex dimension four; the second is its…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-three-rows-of-the-tower"><strong>The Three Rows of the Tower</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The biquaternion algebra sits in a tower of three rows. The first row is the algebra itself, of complex dimension four; the second is its operator space, of dimension sixteen; the third is the operator space of the second order, of dimension two hundred and fifty-six. The article compares the three rows, their slots, their addition rules, and the two copies of the rotation algebra that act on the same sixteen-dimensional space.</p>
+<p><strong>The order of the article.</strong> The three rows are defined first. The slot of a row and the law that produces the next row follow, then the two small addition rules, the coincidence of spaces with a difference of labels, and the arithmetic of the third row.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of the Biquaternion Algebra</em> and <em>$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</em>. <strong>The row of the elements is</strong> the first of the three, and the row of the operators is the second; the third is reached from the second by the same construction.</p>
+<p><strong>The result in one line.</strong> The three rows have dimensions $4,16,256$, slots $\tfrac12,\tfrac32,\tfrac{15}{2}$, and addition rules whose carrier dimensions are $3+1$, $7+5+3+1$ and the sum of the first sixteen odd numbers, which is $256$.</p>
+<p><strong>Boundaries.</strong> The row of the elements is the subject of the two articles on the Clebsch–Gordan series and on the carriers; the second row is the subject of this batch of articles; the general form of the law is <em>The Law of the Module and the Chain of Carriers at Every Order</em>.</p>
+<h2 id="the-three-rows">The Three Rows</h2>
+<p><strong>Definition.</strong> The <strong>row of the elements</strong> is the algebra $\mathbb{B}$ itself, of complex dimension four, read as a module for the copy of the rotation algebra that the algebra carries. The <strong>row of the operators</strong> is $\operatorname{End}(\mathbb{B})$, of complex dimension sixteen. The <strong>row of the second order</strong> is $\operatorname{End}(\operatorname{End}(\mathbb{B}))$, of complex dimension two hundred and fifty-six.</p>
+<p><strong>Proposition.</strong> The three dimensions are the squares of the dimensions of the modules, and the modules have dimensions $2,4,16$.</p>
+<p><em>Proof.</em> The module of the first row is a minimal left ideal, of dimension two, and the algebra is the square of the module. The module of the second row is the algebra of the first, of dimension four, and the operator space is its square. The module of the third row is the operator space, of dimension sixteen, and the second-order space is its square.</p>
+<p><strong>Corollary.</strong> The <strong>slot</strong> of a row, the label of its module, is $\tfrac12$, $\tfrac32$ and $\tfrac{15}{2}$.</p>
+<p><em>Proof.</em> A carrier of label $j$ has dimension $2j+1$, so a module of dimension $d$ has slot $\tfrac{d-1}{2}$; at $d=2,4,16$ this gives the three values.</p>
+<p><strong>Corollary.</strong> The slot of each row is one half of the square root of the dimension of its algebra, minus one half.</p>
+<p><em>Proof.</em> The dimension of the algebra is $d^{2}$, so $\tfrac{d-1}{2}=\tfrac{\sqrt{d^{2}}-1}{2}$.</p>
+<p><strong>The reading.</strong> The tower is built by squaring. Every row is the endomorphism algebra of the row below, and the module of every row is the algebra below it; the slots grow from one half to three halves to fifteen halves.</p>
+<h2 id="the-slot-of-a-row">The Slot of a Row</h2>
+<p><strong>Proposition.</strong> The module of a row is irreducible for its copy when its dimension is a power of two, and the slot is then determined by the dimension alone.</p>
+<p><em>Proof.</em> The carriers of the copy are labelled by the non-negative half-integers and the carrier of label $j$ has dimension $2j+1$; a dimension of the form $2^{m}$ is odd only at $m=0$, so the module of dimension $4$ or $16$ must be irreducible of the corresponding label, and the label is read from the dimension.</p>
+<p><strong>Corollary.</strong> The module of the second row is the carrier of label $\tfrac32$, of dimension four, and the module of the third row is the carrier of label $\tfrac{15}{2}$, of dimension sixteen.</p>
+<p><em>Proof.</em> The dimension formula, at four and at sixteen.</p>
+<p><strong>Corollary.</strong> The two readings of a row, by label and by dimension, agree on the module and disagree on the algebra.</p>
+<p><em>Proof.</em> The module is a single carrier and its label is $\tfrac{d-1}{2}$; the algebra is the square of the module and decomposes into several carriers, whose labels run from $d-1$ down to zero.</p>
+<p><strong>The reading.</strong> The slot is a property of the module, and the algebra has no single slot. The phrase the slot of a row always refers to the module, and the carriers of the row are the summands of the algebra.</p>
+<h2 id="the-two-small-rules">The Two Small Rules</h2>
+<p><strong>Proposition.</strong> The two first rows obey
+$$
+\tfrac12\otimes\tfrac12=V_1\oplus V_0,\qquad
+\tfrac32\otimes\tfrac32=V_3\oplus V_2\oplus V_1\oplus V_0,
+$$
+of dimensions $3+1=4$ and $7+5+3+1=16$.</p>
+<p><em>Proof.</em> The addition rule for two labels $j,j'$ gives the sum of the carriers of labels $\lvert j-j'\rvert$ to $j+j'$, each once; at $j=j'=\tfrac12$ this is $1,0$ and at $j=j'=\tfrac32$ this is $3,2,1,0$.</p>
+<p><strong>Corollary.</strong> The labels of the second row are the integers from zero to three, and the labels of the first row are zero and one.</p>
+<p><em>Proof.</em> The two squares displayed.</p>
+<p><strong>Corollary.</strong> The carrier dimensions of the second row are the odd numbers from one to seven, and their sum is the dimension of the row.</p>
+<p><em>Proof.</em> The labels zero to three give dimensions $2j+1$, and $1+3+5+7=16$.</p>
+<p><strong>The reading.</strong> The first two rows are the two smallest instances of one rule. The first has two carriers and the second four, and the number of carriers is the slot of the row plus one.</p>
+<h2 id="the-same-sixteen-two-copies">The Same Sixteen, Two Copies</h2>
+<p><strong>Proposition.</strong> The sixteen of the second row is the same algebra as the operator space of a two-dimensional defining space, and the two descriptions differ in the copy that is read on it.</p>
+<p><em>Proof.</em> Both are the endomorphisms of a four-dimensional space: one because the biquaternion algebra is four-dimensional, the other because the defining space of dimension two has a symmetric cube of dimension four. The two algebras are isomorphic, and the isomorphism is not a map of modules for the two copies.</p>
+<p><strong>Corollary.</strong> The same sixteen carries the labels $0,1,2,3$ under one copy and the labels $0,1$ under another.</p>
+<p><em>Proof.</em> Under the principal copy, the copy acting by the commutator, the sixteen is $\tfrac32\otimes\tfrac32$ and its labels are $0,1,2,3$. Under the copy acting by left multiplication alone, the sixteen is the algebra tensored with its opposite, on which the left copy acts through the algebra's own module $V_1\oplus V_0$, so the labels are $0$ and $1$, the triplet four times and the singlet four times.</p>
+<p><strong>Corollary.</strong> The dimensions of the carriers coincide under the two readings only for the labels that both readings possess, and the labels themselves do not coincide.</p>
+<p><em>Proof.</em> Both readings contain the labels zero and one; the readings differ in that one contains two and three and the other does not.</p>
+<p><strong>The reading.</strong> Two rows may be the same space and not the same representation. The identity of the underlying algebra is not an identity of modules, and every statement about carriers has to name the copy under which it is made.</p>
+<h2 id="the-third-row">The Third Row</h2>
+<p><strong>Proposition.</strong> The third row obeys
+$$
+\tfrac{15}{2}\otimes\tfrac{15}{2}=\bigoplus_{k=0}^{15}V_k ,
+$$
+with sixteen summands, and the sum of the carrier dimensions is
+$$
+\sum_{k=0}^{15}(2k+1)=16^{2}=256 .
+$$</p>
+<p><em>Proof.</em> The addition rule at $j=j'=\tfrac{15}{2}$ gives the labels from zero to fifteen, each once, and the sum of the first sixteen odd numbers is the square of sixteen.</p>
+<p><strong>Corollary.</strong> The number of carriers of a row is the slot plus one, which is $2,4,16$ for the three rows.</p>
+<p><em>Proof.</em> The labels run from zero to the slot, and the slot plus one is the dimension of the module.</p>
+<p><strong>Corollary.</strong> The third row contains a carrier of every integer label from zero to fifteen, and its top carrier has dimension thirty-one.</p>
+<p><em>Proof.</em> The labels of the sum, and the dimension formula at $k=15$.</p>
+<p><strong>The reading.</strong> The arithmetic of the third row is the arithmetic of the second, applied to a module four times as large. The rule has sixteen terms, the top carrier has dimension thirty-one, and the sum is the square of the row's module.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-law-of-the-module-and-the-chain-of-carriers-at-every-order.html">The Law of the Module and the Chain of Carriers at Every Order</a>, for the general form of the law.</li>
+<li><a href="the-spin-content-of-the-biquaternion-operators.html">The Spin Content: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra</a>, for the second row in one place.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html">The Clebsch–Gordan Decomposition of the Biquaternion Algebra</a>, for the first row.</li>
+<li><a href="end-b-as-an-algebra-the-regular-representation.html">$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</a>, for the second row as an algebra.</li>
+<li><a href="introduction-to-the-spin-three-carrier-the-top-of-the-chain.html">Introduction to the Spin-Three Carrier: the Top of the Chain</a>, for the top carrier of the second row.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

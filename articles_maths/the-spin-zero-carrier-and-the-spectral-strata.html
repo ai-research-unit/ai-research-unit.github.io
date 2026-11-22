@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Zero Carrier and the Spectral Strata — Biquaternion Universe</title>
+  <meta name="description" content="The subject. A scalar operator has one eigenvalue and one only, of multiplicity equal to the dimension on which it acts. The article describes the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-zero-carrier-and-the-spectral-strata"><strong>The Spin-Zero Carrier and the Spectral Strata</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A scalar operator has one eigenvalue and one only, of multiplicity equal to the dimension on which it acts. The article describes the spectrum of the carrier, shows that its discriminant vanishes identically, splits the carrier into the singular point and the invertible part, compares the result with the carrier of the elements, and places the carrier inside the spectral classification of the sixteen-dimensional space.</p>
+<p><strong>The order of the article.</strong> The spectrum comes first; the discriminant second. The singular locus follows, then the comparison with the elements, then the position in the classification, and the reading closes.</p>
+<p><strong>It assumes</strong> <em>The Spin-Zero Carrier: the Scalars</em>, <em>The Spectrum of a Biquaternion</em> and <em>The Spin-Zero Carrier and the Determinant</em>. <strong>The row of the spin-zero carrier is</strong> where the scalar biquaternion also has a single spectral point, of multiplicity four.</p>
+<p><strong>The result in one line.</strong> The spectrum of the operator of multiplication by $\lambda$ is the single point $\lambda$ with multiplicity sixteen, its discriminant vanishes for every $\lambda$, and the carrier is the unique line of the space on which the spectral stratification has only the two strata of the origin and the rest.</p>
+<p><strong>Boundaries.</strong> The determinant is <em>The Spin-Zero Carrier and the Determinant</em>; the rank is <em>The Spin-Zero Carrier and the Rank Strata</em>; the spectrum of an element is <em>The Spectrum of a Biquaternion</em>.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>Definition.</strong> The spectrum of an operator is the set of the roots of its characteristic polynomial, counted with multiplicity; a <strong>spectral stratum</strong> is the set of the operators with a given multiplicity pattern.</p>
+<p><strong>Theorem.</strong> The operator of left composition with $\lambda\mathrm I$ on the sixteen-dimensional space has the single eigenvalue $\lambda$, of algebraic multiplicity sixteen.</p>
+<p><em>Proof.</em> Left composition with a scalar operator acts on every vector of the space by the multiplication by $\lambda$, so every vector is an eigenvector with the eigenvalue $\lambda$; the characteristic polynomial is $(t-\lambda)^{16}$.</p>
+<p><strong>Corollary.</strong> The geometric multiplicity is also sixteen, so the operator is diagonalisable for every $\lambda$.</p>
+<p><em>Proof.</em> Every vector of the space is an eigenvector.</p>
+<p><strong>Corollary.</strong> The trace is $16\lambda$ and the determinant is $\lambda^{16}$, in agreement with the elementary computation.</p>
+<p><em>Proof.</em> The sum and the product of the eigenvalues.</p>
+<p><strong>The reading.</strong> One eigenvalue, sixteen times, and no structure. The carrier is spectrally the most degenerate line of the space, and its spectrum is the spectrum of a homothety.</p>
+<h2 id="the-discriminant">The Discriminant</h2>
+<p><strong>Proposition.</strong> The discriminant of the characteristic polynomial of a scalar operator vanishes identically on the carrier.</p>
+<p><em>Proof.</em> The discriminant is the product of the squared differences of the roots, and with a single root every difference is zero.</p>
+<p><strong>Corollary.</strong> The carrier is contained in the discriminant locus of the space, and no point of it is spectrally simple.</p>
+<p><em>Proof.</em> The vanishing of the discriminant is the defining condition of the locus.</p>
+<p><strong>Corollary.</strong> The discriminant is not a good coordinate on the carrier, since it cannot separate its points; the multiplier is.</p>
+<p><em>Proof.</em> The discriminant is identically zero on the carrier.</p>
+<p><strong>The reading.</strong> The discriminant detects the collision of eigenvalues, and on the carrier every eigenvalue has collided with every other. The carrier is the extreme case of the discriminant locus, not a generic point of it.</p>
+<h2 id="the-singular-locus">The Singular Locus</h2>
+<p><strong>Theorem.</strong> The carrier meets the singular locus of the algebra of the operators at the single point of the zero operator, and away from it every scalar operator is invertible.</p>
+<p><em>Proof.</em> The operator is invertible exactly when its determinant does not vanish, and the determinant of the carrier is $\lambda^{16}$.</p>
+<p><strong>Corollary.</strong> The singular locus of the space is the set of the non-invertible operators, and its intersection with the carrier is the origin.</p>
+<p><em>Proof.</em> The two strata of the carrier.</p>
+<p><strong>Corollary.</strong> The two spectral strata of the carrier inside the invertible part coincide, since the spectrum has one point for every multiplier.</p>
+<p><em>Proof.</em> The spectrum depends only on the multiplier.</p>
+<p><strong>The reading.</strong> Inside the carrier the spectral data is one complex number, and the singular locus is the value zero of that number. The carrier is a line whose spectral classification is the classification of the complex numbers: one stratum of invertibles and one point.</p>
+<h2 id="the-comparison-with-the-elements">The Comparison with the Elements</h2>
+<p><strong>Proposition.</strong> On the algebra the left multiplication by $X$ has the spectrum of $X$ repeated four times, so the spectral reading of the elements is the spectral reading of the carrier at the level of one copy.</p>
+<p><em>Proof.</em> The left multiplication acts on the algebra as the multiplication by $X$, and the eigenvalues of that map are the eigenvalues of $X$, each repeated with the multiplicity of the module.</p>
+<p><strong>Corollary.</strong> For a scalar biquaternion the spectrum is the single point $\lambda$, of multiplicity four, and the discriminant vanishes there as well.</p>
+<p><em>Proof.</em> The spectrum of the scalar and the fourfold repetition.</p>
+<p><strong>Corollary.</strong> The carrier of the elements and the carrier of the operators are spectrally the same line, read at two different multiplicities.</p>
+<p><em>Proof.</em> The exponents four and sixteen.</p>
+<p><strong>The reading.</strong> The two rows agree on the carrier in everything except the multiplicity. The agreement is the reason the carrier is the natural place to compare the rows, and the multiplicity is the only thing that changes.</p>
+<h2 id="the-position-in-the-classification">The Position in the Classification</h2>
+<p><strong>Theorem.</strong> The carrier is the unique line of the space whose spectral stratification consists of a single invertible stratum and a single singular point.</p>
+<p><em>Proof.</em> A line of operators with a spectrum depending on one parameter and degenerating only at one value must consist of the homotheties, and the homotheties form the carrier.</p>
+<p><strong>Corollary.</strong> Every other carrier has a spectrum that varies in more than one direction, so its spectral stratification has more than two strata.</p>
+<p><em>Proof.</em> The other carriers contain operators with different eigenvalue patterns.</p>
+<p><strong>Corollary.</strong> The carrier is the base point of the spectral classification: every other stratum of the space has the carrier in its closure.</p>
+<p><em>Proof.</em> A general operator can be deformed to a homothety by scaling its traceless part.</p>
+<p><strong>The reading.</strong> The spin-zero carrier is spectrally the most degenerate point of the whole row: one eigenvalue, one stratum of invertibles, one singularity, and the closure of everything else.</p>
+<p><strong>A numerical check.</strong> The characteristic polynomial of the carrier is $(t-\lambda)^{16}$, whose coefficient of $t^{15}$ is $-16\lambda$ and whose constant term is $\lambda^{16}$; the trace and the determinant of the carrier are these two numbers up to sign, in agreement with the elementary computation of the two invariants.</p>
+<h2 id="the-spectral-projectors">The Spectral Projectors</h2>
+<p><strong>Definition.</strong> For a value $\lambda$ the <strong>spectral projector</strong> of an operator is the operator that projects onto the sum of the generalised eigenspaces of $\lambda$ along the sum of the others.</p>
+<p><strong>Proposition.</strong> On the scalar carrier the spectral projector of $\lambda$ is the identity for every nonzero $\lambda$, and it is zero at $\lambda=0$.</p>
+<p><em>Proof.</em> The operator of multiplication by $\lambda$ has the single eigenvalue $\lambda$ with multiplicity sixteen, so the whole space is its eigenspace when $\lambda\neq0$; at $\lambda=0$ the operator is zero and every vector is in the kernel.</p>
+<p><strong>Corollary.</strong> The rank of the spectral projector is sixteen or zero, and it agrees with the rank of the operator itself.</p>
+<p><em>Proof.</em> The projector is the identity or zero, and the operator is a homothety with the same multiplier.</p>
+<p><strong>Corollary.</strong> The carrier is the only line of the space on which the spectral projectors do not depend on the operator beyond a single parameter.</p>
+<p><em>Proof.</em> On a carrier of positive label the operator has several eigenvalues, and its projectors are sums of eigenspaces of the conjugation element that defines the carrier.</p>
+<p><strong>The reading.</strong> The spectral picture of the carrier is as simple as it can be: one eigenvalue, one projector, no generalised part. The spectral strata are the two sets cut by the vanishing of the multiplier, and the projectors are the identity and zero, in agreement with the rank strata computed separately.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-zero-carrier-of-the-biquaternion-operators.html">The Spin-Zero Carrier: the Scalars</a>, for the carrier itself.</li>
+<li><a href="the-spin-zero-carrier-and-the-determinant.html">The Spin-Zero Carrier and the Determinant</a>, for the exponent sixteen.</li>
+<li><a href="the-spectrum-of-a-biquaternion.html">The Spectrum of a Biquaternion</a>, for the spectral reading of the elements.</li>
+<li><a href="the-spin-zero-carrier-and-the-rank-strata.html">The Spin-Zero Carrier and the Rank Strata</a>, for the rank stratification.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

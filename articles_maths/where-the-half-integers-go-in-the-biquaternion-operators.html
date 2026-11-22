@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where the Half-Integers Go — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The module of the operators has the four half-integer weights, and the operator space has the sixteen integer weights. The half-integers…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="where-the-half-integers-go"><strong>Where the Half-Integers Go</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The module of the operators has the four half-integer weights $\pm\tfrac32,\pm\tfrac12$, and the operator space has the sixteen integer weights $0,\pm1,\pm2,\pm3$. The half-integers vanish from the second list. The article asks where they go, and answers that they cancel in the differences, survive as the displacement of two strings, and reappear in three places: the half angle, the quaternionic structure, and the sign after a full turn.</p>
+<p><strong>The order of the article.</strong> The two strings come first; the cancellation second. The surviving places follow, then the shift, and the reading closes the article.</p>
+<p><strong>It assumes</strong> <em>The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</em>, <em>The Four Weights of the Module and the Half Angle</em> and <em>The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</em>. <strong>The row of the elements is</strong> where the two strings are the module of dimension two and the algebra of dimension four, with the same cancellation of the halves.</p>
+<p><strong>The result in one line.</strong> The half-integers cancel in the differences that give the weights of the operator space, and they survive as the displacement of the module string from the carrier strings, which is the same fact as the half angle.</p>
+<p><strong>Boundaries.</strong> The multiset of the sixteen is <em>The Spin Decomposition: Four Carriers and the Weight Multiset</em>; the labels of the two rows are <em>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</em>; the quaternionic structure is <em>The Quaternionic Structure of the Module</em>.</p>
+<h2 id="the-two-strings">The Two Strings</h2>
+<p><strong>Proposition.</strong> The module has the string $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$ and the operator space has the string $3,2,1,1,0,0,-1,-1,-2,-3$ with multiplicities.</p>
+<p><em>Proof.</em> The first is computed on the Cartan generator acting on the module; the second is the multiset of the differences of the first from itself.</p>
+<p><strong>Corollary.</strong> The first string is half-integer and the second is integer, and no weight is common to the two.</p>
+<p><em>Proof.</em> A half-integer is never an integer.</p>
+<p><strong>Corollary.</strong> The two strings have the same symmetry and different steps: the first step is one, the second step is one, and the first has four terms and the second seven distinct terms.</p>
+<p><em>Proof.</em> The differences of an arithmetic progression form an arithmetic progression of the same step, with the multiplicities of the second list.</p>
+<p><strong>The reading.</strong> The two strings are the same object read at two levels: the module and its square. The arithmetic of the difference is what removes the half-integers, and the removal is exact.</p>
+<h2 id="the-cancellation">The Cancellation</h2>
+<p><strong>Theorem.</strong> Every weight of the operator space is a difference of two half-integers, hence an integer, and every integer from minus three to three occurs.</p>
+<p><em>Proof.</em> The difference $m-m'$ of two elements of the four-term string is an integer, and the values range from $-3$ to $3$.</p>
+<p><strong>Corollary.</strong> The half-integer character of the module is invisible to the operator space, and no eigenvalue of the Cartan generator on the sixteen is a half-integer.</p>
+<p><em>Proof.</em> The theorem.</p>
+<p><strong>Corollary.</strong> The parity of the operator weights is not the parity of the module weights, and the two are related by the subtraction.</p>
+<p><em>Proof.</em> Half-integer minus half-integer is integer.</p>
+<p><strong>The reading.</strong> The cancellation is the algebraic form of the statement that a commutator of two half-integer objects is an integer object. It is why the operator algebra can be graded by integers, and why the module cannot.</p>
+<h2 id="where-the-half-integers-survive">Where the Half-Integers Survive</h2>
+<p><strong>Proposition.</strong> The half-integer survives in three places: the half angle of the rotation, the quaternionic structure of the module, and the sign after a full turn.</p>
+<p><em>Proof.</em> The three statements are the same statement read three ways: the phase of a weight vector under a rotation of angle $\theta$ is $m\theta/2$; the anti-linear intertwiner has the square $-1$; and the rotor of angle $2\pi$ is central and acts as $-1$ on the module.</p>
+<p><strong>Corollary.</strong> None of the three places is visible in the weights of the operator space, and all three are visible in the module.</p>
+<p><em>Proof.</em> The operator weights are integers, and the three phenomena are governed by the half-integer label of the module.</p>
+<p><strong>Corollary.</strong> The half-integer is therefore a property of the module and is lost on passing to the square, except through the three phenomena displayed.</p>
+<p><em>Proof.</em> The cancellation on the square, and the three phenomena.</p>
+<p><strong>The reading.</strong> The half-integers do not disappear: they move. They leave the spectrum of the space and enter the phase, the type and the sign. A reader who looks only at the weights will conclude that the module is integral, and the conclusion is wrong.</p>
+<h2 id="the-shift">The Shift</h2>
+<p><strong>Theorem.</strong> The carrier strings of the operator space are the module string shifted by an integer offset, and the offsets are the labels of the carriers.</p>
+<p><em>Proof.</em> The carrier of label $k$ has the string from $k$ down to $-k$, which is the union of the differences $m-m'$ with $m-m'\le k$; the string is the module string displaced by $k$ relative to its own centre.</p>
+<p><strong>Corollary.</strong> The displacement is the label, and the label is an integer.</p>
+<p><em>Proof.</em> The definition of the carrier string.</p>
+<p><strong>Corollary.</strong> The half-integer offset of the module with respect to the integers is the half angle, and the shift of the carriers is integer.</p>
+<p><em>Proof.</em> The module string has its centre at zero with half-integer entries; the carrier strings have integer entries.</p>
+<p><strong>The reading.</strong> Two shifts, one integer and one half-integer. The integer shift labels the carriers; the half-integer shift is the half angle. The first is measured by the Casimir and the second by the phase of a rotor, and the two are the two coordinates of the same displacement.</p>
+<h2 id="the-bookkeeping-of-the-shift">The Bookkeeping of the Shift</h2>
+<p><strong>Proposition.</strong> The module strings are $\pm\tfrac12$ in the algebra and $\pm\tfrac32,\pm\tfrac12$ in the operators, and the carrier strings are $0,\pm1$ and $0,\pm1,\pm2,\pm3$.</p>
+<p><em>Proof.</em> The weights of the slot, of its cube and of the two conjugations.</p>
+<p><strong>Corollary.</strong> The difference of the two module labels is the integer one, and the difference of the two carrier labels is the integer two.</p>
+<p><em>Proof.</em> Subtracting the strings term by term.</p>
+<p><strong>Corollary.</strong> Every half-integer in the theory is therefore cancelled by another half-integer in any difference of two weights, and survives only in a single weight.</p>
+<p><em>Proof.</em> The differences computed above are integers, and a single weight of the module is a half-integer.</p>
+<p><strong>The reading.</strong> The half-integers are not an anomaly to be removed; they are the labels of the modules, and they disappear exactly when a difference of two weights is taken. The three places where a half-integer is visible are the slot, the summand and the module string of the operators, and in each of them it is the label of a module and never of a carrier.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>One arithmetic.</strong> The half-integers appear once in the module and never again; everything else is integer. This is why the algebra can be described without a choice of phase while the module cannot.</p>
+<p><strong>One obstruction.</strong> The three surviving places are one obstruction: the module is a projective representation of the rotation group, and the projective class is measured by the half-integer. The operator space, being a square, is a genuine representation.</p>
+<p><strong>One consequence.</strong> A statement about an operator that depends on the phase of the module, such as a statement about the sign of a state, cannot be read from the weights of the operator space. It must be read from the module, and the module is the place where the half-integers live.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-decomposition-four-carriers-and-the-weight-multiset.html">The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</a>, for the integer string.</li>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle.html">The Four Weights of the Module and the Half Angle</a>, for the half-integer string.</li>
+<li><a href="the-quaternionic-structure-of-the-module-and-the-real-forms.html">The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</a>, for the type of the module.</li>
+<li><a href="the-slot-and-the-summand.html">The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</a>, for the labels of the two rows.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

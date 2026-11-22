@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Sylvester Operator and the Kronecker Sum — Biquaternion Universe</title>
+  <meta name="description" content="The subject. Two operators are built from a pair of parameters by combining the two one-sided actions instead of composing them: the Sylvester operator…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-sylvester-operator-and-the-kronecker-sum"><strong>The Sylvester Operator and the Kronecker Sum</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> Two operators are built from a pair of parameters by combining the two one-sided actions instead of composing them: the <strong>Sylvester operator</strong> $S_{a,b}(X)=aX-Xb$, which measures the failure of $a$ to act as $b$ on the right, and the <strong>sum operator</strong> $K_{a,b}(X)=aX+Xb$, which adds the two actions. Both are combinations of the left multiplication by $a$ and the right multiplication by $b$, and the article computes their spectra, their kernels and their algebra laws. The two-sided sandwich is recovered from them by one identity, $K_{a,b}^{2}-S_{a,b}^{2}=4T_{a,b}$, so the whole two-sided structure can be read on the difference and on the sum.</p>
+<p><strong>The order of the article.</strong> The two operators and the identity relating them to the sandwich come first. The spectral law follows, then the kernel, then the rank, and the derivation laws close the article.</p>
+<p><strong>It assumes</strong> <em>Operators Acting on Two Sides</em>, <em>The Spectrum of a Biquaternion</em> and <em>The Two-Sided Operators and the Segre Cone</em>. <strong>The row of the elements is</strong> where the spectrum of one element is read; here two spectra are compared, one read on the left and one on the right.</p>
+<p><strong>The result in one line.</strong> The eigenvalues of $S_{a,b}$ are the differences of the eigenvalues of the two parameters and those of $K_{a,b}$ their sums; the kernel of $S_{a,b}$ is the space of the intertwiners, nonzero exactly when the two spectra meet.</p>
+<p><strong>Boundaries.</strong> The product itself is <em>The Two-Sided Operators and the Segre Cone</em>; the coefficients of the sandwich are <em>The Coefficients of a Two-Sided Operator: A Worked Computation</em>; the adjoints of the two-sided family are <em>The Hermitian Pair of Operators Acting on Two Sides</em>.</p>
+<h2 id="the-two-operators">The Two Operators</h2>
+<p><strong>Definition.</strong> For a pair of elements,
+$$
+S_{a,b}(X)=aX-Xb,\qquad K_{a,b}(X)=aX+Xb .
+$$</p>
+<p><strong>Proposition.</strong> The two operators are the difference and the sum of the one-sided operators of the pair:
+$$
+S_{a,b}=L_a-R_b,\qquad K_{a,b}=L_a+R_b .
+$$</p>
+<p><em>Proof.</em> Apply each right side to $X$.</p>
+<p><strong>Proposition.</strong> The sandwich is recovered from them:
+$$
+K_{a,b}^{2}-S_{a,b}^{2}=4\,T_{a,b}.
+$$</p>
+<p><em>Proof.</em> The one-sided operators commute, so $(L_a+R_b)^2-(L_a-R_b)^2=2(L_aR_b+R_bL_a)=4L_aR_b$.</p>
+<p><strong>Corollary.</strong> The pair $(S_{a,b},K_{a,b})$ determines the sandwich and is determined by it up to the exchange of the two parameters.</p>
+<p><em>Proof.</em> The identity gives the sandwich from the pair; conversely $S_{a,b}$ and $K_{a,b}$ are the two combinations of $L_a$ and $R_b$, and $L_a$, $R_b$ are recovered from them by half the sum and half the difference.</p>
+<p><strong>The reading.</strong> The Sylvester operator and the sum operator are the two symmetric combinations of the two sides. Their squares differ by the sandwich, and their sum and difference give back the one-sided operators; nothing is lost in passing from the product to the pair.</p>
+<h2 id="the-spectral-law">The Spectral Law</h2>
+<p><strong>Theorem.</strong> Let $a$ be spectrally regular with the two distinct eigenvalues $\lambda_1,\lambda_2$, each of multiplicity two on the algebra, and let $b$ be spectrally regular with the eigenvalues $\mu_1,\mu_2$. Then
+$$
+\operatorname{spec}S_{a,b}=\{\lambda_i-\mu_j\}_{i,j=1,2},\qquad
+\operatorname{spec}K_{a,b}=\{\lambda_i+\mu_j\}_{i,j=1,2},
+$$
+each value occurring once.</p>
+<p><em>Proof.</em> The left and right multiplications commute, and each is diagonalisable because the parameters are spectrally regular. They are therefore simultaneously diagonalisable, and the algebra splits into four joint eigenspaces of dimension one, on which $L_a$ acts as one of the $\lambda_i$ and $R_b$ as one of the $\mu_j$. On such a space the difference acts as $\lambda_i-\mu_j$ and the sum as $\lambda_i+\mu_j$.</p>
+<p><strong>Corollary.</strong> The trace of the Sylvester operator is zero and the trace of the sum operator is $8\,\mathrm{Sc}(a)+8\,\mathrm{Sc}(b)$.</p>
+<p><em>Proof.</em> The four differences add to $2(\lambda_1+\lambda_2)-2(\mu_1+\mu_2)$, which is $0$ because each pair adds to twice the scalar part; the four sums add to $2(\lambda_1+\lambda_2)+2(\mu_1+\mu_2)$, which is $8\,\mathrm{Sc}(a)+8\,\mathrm{Sc}(b)$.</p>
+<p><strong>Corollary.</strong> The determinant of the Sylvester operator is the product of the four differences, and it vanishes exactly when the two spectra meet.</p>
+<p><em>Proof.</em> The determinant is the product of the eigenvalues, and the product of four differences vanishes when one difference does.</p>
+<p><strong>The reading.</strong> The spectrum of the Sylvester operator is a table of differences and the spectrum of the sum operator a table of sums. Neither table is a new invariant: both are read from the two spectra of the parameters, and they differ only in the sign of the second entry.</p>
+<h2 id="the-kernel">The Kernel</h2>
+<p><strong>Definition.</strong> The <strong>intertwiner space</strong> of the pair is
+$$
+\ker S_{a,b}=\{X:aX=Xb\}.
+$$</p>
+<p><strong>Theorem.</strong> The kernel of $S_{a,b}$ is nonzero exactly when the two spectra meet, and its dimension is the number of common eigenvalues, each counted once.</p>
+<p><em>Proof.</em> By the simultaneous diagonalisation of the preceding section, $S_{a,b}$ acts on the joint eigenspace of the pair $(\lambda_i,\mu_j)$ as the scalar $\lambda_i-\mu_j$. The kernel is the direct sum of the joint eigenspaces whose scalar vanishes, and there is one such space for each coincidence $\lambda_i=\mu_j$.</p>
+<p><strong>Corollary.</strong> For a spectrally regular pair with distinct spectra the Sylvester operator is a bijection, and for a pair with one common eigenvalue it has rank three.</p>
+<p><em>Proof.</em> The dimension count $4-\dim\ker S_{a,b}$.</p>
+<p><strong>Corollary.</strong> The kernel of $S_{a,b}$ is a space of intertwiners: every element of it carries the left action of $a$ to the right action of $b$, and the space is a module over the common centraliser of the two parameters.</p>
+<p><em>Proof.</em> An element $X$ of the kernel satisfies $aX=Xb$, and for $Y$ commuting with both parameters the element $XY$ satisfies the same identity.</p>
+<p><strong>The reading.</strong> The Sylvester operator measures the distance between two elements: it is injective exactly when they have no eigenvalue in common, and its kernel records the coincidences. This is the operator form of the statement that two elements with disjoint spectra generate the whole algebra.</p>
+<h2 id="the-rank">The Rank</h2>
+<p><strong>Proposition.</strong> The rank of $S_{a,b}$ is $4-\dim\ker S_{a,b}$, and the rank of $K_{a,b}$ is four unless the spectra contain a pair of opposite values.</p>
+<p><em>Proof.</em> The rank-nullity count for the first; for the second, the same argument with the scalar $\lambda_i+\mu_j$ in place of the difference.</p>
+<p><strong>Corollary.</strong> The rank of the Sylvester operator takes the values four, three, two or one according to the number of coincidences of the two spectra, and it is zero only when the two parameters are scalars with the same value.</p>
+<p><em>Proof.</em> The number of vanishing differences among the four is at most four, and all four vanish exactly when every eigenvalue of $a$ equals the corresponding eigenvalue of $b$, which for scalars means equality of the two scalars.</p>
+<p><strong>Corollary.</strong> The rank of $S_{a,b}$ is not a function of the rank of the sandwich: the sandwich is a bijection whenever both parameters are nonzero, while the Sylvester operator is a bijection only when the spectra are disjoint.</p>
+<p><em>Proof.</em> The rank of the product is four for nonzero parameters, and the rank of the difference depends on the spectra.</p>
+<p><strong>The reading.</strong> Here the row differs sharply from the product: the product sees only whether a parameter vanishes, and the difference sees the spectra. The two invariants of a pair, the vanishing of a parameter and the coincidence of two eigenvalues, are read by two different operators built from the same pair.</p>
+<h2 id="the-derivation-laws">The Derivation Laws</h2>
+<p><strong>Theorem.</strong> For every element $c$,
+$$
+[S_{a,b},L_c]=L_{[a,c]},\qquad [S_{a,b},R_c]=-R_{[b,c]}.
+$$</p>
+<p><em>Proof.</em> Apply the commutator to $X$. On the left, $S_{a,b}(cX)-cS_{a,b}(X)=acX-cXb-caX+cXb=(ac-ca)X$, which is $L_{[a,c]}(X)$. On the right, $S_{a,b}(Xc)-S_{a,b}(X)c=aXc-Xbc-aXc+Xbc=-X(bc-cb)$, which is $-R_{[b,c]}(X)$.</p>
+<p><strong>Corollary.</strong> The assignment $a\mapsto S_{a,b}$ is equivariant for the adjoint action: conjugating the parameter by a unit conjugates the operator by the same left multiplication.</p>
+<p><em>Proof.</em> The theorem integrated, or directly: $S_{uau^{-1},b}=L_uS_{a,b}L_{u^{-1}}$ when $u$ commutes with $b$.</p>
+<p><em>Corollary.</em> The sum operator satisfies the same two laws with the same right-hand sides, since the identity cancels in the commutator.</p>
+<p><em>Proof.</em> $K_{a,b}$ and $S_{a,b}$ differ by $2R_b$, which commutes with $L_c$ and with $R_c$ only in the second case; the commutators with $L_c$ agree, and the commutator with $R_c$ differs by the central term, which vanishes when $c$ commutes with $b$.</p>
+<p><strong>The reading.</strong> The Sylvester operator is a derivation in its first argument: it converts the commutator of parameters into the commutator of operators, and it does so on each side separately. This is the algebraic reason the spectrum of $S_{a,b}$ is the table of differences: a derivation on a semisimple element acts on the spectrum by differences.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_{a,b}(X)=aX-Xb=L_a-R_b$</td>
+<td>the Sylvester operator</td>
+</tr>
+<tr>
+<td>$K_{a,b}(X)=aX+Xb=L_a+R_b$</td>
+<td>the sum operator</td>
+</tr>
+<tr>
+<td>$K_{a,b}^{2}-S_{a,b}^{2}=4T_{a,b}$</td>
+<td>the identity recovering the sandwich</td>
+</tr>
+<tr>
+<td>$\{\lambda_i-\mu_j\}$, $\{\lambda_i+\mu_j\}$</td>
+<td>the two spectra</td>
+</tr>
+<tr>
+<td>$\ker S_{a,b}=\{X:aX=Xb\}$</td>
+<td>the intertwiner space</td>
+</tr>
+<tr>
+<td>$[S_{a,b},L_c]=L_{[a,c]}$</td>
+<td>the derivation law</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the sandwich and its law.</li>
+<li><a href="the-spectrum-of-a-biquaternion.html">The Spectrum of a Biquaternion</a>, for the eigenvalues of a parameter.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone.html">The Two-Sided Operators and the Segre Cone</a>, for the product recovered from the pair.</li>
+<li><a href="the-eigenbasis-of-a-spectrally-regular-biquaternion.html">The Eigenbasis of a Spectrally Regular Biquaternion</a>, for the simultaneous diagonalisation used in the spectral law.</li>
+<li><a href="the-four-ranks-of-the-two-sided-operators.html">The Four Ranks of the Two-Sided Operators</a>, for the rank of the product against the rank of the difference.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

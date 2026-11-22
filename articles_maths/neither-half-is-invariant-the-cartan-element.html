@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The two squares are the eigenspaces of the transposition, and the Cartan element of the copy acts on the operator space by left…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="neither-half-is-invariant-the-cartan-element-carries-math0-into-math1"><strong>Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The two squares are the eigenspaces of the transposition, and the Cartan element of the copy acts on the operator space by left multiplication. The article shows that this action preserves neither square: it carries a symmetric operator to an operator with a nonzero alternating part, and it carries an alternating one back with a symmetric part. The mixing is computed explicitly on the identity, and its measure is the commutator of the action with the transposition.</p>
+<p><strong>The order of the article.</strong> The action and the two projections come first; the explicit image of a symmetric operator second. The mixing of the labels follows, and the reading closes the article.</p>
+<p><strong>It assumes</strong> <em>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</em>, <em>The Symmetric and Antisymmetric Parts of the Operator Space</em> and <em>The Four Weights of the Module and the Half Angle</em>. <strong>The row of the elements is</strong> where the Cartan element acts on a space with no such split; here the split exists and the action crosses it.</p>
+<p><strong>The result in one line.</strong> Left multiplication by the Hermitian Cartan element sends the identity to an operator whose symmetric and alternating parts are both nonzero, so neither square is invariant, and the obstruction is measured by the failure of the element to be fixed by the transposition.</p>
+<p><strong>Boundaries.</strong> The parity rule is <em>The Parity Rule</em>; the intersection table is <em>The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</em>; the two halves themselves are <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>.</p>
+<h2 id="the-action-and-the-projections">The Action and the Projections</h2>
+<p><strong>Definition.</strong> Let $H=i\,L_{i\vec e_z}$ be the Hermitian Cartan element, acting on the operator space by left multiplication, $S\mapsto HS$, and let $\pi_+=\tfrac12(\mathrm I+\tau)$ and $\pi_-=\tfrac12(\mathrm I-\tau)$ be the projections onto the two squares.</p>
+<p><strong>Proposition.</strong> The projections are self-adjoint idempotents with sum the identity, and the transposition satisfies $\tau(AB)=\tau(B)\tau(A)$.</p>
+<p><em>Proof.</em> The transposition is an involution, so the two maps are the spectral projections; the reversal of the product is the anti-automorphism property.</p>
+<p><strong>Corollary.</strong> The action of $H$ preserves a square exactly when $\tau(HS)=\pm HS$ for every $S$ of that square, that is exactly when $\tau(H)=H$.</p>
+<p><em>Proof.</em> $\tau(HS)=\tau(S)\tau(H)$; for $S$ in the $+$ square and $\tau(H)=H$ the product is $SH$, which is not $HS$ in general, so the condition is necessary and the failure is the commutator.</p>
+<p><strong>Corollary.</strong> The mixing is measured by the commutator $[H,\tau]$ of the action with the transposition.</p>
+<p><em>Proof.</em> The defect of invariance is $\tau(HS)-H\tau(S)=\tau(S)\tau(H)-H\tau(S)$, which vanishes for all $S$ exactly when $\tau(H)$ commutes with every $S$.</p>
+<p><strong>The reading.</strong> The action of the Cartan element does not commute with the transposition, and the failure is concentrated in the alternating part of $H$ itself. The squares are the eigenspaces of $\tau$, and an action that does not commute with $\tau$ cannot preserve them.</p>
+<h2 id="the-image-of-the-identity">The Image of the Identity</h2>
+<p><strong>Theorem.</strong> The identity is symmetric and its image under the Cartan element is $H$, whose symmetric and alternating parts are
+$$
+\pi_+H=\tfrac{i}{2}\left(T_{i\vec e_z,e_t}+T_{e_t,i\vec e_z}\right),\qquad
+\pi_-H=\tfrac{i}{2}\left(T_{i\vec e_z,e_t}-T_{e_t,i\vec e_z}\right),
+$$
+both nonzero.</p>
+<p><em>Proof.</em> The identity is the product $T_{e_t,e_t}$, fixed by the transposition; the image is $H=iT_{i\vec e_z,e_t}$, and the transposition carries it to $iT_{e_t,i\vec e_z}$; the two projections follow.</p>
+<p><strong>Corollary.</strong> A symmetric operator is carried to an operator with a nonzero alternating part, and the two parts have the same dimension.</p>
+<p><em>Proof.</em> The computation, and the ranks of the two products of units.</p>
+<p><strong>Corollary.</strong> An alternating operator is carried to an operator with a nonzero symmetric part, by the same computation applied to a difference of products.</p>
+<p><em>Proof.</em> Apply the action to $T_{a,b}-T_{b,a}$ and project.</p>
+<p><strong>The reading.</strong> One example suffices to destroy both invariances, and the example is the simplest operator of the space. The Cartan element carries $\operatorname{Sym}$ into $\Lambda$ and back, and it does so on the identity itself.</p>
+<h2 id="the-mixing-of-the-labels">The Mixing of the Labels</h2>
+<p><strong>Proposition.</strong> The alternating part of the image of a symmetric operator of weight $w$ has weight $w+1$ or $w-1$, so the mixing moves the label by one unit.</p>
+<p><em>Proof.</em> The Cartan element carries the weight $w$ to the weight $w+1$ of the same vector under the generator, and the alternating projection does not change the weight.</p>
+<p><strong>Corollary.</strong> The mixing pairs the two squares carrier by carrier, the odd carriers receiving from the even ones and conversely.</p>
+<p><em>Proof.</em> The shift of one unit exchanges the parity of the label.</p>
+<p><strong>Corollary.</strong> Two applications of the Cartan element return to the same square, since the shift by one is applied twice.</p>
+<p><em>Proof.</em> The weight shift is additive, and two shifts of one unit restore the parity.</p>
+<p><strong>The reading.</strong> The mixing is not wild: it moves by one step in the weight and exchanges the parity. This is why the two squares are exchanged rather than destroyed, and why the carriers are not contained in either square.</p>
+<h2 id="the-size-of-the-mixing">The Size of the Mixing</h2>
+<p><strong>Proposition.</strong> The alternating part of the image of a symmetric operator is never larger than the operator itself, and on the identity it is exactly half of it in the basis of products.</p>
+<p><em>Proof.</em> The two projections are the coordinates of the operator in the direct sum of the squares, and they satisfy $\|\pi_+S\|^{2}+\|\pi_-S\|^{2}=\|S\|^{2}$ for the trace form; on the identity the image is the Cartan element, whose two parts have equal norm.</p>
+<p><strong>Corollary.</strong> The mixing is an isometry in the sense that it preserves the total norm while moving half of it to the other square.</p>
+<p><em>Proof.</em> The identity displayed, applied to the image.</p>
+<p><strong>Corollary.</strong> Iterating the action produces a bounded drift between the squares, and the drift is periodic with period two in parity.</p>
+<p><em>Proof.</em> Each application shifts the weight by one unit and exchanges the squares; the weight is bounded by three, so the drift returns.</p>
+<p><strong>The reading.</strong> The mixing has a size, and the size is measured by the two projections. It is not an all-or-nothing phenomenon: the action moves a definite part of each operator into the other square, and the part is computable from the projections.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>Consequence for the carriers.</strong> No carrier of the operator space is contained in one square alone, since the Cartan element carries a nonzero vector of the carrier into the other square. A carrier is stable under the copy and not under the transposition, and the two structures cross.</p>
+<p><strong>Consequence for the projections.</strong> The projections onto the squares do not commute with the copy, so a spectral statement about a carrier and a symmetry statement about a square cannot be combined without a correction term, and the correction is the commutator computed above.</p>
+<p><strong>The three objects.</strong> The transposition gives the split into ten and six; the copy gives the split into seven, five, three and one; and the Cartan element is the operator that shows the two splits are different. The algebra of the operators carries both structures, and neither is a refinement of the other.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-parity-rule-the-two-squares-of-the-module.html">The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</a>, for the split of the carriers between the squares.</li>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space.html">The Symmetric and Antisymmetric Parts of the Operator Space</a>, for the two halves.</li>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle.html">The Four Weights of the Module and the Half Angle</a>, for the weight shift.</li>
+<li><a href="the-intersection-table-of-the-carriers-with-the-two-halves.html">The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</a>, for the table of the intersections.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

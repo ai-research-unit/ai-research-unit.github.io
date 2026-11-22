@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-$\tfrac32$ Bispinors and the Rank Strata — Biquaternion Universe</title>
+  <meta name="description" content="The subject. A bispinor of the row names an operator, and the rank of that operator is the first invariant of the bispinor. This article proves that the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-math0-bispinors-and-the-rank-strata"><strong>The Spin-$\tfrac32$ Bispinors and the Rank Strata</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A bispinor of the row names an operator, and the rank of that operator is the first invariant of the bispinor. This article proves that the invariant takes three values, four, two and zero, and that its coarseness is a consequence of the degeneracy of the elements of the biquaternion algebra, which fill a hypersurface. It then shows what the rank fails to see, and which invariant has to replace it.</p>
+<p><strong>The order of the article.</strong> <em>The Operator Named by a Bispinor</em> defines the correspondence. <em>Three Values</em> proves the theorem and describes the three strata. <em>The Singular Point and the Norm</em> reads the stratum of rank zero through the norm and the determinant. <em>What the Rank Fails to See</em> proves that a second invariant is needed. <em>The Class of a Spinor</em> identifies that invariant with the algebraic type.</p>
+<p><strong>It assumes</strong> <em>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</em>, <em>Zero Divisors and Invertibles in the Biquaternion Algebra</em> and <em>The Four Ranks of the Two-Sided Operators</em>. <strong>The row of the elements is</strong> where the same argument gives three ranks for an element and its left multiplication.</p>
+<p><strong>The result in one line.</strong> A bispinor names an operator whose rank is $4$ at an invertible element, $2$ at a nonzero zero divisor and $0$ at the origin, and no other value occurs.</p>
+<p><strong>Boundaries.</strong> The spectrum of the same operator is <em>The Spin-$\tfrac32$ Bispinors and the Spectral Strata</em>; the classification of spinors by algebraic type is <em>The Fierz–Kofink Identities and the Classification of Spinors</em>; the rank strata of the carriers are <em>The Spin-One Carrier and the Rank Strata</em>.</p>
+<p>Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and the products cyclic; an element of the algebra is $a=a_te_t+a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ with complex coefficients; $N(a)=a_t^2+a_x^2+a_y^2+a_z^2$ is the norm; the module of the operators is $V_{3/2}=\operatorname{Sym}^3S$; and $L_a$, $R_b$, $T_{a,b}=L_aR_b$ are the operators.</p>
+<h2 id="the-operator-named-by-a-bispinor">The Operator Named by a Bispinor</h2>
+<p><strong>Definition.</strong> The module of the operators and the algebra have the same complex dimension, four, and an identification of the two is a choice of a linear isomorphism. Fix one. A bispinor $\psi$ then names an element $a_\psi$ of the algebra, and <strong>the operator of the bispinor</strong> is</p>
+<p>$$
+T_\psi=L_{a_\psi},\qquad T_\psi(X)=a_\psi X ,
+$$</p>
+<p>the left multiplication by the named element. The <strong>rank</strong> of the bispinor is the rank of $T_\psi$ as a linear map of the algebra.</p>
+<p><strong>Proposition.</strong> The rank of a bispinor is the complex dimension of the image of $T_\psi$; it is invariant under the action of the group of the copy, and it is unchanged when the bispinor is multiplied by a non-zero scalar.</p>
+<p><em>Proof.</em> The image of a left multiplication is the left ideal generated by $a_\psi$, and its dimension is an invariant of the operator. The action of the group carries $a_\psi$ to $g a_\psi g^{-1}$, whose left multiplication is a conjugate of $T_\psi$ and therefore of the same rank. A scalar multiple names a scalar multiple of the element, whose left multiplication has the same image.</p>
+<p><strong>The reading.</strong> The rank measures the image and nothing else. It is the dimension of a subspace of a four-dimensional space, so it is an integer between zero and four, and the theorem below says which of the five integers occur.</p>
+<h2 id="three-values">Three Values</h2>
+<p><strong>Theorem.</strong> The rank of a bispinor is $4$ when the named element is invertible, $2$ when it is a nonzero zero divisor, and $0$ at the origin. The rank strata of the module are therefore the origin, the punctured degeneracy hypersurface, and its complement.</p>
+<p><em>Proof.</em> The left multiplication by $a$ is a bijection exactly when $a$ is invertible, which happens exactly when its norm does not vanish; then $L_aL_{a^{-1}}=\mathrm{id}$ and the rank is four. When $a$ is a nonzero zero divisor the annihilator of the left multiplication by $a$ has dimension two, so the image has dimension two and the rank is two. At $a=0$ the image is the origin.</p>
+<p><strong>Corollary.</strong> The stratum of full rank is the complement of a hypersurface in the four-dimensional module, open and dense; the stratum of rank two is the hypersurface minus a point; the stratum of rank zero is a single point.</p>
+<p><em>Proof.</em> The norm is a nonzero quadratic form, so its zero set is a hypersurface of dimension three, and the origin is the only element whose image is zero.</p>
+<p>$$
+\dim\{\operatorname{rank}=4\}=4,\qquad \dim\{\operatorname{rank}=2\}=3,\qquad \dim\{\operatorname{rank}=0\}=0 .
+$$</p>
+<p><strong>Corollary.</strong> A two-sided operator has the rank $\operatorname{rank}L_a\operatorname{rank}R_b/4$, so the two-sided ranks are four, two, one and zero, and the value one appears only when both parameters are degenerate.</p>
+<p><em>Proof.</em> The left multiplication has rank four on the invertible elements and two on the nonzero zero divisors, the same holds on the right, and the product of the two ranks divided by four gives the four cases.</p>
+<p><strong>The reading.</strong> Compare the count with a general algebra of the same dimension: there the ranks run through five values and the strata have dimensions four, three, two, one and zero. Here the degeneracy collapses the five into three and leaves the count $4+3+0=7$ of the module. The one-sided reading has three values and the two-sided reading four, and neither of them reaches the five of the general row.</p>
+<h2 id="the-singular-point-and-the-norm">The Singular Point and the Norm</h2>
+<p><strong>Proposition.</strong> The determinant of the operator of a bispinor is the square of the norm of the named element, $\det T_\psi=N(a_\psi)^2$, and the trace is four times its scalar part, $\operatorname{tr}T_\psi=4\,a_t$. The operator is singular exactly on the zero set of the norm.</p>
+<p><em>Proof.</em> On a basis of the algebra the left multiplication by $a$ has the determinant $N(a)^2$, by the multiplicativity of the determinant and the identity $L_aL_b=L_{ab}$ together with $\det L_a=N(a)^2$ read at the units. The trace is the sum of the diagonal coefficients, which is four times the coefficient of the identity. The singular set is the zero set of the determinant, which is the zero set of the norm, a hypersurface through the origin.</p>
+<p><strong>Corollary.</strong> The two strata of the determinant are the union of the rank-two stratum and the origin, and the complement; the determinant therefore separates the invertible elements from the rest, and the rank separates the rest into two more pieces.</p>
+<p><em>Proof.</em> The determinant vanishes exactly where the norm does, which is the set of the zero divisors together with the origin; on the complement the element is invertible and the rank is four.</p>
+<p><strong>The reading.</strong> The norm is the invariant behind the determinant at this row. It is multiplicative, it vanishes on a hypersurface, and its square is the determinant of the operator: this is the degeneracy of the algebra read as a statement about a single homogeneous polynomial. The rank refines the picture by one step, since it also distinguishes the origin inside that hypersurface.</p>
+<h2 id="what-the-rank-fails-to-see">What the Rank Fails to See</h2>
+<p><strong>Theorem.</strong> The rank does not separate the points of an ideal: two non-zero bispinors of the same minimal left ideal have the same rank, and they are not the same point.</p>
+<p><em>Proof.</em> Both have rank two by the theorem above, since every non-zero element of a minimal left ideal is a zero divisor with that ideal as its image; the ideal has complex dimension two, so its non-zero points form a projective line that the rank maps to the single value two.</p>
+<p><strong>Corollary.</strong> A second invariant is required, and the natural one is the spectrum of the operator, treated in <em>The Spin-$\tfrac32$ Bispinors and the Spectral Strata</em>. The rank is the coarsest invariant of the module; the spectrum is finer.</p>
+<p><em>Proof.</em> The rank arises from a single polynomial, the determinant; the spectrum is the full characteristic polynomial, whose coefficients include the determinant and three others.</p>
+<p><strong>The reading.</strong> A coarse invariant is not a defective one. It answers one question — how large is the image — and it answers it completely, in three cases. The mistake would be to expect it to answer a second question as well.</p>
+<h2 id="the-class-of-a-spinor">The Class of a Spinor</h2>
+<p><strong>Proposition.</strong> The class of a bispinor is the class of the operator it names, and at this row that class is one of two: the class of the origin and the class of the invertible operators.</p>
+<p><em>Proof.</em> The class is the dimension of the ideal generated, which is four times the rank, and the rank is zero or four by the theorem on two values.</p>
+<p><strong>Corollary.</strong> The finer invariant inside the class of full rank is the multiplicity pattern of the spectrum of the named element, which is the subject of <em>The Spin-$\tfrac32$ Bispinors and the Spectral Strata</em>: two distinct values on a regular element and a single value on a degenerate one.</p>
+<p><em>Proof.</em> The spectrum of a left multiplication is the spectrum of the named element with each value taken twice, so the pattern is $(2,2)$ unless the two eigenvalues of the element coincide, in which case it is $(4)$.</p>
+<p><strong>The reading.</strong> The rank is the coarsest invariant because it is the vanishing of one coefficient of the characteristic polynomial. The class of the bispinor records the rank, and the finer invariants record the coefficients; the degeneracy is what makes the coarsest invariant take three values only while the finer ones still have work to do.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-three-halves-bispinors-and-the-spectral-strata.html">The Spin-$\tfrac32$ Bispinors and the Spectral Strata</a>, for the finer invariant and the five classes</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-minimal-left-ideals.html">The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</a>, for the ideals whose points the rank fails to separate</li>
+<li><a href="zero-divisors-and-invertibles-in-the-biquaternion-algebra.html">Zero Divisors and Invertibles in the Biquaternion Algebra</a>, for the zero divisors and the norm</li>
+<li><a href="the-four-ranks-of-the-two-sided-operators.html">The Four Ranks of the Two-Sided Operators</a>, for the same collapse on the operator space</li>
+<li><a href="the-length-and-the-two-ranks.html">The Length and the Two Ranks</a>, for a second invariant of a different kind</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

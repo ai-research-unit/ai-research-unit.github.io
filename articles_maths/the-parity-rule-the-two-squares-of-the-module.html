@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The operator space splits into the symmetric and the alternating square of the module, of dimensions ten and six, and each half splits…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-parity-rule-math0-and-math1"><strong>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The operator space splits into the symmetric and the alternating square of the module, of dimensions ten and six, and each half splits further into two carriers. The article states the parity rule, which says that the symmetric square carries the carriers of odd label and the alternating square those of even label, checks the dimensions twice, and reads the consequences for the two decompositions of the sixteen.</p>
+<p><strong>The order of the article.</strong> The two squares and their dimensions come first; the parity rule and its checks second. The consequences for the carriers follow, and the comparison with the row of the elements closes the article.</p>
+<p><strong>It assumes</strong> <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>, <em>The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</em> and <em>The Transposition of the Two Sides</em>. <strong>The row of the elements is</strong> where the same rule gives $\operatorname{Sym}^{2}=V_1$ and $\Lambda^{2}=V_0$; here the doubled label produces two carriers in each square.</p>
+<p><strong>The result in one line.</strong> $\operatorname{Sym}^{2}V_{3/2}=V_3\oplus V_1$ and $\Lambda^{2}V_{3/2}=V_2\oplus V_0$, with $10=7+3$ and $6=5+1$, so the parity of the label is the parity of the square.</p>
+<p><strong>Boundaries.</strong> The two halves as eigenspaces of the transposition are <em>The Symmetric and Antisymmetric Parts of the Operator Space</em>; the products of carriers are <em>The Truncated Rule: the Product of Two Carriers Is Not a Carrier</em>; the mixing of the halves is <em>Neither Half Is Invariant</em>.</p>
+<h2 id="the-two-squares">The Two Squares</h2>
+<p><strong>Definition.</strong> For a module $V$ the <strong>symmetric square</strong> $\operatorname{Sym}^{2}V$ is the quotient of $V\otimes V$ by the relations $v\otimes w-w\otimes v$, and the <strong>alternating square</strong> $\Lambda^{2}V$ is the quotient by $v\otimes v$; for the module of the operators they are the two eigenspaces of the transposition of the two sides.</p>
+<p><strong>Theorem.</strong> For a four-dimensional module the two squares have dimensions ten and six, and
+$$
+\operatorname{End}(\mathbb{B})=\operatorname{Sym}^{2}V\oplus\Lambda^{2}V,\qquad 16=10+6 .
+$$</p>
+<p><em>Proof.</em> The dimension of the symmetric square is $4\cdot5/2=10$ and of the alternating square $4\cdot3/2=6$; the two are the eigenspaces of an involution with eigenvalues $\pm1$, hence complementary.</p>
+<p><strong>Corollary.</strong> The symmetric square is the space of the self-adjoint operators and the alternating square the space of the skew operators for the transposition.</p>
+<p><em>Proof.</em> The eigenspaces of the involution are the fixed and the negated parts.</p>
+<p><strong>Corollary.</strong> Each square is the span of its decomposable elements, the symmetric ones of the sums $T_{a,b}+T_{b,a}$ and the alternating ones of the differences.</p>
+<p><em>Proof.</em> The two squares are generated by the symmetric and the alternating tensor products.</p>
+<p><strong>The reading.</strong> The split $10+6$ is the split of the sixteen into the two squares, and it is the first decomposition of the space. The second is the split into carriers, and the article compares the two.</p>
+<h2 id="the-parity-rule">The Parity Rule</h2>
+<p><strong>Theorem.</strong> The symmetric square carries the carriers of odd label and the alternating square the carriers of even label:
+$$
+\operatorname{Sym}^{2}V_{3/2}=V_3\oplus V_1,\qquad \Lambda^{2}V_{3/2}=V_2\oplus V_0 .
+$$</p>
+<p><em>Proof.</em> The weights of the symmetric square are the sums $m+m'$ with $m,m'$ taken from the four weights counted with repetition, and those of the alternating square the same sums with the two weights distinct. Grouping the sums by the highest weight gives the carrier strings: the odd part of the string carries the labels three and one, the even part the labels two and zero.</p>
+<p><strong>Corollary.</strong> The dimensions check as $10=7+3$ and $6=5+1$.</p>
+<p><em>Proof.</em> The dimensions of the four carriers.</p>
+<p><strong>Corollary.</strong> Each square splits into exactly two carriers, and no carrier meets both squares.</p>
+<p><em>Proof.</em> The parity rule assigns each carrier to one square.</p>
+<p><strong>The reading.</strong> The parity rule is the statement that the label of a carrier and the symmetry of its elements have the same parity. It is read on the weight strings, and it fixes the intersection of the two decompositions completely.</p>
+<h2 id="the-two-checks">The Two Checks</h2>
+<p><strong>Proposition.</strong> The weight strings of the two squares reproduce the strings of their carriers, the symmetric square having the weights $3,2,1,1,0,0,-1,-1,-2,-3$ and the alternating square $2,1,0,0,-1,-2$.</p>
+<p><em>Proof.</em> The sums of two weights with repetition, and the sums of two distinct weights.</p>
+<p><strong>Corollary.</strong> The multiplicities of the symmetric square are those of $V_3$ and $V_1$ added, and the same for the alternating square.</p>
+<p><em>Proof.</em> The carrier strings, added.</p>
+<p><strong>Corollary.</strong> The weight zero occurs twice in the symmetric square and twice in the alternating square.</p>
+<p><em>Proof.</em> Once from the pair of equal weights, once from the pair of opposite weights in each square.</p>
+<p><strong>The reading.</strong> The two checks, by dimensions and by weights, are the same check read twice. The parity rule is not an extra hypothesis: it is the statement that the two groupings of the weights coincide.</p>
+<h2 id="the-consequences">The Consequences</h2>
+<p><strong>Theorem.</strong> The two decompositions of the sixteen, into squares and into carriers, refine neither one another beyond the parity rule.</p>
+<p><em>Proof.</em> Each carrier lies in one square by the parity rule, and each square contains two carriers; a carrier is therefore an intersection of a square with a sum of carriers, and no finer common refinement exists.</p>
+<p><strong>Corollary.</strong> The orthogonal projection onto a carrier is the composition of the projection onto its square with the projector of the carrier inside the square.</p>
+<p><em>Proof.</em> The carrier is contained in the square, so the two projections compose.</p>
+<p><strong>Corollary.</strong> The trace of the transposition on a carrier is $+1$ for the odd labels and $-1$ for the even ones, weighted by the dimension.</p>
+<p><em>Proof.</em> The carrier lies in one eigenspace, and the trace of the involution on it is its dimension with the sign of the eigenvalue.</p>
+<p><strong>The reading.</strong> The parity rule makes the two decompositions compatible: the squares are the coarse split, the carriers the fine one, and the fine one sits inside the coarse one without mixing.</p>
+<h2 id="the-row-of-the-elements">The Row of the Elements</h2>
+<p><strong>Proposition.</strong> In the row of the elements the two squares of the two-dimensional module are $\operatorname{Sym}^{2}=V_1$ and $\Lambda^{2}=V_0$, with dimensions $3$ and $1$.</p>
+<p><em>Proof.</em> The same computation with the two weights $\pm\tfrac12$: the symmetric square has the weights $1,0,0,-1$ and the alternating square the weights $1,0,-1$ shifted by nothing, giving the two carriers.</p>
+<p><strong>Corollary.</strong> The parity rule holds in both rows, and the only difference is the number of terms in each square.</p>
+<p><em>Proof.</em> Both rows obey the same parity of label and square.</p>
+<p><strong>Corollary.</strong> The two rows have $10+6$ and $3+1$ as the dimensions of their squares, and the four numbers are the dimensions of the two symmetric squares and the two alternating squares.</p>
+<p><em>Proof.</em> The dimensions of the modules, four and two.</p>
+<p><strong>The reading.</strong> One rule, two rows: the parity is the same, the number of carriers differs. This is why the statement of the rule can be made once and used twice, and why the row of the operators is the first place where a square carries two carriers.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space.html">The Symmetric and Antisymmetric Parts of the Operator Space</a>, for the two halves as eigenspaces.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html">The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</a>, for the four carriers.</li>
+<li><a href="the-transposition-of-the-two-sides.html">The Transposition of the Two Sides</a>, for the involution whose eigenspaces are the squares.</li>
+<li><a href="neither-half-is-invariant-the-cartan-element.html">Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</a>, for the failure of the squares under another action.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

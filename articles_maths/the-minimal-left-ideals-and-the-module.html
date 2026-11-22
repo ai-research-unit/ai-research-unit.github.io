@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Minimal Left Ideals and the Module $V_{3/2}$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. A minimal left ideal of the operator algebra is the set of the operators with image inside a fixed line of the module, and each of them is a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-minimal-left-ideals-and-the-module-math0"><strong>The Minimal Left Ideals and the Module $V_{3/2}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A minimal left ideal of the operator algebra is the set of the operators with image inside a fixed line of the module, and each of them is a copy of the module itself, of complex dimension four. The article parametrises the family of these ideals, shows that the copy acts on the family transitively, computes the stabiliser, checks the weight string of one ideal, and reads the identity $\Lambda^{3}V_{3/2}\cong V_{3/2}$ that makes the third exterior power return the module.</p>
+<p><strong>The order of the article.</strong> The ideals and their parametrisation come first; the action of the copy and the stabiliser second. The weight string follows, then the exterior power, and the pairing closes the article.</p>
+<p><strong>It assumes</strong> <em>The Left Ideals and the Image of a Left Multiplication</em>, <em>The Four Weights of the Module and the Half Angle</em> and <em>The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</em>. <strong>The row of the elements is</strong> where the minimal left ideals are the lines of a plane; here they are the lines of a three-dimensional projective space, and each ideal is a four-dimensional module.</p>
+<p><strong>The result in one line.</strong> The minimal left ideals are parametrised by the lines of the module, form one orbit of the copy, each is a copy of $V_{3/2}$ with the weight string $\pm\tfrac32,\pm\tfrac12$, and $\Lambda^{3}V_{3/2}\cong V_{3/2}$.</p>
+<p><strong>Boundaries.</strong> The left ideals of the algebra itself are <em>The Left Ideals and the Image of a Left Multiplication</em>; the weights are <em>The Four Weights of the Module and the Half Angle</em>; the spinor spaces built on the ideals are <em>Introduction to the Spin-$\tfrac32$ Bispinor Spaces</em>.</p>
+<h2 id="the-ideals">The Ideals</h2>
+<p><strong>Definition.</strong> For a line $\ell$ of the module let $I_\ell$ be the set of the operators whose image is contained in $\ell$.</p>
+<p><strong>Theorem.</strong> Each $I_\ell$ is a minimal left ideal of the operator algebra, of complex dimension four, and every minimal left ideal is of this form.</p>
+<p><em>Proof.</em> The set $I_\ell$ is closed under left multiplication by any operator, it is a left ideal, and its dimension is four because an operator with image in a line is determined by the four values on a basis, all landing in that line. It is minimal because a nonzero element of it has image exactly $\ell$ and generates the whole ideal under left multiplication. Conversely a minimal left ideal consists of the operators of rank one with a fixed image line.</p>
+<p><strong>Corollary.</strong> The ideals of the operator algebra are parametrised by the lines of the module, that is, by a projective three-space.</p>
+<p><em>Proof.</em> The map $\ell\mapsto I_\ell$ is injective, since distinct lines give distinct ideals, and surjective by the theorem.</p>
+<p><strong>Corollary.</strong> The ideals of the algebra itself are parametrised by the lines of a plane, and each is of complex dimension two.</p>
+<p><em>Proof.</em> The same construction with the algebra as a module of dimension two: the lines form a projective line, and each ideal is a copy of the two-dimensional spinor space.</p>
+<p><strong>The reading.</strong> The family of minimal left ideals is a projective space whose points are the spinor spaces, and the passage from the algebra to its operator algebra doubles the dimension of the module and raises the dimension of the family from one to three.</p>
+<h2 id="the-action-of-the-copy">The Action of the Copy</h2>
+<p><strong>Theorem.</strong> The copy acts on the family of ideals by its action on the lines of the module, and the action is transitive.</p>
+<p><em>Proof.</em> An element of the copy is an operator, and left multiplication by it carries $I_\ell$ to $I_{g\ell}$ where $g$ is the corresponding linear map of the module; the transitivity is that of the defining action on the lines.</p>
+<p><strong>Corollary.</strong> The family of ideals is a single orbit of the group of the copy, and the orbit map is the projection of the group onto the projective space.</p>
+<p><em>Proof.</em> The transitivity, and the identification of the stabiliser as the subgroup preserving a line.</p>
+<p><strong>Corollary.</strong> The stabiliser of one ideal is a parabolic subgroup, of dimension the dimension of the group minus three.</p>
+<p><em>Proof.</em> The orbit has dimension three and the orbit-stabiliser count gives the dimension of the stabiliser.</p>
+<p><strong>The reading.</strong> The ideals are the points of one orbit, and the freedom in the choice of an ideal is exactly the freedom in the choice of a line. This is why every construction built on an ideal has to be checked for independence of the line.</p>
+<h2 id="the-weight-string">The Weight String</h2>
+<p><strong>Theorem.</strong> Each minimal left ideal, as a module for the Cartan generator, has the weight string
+$$
+\tfrac32,\quad\tfrac12,\quad-\tfrac12,\quad-\tfrac32,
+$$
+one vector of each weight.</p>
+<p><em>Proof.</em> The ideal is isomorphic to the module, since the operator carrying a fixed nonzero element of $\ell$ to itself and the rest to zero is an idempotent whose image is the ideal, and the module is $V_{3/2}$; the weights are those of the module.</p>
+<p><strong>Corollary.</strong> The ideal is multiplicity-free and its four weights sum to zero.</p>
+<p><em>Proof.</em> The string of the module.</p>
+<p><strong>Corollary.</strong> The two extreme weights of an ideal are the highest and the lowest weight of the module, and the two middle ones are interchanged by the reflection of the string.</p>
+<p><em>Proof.</em> The order of the weights and the symmetry of the string.</p>
+<p><strong>The reading.</strong> Every ideal carries the same string: the choice of the ideal changes the embedding in the operator algebra and not the module structure. A spinor of the operators is therefore a vector of a fixed four-dimensional weight space, wherever the ideal sits.</p>
+<h2 id="the-third-exterior-power">The Third Exterior Power</h2>
+<p><strong>Theorem.</strong> The third exterior power of the module is isomorphic to the module,
+$$
+\Lambda^{3}V_{3/2}\cong V_{3/2}\otimes\Lambda^{4}V_{3/2}\cong V_{3/2},
+$$
+the last isomorphism by a volume form.</p>
+<p><em>Proof.</em> The weights of the third exterior power are the sums of three distinct weights of the module, namely $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, which is the same string; the two modules therefore have the same weights and, being simple, are isomorphic.</p>
+<p><strong>Corollary.</strong> The duality of the module with its exterior cube is canonical once a volume form is chosen, and the choice is a scalar.</p>
+<p><em>Proof.</em> The isomorphism is the contraction with the volume form.</p>
+<p><strong>Corollary.</strong> The second exterior power is the dual of the module twisted by the volume, and its weights are the negatives of the weights of the module.</p>
+<p><em>Proof.</em> $\Lambda^{2}V\cong V^{*}\otimes\Lambda^{4}V$, and the weights of the dual are the negatives.</p>
+<p><strong>The reading.</strong> The third exterior power returns the module because the module has four weights and three of them sum to a weight of the module. The arithmetic of the string is the whole content of the identity, and it is the same arithmetic that makes the module self-dual.</p>
+<h2 id="the-pairing">The Pairing</h2>
+<p><strong>Definition.</strong> For a left ideal $I_\ell$ and a right ideal $J_r$ built on a line $r$, the <strong>pairing</strong> is the trace of the product, $\langle S,T\rangle=\operatorname{tr}(ST)$, for $S\in I_\ell$ and $T\in J_r$.</p>
+<p><strong>Proposition.</strong> The pairing is nonzero exactly when the two lines are not orthogonal, and it is a perfect pairing between the two ideals in that case.</p>
+<p><em>Proof.</em> The product $ST$ has image in $\ell$ and factors through the quotient by the orthogonal of $r$; the trace sees the diagonal part, which is nonzero exactly when the two lines meet the same functional.</p>
+<p><strong>Corollary.</strong> The pairing of an ideal with its own right partner is nondegenerate, and it is the restriction of the trace form of the operator algebra.</p>
+<p><em>Proof.</em> The trace form is nondegenerate on the whole algebra, and the two ideals are complementary in the appropriate sense.</p>
+<p><strong>Corollary.</strong> The weight vectors of the two ideals pair according to the sum of their weights, and the pairing vanishes unless the sums of the two weights is zero.</p>
+<p><em>Proof.</em> The trace of a product of two weight vectors is nonzero only when the total weight is zero, since the trace is invariant under the Cartan generator.</p>
+<p><strong>The reading.</strong> The pairing is the trace form read on the two ideals, and it is the operator form of the spinor pairing. It vanishes by weight, and this is what makes the four-dimensional module self-dual: the highest weight pairs with the lowest.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-left-ideals-and-the-image-of-a-left-multiplication.html">The Left Ideals and the Image of a Left Multiplication</a>, for the ideals of the algebra.</li>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle.html">The Four Weights of the Module and the Half Angle</a>, for the weight string.</li>
+<li><a href="the-spin-group-the-principal-copy-and-the-kernel.html">The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</a>, for the action of the copy.</li>
+<li><a href="introduction-to-the-spin-three-halves-bispinor-spaces.html">Introduction to the Spin-$\tfrac32$ Bispinor Spaces</a>, for the spinors built on the ideals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin Group: Unit Elements, Rotors and the Two-to-One Cover — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The spin group of the biquaternion algebra is the group of unit elements of the algebra, a three-dimensional sphere inside a four-dimensional…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-group-unit-elements-rotors-and-the-two-to-one-cover"><strong>The Spin Group: Unit Elements, Rotors and the Two-to-One Cover</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The spin group of the biquaternion algebra is the group of unit elements of the algebra, a three-dimensional sphere inside a four-dimensional algebra. The article identifies the group, parametrises its elements by an axis and an angle, computes the exponential, and separates the four actions through which the group is seen: left multiplication, right multiplication, conjugation, and the two-sided action. The four have different kernels and cut the algebra in different ways, and the article proves that none of them marks an axis.</p>
+<p><strong>The order of the article.</strong> The group and its norm come first, then the rotor parametrisation, then the exponential and the sign, then the four actions with their kernels, then the two decompositions the actions induce, then the sentences that must not be written.</p>
+<p><strong>It assumes</strong> <em>Introduction to the Algebra of Biquaternions</em>, <em>The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</em> and <em>The Clebsch–Gordan Decomposition of the Biquaternion Algebra</em>. <strong>The row of the operators is</strong> <em>The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm I\}$</em>, where the same group acts on the sixteen operators instead of on the four elements.</p>
+<p><strong>The result in one line.</strong> The group is $\{\tilde u\in\mathbb{B}:\tilde u\tilde u^{\natural}=e_t\}=S^{3}$; every element is $\pm(\cos\theta\,e_t+\sin\theta\,\vec u)$ with $\vec u$ a unit real axis; the conjugation is two-to-one onto the rotations of the vector part, with kernel $\{\pm e_t\}$; and the left action splits the algebra into two copies of the slot.</p>
+<p><strong>Boundaries.</strong> The group of all unitary elements, of real dimension four, is <em>The Unitary Group of the Biquaternion Algebra</em>; the rotation a single rotor produces on the vector part is <em>From the Spin Group to the Spin of a Single Rotor</em>; the carriers and their closures are <em>From the Spin to the Carriers and the Closures</em>.</p>
+<h2 id="the-group-and-its-norm">The Group and Its Norm</h2>
+<p><strong>Definition (spin group).</strong> The <strong>spin group</strong> is</p>
+<p>$$
+\mathrm{Spin}=\{\tilde u\in\mathbb{B}:\tilde u\tilde u^{\natural}=e_t\},
+$$</p>
+<p>the elements of natural norm one, where $\natural$ is the natural conjugation, $x^{\natural}=\mathrm{Sc}(x)-\mathrm{Vec}(x)$, and the norm is $\langle x\rangle_{\natural}=xx^{\natural}$.</p>
+<p><strong>Proposition.</strong> The set is a group, closed under $\natural$ and under inversion, and it is the unit sphere of the real quaternion subalgebra, of real dimension three.</p>
+<p><em>Proof.</em> The norm is multiplicative, so the product of two elements of norm one has norm one; the inverse of such an element is its conjugate, since $\tilde u\tilde u^{\natural}=e_t$ gives $\tilde u^{-1}=\tilde u^{\natural}$, and $\tilde u^{\natural}$ lies in the set. In the four real coordinates $q_t,q_x,q_y,q_z$ of the real form the condition is $q_t^{2}+q_x^{2}+q_y^{2}+q_z^{2}=1$, the equation of a sphere of real dimension three.</p>
+<p><strong>Corollary.</strong> The group is connected and simply connected, and it is not the group of all unit elements of the algebra.</p>
+<p><em>Proof.</em> The sphere $S^{3}$ is connected and simply connected. The group $G=\{u:uu^{*}=e_t\}$ of unitary elements, with $*$ the Hermitian conjugation, has real dimension four, since it contains the circle $\{e^{i\theta}e_t\}$ of unit complex scalars, which the spin group does not contain.</p>
+<p><strong>The reading.</strong> The two groups are one dimension apart and are constantly confused. The spin group is the unit sphere of the real form; the unitary group is a four-dimensional group that contains it and adds the central circle of phases.</p>
+<h2 id="the-rotor-parametrisation">The Rotor Parametrisation</h2>
+<p><strong>Definition (rotor).</strong> A <strong>rotor</strong> is an element of the form</p>
+<p>$$
+\tilde u=\cos\theta\,e_t+\sin\theta\,\vec u,
+$$</p>
+<p>with $\vec u$ a unit real vector, $\vec u^{2}=-e_t$, and $\theta$ a real angle. The vector $\vec u$ is the axis of the rotor and $\theta$ is its angle.</p>
+<p><strong>Proposition.</strong> The rotors are exactly the elements of the spin group, and the pair $(\theta,\vec u)$ is unique once the angle is restricted to $[0,\pi]$ and, at the two ends, the axis is read up to sign.</p>
+<p><em>Proof.</em> A rotor has norm $\cos^{2}\theta+\sin^{2}\theta=1$, so it lies in the group, and every element of norm one is of that shape, with $\cos\theta$ the scalar part and $\sin\theta\,\vec u$ the vector part. Conversely an element of the group with scalar part $s$ and vector part $\vec v$ satisfies $s^{2}+\vec v^{2}=1$ and $\vec v$ real; writing $s=\cos\theta$ and $\vec v=\sin\theta\,\vec u$ gives the displayed form. The angle $\theta$ and the angle $2\pi-\theta$ give the same scalar part and opposite vector parts, so restricting to $[0,\pi]$ removes the double count; at $\theta=0$ and $\theta=\pi$ the vector part vanishes and the axis is meaningless.</p>
+<p><strong>Corollary.</strong> The conjugate of a rotor is its inverse, $\tilde u^{\natural}=\cos\theta\,e_t-\sin\theta\,\vec u=\tilde u^{-1}$, and the rotors are closed under $\natural$.</p>
+<p><strong>The reading.</strong> The axis belongs to the element and not to the group. Every rotor other than $\pm e_t$ has an axis, and different elements have different axes; no single axis is picked out by the group, because the group acts on the sphere of axes by all of the rotations and carries any axis to any other.</p>
+<h2 id="the-exponential-and-the-sign">The Exponential and the Sign</h2>
+<p><strong>Proposition (the exponential).</strong> For a vector $\vec v$ of the vector part with $\lvert\vec v\rvert=\lambda$,</p>
+<p>$$
+\exp(\vec v)=\cos\lambda\,e_t+\frac{\sin\lambda}{\lambda}\,\vec v,
+$$</p>
+<p>so the exponential of the vector part lands in the spin group and covers it.</p>
+<p><em>Proof.</em> The square of $\vec v$ is $-\lambda^{2}e_t$, so the exponential series splits into its even and odd parts, $\cos\lambda$ times the identity and $(\sin\lambda/\lambda)$ times $\vec v$. At $\lambda=\theta$ and $\vec v=\theta\vec u$ this is the rotor of angle $\theta$ about $\vec u$, and the rotor parametrisation covers the group.</p>
+<p><strong>Corollary.</strong> For every unit axis $\vec u$ the exponential satisfies $\exp(\pi\vec u)=-e_t$ and $\exp(2\pi\vec u)=e_t$.</p>
+<p><em>Proof.</em> Evaluate the closed form at $\lambda=\pi$ and at $\lambda=2\pi$.</p>
+<p><strong>Corollary (the kernel).</strong> The exponential from the vector part is onto the group, and the fibre over the identity is the set of vectors $2\pi k\,\vec u$, with $k$ an integer and $\vec u$ a unit axis; the sphere of radius $\pi$ collapses to the single element $-e_t$.</p>
+<p><strong>The reading.</strong> The double cover of the rotations by the group has its infinitesimal form in the factor two of the angle: the rotor of angle $\theta$ produces a rotation of angle $2\theta$, so a full turn of the rotation is a half turn of the rotor. The sign that survives after $2\pi$ in the group is the residue of that factor, and it is why the kernel is $\{\pm e_t\}$ and not the identity alone.</p>
+<h2 id="the-four-actions">The Four Actions</h2>
+<p><strong>Definition.</strong> The spin group acts on the algebra in four ways:</p>
+<p>$$
+L_{\tilde u}(X)=\tilde u X,\qquad
+R_{\tilde u}(X)=X\tilde u,\qquad
+\operatorname{Ad}_{\tilde u}(X)=\tilde u X\tilde u^{\natural},\qquad
+(\tilde u,\tilde v)\cdot X=\tilde u X\tilde v^{\natural}.
+$$</p>
+<p>The first is left multiplication, the second right multiplication, the third the conjugation, and the fourth the two-sided action of the product of two copies of the group.</p>
+<p><strong>Theorem (kernels and images).</strong> The four actions have the following kernels and images.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>action</th>
+<th>kernel</th>
+<th>image</th>
+<th>dimension of the image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left multiplication</td>
+<td>$\{e_t\}$</td>
+<td>the left copy</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>right multiplication</td>
+<td>$\{e_t\}$</td>
+<td>the right copy</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>conjugation</td>
+<td>$\{\pm e_t\}$</td>
+<td>the rotations of the vector part</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>two-sided</td>
+<td>$\{\pm(e_t,e_t)\}$</td>
+<td>the rotations of the algebra</td>
+<td>$6$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Left multiplication kills no rotor but the identity, since $\tilde uX=X$ for all $X$ forces $\tilde u=e_t$ on taking $X=e_t$. The same argument on the right. For the conjugation, $\tilde uX\tilde u^{\natural}=X$ for all $X$ means that $\tilde u$ is central, and the central elements of the algebra are the complex scalars, of which the only rotors are $\pm e_t$. For the two-sided action, $\tilde uX\tilde v^{\natural}=X$ for all $X$ forces $\tilde u=\tilde v=\pm e_t$ with the signs equal, so the kernel has two elements, and the image has dimension $3+3=6$.</p>
+<p><strong>Corollary.</strong> The left and the right actions are faithful, the conjugation and the two-sided actions are not, and the two-sided action is not a product of the two conjugations.</p>
+<p><em>Proof.</em> The kernels are as in the table. The two-sided action is the product of a left and a right multiplication, and each of those is faithful, while the product of two conjugations would act as $\operatorname{Ad}_{\tilde u}\operatorname{Ad}_{\tilde v}=\operatorname{Ad}_{\tilde u\tilde v}$, a conjugation and not a two-sided action.</p>
+<p><strong>The reading.</strong> Faithfulness is the property that separates the four actions. The two one-sided actions carry the sign, since $L_{-\tilde u}=-L_{\tilde u}$ is a nonidentity operator, and the two other actions do not, since $-e_t$ acts as the identity on every element of the algebra by conjugation.</p>
+<h2 id="the-two-decompositions">The Two Decompositions</h2>
+<p><strong>Theorem (the left action).</strong> Under left multiplication by the spin group the algebra is isotypic, the direct sum of two copies of the slot $V_{1/2}$,</p>
+<p>$$
+\mathbb{B}\cong V_{1/2}\oplus V_{1/2},
+$$</p>
+<p>and the Casimir of the action is the scalar $\tfrac34$ on both summands.</p>
+<p><em>Proof.</em> The algebra is the tensor square of the slot, $\mathbb{B}\cong S\otimes S^{*}$, and left multiplication acts on the first factor alone; the first factor is two-dimensional, so the algebra is two copies of it. The Casimir of the slot of label $\tfrac12$ is $\tfrac12\cdot\tfrac32=\tfrac34$.</p>
+<p><strong>Theorem (the conjugation).</strong> Under the conjugation the algebra splits by the label,</p>
+<p>$$
+\mathbb{B}\cong V_1\oplus V_0,
+$$</p>
+<p>of dimensions $3+1$, with the Casimir taking the values $2$ and $0$.</p>
+<p><em>Proof.</em> The conjugation fixes the scalars and acts on the vector part by the rotations, and the vector part is three-dimensional and irreducible under those rotations; the two summands are the eigenspaces of the Casimir, of eigenvalues $k(k+1)$ at $k=1$ and $k=0$.</p>
+<p><strong>Corollary.</strong> The left action is irreducible in no summand and the conjugation isolates exactly one canonical line, the scalar line, which is canonical for the conjugation and for no other action of the four.</p>
+<p><em>Proof.</em> The left action is isotypic, so every invariant subspace is a sum of whole copies of the slot, and there is no invariant line or hyperplane. Under the conjugation the only invariant line is the scalar line, since the vector part is irreducible of dimension three; the left action moves the scalar line onto the vector part, as $L_{\vec u}(e_t)=\vec u$.</p>
+<p><strong>The reading.</strong> The two decompositions cut one four-dimensional space in two different ways, $2+2$ and $3+1$, and the difference is the difference between the actions. The spin labels belong to the conjugation and to the series of the tensor square, not to the production of an axis: $V_1$ and $V_0$ come from $\tfrac12\otimes\tfrac12$, and no choice of axis enters the computation.</p>
+<h2 id="the-pitfalls">The Pitfalls</h2>
+<p><strong>Six sentences that must not be written as they stand.</strong></p>
+<ol>
+<li><strong>"The spin group is the group of unitary elements."</strong> It is not: the unitary group has real dimension four and contains the central circle of phases, and the spin group is the three-dimensional sphere inside it.</li>
+<li><strong>"The spin group is the group of rotations."</strong> It is not: the conjugation is two-to-one onto the rotations, with kernel $\{\pm e_t\}$, and the rotation group is the image and not the group.</li>
+<li><strong>"The spin group has a preferred axis."</strong> It has not: an element has an axis, and the group carries the sphere of axes onto itself by all of its rotations, so no axis is singled out.</li>
+<li><strong>"The left action fixes the scalars."</strong> It does not: it is isotypic, and $L_{\vec u}$ sends $e_t$ to $\vec u$. It is the conjugation that fixes the scalars.</li>
+<li><strong>"The two-sided action is the product of two conjugations."</strong> It is not: it is a product of a left and a right multiplication, its kernel is the pair of diagonal signs, and the product of two conjugations is a single conjugation.</li>
+<li><strong>"The labels $\tfrac12$ and $1$ come from the parametrisation of the group."</strong> They do not: they come from the Clebsch–Gordan series of the tensor square of the slot, and the parametrisation by axis and angle carries no label at all.</li>
+</ol>
+<h2 id="verification">Verification</h2>
+<p><strong>How the numbers were obtained.</strong> The four units $e_t,\vec e_x,\vec e_y,\vec e_z$ were multiplied by the structure rules $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclic, and the four actions were applied to random rotors in double precision.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>what was computed</th>
+<th>largest residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the norm of a rotor</td>
+<td>$\tilde u\tilde u^{\natural}-e_t$ over $10^{3}$ random rotors</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the inverse is the conjugate</td>
+<td>$\tilde u^{\natural}\tilde u-e_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the exponential against the series</td>
+<td>forty terms against the closed form</td>
+<td>$1.9\cdot10^{-16}$</td>
+</tr>
+<tr>
+<td>the collapse at $\pi$</td>
+<td>$\exp(\pi\vec u)+e_t$ over the axes</td>
+<td>$2.2\cdot10^{-16}$</td>
+</tr>
+<tr>
+<td>the return at $2\pi$</td>
+<td>$\exp(2\pi\vec u)-e_t$ over the axes</td>
+<td>$4.4\cdot10^{-16}$</td>
+</tr>
+<tr>
+<td>the angle doubling</td>
+<td>the rotation angle against $2\theta$</td>
+<td>$5.6\cdot10^{-16}$</td>
+</tr>
+<tr>
+<td>the left kernel</td>
+<td>$\dim\{X:L_{\tilde u}X=0\}$ for $\tilde u\neq e_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the conjugation kernel</td>
+<td>the rotors acting trivially by conjugation</td>
+<td>$2$, the pair $\pm e_t$</td>
+</tr>
+<tr>
+<td>the two-sided kernel</td>
+<td>the pairs acting trivially</td>
+<td>$2$, the pair $\pm(e_t,e_t)$</td>
+</tr>
+<tr>
+<td>the left decomposition</td>
+<td>the Casimir eigenvalues on the algebra</td>
+<td>$\tfrac34$, twice</td>
+</tr>
+<tr>
+<td>the conjugation decomposition</td>
+<td>the Casimir eigenvalues on the algebra</td>
+<td>$2$ and $0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One check that is not numerical.</strong> The theorems on the two decompositions are statements about every element, and no sample confirms them; they are proved above, and the numbers confirm only the instances computed.</p>
+<h2 id="summary">Summary</h2>
+<p>The spin group is the group of unit elements of the algebra, a sphere of real dimension three inside the real form. Every element is a rotor, $\pm(\cos\theta\,e_t+\sin\theta\,\vec u)$, and the exponential of the vector part covers the group, with $\exp(\pi\vec u)=-e_t$, $\exp(2\pi\vec u)=e_t$, and the fibre over the identity the vectors $2\pi k\vec u$.</p>
+<p>The group acts in four ways, and the kernels separate them: the two one-sided actions are faithful, the conjugation has kernel $\{\pm e_t\}$ and is two-to-one onto the rotations of the vector part, and the two-sided action has kernel $\{\pm(e_t,e_t)\}$ and is six-dimensional. Left multiplication cuts the algebra as two copies of the slot, with Casimir $\tfrac34$; the conjugation cuts it as $V_1\oplus V_0$, of dimensions $3+1$, with Casimir $2$ and $0$.</p>
+<p>The labels come from the series of the tensor square and not from the group. No action of the group marks an axis: an element has an axis, the group does not, and the sphere of axes is carried onto itself by all of its rotations.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, of complex dimension four</td>
+</tr>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the units, with $\vec e_k^{2}=-e_t$ and $\vec e_x\vec e_y=\vec e_z$ cyclic</td>
+</tr>
+<tr>
+<td>$\natural$, $\langle x\rangle_{\natural}$</td>
+<td>the natural conjugation and the norm</td>
+</tr>
+<tr>
+<td>$*$</td>
+<td>the Hermitian conjugation</td>
+</tr>
+<tr>
+<td>$\mathrm{Spin}$, $Sp(1)$</td>
+<td>the spin group, the rotors, $S^{3}$</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the unitary group of the algebra, real dimension four</td>
+</tr>
+<tr>
+<td>$\tilde u,\theta,\vec u$</td>
+<td>a rotor, its angle and its axis</td>
+</tr>
+<tr>
+<td>$\mathfrak{k}$</td>
+<td>the vector part, the real span of the three pure units</td>
+</tr>
+<tr>
+<td>$V_{1/2},V_1,V_0$</td>
+<td>the carriers, of dimensions $2,3,1$</td>
+</tr>
+<tr>
+<td>$\operatorname{Ad}_{\tilde u}$</td>
+<td>the conjugation by a rotor</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html">The Clebsch–Gordan Decomposition of the Biquaternion Algebra</a>, for the series $\tfrac12\otimes\tfrac12=1\oplus0$ from which the labels come.</li>
+<li><a href="from-the-spin-group-to-the-spin-of-a-single-rotor.html">From the Spin Group to the Spin of a Single Rotor</a>, for the rotation one rotor produces and for the sign after $2\pi$.</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, for the carriers and their closures.</li>
+<li><a href="the-unitary-group-of-the-biquaternion-algebra.html">The Unitary Group of the Biquaternion Algebra</a>, for the four-dimensional group that contains the rotors.</li>
+<li><a href="biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the two-sided action and the Lorentz group.</li>
+<li><a href="the-euclidean-topology-of-the-biquaternion-algebra.html">The Topology of the Biquaternion Algebra</a>, for the sphere, its fundamental group and the covering.</li>
+<li><a href="quaternion-rotations-and-reflections.html">Quaternion Rotations and Reflections</a>, for the same group in the language of rotations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

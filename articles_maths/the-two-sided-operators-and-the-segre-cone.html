@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two-Sided Operators and the Segre Cone — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The operators are the decomposable elements of the sixteen-dimensional operator space, and they form a cone: a set closed under…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-sided-operators-and-the-segre-cone"><strong>The Two-Sided Operators and the Segre Cone</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The operators $T_{a,b}(X)=aXb$ are the decomposable elements of the sixteen-dimensional operator space, and they form a cone: a set closed under multiplication by scalars and spanned by a bilinear image of two four-dimensional parameter spaces. The article computes the cone. Its dimension is seven, its vertex is the zero operator, and its projective image is the product of two projective three-spaces, the Segre variety of the decomposable tensors. What the degeneracy of the parameters changes is not the shape of the cone but the rank of its points: a point is of rank four when both parameters are invertible and of rank two when exactly one of them is degenerate, so the operators of rank at most two form a proper part of the cone and the vertex is their only point of rank zero.</p>
+<p><strong>The order of the article.</strong> The operators and their product law come first; the basis and the independence second. The cone and its dimension follow, then the rank of a product, and the two rulings close the description.</p>
+<p><strong>It assumes</strong> <em>Operators Acting on Two Sides</em>, <em>The Tensor Product of Two Biquaternion Algebras</em> and <em>Zero Divisors and Invertibles in the Biquaternion Algebra</em>. <strong>The row of the elements is</strong> where a product of two elements is read; here the product is read as an operator, and the pair of parameters is read as a tensor.</p>
+<p><strong>The result in one line.</strong> The products fill a proper cone of complex dimension seven whose points have rank four over the invertible pairs of parameters, two over the pairs with one degenerate factor, one over the pairs with two degenerate factors, and zero at the vertex, and whose projective image is the Segre variety of the tensor square.</p>
+<p><strong>Boundaries.</strong> The one-sided boundaries of the cone are <em>The Left Ideals and the Image of a Left Multiplication</em>; the sums of products and their length are <em>The Length and the Two Ranks</em>; the difference and the sum of the two sides at one pair are the subject of the companion article on the Sylvester operator.</p>
+<h2 id="the-operators-and-their-law">The Operators and Their Law</h2>
+<p><strong>Definition.</strong> For a pair of elements the <strong>two-sided operator</strong> is $T_{a,b}=L_aR_b$, with $T_{a,b}(X)=aXb$.</p>
+<p><strong>Proposition.</strong> The assignment is bilinear, the operator is zero only when a parameter is zero, and
+$$
+T_{a,b}T_{c,d}=T_{ac,db}.
+$$</p>
+<p><em>Proof.</em> Bilinearity is the bilinearity of the product; $T_{a,b}(e_t)=ab$ is nonzero for two nonzero parameters; and the composite sends $X$ to $a(cXd)b=(ac)X(db)$.</p>
+<p><strong>Corollary.</strong> For each invertible $b$ the path $a\mapsto T_{a,b}$ is an injective linear map of the algebra into the operator space, and for each invertible $a$ the path $b\mapsto T_{a,b}$ is injective as well.</p>
+<p><em>Proof.</em> Linearity is bilinearity. If $T_{a,b}=0$ with $b$ invertible then $a=0$, since $ab=0$ forces $a=0$; and $T_{a,b}=T_{a',b}$ gives $aXb=a'Xb$ for all $X$, hence $a=a'$ after multiplying by $b^{-1}$ on the right.</p>
+<p><strong>The reading.</strong> The two parameters enter asymmetrically. The map from the left parameter is an isomorphism onto a four-dimensional subspace of the sixteen, and the map from the right parameter is an isomorphism onto another; the cone is the image of the pair, and its shape is the shape of a bilinear image.</p>
+<h2 id="the-basis">The Basis</h2>
+<p><strong>Theorem.</strong> The sixteen operators $T_{e_\mu,e_\nu}$ are a basis of the operator space.</p>
+<p><em>Proof.</em> They are independent for the Hilbert–Schmidt pairing, which gives $\langle T_{e_\alpha,e_\beta},T_{e_\mu,e_\nu}\rangle_{*}=4\delta_{\alpha\mu}\delta_{\beta\nu}$; sixteen independent operators in a space of dimension sixteen are a basis.</p>
+<p><strong>Corollary.</strong> Every operator is a unique sum $\sum c_{\mu\nu}T_{e_\mu,e_\nu}$, and the sixteen coefficients are its coordinates.</p>
+<p><em>Proof.</em> The expansion in a basis.</p>
+<p><strong>Corollary.</strong> A product $T_{a,b}$ has the coordinates $c_{\mu\nu}=a_\mu b_\nu$, the pairwise products of the coordinates of the two parameters.</p>
+<p><em>Proof.</em> Expand $aXb=\sum_{\mu,\nu}a_\mu b_\nu e_\mu Xe_\nu$ and read the coefficient of each basis operator.</p>
+<p><strong>The reading.</strong> The coordinates of a product form a rank-one tensor: sixteen numbers built from four and four. The cone is the image of the map that sends a pair of parameter vectors to that tensor, and its geometry is the geometry of the rank-one tensors in a sixteen-dimensional space.</p>
+<h2 id="the-cone-and-its-dimension">The Cone and Its Dimension</h2>
+<p><strong>Definition.</strong> The <strong>cone of the products</strong> is
+$$
+\mathcal C=\{T_{a,b}:a,b\in\mathbb{B}\}\subseteq\operatorname{End}(\mathbb{B}).
+$$</p>
+<p><strong>Theorem.</strong> The cone is closed under multiplication by scalars, its vertex is the zero operator, and its dimension is seven.</p>
+<p><em>Proof.</em> Closure: $\lambda T_{a,b}=T_{\lambda a,b}$. The vertex: $T_{0,b}=T_{a,0}=0$. The dimension: the parameter space has dimension eight, and the group of scalars acts by $(\lambda a,\lambda^{-1}b)$, with trivial stabiliser at every pair of nonzero parameters, so the orbits are lines and the image has dimension $8-1=7$.</p>
+<p><strong>Corollary.</strong> The projective image of the cone is the Segre variety, the product of the two projective three-spaces of the left and of the right parameter, and the two factors are the two one-sided families.</p>
+<p><em>Proof.</em> A pair is determined up to simultaneous scaling by the operator, so the projective classes of the products are pairs of projective classes of parameters; the two factors record which parameter is which.</p>
+<p><strong>Corollary.</strong> The cone is proper: it has dimension seven inside a space of dimension sixteen, and it is not a linear subspace.</p>
+<p><em>Proof.</em> The dimension count, and the fact that the sum of two products is generally not a product, since the coordinates of a sum of two rank-one tensors have tensor rank two.</p>
+<p><strong>The reading.</strong> The degeneracy of the parameters does not flatten the cone. What it changes is the stratification by rank: the cone remains a seven-dimensional variety, and the rank of its points is constant only on the two pieces cut out by the degeneracy of the parameters. The two facts are independent, one about the tensor and one about the operator.</p>
+<h2 id="the-rank-of-a-product">The Rank of a Product</h2>
+<p><strong>Theorem.</strong> For every pair of parameters
+$$
+\operatorname{rank}T_{a,b}=\frac{\operatorname{rank}L_a\cdot\operatorname{rank}R_b}{4},
+$$
+so the rank is four when both parameters are invertible, two when exactly one of them is degenerate, one when both are degenerate, and zero when a parameter vanishes.</p>
+<p><em>Proof.</em> The image of $T_{a,b}$ consists of the composites $aXb$, which vanish on the kernel of $b$ and take their values in the image of $a$; the space of such composites has dimension $r(a)r(b)$, where $r$ is the rank of an element as a map of the two-dimensional spinor space. Multiplication by an invertible element on either side does not change the rank, and $r(a)$ is two, one or zero according as $a$ is invertible, a nonzero zero divisor or zero.</p>
+<p><strong>Corollary.</strong> The cone meets the determinantal variety of the operators of rank at most one in a closed subvariety of dimension five, and that variety has complex dimension seven.</p>
+<p><em>Proof.</em> A product has rank one exactly when both parameters are degenerate, so the intersection is the image of the pairs of degenerate parameters. The variety itself is the set of operators whose image is a line: projectively it is the Segre variety of the two projective three-spaces, of dimension $3+3=6$, and its cone over the origin has dimension seven. The intersection has dimension $3+3-1=5$, a proper subvariety of the rank-one variety, of dimension five against seven.</p>
+<p><strong>Corollary.</strong> The determinantal set of the operators of rank at most two has complex dimension twelve, and it meets the cone in a closed subvariety of dimension six, the products with at least one degenerate factor. The cone is not contained in it.</p>
+<p><em>Proof.</em> The dimension twelve is $8k-k^{2}$ at $k=2$. The intersection is the image of the pairs with at least one degenerate factor: one parameter runs over the surface of the degenerate elements, of dimension three, and the other over the whole algebra, of dimension four, so the image has dimension $3+4-1=6$ after the scaling. The identity $T_{e_t,e_t}$ lies on the cone and has rank four, so the cone escapes the determinantal set.</p>
+<p><strong>The reading.</strong> The rank of a two-sided operator says whether its parameters are degenerate, and nothing else. Two products with the same rank are indistinguishable by the rank, whatever their tensor coordinates; the rank separates the vertex from the rest and never looks inside the rest.</p>
+<h2 id="the-two-rulings">The Two Rulings</h2>
+<p><strong>Definition.</strong> For a fixed nonzero $a$, the <strong>left ruling</strong> is the set $\{T_{a,b}\}$; for a fixed nonzero $b$, the <strong>right ruling</strong> is the set $\{T_{a,b}\}$.</p>
+<p><strong>Proposition.</strong> Each ruling is a four-dimensional subspace of the operator space, and two rulings of the same kind meet only at the vertex.</p>
+<p><em>Proof.</em> The set $\{T_{a,b}\}$ is the image of the injective linear map $b\mapsto T_{a,b}$, hence a subspace of dimension four. Two left rulings $\{T_{a,b}\}$ and $\{T_{a',b}\}$ with $a'\neq\lambda a$ meet only at zero, since a common nonzero element would give $aXb=a'Xb'$ for all $X$ and hence proportional parameters by the independence of the tensor coordinates.</p>
+<p><strong>Corollary.</strong> The cone is the union of the rulings, and the rulings of the two kinds meet pairwise in the single line spanned by the product of their parameters.</p>
+<p><em>Proof.</em> Every point lies in one ruling of each kind; a left ruling and a right ruling meet in the multiples of $T_{a,b}$.</p>
+<p><strong>Corollary.</strong> The vertex lies in every ruling, so the cone is a cone over its vertex in the strict sense.</p>
+<p><em>Proof.</em> $T_{0,b}=T_{a,0}=0$.</p>
+<p><strong>The reading.</strong> The rulings are the two families of the tensor square. Their intersections are lines, and the whole cone is the union of the lines through the vertex. This is the Segre picture, and it survives the degeneracy of the parameters unchanged: the geometry of the cone is the geometry of the decomposable tensors, and the operator rank is an extra layer that the geometry does not see.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{a,b}(X)=aXb$</td>
+<td>the two-sided operator</td>
+</tr>
+<tr>
+<td>$\mathcal C=\{T_{a,b}\}$</td>
+<td>the cone of the products, dimension seven</td>
+</tr>
+<tr>
+<td>$c_{\mu\nu}=a_\mu b_\nu$</td>
+<td>the coordinates of a product, a rank-one tensor</td>
+</tr>
+<tr>
+<td>$\lambda T_{a,b}=T_{\lambda a,b}$</td>
+<td>the scaling and the orbit</td>
+</tr>
+<tr>
+<td>$\operatorname{rank}T_{a,b}$</td>
+<td>four, two, or zero at the vertex</td>
+</tr>
+<tr>
+<td>$\{T_{a,b}:b\}$, $\{T_{a,b}:a\}$</td>
+<td>the two rulings</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the family and its first properties.</li>
+<li><a href="the-tensor-product-of-two-biquaternion-algebras.html">The Tensor Product of Two Biquaternion Algebras</a>, for the decomposable tensors behind the cone.</li>
+<li><a href="the-coefficients-of-a-two-sided-operator-a-worked-computation.html">The Coefficients of a Two-Sided Operator: A Worked Computation</a>, for the coordinates of a product.</li>
+<li><a href="the-left-ideals-and-the-image-of-a-left-multiplication.html">The Left Ideals and the Image of a Left Multiplication</a>, for the images of the one-sided factors.</li>
+<li><a href="the-four-ranks-of-the-two-sided-operators.html">The Four Ranks of the Two-Sided Operators</a>, for the rank stratified over the whole space.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

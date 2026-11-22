@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-$\tfrac32$ Bispinors and the Spectral Strata — Biquaternion Universe</title>
+  <meta name="description" content="The subject. A bispinor names an operator, and the spectrum of that operator refines the rank. This article computes the spectrum, proves that its…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-math0-bispinors-and-the-spectral-strata"><strong>The Spin-$\tfrac32$ Bispinors and the Spectral Strata</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A bispinor names an operator, and the spectrum of that operator refines the rank. This article computes the spectrum, proves that its characteristic polynomial is a square, describes the three strata it cuts, and shows why the stratification by spectrum is finer than the stratification by rank, and where the two agree.</p>
+<p><strong>The order of the article.</strong> <em>The Spectrum of a Bispinor</em> states and proves the square form of the characteristic polynomial. <em>The Three Strata</em> names them. <em>The Discriminant</em> computes the function that cuts them. <em>The Degenerate Locus</em> identifies the operators on the middle stratum. <em>Finer than the Rank</em> proves the comparison and locates the agreement.</p>
+<p><strong>It assumes</strong> <em>The Spin-$\tfrac32$ Bispinors and the Rank Strata</em>, <em>The Spectrum of a Biquaternion</em> and <em>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</em>. <strong>The row of the elements is</strong> where the same two numbers $a_t$ and $N(a)$ give the spectrum of the element itself, with each value once instead of twice.</p>
+<p><strong>The result in one line.</strong> The operator of a bispinor has the spectrum of the named element with each value taken twice, so its characteristic polynomial is a square and it has at most two distinct eigenvalues.</p>
+<p><strong>Boundaries.</strong> The rank is <em>The Spin-$\tfrac32$ Bispinors and the Rank Strata</em>; the classification of the operators of the whole space, where four distinct eigenvalues do occur, is <em>The Fierz–Kofink Identities and the Classification of Spinors</em>; the spectral strata of the carriers are <em>The Spin-One Carrier and the Spectral Strata</em>.</p>
+<p>Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$ and the products cyclic; $a=a_te_t+a_x\vec e_x+a_y\vec e_y+a_z\vec e_z$ is an element with complex coefficients; $N(a)=a_t^2+B^2(a)$ is the norm, with $B^2(a)=a_x^2+a_y^2+a_z^2$ the square of the vector part; the module of the operators is $V_{3/2}$; and $L_a$, $R_b$ are the one-sided operators.</p>
+<h2 id="the-spectrum-of-a-bispinor">The Spectrum of a Bispinor</h2>
+<p><strong>Definition.</strong> The <strong>operator of a bispinor</strong> is $T_\psi=L_{a_\psi}$, the left multiplication by the element of the algebra that the bispinor names under a fixed identification of the module with the algebra. Its <strong>spectrum</strong> is the spectrum of that operator on the four-dimensional algebra, counted with multiplicity.</p>
+<p><strong>Proposition.</strong> The characteristic polynomial of $T_\psi$ is</p>
+<p>$$
+\chi(t)=\bigl(t^2-2a_t\,t+N(a)\bigr)^{2},
+$$</p>
+<p>so the spectrum is $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, where $\lambda_\pm=a_t\pm\sqrt{a_t^2-N(a)}$; its sum is $4a_t$ and its product is $N(a)^2$.</p>
+<p><em>Proof.</em> Left multiplication commutes with the right multiplication by the same element, and the two together generate, at a regular element, the full commutant of the algebra in its own endomorphisms. The element satisfies its own quadratic equation $a^2-2a_ta+N(a)=0$, which is the statement that the polynomial $t^2-2a_tt+N(a)$ annihilates $L_a$. That polynomial has degree two and the algebra has dimension four, so its square annihilates $L_a$; both are monic of degree four, hence they are equal. The sum and the product are read from the two coefficients.</p>
+<p><strong>Corollary.</strong> The four values counted with multiplicity are the two values of the element itself, each taken twice. The spectrum has at most two distinct entries, and it has two exactly when $B^2(a)\neq0$.</p>
+<p><em>Proof.</em> The two roots coincide exactly when the discriminant $4a_t^2-4N(a)=-4B^2(a)$ vanishes.</p>
+<p><strong>The reading.</strong> The doubling is the price of the operator row: an element has two eigenvalues, and its left multiplication has each of them twice, because the algebra is four-dimensional and the left multiplication acts on two copies of the same pattern. Four distinct values cannot occur at this row.</p>
+<h2 id="the-three-strata">The Three Strata</h2>
+<p><strong>Theorem.</strong> The module is the disjoint union of three spectral strata:</p>
+<p>$$
+\Sigma_0=\{0\},\qquad \Sigma_1=\{a\neq0:\ B^2(a)=0\},\qquad \Sigma_2=\{a:\ B^2(a)\neq0\},
+$$</p>
+<p>of complex dimensions $0$, $3$ and $4$, with spectrum $(0,0,0,0)$, $(\lambda,\lambda,\lambda,\lambda)$ and $(\lambda_+,\lambda_+,\lambda_-,\lambda_-)$ respectively.</p>
+<p><em>Proof.</em> The partition of the spectrum is $(4)$ on the first two strata and $(2,2)$ on the third. The locus $B^2=0$ in the four-dimensional module is a quadric cone through the origin, of dimension three, and the complement of a cone in four dimensions is open and dense. The origin is the only point where the two roots vanish together with $a$.</p>
+<p><strong>Corollary.</strong> The stratum $\Sigma_2$ is open and dense, and the two others are its complement, of dimension three.</p>
+<p><em>Proof.</em> A non-zero polynomial does not vanish on an open dense set, and its zero locus in a four-dimensional space is a hypersurface of dimension three.</p>
+<p><strong>The reading.</strong> The generic bispinor is regular, with two distinct values each twice. The two singular strata are the origin and the cone of elements with an isotropic vector part, and the cone is the spectral-degenerate cone of the row of the elements, seen here through the operator.</p>
+<h2 id="the-discriminant">The Discriminant</h2>
+<p><strong>Definition.</strong> The <strong>discriminant</strong> of the operator of a bispinor is</p>
+<p>$$
+\Delta(a)=\prod_{i<j}\bigl(\lambda_i-\lambda_j\bigr)^{2},
+$$</p>
+<p>the product over the six pairs of the four values counted with multiplicity.</p>
+<p><strong>Proposition.</strong> $\Delta(a)=256\,B^2(a)^{4}$, a fourth power, and it vanishes exactly on the cone $B^2=0$.</p>
+<p><em>Proof.</em> The four values are $\lambda_+,\lambda_+,\lambda_-,\lambda_-$, so each of the two distinct differences $\lambda_+-\lambda_-$ and $\lambda_--\lambda_+$ occurs four times among the six pairs, and the product is $(\lambda_+-\lambda_-)^{8}$. The square of the difference is $-4B^2(a)$, by the discriminant of the quadratic, so the product is $(-4B^2)^4=256B^8$.</p>
+<p><strong>Corollary.</strong> The discriminant is a perfect fourth power of the quadratic form of the vector part, and it is even in the coefficients of the element.</p>
+<p><em>Proof.</em> $B^2$ is quadratic and even, and a fourth power of an even function is even.</p>
+<p><strong>The reading.</strong> The discriminant does not merely detect a coincidence: at this row it is a power of one quadratic form, so the whole spectral stratification is the stratification by the sign of that form.</p>
+<h2 id="the-degenerate-locus">The Degenerate Locus</h2>
+<p><strong>Proposition.</strong> On $\Sigma_1$ the element is $a=c\,e_t+v$ with $c\neq0$ and $v^2=B^2(v)=0$, and the operator is</p>
+<p>$$
+L_a=c\,\mathrm{id}+L_v,\qquad L_v^2=L_{v^2}=0 .
+$$</p>
+<p>It is a non-zero scalar plus a square-zero operator, and it is semisimple only when $v=0$.</p>
+<p><em>Proof.</em> The split of the element gives the split of the operator, and the square of the left multiplication by the vector part is the left multiplication by $v^2=-B^2(v)e_t$, which vanishes on the cone. The scalar part cannot vanish when $a\neq0$, since then $N(a)=a_t^2$ would be zero. A semisimple operator with a single eigenvalue is a scalar, so the vector part must vanish.</p>
+<p><strong>Corollary.</strong> On $\Sigma_1$ the operator has Jordan blocks of size at most two, and its spectrum is a single value of multiplicity four.</p>
+<p><em>Proof.</em> $L_v$ is square-zero, so its Jordan blocks have size one or two, and the scalar part shifts the eigenvalue without changing the block sizes.</p>
+<p><strong>The reading.</strong> The middle stratum is where the two languages meet: the spectrum is a single value, as for a scalar, and the operator is not a scalar. The spectrum alone does not separate the scalars from the rest of the cone.</p>
+<h2 id="finer-than-the-rank">Finer than the Rank</h2>
+<p><strong>Theorem.</strong> The spectral stratification refines the rank stratification: the three spectral strata are contained in the two rank strata, and the middle one is split between them only at the origin.</p>
+<p><em>Proof.</em> The rank is four on $\Sigma_1\setminus\{0\}$ and on $\Sigma_2$, and zero at the origin. The spectral stratification separates $\Sigma_1\setminus\{0\}$ from $\Sigma_2$, which the rank does not, and both from the origin, which the rank also does.</p>
+<p><strong>Corollary.</strong> The two stratifications agree exactly on the carrier of the scalars, where both reduce to the pair: the origin and the scalars.</p>
+<p><em>Proof.</em> On the scalar line the spectrum is a single non-zero value repeated four times and the rank is four, so the spectral stratum and the rank stratum are the same set; off the line the spectral stratification is strictly finer.</p>
+<p><strong>The reading.</strong> Fineness is a comparison of partitions, and here it reads three against two. The rank answers the question of invertibility; the spectrum answers the question of the coincidence of the two values, which is asked inside the invertible set.</p>
+<h2 id="invariance-along-the-orbit">Invariance along the Orbit</h2>
+<p><strong>Proposition.</strong> The spectral type is invariant under the conjugation action of the group of the copy, so each stratum is a union of orbits and the type is constant on an orbit.</p>
+<p><em>Proof.</em> Conjugation preserves the spectrum with multiplicity. An element of the group carries $a$ to $gag^{-1}$, whose left multiplication is a conjugate of $L_a$ by the invertible operator of conjugation, and conjugate operators have equal characteristic polynomials.</p>
+<p><strong>Corollary.</strong> The regular stratum is open and is a union of orbits labelled by the two invariants $a_t$ and $B^2$, and the cone is the union of the orbits on which $N(a)=a_t^2$.</p>
+<p><em>Proof.</em> The group acts transitively on the elements with given scalar part and given square of the vector part, and the cone is the locus of the equality of the two invariants.</p>
+<p><strong>The reading.</strong> The spectrum is the invariant of the orbit, and the strata are the level sets of the invariant. Nothing in the argument uses a basis, and nothing uses an array: the characteristic polynomial is a polynomial in the operator, and its discriminant is a polynomial in the element.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-three-halves-bispinors-and-the-rank-strata.html">The Spin-$\tfrac32$ Bispinors and the Rank Strata</a>, for the coarser invariant and the two values it takes</li>
+<li><a href="the-spectrum-of-a-biquaternion.html">The Spectrum of a Biquaternion</a>, for the two eigenvalues of an element and their coincidences</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-minimal-left-ideals.html">The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</a>, for the ideals that the strata cut</li>
+<li><a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N Regularity and N Degeneracy in the Biquaternion Algebra</a>, for the cone of the degenerate norm</li>
+<li><a href="the-fierz-kofink-identities-and-the-classification-of-spinors-of-the-operators.html">The Fierz–Kofink Identities and the Classification of Spinors</a>, for the five classes of the whole operator space</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

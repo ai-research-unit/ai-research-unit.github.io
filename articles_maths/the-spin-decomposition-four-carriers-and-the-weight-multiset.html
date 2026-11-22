@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The sixteen weights of the Cartan generator on the operator space are the sixteen differences of the four weights of the module, and as a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-decomposition-four-carriers-and-the-weight-multiset-math0"><strong>The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The sixteen weights of the Cartan generator on the operator space are the sixteen differences of the four weights of the module, and as a multiset they read $0$ four times, $\pm1$ three times, $\pm2$ twice and $\pm3$ once. The article computes the multiset, checks it twice, once by the differences and once by the carrier strings, and separates the multiplicity of a weight from the dimension of a carrier.</p>
+<p><strong>The order of the article.</strong> The differences and the multiset come first; the check by the carriers second. The meeting of the four carriers at weight zero follows, then the symmetry, and the two counts close the article.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</em>, <em>The Four Weights of the Module and the Half Angle</em> and <em>The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</em>. <strong>The row of the elements is</strong> where the corresponding multiset has four entries, $\pm1$ and $0$ twice; here the doubled string gives sixteen.</p>
+<p><strong>The result in one line.</strong> The multiset of the sixteen weights is $0^{4},(\pm1)^{3},(\pm2)^{2},(\pm3)^{1}$, its multiplicities sum to sixteen, and each weight occurs once in every carrier whose label dominates it.</p>
+<p><strong>Boundaries.</strong> The decomposition into carriers is <em>The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</em>; the action of the copy is <em>The Copy Acting on Sixteen Dimensions</em>; the squares of the module are <em>The Parity Rule</em>.</p>
+<h2 id="the-differences">The Differences</h2>
+<p><strong>Theorem.</strong> The weights of the operator space are the sixteen differences $m-m'$ of the four weights of the module, and their multiplicities are
+$$
+0^{4},\quad(\pm1)^{3},\quad(\pm2)^{2},\quad(\pm3)^{1}.
+$$</p>
+<p><em>Proof.</em> The weights of the tensor square are the sums of a weight and the negative of a weight, which is the difference of two weights of the module; counting the pairs that give each difference gives the multiplicities displayed.</p>
+<p><strong>Corollary.</strong> The multiplicities sum to $4+3+3+2+2+1+1=16$.</p>
+<p><em>Proof.</em> The count of the pairs, or the sum of the multiplicities.</p>
+<p><strong>Corollary.</strong> The weights are symmetric, and the multiplicity of a weight equals the multiplicity of its negative.</p>
+<p><em>Proof.</em> The differences are exchanged by the reflection of the string.</p>
+<p><strong>The reading.</strong> The multiset is computed from the module alone, by subtracting weights. This is the cheapest way to see the dimension sixteen: the sixteen differences are the sixteen coordinates of the operator space in the weight basis.</p>
+<h2 id="the-check-by-the-carriers">The Check by the Carriers</h2>
+<p><strong>Theorem.</strong> The same multiset is the union of the four carrier strings,
+$$
+V_3:3,2,1,0,-1,-2,-3;\quad V_2:2,1,0,-1,-2;\quad V_1:1,0,-1;\quad V_0:0,
+$$
+and the union reproduces the multiplicities.</p>
+<p><em>Proof.</em> Each carrier of label $k$ has the string from $k$ down to $-k$ in steps of one; the number of carriers whose string contains a weight $w$ is $4-|w|$ for $|w|\le3$, which gives $4,3,2,1$.</p>
+<p><strong>Corollary.</strong> The dimension check reads $7+5+3+1=16$ on one side and $4+6+4+2=16$ on the other.</p>
+<p><em>Proof.</em> The sum of the carrier dimensions, and the sum of the multiplicities counted once per occurrence.</p>
+<p><strong>Corollary.</strong> A weight of large modulus occurs in few carriers, and the extreme weights occur once each.</p>
+<p><em>Proof.</em> The count $4-|w|$ decreases with the modulus.</p>
+<p><strong>The reading.</strong> The two counts are the same count: the multiplicity of a weight is the number of carriers containing it, and the dimension of a carrier is the number of weights it contains. The multiset and the decomposition are two readings of one table.</p>
+<h2 id="the-four-carriers-at-weight-zero">The Four Carriers at Weight Zero</h2>
+<p><strong>Proposition.</strong> Weight zero occurs once in each of the four carriers, so the kernel of the Cartan generator meets all four.</p>
+<p><em>Proof.</em> Every carrier of integer label $k$ has the string from $k$ to $-k$, which contains zero; the carrier of label zero is the zero weight alone.</p>
+<p><strong>Corollary.</strong> The intersection of the kernel with the operator space is four-dimensional, and it is the direct sum of four lines.</p>
+<p><em>Proof.</em> One line from each carrier, and the carriers are independent.</p>
+<p><strong>Corollary.</strong> No carrier is contained in the kernel, and no carrier avoids it.</p>
+<p><em>Proof.</em> Each carrier has one zero weight and at least one nonzero weight.</p>
+<p><strong>The reading.</strong> The kernel of the Cartan generator is the diagonal of the four carriers, one line each. This is why a spectral statement about the operators has to say which carrier it refers to: the zero weight alone does not distinguish them.</p>
+<h2 id="the-symmetry">The Symmetry</h2>
+<p><strong>Theorem.</strong> The weight multiset is symmetric under the reflection $w\mapsto-w$, and the reflection is realised by an operator of the space that exchanges the two factors of the tensor square.</p>
+<p><em>Proof.</em> The multiplicities are symmetric by the corollary on differences; the exchange of the two factors of $V\otimes V$ carries a difference $m-m'$ to its negative.</p>
+<p><strong>Corollary.</strong> The reflection commutes with the Cartan generator up to sign, and it is an involution of the sixteen.</p>
+<p><em>Proof.</em> The exchange of factors has the stated effect on the weights.</p>
+<p><strong>Corollary.</strong> The trace of the Cartan generator on the operator space is zero.</p>
+<p><em>Proof.</em> The weights come in opposite pairs, so their sum vanishes.</p>
+<p><strong>The reading.</strong> The symmetry of the multiset is a symmetry of the space and not only of the list. It is the reflection that makes the module self-dual, read on the operator space.</p>
+<h2 id="the-two-counts">The Two Counts</h2>
+<p><strong>Proposition.</strong> The multiplicity of a weight and the dimension of a carrier are different numbers, and neither determines the other.</p>
+<p><em>Proof.</em> The weight three has multiplicity one and lies in a carrier of dimension seven; the weight zero has multiplicity four and lies in four carriers, of dimensions seven, five, three and one.</p>
+<p><strong>Corollary.</strong> The dimension sixteen is the sum of the carrier dimensions and also the sum of the multiplicities of the weights, but the two sums are over different index sets.</p>
+<p><em>Proof.</em> The carrier dimensions sum over four labels, the multiplicities over seven weights.</p>
+<p><strong>Corollary.</strong> A statement about the number of coordinates of a given weight is a statement about the multiset, and a statement about the size of an invariant subspace is a statement about a carrier.</p>
+<p><em>Proof.</em> The two numbers count different things.</p>
+<p><strong>The reading.</strong> The multiset answers how many coordinates carry a given weight; the decomposition answers which invariant subspaces exist. Both are needed, and the two must be kept apart, since a reader who confuses them will assign the dimension seven to the weight zero.</p>
+<h2 id="the-staircase">The Staircase</h2>
+<p><strong>Definition.</strong> The <strong>multiplicity</strong> of a weight is the number of independent vectors of the space with that weight; the <strong>staircase</strong> is the graph of the multiplicity against the weight.</p>
+<p><strong>Proposition.</strong> The multiplicities rise from one at the top weight to four at weight zero and fall back symmetrically, and the rise is by one at each step.</p>
+<p><em>Proof.</em> The top weight $3$ occurs once, in the carrier of label three. At weight $2$ the vectors are the lowering of the top vector and the highest weight vector of the carrier of label two, so there are two. At weight $1$ there are the second lowering of the top vector, the lowering of the label-two vector and the top vector of the carrier of label one, so three. At weight zero there are one more, the top vector of the label-zero carrier, so four; and the argument mirrors below zero because the weights are symmetric.</p>
+<p><strong>Corollary.</strong> The total is $1+2+3+4+3+2+1=16$, in agreement with the multiset $0^{4},(\pm1)^{3},(\pm2)^{2},(\pm3)^{1}$.</p>
+<p><em>Proof.</em> The staircase, summed.</p>
+<p><strong>Corollary.</strong> A carrier of label $k$ contributes one vector to each weight from $k$ down to $-k$, so the multiplicity of a weight is the number of carriers whose label dominates it.</p>
+<p><em>Proof.</em> The weights of the carrier of label $k$ are $k,k-1,\dots,-k$, one vector each.</p>
+<p><strong>The reading.</strong> The multiset is not a coincidence of dimensions but a staircase, and the staircase is the statement that the four carriers are nested by their labels. Anyone who knows the multiplicities can redraw the carriers, and anyone who knows the carriers can read off the multiplicities.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html">The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</a>, for the four carriers.</li>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle.html">The Four Weights of the Module and the Half Angle</a>, for the four weights of the module.</li>
+<li><a href="the-copy-acting-on-sixteen-dimensions.html">The Copy Acting on Sixteen Dimensions</a>, for the action that produces the multiset.</li>
+<li><a href="the-intersection-table-of-the-carriers-with-the-two-halves.html">The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</a>, for the same carriers against the two squares.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

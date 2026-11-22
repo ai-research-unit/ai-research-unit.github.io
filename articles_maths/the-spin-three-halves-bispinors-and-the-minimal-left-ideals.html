@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The minimal left ideals of the operator algebra are the spinor spaces of the row, and they are not one space but a family. This article…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-math0-bispinors-and-the-minimal-left-ideals"><strong>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The minimal left ideals of the operator algebra are the spinor spaces of the row, and they are not one space but a family. This article proves that the family is parametrised by the lines of the spinor plane, that the copy acts on it transitively, and that each member is a copy of the module $V_{3/2}$ of complex dimension four with weight string $\pm\tfrac32,\pm\tfrac12$. It also proves that the third exterior power of the module returns the module, and computes the pairing of a left ideal with a right ideal on the weight vectors.</p>
+<p><strong>The order of the article.</strong> <em>The Idempotent of the Row</em> builds the ideal from a line; <em>Minimality</em> proves that nothing lies between the zero and the ideal; <em>The Family and Its Transitivity</em> counts the orbit; <em>The Weight String</em> reads the four weights; <em>The Third Exterior Power</em> proves $\Lambda^3V_{3/2}\cong V_{3/2}$; <em>The Pairing of the Two Ideals</em> computes the trace form across the sides.</p>
+<p><strong>It assumes</strong> <em>Introduction to the Spin-$\tfrac32$ Bispinor Spaces</em>, <em>The Minimal Left Ideals of the Biquaternion Algebra</em> and <em>$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</em>. <strong>The row of the elements is</strong> where the minimal left ideals are of complex dimension two and are indexed by the same plane.</p>
+<p><strong>The result in one line.</strong> The minimal left ideals of the operator algebra form a projective line of copies of $V_{3/2}$, and $\Lambda^3V_{3/2}\cong V_{3/2}$ because the four weights sum to zero.</p>
+<p><strong>Boundaries.</strong> The Dirac spinor and the chirality operator are <em>Spinors and Dirac Spinors</em>; the strata inside one ideal are <em>The Spin-$\tfrac32$ Bispinors and the Rank Strata</em> and <em>The Spin-$\tfrac32$ Bispinors and the Spectral Strata</em>.</p>
+<p>Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$; $S=V_{1/2}$ is the minimal left ideal of the algebra, of complex dimension two; the module of the operators is $V=V_{3/2}=\operatorname{Sym}^3S$; the operators are $L_a$, $R_b$ and $T_{a,b}=L_aR_b$; $\star$ is the star; and $\langle S,T\rangle=\operatorname{tr}(S^{\star}T)$ is the trace form.</p>
+<h2 id="the-idempotent-of-the-row">The Idempotent of the Row</h2>
+<p><strong>Definition.</strong> For a complex line $\ell$ of the module let $P_\ell$ be the operator that keeps $\ell$ and annihilates the orthogonal complement of $\ell$ for the trace form, and put</p>
+<p>$$
+E_\ell=L_{P_\ell},
+$$</p>
+<p>the operator of left multiplication by $P_\ell$ inside the operator algebra.</p>
+<p><strong>Proposition.</strong> $E_\ell$ is an idempotent of the operator algebra, it is self-adjoint for the trace form, and its image is the set of operators of $L_a$ with $a\in\ell$, a space of complex dimension four.</p>
+<p><em>Proof.</em> $E_\ell^2$ is left multiplication by $P_\ell^2=P_\ell$, and $E_\ell$ is self-adjoint because $P_\ell$ is and the form is invariant. The image of $L_{P_\ell}$ is $L_\ell$, of dimension four inside the operator space.</p>
+<p><strong>Corollary.</strong> The left ideal of $E_\ell$ is the set $I_\ell$ of operators whose image lies in $\ell$, and it is minimal.</p>
+<p><em>Proof.</em> $TE_\ell=T$ says that the image of $T$ lies in $\ell$, and an operator with image in $\ell$ is unchanged when followed by the projection onto $\ell$. Minimality is the Theorem below.</p>
+<p><strong>The reading.</strong> The idempotent is built from a line and nothing else, and the four is the dimension of a spinor of the row.</p>
+<h2 id="minimality">Minimality</h2>
+<p><strong>Theorem.</strong> $I_\ell$ has no left subideal other than $0$ and itself, and every non-zero element of $I_\ell$ generates $I_\ell$.</p>
+<p><em>Proof.</em> Let $T\in I_\ell$ be non-zero, with image the whole line $\ell$ since the line is one-dimensional. For any $S\in I_\ell$, the operator $S$ vanishes on the kernel of $T$ and takes values in $\ell$, so $S=UT$ for the operator $U$ defined on $\ell$ by $U(T\eta)=S\eta$ and extended arbitrarily. Hence $I_\ell$ is the left ideal generated by $T$.</p>
+<p><strong>Corollary.</strong> The algebra acting on the left on $I_\ell$ is the whole operator algebra, and no proper left submodule of $I_\ell$ exists.</p>
+<p><em>Proof.</em> The generation of the ideal by any of its elements is the statement that the map $U\mapsto UT$ from the operator algebra onto $I_\ell$ is surjective; a left submodule containing $T$ therefore contains $I_\ell$.</p>
+<p><strong>The reading.</strong> Minimality is a statement about the module and not about a basis: an ideal with a one-dimensional image has no room for a submodule, because the module has no proper subspace of dimension one that is invariant under the whole algebra.</p>
+<h2 id="the-family-and-its-transitivity">The Family and Its Transitivity</h2>
+<p><strong>Proposition.</strong> The map $\ell\mapsto I_\ell$ is injective, and the copy acts on the set of ideals by $g\cdot I_\ell=I_{g\ell}$. The action is transitive, the stabiliser of one ideal is the Borel of the copy, and</p>
+<p>$$
+3=\dim\operatorname{SL}_2=1+2=\dim\mathbb{P}(S)+\dim(\text{stabiliser}).
+$$</p>
+<p><em>Proof.</em> Injectivity: the image of the operators of an ideal is the line, and the line is recovered from the ideal. The action is well defined because an element of the copy carries the image of $T$ to the image of $gTg^{-1}$, which is $g\ell$. Transitivity: the copy acts transitively on the lines of its module. The stabiliser of a line is the subgroup of elements preserving it, of dimension two, the Borel.</p>
+<p><strong>Corollary.</strong> The idempotents $E_\ell$ are the primitive idempotents of the operator algebra, and they are parametrised by those of the algebra, $\tfrac12(e_t+i\vec u_{\mathrm r})$, hence by the projective line.</p>
+<p><em>Proof.</em> The primitive idempotents of the algebra are the elements $\tfrac12(e_t+i\vec u_{\mathrm r})$ at the unit real axes, and the axes form a two-sphere, which is $\mathbb{P}(S)$.</p>
+<p><strong>The reading.</strong> The family is one-dimensional, and its parameter is the line of the spinor of the elements. Two different lines give two different ideals, and the copy moves one to any other.</p>
+<h2 id="the-weight-string">The Weight String</h2>
+<p><strong>Proposition.</strong> Each ideal is a module of complex dimension four with weight string $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, the four weights distinct; the raising operator carries $\sqrt3$, then $2$, then $\sqrt3$.</p>
+<p><em>Proof.</em> The ideal is a copy of $V_{3/2}$, and the weights of that module were computed from the largest weight and the dimension. Distinctness: the four weights differ by integers and the extreme ones differ by three, so no two coincide.</p>
+<p><strong>Corollary.</strong> The copy acts irreducibly on each ideal, and the four weight lines of an ideal are the four eigenspaces of its Cartan element.</p>
+<p><em>Proof.</em> An invariant subspace would be a sum of weight lines stable under the raising operator, and the raising operator joins all four lines into one chain.</p>
+<p><strong>The reading.</strong> The string is the same in every ideal of the family, and this is why the family is a family of copies of one module and not a family of different modules.</p>
+<h2 id="the-third-exterior-power">The Third Exterior Power</h2>
+<p><strong>Proposition.</strong> $\Lambda^3V_{3/2}\cong V_{3/2}$.</p>
+<p><em>Proof.</em> The weights of the third exterior power are the sums of three distinct weights of the module. The four weights sum to zero, so the sum of three distinct ones is the negative of the remaining one; the weight set of $\Lambda^3V$ is therefore the negative of the weight set of $V$, which is the weight set itself because the set is symmetric. A four-dimensional space has $\Lambda^3V\cong V^{\star}$, and $V$ is self-dual for the invariant alternating form of the copy, so the two isomorphisms compose to the stated one.</p>
+<p><strong>Corollary.</strong> The module is the third exterior power of itself, and the identification is why the row repeats the row of the elements at a higher power.</p>
+<p><em>Proof.</em> The first statement is the Proposition; the second is its reading at the level of the string.</p>
+<p><strong>The reading.</strong> The identity is a count of weights. Three of four weights miss one, and the missing one is minus the total, so the third exterior power has the same string.</p>
+<h2 id="the-pairing-of-the-two-ideals">The Pairing of the Two Ideals</h2>
+<p><strong>Definition.</strong> For a left ideal $I_\ell$ and a right ideal $J_h$ the <strong>pairing</strong> is the restriction of the trace form, $\beta(T,S)=\langle T,S\rangle$.</p>
+<p><strong>Proposition.</strong> The pairing is complex bilinear and non-degenerate for the annihilator pairing $h=\ell^{\perp}$, and on the weight vectors of the two ideals it vanishes unless the two weights sum to zero:</p>
+<p>$$
+\beta(u_m,v_n)=0\quad\text{unless } m+n=0 .
+$$</p>
+<p><em>Proof.</em> The trace form is invariant under the copy, so the pairing of two weight vectors is a number that the Cartan element multiplies by $m+n$; a non-zero number cannot be multiplied by a different number, so the pairing vanishes unless $m+n=0$. Non-degeneracy is the non-degeneracy of the trace form, read on a complementary pair of ideals.</p>
+<p><strong>Corollary.</strong> The pairing joins each weight of one ideal to the opposite weight of the other.</p>
+<p><em>Proof.</em> The weights are $\pm\tfrac32,\pm\tfrac12$, and the only vanishing sums are $\tfrac32-\tfrac32$ and $\tfrac12-\tfrac12$.</p>
+<p><strong>The reading.</strong> The pairing is diagonal in the weight basis, with the pairs of opposite weights on its non-vanishing entries; it is the only invariant that joins the families.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-spin-three-halves-bispinor-spaces.html">Introduction to the Spin-$\tfrac32$ Bispinor Spaces</a>, for the module and the label of the row</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the same construction at the row of the elements</li>
+<li><a href="spinors-and-dirac-spinors.html">Spinors and Dirac Spinors</a>, for the sum of a left and a right ideal</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-spectral-strata.html">The Spin-$\tfrac32$ Bispinors and the Spectral Strata</a>, for the spectrum of an element of an ideal</li>
+<li><a href="the-left-ideals-and-the-image-of-a-left-multiplication.html">The Left Ideals and the Image of a Left Multiplication</a>, for the image of a one-sided operator at this algebra</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-One Carrier and the Spectral Strata — Biquaternion Universe</title>
+  <meta name="description" content="The subject. An element of the triplet acts on the triplet by the bracket, and the spectrum of that action has three values that sum to zero. This article…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-one-carrier-and-the-spectral-strata"><strong>The Spin-One Carrier and the Spectral Strata</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> An element of the triplet acts on the triplet by the bracket, and the spectrum of that action has three values that sum to zero. This article computes the spectrum, proves that the characteristic polynomial is even, describes the two spectral strata, places the triplet spectrum inside the spectrum of the whole operator space, and passes to the group.</p>
+<p><strong>The order of the article.</strong> <em>The Spectrum on the Triplet</em> proves the shape $(\lambda,0,-\lambda)$. <em>Three Values or One</em> describes the strata. <em>The Discriminant</em> computes the polynomial that cuts them and shows that it is even. <em>The Part Inside the Big Spectrum</em> places the triplet inside the sixteen eigenvalues. <em>The Trace and the Constraint</em> reads the vanishing of the trace. <em>Passage to the Group</em> exponentiates.</p>
+<p><strong>It assumes</strong> <em>The Spin-One Carrier: the Adjoint Triplet</em>, <em>The Spin-One Carrier and the Trace Form</em> and <em>The Spectrum of a Biquaternion</em>. <strong>The row of the elements is</strong> where the same bracket is the commutator of the algebra and the spectrum is the pair of values of an element.</p>
+<p><strong>The result in one line.</strong> The adjoint action of an element of the triplet has the spectrum $\lambda,0,-\lambda$, and the only degeneracy is $\lambda=0$, the nilpotent cone.</p>
+<p><strong>Boundaries.</strong> The rank strata are <em>The Spin-One Carrier and the Rank Strata</em>; the spectrum of an element of the operator carrier is <em>The Spin-$\tfrac32$ Bispinors and the Spectral Strata</em>; the spectrum of an element of the whole operator space is <em>The Fierz–Kofink Identities and the Classification of Spinors</em>.</p>
+<p>Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$; the generators of the triplet are $J_k$ and an element is $X=\sum x_kJ_k$; the module of the operators is $V=V_{3/2}$; the star is $\natural$; the trace form is $\langle S,T\rangle=\operatorname{tr}(S^{\natural}T)$; and $\operatorname{tr}$ and $\det$ are read from the spectrum.</p>
+<h2 id="the-spectrum-on-the-triplet">The Spectrum on the Triplet</h2>
+<p><strong>Definition.</strong> For $X$ in the triplet the <strong>adjoint action</strong> on the triplet is $\operatorname{ad}_X(S)=[X,S]$, and the <strong>spectrum of the carrier</strong> is the spectrum of that operator on the three-dimensional space $V_1$.</p>
+<p><strong>Proposition.</strong> The characteristic polynomial of $\operatorname{ad}_X$ on the triplet is</p>
+<p>$$
+\chi_X(t)=t^3-c(X)\,t,
+$$</p>
+<p>where $c(X)$ is a fixed non-zero multiple of the invariant form of $X$; the spectrum is $\lambda,0,-\lambda$ with $\lambda^2=c(X)$, and the three values sum to zero.</p>
+<p><em>Proof.</em> The adjoint action of the triplet on itself is the bracket, which is antisymmetric for the invariant form; an antisymmetric operator in three dimensions has a kernel containing the element itself, and its remaining two eigenvalues are opposite because the trace vanishes. The product of the two non-zero roots is the constant term, which is the invariant form up to a fixed factor, computed once on a generator.</p>
+<p><strong>Corollary.</strong> Every element of the triplet has zero as an eigenvalue of its adjoint action, and the eigenvector is the element itself.</p>
+<p><em>Proof.</em> The bracket of an element with itself vanishes, so the element is in the kernel.</p>
+<p><strong>The reading.</strong> Three values summing to zero is the spectral form of the constraint that the triplet is three-dimensional and traceless. A generator has $c=-1$ in the normalisation of the previous article, so its spectrum is $i,0,-i$; a nilpotent element has $c=0$ and the spectrum collapses to zero three times.</p>
+<h2 id="three-values-or-one">Three Values or One</h2>
+<p><strong>Theorem.</strong> The triplet is the disjoint union of two spectral strata: the set where $c(X)\neq0$, on which the spectrum has three distinct values, and the set where $c(X)=0$, on which it has one value, zero, three times.</p>
+<p>$$
+V_1=\{c\neq0\}\ \sqcup\ \{c=0\},\qquad \operatorname{spec}=\begin{cases}\lambda,0,-\lambda,& c\neq0,\\ 0,0,0,& c=0.\end{cases}
+$$</p>
+<p><em>Proof.</em> The two roots $\pm\lambda$ are distinct exactly when $\lambda\neq0$, which is $c\neq0$; at $c=0$ both vanish and the third value already vanishes.</p>
+<p><strong>Corollary.</strong> The stratum $\{c\neq0\}$ is open and dense in the triplet, and $\{c=0\}$ is a cone of dimension two.</p>
+<p><em>Proof.</em> A non-zero quadratic form does not vanish on an open dense set, and its zero locus in three dimensions is a cone of dimension two.</p>
+<p><strong>The reading.</strong> Only one coincidence can occur, and it is the coincidence of all three values. The absence of a middle case, two distinct values with one of them double, is a property of the antisymmetric action: the spectrum of an antisymmetric operator is closed under negation with equal multiplicities, so a repeated non-zero value would force its negative to occur as often, which the count of three forbids.</p>
+<p><strong>Remark.</strong> The copy can remove no coincidence of the carrier spectrum, because the parameter $c$ is invariant: a coincidence of the regular part does not occur at all, and the coincidence of the cone is carried by every element of the orbit and cannot be removed by the action. It can be removed by a perturbation of the element out of the cone, and this is the sense in which the degeneracy of the cone is stable along the orbit and unstable in the space.</p>
+<h2 id="the-discriminant">The Discriminant</h2>
+<p><strong>Definition.</strong> The <strong>discriminant</strong> of the carrier spectrum is the discriminant of the cubic $t^3-c(X)t$.</p>
+<p><strong>Proposition.</strong> $\operatorname{disc}=4c(X)^3$, it is a function of the invariant form alone, and it is even in $X$: the discriminant of $-X$ equals the discriminant of $X$.</p>
+<p><em>Proof.</em> For a cubic $t^3+pt$ the discriminant is $-4p^3$, so with $p=-c$ it is $4c^3$. The invariant form is quadratic in the coefficients of $X$, so $c^3$ is homogeneous of degree six and unchanged under $X\mapsto-X$.</p>
+<p><strong>Corollary.</strong> The two strata are the vanishing and the non-vanishing of the discriminant, and the character of the spectrum does not distinguish $X$ from $-X$.</p>
+<p><em>Proof.</em> The discriminant vanishes exactly on the cone and is non-zero elsewhere; being even, it cannot separate an element from its opposite.</p>
+<p><strong>The reading.</strong> Evenness is the statement that the spectrum of $-X$ is the negative of the spectrum of $X$: the multiset $\lambda,0,-\lambda$ is invariant under the flip of the sign of $\lambda$. The discriminant sees the multiset and not the ordering, and this is why it is even.</p>
+<h2 id="the-part-inside-the-big-spectrum">The Part Inside the Big Spectrum</h2>
+<p><strong>Proposition.</strong> For a Cartan element of the triplet the spectrum of its adjoint action on the whole operator space is the nine integers from $-3$ to $3$, with multiplicities $1,2,3,4,3,2,1$, and the spectrum on the triplet is the part $1,0,-1$.</p>
+<p><em>Proof.</em> The operator space is the tensor square of the module with its dual, whose weights are the differences of the four weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$; the differences are the integers from $-3$ to $3$, with multiplicity four at zero and decreasing multiplicities at the ends. The triplet contributes the weights $1,0,-1$, the three values of its own string.</p>
+<p><strong>Corollary.</strong> The spectrum of the carrier is the innermost part of the spectrum of the space, and the outer values belong to the carriers of higher label.</p>
+<p><em>Proof.</em> The weights $\pm2$ occur in the carriers of label two and three, and $\pm3$ only in the carrier of label three; the values $0,\pm1$ are the ones the triplet can carry.</p>
+<p><strong>The reading.</strong> The carrier spectrum is a shadow of the big spectrum, and the shadow is the part nearest zero. The outer values need the larger carriers, which is the spectral form of the statement that the triplet is the smallest carrier.</p>
+<h2 id="the-trace-and-the-constraint">The Trace and the Constraint</h2>
+<p><strong>Proposition.</strong> The trace of the adjoint action on the triplet vanishes for every element, and this vanishing is the constraint that the three values sum to zero.</p>
+<p><em>Proof.</em> The adjoint action is a commutator, so its trace vanishes identically; the sum of the eigenvalues of an operator is its trace.</p>
+<p><strong>Corollary.</strong> The spectrum of the carrier has one free parameter, the invariant $c$, and the constraint reduces the three values to one number.</p>
+<p><em>Proof.</em> Three values summing to zero and symmetric under the flip are $\lambda,0,-\lambda$, determined by $\lambda$ alone.</p>
+<p><strong>The reading.</strong> The constraint is not an extra condition on the element; it is a property of the action. Every adjoint action is traceless because it is a commutator, and on a three-dimensional space this leaves exactly the shape $\lambda,0,-\lambda$.</p>
+<h2 id="passage-to-the-group">Passage to the Group</h2>
+<p><strong>Proposition.</strong> For the group element $\exp(X)$ the action on the triplet has eigenvalues $1,e^{\lambda},e^{-\lambda}$, and the trace of the group action is $1+2\cosh\lambda$.</p>
+<p><em>Proof.</em> The exponential of an operator has the exponentials of its eigenvalues as eigenvalues, and the eigenvalues of the adjoint action are $\lambda,0,-\lambda$, so the group action has $e^{\lambda},1,e^{-\lambda}$.</p>
+<p><strong>Corollary.</strong> On the cone the group action has all eigenvalues equal to one and is not the identity unless $X=0$; off the cone the eigenvalues are distinct.</p>
+<p><em>Proof.</em> At $\lambda=0$ the three eigenvalues are all one, and the group element is unipotent: it differs from the identity by the exponential of a non-zero nilpotent action.</p>
+<p><strong>The reading.</strong> The two strata have different group-theoretic meanings: the regular part of the triplet exponentiates to elements with three distinct eigenvalues, and the nilpotent cone exponentiates to unipotent elements. The spectral stratification of the algebra and the orbit stratification of the group agree under the exponential.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-one-carrier-the-adjoint-triplet.html">The Spin-One Carrier: the Adjoint Triplet</a>, for the brackets whose spectrum is computed here</li>
+<li><a href="the-spin-one-carrier-and-the-trace-form.html">The Spin-One Carrier and the Trace Form</a>, for the invariant form that the parameter of the spectrum is</li>
+<li><a href="the-spin-one-carrier-and-the-rank-strata.html">The Spin-One Carrier and the Rank Strata</a>, for the same two strata read through the rank</li>
+<li><a href="the-spectrum-of-a-biquaternion.html">The Spectrum of a Biquaternion</a>, for the pair of values of an element and its coincidences</li>
+<li><a href="the-fierz-kofink-identities-and-the-classification-of-spinors-of-the-operators.html">The Fierz–Kofink Identities and the Classification of Spinors</a>, for the five classes of the whole operator space</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

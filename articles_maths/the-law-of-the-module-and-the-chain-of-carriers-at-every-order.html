@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Law of the Module and the Chain of Carriers at Every Order — Biquaternion Universe</title>
+  <meta name="description" content="The subject. One sentence produces every row of the tower: the module of a row is the defining space of its copy, the algebra of a row is the square of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-law-of-the-module-and-the-chain-of-carriers-at-every-order"><strong>The Law of the Module and the Chain of Carriers at Every Order</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> One sentence produces every row of the tower: the module of a row is the defining space of its copy, the algebra of a row is the square of that module, and the module of the next row is the algebra of this one. The article states the law without a frame, derives the chain of carriers at the first two orders, and shows how the kernel of the copy's action on the module decides which labels are integral and which are not.</p>
+<p><strong>The order of the article.</strong> The law and its consequences come first. The first row is computed from a two-dimensional spinor space, the second from the four-dimensional module, then the kernel and the two readings, and the behaviour of the half-integer under conjugation closes the article.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of the Biquaternion Algebra</em> and <em>The Three Rows of the Tower</em>. <strong>The row of the elements is</strong> the first instance of the law, where a two-dimensional defining space produces a four-dimensional algebra.</p>
+<p><strong>The result in one line.</strong> From a module of dimension $d$ the law produces an algebra of dimension $d^{2}$, a slot $\tfrac{d-1}{2}$ for that algebra read as a module, and a chain of carriers whose dimensions are the odd numbers from one to $2d-1$; at $d=2$ the chain is $3+1$ and at $d=4$ it is $7+5+3+1$.</p>
+<p><strong>Boundaries.</strong> The comparison of the three rows is <em>The Three Rows of the Tower</em>; the survey of the second row is <em>The Spin Content: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra</em>; the construction of the spinor space is <em>The Minimal Left Ideals of the Biquaternion Algebra</em>.</p>
+<h2 id="the-law">The Law</h2>
+<p><strong>Definition.</strong> A <strong>row</strong> consists of a defining space, which is a module for a copy of the rotation algebra, and of the endomorphism algebra of that space. The defining space is the <strong>module</strong> of the row and the endomorphism algebra is the <strong>algebra</strong> of the row.</p>
+<p><strong>Law.</strong> Let $d$ be the dimension of the module of a row.
+$$
+\text{algebra of the row}=\operatorname{End}(\text{module}),\qquad \dim=d^{2},\qquad
+\text{module of the next row}=\text{algebra of this row}.
+$$
+The slot of the row, the label of its module, is $\tfrac{d-1}{2}$, and the carriers of the row are the summands of the addition rule applied to the module with itself.</p>
+<p><em>Proof.</em> The endomorphism algebra of a space of dimension $d$ has dimension $d^{2}$. The module of the next row is that algebra by definition of the tower, and its dimension is therefore $d^{2}$. A carrier of label $j$ has dimension $2j+1$, so a module of dimension $d$ that is a single carrier has label $\tfrac{d-1}{2}$; the carriers of the row are the summands of the square of that label.</p>
+<p><strong>Corollary.</strong> The slot determines the chain: a row of slot $j$ has carriers of labels $0,1,\dots,2j$, and the number of carriers is $2j+1=d$.</p>
+<p><em>Proof.</em> The addition rule for $j$ with itself gives the labels from zero to $2j$, each once, and there are $2j+1$ of them.</p>
+<p><strong>The reading.</strong> The law is one sentence about an endomorphism algebra and its square, and nothing in it refers to a basis or a frame. It is the reason every row of the tower has the same shape.</p>
+<h2 id="the-chain-at-the-first-row">The Chain at the First Row</h2>
+<p><strong>Theorem.</strong> At $d=2$ the law produces the algebra of dimension four, the slot $\tfrac12$, and the chain $3+1$.</p>
+<p><em>Proof.</em> The module is a minimal left ideal of the algebra, of complex dimension two. Its endomorphism algebra is the algebra itself, of dimension four. Its slot is $\tfrac{2-1}{2}=\tfrac12$, and the addition rule at $j=\tfrac12$ gives
+$$
+\tfrac12\otimes\tfrac12=V_1\oplus V_0 ,
+$$
+of dimensions $3+1=4$.</p>
+<p><strong>Corollary.</strong> The two carriers of the first row are the traceless part of the algebra and its centre, and the labels one and zero are placed on them by the projectors built from the quaternion conjugation.</p>
+<p><em>Proof.</em> The algebra splits as the vector part and the scalar line, of real dimensions three and one, and the two projectors are the ones attached to the conjugation.</p>
+<p><strong>The reading.</strong> The first row is the smallest instance of the law and the only one in which the module is a spinor space of dimension two. The half-integer label belongs to the module and not to any summand, which is the first appearance of the distinction that governs the whole tower.</p>
+<h2 id="the-chain-at-the-second-row">The Chain at the Second Row</h2>
+<p><strong>Theorem.</strong> At $d=4$ the law produces the operator space of dimension sixteen, the slot $\tfrac32$, and the chain $7+5+3+1$.</p>
+<p><em>Proof.</em> The module of the second row is the algebra of the first, of dimension four. Its endomorphism algebra has dimension sixteen. Its slot is $\tfrac{4-1}{2}=\tfrac32$, and the addition rule gives
+$$
+\tfrac32\otimes\tfrac32=V_3\oplus V_2\oplus V_1\oplus V_0 ,
+$$
+of dimensions $7+5+3+1=16$.</p>
+<p><strong>Corollary.</strong> The number of carriers doubles from the first row to the second, from two to four, and the dimensions are the odd numbers from one to seven.</p>
+<p><em>Proof.</em> The number of carriers is $d$, which is two at the first row and four at the second; the dimensions are $2k+1$ for $k$ from zero to the slot.</p>
+<p><strong>The reading.</strong> The second row is the row of this batch of articles, and its chain is the one that the carriers of the preceding articles divide among themselves. The law produces the four labels without a computation, and the dimension count $7+5+3+1$ is the check on it.</p>
+<h2 id="the-cube-and-the-square">The Cube and the Square</h2>
+<p><strong>Proposition.</strong> The phrase that the module of the next row is the cube of the module is correct at the first step and not at the second.</p>
+<p><em>Proof.</em> The symmetric cube of a two-dimensional space has dimension four, which is the algebra of the first row, so the cube and the algebra agree there. The symmetric cube of a four-dimensional space has dimension twenty, while the algebra of the second row has dimension sixteen; the two differ, and the algebra is the correct module of the third row.</p>
+<p><strong>Corollary.</strong> The law is the statement that the module of the next row is the algebra, and the cube is a coincidence of the first step.</p>
+<p><em>Proof.</em> The dimensions four and sixteen are the squares of two and four, and only the first of them is also the symmetric cube of the module.</p>
+<p><strong>The reading.</strong> The correction matters because the third row is otherwise miscomputed: its slot is $\tfrac{15}{2}$ from a module of dimension sixteen, and not the slot that a cube of dimension twenty would give.</p>
+<h2 id="the-kernel-and-the-two-readings">The Kernel and the Two Readings</h2>
+<p><strong>Proposition.</strong> The element $-\mathrm I$ of the copy acts as the identity on the algebra and as minus the identity on the module, and this is why the labels of the summands are integers while the label of the module is a half-integer.</p>
+<p><em>Proof.</em> The copy acts on the algebra by conjugation, and conjugation by $-\mathrm I$ is the identity map. It acts on the module by multiplication, and $-\mathrm I$ multiplies every module vector by $-1$. A label is integral exactly when the element $-\mathrm I$ of the copy acts trivially, since the weights of the module are shifted by one half under the double cover and those of the algebra are not.</p>
+<p><strong>Corollary.</strong> The half-integer label occurs on the module and on no summand of any row.</p>
+<p><em>Proof.</em> The summands are subspaces of an algebra on which $-\mathrm I$ acts trivially, so their weights are integral.</p>
+<p><strong>Corollary.</strong> The two readings of the law, by the module and by the algebra, give the same dimension and different labels.</p>
+<p><em>Proof.</em> The module of a row and the algebra of the row have dimensions $d$ and $d^{2}$, with slots $\tfrac{d-1}{2}$ and integral labels; the algebra is not a single carrier.</p>
+<p><strong>The reading.</strong> The kernel of the action is the source of the half-integer. It is trivial on the algebra and nontrivial on the module, and the difference between the two labels is the difference between the two actions.</p>
+<h2 id="the-half-integer-under-conjugation">The Half-Integer under Conjugation</h2>
+<p><strong>Proposition.</strong> Under the quaternion conjugation the half-integer label of the module becomes an integer, and the module and its conjugate are the same carrier.</p>
+<p><em>Proof.</em> The conjugation is complex linear on the algebra and sends a weight to its negative; on the module it is antilinear and sends the weight $m$ to $-m$, which leaves the string invariant and preserves the label. The label of the module is therefore unchanged by the conjugation.</p>
+<p><strong>Corollary.</strong> Every label that appears in a row is integral after conjugation, and the half-integer is a property of the reading and not of the carrier.</p>
+<p><em>Proof.</em> The conjugation preserves the string of a carrier and reverses the sign of the weights; a half-integer string is invariant as a set and its label is unchanged.</p>
+<p><strong>The reading.</strong> The half-integer is not an anomaly of the tower but its signature: it lives on the defining space and it disappears when the algebra is read. The law is one sentence about the square and the cube, and every table of a row is an instance of it.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-three-rows-of-the-tower.html">The Three Rows of the Tower</a>, for the comparison of the rows.</li>
+<li><a href="the-spin-content-of-the-biquaternion-operators.html">The Spin Content: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra</a>, for the second row in one place.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html">The Clebsch–Gordan Decomposition of the Biquaternion Algebra</a>, for the addition rule at the first row.</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the spinor space.</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, for the labels of the algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

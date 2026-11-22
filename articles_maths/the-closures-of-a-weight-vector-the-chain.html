@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Closures of a Weight Vector: the Chain from $V_0$ to $V_3$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. A weight vector is a single element of the operator space, and two closures can be taken of it: the linear closure under the copy, which is…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-closures-of-a-weight-vector-the-chain-from-math0-to-math1"><strong>The Closures of a Weight Vector: the Chain from $V_0$ to $V_3$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A weight vector is a single element of the operator space, and two closures can be taken of it: the linear closure under the copy, which is the smallest invariant subspace containing it, and the polynomial closure under products, which is the smallest subalgebra it generates. The article computes both closures for the four possible weights, shows that the first is the carrier of the vector and the second is the whole algebra unless the weight is zero, and explains why the weight alone does not determine the carrier.</p>
+<p><strong>The order of the article.</strong> The two closures come first; the linear closure second. The polynomial closure follows, then the ambiguity of the middle weights, and the reading closes.</p>
+<p><strong>It assumes</strong> <em>The Four Carrier Lists</em>, <em>From the Spin Decomposition to the Carriers and the Closures</em> and <em>The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</em>. <strong>The row of the elements is</strong> where a weight vector of the algebra has two carriers at its weight and the closures behave the same way.</p>
+<p><strong>The result in one line.</strong> The linear closure of a weight vector is the carrier it lies in, of dimension $7,5,3$ or $1$; the polynomial closure is the whole algebra unless the weight is zero, in which case it is the scalars.</p>
+<p><strong>Boundaries.</strong> The carrier closures of the carriers are <em>From the Spin Decomposition to the Carriers and the Closures</em>; the multiplicity of the weights is <em>The Spin Decomposition</em>; the carriers and their labels are read in <em>The Four Carrier Lists</em>.</p>
+<h2 id="the-two-closures">The Two Closures</h2>
+<p><strong>Definition.</strong> For a vector $v$ let $L(v)$ be the span of the images of $v$ under the copy, and $P(v)$ the smallest subalgebra containing $v$ and the identity.</p>
+<p><strong>Proposition.</strong> $L(v)$ is invariant under the copy and contained in the carrier of $v$; $P(v)$ contains $L(v)$ and is generated by the products of the images.</p>
+<p><em>Proof.</em> The invariance is by construction, and the products of the images of $v$ generate the algebra.</p>
+<p><strong>Corollary.</strong> $L(v)$ is irreducible, since it is the image of an irreducible module under a nonzero map.</p>
+<p><em>Proof.</em> The copy is generated by its own elements, and the module is irreducible, so the span of the images is a nonzero submodule of a carrier.</p>
+<p><strong>Corollary.</strong> $P(v)$ is a subalgebra and a module for the copy, hence a sum of carriers.</p>
+<p><em>Proof.</em> The products are stable under the copy by the derivation property of the action.</p>
+<p><strong>The reading.</strong> The two closures answer different questions: which invariant subspace the vector spans, and which subalgebra it generates. The first is linear and the second is multiplicative.</p>
+<h2 id="the-linear-closure">The Linear Closure</h2>
+<p><strong>Theorem.</strong> If $v$ is a nonzero vector of a carrier $V_k$, then $L(v)=V_k$, and the dimension of the closure is $2k+1$.</p>
+<p><em>Proof.</em> The carrier is irreducible, so the span of the images of a nonzero vector is the whole carrier.</p>
+<p><strong>Corollary.</strong> The linear closure of a highest weight vector of the space is the carrier $V_3$, of dimension seven.</p>
+<p><em>Proof.</em> The highest weight vector lies in the carrier of the largest label.</p>
+<p><strong>Corollary.</strong> The linear closure of a vector of weight zero is the line of the scalars, and of a vector of weight zero in another carrier it is that carrier.</p>
+<p><em>Proof.</em> The weight zero occurs once in each carrier, and the closure depends on the carrier and not on the weight.</p>
+<p><strong>The reading.</strong> The linear closure is decided by the carrier, and the carrier is decided by the Casimir eigenvalue. The weight is not enough, since the weight zero lies in all four carriers.</p>
+<h2 id="the-polynomial-closure">The Polynomial Closure</h2>
+<p><strong>Theorem.</strong> For a vector of nonzero weight the polynomial closure is the whole algebra; for a scalar it is the line of the scalars.</p>
+<p><em>Proof.</em> The linear closure is a carrier of positive label, and the algebra closure of such a carrier is the whole algebra by the truncated rule; the scalars are closed.</p>
+<p><strong>Corollary.</strong> A single operator of nonzero weight generates the algebra under the copy and the product together, and a scalar generates only the scalars.</p>
+<p><em>Proof.</em> The two cases of the theorem.</p>
+<p><strong>Corollary.</strong> The polynomial closure of a vector of weight zero that is not a scalar is the whole algebra, since it lies in a carrier of positive label.</p>
+<p><em>Proof.</em> The weight zero occurs in each carrier, and only the carrier $V_0$ consists of scalars.</p>
+<p><strong>The reading.</strong> The polynomial closure separates the scalar line from everything else, and it does so at every weight: the weight zero is not the boundary, the scalars are.</p>
+<h2 id="the-ambiguity-of-the-weights">The Ambiguity of the Weights</h2>
+<p><strong>Proposition.</strong> The weight of a vector does not determine its carrier, and the ambiguity is largest at weight zero, where four carriers meet.</p>
+<p><em>Proof.</em> The weights $0,\pm1,\pm2,\pm3$ occur in $4,3,2,1$ carriers respectively, and a vector of a given weight may lie in any of them.</p>
+<p><strong>Corollary.</strong> Two vectors of the same weight can have closures of different dimensions.</p>
+<p><em>Proof.</em> A vector of weight zero in $V_3$ spans seven dimensions, and one in $V_0$ spans one.</p>
+<p><strong>Corollary.</strong> The weight determines the closure only at the extreme weights, where the carrier is unique.</p>
+<p><em>Proof.</em> The weights $\pm3$ occur in one carrier each.</p>
+<p><strong>The reading.</strong> The ambiguity is the multiplicity of the weight, and the multiplicity is $4-|w|$. The weight is the first coordinate of a vector and the carrier is the second, and the second is not a function of the first except at the extremes.</p>
+<h2 id="the-codimension-of-the-chain">The Codimension of the Chain</h2>
+<p><strong>Proposition.</strong> The linear closures have codimensions $15,13,11,9$ in the space of the operators, and the drops are the even numbers.</p>
+<p><em>Proof.</em> The dimensions are $1,3,5,7$, and the space has dimension sixteen.</p>
+<p><strong>Corollary.</strong> Each step of the chain gains two dimensions, and the last step still leaves nine dimensions outside.</p>
+<p><em>Proof.</em> The differences of the dimensions, and the codimension of the top carrier.</p>
+<p><strong>Corollary.</strong> No weight vector has a linear closure of dimension greater than seven, so nine dimensions of the space are invisible to every single weight vector.</p>
+<p><em>Proof.</em> The largest carrier is the closure of a highest weight vector, and its dimension is seven.</p>
+<p><strong>The reading.</strong> The chain is short and steep: four steps, each of two dimensions, and a large complement that no single weight vector reaches. The complement is the part of the space that needs a sum of weight vectors of different weights, and this is the same statement as the multiplicities being larger than one in the middle of the string.</p>
+<p><strong>A numerical check.</strong> The dimensions $1,3,5,7$ sum to sixteen only when the multiplicities are counted: $1+3+5+7=16$, and the same sixteen is $1+2+3+4+3+2+1$ read along the staircase of the weights.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>Two closures, one order.</strong> The linear closure is finer than the weight and coarser than the vector; the polynomial closure is almost always the whole algebra. The chain from a vector to the algebra passes through the carrier and stops there for the linear structure.</p>
+<p><strong>The exceptional scalars.</strong> The scalars are the only vectors that generate nothing, and they are also the only carrier that is closed under the product. The two facts are the same fact: the scalars are central.</p>
+<p><strong>The useful statement.</strong> For computations one uses the linear closure, since it is a carrier and has a label; for generation statements one uses the polynomial closure, since it is almost always everything. The two are different, and the weight is a poor guide to either.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="from-the-spin-to-the-carriers-and-the-closures.html">From the Spin Decomposition to the Carriers and the Closures</a>, for the closures of the carriers.</li>
+<li><a href="the-four-carrier-lists-of-one-algebra.html">The Four Carrier Lists</a>, for the actions that define the closures.</li>
+<li><a href="the-spin-decomposition-four-carriers-and-the-weight-multiset.html">The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</a>, for the multiplicities of the weights.</li>
+<li><a href="the-copy-acting-on-sixteen-dimensions.html">The Copy Acting on Sixteen Dimensions</a>, for the action whose images form the closure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

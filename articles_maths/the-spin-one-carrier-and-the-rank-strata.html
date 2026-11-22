@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-One Carrier and the Rank Strata — Biquaternion Universe</title>
+  <meta name="description" content="The subject. An element of the triplet acts on the module of the operators, and the rank of that action separates the triplet into two strata: the regular…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-one-carrier-and-the-rank-strata"><strong>The Spin-One Carrier and the Rank Strata</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> An element of the triplet acts on the module of the operators, and the rank of that action separates the triplet into two strata: the regular elements, of rank four, and the nilpotent cone, of rank three away from the origin. This article proves the separation, computes the dimensions of the two strata, compares the result with the spectral stratification and with the ranks of the whole operator space, and reads the vanishing of the trace as the balance of the two halves of the weight string.</p>
+<p><strong>The order of the article.</strong> <em>The Rank of an Element</em> fixes the action; <em>Four off the Cone, Three on It</em> proves the theorem; <em>The Two Strata</em> gives the dimensions; <em>The Coincidence with the Spectral Strata</em> compares the two separations; <em>The Higher Ranks</em> places the triplet in the whole space; <em>The Trace and the Sum of the Ranks</em> reads the constraint.</p>
+<p><strong>It assumes</strong> <em>The Spin-One Carrier: the Adjoint Triplet</em>, <em>The Spin-One Carrier and the Spectral Strata</em> and <em>The Four Ranks of the Two-Sided Operators</em>. <strong>The row of the elements is</strong> where an element acts on the algebra by left multiplication with rank zero or four.</p>
+<p><strong>The result in one line.</strong> On the triplet the rank of the action on the module is four at a regular element, three at a non-zero element of the cone, and zero at the origin.</p>
+<p><strong>Boundaries.</strong> The spectrum is <em>The Spin-One Carrier and the Spectral Strata</em>; the form is <em>The Spin-One Carrier and the Trace Form</em>; the rank strata of the operator carrier are <em>The Spin-$\tfrac32$ Bispinors and the Rank Strata</em>.</p>
+<p>Nothing below is a statement of physics. The units are $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_k^2=-e_t$; the generators of the triplet are $J_k=\tfrac12(L_{\vec e_k}-R_{\vec e_k})$; the module of the operators is $V=V_{3/2}$ of complex dimension four; the star is $\natural$; and $\operatorname{tr}$ is the trace of an operator on the module.</p>
+<h2 id="the-rank-of-an-element">The Rank of an Element</h2>
+<p><strong>Definition.</strong> An element $X$ of the triplet is an operator on the module $V$; its <strong>rank</strong> is the dimension of its image, $\operatorname{rank}X=\dim XV$, and its <strong>kernel</strong> is the space of vectors it annihilates.</p>
+<p><strong>Proposition.</strong> The rank is invariant under the action of the group of the copy, and it is unchanged under multiplication of the element by a non-zero scalar.</p>
+<p><em>Proof.</em> The group acts by conjugation, which preserves the dimension of the image, and a scalar multiple has the same kernel and the same image.</p>
+<p><strong>Corollary.</strong> $\operatorname{rank}X=4-\dim\ker X$, and the kernel of a semisimple element is the sum of its zero-weight spaces.</p>
+<p><em>Proof.</em> The rank and the nullity of an operator on a four-dimensional space add to four, and the kernel of a semisimple element is the zero-weight space.</p>
+<p><strong>The reading.</strong> The rank is the first invariant of the element as an operator, and it is available without a choice of basis: it is the codimension of the kernel, and the kernel is read from the weights.</p>
+<h2 id="four-off-the-cone-three-on-it">Four off the Cone, Three on It</h2>
+<p><strong>Theorem.</strong> An element of the triplet is either semisimple with four distinct eigenvalues on the module, or nilpotent; in the first case its rank is four, in the second its rank is three unless it is zero.</p>
+<p><em>Proof.</em> The triplet is the Lie algebra of the copy, and every element of that algebra is semisimple or nilpotent, the two cases being distinguished by the invariant form: the regular elements are those on which the form does not vanish. A semisimple element acts on the module with the four weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$ scaled by its own value, and the four are distinct, so the kernel is zero and the rank is four. A non-zero nilpotent is the raising operator in some axis frame: it annihilates the highest weight line and carries the three other weight lines to non-zero vectors, so its kernel is one-dimensional and its rank is three.</p>
+<p><strong>Corollary.</strong> The rank of an element of the triplet is never one or two.</p>
+<p><em>Proof.</em> The two cases exhaust the elements, and their ranks are four, three and zero.</p>
+<p><strong>The reading.</strong> The exclusion of the intermediate ranks is a property of the triplet and not of the module: the operator space has elements of every rank, the triplet only of the two adjacent to the top.</p>
+<h2 id="the-two-strata">The Two Strata</h2>
+<p><strong>Theorem.</strong> The triplet is the disjoint union of the regular set $\{c\neq0\}$, of complex dimension three, and the cone $\{c=0\}$, of complex dimension two; the origin lies in the cone and is the only element of rank zero.</p>
+<p>$$
+\dim\{c\neq0\}=3,\qquad \dim\{c=0\}=2,\qquad \operatorname{rank}=\begin{cases}4,& c\neq0,\\ 3,& c=0,\ X\neq0,\\ 0,& X=0.\end{cases}
+$$</p>
+<p><em>Proof.</em> The invariant form is a non-zero quadratic form on a three-dimensional space, so its non-vanishing set is open and dense, of dimension three, and its zero locus is a cone of dimension two; the rank values are the theorem above.</p>
+<p><strong>Corollary.</strong> The regular stratum is connected, and the cone is connected with the origin as its vertex.</p>
+<p><em>Proof.</em> The complement of a cone in three dimensions has one piece for a form of rank three, and a cone is connected through its vertex.</p>
+<p><strong>The reading.</strong> Two strata of dimensions three and two, the smaller one carrying the vertex; the drop is the codimension one of a cone.</p>
+<h2 id="the-coincidence-with-the-spectral-strata">The Coincidence with the Spectral Strata</h2>
+<p><strong>Proposition.</strong> The spectral stratification has two strata, the regular set and the cone, and the rank stratification has three, the regular set, the interior of the cone and the vertex. The rank is therefore the finer of the two by exactly one stratum.</p>
+<p>$$
+\{c\neq0\}\ \big|\ \{c=0\}\setminus\{0\}\ \big|\ \{0\}\qquad\text{against}\qquad \{c\neq0\}\ \big|\ \{c=0\}.
+$$</p>
+<p><em>Proof.</em> The spectrum of the adjoint action is $\lambda,0,-\lambda$ with $\lambda^2=c(X)$, so it is zero for every element of the cone and non-zero off it; it cannot separate the vertex from the rest of the cone. The rank is four on the regular set, three on the cone away from the vertex, and zero at the vertex.</p>
+<p><strong>Corollary.</strong> On the interior of the cone the two stratifications agree, and at the vertex the rank separates what the spectrum cannot.</p>
+<p><em>Proof.</em> Both stratifications put the interior of the cone in one piece, and only the rank has a piece consisting of the vertex alone.</p>
+<p><strong>The reading.</strong> The direction of the refinement is the opposite of the one at the row of the bispinors, and the reason is visible in the display: the adjoint action of a nilpotent annihilates the triplet, so the spectrum of the carrier is blind to the vertex. At the row of the bispinors the operator of the zero element is zero and the operator of a degenerate element is not, so there the spectrum is the finer of the two.</p>
+<h2 id="the-higher-ranks">The Higher Ranks</h2>
+<p><strong>Proposition.</strong> The operator space contains elements of every rank from zero to four, and the triplet contributes only the ranks three, four and zero. The ranks one and two are contributed by the carriers of higher label.</p>
+<p><em>Proof.</em> A rank-one operator exists in the operator space and is not an element of the triplet, since every element of the triplet has rank at least three; the rank is therefore attained outside the triplet, and the operator space is the sum of the four carriers.</p>
+<p><strong>Corollary.</strong> The triplet is the carrier on which the rank is farthest from zero, and the low ranks appear only when the higher carriers are present.</p>
+<p><em>Proof.</em> The minimum rank of a non-zero element of the triplet is three, and the other carriers lower the minimum.</p>
+<p><strong>The reading.</strong> The rank measures how far an element is from the cone, and the higher carriers are where the low ranks live. The triplet is the carrier on which the rank stays closest to the dimension of the module.</p>
+<h2 id="the-trace-and-the-sum-of-the-ranks">The Trace and the Sum of the Ranks</h2>
+<p><strong>Proposition.</strong> Every element of the triplet is traceless on the module, and on the regular part the vanishing of the trace is the equality of the two halves of the weight string: two weights above zero and two below, each half of rank two.</p>
+<p><em>Proof.</em> An element of the triplet is a commutator, $X=\tfrac12(L_a-R_a)$, and the trace of a commutator is zero. A regular element has the four weights $\pm\tfrac32$ and $\pm\tfrac12$ scaled by its value, so two are positive and two negative, and the sum of the positive ones equals the sum of the negative ones.</p>
+<p><strong>Corollary.</strong> The rank four of a regular element is the sum $2+2$ of the ranks of the two halves of the string, and the vanishing of the trace is the balance of those two numbers.</p>
+<p><em>Proof.</em> The positive weights number two and the negative weights number two, so each half has rank two and the total is four.</p>
+<p><strong>The reading.</strong> The trace is the difference of the two halves and the rank is their sum, so the pair (rank, trace) is the pair (sum, difference) of two equal numbers at this row, and the trace vanishes.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-one-carrier-and-the-spectral-strata.html">The Spin-One Carrier and the Spectral Strata</a>, for the finer stratification and its discriminant</li>
+<li><a href="the-spin-one-carrier-the-adjoint-triplet.html">The Spin-One Carrier: the Adjoint Triplet</a>, for the generators and the brackets</li>
+<li><a href="the-four-ranks-of-the-two-sided-operators.html">The Four Ranks of the Two-Sided Operators</a>, for the rank of a two-sided operator at the row of the elements</li>
+<li><a href="the-spin-one-carrier-and-the-trace-form.html">The Spin-One Carrier and the Trace Form</a>, for the invariant form that distinguishes the cone</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-rank-strata.html">The Spin-$\tfrac32$ Bispinors and the Rank Strata</a>, for the rank of the operator named by a bispinor</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

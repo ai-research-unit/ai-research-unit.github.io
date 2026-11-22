@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Operators of the Peirce Decomposition — Biquaternion Universe</title>
+  <meta name="description" content="The subject. An idempotent of the algebra splits it into four pieces,,, and with, and an operator is then a rule carrying each piece into each piece. The…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-operators-of-the-peirce-decomposition"><strong>The Operators of the Peirce Decomposition</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> An idempotent of the algebra splits it into four pieces, $e\mathbb{B}e$, $e\mathbb{B}f$, $f\mathbb{B}e$ and $f\mathbb{B}f$ with $f=1-e$, and an operator is then a rule carrying each piece into each piece. The article reads the sixteen-dimensional operator space in that splitting. The four pieces are one-dimensional for a primitive idempotent, so the sixteen blocks of the operator space are sixteen lines, and a two-sided operator is a sum of sixteen pieces whose coefficients are the four coordinates of each parameter in the Peirce frame. The operators preserving one piece form a subalgebra of dimension thirteen, and the family of idempotents over which the whole picture moves is two-dimensional.</p>
+<p><strong>The order of the article.</strong> The Peirce splitting comes first, then the blocks of the operator space, then the two-sided operator in those blocks. The preserving subalgebra follows, and the variety of idempotents closes the article.</p>
+<p><strong>It assumes</strong> <em>The Peirce Decomposition of the Biquaternion Algebra</em>, <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em> and <em>Operators Acting on Two Sides</em>. <strong>The row of the elements is</strong> where the four Peirce components are computed; here they are the four pieces that an operator carries into one another.</p>
+<p><strong>The result in one line.</strong> A primitive idempotent gives four one-dimensional Peirce components, the operator space becomes sixteen one-dimensional blocks, and a two-sided operator acts on the blocks by the four coordinates of each parameter.</p>
+<p><strong>Boundaries.</strong> The two-sided operators outside the Peirce frame are <em>The Two-Sided Operators and the Segre Cone</em>; the adjoint action on the blocks is <em>The Adjoint Action, the Orbits and the Flag Variety</em>; the idempotents themselves are <em>The Square Roots of One and the Idempotents of the Biquaternion Algebra</em>.</p>
+<h2 id="the-peirce-splitting">The Peirce Splitting</h2>
+<p><strong>Definition.</strong> For an idempotent $e$ put $f=1-e$ and
+$$
+\mathbb{B}=e\mathbb{B}e\oplus e\mathbb{B}f\oplus f\mathbb{B}e\oplus f\mathbb{B}f .
+$$</p>
+<p><strong>Theorem.</strong> The four Peirce components are subalgebras or bimodules as follows: $e\mathbb{B}e$ and $f\mathbb{B}f$ are algebras with identities $e$ and $f$, and the two off-diagonal components are bimodules over them. For a primitive idempotent each of the four has complex dimension one.</p>
+<p><em>Proof.</em> The multiplication respects the four pieces because $e$ and $f$ are orthogonal idempotents summing to the identity, so a product of an element of $e\mathbb{B}f$ with an element of $f\mathbb{B}e$ lands in $e\mathbb{B}e$. For the dimensions, a primitive idempotent of this algebra is a projection onto a line along a complementary line, so each of the four pieces is a line.</p>
+<p><strong>Corollary.</strong> The algebra is the sum of four lines in the Peirce frame of a primitive idempotent, and the multiplication of two elements is read on the four coordinates of each.</p>
+<p><em>Proof.</em> The splitting, and the dimensions.</p>
+<p><strong>The reading.</strong> The Peirce frame is a set of four lines depending on a choice of idempotent, and the algebra is read in it as a four-by-four rule with no free space. The frame is not canonical, and the question of how it varies is taken up at the end.</p>
+<h2 id="the-blocks-of-the-operator-space">The Blocks of the Operator Space</h2>
+<p><strong>Definition.</strong> For two Peirce components $P_i$ and $P_j$ let $\operatorname{End}_{ij}$ be the set of the operators carrying $P_j$ into $P_i$ and vanishing on the other three components.</p>
+<p><strong>Theorem.</strong> The operator space splits as the direct sum of the sixteen spaces $\operatorname{End}_{ij}$, each of complex dimension one, and the product of an element of $\operatorname{End}_{ij}$ with one of $\operatorname{End}_{kl}$ is zero unless $j=k$, in which case it lies in $\operatorname{End}_{il}$.</p>
+<p><em>Proof.</em> Every operator is determined by its sixteen restrictions, one for each ordered pair of the four lines; each restriction is a linear map of a line into a line, hence a scalar; the product rule is the composition of the restrictions.</p>
+<p><strong>Corollary.</strong> The operator algebra is the algebra of the four-by-four rules on the four lines, and its dimension sixteen is the square of the four.</p>
+<p><em>Proof.</em> The splitting and the product rule.</p>
+<p><strong>Corollary.</strong> The sixteen basis operators $T_{e_\mu,e_\nu}$ are not the sixteen blocks in general, and the two bases are related by the four coordinates of the Peirce frame.</p>
+<p><em>Proof.</em> The Peirce frame is a second basis of the algebra, and the change of basis carries the products of the units to the blocks.</p>
+<p><strong>The reading.</strong> In the Peirce frame the operator space is a square of lines: four lines in, four lines out, one scalar for each pair. This is the block reading of the sixteen, and it depends on the idempotent, unlike the basis of the products of the units.</p>
+<h2 id="the-two-sided-operator-in-the-blocks">The Two-Sided Operator in the Blocks</h2>
+<p><strong>Definition.</strong> For an element $a$ written in the Peirce frame as $\sum a_{ij}$ with $a_{ij}\in P_i$, the four coordinates $a_{ij}$ are its <strong>Peirce coordinates</strong>.</p>
+<p><strong>Theorem.</strong> The product operator $T_{a,b}$ has the block entries
+$$
+(T_{a,b})_{ij}=a_{ik}\,b_{kj}
+$$
+summed over the intermediate line $k$, and each block entry is the corresponding scalar product of the Peirce coordinates.</p>
+<p><em>Proof.</em> Apply the operator to an element of the $j$-th line: the product $aXb$ picks the $k$-th coordinate of $X$ through $b$, and the $i$-th through $a$, so the block is the sum displayed.</p>
+<p><strong>Corollary.</strong> A two-sided operator is decomposable in the blocks exactly when its four-by-four table of entries is the product of two coordinate tables, that is, when the table has rank one.</p>
+<p><em>Proof.</em> The entries of the table are the products of the coordinates of the two parameters summed over one index, which is the statement that the table is a product of a column table and a row table.</p>
+<p><strong>Corollary.</strong> The Peirce coordinates of a product vanish in a block exactly when every intermediate coordinate product vanishes.</p>
+<p><em>Proof.</em> The sum displayed.</p>
+<p><strong>The reading.</strong> The block form of a two-sided operator is the multiplication of two four-by-four tables of scalars, and the length-one condition is the rank-one condition on that table. The Peirce frame makes the tensor structure of the products look like the multiplication of tables, and it is the only frame in which the block rule is that simple.</p>
+<h2 id="the-preserving-subalgebra">The Preserving Subalgebra</h2>
+<p><strong>Definition.</strong> For one of the four lines, the <strong>parabolic</strong> of the frame is the set of the operators carrying that line into itself.</p>
+<p><strong>Theorem.</strong> The parabolic is a subalgebra of complex dimension thirteen, and it contains the sixteen-block algebra of the two complementary pieces.</p>
+<p><em>Proof.</em> The condition is the vanishing of the three blocks that carry the line into the other three: three one-dimensional conditions, hence $16-3=13$. A product of two such operators carries the line into itself, so the set is closed under multiplication and contains the identity.</p>
+<p><strong>Corollary.</strong> The parabolic is the stabiliser of a line of the algebra, and the four parabolics of a frame meet in the diagonal algebra of the four lines.</p>
+<p><em>Proof.</em> The four conditions together say that every line is carried into itself, which is the diagonal.</p>
+<p><strong>Corollary.</strong> The two-sided operators lying in a parabolic are those whose parameters keep the line inside the corresponding left ideal.</p>
+<p><em>Proof.</em> The image of a two-sided operator is contained in the left ideal generated by the left parameter, and the condition of preserving the line is a condition on both parameters.</p>
+<p><strong>The reading.</strong> The parabolic is the operator form of a partial flag: it fixes one line and lets the other three move. Its dimension thirteen is the dimension sixteen minus the three blocks that would move the line, and the four parabolics of a frame form the corners of the block picture.</p>
+<h2 id="the-variety-of-idempotents">The Variety of Idempotents</h2>
+<p><strong>Theorem.</strong> The primitive idempotents of the algebra form a complex variety of dimension two: an idempotent is the projection onto a line along a complementary line, and the pairs of a line and a distinct complementary line form a two-dimensional family.</p>
+<p><em>Proof.</em> A primitive idempotent has a one-dimensional image and a one-dimensional kernel, and the two determine it; the condition that the image and the kernel meet only at the origin is open, so the family has dimension $1+1=2$.</p>
+<p><strong>Corollary.</strong> The Peirce decomposition varies with the idempotent, and the sixteen blocks are a frame that moves over a two-dimensional parameter space.</p>
+<p><em>Proof.</em> The frame is built from the idempotent, and the idempotents form the variety described.</p>
+<p><strong>Corollary.</strong> Two frames are conjugate by a unit exactly when the corresponding idempotents are conjugate, so the frames form one orbit under the group of the units.</p>
+<p><em>Proof.</em> The units act transitively on the primitive idempotents, and the conjugacy carries the Peirce frame of one to that of the other.</p>
+<p><strong>The reading.</strong> The block picture is not canonical: it is a chart on a two-dimensional family of frames, and the frames are all conjugate. This is why the Peirce decomposition is a tool and not a structure: it makes the multiplication transparent at the cost of a choice, and the choice is parametrised by the idempotents.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html">The Square Roots of One and the Idempotents of the Biquaternion Algebra</a>, for the idempotents themselves.</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the products read in the blocks.</li>
+<li><a href="the-adjoint-action-the-orbits-and-the-flag-variety.html">The Adjoint Action, the Orbits and the Flag Variety</a>, for the action that moves the frame.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone.html">The Two-Sided Operators and the Segre Cone</a>, for the rank-one condition on the block table.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

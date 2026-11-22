@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flavour Research: The Ladder Arithmetic — Biquaternion Universe</title>
+  <meta name="description" content="Status of this note. Every claim below carries one of six tags. The tags are not decoration. A claim tagged [ANSATZ] or [SPECULATION] is work I have done…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="flavour-research-the-ladder-arithmetic"><strong>Flavour Research: The Ladder Arithmetic</strong></h1>
+<p><em>Status of this note.</em> Every claim below carries one of six tags. The tags are not decoration. A claim tagged [ANSATZ] or [SPECULATION] is work I have done and do not believe yet, and the note says so where the claim is made rather than in a paragraph at the end. Of the six tags, only the first two carry weight outside this note.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>tag</th>
+<th>meaning</th>
+<th>weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[MEASURED]</td>
+<td>a number from experiment, independent of the corpus</td>
+<td>usable</td>
+</tr>
+<tr>
+<td>[PUBLISHED]</td>
+<td>a claim already in the literature, attributed</td>
+<td>usable</td>
+</tr>
+<tr>
+<td>[ALGEBRA]</td>
+<td>exact consequence of a definition, no physics assumed</td>
+<td>usable, but often trivial</td>
+</tr>
+<tr>
+<td>[ANSATZ]</td>
+<td>an assumption made here, not derived</td>
+<td>conditional</td>
+</tr>
+<tr>
+<td>[SPECULATION]</td>
+<td>a guess with no support beyond plausibility</td>
+<td>none</td>
+</tr>
+<tr>
+<td>[FAILED]</td>
+<td>tried, computed, and it does not work</td>
+<td>negative</td>
+</tr>
+<tr>
+<td>[WITHDRAWN]</td>
+<td>asserted in an earlier version, now retracted</td>
+<td>negative</td>
+</tr>
+</tbody>
+</table></div>
+<p>The honest summary is that about one sixth of this note is established, one third is algebra, and the remainder is assumption. The previous version did not say which was which, and that was the defect.</p>
+<h2 id="1-the-one-established-relation">1. The One Established Relation</h2>
+<p><strong>[PUBLISHED]</strong> Koide's relation is</p>
+<p>$$
+Q\;=\;\frac{m_1+m_2+m_3}{\left(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3}\right)^{2}}\;=\;\frac{2}{3},
+$$</p>
+<p>stated in 1981 for the charged leptons and not derived since. <strong>[MEASURED]</strong> With the PDG masses it holds as follows.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sqrt{m_e}$</td>
+<td>$0.714842\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>$\sqrt{m_\mu}$</td>
+<td>$10.279026\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>$\sqrt{m_\tau}$</td>
+<td>$42.152817\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>$\sum\sqrt m$</td>
+<td>$53.146685\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>$(\sum\sqrt m)^2$</td>
+<td>$2824.5701$ MeV</td>
+</tr>
+<tr>
+<td>$\sum m$</td>
+<td>$1883.029$ MeV</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>$0.66666051$</td>
+</tr>
+<tr>
+<td>$2/3$</td>
+<td>$0.66666667$</td>
+</tr>
+<tr>
+<td>deviation</td>
+<td>$6.2\times10^{-6}$</td>
+</tr>
+<tr>
+<td>ratio to $2/3$</td>
+<td>$0.9999908$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The relation holds to six parts in a million for the one triple it was written for.</strong> That is the whole empirical content of the charged-lepton ladder, and it is worth more than everything else in this note.</p>
+<p><strong>[MEASURED]</strong> It does not hold for the other two triples:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>$Q$</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e,\mu,\tau$</td>
+<td>$0.6666605$</td>
+<td>holds to $6\times10^{-6}$</td>
+</tr>
+<tr>
+<td>$u,c,t$</td>
+<td>$0.8489808$</td>
+<td>fails by $0.18$</td>
+</tr>
+<tr>
+<td>$d,s,b$</td>
+<td>$0.7314277$</td>
+<td>fails by $0.065$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the relation is a one-off, or it is a rule that quarks violate for a reason nobody has supplied.</strong> Both readings are open and this note keeps both.</p>
+<h2 id="2-exact-algebra">2. Exact Algebra</h2>
+<p>Four statements below are exact. None needs a medium, a spectrum or a dynamics. They are the entire content of the closure language, and stating them plainly is what removes the appearance of derivation.</p>
+<p><strong>2.1 The bound.</strong> <strong>[ALGEBRA]</strong> For positive $m_i$ and $a_i=\sqrt{m_i}$,</p>
+<p>$$
+Q=\frac{\sum a_i^{2}}{\left(\sum a_i\right)^{2}}\le 1,
+$$</p>
+<p>by Cauchy–Schwarz, with equality if and only if exactly one $a_i$ is nonzero.</p>
+<p><strong>2.2 The rung count.</strong> <strong>[ALGEBRA]</strong> Setting $Q=2/N$ in 2.1 gives $N\ge2$. The case $N=2$ requires $Q=1$, hence one massless rung by the equality condition, which is excluded by data. So</p>
+<p>$$
+N\ge3 .
+$$</p>
+<p><strong>This is the only place the closure touches the number of generations, and it is weak: it excludes two and permits any count above two.</strong> It is not a derivation of three, and this note does not present it as one.</p>
+<p><strong>2.3 The variance form.</strong> <strong>[ALGEBRA]</strong> With $\bar a=\frac1N\sum a_i$ and $\operatorname{var}=\frac1N\sum(a_i-\bar a)^{2}$,</p>
+<p>$$
+Q=\frac{2}{N}\iff\operatorname{var}=\bar a^{2},
+$$</p>
+<p>so the amplitude vector sits at $45^{\circ}$ to the uniform direction. Measured for the leptons, $\operatorname{var}/\bar a^{2}=0.999982$ against $1$, which is 2.1 restated with the same $6\times10^{-6}$.</p>
+<p><strong>2.4 The circle.</strong> <strong>[ALGEBRA]</strong> For any $M>0$ and any $\theta$,</p>
+<p>$$
+a_i=\sqrt M\left(1+\sqrt2\cos\!\left(\theta+\frac{2\pi i}{3}\right)\right)
+\;\Longrightarrow\;
+Q=\frac{2}{3}\quad\text{identically},
+$$</p>
+<p>because $\sum\cos=0$ and $\sum\cos^{2}=3/2$ for three equally spaced phases. This is exact for every $\theta$ and every $M$.</p>
+<p><strong>2.4 is the reason this programme is hard to assess, and the note should say it once and plainly: the circle contains no information beyond Koide.</strong> Two parameters, three masses, and one degree of freedom left over; the fit consumes that degree of freedom by construction. <strong>A test that the leptons lie on the circle is a test of $Q=2/3$ and of nothing else.</strong> Any claim that the circle explains or reproduces the closure is a circular claim, and this version of the note does not make it.</p>
+<h2 id="3-the-circle-as-an-ansatz">3. The Circle as an Ansatz</h2>
+<p><strong>[ANSATZ]</strong> The physical hypothesis is not the circle, which is algebra, but the equal spacing of the phases, $2\pi/N$ in $\theta$. Nothing in the corpus derives that spacing. It is an assumption about a medium, and it enters at exactly one place.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>status</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the closure $Q=2/3$</td>
+<td>exact identity of the ansatz</td>
+<td>given</td>
+</tr>
+<tr>
+<td>parameters $M$, $\theta$</td>
+<td>fitted to data</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>data</td>
+<td>three masses</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>degrees of freedom left</td>
+<td>$3-2$</td>
+<td>$1$, and it is $Q$</td>
+</tr>
+<tr>
+<td>predictions beyond $Q$</td>
+<td>none</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is the whole assessment.</strong> A two-parameter family through three points with one identity built in has one degree of freedom and no predictive power. What the ansatz buys is a picture: three rungs on a circle, one near a node. What it costs is that the picture explains nothing, because it cannot fail except by $Q$ failing.</p>
+<h2 id="4-parity-true-inside-the-ansatz-false-as-an-exclusion">4. Parity: True Inside the Ansatz, False as an Exclusion</h2>
+<p><strong>[ALGEBRA, inside the ansatz]</strong> For even $N$ the phases are antipodal in pairs, and $\cos(\theta+\pi)=-\cos\theta$, so</p>
+<p>$$
+a_i+a_{i+N/2}=2\sqrt M
+\qquad\text{exactly, for every }\theta .
+$$</p>
+<p>An even count therefore produces masses in degenerate pairs, symmetric about $\sqrt M$ in amplitude.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N=4$ at the best fit</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>amplitudes</td>
+<td>$-0.398$, $0.786$, $2.398$, $1.214$</td>
+</tr>
+<tr>
+<td>$a_0+a_2$</td>
+<td>$2.000$</td>
+</tr>
+<tr>
+<td>$a_1+a_3$</td>
+<td>$2.000$</td>
+</tr>
+<tr>
+<td>masses (MeV)</td>
+<td>$45.66$, $178.02$, $425.48$, $1658.71$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[WITHDRAWN]</strong> The previous version said this excludes every even count by parity and not by $\chi^{2}$, and called it independent of any fit. Both halves are wrong. The pairing is a property of the ansatz at fixed $(M,\theta)$, so it depends on the ansatz entirely. And the table above shows the fitted $N=4$ masses are not paired, because the fit moves $\theta$ off the paired configuration to chase the data.</p>
+<p><strong>What survives is weaker and still useful:</strong> inside the circle ansatz, an even count cannot give a lone light rung above an empty region. The electron is such a rung. So even counts are disfavoured by the shape of the spectrum, and the $N=4$ fit failure of §5 is the same fact in numbers.</p>
+<h2 id="5-the-fits">5. The Fits</h2>
+<p><strong>[ALGEBRA applied to data]</strong> Each count was fitted by scanning $\theta$ and solving $M$ in closed form against the three measured masses.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>$M$ (MeV)</th>
+<th>$\theta$</th>
+<th>worst relative misfit</th>
+<th>extra rungs demanded (MeV)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>$313.84$</td>
+<td>$132.733^{\circ}$</td>
+<td>$6.1\times10^{-4}$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$288.48$</td>
+<td>$171.278^{\circ}$</td>
+<td>$8.8\times10^{1}$</td>
+<td>$45.7$, $425.5$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$243.40$</td>
+<td>$206.484^{\circ}$</td>
+<td>$3.3\times10^{1}$</td>
+<td>$17.2$, $665.4$, $0.02$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$204.09$</td>
+<td>$230.076^{\circ}$</td>
+<td>$3.3$</td>
+<td>$742.7$, $54.0$, $31.5$</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$176.08$</td>
+<td>$247.303^{\circ}$</td>
+<td>$7.0\times10^{1}$</td>
+<td>$745.6$, $150.8$, $4.0$, $22.9$</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$154.87$</td>
+<td>$260.269^{\circ}$</td>
+<td>$1.7\times10^{2}$</td>
+<td>$719.0$, $237.8$, $5.2$, $24.0$, $3.7$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three rungs fit to $6\times10^{-4}$; every other count misses by a factor of three or more. The $N=3$ reconstruction is $M=313.841$ MeV, $\sqrt M=17.71556\ \mathrm{MeV}^{1/2}$, $\theta=132.732^{\circ}$, giving $0.511$, $105.653$, $1776.883$ MeV against the measured $0.511$, $105.658$, $1776.86$.</p>
+<p><strong>[WITHDRAWN]</strong> The rung count of the charged-lepton tower is three, and it is three by measurement. Measurement gives three charged leptons. The count of rungs is a reading of the ansatz, and the ansatz is what chose three. The sentence asserted the conclusion as the evidence.</p>
+<h2 id="6-the-node-which-is-koide-again">6. The Node, Which Is Koide Again</h2>
+<p><strong>[ALGEBRA]</strong> The amplitude vanishes where $1+\sqrt2\cos\theta=0$, and with the coefficient $\sqrt2$ fixed by 2.4 that is $\theta_0=135^{\circ}$ exactly. The fit returns $132.732^{\circ}$, so the first rung sits $2.268^{\circ}$ from the node.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>deviation from the node</th>
+<th>amplitude $a_1$ (MeV$^{1/2}$)</th>
+<th>$m_1$ (MeV)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0^{\circ}$</td>
+<td>$0.0000$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$-1^{\circ}$</td>
+<td>$0.3118$</td>
+<td>$0.097$</td>
+</tr>
+<tr>
+<td>$-2.268^{\circ}$ (measured)</td>
+<td>$0.7149$</td>
+<td>$0.511$</td>
+</tr>
+<tr>
+<td>$+2.268^{\circ}$</td>
+<td>$-0.6872$</td>
+<td>$0.472$</td>
+</tr>
+<tr>
+<td>$-5^{\circ}$</td>
+<td>$1.6114$</td>
+<td>$2.597$</td>
+</tr>
+<tr>
+<td>$-10^{\circ}$</td>
+<td>$3.3454$</td>
+<td>$11.192$</td>
+</tr>
+<tr>
+<td>$-20^{\circ}$</td>
+<td>$7.1275$</td>
+<td>$50.801$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[WITHDRAWN]</strong> The electron is light because the ladder starts almost exactly on the zero of the cosine, offered as a separate finding, and this is the cleanest physical reading the arithmetic offers.</p>
+<p>The $2.268^{\circ}$ is not independent information. It is $Q=2/3$ written as an angle, because $\theta_0=135^{\circ}$ is forced by the same $\sqrt2$. A reader who computes $Q$ and a reader who plots the node learn the same one number. The table is kept because it is a good picture, and the picture is all it is: <strong>the rung nearest the node is the lightest, which restates the definition of the amplitude and is not a mechanism.</strong></p>
+<h2 id="7-the-open-ladder">7. The Open Ladder</h2>
+<p><strong>[ANSATZ]</strong> Drop the circle and let the tower be an unbounded power ladder, $a_n\propto n^{p}$. <strong>[ALGEBRA, inside that ansatz]</strong> Then $Q_N$ has the finite limit</p>
+<p>$$
+Q_N\longrightarrow\frac{2p+1}{(p+1)^{2}},
+$$</p>
+<p>and imposing $Q=1/2$ gives $p^{2}-2p-1=0$, so</p>
+<p>$$
+p=1\pm\sqrt2 .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>branch</th>
+<th>$p$</th>
+<th>amplitude</th>
+<th>mass exponent</th>
+<th>character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>growing</td>
+<td>$+2.414214$</td>
+<td>$n^{2.414}$</td>
+<td>$+4.828427$</td>
+<td>sparse, extends upward</td>
+</tr>
+<tr>
+<td>decaying</td>
+<td>$-0.414214$</td>
+<td>$n^{0.586}$</td>
+<td>$-0.828427$</td>
+<td>piles up at zero, unphysical</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[FAILED]</strong> Normalised at $m_1$ the growing branch gives $1$, $28.41$, $201.25$ against the measured $1$, $206.77$, $3477.2$. <strong>It fits nothing at three rungs.</strong> It is a statement about a hypothetical dense tower, and the note says so rather than advertising the exactness of $\sqrt2$.</p>
+<h2 id="8-the-continuum-pass-four-assumptions-one-number">8. The Continuum Pass: Four Assumptions, One Number</h2>
+<p>This section produces the number $\rho\propto\omega^{-0.79}$ and the dispersion $\omega\propto k^{4.83d}$. It is the most speculative part of the note, and the assumption chain is longer than the result is useful.</p>
+<p><strong>[SPECULATION]</strong> The chain, stated as a chain:</p>
+<ol>
+<li>the closure holds in the continuum, $\left(\int\sqrt\omega\,\rho\,d\omega\right)^{2}=\frac12\int\omega\rho\,d\omega\int\rho\,d\omega$;</li>
+<li>the density of states is a single power law, $\rho\propto\omega^{\gamma}$, on a finite interval;</li>
+<li>the interval may be taken as $[0,\Lambda]$ with no low-energy cutoff;</li>
+<li>a single dispersion $\omega\propto k^{z}$ holds over the whole range, in $d$ dimensions.</li>
+</ol>
+<p>Given 1 to 4,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\gamma$</td>
+<td>$(-3+\sqrt2)/2=-0.792893$</td>
+</tr>
+<tr>
+<td>mirror branch</td>
+<td>$(-3-\sqrt2)/2=-2.207107$</td>
+</tr>
+<tr>
+<td>$z/d$</td>
+<td>$2(1+\sqrt2)=4.828427$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$d$</th>
+<th>$z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$4.828$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$9.657$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$14.485$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[WITHDRAWN]</strong> This is the saturation rule as a number rather than a slogan: heavy rungs are rarer is not an assumption of the picture, it is what the closure forces.</p>
+<p>It is an assumption of the picture. Assumption 2 is the statement that the density falls as a power, and the algebra then fixes the exponent. Nothing is forced about nature, and the chain has four links, of which the last would need a field theory the corpus does not have.</p>
+<p><strong>The useful residue is a target, not a result:</strong> if a dispersion is ever written down for the tower, it has to give $z\approx4.83$ in one dimension. That is a falsifiable shape, and the note keeps only that.</p>
+<h2 id="9-the-fourth-rung-three-routes-three-failures">9. The Fourth Rung: Three Routes, Three Failures</h2>
+<p><strong>[ALGEBRA applied to data]</strong> The question is whether a fourth charged-lepton mass is predictable. Three routes were tried; all three fail, and the failure is the result.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>route</th>
+<th>construction</th>
+<th>outcome</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>keep the leptons' $(M,\theta)$, set $N=4$</td>
+<td>$0.511$, $0.472$, $1205.2$, $1304.5$ MeV</td>
+<td>muon and tau vanish, replaced by two pairs</td>
+</tr>
+<tr>
+<td>B</td>
+<td>refit $N=4$ to the leptons</td>
+<td>$45.66$, $178.02$, $425.48$, $1658.71$ MeV, misfit $88$</td>
+<td>excluded</td>
+</tr>
+<tr>
+<td>C</td>
+<td>open ladder normalised at $m_e$</td>
+<td>$0.511$, $14.5$, $102.8$, $412.4$ MeV, misses $\mu$ by $7$</td>
+<td>excluded</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So a fourth mass cannot be predicted from the leptons' own numbers.</strong> Three data, two parameters, one constraint: the circle is already saturated. A fourth number needs a fourth input, and the only candidates are a second tower's data, a dynamical rule (which is §8), or a symmetry (which the corpus does not have for flavour).</p>
+<h2 id="10-what-i-think">10. What I Think</h2>
+<p>Opinion, separated from the rest and marked as opinion. Each line carries my confidence.</p>
+<ol>
+<li><strong>Koide is the only real fact here.</strong> Confidence high. Everything else is a reparametrisation of it, an algebra exercise, or an assumption.</li>
+<li><strong>The circle is a coordinate change, not a mechanism.</strong> Confidence certain. §2.4 settles it: the circle is Koide, so it cannot be evidence for anything, including itself.</li>
+<li><strong>The $N\ge3$ argument is true and nearly content-free.</strong> Confidence certain. It excludes two and permits ten.</li>
+<li><strong>The $45^{\circ}$ form is the one idea worth keeping.</strong> Confidence moderate. It converts why $2/3$ into why this vector sits at $45^{\circ}$ to the uniform direction, which is a geometric question with a possible answer, unlike the number itself.</li>
+<li><strong>The continuum pass is numerology until a dispersion exists.</strong> Confidence high. Four stacked assumptions to produce one exponent is not a derivation, and presenting it publicly would damage the corpus.</li>
+<li><strong>If the programme is ever completed, the missing piece is a boundary condition, not a mass formula.</strong> Guess. Fixed phase spacing smells like a quantisation condition on a finite tower, and no amount of fitting produces one.</li>
+<li><strong>If nothing derives the phase spacing, this should be recorded as a coincidence with a good parametrisation.</strong> Opinion. Six parts in a million is striking, and it is also what one triple out of three gives when you look for a two-parameter pattern.</li>
+</ol>
+<h2 id="11-what-i-would-do-next">11. What I Would Do Next</h2>
+<p>Ranked by what would settle something, not by what is easiest to write.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>task</th>
+<th>why it matters</th>
+<th>cost</th>
+<th>success looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>run the masses to a common scale and re-evaluate $Q$</td>
+<td>Koide is not scale invariant; if it holds only at the pole masses that is information</td>
+<td>low</td>
+<td>$Q$ drifts by more than $10^{-3}$, or it does not</td>
+</tr>
+<tr>
+<td>test the $45^{\circ}$ form on any other closing triple</td>
+<td>one success outside the leptons would change the status of the whole note</td>
+<td>low</td>
+<td>a sector with $Q=2/3$ at $10^{-4}$</td>
+</tr>
+<tr>
+<td>look for a boundary condition that quantises $\theta$</td>
+<td>the only route to a mechanism</td>
+<td>high</td>
+<td>a spacing $2\pi/N$ falling out of a finite tower</td>
+</tr>
+<tr>
+<td>drop §8 until a dispersion exists</td>
+<td>it is the section most likely to mislead a reader</td>
+<td>none</td>
+<td>the section stays dropped</td>
+</tr>
+<tr>
+<td>keep the public article free of rungs</td>
+<td>the public page can carry Koide and the failures, not the ansatz as a result</td>
+<td>none</td>
+<td>the public page stays as it is</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="12-claims-withdrawn-from-the-previous-version">12. Claims Withdrawn From the Previous Version</h2>
+<p>Kept as a record, because a retraction is more useful than a silent edit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>previous claim</th>
+<th>why it was wrong</th>
+<th>replacement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the circle produces the closure for free as evidence</td>
+<td>the circle <em>is</em> the closure, by 2.4</td>
+<td>the circle has zero predictive content</td>
+</tr>
+<tr>
+<td>the closure tests whether the leptons lie on a circle</td>
+<td>a test of the circle is a test of $Q=2/3$</td>
+<td>one number, one test</td>
+</tr>
+<tr>
+<td>parity excludes every even count independently of any fit</td>
+<td>pairing holds only at fixed $(M,\theta)$ inside the ansatz</td>
+<td>even counts are disfavoured, not forbidden</td>
+</tr>
+<tr>
+<td>the rung count is three, and three by measurement</td>
+<td>measurement counts particles, not rungs</td>
+<td>three is what the ansatz gives when fitted</td>
+</tr>
+<tr>
+<td>the node distance as a separate finding</td>
+<td>$135^{\circ}$ follows from the same $\sqrt2$ as $Q=2/3$</td>
+<td>Koide restated as an angle</td>
+</tr>
+<tr>
+<td>the closure forces heavy rungs to be rarer</td>
+<td>forced only inside the power-law density assumption</td>
+<td>it is assumption 2, not a consequence</td>
+</tr>
+<tr>
+<td>a dispersion this stiff is the theory's main dynamical demand</td>
+<td>there is no theory yet to demand anything</td>
+<td>a target for a future dispersion</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="13-checks">13. Checks</h2>
+<p>Every number below was recomputed before it was written.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Koide for the leptons</td>
+<td>$1883.029/2824.5701$</td>
+<td>$0.66666051$</td>
+</tr>
+<tr>
+<td>deviation from $2/3$</td>
+<td>$0.66666667-0.66666051$</td>
+<td>$6.2\times10^{-6}$</td>
+</tr>
+<tr>
+<td>the up-type sector</td>
+<td>$(2.16+1270+172690)/\left(\sum\sqrt m\right)^{2}$</td>
+<td>$0.8489808$</td>
+</tr>
+<tr>
+<td>the down-type sector</td>
+<td>$(4.67+93.4+4180)/\left(\sum\sqrt m\right)^{2}$</td>
+<td>$0.7314277$</td>
+</tr>
+<tr>
+<td>the bound</td>
+<td>Cauchy–Schwarz</td>
+<td>$Q\le1$</td>
+</tr>
+<tr>
+<td>$N=2$</td>
+<td>$Q=1$ forces one $a_i=0$</td>
+<td>$m=0$</td>
+</tr>
+<tr>
+<td>the variance form</td>
+<td>$\operatorname{var}/\bar a^{2}$ for the leptons</td>
+<td>$0.999982$</td>
+</tr>
+<tr>
+<td>the circle identity</td>
+<td>$\sum\cos=0$, $\sum\cos^{2}=3/2$</td>
+<td>exact for every $\theta$</td>
+</tr>
+<tr>
+<td>the node</td>
+<td>$1+\sqrt2\cos135^{\circ}$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the open-ladder limit</td>
+<td>$(2p+1)/(p+1)^{2}$ at $p=1+\sqrt2$</td>
+<td>$0.5$</td>
+</tr>
+<tr>
+<td>the open ladder at three rungs</td>
+<td>$1$, $28.41$, $201.25$ against $1$, $206.77$, $3477.2$</td>
+<td>fails</td>
+</tr>
+<tr>
+<td>the density exponent</td>
+<td>$2(\gamma+1)(\gamma+2)=(\gamma+\tfrac32)^{2}$ at $\gamma=(-3+\sqrt2)/2$</td>
+<td>$0.5=0.5$</td>
+</tr>
+<tr>
+<td>the dispersion exponent</td>
+<td>$2d/(\sqrt2-1)$</td>
+<td>$4.828427\,d$</td>
+</tr>
+<tr>
+<td>the $N=4$ pair sums</td>
+<td>$a_0+a_2$, $a_1+a_3$</td>
+<td>$2.000$, $2.000$</td>
+</tr>
+<tr>
+<td>the $N=3$ reconstruction</td>
+<td>$M=313.841$, $\theta=132.732^{\circ}$</td>
+<td>$0.511$, $105.653$, $1776.883$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="notation">Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$</td>
+<td>$\sum m/(\sum\sqrt m)^{2}$, the closure ratio</td>
+</tr>
+<tr>
+<td>$a_i$</td>
+<td>$\sqrt{m_i}$, the amplitude</td>
+</tr>
+<tr>
+<td>$M$</td>
+<td>the square of the mean amplitude, $\bar a^{2}$</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the phase of the first rung on the circle</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the number of rungs in a closed tower</td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>the power-law exponent of an open ladder</td>
+</tr>
+<tr>
+<td>$\gamma$</td>
+<td>the exponent of a power-law density of states</td>
+</tr>
+<tr>
+<td>$z$</td>
+<td>the exponent of a dispersion $\omega\propto k^{z}$</td>
+</tr>
+<tr>
+<td>$d$</td>
+<td>the spatial dimension of the medium</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>. The public statement of the picture, without this arithmetic.</li>
+<li><a href="../articles_physics/an-introduction-to-flavour.html">An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles</a>. The sixteen rows, the three handles, and the fifth-power law.</li>
+<li><a href="../articles_physics/particle-classification-three-grids-one-name-in-every-cell.html">Particle Classification: Three Grids, One Name in Every Cell</a>. One generation, and the module the ladder multiplies.</li>
+<li><a href="../articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>. Why the algebra cannot count rungs.</li>
+<li><a href="../articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html">The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation</a>. Where the masses enter as input.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Spin-Three Carrier: the Top of the Chain — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The carrier of label three is the largest summand of the operator space, of complex and real dimension seven. The article defines it as the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-spin-three-carrier-the-top-of-the-chain"><strong>Introduction to the Spin-Three Carrier: the Top of the Chain</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The carrier of label three is the largest summand of the operator space, of complex and real dimension seven. The article defines it as the traceless part of the symmetric square of the module, fixes its weight string $3,2,1,0,-1,-2,-3$, proves that it is of real type, and explains why no carrier of higher label can occur.</p>
+<p><strong>The order of the article.</strong> The definition comes first, with the dimension count that identifies the space. The weight string and the Casimir follow, then the reality type, the reason the chain stops at three, and the two readings in which the carrier does and does not appear.</p>
+<p><strong>It assumes</strong> <em>The Spin-Two Carrier and the Trace Form</em> and <em>The Clebsch–Gordan Decomposition of the Biquaternion Algebra</em>. <strong>The row of the elements is</strong> where the carrier of label one is the real vector part; that triplet is the counterpart of this carrier one row down.</p>
+<p><strong>The result in one line.</strong> The carrier is
+$$
+V_3=\operatorname{Sym}^{2}\mathcal M\big/V_1,
+$$
+of complex dimension seven and real dimension seven, with weight string $3,2,1,0,-1,-2,-3$, Casimir twelve, and it is the last summand of the chain because the next label would need nine dimensions.</p>
+<p><strong>Boundaries.</strong> The construction of the module and the addition rule are <em>The Clebsch–Gordan Decomposition of the Biquaternion Algebra</em>; the forms on the carrier are <em>The Spin-Three Carrier and the Hermitian Form</em>; its strata are the two articles on the rank and on the spectrum that follow.</p>
+<h2 id="the-carrier">The Carrier</h2>
+<p><strong>Definition.</strong> The <strong>module</strong> of the operator row is $\mathcal M=V_{3/2}=\operatorname{Sym}^{3}S$, of complex dimension four, and the <strong>top carrier</strong> is the complement of the two lower summands in the symmetric square,
+$$
+V_3=\operatorname{Sym}^{2}\mathcal M\big/V_1,
+$$
+where $V_1$ is the carrier of label one, the triplet that the symmetric square contains as its lower summand.</p>
+<p><strong>Proposition.</strong> The carrier has complex dimension seven and weight string $3,2,1,0,-1,-2,-3$.</p>
+<p><em>Proof.</em> The symmetric square of a four-dimensional space has dimension ten, and its weights are the sums of two weights of the module taken with repetition: the pairs give $3,2,1,0,-1,-2,-3$ together with a repeated zero, a repeated one and a repeated minus one. The summands of labels three and one account for ten and three dimensions, and the complement of the triplet is seven-dimensional with the seven simple values.</p>
+<p><strong>Corollary.</strong> The construction by the symmetric square is the correct one, and the symmetric cube of the module does not contain a summand of dimension seven.</p>
+<p><em>Proof.</em> The symmetric cube of a four-dimensional space has dimension twenty and decomposes into the labels $\tfrac92,\tfrac52,\tfrac32$, of dimensions $10+6+4$; none of them is seven. The number seven arises from $10-3$, that is from the symmetric square with the triplet removed.</p>
+<p><strong>Corollary.</strong> The carrier is the kernel of the invariant projection of the symmetric square onto the triplet, and the projection is defined without a choice of frame.</p>
+<p><em>Proof.</em> The two summands are isotypic components of different labels, so the projection onto one along the other is the unique invariant projector with that image and kernel.</p>
+<p><strong>The reading.</strong> The top carrier is what remains of the symmetric square after the triplet is removed. The operation is a projection, and it is defined by the copy alone.</p>
+<h2 id="the-weight-string">The Weight String</h2>
+<p><strong>Proposition.</strong> The seven weights are simple and spaced by one, so the carrier is irreducible, its highest weight is three, its complex dimension is seven and its Casimir is twelve.</p>
+<p><em>Proof.</em> The string is $3,2,1,0,-1,-2,-3$, with no repetition, and consecutive values differ by one. A module with a simple string spaced by one is irreducible, the largest value is its highest weight, and the Casimir of a carrier of label $k$ is $k(k+1)$, which at $k=3$ is twelve.</p>
+<p><strong>Corollary.</strong> The ladder coefficients are $\sqrt6,\sqrt{10},\sqrt{12},\sqrt{12},\sqrt{10},\sqrt6$ from the highest weight down.</p>
+<p><em>Proof.</em> The coefficient at the step from $m$ to $m+1$ is the square root of $k(k+1)-m(m+1)$, which for $k=3$ gives $\sqrt6$ at $m=2$, $\sqrt{10}$ at $m=1$, $\sqrt{12}$ at $m=0$, and the symmetric values below.</p>
+<p><strong>Corollary.</strong> The sum of the seven weights is zero, and the weight zero occurs exactly once.</p>
+<p><em>Proof.</em> The string is symmetric about zero; the single zero is the middle term, and it is the only weight whose multiplicity is odd.</p>
+<p><strong>The reading.</strong> The string of the top carrier is the longest that the sixteen admits. It contains every weight of the operator space from three to minus three, and the multiplicities of the remaining weights, which are two at $\pm2$, three at $\pm1$ and four at zero, are the room taken by the three lower carriers.</p>
+<h2 id="the-reality-of-the-carrier">The Reality of the Carrier</h2>
+<p><strong>Proposition.</strong> The carrier is of real type: it carries an invariant antilinear involution $J_3$ with square $+\mathrm I$, its fixed space has real dimension seven, and on that space the trace form is real.</p>
+<p><em>Proof.</em> The indicator of the carrier of label $k$ is $(-1)^{2k}$, which is $+1$ at $k=3$. An irreducible carrier with indicator $+1$ has an invariant antilinear involution with square $+1$ and an invariant symmetric bilinear form, and its fixed space is a real form of real dimension equal to the complex dimension.</p>
+<p><strong>Corollary.</strong> The carrier carries an invariant symmetric form and no invariant alternating form.</p>
+<p><em>Proof.</em> The symmetric form exists by the indicator; an alternating invariant form would require the indicator $-1$, which belongs to the half-integer labels.</p>
+<p><strong>Corollary.</strong> The seven real dimensions are the seven weights, paired by the involution at $m$ and $-m$, with the weight zero unpaired.</p>
+<p><em>Proof.</em> $J_3$ carries a weight vector to a multiple of the vector of the opposite weight, so the real combinations of the two span one direction for each pair and one for the zero weight.</p>
+<p><strong>The reading.</strong> The top carrier and the module differ in reality type in the sharpest possible way: the module is quaternionic of real dimension eight, the carrier is real of real dimension seven, and the two are the two ends of the chain.</p>
+<h2 id="the-top-of-the-chain">The Top of the Chain</h2>
+<p><strong>Theorem.</strong> No carrier of label four or more occurs in the operator space.</p>
+<p><em>Proof.</em> The sixteen is the square of the module, so its labels are those of $\tfrac32\otimes\tfrac32$, namely zero, one, two and three, each once. A carrier of label four would have dimension nine, and $7+5+3+1+9=25$ exceeds sixteen; independently, the addition rule for the tensor square of the label $\tfrac32$ produces no label above three.</p>
+<p><strong>Corollary.</strong> The chain of carriers is exactly $7+5+3+1$, and the dimensions are the odd numbers from one to seven.</p>
+<p><em>Proof.</em> The labels zero to three give dimensions $2k+1$, and their sum is sixteen.</p>
+<p><strong>Corollary.</strong> The top carrier is the unique summand of maximal dimension and the only one whose label equals half its dimension minus one half.</p>
+<p><em>Proof.</em> The label three is the largest, and among the four labels only the largest satisfies $k=(2k+1-1)/2$ trivially; the content is that the dimension seven occurs once.</p>
+<p><strong>The reading.</strong> The chain stops for two reasons that agree: the dimension count and the addition rule. The agreement is not a coincidence, because the addition rule is the statement that the square of the module is the whole operator space.</p>
+<h2 id="the-two-readings">The Two Readings</h2>
+<p><strong>Proposition.</strong> The top carrier occurs in the principal reading of the sixteen and in none of the summands of the conjugation reading.</p>
+<p><em>Proof.</em> In the principal reading the sixteen is $\tfrac32\otimes\tfrac32$ and the carrier of label three occurs once. In the conjugation reading the sixteen is the square of the algebra read as $V_1\oplus V_0$, and
+$$
+(V_1\oplus V_0)\otimes(V_1\oplus V_0)=V_2\oplus 3V_1\oplus 2V_0,
+$$
+whose labels are zero, one and two only.</p>
+<p><strong>Corollary.</strong> The top carrier is invisible to every description built from the one-sided families and from the products of two elements.</p>
+<p><em>Proof.</em> The conjugation reading is the reading of the algebra by its own units, and the one-sided families and the two-sided products are built from that reading. A carrier that occurs in none of its summands is not reached by those constructions.</p>
+<p><strong>Corollary.</strong> The carrier of label one in the row of the elements is the counterpart of the top carrier one row down: both are the highest summand of their row, and both are of real type, of dimensions three and seven.</p>
+<p><em>Proof.</em> The elements row has the chain $3+1$ with the triplet the highest, and the operator row has $7+5+3+1$ with the septet the highest; the two are the summands of largest label in their rows.</p>
+<p><strong>The reading.</strong> The top carrier is the part of the operator space that no one-sided or two-sided description reaches. It is a linear summand of dimension seven, it is not a cone, and it is the only carrier whose label exceeds the labels available in the row of the elements.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-three-carrier-and-the-hermitian-form.html">The Spin-Three Carrier and the Hermitian Form</a>, for the forms on the carrier.</li>
+<li><a href="the-spin-three-carrier-and-the-rank-strata.html">The Spin-Three Carrier and the Rank Strata</a>, for the ranks inside it.</li>
+<li><a href="the-spin-three-carrier-and-the-spectral-strata.html">The Spin-Three Carrier and the Spectral Strata</a>, for the spectrum of its elements.</li>
+<li><a href="the-spin-two-carrier-and-the-trace-form.html">The Spin-Two Carrier and the Trace Form</a>, for the middle carrier of the chain.</li>
+<li><a href="the-one-sided-operators-of-the-biquaternion-algebra.html">The One-Sided Operators</a>, for the families that do not reach it.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

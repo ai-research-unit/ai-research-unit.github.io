@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetric and Antisymmetric Parts of the Operator Space — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The operator space carries a complex-linear involution, the transposition of the two sides, which sends a product to the product of the two…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetric-and-antisymmetric-parts-of-the-operator-space"><strong>The Symmetric and Antisymmetric Parts of the Operator Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The operator space carries a complex-linear involution, the transposition of the two sides, which sends a product to the product of the two parameters in the opposite order. The article computes its eigenspaces. The fixed part has dimension ten and the negated part dimension six, and the two numbers are the dimensions of the symmetric and of the alternating square of the four-dimensional module. The involution is an anti-automorphism and not a homomorphism, its two eigenspaces are orthogonal for the trace form, and the commutator of two fixed elements is negated.</p>
+<p><strong>The order of the article.</strong> The involution and its two families come first; the two eigenspaces and their dimensions second. The orthogonality and the anti-automorphism follow, and the commutator closes the article.</p>
+<p><strong>It assumes</strong> <em>The Transposition of the Two Sides</em>, <em>Operators Acting on Two Sides</em> and <em>$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</em>. <strong>The row of the elements is</strong> where the symmetric and alternating squares of a four-dimensional space are counted; here the same two squares are the two halves of the sixteen.</p>
+<p><strong>The result in one line.</strong> The transposition splits the sixteen as $10+6$, the symmetric arrays and the skew arrays, and it reverses the product.</p>
+<p><strong>Boundaries.</strong> The conjugate-linear involution is <em>The Adjoints and the Polar Decomposition of an Operator</em>; the products themselves are <em>The Two-Sided Operators and the Segre Cone</em>; the squares themselves are counted in <em>The Transposition of the Two Sides</em>.</p>
+<h2 id="the-transposition-of-the-two-sides">The Transposition of the Two Sides</h2>
+<p><strong>Definition.</strong> For a pair of indices put $\tau(T_{e_\mu,e_\nu})=T_{e_\nu,e_\mu}$ and extend by linearity; equivalently
+$$
+\tau(T_{a,b})=T_{b,a}.
+$$</p>
+<p><strong>Proposition.</strong> The map $\tau$ is a complex-linear involution of the operator space, self-adjoint for the form $\langle S,T\rangle_{*}=\operatorname{tr}(S^{\natural}T)$.</p>
+<p><em>Proof.</em> Linearity is the bilinearity of the pair. Involution: applying $\tau$ twice restores the order of the indices. Self-adjointness: in the basis the form is $\langle T_{\alpha\beta},T_{\mu\nu}\rangle_{*}=4\delta_{\alpha\mu}\delta_{\beta\nu}$, so both $\langle\tau S,T\rangle_{*}$ and $\langle S,\tau T\rangle_{*}$ equal four times the sum of the products $\overline{s_{\nu\mu}}t_{\mu\nu}$ over the pairs.</p>
+<p><strong>Corollary.</strong> The operator space splits as the direct sum of the fixed and the negated parts,
+$$
+\operatorname{End}(\mathbb{B})=\operatorname{Sym}^{2}\oplus\Lambda^{2},
+$$
+of complex dimensions ten and six.</p>
+<p><em>Proof.</em> An involution with eigenvalues $\pm1$ gives the splitting. The fixed operators are the arrays symmetric in the two indices, of which there are $4\cdot5/2=10$; the negated ones are the skew arrays, of which there are $4\cdot3/2=6$.</p>
+<p><strong>The reading.</strong> The transposition is the exchange of the two sides, and its two eigenspaces are the two squares of the module: the symmetric square of a four-dimensional space has dimension ten and the alternating square has dimension six. The sum $10+6=16$ is the whole operator space, and it is the first place where the two numbers appear.</p>
+<h2 id="the-two-halves">The Two Halves</h2>
+<p><strong>Proposition.</strong> A product is symmetric exactly when it is of the form $T_{a,a}$ with $\tau$ fixed, and the symmetric part is spanned by the products $T_{a,a}$ and by the sums $T_{a,b}+T_{b,a}$.</p>
+<p><em>Proof.</em> $\tau(T_{a,b})=T_{b,a}$, so a product is fixed exactly when the two parameters are equal; the sums displayed are fixed, and they span the fixed arrays because a symmetric array is determined by its entries on and above the diagonal.</p>
+<p><strong>Corollary.</strong> The identity is symmetric, and every one-sided operator is neither symmetric nor skew unless it is scalar.</p>
+<p><em>Proof.</em> The identity is $T_{e_t,e_t}$. A left multiplication $L_a=T_{a,e_t}$ is fixed by $\tau$ exactly when $a$ is scalar, since $\tau(L_a)=T_{e_t,a}$, and the two coincide only if $a$ is scalar.</p>
+<p><strong>Proposition.</strong> The skew part is spanned by the differences $T_{a,b}-T_{b,a}$, and it contains no product.</p>
+<p><em>Proof.</em> A difference is negated; every skew array is a sum of such differences; a product is fixed by $\tau$ exactly when its parameters are equal, so no nonzero product is skew.</p>
+<p><strong>The reading.</strong> The symmetric half contains the one-sided families and the identity, and the skew half is generated by the differences of the two sides. The distinction is finer than the one-sided versus two-sided one: the products split between the two halves, and the one-sided families lie almost entirely in the symmetric half, each of them meeting the skew half only at the origin.</p>
+<h2 id="the-anti-automorphism">The Anti-Automorphism</h2>
+<p><strong>Theorem.</strong> The transposition reverses the product:
+$$
+\tau(ST)=\tau(T)\tau(S),
+$$
+and it is therefore an anti-automorphism of the operator algebra, not a homomorphism.</p>
+<p><em>Proof.</em> On basis operators, the array of $ST$ is the product of the arrays, and transposition of an array product reverses the order. Explicitly, $\tau(T_{a,b}T_{c,d})=\tau(T_{ac,db})=T_{db,ac}$ while $\tau(T_{a,b})\tau(T_{c,d})=T_{b,a}T_{d,c}=T_{bd,ca}$, and the two agree exactly because the order in both slots is reversed.</p>
+<p><strong>Corollary.</strong> The fixed part is not a subalgebra: the product of two symmetric operators need not be symmetric, and it is symmetric exactly when the two commute up to the transposition of their factors.</p>
+<p><em>Proof.</em> The theorem gives $\tau(ST)=\tau(T)\tau(S)$, which equals $ST$ only when the two factors commute in the reversed order.</p>
+<p><strong>Corollary.</strong> The commutator of two symmetric operators is skew, and the anticommutator of two symmetric operators is symmetric.</p>
+<p><em>Proof.</em> Apply $\tau$: $\tau[S,T]=\tau(ST)-\tau(TS)=TS-ST=-[S,T]$, and $\tau\{S,T\}=\tau(ST)+\tau(TS)=TS+ST=\{S,T\}$.</p>
+<p><strong>The reading.</strong> The transposition is a symmetry of the space and an antisymmetry of the product. Its fixed part is closed under the anticommutator and closed under the commutator only into the skew part, and this is the algebraic content of the two squares: $\operatorname{Sym}^{2}$ is a Jordan algebra for the anticommutator and its commutator lands in $\Lambda^{2}$.</p>
+<h2 id="the-orthogonality">The Orthogonality</h2>
+<p><strong>Theorem.</strong> The two eigenspaces are orthogonal for the trace form, and the form is positive definite on each of them.</p>
+<p><em>Proof.</em> For $S$ symmetric and $T$ skew, $\langle S,T\rangle_{*}=\langle\tau S,T\rangle_{*}=\langle S,\tau T\rangle_{*}=-\langle S,T\rangle_{*}$, so the value is zero. The form is the standard positive definite form in the basis, so its restriction to any subspace is positive definite.</p>
+<p><strong>Corollary.</strong> The orthogonal projection onto the symmetric part is $\tfrac12(S+\tau S)$, and onto the skew part $\tfrac12(S-\tau S)$, and both are self-adjoint for the form.</p>
+<p><em>Proof.</em> The two maps are the spectral projections of a self-adjoint involution.</p>
+<p><strong>Corollary.</strong> Every operator is the sum of a symmetric and a skew operator in exactly one way, and the two summands are orthogonal.</p>
+<p><em>Proof.</em> The splitting of an involution, together with the orthogonality.</p>
+<p><strong>The reading.</strong> The ten and the six are not only a dimension count: they are the two orthogonal halves of a space with a positive definite form, and the decomposition is the spectral decomposition of the transposition. Every statement about the operator space that uses the form can be checked on the two halves separately.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>The two halves.</strong> The symmetric half is the space of the products and their sums, ten-dimensional, closed under the anticommutator. The skew half is the space of the differences, six-dimensional, closed under the commutator. The transposition exchanges the two sides of every product and fixes the symmetric ones.</p>
+<p><strong>The three numbers.</strong> Ten, six and sixteen are the dimensions of the symmetric square, the alternating square and the whole. They are the numbers of the module's two squares, and they are read in the operator space without any further structure.</p>
+<p><strong>The failure of the homomorphism.</strong> The transposition is the canonical anti-automorphism of the operator algebra, and every product statement must be written with the order reversed. A reader who treats it as a homomorphism finds that products of symmetric operators are not symmetric, and the discrepancy is exactly the commutator, which is skew.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-transposition-of-the-two-sides.html">The Transposition of the Two Sides</a>, for the involution on the algebra side.</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the products on which the involution acts.</li>
+<li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator.html">The Adjoints and the Polar Decomposition of an Operator</a>, for the conjugate-linear companion of this involution.</li>
+<li><a href="end-b-as-an-algebra-the-regular-representation.html">$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation</a>, for the basis and the trace form.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

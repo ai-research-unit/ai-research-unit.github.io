@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Weights of the Module and the Half Angle — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The Cartan generator of the copy acts on the four-dimensional module with the four weights, each simple. The article computes the ladder…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-weights-of-the-module-and-the-half-angle"><strong>The Four Weights of the Module and the Half Angle</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The Cartan generator of the copy acts on the four-dimensional module with the four weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, each simple. The article computes the ladder, identifies the highest weight vector as the cube of a spinor, computes the raising and lowering coefficients, and reads the half angle: a rotation of angle $\theta$ of the algebra acts on the module as the exponential of half the generator, and the weights are the derivatives of that action. The half-integer character of the weights is the feature that separates this row from the row of the elements.</p>
+<p><strong>The order of the article.</strong> The weights and the ladder come first; the highest weight vector and the coefficients second. The half angle follows, and the reading closes the article.</p>
+<p><strong>It assumes</strong> <em>The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</em>, <em>The One-Sided Operators</em> and <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. <strong>The row of the elements is</strong> where the same generator has the weights $\pm\tfrac12$; here the cube of the module doubles the string.</p>
+<p><strong>The result in one line.</strong> The module has the four simple weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, the ladder has the coefficients $\sqrt3,2,\sqrt3$, and the weights are half-integers because the generator acts on the module as half of the rotation.</p>
+<p><strong>Boundaries.</strong> The label of the module as a whole is <em>The Slot and the Summand</em>; the group and its kernel are <em>The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</em>; the decomposition of the sixteen is <em>The Spin Decomposition: Four Carriers and the Weight Multiset</em>.</p>
+<h2 id="the-weights">The Weights</h2>
+<p><strong>Definition.</strong> The <strong>Cartan generator</strong> is $H=i\xi_z$, the operator of left multiplication by $i\vec e_z$ multiplied by $i$, so that $H$ is Hermitian for the trace form. Its <strong>weights</strong> are the eigenvalues of $H$ on the module.</p>
+<p><strong>Theorem.</strong> The generator $H$ has the four eigenvalues
+$$
+\tfrac32,\quad \tfrac12,\quad -\tfrac12,\quad -\tfrac32,
+$$
+each with multiplicity one, and the four eigenvectors form a basis of the module.</p>
+<p><em>Proof.</em> The generator is the left multiplication by $i\vec e_z$ times $i$; its action on the module, identified with the third symmetric power of the two-dimensional spinor space, is the sum of the three diagonal actions on the three factors, so the eigenvalues are the sums of three values $\pm\tfrac12$, taken with multiplicity, and the sums are the four numbers displayed.</p>
+<p><strong>Corollary.</strong> The module is multiplicity-free, and its four weights are in arithmetic progression of step one, symmetric about zero.</p>
+<p><em>Proof.</em> The sums of three signs give the four values, each in exactly one way up to the order of the factors.</p>
+<p><strong>Corollary.</strong> The sum of the four weights is zero, and the sum of their squares is five.</p>
+<p><em>Proof.</em> $\tfrac32+\tfrac12-\tfrac12-\tfrac32=0$ and $\tfrac94+\tfrac14+\tfrac14+\tfrac94=5$.</p>
+<p><strong>The reading.</strong> Four weights, four dimensions, no repetition. The module is the simplest carrier of the copy at this row, and its weight string is fixed by the algebra: the generator is a left multiplication, and the module is the algebra.</p>
+<h2 id="the-ladder">The Ladder</h2>
+<p><strong>Definition.</strong> The <strong>raising and lowering operators</strong> are $E=\xi_x+i\xi_y$ and $F=\xi_x-i\xi_y$, the complex combinations of the two remaining generators.</p>
+<p><strong>Theorem.</strong> On the weight vectors $v_m$, ordered by increasing weight,
+$$
+Fv_{-3/2}=\sqrt3\,v_{-1/2},\qquad Fv_{-1/2}=2v_{1/2},\qquad Fv_{1/2}=\sqrt3\,v_{3/2},\qquad Fv_{3/2}=0,
+$$
+and $E$ is the mirror ladder with the same coefficients.</p>
+<p><em>Proof.</em> The coefficients are those of the ladder operators of the spin $	frac32$ representation, which are $\sqrt{j(j+1)-m(m+1)}$; for $j=\tfrac32$ the three values are $\sqrt3$, $2$ and $\sqrt3$.</p>
+<p><strong>Corollary.</strong> The highest weight vector is annihilated by $E$ and generates the module under $F$.</p>
+<p><em>Proof.</em> The highest weight vector has weight $\tfrac32$, the maximum, so no raising is possible; the lowering steps reach all four weights.</p>
+<p><strong>Corollary.</strong> The Casimir operator of the copy acts on the module by the scalar $\tfrac{15}{4}$, and the four weights are recovered from it together with $H$.</p>
+<p><em>Proof.</em> The Casimir of the spin $j$ representation is $j(j+1)=\tfrac32\cdot\tfrac52=\tfrac{15}{4}$.</p>
+<p><strong>The reading.</strong> The ladder is the whole structure of the module: one vector, three steps, four weights. The coefficients are fixed by the algebra and not by a choice of basis, and their squares $3,4,3$ sum to ten, which is the dimension of the symmetric square.</p>
+<h2 id="the-highest-weight-vector">The Highest Weight Vector</h2>
+<p><strong>Proposition.</strong> Let $s$ be a highest weight spinor of the two-dimensional spinor space $S$. Then $s^{3}$ is the highest weight vector of the module, and its weight is $\tfrac32$.</p>
+<p><em>Proof.</em> The symmetric cube of the highest weight vector of $S$ has weight three times $\tfrac12$, and it is annihilated by the raising operator because the latter acts as a derivation on the symmetric algebra.</p>
+<p><strong>Corollary.</strong> The module is generated by a single monomial, and every weight vector is a monomial in the two spinor coordinates.</p>
+<p><em>Proof.</em> The symmetric cube has the four monomials $s^{3},s^{2}t,st^{2},t^{3}$, and they are the four weight vectors.</p>
+<p><strong>Corollary.</strong> The vanishing of the raising operator on $s^{3}$ is the statement that there is no weight $\tfrac52$ in the module.</p>
+<p><em>Proof.</em> A vector of weight $\tfrac52$ would be a fourth symmetric power, and the module is the third.</p>
+<p><strong>The reading.</strong> The module is the cube of the spinor space, and the highest weight vector is the cube of a spinor. The truncation at the fourth power is the reason the ladder stops, and the stopping is the statement that the module is finite-dimensional.</p>
+<h2 id="the-half-angle">The Half Angle</h2>
+<p><strong>Theorem.</strong> A rotation of angle $\theta$ of the algebra acts on the module by $\exp(\theta H/2)$, and the weight of a vector is the derivative of its phase at $\theta=0$:
+$$
+u(\theta)\cdot v_m=e^{\,i m\theta/2}v_m .
+$$</p>
+<p><em>Proof.</em> The rotor of angle $\theta$ is the exponential of $\tfrac{\theta}{2}\xi_{\vec n}$, and on the module the generator acts with the eigenvalues $2m$; hence the phase of a weight vector is $m\theta$ over two.</p>
+<p><strong>Corollary.</strong> The half angle is forced by the pair of facts: the generator has the eigenvalues $2m$ on the module and the rotation is the exponential of half the generator.</p>
+<p><em>Proof.</em> The two statements compose to the displayed phase.</p>
+<p><strong>Corollary.</strong> The weights are half-integers exactly when the module changes sign at $\theta=2\pi$.</p>
+<p><em>Proof.</em> The phase at $\theta=2\pi$ is $e^{i\pi m}$, which is $-1$ exactly for a half-integer $m$.</p>
+<p><strong>The reading.</strong> The half angle is not an extra structure: it is the composition of the exponential of the generator with the doubling of the weights on the module. This is why the four weights are half-integers and why the module is the place where the sign after a full turn lives.</p>
+<h2 id="the-separation-from-the-row-of-the-elements">The Separation from the Row of the Elements</h2>
+<p><strong>Proposition.</strong> The row of the elements has two weights $\pm\tfrac12$ for the same generator, and the row of the operators has four weights $\pm\tfrac12,\pm\tfrac32$.</p>
+<p><em>Proof.</em> The module of the elements is the two-dimensional spinor space, with the weights $\pm\tfrac12$; the module of the operators is its third symmetric power, with the four sums.</p>
+<p><strong>Corollary.</strong> The two rows differ by the number of weights and by the presence of the integer gap, not by the nature of the weights.</p>
+<p><em>Proof.</em> Both strings are half-integral and symmetric; the second has a step of one and four terms.</p>
+<p><strong>Corollary.</strong> No computation on the operators is needed to pass from one string to the other: the passage is the symmetric cube.</p>
+<p><em>Proof.</em> The weights of the cube are the sums of three weights of the module.</p>
+<p><strong>The reading.</strong> The half angle is shared by the two rows, and the doubling of the string is the only difference. A statement about the spin of this row must therefore name the module, since the weights do not distinguish the rows by their character but only by their number.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-group-the-principal-copy-and-the-kernel.html">The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$</a>, for the copy acting on the module.</li>
+<li><a href="the-minimal-left-ideals-and-the-module.html">The Minimal Left Ideals and the Module $V_{3/2}$</a>, for the module and its weight vectors.</li>
+<li><a href="the-slot-and-the-summand.html">The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in the Operators</a>, for the labels of the two rows.</li>
+<li><a href="the-spin-decomposition-four-carriers-and-the-weight-multiset.html">The Spin Decomposition: Four Carriers and the Weight Multiset</a>, for the weights of the sixteen differences.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
