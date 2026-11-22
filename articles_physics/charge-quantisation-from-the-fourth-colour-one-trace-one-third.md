@@ -26,7 +26,7 @@ The trace vanishes because $B-L$ is a generator, and a generator of $\mathrm{SU}
 
 **What is not claimed.** That it explains why the electron's charge has the value it has — it does not, and no group-theoretic argument can. That it derives the charges from the algebra alone — the quartet is the declaration (A), and the trace is a property of $\mathrm{SU}(4)$, the carrier's group. That the Standard Model lacks the fact — given its field list it fixes the same ratio by anomaly cancellation, and the comparison section states what the frame's smaller assumption is worth. That the trace fixes a scale — it does not, and the section on the trace shows the invariance by scaling.
 
-**The order.** What charge quantisation means; the trace and why it vanishes; the relation in four notations; the fate of the twenty-one generators; the question of the $\mathrm{U}(1)$; $B-L$ as a bridge and where the metaphor stops; the comparison with the Standard Model; what is explained and what is not; the same trace in the corpus's own language.
+**The order.** What charge quantisation means; the trace and why it vanishes; the relation in four notations; the fate of the twenty-one generators, including the sort by what each does to the time line and the nine read as a real form; the question of the $\mathrm{U}(1)$; $B-L$ as a bridge and where the metaphor stops; the comparison with the Standard Model; what is explained and what is not; the same trace in the corpus's own language.
 
 ## What Charge Quantisation Means, Exactly
 
@@ -158,7 +158,17 @@ The first equation is the frame. The second is the reason the frame can break to
 | weak isospin | $3$ | $\mathrm{SU}(2)_L$ | $W^{\pm}$ massive, $W^3_L$ mixed into the photon and the $Z$ | $M_W$ |
 | right-handed weak | $3$ | $\mathrm{SU}(2)_R$ | $W_R^{\pm}$ and $Z_R$ massive, and the neutral direction supplies $T_{3R}$ to hypercharge | $M_R$ |
 
-The rows sum to $8+1+6+3+3=21$. The classes are disjoint, and each is a class of generators and not of states: the three of $\mathrm{SU}(2)_R$ yield two massive states and one direction that is not a state at all but an ingredient.
+The rows sum to $8+1+6+3+3=21$. The classes are disjoint **as generators of the product group**, and each is a class of generators and not of states: the three of $\mathrm{SU}(2)_R$ yield two massive states and one direction that is not a state at all but an ingredient.
+
+**They are not disjoint as operators on the carrier, and that is the one place this ledger needs a qualifier.** $L_{\vec e_a}$ and $R_{\vec e_a}$ are traceless and skew-adjoint for $\operatorname{tr}(X^\dagger Y)$, hence elements of $\mathfrak{su}(4)$, and they are independent, so the six weak generators lie *inside* the fifteen. The carrier therefore supplies
+
+$$
+\dim_{\mathbb R}\mathfrak u(4)=16=15+1 ,
+$$
+
+and the twenty-one exists only on the formal copy the group acts on — which is why the copy is declared rather than found. Said as arithmetic: $15+6=21$ double counts, and $15+6-6=15$ is the algebra.
+
+**And the overlap is not marginal.** Projecting a weak generator onto the block $8+1$ and onto the coset $\mathfrak m$, in the same norm, gives $\sqrt2$ and $\sqrt2$ against a total of $2$: **each weak generator is an equal superposition of a colour direction and a leptoquark direction.** So neither block equals a weak generator, and a reader who takes the six of $\mathfrak m$ for the six of the two $\mathrm{SU}(2)$'s has conflated two different sixes that are not even orthogonal.
 
 **The common summary, and its two errors.** It is often said that the fifteen of $\mathrm{SU}(4)$ are the strong interaction and the six of the two $\mathrm{SU}(2)$'s are the weak one. Both halves are wrong, and the errors are of different kinds.
 
@@ -169,6 +179,46 @@ The rows sum to $8+1+6+3+3=21$. The classes are disjoint, and each is a class of
 **What "comes from" means, and the two senses it has.** A generator can descend from a subgroup, or it can be a mixture of directions from different factors. The eight gluons descend: $\mathrm{SU}(3)$ is a subgroup of $\mathrm{SU}(4)$, unbroken at every scale. Hypercharge does not descend: it is a mixture, and the next section is about it. Keeping the two senses apart is what makes the ledger readable, because the first is a containment statement and the second is a statement about a linear combination.
 
 **The dimension budget, and what it does and does not say.** The chain is $21\to15\to12\to9$ in dimensions and $5\to5\to4\to3$ in rank. The first step loses six and no rank, because the six leptoquarks are off-diagonal and eat no Cartan direction. The second loses three and one, the third three and one. The count of massless gauge bosons equals the dimension of the unbroken group at every stage, which is a theorem and not a dynamics: the Higgs mechanism eats exactly one Goldstone per broken generator. What the budget does not say is *which* generator goes where. That is the ledger, and the ledger is the content; the budget is the arithmetic check on it. [The Breaking Chain and the Boson Spectrum](the-breaking-chain-and-the-boson-spectrum.html) writes the budget and the spectrum, and this section writes only the bookkeeping of where each generator sits.
+
+### The same fifteen, sorted by what they do to the time line
+
+**A second reading of the same ledger, which the table above already implies but does not state.** The canonical split of the carrier is $\mathbb C e_t\oplus B_V$, and $e_t$ is the time unit of the algebra — the Krein norm is $\lvert Q_t\rvert^2-\lvert Q_x\rvert^2-\lvert Q_y\rvert^2-\lvert Q_z\rvert^2$, signature $(1,3)$. So the split that identification (A) names lepton against colour is, in the algebra's own form, the **signature split**: the line is the time-like direction and $B_V$ is the space-like part. Sorting the fifteen by what they do to that line therefore sorts them by a property the corpus did not have to introduce.
+
+| what it does to $\mathbb C e_t$ | count | which | class |
+|---|---|---|---|
+| annihilates it, $X e_t=0$ | $8$ | $\mathfrak{su}(3)$ | gluons |
+| acts on it as a phase | $1$ | $iD$ | $B-L$ |
+| moves it out of itself | $6$ | $\mathfrak m$ | leptoquarks |
+
+$8+1+6=15$. The $8+1=9$ is the stabiliser of the line, and it is a subgroup; the $6$ is not. **Seven see the line and one of them does not move it.**
+
+**The six split three and three, and the split is by $B-L$.** With $D=\operatorname{diag}(3i,-i,-i,-i)$,
+
+$$
+[D,E_{0i}]=4i\,E_{0i},\qquad [D,E_{i0}]=-4i\,E_{i0},
+$$
+
+so three of the six raise the line into a colour direction and three lower it back. In the normalisation where $B-L$ has eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$ on the quartet, the raising triple carries $B-L=+\tfrac43$ and the lowering triple $-\tfrac43$ — the leptoquark charge of $\pm\tfrac23$ once the $\mathrm{SU}(2)_R$ half is added, which is the $\pm\tfrac23$ in the table. **The $3+3$ is therefore not a relabelling: it is the particle–antiparticle pairing of the six, in the $B-L$ grading.**
+
+**And the six leave a fingerprint on the weak pair.** Projecting $L_{\vec e_a}$ onto $\mathfrak m$ gives a norm of $\sqrt2$ out of $2$, and the projection of $R_{\vec e_a}$ onto $\mathfrak m$ is *the same vector*. Two consequences follow, and the second is the one worth keeping. First, $L_{\vec e_a}-R_{\vec e_a}$ has no leptoquark part at all — it is pure colour. Second, the six weak generators reach only a three-dimensional subspace of the six-dimensional $\mathfrak m$, so three leptoquark directions are not the leptoquark half of any weak generator.
+
+> **What this does and does not mean.** Leptoquarks and Lorentz boosts are both "directions that mix the time line with a space line", and that is a statement about the *shape* of the generators in the same matrix algebra. It is not a statement that the leptoquarks are boosts. A boost is a spacetime transformation and the six are internal gauge directions; the coincidence is that $\mathrm{SU}(4)$ acts on four coordinates which the algebra also reads as time and space, and the physics identification of those four coordinates with colour is (A), not a theorem. The count is a bookkeeping fact about one carrier used twice.
+
+### The nine as a real form, and the leptoquark count as a compactness count
+
+**The same $8+1+6$ is a Cartan decomposition of one algebra in two real forms.** $\mathfrak{su}(4)$ and $\mathfrak{su}(1,3)$ — the second preserving $G=\operatorname{diag}(1,-1,-1,-1)$ — are both real forms of $\mathfrak{sl}(4,\mathbb C)$, and the split is the same on both sides:
+
+| | preserves $\operatorname{tr}(X^\dagger Y)$ | preserves $G$ |
+|---|---|---|
+| $8$ gluons | yes | yes |
+| $1$ $B-L$ | yes | yes |
+| $6$ leptoquarks | **yes** | **no, but $i$ times them does** |
+
+The nine are the **maximal compact subalgebra** of both, of dimension $9$; and $i\,\mathfrak m$ is the non-compact part of $\mathfrak{su}(1,3)$. The two real forms have the same dimension, $15$, the same rank, $3$, and the same maximal compact, and they differ on exactly one thing: **whether the six are compact.**
+
+**That is the cleanest statement of the leptoquark count the corpus has, and it needs no new axiom.** The leptoquarks are the six directions that are compact in $\mathfrak{su}(4)$ and non-compact in the pseudo-unitary form. Any structure that fixes a signature on the carrier — a Krein form, a pseudo-Riemannian structure in the sense of the non-commutative-geometry literature — selects the second real form, and selecting it *is* the statement that the six are not gauged. In the language of that literature this is the object called $\beta$, and the result quoted there is that the full Pati–Salam algebra admits no such $\beta$ unless it is reduced, which removes both the six and the off-diagonal Yukawa block. **The corpus is not in a position to adopt that result**, because its finite triple fails the first-order condition and it has no unitaries to quotient; what it can state, and what this paragraph states, is the algebraic core that does not depend on any of that.
+
+**One consequence worth naming, because it cuts both ways.** The six weak generators are in $\mathfrak{su}(4)$ but not in $\mathfrak{su}(1,3)$, and no scalar multiple of one is either: each is half block and half coset, and the $i$-rotation that maps $\mathfrak m$ into the pseudo-unitary form cannot map a mixture of the two. So a signature-fixing condition on the carrier would not spare the weak pair — which is why, in the literature where this is done, the weak generators are placed on the *other* index of a rectangular array rather than on the same four coordinates. On one $M_4(\mathbb C)$ the colour and weak actions overlap; that overlap is the price of the corpus's carrier, and the formal copy is what pays it.
 
 ## Does the $\mathrm{U}(1)$ Come From $\mathrm{SU}(4)$?
 
@@ -298,6 +348,12 @@ while the $(\bar{\mathbf4},\mathbf1,\mathbf2)$ contributes nothing because $T_{3
 | the scaling | $3\times\tfrac13$ and $3\times(-1)$ | $+1,+1,+1,-3$, still traceless |
 | the centraliser | $\mathfrak z_{\mathfrak{su}(3)}(\mathfrak{su}(4))$ | one-dimensional, spanned by $iD$ |
 | the generator ledger | $8+1+6+3+3$ | $21$ |
+| the ledger on the carrier | $\dim\mathfrak u(4)$ against $15+1$ | $16$, so the $21$ is on the copy |
+| the overlap of the two sixes | block part against coset part of $L_{\vec e_a}$ | $\sqrt2$ and $\sqrt2$ of $2$, not orthogonal |
+| the shared leptoquark half | $L_{\vec e_a}$ against $R_{\vec e_a}$ on $\mathfrak m$ | the same vector; $L-R$ is pure colour |
+| the time-line sort | $8+1+6$ by action on $\mathbb C e_t$ | $15$, and $8+1$ is the stabiliser |
+| the $3+3$ of the six | $[D,E_{0i}]$ against $[D,E_{i0}]$ | $+4i$ against $-4i$, so $B-L=\pm\tfrac43$ |
+| the two real forms | $\mathfrak{su}(4)$ against $\mathfrak{su}(1,3)$ | $15=9+6$ both, the six compact in one only |
 | the first misreading | $7$ of the $15$ against $8$ gluons | $7$ is not strong |
 | the second misreading | $3+3$ from the two $\mathrm{SU}(2)$'s | two different factors |
 | the electroweak count | $3$ from $\mathrm{SU}(2)_L$ plus $1$ mixed | $4$ from $5$ raw directions |
@@ -317,7 +373,9 @@ while the $(\bar{\mathbf4},\mathbf1,\mathbf2)$ contributes nothing because $T_{3
 
 **The quantum.** The charge quantum is $e/(N-1)$, and it is $e/3$ because there are three colours; four colours would give quarters. The unit is attained, because the four charges of a quartet are $\tfrac23$, $-\tfrac13$, $0$ and $-1$, and they generate exactly $\tfrac13\mathbb{Z}$.
 
-**The ledger.** $21=15+3+3$ and $15=8+1+6$. Eight of the fifteen are gluons, one is $B-L$, six are leptoquarks. Three of the six are the weak isospin, three are the right-handed weak group.
+**The ledger.** $21=15+3+3$ and $15=8+1+6$. Eight of the fifteen are gluons, one is $B-L$, six are leptoquarks. Three of the six weak generators are the weak isospin, three are the right-handed weak group. The classes are disjoint as generators of the product, not as operators on the carrier: the six weak generators lie inside the fifteen, so the carrier supplies $16=15+1$ and the twenty-one lives on the formal copy.
+
+**The two readings of the nine.** Sorted by what it does to the time line $\mathbb C e_t$, the fifteen is $8$ (annihilate it) $+1$ (act on it as a phase) $+6$ (move it out). The nine are the stabiliser of the line and the maximal compact subalgebra of $\mathfrak{su}(1,3)$; the six are compact in $\mathfrak{su}(4)$ and non-compact in the pseudo-unitary real form. The leptoquark count is a compactness count, and $\mathfrak{su}(4)$ and $\mathfrak{su}(1,3)$ differ on nothing else.
 
 **The abelian factor.** The breaking supplies $\mathrm{U}(1)_{B-L}$ and not $\mathrm{U}(1)_Y$. Hypercharge is a diagonal subgroup of $\mathrm{U}(1)_{B-L}\times\mathrm{U}(1)_{3R}$, so four electroweak generators draw on five frame directions and the fifth is the $Z_R$.
 
@@ -343,7 +401,7 @@ while the $(\bar{\mathbf4},\mathbf1,\mathbf2)$ contributes nothing because $T_{3
 | $Y$ | $T_{3R}+\tfrac12(B-L)$, hypercharge as a combination of two factors |
 | $Q$ | $T_{3L}+T_{3R}+\tfrac12(B-L)$, the electric charge |
 | $\tfrac13\mathbb{Z}$ | the charge lattice, attained by the down quark's $-\tfrac13$ |
-| $\mathfrak m$ | the six off-diagonal generators of $\mathfrak{su}(4)$, the leptoquark directions |
+| $\mathfrak m$ | the six off-diagonal generators of $\mathfrak{su}(4)$, the leptoquark directions; equivalently the six that move $\mathbb C e_t$ out of itself |
 | $\mathfrak z_{\mathfrak{su}(3)}(\mathfrak{su}(4))$ | the centraliser of the colour subalgebra, one-dimensional |
 
 ## Further Reading

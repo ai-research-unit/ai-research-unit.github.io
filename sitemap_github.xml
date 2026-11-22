@@ -2641,6 +2641,22 @@
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-gram-matrix-as-the-only-metric.html</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-two-sided-derivative-and-the-star-eigenvalue.html</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-curved-dirac-operator-and-its-square.html</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-21</lastmod>
   </url>
@@ -2661,6 +2677,10 @@
     <lastmod>2026-11-20</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/horizons-without-a-global-structure.html</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/black-hole-thermodynamics-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-20</lastmod>
   </url>
@@ -2671,6 +2691,10 @@
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.html</loc>
     <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/flrw-in-the-frame-route.html</loc>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-action-problem.html</loc>
@@ -2686,30 +2710,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-biquaternion-basis-of-a-unified-field-fibre-bundle.html</loc>
-    <lastmod>2026-11-20</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/flrw-in-the-frame-route.html</loc>
-    <lastmod>2026-11-20</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/horizons-without-a-global-structure.html</loc>
-    <lastmod>2026-11-20</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-curved-dirac-operator-and-its-square.html</loc>
-    <lastmod>2026-11-20</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-gram-matrix-as-the-only-metric.html</loc>
-    <lastmod>2026-11-20</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.html</loc>
-    <lastmod>2026-11-22</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-two-sided-derivative-and-the-star-eigenvalue.html</loc>
     <lastmod>2026-11-20</lastmod>
   </url>
   <url>
@@ -11915,6 +11915,22 @@
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-symmetric-and-antisymmetric-parts-of-the-operator-space-at-n-2.html</loc>
     <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_maths/introduction-to-the-operators-of-the-biquaternion-algebra-in-m2c.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_maths/operator-chirality-on-the-biquaternion-algebra-in-m2c.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_maths/the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra-in-m2c.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_maths/operators-acting-on-one-side-in-m2c.html</loc>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_maths/the-topology-of-m2c.html</loc>
