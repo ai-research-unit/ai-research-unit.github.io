@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms — Biquaternion Universe</title>
+  <meta name="description" content="The subject. Every quantity of the pair that involves two objects, and every one of them is a matrix of size two: the three pairings of two columns, the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-defining-representation-products-forms-and-norms"><strong>$M_2(\mathbb{C})$ Defining Representation : Products, Forms and Norms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> Every quantity of the pair that involves two objects, and every one of them is a matrix of size two: the three pairings of two columns, the two pairings of two operators, the determinant as a quadratic form and the four norms of an operator. <em>$M_2(\mathbb{C})$ Defining Representation</em> writes the carrier, its basis and the five bases of the operator space; this article writes the pair; the third article, <em>$M_2(\mathbb{C})$ Defining Representation : Operators</em>, writes the two-sided family.</p>
+<p><strong>The result in one line.</strong> The three pairings of two columns have the three Gram matrices $I_2$, $J_2$ and $I_2$, and each of them is the trace of a rank-one operator,
+$$
+B(u,v)=\operatorname{tr}(uv^{\mathsf T}),\qquad
+H(u,v)=\operatorname{tr}(uv^{\dagger}),\qquad
+\omega(u,v)=B(u,J_2v).
+$$</p>
+<p><strong>Three pairings and not one.</strong> There is no canonical isomorphism $V\cong V^{*}$, so a pairing of two columns is a choice; the carrier carries three, and the complex structure prefers none of them. The article keeps the three separate and gives each its Gram matrix, its isometry group and its isotropic set.</p>
+<p><strong>Every object here is a $2\times2$ complex matrix.</strong> The carrier is a complex space of dimension two, an operator is a $2\times2$ complex matrix, a pairing is a $2\times2$ Gram matrix, and a norm is a quadratic function of the four entries. <strong>No object of the article has size four</strong>: the four entries $w_{11},w_{12},w_{21},w_{22}$ are the four coordinates that the whole computation uses, and nothing is read as a quadruple of real numbers.</p>
+<p><strong>The concrete setting.</strong> The carrier is $V=\mathbb{C}^{2}$ with the basis columns
+$$
+e_1=\begin{pmatrix}1\\0\end{pmatrix},\qquad e_2=\begin{pmatrix}0\\1\end{pmatrix},
+\qquad
+u=\begin{pmatrix}u_{\blacktriangle}\\ u_{\blacktriangledown}\end{pmatrix},
+\qquad
+v=\begin{pmatrix}v_{\blacktriangle}\\ v_{\blacktriangledown}\end{pmatrix},
+$$
+and the operator space is $M_2(\mathbb{C})$ with the matrix units $E_{jk}=e_je_k^{\mathsf T}$.</p>
+<p><strong>The order of the article.</strong> The three pairings and their Gram matrices come first (§<em>The Three Pairings and Their Gram Matrices</em>), then the effect of conjugating one argument (§<em>The Pairings with a Conjugated Argument</em>) and the table of what each form sees (§<em>What Each Form Sees</em>). The pairings of two operators follow (§<em>The Pairings of Two Operators</em>), then the determinant as a quadratic form (§<em>The Determinant as a Quadratic Form</em>) and the four norms (§<em>The Four Norms</em>). The last two sections read the column pairings as traces of rank-one operators (§<em>The Factors</em>) and record what the size two buys (§<em>What the Module Size Gives</em>).</p>
+<p><strong>Boundaries.</strong> The carrier, the bases and the five bases of the operator space are <em>$M_2(\mathbb{C})$ Defining Representation</em>; the properties of $H$, $B$ and $\omega$, their isometry groups and their isotropic sets are <em>The Three Canonical Forms on $\mathbb{C}^2$</em>; the two-sided family, its rank and its fibres are <em>$M_2(\mathbb{C})$ Defining Representation : Operators</em>. On the algebra side, <em>$M_2(\mathbb{C})$ Pauli Representation : Products, Forms and Norms</em> carries the same four norms with the product inside.</p>
+<p><strong>Conventions.</strong> The pairing $H$ is linear in the first slot and conjugate-linear in the second, the convention of the whole corpus; $B$ and $\omega$ are complex bilinear, with <strong>no conjugation</strong>. The transpose is $M^{\mathsf T}$, the dagger is $M^{\dagger}=\overline{M}^{\mathsf T}$, and $J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$ is the alternating matrix.</p>
+<h2 id="the-three-pairings-and-their-gram-matrices">The Three Pairings and Their Gram Matrices</h2>
+<p><strong>Three pairings, three matrices, and the matrices are the whole content.</strong></p>
+<p><strong>Definition.</strong> The three canonical pairings of two columns are
+$$
+B(u,v)=u^{\mathsf T}v=u_{\blacktriangle}v_{\blacktriangle}+u_{\blacktriangledown}v_{\blacktriangledown},
+\qquad
+\omega(u,v)=u^{\mathsf T}J_2v=u_{\blacktriangle}v_{\blacktriangledown}-u_{\blacktriangledown}v_{\blacktriangle},
+\qquad
+J_2=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
+$$
+$$
+H(u,v)=u^{\mathsf T}\overline{v}=u_{\blacktriangle}\overline{v_{\blacktriangle}}+u_{\blacktriangledown}\overline{v_{\blacktriangledown}} .
+$$
+<strong>The first two are complex bilinear, the third is linear in the first slot and conjugate-linear in the second</strong>, which is the convention of the whole corpus.</p>
+<p><strong>Proposition (the Gram matrices).</strong> In the basis $(e_1,e_2)$,
+$$
+G_B=\begin{pmatrix}1&0\\0&1\end{pmatrix},\qquad
+G_\omega=\begin{pmatrix}0&1\\-1&0\end{pmatrix},\qquad
+G_H=\begin{pmatrix}1&0\\0&1\end{pmatrix},
+$$
+and each is invertible, of determinant $1$.</p>
+<p><em>Proof.</em> Read the pairings at the basis vectors: $B(e_j,e_k)=\delta_{jk}$ because $e_j^{\mathsf T}e_k$ is the product of the two coordinate columns; $\omega(e_1,e_2)=1$ and $\omega(e_2,e_1)=-1$ by the display; $H(e_j,e_k)=\delta_{jk}$ because $e_j^{\dagger}e_k$ is the same product with a conjugate that does nothing on the entries of the basis. ∎</p>
+<p><strong>Remark (the same matrix twice, and the difference is elsewhere).</strong> The Gram matrices of $B$ and of $H$ are the same array. <strong>The two pairings differ only in the conjugation of the second argument, and the difference shows in the isotropic set and in the isometry group and nowhere in the Gram matrix.</strong> The matrix of $B$ is symmetric and that of $\omega$ is alternating, and those are the two symmetry types that a complex bilinear form can have.</p>
+<p><strong>Proposition (the three identifications with the dual).</strong> Each nondegenerate pairing identifies $V$ with $V^{*}$, and the three identifications are
+$$
+u\longmapsto u^{\mathsf T},\qquad
+u\longmapsto u^{\mathsf T}J_2=(-u_{\blacktriangledown},\ u_{\blacktriangle}),\qquad
+u\longmapsto u^{\dagger}=(\overline{u_{\blacktriangle}},\ \overline{u_{\blacktriangledown}}),
+$$
+with the values $u^{\mathsf T}v$, $u^{\mathsf T}J_2v$ and $\overline{u^{\dagger}v}$. The first two are $\mathbb{C}$-linear and the third is conjugate-linear; <strong>the second is the first rotated by a quarter turn in the coefficient plane.</strong></p>
+<p><em>Proof.</em> The row $u^{\mathsf T}G$ is the functional $v\mapsto u^{\mathsf T}Gv$; with $G=I_2$ and $G=J_2$ it gives the first two rows. The third is the conjugate of the plain product, $u_{\blacktriangle}\overline{v_{\blacktriangle}}+u_{\blacktriangledown}\overline{v_{\blacktriangledown}}=\overline{u^{\dagger}v}$, and $u\mapsto u^{\dagger}$ is conjugate-linear because it conjugates the coordinates. ∎</p>
+<p><strong>The three matrices are the three ways of reading a $2\times2$ matrix as a form</strong>: $I_2$ twice, once without conjugation and once with it, and $J_2$ once. <strong>The alternating one is the determinant of the pair</strong>, $\omega(u,v)=u_{\blacktriangle}v_{\blacktriangledown}-u_{\blacktriangledown}v_{\blacktriangle}$, the $2\times2$ determinant of the two columns.</p>
+<h2 id="the-pairings-with-a-conjugated-argument">The Pairings with a Conjugated Argument</h2>
+<p><strong>Conjugating one argument exchanges two of the three pairings up to conjugation, and conjugating both conjugates the value.</strong></p>
+<p><strong>Proposition (the exchange).</strong> For all $u,v$,
+$$
+B(\bar u,v)=\overline{H(u,v)},\qquad
+H(\bar u,v)=\overline{B(u,v)},\qquad
+B(\bar u,\bar v)=\overline{B(u,v)},\qquad
+H(\bar u,\bar v)=\overline{H(u,v)},\qquad
+\omega(\bar u,\bar v)=\overline{\omega(u,v)}.
+$$</p>
+<p><em>Proof.</em> Entrywise, $B(\bar u,v)=\sum_j\bar u_jv_j=\overline{H(u,v)}$ because $H(u,v)=\sum_j u_j\overline{v_j}$; $H(\bar u,v)=\sum_j\bar u_j\overline{v_j}=\overline{B(u,v)}$; conjugating $B(u,v)=\sum_j u_jv_j$ gives $\sum_j\bar u_j\bar v_j=B(\bar u,\bar v)$, and the same line gives the fourth identity; the fifth is the fourth read on $\omega$, whose coefficients are the same products in the other order. ∎</p>
+<p><strong>Remark (why the two readings of the pair use two forms).</strong> The conjugation is an anti-linear map of the carrier, and it carries $B$ to the conjugate of $H$ and back. <strong>The bilinear cone of the pair uses $B$ and the qubit reading uses $H$, and the two are exchanged by the conjugation</strong>, at the price of conjugating the value.</p>
+<p><strong>Remark (the pairs of arguments).</strong> The three pairings and the two choices of conjugated argument give six bilinear objects; the proposition shows that they are the three and their three conjugates. <strong>There is no seventh object, and no pairing of the carrier is missing from the list.</strong></p>
+<h2 id="what-each-form-sees">What Each Form Sees</h2>
+<p><strong>One table, and the three readings of the pair are one line each of it.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Form</th>
+<th>Isometry group</th>
+<th>Isotropic set</th>
+<th>The reading</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H$</td>
+<td>$\mathrm{U}(2)$</td>
+<td>$\{0\}$</td>
+<td>the qubit, with the pure states as the rank-one projectors</td>
+</tr>
+<tr>
+<td>$B$</td>
+<td>$\mathrm{O}(2,\mathbb{C})$</td>
+<td>two complex lines</td>
+<td>the bilinear cone $u\phi^{\mathsf T}$</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>$\mathrm{SL}_2(\mathbb{C})$</td>
+<td>every complex line</td>
+<td>the spinor and the Lorentz group</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three groups are not the same group and the three geometries are not the same geometry.</strong> The first is compact, the second is the complex orthogonal group $\mathrm{O}(2,\mathbb{C})$, and the third is the double cover of the Lorentz group. <strong>The same carrier carries a compact geometry, a split geometry and a symplectic geometry, and the three pairings are what separates them.</strong></p>
+<p><strong>The isotropic sets separate the forms without any computation.</strong> $H$ has no isotropic vector but $0$, $B$ has the two lines $u_{\blacktriangle}=\pm iu_{\blacktriangledown}$, and $\omega$ has every line because it is alternating in dimension two. <strong>The Gram matrix sees none of this and the isotropic set sees all of it.</strong></p>
+<h2 id="the-pairings-of-two-operators">The Pairings of Two Operators</h2>
+<p><strong>The operator space has two pairings, one bilinear and one Hermitian, and both are read on the four entries of the matrices.</strong></p>
+<p><strong>Definition.</strong> For $X,Y\in M_2(\mathbb{C})$,
+$$
+\langle X,Y\rangle=\operatorname{tr}(X^{\mathsf T}Y),\qquad
+\langle X,Y\rangle_{H}=\operatorname{tr}(X^{\dagger}Y).
+$$</p>
+<p><strong>Proposition (the two pairings in entries).</strong> For $X=\begin{pmatrix}w_{11}&w_{12}\\w_{21}&w_{22}\end{pmatrix}$ and $Y=\begin{pmatrix}z_{11}&z_{12}\\z_{21}&z_{22}\end{pmatrix}$,
+$$
+\langle X,Y\rangle=w_{11}z_{11}+w_{12}z_{12}+w_{21}z_{21}+w_{22}z_{22},\qquad
+\langle X,Y\rangle_{H}=\overline{w_{11}}z_{11}+\overline{w_{12}}z_{12}+\overline{w_{21}}z_{21}+\overline{w_{22}}z_{22},
+$$
+and on the matrix units
+$$
+\langle E_{jk},E_{lm}\rangle=\delta_{jl}\delta_{km}=\langle E_{jk},E_{lm}\rangle_{H}.
+$$
+<strong>Each pairing is the sum of the products of the four entries, taken without conjugation in the first case and with the conjugate of the first factor in the second</strong>, so the two agree exactly when the entries of $X$ are real.</p>
+<p><em>Proof.</em> For the first, $E_{jk}^{\mathsf T}E_{lm}=E_{kj}E_{lm}=\delta_{jl}E_{km}$, whose trace is $\delta_{jl}\delta_{km}$; the expansion of $\operatorname{tr}(X^{\mathsf T}Y)$ is the sum of the four products, because the transpose puts $w_{jk}$ against $z_{jk}$. For the second, the entries of the units are real, so the dagger does nothing on them, and $\operatorname{tr}(X^{\dagger}Y)$ conjugates the first factor entry by entry. ∎</p>
+<p><strong>Proposition (the two properties).</strong> The bilinear pairing is symmetric, complex bilinear and nondegenerate. The Hermitian pairing is conjugate-symmetric in the two slots and positive definite,
+$$
+\langle X,X\rangle_{H}=\lvert w_{11}\rvert^{2}+\lvert w_{12}\rvert^{2}+\lvert w_{21}\rvert^{2}+\lvert w_{22}\rvert^{2}>0\quad(X\neq0).
+$$</p>
+<p><em>Proof.</em> The symmetry of the first is the identity $\operatorname{tr}(X^{\mathsf T}Y)=\operatorname{tr}(Y^{\mathsf T}X)$, read on the entries above, which are four products in the same order in the two arguments. The nondegeneracy: if $\langle X,Y\rangle=0$ for all $Y$ then the four entries of $X$ vanish, because each of the four products appears alone at one of the four units. The conjugate symmetry of the second is $\overline{\langle Y,X\rangle_{H}}=\langle X,Y\rangle_{H}$, entry by entry, and the positivity is the displayed sum of four moduli. ∎</p>
+<p><strong>Remark (the two pairings are not the same pairing).</strong> Both are nondegenerate and both have the four units as an orthogonal family, and <strong>the first is complex bilinear with an isotropic set and the second is positive definite with no isotropic vector but $0$.</strong> The first is the pairing a complex-bilinear computation uses, and the second is the one a Hilbert space uses.</p>
+<p><strong>Remark (the isotropic set of the bilinear pairing).</strong> Since $\langle X,X\rangle=\sum_{jk}w_{jk}^{2}$, the isotropic set is the cone $\sum_{jk}w_{jk}^{2}=0$ in the four coefficients. <strong>It is not the rank-one cone</strong> $\det X=0$, which is the isotropic set of the polar form of the determinant (§<em>The Determinant as a Quadratic Form</em>); the two cones meet: the matrix $\begin{pmatrix}1&i\\0&0\end{pmatrix}$ lies on both and is of rank one, while $E_{11}+iE_{22}$ lies on the first only.</p>
+<h2 id="the-determinant-as-a-quadratic-form">The Determinant as a Quadratic Form</h2>
+<p><strong>The determinant is the second quadratic invariant of an operator, and its polar form is nondegenerate.</strong></p>
+<p><strong>Definition.</strong> The <strong>polar form</strong> of the determinant is
+$$
+b(X,Y)=\tfrac12\bigl(\det(X+Y)-\det X-\det Y\bigr).
+$$</p>
+<p><strong>Proposition (the polar form).</strong> For $X=(w_{jk})$ and $Y=(z_{jk})$,
+$$
+b(X,Y)=\tfrac12\bigl(w_{11}z_{22}+z_{11}w_{22}-w_{12}z_{21}-z_{12}w_{21}\bigr),
+$$
+so the four products $w_{11}z_{22}$, $w_{22}z_{11}$, $-w_{12}z_{21}$ and $-w_{21}z_{12}$ are the whole form. <strong>It is symmetric and complex bilinear, and the cone $\mathcal{C}=\{\det=0\}$ is its isotropic set.</strong></p>
+<p><em>Proof.</em> Expand $\det(X+Y)=(w_{11}+z_{11})(w_{22}+z_{22})-(w_{12}+z_{12})(w_{21}+z_{21})$, subtract $\det X$ and $\det Y$, and halve: the two linear terms and the four cross terms are exactly the display. The symmetry is the symmetry of the four products under $X\leftrightarrow Y$, and the isotropy is $\det X=b(X,X)=0$. ∎</p>
+<p><strong>Proposition (nondegeneracy, read on four functionals).</strong> The form $b$ is nondegenerate, and the four functionals $b(I_2,\cdot)$, $b(E_{11}-E_{22},\cdot)$, $b(E_{12},\cdot)$ and $b(E_{21},\cdot)$ are independent and read
+$$
+\tfrac12\operatorname{tr}X,\qquad
+\tfrac12\bigl(w_{22}-w_{11}\bigr),\qquad
+-\tfrac12 w_{21},\qquad
+-\tfrac12 w_{12}.
+$$</p>
+<p><em>Proof.</em> With $Y$ the four operators in turn, the display gives the four functionals; their common kernel is the set of $X$ with $w_{jk}=0$ for all four entries, because $\operatorname{tr}X$, $w_{22}-w_{11}$, $w_{21}$ and $w_{12}$ determine the four entries. ∎</p>
+<p><strong>Remark (the cone is not a linear subspace and it is not the pairing cone).</strong> $\mathcal{C}$ is the set of operators of rank at most one, a cone of complex dimension three in the four-dimensional operator space, and it is the isotropic set of $b$. <strong>The bilinear pairing of §<em>The Pairings of Two Operators</em> has a different isotropic cone</strong>, $\sum_{jk}w_{jk}^{2}=0$, and the two are distinct: $E_{11}+iE_{22}$ lies on the second and has determinant $i\neq0$.</p>
+<p><strong>Remark (the polar form and the adjugate).</strong> On the two diagonal entries the form pairs $w_{11}$ with $w_{22}$, and on the two off-diagonal entries it pairs $w_{12}$ with $w_{21}$ and inserts a minus sign, which is the sign pattern of the adjugate $\operatorname{adj}X=\begin{pmatrix}w_{22}&-w_{12}\\-w_{21}&w_{11}\end{pmatrix}$. <strong>The trace of $X\operatorname{adj}Y$ is twice the polar form</strong>, $\operatorname{tr}(X\operatorname{adj}Y)=2b(X,Y)$, and that is the whole of the form.</p>
+<h2 id="the-four-norms">The Four Norms</h2>
+<p><strong>An operator carries four quadratic invariants, and a column carries two.</strong></p>
+<p><strong>Proposition (the four norms of an operator).</strong> For $X=\begin{pmatrix}w_{11}&w_{12}\\w_{21}&w_{22}\end{pmatrix}$ and $\operatorname{adj}X=\begin{pmatrix}w_{22}&-w_{12}\\-w_{21}&w_{11}\end{pmatrix}$,
+$$
+\tfrac12\operatorname{tr}(X^{2})=\tfrac12\bigl(w_{11}^{2}+2w_{12}w_{21}+w_{22}^{2}\bigr),
+\qquad
+\det X=w_{11}w_{22}-w_{12}w_{21},
+$$
+$$
+\tfrac12\operatorname{tr}(X^{\dagger}X)=\tfrac12\sum_{j,k}\lvert w_{jk}\rvert^{2},
+\qquad
+\tfrac12\operatorname{tr}(\operatorname{adj}X\,X^{\dagger})=\operatorname{Re}\bigl(w_{11}\overline{w_{22}}\bigr)-\tfrac12\bigl(\lvert w_{12}\rvert^{2}+\lvert w_{21}\rvert^{2}\bigr).
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Norm</th>
+<th>Formula</th>
+<th>Values in</th>
+<th>Definite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the plain norm</td>
+<td>$\tfrac12\operatorname{tr}(X^{2})$</td>
+<td>$\mathbb{C}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the determinant</td>
+<td>$\det X$</td>
+<td>$\mathbb{C}$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the Hilbert–Schmidt norm</td>
+<td>$\tfrac12\operatorname{tr}(X^{\dagger}X)$</td>
+<td>$\mathbb{R}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the Krein-type form</td>
+<td>$\tfrac12\operatorname{tr}(\operatorname{adj}X\,X^{\dagger})$</td>
+<td>$\mathbb{R}$</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The first is the square of $X$ read on the entries, the second is the definition, the third is $\operatorname{tr}(X^{\dagger}X)=\sum_{j,k}\lvert w_{jk}\rvert^{2}$, and the fourth is the trace of $\operatorname{adj}X\,X^{\dagger}$, whose diagonal entries are $w_{22}\overline{w_{11}}-\lvert w_{12}\rvert^{2}$ and $w_{11}\overline{w_{22}}-\lvert w_{21}\rvert^{2}$. ∎</p>
+<p><strong>Remark (only one is positive).</strong> The Hilbert–Schmidt norm is the only one of the four that is positive definite; the plain norm and the determinant are complex-valued, and the Krein-type form is real and indefinite, taking the value $1$ at $I_2$ and the value $-\tfrac12$ at $E_{12}$. <strong>The four are distinct functions of the four entries, and the table is the whole list.</strong></p>
+<p><strong>The two norms of a column.</strong> For a column $u$ the two invariants are
+$$
+H(u,u)=\lvert u_{\blacktriangle}\rvert^{2}+\lvert u_{\blacktriangledown}\rvert^{2},\qquad
+B(u,u)=u_{\blacktriangle}^{2}+u_{\blacktriangledown}^{2},
+$$
+of which the first is definite and the second has the isotropic lines $u_{\blacktriangle}=\pm iu_{\blacktriangledown}$. <strong>The column has two and the operator has four</strong>, and the extra two of the operator are the two off-diagonal invariants.</p>
+<h2 id="the-factors">The Factors</h2>
+<p><strong>The pairings of the columns are the traces of the rank-one operators, and the two levels are one level.</strong></p>
+<p><strong>Proposition (the three pairings as traces).</strong> For all $u,v$,
+$$
+B(u,v)=\operatorname{tr}(uv^{\mathsf T}),\qquad
+H(u,v)=\operatorname{tr}(uv^{\dagger}),\qquad
+\omega(u,v)=B(u,J_2v)=\operatorname{tr}\bigl(u\,(J_2v)^{\mathsf T}\bigr).
+$$</p>
+<p><em>Proof.</em> The matrix $uv^{\mathsf T}$ has entries $u_jv_k$, and its trace is $\sum_j u_jv_j=B(u,v)$. The matrix $uv^{\dagger}$ has entries $u_j\bar v_k$, and its trace is $\sum_j u_j\bar v_j=H(u,v)$. The third is the definition of $\omega$ together with the first identity applied to $J_2v$. ∎</p>
+<p><strong>Remark (the level of the object and the level of the pair).</strong> The operator pairings of §<em>The Pairings of Two Operators</em> are forms on the space of operators; the three pairings here are the same construction read on the rank-one members. <strong>The carrier's forms are the traces of the cone</strong>, and a pairing of two columns is a pairing of two rank-one operators with the trace taken.</p>
+<h2 id="what-the-module-size-gives">What the Module Size Gives</h2>
+<p><strong>Four statements, each with its shape at this size and its shape at the algebra's size.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Statement</th>
+<th>Here</th>
+<th>In the algebra pair</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the determinant of a rank-one member</td>
+<td>$0$, identically</td>
+<td>the quaternionic norm, nonzero</td>
+</tr>
+<tr>
+<td>the trace of a rank-one member</td>
+<td>$\phi(u)$, a product of two coordinates</td>
+<td>$2Q_t$</td>
+</tr>
+<tr>
+<td>the four norms on one element</td>
+<td>the plain, the determinant, the Hilbert–Schmidt and the Krein-type forms</td>
+<td>the same four, with the algebra product inside</td>
+</tr>
+<tr>
+<td>the two pairings of two elements</td>
+<td>$\operatorname{tr}(uv^{\mathsf T})$ and $\operatorname{tr}(uv^{\dagger})$</td>
+<td>the four forms $\tfrac12\operatorname{tr}(A_1A_2)$ and its three variants</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The trace and the determinant of a member of the cone are the two elementary symmetric functions of the pair $(u,\phi)$</strong>, and this is exact at this size only: at the size four the determinant of a two-sided operator is a quartic in the coordinates. <strong>The module reading is the one in which the rank is one by construction</strong>, and the algebra reading is the one in which the rank is a condition.</p>
+<h2 id="summary">Summary</h2>
+<p>The carrier carries three pairings — the symmetric $B$, the alternating $\omega$ and the Hermitian $H$ — with the Gram matrices $I_2$, $J_2$ and $I_2$ in the basis $(e_1,e_2)$; $B$ and $H$ have the same array and differ in the conjugation of the second argument, which separates them by their isotropic sets, $\{0\}$ for $H$ and two lines for $B$. Every one of the objects is a $2\times2$ complex matrix or a quadratic function of its four entries.</p>
+<p>The operator space carries the bilinear pairing $\operatorname{tr}(X^{\mathsf T}Y)$ and the Hermitian pairing $\operatorname{tr}(X^{\dagger}Y)$, both read as sums of the four products of entries, the second with the conjugate of the first factor; the first is nondegenerate with the isotropic cone $\sum w_{jk}^{2}=0$, and the second is positive definite.</p>
+<p>An operator carries four quadratic invariants, of which only the Hilbert–Schmidt norm is positive definite; a column carries two, of which only $H$ is definite. The column pairings are the traces of the rank-one operators, $B(u,v)=\operatorname{tr}(uv^{\mathsf T})$ and $H(u,v)=\operatorname{tr}(uv^{\dagger})$, and the determinant's polar form has the cone of rank-one operators as its isotropic set.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$B(u,v)=u^{\mathsf T}v$</td>
+<td>the symmetric bilinear pairing, Gram $I_2$</td>
+</tr>
+<tr>
+<td>$\omega(u,v)=u^{\mathsf T}J_2v$</td>
+<td>the alternating pairing, Gram $J_2$</td>
+</tr>
+<tr>
+<td>$H(u,v)=u^{\mathsf T}\overline{v}$</td>
+<td>the Hermitian pairing, Gram $I_2$, conjugate-linear in the second slot</td>
+</tr>
+<tr>
+<td>$J_2$</td>
+<td>the alternating matrix $\begin{pmatrix}0&1\\-1&0\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\operatorname{tr}(X^{\mathsf T}Y)$</td>
+<td>the bilinear pairing of two operators</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle_{H}=\operatorname{tr}(X^{\dagger}Y)$</td>
+<td>the Hermitian pairing of two operators</td>
+</tr>
+<tr>
+<td>$b(X,Y)$</td>
+<td>the polar form of the determinant</td>
+</tr>
+<tr>
+<td>$w_{jk}$, $z_{jk}$</td>
+<td>the entries of $X$ and of $Y$</td>
+</tr>
+<tr>
+<td>$\operatorname{adj}X$</td>
+<td>the adjugate $\begin{pmatrix}w_{22}&-w_{12}\\-w_{21}&w_{11}\end{pmatrix}$</td>
+</tr>
+<tr>
+<td>$E_{jk}=e_je_k^{\mathsf T}$</td>
+<td>the matrix units</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p><em>$M_2(\mathbb{C})$ Defining Representation</em> is the first article of the trio: the two basis vectors, the two generators, the five bases of the operator space and the four readings. <em>$M_2(\mathbb{C})$ Defining Representation : Operators</em> is the third: the two-sided family $u\phi^{\mathsf T}$, its rank and its fibres.</p>
+<p><em>The Three Canonical Forms on $\mathbb{C}^2$</em> proves the properties of $H$, $B$ and $\omega$, their isometry groups and their isotropic sets. <em>Duo-Complex Numbers</em> fixes the space, its two scalar structures, the complex structure and the norm, and is the article of the category that this trio reads through matrices.</p>
+<p>On the algebra side, <em>$M_2(\mathbb{C})$ Pauli Representation : Products, Forms and Norms</em> carries the same four norms and the same four forms on the algebra $\mathbb{B}\cong M_2(\mathbb{C})$, with the product inside.</p>
+<p>On the general theory, <em>Bilinear Forms</em> and <em>The Sesquilinear Form and the Conjugation</em> carry the Gram matrix and the classification, <em>The Determinant and Alternating Forms</em> carries the determinant as a form, and <em>Product and Form Conventions</em> the glyphs and the conventions of the corpus.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

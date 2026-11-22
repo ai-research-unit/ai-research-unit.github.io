@@ -71,7 +71,7 @@
       <div class="article-body">
         <h1 id="the-meaning-of-math0-in-the-endomorphisms-of-the-biquaternion-algebra"><strong>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The question.</strong> The corpus writes $\mathrm{SU}(3)$ in the $\mathfrak{su}(3)$ articles of the $M_3(\mathbb{C})$ rung and in the electroweak and strong sections, and it never says what the group is <em>inside the biquaternion algebra</em>. This note answers that: it names the subspace of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ that is $\mathfrak{su}(3)$, writes its eight generators as products of left and right multiplications, and states in operator language what the two defining conditions — anti-Hermitian and traceless — mean.</p>
+<p><strong>The question.</strong> The corpus writes $\mathrm{SU}(3)$ in the $\mathfrak{su}(3)$ articles of the $M_3(\mathbb{C})$ rung and in the electroweak and strong sections, and it never says what the group is <em>inside the biquaternion algebra</em>. This note answers that: it names the subspace of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ that is $\mathfrak{su}(3)$, writes its eight generators as products of left and right multiplications, and states in operator language what the two defining conditions — anti-Hermitian and of zero array trace — mean.</p>
 <p><strong>The answer in one line.</strong></p>
 <p>$$
 \boxed{\;
@@ -115,7 +115,7 @@ $$</p>
 \qquad\text{hence}\qquad
 \operatorname{tr}M=4\,c_{tt}(M)\;}
 $$</p>
-<p>so that an operator is traceless exactly when its coefficient on the single word $e_t[\,]e_t$ vanishes. The identity is the word $e_t[\,]e_t$ itself, of trace $4$; the projector onto the unit line inside $\mathbb{B}$ has length four.</p>
+<p>so that the array trace of an operator is its coefficient on the single word $e_t[\,]e_t$, and the operator is of zero trace exactly when that coefficient vanishes. The identity is the word $e_t[\,]e_t$ itself, of trace $4$; the projector onto the unit line inside $\mathbb{B}$ has length four.</p>
 <h2 id="the-corner-where-the-group-lives">The Corner: Where the Group Lives</h2>
 <p><strong>The split.</strong> The unit singles out a line, and its Hermitian orthogonal is the vector part:</p>
 <p>$$
@@ -297,7 +297,7 @@ $$</p>
 <p>$$
 \operatorname{tr}M=0\quad\Longleftrightarrow\quad c_{tt}(M)=0 ,
 $$</p>
-<p>and every generator of the table is traceless for the same reason: <strong>none of them occupies the slot $e_t[\,]e_t$</strong>. A word $a[\,]b$ contributes to the trace only through $\mathrm{Sc}(a)\mathrm{Sc}(b)$, so a word with a non-scalar factor on either side is invisible to the trace, and a sum of two such words is traceless even though neither factor is.</p>
+<p>and every generator of the table is of zero array trace for the same reason: <strong>none of them occupies the slot $e_t[\,]e_t$</strong>. A word $a[\,]b$ contributes to the trace only through $\mathrm{Sc}(a)\mathrm{Sc}(b)$, so a word with a non-scalar factor on either side is invisible to the trace, and a sum of two such words has zero array trace even though neither factor is.</p>
 <p><strong>What the condition removes.</strong> Inside the corner, the anti-Hermitian and unit-killing operators form $\mathfrak{u}(3)$, of dimension nine, and the ninth direction is $iP$, the projector onto $B_V$ multiplied by $i$. It is the only one of the nine that needs the unit word, its length is four, and its trace is $3i$. Tracelessness is therefore not a technicality: it is exactly the deletion of the $U(1)$ that a stabilizer of a line always carries, and it is the difference between "the group that fixes the unit line" and "the group that acts on the vector part with determinant one".</p>
 <p><strong>The operator-level reading of the pair of conditions.</strong> Putting the two sections together:</p>
 <p>$$
@@ -745,7 +745,7 @@ $$</p>
 \mathfrak u(3)=\mathfrak{su}(3)\oplus\mathbb R\,iP_V,\qquad 9=8+1,
 $$</p>
 <p>a direct sum of Lie algebras, verified: $iP_V$ commutes with all eight generators and with itself.</p>
-<p><strong>Its geometry on the carrier.</strong> $\exp(\theta\,iP_V)=\operatorname{diag}(1,e^{i\theta},e^{i\theta},e^{i\theta})$. The unit is untouched and the whole vector part receives one common phase. On the projective space $\mathbb P(B_V)$ this is the identity: it changes the length and the phase of the vector part, not its direction. That is the geometric meaning of the $\mathrm{u}(1)$ here — <strong>the common phase of the vector part</strong> — and it is the one direction that the traceless condition deletes, since a common phase on a three-dimensional space has trace $3i\theta$ and no traceless element can produce it.</p>
+<p><strong>Its geometry on the carrier.</strong> $\exp(\theta\,iP_V)=\operatorname{diag}(1,e^{i\theta},e^{i\theta},e^{i\theta})$. The unit is untouched and the whole vector part receives one common phase. On the projective space $\mathbb P(B_V)$ this is the identity: it changes the length and the phase of the vector part, not its direction. That is the geometric meaning of the $\mathrm{u}(1)$ here — <strong>the common phase of the vector part</strong> — and it is the one direction that the zero-trace condition deletes, since a common phase on a three-dimensional space has trace $3i\theta$ and no scalar-free element can produce it.</p>
 <p><strong>Its determinant, and the factor three.</strong> $\det\operatorname{diag}(1,G)=\det G$, so on the circle</p>
 <p>$$
 \det\exp(\theta\,iP_V)=e^{3i\theta}.
@@ -770,7 +770,7 @@ $$</p>
 <p>$$
 u_a=\tfrac{i}{2}\bigl(L_{e_t}R_{e_t}+L_{e_a}R_{e_a}-L_{e_b}R_{e_b}-L_{e_c}R_{e_c}\bigr)\qquad\text{(wrong)}
 $$</p>
-<p>and justifies it by "every word $L_{e_\mu}R_{e_\nu}$ has non-zero trace on the unit, specifically $\pm1$ in the $(t,t)$ slot". Both halves are wrong. Only $L_{e_t}R_{e_t}$ has nonzero trace, namely $4$; the other fifteen words are traceless, verified exactly, and the diagonal words $E_a$ in particular have trace $0$ because their display is $(-1,-1,1,1)$. The correct form is</p>
+<p>and justifies it by "every word $L_{e_\mu}R_{e_\nu}$ has non-zero trace on the unit, specifically $\pm1$ in the $(t,t)$ slot". Both halves are wrong. Only $L_{e_t}R_{e_t}$ has nonzero trace, namely $4$; the other fifteen words are of zero array trace, verified exactly, and the diagonal words $E_a$ in particular have trace $0$ because their display is $(-1,-1,1,1)$. The correct form is</p>
 <p>$$
 u_a=\tfrac{i}{4}\bigl(E_t+3E_a-E_b-E_c\bigr),
 \qquad\text{coefficients}\ \tfrac{i}{4},\tfrac{3i}{4},-\tfrac{i}{4},-\tfrac{i}{4},
@@ -780,7 +780,7 @@ $$</p>
 <p><strong>What the extra word buys.</strong> The fourth word is not waste. It is the price of deleting the $(t,t)$ entry, and that entry is what every diagonal word carries: $E_t$ contributes $4$, $E_a$ contributes $0$. Balancing $E_t$ against the three $E_a$, with signs that make one axis negative and two positive, uses all four at once, with coefficients $\tfrac14,\tfrac34,-\tfrac14,-\tfrac14$. Three of them cannot do the job: the unit entry has to be brought to zero, and $E_t$ is the only diagonal word with a nonzero trace, so the coefficient of $E_t$, the cancellation and the one negative sign have to be arranged simultaneously.</p>
 <h3 id="what-the-lift-does-and-does-not-do">What the lift does, and does not, do</h3>
 <p><strong>It does.</strong> It supplies one dimension, exactly one, and that dimension is both the missing third row of the count and the missing trace. It makes the three diagonal generators independent while keeping equal weights, with real coefficients. It splits $\mathfrak u(3)$ into three orthogonal families of three, permuted by $P$ in three free orbits, with the equal-weight family summing to the centre. In that limited and precise sense the slogan holds: among <strong>real</strong> bases, $\mathfrak u(3)$ has one on which $\mathbb Z_3$ acts by permutations with no pivot and no unequal weights, and $\mathfrak{su}(3)$ has none — its only equal-weight objects being the complex clocks of <em>Way out 3</em> and a dependent triple.</p>
-<p><strong>It does not.</strong> It does not restore a symmetry that was broken, because $P$ is an element of $\mathrm{SU}(3)$ with $\det P=1$ and already cycles $h_x\to h_y\to h_z$; what was missing was independence and equal weights in a basis, not the symmetry. It does not change the dynamics, because $iP_V$ is central, appears in no structure constant, and is not a derivation: every inner derivation $L_{\tilde Q}-R_{\tilde Q}$ is traceless while $\operatorname{tr}iP_V=3i$. It does not put $\mathrm{U}(3)$ inside $\mathrm{SU}(4)$, since $\det\operatorname{diag}(1,G)=\det G$ is free. And it does not soften the corpus's ceiling, which concerns the compact algebra of dimension four: a central phase on $B_V$ is an operator on the carrier and not an element of $\mathbb B$.</p>
+<p><strong>It does not.</strong> It does not restore a symmetry that was broken, because $P$ is an element of $\mathrm{SU}(3)$ with $\det P=1$ and already cycles $h_x\to h_y\to h_z$; what was missing was independence and equal weights in a basis, not the symmetry. It does not change the dynamics, because $iP_V$ is central, appears in no structure constant, and is not a derivation: the array of every inner derivation $L_{\tilde Q}-R_{\tilde Q}$ has zero trace while $\operatorname{tr}iP_V=3i$. It does not put $\mathrm{U}(3)$ inside $\mathrm{SU}(4)$, since $\det\operatorname{diag}(1,G)=\det G$ is free. And it does not soften the corpus's ceiling, which concerns the compact algebra of dimension four: a central phase on $B_V$ is an operator on the carrier and not an element of $\mathbb B$.</p>
 <p><strong>The one-sentence summary.</strong> Tracelessness removes the diagonal direction of dimension one whose trace is $3i$; that direction is the common phase of the vector part; and its removal is what makes the third diagonal orbit dependent and its members unequal, so that removing the condition is what lets the third orbit become a basis with equal weights — at the price of four Conway words per generator.</p>
 <h2 id="verification">Verification</h2>
 <p>All statements below were checked numerically on the sixteen Conway words in the coefficient basis, with $M(e_k)=-i\sigma_k$ for the matrix display and the products of the frame $e_xe_y=e_z$ and so on.</p>
@@ -862,7 +862,7 @@ $$</p>
 </tr>
 <tr>
 <td>$iP_V$ is not an inner derivation</td>
-<td>every $L_{\tilde Q}-R_{\tilde Q}$ traceless, $\operatorname{tr}iP_V=3i$</td>
+<td>the array of every $L_{\tilde Q}-R_{\tilde Q}$ has zero trace, $\operatorname{tr}iP_V=3i$</td>
 </tr>
 <tr>
 <td>$u_a=\tfrac{i}{4}(E_t+3E_a-E_b-E_c)=K_a+\tfrac13iP_V$, length $4$</td>

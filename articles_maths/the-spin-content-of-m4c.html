@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin Content of $M_4(\mathbb{C})$: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The question. is a sixteen-dimensional algebra, and it is the complex matrix algebra nearest to the biquaternion algebra, since sits inside it as a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-content-of-math0-spin-math1-on-the-module-and-math2-on-the-algebra"><strong>The Spin Content of $M_4(\mathbb{C})$: Spin $\tfrac32$ on the Module and $0,1,2,3$ on the Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> $M_4(\mathbb{C})$ is a sixteen-dimensional algebra, and it is the complex matrix algebra nearest to the biquaternion algebra, since $\mathbb{B}\cong M_2(\mathbb{C})$ sits inside it as a subalgebra. Which spins does it carry, and under which group?</p>
+<p><strong>The answer in one line.</strong> Under the principal copy of $SU(2)$, the module $\mathbb{C}^4$ carries spin $\tfrac32$ and the algebra carries $0,1,2,3$,</p>
+<p>$$
+M_4(\mathbb{C})=V_3\oplus V_2\oplus V_1\oplus V_0,\qquad 7+5+3+1=16,\qquad \mathfrak{sl}_4(\mathbb{C})=V_3\oplus V_2\oplus V_1,
+$$</p>
+<p>and under the three other natural groups the same sixteen dimensions give three other lists, the longest chain being $1+3+3+9$ for the factorised copy.</p>
+<p><strong>Why the article is needed.</strong> The number $\tfrac32$ appears nowhere in the biquaternion category, and the number $3$ appears nowhere above $1$. Both are present here, on the first matrix algebra larger than $\mathbb{B}$. The article also settles a question that the phrase "the spins of $M_4(\mathbb{C})$" provokes: the algebra alone has no spins, and each group gives a different list.</p>
+<p><strong>Boundaries.</strong> The general statement is <em>The Spin Decomposition of $M_n(\mathbb{C})$</em>, of which this article is the case $n=4$. The factorisation $M_4\cong M_2\otimes M_2$ is <em>The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</em>. The two-sided reading of the biquaternion algebra is <em>Operator Chirality on the Biquaternion Algebra</em>. The biquaternion row, that is $n=2$, is the series <em>The Spin-Zero Centre Subspace</em>, <em>The Spin-Half Bispinors Spaces</em>, <em>The Spin-One Anti-Hermitian Subspace</em>.</p>
+<p><strong>Conventions.</strong> $V_s$ is the carrier of spin $s$, of complex dimension $2s+1$, with weights $-s,\dots,s$. A pair $(j_1,j_2)$ denotes the carrier of spin $j_1$ for the first factor and $j_2$ for the second of a product group. The principal copy of $SU(2)$ is the image of $\operatorname{Sym}^{3}$, so that $\mathbb{C}^4=V_{3/2}$. The action on the algebra is conjugation, $X\mapsto gXg^{-1}$.</p>
+<h2 id="the-module">The Module</h2>
+<h3 id="four-weights-one-carrier">Four Weights, One Carrier</h3>
+<p><strong>Proposition.</strong> Under the principal copy, $\mathbb{C}^4\cong V_{3/2}$; the weights of $J_z$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, all distinct, and the module is irreducible.</p>
+<p><em>Proof.</em> The monomials $u^3,u^2v,uv^2,v^3$ span $\operatorname{Sym}^3\mathbb{C}^2$ and carry the weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$. The lowering operator connects consecutive monomials with nonzero coefficients, so the module is generated by the highest weight vector.</p>
+<p><strong>The label of the module is the half-integer.</strong> Since $2j=3$ is odd, $-\mathrm{I}$ acts as $-1$ and the copy is faithful: $\mathbb{C}^4$ is a genuine spinorial module, not a module of $SO(3)$. The label $\tfrac32$ is not available at $n=2$ or $n=3$ and is available here for the first time among the categories $M_n(\mathbb{C})$.</p>
+<h3 id="the-spin-of-the-module-is-not-in-the-algebra">The Spin of the Module Is Not in the Algebra</h3>
+<p><strong>Proposition.</strong> No carrier of spin $\tfrac32$ occurs in $M_4(\mathbb{C})$.</p>
+<p><em>Proof.</em> The decomposition of the algebra, proved below, has integer labels $0,1,2,3$. A carrier of spin $\tfrac32$ has dimension four and weights $\pm\tfrac32,\pm\tfrac12$, and no such string of weights occurs in the weight multiset $\{0^{4},\pm1^{3},\pm2^{2},\pm3\}$ of $\operatorname{ad}_{J_z}$.</p>
+<p><strong>The reading.</strong> The module has spin below the top of the algebra. This is general: the module is $V_j$ and the algebra is $\bigoplus_{k\le2j}V_k$, so the top carrier of the algebra has twice the spin of the module, $2j=n-1$ against $j$, and the module is halfway up the chain, not at its top.</p>
+<h2 id="the-decomposition-of-the-algebra">The Decomposition of the Algebra</h2>
+<h3 id="the-theorem">The Theorem</h3>
+<p><strong>Theorem.</strong> For the principal copy of $\mathfrak{su}_2$ in $\mathfrak{gl}_4$,</p>
+<p>$$
+M_4(\mathbb{C})=V_3\oplus V_2\oplus V_1\oplus V_0,\qquad
+\mathfrak{sl}_4(\mathbb{C})=V_3\oplus V_2\oplus V_1,
+$$</p>
+<p>with dimensions $7+5+3+1=16$ and $7+5+3=15$.</p>
+<p><em>Proof.</em> The module is $V_{3/2}$ and the algebra is $\mathbb{C}^4\otimes(\mathbb{C}^4)^{*}\cong V_{3/2}\otimes V_{3/2}$, by the identification of the general article. The Clebsch–Gordan rule with $j=k=\tfrac32$ gives $\bigoplus_{l=0}^{3}V_l$, each summand once, and the traceless part removes the unique invariant line, which is the carrier $V_0$.</p>
+<h3 id="the-weights-and-the-reading">The Weights and the Reading</h3>
+<p><strong>The weight multiset.</strong> The eigenvalues of $\operatorname{ad}_{J_z}$ are the differences of the weights $\pm\tfrac32,\pm\tfrac12$, that is $0$ four times, $\pm1$ three times, $\pm2$ twice and $\pm3$ once. Reading the strings from the top gives $V_3$, then $V_2$, then $V_1$, then $V_0$.</p>
+<p><strong>The four invariant subspaces.</strong> Each carrier is invariant and irreducible, so the algebra has four invariant complex subspaces of dimensions $7,5,3,1$ under the principal copy. None of them is an ideal, and none of them is closed under multiplication; the product of two carriers is governed by the truncated Clebsch–Gordan rule and not by a grading.</p>
+<h3 id="the-two-halves">The Two Halves</h3>
+<p><strong>Proposition.</strong> Neither the symmetric nor the antisymmetric half of $M_4$ is invariant under the principal copy.</p>
+<p><em>Proof.</em> The Cartan element alone moves the halves: for $J_z=\operatorname{diag}\bigl(\tfrac32,\tfrac12,-\tfrac12,-\tfrac32\bigr)$,</p>
+<p>$$
+[J_z,E_{01}+E_{10}]=E_{01}-E_{10},
+$$</p>
+<p>a symmetric matrix carried to an antisymmetric one. The generator does not preserve the splitting, so no element of the copy does.</p>
+<p><strong>What does split by parity.</strong> The symmetric square of the module splits as $V_3\oplus V_1$ and its alternating square as $V_2\oplus V_0$, with dimensions $10=7+3$ and $6=5+1$. That is the parity rule $k\equiv2j\pmod2$, here $k$ odd, for $\operatorname{Sym}^{2}$, computed with the action $g\mapsto\operatorname{Sym}^2g$. It is a statement about the module and not about the symmetric matrices of the algebra, and the two splittings of the sixteen dimensions are different splittings, neither refining the other.</p>
+<h2 id="the-four-carrier-lists-of-one-algebra">The Four Carrier Lists of One Algebra</h2>
+<p>Four groups act naturally on $M_4(\mathbb{C})$ by conjugation, and each gives its own list. All four were computed from the eigenvalues of the corresponding Cartan generator on the sixteen-dimensional operator space.</p>
+<h3 id="the-lists">The Lists</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>carriers</th>
+<th>dimensions</th>
+<th>diagonal content</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>principal $SU(2)$, module $\operatorname{Sym}^3$</td>
+<td>$V_3,V_2,V_1,V_0$</td>
+<td>$7+5+3+1$</td>
+<td>itself</td>
+</tr>
+<tr>
+<td>full $U(4)$</td>
+<td>$\mathbb{C}\mathrm{I}$ and $\mathfrak{sl}_4$</td>
+<td>$1+15$</td>
+<td>$V_0$ and an irreducible</td>
+</tr>
+<tr>
+<td>factorised $SU(2)\times SU(2)$ on $\mathbb{C}^2\otimes\mathbb{C}^2$</td>
+<td>$(0,0),(1,0),(0,1),(1,1)$</td>
+<td>$1+3+3+9$</td>
+<td>$V_2\oplus3V_1\oplus2V_0$</td>
+</tr>
+<tr>
+<td>block diagonal $SU(2)\times SU(2)$ on $S_+\oplus S_-$</td>
+<td>$2(\tfrac12,\tfrac12),(1,0),(0,1),2(0,0)$</td>
+<td>$8+3+3+2$</td>
+<td>$4V_1\oplus4V_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The irreducibility of the traceless part.</strong> Under $U(4)$ the fifteen traceless dimensions form one carrier. The check is the commutant: the operators commuting with the adjoint action on $\mathfrak{sl}_4$ form a one-dimensional space, so the module is irreducible.</p>
+<p><strong>The two factorised readings.</strong> The factorised copy acts through $\mathbb{C}^4=\mathbb{C}^2\otimes\mathbb{C}^2$, which is the module of the Kronecker factorisation; the block copy acts through $\mathbb{C}^4=S_+\oplus S_-$, which is the splitting into two chiral halves. The first is the reading of the two-sided operators of the biquaternion algebra, one factor for $L$ and one for $R$; the second is the reading of the Peirce corners. They are different actions of different groups and they give different lists.</p>
+<h3 id="which-spin-appears-in-which-reading">Which Spin Appears in Which Reading</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>spin</th>
+<th>principal</th>
+<th>$U(4)$</th>
+<th>factorised</th>
+<th>block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>yes, $V_3$</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>yes, $V_2$</td>
+<td>no</td>
+<td>yes, in $(1,1)$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\tfrac32$</td>
+<td>module only</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>yes, $V_1$</td>
+<td>no</td>
+<td>yes, three times</td>
+<td>yes, four times</td>
+</tr>
+<tr>
+<td>$\tfrac12$</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>yes, in the corners</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>yes, $V_0$</td>
+<td>yes</td>
+<td>yes, twice</td>
+<td>yes, four times</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table is the answer to the ambiguity.</strong> Spin $3$ belongs to the principal reading alone. Spin $2$ belongs to the factorised reading alone. Half-integers appear in the algebra only in the block reading, and only in the two off-diagonal corners $\operatorname{Hom}(S_-,S_+)$ and $\operatorname{Hom}(S_+,S_-)$. The full unitary group sees no spin at all beyond the trivial label.</p>
+<p><strong>The diagonal contents agree with the Clebsch–Gordan rule.</strong> For the factorised reading, $(1,1)\cong V_2\oplus V_1\oplus V_0$ and the single copies $(1,0)$, $(0,1)$, $(0,0)$ contribute $V_1,V_1,V_0$, giving $V_2\oplus3V_1\oplus2V_0$, of dimensions $5+9+2=16$. For the block reading, $2(\tfrac12,\tfrac12)$ contributes $2V_1\oplus2V_0$ and the four remaining blocks contribute $2V_1\oplus2V_0$, giving $4V_1\oplus4V_0$, of dimensions $12+4=16$. The measured contents agree with both.</p>
+<h2 id="the-comparison-with-the-biquaternion-row">The Comparison with the Biquaternion Row</h2>
+<h3 id="the-row-math144">The Row $n=2$</h3>
+<p><strong>Proposition.</strong> At $n=2$ the same construction gives the module $V_{1/2}$ and the algebra $V_1\oplus V_0$.</p>
+<p><em>Proof.</em> The module is $\operatorname{Sym}^{1}\mathbb{C}^2=\mathbb{C}^2=V_{1/2}$, and $V_{1/2}\otimes V_{1/2}=V_1\oplus V_0$ by the Clebsch–Gordan rule.</p>
+<p><strong>The three labels of the corpus.</strong> Spin $\tfrac12$ is the module, spin $1$ is the traceless part, spin $0$ is the centre. These are the three labels of the biquaternion series, and their dimensions $2,3,1$ account for the module and for the algebra separately.</p>
+<p><strong>One caveat.</strong> In the corpus the spin-half label names a real subspace of the biquaternion algebra; here it names the module, which is not inside the algebra at all. The label and the complex dimension agree, the object does not. The biquaternion articles read the real algebra under the unitary group, and the two readings part company once $n$ exceeds $2$.</p>
+<h3 id="the-row-math156">The Row $n=4$</h3>
+<p><strong>Proposition.</strong> At $n=4$ the module is $V_{3/2}$ and the algebra is $V_3\oplus V_2\oplus V_1\oplus V_0$; the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is not one of the four carriers.</p>
+<p><em>Proof.</em> The first half is the theorem above. For the second, a copy of $M_2$ inside $M_4$ has complex dimension four, and no carrier of the principal copy has dimension four; the module has that dimension but is not a subalgebra.</p>
+<p><strong>The reading.</strong> The enlargement from $n=2$ to $n=4$ does not add one label at the top; it doubles the length of the chain and raises the module from $\tfrac12$ to $\tfrac32$. A reader who expects the biquaternion series to continue by adding $\tfrac32$ as a fourth carrier of $\mathbb{B}$ will not find it: $\tfrac32$ is the label of the module of $M_4$, not of its algebra, and $\mathbb{B}$ is not a carrier at all.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>The four lists were computed as follows. For the principal copy, from the eigenvalues of $\operatorname{ad}_{J_z}$ with $J_z=\operatorname{diag}\bigl(\tfrac32,\tfrac12,-\tfrac12,-\tfrac32\bigr)$: the multiset $\{0^{4},\pm1^{3},\pm2^{2},\pm3\}$, read as $V_3\oplus V_2\oplus V_1\oplus V_0$. For the two factorised copies, from the eigenvalues of the two commuting Cartan generators, one per factor, and their sums: the joint labels $(0,0),(1,0),(0,1),(1,1)$ for the Kronecker copy and $2(\tfrac12,\tfrac12),(1,0),(0,1),2(0,0)$ for the block copy. For the full unitary group, from the commutant of the adjoint action on the traceless part, of dimension one.</p>
+<p><strong>The three dimension checks.</strong> $7+5+3+1=16=n^2$; $7+5+3=15=n^2-1$; $1+3+3+9=16$ and $8+3+3+2=16$ for the two factorised copies.</p>
+<h2 id="summary">Summary</h2>
+<p>Under the principal copy of $SU(2)$, the module $\mathbb{C}^4$ of $M_4(\mathbb{C})$ carries spin $\tfrac32$ and the algebra carries the four integer spins $0,1,2,3$, in dimensions $7+5+3+1$; the traceless part keeps the first three. The top carrier of the algebra has twice the spin of the module, $3$ against $\tfrac32$, as at every $n$.</p>
+<p>The algebra admits three further readings. The full unitary group gives two carriers, the scalars and the traceless part. The factorised copy on $\mathbb{C}^2\otimes\mathbb{C}^2$ gives $1+3+3+9$ and reaches spin $2$. The block copy on the two chiral halves gives $8+3+3+2$ and reaches spin $1$, with the only half-integer labels of the algebra in its two off-diagonal corners.</p>
+<p><strong>The biquaternion series $0,\tfrac12,1$ is the row $n=2$ of this table</strong>, where the module carries $\tfrac12$ and the algebra carries $0$ and $1$. Raising $n$ to $4$ lengthens the algebra chain to four terms and raises the module to $\tfrac32$; it does not add a single carrier to the biquaternion algebra, which is not a carrier of the principal copy.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_s$</td>
+<td>the carrier of spin $s$, of complex dimension $2s+1$</td>
+</tr>
+<tr>
+<td>$(j_1,j_2)$</td>
+<td>a carrier of $SU(2)\times SU(2)$</td>
+</tr>
+<tr>
+<td>principal copy</td>
+<td>the image of $\operatorname{Sym}^3$ in $\mathfrak{gl}_4$</td>
+</tr>
+<tr>
+<td>$S_+,S_-$</td>
+<td>the two chiral halves of $\mathbb{C}^4$</td>
+</tr>
+<tr>
+<td>factorised copy</td>
+<td>$SU(2)\times SU(2)$ acting on $\mathbb{C}^2\otimes\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>block copy</td>
+<td>$SU(2)\times SU(2)$ acting on $S_+\oplus S_-$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_4(\mathbb{C})$</td>
+<td>the traceless part, of dimension $15$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for the Clebsch–Gordan rule and the irreducible modules $\operatorname{Sym}^{n-1}\mathbb{C}^2$.</li>
+<li><a href="the-spin-decomposition-of-mnc.html">The Spin Decomposition of $M_n(\mathbb{C})$</a>, for the general theorem and the weight computation.</li>
+<li><a href="the-kronecker-factorisation-of-m4c-into-m2c-tensor-m2c.html">The Kronecker Factorisation $M_4(\mathbb{C})\cong M_2(\mathbb{C})\otimes M_2(\mathbb{C})$</a>, for the factorised copy and the two commuting factors.</li>
+<li><a href="the-lie-algebra-gl4c-and-sl4c-of-m4c.html">The Lie Algebra $\mathfrak{gl}_4(\mathbb{C})$ and $\mathfrak{sl}_4(\mathbb{C})$ of $M_4(\mathbb{C})$</a>, for the traceless part and its structure.</li>
+<li><a href="operator-chirality-on-the-biquaternion-algebra.html">Operator Chirality on the Biquaternion Algebra</a>, for the two-sided reading whose carrier list is the factorised column.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace.html">The Spin-One Anti-Hermitian Subspace</a>, for the row $n=2$ and the label $1$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

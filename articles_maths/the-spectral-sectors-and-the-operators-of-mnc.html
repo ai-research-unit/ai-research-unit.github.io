@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spectral Sectors and the Operators of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The four sectors of the previous article use one spectral predicate, &quot;the eigenvalues are distinct&quot;. Replacing it by the full multiplicity…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spectral-sectors-and-the-operators-of-math0"><strong>The Spectral Sectors and the Operators of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The four sectors of the previous article use one spectral predicate, "the eigenvalues are distinct". Replacing it by the full multiplicity pattern refines the partition. What are the strata, their dimensions, and which operators preserve them?</p>
+<p><strong>The answer in one line.</strong> For each partition $\mu$ of $n$ there is a stratum $S_\mu$ of matrices whose eigenvalue multiplicities are the parts of $\mu$, of dimension
+$$
+\dim S_\mu=n^2-\sum_i\mu_i^2+k,
+$$
+where $k$ is the number of parts; the regular stratum $\mu=(1,\dots,1)$ is Zariski open, and conjugation preserves every stratum.</p>
+<p><strong>Why the article is needed.</strong> The four-sector picture is the coarsest spectral partition. It is enough for the biquaternion algebra, where $n=2$ and there are two multiplicity patterns. It is not enough for $n=4$, where there are five patterns and the strata have five different dimensions. An article that speaks of "the spectrally degenerate set" as one object hides the five-fold refinement.</p>
+<p><strong>Boundaries.</strong> The coarse four sectors are <em>The Operators on the Four Sectors of $M_n(\mathbb{C})$</em>; the discriminant and the characteristic polynomial are <em>The Matrix Algebra $M_n(\mathbb{C})$</em>; the biquaternion stratification is <em>Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra</em>.</p>
+<p><strong>Conventions.</strong> A partition $\mu=(\mu_1\ge\dots\ge\mu_k)$ of $n$ records the multiplicities of the distinct eigenvalues; $k$ is the number of distinct eigenvalues. $\Delta$ is the discriminant of the previous article.</p>
+<h2 id="the-discriminant">The Discriminant</h2>
+<p><strong>Proposition.</strong> $\Delta$ is homogeneous of degree $n(n-1)$, invariant under conjugation and under the transpose, and vanishes exactly on the union of the strata with $k<n$.</p>
+<p><em>Proof.</em> Each difference $\lambda_i-\lambda_j$ is homogeneous of degree one, and there are $n(n-1)/2$ differences, so $\Delta$ has degree $n(n-1)$. Conjugation does not change the eigenvalues, and the transpose does not either. The vanishing is the definition. $\square$</p>
+<p><strong>The values.</strong> The degree is $2,6,12,20$ for $n=2,3,4,5$.</p>
+<p><strong>What the discriminant does not see.</strong> $\Delta$ vanishes on every stratum with a repeated eigenvalue and does not distinguish them. It is one polynomial, and its zero locus is one hypersurface, which is the union of all the degenerate strata.</p>
+<p><strong>The unreduced nature.</strong> $\Delta$ is a square in the eigenvalues but not in the entries: for $n=2$ it is $\operatorname{tr}(X)^2-4\det X$, which is not the square of a polynomial in the entries. This is why the discriminant hypersurface carries the whole degenerate set and not just the deepest stratum.</p>
+<h2 id="the-strata">The Strata</h2>
+<p><strong>Theorem.</strong> The sets $S_\mu$, over the partitions of $n$, form a partition of $M_n$. Each $S_\mu$ is a locally closed, irreducible, smooth subvariety of dimension $n^2-\sum_i\mu_i^2+k$.</p>
+<p><em>Proof.</em> The centraliser of a matrix with multiplicities $\mu$ has dimension $\sum_i\mu_i^2$ when the matrix is generic in its similarity class, so the similarity class has dimension $n^2-\sum_i\mu_i^2$. The eigenvalues are $k$ free parameters, and the stratum is the union of the classes over the eigenvalues, so the dimension is $n^2-\sum_i\mu_i^2+k$. The stratum is the image of the map (eigenvalues, frame, nilpotent part) and is smooth at the points where the frame is chosen generically. $\square$</p>
+<p><strong>The table at $n=4$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\mu$</th>
+<th>$k$</th>
+<th>$\sum\mu_i^2$</th>
+<th>$\dim S_\mu$</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1+1+1+1$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$16$</td>
+<td>four distinct eigenvalues</td>
+</tr>
+<tr>
+<td>$2+1+1$</td>
+<td>$3$</td>
+<td>$6$</td>
+<td>$13$</td>
+<td>one double eigenvalue</td>
+</tr>
+<tr>
+<td>$2+2$</td>
+<td>$2$</td>
+<td>$8$</td>
+<td>$10$</td>
+<td>two double eigenvalues</td>
+</tr>
+<tr>
+<td>$3+1$</td>
+<td>$2$</td>
+<td>$10$</td>
+<td>$8$</td>
+<td>one triple eigenvalue</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$1$</td>
+<td>$16$</td>
+<td>$1$</td>
+<td>scalar</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sum check.</strong> The five dimensions are different, and the largest is the open stratum. There are five partitions of four, so the four-sector picture, with its two spectral classes, is a coarsening of a stratification with five strata.</p>
+<p><strong>The table at $n=3$.</strong> $1+1+1$: $9$; $2+1$: $6$; $3$: $1$. Three strata.</p>
+<p><strong>The table at $n=5$.</strong> $1^5$: $25$; $2+1+1+1$: $22$; $2+2+1$: $19$; $3+1+1$: $17$; $3+2$: $14$; $4+1$: $10$; $5$: $1$. Seven strata, one per partition of five.</p>
+<h2 id="the-zariski-topology">The Zariski Topology</h2>
+<p><strong>Proposition.</strong> The regular stratum $S_{(1,\dots,1)}$ is Zariski open and dense, and its complement is the hypersurface $\Delta=0$.</p>
+<p><em>Proof.</em> The complement is the zero locus of the single polynomial $\Delta$, which is not identically zero. $\square$</p>
+<p><strong>The frontier condition.</strong> The closure of $S_\mu$ is the union of the strata whose partition refines $\mu$, that is, the strata obtained by splitting the parts of $\mu$.</p>
+<p><em>Proof.</em> Coalescing eigenvalues is a closed condition, and splitting them is an open condition within the closure, so the closure contains exactly the coarsenings. $\square$</p>
+<p><strong>The consequence.</strong> The stratification is a stratification in the sense of Whitney: the closures are unions of strata and the frontier condition holds. It is not the stratification by rank, which is a different partition.</p>
+<h2 id="the-operators">The Operators</h2>
+<p><strong>The inner automorphisms.</strong> $T_{g,g^{-1}}$ preserves every stratum exactly, because conjugation preserves the multiset of eigenvalues including multiplicities.</p>
+<p><strong>The transpose.</strong> $F$ preserves every stratum, since the characteristic polynomial of $X^{\mathsf T}$ is that of $X$.</p>
+<p><strong>The one-sided family.</strong> $L_A$ preserves the stratification only when $A$ is a scalar, and otherwise it does not map strata to strata in a controlled way: the multiplicity pattern of $AX$ is not determined by those of $A$ and $X$.</p>
+<p><em>Proof.</em> $\operatorname{rank}(AX)\le\operatorname{rank}A$, and the eigenvalues of $AX$ are not functions of those of $A$ and $X$. The example $X=\operatorname{diag}(1,2)$, $A=\operatorname{diag}(1,\tfrac12)$ sends the regular stratum to the scalar stratum. $\square$</p>
+<p><strong>The two-sided family.</strong> $T_{A,B}$ has the same freedom, with $\operatorname{rank}(AXB)\le\min(\operatorname{rank}A,\operatorname{rank}B)$ and no control over the multiplicities.</p>
+<p><strong>The group preserving everything.</strong> The group generated by the inner automorphisms and the transpose preserves every stratum, since these are the automorphisms and the anti-automorphism of the algebra. No larger natural group does.</p>
+<h2 id="the-comparison-with-the-biquaternion-algebra">The Comparison with the Biquaternion Algebra</h2>
+<p><strong>The two strata.</strong> At $n=2$ the partitions are $1+1$ and $2$, with dimensions $4$ and $1$. The biquaternion algebra, being commutative and reduced, has the strata "distinct component values" and "equal component values", of dimensions $2$ and $1$.</p>
+<p><strong>The extra structure.</strong> In $M_2$ the stratum $\mu=(2)$ is the discriminant hypersurface itself: it consists of the matrices with a single eigenvalue, whose scalar part is free and whose nilpotent part is free, so it has dimension $3$. The scalar line is the sub-stratum on which the nilpotent part vanishes.</p>
+<p><strong>The honest statement.</strong> The multiplicity pattern is the same datum in both algebras; the dimensions differ because $M_2$ has nilpotents and the reduced algebra does not. The refinement by pattern survives; the dimensions do not transfer.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>The homogeneity and the two invariances were checked at $n=2,3,4,5$: $\Delta(tX)/\Delta(X)/t^{n(n-1)}=1$ to $10^{-15}$ for $t=1.7$, $\Delta(X^{\mathsf T})=\Delta(X)$ to $2\times10^{-14}$, and $\Delta(gXg^{-1})=\Delta(X)$ to $10^{-13}$.</p>
+<p>The orbit dimensions were computed from the rank of the conjugation map: at $n=3$ the ranks are $6,4,0$ for the patterns $1+1+1$, $2+1$, $3$, matching $n^2-\sum\mu_i^2=6,4,0$; at $n=4$ the ranks are $12,10,0$ for $1+1+1+1$, $2+1+1$, $4$, matching $12,10,0$. Adding $k$ gives the stratum dimensions in the table.</p>
+<p>The two examples were computed: $\operatorname{diag}(1,2)$ lies in the regular stratum and $\operatorname{diag}(1,1)=\operatorname{diag}(1,\tfrac12)\operatorname{diag}(1,2)$ lies in the scalar stratum, so $L_A$ crosses the stratification.</p>
+<h2 id="the-poset">The Poset</h2>
+<p><strong>The refinement order.</strong> Write $\mu\preceq\nu$ when $\mu$ is obtained from $\nu$ by merging parts. The closure of $S_\mu$ is $\bigcup_{\nu\preceq\mu}S_\nu$, and the relation is a partial order with the regular partition at the bottom and the single-part partition at the top.</p>
+<p><strong>The table at $n=4$.</strong> The regular partition $1+1+1+1$ is below all; $2+1+1$ is below $2+2$ and below $3+1$; $2+2$ and $3+1$ are both below $4$.</p>
+<p><strong>The two chains.</strong> The chain $1+1+1+1\prec2+1+1\prec3+1\prec4$ and the chain $1+1+1+1\prec2+1+1\prec2+2\prec4$ are the two maximal chains, and they meet at the top and the bottom.</p>
+<p><strong>The reading.</strong> The poset of partitions of $n$ is the poset of the spectral stratification, and it is not a chain for $n\ge4$. The four-sector picture collapses it to two levels, which is why the coarse partition cannot see the two chains.</p>
+<p><strong>The incidence.</strong> The codimension of $S_\mu$ is $n^{2}-\dim S_\mu=\sum_i\mu_i^{2}-k$, which grows as the parts merge. The frontier condition is the statement that the closure of $S_\mu$ is the union of the $S_\nu$ over the partitions $\nu$ that refine $\mu$.</p>
+<h2 id="the-operators-that-preserve-the-discriminant">The Operators that Preserve the Discriminant</h2>
+<p><strong>The conjugations.</strong> $X\mapsto gXg^{-1}$ preserve the characteristic polynomial, hence the discriminant, hence every spectral stratum.</p>
+<p><strong>The transpose.</strong> $X\mapsto X^{\mathsf T}$ preserves the characteristic polynomial and every stratum.</p>
+<p><strong>The left and right multiplications.</strong> $X\mapsto AX$ and $X\mapsto XB$ preserve the stratum exactly when $A$ or $B$ is a nonzero scalar: an arbitrary $A$ changes the characteristic polynomial.</p>
+<p><strong>The reading.</strong> The spectral stratification is preserved by the group of similarity transformations and by the transpose, and by nothing else in the two-sided family. The determinant stratification is preserved by the much larger group of the left and right multiplications with invertible parameters.</p>
+<h2 id="the-closure-of-the-regular-set">The Closure of the Regular Set</h2>
+<p><strong>The statement.</strong> The spectrally regular set is the complement of the discriminant hypersurface, hence is Zariski open and dense, and its complement is a single irreducible hypersurface for $n\ge2$.</p>
+<p><strong>The consequence.</strong> Every spectral stratum other than the regular one lies in the closure of the regular stratum, and the stratification is the one induced by the vanishing of one polynomial.</p>
+<p><strong>The reading.</strong> The discriminant is the only equation of the coarse picture, which is why the four-sector split has two levels and the four-sector picture has four.</p>
+<h2 id="the-open-stratum">The Open Stratum</h2>
+<p><strong>The statement.</strong> The regular stratum is open and dense, and every other stratum is a proper closed subset of its closure.</p>
+<p><strong>The consequence.</strong> A random matrix is spectrally regular with probability one, and a random one-parameter family meets the discriminant in isolated values of the parameter.</p>
+<p><strong>The reading.</strong> The spectral picture is the picture of a single hypersurface and its complement, which is why the four-sector description is coarser than the spectral one.</p>
+<h2 id="summary">Summary</h2>
+<p>The spectral partition refines the four sectors by the multiplicity pattern, with dimensions $n^2-\sum\mu_i^2+k$ and one stratum per partition of $n$. The regular stratum is Zariski open and its complement is the discriminant hypersurface. Conjugation and the transpose preserve every stratum; the one-sided and two-sided families preserve none of them in general. The refinement survives from the biquaternion algebra, and the dimensions do not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu$</td>
+<td>a partition of $n$, the eigenvalue multiplicities</td>
+</tr>
+<tr>
+<td>$k$</td>
+<td>the number of parts of $\mu$, the number of distinct eigenvalues</td>
+</tr>
+<tr>
+<td>$S_\mu$</td>
+<td>the stratum of matrices with multiplicities $\mu$</td>
+</tr>
+<tr>
+<td>$n^2-\sum\mu_i^2+k$</td>
+<td>the dimension of $S_\mu$</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the discriminant, of degree $n(n-1)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-operators-on-the-four-sectors-of-mnc.html">The Operators on the Four Sectors of $M_n(\mathbb{C})$</a>, for the coarse partition.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the characteristic polynomial.</li>
+<li><a href="spectral-regularity-and-degeneracy-in-the-reduced-biquaternion-algebra.html">Spectral Regularity and Degeneracy in the Reduced Biquaternion Algebra</a>, for the case $n=2$.</li>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-of-mnc.html">The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</a>, for the idempotent strata.</li>
+<li><a href="the-frame-the-simple-nilpotents-and-the-gauge-of-mnc.html">The Frame, the Simple Nilpotents and the Gauge of $M_n(\mathbb{C})$</a>, for the nilpotent orbits.</li>
+<li><a href="classification-of-the-structures-of-the-operators-of-mnc.html">The Classification of the Structures of the Operators of $M_n(\mathbb{C})$</a>, for where these questions sit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

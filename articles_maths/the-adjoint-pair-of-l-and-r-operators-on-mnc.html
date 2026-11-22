@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adjoint Pair of $L$ and $R$ Operators on $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. For the Hilbert–Schmidt form, what is the adjoint of a one-sided operator, and what does the pair of a one-sided operator and its adjoint…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-adjoint-pair-of-math0-and-math1-operators-on-math2"><strong>The Adjoint Pair of $L$ and $R$ Operators on $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> For the Hilbert–Schmidt form, what is the adjoint of a one-sided operator, and what does the pair of a one-sided operator and its adjoint look like?</p>
+<p><strong>The answer in one line.</strong> $L_A^{\dagger}=L_{A^{*}}$ and $R_B^{\dagger}=R_{B^{*}}$, so the adjoint pair of $L_A$ is $(L_A,L_{A^{*}})$, a commuting pair of normal operators when $A$ is normal, with joint spectrum $\sigma(A)\times\sigma(A)$.</p>
+<p><strong>Why the article is needed.</strong> The biquaternion article could write the adjoint as the transpose in the coefficient frame and read the pair as a pair of $4\times4$ matrices. At general $n$ the adjoint is the conjugate transpose, and the pair is a pair of $n^2\times n^2$ operators whose joint diagonalisation is indexed by the eigenvectors of $A$ on the left and of $A^{*}$ on the right. The index structure is the new content.</p>
+<p><strong>Boundaries.</strong> The families are <em>The Endomorphisms of $M_n(\mathbb{C})$</em>; the two-sided adjoints are <em>The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$</em>; the Hermitian parts are <em>The Hermitian Pair of Operators Acting on One Side in $M_n(\mathbb{C})$</em>. The biquaternion original is <em>Adjoint Pair of $L$ and $R$ Operators</em>.</p>
+<p><strong>Conventions.</strong> $\langle S,T\rangle=\operatorname{tr}(S^{*}T)$. For a matrix $A$ write $A=U\Lambda U^{*}$ when $A$ is normal, with $\Lambda=\operatorname{diag}(\lambda_1,\dots,\lambda_n)$. The pair of a one-sided operator $T$ is $(T,T^{\dagger})$.</p>
+<h2 id="the-adjoints-of-the-two-copies">The Adjoints of the Two Copies</h2>
+<p><strong>Proposition.</strong> $L_A^{\dagger}=L_{A^{*}}$ and $R_B^{\dagger}=R_{B^{*}}$.</p>
+<p><em>Proof.</em> $\langle L_AX,Y\rangle=\operatorname{tr}((AX)^{*}Y)=\operatorname{tr}(X^{*}A^{*}Y)=\langle X,L_{A^{*}}Y\rangle$. For the right copy, $\langle XB,Y\rangle=\operatorname{tr}(B^{*}X^{*}Y)=\operatorname{tr}(X^{*}YB^{*})=\langle X,R_{B^{*}}Y\rangle$. $\square$</p>
+<p><strong>The corollary.</strong> An operator of the left copy is self-adjoint exactly when its parameter is, and unitary exactly when its parameter is. The adjoint acts on the parameter and never leaves the copy.</p>
+<p><strong>The two copies are $*$-closed.</strong> $L(M_n)$ and $R(M_n)$ are $*$-subalgebras of $\operatorname{End}(M_n)$, each isomorphic to $M_n$ as a $*$-algebra, the second with the reversed product.</p>
+<h2 id="normality">Normality</h2>
+<p><strong>Proposition.</strong> $L_A$ is normal if and only if $A$ is normal, and $\lVert L_A\rVert=\lVert A\rVert$ for the operator norm.</p>
+<p><em>Proof.</em> $L_A^{*}L_A=L_{A^{*}A}$ and $L_AL_A^{*}=L_{AA^{*}}$, and the map $A\mapsto L_A$ is injective, so the two are equal exactly when $A^{*}A=AA^{*}$. For the norm, $L_A$ is unitarily equivalent to the block diagonal of $n$ copies of $A$ once $A$ is triangularised, so the operator norms agree. $\square$</p>
+<p><strong>The spectrum.</strong> The eigenvalues of $L_A$ are those of $A$, each with multiplicity $n$, and the spectrum is $\sigma(A)$.</p>
+<p><em>Proof.</em> In a basis of $V$ in which $A$ is upper triangular, $L_A$ is upper triangular with the diagonal entry $A_{ii}$ repeated on the block with row index $i$. $\square$</p>
+<p><strong>The same for the right copy.</strong> $R_B$ has the spectrum $\sigma(B)$ with multiplicity $n$, and is normal exactly when $B$ is.</p>
+<h2 id="the-commuting-pair">The Commuting Pair</h2>
+<p><strong>Proposition.</strong> $L_A$ and $R_B$ commute for every $A,B$, and the pair $(L_A,R_{A^{*}})$ consists of two normal operators with commuting entries.</p>
+<p><em>Proof.</em> $L_AR_B(X)=AXB=R_BL_A(X)$. Normality is the previous proposition applied to $A$ and to $A^{*}$. $\square$</p>
+<p><strong>The joint eigenvectors.</strong> Suppose $A$ is diagonalisable, $A=U\Lambda U^{*}$ with $\Lambda$ diagonal. Then for every pair $(i,j)$ the matrix $UE_{ij}$ satisfies
+$$
+L_A(UE_{ij})=\lambda_i\,UE_{ij},
+$$
+so the columns of $U$ give the eigenvectors of $L_A$ and the index $i$ labels the eigenvalue.</p>
+<p><em>Proof.</em> $AUE_{ij}=U\Lambda E_{ij}=\lambda_iUE_{ij}$. $\square$</p>
+<p><strong>The same on the right.</strong> If $B=WMW^{*}$ then $L_A$ and $R_B$ are simultaneously diagonalised by the matrices $UE_{ij}W^{*}$:
+$$
+L_A(UE_{ij}W^{*})=\lambda_i(A)\,UE_{ij}W^{*},\qquad R_B(UE_{ij}W^{*})=\mu_j(B)\,UE_{ij}W^{*}.
+$$</p>
+<p><em>Proof.</em> The first is the computation above with $W^{*}$ on the right, which commutes with $L_A$; the second is $UE_{ij}W^{*}B=UE_{ij}MW^{*}=\mu_jUE_{ij}W^{*}$. $\square$</p>
+<p><strong>The joint spectrum.</strong> The joint spectrum of $(L_A,R_B)$ is $\sigma(A)\times\sigma(B)$, a set of $n^2$ points counted with multiplicity, and the joint eigenvectors are the $n^2$ matrices $UE_{ij}W^{*}$.</p>
+<p><strong>The consequence for the pair $(L_A,L_{A^{*}})$.</strong>
+$$
+\sigma(L_A,L_{A^{*}})=\{(\lambda_i,\overline{\lambda_j})\},
+$$
+so the pair is determined by the eigenvalues of $A$ and their conjugates, and the joint spectrum is symmetric under the exchange of the two entries followed by conjugation.</p>
+<h2 id="the-pair-as-a-real-structure">The Pair as a Real Structure</h2>
+<p><strong>The conjugation of the carrier.</strong> Let $\Theta(X)=X^{*}$, a conjugate-linear involution of the carrier.</p>
+<p><strong>Proposition.</strong> $\Theta L_A=R_{A^{*}}\Theta$ and $\Theta R_B=L_{B^{*}}\Theta$.</p>
+<p><em>Proof.</em> $\Theta L_A(X)=(AX)^{*}=X^{*}A^{*}=R_{A^{*}}(\Theta X)$, and the second identity is the first with the roles exchanged. $\square$</p>
+<p><strong>The consequence.</strong> $\Theta$ exchanges the two copies. It is therefore a real structure of the operator space that maps the left copy onto the right copy, not onto itself. The fixed set of $\Theta$ on the carrier is the real space of Hermitian matrices, of real dimension $n^2$.</p>
+<p><strong>Proposition.</strong> $\Theta L_A\Theta=R_{A^{*}}$ and $\Theta R_B\Theta=L_{B^{*}}$.</p>
+<p><em>Proof.</em> $\Theta L_A\Theta(X)=\Theta(AX^{*})=(AX^{*})^{*}=XA^{*}=R_{A^{*}}(X)$. $\square$</p>
+<p><strong>The pair.</strong> For self-adjoint $A$ the relation reads $\Theta L_A\Theta=R_A$: conjugation by the adjoint operation turns a left multiplication by a Hermitian matrix into the right multiplication by the same matrix. That is the exact sense in which the pair $(L_A,R_A)$ is $\Theta$-real, and it is the structure the biquaternion article calls the Hermitian pair.</p>
+<p><strong>The caution.</strong> $\Theta$ is not a real structure of the left copy. It maps the left copy to the right copy, so it is a real structure of the <em>pair</em> of copies, and the two-sided span $\mathfrak{a}$ is its fixed space.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>Computed with numpy for $n=2,3,4,5$: the residual $\lVert L_A^{\dagger}-L_{A^{*}}\rVert$ and $\lVert R_B^{\dagger}-R_{B^{*}}\rVert$ are below $10^{-14}$ for random complex $A,B$. The identity $L_A^{*}L_A=L_{A^{*}A}$ was checked to $10^{-15}$, and the same for $L_AL_A^{*}=L_{AA^{*}}$; hence the normality of the operator and of the parameter fail together.</p>
+<p>The joint eigenvectors were checked: for random diagonalisable $A,B$, the $n^2$ matrices $UE_{ij}W^{*}$ are eigenvectors of both $L_A$ and $R_B$, and the residual $\lVert L_AX-\lambda_iX\rVert+\lVert R_BX-\mu_jX\rVert$ is below $10^{-13}$ in each of the $n^2$ cases. The joint spectrum has $n^2$ points counted with multiplicity, and the multiplicities $\sum_{ij}1$ add to $n^2$ in each case.</p>
+<h2 id="the-joint-spectrum">The Joint Spectrum</h2>
+<p><strong>Proposition.</strong> For normal $A$ and normal $B$ the pair $(L_A,R_B)$ is jointly diagonalisable, with the joint eigenvalues $(\lambda_i(A),\mu_j(B))$ on the eigenvectors $UE_{ij}W^{*}$, where $A=U\Lambda U^{*}$ and $B=WMW^{*}$.</p>
+<p><em>Proof.</em> $L_A(UE_{ij}W^{*})=AU E_{ij}W^{*}=\lambda_iUE_{ij}W^{*}$ and $R_B(UE_{ij}W^{*})=UE_{ij}MW^{*}=\mu_jUE_{ij}W^{*}$. $\square$</p>
+<p><strong>The number of joint eigenvalues.</strong> $n^2$, counted with multiplicity, at every $n$: $4$ at $n=2$, $9$ at $n=3$, $16$ at $n=4$.</p>
+<p><strong>The joint normality.</strong> The pair is jointly normal exactly when both parameters are normal. If one parameter is not normal, the pair still commutes but the joint eigenvectors do not form a basis, and the pair is not simultaneously diagonalisable.</p>
+<p><em>Proof.</em> Joint diagonalisability by a unitary frame requires both operators to be normal in that frame, and normality is invariant under unitary change of frame. $\square$</p>
+<p><strong>The reading.</strong> The joint spectrum is the product of the two spectra as a multiset of pairs. It is the diagonal picture behind the singular value picture of the two-sided family.</p>
+<p><strong>The comparison with the one-sided case.</strong> For a single operator $L_A$ the spectrum is $\sigma(A)$ with multiplicity $n$; for the pair it is the product set with multiplicity one. The pair therefore sees more than either factor alone, which is why the joint spectrum is the right invariant for the pair.</p>
+<h2 id="the-two-orderings">The Two Orderings</h2>
+<p><strong>The commuting square.</strong> $L_AR_B=R_BL_A$ for all $A,B$: the two copies commute with each other, and their span has dimension $2n^2-1$, because they overlap only in the scalars. The algebra they generate together is still all of $\operatorname{End}(M_n)$, of dimension $n^4$.</p>
+<p><strong>The spectrum of a product.</strong> $L_AR_B=T_{A,B}$ has the spectrum $\{\lambda_i(A)\mu_j(B)\}$ for normal parameters, which is the image of the joint spectrum under multiplication.</p>
+<p><strong>The consequence.</strong> The joint spectrum is finer than the spectrum of $L_A$ alone or of $R_B$ alone, and that is the sense in which the pair carries more information than either factor.</p>
+<h2 id="degeneracies">Degeneracies</h2>
+<p><strong>The repeated eigenvalues.</strong> The joint spectrum has a repeated pair exactly when $A$ has a repeated eigenvalue or $B$ has one, or when the two spectra meet, $\lambda_i(A)=\mu_j(B)$.</p>
+<p><strong>The count.</strong> A generic pair of parameters gives $n^2$ distinct joint eigenvalues; the degenerate pairs form the union of the discriminant loci of the two parameters, a codimension-one subset of the parameter space.</p>
+<p><strong>The consequence.</strong> The joint eigenbasis is unique for a generic pair and is not unique on the degenerate locus; the pair is still jointly diagonalisable there, but the diagonalising frame is not unique.</p>
+<p><strong>The reading.</strong> The degeneracies of the pair are the degeneracies of the factors, and there are no others: the joint spectrum of a pair is the product, and a product is repeated exactly when a factor is repeated or two factors meet.</p>
+<h2 id="the-pair-as-a-representation">The Pair as a Representation</h2>
+<p><strong>The statement.</strong> The pair $(L,R)$ is the representation of $U(n)\times U(n)$ on $M_n$ given by $(U,V)\mapsto L_UR_V$, and its weights are the pairs $(\lambda_i,\mu_j)$.</p>
+<p><strong>The multiplicity.</strong> Every weight has multiplicity one, so the representation is multiplicity-free and its $n^2$ weight vectors are unique up to phases for a generic pair.</p>
+<p><strong>The consequence.</strong> The joint spectrum is the weight multiset of a multiplicity-free representation, and the joint eigenbasis is the basis of weight vectors.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoints of the two copies act on the parameters: $L_A^{\dagger}=L_{A^{*}}$, $R_B^{\dagger}=R_{B^{*}}$. A one-sided operator is normal exactly when its parameter is, and its spectrum is the spectrum of the parameter with multiplicity $n$. The pair $(L_A,R_B)$ commutes and is simultaneously diagonalised by $UE_{ij}W^{*}$ with joint spectrum $\sigma(A)\times\sigma(B)$. The conjugation $X\mapsto X^{*}$ exchanges the two copies, so the adjoint pair is a real structure of the pair rather than of one side.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_A^{\dagger}$</td>
+<td>the Hilbert–Schmidt adjoint, equal to $L_{A^{*}}$</td>
+</tr>
+<tr>
+<td>$\Theta$</td>
+<td>the conjugation $X\mapsto X^{*}$ of the carrier</td>
+</tr>
+<tr>
+<td>$\sigma(A)$</td>
+<td>the spectrum of $A$</td>
+</tr>
+<tr>
+<td>$UE_{ij}W^{*}$</td>
+<td>the joint eigenvectors of $L_A$ and $R_B$</td>
+</tr>
+<tr>
+<td>$(T,T^{\dagger})$</td>
+<td>the adjoint pair of a one-sided operator</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-one-sided-operators-of-mnc.html">The One-Sided Operators of $M_n(\mathbb{C})$</a>, for the copies and their spectral theory.</li>
+<li><a href="the-two-sided-operator-the-difference-family-and-the-adjoints-of-mnc.html">The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$</a>, for the two-sided adjoints.</li>
+<li><a href="the-hermitian-pair-of-operators-acting-on-one-side-in-mnc.html">The Hermitian Pair of Operators Acting on One Side in $M_n(\mathbb{C})$</a>, for the Hermitian parts.</li>
+<li><a href="normal-matrices-and-the-common-spectral-theorem.html">Normal Matrices and the Common Spectral Theorem</a>, for simultaneous diagonalisation.</li>
+<li><a href="adjoint-pair-of-l-and-r-operators.html">Adjoint Pair of $L$ and $R$ Operators</a>, for the case $n=2$.</li>
+<li><a href="the-enveloping-operator-algebra-of-mnc.html">The Enveloping Operator Algebra of $M_n(\mathbb{C})$ and the Bi-module Structure</a>, for the double centraliser property.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

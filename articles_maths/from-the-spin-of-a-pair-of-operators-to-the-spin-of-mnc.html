@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From the Spin of a Pair of Operators to the Spin of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. In the biquaternion series the spin content of the algebra was reached from a pair of rotors acting on the two sides. What is the general-…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="from-the-spin-of-a-pair-of-operators-to-the-spin-of-math0"><strong>From the Spin of a Pair of Operators to the Spin of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> In the biquaternion series the spin content of the algebra was reached from a pair of rotors acting on the two sides. What is the general-$n$ form of that passage, and what does it produce?</p>
+<p><strong>The answer in one line.</strong> The pair $(L_g,R_h)$ is a pair of commuting copies of the principal $SU(2)$, the diagonal is the conjugation action, and the Clebsch–Gordan rule applied to $V_j\boxtimes V_j$ with $j=\tfrac{n-1}{2}$ gives $M_n=\bigoplus_{k=0}^{n-1}V_k$.</p>
+<p><strong>Why the article is needed.</strong> The biquaternion passage begins with the pair of rotors and ends with the three labels $0,\tfrac12,1$. At general $n$ the same passage begins with a pair and ends with a list of $n$ integer labels. The step that produces the list must be separated from the step that produces the pair, and the separation is what this article records.</p>
+<p><strong>Boundaries.</strong> The theorem about the decomposition is <em>The Spin Decomposition of $M_n(\mathbb{C})$</em> and is quoted, not reproved, here. The operators themselves are <em>The One-Sided Operators of $M_n(\mathbb{C})$</em> and <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>. The biquaternion original is <em>From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides</em>.</p>
+<p><strong>Conventions.</strong> $L_A(X)=AX$, $R_B(X)=XB$, $T_{A,B}=L_AR_B$. The principal copy is the image of $\operatorname{Sym}^{n-1}$, and $j=\tfrac{n-1}{2}$ throughout. The weights of the module are $m_a=j-a$ for $a=0,\dots,n-1$.</p>
+<h2 id="the-pair">The Pair</h2>
+<p><strong>Proposition.</strong> The left and right copies commute, $[L_X,R_Y]=0$ for all $X,Y$, and $X\mapsto L_X-R_X$ is the adjoint action of $\mathfrak{gl}_n$ on itself.</p>
+<p><em>Proof.</em> $L_XR_Y(Z)=XZY=R_YL_X(Z)$, and $L_X-R_X$ sends $Z$ to $XZ-ZX$. $\square$</p>
+<p><strong>The two copies.</strong> $X\mapsto L_X$ is a Lie algebra isomorphism onto its image, and $Y\mapsto-R_Y$ is one too, since $[R_Y,R_Z]=R_{[Z,Y]}$. So the pair spans $\mathfrak{gl}_n\oplus\mathfrak{gl}_n$ of dimension $2n^2$, and the diagonal is the adjoint copy.</p>
+<p><strong>The diagonal is the principal copy.</strong> Restricting the diagonal to the principal $\mathfrak{su}_2\subset\mathfrak{gl}_n$ gives the conjugation action whose carrier structure is the theorem of <em>The Spin Decomposition of $M_n(\mathbb{C})$</em>.</p>
+<p><strong>The consequence.</strong> The passage from a pair to a single action is restriction to the diagonal. Statements about the spin of the algebra are statements about the diagonal; statements about the pair are statements about two independent labels.</p>
+<h2 id="the-pairs-content">The Pair's Content</h2>
+<p><strong>Proposition.</strong> Under the left and right copies of the principal $SU(2)$ the algebra is the external tensor product $M_n\cong V_j\boxtimes V_j$, of dimension $(2j+1)^2=n^2$.</p>
+<p><em>Proof.</em> The left copy acts on the first factor of $M_n=\mathbb{C}^n\otimes(\mathbb{C}^n)^{*}$, the right copy on the second, and both factors are $V_j$. $\square$</p>
+<p><strong>The weights of the pair.</strong> The matrix unit $E_{ab}$ carries the pair of weights $(m_a,-m_b)$: it is raised by $L$ in the first index and lowered by $R$ in the second.</p>
+<p><em>Proof.</em> $J_zE_{ab}=m_aE_{ab}$ and $-E_{ab}J_z=-m_bE_{ab}$. $\square$</p>
+<p><strong>The diagonal weights.</strong> Restricting to the diagonal adds the two labels, giving $d=m_a-m_b$, the difference set of the module's weights.</p>
+<p><strong>The multiplicity.</strong> The difference $d$ occurs $n-\lvert d\rvert$ times, which is the weight multiset of $\bigoplus_{k=0}^{n-1}V_k$.</p>
+<h2 id="the-passage-to-the-algebra">The Passage to the Algebra</h2>
+<p><strong>Theorem (quoted).</strong> $M_n=\bigoplus_{k=0}^{n-1}V_k$ under the diagonal principal copy, each carrier once, and $\mathfrak{sl}_n=\bigoplus_{k=1}^{n-1}V_k$.</p>
+<p><strong>Two readings of one list.</strong> The list $0,1,\dots,n-1$ is the Clebsch–Gordan content of $V_j\otimes V_j$, and it is also the list of multiplicities of the differences of weights. The theorem says the two readings agree, and either can serve as the definition.</p>
+<p><strong>The maximal label.</strong> The maximal diagonal label is $2j=n-1$, twice the module's label. This is the arithmetic reason a module of spin $j$ produces an algebra with a top carrier of spin $2j$.</p>
+<p><strong>What the pair adds.</strong> The pair distinguishes the two tensor factors; the diagonal forgets the distinction and keeps the sum. The information lost is the second label, and with it the possibility of separating the two sides.</p>
+<h2 id="what-the-biquaternion-case-is">What the Biquaternion Case Is</h2>
+<p><strong>The values.</strong> At $n=2$ one has $j=\tfrac12$, and the pair content is $V_{1/2}\boxtimes V_{1/2}=V_1\oplus V_0$, the list $1,0$ of the biquaternion algebra.</p>
+<p><strong>The coincidence.</strong> At $n=2$ the module's label is $\tfrac12$ and the diagonal's list is $1,0$: three numbers, the three labels of the biquaternion algebra. The pair's two labels both equal the module's label, so one half-integer describes the whole structure.</p>
+<p><strong>The failure of the identification.</strong> The diagonal's top label is $2j=n-1$ and the module's label is $j$, and these differ for every $n\ge2$. Identifying the spin of the module with the spin of the algebra is an error of a factor two even at $n=2$, where the module has label $\tfrac12$ and the top carrier has label $1$.</p>
+<h2 id="the-real-reading">The Real Reading</h2>
+<p><strong>The pair over $\mathbb{R}$.</strong> At $n=2$ the biquaternion algebra is real of dimension four and the pair of rotors acts by real maps. At general $n$ the algebra is complex of dimension $n^2$, real of dimension $2n^2$, and the pair acts by complex linear maps, hence by real maps of twice the dimension.</p>
+<p><strong>The consequence.</strong> The real dimension of the carrier does not change the carriers: the complex decomposition $M_n=\bigoplus V_k$ is the same over $\mathbb{C}$ and over $\mathbb{R}$. What the biquaternion case emphasises is the pair of labels, not the real dimension.</p>
+<p><strong>The honest statement.</strong> The passage from a pair to the algebra is the same at every $n$. What changes is the length of the resulting list, which is $n$ rather than $3$.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>Checked for $n=2,3,4,5$: the commutator $[L_X,R_Y]$ vanishes to $10^{-15}$ for random $X,Y$; the diagonal operator $L_{J_z}-R_{J_z}$ has the eigenvalues $d$ with multiplicity $n-\lvert d\rvert$, matching the difference multiset to $10^{-14}$; the identity $\sum_{k=0}^{n-1}(2k+1)=n^2$ holds at every $n$.</p>
+<p>The pair's Lie algebra was checked by dimensions: the left copy is $n^2$-dimensional, the right copy is $n^2$-dimensional, and their intersection is the scalars, so the pair spans $2n^2-1$ dimensions, as $\mathfrak{gl}_n\oplus\mathfrak{gl}_n$ modulo the diagonal scalar requires.</p>
+<h2 id="the-pair-in-coordinates">The Pair in Coordinates</h2>
+<p><strong>The difference.</strong> $L_A-R_A=\operatorname{ad}_A$: the difference of the two sides is the bracket with the parameter.</p>
+<p><strong>The sum.</strong> $L_A+R_A$ is the anticommutator map $X\mapsto AX+XA$.</p>
+<p><strong>The kernel.</strong> $L_A+R_B=0$ for all arguments exactly when $B=-A$ and $A$ is scalar, so the pair is injective on the quotient of $M_n\oplus M_n$ by the diagonal line of scalars.</p>
+<p><strong>The reading.</strong> The pair contains the bracket and the anticommutator, and those two generate the whole algebra of the principal copy. That is the structural reason the passage to the algebra loses no spin content.</p>
+<h2 id="the-casimir-of-the-pair">The Casimir of the Pair</h2>
+<p><strong>The statement.</strong> The Casimir $-\sum_i\operatorname{ad}_{J_i}^2$ (the $J_i$ anti-Hermitian) computed from the pair is the Casimir of the algebra, because the pair generates the algebra.</p>
+<p><strong>The values.</strong> $0,2,6,\dots,n(n-1)$, with multiplicities $1,3,\dots,2n-1$.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>the values</th>
+<th>the weighted sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$0,2$</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$0,2,6$</td>
+<td>$36$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0,2,6,12$</td>
+<td>$96$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$0,2,6,12,20$</td>
+<td>$200$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> The weighted sum is $\tfrac{n^2(n^2-1)}{2}$ in every row, and it is computed from the pair alone. The pair is therefore sufficient to recover the carrier structure, which is the claim of the article in one line.</p>
+<h2 id="the-image-and-the-span">The Image and the Span</h2>
+<p><strong>The fibre.</strong> $T_{A,B}=T_{A',B'}$ exactly when $A'=\lambda A$ and $B'=\lambda^{-1}B$ for some nonzero scalar $\lambda$.</p>
+<p><strong>The dimension.</strong> The map $(A,B)\mapsto T_{A,B}$ therefore has one-dimensional fibres, so its image has dimension $2n^2-1$, the same dimension as the span of the two copies.</p>
+<p><strong>The span.</strong> The linear span of the image is all of $\operatorname{End}(M_n)$, of dimension $n^4$: the family spans a space five times larger than itself at $n=2$ and twenty-five times larger at $n=4$.</p>
+<p><strong>The reading.</strong> The family of two-sided products is a cone of dimension $2n^2-1$ that spans an $n^4$-dimensional space. The pair is small, and the space it spans is large. The passage from the pair to the algebra is a passage from the cone to its span.</p>
+<p><strong>The check.</strong> The image's dimension was verified by the scalar fibre, and the span was verified by computing the rank of the $n^4\times 2n^2$ matrix of all matrix-unit products: the rank is $16,81,256,625$ for $n=2,3,4,5$.</p>
+<h2 id="what-the-pair-sees">What the Pair Sees</h2>
+<p><strong>The algebra.</strong> The pair determines the algebra it generates, and the algebra is $M_n$; the carrier structure is therefore determined by the pair.</p>
+<p><strong>The parameters.</strong> The pair does not determine its parameters, since $(A,B)$ and $(\lambda A,\lambda^{-1}B)$ give the same operator for every nonzero $\lambda$.</p>
+<p><strong>The reading.</strong> The pair sees the algebra and not the parameters. That is enough for the spin, because the spin is a property of the algebra and not of the parametrisation.</p>
+<h2 id="the-notation">The Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_A$</td>
+<td>$X\mapsto AX$</td>
+</tr>
+<tr>
+<td>$R_B$</td>
+<td>$X\mapsto XB$</td>
+</tr>
+<tr>
+<td>$T_{A,B}$</td>
+<td>$X\mapsto AXB$</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>the Casimir $-\sum_i\operatorname{ad}_{J_i}^2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The use.</strong> The argument uses $L$ and $R$ only through the algebra they generate, and that algebra is $M_n$. The Casimir is the invariant that makes the carriers visible, and it is computed from the pair without using anything else.</p>
+<h2 id="summary">Summary</h2>
+<p>The pair $(L,R)$ is two commuting copies of the principal copy, with the diagonal equal to the adjoint action. The pair's content is $V_j\boxtimes V_j$ and the diagonal's content is $\bigoplus_{k=0}^{n-1}V_k$. The maximal label doubles from $j$ to $2j=n-1$. At $n=2$ the three labels coincide with the biquaternion list; at $n\ge3$ they do not, and the pair keeps information the diagonal discards.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_A,R_B$</td>
+<td>the left and right multiplications</td>
+</tr>
+<tr>
+<td>$\mathfrak{gl}_n\oplus\mathfrak{gl}_n$</td>
+<td>the Lie algebra spanned by the pair</td>
+</tr>
+<tr>
+<td>$V_j\boxtimes V_j$</td>
+<td>the external tensor product of the two copies</td>
+</tr>
+<tr>
+<td>$m_a=j-a$</td>
+<td>the weights of the module</td>
+</tr>
+<tr>
+<td>$d=m_a-m_b$</td>
+<td>the weights of the diagonal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-decomposition-of-mnc.html">The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$</a>, for the theorem quoted here.</li>
+<li><a href="from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html">From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides</a>, for the case $n=2$.</li>
+<li><a href="the-one-sided-operators-of-mnc.html">The One-Sided Operators of $M_n(\mathbb{C})$</a>, for the left copy.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-of-mnc.html">The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</a>, for the two-sided family.</li>
+<li><a href="the-enveloping-operator-algebra-of-mnc.html">The Enveloping Operator Algebra of $M_n(\mathbb{C})$ and the Bi-module Structure</a>, for the pair as an algebra.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the case $n=4$ in four readings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

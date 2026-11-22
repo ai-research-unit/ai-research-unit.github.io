@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Length of an Endomorphism of the Biquaternion Algebra: Four Two-Sided Products — Biquaternion Universe</title>
+  <meta name="description" content="The question. A two-sided operator of the biquaternion algebra is a product of a left and a right multiplication,. The products form a cone and not a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-length-of-an-endomorphism-of-the-biquaternion-algebra-four-two-sided-products"><strong>The Length of an Endomorphism of the Biquaternion Algebra: Four Two-Sided Products</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> A two-sided operator of the biquaternion algebra is a product of a left and a right multiplication, $L_{\tilde Q_1}R_{\tilde Q_2}(\tilde X)=\tilde Q_1\tilde X\tilde Q_2$. The products form a cone and not a subspace, so the sum of two of them is rarely a third. This article asks for the least number of products whose sum is a given complex-linear endomorphism $M$, and for the largest value that least number takes.</p>
+<p><strong>The answer.</strong> Every complex-linear endomorphism of $\mathbb{B}$ is a sum of at most four two-sided operators, and four is the exact bound. The least number of terms is the rank of one $4\times4$ array $c(M)$, the array of the coefficients of $M$ in the sixteen basis products $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$. The bound four is the side of that array. The array exists because the sixteen products are linearly independent, and it is canonical because they are orthogonal for the Hilbert–Schmidt form.</p>
+<p><strong>The identity that carries the proof.</strong> $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$ is the ambient, and the two-sided family is the image of the tensor product,
+$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb{C}}(\mathbb{B}),\qquad \tilde Q_1\otimes\tilde Q_2\longmapsto L_{\tilde Q_1}R_{\tilde Q_2},
+$$
+an isomorphism because $\mathbb{B}\cong M_2(\mathbb{C})$ is a central simple algebra. A product is a pure tensor. A sum of $k$ products is a tensor of rank at most $k$, and the least $k$ is the tensor rank, which the coefficient array computes. <strong>The product condition becomes a rank condition, and the length becomes the rank of an array.</strong></p>
+<p><strong>Why the bound is not a tautology.</strong> The sixteen products could have spanned a proper subspace of the sixteen-dimensional ambient, and then no bound of four would exist. That they span is the first half of the theorem, and it is the isomorphism above read on the sixteen tensor products of a basis. The second half is sharpness: four is attained, by the quaternion conjugation, by the projection onto the scalar line, by the transpose of the model, and by every operator off a hypersurface. The naive objection that three terms should suffice by counting parameters is answered in §<em>The strongest objection, and its answer</em>.</p>
+<p><strong>The trap.</strong> The ambient is $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, of complex dimension sixteen, and not the algebra of the module endomorphisms $\operatorname{End}_{\mathbb{B}}(\mathbb{B})=\mathbb{B}^{\mathrm{opp}}$, of dimension four. The module endomorphisms are the right multiplications alone. A statement about "the endomorphisms of the algebra" is a statement about the first algebra, and the four of this article is a fact about it.</p>
+<p><strong>The second count, which is a different count.</strong> <em>The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</em> writes the same $M$ as a sum of rank-one endomorphisms with weights, and the number of terms there is the number of nonzero weights. That number is the operator rank of $M$. The count of this article is the rank of the array $c(M)$, and the two counts are different functions of $M$: the identity is one product and four atoms, the projection onto the scalar line is four products and one atom, and no inequality holds between the two numbers.</p>
+<p><strong>The boundary over the reals.</strong> Every product is complex-linear, so the real span of the sixteen products is thirty-two-dimensional inside the sixty-four-dimensional space of real-linear maps. Four terms cover every complex-linear endomorphism and no real-linear map outside that space. A general real-linear endomorphism needs eight terms, four for its linear part and four for its antilinear part.</p>
+<p><strong>Boundaries.</strong> The two families and their laws are <em>Operators Acting on One Side</em> and <em>Operators Acting on Two Sides</em>; the ambient space is <em>The Endomorphisms of the Biquaternion Algebra</em>; the sixteen products in the two frames of the category are <em>$M_4(\mathbb{C})$ Axis-Free Representation : Operators</em> and <em>$M_4(\mathbb{C})$ Pauli Representation : Operators</em>; the theorem that the length is the array rank at the matrix size is <em>$M_2(\mathbb{C})$ Pauli Representation : Operators</em> and, in the algebra-free form, <em>The Length and the Two Ranks on $M_n(\mathbb{C})$</em>; the Segre cone and the orthogonality of the products are <em>The Two-Sided Operators and the Segre Cone at $n=4$</em>; the other decomposition is <em>The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</em>; and the split category is <em>$M_2(\mathbb{R})$ Standard Representation : Operators</em>.</p>
+<p><strong>The letters.</strong> $\mathbb{B}$ is the biquaternion algebra with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. The letters, the four families and the adjoint signs are those of <em>Operator Family Conventions</em>: $L$, $R$, $LR$ and $\Theta$. The sixteen basis products are $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, with Greek indices running over $t,x,y,z$. The coefficient array is $c(M)$, the length is $\ell(M)$, $\natural$ is the quaternion conjugation, $\operatorname{Sc}$ the scalar part, and $\operatorname{rank}$ the rank of a matrix.</p>
+<p><strong>The order of the article.</strong> The ambient and the two endomorphism algebras come first, because the word <em>endomorphism</em> has to be fixed before it is counted. The basis theorem follows, then the array, then the length, then the witnesses that make four sharp. The ladder of strata, the comparison with the singular decomposition, the construction of a decomposition and the list of what the length is not close the argument. The real boundary and the split category are stated last, because they are statements about the scope of the theorem and not about the algebra.</p>
+<h2 id="the-ambient-and-the-two-endomorphism-algebras">The Ambient and the Two Endomorphism Algebras</h2>
+<p><strong>The algebra and the two endomorphism algebras.</strong> Two different endomorphism algebras are read on $\mathbb{B}$, and the difference is the whole of this section.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>what it is</th>
+<th>complex dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{End}_{\mathbb{C}}(\mathbb{B})$</td>
+<td>all complex-linear maps, the ambient</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{\mathbb{B}}(\mathbb{B})$</td>
+<td>the maps commuting with every left multiplication</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The module endomorphisms are the right multiplications.</strong> A map $F$ with $F(\tilde Q\tilde X)=\tilde QF(\tilde X)$ for all $\tilde Q$ is determined by $F(e_t)$, and it is the right multiplication by $F(e_t)$. So $\operatorname{End}_{\mathbb{B}}(\mathbb{B})=\{R_{\tilde Q}\}=\mathbb{B}^{\mathrm{opp}}$, of dimension four. A two-sided operator with a non-central left multiplier is not of this kind: $L_{\tilde Q_1}R_{\tilde Q_2}(\tilde Q\tilde X)=\tilde Q_1\tilde Q\tilde X\tilde Q_2$ differs from $\tilde Q\tilde Q_1\tilde X\tilde Q_2$ by the commutator of $\tilde Q$ with $\tilde Q_1$. The family of the products is therefore far larger than the module endomorphisms, and the ambient of the theorem is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$.</p>
+<p><strong>The identity of the two algebras, and where it comes from.</strong> That $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ is $M_4(\mathbb{C})$ is the matrix model of the algebra: a complex-linear map of a four-dimensional complex space has a $4\times4$ matrix once a basis is chosen, and a change of basis changes the matrix by a similarity. The two-sided family gives a second description of the same algebra, with no choice of basis: $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, where the first slot acts on the left and the second on the right. The double centraliser theorem identifies the two descriptions, and the identification is the theorem of the next section.</p>
+<p><strong>Three four-by-four objects, and only one of them is the operator.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>size</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathsf M_2(\tilde Q)$</td>
+<td>$2\times2$</td>
+<td>the element, in the model of the algebra</td>
+</tr>
+<tr>
+<td>$[M]$</td>
+<td>$4\times4$</td>
+<td>the operator, in a basis of the carrier</td>
+</tr>
+<tr>
+<td>$c(M)$</td>
+<td>$4\times4$</td>
+<td>the operator, in the basis $L_{e_\mu}R_{e_\nu}$ of products</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three are different objects of three different spaces.</strong> The element has two rows and two columns; the operator has four and four; the array has four and four as well, but it is written in a basis of operators and not in a basis of the carrier. Two of the three share the size and none of the three shares the meaning. The length reads the third. The rank of the second is the operator rank, which the singular decomposition counts, and the rank of the first is the rank of the element, which the element theory counts.</p>
+<p><strong>The two parameters and the one redundancy.</strong> The pair $(\tilde Q_1,\tilde Q_2)$ runs over a space of complex dimension eight, and the operator depends on it through seven, because $L_{\lambda\tilde Q_1}R_{\lambda^{-1}\tilde Q_2}=L_{\tilde Q_1}R_{\tilde Q_2}$ for every $\lambda\neq0$. The image is therefore a cone of dimension seven inside a space of dimension sixteen, of codimension nine.</p>
+<h2 id="the-sixteen-products-are-a-basis">The Sixteen Products Are a Basis</h2>
+<p><strong>The definition.</strong> For two elements the two-sided operator is
+$$
+L_{\tilde Q_1}R_{\tilde Q_2}:\tilde X\longmapsto\tilde Q_1\tilde X\tilde Q_2 ,
+$$
+and the sixteen operators $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, with $\mu,\nu\in\{t,x,y,z\}$, are the basis products.</p>
+<p><strong>The composition law.</strong> Two products compose to one product,
+$$
+\bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)\bigl(L_{\tilde P_1}R_{\tilde P_2}\bigr)
+=L_{\tilde Q_1\tilde P_1}R_{\tilde P_2\tilde Q_2},
+$$
+because the middle factors meet as $\tilde Q_2\tilde P_1$ and the two multiplication maps act on opposite sides. The product family is closed under composition and not under addition. The two facts are the source of everything that follows: the first makes the family an algebra of operators, the second makes the length a nontrivial number.</p>
+<p><strong>Theorem (the products are a basis).</strong> The sixteen operators $T_{\mu\nu}$ are linearly independent, and their complex span is the whole of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$.</p>
+<p><em>Proof.</em> The ambient has complex dimension sixteen and there are sixteen products, so independence and spanning are one statement. The products are pairwise orthogonal for the Hilbert–Schmidt form with squared norm four, a finite computation from the multiplication table that is carried out in <em>The Two-Sided Operators and the Segre Cone at $n=4$</em>; sixteen nonzero pairwise orthogonal vectors are independent, so they are a basis.</p>
+<p><strong>The same theorem without a computation.</strong> The assignment $\beta(\tilde Q_1\otimes\tilde Q_2)=L_{\tilde Q_1}R_{\tilde Q_2}$ is the standard algebra isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}^{\mathrm{opp}}\to\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ for a central simple algebra. Since $\mathbb{B}\cong M_2(\mathbb{C})$, the left side is $M_2\otimes M_2\cong\operatorname{End}(M_2)$, and the tensor products of a basis with a basis are a basis. The images of the sixteen tensor products $e_\mu\otimes e_\nu$ are the sixteen products. The two proofs are the two readings of one fact: the orthogonal basis is the computation, the tensor isomorphism is the reason.</p>
+<p><strong>The orthogonality, which makes the array computable.</strong> With the coefficient inner product $\langle\tilde X,\tilde Y\rangle=\sum_\mu\bar X_\mu Y_\mu$, the Hilbert–Schmidt form on the ambient is $\langle M,N\rangle_{\mathrm{HS}}=\operatorname{tr}(M^{\dagger}N)$, and the basis products are orthogonal with a constant squared norm,
+$$
+\operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}T_{\rho\sigma}\bigr)=4\,\delta_{\mu\rho}\delta_{\nu\sigma}.
+$$
+Consequently the coefficient array of an operator is one quarter of a trace,
+$$
+c(M)_{\mu\nu}=\tfrac14\operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}M\bigr),
+$$
+and the expansion $M=\sum_{\mu\nu}c(M)_{\mu\nu}T_{\mu\nu}$ is exact for every $M$. The constant four is the squared norm of a basis product and depends on the form $\operatorname{tr}(M^{\dagger}N)$ taken without a normalising denominator; another normalisation of the trace form rescales $c$ by a nonzero constant and leaves its rank, hence the length, unchanged. The array is not an artefact of a clever choice of basis: the products are an orthogonal basis, so the array is as canonical as the coordinates of a vector in an orthogonal frame.</p>
+<p><strong>The single products are one cone.</strong> The set of products is the image of the bilinear map $(\tilde Q_1,\tilde Q_2)\mapsto L_{\tilde Q_1}R_{\tilde Q_2}$ from $\mathbb{C}^4\times\mathbb{C}^4$, so it is the cone over the Segre variety $\mathbb{P}^3\times\mathbb{P}^3$, of complex dimension $6+1=7$. In the array picture it is the set of arrays of rank at most one. The identification of the two descriptions is the content of <em>The Two-Sided Operators and the Segre Cone at $n=4$</em>; this article uses it in one direction only, that a product has an array of rank one.</p>
+<h2 id="the-length-is-the-rank-of-one-array">The Length Is the Rank of One Array</h2>
+<p><strong>Definition.</strong> The <strong>length</strong> of an operator is the least number of products whose sum it is,
+$$
+\ell(M)=\min\Bigl\{k:\ M=L_{\tilde Q_1}R_{\tilde P_1}+\cdots+L_{\tilde Q_k}R_{\tilde P_k}\Bigr\},
+$$
+with $\ell(0)=0$.</p>
+<p><strong>Theorem (the length is the array rank).</strong> For every endomorphism $M$ of $\mathbb{B}$,
+$$
+\ell(M)=\operatorname{rank}c(M)\in\{0,1,2,3,4\}.
+$$</p>
+<p><em>Proof.</em> The array of a single product is an outer product, $c(L_{\tilde Q_1}R_{\tilde Q_2})=[\tilde Q_1][\tilde Q_2]^{\mathsf T}$, where the bracket is the coefficient column. Hence the array of a sum of $k$ products is a sum of $k$ arrays of rank one, of rank at most $k$, and $\ell(M)\ge\operatorname{rank}c(M)$. Conversely, let $c(M)=UV$ with $U$ of size $4\times r$ and $V$ of size $r\times4$, $r=\operatorname{rank}c(M)$. The $k$-th column of $U$ is the coefficient column of an element $\tilde Q_k$ and the $k$-th row of $V$ is the transpose of the coefficient column of an element $\tilde P_k$, by the surjectivity of the coefficient map; then $M=\sum_{k\le r}L_{\tilde Q_k}R_{\tilde P_k}$, and $\ell(M)\le r$.</p>
+<p><strong>The corollary.</strong> Every endomorphism is a sum of at most four products, and the bound four is the side of the array, that is the complex dimension of the algebra. The number is not a property of the map; it is the size of the algebra in which the map is written.</p>
+<p><strong>The invariance under a change of basis.</strong> A change of basis of the algebra acts on the two slots of the tensor independently, so it replaces $c$ by $S_1cS_2$ with $S_1$ and $S_2$ invertible. Both factors preserve the rank. The length is therefore a property of the operator and not of the frame in which the array is written.</p>
+<p><strong>The strongest objection, and its answer.</strong> <em>The bound of four is trivial, since a $4\times4$ array has rank at most four.</em> The objection is right about the bound and wrong about the content. The bound is trivial once the array is written. What is not trivial is that the array exists, which is the independence theorem of the previous section, and that the bound is attained, which is the subject of the next. The same objection in another form says that a two-sided operator has seven effective parameters, so two of them have fourteen and three have twenty-one, and three should suffice by counting. The naive count is wrong, because the map from a $k$-tuple of products to its sum is not injective: a linear recombination of the $k$ tuples leaves the sum unchanged, which is the gauge freedom used in §<em>How a Decomposition Is Found</em>, so the $7k$ parameters overcount. Seven per product give fourteen for two terms, but the image of the pair of tuples is only twelve-dimensional. The right count is the dimension of the image, the determinantal variety of the arrays of rank at most $k$: twelve for two terms and fifteen for three, and fifteen is a hypersurface in the sixteen-dimensional ambient. That count is the rank of the array, and it gives four.</p>
+<h2 id="four-is-attained">Four Is Attained</h2>
+<p><strong>The generic value.</strong> The condition $\ell(M)\le3$ is $\det c(M)=0$, a single polynomial equation. The operators of length four are therefore the complement of a hypersurface: they are open and dense. Four is the value on almost every operator, and no smaller bound holds.</p>
+<p><strong>Witnesses, all elementary.</strong> The following operators are the ones a reader of the category meets first, and their lengths settle the question.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>definition</th>
+<th>operator rank</th>
+<th>array</th>
+<th>length</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the identity</td>
+<td>$\tilde X\mapsto\tilde X$</td>
+<td>$4$</td>
+<td>$\operatorname{diag}(1,0,0,0)$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>a left multiplication</td>
+<td>$\tilde X\mapsto\tilde Q\tilde X$</td>
+<td>$0,2,4$, twice the rank of $\tilde Q$</td>
+<td>$[\tilde Q][e_t]^{\mathsf T}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>the quaternion conjugation</td>
+<td>$\tilde X\mapsto\tilde X^{\natural}$</td>
+<td>$4$</td>
+<td>$-\tfrac12\mathrm I_4$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>the projection onto the scalar line</td>
+<td>$\tilde X\mapsto\operatorname{Sc}(\tilde X)e_t$</td>
+<td>$1$</td>
+<td>$\tfrac14\operatorname{diag}(1,-1,-1,-1)$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>the transpose in the model</td>
+<td>$\mathsf Y\mapsto\mathsf Y^{\mathsf T}$</td>
+<td>$4$</td>
+<td>$\tfrac12\operatorname{diag}(1,-1,1,-1)$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The conjugation is minus one half of the diagonal sum.</strong> The array $-\tfrac12\mathrm I_4$ is the array of $-\tfrac12\sum_\mu T_{\mu\mu}$, so the quaternion conjugation has the explicit four-term form
+$$
+\tilde X^{\natural}=-\tfrac12\sum_{\mu\in\{t,x,y,z\}}e_\mu\tilde X e_\mu ,
+$$
+which is a finite computation from the multiplication table, and the four terms are the minimum, because the array is a nonzero multiple of the identity, of rank four. This is the cleanest sharpness statement in the algebra: the conjugation is the most natural operator the algebra carries, and it is not a dressed multiplication.</p>
+<p><strong>The projection is the operator of smallest image and largest length.</strong> The map $\tilde X\mapsto\operatorname{Sc}(\tilde X)e_t$ has image of rank one, and its length is four. Its array is $\tfrac14\operatorname{diag}(1,-1,-1,-1)$, of rank four, so four products are needed for an operator whose image is a line. The map is $\tfrac12(\mathrm I+\natural)$, and this identity reads its length a second way: the array of the identity operator, which is the single product $T_{tt}$, has rank one, and that of the conjugation has rank four, and the half-sum is a diagonal array with four nonzero entries.</p>
+<p><strong>The rank-one stratum is not short.</strong> The operators of length at most three are the zeros of the polynomial $\det c$, so they form a proper closed subset of the rank-one stratum, and the operators of length four are dense in that stratum. A rank-one operator of length four can be written down with rational entries: the operator whose matrix is $uv^{\mathsf T}$ with $u=(1,-1,2,-1)$ and $v=(3,2,3,2)$ in the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ has operator rank one and coefficient array
+$$
+\tfrac14\begin{pmatrix}5&2&3&-12\\-12&3&-2&-5\\3&0&-13&-2\\2&13&0&3\end{pmatrix},
+$$
+of rank four: the determinant of this integer matrix is $-33124$, so the array, one quarter of it, has determinant $-33124/256\neq0$ and rank four by inspection. The four terms are minimal, and the array is exact, so the example does not rest on a numerical tolerance. <strong>The length of an operator is therefore not bounded by any function of the rank of its image</strong>: the smallest general bound, four, is already needed on the stratum of image rank one.</p>
+<p><strong>The transpose and the conjugation are one phenomenon.</strong> In the canonical frame the transpose fixes $e_t,\vec e_x,\vec e_z$ and negates $\vec e_y$, while the conjugation negates the three imaginary units and fixes $e_t$. Both are signed diagonal maps, and both have arrays of rank four. The transpose is the subject of <em>The Transposition of the Two Sides</em>, and <em>$M_2(\mathbb{C})$ Pauli Representation : Operators</em>, §<em>The Transpose</em>, proves that it needs four pairs and no fewer.</p>
+<h2 id="the-ladder">The Ladder</h2>
+<p><strong>The strata.</strong> The set of operators of length at most $r$ is the inverse image under the linear isomorphism $c$ of the determinantal variety of the arrays of rank at most $r$, whose complex dimension is $2r\cdot4-r^2=8r-r^2$. The values at $r=0,1,2,3,4$ are the whole ladder.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$r$</th>
+<th>$\dim\{M:\ell(M)\le r\}$</th>
+<th>the set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>the zero operator</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$7$</td>
+<td>the cone of products, the Segre cone</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$12$</td>
+<td>the sums of two products</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$15$</td>
+<td>a hypersurface, the complement of the open set of length four</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$16$</td>
+<td>the whole ambient</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every value occurs.</strong> Each $r$ from zero to four is the length of some operator, because a $4\times4$ array of rank $r$ exists for each $r$: take the array with $r$ ones down the diagonal.</p>
+<p><strong>The increments.</strong> The ladder grows by $7,5,3,1$. The last increment is the single condition $\det c\neq0$: the set of operators of length at most three is closed, and its complement, the set of length four, is open.</p>
+<p><strong>What the ladder forbids.</strong> A bound of the form $\ell(M)\le f(\operatorname{rank}M)$ with $f(1)\le3$ is false: the projection onto the scalar line has image rank one and length four. No bound that grows with the image rank is available either, because the rank-one operators of length four are dense in the rank-one stratum, so the length is four on almost every rank-one operator.</p>
+<h2 id="two-lengths-two-arrays">Two Lengths, Two Arrays</h2>
+<p><strong>The other decomposition.</strong> <em>The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</em> writes an endomorphism as a sum of rank-one endomorphisms $\mathcal P_{\tilde U,\tilde V}(\tilde X)=\tilde U\langle\tilde X,\tilde V\rangle_{*}$, with weights $\rho_1\ge\dots\ge\rho_4\ge0$, and the number of terms is the number of nonzero weights, at most four. That count is the rank of the operator matrix $\mathsf M$, written in a frame orthonormal for the Hermitian form.</p>
+<p><strong>The two arrays are different.</strong> Both are arrays of the same operator, and neither is the other rewritten in another basis of one space: $c(M)$ is a tensor in $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}$, written in the basis $e_\mu\otimes e_\nu$, while $\mathsf M$ is a map $\mathbb{C}^4\to\mathbb{C}^4$, written in a frame of four elements. The two spaces are different even though both have dimension sixteen, and the two ranks are unrelated: no inequality holds between them, and the table shows the two extreme disagreements.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator</th>
+<th>multiplicative length, $\operatorname{rank}c$</th>
+<th>singular length, $\operatorname{rank}\mathsf M$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the identity</td>
+<td>$1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>the projection onto the scalar line</td>
+<td>$4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>a generic operator</td>
+<td>$4$</td>
+<td>$4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why they disagree.</strong> The singular decomposition uses an orthonormal frame, in which the sixteen rank-one atoms are spread over the whole ambient; the multiplicative decomposition uses the products, which are a seven-dimensional cone inside it. An operator that is a single atom, such as the projection, is far from the cone; an operator that is a single product, such as the identity, is far from a single atom of the orthonormal frame. The two decompositions answer two different questions: how many orthogonal directions does the map use, and how many algebra multiplications does it take.</p>
+<p><strong>The corpus sentence that the projection refutes.</strong> It has been stated in the split category that the coefficient rank on operators of image rank one takes the values one and two only. The example of that statement, the map $\tilde X\mapsto(x_t+2x_x+3x_y+4x_z)e_t$, is right: it has image rank one and length two. The generalisation from it is wrong, and the projection onto the scalar line refutes it. The refutation stays inside the split category, because the projection there has the array $\tfrac14\operatorname{diag}(1,1,1,-1)$, of rank four, as §<em>The Split Category</em> displays. <em>$M_2(\mathbb{R})$ Standard Representation : Operators</em> now states the corrected form: the rank of the array is not bounded by a function of the rank of the image, and the length four is attained on the rank-one stratum.</p>
+<h2 id="how-a-decomposition-is-found">How a Decomposition Is Found</h2>
+<p><strong>The factorisation.</strong> The proof of the theorem is constructive. Compute the array $c(M)$, factor it as $UV$ with $U$ of size $4\times r$ and $V$ of size $r\times4$, read the columns of $U$ and the rows of $V$ as coefficient columns of elements, and sum the $r$ products. The four steps are the four steps of a rank factorisation of a matrix, and they cost nothing beyond the array.</p>
+<p><strong>The decomposition is not unique.</strong> A factorisation $c=UV$ can be replaced by $c=(UG)(G^{-1}V)$ for every invertible $r\times r$ matrix $G$, and the two factorisations give different decompositions of the same operator. The set of decompositions of an operator of length $r$ is therefore a stratum and not a point: the gauge group $\mathrm{GL}_r(\mathbb{C})$ acts on the terms. Two facts follow. The four terms of a decomposition are not determined by the operator, and a question about <em>the</em> terms of a decomposition is a question about a choice.</p>
+<p><strong>The balanced choice.</strong> The singular value decomposition of the array, $c=U\Sigma W^{\dagger}$, fixes the gauge up to phases and permutations: with $U$ of size $4\times4$ and $W$ unitary, the terms $L_{\tilde Q_k}R_{\tilde P_k}$ with $\tilde Q_k$ read off the $k$-th column of $U\Sigma$ and $\tilde P_k$ off the $k$-th row of $W^{\dagger}$ carry the singular values once each. This is the natural normal form of the decomposition, and it is the one a computation produces.</p>
+<p><strong>A caution on the minimality.</strong> The factorisation gives the smallest number of terms only when the array is factored at its rank. A factorisation at the full size four gives four terms for every operator, including the identity, and the identity is one term.</p>
+<p><strong>Nothing is required of the multipliers.</strong> The multipliers of a decomposition may be zero divisors, and often are. The four terms of the conjugation are $-\tfrac12T_{\mu\mu}$, each of which has operator rank four and is invertible, and their sum has no invertible structure of its own. Conversely, a product with two non-invertible multipliers is still a product, of length one. In $\mathbb{B}\cong M_2(\mathbb{C})$ the two classes coincide, because an element is a zero divisor exactly when its $2\times2$ image is singular: every nonzero element is either invertible or a zero divisor, so no third case exists. The length counts terms, not the quality of the terms.</p>
+<h2 id="what-the-length-is-not">What the Length Is Not</h2>
+<p><strong>It is not the operator rank.</strong> The identity has operator rank four and length one; the projection onto the scalar line has operator rank one and length four. The two numbers are independent, and the two examples give both directions.</p>
+<p><strong>It is not the rank of the element.</strong> The rank of an element is the rank of its $2\times2$ image, a number between zero and two. The length is a property of an operator and the rank of an element is a property of an element: the identity operator has length one and the unit has rank two.</p>
+<p><strong>It is not invertibility.</strong> A product of two units is invertible and has length one; the conjugation is invertible and has length four.</p>
+<p><strong>It is not unique.</strong> The gauge group of the previous section acts on the terms, so a decomposition is a stratum and not a point.</p>
+<p><strong>It is not additive.</strong> The products are a cone and not a subspace: the sum of two products is a product only when the two arrays share a factor, and in general two arrays of rank one add to an array of rank two. The length is not a linear invariant, and the strata are determinantal varieties and not subspaces. Nor is the length bounded below by the lengths of the summands: two operators of length four can add to an operator of length two, as the companion article shows with two coordinate truncations.</p>
+<p><strong>It is submultiplicative.</strong> Since a product composes with a product into a product, a sum of $k$ products composed with a sum of $m$ products is a sum of $km$ products, so
+$$
+\ell(MN)\le\ell(M)\,\ell(N).
+$$
+The bound of sixteen is never attained by generic operators, and the composition of two generic operators of length four has length four: when $M$ is invertible as an operator the map $N\mapsto MN$ is a linear bijection of the ambient, so it carries the dense open set $\{\ell=4\}$ to itself. The bound holds and is far from sharp.</p>
+<h2 id="the-real-linear-boundary">The Real-Linear Boundary</h2>
+<p><strong>What the products span over the reals.</strong> Each $T_{\mu\nu}$ is complex-linear, so the real span of the sixteen products contains their complex combinations, of real dimension thirty-two, and nothing more:
+$$
+\dim_{\mathbb{R}}\operatorname{span}_{\mathbb{R}}\{T_{\mu\nu}\}=32\quad\text{out of}\quad\dim_{\mathbb{R}}\operatorname{End}_{\mathbb{R}}(\mathbb{B})=64 .
+$$</p>
+<p><strong>The consequence for the claim.</strong> <em>Endomorphism</em> in the theorem means complex-linear. A general real-linear map is not a sum of four products: the sums of four complex-linear products are exactly the complex-linear maps of length at most four, which is the whole of the thirty-two-dimensional space, and no real-linear map outside it is reached.</p>
+<p><strong>The bound over the reals.</strong> Write $J$ for the multiplication by $i$, a real-linear map. Every real-linear $F$ splits as $F=\tfrac12(F-iFi)+\tfrac12(F+iFi)$, and the two pieces are complex-linear and complex-antilinear. The antilinear piece is $N\circ J$ with $N$ complex-linear, so it is a sum of at most four products composed with $J$. Hence every real-linear endomorphism is a sum of at most eight terms drawn from the two families $\{T_{\mu\nu}\}$ and $\{T_{\mu\nu}J\}$, and a general one needs eight, because for a general real-linear map both the linear and the antilinear part are of length four, and the split is unique.</p>
+<p><strong>The operators that stay inside the bound.</strong> Every complex-linear operator the category writes on the algebra falls under the bound: the quaternion conjugation $\natural$, the transposes of the frames, the Peirce corner projections, the adjoint $\mathrm{Ad}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{-1}}$, the Hermitian pair $L_{\tilde Q}R_{\tilde Q^{*}}$, which is complex-linear because the second slot is a fixed element. The dagger and the star are conjugate-linear, so they are not endomorphisms of the complex vector space at all: they are read in the corpus as ties and as forms, and when one is treated as a map it lies in the second family $\{T_{\mu\nu}J\}$.</p>
+<h2 id="the-split-category">The Split Category</h2>
+<p><strong>The same theorem, a different algebra.</strong> The split algebra $\mathbb{B}_{\mathrm{spl}}$ is $M_2(\mathbb{R})$ in the Pauli dictionary, and the theorem holds with the same proof and the same bound: $\mathbb{B}_{\mathrm{spl}}\otimes\mathbb{B}_{\mathrm{spl}}^{\mathrm{opp}}\cong M_4(\mathbb{R})$, the sixteen products are a basis, and the length is the rank of the array. The algebra is split and not a division algebra, and that difference does not enter the theorem, which uses only the dimension and the centrality.</p>
+<p><strong>The same witnesses, with other signs.</strong> The conjugations of the split category differ from those of the biquaternion category, so the arrays of the same operators differ, and the ranks do not. The projection onto the scalar line has the array $\tfrac14\operatorname{diag}(1,1,1,-1)$, of rank four, and the length four. The conjugation has the array $\tfrac12\operatorname{diag}(-1,1,1,-1)$, of rank four: the same operator carries a different array and the same length, because the four diagonal products distribute their signs differently across the four coordinates. The rank-one operator of length four exists with rational entries there too.</p>
+<h2 id="summary">Summary</h2>
+<p>Every complex-linear endomorphism of the biquaternion algebra is a sum of at most four two-sided operators $L_{\tilde Q_1}R_{\tilde Q_2}$, and four is exact.</p>
+<p>The number of terms is the rank of one $4\times4$ array, the array of the operator in the sixteen basis products; the array is canonical because the products are orthogonal for the Hilbert–Schmidt form, with squared norm four.</p>
+<p>The bound holds because the sixteen products are linearly independent, which is $\mathbb{B}\otimes\mathbb{B}^{\mathrm{opp}}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ read on the sixteen tensor products of a basis; it is sharp because $\det c=0$ is the condition for three terms, a hypersurface.</p>
+<p>Four is attained by the quaternion conjugation, which is $-\tfrac12\sum_\mu L_{e_\mu}R_{e_\mu}$; by the projection onto the scalar line, whose image is a line; by the transpose of the model; and by every operator off a hypersurface.</p>
+<p>The theorem is about $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$ and not about the module endomorphisms $\mathbb{B}^{\mathrm{opp}}$, of dimension four; over the reals the products span thirty-two of sixty-four dimensions, and a general real-linear map needs eight terms.</p>
+<p>The four of this article is not the four of the singular decomposition. The two decompositions use two different arrays, and they disagree at the two most elementary operators: the identity is one product and four atoms, the projection onto the scalar line is four products and one atom.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+<th>article</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra, basis $e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td><em>Algebra and Element Conventions</em></td>
+</tr>
+<tr>
+<td>$L_{\tilde Q}$, $R_{\tilde Q}$</td>
+<td>left and right multiplication</td>
+<td><em>Operator Family Conventions</em></td>
+</tr>
+<tr>
+<td>$L_{\tilde Q_1}R_{\tilde Q_2}$</td>
+<td>the two-sided operator $\tilde X\mapsto\tilde Q_1\tilde X\tilde Q_2$</td>
+<td><em>Operators Acting on Two Sides</em></td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>$L_{e_\mu}R_{e_\nu}$, the sixteen basis products</td>
+<td>this article</td>
+</tr>
+<tr>
+<td>$c(M)$</td>
+<td>the coefficient array, $c_{\mu\nu}=\tfrac14\operatorname{tr}(T_{\mu\nu}^{\dagger}M)$</td>
+<td><em>The Length and the Two Ranks on $M_n(\mathbb{C})$</em></td>
+</tr>
+<tr>
+<td>$\ell(M)$</td>
+<td>the length, the least number of products</td>
+<td><em>The Length and the Two Ranks on $M_n(\mathbb{C})$</em></td>
+</tr>
+<tr>
+<td>$\natural$</td>
+<td>the quaternion conjugation</td>
+<td><em>The Element, the Coordinates and the Conjugations in the Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\operatorname{Sc}$</td>
+<td>the scalar part</td>
+<td><em>Algebra and Element Conventions</em></td>
+</tr>
+<tr>
+<td>$\operatorname{rank}$</td>
+<td>the rank of a matrix</td>
+<td><em>Algebra and Element Conventions</em></td>
+</tr>
+<tr>
+<td>$\mathcal P_{\tilde U,\tilde V}$</td>
+<td>the unweighted rank-one endomorphism of the singular decomposition</td>
+<td><em>The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</em></td>
+</tr>
+<tr>
+<td>$\rho_k$</td>
+<td>the weights of the singular decomposition</td>
+<td><em>The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</em></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>, for the bound of four pairs at the element size and the proof that the transpose needs four.</li>
+<li><a href="the-length-and-the-two-ranks-on-mnc.html">The Length and the Two Ranks on $M_n(\mathbb{C})$</a>, for the theorem that the length is the array rank at every $n$, and for the determinantal strata.</li>
+<li><a href="the-length-and-the-two-ranks-at-n-4.html">The Length and the Two Ranks at $n=4$</a>, for the same theorem at the size of this algebra, and for an operator of rank three.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-at-n-4.html">The Two-Sided Operators and the Segre Cone at $n=4$</a>, for the rank-one criterion, the cone, and the orthogonality $\operatorname{tr}(T^{\dagger}T)=4\delta$.</li>
+<li><a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a> and <a href="m4c-pauli-representation-operators.html">$M_4(\mathbb{C})$ Pauli Representation : Operators</a>, for the sixteen basis operators and the coefficient arrays in the two frames of the category.</li>
+<li><a href="the-svd-decomposition-of-endomorphisms-of-the-biquaternion-algebra.html">The SVD Decomposition of Endomorphisms of the Biquaternion Algebra</a>, for the other decomposition, its weights, and the comparison with the products.</li>
+<li><a href="the-transposition-of-the-two-sides.html">The Transposition of the Two Sides</a>, for the conversion between the one-sided families and the operator that the transpose of the model represents.</li>
+<li><a href="m2r-standard-representation-operators.html">$M_2(\mathbb{R})$ Standard Representation : Operators</a>, for the split category and the corrected statement on the rank-one stratum.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

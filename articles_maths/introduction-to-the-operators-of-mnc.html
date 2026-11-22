@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Operators of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Which operators on the matrix algebra does this series study, how do they fit together, and in what order should they be read?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-operators-of-math0"><strong>Introduction to the Operators of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Which operators on the matrix algebra $M_n(\mathbb{C})$ does this series study, how do they fit together, and in what order should they be read?</p>
+<p><strong>The answer in one line.</strong> Three families act on $M_n$,
+$$
+L_A(X)=AX,\qquad R_B(X)=XB,\qquad T_{A,B}(X)=AXB,
+$$
+they satisfy $T_{A,B}=L_AR_B=R_BL_A$, and every other object of the series is one of these three read through a basis, a block, an adjoint or a group action.</p>
+<p><strong>Why the article is needed.</strong> The biquaternion series is a single story of $4\times4$ matrices, and at $n=2$ the three families, the transpose, the conjugation and the structure group all sit in one frame. At general $n$ they separate: the elements are $n\times n$, the operators $n^2\times n^2$, the transpose is no longer a conjugation, and the two sides are no longer exchangeable by an element of the algebra. A reader who starts in the middle will import the $n=2$ habits.</p>
+<p><strong>Boundaries.</strong> The algebra itself is <em>The Matrix Algebra $M_n(\mathbb{C})$</em>. The one-sided families are <em>The One-Sided Operators of $M_n(\mathbb{C})$</em>, the two-sided one <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>, and the rank theory <em>The Length and the Two Ranks on $M_n(\mathbb{C})$</em>. The biquaternion originals are <em>Introduction to the Operators of the Biquaternion Algebra</em> and <em>Operators Acting on One Side</em>.</p>
+<p><strong>Conventions.</strong> $M_n=M_n(\mathbb{C})$, $n\ge2$, and $E_{ij}$ are the matrix units. Column stacking gives $L_A=\mathrm I\otimes A$, $R_B=B^{\mathsf T}\otimes\mathrm I$, $T_{A,B}=B^{\mathsf T}\otimes A$. The Hilbert–Schmidt form is $\langle S,T\rangle=\operatorname{tr}(S^{*}T)$. The principal copy of $SU(2)$ in $GL_n$ is fixed once and for all, with generators $J_x,J_y,J_z$ and carriers $V_k$, $0\le k\le n-1$.</p>
+<h2 id="the-three-families-at-a-glance">The Three Families at a Glance</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>definition</th>
+<th>dimension</th>
+<th>product law</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>$L_A(X)=AX$</td>
+<td>$n^2$</td>
+<td>$L_AL_B=L_{AB}$</td>
+</tr>
+<tr>
+<td>right</td>
+<td>$R_B(X)=XB$</td>
+<td>$n^2$</td>
+<td>$R_AR_B=R_{BA}$</td>
+</tr>
+<tr>
+<td>two-sided</td>
+<td>$T_{A,B}(X)=AXB$</td>
+<td>spans $n^4$</td>
+<td>$T_{A,B}T_{C,D}=T_{AC,DB}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four numbers.</strong> $1$, the scalars; $n^2$, each one-sided copy; $2n^2-1$, the span of the two copies; $n^4$, the whole operator algebra. The ladder $1<n^2<2n^2-1<n^4$ holds for $n\ge2$, with the first two coinciding only at $n=1$.</p>
+<p><strong>The two copies commute.</strong> $L_AR_B=R_BL_A$, so the pair $(L_A,R_B)$ is a commuting pair, and the two-sided family is its product. This is the single most used fact of the series and the reason the tensor reading works.</p>
+<h2 id="what-exists-at-every-math45">What Exists at Every $n$</h2>
+<p><strong>The carrier.</strong> $M_n$ carries the two-sided action of $GL_n\times GL_n$ by $(G,H)\cdot X=GXH$, with kernel the scalars $(\lambda\mathrm I,\lambda^{-1}\mathrm I)$. The group of the action is $(GL_n\times GL_n)/\mathbb{C}^{\times}$, of complex dimension $2n^2-1$, the dimension of the one-sided span.</p>
+<p><strong>The invariants.</strong> The rank, $\operatorname{rank}(AXB)=\operatorname{rank}A\operatorname{rank}B$ at the level of a single product; the trace $n\operatorname{tr}A\operatorname{tr}B$; the determinant $(\det A\det B)^n$; the singular values $\sigma_i(A)\sigma_j(B)$.</p>
+<p><strong>The adjoints.</strong> $L_A^{\dagger}=L_{A^{*}}$ and $R_B^{\dagger}=R_{B^{*}}$ for the Hilbert–Schmidt form; $L_A^{\mathsf T}=L_{A^{\mathsf T}}$ for the transposed bilinear form. The two adjoints conjugate the parameters and exchange no slot, at every $n$.</p>
+<p><strong>The matrices.</strong> In column stacking the three families are $\mathrm I\otimes A$, $B^{\mathsf T}\otimes\mathrm I$ and $B^{\mathsf T}\otimes A$. The transpose on the right is the trace of the anti-representation law and cannot be removed by a change of carrier basis.</p>
+<p><strong>The spin content.</strong> Under conjugation by the principal copy, $M_n=\bigoplus_{k=0}^{n-1}V_k$ with each carrier once, and $\mathfrak{sl}_n=\bigoplus_{k=1}^{n-1}V_k$. This is <em>The Spin Decomposition of $M_n(\mathbb{C})$</em>, and the operator series uses it but does not reprove it.</p>
+<h2 id="what-collapses-at-math66">What Collapses at $n=2$</h2>
+<p><strong>One size.</strong> At $n=2$ the element algebra has dimension $4$ and the operator algebra $16$, so both are written with $4$ rows: elements as $4\times1$ columns in a basis, operators as $4\times4$ matrices. At $n\ge3$ the two sizes are $n$ and $n^2$.</p>
+<p><strong>The transpose is a conjugation.</strong> In the coefficient basis of the biquaternion algebra the structure constants are real, so the transpose of a regular matrix is the quaternion conjugation. At $n\ge3$ the transpose is not an inner automorphism of $M_n$ and not a two-sided product.</p>
+<p><strong>The side exchange has a matrix at $n=2$.</strong> The operator $F(X)=X^{\mathsf T}$ exchanges the two copies, $FL_AF=R_{A^{\mathsf T}}$, at every $n$. No element of the algebra does it: $DR_AD^{-1}=L_A$ for all $A$ forces $D$ to be scalar. At $n=2$ the transpose is written by a $4\times4$ permutation matrix in the coefficient frame, and that same matrix is the quaternion conjugation of the regular representation, so the exchange has a familiar name. At $n\ge3$ the operator $F$ is still there and still exchanges the sides, but it is no longer multiplication by an element and no longer looks like a conjugation.</p>
+<p><strong>Half-integers.</strong> At $n=2$ the module has spin $\tfrac12$ and the algebra has spins $0,1$. At general $n$ the module has spin $\tfrac{(n-1)}{2}$, half-integral exactly when $n$ is even, while the algebra always carries integer spins only. The biquaternion half-integral carriers are therefore a property of the module, not of the algebra.</p>
+<p><strong>The four sectors.</strong> The reduced biquaternion algebra has four sectors and one of them is the origin. In $M_n$ the four sectors still exist as a partition, but the degenerate one is no longer a point for $n\ge3$. <em>The Operators on the Four Sectors of $M_n(\mathbb{C})$</em> states which parts survive.</p>
+<h2 id="the-metric-layer">The Metric Layer</h2>
+<p><strong>The form.</strong> The Hilbert–Schmidt form makes $\operatorname{End}(M_n)$ a complex Hilbert space of dimension $n^4$. Its real and imaginary parts are the Euclidean metric and the symplectic form of the operator space, and the adjoint $T\mapsto T^{\dagger}$ is a conjugate-linear involution of the operator algebra with fixed set the self-adjoint operators.</p>
+<p><strong>The two norms.</strong> For a single product,
+$$
+\lVert T_{A,B}\rVert_{\mathrm{HS}}=\lVert A\rVert_{\mathrm{HS}}\lVert B\rVert_{\mathrm{HS}},\qquad \lVert T_{A,B}\rVert_{2}=\lVert A\rVert_{2}\lVert B\rVert_{2},
+$$
+the first because the Frobenius norm of a Kronecker product is the product of the norms, the second because the singular values of $B^{\mathsf T}\otimes A$ are the products $\sigma_i(A)\sigma_j(B)$.</p>
+<p><strong>The two ranks.</strong> A single product has operator rank $(\operatorname{rank}A)(\operatorname{rank}B)$ and length one. A general operator has length $\ell(M)=\operatorname{rank}c(M)$, the least number of products, and the two ranks are independent. The length theory is <em>The Length and the Two Ranks on $M_n(\mathbb{C})$</em>.</p>
+<h2 id="the-structures-and-the-sectors">The Structures and the Sectors</h2>
+<p><strong>The structures.</strong> The operator algebra is $M_{n^2}(\mathbb{C})$. Its real forms are $M_{n^2}(\mathbb{R})$ always, and $M_{n^2/2}(\mathbb{H})$ when $n$ is even. Its complexifications are $M_{n^2}(\mathbb{C})\oplus M_{n^2}(\mathbb{C})$ over $\mathbb{R}$ and $M_{2n^2}(\mathbb{C})$ from the real operator algebra.</p>
+<p><strong>The real Lie algebra.</strong> The exponentials of $L_A$ and $R_B$ generate $(GL_n\times GL_n)/\mathbb{C}^{\times}$, of complex dimension $2n^2-1$. Its compact real form is $(U(n)\times U(n))/U(1)$, of real dimension $2n^2-1$.</p>
+<p><strong>The four sectors.</strong> With $N$-regular meaning invertible and spectrally regular meaning $n$ distinct eigenvalues, the four sectors have complex dimensions
+$$
+n^2,\qquad n^2-1,\qquad n^2-1,\qquad n^2-2 ,
+$$
+the last at any $n\ge2$. The fourth is never a point in $M_n$: at $n=2$ it is the nilpotent cone, of complex dimension $2$. The sector that collapses to the origin belongs to the commutative reduced biquaternion algebra, not to $M_2(\mathbb{C})$. The spectral side is a hypersurface cut by the discriminant, of degree $n(n-1)$ in the entries.</p>
+<h2 id="the-spin-layer-in-one-table">The Spin Layer in One Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>carriers $V_k$</th>
+<th>$\dim M_n$</th>
+<th>Casimir values</th>
+<th>generating carriers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$V_0,V_1$</td>
+<td>$4$</td>
+<td>$0,2$</td>
+<td>$V_1$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$V_0,V_1,V_2$</td>
+<td>$9$</td>
+<td>$0,2,6$</td>
+<td>$V_1,V_2$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$V_0,\dots,V_3$</td>
+<td>$16$</td>
+<td>$0,2,6,12$</td>
+<td>$V_1,V_2,V_3$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$V_0,\dots,V_4$</td>
+<td>$25$</td>
+<td>$0,2,6,12,20$</td>
+<td>$V_1,\dots,V_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading the table.</strong> The scalars are the unique carrier that does not generate. Every other carrier generates the whole algebra, so the carriers are not ordered by size in their role. The Casimir values are $k(k+1)$ and the multiplicities are $2k+1$; the total is $n^2$ complex dimensions, that is $2n^2$ real dimensions for the carrier space.</p>
+<h2 id="the-reading-order">The Reading Order</h2>
+<p><strong>First, the ambient algebra.</strong> <em>The Endomorphisms of $M_n(\mathbb{C})$</em>, then this article.</p>
+<p><strong>Then the families and their matrix forms.</strong> <em>Operator Chirality on $M_n(\mathbb{C})$</em> for the transpose split; <em>The Axis-Free $M_{n^2}(\mathbb{C})$ Representation of the Operators</em> for the column-stacking formulas; <em>The Generalized Pauli Representation</em> for the Weyl basis; <em>The Block Reading of the Operators</em> for the Peirce corners.</p>
+<p><strong>Then the two sides together.</strong> <em>The Transposition of the Two Sides</em>, <em>The Enveloping Operator Algebra and the Bi-module Structure</em>, <em>The Adjoint Pair of $L$ and $R$ Operators</em>, <em>The Hermitian Pair of Operators Acting on One Side</em>, <em>The Hermitian Pair of Operators Acting on Two Sides</em>.</p>
+<p><strong>Then the metric layer.</strong> <em>The SVD of Endomorphisms of $M_n(\mathbb{C})$</em> for the singular values and the operator norm.</p>
+<p><strong>Then the structures.</strong> <em>The Classification of the Structures of the Operators</em>, then the real and the complex volumes, each with its Lie algebras and Lie groups.</p>
+<p><strong>Then the sectors.</strong> <em>The Operators on the Four Sectors</em> and <em>The Spectral Sectors and the Operators</em>.</p>
+<p><strong>Then the spin.</strong> <em>From the Spin of a Pair of Operators to the Spin of $M_n(\mathbb{C})$</em>, <em>The Spin-Zero Carrier</em>, <em>Where the Half-Integers Go in $M_n(\mathbb{C})$</em>, <em>The Spin-One Carrier</em>, <em>The Carriers, the Closures and the Spin</em>, <em>The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions</em>, and <em>The Odd Rows</em>.</p>
+<h2 id="the-five-questions">The Five Questions</h2>
+<p>Every article of the series asks the same five questions of its family, and the answers are what the reader should be able to reproduce.</p>
+<ol>
+<li><strong>Matrix.</strong> What is the operator in the column-stacking basis, and which tensor slot does it act on?</li>
+<li><strong>Spectrum.</strong> What are the eigenvalues, with multiplicity, and what is the determinant?</li>
+<li><strong>Adjoint.</strong> What is the adjoint for the Hilbert–Schmidt form, and for the transposed bilinear form, and do the two agree?</li>
+<li><strong>Rank.</strong> What is the rank, and what are the singular values, of a single product?</li>
+<li><strong>Spin.</strong> How does the principal copy act, and which carriers appear?</li>
+</ol>
+<p><strong>What the series does not contain.</strong> There is no general-$n$ analogue of the Fierz–Kofink identity. That identity is a statement about four components and the $4\times4$ gamma frame, and it has no form that survives the passage to $n^2$ dimensions.</p>
+<h2 id="three-warnings">Three Warnings</h2>
+<p><strong>The chirality is not the spin.</strong> The split of $M_n$ into symmetric and antisymmetric matrices is the eigenspace split of the transpose, an anti-automorphism. The split into carriers $V_k$ is the isotypic split of the conjugation action of the principal copy. The first is not invariant under the second, and $[J_z,E_{01}+E_{10}]=E_{01}-E_{10}$ at $n=4$ is the shortest witness.</p>
+<p><strong>Seven is not the operator dimension.</strong> At $n=2$ the one-sided span has dimension $7=2n^2-1$, and the operator algebra has dimension $16=n^4$. The biquaternion series used both numbers, for different objects. Neither is the dimension of the other.</p>
+<p><strong>The norm split needs no real form.</strong> Whether a matrix is invertible is a complex-algebraic condition, $\det A\neq0$. The $N$-regular and $N$-degenerate split therefore does not depend on a choice of real form. What does depend on a real form is the <em>value</em> of a norm, and at $n\ge3$ there is no multiplicative quadratic norm on $M_n$ at all.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p><strong>The counts.</strong> For $n=2,3,4,5$ the span of the copies $\{L_A+R_B\}$ was computed to have dimension $7,17,31,49$, that is $2n^{2}-1$, and the span of the products $T_{A,B}$ to have dimension $16,81,256,625$, that is $n^{4}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>the set</th>
+<th>size</th>
+<th>spans $\operatorname{End}$</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_A$</td>
+<td>$\{L_A\}$</td>
+<td>$n^2$</td>
+<td>no</td>
+<td>left multiplication</td>
+</tr>
+<tr>
+<td>$R_B$</td>
+<td>$\{R_B\}$</td>
+<td>$n^2$</td>
+<td>no</td>
+<td>right multiplication</td>
+</tr>
+<tr>
+<td>$L$ and $R$</td>
+<td>the span of the two copies</td>
+<td>$2n^2-1$</td>
+<td>no</td>
+<td>the bimodule operators</td>
+</tr>
+<tr>
+<td>$T_{A,B}$</td>
+<td>$\{T_{A,B}\}$</td>
+<td>$n^4$</td>
+<td>yes</td>
+<td>all endomorphisms</td>
+</tr>
+<tr>
+<td>inner</td>
+<td>$\{T_{g,g^{-1}}\}$</td>
+<td>$n^2-1$</td>
+<td>no</td>
+<td>the conjugations</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The gap.</strong> $2n^{2}-1<n^{4}$ for every $n\ge2$, and the gap $(n^{2}-1)^{2}$ is $9,64,225,576$ at $n=2,3,4,5$.</p>
+<p><strong>What changes at $n=2$.</strong> The gap is small enough that one four-dimensional frame can display both families side by side. At $n=4$ the gap is twenty-five times larger, and no frame displays the two families at once.</p>
+<h2 id="summary">Summary</h2>
+<p>Three families, four numbers, five questions. The one-sided families are $n^2$-dimensional subalgebras meeting in the scalars; their span has dimension $2n^2-1$; the two-sided products span $n^4$. At $n=2$ a single frame holds everything, and the rest of the series is the systematic separation of what that frame joined.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_A,R_B$</td>
+<td>the one-sided multiplications</td>
+</tr>
+<tr>
+<td>$T_{A,B}$</td>
+<td>the two-sided map $X\mapsto AXB$</td>
+</tr>
+<tr>
+<td>$V_k$</td>
+<td>the carrier of spin $k$ in $M_n$, $0\le k\le n-1$</td>
+</tr>
+<tr>
+<td>$\mathfrak{a}$</td>
+<td>the span of the one-sided families</td>
+</tr>
+<tr>
+<td>$\mathsf F$</td>
+<td>the flip of the two tensor slots</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-endomorphisms-of-mnc.html">The Endomorphisms of $M_n(\mathbb{C})$</a>, for the ambient algebra and the dimension ladder.</li>
+<li><a href="the-one-sided-operators-of-mnc.html">The One-Sided Operators of $M_n(\mathbb{C})$</a>, for the two copies in detail.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-of-mnc.html">The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</a>, for the two-sided family as a cone.</li>
+<li><a href="the-spin-decomposition-of-mnc.html">The Spin Decomposition of $M_n(\mathbb{C})$</a>, for the carriers used throughout.</li>
+<li><a href="introduction-to-the-operators-of-the-biquaternion-algebra.html">Introduction to the Operators of the Biquaternion Algebra</a>, for the case $n=2$.</li>
+<li><a href="operators-acting-on-one-side.html">Operators Acting on One Side</a>, for the one-sided theory in the biquaternion frame.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

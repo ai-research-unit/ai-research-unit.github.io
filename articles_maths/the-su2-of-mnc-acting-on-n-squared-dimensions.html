@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions — Biquaternion Universe</title>
+  <meta name="description" content="The question. Read as a real vector space of dimension and let the principal act by conjugation. What are the orbits, and what does the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-of-math1-acting-on-math2-dimensions"><strong>The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Read $M_n$ as a real vector space of dimension $2n^2$ and let the principal $SU(2)$ act by conjugation. What are the orbits, and what does the four-real-dimensional biquaternion picture become?</p>
+<p><strong>The answer in one line.</strong> The orbits are at most three-dimensional: a point for the scalars, a two-sphere for the diagonal matrices, a copy of $SO(3)$ for the generic element; the orbit space therefore has dimension $2n^2-3$ and the four-dimensional picture is the smallest case only.</p>
+<p><strong>Why the article is needed.</strong> At $n=2$ the number of real dimensions is small enough that the orbit picture and the carrier decomposition can be confused with each other. At $n=4$ the space has thirty-two real dimensions and the orbits have dimension at most three; the two pictures separate completely. An article that transfers the biquaternion orbit description to $n=4$ will be wrong by an order of magnitude in dimension.</p>
+<p><strong>Boundaries.</strong> The carrier decomposition is <em>The Spin Decomposition of $M_n(\mathbb{C})$</em>; the counting of carriers is <em>The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$</em>; the real forms of the algebra are <em>The Real Structures of the Operators of $M_n(\mathbb{C})$</em>; the biquaternion case is <em>The Spin Group via $4\times4$ Real Matrices</em>.</p>
+<p><strong>Conventions.</strong> The action is $X\mapsto gXg^{-1}$ for $g\in SU(2)$ in the principal copy. The orbit dimension is computed as the rank of the map $\xi\mapsto[\xi,X]$ from $\mathfrak{su}_2$ to $M_n$. The real dimension of $M_n$ is $2n^2$.</p>
+<h2 id="the-action">The Action</h2>
+<p><strong>Proposition.</strong> The action is faithful up to the centre: the kernel is $\{\pm\mathrm I\}$ for $n$ even and $\{\mathrm I\}$ for $n$ odd.</p>
+<p><em>Proof.</em> The principal copy is the representation $\operatorname{Sym}^{n-1}$, whose kernel is $\{\pm\mathrm I\}$ acting by $(-1)^{n-1}$. $\square$</p>
+<p><strong>The effective group.</strong> For odd $n$ the copy is isomorphic to $SO(3)$; for even $n$ it is $SU(2)$ acting faithfully. In both cases the group acting effectively is three-dimensional.</p>
+<p><strong>The consequence.</strong> Every orbit has dimension at most three, whatever $n$ is.</p>
+<h2 id="the-orbits">The Orbits</h2>
+<p><strong>The orbit dimensions.</strong> Computed at $n=2,3,4,5$ from the rank of $\xi\mapsto[\xi,X]$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$X$</th>
+<th>orbit dimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm I$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$J_z$, $J_x$, $E_{00}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>generic complex $X$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The scalar orbit.</strong> The scalars are fixed, so the orbit of $\mathrm I$ is a point.</p>
+<p><strong>The diagonal orbit.</strong> The stabiliser of $J_z$ is the diagonal torus $U(1)$, so its orbit is $SU(2)/U(1)=S^2$, of dimension two.</p>
+<p><em>Proof.</em> $gJ_zg^{-1}=J_z$ if and only if $g$ is diagonal in the weight basis, and the diagonal elements of the principal copy form a circle. $\square$</p>
+<p><strong>The generic orbit.</strong> A generic $X$ commutes only with its own polynomials, which meet the principal copy in the scalars, so the stabiliser is $\{\pm\mathrm I\}$ for even $n$ and trivial for odd $n$. The orbit is $SU(2)/\{\pm\mathrm I\}=SO(3)$ or $SU(2)$ itself, of dimension three in both cases.</p>
+<p><strong>The orbit space.</strong> Since the generic orbit has dimension three in a space of dimension $2n^2$, the orbit space has dimension $2n^2-3$: $5,15,29,47$ for $n=2,3,4,5$.</p>
+<h2 id="the-invariants">The Invariants</h2>
+<p><strong>The traces.</strong> The functions $X\mapsto\operatorname{tr}(X^k)$, $k=1,\dots,n$, are invariant under conjugation, hence constant on every orbit.</p>
+<p><strong>The insufficiency.</strong> The traces do not separate the orbits of the principal copy: two matrices with the same characteristic polynomial can lie on different orbits, since the orbits are three-dimensional and the level sets of the characteristic polynomial are of dimension $2n^2-n$.</p>
+<p><strong>The reading.</strong> The orbit picture of a three-dimensional group on a $2n^2$-dimensional space is small: the orbits are submanifolds of the similarity classes, and the similarity classes are themselves large.</p>
+<h2 id="the-biquaternion-case">The Biquaternion Case</h2>
+<p><strong>The numbers.</strong> At $n=2$ the space is $\mathbb{R}^8$, the orbits are of dimensions $0$, $2$ and $3$, and the orbit space has dimension five.</p>
+<p><strong>The four real dimensions.</strong> The biquaternion series works with a real algebra of four real dimensions, which is the reduced algebra $\mathbb{C}\times\mathbb{C}$ or the real form of the four-complex-dimensional $\mathbb{B}$. The operator space $M_2(\mathbb{C})$ has eight real dimensions, twice as many, and the four-dimensional picture is a picture of the algebra, not of its endomorphisms.</p>
+<p><strong>What does not generalise.</strong> The biquaternion orbit description uses the fact that the space is four-dimensional: in four real dimensions an orbit can be the complement of a point, and the orbit classification can be read off a discriminant. At $n\ge3$ the space has dimension at least eighteen and the orbits are at most three-dimensional, so no orbit is open and no orbit classification is a finite list.</p>
+<p><strong>The honest statement.</strong> The case $n=2$ of the orbit picture is a special case in dimension, not only in label. The four-dimensional reading of the biquaternion algebra is the case of the algebra itself, and it does not extend to the operator space.</p>
+<h2 id="the-comparison-with-the-carrier-decomposition">The Comparison with the Carrier Decomposition</h2>
+<p><strong>Two decompositions.</strong> The carrier decomposition is a decomposition of the <em>complex</em> space into invariant subspaces; the orbit decomposition is the partition of the <em>real</em> space into orbits. They are different partitions, and neither refines the other.</p>
+<p><strong>The reason.</strong> A carrier is a complex subspace, so it is a union of orbits only if the group acts inside it, which it does; but an orbit meets many carriers, since a generic element has components in all of them.</p>
+<p><strong>The count.</strong> The carriers number $n$; the orbit dimensions number three. Neither count grows with the dimension of the space in the same way.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>The orbit dimensions were computed as the rank of the real matrix of the three maps $\xi\mapsto[\xi,X]$: at $n=2,3,4,5$ the ranks are $0$ for $X=\mathrm I$, $2$ for $X=J_z$, $X=J_x$ and $X=E_{00}$, and $3$ for a random complex $X$.</p>
+<p>The kernel of the action was checked by computing $\exp(2\pi iJ_z)$: it equals $(-1)^{n-1}\mathrm I$ to $10^{-16}$ for $n=2,\dots,6$, confirming that $-\mathrm I$ acts by $+1$ for odd $n$ and by $-1$ for even $n$.</p>
+<p>The orbit-space dimension $2n^2-3$ was checked against $8-3=5$, $18-3=15$, $32-3=29$, $50-3=47$.</p>
+<h2 id="inside-the-similarity-class">Inside the Similarity Class</h2>
+<p><strong>The containment.</strong> The principal orbit of $X$ lies in the similarity class of $X$ under $GL_n$.</p>
+<p><strong>The dimensions.</strong> The similarity class of a regular $X$ has complex dimension $n^2-n$, hence real dimension $2n^2-2n$; the principal orbit has real dimension at most three.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>similarity class, real</th>
+<th>principal orbit</th>
+<th>codimension</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$4$</td>
+<td>$3$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$12$</td>
+<td>$3$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$24$</td>
+<td>$3$</td>
+<td>$21$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$40$</td>
+<td>$3$</td>
+<td>$37$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> At $n=2$ the generic orbit is a hypersurface of the similarity class, which is why the two pictures nearly coincide there. At $n=3$ the codimension is already nine.</p>
+<h2 id="what-the-four-dimensions-were">What the Four Dimensions Were</h2>
+<p><strong>The biquaternion space.</strong> Four real dimensions, orbits of dimensions $0$, $2$, $3$, and an orbit space of dimension one.</p>
+<p><strong>The general space.</strong> $2n^2$ real dimensions, the same three orbit dimensions, and an orbit space of dimension $2n^2-3$.</p>
+<p><strong>The reading.</strong> The four-dimensional picture is the case where the orbit space has dimension one and the orbits can be listed. At $n=3$ the orbit space has dimension fifteen and no list exists.</p>
+<h2 id="the-two-groups">The Two Groups</h2>
+<p><strong>The principal copy.</strong> $SU(2)$, three real dimensions, acting by conjugation on $M_n$.</p>
+<p><strong>The full unitary group.</strong> $U(n)$, $n^2$ real dimensions, acting by conjugation on $M_n$.</p>
+<p><strong>The comparison.</strong> The principal orbits have dimension at most three; the $U(n)$ orbits are the similarity classes, of dimension up to $2n^2-2$.</p>
+<p><strong>The reading.</strong> The principal copy is a three-dimensional subgroup of the $n^2$-dimensional group, and its orbits are correspondingly small. The carrier decomposition is the statement that the small group's action is completely reducible with the stated multiplicities.</p>
+<h2 id="the-invariant-functions">The Invariant Functions</h2>
+<p><strong>The traces.</strong> $\operatorname{tr}X^k$ for $k=1,\dots,n$ are invariant under conjugation, hence under the principal copy.</p>
+<p><strong>The separation.</strong> They separate the similarity classes but not the principal orbits: two matrices in different principal orbits can have the same characteristic polynomial.</p>
+<p><strong>The reading.</strong> The principal copy is too small to see the invariants of the big group, which is why the orbit picture and the spectral picture are different pictures.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>The picture.</strong> Three orbit dimensions in a space of dimension $2n^2$, classified by the type of the matrix: scalar, semisimple with a torus stabiliser, generic.</p>
+<p><strong>The limit.</strong> The picture is the same at every $n$; only the ambient space grows, and the orbit space grows with it.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The numbers.</strong> The orbit dimensions $0,2,3$ do not grow with $n$; the ambient dimension $2n^{2}$ does, and the codimension of a generic orbit is $2n^{2}-3$.</p>
+<h2 id="summary">Summary</h2>
+<p>The principal $SU(2)$ acts on the $2n^2$ real dimensions of $M_n$ with orbits of dimension $0$, $2$ or $3$ and an orbit space of dimension $2n^2-3$. The scalar orbit is a point, the diagonal orbit a two-sphere, the generic orbit a copy of $SO(3)$. The invariants are the traces and they do not separate the orbits. The biquaternion four-dimensional picture is the picture of the algebra, not of the operator space, and it does not extend.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2n^2$</td>
+<td>the real dimension of $M_n$</td>
+</tr>
+<tr>
+<td>$[\xi,X]$</td>
+<td>the infinitesimal action, whose rank is the orbit dimension</td>
+</tr>
+<tr>
+<td>$S^2$</td>
+<td>the orbit of $J_z$</td>
+</tr>
+<tr>
+<td>$SO(3)$</td>
+<td>the generic orbit</td>
+</tr>
+<tr>
+<td>$2n^2-3$</td>
+<td>the dimension of the orbit space</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-decomposition-of-mnc.html">The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$</a>, for the complex decomposition.</li>
+<li><a href="the-carriers-the-closures-and-the-spin-of-mnc.html">The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$</a>, for the counts.</li>
+<li><a href="the-spin-group-via-4x4-real-matrices.html">The Spin Group via $4\times4$ Real Matrices</a>, for the case $n=2$ read over $\mathbb{R}$.</li>
+<li><a href="the-real-structures-of-the-operators-of-mnc.html">The Real Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups</a>, for the real forms.</li>
+<li><a href="the-odd-rows-m3-and-m5.html">The Odd Rows: $M_3(\mathbb{C})$ and $M_5(\mathbb{C})$</a>, for the rows where the action factors through $SO(3)$.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the case $n=4$ in four readings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

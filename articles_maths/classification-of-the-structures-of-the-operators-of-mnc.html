@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Classification of the Structures of the Operators of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Which structures can be put on the operator space, and how many of each are there?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-classification-of-the-structures-of-the-operators-of-math0"><strong>The Classification of the Structures of the Operators of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Which structures can be put on the operator space $\operatorname{End}(M_n(\mathbb{C}))$, and how many of each are there?</p>
+<p><strong>The answer in one line.</strong> The answer depends on which structure is asked for, and the counts are wildly different: one complex structure on the algebra, one or two real forms of it, $\lfloor n^2/2\rfloor+1$ real forms of its Lie algebra, and $2n^8$ complex structures on the underlying real space.</p>
+<p><strong>Why the article is needed.</strong> The biquaternion series could speak of "the real structure" because at $n=2$ the operator space is $M_4(\mathbb{C})$ and every count collapses to a small number. At general $n$ the same words name different classification problems, and a reader who mixes them will compare a count of two with a count of nine. This article fixes the questions before the two lists answer them.</p>
+<p><strong>Boundaries.</strong> The real answers are <em>The Real Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups</em>; the complex answers are <em>The Complex Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups</em>; the algebra itself is <em>The Matrix Algebra $M_n(\mathbb{C})$</em>.</p>
+<p><strong>Conventions.</strong> $N=n^2$ is the dimension of the carrier of operators, so $\operatorname{End}(M_n)\cong M_N(\mathbb{C})$ has complex dimension $N^2=n^4$ and real dimension $2N^2=2n^4$. A real form of a complex object is a real object whose complexification is the given one. An antilinear involution is a conjugate-linear map $J$ with $J^2=\pm1$.</p>
+<h2 id="the-questions">The Questions</h2>
+<p><strong>Q1, the algebra.</strong> Real forms of the associative algebra $M_N(\mathbb{C})$: real algebras $A$ with $A\otimes_{\mathbb{R}}\mathbb{C}\cong M_N(\mathbb{C})$.</p>
+<p><strong>Q2, the Lie algebra.</strong> Real forms of $\mathfrak{gl}_N(\mathbb{C})$ and of $\mathfrak{sl}_N(\mathbb{C})$: real Lie algebras $\mathfrak{g}$ with $\mathfrak{g}\otimes\mathbb{C}\cong\mathfrak{gl}_N(\mathbb{C})$.</p>
+<p><strong>Q3, the group.</strong> Real forms of $GL_N(\mathbb{C})$: real Lie groups whose complexification is $GL_N(\mathbb{C})$.</p>
+<p><strong>Q4, the vector space.</strong> Complex structures on the real vector space $\mathbb{R}^{2N^2}$: real linear maps $J$ with $J^2=-\mathrm I$.</p>
+<p><strong>Q5, the involutions.</strong> Antilinear involutions of $M_N(\mathbb{C})$: the conjugations $X\mapsto SX^{*}S^{-1}$ and $X\mapsto SX^{\mathsf T}S^{-1}$ and their relatives, up to conjugacy.</p>
+<p><strong>The point.</strong> Q1, Q2, Q5 are three different classifications of three different objects. Q1 asks for subalgebras, Q2 for Lie subalgebras, Q5 for fixed sets of conjugations. The fixed set of a conjugation need not be a subalgebra, and that single fact separates the answers.</p>
+<h2 id="the-associative-answer">The Associative Answer</h2>
+<p><strong>Theorem.</strong> $M_N(\mathbb{C})$ has exactly one real form when $N$ is odd, and exactly two when $N$ is even: $M_N(\mathbb{R})$ always, and $M_{N/2}(\mathbb{H})$ when $N$ is even.</p>
+<p><em>Proof (sketch).</em> Let $A$ be a real form. Then $A$ is a real central simple algebra of real dimension $N^2$. By Wedderburn every real central simple algebra is $M_k(\mathbb{R})$, $M_k(\mathbb{C})$ or $M_k(\mathbb{H})$, with real dimensions $k^2$, $2k^2$ and $4k^2$. Setting the dimension equal to $N^2$ leaves $k=N$ in the first case, no solution in the second, and $k=N/2$ in the third, which requires $N$ even. $\square$</p>
+<p><strong>The count for the operators.</strong> With $N=n^2$: one real form when $n$ is odd, two when $n$ is even. The split is $M_{n^2}(\mathbb{R})$ always, and $M_{n^2/2}(\mathbb{H})$ for even $n$.</p>
+<p><strong>The fixed sets.</strong> Each real form is the fixed set of an antilinear involution of $M_N$: $X\mapsto\bar X$ for $M_N(\mathbb{R})$, and $X\mapsto J\bar XJ^{-1}$ for $M_{N/2}(\mathbb{H})$ with $J$ a quaternionic structure.</p>
+<p><strong>The warning.</strong> The real forms of the algebra are few. The real forms of the Lie algebra are many. The reason is Q1 against Q2: the pseudo-Hermitian fixed sets $\{X:IX^{*}I=X\}$ for indefinite $I$ are closed under the commutator but not under the product.</p>
+<h2 id="the-lie-answer">The Lie Answer</h2>
+<p><strong>Theorem.</strong> The real forms of $\mathfrak{sl}_N(\mathbb{C})$ are $\mathfrak{sl}_N(\mathbb{R})$ and $\mathfrak{su}(p,q)$ with $p+q=N$, up to $\mathfrak{su}(p,q)\cong\mathfrak{su}(q,p)$.</p>
+<p><strong>The count.</strong> $\lfloor N/2\rfloor+1$ real forms. For the operators, $N=n^2$:
+$$
+\lfloor n^2/2\rfloor+1 .
+$$</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$N=n^2$</th>
+<th>real forms of $\mathfrak{sl}_N$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$4$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$9$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$16$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$25$</td>
+<td>$13$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The compact form.</strong> $\mathfrak{su}(N)$ is the compact real form, of real dimension $N^2-1$, and it is the one the Hilbert–Schmidt metric singles out. The real form $\mathfrak{sl}_N(\mathbb{R})$ is split, of the same dimension, and the two are the extremes of the list.</p>
+<p><strong>The operator reading.</strong> $\operatorname{End}(M_n)$ as a Lie algebra is $\mathfrak{gl}_{n^2}$, so the operator group has $\lfloor n^2/2\rfloor+1$ real forms of its traceless part. The compact one is $\mathfrak{su}(n^2)$, the isometries of the Hilbert–Schmidt space.</p>
+<h2 id="the-vector-space-answer">The Vector-Space Answer</h2>
+<p><strong>Theorem.</strong> The set of complex structures on $\mathbb{R}^{2N^2}$ is $GL_{2N^2}(\mathbb{R})/GL_{N^2}(\mathbb{C})$, of real dimension $2N^4=2n^8$.</p>
+<p><em>Proof.</em> $GL_{2m}(\mathbb{R})$ acts transitively on complex structures on $\mathbb{R}^{2m}$, and the stabiliser of the standard one is $GL_m(\mathbb{C})$. The dimension is $4m^2-2m^2=2m^2$ with $m=N^2=n^4$. $\square$</p>
+<p><strong>The metric-compatible subclass.</strong> Complex structures that are orthogonal for the Hilbert–Schmidt metric form $O(2m)/U(m)$, of real dimension $m(m-1)=n^4(n^4-1)$.</p>
+<p><strong>The algebra-compatible subclass.</strong> Complex structures that are algebra automorphisms are the elements $J$ of the centre with $J^2=-\mathrm I$. The centre is $\mathbb{C}$, so $J=\pm i$: one point, up to conjugacy none at all.</p>
+<p><strong>The three numbers.</strong> $2n^8$ for all, $n^4(n^4-1)$ for the orthogonal ones, $0$ for the algebra ones. The same word "complex structure" gives three different answers depending on what must be preserved, and this is the reason this article precedes the two lists.</p>
+<h2 id="the-involution-answer">The Involution Answer</h2>
+<p><strong>The transposition.</strong> $X\mapsto X^{\mathsf T}$ is a complex-linear involution of the algebra, not an antilinear one. Its fixed space is the symmetric matrices, of dimension $N(N+1)/2$, and the anti-fixed space is the antisymmetric matrices.</p>
+<p><strong>The adjoint.</strong> $X\mapsto X^{*}$ is antilinear and involutive, with fixed space the Hermitian matrices, a real space of dimension $N^2$.</p>
+<p><strong>The product.</strong> $X\mapsto X^{\mathsf T}$ composed with $X\mapsto X^{*}$ is the entrywise conjugation $X\mapsto\bar X$, whose fixed space is $M_N(\mathbb{R})$.</p>
+<p><strong>The classification of the three.</strong> The transposition is complex-linear and needs no metric; the adjoint is antilinear and depends on the positive definite form, and all choices are conjugate under the unitary group; the entrywise conjugation is the antilinear involution whose fixed set is the real form $M_N(\mathbb{R})$ of Q1.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>The dimension counts were computed for $n=2,3,4,5$: $N=n^2$ gives $N^2=n^4$, the real dimension $2n^4$, the complex-structure dimension $2n^8$, the orthogonal complex-structure dimension $n^4(n^4-1)$, and the Lie-form count $\lfloor n^2/2\rfloor+1$. The values are $2n^8=512,13122,131072,781250$ and $n^4(n^4-1)=240,6480,65280,390000$.</p>
+<p>The transposition and adjoint fixed-space dimensions were checked by counting the real parameters of the equations $X=X^{\mathsf T}$, $X=X^{*}$ and $X=\bar X$: $N(N+1)/2$, $N^2$ and $N^2$ in real terms, that is $10,45,136,325$ for the symmetric and $16,81,256,625$ for the Hermitian at $n=2,3,4,5$.</p>
+<h2 id="the-five-questions">The Five Questions</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>real answer</th>
+<th>complex answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inner product</td>
+<td>symmetric, definite</td>
+<td>Hermitian, definite</td>
+</tr>
+<tr>
+<td>complex structure</td>
+<td>$2n^8$ of them</td>
+<td>one central, $2n^8$ linear</td>
+</tr>
+<tr>
+<td>real form</td>
+<td>$n^4+(n^4-1)$ reflections</td>
+<td>the conjugation $\Theta$</td>
+</tr>
+<tr>
+<td>transpose</td>
+<td>one bilinear form, many symmetry groups</td>
+<td>the flip</td>
+</tr>
+<tr>
+<td>Lie algebra</td>
+<td>$\mathfrak{u}(n^2)$ and its real forms</td>
+<td>$\mathfrak{gl}(n^2,\mathbb{C})$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> The real column asks how many structures exist; the complex column asks which structure is canonical. The two columns answer different questions, and the tables in the next two articles are the two columns in full.</p>
+<p><strong>The consequence.</strong> A sentence of the form "the operator space has a complex structure" is a complex-column sentence: the structure is canonical. A sentence of the form "the operator space has $2n^8$ complex structures" is a real-column sentence: the structures form a moduli space. The two must not be mixed.</p>
+<p><strong>The order of the questions.</strong> The first and fourth are bilinear-form questions; the second and third are real-form questions; the fifth is a Lie-theoretic question that uses the first four.</p>
+<h2 id="what-is-not-asked">What Is Not Asked</h2>
+<p><strong>Not asked: a classification up to isomorphism.</strong> All the structures of one kind form a single orbit under the relevant group, so the classification up to isomorphism is trivial and the content is in the dimension of the orbit space.</p>
+<p><strong>Not asked: the exceptional structures.</strong> There is no exceptional complex structure, no exceptional real form, and no exceptional inner product: the operator space is a Hilbert space, and its structures are the standard ones.</p>
+<p><strong>Not asked: the algebra structures.</strong> A multiplication on the operator space making it an algebra is a different question, answered by the classification of the algebra structures on $M_{n^2}$, and it is not part of this series.</p>
+<p><strong>The reading.</strong> The five questions are the five structures that the operator space carries because it is an endomorphism algebra of a Hilbert space. Anything else is a structure of the algebra $M_{n^2}$, not of the space.</p>
+<h2 id="the-answer-in-one-table">The Answer in One Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>the canonical one</th>
+<th>the moduli</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inner product</td>
+<td>Hilbert–Schmidt</td>
+<td>a point up to $U(N)$</td>
+</tr>
+<tr>
+<td>complex structure</td>
+<td>multiplication by $i$</td>
+<td>$2n^8$ of them</td>
+</tr>
+<tr>
+<td>real form</td>
+<td>entrywise conjugation</td>
+<td>$n^4+(n^4-1)$ reflections</td>
+</tr>
+<tr>
+<td>transpose</td>
+<td>the flip</td>
+<td>the symmetry group of the two-sided family</td>
+</tr>
+<tr>
+<td>Lie algebra</td>
+<td>$\mathfrak{u}(n^2)$</td>
+<td>its real forms</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> Each row has a canonical object and a moduli space, and the articles that follow fill one row each.</p>
+<h2 id="summary">Summary</h2>
+<p>There are five different classification questions, and their answers are one or two (real forms of the algebra), $\lfloor n^2/2\rfloor+1$ (real forms of the Lie algebra), $2n^8$ (complex structures on the real space), $n^4(n^4-1)$ (orthogonal complex structures) and one (complex structures on the algebra). The associative and the Lie answers differ because the fixed set of an indefinite conjugation is not closed under multiplication. The next two articles give the real and the complex lists in full.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N=n^2$</td>
+<td>the carrier dimension</td>
+</tr>
+<tr>
+<td>$\lfloor n^2/2\rfloor+1$</td>
+<td>the number of real forms of $\mathfrak{sl}_{n^2}$</td>
+</tr>
+<tr>
+<td>$2n^8$</td>
+<td>the dimension of the space of complex structures</td>
+</tr>
+<tr>
+<td>$n^4(n^4-1)$</td>
+<td>the dimension of the orthogonal ones</td>
+</tr>
+<tr>
+<td>$M_{n^2/2}(\mathbb{H})$</td>
+<td>the quaternionic real form, for even $n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Weil, <em>Basic Number Theory</em> (Springer, 1967), for central simple algebras and their forms.</li>
+<li>Onishchik and Vinberg, <em>Lie Groups and Algebraic Groups</em> (Springer, 1990), for the real forms of $\mathfrak{sl}_N$.</li>
+<li><a href="the-real-structures-of-the-operators-of-mnc.html">The Real Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups</a>, for the real list.</li>
+<li><a href="the-complex-structures-of-the-operators-of-mnc.html">The Complex Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups</a>, for the complex list.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the algebra.</li>
+<li><a href="the-ideals-the-centre-and-the-simplicity-of-mnc.html">The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$</a>, for the centre that fixes the complex structure.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

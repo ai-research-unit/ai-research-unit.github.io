@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Generalized Pauli Representation of the Operators of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Is there a basis of, for every, in which the three families of operators act by permutations with phases, the way the Pauli matrices do at ?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-generalized-pauli-representation-of-the-operators-of-math0"><strong>The Generalized Pauli Representation of the Operators of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Is there a basis of $M_n(\mathbb{C})$, for every $n$, in which the three families of operators act by permutations with phases, the way the Pauli matrices do at $n=2$?</p>
+<p><strong>The answer in one line.</strong> Yes: the $n^2$ Weyl operators
+$$
+W_{ab}=P^aQ^b,\qquad 0\le a,b\le n-1,
+$$
+where $P$ is the clock and $Q$ the shift with $PQ=\omega QP$ and $\omega=e^{2\pi i/n}$, form an orthogonal basis of $M_n$, and in this basis every $L_W$, $R_W$ and $T_{W,W'}$ is a monomial matrix.</p>
+<p><strong>Why the article is needed.</strong> The Pauli basis is the one place where the biquaternion and the matrix stories meet: at $n=2$ the four Weyl operators are $\mathrm I,\sigma_x,\sigma_z$ and $i\sigma_y$, so the three families act by signed permutations. At general $n$ the same phenomenon holds with $n$-th roots of unity in place of signs, and the structure constants are exactly computable. Without this basis the operators are dense matrices; with it they are monomial.</p>
+<p><strong>Boundaries.</strong> The column-stacking representation is <em>The Axis-Free $M_{n^2}(\mathbb{C})$ Representation of the Operators of $M_n(\mathbb{C})$</em>; the block reading is <em>The Block Reading of the Operators of $M_n(\mathbb{C})$</em>; the families are <em>The Endomorphisms of $M_n(\mathbb{C})$</em>. The biquaternion original is <em>$M_4(\mathbb{C})$ Pauli Representation</em>.</p>
+<p><strong>Conventions.</strong> $\omega=e^{2\pi i/n}$, $P=\operatorname{diag}(1,\omega,\dots,\omega^{n-1})$, and $Q$ is the cyclic shift $Qe_k=e_{k+1}$ with indices mod $n$. The Weyl operator is $W_{ab}=P^aQ^b$, and the normalized basis is $W_{ab}/\sqrt n$ for the Hilbert–Schmidt form.</p>
+<h2 id="the-clock-and-the-shift">The Clock and the Shift</h2>
+<p><strong>Proposition.</strong> $PQ=\omega QP$.</p>
+<p><em>Proof.</em> $PQe_k=\omega^{k+1}e_{k+1}$ and $QP e_k=\omega^{k}Qe_k=\omega^ke_{k+1}$, and the ratio is $\omega$. $\square$</p>
+<p><strong>Proposition.</strong> $P$ and $Q$ generate $M_n$ as an algebra.</p>
+<p><em>Proof.</em> $Q^bP^a$ runs over the $n^2$ Weyl operators, which are linearly independent by the orthogonality below, so the algebra they generate has dimension $n^2$. $\square$</p>
+<p><strong>The finite Heisenberg group.</strong> The group generated by $P$, $Q$ and the scalars $\omega^j\mathrm I$ has order $n^3$ and is the finite Heisenberg group of $\mathbb{Z}_n\times\mathbb{Z}_n$. The Weyl operators are its image in $PGL_n$.</p>
+<p><strong>The order of the pair.</strong> The commutator $PQP^{-1}Q^{-1}=\omega\mathrm I$ is a scalar, so the pair generates a projective representation of $\mathbb{Z}_n\times\mathbb{Z}_n$ with cocycle $\omega^{bc}$.</p>
+<h2 id="the-weyl-basis">The Weyl Basis</h2>
+<p><strong>Proposition (orthogonality).</strong> $\operatorname{tr}(W_{ab}^{*}W_{cd})=n\,\delta_{ac}\delta_{bd}$.</p>
+<p><em>Proof.</em> $W_{ab}$ is unitary, so $W_{ab}^{*}W_{ab}=\mathrm I$ and the diagonal entries are $n$. For distinct pairs, $W_{ab}^{*}W_{cd}=P^{-a}Q^{-b}P^{c}Q^{d}=\omega^{bc}P^{c-a}Q^{d-b}$, and the trace of $P^{r}Q^{s}$ vanishes unless $r=s=0$, because $Q^s$ for $s\neq0$ has zero diagonal and $P^r$ is diagonal. $\square$</p>
+<p><strong>The consequence.</strong> The $n^2$ operators $W_{ab}$ are a basis of $M_n$, and the normalized ones $W_{ab}/\sqrt n$ are an orthonormal basis. The expansion of any $X$ is
+$$
+X=\frac1n\sum_{a,b}\operatorname{tr}(W_{ab}^{*}X)\,W_{ab}.
+$$</p>
+<p><strong>The phase law.</strong> $W_{ab}W_{cd}=\omega^{-bc}W_{a+c,b+d}$, with the indices taken mod $n$.</p>
+<p><em>Proof.</em> $P^aQ^bP^cQ^d=P^{a+c}(Q^bP^c)Q^d=\omega^{-bc}P^{a+c}Q^{b+d}$, using $Q^bP^c=\omega^{-bc}P^cQ^b$. $\square$</p>
+<p><strong>The structure constants.</strong> In the Weyl basis the multiplication of $M_n$ has the constants $\omega^{-bc}$, so the algebra is the twisted group algebra of $\mathbb{Z}_n\times\mathbb{Z}_n$ with the cocycle $\omega^{-bc}$.</p>
+<p><strong>The reading.</strong> The Weyl basis is a basis of the algebra as a vector space, not a ring basis, because the multiplication carries the phase $\omega^{-bc}$. It is the discrete analogue of the exponential basis of the circle.</p>
+<h2 id="the-operators-in-the-weyl-basis">The Operators in the Weyl Basis</h2>
+<p><strong>Proposition (the left multiplication is monomial).</strong> For every pair $(a,b)$ and every Weyl operator $W_{cd}$,
+$$
+L_{W_{ab}}W_{cd}=\omega^{-bc}W_{a+c,b+d}.
+$$
+So $L_{W_{ab}}$ permutes the basis and multiplies by roots of unity, with exactly one nonzero entry in each row and column.</p>
+<p><em>Proof.</em> This is the phase law. $\square$</p>
+<p><strong>The right multiplication is monomial too.</strong> $R_{W_{ab}}W_{cd}=W_{cd}W_{ab}=\omega^{-da}W_{a+c,b+d}$, a permutation of the same index group with the phase $\omega^{-da}$.</p>
+<p><strong>The inverting pair.</strong> $PL_A P^{-1}=\mathrm I\otimes(PAP^{-1})$ acts diagonally on the first index and $QL_AQ^{-1}$ translates the first index. Their combined action is the discrete Weyl transform: the conjugation by $P^aQ^b$ both permutes and phases the basis.</p>
+<p><strong>The two-sided family.</strong> $T_{W_{ab},W_{cd}}W_{ef}=W_{ab}W_{ef}W_{cd}$ is a single Weyl operator times a root of unity, by two applications of the phase law. So the two-sided operations are monomial on the Weyl basis as well, and the whole operator algebra is generated by permutations with phases.</p>
+<p><strong>The reading.</strong> In the Weyl basis the families of the series look alike: each is a monomial matrix. That is the exact general-$n$ form of the statement that at $n=2$ they are signed permutation matrices.</p>
+<h2 id="the-case-math92">The Case $n=2$</h2>
+<p><strong>The four operators.</strong> $P=\sigma_z$, $Q=\sigma_x$, $PQ=i\sigma_y$, and $W_{00}=\mathrm I$. So the Weyl basis is $\{\mathrm I,\sigma_x,\sigma_z,i\sigma_y\}$.</p>
+<p><strong>The phase.</strong> $\omega=-1$, and the phase law reads $W_{ab}W_{cd}=(-1)^{-bc}W_{a+c,b+d}$, which is the multiplication table of the Pauli group up to signs.</p>
+<p><strong>The operators.</strong> $L_{\sigma_x}$ acts on the basis $\{\mathrm I,\sigma_x,\sigma_z,i\sigma_y\}$ as the permutation $\mathrm I\leftrightarrow\sigma_x$, $\sigma_z\leftrightarrow i\sigma_y$ with no phase, because $b=0$ for $W_{10}=\sigma_x$. $L_{\sigma_z}$ acts with the sign $-1$ on the second pair, because $b=1$ for $W_{01}=\sigma_z$.</p>
+<p><strong>The missing $i$.</strong> At $n=2$ the four basis operators are not all Hermitian: $i\sigma_y$ is anti-Hermitian, while $\mathrm I,\sigma_x,\sigma_z$ are self-adjoint. The Weyl basis is unitary, not self-adjoint, and this is the general-$n$ situation: $W_{ab}$ is unitary for every $n$, and self-adjoint only in special cases.</p>
+<p><strong>The comparison with the biquaternion frame.</strong> The biquaternion series writes the same four operators in its four-dimensional real frame, where the phases are the quaternion units. At $n\ge3$ the phases are $n$-th roots of unity and there are $n^2$ operators, not four.</p>
+<h2 id="what-the-basis-does-not-give">What the Basis Does Not Give</h2>
+<p><strong>Not a grading.</strong> The Weyl operators are indexed by a group, but the phase law is not a group law: it is a projective law. The basis diagonalises the conjugation action of the clock and the shift, and it does not diagonalise a general $L_A$.</p>
+<p><strong>Not an eigenbasis of $L_A$.</strong> A general $A$ has $n^2$ Weyl coefficients, and $L_A$ is monomial in the basis only when $A$ is a Weyl operator. The basis is adapted to the <em>group</em>, not to a single matrix.</p>
+<p><strong>Not a real basis.</strong> The Weyl operators are unitary and not Hermitian, so the basis is complex and its real span is a real form of $M_n$ of dimension $2n^2$ only after adjoining the phases.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>Computed with numpy for $n=2,3,4,5$: the identity $PQ=\omega QP$ holds to $10^{-15}$; the Gram matrix $\operatorname{tr}(W_{ab}^{*}W_{cd})$ is $n$ times the identity to $10^{-15}$, so the basis is orthogonal with $n^2$ vectors; the phase law $W_{ab}W_{cd}=\omega^{-bc}W_{a+c,b+d}$ holds to $10^{-14}$ over all $n^4$ quadruples; and every product $L_{W_{ab}}W_{cd}$ is a single basis vector times a root of unity, to $10^{-14}$, for all $n^4$ choices.</p>
+<p>At $n=2$ the four operators were compared with the Pauli matrices: $W_{10}=\sigma_z$, $W_{01}=\sigma_x$, $W_{11}=i\sigma_y$, $W_{00}=\mathrm I$, with residual below $10^{-16}$.</p>
+<h2 id="the-projective-representation">The Projective Representation</h2>
+<p><strong>The cocycle.</strong> $W(a,b)W(c,d)=\omega^{-bc}W(a+c,b+d)$, so the map $(a,b)\mapsto W(a,b)$ is a projective representation of $\mathbb{Z}_n\times\mathbb{Z}_n$ with the cocycle $\omega^{-bc}$.</p>
+<p><strong>The consequence.</strong> The Weyl operators cannot be rescaled to a genuine representation of the abelian group, because the cocycle is not a coboundary unless $\omega=1$.</p>
+<p><strong>The reading.</strong> The projective nature of the Weyl basis is the discrete form of the canonical commutation relation: the phase $\omega^{-bc}$ is the Weyl pair's anomaly, and at $n=2$ it is the sign that distinguishes $\sigma_x\sigma_y$ from $\sigma_y\sigma_x$.</p>
+<h2 id="why-the-sign-matters-at-math156">Why the Sign Matters at $n\ge3$</h2>
+<p><strong>The coincidence at $n=2$.</strong> $\omega=-1$ is its own inverse, so $\omega^{bc}=\omega^{-bc}$ for all $b,c$ and the two candidate laws agree.</p>
+<p><strong>The failure at $n=3$.</strong> With $\omega=\exp(2\pi i/3)$ the law $\omega^{+bc}$ leaves a residual of $1.73$ on the quadruple $(a,b,c,d)=(0,1,1,0)$, because $W(0,1)W(1,0)=\omega^{-1}W(1,1)$ while $\lvert\omega^{-1}-\omega\rvert=\sqrt3$.</p>
+<p><strong>The failure at $n=4$.</strong> The residual is $2.0$ on the same quadruple, since $\omega=i$ and $\lvert i^{-1}-i\rvert=2$.</p>
+<p><strong>The reading.</strong> The quaternion and biquaternion series work at $n=2$, where the sign of the cocycle is invisible; the general-$n$ series cannot inherit that ambiguity, and every phase law has to be fixed with its sign.</p>
+<h2 id="the-dimension">The Dimension</h2>
+<p><strong>The count.</strong> $n^2$ Weyl operators, orthogonal, each of norm $\sqrt n$: $4,9,16,25$ for $n=2,3,4,5$.</p>
+<p><strong>The consequence.</strong> The Weyl operators are a basis, and the map $X\mapsto(\operatorname{tr}(W(a,b)^{*}X))$ is an isometry of $M_n$ onto $\mathbb{C}^{n^2}$ up to the factor $\sqrt n$.</p>
+<p><strong>The reading.</strong> The Weyl basis is the operator-space analogue of a Fourier basis, and the phase $\omega$ is the analogue of the frequency.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>The role.</strong> The Weyl operators are the analogue of the Pauli matrices for $n>2$, and they play the same role in the operator algebra of the algebra itself.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The numbers.</strong> $n^{2}$ Weyl operators in $n^{2}$ dimensions: $4,9,16,25$ for $n=2,3,4,5$, each of Hilbert–Schmidt norm $\sqrt n$.</p>
+<h2 id="summary">Summary</h2>
+<p>The clock and the shift generate $M_n$ and satisfy $PQ=\omega QP$. The $n^2$ Weyl operators are an orthogonal basis with $\operatorname{tr}(W^{*}W')=n^2\delta$, the phase law is exact, and in this basis the left, right and two-sided multiplications are monomial matrices with roots of unity as entries. At $n=2$ the basis is $\mathrm I,\sigma_x,\sigma_z,i\sigma_y$, and the monomial matrices are signed permutations. The basis is adapted to the group, not to a general matrix.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\omega$</td>
+<td>$e^{2\pi i/n}$</td>
+</tr>
+<tr>
+<td>$P,Q$</td>
+<td>the clock and the shift, $PQ=\omega QP$</td>
+</tr>
+<tr>
+<td>$W_{ab}$</td>
+<td>$P^aQ^b$, the Weyl operators</td>
+</tr>
+<tr>
+<td>$\omega^{-bc}$</td>
+<td>the phase in the multiplication law</td>
+</tr>
+<tr>
+<td>$n^3$</td>
+<td>the order of the finite Heisenberg group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Weyl, <em>The Theory of Groups and Quantum Mechanics</em> (Dover, 1950), for the original clock-and-shift construction.</li>
+<li><a href="the-axis-free-representation-of-the-operators-of-mnc.html">The Axis-Free $M_{n^2}(\mathbb{C})$ Representation of the Operators of $M_n(\mathbb{C})$</a>, for the column-stacking frame.</li>
+<li><a href="the-block-reading-of-the-operators-of-mnc.html">The Block Reading of the Operators of $M_n(\mathbb{C})$</a>, for the other distinguished basis.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the algebra and its units.</li>
+<li><a href="m4c-pauli-representation.html">$M_4(\mathbb{C})$ Pauli Representation</a>, for the case $n=2$ in the coefficient frame.</li>
+<li><a href="roots-of-unity-and-the-lagrange-idempotents-of-mnc.html">Roots of Unity and the Lagrange Idempotents of $M_n(\mathbb{C})$</a>, for the clock from the idempotent side.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

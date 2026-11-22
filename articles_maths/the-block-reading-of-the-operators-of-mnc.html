@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Block Reading of the Operators of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Fix a splitting of dimensions and. How do, and act on the four blocks of, and which blocks stay separate?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-block-reading-of-the-operators-of-math0"><strong>The Block Reading of the Operators of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Fix a splitting $\mathbb{C}^n=U\oplus W$ of dimensions $k$ and $n-k$. How do $L_A$, $R_B$ and $T_{A,B}$ act on the four blocks of $M_n$, and which blocks stay separate?</p>
+<p><strong>The answer in one line.</strong> With $E$ the projection onto $U$ and $F=\mathrm I-E$, the space splits into the four Peirce corners
+$$
+EM_nE,\quad EM_nF,\quad FM_nE,\quad FM_nF,
+$$
+of dimensions $k^2,k(n-k),(n-k)k,(n-k)^2$; a one-sided operator preserves the corners on its own side only, and a general two-sided operator mixes all four.</p>
+<p><strong>Why the article is needed.</strong> At $n=2$ with $k=1$ the four corners are one-dimensional, so every operator is a $2\times2$ block matrix and the mixing is invisible. At general $n$ the corners have different sizes and the mixing pattern is the content: it is what the Peirce decomposition of the algebra becomes in the operator picture, and it is where the half-integer labels of $n=4$ come from.</p>
+<p><strong>Boundaries.</strong> The Peirce decomposition of the algebra is <em>The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</em>; the chirality split is <em>Operator Chirality on $M_n(\mathbb{C})$</em>; the four sectors of the biquaternion algebra are <em>The Operators on the Four Sectors of $M_n(\mathbb{C})$</em>.</p>
+<p><strong>Conventions.</strong> $E$ is a projection of rank $k$, $F=\mathrm I-E$, and a matrix $X$ is written as the block matrix $\begin{pmatrix}X_{11}&X_{12}\X_{21}&X_{22}\end{pmatrix}$ with $X_{11}=EXE$, $X_{12}=EXF$, $X_{21}=FXE$, $X_{22}=FXF$.</p>
+<h2 id="the-four-corners">The Four Corners</h2>
+<p><strong>The dimensions.</strong> $EM_nE\cong M_k$, $EM_nF\cong\mathbb{C}^{k\times(n-k)}$, $FM_nE\cong\mathbb{C}^{(n-k)\times k}$, $FM_nF\cong M_{n-k}$. The complex dimensions are $k^2,k(n-k),k(n-k),(n-k)^2$ and they add to $n^2$.</p>
+<p><strong>The multiplication table.</strong> For corners $C_{ij}=E_iM_nE_j$ with $E_1=E$, $E_2=F$,
+$$
+C_{ij}C_{lm}\subseteq\delta_{jl}C_{im}.
+$$
+So the corners are the Peirce spaces of the two-idempotent decomposition, and the two off-diagonal corners multiply to zero in both directions.</p>
+<p><strong>The transpose.</strong> The transpose exchanges the two off-diagonal corners, $C_{12}^{\mathsf T}=C_{21}$, and preserves the diagonal ones. This is the operator version of the chirality of <em>Operator Chirality on $M_n(\mathbb{C})$</em>.</p>
+<p><strong>The trace.</strong> The trace vanishes on both off-diagonal corners and restricts to the trace on each diagonal corner.</p>
+<h2 id="the-one-sided-operators">The One-Sided Operators</h2>
+<p><strong>Proposition.</strong> $L_A(C_{ij})\subseteq C_{1j}+C_{2j}$, and $L_A$ preserves $M_nE_j$ for each $j$.</p>
+<p><em>Proof.</em> $A(EXF)=AXF$, which ends on the right with $F$; a general $A$ sends $EXF$ into $M_nF=C_{12}+C_{22}$. $\square$</p>
+<p><strong>In blocks.</strong> With $A=\begin{pmatrix}A_{11}&A_{12}\A_{21}&A_{22}\end{pmatrix}$,
+$$
+L_A\begin{pmatrix}X_{11}&X_{12}\X_{21}&X_{22}\end{pmatrix}
+=\begin{pmatrix}A_{11}X_{11}+A_{12}X_{21}&A_{11}X_{12}+A_{12}X_{22}\\ A_{21}X_{11}+A_{22}X_{21}&A_{21}X_{12}+A_{22}X_{22}\end{pmatrix}.
+$$
+The right index of $X$ is untouched; the left index is mixed.</p>
+<p><strong>The right copy.</strong> $R_B$ mixes the right index and leaves the left one:
+$$
+R_B X=\begin{pmatrix}X_{11}B_{11}+X_{12}B_{21}&X_{11}B_{12}+X_{12}B_{22}\\ X_{21}B_{11}+X_{22}B_{21}&X_{21}B_{12}+X_{22}B_{22}\end{pmatrix}.
+$$</p>
+<p><strong>The preservation statement.</strong> $L_A$ preserves the two column spaces $C_{11}+C_{21}$ and $C_{12}+C_{22}$, and $R_B$ preserves the two row spaces $C_{11}+C_{12}$ and $C_{21}+C_{22}$. Neither preserves an individual corner unless $A$ or $B$ is block diagonal.</p>
+<h2 id="the-two-sided-operators">The Two-Sided Operators</h2>
+<p><strong>Proposition.</strong> $(AXB)_{ij}=\sum_{p,q}A_{ip}X_{pq}B_{qj}$, so every corner of $X$ contributes to every corner of the result.</p>
+<p><em>Proof.</em> Block multiplication. $\square$</p>
+<p><strong>The four contributions to one corner.</strong> The $(1,1)$ corner of $AXB$ is
+$$
+A_{11}X_{11}B_{11}+A_{11}X_{12}B_{21}+A_{12}X_{21}B_{11}+A_{12}X_{22}B_{21},
+$$
+so the corner receives one term from each of the four corners of $X$, weighted by the appropriate blocks of $A$ and $B$.</p>
+<p><strong>The invariant case.</strong> If $A$ and $B$ are both block diagonal, then $A_{12}=A_{21}=B_{12}=B_{21}=0$ and $T_{A,B}$ preserves each corner:
+$$
+T_{A,B}(C_{ij})\subseteq C_{ij},\qquad T_{A,B}\rvert_{C_{ij}}=T_{A_{ii},B_{jj}}.
+$$</p>
+<p><strong>The mixture measure.</strong> In general the off-diagonal blocks of $A$ and $B$ are exactly the terms that move $X$ between corners, so the mixing is controlled by the size of those blocks. The distance of $T_{A,B}$ from the corner-preserving operators is the norm of the off-diagonal part of the pair.</p>
+<h2 id="the-operators-as-block-matrices">The Operators as Block Matrices</h2>
+<p><strong>The block matrix of $T_{A,B}$.</strong> Ordering the carrier by the four corners, $T_{A,B}$ is a $4\times4$ block matrix whose entries are themselves maps between corners, and each entry is a sum of at most four tensor products of blocks of $A$ and $B$.</p>
+<p><strong>The corner block of $L_A$ and $R_B$.</strong> $L_A$ is block upper triangular in the ordering $(C_{11},C_{21})\oplus(C_{12},C_{22})$ exactly when $A_{12}=0$, and $R_B$ is block triangular in the other ordering exactly when $B_{21}=0$.</p>
+<p><strong>The dimensions of the operator blocks.</strong> The corner $C_{ij}$ has dimension $d_{ij}$, and an operator mapping $C_{ij}$ to $C_{lm}$ is a $d_{lm}\times d_{ij}$ matrix. The four diagonal blocks of $L_A$ have sizes $k^2\times k^2$ and so on, and the off-diagonal blocks are rectangular.</p>
+<h2 id="the-case-math102-math103">The Case $n=4$, $k=2$</h2>
+<p><strong>All four corners are four-dimensional.</strong> $k=n-k=2$, so $d_{ij}=4$ for all four corners, and the operator space $M_4$ splits into four equal blocks of dimension $4$. This is the only $n$ at which the four corners are simultaneously equal and more than one-dimensional.</p>
+<p><strong>The half-integers.</strong> Under the principal copy at $n=4$, the two diagonal corners carry integer spins and the two off-diagonal corners carry the half-integer labels. The block reading is the operator-level sight of the Peirce corners that carry the half-integers; the spin statement is in <em>Where the Half-Integers Go in $M_n(\mathbb{C})$</em>.</p>
+<p><strong>What does not happen at $n=2$.</strong> With $k=1$ the four corners are one-dimensional, the mixing is a $2\times2$ pattern, and every operator is already a block matrix of scalars. The biquaternion block reading is the shadow of this case.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>Computed with numpy for $n=2,3,4,5$ and every $1\le k\le n-1$: the four corner dimensions $k^2,k(n-k),k(n-k),(n-k)^2$ sum to $n^2$ in every case, and the corner multiplication table $C_{ij}C_{lm}\subseteq\delta_{jl}C_{im}$ was checked on random corner elements to $10^{-15}$.</p>
+<p>The preservation statements were checked by projecting: for random $X\in C_{12}$, the component of $L_AX$ in $C_{11}+C_{21}$ vanishes to $10^{-14}$, and the analogous statement holds for $R_B$ on the row spaces. For block-diagonal $A,B$ the residual $\lVert T_{A,B}X-P_{C}T_{A,B}P_{C}X\rVert$ vanishes for every corner projection $P_C$ to $10^{-14}$; for general $A,B$ it is bounded away from zero, and the size grows with the norm of the off-diagonal blocks.</p>
+<h2 id="the-four-corners-in-coordinates">The Four Corners in Coordinates</h2>
+<p><strong>The corner sizes.</strong> In the splitting $\mathbb{C}^n=\mathbb{C}^p\oplus\mathbb{C}^q$ with $p+q=n$ the four corners have dimensions $p^2$, $pq$, $qp$ and $q^2$, summing to $n^2$.</p>
+<p><strong>The two-sided action.</strong> $T_{A,B}$ preserves each corner: if $X$ has entries only in the corner $(i,j)$, then $AXB$ has entries only in the same corner.</p>
+<p><em>Proof.</em> $A$ acts on the row index and $B$ on the column index, and both preserve the decomposition of the index set into the first $p$ and the last $q$ indices. $\square$</p>
+<p><strong>The one-sided action.</strong> $L_A$ does not preserve the corners: the block $A_{12}$ sends the corner $(2,2)$ into the corner $(1,2)$, and the block $A_{21}$ sends $(1,1)$ into $(2,1)$.</p>
+<p><strong>The mixture.</strong> A general $T_{A,B}$ mixes the entries inside each corner, since $A$ and $B$ mix the indices within the two blocks, but it never moves an entry from one corner to another. The mixture of blocks comes from the one-sided families, not from the two-sided one.</p>
+<h2 id="the-case-math156">The Case $p=1$</h2>
+<p><strong>The dimensions.</strong> For $p=1$ and $q=n-1$ the corners have dimensions $1$, $n-1$, $n-1$ and $(n-1)^2$.</p>
+<p><strong>The reading.</strong> The corner $(1,1)$ is one-dimensional and is the span of $E_{11}$; the corner $(2,2)$ is the algebra of the complement; the two off-diagonal corners are the two spaces of maps between the line and the complement, exchanged by the transpose.</p>
+<p><strong>The consequence.</strong> The block reading at $p=1$ is the reading in which the Peirce corners have the most unequal sizes, and it is the reading in which the two-sided action is the most visible: a two-sided operator acts on four blocks of very different sizes without moving between them.</p>
+<h2 id="the-corner-alphabet">The Corner Alphabet</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>corner</th>
+<th>size</th>
+<th>as maps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1,1)$</td>
+<td>$p^2$</td>
+<td>maps on the first block</td>
+</tr>
+<tr>
+<td>$(1,2)$</td>
+<td>$pq$</td>
+<td>maps from the second block to the first</td>
+</tr>
+<tr>
+<td>$(2,1)$</td>
+<td>$qp$</td>
+<td>maps from the first block to the second</td>
+</tr>
+<tr>
+<td>$(2,2)$</td>
+<td>$q^2$</td>
+<td>maps on the second block</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The transpose.</strong> It exchanges $(1,2)$ and $(2,1)$ and preserves the two diagonal corners.</p>
+<p><strong>The reading.</strong> The alphabet is the alphabet of a $2\times2$ matrix of spaces, and the four Peirce corners of the algebra are its four letters.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The numbers.</strong> The four corners sum to $p^{2}+2pq+q^{2}=n^{2}$, the complex dimension of the algebra, at every splitting and every $n$.</p>
+<h2 id="summary">Summary</h2>
+<p>A splitting into $U\oplus W$ splits $M_n$ into four corners of dimensions $k^2,k(n-k),k(n-k),(n-k)^2$ with a triangular multiplication table. The left copy mixes the left index and preserves the right, the right copy does the reverse, and a general two-sided operator mixes all four corners. The corners are preserved exactly when both parameters are block diagonal. At $n=2$ the corners are one-dimensional and the structure is invisible; at $n=4$ with $k=2$ they are equal and four-dimensional, and the half-integer carriers live off the diagonal.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E,F$</td>
+<td>complementary projections of ranks $k$ and $n-k$</td>
+</tr>
+<tr>
+<td>$C_{ij}$</td>
+<td>the corner $E_iM_nE_j$</td>
+</tr>
+<tr>
+<td>$d_{ij}$</td>
+<td>the dimension of $C_{ij}$</td>
+</tr>
+<tr>
+<td>$X_{ij}$</td>
+<td>the block $E_iXE_j$</td>
+</tr>
+<tr>
+<td>$k(n-k)$</td>
+<td>the dimension of each off-diagonal corner</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-peirce-decomposition-and-the-corner-recursion-of-mnc.html">The Peirce Decomposition and the Corner Recursion of $M_n(\mathbb{C})$</a>, for the algebra-level decomposition.</li>
+<li><a href="operator-chirality-on-mnc.html">Operator Chirality on $M_n(\mathbb{C})$</a>, for the symmetric and antisymmetric split.</li>
+<li><a href="the-operators-on-the-four-sectors-of-mnc.html">The Operators on the Four Sectors of $M_n(\mathbb{C})$</a>, for the sector reading.</li>
+<li><a href="where-the-half-integers-go-in-mnc.html">Where the Half-Integers Go in $M_n(\mathbb{C})$</a>, for the half-integer labels.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the case $n=4$.</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the case $n=2$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

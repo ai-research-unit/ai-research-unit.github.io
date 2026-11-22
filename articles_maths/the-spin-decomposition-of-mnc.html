@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The algebra carries an action of a copy of, and every such action breaks the complex dimensions into carriers. Which spins appear, and how…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-decomposition-of-math0-math1-carriers-one-for-each-spin-from-math2-to-math3"><strong>The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The algebra $M_n(\mathbb{C})$ carries an action of a copy of $SU(2)$, and every such action breaks the $n^2$ complex dimensions into carriers. Which spins appear, and how often?</p>
+<p><strong>The answer in one line.</strong> The module $\mathbb{C}^n$ is one carrier, of spin $j=\tfrac{n-1}{2}$; the algebra is its tensor square; and the Clebsch–Gordan rule gives</p>
+<p>$$
+M_n(\mathbb{C})=\bigoplus_{k=0}^{n-1}V_k,\qquad \dim_{\mathbb{C}}M_n=n^2=\sum_{k=0}^{n-1}(2k+1),
+$$</p>
+<p>one carrier for each spin from $0$ to $n-1$, each once. The traceless part $\mathfrak{sl}_n(\mathbb{C})$ loses the carrier $V_0$ and nothing else.</p>
+<p><strong>Why the article is needed.</strong> The biquaternion category of the corpus reads one algebra, $\mathbb{B}\cong M_2(\mathbb{C})$, and finds the three labels $0$, $\tfrac12$ and $1$. That is one row of a table. The categories $M_2$ to $M_6$ each need their own row, and no article in the corpus states the general row. Without the general statement a reader cannot tell which of the three labels is special to the biquaternion algebra and which is an instance of a rule.</p>
+<p><strong>Boundaries.</strong> The algebra and its trace are <em>The Matrix Algebra $M_n(\mathbb{C})$</em>. The operators on the algebra are <em>The One-Sided Operators of $M_n(\mathbb{C})$</em> and <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>; these act on $M_n$ and are not the subject here, where the group acts on $M_n$ by conjugation. The Clebsch–Gordan rule and the notation $V_s$ are <em>Biquaternion Rotations and Lorentz Transformations</em>, §<em>Tensor Products and the Clebsch–Gordan Rule</em>. The instance at $n=4$ is <em>The Spin Content of $M_4(\mathbb{C})$</em>.</p>
+<p><strong>Conventions.</strong> $V_s$ is the carrier of spin $s$, of complex dimension $2s+1$, with weights (eigenvalues of $J_z$) $-s,-s+1,\dots,s$. The <strong>principal copy</strong> of $\mathfrak{su}_2$ in $\mathfrak{gl}_n$ is the image of the representation $\operatorname{Sym}^{n-1}$ of the defining two-dimensional module, and $j=\tfrac{n-1}{2}$ throughout. The action on the algebra is conjugation, $X\mapsto gXg^{-1}$, with infinitesimal form $\operatorname{ad}_X(Y)=[X,Y]$. The identity operator on the algebra is written $\mathrm{id}$.</p>
+<h2 id="the-principal-copy-of-math40">The Principal Copy of $\mathfrak{su}_2$</h2>
+<h3 id="the-module-is-one-carrier">The Module Is One Carrier</h3>
+<p><strong>Proposition.</strong> Under the action of $SU(2)$ on $\mathbb{C}^n$ through $\operatorname{Sym}^{n-1}\mathbb{C}^2$, the space $\mathbb{C}^n$ is irreducible of highest weight $n-1=2j$, hence $\mathbb{C}^n\cong V_j$.</p>
+<p><em>Proof.</em> The monomials $u^{n-1-k}v^{k}$ for $k=0,\dots,n-1$ are a basis of $\operatorname{Sym}^{n-1}\mathbb{C}^2$. The element $J_z=\operatorname{diag}\bigl(\tfrac12,-\tfrac12\bigr)$ acts on $u$ by $\tfrac12$ and on $v$ by $-\tfrac12$, so it acts on the $k$-th monomial by $\tfrac{n-1}{2}-k=j-k$. The eigenvalues are $j,j-1,\dots,-j$, all distinct, so the dimension is $2j+1=n$ and the highest weight is $j$. The lowering operator $J_-$ carries each monomial to a nonzero multiple of its successor, so the module is generated by one vector and is irreducible.</p>
+<p><strong>The weights are distinct.</strong> This is the property that makes the case $n=2$ misleading. In a module of dimension two the weights are $\pm\tfrac12$ and "one carrier" means a spinor. In a module of dimension $n$ the weights are $n$ distinct numbers, and a single carrier already has a spectrum of size $n$.</p>
+<h3 id="the-three-generators">The Three Generators</h3>
+<p><strong>Definition.</strong> With $m_k=j-k$,</p>
+<p>$$
+J_z=\operatorname{diag}(m_0,\dots,m_{n-1}),\qquad
+(J_+)_{k,k-1}=\sqrt{j(j+1)-m_k(m_k+1)},\qquad J_-=J_+^{\dagger},
+$$</p>
+<p>so that $[J_z,J_\pm]=\pm J_\pm$ and $[J_+,J_-]=2J_z$.</p>
+<p><strong>The two normalisations.</strong> With $J_i$ Hermitian, $J_i^{\dagger}=J_i$ and $\sum_iJ_i^2=j(j+1)\mathrm{I}$; with $J_i$ anti-Hermitian, $J_i^{\dagger}=-J_i$ and $\sum_iJ_i^2=-j(j+1)\mathrm{I}$. The corpus uses the anti-Hermitian convention for the rotors and flips the sign when it quotes a Casimir. Both conventions are used below, and each statement names its own.</p>
+<h3 id="why-this-copy-and-not-another">Why This Copy and Not Another</h3>
+<p>Three copies of $SU(2)$ act on $M_n(\mathbb{C})$ and they give three different counts. The <strong>principal</strong> copy, defined above, gives $n$ carriers. The <strong>full</strong> group $U(n)$ acting by conjugation gives two, the scalars and the traceless part. A <strong>factorised</strong> copy $SU(2)\times SU(2)$, available when $n=m^2$, gives four at $n=4$. The first is the one this article counts, because it is the only one whose carriers are indexed by the spin alone.</p>
+<p><strong>At $n=2$ the first two coincide.</strong> There the principal copy is the whole of $SU(2)$, so the principal and the full readings give the same list, $V_1\oplus V_0$, and the factorised copy does not exist, since $2$ is not a square. This coincidence is why the biquaternion series could stop at $1$: at $n=2$ there is no third list to compare with.</p>
+<p><strong>Faithful or not.</strong> For $n$ even the element $-\mathrm{I}$ acts on $\operatorname{Sym}^{n-1}$ as $-1$, so the copy is faithful and the module is spinorial. For $n$ odd it acts as $+1$, so the copy factors through $SO(3)$ and the module is tensorial. This is the same distinction that separates the spinorial from the tensorial representations of the Lorentz group: half-integral labels need a double cover, and they occur here exactly when $n$ is even.</p>
+<h2 id="the-algebra-as-a-tensor-square">The Algebra as a Tensor Square</h2>
+<h3 id="the-identification">The Identification</h3>
+<p><strong>Proposition.</strong> As a module for the principal copy,</p>
+<p>$$
+M_n(\mathbb{C})\cong\mathbb{C}^n\otimes(\mathbb{C}^n)^{*}\cong V_j\otimes V_j^{*}\cong V_j\otimes V_j .
+$$</p>
+<p><em>Proof.</em> The algebra acts on $\mathbb{C}^n$ by $X\colon w\mapsto Xw$. An operator of rank one is an outer product $u\otimes\varphi$ with $\varphi\in(\mathbb{C}^n)^*$, and every operator is a sum of these, so $M_n\cong\mathbb{C}^n\otimes(\mathbb{C}^n)^*$. Conjugation by $g$ sends $u\otimes\varphi$ to $gu\otimes\varphi g^{-1}=(gu)\otimes(g^{-1})^{\mathsf T}\varphi$, which is the tensor product of the defining action and its contragredient. The dual of an irreducible module of $SU(2)$ is isomorphic to it, since $SU(2)$ preserves a nondegenerate bilinear form; the form is symmetric when $2j$ is even and alternating when $2j$ is odd.</p>
+<p><strong>The parity of the form.</strong> The form on $V_j$ is symmetric exactly when $j$ is an integer, that is when $n$ is odd, and alternating exactly when $n$ is even. At $n=2$ it is the alternating form $\varepsilon$ of the biquaternion articles; at $n=3$ it is the symmetric form under which $SU(2)$ sits inside $SO(3)$.</p>
+<h3 id="the-character">The Character</h3>
+<p><strong>Proposition.</strong> The character of the algebra is the square of the character of the module,</p>
+<p>$$
+\chi_{M_n}(g)=\chi_j(g)\,\overline{\chi_j(g)}=\lvert\chi_j(g)\rvert^{2}=\chi_j(g)^{2}.
+$$</p>
+<p><em>Proof.</em> The trace of the conjugation operator $X\mapsto gXg^{-1}$ is $\operatorname{tr}(g)\operatorname{tr}(g^{-1})=\chi_j(g)\overline{\chi_j(g)}$, by the product rule for Kronecker products applied to the two tensor slots. The character $\chi_j$ of $SU(2)$ is real, because on a maximal torus</p>
+<p>$$
+\chi_j(\theta)=\frac{\sin\,(2j+1)\theta}{\sin\theta},
+$$</p>
+<p>so the conjugate equals the character itself.</p>
+<p><strong>The consequence.</strong> The character of the algebra is $\chi_j^2$, which is the character of the tensor square of the module. The algebra and the tensor square are therefore the same module, as the identification already showed, and the decomposition is the Clebsch–Gordan decomposition of a tensor square.</p>
+<h2 id="the-decomposition">The Decomposition</h2>
+<h3 id="the-theorem">The Theorem</h3>
+<p><strong>Theorem.</strong> Let $n\ge2$ and $j=\tfrac{n-1}{2}$. For the principal copy of $\mathfrak{su}_2$ in $\mathfrak{gl}_n$,</p>
+<p>$$
+M_n(\mathbb{C})=\bigoplus_{k=0}^{n-1}V_k,\qquad \mathfrak{sl}_n(\mathbb{C})=\bigoplus_{k=1}^{n-1}V_k,
+$$</p>
+<p>and each carrier occurs exactly once.</p>
+<p><em>Proof.</em> By the Clebsch–Gordan rule, $V_j\otimes V_k\cong\bigoplus_{l=\lvert j-k\rvert}^{j+k}V_l$, so</p>
+<p>$$
+V_j\otimes V_j\cong\bigoplus_{k=0}^{2j}V_k=\bigoplus_{k=0}^{n-1}V_k,
+$$</p>
+<p>each summand once. The character identity $\chi_j^2=\sum_{k=0}^{2j}\chi_k$ is the same statement, and the characters of the $V_k$ are linearly independent, so no summand can occur twice. Complete reducibility of the finite-dimensional modules of $SU(2)$ makes the sum direct. The traceless part is the complementary summand: the scalars are the unique invariant line $\mathbb{C}\mathrm{I}$, that line is the carrier $V_0$, and the sum being direct, what remains is $k=1,\dots,n-1$.</p>
+<p><strong>Why the traceless part loses exactly one carrier.</strong> The scalars are invariant, so they lie in some carrier; since $V_0$ occurs once, they are that carrier and there is nothing else to remove. The dimension check is $n^2-1=(n-1)(n+1)$ on one side and $\sum_{k=1}^{n-1}(2k+1)=n^2-1$ on the other.</p>
+<h3 id="the-weights-of-the-operator">The Weights of the Operator</h3>
+<p><strong>Proposition.</strong> The eigenvalues of $\operatorname{ad}_{J_z}$ on $M_n$ are the differences $m_a-m_b$ of the weights of the module, and the difference $d$ occurs $n-\lvert d\rvert$ times.</p>
+<p><em>Proof.</em> In a basis of weight vectors, $(\operatorname{ad}_{J_z})_{ab}=m_a-m_b$ on the matrix unit $E_{ab}$, so the eigenvalue attached to the pair $(a,b)$ is $m_a-m_b$. The weights are $j-a$ for $a=0,\dots,n-1$, so the difference is $b-a$, a step-one integer between $-(n-1)$ and $n-1$. The number of pairs with $b-a=d$ is $n-\lvert d\rvert$.</p>
+<p><strong>The consistency check.</strong> A carrier $V_k$ contributes the weight $d$ exactly when $k\ge\lvert d\rvert$, and the number of $k$ in $\{0,\dots,n-1\}$ with $k\ge\lvert d\rvert$ is $n-\lvert d\rvert$. The two counts agree, as they must: the multiset of weights of $\bigoplus_{k=0}^{n-1}V_k$ is the multiset of differences of weights of $V_j$.</p>
+<p><strong>The table at $n=4$.</strong> The weights are $\pm\tfrac32,\pm\tfrac12$; the differences are $0,\pm1,\pm2,\pm3$ with multiplicities $4,3,2,1$, totalling $16$. The four carriers read off the multiplicities are $7+5+3+1$.</p>
+<h3 id="the-table">The Table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$j$</th>
+<th>module</th>
+<th>$M_n(\mathbb{C})$</th>
+<th>$\dim$</th>
+<th>$\mathfrak{sl}_n(\mathbb{C})$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$\tfrac12$</td>
+<td>$V_{1/2}$</td>
+<td>$V_1\oplus V_0$</td>
+<td>$3+1=4$</td>
+<td>$V_1$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$1$</td>
+<td>$V_1$</td>
+<td>$V_2\oplus V_1\oplus V_0$</td>
+<td>$5+3+1=9$</td>
+<td>$V_2\oplus V_1$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\tfrac32$</td>
+<td>$V_{3/2}$</td>
+<td>$V_3\oplus V_2\oplus V_1\oplus V_0$</td>
+<td>$7+5+3+1=16$</td>
+<td>$V_3\oplus V_2\oplus V_1$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$2$</td>
+<td>$V_2$</td>
+<td>$V_4\oplus V_3\oplus V_2\oplus V_1\oplus V_0$</td>
+<td>$9+7+5+3+1=25$</td>
+<td>$V_4\oplus V_3\oplus V_2\oplus V_1$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\tfrac52$</td>
+<td>$V_{5/2}$</td>
+<td>down to $V_0$</td>
+<td>$11+9+7+5+3+1=36$</td>
+<td>same without $V_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two columns are different questions.</strong> The module column asks what a single matter field carries; the algebra column asks what the operators on it carry. At $n=2$ the first is $\tfrac12$ and the second is $0,1$. A reader who confuses them will look for spin $\tfrac12$ inside $M_2$ and not find it, and will look for spin $1$ in the module and not find it either.</p>
+<h3 id="the-casimir">The Casimir</h3>
+<p><strong>Proposition.</strong> With anti-Hermitian generators, $\sum_iJ_i^2=-j(j+1)\mathrm{I}$ on the module, and the operator $-\sum_i\operatorname{ad}_{J_i}^{2}$ acts on the carrier $V_k$ as the scalar $k(k+1)$.</p>
+<p><em>Proof.</em> The first identity is the standard value of the quadratic Casimir on the irreducible module of highest weight $j$. For the second, the Casimir commutes with the action, so by Schur's lemma it is scalar on each irreducible carrier; the sets of eigenvalues measured for $n=2,3,4,5$ are the initial segments $\{0,2\}$, $\{0,2,6\}$, $\{0,2,6,12\}$ and $\{0,2,6,12,20\}$, that is the values $k(k+1)$ with no other value.</p>
+<p><strong>What the Casimir does not do.</strong> It does not separate the carriers from each other by dimension, since $k(k+1)$ is injective on the integers; it separates them by value, and the values are $0,2,6,12,20,\dots$. The total trace is $\sum_{k=0}^{n-1}(2k+1)k(k+1)=\tfrac{n^2(n^2-1)}{2}$, which is the trace of the operator on the whole algebra.</p>
+<h2 id="what-the-decomposition-does-not-give">What the Decomposition Does Not Give</h2>
+<h3 id="the-product-is-not-graded">The Product Is Not Graded</h3>
+<p><strong>Proposition.</strong> The product of two carriers is not contained in a carrier; the algebra has no grading by spin in which $V_aV_b\subseteq V_{a+b}$.</p>
+<p><em>Proof.</em> At $n=2$ the traceless part is $V_1=\mathfrak{sl}_2$ and $\mathfrak{sl}_2\cdot\mathfrak{sl}_2=M_2(\mathbb{C})$, since $\mathfrak{sl}_2$ generates the algebra. The product of two copies of one carrier is the whole algebra, which is $V_1\oplus V_0$, so no rule of the form $V_1V_1\subseteq V_2$ can hold.</p>
+<p><strong>The truncation.</strong> What does hold is the truncation of the Clebsch–Gordan rule: the product of $V_a$ and $V_b$ lies in $\bigoplus_{l=\lvert a-b\rvert}^{\min(a+b,\,n-1)}V_l$. The upper limit is the dimension of the algebra, not the spin, and this is why the algebra is not the tensor algebra of its carriers.</p>
+<h3 id="the-carrier-math238-generates-the-algebra">The Carrier $V_1$ Generates the Algebra</h3>
+<p><strong>Proposition.</strong> The three generators of the principal copy, read as matrices in $M_n$, generate $M_n$ as an algebra.</p>
+<p><em>Warrant.</em> This is Burnside's theorem: a subalgebra of $M_n(\mathbb{C})$ that acts irreducibly on $\mathbb{C}^n$ is the whole algebra, and the three generators act irreducibly because the module is irreducible. The statement was also checked directly: the closure of $\{\mathrm{I},J_x,J_y,J_z\}$ under multiplication has dimension $n^2$ for $n=2,3,4,5$.</p>
+<p><strong>The misreading to avoid.</strong> A first computation of the same closure, with a ladder operator written in the wrong direction, returned $2,5,10,17$, which fits $n^2-2n+2$ and looks like a structure. It is an artefact: the corrected ladder returns $4,9,16,25$. The lesson is that the algebra generated by three matrices must be checked against the dimension $n^2$, and not against a formula fitted to the first four values.</p>
+<h3 id="the-other-groups-give-other-lists">The Other Groups Give Other Lists</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group acting by conjugation</th>
+<th>carriers</th>
+<th>at $n=4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>principal $SU(2)$</td>
+<td>$n$</td>
+<td>$V_3\oplus V_2\oplus V_1\oplus V_0$</td>
+</tr>
+<tr>
+<td>full $U(n)$</td>
+<td>$2$: the scalars and the traceless part</td>
+<td>$V_0$ and $\mathfrak{sl}_4$, irreducible</td>
+</tr>
+<tr>
+<td>factorised $SU(2)\times SU(2)$, when $n=m^2$</td>
+<td>$4$</td>
+<td>$(0,0)\oplus(1,0)\oplus(0,1)\oplus(1,1)$</td>
+</tr>
+<tr>
+<td>maximal torus $U(1)$ of the principal copy</td>
+<td>$2n-1$ weight spaces</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>diagonal torus of $U(n)$</td>
+<td>$n(n-1)+1$ weight spaces</td>
+<td>$13$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The list is not a property of the algebra.</strong> It is a property of the pair (algebra, group). The same sixteen dimensions answer $0,1,2,3$ under the principal copy, $0$ and $15$ under $U(4)$, and $1+3+3+9$ under the factorised copy. A sentence that says "the spins of $M_4(\mathbb{C})$" without naming the group is incomplete, and this is the first place a reader should ask which group is meant.</p>
+<h3 id="not-the-transpose-grading">Not the Transpose Grading</h3>
+<p><strong>Proposition.</strong> The splitting of $M_n$ into symmetric and antisymmetric matrices is not invariant under the principal copy.</p>
+<p><em>Proof.</em> The commutator of a diagonal $J_z$ with a symmetric matrix is antisymmetric, since $[J_z,X]_{ab}=(m_a-m_b)X_{ab}$ and $m_a-m_b$ changes sign under $a\leftrightarrow b$ while $X_{ab}$ does not. For $n=4$ the explicit case is $[J_z,E_{01}+E_{10}]=E_{01}-E_{10}$, which leaves the symmetric half. The infinitesimal generator already does, so no element of the copy preserves the splitting.</p>
+<p><strong>What is true instead.</strong> The symmetric and alternating squares of the <em>module</em> do split by parity of the spin: for $n=4$,</p>
+<p>$$
+\operatorname{Sym}^{2}V_{3/2}=V_3\oplus V_1,\qquad \Lambda^{2}V_{3/2}=V_2\oplus V_0,
+$$</p>
+<p>with dimensions $10=7+3$ and $6=5+1$. This is the parity rule for the symmetric square, $V_k\subseteq\operatorname{Sym}^{2}V_j$ exactly when $k\equiv2j\pmod 2$. It is a statement about the module, computed with the action $g\mapsto\operatorname{Sym}^{2}g$, and it is not a statement about the symmetric matrices of the algebra, which the conjugation does not preserve.</p>
+<h3 id="not-the-real-reading-of-the-biquaternion-articles">Not the Real Reading of the Biquaternion Articles</h3>
+<p>The biquaternion category reads the real algebra $\mathbb{B}$ under conjugation by its unitary elements, and finds a spin-zero centre, a spin-one vector part and a spin-half bispinor space. That reading and the present one share the three labels at $n=2$, where the principal copy is the whole of $SU(2)$ and the module is $V_{1/2}$, and they separate from $n=3$ onward. The two readings must not be quoted as one. The present article counts complex carriers under a chosen $SU(2)$; the biquaternion articles count real subspaces under the unitary group of the algebra.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>The decompositions below were computed from the eigenvalues of $\operatorname{ad}_{J_z}$ on the $n^2$-dimensional operator space, then read off by subtracting the strings $-k,-k+1,\dots,k$ from the top. A superscript in the second column is a multiplicity, so $\pm1^{3}$ means $+1$ three times and $-1$ three times.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>eigenvalues of $\operatorname{ad}_{J_z}$</th>
+<th>decomposition</th>
+<th>$\dim$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$0^{2},\pm1$</td>
+<td>$V_1\oplus V_0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$0^{3},\pm1^{2},\pm2$</td>
+<td>$V_2\oplus V_1\oplus V_0$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0^{4},\pm1^{3},\pm2^{2},\pm3$</td>
+<td>$V_3\oplus V_2\oplus V_1\oplus V_0$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$0^{5},\pm1^{4},\pm2^{3},\pm3^{2},\pm4$</td>
+<td>$V_4\oplus V_3\oplus V_2\oplus V_1\oplus V_0$</td>
+<td>$25$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$0^{6},\pm1^{5},\pm2^{4},\pm3^{3},\pm4^{2},\pm5$</td>
+<td>$V_5\oplus\cdots\oplus V_0$</td>
+<td>$36$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three further checks.</strong> The Casimir $-\sum_i\operatorname{ad}_{J_i}^{2}$ has eigenvalues $0,2,6,12,20$ at $n=5$, one per carrier. The closure of the three generators under multiplication has dimension $n^2$ at $n=2,3,4,5$. The dimension $\sum_{k=0}^{n-1}(2k+1)$ equals $n^2$ at every $n$ by the formula for the sum of the first $n$ odd numbers.</p>
+<h2 id="summary">Summary</h2>
+<p>The module $\mathbb{C}^n$ of the principal copy of $SU(2)$ in $\mathfrak{gl}_n$ is the single carrier $V_j$ with $j=\tfrac{n-1}{2}$. The algebra is its tensor square, and the Clebsch–Gordan rule gives $M_n(\mathbb{C})=\bigoplus_{k=0}^{n-1}V_k$ with each carrier once; the traceless part is $\bigoplus_{k=1}^{n-1}V_k$, the scalars being the unique $V_0$.</p>
+<p>The weights of $\operatorname{ad}_{J_z}$ are the differences of the weights of the module, the difference $d$ occurring $n-\lvert d\rvert$ times, and the Casimir $-\sum_i\operatorname{ad}_{J_i}^{2}$ takes the value $k(k+1)$ on $V_k$. The product is not graded by spin, the carrier $V_1$ generates the whole algebra, and the symmetric and antisymmetric halves of the algebra are not invariant under the action.</p>
+<p><strong>The list of spins is a property of the pair (algebra, group), not of the algebra.</strong> The principal copy returns $n$ carriers, the full unitary group returns two, and the factorised copy at $n=4$ returns four. The biquaternion series $0,\tfrac12,1$ is the row $n=2$, where the principal and the full readings coincide, and that coincidence is the reason the series looked complete.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_s$</td>
+<td>the carrier of spin $s$, of complex dimension $2s+1$</td>
+</tr>
+<tr>
+<td>$j=\tfrac{n-1}{2}$</td>
+<td>the spin of the module $\mathbb{C}^n$</td>
+</tr>
+<tr>
+<td>principal copy</td>
+<td>the image of $\operatorname{Sym}^{n-1}$ in $\mathfrak{gl}_n$</td>
+</tr>
+<tr>
+<td>$J_z,J_\pm$</td>
+<td>the Cartan element and the ladder operators</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_X(Y)=[X,Y]$</td>
+<td>the infinitesimal conjugation</td>
+</tr>
+<tr>
+<td>$\chi_j$</td>
+<td>the character of $V_j$</td>
+</tr>
+<tr>
+<td>$\mathfrak{sl}_n(\mathbb{C})$</td>
+<td>the traceless part, of dimension $n^2-1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>William Fulton and Joe Harris, <em>Representation Theory: A First Course</em> (Springer, 1991), for $\operatorname{Sym}^{n-1}\mathbb{C}^2$ as the irreducible module of highest weight $n-1$ and for the Clebsch–Gordan rule.</li>
+<li>Nathan Jacobson, <em>Lie Algebras</em> (Dover, 1979), for the principal three-dimensional subalgebra and its decomposition of a simple Lie algebra.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the algebra, its centre and its trace.</li>
+<li><a href="biquaternion-rotations-and-lorentz-transformations.html">Biquaternion Rotations and Lorentz Transformations</a>, for the notation $V_s$, the Clebsch–Gordan rule and the tensor powers of the spinor.</li>
+<li><a href="the-one-sided-operators-of-mnc.html">The One-Sided Operators of $M_n(\mathbb{C})$</a>, for the operators that act on the algebra rather than by conjugation.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the instance at $n=4$ and its four carrier lists.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

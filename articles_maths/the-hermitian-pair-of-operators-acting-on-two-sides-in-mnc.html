@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Pair of Operators Acting on Two Sides in $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. When is a two-sided operator self-adjoint, what are its eigenvalues, and what is the cone of positive two-sided operators?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-pair-of-operators-acting-on-two-sides-in-math0"><strong>The Hermitian Pair of Operators Acting on Two Sides in $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> When is a two-sided operator $T_{A,B}(X)=AXB$ self-adjoint, what are its eigenvalues, and what is the cone of positive two-sided operators?</p>
+<p><strong>The answer in one line.</strong> $T_{A,B}^{\dagger}=T_{A^{*},B^{*}}$, so for Hermitian $A,B$ the operator $T_{A,B}$ is self-adjoint with spectrum
+$$
+\{\lambda_i(A)\lambda_j(B)\},
+$$
+and it is positive semidefinite exactly when $A$ and $B$ are both positive semidefinite or both negative semidefinite.</p>
+<p><strong>Why the article is needed.</strong> A first guess is that the positive two-sided operators are the $T_{A,A^{*}}$ with $A$ positive. The guess is false: $T_{A,A}$ with $A=\operatorname{diag}(1,-1)$ is self-adjoint and has a negative eigenvalue. The positivity of a product is a property of the <em>pair</em>, not of a single parameter, and the one-sided intuition, where positivity is transported from the parameter without change, breaks at exactly this point.</p>
+<p><strong>Boundaries.</strong> The one-sided Hermitian pairs are <em>The Hermitian Pair of Operators Acting on One Side in $M_n(\mathbb{C})$</em>; the adjoints and the difference family are <em>The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$</em>; the singular values are <em>The SVD of Endomorphisms of $M_n(\mathbb{C})$</em>. The biquaternion original is <em>The Hermitian Pair of Operators Acting on Two Sides</em>.</p>
+<p><strong>Conventions.</strong> $\langle S,T\rangle=\operatorname{tr}(S^{*}T)$; $T_{A,B}(X)=AXB$; $T_{A,B}^{\dagger}=T_{A^{*},B^{*}}$ for this form and $T_{A,B}^{\mathsf T}=T_{A^{\mathsf T},B^{\mathsf T}}$ for the bilinear one. The parameters of a product are defined only up to $(A,B)\mapsto(\lambda A,\lambda^{-1}B)$.</p>
+<h2 id="the-adjoint-of-a-product">The Adjoint of a Product</h2>
+<p><strong>Proposition.</strong> $T_{A,B}^{\dagger}=T_{A^{*},B^{*}}$ and $T_{A,B}^{\mathsf T}=T_{A^{\mathsf T},B^{\mathsf T}}$.</p>
+<p><em>Proof.</em> $\langle T_{A,B}X,Y\rangle=\operatorname{tr}((AXB)^{*}Y)=\operatorname{tr}(B^{*}X^{*}A^{*}Y)=\operatorname{tr}(X^{*}A^{*}YB^{*})=\langle X,T_{A^{*},B^{*}}Y\rangle$. The bilinear case is the same computation with the transpose in place of the conjugate transpose. $\square$</p>
+<p><strong>The self-adjointness criterion.</strong> $T_{A,B}$ is self-adjoint if and only if there are Hermitian $H,K$ and a nonzero scalar $\mu$ with $A=\mu H$ and $B=\mu^{-1}K$.</p>
+<p><em>Proof.</em> $T_{A,B}=T_{A^{*},B^{*}}$ and $T_{C,D}=T_{A,B}$ force $(C,D)=(\lambda A,\lambda^{-1}B)$. So self-adjointness means $A^{*}=\lambda A$ and $B^{*}=\lambda^{-1}B$. Taking adjoints of the first gives $A=\lvert\lambda\rvert^{2}A$, hence $\lvert\lambda\rvert=1$ for $A\neq0$, and then $\lambda=\bar\mu/\mu$ for a unit $\mu$, so $\mu A$ is Hermitian. Conversely a Hermitian pair scaled by reciprocal scalars satisfies both equations. $\square$</p>
+<p><strong>The warning.</strong> "Both parameters Hermitian" is the representative with $\mu=1$ and is not the general condition: $T_{i\mathrm I,iB}$ with $B$ skew-Hermitian is self-adjoint and neither parameter is Hermitian.</p>
+<p><strong>The warning about $T_{A,A^{*}}$.</strong> This product is self-adjoint only when $A$ is a scalar multiple of a Hermitian matrix. Generically $\lVert T_{A,A^{*}}-T_{A,A^{*}}^{\dagger}\rVert>0$, so the "Hermitian pair" $(T_{A,B},T_{A,B}^{\dagger})$ is not a pair of two products of the shape $T_{A,A^{*}}$ unless the parameter is special.</p>
+<h2 id="the-spectrum-of-a-hermitian-pair">The Spectrum of a Hermitian Pair</h2>
+<p><strong>Proposition.</strong> Let $A,B$ be Hermitian. Then $T_{A,B}$ is self-adjoint and its spectrum is $\{\lambda_i(A)\lambda_j(B)\}$.</p>
+<p><em>Proof.</em> In the frame, $T_{A,B}=B^{\mathsf T}\otimes A=\bar B\otimes A$, a Kronecker product of Hermitian factors up to the entrywise conjugation, which preserves the spectrum. The spectrum of a Kronecker product is the set of pairwise products. $\square$</p>
+<p><strong>The consequence for positivity.</strong> $T_{A,B}\ge0$ if and only if all products $\lambda_i(A)\lambda_j(B)$ are nonnegative, that is if and only if $A$ and $B$ are both positive semidefinite or both negative semidefinite.</p>
+<p><strong>The rank.</strong> $\operatorname{rank}T_{A,B}=(\operatorname{rank}A)(\operatorname{rank}B)$ and the kernel has dimension $n^2-(\operatorname{rank}A)(\operatorname{rank}B)$.</p>
+<p><em>Proof.</em> The rank of a Kronecker product is the product of the ranks. $\square$</p>
+<p><strong>The extreme case.</strong> A rank-one Hermitian $A$ gives $\operatorname{rank}T_{A,A}=1$: the operator is $X\mapsto(AXA)$ and its image is spanned by the rank-one matrix $A$ itself.</p>
+<p><strong>The count.</strong> The rank-one positive operator $|E_{ij}\rangle\langle E_{ij}|$ is the product $T_{E_{ii},E_{jj}}$, since $E_{ii}YE_{jj}=Y_{ij}E_{ij}$. So the matrix units give the $n^2$ matrix-unit rays of the cone, and every positive two-sided operator is a sum of such rays, not a single one.</p>
+<h2 id="eigenvalues-and-singular-values">Eigenvalues and Singular Values</h2>
+<p><strong>The singular values.</strong> The singular values of $T_{A,B}$ are $\sigma_i(A)\sigma_j(B)$, with no assumption on $A$ or $B$.</p>
+<p><em>Proof.</em> $T_{A,B}^{*}T_{A,B}=T_{A^{*}A,BB^{*}}$ is a Kronecker product of positive factors, whose eigenvalues are the pairwise products of $\sigma_i(A)^2$ and $\sigma_j(B)^2$. $\square$</p>
+<p><strong>The comparison.</strong> For a Hermitian pair the singular values are the absolute values of the eigenvalues, which are $\lvert\lambda_i(A)\lambda_j(B)\rvert=\sigma_i(A)\sigma_j(B)$. The two statements agree, as they must.</p>
+<p><strong>The operator norm.</strong> $\lVert T_{A,B}\rVert=\lVert A\rVert\lVert B\rVert$.</p>
+<p><strong>The modulus.</strong> $\lvert T_{A,B}\rvert=T_{\lvert A\rvert,\lvert B^{*}\rvert}$.</p>
+<p><em>Proof.</em> $T^{*}T=T_{A^{*}A,BB^{*}}$, so $\lvert T\rvert$ is the positive square root of $\lvert A\rvert^{2}\otimes(\lvert B^{*}\rvert^{2})^{\mathsf T}$, which is $\lvert A\rvert\otimes(\lvert B^{*}\rvert)^{\mathsf T}=T_{\lvert A\rvert,\lvert B^{*}\rvert}$. $\square$</p>
+<p><strong>The polar decomposition.</strong> $T_{A,B}=T_{U_A,V_B}\lvert T_{A,B}\rvert$ with $A=U_A\lvert A\rvert$ and $B=\lvert B\rvert V_B$, and it is unique exactly when both parameters are invertible.</p>
+<h2 id="normal-products">Normal Products</h2>
+<p><strong>Proposition.</strong> For nonzero $A,B$ the product $T_{A,B}$ is normal exactly when $A$ and $B$ are normal.</p>
+<p><em>Proof.</em> $T^{*}T=T_{A^{*}A,BB^{*}}$ and $TT^{*}=T_{AA^{*},B^{*}B}$; equality forces $A^{*}A=\lambda AA^{*}$ and $BB^{*}=\lambda^{-1}B^{*}B$. Comparing traces gives $\lvert\lambda\rvert=1$, taking adjoints gives $\lambda$ real, so $\lambda=\pm1$; the value $-1$ forces $\operatorname{tr}(A^{*}A)=0$, hence $A=0$. So for nonzero parameters $\lambda=1$, which is normality of both. $\square$</p>
+<p><strong>The unitary products.</strong> $T_{U,V}$ is unitary exactly when $U,V$ are unitary, and then it is an isometry of the carrier.</p>
+<p><strong>The spectral reading.</strong> For normal parameters the spectrum of $T_{A,B}$ is the set of products of the spectra, so the two-sided normal operators are exactly the Kronecker products of normal matrices.</p>
+<h2 id="the-completely-positive-reading">The Completely Positive Reading</h2>
+<p><strong>The map.</strong> For fixed $A$ the map $\Phi_A(X)=AXA^{*}$ is completely positive with the single Kraus operator $A$, and its Choi matrix has rank one.</p>
+<p><strong>The distinction that matters.</strong> The Choi matrix of $\Phi_A$ and the Hilbert–Schmidt representative $T_{A,A^{*}}$ are different objects: they differ by a partial transpose and a realignment. The Choi matrix has rank one, the representative has rank $(\operatorname{rank}A)^2$, and the representative is generally not positive. Complete positivity of the map does not imply positivity of its Hilbert–Schmidt matrix.</p>
+<p><strong>The consequence.</strong> The positive elements of the two-sided family are the Hermitian pairs $T_{A,B}$ with $A,B$ of the same sign, and they are not the Kraus-rank-one maps. The two notions coincide only in the scalar case.</p>
+<h2 id="the-real-structure">The Real Structure</h2>
+<p><strong>The conjugation.</strong> $\Theta(X)=X^{*}$ acts on the carrier, and
+$$
+\Theta T_{A,B}\Theta=T_{B^{*},A^{*}},\qquad \Theta\lvert T_{A,B}\rvert\Theta=\lvert T_{B,A}\rvert .
+$$</p>
+<p><em>Proof.</em> $\Theta T_{A,B}\Theta(X)=(AX^{*}B)^{*}=B^{*}XA^{*}$. $\square$</p>
+<p><strong>The fixed products.</strong> $T_{A,B}$ is fixed by conjugation with $\Theta$ exactly when $B$ is a scalar multiple of $A^{*}$, which is the self-adjointness locus up to the scalar ambiguity.</p>
+<p><strong>The consequence.</strong> The self-adjoint products are the fixed points of the composition of $\Theta$ with the flip, and the positive ones are those fixed points of the same composition with a sign condition on the pair of spectra.</p>
+<h2 id="what-the-one-sided-picture-does-not-give">What the One-Sided Picture Does Not Give</h2>
+<p><strong>The transported positivity.</strong> On one side $L_A\ge0$ exactly when $A\ge0$, and the modulus of $L_A$ is $L_{\lvert A\rvert}$ with no transpose anywhere. On two sides the modulus carries $\lvert B^{*}\rvert$ and the positivity is a property of the pair.</p>
+<p><strong>The transported spectrum.</strong> On one side the spectrum is $\sigma(A)$ with multiplicity $n$; on two sides it is the product set with multiplicity one.</p>
+<p><strong>The transported rank.</strong> On one side the rank is $n\operatorname{rank}A$; on two sides it is $(\operatorname{rank}A)(\operatorname{rank}B)$.</p>
+<p><strong>The reason.</strong> One side is a Kronecker product with the identity, whose spectrum and rank are those of the parameter repeated $n$ times. Two sides multiplies two nontrivial factors, and products of eigenvalues are not eigenvalues of a single parameter.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>Computed with numpy for $n=2,3,4,5$: the residual $\lVert T_{A,B}^{\dagger}-T_{A^{*},B^{*}}\rVert$ is below $10^{-14}$; for random $A$ the defect $\lVert T_{A,A^{*}}-T_{A,A^{*}}^{\dagger}\rVert$ is of order one, and it vanishes only when $A$ is a scalar multiple of a Hermitian matrix, checked on $A=\mu H$ with unit $\mu$.</p>
+<p>For Hermitian $A,B$ the spectrum of $T_{A,B}$ matched the pairwise products of the spectra to $10^{-13}$, the rank matched $(\operatorname{rank}A)(\operatorname{rank}B)$ in every trial, and the sign criterion held: for $A,B$ both positive the minimal eigenvalue was positive ($0.294,0.039,0.296,0.090$ at $n=2,3,4,5$), and for $B$ with one negative diagonal entry the minimal eigenvalue was negative ($-12.4,-131,-85.1,-267$). The modulus identity $\lvert T_{A,B}\rvert=T_{\lvert A\rvert,\lvert B^{*}\rvert}$ held to $3\times10^{-14}$.</p>
+<h2 id="the-cone">The Cone</h2>
+<p><strong>Proposition.</strong> Every positive operator on the Hilbert space $M_n$ is in the two-sided family: it is a sum of rank-one operators $\lvert X\rangle\langle X\lvert$, and $\lvert X\rangle\langle X\lvert=T_{uu^{*},vv^{*}}$ for $X=uv^{*}$.</p>
+<p><em>Proof.</em> $T_{uu^{*},vv^{*}}(Y)=uu^{*}Yvv^{*}=u\,(v^{*}Yu)\,v^{*}=\langle uv^{*},Y\rangle\,uv^{*}=\lvert X\rangle\langle X\lvert(Y)$. A positive operator is a sum of rank-one positive ones, and each is a two-sided product with positive semidefinite parameters. $\square$</p>
+<p><strong>The extreme rays.</strong> The extreme rays are the $\lvert X\rangle\langle X\lvert$ with $X$ of rank one, parametrised by pairs of rays $(u,v)$ and realised as $T_{uu^{*},vv^{*}}$. The $n^2$ matrix-unit rays $\lvert E_{ij}\rangle\langle E_{ij}\lvert=T_{E_{ii},E_{jj}}$ are the coordinate members of the family.</p>
+<p><strong>The comparison with the one-sided cone.</strong> The one-sided positive operators are the $L_A$ with $A$ positive, an $n^2$-dimensional section of the cone of the whole operator space; the two-sided cone is the whole cone, of real dimension $n^4$, and the one-sided cone is the image of the positive parameters inside it.</p>
+<p><strong>The reading.</strong> Positivity is a property of the full cone, not of a parameter. The one-sided cone is the image of the positive parameters, and the two-sided cone is the cone generated by the matrix units.</p>
+<h2 id="the-scalar-case">The Scalar Case</h2>
+<p><strong>The centre.</strong> The scalar operators $\lambda\,\mathrm{id}$ are self-adjoint exactly for real $\lambda$, and positive exactly for $\lambda\ge0$. The line of scalars meets the positive cone in a ray.</p>
+<p><strong>The reading.</strong> The scalar ray is the intersection of all the symmetric cones of the construction, and it is the only part of the picture that looks the same at every $n$.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint of a product conjugates both parameters, so the self-adjoint products are the Hermitian pairs up to reciprocal scalars. For Hermitian parameters the spectrum is the product set and positivity is the same-sign condition on the two spectra. The rank is the product of the ranks, the modulus carries $\lvert B^{*}\rvert$, and the normal products are the products of normal parameters. The completely positive reading refers to the Choi matrix, not to the Hilbert–Schmidt representative, and the two differ by a partial transpose.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T_{A,B}^{\dagger}$</td>
+<td>the Hilbert–Schmidt adjoint, equal to $T_{A^{*},B^{*}}$</td>
+</tr>
+<tr>
+<td>$\lambda_i(A)\lambda_j(B)$</td>
+<td>the spectrum of a Hermitian pair</td>
+</tr>
+<tr>
+<td>$(\operatorname{rank}A)(\operatorname{rank}B)$</td>
+<td>the rank of a product</td>
+</tr>
+<tr>
+<td>$\lvert T_{A,B}\rvert$</td>
+<td>$T_{\lvert A\rvert,\lvert B^{*}\rvert}$</td>
+</tr>
+<tr>
+<td>$\Theta$</td>
+<td>the conjugation $X\mapsto X^{*}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-hermitian-pair-of-operators-acting-on-one-side-in-mnc.html">The Hermitian Pair of Operators Acting on One Side in $M_n(\mathbb{C})$</a>, for the one-sided version.</li>
+<li><a href="the-two-sided-operator-the-difference-family-and-the-adjoints-of-mnc.html">The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$</a>, for the adjoints.</li>
+<li><a href="the-svd-of-endomorphisms-of-mnc.html">The SVD of Endomorphisms of $M_n(\mathbb{C})$</a>, for the singular values.</li>
+<li><a href="the-cone-of-positive-operators.html">Positivity and the Positive Cone of $M_n(\mathbb{C})$</a>, for the cone of the algebra.</li>
+<li><a href="the-hermitian-pair-of-operators-acting-on-two-sides.html">The Hermitian Pair of Operators Acting on Two Sides</a>, for the case $n=2$.</li>
+<li><a href="the-length-and-the-two-ranks-on-mnc.html">The Length and the Two Ranks on $M_n(\mathbb{C})$</a>, for the two ranks.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

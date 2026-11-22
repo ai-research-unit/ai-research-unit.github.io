@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. In the biquaternion series a carrier is a module, and a closure is a real subspace of the algebra in which the carrier sits. What are the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-carriers-the-closures-and-the-spin-of-math0"><strong>The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> In the biquaternion series a carrier is a module, and a closure is a real subspace of the algebra in which the carrier sits. What are the carriers, the closures and the spin at general $n$, and which of the biquaternion steps survive?</p>
+<p><strong>The answer in one line.</strong> The carriers are the $n$ summands $V_0,\dots,V_{n-1}$ of $M_n$; they are already subspaces, so the linear closure adds nothing; the multiplicative closure is $1$ for $V_0$ and $n^2$ for every other carrier; and the spin of the algebra is $n-1=2j$.</p>
+<p><strong>Why the article is needed.</strong> The biquaternion article builds four closures with four different rules, and the rules are real-form constructions. At general $n$ the construction that produces the closures disappears, because the carriers are subspaces of the algebra by definition. What remains is the multiplicative closure, which the biquaternion article does not need and the general case does. A reader who looks for the four rules at $n=4$ will not find them, and should be told why.</p>
+<p><strong>Boundaries.</strong> The decomposition is <em>The Spin Decomposition of $M_n(\mathbb{C})$</em>; the individual carriers are <em>The Spin-Zero Carrier of $M_n(\mathbb{C})$</em>, <em>The Spin-One Carrier of $M_n(\mathbb{C})$</em> and <em>Where the Half-Integers Go in $M_n(\mathbb{C})$</em>; the biquaternion original is <em>From the Spin to the Carriers and the Closures</em>.</p>
+<p><strong>Conventions.</strong> A <em>carrier</em> is a summand of $M_n$ under the principal copy. The <em>linear closure</em> of a carrier is the smallest invariant subspace containing the module; the <em>multiplicative closure</em> is the smallest subalgebra containing the carrier.</p>
+<h2 id="the-two-closures">The Two Closures</h2>
+<p><strong>Definition (linear closure).</strong> For a carrier $V_k$ the linear closure is the smallest invariant subspace of $M_n$ containing it.</p>
+<p><strong>Proposition.</strong> The linear closure of $V_k$ is $V_k$ itself.</p>
+<p><em>Proof.</em> $V_k$ is a subspace of $M_n$ and it is invariant, so the smallest invariant subspace containing it is itself. $\square$</p>
+<p><strong>Definition (multiplicative closure).</strong> The multiplicative closure of $V_k$ is the subalgebra of $M_n$ generated by it.</p>
+<p><strong>Proposition.</strong> The multiplicative closure of $V_0$ is $V_0$, of dimension one; the multiplicative closure of $V_k$ for $k\ge1$ is $M_n$, of dimension $n^2$.</p>
+<p><em>Proof.</em> $V_0=\mathbb{C}\mathrm I$ is a subalgebra. For $k\ge1$, the carrier $V_k$ contains an element whose powers and products with the other elements generate the whole algebra; the case $k=1$ is the generation theorem, and for $k\ge2$ the products of elements of $V_k$ contain a nonzero multiple of the identity plus elements of lower carriers, so the generated algebra contains $V_1$ and hence is $M_n$. $\square$</p>
+<p><strong>The check of the second step.</strong> The claim for $k\ge2$ was verified by computing the generated algebra for every carrier at $n=2,3,4,5$: the dimensions are $1$ for $k=0$ and $n^2$ for every $k\ge1$.</p>
+<h2 id="the-counts">The Counts</h2>
+<p><strong>The number of carriers.</strong> $n$, one for each integer label from $0$ to $n-1$.</p>
+<p><strong>The complex dimension.</strong> $n^2=\sum_{k=0}^{n-1}(2k+1)$.</p>
+<p><strong>The real dimension.</strong> $2n^2$.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>carriers</th>
+<th>$n^2$ complex</th>
+<th>$2n^2$ real</th>
+<th>top label $n-1$</th>
+<th>module label $j$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$2$</td>
+<td>$4$</td>
+<td>$8$</td>
+<td>$1$</td>
+<td>$\tfrac12$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$3$</td>
+<td>$9$</td>
+<td>$18$</td>
+<td>$2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$4$</td>
+<td>$16$</td>
+<td>$32$</td>
+<td>$3$</td>
+<td>$\tfrac32$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$5$</td>
+<td>$25$</td>
+<td>$50$</td>
+<td>$4$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$6$</td>
+<td>$36$</td>
+<td>$72$</td>
+<td>$5$</td>
+<td>$\tfrac52$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The average.</strong> The average carrier dimension is $n$, and the largest is $2n-1$. The carriers are not of equal size, and the two ends are the thin ones.</p>
+<p><strong>The reading.</strong> The count $n$ of carriers is not the count $n^2$ of dimensions: the carriers are the irreducible pieces, and their number grows linearly while their total grows quadratically.</p>
+<h2 id="the-spin">The Spin</h2>
+<p><strong>Definition.</strong> The spin of the algebra is the largest label occurring in its decomposition, that is $n-1=2j$.</p>
+<p><strong>The two readings.</strong> The module's spin is $j$; the algebra's spin is $2j$. The factor two is the Clebsch–Gordan top term of $V_j\otimes V_j$.</p>
+<p><strong>The Casimir values.</strong> The carrier $V_k$ has Casimir value $k(k+1)$, so the algebra's spectrum of Casimir values is $0,2,6,\dots,n(n-1)$, and the top value is $n(n-1)=2j(2j+1)$.</p>
+<p><strong>The consequence.</strong> The spin of the algebra is determined by $n$ and by nothing else. Any two algebras $M_n$ with the same $n$ have the same carriers, the same closures and the same spin.</p>
+<h2 id="which-biquaternion-steps-survive">Which Biquaternion Steps Survive</h2>
+<p><strong>Survives.</strong> The carrier list as a list of modules; the closure as a subalgebra; the statement that the smallest carrier closes to itself and the largest closes to everything.</p>
+<p><strong>Does not survive.</strong> The four closure rules, each of which names a real-form property: being a complex subspace, containing both members of a Peirce pair, being an eigenspace of a conjugation. At general $n$ the carriers are complex subspaces already, and the rules have no work to do.</p>
+<p><strong>The reason.</strong> In the biquaternion algebra the carriers are modules over a real algebra, and a module is not a subspace until a real form is chosen. In $M_n$ the algebra is complex and the module is $\mathbb{C}^n$; the carrier list is a list of subspaces from the start, and the closure step is only needed for the multiplicative structure.</p>
+<p><strong>The honest statement.</strong> The general-$n$ article has one closure and the biquaternion article has four, and the difference is a difference of the real-form content, not of the spin content.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>The carriers were computed as the eigenspaces of $-\sum_i\operatorname{ad}_{J_i}^2$ (the $J_i$ anti-Hermitian) for $n=2,3,4,5$: the eigenvalues are $0,2,6,12,20$, with multiplicities $1,3,5,7,9$, so the carrier dimensions are $2k+1$ and their sum is $n^2$.</p>
+<p>The multiplicative closures were computed by iterating products of a basis of each carrier: at $n=2$ the dimensions are $1$ and $4$; at $n=3$, $1,9,9$; at $n=4$, $1,16,16,16$; at $n=5$, $1,25,25,25,25$. The pattern is $1$ for $V_0$ and $n^2$ otherwise, at every $n$ tested.</p>
+<p>The table's dimension column was checked against $\sum(2k+1)=n^2$ for $n=2,\dots,6$: $4,9,16,25,36$.</p>
+<h2 id="the-closure-table">The Closure Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>carrier dimensions</th>
+<th>multiplicative closures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$1,3$</td>
+<td>$1,4$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$1,3,5$</td>
+<td>$1,9,9$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$1,3,5,7$</td>
+<td>$1,16,16,16$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$1,3,5,7,9$</td>
+<td>$1,25,25,25,25$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern.</strong> The first closure is always one and the others are always $n^2$; the growth from the smallest carrier to the algebra happens in one step.</p>
+<p><strong>The reading.</strong> The closure is not a graded operation: the carrier that generates nothing is the smallest one, and every other carrier generates everything.</p>
+<h2 id="what-the-table-does-not-say">What the Table Does Not Say</h2>
+<p><strong>Not the multiplicities.</strong> The table counts carriers, not weights: the weights number $n^2$ at every $n$, and the carrier count is only $n$.</p>
+<p><strong>Not the real dimension.</strong> The real dimension is twice the complex one, and the doubling is uniform, so the real column carries no information that the complex column does not.</p>
+<p><strong>Not the containment.</strong> The table does not say which carriers sit inside $\mathfrak{sl}_n$; that is the content of the traceless decomposition, $V_1\oplus\dots\oplus V_{n-1}$.</p>
+<p><strong>The reading.</strong> The table gives the size of the decomposition, and the sizes are the only thing that is uniform in $n$. Everything else, the containment and the products, needs the individual carriers.</p>
+<h2 id="the-biquaternion-row">The Biquaternion Row</h2>
+<p><strong>The row $n=2$.</strong> Two carriers, four complex dimensions, eight real dimensions, spins $0$ and $1$.</p>
+<p><strong>The biquaternion count.</strong> The biquaternion article counts four real dimensions, because it counts the algebra and not its endomorphisms; the operator space is twice as large.</p>
+<p><strong>The reading.</strong> The row $n=2$ of the table is the row in which the biquaternion series lives, and the factor two between the four and the eight is the factor between the algebra and its operators.</p>
+<h2 id="the-three-numbers">The Three Numbers</h2>
+<p><strong>The counts.</strong> $n$ carriers, $n^2$ complex dimensions, $2n^2$ real dimensions.</p>
+<p><strong>The ratios.</strong> The average carrier has $n$ complex dimensions, and the ratio of the real dimension to the number of carriers is $2n$.</p>
+<p><strong>The reading.</strong> The three numbers grow at three different rates, and no two of them agree except at $n=2$, where $n=n^2=2n$ fails and only $n=2$, $n^2=4$, $2n^2=8$ hold.</p>
+<h2 id="the-three-readings-of-the-word">The Three Readings of the Word</h2>
+<p><strong>The module reading.</strong> A carrier is an irreducible module of the copy.</p>
+<p><strong>The subspace reading.</strong> A carrier is a summand of the algebra as a vector space.</p>
+<p><strong>The closure reading.</strong> A carrier is a set whose multiplicative closure is the whole algebra, except for the scalars.</p>
+<p><strong>The reading.</strong> At general $n$ the three readings agree on the list and disagree on the closure, because the closure of a carrier leaves the list.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra has $n$ carriers, of dimensions $1,3,\dots,2n-1$, totalling $n^2$ complex and $2n^2$ real dimensions. The linear closure is the carrier itself, since the carriers are subspaces; the multiplicative closure is one for the scalars and the whole algebra for every other carrier. The spin of the algebra is $n-1=2j$, and the Casimir spectrum runs from $0$ to $n(n-1)$. The four real-form closure rules of the biquaternion article have no general-$n$ analogue.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_k$</td>
+<td>the carrier of spin $k$</td>
+</tr>
+<tr>
+<td>$\overline{V_k}$</td>
+<td>the multiplicative closure</td>
+</tr>
+<tr>
+<td>$n-1$</td>
+<td>the spin of the algebra</td>
+</tr>
+<tr>
+<td>$k(k+1)$</td>
+<td>the Casimir value on $V_k$</td>
+</tr>
+<tr>
+<td>$1,\dots,1,n^2,\dots,n^2$</td>
+<td>the closure dimensions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-decomposition-of-mnc.html">The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$</a>, for the decomposition.</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure.html">From the Spin to the Carriers and the Closures</a>, for the case $n=2$ and the four rules.</li>
+<li><a href="the-spin-zero-carrier-of-mnc.html">The Spin-Zero Carrier of $M_n(\mathbb{C})$: the Scalars</a>, for the carrier that does not generate.</li>
+<li><a href="the-spin-one-carrier-of-mnc.html">The Spin-One Carrier of $M_n(\mathbb{C})$: the Three-Dimensional $V_1$</a>, for the carrier that does.</li>
+<li><a href="the-su2-of-mnc-acting-on-n-squared-dimensions.html">The $SU(2)$ of $M_n(\mathbb{C})$ Acting on $n^2$ Dimensions</a>, for the real picture.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the four readings of one row.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

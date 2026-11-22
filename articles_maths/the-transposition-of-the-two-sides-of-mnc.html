@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transposition of the Two Sides of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. What happens to a two-sided operator under the transpose of the carrier, and can the left and the right sides be exchanged?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transposition-of-the-two-sides-of-math0"><strong>The Transposition of the Two Sides of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> What happens to a two-sided operator $T_{A,B}$ under the transpose of the carrier, and can the left and the right sides be exchanged?</p>
+<p><strong>The answer in one line.</strong> Conjugation by the transpose operator $F(X)=X^{\mathsf T}$ swaps the two sides and transposes both parameters,
+$$
+FT_{A,B}F=T_{B^{\mathsf T},A^{\mathsf T}},
+$$
+and no element of the algebra and no single product does the same.</p>
+<p><strong>Why the article is needed.</strong> In the biquaternion series the exchange of the two sides was written with one matrix, because the transpose of the coefficient frame is a conjugation and the frame is $4\times4$. At general $n$ the exchange still exists, but as an operator that is outside the one-sided span and outside the two-sided family. Separating the operator from the element is the point.</p>
+<p><strong>Boundaries.</strong> The families are <em>The Endomorphisms of $M_n(\mathbb{C})$</em>; the adjoints are <em>The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$</em>; the enveloping algebra is <em>The Enveloping Operator Algebra of $M_n(\mathbb{C})$ and the Bi-module Structure</em>. The biquaternion original is <em>The Transposition of the Two Sides</em>.</p>
+<p><strong>Conventions.</strong> $F(X)=X^{\mathsf T}$, so $F^2=\mathrm I$. The three involutions of the operator layer are
+$$
+F T F,\qquad T^{\dagger}\ (\text{Hilbert–Schmidt}),\qquad T^{\mathsf T}\ (\text{transposed bilinear form}).
+$$</p>
+<h2 id="the-three-transposes">The Three Transposes</h2>
+<p><strong>The table.</strong> For a single product the three operations give</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operation</th>
+<th>result</th>
+<th>effect on the parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$FTF$</td>
+<td>$T_{B^{\mathsf T},A^{\mathsf T}}$</td>
+<td>swaps the slots and transposes both</td>
+</tr>
+<tr>
+<td>$T^{\dagger}$</td>
+<td>$T_{A^{*},B^{*}}$</td>
+<td>no swap, conjugate transpose both</td>
+</tr>
+<tr>
+<td>$T^{\mathsf T}$</td>
+<td>$T_{A^{\mathsf T},B^{\mathsf T}}$</td>
+<td>no swap, transpose both</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Proposition.</strong> $FT_{A,B}F=T_{B^{\mathsf T},A^{\mathsf T}}$.</p>
+<p><em>Proof.</em> $(FT_{A,B}FX)_{ij}$ is the $(i,j)$ entry of $(AX^{\mathsf T}B)^{\mathsf T}$, which is $(B^{\mathsf T}XA^{\mathsf T})_{ij}$. $\square$</p>
+<p><strong>The reading.</strong> The bilinear transpose $T\mapsto T^{\mathsf T}$ never moves a parameter from one slot to the other. Conjugation by $F$ always does. The two agree only when $A$ and $B$ are symmetric and equal, in which case both fix $T_{A,A}$.</p>
+<p><strong>The adjoint pair.</strong> $F$ is self-adjoint and unitary for the Hilbert–Schmidt form, so $FTF$ is unitarily equivalent to $T$. Conjugation by $F$ is therefore an automorphism of the operator algebra of order two, and it is the outer symmetry that the one-sided families lack.</p>
+<h2 id="exchanging-the-sides">Exchanging the Sides</h2>
+<p><strong>Proposition (the operator does it).</strong> $FL_AF=R_{A^{\mathsf T}}$ and $FR_BF=L_{B^{\mathsf T}}$.</p>
+<p><em>Proof.</em> The first is the case $B=\mathrm I$ of the formula above: $FT_{A,\mathrm I}F=T_{\mathrm I,A^{\mathsf T}}=R_{A^{\mathsf T}}$. The second follows by applying the first to $F^2=\mathrm I$. $\square$</p>
+<p><strong>Proposition (no element of the algebra does it).</strong> There is no $D\in M_n$ with $DR_AD^{-1}=L_A$ for all $A$, unless $n=1$.</p>
+<p><em>Proof.</em> The identity reads $DXA=ADX$ for all $X$. At $X=\mathrm I$ it gives $DA=AD$; substituting back gives $(DX)A=A(DX)$ for every $X$, so $DX$ is central for every $X$, hence $D$ is scalar. A scalar gives $R_A=L_A$, false. $\square$</p>
+<p><strong>Proposition (no single product does it).</strong> There is no pair $(P,Q)$ with $T_{P,Q}L_AT_{P,Q}^{-1}=L_A$ for all $A$.</p>
+<p><em>Proof.</em> $T_{P,Q}L_AT_{Q^{-1},P^{-1}}=T_{PAQ,Q^{-1}P^{-1}}$, which equals $L_A$ only if $Q^{-1}P^{-1}=\mathrm I$ and $PAQ=A$ for all $A$. The first gives $PQ=\mathrm I$; the second then forces $P$ and $Q$ to be scalars, and again $R_A=L_A$. $\square$</p>
+<p><strong>The moral.</strong> The exchange is a genuinely operator-level symmetry. It is not inner, at any $n\ge2$. At $n=2$ it has a familiar matrix because the transpose of the coefficient frame is the quaternion conjugation, which the biquaternion series already wrote down; the existence of that matrix is not an accident of small $n$, but its interpretation as an element of the algebra is.</p>
+<h2 id="the-flip-is-outside-the-one-sided-span">The Flip Is Outside the One-Sided Span</h2>
+<p><strong>Proposition.</strong> $F\notin\operatorname{span}\{L_A,R_B\}$ for $n\ge2$.</p>
+<p><em>Proof.</em> Suppose $F=L_A+R_B$, so $X^{\mathsf T}=AX+XB$ for all $X$. At $X=\mathrm I$ this gives $A+B=\mathrm I$. At $X=E_{ij}$ the $(k,l)$ entry is $\delta_{ki}\delta_{lj}$ on the left and $A_{ki}\delta_{lj}+\delta_{ki}B_{lj}$ on the right. Taking $k=i$ and $l=j$ gives $A_{ii}+B_{jj}=1$. Taking $k=i$ and $l\neq j$ gives $B_{lj}=0$, so $B$ is diagonal; taking $k\neq i$ and $l=j$ gives $A_{ki}=0$, so $A$ is diagonal. Then $A_{ii}+B_{jj}=1$ for all $i,j$, so $B_{jj}$ is independent of $j$ and $A_{ii}$ is independent of $i$: both are scalars with $\alpha+\beta=1$. But then $X^{\mathsf T}=\alpha X+\beta X=X$, false for $n\ge2$. $\square$</p>
+<p><strong>The length.</strong> $F=\sum_{ij}E_{ij}\otimes E_{ji}$, a sum of $n^2$ products, so $\ell(F)\le n^2$. The value of the length is computed in <em>The Length and the Two Ranks on $M_n(\mathbb{C})$</em>; what matters here is that it is at least two, since $F$ is not a product.</p>
+<p><strong>The orthogonal direction.</strong> $F$ has both a symmetric part and an antisymmetric part under the transpose of the operator space, namely $F$ itself and the map $X\mapsto-X^{\mathsf T}$ on one half. It is therefore not orthogonal to the one-sided span in a trivial way; its distance to the span is the quantity measured in the finite check below.</p>
+<h2 id="the-group-generated">The Group Generated</h2>
+<p><strong>The two actions.</strong> For $G,H$ invertible let $\Phi_{G,H}$ be conjugation by $L_GR_{H^{-1}}$, the operator $T\mapsto L_GR_{H^{-1}}\,T\,R_HL_{G^{-1}}$. This is an algebra automorphism of $\operatorname{End}(M_n)$, and $\Phi_{G,H}\Phi_{G',H'}=\Phi_{GG',HH'}$; the kernel is the scalars.</p>
+<p><strong>Proposition (the flip normalises).</strong> $F\Phi_{G,H}F=\Phi_{H^{-\mathsf T},G^{-\mathsf T}}$.</p>
+<p><em>Proof.</em> $FL_GR_{H^{-1}}F=R_{G^{\mathsf T}}L_{H^{-\mathsf T}}=L_{H^{-\mathsf T}}R_{G^{\mathsf T}}$, using that the two copies commute and $FL_GF=R_{G^{\mathsf T}}$. $\square$</p>
+<p><strong>The group.</strong> The operators $\Phi_{G,H}$ and $F\Phi_{G,H}$ form the group
+$$
+\bigl(GL_n\times GL_n\bigr)\rtimes\mathbb{Z}_2\big/ \mathbb{C}^{\times},
+$$
+of complex dimension $2n^2-1$. Its compact form is $(U(n)\times U(n))\rtimes\mathbb{Z}_2$ modulo the scalars, of real dimension $2n^2-1$.</p>
+<p><strong>What is not claimed.</strong> This is the group of automorphisms of the operator algebra that are built from the two actions and the flip. The full normaliser of the span $\mathfrak{a}$ inside $GL(\operatorname{End}(M_n))$ is not computed here, and it may be larger: the Lie algebra $\mathfrak{a}$ has two copies of $\mathfrak{sl}_n$, and for $n\ge3$ the diagram automorphism $A\mapsto-A^{\mathsf T}$ of each copy preserves $\mathfrak{a}$ as a Lie algebra without being realised by any operator of this group. Whether it is realised at all is an open point of this article.</p>
+<p><strong>The biquaternion reading.</strong> At $n=2$ the complex dimension is $7$ and the real compact dimension is $7$, and the extra $\mathbb{Z}_2$ is the chirality reversal of <em>Operator Chirality on $M_n(\mathbb{C})$</em>, implemented by the same operator $F$.</p>
+<h2 id="the-two-transposes-of-an-adjoint-pair">The Two Transposes of an Adjoint Pair</h2>
+<p><strong>The pair.</strong> A pair $(A,B)$ is Hermitian when $A=A^{*}$ and $B=B^{*}$. Then
+$$
+T_{A,B}^{\dagger}=T_{A,B},\qquad FT_{A,B}F=T_{B^{\mathsf T},A^{\mathsf T}},
+$$
+so the Hilbert–Schmidt adjoint fixes the product while the flip swaps the two parameters.</p>
+<p><strong>The self-adjointness condition.</strong> $T_{A,B}$ is self-adjoint exactly when $A=A^{*}$ and $B=B^{*}$, because $T_{A,B}^{\dagger}=T_{A^{*},B^{*}}$ and $T_{A,B}=T_{C,D}$ forces $(C,D)=(\lambda A,\lambda^{-1}B)$. So self-adjoint products are the Hermitian pairs.</p>
+<p><strong>The symmetric condition.</strong> $T_{A,B}$ is symmetric for the bilinear form exactly when $A=A^{\mathsf T}$ and $B=B^{\mathsf T}$, that is when both parameters are complex symmetric.</p>
+<p><strong>The fixed set of the flip.</strong> The operators fixed by $T\mapsto FTF$ are those with $T_{A,B}=T_{B^{\mathsf T},A^{\mathsf T}}$, which for a single product means $B=A^{\mathsf T}$. So the flip fixes the products with symmetric parameters and exchanges the rest in pairs.</p>
+<h2 id="the-intertwining-reading">The Intertwining Reading</h2>
+<p><strong>The two representations.</strong> $A\mapsto L_A$ is a representation of the algebra $M_n$ on the carrier space of operators, and $B\mapsto R_B$ is a representation of $M_n^{\mathrm{op}}$.</p>
+<p><strong>Proposition.</strong> $L\cong R\circ\tau$: the flip intertwines the left representation with the right one composed with the transpose anti-automorphism.</p>
+<p><em>Proof.</em> $FL_AF=R_{A^{\mathsf T}}$, which is the defining relation of an intertwiner between $A\mapsto L_A$ and $A\mapsto R_{A^{\mathsf T}}$. $\square$</p>
+<p><strong>Proposition.</strong> $L$ and $R$ are inequivalent as representations of $M_n$ under the identity map of the algebra.</p>
+<p><em>Proof.</em> An intertwiner $S$ satisfies $SAX=SXA$ for all $A,X$. For invertible $S$ this gives $AX=XA$ for all $A,X$, so every $A$ is scalar, false for $n\ge2$. $\square$</p>
+<p><strong>The consequence.</strong> The two sides are the same representation only after the anti-automorphism $\tau$ is applied. At $n=2$ the coefficient frame makes $\tau$ look like the conjugation of the algebra, so the twist is invisible; at $n\ge3$ it is visible, and it is the reason the side exchange needs an operator rather than an element.</p>
+<p><strong>The tensor form.</strong> With the intertwiner in place, the operator algebra is $V\otimes V^{*}\otimes V\otimes V^{*}$ as a representation of the two copies, and the flip exchanges the first two factors with the last two. This is the representation-theoretic content of $FT_{A,B}F=T_{B^{\mathsf T},A^{\mathsf T}}$.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>Computed with numpy for $n=2,3,4,5$ on random complex $A$: the residual $\lVert FT_{A,B}F-T_{B^{\mathsf T},A^{\mathsf T}}\rVert$ is below $10^{-14}$; the residual $\lVert FL_AF-R_{A^{\mathsf T}}\rVert$ is below $10^{-14}$; the residual $\lVert T^{\mathsf T}-T_{A^{\mathsf T},B^{\mathsf T}}\rVert$ is below $10^{-13}$ for the transposed bilinear form.</p>
+<p>The distance from $F$ to the one-sided span was computed by least squares on the $n^4\times 2n^2$ system. The residual norm is $\sqrt{n^2-1}$, namely $\sqrt3,\sqrt8,\sqrt{15},\sqrt{24}$ for $n=2,3,4,5$, and the normalised distance is $\sqrt{n^2-1}/n$, namely $0.866,0.943,0.968,0.980$. So $F$ is never in the span, and it approaches the unit sphere of the orthogonal complement as $n$ grows. At $n=2$ the flip is a $4\times4$ permutation matrix of trace $2$ and determinant $-1$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\dim\mathfrak{a}=2n^2-1$</th>
+<th>distance $\sqrt{n^2-1}$</th>
+<th>normalised</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$7$</td>
+<td>$1.732$</td>
+<td>$0.866$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$17$</td>
+<td>$2.828$</td>
+<td>$0.943$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$31$</td>
+<td>$3.873$</td>
+<td>$0.968$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$49$</td>
+<td>$4.899$</td>
+<td>$0.980$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-frame">The Frame</h2>
+<p><strong>The flip in coordinates.</strong> For $n=2$ the flip exchanges the two sides, and in the four-dimensional frame it swaps the two tensor factors. The alternating form is invariant under it, and the two sides are exchanged by an operator of order two up to a sign.</p>
+<p><strong>The general case.</strong> For $n\ge3$ there is no single matrix $S$ with $SAS^{-1}=A^{\mathsf T}$ for all $A$, because the automorphism group of $M_n$ is inner and the transpose is not an inner automorphism. The symmetry group of the two-sided family is therefore generated by the two independent swaps, one for each side, and it is larger than the group generated by the flip.</p>
+<p><strong>The exact formula.</strong> A symmetry that swaps the sides sends $T_{A,B}$ to $T_{B,A}$ for every pair, and the flip realises it: $FT_{A,B}F=T_{B,A}$. The formula is exact at every $n$, and it is the reason the two-sided family has a symmetry that the one-sided families do not.</p>
+<p><strong>The consequence.</strong> The two-sided structures are classified by the orbits of the group generated by the flip and the two swaps, and at $n=2$ that group is the group of the biquaternion frame, while at $n\ge3$ it is strictly larger.</p>
+<h2 id="summary">Summary</h2>
+<p>Conjugation by the transpose swaps the two sides and transposes both parameters; the bilinear transpose transposes the parameters in place. No element of the algebra and no single product exchanges the sides, at any $n\ge2$. The transpose operator $F$ is outside the one-sided span and has length at least two. The normaliser of the one-sided span is the semidirect product of the two general linear groups with the flip, of dimension $2n^2$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F$</td>
+<td>the transpose operator $X\mapsto X^{\mathsf T}$ on the carrier</td>
+</tr>
+<tr>
+<td>$\mathfrak{a}$</td>
+<td>the span of the one-sided families</td>
+</tr>
+<tr>
+<td>$T^{\dagger}$</td>
+<td>the Hilbert–Schmidt adjoint</td>
+</tr>
+<tr>
+<td>$T^{\mathsf T}$</td>
+<td>the adjoint for the transposed bilinear form</td>
+</tr>
+<tr>
+<td>$G$</td>
+<td>the normaliser of $\mathfrak{a}$ in $GL(M_n)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-endomorphisms-of-mnc.html">The Endomorphisms of $M_n(\mathbb{C})$</a>, for the three families and their span.</li>
+<li><a href="operator-chirality-on-mnc.html">Operator Chirality on $M_n(\mathbb{C})$</a>, for the transpose as the chirality reversal.</li>
+<li><a href="the-enveloping-operator-algebra-of-mnc.html">The Enveloping Operator Algebra of $M_n(\mathbb{C})$ and the Bi-module Structure</a>, for the double centraliser property.</li>
+<li><a href="the-length-and-the-two-ranks-on-mnc.html">The Length and the Two Ranks on $M_n(\mathbb{C})$</a>, for the length of the flip.</li>
+<li><a href="the-transposition-of-the-two-sides.html">The Transposition of the Two Sides</a>, for the case $n=2$.</li>
+<li><a href="operators-acting-on-two-sides.html">Operators Acting on Two Sides</a>, for the two-sided theory in the biquaternion frame.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Where the Half-Integers Go in $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The biquaternion algebra carries the labels, and. Under the principal copy at general, which labels does the algebra carry, and where does…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="where-the-half-integers-go-in-math0"><strong>Where the Half-Integers Go in $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The biquaternion algebra carries the labels $0$, $\tfrac12$ and $1$. Under the principal copy at general $n$, which labels does the algebra carry, and where does the half-integer go?</p>
+<p><strong>The answer in one line.</strong> The algebra carries the integer labels $0,1,\dots,n-1$ at every $n$; the half-integer $j=\tfrac{n-1}{2}$ is the label of the module $\mathbb{C}^n$, which is not a subspace of the algebra except when $j$ happens to be an integer.</p>
+<p><strong>Why the article is needed.</strong> This is the point at which $n=2$ habits do the most damage. At $n=2$ the module has label $\tfrac12$, the algebra has labels $0$ and $1$, and the three numbers together look like the spectrum of one object. At $n=4$ the module has label $\tfrac32$ and the algebra has labels $0,1,2,3$; a reader who imports the $n=2$ picture looks for spin $\tfrac32$ inside $M_4$ and does not find it, and then doubts the decomposition.</p>
+<p><strong>Boundaries.</strong> The decomposition is <em>The Spin Decomposition of $M_n(\mathbb{C})$</em>; the carrier of spin zero is <em>The Spin-Zero Carrier of $M_n(\mathbb{C})$</em>; the carrier of spin one is <em>The Spin-One Carrier of $M_n(\mathbb{C})$</em>; the case $n=4$ in four readings is <em>The Spin Content of $M_4(\mathbb{C})$</em>. The biquaternion originals are <em>The Spin-Half Bispinor Spaces</em> and <em>From the Spin to the Carriers and the Closures</em>.</p>
+<p><strong>Conventions.</strong> $j=\tfrac{n-1}{2}$; the module is $\mathbb{C}^n\cong V_j$; the algebra is $M_n\cong\bigoplus_{k=0}^{n-1}V_k$ under conjugation. $V_s\cong V_t$ if and only if $s=t$.</p>
+<h2 id="the-two-objects">The Two Objects</h2>
+<p><strong>The module.</strong> $\mathbb{C}^n=V_j$, of dimension $2j+1=n$, with weights $-j,-j+1,\dots,j$, which are half-integers when $n$ is even and integers when $n$ is odd.</p>
+<p><strong>The algebra.</strong> $M_n=\bigoplus_{k=0}^{n-1}V_k$, with $k$ an integer, at every $n$.</p>
+<p><strong>The arithmetic of the two labels.</strong> The algebra's labels are differences of the module's weights, $d=m_a-m_b$, and the difference of two numbers that are both half-integers, or both integers, is an integer. Hence the algebra's labels are integers whether the module's label is or not.</p>
+<p><strong>The consequence.</strong> The half-integer cannot appear in the algebra as a weight difference. It can appear only as the label of a carrier, and the carriers have integer labels by the theorem.</p>
+<h2 id="is-the-module-inside-the-algebra">Is the Module Inside the Algebra?</h2>
+<p><strong>Proposition.</strong> The module's carrier $V_j$ occurs as a summand of $M_n$ if and only if $j\in\{0,1,\dots,n-1\}$, that is if and only if $n$ is odd.</p>
+<p><em>Proof.</em> The summands of $M_n$ are $V_k$ with $0\le k\le n-1$. Since $V_j\cong V_k$ only for $j=k$, the carrier $V_j$ occurs exactly when $j$ is one of those integers. With $j=\tfrac{n-1}{2}$ this is $0\le\tfrac{n-1}{2}\le n-1$, which holds for every $n\ge1$, together with the integrality of $j$, which holds exactly for odd $n$. $\square$</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$j$</th>
+<th>$j$ integral</th>
+<th>$V_j\subseteq M_n$</th>
+<th>module weights</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$\tfrac12$</td>
+<td>no</td>
+<td>no</td>
+<td>$\pm\tfrac12$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$1$</td>
+<td>yes</td>
+<td>yes, $V_1$</td>
+<td>$-1,0,1$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\tfrac32$</td>
+<td>no</td>
+<td>no</td>
+<td>$\pm\tfrac12,\pm\tfrac32$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$2$</td>
+<td>yes</td>
+<td>yes, $V_2$</td>
+<td>$-2,\dots,2$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\tfrac52$</td>
+<td>no</td>
+<td>no</td>
+<td>$\pm\tfrac12,\dots,\pm\tfrac52$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> For odd $n$ the module's spin is an integer and the module's carrier is one of the algebra's carriers; the question "where is the half-integer" does not arise. For even $n$ the module's spin is a half-integer and no carrier of the algebra has that label.</p>
+<p><strong>The precise negative statement.</strong> For even $n$ there is no subspace of $M_n$ that is isomorphic to $\mathbb{C}^n$ as a module for the principal copy. The module is the space on which the algebra acts, not a part of it.</p>
+<h2 id="why-the-biquaternion-case-looks-different">Why the Biquaternion Case Looks Different</h2>
+<p><strong>The real form.</strong> At $n=2$ the module is $\mathbb{C}^2=V_{1/2}$, and the algebra is $M_2\cong V_1\oplus V_0$. The biquaternion series reads both through a real structure: the algebra over $\mathbb{R}$ has the four-dimensional space $\mathbb{B}$, and the spinor plane and the bispinor space are real subspaces of it, and they are visible inside the algebra because the algebra is only four-real-dimensional.</p>
+<p><strong>Why half-integers appear there.</strong> The real algebra $\mathbb{B}$ acts on itself by left multiplication, and the left ideal $\mathbb{B}\tilde\Pi_+$ is a real subspace of the algebra isomorphic to the spinor module. So at $n=2$ the module <em>is</em> a subspace of the algebra over $\mathbb{R}$: the left ideals are inside the algebra.</p>
+<p><strong>The general-$n$ statement.</strong> For $n\ge3$ no left ideal of $M_n$ is a minimal carrier of the principal copy: the minimal left ideals are the spaces $M_nP$ for a rank-one idempotent $P$, of complex dimension $n$, and their module structure is the defining module, not a subspace of the carrier list.</p>
+<p><em>Proof.</em> $M_nP$ consists of the matrices whose image lies in the line $\operatorname{im}P$, so it is the space of all matrices with that image; under left multiplication it is the defining module. Its dimension is $n$, and its isomorphism type as a principal-copy module is $V_j$, which occurs in the carrier list only for odd $n$. $\square$</p>
+<p><strong>The honest conclusion.</strong> The biquaternion spin-half space is a left ideal of a four-dimensional real algebra. The general-$n$ object of the same shape is the left ideal $M_nP$, of complex dimension $n$, and it carries the label $j$ — which is a half-integer exactly when $n$ is even, and then it is not a summand of the algebra. The label lives on the ideal, and the ideal is not a carrier of the algebra.</p>
+<h2 id="where-half-integers-do-appear-in-the-algebra">Where Half-Integers Do Appear in the Algebra</h2>
+<p><strong>Other groups.</strong> Under a group other than the principal copy the algebra can carry half-integer labels. At $n=4$, with the block reading on $\mathbb{C}^2\oplus\mathbb{C}^2$ and the group $SU(2)\times SU(2)$, the two off-diagonal corners carry two copies of $(\tfrac12,\tfrac12)$; the diagonal content of the whole algebra in that reading is $4V_1\oplus4V_0$, with no half-integer, but the pair labels $\tfrac12$ are visible in the corners.</p>
+<p><strong>The lesson.</strong> A half-integer label in the algebra is a statement about a group action, and the group must be named. Under the principal copy the answer is always "integers only".</p>
+<p><strong>The exception that is not one.</strong> The label $\tfrac12$ at $n=2$ is the principal copy's module label, and it is visible in the algebra only because the algebra happens to be four-real-dimensional and the left ideal is a real subspace. It is not a half-integer carrier of $M_2$.</p>
+<h2 id="what-not-to-import">What Not to Import</h2>
+<p><strong>The wrong claim.</strong> "The algebra $M_4$ has spin content $\tfrac32 + \tfrac12 + \dots$ because the module has label $\tfrac32$." False: the algebra's labels are $0,1,2,3$, and $\tfrac32$ is not among them.</p>
+<p><strong>The wrong claim.</strong> "The spin-half carrier of $M_2$ generalises to a spin-half carrier of $M_n$." False: at even $n$ there is no carrier of label $\tfrac{n-1}{2}$; at odd $n$ the label is an integer.</p>
+<p><strong>The right claim.</strong> "The module has label $j$ and the algebra has labels $0$ to $n-1$; the algebra's top label is $2j$." True at every $n$, and it is the whole of the general statement.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>Computed for $n=2,3,4,5$: the Casimir $-\sum_i\operatorname{ad}_{J_i}^2$ (the $J_i$ anti-Hermitian) has the eigenvalues $k(k+1)$ with $k=0,\dots,n-1$, all even integers, and the eigenspace dimensions are $2k+1$; no half-integer eigenvalue occurs.</p>
+<p>The module's weights were computed from $J_z=\operatorname{diag}(j,j-1,\dots,-j)$: they are $\pm\tfrac12$ at $n=2$, $-1,0,1$ at $n=3$, $\pm\tfrac12,\pm\tfrac32$ at $n=4$, $-2,\dots,2$ at $n=5$. The differences $m_a-m_b$ are integers in every case, with multiplicity $n-\lvert d\rvert$.</p>
+<p>The left ideal was checked at $n=2,3,4,5$: for a rank-one idempotent $P$ the space $\{XP\}$ has dimension $n$ and is invariant under left multiplication, confirming that the module of the ideal is the defining module and not a carrier of the algebra.</p>
+<h2 id="the-four-lists-at-math154">The Four Lists at $n=4$</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>carrier list</th>
+<th>module labels</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>principal $SU(2)$</td>
+<td>$7+5+3+1$</td>
+<td>the module $V_{3/2}$, not a summand</td>
+</tr>
+<tr>
+<td>full $U(4)$</td>
+<td>$1+15$</td>
+<td>the defining module, not a summand</td>
+</tr>
+<tr>
+<td>factorised on $\mathbb{C}^2\otimes\mathbb{C}^2$</td>
+<td>$9+3+3+1$</td>
+<td>$(\tfrac12,\tfrac12)$, a pair of half-integers</td>
+</tr>
+<tr>
+<td>block on $S_+\oplus S_-$</td>
+<td>$8+3+3+2$</td>
+<td>two copies of $(\tfrac12,\tfrac12)$ plus $(1,0)\oplus(0,1)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The observation.</strong> In every list the algebra's own labels are integers. The half-integers occur only as the pair $(\tfrac12,\tfrac12)$, never as a single half-integer label.</p>
+<p><strong>The reading.</strong> A single half-integer in the algebra would be a state of half-integer total spin. At $n=4$ there is none, and the factorised reading explains why: the two half-integers come in a pair, and the pair has integer total spin.</p>
+<h2 id="why-the-module-is-not-a-subspace">Why the Module Is Not a Subspace</h2>
+<p><strong>The dimensions.</strong> The module has complex dimension $n$ and the algebra has complex dimension $n^2$; the carrier list of the algebra has $n$ summands of dimensions $1,3,\dots,2n-1$.</p>
+<p><strong>The labels.</strong> The module's label $j=\tfrac{n-1}{2}$ is half-integral for even $n$, and no summand of the algebra has that label, because the algebra's labels are $0,1,\dots,n-1$.</p>
+<p><strong>The conclusion.</strong> For even $n$ the module is not isomorphic to any submodule of the algebra, so the module does not occur as a submodule of the algebra at all.</p>
+<p><strong>The reading.</strong> At $n=4$ the module is a two-dimensional complex space of spin $\tfrac32$, and the algebra has carriers of spins $0,1,2,3$; there is no $\tfrac32$ anywhere in the algebra, and no subspace of the algebra carries it.</p>
+<h2 id="what-a-half-integer-carrier-would-require">What a Half-Integer Carrier Would Require</h2>
+<p><strong>The requirement.</strong> A half-integer carrier of the algebra would be a summand $V_{k/2}$ with $k$ odd, hence a summand of even dimension $2\cdot\tfrac{k}{2}+1=k+1$ with $k$ odd.</p>
+<p><strong>The obstruction.</strong> The decomposition is multiplicity-free with labels $0,1,\dots,n-1$, so no summand of that kind exists. A half-integer subspace that is not a summand is not a carrier, and it is not invariant.</p>
+<p><strong>The reading.</strong> The half-integer would have to be introduced by a different group action, and at $n=4$ the only place it can appear is a pair of labels coming from a product of two half-integer factors.</p>
+<h2 id="the-rule">The Rule</h2>
+<p><strong>The rule.</strong> In the algebra, integer labels only. Half-integer labels occur in the module, and in the algebra only as pairs coming from a product of two half-integer factors.</p>
+<p><strong>The reason.</strong> The algebra's labels are the differences of the module's weights, and the difference of two half-integers is an integer.</p>
+<p><strong>The reading.</strong> The rule is the article in one line, and it holds at every $n$: the parity of the labels is inherited from the parity of $n$, and the differences forget it.</p>
+<h2 id="the-counterexample-that-is-not-one">The Counterexample That Is Not One</h2>
+<p><strong>The apparent counterexample.</strong> At $n=4$ the block reading exhibits the labels $(\tfrac12,\tfrac12)$, and a reader may take them as half-integer labels of the algebra.</p>
+<p><strong>The correction.</strong> The pair has integer total label $\tfrac12+\tfrac12=1$, and the algebra's carrier $V_1$ is the corresponding summand. The half-integers are the two factors, not the label.</p>
+<p><strong>The reading.</strong> A half-integer label is a property of a single factor of a product group, and the principal copy has only one factor.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The numbers.</strong> At $n=4$ the carriers have dimensions $7,5,3,1$ and the module has dimension $2$. No summand has dimension $2$.</p>
+<h2 id="summary">Summary</h2>
+<p>Under the principal copy the algebra carries the integer labels $0$ to $n-1$ at every $n$, and the module carries $j=\tfrac{n-1}{2}$, which is a half-integer for even $n$. The module's carrier is a summand of the algebra exactly when $n$ is odd. The biquaternion spin-half space is a left ideal of a real four-dimensional algebra, and its general analogue is the left ideal $M_nP$ of complex dimension $n$, which carries the label $j$ without being a carrier of the algebra. Half-integer labels inside the algebra require a different group, and the group must be named.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$j=\tfrac{n-1}{2}$</td>
+<td>the label of the module</td>
+</tr>
+<tr>
+<td>$0,\dots,n-1$</td>
+<td>the labels of the algebra</td>
+</tr>
+<tr>
+<td>$V_j\subseteq M_n$</td>
+<td>holds exactly for odd $n$</td>
+</tr>
+<tr>
+<td>$M_nP$</td>
+<td>the minimal left ideal, of complex dimension $n$</td>
+</tr>
+<tr>
+<td>$(\tfrac12,\tfrac12)$</td>
+<td>the pair label in the chiral corners at $n=4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-decomposition-of-mnc.html">The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$</a>, for the integer labels.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the four readings at $n=4$.</li>
+<li><a href="the-spin-half-bispinor-spaces.html">The Spin-Half Bispinor Spaces</a>, for the case $n=2$.</li>
+<li><a href="the-spin-zero-carrier-of-mnc.html">The Spin-Zero Carrier of $M_n(\mathbb{C})$: the Scalars</a>, for the label $0$.</li>
+<li><a href="the-spin-one-carrier-of-mnc.html">The Spin-One Carrier of $M_n(\mathbb{C})$: the Three-Dimensional $V_1$</a>, for the label $1$.</li>
+<li><a href="the-odd-rows-m3-and-m5.html">The Odd Rows: $M_3(\mathbb{C})$ and $M_5(\mathbb{C})$</a>, for the rows with no half-integer at all.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

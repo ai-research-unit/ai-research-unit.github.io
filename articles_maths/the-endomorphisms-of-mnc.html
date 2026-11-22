@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Endomorphisms of $M_n(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. What is the algebra of all linear maps of the matrix algebra into itself, and how do the three families of maps, and sit inside it?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-endomorphisms-of-math0"><strong>The Endomorphisms of $M_n(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> What is the algebra of all linear maps of the matrix algebra into itself, and how do the three families of maps $L_A$, $R_B$ and $T_{A,B}$ sit inside it?</p>
+<p><strong>The answer in one line.</strong> It is the tensor square,
+$$
+\operatorname{End}_{\mathbb{C}}(M_n)=M_n\otimes M_n^{\mathrm{op}}\cong M_{n^2}(\mathbb{C}),
+$$
+of complex dimension $n^4$, and the three families are its one-sided and two-sided slices.</p>
+<p><strong>Why the article is needed.</strong> The operator articles of the biquaternion series worked in one size, $4\times4$, because both the algebra and its endomorphism algebra could be written in that size. At general $n$ two sizes appear, $n$ for the elements and $n^2$ for the operators, and the difference carries all of the new structure. Without this article the later ones read $n^4$ as an accident of bookkeeping.</p>
+<p><strong>Boundaries.</strong> The matrix algebra and its ideals are <em>The Matrix Algebra $M_n(\mathbb{C})$</em> and <em>The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$</em>. The one-sided families are <em>The One-Sided Operators of $M_n(\mathbb{C})$</em>; the two-sided family is <em>The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</em>; the general ladder of dimensions is <em>The Regular Representation in Dimension $n$</em>. The biquaternion original is <em>The Endomorphisms of the Biquaternion Algebra</em>.</p>
+<p><strong>Conventions.</strong> $V=\mathbb{C}^n$, $M_n=M_n(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(V)$, and $n\ge2$. The maps are
+$$
+L_A(X)=AX,\qquad R_B(X)=XB,\qquad T_{A,B}(X)=AXB,
+$$
+so that $T_{A,B}=L_AR_B=R_BL_A$. The Hilbert–Schmidt form on $\operatorname{End}(M_n)$ is $\langle S,T\rangle=\operatorname{tr}(S^{*}T)$. Column stacking writes $X\in M_n$ as the column $\operatorname{vec}X$ of length $n^2$, in which
+$$
+\operatorname{vec}(AXB)=(B^{\mathsf T}\otimes A)\operatorname{vec}X .
+$$</p>
+<h2 id="the-algebra-of-endomorphisms">The Algebra of Endomorphisms</h2>
+<p><strong>Proposition (the tensor square).</strong> The rule $A\otimes B\mapsto L_AR_B$ is an isomorphism of algebras
+$$
+M_n\otimes M_n^{\mathrm{op}}\longrightarrow\operatorname{End}_{\mathbb{C}}(M_n),
+$$
+and both sides have complex dimension $n^4$.</p>
+<p><em>Proof.</em> The rule is bilinear and multiplicative: $(L_AR_B)(L_CL_D)=L_{AC}R_{DB}$, and $AC\otimes DB$ is the product in $M_n\otimes M_n^{\mathrm{op}}$. Injectivity: the products $E_{ij}\otimes E_{kl}$ are linearly independent and their images are the matrix units of the index pair $((i,k),(j,l))$, which are independent. Both spaces have dimension $n^4$, so injectivity is bijectivity. $\square$</p>
+<p><strong>The index pair.</strong> Under the isomorphism an operator is a matrix whose rows are indexed by a pair $(i,k)$ and whose columns by a pair $(j,l)$, and $L_AR_B$ has the single entry $A_{ij}B_{lk}$ in the slot $((i,k),(j,l))$. This is the whole content of the tensor reading, and the rest of the series unpacks it.</p>
+<p><strong>The real reading.</strong> Over $\mathbb{R}$ the same object is $\operatorname{End}_{\mathbb{R}}(M_n)\cong M_{2n^2}(\mathbb{R})$, of real dimension $2n^4$. The complex-linear operators are the ones commuting with multiplication by $i$, and they form a real subspace of half the dimension, $2n^4/2=n^4$.</p>
+<h2 id="the-three-families">The Three Families</h2>
+<p><strong>The one-sided copies.</strong> The sets
+$$
+L(M_n)=\{L_A:A\in M_n\},\qquad R(M_n)=\{R_B:B\in M_n\}
+$$
+are subalgebras of $\operatorname{End}(M_n)$, each of complex dimension $n^2$. The first is isomorphic to $M_n$ and the second to $M_n^{\mathrm{op}}$; the second reverses products, $R_BR_C=R_{CB}$.</p>
+<p><strong>Proposition (the intersection).</strong> $L(M_n)\cap R(M_n)=\mathbb{C}\mathrm I$.</p>
+<p><em>Proof.</em> If $L_A=R_B$ then $AX=XB$ for all $X$. At $X=\mathrm I$ this gives $A=B$, and then $AX=XA$ for all $X$, so $A$ is central, hence scalar. $\square$</p>
+<p><strong>Proposition (the two-sided family spans).</strong> The $n^4$ operators $T_{E_{ij},E_{kl}}$ are linearly independent, hence a basis of $\operatorname{End}(M_n)$.</p>
+<p><em>Proof.</em> In the index pair of the previous section, $T_{E_{ij},E_{kl}}$ has the single entry $1$ in the slot $((i,k),(j,l))$ and $0$ elsewhere; these are the matrix units of the $n^2\times n^2$ operator matrix. $\square$</p>
+<p><strong>The families are not closed under addition.</strong> $L_A+L_B=L_{A+B}$ stays in the left copy, and $R_A+R_B$ in the right one, but $L_A+R_B$ is in neither unless one of the two vanishes. The one-sided families are subspaces; the two-sided family is a spanning set and not a subspace, since $T_{A,B}+T_{C,D}$ need not be a single product.</p>
+<h2 id="which-generate-and-which-do-not">Which Generate and Which Do Not</h2>
+<p><strong>The span of the one-sided families.</strong> Write
+$$
+\mathfrak{a}=\operatorname{span}\{L_A,R_B:A,B\in M_n\}=\{L_A+R_B\}.
+$$
+Then $\dim_{\mathbb{C}}\mathfrak{a}=2n^2-1$, because the two copies have dimension $n^2$ and meet in the line of scalars.</p>
+<p><strong>Proposition.</strong> $\mathfrak{a}$ is not a subalgebra of $\operatorname{End}(M_n)$ for $n\ge2$.</p>
+<p><em>Proof.</em> Suppose $L_AR_B=L_C+R_D$, that is $AXB=CX+XD$ for all $X$. The $(i,j)$ entry of $AE_{kl}B$ is $A_{ik}B_{lj}$, and that of $CE_{kl}+E_{kl}D$ is $C_{ik}\delta_{lj}+\delta_{ik}D_{lj}$. For $i\neq k$ and $l\neq j$ the second vanishes, so $A_{ik}B_{lj}=0$ for every such quadruple. If $A$ has an off-diagonal entry $A_{ik}\neq0$, then $B_{lj}=0$ for all $l\neq j$, so $B$ is diagonal. Taking $i=k$ and $l\neq j$ then gives $A_{ii}B_{lj}=D_{lj}$ for every $i$, so all $A_{ii}$ with $B_{lj}\neq0$ coincide; if $B$ has an off-diagonal entry this makes $A$ scalar. The symmetric argument with the roles exchanged gives: either $A$ or $B$ is scalar. A scalar parameter stays in $\mathfrak{a}$, since $L_{\lambda\mathrm I}R_B=\lambda R_B$. $\square$</p>
+<p><strong>The exact statement.</strong> $T_{A,B}\in\mathfrak{a}$ if and only if $A$ or $B$ is a scalar. So the one-sided span contains exactly the degenerate products, and every genuine two-sided product, with both parameters non-scalar, lies outside it.</p>
+<p><strong>Proposition (the generated algebra).</strong> The smallest subalgebra of $\operatorname{End}(M_n)$ containing $L(M_n)\cup R(M_n)$ is the whole algebra.</p>
+<p><em>Proof.</em> It contains every product $L_AR_B=T_{A,B}$ and hence, being closed under addition, their span, which is everything by the basis theorem above. $\square$</p>
+<p>So the three statements are different and all three are needed: the one-sided families generate the operator algebra, their linear span is a proper subspace, and the two-sided family spans the algebra without being a subspace.</p>
+<h2 id="the-two-readings-of-one-operator">The Two Readings of One Operator</h2>
+<p><strong>The trace.</strong> $\operatorname{tr}L_A=n\operatorname{tr}A$ and $\operatorname{tr}R_B=n\operatorname{tr}B$, because the spectrum of $L_A$ is that of $A$ repeated $n$ times. Hence $\operatorname{tr}T_{A,B}=n\operatorname{tr}A\operatorname{tr}B$ and $\det T_{A,B}=(\det A\det B)^n$.</p>
+<p><strong>The identity.</strong> $\mathrm I_{\operatorname{End}}=L_{\mathrm I}=R_{\mathrm I}$, the operator $X\mapsto X$. It is the single point where the three families meet: $T_{A,B}=\mathrm I$ forces $A$ and $B$ to be scalars with product one.</p>
+<p><strong>Proposition (the centre).</strong> $\operatorname{End}(M_n)$ is a full matrix algebra, so its centre is $\mathbb{C}\mathrm I$.</p>
+<p><em>Proof.</em> The operator algebra is $M_{n^2}(\mathbb{C})$, whose centre is the scalars. $\square$</p>
+<p><strong>The commutant of one element.</strong> Operators commuting with a single $L_A$ are the maps $X\mapsto CX+XA'$ with $A'$ commuting with $A$; the count is $n^2\dim C(A)$, where $C(A)$ is the centraliser of $A$ in $M_n$. At $A$ nonderogatory this is $n^3$, the value used in <em>The One-Sided Operators of $M_n(\mathbb{C})$</em>.</p>
+<h2 id="the-biquaternion-accident">The Biquaternion Accident</h2>
+<p>At $n=2$ the carrier $V=\mathbb{C}^2$ has dimension $2$, the algebra $M_2$ has complex dimension $4$, and the operator algebra $\operatorname{End}(M_2)$ has complex dimension $16$. The biquaternion algebra $\mathbb{B}$ is $M_2(\mathbb{C})$ read with a particular real basis, so it also has complex dimension $4$ and real dimension $8$, and its endomorphisms have complex dimension $16$ and real dimension $64$.</p>
+<p><strong>Why one size served both.</strong> The biquaternion series wrote the elements of $\mathbb{B}$ as $4\times4$ complex matrices in the coefficient basis and the operators on $\mathbb{B}$ also as $4\times4$ complex matrices. Both readings are correct at $n=2$: the element algebra is $4$-dimensional, so its left regular representation is $4\times4$, and the operator algebra is $16$-dimensional, so its matrices are $4\times4$ with entries in $\mathbb{C}$. One size, $4$, serves the elements and the operators.</p>
+<p><strong>What breaks.</strong> At $n\ge3$ the elements are $n\times n$ and the operators are $n^2\times n^2$. The element algebra has dimension $n^2$ and the operator algebra $n^4$; the ratio is $n^2$, not $1$. A $4\times4$ reading of the operators exists only at $n=2$, and there it hides the tensor square: the sixteen entries of a $4\times4$ operator matrix are the sixteen pairs of the index pair, and the split $4=2\cdot2$ of the carrier is what makes the three families visible.</p>
+<p><strong>The real dimension.</strong> At $n=2$ the real operator algebra has dimension $64=8^2$, so it is $M_8(\mathbb{R})$. The biquaternion series called this the real reading of the same $4\times4$ matrices, which is true only because $4$ complex dimensions are $8$ real dimensions and the real matrix size doubles.</p>
+<h2 id="the-adjoints-of-the-three-families">The Adjoints of the Three Families</h2>
+<p><strong>Proposition.</strong> For the Hilbert–Schmidt form, $L_A^{\dagger}=L_{A^{*}}$, $R_B^{\dagger}=R_{B^{*}}$ and $T_{A,B}^{\dagger}=T_{A^{*},B^{*}}$.</p>
+<p><em>Proof.</em> $\langle L_AX,Y\rangle=\operatorname{tr}((AX)^{*}Y)=\operatorname{tr}(X^{*}A^{*}Y)=\langle X,L_{A^{*}}Y\rangle$. The right case is the same with the trace cycled, and the product follows from $L_AR_B$ with $L^{\dagger},R^{\dagger}$ applied in reverse order. $\square$</p>
+<p><strong>Proposition.</strong> For the transposed bilinear form $\langle S,T\rangle_{\mathsf T}=\operatorname{tr}(S^{\mathsf T}T)$, the adjoints are $L_A^{\mathsf T}=L_{A^{\mathsf T}}$ and $R_B^{\mathsf T}=R_{B^{\mathsf T}}$.</p>
+<p><em>Proof.</em> The same computation with the transpose in place of the conjugate transpose, using $\operatorname{tr}(S^{\mathsf T}T)=\operatorname{tr}(ST^{\mathsf T})$. $\square$</p>
+<p>So the two adjoints act on the parameters and never exchange a slot. At $n=2$ the biquaternion conjugation is the transpose of the coefficient frame, and this is where the two stories meet; <em>The Two-Sided Operator, the Difference Family and the Adjoints of $M_n(\mathbb{C})$</em> treats the coincidence.</p>
+<h2 id="the-finite-check">The Finite Check</h2>
+<p>Computed with numpy, in the column-stacking basis, for $n=2,3,4,5$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\dim\operatorname{End}$ $=n^4$</th>
+<th>$\dim\operatorname{span}\{L,R\}$</th>
+<th>$2n^2-1$</th>
+<th>gap $(n^2-1)^2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$16$</td>
+<td>$7$</td>
+<td>$7$</td>
+<td>$9$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$81$</td>
+<td>$17$</td>
+<td>$17$</td>
+<td>$64$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$256$</td>
+<td>$31$</td>
+<td>$31$</td>
+<td>$225$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$625$</td>
+<td>$49$</td>
+<td>$49$</td>
+<td>$576$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The rank of the $n^4\times 2n^2$ matrix of the $2n^2$ one-sided operators reproduces the fourth column exactly, and the rank of the $n^4\times n^4$ matrix of the $n^4$ products reproduces $n^4$ exactly. The gap is the dimension of the orthogonal complement of $\mathfrak{a}$ for the Hilbert–Schmidt form; it is computed directly in <em>The Enveloping Operator Algebra of $M_n(\mathbb{C})$ and the Bi-module Structure</em>.</p>
+<h2 id="the-count">The Count</h2>
+<p><strong>The numbers.</strong> $n^{4}$ is $16,81,256,625$ and $2n^{2}-1$ is $7,17,31,49$ for $n=2,3,4,5$. The second sequence is the span of the two copies, the first the algebra they generate.</p>
+<h2 id="summary">Summary</h2>
+<p>$\operatorname{End}(M_n)$ is the tensor square $M_n\otimes M_n^{\mathrm{op}}$ and has complex dimension $n^4$. The left and right copies are $n^2$-dimensional subalgebras meeting in the scalars. Their linear span has dimension $2n^2-1$ and is not a subalgebra; the subalgebra they generate is everything; the two-sided products already span everything. At $n=2$ one matrix size, $4$, describes both the elements and the operators, and that coincidence is the reason the biquaternion series could work with a single size.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_n$</td>
+<td>$M_n(\mathbb{C})$, the algebra of $n\times n$ complex matrices</td>
+</tr>
+<tr>
+<td>$L_A$</td>
+<td>left multiplication $X\mapsto AX$</td>
+</tr>
+<tr>
+<td>$R_B$</td>
+<td>right multiplication $X\mapsto XB$</td>
+</tr>
+<tr>
+<td>$T_{A,B}$</td>
+<td>the two-sided map $X\mapsto AXB$</td>
+</tr>
+<tr>
+<td>$\mathfrak{a}$</td>
+<td>the span of the one-sided families, of dimension $2n^2-1$</td>
+</tr>
+<tr>
+<td>$\operatorname{vec}$</td>
+<td>column stacking of a matrix into a column of length $n^2$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Horn and Johnson, <em>Topics in Matrix Analysis</em> (Cambridge University Press, 1991), for the Kronecker product and column stacking.</li>
+<li><a href="the-matrix-algebra-mnc.html">The Matrix Algebra $M_n(\mathbb{C})$</a>, for the algebra and its dimension.</li>
+<li><a href="the-ideals-the-centre-and-the-simplicity-of-mnc.html">The Ideals, the Centre and the Simplicity of $M_n(\mathbb{C})$</a>, for the centre and the simplicity used above.</li>
+<li><a href="the-one-sided-operators-of-mnc.html">The One-Sided Operators of $M_n(\mathbb{C})$</a>, for the two copies in detail.</li>
+<li><a href="the-two-sided-operators-and-the-segre-cone-of-mnc.html">The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$</a>, for the two-sided family as a cone.</li>
+<li><a href="the-regular-representation-in-dimension-n.html">The Regular Representation in Dimension $n$</a>, for the same ladder in a general algebra.</li>
+<li><a href="the-endomorphisms-of-the-biquaternion-algebra.html">The Endomorphisms of the Biquaternion Algebra</a>, for the case $n=2$ in the coefficient frame.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
