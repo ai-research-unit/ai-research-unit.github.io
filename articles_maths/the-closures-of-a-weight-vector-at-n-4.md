@@ -122,5 +122,5 @@ At order two there are two closures, of dimensions $1$ and $3$; the continuous f
 - [From the Spin to the Carriers and the Closures at $n=4$](from-the-spin-to-the-carriers-and-the-closures-at-n-4.html), for the generation of a carrier.
 - [The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$](the-minimal-left-ideals-of-m4c.html), for the family of ideals.
 - [The Spin Decomposition of $M_4(\mathbb{C})$](the-spin-decomposition-of-m4c.html), for the weights.
-- [The Closures of a Weight Vector](the-closures-of-a-weight-vector.html), for the row at order two.
+- [The Closures of a Weight Vector at $n=4$](the-closures-of-a-weight-vector-at-n-4.html), for the row at order two.
 - [The Law of the Module and the Chain of Carriers at Every $n$](the-law-of-the-module-and-the-chain-of-carriers.html), for the general order.

@@ -268,7 +268,7 @@ $$
 S^3=\{q\in\mathbb{H}:N(q)=1\},
 $$
 
-of real dimension $3$, and the map to $SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$. The group is $S^3$. Every spin below is the label of a carrier of this group: the rotor acts on space by the two-sided product and one-sidedly on the carrier, and the label is read from that action. As groups $S^3=\mathrm{Spin}(3)\cong SU(2)$, and $SU(2)$ is the standard $2\times2$ complex display of the same group. A realization of it by arrays is a separate choice, a display of the same object, and no display is used below: the computation is a computation about real left multiplication on the quaternion layer.
+of real dimension $3$, and the map to $SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$. The group is $S^3$. Every spin below is the label of a carrier of this group: the rotor acts on space by the two-sided product and one-sidedly on the carrier, and the label is read from that action. The group is $S^3=\mathrm{Spin}(3)$, the unit sphere of the real form, and every group of operators used below is an image of it under one of its actions. Nothing else enters, and every computation below is a computation about real left multiplication on the quaternion layer.
 
 **The left-regular generators.** Read the quaternion layer $\mathbb{H}=\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ as a real space of dimension $4$. Left multiplication by $\vec e_k$ is the real operator $L_k:=L_{\vec e_k}$, and the three of them satisfy
 

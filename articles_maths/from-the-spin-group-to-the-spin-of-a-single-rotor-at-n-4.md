@@ -10,7 +10,7 @@
 
 **The result in one line.** $\rho(2\pi\,\text{turn})=(-1)^{2j}\mathrm I=-\mathrm I$ on the module because $2j=3$ is odd, $+I$ on the algebra because the two signs cancel, and the pair of behaviours is the double cover $SU(2)\to SO(3)$ read at one rotor.
 
-**Boundaries.** Nothing here is about a family of rotors or about the composition of two rotations; the article treats a single one-parameter subgroup. The general theory of the double cover belongs to *The Spin Group via $4\times4$ Real Matrices*.
+**Boundaries.** Nothing here is about a family of rotors or about the composition of two rotations; the article treats a single one-parameter subgroup. The general theory of the double cover belongs to *The Spin Group: Unit Elements, Rotors and the Two-to-One Cover*.
 
 ## The Rotor
 
@@ -142,5 +142,5 @@ At $n=2$ the module is two-dimensional and the same computation gives the quater
 - [The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$](the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html), for the copy and the two kernels.
 - [The Four Weights of the Module and the Half Angle at $n=4$](the-four-weights-of-the-module-and-the-half-angle-at-n-4.html), for the weight basis and the normalisations.
 - [From the Spin Group to the Spin of a Single Rotor](from-the-spin-group-to-the-spin-of-a-single-rotor.html), for the row at order two.
-- [The Spin Group via $4\times4$ Real Matrices](the-spin-group-via-4x4-real-matrices.html), for the double cover.
+- [The Spin Group: Unit Elements, Rotors and the Two-to-One Cover](the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html), for the double cover.
 - [The Quaternionic Structure of the Module at $n=4$](the-quaternionic-structure-of-the-module-at-n-4.html), for the anti-linear structure behind the sign.

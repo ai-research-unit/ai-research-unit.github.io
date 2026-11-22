@@ -8,7 +8,7 @@
 
 **What the article proves.** In this order. That conjugation $Y\mapsto AYA^{\dagger}$ is the only multiplicative two-sided form, and that the two candidates $\Theta_{\natural}$ and $\Theta_{*}$ differ off the rotor sphere. That the coefficient-frame generators $L_k$ are real antisymmetric with no real eigenvalue. That the Casimir $\sum_kL_k^2=-3\mathrm I_4$ and the Hermitian normalization $H_k=\tfrac i2L_k$ give $\sum_kH_k^2=\tfrac34\mathrm I_4$ and weights $\pm\tfrac12$. That the tensor square splits as $1\oplus3$ with Casimir $0$ and $2$.
 
-**What the article does not do.** It does not develop the group displays, which are [The Spin Group via $4\times4$ Real Matrices](the-spin-group-via-4x4-real-matrices.html) and its matrix reading; it does not treat the carriers, which are [From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$](the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html).
+**What the article does not do.** It does not develop the group displays, which are [The Spin Group via $4\times4$ Real Matrices](the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html) and its matrix reading; it does not treat the carriers, which are [From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$](the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html).
 
 **Conventions.** The display is $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$; the coefficient basis is $(E_t,E_x,E_y,E_z)=(\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3)$; $L_k$ is the coefficient-frame array of $Y\mapsto E_kY$. Inner products of matrices are $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$.
 

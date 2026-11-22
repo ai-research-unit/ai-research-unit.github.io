@@ -1,10 +1,10 @@
-# __The Spin Group via $4\times4$ Real Matrices__
+# __The Spin Group: Unit Elements, Rotors and the Two-to-One Cover__
 
 ## Introduction
 
 **The question.** The spin group is $S^3$, the unit quaternions. Its $2\times2$ complex display is $SU(2)$. What is the $4\times4$ real display, how is it built from the same multiplication, and what does it show that the $2\times2$ display cannot?
 
-**Why it is the same statement.** This is the in-depth matrix reading of [The Spin Group via $4\times4$ Real Matrices](the-spin-group-via-4x4-real-matrices.html). The source builds the left regular matrix $L(\tilde q)_{\mu\nu}=[\tilde qe_\nu]_\mu$ from the multiplication table alone; under the display $A=\mathsf M_2(\tilde q)$ the same matrix appears as the coefficient-frame array of $L_A$, and the $2\times2$ display is $A$ itself. The statements are the same statements, and only the writing is new.
+**Why it is the same statement.** This is the in-depth matrix reading of [The Spin Group: Unit Elements, Rotors and the Two-to-One Cover](the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html). The source builds the left regular matrix $L(\tilde q)_{\mu\nu}=[\tilde qe_\nu]_\mu$ from the multiplication table alone; under the display $A=\mathsf M_2(\tilde q)$ the same matrix appears as the coefficient-frame array of $L_A$, and the $2\times2$ display is $A$ itself. The statements are the same statements, and only the writing is new.
 
 **What the article proves.** In this order. That the coefficient-frame array of $L_A$ is the left regular matrix of the source, entry for entry, and that for real coefficients it is a real orthogonal matrix. The three generators as signed permutations, with real antisymmetry, square minus one, the bracket and the zero diagonal. The group as an exponential, with the closed form, the kernel and the surjectivity. The isoclinic structure and the doubled spectrum. The absence of a diagonal generator, and its reading as the display's freedom from a preferred axis. The two copies and the double cover. The parallel with the $2\times2$ display, in a table.
 
@@ -167,7 +167,7 @@ No element of $\mathfrak{g}_L$ is diagonal, because a real diagonal antisymmetri
 
 ## Further Reading
 
-- [The Spin Group via $4\times4$ Real Matrices](the-spin-group-via-4x4-real-matrices.html), for the source's full development of the left regular display and its pitfalls.
+- [The Spin Group: Unit Elements, Rotors and the Two-to-One Cover](the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html), for the source's full development of the left regular display and its pitfalls.
 - [From the Spin Group to the Spin of a Single Rotor in $M_2(\mathbb{C})$](from-the-spin-group-to-the-spin-of-a-single-rotor-in-m2c.html), for the passage from the group to a single rotor and its spin.
 - [Operators Acting on One Side in $M_2(\mathbb{C})$](operators-acting-on-one-side-in-m2c.html), for the array of a left multiplication and its Kronecker form.
 - [Two-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$](two-sided-operators-on-the-n-regular-sector-in-m2c.html), for the two-sided action of the same group.

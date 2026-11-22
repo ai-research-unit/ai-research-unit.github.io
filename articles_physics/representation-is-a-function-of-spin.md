@@ -26,7 +26,7 @@ Why this is an identity and not a theorem. The claim becomes shorter once the gr
 
 ## The Rotor Conventions
 
-The group, and the one letter. The compact factor is the group the standard theory calls $SU(2)$, and in the biquaternion algebra it is $\mathrm{SU}(2)=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=S^3=\mathrm{Spin}(3)=\mathrm{Sp}(1)$ — the unit real quaternions, that is the rotors of the spatial rotations — of real dimension three. Its matrix display is $\mathsf M_2:\mathrm{SU}(2)\to SU(2)$, and the display is not the object: it marks an axis, and the mark is a choice of complex structure on $\mathbb{H}$. The corpus's statement of the distinction is [The Spin Group via 4×4 Real Matrices](../articles_maths/the-spin-group-via-4x4-real-matrices.html).
+The group, and the one letter. The compact factor is the group the standard theory calls $SU(2)$, and in the biquaternion algebra it is $\mathrm{SU}(2)=\{\tilde q\in\mathbb{H}:\langle\tilde q\rangle_{\natural}=1\}=S^3=\mathrm{Spin}(3)=\mathrm{Sp}(1)$ — the unit real quaternions, that is the rotors of the spatial rotations — of real dimension three. Its matrix display is $\mathsf M_2:\mathrm{SU}(2)\to SU(2)$, and the display is not the object: it marks an axis, and the mark is a choice of complex structure on $\mathbb{H}$. The corpus's statement of the distinction is [The Spin Group via 4×4 Real Matrices](../articles_maths/the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html).
 
 The dagger, and why it is the tie that matters. On $X=q+ip$ with $q$ and $p$ real quaternions the dagger is the composite of the two involutions,
 $$

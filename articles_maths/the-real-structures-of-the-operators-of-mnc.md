@@ -149,4 +149,4 @@ The operator algebra has the real form $M_{n^2}(\mathbb{R})$ always and the quat
 - [The Classification of the Structures of the Operators of $M_n(\mathbb{C})$](classification-of-the-structures-of-the-operators-of-mnc.html), for the five questions.
 - [The Complex Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups](the-complex-structures-of-the-operators-of-mnc.html), for the complex side.
 - [The Enveloping Operator Algebra of $M_n(\mathbb{C})$ and the Bi-module Structure](the-enveloping-operator-algebra-of-mnc.html), for the span and the centraliser.
-- [The Spin Group via $4\times4$ Real Matrices](the-spin-group-via-4x4-real-matrices.html), for the case $n=2$.
+- [The Spin Group: Unit Elements, Rotors and the Two-to-One Cover](the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html), for the case $n=2$.

@@ -347,9 +347,122 @@ The coefficients are not free: $\gamma$ is the unique null direction of the $3\t
 
 **Three remarks about the pairing.**
 
-- **The colour index is $\mathbf3$ on the left and $\bar{\mathbf3}$ on the right.** The four labels are the same four, but the right octet sits in the conjugate quartet, which is why the sixteen is anomaly-free by construction: the representation is complex and its conjugate appears in equal measure.
+- **The colour index is $\mathbf3$ on the left and $\bar{\mathbf3}$ on the right, and the two readings differ in the sign of $Q$.** The four labels are the same four, but the right octet sits in the conjugate quartet, which is why the sixteen is anomaly-free by construction. The rows above name particles, so they carry the particle's charges; a row written in the $\bar{\mathbf4}$ carries the negatives. §9A fixes the convention and is where the difference is stated properly.
 - **A massive fermion needs both octets.** $e_L$ and $e_R$ are two cells and one electron at low energy; the electron is the Dirac combination of the two. So a count of *cells* is sixteen and a count of *particles* is fewer.
-- **Three generations multiply the table by three**, so forty-eight fermions. The number of generations is not fixed by the grid; that is the subject of a separate article and the grid says nothing about it.
+- **Three generations multiply the table by three**, so forty-eight Weyl fields and ninety-six states once the antiparticles of §9A are counted. The number of generations is not fixed by the grid; that is the subject of a separate article and the grid says nothing about it.
+
+## 9A. The Conjugate Grid
+
+**The sixteen rows of §9 are every fermion of a generation, and the antiparticles are already inside them.** That is worth stating first, because the algebra invites the opposite reading. Charge conjugation maps the sixteen to a different representation, so the map cannot be read off the table by inspection, and the temptation is to add a second sixteen of fields. **No second multiplet is needed**: the antiparticle of a field is a conjugate mode of that same field, and the model contains no fermion that the sixteen lacks. What the map gives is a list of *quantum numbers* for the antiparticle states. This section writes that list out, because it is what fixes the charges of the antiparticles and the action of $C$ on the spectrum.
+
+### The Operation
+
+Charge conjugation on the algebra is
+
+$$
+Q^{\mathrm c}=-e_y\,\bar Q\,e_y ,
+$$
+
+coefficient conjugation followed by conjugation by the unit $e_y$. It is built in [Charge Conjugation and the Division Ring](../articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html) and its consistency with the discrete symmetries is tested in [The CPT Theorem in Biquaternionic Form](../articles_physics/the-cpt-theorem-in-biquaternionic-form.html). Two features of it decide what it does to the grid.
+
+Conjugation by a unit is an inner automorphism, so it changes a basis and not a representation. The coefficient conjugation is the outer part, and it is outer on $\mathrm{SU}(4)$ and inner on $\mathrm{SU}(2)$: complex conjugation of a quaternion is conjugation by a pure unit, $j q j^{-1}$, so the doublet is its own conjugate and the quartet is not.
+
+| property | test on the carrier | result |
+|---|---|---|
+| conjugate-linear | $C(iQ)=-i\,C(Q)$ | holds |
+| an involution | $C(C(Q))=Q$ | holds |
+| the left action | $C\,L_g\,C^{-1}=L_{C(g)}$ | holds for generic $g$ |
+| the three imaginary units | $C(e_x)=-e_x$, $C(e_y)=+e_y$, $C(e_z)=-e_z$ | a rotation by $\pi$ about $e_y$ |
+| the two chirality blocks | $E_\pm=\tfrac12(1\pm ie_z)$ | $C(E_\pm)=E_\pm$ |
+
+**The last row is the statement that the antiparticle of a left-handed field is left-handed.** The operation is a rotation composed with a conjugation, and a rotation does not move a block. So the chirality of a cell survives, the doublet slot survives, and the quartet is reflected.
+
+$$
+C:\quad(\mathbf4,\mathbf2,\mathbf1)\longmapsto(\bar{\mathbf4},\mathbf2,\mathbf1),
+\qquad
+(\bar{\mathbf4},\mathbf1,\mathbf2)\longmapsto(\mathbf4,\mathbf1,\mathbf2).
+$$
+
+### The Antiparticle Quantum Numbers
+
+Applied cell by cell, the map keeps the chirality block and the doublet slot, sends the colour index to its conjugate, and changes the sign of $Q$ and of $B-L$. The states so obtained for the left octet:
+
+| antiparticle state | quartet index | $L$ index | $Q$ | $B-L$ |
+|---|---|---|---|---|
+| $\bar\nu_{eL}$ | $\bar\nu$ | $\uparrow$ | $0$ | $+1$ |
+| $\bar e_{L}$ | $\bar\nu$ | $\downarrow$ | $+1$ | $+1$ |
+| $\bar u^{\bar r}_{L}$ | $\bar r$ | $\uparrow$ | $-\tfrac23$ | $-\tfrac13$ |
+| $\bar d^{\bar r}_{L}$ | $\bar r$ | $\downarrow$ | $+\tfrac13$ | $-\tfrac13$ |
+| $\bar u^{\bar g}_{L}$ | $\bar g$ | $\uparrow$ | $-\tfrac23$ | $-\tfrac13$ |
+| $\bar d^{\bar g}_{L}$ | $\bar g$ | $\downarrow$ | $+\tfrac13$ | $-\tfrac13$ |
+| $\bar u^{\bar b}_{L}$ | $\bar b$ | $\uparrow$ | $-\tfrac23$ | $-\tfrac13$ |
+| $\bar d^{\bar b}_{L}$ | $\bar b$ | $\downarrow$ | $+\tfrac13$ | $-\tfrac13$ |
+
+The right octet gives the same table with $R$ in place of $L$. So one rule covers all sixteen:
+
+| the conjugate of | chirality | colour | $Q$ | $B-L$ |
+|---|---|---|---|---|
+| the left octet | $L$ | $\bar 3$ | $-Q$ | $-(B-L)$ |
+| the right octet | $R$ | $\bar 3$ | $-Q$ | $-(B-L)$ |
+
+**No row of this table is a new field.** Each row names one state of the field in the corresponding row of §9, and that state is counted inside that field and not beside it. The table is therefore a table of numbers, and it adds nothing to the fermion content.
+
+### The Count
+
+| object | count |
+|---|---|
+| Weyl fields per generation | $16$ |
+| states per generation | $32$ |
+| particle states | $16$ |
+| antiparticle states | $16$ |
+| Weyl fields, three generations | $48$ |
+| states, three generations | $96$ |
+
+**The doubled number is a state count and not a field count.** Eight Dirac fields per generation — six quark fields, one per colour label, the electron and the neutrino — is $8\times2=16$ Weyl fields and $8\times4=32$ states, of which sixteen are particles and sixteen are antiparticles. Writing "thirty-two Weyl fields" would count every fermion twice, which is the error this paragraph exists to prevent.
+
+### What Charge Conjugation Does Not Do
+
+**$C$ is not a symmetry of this spectrum, and the article says so here rather than leaving a reader to assume the opposite.**
+
+$$
+C(S)=(\bar{\mathbf4},\mathbf2,\mathbf1)\oplus(\mathbf4,\mathbf1,\mathbf2)\;\neq\;S .
+$$
+
+The pair of multiplets is exchanged with a pair that is not the same pair. What closes the spectrum is $C$ composed with the exchange of the two weak factors, which is $CP$ in this frame because parity is the $L\leftrightarrow R$ swap:
+
+| operation | $(\mathbf4,\mathbf2,\mathbf1)$ | $(\bar{\mathbf4},\mathbf1,\mathbf2)$ |
+|---|---|---|
+| $C$ | $(\bar{\mathbf4},\mathbf2,\mathbf1)$ | $(\mathbf4,\mathbf1,\mathbf2)$ |
+| $CP$ with $L\leftrightarrow R$ | $(\bar{\mathbf4},\mathbf1,\mathbf2)$ | $(\mathbf4,\mathbf2,\mathbf1)$ |
+
+**So the spectrum is closed under $CP$ and not under $C$, and that is the structural statement of left–right symmetry.** The model is not symmetric because its two weak factors happen to have equal couplings; it is symmetric because the sixteen is closed under the composed operation and not under either factor alone.
+
+Two consequences follow, and both are already in the corpus without this argument.
+
+The bidoublet is not an option. A fermion mass is the conversion of a cell into its conjugate, so it needs a scalar that carries both weak indices, which is exactly $(\mathbf1,\mathbf2,\mathbf2)$. The scalar sector of [The Scalar Sector and the Leptoquark Bounds](../articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html) is the price of the conjugate grid.
+
+The neutrino is not its own antiparticle here. $B-L$ is gauged and comes from inside $\mathrm{SU}(4)$, so a Majorana mass for $\nu_R$ would break a gauged symmetry, and the renormalisable mass is the Dirac mass of the pair $\nu_L$ and $\nu_R$. That differs from the Standard Model, where a Majorana mass is available because $B-L$ is not gauged, and it is a statement the model makes rather than inherits.
+
+### One Naming Convention, Fixed Here
+
+**The same sixteen rows can be read two ways and the two readings disagree in the sign of $Q$ on eight of them.** Named as particles, a right-handed quark carries $Q=+\tfrac23$ and $B-L=+\tfrac13$. Placed in the $\bar{\mathbf4}$, whose weights are the negatives of the $\mathbf4$'s, the same cell carries $Q=-\tfrac23$. Neither reading is wrong; they are a name and a representation, and mixing them is what produces a table that contradicts itself.
+
+The rule used in this article is one sentence: **a name denotes a particle, so every row of §9 carries the particle's own quantum numbers, and the conjugate rows carry the negatives.** The anomaly of the representations is then computed on $(\mathbf4,\mathbf2,\mathbf1)$ and $(\bar{\mathbf4},\mathbf1,\mathbf2)$, where the second block's entries are the conjugates of the named right-handed fields, which is why $+2-2=0$ rather than $+2+2$.
+
+### What Is Measured
+
+**The conjugate grid is not a prediction; it is a description of matter that has been observed since 1932.** The sharpest statements are comparisons, and they are listed because the model makes the equality exact.
+
+| comparison | result |
+|---|---|
+| positron and electron, mass and charge | equal by the definition of the electron mass |
+| antiproton and proton, $q/m$ | equal to a few parts in $10^{11}$ |
+| $K^0$ and $\bar K^0$, masses | $\lvert m_{K^0}-m_{\bar K^0}\rvert<3.5\times10^{-12}$ eV |
+| antihydrogen $1S$–$2S$ | agrees with hydrogen to $2\times10^{-12}$ |
+| antihydrogen in free fall | acceleration agrees with $g$ to about $20$ per cent |
+| antimatter in bulk | none beyond a few antihelium nuclei; baryon asymmetry $\eta\approx6.1\times10^{-10}$ |
+
+The equality of the first two rows is what $CPT$ forces and what the model's exact $CP$ closure reproduces cell by cell. The last row is the one thing the conjugate grid does not explain: the spectrum is symmetric under $CP$, and the universe is not.
 
 ## 10. The Scalars, Which Are Not on the Grids
 
@@ -399,6 +512,7 @@ $6+2+2+1+1=12$. The two neutral states mix, so $h^0$ and $H^0$ are interaction e
 | "$X$" | six particles in two charge classes | $X^{\alpha}$ and $\bar X^{\alpha}$ |
 | "$B$" | the $(\nu,\nu)$ cell against the hypercharge field | $B'$ or $C$ for the cell, $B$ for hypercharge |
 | "the Higgs" | the field $H$ against its $125$ GeV mass eigenstate against the whole scalar sector | *the field $H$*, *the $125$ GeV state*, *the scalar sector* |
+| "the sixteen" | the named particle set against the representation $S$ against the Weyl-field count | *the sixteen rows*, *the representation $S$*, *thirty-two Weyl fields* |
 
 **The mass collision is the worst.** The quaternionic norm $\mathcal N=-m^2c^2$ is a quartic invariant a boost preserves. The finite mass $m$ is a parameter of the finite Dirac operator. A mass eigenvalue is what a mass matrix returns. A mass scale $M_C$, $M_R$, $M_W$ is where a mass is generated. $M_X=\sqrt2\,M_{W_R}$ relates two of the fourth kind. **The equality $m_d=m_e$ is not of those four kinds at all: it is the Pati–Salam literature's per-generation condition, transcribed and flagged, and this model predicts no such relation because it fixes no scalar multiplet.** A sentence that says "the mass is $M_C$" mixes the fourth kind with the third.
 
@@ -446,6 +560,17 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 | the eaten scalars | $6+2+4$ | $12$ |
 | the cells touching $\nu$ | $1+3+3$ | $7$ |
 | the block that does not | $8$ | $8$ |
+| the conjugation, linearity | $C(iQ)$ against $-iC(Q)$ | conjugate-linear |
+| the conjugation, involution | $C(C(Q))$ | $Q$ |
+| the conjugation on the quartet | $C(e_x)$, $C(e_y)$, $C(e_z)$ | $-e_x$, $+e_y$, $-e_z$ |
+| the chirality blocks | $E_\pm=\tfrac12(1\pm ie_z)$ under $C$ | preserved |
+| the antiparticle states | rows, against the rows of §9 | $16$, each inside its own field |
+| the Weyl fields per generation | $8$ Dirac $\times2$ | $16$ |
+| the states per generation | $8$ Dirac $\times4$ | $32$ |
+| the fields, three generations | $3\times16$ | $48$ |
+| the states, three generations | $3\times32$ | $96$ |
+| the $CP$ closure | $C$ composed with $L\leftrightarrow R$ | $S\mapsto S$ |
+| the $C$ failure | $C(S)$ against $S$ | $\neq$ |
 
 ## Summary
 
@@ -467,6 +592,8 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 
 **The fermions.** Sixteen per generation, a quartet index times a doublet index, and the colour is $\mathbf3$ on the left and $\bar{\mathbf3}$ on the right.
 
+**The antiparticles.** Charge conjugation is $-e_y\bar Qe_y$. It is inner on $\mathrm{SU}(2)$ and outer on $\mathrm{SU}(4)$, so it keeps the chirality block and reflects the quartet: $(\mathbf4,\mathbf2,\mathbf1)\mapsto(\bar{\mathbf4},\mathbf2,\mathbf1)$. The sixteen fields therefore already contain their own antiparticles, as conjugate modes; what the map supplies is the antiparticle charges, $Q\to-Q$, $B-L\to-(B-L)$, colour $\to\bar 3$. Sixteen fields per generation, thirty-two states, forty-eight fields and ninety-six states in three. The spectrum is closed under $CP$ with $L\leftrightarrow R$ and not under $C$, and that closure is the structural statement of left-right symmetry and the reason the bidoublet and the Dirac neutrino are not options.
+
 **The scalars.** Not on the grids: twenty-four real components, twelve eaten into longitudinal modes, twelve named survivors. **The Higgs is among them and is $H$, the bidoublet $(\mathbf1,\mathbf2,\mathbf2)$**: its four surviving real components are the charged Higgs $H^{\pm}$ and the two neutral states $h^0$ and $H^0$, whose lighter mass eigenstate is the observed $125$ GeV boson. The other eight survivors come from $\Phi$ and are not Higgs.
 
 ## Summary of Notation
@@ -482,6 +609,9 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 | $W^{\pm}_{L}$, $W^{3}_{L}$ | the three generators of the $L$ grid |
 | $W^{\pm}_{R}$, $W^{3}_{R}$ | the three generators of the $R$ grid |
 | ingredient | a cell no particle occupies, because a particle is made of it |
+| $C$ | charge conjugation, $Q^{\mathrm c}=-e_y\bar Qe_y$ |
+| $E_\pm$ | the two chirality blocks, $\tfrac12(1\pm ie_z)$ |
+| antiparticle state | a conjugate mode of a field, with the charges of §9A |
 
 ## Further Reading
 
