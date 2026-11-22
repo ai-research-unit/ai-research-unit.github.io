@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Relativistic Quantum Thermodynamics — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Relativistic Quantum Thermodynamics, twenty-two articles. It gives the objects, the boxed…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-relativistic-quantum-thermodynamics"><strong>Internal Summary of the Biquaternion Relativistic Quantum Thermodynamics</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Relativistic Quantum Thermodynamics</em>, twenty-two articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> It asks whether a quantum field has a thermodynamics, and it answers by building one at three levels: the state (density operator, partition function, Wigner function), the locality (KMS, modular flow, Tolman), and the fluid at a point (entropy current, spin hydrodynamics, dissipation).</p>
+<p><strong>The ledger, stated first.</strong> Six of the twenty-two articles are transcriptions of standard relativistic thermodynamics; seventeen add something the algebra makes available. The number is not a score: a transcription is what makes the framework comparable with the literature, and the corpus says so.</p>
+<p><strong>The one convention that binds the category.</strong> The entropy inequalities are <strong>real</strong>. The entropy current is declared Hermitian once, and every later inequality — spin diffusion, the positivity form of causal dissipation — is read from its scalar part. An agent that writes a complex entropy production has broken the convention.</p>
+<p><strong>The four menu blocks.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Temperature and the state</td>
+<td>Wigner function, partition function, quantum thermodynamics, Matsubara, moving frame, Schwinger–Keldysh</td>
+</tr>
+<tr>
+<td>Locality and the modular structure</td>
+<td>KMS, $k_B$ as the scale of imaginary time, Tomita–Takesaki, modular Hamiltonian, thermal time, curved KMS, Tolman</td>
+</tr>
+<tr>
+<td>The fluid at a point, and transport</td>
+<td>local thermal state, equation of state, entropy current, two-fluid, spin hydrodynamics, Frenkel, causal dissipation</td>
+</tr>
+<tr>
+<td>The ledger</td>
+<td>the status of the derivation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-sentence version.</strong> Temperature is the period of imaginary time, and the period is fixed by the same temporal unit that fixes the cone.</p>
+<h2 id="1-temperature-and-the-state">1. Temperature and the State</h2>
+<p><strong>The partition function, and the trace dictionary.</strong></p>
+<p>$$
+\boxed{\;Z=2\,\mathrm{Sc}\bigl(e^{-\beta\tilde H_\Psi}\bigr)\;}\qquad
+\tilde\varrho_\Psi=\frac{1}{Z}e^{-\beta\tilde H_\Psi},\qquad
+F=-\frac{1}{\beta}\log Z,\qquad E=-\frac{\partial\log Z}{\partial\beta}.
+$$</p>
+<p>The trace is the matrix trace under the dictionary</p>
+<p>$$
+e_t\mapsto I_2,\qquad \vec e_x\mapsto-i\sigma_1,\qquad \vec e_y\mapsto-i\sigma_2,\qquad \vec e_z\mapsto-i\sigma_3,\qquad
+2\,\mathrm{Sc}(\tilde Q)=\operatorname{tr}\mathsf M_2(\tilde Q).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The partition function is the trace of the exponential, and the trace is twice the scalar part — the same factor $2$ that appears everywhere in the corpus. The two are not different conventions: $2\,\mathrm{Sc}$ <em>is</em> the trace of the two-by-two image, and the image is faithful.</p>
+<p><strong>The Gibbs state and the two-level case.</strong> For $\tilde H_\Psi=h_te_t+i\vec h_\Psi$ the eigenvalues are $h_t\pm|\vec h_\Psi|$, so</p>
+<p>$$
+\tilde H_\Psi\mapsto h_tI+\vec\sigma\!\cdot\!\vec h_\Psi,\qquad \lambda_\pm=h_t\pm|\vec h_\Psi|,\qquad
+Z=2\cosh(\beta|\vec h_\Psi|)\,e^{-\beta h_t}.
+$$</p>
+<p>and the state is the thermal state of a two-level system with gap $2|\vec h_\Psi|$. <strong>The non-trivial claim.</strong> Every element of $\mathbb{B}_\Psi$ is a two-level Hamiltonian, so the algebra's thermodynamics is the thermodynamics of a qubit <em>by construction</em>; the many-body content comes from the tensor product $\mathbb{B}^{\otimes N}\cong M_{2^{N}}(\mathbb{C})$.</p>
+<p><strong>The Wigner function.</strong></p>
+<p>$$
+\boxed{\;\tilde W_\Xi(r,\vec p)=\frac{1}{(2\pi\hbar)^{3}}\int d^{3}s\,e^{-i\theta_{\mathrm{spa}}}\,\tilde\Xi^{*}\bigl(r-\tfrac{\vec s}{2}\bigr)\tilde\Xi\bigl(r+\tfrac{\vec s}{2}\bigr)\;}
+$$</p>
+<p>$$
+\int d^{3}p\,\tilde W_\Xi=\tilde\Xi^{*}(r)\tilde\Xi(r)=|\!|\tilde\Xi|\!|^{2},\qquad
+\mathrm{Sc}\int d^{3}p\,p_\eta\,\tilde W_\Xi=|\!|\tilde\Xi|\!|^{2}p_\eta=m\,j_\eta,
+$$</p>
+<p>$$
+\int d^{3}p\,\frac{E}{c}\,\tilde W_\Xi=-i\,m\,J_{\Phi,t}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The zeroth moment is the density and the first moment is the current, exactly as in the classical case. The Wigner function is the bridge between the quantum state and the fluid reading, and the bridge is exact for the first two moments and fails beyond them (the moments are not a positive measure).</p>
+<p><strong>Matsubara, moving frame, Schwinger–Keldysh.</strong> The Matsubara formalism is the periodic continuation $r'_t\mapsto r'_t+i\beta$; the moving-frame partition function adds the boost $\beta^\mu u_\mu$; the Schwinger–Keldysh contour is the doubled algebra $\mathbb{B}\oplus\mathbb{B}$ with the two copies on the two branches.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-partition-function-in-biquaternionic-form.md</code>, <code>articles_physics/the-wigner-function-in-biquaternionic-form.md</code>, <code>articles_physics/relativistic-wigner-function-and-quantum-kinetics.md</code>, <code>articles_physics/quantum-thermodynamics-in-biquaternionic-form.md</code>, <code>articles_physics/the-matsubara-thermal-formalism-in-biquaternionic-form.md</code>, <code>articles_physics/the-schwinger-keldysh-formalism-in-biquaternionic-form.md</code>.</p>
+<h2 id="2-locality-and-the-modular-structure">2. Locality and the Modular Structure</h2>
+<p><strong>The KMS condition.</strong></p>
+<p>$$
+F_{\tilde Q_1\tilde Q_2}(r'_t)=\omega_\beta\bigl(\tilde Q_1\,\alpha_{r'_t}(\tilde Q_2)\bigr),\qquad 0<\mathrm{Im}(r'_t)<\beta,
+$$</p>
+<p>$$
+\boxed{\;F_{\tilde Q_1\tilde Q_2}(r'_t+i\beta)=F_{\tilde Q_2\tilde Q_1}(-r'_t)\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> KMS is an analyticity statement in the <em>imaginary part of the temporal coordinate</em>, and the temporal coordinate is the one whose unit is $i$. The strip $0<\mathrm{Im}\,r'_t<\beta$ is therefore a strip in the direction the algebra already marks: $\beta$ is measured along the same axis that gives the Lorentzian sign.</p>
+<p><strong>$k_B$ as the scale of imaginary time.</strong></p>
+<p>$$
+\beta=\frac{\hbar}{k_BT},\qquad \boxed{\;c\beta=\frac{\hbar c}{k_BT}\;}
+$$</p>
+<p><strong>The non-trivial claim, and it is the sharpest in the category.</strong> Since $\beta$ is a <em>length</em> along the temporal axis, and the same length appears in the light-cone condition, the temperature and the local speed of light are inversely related:</p>
+<p>$$
+\boxed{\;T\,c=\mathrm{const},\qquad\text{so}\qquad T\propto\frac{1}{c}\propto n\;}
+$$</p>
+<p>A medium that slows light raises the temperature of its thermal circle, so the local temperature tracks the local refractive index. The corpus presents this as a <em>reading</em> the algebra offers, and it is used, not proved, in the Tolman section.</p>
+<p><strong>Tomita–Takesaki and the modular Hamiltonian.</strong> The modular operator is $\Delta=e^{-\tilde H_{\Psi,\mathrm{modular}}}$ with $\tilde H_{\Psi,\mathrm{modular}}=-\log\tilde\varrho_\Psi$; the modular conjugation is the anti-linear involution of the previous category. <strong>The non-trivial claim.</strong> Thermal time <em>is</em> modular time: the flow generated by $-\log\varrho$ is the flow that the KMS condition says is thermal, and in the algebra it is a boost congruence.</p>
+<p><strong>Tolman and curved KMS.</strong></p>
+<p>$$
+T\sqrt{-g_{tt}}=\mathrm{const}\qquad\text{(the Tolman relation)},
+$$</p>
+<p>which in the corpus's letters is $T\,c=\mathrm{const}$ since $c$ is the local light speed read from the norm. <strong>The non-trivial claim.</strong> The Tolman relation and the $k_B$-as-imaginary-time statement are the same equation: a gravitational redshift of the period is a redshift of the temperature.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-kms-condition-and-the-biquaternion-framework.md</code>, <code>articles_physics/the-local-thermal-structure-k-b-as-the-scale-of-imaginary-time.md</code>, <code>articles_physics/the-hermitian-tomita-takesaki-theory-under-the-biquaternion-framework.md</code>, <code>articles_physics/thermal-time-and-the-modular-flow-in-the-biquaternion-framework.md</code>, <code>articles_physics/curved-spacetime-kms-and-modular-flow.md</code>, <code>articles_physics/covariant-local-equilibrium-and-tolman-temperature.md</code>.</p>
+<h2 id="3-the-fluid-at-a-point-and-transport">3. The Fluid at a Point, and Transport</h2>
+<p><strong>The entropy current and its positivity.</strong></p>
+<p>$$
+\tilde J_{\Phi,\mathrm{ent}}=s_{\mathrm{ent}}\,\gamma\bigl(e_t+\vec\beta_{\mathrm{vel}}\bigr),\qquad
+\vec\beta_{\mathrm{vel}}=\frac{\vec v}{c},
+$$</p>
+<p>$$
+\boxed{\;\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_{\Phi,\mathrm{ent}}\bigr)\ge0\;}
+$$</p>
+<p>$$
+\sigma_{\mathrm{ent}}=\frac{1}{T}\Bigl(\zeta\,\theta^{2}+2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{\mu\nu}\sigma^{\mathrm{sh}}_{\mu\nu}+\kappa_{\mathrm{th}}\frac{(\partial_\eta T)^{2}}{T}\Bigr).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The second law is the <em>vanishing of the vector part</em>: the divergence of the entropy current must have no vector part, and its scalar part must be non-negative. Equality holds exactly when the three dissipative coefficients vanish.</p>
+<p><strong>The two-fluid model.</strong></p>
+<p>$$
+\rho_{\mathrm{num}}=\rho_{\mathrm{num,sup}}+\rho_{\mathrm{num,nrm}},\qquad
+s_{\mathrm{ent,sup}}=0,\qquad s_{\mathrm{ent,nrm}}=s_{\mathrm{ent}},
+$$</p>
+<p>$$
+\tilde W_\Phi=\tilde V_{\Phi,\mathrm{nrm}}-\tilde V_{\Phi,\mathrm{sup}},\qquad
+\tilde F_{\Phi,\mathrm{fr}}=\frac{\rho_{\mathrm{num,sup}}\rho_{\mathrm{num,nrm}}}{\rho_{\mathrm{num}}}\,B_{\mathrm{frc}}\,\tilde W_\Phi,
+$$</p>
+<p>$$
+\sigma_{\mathrm{ent}}=-\frac{1}{T}\mathrm{Sc}\bigl(\tilde F_{\Phi,\mathrm{fr}}\tilde W_\Phi\bigr).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The superfluid component carries no entropy, and the entropy production is proportional to the norm of the relative velocity — the mutual friction term. The two-fluid model is therefore a statement about <em>which</em> of the two velocity fields is the thermal one, and the algebra makes the answer a scalar part rather than a choice.</p>
+<p><strong>Spin hydrodynamics and the Frenkel condition.</strong></p>
+<p>$$
+\mathcal F:\quad S_{\Psi,\eta,\lambda\nu}\,v_{\Phi,\nu}=0,\qquad
+\partial_\eta\tilde u_{\mathrm r}=\tfrac12\vec\Omega_\eta\,\tilde u_{\mathrm r},\qquad
+\partial_\eta S_{\Psi,\eta,\lambda\nu}=\tau_{\lambda\nu}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Frenkel condition is the statement that the spin has no component along the velocity, i.e. that the spin bivector is orthogonal to the flow. In the algebra it is automatic: the spin lives in the informational sector and the velocity in the material one, so their pairing vanishes. The corpus states this as an algebraic <em>reason</em> for a condition standard theory imposes.</p>
+<p><strong>Causal dissipation.</strong></p>
+<p>$$
+\tau_\Pi\frac{d\Pi}{d\tau}+\Pi=-\zeta\,\theta,\qquad
+\tau_\pi\frac{d\pi_{\lambda\nu}}{d\tau}+\pi_{\lambda\nu}=-2\eta_{\mathrm{sh}}\,\sigma^{\mathrm{sh}}_{\lambda\nu},
+$$</p>
+<p>$$
+\omega^{2}+\frac{i}{\tau_q}\omega-\frac{D_{\mathrm{th}}}{\tau_q}k^{2}=0,\qquad
+v_{\mathrm{frt}}=\sqrt{\frac{D_{\mathrm{th}}}{\tau_q}},\qquad
+\boxed{\;D_{\mathrm{th}}\le\tau_qc^{2}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The relaxation time turns the parabolic diffusion equation into a damped wave equation, and causality is the condition that the front velocity not exceed $c$. In the algebra the condition is the statement that the retarded Green's function vanishes outside the cone, which is the causality barrier of the previous category read in the dissipative sector.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-local-thermal-state-of-a-fluid.md</code>, <code>articles_physics/the-equation-of-state-in-biquaternion-form.md</code>, <code>articles_physics/the-local-entropy-current.md</code>, <code>articles_physics/the-two-fluid-model-in-biquaternionic-form.md</code>, <code>articles_physics/spin-hydrodynamics-in-biquaternionic-form.md</code>, <code>articles_physics/spin-conservation-and-the-frenkel-condition.md</code>, <code>articles_physics/causal-dissipative-hydrodynamics-in-biquaternionic-form.md</code>.</p>
+<h2 id="4-the-ledger">4. The Ledger</h2>
+<p><strong>What the ledger can do.</strong> It states, article by article, which claims are established within the category, which are quoted from standard theory, and which are interpretations the category offers and does not prove.</p>
+<p><strong>What the ledger cannot do.</strong> It cannot state that the framework is right, because no article in the category makes that claim either.</p>
+<p><strong>The division.</strong></p>
+<p>$$
+\text{category}=\underbrace{\text{framework content}}_{17\ \text{articles}}\ \cup\ \underbrace{\text{transcription}}_{6,\ 13,\ 14,\ 21}.
+$$</p>
+<p><strong>The non-trivial claim about the division.</strong> A transcription is not a weaker article: it is what makes the framework's claims comparable with the literature. A category of seventeen non-transcriptions would be unreadable to anyone who wanted to check it, and a category of seventeen transcriptions would add nothing.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in six formulas.</strong></p>
+<p>$$
+Z=2\,\mathrm{Sc}\,e^{-\beta\tilde H_\Psi},\qquad
+F_{AB}(r'_t+i\beta)=F_{BA}(-r'_t),\qquad \beta=\frac{\hbar}{k_BT},\qquad c\beta=\frac{\hbar c}{k_BT},
+$$</p>
+<p>$$
+\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde J_{\mathrm{ent}}\bigr)\ge0,\qquad
+S_{\Psi,\eta,\lambda\nu}v_{\Phi,\nu}=0,\qquad D_{\mathrm{th}}\le\tau_qc^{2}.
+$$</p>
+<p><strong>Five results to keep.</strong> The partition function is twice the scalar part of the exponential, i.e. the matrix trace. KMS is analyticity in the imaginary temporal coordinate, the same coordinate that carries the Lorentzian sign. $T\,c=\mathrm{const}$, so the local temperature tracks the local light speed. The second law is the vanishing of the vector part of the entropy divergence. The Frenkel condition is automatic because spin and velocity live in different sectors.</p>
+<p><strong>Three refusals.</strong> The category does not prove that the framework is right. It does not claim that $T\,c=\mathrm{const}$ is a prediction: it is a reading. It does not derive the two-fluid model from a microscopic theory; it fixes which velocity carries the entropy.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\beta$</td>
+<td>inverse temperature, imaginary temporal length</td>
+</tr>
+<tr>
+<td>$\tilde\varrho_\Psi$</td>
+<td>thermal state</td>
+</tr>
+<tr>
+<td>$\tilde J_{\mathrm{ent}}$</td>
+<td>entropy current</td>
+</tr>
+<tr>
+<td>$s_{\mathrm{ent}}$</td>
+<td>entropy density</td>
+</tr>
+<tr>
+<td>$S_{\Psi,\eta,\lambda\nu}$</td>
+<td>spin tensor</td>
+</tr>
+<tr>
+<td>$\tau_q$, $\tau_\Pi$, $\tau_\pi$</td>
+<td>relaxation times</td>
+</tr>
+<tr>
+<td>$v_{\mathrm{frt}}$</td>
+<td>front velocity</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-partition-function-in-biquaternionic-form</code>, <code>the-kms-condition-and-the-biquaternion-framework</code>, <code>the-local-thermal-structure-k-b-as-the-scale-of-imaginary-time</code>, <code>the-local-entropy-current</code>. Traps: <code>the-thermodynamics-of-a-quantum-fluid-status-of-the-derivation</code>, <code>the-two-fluid-model-in-biquaternionic-form</code>, <code>causal-dissipative-hydrodynamics-in-biquaternionic-form</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

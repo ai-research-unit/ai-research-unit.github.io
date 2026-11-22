@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="The question. The corpus writes in the articles of the rung and in the electroweak and strong sections, and it never says what the group is inside the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-meaning-of-math0-in-the-endomorphisms-of-the-biquaternion-algebra"><strong>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The corpus writes $\mathrm{SU}(3)$ in the $\mathfrak{su}(3)$ articles of the $M_3(\mathbb{C})$ rung and in the electroweak and strong sections, and it never says what the group is <em>inside the biquaternion algebra</em>. This note answers that: it names the subspace of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})\cong M_4(\mathbb{C})$ that is $\mathfrak{su}(3)$, writes its eight generators as products of left and right multiplications, and states in operator language what the two defining conditions — anti-Hermitian and traceless — mean.</p>
+<p><strong>The answer in one line.</strong></p>
+<p>$$
+\boxed{\;
+\mathfrak{su}(3)=\Bigl\{X\in\operatorname{End}_{\mathbb{C}}(\mathbb{B}):\;Xe_t=0,\;X(B_V)\subseteq B_V,\;X^{\dagger}=-X,\;\operatorname{tr}X=0\Bigr\}
+\;\cong\;\Bigl\{\begin{pmatrix}0&0\\0&A\end{pmatrix}:\;A^{\dagger}=-A,\;\operatorname{tr}A=0\Bigr\}
+\;}
+$$</p>
+<p>with $B_V=\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)$ and the dagger taken for the Hermitian form $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})$. The group is</p>
+<p>$$
+\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)=\operatorname{diag}(1,R),\quad R\in\mathrm{U}(3),\;\det R=1,
+$$</p>
+<p>real dimension eight, and it acts on the vector part $B_V\cong\mathbb{C}^{3}$ in the defining representation.</p>
+<p><strong>Why the statement is needed.</strong> Three sentences of the corpus point at this group and none of them constructs it. <em>The Involution and the Hermitian Structure of $M_3(\mathbb{C})$</em> defines $\mathrm{SU}(3)$ and $\dim_{\mathbb{R}}=8$ at the element level. <em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</em> describes the block structure that the display above uses. <em>The Endomorphisms of the Biquaternion Algebra</em> proves that the derivations are the inner ones, of complex dimension three. This note joins the three: the corner is the carrier, the derivations are the three-dimensional "rotor" part of the eight, and the five remaining dimensions are the traceless symmetric part.</p>
+<p><strong>What is claimed, and what is not.</strong> Claimed: the eight generators exist, each is a sum of exactly two Conway words, and every property below is verified numerically. Not claimed: that this group is a symmetry of the algebra. It is not, and §<em>The Boundary</em> says in what precise sense: <strong>no non-zero element of this $\mathfrak{su}(3)$ is $\mathbb{B}$-linear</strong>, so the triplet is not a $\mathbb{B}$-module and the corpus's verdict in <em>Why the Biquaternion Algebra Reaches $\mathrm{SU}(2)$ but Not $\mathrm{SU}(3)$</em> and in <em>The Gluon: An Octet Inside the Carrier's Group</em> stands unchanged. What the embedding buys is an operator-level home for the group, not a derivation of it.</p>
+<p><strong>The one extension.</strong> The last section widens the corner by exactly one dimension, from $\mathfrak{su}(3)$ to $\mathfrak u(3)$, and explains what that dimension is: the common phase of the vector part, the $\mathrm{u}(1)$ direction that tracelessness deletes. It is included because it is the only enlargement in which the diagonal part of the algebra becomes three-dimensional and so can carry a third basis family with equal weights on the three axes. The extension is a change of frame, not of physics, and the section says where the line is.</p>
+<h2 id="the-carrier-the-word-basis-and-the-trace">The Carrier, the Word Basis, and the Trace</h2>
+<p><strong>The carrier.</strong> $\mathbb{B}$ is four complex dimensions, with basis $e_t,\vec e_x,\vec e_y,\vec e_z$ and the products</p>
+<p>$$
+\vec e_x\vec e_y=\vec e_z,\qquad \vec e_y\vec e_z=\vec e_x,\qquad \vec e_z\vec e_x=\vec e_y,\qquad \vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t .
+$$</p>
+<p>The scalar part is $\mathrm{Sc}(\tilde Q)=Q_t$, and $\mathrm{Sc}(\tilde Q_1\tilde Q_2)=\sum_\mu Q_{1\mu}Q_{2\mu}$.</p>
+<p><strong>The two families.</strong> $L_a(\tilde X)=a\tilde X$ and $R_b(\tilde X)=\tilde Xb$ are the two regular families of <em>Operators Acting on One Side</em>. They are $\mathbb{C}$-linear, injective, and they commute; the sixteen composites</p>
+<p>$$
+e_\mu[\,]e_\nu=L_{e_\mu}R_{e_\nu},\qquad e_\mu[\,]e_\nu(\tilde X)=e_\mu\tilde Xe_\nu,
+$$</p>
+<p>are a basis of $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ by the generation theorem of <em>Operators Acting on Two Sides</em>, with the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ and the isomorphism $\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, $a\otimes b\mapsto L_aR_b$.</p>
+<p><strong>The coefficient matrix and the length.</strong> Every operator has one coefficient array $c(M)$ in this basis, $M=\sum_{\mu\nu}c_{\mu\nu}\,e_\mu[\,]e_\nu$, and the <strong>length</strong> is $\ell(M)=\operatorname{rank}c(M)$. The Conway theorem is $\ell\le4$, and the corpus reads it as the ladder $1,4,7,16$: the scalars, one side, both sides, the ambient space.</p>
+<p><strong>The Hermitian form and the dagger.</strong> Write $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})=\sum_\mu X_\mu\overline{Y_\mu}$, of Gram matrix $\mathrm{I}_4$ and inertia $(8,0)$ over $\mathbb{R}$ by <em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>. In the coefficient basis its adjoint is the conjugate transpose, and the adjoint of a word is</p>
+<p>$$
+\bigl(L_aR_b\bigr)^{\dagger}=L_{\bar b}R_{\bar a},
+$$</p>
+<p>because the coefficient conjugation $\bar{\cdot}$ is an automorphism of $\mathbb{B}$ and fixes the structure constants. Hence</p>
+<p>$$
+M^{\dagger}=\overline{M}^{\,\mathsf T},\qquad M=\sum c_{\mu\nu}e_\mu[\,]e_\nu,\qquad
+M^{\dagger}=\sum_{\mu\nu}\overline{c_{\mu\nu}}\,s_\mu s_\nu\,e_\mu[\,]e_\nu,
+$$</p>
+<p>with $s_t=+1$ and $s_x=s_y=s_z=-1$ the sign vector of $\bar{\cdot}$ on the basis.</p>
+<p><strong>The two functionals that matter.</strong> The trace of a word is a degenerate functional, and this is the fact that organises the whole note:</p>
+<p>$$
+\boxed{\;\operatorname{tr}\bigl(L_aR_b\bigr)=4\,\mathrm{Sc}(a)\,\mathrm{Sc}(b)
+\qquad\text{hence}\qquad
+\operatorname{tr}M=4\,c_{tt}(M)\;}
+$$</p>
+<p>so that an operator is traceless exactly when its coefficient on the single word $e_t[\,]e_t$ vanishes. The identity is the word $e_t[\,]e_t$ itself, of trace $4$; the projector onto the unit line inside $\mathbb{B}$ has length four.</p>
+<h2 id="the-corner-where-the-group-lives">The Corner: Where the Group Lives</h2>
+<p><strong>The split.</strong> The unit singles out a line, and its Hermitian orthogonal is the vector part:</p>
+<p>$$
+\mathbb{B}=\mathbb{C}e_t\;\oplus\;B_V,\qquad B_V=e_t^{\perp}\ \text{for }\langle\cdot,\cdot\rangle_{*},\qquad \dim_{\mathbb{C}}B_V=3 .
+$$</p>
+<p>This is the $1+3$ split of <em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</em>, and $e_t$ is the only distinguished element: the three vector units are permuted among themselves by the automorphisms of the algebra, as §<em>No Axis Is Preferred</em> shows.</p>
+<p><strong>The corner algebra.</strong> An operator is in the corner when it kills the unit line and preserves the vector part. Those two conditions are the linear conditions $Xe_t=0$ and $X(B_V)\subseteq B_V$, and together they cut out</p>
+<p>$$
+\Bigl\{X:\;Xe_t=0,\;X(B_V)\subseteq B_V\Bigr\}
+=\Bigl\{\begin{pmatrix}0&0\\0&A\end{pmatrix}:\;A\in M_3(\mathbb{C})\Bigr\}\cong M_3(\mathbb{C}),
+$$</p>
+<p>of complex dimension nine. Its traceless part is $\mathfrak{sl}(3,\mathbb{C})$, of complex dimension eight, and its intersection with $\mathfrak{u}(4)$ is the compact real form.</p>
+<p><strong>The two-step compact form.</strong> The two conditions "anti-Hermitian" and "traceless" do different work, and the chain of subgroups shows it:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>object</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$ preserves $B_V$ and kills $e_t$</td>
+<td>$M_3(\mathbb{C})$ in the corner</td>
+<td>$18$</td>
+<td>the associative corner</td>
+</tr>
+<tr>
+<td>above, anti-Hermitian</td>
+<td>$\mathfrak{u}(3)$</td>
+<td>$9$</td>
+<td>the stabilizer of the line in $\mathfrak{u}(4)$</td>
+</tr>
+<tr>
+<td>above, traceless</td>
+<td>$\mathfrak{su}(3)$</td>
+<td>$8$</td>
+<td>stabilizer in $\mathfrak{su}(4)$</td>
+</tr>
+<tr>
+<td>the same corner without the dagger</td>
+<td>$\mathfrak{sl}(3,\mathbb{C})$</td>
+<td>$16$</td>
+<td>the complexification of $\mathfrak{su}(3)$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The row of dimension nine is generated by the eight below together with the single operator $iP$, $P$ the projector onto $B_V$: anti-Hermitian, killing $e_t$, preserving $B_V$, and of trace $3i$. "Traceless" removes exactly that one direction. In the word basis $iP$ is</p>
+<p>$$
+iP=i\Bigl(\tfrac34\,e_t[\,]e_t+\tfrac14\bigl(e_x[\,]e_x+e_y[\,]e_y+e_z[\,]e_z\bigr)\Bigr),
+$$</p>
+<p>of length four. It is the only member of $\mathfrak{u}(3)$ in this corner that needs the unit word, and that is why it is the only one that the trace detects.</p>
+<h2 id="the-eight-generators-in-math92-and-math93-only">The Eight Generators, in $L$ and $R$ Only</h2>
+<p>Each generator below is a sum of <strong>two</strong> Conway words, and the two-word forms are the answer to the question of how $\mathrm{SU}(3)$ is built from rotors: the first three are <strong>differences</strong> $L-R$, the last five are <strong>symmetric sums</strong> $LR+RL$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operator in $L,R$ only</th>
+<th>matrix on $\mathbb{C}e_t\oplus B_V$</th>
+<th>name</th>
+<th>words</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\vec e_x}R_{e_t}-L_{e_t}R_{\vec e_x}$</td>
+<td>$\operatorname{diag}\bigl(0,\;\begin{smallmatrix}0&0&0\\0&0&-2\\0&2&0\end{smallmatrix}\bigr)$</td>
+<td>$\mathrm{ad}_{\vec e_x}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$L_{\vec e_y}R_{e_t}-L_{e_t}R_{\vec e_y}$</td>
+<td>$\operatorname{diag}\bigl(0,\;\begin{smallmatrix}0&0&2\\0&0&0\\-2&0&0\end{smallmatrix}\bigr)$</td>
+<td>$\mathrm{ad}_{\vec e_y}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$L_{\vec e_z}R_{e_t}-L_{e_t}R_{\vec e_z}$</td>
+<td>$\operatorname{diag}\bigl(0,\;\begin{smallmatrix}0&-2&0\\2&0&0\\0&0&0\end{smallmatrix}\bigr)$</td>
+<td>$\mathrm{ad}_{\vec e_z}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\tfrac{i}{2}\bigl(L_{\vec e_y}R_{\vec e_y}-L_{\vec e_x}R_{\vec e_x}\bigr)$</td>
+<td>$i\operatorname{diag}(0,1,-1,0)$</td>
+<td>$-h_z$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\tfrac{i}{2}\bigl(L_{\vec e_z}R_{\vec e_z}-L_{\vec e_x}R_{\vec e_x}\bigr)$</td>
+<td>$i\operatorname{diag}(0,1,0,-1)$</td>
+<td>$h_y$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$-\tfrac{i}{2}\bigl(L_{\vec e_x}R_{\vec e_y}+L_{\vec e_y}R_{\vec e_x}\bigr)$</td>
+<td>$\operatorname{diag}\bigl(0,\;\begin{smallmatrix}0&i&0\\ i&0&0\\0&0&0\end{smallmatrix}\bigr)$</td>
+<td>$i(E_{xy}+E_{yx})$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$-\tfrac{i}{2}\bigl(L_{\vec e_x}R_{\vec e_z}+L_{\vec e_z}R_{\vec e_x}\bigr)$</td>
+<td>$\operatorname{diag}\bigl(0,\;\begin{smallmatrix}0&0&i\\0&0&0\\ i&0&0\end{smallmatrix}\bigr)$</td>
+<td>$i(E_{xz}+E_{zx})$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$-\tfrac{i}{2}\bigl(L_{\vec e_y}R_{\vec e_z}+L_{\vec e_z}R_{\vec e_y}\bigr)$</td>
+<td>$\operatorname{diag}\bigl(0,\;\begin{smallmatrix}0&0&0\\0&0&i\\0&i&0\end{smallmatrix}\bigr)$</td>
+<td>$i(E_{yz}+E_{zy})$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The structure constants.</strong> Write $A_a=\mathrm{ad}_{\vec e_a}$, $H_a=h_a$ and $S_{ab}=i(E_{ab}+E_{ba})$, and let $(a,b,c)$ be cyclic in $(x,y,z)$, with $H_x+H_y+H_z=0$ and $S_{ab}=S_{ba}$. Then</p>
+<p>$$
+[A_a,A_b]=2\varepsilon_{abc}A_c,\qquad
+[A_a,S_{bc}]=4H_a,\qquad
+[A_a,S_{ab}]=2S_{ac},\qquad
+[A_a,S_{ac}]=-2S_{ab},
+$$
+$$
+[H_a,S_{bc}]=-A_a,\qquad
+[H_a,S_{ab}]=\tfrac12 A_c,\qquad
+[H_a,H_b]=0,\qquad
+[S_{ab},S_{ac}]=\pm\tfrac12 A_a,
+$$</p>
+<p>with the last sign $+$ for the cyclic order of the two lower pairs and $-$ for the reversed one: $[S_{xy},S_{xz}]=\tfrac12A_x$ but $[S_{xy},S_{yz}]=-\tfrac12A_y$. Every constant is one of $2,4,\tfrac12,1$; the two entries that read as fractions of thirds in a computation are not constants of the algebra, since $[A_x,S_{yz}]$ comes out as $2\tfrac23H_x-\tfrac43H_y-\tfrac43H_z$ when the three dependent diagonals $H_a$ are used as a basis, and that vector is $4H_x$. The constants belong to this normalisation and not to the algebra: the Hilbert–Schmidt norms squared are $8$ for $A_a$ and $2$ for $H_a$ and $S_{ab}$, so the frame is not orthonormal, and another normalisation gives another table of the same brackets.</p>
+<p><strong>Two words is the floor, four is the ceiling.</strong> No single word lies in $\mathfrak{su}(3)$: a word that annihilates the unit has $ab=0$, and then, writing $a=uv^{\mathsf T}$ and $b=wz^{\mathsf T}$ in $M_2(\mathbb{C})$, the condition $v^{\mathsf T}w=0$ makes</p>
+<p>$$
+aXb=(v^{\mathsf T}Xw)\,uz^{\mathsf T}
+$$</p>
+<p>a single functional times one fixed matrix, of operator rank at most one. But $\mathfrak{su}(3)$ has no non-zero element of rank one: a rank-one member of the traceless corner reads $i\lambda ww^{\dagger}$ with $w\in\mathbb{C}^{3}$ and $\operatorname{tr}=i\lambda\lVert w\rVert^{2}$, which vanishes only at $w=0$. Hence $\ell\ge2$ on $\mathfrak{su}(3)\setminus\{0\}$; the eight above attain $2$; and a generic element of the eight-dimensional space attains $4$, the Conway bound. Length is not additive, and that is the whole content of the table: a basis of short words spans a space of long elements.</p>
+<h2 id="anti-hermitian-in-operator-language">Anti-Hermitian, in Operator Language</h2>
+<p><strong>What the condition means.</strong> A generator is anti-Hermitian when $\exp(tX)$ is unitary for real $t$, that is when the one-parameter group it generates preserves the Hermitian norm $\langle\tilde Q\rangle_{*}=\sum_\mu|Q_\mu|^{2}$ of the carrier. Equivalently $X^{\dagger}=-X$ for the adjoint fixed by $\langle\cdot,\cdot\rangle_{*}$, equivalently $\overline{X}^{\,\mathsf T}=-X$, equivalently the spectrum of $X$ is purely imaginary.</p>
+<p><strong>The coefficient criterion.</strong> Transcribing the dagger of a word, $M$ is anti-Hermitian exactly when</p>
+<p>$$
+c_{\mu\nu}=-s_\mu s_\nu\,\overline{c_{\mu\nu}}\qquad\text{for all }\mu,\nu,
+$$</p>
+<p>with $s=(+1,-1,-1,-1)$. The criterion reads off slot by slot, and it explains the two shapes of the table.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>slot of the word</th>
+<th>sign $s_\mu s_\nu$</th>
+<th>condition on $c_{\mu\nu}$</th>
+<th>what it produces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\mu,\nu)$ both in $\{x,y,z\}$</td>
+<td>$+1$</td>
+<td>$c$ purely imaginary</td>
+<td>the diagonal $h$'s and the off-diagonal symmetric sums</td>
+</tr>
+<tr>
+<td>one index $t$, one vector</td>
+<td>$-1$</td>
+<td>$c$ real</td>
+<td>the three differences $\mathrm{ad}_{\vec e_k}$</td>
+</tr>
+<tr>
+<td>$(t,t)$</td>
+<td>$+1$</td>
+<td>$c$ purely imaginary</td>
+<td>the unit word $i\,e_t[\,]e_t$, of trace $4i$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the antisymmetric combinations carry real coefficients and the symmetric ones carry imaginary coefficients, and the reason is the sign vector of the coefficient conjugation, not a convention about the generators.</p>
+<p><strong>The three differences are the compact half of a six-dimensional real form.</strong> $\mathrm{ad}_{\vec u}=L_{\vec u}-R_{\vec u}$ is anti-Hermitian exactly when $\bar{\vec u}=\vec u$, that is when $\vec u$ is a <strong>real</strong> vector, which is three real dimensions. Replacing $\vec u$ by $i\vec u$ gives an <strong>Hermitian</strong> generator instead: the three $\mathrm{ad}_{i\vec e_k}$ are the boosts, they lie outside $\mathfrak{u}(4)$, and together with the three rotations they span the six real dimensions of $\mathfrak{so}(3,1)\cong\mathfrak{su}(2)_{\mathbb{C}}$ read over $\mathbb{R}$. The compact three is therefore not a choice among the six: it is the part that survives the dagger.</p>
+<p><strong>The finite statement.</strong> For a <strong>unit</strong> quaternion $\tilde u$, $\langle\tilde u\rangle_{\natural}=1$, the operator $\mathrm{Ad}_{\tilde u}(\tilde X)=\tilde u\tilde X\tilde u^{-1}$ is unitary and of determinant one on the carrier, it fixes $e_t$, and it preserves $B_V$; hence $\mathrm{Ad}_{\tilde u}\in\mathrm{SU}(3)$. This is the geometric content of the three $\mathrm{ad}$'s: the <strong>compact form of the automorphism group</strong>, $\mathrm{SO}(3)=\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cap\mathrm{SU}(3)$, is a subgroup of the group that this note is about. Verified on the twenty-four unit quaternions $\pm e_t,\pm\vec e_k,\tfrac12(\pm e_t\pm\vec e_x\pm\vec e_y\pm\vec e_z)$: all twenty-four give $\operatorname{diag}(1,R)$ with $R\in\mathrm{U}(3)$ and $\det R=1$.</p>
+<h2 id="traceless-in-operator-language">Traceless, in Operator Language</h2>
+<p><strong>What the condition means.</strong> $\operatorname{tr}X=0$ is $\det\exp(tX)=1$: the one-parameter group lands in $\mathrm{SU}(4)$ and not merely in $\mathrm{U}(4)$. On the corner it is the condition $\operatorname{tr}A=0$ on the $3\times3$ block, and through $\mathrm{SU}(4)$ it is the determinant-one condition on the group.</p>
+<p><strong>Why it is the same as "no unit word".</strong> By the trace functional of §<em>The Carrier</em>, $\operatorname{tr}M=4c_{tt}(M)$. Hence</p>
+<p>$$
+\operatorname{tr}M=0\quad\Longleftrightarrow\quad c_{tt}(M)=0 ,
+$$</p>
+<p>and every generator of the table is traceless for the same reason: <strong>none of them occupies the slot $e_t[\,]e_t$</strong>. A word $a[\,]b$ contributes to the trace only through $\mathrm{Sc}(a)\mathrm{Sc}(b)$, so a word with a non-scalar factor on either side is invisible to the trace, and a sum of two such words is traceless even though neither factor is.</p>
+<p><strong>What the condition removes.</strong> Inside the corner, the anti-Hermitian and unit-killing operators form $\mathfrak{u}(3)$, of dimension nine, and the ninth direction is $iP$, the projector onto $B_V$ multiplied by $i$. It is the only one of the nine that needs the unit word, its length is four, and its trace is $3i$. Tracelessness is therefore not a technicality: it is exactly the deletion of the $U(1)$ that a stabilizer of a line always carries, and it is the difference between "the group that fixes the unit line" and "the group that acts on the vector part with determinant one".</p>
+<p><strong>The operator-level reading of the pair of conditions.</strong> Putting the two sections together:</p>
+<p>$$
+X\in\mathfrak{su}(3)\iff
+\underbrace{Xe_t=0}_{c_{t\nu}=0}\ \text{and}\ \underbrace{X(B_V)\subseteq B_V}_{c_{\mu t}=0}\ \text{and}\ \underbrace{\overline{c_{\mu\nu}}s_\mu s_\nu=-c_{\mu\nu}}_{\text{anti-Hermitian}}\ \text{and}\ \underbrace{c_{tt}=0}_{\text{traceless}} .
+$$</p>
+<p>Four linear conditions on the sixteen complex coefficients, and they cut out a real subspace of dimension eight. The counts run $32\to18\to9\to8$: the corner costs fourteen real dimensions, anti-Hermiticity nine, and tracelessness one.</p>
+<h2 id="why-the-rotor-guesses-fail-precisely">Why the Rotor Guesses Fail, Precisely</h2>
+<p><strong>The four candidates and the single test.</strong> Every element of $\mathfrak{su}(3)$ kills the unit, and that one test settles four hypotheses at once, because the one-sided operators and the Hermitian pairs are exactly the operators that <em>carry</em> the unit somewhere.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>candidate</th>
+<th>value at $e_t$</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_a$</td>
+<td>$L_a(e_t)=a$</td>
+<td>non-zero unless $a=0$</td>
+</tr>
+<tr>
+<td>$R_b$</td>
+<td>$R_b(e_t)=b$</td>
+<td>non-zero unless $b=0$</td>
+</tr>
+<tr>
+<td>$L_{\vec u}+R_{\vec u}$</td>
+<td>$2\vec u$</td>
+<td>non-zero</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$</td>
+<td>$\tilde Q\tilde Q^{*}=\langle\tilde Q\rangle_{*}e_t$</td>
+<td>non-zero unless $\tilde Q=0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Hence $\mathfrak{su}(3)\cap L(\mathbb{B})=\mathfrak{su}(3)\cap R(\mathbb{B})=0$ and $\mathfrak{su}(3)\cap\{\mathrm{Sd}_{\tilde Q}\}=0$. The one-sided families are the operators that read the parameter <em>at the unit</em>, and $\mathfrak{su}(3)$ is the subspace that annihilates the unit; the two are transverse by construction.</p>
+<p><strong>What survives of the guess.</strong> Not nothing. The intersection with the sum is three-dimensional,</p>
+<p>$$
+\mathfrak{su}(3)\cap\bigl(L(\mathbb{B})+R(\mathbb{B})\bigr)=\mathrm{span}_{\mathbb{R}}\{\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y},\mathrm{ad}_{\vec e_z}\},
+$$</p>
+<p>the rotor differences; and the intersection with the two-sided family is empty while the intersection with the <em>symmetric sums of two words</em> is five-dimensional,</p>
+<p>$$
+\dim_{\mathbb{R}}\bigl(\mathfrak{su}(3)\cap\ker(\sigma-1)\bigr)=5,\qquad
+\dim_{\mathbb{R}}\bigl(\mathfrak{su}(3)\cap\ker(\sigma+1)\bigr)=3,
+$$</p>
+<p>with $\sigma$ the side-swap $L_aR_b\mapsto L_bR_a$ of <em>Operator Chirality on the Biquaternion Algebra</em>, that is the transpose of the coefficient array. The eight splits $3+5$; only the $3$ is closed under the bracket, and the $5$ is its complement in the symmetric pair of §<em>The $3+5$ Split and the Two Spins</em>. A pair of rotors therefore gives three of the eight, and the other five are sums of two-sided words and nothing simpler.</p>
+<h2 id="what-math261-is">What $\mathrm{ad}_{\vec e_x}$ Is</h2>
+<p><strong>The operator.</strong> Write it in the four ways the corpus makes available:</p>
+<p>$$
+\mathrm{ad}_{\vec e_x}=L_{\vec e_x}-R_{\vec e_x}
+=\vec e_x[\,]e_t-e_t[\,]\vec e_x
+=2\,J^{\mathrm{tot}}_x ,
+\qquad J^{\mathrm{tot}}_x=\tfrac12\bigl(L_{\vec e_x}-R_{\vec e_x}\bigr)=J_x-J'_x .
+$$</p>
+<p><strong>Reading one: a derivation.</strong> <em>The Endomorphisms of the Biquaternion Algebra</em> proves that every derivation of $\mathbb{B}$ is inner, $\delta=\mathrm{ad}_{\tilde Q}$, that the kernel is the centre, and that $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$ with complex dimension three. The map $\tilde Q\mapsto\mathrm{ad}_{\tilde Q}$ carries $B_V$ isomorphically onto the derivations, so</p>
+<p>$$
+\mathrm{Der}_{\mathbb{C}}(\mathbb{B})=\mathrm{ad}(B_V)=\mathrm{span}_{\mathbb{C}}\{\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y},\mathrm{ad}_{\vec e_z}\},
+$$</p>
+<p>and the three generators of the table's first rows are <strong>all</strong> the derivations there are. This is the sense in which the group's three-dimensional part is the algebra's own symmetry algebra, and the five remaining dimensions are not: a generator in the symmetric part satisfies no Leibniz rule.</p>
+<p><strong>Reading two: the derivative of a reflection, hence of a rotation.</strong> Differentiate the two-sided operator along the unit sphere of $\mathbb{B}$:</p>
+<p>$$
+\frac{d}{dt}\Big|_{0}\Bigl(L_{e^{t\vec e_x}}R_{e^{-t\vec e_x}}\Bigr)=L_{\vec e_x}R_{e_t}-L_{e_t}R_{\vec e_x}=\mathrm{ad}_{\vec e_x}.
+$$</p>
+<p>The finite member is the operator of <em>Introduction to the Operators of the Biquaternion Algebra</em>, §<em>Rotation, Reflection</em>: for a vector $\tilde Q$ with $\langle\tilde Q\rangle_{\natural}\neq0$,</p>
+<p>$$
+L_{\tilde Q}R_{\tilde Q^{-1}}\big|_{V}=-\rho_{\tilde Q},\qquad
+L_{\tilde Q^{\natural}}R_{\tilde Q^{-1}}\big|_{V}=+\rho_{\tilde Q},
+$$</p>
+<p>with $\rho$ the reflection in the hyperplane $\tilde Q^{\perp}$. So $\mathrm{ad}_{\vec e_x}$ is the first-order term of the <strong>negative reflection</strong>, the sign insertion repairs the sign, and the composition of two reflections — which is what $\exp$ of the generator produces — is a rotation.</p>
+<p><strong>Reading three: the spin-one generator of the relative pair.</strong> <em>From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides</em> computes $J_k=\tfrac12L_{\vec e_k}$ and $J'_k=\tfrac12R_{\vec e_k}$, each of Casimir $-\tfrac34\mathrm{I}_4$ — spin $\tfrac12$ — and identifies the diagonal generators of the pair as $J^{\mathrm{tot}}_k=J_k-J'_k$, of spin one. The identity above says that $\mathrm{ad}_{\vec e_x}$ is twice that generator. The factor $2$ of the matrix $\begin{smallmatrix}0&-2\\2&0\end{smallmatrix}$ that $\mathrm{ad}_{\vec e_x}$ carries on the plane of $(\vec e_y,\vec e_z)$ is therefore not a normalisation slip and not a choice: one $L$ is spin $\tfrac12$, the relative combination is spin one, and the bracket $[\vec e_x,\vec e_y]=2\vec e_z$ carries the same $2$.</p>
+<p><strong>Reading four: the geometry.</strong> Exponentiating,</p>
+<p>$$
+\exp\bigl(\theta\,J^{\mathrm{tot}}_x\bigr)=\exp\bigl(\tfrac{\theta}{2}\mathrm{ad}_{\vec e_x}\bigr):
+\quad e_t\mapsto e_t,\quad \vec e_x\mapsto\vec e_x,\quad \vec e_y\mapsto\cos\theta\,\vec e_y+\sin\theta\,\vec e_z,\quad \vec e_z\mapsto-\sin\theta\,\vec e_y+\cos\theta\,\vec e_z .
+$$</p>
+<p>Verified: at $\theta=\tfrac{\pi}{2}$ the block on $(\vec e_y,\vec e_z)$ is $\begin{smallmatrix}0&-1\\1&0\end{smallmatrix}$; at $\theta=\pi$ it is $\mathrm{diag}(-1,-1)$, a half-turn of the plane orthogonal to the axis. Three properties of this flow are worth naming. It <strong>fixes the unit</strong>, so it is a flow of unital maps and not a movement of the unit line. It is <strong>odd under the side-swap</strong>, $\sigma(\mathrm{ad}_{\tilde Q})=-\mathrm{ad}_{\tilde Q}$, since $\sigma(L_aR_b)=L_bR_a$: it measures the disagreement of the two sides, which is why it is $J-J'$ and not $J+J'$. And it is <strong>the compact direction</strong>: the corresponding boost $\mathrm{ad}_{i\vec e_x}$ is Hermitian, has real spectrum, and generates no rotation.</p>
+<h2 id="no-axis-is-preferred">No Axis Is Preferred</h2>
+<p><strong>The apparent asymmetry is in the presentation.</strong> The rows of the table that name a diagonal both subtract $L_{\vec e_x}R_{\vec e_x}$, which reads as a preference for $x$. It is not one. For $(a,b,c)$ cyclic put</p>
+<p>$$
+h_a=\tfrac{i}{2}\bigl(L_{\vec e_b}R_{\vec e_b}-L_{\vec e_c}R_{\vec e_c}\bigr),
+\qquad h_x+h_y+h_z=0,
+$$</p>
+<p>with restrictions to $B_V$</p>
+<p>$$
+h_x=\operatorname{diag}(0,-i,i),\qquad h_y=\operatorname{diag}(i,0,-i),\qquad h_z=\operatorname{diag}(-i,i,0).
+$$</p>
+<p>Any two of the three are a Cartan basis; the triple is cyclically closed and sums to zero. The table's $H_1=-h_z$ and $H_2=h_y$ are two of the three, and writing them that way hides the symmetry.</p>
+<p><strong>The group permutes the axes itself.</strong> Let $\tilde u=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$, of norm one and of order three up to sign, and let $P=\mathrm{Ad}_{\tilde u}$. Then, verified,</p>
+<p>$$
+P^{3}=\mathrm{I}_4,\qquad P\,\mathrm{ad}_{\vec e_x}P^{-1}=\mathrm{ad}_{\vec e_y},\qquad P\,\mathrm{ad}_{\vec e_y}P^{-1}=\mathrm{ad}_{\vec e_z},
+$$</p>
+<p>and $P$ carries $S_{xy}\mapsto S_{yz}\mapsto S_{xz}\mapsto S_{xy}$. The automorphism group of the algebra is therefore a subgroup of $\mathrm{SU}(3)$ that acts on the three axes as the full symmetric group $S_3$ — the Weyl group of $A_2$ — so no axis and no Cartan is invariant. The only invariant is the splitting itself.</p>
+<p><strong>What is canonical, and what is chosen.</strong> The line $\mathbb{C}e_t$ is canonical, because the unit is. The three-dimensional space $B_V$ is canonical, because the Hermitian form is. The three axes inside $B_V$ are not: they are a basis, and the group moves them. Any statement about this $\mathrm{SU}(3)$ must therefore be stated either in the split $1+3$ or in $L,R$ with no axis named; the table above is the axis-free form of the eight. The question of how far a <em>basis</em> can be freed of the pivot, and what a symmetric <em>triple</em> costs, is taken up in <em>The Symmetric Three-Element Triple, and the Pivot</em>.</p>
+<h2 id="the-math325-split-and-the-two-spins">The $3+5$ Split and the Two Spins</h2>
+<p><strong>The involution.</strong> On the corner $X\mapsto-X^{\mathsf T}$ is an involution of $\mathfrak{su}(3)$: it preserves anti-Hermiticity, tracelessness, the unit-killing and the vector part. Its fixed and anti-fixed spaces are</p>
+<p>$$
+\mathfrak{k}=\{X:X=-X^{\mathsf T}\}\quad(\dim_{\mathbb{R}}3),\qquad
+\mathfrak{p}=\{X:X=+X^{\mathsf T}\}\quad(\dim_{\mathbb{R}}5),
+$$</p>
+<p>and because $X$ is anti-Hermitian, $\mathfrak{k}$ consists of the <strong>real antisymmetric</strong> blocks and $\mathfrak{p}$ of $i$ times the <strong>real symmetric traceless</strong> blocks. So</p>
+<p>$$
+\mathfrak{su}(3)=\underbrace{\mathrm{span}_{\mathbb{R}}\{\mathrm{ad}_{\vec e_x},\mathrm{ad}_{\vec e_y},\mathrm{ad}_{\vec e_z}\}}_{\mathfrak{k}\cong\mathfrak{so}(3)}
+\;\oplus\;
+\underbrace{\bigl\{iS:\;S\ \text{real symmetric traceless}\bigr\}}_{\mathfrak{p},\ \text{the traceless symmetric words}} .
+$$</p>
+<p><strong>The symmetric space.</strong> $\mathfrak{k}$ is a maximal subalgebra, the pair $(\mathfrak{k},\mathfrak{p})$ is symmetric, and the quotient $\mathrm{SU}(3)/\mathrm{SO}(3)$ is a compact symmetric space of dimension $5$. The five is its tangent space, and its elements are traceless symmetric tensors on the three-plane $B_V$ — geometrically quadrupoles, not rotations.</p>
+<p><strong>The two spins.</strong> Under $\mathfrak{k}=\mathfrak{so}(3)$ the adjoint of $\mathrm{SU}(3)$ branches as</p>
+<p>$$
+\mathbf{8}\longrightarrow\mathbf{3}\oplus\mathbf{5}=\text{spin }1\ \oplus\ \text{spin }2,
+$$</p>
+<p>which is the standard branching of $\mathfrak{su}(3)\supset\mathfrak{so}(3)$ and the representation-theoretic content of the table: three rotor generators of spin one, five tensor generators of spin two, and no pair of rotors. This is also why a second copy of $\mathfrak{su}(2)$ does not fit beside the first: $A_2$ has no pair of orthogonal roots, and the centraliser of the embedded $\mathfrak{su}(2)$ inside $\mathfrak{su}(3)$ is zero, verified. And it is why the Lorentz algebra cannot be the whole story: $\mathfrak{so}(3,1)$ has dimension six and $\mathfrak{su}(3)$ has eight, and the six meets the eight in exactly the three rotations.</p>
+<p><strong>The automorphism group, as a subgroup.</strong> The three-dimensional $\mathfrak{k}$ is the Lie algebra of $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})\cong PGL_2(\mathbb{C})\cong SO(3,\mathbb{C})$ of <em>The Endomorphisms of the Biquaternion Algebra</em>, acting on $B_V$ through the isomorphism $B_V\cong\operatorname{Sym}^{2}\mathbb{C}^{2}$. So the group chain is</p>
+<p>$$
+\mathrm{SO}(3)\subset\mathrm{SU}(3),\qquad \mathrm{SO}(3,\mathbb{C})\cong PGL_2(\mathbb{C})\subset\mathrm{SL}(3,\mathbb{C}),
+$$</p>
+<p>and the compact group is the compact real form of the complex one, both acting on the same three-plane.</p>
+<h2 id="the-group-and-its-family">The Group and Its Family</h2>
+<p><strong>The identification.</strong> $\mathrm{SU}(3)$ is the stabilizer in $\mathrm{SU}(4)$ of a unit vector of the carrier:</p>
+<p>$$
+\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t),\qquad
+\mathrm{SU}(4)/\mathrm{SU}(3)\cong S^{7},\qquad
+\mathrm{SU}(4)/S\bigl(\mathrm{U}(3)\times\mathrm{U}(1)\bigr)\cong\mathbb{CP}^{3}.
+$$</p>
+<p>The real dimension fifteen of $\mathrm{SU}(4)$ agrees with the row of <em>The Gluon: An Octet Inside the Carrier's Group</em> that puts $\mathrm{SU}(3)\subset\mathrm{U}(3)\subset\mathrm{U}(4)$ with $\dim_{\mathbb{R}}\mathrm{SU}(4)=15$.</p>
+<p><strong>The family.</strong> The group is canonical once the form is fixed, and the form is canonical only once a real form of the algebra is chosen. Moreover the line can be moved. For a unit element $a$ the left multiplication $L_a$ is unitary, and</p>
+<p>$$
+L_a\,\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)\,L_a^{-1}=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}a),
+$$</p>
+<p>so the carrier holds a $\mathbb{CP}^{3}$ family of copies of $\mathrm{SU}(3)$, one for each complex line, and $L$ and $R$ move one copy to another. Every automorphism of the algebra fixes the unit line, so the copy at $e_t$ is the one that the algebra's own symmetries preserve; the other copies are reached only by operators that are not automorphisms. This is the precise sense in which the group is <em>canonical relative to the unit and not a symmetry of the multiplication</em>.</p>
+<p><strong>Which Hermitian form decides which real form.</strong> The compactness of the group comes entirely from the <strong>definiteness</strong> of the form on $B_V$, and this is the sharpest way to see it. With the corpus's form $\langle\cdot,\cdot\rangle_{*}$, the restriction to $B_V$ is positive definite, and the corner gives the compact $\mathfrak{su}(3)$. With a Hermitian form of signature $(3,1)$ whose restriction to $B_V$ has signature $(2,1)$, the same corner gives $\mathfrak{su}(2,1)$: the block reads $R^{\dagger}G_3+G_3R=0$ with $G_3=\operatorname{diag}(-1,-1,1)$, it is still anti-Hermitian and traceless of real dimension eight, and it is <strong>non-compact</strong> — the real symmetric element</p>
+<p>$$
+A=\begin{pmatrix}0&0&1\\0&0&0\\1&0&0\end{pmatrix},
+\qquad A^{\dagger}G_3+G_3A=0,
+$$</p>
+<p>lies in it and has spectrum $\{1,-1,0\}$, real and non-zero, while every element of the compact corner has purely imaginary spectrum. The two groups have the same dimension and differ in the Killing form: negative definite $(0,8)$ for $\mathfrak{su}(3)$, indefinite for $\mathfrak{su}(2,1)$. The choice between them is a choice of the form on the carrier, and the corpus's choice is the definite one.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>No element of this $\mathfrak{su}(3)$ is $\mathbb{B}$-linear.</strong> A linear map of $\mathbb{B}$ that commutes with the left action of the algebra is a right multiplication: $\operatorname{End}_{\mathbb{B}}(\mathbb{B})=R(\mathbb{B})$, by the double centraliser theorem of <em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>. But</p>
+<p>$$
+\mathfrak{su}(3)\cap R(\mathbb{B})=0 ,
+$$</p>
+<p>so not one of the eight generators is $\mathbb{B}$-linear, and no non-trivial element of the group is. Consequently $\mathrm{SU}(3)$ cannot act on a $\mathbb{B}$-module by $\mathbb{B}$-linear maps: a commuting action would have to lie in $R(\mathbb{B})$, and this group is transverse to it.</p>
+<p><strong>What that costs, and where the corpus already says it.</strong> The triplet of $\mathrm{SU}(3)$ is three complex dimensional; every $\mathbb{B}$-module is even complex dimensional, because $\mathbb{B}\cong M_2(\mathbb{C})$ and its modules are $\mathbb{C}^{2}\otimes W$. So the fundamental representation of this $\mathrm{SU}(3)$ is not a $\mathbb{B}$-module, and the embedding in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ does not produce colour. The three obstructions of <em>The Gluon: An Octet Inside the Carrier's Group</em> — the compact algebra of dimension four, the odd-dimensional modules, the missing symmetric invariant $d_{abc}$ — are untouched, and so is the verdict of <em>Why the Biquaternion Algebra Reaches $\mathrm{SU}(2)$ but Not $\mathrm{SU}(3)$</em>: the algebra $\mathbb{B}$ reaches $\mathrm{SU}(2)$ through its own invertibles, and $\mathrm{SU}(3)$ appears only after the passage to the endomorphism algebra, where the algebra acts on the carrier and the group acts on the same carrier without commuting with it.</p>
+<p><strong>What the embedding does buy.</strong> An exact operator-level address for the group, the eight generators in the corpus's own two letters, the identification of the three generators that are the algebra's own derivations, the $3+5$ split with its two spins, and the reading of the two defining conditions as two conditions on the Conway coefficients. That is what this note claims; the physics ceiling is where the corpus already put it. <strong>And the ceiling is a Layer-A statement.</strong> "$\mathrm{SU}(3)$ cannot act $\mathbb{B}$-linearly" is a fact about the algebra's own modules, and it is not a judgement on a frame that lets the group act on a copy of the carrier: there colour is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_t)$, permitted by the canonical split. <strong>So the note's negative result and the frame's positive result are both correct, and the sentence that joins them is: the group is not in the algebra and is licensed by it.</strong></p>
+<h2 id="the-symmetric-three-element-triple-and-the-pivot">The Symmetric Three-Element Triple, and the Pivot</h2>
+<p><strong>The objection.</strong> Two rows of the generator table name a diagonal, and both subtract $L_{\vec e_x}R_{\vec e_x}$:</p>
+<p>$$
+H_1=-h_z=\tfrac{i}{2}\bigl(L_{\vec e_x}R_{\vec e_x}-L_{\vec e_y}R_{\vec e_y}\bigr),
+\qquad
+H_2=h_y=\tfrac{i}{2}\bigl(L_{\vec e_z}R_{\vec e_z}-L_{\vec e_x}R_{\vec e_x}\bigr).
+$$</p>
+<p>Read as they stand, $x$ occurs in both, $y$ only in $H_1$, $z$ only in $H_2$, so $x$ is a pivot. The objection is correct about the pair. It is not correct about the group, and the difference matters.</p>
+<p><strong>The pivot is a labelling, and it moves.</strong> With $\tilde u=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$ and $P=\mathrm{Ad}_{\tilde u}$,</p>
+<p>$$
+PH_1P^{-1}=-h_x,\qquad PH_2P^{-1}=h_z,
+$$</p>
+<p>verified to $4\times10^{-16}$, and the new pair has $y$ for pivot; applying $P$ twice gives $z$. So the table does not state a property of the group. It states a property of the two elements that were written down, and the group carries any such pair to a pair with a different pivot:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair</th>
+<th>the two elements</th>
+<th>pivot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H_1,H_2$</td>
+<td>$-h_z,\;h_y$, i.e. supports $\{x,y\}$ and $\{z,x\}$</td>
+<td>$x$</td>
+</tr>
+<tr>
+<td>$PH_1P^{-1},PH_2P^{-1}$</td>
+<td>$-h_x,\;h_z$, i.e. supports $\{y,z\}$ and $\{x,y\}$</td>
+<td>$y$</td>
+</tr>
+<tr>
+<td>$P^{2}H_1P^{-2},P^{2}H_2P^{-2}$</td>
+<td>$-h_y,\;h_x$, i.e. supports $\{z,x\}$ and $\{y,z\}$</td>
+<td>$z$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The short reason a real pair cannot avoid a pivot.</strong> Every diagonal element of the corner reads $i\sum_a\alpha_aE_a$ with $E_a=L_{\vec e_a}R_{\vec e_a}$, $\alpha_a\in\mathbb{C}$ and $\sum_a\alpha_a=0$: the display of $E_a$ is $-1$ on $e_t$, $-1$ on $\vec e_a$ and $+1$ on the other two, so the axis entry of $i\sum_a\alpha_aE_a$ is $-2i\alpha_a$ and its unit entry is $-i\sum_a\alpha_a$, which the corner sets to zero. The Cartan is the case $\alpha_a\in\mathbb{R}$. The three moduli $|\alpha_a|$ are the weights the element gives the three axes, and an element that weights them equally needs $|\alpha_x|=|\alpha_y|=|\alpha_z|$; with real $\alpha_a$ summing to zero, three real numbers of equal modulus summing to zero are all zero. So <strong>no non-zero real element of the Cartan treats the three axes alike</strong>, and a pair of them is biased twice over. The table of weights:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>$\lvert\alpha_x\rvert,\lvert\alpha_y\rvert,\lvert\alpha_z\rvert$</th>
+<th>unbiased?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h_x$</td>
+<td>$0,\;\tfrac12,\;\tfrac12$</td>
+<td>no: $x$ absent</td>
+</tr>
+<tr>
+<td>$K_x=\tfrac{i}{3}(2E_x-E_y-E_z)$</td>
+<td>$\tfrac23,\;\tfrac13,\;\tfrac13$</td>
+<td>no: $x$ doubled</td>
+</tr>
+<tr>
+<td>$H_\omega$ below</td>
+<td>$\tfrac12,\;\tfrac12,\;\tfrac12$</td>
+<td>yes, and complex</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sharp reason, in words.</strong> The number of Conway words of a diagonal element is the number of non-zero $\alpha_a$. A two-word diagonal element therefore has exactly one axis entry zero, and by $\sum_a\alpha_a=0$ the other two entries are opposite: it is $\pm h_a$, up to scale, and there are only three such lines. Their supports are the three two-element subsets of $\{x,y,z\}$, and those pairwise intersect. Any two-generator basis of the Cartan drawn from two-word elements is therefore two of the three $h_a$, and the shared axis is the pivot. Verified by enumeration: of two hundred random diagonal corner elements, none is two-word; the two-word ones are exactly the three lines $\mathbb{R}h_a$.</p>
+<p><strong>The decisive reason, in group theory.</strong> The cyclic element acts on the standard Cartan, the axis-diagonal one, with characteristic polynomial $\lambda^{2}+\lambda+1$, so its eigenvalues there are $\omega=e^{2\pi i/3}$ and $\omega^{2}$, neither of them $1$, and it has no fixed vector in $\mathfrak h$. A two-element set $\{X,Y\}$ of $\mathfrak h$ carried to itself by $P$ is either pointwise fixed, impossible since $1$ is not an eigenvalue of $\mathrm{Ad}_P$ on $\mathfrak h$, or swapped, which gives $P^{2}X=X$ and again a fixed vector. Hence <strong>no two-generator basis of the standard Cartan is stable under the cyclic element</strong>: some axis is always treated differently. This is the sharp form of the counting remark $\dim\mathfrak h=2<3$, and it says what a way out must cost: complex coefficients, or a third generator.</p>
+<p><strong>The scope of that argument, stated exactly.</strong> The argument must be read as a statement about $\mathfrak h$ and not about all maximal tori, and the difference is worth writing down because it is easy to overstate. Maximal tori are conjugate, and the fixed space of $\mathrm{Ad}_P$ on $\mathfrak{su}(3)$ is two-dimensional: it is spanned by the two elements diagonal in the Fourier basis, it is abelian, and it is itself a maximal torus $\mathfrak t_F$, with $\mathrm{Ad}_P$ acting there as the identity. So a $P$-stable pair of Cartan generators does exist, namely any basis of $\mathfrak t_F$; but there $P$ acts trivially, so the pair is stable because the relabelling does nothing on it, and no element of $\mathfrak t_F$ has equal weights either, since its weights are $\lvert a\rvert,\lvert b\rvert,\lvert c\rvert$ with $a+b+c=0$. Conversely, a pair that $P$ genuinely permutes cannot exist: the two eigenvectors would be a swap, whose eigenvalue $-1$ an operator of order three does not have, or a pointwise-fixed pair, whose eigenvectors lie in $\mathfrak t_F$ and are therefore not permuted. So for real pairs the dichotomy is: <strong>a pair is either stable because the symmetry is invisible on it, or visible but not stable.</strong></p>
+<p><strong>The exception that tests the rule.</strong> The complex pair $H_\omega,H_{\bar\omega}$ of <em>Way out 3</em> has equal weights — its display has modulus one on all three axes — and the pair is exchanged by $P$ up to the phases $\omega,\omega^{2}$. It is therefore neither of the two real cases, and the reason is that its elements are not in $\mathfrak{su}(3)$ at all: they lie in $\mathfrak h\otimes\mathbb{C}$, and $e^{-i\pi/6}H_\omega$ is a clock. So the correct statement, sharpened by that example, is: <strong>only a triple is real, independent, $P$-cycled and equal-weight at once.</strong> No real pair has equal weights; no dependent triple does; and the complex pair has them but is not real.</p>
+<p><strong>What the two circulated pairs really are.</strong> The "cyclic pair" $G_{yx}=\tfrac{i}{2}(E_y-E_x)$ and $G_{zy}=\tfrac{i}{2}(E_z-E_y)$ is exactly $-h_z$ and $-h_x$, verified exactly; its supports are $\{x,y\}$ and $\{y,z\}$, which meet in $y$. The pivot moved from $x$ to $y$ and did not go away, as the lemma above requires. The Gell-Mann pair $H_A=\tfrac{i}{2}(E_y-E_x)=-h_z$ and $H_B=\tfrac{i}{2\sqrt3}(2E_z-E_x-E_y)$ is $-h_z$ and $\tfrac{\sqrt3}{2}K_z$: the second is the third element of the $K$ triple of the next paragraph, rescaled. That pair is symmetric in $x$ and $y$ and isolates $z$, which is exactly the standard $\mathrm{SU}(2)\times\mathrm{U}(1)$ split, and it is a choice of split like any other.</p>
+<h3 id="way-out-1-three-generators-of-two-words-the-math524-triple">Way out 1: three generators of two words, the $h$ triple</h3>
+<p>This is the cheapest symmetric set and it is already in <em>No Axis Is Preferred</em>. Put</p>
+<p>$$
+h_a=\tfrac{i}{2}\bigl(E_b-E_c\bigr),\qquad (a,b,c)\ \text{cyclic},\qquad h_x+h_y+h_z=0,
+$$</p>
+<p>with displays on $B_V$ equal to $\operatorname{diag}(0,-i,i)$, $\operatorname{diag}(i,0,-i)$, $\operatorname{diag}(-i,i,0)$. Every axis enters the triple in exactly the same way, $P$ cycles the three, and the price is a linear relation plus a rule: never quote two of them without saying that a third exists. The frame is equiangular, $\lVert h_a\rVert^{2}_{\mathrm{HS}}=2$ and $\langle h_a,h_b\rangle_{\mathrm{HS}}=-1$, so the three sit at $120^{\circ}$ in the two-plane: the Mercedes frame.</p>
+<h3 id="way-out-2-three-generators-of-three-words-the-math534-triple">Way out 2: three generators of three words, the $K$ triple</h3>
+<p>Put</p>
+<p>$$
+K_a=\tfrac{i}{3}\bigl(2E_a-E_b-E_c\bigr)=\tfrac{2}{3}\bigl(h_c-h_b\bigr),
+$$</p>
+<p>with displays on $B_V$</p>
+<p>$$
+K_x=\operatorname{diag}\bigl(-\tfrac{4i}{3},\tfrac{2i}{3},\tfrac{2i}{3}\bigr),\quad
+K_y=\operatorname{diag}\bigl(\tfrac{2i}{3},-\tfrac{4i}{3},\tfrac{2i}{3}\bigr),\quad
+K_z=\operatorname{diag}\bigl(\tfrac{2i}{3},\tfrac{2i}{3},-\tfrac{4i}{3}\bigr),
+$$</p>
+<p>$K_x+K_y+K_z=0$, three words each instead of two, and the same Mercedes geometry: $\lVert K_a\rVert^{2}_{\mathrm{HS}}=\tfrac83$ and $\langle K_a,K_b\rangle_{\mathrm{HS}}=-\tfrac43$.</p>
+<p><strong>What the third word buys.</strong> The bracket of a rotation with the Cartan becomes diagonal:</p>
+<p>$$
+[A_a,K_b]=0\ \text{ if } a=b,\qquad [A_a,K_b]=\pm4S_{\hat a}\ \text{ if } a\ne b,
+$$</p>
+<p>where $S_{\hat a}$ is the symmetric sum on the two axes other than $a$, and the sign is $+$ when $a$ follows $b$ cyclically, $-$ otherwise:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$K_x$</th>
+<th>$K_y$</th>
+<th>$K_z$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_x$</td>
+<td>$0$</td>
+<td>$-4S_{yz}$</td>
+<td>$+4S_{yz}$</td>
+</tr>
+<tr>
+<td>$A_y$</td>
+<td>$+4S_{xz}$</td>
+<td>$0$</td>
+<td>$-4S_{xz}$</td>
+</tr>
+<tr>
+<td>$A_z$</td>
+<td>$-4S_{xy}$</td>
+<td>$+4S_{xy}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and the bracket of a symmetric sum with the Cartan becomes sparse, zero unless $c$ is one of the two axes of the pair, and otherwise $\pm A_{\hat c}$ with $\hat c$ the axis outside the pair:</p>
+<p>$$
+[S_{ab},K_c]=0\ \text{ if } c\notin\{a,b\},\qquad [S_{ab},K_c]=\pm A_{\hat c}\ \text{ otherwise},
+$$</p>
+<p>with $[S_{xy},K_x]=A_z$, $[S_{xy},K_y]=-A_z$, $[S_{xz},K_x]=-A_y$, $[S_{xz},K_z]=A_y$, $[S_{yz},K_y]=A_x$, $[S_{yz},K_z]=-A_x$. In the $h$ basis the same brackets are not diagonal — $[A_a,h_a]=-4S_{\hat a}$ but $[A_a,h_b]=+2S_{\hat a}$ for $b\ne a$, and $[S_{ab},h_c]=-\tfrac12A_{\hat c}$ for the two $c$ in the pair against $+A_{\hat c}$ for the third — so the extra word is what removes the distinction between "the axis of the generator" and "the other two". The constants are $0$ and $4$ for the rotations and $0$ and $1$ for the symmetric sums in the $K$ basis, against $-4,+2$ and $-\tfrac12,+1$ in the $h$ basis.</p>
+<h3 id="way-out-3-two-generators-over-math588-the-fourier-pair">Way out 3: two generators over $\mathbb C$, the Fourier pair</h3>
+<p>Put $\omega=e^{2\pi i/3}$ and the coefficient vector $\zeta=(i\omega,\,i,\,i\omega^{2})$ on $(x,y,z)$, so that $H_\omega=\tfrac12\sum_a\zeta_aE_a$:</p>
+<p>$$
+H_\omega=h_x-\omega h_y=\tfrac{i}{2}\bigl(\omega E_x+E_y+\omega^{2}E_z\bigr),
+\qquad
+H_{\bar\omega}=h_x-\omega^{2}h_y=\tfrac{i}{2}\bigl(\omega^{2}E_x+E_y+\omega E_z\bigr).
+$$</p>
+<p>The two are the discrete Fourier transform of the triple $(E_x,E_y,E_z)$ at the two non-trivial cube roots: $P$ acts on $(E_x,E_y,E_z)$ by cyclic shift, verified, so its eigenvectors in the Cartan are the Fourier modes, and the trivial mode $\tfrac13(E_x+E_y+E_z)$ is traceless but does not kill $e_t$, which is why the corner keeps exactly the two non-trivial ones. Then</p>
+<p>$$
+PH_\omega P^{-1}=\omega H_\omega,\qquad PH_{\bar\omega}P^{-1}=\omega^{2}H_{\bar\omega},
+$$</p>
+<p>so $P$ <strong>swaps the pair</strong>, and here at last is a two-generator basis with no pivot at all: each element weights the three axes by coefficients of modulus $\tfrac12$, and the pair is exchanged by the relabelling. Displays on $B_V$:</p>
+<p>$$
+H_\omega=\operatorname{diag}\bigl(e^{i\pi/6},\,-i,\,e^{5i\pi/6}\bigr),\qquad
+H_{\bar\omega}=\operatorname{diag}\bigl(e^{5i\pi/6},\,-i,\,e^{i\pi/6}\bigr),
+$$</p>
+<p>the two differing by the exchange of the $x$ and $z$ entries, that is by a transposition in the Weyl group $S_3$. Both have spectrum $e^{i\pi/6}\{1,\omega,\omega^{2}\}$, so $e^{-i\pi/6}H_\omega$ is a <strong>clock</strong>: the pivot-free generators are the cyclic shift, diagonalised and made traceless. Tracelessness is the same condition as equiangularity here — three coefficients of equal modulus sum to zero — and that identity is the whole reason the complex pair exists and the real pair cannot. The pair is also orthogonal, $\langle H_\omega,H_{\bar\omega}\rangle_{\mathrm{HS}}=0$ with $\lVert H_\omega\rVert^{2}_{\mathrm{HS}}=3$, and it carries the brackets in the same closed form,</p>
+<p>$$
+[A_a,H_\omega]=2\sqrt3\,\zeta_a\,S_{\hat a},\qquad [S_{ab},H_\omega]=-\tfrac{\sqrt3}{2}\,\zeta_{\hat c}\,A_{\hat c},
+$$</p>
+<p>where $\hat a$ is the pair of the two axes other than $a$, and $\hat c$ is the axis outside the pair $(a,b)$, and where $\zeta$ is the same clock that defines the element. The adjoint action of a Fourier mode is therefore itself a clock: it multiplies each of the two families by one of the three phases of $\zeta$. Verified: $[A_x,H_\omega]=(-3-i\sqrt3)S_{yz}$ and $[S_{xy},H_\omega]=(-\tfrac34+\tfrac{\sqrt3}{4}i)A_z$, of moduli $2\sqrt3$ and $\tfrac{\sqrt3}{2}$ and of phases $e^{7i\pi/6}$ and $e^{5i\pi/6}$, which are $\zeta_x$ and $-\zeta_z$. The cost is that neither element is anti-Hermitian: they lie in the complexification $\mathfrak h\otimes\mathbb{C}$, not in $\mathfrak{su}(3)$, and a real generator is a real combination of them.</p>
+<h3 id="way-out-4-no-generators-at-all">Way out 4: no generators at all</h3>
+<p>The Cartan is a two-dimensional subspace, and the honest statement names no generator:</p>
+<p>$$
+\mathfrak h=\Bigl\{\,i\sum_a\alpha_aE_a\ :\ \alpha_a\in\mathbb{R},\ \sum_a\alpha_a=0\,\Bigr\},
+\qquad
+\mathfrak h=\operatorname{span}\{h_x,h_y,h_z\}=\operatorname{span}\{K_x,K_y,K_z\},
+$$</p>
+<p>with the three axis involutions $E_a$ permuted by $S_3$. Every symmetric function of the triple is then canonical, and the two invariants that replace a choice of basis are</p>
+<p>$$
+\sum_a h_a^{2}=-2P_V,\qquad \sum_a K_a^{2}=-\tfrac83P_V,\qquad P_V=\operatorname{diag}(0,1,1,1),
+$$</p>
+<p>verified exactly. A statement that uses one $E_a$ on its own is a statement about a labelling; a statement that uses the triple symmetrically, or the projector $P_V$, is a statement about the group.</p>
+<h3 id="the-cost-table">The cost table</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>basis</th>
+<th>generators</th>
+<th>words each</th>
+<th>real?</th>
+<th>cyclic relabelling</th>
+<th>brackets with $A_a$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$H_1,H_2$ (as printed)</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>yes</td>
+<td>pivot $x$</td>
+<td>$-4$, $+2$</td>
+</tr>
+<tr>
+<td>$G_{yx},G_{zy}$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>yes</td>
+<td>pivot $y$</td>
+<td>$-4$, $+2$</td>
+</tr>
+<tr>
+<td>$h_x,h_y,h_z$</td>
+<td>$3$, one relation</td>
+<td>$2$</td>
+<td>yes</td>
+<td>cycles</td>
+<td>$-4$, $+2$</td>
+</tr>
+<tr>
+<td>$K_x,K_y,K_z$</td>
+<td>$3$, one relation</td>
+<td>$3$</td>
+<td>yes</td>
+<td>cycles</td>
+<td>$0$, $\pm4$</td>
+</tr>
+<tr>
+<td>$H_\omega,H_{\bar\omega}$</td>
+<td>$2$</td>
+<td>$3$</td>
+<td>no</td>
+<td>swaps</td>
+<td>$2\sqrt3\,\zeta_a$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What to print, and what to say.</strong> Keep the $h$ triple as the primary statement, since two words is the floor and the triple is the cheapest symmetric object. Print $H_1,H_2$ only with the sentence that they are two of the three, that $x$ is the pivot, and that the pivot is a labelling which $P$ moves to $y$ and then to $z$; that one sentence costs nothing and removes the false impression of a preferred axis. Add the $K$ triple where the brackets matter, and the Fourier pair where a two-generator basis is wanted and complex coefficients are acceptable. Do not claim that a real two-generator symmetric basis exists: it does not, and the three arguments above are the proof.</p>
+<h2 id="the-third-orbit-math668-against-math669-and-what-math670-is">The Third Orbit: $3+3+2$ against $3+3+3$, and What $\mathrm{u}(1)$ Is</h2>
+<p>The four way-outs above all stay inside $\mathfrak{su}(3)$. This section steps outside it, and the step is worth taking slowly, because the slogan "lift to $\mathfrak u(3)$ and the symmetry is restored" is true in a precise sense and false in the sense usually meant.</p>
+<p><strong>The orbits, counted.</strong> The cyclic element $P$ of the previous section acts on the corner by conjugation, and $\mathbb Z_3=\{1,P,P^{2}\}$ is the group it generates. The eight generators of $\mathfrak{su}(3)$ split under it as</p>
+<p>$$
+\underbrace{\{A_x,A_y,A_z\}}_{3}\ \oplus\ \underbrace{\{S_{xy},S_{yz},S_{zx}\}}_{3}\ \oplus\ \underbrace{\mathfrak h}_{2},
+$$</p>
+<p>verified to $4.7\times10^{-16}$: $PA_xP^{-1}=A_y$, $PA_yP^{-1}=A_z$, $PA_zP^{-1}=A_x$, and $PS_{xy}P^{-1}=S_{yz}$, $PS_{yz}P^{-1}=S_{zx}$, $PS_{zx}P^{-1}=S_{xy}$. The first two blocks are single free orbits of size three, with no element fixed and no orbit smaller. The third block is two-dimensional, and $2$ is not a multiple of $3$. So the count reads</p>
+<p>$$
+8=3+3+2\quad\text{inside }\mathfrak{su}(3),\qquad 9=3+3+3\quad\text{inside }\mathfrak u(3),
+$$</p>
+<p>and the whole question of the third orbit is the question of whether that last block can be a free orbit of size three.</p>
+<p><strong>What $2<3$ forbids, exactly.</strong> The obstruction is not that the third orbit fails to exist. It exists, and the previous section built it three times over: $\{h_x,h_y,h_z\}$, $\{K_x,K_y,K_z\}$, and the Fourier pair plus its missing mode. What a two-dimensional space forbids is that the orbit be <strong>independent</strong>. Three vectors in a two-dimensional space are always linearly dependent, and here the dependency is explicit and symmetric:</p>
+<p>$$
+h_x+h_y+h_z=0,\qquad K_x+K_y+K_z=0 .
+$$</p>
+<p>So each of those triples is a genuine $3$-cycle of lines, permuted freely by $P$, and none of them is a basis. The honest statement is therefore sharper than "$\mathfrak{su}(3)$ breaks the symmetry", and it is the statement this article has been building towards:</p>
+<blockquote>
+<p><strong>The cyclic symmetry of the diagonal is present in $\mathfrak{su}(3)$. What is absent is a diagonal $3$-cycle whose three members are independent, and, independently of that, a diagonal element that gives the three axes equal weights.</strong></p>
+</blockquote>
+<p>Two separate deficits, and $\mathfrak u(3)$ repairs both at once. The count explains the first: the diagonal part of $\mathfrak{su}(3)$ has dimension $2$ because tracelessness removes one dimension from the three that the three axes naturally offer; the diagonal part of $\mathfrak u(3)$ has dimension $3$, exactly one per axis, and there an orbit of three independent elements fits.</p>
+<p><strong>The weights, which are the second deficit.</strong> Look at what the existing triples do to the axes, reading the modulus of the entry each generator gives each axis in its display. An overall scale is immaterial; what matters is the shape of the row.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>triple</th>
+<th>display of the first element</th>
+<th>moduli on $(x,y,z)$</th>
+<th>equal?</th>
+<th>independent?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$h_x=\tfrac{i}{2}(E_y-E_z)$</td>
+<td>$\operatorname{diag}(0,0,-i,i)$</td>
+<td>$0,\ 1,\ 1$</td>
+<td>no: axis $x$ is a pivot</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$K_x=\tfrac{i}{3}(2E_x-E_y-E_z)$</td>
+<td>$\operatorname{diag}(0,-\tfrac{4i}{3},\tfrac{2i}{3},\tfrac{2i}{3})$</td>
+<td>$\tfrac43,\ \tfrac23,\ \tfrac23$</td>
+<td>no: $2:1:1$</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$u_x=\tfrac{i}{4}(E_t+3E_x-E_y-E_z)$</td>
+<td>$\operatorname{diag}(0,-i,i,i)$</td>
+<td>$1,\ 1,\ 1$</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>$H_\omega=h_x-\omega h_y$ (complex)</td>
+<td>$\operatorname{diag}(0,e^{i\pi/6},-i,e^{5i\pi/6})$</td>
+<td>$1,\ 1,\ 1$</td>
+<td>yes</td>
+<td>not real</td>
+</tr>
+</tbody>
+</table></div>
+<p>The fourth row is the complex Fourier mode of <em>Way out 3</em>, included so that the table is honest: equal weights are attainable in $\mathfrak{su}(3)$ after complexification, and what is lost there is reality, not symmetry. Every row is real except that one, and the last column is therefore the one that has to be read carefully.</p>
+<p>The $h$ triple pivots on one axis, exactly as the printed $H_1,H_2$ do; the $K$ triple splits $2:1:1$, which is the same asymmetry in a different suit. Only the third row is real, equal-weight and independent simultaneously. That is the precise content of "axis-free" in this article: not that the symbol names no axis — $u_x$ names $x$ as plainly as $E_x$ does — but that the three elements are permuted by $P$ and each one measures the three axes with equal moduli.</p>
+<p><strong>Why the third row exists only in $\mathfrak u(3)$.</strong> The arithmetic was done above: in the diagonal part, an element is $i\sum_a\alpha_aE_a$ with $\sum_a\alpha_a=0$, its axis entries are $i(\mu-2\alpha_a)$ once a central piece $\mu\,iP_V$ is split off, and equal moduli mean $\mu-2\alpha_a=\pm r$. Inside $\mathfrak{su}(3)$ with <strong>real</strong> $\alpha_a$ one has $\mu=0$ and the three numbers $\mu-2\alpha_a$ real and summing to zero, so equal moduli force $r=0$: three real numbers of equal modulus cannot sum to zero. (That is why the Fourier row above needs complex coefficients: a clock sums to zero with equal moduli, a real triple never does.) Freeing $\mu$ from zero is exactly what tracelessness forbids, and it is exactly what the extra dimension provides. The real equation that has no solution in $\mathfrak{su}(3)$ has four lines of real solutions in $\mathfrak u(3)$:</p>
+<p>$$
+\mu=0:\ \text{none};\qquad
+\mu=\tfrac r3:\ (1,1,1),\ (1,-1,-1),\ (-1,1,-1),\ (-1,-1,1)\ \text{on }(\mu-2\alpha_x,\dots).
+$$</p>
+<p><strong>So what is added is one dimension, and it is spelled $\mathrm{u}(1)$.</strong></p>
+<h3 id="the-math741-factor-element-by-element">The $\mathrm{u}(1)$ factor, element by element</h3>
+<p><strong>The algebra.</strong> $\mathfrak u(1)$ is the Lie algebra of the circle group $\mathrm U(1)$: the real line with the bracket zero, written $\{i\theta:\theta\in\mathbb R\}$ when the circle is realised as unit complex numbers. Here the copy that appears is</p>
+<p>$$
+\mathbb R\,iP_V,\qquad iP_V=i\operatorname{diag}(0,1,1,1)=\tfrac{i}{4}\bigl(3E_t+E_x+E_y+E_z\bigr),
+$$</p>
+<p>and the isomorphism is $i\theta\mapsto\theta\,iP_V$. Note what kind of matrix this is: not a scalar. It is $i\theta$ on the vector part and $0$ on the unit, so it is a scalar <em>on $B_V$</em> and a zero <em>on $\mathbb C e_t$</em>, which is exactly why it survives the condition $Xe_t=0$ that defines the corner while $i\theta\mathrm I_4$ does not.</p>
+<p><strong>Its trace, and why it is not in $\mathfrak{su}(3)$.</strong> $\operatorname{tr}iP_V=3i$. Tracelessness is the single condition it violates, and the $3$ is $\dim_{\mathbb C}B_V$: the same number that appears in $u_x+u_y+u_z=iP_V$. So the identity of the new direction is</p>
+<p>$$
+\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathbb R\,iP_V,\qquad 9=8+1,
+$$</p>
+<p>a direct sum of Lie algebras, verified: $iP_V$ commutes with all eight generators and with itself.</p>
+<p><strong>Its geometry on the carrier.</strong> $\exp(\theta\,iP_V)=\operatorname{diag}(1,e^{i\theta},e^{i\theta},e^{i\theta})$. The unit is untouched and the whole vector part receives one common phase. On the projective space $\mathbb P(B_V)$ this is the identity: it changes the length and the phase of the vector part, not its direction. That is the geometric meaning of the $\mathrm{u}(1)$ here — <strong>the common phase of the vector part</strong> — and it is the one direction that the traceless condition deletes, since a common phase on a three-dimensional space has trace $3i\theta$ and no traceless element can produce it.</p>
+<p><strong>Its determinant, and the factor three.</strong> $\det\operatorname{diag}(1,G)=\det G$, so on the circle</p>
+<p>$$
+\det\exp(\theta\,iP_V)=e^{3i\theta}.
+$$</p>
+<p>Three, not one: the circle covers the determinant circle with degree three. Hence the generator normalised to give determinant $e^{i\theta}$ is $\tfrac13iP_V$, and the period of $\exp$ modulo $\mathrm{SU}(3)$ is $2\pi/3$ rather than $2\pi$:</p>
+<p>$$
+\exp\bigl(\tfrac{2\pi i}{3}P_V\bigr)=\operatorname{diag}(1,\omega,\omega,\omega)\in\mathrm{SU}(3),
+\qquad \omega=e^{2\pi i/3},
+$$</p>
+<p>verified, with determinant $\omega^{3}=1$. This single computation says the two factors are not independent.</p>
+<p><strong>The group is an extension, not a product.</strong> The determinant $\mathrm{U}(3)\to\mathrm{U}(1)$ is onto with kernel $\mathrm{SU}(3)$, and the circle $\mathrm{U}(1)\cdot\mathrm I_3$ meets $\mathrm{SU}(3)$ in the scalars of determinant one, which are $\{1,\omega,\omega^{2}\}\cdot\mathrm I_3\cong\mathbb Z_3$. So</p>
+<p>$$
+\mathrm{U}(3)\cong\frac{\mathrm{SU}(3)\times\mathrm{U}(1)}{\mathbb Z_3},
+\qquad
+\pi_1\bigl(\mathrm{U}(3)\bigr)=\mathbb Z,\qquad
+\pi_1\bigl(\mathrm{SU}(3)\bigr)=0 .
+$$</p>
+<p>The Lie algebra splits as a direct sum; the group only splits up to that $\mathbb Z_3$, and all of the fundamental group sits in the new circle. Two consequences worth stating. First, the direct sum $\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathfrak u(1)$ is a statement about tangent spaces at the identity and does not upgrade to a product of groups. Second, a representation of $\mathrm{U}(3)$ is a representation of $\mathrm{SU}(3)$ together with a $\mathrm{U}(1)$ charge constrained by that $\mathbb Z_3$: since $\det\exp(\theta\,iP_V)=e^{3i\theta}$, every one-dimensional representation of $\mathrm{U}(3)$ is a power of the determinant and therefore has charge a multiple of three in the normalisation where $iP_V$ has charge one. No $\mathrm{U}(3)$ representation carries a $\mathrm{SU}(3)$ singlet of charge one.</p>
+<p><strong>Why it is called a singlet direction.</strong> Under the decomposition above, $iP_V$ is fixed by every element of $\mathrm{SU}(3)$: it is central, so it carries the trivial representation of the traceless part and the defining representation of the circle. In the language of the corpus's other notes, it is a $\mathrm{SU}(3)$ singlet with a $\mathrm{U}(1)$ charge. That is a statement about the block structure of the corner and nothing more; see the boundary remarks below.</p>
+<h3 id="two-corrections-to-the-circulating-draft">Two corrections to the circulating draft</h3>
+<p><strong>The four-word form.</strong> The draft gives</p>
+<p>$$
+u_a=\tfrac{i}{2}\bigl(L_{e_t}R_{e_t}+L_{e_a}R_{e_a}-L_{e_b}R_{e_b}-L_{e_c}R_{e_c}\bigr)\qquad\text{(wrong)}
+$$</p>
+<p>and justifies it by "every word $L_{e_\mu}R_{e_\nu}$ has non-zero trace on the unit, specifically $\pm1$ in the $(t,t)$ slot". Both halves are wrong. Only $L_{e_t}R_{e_t}$ has nonzero trace, namely $4$; the other fifteen words are traceless, verified exactly, and the diagonal words $E_a$ in particular have trace $0$ because their display is $(-1,-1,1,1)$. The correct form is</p>
+<p>$$
+u_a=\tfrac{i}{4}\bigl(E_t+3E_a-E_b-E_c\bigr),
+\qquad\text{coefficients}\ \tfrac{i}{4},\tfrac{3i}{4},-\tfrac{i}{4},-\tfrac{i}{4},
+$$</p>
+<p>which is what $i\operatorname{diag}(0,-1,1,1)$ requires: on $e_t$, $\tfrac{i}{4}(1-3+1+1)=0$; on $e_a$, $\tfrac{i}{4}(1-3-1-1)=-i$; on $e_b$, $\tfrac{i}{4}(1+3+1-1)=+i$. The draft's version equals $u_a+iE_t$, so it is not even in the corner: it gives $ie_t$ where the corner demands $0$.</p>
+<p><strong>Why four words is forced, not chosen.</strong> A diagonal element of the corner lies in the space spanned by the four diagonal words $E_t,E_x,E_y,E_z$, and those four are a basis of the diagonal $4$-space; since the sixteen words are a basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$ and together with the twelve off-diagonal words they already span everything, the coefficients of a diagonal element on the off-diagonal words are all zero. Hence the length of a diagonal element is the number of nonzero coefficients among exactly four numbers, and for $u_a$ the solution $(1,3,-1,-1)$ has none vanishing. So $\ell(u_a)=4$ is a theorem about the word basis, not a convention: within this basis the equal-weight direction cannot be written in three words, and no cleverness in choosing words helps.</p>
+<p><strong>What the extra word buys.</strong> The fourth word is not waste. It is the price of deleting the $(t,t)$ entry, and that entry is what every diagonal word carries: $E_t$ contributes $4$, $E_a$ contributes $0$. Balancing $E_t$ against the three $E_a$, with signs that make one axis negative and two positive, uses all four at once, with coefficients $\tfrac14,\tfrac34,-\tfrac14,-\tfrac14$. Three of them cannot do the job: the unit entry has to be brought to zero, and $E_t$ is the only diagonal word with a nonzero trace, so the coefficient of $E_t$, the cancellation and the one negative sign have to be arranged simultaneously.</p>
+<h3 id="what-the-lift-does-and-does-not-do">What the lift does, and does not, do</h3>
+<p><strong>It does.</strong> It supplies one dimension, exactly one, and that dimension is both the missing third row of the count and the missing trace. It makes the three diagonal generators independent while keeping equal weights, with real coefficients. It splits $\mathfrak u(3)$ into three orthogonal families of three, permuted by $P$ in three free orbits, with the equal-weight family summing to the centre. In that limited and precise sense the slogan holds: among <strong>real</strong> bases, $\mathfrak u(3)$ has one on which $\mathbb Z_3$ acts by permutations with no pivot and no unequal weights, and $\mathfrak{su}(3)$ has none — its only equal-weight objects being the complex clocks of <em>Way out 3</em> and a dependent triple.</p>
+<p><strong>It does not.</strong> It does not restore a symmetry that was broken, because $P$ is an element of $\mathrm{SU}(3)$ with $\det P=1$ and already cycles $h_x\to h_y\to h_z$; what was missing was independence and equal weights in a basis, not the symmetry. It does not change the dynamics, because $iP_V$ is central, appears in no structure constant, and is not a derivation: every inner derivation $L_{\tilde Q}-R_{\tilde Q}$ is traceless while $\operatorname{tr}iP_V=3i$. It does not put $\mathrm{U}(3)$ inside $\mathrm{SU}(4)$, since $\det\operatorname{diag}(1,G)=\det G$ is free. And it does not soften the corpus's ceiling, which concerns the compact algebra of dimension four: a central phase on $B_V$ is an operator on the carrier and not an element of $\mathbb B$.</p>
+<p><strong>The one-sentence summary.</strong> Tracelessness removes the diagonal direction of dimension one whose trace is $3i$; that direction is the common phase of the vector part; and its removal is what makes the third diagonal orbit dependent and its members unequal, so that removing the condition is what lets the third orbit become a basis with equal weights — at the price of four Conway words per generator.</p>
+<h2 id="verification">Verification</h2>
+<p>All statements below were checked numerically on the sixteen Conway words in the coefficient basis, with $M(e_k)=-i\sigma_k$ for the matrix display and the products of the frame $e_xe_y=e_z$ and so on.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the eight generators have real dimension $8$</td>
+<td>rank $8$</td>
+</tr>
+<tr>
+<td>anti-Hermitian, $X+X^{\dagger}=0$</td>
+<td>$9.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>traceless</td>
+<td>$9.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>kill $e_t$ and preserve $B_V$</td>
+<td>$2.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>closed under the commutator</td>
+<td>$<10^{-15}$</td>
+</tr>
+<tr>
+<td>the coefficient criterion $c_{\mu\nu}=-s_\mu s_\nu\overline{c_{\mu\nu}}$</td>
+<td>holds on all $8\times16$ slots</td>
+</tr>
+<tr>
+<td>Killing form of the eight-dimensional algebra</td>
+<td>inertia $(0,8)$, negative definite</td>
+</tr>
+<tr>
+<td>rank of the algebra</td>
+<td>$2$; centre $0$</td>
+</tr>
+<tr>
+<td>Cartan involution $X\mapsto-X^{\mathsf T}$</td>
+<td>splits $3+5$, fixed part real antisymmetric, anti-fixed part $i$ times real symmetric</td>
+</tr>
+<tr>
+<td>twenty-four unit quaternions give $\mathrm{Ad}_{\tilde u}\in\mathrm{SU}(3)$</td>
+<td>$24$ of $24$, all of the form $\operatorname{diag}(1,R)$, $R\in\mathrm{U}(3)$, $\det R=1$</td>
+</tr>
+<tr>
+<td>order-three element: $P^{3}=\mathrm{I}_4$, $\mathrm{ad}_{\vec e_x}\mapsto\mathrm{ad}_{\vec e_y}\mapsto\mathrm{ad}_{\vec e_z}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>length: $\ell=2$ on all eight, $\ell=4$ on a generic element</td>
+<td>$100$ of $100$ random draws give $4$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}M=4c_{tt}$</td>
+<td>$3.8\times10^{-15}$ over random operators</td>
+</tr>
+<tr>
+<td>$P$ cycles the two off-diagonal families: $A_x\mapsto A_y\mapsto A_z$, $S_{xy}\mapsto S_{yz}\mapsto S_{zx}$</td>
+<td>$4.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>only $L_{e_t}R_{e_t}$ among the sixteen words has nonzero trace</td>
+<td>trace $4$; the other fifteen are $0$</td>
+</tr>
+<tr>
+<td>$iP_V=i\operatorname{diag}(0,1,1,1)=\tfrac{i}{4}(3E_t+E_x+E_y+E_z)$, trace $3i$, length $4$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$iP_V$ central in $\mathfrak u(3)$; $\mathfrak u(3)=\mathfrak{su}(3)\oplus\mathbb R\,iP_V$</td>
+<td>$\lVert[iP_V,X]\rVert<10^{-15}$; $9=8+1$</td>
+</tr>
+<tr>
+<td>$iP_V$ is not an inner derivation</td>
+<td>every $L_{\tilde Q}-R_{\tilde Q}$ traceless, $\operatorname{tr}iP_V=3i$</td>
+</tr>
+<tr>
+<td>$u_a=\tfrac{i}{4}(E_t+3E_a-E_b-E_c)=K_a+\tfrac13iP_V$, length $4$</td>
+<td>coefficients $\tfrac14,\tfrac34,-\tfrac14,-\tfrac14$</td>
+</tr>
+<tr>
+<td>the draft's $\tfrac{i}{2}(E_t+E_a-E_b-E_c)$</td>
+<td>equals $u_a+iE_t$, outside the corner</td>
+</tr>
+<tr>
+<td>$u_x+u_y+u_z=iP_V$; axis-block determinant</td>
+<td>$2\times10^{-16}$; $4$</td>
+</tr>
+<tr>
+<td>equal-weight diagonal lines in $\mathfrak u(3)$</td>
+<td>exactly $4$; $\mu-2\alpha_a=\pm r$</td>
+</tr>
+<tr>
+<td>$\exp(\theta\,iP_V)=\operatorname{diag}(1,e^{i\theta},e^{i\theta},e^{i\theta})$, $\det=e^{3i\theta}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\exp(\tfrac{2\pi i}{3}P_V)=\operatorname{diag}(1,\omega,\omega,\omega)$, determinant $1$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>gram of $\{A,S,u\}$: $8\mathrm I_3\oplus2\mathrm I_3\oplus(4\mathrm I_3-J_3)$</td>
+<td>exact; families orthogonal</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\vec e_x}=2J^{\mathrm{tot}}_x$ with $J^{\mathrm{tot}}_x=\tfrac12(L-R)$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>every bracket of §<em>The Eight Generators, in $L$ and $R$ Only</em>, with the signs as stated</td>
+<td>exact to $10^{-12}$</td>
+</tr>
+<tr>
+<td>$\exp\bigl(\tfrac{\theta}{2}\mathrm{ad}_{\vec e_x}\bigr)$ at $\theta=\tfrac{\pi}{2},\pi$</td>
+<td>rotation by $\theta$ on $(\vec e_y,\vec e_z)$, unit and axis fixed</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(3)\cap L(\mathbb{B})=\mathfrak{su}(3)\cap R(\mathbb{B})=0$; $\cap(L+R)=3$; $\cap\ker(\sigma-1)=5$; $\cap\ker(\sigma+1)=3$</td>
+<td>as stated</td>
+</tr>
+<tr>
+<td>$iP$ is $\mathfrak{u}(3)$ and not $\mathfrak{su}(3)$: length $4$, trace $3i$, coefficients $\operatorname{diag}(\tfrac34,\tfrac14,\tfrac14,\tfrac14)$</td>
+<td>as stated</td>
+</tr>
+<tr>
+<td>$E_a^{2}=\mathrm{I}$, $E_xE_y=-E_z$, $PE_aP^{-1}=E_{a+1}$</td>
+<td>$5\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$PH_1P^{-1}=-h_x$, $PH_2P^{-1}=h_z$</td>
+<td>$4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$G_{yx}=-h_z$, $G_{zy}=-h_x$; $H_B=\tfrac{\sqrt3}{2}K_z$</td>
+<td>$0$; $2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$K_a=\tfrac23(h_c-h_b)$, $K_x+K_y+K_z=0$, $\lVert K_a\rVert^{2}_{\mathrm{HS}}=\tfrac83$, $\langle K_a,K_b\rangle_{\mathrm{HS}}=-\tfrac43$</td>
+<td>$2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$h$ frame: $\lVert h_a\rVert^{2}_{\mathrm{HS}}=2$, $\langle h_a,h_b\rangle_{\mathrm{HS}}=-1$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$P$ on the Cartan: characteristic polynomial $\lambda^{2}+\lambda+1$, eigenvalues $\omega,\omega^{2}$</td>
+<td>$\lvert\lambda\rvert=1$ to $10^{-12}$</td>
+</tr>
+<tr>
+<td>$PH_\omega P^{-1}=\omega H_\omega$, $PH_{\bar\omega}P^{-1}=\omega^{2}H_{\bar\omega}$</td>
+<td>$9\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$H_\omega$: spectrum $e^{i\pi/6}\{1,\omega,\omega^{2}\}$, $\langle H_\omega,H_{\bar\omega}\rangle_{\mathrm{HS}}=0$, $\lVert H_\omega\rVert^{2}_{\mathrm{HS}}=3$</td>
+<td>$7\times10^{-16}$; $0$; exact</td>
+</tr>
+<tr>
+<td>$[A_a,K_b]=0$ iff $a=b$, else $\pm4S_{\hat a}$; $[S_{ab},K_c]\in\{0,\pm A_{\hat c}\}$</td>
+<td>exact to $10^{-12}$</td>
+</tr>
+<tr>
+<td>$[A_a,h_a]=-4S_{\hat a}$, $[A_a,h_b]=+2S_{\hat a}$ $(b\ne a)$; $[S_{ab},h_c]\in\{-\tfrac12,1\}A_{\hat c}$</td>
+<td>exact to $10^{-12}$</td>
+</tr>
+<tr>
+<td>$[A_a,H_\omega]=2\sqrt3\zeta_aS_{\hat a}$, $[S_{ab},H_\omega]=-\tfrac{\sqrt3}{2}\zeta_{\hat c}A_{\hat c}$</td>
+<td>$10^{-15}$</td>
+</tr>
+<tr>
+<td>$\sum_ah_a^{2}=-2P_V$, $\sum_aK_a^{2}=-\tfrac83P_V$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>diagonal corner elements: two words iff $\pm h_a$; $200$ random draws, none of two words</td>
+<td>as stated</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis of $\mathbb{B}$, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$B_V$</td>
+<td>$\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)=e_t^{\perp}$, the vector part</td>
+</tr>
+<tr>
+<td>$L_a,R_b$</td>
+<td>the left and right multiplications, $L_a\tilde X=a\tilde X$, $R_b\tilde X=\tilde Xb$</td>
+</tr>
+<tr>
+<td>$a[\,]b$</td>
+<td>the Conway word $L_aR_b$</td>
+</tr>
+<tr>
+<td>$c(M)$, $\ell(M)$</td>
+<td>the coefficient array of $M$ in the sixteen words, and its rank, the length</td>
+</tr>
+<tr>
+<td>$\mathrm{Sc}$, $\langle\cdot,\cdot\rangle_{*}$</td>
+<td>the scalar part, and the Hermitian form $\mathrm{Sc}(XY^{*})$ of Gram $\mathrm{I}_4$</td>
+</tr>
+<tr>
+<td>$\dagger$</td>
+<td>the adjoint for $\langle\cdot,\cdot\rangle_{*}$, the conjugate transpose in the coefficient basis</td>
+</tr>
+<tr>
+<td>$s_\mu$</td>
+<td>the sign vector $(+1,-1,-1,-1)$ of the coefficient conjugation on the basis</td>
+</tr>
+<tr>
+<td>$\sigma$</td>
+<td>the side-swap $L_aR_b\mapsto L_bR_a$, an anti-automorphism and an involution</td>
+</tr>
+<tr>
+<td>$J_k,J'_k$</td>
+<td>$\tfrac12L_{\vec e_k}$ and $\tfrac12R_{\vec e_k}$, each spin $\tfrac12$; $J^{\mathrm{tot}}_k=J_k-J'_k$ is spin one</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde Q}$</td>
+<td>$L_{\tilde Q}-R_{\tilde Q}$, the inner derivation of $\tilde Q$</td>
+</tr>
+<tr>
+<td>$h_a$</td>
+<td>the cyclic diagonal $\tfrac{i}{2}(L_{\vec e_b}R_{\vec e_b}-L_{\vec e_c}R_{\vec e_c})$, $h_x+h_y+h_z=0$</td>
+</tr>
+<tr>
+<td>$E_a$</td>
+<td>the axis involution $L_{\vec e_a}R_{\vec e_a}$, of display $\operatorname{diag}(-1,-1,1,1)$ and its cyclic images</td>
+</tr>
+<tr>
+<td>$\mathfrak h$</td>
+<td>the Cartan, $\{i\sum_a\alpha_aE_a:\sum_a\alpha_a=0\}=\operatorname{span}\{h_a\}$</td>
+</tr>
+<tr>
+<td>$K_a$</td>
+<td>the symmetric diagonal $\tfrac{i}{3}(2E_a-E_b-E_c)=\tfrac23(h_c-h_b)$, $K_x+K_y+K_z=0$</td>
+</tr>
+<tr>
+<td>$\omega,\zeta$</td>
+<td>$e^{2\pi i/3}$ and the clock $(i\omega,i,i\omega^{2})$ on $(x,y,z)$</td>
+</tr>
+<tr>
+<td>$H_\omega,H_{\bar\omega}$</td>
+<td>$h_x-\omega h_y$ and $h_x-\omega^{2}h_y$, the two Fourier modes of the Cartan</td>
+</tr>
+<tr>
+<td>$P_V$</td>
+<td>the projector $\operatorname{diag}(0,1,1,1)$ onto $B_V$</td>
+</tr>
+<tr>
+<td>$iP_V$</td>
+<td>the central generator $i\operatorname{diag}(0,1,1,1)=\tfrac{i}{4}(3E_t+E_x+E_y+E_z)$ of the $\mathrm{u}(1)$ factor</td>
+</tr>
+<tr>
+<td>$u_a$</td>
+<td>the equal-weight diagonal $\tfrac{i}{4}(E_t+3E_a-E_b-E_c)=K_a+\tfrac13iP_V$, of length $4$</td>
+</tr>
+<tr>
+<td>$\mathfrak u(3)$</td>
+<td>$\mathfrak{su}(3)\oplus\mathbb R\,iP_V$, the anti-Hermitian corner without the trace condition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Endomorphisms of the Biquaternion Algebra</em>: the derivations are inner, $\operatorname{Der}_{\mathbb{C}}(\mathbb{B})\cong\mathbb{B}/\mathbb{C}e_t$, complex dimension three.</li>
+<li><em>Operators Acting on One Side</em>, <em>Operators Acting on Two Sides</em>: the two families, their laws, the generation theorem, the length.</li>
+<li><em>The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure</em>: $\mathbb{B}^{\mathrm e}\cong\operatorname{End}_{\mathbb{C}}(\mathbb{B})$, the Conway basis, the double centraliser.</li>
+<li><em>Operator Chirality on the Biquaternion Algebra</em>: the side-swap $\sigma$, the labels, the dimensions $4,4,7,16$.</li>
+<li><em>Adjoint Pair of $L$ and $R$ Operators</em>, <em>The Hermitian Pair of Operators Acting on One Side</em>: the four adjoints, and $\mathrm{Sd}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$.</li>
+<li><em>Introduction to the Operators of the Biquaternion Algebra</em>: the reflection theorem, $L_{\tilde Q}R_{\tilde Q^{-1}}|_V=-\rho_{\tilde Q}$.</li>
+<li><em>From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides</em>: $J$, $J'$, the Casimirs, the spins $0$ and $1$.</li>
+<li><em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>: the Gram matrices and the inertias $(8,0)$ and $(2,6)$.</li>
+<li><em>Classification of the Real Structures of the Operators of the Biquaternion Algebra</em>: the tables of Lie subalgebras of $\mathfrak{gl}(4,\mathbb{R})$ and $\mathfrak{gl}(2,\mathbb{H})$.</li>
+<li><em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</em>, <em>The Involution and the Hermitian Structure of $M_3(\mathbb{C})$</em>: the $1+3$ split, $\mathrm{U}(1)\times\mathrm{U}(3)$, and the element-level definition of $\mathrm{SU}(3)$.</li>
+<li><em>The Gluon: An Octet Inside the Carrier's Group</em>, <em>Why the Biquaternion Algebra Reaches $\mathrm{SU}(2)$ but Not $\mathrm{SU}(3)$</em>: the three obstructions and the ceiling.</li>
+<li><em>The Meaning of $\mathrm{U}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>, <em>Worked Cases for $\mathrm{U}(3)$ inside the Endomorphisms of the Biquaternion Algebra</em>: the widened corner, the $\mathrm{u}(1)$ factor, and the three-family basis in detail.</li>
+<li><code>SU2-migration</code>: the naming rule this note follows — the group keeps its name, and the sentence after the name says what it is in the algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

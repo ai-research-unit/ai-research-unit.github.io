@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Non Relativistic Non Quantum Approximation — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Non Relativistic Non Quantum Approximation, twenty-five articles. It gives the objects…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-non-relativistic-non-quantum-approximation"><strong>Internal Summary of the Biquaternion Non Relativistic Non Quantum Approximation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Non Relativistic Non Quantum Approximation</em>, twenty-five articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> It keeps the algebra and drops both $\hbar$ and $1/c$. What remains is classical mechanics, classical rotation, classical electromagnetism and classical thermodynamics, written in $\mathbb{B}$. It is the ground floor of the physics corpus, and every later category returns to it in a limit.</p>
+<p><strong>The two structural gains of the algebra at this level.</strong> The phase space is one quaternion, with the metric as the real part and the symplectic form as the imaginary part. The rotation is one rotor, with the angular velocity as $\tilde u^{\natural}d\tilde u/dr'_t$ and no Euler angles.</p>
+<p><strong>The five menu subsections.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generalities</td>
+<td>Lagrangian and Hamiltonian mechanics, the action principle, the symplectic form, the Poisson bracket, rigid bodies, Hannay, Pancharatnam, Jones matrices</td>
+</tr>
+<tr>
+<td>Effects without intrinsic magnetism</td>
+<td>the free particle, the oscillator, central forces, Kepler, Coulomb and $SO(4)$, the Foucault pendulum</td>
+</tr>
+<tr>
+<td>Effects with intrinsic magnetism</td>
+<td>Larmor precession, Einstein–de Haas and Barnett, the classical origin of $g=2$</td>
+</tr>
+<tr>
+<td>Effects with higher multipole origins</td>
+<td>the multipole expansion, the vibrating ellipsoid, the tower the algebra cannot index</td>
+</tr>
+<tr>
+<td>Focus on informational aspects</td>
+<td>coarse-graining entropy, Fisher information, the Lyapunov exponent, Landauer, Maxwell's demon</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-sentence version.</strong> Classical mechanics is the real and imaginary parts of one quaternionic product, and classical rotation is a congruence by a rotor.</p>
+<h2 id="1-generalities">1. Generalities</h2>
+<p><strong>The phase space is one quaternion.</strong></p>
+<p>$$
+\vec Z=\vec q+i\vec p\in\mathbb{B},
+$$</p>
+<p>$$
+\boxed{\;\mathrm{Sc}\bigl(\vec Z^{*}\vec W\bigr)=\bigl(\vec q\!\cdot\!\vec r+\vec p\!\cdot\!\vec s\bigr)+i\bigl(\vec q\!\cdot\!\vec s-\vec p\!\cdot\!\vec r\bigr)\;}
+$$</p>
+<p>$$
+g(\vec Z,\vec W)=\mathrm{Re}\,\mathrm{Sc}\bigl(\vec Z^{*}\vec W\bigr)=\vec q\!\cdot\!\vec r+\vec p\!\cdot\!\vec s,
+\qquad
+\omega(\vec Z,\vec W)=\mathrm{Im}\,\mathrm{Sc}\bigl(\vec Z^{*}\vec W\bigr)=\vec q\!\cdot\!\vec s-\vec p\!\cdot\!\vec r .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The metric and the symplectic form are the real and imaginary parts of one Hermitian product, and the complex structure that relates them is multiplication by $i$:</p>
+<p>$$
+g(JQ_x,JQ_y)=g(Q_x,Q_y),\qquad \omega(Q_x,Q_y)=g(JQ_x,Q_y),\qquad \omega=\sum_\eta dq_\eta\wedge dp_\eta .
+$$</p>
+<p>This is the Kähler triple of the phase space, and it is supplied by the algebra and not added to it.</p>
+<p><strong>The Poisson bracket and the commutator.</strong></p>
+<p>$$
+\{f,g\}=\sum_\eta\Bigl(\frac{\partial f}{\partial q_\eta}\frac{\partial g}{\partial p_\eta}-\frac{\partial f}{\partial p_\eta}\frac{\partial g}{\partial q_\eta}\Bigr),
+\qquad
+\boxed{\;\{f,g\}\ \frac{\longleftrightarrow}{i\hbar}\ [f,g]\;}
+$$</p>
+<p><strong>The non-trivial claim, and the corpus states it as a warning.</strong> The two sides are objects of different kinds: one is a number and the other an operator, and the correspondence is a <em>similarity</em>, not an identity. The three checks</p>
+<p>$$
+\{q_i,q_j\}=0,\quad \{p_i,p_j\}=0,\quad \{q_i,p_j\}=\delta_{ij}
+\longleftrightarrow
+\frac{1}{i\hbar}[q_i,q_j]=0,\quad \frac{1}{i\hbar}[p_i,p_j]=0,\quad \frac{1}{i\hbar}[q_i,p_j]=\delta_{ij}
+$$</p>
+<p>show the parallel, and the higher brackets $\{q,p^{2}\}=2p$, $\{q^{2},p^{2}\}=4qp$, $\{q^{3},p^{3}\}=9q^{2}p^{2}$ show where the parallel stops: the quantum counterparts carry ordering corrections.</p>
+<p><strong>The action principle and its non-quantum content.</strong> The variation of the action gives the Euler–Lagrange equations; the polar form of the field gives the Hamilton–Jacobi equation. The corpus states that the two routes agree and that the classical limit is the statement $\delta S=0$ read as a condition on the phase.</p>
+<p><strong>Rigid bodies, and the angular velocity as a rotor derivative.</strong></p>
+<p>$$
+\tilde u=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u\Bigr)
+=\cos\tfrac{\theta_{\mathrm{axr}}}{2}e_t+\sin\tfrac{\theta_{\mathrm{axr}}}{2}\vec u,
+$$</p>
+<p>$$
+\boxed{\;\vec\omega_b=+2c\,\tilde u^{\natural}\frac{d\tilde u}{dr'_t},\qquad
+\vec\omega_s=+2c\,\frac{d\tilde u}{dr'_t}\tilde u^{\natural}\;}
+$$</p>
+<p>$$
+c\,I\frac{d\vec\omega}{dr'_t}+\vec\omega\times I\vec\omega=\vec\tau,
+\qquad
+c\,I_1\dot\omega_1=(I_2-I_3)\omega_2\omega_3+\tau_1\quad\text{and cyclic.}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The angular velocity is the logarithmic derivative of the rotor, and the Euler equations are the statement that the derivative of the rotor has a vanishing scalar part. The body frame and the space frame are the two sides of one derivative: $d\tilde u=\tilde u\,\vec\omega_b\,dr'_t/(2c)=\vec\omega_s\,\tilde u\,dr'_t/(2c)$.</p>
+<p><strong>Hannay's angles.</strong></p>
+<p>$$
+\boxed{\;\delta\theta_k=-\frac{\partial}{\partial I_k}\oint\sum_\mu\mathcal A_\mu(R)\,dR_\mu\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The classical geometric phase is the derivative of the adiabatic connection with respect to the action, and the quantum Berry phase is the same connection evaluated on the eigenstate. The two phases are one-form integrals of one object, read at two levels.</p>
+<p><strong>Pancharatnam and Jones.</strong> The polarisation sphere is the Bloch sphere; the Pancharatnam phase is the holonomy of the connection on it. A Jones matrix decomposes into a diattenuator and a retarder:</p>
+<p>$$
+J=\text{(positive Hermitian)}\cdot\text{(unitary)},
+$$</p>
+<p>which is the polar decomposition of the matrix, and in the algebra it is the Cartan decomposition of a general element. The corpus states that a polariser is an idempotent and that a retarder is a rotor.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-lagrangian-and-hamiltonian-mechanics.md</code>, <code>articles_physics/the-symplectic-form-and-the-biquaternion-norm-cone.md</code>, <code>articles_physics/similitudes-between-the-poisson-bracket-and-the-quantum-commutator.md</code>, <code>articles_physics/rigid-body-dynamics-and-the-biquaternion-rotor.md</code>, <code>articles_physics/hannays-angles-and-the-classical-geometric-phase-in-biquaternionic-form.md</code>, <code>articles_physics/pancharatnams-phase-and-the-polarization-sphere-in-biquaternionic-form.md</code>, <code>articles_physics/the-polar-decomposition-of-a-jones-matrix-diattenuation-retardance-and-polarizers.md</code>.</p>
+<h2 id="2-effects-without-intrinsic-magnetism">2. Effects Without Intrinsic Magnetism</h2>
+<p><strong>The free particle and inertial frames.</strong> A free particle moves on a straight line in $\mathbb{B}_\Phi$, and a change of inertial frame is a boost congruence. The non-trivial statement is that the straightness is preserved by the congruence because the congruence preserves the norm, so "inertial" and "norm-preserving" are one word.</p>
+<p><strong>The oscillator and the two-sector structure.</strong> The harmonic oscillator is</p>
+<p>$$
+\ddot q=-\omega^{2}q,
+$$</p>
+<p>and its phase-space orbit is a circle in the plane $(q,p)$. The two-sector structure enters when the complex combination $z=q+ip$ is read: the rotation of $z$ by the phase is the time evolution, and the energy is the modulus squared. The oscillator is the simplest system in which the two sectors exchange roles under a quarter turn.</p>
+<p><strong>The central-scalar limit.</strong> A central potential in the centre gives a radial equation with the centrifugal term; the algebra contributes nothing beyond the centre, and the corpus states this as a <em>limitation</em>: the centre is a field, not a module, so a central problem that needs angular structure leaves the centre.</p>
+<p><strong>Kepler and Coulomb.</strong> The Kepler orbit is an ellipse in a plane, and the plane is a two-dimensional subalgebra. The Coulomb problem has the hidden symmetry</p>
+<p>$$
+\mathfrak{so}(4)\cong\mathfrak{su}(2)\oplus\mathfrak{su}(2),
+$$</p>
+<p>and the Runge–Lenz vector is the generator of the second $\mathfrak{su}(2)$. The non-trivial claim is that the two $\mathfrak{su}(2)$ factors are the self-dual and anti-self-dual halves of the bivector plane, so the hidden symmetry is the self-dual split of the previous category.</p>
+<p><strong>The Foucault pendulum.</strong> The precession is the holonomy of the parallel transport of the swing plane on the sphere. The rate is $\Omega\sin\varphi$, and the algebraic statement is that the transport is a rotor congruence around the vertical, so the holonomy is the solid angle enclosed by the path of the swing direction.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.md</code>, <code>articles_physics/the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form.md</code>, <code>articles_physics/the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form.md</code>, <code>articles_physics/central-forces-and-the-classical-kepler-problem-in-biquaternionic-form.md</code>, <code>articles_physics/the-classical-coulomb-problem-and-its-hidden-so-4-symmetry-in-biquaternionic-form.md</code>, <code>articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.md</code>.</p>
+<h2 id="3-effects-with-intrinsic-magnetism">3. Effects With Intrinsic Magnetism</h2>
+<p><strong>Larmor precession.</strong> The magnetic moment is $\vec\mu=\gamma\vec S$, and the torque equation $\dot{\vec S}=\vec\mu\times\vec B$ gives the precession at $\omega_L=\gamma B$. In the algebra the precession is the congruence</p>
+<p>$$
+\tilde S_\Psi(r'_t)=\tilde u(r'_t)\,\tilde S_\Psi(0)\,\tilde u(r'_t)^{*},\qquad
+\tilde u=\exp\Bigl(\tfrac{\omega_L}{2}r'_t\vec u_B\Bigr).
+$$</p>
+<p><strong>Einstein–de Haas and Barnett.</strong> A change of the magnetisation rotates the body, and a rotation magnetises it. Both are the same statement: the total angular momentum is conserved when the spin part is converted into the orbital part, and the conversion is a rotation of the rotor.</p>
+<p><strong>The classical origin of $g=2$.</strong></p>
+<p>$$
+\vec\mu=\gamma\vec S=g\frac{ϙ}{2m}\vec S,\qquad
+\rho_c(\vec r)=\frac{ϙ}{m}\rho_m(\vec r),
+$$</p>
+<p>$$
+\vec\mu=\tfrac12\int\rho_c(\vec r)\,\vec r\times(\vec\omega\times\vec r)\,d^{3}r=\tfrac12\mathcal M\vec\omega,\qquad
+\vec L=I\vec\omega,
+$$</p>
+<p>$$
+\boxed{\;\gamma_{\mathrm{conv}}=\frac{ϙ}{2m},\quad g=1\;}
+\qquad
+\boxed{\;g=\frac{m}{ϙ}\frac{\mathcal M_{zz}}{I_{zz}}=2\quad\Longleftrightarrow\quad \mathcal M_{zz}=2\frac{ϙ}{m}I_{zz}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The value $g=1$ follows from a uniform charge-to-mass ratio. The value $g=2$ follows when the charge is concentrated at the rim, $\mathcal M_{zz}=2(\varrho/m)I_{zz}$, as for a thin ring. The corpus therefore states that $g=2$ is classical <em>geometry</em> and not a quantum accident, and it warns that the identification of the two densities is an assumption.</p>
+<p><strong>Source.</strong> <code>articles_physics/larmor-precession-and-the-classical-magnetic-moment-in-biquaternionic-form.md</code>, <code>articles_physics/the-einstein-de-haas-and-barnett-effects-in-biquaternionic-form.md</code>, <code>articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.md</code>.</p>
+<h2 id="4-effects-with-higher-multipole-origins">4. Effects With Higher Multipole Origins</h2>
+<p><strong>The multipole expansion.</strong> The potential of a charge distribution is</p>
+<p>$$
+\Xi=\frac{1}{4\pi\epsilon_0}\Bigl[\frac{ϙ}{r}+\frac{\vec p\!\cdot\!\vec u}{r^{2}}+\frac{1}{2r^{3}}\mathcal Q_{ij}\vec u_i\vec u_j+\cdots\Bigr],
+$$</p>
+<p>and the terms are the symmetric traceless tensors of rank $0,1,2,\dots$.</p>
+<p><strong>The vibrating ellipsoid.</strong> A vibrating drop has quadrupole and higher oscillations; the frequencies are the eigenvalues of the elastic operator on the symmetric traceless tensors. The corpus writes the mode expansion in the algebra and finds that only the $l=0$ and $l=1$ modes are indexed by subspaces of $\mathbb{B}$.</p>
+<p><strong>The tower the algebra cannot index.</strong></p>
+<p><strong>The non-trivial claim.</strong> $\mathbb{B}=\mathbb{B}_C\oplus\mathbb{B}_V$ has a part of dimension $2$ and a part of dimension $6$; the irreducible tensors of rank $l$ have dimension $2l+1$, and those are $1,3,5,7,\dots$. Only $l=0$ and $l=1$ match. Every higher multipole is a <em>derived</em> object (a symmetric traceless product), not a subspace. An agent that assumes otherwise will look for a rank-2 subspace and not find one.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-multipole-expansion-and-the-quadrupole-interaction-in-biquaternionic-form.md</code>, <code>articles_physics/the-vibrating-ellipsoid-and-higher-multipole-oscillations-in-biquaternionic-form.md</code>, <code>articles_physics/multipole-moments-at-every-order-the-biquaternion-algebra-cannot-index-the-tower.md</code>.</p>
+<h2 id="5-informational-aspects">5. Informational Aspects</h2>
+<p><strong>The entropy functional.</strong></p>
+<p>$$
+\boxed{\;\mathcal S(\tilde{Ϛ}_\Psi)=-2\,\mathrm{Sc}\bigl(\tilde{Ϛ}_\Psi\log\tilde{Ϛ}_\Psi\bigr)
+=h\Bigl(\sqrt{1-4\,\mathrm{Sc}\langle\tilde{Ϛ}_\Psi\rangle_{\natural}}\Bigr)=h(|\vec s_\Psi|)\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The entropy is a function of the norm, and the entropy is maximal where the norm is <em>not</em> zero — the same inversion as in the quantum category. Coarse-graining is the replacement of a state by its average over a cell of the ball; the entropy increases because the radius shrinks.</p>
+<p><strong>Fisher information.</strong></p>
+<p>$$
+g_{rr}=\frac{1}{1-|\vec s_\Psi|^{2}}=\frac{1}{4\,\mathrm{Sc}\langle\tilde{Ϛ}_\Psi\rangle_{\natural}},
+$$</p>
+<p>and the Cramér–Rao bound is $\mathrm{Var}(\hat\vartheta)\ge1/(mF(\vartheta))$.</p>
+<p><strong>The non-trivial claim.</strong> The Fisher metric on the radial coordinate is the inverse of the norm. The norm therefore plays three roles at once: it is the mixedness, the inverse of the Fisher length, and the squared chord in the ball. The three readings agree because all three are the same quadratic form.</p>
+<p><strong>The Lyapunov exponent.</strong> A nearby trajectory separates as $e^{\lambda r'_t}$; in the algebra the separation is a difference of two elements and the exponent is read from the growth of its norm. The corpus states that a positive exponent is a flow of information from the system to the unresolved degrees of freedom, so it is the classical counterpart of decoherence.</p>
+<p><strong>Landauer's principle.</strong></p>
+<p>$$
+\boxed{\;Q_{\min}=k_BT\log2\;}
+$$</p>
+<p>$$
+\delta S_{\mathrm{info}}=-\log2,\qquad \delta S_{\mathrm{info}}+\delta S_{\mathrm{env}}\ge0\ \Longrightarrow\ \delta S_{\mathrm{env}}\ge\log2 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The erasure of one bit is the collapse of two idempotents into one, and the entropy drop is $\log2$ <em>because</em> the two idempotents are equiprobable in the erased state. The heat is the price of the sector exchange: the informational entropy is paid into the material sector as energy.</p>
+<p><strong>Maxwell's demon.</strong> The demon measures and then acts; the measurement costs at least $k_BT\log2$ per bit when the record is erased, and the books balance. The algebra contributes the accounting: the record is an element of $\mathbb{B}_\Psi$, the erasure is a projection, and the energy is the scalar part of a material element.</p>
+<p><strong>Source.</strong> <code>articles_physics/coarse-graining-and-the-biquaternion-entropy-functional.md</code>, <code>articles_physics/fisher-information-and-the-biquaternion-norm.md</code>, <code>articles_physics/the-lyapunov-exponent-and-information-loss-in-the-biquaternion-framework.md</code>, <code>articles_physics/landauers-principle-and-the-material-informational-exchange-in-biquaternionic-form.md</code>, <code>articles_physics/maxwells-demon-and-the-informational-sector-in-biquaternionic-form.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in six formulas.</strong></p>
+<p>$$
+\vec Z=\vec q+i\vec p,\qquad \omega=\mathrm{Im}\,\mathrm{Sc}(\vec Z^{*}\vec W),\qquad g=\mathrm{Re}\,\mathrm{Sc}(\vec Z^{*}\vec W),
+$$</p>
+<p>$$
+\{f,g\}\leftrightarrow\frac{1}{i\hbar}[f,g],\qquad
+\vec\omega_b=2c\,\tilde u^{\natural}\dot{\tilde u},\qquad
+\mathcal S=h\bigl(\sqrt{1-4\,\mathrm{Sc}\langle\tilde{Ϛ}_\Psi\rangle_{\natural}}\bigr).
+$$</p>
+<p><strong>Three results to keep.</strong> Phase space is one quaternion and the symplectic form is its imaginary part. The angular velocity is the logarithmic derivative of the rotor. $g=2$ is classical geometry, not a quantum accident.</p>
+<p><strong>Two refusals.</strong> The category does not claim that the Poisson bracket <em>is</em> the commutator; it states a similarity and its limits. It does not claim that the algebra indexes every multipole; it states exactly where the indexing stops.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec Z=\vec q+i\vec p$</td>
+<td>phase-space element</td>
+</tr>
+<tr>
+<td>$g$, $\omega$, $J$</td>
+<td>metric, symplectic form, complex structure</td>
+</tr>
+<tr>
+<td>$\tilde u$</td>
+<td>rotation rotor</td>
+</tr>
+<tr>
+<td>$\vec\omega_b$, $\vec\omega_s$</td>
+<td>body-frame, space-frame angular velocity</td>
+</tr>
+<tr>
+<td>$\mathcal A_\mu$</td>
+<td>adiabatic connection</td>
+</tr>
+<tr>
+<td>$\mathcal S$</td>
+<td>entropy functional</td>
+</tr>
+<tr>
+<td>$g_{rr}$</td>
+<td>Fisher metric in the radius</td>
+</tr>
+<tr>
+<td>$Q_{\min}$</td>
+<td>Landauer heat</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-lagrangian-and-hamiltonian-mechanics</code>, <code>the-symplectic-form-and-the-biquaternion-norm-cone</code>, <code>rigid-body-dynamics-and-the-biquaternion-rotor</code>, <code>coarse-graining-and-the-biquaternion-entropy-functional</code>. Traps: <code>similitudes-between-the-poisson-bracket-and-the-quantum-commutator</code>, <code>multipole-moments-at-every-order-the-biquaternion-algebra-cannot-index-the-tower</code>, <code>the-classical-origin-of-g-2-in-biquaternionic-form</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1589,12 +1589,20 @@
     <lastmod>2026-11-20</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/su2l-times-su2r-the-group-the-two-sides-and-why-the-standard-model-does-not-gauge-it.html</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourth-colour-left-right-model.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-breaking-chain-and-the-boson-spectrum.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.html</loc>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html</loc>
@@ -1778,11 +1786,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html</loc>
@@ -1895,6 +1903,10 @@
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-electroweak-theory.html</loc>
     <lastmod>2026-11-21</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-photon-as-the-unbroken-mixture.html</loc>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/maxwells-equations-in-the-biquaternionic-formulation.html</loc>
@@ -2074,7 +2086,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html</loc>
@@ -12558,6 +12570,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/physics.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
 </urlset>

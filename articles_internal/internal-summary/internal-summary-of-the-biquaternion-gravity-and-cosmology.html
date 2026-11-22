@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Gravity and Cosmology — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Gravity and Cosmology. The menu lists eleven articles and the category is the last of the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-gravity-and-cosmology"><strong>Internal Summary of the Biquaternion Gravity and Cosmology</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Gravity and Cosmology</em>. The menu lists eleven articles and the category is the last of the physics menu. Five further articles belong to the same cluster and are not yet in the listing: <em>FLRW in the Frame Route</em>, <em>The Kerr–Schild Sub-class and the Vacuum Wave</em>, <em>Horizons Without a Global Structure</em>, <em>The Action Problem</em> and <em>The Curved Dirac Operator and Its Square</em>. Two more sit in other categories and are read here: <em>Canonical Quantization of the Biquaternion Graviton Field</em> and <em>Curved-Spacetime KMS and Modular Flow</em>. That is eighteen articles and about $221\,000$ words. This file gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them.</p>
+<p><strong>What the category does, and what it refuses to do.</strong> It <strong>carries</strong> gravity: the algebra supplies a frame field, hence a metric, hence a spin connection, hence a Dirac operator on a curved background. It <strong>transcribes</strong> the linearised sector, the graviton's polarisation count and the black-hole thermodynamics. It <strong>does not derive</strong> the Einstein field equations, and it <strong>does not produce an action</strong>. Five of the eighteen articles are ledgers whose whole content is that separation: the field-equation article, the cosmology article, the quantum-gravity article, the horizon article and the action article. No article in the category is titled an agenda, and none should be read as one: the ledgers report what exists and name the object each gap needs.</p>
+<p><strong>The discipline of the category, stated once.</strong> Every item is classified three ways: <em>established</em> (proved inside the corpus), <em>carried</em> or <em>transcribed</em> (written in the letters, not derived from them), <em>open</em> (no construction exists). The gravitational article says it plainly: even the linearised sector has been carried and transcribed rather than derived.</p>
+<p><strong>The one structural fact that makes the category possible.</strong></p>
+<p>$$
+\boxed{\;g_{\mu\nu}(x)=\bigl\langle\tilde E_{\Phi,\mu}(x),\tilde E_{\Phi,\nu}(x)\bigr\rangle_{\natural}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> A metric is a Gram matrix of a frame of four $\mathbb{B}_\Phi$ elements. So the algebra carries <em>any</em> Lorentzian metric, at the price of a frame field: the metric is not produced by the algebra, it is <em>encoded</em> in four algebra-valued functions. This is the precise sense in which the framework reaches gravity — as a kinematical carrier, not as a dynamical theory.</p>
+<p><strong>The one-sentence version.</strong> Any Lorentzian metric is carried as the Gram matrix of a frame of four elements, and nothing about that carrying is derived.</p>
+<p><strong>The arithmetic of the reach.</strong> The frame has sixteen components. The local $SU(2)$ is six-dimensional. The invariant form reads ten. So $16=10+6$, and the six are a gauge kernel, not physics. Every counting statement downstream — the graviton's two polarisations, the five of the massive spin-two — is this decomposition applied once more.</p>
+<p><strong>A defect to record.</strong> The five unlisted articles are reachable only by the links inside the cluster. They are absent from <code>physics.md</code>, so they are absent from the menu page. Nothing about their content is in doubt; the listing is incomplete.</p>
+<h2 id="1-the-kinematical-route">1. The Kinematical Route</h2>
+<p><strong>The frame field and the metric.</strong> Given $\tilde E_{\Phi,\mu}$ with $\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\rangle_{\natural}=g_{\mu\nu}$, the covariant derivative on an algebra-valued field is <strong>two-sided</strong>:</p>
+<p>$$
+\boxed{\;D_\mu\tilde Q=\partial_\mu\tilde Q+\vec\Gamma_\mu\tilde Q+\tilde Q\vec\Gamma_\mu^{*}\;}
+$$</p>
+<p>with infinitesimal generator $\tfrac12(G\tilde Q+\tilde QG^{*})$, which is the anticommutator form for the boosts. The two-sided derivative is corpus content and not a flaw: the basis elements are acted on from both sides, and the natural commutator abbreviation $[G,\tilde Q]$ fails exactly on the boost generators. This was recomputed.</p>
+<p><strong>The spinor takes the other derivative, and the difference is load-bearing.</strong> A field that carries the left action, $\tilde\Xi\mapsto\tilde U\tilde\Xi$, differentiates one-sided:</p>
+<p>$$
+D_\mu\tilde\Xi=\partial_\mu\tilde\Xi+\vec\Gamma_\mu\tilde\Xi,
+\qquad
+\vec\Gamma_\mu\mapsto\tilde U\vec\Gamma_\mu\tilde U^{-1}-\bigl(\partial/\partial x_\mu\,\tilde U\bigr)\tilde U^{-1}.
+$$</p>
+<p>So one article carries two derivatives, and the reason is the representation and not a convention: a four-vector is acted on by rotor conjugation, a spinor by left multiplication. The quantum-gravity article reads the same distinction as its central obstruction — the gauge connection of every other field theory in the corpus is one-sided, and the gravitational one is not, so the constraint algebra and the BRST complex built for the first do not transfer to the second.</p>
+<p><strong>The curved Dirac operator obeys the Lichnerowicz identity inside the algebra:</strong></p>
+<p>$$
+\boxed{\;\bigl(\tilde F_\mu D_\mu\bigr)^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric}\;}
+$$</p>
+<p>$$
+\tilde F_\mu D_\mu\tilde\Xi_R=k_m\tilde\Xi_L,\qquad \bigl(\tilde F_\mu D_\mu\bigr)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R ,
+\qquad \tilde F_\mu=g_{\mu\nu}\tilde E_{\Phi,\nu} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The identity $(\gamma\!\cdot\!D)^2=-\Box+\tfrac14R$ is normally a statement about matrices and a Clifford algebra. Here the square is taken in $\mathbb{B}$, the Laplacian is the Laplace–Beltrami operator of $g$, and the Ricci scalar enters with the same coefficient $\tfrac14$. The mass $k_m$ is untouched by the curvature. The algebra therefore reproduces the <em>curvature coupling</em> of a Dirac field, which is what makes the frame route physically meaningful rather than formal. <em>The Curved Dirac Operator and Its Square</em> is the worked verification.</p>
+<p><strong>Torsion and contorsion.</strong></p>
+<p>$$
+T_{\lambda\mu\nu}=\Gamma_{\lambda\mu\nu}-\Gamma_{\lambda\nu\mu},\qquad
+N_{\mathrm{cont},\lambda\mu\nu}=\tfrac12\bigl(T_{\lambda\mu\nu}-T_{\mu\nu\lambda}+T_{\nu\lambda\mu}\bigr),
+$$</p>
+<p>$$
+\boxed{\;\nabla_\mu g_{\nu\rho}=-\bigl(g_{\nu\lambda}N_{\mathrm{cont},\lambda\mu\rho}+g_{\rho\lambda}N_{\mathrm{cont},\lambda\mu\nu}\bigr)\;}
+$$</p>
+<p><strong>The non-trivial claim, and the qualifier that holds it together.</strong> In the sector the corpus uses — $T=2N_{\mathrm{cont}}$, the Christoffel symbols the whole symmetric part of the connection — metric compatibility is <em>exactly</em> the demand that the contorsion be totally antisymmetric. That single condition cuts the twenty-four components to four. Outside the sector the two demands come apart: every torsion has exactly one metric-compatible connection, and that connection's contorsion carries a symmetric part whenever the torsion is not totally antisymmetric. Both statements are in the article, and a reader who quotes only the first will misreport the corpus. The Weitzenböck connection is the sharp test: exactly zero curvature, non-zero torsion, contorsion antisymmetric in the frame pair and not in the world pair.</p>
+<p><strong>The Newman–Penrose tetrad is the idempotent structure.</strong></p>
+<p>$$
+\boxed{\;l=\sqrt2\,i\,\tilde\Pi_1,\qquad n=\sqrt2\,i\,\tilde\Pi_2,\qquad m=\sqrt2\,i\,x,\qquad \bar m=\sqrt2\,i\,y\;}
+$$</p>
+<p>$$
+\tilde\Pi_1=\tfrac12(e_t+i\vec e_z),\quad \tilde\Pi_2=\tfrac12(e_t-i\vec e_z),\quad
+\vec\Upsilon_1=\tfrac12(i\vec e_x-\vec e_y),\quad \vec\Upsilon_2=\tfrac12(i\vec e_x+\vec e_y).
+$$</p>
+<p><strong>The non-trivial claim, and it is the sharpest in the category.</strong> The null tetrad of Newman–Penrose <em>is</em> the pair of minimal idempotents plus the pair of nilpotents:</p>
+<p>$$
+\langle l,n\rangle_{*}=(\sqrt2 i)^{2}\mathrm{Sc}\bigl(\tilde\Pi_1\bar{\tilde\Pi}_2\bigr)=-2\,\mathrm{Sc}\bigl(\tilde\Pi_1^{2}\bigr)=-1 .
+$$</p>
+<p>So null directions, the light cone, the vacuum of the quantum category and the tetrad of the classical one are one and the same object. The null and orthogonality relations $l\cdot l=n\cdot n=m\cdot m=0$, $l\cdot n=-1$, $m\cdot\bar m=+1$ are then faces of $\tilde\Pi^{2}=\tilde\Pi$ and $\vec\Upsilon^{2}=0$, not independent axioms. The spin coefficients are read off the same tetrad, and the Weyl scalars live in $\mathrm{sym}^{4}S$.</p>
+<p><strong>The local-scale route, and the two readings the corpus leaves open.</strong> The framework's own device is $r'_t=c\,t'$ with $c=1/\sqrt{\epsilon\mu}$. Differentiating it without dropping the differential of $c$ gives</p>
+<p>$$
+ds^{2}=-c^{2}dt'^{2}-2ct'\,dt'\,dc-t'^{2}(dc)^{2}+dr_x^{2}+dr_y^{2}+dr_z^{2}
+=-d{\bigl(ct'\bigr)}^{2}+dr_x^{2}+dr_y^{2}+dr_z^{2},
+$$</p>
+<p>which is <strong>flat</strong> — the pullback of the unit form along a diffeomorphism, with $\det g=-c^{2}$ and no curvature anywhere. Holding $c$ fixed in the differential instead, $d(ir'_t)=i\,c\,dt'$, gives</p>
+<p>$$
+g_{\mu\nu}=\mathrm{diag}\bigl(-c^{2},1,1,1\bigr),\qquad
+\mathrm{Ric}_{00}=u\Delta_\Phi u,\quad \mathrm{Ric}_{0i}=0,\quad
+\mathrm{Ric}_{ij}=-\frac{\partial^{2}u/\partial x_i\partial x_j}{u},\qquad u=c,
+$$</p>
+<p>which is <strong>genuinely curved</strong>, with flat spatial slices, no shift and one free function.</p>
+<p><strong>The non-trivial claim, and it is a negative one.</strong> The corpus does not choose between the readings, and it does not need to, because the second reading's class is empty of vacuum geometry: Ricci-flatness forces $u$ affine in the spatial coordinates, and every such metric is flat. So the class contains no Weyl curvature, no gravitational waves and no black-hole exterior. The local scale factor is not the route to general relativity, and $c$ is not the metric: it is the Maxwell speed of a medium, and a dielectric's effective metric is a metric for light and not for free fall.</p>
+<p><strong>Kerr–Schild: the one family where the algebra does more than supply a bilinear form.</strong></p>
+<p>$$
+g_{\mu\nu}=\delta_{\mu\nu}+2h\,\ell_\mu\ell_\nu,\qquad \sum_\mu\ell_\mu^{2}=0 .
+$$</p>
+<p>The class is the orbit of the flat form under a shear along a null direction. The shear's generator is the rank-one operator $N(X)=\tilde{\mathcal L}\langle X,\tilde{\mathcal L}\rangle_{\natural}$, and it is square-zero because the scalar $\langle X,\tilde{\mathcal L}\rangle_{\natural}$ is central and the norm $\langle\tilde{\mathcal L}\rangle_{\natural}$ vanishes. It is <em>not</em> left multiplication by $\tilde{\mathcal L}$, which is never nilpotent on $\mathbb{B}_{\Phi}$.</p>
+<p><strong>The non-trivial claim.</strong> Four properties of the class — affinity in $h$, unimodularity $\det g=\det\delta$, the sign-reversed closed-form inverse, and the null direction left fixed and therefore still null — are that one vanishing square read in four places. All four were checked numerically on random null directions to better than $10^{-9}$. The shear fixes the hyperplane orthogonal to $\tilde{\mathcal L}$ pointwise, which in the complexification is where the left and right null planes live; that is why the congruence passes into the curved metric unchanged. With a constant direction and a profile harmonic in the two transverse coordinates, the class is a <strong>plane-fronted vacuum wave</strong>. This is the object the local-scale route cannot carry: the corpus's only exact vacuum solution, and the algebra selects its shape. The profile is still inserted: the algebra supplies the ansatz, not the equation that would fix $h$.</p>
+<p><strong>Source.</strong> <code>articles_physics/curved-spacetime-and-the-biquaternion-framework.md</code>, <code>articles_physics/torsion-contorsion-and-the-spin-connection-in-biquaternionic-form.md</code>, <code>articles_physics/the-newman-penrose-formalism-in-biquaternionic-form.md</code>, <code>articles_physics/the-kerr-schild-sub-class-and-the-vacuum-wave.md</code>.</p>
+<h2 id="2-the-linearised-sector">2. The Linearised Sector</h2>
+<p><strong>The expansion and the gauge freedom.</strong></p>
+<p>$$
+g_{\mu\nu}=\eta_{\mu\nu}+h_{\mu\nu},\qquad
+h_{\mu\nu}\mapsto h_{\mu\nu}-\partial_\mu\zeta_\nu-\partial_\nu\zeta_\mu,
+$$</p>
+<p>$$
+\bar h_{00}=h_{00}+\tfrac12h,\quad \bar h_{0\eta}=h_{0\eta},\quad \bar h_{\eta l}=h_{\eta l}-\tfrac12h\,\delta_{\eta l},\quad \bar h=-\bar h_{00}+\sum_\eta\bar h_{\eta\eta}=-h .
+$$</p>
+<p><strong>The wave equation.</strong></p>
+<p>$$
+\boxed{\;\Box_\Phi\bar h_{\mu\nu}=-\frac{16\pi G}{c^{4}}T_{\mu\nu},\qquad\text{and in vacuum}\qquad \Box_\Phi\bar h_{\mu\nu}=0\;}
+$$</p>
+<p><strong>The residual gauge.</strong></p>
+<p>$$
+\bar h_{00}\mapsto\bar h_{00}-2\partial_0\zeta_0-D,\qquad \bar D_\nu\mapsto\bar D_\nu-\Box_\Phi\zeta_\nu,
+\qquad \boxed{\;\Box_\Phi\zeta_\nu=0\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The harmonic condition does not exhaust the gauge freedom: it leaves four functions, one per coordinate direction, each satisfying the same wave equation. So the physical content is a <em>quotient</em>: two metrics are the same state when they differ by a harmonic vector. The count is $10\to6\to2$, and each arrow is justified — the first by the four harmonic conditions, the second by the four residual gauge functions.</p>
+<p><strong>What the count does and does not give.</strong> The count is recomputed inside the framework, and the two surviving components are the transverse-traceless ones. What is <em>not</em> framework content is the reading of those components as helicities $\pm2$, the identification of the polarisation content as physics, and the coupling prefactors $8\pi G/c^{4}$ and $G/5c^{5}$. Those are transcribed standard theory, and the articles say so one by one.</p>
+<p><strong>Waves on the frame.</strong> The perturbation of the frame field is</p>
+<p>$$
+\bar{\delta\tilde E_{\Phi}}_\mu=\delta\tilde E_{\Phi,\mu}-\tfrac14h\,\varepsilon_\mu,\qquad
+h=2\bigl\langle\varepsilon_\nu,\delta\tilde E_{\Phi,\nu}\bigr\rangle_{\natural},\qquad
+\Box_\Phi\,\bar{\delta\tilde E_{\Phi}}_\mu=0 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The wave equation holds for the <em>frame</em> perturbation, not only for the metric perturbation, and the trace part is subtracted in the same way. A gravitational wave is therefore a propagating congruence of frames. The graviton itself is not a material biquaternion: it is not an element of $\mathbb{B}_{\Phi}$, and the natural single-biquaternion packaging $\sum h_{\mu\nu}\varepsilon_\mu\varepsilon_\nu^{\natural}$ collapses to the trace $h\,e_t$ and annihilates exactly the two amplitudes a graviton would carry.</p>
+<p><strong>The graviton as a symmetric square.</strong> The carrier is the symmetric square of the material vector, $V\odot V$, whose decomposition is $0\oplus2$: $6=1+5$, the trace the spin-zero singlet and the trace-free part the spin-two carrier, the trace being removed with the algebra's bilinear form. The massless gauge removes three of the five. On that space the transverse-traceless projector</p>
+<p>$$
+P_{ij,\eta l}=\tfrac12\bigl(\Pi_{i\eta}\Pi_{jl}+\Pi_{il}\Pi_{j\eta}\bigr)-\tfrac12\Pi_{ij}\Pi_{\eta l}
+$$</p>
+<p>is idempotent, has trace two, kills the pure-gauge and trace modes, and has a two-dimensional complement whose fixed points are the two polarisations. All of it was verified to machine precision. The canonical quantisation then gives the standard mode expansion, the bosonic commutators, the de Donder gauge fixing with vector ghosts and BRST, and the Fierz–Pauli massive theory with five polarisations that shows the van Dam–Veltman–Zakharov discontinuity. The count is the framework's; the coupling to $T_{\mu\nu}$, the equivalence principle and Newton's constant are not.</p>
+<p><strong>Source.</strong> <code>articles_physics/linearized-gravity-in-biquaternionic-form.md</code>, <code>articles_physics/gravitational-waves-in-biquaternionic-form.md</code>, <code>articles_physics/canonical-quantization-of-the-biquaternion-graviton-field.md</code>.</p>
+<h2 id="3-black-holes">3. Black Holes</h2>
+<p>$$
+\boxed{\;T=\frac{\kappa}{2\pi},\qquad S=\frac{A}{4G}\;}
+$$</p>
+<p>$$
+dM=\frac{\kappa}{8\pi G}dA+\Omega\,dJ+\Xi\,dϘ,\qquad
+M=\frac{\kappa A}{4\pi G}+2\Omega J+\Xi\,Ϙ,
+$$</p>
+<p>$$
+T_{\mathrm H}=\frac{\hbar\kappa}{2\pi ck_B}=\frac{\hbar c^{3}}{8\pi GMk_B},\qquad
+S=\frac{c^{3}k_BA}{4\hbar G}=\frac{k_BA}{4\ell_P^{2}},\qquad \ell_P^{2}=\frac{\hbar G}{c^{3}}.
+$$</p>
+<p>Here $Ϙ$ is the charge in the article's own notation — koppa, chosen so as not to collide with the biquaternion $Q$ — and $\Xi$ is its conjugate potential.</p>
+<p><strong>The non-trivial claim.</strong> The first law and the Smarr formula are <em>the same</em> equation: Smarr is the Euler relation for a mass homogeneous of degree one in $(A,J,Ϙ)$, with scaling weights $(2,2,1)$ — the weights the area, the angular momentum and the charge have under $g_{\mu\nu}\to\lambda^{2}g_{\mu\nu}$. The three central-difference combinations and the Smarr residual vanish to better than $10^{-12}$ in a thirty-digit computation. The area law is <em>forced</em> by the scaling: a volume law has weight three and no Euler relation would be consistent with it. The factor $\tfrac14$ in the entropy is the one thing no classical argument fixes; the corpus takes it from the Hawking article and does not derive it here.</p>
+<p><strong>The horizon in three layers.</strong> The pointwise layer is reachable: the null normal is a zero divisor, the expansion is a spin coefficient, $\theta=\rho+\bar\rho$, marginality is $\mathrm{Re}\,\rho=0$, and Raychaudhuri's equation holds — for the flat radial congruence $\theta=2/r$ and $d\theta/d\lambda=-2/r^{2}=-\theta^{2}/2$ exactly. The layer of loci and integrals is reachable once a frame is placed on a manifold: the horizon is writable as a locus, its area as a Gram-determinant integral, though the locus is not unique and is not a causal boundary. The global layer — the event horizon, causal structure, singularity theorems, the spin-structure obstruction — is not reachable at any effort, because it quantifies over curves and over the topology of a manifold rather than over one tangent space.</p>
+<p><strong>Surface gravity and the thermal coefficients sit between the layers.</strong> $\kappa$ needs a Killing field, and $T=\kappa/2\pi$, $S=A/4$ need a quantum of action. The framework hosts the surface and the area and transcribes the temperature and the entropy. That is the whole ledger of the horizon article: one and a half layers of three.</p>
+<p><strong>The thermal circle, and the two widths.</strong> On a Killing horizon the KMS condition has two widths, and they must not be conflated. The flow's width is $\beta_H=2\pi c/\kappa$, a single number. The observer's width is $\beta(x)=\beta_H\ell(x)$, the flow's width times the lapse, so $T(x)=T_H/\ell(x)$ — Tolman's law with the lapse in place of the light speed. The lapse vanishes at the horizon, so the observer's circle collapses and the observer's temperature diverges while the flow's width stays finite. The modular parameter is $s=r'_t/\beta_H$: one turn of the modular flow is one turn of the thermal circle, and the KMS periodicity $\sigma_{s+1}=\sigma_s$ is the compactness of the imaginary direction with circumference $\beta_H$. The Euclidean regularity period $8\pi GM/c^{3}$ equals $\beta_H$; with $r_s=1$ both are $4\pi=12.566\,370\,614$. This article is standard relativistic thermodynamics written in the corpus's letters, with no framework interpretation claimed, and it is the reason the quantum-gravity article can offer a horizon temperature without quantising a metric.</p>
+<p><strong>Source.</strong> <code>articles_physics/black-hole-thermodynamics-in-biquaternionic-form.md</code>, <code>articles_physics/hawking-radiation-in-biquaternionic-form.md</code>, <code>articles_physics/horizons-without-a-global-structure.md</code>, <code>articles_physics/curved-spacetime-kms-and-modular-flow.md</code>.</p>
+<h2 id="4-cosmology">4. Cosmology</h2>
+<p><strong>The frame, written out.</strong> With $\tilde E_{\Phi,0}=iN e_t$ and $\tilde E_{\Phi,i}=a\vec e_i$ the Gram matrix is</p>
+<p>$$
+\mathrm{diag}\bigl(-N^{2},a^{2},a^{2},a^{2}\bigr),
+$$</p>
+<p>and the three cross terms vanish with no condition on $N$ or $a$, because the algebra's form makes the time leg orthogonal to the spatial triple once. Checked at $N=1.7$, $a=2.3$: $\mathrm{diag}(-2.89,5.29,5.29,5.29)$. The lapse is pure gauge; the scale factor is one free function.</p>
+<p><strong>Constant-curvature slices cost nothing extra.</strong> For $k=\pm1$ take $\gamma_{ij}=a^{2}\bar\gamma_{ij}$ with $\bar\gamma_{ij}=4\delta_{ij}/(1+kr^{2})^{2}$. The form is positive definite, so it has a Cholesky factor $L$ with $LL^{\mathsf T}=a^{2}\bar\gamma$, and the three frame legs are the columns of $L$. The reconstruction is exact, the three-scalar curvature is $6k/a^{2}$, the comoving expansion is $3\dot a/a$, and the shear vanishes. The construction fails only where the chart fails.</p>
+<p><strong>The non-trivial claim, and the pair of negative results around it.</strong> The frame route carries the FLRW metric for $k=0$ and for $k=\pm1$, with the scale factor free. The local-scale route of §1 carries <em>no expansion at all</em>: a time-dependent local $c$ gives an identically zero Riemann tensor — checked explicitly on $c(t)=2+\sin t$ — and a spatially varying $c$ curves the metric while leaving the slices flat. Two diagonal forms that look alike are therefore different objects: the frame route's function is a scale on the spatial triple, the local-scale route's is a scale on the time axis, and only the first is a cosmology.</p>
+<p><strong>What is missing is not the metric but the dynamics, and then the source.</strong> The cosmology article records the obstacles as a ledger, each with the object that would close it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Obstacle</th>
+<th>Status</th>
+<th>What would settle it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Constant-curvature spatial frame, $k=\pm1$</td>
+<td><strong>Closed</strong></td>
+<td>Cholesky factor of $a^{2}\bar\gamma$; $6k/a^{2}$ verified</td>
+</tr>
+<tr>
+<td>Friedmann equations</td>
+<td>Known route, blocked on the Einstein equations</td>
+<td>The action, restricted to the FLRW ansatz</td>
+</tr>
+<tr>
+<td>Cosmological source in rank-two form</td>
+<td>Carried by a frame; no dynamics</td>
+<td>The single-element packaging collapses; a frame whose Gram matrix is $T$ carries the trace and the traceless part, and the perfect-fluid frame is written out. Missing: a matter action that fixes it</td>
+</tr>
+<tr>
+<td>Thermodynamic densities and $p(\rho)$</td>
+<td>No route yet</td>
+<td>A trace with a measure, or a $\mathbb{B}_{\Psi}$-valued field with an action</td>
+</tr>
+<tr>
+<td>Cosmological constant</td>
+<td>No route yet</td>
+<td>An algebra-built $\Lambda$-term with its trace-shift status fixed</td>
+</tr>
+<tr>
+<td>Two-sector cosmological coupling</td>
+<td>No route yet, and a labelled speculation</td>
+<td>An algebra-built coupling whose induced $T_{\mu\nu}$ is independent of every existing fluid, or a no-go</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The central finding, and it is structural rather than dynamical.</strong> The framework's natural packaging of a rank-two source collapses to the trace: a perfect fluid goes to $(-\rho+3p)e_t$ and a radiation source to zero. The two functions $\rho$ and $p$ that close the Friedmann equations are therefore not carried <em>by that packaging</em> — the count $10>8$ forbids any single-element carrier — though a frame carries them, one informational time leg and three material space legs giving exactly $\mathrm{diag}(\rho,p,p,p)$. The framework's own thermodynamics is rank-two and bounded by $\log 2$ — the entropy of a two-state system — while a homogeneous cosmology needs extensive densities and an integral over a three-manifold. This is a mismatch of invariant structure, and it sits <em>before</em> the missing dynamics in the order of repair.</p>
+<p><strong>Two overclaims the article refuses.</strong> Dark energy and dark matter are not explained by the extra sector; and no scale factor, Hubble rate or equation of state is predicted. The two-sector structure survives pointwise on any background and has no coupling.</p>
+<p><strong>Source.</strong> <code>articles_physics/cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source.md</code>, <code>articles_physics/flrw-in-the-frame-route.md</code>.</p>
+<h2 id="5-the-three-boundaries">5. The Three Boundaries</h2>
+<p><strong>The field-equation article.</strong> Its question is whether the framework reproduces the Einstein equations. Its answer is a separation: the kinematical route is established, the linearised sector is carried and transcribed, the non-linear equations are <strong>open</strong>. The sharper finding is that even the linearised equation has been transcribed rather than derived, so the question is open more strongly than a missing proof: what is absent is the object that would make either equation a consequence.</p>
+<p><strong>The cosmology article.</strong> Its question is what it would take to carry FLRW, the Friedmann equations, the equation of state and the growth of structure. Its answer is the same three-way classification, applied construction by construction, and its sharper finding is the rank-two source mismatch of §4: the carrier exists, the source does not, and the dynamics is third in line.</p>
+<p><strong>The quantum-gravity article.</strong> Its question is downstream: quantisation presupposes a classical theory with an action, a conjugate momentum and a constraint structure, and the category supplies none of the three. Its finding is an ordering one, and it is sharper than "gravity is not quantised": the absences are of different kinds. <em>Established</em>: the kinematical fibre, the two-sided covariant derivative, the one-sided gauge connection as the contrast, the finite-dimensional modular operator and wedge Hamiltonian, and the capacity of $\mathbb{B}$ for one fermionic mode and no bosonic mode. <em>Known route, blocked on inputs</em>: the canonical analysis of a linearised frame action, a gauge-fixing functional for the local Lorentz freedom, a bosonic Fock space for the frame perturbation, the modular-flow identification at a horizon. <em>No route yet</em>: a perturbative expansion, a representation of diffeomorphism invariance and the gravitational constraint algebra, a non-perturbative measure, a microstate count, a type III algebra with an outer modular flow, empirical content. Two structural facts organise it: the gravitational connection is two-sided while every other gauge connection in the corpus is one-sided, so the BRST machinery does not transfer; and the modular operator is finite-dimensional, so a horizon temperature is available without a quantised metric.</p>
+<p><strong>The two external-source articles.</strong> <em>An External Construction of Space from Quaternionic Spinors</em> and <em>The Biquaternion Basis of a Unified-Field Fibre Bundle</em> record the two ways the algebra has been used to <em>build</em> spacetime rather than to live on it. Both are recorded, tested and not endorsed: the first is checked line by line and fails at the printed gamma map, the trace normalisation, the completeness relation, the Fierz coefficient, the composite tetrad and the contorsion sign; the second is checked for its dictionary, its conjugation convention, its Majorana transformation and its printed slips. They are constructions, not derivations, and their errors are part of the record.</p>
+<h2 id="6-the-action-problem">6. The Action Problem</h2>
+<p><strong>One question, one reason it is open.</strong> What functional of the frame and the connection has the Einstein equation as its variation? The answer offered is a single structural fact: <strong>the algebra has no derivative, so it cannot count derivatives, and gravity is a two-derivative theory.</strong> The algebra supplies every ingredient of an action — a scalar part, a Gram determinant as the volume element, a $\mathbb{B}$-valued connection, a curvature two-form — and supplies no principle that selects a derivative order. That is why the quadratic functional it most naturally suggests is Yang–Mills and not Einstein.</p>
+<p><strong>Two routes survive.</strong> The scalar curvature can be written as the trace of the squared Dirac operator plus the connection Laplacian,</p>
+<p>$$
+R=\mathrm{tr}\bigl[(\tilde FD)^{2}+\Box\bigr],
+$$</p>
+<p>which makes the Hilbert action algebra-writable at the cost of presupposing the connection it uses. And the source can be carried as the Gram matrix of its own frame: the single-element packaging fails only because ten components do not fit in eight, while a frame carries any nondegenerate symmetric $T$. For a perfect fluid the frame is explicit — one <strong>informational</strong> time leg, $\mathfrak U_0=-\sqrt\rho\,e_t$, and three material space legs, $\mathfrak U_\eta=\sqrt p\,\vec e_\eta$ — and its Gram matrix is exactly $\mathrm{diag}(\rho,p,p,p)$. The sector assignment is forced: a material time leg has norm $-\rho$, negative energy. What remains open is therefore not the carrier but the matter action whose variation fixes the frame.</p>
+<p><strong>What an action would not fix.</strong> The conformal factor and the measure. Even a solved action would leave both open. The article's own ordering: this is the corpus's single hardest open object, its reason fits in one sentence, and the negative route — a no-go for the traceless source — is the cheaper of the two attacks.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in eleven formulas.</strong></p>
+<p>$$
+g_{\mu\nu}=\bigl\langle\tilde E_{\Phi,\mu},\tilde E_{\Phi,\nu}\bigr\rangle_{\natural},\qquad
+\bigl(\tilde F_\mu D_\mu\bigr)^{2}=-\Box_{g,\Phi}+\tfrac14\mathrm{Ric},\qquad
+g_{\mu\nu}=\delta_{\mu\nu}+2h\ell_\mu\ell_\nu,
+$$</p>
+<p>$$
+\mathrm{diag}\bigl(-N^{2},a^{2},a^{2},a^{2}\bigr),\qquad
+\frac{6k}{a^{2}},\qquad
+\Box_\Phi\bar h_{\mu\nu}=-\frac{16\pi G}{c^{4}}T_{\mu\nu},
+$$</p>
+<p>$$
+10\to6\to2,\qquad
+l=\sqrt2 i\,\tilde\Pi_1,\qquad
+T=\frac{\kappa}{2\pi},\qquad
+S=\frac{A}{4G},\qquad
+R=\mathrm{tr}\bigl[(\tilde FD)^{2}+\Box\bigr].
+$$</p>
+<p><strong>Six results to keep.</strong> The metric is the Gram matrix of a frame, so the algebra carries any Lorentzian geometry. The curved Dirac operator satisfies Lichnerowicz inside the algebra, with the $\tfrac14$ coefficient, and the spinor's derivative is the one-sided one while the four-vector's is two-sided. The Newman–Penrose null tetrad is exactly the two idempotents and the two nilpotents. The Kerr–Schild class is the orbit of the flat form under a square-zero shear, and its four properties are that one vanishing. The linearised equations are carried, the count $10\to6\to2$ is recomputed, and the polarisation reading and the prefactors are transcribed. Black-hole thermodynamics is transcribed, the area law is forced by the scaling, and the $\tfrac14$ is not derived.</p>
+<p><strong>Four refusals.</strong> The category does not derive the Einstein equations. It does not produce an action for the metric, and it states why in one sentence. It does not carry a cosmological source <em>as one biquaternion</em>, and that obstruction is rank-two and structural; a frame carries the source, and what it lacks is a matter action to fix the frame. It does not quantise gravity, and it states the ordering reason and separates the three kinds of absence.</p>
+<p><strong>Three traps for an agent reading this category.</strong> A single-backslash row separator inside a display environment renders as one row and raises no error; the separator section of <code>repair-formulas.md</code> gives the detector. A quotation of "metric compatibility is total antisymmetry" without the sector qualifier misreports the torsion article. And the local-scale route's curved reading has no vacuum member, so quoting $\mathrm{Ric}_{00}=u\Delta_\Phi u$ without the Ricci-flatness-forces-flatness result overstates it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde E_{\Phi,\mu}$</td>
+<td>frame field; its Gram matrix is the metric</td>
+</tr>
+<tr>
+<td>$\vec\Gamma_\mu$</td>
+<td>spin connection, valued in the six-dimensional scalar-free subspace</td>
+</tr>
+<tr>
+<td>$D_\mu$</td>
+<td>two-sided on algebra-valued fields, one-sided on the spinor</td>
+</tr>
+<tr>
+<td>$\tilde F_\mu=g_{\mu\nu}\tilde E_{\Phi,\nu}$</td>
+<td>dual frame; the Dirac operator is $\tilde F_\mu D_\mu$</td>
+</tr>
+<tr>
+<td>$N_{\mathrm{cont}}$</td>
+<td>contorsion; $\tfrac12T$ only in the total-antisymmetry case</td>
+</tr>
+<tr>
+<td>$h_{\mu\nu}$, $\bar h_{\mu\nu}$</td>
+<td>metric perturbation and its trace reverse</td>
+</tr>
+<tr>
+<td>$P_{ij,\eta l}$</td>
+<td>transverse-traceless projector on $V\odot V$</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>surface gravity</td>
+</tr>
+<tr>
+<td>$Ϙ$</td>
+<td>charge, in koppa to avoid the biquaternion $Q$</td>
+</tr>
+<tr>
+<td>$\beta_H$, $\ell(x)$</td>
+<td>flow width $2\pi c/\kappa$ and lapse; the observer's width is their product</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_{1,2}$, $x$, $y$</td>
+<td>NP tetrad in the letters</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>curved-spacetime-and-the-biquaternion-framework</code>, <code>the-newman-penrose-formalism-in-biquaternionic-form</code>, <code>linearized-gravity-in-biquaternionic-form</code>, <code>the-kerr-schild-sub-class-and-the-vacuum-wave</code>, <code>flrw-in-the-frame-route</code>, <code>black-hole-thermodynamics-in-biquaternionic-form</code>. Ledgers, which must be read as ledgers and never as results: <code>the-einstein-field-equations-in-the-biquaternion-framework-the-linearised-dictionary-and-the-non-linear-gap</code>, <code>cosmology-in-the-biquaternion-framework-the-carried-flrw-metric-and-the-missing-source</code>, <code>quantum-gravity-in-the-biquaternion-framework-the-two-sided-obstruction-and-the-modular-temperature</code>, <code>horizons-without-a-global-structure</code>, <code>the-action-problem</code>. The listing gap: those last two, plus <code>the-kerr-schild-sub-class-and-the-vacuum-wave</code>, <code>flrw-in-the-frame-route</code> and <code>the-curved-dirac-operator-and-its-square</code>, are absent from <code>physics.md</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

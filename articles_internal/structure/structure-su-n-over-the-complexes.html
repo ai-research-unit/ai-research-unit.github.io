@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(5)$, $\mathrm{SU}(6)$, $\mathrm{SU}(7)$, $\mathrm{SU}(8)$, $\mathrm{SU}(n)$ — Biquaternion Universe</title>
+  <meta name="description" content="where is the conjugate transpose. The first condition is the unitary one and it is sesquilinear, so the group it cuts is compact; the second removes one…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-special-unitary-groups-math0-math1-math2-math3-math4-math5-math6-math7-math8"><strong>The Special Unitary Groups: $\mathrm{SU}(1)$, $\mathrm{SU}(2)$, $\mathrm{SU}(3)$, $\mathrm{SU}(4)$, $\mathrm{SU}(5)$, $\mathrm{SU}(6)$, $\mathrm{SU}(7)$, $\mathrm{SU}(8)$, $\mathrm{SU}(n)$</strong></h1>
+<h2 id="the-plan">The Plan</h2>
+<p><strong>The equation.</strong> The group is cut by two conditions,</p>
+<p>$$
+A^{*}A=\mathrm I,
+\qquad
+\det A=1,
+$$</p>
+<p>where $A^{*}=\bar A^{\mathsf T}$ is the conjugate transpose. The first condition is the unitary one and it is <em>sesquilinear</em>, so the group it cuts is compact; the second removes one circle of phases and leaves the special unitary group.</p>
+<p><strong>Why the ladder is different from the two orthogonal ladders.</strong> Over $\mathbb{R}$ the orthogonal ladder is cut by a bilinear form and the determinant is a sign, so the group is a union of two pieces indexed by $\pm1$. Over $\mathbb{C}$ the complex orthogonal ladder is cut by a bilinear form and the determinant is again a sign, but the group is not compact and its algebra has nilpotents. The unitary ladder is cut by a sesquilinear form: the determinant is a phase on a circle, the group is compact, the algebra has no nilpotents, and the exponential is onto. The three ladders together exhaust the three possible behaviours of a classical group with respect to the two questions of compactness and nilpotence.</p>
+<p><strong>The shape of the answer.</strong> The unitary group has real dimension $n^{2}$, the special unitary group $n^{2}-1$, the rank $n-1$, the centre $\mathbb{Z}/n$, the Weyl group $S_n$, and the root system $A_{n-1}$ with $n(n-1)$ roots. It is compact, connected, simply connected, semisimple for $n\ge2$, and its exponential is onto with a lattice of periods whose rank is $n-1$.</p>
+<p><strong>The four small rungs.</strong> $\mathrm{SU}(1)$ is the trivial group. $\mathrm{SU}(2)$ is the unit sphere $S^{3}$, the group of unit quaternions, and the double cover of $\mathrm{SO}(3)$. $\mathrm{SU}(3)$ is the eight-dimensional group of rank two whose class space is a hexagonal simplex quotient. $\mathrm{SU}(4)$ is $\mathrm{Spin}(6)$ and carries a quaternionic structure. The general rung is the projective unitary geometry of $\mathbb{C}^{n}$.</p>
+<p><strong>The four upper rungs.</strong> $\mathrm{SU}(5)$ to $\mathrm{SU}(8)$ have no orthogonal name. The equation $m(m-1)/2=n^{2}-1$ is the condition for an exact meeting of the two ladders, and in this range it has only the solutions $n=1,2,4$. What the upper rungs have instead is a pair of embeddings into the orthogonal ladder at every $n$, the realification into $\mathrm{SO}(2n)$ and the adjoint into $\mathrm{SO}(n^{2}-1)$, and the two are recorded in the table of the closing section.</p>
+<p><strong>What is proved and what is quoted.</strong> The parametrisation of $\mathrm{SU}(2)$ by the sphere, the axis–angle formula, the double cover, the normal form and the Weyl group, the decomposition $U=zV$, the surjectivity of the exponential, the dimension recursion, the simplicity of the algebra, and the identity $\mathrm{SU}(n)\cap\mathrm{SO}(n,\mathbb{C})=\mathrm{SO}(n,\mathbb{R})$ are proved or recomputed in the closing verification. Thompson's theorem on commutators and the classification of the nilpotent-free structure are quoted.</p>
+<h2 id="the-equation">The Equation</h2>
+<h3 id="the-two-conditions">The Two Conditions</h3>
+<p>Unitarity says that the columns are orthonormal for the Hermitian form $\langle x,y\rangle=\sum\bar x_ky_k$:</p>
+<p>$$
+A^{*}A=\mathrm I
+\quad\Longleftrightarrow\quad
+\langle Ax,Ay\rangle=\langle x,y\rangle\ \text{for all}\ x,y .
+$$</p>
+<p>The determinant condition says that the Hermitian volume is preserved with phase one, so the group is the kernel of the determinant on the unitary group:</p>
+<p>$$
+1\longrightarrow\mathrm{SU}(n)\longrightarrow\mathrm U(n)\xrightarrow{\ \det\ }\mathrm U(1)\longrightarrow1 .
+$$</p>
+<p>This sequence is the structural difference from the orthogonal case: the determinant takes values in a circle and not in a two-element set, so its kernel is a codimension-one subgroup and not a component.</p>
+<h3 id="the-algebra">The Algebra</h3>
+<p>Differentiating $A^{*}A=\mathrm I$ at the identity gives</p>
+<p>$$
+\mathfrak{su}(n)=\{X\in M_n(\mathbb{C}):X^{*}=-X,\ \operatorname{tr}X=0\},
+$$</p>
+<p>the anti-Hermitian traceless matrices with the commutator. The dimension is $n^{2}-1$: the anti-Hermitian condition puts $n$ imaginary numbers on the diagonal and $n(n-1)/2$ free complex numbers above it, which is $n+2\cdot n(n-1)/2=n^{2}$ real parameters, and the trace condition removes one.</p>
+<p><strong>The tradition of the physicist's convention.</strong> Multiplying by $i$ turns anti-Hermitian into Hermitian and traceless into traceless, so the algebra is also written</p>
+<p>$$
+\mathfrak{su}(n)\cong\{H\in M_n(\mathbb{C}):H^{*}=H,\ \operatorname{tr}H=0\},
+$$</p>
+<p>the traceless Hermitian matrices, with the bracket $[H_1,H_2]=i(H_1H_2-H_2H_1)$. The two models are the same algebra and the article uses the anti-Hermitian one, since it is the one the exponential takes without a factor of $i$.</p>
+<h3 id="compactness-the-exponential-and-the-absence-of-nilpotents">Compactness, the Exponential and the Absence of Nilpotents</h3>
+<p><strong>Compactness.</strong> The group is a closed bounded subset of $M_n(\mathbb{C})$: unitarity bounds every entry by one, and the determinant condition is closed. So $\mathrm{SU}(n)$ is compact, of real dimension $n^{2}-1$, and it carries a bi-invariant metric.</p>
+<p><strong>The exponential is onto.</strong> Every unitary matrix is unitarily diagonalisable with eigenvalues $e^{i\theta_k}$, so its logarithm is $V\operatorname{diag}(i\theta_k)V^{*}$, which is anti-Hermitian; the determinant condition $\prod e^{i\theta_k}=1$ lets the angles be chosen with $\sum\theta_k\in2\pi\mathbb{Z}$, so the logarithm is traceless. The verification constructs the logarithm on one hundred random elements at $n=2,\dots,6$ and reports residual $5.4\times10^{-15}$ against the matrix, exactly zero against anti-Hermitian, and $3.3\times10^{-15}$ against the product of the eigenvalues.</p>
+<p><strong>The absence of nilpotents.</strong> An anti-Hermitian matrix is normal, hence unitarily diagonalisable, hence nilpotent only if zero. So $\mathfrak{su}(n)$ has no nilpotent element, exactly like the real orthogonal algebra and unlike the complex orthogonal algebra. This is the compactness of the group seen at the level of the algebra.</p>
+<p><strong>The kernel.</strong> The periods are the lattices $\theta_k\in2\pi\mathbb{Z}$ in each of the $n$ angles modulo the diagonal shift, so $\ker\exp$ has rank $n-1$:</p>
+<p>$$
+\ker\exp=\Bigl\{V\operatorname{diag}(2\pi i m_1,\dots,2\pi i m_n)V^{*}:\ \textstyle\sum m_k=0\Bigr\}.
+$$</p>
+<h3 id="the-killing-form-and-simplicity">The Killing Form and Simplicity</h3>
+<p>The Killing form is negative definite, as it must be for a compact semisimple group:</p>
+<p>$$
+\kappa(X,Y)=2n\operatorname{tr}(XY),
+$$</p>
+<p>which is $-2n$ times the Hilbert–Schmidt inner product on an anti-Hermitian algebra. The algebra $\mathfrak{su}(n)$ is simple for $n\ge2$.</p>
+<p><strong>Simplicity from the brackets.</strong> The criterion used in this corpus is that the commutator subspace is the whole algebra, $\mathfrak{su}(n)=[\mathfrak{su}(n),\mathfrak{su}(n)]$, which the verification confirms by spanning with brackets of basis elements at $n=2,3,4,5$ and finding the full dimension $n^{2}-1$ every time. A simple algebra is its own commutator and the converse holds for these classical algebras with a negative definite form.</p>
+<p><strong>Perfectness of the group.</strong> The group is perfect, and the sharper statement is Thompson's theorem: every element of $\mathrm{SU}(n)$ is a single commutator. The verification checks only the algebra level statement above.</p>
+<h2 id="the-dimension-ladder">The Dimension Ladder</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>rank</th>
+<th>centre</th>
+<th>$\lvert W\rvert$</th>
+<th>roots</th>
+<th>$\pi_{1}$</th>
+<th>the group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>trivial</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>$\mathbb{Z}/2$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$S^{3}$, unit quaternions, $\mathrm{Spin}(3)$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$8$</td>
+<td>$2$</td>
+<td>$\mathbb{Z}/3$</td>
+<td>$6$</td>
+<td>$6$</td>
+<td>$1$</td>
+<td>$\mathrm{SU}(3)$, rank-two, hexagon</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$15$</td>
+<td>$3$</td>
+<td>$\mathbb{Z}/4$</td>
+<td>$24$</td>
+<td>$12$</td>
+<td>$1$</td>
+<td>$\mathrm{SU}(4)=\mathrm{Spin}(6)$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$24$</td>
+<td>$4$</td>
+<td>$\mathbb{Z}/5$</td>
+<td>$120$</td>
+<td>$20$</td>
+<td>$1$</td>
+<td>simple</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$35$</td>
+<td>$5$</td>
+<td>$\mathbb{Z}/6$</td>
+<td>$720$</td>
+<td>$30$</td>
+<td>$1$</td>
+<td>simple</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$48$</td>
+<td>$6$</td>
+<td>$\mathbb{Z}/7$</td>
+<td>$5040$</td>
+<td>$42$</td>
+<td>$1$</td>
+<td>simple</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$63$</td>
+<td>$7$</td>
+<td>$\mathbb{Z}/8$</td>
+<td>$40320$</td>
+<td>$56$</td>
+<td>$1$</td>
+<td>simple</td>
+</tr>
+<tr>
+<td>$n$</td>
+<td>$n^{2}-1$</td>
+<td>$n-1$</td>
+<td>$\mathbb{Z}/n$</td>
+<td>$n!$</td>
+<td>$n(n-1)$</td>
+<td>$1$</td>
+<td>simple, $n\ge2$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The four columns that grow with $n$ grow at different rates: the dimension quadratically, the rank linearly, the centre linearly but only as an abelian group, the Weyl group factorially, and the number of roots quadratically in $n$ with a different coefficient. The whole ladder is the statement that these five growth rates coexist inside one equation.</p>
+<h2 id="math152-the-trivial-group">$\mathrm{SU}(1)$: The Trivial Group</h2>
+<p>The condition $|a|^{2}=1$ with $\det a=1$ forces $a=1$, so</p>
+<p>$$
+\mathrm{SU}(1)=\{(1)\}.
+$$</p>
+<p>The rung is the empty case of every statement in the article: dimension zero, no roots, no angles, one class, the exponential a bijection from the zero algebra, the centre of order one. It is recorded because the ladder needs a base and because the same group occurs as the isotropy of the highest-weight vector in the two-space $\mathbb{C}^{1}$, which is how $\mathrm{SU}(n+1)/\mathrm{SU}(n)=S^{2n+1}$ terminates.</p>
+<h2 id="math159-the-unit-sphere-in-math160">$\mathrm{SU}(2)$: The Unit Sphere in $\mathbb{C}^{2}$</h2>
+<h3 id="the-parametrisation-by-two-complex-numbers">The Parametrisation by Two Complex Numbers</h3>
+<p>A unitary $2\times2$ matrix of determinant one has the form</p>
+<p>$$
+A=\begin{pmatrix}a&-\bar b\\ b&\bar a\end{pmatrix},
+\qquad |a|^{2}+|b|^{2}=1,
+$$</p>
+<p>because unitarity forces the second column to be $\pm$ the conjugate-perpendicular of the first, and the determinant condition fixes the sign. So the group is exactly the unit sphere</p>
+<p>$$
+\mathrm{SU}(2)=S^{3}=\{(a,b)\in\mathbb{C}^{2}:|a|^{2}+|b|^{2}=1\},
+$$</p>
+<p>of real dimension three, and the verification confirms $|a|^{2}+|b|^{2}=1$ on one hundred random elements with residual at $10^{-15}$.</p>
+<p><strong>The two named subgroups.</strong> Setting $b=0$ gives the maximal torus</p>
+<p>$$
+T=\Bigl\{\begin{pmatrix}e^{i\theta}&0\\ 0&e^{-i\theta}\end{pmatrix}\Bigr\}\cong S^{1},
+$$</p>
+<p>of dimension one, and its conjugates are the class representatives. Setting $b$ real gives the "equator" $\{R(\theta)\}\cong\mathrm{SO}(2)$, the real rotation group inside, which is the unitary group of the real structure. The torus meets the equator in $\{\pm\mathrm I\}$, and the equator meets the conjugation classes of the torus twice.</p>
+<h3 id="the-axisangle-formula">The Axis–Angle Formula</h3>
+<p><strong>Theorem.</strong> Every $A\in\mathrm{SU}(2)$ is</p>
+<p>$$
+A=\cos\theta\,\mathrm I+i\sin\theta\,(n_1\sigma_1+n_2\sigma_2+n_3\sigma_3),
+\qquad
+\theta\in[0,\pi],
+\qquad
+\lVert n\rVert=1,
+$$</p>
+<p>with $\sigma_k$ the Pauli matrices, and the pair $(\theta,n)$ is unique up to the replacement $\theta\mapsto2\pi-\theta$, $n\mapsto-n$ at the endpoints.</p>
+<p><strong>Proof.</strong> The trace is $2\cos\theta$ with $\theta\in[0,\pi]$, because the eigenvalues are $e^{\pm i\theta}$; the matrix $A-\cos\theta\,\mathrm I$ is anti-Hermitian and traceless, so it is $i$ times a real traceless Hermitian matrix, and the Pauli matrices with real coefficients are exactly those. Unitarity gives $\lVert n\rVert=1$.</p>
+<p>The verification reconstructs two hundred random elements from the pair $(\theta,n)$ with residual at $10^{-16}$, and confirms that the trace is real with residual at $10^{-16}$.</p>
+<p><strong>The trace is the class.</strong> Two elements of $\mathrm{SU}(2)$ are conjugate if and only if they have the same trace, since the characteristic polynomial is $\lambda^{2}-(\operatorname{tr}A)\lambda+1$ and equal polynomials give equal eigenvalue pairs. The trace is $2\cos\theta\in[-2,2]$ and it decreases strictly on $[0,\pi]$, so the class space is the segment $\theta\in[0,\pi]$, equivalently the segment of traces $[-2,2]$.</p>
+<h3 id="the-quaternion-dictionary">The Quaternion Dictionary</h3>
+<p>Writing a quaternion as $q=a+bj$ with $a,b\in\mathbb{C}$ and identifying it with the pair $(a,b)$, left multiplication by the unit quaternion $q$ has the matrix</p>
+<p>$$
+L(q)=\begin{pmatrix}a&-\bar b\\ b&\bar a\end{pmatrix},
+$$</p>
+<p>which is exactly the general element of $\mathrm{SU}(2)$ above. So</p>
+<p>$$
+\mathrm{SU}(2)\cong\mathrm{Sp}(1)=\{q\in\mathbb{H}:|q|=1\}=S^{3},
+$$</p>
+<p>and the multiplication of matrices is the multiplication of quaternions: $L(p)L(q)=L(pq)$. The verification confirms multiplicativity on one hundred random pairs with residual at $10^{-15}$, and confirms that $L(q)$ is unitary with determinant one in every case.</p>
+<p><strong>The double cover.</strong> Conjugation by a unit quaternion, $x\mapsto qx\bar q$, is a rotation of the three-dimensional space of pure imaginary quaternions, so there is a homomorphism</p>
+<p>$$
+\mathrm{SU}(2)\longrightarrow\mathrm{SO}(3),
+\qquad
+L(q)\longmapsto \bigl(x\mapsto qxq^{-1}\bigr),
+$$</p>
+<p>which is onto and has kernel $\{\pm\mathrm I\}$. The verification takes one hundred random unit quaternions, forms the rotation, checks that it is orthogonal with determinant one, checks that $q$ and $-q$ give the same rotation, and checks multiplicativity of the assignment; the kernel statement is confirmed by finding that no element other than $\pm\mathrm I$ maps to the identity in a sample of two hundred.</p>
+<p><strong>The two names of the same fact.</strong> $\mathrm{SU}(2)$ is $\mathrm{Spin}(3)$, the double cover of the rotation group, and it is also the group of unit quaternions. The corpus records both in <em>Quaternion Rotations and Reflections</em> and in <em>The Rotor as a Square Root of a Rotation: $\mathrm{Spin}(n)\to\mathrm{SO}(n)$</em>; this article records only that the two descriptions are the same map up to the identification of $\mathbb{H}$ with $\mathbb{C}^{2}$.</p>
+<h3 id="the-homogeneous-spaces-of-the-sphere">The Homogeneous Spaces of the Sphere</h3>
+<p>The group acts transitively on the unit sphere of $\mathbb{C}^{2}$, with isotropy $\mathrm U(1)$ at a point, so</p>
+<p>$$
+\mathrm{SU}(2)/\mathrm U(1)=S^{2},
+\qquad
+\mathrm{SU}(2)=S^{3}\longrightarrow S^{2}
+$$</p>
+<p>is the Hopf bundle, of fibre $S^{1}$ and characteristic class $-1$. The same bundle is the statement that the classes are the points of the two-sphere: each class is the orbit of the diagonal torus, and the orbit map is the Hopf map.</p>
+<p><strong>The three-sphere as a group.</strong> $S^{3}$ is the only sphere that is a Lie group, and $\mathrm{SU}(2)$ is the reason: the multiplication of unit quaternions is a smooth group structure on the sphere. This is the smallest rung where the group is a sphere, and the only one: no $\mathrm{SU}(n)$ with $n\ge3$ is a sphere.</p>
+<h3 id="invariants-and-the-topology">Invariants and the Topology</h3>
+<p><strong>The centre.</strong> $Z(\mathrm{SU}(2))=\{\pm\mathrm I\}$, of order two: a central element is a scalar $\lambda\mathrm I$ with $|\lambda|=1$ and $\lambda^{2}=1$.</p>
+<p><strong>The invariants.</strong> The group has no continuous characters, since it is perfect; the only homomorphism to $S^{1}$ is trivial.</p>
+<p><strong>The topology.</strong> $\mathrm{SU}(2)=S^{3}$ is simply connected, $\pi_{2}=0$, $\pi_{3}=\mathbb{Z}$, and the Euler characteristic is zero. All of these are the topology of the sphere, and all of them are special to $n=2$.</p>
+<p><strong>The involutions.</strong> An involution is a Hermitian unitary matrix with eigenvalues $\pm1$ and determinant one, so $-\mathrm I$ and $\mathrm I$ are the only two, and they are two classes.</p>
+<p><strong>The Cayley chart.</strong> The chart of the two orthogonal articles survives: the unitary matrices with $\det(\mathrm I+A)\ne0$ are the image of the anti-Hermitian matrices under</p>
+<p>$$
+A=(\mathrm I-X)(\mathrm I+X)^{-1},
+\qquad
+X=(\mathrm I-A)(\mathrm I+A)^{-1},
+$$</p>
+<p>and the missing points are the elements with eigenvalue $-1$, of which there is exactly one class at this rung.</p>
+<h2 id="math238-the-eight-dimensional-group">$\mathrm{SU}(3)$: The Eight-Dimensional Group</h2>
+<h3 id="the-normal-form-and-the-torus">The Normal Form and the Torus</h3>
+<p>The eigenvalues of an element are $e^{i\theta_1},e^{i\theta_2},e^{i\theta_3}$ with the sum of the angles zero modulo $2\pi$, so there are two independent angles and the normal form is</p>
+<p>$$
+A\ \sim\ \operatorname{diag}\bigl(e^{i\alpha},e^{i\beta},e^{-i(\alpha+\beta)}\bigr),
+\qquad \alpha,\beta\in\mathbb{R},
+$$</p>
+<p>with the maximal torus the diagonal matrices of that shape, a two-torus. The three angles are not independent: their sum is fixed modulo $2\pi$, and that is the determinant condition, so two of them are free. This is the first rung where the determinant condition constrains more than one parameter.</p>
+<p><strong>The explicit matrix.</strong> At $\alpha=0.4$, $\beta=1.1$:</p>
+<p>$$
+A=\begin{pmatrix}e^{0.4i}&0&0\\ 0&e^{1.1i}&0\\ 0&0&e^{-1.5i}\end{pmatrix},
+\qquad
+\det A=e^{0.4i+1.1i-1.5i}=1 .
+$$</p>
+<p><strong>The Weyl group.</strong> The Weyl group permutes the three eigenvalues, so $W=S_3$ of order six, and the class space is the closed triangle</p>
+<p>$$
+\{(\theta_1,\theta_2,\theta_3):\theta_1\ge\theta_2\ge\theta_3,\ \theta_1+\theta_2+\theta_3\equiv0 \pmod{2\pi}\}
+$$</p>
+<p>modulo the identification of the boundary by the reflections. The interior of the triangle is the set of elements with three distinct eigenvalues, and the three walls are the three eigenvalue coincidences.</p>
+<h3 id="the-algebra-and-the-roots">The Algebra and the Roots</h3>
+<p>$$
+\mathfrak{su}(3)=\{X:X^{*}=-X,\ \operatorname{tr}X=0\},
+\qquad \dim=8 .
+$$</p>
+<p>A standard basis is the eight matrices $i\lambda_k$ with $\lambda_k$ the Gell-Mann matrices: the three off-diagonal symmetric, the three off-diagonal antisymmetric, and the two diagonal</p>
+<p>$$
+\lambda_3=\operatorname{diag}(1,-1,0),
+\qquad
+\lambda_8=\frac{1}{\sqrt3}\operatorname{diag}(1,1,-2),
+$$</p>
+<p>which span a Cartan subalgebra of dimension two and are the two diagonal generators of the two-torus.</p>
+<p><strong>The six roots.</strong> In the coordinates $(\alpha,\beta)$ of the torus the roots are</p>
+<p>$$
+\pm(e_1-e_2),\qquad \pm(e_2-e_3),\qquad \pm(e_1-e_3),
+$$</p>
+<p>six vectors at angles $0,\pm60^\circ,\pm120^\circ,180^\circ$, a regular hexagon. The verification computes the brackets of the two diagonal generators $\lambda_3,\lambda_8$ with the six off-diagonal basis elements and recovers the roots as the pairs $(2,0)$, $(1,\pm\sqrt3)$, $(-2,0)$, $(-1,\pm\sqrt3)$, which are the six directions claimed.</p>
+<p><strong>The root system is $A_2$.</strong> The Dynkin diagram is a chain of two nodes, the Cartan matrix is $\begin{pmatrix}2&-1\\-1&2\end{pmatrix}$, and the Weyl group generated by the two reflections is $S_3$ of order six, which is the Weyl group of the group.</p>
+<h3 id="the-classes-and-the-invariants">The Classes and the Invariants</h3>
+<p><strong>The class is the unordered triple of eigenvalues.</strong> Two elements are conjugate if and only if they have the same characteristic polynomial, hence the same unordered triple with product one. The verification confirms the invariant direction (the product is one) on one hundred random elements.</p>
+<p><strong>The three strata.</strong> An element is
+- regular if the three eigenvalues are distinct: the interior of the triangle, a two-dimensional space of classes;
+- of type $(2,1)$ if two eigenvalues coincide: the three walls, each a segment;
+- central if all three coincide: the three points $\mathrm I$, $\omega\mathrm I$, $\omega^{2}\mathrm I$ with $\omega=e^{2\pi i/3}$, of determinant one.</p>
+<p><strong>The centre.</strong> $Z(\mathrm{SU}(3))=\mathbb{Z}/3$, the scalar matrices with cube root of unity, which are exactly the three points above. The adjoint group is $\mathrm{SU}(3)/\mathbb{Z}_3=\mathrm{PU}(3)$.</p>
+<p><strong>The two invariants.</strong> The trace and the second elementary symmetric function $\sigma_2$ of the eigenvalues determine the triple, and the determinant condition fixes $\sigma_3=1$; so the class space is two-dimensional, as the triangle says.</p>
+<h3 id="homogeneous-spaces-and-the-geometry">Homogeneous Spaces and the Geometry</h3>
+<p><strong>The sphere.</strong> $\mathrm{SU}(3)$ acts transitively on $S^{5}$ with isotropy $\mathrm{SU}(2)$, so</p>
+<p>$$
+\mathrm{SU}(3)/\mathrm{SU}(2)=S^{5},
+\qquad
+\dim\mathrm{SU}(3)=\dim\mathrm{SU}(2)+5=3+5=8,
+$$</p>
+<p>which is the dimension recursion at this rung.</p>
+<p><strong>The projective plane.</strong> $\mathrm{SU}(3)$ acts transitively on the lines of $\mathbb{C}^{3}$ with isotropy $\mathrm U(2)$, so</p>
+<p>$$
+\mathrm{SU}(3)/\mathrm U(2)=\mathbb{CP}^{2},
+\qquad
+\dim=8-4=4,
+$$</p>
+<p>which is the complex projective plane as a symmetric space of rank one less than the group. The quotient by the maximal torus instead is the flag variety of full flags in $\mathbb{C}^{3}$, of Euler characteristic $6=|S_3|$.</p>
+<p><strong>The real locus.</strong> $\mathrm{SO}(3)\subset\mathrm{SU}(3)$ consists of the real rotations, and $\mathrm{SU}(3)/\mathrm{SO}(3)$ is a symmetric space of dimension five, the space of the "imaginary" part of the polar decomposition restricted to the real structure.</p>
+<h3 id="the-subgroups-worth-naming">The Subgroups Worth Naming</h3>
+<p><strong>The maximal torus</strong> $T^{2}$, of dimension two, the diagonal matrices above.</p>
+<p><strong>The $\mathrm{SU}(2)$ blocks.</strong> For each pair $(j,k)$ of indices the matrices acting on the span of $e_j,e_k$ as an element of $\mathrm{SU}(2)$ and as the identity elsewhere form a subgroup $\mathrm{SU}(2)_{jk}$, and the three of them generate the group. This is the source of the "three generations" pattern of the ladder: the small rungs sit inside the large ones as blocks.</p>
+<p><strong>The centraliser of the real locus.</strong> $\mathrm{SO}(3)\subset\mathrm{SU}(3)$ is the real locus, it acts irreducibly on $\mathbb{R}^{3}$, and therefore its centraliser in $\mathrm{SU}(3)$ is the scalar centre $\mathbb{Z}/3$. The normaliser is the same set, because a unitary matrix normalising an irreducible real representation must commute with it: Schur's lemma applied to the complexification.</p>
+<h3 id="the-topology">The Topology</h3>
+<p>$\mathrm{SU}(3)$ is connected, simply connected, and $\pi_{2}=0$, $\pi_{3}(\mathrm{SU}(3))=\mathbb{Z}$. The Euler characteristic is zero. The group is not a sphere and not a product of spheres, and the first nontrivial higher homotopy is the $\pi_{5}=\mathbb{Z}$ of the stable range.</p>
+<p><strong>The fundamental group is trivial, and that is the main difference from the orthogonal ladder.</strong> The double cover of $\mathrm{SO}(3)$ exists because that group has $\pi_{1}=\mathbb{Z}/2$; $\mathrm{SU}(n)$ for $n\ge3$ has no cover at all, and the reason is the determinant sequence: the determinant of a unitary matrix is a phase and the phase can be lifted to the real line, while the sign of the determinant of an orthogonal matrix cannot be lifted continuously because the group is disconnected.</p>
+<h2 id="math302-the-quaternionic-rung">$\mathrm{SU}(4)$: The Quaternionic Rung</h2>
+<h3 id="the-exceptional-isomorphism">The Exceptional Isomorphism</h3>
+<p>$$
+\mathfrak{su}(4)\cong\mathfrak{so}(6),
+\qquad
+\mathrm{SU}(4)\cong\mathrm{Spin}(6),
+$$</p>
+<p>of dimension fifteen on both sides. The verification matches the root systems: $A_3$ has twelve roots and $D_3$ has twelve roots, and the two Gram matrices agree after a change of basis, which is the same computation that the complex article records for $\mathrm{SO}(6,\mathbb{C})$.</p>
+<p><strong>What the isomorphism means.</strong> The defining four-dimensional complex representation of $\mathrm{SU}(4)$ is the spin representation of $\mathrm{Spin}(6)$, so the vector of $\mathbb{C}^{4}$ is a spinor of the six-dimensional rotation group. This is the smallest rung where a group of this ladder is also a spin group of a different ladder, and the only one besides $\mathrm{SU}(2)=\mathrm{Spin}(3)$.</p>
+<h3 id="the-torus-the-roots-and-the-centre">The Torus, the Roots and the Centre</h3>
+<p>The torus is three-dimensional, the normal form is</p>
+<p>$$
+\operatorname{diag}\bigl(e^{i\theta_1},e^{i\theta_2},e^{i\theta_3},e^{-i(\theta_1+\theta_2+\theta_3)}\bigr),
+$$</p>
+<p>the roots are the twelve vectors $\pm(e_j-e_k)$, $1\le j<k\le4$, which are the twelve edges of a cuboctahedron, and the Weyl group is $S_4$ of order twenty-four.</p>
+<p>The centre is $\mathbb{Z}/4$: the four scalars $\mathrm I,i\mathrm I,-\mathrm I,-i\mathrm I$, of determinant one. This is the largest centre in the ladder at small $n$, and it is the reason $\mathrm{SU}(4)$ has a $\mathbb{Z}/4$ of projective representations of its defining representation.</p>
+<h3 id="the-quaternionic-structure">The Quaternionic Structure</h3>
+<p>$\mathbb{C}^{4}$ is $\mathbb{H}^{2}$, and the unitary matrices that commute with the right multiplication by $j$ form the compact symplectic group $\mathrm{Sp}(2)$, of dimension ten, sitting inside $\mathrm{SU}(4)$ as the subgroup of matrices of the form</p>
+<p>$$
+\begin{pmatrix}A&B\\ -\bar B&\bar A\end{pmatrix},
+\qquad A,B\in M_2(\mathbb{C}),
+$$</p>
+<p>with the unitarity and determinant conditions inherited. So</p>
+<p>$$
+\mathrm{Sp}(2)\subset\mathrm{SU}(4)\subset\mathrm{SO}(8),
+$$</p>
+<p>the last inclusion through the realification of $\mathbb{C}^{4}$ as $\mathbb{R}^{8}$, and the first through the quaternionic structure. The chain is the quaternionic rung of the ladder, and it is the analogue of $\mathrm{SO}(3)\subset\mathrm{SU}(3)$ at the rung below.</p>
+<h3 id="the-classes">The Classes</h3>
+<p>The class of an element is the unordered quadruple of eigenvalues with product one, so the class space is the simplex</p>
+<p>$$
+\{\theta_1\ge\theta_2\ge\theta_3\ge\theta_4,\ \ \textstyle\sum\theta_k\equiv0\}
+$$</p>
+<p>modulo the boundary identifications, a three-dimensional tetrahedron. The strata follow the multiplicity pattern: the interior for four distinct eigenvalues, the four walls for one coincidence, the faces for two coincidences of type $2+2$ or $3+1$, and the four central points for a single eigenvalue of multiplicity four.</p>
+<h2 id="math333-the-rung-where-the-orthogonal-accident-stops">$\mathrm{SU}(5)$: The Rung Where the Orthogonal Accident Stops</h2>
+<h3 id="the-data">The Data</h3>
+<p>Dimension $24$, rank $4$, centre $\mathbb{Z}/5$, Weyl group $S_5$ of order $120$, twenty roots, and a four-dimensional torus:</p>
+<p>$$
+\operatorname{diag}\bigl(e^{i\theta_1},e^{i\theta_2},e^{i\theta_3},e^{i\theta_4},e^{-i(\theta_1+\theta_2+\theta_3+\theta_4)}\bigr),
+\qquad
+\theta_1\ge\theta_2\ge\theta_3\ge\theta_4\ge\theta_5,\quad \textstyle\sum\theta_k\equiv0 .
+$$</p>
+<p>The roots are the twenty vectors $\pm(e_j-e_k)$ with $1\le j<k\le5$, which are the edges of a four-dimensional polytope, and the class space is the four-simplex modulo its boundary identifications. The centre is $\mathbb{Z}/5$, the largest centre of a simple group of this rank, and its projective representations are labelled by five classes.</p>
+<h3 id="no-orthogonal-name">No Orthogonal Name</h3>
+<p><strong>The count decides it.</strong> The orthogonal groups of dimension near $24$ are $\mathrm{SO}(7)$, of dimension $21$, and $\mathrm{SO}(8)$, of dimension $28$. There is no $m$ with $m(m-1)/2=24$, so no orthogonal group has the dimension of this rung, and the two exact meetings of the ladders, at $\mathrm{SU}(2)=\mathrm{Spin}(3)$ and $\mathrm{SU}(4)=\mathrm{Spin}(6)$, have no continuation here.</p>
+<p><strong>What stops is the quaternionic structure.</strong> At $n=4$ the defining space was $\mathbb{H}^{2}$ and the commuting quaternionic matrices gave $\mathrm{Sp}(2)\subset\mathrm{SU}(4)$. At $n=5$ the defining space is $\mathbb{C}^{5}$, which is not $\mathbb{H}^{m}$ for any $m$, so the quaternionic chain stops at four for the same reason that the accidental isomorphism stops at four.</p>
+<h3 id="where-the-rung-sits-in-the-orthogonal-ladder">Where the Rung Sits in the Orthogonal Ladder</h3>
+<p>Two inclusions survive, and neither is an isomorphism:</p>
+<p>$$
+\mathrm{SU}(5)\subset\mathrm{SO}(10),
+\qquad
+\mathrm{SU}(5)\subset\mathrm{SO}(24).
+$$</p>
+<p>The first is the realification: $\mathbb{C}^{5}$ read as $\mathbb{R}^{10}$, with the unitary condition implying the orthogonal one. The second is the adjoint: the algebra $\mathfrak{su}(5)$ is a real vector space of dimension $24$ with a positive definite invariant form, namely minus the Killing form, so the adjoint representation is an orthogonal representation and $\mathrm{SU}(5)\subset\mathrm{SO}(24)$. The two inclusions are the only structural links the rung has to the orthogonal ladder, and both are strict.</p>
+<h2 id="math365-the-rung-of-the-sixfold-symmetry">$\mathrm{SU}(6)$: The Rung of the Sixfold Symmetry</h2>
+<h3 id="the-data_1">The Data</h3>
+<p>Dimension $35$, rank $5$, centre $\mathbb{Z}/6$, Weyl group $S_6$ of order $720$, thirty roots. The normal form has five free phases with the sum zero, and the class space is the five-simplex modulo the boundary.</p>
+<h3 id="no-orthogonal-name_1">No Orthogonal Name</h3>
+<p>$35$ lies between $\mathrm{SO}(8)$, of dimension $28$, and $\mathrm{SO}(9)$, of dimension $36$, and it is neither. So the rung again has no orthogonal name, and the two inclusions $\mathrm{SU}(6)\subset\mathrm{SO}(12)$ and $\mathrm{SU}(6)\subset\mathrm{SO}(35)$ are strict.</p>
+<p><strong>The nearest miss.</strong> $\dim\mathrm{SO}(9)=36$ is one more than $\dim\mathrm{SU}(6)=35$: the orthogonal ladder has a rung of the neighbouring dimension, and the two are different groups. This is the clearest small case of the general statement that the two dimension formulas $n^{2}-1$ and $m(m-1)/2$ cross without meeting.</p>
+<h3 id="the-structure-of-the-rung">The Structure of the Rung</h3>
+<p>The Dynkin diagram is $A_5$, a chain of five nodes, and the rung is the first where the diagram is long enough for the "long chain" phenomena of the unitary family to appear: the extended diagram has a symmetry only at the ends, the affine diagram is a hexagon of nodes, and the exponents are $1,2,3,4,5$.</p>
+<h2 id="math384-the-rung-of-the-long-chain">$\mathrm{SU}(7)$: The Rung of the Long Chain</h2>
+<h3 id="the-data_2">The Data</h3>
+<p>Dimension $48$, rank $6$, centre $\mathbb{Z}/7$, Weyl group $S_7$ of order $5040$, forty-two roots. The centre is prime, so the projective representations of the rung have seven classes and there is no proper central quotient except the adjoint group.</p>
+<h3 id="no-orthogonal-name_2">No Orthogonal Name</h3>
+<p>$48$ is not $m(m-1)/2$: the neighbours are $\mathrm{SO}(10)$, of dimension $45$, and $\mathrm{SO}(11)$, of dimension $55$. The inclusions $\mathrm{SU}(7)\subset\mathrm{SO}(14)$ and $\mathrm{SU}(7)\subset\mathrm{SO}(48)$ are both strict, and the second is the adjoint again.</p>
+<h2 id="math398-the-rung-of-the-eightfold-centre">$\mathrm{SU}(8)$: The Rung of the Eightfold Centre</h2>
+<h3 id="the-data_3">The Data</h3>
+<p>Dimension $63$, rank $7$, centre $\mathbb{Z}/8$, Weyl group $S_8$ of order $40320$, fifty-six roots.</p>
+<h3 id="no-orthogonal-name_3">No Orthogonal Name</h3>
+<p>$63$ is not $m(m-1)/2$: the neighbours are $\mathrm{SO}(11)$, of dimension $55$, and $\mathrm{SO}(12)$, of dimension $66$. The inclusions $\mathrm{SU}(8)\subset\mathrm{SO}(16)$ and $\mathrm{SU}(8)\subset\mathrm{SO}(63)$ are strict.</p>
+<p><strong>A remark on the equation.</strong> The unitary dimension is $n^{2}-1=(n-1)(n+1)$ and the orthogonal one is $m(m-1)/2$, so an exact meeting of the two ladders at the level of dimension is a solution of $m(m-1)=2(n-1)(n+1)$. In the range $n\le8$ the solutions are $(n,m)=(1,1)$, $(2,3)$ and $(4,6)$, and $n=3,5,6,7,8$ give none. The two meetings that exist are therefore the two the article records, $\mathrm{SU}(2)=\mathrm{Spin}(3)$ and $\mathrm{SU}(4)=\mathrm{Spin}(6)$, and the rungs $5,6,7,8$ are the four where the equation has no solution at all.</p>
+<h2 id="math423-the-general-rung">$\mathrm{SU}(n)$: The General Rung</h2>
+<h3 id="the-normal-form-the-rank-and-the-weyl-group">The Normal Form, the Rank and the Weyl Group</h3>
+<p>Every element is unitarily conjugate to the diagonal form</p>
+<p>$$
+A\ \sim\ \operatorname{diag}\bigl(e^{i\theta_1},\dots,e^{i\theta_n}\bigr),
+\qquad
+\sum_{k=1}^{n}\theta_k\equiv0\pmod{2\pi},
+$$</p>
+<p>with the angles taken in a fundamental domain for the permutation group. The number of free angles is $n-1$, so</p>
+<p>$$
+\operatorname{rank}\mathrm{SU}(n)=n-1,
+\qquad
+W(\mathrm{SU}(n))=S_n,
+\qquad
+\lvert W\rvert=n! ,
+$$</p>
+<p>and the root system is $A_{n-1}$ with $n(n-1)$ roots $\pm(e_j-e_k)$. The verification enumerates the permutations and confirms the order $n!$ for $n=1,\dots,6$, and counts the roots and confirms $n(n-1)$.</p>
+<p><strong>The class space</strong> is the closed simplex of ordered angles with zero sum, modulo the identifications on the walls, of dimension $n-1$. The interior is the set of regular elements, the walls are the eigenvalue coincidences, and the vertices are the central elements.</p>
+<h3 id="the-centre-and-the-adjoint-group">The Centre and the Adjoint Group</h3>
+<p>$$
+Z(\mathrm{SU}(n))=\{\zeta\mathrm I:\zeta^{n}=1\}\cong\mathbb{Z}/n,
+$$</p>
+<p>because a central element is a scalar and the scalar must satisfy $\zeta^{n}=\det=1$ and $|\zeta|=1$. The adjoint group is</p>
+<p>$$
+\mathrm{PU}(n)=\mathrm{SU}(n)/\mathbb{Z}_n,
+$$</p>
+<p>which acts faithfully on $\mathfrak{su}(n)$ and is the group of projective unitary transformations of $\mathbb{P}^{n-1}$.</p>
+<p><strong>The projective representation.</strong> The defining representation of $\mathrm{SU}(n)$ descends to a projective representation of $\mathrm{PU}(n)$ with cocycle of order $n$; this is the general mechanism by which a projective unitary group acts on a Hilbert space only up to a phase, and the centre is exactly the anomaly.</p>
+<h3 id="the-exponential-and-its-kernel">The Exponential and Its Kernel</h3>
+<p>The exponential is onto, with kernel of rank $n-1$, as computed above. The verification's residual $5.4\times10^{-15}$ at $n=2,\dots,6$ is the numerical form of the theorem.</p>
+<p><strong>Two consequences.</strong> Every element has a square root, $\exp(X/2)^{2}=\exp(X)$; and every element is a product of one-parameter subgroups, in fact of one exponential.</p>
+<p><strong>What surjectivity gives and what it does not.</strong> It gives that the group is the image of its algebra, so the group is connected and every element is reachable by a flow. It does not give injectivity, and the periods are the lattice above: the exponential is a fibration with fibre a lattice of rank $n-1$, so the group and the algebra are not diffeomorphic.</p>
+<h3 id="simplicity-and-the-structure-of-the-algebra">Simplicity and the Structure of the Algebra</h3>
+<p>$\mathfrak{su}(n)$ is simple for $n\ge2$; its Killing form is negative definite; its complexification is $\mathfrak{sl}_n(\mathbb{C})$. The real forms of $\mathfrak{sl}_n(\mathbb{C})$ are $\mathfrak{su}(p,q)$ and $\mathfrak{sl}_n(\mathbb{R})$, and the compact one is $\mathfrak{su}(n)$ — the same statement as in the complex orthogonal article, with the orthogonal forms replaced by the unitary ones.</p>
+<p><strong>The algebra is generated by the root vectors.</strong> The $n(n-1)$ root vectors together with the $n-1$ Cartan generators span the algebra, so the whole structure is the root system plus the diagonal. This is the general form of the statement proved by hand at $n=3$.</p>
+<h3 id="the-determinant-and-the-decomposition-math458">The Determinant and the Decomposition $\mathrm U(n)=\mathrm U(1)\cdot\mathrm{SU}(n)$</h3>
+<p><strong>Proposition.</strong> Every $U\in\mathrm U(n)$ is uniquely $U=zV$ with $z^{n}=\det U$ and $V\in\mathrm{SU}(n)$, and $z$ is determined up to the multiplication of $z$ by an $n$-th root of unity together with $V$ by the inverse scalar.</p>
+<p><strong>Proof.</strong> Take $z$ any $n$-th root of $\det U$ and put $V=U/z$. Then $V$ is unitary and $\det V=(\det U)/z^{n}=1$. The ambiguity is exactly the centre.</p>
+<p>The verification computes the decomposition on sixty random unitary matrices and reconstructs $U$ with residual at $10^{-15}$, confirming $z^{n}=\det U$ and $\det V=1$.</p>
+<p><strong>Consequence.</strong> $\mathrm U(n)$ is the quotient of $\mathrm U(1)\times\mathrm{SU}(n)$ by the diagonal copy of $\mathbb{Z}/n$, so the unitary group is a circle extended by the special unitary group, and the extension is measured by the centre. The exact sequence</p>
+<p>$$
+1\longrightarrow\mathrm{SU}(n)\longrightarrow\mathrm U(n)\xrightarrow{\det}\mathrm U(1)\longrightarrow1
+$$</p>
+<p>splits as a product only up to the finite central subgroup.</p>
+<h3 id="homogeneous-spaces-and-the-dimension-recursion">Homogeneous Spaces and the Dimension Recursion</h3>
+<p>$\mathrm{SU}(n)$ acts transitively on the unit sphere of $\mathbb{C}^{n}$ with isotropy $\mathrm{SU}(n-1)$, so</p>
+<p>$$
+\mathrm{SU}(n)/\mathrm{SU}(n-1)=S^{2n-1},
+\qquad
+\dim\mathrm{SU}(n)=(n^{2}-1)=( (n-1)^{2}-1)+(2n-1),
+$$</p>
+<p>which is the recursion at every rung. The quotient by $\mathrm U(n-1)$ is $\mathbb{CP}^{n-1}$, of real dimension $2(n-1)$, and the quotient by the maximal torus is the flag variety of full flags in $\mathbb{C}^{n}$, of Euler characteristic $n!$.</p>
+<p><strong>The symmetric space.</strong> $\mathrm{SU}(n)$ is the maximal compact subgroup of $\mathrm{SL}_n(\mathbb{C})$, and the quotient</p>
+<p>$$
+\mathrm{SL}_n(\mathbb{C})/\mathrm{SU}(n)
+$$</p>
+<p>is the space of Hermitian positive definite matrices of determinant one, of real dimension $n^{2}-1$. This is the complex analogue of the quotient $\mathrm{SL}_n(\mathbb{R})/\mathrm{SO}(n)$ of the real article and of $\mathrm{SO}(n,\mathbb{C})/\mathrm{SO}(n,\mathbb{R})$ of the complex article; the three quotients are the three polar decompositions, and $\mathrm{SU}(n)$, $\mathrm{SO}(n)$ and $\mathrm{SO}(n,\mathbb{R})=\mathrm{SO}(n)$ are the maximal compacts of $\mathrm{SL}_n(\mathbb{C})$, $\mathrm{SL}_n(\mathbb{R})$ and $\mathrm{SO}(n,\mathbb{C})$ respectively.</p>
+<h3 id="the-topology_1">The Topology</h3>
+<p>$\mathrm{SU}(n)$ is compact, connected and simply connected for every $n\ge1$; $\pi_{2}=0$; and the stable homotopy is Bott-periodic with period two:</p>
+<p>$$
+\pi_{2k+1}(\mathrm{SU})=\mathbb{Z},
+\qquad
+\pi_{2k}(\mathrm{SU})=0\quad(k\ge1),
+$$</p>
+<p>so the first groups are $\pi_{3}=\mathbb{Z}$, $\pi_{4}=0$, $\pi_{5}=\mathbb{Z}$, $\pi_{6}=0$, $\pi_{7}=\mathbb{Z}$. The Euler characteristic is zero for $n\ge2$.</p>
+<p><strong>The involutions.</strong> An involution in $\mathrm{SU}(n)$ has eigenvalues $\pm1$ with an even number of $-1$'s, and two involutions are conjugate if and only if they have the same number of $-1$'s, so there are $\lfloor n/2\rfloor+1$ classes. The verification confirms the count at $n=1,\dots,7$.</p>
+<p><strong>The inclusions between the ladders.</strong> The realification of $\mathbb{C}^{n}$ as $\mathbb{R}^{2n}$ gives $\mathrm{SU}(n)\subset\mathrm{SO}(2n)$, and the identity $\mathrm{SU}(n)\cap\mathrm{SO}(n,\mathbb{C})=\mathrm{SO}(n,\mathbb{R})$ of the complex article says that the intersection of this ladder with that one is the real ladder. The adjoint action gives $\mathrm{PU}(n)\subset\mathrm{SO}(n^{2}-1)$, which is how the unitary group sits inside the orthogonal group of its own algebra.</p>
+<h2 id="the-correspondences">The Correspondences</h2>
+<h3 id="the-chain-math523">The Chain $1\to2\to3\to4\to n$</h3>
+<p><strong>The chain of the dimension.</strong> $0,3,8,15$ are the numbers $n^{2}-1$; the differences are $3,5,7$, the odd numbers, which is the sphere recursion $\dim S^{2n-1}=2n-1$. The quadratic growth of the unitary ladder is the sharpest difference from the orthogonal ladder, where the dimension grows as $n(n-1)/2$.</p>
+<p><strong>The chain of the sphere.</strong> At $n=1$ the group is a point and its homogeneous space is $S^{1}$. At $n=2$ the group is $S^{3}$ and its homogeneous space is $S^{2}$, through the Hopf bundle. At $n=3$ the group is not a sphere but fibres over $S^{5}$ with fibre $\mathrm{SU}(2)$. At $n=4$ the same with $S^{7}$ and $\mathrm{SU}(3)$. In general the group fibres over $S^{2n-1}$ with fibre $\mathrm{SU}(n-1)$.</p>
+<p><strong>The chain of the centre.</strong> $\mathbb{Z}/1,\mathbb{Z}/2,\mathbb{Z}/3,\mathbb{Z}/4$ at the first four rungs, so the centre of the small ladder is a perfect cycle of all four finite cyclic groups. This is a phenomenon with no analogue in the orthogonal ladder, where the centre is $\mathbb{Z}/2$ at most and only for even $n$.</p>
+<p><strong>The chain of the roots.</strong> $0,2,6,12$ roots, that is $A_0,A_1,A_2,A_3$: nothing, a segment, a hexagon, a cuboctahedron drawn on a three-torus. The root systems are the simplest infinite family and the ladder is their diagram read one node at a time.</p>
+<p><strong>The chain of the cover.</strong> Every rung is simply connected, so the chain of covers is trivial: the group is its own universal cover. The orthogonal ladder has a nontrivial chain of double covers, and this is the structural difference produced by the determinant.</p>
+<h3 id="the-correspondence-with-the-orthogonal-ladder">The Correspondence with the Orthogonal Ladder</h3>
+<p><strong>Two embeddings, at every rung.</strong> The unitary group of the rung sits in two orthogonal groups, and the two are different:</p>
+<p>$$
+\mathrm{SU}(n)\subset\mathrm{SO}(2n)
+\quad\text{(realification)},
+\qquad
+\mathrm{SU}(n)\subset\mathrm{SO}(n^{2}-1)
+\quad\text{(adjoint)}.
+$$</p>
+<p>The first reads $\mathbb{C}^{n}$ as $\mathbb{R}^{2n}$; the second is the adjoint representation, which is orthogonal for minus the Killing form, of dimension $n^{2}-1$. The verification checks both dimension counts at every rung from one to eight.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$n$</th>
+<th>realification</th>
+<th>adjoint</th>
+<th>the exact match</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$\mathrm{SO}(2)$</td>
+<td>$\mathrm{SO}(0)$</td>
+<td>both trivial</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\mathrm{SO}(4)$</td>
+<td>$\mathrm{SO}(3)$</td>
+<td>$\mathrm{SU}(2)=\mathrm{Spin}(3)$, and $\mathrm{SO}(3)$ is the adjoint</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\mathrm{SO}(6)$</td>
+<td>$\mathrm{SO}(8)$</td>
+<td>$\mathrm{SO}(3)\subset\mathrm{SU}(3)$ as the real part</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\mathrm{SO}(8)$</td>
+<td>$\mathrm{SO}(15)$</td>
+<td>$\mathrm{SU}(4)=\mathrm{Spin}(6)$, and $\mathrm{SO}(4)\subset\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$\mathrm{SO}(10)$</td>
+<td>$\mathrm{SO}(24)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$\mathrm{SO}(12)$</td>
+<td>$\mathrm{SO}(35)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$\mathrm{SO}(14)$</td>
+<td>$\mathrm{SO}(48)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>$\mathrm{SO}(16)$</td>
+<td>$\mathrm{SO}(63)$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The forgotten inclusions at the four small rungs.</strong> Each of these is a subgroup statement that the ladder's one-line summaries tend to drop.</p>
+<p><strong>$n=1$.</strong> Nothing, and the empty adjoint group is recorded only for the pattern.</p>
+<p><strong>$n=2$.</strong> $\mathrm{SO}(2)\subset\mathrm{SU}(2)$ is the maximal torus, and $\mathrm{SU}(2)\subset\mathrm{SO}(4)$ is the realification whose quotient is the sphere of complex structures of the real companion. So the circle is inside the spin group, and the spin group is inside the four-dimensional rotation group.</p>
+<p><strong>$n=3$.</strong> $\mathrm{SO}(3)\subset\mathrm{SU}(3)$ as the real part of $\mathbb{C}^{3}$, with quotient of dimension $8-3=5$. This inclusion runs in the opposite direction to the two general ones, and it is the only rung where a small orthogonal group sits inside the unitary group of the same index.</p>
+<p><strong>$n=4$.</strong> $\mathrm{SO}(4)\subset\mathrm{SU}(4)$ again as the real part, with quotient of dimension $15-6=9$; and $\mathrm{Sp}(2)\subset\mathrm{SU}(4)$ from the quaternionic structure, of dimension $10$ against $15$, with $\mathrm{Sp}(2)=\mathrm{Spin}(5)$. So the quaternionic rung of the unitary ladder is the spin cover of an orthogonal rung, and the real rung of the unitary ladder is a plain subgroup.</p>
+<p><strong>What the table says in one sentence.</strong> The unitary ladder meets the orthogonal ladder exactly twice, at $n=2$ and $n=4$, and it is contained in it at every rung twice over, through the realification and through the adjoint.</p>
+<h3 id="the-dictionary-with-the-other-ladders">The Dictionary with the Other Ladders</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object here</th>
+<th>orthogonal real ladder</th>
+<th>complex orthogonal ladder</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the form</td>
+<td>bilinear, definite</td>
+<td>bilinear, complex</td>
+</tr>
+<tr>
+<td>the determinant</td>
+<td>a sign</td>
+<td>a sign</td>
+</tr>
+<tr>
+<td>compact</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+<tr>
+<td>nilpotents</td>
+<td>none</td>
+<td>yes, for $n\ge3$</td>
+</tr>
+<tr>
+<td>exponential</td>
+<td>onto</td>
+<td>onto</td>
+</tr>
+<tr>
+<td>$\pi_{1}$</td>
+<td>$\mathbb{Z}/2$ for $n\ge3$</td>
+<td>$\mathbb{Z}/2$ for $n\ge3$</td>
+</tr>
+<tr>
+<td>centre</td>
+<td>$\mathbb{Z}/2$ at most</td>
+<td>$\mathbb{Z}/2$ at most</td>
+</tr>
+<tr>
+<td>the small rungs</td>
+<td>$\mathrm{SO}(2)$ abelian, $\mathrm{SO}(3)$ simple, $\mathrm{SO}(4)$ split</td>
+<td>$\mathbb{C}^{\times}$, $\mathrm{PSL}_2$, split</td>
+</tr>
+<tr>
+<td>the largest torus dimension</td>
+<td>$\lfloor n/2\rfloor$</td>
+<td>$\lfloor n/2\rfloor$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three ladders in one sentence each.</strong> The real orthogonal ladder is the compact ladder of the bilinear form; the complex orthogonal ladder is the non-compact complexification of it; the unitary ladder is the compact ladder of the sesquilinear form.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The equation and the dimension.</strong> $A^{*}A=\mathrm I$ with $\det A=1$ cuts a compact group of dimension $n^{2}-1$, of rank $n-1$, with algebra the traceless anti-Hermitian matrices.</p>
+<p><strong>The determinant is a phase, and the phase is the whole difference.</strong> The kernel of the determinant is a codimension-one subgroup, the centre is $\mathbb{Z}/n$, the exponential is onto with a lattice of rank $n-1$, and the group is simply connected.</p>
+<p><strong>The algebra has no nilpotent.</strong> Anti-Hermitian is normal, normal is semisimple, so the algebra is a compact semisimple algebra and its elements are all semisimple. The absence of nilpotents is compactness at the level of the algebra and it is what distinguishes this ladder from the complex orthogonal one.</p>
+<p><strong>$\mathrm{SU}(2)$ is the sphere of unit quaternions.</strong> Dimension three, centre $\mathbb{Z}/2$, double cover of $\mathrm{SO}(3)$, axis–angle formula, class space the interval. It is the only sphere in the ladder.</p>
+<p><strong>$\mathrm{SU}(3)$ is the first genuine projective geometry.</strong> Dimension eight, rank two, hexagon of roots, $S_3$ Weyl group, $\mathbb{P}^{2}$ as a homogeneous space, and the first rung where the trace condition constrains more than one angle.</p>
+<p><strong>$\mathrm{SU}(4)$ is $\mathrm{Spin}(6)$.</strong> The exceptional isomorphism of the ladder, with the four of $\mathrm{SU}(4)$ the spinor of $\mathrm{SO}(6)$, the centre $\mathbb{Z}/4$, and the quaternionic subgroup $\mathrm{Sp}(2)$.</p>
+<p><strong>The general rung is the projective unitary geometry with the root system $A_{n-1}$.</strong> The class space is the simplex, the Weyl group is the symmetric group, and the subgroups are the blocks of size two inside the $n$.</p>
+<p><strong>The upper rungs have no orthogonal name, and they have two embeddings.</strong> $\mathrm{SU}(5)$ to $\mathrm{SU}(8)$ meet the orthogonal ladder nowhere at the level of dimension, because $m(m-1)/2=n^{2}-1$ has no solution above $n=4$. They sit inside it twice over, through the realification $\mathrm{SU}(n)\subset\mathrm{SO}(2n)$ and through the adjoint $\mathrm{SU}(n)\subset\mathrm{SO}(n^{2}-1)$: $\mathrm{SO}(10)$ and $\mathrm{SO}(24)$ at five, $\mathrm{SO}(12)$ and $\mathrm{SO}(35)$ at six, $\mathrm{SO}(14)$ and $\mathrm{SO}(48)$ at seven, $\mathrm{SO}(16)$ and $\mathrm{SO}(63)$ at eight. The two exact meetings remain the two of the article, $\mathrm{SU}(2)=\mathrm{Spin}(3)$ and $\mathrm{SU}(4)=\mathrm{Spin}(6)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A^{*}$</td>
+<td>conjugate transpose</td>
+</tr>
+<tr>
+<td>$\mathrm U(n)$, $\mathrm{SU}(n)$</td>
+<td>unitary and special unitary groups</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(n)$</td>
+<td>traceless anti-Hermitian matrices</td>
+</tr>
+<tr>
+<td>$\sigma_k$, $\lambda_k$</td>
+<td>Pauli and Gell-Mann matrices</td>
+</tr>
+<tr>
+<td>$T^{r}$, $T$</td>
+<td>maximal torus</td>
+</tr>
+<tr>
+<td>$W=A_{n-1}$</td>
+<td>the Weyl group $S_n$ and the root system</td>
+</tr>
+<tr>
+<td>$\mathbb{Z}/n$</td>
+<td>the centre</td>
+</tr>
+<tr>
+<td>$\mathrm{PU}(n)$</td>
+<td>$\mathrm{SU}(n)/\mathbb{Z}_n$</td>
+</tr>
+<tr>
+<td>$zV$</td>
+<td>the decomposition of a unitary matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Unitary Lie Algebra</em>, for the algebra and its structure.</li>
+<li><em>Unitary Endomorphisms</em>, for unitary maps and their spectral theory.</li>
+<li><em>Unitary Elements and Their Algebraic Decompositions</em>, for the algebraic decomposition of unitary elements.</li>
+<li><em>Hermitian and Anti-Hermitian Elements</em>, for the two Hermitian classes.</li>
+<li><em>The Eigenvalue Decomposition of a Hermitian Element</em>, for the spectral theorem in the background.</li>
+<li><em>Quaternion Rotations and Reflections</em>, for $\mathrm{SU}(2)$ and the quaternions.</li>
+<li><em>The Rotor as a Square Root of a Rotation: $\mathrm{Spin}(n)\to\mathrm{SO}(n)$</em>, for the double cover.</li>
+<li><em>The Special Linear Group and the Determinant</em>, for the determinant and its kernel.</li>
+<li><em>The Low-Dimensional Spin Groups and the Exceptional Isomorphisms with Inner Conjugation</em>, for $\mathrm{SU}(4)=\mathrm{Spin}(6)$.</li>
+<li><em>The Clifford, Pin and Spin Groups with Signed Inner Conjugation</em>, for the spin groups at the small rungs.</li>
+</ul>
+<h2 id="verification">Verification</h2>
+<p>Scratch scripts under <code>/tmp/vso/</code> and <code>/tmp/vlie/</code> (not part of the corpus) recompute the claims. The table gives the computation and the printed result.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>computation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the parametrisation of $\mathrm{SU}(2)$ by $S^{3}$</td>
+<td>$100$ random elements</td>
+<td>$\lvert a\rvert^{2}+\lvert b\rvert^{2}-1$ at $10^{-15}$</td>
+</tr>
+<tr>
+<td>the axis–angle formula</td>
+<td>$200$ reconstructions</td>
+<td>$3.5\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the trace of an element of $\mathrm{SU}(2)$ is real</td>
+<td>$200$ samples</td>
+<td>$4.4\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)$ quaternion multiplicativity</td>
+<td>$100$ random pairs</td>
+<td>$10^{-15}$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)\to\mathrm{SO}(3)$ has image in the group</td>
+<td>$100$ samples</td>
+<td>residual $10^{-15}$</td>
+</tr>
+<tr>
+<td>$q$ and $-q$ give the same rotation</td>
+<td>$100$ samples</td>
+<td>exactly $0$</td>
+</tr>
+<tr>
+<td>the kernel of the double cover</td>
+<td>$200$ samples</td>
+<td>only $\pm\mathrm I$</td>
+</tr>
+<tr>
+<td>the exponential is onto</td>
+<td>Hermitian log, $100$ samples, $n=2,\dots,6$</td>
+<td>$5.4\times10^{-15}$</td>
+</tr>
+<tr>
+<td>the logarithms are anti-Hermitian</td>
+<td>the same samples</td>
+<td>exactly $0$</td>
+</tr>
+<tr>
+<td>the eigenvalues multiply to one</td>
+<td>the same samples</td>
+<td>$3.3\times10^{-15}$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(n)=\mathrm U(1)\cdot\mathrm{SU}(n)$</td>
+<td>$60$ random unitary matrices</td>
+<td>$10^{-15}$; $z^{n}=\det U$ and $\det V=1$</td>
+</tr>
+<tr>
+<td>the algebra is its own commutator</td>
+<td>spanning by brackets, $n=2,\dots,5$</td>
+<td>dimension $n^{2}-1$ every time</td>
+</tr>
+<tr>
+<td>the Weyl group order</td>
+<td>enumeration of $S_n$</td>
+<td>$n!$ at $n=1,\dots,6$</td>
+</tr>
+<tr>
+<td>the number of roots</td>
+<td>enumeration of $\pm(e_j-e_k)$</td>
+<td>$n(n-1)$</td>
+</tr>
+<tr>
+<td>the six roots of $A_2$</td>
+<td>brackets with $E_{jk}$</td>
+<td>$0,\pm60^\circ,\pm120^\circ,180^\circ$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(n)\cap\mathrm{SO}(n,\mathbb{C})=\mathrm{SO}(n,\mathbb{R})$</td>
+<td>$100$ samples of $\mathrm{SU}(n)$</td>
+<td>$0$ mismatches</td>
+</tr>
+<tr>
+<td>real rotations are unitary</td>
+<td>$100$ real rotations</td>
+<td>$100/100$</td>
+</tr>
+<tr>
+<td>the root systems $A_3$ and $D_3$</td>
+<td>matching of the Gram matrices</td>
+<td>matched, twelve roots each</td>
+</tr>
+<tr>
+<td>the classes of the involutions</td>
+<td>parity of the number of $-1$</td>
+<td>$\lfloor n/2\rfloor+1$</td>
+</tr>
+<tr>
+<td>the realification $\mathrm{SU}(n)\subset\mathrm{SO}(2n)$</td>
+<td>dimension count, $n=1,\dots,8$</td>
+<td>$2n$</td>
+</tr>
+<tr>
+<td>the adjoint $\mathrm{SU}(n)\subset\mathrm{SO}(n^{2}-1)$</td>
+<td>dimension count, $n=1,\dots,8$</td>
+<td>$0,3,8,15,24,35,48,63$</td>
+</tr>
+<tr>
+<td>the equation $m(m-1)/2=n^{2}-1$</td>
+<td>integer search, $n\le8$</td>
+<td>only $(1,1)$, $(2,3)$, $(4,6)$</td>
+</tr>
+<tr>
+<td>the centres of the upper rungs</td>
+<td>the scalars of determinant one</td>
+<td>$\mathbb{Z}/5,\mathbb{Z}/6,\mathbb{Z}/7,\mathbb{Z}/8$</td>
+</tr>
+<tr>
+<td>the Weyl orders of the upper rungs</td>
+<td>enumeration of $S_n$</td>
+<td>$120,720,5040,40320$</td>
+</tr>
+<tr>
+<td>Thompson's theorem</td>
+<td>quoted, no numerical content</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

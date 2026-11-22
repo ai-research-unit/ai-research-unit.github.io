@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Cases for $\mathrm{U}(2)$ inside the Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="Purpose. The Meaning of in the Endomorphisms of the Biquaternion Algebra states the slice, the centre, the three copies and their dimensions. This note…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-cases-for-math0-inside-the-endomorphisms-of-the-biquaternion-algebra"><strong>Worked Cases for $\mathrm{U}(2)$ inside the Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Purpose.</strong> <em>The Meaning of $\mathrm{U}(2)$ in the Endomorphisms of the Biquaternion Algebra</em> states the slice, the centre, the three copies and their dimensions. This note does the opposite. It takes one unitary element at a time, writes its arrays, and computes what it does to biquaternions. Every number below was produced by exact algebra on the sixteen Conway words and checked in floating point; the residuals are collected at the end.</p>
+<p><strong>The carrier.</strong> $\mathbb{B}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, cyclically, and $\vec e_k^{2}=-e_t$. An element is a column $\tilde Q=(Q_t,Q_x,Q_y,Q_z)$ of four complex numbers, the multiplicative norm is $\langle\tilde Q\rangle_{\natural}=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$, and the definite form is $\langle\tilde Q\rangle_{*}=|Q_t|^{2}+|Q_x|^{2}+|Q_y|^{2}+|Q_z|^{2}=\mathrm{Sc}(\tilde Q\tilde Q^{*})$.</p>
+<p><strong>The group.</strong> $\mathrm{U}(2)$ is the set of elements with $u^{*}u=e_t$, of the shape</p>
+<p>$$
+\tilde u=e^{i\alpha}\Bigl(\cos\tfrac{\varphi}{2}\,e_t+\sin\tfrac{\varphi}{2}\,\vec n\Bigr),\qquad \vec n\ \text{a real unit vector},\quad \alpha,\varphi\in\mathbb{R},
+$$</p>
+<p>four real parameters. The phase $\alpha$ is central <em>at the element level</em>: it multiplies by a scalar and commutes with everything, but it is not a scalar of the algebra, so it does change the arrays. The group enters the operators at three addresses, as before: $L_{\tilde u}$, $R_{\tilde u}$, and $\mathrm{Ad}_{\tilde u}=L_{\tilde u}R_{\tilde u^{-1}}$.</p>
+<p><strong>Four arrays, one element.</strong> Every case below reads whichever of the four carries the information it needs.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>size</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\mathrm{axf}}(\tilde u)$</td>
+<td>$4\times4$ complex</td>
+<td>left multiplication in the coefficient basis, columns $\tilde u e_\nu$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde u}$</td>
+<td>$4\times4$ real</td>
+<td>the conjugation, $\operatorname{diag}(1,R)$ with $R$ the rotation; it never sees the phase</td>
+</tr>
+<tr>
+<td>$[\vec n]_{\times}$</td>
+<td>$3\times3$ real</td>
+<td>the axial matrix inside $L$</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(\tilde u)$</td>
+<td>$2\times2$ complex</td>
+<td>the element as a matrix, $\mathsf M(e_t)=\mathrm I_2$, $\mathsf M(\vec e_k)=-i\sigma_k$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Conway array is the fifth reading: the coefficients $c_{\mu\nu}$ in $\mathrm{Ad}_{\tilde u}=\sum c_{\mu\nu}e_\mu[\,]e_\nu$, of rank the length $\ell$.</p>
+<p><strong>The cases at a glance.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>element</th>
+<th>what it establishes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$e^{i\alpha}e_t$</td>
+<td>the phase alone: four diagonal arrays, and a length-zero derivation</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$e^{i\alpha}(c\,e_t+s\,\vec n)$</td>
+<td>the general element: the phase multiplies both one-sided copies and cancels in the conjugation</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>that element on given biquaternions</td>
+<td>the three actions, row by row</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$e_t$, $iu$</td>
+<td>the kernels: $\{e_t\}$, $\{e_t\}$, $\mathrm{U}(1)$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>the loop $\alpha:0\to2\pi$</td>
+<td>the four windings, and the sign as a point of the circle</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>a general element</td>
+<td>spectrum, trace, unitarity, determinant</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>finite-order elements</td>
+<td>the order of the element, of the display, of the rotation</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>$i\vec e_k$</td>
+<td>the complex structures, the odd half, the Pauli displays</td>
+</tr>
+<tr>
+<td>$8$</td>
+<td>any element in the Peirce frame</td>
+<td>the two phases of the doublet</td>
+</tr>
+<tr>
+<td>$9$</td>
+<td>the twenty-four real units</td>
+<td>twenty-four displays, twelve conjugations, all of determinant one</td>
+</tr>
+<tr>
+<td>$10$</td>
+<td>any element</td>
+<td>what each copy preserves</td>
+</tr>
+<tr>
+<td>$11$</td>
+<td>$\mathrm{ad}_{ie_t}$</td>
+<td>the zero of the length spectrum</td>
+</tr>
+<tr>
+<td>$12$</td>
+<td>the Hermitian half</td>
+<td>why unitarity is a slice and not a neighbourhood</td>
+</tr>
+<tr>
+<td>$13$</td>
+<td>everything</td>
+<td>what the fourth direction adds</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-case-0-the-phase-alone">1. Case 0: The Phase Alone</h2>
+<p><strong>The element.</strong> Take</p>
+<p>$$
+\alpha=\tfrac{\pi}{3},\qquad \tilde u=e^{i\pi/3}e_t=\bigl(\tfrac12+\tfrac{\sqrt3}{2}i\bigr)e_t .
+$$</p>
+<p><strong>The four arrays.</strong> The phase commutes with every coefficient, so all three operators are scalar:</p>
+<p>$$
+L_{\tilde u}=R_{\tilde u}=e^{i\pi/3}\,\mathrm I_4,\qquad
+\mathrm{Ad}_{\tilde u}=\mathrm I_4,\qquad
+\mathsf M_2(\tilde u)=e^{i\pi/3}\,\mathrm I_2 .
+$$</p>
+<p><strong>The invariants.</strong></p>
+<p>$$
+\langle\tilde u\rangle_{\natural}=e^{2i\pi/3}=-\tfrac12+\tfrac{\sqrt3}{2}i,\qquad
+\det L_{\tilde u}=e^{4i\pi/3}=-\tfrac12-\tfrac{\sqrt3}{2}i=\langle\tilde u\rangle_{\natural}^{2},
+$$</p>
+<p>both exact. So the display has determinant $e^{2i\alpha}$ and the left copy has determinant $e^{4i\alpha}$: on this element the two differ, which is the whole difference between one and two copies of the phase.</p>
+<p><strong>The Conway arrays.</strong> The left copy is one word and the conjugation is one word:</p>
+<p>$$
+c\bigl(L_{\tilde u}\bigr)=e^{i\pi/3}\,e_t e_t^{\mathsf T},\qquad
+c\bigl(\mathrm{Ad}_{\tilde u}\bigr)=e_t e_t^{\mathsf T},\qquad
+\ell=1,\ 1 .
+$$</p>
+<p><strong>The derivation.</strong> The difference of the two one-sided words vanishes identically,</p>
+<p>$$
+\mathrm{ad}_{ie_t}=L_{ie_t}-R_{ie_t}=i\,\mathrm I_4-i\,\mathrm I_4=0,\qquad c\bigl(\mathrm{ad}_{ie_t}\bigr)=0,\qquad \ell=0 .
+$$</p>
+<p><strong>What the case establishes.</strong> The phase is a direction of the group that acts on the algebra by a scalar and on the algebra's own operators by a scalar, and therefore acts <strong>not at all</strong> on the algebra by conjugation. It is the first element of the series with an address of length zero, and the address is the one that generates the rotations.</p>
+<h2 id="2-case-1-a-general-element-and-the-phase-in-front">2. Case 1: A General Element, and the Phase in Front</h2>
+<p><strong>The element.</strong> Take $\alpha=\tfrac{\pi}{4}$, $\varphi=\tfrac{\pi}{3}$ and $\vec n=(1,1,0)/\sqrt2$:</p>
+<p>$$
+\tilde u=e^{i\pi/4}\Bigl(\cos\tfrac{\pi}{6}\,e_t+\sin\tfrac{\pi}{6}\,\tfrac{\vec e_x+\vec e_y}{\sqrt2}\Bigr)
+=\bigl(\tfrac{\sqrt3}{2}+\tfrac{\sqrt3}{2}i\bigr)e_t+\bigl(\tfrac14+\tfrac14 i\bigr)\bigl(\vec e_x+\vec e_y\bigr),
+$$</p>
+<p>that is $\tilde u=(0.6124+0.6124i,\ 0.25+0.25i,\ 0.25+0.25i,\ 0)$.</p>
+<p><strong>The left display.</strong></p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u)=
+\begin{pmatrix}
+0.6124+0.6124i&-0.25-0.25i&-0.25-0.25i&0\\
+0.25+0.25i&0.6124+0.6124i&0&-0.25-0.25i\\
+0.25+0.25i&0&0.6124+0.6124i&0.25+0.25i\\
+0&-0.25-0.25i&0.25+0.25i&0.6124+0.6124i
+\end{pmatrix}.
+$$</p>
+<p><strong>The right display.</strong> The same with the axial sign reversed in the off-diagonal of the vector block, as for $\mathrm{SU}(2)$:</p>
+<p>$$
+R_{\mathrm{axf}}(\tilde u)=
+\begin{pmatrix}
+0.6124+0.6124i&-0.25-0.25i&-0.25-0.25i&0\\
+0.25+0.25i&0.6124+0.6124i&0&0.25+0.25i\\
+0.25+0.25i&0&0.6124+0.6124i&-0.25-0.25i\\
+0&0.25+0.25i&-0.25-0.25i&0.6124+0.6124i
+\end{pmatrix}.
+$$</p>
+<p><strong>The factorisation.</strong> Both displays are the rotor's display multiplied by the scalar:</p>
+<p>$$
+L_{\mathrm{axf}}(\tilde u)=e^{i\pi/4}L_{\mathrm{axf}}(\tilde q),\qquad
+R_{\mathrm{axf}}(\tilde u)=e^{i\pi/4}R_{\mathrm{axf}}(\tilde q),
+$$</p>
+<p>exactly, entry by entry. <strong>The phase does not change the shape of the one-sided arrays; it scales them.</strong></p>
+<p><strong>The conjugation, and the cancellation.</strong></p>
+<p>$$
+\mathrm{Ad}_{\tilde u}=
+\begin{pmatrix}
+1&0&0&0\\
+0&0.75&0.25&0.6124\\
+0&0.25&0.75&-0.6124\\
+0&-0.6124&0.6124&0.5
+\end{pmatrix}
+=\mathrm{Ad}_{\tilde q},
+$$</p>
+<p>real, with no trace of the phase: $\mathrm{Ad}_{\tilde u}=\mathrm{Ad}_{\tilde q}$ to $5.7\times10^{-16}$ for every $\alpha$ tried. The two scalar factors cancel between $L_{\tilde u}$ and $L_{\tilde u^{-1}}$.</p>
+<p><strong>The invariants.</strong></p>
+<p>$$
+\operatorname{tr}L_{\mathrm{axf}}(\tilde u)=2.4495+2.4495i=4e^{i\pi/4}\cos\tfrac{\pi}{6},\qquad
+\det L_{\mathrm{axf}}(\tilde u)=-1,\qquad
+\det\mathsf M_2(\tilde u)=i=\langle\tilde u\rangle_{\natural},
+$$</p>
+<p>and $(-1)=i^{2}$: the determinant of the left copy is the square of the determinant of the display, and both are the norm or its square. Unitarity: $L^{\dagger}L-\mathrm I_4$ has norm $0$ exactly, and $\mathsf M_2^{\dagger}\mathsf M_2-\mathrm I_2$ likewise.</p>
+<p><strong>The lesson.</strong> One element, four arrays, and exactly one of them is blind to the phase. The phase is the only parameter that separates $L$ from $\mathrm{Ad}$.</p>
+<h2 id="3-case-2-the-three-actions-on-given-elements">3. Case 2: The Three Actions on Given Elements</h2>
+<p><strong>The element.</strong> The $\tilde u$ of §2. The table gives $L\tilde Q$, $R\tilde Q$ and $\mathrm{Ad}\tilde Q$ in the coefficient order $(e_t,\vec e_x,\vec e_y,\vec e_z)$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde Q$</th>
+<th>$L\tilde Q$</th>
+<th>$R\tilde Q$</th>
+<th>$\mathrm{Ad}\tilde Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$(0.6124+0.6124i,\ 0.25+0.25i,\ 0.25+0.25i,\ 0)$</td>
+<td>same as $L$</td>
+<td>$(1,0,0,0)$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$(-0.25-0.25i,\ 0.6124+0.6124i,\ 0,\ -0.25-0.25i)$</td>
+<td>$(-0.25-0.25i,\ 0.6124+0.6124i,\ 0,\ 0.25+0.25i)$</td>
+<td>$(0,\ 0.75,\ 0.25,\ -0.6124)$</td>
+</tr>
+<tr>
+<td>$i\vec e_x$</td>
+<td>$(0.25-0.25i,\ -0.6124+0.6124i,\ 0,\ 0.25-0.25i)$</td>
+<td>$(0.25-0.25i,\ -0.6124+0.6124i,\ 0,\ -0.25+0.25i)$</td>
+<td>$i\,(0,\ 0.75,\ 0.25,\ -0.6124)$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_+$</td>
+<td>$(0.3062+0.3062i,\ 0.25i,\ 0.25,\ -0.3062+0.3062i)$</td>
+<td>$(0.3062+0.3062i,\ 0.25,\ 0.25i,\ -0.3062+0.3062i)$</td>
+<td>$(0.5,\ 0.3062i,\ -0.3062i,\ 0.25i)$</td>
+</tr>
+<tr>
+<td>$e_t+i\vec e_z$</td>
+<td>$(0.6124+0.6124i,\ 0.5i,\ 0.5,\ -0.6124+0.6124i)$</td>
+<td>$(0.6124+0.6124i,\ 0.5,\ 0.5i,\ -0.6124+0.6124i)$</td>
+<td>$(1,\ 0.6124i,\ -0.6124i,\ 0.5i)$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading the rows.</strong></p>
+<p><em>The unit.</em> $\mathrm{Ad}_{\tilde u}e_t=e_t$ for every element of the group, and $L_{\tilde u}e_t=R_{\tilde u}e_t=\tilde u$: the first column of each one-sided display is the element itself, phase included. So the conjugation fixes a line and the one-sided copies carry the element.</p>
+<p><em>The real vector.</em> Rows two and three: the left and right images of $\vec e_x$ agree except in the last coefficient, where the two differ by the sign of the axial term. Multiplying $\vec e_x$ by $i$ multiplies both one-sided images by $i$ and leaves the conjugated image's direction unchanged up to the same factor: <strong>$L$ and $R$ are complex linear, $\mathrm{Ad}$ is real linear</strong>.</p>
+<p><em>The idempotent.</em> Row four: the left and the right images differ again only in the axial slot, and the conjugated image is the projector of the rotated root, $\tfrac12(e_t+iR\vec e_z)$, exactly as in the $\mathrm{SU}(2)$ note: the phase cancels there.</p>
+<p><em>The null element.</em> Row five: $e_t+i\vec e_z$ has $\langle\cdot\rangle_{\natural}=0$; its three images keep norm zero, by multiplicativity for $L$ and $R$ and by the automorphism property for $\mathrm{Ad}$.</p>
+<p><strong>What the case establishes.</strong> Every entry of the two one-sided tables carries the phase $e^{i\alpha}$ as a common factor, which the table shows as the same complex multiplier $0.6124+0.6124i$; no entry of the third table does.</p>
+<h2 id="4-case-3-the-kernels">4. Case 3: The Kernels</h2>
+<p><strong>The three kernels.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>address</th>
+<th>kernel on $\mathrm{U}(2)$</th>
+<th>image</th>
+<th>dimension of the image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde u\mapsto L_{\tilde u}$</td>
+<td>$\{e_t\}$</td>
+<td>a $4$-dimensional subgroup of $\mathrm{U}(4)$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\tilde u\mapsto\mathsf M_2(\tilde u)$</td>
+<td>$\{e_t\}$</td>
+<td>$\mathrm{U}(2)$ itself</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\tilde u\mapsto\mathrm{Ad}_{\tilde u}$</td>
+<td>$\mathrm{U}(1)=\{e^{i\alpha}e_t\}$</td>
+<td>$\mathrm{SO}(3)$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The count.</strong> The group is four-dimensional, and the three images have dimensions $4,4,3$. Both one-sided addresses are faithful; the conjugation is a circle-to-one.</p>
+<p><strong>The comparison with $\mathrm{SU}(2)$.</strong> The same table for the rotor group had kernels $\{e_t\},\{e_t\},\{\pm e_t\}$ and image dimensions $3,3,3$. <strong>Adding the phase changed exactly one row</strong>, and it changed it from a two-point kernel to a circle: the determinant of the map $\mathrm{Ad}$ grew from $\{\pm e_t\}$ to $\mathrm{U}(1)$, and the quotient stayed $\mathrm{SO}(3)$.</p>
+<p><strong>The fibre.</strong> Over any rotation there is a circle of unitary elements, and the circle is the phase. Two of its points are the two preimages that $\mathrm{SU}(2)$ knew; the rest are new, and they are all invisible to the rotation. So "$\mathrm{U}(2)$ is a double cover of $\mathrm{SO}(3)$" is wrong in the precise sense and right in the coarse one: it is a circle bundle whose fibre contains the double cover's two points.</p>
+<h2 id="5-case-4-the-loop-the-windings-and-the-sign">5. Case 4: The Loop, the Windings, and the Sign</h2>
+<p><strong>The loop.</strong> Let $\alpha$ run from $0$ to $2\pi$ in $\tilde u(\alpha)=e^{i\alpha}e_t$ and read the loop through each address.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>address</th>
+<th>value</th>
+<th>winding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the element</td>
+<td>$e^{i\alpha}e_t$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\mathsf M_2$</td>
+<td>$e^{i\alpha}\mathrm I_2$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\det\mathsf M_2$</td>
+<td>$e^{2i\alpha}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$L_{\mathrm{axf}}$, $R_{\mathrm{axf}}$</td>
+<td>$e^{i\alpha}\mathrm I_4$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\det L_{\mathrm{axf}}$</td>
+<td>$e^{4i\alpha}$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}$</td>
+<td>$\mathrm I_4$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> Six numbers for one loop. The element winds once, its display winds once, the determinant of the display winds twice, the display's own determinant winds four times, and the conjugation does not wind at all. <strong>The winding of a determinant is the winding of the element multiplied by the dimension of the carrier</strong>: twice for a $2\times2$ carrier, four times for a $4\times4$ one.</p>
+<p><strong>The sign.</strong> At $\alpha=\pi$ the loop passes through</p>
+<p>$$
+e^{i\pi}e_t=-e_t,
+$$</p>
+<p>which is the element that the $\mathrm{SU}(2)$ note calls "the full turn": the rotor path $\varphi:0\to2\pi$ ends there. So <strong>the endpoint of the rotor's full turn is a point of the phase circle</strong>, and the loop that the rotor cannot close is closed by the phase. The rotor path is a path, the phase loop is a loop, and the second contains the endpoint of the first.</p>
+<p><strong>What the case establishes.</strong> The double-valuedness of $\mathrm{SU}(2)$ is not removed, it is <strong>absorbed</strong>: it becomes one point of a circle that $\mathrm{U}(2)$ carries, and the circle is the kernel of the conjugation. The price is that the loop does not contract, so the group is not simply connected; the rotor sphere inside it is.</p>
+<h2 id="6-case-5-a-general-element-spectrum-and-trace">6. Case 5: A General Element, Spectrum and Trace</h2>
+<p><strong>The claim.</strong> For every $\alpha,\varphi$ and real unit $\vec n$,</p>
+<p>$$
+L^{\dagger}L=\mathrm I_4,\qquad \det L=\langle\tilde u\rangle_{\natural}^{2}=e^{4i\alpha},\qquad
+\operatorname{tr}L=4e^{i\alpha}\cos\tfrac{\varphi}{2},
+$$</p>
+<p>$$
+\operatorname{spec}L=\Bigl\{e^{i(\alpha-\varphi/2)},\,e^{i(\alpha+\varphi/2)}\Bigr\}\ \text{twice},\qquad
+\operatorname{spec}\mathrm{Ad}=\Bigl\{1,\,1,\,e^{i\varphi},\,e^{-i\varphi}\Bigr\}.
+$$</p>
+<p>All checked on fifty random elements; the unitary residual is $4.4\times10^{-16}$, the trace residual $5.9\times10^{-16}$ and the determinant residual $6.7\times10^{-16}$.</p>
+<p><strong>The table.</strong> With $\vec n=(1,2,3)/\sqrt{14}$ and $\alpha=\tfrac{\pi}{4}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\varphi$</th>
+<th>$\operatorname{tr}L$</th>
+<th>$\operatorname{spec}L$</th>
+<th>$\operatorname{spec}\mathrm{Ad}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$4e^{i\pi/4}=2.828+2.828i$</td>
+<td>$e^{i\pi/4}$ four times</td>
+<td>$1,1,1,1$</td>
+</tr>
+<tr>
+<td>$\tfrac{\pi}{3}$</td>
+<td>$3.464e^{i\pi/4}=2.449+2.449i$</td>
+<td>$e^{i(\pi/4\mp\pi/6)}$, twice each</td>
+<td>$1,1,e^{\pm i\pi/3}$</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>$0$</td>
+<td>$e^{-i\pi/4},e^{-i\pi/4},e^{i3\pi/4},e^{i3\pi/4}$</td>
+<td>$1,1,-1,-1$</td>
+</tr>
+<tr>
+<td>$2\pi$</td>
+<td>$-4e^{i\pi/4}$</td>
+<td>$e^{i(\pi/4-\pi)}$ four times</td>
+<td>$1,1,1,1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> The half angle and the whole angle behave as in the $\mathrm{SU}(2)$ case, and the phase moves the whole spectrum by a constant rotation. In the conjugation the phase is gone; in the one-sided copies it is a common factor. <strong>One parameter, one factor, in two of the three addresses and in none of the third.</strong></p>
+<p><strong>The parameter count.</strong> $(\alpha,\varphi,\vec n)\mapsto\tilde u$ is four real dimensional, onto the unitary slice, and the chart has rank four. The four parameters are the four of $\mathfrak{u}(2)$; the group is a circle times a three-sphere with the sign identified.</p>
+<h2 id="7-case-6-finite-order-and-where-it-lives">7. Case 6: Finite Order, and Where It Lives</h2>
+<p><strong>The elements.</strong> Take $\tilde w=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$, the order-three rotor of the $\mathrm{SU}(2)$ note, and multiply it by phases.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>order of the element</th>
+<th>order of $L$</th>
+<th>order of $\mathrm{Ad}$</th>
+<th>$\langle\cdot\rangle_{\natural}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde w$</td>
+<td>$6$</td>
+<td>$6$</td>
+<td>$3$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$i\tilde w$</td>
+<td>$12$</td>
+<td>$12$</td>
+<td>$3$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$e^{i\pi/3}\tilde w$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$3$</td>
+<td>$e^{2i\pi/3}$</td>
+</tr>
+<tr>
+<td>$e^{i\pi/6}\tilde w$</td>
+<td>$12$</td>
+<td>$12$</td>
+<td>$3$</td>
+<td>$e^{i\pi/3}$</td>
+</tr>
+<tr>
+<td>$e^{i\pi/3}e_t$</td>
+<td>$6$</td>
+<td>$6$</td>
+<td>$1$</td>
+<td>$e^{2i\pi/3}$</td>
+</tr>
+<tr>
+<td>$e^{i\pi/2}e_t=ie_t$</td>
+<td>$4$</td>
+<td>$4$</td>
+<td>$1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$i\vec e_z$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$2$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> Three different orders, and each of them says something.</p>
+<p><em>The element and its display have the same order.</em> $L$ is faithful, so nothing is lost: the order of an element is the order of its left multiplication. That is the statement "the display is not a covering" in its finite form.</p>
+<p><em>The phase changes the order of the element and not the order of the rotation.</em> $i\tilde w$ has order twelve where $\tilde w$ has order six, because $i$ contributes a factor four and $\tilde w$ a factor six, with two in common. The rotation stays at order three. <strong>So the phase is not decoration: it moves the element inside its own fibre.</strong></p>
+<p><em>The pure phase has the order of its angle.</em> $e^{i\pi/3}e_t$ has order six, $ie_t$ order four, $e^{2i\pi/3}e_t$ order three: the circle is a circle of finite orders, and any order can be produced.</p>
+<p><strong>What the case establishes.</strong> In $\mathrm{SU}(2)$ the only finite datum of the centre was the sign, of order two. In $\mathrm{U}(2)$ the centre is a full circle, and a finite subgroup of it can have any order; multiplying a rotor by a root of unity raises its order accordingly, and never changes its rotation.</p>
+<h2 id="8-case-7-the-complex-structures-and-the-odd-half">8. Case 7: The Complex Structures, and the Odd Half</h2>
+<p><strong>The elements.</strong> With $\vec n=\vec e_k$ and $\alpha=\tfrac{\pi}{2}$,</p>
+<p>$$
+i\vec e_k\in\mathrm{U}(2),\qquad (i\vec e_k)^{2}=e_t,\qquad (i\vec e_k)^{*}=i\vec e_k,\qquad \langle i\vec e_k\rangle_{\natural}=-1,
+$$</p>
+<p>all exact: each is unitary, Hermitian, an involution, and of determinant minus one.</p>
+<p><strong>The displays.</strong></p>
+<p>$$
+\mathsf M_2(i\vec e_x)=\sigma_1,\qquad \mathsf M_2(i\vec e_y)=\sigma_2,\qquad \mathsf M_2(i\vec e_z)=\sigma_3 .
+$$</p>
+<p>So <strong>the Pauli matrices are the displays of three elements of $\mathrm{U}(2)$</strong>, and those elements are not in $\mathrm{SU}(2)$, because their determinant is minus one. The corpus's refusal of the Pauli array is a refusal of a <em>basis</em>, not of an element: the three elements exist, the choice among them does not.</p>
+<p><strong>The whole odd half.</strong> The determinant is onto the circle, so the elements of determinant $-1$ are the slice $\alpha=\tfrac{\pi}{2}$:</p>
+<p>$$
+\{u:\ \langle u\rangle_{\natural}=-1\}=i\,\mathrm{SU}(2)=\{i\tilde q:\ \tilde q\ \text{a real rotor}\},
+$$</p>
+<p>a three-sphere, the other half of the group. The Hermitian ones among them are the complex structures:</p>
+<p>$$
+\{u\in\mathrm{U}(2):\ u=u^{*}\}=\{\pm e_t\}\ \cup\ \{i\vec n:\ |\vec n|=1\},
+$$</p>
+<p>two points and a two-sphere.</p>
+<p><strong>Why the classification is exactly that.</strong> Write a Hermitian element as $u=a\,e_t+i\vec v$ with $a$ real and $\vec v$ real. Then</p>
+<p>$$
+u^{2}=(a^{2}+|\vec v|^{2})\,e_t+2a\,i\vec v,
+$$</p>
+<p>so $u^{2}=e_t$ forces $2a\vec v=0$ and $a^{2}+|\vec v|^{2}=1$: either $\vec v=0$ and $a=\pm1$, or $a=0$ and $|\vec v|=1$. The two cases are the two displayed families, and there is no third.</p>
+<p><strong>What the case establishes.</strong> The determinant splits the group in half, and the odd half is where the complex structures live. A diagonal generator of the display is a choice of one of them, so the display's "preferred axis" is an element of the odd half — an object that $\mathrm{SU}(2)$ does not contain and $\mathrm{U}(2)$ does.</p>
+<h2 id="9-case-8-the-peirce-frame-and-the-two-phases-of-the-doublet">9. Case 8: The Peirce Frame, and the Two Phases of the Doublet</h2>
+<p><strong>The frame.</strong> With the root $\vec\Xi=i\vec e_z$,</p>
+<p>$$
+\tilde\Pi_+=\tfrac12(e_t+i\vec e_z),\quad
+\vec\Upsilon_+=\tfrac12(i\vec e_x+\vec e_y),\quad
+\vec\Upsilon_-=\tfrac12(i\vec e_x-\vec e_y),\quad
+\tilde\Pi_-=\tfrac12(e_t-i\vec e_z).
+$$</p>
+<p><strong>The three displays.</strong> For $\tilde u=e^{i\alpha}(c\,e_t+s\,\vec e_z)$,</p>
+<p>$$
+L_{\tilde u}\big|_{\text{Peirce}}=\operatorname{diag}\bigl(e^{i(\alpha-\varphi/2)},\,e^{i(\alpha+\varphi/2)},\,e^{i(\alpha-\varphi/2)},\,e^{i(\alpha+\varphi/2)}\bigr),
+$$</p>
+<p>$$
+R_{\tilde u}\big|_{\text{Peirce}}=\operatorname{diag}\bigl(e^{i(\alpha-\varphi/2)},\,e^{i(\alpha-\varphi/2)},\,e^{i(\alpha+\varphi/2)},\,e^{i(\alpha+\varphi/2)}\bigr),
+$$</p>
+<p>$$
+\mathrm{Ad}_{\tilde u}\big|_{\text{Peirce}}=\operatorname{diag}\bigl(1,\,e^{i\varphi},\,e^{-i\varphi},\,1\bigr),
+$$</p>
+<p>all exact at three parameter sets; at $\alpha=0.7$, $\varphi=1.1$ the four entries of $L$ are $0.9888+0.1494i$, $0.3153+0.9490i$, and their repeats. <strong>The conjugation is the rotor's diagonal, unchanged by the phase; the two one-sided copies are the rotor's diagonal with the phase added to every entry.</strong></p>
+<p><strong>The doublet.</strong> On the left ideal $S_+=\mathbb{B}\tilde\Pi_+$, of dimension two,</p>
+<p>$$
+L_{\tilde u}\big|_{S_+}=\operatorname{diag}\bigl(e^{i(\alpha-\varphi/2)},\,e^{i(\alpha+\varphi/2)}\bigr),\qquad
+\det=e^{2i\alpha}=\langle\tilde u\rangle_{\natural},\qquad \text{ratio}=e^{i\varphi},
+$$</p>
+<p>exact. The two entries are the two phases of the doublet; their product is the determinant of the element and their ratio is the rotation.</p>
+<p><strong>The reading.</strong> A single complex number has one phase, and a pair has two. The pair's two phases are independent, and the group that produces them is four-dimensional: <strong>one parameter for the sum and one for the difference, plus the two of the axis</strong>, and the axis is what the difference needs in three dimensions. So</p>
+<p>$$
+\mathrm{U}(2)\ \text{on the doublet}=\bigl(\text{mean phase}\bigr)\times\bigl(\text{rotation}\bigr),
+$$</p>
+<p>and $\mathrm{SU}(2)$ is the part that fixes the mean. The one-parameter family that $\mathrm{SU}(2)$ was missing is the mean phase, and it is the direction that the conjugation cannot see, because a mean phase is a scalar and a scalar commutes.</p>
+<p><strong>What the case establishes.</strong> The fourth direction is not an extra rotation: it is the overall phase of the two-component carrier. It acts on the doublet by $e^{i\alpha}$ and on the triplet by $1$, and those two statements are one computation in two frames.</p>
+<h2 id="10-case-9-the-twenty-four-real-units-and-the-circle-they-sit-on">10. Case 9: The Twenty-Four Real Units, and the Circle They Sit On</h2>
+<p><strong>The elements.</strong> The twenty-four real unit quaternions, all of them in $\mathrm{U}(2)$ because they are all in $\mathrm{SU}(2)$:</p>
+<p>$$
+\pm e_t,\quad \pm\vec e_k,\quad \tfrac12(\pm e_t\pm\vec e_x\pm\vec e_y\pm\vec e_z).
+$$</p>
+<p><strong>The count.</strong> $24$ distinct left displays, $12$ distinct conjugations, all of determinant one, all with $\langle\cdot\rangle_{\natural}=1$. Verified exactly, as in the $\mathrm{SU}(2)$ note.</p>
+<p><strong>The phase reading.</strong> Since $-\tilde q=e^{i\pi}\tilde q$, the twenty-four units are <strong>twelve elements read at two points of the phase circle</strong>, $\alpha=0$ and $\alpha=\pi$. The double cover's two preimages of a rotation are the two ends of a diameter of the circle, and the other points of the diameter are the new unitary elements with the same rotation.</p>
+<p><strong>The fibre, drawn.</strong> Over each of the twelve tetrahedral rotations there is a circle $\{e^{i\alpha}\tilde q\}$; the two real units $\pm\tilde q$ sit at $\alpha=0$ and $\alpha=\pi$, and the whole circle conjugates by the same rotation. So the finite subgroup $2T$ of the rotor sphere is a subset of a four-dimensional group, and its image in $\mathrm{SO}(3)$ is $T$: the same two-to-one as before, embedded in a circle-to-one.</p>
+<p><strong>What the case establishes.</strong> The corpus's count of twenty-four remains a count of twenty-four displays and twelve rotations, and the phase adds a continuum between each pair, none of which changes the rotation and all of which changes the display.</p>
+<h2 id="11-case-10-what-each-copy-preserves">11. Case 10: What Each Copy Preserves</h2>
+<p><strong>The table.</strong> The $\tilde u$ of §2, the phase included.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>$L_{\tilde u}$</th>
+<th>$R_{\tilde u}$</th>
+<th>$\mathrm{Ad}_{\tilde u}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the product</td>
+<td>no ($L_{\tilde u}e_t=\tilde u\neq e_t$)</td>
+<td>no</td>
+<td>yes ($0$)</td>
+</tr>
+<tr>
+<td>the norm $\langle\cdot\rangle_{\natural}$</td>
+<td>up to $e^{2i\alpha}$</td>
+<td>up to $e^{2i\alpha}$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the definite form $\langle\cdot\rangle_{*}$</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the scalar part</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the centre $\mathbb{C}e_t$</td>
+<td>no</td>
+<td>no</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the left ideals</td>
+<td>yes</td>
+<td>no</td>
+<td>yes, permuted</td>
+</tr>
+<tr>
+<td>the idempotents</td>
+<td>no</td>
+<td>no</td>
+<td>yes, permuted</td>
+</tr>
+<tr>
+<td>the null cone</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one new row.</strong> In the $\mathrm{SU}(2)$ note the norm was preserved <strong>exactly</strong> by the one-sided copies, because $N(\tilde u)=1$. Here the same multiplicative law gives</p>
+<p>$$
+\langle L_{\tilde u}\tilde Q\rangle_{\natural}=\langle\tilde u\rangle_{\natural}\langle\tilde Q\rangle_{\natural}=e^{2i\alpha}\langle\tilde Q\rangle_{\natural},
+$$</p>
+<p>so the norm is preserved up to a complex factor of modulus one, verified exactly: $N(\tilde u\tilde Q)=e^{2i\alpha}N(\tilde Q)$ and not $N(\tilde Q)$. <strong>The phase is exactly the failure of the one-sided copies to preserve the norm</strong>, and it is the only failure: the definite form, which is what unitarity is about, is preserved by all three addresses.</p>
+<p><strong>The consequence.</strong> A property stated with $N$ is preserved by the rotor and not by the phase, so a phase cannot be a symmetry of a statement written with the multiplicative norm. A property stated with $\langle\cdot\rangle_{*}$ is preserved by everything, so it cannot detect the phase either. What detects the phase is the module: a carrier acted on by $L$ or $R$ but not by scalars.</p>
+<h2 id="12-case-11-the-zero-of-the-length-spectrum">12. Case 11: The Zero of the Length Spectrum</h2>
+<p><strong>The addresses of the four directions.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>generator</th>
+<th>as a left word</th>
+<th>as a right word</th>
+<th>as a derivation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$i e_t$</td>
+<td>$i\,e_t[\,]e_t$</td>
+<td>$i\,e_t[\,]e_t$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\vec e_k$</td>
+<td>$\vec e_k[\,]e_t$</td>
+<td>$e_t[\,]\vec e_k$</td>
+<td>$\vec e_k[\,]e_t-e_t[\,]\vec e_k$</td>
+</tr>
+<tr>
+<td>$\ell$</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$0$ for the first, $2$ for the others</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Conway arrays.</strong> The derivation of the phase has the zero array,</p>
+<p>$$
+c\bigl(\mathrm{ad}_{ie_t}\bigr)=0_{4\times4},\qquad \ell=0,
+$$</p>
+<p>and the derivation of an axis has the two-word array</p>
+<p>$$
+c\bigl(\mathrm{ad}_{\vec e_x}\bigr)=
+\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&0\\0&0&0&0\end{pmatrix},
+\qquad \ell=2,
+$$</p>
+<p>both exact. So along the four directions of $\mathfrak{u}(2)$ the lengths of the derivations are $0,2,2,2$, and along the same four the lengths of the one-sided copies are $1,1,1,1$.</p>
+<p><strong>The reading.</strong> The length is a property of the address and not of the direction: the same direction has length one as a multiplication and length zero as a derivation. In $\mathrm{SU}(2)$ the two numbers were $1$ and $2$; here they are $1$ and $0$, and the difference is that the phase is central and the axes are not.</p>
+<p><strong>What the case establishes.</strong> The length spectrum of $\mathrm{U}(2)$ is $\{0,1,2\}$, and each value is attained: $0$ on the centre's derivation, $1$ on every group element and every one-sided generator, $2$ on the triple's derivations. The minimum is the kernel, which is the cleanest statement of what the centre is.</p>
+<h2 id="13-case-12-the-compact-core-and-the-half-that-is-not-in-it">13. Case 12: The Compact Core, and the Half That Is Not In It</h2>
+<p><strong>The exponentials of the eight directions.</strong> Four of the eight real directions exponentiate into the group and four do not:</p>
+<p>$$
+\exp(t\,i e_t)=e^{it}e_t,\qquad \exp(t\,\vec e_k)=\cos t\,e_t+\sin t\,\vec e_k,
+$$</p>
+<p>both unitary for every $t$, whereas</p>
+<p>$$
+\exp(t\,e_t)=e^{t}e_t,\qquad \exp(t\,i\vec e_x)=\cosh t\,e_t+i\sinh t\,\vec e_x,
+$$</p>
+<p>both Hermitian and neither unitary. At $t=1$: $\exp(e_t)=2.7183\,e_t$ with $\langle\cdot\rangle_{\natural}=7.389$ and $|u^{*}u-e_t|=6.389$; $\exp(i\vec e_x)=1.5431+1.1752i\,\vec e_x$ with $\langle\cdot\rangle_{\natural}=1$ and $|u^{*}u-e_t|=3.627$.</p>
+<p><strong>The reading of the second pair.</strong> The boost has <strong>norm one and determinant one</strong> and is still not in $\mathrm{U}(2)$:</p>
+<p>$$
+\langle\exp(t\,i\vec e_x)\rangle_{\natural}=\cosh^{2}t-\sinh^{2}t=1,\qquad u^{*}u=\cosh 2t+\sinh 2t\,i\vec e_x\neq e_t .
+$$</p>
+<p>So $\det=1$ is not unitarity, and the pair of conditions must be read as one condition on the Hermitian part and one on the absolute value of the determinant. <strong>The boost is the element that separates the two</strong>, exactly as in the $\mathrm{SU}(2)$ note, and here it separates them inside a group that already has a determinant circle: the circle is the <em>absolute</em> value of the determinant, and the boost is the element of determinant one that is not on it.</p>
+<p><strong>The three strata, in one display.</strong></p>
+<p>$$
+\underbrace{\{u:\ \langle u\rangle_{\natural}=1\}}_{\text{rotor and boost}},\qquad \supset\qquad
+\underbrace{\{u:\ u^{*}u=e_t\}}_{\mathrm{U}(2)},\qquad \supset\qquad
+\underbrace{\{u:\ u^{*}u=e_t,\ \langle u\rangle_{\natural}=1\}}_{\mathrm{SU}(2)} .
+$$</p>
+<p>The first is the norm-one hypersurface, the second the compact slice, the third its intersection with the first; and the phase is the difference between the second and the third.</p>
+<p><strong>The derivative of the determinant.</strong> At the identity the two directions behave as the trace says they do:</p>
+<p>$$
+\det(\mathrm I_4+tL_X)=1+t\operatorname{tr}L_X+O(t^{2}),
+$$</p>
+<p>verified for $X=ie_t$ and $X=\vec e_x$ to the truncation order. Since $\operatorname{tr}L_X=4\,\mathrm{Sc}(X)$, the direction that changes the determinant is the direction with non-zero scalar part, and that is the central one: <strong>the determinant is the exponential of the trace, and the trace is the phase.</strong></p>
+<p><strong>What the case establishes.</strong> Unitarity is a slice, not a neighbourhood: the group has no interior in the algebra, the four Hermitian directions leave it immediately, and one of them leaves it while keeping the determinant at one.</p>
+<h2 id="14-case-13-what-the-fourth-direction-adds">14. Case 13: What the Fourth Direction Adds</h2>
+<p><strong>The comparison, row by row.</strong> The same table for the two groups, everything computed above.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>$\mathrm{SU}(2)$</th>
+<th>$\mathrm{U}(2)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dimension</td>
+<td>$3$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>centre</td>
+<td>$\{\pm e_t\}$</td>
+<td>$\mathrm{U}(1)$</td>
+</tr>
+<tr>
+<td>Killing form</td>
+<td>negative definite</td>
+<td>rank $3$, radical the phase</td>
+</tr>
+<tr>
+<td>ambient trace form</td>
+<td>$-\tfrac12\delta_{ab}$ on three</td>
+<td>$-\tfrac12\delta_{ab}$ on four</td>
+</tr>
+<tr>
+<td>$\dim L,\dim R,\dim\mathrm{ad}$</td>
+<td>$3,3,3$</td>
+<td>$4,4,3$</td>
+</tr>
+<tr>
+<td>$L\cap R$</td>
+<td>$0$</td>
+<td>$\mathbb{R}(i\mathrm I_4)$</td>
+</tr>
+<tr>
+<td>$L+R$</td>
+<td>$\mathfrak{so}(4)$, $\dim 6$</td>
+<td>$\dim 7$</td>
+</tr>
+<tr>
+<td>lengths</td>
+<td>$1,1,2$</td>
+<td>$1,1,(0,2)$</td>
+</tr>
+<tr>
+<td>kernel of $\mathrm{Ad}$</td>
+<td>$\{\pm e_t\}$</td>
+<td>$\mathrm{U}(1)$</td>
+</tr>
+<tr>
+<td>determinant of the display</td>
+<td>$1$</td>
+<td>$e^{2i\alpha}$</td>
+</tr>
+<tr>
+<td>spectrum of $L$</td>
+<td>$e^{\mp i\varphi/2}$, twice</td>
+<td>$e^{i(\alpha\mp\varphi/2)}$, twice</td>
+</tr>
+<tr>
+<td>on the doublet</td>
+<td>ratio $e^{i\varphi}$ only</td>
+<td>product $e^{2i\alpha}$ and ratio $e^{i\varphi}$</td>
+</tr>
+<tr>
+<td>complex structures in the group</td>
+<td>no</td>
+<td>yes, a two-sphere of them</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one sentence.</strong> $\mathrm{SU}(2)$ is the rotor; $\mathrm{U}(2)$ is the rotor and the phase of the doublet; the phase is the one direction that no operation on the algebra can see, and therefore the one direction that only a carrier can.</p>
+<p><strong>The check that decides.</strong> Three numbers, and each of them is a test of the whole note: $\mathrm{Ad}_{e^{i\alpha}e_t}=\mathrm I_4$ for every $\alpha$; $\det\mathsf M_2(e^{i\alpha}e_t)=e^{2i\alpha}$ for every $\alpha$; $\mathrm{ad}_{ie_t}=0$. The first says the algebra is blind, the second says the display is not, the third says the blindness is exactly the kernel.</p>
+<h2 id="verification">Verification</h2>
+<p>All numbers above were computed on the sixteen Conway words in the coefficient basis, with $\mathsf M(\vec e_k)=-i\sigma_k$, symbolically where a formula is claimed and in floating point everywhere.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u^{*}u=e_t$ on $200$ random elements; closure under the product</td>
+<td>$4.4\times10^{-16}$; $6.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>every element is $e^{i\alpha}$ times a real rotor; the chart has rank $4$</td>
+<td>$2.0\times10^{-16}$; rank $4$</td>
+</tr>
+<tr>
+<td>$L_{\tilde u}=e^{i\alpha}L_{\tilde q}$, $R_{\tilde u}=e^{i\alpha}R_{\tilde q}$, entry by entry</td>
+<td>$2.0\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde u}=\mathrm{Ad}_{\tilde q}$, independent of the phase</td>
+<td>$5.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$L^{\dagger}L=\mathrm I_4$, $\det L=\langle u\rangle_{\natural}^{2}=e^{4i\alpha}$</td>
+<td>$4.4\times10^{-16}$; $6.7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}L=4e^{i\alpha}\cos\tfrac{\varphi}{2}$; $\operatorname{spec}L=\{e^{i(\alpha\mp\varphi/2)}\}$ twice</td>
+<td>$5.9\times10^{-16}$</td>
+</tr>
+<tr>
+<td>windings along the phase loop: element $1$, $\det\mathsf M_2$ $2$, $\det L$ $4$, $\mathrm{Ad}$ $0$</td>
+<td>$1,2,4,0$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{ie_t}=0$; $c(\mathrm{ad}_{ie_t})=0$; $c(\mathrm{ad}_{\vec e_x})$ of rank $2$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\ell(L)=\ell(R)=\ell(\mathrm{Ad})=1$; $\ell(\mathrm{ad}_{ie_t})=0$; $\ell(\mathrm{ad}_{\vec e_k})=2$</td>
+<td>exact, $30$ draws</td>
+</tr>
+<tr>
+<td>$L(\mathfrak{u}(2))\cap R(\mathfrak{u}(2))=\mathbb{R}(i\mathrm I_4)$; sum of dimension $7$</td>
+<td>one zero singular value</td>
+</tr>
+<tr>
+<td>$24$ real units: $24$ displays, $12$ conjugations, all of determinant one</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$-\tilde q=e^{i\pi}\tilde q$ and $\mathrm{Ad}_{-\tilde q}=\mathrm{Ad}_{\tilde q}$ for all $24$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$(i\vec e_k)^{2}=e_t$, $(i\vec e_k)^{*}=i\vec e_k$, $\mathsf M_2(i\vec e_k)=\sigma_k$, $\det=-1$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)\cap\{u=u^{*}\}=\{\pm e_t\}\cup\{i\vec n\}$</td>
+<td>classification and spot checks</td>
+</tr>
+<tr>
+<td>Peirce frame: $L$, $R$, $\mathrm{Ad}$ diagonal with $e^{i(\alpha\mp\varphi/2)}$ and $e^{\mp i\varphi}$</td>
+<td>$1.1\times10^{-16}$ at three parameter sets</td>
+</tr>
+<tr>
+<td>block determinant on $S_+$ equals $\langle u\rangle_{\natural}$</td>
+<td>$1.1\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\langle L_{\tilde u}\tilde Q\rangle_{\natural}=e^{2i\alpha}\langle\tilde Q\rangle_{\natural}$; $\langle\cdot\rangle_{*}$ preserved</td>
+<td>$0$; $0$</td>
+</tr>
+<tr>
+<td>orders: $\tilde w$ $6$, $i\tilde w$ $12$, $e^{i\pi/3}\tilde w$ $3$, $ie_t$ $4$, $i\vec e_z$ $2$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\exp(t\,ie_t)$, $\exp(t\vec e_k)$ unitary; $\exp(t e_t)$, $\exp(t i\vec e_x)$ not</td>
+<td>$6.4$; $3.6$ at $t=1$</td>
+</tr>
+<tr>
+<td>$\langle\exp(t i\vec e_x)\rangle_{\natural}=1$ while $u^{*}u\neq e_t$</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$\tilde u=e^{i\alpha}(c\,e_t+s\,\vec n)$</td>
+<td>a unitary element: phase $\alpha$, half angle $\varphi/2$</td>
+</tr>
+<tr>
+<td>$L_{\tilde u}$, $R_{\tilde u}$, $L_{\mathrm{axf}}$, $R_{\mathrm{axf}}$</td>
+<td>the two multiplications, operator and array</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\tilde u}$</td>
+<td>the conjugation $L_{\tilde u}R_{\tilde u^{-1}}$, blind to the phase</td>
+</tr>
+<tr>
+<td>$\mathsf M_2(\tilde Q)$</td>
+<td>the $2\times2$ display, $\mathsf M(e_t)=\mathrm I_2$, $\mathsf M(\vec e_k)=-i\sigma_k$</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{\natural}$, $\langle\cdot\rangle_{*}$</td>
+<td>$Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$; $\mathrm{Sc}(\tilde Q\tilde Q^{*})$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}_{\tilde Q}$</td>
+<td>$L_{\tilde Q}-R_{\tilde Q}$, of length $0$ at the phase and $2$ at the axes</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\pm$, $\vec\Upsilon_\pm$</td>
+<td>the Peirce frame of the root $i\vec e_z$</td>
+</tr>
+<tr>
+<td>$c(M)$, $\ell$</td>
+<td>the Conway array and its rank</td>
+</tr>
+<tr>
+<td>${}^{*}$, ${}^{\natural}$</td>
+<td>$\bar{\cdot}\circ{}^{\natural}$, and the quaternion conjugation</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Meaning of $\mathrm{U}(2)$ in the Endomorphisms of the Biquaternion Algebra</em>: the same content as statements rather than cases.</li>
+<li><em>Worked Cases for $\mathrm{SU}(2)$ inside the Endomorphisms of the Biquaternion Algebra</em>: the same cases without the phase.</li>
+<li><em>The Meaning of $\mathrm{SU}(2)$ in the Endomorphisms of the Biquaternion Algebra</em>: the chain $8\to4\to3$, the three copies, and the double cover.</li>
+<li><em>The Spin-One Anti-Hermitian Subspace</em>: $\mathfrak{u}(2)$ as the closure of the spin-one subspace.</li>
+<li><em>The Endomorphisms of the Biquaternion Algebra</em>: the derivations inner, and the kernel of $\mathrm{ad}$ at the centre.</li>
+<li><em>Operators Acting on One Side</em>, <em>Operators Acting on Two Sides</em>: the words and the length.</li>
+<li><em>The Carriers, the Representation, the Spin and the Closure</em>: the Peirce frame and the weights, here shifted by the phase.</li>
+<li><em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>: why norm one and unitarity are different conditions.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

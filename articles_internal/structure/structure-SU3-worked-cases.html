@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worked Cases for $\mathrm{SU}(3)$ inside the Endomorphisms of the Biquaternion Algebra — Biquaternion Universe</title>
+  <meta name="description" content="Purpose. The Meaning of in the Endomorphisms of the Biquaternion Algebra states the subspace and proves its properties in general. This note does the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="worked-cases-for-math0-inside-the-endomorphisms-of-the-biquaternion-algebra"><strong>Worked Cases for $\mathrm{SU}(3)$ inside the Endomorphisms of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Purpose.</strong> <em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em> states the subspace and proves its properties in general. This note does the opposite. It takes one element at a time, writes its arrays, and computes what it does to biquaternions. Every number below was produced by exact algebra on the sixteen Conway words and checked in floating point; the residuals are collected at the end.</p>
+<p><strong>The carrier.</strong> $\mathbb{B}$ has basis $e_t,\vec e_x,\vec e_y,\vec e_z$ with $\vec e_x\vec e_y=\vec e_z$, $\vec e_y\vec e_z=\vec e_x$, $\vec e_z\vec e_x=\vec e_y$ and $\vec e_k^{2}=-e_t$. An element is a column $\tilde Q=(Q_t,Q_x,Q_y,Q_z)$ of four complex numbers, and its display is the $2\times2$ matrix $M(\tilde Q)$ with $M(e_t)=\mathrm{I}_2$ and $M(\vec e_k)=-i\sigma_k$.</p>
+<p><strong>The group.</strong> $\mathrm{SU}(3)$ is the stabiliser of the unit line inside $\mathrm{SU}(4)$ for the form $\langle X,Y\rangle_{*}=\mathrm{Sc}(XY^{*})$. Every element of it has the shape</p>
+<p>$$
+g=\begin{pmatrix}1&0\\0&R\end{pmatrix},\qquad R\in\mathrm{U}(3),\quad \det R=1 ,
+$$</p>
+<p>and it acts on the carrier by the $4\times4$ matrix $g$ on the column of coefficients. So an element fixes the unit and acts on the vector part $B_V=\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)$ by the $3\times3$ block $R$.</p>
+<p><strong>Three arrays, one element.</strong> The corpus writes an operator in three ways, and each case below uses whichever arrays carry information:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>array</th>
+<th>size</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the display</td>
+<td>$4\times4$</td>
+<td>the matrix on $\mathbb{C}e_t\oplus B_V$, the one that acts on a biquaternion</td>
+</tr>
+<tr>
+<td>the block</td>
+<td>$3\times3$</td>
+<td>the restriction to $B_V$, the matrix $R$</td>
+</tr>
+<tr>
+<td>the Conway array</td>
+<td>$4\times4$ of words</td>
+<td>the coefficients $c_{\mu\nu}$ in $M=\sum c_{\mu\nu}e_\mu[\,]e_\nu$, of length $\ell=\operatorname{rank}c$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The three are different matrices of the same operator. The display is a matrix of numbers; the Conway array is a matrix of <em>words</em>, and its rank measures how many one-sided products the operator needs.</p>
+<p><strong>The cases at a glance.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>case</th>
+<th>element</th>
+<th>what it establishes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$e_t$, $-e_t$</td>
+<td>the kernel of the conjugation map is the scalar $U(1)$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\vec e_x,\vec e_y,\vec e_z$</td>
+<td>half-turns, of length one</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$u=\cos\theta+\sin\theta\,\vec n$</td>
+<td>a rotor gives Rodrigues' rotation by $2\theta$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$</td>
+<td>an order-three element, a permutation of the axes</td>
+</tr>
+<tr>
+<td>5</td>
+<td>the twenty-four unit quaternions</td>
+<td>their images are twelve signed permutations</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\exp(\theta A_a)$, $\exp(\phi S_{ab})$, $\exp(\psi h_a)$</td>
+<td>the eight one-parameter families, with their matrices</td>
+</tr>
+<tr>
+<td>7</td>
+<td>a product of eight factors</td>
+<td>a general element, eight parameters</td>
+</tr>
+<tr>
+<td>8</td>
+<td>any $g$ on a general $\tilde Q$</td>
+<td>the scalar is fixed and the vector is rotated; what is preserved</td>
+</tr>
+<tr>
+<td>9</td>
+<td>any $g$ on particular $\tilde Q$</td>
+<td>$e_t$, $\vec e_k$, null elements, idempotents</td>
+</tr>
+<tr>
+<td>10</td>
+<td>any $g$ on products</td>
+<td>the product is not preserved, the norm $N$ is not preserved</td>
+</tr>
+<tr>
+<td>11</td>
+<td>$b=\cosh\tfrac\phi2+i\sinh\tfrac\phi2\vec n$</td>
+<td>a Hermitian element gives $SU(2,1)$, not $SU(3)$</td>
+</tr>
+<tr>
+<td>12</td>
+<td>$g^{\mathsf T}$, $g^{\dagger}$</td>
+<td>transpose is an anti-automorphism inside the group</td>
+</tr>
+<tr>
+<td>13</td>
+<td>lengths of elements</td>
+<td>$1$ for automorphisms, $2$ and $4$ elsewhere</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="1-the-three-arrays-of-one-element">1. The Three Arrays of One Element</h2>
+<p><strong>The example.</strong> Take $\theta=\tfrac{\pi}{4}$ in the family generated by $\mathrm{ad}_{\vec e_z}=A_z$:</p>
+<p>$$
+g=\exp\bigl(\tfrac{\pi}{4}A_z\bigr).
+$$</p>
+<p><strong>The display.</strong> Exponentiating the block $\begin{pmatrix}0&-2\\2&0\end{pmatrix}$ on the plane of $(\vec e_x,\vec e_y)$,</p>
+<p>$$
+g=\begin{pmatrix}1&0&0&0\\0&0&-1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+$$</p>
+<p>a quarter-turn of the $(\vec e_x,\vec e_y)$ plane with the unit and $\vec e_z$ fixed. Checks: $g\,g^{\dagger}=\mathrm{I}_4$ to $10^{-16}$, $\det g=1$, and $g$ fixes $e_t$ exactly.</p>
+<p><strong>The block.</strong> Reading the lower right corner,</p>
+<p>$$
+R=\begin{pmatrix}0&-1&0\\1&0&0\\0&0&1\end{pmatrix},
+$$</p>
+<p>which is $\cos\tfrac{\pi}{2}$ on the diagonal and $\sin\tfrac{\pi}{2}$ in the off-diagonal slots: the rotation angle is $2\theta=\tfrac{\pi}{2}$ and not $\theta$.</p>
+<p><strong>The Conway array.</strong> Solving $g=\sum c_{\mu\nu}e_\mu[\,]e_\nu$ over the sixteen words gives only four non-zero entries,</p>
+<p>$$
+c=\tfrac12\begin{pmatrix}1&0&0&-1\\0&0&0&0\\0&0&0&0\\1&0&0&-1\end{pmatrix},
+\qquad\text{that is}\qquad
+g=\tfrac12\Bigl(e_t[\,]e_t-e_t[\,]e_z+e_z[\,]e_t-e_z[\,]e_z\Bigr),
+$$</p>
+<p>of rank one. So $\ell(g)=1$: the quarter-turn is a <strong>single word</strong>. Writing the rank-one array as an outer product $c_{\mu\nu}=a_\mu b_\nu$,</p>
+<p>$$
+a=\tfrac{1}{\sqrt2}(e_t+\vec e_z),\qquad b=\tfrac{1}{\sqrt2}(e_t-\vec e_z)=a^{*},
+$$</p>
+<p>so that</p>
+<p>$$
+g=L_aR_{a^{*}}=\mathrm{Sd}_a ,\qquad a^{*}=a^{-1}\ \text{because}\ aa^{*}=\tfrac12(e_t+\vec e_z)(e_t-\vec e_z)=e_t .
+$$</p>
+<p>This is the pattern for the whole automorphism part of the group: <strong>a rotation is a single word with right factor the $*$-adjoint of the left factor</strong>, which is why conjugation by a biquaternion is written $L_aR_{a^{-1}}$ in the operator articles. In the notation of the note on the Hermitian pair, the rotation by $\tfrac{\pi}{2}$ about $z$ <em>is</em> $\mathrm{Sd}_a$ for the unit element $a$ along the bisector of $e_t$ and $\vec e_z$.</p>
+<p><strong>The lesson.</strong> One operator, one rotation angle, and three arrays of sizes $4\times4$, $3\times3$ and "sixteen words, rank one". The rank of the third array is not the rank of the first: the display has rank four and the Conway array has rank one.</p>
+<h2 id="2-case-1-the-unit-its-negative-and-the-kernel">2. Case 1: The Unit, Its Negative, and the Kernel</h2>
+<p><strong>The identity.</strong> Conjugation by $e_t$ is the identity operator,</p>
+<p>$$
+\mathrm{Ad}_{e_t}=\mathrm{I}_4,\qquad c=\mathrm{I}_4\ \text{(the single entry }1\text{ at }e_t[\,]e_t),\qquad \ell=1 .
+$$</p>
+<p>Conjugation by $-e_t$ is the same operator, to $2\times10^{-16}$: the minus signs of $(-e_t)\tilde X(-e_t)^{-1}$ cancel. Conjugation by $iu$ equals conjugation by $u$ for every $u$, since a scalar commutes and cancels:</p>
+<p>$$
+\mathrm{Ad}_{-u}=\mathrm{Ad}_{u},\qquad \mathrm{Ad}_{iu}=\mathrm{Ad}_{u},\qquad \mathrm{Ad}_{e^{i\alpha}u}=\mathrm{Ad}_{u}\quad(\alpha\in\mathbb{R}).
+$$</p>
+<p><strong>The kernel.</strong> Verified on $u=\tfrac12(e_t+\vec e_x+\vec e_y+\vec e_z)$ and its four variants: $-u$, $iu$, $e^{i\pi/5}u$ all give the same display as $u$. Hence the map</p>
+<p>$$
+\{u\in\mathbb{B}^{\times}\}\longrightarrow\mathrm{SU}(3),\qquad u\mapsto\mathrm{Ad}_u
+$$</p>
+<p>has the scalars in its kernel, and the phase of a unit element is invisible. The kernel is exactly $\mathbb{C}^{\times}e_t$ on the invertible elements, i.e. $U(1)$ on the unit ones.</p>
+<h2 id="3-case-2-the-three-half-turns">3. Case 2: The Three Half-Turns</h2>
+<p><strong>The three matrices.</strong> Conjugating by the basis vectors reverses the two orthogonal axes:</p>
+<p>$$
+\mathrm{Ad}_{\vec e_x}=\operatorname{diag}(1,1,-1,-1),\qquad
+\mathrm{Ad}_{\vec e_y}=\operatorname{diag}(1,-1,1,-1),\qquad
+\mathrm{Ad}_{\vec e_z}=\operatorname{diag}(1,-1,-1,1).
+$$</p>
+<p><strong>Their arrays.</strong> Each is one word with a single coefficient,</p>
+<p>$$
+\mathrm{Ad}_{\vec e_x}=-e_x[\,]e_x,\qquad
+\mathrm{Ad}_{\vec e_y}=-e_y[\,]e_y,\qquad
+\mathrm{Ad}_{\vec e_z}=-e_z[\,]e_z,
+$$</p>
+<p>because $\vec e_k^{-1}=-\vec e_k$, so that $L_{\vec e_k}R_{\vec e_k^{-1}}=-L_{\vec e_k}R_{\vec e_k}$. The length is one, the display is diagonal with $\pm1$, the block is a half-turn, and the trace of the display is $0$.</p>
+<p><strong>The general fact behind the case.</strong> For a <strong>unit</strong> quaternion $u$ the operator $L_uR_{u^{*}}$ is unitary, of determinant one, and it fixes $e_t$; hence $\mathrm{Ad}_u\in\mathrm{SU}(3)$. The image of the map $u\mapsto\mathrm{Ad}_u$ on the unit elements is the group of real orthogonal blocks, of dimension three, and the three half-turns are three of its points.</p>
+<h2 id="4-case-3-a-rotor-and-rodrigues-formula">4. Case 3: A Rotor, and Rodrigues' Formula</h2>
+<p><strong>The element.</strong> Let $\vec n$ be a real unit vector and $\theta$ real, and take the rotor</p>
+<p>$$
+u=\cos\theta\,e_t+\sin\theta\,\vec n .
+$$</p>
+<p><strong>The claim.</strong> The block of $\mathrm{Ad}_u$ is the rotation by the angle $2\theta$ about $\vec n$:</p>
+<p>$$
+\mathrm{Ad}_u\big|_{B_V}=\cos(2\theta)\,\mathrm{I}_3+\sin(2\theta)\,[\vec n]_{\times}+\bigl(1-\cos(2\theta)\bigr)\,\vec n\vec n^{\mathsf T},
+$$</p>
+<p>with $[\vec n]_{\times}$ the cross-product matrix. Checks: with $\vec n=(1,2,3)/\sqrt{14}$ and $\theta=0.9$ the residual against this formula is $5.6\times10^{-16}$; with $\vec n=\vec e_z$ and $\theta=\tfrac{\pi}{4}$ it reproduces the quarter-turn of §1; with $\theta=\tfrac{\pi}{2}$ it reproduces the half-turn $-e_z[\,]e_z$ of §3.</p>
+<p><strong>The parameter count.</strong> The map $(\vec n,\theta)\mapsto\mathrm{Ad}_u$ is three real dimensional, it is two-to-one because $u$ and $-u$ agree, and it is onto the real rotations. This is the rotor story of the corpus, read inside the group: the rotors are a <em>three-dimensional</em> subgroup of an eight-dimensional group.</p>
+<h2 id="5-case-4-an-order-three-element">5. Case 4: An Order-Three Element</h2>
+<p><strong>The element.</strong> Take</p>
+<p>$$
+u=\tfrac12\bigl(e_t+\vec e_x+\vec e_y+\vec e_z\bigr),\qquad P=\mathrm{Ad}_u .
+$$</p>
+<p>$u$ is a unit element ($uu^{*}=e_t$) and $u^{3}=\pm e_t$, so $P$ has order three.</p>
+<p><strong>The display.</strong></p>
+<p>$$
+P=\begin{pmatrix}1&0&0&0\\0&0&0&1\\0&1&0&0\\0&0&1&0\end{pmatrix},
+\qquad
+P^{2}=\begin{pmatrix}1&0&0&0\\0&0&1&0\\0&0&0&1\\0&1&0&0\end{pmatrix},
+$$</p>
+<p>with $P^{3}=\mathrm{I}_4$ to $7\times10^{-16}$. The block is the cycle</p>
+<p>$$
+\vec e_x\longmapsto\vec e_y\longmapsto\vec e_z\longmapsto\vec e_x ,
+$$</p>
+<p>the rotation by $\tfrac{2\pi}{3}$ about the diagonal $(1,1,1)$. Its eigenvalues are $1,1,\omega,\omega^{2}$ with $\omega=e^{2\pi i/3}$, its trace is $1$ and its determinant is $1$.</p>
+<p><strong>What it does to the eight generators.</strong> Conjugating each generator as an operator,</p>
+<p>$$
+A_x\mapsto A_y\mapsto A_z\mapsto A_x,\qquad
+h_x\mapsto h_y\mapsto h_z\mapsto h_x,\qquad
+S_{xy}\mapsto S_{yz}\mapsto S_{xz}\mapsto S_{xy},
+$$</p>
+<p>all with coefficient exactly one, no signs. The three rotations cycle, the three diagonals cycle, and the three symmetric sums cycle in the reverse sense, because $S_{ab}$ follows the <em>pair</em> and the pair $(x,y)$ becomes the pair $(y,z)$.</p>
+<p><strong>The Conway array.</strong> $P=L_uR_{u^{*}}$ with $u^{*}=\tfrac12(e_t-\vec e_x-\vec e_y-\vec e_z)$, so $c_{\mu\nu}=u_\mu u^{*}_\nu=\pm\tfrac14$:</p>
+<p>$$
+c=\tfrac14\begin{pmatrix}1&-1&-1&-1\\1&-1&-1&-1\\1&-1&-1&-1\\1&-1&-1&-1\end{pmatrix},
+$$</p>
+<p>sixteen non-zero entries and rank one. The length is one while sixteen words appear: <strong>rank and sparsity are different questions</strong>, and this element separates them.</p>
+<p><strong>Why the case matters.</strong> This is the element that shows the three axes are not canonical. An automorphism of the algebra carries each axis to another, so no statement about this group can name an axis without breaking the symmetry. The first note proves that in general; here it is one matrix.</p>
+<h2 id="6-case-5-the-twenty-four-unit-quaternions">6. Case 5: The Twenty-Four Unit Quaternions</h2>
+<p><strong>The elements.</strong> The unit quaternions of the corpus are $\pm e_t$, $\pm\vec e_k$, and the sixteen $\tfrac12(\pm e_t\pm\vec e_x\pm\vec e_y\pm\vec e_z)$.</p>
+<p><strong>The images.</strong> Computing $\mathrm{Ad}_u$ for all twenty-four gives <strong>twelve</strong> distinct displays, because $u$ and $-u$ agree. Each is of the form $\operatorname{diag}(1,\Pi)$ with $\Pi$ a signed permutation matrix in $SO(3)$, and the three permutation types that occur are the identity, the $3$-cycle of §5 and its square. Verified: twelve distinct images, all monomial, all with a single $\pm1$ in each row and each column.</p>
+<p><strong>The reading.</strong> The binary tetrahedral group $2T$ of order twenty-four maps onto the tetrahedral rotation group of order twelve, which sits inside $SO(3)$, which sits inside $\mathrm{SU}(3)$. Three nested finite groups, and the map that produces them is the same $\mathrm{Ad}$ used for every other case. The corpus's count of twenty-four unit quaternions therefore becomes a count of twelve matrices here, and the factor two is the kernel of §2.</p>
+<h2 id="7-case-6-the-eight-one-parameter-families">7. Case 6: The Eight One-Parameter Families</h2>
+<p>Each generator gives a one-parameter family with an explicit matrix. Write $\operatorname{blk}(a,b;\,s,c)$ for the $4\times4$ matrix that equals $\begin{pmatrix}s&c\\-c&s\end{pmatrix}$ on the plane of $(\vec e_a,\vec e_b)$ and the identity elsewhere: a rotation of that plane by the angle whose cosine and sine are $s$ and $c$.</p>
+<p><strong>The three rotations</strong> $\exp(\theta A_a)$. On the plane orthogonal to $\vec e_a$,</p>
+<p>$$
+\exp(\theta A_z)=\operatorname{blk}\bigl(x,y;\,\cos2\theta,\,\sin2\theta\bigr),
+$$</p>
+<p>a real rotation by $2\theta$. At $\theta=\tfrac{\pi}{4}$: $\operatorname{blk}(x,y;\,0,1)$,</p>
+<p>$$
+\exp\bigl(\tfrac{\pi}{4}A_z\bigr)=\begin{pmatrix}1&0&0&0\\0&0&-1&0\\0&1&0&0\\0&0&0&1\end{pmatrix},
+$$</p>
+<p>the matrix of §1. At $\theta=\tfrac{\pi}{2}$: $\operatorname{diag}(1,-1,-1,1)$ of §3. At $\theta=\pi$: the identity, so the family is $\pi$-periodic in $\theta$ — verified, residual $2\times10^{-16}$. The length is one for every $\theta$, because $\exp(\theta A_z)=\mathrm{Ad}_a=\mathrm{Sd}_a$ for $a=\cos\theta\,e_t+\sin\theta\,\vec e_z$ (verified at $\theta=\tfrac{\pi}{4}$ to $6\times10^{-16}$). The half-angle is $\theta$ and not $\tfrac{\theta}{2}$: the rotor $a$ turns vectors by twice its own angle, and one side of the statement is in the rotor's angle while the other is in the operator's.</p>
+<p><strong>The three symmetric sums</strong> $\exp(\phi S_{ab})$. On the plane of $(a,b)$,</p>
+<p>$$
+\exp(\phi S_{xy})\Big|_{\text{plane}}=\cos\phi\,\mathrm{I}_2+\sin\phi\begin{pmatrix}0&i\\i&0\end{pmatrix}
+=\begin{pmatrix}\cos\phi&i\sin\phi\\ i\sin\phi&\cos\phi\end{pmatrix},
+$$</p>
+<p>the identity plus $i$ times the swap, and the identity on the two remaining coordinates $e_t,\vec e_z$. At $\phi=\tfrac{\pi}{4}$ the entries are $\tfrac{1}{\sqrt2}$ and $\tfrac{i}{\sqrt2}$. At $\phi=\tfrac{\pi}{2}$ the matrix is $\begin{pmatrix}0&i\\i&0\end{pmatrix}$ on the plane: the <em>$i$-swap</em>, which exchanges $\vec e_x$ and $\vec e_y$ and multiplies both by $i$. At $\phi=\pi$ the matrix is $\operatorname{diag}(1,-1,-1,1)$ again, and</p>
+<p>$$
+\exp(\pi S_{xy})=\mathrm{Ad}_{\vec e_z}=-e_z[\,]e_z ,
+$$</p>
+<p>an automorphism reached by a non-automorphism route. The length drops from four (at $\phi=\tfrac{\pi}{2}$) to one (at $\phi=\pi$). <strong>A one-parameter family can pass through the automorphism subgroup at isolated parameter values.</strong></p>
+<p><strong>The two diagonals</strong> $\exp(\psi h_a)$. These are phases on a pair of axes and nothing else:</p>
+<p>$$
+h_x=\operatorname{diag}(0,0,-i,i),\qquad h_y=\operatorname{diag}(0,i,0,-i),\qquad h_z=\operatorname{diag}(0,-i,i,0),
+$$
+$$
+\exp(\psi h_x)=\operatorname{diag}\bigl(1,\,1,\,e^{-i\psi},\,e^{i\psi}\bigr),\qquad
+\exp(\psi h_y)=\operatorname{diag}\bigl(1,\,e^{i\psi},\,1,\,e^{-i\psi}\bigr),
+$$
+$$
+\exp(\psi h_z)=\operatorname{diag}\bigl(1,\,e^{-i\psi},\,e^{i\psi},\,1\bigr),
+$$</p>
+<p>with $h_x+h_y+h_z=0$, so that the three are not independent and any two may be used. These are the only generators whose exponential is diagonal. For $\psi\notin\pi\mathbb{Z}$ the Conway array is diagonal with four non-zero entries, so the length is four; at $\psi=\pi$ the exponential collapses to $\operatorname{diag}(1,-1,-1,1)=\mathrm{Ad}_{\vec e_z}$ and the length is one, the same collapse as in the $S$ family. At $\psi=\tfrac{\pi}{3}$ the array is $\operatorname{diag}(0.75,\,-0.433i,\,0.433i,\,-0.25)$, of rank four.</p>
+<p><strong>The ninth direction.</strong> Adding $iP$, the projector onto $B_V$ times $i$, closes the eight into $\mathfrak{u}(3)$:</p>
+<p>$$
+iP=i\,\mathrm{diag}\bigl(0,\tfrac34,\tfrac14,\tfrac14,\tfrac14\bigr)
+\quad\text{in words,}\quad
+iP=i\Bigl(\tfrac34e_t[\,]e_t+\tfrac14\bigl(e_x[\,]e_x+e_y[\,]e_y+e_z[\,]e_z\bigr)\Bigr),
+$$</p>
+<p>of trace $3i$ and length four. Exponentiating gives a pure phase on the vector part,</p>
+<p>$$
+\exp(itP)=\operatorname{diag}\bigl(1,e^{it},e^{it},e^{it}\bigr),\qquad \det=e^{3it},
+$$</p>
+<p>which is unitary for real $t$ and leaves $\mathrm{SU}(3)$ as soon as $\det\ne1$: at $t=\tfrac{\pi}{3}$ the determinant is $-1$, at $t=0.3$ it is $e^{0.9i}$. This is the ninth direction that tracelessness deletes, seen as a matrix.</p>
+<h2 id="8-case-7-a-general-element">8. Case 7: A General Element</h2>
+<p><strong>The construction.</strong> Every element is a product of the eight families. Take the angles</p>
+<p>$$
+(\theta_x,\theta_y,\theta_z,\psi_1,\psi_2,\phi_{xy},\phi_{xz},\phi_{yz})=(0.4,\,-0.7,\,0.3,\,0.9,\,-0.5,\,0.6,\,0.2,\,-0.8)
+$$</p>
+<p>and</p>
+<p>$$
+g=\exp(\theta_xA_x)\exp(\theta_yA_y)\exp(\theta_zA_z)\exp(\psi_1H_1)\exp(\psi_2H_2)\exp(\phi_{xy}S_{xy})\exp(\phi_{xz}S_{xz})\exp(\phi_{yz}S_{yz}),
+$$</p>
+<p><strong>The display.</strong> Numerically</p>
+<p>$$
+g=\begin{pmatrix}
+1&0&0&0\\
+0&0.1568-0.1606i&-0.3788+0.7037i&-0.4952-0.2563i\\
+0&0.2923+0.2540i&0.3770-0.3924i&-0.6346-0.3888i\\
+0&0.8013+0.3970i&0.0823+0.2417i&0.2855+0.2316i
+\end{pmatrix},
+$$</p>
+<p>with residual $6\times10^{-16}$ against unitarity, $10^{-15}$ against $\det=1$, and $2\times10^{-16}$ against "fixes $e_t$". Every entry of the block has modulus comparable to the others: this element is nowhere near an automorphism.</p>
+<p><strong>The eight parameters, and why eight.</strong> The generators span an eight-dimensional real space closed under the bracket, so the eight families generate. What they generate is a group whose block is $\mathrm{U}(3)$ with determinant one, of real dimension $8=9-1$; the automorphism subgroup of §3–§5 is the three-dimensional part with real block. <strong>Five of the eight parameters have no biquaternion behind them.</strong></p>
+<p><strong>Eigenvalues.</strong> The display has eigenvalues $1$ and the three eigenvalues of the block, all of modulus one and of product one. For this instance,</p>
+<p>$$
+1,\qquad -0.2190+0.9760i,\qquad 0.0850-0.9960i,\qquad 0.9540-0.3010i,
+$$</p>
+<p>at angles $0,\;0.57\pi,\;-0.47\pi,\;-0.10\pi$: the three phases of the block sum to zero modulo $2\pi$, which is $\det R=1$ written as a statement about eigenvalues. For the order-three element of §5 the same list is $1,1,\omega,\omega^{2}$.</p>
+<p><strong>Two elements that look like this one but are not in the group.</strong> $-g$ is unitary and of determinant one but it sends $e_t$ to $-e_t$, so it is not in $\mathrm{SU}(3)$: the group is <em>not</em> closed under global sign, and the display cannot be read up to sign. And $\mathrm{diag}(1,R)$ with $R\in\mathrm{U}(3)$ and $\det R=e^{i\alpha}$ is in $\mathrm{U}(3)$ and not in $\mathrm{SU}(3)$ unless $\alpha=0$.</p>
+<h2 id="9-case-8-the-action-on-a-general-biquaternion">9. Case 8: The Action on a General Biquaternion</h2>
+<p><strong>The element.</strong> Write the general biquaternion and its column of coefficients:</p>
+<p>$$
+\tilde Q=Q_t\,e_t+Q_x\vec e_x+Q_y\vec e_y+Q_z\vec e_z,\qquad
+Q=\begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}\in\mathbb{C}^{4}.
+$$</p>
+<p><strong>The action.</strong> For every $g\in\mathrm{SU}(3)$,</p>
+<p>$$
+g\cdot\tilde Q=Q_t\,e_t+\bigl(R\,(Q_x,Q_y,Q_z)^{\mathsf T}\bigr)\cdot(\vec e_x,\vec e_y,\vec e_z),
+$$</p>
+<p>that is, in columns,</p>
+<p>$$
+\begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}\longmapsto
+\begin{pmatrix}1&0\\ 0&R\end{pmatrix}\begin{pmatrix}Q_t\\ Q_x\\ Q_y\\ Q_z\end{pmatrix}.
+$$</p>
+<p>Verified on a random $\tilde Q$ and the general $g$ of §8: residual $3\times10^{-16}$.</p>
+<p><strong>What the case says.</strong> The group <em>never touches the unit coordinate</em>. It acts on the three vector coordinates by a unitary matrix of determinant one. In biquaternion language: the action is complex-linear on the vector part and trivial on the scalar part, and a general element is <strong>not</strong> of the form $\tilde Q\mapsto a\tilde Qb$. An operator of that form has a Conway array of rank one, since $a[\,]b$ is a single word; the general element has rank four. Conversely every element that <em>is</em> of that form and is invertible is an automorphism with $b=a^{-1}$ up to a scalar, so the elements of $SU(3)$ that act as $\tilde Q\mapsto a\tilde Qa^{-1}$ are exactly those of §3–§5.</p>
+<p><strong>A concrete instance.</strong> With the general $g$ of §8 and</p>
+<p>$$
+\tilde Q=(1+2i)\,e_t+3\vec e_x-\vec e_y+i\vec e_z,
+$$</p>
+<p>the image has coefficients</p>
+<p>$$
+(1+2i,\;1.1054-1.6809i,\;0.8886+0.5197i,\;2.0900+1.2349i),
+$$</p>
+<p>so the unit coefficient is unchanged and the three vector coefficients are mixed. The squared norm $\langle\tilde Q\rangle_{*}=|Q_t|^{2}+|Q_x|^{2}+|Q_y|^{2}+|Q_z|^{2}$ goes from $16$ to $16$ exactly.</p>
+<h2 id="10-case-9-particular-biquaternions">10. Case 9: Particular Biquaternions</h2>
+<p>Two tables follow. The first uses the general $g$ of §8. The second uses the two-factor element</p>
+<p>$$
+g_0=\exp\bigl(\tfrac{\pi}{3}H_1\bigr)\exp\bigl(\tfrac{\pi}{4}A_z\bigr),\qquad
+R_0=\begin{pmatrix}0&-e^{i\pi/3}&0\\ e^{-i\pi/3}&0&0\\ 0&0&1\end{pmatrix},
+$$</p>
+<p>whose block is a swap with phases, chosen because its arithmetic closes in closed form: $\vec e_x\mapsto e^{-i\pi/3}\vec e_y$ and $\vec e_y\mapsto -e^{i\pi/3}\vec e_x$. Both residual checks: $7\times10^{-16}$. In both tables $N(\tilde Q)=\det M(\tilde Q)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}$ is the multiplicative norm, of signature $(2,2)$.</p>
+<p><strong>Table A: the general element of §8.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde Q$</th>
+<th>image coefficients</th>
+<th>$\langle\tilde Q\rangle_{*}$</th>
+<th>$N$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t$</td>
+<td>$(1,\;0,\;0,\;0)$</td>
+<td>$1\to1$</td>
+<td>$1\to1$</td>
+</tr>
+<tr>
+<td>$\vec e_x$</td>
+<td>$(0,\;0.1568-0.1606i,\;0.2923+0.2540i,\;0.8013+0.3970i)$</td>
+<td>$1\to1$</td>
+<td>$1\to0.8907$</td>
+</tr>
+<tr>
+<td>$\vec e_x+\vec e_y$</td>
+<td>$(0,\;-0.2220+0.5431i,\;0.6693-0.1384i,\;0.8835+0.6387i)$</td>
+<td>$2\to2$</td>
+<td>$2\to0.8956$</td>
+</tr>
+<tr>
+<td>$i\vec e_x$</td>
+<td>$(0,\;0.1606+0.1568i,\;-0.2540+0.2923i,\;-0.3970+0.8013i)$</td>
+<td>$1\to1$</td>
+<td>$1\to0.8907$</td>
+</tr>
+<tr>
+<td>$e_t+\vec e_x$</td>
+<td>$(1,\;0.1568-0.1606i,\;0.2923+0.2540i,\;0.8013+0.3970i)$</td>
+<td>$2\to2$</td>
+<td>$2\to1.6738$</td>
+</tr>
+<tr>
+<td>$\cos0.5\,e_t+i\sin0.5\,\vec e_x$</td>
+<td>$(0.8776,\;0.0770+0.0752i,\;-0.1218+0.1401i,\;-0.1903+0.3841i)$</td>
+<td>$1\to1$</td>
+<td>$0.5403\to0.6757$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Table B: the two-factor element $g_0$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde Q$</th>
+<th>image coefficients</th>
+<th>$\langle\tilde Q\rangle_{*}$</th>
+<th>$N$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tfrac12(e_t+i\vec e_x)$, a projector</td>
+<td>$\tfrac12 e_t+\tfrac12 e^{-i\pi/3}i\vec e_y=(0.5,\;0,\;0.4330+0.2500i,\;0)$</td>
+<td>$0.5\to0.5$</td>
+<td>$0\to0.3750+0.2165i$</td>
+</tr>
+<tr>
+<td>$\tfrac12(e_t-i\vec e_x)$, its complement</td>
+<td>$\tfrac12 e_t-\tfrac12 e^{-i\pi/3}i\vec e_y=(0.5,\;0,\;-0.4330-0.2500i,\;0)$</td>
+<td>$0.5\to0.5$</td>
+<td>$0\to0.3750+0.2165i$</td>
+</tr>
+<tr>
+<td>$e_t+i\vec e_x$, a null element</td>
+<td>$e_t+i e^{-i\pi/3}\vec e_y=(1,\;0,\;0.8660+0.5000i,\;0)$</td>
+<td>$2\to2$</td>
+<td>$0\to1.5+0.8660i$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Reading the rows.</strong></p>
+<p><em>The unit is fixed.</em> First row of Table A: $e_t$ is an eigenvector with eigenvalue one for every element of the group. The line $\mathbb{C}e_t$ is invariant and the action on it is exactly trivial, not merely scalar: the eigenvalue is one because the total determinant is one and nothing else acts.</p>
+<p><em>The axes are mixed.</em> Rows two to five of Table A: a vector unit goes to a genuine complex combination of the three, of $\langle\cdot\rangle_{*}$-norm one. That is what $\mathrm{U}(3)$ does to a vector; vector units are permuted only by the twelve elements of §6, and rotated among themselves only inside the three-dimensional subgroup of §3–§5.</p>
+<p><em>The idempotent row is the sharp one.</em> The element $u=\tfrac12(e_t+i\vec e_x)$ satisfies $u^{2}=u$ and $N(u)=0$: it is a projector, and in the display it is a matrix of rank one. By Table B its image under $g_0$ is $\tfrac12 e_t+\tfrac12 e^{-i\pi/3}i\vec e_y$, and</p>
+<p>$$
+(g_0\cdot u)^{2}-(g_0\cdot u)\ \text{has norm}\ 0.4330\ne0 .
+$$</p>
+<p>The image is <strong>not idempotent</strong>: the projector property is a property of the algebra's multiplication, and the group does not preserve the multiplication. Its complement $u'=\tfrac12(e_t-i\vec e_x)$ maps to the reflected vector, and the two images still sum to $e_t$ to $3\times10^{-16}$ — because $g_0$ is complex-linear and $u+u'=e_t$. So the algebra element $e_t=u+u'$ is preserved while the property "$u^{2}=u$" of its summands is not.</p>
+<p><em>The null cone leaves itself.</em> $e_t+i\vec e_x$ has $N=0$, and its image under $g_0$ has $N=1.5+0.8660i\ne0$. The zero divisors of the algebra are the null cone of the $(2,2)$ form $N$; the group moves that cone off itself, because $N$ is not the form the group preserves. In both tables $N$ changes on every row except the first of Table A, while $\langle\cdot\rangle_{*}$ never changes at all.</p>
+<h2 id="11-case-10-what-the-group-does-not-preserve">11. Case 10: What the Group Does Not Preserve</h2>
+<p><strong>The two forms.</strong> The group preserves $\langle\tilde Q\rangle_{*}=|Q_t|^{2}+\cdots+|Q_z|^{2}$, of signature $(8,0)$ over $\mathbb{R}$, and it preserves nothing else of the four norms of the corpus. The multiplicative norm $N$, of signature $(2,2)$, is not preserved: the tables of §10 show $N$ changing on every row except the row of $e_t$, while $\langle\cdot\rangle_{*}$ never changes at all.</p>
+<p><strong>Products.</strong> For the general $g$ of §8, and $\tilde Q=(1+2i)e_t+3\vec e_x-\vec e_y+i\vec e_z$, $\tilde P=\vec e_x+\vec e_y$,</p>
+<p>$$
+\bigl(g\cdot\tilde Q\bigr)\bigl(g\cdot\tilde P\bigr)\ne g\cdot(\tilde Q\tilde P),
+\qquad\text{residual }5.95 .
+$$</p>
+<p>So the action is <strong>not</strong> an automorphism of the algebra, and this is the numerical content of the general statement that no non-zero element of the Lie algebra is $\mathbb{B}$-linear. The five non-automorphism directions of §8 are exactly the ones that break this identity.</p>
+<p><strong>Where the identity does hold.</strong> On the three-dimensional subgroup of §3–§5 the residual is zero, and there $g\cdot\tilde Q=a\tilde Qa^{-1}$ for a unit $a$: an inner automorphism. The dividing line is the reality of the block, $R\in SO(3)$ versus $R\in U(3)\setminus SO(3)$.</p>
+<h2 id="12-case-11-the-hermitian-elements">12. Case 11: The Hermitian Elements</h2>
+<p><strong>The element.</strong> The boost of the spin articles is Hermitian, not unitary:</p>
+<p>$$
+b=\cosh\tfrac{\phi}{2}\,e_t+i\sinh\tfrac{\phi}{2}\,\vec e_x,\qquad b^{*}=b\quad(\text{Hermitian}),\qquad N(b)=1 .
+$$</p>
+<p><strong>The conjugation.</strong> With $\phi=0.8$, so that $\cosh\tfrac{\phi}{2}=1.0811$ and $\sinh\tfrac{\phi}{2}=0.4108$,</p>
+<p>$$
+\mathrm{Ad}_b=\begin{pmatrix}
+1&0&0&0\\
+0&1&0&0\\
+0&0&1.3374&-0.8881i\\
+0&0&0.8881i&1.3374
+\end{pmatrix},
+$$</p>
+<p>with eigenvalues $1,1,e^{0.8},e^{-0.8}=1,1,2.2255,0.4493$: real, positive, and not of modulus one.</p>
+<p><strong>The reading.</strong> $\mathrm{Ad}_b$ is <strong>not</strong> in $\mathrm{SU}(3)$ — it is not unitary, and its eigenvalues are real instead of unimodular. But it is of determinant one, it fixes $e_t$, and its block satisfies</p>
+<p>$$
+R^{\dagger}G_3R=G_3,\qquad G_3=\operatorname{diag}(-1,-1,1),
+$$</p>
+<p>to $10^{-9}$: it lies in $\mathrm{SU}(2,1)$, the non-compact form of the first note. So the same corner of $M_4(\mathbb{C})$ contains both groups, and which one a given element belongs to is decided by the inertia of the form its block preserves. The compact group of this note is the definite case.</p>
+<p><strong>The lesson about parameters.</strong> A Hermitian element has no reason to be in $\mathrm{U}(2)$: a boost is a legitimate biquaternion of norm one, it conjugates, and the operator it produces is legitimate but non-unitary. The condition "$u$ unitary", not "$N(u)=1$", is what selects $\mathrm{SU}(3)$.</p>
+<h2 id="13-case-12-transpose-adjoint-inverse">13. Case 12: Transpose, Adjoint, Inverse</h2>
+<p><strong>The facts.</strong> For $g\in\mathrm{SU}(3)$,</p>
+<p>$$
+g^{-1}=g^{\dagger},\qquad g^{\mathsf T}\in\mathrm{SU}(3),
+$$</p>
+<p>both verified to $10^{-15}$ on the general element of §8: the transpose is again unitary, of determinant one, and fixing $e_t$. And</p>
+<p>$$
+(gh)^{\mathsf T}=h^{\mathsf T}g^{\mathsf T}
+$$</p>
+<p>exactly, so $g\mapsto g^{\mathsf T}$ is an <strong>anti</strong>-automorphism of the group, not an automorphism. On the Lie algebra the corresponding map $X\mapsto-X^{\mathsf T}$ is the Cartan involution that splits $\mathfrak{su}(3)$ into $3+5$.</p>
+<p><strong>The arrays.</strong> For the general element: $\ell(g)=\ell(g^{\mathsf T})=\ell(g^{\dagger})=4$. The transpose has the same length, which is what one expects from the side-swap $\sigma$: transposing the display transposes the Conway array, and the rank is unchanged. Note that $\sigma$ is an anti-automorphism of the word algebra and transpose is an anti-automorphism of the group: the same word, in two settings.</p>
+<h2 id="14-case-13-lengths-of-elements">14. Case 13: Lengths of Elements</h2>
+<p>The length is the rank of the Conway array, and it sorts the elements of the group into strata.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>element</th>
+<th>length</th>
+<th>why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{I}_4=\mathrm{Ad}_{e_t}$</td>
+<td>$1$</td>
+<td>the word $e_t[\,]e_t$</td>
+</tr>
+<tr>
+<td>a rotation by $\pi$, $\mathrm{Ad}_{\vec e_k}$</td>
+<td>$1$</td>
+<td>the word $-e_k[\,]e_k$</td>
+</tr>
+<tr>
+<td>a general rotor $u=\cos\theta+\sin\theta\vec n$</td>
+<td>$1$</td>
+<td>it equals $\mathrm{Sd}_u=L_uR_{u^{*}}$</td>
+</tr>
+<tr>
+<td>the order-three element of §5</td>
+<td>$1$</td>
+<td>$L_uR_{u^{*}}$, all sixteen coefficients non-zero</td>
+</tr>
+<tr>
+<td>$\exp(\pi S_{xy})$</td>
+<td>$1$</td>
+<td>equals $\mathrm{Ad}_{\vec e_z}$</td>
+</tr>
+<tr>
+<td>$\exp(\phi h_a)$ for $\phi\notin\pi\mathbb{Z}$</td>
+<td>$4$</td>
+<td>the Conway array is diagonal with four non-zero entries</td>
+</tr>
+<tr>
+<td>$\exp(\phi S_{xy})$ at $\phi=\tfrac{\pi}{2}$</td>
+<td>$4$</td>
+<td>the array has $\tfrac12$ on $e_t[\,]e_t$, $-\tfrac12$ on $e_z[\,]e_z$ and $-\tfrac{i}{2}$ on the two cross words $e_x[\,]e_y,e_y[\,]e_x$</td>
+</tr>
+<tr>
+<td>$iP$</td>
+<td>$4$</td>
+<td>four diagonal words</td>
+</tr>
+<tr>
+<td>a general element</td>
+<td>$4$</td>
+<td>verified on the element of §8</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two facts to keep.</strong> First, the automorphism subgroup lies <strong>entirely</strong> in the length-one stratum: every rotation is a single word. Second, length is not preserved by the group action: conjugating $A_z$, of length two, by the general element of §8 gives an operator of length <strong>four</strong>. Conjugation by an automorphism permutes the words and preserves the length; conjugation by anything else does not. This is the operator-level content of "the group acts on the ambient space and not on the word structure".</p>
+<h2 id="15-what-the-cases-establish">15. What the Cases Establish</h2>
+<p><strong>The pattern.</strong> Reading the thirteen cases together:</p>
+<ol>
+<li>Every element fixes $e_t$ and acts on $B_V$ by $R\in\mathrm{U}(3)$, $\det R=1$. The three arrays of an element are its $4\times4$ display, its $3\times3$ block and its Conway array.</li>
+<li>The elements of the group that come from biquaternions are exactly its automorphisms, i.e. the real orthogonal blocks of $SO(3)$: three of the eight parameters. They have length one, and they act by $\tilde Q\mapsto a\tilde Qa^{-1}$.</li>
+<li>The other five parameters have no biquaternion. They move the three axes, they break the product, they move the null cone of $N$, and they destroy idempotents — while preserving the definite form $\langle\cdot\rangle_{*}$ throughout.</li>
+<li>The parameters that come from the algebra's <em>own</em> symmetries are the three rotations; the five that do not are the traceless symmetric directions, of spin two.</li>
+</ol>
+<p><strong>The boundary, in one matrix.</strong> The general element of §8 is a $4\times4$ unitary of determinant one that fixes $e_t$; it is not of the form $L_aR_b$, not a $\mathbb{B}$-linear map, not the exponential of a derivation, and it does not preserve products. It is nevertheless a perfectly concrete operator on the carrier, and its action on a biquaternion is the row $(a,R\vec v)$. That is the whole of the embedding: an operator-level home for the group, with no symmetry of the multiplication claimed and none available.</p>
+<h2 id="verification">Verification</h2>
+<p>All numbers above were computed on the sixteen Conway words in the coefficient basis with $M(\vec e_k)=-i\sigma_k$, and checked in floating point.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>check</th>
+<th>residual</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\exp(\tfrac{\pi}{4}A_z)$: unitary, $\det=1$, fixes $e_t$</td>
+<td>$10^{-16}$</td>
+</tr>
+<tr>
+<td>its Conway array has rank $1$ and equals $L_aR_{a^{*}}$</td>
+<td>$10^{-15}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{-e_t}=\mathrm{Ad}_{e_t}$, $\mathrm{Ad}_{iu}=\mathrm{Ad}_u$, $\mathrm{Ad}_{e^{i\alpha}u}=\mathrm{Ad}_u$</td>
+<td>$<10^{-9}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_{\vec e_k}=-e_k[\,]e_k$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>Rodrigues formula for $\mathrm{Ad}_u$, $\vec n=(1,2,3)/\sqrt{14}$, $\theta=0.9$</td>
+<td>$5.6\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$P^{3}=\mathrm{I}_4$; $P$ cycles $A$, $h$ and $S$ with unit coefficients</td>
+<td>$7\times10^{-16}$</td>
+</tr>
+<tr>
+<td>the twenty-four unit quaternions give twelve distinct monomial blocks</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$\exp(\theta A_z)$ is $\pi$-periodic; $\exp(\pi S_{xy})=\mathrm{Ad}_{\vec e_z}$</td>
+<td>$2\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\exp(itP)$ has $\det=e^{3it}$</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the general element: unitary, $\det=1$, fixes $e_t$</td>
+<td>$6\times10^{-16}$</td>
+</tr>
+<tr>
+<td>action on a general $\tilde Q$ equals $(Q_t,R\vec v)$</td>
+<td>$3\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$\langle\cdot\rangle_{*}$ preserved on all rows of §10</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>$N$ changes on seven of eight rows; null element leaves the cone</td>
+<td>as tabulated</td>
+</tr>
+<tr>
+<td>$(g\cdot u)^{2}\ne g\cdot u$ for the idempotent; the complement still sums to $e_t$</td>
+<td>$0.4330$; $3\times10^{-16}$</td>
+</tr>
+<tr>
+<td>product not preserved: $(g\tilde Q)(g\tilde P)\ne g(\tilde Q\tilde P)$</td>
+<td>$5.95$</td>
+</tr>
+<tr>
+<td>boost: $\mathrm{Ad}_b$ preserves $\operatorname{diag}(-1,-1,1)$, eigenvalues $e^{\pm0.8}$</td>
+<td>$10^{-9}$</td>
+</tr>
+<tr>
+<td>$g^{\mathsf T}\in\mathrm{SU}(3)$; $(gh)^{\mathsf T}=h^{\mathsf T}g^{\mathsf T}$</td>
+<td>$10^{-15}$; exact</td>
+</tr>
+<tr>
+<td>lengths: $1,1,1,1,1$ for automorphisms, $4$ for $h$, $iP$, general; $2\to4$ under conjugation</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_t,\vec e_x,\vec e_y,\vec e_z$</td>
+<td>the coefficient basis, $\vec e_x\vec e_y=\vec e_z$, $\vec e_k^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$B_V$</td>
+<td>the vector part $\operatorname{span}_{\mathbb{C}}(\vec e_x,\vec e_y,\vec e_z)=e_t^{\perp}$</td>
+</tr>
+<tr>
+<td>$L_a,R_b$, $a[\,]b$</td>
+<td>left and right multiplication, and the Conway word $L_aR_b$</td>
+</tr>
+<tr>
+<td>$c(M)$, $\ell$</td>
+<td>the Conway array of $M$ and its rank, the length</td>
+</tr>
+<tr>
+<td>$\mathrm{Ad}_a$</td>
+<td>the inner automorphism $\tilde X\mapsto a\tilde Xa^{-1}=L_aR_{a^{-1}}$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_a$</td>
+<td>the Hermitian pair $L_aR_{a^{*}}$, equal to $\mathrm{Ad}_a$ when $a$ is a unit</td>
+</tr>
+<tr>
+<td>$A_a$</td>
+<td>$\mathrm{ad}_{\vec e_a}=L_{\vec e_a}-R_{\vec e_a}$</td>
+</tr>
+<tr>
+<td>$h_a$, $H_1,H_2$</td>
+<td>the cyclic diagonals $\tfrac{i}{2}(L_{b}R_{b}-L_{c}R_{c})$, with $H_1=-h_z$ and $H_2=h_y$</td>
+</tr>
+<tr>
+<td>$S_{ab}$</td>
+<td>$-\tfrac{i}{2}(L_{\vec e_a}R_{\vec e_b}+L_{\vec e_b}R_{\vec e_a})$, the $i$-symmetric sum</td>
+</tr>
+<tr>
+<td>$iP$</td>
+<td>the ninth $\mathfrak{u}(3)$ direction, $\operatorname{diag}(0,\tfrac34,\tfrac14,\tfrac14,\tfrac14)$ in words</td>
+</tr>
+<tr>
+<td>$N$, $\langle\cdot\rangle_{*}$</td>
+<td>the multiplicative norm $\det M(\tilde Q)$, of signature $(2,2)$, and the definite form $\mathrm{Sc}(XY^{*})$</td>
+</tr>
+<tr>
+<td>$\operatorname{blk}(a,b;s,c)$</td>
+<td>the $4\times4$ matrix acting as $\begin{pmatrix}s&c\\ \cdot&\cdot\end{pmatrix}$ on the plane of $(\vec e_a,\vec e_b)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Meaning of $\mathrm{SU}(3)$ in the Endomorphisms of the Biquaternion Algebra</em>: the subspace, the eight generators, the two defining conditions, the $3+5$ split.</li>
+<li><em>The $M_1\oplus M_3$ Corner of $M_4(\mathbb{C})$</em>: the block form $\operatorname{diag}(1,R)$ and the chain of subgroups.</li>
+<li><em>Introduction to the Operators of the Biquaternion Algebra</em>, <em>Operators Acting on One Side</em>, <em>Operators Acting on Two Sides</em>: $L$, $R$, the words, the length.</li>
+<li><em>From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides</em>: the rotations $J$, $J'$ and $J^{\mathrm{tot}}=J-J'$.</li>
+<li><em>Adjoint Pair of $L$ and $R$ Operators</em>, <em>The Hermitian Pair of Operators Acting on One Side</em>: the dagger and $\mathrm{Sd}_a$.</li>
+<li><em>Operator Chirality on the Biquaternion Algebra</em>: the side-swap $\sigma$, which is transpose at the level of words.</li>
+<li><em>The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra</em>: the signatures $(8,0)$ and $(2,2)$ of the two forms that §10 and §11 separate.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

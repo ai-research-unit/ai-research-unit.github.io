@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Relativistic Non Quantum Approximation — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Relativistic Non Quantum Approximation, twenty-seven articles. It gives the objects, the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-relativistic-non-quantum-approximation"><strong>Internal Summary of the Biquaternion Relativistic Non Quantum Approximation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Relativistic Non Quantum Approximation</em>, twenty-seven articles. It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> It takes the relativistic quantum equations and removes $\hbar$. The result is classical relativistic mechanics, classical field theory and the classical spinning particle, all in the algebra. The method is one and the same in every article: write the field in polar form, let the amplitude vary slowly, collect the leading order.</p>
+<p><strong>What the limit is, exactly.</strong> It is a limit on the gradients of the amplitude, not a limit on $\hbar$:</p>
+<p>$$
+\frac{|\vec\nabla_\Phi\ln A|}{k_\Phi}\sim\epsilon,\qquad
+\frac{1}{k_\Phi^{2}}\Bigl|\frac{\Delta_\Phi A}{A}\Bigr|\sim\epsilon^{2}.
+$$</p>
+<p>The first inequality drops the quantum term from the momentum; the second drops the quantum potential from the Hamilton–Jacobi equation. Both are needed, and the corpus states them separately each time.</p>
+<p><strong>The five menu subsections.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generalities</td>
+<td>the relativistic particle, the Dirac wave's limit, the light cone, the null momentum, stress–energy, Hamiltonian field theory</td>
+</tr>
+<tr>
+<td>Spin 0 origin</td>
+<td>central forces, the central scalar field, the Klein–Gordon limits</td>
+</tr>
+<tr>
+<td>Spin $\tfrac12$ origin</td>
+<td>Thomas precession, the Bargmann–Michel–Telegdi equation, the Dirac limits</td>
+</tr>
+<tr>
+<td>Spin 1 and above origin</td>
+<td>the quadrupole, the multipole tower, the Proca limits</td>
+</tr>
+<tr>
+<td>Focus on informational aspects</td>
+<td>causality as an information barrier, relational time from the sector exchange</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-sentence version.</strong> Remove $\hbar$ from the polar form and the algebra returns the classical world.</p>
+<h2 id="1-generalities">1. Generalities</h2>
+<p><strong>The worldline and the interval.</strong></p>
+<p>$$
+\tilde R_\Phi(\lambda)=ir'_t(\lambda)e_t+r_x(\lambda)\vec e_x+r_y(\lambda)\vec e_y+r_z(\lambda)\vec e_z,
+$$</p>
+<p>$$
+\boxed{\;c^{2}d\tau^{2}=-\langle d\tilde R_\Phi\rangle_{\natural}
+=c^{2}d{r'_t}^{2}-\bigl(dr_x^{2}+dr_y^{2}+dr_z^{2}\bigr)\;}
+$$</p>
+<p>$$
+\text{timelike: }N<0,\qquad \text{null: }N=0,\qquad \text{spacelike: }N>0 .
+$$</p>
+<p><strong>The four-velocity and the rapidity.</strong></p>
+<p>$$
+\boxed{\;\tilde V_\Phi=\frac{d\tilde R_\Phi}{d\tau}=\gamma\bigl(ic\,e_t+\vec v\bigr)\;}
+$$</p>
+<p>$$
+\langle\tilde V_\Phi\rangle_{\natural}=\gamma^{2}\bigl(-c^{2}+\vec v^{2}\bigr)=-c^{2},
+$$</p>
+<p>$$
+v=c\tanh\theta_{\mathrm{rpd}},\qquad \gamma=\cosh\theta_{\mathrm{rpd}},\qquad \gamma v=c\sinh\theta_{\mathrm{rpd}} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The unit-norm condition on the four-velocity is the statement $\gamma^{2}(1-v^{2}/c^{2})=1$, and it is <em>one</em> equation. The rapidity is the logarithm of the two eigenvalues of the velocity, so the additive parameter of the boost is spectral.</p>
+<p><strong>The particle's momentum and mass.</strong></p>
+<p>$$
+\tilde P_\Phi=m\tilde V_\Phi=i\frac{E}{c}e_t+\vec p,\qquad
+\boxed{\;m^{2}c^{2}=-\langle\tilde P_\Phi\rangle_{\natural}\;}
+$$</p>
+<p>$$
+\tilde P_\Phi=2i\frac{E}{c}\tilde\Pi(-\vec u),\qquad \tilde\Pi(\vec u)=\tfrac12(e_t+i\vec u).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The mass is the norm, and the norm of a null momentum is zero. For the null case the mass term is not supplied by the cone: the corpus states explicitly what the cone derives (the dispersion relation at $m=0$) and what must be added (the identification of $E$ with a frequency, and therefore $\hbar$).</p>
+<p><strong>The action, and the Hamilton–Jacobi equation.</strong></p>
+<p>$$
+S=-mc\int\sqrt{-d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}},\qquad
+\tilde p\,\tilde\Xi=\bigl(\vec\nabla_\Phi S-i\hbar\vec\nabla_\Phi\ln A\bigr)\tilde\Xi,
+$$</p>
+<p>$$
+\boxed{\;\frac{E^{2}}{c^{2}}-|\vec p|^{2}=m^{2}c^{2}\;}
+$$</p>
+<p>and with minimal coupling,</p>
+<p>$$
+\boxed{\;\frac{1}{c^{2}}\bigl(\partial_tS+ϙ\phi\bigr)^{2}-\bigl|\nabla S-ϙ\vec A\bigr|^{2}=m^{2}c^{2}\;}
+$$</p>
+<p><strong>The Lorentz force, and where it comes from.</strong> Differentiating the Hamilton–Jacobi equation along the trajectory:</p>
+<p>$$
+\frac{d\vec\pi}{dt}=ϙ\bigl(\vec E+\vec v\times\vec B\bigr),\qquad
+\vec E=-\vec\nabla_\Phi\phi-\partial_t\vec A,\qquad \vec B=\vec\nabla_\Phi\times\vec A .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Lorentz force is a consequence of the Hamilton–Jacobi equation for a charged particle, not an independent postulate. The two invariants of the field, $\vec E^{2}-\vec B^{2}$ and $\vec E\!\cdot\!\vec B$, are the real and imaginary parts of the field norm:</p>
+<p>$$
+\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}=2\mu\,\mathrm{Re}\langle\tilde F\rangle_{\natural}.
+$$</p>
+<p><strong>Stress–energy and the field action.</strong></p>
+<p>$$
+S[\tilde\Xi]=\int\mathcal L\,d^{4}r,\qquad d^{4}r=c\,dr'_t\,dr_x\,dr_y\,dr_z,\qquad \sum_\mu\partial_\mu T_{\mu\nu}=0,
+$$</p>
+<p>$$
+\boxed{\;\mathcal L_\xi=-\tfrac12\sum_\mu\partial_\mu\tilde\Xi\,\partial_\mu\tilde\Xi^{\natural}-\tfrac12k_m^{2}\tilde\Xi\tilde\Xi^{\natural}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Lagrangian is real because the two terms are self-conjugate; the Euler–Lagrange equation it produces is the Klein–Gordon equation with the sign that matches the boxed d'Alembertian. The corpus records the sign conventions in one table because they are the commonest source of error.</p>
+<p><strong>Hamiltonian field theory.</strong> The canonical momenta are the derivatives of the Lagrangian with respect to the time derivative of the field; the Hamiltonian is the Legendre transform; the Poisson bracket of two fields is the antisymmetric form on the material sector. The energy density is the $T_{tt}$ component.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-relativistic-particle-in-biquaternionic-form.md</code>, <code>articles_physics/relativistic-mechanics-from-the-dirac-wave-the-non-quantum-limit-in-biquaternionic-form.md</code>, <code>articles_physics/stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form.md</code>, <code>articles_physics/hamiltonian-field-theory-in-biquaternionic-form.md</code>, <code>articles_physics/the-non-quantum-limit-of-the-biquaternion-model.md</code>, <code>articles_physics/the-null-four-momentum-what-the-cone-derives-and-what-must-be-added.md</code>.</p>
+<h2 id="2-spin-zero-origin">2. Spin Zero Origin</h2>
+<p><strong>The central force problem.</strong> A central potential preserves the orbital angular momentum</p>
+<p>$$
+\tilde L_{\mathrm{orb},i}=\varepsilon_{ij\eta}r_jp_\eta\,e_t,
+$$</p>
+<p>and the orbit lies in a plane. In the algebra the plane is a two-dimensional subalgebra spanned by two vectors, and the conserved element is the bivector of the plane.</p>
+<p><strong>The central scalar field.</strong> The scalar field of the centre obeys the Klein–Gordon equation with a central source; its static solution is the Coulomb potential, and the constant is fixed by the flux through a sphere. The non-trivial statement is that the scalar field of the centre is <em>not</em> the electrostatic potential: the potential is the temporal component of a material-sector four-vector, and the centre is a different subspace.</p>
+<p><strong>The Klein–Gordon limits.</strong> The non-quantum limit of the polar Klein–Gordon equation gives</p>
+<p>$$
+\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V
+\quad\text{relativistically:}\quad
+\frac{(\partial_tS)^{2}}{c^{2}}-|\nabla S|^{2}=m^{2}c^{2},
+$$</p>
+<p>and the corpus writes the four variants (plain and coupled, with and without the variational principle) with the same result. The coupled case adds a mass matrix; its diagonalisation is a congruence, so the two mass eigenstates are the two eigenvalues.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-relativistic-central-force-problem-in-biquaternionic-form.md</code>, <code>articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.md</code>, <code>articles_physics/the-klein-gordon-equation-in-the-non-quantum-limit.md</code>.</p>
+<h2 id="3-spin-half-origin">3. Spin Half Origin</h2>
+<p><strong>Thomas precession.</strong> Two successive boosts do not compose to a boost; the missing rotation is the Thomas rotation. The exact rotor formula is</p>
+<p>$$
+\boxed{\;\tan\frac{\theta_{\mathrm{wgn}}}{2}
+=\frac{\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\sin\theta}
+{\cosh^{2}\frac{\theta_{\mathrm{rpd}}}{2}+\sinh^{2}\frac{\theta_{\mathrm{rpd}}}{2}\cos\theta}\;}
+$$</p>
+<p>and the small-acceleration limit gives the standard rate</p>
+<p>$$
+\vec\omega_T=\frac{1}{c^{2}}\frac{\gamma^{2}}{\gamma+1}\,\vec a\times\vec v .
+$$</p>
+<p><strong>The non-trivial claim.</strong> Thomas precession is not a dynamical effect. It is the non-closure of the boost subgroup, and it appears in the algebra as the rotation factor of the product of two boost rotors:</p>
+<p>$$
+\tilde U_{\mathrm{lor},1}\tilde U_{\mathrm{lor},2}=\tilde U_{\Psi,\mathrm b}\,\tilde u,\qquad \tilde U_{\Psi,\mathrm b}\in\mathbb{B}_{\Psi},\quad \tilde u\in\mathbb{B}_{H}.
+$$</p>
+<p><strong>The classical spinning particle.</strong> The Bargmann–Michel–Telegdi equation is</p>
+<p>$$
+\boxed{\;\frac{dS_\mu}{d\tau}=\frac{ϙ}{m}\Bigl[\frac{g}{2}\sum_\nu F_{\mu\nu}S_\nu-\Bigl(\frac{g}{2}-1\Bigr)\frac{1}{c^{2}}v_\mu B\Bigr],\qquad B=\sum_{\lambda,\nu}S_\lambda F_{\lambda\nu}v_\nu\;}
+$$</p>
+<p>and in the algebra</p>
+<p>$$
+\frac{d\tilde S_\Psi}{d\tau}=\frac{ϙ}{m}\Bigl[\frac{g}{2}\mathrm F(\tilde S_\Psi)-\Bigl(\frac{g}{2}-1\Bigr)\frac{1}{c^{2}}\bigl\langle\tilde S_\Psi,\mathrm F(\tilde V_\Phi)\bigr\rangle\tilde V_\Phi\Bigr],
+$$</p>
+<p>$$
+\mathrm F(\tilde V_\Phi):=-\sqrt{\mu}\,P_{\mathbb{B}_\Phi}\bigl(\tilde V_\Phi\tilde F\bigr).
+$$</p>
+<p><strong>The non-trivial claims, three of them.</strong> The spin is an element of the <em>informational</em> sector and it is transported by a congruence, so the spin precesses without a torque on the orbital motion. The orthogonality $\langle\tilde S_\Psi,\tilde V_\Phi\rangle=\mathrm{Sc}(\tilde S_\Psi\tilde V_\Phi^{\natural})=0$ is preserved by the flow. The value $g=2$ is the value at which the second term vanishes, so the anomalous moment is the coefficient of the only term that the algebra distinguishes.</p>
+<p><strong>The Dirac limits.</strong> The non-quantum limit of the polar Dirac equation gives the same Hamilton–Jacobi equation as the scalar case, plus a spin transport equation:</p>
+<p>$$
+\tilde\nabla_\Phi\tilde\Xi=\frac{1}{\hbar}\Bigl(\frac{\partial_tS_{\tilde\Xi}}{c}e_t+i\nabla S_{\tilde\Xi}\Bigr)\tilde\Xi+O(\epsilon).
+$$</p>
+<p>The spin does not enter the trajectory at leading order; it enters at the next order, as the BMT equation above.</p>
+<p><strong>Source.</strong> <code>articles_physics/thomas-precession-as-a-biquaternion-rotor-effect.md</code>, <code>articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.md</code>, <code>articles_physics/the-dirac-equation-in-the-non-quantum-limit.md</code>.</p>
+<h2 id="4-spin-one-and-above-origin">4. Spin One and Above Origin</h2>
+<p><strong>The quadrupole.</strong> The quadrupole tensor is symmetric and traceless, and it is a five-dimensional object:</p>
+<p>$$
+\mathcal Q_{ij}\in\operatorname{sym}^{2}_{0}(D^{(1)})\cong D^{(2)},\qquad \dim_{\mathbb{C}}\operatorname{sym}^{2}_{0}(D^{(1)})=5,
+$$</p>
+<p>$$
+\Xi=\frac{1}{4\pi\epsilon_0}\Bigl[\frac{ϙ}{r}+\frac{\vec p\!\cdot\!\vec u}{r^{2}}+\frac{1}{2r^{3}}\mathcal Q_{ij}\vec u_i\vec u_j+\cdots\Bigr].
+$$</p>
+<p><strong>The non-trivial claim.</strong> The algebra $\mathbb{B}=\mathbb{B}_C\oplus\mathbb{B}_V=D^{(0)}\oplus D^{(1)}$ carries only the monopole and the dipole. The quadrupole is the symmetric traceless square of the vector, and it is therefore the first multipole that the algebra does <strong>not</strong> carry as a subspace. This is the content of <code>multipole-moments-at-every-order-the-biquaternion-algebra-cannot-index-the-tower</code>.</p>
+<p><strong>The Proca limits.</strong> The non-quantum limit of the Proca equation gives the massive vector field with the subsidiary condition; the classical field is the Proca field, and the three polarisations are the three components that survive the condition.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-relativistic-quadrupole-in-biquaternionic-form.md</code>, <code>articles_physics/higher-multipoles-and-the-field-strength-decomposition-in-biquaternionic-form.md</code>, <code>articles_physics/the-proca-equation-in-the-non-quantum-limit.md</code>.</p>
+<h2 id="5-informational-aspects">5. Informational Aspects</h2>
+<p><strong>Causality as an information barrier.</strong></p>
+<p>$$
+\langle\tilde Q_{qp}\rangle_{\natural}=-c^{2}(\delta r'_t)^{2}+|\delta\vec r|^{2},\qquad
+p\preceq q\iff \langle\tilde Q_{qp}\rangle_{\natural}\le0\ \text{and}\ \delta r'_t\ge0 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The causal order is the order of the norm cone, and the null cone is the set of elements that are not invertible:</p>
+<p>$$
+\mathcal Z=\{\tilde Q_1\neq0:\langle\tilde Q_1\rangle_{\natural}=0\}.
+$$</p>
+<p>A signal that travels on the cone carries a null element, and a null element annihilates something. The corpus reads this as the algebraic form of "the cone is a barrier": no invertible propagation crosses it.</p>
+<p><strong>Relational time from the sector exchange.</strong> The two temporal coefficients form one complex number, and the exchange of sectors is multiplication by $i$:</p>
+<p>$$
+z=h_t+i\,r'_t,\qquad
+\boxed{\;z\mapsto iz=-r'_t+i\,ct\;}
+$$</p>
+<p>$$
+\boxed{\;h_t=|z|\cos\theta_{\mathrm{cen}},\qquad r'_t=|z|\sin\theta_{\mathrm{cen}}\;}
+$$</p>
+<p>$$
+\boxed{\;z\longrightarrow iz\longrightarrow-z\longrightarrow-iz\longrightarrow z\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The two clocks of the two sectors are the real and imaginary parts of one complex number. A quarter turn of $z$ exchanges the material clock and the informational clock. Relational time is therefore the phase of $z$, and the absolute time of the material sector is its imaginary part. The four steps of the cycle are the four units $e_t$, $ie_t$, $-e_t$, $-ie_t$, and only the first is a "tick".</p>
+<p><strong>Source.</strong> <code>articles_physics/causality-and-the-light-cone-as-an-information-barrier-in-biquaternionic-form.md</code>, <code>articles_physics/relational-time-from-the-sector-exchange-the-material-and-informational-clocks.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in six formulas.</strong></p>
+<p>$$
+c^{2}d\tau^{2}=-\langle d\tilde R_\Phi\rangle_{\natural},\qquad
+\tilde V_\Phi=\gamma(ic\,e_t+\vec v),\qquad
+m^{2}c^{2}=-\langle\tilde P_\Phi\rangle_{\natural},
+$$</p>
+<p>$$
+\frac{E^{2}}{c^{2}}-|\vec p|^{2}=m^{2}c^{2},\qquad
+\frac{d\vec\pi}{dt}=ϙ(\vec E+\vec v\times\vec B),\qquad
+\sum_\mu\partial_\mu T_{\mu\nu}=0 .
+$$</p>
+<p><strong>Three results to keep.</strong> The mass is the norm of the four-momentum, and the null case needs $\hbar$ added from outside. Thomas precession is the non-closure of the boost subgroup, not a force. The quadrupole is the first multipole the algebra cannot index.</p>
+<p><strong>Two refusals.</strong> The category does not derive the Lorentz force from a gauge principle; it derives it from the Hamilton–Jacobi equation of a minimally coupled particle. It does not claim that relational time is forced: it states that the algebra supplies the two clocks and one complex number, and that the identification is a reading.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde R_\Phi$, $\tilde V_\Phi$, $\tilde P_\Phi$</td>
+<td>position, four-velocity, four-momentum</td>
+</tr>
+<tr>
+<td>$\tau$, $\theta_{\mathrm{rpd}}$</td>
+<td>proper time, rapidity</td>
+</tr>
+<tr>
+<td>$S$</td>
+<td>Hamilton's principal function</td>
+</tr>
+<tr>
+<td>$T_{\mu\nu}$</td>
+<td>stress–energy</td>
+</tr>
+<tr>
+<td>$\tilde S_\Psi$</td>
+<td>classical spin, informational sector</td>
+</tr>
+<tr>
+<td>$\mathcal Q_{ij}$</td>
+<td>quadrupole tensor</td>
+</tr>
+<tr>
+<td>$z=h_t+ir'_t$</td>
+<td>the complex time of the two sectors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-relativistic-particle-in-biquaternionic-form</code>, <code>relativistic-mechanics-from-the-dirac-wave-the-non-quantum-limit-in-biquaternionic-form</code>, <code>stress-energy-conservation-laws-and-the-field-action-in-biquaternionic-form</code>. Traps: <code>the-null-four-momentum-what-the-cone-derives-and-what-must-be-added</code>, <code>multipole-moments-at-every-order-the-biquaternion-algebra-cannot-index-the-tower</code>, <code>thomas-precession-as-a-biquaternion-rotor-effect</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

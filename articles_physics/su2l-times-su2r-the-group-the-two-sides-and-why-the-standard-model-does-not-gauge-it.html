@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: The Group, the Two Sides, and Why the Standard Model Does Not Gauge It — Biquaternion Universe</title>
+  <meta name="description" content="The question. The frame&#x27;s gauge group carries two factors, one on each side. Where does a doubled come from in this algebra, and why does the Standard…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="math0-the-group-the-two-sides-and-why-the-standard-model-does-not-gauge-it"><strong>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: The Group, the Two Sides, and Why the Standard Model Does Not Gauge It</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The frame's gauge group carries two $\mathrm{SU}(2)$ factors, one on each side. Where does a doubled $\mathrm{SU}(2)$ come from in this algebra, and why does the Standard Model, which has the same algebra available, gauge only half of it?</p>
+<p><strong>The answer in three lines.</strong></p>
+<p>$$
+\boxed{\;
+L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4),\quad \dim=3+3=6,
+\qquad
+Y=T_{3R}+\tfrac12(B-L),\quad Q=T_{3L}+Y .
+\;}
+$$</p>
+<p><strong>The group is the algebra's own product, at the element level, for free</strong>, as the two one-sided families of the vector part. <strong>The Standard Model uses it twice as a global symmetry</strong> — the chiral symmetry of the strong sector and the custodial symmetry of the scalar sector — <strong>and uses its broken remnant as hypercharge.</strong> What it does not do is gauge it unbroken. So the honest answer to the title's question is not that the Standard Model declines the group. It is that the Standard Model is the phase in which the right-handed factor is broken.</p>
+<p><strong>What this article claims.</strong> That the group is present in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ without an operator layer; that its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$, distinguished by the sign of one bracket; that the same group acts on two different modules, spacetime and internal, and that only the second is a gauge factor; that three of its four roles in physics are already realised; and that the fourth is excluded at low energy by the module and not by the algebra.</p>
+<p><strong>What this article does not claim.</strong> That the algebra supplies a chiral gauge theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the <em>chiral wall</em>, stated in <a href="electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html">Electroweak Theory in the Biquaternion Framework</a> and restated for the frame in <a href="the-fourth-colour-left-right-model.html">The Fourth-Colour Left–Right Model</a>; §3 and §5.5 quote it and do not re-derive it. <strong>Nor does this article state any coupling value</strong>; where the two factors' strengths would enter, it names the structure and stops.</p>
+<p><strong>One word, five jobs.</strong> <em>Left</em> and <em>right</em> name, in this corpus, the slot an operator acts on, the label of an element, the helicity of a field, the multiplication side in a product, and — in $\mathrm{SU}(2)_L$ — a gauge factor. <strong>Five meanings of two words is how this subject goes wrong</strong>, so this article says <em>side</em> for the multiplication, <em>letter</em> for the chirality slot, and <em>factor</em> for the gauge group.</p>
+<p><strong>The order.</strong> §1 fixes the group as an abstract object. §2 finds it in the algebra and separates its two halves. §3 separates the two modules the group can act on, which is the technical heart. §4 lists the four roles it plays in physics. §5 answers the question in the title. §6 is the cost. §7 is what would settle it.</p>
+<h2 id="1-the-group">1. The Group</h2>
+<p><strong>The algebra.</strong> Complexified, the Lie algebra is two simple ideals that commute:</p>
+<p>$$
+\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C}),\qquad \dim_{\mathbb{C}}=6,\qquad \operatorname{rank}=2 .
+$$</p>
+<p><strong>It is not simple, and that is its defining property here.</strong> A semisimple group with a two-dimensional Cartan subalgebra, split into two halves that cannot reach each other through the bracket.</p>
+<p><strong>The compact form.</strong> The compact real form is $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, of real dimension six, whose group is the double cover of $\mathrm{SO}(4)$:</p>
+<p>$$
+1\longrightarrow\mathbb{Z}_2\longrightarrow \mathrm{SU}(2)\times\mathrm{SU}(2)\xrightarrow{\ \rho\ }\mathrm{SO}(4)\longrightarrow 1 .
+$$</p>
+<p><strong>The display.</strong> In this corpus $\rho$ is not an abstraction but a construction from a pair of rotors acting on two sides,</p>
+<p>$$
+\rho:\mathrm{Spin}(3)\times\mathrm{Spin}(3)\longrightarrow \mathrm{SO}(4),\qquad \ker\rho=\{\pm(\mathrm{I}_4,\mathrm{I}_4)\},
+$$</p>
+<p>and the companion computation gives the spins a pair of operators can carry: each factor carries $s=\tfrac12$, and the addition rule gives $0$ and $1$ and nothing else. <strong>So the group of this article is the spin group of four-dimensional space, built as the corpus builds every pair.</strong></p>
+<p><strong>The invariants.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>rank</th>
+<th>centre</th>
+<th>simple?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(2)\oplus\mathfrak{su}(2)$</td>
+<td>$6$</td>
+<td>$2$</td>
+<td>trivial</td>
+<td>no, two ideals</td>
+</tr>
+<tr>
+<td>$\mathfrak{so}(4)$</td>
+<td>$6$</td>
+<td>$2$</td>
+<td>trivial</td>
+<td>no, two ideals</td>
+</tr>
+<tr>
+<td>group $\mathrm{Spin}(4)$</td>
+<td>—</td>
+<td>$2$</td>
+<td>$\mathbb{Z}_2$ (diagonal)</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)$ alone</td>
+<td>$3$</td>
+<td>$1$</td>
+<td>trivial</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The diagonal is the Lorentz group, and this is the article's most useful sentence.</strong> The doubled complex algebra contains its diagonal, $X\mapsto(X,X)$, and that diagonal is $\mathfrak{sl}(2,\mathbb{C})$, whose group covers the proper orthochronous Lorentz group:</p>
+<p>$$
+\mathrm{SU}(2)\times\mathrm{SU}(2)=\text{compact form of the doubled algebra},
+\qquad
+\mathrm{SL}(2,\mathbb{C})=\text{its diagonal}.
+$$</p>
+<p><strong>So the left–right group and the Lorentz group are not two unrelated structures.</strong> They are the untied and the tied versions of one object, and §2 shows that the corpus builds exactly this tie, with the involution $*$ as the tie.</p>
+<h2 id="2-the-two-sides-in-the-algebra">2. The Two Sides in the Algebra</h2>
+<p><strong>Three addresses.</strong> With $\mathfrak{k}=\operatorname{span}_{\mathbb{R}}(\vec e_x,\vec e_y,\vec e_z)$, the algebra's rotor group enters the endomorphisms of $\mathbb{B}$ at three places:</p>
+<p>$$
+L(\mathfrak{k})=\operatorname{span}\{L_{\vec e_x},L_{\vec e_y},L_{\vec e_z}\},\quad
+R(\mathfrak{k})=\operatorname{span}\{R_{\vec e_x},R_{\vec e_y},R_{\vec e_z}\},\quad
+\mathrm{ad}(\mathfrak{k})=\operatorname{span}\{L_{\vec e_k}-R_{\vec e_k}\},
+$$</p>
+<p>$$
+L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4),\qquad
+\mathrm{ad}(\mathfrak{k})=\mathfrak{su}(3)\cap\mathfrak{so}(4).
+$$</p>
+<p><strong>The group of this article is the first two addresses together</strong>, at the element level, inside $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$:</p>
+<p>$$
+\boxed{\ \mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\ =\ \exp\bigl(L(\mathfrak{k})\bigr)\times\exp\bigl(R(\mathfrak{k})\bigr)\ =\ \mathrm{Spin}(4)\ }
+$$</p>
+<p><strong>No operator layer, no Clifford algebra, no imported object. The two factors are the two ends of one multiplication</strong>, which is the whole of the corpus's claim about this group.</p>
+<p><strong>Why they commute, and why commuting is the point.</strong> $L_a$ and $R_b$ commute for every $a$ and $b$, because they act on the two ends of the argument. <strong>So the two factors are independent, and the group is a product and not a quotient.</strong> A group that is a product of two commuting factors is exactly what a left–right symmetric theory needs, and the algebra supplies it with no work.</p>
+<p><strong>The self-dual split, which names the sides.</strong> On the six-dimensional space of two-forms,</p>
+<p>$$
+\mathfrak{so}(4)=\Lambda^{2}_{+}\oplus\Lambda^{2}_{-},\qquad \star^{2}=\mathrm{id},
+$$</p>
+<p>and the corpus proves which side is which:</p>
+<p>$$
+L(\vec e_x)=-\omega_1,\quad L(\vec e_y)=-\omega_2,\quad L(\vec e_z)=-\omega_3\ \in\Lambda^{2}_{+},
+\qquad
+R(\vec e_x)=-\tau_1,\quad R(\vec e_y)=-\tau_2,\quad R(\vec e_z)=-\tau_3\ \in\Lambda^{2}_{-},
+$$</p>
+<p>with the brackets</p>
+<p>$$
+[L(\vec e_x),L(\vec e_y)]=2L(\vec e_z),\qquad [R(\vec e_x),R(\vec e_y)]=-2R(\vec e_z).
+$$</p>
+<p><strong>The sign difference is the mirror.</strong> The two triples obey the same table with opposite sign, so the two factors are mirror images, and that is the exact sense in which they differ — not a relabelling. <strong>The left factor rotates the self-dual planes, the right factor the anti-self-dual planes, and the Hodge star exchanges them.</strong> The derivation is in <a href="../articles_maths/the-lie-algebra-skew-4-and-so-4.html">The Lie Algebra $\mathfrak{so}(4)$</a>.</p>
+<p><strong>So the group means this in the algebra.</strong> $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is the rotation group of the four-dimensional carrier, split into the half that acts on the self-dual planes and the half that acts on the anti-self-dual ones. <strong>It is the two angles of a four-dimensional rotation made into two groups.</strong></p>
+<p><strong>The sandwich, and the tie.</strong> On an element the two sides act by</p>
+<p>$$
+\tilde Q\longmapsto g_L\,\tilde Q\,g_R^{*},\qquad g_L,g_R\in\mathbb{H}^{1},
+$$</p>
+<p>and a central value is invariant under the diagonal $g_L=g_R$. <strong>Setting $g_R=g_L^{*}$ instead is the tie</strong>, and the corpus's Hermitian pair is what makes it:</p>
+<p>$$
+\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}},\qquad
+\text{unit-norm slice:}\ \ \mathrm{SL}(2,\mathbb{C})\longrightarrow \mathrm{SO}^{+}(1,3)\ \text{twofold}.
+$$</p>
+<p><strong>The two cases, side by side, and this is the article's central table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>two-sided action</th>
+<th>parameters</th>
+<th>compact part</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_{\tilde Q}R_{\tilde Q_2}$, free</td>
+<td>two, modulo the rescaling $\tilde Q\to\lambda\tilde Q$, $\tilde Q_2\to\lambda^{-1}\tilde Q_2$</td>
+<td>$\mathrm{SU}(2)\times\mathrm{SU}(2)$</td>
+<td>$\mathrm{Spin}(4)$, Euclidean, untied</td>
+</tr>
+<tr>
+<td>$\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$, tied</td>
+<td>one</td>
+<td>$\mathrm{SL}(2,\mathbb{C})$ on the unit slice</td>
+<td>$\mathrm{SO}^{+}(1,3)$, Lorentz, tied</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the table says.</strong> The corpus contains both groups and the difference between them is one involution. <strong>Untie the two sides and the group is $\mathrm{SU}(2)\times\mathrm{SU}(2)$; tie them by Hermitian conjugation and it is the Lorentz group.</strong> Physics uses the tied version for spacetime and the untied version for internal symmetry, and the arithmetic is the same arithmetic in both cases.</p>
+<h2 id="3-one-group-two-modules">3. One Group, Two Modules</h2>
+<p><strong>The danger.</strong> §2 shows that the group is native. It does not show that the group can be an <em>internal</em> gauge symmetry, and that difference is the whole question. <strong>A group is not a physical symmetry until a module is named</strong>, and this group acts here on two modules that are not the same physics.</p>
+<p><strong>The first module: the carrier.</strong> $\mathbb{B}$ itself, real dimension eight, with the vector part $\mathfrak{k}$ of dimension three carrying the adjoint action. Here the group is</p>
+<p>$$
+\mathrm{Spin}(4)_{E}=\mathrm{SU}(2)\times\mathrm{SU}(2)\ \text{acting on the four-dimensional real carrier},
+$$</p>
+<p>the Euclidean rotation group, whose Lorentzian relative is the tied version of §2. <strong>This is a spacetime group and its indices are spacetime indices.</strong></p>
+<p><strong>The second module: the operator algebra.</strong> $\mathcal{E}_{\mathbb{C}}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$, of complex dimension sixteen, where the two tensor factors are the two sides:</p>
+<p>$$
+\mathbb{B}_L=\{\mathrm{I}_2\otimes A\},\qquad \mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm{I}_2\},\qquad \mathbb{B}_L\cap\mathbb{B}_R=\mathbb{C}\,\mathrm{I}_4 .
+$$</p>
+<p><strong>Here an $\mathrm{SU}(2)$ on the first factor and an $\mathrm{SU}(2)$ on the second are internal factors</strong>: they act on a sixteen-dimensional multiplet of states, not on a coordinate. This is the module the frame uses.</p>
+<p><strong>The naming rule decides the question.</strong> The group's name stays and the sentence after the name says what the group is <em>in the algebra</em>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>module</th>
+<th>the group is</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$, vector part</td>
+<td>$\mathrm{Spin}(4)_{E}$, the rotation group of the carrier</td>
+<td>spacetime, built</td>
+</tr>
+<tr>
+<td>$\mathbb{B}\otimes\mathbb{B}$, tensor factors</td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, internal factors</td>
+<td>internal, built as a module</td>
+</tr>
+<tr>
+<td>$\mathbb{B}$, one-sided action on matter</td>
+<td>$L(\mathfrak{k})$ alone, vector-like</td>
+<td>internal, built, <strong>not chiral</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third row decides everything.</strong> One-sided multiplication acts on both letters alike, because $L_{\tilde Q}$ carries no information about which letter of its argument it multiplies. <strong>The general statement is the chiral wall</strong>: among one-sided multiplications, those that respect a chirality split commute with the chirality operator, and that centraliser is abelian. <strong>Abelian and chiral is available, at the centre; non-abelian and vector-like is available, at $L(\mathfrak{k})$ and $R(\mathfrak{k})$; non-abelian and chiral is not available</strong> without a two-sided structure whose sides are tied to the letters.</p>
+<p><strong>And that is what a left–right model asks for.</strong> One non-abelian factor per chirality requires the two-sided structure and the tie <em>side</em> $\leftrightarrow$ <em>letter</em>. <strong>The corpus has the two sides and has the two letters and does not exhibit the map.</strong> So the frame's chirality is put in by the assignment of multiplets — a declaration — and not by the algebra. §5.5 returns to this once.</p>
+<h2 id="4-four-roles-in-physics">4. Four Roles in Physics</h2>
+<p><strong>The same group, four statuses.</strong> Keeping them apart is what makes §5 answerable.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>role</th>
+<th>group</th>
+<th>status in nature</th>
+<th>broken by</th>
+<th>what survives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spacetime rotations</td>
+<td>$\mathrm{Spin}(4)_{E}$, or $\mathrm{SL}(2,\mathbb{C})$ when tied</td>
+<td>exact, local</td>
+<td>nothing</td>
+<td>the Lorentz group</td>
+</tr>
+<tr>
+<td>chiral symmetry of the strong sector</td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td>exact in the two-flavour chiral limit</td>
+<td>quark masses and the condensate</td>
+<td>$\mathrm{SU}(2)_V$, the pions as Goldstones</td>
+</tr>
+<tr>
+<td>custodial symmetry of the scalar sector</td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, global and accidental</td>
+<td>approximate</td>
+<td>the mass splittings</td>
+<td>$\mathrm{SU}(2)_V$, hence $\rho=1$</td>
+</tr>
+<tr>
+<td>gauged electroweak left–right</td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$</td>
+<td><strong>not observed</strong></td>
+<td>its own breaking scale</td>
+<td>$\mathrm{SU}(2)_L$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Role one, spacetime.</strong> The group is the rotation group of four dimensions and the Euclidean partner of the Lorentz group, related by the tie of §2. <strong>The weak interaction's maximal parity violation is a statement about the internal factors and has nothing to do with this role</strong>; a left–right model restores parity in the internal factor, not in spacetime.</p>
+<p><strong>Role two, the strong sector.</strong> With two light flavours the strong interaction has an approximate global symmetry of this shape, spontaneously broken to the diagonal, and the pions are the three Goldstones of the broken half. <strong>The corpus carries it</strong> as the nonlinear sigma field with the action $\tilde Q\mapsto g_L\tilde Qg_R^{*}$, its invariant metric, its currents and its decay constant; see <a href="the-nonlinear-sigma-model-and-the-chiral-field-in-biquaternionic-form.html">The Nonlinear Sigma Model and the Chiral Field</a> and <a href="the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html">The Chiral Theory, the Lagrangian, the Pion and the Decay Constant</a>.</p>
+<p><strong>Role three, the custodial symmetry.</strong> The scalar sector has an accidental global symmetry of the same shape acting on the doublet, and the vacuum value $(0,v)$ is invariant under the diagonal. <strong>That diagonal is what ties the two masses:</strong></p>
+<p>$$
+\rho=\frac{M_W^{2}}{M_Z^{2}\cos^{2}\theta_W}=1\quad\text{at tree level, to a part in a thousand.}
+$$</p>
+<p>The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g_L\tilde Qg_R^{*}$, a central vacuum is diagonal-invariant, and the two mass matrices come out proportional. The detail is in <a href="custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the $\rho$ Parameter</a>.</p>
+<p><strong>Role four, the gauge symmetry.</strong> The only role not realised: the two sides promoted to local symmetries with their own gauge fields. <strong>Nothing in the data requires it, and nothing excludes it above its breaking scale.</strong></p>
+<p><strong>The lesson of the table.</strong> "The Standard Model does not use this group" is false as stated. <strong>It uses it as an exact global symmetry of the strong sector, as an approximate global symmetry of the scalar sector, and as the source of hypercharge.</strong> What it does not do is gauge it unbroken.</p>
+<h2 id="5-why-the-standard-model-does-not-gauge-it">5. Why the Standard Model Does Not Gauge It</h2>
+<p><strong>Five reasons, and the last one is structural.</strong></p>
+<p><strong>5.1 The charged current is purely $V-A$.</strong> Reinstating parity would require a right-handed charged current of the same size as the observed one, and it is not there. <strong>The measured parity violation is maximal and not partial</strong>, so the two factors cannot be approximately symmetric at the electroweak scale.</p>
+<p><strong>5.2 The right-handed neutrino.</strong> For the right-handed electron to be a doublet it needs a partner, and the only candidate is a right-handed neutrino. <strong>That state is not required by the Standard Model and has never been seen as a gauge state</strong>; it is allowed, and its mass is bounded from above only by cosmology. So the group costs a particle the model does not need.</p>
+<p><strong>5.3 The group forces the sixteen.</strong> This is the sharpest reason, and it is a chain rather than a choice. Charge in the frame is</p>
+<p>$$
+Q=T_{3L}+T_{3R}+\tfrac12(B-L),
+$$</p>
+<p>so $B-L$ must itself be a gauge symmetry, because $Q$ is a combination of gauge generators. <strong>And the abelian factor is anomaly-free exactly when the right-handed neutrino is included</strong>, since the two conditions</p>
+<p>$$
+\textstyle\sum(B-L)=0,\qquad \sum(B-L)^{3}=0
+$$</p>
+<p>hold on the sixteen and fail on the fifteen. So</p>
+<p>$$
+\text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \nu_R\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
+$$</p>
+<p><strong>The group demands the even multiplet.</strong> A theory with half the group is free to be odd, and the Standard Model is odd. The arithmetic is in <a href="anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation</a>.</p>
+<p><strong>5.4 It is broken, not absent, and hypercharge is the remnant.</strong> The neutral generator of the broken factor survives as a global circle, and it mixes with $B-L$:</p>
+<p>$$
+Y=T_{3R}+\tfrac12(B-L).
+$$</p>
+<p><strong>The check is exact</strong>, and it is the reason hypercharge is not an independent invention:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>$T_{3L}$</th>
+<th>$T_{3R}$</th>
+<th>$B-L$</th>
+<th>$Y=T_{3R}+\tfrac12(B-L)$</th>
+<th>$Q=T_{3L}+Y$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu_L$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_L$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\nu_R$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$u_L$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac16$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_L$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac16$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$0$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac13$</td>
+<td>$-\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two readings of that table, and the second is the interesting one.</strong> The first is bookkeeping: the hypercharges come out right, so the relation is true. <strong>The second is structural: the charge formula is parity-symmetric.</strong> The two Cartans enter $Q$ on the same footing, and $Y$ is by definition the piece beyond $T_{3L}$, so substituting $T_{3R}$ for $T_{3L}$ throughout returns the same formula with the same charges. <strong>So the Standard Model does not violate parity by its charges; it violates it by its multiplet assignment</strong> — a doublet here, a singlet there, and the right-handed neutrino omitted. <strong>Parity is broken by the choice of module and not by the choice of numbers</strong>, which is the precise sense in which the frame "restores" it: the module changes and the arithmetic does not.</p>
+<p><strong>5.5 The chiral wall.</strong> From §3: chiral non-abelian one-sided multiplication does not exist. <strong>The Standard Model's $\mathrm{SU}(2)_L$ couples only to left-handed fields, so it is chiral non-abelian, so the algebra cannot supply it as a one-sided action.</strong> The corpus's $L(\mathfrak{k})$ is vector-like and therefore is not weak isospin; weak isospin is the corpus's $\mathrm{SU}(2)$ plus a chirality projection, and the projection is the missing object. <strong>Note what this does not say.</strong> It does not say $\mathrm{SU}(2)_L$ is illegitimate because its generators are absent — the group $\mathrm{SU}(2)$ is licensed twice over, as $L(\mathfrak{k})$ and as $R(\mathfrak{k})$. <strong>The failure is on the module and not on the group</strong>, which is the distinction the wall exists to make.</p>
+<p><strong>The chain, written once.</strong></p>
+<p>$$
+\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}
+\ \xrightarrow{\ \langle\Delta_R\rangle\ }\
+\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_{Y}
+\ \xrightarrow{\ \langle\Phi\rangle\ }\
+\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}} .
+$$</p>
+<p><strong>The middle term is the Standard Model.</strong> It is not a theory that declined the group; it is the low-energy description of a theory that broke one factor of it, and hypercharge is the left-over. <strong>The scale of that breaking is bounded from below only</strong>, so nothing forbids the group and nothing requires it — which is exactly why the fourth role is a hypothesis and not a fact.</p>
+<h2 id="6-what-the-group-costs">6. What the Group Costs</h2>
+<p><strong>The claim, in one line.</strong> The algebra's alphabet is $\mathrm{SU}(2)$ and a circle, and a factor that is a copy of the alphabet costs nothing.</p>
+<p><strong>The ledger.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>$\dim$</th>
+<th>rank</th>
+<th>where the algebra carries it</th>
+<th>cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(2)\times\mathrm{SU}(2)$</td>
+<td>$6$</td>
+<td>$2$</td>
+<td>$L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4)$, element level</td>
+<td><strong>free</strong></td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)^2\times\mathrm{U}(1)$</td>
+<td>$7$</td>
+<td>$3$</td>
+<td>the above, plus the central circle</td>
+<td><strong>free</strong></td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>$15$</td>
+<td>$3$</td>
+<td>the traceless part of the operator algebra, one layer up</td>
+<td>one layer</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)$</td>
+<td>$8$</td>
+<td>$2$</td>
+<td>inside $\mathfrak{su}(4)$, operator level only</td>
+<td>one layer, and only inside</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$</td>
+<td>$12$</td>
+<td>$4$</td>
+<td>$A_2\oplus A_1$ does not sit in $A_3$</td>
+<td><strong>over budget</strong></td>
+</tr>
+<tr>
+<td>$\mathrm{SO}(10)$</td>
+<td>$45$</td>
+<td>$5$</td>
+<td>exceeds $\mathfrak{u}(4)\oplus\mathfrak{u}(4)$, of dimension $32$</td>
+<td><strong>not available</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading, in three steps.</strong> The element layer's compact sector is $\mathfrak{u}(2)=\mathfrak{su}(2)\oplus\mathfrak{u}(1)$, of dimension four: one $\mathrm{SU}(2)$ and one circle. <strong>Two sides give two $\mathrm{SU}(2)$'s</strong>, because the second is the other family and costs nothing extra, and that doubling is the whole reason the group is free. <strong>Colour costs a layer</strong>, because $\mathfrak{su}(3)$ needs dimension eight against the four available at the element level, and it then comes only as a subgroup of $\mathfrak{su}(4)$. <strong>Above dimension fifteen the budget is exhausted.</strong> This ledger is the frame article's §<em>Why This Group and Not a Larger One</em> seen as an account statement; the ceiling that makes the second $\mathrm{SU}(2)$ free is the same computation that forces the frame to be a tensor product.</p>
+<p><strong>Why the doubling is not an accident of naming.</strong> The two factors are not two copies chosen for convenience. <strong>One is the self-dual half of a four-dimensional rotation and the other is the anti-self-dual half</strong>, and the carrier's dimension is four, so the split is canonical. A reader who wants one structural fact from this article should take that one.</p>
+<h2 id="7-what-would-settle-it">7. What Would Settle It</h2>
+<p><strong>The observations, in order of directness.</strong> A resonance of the right-handed charged boson decaying to a lepton and a heavy neutral, which is the cleanest. <strong>A right-handed charged current at low energy</strong>, which would appear as a $V+A$ admixture in beta decay and in muon decay. <strong>Neutrinoless double beta decay</strong>, which needs the heavy Majorana neutral the group supplies. <strong>And a measured departure from $\rho=1$</strong>, which would break the custodial diagonal that role three relies on.</p>
+<p><strong>The corpus's missing object, and it is one object.</strong> A <strong>chiral carrier</strong>: a map that ties the operator side to the spinor letter, so that one side acts on one letter and the other side on the other. <strong>With it, the multiplet assignment becomes a construction instead of a declaration</strong>, and the wall of §5.5 comes down. Without it the frame's chirality is put in by hand and is honest about it.</p>
+<p><strong>What the group does not need.</strong> It needs no new algebra, no new layer, no exceptional structure and no octonion. <strong>The group is present, of dimension six, at the element level, split into self-dual and anti-self-dual halves by an explicit computation, with the two factors commuting and each a copy of the algebra's own rotor group.</strong> Everything else in this article is a consequence of that sentence or a refusal to go beyond it.</p>
+<h2 id="8-the-checks">8. The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the dimension</td>
+<td>$\dim\mathfrak{su}(2)\oplus\mathfrak{su}(2)$</td>
+<td>$3+3=6$</td>
+</tr>
+<tr>
+<td>the rank</td>
+<td>two Cartans, one per ideal</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>the two ideals</td>
+<td>$[L(\mathfrak{k}),R(\mathfrak{k})]=0$</td>
+<td>the bracket vanishes</td>
+</tr>
+<tr>
+<td>the identity</td>
+<td>$L(\mathfrak{k})\oplus R(\mathfrak{k})$</td>
+<td>$\mathfrak{so}(4)$</td>
+</tr>
+<tr>
+<td>the cover</td>
+<td>$\ker\rho$</td>
+<td>$\{\pm(\mathrm{I}_4,\mathrm{I}_4)\}$, so two-to-one</td>
+</tr>
+<tr>
+<td>the spins</td>
+<td>$\tfrac12\otimes\tfrac12$</td>
+<td>$0\oplus1$</td>
+</tr>
+<tr>
+<td>the self-dual side</td>
+<td>$L(\vec e_k)$ against $\omega_k$</td>
+<td>$-\omega_k\in\Lambda^2_+$</td>
+</tr>
+<tr>
+<td>the anti-self-dual side</td>
+<td>$R(\vec e_k)$ against $\tau_k$</td>
+<td>$-\tau_k\in\Lambda^2_-$</td>
+</tr>
+<tr>
+<td>the mirror</td>
+<td>the brackets</td>
+<td>$+2$ against $-2$</td>
+</tr>
+<tr>
+<td>the tie</td>
+<td>$g_R=g_L^{*}$ instead of $g_R=g_L$</td>
+<td>$\mathrm{SL}(2,\mathbb{C})$, hence the Lorentz group</td>
+</tr>
+<tr>
+<td>the modules</td>
+<td>carrier against tensor factors</td>
+<td>$8$ real against $16$ complex</td>
+</tr>
+<tr>
+<td>the chirality of one side</td>
+<td>$L_{\tilde Q}$ on the two letters</td>
+<td>the same action, so vector-like</td>
+</tr>
+<tr>
+<td>hypercharge</td>
+<td>the eight rows against $Y=T_{3R}+\tfrac12(B-L)$</td>
+<td>all eight exact</td>
+</tr>
+<tr>
+<td>the parity reading</td>
+<td>substitute $T_{3R}$ for $T_{3L}$ in $Q$</td>
+<td>the same formula, the same charges</td>
+</tr>
+<tr>
+<td>the sixteen</td>
+<td>the two $B-L$ anomaly sums</td>
+<td>$0$ and $0$ on sixteen, not on fifteen</td>
+</tr>
+<tr>
+<td>the cost</td>
+<td>$\mathfrak{su}(3)$ against $\mathfrak{u}(2)$</td>
+<td>$8$ against $4$, so one layer</td>
+</tr>
+<tr>
+<td>the ceiling</td>
+<td>$\mathfrak{so}(10)$ against $\mathfrak{u}(4)\oplus\mathfrak{u}(4)$</td>
+<td>$45$ against $32$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows that carry the article.</strong> The identity $L\oplus R=\mathfrak{so}(4)$ is what makes the group free. The sign of the bracket is what makes the two factors mirror images rather than copies. The eight hypercharge rows are what make hypercharge a remnant rather than a postulate. <strong>And the parity row is what separates the two readings of §5.4</strong>: the numbers are symmetric and the multiplets are not.</p>
+<h2 id="9-distinctions-that-are-easy-to-lose">9. Distinctions That Are Easy to Lose</h2>
+<p>The group is not the pair's group. $\mathrm{SU}(2)\times\mathrm{SU}(2)$ is a product of two factors; the electroweak pair of the Standard Model, $\mathrm{SU}(2)\times\mathrm{U}(1)$, is a different group with a different quotient structure, and <a href="the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html">The Electroweak Pair</a> is where that difference is computed.</p>
+<p>Native is not gauged. The group's presence at the element level is a fact about the algebra; a gauge symmetry is a fact about a module (§3).</p>
+<p>Spacetime is not internal. The same group is $\mathrm{Spin}(4)_{E}$ on the carrier and an internal factor on the tensor factors, and the left–right model needs the second (§3).</p>
+<p>Parity is broken by the module and not by the charges. The charge formula is symmetric under $L\leftrightarrow R$; the multiplet assignment is not (§5.4).</p>
+<p>Broken is not absent. The Standard Model is the middle term of a three-term chain, and hypercharge is the survivor (§5).</p>
+<p>The chiral wall is a statement about the module. The group is licensed twice over; what is missing is the tie between an operator side and a spinor letter (§3, §5.5).</p>
+<p>Not observed is not excluded. The fourth role is bounded from below only, and that is why it is a hypothesis rather than a refutation (§5).</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The group.</strong> $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is the compact form of $\mathfrak{sl}(2,\mathbb{C})\oplus\mathfrak{sl}(2,\mathbb{C})$, of dimension six and rank two, the double cover of $\mathrm{SO}(4)$, and the spin group of four-dimensional space: each factor carries $s=\tfrac12$ and the pair carries $0$ and $1$.</p>
+<p><strong>What it is in the algebra.</strong> The two one-sided families of the vector part, $L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4)$, at the element level, with the left factor the self-dual half and the right the anti-self-dual half, and the sign of the bracket as the mirror between them.</p>
+<p><strong>The two modules.</strong> On the carrier the group is $\mathrm{Spin}(4)_{E}$, spacetime. On the tensor factors of $\mathbb{B}\otimes\mathbb{B}$ it is internal. The frame needs the second, and the algebra builds it as a module.</p>
+<p><strong>The four roles.</strong> Spacetime rotations, exact; the chiral symmetry of the strong sector, approximate and spontaneously broken; the custodial symmetry of the scalar sector, approximate and giving $\rho=1$; the gauged left–right symmetry, not observed.</p>
+<p><strong>Why the Standard Model does not gauge it.</strong> Because it uses it: as a global symmetry twice, and as the source of hypercharge, $Y=T_{3R}+\tfrac12(B-L)$. The Standard Model is the phase in which the right-handed factor is broken, and hypercharge is the survivor. Its charges are parity-symmetric; its multiplets are not.</p>
+<p><strong>The cost.</strong> Two $\mathrm{SU}(2)$'s and a circle are free, because the alphabet is $\mathrm{SU}(2)$; colour costs a layer; a group needing a separate $\mathrm{SU}(3)$ with a commuting $\mathrm{SU}(2)$ is over budget.</p>
+<p><strong>What is missing, and it is one thing.</strong> The tie between the operator side and the spinor letter. With it the two factors become the two chiralities, and the group becomes a chiral gauge group in the algebra's own terms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{k}$</td>
+<td>the vector part, $\operatorname{span}_{\mathbb{R}}(\vec e_x,\vec e_y,\vec e_z)$, dimension $3$</td>
+</tr>
+<tr>
+<td>$L(\mathfrak{k})$, $R(\mathfrak{k})$</td>
+<td>the two one-sided families of the vector part, each of dimension $3$</td>
+</tr>
+<tr>
+<td>$\mathrm{ad}(\mathfrak{k})$</td>
+<td>the diagonal family $L_{\vec e_k}-R_{\vec e_k}$, the derivation</td>
+</tr>
+<tr>
+<td>$\Lambda^{2}_{\pm}$</td>
+<td>the self-dual and anti-self-dual two-forms, the two ideals of $\mathfrak{so}(4)$</td>
+</tr>
+<tr>
+<td>$\star$</td>
+<td>the Hodge star on two-forms, $\star^{2}=\mathrm{id}$, exchanging the ideals</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>here the display $\mathrm{Spin}(3)\times\mathrm{Spin}(3)\to\mathrm{SO}(4)$; also the mass ratio of §4</td>
+</tr>
+<tr>
+<td>$\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$</td>
+<td>the tied two-sided action; the tie is what gives the Lorentz group</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_L$, $\mathbb{B}_R$</td>
+<td>the two tensor factors, $\{\mathrm{I}_2\otimes A\}$ and $\{B^{\mathsf T}\otimes\mathrm{I}_2\}$</td>
+</tr>
+<tr>
+<td>$T_{3L}$, $T_{3R}$</td>
+<td>the two Cartan generators, one per factor</td>
+</tr>
+<tr>
+<td>$B-L$</td>
+<td>baryon minus lepton number, the abelian generator</td>
+</tr>
+<tr>
+<td>$Y=T_{3R}+\tfrac12(B-L)$</td>
+<td>hypercharge as the remnant of the broken right-handed factor</td>
+</tr>
+<tr>
+<td>$\Delta_R$, $\Phi$</td>
+<td>the scalars that break the right-handed factor and then the electroweak pair</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-fourth-colour-left-right-model.html">The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.</li>
+<li><a href="the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html">The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock</a>. $\mathrm{SU}(2)\times\mathrm{U}(1)$ against the algebra's $\mathrm{U}(2)$, and the selection rule the quotient imposes.</li>
+<li><a href="electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html">Electroweak Theory in the Biquaternion Framework: The $\mathrm{U}(2)$ Reach and the Chiral Wall</a>. The wall of §3 at its four levels, and the ledger of what each level would need.</li>
+<li><a href="../articles_maths/the-lie-algebra-skew-4-and-so-4.html">The Lie Algebra $\mathfrak{so}(4)$</a>. $\mathfrak{so}(4)=\Lambda^{2}_{+}\oplus\Lambda^{2}_{-}$, the self-dual basis, and the identification of $L(\vec e_k)$ with $-\omega_k$ and $R(\vec e_k)$ with $-\tau_k$.</li>
+<li><a href="../articles_maths/the-spin-group-via-4x4-real-matrices.html">The Spin Group via $4\times4$ Real Matrices</a>. The display $\rho$ computed, and the warning that the group is a three-sphere and not a set of matrices.</li>
+<li><a href="../articles_maths/from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html">From the Spin of a Single Rotor to the Spin of a Pair</a>. $s=\tfrac12$ per factor and $0\oplus1$ for the pair.</li>
+<li><a href="../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html">The Hermitian Pair of Operators Acting on Two Sides</a>. The tie $R_{\tilde Q^{*}}$ and the twofold cover of the Lorentz group.</li>
+<li><a href="../articles_maths/the-transposition-of-the-two-sides.html">The Transposition of the Two Sides</a>. The conversion between the two factors, and the difference between a side and a letter.</li>
+<li><a href="../articles_maths/m4c-pauli-representation-operators.html">The Pauli Representation Operators</a>. $\mathbb{B}_L=\{\mathrm{I}_2\otimes A\}$ and $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm{I}_2\}$, the internal tensor factors of §3.</li>
+<li><a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go</a>. The trace that fixes the $B-L$ eigenvalues used in the hypercharge table.</li>
+<li><a href="anomalies-and-anomaly-cancellation-in-biquaternionic-form.html">Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model</a>. The two $B-L$ conditions that force the sixteen.</li>
+<li><a href="custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html">Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form</a>. The third role, computed.</li>
+<li><a href="the-nonlinear-sigma-model-and-the-chiral-field-in-biquaternionic-form.html">The Nonlinear Sigma Model and the Chiral Field in Biquaternionic Form</a>. The second role, and the left–right action on the pion field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

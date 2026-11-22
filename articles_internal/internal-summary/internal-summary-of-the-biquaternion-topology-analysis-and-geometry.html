@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Topology, Analysis and Geometry — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the last three subsections of the maths category Biquaternions: Topology (4 articles), Analysis (19), Geometry…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-topology-analysis-and-geometry"><strong>Internal Summary of the Biquaternion Topology, Analysis and Geometry</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the last three subsections of the maths category <em>Biquaternions</em>: Topology (4 articles), Analysis (19), Geometry (16). It gives the objects, the boxed equations and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source articles named at the end of the section.</p>
+<p><strong>What the three sections share.</strong> One ambient space with one norm,</p>
+<p>$$
+\|\tilde Q\|=\Bigl(\sum_{\mu}|Q_\mu|^{2}\Bigr)^{1/2}=\Bigl(\sum_\mu q_\mu^{2}+(q'_\mu)^{2}\Bigr)^{1/2},\qquad \mathbb{B}\cong\mathbb{R}^{8},
+$$</p>
+<p>and that is where the agreement stops. Topology uses $\|\cdot\|$. Analysis uses the <em>quadratic</em> form $N$. Geometry uses the <em>indefinite</em> form $\mathrm{Kr}$. Three sections, three forms, and this file keeps them apart on purpose.</p>
+<p><strong>The one-sentence version.</strong> One space carries three forms, and each section of the block uses exactly one: the norm for topology, the quadratic form for analysis, the indefinite form for geometry.</p>
+<h2 id="1-topology">1. Topology</h2>
+<p><strong>The space.</strong> $\mathbb{B}$ with the Euclidean topology of $\mathbb{R}^8$; all norms equivalent:</p>
+<p>$$
+c\|x\|_1\le\|x\|_2\le C\|x\|_1 .
+$$</p>
+<p><strong>The group of invertibles.</strong></p>
+<p>$$
+\mathbb{B}^{\times}=\{\tilde Q:N(\tilde Q)\neq0\}
+$$</p>
+<p>is open and dense, and it is a topological group under multiplication and inversion.</p>
+<p><strong>The zero-divisor cone.</strong></p>
+<p>$$
+\mathcal N=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=0\},\qquad \mathcal Z=\mathcal N\setminus\{0\},\qquad L=\mathcal N\cap S^{7}_{E},
+$$</p>
+<p>$$
+\boxed{\;L\cong S^{2}\times S^{3}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The singular set is not a hypersurface with a smooth link: its link carries two factors, and the two factors are the two independent rulings. Concretely, on the cone</p>
+<p>$$
+Z_0=Q_t-iQ_z,\quad Z_1=-iQ_x-Q_y,\quad Z_2=-iQ_x+Q_y,\quad Z_3=Q_t+iQ_z,
+$$</p>
+<p>and the cone is $\{Z_0Z_3-Z_1Z_2=0\}$ — the determinantal variety of rank-one $2\times2$ matrices. So the zero divisors of $\mathbb{B}$ <em>are</em> the rank-one matrices, and every singularity statement of the category is a statement about rank.</p>
+<p><strong>Why an agent should care.</strong> $\mathbb{B}^{\times}$ is not connected but open-dense, and its complement is a cone of real dimension $6$ whose link is $S^2\times S^3$. Any "generic" argument must exclude this cone, and the exclusion is not measure-zero-by-accident: the cone is thin, but its <em>image</em> under the usual maps is not.</p>
+<p><strong>Source.</strong> <code>articles_maths/topology-in-the-space-of-biquaternions.md</code>, <code>articles_maths/the-euclidean-topology-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-biquaternion-group-of-invertibles-as-a-topological-group.md</code>, <code>articles_maths/the-topology-of-the-zero-divisor-cone.md</code></p>
+<h2 id="2-analysis">2. Analysis</h2>
+<p><strong>The Dirac-type operator and the D'Alembertian.</strong></p>
+<p>$$
+\tilde\nabla_\Phi=\sum_{\mu}e_\mu\frac{\partial}{\partial Q_\mu},\qquad
+(\tilde\nabla_\Phi)^{\natural}=\sum_\mu\varepsilon_\mu e_\mu\frac{\partial}{\partial Q_\mu},\qquad
+\Box_\Phi=\langle\tilde\nabla_\Phi\rangle_{\natural}=\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\bigr)=\sum_\mu\frac{\partial^{2}}{\partial Q_\mu^{2}},
+$$</p>
+<p>$$
+\boxed{\;\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The factorization is <em>exact</em> and it is the reason the algebra is used at all: the second-order operator splits into two first-order ones, so every harmonic function has two regularity classes attached,</p>
+<p>$$
+\tilde\nabla_\Phi\tilde\Xi_{\mathrm{sp},R}=m\tilde\Xi_{\mathrm{sp},L},\qquad
+(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{\mathrm{sp},L}=m\tilde\Xi_{\mathrm{sp},R},\qquad \lambda=m^{2}.
+$$</p>
+<p><strong>Regular (Fueter) functions.</strong></p>
+<p>$$
+J_i(\tilde Q)=i\tilde Q,\qquad J_1(\tilde Q)=\vec e_x\tilde Q,\qquad
+\tilde\nabla_\Phi F=0 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> Regularity is defined against a chosen <em>complex structure</em> $J$, and different choices give different theories. The choice $\mathbb{C}[\vec e_x]$,</p>
+<p>$$
+\mathbb{C}[\vec e_x]=\{ae_t+b\vec e_x\}\cong\mathbb{C}\times\mathbb{C},
+$$</p>
+<p>is the one that makes the theory split into two planar halves. An agent must record which $J$ it is using; the articles do, and the formulas do not transfer silently between them.</p>
+<p><strong>Integration.</strong> Componentwise, hence trivially linear and additive:</p>
+<p>$$
+\int_\Omega F\,dV=\sum_\mu\Bigl(\int_\Omega F_\mu\,dV\Bigr)e_\mu .
+$$</p>
+<p><strong>The non-trivial claim.</strong> There is no quaternionic Stokes theorem in this setting; the integral is eight real integrals. Any Stokes-type statement in the corpus is a statement about a <em>real</em> form on $\mathbb{R}^8$, and should be read that way.</p>
+<p><strong>The exponential and the Lie group.</strong></p>
+<p>$$
+\mathbb{B}^{\times}_1=\{\tilde Q:\langle\tilde Q\rangle_{\natural}=1\},\qquad Z(\mathbb{B}^{\times}_1)=\{\pm e_t\}\cong\mathbb{Z}/2 .
+$$</p>
+<p><strong>The non-trivial claim about the exponential.</strong> $\exp:\mathbb{B}\to\mathbb{B}^{\times}$ is surjective, and $\exp:\mathbb{B}_0\to\mathbb{B}^{\times}_1$ is <strong>not</strong>. The obstruction is a single element: $Q_t=-1$ with $B=0$, that is a non-semisimple element with repeated eigenvalue $-1$, has no logarithm with zero real part. Failure of surjectivity is not failure of generation: $\mathbb{B}^{\times}_1$ is connected and $\exp$ is a local diffeomorphism at $0$, so the exponentials still generate the group. An agent that needs a logarithm must check the scalar part, not the norm.</p>
+<p><strong>Elementary functions.</strong> They all close through one scalar,</p>
+<p>$$
+B=\sqrt{Q_x^{2}+Q_y^{2}+Q_z^{2}},\qquad \langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2},
+$$</p>
+<p>that is, through the same discriminant that controls the spectrum.</p>
+<p><strong>Source.</strong> <code>articles_maths/biquaternion-analysis.md</code>, <code>articles_maths/the-first-order-root-of-the-biquaternion-d-alembertian.md</code>, <code>articles_maths/biquaternion-regular-functions.md</code>, <code>articles_maths/fueter-theory-for-biquaternions.md</code>, <code>articles_maths/the-two-sided-derivative-over-the-biquaternion-algebra.md</code>, <code>articles_maths/remarkable-subspaces-and-the-analysis.md</code>, <code>articles_maths/biquaternion-integration.md</code>, <code>articles_maths/biquaternion-lie-group-and-exponential-structure.md</code>, <code>articles_maths/biquaternion-elementary-functions.md</code>, <code>articles_maths/biquaternion-higher-special-functions.md</code></p>
+<h2 id="3-harmonic-analysis">3. Harmonic Analysis</h2>
+<p><strong>The kernel.</strong></p>
+<p>$$
+W(t,\omega)=\exp(-2\pi i\tilde Z\omega t),\qquad \tilde Z^{2}=e_t,\qquad
+W(t,\omega)=e^{-2\pi i\omega t}\tilde\Pi_+ + e^{+2\pi i\omega t}\tilde\Pi_- .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Fourier kernel is not a scalar exponential: it is a <em>pair</em> of opposite scalar exponentials placed on the two Peirce idempotents. So the biquaternion Fourier transform is two scalar transforms acting on the two minimal left ideals, and the operator is diagonal in the Peirce basis but not in the coordinate basis.</p>
+<p><strong>The three kernel placements.</strong> The kernel can sit on the left, on the right, or on both sides:</p>
+<p>$$
+W\!\cdot F,\qquad F\!\cdot W,\qquad W_L\,F\,W_R ,
+$$</p>
+<p><strong>The non-trivial claim, and the sentence that must not be written.</strong> The three transforms are never equal except on the zero function, and the two-sided transform is <em>not</em> a one-sided transform applied twice. The distance between them is a commutator, and its size is the distance of the symbol from the plane of the root. The distinction is invisible for scalar-valued functions and visible for biquaternion-valued ones.</p>
+<p><strong>The plane of the root.</strong> For a pure root $R$ with $R^{2}=-e_t$, the commutant is exactly</p>
+<p>$$
+C(R)=\mathrm{span}_{\mathbb{C}}\{e_t,R\},\qquad \dim_{\mathbb{R}}C(R)=4,
+$$</p>
+<p>and conjugation by $W$ fixes $C(R)$ pointwise. So the transform decomposes along a four-dimensional commutative plane and its four-dimensional complement; the projections onto the two are orthogonal only for the <strong>Hermitian</strong> root, and oblique otherwise.</p>
+<p><strong>Inversion, and where it fails.</strong></p>
+<p>$$
+P(D)f=g\ \Longrightarrow\ f=\mathcal F^{-1}\bigl(\hat g/\hat P\bigr),
+$$</p>
+<p>with the inversion integral carrying <strong>poles</strong>, <strong>tails</strong> and a <strong>degenerate set</strong>:</p>
+<p>$$
+\sigma^{-1}=\frac{\tilde\sigma}{N(\sigma)} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The degenerate set is exactly the zero-divisor cone of the symbol. So Fourier inversion on $\mathbb{B}$ has the same failure set as the algebra itself — a single cone, met three times: in the symbol, in the inversion, and in the topology section.</p>
+<p><strong>Bochner and the modular theory.</strong></p>
+<p>$$
+\langle\tilde Q\tilde Q_4,\tilde Q_3\rangle=\langle\tilde Q_4,\tilde Q^{*}\tilde Q_3\rangle,
+$$</p>
+<p>$$
+\boxed{\;S(\tilde Q\,z)=\tilde Q^{*}z,\qquad\text{that is}\qquad S(\tilde Q)=\tilde Q^{*}\ \text{on }\mathbb{B}\;}
+$$</p>
+<p>$$
+\langle S\tilde Q_1,S\tilde Q_2\rangle=\overline{\langle\tilde Q_1,\tilde Q_2\rangle},\qquad \|S\tilde Q_1\|=\|\tilde Q_1\| .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The involution $*$ <em>is</em> the Tomita operator of the trace form, and the conjugate operator is $F=S^{*}=S$. Since $S^{2}=\mathrm{id}$, the modular operator $\Delta=S^{*}S$ is the identity: the reference state is tracial and the modular group is trivial. So the whole Tomita–Takesaki machinery collapses here, and any modular flow quoted in the physics sectors comes from a different weight, not from this one. This is the shortest bridge in the corpus between the algebra and operator-algebra language, and it is a bridge with a trap.</p>
+<p><strong>Source.</strong> <code>articles_maths/biquaternion-discrete-harmonic-analysis.md</code>, <code>articles_maths/biquaternion-continuous-harmonic-analysis.md</code>, <code>articles_maths/relations-between-the-biquaternion-exponential-and-the-fourier-kernel.md</code>, <code>articles_maths/three-kernel-placements-of-the-biquaternion-fourier-transform.md</code>, <code>articles_maths/inversion-of-the-biquaternion-fourier-transform-poles-tails-and-the-degenerate-set.md</code>, <code>articles_maths/biquaternion-fourier-inversion-on-the-degenerate-set.md</code>, <code>articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.md</code>, <code>articles_maths/the-biquaternion-algebra-and-the-krein-von-neumann-property.md</code>, <code>articles_maths/the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra.md</code></p>
+<h2 id="4-geometry">4. Geometry</h2>
+<p><strong>Rotations and Lorentz transformations.</strong></p>
+<p>$$
+\mathbb{B}^{\times}_1/\{\pm e_t\}\cong SO^{+}(1,3),\qquad
+\boxed{\;\mathbb{B}^{\times}_1\cong\mathrm{Spin}(1,3),\qquad \mathbb{B}_0\cong\mathfrak{so}(1,3)\;}
+$$</p>
+<p>$$
+\tilde Q\mapsto\tilde u\,\tilde Q\,\tilde u^{-1},\qquad \mathrm{H}_{\tilde Q}(\tilde Q_3)=\tilde Q\,\tilde Q_3\,\tilde Q^{*}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The same algebra gives both the Euclidean rotation group and the Lorentz group, and the difference is which <em>real form</em> of the unit sphere is taken: $N=1$ gives $\mathrm{SL}_2(\mathbb{C})=\mathrm{Spin}(1,3)$, while the Hermitian condition gives the compact $\mathrm{SU}(2)$. The physics sectors of the corpus are the two real forms, not two theories.</p>
+<p><strong>Versors and the Clifford algebra.</strong></p>
+<p>$$
+\mathbb{B}_\Psi=\{\tilde Q:\tilde Q^{*}=\tilde Q\},\qquad \mathbb{B}_\Phi=\{\tilde Q:\tilde Q^{*}=-\tilde Q\},
+$$</p>
+<p>$$
+\boxed{\;\mathrm{Cl}^{+}\cong\mathbb{B},\qquad \mathrm{Cl}(V)=\mathbb{B}\oplus\mathbb{B}\zeta\;},\qquad
+\mathrm{Pin}=\{\tilde U:\langle\tilde U\rangle_{\natural}=\pm1\},\qquad \mathrm{Spin}=\mathrm{Pin}\cap\mathrm{Cl}^{+}.
+$$</p>
+<p><strong>The unitary group.</strong></p>
+<p>$$
+\mathrm{U}(\mathbb{B})=\{\tilde Q:\tilde Q^{*}\tilde Q=e_t\},\qquad
+\tilde Q=A\,\tilde q,\ \ A\in\mathbb{C},\ |A|=1,\ \tilde q\in\mathbb{H},\ |\tilde q|=1,
+$$</p>
+<p>$$
+\boxed{\;\mathrm{U}(\mathbb{B})\cong\bigl(S^{1}\times S^{3}\bigr)/\{\pm e_t\}\cong U(2)\;},\qquad
+\boxed{\;\mathrm{U}(\mathbb{B})/T^{2}\cong P^{1}\cong S^{2}\;}
+$$</p>
+<p><strong>The Krein isometry group.</strong></p>
+<p>$$
+\langle T\tilde Q_2,T\tilde Q_1\rangle_{\natural*}=\langle\tilde Q_2,\tilde Q_1\rangle_{\natural*}\ \Longrightarrow\
+\boxed{\;U_{J}(\mathbb{B})=\{T:T^{*}ET=E\}\cong\mathrm{U}(1,3)\;}
+$$</p>
+<p>$$
+\boxed{\;L_{\tilde Q}\ \text{is }J\text{-unitary}\iff\tilde Q\in S^{1}e_t,\qquad R_{\tilde Q}\ \text{is }J\text{-unitary}\iff\tilde Q\in S^{1}e_t\;}.
+$$</p>
+<p><strong>The non-trivial claim, and the sharpest one of the section.</strong> Of the two one-sided families, only the <em>central</em> scalars are Krein-unitary, and the sandwich is Krein-unitary only on the same scalars. So the indefinite geometry is rigid where the definite geometry is flexible: $\mathrm{U}(4)$ acts on all of $\mathbb{B}$, and $\mathrm{U}(1,3)$ acts on the two-sided operators only through $S^{1}$. This explains why the Krein articles produce Cartan decompositions and level sets rather than orbit classifications.</p>
+<p><strong>The level sets.</strong></p>
+<p>$$
+\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}=1\}\cong S^{1}\times\mathbb{R}^{6},\qquad
+\{\tilde Q:\langle\tilde Q,\tilde Q\rangle_{\natural*}=-1\}\cong S^{5}\times\mathbb{R}^{2},
+$$</p>
+<p>$$
+\{\langle\tilde Q,\tilde Q\rangle_{\natural*}=0\}=C(S^{1}\times S^{5}),\qquad
+\mathrm{U}(1,3)/\bigl(\mathrm{U}(1)\times\mathrm{U}(3)\bigr)=\mathbb{CH}^{3}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The two level sets have different topology and different stabilisers: the timelike one is a hyperboloid of one sheet times a circle, the spacelike one a five-sphere times a plane. There is no single "hyperbolic space" here, and a formula lifted from one to the other will be wrong.</p>
+<p><strong>Source.</strong> <code>articles_maths/biquaternion-rotations-and-lorentz-transformations.md</code>, <code>articles_maths/biquaternion-versors-and-the-orthogonal-group.md</code>, <code>articles_maths/biquaternion-automorphisms-and-derivations.md</code>, <code>articles_maths/the-unitary-group-of-the-biquaternion-algebra.md</code>, <code>articles_maths/the-krein-isometry-group-and-its-cartan-decomposition.md</code>, <code>articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md</code></p>
+<h2 id="5-fractal-geometry">5. Fractal Geometry</h2>
+<p><strong>The quadratic map.</strong></p>
+<p>$$
+F_{\tilde C}(\tilde Q)=\tilde Q^{2}+\tilde C,\qquad p_0(\tilde Q)=\tilde Q,\qquad p_{n+1}=p_n^{2}+\tilde C .
+$$</p>
+<p><strong>The two left/right variants.</strong></p>
+<p>$$
+\tilde Q_1\mapsto\tilde Q_3\tilde Q_1+\tilde C\ \ (\text{left}),\qquad \tilde Q_1\mapsto\tilde Q_1\tilde Q_3+\tilde C\ \ (\text{right}),
+$$</p>
+<p>which are <em>different</em> dynamics because of the non-commutativity.</p>
+<p><strong>The singular Julia sets.</strong></p>
+<p>$$
+\boxed{\;\tilde Q^{2}=2Q_t\,\tilde Q\quad\text{on the cone}\;}
+$$</p>
+<p>$$
+\boxed{\;F_{\tilde C}(\lambda\tilde\Pi)=\lambda^{2}\tilde\Pi+\tilde C e_t\;},\qquad
+\Sigma_{\tilde C}=J_{\tilde C}\cap\Sigma(\mathbb{B}),\qquad
+\{\tilde\Pi:\tilde\Pi^{2}=\tilde\Pi\}\subset J_0\cap\mathcal Z .
+$$</p>
+<p><strong>The non-trivial claim.</strong> On the idempotent lines the dynamics is the scalar map $\lambda\mapsto\lambda^2$; so the fractal is <em>foliated by copies of the Mandelbrot set</em>, one per idempotent, and the zero-divisor cone contains the entire idempotent variety inside $J_0$. This is the structural reason the biquaternion Julia sets are much bigger than their complex counterparts.</p>
+<p><strong>The dimensions.</strong></p>
+<p>$$
+\boxed{\;\dim_H\mathcal K_0=8,\qquad \dim_H J_0=7\;}
+$$</p>
+<p>$$
+\boxed{\;\dim_H\bigl(J_{\tilde C}\cap W_{\tilde\Pi}\bigr)=\max\bigl(\dim_H J_{C_1}+\dim_H K_{C_2},\ \dim_H K_{C_1}+\dim_H J_{C_2}\bigr)\;}
+$$</p>
+<p>$$
+\dim_H\mathcal K_{Ce_t}\le4+2\alpha,\qquad \dim_H\bigl(J_{Ce_t}\cap\mathbb{C}e_t\bigr)=\dim_H J_{C}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> $\dim_H J_0=7$ in a space of real dimension $8$: the filled Julia set is full-dimensional and the Julia set is a hypersurface. In $\mathbb{C}$ the corresponding numbers are $2$ and $1$. So the fractal geometry of the biquaternions is <em>generic</em>, not exceptional, and the restriction to a complex slice recovers the classical values exactly.</p>
+<p><strong>Source.</strong> <code>articles_maths/the-biquaternion-quadratic-map-and-its-julia-sets.md</code>, <code>articles_maths/the-biquaternion-mandelbrot-set-and-the-connectedness-locus.md</code>, <code>articles_maths/the-slices-of-the-biquaternion-julia-sets.md</code>, <code>articles_maths/the-escape-radius-and-the-greens-function-for-the-biquaternions.md</code>, <code>articles_maths/the-zero-divisors-and-the-singular-julia-sets.md</code>, <code>articles_maths/the-matrix-element-representation-and-the-biquaternion-dynamics.md</code>, <code>articles_maths/the-idempotent-decomposition-and-the-split-fractal-of-the-biquaternions.md</code>, <code>articles_maths/the-biquaternion-iterated-function-systems.md</code>, <code>articles_maths/the-hausdorff-dimension-of-the-biquaternion-julia-sets.md</code>, <code>articles_maths/the-biquaternion-holomorphic-dynamics-and-the-jacobian.md</code></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The three sections in six formulas.</strong></p>
+<p>$$
+L\cong S^{2}\times S^{3},\qquad
+\Box_\Phi=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi,\qquad
+S=\,*,
+$$</p>
+<p>$$
+\mathbb{B}^{\times}_1\cong\mathrm{Spin}(1,3),\qquad
+U_J(\mathbb{B})\cong\mathrm{U}(1,3),\qquad
+\dim_H J_0=7 .
+$$</p>
+<p><strong>Five results to keep.</strong> The zero-divisor cone is the rank-one locus, and its link is $S^2\times S^3$. The D'Alembertian is a product of two first-order operators, and regularity depends on a chosen complex structure. The Fourier kernel is two scalar exponentials on the two Peirce idempotents, and inversion fails on the symbol's cone. The involution is the Tomita operator. The indefinite geometry is rigid: only $S^1$ acts two-sidedly, and the Julia sets are full-dimensional.</p>
+<p><strong>Three refusals.</strong> There is no quaternionic Stokes theorem here. There is no single Fourier transform: three kernel placements, three theorems. There is no single hyperbolic space: the two Krein level sets are not isometric.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\nabla_\Phi$, $\Box_\Phi$</td>
+<td>first-order operator, its square</td>
+</tr>
+<tr>
+<td>$N$, $\mathrm{Kr}$</td>
+<td>quadratic, indefinite form</td>
+</tr>
+<tr>
+<td>$W(t,\omega)$</td>
+<td>Fourier kernel</td>
+</tr>
+<tr>
+<td>$S$, $J$</td>
+<td>Tomita operator, modular conjugation</td>
+</tr>
+<tr>
+<td>$\mathcal N$, $\mathcal Z$, $L$</td>
+<td>null cone, cone minus origin, its link</td>
+</tr>
+<tr>
+<td>$J_{\tilde C}$, $\mathcal K_{\tilde C}$</td>
+<td>Julia set, filled Julia set</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>topology-in-the-space-of-biquaternions</code>, <code>the-topology-of-the-zero-divisor-cone</code>, <code>the-first-order-root-of-the-biquaternion-d-alembertian</code>, <code>biquaternion-continuous-harmonic-analysis</code>, <code>the-tomita-operator-and-the-j-modular-pair-for-the-biquaternion-algebra</code>, <code>biquaternion-rotations-and-lorentz-transformations</code>, <code>the-hausdorff-dimension-of-the-biquaternion-julia-sets</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

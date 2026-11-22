@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Relativistic Quantum Theory — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Relativistic Quantum Theory, one hundred and twenty-seven articles. It gives the objects…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-relativistic-quantum-theory"><strong>Internal Summary of the Biquaternion Relativistic Quantum Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Relativistic Quantum Theory</em>, one hundred and twenty-seven articles. It gives the objects, the boxed equations, and the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> It writes the relativistic one-particle theory of spin $0$, $\tfrac12$ and $1$ in the algebra, then the informational reading of the same objects. The pattern is constant: one element of $\mathbb{B}$, one gradient, one product. The Klein–Gordon equation is the product of the gradient with its conjugate. The Dirac equation is a pair of first-order equations whose two members are the two chiral halves. The Proca equation is the same pair read on a bivector-valued field.</p>
+<p><strong>The five menu subsections.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generalities</td>
+<td>states, observables, spin, the three wavenumbers, the d'Alembertian, the action, the path integral, the measurement problem, helicity</td>
+</tr>
+<tr>
+<td>Particles of spin 0</td>
+<td>the Klein–Gordon equation, its polar form, its variational and path-integral forms, the coupled case, the first-order root, the propagator</td>
+</tr>
+<tr>
+<td>Particles of spin 1/2</td>
+<td>the Dirac equation, its polar form, the Gordon decomposition, minimal coupling, the antilinear structure, Foldy–Wouthuysen, Zitterbewegung, hydrogen, scattering</td>
+</tr>
+<tr>
+<td>Particles of spin 1 and above</td>
+<td>the Proca equation, the third polarisation, Rarita–Schwinger, the absence of a fourth carrier</td>
+</tr>
+<tr>
+<td>Focus on informational aspects</td>
+<td>the relativistic qubit, frame-dependent entanglement, the multi-qubit boundary, Bell states, monogamy, teleportation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-sentence version.</strong> Every equation of relativistic quantum mechanics of one particle is one product in $\mathbb{B}$, and every quantum postulate is a scalar part of a product in $\mathbb{B}_{\Psi}$.</p>
+<h2 id="1-generalities-states-observables-spin">1. Generalities: States, Observables, Spin</h2>
+<p><strong>The observable and the state.</strong></p>
+<p>$$
+\tilde H_\Psi=h_t\,e_t+i\vec h_\Psi,\qquad h_t\in\mathbb{R},\ \vec h_\Psi\in\mathbb{R}^3,
+$$</p>
+<p>$$
+\tilde{Ϛ}_{\Psi}=\tfrac12\bigl(e_t+i\vec s_{\Psi}\bigr),\qquad |\vec s_\Psi|\le1,\qquad B^{3}=\{\vec s_\Psi:|\vec s_\Psi|\le1\}.
+$$</p>
+<p>The pure states are the boundary $|\vec s_\Psi|=1$; the maximally mixed state is the centre.</p>
+<p><strong>The two pairings, and which is which.</strong></p>
+<p>$$
+\langle\tilde H_{\Psi,1},\tilde H_{\Psi,2}\rangle_{*}=h_{t,1}h_{t,2}+\vec h_{\Psi,1}\!\cdot\!\vec h_{\Psi,2},
+\qquad
+\langle\tilde H_\Psi\rangle_{\natural}=h_t^{2}-|\vec h_\Psi|^{2}.
+$$</p>
+<p>The Hermitian pairing is positive; the quaternionic norm is indefinite. The states live on the cone of the first, the mass shell on the level set of the second.</p>
+<p><strong>The spin and the possible values.</strong> The spin operator is the adjoint action of the vector part, and the eigenvalue equation gives the half-integers and the integers:</p>
+<p>$$
+\tilde S_\Psi^{2}=\hbar^{2}s(s+1)e_t,\qquad \langle\vec S\rangle=\hbar\,s\,\vec u,\qquad \langle\vec S^{2}\rangle=\hbar^{2}s(s+1),
+$$</p>
+<p>$$
+\tilde S_{\Psi}^{2}=\tfrac34\hbar^{2}e_t\quad\text{on the spin-}\tfrac12\text{ carrier},\qquad
+\tilde S_{\Psi,\mathrm{adj}}^{2}=2\hbar^{2}\operatorname{id}_V\quad\text{on the adjoint (spin-1) carrier}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The possible spins are determined and not assumed: the spin-$\tfrac12$ carrier is the idempotent-and-nilpotent module, whose two states are $\tfrac{\hbar}{2}$ and $-\tfrac{\hbar}{2}$; the spin-1 carrier is the adjoint action on $\mathbb{B}_V$, and its three states are $\pm\hbar$ and $0$. No other finite carrier occurs.</p>
+<p>$$
+\tilde S_{\Psi,3}\tilde\Pi_+=\frac{\hbar}{2}\tilde\Pi_+,\qquad \tilde S_{\Psi,3}\vec\Upsilon_{-+}=-\frac{\hbar}{2}\vec\Upsilon_{-+},
+$$</p>
+<p>$$
+\tilde S_{\Psi,\mathrm{adj},3}\varepsilon_\pm=\pm\hbar\,\varepsilon_\pm,\qquad \tilde S_{\Psi,\mathrm{adj},3}\varepsilon_0=0 .
+$$</p>
+<p><strong>The three wavenumbers.</strong> One four-momentum, divided by $\hbar$, gives three numbers:</p>
+<p>$$
+\tilde K_\Phi=\frac{\tilde P_\Phi}{\hbar}=i\,k'_t\,e_t+\vec k_\Phi,\qquad k'_t=\frac{E}{\hbar c},\quad \vec k_\Phi=\frac{\vec p}{\hbar},\quad k_m=\frac{mc}{\hbar},
+$$</p>
+<p>$$
+\tilde K_\Phi\tilde K_\Phi^{\natural}=-k_t'^{2}+k_\Phi^{2}=-k_m^{2}\quad\text{that is}\quad k_t'^{2}=k_\Phi^{2}+k_m^{2}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The three wavenumbers are the three components of one element; the mass shell is the norm of that element. An agent that treats $k_m$ as an independent parameter breaks the identity.</p>
+<p><strong>The d'Alembertian is a product.</strong></p>
+<p>$$
+\boxed{\;\Box_\Phi=\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}=(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi=\Delta_\Phi-\frac{\partial^{2}}{\partial {r'_t}^{2}}\;}
+$$</p>
+<p>$$
+\tilde\nabla_\Phi=\sum_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad
+(\tilde\nabla_\Phi)^{\natural}=\sum_\mu \varepsilon_\mu e_\mu\frac{\partial}{\partial R_\mu},\qquad \varepsilon_t=+1,\ \varepsilon_{x,y,z}=-1 .
+$$</p>
+<p>and it is central, so it commutes with left multiplication: $\Box_\Phi(\tilde Q_1\tilde\Xi)=\tilde Q_1(\Box_\Phi\tilde\Xi)$.</p>
+<p><strong>The action and the stationary principle.</strong> The relativistic action of the corpus is</p>
+<p>$$
+S=-mc\int\sqrt{-d\tilde R_\Phi\,d\tilde R_\Phi^{\natural}},
+$$</p>
+<p>and the field Lagrangian is</p>
+<p>$$
+\mathcal L=+\mathrm{Sc}\bigl[((\tilde\nabla_\Phi)^{\natural}\tilde\Xi^{*})(\tilde\nabla_\Phi\tilde\Xi)\bigr]+k_m^{2}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\bigr].
+$$</p>
+<p><strong>The path integral, and what its weight is.</strong> The weight is a central element, not a complex number:</p>
+<p>$$
+\boxed{\;\exp(i\theta_{\mathrm{act}})=\cos\!\Big(\frac{S}{\hbar}\Big)e_t+\sin\!\Big(\frac{S}{\hbar}\Big)i e_t\in\mathbb{B}_{C}=\operatorname{span}_{\mathbb{R}}\{e_t,ie_t\}\;}
+$$</p>
+<p>$$
+\frac{S}{\hbar}=\int_{r'_{t,i}}^{r'_{t,f}}\mathrm{Sc}\bigl(\tilde K_\Phi\,d\tilde R_\Phi^{\natural}\bigr),\qquad
+\exp(i\theta_{\mathrm{act}})\bigl(\exp(i\theta_{\mathrm{act}})\bigr)^{\dagger}=e_t .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Feynman weight is $*$-unitary but not $\natural$-unitary unless $S/\hbar\in\pi\mathbb{Z}$. The distinction matters: the path integral lives in the centre, where both the phase and its conjugate are available, and that is why the two sectors can be summed over one measure.</p>
+<p><strong>The measurement, in three lines.</strong></p>
+<p>$$
+p_\pm=\frac{2\,\mathrm{Sc}\bigl(\tilde\Pi_{1,2}(\vec u_\Psi)\tilde{Ϛ}_{\Psi}\bigr)}{2\,\mathrm{Sc}\,\tilde{Ϛ}_{\Psi}},\qquad
+\Gamma_{\tilde\Pi_{1,2}}(\tilde{Ϛ}_{\Psi})=\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}\tilde\Pi_{1,2}=p_\pm\tilde\Pi_{1,2},
+$$</p>
+<p>$$
+\boxed{\;\tilde{Ϛ}_{\Psi,d}=p_+\tilde\Pi_1+p_-\tilde\Pi_2=\tfrac12\bigl(e_t+i(\vec u_\Psi\!\cdot\!\vec s_\Psi)\vec u_\Psi\bigr)\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The collapse is the congruence by the idempotent, and the post-measurement state is the mixture of the two outcomes with the Born weights. No separate projection postulate is needed; the projection is a multiplication.</p>
+<p><strong>The decomposition of a measurement apparatus.</strong> Every instrument splits into a positive part and a unitary part:</p>
+<p>$$
+\tilde Q_3=\tilde H_{\Psi,\mathrm{pos}}\tilde Q_p,\qquad \tilde H_{\Psi,\mathrm{pos}}=\sqrt{\tilde Q_3\tilde Q_3^{*}},
+$$</p>
+<p>which is the polar decomposition read as the split between the <em>strength</em> of the measurement and its <em>channel</em>.</p>
+<p><strong>Helicity.</strong> The helicity is the spin projected on the momentum, and it is an element of the informational sector:</p>
+<p>$$
+\lambda=\vec u_p\!\cdot\!\vec S,\qquad \vec u_p=\frac{\vec p}{|\vec p|},\qquad
+\lambda=\frac{\hbar}{2}i\vec u_p\in\mathbb{B}_{\Psi},\qquad \lambda=\frac{i\hbar}{2}\mathrm{ad}_{\vec u_p},
+$$</p>
+<p>$$
+\lambda(-\vec p)=-\lambda(\vec p),\qquad \lambda(\vec p')=\tilde u\,\lambda(\vec p)\,\tilde u^{*}.
+$$</p>
+<p><strong>Source.</strong> <code>articles_physics/quantum-physics-in-biquaternionic-form.md</code>, <code>articles_physics/the-determination-of-the-possible-spins-in-biquaternionic-form.md</code>, <code>articles_physics/the-three-wavenumbers-of-a-particle.md</code>, <code>articles_physics/the-biquaternion-dalembertian-and-its-greens-functions.md</code>, <code>articles_physics/the-path-integral-in-biquaternionic-form.md</code>, <code>articles_physics/the-measurement-problem-in-algebraic-form.md</code>, <code>articles_physics/helicity-in-biquaternionic-form.md</code>.</p>
+<h2 id="2-spin-zero-the-kleingordon-equation">2. Spin Zero: the Klein–Gordon Equation</h2>
+<p><strong>The equation, in one product.</strong></p>
+<p>$$
+\boxed{\;\bigl(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}-k_m^{2}\bigr)\tilde\Xi=0,\qquad \tilde\Xi=\Xi_t e_t+\Xi_x\vec e_x+\Xi_y\vec e_y+\Xi_z\vec e_z\;}
+$$</p>
+<p><strong>The componentwise reduction, and it is immediate because the d'Alembertian is central:</strong></p>
+<p>$$
+\bigl(\Box_\Phi-k_m^{2}\bigr)\Xi_\mu=0,\qquad \mu\in\{t,x,y,z\}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> Four real scalar fields, one biquaternion. The vector part is not a physical vector: the four components are independent solutions and the algebra's product does not mix them. The corpus therefore calls the spin-zero field <em>the centre field</em> and states that it lies outside the state module.</p>
+<p><strong>The first-order root.</strong> The operator factors, and the two factors are the chiral pair of the spin-$\tfrac12$ case:</p>
+<p>$$
+\tilde\nabla_\Phi\tilde Q_1=k_m\tilde Q_2,\qquad \tilde\nabla_\Phi\tilde Q_2=k_m\tilde Q_1,
+$$</p>
+<p>$$
+\bigl((\tilde\nabla_\Phi)^{\natural}+k_m\bigr)\bigl(\tilde\nabla_\Phi-k_m\bigr)
+=\Box_\Phi-k_m(\tilde\nabla_\Phi)^{\natural}+k_m\tilde\nabla_\Phi-k_m^{2}.
+$$</p>
+<p><strong>The polar variables, and the linearisation.</strong> Writing $\tilde\Xi=\tilde\Xi_0\exp(-i\theta_{\mathrm{pwp}})$ and separating real and imaginary parts gives the Madelung pair: the Hamilton–Jacobi equation with the quantum potential, and the continuity equation. This is the bridge to the hydrodynamics category.</p>
+<p><strong>The coupled case.</strong> Two fields of masses $m_1$, $m_2$ couple through a term in the Lagrangian; the diagonalisation of the mass matrix is again a congruence, and the two eigenmasses are the two eigenvalues of the $2\times2$ matrix of couplings. No new algebraic object appears.</p>
+<p><strong>The propagator.</strong> The Green's function is the inverse of the boxed operator in the transform variable, and its pole structure is the two-sheeted mass shell. The contour is the statement of which sector is propagated.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-klein-gordon-equation-in-biquaternionic-form.md</code>, <code>articles_physics/the-klein-gordon-equation-in-biquaternionic-polar-variables.md</code>, <code>articles_physics/the-first-order-root-of-the-biquaternion-klein-gordon-operator.md</code>, <code>articles_physics/spin-zero-and-the-centre-why-the-scalar-field-lies-outside-the-state-module.md</code>, <code>articles_physics/the-klein-gordon-propagator-and-its-greens-functions-in-biquaternionic-form.md</code>.</p>
+<h2 id="3-spin-one-half-the-dirac-equation">3. Spin One Half: the Dirac Equation</h2>
+<p><strong>The equation, and it is a pair.</strong></p>
+<p>$$
+\boxed{\;\tilde\nabla_\Phi\tilde\Xi_{R}=k_m\tilde\Xi_{L},\qquad (\tilde\nabla_\Phi)^{\natural}\tilde\Xi_{L}=k_m\tilde\Xi_{R}\;}
+$$</p>
+<p>$$
+k_m=\frac{mc}{\hbar}.
+$$</p>
+<p><strong>The non-trivial claims, four of them.</strong></p>
+<p>The two lines are the two chiral halves, and the mass is the only coupling between them. Setting $k_m=0$ decouples and gives the two Weyl equations:</p>
+<p>$$
+\tilde\nabla_\Phi\tilde\Xi_R=0,\qquad (\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=0 .
+$$</p>
+<p>The chirality is a <em>right multiplication</em>, not a left one:</p>
+<p>$$
+\tilde X\vec e_z=-i\tilde X\ \Longrightarrow\ \tilde X\text{ carries the value }L,\qquad
+\tilde X\vec e_z=+i\tilde X\ \Longrightarrow\ \tilde X\text{ carries the value }R .
+$$</p>
+<p>This is obstruction O22 made constructive: left multiplication cannot see chirality, so the corpus carries it on the right.</p>
+<p>The square of the Dirac operator is the Klein–Gordon operator, one line of algebra:</p>
+<p>$$
+(\tilde\nabla_\Phi)^{\natural}\tilde\nabla_\Phi\tilde\Xi_R=\Box_\Phi\tilde\Xi_R=k_m(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m^{2}\tilde\Xi_R,
+$$</p>
+<p>$$
+\boxed{\;\bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi_{R}=0,\qquad \bigl(\Box_\Phi-k_m^{2}\bigr)\tilde\Xi_{L}=0\;}
+$$</p>
+<p>The plane wave is a null element times an idempotent:</p>
+<p>$$
+\tilde K_\Phi=ik'_t\,e_t+k'_t\vec e_z=2ik'_t\tilde\Pi_-,\qquad \tilde\Pi_-=\tfrac12(e_t-i\vec e_z).
+$$</p>
+<p><strong>The current and the Gordon decomposition.</strong> The density is a Hermitian form, and the current splits into a convection part and a magnetisation part:</p>
+<p>$$
+j_0=\mathrm{Sc}\bigl(\tilde\Xi^{*}\tilde\Xi\bigr)=|\tilde\Xi_t|^{2}+|\tilde\Xi_x|^{2}+|\tilde\Xi_y|^{2}+|\tilde\Xi_z|^{2},
+$$</p>
+<p>$$
+\boxed{\;\bar{\tilde\Xi}\,i\,e_\mu\,\tilde\Xi\,\vec e_{\nu(\mu)}=\frac{i}{2k_m}\bigl(\bar{\tilde\Xi}\,\partial_\mu\tilde\Xi-\overline{\partial_\mu\tilde\Xi}\,\tilde\Xi\bigr)+\frac{1}{k_m}\partial_\nu\bigl(\bar{\tilde\Xi}\,\sigma_{\mu\nu}\,\tilde\Xi\bigr)\;}
+$$</p>
+<p>with $\nu(t)=x$ and $\nu(\eta)=y$. The two terms are the convection current and the spin current; the second one is what makes $g=2$ and not $g=1$.</p>
+<p><strong>The antilinear structure and the two kinds of mass.</strong></p>
+<p>$$
+\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\bigl(\bar{\tilde Q}\bigr)^{\natural},\qquad \tilde Q^{\flat}=-\tilde Q^{*},
+$$</p>
+<p>$$
+\boxed{\;\text{Dirac field}: 8\text{ real components},\qquad \text{Majorana field}: 4\text{ real components}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Majorana condition is a reality condition with respect to a conjugation that is antilinear in the coefficients; the Dirac field has twice the components because the mass term pairs a field with its conjugate field, not with itself. The mass term is written</p>
+<p>$$
+\mathcal L_{\text{Dirac}}=-m_D\,\mathrm{Sc}\bigl(\tilde\Xi^{*}i\tilde\Xi\vec e_x\bigr).
+$$</p>
+<p><strong>Minimal coupling.</strong> The gradient is replaced by the gauge-covariant gradient, and the coupling is a <strong>left multiplication</strong> by the potential:</p>
+<p>$$
+\boxed{\;\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{i\,ϙ}{\hbar}\tilde A_\Phi,\qquad
+(\tilde\nabla_{\mathrm{gco},\Phi})^{\natural}=(\tilde\nabla_\Phi)^{\natural}+\frac{i\,ϙ}{\hbar}\tilde A_\Phi^{\natural}\;}
+$$</p>
+<p>The conjugate of the operator is the quaternion conjugate, not the operator of the opposite charge. That asymmetry is the reason the electric and magnetic entries cannot be read as two independent couplings.</p>
+<p><strong>Foldy–Wouthuysen.</strong> Split the Hamiltonian into an even part and an odd part with respect to the mass grading:</p>
+<p>$$
+H=\beta\bigl(mc^{2}+\beta O\bigr),\qquad H^{2}=m^{2}c^{4}+O^{2},\qquad O^{2}=c^{2}\vec p^{\,2}\ \text{free}.
+$$</p>
+<p>The FW transformation is the unitary that removes $O$ order by order; in the algebra it is a congruence by a rotation rotor. The eigenvalues are $\pm\sqrt{m^{2}c^{4}+c^{2}\vec p^{2}}$, the mass shell again.</p>
+<p><strong>Zitterbewegung.</strong> The velocity operator is $\pm c$ on the two branches, so the position has a drift and a trembling term:</p>
+<p>$$
+\boxed{\;\vec r(r'_t)=\vec r(0)+\frac{c^{2}\vec p}{H}r'_t-\frac{i\hbar c}{2H}\bigl(e^{2i\theta_{\mathrm{evo}}}-1\bigr)\vec A\;}
+$$</p>
+<p>with $\theta_{\mathrm{evo}}=\mathrm{Sc}(\tilde H_\Psi)\,r'_t/(\hbar c)$ and $\vec A=\vec\alpha(0)-c\vec p/H$. Because $\{\alpha_\eta,H\}=2cp_\eta\,\mathrm{id}$, the velocity splits exactly into a drift and a trembling term, and the trembling frequency is $2E/\hbar$. The non-trivial point is that the frequency is twice the energy over $\hbar$: the interference is between the two branches.</p>
+<p><strong>The hydrogen atom.</strong> The Dirac equation with the Coulomb potential $V(r)=-\kappa/r$, $\kappa=\mathfrak{Z}e^{2}/(4\pi\epsilon_0)$, gives the exact fine structure. The spin–orbit coupling is written with the spin generator</p>
+<p>$$
+\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta,
+$$</p>
+<p>and the $\vec\pi$-expansion carries the relativistic kinetic correction, the Darwin term and the spin–orbit term in one bracket. The energy levels are the Dirac levels; the degeneracy in $\ell$ is lifted by the spin–orbit term.</p>
+<p><strong>The Klein paradox, the oscillator, pair creation.</strong> The Klein paradox is the statement that a step potential higher than $2mc^{2}$ produces a transmitted current with the sign of the antiparticle; the algebraic reason is that the transmitted wave is a superposition with the <em>other</em> idempotent $\tilde\Pi_+$. The Dirac oscillator is the minimal coupling with a linear potential; its spectrum is equally spaced in the non-relativistic limit. Pair creation in a bounded region is the same idempotent flip in a time-dependent potential.</p>
+<p><strong>Scattering.</strong> Compton, Møller and Bhabha are computed with the polarisation algebra of the photon, which is a bivector of $\mathbb{B}$; the trace theorems of the corpus replace the gamma-matrix traces.</p>
+<p><strong>The alternative formulations.</strong> Hestenes's spacetime algebra, Daviau's space Clifford form and Parra's four options are three rewritings of the same pair of equations. The s-vector representation and the Ding triality construction give the same spinor in three other letters. Triality is the statement that the three eight-dimensional representations of $\mathrm{Spin}(8)$ rotate into one another; in $\mathbb{B}$ only the vector and the two spinor halves occur, so the third leg is absent.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-dirac-equation-in-biquaternionic-form.md</code>, <code>articles_physics/klein-gordon-from-the-dirac-square-in-biquaternionic-form.md</code>, <code>articles_physics/the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form.md</code>, <code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code>, <code>articles_physics/the-minimal-coupling-of-the-biquaternion-dirac-field-to-electromagnetism.md</code>, <code>articles_physics/the-foldy-wouthuysen-transformation-in-biquaternionic-form.md</code>, <code>articles_physics/zitterbewegung-in-biquaternionic-form.md</code>, <code>articles_physics/the-hydrogen-atom-in-biquaternionic-form-the-relativistic-case.md</code>.</p>
+<h2 id="4-spin-one-and-above-the-proca-equation">4. Spin One and Above: the Proca Equation</h2>
+<p><strong>The massive spin-1 equation.</strong></p>
+<p>$$
+\boxed{\;\tilde\nabla_\Phi\tilde F=k_m^{2}\tilde A_\Phi,\qquad \tilde F=(\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi-\mathrm{Sc}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)\;}
+$$</p>
+<p>with the Lagrangian</p>
+<p>$$
+\mathcal L=-\tfrac14\sum_{\mu,\nu}F_{\mu\nu}F_{\mu\nu}+\tfrac12k_m^{2}\sum_\mu A_\mu A_\mu,\qquad F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu .
+$$</p>
+<p><strong>The subsidiary condition, and why it is forced.</strong> Taking the divergence kills the antisymmetric part and leaves</p>
+<p>$$
+k_m^{2}\langle\tilde\nabla_\Phi,\tilde A_\Phi\rangle_{\natural}=0\quad\Longrightarrow\quad \partial_\mu A^{\mu}=0 .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Lorentz condition is not a gauge choice for a massive field: it follows from the equation. The mass term breaks the gauge invariance, so the four components reduce to three, and the third polarisation is the longitudinal one. Its self-dual split is the subject of <code>the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength</code>.</p>
+<p><strong>Spin $\tfrac32$ and higher.</strong> Rarita–Schwinger is the Dirac equation on a vector-spinor; in $\mathbb{B}$ it is the pair of chiral equations with one free vector index. Higher spin is built by tensor products, and the corpus proves that the three carriers (centre, module, adjoint) exhaust the finite list: there is no fourth carrier inside the algebra.</p>
+<p><strong>Degrees of freedom, read from the symbol.</strong> The symbol of the wave operator has rank three on the cone and four off it for the Proca field, and the kernel is the gauge orbit for the massless field. This is the algebraic version of the counting argument.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.md</code>, <code>articles_physics/the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.md</code>, <code>articles_physics/the-rarita-schwinger-equation-spin-3-2-in-biquaternionic-form.md</code>, <code>articles_physics/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.md</code>, <code>articles_physics/wave-particle-duality-and-the-count-of-degrees-of-freedom-the-symbols-rank-on-and-off-the-cone.md</code>.</p>
+<h2 id="5-the-informational-aspects">5. The Informational Aspects</h2>
+<p><strong>The superselection structure.</strong> The material-informational split is superselection: no physical operation maps a material element to an informational one, because the two are the fixed spaces of a conjugation and every operation is a congruence. A relative phase between the sectors is unobservable.</p>
+<p><strong>The relativistic qubit.</strong> The qubit is the spinor module, the state is the idempotent, and the boost acts on the <em>representative</em> by left multiplication and on the <em>state</em> by congruence:</p>
+<p>$$
+|u\rangle\longmapsto \tilde U_{\mathrm{lor}}|u\rangle:=\mathsf M_2(\tilde U_{\mathrm{lor}})|u\rangle,\qquad
+\tilde Q\longmapsto\tilde U_{\mathrm{lor}}\tilde Q\tilde U_{\mathrm{lor}}{}^{*}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The two actions are different. The spinor action is unitary; the state action is not, because $\tilde U_{\mathrm{lor}}{}^{*}\tilde U_{\mathrm{lor}}=e_t$ holds for the rotation part only. This is the same statement as "rotations are channels, boosts are not", now at the level of one qubit.</p>
+<p><strong>Frame-dependent entanglement.</strong> Entanglement is a property of a state in a frame. A boost changes the spin entropy, and the invariant part of the change is the Wigner rotation. The corpus states the invariant and the read value separately; the read value is not Lorentz invariant.</p>
+<p><strong>The multi-qubit boundary.</strong> One biquaternion carries exactly one qubit. Two qubits need</p>
+<p>$$
+\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}\cong M_4(\mathbb{C}),
+$$</p>
+<p>and this is obstruction O13: the algebra has no internal tensor factorisation. The two routes are the <em>module route</em> (tensor the spinor modules) and the <em>algebra route</em> (tensor the algebras); they agree on the module and differ on the operations.</p>
+<p><strong>The corner collapse.</strong> In $\mathbb{B}\otimes\mathbb{B}$ the idempotents do not factorise freely: the four corners collapse onto one central bit, and the split is fixed by a sign condition rather than by a free choice. The Bell basis is the idempotent basis:</p>
+<p>$$
+\boxed{\;\tilde\Pi_\epsilon=\tfrac14\bigl(e_t\otimes e_t+\epsilon_1\vec e_x\otimes\vec e_x+\epsilon_2\vec e_y\otimes\vec e_y+\epsilon_3\vec e_z\otimes\vec e_z\bigr)\;}
+$$</p>
+<p>$$
+\tilde\Pi_{\mathrm{singlet}}=\tfrac14\bigl(e_t\otimes e_t+\vec e_x\otimes\vec e_x+\vec e_y\otimes\vec e_y+\vec e_z\otimes\vec e_z\bigr),
+\qquad E_a^{2}=E_a,\quad E_aE_b=\delta_{ab}E_a,\quad \sum_a E_a=e_t\otimes e_t .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Bell states are not a basis chosen for convenience; they are the complete set of primitive idempotents of the tensor algebra. The concurrence is the determinant condition</p>
+<p>$$
+c_1c_4-c_2c_3=0\quad\text{for a product state},
+$$</p>
+<p>and the monogamy inequality follows from the same determinant.</p>
+<p><strong>Teleportation, GHZ and W.</strong> The three-qubit classification separates the GHZ class (the central bit is genuinely tripartite) from the W class (it is carried by a pair). Teleportation is the transport of an idempotent through a shared maximally entangled idempotent pair; the correction is a rotation rotor.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-material-informational-split-as-a-superselection-structure-in-biquaternionic-form.md</code>, <code>articles_physics/the-relativistic-qubit-in-biquaternionic-form.md</code>, <code>articles_physics/frame-dependent-entanglement-and-relativistic-quantum-information-in-biquaternionic-form.md</code>, <code>articles_physics/the-multi-qubit-boundary-what-b-otimes-b-would-require.md</code>, <code>articles_physics/the-bell-basis-as-the-idempotent-basis-of-b-otimes-b.md</code>, <code>articles_physics/entanglement-monogamy-and-the-ckw-inequality.md</code>, <code>articles_physics/quantum-teleportation-in-biquaternionic-form.md</code>.</p>
+<h2 id="6-the-lagrangian-articles-of-this-category">6. The Lagrangian Articles of This Category</h2>
+<p><strong>Why this block.</strong> Each equation of this category now carries a family of Lagrangian articles, and each of those answers a question the equation article cannot: what the action is, what its variation gives, which coefficient is structural, and what the constraint does. The lines below give one per article, so that a reader of this summary knows what the companion proves without leaving the summary.</p>
+<p><strong>Spin zero.</strong></p>
+<ul>
+<li><em>The Lagrangian and the Klein–Gordon Equation</em> — the action in element form splits into four scalar actions, and the non-central coefficient is the only coupling between them.</li>
+<li><em>The Lagrangian and the Klein–Gordon Equation in Polar Variables</em> — the same action in the word's coordinates; the frame density weights every square and the Jacobian is invertible, so no constraint and no multiplier are needed.</li>
+<li><em>The Lagrangian and the Klein–Gordon Equation in Momentum Space</em> — the symbol at one mode; the reality of the action is the anti-Hermiticity of its root, and a real spectrum is not enough.</li>
+<li><em>The Lagrangian and the Klein–Gordon Equation in the Non-Quantum Limit</em> — the phase's rate is deleted inside the action and the transport equation survives with a displayed error term.</li>
+<li><em>The Lagrangian and the Spin-Zero Fluid</em> — the fluid's two equations are the transport equation and the quantum Hamilton–Jacobi equation; the gradient energy is indefinite, so the energy is not positive term by term.</li>
+</ul>
+<p><strong>Spin one half.</strong></p>
+<ul>
+<li><em>The Lagrangian and the Dirac Equation</em> — the two-sided form has no action of its own; the action is the chiral pair's, and the conjugate momentum is a bilinear.</li>
+<li><em>The Lagrangian and the Dirac Equation in Polar Variables</em> — the mass term fixes a direction in the word, and the eight parameters split into canonical and non-canonical.</li>
+<li><em>The Lagrangian and the Dirac Equation in Momentum Space</em> — zero and pole are one object: the symbol's determinant vanishes exactly on the dispersion relation.</li>
+<li><em>The Lagrangian and the Dirac Equation in the Non-Quantum Limit</em> — the polar action collapses to a one-form plus a potential, and the cost of the collapse is stated.</li>
+<li><em>The Lagrangian and the Spin-Half Fluid</em> — the mass term and the declared direction; norms survive the chart and the vorticity stays the frame's.</li>
+</ul>
+<p><strong>Spin one.</strong></p>
+<ul>
+<li><em>The Lagrangian and the Proca Equation</em> — the constraint removes one degree of freedom, and the count of three follows from the action and not from a convention.</li>
+<li><em>The Lagrangian and the Proca Equation in Polar Variables</em> — the mass term, the branch and the constraint are one statement in the chart.</li>
+<li><em>The Lagrangian and the Proca Equation in Momentum Space</em> — the longitudinal coefficient is the mass alone.</li>
+<li><em>The Lagrangian and the Proca Equation in the Non-Quantum Limit</em> — what survives is stated, and the mass term is the whole longitudinal action.</li>
+<li><em>The Lagrangian and the Spin-One Fluid</em> — the mass term does two things: it fixes the frame and it removes the longitudinal mode.</li>
+</ul>
+<p><strong>Spin three halves, and the ceiling.</strong></p>
+<ul>
+<li><em>The Lagrangian and the Rarita–Schwinger Equation</em> — the equation is in the corpus and the action is not; one contraction is missing, and its absence is the article's content.</li>
+</ul>
+<p><strong>What the new slots change in this summary.</strong> Slot 7 of each article carries a claim the equation article does not make, and three of those claims revise statements made above in this summary. The Klein–Gordon action's four-way split is a statement about the algebra's four elements; the Proca count is a consequence of the constraint and not a choice of gauge; and the Dirac momentum-space pole is the same object as the symbol's zero and not a second fact. Slot 6 adds the constraint statements, and slot 9 adds the sign convention, which the summaries treat as a convention and never as a result.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category, compressed.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Equation</th>
+<th>Boxed form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>spin 0</td>
+<td>Klein–Gordon</td>
+<td>$\bigl(\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}-k_m^{2}\bigr)\tilde\Xi=0$</td>
+</tr>
+<tr>
+<td>spin $\tfrac12$</td>
+<td>Dirac</td>
+<td>$\tilde\nabla_\Phi\tilde\Xi_R=k_m\tilde\Xi_L$, $(\tilde\nabla_\Phi)^{\natural}\tilde\Xi_L=k_m\tilde\Xi_R$</td>
+</tr>
+<tr>
+<td>spin 1</td>
+<td>Proca</td>
+<td>$\tilde\nabla_\Phi\tilde F=k_m^{2}\tilde A_\Phi$, $\partial_\mu A^{\mu}=0$</td>
+</tr>
+<tr>
+<td>spin $\tfrac32$</td>
+<td>Rarita–Schwinger</td>
+<td>the Dirac pair with one vector index</td>
+</tr>
+<tr>
+<td>qubit</td>
+<td>state</td>
+<td>$\tilde{Ϛ}_\Psi=\tfrac12(e_t+i\vec s_\Psi)$</td>
+</tr>
+<tr>
+<td>two qubits</td>
+<td>module</td>
+<td>$\mathbb{B}\otimes\mathbb{B}\cong M_4(\mathbb{C})$, Bell idempotents</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Five results an agent should not lose.</strong></p>
+<p>The d'Alembertian is a product and it is central. The mass is the distance between the two chiral halves of the Dirac equation, and it is the only coupling between them. Chirality is a right multiplication because left multiplication is blind to it. The path-integral weight is a central element, $*$-unitary and not $\natural$-unitary. The Bell states are the primitive idempotents of the tensor algebra, and the multi-qubit obstruction is the absence of a tensor factorisation inside $\mathbb{B}$.</p>
+<p><strong>Three things the category refuses.</strong> It does not quantise: the fields are one-particle fields, and the second quantisation is the next category. It does not derive $\hbar$: $\hbar$ enters through $k_m=mc/\hbar$. It does not solve the measurement problem: it rewrites the collapse as a congruence and leaves the interpretation open.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi$, $\tilde\Xi_L$, $\tilde\Xi_R$</td>
+<td>field, left-chiral half, right-chiral half</td>
+</tr>
+<tr>
+<td>$\tilde\nabla_\Phi$</td>
+<td>the gradient, $\sum_\mu e_\mu\partial/\partial R_\mu$</td>
+</tr>
+<tr>
+<td>$\Box_\Phi$</td>
+<td>$\tilde\nabla_\Phi(\tilde\nabla_\Phi)^{\natural}$</td>
+</tr>
+<tr>
+<td>$k_m$, $k'_t$, $\vec k_\Phi$</td>
+<td>mass, temporal and spatial wavenumbers</td>
+</tr>
+<tr>
+<td>$\tilde A_\Phi$, $\tilde F$</td>
+<td>potential (material), field strength</td>
+</tr>
+<tr>
+<td>$\tilde S_\Psi$</td>
+<td>spin operator, $\tfrac{\hbar}{2}i\vec e_\eta$</td>
+</tr>
+<tr>
+<td>$\lambda$</td>
+<td>helicity, $\tfrac{\hbar}{2}i\vec u_p$</td>
+</tr>
+<tr>
+<td>$\tilde\Pi_\epsilon$</td>
+<td>Bell idempotent in $\mathbb{B}\otimes\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\tilde H_{\Psi,\mathrm{pos}}$, $\tilde Q_p$</td>
+<td>positive part and unitary part of an instrument</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>For the core: <code>quantum-physics-in-biquaternionic-form</code>, <code>the-klein-gordon-equation-in-biquaternionic-form</code>, <code>the-dirac-equation-in-biquaternionic-form</code>, <code>the-proca-equation-massive-spin-1-in-biquaternionic-form</code>. For the traps: <code>antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form</code>, <code>the-gordon-decomposition-of-the-dirac-current-in-biquaternionic-form</code>, <code>the-multi-qubit-boundary-what-b-otimes-b-would-require</code>. For the informational block: <code>the-relativistic-qubit-in-biquaternionic-form</code> and <code>the-bell-basis-as-the-idempotent-basis-of-b-otimes-b</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

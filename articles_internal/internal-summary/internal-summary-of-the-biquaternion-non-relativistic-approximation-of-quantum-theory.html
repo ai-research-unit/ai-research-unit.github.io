@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internal Summary of the Biquaternion Non Relativistic Approximation of Quantum Theory — Biquaternion Universe</title>
+  <meta name="description" content="What this file is. A compressed map of the category Biquaternion Non Relativistic Approximation of Quantum Theory, seventy-nine articles. It gives the…">
+  <link rel="stylesheet" href="../../assets/css/base.css">
+  <link rel="stylesheet" href="../../assets/css/layout.css">
+  <link rel="stylesheet" href="../../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../../index.html">Index</a></li>
+      <li><a href="../../maths.html">Maths</a></li>
+      <li><a href="../../physics.html">Physics</a></li>
+      <li><a href="../../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="internal-summary-of-the-biquaternion-non-relativistic-approximation-of-quantum-theory"><strong>Internal Summary of the Biquaternion Non Relativistic Approximation of Quantum Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>What this file is.</strong> A compressed map of the category <em>Biquaternion Non Relativistic Approximation of Quantum Theory</em>, seventy-nine articles. It gives the objects, the boxed equations, the non-trivial claims. No proofs: an agent re-derives them. Every formula is copied from the source article named in the section.</p>
+<p><strong>What the category does.</strong> It takes the relativistic theory of the previous category and drops the $1/c$ terms. Two things survive the limit and one thing does not.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Survives</th>
+<th>Does not survive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the algebra, the state, the Born weight, the spin generators</td>
+<td>the chirality: the two halves merge into one spinor</td>
+</tr>
+<tr>
+<td>the congruence action, the idempotents, the channels</td>
+<td>the mass-shell condition as a norm: it becomes the Schrödinger equation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The five menu subsections.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Subsection</th>
+<th>Settles</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generalities</td>
+<td>the double slit, the quantum–classical divide, the commutation relation as an independent axiom</td>
+</tr>
+<tr>
+<td>Particles of spin 0</td>
+<td>the Schrödinger equation, its polar form, the non-quantum limit, the standard solved problems</td>
+</tr>
+<tr>
+<td>Particles of spin 1/2</td>
+<td>spin, Stern–Gerlach, resonance, Zeeman and Stark, geometric phases, the Majorana representation, spin squeezing</td>
+</tr>
+<tr>
+<td>Particles of spin 1 and above</td>
+<td>addition of angular momenta, two spin-$\tfrac12$, Wigner–Eckart, the generalised Bloch ball, the qutrit obstruction</td>
+</tr>
+<tr>
+<td>Focus on informational aspects</td>
+<td>entropy, POVMs, contextuality, Bell and CHSH, discord, no-cloning, decoherence, channels, gates, error correction</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The one-sentence version.</strong> The Schrödinger equation is the statement that the time derivative of the field is a material-sector element acting on it, and every quantum-information fact of one qubit is a statement about the ball.</p>
+<h2 id="1-generalities">1. Generalities</h2>
+<p><strong>The double slit</strong> is the interference of two idempotents: the two paths contribute two elements, and the intensity is the Hermitian pairing of their sum. The pattern is the cross term. The article states that the algebraic content is the same as the Hilbert-space content, and that no path information is available when the two contributions remain coherent.</p>
+<p><strong>The quantum–classical divide</strong> is the boundary of the ball. The pure states are $|\vec s_\Psi|=1$; the classical states are the centre $\vec s_\Psi=0$. Nothing in between is classical, and the corpus refuses the reading of $\hbar\to0$ as the definition of classicality: the limit that produces classical mechanics is the one of the next section, and it is a limit on the <em>phase gradient</em>, not on $\hbar$.</p>
+<p><strong>The commutation relation is an axiom.</strong> The corpus does not derive</p>
+<p>$$
+[r_j,p_\eta]=i\hbar\,\delta_{j\eta}
+$$</p>
+<p>from the algebra. It states it as an independent axiom, and it records why: the algebra supplies the generators and the products, but the identification of the position with a multiplication operator and of the momentum with a derivative is a further step. The imaginary unit in $i\hbar$ is the central one, and it is what makes the commutator anti-Hermitian and the group unitary.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-double-slit-experiment-in-biquaternionic-form.md</code>, <code>articles_physics/the-quantum-classical-divide-in-the-biquaternion-framework.md</code>, <code>articles_physics/the-biquaternion-framework-and-the-canonical-commutation-relation-an-independent-axiom.md</code>.</p>
+<h2 id="2-spin-zero-the-schrodinger-equation">2. Spin Zero: the Schrödinger Equation</h2>
+<p><strong>The equation, and the direction of the generator.</strong></p>
+<p>$$
+i\hbar c\,\frac{\partial}{\partial r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi,\qquad \tilde H_\Psi=h_t\,e_t+i\vec h_\Psi\in\mathbb{B}_{\Psi},\qquad \tilde\Xi\in\mathbb{B}.
+$$</p>
+<p>$$
+\frac{\partial}{\partial r'_t}\tilde\Xi=\frac{1}{\hbar c}\bigl(-i\tilde H_\Psi\bigr)\tilde\Xi,\qquad -i\tilde H_\Psi\in\mathbb{B}_{\Phi}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Hamiltonian is informational and the generator of time translation is material: $i\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi}$. The factor $i$ moves the element between the sectors, and this is why the time evolution is a one-parameter family of congruences and not a one-parameter family of multiplications.</p>
+<p>The multiplication by $i$ is $\mathbb{C}$-linear and swaps the sectors:</p>
+<p>$$
+i\,\mathbb{B}_{\Psi}=\mathbb{B}_{\Phi},\qquad i\,\mathbb{B}_{\Phi}=\mathbb{B}_{\Psi}.
+$$</p>
+<p><strong>The polar form, and the existence condition.</strong></p>
+<p>$$
+\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\Psi,\mathrm b}\,\tilde u_{\mathrm r},\qquad
+\tilde U_{\Psi,\mathrm b}=\exp\Bigl(i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr),
+$$</p>
+<p>$$
+\boxed{\;\text{the polar word of }\tilde\Xi\text{ exists}\iff\tilde\Xi\text{ is invertible}\iff N(\tilde\Xi)\neq0\iff\tilde\Xi\text{ is }N\text{-regular}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The polar decomposition of a field is the polar decomposition of an element of a division algebra. It fails exactly on the zero-divisor cone. Every Madelung rewriting in the corpus inherits this condition, and the articles that use the polar form declare it.</p>
+<p><strong>The two densities.</strong></p>
+<p>$$
+\langle\tilde\Xi\rangle_{\natural}=\varrho^{2}e^{2i\theta_{\mathrm{pha}}},\qquad
+\rho_{\mathrm{num}}=2\,\mathrm{Sc}\bigl(\tilde\Xi^{\dagger}\tilde\Xi\bigr)=2\varrho^{2}\cosh\theta_{\mathrm{rpd}} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The counting density and the algebraic density are different functions of the same field: one is $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$, the other is $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. An agent that normalises with the norm produces a non-conserved probability.</p>
+<p><strong>The non-quantum limit.</strong> The momentum acts as a phase gradient plus a quantum term:</p>
+<p>$$
+\tilde p\,\tilde\Xi=\Bigl[\vec\nabla_\Phi S-i\hbar\,\vec\nabla_\Phi\ln\varrho\Bigr]\tilde\Xi,
+$$</p>
+<p>and the limit is the pair of conditions</p>
+<p>$$
+\frac{|\hbar\vec\nabla_\Phi\ln\varrho|}{|\vec\nabla_\Phi S|}\sim\epsilon,\qquad
+\frac{1}{k_\Phi^{2}}\Bigl|\frac{\Delta_\Phi\varrho}{\varrho}\Bigr|\sim\epsilon,
+$$</p>
+<p>which give the Hamilton–Jacobi equation and the continuity equation:</p>
+<p>$$
+\boxed{\;\frac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V\;},\qquad
+\frac{\partial\varrho^{2}}{\partial t'}+\vec\nabla_\Phi\!\cdot\!\Bigl(\varrho^{2}\frac{\vec\nabla_\Phi S}{m}\Bigr)=0,
+$$</p>
+<p>$$
+\frac{d\vec r}{dt'}=\frac{\vec p}{m},\qquad \frac{d\vec p}{dt'}=-\vec\nabla_\Phi V,\qquad
+\varrho(x)=\frac{C}{\sqrt{|p(x)|}} .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The classical limit is a limit on the <em>gradient of the phase</em>, not on $\hbar$. The amplitude equation survives as the continuity equation, with the correct $1/\sqrt{p}$ focusing factor. The corpus keeps the quantum potential in the exact equation and drops it only under these two inequalities.</p>
+<p><strong>The kinetic momentum, and the bracket that does not close.</strong></p>
+<p>$$
+\pi_\eta=p_\eta-ϙA_\eta,\qquad
+[\pi_j,\pi_\eta]=i\hbar\,ϙ\,\varepsilon_{j\eta l}B_l .
+$$</p>
+<p>$$
+\vec L_{\mathrm{kin}}=\vec L_{\mathrm{orb}}-ϙ\,\vec r\times\vec A,\qquad
+\tilde L_{\mathrm{kin},z}=\tilde L_{\mathrm{orb},z}-\frac{ϙB}{2}\bigl(r_x^{2}+r_y^{2}\bigr)e_t .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The kinetic momenta do not commute, so the bracket of the kinetic momenta is not the canonical bracket, and the kinetic angular momentum is not the generator of rotations. The defect is proportional to $B$ and it is the origin of the Landau degeneracy.</p>
+<p><strong>The standard problems.</strong> Free packets spread with the width $\sigma(r'_t)$; the harmonic oscillator has the equally spaced spectrum and the coherent states are the orbits of the group; one-dimensional scattering gives the step, the barrier and the well; the unstable state is a pole in the lower half plane with a complex energy $E_0-i\Gamma/2$; the Coulomb problem is solved by the Duru–Kleinert transformation and gives the hydrogen spectrum; Rutherford scattering follows from the Coulomb propagator; the Landau levels follow from the non-closing bracket.</p>
+<p><strong>The zero divisors as a physical locus.</strong> The corpus devotes an article to the set $N(\tilde\Xi)=0$: it is where the polar form fails, where the density $\varrho$ is not defined, and where the algebraic description of a physical field degenerates. It is the same cone that the material sector calls the light cone.</p>
+<p><strong>Source.</strong> <code>articles_physics/the-schrodinger-equation-in-biquaternionic-form.md</code>, <code>articles_physics/the-schrodinger-equation-in-biquaternionic-polar-variables.md</code>, <code>articles_physics/the-schrodinger-equation-in-the-non-quantum-limit.md</code>, <code>articles_physics/the-kinetic-momentum-a-bracket-that-does-not-close.md</code>, <code>articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.md</code>.</p>
+<h2 id="3-spin-one-half">3. Spin One Half</h2>
+<p><strong>The one-qubit formalism.</strong> The state is the idempotent, the observable is Hermitian, the weight is the pairing:</p>
+<p>$$
+\langle\tilde H_\Psi\rangle_{\tilde\Pi}=\frac{\langle\tilde\Pi,\tilde H_\Psi\rangle_{*}}{\langle\tilde\Pi,e_t\rangle_{*}}=2\,\mathrm{Sc}\bigl(\tilde\Pi\tilde H_\Psi^{*}\bigr).
+$$</p>
+<p><strong>Stern–Gerlach.</strong> The beam splitter is the pair of idempotents along the field axis; the two beams have intensities $p_\pm$ and the post-measurement states are the two idempotents. Nothing else is needed.</p>
+<p><strong>Precession and resonance.</strong> The evolution is the congruence by $\exp(-i\tilde H_\Psi t'/\hbar)$:</p>
+<p>$$
+\tilde Q(t')=\exp\Bigl(-i\frac{\tilde H_\Psi t'}{\hbar}\Bigr)
+=\exp\Bigl(-i\frac{h_t t'}{\hbar}\Bigr)\bigl(\cos\theta\,e_t+\sin\theta\,\vec u_\Psi\bigr),\qquad
+\theta=\frac{|\vec h_\Psi|\,t'}{\hbar}.
+$$</p>
+<p>Rabi oscillations are the same formula with a time-dependent $\vec h_\Psi$; the resonance condition is the equality of the Larmor frequency and the drive frequency.</p>
+<p><strong>Zeeman and Stark.</strong> The Zeeman term is a linear shift in $\vec h_\Psi$ along the field; the Stark term is the same with the electric field, and the quadratic part is the induced dipole.</p>
+<p><strong>Geometric phases.</strong></p>
+<p>$$
+|\tilde\Xi(r'_t)\rangle=\exp(i\theta_{\mathrm{ber}})\exp(-i\theta_{\mathrm{dyn}})|n(R(r'_t))\rangle,\qquad
+\gamma_n=i\int_{\mathcal{C}}\langle n|\nabla_R n\rangle\!\cdot\!dR,
+$$</p>
+<p>$$
+\tilde H_\Psi(\vec R)=\tfrac12 i\vec R=\tfrac12 i\bigl(R_1\vec e_x+R_2\vec e_y+R_3\vec e_z\bigr),
+\qquad
+\tilde H_\Psi=\tfrac{R}{2}\tilde\Pi_1(\vec u_R)-\tfrac{R}{2}\tilde\Pi_2(\vec u_R).
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Berry connection vanishes identically on the idempotent:</p>
+<p>$$
+2\,\mathrm{Sc}\bigl(\tilde\Pi\,\partial_\mu\tilde\Pi\bigr)=0\qquad\text{for every parameter,}
+$$</p>
+<p>so the geometric phase is carried by the <em>frame</em> and not by the state. The parameter space of the two-level Hamiltonian is a two-sphere, and the phase is the solid angle.</p>
+<p><strong>The Majorana representation.</strong> The spinor is a polynomial in one complex variable, and its roots are the star points:</p>
+<p>$$
+P_{\mathrm{sp}}(z)=\sum_{s_z=-s}^{s}(-1)^{s-s_z}\binom{2s}{s+s_z}^{1/2}c_m\,z^{s+s_z},
+$$</p>
+<p>$$
+P_{\mathrm{sp}}(z)=c_{1/2}z-c_{-1/2}=\tilde\Xi_1z-\tilde\Xi_2,\qquad
+\varkappa_{\mathrm{stg}}=\frac{\tilde\Xi_2}{\tilde\Xi_1}=\tan\frac{\theta}{2}e^{i\theta_{\mathrm{azm}}},
+$$</p>
+<p>$$
+\boxed{\;\tilde\Pi_1(\vec u_x)=\frac{\tilde\Xi\tilde\Xi^{\dagger}}{2\,\mathrm{Sc}(\tilde\Xi^{\dagger}\tilde\Xi)}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The Majorana polynomial is the spinor in the stereographic chart, and the Möbius action of $SU(2)$ on the spinor is the Möbius action on the root. One root for one qubit; $2s$ roots for spin $s$.</p>
+<p><strong>Squeezing.</strong> Spin squeezing needs a non-linear Hamiltonian. The corpus proves that the biquaternion algebra supplies only the linear (spin-$\tfrac12$) and the adjoint (spin-1) carriers, so squeezing of a single spin is expressed with a quadratic term in the generators, and <em>Squeezing Beyond the Biquaternion Algebra</em> states the exact point where an extra structure is required.</p>
+<p><strong>Source.</strong> <code>articles_physics/spin-1-2-quantum-physics-in-biquaternionic-form.md</code>, <code>articles_physics/the-stern-gerlach-experiment-in-biquaternionic-form.md</code>, <code>articles_physics/magnetic-resonance-and-rabi-oscillations-in-biquaternionic-form.md</code>, <code>articles_physics/the-berry-phase-and-geometric-phases-in-biquaternionic-form.md</code>, <code>articles_physics/the-majorana-representation-in-biquaternionic-form.md</code>, <code>articles_physics/squeezing-beyond-the-biquaternion-algebra.md</code>.</p>
+<h2 id="4-spin-one-and-above">4. Spin One and Above</h2>
+<p><strong>The generators and their ladder operators.</strong></p>
+<p>$$
+\tilde S_{\Psi,\eta}=\frac{\hbar}{2}i\vec e_\eta,\qquad
+\tilde S_{\Psi,\pm}=\frac{\hbar}{2}\bigl(i\vec e_x\mp\vec e_y\bigr),
+$$</p>
+<p>$$
+\tilde S_{\Psi,\pm}^{2}=0,\qquad \langle\tilde S_{\Psi,\pm}\rangle_{\natural}=0,\qquad \tilde S_\Psi^{2}=\tfrac34\hbar^{2}e_t .
+$$</p>
+<p><strong>The non-trivial claim.</strong> The ladder operators are nilpotent and null. They are not observables and they have no norm; they are the two null directions of the spin algebra. This is why the raising and lowering cannot be read as physical transitions without a state to act on.</p>
+<p><strong>Addition of angular momenta.</strong> The total generators close on the same table:</p>
+<p>$$
+[\tilde S_{\Psi,\mathrm{tot},i},\tilde S_{\Psi,\mathrm{tot},j}]=i\hbar\,\epsilon_{ij\eta}\tilde S_{\Psi,\mathrm{tot},\eta},
+$$</p>
+<p>$$
+\tilde S_{\Psi,\mathrm{tot},\pm}|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle
+=\hbar\sqrt{(s_{\mathrm{tot}}\mp s_{\mathrm{tot},z})(s_{\mathrm{tot}}\pm s_{\mathrm{tot},z}+1)}\;|s_{\mathrm{tot}},s_{\mathrm{tot},z}\pm1\rangle .
+$$</p>
+<p>The Clebsch–Gordan coefficients of two spin-$\tfrac12$ are the entries of the two-spin basis change; the singlet is</p>
+<p>$$
+|\mathrm{singlet}\rangle=\frac{1}{\sqrt2}\bigl(|\!\uparrow\downarrow\rangle-|\!\downarrow\uparrow\rangle\bigr).
+$$</p>
+<p><strong>The generalised Bloch ball for spin 1.</strong></p>
+<p>$$
+\tilde F_\eta=\tilde S_{\Psi,\eta}^{(1)}+\tilde S_{\Psi,\eta}^{(2)}
+=\frac{\hbar}{2}\bigl(i\vec e_\eta\otimes e_t+e_t\otimes i\vec e_\eta\bigr),
+$$</p>
+<p>$$
+[F_i,F_j]=i\hbar\,\epsilon_{ij\eta}F_\eta,\qquad F_1^{2}+F_2^{2}+F_3^{2}=2\hbar^{2}I_3 .
+$$</p>
+<p><strong>The qutrit obstruction, and it is the sharpest statement of the category.</strong></p>
+<p>$$
+\boxed{\;M\cong V^{\oplus k},\qquad \dim_{\mathbb{C}}M=2k\;}
+$$</p>
+<p>Every left module of $\mathbb{B}$ has even complex dimension. A three-level system has dimension three, so it is not a module, and the algebra cannot carry it. The attempt fails concretely:</p>
+<p>$$
+\boxed{\;J_+\neq0,\qquad J_+^{2}\neq0,\qquad J_+^{3}=0\;}
+$$</p>
+<p>in a three-dimensional module, while in $\mathbb{B}$ every ladder operator squares to zero. The corpus also proves that the derivations are not multiplications: the adjoint action is an inner derivation, and a three-dimensional irreducible representation would need an outer one.</p>
+<p><strong>Source.</strong> <code>articles_physics/addition-of-angular-momenta-and-clebsch-gordan-coefficients-in-biquaternionic-form.md</code>, <code>articles_physics/two-spin-half-particles-in-biquaternionic-form.md</code>, <code>articles_physics/the-generalized-bloch-ball-for-spin-1-in-the-biquaternion-framework.md</code>, <code>articles_physics/the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra.md</code>, <code>articles_physics/the-wigner-eckart-theorem-and-tensor-operators-in-biquaternionic-form.md</code>.</p>
+<h2 id="5-informational-aspects">5. Informational Aspects</h2>
+<p><strong>Entropy, and the norm as its argument.</strong></p>
+<p>$$
+\langle\tilde{Ϛ}_\Psi\rangle_{\natural}=\tfrac14\bigl(1-|\vec s_\Psi|^{2}\bigr)e_t,\qquad
+\tilde{Ϛ}_\Psi^{2}-\tilde{Ϛ}_\Psi=-\langle\tilde{Ϛ}_\Psi\rangle_{\natural}e_t,
+$$</p>
+<p>$$
+\boxed{\;S(\tilde{Ϛ}_\Psi)=h\Bigl(\frac{1+|\vec s_\Psi|}{2}\Bigr)
+=h\Bigl(\frac{1+\sqrt{1-4\langle\tilde{Ϛ}_\Psi\rangle_{\natural}}}{2}\Bigr)\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> The von Neumann entropy is a function of the biquaternion norm alone. Purity is $N=0$ and maximal mixedness is $N=\tfrac14$, which is the opposite of the naive reading: the norm vanishes on the <em>pure</em> states. This inversion is the single most quoted identity of the informational block.</p>
+<p><strong>POVMs and the positive cone.</strong> A POVM element is a positive element of the informational sector; the cone is the cone of the Hermitian form. The Born rule extends verbatim, and the measurement boundary is the polar decomposition of the Kraus operator into an effect and a backaction.</p>
+<p><strong>Contextuality and Kochen–Specker.</strong> A non-contextual hidden-variable model would assign values to all idempotents simultaneously; the algebra supplies at most a two-element idempotent frame, and the Kochen–Specker set of the corpus is the minimal one built from the idempotents. The obstruction is the non-distributivity of the lattice of idempotents, not a dimension count.</p>
+<p><strong>Mutually unbiased bases.</strong> Two bases are unbiased when their idempotents pair with weight $\tfrac12$. In $\mathbb{B}$ there are exactly three such bases, because the spin directions that are mutually unbiased are the three coordinate axes; this is the algebraic content of the qubit case of the MUB problem.</p>
+<p><strong>Bell and CHSH.</strong> The correlation function is the pairing of two idempotents; the CHSH bound is $2\sqrt2$ and the algebraic maximum is $4$. The corpus derives Tsirelson's bound from the positivity of the Hermitian form, not from an operator norm.</p>
+<p><strong>Discord.</strong> Discord is the entropy difference between the state and its post-measurement version. In the ball it is a function of the angle between $\vec s_\Psi$ and the measurement axis; it is non-zero exactly when the state is not an idempotent and not a product.</p>
+<p><strong>No cloning.</strong></p>
+<p>$$
+\boxed{\;2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde\Xi)\tilde\Pi(\xi_{\mathrm{alt}})\bigr)
+=\Bigl(2\,\mathrm{Sc}\bigl(\tilde\Pi(\tilde\Xi)\tilde\Pi(\xi_{\mathrm{alt}})\bigr)\Bigr)^{2}
+\ \Longrightarrow\ p\in\{0,1\}\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> Cloning would force the overlap to equal its square for every pair of states, hence the overlap to be $0$ or $1$, hence the two states to be orthogonal or equal. The obstruction is algebraic and does not use linearity. The same computation gives the no-deleting and the no-broadcasting statements.</p>
+<p><strong>Decoherence.</strong></p>
+<p>$$
+\Xi_{\mathrm{deph},p}(\tilde{Ϛ}_\Psi)=(1-p)\tilde{Ϛ}_\Psi+p\bigl(\tilde\Pi_1\tilde{Ϛ}_\Psi\tilde\Pi_1+\tilde\Pi_2\tilde{Ϛ}_\Psi\tilde\Pi_2\bigr),
+$$</p>
+<p>$$
+\boxed{\;\vec s_\Psi\longmapsto\vec s_{\Psi,2}=(1-p)\vec s_\Psi+p(\vec u\!\cdot\!\vec s_\Psi)\vec u\;}
+$$</p>
+<p><strong>The non-trivial claim.</strong> Dephasing is a contraction of the ball onto a diameter, and decoherence is <em>idempotent projection</em>, not a loss of information about the system: the information moves to the correlations with the environment, which the single-qubit algebra does not carry. The article states this limit explicitly.</p>
+<p><strong>Channels.</strong></p>
+<p>$$
+\mathcal E(\tilde U\tilde Q\tilde U^{*})=\tilde U\,\mathcal E(\tilde Q)\,\tilde U^{*},\qquad
+\mathcal E_\lambda(\tilde Q)=(1-\lambda)\tilde Q+\lambda\,\mathrm{Sc}(\tilde Q)\,e_t,
+$$</p>
+<p>$$
+\text{multiplicative}\iff\text{Choi rank }1\iff\text{conjugation by a unit}\iff N\ \text{preserved},
+$$</p>
+<p>$$
+r'=|M\vec s_\Psi+\vec t|\le r\ \Longrightarrow\ N'\ge N\ \Longrightarrow\ \text{purity non-increasing}.
+$$</p>
+<p><strong>The non-trivial claim.</strong> The reversible channels are exactly the congruences by unit rotors, and they are exactly the operations that preserve the norm. Every other channel increases the norm, and the increase is the entropy production. This is the cleanest statement in the corpus of "the reversible part of quantum mechanics is a group and the rest is not".</p>
+<p><strong>Gates, coding, error correction.</strong> A gate is a unit rotor acting by congruence; a circuit is a product of rotors; superdense coding is the transmission of two classical bits through one idempotent pair; the stabiliser formalism is built on the commuting set of idempotents that the Pauli group supplies. The Shor and Steane codes are written in the same letters.</p>
+<p><strong>Source.</strong> <code>articles_physics/von-neumann-entropy-and-the-biquaternion-norm.md</code>, <code>articles_physics/povms-and-the-positive-cone-in-biquaternionic-form.md</code>, <code>articles_physics/contextuality-and-the-kochen-specker-theorem-in-biquaternionic-form.md</code>, <code>articles_physics/mutually-unbiased-bases-and-the-biquaternion-algebra.md</code>, <code>articles_physics/no-cloning-and-the-algebraic-obstruction-in-biquaternionic-form.md</code>, <code>articles_physics/decoherence-as-idempotent-projection.md</code>, <code>articles_physics/covariant-qubit-channels-the-mixture-family-unitality-and-choi-rank.md</code>.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The category in one table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schrödinger</td>
+<td>$i\hbar c\,\partial_{r'_t}\tilde\Xi=\tilde H_\Psi\tilde\Xi$</td>
+</tr>
+<tr>
+<td>generator, in the material sector</td>
+<td>$-i\tilde H_\Psi\in\mathbb{B}_{\Phi}$</td>
+</tr>
+<tr>
+<td>polar form</td>
+<td>$\tilde\Xi=\varrho e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$, exists iff $N\neq0$</td>
+</tr>
+<tr>
+<td>classical limit</td>
+<td>$\tfrac{1}{2m}\langle\vec\nabla_\Phi S\rangle_{\natural}=E-V$</td>
+</tr>
+<tr>
+<td>entropy</td>
+<td>$S=h\bigl(\tfrac12(1+\sqrt{1-4\langle\tilde{Ϛ}_\Psi\rangle_{\natural}})\bigr)$</td>
+</tr>
+<tr>
+<td>decoherence</td>
+<td>$\vec s\mapsto(1-p)\vec s+p(\vec u\!\cdot\!\vec s)\vec u$</td>
+</tr>
+<tr>
+<td>reversible channels</td>
+<td>congruences by unit rotors, $N$ preserved</td>
+</tr>
+<tr>
+<td>qutrit</td>
+<td>impossible: every module has even complex dimension</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four results to keep.</strong> The time-translation generator is material and the Hamiltonian is informational. The polar form exists exactly on the invertible elements. The von Neumann entropy is a function of the norm, and the norm vanishes on the pure states. Spin 1 sits in $\mathbb{B}$ and spin 1 <em>as a qutrit</em> does not.</p>
+<p><strong>Three refusals.</strong> The category does not derive the commutation relation; it axiomatises it. It does not define classicality by $\hbar\to0$. It does not claim that decoherence solves the measurement problem; it relocates the information.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde\Xi$</td>
+<td>wave function, an element of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\varrho$, $\theta_{\mathrm{pha}}$</td>
+<td>amplitude and phase of the polar form</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{rpd}}$, $\vec u_{\mathrm b}$</td>
+<td>rapidity and axis of the polar boost</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{ber}}$, $\theta_{\mathrm{dyn}}$</td>
+<td>Berry phase, dynamical phase</td>
+</tr>
+<tr>
+<td>$\varkappa_{\mathrm{stg}}$</td>
+<td>stereographic (Majorana) coordinate</td>
+</tr>
+<tr>
+<td>$\tilde S_{\Psi,\pm}$</td>
+<td>nilpotent ladder operators</td>
+</tr>
+<tr>
+<td>$\mathcal E_\lambda$</td>
+<td>mixture-family channel</td>
+</tr>
+<tr>
+<td>$h(p)$</td>
+<td>binary entropy</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<p>Core: <code>the-schrodinger-equation-in-biquaternionic-form</code>, <code>the-schrodinger-equation-in-biquaternionic-polar-variables</code>, <code>spin-1-2-quantum-physics-in-biquaternionic-form</code>, <code>von-neumann-entropy-and-the-biquaternion-norm</code>. Traps: <code>the-kinetic-momentum-a-bracket-that-does-not-close</code>, <code>the-qutrit-problem-three-level-systems-outside-the-biquaternion-algebra</code>, <code>decoherence-as-idempotent-projection</code>.</p>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
