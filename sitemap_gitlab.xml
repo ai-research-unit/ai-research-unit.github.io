@@ -1605,15 +1605,15 @@
     <lastmod>2026-11-23</lastmod>
   </url>
   <url>
-    <loc>https://a-i-research-unit.gitlab.io/articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html</loc>
-    <lastmod>2026-11-23</lastmod>
-  </url>
-  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/particle-classification-three-grids-one-name-in-every-cell.html</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/an-introduction-to-flavour.html</loc>
+    <lastmod>2026-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it.html</loc>
     <lastmod>2026-11-23</lastmod>
   </url>
   <url>
@@ -11122,7 +11122,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/biquaternion-automorphisms-and-derivations.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/biquaternion-versors-and-the-orthogonal-group.html</loc>
@@ -12846,7 +12846,7 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/which-spin-lives-in-which-reading-at-n-4.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_maths/the-su2-of-m4c-acting-on-sixteen-dimensions.html</loc>
@@ -13262,6 +13262,6 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/physics.html</loc>
-    <lastmod>2026-11-22</lastmod>
+    <lastmod>2026-11-23</lastmod>
   </url>
 </urlset>

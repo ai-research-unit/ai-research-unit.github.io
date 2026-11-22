@@ -49,9 +49,9 @@
 
 **Corollary.** The principal reading gives $V_3\oplus V_2\oplus V_1\oplus V_0$, of dimensions $7+5+3+1=16$, which is a different decomposition of the same space into the same labels with different multiplicities.
 
-*Proof.* The principal list and the diagonal contents differ in the multiplicities of $V_3$ and $V_1$.
+*Proof.* The principal list and the diagonal contents differ in the multiplicities of $V_3$, $V_1$ and $V_0$.
 
-**The reading.** The factorised reading, restricted to the diagonal, is coarser than the principal one: it forgets the piece of dimension seven and doubles the triplet and the singlet.
+**The reading.** Neither list refines the other, and the word *coarser* has no meaning here, because the two decompositions belong to two different groups. The diagonal contents have six pieces against the four of the principal list, and no piece of dimension seven; the principal list has one triplet where the diagonal contents have three, and one singlet where they have two. The only comparison that survives is the count, $7+5+3+1=5+9+2=16$.
 
 ## The Half-Integer Pair
 

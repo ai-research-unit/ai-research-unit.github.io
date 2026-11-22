@@ -51,6 +51,10 @@ LEGACY_COPIES = [
      "articles_internal/the-coupling-sector-of-the-fourth-colour-model.html"),
     ("articles_internal/internal-note-the-four-colours-left-right-model.html",
      "articles_internal/internal-note-the-fourth-colour-left-right-model.html"),
+    # Charged lepton flavour: the article states the open question, and the
+    # retired addresses stay alive.
+    ("articles_physics/the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it.html",
+     "articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html"),
 ]
 
 # One date for the whole site: the moment the last build started. build_diff.py

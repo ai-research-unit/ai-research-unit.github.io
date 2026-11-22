@@ -88,7 +88,7 @@ What each choice leaves is stated before the reasons. Staying would leave five t
 
 The six reasons, in descending order of strength: the empirical, the structural, the compatibility with the algebra, the comparison with the competitors, the explanatory yield, and the falsifiability.
 
-**1. The empirical.** No measurement contradicts it. Every place where the model differs from the Standard Model sits at or above the colour-breaking scale, and the scale is bounded from below, not from above. The six leptoquarks mediate $K_L\to\mu e$ at tree level, through two entries of their own mixing matrix and with no loop suppression, and the measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ forces, for entries of order one,
+**1. The empirical.** No measurement contradicts it. Every place where the model differs from the Standard Model sits at or above the colour-breaking scale, and the scale is bounded from below, not from above. The six leptoquarks mediate $K_L\to\mu e$ at tree level, through two entries of their own generation matrix and with no loop suppression. That matrix is the identity in the minimal Yukawa sector, where the channel vanishes, so the measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ constrains $M_X$ only if the entries are assumed of order one, and then it forces
 
 $$
 M_X\gtrsim 2.3\times10^{2}\ \mathrm{TeV},

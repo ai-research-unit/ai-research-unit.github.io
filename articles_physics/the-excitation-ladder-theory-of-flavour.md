@@ -75,11 +75,42 @@ A mass tower that compresses by $12.3$ is an amplitude tower that expands by $10
 | $\sqrt m$ | $9.564$ | $31.874$ | grows by $3.333$ |
 | $\log m$ | $5.332$ | $2.823$ | shrinks by $1.889$ |
 
-No column is constant, so the ladder is not an equal-spacing tower in any of these variables. That is the honest reading, and it moves the question from the spacing to the number of rungs.
+No column is constant, so the ladder is not an equal-spacing tower in any of these variables. That is the honest reading, and it moves the question from the spacing to the count.
+
+## Koide's Relation, Stated
+
+Koide's relation, stated in 1981 for the charged leptons and not derived since, is
+
+$$
+Q=\frac{m_1+m_2+m_3}{\left(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3}\right)^{2}}=\frac{2}{3}.
+$$
+
+With the PDG masses $m_e=0.51099895$, $m_\mu=105.6583755$ and $m_\tau=1776.86$ MeV, the amplitudes, their sums and the ratio are
+
+| quantity | value |
+|---|---|
+| $\sqrt{m_e}$ | $0.714842\ \mathrm{MeV}^{1/2}$ |
+| $\sqrt{m_\mu}$ | $10.279026\ \mathrm{MeV}^{1/2}$ |
+| $\sqrt{m_\tau}$ | $42.152817\ \mathrm{MeV}^{1/2}$ |
+| $m_1+m_2+m_3$ | $1883.0294\ \mathrm{MeV}$ |
+| $(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3})^{2}$ | $2824.5701\ \mathrm{MeV}$ |
+| $Q$ | $0.66666051$ |
+
+The measured $Q$ falls below $\tfrac23$ by $6.2\times10^{-6}$ in absolute value, which is $9.2$ parts per million of $\tfrac23$, on three measured numbers.
+
+**Why it is stated here.** The variable of this article is the amplitude $a_i=\sqrt{m_i}$, so Koide's ratio is written in the ladder's own variable:
+
+$$
+Q=\frac{a_1^{2}+a_2^{2}+a_3^{2}}{(a_1+a_2+a_3)^{2}}=\frac13\left(1+\left(\frac{\sigma_a}{\bar a}\right)^{2}\right),
+$$
+
+with $\bar a$ the mean amplitude and $\sigma_a$ the standard deviation of the three. The bracket is an identity and not a fit, so $Q=\tfrac23$ is exactly the statement $\sigma_a/\bar a=1$: the three amplitudes are as spread as their own mean. The measured spread is $0.9999908$, and the same number read as an angle, $\varphi=\arccos\left(1/\sqrt{3Q}\right)$, is $44.9997^{\circ}$.
+
+**Why it is not evidence for the ladder.** The ladder sets an interval between neighbouring rungs and places no condition on a combination of the three masses, so Koide's relation is neither derived here nor used here. It is a measured arithmetic on three numbers, and the corpus records it as one. The numeral $\tfrac23$ also appears in the model as a trace ratio of one to three, in [Charge Quantisation from the Fourth Colour](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html), and the two are not the same statement: one is a dimension of a representation and the other a ratio of masses. That they coincide in value is recorded and not explained.
 
 ## No Exact Closure
 
-**The amplitude ladder fixes spacings and predicts no sum, so this article claims no exact numerical closure.** A wave ladder sets the interval between neighbouring rungs. It places no condition on a combination of three masses, and a combination of three measured numbers that happens to land near a simple fraction is not a consequence of the picture. Relations of that kind are reported elsewhere in the corpus and are not counted here as evidence for the ladder.
+**The amplitude ladder fixes spacings and predicts no sum, so this article claims no exact numerical closure.** A wave ladder sets the interval between neighbouring rungs. It places no condition on a combination of three masses. Koide's relation, stated above, is the sharpest case of such a combination: three measured numbers land near a simple fraction, the ladder neither derives it nor uses it, and it is not counted here as evidence.
 
 **What the ladder gives is the growth of the steps and the count.** The two amplitude steps are $9.564$ and $31.874$, a growth of $3.333$, and that growth is a property of the two spacings and of nothing else. *The Count Is Three* takes the count as measured. Those are the two things this article offers, and it stops there.
 
@@ -152,6 +183,7 @@ What the theory does not owe is a derivation of three. Three is what the charged
 | why the naive mass ladder fails | quantified, *The Ladder Fails in Mass* |
 | the amplitude variable | motivated, with no equally good alternative, *The Ladder Works in Amplitude* |
 | an exact numerical closure | none claimed, *No Exact Closure* |
+| Koide's relation | stated, measured, not derived, *Koide's Relation, Stated* |
 | why this tower counts three | measured, not derived, *The Count Is Three* |
 | why no fourth rung is added | the ladder is closed, *The Count Is Three* |
 | a derivation of the amplitude step | absent |
@@ -192,11 +224,16 @@ Every number below was recomputed from the measured masses before it was written
 | the thermal ratio at 152 MeV | $e^{-(m_\mu-m_e)/T}$ | $0.501$ |
 | the thermal ratio at 2.563 GeV | $e^{-(m_\tau-m_e)/T}$ | $0.500$ |
 | the width ratio against the fifth power | $1.3486\times10^{6}$ against $1.3451\times10^{6}$ | agrees to 0.26 per cent |
+| Koide's ratio | $1883.0294/2824.5701$ | $0.66666051$ against $2/3$ |
+| Koide's spread | $\sigma_a/\bar a$ from the three amplitudes | $0.9999908$ |
+| Koide's angle | $\arccos(1/\sqrt{3Q})$ | $44.9997^{\circ}$ |
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
+| $Q$ | Koide's ratio, $\sum m/(\sum\sqrt{m})^{2}$, measured $0.66666051$ |
+| $a_i=\sqrt{m_i}$ | the amplitude of a rung, the ladder's variable |
 | the rung count | three for every tower, measured and not derived |
 | $i=1,2,3$ | the rung index |
 | rung | a level of combined excitation, a pole with a mass |
@@ -208,5 +245,5 @@ Every number below was recomputed from the measured masses before it was written
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the algebra does not count them.
 - [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
-- [Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html). The prediction of sameness, the model's other sharp flavour statement.
+- [The Fourth-Colour Lepton: One Operator, One Unknown, and the Channels That Cannot See It](the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it.html). The operator's chiral structure, and the question of the generation matrix that the mass sector leaves open.
 - [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame whose module the ladder multiplies.

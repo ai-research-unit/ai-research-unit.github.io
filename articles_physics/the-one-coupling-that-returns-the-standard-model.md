@@ -110,11 +110,11 @@ and the solution exists only while the bracket is positive. Two consequences fol
 
 ### The One Number a Coupling Produces
 
-**One contact with a measurement.** Above the $W_R$ floor, the model's single contact with data is $K_L\to\mu e$. The operator is $g_4^2/(2M_X^2)$ times $K_{de}K_{s\mu}^{*}$ times a hadronic matrix element, the rate scales as $M_X^{-4}$, and the coupling is fixed by the first matching relation $g_3=g_4$ at $M_C$:
+**One contact with a measurement.** Above the $W_R$ floor, the model's single contact with data is $K_L\to\mu e$. The operator is $g_4^2/(2M_X^2)$ times $U_{de}U_{s\mu}^{*}$ times a hadronic matrix element, the rate scales as $M_X^{-4}$, and the coupling is fixed by the first matching relation $g_3=g_4$ at $M_C$:
 
 $$
 g_4^2=4\pi\,\alpha_s(M_X),\qquad
-\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert K_{de}K_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
+\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert U_{de}U_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
 $$
 
 **Three rows.** The shape is sharp.
@@ -125,7 +125,7 @@ $$
 | $233$ TeV | $0.730$ | $4.7\times10^{-12}$ | at the limit |
 | $300$ TeV | $0.718$ | $1.7\times10^{-12}$ | allowed, margin $2.8$ |
 
-The table takes $|K_{de}K_{s\mu}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root. The bound is $M_X\gtrsim2.3\times10^{2}$ TeV for that largest value, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Charged Lepton Flavour Violation](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html); the substitution that turns the channel into a mass bound is what this section adds.
+The table takes $|U_{de}U_{s\mu}|=1$, the largest value; a smaller entry multiplies every rate by its fourth power and lowers the bound by its square root, and the identity branch gives zero at every mass. The bound is $M_X\gtrsim2.3\times10^{2}$ TeV for that largest value and under that assumption, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Charged Lepton Flavour Violation](the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it.html); the substitution that turns the channel into a mass bound is what this section adds.
 
 ## The Boundary Condition, and Why It Fails
 

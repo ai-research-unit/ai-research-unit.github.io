@@ -134,14 +134,14 @@ with the quantum numbers forcing $|\Delta B|=\tfrac13$ and $|\Delta L|=1$ per fe
 $$
 \mathcal M\propto\frac{g_4^2}{M_X^2},
 \qquad
-\mathcal B(K_L\to\mu e)\ \propto\ \frac{g_4^{4}\,\lvert K_{de}K_{s\mu}\rvert^{2}}{M_X^{4}}f_K^2m_K .
+\mathcal B(K_L\to\mu e)\ \propto\ \frac{g_4^{4}\,\lvert U_{de}U_{s\mu}\rvert^{2}}{M_X^{4}}f_K^2m_K .
 $$
 
-Because it is a tree-level flavour-changing process in a neutral meson with no loop suppression, the bound is severe, and it is a coupling statement. The measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ is converted into a bound on $M_X$ using $g_4^2=4\pi\alpha_s(M_X)$, a kaon decay constant, the generator normalisation $\operatorname{tr}T^{A}T^{B}=\tfrac12\delta^{AB}$ and the rate $g_4^{4}\lvert K_{de}K_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$.
+Because it is a tree-level flavour-changing process in a neutral meson with no loop suppression, the bound is severe, and it is a coupling statement. The measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ is converted into a bound on $M_X$ using $g_4^2=4\pi\alpha_s(M_X)$, a kaon decay constant, the generator normalisation $\operatorname{tr}T^{A}T^{B}=\tfrac12\delta^{AB}$ and the rate $g_4^{4}\lvert U_{de}U_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$.
 
 Not derived here. It depends on the leptoquark chirality and on the hadronic matrix element, and it is a number produced by a coupling. It is quoted, with its inputs and its spread, in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html); what this article supplies is the channel, its quantum numbers, and the reason the channel is not loop-suppressed.
 
-**The order of magnitude.** The bound comes out at $M_X\gtrsim2.3\times10^{2}$ TeV, so the round $2.5\times10^{2}$ used here is right to within the coefficient's band: [Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html) does that calculation and carries the $K_S$ prediction that follows from the same operator. This single number is the strongest model-independent statement in the frame, and it is worth being clear what kind of statement it is: not a prediction, but a lower bound on a parameter, obtained from a measured null result. *How Firm the Bound Is* says how firm it is.
+**The order of magnitude, and its condition.** The bound comes out at $M_X\gtrsim2.3\times10^{2}$ TeV when the generation matrix is taken of order one, so the round $2.5\times10^{2}$ used here is right to within the coefficient's band on that assumption. The assumption is not derived: the minimal Yukawa sector makes the matrix the identity and the channel vanishes, so this is a conditional bound and not the frame's model-independent statement. [The Fourth-Colour Lepton: One Operator, One Unknown, and the Channels That Cannot See It](the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it.html) does that calculation and carries the $K_S$ prediction that follows from the same operator. This single number is the strongest model-independent statement in the frame, and it is worth being clear what kind of statement it is: not a prediction, but a lower bound on a parameter, obtained from a measured null result. *How Firm the Bound Is* says how firm it is.
 
 ## The Mass, and the $\sqrt2$ That a Coupling Ratio Multiplies
 

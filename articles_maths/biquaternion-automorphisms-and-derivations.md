@@ -109,6 +109,20 @@ $$
 
 **The bivector reading.** Under the identification $\mathbb{B} \cong \mathrm{Cl}^{+}_{1,3}$, the real span $\mathrm{span}_{\mathbb{R}}\{\vec e_x, \vec e_y, \vec e_z, i \vec e_x, i \vec e_y, i \vec e_z\}$ is the six-dimensional **bivector subspace**, the real form of the complex pure-vector part, and its elements bracket into themselves. Thus the derivation algebra, viewed as a real Lie algebra, is the bivector part of $\mathrm{Cl}^{+}_{1,3}$, equivalently, as a real Lie algebra, the realification of the complex pure-vector part, of real dimension $6$, which is the Lie algebra of the Lorentz group. The traceless part, the complex pure-vector part, and the bivector part are three descriptions of one object, with $\dim_{\mathbb{R}} = 2 \dim_{\mathbb{C}}$.
 
+**The anti-diagonal in the operator array.** Write $L_{\tilde Q}$ and $R_{\tilde Q}$ for the left and the right multiplier, so that a derivation is $\mathrm{ad}_{\tilde Q}=L_{\tilde Q}-R_{\tilde Q}$. Take $\tilde Q=\sum_i v_i\vec e_i$ with no scalar part. In the array of coefficients in the sixteen products $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, the left multiplier fills the left arm, the right multiplier fills the right arm, and the derivation is their difference:
+$$
+c(\mathrm{ad}_{\tilde Q})=\begin{pmatrix}0&-v^{\mathsf T}\\ v&0\end{pmatrix},\qquad v=(v_x,v_y,v_z)^{\mathsf T}.
+$$
+The same three numbers sit on the two arms with opposite signs.
+
+*Proof.* A left multiplier is $L_{\tilde Q}=\sum_\mu Q_\mu L_{e_\mu}$, so its array is supported on the column $(i,t)$ and equals $Q_i$ there, since $L_{e_\mu}=T_{\mu t}$; a right multiplier is supported on the row $(t,j)$ and equals $Q_j$ there; and the scalar slot is central, so the two arms are read by the same three coordinates. Subtracting the second from the first gives the display.
+
+**The anti-diagonal, and what the sum of the arms is not.** Each arm is three-dimensional, so their sum has complex dimension six and real dimension twelve. The derivations form the anti-diagonal inside that sum, of complex dimension three and real dimension six, which is the dimension of the bivector space above. The bivector is therefore one vector and not a pair of independent ones, and the identification belongs to the graph and not to the sum.
+
+**The length.** The array above has rank two for every $\tilde Q$ with a nonzero vector part: the column $(t,j)$ is $(-v_j,0)$ and the column $(i,t)$ is $(0,v)$, and the two are independent. By the theorem that the length is the rank of the array, every noncentral derivation has length two, the value recorded in *The Lengths of the Standard Endomorphisms of the Biquaternion Algebra*.
+
+**The equivariance.** Conjugation sends $L_{\tilde Q}$ to $L_{g\tilde Qg^{-1}}$ and $R_{\tilde Q}$ to $R_{g\tilde Qg^{-1}}$, hence $\mathrm{ad}_{\tilde Q}$ to $\mathrm{ad}_{g\tilde Qg^{-1}}$. The anti-diagonal is carried into itself, and $\tilde Q\mapsto\mathrm{ad}_{\tilde Q}$ is an isomorphism of the vector triple, with the action $v\mapsto gvg^{-1}$, onto the derivation space. The derivations are therefore one carrier of label one, and not the sum of a left carrier and a right carrier.
+
 **An explicit basis.** The three derivations $D_1 = \tfrac{1}{2}\mathrm{ad}_{\vec e_x}$, $D_2 = \tfrac{1}{2}\mathrm{ad}_{\vec e_y}$, $D_3 = \tfrac{1}{2}\mathrm{ad}_{\vec e_z}$ are $\mathbb{C}$-linear, so each vanishes on $e_t$ and on $i$, and they act on $\vec e_x, \vec e_y, \vec e_z$ by
 
 $$
@@ -172,6 +186,8 @@ The two ground fields give the following table; the field is stated explicitly i
 
 In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism is inner, and $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}^{\times}/\mathbb{C}^{\times}$; over $\mathbb{R}$ complex conjugation adds a second, conjugate-linear coset, so $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2$ is strictly larger; and over either field the derivations are the inner derivations $\tilde{Q}_2 \mapsto [\tilde Q_3,\tilde{Q}_2]$ with $\tilde Q_3$ scalar-free, forming $\mathbb{B}/\mathbb{B}_{C}$, of dimension $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$, identified with the bivector part of $\mathrm{Cl}^{+}_{1,3}$.
 
+In the operator array the derivation is the anti-diagonal, $v$ on the left arm and $-v$ on the right arm, of rank two; the two three-dimensional arms are not added but cancelled, which is why a bivector of six real dimensions is one vector and not a pair.
+
 ## Summary of Notation
 
 | Symbol | Meaning |
@@ -190,6 +206,7 @@ In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism 
 | $\mathrm{Der}_{\mathbb{R}}(\mathbb{B})$ | Derivations over $\mathbb{R}$, $\cong \mathrm{SO}(1,3)$ as a real Lie algebra |
 | $\mathrm{ad}_{\tilde Q_3}(\tilde{Q}_2) = [\tilde Q_3,\tilde{Q}_2]$ | Inner derivation by $\tilde Q_3$ |
 | $D_k = \tfrac{1}{2}\mathrm{ad}_{\vec e_k}$ | Basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, $[D_1,D_2] = D_3$ etc. |
+| $c(\mathrm{ad}_{\tilde Q})$ | Array of a derivation in the sixteen products, the anti-diagonal with $v$ on the left arm and $-v$ on the right arm |
 | $\mathrm{Cl}_{1,3}^{+}$ | Even Clifford algebra; isomorphic to $\mathbb{B}$ |
 
 ## Further Reading
