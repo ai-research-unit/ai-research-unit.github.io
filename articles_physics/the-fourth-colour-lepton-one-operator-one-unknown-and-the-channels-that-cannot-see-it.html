@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourth-Colour Lepton: One Operator, One Unknown, and the Channels That Cannot See It — Biquaternion Universe</title>
+  <meta name="description" content="No flavour change. The six leptoquarks do not change a lepton&#x27;s generation, and no experiment has seen a lepton change its generation by any process at…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it"><strong>The Fourth-Colour Lepton: One Operator, One Unknown, and the Channels That Cannot See It</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>No flavour change. The six leptoquarks do not change a lepton's generation, and no experiment has seen a lepton change its generation by any process at all. That statement rests on the data first and on the frame second.</p>
+<p>A word that may not apply. "Lepton flavour" is loose language. In this frame a lepton carries a generation index and nothing else: no charge distinguishes the three columns, and no boson carries a flavour quantum number away. The reason is structural and is in <em>Why Nothing Turns the Lepton</em>: the lepton is the temporal line $\mathbb C e_t$, the axis of the colour rotation, so there is no rotating multiplet for a flavour label to index. Whether the word names a property of the lepton at all — beyond "it has a mass" — the corpus cannot say. This article therefore uses it only to mean "which generation", or avoids it.</p>
+<p>The one open item. The frame fixes the leptoquark operator except for one thing: whether its vertex carries a generation index. It does not fix that, and it cannot, because the Yukawa sector that would fix it is not solved. So the corpus says what it knows, states the two possibilities, and calls neither of them the answer.</p>
+<p>What the frame fixes. The six leptoquarks, their charges, their mass relation, their two chiralities and no third, the colour factor of one, the $\Delta F=0$ contact term that certainly exists, the selection rule that picks $K_L$ over $K_S$, the fourth-power shape of the rate, and the loop that every muon channel needs. None of that depends on the open question.</p>
+<p>What it does not fix. Whether $K_L\to\mu e$ happens at all. A generation-blind vertex gives zero at every mass. A vertex with generation structure gives a rate set by a matrix the frame never writes.</p>
+<p>Why this matters for the corpus. The bound $M_X\gtrsim2.3\times10^{2}$ TeV, repeated as the frame's strongest model-independent statement, is the second case with the matrix set to one. It is not a prediction and it is not a bound: it is an assumption, and it should be quoted as one.</p>
+<h2 id="what-the-frame-fixes">What the Frame Fixes</h2>
+<p>1.1 The operator. Integrating out the six leptoquarks gives one four-fermion operator per chirality. The left-handed fields sit in $(\mathbf4,\mathbf2,\mathbf1)$ and the right-handed in $(\bar{\mathbf4},\mathbf1,\mathbf2)$, and the frame gauges both with the same $g_4$, so the two chiralities come with equal coefficients:</p>
+<p>$$
+\frac{g_4^{2}}{2M_X^{2}}\Bigl[(\bar q\,\gamma^{\mu}P_L\ell)(\bar q'\,\gamma_{\mu}P_L\ell')+(L\to R)\Bigr].
+$$</p>
+<p>There is no $LR$ term. The operator is $V\pm A$ and nothing else, and that is a statement about the two multiplets, not about the generation index.</p>
+<p>1.2 The colour factor. The quark legs contract over the triplet index of the $\mathbf4$, and the leptoquark propagator is diagonal in colour. The contraction gives one, not three: the two vertices sit on the same colour line, and there is no sum over colours to make.</p>
+<p>1.3 The $\Delta F=0$ term. Whatever happens to the generation index, the diagonal part of the operator exists. It shifts the short-distance $d$–$e$ and $s$–$\mu$ couplings by a relative amount of order $(g_4v/M_X)^{2}$, some $10^{-9}$ at $10^{2}$ TeV, and nothing measures it. The frame has a leptoquark contact interaction for certain.</p>
+<h2 id="why-nothing-turns-the-lepton">Why Nothing Turns the Lepton</h2>
+<p><strong>The split is temporal against spatial.</strong> The quartet splits canonically as</p>
+<p>$$
+\mathbf 4=\mathbb C e_t\oplus B_V ,
+\qquad
+B_V=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\} ,
+$$</p>
+<p>and the declaration that the corpus adopts says the line is the lepton. $e_t$ is the temporal unit: it is the identity, it commutes with everything, and the temporal direction is the centre. The three $\vec e_a$ are the spatial units, and they square to $-e_t$ and multiply into one another. So the lepton is temporal and the three quark colours are spatial, and the asymmetry between them is the asymmetry between $1$ and $\vec e_x,\vec e_y,\vec e_z$.</p>
+<p><strong>Colour is the rotation of the triple, and it fixes the line.</strong> The stabiliser of the line is the colour group:</p>
+<p>$$
+\operatorname{Stab}_{\mathfrak{su}(4)}(\mathbb C e_t)=\mathfrak{su}(3),
+\qquad
+8\ \text{generators},\ \text{each annihilating } e_t .
+$$</p>
+<p>Eight generators act on $B_V$ and give zero on the line. That is the entire content of "the three colours turn into each other": the turning is a rotation of the spatial triple, and the axis of that rotation is the temporal line, which does not move.</p>
+<p><strong>Nothing turns the lepton.</strong> The other seven generators of $\mathfrak{su}(4)$ are the phase $iD$, with eigenvalues $(-3,1,1,1)$, and the six leptoquark directions. The phase is abelian: it multiplies $e_t$ by a scalar, so it cannot send the lepton anywhere. The six leptoquarks send $e_t$ into $B_V$, which is a lepton becoming a quark. So</p>
+<p>$$
+\mathfrak{su}(4)=\underbrace{\mathfrak{su}(3)}_{8\ \text{fix } e_t}\oplus\underbrace{\mathfrak u(1)_{B-L}}_{1\ \text{phases } e_t}\oplus\underbrace{\mathfrak m}_{6\ \text{mix } e_t\ \text{with } B_V},
+\qquad
+15=8+1+6 ,
+$$</p>
+<p>and of the fifteen, none sends the lepton line to another lepton line. That was checked directly: with the generators written on the quartet in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$, eight annihilate $e_t$, one sends it to a scalar multiple of itself, and six send it into the triple — and no generator returns a direction inside the line other than a multiple of $e_t$.</p>
+<p><strong>What that means for flavour.</strong> There is no rotation among leptons for a flavour label to index. Colour rotates the three spatial colours because there are three of them and they are the same kind of object; the lepton is one line, and a line has no rotation. So the lepton has no colour to turn, and no partner inside its own line to turn into. That is the structural reason the word "flavour" may not apply: it would name a position in a multiplet, and the lepton is the axis of the only multiplet there is.</p>
+<p><strong>What is left.</strong> Generation is a separate tensor factor on which the algebra does not act, so the lepton gets a mass per generation and nothing else. A lepton changes generation only if the Yukawa supplies a matrix acting on that factor, which is exactly the open question of <em>The Two Possibilities</em>. And the data agree: no charged lepton has been seen to change generation, while the neutrino does — and that is the mass sector misaligning the index, not a colour rotation turning the lepton.</p>
+<h2 id="the-two-possibilities">The Two Possibilities</h2>
+<p>2.1 One Yukawa, no generation structure. The minimal sector has one bidoublet and one Yukawa matrix $Y$, contracted over the quartet index with $\delta^{a}{}_{b}$, the same for all four colours. The down quark and the charged lepton then get one matrix times one vacuum value:</p>
+<p>$$
+M_d^{ij}=Y^{ij}v,\qquad M_e^{ij}=Y^{ij}v .
+$$</p>
+<p>One unitary diagonalises both, the vertex stays the identity in the mass basis, and the leptoquark never changes a generation. Write the mixing as</p>
+<p>$$
+U=X_d^{\dagger}X_e=\mathbb 1 ,
+$$</p>
+<p>and the statement holds for every $Y$, diagonal or not, because the two matrices are the same matrix.</p>
+<p>2.2 The CKM is not the model. The CKM exists because $Y_u$ and $Y_d$ are independent. Nothing forces one unitary to diagonalise both, so $X_u^{\dagger}X_d$ is physical. Here there is one matrix on a shared quartet index and nothing to misalign with. Count the matrices: the CKM needs two, a leptoquark mixing needs two, and the minimal sector supplies one.</p>
+<p>2.3 Two contributions, generation structure. The minimal sector fails the masses: it gives $m_d=m_e$ entry by entry, against $m_d/m_e=9.1$, $m_s/m_\mu=0.88$ and $m_b/m_\tau=2.4$. A second fermion-mass contribution is needed, and the corpus's candidate is the $(\mathbf{15},\mathbf2,\mathbf2)$. The $\mathbf{15}$ is traceless, so its contribution along the quartet's singlet, which is the lepton, is minus one third of its contribution along the triplet, which is the quark. The two mass matrices then differ, the two diagonalisations differ, and</p>
+<p>$$
+U=X_d^{\dagger}X_e\neq\mathbb 1 .
+$$</p>
+<p>A lepton can then change generation, at a size set by the $\mathbf{15}$'s couplings, which the frame does not write.</p>
+<h2 id="why-the-corpus-cannot-decide">Why the Corpus Cannot Decide</h2>
+<p>3.1 The minimal sector is falsified. It is not a candidate, it is a refuted one, on the mass ratios alone. Whatever the frame says about a lepton changing generation, it does not say it through the one-bidoublet algebra.</p>
+<p>3.2 The replacement is unwritten. The corpus names the $(\mathbf{15},\mathbf2,\mathbf2)$ and counts its $120$ real components. It does not write its couplings, does not fit them, and does not know whether the resulting $U$ is close to the identity, close to maximal, or anything else.</p>
+<p>3.3 The consequence. The frame does not know whether a lepton can change generation. Both answers are available inside it, and the corpus has no right to prefer one. An article that states either as the frame's result is stating an assumption.</p>
+<h2 id="what-the-answer-would-change">What the Answer Would Change</h2>
+<p>4.1 If $U$ is the identity. Nothing happens. $K_L\to\mu e$, $K_S\to\mu e$, $\mu\to e\gamma$, $\mu\to eee$ and $\mu$–$e$ conversion are all zero, and no kaon or muon measurement constrains $M_X$. $M_X$ is then fixed by $M_X=\sqrt2\,M_{W_R}$ and by the direct search for the $W_R$.</p>
+<p>4.2 If $U$ is not. The tree channel is $s\bar d\to X\to\mu\bar e$, and its rate is</p>
+<p>$$
+\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert U_{de}U_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K}{128\pi\,M_X^{4}} .
+$$</p>
+<p>At $M_X=250$ TeV with $|U_{de}U_{s\mu}|=1$ this is $3.5\times10^{-12}$, against the measured limit $4.7\times10^{-12}$: the corner of parameter space where the matrix is maximal sits at the limit, which is why the number $2.3\times10^{2}$ TeV appears in the corpus. Any smaller entry moves the curve down and moves the bound down with it, and an entry of $10^{-2}$ removes the bound entirely.</p>
+<p>4.3 The scale is not fixed either way. Both branches leave $M_X$ a free parameter with only the $W_R$ floor. The difference is whether a kaon measurement also constrains it.</p>
+<h2 id="what-survives-regardless">What Survives Regardless</h2>
+<p>5.1 The selection rule. For a pseudoscalar meson only the axial part of the operator acts, because the vector matrix element vanishes by parity:</p>
+<p>$$
+\langle0\rvert\bar d\gamma^{\mu}s\lvert K^{0}\rangle=0,
+\qquad
+\langle0\rvert\bar d\gamma^{\mu}\gamma^{5}s\lvert K^{0}\rangle=if_Kp^{\mu}.
+$$</p>
+<p>The axial matrix element is odd under $K^{0}\leftrightarrow\bar K^{0}$, so with $K_S$ the symmetric and $K_L$ the odd combination, $K_S$ cancels and $K_L$ does not. In the second branch the frame predicts $K_L\to\mu e$ and forbids $K_S\to\mu e$ at leading order, with a residue at the $|\epsilon_K|^{2}$ level near $10^{-20}$.</p>
+<p>That argument is about the operator's chirality, and it holds whether or not the vertex carries a generation index. It is the article's firmest content, and it is the one thing a competitor can be asked to reproduce.</p>
+<p>5.2 The rate's shape. Any branching ratio of this operator carries $M_X^{-4}$, the helicity suppression $m_\mu^{2}$, and the decay constant squared. The mass factor is pinned from both sides: $m_K^{2}/m_\mu^{2}=22.2$ one way and $m_\mu^{2}/m_K^{2}=0.045$ the other, and no choice of coupling absorbs a factor of twenty-two.</p>
+<p>5.3 The loop channels. $\mu\to e\gamma$, $\mu\to eee$ and $\mu$–$e$ conversion need two leptoquark vertices, so they need a loop, and the dipole carries a chirality flip:</p>
+<p>$$
+C_{\mathrm{dip}}\sim\frac{e\,g_4^{2}}{16\pi^{2}}\cdot\frac{m_\mu}{M_X^{2}}\sum_q U_{qe}U_{q\mu}^{*}f\!\left(\frac{m_q^{2}}{M_X^{2}}\right).
+$$</p>
+<p>In the first branch the sum vanishes identically, because $U$ is the identity and the loop function is the same for every internal quark. In the second it is a GIM sum, suppressed by the internal mass splitting as well as by the mixing. Either way the muon channels are far below their limits at any scale the kaon channel could reach, and that ranking is the article's second firm statement.</p>
+<p>5.4 The semileptonic channels. $K^{+}\to\pi^{+}\mu^{+}e^{-}$ and $K_L\to\pi^{0}\mu^{+}e^{-}$ are the same operator with a different hadronic matrix element. In the second branch they sit within a factor of a few of the two-body rate while their limits are weaker, which makes them the ones worth watching. A real prediction needs the $K\to\pi$ form factor over the Dalitz region, which the corpus does not have.</p>
+<h2 id="how-the-question-gets-settled">How the Question Gets Settled</h2>
+<p>6.1 A $K_L\to\mu e$ signal. It settles it at once: the vertex carries generation structure, $|U_{de}U_{s\mu}|$ is measured, and the rate fixes $M_X$ for that entry pair. This is the sharpest measurement in the sector, and the experiments are running.</p>
+<p>6.2 A null result settles nothing. This is the correction the corpus most needs. If $U$ is the identity, the rate is zero at every mass, so a null result is exactly what the first branch predicts. A bound on $M_X$ follows only after $U$ is assumed maximal, and an assumption is not a measurement.</p>
+<p>6.3 A $\mu\to e\gamma$ signal. The same conclusion one step weaker: generation structure exists, and the loop coefficient, which this article does not compute, sets what it means for $M_X$.</p>
+<p>6.4 The corpus's own test. The mass ratios $9.1$, $0.88$ and $2.4$ already tell against the minimal sector. The question is not whether the frame is right, but which Yukawa sector replaces the minimal one, and that is where the generation question is actually decided.</p>
+<h2 id="the-checks">The Checks</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the two chiralities</td>
+<td>$(\mathbf4,\mathbf2,\mathbf1)$ and $(\bar{\mathbf4},\mathbf1,\mathbf2)$, one $g_4$</td>
+<td>$LL$ and $RR$, no $LR$</td>
+</tr>
+<tr>
+<td>the colour factor</td>
+<td>two vertices on one colour line, diagonal propagator</td>
+<td>$1$, not $3$</td>
+</tr>
+<tr>
+<td>the split</td>
+<td>$\mathbf 4=\mathbb C e_t\oplus B_V$</td>
+<td>the lepton is the line, the quarks the triple</td>
+</tr>
+<tr>
+<td>the stabiliser</td>
+<td>generators of $\mathfrak{su}(4)$ that annihilate $e_t$</td>
+<td>$8=\dim\mathfrak{su}(3)$, the colour group</td>
+</tr>
+<tr>
+<td>the movers</td>
+<td>the remaining $7$</td>
+<td>$1$ phase along the line, $6$ into the triple</td>
+</tr>
+<tr>
+<td>nothing turns the lepton</td>
+<td>$15=8+1+6$, no generator returns another direction on the line</td>
+<td>the only action on $\mathbb C e_t$ is a phase</td>
+</tr>
+<tr>
+<td>the phase's eigenvalues</td>
+<td>$D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>trace $0$; $B-L=D/3$ gives $(-1,\tfrac13,\tfrac13,\tfrac13)$</td>
+</tr>
+<tr>
+<td>the vector matrix element</td>
+<td>parity, pseudoscalar to vacuum</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the axial matrix element</td>
+<td>$\langle0\rvert\bar d\gamma^{\mu}\gamma^{5}s\lvert K^{0}\rangle$</td>
+<td>$if_Kp^{\mu}$</td>
+</tr>
+<tr>
+<td>the eigenstate selected</td>
+<td>odd against even under $K^{0}\leftrightarrow\bar K^{0}$</td>
+<td>$K_L$, with $K_S$ at $|\epsilon_K|^{2}$</td>
+</tr>
+<tr>
+<td>the minimal Yukawa</td>
+<td>one $Y$, contraction $\delta^{a}{}_{b}$</td>
+<td>$M_d=M_e$ entry by entry, so $U=\mathbb 1$</td>
+</tr>
+<tr>
+<td>the mass ratios</td>
+<td>$m_d/m_e$, $m_s/m_\mu$, $m_b/m_\tau$ against $1$</td>
+<td>$9.1$, $0.88$, $2.4$ — minimal sector falsified</td>
+</tr>
+<tr>
+<td>the $\mathbf{15}$ split</td>
+<td>traceless on the quartet</td>
+<td>singlet contribution $-\tfrac13$ of the triplet, so $U\neq\mathbb 1$</td>
+</tr>
+<tr>
+<td>the two-body rate</td>
+<td>$g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$ at $250$ TeV</td>
+<td>$3.5\times10^{-12}$ for $|U_{de}U_{s\mu}|=1$</td>
+</tr>
+<tr>
+<td>the spin sum</td>
+<td>$p\!\!/=p\!\!/_e+p\!\!/_\mu$, Dirac equations</td>
+<td>$m_K^{2}(m_e^{2}+m_\mu^{2})$, helicity suppressed</td>
+</tr>
+<tr>
+<td>the normalisation</td>
+<td>the same form applied to $K\to\mu\nu$</td>
+<td>$0.63$ against the measured $0.635$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="distinctions-that-are-easy-to-lose">Distinctions That Are Easy to Lose</h2>
+<p>There is no flavour change. Nothing observed changes a lepton's generation, and the minimal sector forbids the change at every mass. The article's subject is not a signal but a question about the Yukawa sector.</p>
+<p>There may be no flavour to change. The lepton is the temporal line $\mathbb C e_t$, and colour is the rotation of the spatial triple $B_V$ about that line. A rotation needs at least two members; the lepton is one, and a line has none. So there is no multiplet among leptons for a flavour label to index (<em>Why Nothing Turns the Lepton</em>).</p>
+<p>The lepton is not a fourth colour in the rotating sense. It is the axis of the rotation. The three spatial colours turn into each other; the temporal line is what they turn about.</p>
+<p>The operator is not in doubt. The $\Delta F=0$ contact term exists in both branches. What is in doubt is whether it has a generation-changing partner.</p>
+<p>$U=\mathbb 1$ is not an assumption about the shape of the Yukawa. It follows from there being one matrix, and it holds for a diagonal $Y$ and a maximally mixed one alike.</p>
+<p>The CKM is not the model. It exists because two Yukawas are independent; here there is one, and one matrix cannot misalign with itself.</p>
+<p>A null $K_L\to\mu e$ result is not evidence for the frame. The first branch predicts null at every mass, so the measurement cannot confirm it; only a signal can discriminate.</p>
+<h2 id="summary">Summary</h2>
+<p>The one operator. $\dfrac{g_4^{2}}{2M_X^{2}}$ times a product of a down-type current and a lepton current, both chiralities, from integrating out the six leptoquarks.</p>
+<p>The one unknown. Whether the vertex carries a generation matrix $U=X_d^{\dagger}X_e$. The minimal Yukawa gives $U=\mathbb 1$, and the minimal Yukawa is falsified by the mass ratios; the $\mathbf{15}$ that replaces it gives $U\neq\mathbb 1$ with entries the frame does not write.</p>
+<p>The one firm structure. $V\pm A$ only, so only the axial part acts on a pseudoscalar, so only the odd combination survives: $K_L$ and not $K_S$.</p>
+<p>Why the lepton does not turn. It is the temporal line $\mathbb C e_t$; colour is $\mathfrak{su}(3)$, the eight generators that fix that line and rotate the spatial triple $B_V$ about it. Of the fifteen generators, none turns the lepton into a lepton: eight fix it, one phases it, six take it into the triple. A rotation needs two members and the lepton is one.</p>
+<p>The channels. $\mu\to e\gamma$, $\mu\to eee$ and $\mu$–$e$ conversion need a loop, a chirality flip and, in the second branch, a GIM sum. They are orders of magnitude below their limits at any scale the kaon channel could reach.</p>
+<p>The verdict. No lepton has been seen to change generation, and the frame's minimal sector forbids the change. Whether the leptons have a flavour at all is a further question the corpus cannot answer. What the frame does know is what a change would look like, which channel would see it first, and which measurement decides. The number $2.3\times10^{2}$ TeV belongs to one assumption about $U$ and should be quoted that way.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$X$</td>
+<td>a leptoquark, one of the six, $Q=\pm\tfrac23$, colour triplet or antitriplet</td>
+</tr>
+<tr>
+<td>$Y$</td>
+<td>the one Yukawa matrix of the minimal scalar sector, in generation space</td>
+</tr>
+<tr>
+<td>$X_d$, $X_e$</td>
+<td>the unitaries that diagonalise $M_d$ and $M_e$</td>
+</tr>
+<tr>
+<td>$U$</td>
+<td>the leptoquark generation matrix $X_d^{\dagger}X_e$; the identity in the minimal sector, unconstrained otherwise</td>
+</tr>
+<tr>
+<td>$M_X$</td>
+<td>the leptoquark mass, $=\sqrt2\,M_{W_R}$ in the minimal vacuum</td>
+</tr>
+<tr>
+<td>$f_K$</td>
+<td>the kaon decay constant, $156.2$ MeV</td>
+</tr>
+<tr>
+<td>$\epsilon_K$</td>
+<td>the CP impurity of the neutral-kaon eigenstates, $2.228\times10^{-3}$</td>
+</tr>
+<tr>
+<td>$P_{L,R}$</td>
+<td>the chirality projectors, from the two gauge multiplets</td>
+</tr>
+<tr>
+<td>$C_{\mathrm{dip}}$</td>
+<td>the $\mu\to e\gamma$ dipole coefficient, an order-one loop function times $eg_4^{2}m_\mu/(16\pi^{2}M_X^{2})$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-temporal-dimension-why-the-temporal-unit-is-the-identity.html">The Temporal Dimension: Why the Temporal Unit Is the Identity</a>. Why $e_t$ is the identity, commutes with everything, and is the centre — the algebra behind the temporal/spatial asymmetry used here.</li>
+<li><a href="particle-classification-three-grids-one-name-in-every-cell.html">Particle Classification: Three Grids, One Name in Every Cell</a>. The four diagonal cells $t,x,y,z$, and why the lepton line is the temporal one.</li>
+<li><a href="charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour: One Trace, One Third</a>. The $\mathfrak{su}(3)$ that fixes the unit line, and the $B-L$ eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$.</li>
+<li><a href="an-introduction-to-flavour.html">An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles</a>. The inertness of the generation index, and the Yukawa as the only free object in the sector.</li>
+<li><a href="the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html">The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation</a>. Where the matrices are written, and why the one-bidoublet alignment fails.</li>
+<li><a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a>. The matrix that needs two Yukawas, and the contrast with this sector.</li>
+<li><a href="the-scalar-sector-and-the-leptoquark-bounds.html">The Scalar Sector and the Leptoquark Bounds: Twenty-Four Real Components, Six Unseen States, Two Scales</a>. The six leptoquarks, the mass relation, and the bound this article makes conditional.</li>
+<li><a href="the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The frame, and the single covariant derivative that has no generation index.</li>
+<li><a href="the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>. What the mass ratios are made of, given that the minimal Yukawa does not produce them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

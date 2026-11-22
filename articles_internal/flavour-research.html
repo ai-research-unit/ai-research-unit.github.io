@@ -2091,6 +2091,853 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>So the answer to the question that produced this section is: no, it is not circular, and yes, the three are related.</strong> The draft of 15.3 denied the second half. That denial was the error, and this subsection is the correction.</p>
+<h2 id="16-the-math1071-cosine-three-amplitudes-as-one-circle">16. The $Z_3$ Cosine: Three Amplitudes as One Circle</h2>
+<p><em>Scope.</em> This section develops the parametrisation</p>
+<p>$$
+\sqrt{m_i}=\mu\left(1+\sqrt2\cos\left(\delta+\frac{2\pi i}{3}\right)\right),
+\qquad i=1,2,3,
+$$</p>
+<p>which §14 used in 14.9 to 14.11 without deriving. Three things change when it is written out. The form is a change of basis and not an assumption. Its two shape parameters are the second and third moments of the amplitudes, which is why Koide fixes one and is blind to the other. And the standard version, with the $\sqrt2$ written inside, is not a general parametrisation at all: it is the Koide surface, with $k=1$ already imposed.</p>
+<h3 id="161-the-general-form-and-the-one-the-literature-quotes">16.1 The general form, and the one the literature quotes</h3>
+<p><strong>[PUBLISHED]</strong> The parametrisation and its normalisation are Koide's, and the version with a free coefficient is the one used in the papers. Ženczykowski writes it as</p>
+<p>$$
+\sqrt{m_j}=\sqrt{M_f}\left(1+\sqrt2\,k_f\cos\left(\frac{2\pi j}{3}+\delta_f\right)\right),
+\qquad j=1,2,3,
+$$</p>
+<p>with three parameters: the scale $\sqrt{M_f}$, the coefficient $k_f$, and the phase $\delta_f$. He states the two properties that matter. Any triple needs three parameters, so the form is general. And Koide's relation becomes $\frac13\left(1+k_f^{2}\right)$, so it fixes $k_f$ and is independent of $\delta_f$. The measured values are $k_L=1$ for the leptons, $k_D\approx1.08$ and $k_U\approx1.25$ for the down and up quarks at $2$ GeV, and $k_\nu\le0.81$ for neutrinos.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>this section</th>
+<th>§14</th>
+<th>relation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the scale</td>
+<td>$\mu$</td>
+<td>$\mu=\bar a$</td>
+<td>same</td>
+</tr>
+<tr>
+<td>the amplitude of the wave</td>
+<td>$R$</td>
+<td>$R$</td>
+<td>$R=\sqrt2\,k\,\mu$</td>
+</tr>
+<tr>
+<td>the coefficient</td>
+<td>$k$</td>
+<td>—</td>
+<td>$k=R/(\sqrt2\mu)=\sqrt{3Q-1}=\tan\varphi$</td>
+</tr>
+<tr>
+<td>the phase</td>
+<td>$\delta$</td>
+<td>$\delta$</td>
+<td>same</td>
+</tr>
+<tr>
+<td>Koide</td>
+<td>$k=1$</td>
+<td>$\varphi=45^{\circ}$</td>
+<td>$k=\tan\varphi$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So <strong>$k_f$ is exactly $\tan\varphi$ of 14.4 and exactly $\sigma_a/\bar a$ of 14.7.</strong> The literature's coefficient and this note's angle are one number, and neither paper says so, because neither computes the variance. The form quoted at the head of this section has $k=1$ absorbed into the $\sqrt2$; that is legitimate only because the leptons satisfy it to $10^{-5}$. For the quarks the coefficient is not one and cannot be absorbed.</p>
+<h3 id="162-it-is-a-change-of-basis-and-it-is-complete">16.2 It is a change of basis, and it is complete</h3>
+<p><strong>[ALGEBRA]</strong> Three parameters for three amplitudes. The map is invertible and the inverse is explicit:</p>
+<p>$$
+\mu=\bar a,\qquad R=\sqrt{\tfrac23\sum_i\left(a_i-\bar a\right)^{2}}=\sqrt2\,\sigma_a,\qquad
+\tan\delta=\frac{\sqrt3\left(a_2-a_1\right)}{2a_3-a_2-a_1},
+$$</p>
+<p>with the rungs ordered $a_1<a_2<a_3$ as in 14.11. Checked on $[1,2,4]$ and on $[1,1,10]$ the reconstruction is exact to machine precision, and on the leptons the error is $1.6\times10^{-14}$.</p>
+<p>The reason the form is natural is that it is a discrete Fourier transform. For a function on $Z_3$ the real Fourier basis has exactly three functions, $1$, $\cos$, $\sin$; there is no third distinct mode. So writing three real amplitudes as one constant plus one sinusoid is the only decomposition available, and it is forced rather than chosen. With $\hat a_k=\frac13\sum_{j=0}^{2}a_j e^{-2\pi ijk/3}$ and $(a_0,a_1,a_2)=(a_e,a_\mu,a_\tau)$,</p>
+<p>$$
+\hat a_0=\mu,\qquad \left|\hat a_1\right|=\frac{R}{2},\qquad \arg\hat a_1=\delta+\frac{2\pi}{3},
+$$</p>
+<p>verified to ten digits: $\mu=17.7155617$, $|\hat a_1|=12.5266782=R/2$, and $\arg\hat a_1=2.3166247=\delta+2\pi/3$. The offset $2\pi/3$ is the labelling convention of 14.11 and carries no content.</p>
+<p><strong>So $\mu$ is the mean and $(\frac{R}{2},\delta)$ are the modulus and argument of the first Fourier coefficient of the amplitude vector.</strong> The $2/9$ is the argument of a Fourier mode. This is a sharper statement of 14.9's "$\delta$ is the azimuth", and it is the cleanest form of the claim that $\delta$ is a coordinate.</p>
+<h3 id="163-the-two-shape-parameters-are-the-second-and-third-moments">16.3 The two shape parameters are the second and third moments</h3>
+<p><strong>[ALGEBRA]</strong> Shift to the mean and compute the moments of the three amplitudes:</p>
+<p>$$
+\sum_i\left(a_i-\mu\right)^{2}=\tfrac32R^{2},
+\qquad
+\sum_i\left(a_i-\mu\right)^{3}=\tfrac34R^{3}\cos3\delta .
+$$</p>
+<p>Both are verified on the leptons: $941.5060$ against $\frac32R^{2}=941.5060$, and $9268.547$ against $\frac34R^{3}\cos3\delta=9268.547$. Dividing by three,</p>
+<p>$$
+\sigma_a^{2}=\frac{R^{2}}{2},
+\qquad
+\cos3\delta=\frac{4}{3R^{3}}\sum_i\left(a_i-\mu\right)^{3}.
+$$</p>
+<p>This is the sentence the whole section turns on. <strong>The coefficient $k$ is the variance of the amplitudes in units of their mean; the phase $\cos3\delta$ is their third moment.</strong> Koide is a statement about the second moment; $\delta$ is the skewness direction, and it is the third moment because a symmetric triple has none.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>moment</th>
+<th>value in this language</th>
+<th>what fixes it</th>
+<th>measured (leptons)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>first</td>
+<td>$\sum_i(a_i-\mu)=0$</td>
+<td>the definition of $\mu$</td>
+<td>$0$ by construction</td>
+</tr>
+<tr>
+<td>second</td>
+<td>$\sum_i(a_i-\mu)^{2}=\frac32R^{2}$</td>
+<td>$k$, hence $Q$</td>
+<td>$941.506$</td>
+</tr>
+<tr>
+<td>third</td>
+<td>$\sum_i(a_i-\mu)^{3}=\frac34R^{3}\cos3\delta$</td>
+<td>$\cos3\delta$</td>
+<td>$9268.547$</td>
+</tr>
+</tbody>
+</table></div>
+<p>A triple has two shape degrees of freedom, so two moments exhaust it. Nothing else is free, and no fourth relation can be independent of the first three.</p>
+<h3 id="164-koide-is-math1145">16.4 Koide is $k=1$</h3>
+<p><strong>[ALGEBRA]</strong> From $Q=\sum m/(\sum\sqrt m)^{2}$ and the two sums of 14.9,</p>
+<p>$$
+\sum_i m_i=3\mu^{2}+\tfrac32R^{2},\qquad \left(\sum_i\sqrt{m_i}\right)^{2}=9\mu^{2},
+$$</p>
+<p>so with $R=\sqrt2\,k\,\mu$,</p>
+<p>$$
+Q=\frac{3\mu^{2}+3k^{2}\mu^{2}}{9\mu^{2}}=\frac{1+k^{2}}{3},
+\qquad
+k=\sqrt{3Q-1}.
+$$</p>
+<p>Verified: $k=0.99999077$ and $\sqrt{3Q-1}=0.99999077$ for the leptons. Three equivalent readings of Koide, all exact:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>reading</th>
+<th>statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the number</td>
+<td>$Q=2/3$</td>
+</tr>
+<tr>
+<td>the angle</td>
+<td>$\varphi=45^{\circ}$, 14.6</td>
+</tr>
+<tr>
+<td>the coefficient</td>
+<td>$k=1$</td>
+</tr>
+<tr>
+<td>the radius</td>
+<td>$R=\sqrt2\mu$, 14.9</td>
+</tr>
+</tbody>
+</table></div>
+<p>And the bound: $Q\le1$ is $k\le\sqrt2$, which is the "mathematically allowed region $0\le k_f\le\sqrt2$" that Ženczykowski quotes. So the ceiling on $Q$ is a ceiling on the coefficient, and 14.4's cone is the surface $k=1$ in the $(\mu,R)$ plane.</p>
+<h3 id="165-the-cubic-whose-roots-are-the-amplitudes">16.5 The cubic whose roots are the amplitudes</h3>
+<p><strong>[ALGEBRA]</strong> The three amplitudes are the three roots of one cubic, and writing it out shows exactly how much the phase can do. Using the three symmetric sums,</p>
+<p>$$
+\prod_i a_i=\mu^{3}-\tfrac34\mu R^{2}+\tfrac14R^{3}\cos3\delta,
+$$</p>
+<p>the polynomial is</p>
+<p>$$
+t^{3}-3\mu\,t^{2}+\left(3\mu^{2}-\tfrac34R^{2}\right)t-\left(\mu^{3}-\tfrac34\mu R^{2}+\tfrac14R^{3}\cos3\delta\right)=0 .
+$$</p>
+<p>For the leptons it is $t^{3}-53.146685\,t^{2}+470.770383\,t-309.733781$, and each amplitude evaluates it to order $10^{-11}$.</p>
+<p><strong>$\delta$ enters only through $\cos3\delta$.</strong> So the unordered triple $\{a_1,a_2,a_3\}$ is a function of $(\mu,R,\cos3\delta)$ and of nothing else. The phase has a sixfold ambiguity, and it is the symmetry group of three objects:</p>
+<p>$$
+\delta\sim\pm\delta+\frac{2\pi n}{3},\qquad n=0,1,2,
+$$</p>
+<p>six images, verified numerically: $\delta=0.22223$, $-\delta$, $\delta+120^{\circ}$, $-\delta+120^{\circ}$ and $\delta+240^{\circ}$ all give the same three amplitudes in some order, and all give $\cos3\delta=0.7858735$.</p>
+<p>The two generators have a meaning worth stating. Adding $120^{\circ}$ <strong>relabels the rungs cyclically</strong> and changes nothing physical. Sending $\delta\to-\delta$ <strong>mirrors the triple</strong>, which is why the sign of $\delta$ is not a measurable quantity. That is the origin of 14.11's warning that $2/9$ means nothing without a convention: the convention is a choice of one point in a sixfold orbit.</p>
+<h3 id="166-positivity-the-window-and-the-cone">16.6 Positivity, the window, and the cone</h3>
+<p><strong>[ALGEBRA]</strong> Each amplitude is $\mu\left(1+\sqrt2k\cos\left(\delta+2\pi i/3\right)\right)$, so all three are positive exactly when</p>
+<p>$$
+\cos\left(\delta+\frac{2\pi i}{3}\right)>-\frac{1}{\sqrt2\,k}
+\qquad\text{for } i=1,2,3 .
+$$</p>
+<p>At $k=1$ the threshold is $-1/\sqrt2$ and the window is $\delta\in(-15^{\circ},15^{\circ})$ modulo $120^{\circ}$, as 14.13 states, with the node at $15^{\circ}$. At $k=0$ the window is everything and the triple is degenerate. So <strong>increasing $k$ widens the hierarchy and narrows the allowed phase</strong>, and $k=1$ sits between the two limits.</p>
+<p>Two consequences.</p>
+<ul>
+<li>$k\le\sqrt2$ is the point at which the window closes at $\delta=0$; beyond it no triple of positive amplitudes exists. That is 14.4's $Q\le1$ again.</li>
+<li>Amplitudes may be allowed to go negative, as 1111.7232 does for the strange–charm–bottom tuple. In this language that is $\delta$ outside the window, and the triple then sits on the far side of the cone of 14.8. The parametrisation does not care; only positivity does.</li>
+</ul>
+<p>One measurement of the distance to the boundary is worth recording, since it is exact and slightly surprising. With the up-quark masses at $2$ GeV the coefficient is $k=1.2430$, the phase is $\delta=0.0743$ rad, and the boundary sits at $0.0816$ rad. <strong>The up sector lies $0.4^{\circ}$ from the value of $\delta$ at which $m_u$ vanishes.</strong> That is not a new coincidence: it is another way of saying $m_u/m_t\approx1.3\times10^{-5}$, seen from the node. It does explain why the up-sector phase is the most sensitive number in the table of 16.7: it is read off an amplitude that is nearly zero.</p>
+<h3 id="167-the-measured-values-sector-by-sector">16.7 The measured values, sector by sector</h3>
+<p><strong>[MEASURED]</strong> The two shape parameters, extracted from the masses and compared with the short fractions the literature proposes:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>masses (MeV)</th>
+<th>$k$</th>
+<th>$\delta$ (rad)</th>
+<th>$Q$</th>
+<th>target</th>
+<th>gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>charged leptons</td>
+<td>$0.511$, $105.658$, $1776.86$</td>
+<td>$0.99999$</td>
+<td>$0.222230$</td>
+<td>$0.6666605$</td>
+<td>$2/9=0.222222$</td>
+<td>$7.4\times10^{-6}$</td>
+</tr>
+<tr>
+<td>up</td>
+<td>$2.16$, $1270$, $172690$</td>
+<td>$1.2438$</td>
+<td>$0.074395$</td>
+<td>$0.848981$</td>
+<td>$2/27=0.074074$</td>
+<td>$3.2\times10^{-4}$</td>
+</tr>
+<tr>
+<td>down</td>
+<td>$4.67$, $93.4$, $4190$</td>
+<td>$1.0931$</td>
+<td>$0.110033$</td>
+<td>$0.731658$</td>
+<td>$4/27=0.148148$</td>
+<td>$3.8\times10^{-2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The lepton row is the relation of §1 restated. The up row is a genuine near-hit at the $0.4\%$ level: $\delta_U$ is $2/27$ to three parts in a thousand, which is what suggests $\delta_L/3$. The down row fails by $26\%$, and it is also the row whose inputs are the least well determined: with the alternative set $d=4.95$, $s=115$ MeV the phase moves to $0.1257$, still far from $4/27$. <strong>So the phase pattern is two for three, and the failure is in the sector with the worst mass measurements.</strong> That is the honest reading, and it is weaker than the relation $Q=2/3$, which is one for one at six parts in a million.</p>
+<h3 id="168-the-one-systematic-attempt-math1240-from-hypercharge">16.8 The one systematic attempt: $\delta$ from hypercharge</h3>
+<p><strong>[PUBLISHED]</strong> Ženczykowski proposes that the phase is fixed by two quantum numbers,</p>
+<p>$$
+\delta\left(I_3=-\tfrac12,Y\right)=\frac{1}{9}\left(1+\left|Y\right|\right),
+\qquad
+\delta\left(I_3=+\tfrac12,Y\right)=\frac{1}{9}\left(1-\left|Y\right|\right),
+$$</p>
+<p>with the sum rule $\delta_L+\delta_\nu=\delta_U+\delta_D$. The convention on $Y$ is part of the claim, and it is the doubled one, $Y=2\left(Q-T_3\right)$; in that convention</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>fermion</th>
+<th>$I_3$</th>
+<th>$\left|Y\right|$</th>
+<th>rule</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>charged lepton</td>
+<td>$-\tfrac12$</td>
+<td>$1$</td>
+<td>$\frac19(1+1)$</td>
+<td>$2/9$ ✓</td>
+</tr>
+<tr>
+<td>neutrino</td>
+<td>$+\tfrac12$</td>
+<td>$1$</td>
+<td>$\frac19(1-1)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>up quark</td>
+<td>$+\tfrac12$</td>
+<td>$\tfrac13$</td>
+<td>$\frac19\left(1-\tfrac13\right)$</td>
+<td>$2/27$ ✓</td>
+</tr>
+<tr>
+<td>down quark</td>
+<td>$-\tfrac12$</td>
+<td>$\tfrac13$</td>
+<td>$\frac19\left(1+\tfrac13\right)$</td>
+<td>$4/27$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and the sum rule holds exactly: $2/9+0=2/9$ and $2/27+4/27=6/27=2/9$. <strong>So the rule is internally consistent, and it is three for four against the data</strong> — the miss being $\delta_D$, at the $26\%$ of 16.7.</p>
+<p>Two remarks. The rule converts $2/9$ from a fitted fraction into a function of two quantum numbers, which is the strongest attempt in the folder to explain the phase rather than measure it. And it does so without any dynamics: it is a numerology of the Standard Model's own labels, exact for three sectors and wrong for the fourth, and it predicts $\delta_\nu=0$, which the form then forces onto a degenerate neutrino pair.</p>
+<h3 id="169-the-second-relation-math1269-is-not-independent">16.9 The second relation $\kappa=1/486$ is not independent</h3>
+<p><strong>[ALGEBRA]</strong> Koide's review states a second relation beside the first,</p>
+<p>$$
+\kappa\equiv\frac{\sqrt{m_em_\mu m_\tau}}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^{3}}=\frac{\det\Phi}{[\Phi]^{3}}=\frac{1}{2\cdot3^{5}}=\frac{1}{486},
+$$</p>
+<p>with $486=2\cdot3^{5}$ offered as a combinatorial value. In the $Z_3$ language $\kappa$ has a closed form, because it is a symmetric function of the amplitudes:</p>
+<p>$$
+\kappa=\frac{1}{27}\left(1-\tfrac32k^{2}+\tfrac{\sqrt2}{2}k^{3}\cos3\delta\right),
+$$</p>
+<p>verified exactly: the formula gives $0.00206329$ against the direct $0.00206329$.</p>
+<p>Three consequences follow, and the third is the important one.</p>
+<ol>
+<li><strong>The measured value is $1/484.66$, not $1/486$.</strong> The gap is $0.28\%$, which is two hundred times the $1.4\times10^{-5}$ of the first relation. On the same data, $\kappa$ is a weak statement where $Q=2/3$ is a strong one.</li>
+<li><strong>$\kappa=1/486$ is a statement about $\delta$, not a new fact.</strong> Setting $k=1$ and $\kappa=1/486$ gives $\cos3\delta=0.78567$, hence $\delta=0.222337$, against the measured $0.222230$ and $2/9=0.222222$. So $\kappa=1/486$ picks out a phase between the measured one and $2/9$, at a precision of $10^{-4}$.</li>
+<li><strong>It cannot be independent.</strong> A triple has two shape parameters, so $\kappa$ is a function of $(k,\delta)$ and nothing else. There are at most two independent relations among three masses beyond the choice of scale, and $Q$ and $\kappa$ use both. A third would be a consequence.</li>
+</ol>
+<p>That is the count 14.16 needed: <strong>the two relations are not two coincidences, they are the two coordinates.</strong> $Q=2/3$ fixes $k$; $\kappa$ fixes $\cos3\delta$; together they fix the triple up to scale. Calling both "amazing" double-counts the same evidence, and calling $2/9$ a third coincidence over-counts it again.</p>
+<h3 id="1610-what-the-form-does-not-do">16.10 What the form does not do</h3>
+<ol>
+<li><strong>It does not produce $2/9$.</strong> The parametrisation is exact for every triple, so nothing in it selects one phase. Everything in 16.7 and 16.8 is a fit or a rule, and the rule misses a sector.</li>
+<li><strong>The $\sqrt2$ in the quoted form is Koide, not dynamics.</strong> Written as $\mu\left(1+\sqrt2\cos(\cdots)\right)$ the formula contains the relation it is used to test; the general form needs $k$, and $k$ is the thing to be explained.</li>
+<li><strong>It is not evidence for a tower.</strong> The $2\pi/3$ spacing is the dimension of the space, by 14.10, so the presence of $2\pi/3$ in the formula says nothing about three generations being generated dynamically.</li>
+<li><strong>It does not remove the ordering puzzle.</strong> By 16.5 the unordered triple depends on $\cos3\delta$ only, so which rung carries which $i$ is pure convention; the physical content of the phase is one number in $[0,\pi/3]$.</li>
+<li><strong>The one route that computes $2/9$ is outside this language.</strong> Shulga's Green's function on a $Z_3$-sampled circle gives $\sum_{n\ge1}\left(1-\cos2\pi n/3\right)/n^{2}=2\pi^{2}/9$, an exact lattice constant, and then $\theta_\ell=-2\lambda_B/9$ with $\lambda_B$ free. That is the only derivation in the folder, and it is a derivation up to one coefficient.</li>
+</ol>
+<h3 id="1611-checks-made-inside-this-section">16.11 Checks made inside this section</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the reconstruction</td>
+<td>leptons from $(\mu,R,\delta)$</td>
+<td>error $1.6\times10^{-14}$</td>
+</tr>
+<tr>
+<td>the reconstruction</td>
+<td>$[1,2,4]$, $[1,1,10]$</td>
+<td>exact to machine precision</td>
+</tr>
+<tr>
+<td>the Fourier modulus</td>
+<td>$2\lvert\hat a_1\rvert$ against $R$</td>
+<td>$25.0533563$ both</td>
+</tr>
+<tr>
+<td>the Fourier argument</td>
+<td>$\arg\hat a_1$ against $\delta+2\pi/3$</td>
+<td>$2.3166247$ both</td>
+</tr>
+<tr>
+<td>the second moment</td>
+<td>$\sum(a-\mu)^{2}$ against $\frac32R^{2}$</td>
+<td>$941.5060$ both</td>
+</tr>
+<tr>
+<td>the third moment</td>
+<td>$\sum(a-\mu)^{3}$ against $\frac34R^{3}\cos3\delta$</td>
+<td>$9268.547$ both</td>
+</tr>
+<tr>
+<td>the variance</td>
+<td>$\sigma_a$ against $R/\sqrt2$</td>
+<td>$17.715398$ both</td>
+</tr>
+<tr>
+<td>the coefficient</td>
+<td>$k$ against $\sqrt{3Q-1}$</td>
+<td>$0.99999077$ both</td>
+</tr>
+<tr>
+<td>the Koide form</td>
+<td>$(1+k^{2})/3$ against $Q$</td>
+<td>$0.66666051$ both</td>
+</tr>
+<tr>
+<td>the cubic</td>
+<td>polynomial at each amplitude</td>
+<td>$\le1.3\times10^{-11}$</td>
+</tr>
+<tr>
+<td>the orbit</td>
+<td>five images of $\delta$</td>
+<td>same triple, $\cos3\delta=0.7858735$</td>
+</tr>
+<tr>
+<td>the ceiling</td>
+<td>$k$ at $\delta=0$ against $\sqrt2$</td>
+<td>$1.414214$ both</td>
+</tr>
+<tr>
+<td>the window</td>
+<td>$1+\sqrt2\cos\left(\pm15^{\circ}+240^{\circ}\right)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the up-sector edge</td>
+<td>$\delta$ against the boundary</td>
+<td>$0.0743$ against $0.0816$</td>
+</tr>
+<tr>
+<td>the $\kappa$ formula</td>
+<td>closed form against direct</td>
+<td>$0.00206329$ both</td>
+</tr>
+<tr>
+<td>the $\kappa$ phase</td>
+<td>$\delta$ from $\kappa=1/486$</td>
+<td>$0.222337$</td>
+</tr>
+<tr>
+<td>the hypercharge sum rule</td>
+<td>$2/9+0$ against $2/27+4/27$</td>
+<td>$6/27$ both</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="17-the-general-form-math1364-rungs-and-why-the-phase-is-a-circle-only-at-math1365">17. The General Form: $N$ Rungs, and Why the Phase Is a Circle Only at $N=3$</h2>
+<p><em>Scope.</em> §16 wrote the parametrisation for three amplitudes and said, in passing, that the $Z_3$ cosine is a Fourier transform. This section does the same job for any number of rungs. The general form is not an extrapolation of the $Z_3$ formula: it is the same Fourier decomposition written once, with $N$ in place of $3$, and the $Z_3$ cosine is the special case $N=3$. Two results come out that §16 could not state. The first is that Koide's condition is dimension-free: $\sigma_a=\bar a$ in every $N$, and $2/N$ follows. The second is a reason why $2/9$ exists at all, and why it cannot be generalised.</p>
+<h3 id="171-the-general-form">17.1 The general form</h3>
+<p><strong>[ALGEBRA]</strong> Write the $N$ amplitudes $a_i=\sqrt{m_i}$, $i=0,\dots,N-1$. The real Fourier basis on $Z_N$ has exactly $N$ functions, so the decomposition</p>
+<p>$$
+a_i=\mu+\sum_{r=1}^{\lfloor (N-1)/2\rfloor}R_r\cos\left(\phi_r+\frac{2\pi r i}{N}\right)
+\;+\;
+\begin{cases}
+\rho\,(-1)^{i}, & N \text{ even},\\[2pt]
+0, & N \text{ odd},
+\end{cases}
+$$</p>
+<p>is exact for every spectrum, with $1+2\lfloor (N-1)/2\rfloor+\left[N\text{ even}\right]=N$ real parameters. Here $\mu$ is the mean of the amplitudes, $R_r\ge0$, and $\rho\in\mathbb{R}$ is signed. I verified the round trip on random spectra for $N=1,\dots,7$: the largest error is $1.1\times10^{-14}$.</p>
+<p>Three remarks on the shape of this.</p>
+<ol>
+<li><strong>The last term is real, so the even case has no phase in its top mode, only a sign.</strong> Fixing the sign convention is what makes $N=2$ a one-parameter family, below.</li>
+<li><strong>The modes are orthogonal over $Z_N$:</strong> $\sum_i\cos\left(\phi_r+2\pi r i/N\right)\cos\left(\phi_s+2\pi s i/N\right)=\frac{N}{2}\delta_{rs}$ for $r,s<N/2$, and the Nyquist mode has norm $N$. That is what makes 17.2 a two-line proof.</li>
+<li><strong>$N=3$ is the only case with one mode.</strong> Then $\lfloor (N-1)/2\rfloor=1$, there is no relative amplitude to choose, and the shape is $\mu$, one $R_1$, one $\phi_1$. Dividing out the scale leaves a point on a circle. <strong>That is where $\delta$ comes from, and it is where it stops.</strong></li>
+</ol>
+<p>Normalising the shape out of the radial parameters gives the form that carries the physics:</p>
+<p>$$
+\boxed{\;a_i=\bar a\left(1+k\,n_i\right),\qquad \sum_i n_i=0,\quad \sum_i n_i^{2}=N,\quad k=\frac{\sigma_a}{\bar a}\;}
+$$</p>
+<p>with $\sigma_a$ the standard deviation of the amplitudes. For $N=3$ this is $\mu\left(1+\sqrt2k\cos\left(\delta+2\pi i/3\right)\right)$ times nothing else, which is 16.1 with the relation between $k$ and $R$ made explicit.</p>
+<h3 id="172-the-proof-of-math1405-in-two-lines-for-every-math1406">17.2 The proof of $Q_N$, in two lines, for every $N$</h3>
+<p><strong>[ALGEBRA]</strong> By the parallel-axis identity, which needs only $\sum_i\left(a_i-\bar a\right)=0$,</p>
+<p>$$
+\sum_i a_i^{2}=N\bar a^{2}+\sum_i\left(a_i-\bar a\right)^{2}=N\bar a^{2}\left(1+\frac{\sigma_a^{2}}{\bar a^{2}}\right),
+\qquad
+\left(\sum_i a_i\right)^{2}=N^{2}\bar a^{2}.
+$$</p>
+<p>Therefore</p>
+<p>$$
+Q_N\equiv\frac{\sum_i m_i}{\left(\sum_i\sqrt{m_i}\right)^{2}}=\frac{\sum_i a_i^{2}}{\left(\sum_i a_i\right)^{2}}=\frac{1}{N}\left(1+k^{2}\right),
+\qquad k=\frac{\sigma_a}{\bar a}=\sqrt{NQ_N-1}.
+$$</p>
+<p>Verified on $500$ random spectra for each $N$ from $1$ to $7$: the largest relative error is $5\times10^{-16}$.</p>
+<p><strong>This is the general form of Koide's relation, and it is dimension-free.</strong> Everything §14 derived for $N=3$ is the case $N=3$ of one statement.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>statement</th>
+<th>$N=3$ (§14, §16)</th>
+<th>general $N$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Koide</td>
+<td>$Q=2/3$</td>
+<td>$Q_N=2/N$</td>
+</tr>
+<tr>
+<td>coefficient</td>
+<td>$k=1$</td>
+<td>$k=1$</td>
+</tr>
+<tr>
+<td>variance</td>
+<td>$\sigma_a=\bar a$</td>
+<td>$\sigma_a=\bar a$</td>
+</tr>
+<tr>
+<td>angle to the diagonal</td>
+<td>$\varphi=45^{\circ}$</td>
+<td>$\varphi=45^{\circ}$</td>
+</tr>
+<tr>
+<td>the value $Q$</td>
+<td>$(1+k^{2})/3$</td>
+<td>$(1+k^{2})/N$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So <strong>Koide's relation is exactly "the spread of the amplitudes equals their mean", and the value $2/N$ is a consequence of the $1/N$ in the normalisation, not a separate fact.</strong> The $2$ in $2/N$ is $k^{2}=1$.</p>
+<h3 id="173-the-bounds-and-why-math1435-cannot-close">17.3 The bounds, and why $N=2$ cannot close</h3>
+<p><strong>[ALGEBRA]</strong> Two limits bracket the coefficient.</p>
+<ul>
+<li>$k=0$ is the degenerate spectrum, $Q_N=1/N$.</li>
+<li>$k$ is largest when one amplitude carries everything, $a_0\to\infty$ with the other $N-1$ equal. Then $\sigma_a/\bar a\to\sqrt{N-1}$, and $Q_N\to1$.</li>
+</ul>
+<p>$$
+0\le k\le\sqrt{N-1},
+\qquad
+\frac{1}{N}\le Q_N\le 1 .
+$$</p>
+<p>Verified: with $a=(A,1,\dots,1)$ and $A=10^{6}$, $k$ equals $\sqrt{N-1}$ to six digits for $N=2,\dots,7$ — $0.999998$, $1.414209$, $1.732044$, $1.999990$, $2.236055$, $2.449473$. The upper bound on $k$ is the bound $Q\le1$ of 14.4, now for every $N$.</p>
+<p>At $N=2$ the parametrisation is explicit and the closure is empty:</p>
+<p>$$
+a_1=\bar a(1+k),\qquad a_2=\bar a(1-k),\qquad k=\frac{\left|a_1-a_2\right|}{a_1+a_2},
+\qquad Q_2=\frac{1+k^{2}}{2}.
+$$</p>
+<p>So $Q_2=2/2=1$ requires $k=1$ exactly, and $k=1$ means $a_2=0$. Verified: at $k=1$ the amplitudes are $(2\bar a,0)$.</p>
+<p><strong>Hence $Q=2/N$ with all masses strictly positive requires $N\ge3$, and this is a cleaner proof than 2.2's.</strong> The reason is not the arithmetic of $2/N$ but the fact that a two-point set cannot have a spread equal to its mean without losing a member. For $N\ge3$ it can: at the most uniform direction, $k=1$ leaves a smallest amplitude of $0.2929\bar a$ at $N=3$ and $0.5528\bar a$ at $N=6$.</p>
+<h3 id="174-the-closure-is-math1475-in-every-dimension">17.4 The closure is $45^{\circ}$ in every dimension</h3>
+<p><strong>[ALGEBRA]</strong> With $\vec u=(1,\dots,1)$ and $\vec a$ in $N$ dimensions, $\vec u\cdot\vec a=\sqrt{N}\left|\vec a\right|\cos\varphi$, so</p>
+<p>$$
+Q_N=\frac{\left|\vec a\right|^{2}}{\left(\vec u\cdot\vec a\right)^{2}}=\frac{1}{N\cos^{2}\varphi}.
+$$</p>
+<p>So Foot's angle is not a three-dimensional accident:</p>
+<p>$$
+Q_N=\frac{2}{N}\iff\cos^{2}\varphi=\frac12\iff\varphi=45^{\circ},
+$$</p>
+<p>in every dimension. Verified at the closure point for $N=2,\dots,6$: $Q_N=2/N$ to $10^{-8}$ and $\varphi=45.0000^{\circ}$ each time.</p>
+<p>What changes with $N$ is the <em>range</em> of $\varphi$. It runs from $0$ on the diagonal to $\arccos\left(1/\sqrt N\right)$ in the fully hierarchical limit, which is $45.0000^{\circ}$ at $N=2$, $54.7356^{\circ}$ at $N=3$, $60.0000^{\circ}$ at $N=4$ and tends to $90^{\circ}$. <strong>So $45^{\circ}$ is interior for $N\ge3$ and is the endpoint at $N=2$</strong>, which is a third way to reach 17.3: the closure sits exactly where the two-point spectrum loses a member. The cone 14.4 drew is the locus $\varphi=45^{\circ}$, and it exists in every dimension; the leptons sit on it at $N=3$.</p>
+<h3 id="175-the-first-four-cases-written-out">17.5 The first four cases, written out</h3>
+<p><strong>[ALGEBRA]</strong> The same construction, one line each. Here $a_i=\sqrt{m_i}$ and $\bar a$ is their mean.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>general form</th>
+<th>free parameters</th>
+<th>shape</th>
+<th>$Q_N$</th>
+<th>$Q_N=2/N$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$a=\bar a$</td>
+<td>$1$</td>
+<td>none</td>
+<td>$1$</td>
+<td>needs $Q=2$, impossible</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$a_i=\bar a\left(1\pm k\right)$</td>
+<td>$2$</td>
+<td>one number, one sign</td>
+<td>$(1+k^{2})/2$</td>
+<td>$k=1$, one mass zero</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$a_i=\bar a\left(1+\sqrt2\,k\cos\left(\delta+\tfrac{2\pi i}{3}\right)\right)$</td>
+<td>$3$</td>
+<td>a circle</td>
+<td>$(1+k^{2})/3$</td>
+<td>$k=1$, all three positive</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$a_i=\bar a+R_1\cos\left(\phi_1+\tfrac{\pi i}{2}\right)+\rho(-1)^{i}$</td>
+<td>$4$</td>
+<td>a two-sphere</td>
+<td>$(1+k^{2})/4$</td>
+<td>$k=1$, all four positive</td>
+</tr>
+</tbody>
+</table></div>
+<p>The $N=3$ row is 16.1 exactly. The $N=4$ row is the first case with two independent shape numbers beyond $k$, and it shows why nothing like $2/9$ can be expected there: there is a second angle to be fixed, and no single number plays its role.</p>
+<p>Two exact checks of the table, on constructed spectra. At $N=2$ with $k=0.5$ the amplitudes are $(1.5,0.5)\bar a$ and $Q=0.625=(1+0.25)/2$. At $N=4$ with $\bar a=5$, $R_1=1$, $\phi_1=0.3$, $\rho=0.4$ the amplitudes are $(6.3553,4.3045,4.4447,4.8955)$ and $Q=0.2566000000$ against $(1+k^{2})/4=0.2566000000$ with $k=0.162481$.</p>
+<h3 id="176-the-phase-lives-on-math1544">17.6 The phase lives on $S^{N-2}$</h3>
+<p><strong>[ALGEBRA]</strong> The direction vector $\vec n$ in 17.1 has a zero sum, which puts it in an $(N-1)$-dimensional hyperplane, and a fixed norm, which cuts a sphere there. So it ranges over $S^{N-2}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>hyperplane</th>
+<th>direction on</th>
+<th>angles</th>
+<th>what the phase is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$0$-dimensional</td>
+<td>a point</td>
+<td>$0$</td>
+<td>nothing to fix</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$1$-dimensional</td>
+<td>$S^{0}$</td>
+<td>$0$</td>
+<td>a sign, not an angle</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$2$-dimensional</td>
+<td>$S^{1}$</td>
+<td>$1$</td>
+<td>$\delta$, a circle</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$3$-dimensional</td>
+<td>$S^{2}$</td>
+<td>$2$</td>
+<td>two angles, a sphere</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$4$-dimensional</td>
+<td>$S^{3}$</td>
+<td>$3$</td>
+<td>three angles</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>$\delta$ is a phase because $N-2=1$, and $N-2=1$ happens only at $N=3$.</strong> This is the sharp form of the point §16 made about the Fourier basis, and it answers a question the literature leaves implicit: why is there a single phase angle to be explained at all?</p>
+<ol>
+<li>At $N=2$ there is no continuous shape parameter besides $k$, so a "phase" would have to be a sign.</li>
+<li>At $N=3$ there is exactly one angle, and the relation $Q=2/3$ fixes $k$ without touching it. So the phase is <em>free</em>, <em>one-dimensional</em>, and <em>measurable</em> — the three conditions for something like $2/9$ to be a puzzle.</li>
+<li>At $N\ge4$ the shape is a point on a sphere of dimension at least two, so even if some analogue of the closure held, its "phase" would be a pair of numbers, and a claim like $\delta=2/9$ would be incomplete rather than wrong.</li>
+</ol>
+<p><strong>So $2/9$ is a quantity that exists only because there are three generations.</strong> That is a different statement from §14's, which is that the $120^{\circ}$ spacing is a projection. Both are true: the spacing comes from the dimension of the space, and the phase is one coordinate of a circle that exists only in that dimension.</p>
+<h3 id="177-what-the-general-form-settles">17.7 What the general form settles</h3>
+<p><strong>[ALGEBRA]</strong> Four items from earlier sections now have one-line proofs.</p>
+<ol>
+<li><strong>$N\ge3$ (2.2, 17.3).</strong> $Q=2/N$ with positive masses needs $k=1$, and $k=1$ at $N=2$ kills an amplitude. Arithmetic, not dynamics.</li>
+<li><strong>The midpoint (14.16.3).</strong> $Q_N\in\left[1/N,1\right]$, so the midpoint is $\left(1+1/N\right)/2$, and $2/N$ equals it only when $\frac{2}{N}=\frac{1}{2}\left(1+\frac{1}{N}\right)$, i.e. $N=3$. The uniqueness claim of 14.16.3 is now a one-line check rather than a numerical observation. As an aside, $N=4$ has its own distinction — there $2/N=1/\sqrt N$, the geometric mean of the endpoints — which shows the pattern of 14.16 is not that $2/N$ is privileged, but that $N=3$ is.</li>
+<li><strong>The count in 14.16.7 and 16.9.</strong> A spectrum with $N$ members has $N-1$ shape parameters. At $N=3$ that is two, and $Q$ plus $\kappa$ use both. The count was done at $N=3$; it is now a special case of "$N-1$ shape parameters, of which $Q$ uses one".</li>
+<li><strong>Foot's angle (14.4, 17.4).</strong> $\varphi=45^{\circ}$ is the closure in every dimension, so the cone is not a feature of three-dimensional space.</li>
+</ol>
+<h3 id="178-what-it-does-not-settle">17.8 What it does not settle</h3>
+<ol>
+<li><strong>It does not produce $2/9$ at $N=3$.</strong> The general form is exact for every spectrum in every dimension, so it selects no phase. The phase count changes, the derivation does not appear.</li>
+<li><strong>The number of rungs is put in by hand.</strong> $N$ is an input, so the statement "$2/9$ exists only because $N=3$" says nothing about <em>why</em> $N=3$. The relation between the two facts is one of consistency, not of explanation.</li>
+<li><strong>It says nothing about which sector closes.</strong> $Q=2/N$ at $N=3$ is satisfied by the leptons and not by either quark triplet, and the general form has no way to prefer one sector: all three are $N=3$ spectra.</li>
+<li><strong>The $N\to\infty$ limit is not a continuum limit here.</strong> Sending $N$ large with $k$ fixed gives $Q_N\to0$, so the closure value degenerates rather than tending to anything; §8's continuum pass is a different construction.</li>
+</ol>
+<h3 id="179-checks-made-inside-this-section">17.9 Checks made inside this section</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the general form is complete</td>
+<td>Fourier round trip, $N=1\dots7$</td>
+<td>error $\le1.1\times10^{-14}$</td>
+</tr>
+<tr>
+<td>$Q_N=(1+k^{2})/N$</td>
+<td>$500$ random spectra per $N$</td>
+<td>rel. error $\le5\times10^{-16}$</td>
+</tr>
+<tr>
+<td>$k_{\max}=\sqrt{N-1}$</td>
+<td>$a=(10^{6},1,\dots,1)$</td>
+<td>six digits, $N=2\dots7$</td>
+</tr>
+<tr>
+<td>$Q_N\to1$ at $k_{\max}$</td>
+<td>same spectra</td>
+<td>$0.99999$</td>
+</tr>
+<tr>
+<td>$N=2$ closure kills a mass</td>
+<td>$k=1$</td>
+<td>amplitudes $(2\bar a,0)$</td>
+</tr>
+<tr>
+<td>$N=3$ closure keeps three positive</td>
+<td>$k=1$, most uniform direction</td>
+<td>smallest $0.2929\bar a$</td>
+</tr>
+<tr>
+<td>$N=6$ closure keeps six positive</td>
+<td>$k=1$, most uniform direction</td>
+<td>smallest $0.5528\bar a$</td>
+</tr>
+<tr>
+<td>$Q_N=1/(N\cos^{2}\varphi)$</td>
+<td>closure point, $N=2\dots6$</td>
+<td>$45.0000^{\circ}$ each</td>
+</tr>
+<tr>
+<td>$Q_N=2/N$ is the midpoint only at $N=3$</td>
+<td>$\frac{2}{N}=\frac{1}{2}\left(1+\frac{1}{N}\right)$</td>
+<td>$N=3$ only</td>
+</tr>
+<tr>
+<td>parameter count</td>
+<td>$1+2\lfloor (N-1)/2\rfloor+\left[N\text{ even}\right]$</td>
+<td>equals $N$, $N=1\dots7$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="18-the-mechanism-why-the-lepton-has-no-flavour-to-change">18. The Mechanism: Why the Lepton Has No Flavour to Change</h2>
+<p><em>Scope.</em> Sections 14 to 17 compute the shape of a closed tower of amplitudes. They take the rungs as given and ask how their masses are spaced. None of them asks a different question, which this section does: <strong>what turns one rung into another?</strong> For the leptons the answer is nothing, and the reason is not dynamical. It is that the only rotation in the gauge sector is a rotation of the spatial triple, and the lepton is the axis of that rotation and not a member of it.</p>
+<p>This is the mechanism behind the statement in <em>The Fourth-Colour Lepton</em> that there is no flavour change. It is short, it is exact given one declaration, and its exactness is the point: a claim of "no violation" should rest on a computed stabiliser, not on a null measurement.</p>
+<h3 id="181-the-split-and-the-one-declaration-it-needs">18.1 The split, and the one declaration it needs</h3>
+<p><strong>[ALGEBRA]</strong> The carrier is four-dimensional over $\mathbb C$, spanned by the biquaternion units in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$. The algebra supplies exactly one canonical splitting into a line and a hyperplane:</p>
+<p>$$
+\mathbf 4=\mathbb C e_t\oplus B_V,\qquad B_V=\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}.
+$$</p>
+<p>It is canonical because $e_t=1$ is the identity: it commutes with everything, so the line it spans is invariant under every inner derivation the algebra has, and its orthogonal complement is invariant with it. No other unit has that property — the three $\vec e_a$ square to $-e_t$ and permute among themselves, so no line they span survives the action.</p>
+<p><strong>[ANSATZ]</strong> The declaration is (A) of the corpus: the line is the lepton and the hyperplane is the three quark colours. Nothing in the algebra prefers this labelling; it is the adoption the model rests on, and it is tagged here for the same reason it is tagged in <em>The Four Colours Left–Right Model</em>.</p>
+<p><strong>[ALGEBRA]</strong> The two halves are not the same kind of object, and their asymmetry is the asymmetry between the scalar unit and the vector units. $e_t$ is real, central, and squares to $+1$. The $\vec e_a$ are imaginary, anticommuting, and square to $-e_t$. So the lepton direction is temporal and the three colour directions are spatial, and everything below is a consequence of that one difference.</p>
+<h3 id="182-colour-is-the-stabiliser-of-the-line">18.2 Colour is the stabiliser of the line</h3>
+<p><strong>[ALGEBRA]</strong> Count the generators that annihilate $e_t$. Written on the quartet, the fifteen generators of $\mathfrak{su}(4)$ split by what they do to the line:</p>
+<p>$$
+\operatorname{Stab}_{\mathfrak{su}(4)}(\mathbb C e_t)=\mathfrak{su}(3),\qquad \dim=8 .
+$$</p>
+<p>These eight act on $B_V$ and give zero on the line. They are <em>the</em> colour group, and the identification is not a choice: the subgroup of $\mathrm{SU}(4)$ that fixes a line <em>is</em> $\mathrm{SU}(3)$, which is why the frame is $\mathrm{SU}(4)$ and not $\mathrm{SU}(3)\times\mathrm U(1)$.</p>
+<p>The reading matters. The statement "the three colours turn into each other" is exactly the statement that eight generators rotate $B_V$ and leave $\mathbb C e_t$ alone. A rotation of the triple is a rotation about the line, and an axis of rotation does not move. The leptons are the axis.</p>
+<h3 id="183-the-other-seven-one-phase-and-six-mixings">18.3 The other seven: one phase and six mixings</h3>
+<p><strong>[ALGEBRA]</strong> The remaining seven generators do not fix the line, and they do not all do the same thing to it.</p>
+<p>Of the other seven generators, one is the phase $iD$ with eigenvalues $(-3,1,1,1)$ — abelian, so it multiplies and never mixes — and six are the leptoquark directions, which take $e_t$ into $B_V$. So</p>
+<p>$$
+15=8+1+6 .
+$$</p>
+<p>The three pieces, with what each does to the lepton line:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>$\dim$</th>
+<th>what it does to $\mathbb C e_t$</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(3)$</td>
+<td>$8$</td>
+<td>annihilates it, acts on $B_V$</td>
+<td>colour</td>
+</tr>
+<tr>
+<td>$iD$, $D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>$1$</td>
+<td>multiplies it by a scalar</td>
+<td>the phase; $B-L=D/3$</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>$6$</td>
+<td>sends it into $B_V$</td>
+<td>the leptoquark sextet</td>
+</tr>
+</tbody>
+</table></div>
+<p>The phase deserves its own line. $D$ is traceless, and normalised by $1/3$ it gives the eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$ on $(e_t,\vec e_x,\vec e_y,\vec e_z)$: the lepton-number eigenvalue $-1$ and the baryon-number eigenvalue $\tfrac13$ three times. A generator whose eigenvalues are all different does not mix two directions — it multiplies each by a different number. That is what makes it abelian on this quartet and what makes $B-L$ a charge rather than a rotation.</p>
+<p>The six are the complement, $\mathfrak{su}(4)\ominus\left(\mathfrak{su}(3)\oplus\mathfrak u(1)\right)$, and they are the leptoquarks: $\dim\mathfrak{su}(4)=15$, and $15-8-1=6$, which is also the dimension of the antisymmetric pair of the triple, $\binom{3}{2}\cdot2=6$, and also the count $3+3$ of the $X$ and $\bar X$ of <em>Particle Classification</em>. Three independent counts, one number.</p>
+<h3 id="184-the-computation-no-generator-turns-a-lepton-into-a-lepton">18.4 The computation: no generator turns a lepton into a lepton</h3>
+<p><strong>[ALGEBRA]</strong> The three blocks are exhaustive, so the statement follows without further work. I checked it directly anyway, because a claim of this kind is cheap to check and expensive to get wrong. Take the quartet in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$, write the fifteen generators as antihermitian traceless matrices, and apply each to $e_t=(1,0,0,0)$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>family</th>
+<th>count</th>
+<th>image of $e_t$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the eight of $\mathfrak{su}(3)$</td>
+<td>$8$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the diagonal $iD$, and only it</td>
+<td>$1$</td>
+<td>a pure multiple of $e_t$, namely $-3ie_t$</td>
+</tr>
+<tr>
+<td>the off-diagonal $e_t$–$\vec e_a$ generators</td>
+<td>$6$</td>
+<td>a vector with zero $e_t$ component</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$15$</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p>No generator returns a direction on the line other than a real multiple of $e_t$, and none returns another point of the line in the sense of "another lepton". There is only one line. <strong>So the group cannot rotate one lepton into another, because there is no second lepton direction to rotate into.</strong></p>
+<h3 id="185-why-that-kills-flavour-as-a-rotation">18.5 Why that kills "flavour" as a rotation</h3>
+<p><strong>[ALGEBRA]</strong> A rotation needs at least two members. $\mathrm{SU}(3)$ rotates the three colours because there are three of them of the same kind; that is what a fundamental representation of dimension three means. The lepton is one line, so its representation of the stabiliser is the trivial one, and the trivial representation has no rotation in it.</p>
+<p>This is the mechanism, stated as a single sentence: <strong>the lepton does not turn because it is what the others turn about.</strong> Colour is a rotation group acting on a triplet; the lepton is a singlet of that group, and a singlet is a rotation-invariant object by definition.</p>
+<p>It also explains why the word "flavour" may be the wrong word for leptons. Flavour, in the quark sector, names a position inside a multiplet that a group rotates. The lepton has no such position. What it has is a generation index, which the algebra does not touch at all, and a mass, which it does not explain either.</p>
+<h3 id="186-what-the-generation-index-still-does">18.6 What the generation index still does</h3>
+<p><strong>[ALGEBRA]</strong> The gauge sector acts as the identity on the generation factor. So for each $a\in\{1,2,3\}$ there is a separate copy of the quartet, and the gauge bosons couple to all three copies the same way. Nothing in $\mathfrak{su}(4)$ connects copy 1 to copy 2.</p>
+<p><strong>[ANSATZ, from §7 and §14–17]</strong> The ladder supplies the masses of the copies: the rungs are generations, and their spacing is the arithmetic of the preceding sections. That arithmetic never moves a lepton from one rung to another; it only assigns a height to each rung.</p>
+<p><strong>[SPECULATION]</strong> So a lepton changes generation only if the Yukawa sector supplies a matrix acting on the generation factor, and the frame does not write it. Both outcomes are available: one bidoublet gives one Yukawa matrix and the identity, a second fermion-mass contribution splits the two matrices and gives something else. The corpus should not claim either.</p>
+<h3 id="187-the-two-facts-the-mechanism-does-not-explain">18.7 The two facts the mechanism does not explain</h3>
+<p><strong>[ALGEBRA]</strong> It does not explain why there are three generations. The stabiliser argument is about one quartet; the number three is a separate input, as <em>The Number of Generations and the Biquaternion Algebra</em> says.</p>
+<p><strong>[ALGEBRA]</strong> It does not explain why the neutrino mixes. Neutrino oscillation is real and is not a colour rotation: it is a misalignment between two mass matrices on the generation factor, which is the same object the charged-lepton sector leaves unwritten. The mechanism forbids a <em>gauge</em> rotation among leptons; it says nothing about a <em>Yukawa</em> misalignment. Confusing the two is the error this section exists to prevent, and it is the error that produced the corpus's earlier $K$-matrix article.</p>
+<h3 id="188-what-would-overturn-it">18.8 What would overturn it</h3>
+<p><strong>[ALGEBRA]</strong> One observation: any charged-lepton transition mediated by a gauge boson. A $\mu\to e\gamma$ or $K_L\to\mu e$ signal from the frame's own leptoquarks would say that the vertex carries a generation index, hence that the one-line-per-generation picture is incomplete, hence that the splitting of 18.1 is not the whole story. The mechanism is falsifiable in that single way, and no other.</p>
+<p>Conversely, a null result confirms nothing: with no lepton-to-lepton direction in $\mathfrak{su}(4)$, the rate is zero at every mass, and zero is what a null measurement returns for free. That asymmetry — one signal kills it, no number of nulls establishes it — is the honest status of the claim.</p>
+<h3 id="189-checks-made-inside-this-section">18.9 Checks made inside this section</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the split is canonical</td>
+<td>$e_t=1$ central, $\vec e_a^{2}=-e_t$</td>
+<td>only $\mathbb C e_t$ is invariant</td>
+</tr>
+<tr>
+<td>$\dim\mathfrak{su}(4)$</td>
+<td>$\binom{4}{2}\cdot2$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>the stabiliser</td>
+<td>generators annihilating $e_t$, explicit matrices</td>
+<td>$8$, and it is $\mathfrak{su}(3)$</td>
+</tr>
+<tr>
+<td>the phase count</td>
+<td>traceless diagonal, rank $3$</td>
+<td>one abelian direction, so the split is $8+1+6$</td>
+</tr>
+<tr>
+<td>the sextet count</td>
+<td>$\binom{3}{2}\cdot2$, and $15-8-1$</td>
+<td>$6$ and $6$</td>
+</tr>
+<tr>
+<td>$B-L$ eigenvalues</td>
+<td>$D/3$ with $D=\operatorname{diag}(-3,1,1,1)$</td>
+<td>$(-1,\tfrac13,\tfrac13,\tfrac13)$</td>
+</tr>
+<tr>
+<td>nothing turns a lepton</td>
+<td>image of $e_t$ under all fifteen</td>
+<td>$0$ (eight), $-3ie_t$ (one), in $B_V$ (six)</td>
+</tr>
+<tr>
+<td>trace of $D$</td>
+<td>$-3+1+1+1$</td>
+<td>$0$, so $D$ is a valid Cartan direction</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="notation">Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -2129,6 +2976,26 @@ $$</p>
 <td>the radius and the phase of the circle, 14.9</td>
 </tr>
 <tr>
+<td>$k$</td>
+<td>the coefficient of the $Z_3$ cosine, $k=\sigma_a/\bar a=\sqrt{NQ-1}$, 16.1, 17.2</td>
+</tr>
+<tr>
+<td>$\sigma_a$, $\bar a$</td>
+<td>the standard deviation and the mean of the $N$ amplitudes</td>
+</tr>
+<tr>
+<td>$Q_N$</td>
+<td>the closure ratio for $N$ rungs, $\frac1N(1+k^{2})$, 17.2</td>
+</tr>
+<tr>
+<td>$\vec n$</td>
+<td>the unit-modulus shape vector, $\sum n_i=0$, $\sum n_i^{2}=N$, 17.1</td>
+</tr>
+<tr>
+<td>$R_r$, $\phi_r$</td>
+<td>the amplitude and phase of the $r$-th Fourier mode over $Z_N$, 17.1</td>
+</tr>
+<tr>
 <td>$M$</td>
 <td>the square of the mean amplitude, $\bar a^{2}$</td>
 </tr>
@@ -2164,6 +3031,22 @@ $$</p>
 <td>$r_{*}$</td>
 <td>its fixed amplitude ratio, $(5+\sqrt{21})/2$, 15.6</td>
 </tr>
+<tr>
+<td>$e_t,\vec e_a$</td>
+<td>the biquaternion units, $e_t=1$ and $\vec e_a^{2}=-e_t$</td>
+</tr>
+<tr>
+<td>$B_V$</td>
+<td>the spatial triple $\operatorname{span}\{\vec e_x,\vec e_y,\vec e_z\}$, 18.1</td>
+</tr>
+<tr>
+<td>$D$</td>
+<td>$\operatorname{diag}(-3,1,1,1)$, the Cartan direction of $B-L$, 18.3</td>
+</tr>
+<tr>
+<td>$\mathfrak m$</td>
+<td>the six leptoquark directions, $\mathfrak{su}(4)\ominus(\mathfrak{su}(3)\oplus\mathfrak u(1))$, 18.3</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
@@ -2173,6 +3056,8 @@ $$</p>
 <li><a href="../articles_physics/particle-classification-three-grids-one-name-in-every-cell.html">Particle Classification: Three Grids, One Name in Every Cell</a>. One generation, and the module the ladder multiplies.</li>
 <li><a href="../articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>. Why the algebra cannot count rungs.</li>
 <li><a href="../articles_physics/the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html">The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation</a>. Where the masses enter as input.</li>
+<li><a href="../articles_physics/the-fourth-colour-lepton-one-operator-one-unknown-and-the-channels-that-cannot-see-it.html">The Fourth-Colour Lepton: One Operator, One Unknown, and the Channels That Cannot See It</a>. The public statement of §18, and what a lepton-to-lepton transition would look like if the mechanism were wrong.</li>
+<li><a href="../articles_physics/the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. Where declaration (A) is made, and the $15=8+1+6$ split with its consequences.</li>
 </ul>
       </div>
     </main>

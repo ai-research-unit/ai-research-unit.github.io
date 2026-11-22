@@ -134,6 +134,15 @@ $$</p>
 <p><strong>Identification with the scalar-free part.</strong> The quotient $\mathbb{B}/\mathbb{B}_{C}$ is the <strong>scalar-free part</strong> of $\mathbb{B}$, the subspace of vanishing scalar part $\{\tilde{Q} : Q_t = 0\} = \mathrm{span}_{\mathbb{C}}\{\vec e_x, \vec e_y, \vec e_z\}$, the <strong>complex pure-vector part</strong> of $\mathbb{B}$, a complex vector space of dimension $3$. The isomorphism is one of Lie algebras, because $[\mathrm{ad}_{\tilde Q_3}, \mathrm{ad}_{\tilde Q_1}] = \mathrm{ad}_{[\tilde Q_3,\tilde Q_1]}$.</p>
 <p><strong>Dimension.</strong> The derivation space has $\dim_{\mathbb{C}} \mathrm{Der}_{\mathbb{C}}(\mathbb{B}) = 3$, hence real dimension $6$. This matches the automorphism group, which also has complex dimension $3$; its Lie algebra is $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.</p>
 <p><strong>The bivector reading.</strong> Under the identification $\mathbb{B} \cong \mathrm{Cl}^{+}_{1,3}$, the real span $\mathrm{span}_{\mathbb{R}}\{\vec e_x, \vec e_y, \vec e_z, i \vec e_x, i \vec e_y, i \vec e_z\}$ is the six-dimensional <strong>bivector subspace</strong>, the real form of the complex pure-vector part, and its elements bracket into themselves. Thus the derivation algebra, viewed as a real Lie algebra, is the bivector part of $\mathrm{Cl}^{+}_{1,3}$, equivalently, as a real Lie algebra, the realification of the complex pure-vector part, of real dimension $6$, which is the Lie algebra of the Lorentz group. The traceless part, the complex pure-vector part, and the bivector part are three descriptions of one object, with $\dim_{\mathbb{R}} = 2 \dim_{\mathbb{C}}$.</p>
+<p><strong>The anti-diagonal in the operator array.</strong> Write $L_{\tilde Q}$ and $R_{\tilde Q}$ for the left and the right multiplier, so that a derivation is $\mathrm{ad}_{\tilde Q}=L_{\tilde Q}-R_{\tilde Q}$. Take $\tilde Q=\sum_i v_i\vec e_i$ with no scalar part. In the array of coefficients in the sixteen products $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, the left multiplier fills the left arm, the right multiplier fills the right arm, and the derivation is their difference:
+$$
+c(\mathrm{ad}_{\tilde Q})=\begin{pmatrix}0&-v^{\mathsf T}\\ v&0\end{pmatrix},\qquad v=(v_x,v_y,v_z)^{\mathsf T}.
+$$
+The same three numbers sit on the two arms with opposite signs.</p>
+<p><em>Proof.</em> A left multiplier is $L_{\tilde Q}=\sum_\mu Q_\mu L_{e_\mu}$, so its array is supported on the column $(i,t)$ and equals $Q_i$ there, since $L_{e_\mu}=T_{\mu t}$; a right multiplier is supported on the row $(t,j)$ and equals $Q_j$ there; and the scalar slot is central, so the two arms are read by the same three coordinates. Subtracting the second from the first gives the display.</p>
+<p><strong>The anti-diagonal, and what the sum of the arms is not.</strong> Each arm is three-dimensional, so their sum has complex dimension six and real dimension twelve. The derivations form the anti-diagonal inside that sum, of complex dimension three and real dimension six, which is the dimension of the bivector space above. The bivector is therefore one vector and not a pair of independent ones, and the identification belongs to the graph and not to the sum.</p>
+<p><strong>The length.</strong> The array above has rank two for every $\tilde Q$ with a nonzero vector part: the column $(t,j)$ is $(-v_j,0)$ and the column $(i,t)$ is $(0,v)$, and the two are independent. By the theorem that the length is the rank of the array, every noncentral derivation has length two, the value recorded in <em>The Lengths of the Standard Endomorphisms of the Biquaternion Algebra</em>.</p>
+<p><strong>The equivariance.</strong> Conjugation sends $L_{\tilde Q}$ to $L_{g\tilde Qg^{-1}}$ and $R_{\tilde Q}$ to $R_{g\tilde Qg^{-1}}$, hence $\mathrm{ad}_{\tilde Q}$ to $\mathrm{ad}_{g\tilde Qg^{-1}}$. The anti-diagonal is carried into itself, and $\tilde Q\mapsto\mathrm{ad}_{\tilde Q}$ is an isomorphism of the vector triple, with the action $v\mapsto gvg^{-1}$, onto the derivation space. The derivations are therefore one carrier of label one, and not the sum of a left carrier and a right carrier.</p>
 <p><strong>An explicit basis.</strong> The three derivations $D_1 = \tfrac{1}{2}\mathrm{ad}_{\vec e_x}$, $D_2 = \tfrac{1}{2}\mathrm{ad}_{\vec e_y}$, $D_3 = \tfrac{1}{2}\mathrm{ad}_{\vec e_z}$ are $\mathbb{C}$-linear, so each vanishes on $e_t$ and on $i$, and they act on $\vec e_x, \vec e_y, \vec e_z$ by</p>
 <p>$$
 D_1(\vec e_y) = \vec e_z, \quad D_1(\vec e_z) = -\vec e_y; \qquad D_2(\vec e_z) = \vec e_x, \quad D_2(\vec e_x) = -\vec e_z; \qquad D_3(\vec e_x) = \vec e_y, \quad D_3(\vec e_y) = -\vec e_x,
@@ -144,7 +153,7 @@ $$</p>
 $$</p>
 <p>so $\{D_1, D_2, D_3\}$ is a complex basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$. For instance $D_1(\vec e_y) = \tfrac{1}{2}(\vec e_x \vec e_y - \vec e_y \vec e_x) = \tfrac{1}{2}(\vec e_z + \vec e_z) = \vec e_z$, and $[D_1, D_2] = \tfrac{1}{4}\mathrm{ad}_{[\vec e_x,\vec e_y]} = \tfrac{1}{4}\mathrm{ad}_{2\vec e_z} = D_3$.</p>
 <p><strong>Derivations and automorphisms.</strong> The two structures are linked by the exponential: $\exp(t\,\mathrm{ad}_{\tilde Q_3})(\tilde{Q}_2) = \exp(t\tilde Q_3)\, \tilde{Q}_2\, \exp(-t\tilde Q_3)$ for $\tilde Q_3 \in \mathbb{B}$, $t \in \mathbb{R}$. The right-hand side is the inner automorphism determined by $\exp(t\tilde Q_3)$, so the Lie algebra of the automorphism group is the derivation algebra, $\mathrm{Lie}\,\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) = \mathrm{Der}_{\mathbb{C}}(\mathbb{B})$.</p>
-<h2 id="derivations-over-math246">Derivations over $\mathbb{R}$</h2>
+<h2 id="derivations-over-math271">Derivations over $\mathbb{R}$</h2>
 <p>Now the ground field is $\mathbb{R}$. An $\mathbb{R}$-linear derivation is required to satisfy the Leibniz rule but need not be $\mathbb{C}$-linear. At first sight this seems to allow a larger space, but in fact it does not.</p>
 <p><strong>Every real derivation is automatically $\mathbb{C}$-linear.</strong> Let $D$ be an $\mathbb{R}$-linear derivation. As in the automorphism case, $D$ maps the centre into itself: if $A$ is central, then for every $\tilde{Q}_2$,</p>
 <p>$$
@@ -206,6 +215,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>In summary: over $\mathbb{C}$ the algebra is central simple, every automorphism is inner, and $\mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \cong \mathbb{B}^{\times}/\mathbb{C}^{\times}$; over $\mathbb{R}$ complex conjugation adds a second, conjugate-linear coset, so $\mathrm{Aut}_{\mathbb{R}}(\mathbb{B}) \cong \mathrm{Aut}_{\mathbb{C}}(\mathbb{B}) \rtimes \mathbb{Z}/2$ is strictly larger; and over either field the derivations are the inner derivations $\tilde{Q}_2 \mapsto [\tilde Q_3,\tilde{Q}_2]$ with $\tilde Q_3$ scalar-free, forming $\mathbb{B}/\mathbb{B}_{C}$, of dimension $3$ over $\mathbb{C}$ and $6$ over $\mathbb{R}$, identified with the bivector part of $\mathrm{Cl}^{+}_{1,3}$.</p>
+<p>In the operator array the derivation is the anti-diagonal, $v$ on the left arm and $-v$ on the right arm, of rank two; the two three-dimensional arms are not added but cancelled, which is why a bivector of six real dimensions is one vector and not a pair.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -270,6 +280,10 @@ $$</p>
 <tr>
 <td>$D_k = \tfrac{1}{2}\mathrm{ad}_{\vec e_k}$</td>
 <td>Basis of $\mathrm{Der}_{\mathbb{C}}(\mathbb{B})$, $[D_1,D_2] = D_3$ etc.</td>
+</tr>
+<tr>
+<td>$c(\mathrm{ad}_{\tilde Q})$</td>
+<td>Array of a derivation in the sixteen products, the anti-diagonal with $v$ on the left arm and $-v$ on the right arm</td>
 </tr>
 <tr>
 <td>$\mathrm{Cl}_{1,3}^{+}$</td>
