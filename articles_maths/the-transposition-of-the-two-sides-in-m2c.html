@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Transposition of the Two Sides in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The algebra carries an involution that fixes the scalar part and negates the vector part. Conjugating an operator by that involution…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-transposition-of-the-two-sides-in-math0"><strong>The Transposition of the Two Sides in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The algebra carries an involution $\natural$ that fixes the scalar part and negates the vector part. Conjugating an operator by that involution exchanges the two sides, and the price of the exchange is a moved parameter: a left multiplication becomes a right multiplication by $\natural$ of its parameter. This article asks what the involution is as a map of matrices, what the conjugation is as an operation on arrays, and what the moved parameter costs.</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="the-transposition-of-the-two-sides.html">The Transposition of the Two Sides</a>. The display carries the $\mathbb{C}$-linear involution $\natural$ to the adjugate $A\mapsto\operatorname{adj}A=\sigma_2A^{\mathsf T}\sigma_2$, and it carries the two identities and the pair of the source to the two matrix identities of §<em>The First Identity</em> and §<em>The Second Identity</em> below. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. The involution is the adjugate, $A\mapsto\operatorname{tr}(A)\mathrm I_2-A$, a $\mathbb{C}$-linear involution and an anti-automorphism, and it is <em>not</em> the Hermitian adjoint; the three conjugations $\natural$, $c$ and $*$ of the corpus are distinguished. The first identity $\natural L_A\natural=R_{\natural(A)}$ holds as the matrix identity $\Phi L_A\Phi=R_{\operatorname{adj}A}$ with $\Phi(A)=\operatorname{adj}A$. The second identity is the same with the sides exchanged. The single involution $K(X)=\Phi X\Phi$ is an automorphism of the operator algebra with $\pm1$ eigenspaces of dimensions ten and six, and the fixed operators are those whose coefficient array is symmetric on the three vector pairs and antisymmetric on the three scalar-vector pairs. The four rewriting rules and the eight pairings of a family, a conjugation and a parameter are tabulated. The exchange forces reversal: a bijection that carries every $L_A$ to $R_{\Theta(A)}$ reverses products, and the class of such bijections is exactly $\Theta(A)=CA^{\mathsf T}C^{-1}$. The three exchange-like operations of the display are compared.</p>
+<p><strong>What the article does not do.</strong> It does not treat the adjoint pair with respect to the Frobenius form, which is <a href="adjoint-pair-of-l-and-r-operators-in-m2c.html">Adjoint Pair of $L$ and $R$ Operators in $M_2(\mathbb{C})$</a>; it does not treat the Hermitian and anti-Hermitian sectors, which is <a href="the-hermitian-pair-of-operators-acting-on-one-side-in-m2c.html">The Hermitian Pair of Operators Acting on One Side in $M_2(\mathbb{C})$</a>; and it does not classify the involutions of the algebra, which is <a href="classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra-in-m2c.html">Classification of the Structures of the Operators of the Biquaternion Algebra in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> The display is $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, with trace $2Q_t$ and determinant $N(\tilde Q)=Q_t^2+Q_x^2+Q_y^2+Q_z^2$. The carrier is read in the Peirce frame, so that $L_A=\mathrm I_2\otimes A$ and $R_B=B^{\mathsf T}\otimes\mathrm I_2$. Any $4\times4$ array printed here is the axis-free array and not the Pauli array: the axis-free family is the unique representative, among the $96$ signed-permutation bases, whose sixteen operator arrays are signed permutations, so its entries are the multiplication table read aloud and every identity checked in it is an integer check (<a href="m4c-axis-free-representation-operators.html">$M_4(\mathbb{C})$ Axis-Free Representation : Operators</a>). The Pauli and gamma arrays are a translation and are refused as primary, because one entry of one of their matrices is diagonal by privilege, which puts a spatial direction into the notation; the privilege is canonical and fixes no invariant.</p>
+<p><strong>The dictionary, stated once.</strong> The involution $\natural$ of the source is $\mathbb{C}$-linear: it leaves the four coefficients untouched and negates the three vector coefficients. Its matrix is the <strong>adjugate</strong>,
+$$
+\natural(A)=\operatorname{adj}A=\sigma_2A^{\mathsf T}\sigma_2=\operatorname{tr}(A)\mathrm I_2-A ,
+$$
+and <em>not</em> the Hermitian adjoint $A^{\dagger}=\bar A^{\mathsf T}$. The Hermitian adjoint is the matrix of the star conjugation $\tilde Q^{*}$, the composition of $\natural$ with the entrywise conjugation of the coefficients. The two differ on a general element and coincide on the Hermitian and anti-Hermitian sectors, where they are both equal to $\pm A$. The three conjugations are tabulated in §<em>The Three Conjugations</em>, and the residual of $\mathsf M_2(\tilde Q^{\natural})=\operatorname{adj}A$ on a hundred random elements is below $2\cdot10^{-15}$.</p>
+<p><strong>Boundaries.</strong> The two families are <a href="operators-acting-on-one-side-in-m2c.html">Operators Acting on One Side in $M_2(\mathbb{C})$</a>. The two-sided operators are <a href="operators-acting-on-two-sides-in-m2c.html">Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>. The Hermitian pair is <a href="the-hermitian-pair-of-operators-acting-on-one-side-in-m2c.html">The Hermitian Pair of Operators Acting on One Side in $M_2(\mathbb{C})$</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>.</p>
+<p><strong>Letters.</strong> The involution on matrices is $\Phi(A)=\operatorname{adj}A$. The three conjugations are $\natural$ (the adjugate), $c$ (the congruence $\sigma_2\bar A\sigma_2$ of the entrywise conjugate) and $*$ (the Hermitian adjoint $A^{\dagger}$). The conjugation of operators by $\Phi$ is $K(X)=\Phi X\Phi$.</p>
+<h2 id="the-two-families">The Two Families</h2>
+<p><strong>The arrays.</strong> In the Peirce frame the two one-sided operators are the Kronecker products</p>
+<p>$$
+L_A=\mathrm I_2\otimes A,\qquad R_B=B^{\mathsf T}\otimes\mathrm I_2,
+$$</p>
+<p>each four-dimensional inside $M_4(\mathbb{C})$, commuting, meeting in the scalars and summing to seven dimensions. The parameter is read at the unit: $L_A(\mathrm I_2)=A=R_A(\mathrm I_2)$, so a parameter written in a display is written uniquely.</p>
+<p><strong>The two laws.</strong> $L_AL_C=L_{AC}$ and $R_BR_D=R_{DB}$. The first family is a copy of the algebra and the second a copy of the opposite algebra, and the difference between the two laws is the only place where the noncommutativity of the display is visible in the operator algebra.</p>
+<p><strong>The question of this article.</strong> An operation that exchanges the two families must move a left multiplication to a right one. There are three such operations in the display — the conjugation by $\natural$, the plain bilinear adjoint and the exchange $\sigma$ — and they charge different prices. The article separates them.</p>
+<h2 id="the-three-conjugations">The Three Conjugations</h2>
+<p><strong>The involution.</strong> The quaternion conjugation of the source is, in the display,</p>
+<p>$$
+\Phi(A)=\operatorname{adj}A=\operatorname{tr}(A)\mathrm I_2-A
+=\begin{pmatrix}a_{22}&-a_{12}\\-a_{21}&a_{11}\end{pmatrix},
+$$</p>
+<p>the adjugate. In the coefficient basis it is the sign change $(Q_t,Q_x,Q_y,Q_z)\mapsto(Q_t,-Q_x,-Q_y,-Q_z)$; that is, the matrix of $\Phi$ in the basis $\mathrm I_2,\sigma_1,\sigma_2,\sigma_3$ is $\operatorname{diag}(1,-1,-1,-1)$.</p>
+<p><strong>The two properties.</strong> $\Phi$ is an involution and it reverses products:</p>
+<p>$$
+\Phi(\Phi(A))=A,\qquad \Phi(AB)=\Phi(B)\Phi(A).
+$$</p>
+<p><em>Proof.</em> The first is Cayley–Hamilton: $\Phi(\Phi(A))=\operatorname{tr}(\Phi(A))\mathrm I_2-\Phi(A)$, and $\operatorname{tr}(\operatorname{adj}A)=\operatorname{tr}A$ for a $2\times2$ matrix, so the expression returns $A$. The second is the multiplicativity of the determinant and the adjugate, $\operatorname{adj}(AB)=\operatorname{adj}B\operatorname{adj}A$, together with $\operatorname{adj}(\lambda A)=\lambda\operatorname{adj}A$.</p>
+<p><strong>The three conjugations.</strong> The corpus uses three involutions of the display, and they are three different maps:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>conjugation</th>
+<th>matrix</th>
+<th>on the coefficients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\natural$</td>
+<td>$\operatorname{adj}A=\sigma_2A^{\mathsf T}\sigma_2$</td>
+<td>$(Q_t,Q_x,Q_y,Q_z)\mapsto(Q_t,-Q_x,-Q_y,-Q_z)$</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>$\sigma_2\bar A\sigma_2$</td>
+<td>entrywise conjugation of the four coefficients</td>
+</tr>
+<tr>
+<td>$*$</td>
+<td>$A^{\dagger}=\bar A^{\mathsf T}$</td>
+<td>the two together</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first is $\mathbb{C}$-linear and is the involution of the transposition; the second is anti-linear and is the matrix of the entrywise conjugate of the element; the third is anti-linear and is the Hermitian adjoint. The compositions satisfy $(A^{c})^{\natural}=\overline{A}^{\mathsf T}$ and $(A^{c})^{*}=\bar A^{\dagger}$, as in the display articles of the group.</p>
+<p><strong>The warning.</strong> The transposition of the two sides uses $\natural$ and not $*$. The confusion is natural, because both are involutions and both are anti-automorphisms, and it is fatal for one formula: $\natural(A)=A$ is the condition $\operatorname{adj}A=A$, which forces $A=\tfrac12\operatorname{tr}(A)\mathrm I_2$ and therefore fixes exactly the line of scalars, whereas $A^{\dagger}=A$ is the four-real-dimensional Hermitian space. The two fixed spaces have different dimensions and different meanings, and the transposition is the first.</p>
+<p><strong>The star and the sectors.</strong> The Hermitian sector $\{A:A^{\dagger}=A\}$ is the informational sector of the corpus and the anti-Hermitian sector $\{A:A^{\dagger}=-A\}$ is the material one. The involution $\natural$ fixes the scalars and negates the traceless part, so its fixed space is the line of scalars and its negated space is the three-dimensional traceless part. The two are related by $A^{\dagger}=\sigma_2\operatorname{adj}(\bar A)\sigma_2$: the Hermitian adjoint is the adjugate of the entrywise conjugate, transported by the fixed congruence.</p>
+<h2 id="the-first-identity">The First Identity</h2>
+<p><strong>The statement.</strong> For every $A$,</p>
+<p>$$
+\Phi\,L_A\,\Phi=R_{\Phi(A)},
+$$</p>
+<p>where the composite means: conjugate the input by $\Phi$, multiply on the left by $A$, conjugate the result by $\Phi$.</p>
+<p><strong>The proof.</strong> For every $Y$,</p>
+<p>$$
+\bigl(\Phi L_A\Phi\bigr)(Y)=\Phi\bigl(A\,\Phi(Y)\bigr)=\Phi(\Phi(Y))\,\Phi(A)=Y\,\Phi(A)=R_{\Phi(A)}(Y),
+$$</p>
+<p>using the reversal property and then the involution property. The residual on a hundred random elements is below $6\cdot10^{-15}$.</p>
+<p><strong>The reading.</strong> The parameter is conjugated and crosses from the left of the input to its right. The crossing is the reversal, and the conjugation of the parameter is its price. Nothing else is used: not the size of the matrix, not a basis, not the choice of involution beyond its being an involution and an anti-automorphism.</p>
+<p><strong>The unit check.</strong> At $Y=\mathrm I_2$ the composite gives $\Phi(A\,\Phi(\mathrm I_2))=\Phi(A)$, and the right multiplication gives $\mathrm I_2\Phi(A)=\Phi(A)$. The two agree, and the unit is the probe that the source uses.</p>
+<h2 id="the-second-identity">The Second Identity</h2>
+<p><strong>The statement.</strong></p>
+<p>$$
+\Phi\,R_B\,\Phi=L_{\Phi(B)} .
+$$</p>
+<p><strong>The proof.</strong> For every $Y$,</p>
+<p>$$
+\bigl(\Phi R_B\Phi\bigr)(Y)=\Phi\bigl(\Phi(Y)\,B\bigr)=\Phi(B)\,\Phi(\Phi(Y))=\Phi(B)\,Y=L_{\Phi(B)}(Y).
+$$</p>
+<p>This time the parameter stood on the right and crosses to the left, and it arrives conjugated. The residual on a hundred random elements is below $6\cdot10^{-15}$.</p>
+<p><strong>The two proofs are one.</strong> The first identity and the second are the same computation with the two factors of the product written in the opposite order. The whole difference between the two families is that order, and the reversal of $\Phi$ is what moves a parameter across it.</p>
+<h2 id="the-symmetric-pair">The Symmetric Pair</h2>
+<p><strong>The pair.</strong> Solving each identity for the family gives the form in which the pair is used:</p>
+<p>$$
+L_A=\Phi\,R_{\Phi(A)}\,\Phi,\qquad\qquad R_A=\Phi\,L_{\Phi(A)}\,\Phi .
+$$</p>
+<p><em>Proof.</em> Apply the second identity to $\Phi(A)$: $\Phi R_{\Phi(A)}\Phi=L_{\Phi(\Phi(A))}=L_A$. The other display is the first identity applied to $\Phi(A)$.</p>
+<p><strong>The corollary is the working form.</strong> The identities say what conjugation does to a family; the pair says that each family is the conjugate of the other, with no conjugation left outstanding. An equation written in one family can be rewritten in the other by conjugating both sides, and the pair is the substitution that does it.</p>
+<h2 id="the-single-involution-on-the-operator-space">The Single Involution on the Operator Space</h2>
+<p><strong>The definition.</strong> Put $K(X)=\Phi X\Phi$ for an operator $X\in M_4(\mathbb{C})$.</p>
+<p><strong>The properties.</strong> $K$ is an involution of the operator algebra and an automorphism of it:</p>
+<p>$$
+K^2=\mathrm{id},\qquad K(XY)=K(X)K(Y).
+$$</p>
+<p>The first is $\Phi^2=\mathrm{id}$. The second holds because $\Phi(XY)=\Phi(Y)\Phi(X)$ twice: $K(XY)=\Phi XY\Phi=(\Phi X\Phi)(\Phi Y\Phi)$. Two reversals cancel, so the conjugation of an anti-automorphism is an automorphism.</p>
+<p><strong>The orbits.</strong> The orbits of $K$ are the pairs $\{L_A,R_{\Phi(A)}\}$ and $\{R_B,L_{\Phi(B)}\}$. A one-sided operator is fixed exactly when $R_{\Phi(A)}=L_A$, that is when the two families meet, that is when $A$ is a scalar. Elsewhere the orbit has two elements, one in each family.</p>
+<p><strong>The two eigenspaces.</strong> The involution $K$ splits the operator space:</p>
+<p>$$
+M_4(\mathbb{C})=\operatorname{Fix}(K)\oplus\operatorname{Neg}(K),
+\qquad
+\dim\operatorname{Fix}(K)=10,\quad\dim\operatorname{Neg}(K)=6 .
+$$</p>
+<p>The eigenvalues of $\Phi$ are $+1$ once and $-1$ three times, so those of $K$ are the products $\pm1$ with multiplicities $1+9=10$ and $6$.</p>
+<p><strong>The fixed operators.</strong> On the coefficient array $K$ acts by
+$$
+c(K(X))_{ab}=\varepsilon_a\varepsilon_b\,c(X)_{ba},
+$$
+with $\varepsilon_t=1$ and $\varepsilon_x=\varepsilon_y=\varepsilon_z=-1$: a transposition of the two indices followed by the sign. An operator is fixed exactly when its array is symmetric on the three pairs of vector indices, $c_{xy}=c_{yx}$ and cyclically, and antisymmetric on the three pairs joining the scalar index to a vector index, $c_{tx}=-c_{xt}$. The diagonal entries are free. The count is $4+3+3=10$. The negated space is the complementary six-dimensional space of the reversed conditions.</p>
+<p><strong>The two involutions compared.</strong> The swap $\sigma$ of the slots and the conjugation $K$ are both involutions of $M_4(\mathbb{C})$ with eigenspaces of dimensions ten and six. They are different maps: $\sigma$ transposes the coefficient array, and $K$ transposes it and then multiplies entrywise by the sign $\varepsilon_a\varepsilon_b$. They commute, and their product is the entrywise sign involution, whose fixed space is thirteen-dimensional.</p>
+<h2 id="the-rewriting-rules">The Rewriting Rules</h2>
+<p><strong>The rules.</strong> The pair converts one family into the other, and a composite is converted factor by factor because $K$ preserves products. The rules are four lines.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the operator</th>
+<th>rewritten with the other family</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$R_B$</td>
+<td>$\Phi\,L_{\Phi(B)}\,\Phi$</td>
+</tr>
+<tr>
+<td>$L_A$</td>
+<td>$\Phi\,R_{\Phi(A)}\,\Phi$</td>
+</tr>
+<tr>
+<td>$\Phi\,R_B\,\Phi$</td>
+<td>$L_{\Phi(B)}$</td>
+</tr>
+<tr>
+<td>$\Phi\,L_A\,\Phi$</td>
+<td>$R_{\Phi(A)}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first two rows are the pair, and the last two are the identities, which are the same content read the other way: a conjugated one-sided operator <em>is</em> a one-sided operator of the other family, with no conjugation left over.</p>
+<p><strong>A couple.</strong> For a product of one operator from each family, the first row gives</p>
+<p>$$
+L_AR_B=L_A\,\Phi\,L_{\Phi(B)}\,\Phi ,
+$$</p>
+<p>an expression in the left family alone, with the parameter $\Phi(B)$ and two conjugations inserted where the right multiplication stood. Read the other way, the same product is a product of right multiplications only. The price of the move is the conjugation of the parameters and the two copies of $\Phi$ between the factors.</p>
+<p><strong>The right law follows from the left law.</strong> As a consistency check, derive $R_BR_D=R_{DB}$ from the pair:</p>
+<p>$$
+R_BR_D=\Phi L_{\Phi(B)}\Phi\,\Phi L_{\Phi(D)}\Phi=\Phi L_{\Phi(B)\Phi(D)}\Phi=\Phi L_{\Phi(DB)}\Phi=R_{DB},
+$$</p>
+<p>using $\Phi(B)\Phi(D)=\Phi(DB)$, which is the reversal property on two elements. The two laws of the two families are one law seen on the two orbits of $K$.</p>
+<p><strong>Equations.</strong> Because $K$ is an involution it is injective, so conjugating both sides of an equation gives an equivalent equation; because it preserves products it acts factor by factor; and because it exchanges the families it writes the result in the other family. An equation written mostly with right multiplications becomes one written mostly with left multiplications, and the four rules are the whole of the operation.</p>
+<h2 id="the-pairings-that-look-alike">The Pairings That Look Alike</h2>
+<p><strong>The eight displays.</strong> A pairing of a family, a conjugation and a parameter has eight forms. Four are true and four are false, and the rule that separates them is that the parameter written inside must be the image of the parameter written outside.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>display</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$L_A=\Phi R_{\Phi(A)}\Phi$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$R_A=\Phi L_{\Phi(A)}\Phi$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$\Phi R_A\Phi=L_{\Phi(A)}$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$\Phi L_A\Phi=R_{\Phi(A)}$</td>
+<td>true</td>
+</tr>
+<tr>
+<td>$L_A=\Phi R_A\Phi$</td>
+<td>false unless $\Phi(A)=A$, that is unless $A$ is a scalar</td>
+</tr>
+<tr>
+<td>$R_A=\Phi L_A\Phi$</td>
+<td>false for the same reason</td>
+</tr>
+<tr>
+<td>$\Phi R_A\Phi=L_A$</td>
+<td>false for the same reason</td>
+</tr>
+<tr>
+<td>$\Phi L_A\Phi=R_A$</td>
+<td>false for the same reason</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The failure is exact.</strong> For a non-scalar $A$ the difference between the true and the false displays is the difference between $\Phi(A)$ and $A$, which is $\operatorname{tr}(A)\mathrm I_2-2A$ and does not vanish. There is no element at which all four pairs agree except the scalars.</p>
+<p><strong>Why a conjugation is needed.</strong> A mapping of the operator algebra that carries every $L_A$ to $R_A$ would have to be additive and would have to satisfy $L_{A+C}\mapsto R_{A+C}$, which is consistent; but it would also have to turn the product $L_AL_C=L_{AC}$ into $R_AR_C=R_{CA}$, and the two orders disagree. No multiplicative map of that kind exists. The conjugation is not decoration: it is what repairs the order, and the repair costs the image of the parameter.</p>
+<h2 id="why-the-exchange-is-reversal">Why the Exchange Is Reversal</h2>
+<p><strong>An arbitrary anti-automorphism.</strong> Let $\Theta$ be a bijection with $\Theta(XY)=\Theta(Y)\Theta(X)$. Then for every $Y$,</p>
+<p>$$
+\bigl(\Theta L_A\Theta^{-1}\bigr)(Y)
+=\Theta\bigl(A\,\Theta^{-1}(Y)\bigr)
+=\Theta(\Theta^{-1}(Y))\,\Theta(A)=Y\,\Theta(A)=R_{\Theta(A)}(Y).
+$$</p>
+<p><strong>An arbitrary automorphism.</strong> Let $\Sigma$ preserve products. Then</p>
+<p>$$
+\bigl(\Sigma L_A\Sigma^{-1}\bigr)(Y)=\Sigma\bigl(A\,\Sigma^{-1}(Y)\bigr)=\Sigma(A)\,\Sigma(\Sigma^{-1}(Y))=\Sigma(A)\,Y=L_{\Sigma(A)}(Y).
+$$</p>
+<p><strong>The contrast.</strong> In the first computation the two factors change places, so the parameter ends on the right and the operator becomes a right multiplication. In the second they keep their places, and the operator remains a left multiplication. The exchange of the sides is exactly the reversal of the two factors, and nothing else can produce it.</p>
+<p><strong>The proposition.</strong> Let $\Theta$ be a bijection with $\Theta L_A\Theta^{-1}=R_{\Theta(A)}$ for every $A$. Then $\Theta$ reverses products.</p>
+<p><em>Proof.</em> Let $Y$ be arbitrary and put $X=\Theta(Y)$. Evaluating the hypothesis at $X$,
+$$
+\Theta(AY)=\Theta L_A\Theta^{-1}(X)=R_{\Theta(A)}(X)=X\,\Theta(A)=\Theta(Y)\Theta(A),
+$$
+which is the reversal.</p>
+<p><strong>The class.</strong> The bijections transposing the two families are exactly the anti-automorphisms of the display, and these are exactly the maps</p>
+<p>$$
+\Theta(A)=C\,A^{\mathsf T}\,C^{-1},\qquad C\in\mathrm{GL}_2(\mathbb{C}).
+$$</p>
+<p>The map $\natural$ is the member $C=\sigma_2$. The automorphisms of the display are the inner maps $A\mapsto CAC^{-1}$, and none of them transposes the families, by the second computation. The class is therefore one orbit under the inner action, and the involution $\natural$ is one representative of it.</p>
+<p><strong>The consequence for the table.</strong> A bijection that exchanges the families carries the parameter to its image, by the first computation, and it must reverse products, by the proposition. So no bijection exchanges the families and leaves the parameter in place. The false rows of the table above are not merely unproved; they describe a map that cannot exist.</p>
+<h2 id="the-sense-of-the-name">The Sense of the Name</h2>
+<p><strong>Three operations that look alike.</strong> The display carries three operations that move a parameter or a side, and they are different:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>operation</th>
+<th>on $L_A$</th>
+<th>on the parameter</th>
+<th>inner on $\operatorname{End}$?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the conjugation $K$</td>
+<td>$R_{\Phi(A)}$</td>
+<td>moved by $\natural$</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>the plain bilinear adjoint</td>
+<td>$R_A$</td>
+<td>kept</td>
+<td>no</td>
+</tr>
+<tr>
+<td>the Hermitian adjoint</td>
+<td>$L_{A^{\dagger}}$</td>
+<td>kept, conjugated</td>
+<td>no, and no exchange</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The plain bilinear adjoint.</strong> With the form $\langle X,Y\rangle=\tfrac12\operatorname{tr}(XY)$ on the carrier, the adjoint of $L_A$ is $R_A$, because</p>
+<p>$$
+\tfrac12\operatorname{tr}(AXY)=\tfrac12\operatorname{tr}(XYA).
+$$</p>
+<p>On the operator space this is the map $\sigma(X)=F X^{\mathsf T}F$ of <a href="operators-acting-on-one-side-in-m2c.html">Operators Acting on One Side in $M_2(\mathbb{C})$</a>: transposition of the array together with the flip. It exchanges the families and keeps the parameter, and it is not a conjugation by a matrix.</p>
+<p><strong>The Hermitian adjoint.</strong> With the Frobenius form on operators, the adjoint of $L_A$ is $L_{A^{\dagger}}$, because</p>
+<p>$$
+\operatorname{Tr}\bigl((AX)^{\dagger}Y\bigr)=\operatorname{Tr}\bigl(X^{\dagger}A^{\dagger}Y\bigr).
+$$</p>
+<p>It does not exchange the families at all: it is the map of <a href="adjoint-pair-of-l-and-r-operators-in-m2c.html">Adjoint Pair of $L$ and $R$ Operators in $M_2(\mathbb{C})$</a>, and its conjugation of the parameter is the Hermitian adjoint and not $\natural$.</p>
+<p><strong>The conjugation.</strong> The map $K$ exchanges the families, moves the parameter by $\natural$ and is inner on the operator algebra. It is the only one of the three that is an automorphism of $\operatorname{End}(M_2)$; the other two are not, one being anti-multiplicative and the other being a transpose.</p>
+<p><strong>The name.</strong> The source calls the pair a transposition of the two sides, and the name is justified by the plain bilinear adjoint, which is a genuine transpose and which exchanges the sides. The conjugation is the same exchange with the parameter moved, and the two are reconciled by $\Phi$: the conjugated operator and the plain adjoint differ by the conjugation of the parameter.</p>
+<h2 id="where-math228-differs">Where $n=2$ Differs</h2>
+<p><strong>The adjugate is linear.</strong> At $n=2$ the adjugate is $A\mapsto\operatorname{tr}(A)\mathrm I_2-A$, a linear map of the matrix, and the involution $\natural$ is therefore a linear map of the four coefficients, namely the sign change of the three vector coefficients. At order $n$ the adjugate is homogeneous of degree $n-1$ and is not linear, so the involution is no longer a linear map of the coefficients and the coefficient-array formulae of §<em>The Single Involution</em> have no direct analogue.</p>
+<p><strong>The fixed space.</strong> At every order the involution fixes exactly the scalars, because $\operatorname{adj}A=A$ forces $A=\lambda\mathrm I$. Here the fixed space of $\natural$ on the carrier is one complex-dimensional and the negated space three-dimensional.</p>
+<p><strong>The operator involution.</strong> The space of operators is sixteen-dimensional, and $K$ splits it into ten and six. At order $n$ the split is into $n^4$ dimensions with the two parts counted by the symmetry conditions of the coefficient array; here ten and six.</p>
+<p><strong>Nothing else differs.</strong> The two identities, the pair, the rewriting rules, the proposition and the class of anti-automorphisms are statements about an algebra of matrices over a field, and they hold at every order with the same proofs. The matrix $\sigma_2$ is replaced by any invertible $C$.</p>
+<h2 id="summary">Summary</h2>
+<p>The involution $\natural$ of the source is the adjugate in the display, $\Phi(A)=\operatorname{adj}A=\operatorname{tr}(A)\mathrm I_2-A=\sigma_2A^{\mathsf T}\sigma_2$, a $\mathbb{C}$-linear involution and an anti-automorphism. It is not the Hermitian adjoint; the Hermitian adjoint is the star conjugation, and the two agree only on the Hermitian and anti-Hermitian sectors.</p>
+<p>The two identities are $\Phi L_A\Phi=R_{\Phi(A)}$ and $\Phi R_B\Phi=L_{\Phi(B)}$, and they hold because the parameter crosses the other factor and the reversal of $\Phi$ carries it across. The symmetric pair $L_A=\Phi R_{\Phi(A)}\Phi$ and $R_A=\Phi L_{\Phi(A)}\Phi$ is the working form, and the four rewriting rules are the pair read forwards and backwards.</p>
+<p>The single involution $K(X)=\Phi X\Phi$ is an automorphism of the operator algebra; on the coefficient array it transposes the two indices and multiplies by $\varepsilon_a\varepsilon_b$, and its eigenspaces have dimensions ten and six. The exchange forces reversal: the bijections that transpose the families are exactly the anti-automorphisms $A\mapsto CA^{\mathsf T}C^{-1}$, and no automorphism transposes them. Of the three exchange-like operations of the display, the conjugation is the only automorphism, the plain bilinear adjoint is the genuine transpose, and the Hermitian adjoint does not exchange the sides at all.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\natural$, $\Phi(A)=\operatorname{adj}A$</td>
+<td>the quaternion conjugation, the adjugate</td>
+</tr>
+<tr>
+<td>$c(A)=\sigma_2\bar A\sigma_2$</td>
+<td>the congruence of the entrywise conjugate</td>
+</tr>
+<tr>
+<td>$A^{\dagger}=\bar A^{\mathsf T}$</td>
+<td>the Hermitian adjoint</td>
+</tr>
+<tr>
+<td>$K(X)=\Phi X\Phi$</td>
+<td>the conjugation of operators</td>
+</tr>
+<tr>
+<td>$\varepsilon=(\varepsilon_t,\varepsilon_x,\varepsilon_y,\varepsilon_z)=(1,-1,-1,-1)$</td>
+<td>the signs of $\natural$</td>
+</tr>
+<tr>
+<td>$L_A=\mathrm I_2\otimes A$, $R_B=B^{\mathsf T}\otimes\mathrm I_2$</td>
+<td>the two one-sided arrays</td>
+</tr>
+<tr>
+<td>$\sigma(X)=FX^{\mathsf T}F$</td>
+<td>the plain bilinear adjoint</td>
+</tr>
+<tr>
+<td>$F$</td>
+<td>the flip of the two tensor factors</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-transposition-of-the-two-sides.html">The Transposition of the Two Sides</a>, for the source identities, the pair and the eight pairings.</li>
+<li><a href="operators-acting-on-one-side-in-m2c.html">Operators Acting on One Side in $M_2(\mathbb{C})$</a>, for the two families and the exchange $\sigma$.</li>
+<li><a href="adjoint-pair-of-l-and-r-operators-in-m2c.html">Adjoint Pair of $L$ and $R$ Operators in $M_2(\mathbb{C})$</a>, for the Hermitian adjoint of an operator, which does not exchange the sides.</li>
+<li><a href="the-hermitian-pair-of-operators-acting-on-one-side-in-m2c.html">The Hermitian Pair of Operators Acting on One Side in $M_2(\mathbb{C})$</a>, for the Hermitian and anti-Hermitian sectors.</li>
+<li><a href="operator-chirality-on-the-biquaternion-algebra-in-m2c.html">Operator Chirality on the Biquaternion Algebra in $M_2(\mathbb{C})$</a>, for the slot label and the two four-dimensional images.</li>
+<li><a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>, for the display and the three conjugations.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

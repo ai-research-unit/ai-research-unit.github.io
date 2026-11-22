@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-One Carrier of $M_4(\mathbb{C})$: the Adjoint Triplet — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The carrier of label one is the Lie algebra of the copy inside the algebra of matrices, in the spin- representation. The article identifies…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-one-carrier-of-math0-the-adjoint-triplet"><strong>The Spin-One Carrier of $M_4(\mathbb{C})$: the Adjoint Triplet</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The carrier of label one is the Lie algebra of the copy inside the algebra of matrices, in the spin-$\tfrac32$ representation. The article identifies it, computes its brackets and its spectrum, and explains why it is the only carrier that is itself a Lie algebra.</p>
+<p><strong>The order of the article.</strong> The first section identifies the carrier. The second computes the brackets. The third computes the spectrum of a general element. The fourth treats the nilpotent and the semisimple parts. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> and <em>The Spin Group at $n=4$</em>. The row at order two is <em>The Spin-One Carrier of the Biquaternion Algebra</em>.</p>
+<p><strong>The result in one line.</strong> $V_1$ is the three-dimensional space spanned by $J_x,J_y,J_z$, it is closed under the commutator, and the eigenvalues of $aJ_x+bJ_y+cJ_z$ are $\pm3\lambda/2,\pm\lambda/2$ with $\lambda^{2}=a^{2}+b^{2}+c^{2}$.</p>
+<p><strong>Boundaries.</strong> The article treats the carrier as a Lie algebra and as a space of matrices; the trace form on it is the subject of the next article.</p>
+<h2 id="the-carrier">The Carrier</h2>
+<p><strong>Proposition.</strong> $V_1=\operatorname{span}\{J_x,J_y,J_z\}$, of complex dimension three, and it is the image of the Lie algebra of the copy under the derivative of the spin-$\tfrac32$ representation.</p>
+<p><em>Proof.</em> The generators are traceless, have weights $+1,0,-1$ and span an invariant three-dimensional space; the space of label one is three-dimensional and irreducible, so the two coincide.</p>
+<p><strong>Corollary.</strong> The carrier is the adjoint representation of the copy, and the copy acts on it by rotations.</p>
+<p><em>Proof.</em> The conjugation action on its own Lie algebra is the adjoint representation.</p>
+<p><strong>Corollary.</strong> The carrier is the unique three-dimensional carrier, and it is the only one closed under the commutator.</p>
+<p><em>Proof.</em> The commutator of two elements of $V_1$ is again in $V_1$, since the bracket is the Lie bracket; no other carrier is closed under multiplication.</p>
+<p><strong>The reading.</strong> The triplet is the copy itself, seen through the representation of dimension four.</p>
+<h2 id="the-brackets">The Brackets</h2>
+<p><strong>Proposition.</strong> The brackets are $[J_x,J_y]=iJ_z$ and its cyclic permutations, so $V_1$ is a Lie algebra isomorphic to $\mathfrak{sl}_2(\mathbb{C})$.</p>
+<p><em>Proof.</em> The matrices $J_i$ are the spin-$\tfrac32$ generators, and their commutators are the structure constants of $\mathfrak{su}(2)$.</p>
+<p><strong>Corollary.</strong> The Killing form of $V_1$ is proportional to the trace form, with ratio eight, checked numerically.</p>
+<p><em>Proof.</em> The Killing form of $\mathfrak{sl}_2$ in the adjoint representation is $2h^{\vee}$ times the trace form, and the computation gives the ratio eight.</p>
+<p><strong>Corollary.</strong> The Lie algebra is simple, so its only invariant subspaces under the adjoint action are zero and itself.</p>
+<p><em>Proof.</em> $\mathfrak{sl}_2$ is simple.</p>
+<p><strong>The reading.</strong> The carrier is not only a module but an algebra, and its structure constants are those of the copy.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>Proposition.</strong> The element $X=aJ_x+bJ_y+cJ_z$ has the eigenvalues $\pm3\lambda/2$ and $\pm\lambda/2$, where $\lambda^{2}=a^{2}+b^{2}+c^{2}$; for $\lambda\neq0$ the rank is four, and for $\lambda=0$ with $X\neq0$ the element is nilpotent of rank three.</p>
+<p><em>Proof.</em> The element acts on the module as the spin-$\tfrac32$ representative of the Lie algebra element $(a,b,c)$, whose eigenvalues are $3\mu/2,\mu/2,-\mu/2,-3\mu/2$ with $\mu$ the eigenvalue of the corresponding $\mathfrak{sl}_2$ element; the square root gives $\lambda$.</p>
+<p><strong>Corollary.</strong> The ratio of the two nonzero eigenvalue pairs is three, and it is the signature of the spin-$\tfrac32$ representation.</p>
+<p><em>Proof.</em> The eigenvalues are $\pm3\lambda/2$ and $\pm\lambda/2$.</p>
+<p><strong>Corollary.</strong> The spectrum is a pair $\pm\alpha,\pm\beta$ with $\alpha=3\beta$, and the carrier's Hermitian slice realises every such pair.</p>
+<p><em>Proof.</em> The proposition and the reality of $\lambda$ for real $a,b,c$.</p>
+<p><strong>The reading.</strong> The triplet is the carrier whose spectrum is the most rigid: one parameter and a fixed ratio of three.</p>
+<h2 id="semisimple-and-nilpotent">Semisimple and Nilpotent</h2>
+<p><strong>Proposition.</strong> The nilpotent elements of the carrier are the nonzero multiples of $J_+$ and $J_-$ up to conjugation, all of rank three, and they form the cone $\lambda=0$.</p>
+<p><em>Proof.</em> The cone $\lambda^{2}=0$ is the isotropic cone of the quadratic form $a^{2}+b^{2}+c^{2}$, and its nonzero elements are conjugate to $J_+$; the rank of a single Jordan block of size four is three.</p>
+<p><strong>Corollary.</strong> The semisimple elements are those with $\lambda\neq0$, and each is conjugate to a real multiple of $J_z$.</p>
+<p><em>Proof.</em> Every nonzero vector of $\mathbb{C}^{3}$ is carried to a multiple of the $z$-axis by the complex orthogonal group generated by the copy.</p>
+<p><strong>Corollary.</strong> The carrier is the union of two orbits up to scaling: the semisimple cone and the nilpotent cone.</p>
+<p><em>Proof.</em> The two cases $\lambda\neq0$ and $\lambda=0$.</p>
+<p><strong>The reading.</strong> The triplet is the smallest carrier that exhibits both a continuous family of orbits and a nilpotent cone.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the trace form article.</strong> The form on the carrier is computed there; here the carrier is identified and its brackets are computed.</p>
+<p><strong>Against the quaternion article.</strong> The imaginary quaternions are the real form of the same triplet at order two.</p>
+<p><strong>Against the other carriers.</strong> No other carrier is a Lie algebra, so the triplet is the only one whose product stays inside.</p>
+<h2 id="the-triplet-and-the-module">The Triplet and the Module</h2>
+<p><strong>The action on the module.</strong> The generators act on the module through the matrices $J_x,J_y,J_z$, whose weights are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$ for the Cartan element and whose raising and lowering operators have the entries $\sqrt3,2,\sqrt3$.</p>
+<p><strong>The ranks of the generators.</strong> The Cartan generator is invertible, of rank four, because its eigenvalues are all nonzero; the raising and lowering generators are nilpotent, of rank three, because each is a single Jordan block of size four.</p>
+<p><strong>The order of the brackets.</strong> The three generators satisfy the bracket relations of the copy, and their span is closed under the commutator, which is the property that distinguishes the triplet from the quintet and the septet.</p>
+<p><strong>The reading.</strong> The triplet is the copy itself in the representation of dimension four, and its generators carry the two extreme ranks, three and four, that the carrier admits.</p>
+<h2 id="the-triplet-inside-the-traceless-part">The Triplet Inside the Traceless Part</h2>
+<p><strong>The dimension count.</strong> The traceless part of the algebra has dimension fifteen and splits as $3+5+7$, so the triplet is the smallest nontrivial summand; its three dimensions are the three generators of the copy, and the conjugation action preserves them.</p>
+<p><strong>The bracket with the other carriers.</strong> The commutator of an element of the triplet with an element of the quintet lies in the quintet, since the triplet is a Lie algebra and the product in the algebra is the tensor product; the commutator of two octets of the septet covers the whole algebra.</p>
+<h2 id="the-triplet-and-the-trace-form">The Triplet and the Trace Form</h2>
+<p><strong>The Cartan form.</strong> On the triplet the trace form is five times the Euclidean form in the generator basis, so the form is the Cartan form of the copy up to the factor five; the factor is the trace of the square of the identity on the module divided by the dimension, and it carries no structural information.</p>
+<p><strong>The isotropic lines.</strong> The complex triplet contains two isotropic lines for the form, and they are the lines of the two nilpotent combinations of the raising and lowering generators; the lines are exchanged by conjugation, and their union is the complexified nilpotent cone.</p>
+<p><strong>The real picture.</strong> The real span of the generators is positive definite, and its orthogonal complement in the real carrier is the space of the two imaginary directions; the trace form is negative definite there, which is the content of the signature $(3,3)$.</p>
+<p><strong>The reading.</strong> The triplet carries the Cartan form of the copy, with the isotropic lines of the complexification cutting the carrier along the nilpotent directions.</p>
+<h2 id="summary">Summary</h2>
+<p>The carrier of label one is spanned by the three generators, is closed under the commutator, and is isomorphic to $\mathfrak{sl}_2(\mathbb{C})$; its Killing form is eight times its trace form.</p>
+<p>An element $aJ_x+bJ_y+cJ_z$ has the eigenvalues $\pm3\lambda/2,\pm\lambda/2$, of rank four when $\lambda\neq0$; the nilpotent elements form the isotropic cone and have rank three.</p>
+<p>The carrier is the only one that is a Lie algebra, and its spectrum has the fixed ratio three.</p>
+<p><strong>The place in the corpus.</strong> The triplet is the copy itself, so it is the carrier whose structure is already known before the decomposition; the other three carriers are the places where the copy acts without being visible, and the triplet is the reference point against which their actions are read.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_1=\operatorname{span}\{J_x,J_y,J_z\}$</td>
+<td>the adjoint triplet</td>
+</tr>
+<tr>
+<td>$[J_x,J_y]=iJ_z$</td>
+<td>the brackets</td>
+</tr>
+<tr>
+<td>$\pm3\lambda/2,\pm\lambda/2$</td>
+<td>the spectrum</td>
+</tr>
+<tr>
+<td>$\lambda^{2}=a^{2}+b^{2}+c^{2}$</td>
+<td>the quadratic form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html">The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</a>, for the copy.</li>
+<li><a href="the-spin-one-carrier-and-the-trace-form-at-n-4.html">The Spin-One Carrier and the Trace Form at $n=4$</a>, for the form.</li>
+<li><a href="the-spin-one-carrier-and-the-rank-strata-at-n-4.html">The Spin-One Carrier and the Rank Strata at $n=4$</a>, for the strata.</li>
+<li><a href="the-spin-one-carrier-of-the-biquaternion-algebra.html">The Spin-One Carrier of the Biquaternion Algebra</a>, for the row at order two.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the carrier.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

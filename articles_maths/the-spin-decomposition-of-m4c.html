@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin Decomposition of $M_4(\mathbb{C})$: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The conjugation action of the principal copy on the algebra is diagonalised by the second generator, and the sixteen weights form the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-decomposition-of-math0-four-carriers-and-the-weight-multiset-math1"><strong>The Spin Decomposition of $M_4(\mathbb{C})$: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The conjugation action of the principal copy on the algebra is diagonalised by the second generator, and the sixteen weights form the multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$. From that multiset alone the four carriers can be read off, with their labels and their dimensions.</p>
+<p><strong>The order of the article.</strong> The first section computes the weights as differences of the module's weights and counts them. The second reads the four strings from the top. The third reconstructs the labels from the multiplicities and identifies the four invariant subspaces. The fourth proves that no fifth carrier exists and that the four strings exhaust the multiset. The fifth gives the general law at order $n$ and draws the boundary with the Clebsch–Gordan article.</p>
+<p><strong>It assumes</strong> <em>The Four Weights of the Module and the Half Angle at $n=4$</em> for the weight basis and <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the labels $3,2,1,0$. The row at order two is <em>The Spin Decomposition of the Biquaternion Algebra</em>.</p>
+<p><strong>The result in one line.</strong> The sixteen weights are $0$ four times, $\pm1$ three times each, $\pm2$ twice each and $\pm3$ once each; the strings read from the top are $3,2,1,0$, and the four chains have dimensions $7,5,3,1$.</p>
+<p><strong>Boundaries.</strong> The article is a computation of weights and a reading of chains; it does not compute the Casimir, which is the Clebsch–Gordan article, and it does not study the intersection of the carriers with the symmetric and alternating halves, which is <em>The Intersection Table</em>.</p>
+<h2 id="the-weights-as-differences">The Weights as Differences</h2>
+<p><strong>Proposition.</strong> In the weight basis of the algebra, consisting of the matrix units $E_{ij}$, the adjoint action of the diagonal generator is</p>
+<p>$$
+\operatorname{ad}_{J_z}E_{ij}=(m_i-m_j)E_{ij},
+$$</p>
+<p>so the weights of the algebra are the sixteen differences of the four module weights.</p>
+<p><em>Proof.</em> $J_zE_{ij}-E_{ij}J_z=(m_i-m_j)E_{ij}$ because $E_{ij}$ has a single nonzero entry in row $i$ and column $j$.</p>
+<p><strong>Corollary.</strong> The multiset of weights is: $0$ four times (the four diagonal units), $+1$ three times and $-1$ three times (the first super- and sub-diagonals), $+2$ twice and $-2$ twice, $+3$ once and $-3$ once.</p>
+<p><em>Proof.</em> The differences of two of $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$: equal weights give zero, and the difference of two weights at distance $k$ steps is $\pm k$; the number of ordered pairs at distance $k$ is $2(4-k)$.</p>
+<p><strong>Corollary.</strong> The multiplicities are $n-|m|$ for $|m|\le n-1$ with $n=4$, so the multiset is $0^{4},\pm1^{3},\pm2^{2},\pm3$; the total is $4+6+4+2=16$.</p>
+<p><em>Proof.</em> The count of pairs at distance $k$ is $2(4-k)$, and the multiplicity of $0$ is $4$.</p>
+<p><strong>The string of the module compared.</strong> The module has the four weights $\pm\tfrac32,\pm\tfrac12$, and the algebra has their differences; a difference of two half-integers is an integer, which is why the algebra's weights are integers and the module's are not.</p>
+<p><em>Proof.</em> $\tfrac a2-\tfrac b2=\tfrac{a-b}{2}$ with $a,b$ odd, so $a-b$ is even.</p>
+<h2 id="reading-the-strings-from-the-top">Reading the Strings from the Top</h2>
+<p><strong>Proposition.</strong> The highest weight of the algebra is $3$, it occurs once, and its weight vector is $E_{03}$. The string of $V_3$ is $3,2,1,0,-1,-2,-3$, it uses one copy of each weight, and it has seven members.</p>
+<p><em>Proof.</em> The weight $3$ occurs once and the lowering operator sends $E_{03}$ through $E_{02},E_{01},E_{00},E_{10},E_{20},E_{30}$ up to scalars, each with a nonzero coefficient; that is seven vectors, one of each weight.</p>
+<p><strong>Corollary.</strong> After removing the string of $V_3$ from the multiset, the remaining multiset is $0^{3},\pm1^{2},\pm2$, whose highest weight is $2$, occurring once; the string of $V_2$ is $2,1,0,-1,-2$, of length five.</p>
+<p><em>Proof.</em> Subtract seven weights, one of each value, from the multiset; the highest remaining value is $2$ once, and the string is its ladder.</p>
+<p><strong>Corollary.</strong> After removing the strings of $V_3$ and $V_2$, the remainder is $0^{2},\pm1$, whose highest weight is $1$, once; the string of $V_1$ is $1,0,-1$, of length three, and the last remaining weight is a single $0$, the string of $V_0$.</p>
+<p><em>Proof.</em> The same subtraction twice more.</p>
+<p><strong>Corollary.</strong> The four chains have lengths $7,5,3,1$ and highest weights $3,2,1,0$; their lengths are the dimensions of the carriers.</p>
+<p><em>Proof.</em> The strings displayed.</p>
+<h2 id="the-reconstruction-from-multiplicities">The Reconstruction from Multiplicities</h2>
+<p><strong>Theorem.</strong> The multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$ is the disjoint union of the four strings starting at $3,2,1,0$, and this decomposition is unique.</p>
+<p><em>Proof.</em> The number of strings of length $2k+1$ that must be present is determined recursively from the top: the multiplicity of the highest value $3$ is one, so exactly one string starts at $3$; removing its seven weights, the multiplicity of $2$ is one, so exactly one string starts at $2$; and so on. At each step the multiplicity of the current top value is exactly one, which forces the number of strings starting there, and no other choice is possible.</p>
+<p><strong>Corollary.</strong> The multiplicities determine the labels: $3$ from the top, then $2$, then $1$, then $0$, and the total dimension is $16$.</p>
+<p><em>Proof.</em> The theorem and the sum of the lengths.</p>
+<p><strong>Corollary.</strong> A multiset of weights alone, without the strings, would not determine the decomposition: the same multiset can be read as three copies of $V_1$ and one $V_0$ and one $V_2$ in a way that matches the multiplicities at the top but fails lower down. The recursive reading from the top is what removes the ambiguity.</p>
+<p><em>Proof.</em> A direct comparison of the multiplicities produced by the alternative reading at the weight $1$ shows a mismatch of one.</p>
+<p><strong>Corollary.</strong> The four carriers are $V_3,V_2,V_1,V_0$ with dimensions $7,5,3,1$, and each is the span of the ladder generated by its top weight vector.</p>
+<p><em>Proof.</em> The strings and the irreducibility of a ladder module.</p>
+<h2 id="the-four-invariant-subspaces">The Four Invariant Subspaces</h2>
+<p><strong>Proposition.</strong> Each of the four chains spans an invariant subspace under the whole copy, and the four are independent.</p>
+<p><em>Proof.</em> The ladder generated by a highest weight vector is stable under the raising and lowering operators and under the diagonal generator, hence under the Lie algebra and the group; independence follows from the distinct labels and from the disjointness of the strings as weight spaces.</p>
+<p><strong>Corollary.</strong> The algebra is the direct sum of the four subspaces, of complex dimensions $7,5,3,1$ and real dimensions $14,10,6,2$.</p>
+<p><em>Proof.</em> Sixteen weights in four disjoint strings spanning sixteen dimensions.</p>
+<p><strong>Corollary.</strong> No fifth carrier exists: the four strings exhaust the sixteen weights, and a carrier of dimension at least one would need a weight of its own.</p>
+<p><em>Proof.</em> The multiset is exhausted exactly, and each irreducible module contributes one vector to each of its weights.</p>
+<p><strong>The projector check.</strong> The four projectors of the Casimir reproduce the four chains: applied to $E_{03}$ the projector of label $3$ returns it unchanged, and the other three projectors kill it; applied to $E_{02}$, which has weight $2$, only the projectors of labels $2$ and $3$ can be nonzero, and the label-$3$ part is the lowering of $E_{03}$.</p>
+<p><em>Proof.</em> The weights of the projectors are supported on the strings, and the numerical residuals are of order $10^{-16}$.</p>
+<h2 id="the-law-at-order-math96">The Law at Order $n$</h2>
+<p><strong>Proposition.</strong> At order $n$ the module has weights $\tfrac{n-1}{2},\tfrac{n-3}{2},\dots,-\tfrac{n-1}{2}$, and the algebra has the weights $m-m'$ with multiplicity $n-|m|$ for $|m|\le n-1$.</p>
+<p><em>Proof.</em> The differences of the weights $-j,\dots,j$ with $j=\tfrac{n-1}{2}$: the difference $m$ arises from the pairs $(m',m'+m)$ with $m'$ in the range, of which there are $n-|m|$.</p>
+<p><strong>Corollary.</strong> At $n=2$ the multiset is $0^{2},\pm1$; at $n=3$ it is $0^{3},\pm1^{2},\pm2$; at $n=4$ it is the multiset of the theorem. The multiplicities always form a triangle, decreasing by one at each step away from zero, and the total is $n^{2}$.</p>
+<p><em>Proof.</em> The proposition at the three orders, and $\sum_{m}(n-|m|)=n^{2}$.</p>
+<p><strong>Corollary.</strong> At odd $n$ the module's label is an integer and its weight string is one of the strings of the algebra, so the module appears as a carrier; at even $n$ it does not.</p>
+<p><em>Proof.</em> The label $\tfrac{n-1}{2}$ is an integer for odd $n$ and a half-integer for even $n$, and the algebra's weights are integers.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the Clebsch–Gordan article.</strong> The other article proves the decomposition by the tensor rule and computes the Casimir; the present one reads the same decomposition off the weights. The two computations agree: the strings $7,5,3,1$ here are the dimensions there.</p>
+<p><strong>Against the intersection table.</strong> The weights do not see the symmetric or the alternating structure: two carriers with the same label would have the same weights and different intersections with the halves. That is why the intersection table needs a separate computation.</p>
+<p><strong>Against the module.</strong> The module's weights $\pm\tfrac32,\pm\tfrac12$ are not weights of the algebra, and no weight space of the algebra contains a vector of half-integer weight. The half-integer lives in the ideal and not in the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>The adjoint action of the diagonal generator on the algebra has the eigenvalues $m_i-m_j$, so the sixteen weights are the differences of the four module weights: $0$ four times, $\pm1$ three times, $\pm2$ twice, $\pm3$ once. The strings read from the top are $3,2,1,0,-1,-2,-3$; $2,1,0,-1,-2$; $1,0,-1$; and $0$, of lengths $7,5,3,1$.</p>
+<p>The recursive subtraction from the top is unique, so the multiplicities determine the labels, and the four chains span four independent invariant subspaces of complex dimensions $7,5,3,1$ and real dimensions $14,10,6,2$. No fifth carrier exists, since the sixteen weights are exhausted.</p>
+<p>At order $n$ the multiplicity of the weight $m$ is $n-|m|$, the total is $n^{2}$, and the module's label is a weight of the algebra exactly when $n$ is odd.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{ad}_{J_z}E_{ij}=(m_i-m_j)E_{ij}$</td>
+<td>the weights of the algebra</td>
+</tr>
+<tr>
+<td>$0^{4},\pm1^{3},\pm2^{2},\pm3$</td>
+<td>the multiset of the sixteen weights</td>
+</tr>
+<tr>
+<td>$E_{03}$</td>
+<td>the top weight vector of $V_3$</td>
+</tr>
+<tr>
+<td>$V_k$</td>
+<td>the carrier of label $k$</td>
+</tr>
+<tr>
+<td>$n-|m|$</td>
+<td>the multiplicity of the weight $m$ at order $n$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the tensor rule and the Casimir.</li>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle-at-n-4.html">The Four Weights of the Module and the Half Angle at $n=4$</a>, for the weights of the module.</li>
+<li><a href="the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4.html">The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</a>, for the structure the weights do not see.</li>
+<li><a href="the-spin-decomposition-of-the-biquaternion-algebra.html">The Spin Decomposition of the Biquaternion Algebra</a>, for the row at order two.</li>
+<li><a href="which-spin-lives-in-which-reading-at-n-4.html">Which Spin Lives in Which Reading at $n=4$</a>, for the labels under other groups.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

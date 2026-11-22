@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-One Anti-Hermitian Subspace and Spectral Regularity in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Where on the skew-adjoint space, and on its carrier, do the two eigenvalues of a matrix coincide?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-one-anti-hermitian-subspace-and-spectral-regularity-in-math0"><strong>The Spin-One Anti-Hermitian Subspace and Spectral Regularity in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Where on the skew-adjoint space $\mathfrak{u}(2)$, and on its carrier $\mathfrak{su}(2)$, do the two eigenvalues of a matrix coincide?</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html">The Spin-One Anti-Hermitian Subspace and Spectral Regularity</a>. The source's predicate is $B^2=Q_x^2+Q_y^2+Q_z^2\neq0$; in the display it is $\Delta=\tau^2-4\det\neq0$, and on the skew space $\Delta=-4|v|^2$. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. That $B^2(i\lambda\mathrm I_2+v\cdot E)=|v|^2$, so the degenerate locus of the space is the trace line. That the spectrum is the purely imaginary pair $i(\lambda\pm|v|)$. That the carrier is spectrally regular away from the origin. That the degenerate and the singular loci of the space meet only at the origin. That the space meets all four sectors while no carrier meets more than one. The comparison with the Hermitian half.</p>
+<p><strong>What the article does not do.</strong> It does not treat the determinant on the same space, which is <a href="the-spin-one-anti-hermitian-subspace-and-n-norm-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and N Norm Regularity in $M_2(\mathbb{C})$</a>; it does not treat the sectors in full, which is <a href="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> $A=i\lambda\mathrm I_2+v\cdot E$, $\lambda\in\mathbb{R}$, $v\in\mathbb{R}^3$, $E_k=-i\sigma_k$, $|v|^2=v_1^2+v_2^2+v_3^2$. Then $\tau=2i\lambda$ and $B^2=\det A-\tfrac14\tau^2$.</p>
+<p><strong>The sign of $\Delta$.</strong> On the skew space $\Delta=-4|v|^2\le0$: the discriminant is real and non-positive, so a repeated eigenvalue can only be a real double root.</p>
+<p><strong>Boundaries.</strong> The space is <a href="the-spin-one-anti-hermitian-subspace-in-m2c.html">Introduction to the Spin-One Anti-Hermitian Subspace in $M_2(\mathbb{C})$</a>. The predicate in general is <a href="the-spectrum-of-a-biquaternion.html">The Spectrum</a>. The sectors are <a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, and the display is <a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>.</p>
+<p><strong>Letters.</strong> $\lambda$ the trace coordinate, $v$ the carrier coordinates, $\Delta$ the discriminant, $E_k$ the generators.</p>
+<h2 id="the-predicate-on-the-closure">The Predicate on the Closure</h2>
+<p><strong>The array.</strong> With $E_1=-i\sigma_1$, $E_2=-i\sigma_2$, $E_3=-i\sigma_3$,
+$$
+i\lambda\mathrm I_2+v\cdot E=
+\begin{pmatrix}i\lambda-iv_3 & -iv_1-v_2\\ -iv_1+v_2 & i\lambda+iv_3\end{pmatrix},
+$$
+whose determinant is $v_1^2+v_2^2+v_3^2-\lambda^2$ and whose trace is $2i\lambda$, verified.</p>
+<p><strong>The formula.</strong>
+$$
+B^2(i\lambda\mathrm I_2+v\cdot E)=|v|^2,\qquad \Delta=-4|v|^2,
+$$
+verified on a hundred random real pairs to $3.6\cdot10^{-15}$ and $1.4\cdot10^{-14}$.</p>
+<p><strong>The degenerate locus is the trace line.</strong>
+$$
+\mathfrak{u}(2)\cap\{\Delta=0\}=\mathbb{R}(i\mathrm I_2),
+$$
+of real dimension one. Every element of the line has the single eigenvalue $i\lambda$ twice; every element off it has distinct eigenvalues.</p>
+<p><strong>The spectrum.</strong>
+$$
+\operatorname{spec}(i\lambda\mathrm I_2+v\cdot E)=\{i(\lambda-|v|),\,i(\lambda+|v|)\},
+$$
+purely imaginary, symmetric about $i\lambda$. Verified: $i\mathrm I_2+E_1$ has eigenvalues $0$ and $2i$.</p>
+<p><strong>Why the spectrum is imaginary.</strong> The matrix is $i$ times a Hermitian one, and a Hermitian matrix has real eigenvalues; multiplying by $i$ rotates them onto the imaginary axis. The reality of $v$ is what makes $|v|$ real, and the reality of $|v|$ is what makes the eigenvalues purely imaginary.</p>
+<h2 id="the-predicate-on-the-carrier">The Predicate on the Carrier</h2>
+<p><strong>The carrier.</strong> $\operatorname{spec}(v\cdot E)=\{\pm i|v|\}$, distinct for every $v\neq0$.</p>
+<p><strong>The carrier avoids the degenerate locus.</strong> $\mathfrak{su}(2)\cap\{\Delta=0\}=\{0\}$.</p>
+<p><strong>The decisive criterion.</strong> On the carrier the predicate is the non-vanishing of a positive definite quadratic form, so it is decided by one number and not by a spectral computation.</p>
+<h2 id="the-two-degenerate-loci-are-disjoint">The Two Degenerate Loci Are Disjoint</h2>
+<p><strong>The statement.</strong> On the skew space the singular locus is $|v|=|\lambda|$ and the degenerate locus is $v=0$:
+$$
+\{|v|=|\lambda|\}\cap\{v=0\}=\{0\}.
+$$</p>
+<p><strong>The reading.</strong> The singular elements of the skew space are the rank-one skew matrices with a non-zero trace $2i\lambda$; the spectrally degenerate ones are the multiples of $i\mathrm I_2$. The two families meet only at the origin.</p>
+<p><strong>The contrast with the plane.</strong> On the plane the two loci are the whole plane and the origin, so one contains the other. On the skew space they are a cone and a line, and neither contains the other.</p>
+<h2 id="the-four-sectors-inside-the-space">The Four Sectors Inside the Space</h2>
+<p><strong>The partition.</strong> On $\mathfrak{u}(2)$ the two predicates are $\det=|v|^2-\lambda^2$ and $\Delta=-4|v|^2$:
+$$
+\Sigma_{11}:\ v\neq0,\ |v|\neq|\lambda|;\qquad
+\Sigma_{10}:\ v=0,\ \lambda\neq0;\qquad
+\Sigma_{01}:\ v\neq0,\ |v|=|\lambda|;\qquad
+\Sigma_{00}:\ v=0,\ \lambda=0 .
+$$
+Verified on witnesses: $i\mathrm I_2+2E_1$ is in $\Sigma_{11}$, $i\mathrm I_2$ in $\Sigma_{10}$, $i\mathrm I_2+E_1$ in $\Sigma_{01}$, and the origin in $\Sigma_{00}$.</p>
+<p><strong>The reading.</strong> The space meets all four sectors, which no single carrier does.</p>
+<h2 id="the-partner-half">The Partner Half</h2>
+<p><strong>The Hermitian half.</strong> On $\lambda\mathrm I_2+v\cdot\sigma$ with real $\lambda,v$,
+$$
+B^2=-\lvert v\rvert^2,\qquad \operatorname{spec}=\{\lambda-|v|,\lambda+|v|\},
+$$
+verified to $3.6\cdot10^{-15}$. The spectrum is real and symmetric about $\lambda$; the degenerate locus is the same line $\mathbb{R}\mathrm I_2$.</p>
+<p><strong>The predicate is the same and the spectrum is not.</strong> The degenerate locus is decided by the vanishing of the vector part in both halves; where the eigenvalues lie is decided by which half. The predicate reads $\Delta$ and not the location of the spectrum.</p>
+<h2 id="the-three-carriers-compared">The Three Carriers Compared</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\Delta$ on it</th>
+<th>degenerate locus in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}\mathrm I_2$</td>
+<td>$0$</td>
+<td>the whole centre</td>
+</tr>
+<tr>
+<td>plane $\mathbb{C}P$</td>
+<td>$\lambda^2$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>carrier $\mathfrak{su}(2)$</td>
+<td>$-4\lvert v\rvert^2$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern.</strong> Away from the origin the centre is in $\Sigma_{10}$, the plane in $\Sigma_{01}$, the carrier in $\Sigma_{11}$. No carrier away from the origin is in $\Sigma_{00}$.</p>
+<p><strong>Why the carrier is the last one.</strong> The line has the determinant and loses the spectrum; the plane has the spectrum and loses the determinant; the carrier has both.</p>
+<h2 id="where-math88-differs">Where $n=2$ Differs</h2>
+<p><strong>The discriminant.</strong> At $n=2$ the discriminant is a real non-positive number on the skew space, so the degenerate locus is a line and the criterion is one inequality. At order $n$ the eigenvalues of a skew matrix are purely imaginary and come in conjugate pairs; the degenerate locus is a union of strata indexed by the multiplicities, and "distinct eigenvalues" is the complement of a discriminant hypersurface of codimension one but not a single number.</p>
+<p><strong>The carrier.</strong> At $n=2$ the carrier is three-dimensional and the degenerate locus inside it is the origin. At order $n$ the traceless skew part has dimension $n^2-1$ and its degenerate locus is the union of the skew matrices with a repeated eigenvalue, a hypersurface inside it.</p>
+<p><strong>What does not differ.</strong> The spectrum of a skew matrix is purely imaginary at every order, and the trace line is the degenerate locus of $\mathfrak{u}(n)$ exactly when all the eigenvalues coincide, that is on the centre.</p>
+<h2 id="summary">Summary</h2>
+<p>On the skew-adjoint space $B^2=|v|^2$ and $\Delta=-4|v|^2$, so the degenerate locus is the trace line $\mathbb{R}(i\mathrm I_2)$ and the spectrum of $i\lambda\mathrm I_2+v\cdot E$ is the purely imaginary pair $i(\lambda\pm|v|)$. On the carrier the spectrum is $\pm i|v|$, distinct for every non-zero $v$, so the carrier is spectrally regular away from the origin.</p>
+<p>The singular locus $|v|=|\lambda|$ and the degenerate locus $v=0$ of the space meet only at the origin, and the space meets all four sectors while no carrier meets more than one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{u}(2)=\mathbb{R}(i\mathrm I_2)\oplus\mathfrak{su}(2)$</td>
+<td>the skew-adjoint space</td>
+</tr>
+<tr>
+<td>$\lambda,\ v$</td>
+<td>real coordinates of the trace line and of the carrier</td>
+</tr>
+<tr>
+<td>$\Delta=\tau^2-4\det$</td>
+<td>the discriminant, $-4\lvert v\rvert^2$</td>
+</tr>
+<tr>
+<td>$|v|^2$</td>
+<td>the positive definite form on the carrier</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html">The Spin-One Anti-Hermitian Subspace and Spectral Regularity</a>, for the source's eigenvalue computation.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-n-norm-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and N Norm Regularity in $M_2(\mathbb{C})$</a>, for the determinant on the same space.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>, for the sector table.</li>
+<li><a href="the-spectrum-of-a-biquaternion.html">The Spectrum</a>, for the quadratic relation.</li>
+<li><a href="the-n-regular-spectrally-regular-sector.html">The N-Regular, Spectrally Regular Sector</a>, for the sector in which the carrier lies.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

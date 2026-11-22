@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The matrix algebra of order four carries a copy of, the principal copy, defined as the image of the third symmetric power of the defining…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-group-at-math0-the-principal-copy-math1-and-the-kernel-math2"><strong>The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The matrix algebra of order four carries a copy of $SU(2)$, the <strong>principal copy</strong>, defined as the image of the third symmetric power of the defining two-dimensional representation. The module of the copy is $\mathbb{C}^4=\operatorname{Sym}^3\mathbb{C}^2=V_{3/2}$, the copy acts on the algebra by conjugation, and the kernel of that action is exactly the centre $\{\pm\mathrm I\}$.</p>
+<p><strong>The order of the article.</strong> The first section builds the copy and fixes the generators. The second proves that the conjugation action is unitary and by algebra automorphisms. The third computes the kernel, first on the module and then on the algebra. The fourth draws the consequence, that the algebra action is an action of $SO(3)$ and that its labels are therefore integers. The fifth compares the two kernels and states what the difference costs and what it buys.</p>
+<p><strong>It assumes</strong> <em>The Matrix Algebra $M_4(\mathbb{C})$</em> for the conventions, and <em>The Spin Content of $M_4(\mathbb{C})$</em> for the four carrier lists. The row at order two is <em>The Spin Group via $4\times4$ Real Matrices</em>; the rotor is <em>From the Spin Group to the Spin of a Single Rotor at $n=4$</em>.</p>
+<p><strong>The result in one line.</strong> The module is faithful and carries the half-integer label $\tfrac32$; the algebra action has kernel $\{\pm\mathrm I\}$ and carries the integer labels $0,1,2,3$; the difference between the two statements is one element, $-\mathrm I$.</p>
+<p><strong>Boundaries.</strong> Nothing here is about the real forms of the copy, which are the subject of <em>The Quaternionic Structure of the Module at $n=4$</em>. The decomposition of the algebra is quoted when needed and proved in <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em>; the computation of the weights is in <em>The Four Weights of the Module and the Half Angle at $n=4$</em>.</p>
+<h2 id="the-principal-copy">The Principal Copy</h2>
+<p><strong>Definition.</strong> Let $S=\mathbb{C}^2$ be the defining module of $SU(2)$. The <strong>principal copy</strong> is the image of the symmetric cube</p>
+<p>$$
+\operatorname{Sym}^3:SU(2)\longrightarrow GL(\operatorname{Sym}^3 S)=GL_4(\mathbb{C}),
+$$</p>
+<p>and the <strong>module</strong> of the copy is $V=\operatorname{Sym}^3 S$, of complex dimension four.</p>
+<p><strong>Proposition.</strong> With the orthonormal weight basis of $\operatorname{Sym}^3 S$, whose vectors are proportional to the monomials $u^3,u^2v,uv^2,v^3$, the derived representation of the Lie algebra sends the three generators to</p>
+<p>$$
+J_z=\operatorname{diag}\Bigl(\tfrac32,\tfrac12,-\tfrac12,-\tfrac32\Bigr),\qquad
+J_+=\sqrt3\,E_{01}+2E_{12}+\sqrt3\,E_{23},\qquad
+J_-=J_+^{\dagger},
+$$</p>
+<p>and the brackets</p>
+<p>$$
+[J_z,J_+]=\phantom{-}J_+,\qquad [J_z,J_-]=-J_-,\qquad [J_+,J_-]=2J_z
+$$</p>
+<p>hold up to a residual of order $10^{-16}$, which is the rounding of the arithmetic and not a defect of the model.</p>
+<p><em>Proof.</em> The torus acts on $u$ and $v$ with opposite weights, so on the monomial $u^{3-k}v^{k}$ it acts with weight $\tfrac32-k$; that gives the diagonal matrix. The raising operator carries $u^{3-k}v^{k}$ to $u^{4-k}v^{k-1}$ with the coefficient $\sqrt{(3-k)(k+1)}$, which is $\sqrt3,2,\sqrt3$ for $k=0,1,2$; the lowering operator is the transpose conjugate. The three brackets are then checked entry by entry, and the numerical residuals are at the level of the machine epsilon.</p>
+<p><strong>Corollary.</strong> $J_z$ is Hermitian with the four distinct eigenvalues $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, and $J_+$ and $J_-$ are conjugate transposes of one another.</p>
+<p><em>Proof.</em> The diagonal entries are real, and the off-diagonal matrices displayed are transposes.</p>
+<p><strong>Corollary.</strong> The copy is a copy of $SU(2)$ and not of $SO(3)$: the module is a genuine spinorial module.</p>
+<p><em>Proof.</em> The kernel of the module representation is computed in the third section; it is $\{\pm\mathrm I\}$ and not larger, so the image is isomorphic to $SU(2)$.</p>
+<h2 id="the-action-on-the-algebra">The Action on the Algebra</h2>
+<p><strong>Definition.</strong> For $q\in SU(2)$ and $X\in M_4(\mathbb{C})$ let</p>
+<p>$$
+\Phi_q(X)=\rho(q)\,X\,\rho(q)^{-1},
+$$</p>
+<p>where $\rho(q)=\operatorname{Sym}^3 q$. This is the <strong>conjugation action</strong> of the principal copy on the algebra.</p>
+<p><strong>Proposition.</strong> $\rho(q)$ is unitary for every $q$, that is, $\rho(q)^{\dagger}=\rho(q)^{-1}$, and $\Phi_q$ is an algebra automorphism with $\Phi_q\circ\Phi_{q'}=\Phi_{qq'}$.</p>
+<p><em>Proof.</em> A symmetric power of a unitary matrix is unitary in the orthonormal weight basis, and the transpose conjugate of $\operatorname{Sym}^3 q$ is $\operatorname{Sym}^3(q^{\dagger})=\operatorname{Sym}^3(q^{-1})$. Conjugation by an invertible element is an automorphism, and the composition law is associativity of the product.</p>
+<p><strong>Corollary.</strong> $\Phi_q$ preserves the trace, the determinant, the rank and the spectrum of $X$.</p>
+<p><em>Proof.</em> All four are invariants of similarity.</p>
+<p><strong>Corollary.</strong> $\Phi_q$ is a unitary operator on the algebra for the Hilbert–Schmidt form, since $\operatorname{tr}\bigl(\Phi_q(X)^{\dagger}\Phi_q(Y)\bigr)=\operatorname{tr}(X^{\dagger}Y)$.</p>
+<p><em>Proof.</em> Insert $\rho(q)^{\dagger}=\rho(q)^{-1}$ and use the cyclicity of the trace.</p>
+<p><strong>The two-sided form.</strong> The action is written with one factor on each side, and neither the left multiplication alone nor the right multiplication alone is an algebra map. The left multiplication $X\mapsto\rho(q)X$ carries a product $XY$ to $\rho(q)XY$, while the product of the images is $\rho(q)X\rho(q)Y$; the two differ by the second factor. Conjugation is the smallest repair, and it is the reason the action on the algebra is two-sided while the action on the module is one-sided.</p>
+<p><em>Proof.</em> The two displays differ by $\rho(q)$ on the right, which is not the identity unless $q$ is central.</p>
+<h2 id="the-kernel-on-the-module">The Kernel on the Module</h2>
+<p><strong>Proposition.</strong> $\rho(-\mathrm I_2)=(-1)^{3}\mathrm I_4=-\mathrm I_4$, and the kernel of $\rho$ is exactly $\{\pm\mathrm I_2\}$.</p>
+<p><em>Proof.</em> On the monomial $u^{3-k}v^{k}$ the matrix $-\mathrm I_2$ acts by $(-1)^{3-k}(-1)^{k}=(-1)^{3}=-1$; hence $\rho(-\mathrm I_2)=-\mathrm I_4$. The kernel of an irreducible representation of $SU(2)$ is the centre when the representation is faithful; here $-\mathrm I_2$ acts as $-1$, which is not the identity, so the kernel is not all of the centre and contains no other element, since $SU(2)$ has centre $\{\pm\mathrm I_2\}$.</p>
+<p><strong>Corollary.</strong> The label of the module is $\tfrac32$, an odd half-integer, and the module is faithful.</p>
+<p><em>Proof.</em> The highest weight is $\tfrac32$, and faithful means injective, which is the proposition.</p>
+<p><strong>The general rule.</strong> For the symmetric power $\operatorname{Sym}^{m}S$ the element $-\mathrm I_2$ acts as $(-1)^{m}$, so the representation is faithful exactly when $m$ is odd, that is, exactly when the label $\tfrac m2$ is a half-integer in the strict sense. At $n=4$ one has $m=3$ and the module is faithful; at $n=3$ one has $m=2$ and the module is not faithful.</p>
+<p><em>Proof.</em> The same computation as in the proposition, with $m$ in place of three.</p>
+<h2 id="the-kernel-on-the-algebra">The Kernel on the Algebra</h2>
+<p><strong>Proposition.</strong> $\Phi_{-\mathrm I}(X)=(-\mathrm I_4)X(-\mathrm I_4)^{-1}=X$ for every $X$, so $-\mathrm I_2$ lies in the kernel of the algebra action.</p>
+<p><em>Proof.</em> The two signs cancel, $(-1)\cdot(-1)=+1$.</p>
+<p><strong>Theorem.</strong> The kernel of $q\mapsto\Phi_q$ is exactly $\{\pm\mathrm I_2\}$, and the image is isomorphic to $SU(2)/\{\pm\mathrm I_2\}\cong SO(3)$.</p>
+<p><em>Proof.</em> The proposition gives the inclusion of the centre in the kernel. For the converse, an element in the kernel acts trivially on the algebra, hence on the module, since the module is a quotient of the algebra as a module; by the previous section the kernel of the module action is the centre, so the kernel of the algebra action is contained in the centre. The quotient of $SU(2)$ by its centre is $SO(3)$, and the map to $GL(M_4)$ is injective on the quotient.</p>
+<p><strong>Corollary.</strong> The kernel is not larger than $\{\pm\mathrm I_2\}$: no element of $SU(2)$ outside the centre acts trivially on $M_4(\mathbb{C})$.</p>
+<p><em>Proof.</em> The theorem.</p>
+<p><strong>The dimension check.</strong> Both groups have dimension three, $\dim SU(2)=3$ and $\dim SO(3)=3$, and the covering is two-to-one. The module has dimension four and the algebra sixteen, and neither dimension enters the count of the kernel.</p>
+<p><em>Proof.</em> The real dimensions of the two groups, and the dimension count for the two spaces.</p>
+<h2 id="faithfulness-and-factorisation">Faithfulness and Factorisation</h2>
+<p><strong>Proposition.</strong> The module representation is faithful and the algebra representation factors through the centre; the two statements are compatible because the algebra contains the module in a way that is not stable under the copy.</p>
+<p><em>Proof.</em> The module is $\operatorname{Sym}^3 S$, on which $-\mathrm I$ acts as $-1$; the algebra is $\operatorname{End}(V)$, on which $-\mathrm I$ acts as the conjugation by $-1$, which is the identity. The containment of the module in the algebra is not equivariant: the module appears inside the algebra only as a left ideal, and left multiplication is one-sided.</p>
+<p><strong>Corollary (the origin of the integers).</strong> Every label of a summand of the algebra is an integer, since the acting group is $SO(3)$ and the irreducible representations of $SO(3)$ are the integer spins.</p>
+<p><em>Proof.</em> The decomposition of the algebra into summands is a decomposition into irreducible representations of the image group, which is $SO(3)$; the irreducible representations of $SO(3)$ are $V_k$ with $k$ a non-negative integer.</p>
+<p><strong>Corollary (the exception).</strong> The half-integer $\tfrac32$ nevertheless occurs inside the algebra, as the label of a minimal left ideal, and not as the label of a summand.</p>
+<p><em>Proof.</em> A rank-one idempotent $P$ gives a four-dimensional left ideal $M_4P$ on which left multiplication by $J_z$ has the eigenvalues $\pm\tfrac32,\pm\tfrac12$; a summand of the conjugation decomposition would need these weights in the multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$, which does not contain them.</p>
+<h2 id="summary">Summary</h2>
+<p>The principal copy is the image of $\operatorname{Sym}^3$ in $GL_4(\mathbb{C})$, its module is $\mathbb{C}^4=V_{3/2}$ with the four weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, and the three generators satisfy the $\mathfrak{su}_2$ brackets to machine precision. The copy acts on the algebra by conjugation, which is unitary for the Hilbert–Schmidt form and preserves trace, determinant and spectrum.</p>
+<p>The element $-\mathrm I$ acts as $-1$ on the module, because $2j=3$ is odd, and as $+1$ on the algebra, because the two signs cancel. The kernel of the module representation is $\{\pm\mathrm I\}$ and the kernel of the algebra representation is also $\{\pm\mathrm I\}$; the first makes the module faithful, the second makes the algebra action an action of $SO(3)$.</p>
+<p>The factorisation through $SO(3)$ is the reason every label of a summand is an integer. The half-integer $\tfrac32$ is present inside the algebra only as the label of a minimal left ideal, where the acting group is read through a one-sided multiplication and the kernel no longer acts trivially.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S=\mathbb{C}^2$</td>
+<td>the defining module of $SU(2)$</td>
+</tr>
+<tr>
+<td>$\rho(q)=\operatorname{Sym}^3 q$</td>
+<td>the module representation</td>
+</tr>
+<tr>
+<td>$V=\operatorname{Sym}^3 S=V_{3/2}$</td>
+<td>the module of the copy</td>
+</tr>
+<tr>
+<td>$J_z,J_+,J_-$</td>
+<td>the three generators in the weight basis</td>
+</tr>
+<tr>
+<td>$\Phi_q(X)=\rho(q)X\rho(q)^{-1}$</td>
+<td>the conjugation action</td>
+</tr>
+<tr>
+<td>$V_k$</td>
+<td>the carrier of spin $k$, of dimension $2k+1$</td>
+</tr>
+<tr>
+<td>$M_4P$</td>
+<td>a minimal left ideal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the four carrier lists and the corrected proposition on spin $\tfrac32$.</li>
+<li><a href="from-the-spin-group-to-the-spin-of-a-single-rotor-at-n-4.html">From the Spin Group to the Spin of a Single Rotor at $n=4$</a>, for the sign after $2\pi$.</li>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle-at-n-4.html">The Four Weights of the Module and the Half Angle at $n=4$</a>, for the weight basis and the lowering operator.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the decomposition used in the section on faithfulness.</li>
+<li><a href="the-spin-group-via-4x4-real-matrices.html">The Spin Group via $4\times4$ Real Matrices</a>, for the row at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Zero Carrier of $M_4(\mathbb{C})$: the Scalars — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The carrier of label zero is the line of scalars. It is the smallest carrier, the only one contained in a half, the only one closed under…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-zero-carrier-of-math0-the-scalars"><strong>The Spin-Zero Carrier of $M_4(\mathbb{C})$: the Scalars</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The carrier of label zero is the line of scalars. It is the smallest carrier, the only one contained in a half, the only one closed under multiplication, and the one that appears in all four readings of the algebra.</p>
+<p><strong>The order of the article.</strong> The first section identifies the carrier and its dimensions. The second proves its invariance and its characterization as the fixed space. The third computes its occurrence in the four readings. The fourth treats its relations with the other carriers, orthogonality and multiplication. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the carriers and <em>The Parity Rule</em> for the squares. The row at order two is <em>The Spin-Zero Carrier of the Biquaternion Algebra</em>.</p>
+<p><strong>The result in one line.</strong> $V_0=\mathbb{C}\mathrm I$, of complex dimension one and real dimension two, fixed pointwise by the conjugation action, and occurring in every reading of the algebra.</p>
+<p><strong>Boundaries.</strong> The article does not treat the determinant or the spectrum of the scalar matrices in detail; those are the subjects of the two following articles.</p>
+<h2 id="the-carrier">The Carrier</h2>
+<p><strong>Proposition.</strong> $V_0=\mathbb{C}\mathrm I$ is a carrier of label $0$, of complex dimension one and real dimension two.</p>
+<p><em>Proof.</em> The scalars are invariant under conjugation and the Casimir acts on them by zero; the space of scalars is one complex dimensional, hence two real dimensional.</p>
+<p><strong>Corollary.</strong> The carrier is the fixed space of the conjugation action: $\Phi_q(X)=X$ for all $q$ exactly when $X$ is a scalar.</p>
+<p><em>Proof.</em> A matrix commuting with all of $SU(2)$ commutes with all matrices and is a scalar.</p>
+<p><strong>Corollary.</strong> The carrier is the only one of dimension one, and the only one whose label is zero.</p>
+<p><em>Proof.</em> The dimensions are $1,3,5,7$ and the labels $0,1,2,3$.</p>
+<p><strong>The reading.</strong> The carrier of label zero is the trivial representation, and its vectors are the fixed points.</p>
+<h2 id="invariance-and-orthogonality">Invariance and Orthogonality</h2>
+<p><strong>Proposition.</strong> $V_0$ is orthogonal to the other three carriers for the trace form, and the trace form on it is $\operatorname{tr}(\lambda\mathrm I\,\mu\mathrm I)=4\lambda\mu$.</p>
+<p><em>Proof.</em> The carriers are inequivalent irreducible modules, so the invariant bilinear form pairs them trivially; the trace of a scalar matrix is four times the scalar.</p>
+<p><strong>Corollary.</strong> The trace of an element of $V_k$ for $k\ge1$ is zero, and the trace of a scalar is four times the scalar.</p>
+<p><em>Proof.</em> The trace is an invariant linear form, trivial on the nontrivial carriers.</p>
+<p><strong>Corollary.</strong> The projection onto $V_0$ is $X\mapsto(\operatorname{tr}X/4)\mathrm I$.</p>
+<p><em>Proof.</em> The projection is the identity on the scalars and zero on the traceless part.</p>
+<p><strong>The reading.</strong> The carrier is separated from the others by the trace, which is the only invariant linear form.</p>
+<h2 id="the-occurrences">The Occurrences</h2>
+<p><strong>Proposition.</strong> $V_0$ occurs in each of the four readings: as the carrier $V_0$ in the principal reading, as the scalars in the $U(4)$ reading, as the piece $(0,0)$ in the factorised reading, and as the scalars of each diagonal block in the block reading.</p>
+<p><em>Proof.</em> The four lists: $7+5+3+1$ contains $1$; $1+15$ begins with $1$; $1+3+3+9$ begins with $1$; $8+3+3+2$ contains the scalars of the two blocks.</p>
+<p><strong>Corollary.</strong> The label zero is the only label that occurs in all four readings.</p>
+<p><em>Proof.</em> The table of <em>Which Spin Lives in Which Reading</em>.</p>
+<p><strong>Corollary.</strong> The scalars are the only piece of the four readings that is one-dimensional, and the only one contained in the symmetric half.</p>
+<p><em>Proof.</em> The identity is symmetric and the other pieces have dimension at least two.</p>
+<p><strong>The reading.</strong> The carrier of label zero is the common part of the four readings, which is why the centre is the same object in all of them.</p>
+<h2 id="multiplication">Multiplication</h2>
+<p><strong>Proposition.</strong> $V_0$ is closed under multiplication, and $V_0V_k=V_k$ for every carrier.</p>
+<p><em>Proof.</em> The scalars commute with everything and multiplication by a nonzero scalar is an isomorphism of $V_k$.</p>
+<p><strong>Corollary.</strong> $V_0$ is the only carrier that is a subalgebra, and the only one whose product with another carrier is a carrier.</p>
+<p><em>Proof.</em> The products of the other carriers are sums of at least two carriers.</p>
+<p><strong>Corollary.</strong> $V_0$ is an ideal, and in fact a two-sided ideal, of the algebra.</p>
+<p><em>Proof.</em> $\lambda\mathrm I$ multiplied by any matrix on either side is a scalar multiple of that matrix, but for the ideal property one needs $X\lambda\mathrm I=\lambda X\in M_4$, which holds; the scalars form the centre.</p>
+<p><strong>The reading.</strong> The carrier is simultaneously a subalgebra, an ideal and the centre; it is the only carrier with these three properties.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the determinant article.</strong> The determinant is a function on the algebra, computed on the carrier as the fourth power; that is the next article.</p>
+<p><strong>Against the spectral article.</strong> The spectrum of a scalar is the single eigenvalue repeated four times; the discriminant vanishes identically on the carrier.</p>
+<p><strong>Against the rank article.</strong> A scalar is invertible or zero: the rank is four or zero, and the two strata meet the carrier in one point each.</p>
+<h2 id="the-scalars-and-the-centre">The Scalars and the Centre</h2>
+<p><strong>Proposition.</strong> The carrier of label zero is the centre of the algebra, it is the commutant of the copy, and it is the only carrier on which the conjugation action is trivial.</p>
+<p><em>Proof.</em> The scalars commute with every matrix, so they are fixed by the conjugation action; the fixed points of an action are the label-zero isotypic component, which is one-dimensional because the multiplicity of the label zero in the tensor square is one; a carrier on which the action is trivial is the fixed space, hence the centre.</p>
+<p><strong>Corollary.</strong> The scalars are the kernel of the traceless projection, and every element of the algebra is the sum of a unique scalar and a unique traceless element.</p>
+<p><em>Proof.</em> The projection $X\mapsto X-(\operatorname{tr}X/4)\mathrm I$ has the scalars as kernel and the traceless part as image.</p>
+<p><strong>Corollary.</strong> The determinant of a scalar is the fourth power of the scalar, and the trace form on the centre is four times the product of the two scalars.</p>
+<p><em>Proof.</em> $\det(t\mathrm I)=t^{4}$ and $\operatorname{tr}(s\mathrm I\cdot t\mathrm I)=4st$.</p>
+<p><strong>The reading.</strong> The scalar carrier is the part of the algebra that the copy does not see, and it is the unit of the four readings: every list of carriers contains the term one.</p>
+<h2 id="the-unit-and-the-invariants">The Unit and the Invariants</h2>
+<p><strong>The unit.</strong> The identity matrix is the highest weight vector of the scalar carrier, of weight zero, and it is the unique element of the algebra fixed by the copy and of trace four; the other scalars are its multiples.</p>
+<p><strong>The forms on the line.</strong> Both forms take the value four on the unit, since $\operatorname{tr}(\mathrm I\,\mathrm I)=4$ and $\operatorname{tr}(\mathrm I\,\mathrm I^{\dagger})=4$; on the scalars the two forms therefore coincide, and they differ only on the elements of the carriers on which the conjugation is not real.</p>
+<p><strong>The determinant.</strong> The determinant of the unit is one, and the determinant of a general scalar is the fourth power of the scalar; the fourth power is the degree of the determinant on a space of dimension four, so the scalar carrier sees the dimension of the module through the degree of its determinant.</p>
+<p><strong>The reading.</strong> The scalars are the carrier of the unit, and the unit records the dimension of the module in the degree of its determinant and in the value of its forms.</p>
+<h2 id="summary">Summary</h2>
+<p>The carrier of label zero is the line of scalars, of complex dimension one and real dimension two, fixed pointwise by the conjugation action and separated from the other carriers by the trace. The projection onto it is $X\mapsto(\operatorname{tr}X/4)\mathrm I$.</p>
+<p>It occurs in all four readings of the algebra, it is the only one-dimensional piece, it is closed under multiplication, it multiplies every carrier to itself, and it is a two-sided ideal: it is the centre.</p>
+<p><strong>The place in the corpus.</strong> The scalar carrier is the unit of the four readings and the only summand that is also a two-sided ideal; it is the piece the copy does not see, and its simplicity is the reason the trace form and the determinant are the only invariants that distinguish it from the traceless part.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_0=\mathbb{C}\mathrm I$</td>
+<td>the carrier of label zero</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}/4$</td>
+<td>the projection onto it</td>
+</tr>
+<tr>
+<td>$4\lambda\mu$</td>
+<td>the trace form on it</td>
+</tr>
+<tr>
+<td>$1+15$, $1+3+3+9$, $8+3+3+2$</td>
+<td>the readings containing the scalars</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-zero-carrier-and-the-determinant-at-n-4.html">The Spin-Zero Carrier and the Determinant at $n=4$</a>, for the determinant.</li>
+<li><a href="the-spin-zero-carrier-and-the-spectral-strata-at-n-4.html">The Spin-Zero Carrier and the Spectral Strata at $n=4$</a>, for the spectrum.</li>
+<li><a href="the-spin-zero-carrier-and-the-rank-strata-at-n-4.html">The Spin-Zero Carrier and the Rank Strata at $n=4$</a>, for the rank.</li>
+<li><a href="the-spin-zero-carrier-of-the-biquaternion-algebra.html">The Spin-Zero Carrier of the Biquaternion Algebra</a>, for the row at order two.</li>
+<li><a href="which-spin-lives-in-which-reading-at-n-4.html">Which Spin Lives in Which Reading at $n=4$</a>, for the four readings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals — Biquaternion Universe</title>
+  <meta name="description" content="The subject. A bispinor of rank one is a spinor times a dual spinor, and the set of bispinors obtained by fixing the dual spinor is a minimal left ideal.…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-math0-bispinors-and-the-minimal-left-ideals"><strong>The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A bispinor of rank one is a spinor times a dual spinor, and the set of bispinors obtained by fixing the dual spinor is a minimal left ideal. The article proves the correspondence, computes its geometry, and reads the ideal as a fibre of the bispinor space.</p>
+<p><strong>The order of the article.</strong> The first section constructs the map from a spinor to a bispinor. The second proves that the fibres are the minimal left ideals. The third identifies the parameter space and its dimension. The fourth treats the two-sided and right versions. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$</em> and <em>The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$</em>. The row at order two is <em>The Spin-$\tfrac12$ Bispinors and the Minimal Left Ideals</em>.</p>
+<p><strong>The result in one line.</strong> For a fixed nonzero dual spinor $\bar\chi$, the set $\{\psi\bar\chi^{\dagger}\}$ is a minimal left ideal of dimension four, and every minimal left ideal arises this way from a line of dual spinors.</p>
+<p><strong>Boundaries.</strong> The article treats the rank-one bispinors and the ideals they generate; the higher-rank bispinors are the subject of the rank articles.</p>
+<h2 id="from-a-spinor-to-a-bispinor">From a Spinor to a Bispinor</h2>
+<p><strong>Proposition.</strong> For fixed nonzero $\bar\chi$ the map $\psi\mapsto\psi\bar\chi^{\dagger}$ is injective and linear, with image the set of matrices whose rows are multiples of the row $\bar\chi^{\dagger}$.</p>
+<p><em>Proof.</em> The matrix $\psi\bar\chi^{\dagger}$ has entries $\psi_i\bar\chi_j$, so each row is $\bar\chi_j$ times the vector $\psi$; the map is injective because $\bar\chi\neq0$ gives a nonzero functional.</p>
+<p><strong>Corollary.</strong> The image has dimension four, and its nonzero elements have rank one.</p>
+<p><em>Proof.</em> The domain has dimension four; a nonzero product of a column and a row has rank one.</p>
+<p><strong>Corollary.</strong> The image is closed under left multiplication by any matrix and not under right multiplication.</p>
+<p><em>Proof.</em> $A(\psi\bar\chi^{\dagger})=(A\psi)\bar\chi^{\dagger}$ stays in the image; $(\psi\bar\chi^{\dagger})B=\psi(\bar\chi^{\dagger}B)$ changes the functional unless $B$ preserves the line.</p>
+<p><strong>The reading.</strong> The construction is the multiplication of the module by a fixed functional, and it produces a space of rank-one bispinors closed on the left.</p>
+<h2 id="the-fibres-are-the-ideals">The Fibres Are the Ideals</h2>
+<p><strong>Proposition.</strong> The image of the map is the minimal left ideal $M_4P$ where $P$ is the rank-one idempotent projecting onto the line of the spinor $\psi_0$ paired with $\bar\chi$ to one.</p>
+<p><em>Proof.</em> The ideal $M_4P$ consists of the matrices whose rows lie in the row space of $P$, which is spanned by $\bar\chi^{\dagger}$; both spaces are four-dimensional and one contains the other.</p>
+<p><strong>Corollary.</strong> Every minimal left ideal arises from a line of dual spinors, and two dual spinors give the same ideal exactly when they are proportional.</p>
+<p><em>Proof.</em> The proposition and the injectivity of the correspondence between the line and the ideal.</p>
+<p><strong>Corollary.</strong> The minimal left ideals are the fibres of the projection of the bispinor space onto the second factor, restricted to the rank-one bispinors.</p>
+<p><em>Proof.</em> A rank-one bispinor determines its second factor up to a scalar.</p>
+<p><strong>The reading.</strong> The ideal is the fibre of the bispinor description: a spinor bundle whose base is the space of lines of dual spinors.</p>
+<h2 id="the-parameter-space">The Parameter Space</h2>
+<p><strong>Proposition.</strong> The minimal left ideals are parametrised by the projective space $\mathbb{P}^{3}$ of lines of $\mathbb{C}^{4}$, of complex dimension three and real dimension six.</p>
+<p><em>Proof.</em> The lines of the dual space are the points of $\mathbb{P}^{3}$.</p>
+<p><strong>Corollary.</strong> The family of minimal left ideals has the same dimension as the family of rank-one idempotents of trace one, namely six real dimensions.</p>
+<p><em>Proof.</em> A rank-one idempotent is determined by its image line and its kernel hyperplane, which gives $3+3=6$ parameters.</p>
+<p><strong>Corollary.</strong> The union of the minimal left ideals is the set of matrices of rank at most one, the determinantal variety of the algebra.</p>
+<p><em>Proof.</em> Every rank-one matrix lies in the ideal determined by its row space.</p>
+<p><strong>The reading.</strong> The ideals form a family of dimension six inside the fifteen-dimensional projective space of the algebra.</p>
+<h2 id="the-right-and-two-sided-versions">The Right and Two-Sided Versions</h2>
+<p><strong>Proposition.</strong> Fixing the first factor instead gives the minimal right ideals, parametrised by the lines of the spinor space, and the intersection of a minimal left ideal with a minimal right ideal is a line.</p>
+<p><em>Proof.</em> The right version is the transpose of the left; a left ideal has all rows in a fixed line, a right ideal has all columns in a fixed line, and their intersection is the rank-one matrix determined by the two lines. Note that the intersection is a line, so the two families meet transversally.</p>
+<p><strong>Corollary.</strong> A rank-one bispinor is the intersection of its left ideal and its right ideal, and it is determined by a spinor and a dual spinor up to a scalar.</p>
+<p><em>Proof.</em> The proposition and the parametrisation.</p>
+<p><strong>Corollary.</strong> The two-sided ideals are trivial: the algebra is simple, so its only two-sided ideals are zero and the whole algebra.</p>
+<p><em>Proof.</em> $M_4(\mathbb{C})$ is a simple algebra, having no nontrivial two-sided ideals.</p>
+<p><strong>The reading.</strong> The left and right families are dual to each other, and the rank-one bispinors are their transverse intersections.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the module article.</strong> That article constructs the ideal from an idempotent; this one constructs it from a dual spinor, and the two constructions agree.</p>
+<p><strong>Against the bispinor introduction.</strong> That article identifies the bispinor space with the algebra; this one restricts to the rank-one stratum and reads the ideals.</p>
+<p><strong>Against the rank article.</strong> The higher-rank bispinors do not generate minimal ideals, and their strata are treated separately.</p>
+<h2 id="a-final-observation">A Final Observation</h2>
+<p><strong>The bundle picture.</strong> The rank-one bispinors form a bundle over the product of two projective spaces, and the minimal left ideals are the fibres over the second factor; the rank is constant on each fibre, equal to one off the zero section.</p>
+<p><strong>The scale.</strong> The pair of spinors is determined up to a common scalar, so the projective class is the invariant object; the ideal records the second factor and the coideal the first, and the bispinor records both.</p>
+<h2 id="the-minimal-ideals-in-coordinates">The Minimal Ideals in Coordinates</h2>
+<p><strong>The columns.</strong> A minimal left ideal consists of the matrices whose columns lie in a fixed line, and the line is a point of the projective space of the module; the ideal is therefore the set of bispinors with a fixed right factor, up to scale.</p>
+<p><strong>The dimension.</strong> The ideal has complex dimension three, the sum of the one dimension of the fixed line and the two dimensions of the free left factor; it is the smallest nonzero left ideal, and every left ideal contains one.</p>
+<p><strong>The intersection.</strong> Two minimal left ideals meet in the zero matrix unless they share the line, in which case they coincide; the family of minimal left ideals is therefore a projective space of dimension three, and the algebra is the union of the ideals over that space.</p>
+<p><strong>The reading.</strong> The minimal left ideals are the fibres of the projection from the bispinor space onto the projective module, and each fibre is a copy of the module itself.</p>
+<h2 id="the-check-of-the-count">The Check of the Count</h2>
+<p><strong>The number of ideals.</strong> The minimal left ideals are indexed by the points of the projective module, a projective space of dimension three, and over each point there is exactly one minimal left ideal; the total family is therefore a projective three-space of ideals.</p>
+<h2 id="summary">Summary</h2>
+<p>For a fixed nonzero dual spinor the map $\psi\mapsto\psi\bar\chi^{\dagger}$ has a four-dimensional image, consisting of the matrices whose rows are multiples of the dual spinor, and that image is a minimal left ideal. Every minimal left ideal arises this way from a line of dual spinors, so the ideals are parametrised by $\mathbb{P}^{3}$.</p>
+<p>The right ideals are obtained by fixing the first factor, and the intersection of a left ideal with a right ideal is a line spanned by a rank-one bispinor. The two-sided ideals are trivial.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\psi\bar\chi^{\dagger}$</td>
+<td>a rank-one bispinor</td>
+</tr>
+<tr>
+<td>$M_4P$</td>
+<td>the minimal left ideal it generates</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^{3}$</td>
+<td>the parameter space of the ideals</td>
+</tr>
+<tr>
+<td>$3+3=6$</td>
+<td>the parameters of a rank-one idempotent</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-spin-three-halves-bispinor-spaces-at-n-4.html">Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$</a>, for the space.</li>
+<li><a href="the-minimal-left-ideals-of-m4c.html">The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$</a>, for the idempotent construction.</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-rank-strata-at-n-4.html">The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$</a>, for the higher ranks.</li>
+<li><a href="the-spin-half-bispinors-and-the-minimal-left-ideals.html">The Spin-$\tfrac12$ Bispinors and the Minimal Left Ideals</a>, for the row at order two.</li>
+<li><a href="the-left-ideals-and-the-image-of-a-left-multiplication-at-n-4.html">The Left Ideals and the Image of a Left Multiplication at $n=4$</a>, for the general left ideals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

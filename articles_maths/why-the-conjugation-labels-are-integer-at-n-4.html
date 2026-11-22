@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The copy acts on the algebra by conjugation and the algebra decomposes into four integer-labelled carriers, while the copy acts on the module…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="why-the-conjugation-labels-are-integer-the-kernel-math0"><strong>Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The copy acts on the algebra by conjugation and the algebra decomposes into four integer-labelled carriers, while the copy acts on the module by the spin representation and the module has the half-integer label $\tfrac32$. The article proves both statements from one computation: the kernel of the conjugation action is $\{\pm\mathrm I\}$, so the conjugation action is an action of $SO(3)$, and the labels of an action of $SO(3)$ are integers.</p>
+<p><strong>The order of the article.</strong> The first section identifies the kernel. The second shows that the quotient is $SO(3)$ and that the algebra is an honest representation of it. The third proves that the labels are integers, once from the group and once from the weights. The fourth treats the odd orders, where the module descends as well. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</em> for the copy, and <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em>. The row at order two is <em>Why the Conjugation Labels Are Integer</em>.</p>
+<p><strong>The result in one line.</strong> $\ker\Phi=\{\pm\mathrm I\}$, the conjugation action factors through $SO(3)$, and every label of an $SO(3)$-module is an integer, so the carriers have the labels $0,1,2,3$.</p>
+<p><strong>Boundaries.</strong> The article uses the weights of the module without recomputing them, and it does not treat the spin group beyond the kernel; the double cover is the subject of the article on the spin group.</p>
+<h2 id="the-kernel">The Kernel</h2>
+<p><strong>Theorem.</strong> $\ker\Phi=\{\pm\mathrm I\}$, where $\Phi_q(X)=\rho(q)X\rho(q)^{-1}$.</p>
+<p><em>Proof.</em> If $\Phi_q$ is the identity then $\rho(q)$ commutes with every matrix, hence is a scalar $\lambda\mathrm I$. The eigenvalues of $\rho(q)$ are $\lambda^{2j},\lambda^{2j-2},\dots,\lambda^{-2j}$; all equal forces $\lambda^{2j}=\lambda^{2j-2}$, that is $\lambda^{2}=1$, so $\lambda=\pm1$. The scalars in the image of $\rho$ are therefore $\pm\mathrm I$, and $\rho(-1)=(-1)^{2j}\mathrm I=-\mathrm I$ at $2j=3$, so the kernel is exactly $\{\pm\mathrm I\}$.</p>
+<p><strong>Corollary.</strong> The kernel is the centre of the copy, and it has two elements.</p>
+<p><em>Proof.</em> The centre of $SU(2)$ is $\{\pm\mathrm I\}$, and both elements act trivially by conjugation because a scalar commutes with everything.</p>
+<p><strong>Corollary.</strong> $\Phi$ is not faithful, and $\rho$ is faithful at $n=4$ because $\rho(-1)=-\mathrm I\neq\mathrm I$.</p>
+<p><em>Proof.</em> The kernel of $\Phi$ is nontrivial and contains the kernel of $\rho$; $\rho(-1)=-\mathrm I$.</p>
+<p><strong>The reading.</strong> The loss of faithfulness is exactly the loss of the sign of a spinor: the copy and its quotient by $\pm1$ act alike on the algebra, and the module distinguishes them.</p>
+<h2 id="the-quotient">The Quotient</h2>
+<p><strong>Proposition.</strong> $SU(2)/\{\pm\mathrm I\}\cong SO(3)$, and the conjugation action of the copy on the algebra factors through this quotient.</p>
+<p><em>Proof.</em> The adjoint representation of $SU(2)$ on its Lie algebra is the conjugation action on the three-dimensional space of traceless anti-Hermitian matrices; its kernel is $\{\pm\mathrm I\}$ and its image is $SO(3)$, by the double cover of the rotation group.</p>
+<p><strong>Corollary.</strong> The algebra is a representation of $SO(3)$, and its four carriers are the $SO(3)$-modules of labels $0,1,2,3$.</p>
+<p><em>Proof.</em> The action factors through the quotient, and the carriers are the isotypic pieces.</p>
+<p><strong>Corollary.</strong> Two elements of the copy differing by sign act identically on the algebra.</p>
+<p><em>Proof.</em> The factorisation.</p>
+<h2 id="the-labels-are-integers">The Labels Are Integers</h2>
+<p><strong>Proposition.</strong> Every irreducible representation of $SO(3)$ has an integer label.</p>
+<p><em>Proof.</em> The representations of $SO(3)$ are the representations of $SU(2)$ on which $-\mathrm I$ acts trivially; on $V_j$ the element $-\mathrm I$ acts by $(-1)^{2j}$, so the representation descends exactly when $2j$ is even, that is when $j$ is an integer.</p>
+<p><strong>Corollary.</strong> The carriers' labels are integers, and the module's label $\tfrac32$ is not.</p>
+<p><em>Proof.</em> The carriers are $SO(3)$-modules, hence have integer labels; $\tfrac32$ is not an integer.</p>
+<p><strong>Corollary.</strong> The algebra has no carrier of label $\tfrac32$, and the total dimension is $1+3+5+7=16$.</p>
+<p><em>Proof.</em> The labels are $0,\dots,2j$ and the dimensions add.</p>
+<p><strong>The second proof from weights.</strong> The algebra's weights are differences of the module's weights, the module's weights are congruent to $\tfrac12$ modulo one, so the differences are integers; a module with integer weights has an integer label.</p>
+<p><em>Proof.</em> The weights of $V_{3/2}$ are $\pm\tfrac32,\pm\tfrac12$, and the difference of two of them is an integer.</p>
+<p><strong>The reading.</strong> The two proofs are the group-theoretic and the weight-theoretic face of one fact: the conjugation action sees only the quotient by the sign, and the sign is what makes a label half-integral.</p>
+<h2 id="the-odd-orders">The Odd Orders</h2>
+<p><strong>Proposition.</strong> At odd $n$ the module's label is an integer, $-\mathrm I$ acts trivially on the module, and the module descends to $SO(3)$; the kernel of $\Phi$ is still $\{\pm\mathrm I\}$.</p>
+<p><em>Proof.</em> $2j=n-1$ is even, so $\rho(-\mathrm I)=(-1)^{2j}\mathrm I=\mathrm I$ and the representation descends; the computation of the theorem does not use the parity of $2j$ and gives $\{\pm\mathrm I\}$ at every order.</p>
+<p><strong>Corollary.</strong> At odd order the module is one of the carriers and the sign of a spinor is not seen; at even order the module is not a carrier and the sign is seen on the module only.</p>
+<p><em>Proof.</em> The integer label at odd order makes the module a carrier; at even order the label is a half-integer and the module is not a carrier.</p>
+<p><strong>Corollary.</strong> The phrase "the conjugation labels stay integer" is a statement about the quotient and not about the order; what changes with the order is whether the module descends.</p>
+<p><em>Proof.</em> The theorem holds at every order, and the descent depends on the parity of $2j$.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the spin group article.</strong> That article proves the double cover and computes $\operatorname{Sym}^3$; this one uses the kernel to explain the integrality of the labels. The two computations agree on $\{\pm\mathrm I\}$.</p>
+<p><strong>Against the half-integer article.</strong> That article follows the half-integer into the weights; this one explains why the algebra's labels are integers in the first place.</p>
+<p><strong>Against the odd order.</strong> The statements at odd order are made separately, because the module's descent changes and the labels do not.</p>
+<h2 id="the-two-values-of-the-indicator">The Two Values of the Indicator</h2>
+<p><strong>The trichotomy.</strong> An irreducible representation of the copy is of real, complex or quaternionic type according to the value $+1$, $0$ or $-1$ of the indicator; the module of half-integer label is quaternionic and the carriers of integer label are real, and no carrier of this algebra is of complex type.</p>
+<p><strong>The sign rule.</strong> The indicator is $(-1)^{2j}$, so the two cases alternate with the parity of twice the label; the module has twice the label equal to an odd integer and the carriers have it even, which is the whole content of the rule.</p>
+<p><strong>The consequence for the forms.</strong> A real type carrier has an invariant symmetric bilinear form and a real structure; a quaternionic module has an invariant alternating form and an anti-linear map with square $-1$; the forms of the carriers and of the module are therefore different in kind, not only in value.</p>
+<p><strong>The reading.</strong> The integrality of the labels is the arithmetic shadow of the trichotomy, and it decides which invariant forms exist at each order.</p>
+<h2 id="summary">Summary</h2>
+<p>The kernel of the conjugation action of the copy on the algebra is $\{\pm\mathrm I\}$: an element acting trivially must act by a scalar, and the eigenvalues of that scalar on the module force it to be $\pm1$. The quotient is $SO(3)$, and the algebra is an $SO(3)$-module.</p>
+<p>Every irreducible $SO(3)$-module has an integer label, because the modules of $SU(2)$ descend exactly when $-\mathrm I$ acts trivially, which is the case of even $2j$. Hence the carriers have the labels $0,1,2,3$, of total dimension sixteen, and the module's label $\tfrac32$ is not a carrier label.</p>
+<p>At odd orders the module descends as well and is a carrier; the kernel remains $\{\pm\mathrm I\}$ and the integrality of the labels is unchanged.</p>
+<p><strong>The place in the corpus.</strong> The integrality of the labels is the reason the algebra has invariant symmetric bilinear forms on every carrier and the module has none, and it is the same sign rule that decides the quaternionic structure of the module and the real structure of the carriers; the argument is a single evaluation of the centre of the copy on the highest weight.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi_q(X)=\rho(q)X\rho(q)^{-1}$</td>
+<td>the conjugation action</td>
+</tr>
+<tr>
+<td>$\ker\Phi=\{\pm\mathrm I\}$</td>
+<td>the kernel</td>
+</tr>
+<tr>
+<td>$SU(2)/\{\pm\mathrm I\}\cong SO(3)$</td>
+<td>the quotient</td>
+</tr>
+<tr>
+<td>$(-1)^{2j}$</td>
+<td>the sign by which $-\mathrm I$ acts on $V_j$</td>
+</tr>
+<tr>
+<td>$0,1,2,3$</td>
+<td>the integer labels of the carriers</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html">The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</a>, for the copy.</li>
+<li><a href="where-the-half-integers-go-in-m4c.html">Where the Half-Integers Go in $M_4(\mathbb{C})$</a>, for the half-integer.</li>
+<li><a href="what-a-half-integer-summand-would-require-at-n-4.html">What a Half-Integer Summand Would Require at $n=4$</a>, for the obstruction.</li>
+<li><a href="why-the-conjugation-labels-are-integer.html">Why the Conjugation Labels Are Integer</a>, for the row at order two.</li>
+<li><a href="the-slot-and-the-summand-at-n-4.html">The Slot and the Summand at $n=4$</a>, for the vocabulary.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

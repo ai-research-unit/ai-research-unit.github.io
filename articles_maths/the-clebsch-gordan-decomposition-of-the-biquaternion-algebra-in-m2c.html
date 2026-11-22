@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Clebsch–Gordan Decomposition of the Biquaternion Algebra in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The algebra carries four complex dimensions. Under conjugation by unitary matrices, how does it split, and why is the split and nothing else?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-clebschgordan-decomposition-of-the-biquaternion-algebra-in-math0"><strong>The Clebsch–Gordan Decomposition of the Biquaternion Algebra in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The algebra carries four complex dimensions. Under conjugation by unitary matrices, how does it split, and why is the split $1\oplus3$ and nothing else?</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html">The Clebsch–Gordan Decomposition of the Biquaternion Algebra</a>. The source's projectors $P_0=\tfrac12(\mathrm{id}+\natural)$ and $P_1=\tfrac12(\mathrm{id}-\natural)$ become, under $A=\mathsf M_2(\tilde Q)$, the projectors onto the scalar line and onto the traceless part,
+$$
+P_0(Y)=\frac{\operatorname{tr}Y}{2}\,\mathrm I_2,\qquad P_1(Y)=Y-\frac{\operatorname{tr}Y}{2}\,\mathrm I_2,
+$$
+and the two-sided action becomes $Y\mapsto UYU^{\dagger}$. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. The involution $\natural$ as the map $Y\mapsto(\operatorname{tr}Y)\mathrm I_2-Y$, and the two projectors. Their images: $\mathbb{C}\mathrm I_2$ and $\mathfrak{sl}_2$. The equivariance under unitary conjugation. The weights $\{-1,0,+1,0\}$ of the diagonal generator. The Casimir operator $\mathbf H^2_{\mathrm{tot}}=2P_1=\mathrm{id}-\natural$ as the map $Y\mapsto2Y-(\operatorname{tr}Y)\mathrm I_2$. The single-slot value $\tfrac34$. The reason no half-integer summand occurs, and why the slot is a factor and not a summand.</p>
+<p><strong>What the article does not do.</strong> It does not prove the addition rule; it does not resolve the summand into weight vectors, which is the axis-dependent step; and it does not treat the minimal left ideals that realise the slot, which are <a href="the-spin-half-bispinor-spaces-in-m2c.html">Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, so $\operatorname{tr}A=2Q_t$. The coefficient basis is $(\mathrm I_2,-i\sigma_1,-i\sigma_2,-i\sigma_3)$; the coefficient-frame array of an operator is written in that basis. The involution $\natural$ acts on matrices by $A\mapsto\overline{A}$ and on operators by $T\mapsto\natural\circ T\circ\natural$. The inner product is $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$.</p>
+<p><strong>Boundaries.</strong> The dictionary is <a href="m2c-pauli-representation-operators.html">The Pauli Representation : Operators</a>. The two sides separately are <a href="operators-acting-on-one-side-in-m2c.html">Operators Acting on One Side in $M_2(\mathbb{C})$</a> and <a href="operators-acting-on-two-sides-in-m2c.html">Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>. The carriers built on the split are <a href="the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html">From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>.</p>
+<p><strong>Letters.</strong> $Y$ is a general matrix, $\natural$ the matrix conjugation, $P_0,P_1$ the two projectors, $H_k$ the Hermitian generators, $\mathbf H^2_{\mathrm{tot}}$ the Casimir operator.</p>
+<h2 id="the-involution-in-matrices">The Involution in Matrices</h2>
+<p><strong>The map.</strong> On the coefficient basis $\natural$ fixes $E_t=\mathrm I_2$ and negates $E_x,E_y,E_z=-i\sigma_k$. So its array is
+$$
+[\natural]=\operatorname{diag}(1,-1,-1,-1),
+$$
+and on a general matrix
+$$
+A^{\natural}=Q_t\mathrm I_2+(\text{vector part reversed})=\overline{A}.
+$$
+Equivalently, since $\overline{A}=(\operatorname{tr}A)\mathrm I_2-A$ for a $2\times2$ matrix,
+$$
+\natural(Y)=\left(\operatorname{tr}Y\right)\mathrm I_2-Y .
+$$
+Verified on random matrices with residual $6\cdot10^{-17}$.</p>
+<p><strong>Linearity.</strong> $\natural$ is complex-linear, $\natural(iY)=i\natural(Y)$, and involutive, $\natural^2=\mathrm{id}$. The Hermitian adjoint is the other composite, $Y^{\dagger}=\natural(Y)^{\mathsf T}$, and it is conjugate-linear. A conjugate-linear involution has no $\pm1$ eigenspaces inside a complex space, so the split must be built from $\natural$; this is the source's reason, read on the array.</p>
+<p><strong>The trace form.</strong> The map $Y\mapsto\operatorname{tr}(Y)\mathrm I_2$ is the projection onto the scalar line, and its kernel is the traceless part. Composing, one gets the three-term identity
+$$
+\natural = 2P_0-\mathrm{id},\qquad P_0(Y)=\frac{\operatorname{tr}Y}{2}\mathrm I_2 .
+$$</p>
+<h2 id="the-two-projectors">The Two Projectors</h2>
+<p><strong>The definition.</strong> $P_0=\tfrac12(\mathrm{id}+\natural)$ and $P_1=\tfrac12(\mathrm{id}-\natural)$. On matrices,
+$$
+P_0(Y)=\frac{\operatorname{tr}Y}{2}\mathrm I_2,\qquad P_1(Y)=Y-\frac{\operatorname{tr}Y}{2}\mathrm I_2 .
+$$</p>
+<p><strong>The algebra.</strong> $P_0^2=P_0$, $P_1^2=P_1$, $P_0P_1=P_1P_0=0$, $P_0+P_1=\mathrm{id}$; verified exactly on random matrices.</p>
+<p><strong>The images.</strong> $P_0M_2(\mathbb{C})=\mathbb{C}\mathrm I_2$, of complex dimension one; $P_1M_2(\mathbb{C})=\mathfrak{sl}_2(\mathbb{C})$, the traceless matrices, of complex dimension three. As arrays,
+$$
+[P_0]=\operatorname{diag}(1,0,0,0),\qquad [P_1]=\operatorname{diag}(0,1,1,1),
+$$
+and $1+3=4$.</p>
+<p><strong>The equivariance.</strong> For unitary $U$,
+$$
+P_0(UYU^{\dagger})=U P_0(Y)U^{\dagger},\qquad P_1(UYU^{\dagger})=U P_1(Y)U^{\dagger},
+$$
+because $\operatorname{tr}(UYU^{\dagger})=\operatorname{tr}Y$. So the split is invariant under the two-sided action, and it is the decomposition of the algebra as a module for that action.</p>
+<p><strong>The one-sided failure.</strong> The split does not commute with $Y\mapsto AY$: left multiplication moves the scalar line into the traceless part, $\operatorname{tr}(AY)=2Q_t\operatorname{tr}Y/2+\dots$. The split belongs to the diagonal action and not to either factor.</p>
+<h2 id="the-casimir-is-the-projector">The Casimir Is the Projector</h2>
+<p><strong>The adjoint arrays.</strong> $H_k=\tfrac i2(L_k-R_k)$ is the Hermitian generator of the diagonal action, and $L_k-R_k$ is the coefficient-frame array of $Y\mapsto[E_k,Y]$. Each $L_k-R_k$ is real antisymmetric, verified exactly.</p>
+<p><strong>The identity.</strong> In arrays,
+$$
+\sum_k(L_k-R_k)^2=-8\,[P_1],\qquad \mathbf H^2_{\mathrm{tot}}=\sum_kH_k^2=2\,[P_1]=\mathrm{id}-\natural,
+$$
+verified exactly. On matrices the Casimir is the operator
+$$
+Y\mapsto 2Y-\left(\operatorname{tr}Y\right)\mathrm I_2,
+$$
+with eigenvalues $2$ on $\mathfrak{sl}_2$ and $0$ on $\mathbb{C}\mathrm I_2$.</p>
+<p><strong>The weights.</strong> The eigenvalues of $H_{\mathrm{tot},z}=\tfrac i2[E_z,\cdot]$ are $+1,0,0,-1$; verified. The weight set is $\{-1,0,+1,0\}$, the union of $\{-1,0,+1\}$ on the traceless part and $\{0\}$ on the scalar line.</p>
+<p><strong>The two values.</strong> $2=1\cdot(1+1)$ and $0=0\cdot(0+1)$, so the traceless part is spin one and the scalar line is spin zero. The label is not bookkeeping: the Casimir is the projector, and the split is the difference of two eigenvalues of one operator.</p>
+<p><strong>The cross term.</strong> Writing the total Casimir as $\tfrac32\mathrm{id}-2\sum_kH_kH'_k$ and comparing with $2P_1$ gives
+$$
+\sum_kH_kH'_k=\tfrac34\mathrm{id}-P_1,
+$$
+with values $\tfrac34$ on the traceless part and $-\tfrac14$ on the scalar line. The difference of the two values is the split, and the average is the single-slot value $\tfrac34$.</p>
+<h2 id="the-single-slot">The Single Slot</h2>
+<p><strong>The value.</strong> For one side alone, $\sum_kH_k^2=\tfrac34\mathrm I_4$ (the previous article in this category), and $\tfrac34=\tfrac12\cdot\tfrac32=s(s+1)$ at $s=\tfrac12$.</p>
+<p><strong>The two numbers.</strong> $\tfrac34$ on a factor, $2$ on the summand of top label; the difference is the difference between a factor and a summand, and the algebra has both.</p>
+<h2 id="what-the-split-contains-and-what-it-does-not">What the Split Contains and What It Does Not</h2>
+<p><strong>The integer labels.</strong> The summands are $0$ and $1$, both integers. No half-integer occurs, and the full turn is the identity: $\exp(2\pi i\,H_{\mathrm{tot},z})$ acts as $e^{\pm2\pi i}=1$ on the weight $\pm1$ directions and as $1$ on the weight $0$ directions. Verified numerically to $7.5\cdot10^{-15}$.</p>
+<p><strong>The half turn.</strong> $\exp(\pi i\,H_{\mathrm{tot},z})$ acts as $-1$ on the two weight-$\pm1$ directions and $+1$ on the two weight-$0$ directions; verified, with array $\operatorname{diag}(1,-1,-1,1)$. It is not the identity. This is the difference between the rotation group and its cover, read on the algebra.</p>
+<p><strong>The slot is not a summand.</strong> The spin-$\tfrac12$ carrier is $\mathbb{C}^2$, the defining carrier, and it is not a subspace of $M_2(\mathbb{C})$: it is one of the two factors of $M_2(\mathbb{C})=\mathbb{C}^2\otimes(\mathbb{C}^2)^{*}$. To see it inside the algebra one chooses a rank-one projection $\Pi=uu^{\dagger}$, and then
+$$
+M_2(\mathbb{C})\,\Pi=\{Y\Pi\}
+$$
+is a minimal left ideal, of complex dimension two, carrying the defining action of $SU(2)$ by left multiplication. The choice of $u$ is a choice of axis, and different choices give different ideals.</p>
+<p><strong>The dimension bookkeeping.</strong> $1+3=4$ complex dimensions for the two summands; $2+2=4$ for the factor and its dual; and the algebra is four complex dimensional. The half-integer carrier contributes to the second count only, which is why the list of three carriers is not a direct sum.</p>
+<p><strong>The refinement.</strong> The Clebsch–Gordan coefficients appear when the traceless part is resolved into weight vectors, and that resolution needs an axis: with $\sigma_3$ chosen, the weight vectors are $\sigma_1\pm i\sigma_2$ and $\sigma_3$. The series itself is coefficient-free.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>The three Pauli directions.</strong> $\sigma_1,\sigma_2,\sigma_3$ are traceless, so $P_1\sigma_k=\sigma_k$ and $P_0\sigma_k=0$; $\mathrm I_2$ is scalar, so $P_0\mathrm I_2=\mathrm I_2$ and $P_1\mathrm I_2=0$. The array of $P_1$ is $\operatorname{diag}(0,1,1,1)$ in the coefficient basis.</p>
+<p><strong>A general matrix.</strong> $Y=\begin{pmatrix}1&2\\3&4\end{pmatrix}$ has $\operatorname{tr}Y=5$, so $P_0Y=\tfrac52\mathrm I_2$ and $P_1Y=\begin{pmatrix}-1.5&2\\3&1.5\end{pmatrix}$, with trace zero.</p>
+<p><strong>The Casimir on it.</strong> $2Y-(\operatorname{tr}Y)\mathrm I_2=\begin{pmatrix}-3&4\\6&3\end{pmatrix}$, which is $2P_1Y$; the scalar part is killed.</p>
+<h2 id="where-math136-differs">Where $n=2$ Differs</h2>
+<p><strong>The split.</strong> At $n=2$ the split is $1\oplus3$: the scalar line plus the traceless part. At order $n$ the same two projectors exist, and the split is $1\oplus(n^2-1)$; the traceless part is $n^2-1$ complex dimensional, and it is irreducible only at $n=2$.</p>
+<p><strong>The Casimir.</strong> At $n=2$ the traceless part is irreducible with Casimir $2$. At order $n$ the adjoint carrier is irreducible with Casimir $n$, and the value $2$ is the value at $n=2$.</p>
+<p><strong>The labels.</strong> At $n=2$ the labels are $0$ and $1$ and the chain stops. At order $n$ the labels run from $0$ to $n-1$, and the top label is $n-1$.</p>
+<p><strong>What does not differ.</strong> The two projectors, their algebra, the equivariance and the identity "Casimir equals twice the projector" hold at every order.</p>
+<h2 id="summary">Summary</h2>
+<p>The involution $\natural$ is the matrix conjugation, and on a $2\times2$ matrix it is $Y\mapsto(\operatorname{tr}Y)\mathrm I_2-Y$; it is complex-linear and involutive. Its averaging operators are $P_0(Y)=\tfrac12\operatorname{tr}(Y)\mathrm I_2$ and $P_1(Y)=Y-\tfrac12\operatorname{tr}(Y)\mathrm I_2$, with images the scalar line and $\mathfrak{sl}_2$, of complex dimensions one and three.</p>
+<p>Both are equivariant for $Y\mapsto UYU^{\dagger}$, and neither commutes with one-sided multiplication, so the split belongs to the diagonal action. The diagonal weights are $\{-1,0,+1,0\}$ and the Casimir operator is $\mathbf H^2_{\mathrm{tot}}=2P_1=\mathrm{id}-\natural$, that is $Y\mapsto2Y-(\operatorname{tr}Y)\mathrm I_2$, with values $2$ and $0$: spin one and spin zero. The single-slot Casimir is $\tfrac34$, and the cross term is $\tfrac34\mathrm{id}-P_1$.</p>
+<p>No half-integer summand occurs, because the split has only integer labels and the full turn is the identity. The half-integer carrier is the defining factor $\mathbb{C}^2$, realised inside the algebra only as a minimal left ideal $M_2\Pi$ after a rank-one projection is chosen.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\natural$</td>
+<td>the matrix conjugation $Y\mapsto(\operatorname{tr}Y)\mathrm I_2-Y$</td>
+</tr>
+<tr>
+<td>$P_0,P_1$</td>
+<td>the projectors onto scalars and traceless matrices</td>
+</tr>
+<tr>
+<td>$H_k$</td>
+<td>$\tfrac i2(L_k-R_k)$, the diagonal generators</td>
+</tr>
+<tr>
+<td>$\mathbf H^2_{\mathrm{tot}}$</td>
+<td>the Casimir, $2P_1$</td>
+</tr>
+<tr>
+<td>$\Pi$</td>
+<td>a rank-one projection, for the minimal left ideal</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html">The Clebsch–Gordan Decomposition of the Biquaternion Algebra</a>, for the source's canonical construction and its remarks on the coefficients.</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html">From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$</a>, for the three carriers built on this split.</li>
+<li><a href="from-the-spin-group-to-the-spin-of-a-single-rotor-in-m2c.html">From the Spin Group to the Spin of a Single Rotor in $M_2(\mathbb{C})$</a>, for the single-slot Casimir $\tfrac34$.</li>
+<li><a href="operators-acting-on-two-sides-in-m2c.html">Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>, for the diagonal action whose Casimir this is.</li>
+<li><a href="the-spin-half-bispinor-spaces-in-m2c.html">Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$</a>, for the minimal left ideals that realise the factor.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

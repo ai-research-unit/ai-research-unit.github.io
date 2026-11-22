@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Two Carrier and the Trace Form at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. On the carrier of label two the trace form is nondegenerate, invariant and hyperbolic: in the weight basis the two pairs of opposite weights…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-two-carrier-and-the-trace-form-at-math0"><strong>The Spin-Two Carrier and the Trace Form at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> On the carrier of label two the trace form is nondegenerate, invariant and hyperbolic: in the weight basis the two pairs of opposite weights pair among themselves and the weight-zero vector stands alone with a positive square. The article computes the Gram matrix, the signature and the trace of the form.</p>
+<p><strong>The order of the article.</strong> The first section fixes the invariance and the nondegeneracy. The second computes the Gram matrix in the weight basis. The third computes the signatures. The fourth reads the form through the characteristic polynomial. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square</em> and <em>The Spin-One Carrier and the Trace Form at $n=4$</em>. The row at order two has no carrier of label two.</p>
+<p><strong>The result in one line.</strong> In the weight basis the trace form on $V_2$ has the pairings $\langle w_2,w_{-2}\rangle=2$, $\langle w_1,w_{-1}\rangle=2$, $\langle w_0,w_0\rangle=1$ and all other products zero, so in that basis the Gram matrix has three positive and two negative eigenvalues, and the real signature of the form is $(5,5)$.</p>
+<p><strong>Boundaries.</strong> The article treats the bilinear trace form; the Hermitian form is treated in the article on the septet, where it is positive definite.</p>
+<h2 id="invariance-and-nondegeneracy">Invariance and Nondegeneracy</h2>
+<p><strong>Proposition.</strong> The trace form restricts to $V_2$ as a nondegenerate invariant symmetric form, and it is the unique such form up to a scalar.</p>
+<p><em>Proof.</em> The trace form is invariant, and its restriction to an irreducible summand is nondegenerate since the radical would be an invariant subspace; the space of invariant bilinear forms on an irreducible module is one-dimensional.</p>
+<p><strong>Corollary.</strong> The carrier is its own dual through the form, so $V_2\cong V_2^{*}$.</p>
+<p><em>Proof.</em> A nondegenerate bilinear form gives an isomorphism with the dual.</p>
+<p><strong>Corollary.</strong> The orthogonal complement of $V_2$ is $V_3\oplus V_1\oplus V_0$, and distinct carriers are mutually orthogonal.</p>
+<p><em>Proof.</em> Distinct isotypic components are orthogonal for an invariant form.</p>
+<p><strong>The reading.</strong> The quintet is self-dual, and the form is the only invariant bilinear pairing it carries.</p>
+<h2 id="the-gram-matrix">The Gram Matrix</h2>
+<p><strong>Proposition.</strong> In the weight basis $w_2,w_1,w_0,w_{-1},w_{-2}$ with $w_2=E_{02}+E_{13}$, $w_1=E_{01}-E_{23}$, $w_{-1}=E_{10}-E_{32}$, $w_{-2}=E_{20}+E_{31}$ and $w_0=\tfrac12\operatorname{diag}(1,-1,-1,1)$, the only nonzero pairings are $\langle w_2,w_{-2}\rangle=\langle w_{-2},w_2\rangle=2$, $\langle w_1,w_{-1}\rangle=\langle w_{-1},w_1\rangle=2$ and $\langle w_0,w_0\rangle=1$.</p>
+<p><em>Proof.</em> The pairing is $\langle X,Y\rangle=\operatorname{tr}(XY)$, computed on products of matrix units; a weight-$m$ vector pairs only with a weight-$(-m)$ vector, and the direct computation gives $\operatorname{tr}((E_{02}+E_{13})(E_{20}+E_{31}))=1+1=2$, the same value for the weight-one pair, and $\operatorname{tr}(w_0^{2})=\tfrac14\cdot4=1$.</p>
+<p><strong>Corollary.</strong> The positive-weight and negative-weight vectors are isotropic, and only the weight-zero vector has a nonzero square.</p>
+<p><em>Proof.</em> $\operatorname{tr}((E_{02}+E_{13})^{2})=0$, since the product of the two matrix units vanishes and each square vanishes.</p>
+<p><strong>Corollary.</strong> The Gram matrix is the direct sum of two hyperbolic planes and the block $(1)$, so its determinant is $-16$ in this basis.</p>
+<p><em>Proof.</em> The hyperbolic plane has Gram matrix with zero diagonal and off-diagonal entries two, of determinant $-4$; two planes and the unit block give $-16$.</p>
+<p><strong>The reading.</strong> The form is hyperbolic on the pairs of opposite weights and positive on the weight-zero direction: the quintet is a space of Lorentz type in five dimensions.</p>
+<h2 id="the-signatures">The Signatures</h2>
+<p><strong>Proposition.</strong> In the weight basis the Gram matrix of the form has three positive and two negative eigenvalues, and the real signature of the form is $(5,5)$.</p>
+<p><em>Proof.</em> Diagonalising the Gram matrix gives two blocks of type $(+,-)$ and one positive direction, so three positive and two negative entries in that basis; the Hermitian slice is five-real-dimensional, the form is positive definite on it because $\operatorname{tr}(H^{2})=\sum_{ij}|H_{ij}|^{2}$ for Hermitian $H$, and negative definite on its multiple by $i$, which gives five plus and five minus real directions.</p>
+<p><strong>Corollary.</strong> The form is positive definite on the Hermitian slice and the slice is a real Euclidean space of dimension five.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> The isotropic cone of the form is the cone of the nilpotent elements.</p>
+<p><em>Proof.</em> The spectrum is $\{\pm s,\pm s\}$ with $s^{2}=q/4$, so $q=0$ forces every eigenvalue to vanish.</p>
+<p><strong>The reading.</strong> The form is indefinite with neutral real signature, and its isotropic cone is exactly the set of rank-two elements.</p>
+<h2 id="the-form-and-the-spectrum">The Form and the Spectrum</h2>
+<p><strong>Proposition.</strong> For $X\in V_2$ the characteristic polynomial is $(\lambda^{2}-q(X)/4)^{2}$ with $q(X)=\operatorname{tr}(X^{2})$, so the spectrum is $\{\pm s,\pm s\}$ with $s^{2}=q/4$.</p>
+<p><em>Proof.</em> The determinant is $q^{2}/16$ and the spectrum is symmetric because the trace and the cube trace vanish; the resulting polynomial $\lambda^{4}-(q/2)\lambda^{2}+q^{2}/16$ is the square of $\lambda^{2}-q/4$, verified numerically on random elements.</p>
+<p><strong>Corollary.</strong> The second and fourth elementary symmetric functions of the spectrum are $q/2$ and $q^{2}/16$.</p>
+<p><em>Proof.</em> The expansion of the square.</p>
+<p><strong>Corollary.</strong> The form determines the spectrum up to the sign of $s$, and the carrier has no other spectral invariant.</p>
+<p><em>Proof.</em> The characteristic polynomial is a function of $q$ alone.</p>
+<p><strong>The reading.</strong> On the quintet the trace form is not merely a metric: it is the whole spectrum.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the carrier introduction.</strong> That article identifies the carrier and its weights; this one computes the metric.</p>
+<p><strong>Against the rank article.</strong> The isotropic cone is the rank-two stratum, and the form is the polynomial that cuts it out.</p>
+<p><strong>Against the triplet.</strong> The form on $V_1$ is positive definite in the generator basis, while the form on $V_2$ is hyperbolic.</p>
+<h2 id="a-final-observation">A Final Observation</h2>
+<p><strong>The weight spaces and orthogonality.</strong> The weight spaces of opposite weights are dual to each other through the form, and the weight-zero space is orthogonal to all of them; this is the statement that the form is hyperbolic on the two pairs and positive on the middle direction, and it is read directly from the weight string.</p>
+<p><strong>The normalisation.</strong> The value two on the extreme pair is the trace of the square of the sum of two matrix units, and the value one on the middle vector is the trace of the square of the traceless diagonal element; both are computed without any choice of scale, so the Gram matrix is canonical.</p>
+<h2 id="the-form-and-the-hodge-star">The Form and the Hodge Star</h2>
+<p><strong>The Hodge star.</strong> On the alternating square the Hodge star is the operator that sends the two-form with the index pair to the complementary pair, and on the six-dimensional square it satisfies the relation of a complex structure; the trace form is the pairing with the star, and the two extreme weight vectors are interchanged by it.</p>
+<p><strong>The middle direction.</strong> The weight-zero element of the carrier is traceless and diagonal, and its square is a multiple of the unit; the trace form takes the value one on it, and it is the unique direction on which the form is positive in the weight basis.</p>
+<p><strong>The signature.</strong> Two hyperbolic pairs and one positive direction give the real signature $(5,5)$ for the complex carrier of dimension five, and the form is nondegenerate with the isotropic cone the nilpotent stratum.</p>
+<p><strong>The reading.</strong> The trace form on the quintet is the Hodge pairing of the alternating square, and its signature records the two hyperbolic pairs and the one positive middle direction.</p>
+<h2 id="the-check-of-the-values">The Check of the Values</h2>
+<p><strong>On the weight vectors.</strong> The form takes the value two on the pair of extreme vectors and the value one on the middle vector, and it vanishes on every other pair; the three numbers are the whole Gram matrix, and their signs are two positive and one positive with the hyperbolic pairing.</p>
+<h2 id="summary">Summary</h2>
+<p>The trace form on the carrier of label two is nondegenerate, invariant and unique up to a scalar. In the weight basis the two pairs of opposite weights pair with value two and the weight-zero vector has square one, so the Gram matrix in that basis has three positive and two negative eigenvalues and the real signature $(5,5)$; the form is positive definite on the Hermitian slice.</p>
+<p>The characteristic polynomial on the carrier is the square $(\lambda^{2}-q/4)^{2}$, so the spectrum depends only on the value of the form and the isotropic cone is the cone of the nilpotent elements.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$w_2=E_{02}+E_{13}$</td>
+<td>the highest weight vector</td>
+</tr>
+<tr>
+<td>$w_0=\tfrac12\operatorname{diag}(1,-1,-1,1)$</td>
+<td>the weight-zero vector</td>
+</tr>
+<tr>
+<td>$(3,2)$, $(5,5)$</td>
+<td>the complex and real signatures</td>
+</tr>
+<tr>
+<td>$(\lambda^{2}-q/4)^{2}$</td>
+<td>the characteristic polynomial</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-two-carrier-of-m4c.html">Introduction to the Spin-Two Carrier at $n=4$: the Alternating Square</a>, for the carrier.</li>
+<li><a href="the-spin-two-carrier-and-the-rank-strata-at-n-4.html">The Spin-Two Carrier and the Rank Strata at $n=4$</a>, for the isotropic cone.</li>
+<li><a href="the-spin-three-carrier-and-the-hermitian-form-at-n-4.html">The Spin-Three Carrier and the Hermitian Form at $n=4$</a>, for the positive-definite Hermitian form.</li>
+<li><a href="the-spin-one-carrier-and-the-trace-form-at-n-4.html">The Spin-One Carrier and the Trace Form at $n=4$</a>, for the comparison.</li>
+<li><a href="the-spin-zero-carrier-and-the-determinant-at-n-4.html">The Spin-Zero Carrier and the Determinant at $n=4$</a>, for the scalar carrier.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

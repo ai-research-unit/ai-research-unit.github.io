@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-$\tfrac32$ Bispinors and the Spectral Strata at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The spectrum of a bispinor is the spectrum of the corresponding matrix. The article computes the spectra of the pure bispinors, of the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-math0-bispinors-and-the-spectral-strata-at-math1"><strong>The Spin-$\tfrac32$ Bispinors and the Spectral Strata at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The spectrum of a bispinor is the spectrum of the corresponding matrix. The article computes the spectra of the pure bispinors, of the traceless ones and of the general ones, and stratifies the bispinor space by the multiplicity pattern of the eigenvalues.</p>
+<p><strong>The order of the article.</strong> The first section fixes the spectrum of a pure bispinor. The second treats the traceless bispinors and the symmetric spectra. The third stratifies by multiplicity. The fourth relates the strata to the carriers and to the ideals. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Fierz–Kofink Identities and the Classification of Spinors at $n=4$</em> and <em>The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$</em>. The row at order two is <em>The Spin-$\tfrac12$ Bispinors and the Spectral Strata</em>.</p>
+<p><strong>The result in one line.</strong> A pure bispinor has the spectrum $\{\omega(\bar\chi,\psi),0,0,0\}$, a traceless bispinor the spectrum $\{\pm\alpha,\pm\beta\}$, and a general bispinor an arbitrary spectrum of four values.</p>
+<p><strong>Boundaries.</strong> The article treats the spectrum as a multiset; the eigenvectors and the Jordan structure beyond the spectrum are treated in the rank articles.</p>
+<h2 id="the-pure-bispinors">The Pure Bispinors</h2>
+<p><strong>Proposition.</strong> If $X=\psi\bar\chi^{\dagger}$ is a rank-one bispinor then $X^{2}=\omega(\bar\chi,\psi)X$, so the spectrum is $\{\omega(\bar\chi,\psi),0,0,0\}$ and the minimal polynomial divides $\lambda(\lambda-\omega)$.</p>
+<p><em>Proof.</em> $XX=\psi(\bar\chi^{\dagger}\psi)\bar\chi^{\dagger}=\omega(\bar\chi,\psi)X$ by the Fierz identity; a rank-one matrix has a one-dimensional image and a three-dimensional kernel, so three eigenvalues are zero and the fourth is the trace.</p>
+<p><strong>Corollary.</strong> The pure bispinor is a projection up to a scalar exactly when $\omega(\bar\chi,\psi)\neq0$, and it is nilpotent exactly when $\omega(\bar\chi,\psi)=0$.</p>
+<p><em>Proof.</em> $X^{2}=cX$ with $c=\omega(\bar\chi,\psi)$; if $c=0$ the matrix is nilpotent of index two.</p>
+<p><strong>Corollary.</strong> The trace of a pure bispinor is the pairing of its two factors, and the determinant vanishes.</p>
+<p><em>Proof.</em> The trace of $X$ is $\sum_i\psi_i\bar\chi_i=\omega(\bar\chi,\psi)$; the rank is one, so the determinant is zero.</p>
+<p><strong>The reading.</strong> The pure spectrum has one nonzero eigenvalue and a triple zero, and the nonzero eigenvalue is the pairing of the spinors.</p>
+<h2 id="the-traceless-bispinors">The Traceless Bispinors</h2>
+<p><strong>Proposition.</strong> A bispinor in a nontrivial carrier has zero trace and zero cube trace, so its spectrum is $\{\alpha,-\alpha,\beta,-\beta\}$ and its characteristic polynomial is $\lambda^{4}-(\operatorname{tr}X^{2}/2)\lambda^{2}+\det X$.</p>
+<p><em>Proof.</em> The carriers are the nontrivial isotypic pieces, on which the trace form is trivial and the cube trace vanishes identically; Newton's identities give the polynomial.</p>
+<p><strong>Corollary.</strong> A traceless bispinor is nilpotent exactly when its spectrum is $\{0,0,0,0\}$, and then all four eigenvalues are zero.</p>
+<p><em>Proof.</em> The spectrum is symmetric, so all eigenvalues vanish exactly when $\alpha=\beta=0$.</p>
+<p><strong>Corollary.</strong> A general bispinor, sum of a scalar and a traceless part, has an arbitrary spectrum shifted by the scalar: the eigenvalues are $t\pm\alpha, t\pm\beta$ with $4t=\operatorname{tr}X$.</p>
+<p><em>Proof.</em> The decomposition $X=(\operatorname{tr}X/4)\mathrm I+Y$ with $Y$ traceless.</p>
+<p><strong>The reading.</strong> The general spectrum is a scalar shift of a symmetric pair, which is the spectral form of the decomposition of the algebra into the scalars and the traceless part.</p>
+<h2 id="the-strata-by-multiplicity">The Strata by Multiplicity</h2>
+<p><strong>Proposition.</strong> The multiplicity patterns of four eigenvalues are the five partitions of four, and each pattern defines a locally closed stratum of the bispinor space.</p>
+<p><em>Proof.</em> A multiset of four values is described by a partition of four according to the multiplicities; the conditions of equality and inequality of the eigenvalues are algebraic and define locally closed sets.</p>
+<p><strong>Corollary.</strong> The generic stratum is the one with four distinct eigenvalues, of dimension sixteen, and the most degenerate is the single eigenvalue with multiplicity four.</p>
+<p><em>Proof.</em> Four distinct eigenvalues is an open condition; the single eigenvalue is the intersection of the conditions of equality.</p>
+<p><strong>Corollary.</strong> The pure bispinors lie in the pattern of one nonzero eigenvalue with multiplicity one and the zero with multiplicity three.</p>
+<p><em>Proof.</em> The pure spectrum.</p>
+<p><strong>The reading.</strong> The spectral stratification refines the rank stratification: the pure bispinors of rank one have a fixed pattern, and the other patterns contain bispinors of several ranks.</p>
+<h2 id="the-carriers-and-the-ideals">The Carriers and the Ideals</h2>
+<p><strong>Proposition.</strong> The carrier $V_0$ lies entirely in the stratum of a single eigenvalue with multiplicity four, and every other carrier meets the generic stratum.</p>
+<p><em>Proof.</em> The scalars have one eigenvalue; the carriers of positive label contain elements with four distinct eigenvalues, as the numerical spectra $4.912,1.637,-1.637,-4.912$ show.</p>
+<p><strong>Corollary.</strong> The ideals lie in the union of the patterns with at least three zero eigenvalues.</p>
+<p><em>Proof.</em> The elements of an ideal have rank at most one, so at least three eigenvalues vanish.</p>
+<p><strong>Corollary.</strong> The spectral strata and the carrier decomposition are independent: the same carrier meets several patterns and the same pattern meets several carriers.</p>
+<p><em>Proof.</em> The two previous statements.</p>
+<p><strong>The reading.</strong> The spectrum is a function on the algebra that is constant on neither the carriers nor the ideals, and the two decompositions cut it differently.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the rank article.</strong> The rank constrains the number of zero eigenvalues from below and does not determine the pattern.</p>
+<p><strong>Against the carrier spectral articles.</strong> Those articles compute the possible spectra inside one carrier; this one stratifies the whole space.</p>
+<p><strong>Against the determinant article.</strong> The determinant is the product of the eigenvalues, the last of the elementary symmetric functions.</p>
+<h2 id="the-ideals-and-the-spectrum">The Ideals and the Spectrum</h2>
+<p><strong>Proposition.</strong> Every element of a minimal left ideal has at least three vanishing eigenvalues, and the elements of rank one have exactly three.</p>
+<p><em>Proof.</em> An element of the ideal is $\psi\bar\chi^{\dagger}$, of rank one for nonzero factors and zero at the origin; a rank-one matrix has three zero eigenvalues.</p>
+<p><strong>Corollary.</strong> The spectrum of a pure bispinor is the pairing of its factors together with three zeros, and the trace is that pairing.</p>
+<p><em>Proof.</em> The square of the rank-one bispinor is the scalar multiple of itself given by the Fierz identity.</p>
+<p><strong>Corollary.</strong> The ideals lie entirely in the closure of the stratum with three zero eigenvalues, and they meet the generic stratum only at the origin.</p>
+<p><em>Proof.</em> The proposition and the definition of the strata.</p>
+<p><strong>The reading.</strong> The bispinor space contains the ideals as the locus where the spectrum collapses to a single value and three zeros, and the collapse is the spectral form of the rank condition.</p>
+<h2 id="the-note-on-order-two">The Note on Order Two</h2>
+<p><strong>The lower analogue.</strong> At order two the algebra has four complex dimensions and its carriers are the scalars and the triplet; there is no carrier of label three, so the spectral stratification computed here has no counterpart in the lower row, and the comparison stops at the statement that the chain has one term fewer.</p>
+<p><strong>The count.</strong> The bispinor space at order two is the algebra itself, of dimension four, and its elements are two-by-two matrices; the strata of that space are the two strata of the present article with the two free eigenvalue pairs replaced by the single pair of a two-by-two matrix, that is the origin and its complement.</p>
+<h2 id="the-check-of-the-counts">The Check of the Counts</h2>
+<p><strong>The eigenvalues.</strong> The four eigenvalues of an element of the ideal are the pairing and three zeros, so the spectrum has one free value and the other three vanish; the trace is the pairing, and the second elementary symmetric function vanishes.</p>
+<p><strong>The partitions.</strong> The partitions realised by the elements of the ideal are $1+1+1+1$ at the nonzero elements of rank one and $0$ at the origin; there is no intermediate partition, and the ideal is the smallest spectral stratum of the bispinor space.</p>
+<p><strong>The comparison with the algebra.</strong> The whole algebra realises every partition of four, while the ideal realises only two; the difference is the measure of how much the rank condition restricts the spectrum.</p>
+<h2 id="summary">Summary</h2>
+<p>A pure bispinor satisfies $X^{2}=\omega(\bar\chi,\psi)X$, so its spectrum is one pairing and three zeros. A traceless bispinor has the symmetric spectrum $\{\pm\alpha,\pm\beta\}$ and characteristic polynomial $\lambda^{4}-(\operatorname{tr}X^{2}/2)\lambda^{2}+\det X$. A general bispinor is a scalar shift of a traceless one.</p>
+<p>The multiplicity patterns are the five partitions of four, and they stratify the bispinor space. The carrier of label zero lies in the most degenerate pattern, the other carriers meet the generic one, and the ideals lie where at least three eigenvalues vanish.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\omega(\bar\chi,\psi)$</td>
+<td>the nonzero eigenvalue of a pure bispinor</td>
+</tr>
+<tr>
+<td>$\{\pm\alpha,\pm\beta\}$</td>
+<td>the traceless spectrum</td>
+</tr>
+<tr>
+<td>$t\pm\alpha,t\pm\beta$</td>
+<td>the general spectrum</td>
+</tr>
+<tr>
+<td>$1+1+1+1,\dots,4$</td>
+<td>the multiplicity patterns</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-fierz-kofink-identities-at-n-4.html">The Fierz–Kofink Identities and the Classification of Spinors at $n=4$</a>, for the Fierz identity.</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-rank-strata-at-n-4.html">The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$</a>, for the rank.</li>
+<li><a href="the-spin-zero-carrier-and-the-spectral-strata-at-n-4.html">The Spin-Zero Carrier and the Spectral Strata at $n=4$</a>, for the symmetric spectra.</li>
+<li><a href="the-spin-half-bispinors-and-the-spectral-strata.html">The Spin-$\tfrac12$ Bispinors and the Spectral Strata</a>, for the row at order two.</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-minimal-left-ideals-at-n-4.html">The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</a>, for the ideals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

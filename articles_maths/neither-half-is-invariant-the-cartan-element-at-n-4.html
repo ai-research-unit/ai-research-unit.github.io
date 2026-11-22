@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The algebra splits into symmetric and antisymmetric matrices, and the copy acts by conjugation. The diagonal generator already breaks the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="neither-half-is-invariant-the-cartan-element-carries-math0-into-math1"><strong>Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The algebra splits into symmetric and antisymmetric matrices, and the copy acts by conjugation. The diagonal generator already breaks the splitting: it carries a symmetric matrix to an antisymmetric one. The two halves are therefore not invariant under the copy, although each single anti-Hermitian generator preserves a different splitting, the one given by the Hermitian adjoint.</p>
+<p><strong>The order of the article.</strong> The first section fixes the two halves and their dimensions. The second computes the example that breaks the splitting. The third proves the general statement and separates the two involutions, the transpose and the Hermitian adjoint. The fourth explains what the failure costs and what it leaves intact. The fifth draws the boundary with the parity rule, where the splitting does hold.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the carriers and <em>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</em> for the splitting of the module. The row at order two is <em>Neither Half Is Invariant: the Cartan Element</em>.</p>
+<p><strong>The result in one line.</strong> $[J_z,E_{01}+E_{10}]=E_{01}-E_{10}$, so $\operatorname{ad}_{J_z}$ carries $\operatorname{Sym}$ into $\Lambda$ and no generator of the complexified copy preserves the splitting.</p>
+<p><strong>Boundaries.</strong> The article does not compute the intersections of the carriers with the halves; those dimensions are the subject of <em>The Intersection Table</em>. It does not treat the real forms, which belong to <em>The Quaternionic Structure of the Module at $n=4$</em>.</p>
+<h2 id="the-two-halves">The Two Halves</h2>
+<p><strong>Definition.</strong> $\operatorname{Sym}=\{X:X^{\mathsf T}=X\}$ and $\Lambda=\{X:X^{\mathsf T}=-X\}$ are the eigenspaces of the transpose involution $\theta(X)=X^{\mathsf T}$ for the eigenvalues $+1$ and $-1$.</p>
+<p><strong>Proposition.</strong> Both halves are complex subspaces, of complex dimensions $10$ and $6$ and real dimensions $20$ and $12$, and the algebra is their direct sum.</p>
+<p><em>Proof.</em> The transpose is complex-linear and involutive, so its eigenspaces are complex subspaces; the dimension of $\operatorname{Sym}$ is $4\cdot5/2=10$ and of $\Lambda$ is $4\cdot3/2=6$, and the two add to sixteen.</p>
+<p><strong>Corollary.</strong> The trace vanishes on $\Lambda$ and the identity lies in $\operatorname{Sym}$.</p>
+<p><em>Proof.</em> $\operatorname{tr}X=-\operatorname{tr}X^{\mathsf T}=-\operatorname{tr}X$ on $\Lambda$, and the identity is symmetric.</p>
+<p><strong>Corollary.</strong> Neither half is stable under multiplication: the product of two symmetric matrices is not symmetric unless they commute, and the product of two antisymmetric matrices is symmetric.</p>
+<p><em>Proof.</em> $(XY)^{\mathsf T}=Y^{\mathsf T}X^{\mathsf T}$; for symmetric factors this is $YX$, which differs from $XY$ in general, and for antisymmetric factors it is $(-X)(-Y)=XY$.</p>
+<h2 id="the-example-that-breaks-the-splitting">The Example That Breaks the Splitting</h2>
+<p><strong>Proposition.</strong> With $J_z$ the diagonal generator and $E_{ij}$ the matrix units,</p>
+<p>$$
+[J_z,E_{01}+E_{10}]=E_{01}-E_{10}.
+$$</p>
+<p>The left side is the image of a symmetric matrix under the adjoint action of a generator, and the right side is antisymmetric.</p>
+<p><em>Proof.</em> $[J_z,E_{01}]=(m_0-m_1)E_{01}=E_{01}$ and $[J_z,E_{10}]=(m_1-m_0)E_{10}=-E_{10}$; adding the two gives the display. The matrix $E_{01}+E_{10}$ is symmetric and $E_{01}-E_{10}$ is antisymmetric.</p>
+<p><strong>Corollary.</strong> $\operatorname{ad}_{J_z}$ does not preserve $\operatorname{Sym}$ and does not preserve $\Lambda$; it exchanges them.</p>
+<p><em>Proof.</em> On a symmetric matrix with $J_z$ symmetric, $(J_zX-XJ_z)^{\mathsf T}=XJ_z-J_zX=-(J_zX-XJ_z)$, so the image is antisymmetric; the same computation with the signs reversed gives the other inclusion.</p>
+<p><strong>Corollary.</strong> The copy does not preserve the splitting: the conjugated matrix $\Phi_q(E_{01}+E_{10})$ is not symmetric for $q$ whose generator has a nonzero $J_z$ component.</p>
+<p><em>Proof.</em> The derivative at the identity of $q\mapsto\Phi_q(X)$ is $\operatorname{ad}_{\xi}X$ for $\xi$ in the Lie algebra; if the derivative is antisymmetric and nonzero, the curve leaves $\operatorname{Sym}$.</p>
+<p><strong>The reading.</strong> The failure is not a failure of the group but a failure of the complexified action: the real Lie algebra preserves other splittings, and the complex-linear combinations of its elements do not preserve this one.</p>
+<h2 id="the-two-involutions">The Two Involutions</h2>
+<p><strong>Proposition.</strong> The transpose is complex-linear and the Hermitian adjoint is anti-linear; the first has the halves $\operatorname{Sym}$ and $\Lambda$ as eigenspaces, the second has the Hermitian and anti-Hermitian matrices.</p>
+<p><em>Proof.</em> $(X+Y)^{\mathsf T}=X^{\mathsf T}+Y^{\mathsf T}$ and $(cX)^{\mathsf T}=cX^{\mathsf T}$; while $(cX)^{\dagger}=\bar cX^{\dagger}$. The eigenspaces are read off from $X^{\mathsf T}=\pm X$ and $X^{\dagger}=\pm X$.</p>
+<p><strong>Proposition.</strong> The adjoint action of the anti-Hermitian generators $iJ_k$ preserves both the Hermitian and the anti-Hermitian halves, while the adjoint action of the Hermitian generators $J_k$ exchanges them.</p>
+<p><em>Proof.</em> If $X$ is Hermitian and $J$ is Hermitian, $(JX-XJ)^{\dagger}=XJ-JX=-(JX-XJ)$, so $\operatorname{ad}_{J}X$ is anti-Hermitian; multiplying by $i$ gives $\operatorname{ad}_{iJ}X=i\operatorname{ad}_{J}X$, which is Hermitian. Hence $\operatorname{ad}_{iJ}$ preserves the Hermitian half, and the same computation with the signs reversed preserves the anti-Hermitian half.</p>
+<p><strong>Corollary.</strong> The Lie algebra of the copy, consisting of the anti-Hermitian matrices, acts on the algebra preserving the Hermitian splitting; the complexification does not preserve the symmetric splitting.</p>
+<p><em>Proof.</em> The two propositions: the real form acts by $\operatorname{ad}_{iJ}$, which preserves one splitting, and the complex-linear generator $\operatorname{ad}_{J}$ breaks the other.</p>
+<p><strong>Corollary.</strong> The two splittings are different: a matrix can be symmetric and anti-Hermitian at once, for instance $i(E_{01}-E_{10})$.</p>
+<p><em>Proof.</em> $i(E_{01}-E_{10})$ is antisymmetric and Hermitian, as computed from the two involutions.</p>
+<h2 id="what-the-failure-costs">What the Failure Costs</h2>
+<p><strong>Proposition.</strong> The carriers are not contained in either half, and neither half is a sum of carriers.</p>
+<p><em>Proof.</em> If $\operatorname{Sym}$ were a sum of carriers it would be invariant, since each carrier is; but $\operatorname{ad}_{J_z}$ carries a symmetric matrix out of $\operatorname{Sym}$, so $\operatorname{Sym}$ is not invariant, and the same holds for $\Lambda$.</p>
+<p><strong>Corollary.</strong> The decomposition of the algebra into carriers cuts across the splitting: each carrier has a nonzero part in each half except the centre, which lies entirely in $\operatorname{Sym}$.</p>
+<p><em>Proof.</em> The intersection dimensions of the next article, or the argument that a carrier contained in one half would make that half invariant.</p>
+<p><strong>Corollary.</strong> The symmetric and antisymmetric parts of an element of a carrier are not separately in the carrier, and the operation $X\mapsto(X+X^{\mathsf T})/2$ does not commute with the copy.</p>
+<p><em>Proof.</em> The projection onto $\operatorname{Sym}$ is $\theta$-equivariant, and $\theta$ does not commute with the complex-linear action.</p>
+<p><strong>The reading.</strong> The failure costs the possibility of treating the symmetric and antisymmetric parts of a carrier as carriers. It leaves intact the decomposition into carriers, which is cut by the Casimir and not by the transpose.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the parity rule.</strong> The squares of the module do split by parity, and the splitting of the module into symmetric and alternating squares is a splitting into invariant subspaces. The difference is that the module carries a bilinear form and the algebra carries an involution: on the module the flip of two factors is an operator commuting with the action, and on the algebra the transpose is an operator that does not.</p>
+<p><strong>Against the intersection table.</strong> The failure does not prevent the computation of the dimensions of the intersections, which are the subject of the next article; it only prevents them from being zero or full.</p>
+<p><strong>Against the Hermitian splitting.</strong> The Hermitian splitting is preserved by the real form and not by the complexification, which is the mirror image of the statement for the symmetric splitting.</p>
+<h2 id="the-check-of-the-cartan-element">The Check of the Cartan Element</h2>
+<p><strong>The two eigenvalues.</strong> The Cartan element acts on the module with the four distinct eigenvalues $\pm\tfrac32,\pm\tfrac12$, so no two-dimensional subspace spanned by weight vectors is invariant; the only invariant subspaces are the sums of weight spaces, and the halves are not of that form.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra splits into symmetric and antisymmetric matrices, of complex dimensions ten and six, and the transpose is a complex-linear involution with these eigenspaces. The diagonal generator carries $E_{01}+E_{10}$ to $E_{01}-E_{10}$, so it carries the symmetric half into the antisymmetric half and the splitting is not preserved by the copy.</p>
+<p>The two involutions behave differently: the transpose is complex-linear and is broken by the complexified action, while the Hermitian adjoint is anti-linear and its splitting is preserved by the anti-Hermitian generators, which are the elements of the Lie algebra.</p>
+<p>No carrier is contained in either half, and neither half is a sum of carriers; the centre is the only carrier that lies in one half. The decomposition into carriers stands, and the splitting by the transpose is not a decomposition into carriers.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{Sym}$</td>
+<td>the symmetric matrices, dimension ten</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>the antisymmetric matrices, dimension six</td>
+</tr>
+<tr>
+<td>$\theta(X)=X^{\mathsf T}$</td>
+<td>the transpose involution</td>
+</tr>
+<tr>
+<td>$X^{\dagger}$</td>
+<td>the Hermitian adjoint</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}_{J_z}$</td>
+<td>the adjoint action of the diagonal generator</td>
+</tr>
+<tr>
+<td>$iJ_k$</td>
+<td>the anti-Hermitian generators of the Lie algebra</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-intersection-table-of-the-carriers-with-the-two-halves-at-n-4.html">The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</a>, for the dimensions.</li>
+<li><a href="the-parity-rule-the-two-squares-of-the-module-at-n-4.html">The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</a>, for the splitting that does hold.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the carriers.</li>
+<li><a href="neither-half-is-invariant-the-cartan-element.html">Neither Half Is Invariant: the Cartan Element</a>, for the row at order two.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the Hermitian splitting.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

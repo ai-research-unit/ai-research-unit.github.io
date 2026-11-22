@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Two scalar extensions act on the operator algebra: and. This article classifies their real structures and real forms, and describes the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classification-of-the-complex-structures-of-the-operators-of-the-biquaternion-algebra-including-lie-algebras-and-lie-groups-in-math0"><strong>Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Two scalar extensions act on the operator algebra: $\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$ and $\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C})$. This article classifies their real structures and real forms, and describes the layers above them.</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="classification-of-the-complex-structures-of-the-operators-of-the-biquaternion-algebra.html">Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups</a>. The source proves the direct-sum splitting and counts the structures abstractly; the display writes the splitting as the rule $\Phi(A\otimes z)=(zA,\bar zA)$ on $4\times4$ matrices and computes every fixed set in coordinates. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. The first complexification is the direct sum $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, with an isomorphism that is real and not complex. The two central idempotents give a trivial Peirce cut, in contrast with the non-central cut of a rank-one projection, whose blocks have dimensions $1,3,3,9$. The sum has five real structures and four real algebras: the two unmixed sums, the mixed sum and the slanted realification. The second complexification $M_8(\mathbb{C})$ is simple and has two real forms. The diagonal correspondence is two into four. The associative layer is Goursat's theorem, the Lie layer carries the Killing inertias $(18,12)$, $(10,20)$, $(14,16)$, $(15,15)$, and the trace form does not separate the last two.</p>
+<p><strong>What the article does not do.</strong> It does not classify the full subalgebra lattices of the four real algebras, which is not known in closed form. It does not reprove the two real forms of $M_4(\mathbb{C})$, which is <a href="classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra-in-m2c.html">Classification of the Structures of the Operators of the Biquaternion Algebra in $M_2(\mathbb{C})$</a>, and it does not develop the two forms of the split case, which is <a href="classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra-in-m2c.html">Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> The display is $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$. $\mathcal{E}_{\mathbb{C}}=M_4(\mathbb{C})$ in the frame $(E_t,E_x,E_y,E_z)$ with $E_t=\mathrm I_2$, $E_x=-i\sigma_1$, $E_y=-i\sigma_2$, $E_z=-i\sigma_3$. The real structures of a factor are $\tau_{\mathbb{R}}(A)=\bar A$ and $\tau_{\mathbb{H}}(A)=J_0\bar AJ_0^{-1}$. A pair is written $(A,B)$, first slot first. Inertias are (positive, negative).</p>
+<p><strong>Boundaries.</strong> The two-sided operators are <a href="operators-acting-on-two-sides-in-m2c.html">Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>. The elements of the display and the four sectors are <a href="introduction-to-the-operators-on-the-four-sectors-in-m2c.html">Introduction to the Operators on the Four Sectors in $M_2(\mathbb{C})$</a>. The spin groups are <a href="from-the-spin-group-to-the-spin-of-a-single-rotor-in-m2c.html">From the Spin Group to the Spin of a Single Rotor in $M_2(\mathbb{C})$</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, and the display is <a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>.</p>
+<p><strong>Letters.</strong> $\Phi$ is the splitting isomorphism; $E_1,E_2$ the two central idempotents; $\iota_{\mathrm{sc}}$ and $\iota_{\mathrm{d}}$ the scalar and diagonal embeddings; $A_0$ a real form of $\mathcal{E}_{\mathbb{C}}$; $K$ the Killing form.</p>
+<h2 id="the-two-complexifications">The Two Complexifications</h2>
+<p><strong>The two operators.</strong> $\mathcal{E}_{\mathbb{C}}=M_4(\mathbb{C})$ of complex dimension sixteen sits inside $\mathcal{E}_{\mathbb{R}}=M_8(\mathbb{R})$ as its complex-linear part, of real dimension thirty-two inside sixty-four.</p>
+<p><strong>The first complexification.</strong> $\mathcal{E}^{\oplus2}_{\mathbb{C}}=\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}$, of complex dimension thirty-two, because the ground field of the tensor is $\mathbb{R}$.</p>
+<p><strong>Proposition (the splitting).</strong> The rule
+$$
+\Phi(A\otimes z)=(zA,\ \bar zA)
+$$
+is an isomorphism of real algebras $\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\to\mathcal{E}_{\mathbb{C}}\oplus\mathcal{E}_{\mathbb{C}}$, verified as multiplicative on random $A,B,z,w$ to $6\cdot10^{-15}$.</p>
+<p><em>Proof.</em> Bilinearity over $\mathbb{R}$ is clear; multiplicativity is
+$$
+(zA,\bar zA)(wB,\bar wB)=(zwAB,\overline{zw}AB).
+$$
+Surjectivity follows from $A=\tfrac12(U+V)$, $B=-\tfrac{i}2(U-V)$, and the dimensions agree at sixty-four.</p>
+<p><strong>The isomorphism is real and not complex.</strong> The complex structure of the tensor sits in the second slot and is carried to $z*(U,V)=(zU,\bar zV)$, which is not the product complex structure. The second summand carries the conjugate structure, and $M_4(\mathbb{C})$ is isomorphic to its conjugate by the transpose, so the sum is $M_4(\mathbb{C})\oplus M_4(\mathbb{C})$ as a complex algebra.</p>
+<p><strong>The second complexification.</strong> $\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{R})\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C})$, of complex dimension sixty-four.</p>
+<p><strong>The inclusion.</strong> $\mathcal{E}^{\oplus2}_{\mathbb{C}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})\subset M_8(\mathbb{C})$, of codimension thirty-two. In matrices the image is the algebra of operators on $\mathbb{C}^8$ preserving the splitting of $\mathbb{C}^8$ into two copies of $\mathbb{C}^4$ that the complex structure of the carrier produces.</p>
+<p><strong>The master table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>ground field</th>
+<th>dimension</th>
+<th>centre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{E}^{\oplus2}_{\mathbb{C}}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$</td>
+<td>$\mathbb{C}$</td>
+<td>$32$ complex</td>
+<td>$\mathbb{C}\oplus\mathbb{C}$</td>
+</tr>
+<tr>
+<td>$\mathcal{E}_{\mathbb{R},\mathbb{C}}\cong M_8(\mathbb{C})$</td>
+<td>$\mathbb{C}$</td>
+<td>$64$ complex</td>
+<td>$\mathbb{C}\mathrm I_8$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-two-central-idempotents-and-the-trivial-peirce-cut">The Two Central Idempotents and the Trivial Peirce Cut</h2>
+<p><strong>The idempotents.</strong> $E_1=(\mathrm I_4,0)$ and $E_2=(0,\mathrm I_4)$ are idempotent, orthogonal, sum to the identity, and are central. They are the only nonzero central idempotents, since a central idempotent is a pair of scalars in $\{0,1\}$.</p>
+<p><strong>The Peirce decomposition.</strong> The off-diagonal blocks vanish,
+$$
+E_1(A,B)E_2=(0,0)=E_2(A,B)E_1,
+$$
+so the decomposition is $A_{11}\oplus A_{22}=M_4(\mathbb{C})\oplus0\oplus0\oplus M_4(\mathbb{C})$.</p>
+<p><strong>The contrast with a non-central cut.</strong> For a rank-one projection $P$ of $M_4(\mathbb{C})$ the four blocks $PM_4P$, $PM_4(\mathrm I_4-P)$, $(\mathrm I_4-P)M_4P$ and $(\mathrm I_4-P)M_4(\mathrm I_4-P)$ have complex dimensions $1,3,3,9$, computed from a random unit vector and verified as matrix ranks, and none of the off-diagonal blocks vanishes. The central cut separates two ideals; the non-central cut separates four corners of a simple algebra.</p>
+<p><strong>Why the cut is trivial.</strong> The family is central, so the two components are ideals. This says nothing about subalgebras, which may hold only the pairs satisfying a relation.</p>
+<h2 id="five-real-structures-and-four-real-algebras">Five Real Structures and Four Real Algebras</h2>
+<p><strong>The real structures of a factor.</strong> $M_4(\mathbb{C})$ has the two real structures $\tau_{\mathbb{R}}(A)=\bar A$ and $\tau_{\mathbb{H}}(A)=J_0\bar AJ_0^{-1}$, with fixed algebras $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$ and trace-form inertias $(10,6)$ and $(6,10)$.</p>
+<p><strong>Theorem (the real structures of the sum).</strong> A real structure of $A\oplus A$, with $A=M_4(\mathbb{C})$, either preserves or exchanges the two simple summands.</p>
+<ul>
+<li>Preserving: $\theta=\theta_1\times\theta_2$ with each $\theta_i$ one of the two, four maps.</li>
+<li>Exchanging: $\theta(A,B)=(\varphi(B),\varphi^{-1}(A))$ with $\varphi$ a conjugate-linear automorphism, and all such are conjugate.</li>
+</ul>
+<p>Hence five real structures and four isomorphism classes of fixed algebra:
+$$
+M_4(\mathbb{R})\oplus M_4(\mathbb{R}),\quad
+M_2(\mathbb{H})\oplus M_2(\mathbb{H}),\quad
+M_4(\mathbb{R})\oplus M_2(\mathbb{H}),\quad
+M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}.
+$$</p>
+<p><em>Proof.</em> A conjugate-linear automorphism permutes the two-element set of simple ideals. In the exchanging case $\theta^2=1$ forces the inverse in the second slot, and $\varphi=\operatorname{Ad}_G\circ\tau_{\mathbb{R}}$ by Skolem–Noether; conjugation by $(1,U)$ replaces $G$ by $G\bar U$, which runs over $GL_4(\mathbb{C})$.</p>
+<p><strong>The five structures.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>real structure</th>
+<th>fixed algebra</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tau_{\mathbb{R}}\times\tau_{\mathbb{R}}$</td>
+<td>$M_4(\mathbb{R})\oplus M_4(\mathbb{R})$</td>
+<td>$32$</td>
+<td>split $\oplus$ split</td>
+</tr>
+<tr>
+<td>$\tau_{\mathbb{R}}\times\tau_{\mathbb{H}}$</td>
+<td>$M_4(\mathbb{R})\oplus M_2(\mathbb{H})$</td>
+<td>$32$</td>
+<td>mixed</td>
+</tr>
+<tr>
+<td>$\tau_{\mathbb{H}}\times\tau_{\mathbb{R}}$</td>
+<td>$M_2(\mathbb{H})\oplus M_4(\mathbb{R})$</td>
+<td>$32$</td>
+<td>mixed, other order</td>
+</tr>
+<tr>
+<td>$\tau_{\mathbb{H}}\times\tau_{\mathbb{H}}$</td>
+<td>$M_2(\mathbb{H})\oplus M_2(\mathbb{H})$</td>
+<td>$32$</td>
+<td>quaternionic $\oplus$ quaternionic</td>
+</tr>
+<tr>
+<td>$\theta(A,B)=(\bar B,\bar A)$ and twists</td>
+<td>$\{(A,\bar A)\}\cong M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$</td>
+<td>$32$</td>
+<td>slanted</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The swap exchanges the mixed pair.</strong> $s(A,B)=(B,A)$ satisfies $s\circ(\tau_{\mathbb{R}}\times\tau_{\mathbb{H}})\circ s^{-1}=\tau_{\mathbb{H}}\times\tau_{\mathbb{R}}$, so the two mixed structures are conjugate. Five structures, four algebras; the two counts are different counts and both are used.</p>
+<p><strong>The slanted form.</strong> The fixed set of the exchange structure is $\{(A,\bar A)\}$, of real dimension thirty-two, and it is isomorphic to the realification $M_4(\mathbb{C})_{\mathbb{R}}$ by $(A,\bar A)\mapsto A$.</p>
+<p><strong>The trace-form inertias.</strong>
+$$
+(20,12),\qquad (12,20),\qquad (16,16),\qquad (16,16).
+$$
+The last is $\operatorname{Re}\operatorname{tr}(A^2)=\operatorname{tr}(X^2)-\operatorname{tr}(Y^2)$ for $A=X+iY$, which is $(10,6)+(6,10)$, verified on a real basis of thirty-two elements.</p>
+<p><strong>Which invariant separates.</strong> Simplicity separates the slanted form from the three sums, and the multiset of summand types separates the three sums. The trace form does not separate the mixed sum from the slanted form, both $(16,16)$; the Killing form does, in the table below.</p>
+<h2 id="the-two-real-forms-of-the-second-complexification">The Two Real Forms of the Second Complexification</h2>
+<p><strong>The algebra is simple.</strong> $M_8(\mathbb{C})$ has no two-sided ideals, so its real structures are the real forms of a simple complex algebra, and there are two:
+$$
+M_8(\mathbb{R}),\qquad M_4(\mathbb{H}),
+$$
+with trace-form inertias $(36,28)$ and $(28,36)$. The counts $36+28=64$ and $28+36=64$ are the dimension counts.</p>
+<p><strong>Why two.</strong> The real forms of $M_m(\mathbb{C})$ correspond to the classes of the Brauer group of $\mathbb{R}$, which has two elements; the split form is $M_m(\mathbb{R})$ and the quaternionic form is $M_{m/2}(\mathbb{H})$ at even $m$.</p>
+<p><strong>The contrast with the first complexification.</strong> The first complexification has two simple ideals and five real structures; the second is simple and has two. Simplicity is the reason the second count is the count of the real forms of a simple algebra and not a count of permutations of summands.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>simple</th>
+<th>real forms</th>
+<th>inertias</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_4(\mathbb{C})\oplus M_4(\mathbb{C})$</td>
+<td>no, two ideals</td>
+<td>$4$ classes from $5$ structures</td>
+<td>$(20,12)$, $(12,20)$, $(16,16)$, $(16,16)$</td>
+</tr>
+<tr>
+<td>$M_8(\mathbb{C})$</td>
+<td>yes</td>
+<td>$2$</td>
+<td>$(36,28)$, $(28,36)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-biquaternion-base-inside-the-complexifications">The Biquaternion Base Inside the Complexifications</h2>
+<p><strong>The regular families.</strong> $\mathrm I_2\otimes M_2(\mathbb{C})$ and $M_2(\mathbb{C})^{\mathsf T}\otimes\mathrm I_2$ are complex subspaces of $\mathcal{E}_{\mathbb{C}}$ of dimension four, and their images under $(A,B)\mapsto(A,A)$ and $(A,B)\mapsto(A,\bar A)$ are the two real-forms of the base inside the complexification.</p>
+<p><strong>The element copy.</strong> $L(M_2(\mathbb{C}))\cong M_2(\mathbb{C})$ sits inside $\mathcal{E}^{\oplus2}_{\mathbb{C}}$ diagonally, in both slots, and its conjugate sits in the slanted copy with one slot conjugated. The display writes the two embeddings as
+$$
+A\longmapsto(\mathsf M_2(\tilde Q),\mathsf M_2(\tilde Q)),\qquad
+A\longmapsto(\mathsf M_2(\tilde Q),\overline{\mathsf M_2(\tilde Q)}),
+$$
+and the second is the slanted one.</p>
+<p><strong>Inside the second complexification.</strong> $M_4(\mathbb{C})\oplus M_4(\mathbb{C})\subset M_8(\mathbb{C})$ carries the base as two diagonal blocks of $4\times4$ matrices, and the base of the base, $L(\mathbb{H})\cong\mathbb{H}$, appears as a four-real-dimensional subspace in each block.</p>
+<p><strong>The real forms of the base.</strong> The split copy $L(M_2(\mathbb{R}))$ and the quaternionic copy $L(\mathbb{H})$ sit in the two real forms $M_4(\mathbb{R})$ and $M_2(\mathbb{H})$, and their complexifications are the same complex subspace by the identity $M_2(\mathbb{R})\otimes\mathbb{C}=\mathbb{H}\otimes\mathbb{C}=M_2(\mathbb{C})$.</p>
+<h2 id="the-diagonal-correspondence">The Diagonal Correspondence</h2>
+<p><strong>The two maps.</strong> For a real form $A_0$ of $\mathcal{E}_{\mathbb{C}}$,
+$$
+\iota_{\mathrm{sc}}(A)=(A,\bar A),\qquad \iota_{\mathrm{d}}(A)=(A,A).
+$$
+Both are injective homomorphisms of real algebras with image of real dimension sixteen.</p>
+<p><strong>The maps as block arrays.</strong> An element of the second complexification is one $8\times8$ array, and the two maps read
+$$
+\iota_{\mathrm{sc}}(A)=\begin{pmatrix}A&0\\0&\bar A\end{pmatrix},
+\qquad
+\iota_{\mathrm{d}}(A)=\begin{pmatrix}A&0\\0&A\end{pmatrix},
+$$
+in the two diagonal $4\times4$ blocks. For $A=\mathrm I_2$ both give the identity of $M_8(\mathbb{C})$; for $A=E_1$ the first gives
+$$
+\begin{pmatrix}E_1&0\\0&-E_1\end{pmatrix},
+$$
+verified. The off-diagonal blocks are zero in both maps, which is why the images lie in the sum of the two blocks.</p>
+<p><strong>The coincidence.</strong> For $A_0=M_4(\mathbb{R})$ the two maps coincide, since $\bar A=A$. For $A_0=M_2(\mathbb{H})$ they differ, since $\bar A=J_0^{-1}AJ_0$ is not $A$ in general.</p>
+<p><strong>The correspondence.</strong> $A_0\mapsto A_0\oplus A_0$ sends $M_4(\mathbb{R})$ to the split sum and $M_2(\mathbb{H})$ to the quaternionic sum, and it is injective and not surjective: the mixed sum and the slanted form are not of that shape.</p>
+<p><strong>Why the two exclusions.</strong> The mixed form is a sum of two non-isomorphic simple ideals, while $A_0\oplus A_0$ has two isomorphic ones. The slanted form is simple, while $A_0\oplus A_0$ never is.</p>
+<p><strong>The warning.</strong> The diagonal map $A\mapsto(A,A)$ starts from a real form of real dimension sixteen; the two-sided span $A_0\otimes A_0^{\mathrm{op}}\cong M_4(\mathbb{R})$ starts from an element form of real dimension four and lands inside $\mathcal{E}_{\mathbb{C}}$, not in its complexification. The two agree only in that the split span is the image of the diagonal map for the split form.</p>
+<h2 id="associative-subalgebras-of-the-complexified-algebras">Associative Subalgebras of the Complexified Algebras</h2>
+<p><strong>The structural theorem.</strong> A subalgebra $S\subset A\oplus A$ has two projections $S_1,S_2$, and it is the fibre product of a quotient of $S_1$ and a quotient of $S_2$ over a common quotient: there are ideals $I_i\triangleleft S_i$ and an isomorphism $S_1/I_1\cong S_2/I_2$ such that
+$$
+S=\{(a,b)\in S_1\oplus S_2:\ f_1(a)=f_2(b)\}.
+$$
+This is Goursat's theorem, and it is the classification of the subalgebras of a direct sum.</p>
+<p><strong>The three shapes.</strong> The graph of an isomorphism $S_1\to S_2$, the full product $S_1\oplus S_2$, and the fibre product over a proper common quotient. At $B=M_2(\mathbb{C})$ the common quotients range over $\mathbb{C}$, $M_2(\mathbb{C})$, $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$ and the matrix algebras above the base, so the fibre-product shape is the generic one.</p>
+<p><strong>The distinguished members.</strong> The diagonal $M_4(\mathbb{C})$, the two summands, the biquaternion base $L(M_2(\mathbb{C}))$ in each slot, and the graph of the transpose, of complex dimension sixteen.</p>
+<p><strong>The second complexification.</strong> $M_8(\mathbb{C})$ is simple, so the same dictionary applies with $n=8$ and the maximal proper subalgebras are the stabilizers of subspaces, of dimensions $1+7+49=57$, $16+16+16=48$ and the like.</p>
+<h2 id="lie-subalgebras-and-killing-forms">Lie Subalgebras and Killing Forms</h2>
+<p><strong>The two forms.</strong> The trace form $(X,Y)\mapsto\operatorname{tr}(XY)$ and the Killing form, which is $2n$ times the trace form on the traceless part. On $\mathfrak{gl}(4,\mathbb{F})$ at $n=4$,
+$$
+K(X,Y)=8\operatorname{tr}(XY)-2\operatorname{tr}(X)\operatorname{tr}(Y),
+$$
+verified on random real pairs to $4\cdot10^{-15}$.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>algebra</th>
+<th>$\dim_{\mathbb{R}}$</th>
+<th>trace form</th>
+<th>Killing, semisimple part</th>
+<th>radical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_4(\mathbb{R})^{\oplus2}$</td>
+<td>$32$</td>
+<td>$(20,12)$</td>
+<td>$(18,12)$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$M_2(\mathbb{H})^{\oplus2}$</td>
+<td>$32$</td>
+<td>$(12,20)$</td>
+<td>$(10,20)$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{R})\oplus M_2(\mathbb{H})$</td>
+<td>$32$</td>
+<td>$(16,16)$</td>
+<td>$(14,16)$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$</td>
+<td>$32$</td>
+<td>$(16,16)$</td>
+<td>$(15,15)$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sums add.</strong> $K_{\mathfrak g\oplus\mathfrak h}=K_{\mathfrak g}\oplus K_{\mathfrak h}$, since the adjoint action is block diagonal, so the inertias and the radicals add. This is the only doubling in the table: $(18,12)=2(9,6)$ and $(10,20)=2(5,10)$.</p>
+<p><strong>The slanted arithmetic.</strong> For the realification the rule is $K_{\mathbb{R}}(X,Y)=2\operatorname{Re}K_{\mathbb{C}}(X,Y)$, because the realification of a complex operator has twice the real trace. On $\mathfrak{sl}(4,\mathbb{C})_{\mathbb{R}}=\mathfrak{su}(4)\oplus i\,\mathfrak{su}(4)$ the form is negative definite on the first summand and positive definite on the second, giving $(15,15)$, verified on a real basis of thirty elements. Doubling $(9,6)$ would give $(18,12)$ and is wrong.</p>
+<p><strong>What each form is for.</strong> The Killing form decides compactness and is the Lie invariant; the trace form is the invariant of the operator algebra and is the form of the biquaternion base, where $\operatorname{tr}(U_1U_2)$ is the form on the traceless part.</p>
+<h2 id="the-jordan-layer">The Jordan Layer</h2>
+<p><strong>The complexified Jordan algebras.</strong> $M_4(\mathbb{C})^{+}\oplus M_4(\mathbb{C})^{+}$ and $M_8(\mathbb{C})^{+}$, with the symmetrized product $X\circ Y=\tfrac12(XY+YX)$.</p>
+<p><strong>The idempotents.</strong> The pair $(P,Q)$ of rank-one projections is an idempotent of the sum, and the Peirce decomposition of the Jordan algebra follows the corner decomposition of the associative one. The non-central Peirce blocks $1,3,3,9$ are the Jordan blocks of a rank-one idempotent of $M_4(\mathbb{C})^{+}$.</p>
+<p><strong>The three real Jordan forms.</strong> $M_4(\mathbb{R})^{+}$, $M_2(\mathbb{H})^{+}$ and $H_4(\mathbb{C})$, of inertias $(10,6)$, $(6,10)$ and $(16,0)$, sit inside the complexified Jordan algebra as its real forms, exactly as the associative ones do.</p>
+<h2 id="where-math255-differs">Where $n=2$ Differs</h2>
+<p><strong>The dimensions.</strong> At the element level the first complexification is $M_2(\mathbb{C})\oplus M_2(\mathbb{C})$ of complex dimension eight, and the second is $M_4(\mathbb{C})$ of complex dimension sixteen. At the operator level they are $32$ and $64$. Every count is multiplied by four, which is the square of the size ratio.</p>
+<p><strong>The Peirce dimensions.</strong> The non-central cut of a rank-one projection gives blocks $1,1,1,1$ at $n=2$ and $1,3,3,9$ at $n=4$. The general formula is $1$, $n-1$, $n-1$, $(n-1)^2$, and at $n=2$ the three sizes collapse.</p>
+<p><strong>The counts of structures do not change.</strong> Five real structures and four real algebras at both levels, and two real forms of the simple complexification at both levels. The reason is that a real structure of $A\oplus A$ permutes two summands and does not see the size of $A$.</p>
+<p><strong>The inertia numbers change.</strong> $(10,6)$ against $(6,10)$ at $n=4$ becomes $(3,1)$ against $(1,3)$ at $n=2$, and the slanted inertia $(15,15)$ on $\mathfrak{sl}(4,\mathbb{C})_{\mathbb{R}}$ becomes $(3,3)$ on $\mathfrak{sl}(2,\mathbb{C})_{\mathbb{R}}\cong\mathfrak{so}(3,1)$.</p>
+<h2 id="summary">Summary</h2>
+<p>The two complexifications are $\mathcal{E}_{\mathbb{C}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_4(\mathbb{C})\oplus M_4(\mathbb{C})$, of complex dimension thirty-two, and $\mathcal{E}_{\mathbb{R}}\otimes_{\mathbb{R}}\mathbb{C}\cong M_8(\mathbb{C})$, of dimension sixty-four. The splitting is $\Phi(A\otimes z)=(zA,\bar zA)$, an isomorphism of real algebras, verified multiplicative to $6\cdot10^{-15}$, and not an isomorphism of complex algebras, because the second summand carries the conjugate structure.</p>
+<p>The first complexification has the two central idempotents $E_1=(\mathrm I_4,0)$ and $E_2=(0,\mathrm I_4)$, a trivial Peirce cut, and five real structures: the four preserving ones and the exchanging one. The four real algebras are $M_4(\mathbb{R})^{\oplus2}$, $M_2(\mathbb{H})^{\oplus2}$, the mixed sum and the slanted realification, with trace inertias $(20,12)$, $(12,20)$, $(16,16)$, $(16,16)$. The second complexification is simple, with the two real forms $M_8(\mathbb{R})$ and $M_4(\mathbb{H})$.</p>
+<p>The diagonal correspondence $A_0\mapsto A_0\oplus A_0$ is two into four: the mixed and the slanted forms are not diagonal. The associative layer is Goursat's theorem. The Killing inertias are $(18,12)$, $(10,20)$, $(14,16)$, $(15,15)$, and the Killing form separates the four algebras where the trace form does not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Phi$</td>
+<td>the splitting $(A\otimes z)\mapsto(zA,\bar zA)$</td>
+</tr>
+<tr>
+<td>$E_1,E_2$</td>
+<td>the central idempotents of the sum</td>
+</tr>
+<tr>
+<td>$\tau_{\mathbb{R}},\tau_{\mathbb{H}}$</td>
+<td>the two real structures of a factor</td>
+</tr>
+<tr>
+<td>$\iota_{\mathrm{sc}},\iota_{\mathrm{d}}$</td>
+<td>the slanted and the diagonal embeddings</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{C})^{\mathrm{swap}}_{\mathbb{R}}$</td>
+<td>the slanted realification</td>
+</tr>
+<tr>
+<td>$K$</td>
+<td>the Killing form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="classification-of-the-complex-structures-of-the-operators-of-the-biquaternion-algebra.html">Classification of the Complex Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups</a>, for the source's abstract splitting and its comparison with the element level.</li>
+<li><a href="classification-of-the-real-structures-of-the-operators-of-the-biquaternion-algebra-in-m2c.html">Classification of the Real Structures of the Operators of the Biquaternion Algebra, including Lie Algebras and Lie Groups in $M_2(\mathbb{C})$</a>, for the two real forms whose complexification this article splits.</li>
+<li><a href="classification-of-the-structures-of-the-operators-of-the-biquaternion-algebra-in-m2c.html">Classification of the Structures of the Operators of the Biquaternion Algebra in $M_2(\mathbb{C})$</a>, for the double centralizer and the biquaternion base.</li>
+<li><a href="the-adjoints-and-the-polar-decomposition-of-an-operator-at-n-2.html">The Adjoints and the Polar Decomposition of an Operator at $n=2$</a>, for the real structures as conjugations of the operator space.</li>
+<li><a href="the-lie-correspondence-and-the-adjoint-representation.html">The Lie Correspondence and the Adjoint Representation</a>, for the group theory attached to the inertias.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

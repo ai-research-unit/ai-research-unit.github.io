@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-One Carrier and the Spectral Strata at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. Every element of the carrier of label one has the spectrum for a complex number, so the carrier has exactly two spectral types up to the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-one-carrier-and-the-spectral-strata-at-math0"><strong>The Spin-One Carrier and the Spectral Strata at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> Every element of the carrier of label one has the spectrum $\pm3\lambda/2,\pm\lambda/2$ for a complex number $\lambda$, so the carrier has exactly two spectral types up to the value of $\lambda$: the semisimple type and the nilpotent type. The article computes the strata and the discriminant.</p>
+<p><strong>The order of the article.</strong> The first section fixes the characteristic polynomial. The second lists the strata. The third computes the discriminant and the locus where it vanishes. The fourth compares with the other carriers. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Spin-One Carrier of $M_4(\mathbb{C})$: the Adjoint Triplet</em> and <em>The Spin-Zero Carrier and the Spectral Strata at $n=4$</em>. The row at order two is <em>The Spin-One Carrier and the Spectral Strata</em>.</p>
+<p><strong>The result in one line.</strong> The characteristic polynomial on the triplet is $\lambda^{4}-(5\lambda^{2}/2)\mu^{2}+(9\lambda^{4}/16)$ in the variable $\mu$, the strata are the semisimple cone $\lambda\neq0$ and the nilpotent cone $\lambda=0$, and the discriminant is proportional to $\lambda^{6}$.</p>
+<p><strong>Boundaries.</strong> The article treats the spectrum as a multiset; the rank and the eigenvectors are treated in the adjacent articles.</p>
+<h2 id="the-characteristic-polynomial">The Characteristic Polynomial</h2>
+<p><strong>Proposition.</strong> For $X=aJ_x+bJ_y+cJ_z$ the characteristic polynomial is $\mu^{4}-(5\lambda^{2}/2)\mu^{2}+9\lambda^{4}/16$, where $\lambda^{2}=a^{2}+b^{2}+c^{2}$.</p>
+<p><em>Proof.</em> The eigenvalues are $\pm3\lambda/2,\pm\lambda/2$, so the polynomial is $(\mu^{2}-9\lambda^{2}/4)(\mu^{2}-\lambda^{2}/4)$.</p>
+<p><strong>Corollary.</strong> The quadratic coefficient is $-\operatorname{tr}(X^{2})/2=-5\lambda^{2}/2$, and the constant term is $\det X=9\lambda^{4}/16$.</p>
+<p><em>Proof.</em> The expansion and the value of the trace form.</p>
+<p><strong>Corollary.</strong> The polynomial depends on the element only through $\lambda^{2}$, so it is constant on the cones $\lambda^{2}=\text{const}$.</p>
+<p><em>Proof.</em> The formula.</p>
+<p><strong>The reading.</strong> The spectrum of an element of the triplet is the pair $\pm3\lambda/2,\pm\lambda/2$, and the only parameter is the value of the invariant quadratic form.</p>
+<h2 id="the-strata">The Strata</h2>
+<p><strong>Proposition.</strong> The spectral strata of the carrier are two: the semisimple cone $\lambda\neq0$, where the spectrum has the two distinct pairs, and the nilpotent cone $\lambda=0$, where the spectrum is $\{0,0,0,0\}$.</p>
+<p><em>Proof.</em> The spectrum depends on $\lambda^{2}$; for $\lambda\neq0$ the four eigenvalues are distinct unless $\lambda$ is such that $3\lambda/2=\pm\lambda/2$, which never happens.</p>
+<p><strong>Corollary.</strong> The nilpotent cone is the isotropic cone of the quadratic form, of complex dimension two, and its nonzero elements form a single orbit under the copy up to scaling.</p>
+<p><em>Proof.</em> The cone $a^{2}+b^{2}+c^{2}=0$ is two-dimensional and irreducible; the copy acts transitively on its nonzero points.</p>
+<p><strong>Corollary.</strong> The semisimple stratum is open and dense, and it is the union of the level sets of $\lambda^{2}$.</p>
+<p><em>Proof.</em> The complement of the isotropic cone is open and dense.</p>
+<p><strong>The reading.</strong> The triplet has the smallest possible number of spectral types: two, one open and one of codimension one.</p>
+<h2 id="the-discriminant">The Discriminant</h2>
+<p><strong>Proposition.</strong> The discriminant of the characteristic polynomial is proportional to $\lambda^{6}$, so it vanishes exactly on the nilpotent cone, with multiplicity six.</p>
+<p><em>Proof.</em> The polynomial is $(\mu^{2}-9\lambda^{2}/4)(\mu^{2}-\lambda^{2}/4)$; the discriminant of a product of two quadratics with roots $\pm3\lambda/2$ and $\pm\lambda/2$ is the product of the squared differences, which is a constant times $\lambda^{6}$.</p>
+<p><strong>Corollary.</strong> The discriminant is not identically zero on the carrier, and it is not a square.</p>
+<p><em>Proof.</em> It is $\lambda^{6}$ up to a constant, and $\lambda$ is not a polynomial in $a,b,c$.</p>
+<p><strong>Corollary.</strong> The carrier's discriminant locus is the nilpotent cone, and the carrier meets the discriminant locus of the algebra exactly there.</p>
+<p><em>Proof.</em> The two statements.</p>
+<p><strong>The reading.</strong> The discriminant is the polynomial whose vanishing detects the collision of eigenvalues, and on the triplet the collision happens only in the nilpotent limit.</p>
+<h2 id="the-other-carriers">The Other Carriers</h2>
+<p><strong>Proposition.</strong> On $V_0$ the discriminant vanishes identically; on $V_1$ it vanishes on a cone of codimension one; on $V_2$ and $V_3$ it vanishes on a hypersurface that does not exhaust the carrier.</p>
+<p><em>Proof.</em> The scalars have repeated eigenvalues; the triplet's discriminant is $\lambda^{6}$; on the quintet and the septet the eigenvalues $\pm\alpha,\pm\beta$ are independent, so the discriminant vanishes when $\alpha=\pm\beta$ or $\alpha=0$ or $\beta=0$, which is a hypersurface.</p>
+<p><strong>Corollary.</strong> The carrier of label one is the first carrier whose discriminant is neither identically zero nor a proper hypersurface of the full dimension.</p>
+<p><em>Proof.</em> The comparison.</p>
+<p><strong>Corollary.</strong> The number of spectral types increases with the label: one type on $V_0$, two on $V_1$, and more on $V_2$ and $V_3$.</p>
+<p><em>Proof.</em> The multiplicities of the eigenvalues.</p>
+<p><strong>The reading.</strong> The triplet occupies the middle of the spectral scale: more rigid than the higher carriers and less degenerate than the scalars.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the trace form article.</strong> That article gives the quadratic coefficient of the polynomial through the metric; this one gives the whole polynomial.</p>
+<p><strong>Against the rank article.</strong> The nilpotent cone is the union of the rank-three stratum and the origin.</p>
+<p><strong>Against the biquaternion row.</strong> At order two the carrier of label one is the adjoint of $\mathfrak{su}(2)$ and its spectrum is $\{0,\pm\mu\}$, a different pattern with the same two types.</p>
+<h2 id="the-spectrum-and-the-metric">The Spectrum and the Metric</h2>
+<p><strong>The eigenvalues in terms of the form.</strong> The trace form gives $q(X)=\operatorname{tr}(X^{2})=5(a^{2}+b^{2}+c^{2})=5\lambda^{2}$, so $\lambda=\sqrt{q/5}$ and the spectrum is $\{\pm\tfrac32\sqrt{q/5},\pm\tfrac12\sqrt{q/5}\}$. The metric determines the spectrum completely, and the ratio three is the only remaining datum.</p>
+<p><strong>The nilpotent cone and the isotropic cone.</strong> The cone $\lambda=0$ is the isotropic cone of the trace form, cut out by the single quadratic equation $q=0$ in a carrier of dimension three; the semisimple stratum is its complement.</p>
+<p><strong>The comparison with the module.</strong> The module has the weights $\pm\tfrac32,\pm\tfrac12$ under the same Cartan element, and the spectrum of the element $aJ_x+bJ_y+cJ_z$ on the module is what the eigenvalues above record: the triplet acts on the module through the same three generators, and the eigenvalues are the weights multiplied by the parameter.</p>
+<p><strong>The reading.</strong> On the triplet the metric and the spectrum are the same object, read at two levels: the invariant quadratic form gives the parameter, and the module gives the four eigenvalues.</p>
+<h2 id="the-strata-in-the-projective-carrier">The Strata in the Projective Carrier</h2>
+<p><strong>The projective picture.</strong> The carrier is a complex space of dimension three, and the semisimple stratum is the complement of a quadric cone; in the projective plane the cone is a conic, and the two strata are the interior and the exterior of the conic, distinguished by the sign of the invariant form.</p>
+<p><strong>The real picture.</strong> On the real form the conic is an ellipse, and the semisimple locus splits into two components on which the parameter $\lambda$ is real and of either sign; the nilpotent cone is the ellipse itself, and the origin is the only element with no projective class.</p>
+<h2 id="the-note-on-order-two">The Note on Order Two</h2>
+<p><strong>The lower analogue.</strong> At order two the triplet is the space of imaginary quaternions, and the copy acts on it by the adjoint representation; every nonzero element is semisimple, so the only spectral stratum below the origin is the whole space minus the origin, and the nilpotent cone is a single point.</p>
+<p><strong>The comparison.</strong> The reason is the dimension: in three dimensions the adjoint element $x$ has the eigenvalues $0,\pm i|x|$ with $|x|^{2}$ the invariant form, so one eigenvalue is always zero and the other two never are; the rank is two off the origin, and the finer stratification appears only at order four.</p>
+<h2 id="the-check-of-the-ratio">The Check of the Ratio</h2>
+<p><strong>The two eigenvalues.</strong> The ratio of the two nonzero eigenvalues is three at every point of the carrier, so the projective spectrum is constant and the only variable is the scale; the carrier therefore has a single projective spectral class.</p>
+<h2 id="summary">Summary</h2>
+<p>On the carrier of label one the characteristic polynomial is $\mu^{4}-(5\lambda^{2}/2)\mu^{2}+9\lambda^{4}/16$, with the spectrum $\pm3\lambda/2,\pm\lambda/2$. The spectral strata are the semisimple cone and the nilpotent cone, and the discriminant is proportional to $\lambda^{6}$, vanishing on the nilpotent cone with multiplicity six.</p>
+<p>Among the four carriers the triplet is the first with a nondegenerate discriminant: the scalars have a vanishing discriminant, and the higher carriers have a discriminant hypersurface cut out by three conditions.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lambda^{2}=a^{2}+b^{2}+c^{2}$</td>
+<td>the invariant parameter</td>
+</tr>
+<tr>
+<td>$\pm3\lambda/2,\pm\lambda/2$</td>
+<td>the spectrum</td>
+</tr>
+<tr>
+<td>$\lambda^{6}$</td>
+<td>the discriminant up to a constant</td>
+</tr>
+<tr>
+<td>$\lambda=0$</td>
+<td>the nilpotent cone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-one-carrier-of-m4c.html">The Spin-One Carrier of $M_4(\mathbb{C})$: the Adjoint Triplet</a>, for the carrier.</li>
+<li><a href="the-spin-one-carrier-and-the-trace-form-at-n-4.html">The Spin-One Carrier and the Trace Form at $n=4$</a>, for the metric.</li>
+<li><a href="the-spin-one-carrier-and-the-rank-strata-at-n-4.html">The Spin-One Carrier and the Rank Strata at $n=4$</a>, for the rank.</li>
+<li><a href="the-spin-one-carrier-and-the-spectral-strata.html">The Spin-One Carrier and the Spectral Strata</a>, for the row at order two.</li>
+<li><a href="the-spin-zero-carrier-and-the-spectral-strata-at-n-4.html">The Spin-Zero Carrier and the Spectral Strata at $n=4$</a>, for the comparison.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fierz–Kofink Identities and the Classification of Spinors at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The sixteen matrix units form a basis of the bispinor space, and they satisfy the composition identity that expresses the product of two…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fierzkofink-identities-and-the-classification-of-spinors-at-math0"><strong>The Fierz–Kofink Identities and the Classification of Spinors at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The sixteen matrix units form a basis of the bispinor space, and they satisfy the composition identity that expresses the product of two bispinors as a bispinor. The article states the identity, derives the completeness relations, and classifies the spinors by the rank of the bispinor they define.</p>
+<p><strong>The order of the article.</strong> The first section fixes the basis of sixteen units. The second states the Fierz identity. The third derives the completeness relation. The fourth gives the classification into five types. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$</em> and <em>Spinors and Dirac Spinors in $M_4(\mathbb{C})$</em>. The row at order two is <em>The Fierz–Kofink Identities</em>.</p>
+<p><strong>The result in one line.</strong> The bispinors have the basis $E_{ij}$ of sixteen units, the product satisfies $(\psi\bar\chi^{\dagger})(\phi\bar\eta^{\dagger})=\omega(\bar\chi,\phi)\,\psi\bar\eta^{\dagger}$, and the classification of a spinor by the rank of its bispinor has five types.</p>
+<p><strong>Boundaries.</strong> The article treats the identities and the classification by rank; it does not treat the spectral classification of the bispinors, which is the subject of the spectral articles.</p>
+<h2 id="the-basis-of-sixteen">The Basis of Sixteen</h2>
+<p><strong>Definition.</strong> The <strong>matrix units</strong> $E_{ij}$ are the matrices with a one in position $(i,j)$ and zero elsewhere; the <strong>bispinor basis</strong> is the same set, read as $\psi_i\bar\chi_j^{\dagger}$.</p>
+<p><strong>Proposition.</strong> The sixteen units form a basis of the bispinor space, and each unit has weight $m_i-m_j$ under the Cartan element of the copy.</p>
+<p><em>Proof.</em> The units are the standard basis of $M_4(\mathbb{C})$, and the conjugation action multiplies $E_{ij}$ by the phase of weight $m_i-m_j$.</p>
+<p><strong>Corollary.</strong> The weights of the basis are the sixteen differences $0^{4},\pm1^{3},\pm2^{2},\pm3$.</p>
+<p><em>Proof.</em> The differences of $\{\tfrac32,\tfrac12,-\tfrac12,-\tfrac32\}$.</p>
+<p><strong>Corollary.</strong> The basis is not invariant under the copy, but its span is the whole space, and the invariant pieces are the carriers.</p>
+<p><em>Proof.</em> The group permutes and mixes the units according to the weights.</p>
+<p><strong>The reading.</strong> The sixteen units are the finest possible description of the bispinor space, and the carriers are the coarsest invariant description.</p>
+<h2 id="the-fierz-identity">The Fierz Identity</h2>
+<p><strong>Proposition.</strong> For spinors $\psi,\phi$ and dual spinors $\bar\chi,\bar\eta$ one has $(\psi\bar\chi^{\dagger})(\phi\bar\eta^{\dagger})=\omega(\bar\chi,\phi)\,\psi\bar\eta^{\dagger}$, where $\omega$ is the invariant alternating pairing.</p>
+<p><em>Proof.</em> The product of the matrices is $\psi(\bar\chi^{\dagger}\phi)\bar\eta^{\dagger}$, and the scalar $\bar\chi^{\dagger}\phi$ is the pairing of the dual spinor with the spinor.</p>
+<p><strong>Corollary.</strong> The product of two rank-one bispinors is a rank-one bispinor or zero, and the composition is governed by a single scalar.</p>
+<p><em>Proof.</em> The identity displays the product as a scalar times a rank-one bispinor.</p>
+<p><strong>Corollary.</strong> The algebra of bispinors is generated by the rank-one ones, and the identity is the multiplication table of the spinor description.</p>
+<p><em>Proof.</em> The rank-one matrices span the algebra.</p>
+<p><strong>The reading.</strong> The identity is the Fierz transformation in its simplest form: it moves the pairing from the middle to the outside.</p>
+<h2 id="the-completeness-relation">The Completeness Relation</h2>
+<p><strong>Proposition.</strong> The sixteen units satisfy $\sum_{ij}E_{ij}\otimes E_{ji}=\mathrm{Id}$ on the bispinor space, and the corresponding identity for spinors reads $\sum_{i}\psi_i\otimes\bar\chi_i^{\dagger}$ in the dual bases.</p>
+<p><em>Proof.</em> The sum over $i,j$ of $E_{ij}\otimes E_{ji}$ acts on a matrix $X$ as $\sum_{ij}E_{ij}\operatorname{tr}(E_{ji}X)=X$.</p>
+<p><strong>Corollary.</strong> Every bispinor expands uniquely in the sixteen units, and every spinor expands in the four vectors of a basis.</p>
+<p><em>Proof.</em> The units are a basis; the completeness relation is the resolution of the identity.</p>
+<p><strong>Corollary.</strong> The dimension count $4\times4=16$ is the completeness relation read as a count of coefficients.</p>
+<p><em>Proof.</em> The number of units.</p>
+<p><strong>The reading.</strong> The completeness relation is the statement that the bispinor space is the tensor product of the spinor space with its dual, made explicit in a basis.</p>
+<h2 id="the-classification">The Classification</h2>
+<p><strong>Proposition.</strong> The rank of the bispinor associated with a spinor pair is the rank of the matrix $\psi\bar\chi^{\dagger}$, which is one for nonzero $\psi,\bar\chi$ and zero otherwise; the classification of a general bispinor by rank has the five types $0,1,2,3,4$.</p>
+<p><em>Proof.</em> A nonzero product of a column and a row has rank one; the rank of a general matrix is one of the five values.</p>
+<p><strong>Corollary.</strong> The five types correspond to the five Jordan types of a $4\times4$ matrix, namely the partitions of four, and the pure bispinors are the type of rank one.</p>
+<p><em>Proof.</em> The Jordan type is a partition of the size, and there are five partitions of four.</p>
+<p><strong>Corollary.</strong> The classification is invariant under conjugation, and the carriers cut each type into pieces.</p>
+<p><em>Proof.</em> Conjugation preserves the rank and the Jordan type; a carrier meets a type in an invariant subset.</p>
+<p><strong>The reading.</strong> The classification by rank is coarse, the classification by Jordan type is finer, and the carrier decomposition cuts across both.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the bispinor introduction.</strong> That article identifies the space; this one gives the multiplication table and the classification.</p>
+<p><strong>Against the rank articles.</strong> The rank strata of the carriers are computed there; this one gives the classification of the bispinors without reference to the carriers.</p>
+<p><strong>Against the general order.</strong> At order $n$ the basis has $n^{2}$ units and the classification has $n+1$ ranks and the partitions of $n$ as Jordan types.</p>
+<h2 id="a-final-observation">A Final Observation</h2>
+<p><strong>The sixteen covariants.</strong> The completeness relation says that the sixteen units are the coefficients of the identity operator on the module, and the bilinear covariants of the classification are the same sixteen units paired with a spinor and its conjugate; the count sixteen is the dimension of the bispinor space and the number of independent bilinears.</p>
+<p><strong>The comparison with order two.</strong> At order two the bispinor space has four real dimensions and the classification has four real forms, while at order four the space has sixteen complex dimensions and the classification has five ranks; the count of classes is the number of partitions of the dimension of the module.</p>
+<h2 id="the-identity-in-coordinates">The Identity in Coordinates</h2>
+<p><strong>The sixteen units.</strong> The matrix units form a basis of the algebra, and the identity operator on the algebra is the sum of the sixteen rank-one operators attached to them; the completeness relation is that sum, and the Fierz identity is its bispinor form.</p>
+<p><strong>The pairing.</strong> The trace form pairs the matrix unit with its transpose, and the pairing is one on the matched pair and zero otherwise; the sixteen coefficients of a bispinor in the unit basis are the entries of the matrix, and the completeness relation is the statement that the entries determine the matrix.</p>
+<p><strong>The consequences.</strong> The identity expresses the product of two rank-one bispinors as a scalar multiple of one of them, and the scalar is the pairing of the two factors; it is the only identity needed to compute the square of a bispinor and the traces of powers.</p>
+<p><strong>The reading.</strong> The Fierz identity at this order is the completeness of the sixteen units, read as an identity between bilinears.</p>
+<h2 id="the-check-of-the-identity">The Check of the Identity</h2>
+<p><strong>The two sides.</strong> The left side of the identity is a product of two bispinors and the right side is a sum of sixteen terms, each a matrix unit times a pairing; the check is that both sides are equal as matrices, and it holds for every pair of bispinors.</p>
+<p><strong>The reading.</strong> The Fierz identity is the single algebraic identity from which the products, the squares and the traces of bispinors all follow.</p>
+<h2 id="summary">Summary</h2>
+<p>The bispinor space has the basis of the sixteen matrix units, whose weights are the sixteen differences of the module's weights. The product of two rank-one bispinors is a scalar times a rank-one bispinor, and the scalar is the pairing of the inner spinor with the inner dual spinor; this is the Fierz identity.</p>
+<p>The completeness relation expresses the identity operator as the sum of the sixteen units in the two factors, and it is the tensor-product statement in a basis.</p>
+<p>The classification of bispinors by rank has five types, and by Jordan type the five partitions of four; the pure bispinors are the rank-one type, and the carrier decomposition cuts across the classification.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$E_{ij}$</td>
+<td>the sixteen matrix units</td>
+</tr>
+<tr>
+<td>$\omega(\bar\chi,\phi)$</td>
+<td>the scalar of the Fierz identity</td>
+</tr>
+<tr>
+<td>$\sum E_{ij}\otimes E_{ji}$</td>
+<td>the completeness relation</td>
+</tr>
+<tr>
+<td>$0,1,2,3,4$</td>
+<td>the five ranks</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-spin-three-halves-bispinor-spaces-at-n-4.html">Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$</a>, for the space.</li>
+<li><a href="spinors-and-dirac-spinors-at-n-4.html">Spinors and Dirac Spinors in $M_4(\mathbb{C})$</a>, for the vocabulary.</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-rank-strata-at-n-4.html">The Spin-$\tfrac32$ Bispinors and the Rank Strata at $n=4$</a>, for the ranks.</li>
+<li><a href="the-fierz-kofink-identities.html">The Fierz–Kofink Identities</a>, for the row at order two.</li>
+<li><a href="the-ten-ranks-of-the-two-sided-operators-at-n-4.html">The Ten Ranks of the Two-Sided Operators at $n=4$</a>, for the rank law.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

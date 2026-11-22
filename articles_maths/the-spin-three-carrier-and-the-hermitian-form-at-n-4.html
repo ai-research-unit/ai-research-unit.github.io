@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Three Carrier and the Hermitian Form at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The carrier of label three carries two forms of different kinds: the complex bilinear trace form, indefinite of real signature, and the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-three-carrier-and-the-hermitian-form-at-math0"><strong>The Spin-Three Carrier and the Hermitian Form at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The carrier of label three carries two forms of different kinds: the complex bilinear trace form, indefinite of real signature $(7,7)$, and the Hermitian form $\operatorname{tr}(XY^{\dagger})$, which is positive definite. The article computes both and explains why the integer label guarantees the existence of the invariant symmetric form and of an invariant real structure.</p>
+<p><strong>The order of the article.</strong> The first section defines the Hermitian form and proves its positivity. The second computes its Gram matrix. The third treats the real structure attached to the integer label. The fourth compares the two forms and reads the real signature. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain</em> and <em>The Frobenius–Schur Indicator of the Module at $n=4$</em>. The row at order two is <em>The Spin-Zero Carrier and the Hermitian Form</em>.</p>
+<p><strong>The result in one line.</strong> The Hermitian form $\operatorname{tr}(XY^{\dagger})$ is positive definite on the septet, of complex dimension seven; the bilinear trace form has real signature $(7,7)$; both are invariant, and the integer label is what makes the symmetric invariant bilinear form exist.</p>
+<p><strong>Boundaries.</strong> The article treats the forms on the septet; the corresponding forms on the quintet are treated in the article on its trace form.</p>
+<h2 id="the-hermitian-form">The Hermitian Form</h2>
+<p><strong>Proposition.</strong> The form $\langle X,Y\rangle_{H}=\operatorname{tr}(XY^{\dagger})$ is Hermitian, positive definite on the algebra, and invariant under the conjugation action of the copy.</p>
+<p><em>Proof.</em> Linearity in the first argument and conjugate-linearity in the second follow from the trace; positivity follows from $\operatorname{tr}(XX^{\dagger})=\sum_{ij}|X_{ij}|^{2}$, which vanishes only for $X=0$; invariance follows from $\operatorname{tr}(\rho X\rho^{-1}(\rho Y\rho^{-1})^{\dagger})=\operatorname{tr}(XY^{\dagger})$ for unitary $\rho$.</p>
+<p><strong>Corollary.</strong> The restriction of the form to $V_3$ is positive definite, so the carrier is a Hilbert space of complex dimension seven.</p>
+<p><em>Proof.</em> A restriction of a positive definite form to a subspace is positive definite.</p>
+<p><strong>Corollary.</strong> The carriers are orthogonal for the Hermitian form as well, and each is a Hilbert summand of the algebra.</p>
+<p><em>Proof.</em> The isotypic components are orthogonal for any invariant form.</p>
+<p><strong>The reading.</strong> The septet carries a genuine Hilbert structure, unlike its bilinear trace form, which is indefinite.</p>
+<h2 id="the-gram-matrix">The Gram Matrix</h2>
+<p><strong>Proposition.</strong> In the basis of the weight vectors the Hermitian Gram matrix is diagonal with positive entries, the entry of the highest weight vector $E_{03}$ being one.</p>
+<p><em>Proof.</em> The weight vectors pair only with themselves for the Hermitian form, because the form is antilinear in the second argument and the weights are opposite; $E_{03}$ is a matrix unit, so $\operatorname{tr}(E_{03}E_{03}^{\dagger})=1$.</p>
+<p><strong>Corollary.</strong> The Hermitian form is a positive-definite diagonal form in the weight basis, and its determinant is a positive real number.</p>
+<p><em>Proof.</em> The Gram matrix is diagonal with positive entries.</p>
+<p><strong>Corollary.</strong> The form is not the complexification of a real bilinear form on a real subspace of dimension seven.</p>
+<p><em>Proof.</em> A real bilinear form would give a symmetric complex bilinear form; the Hermitian form is conjugate-symmetric, not symmetric.</p>
+<p><strong>The reading.</strong> The Hermitian form is the Euclidean metric of the septet, and the weight basis diagonalises it.</p>
+<h2 id="the-real-structure">The Real Structure</h2>
+<p><strong>Proposition.</strong> The label three being an integer, the Frobenius–Schur indicator of $V_3$ is $+1$: the carrier carries an invariant real structure $T$ with $T^{2}=+1$ and an invariant symmetric bilinear form, and the real form has dimension seven.</p>
+<p><em>Proof.</em> The indicator is $(-1)^{2j}=+1$ for the integer label; an invariant symmetric form and a real structure exist exactly in that case.</p>
+<p><strong>Corollary.</strong> The real form of the septet is the set of fixed points of $T$, of real dimension seven, and the trace form is real on it.</p>
+<p><em>Proof.</em> The fixed points of an anti-linear involution with $T^{2}=+1$ form a real form of half the real dimension, and the form takes real values there.</p>
+<p><strong>Corollary.</strong> The carrier is the real type carrier, in contrast with the module, which is quaternionic.</p>
+<p><em>Proof.</em> The indicator of the module is $(-1)^{3}=-1$, and that of the septet is $+1$.</p>
+<p><strong>The reading.</strong> The integer label is the reason the septet has a real form and an invariant symmetric form, while the module of half-integer label has neither.</p>
+<h2 id="the-two-forms-compared">The Two Forms Compared</h2>
+<p><strong>Proposition.</strong> The bilinear trace form on the septet is nondegenerate with real signature $(7,7)$, positive definite on the seven-real-dimensional Hermitian slice and negative definite on the slice multiplied by $i$, while the Hermitian form is positive definite on the whole carrier.</p>
+<p><em>Proof.</em> The Hermitian slice of the carrier is seven-real-dimensional and the trace form is positive definite there, being $\sum_{ij}|H_{ij}|^{2}$ for Hermitian $H$; on the slice multiplied by $i$ it is negative definite; the two slices are orthogonal and span the fourteen real dimensions.</p>
+<p><strong>Corollary.</strong> The two forms agree on the Hermitian slice and differ by the sign on the imaginary slice.</p>
+<p><em>Proof.</em> For Hermitian $H$ the two forms coincide, since $H^{\dagger}=H$; for $iH$ the trace form changes sign and the Hermitian form does not.</p>
+<p><strong>Corollary.</strong> The real form of the septet is a Euclidean space for the trace form, of dimension seven.</p>
+<p><em>Proof.</em> The trace form is positive definite on the Hermitian slice, which is a real form.</p>
+<p><strong>The reading.</strong> The septet is a Euclidean real space of dimension seven with a complexification of neutral signature, and the two forms encode the same positivity on the real slice.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the carrier introduction.</strong> That article identifies the carrier and its weights; this one computes its two forms.</p>
+<p><strong>Against the trace form of the quintet.</strong> The quintet's trace form is hyperbolic, and its isotropic cone is the nilpotent cone; the septet's Hermitian form is positive definite.</p>
+<p><strong>Against the module.</strong> The module has no invariant symmetric form at all, so no Hermitian form of this kind is available on it.</p>
+<h2 id="the-positivity-and-the-weight-string">The Positivity and the Weight String</h2>
+<p><strong>The positivity in the weight basis.</strong> The Hermitian form is diagonal in the weight basis with positive entries, so the weight vectors are orthogonal but not normalised; the normalisation of the highest weight vector is one, and the normalisations of the others are the squared norms of the matrix units.</p>
+<p><strong>The real slice and the weight string.</strong> On the Hermitian slice the trace form and the Hermitian form agree, and the weight string of the slice is the weight string of the carrier with the reality condition imposed; the seven real dimensions are spanned by the Hermitian combinations of the weight vectors and their partners.</p>
+<h2 id="the-slice-and-the-estimates">The Slice and the Estimates</h2>
+<p><strong>The size of the slice.</strong> The Hermitian slice of the carrier has seven real dimensions, one for each weight of the carrier, and it is a real form of the complex carrier; the trace form and the Hermitian form agree on it and are positive definite there.</p>
+<p><strong>The positivity estimate.</strong> For a Hermitian element the trace of the square is the sum of the squares of the four real eigenvalues, hence non-negative, and it vanishes only at the origin; the Hermitian form is the sum of the squares of the sixteen real and imaginary parts of the entries, so the two positive forms differ only by the restriction.</p>
+<p><strong>The comparison with the quintet.</strong> On the quintet the Hermitian slice is five-real-dimensional and the trace form has the spectrum $\{\pm a,\pm a,0\}$, so it is degenerate there; on the septet no zero eigenvalue occurs, and the slice is strictly positive.</p>
+<p><strong>The reading.</strong> The positivity of the septet's two forms on its real slice is the sharpest difference between the top carrier and the quintet, whose real slice is isotropic along a line.</p>
+<h2 id="summary">Summary</h2>
+<p>The Hermitian form $\operatorname{tr}(XY^{\dagger})$ is positive definite and invariant on the septet, of complex dimension seven, with a diagonal Gram matrix in the weight basis and value one on the highest weight vector $E_{03}$.</p>
+<p>The integer label gives the carrier a real structure and an invariant symmetric bilinear form; the trace form is nondegenerate of real signature $(7,7)$ and is positive definite on the seven-real-dimensional Hermitian slice.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}(XY^{\dagger})$</td>
+<td>the Hermitian form</td>
+</tr>
+<tr>
+<td>$T^{2}=+1$</td>
+<td>the real structure of the septet</td>
+</tr>
+<tr>
+<td>$(7,7)$</td>
+<td>the real signature of the trace form</td>
+</tr>
+<tr>
+<td>$7$</td>
+<td>the real dimension of the form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-three-carrier-of-m4c.html">Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain</a>, for the carrier.</li>
+<li><a href="the-spin-three-carrier-and-the-rank-strata-at-n-4.html">The Spin-Three Carrier and the Rank Strata at $n=4$</a>, for the ranks.</li>
+<li><a href="the-spin-three-carrier-and-the-spectral-strata-at-n-4.html">The Spin-Three Carrier and the Spectral Strata at $n=4$</a>, for the spectra.</li>
+<li><a href="the-spin-two-carrier-and-the-trace-form-at-n-4.html">The Spin-Two Carrier and the Trace Form at $n=4$</a>, for the comparison.</li>
+<li><a href="the-frobenius-schur-indicator-of-the-module-at-n-4.html">The Frobenius–Schur Indicator of the Module at $n=4$</a>, for the indicator.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

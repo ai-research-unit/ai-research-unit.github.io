@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. A minimal left ideal of the matrix algebra is a left ideal of dimension four, and every such ideal is isomorphic, as a module of the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-minimal-left-ideals-of-math0-and-the-module-math1"><strong>The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> A minimal left ideal of the matrix algebra is a left ideal of dimension four, and every such ideal is isomorphic, as a module of the principal copy, to the module $V_{3/2}$. The ideal is therefore the place inside the algebra where the half-integer label lives, and the article proves this in three steps: the dimension, the weights, and the isomorphism.</p>
+<p><strong>The order of the article.</strong> The first section builds the ideals from rank-one idempotents and proves that they have dimension four. The second computes the weights of the left multiplication on an ideal and finds them to be the weights of the module. The third proves the isomorphism. The fourth exhibits the exterior cube as a second model. The fifth states the boundary with the conjugation decomposition.</p>
+<p><strong>It assumes</strong> <em>The Matrix Algebra $M_4(\mathbb{C})$</em> and the article on the principal copy, <em>The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</em>, for the generators. The row at order two is <em>The Minimal Left Ideals of the Biquaternion Algebra</em>.</p>
+<p><strong>The result in one line.</strong> $M_4P\cong V_{3/2}$ for every rank-one idempotent $P$, with the weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$ supplied by the left multiplication; hence the label $\tfrac32$ occurs in the algebra, but only on the one-sided side.</p>
+<p><strong>Boundaries.</strong> The article does not treat the two-sided objects; they are <em>The Two-Sided Operators and the Segre Cone at $n=4$</em>. It does not treat the exterior cube except for one proposition; that is <em>The Exterior Cube Isomorphism $\Lambda^3V\cong V$ and $M_4(\mathbb{C})$ as $V\otimes V$</em>.</p>
+<h2 id="the-ideals-from-idempotents">The Ideals from Idempotents</h2>
+<p><strong>Definition.</strong> An element $P\in M_4(\mathbb{C})$ is a <strong>rank-one idempotent</strong> when $P^{2}=P$ and $\operatorname{rank}P=1$. The <strong>left ideal</strong> attached to it is $M_4P=\{XP:X\in M_4(\mathbb{C})\}$.</p>
+<p><strong>Proposition.</strong> $M_4P$ is a left ideal of dimension four, and it is minimal: it contains no nonzero left ideal smaller than itself.</p>
+<p><em>Proof.</em> For $A\in M_4$ and $XP\in M_4P$ one has $A(XP)=(AX)P\in M_4P$, so it is a left ideal. The map $X\mapsto XP$ has kernel the matrices vanishing on the image of $P$, of dimension twelve, so the image has dimension $16-12=4$. For minimality, let $J\subsetneq M_4P$ be a nonzero left ideal and pick $0\neq Y\in J$; since $Y=YP$, the matrix $Y$ has rank one and the same image as $P$, so $M_4Y=M_4P$ and $J=M_4P$.</p>
+<p><strong>Corollary.</strong> $M_4P=\{X:\operatorname{im}X\subseteq\operatorname{im}P\}$.</p>
+<p><em>Proof.</em> $XP$ has image inside the image of $P$, and conversely a matrix whose image lies in the line of $P$ and which annihilates the kernel of $P$ is fixed by $P$ on the right.</p>
+<p><strong>Corollary.</strong> $M_4P$ depends only on the image of $P$, and the map $P\mapsto M_4P$ from rank-one idempotents to minimal left ideals is onto and has fibres of dimension three.</p>
+<p><em>Proof.</em> The first claim is the previous corollary. For the fibre, the idempotents with image the line $\mathbb{C}v$ are the maps $P=vw^{\mathsf T}$ with $w^{\mathsf T}v=1$, an affine hyperplane of the dual space, of dimension three.</p>
+<p><strong>Corollary.</strong> The minimal left ideals are parametrised by the lines of $\mathbb{C}^4$, that is, by $\mathbb{P}^3$.</p>
+<p><em>Proof.</em> Each ideal is $M_4P$ for the line $\operatorname{im}P$, and distinct lines give distinct ideals, since the two ideals contain matrices with different images.</p>
+<h2 id="the-weights-on-an-ideal">The Weights on an Ideal</h2>
+<p><strong>Definition.</strong> Let $J_z$ be the diagonal generator of the copy in the weight basis, and let $L_{J_z}$ be the left multiplication $X\mapsto J_zX$.</p>
+<p><strong>Proposition.</strong> With $P$ the idempotent of image the first coordinate line, $M_4P$ has the basis $E_{00},E_{10},E_{20},E_{30}$ and $L_{J_z}$ acts on $E_{i0}$ by the eigenvalue $m_i$, where $m_0,m_1,m_2,m_3$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$.</p>
+<p><em>Proof.</em> $E_{i0}$ has a single nonzero entry, in row $i$ and column $0$. Left multiplication by the diagonal matrix $J_z$ multiplies that row by the diagonal entry $m_i$, so $J_zE_{i0}=m_iE_{i0}$.</p>
+<p><strong>Corollary.</strong> The weights of $L_{J_z}$ on $M_4P$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, each once.</p>
+<p><em>Proof.</em> The four basis vectors have the four distinct eigenvalues displayed.</p>
+<p><strong>The contrast with the adjoint action.</strong> On the whole algebra the adjoint action of $J_z$, $X\mapsto J_zX-XJ_z$, has the integer eigenvalues $m_i-m_j$, because a matrix element in row $i$ and column $j$ is multiplied by $m_i-m_j$. On the ideal the action is one-sided, only the row index contributes, and the eigenvalues are half-integers.</p>
+<p><em>Proof.</em> $(J_zX-XJ_z)_{ij}=(m_i-m_j)X_{ij}$, while $(J_zX)_{ij}=m_iX_{ij}$.</p>
+<p><strong>Corollary.</strong> The adjoint weights on the algebra are all integers, so the half-integer weights of the ideal belong to the one-sided action only.</p>
+<p><em>Proof.</em> The adjoint eigenvalues are differences of half-integers.</p>
+<h2 id="the-isomorphism-with-the-module">The Isomorphism with the Module</h2>
+<p><strong>Proposition.</strong> $M_4P$ is irreducible as a module of the copy under left multiplication.</p>
+<p><em>Proof.</em> A submodule is the sum of the weight lines it contains. The lowering operator $L_{J_-}$ sends $E_{00}$ to $\sqrt3E_{10}$, then $E_{10}$ to $2E_{20}$, then $E_{20}$ to $\sqrt3E_{30}$, and kills $E_{30}$; the coefficients are the same as in the module. A submodule containing the top weight contains all four, and a nonzero submodule not containing the top weight is not stable under $L_{J_+}$, since $L_{J_+}$ raises the weight.</p>
+<p><strong>Theorem.</strong> $M_4P\cong V_{3/2}$ as modules of the copy, for every rank-one idempotent $P$.</p>
+<p><em>Proof.</em> Both spaces are irreducible, of dimension four, and have a vector of weight $\tfrac32$: $E_{00}$ in the ideal and $u^3$ in the module. An irreducible module of highest weight $j$ is determined up to isomorphism by $j$, so the two are isomorphic; the isomorphism sends $E_{k0}$ to the weight vector of weight $m_k$.</p>
+<p><strong>Corollary.</strong> The label of every minimal left ideal is $\tfrac32$, and it is the same for all of them, although the ideals themselves are distinct subspaces.</p>
+<p><em>Proof.</em> The theorem applies to every $P$, and the ideals for different lines are different subspaces of the algebra even though they are isomorphic as modules.</p>
+<p><strong>Corollary.</strong> The dimension count agrees: $4=2\cdot\tfrac32+1$ on both sides.</p>
+<p><em>Proof.</em> The highest weight is $\tfrac32$ and the dimension is four.</p>
+<h2 id="the-exterior-cube-as-a-second-model">The Exterior Cube as a Second Model</h2>
+<p><strong>Proposition.</strong> The exterior cube $\Lambda^3V$ has dimension four, and its weights are the weights of $V$.</p>
+<p><em>Proof.</em> A basis of $\Lambda^3V$ is given by the four triples of distinct weights, that is, by omitting one weight from the set $\{\tfrac32,\tfrac12,-\tfrac12,-\tfrac32\}$. The weight of such a triple is the sum of its three members, which equals minus the omitted weight, since the total of the four weights is zero. The multiset of weights of the cube is therefore the same as that of $V$.</p>
+<p><strong>Corollary.</strong> $\Lambda^3V\cong V$ as modules, and the highest weight vector of the cube is the triple omitting the lowest weight.</p>
+<p><em>Proof.</em> Same dimension, same multiset of weights with multiplicity one, and the highest weight $\tfrac32$ occurs.</p>
+<p><strong>Corollary.</strong> The dual of $V$ is isomorphic to $V$, and the exterior cube realises the duality together with the invariant alternating form of order four.</p>
+<p><em>Proof.</em> The pairing $\Lambda^3V\otimes V\to\Lambda^4V\cong\mathbb{C}$ is perfect, so $\Lambda^3V\cong V^{*}$; the module is self-dual through its invariant Hermitian form, so $V^{*}\cong V$.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the summands.</strong> The conjugation decomposition of the algebra is the sum of $V_3,V_2,V_1,V_0$, of dimensions $7,5,3,1$, and every label is an integer. The ideal $M_4P$ has label $\tfrac32$ and is not one of the summands; it is not even stable under conjugation, since conjugation carries it to another ideal, as the article on the missing label proves.</p>
+<p><strong>Against the two-sided operators.</strong> The two-sided operators act on the algebra and their rank layer is computed elsewhere; the left ideal is a subspace of the algebra and not an operator on it. The two objects are different in kind: one is a space of states, the other is a map.</p>
+<p><strong>Against the module.</strong> The module $V_{3/2}$ is the abstract carrier; the ideal is a concrete copy of it inside the algebra. The copy exists for each line of $\mathbb{C}^4$, so the algebra contains a $\mathbb{P}^3$-family of copies of its own spin module.</p>
+<h2 id="summary">Summary</h2>
+<p>A rank-one idempotent $P$ produces a minimal left ideal $M_4P$ of dimension four. The left multiplication by the diagonal generator has the eigenvalues $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$ on the basis $E_{00},E_{10},E_{20},E_{30}$, so the ideal carries the weights of the module and is isomorphic to $V_{3/2}$.</p>
+<p>The ideals depend only on the image of the idempotent and are therefore parametrised by the lines of $\mathbb{C}^4$, that is, by $\mathbb{P}^3$; the idempotents themselves form a three-dimensional affine space over each line. The exterior cube is a second model of the same module, with the weights of the cube equal to the weights of the module because the total weight is zero.</p>
+<p>The half-integer label is therefore present inside the algebra, and only in the one-sided objects: the adjoint action has integer weights, the summands have integer labels, and the ideal is a copy of $V_{3/2}$ on which only the left multiplication acts.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P$</td>
+<td>a rank-one idempotent, $P^{2}=P$, $\operatorname{rank}P=1$</td>
+</tr>
+<tr>
+<td>$M_4P$</td>
+<td>the minimal left ideal, dimension four</td>
+</tr>
+<tr>
+<td>$L_{J_z}$</td>
+<td>the left multiplication by the diagonal generator</td>
+</tr>
+<tr>
+<td>$E_{ij}$</td>
+<td>the matrix unit</td>
+</tr>
+<tr>
+<td>$\Lambda^3V$</td>
+<td>the exterior cube of the module</td>
+</tr>
+<tr>
+<td>$\mathbb{P}^3$</td>
+<td>the projective space of lines of $\mathbb{C}^4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html">The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</a>, for the generators and the two kernels.</li>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle-at-n-4.html">The Four Weights of the Module and the Half Angle at $n=4$</a>, for the weights of the abstract module.</li>
+<li><a href="the-exterior-cube-isomorphism-lambda-3-v-v-and-m4c-as-v-tensor-v.html">The Exterior Cube Isomorphism $\Lambda^3V\cong V$ and $M_4(\mathbb{C})$ as $V\otimes V$</a>, for the second model.</li>
+<li><a href="the-minimal-left-ideals-of-the-biquaternion-algebra.html">The Minimal Left Ideals of the Biquaternion Algebra</a>, for the row at order two.</li>
+<li><a href="the-minimal-one-sided-ideals-conjugation-and-the-missing-label.html">The Minimal One-Sided Ideals, Conjugation and the Missing Label</a>, for the proof that no ideal is a summand.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The algebra of order four is the tensor square of its own spin module, and the tensor square of the module of label decomposes into four…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-clebschgordan-decomposition-of-math0-math1"><strong>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The algebra of order four is the tensor square of its own spin module, and the tensor square of the module of label $\tfrac32$ decomposes into four irreducible pieces of labels $3,2,1,0$. The article proves the identification, computes the four summands with their dimensions, and expresses the projectors as polynomials in the Casimir.</p>
+<p><strong>The order of the article.</strong> The first section identifies the algebra with $V\otimes V^{*}$ and then with $V\otimes V$. The second applies the Clebsch–Gordan rule and counts dimensions. The third checks the result on weights. The fourth records the Casimir spectrum and the projectors. The fifth states the general rule at order $n$ and draws the boundary with the articles on the individual carriers.</p>
+<p><strong>It assumes</strong> <em>The Four Weights of the Module and the Half Angle at $n=4$</em> for the weight basis and <em>The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</em> for the copy. The row at order two is <em>The Clebsch–Gordan Decomposition of the Biquaternion Algebra</em>.</p>
+<p><strong>The result in one line.</strong> $M_4(\mathbb{C})\cong V_{3/2}\otimes V_{3/2}\cong V_3\oplus V_2\oplus V_1\oplus V_0$ with dimensions $7+5+3+1=16$, each summand occurring once.</p>
+<p><strong>Boundaries.</strong> The article proves the decomposition and computes the Casimir; it does not describe the individual carriers in detail, which is the business of the four articles on $V_3,V_2,V_1,V_0$. It does not treat the product of two carriers, which is not a carrier and is the subject of <em>The Truncated Rule</em>.</p>
+<h2 id="the-algebra-as-a-tensor-square">The Algebra as a Tensor Square</h2>
+<p><strong>Proposition.</strong> For every finite-dimensional $V$ there is a canonical isomorphism $\operatorname{End}(V)\cong V\otimes V^{*}$, and under it the conjugation action of $G$ on $\operatorname{End}(V)$ becomes the action on $V\otimes V^{*}$.</p>
+<p><em>Proof.</em> The map sends $u\otimes\lambda$ to the operator $x\mapsto\lambda(x)u$; it is bilinear and has the right dimension. Conjugation by $\rho(g)$ sends $\lambda(x)u$ to $(\lambda\circ\rho(g)^{-1})(x)\,\rho(g)u$, which is the tensor action.</p>
+<p><strong>Corollary.</strong> At $n=4$ one has $M_4(\mathbb{C})\cong V\otimes V^{*}$ with $V=V_{3/2}$.</p>
+<p><em>Proof.</em> $V$ is the defining module of the copy and $\operatorname{End}(V)=M_4(\mathbb{C})$.</p>
+<p><strong>Proposition.</strong> $V^{*}\cong V$ as modules of the copy, through the invariant Hermitian form, so that $M_4(\mathbb{C})\cong V\otimes V$.</p>
+<p><em>Proof.</em> The module carries a positive definite invariant form, since the copy is compact and the module is irreducible; the form identifies $V$ with its dual and is invariant, hence equivariant.</p>
+<p><strong>Corollary.</strong> The conjugation action on the algebra is the tensor product of the module with itself.</p>
+<p><em>Proof.</em> The two propositions composed.</p>
+<h2 id="the-rule">The Rule</h2>
+<p><strong>Theorem.</strong> $V_{3/2}\otimes V_{3/2}\cong V_3\oplus V_2\oplus V_1\oplus V_0$, each summand occurring exactly once, with complex dimensions $7,5,3,1$.</p>
+<p><em>Proof.</em> The Clebsch–Gordan rule for $SU(2)$ states that $V_j\otimes V_k=\bigoplus_{m=|j-k|}^{j+k}V_m$ with each $m$ occurring once. With $j=k=\tfrac32$ the labels run over $3,2,1,0$. The dimensions are $2m+1$ for $m=3,2,1,0$, and their sum is $7+5+3+1=16=\dim M_4(\mathbb{C})$, which checks the count.</p>
+<p><strong>Corollary.</strong> The algebra splits into four irreducible invariant subspaces of complex dimensions $7,5,3,1$ and real dimensions $14,10,6,2$.</p>
+<p><em>Proof.</em> The theorem, and the real dimension of a complex space of dimension $d$ is $2d$.</p>
+<p><strong>Corollary.</strong> The traceless part is $V_3\oplus V_2\oplus V_1$, of dimension $15$, and the centre is $V_0$.</p>
+<p><em>Proof.</em> The trace is invariant and vanishes on the three summands of dimension $7,5,3$; the scalars are the one-dimensional invariant subspace on which the trace does not vanish.</p>
+<p><strong>Corollary.</strong> The four labels are $0,1,2,3$: three integers below the label of the module and one equal to nothing in the module.</p>
+<p><em>Proof.</em> The labels displayed in the theorem; the module has label $\tfrac32$, which is not among them.</p>
+<h2 id="the-check-on-weights">The Check on Weights</h2>
+<p><strong>Proposition.</strong> The weights of $V\otimes V$ are the sixteen sums $m+m'$ of two weights of $V$, and their multiset is</p>
+<p>$$
+3,\;2,\;1,\;0,\;0,\;-1,\;-2,\;-3
+$$</p>
+<p>together with $2,\;1,\;0,\;-1,\;-2$ and $1,\;0,\;-1$ and $0$.</p>
+<p><em>Proof.</em> The weights of $V$ are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$; the sums of two of them are $3$ (once), $2$ (twice), $1$ (three times), $0$ (four times), and symmetrically. Reading the multiset $3,2,2,1,1,1,0,0,0,0,-1,-1,-1,-2,-2,-3$ as the strings $3,2,1,0,-1,-2,-3$; $2,1,0,-1,-2$; $1,0,-1$; $0$ gives the four carriers.</p>
+<p><strong>Corollary.</strong> The multiset of weights of the algebra is $0^{4},\pm1^{3},\pm2^{2},\pm3$, and the four strings read from the top are exactly the four labels $3,2,1,0$.</p>
+<p><em>Proof.</em> The proposition, counted by multiplicity.</p>
+<p><strong>Corollary.</strong> The decomposition is visible in the weights alone: the highest weight $3$ occurs once, so exactly one summand of label $3$ is present; after removing its string the next highest weight $2$ occurs twice, one of which belongs to the same summand, and so on.</p>
+<p><em>Proof.</em> The strings of $V_3,V_2,V_1,V_0$ contain $3$ once, $2$ once, $1$ once, $0$ once at their tops, and the remaining copies are accounted for by the lower members.</p>
+<h2 id="the-casimir-and-the-projectors">The Casimir and the Projectors</h2>
+<p><strong>Definition.</strong> The <strong>Casimir element</strong> of the copy acting on the algebra is $C=-\sum_{i}\operatorname{ad}_{J_i}^{2}$, where $J_1,J_2,J_3$ are the three Hermitian generators.</p>
+<p><strong>Proposition.</strong> $C$ acts on the summand of label $k$ by the scalar $k(k+1)$, so its spectrum on the algebra is $0,2,6,12$ with multiplicities $1,3,5,7$, computed to a residual of order $10^{-15}$.</p>
+<p><em>Proof.</em> The Casimir of $\mathfrak{su}_2$ acts on the irreducible module of highest weight $k$ by $k(k+1)$; the multiplicities are the dimensions $2k+1$. The numerical diagonalisation of the sixteen-by-sixteen matrix $C$ gives the four eigenvalues with the stated multiplicities.</p>
+<p><strong>Corollary.</strong> The four summands are the eigenspaces of $C$, and each is the range of the Lagrange projector</p>
+<p>$$
+\Pi_k=\prod_{l\neq k}\frac{C-l(l+1)}{k(k+1)-l(l+1)},\qquad k=0,1,2,3,
+$$</p>
+<p>which is idempotent, Hermitian, and of trace $2k+1$.</p>
+<p><em>Proof.</em> A polynomial in $C$ acts on the eigenspace of eigenvalue $k(k+1)$ by the value at that point; the Lagrange polynomial with value one there and zero at the other three eigenvalues gives the projector. The trace is the dimension of the range.</p>
+<p><strong>Corollary.</strong> The four projectors sum to the identity and are mutually orthogonal, and their traces sum to $1+3+5+7=16$.</p>
+<p><em>Proof.</em> The Lagrange polynomials sum to one on the spectrum, and the ranges are the eigenspaces.</p>
+<p><strong>The numerical check.</strong> Applying $\Pi_k$ to a random element of the algebra and then applying the Casimir reproduces the element multiplied by $k(k+1)$ to a residual of order $10^{-15}$, and the composition $\Pi_k\Pi_l$ vanishes for $k\neq l$ to the same order.</p>
+<p><em>Proof.</em> The two matrices are polynomials in one matrix, so they commute and act diagonally in the same basis.</p>
+<h2 id="the-general-rule">The General Rule</h2>
+<p><strong>Proposition.</strong> At order $n$ the module is $V_{(n-1)/2}$ and the algebra is $\bigoplus_{k=0}^{n-1}V_k$, with $\sum_{k=0}^{n-1}(2k+1)=n^{2}$.</p>
+<p><em>Proof.</em> The tensor square of $V_j$ with $2j=n-1$ decomposes into the labels $0,1,\dots,2j=n-1$, and the dimensions sum to $n^{2}$, which is the dimension of the algebra.</p>
+<p><strong>Corollary.</strong> At $n=2$ the decomposition is $V_1\oplus V_0$ of dimensions $3+1=4$; at $n=3$ it is $V_2\oplus V_1\oplus V_0$ of dimensions $5+3+1=9$; at $n=4$ it is the four summands of the theorem.</p>
+<p><em>Proof.</em> The proposition at the three orders.</p>
+<p><strong>Corollary.</strong> The number of summands is $n$ and the labels are $0,\dots,n-1$; the module's label is $\tfrac{n-1}{2}$, which is a summand label exactly when $n$ is odd.</p>
+<p><em>Proof.</em> The labels displayed; $\tfrac{n-1}{2}$ is an integer exactly for odd $n$.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the carriers.</strong> The four summands are the four carriers, and each has its own article: <em>The Spin-Three Carrier</em>, <em>Introduction to the Spin-Two Carrier</em>, <em>The Spin-One Carrier</em> and <em>The Spin-Zero Carrier</em>. The present article proves that the list is complete and that each occurs once.</p>
+<p><strong>Against the product of carriers.</strong> The product of two summands is not a summand; it is a subspace whose projection on the summands is computed in <em>The Truncated Rule: the Product of Two Carriers Is Not a Carrier</em>. The decomposition is a decomposition of the space and not of the algebra as an algebra.</p>
+<p><strong>Against the module.</strong> The module has label $\tfrac32$ and appears in the algebra only as a minimal left ideal, not as a summand, as <em>Where the Half-Integers Go in $M_4(\mathbb{C})$</em> explains.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra is $\operatorname{End}(V)\cong V\otimes V^{*}\cong V\otimes V$ with $V=V_{3/2}$, and the Clebsch–Gordan rule for the tensor square of the label $\tfrac32$ gives $V_3\oplus V_2\oplus V_1\oplus V_0$ with dimensions $7+5+3+1=16$, each summand once. The traceless part is the sum of the first three, of dimension fifteen, and the centre is the last.</p>
+<p>The weights of the algebra are the sixteen sums of two weights of the module, with multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$, and the four strings read from the top are the four labels. The Casimir acts by $k(k+1)$, with spectrum $0,2,6,12$ and multiplicities $1,3,5,7$; the projectors are the Lagrange polynomials in the Casimir, and they are idempotent, Hermitian, orthogonal and of traces $1,3,5,7$.</p>
+<p>At order $n$ the decomposition is $\bigoplus_{k=0}^{n-1}V_k$ with $\sum(2k+1)=n^{2}$, and the module's label is a summand label exactly when $n$ is odd.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V=V_{3/2}$</td>
+<td>the module, complex dimension four</td>
+</tr>
+<tr>
+<td>$V_k$</td>
+<td>the carrier of label $k$, dimension $2k+1$</td>
+</tr>
+<tr>
+<td>$C=-\sum_i\operatorname{ad}_{J_i}^{2}$</td>
+<td>the Casimir of the conjugation action</td>
+</tr>
+<tr>
+<td>$\Pi_k$</td>
+<td>the projector onto the carrier of label $k$</td>
+</tr>
+<tr>
+<td>$0^{4},\pm1^{3},\pm2^{2},\pm3$</td>
+<td>the weight multiset of the algebra</td>
+</tr>
+<tr>
+<td>$n^{2}$</td>
+<td>the sum of the dimensions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-decomposition-of-m4c.html">The Spin Decomposition of $M_4(\mathbb{C})$: Four Carriers and the Weight Multiset</a>, for the weight strings.</li>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle-at-n-4.html">The Four Weights of the Module and the Half Angle at $n=4$</a>, for the weights of the module.</li>
+<li><a href="the-truncated-rule-the-product-of-two-carriers-at-n-4.html">The Truncated Rule: the Product of Two Carriers Is Not a Carrier</a>, for the product.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html">The Clebsch–Gordan Decomposition of the Biquaternion Algebra</a>, for the row at order two.</li>
+<li><a href="where-the-half-integers-go-in-m4c.html">Where the Half-Integers Go in $M_4(\mathbb{C})$</a>, for the label $\tfrac32$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

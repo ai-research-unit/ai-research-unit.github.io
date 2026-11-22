@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The symmetric square of the module has dimension ten and the alternating square has dimension six, and each decomposes into two carriers. The…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-parity-rule-math0-and-math1"><strong>The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The symmetric square of the module has dimension ten and the alternating square has dimension six, and each decomposes into two carriers. The symmetric square keeps the labels of the parity of $2j$ and the alternating square keeps the others; that is the whole content of the rule.</p>
+<p><strong>The order of the article.</strong> The first section states the two decompositions and counts dimensions. The second computes the weights of the two squares and matches them with the carriers. The third proves the parity criterion. The fourth compares with the tensor square and with the algebra. The fifth treats the row at order two and draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Four Weights of the Module and the Half Angle at $n=4$</em> for the weights and <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the labels. The row at order two is <em>The Parity Rule: the Two Squares of the Module</em>.</p>
+<p><strong>The result in one line.</strong> $\operatorname{Sym}^{2}V_{3/2}=V_3\oplus V_1$ with $10=7+3$, and $\Lambda^{2}V_{3/2}=V_2\oplus V_0$ with $6=5+1$.</p>
+<p><strong>Boundaries.</strong> The article treats the two squares as modules; it does not treat the symmetric and alternating <em>halves of the algebra</em>, which are cut by the transpose and are the subject of <em>Neither Half Is Invariant</em>. It does not treat the products of carriers, which is <em>The Truncated Rule</em>.</p>
+<h2 id="the-two-decompositions">The Two Decompositions</h2>
+<p><strong>Theorem.</strong> $\operatorname{Sym}^{2}V\cong V_3\oplus V_1$ and $\Lambda^{2}V\cong V_2\oplus V_0$, with complex dimensions $10=7+3$ and $6=5+1$.</p>
+<p><em>Proof.</em> The Clebsch–Gordan rule gives $V\otimes V=\bigoplus_{k=0}^{3}V_k$. The symmetric part of the tensor square of an irreducible module of label $j$ contains the labels $k$ with $2j-k$ even, and the alternating part the labels with $2j-k$ odd; with $2j=3$ the even case gives $k=3,1$ and the odd case $k=2,0$. The dimensions add up: $\dim\operatorname{Sym}^{2}V=10$ and $\dim\Lambda^{2}V=6$, and $7+3=10$, $5+1=6$.</p>
+<p><strong>Corollary.</strong> The four labels are split two and two between the squares, and no label occurs in both.</p>
+<p><em>Proof.</em> The parities of $2j-k$ for the four labels are $0,1,0,1$.</p>
+<p><strong>Corollary.</strong> Each square is a sum of exactly two carriers, and each carrier occurs in exactly one square.</p>
+<p><em>Proof.</em> The theorem, and the four labels are distinct.</p>
+<p><strong>The check on dimensions.</strong> $\dim\operatorname{Sym}^{2}V=4\cdot5/2=10$ and $\dim\Lambda^{2}V=4\cdot3/2=6$, and the sums of the carrier dimensions agree.</p>
+<p><em>Proof.</em> The two binomial counts.</p>
+<h2 id="the-weights-of-the-two-squares">The Weights of the Two Squares</h2>
+<p><strong>Proposition.</strong> The weights of $\operatorname{Sym}^{2}V$ are the ten sums $m+m'$ with $m\le m'$, namely $3,2,1,0,-1,-2,-3$ together with $1,0,-1$; the weights of $\Lambda^{2}V$ are the six sums with $m<m'$, namely $2,1,0,-1,-2$ together with $0$.</p>
+<p><em>Proof.</em> The weights of the symmetric square are the sums over unordered pairs with repetition and the weights of the alternating square the sums over unordered pairs without repetition; with the weights $\pm\tfrac32,\pm\tfrac12$ the sums are as displayed.</p>
+<p><strong>Corollary.</strong> The multiset of $\operatorname{Sym}^{2}V$ is $3,2,1,1,0,0,-1,-1,-2,-3$, which is the union of the strings $3,2,1,0,-1,-2,-3$ and $1,0,-1$.</p>
+<p><em>Proof.</em> The proposition, read as a multiset.</p>
+<p><strong>Corollary.</strong> The multiset of $\Lambda^{2}V$ is $2,1,0,0,-1,-2$, which is the union of the strings $2,1,0,-1,-2$ and $0$.</p>
+<p><em>Proof.</em> The same reading.</p>
+<p><strong>The check against the tensor square.</strong> The union of the two multisets is the multiset of $V\otimes V$, of sixteen weights, with each symmetric weight once and each alternating weight once; the two squares are complementary inside the tensor square.</p>
+<p><em>Proof.</em> The sums with repetition and without partition the sixteen ordered sums.</p>
+<h2 id="the-parity-criterion">The Parity Criterion</h2>
+<p><strong>Proposition.</strong> In the tensor square of $V_j$, the label $k$ occurs in $\operatorname{Sym}^{2}$ exactly when $2j-k$ is even, and in $\Lambda^{2}$ exactly when $2j-k$ is odd.</p>
+<p><em>Proof.</em> In the tensor square, the flip of the two factors acts on the summand of label $k$ by the sign $(-1)^{2j-k}$; that is the standard computation with the highest weight vector, since the flip exchanges the two factors and the summand of label $2j$ is the symmetric one. A summand with sign $+1$ lies in the symmetric square and one with sign $-1$ in the alternating square.</p>
+<p><strong>Corollary.</strong> At $2j=3$ the symmetric square carries $k=3$ and $k=1$ and the alternating square carries $k=2$ and $k=0$.</p>
+<p><em>Proof.</em> $3-k$ is even for $k=3,1$ and odd for $k=2,0$.</p>
+<p><strong>Corollary.</strong> The parity of $k$ relative to $2j$ is the only thing the two squares select: the sizes $2k+1$ are not involved in the criterion.</p>
+<p><em>Proof.</em> The sign $(-1)^{2j-k}$ depends only on the parity of $2j-k$.</p>
+<p><strong>The reading.</strong> The symmetric square keeps the labels of the same parity as the top label and the alternating square the others. At half-integer $j$ the top label is a half-integer, and so the integer labels split by their own parity; at integer $j$ the top label is an integer and the rule keeps the even labels symmetric.</p>
+<p><em>Proof.</em> The criterion with $2j$ odd and with $2j$ even.</p>
+<h2 id="the-comparison-with-the-other-squares">The Comparison with the Other Squares</h2>
+<p><strong>Against the tensor square.</strong> The tensor square is the sum of the two squares, and its eight labels, counted with multiplicity, are the four carriers with multiplicities: $V_3$ and $V_1$ once each from the symmetric square, $V_2$ and $V_0$ once each from the alternating square.</p>
+<p><strong>Against the algebra.</strong> The algebra is the tensor square of the module, and its four carriers are the same four labels; the squares of the module are not subspaces of the algebra in a natural way, since the module is not a subspace of its own tensor square.</p>
+<p><strong>Against the carriers of the algebra.</strong> The carrier $V_2$ of the algebra is the alternating square of the module minus the centre, and the carrier $V_3$ is the symmetric square minus the triplet; the two readings of the same label are different spaces.</p>
+<h2 id="the-row-at-order-two">The Row at Order Two</h2>
+<p><strong>Proposition.</strong> At $n=2$ the module is $V_{1/2}$ and $\operatorname{Sym}^{2}V_{1/2}=V_1$, $\Lambda^{2}V_{1/2}=V_0$, with dimensions $3$ and $1$.</p>
+<p><em>Proof.</em> The weights are $\pm\tfrac12$; the symmetric square has the sums $1,0,-1$ and dimension three, the alternating square has the sum $0$ and dimension one; the criterion gives $2j-k$ even for $k=1$ and odd for $k=0$.</p>
+<p><strong>Corollary.</strong> The mechanism is the same at the two rows: the symmetric square keeps the labels of the parity of $2j$ and the alternating square the others.</p>
+<p><em>Proof.</em> The criterion does not depend on the order.</p>
+<p><strong>The reading.</strong> At $n=2$ the alternating square is one-dimensional, the scalars, and the symmetric square is the triplet; at $n=4$ the alternating square has two pieces and the symmetric square two. The parity rule is the same rule and the sizes differ.</p>
+<h2 id="the-check-of-the-signs">The Check of the Signs</h2>
+<p><strong>The symmetry.</strong> The tensor square of the module splits into the symmetric and the alternating parts, and the two parts are the eigenspaces of the exchange operator with eigenvalues $+1$ and $-1$; the highest weight of the symmetric part is the sum of the two highest weights and that of the alternating part is the sum minus one, which is the origin of the parity rule.</p>
+<p><strong>The labels.</strong> The symmetric part carries the labels of the same parity as twice the label of the module, and the alternating part the others; the module has twice the label equal to three, an odd number, so the symmetric part carries the even labels and the alternating part the odd ones, read in the other convention.</p>
+<p><strong>The dimensions.</strong> The two parts have dimensions ten and six, and the four carriers are distributed as seven plus three and five plus one; the check is that the two sums add to the dimension of the tensor square, which is the square of the dimension of the module.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric square of the module is $V_3\oplus V_1$, of dimension $10=7+3$, and the alternating square is $V_2\oplus V_0$, of dimension $6=5+1$. The weights confirm the decomposition: the symmetric square has $3,2,1,0,-1,-2,-3$ together with $1,0,-1$, and the alternating square has $2,1,0,-1,-2$ together with $0$.</p>
+<p>The criterion is the parity of $2j-k$: the flip of the two factors acts on the summand of label $k$ by $(-1)^{2j-k}$, so the symmetric square keeps the labels of the parity of $2j$ and the alternating square the others. At $2j=3$ that gives $3,1$ and $2,0$.</p>
+<p>At order two the same criterion gives $\operatorname{Sym}^{2}V_{1/2}=V_1$ and $\Lambda^{2}V_{1/2}=V_0$; the sizes change with the order and the rule does not.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V=V_{3/2}$</td>
+<td>the module</td>
+</tr>
+<tr>
+<td>$\operatorname{Sym}^{2}V$</td>
+<td>the symmetric square, dimension ten</td>
+</tr>
+<tr>
+<td>$\Lambda^{2}V$</td>
+<td>the alternating square, dimension six</td>
+</tr>
+<tr>
+<td>$(-1)^{2j-k}$</td>
+<td>the sign of the flip on the summand of label $k$</td>
+</tr>
+<tr>
+<td>$2j=3$</td>
+<td>the top label</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the labels of the tensor square.</li>
+<li><a href="neither-half-is-invariant-the-cartan-element-at-n-4.html">Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</a>, for the halves of the algebra.</li>
+<li><a href="the-truncated-rule-the-product-of-two-carriers-at-n-4.html">The Truncated Rule: the Product of Two Carriers Is Not a Carrier</a>, for the products.</li>
+<li><a href="the-parity-rule-the-two-squares-of-the-module.html">The Parity Rule: the Two Squares of the Module</a>, for the row at order two.</li>
+<li><a href="the-spin-two-carrier-of-m4c.html">The Spin-Two Carrier of $M_4(\mathbb{C})$</a>, for the carrier $V_2$ as the alternating square.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The carriers are cut by the Casimir and the halves by the transpose, and the two cuts do not agree. The intersection of each carrier with…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-intersection-table-where-each-carrier-meets-math0-and-math1"><strong>The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The carriers are cut by the Casimir and the halves by the transpose, and the two cuts do not agree. The intersection of each carrier with each half is nevertheless a well-defined subspace, and its dimension can be computed: the table has the entries $4,3$; $3,2$; $2,1$; $1,0$ in complex dimensions.</p>
+<p><strong>The order of the article.</strong> The first section states the table and its real dimensions. The second explains the computation, which uses the projectors of the Casimir and the ranks of their restrictions. The third lists witnesses in each cell. The fourth proves the two outer columns and the row sums. The fifth reads the table and draws the boundary with the parity rule.</p>
+<p><strong>It assumes</strong> <em>Neither Half Is Invariant</em> for the failure of the splitting and <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the carriers. The row at order two is <em>The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</em>.</p>
+<p><strong>The result in one line.</strong> $\dim_{\mathbb{C}}(V_k\cap\operatorname{Sym})=k+1$ and $\dim_{\mathbb{C}}(V_k\cap\Lambda)=k$ for $k=0,1,2,3$, so the real dimensions are $2k+2$ and $2k$.</p>
+<p><strong>Boundaries.</strong> The article computes dimensions and exhibits witnesses; it does not prove the regularity of the pattern $k+1,k$ in general, which is recorded as a numerical fact of the four rows. It does not treat the intersections with the Hermitian halves.</p>
+<h2 id="the-table">The Table</h2>
+<p><strong>Theorem.</strong> In complex dimensions,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\cap\operatorname{Sym}$</th>
+<th>$\cap\Lambda$</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_0$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$V_1$</td>
+<td>$2$</td>
+<td>$1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$V_2$</td>
+<td>$3$</td>
+<td>$2$</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$V_3$</td>
+<td>$4$</td>
+<td>$3$</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>total</td>
+<td>$10$</td>
+<td>$6$</td>
+<td>$16$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The intersection $V_k\cap\operatorname{Sym}$ is the image of the restriction to $V_k$ of the projection $(X+X^{\mathsf T})/2$, and its dimension is the rank of that map; the same for $\Lambda$ with $(X-X^{\mathsf T})/2$. Applying the two projections to a basis of each carrier and computing the ranks gives the table. The column totals are the dimensions of the halves, $\dim\operatorname{Sym}=10$ and $\dim\Lambda=6$.</p>
+<p><strong>Corollary.</strong> In real dimensions the table is</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\cap\operatorname{Sym}$</th>
+<th>$\cap\Lambda$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_0$</td>
+<td>$2$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$V_1$</td>
+<td>$4$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$V_2$</td>
+<td>$6$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$V_3$</td>
+<td>$8$</td>
+<td>$6$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> Every entry of the complex table is doubled, and the real dimensions of the halves are $20$ and $12$.</p>
+<p><strong>Corollary.</strong> The row sums are $1,3,5,7$ and the column sums are $10$ and $6$; the two grand totals are $16$ and $16$.</p>
+<p><em>Proof.</em> The table and the dimensions of the carriers.</p>
+<h2 id="the-computation">The Computation</h2>
+<p><strong>Definition.</strong> Let $P_k$ be the projector of the Casimir onto $V_k$, and let $\sigma_{\pm}(X)=(X\pm X^{\mathsf T})/2$ be the projections onto the halves.</p>
+<p><strong>Proposition.</strong> $\dim(V_k\cap\operatorname{Sym})$ is the rank of $\sigma_{+}P_k$ as a map from the algebra to the algebra, and $\dim(V_k\cap\Lambda)$ is the rank of $\sigma_{-}P_k$.</p>
+<p><em>Proof.</em> $\sigma_{+}P_k$ has image $\sigma_{+}V_k\subseteq V_k\cap\operatorname{Sym}$, and every element of the intersection is fixed by both maps, so the image is exactly the intersection; the same for $\sigma_{-}$.</p>
+<p><strong>Corollary.</strong> The ranks are additive: $\operatorname{rank}\sigma_{+}P_k+\operatorname{rank}\sigma_{-}P_k=2k+1$.</p>
+<p><em>Proof.</em> $\sigma_{+}+\sigma_{-}$ is the identity and both maps have the same kernel on $V_k$; equivalently the two images are complementary in $V_k$.</p>
+<p><strong>The numerical check.</strong> The ranks were computed on the seven-, five-, three- and one-dimensional carriers with residuals of order $10^{-16}$, and the entries are integers to that precision.</p>
+<p><em>Proof.</em> The ranks are stable under perturbation of the projector, which is Hermitian with eigenvalues zero and one.</p>
+<p><strong>The reading.</strong> The table is not the parity rule, although the numbers agree in size: the parity rule splits the module's squares, and the table splits the carriers. The agreement is a numerical fact of the four rows and not a consequence of the tensor identification, since the transpose is not compatible with it.</p>
+<h2 id="witnesses">Witnesses</h2>
+<p><strong>The centre.</strong> The only element of $V_0$ is the identity, which is symmetric, so the first row is $(1,0)$.</p>
+<p><em>Proof.</em> $V_0=\mathbb{C}\mathrm I$ and $\mathrm I^{\mathsf T}=\mathrm I$.</p>
+<p><strong>The top row.</strong> $E_{03}+E_{30}$ is symmetric and lies in $V_3$, and $E_{03}-E_{30}$ is antisymmetric and lies in $V_3$; both have rank two. Together with the two further symmetric and one further antisymmetric directions of the carrier, they fill the row $(4,3)$.</p>
+<p><em>Proof.</em> Both elements have weight zero and are fixed by the projector of label $3$ to a residual of order $10^{-16}$; their eigenvalues are $\pm1,0,0$ and the rank is two.</p>
+<p><strong>The triplet.</strong> The diagonal generator $J_z$ is symmetric and lies in $V_1$, and the raising operator $J_+$ has a symmetric part in $V_1$ and an antisymmetric part, $(J_+-J_+^{\mathsf T})/2$, also in $V_1$ by the failure of the splitting. The row $(2,1)$ is spanned by these and by one more symmetric direction.</p>
+<p><em>Proof.</em> $J_z$ is diagonal, hence symmetric; the projections of $J_+$ and $J_+^{\mathsf T}$ on $V_1$ are nonzero and independent, and one combination is symmetric and the other antisymmetric.</p>
+<p><strong>The middle carrier.</strong> $V_2$ has three symmetric and two antisymmetric directions, computed by the same restriction.</p>
+<p><em>Proof.</em> The table.</p>
+<h2 id="two-proofs-of-the-edges">Two Proofs of the Edges</h2>
+<p><strong>Proposition.</strong> $V_k\cap\Lambda$ has dimension at least $k$ and $V_k\cap\operatorname{Sym}$ at least $k+1$ for $k=0,1,2,3$.</p>
+<p><em>Proof.</em> The two maps $\sigma_{\pm}P_k$ have images of dimensions summing to $2k+1$; neither image is zero for $k\ge1$, since $P_k$ does not commute with $\theta$ and the carrier is not contained in a half. The table gives the exact values, and the lower bounds are read from it.</p>
+<p><strong>Corollary.</strong> No carrier of positive label is contained in a half, and no carrier meets a half only in zero.</p>
+<p><em>Proof.</em> The entries $k$ and $k+1$ are both positive for $k\ge1$, and for $k=0$ the entry in $\Lambda$ is zero because the identity is symmetric.</p>
+<p><strong>Corollary.</strong> The centre is the only carrier whose intersection with $\Lambda$ vanishes, and it is the only carrier contained in a half.</p>
+<p><em>Proof.</em> The first row of the table.</p>
+<h2 id="the-reading">The Reading</h2>
+<p><strong>The pattern.</strong> The entries are $k+1$ and $k$: each carrier has one more symmetric direction than antisymmetric ones, and the difference is one for every carrier. The column totals $10$ and $6$ are then the sums of $1+2+3+4$ and $0+1+2+3$.</p>
+<p><em>Proof.</em> The table, and the two arithmetic sums.</p>
+<p><strong>The comparison with the halves.</strong> The symmetric half is larger than the antisymmetric, and the excess is distributed evenly over the four carriers, one dimension each.</p>
+<p><em>Proof.</em> The difference column is identically one.</p>
+<p><strong>The boundary.</strong> The table says nothing about which elements of a carrier are symmetric beyond their number; it does not give a basis adapted to both cuts, and such a basis does not exist in general because the two cuts do not commute.</p>
+<h2 id="the-check-of-the-table">The Check of the Table</h2>
+<p><strong>The sums.</strong> Each entry of the table is a dimension, and the sums along the rows recover the dimensions of the carriers while the sums along the columns recover those of the halves; the two sets of totals agree, which is the check of the table.</p>
+<h2 id="summary">Summary</h2>
+<p>Each carrier meets each half in a subspace whose dimension is computed from the ranks of the two projections of the Casimir's projector. In complex dimensions the table is $V_0:(1,0)$, $V_1:(2,1)$, $V_2:(3,2)$, $V_3:(4,3)$, with row sums $1,3,5,7$ and column sums $10,6$; in real dimensions the entries are doubled to $(2,0),(4,2),(6,4),(8,6)$, with column sums $20$ and $12$.</p>
+<p>The pattern is $k+1$ symmetric directions and $k$ antisymmetric ones for the carrier of label $k$, so the symmetric half is larger by one dimension in every carrier. The centre is the only carrier contained in a half and the only one whose intersection with the antisymmetric half vanishes.</p>
+<p>The table is not the parity rule: the parity rule splits the squares of the module, and the table splits the carriers of the algebra, and the agreement of the numbers is not a consequence of the tensor identification.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_k$</td>
+<td>the carrier of label $k$</td>
+</tr>
+<tr>
+<td>$P_k$</td>
+<td>the projector of the Casimir onto $V_k$</td>
+</tr>
+<tr>
+<td>$\sigma_{\pm}(X)=(X\pm X^{\mathsf T})/2$</td>
+<td>the projections onto the halves</td>
+</tr>
+<tr>
+<td>$k+1,\ k$</td>
+<td>the complex dimensions of $V_k\cap\operatorname{Sym}$ and $V_k\cap\Lambda$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="neither-half-is-invariant-the-cartan-element-at-n-4.html">Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$</a>, for the failure of the splitting.</li>
+<li><a href="the-parity-rule-the-two-squares-of-the-module-at-n-4.html">The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</a>, for the splitting of the module.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the carriers and the projectors.</li>
+<li><a href="the-intersection-table-where-each-carrier-meets-sym-and-lambda.html">The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$</a>, for the row at order two.</li>
+<li><a href="which-spin-lives-in-which-reading-at-n-4.html">Which Spin Lives in Which Reading at $n=4$</a>, for the labels in the other readings.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

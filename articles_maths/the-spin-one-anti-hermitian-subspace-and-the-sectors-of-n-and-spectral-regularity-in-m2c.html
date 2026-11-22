@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Which of the four sectors does the carrier meet, and which does its closure meet?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity-in-math0"><strong>The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Which of the four sectors does the carrier $\mathfrak{su}(2)$ meet, and which does its closure $\mathfrak{u}(2)$ meet?</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity</a>. There the closures are $\mathfrak{k}$ and $\mathbb{R}(ie_t)\oplus\mathfrak{k}$ with the predicates $N$ and $B^2$; here they are $\mathfrak{su}(2)$ and $\mathfrak{u}(2)$ with the predicates $\det$ and $\Delta$. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. That on the carrier the two predicates vanish together, so the carrier meets two sectors. The sector table of the carrier. That on the closure the two predicates separate, and the closure meets all four. The witnesses. The orbit-space picture, in which the sector is read from the pair $(\lambda,|v|)$ in a half-plane. That the closure meets $\Sigma_{10}$ only in scalar matrices and contains no non-zero nilpotent. The comparison with the other two closures.</p>
+<p><strong>What the article does not do.</strong> It does not treat either predicate on its own, which are <a href="the-spin-one-anti-hermitian-subspace-and-n-norm-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and N Norm Regularity in $M_2(\mathbb{C})$</a> and <a href="the-spin-one-anti-hermitian-subspace-and-spectral-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and Spectral Regularity in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> $A=i\lambda\mathrm I_2+v\cdot E$ with real $\lambda$ and $v$, $E_k=-i\sigma_k$. Then $\tau=2i\lambda$, $\det=|v|^2-\lambda^2$ and $\Delta=-4|v|^2$. The sector $\Sigma_{ij}$ has $\det\neq0$ for $i=1$ and $\Delta\neq0$ for $j=1$.</p>
+<p><strong>Boundaries.</strong> The space is <a href="the-spin-one-anti-hermitian-subspace-in-m2c.html">Introduction to the Spin-One Anti-Hermitian Subspace in $M_2(\mathbb{C})$</a>. The strata of $\Sigma_{10}$ are <a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>. The same question on the plane is <a href="the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, and the display is <a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>.</p>
+<p><strong>Letters.</strong> $\lambda$ the trace coordinate, $v$ the carrier coordinates, $r=|v|$.</p>
+<h2 id="the-carrier-two-sectors">The Carrier: Two Sectors</h2>
+<p><strong>The two predicates coincide.</strong> On $\mathfrak{su}(2)$,
+$$
+\det(v\cdot E)=|v|^2,\qquad \Delta(v\cdot E)=-4|v|^2 .
+$$
+Both vanish exactly at $v=0$. The constant of proportionality is $-4$, and no value of $v$ separates the two vanishings.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition on $v$</th>
+<th>intersection</th>
+<th>$\dim_\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$v\neq0$</td>
+<td>$\mathfrak{su}(2)\setminus\{0\}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>impossible</td>
+<td>$\varnothing$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>impossible</td>
+<td>$\varnothing$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$v=0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the mixed sectors are empty.</strong> They are defined by the disagreement of the two predicates, and on the carrier the two agree.</p>
+<p><strong>The spectrum on the carrier.</strong> $\{\pm i|v|\}$, distinct for $v\neq0$: invertible with a separated spectrum.</p>
+<p><strong>The carrier is the positive one.</strong> It is the only one of the three carriers on which both predicates are definite; the sector test there is the test of a length.</p>
+<h2 id="the-closure-four-sectors">The Closure: Four Sectors</h2>
+<p><strong>The two predicates.</strong>
+$$
+\det(i\lambda\mathrm I_2+v\cdot E)=|v|^2-\lambda^2,\qquad \Delta=-4|v|^2 .
+$$
+The second sees $v$ alone; the first sees the difference of the two squares.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition on $(\lambda,v)$</th>
+<th>intersection</th>
+<th>$\dim_\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$v\neq0$, $\lvert v\rvert\neq\lvert\lambda\rvert$</td>
+<td>off both loci</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$v=0$, $\lambda\neq0$</td>
+<td>$\mathbb{R}(i\mathrm I_2)\setminus\{0\}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$\lvert v\rvert=\lvert\lambda\rvert$, $v\neq0$</td>
+<td>null cone minus apex</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\lambda=0$, $v=0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The witnesses.</strong> Verified:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>witness</th>
+<th>$\det$</th>
+<th>$\Delta$</th>
+<th>sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2i\mathrm I_2+E_1$</td>
+<td>$-3$</td>
+<td>$-4$</td>
+<td>$\Sigma_{11}$</td>
+</tr>
+<tr>
+<td>$i\mathrm I_2$</td>
+<td>$-1$</td>
+<td>$0$</td>
+<td>$\Sigma_{10}$</td>
+</tr>
+<tr>
+<td>$i\mathrm I_2+E_1$</td>
+<td>$0$</td>
+<td>$-4$</td>
+<td>$\Sigma_{01}$</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$\Sigma_{00}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The null cone.</strong> $\{|v|=|\lambda|\}$ is a cone of real dimension three with two nappes; each nappe meets a sphere of radius $r$ in a two-sphere.</p>
+<p><strong>The degenerate locus is the line.</strong> $\Delta=0$ is $v=0$, the trace line $\mathbb{R}(i\mathrm I_2)$.</p>
+<h2 id="the-sector-reads-two-numbers">The Sector Reads Two Numbers</h2>
+<p><strong>The pair.</strong> On the closure both predicates are functions of $(\lambda,r)$ with $r=|v|$:
+$$
+\det=r^2-\lambda^2,\qquad \Delta=-4r^2 .
+$$
+The pair labels the unitary orbits, so the sector is a function of the orbit.</p>
+<p><strong>The picture.</strong> In the half-plane $\{(\lambda,r):r\ge0\}$ the vanishing of $\Delta$ is the line $r=0$, the vanishing of $\det$ is the V $r=|\lambda|$, and the two cross at the origin. The line and the V cut the half-plane into eight connected pieces, and the pieces collect into the four sectors:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>piece</th>
+<th>sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the origin</td>
+<td>$\Sigma_{00}$</td>
+</tr>
+<tr>
+<td>the two rays of $r=0$ away from the origin</td>
+<td>$\Sigma_{10}$</td>
+</tr>
+<tr>
+<td>the two rays of the V away from the origin</td>
+<td>$\Sigma_{01}$</td>
+</tr>
+<tr>
+<td>the three open pieces</td>
+<td>$\Sigma_{11}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reading.</strong> Eight pieces and four sectors: a sector is a pair of truth values and not a connected set.</p>
+<h2 id="two-singular-facts-about-the-closure">Two Singular Facts About the Closure</h2>
+<p><strong>The closure meets $\Sigma_{10}$ in scalar matrices alone.</strong> $\Sigma_{10}$ has a scalar stratum and a Jordan stratum. The Jordan stratum needs a non-zero nilpotent, and the closure has none: for $A=i\lambda\mathrm I_2+v\cdot E$,
+$$
+A^2=-(\lambda^2+|v|^2)\mathrm I_2+2i\lambda\,(v\cdot E),
+$$
+verified, which vanishes only when $\lambda=0$ and $v=0$. So
+$$
+\mathfrak{u}(2)\cap\Sigma_{10}=\{i\lambda\mathrm I_2:\lambda\neq0\},
+$$
+the scalar stratum only.</p>
+<p><strong>No non-zero square-zero element.</strong> The same display: a real vector of zero length is the zero vector, and the scalar part adds a positive square. The non-zero nilpotents of $M_2(\mathbb{C})$ lie outside the skew space.</p>
+<h2 id="the-closure-meets-all-four">The Closure Meets All Four</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>space</th>
+<th>$\dim_\mathbb{R}$</th>
+<th>sectors met</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}\mathrm I_2$</td>
+<td>$2$</td>
+<td>$\Sigma_{10}$, $\Sigma_{00}$</td>
+</tr>
+<tr>
+<td>plane $\mathbb{C}P$</td>
+<td>$2$</td>
+<td>$\Sigma_{01}$, $\Sigma_{00}$</td>
+</tr>
+<tr>
+<td>ideal $M_2P$</td>
+<td>$4$</td>
+<td>$\Sigma_{01}$, $\Sigma_{00}$</td>
+</tr>
+<tr>
+<td>skew space $\mathfrak{u}(2)$</td>
+<td>$4$</td>
+<td>all four</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the closure and not a carrier.</strong> On each carrier the two conditions are dependent: on the centre $\Delta$ vanishes identically, on the plane $\det$ does, and on the carrier they are proportional. Four cells need two independent conditions, and the closure supplies them.</p>
+<p><strong>The two loci cross once.</strong> The null cone and the trace line meet at the origin alone, which is why the count of sectors is four and not fewer.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>The axis-free pair.</strong> $A=2i\mathrm I_2+E_1=\begin{pmatrix}2i&-i\\-i&2i\end{pmatrix}$: $\det=-3$, $\tau=4i$, $\Delta=-4$, sector $\Sigma_{11}$; eigenvalues $i(2\pm1)$, that is $i$ and $3i$.</p>
+<p><strong>The same matrix with the trace halved.</strong> $A=i\mathrm I_2+E_1$: $\det=0$, $\Delta=-4$, eigenvalues $0$ and $2i$, sector $\Sigma_{01}$.</p>
+<p><strong>A scalar.</strong> $A=i\mathrm I_2$: $\det=-1$, $\Delta=0$, eigenvalue $i$ twice, sector $\Sigma_{10}$.</p>
+<h2 id="where-math160-differs">Where $n=2$ Differs</h2>
+<p><strong>The orbit space.</strong> At $n=2$ the orbit space of the conjugation on $\mathfrak{u}(2)$ is the half-plane of the pair $(\lambda,r)$, and the sector picture is a half-plane cut by a line and a V. At order $n$ the orbit invariants are the $n$ eigenvalues on the imaginary axis, the orbit space has dimension $n-1$, and the two loci are two hypersurfaces in it; the count of connected pieces grows with $n$.</p>
+<p><strong>The absence of nilpotents.</strong> At $n=2$ a non-zero nilpotent in the skew space is impossible. At order $n$ the same argument holds with the sum of $n$ squares, and the skew space of a real form of signature $(p,q)$ does contain non-zero nilpotents when both $p$ and $q$ are positive; the real skew matrices are the case where none occurs.</p>
+<p><strong>What does not differ.</strong> The coincidence of the two predicates on the traceless part holds at every order only in the sense that both are decided by the vector part; the proportionality by a constant is particular to $n=2$.</p>
+<h2 id="summary">Summary</h2>
+<p>On the carrier $\det=|v|^2$ and $\Delta=-4|v|^2$ vanish together, so the carrier meets only $\Sigma_{11}$ away from the origin and $\Sigma_{00}$ at it. On the closure $\det=|v|^2-\lambda^2$ and $\Delta=-4|v|^2$ separate, and all four sectors occur: the open rest in $\Sigma_{11}$, the trace line minus the origin in $\Sigma_{10}$, the null cone minus its apex in $\Sigma_{01}$, and the origin in $\Sigma_{00}$, of real dimensions $4,1,3,0$.</p>
+<p>The closure meets $\Sigma_{10}$ in scalar matrices alone and contains no non-zero nilpotent, since $A^2=-(\lambda^2+|v|^2)\mathrm I_2+2i\lambda(v\cdot E)$. In the orbit half-plane the sector is read from the pair $(\lambda,|v|)$ cut by the line $r=0$ and the V $r=|\lambda|$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathfrak{su}(2)$</td>
+<td>the carrier, the skew traceless part</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(2)=\mathbb{R}(i\mathrm I_2)\oplus\mathfrak{su}(2)$</td>
+<td>the closure</td>
+</tr>
+<tr>
+<td>$\lambda,\ v,\ r=\lvert v\rvert$</td>
+<td>the orbit coordinates of the closure</td>
+</tr>
+<tr>
+<td>$\Delta=\tau^2-4\det$</td>
+<td>the discriminant, $-4\lvert v\rvert^2$</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $\det\neq0$ for $i=1$ and $\Delta\neq0$ for $j=1$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity</a>, for the source's half-plane picture.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-in-m2c.html">Introduction to the Spin-One Anti-Hermitian Subspace in $M_2(\mathbb{C})$</a>, for the space.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-n-norm-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and N Norm Regularity in $M_2(\mathbb{C})$</a>, for the determinant alone.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-spectral-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and Spectral Regularity in $M_2(\mathbb{C})$</a>, for the discriminant alone.</li>
+<li><a href="the-n-regular-spectrally-degenerate-sector.html">The N-Regular, Spectrally Degenerate Sector</a>, for the strata of $\Sigma_{10}$.</li>
+<li><a href="the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>, for the same question on the centre.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

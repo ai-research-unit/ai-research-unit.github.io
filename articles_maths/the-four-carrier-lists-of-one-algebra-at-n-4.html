@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Carrier Lists of One Algebra at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. Four different copies of, or groups containing it, act on the same sixteen-dimensional algebra, and each gives its own list of irreducible…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-carrier-lists-of-one-algebra-at-math0"><strong>The Four Carrier Lists of One Algebra at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> Four different copies of $SU(2)$, or groups containing it, act on the same sixteen-dimensional algebra, and each gives its own list of irreducible pieces: $7+5+3+1$ for the principal copy, $1+15$ for $U(4)$, $1+3+3+9$ for the factorised copy and $8+3+3+2$ for the block copy. The article computes the four lists and draws the lesson: a label without a named group is meaningless.</p>
+<p><strong>The order of the article.</strong> The first section recalls the principal list. The second computes the $U(4)$ list and the commutant argument. The third computes the factorised list from the tensor product. The fourth computes the block list. The fifth assembles the table and draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the principal list and <em>The Spin Group at $n=4$</em> for the copy. The row at order two is <em>The Four Carrier Lists of One Algebra</em>.</p>
+<p><strong>The result in one line.</strong> The same sixteen dimensions carry the four decompositions $7+5+3+1$, $1+15$, $1+3+3+9$ and $8+3+3+2$, each belonging to its own group.</p>
+<p><strong>Boundaries.</strong> The article computes the four lists and identifies the group of each; it does not compute the Casimir of the three new groups, and it does not compare the lists element by element, which is <em>Which Spin Lives in Which Reading</em>.</p>
+<h2 id="the-principal-list">The Principal List</h2>
+<p><strong>Proposition.</strong> The principal copy acts on the algebra with the four irreducible pieces $V_3,V_2,V_1,V_0$ of dimensions $7,5,3,1$.</p>
+<p><em>Proof.</em> The tensor square of $V_{3/2}$ decomposes into the four labels $0,\dots,3$, of dimensions $1,3,5,7$.</p>
+<p><strong>Corollary.</strong> The list is $7+5+3+1=16$, and the top label $3$ occurs.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> The principal list is the finest of the four, and the other three are coarser or differently grouped.</p>
+<p><em>Proof.</em> The comparison of the four lists in the table.</p>
+<h2 id="the-math21-list">The $U(4)$ List</h2>
+<p><strong>Proposition.</strong> Under the conjugation action of $U(4)$ on $M_4(\mathbb{C})$, the algebra decomposes as $\mathbb{C}\mathrm I\oplus\mathfrak{sl}_4$, of dimensions $1+15$, and the traceless part is irreducible.</p>
+<p><em>Proof.</em> The trace is an invariant linear form, so the scalars are an invariant subspace and the traceless matrices a complementary one; the commutant of $U(4)$ in $\operatorname{End}(M_4)$ is spanned by the identity operator, by Schur's lemma, so the traceless part carries no proper invariant subspace.</p>
+<p><strong>Corollary.</strong> The $U(4)$ list is $1+15$, with a single carrier of dimension fifteen.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> The principal copy's four carriers are not $U(4)$-invariant: the principal copy is a three-dimensional subgroup, and its isotypic pieces are cut by a smaller group.</p>
+<p><em>Proof.</em> A $U(4)$-invariant subspace is a sum of the two pieces of the $U(4)$ list, of dimensions $1$ and $15$, and no principal carrier has dimension fifteen.</p>
+<p><strong>The reading.</strong> The commutant computation is what makes the traceless part irreducible: without it, the decomposition into the fifteen would be only a decomposition into the eigenspaces of the trace.</p>
+<h2 id="the-factorised-list">The Factorised List</h2>
+<p><strong>Proposition.</strong> Write $\mathbb{C}^{4}=\mathbb{C}^{2}\otimes\mathbb{C}^{2}$ and let $SU(2)\times SU(2)$ act factor by factor. Then $\operatorname{End}(\mathbb{C}^{4})\cong\operatorname{End}(\mathbb{C}^{2})\otimes\operatorname{End}(\mathbb{C}^{2})$, and the list is $1+3+3+9$.</p>
+<p><em>Proof.</em> $\operatorname{End}(\mathbb{C}^{2}\otimes\mathbb{C}^{2})\cong\operatorname{End}(\mathbb{C}^{2})\otimes\operatorname{End}(\mathbb{C}^{2})$, and $\operatorname{End}(\mathbb{C}^{2})$ decomposes under conjugation as the scalars and the traceless part, of dimensions $1$ and $3$. The tensor product of the two lists is $1\otimes1+1\otimes3+3\otimes1+3\otimes3=1+3+3+9$.</p>
+<p><strong>Corollary.</strong> The four pieces are the trivial, the two triplets and the nine-dimensional piece, and they sum to sixteen.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> The nine-dimensional piece is the tensor product of the two triplets, and it is irreducible under the product group.</p>
+<p><em>Proof.</em> A tensor product of irreducible modules for a product group is irreducible.</p>
+<p><strong>The reading.</strong> The factorised list is the tensor square of the list of $M_2(\mathbb{C})$, which is the reason the row at order two appears inside the row at order four.</p>
+<h2 id="the-block-list">The Block List</h2>
+<p><strong>Proposition.</strong> Write $\mathbb{C}^{4}=S_{+}\oplus S_{-}$ with $S_{\pm}$ of dimension two and let the copy act block-diagonally. Then the algebra decomposes into the two diagonal blocks, of dimension eight in total, and the two off-diagonal blocks, each of dimension four; each off-diagonal block splits further into a triplet and a singlet, and the two singlets form a two-dimensional piece. The list is $8+3+3+2$.</p>
+<p><em>Proof.</em> $\operatorname{End}(S_{+}\oplus S_{-})$ consists of the two diagonal blocks $\operatorname{End}(S_{\pm})$, of dimensions $4+4$, and the two off-diagonal blocks $\operatorname{Hom}(S_{\mp},S_{\pm})$, of dimensions $4+4$. Each four-dimensional block splits as the scalars plus the traceless part, of dimensions $1+3$, and the two singlets from the corners combine into the two-dimensional piece. The total is $8+3+3+2=16$.</p>
+<p><strong>Corollary.</strong> The block list is the coarsest in the sense that its largest piece has dimension eight, and its smallest has dimension two.</p>
+<p><em>Proof.</em> The list displayed.</p>
+<p><strong>Corollary.</strong> The two-dimensional piece is the only piece of even dimension in the four lists, and it is not a carrier of the principal copy.</p>
+<p><em>Proof.</em> The other lists have dimensions $7,5,3,1$; $1,15$; $1,3,3,9$; $8,3,3,2$.</p>
+<p><strong>The reading.</strong> The pair in the block list is the place where a half-integer label appears: the two singlets of the corners carry the pair $(\tfrac12,\tfrac12)$.</p>
+<h2 id="the-table-and-the-lesson">The Table and the Lesson</h2>
+<p><strong>Proposition.</strong> The four lists are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>group</th>
+<th>list</th>
+<th>total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>principal $SU(2)$</td>
+<td>$7+5+3+1$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>$U(4)$</td>
+<td>$1+15$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>factorised $SU(2)\times SU(2)$</td>
+<td>$1+3+3+9$</td>
+<td>$16$</td>
+</tr>
+<tr>
+<td>block $SU(2)$</td>
+<td>$8+3+3+2$</td>
+<td>$16$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and each decomposition belongs to its own group.</p>
+<p><em>Proof.</em> The four propositions.</p>
+<p><strong>Corollary.</strong> The same sixteen dimensions carry four different decompositions, and the number of pieces is four, two, four and four.</p>
+<p><em>Proof.</em> The table.</p>
+<p><strong>Corollary.</strong> A phrase such as "the spin-two part of $M_4$" has no meaning without naming the group: the label $2$ occurs in the principal list and, as a diagonal content, in the factorised list, and in no other.</p>
+<p><em>Proof.</em> The comparison of the lists and the diagonal contents of the next article.</p>
+<p><strong>The boundary.</strong> The article gives the four lists and their groups. The identification of each spin in each reading, and the diagonal contents of the factorised and block lists, is the subject of <em>Which Spin Lives in Which Reading</em>.</p>
+<h2 id="the-four-readings-in-detail">The Four Readings in Detail</h2>
+<p><strong>The list of labels.</strong> The first reading is the list of the carrier labels, $7+5+3+1$, ordered by the label; it is the decomposition into isotypic components, and it is the finest invariant decomposition of the algebra as a module for the copy.</p>
+<p><strong>The list of the trace.</strong> The second reading separates the trace from the traceless part, $1+15$; it is the decomposition under the projection onto the centre, and it is the only reading in which one summand is a two-sided ideal.</p>
+<p><strong>The list of the factors.</strong> The third reading, $1+3+3+9$, belongs to the factorised copy on $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$: it is the tensor product $1\otimes1+1\otimes3+3\otimes1+3\otimes3$ of the two scalar-plus-traceless lists, so the nine is the product of the two triplets and not a summand of the principal list.</p>
+<p><strong>The list of the blocks.</strong> The fourth reading, $8+3+3+2$, belongs to the block copy on $S_{+}\oplus S_{-}$: the two diagonal blocks give eight dimensions, each off-diagonal block splits as a triplet and a singlet, and the two singlets combine into the two-dimensional piece.</p>
+<p><strong>The reading.</strong> The four lists are the same sixteen dimensions sorted by four different structures, and each of them answers a different question about the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>Four groups act on the same algebra and give four decompositions of the same sixteen dimensions: the principal copy gives $7+5+3+1$; $U(4)$ gives $1+15$, with the traceless part irreducible by the commutant computation; the factorised copy on $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$ gives $1+3+3+9$ from the tensor product of two $1+3$ lists; and the block copy gives $8+3+3+2$, with the two singlets of the corners forming the pair.</p>
+<p>Each list is a decomposition of sixteen, and the four lists are different. A label without a named group is meaningless, and the phrase "the spins of $M_4(\mathbb{C})$" must be completed by the group.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>principal list</td>
+<td>$7+5+3+1$</td>
+</tr>
+<tr>
+<td>$U(4)$ list</td>
+<td>$1+15$</td>
+</tr>
+<tr>
+<td>factorised list</td>
+<td>$1+3+3+9$</td>
+</tr>
+<tr>
+<td>block list</td>
+<td>$8+3+3+2$</td>
+</tr>
+<tr>
+<td>commutant</td>
+<td>the algebra of operators commuting with the group</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="which-spin-lives-in-which-reading-at-n-4.html">Which Spin Lives in Which Reading at $n=4$</a>, for the table of spins.</li>
+<li><a href="the-su2-of-m4c-acting-on-sixteen-dimensions.html">The $\mathrm{SU}(2)$ of $M_4(\mathbb{C})$ Acting on Sixteen Dimensions</a>, for the action itself.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the principal list.</li>
+<li><a href="the-four-carrier-lists-of-one-algebra.html">The Four Carrier Lists of One Algebra</a>, for the row at order two.</li>
+<li><a href="the-truncated-rule-the-product-of-two-carriers-at-n-4.html">The Truncated Rule: the Product of Two Carriers Is Not a Carrier</a>, for the products.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

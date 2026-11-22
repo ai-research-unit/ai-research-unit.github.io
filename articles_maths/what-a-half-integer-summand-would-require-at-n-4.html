@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What a Half-Integer Summand Would Require at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The carriers of the algebra have the labels. The article asks what a summand of label or would require, and answers that it would require a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="what-a-half-integer-summand-would-require-at-math0"><strong>What a Half-Integer Summand Would Require at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The carriers of the algebra have the labels $0,1,2,3$. The article asks what a summand of label $\tfrac12$ or $\tfrac32$ would require, and answers that it would require a two-dimensional or a four-dimensional invariant subspace, and that no such subspace exists.</p>
+<p><strong>The order of the article.</strong> The first section fixes what a half-integer summand would be. The second lists the four requirements and shows that each fails. The third separates the two notions that the failure is often confused with, invariance and being a summand. The fourth gives the counterexample that the algebra <em>does</em> contain objects of the module's shape, namely the ideals, and the weights that distinguish them. The fifth states the boundary.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em>, <em>Why the Conjugation Labels Are Integer</em>, and <em>The Minimal Left Ideals of $M_4(\mathbb{C})$</em>. The row at order two is <em>What a Half-Integer Summand Would Require</em>.</p>
+<p><strong>The result in one line.</strong> A half-integer summand would need a carrier of dimension $2j+1$ with $2j$ odd, hence an even-dimensional invariant subspace, and every invariant subspace of the algebra has odd dimension.</p>
+<p><strong>Boundaries.</strong> The article is a negative statement with a complete proof; it does not classify the invariant subspaces of the algebra beyond the parity of their dimensions, which is <em>The Four Carrier Lists of One Algebra</em>.</p>
+<h2 id="what-would-be-required">What Would Be Required</h2>
+<p><strong>Definition.</strong> A <strong>half-integer summand</strong> would be a subspace $W\subseteq M_4(\mathbb{C})$ which is invariant under the copy and on which the copy acts by the label $j$ with $2j$ odd.</p>
+<p><strong>Proposition.</strong> Such a $W$ would have dimension $2j+1$, an even number, and would be the isotypic component of its label.</p>
+<p><em>Proof.</em> The dimension of the irreducible module of label $j$ is $2j+1$; for $2j$ odd this is even. An invariant subspace on which the action is irreducible of label $j$ is a copy of that module, and in a completely reducible module the copies of one label form one isotypic component.</p>
+<p><strong>Corollary.</strong> A half-integer summand would be a direct sum of copies of a module of even dimension, so its dimension would be even.</p>
+<p><em>Proof.</em> The proposition, and a sum of even numbers is even.</p>
+<p><strong>Corollary.</strong> It would suffice to exhibit one even-dimensional invariant subspace, since every invariant subspace is a sum of carriers.</p>
+<p><em>Proof.</em> The algebra is completely reducible, so an invariant subspace is a sum of isotypic components, and its dimension is a sum of the numbers $2k+1$ with multiplicities.</p>
+<p><strong>The reading.</strong> The question is finite: there are sixteen dimensions to check and four carriers, and the parity of the dimension is already an obstruction.</p>
+<h2 id="the-four-requirements">The Four Requirements</h2>
+<p><strong>Proposition.</strong> A half-integer summand would require (i) a carrier whose label is a half-integer, (ii) a weight string with half-integer weights, (iii) a dimension $2j+1$ with $2j$ odd, and (iv) a sum of labels in the Clebsch–Gordan rule equal to a half-integer. Each fails at $n=4$.</p>
+<p><em>Proof.</em> (i) The four carriers have the labels $0,1,2,3$, all integers. (ii) The algebra's weights are differences of the module's weights and are integers, so no weight string of the algebra contains a half-integer. (iii) The carrier dimensions are $1,3,5,7$, all odd. (iv) The tensor square of $V_{3/2}$ decomposes into the labels $0,\dots,2j$, which are integers.</p>
+<p><strong>Corollary.</strong> The failure is not an accident of the computation but a consequence of the parity of $2j$ and of the fact that the labels of a tensor square are differences of weights.</p>
+<p><em>Proof.</em> The four statements.</p>
+<p><strong>Corollary.</strong> At odd order the same four requirements are met by the module itself, which is then a carrier; the obstruction is specific to even order.</p>
+<p><em>Proof.</em> At odd $n$ the label $\tfrac{n-1}{2}$ is an integer, and the module is a carrier of odd dimension.</p>
+<p><strong>The reading.</strong> Four independent arguments give the same answer, and each of them is a parity statement.</p>
+<h2 id="invariance-against-being-a-summand">Invariance against Being a Summand</h2>
+<p><strong>Proposition.</strong> The algebra contains no even-dimensional invariant subspace.</p>
+<p><em>Proof.</em> Every invariant subspace is a sum of isotypic components, whose dimensions are the carrier dimensions $1,3,5,7$; a sum of odd numbers is odd.</p>
+<p><strong>Corollary.</strong> No invariant subspace of the algebra has dimension two or four, so no half-integer summand exists and the module cannot be realised inside the algebra as an invariant subspace.</p>
+<p><em>Proof.</em> The proposition, and the dimensions two and four are even.</p>
+<p><strong>Corollary.</strong> The failure is not that the algebra lacks subspaces of dimension four: it has many. The failure is that none of them is invariant.</p>
+<p><em>Proof.</em> The space of all four-dimensional subspaces is a Grassmannian of positive dimension; invariance is the extra condition, and it fails by the parity of the dimension.</p>
+<p><strong>The reading.</strong> The two notions are often confused. The module has dimension four, and so do the minimal left ideals and the left ideals $M_4P$; what the algebra does not have is a four-dimensional <em>invariant</em> subspace.</p>
+<h2 id="the-counterexample-and-the-distinction">The Counterexample and the Distinction</h2>
+<p><strong>Proposition.</strong> The minimal left ideal $M_4P$, of complex dimension four, is a subspace of the algebra of the module's dimension, and it is not invariant under the conjugation action; it is invariant under the left multiplication by the algebra.</p>
+<p><em>Proof.</em> The ideal has dimension four by the rank of $P$; conjugation carries $M_4P$ to $M_4\rho(q)P\rho(q)^{-1}$, which is a different ideal unless $q$ stabilises the line of $P$; left multiplication by $A\in M_4$ carries $M_4P$ into itself.</p>
+<p><strong>Corollary.</strong> The half-integer label is carried by the ideal under the left action, and the same subspace carries no half-integer label under the conjugation action.</p>
+<p><em>Proof.</em> The ideal is isomorphic to $V_{3/2}$ as a left module; the conjugation action on the algebra has integer weights, so on the ideal, as a subspace of the algebra, the conjugation weights are integers.</p>
+<p><strong>Corollary.</strong> The weight test separates the two actions: under left multiplication the weights are $\pm\tfrac32,\pm\tfrac12$, under conjugation they are differences of these and therefore integers.</p>
+<p><em>Proof.</em> The weights of the two actions on the same four-dimensional space.</p>
+<p><strong>The reading.</strong> The same subspace carries a half-integer label for one action and integer weights for another. A half-integer summand would require the second action to have half-integer weights, which it does not.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the ideal article.</strong> That article constructs the ideals and computes their left weights; this one uses them as the counterexample that shows why a half-integer label does not give a half-integer summand.</p>
+<p><strong>Against the integer labels article.</strong> That article proves the integrality from the kernel and from the weights; this one states what would fail if the integrality failed.</p>
+<p><strong>Against the odd orders.</strong> At odd order the module is a carrier and the question does not arise; the article is about even order, and the number four is the case at hand.</p>
+<h2 id="the-check-of-the-requirement">The Check of the Requirement</h2>
+<p><strong>The parity obstruction.</strong> A half-integer summand inside the algebra would contribute an odd-dimensional carrier to a space whose dimension is a square of an integer; the square is even when the integer is even, and the sum of odd numbers can be even only when the number of summands is even, which is the parity obstruction.</p>
+<h2 id="summary">Summary</h2>
+<p>A half-integer summand of the algebra would be a copy of a module of even dimension $2j+1$ with $2j$ odd, hence an even-dimensional invariant subspace. Every invariant subspace of the algebra is a sum of carriers, whose dimensions are $1,3,5,7$, so every invariant subspace has odd dimension and no half-integer summand exists.</p>
+<p>The four requirements, a half-integer label, a half-integer weight string, an even dimension and a half-integer Clebsch–Gordan label, each fail at $n=4$: the labels are $0,1,2,3$, the weights are integers, the dimensions are odd and the tensor rule gives integers.</p>
+<p>The algebra does contain subspaces of dimension four, namely the minimal left ideals, and they are not invariant under conjugation. The distinction between a subspace of the module's dimension and an invariant subspace of the module's label is the content of the article.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$W$</td>
+<td>a hypothetical half-integer summand</td>
+</tr>
+<tr>
+<td>$2j+1$, $2j$ odd</td>
+<td>the even dimension it would have</td>
+</tr>
+<tr>
+<td>$1,3,5,7$</td>
+<td>the carrier dimensions</td>
+</tr>
+<tr>
+<td>$M_4P$</td>
+<td>a minimal left ideal, dimension four, not invariant</td>
+</tr>
+<tr>
+<td>$\pm\tfrac32,\pm\tfrac12$</td>
+<td>the weights of the ideal under left multiplication</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="why-the-conjugation-labels-are-integer-at-n-4.html">Why the Conjugation Labels Are Integer: the Kernel $\{\pm\mathrm I\}$</a>, for the integrality.</li>
+<li><a href="the-minimal-left-ideals-of-m4c.html">The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$</a>, for the ideals.</li>
+<li><a href="the-four-carrier-lists-of-one-algebra-at-n-4.html">The Four Carrier Lists of One Algebra at $n=4$</a>, for the invariant subspaces.</li>
+<li><a href="what-a-half-integer-summand-would-require.html">What a Half-Integer Summand Would Require</a>, for the row at order two.</li>
+<li><a href="the-parity-rule-the-two-squares-of-the-module-at-n-4.html">The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</a>, for the parity statements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

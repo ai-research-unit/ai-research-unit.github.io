@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Which subspaces of of real dimensions, and carry the action with weights, and why is the family infinite?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-spin-half-bispinors-spaces-in-math0"><strong>Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Which subspaces of $M_2(\mathbb{C})$ of real dimensions $2$, $4$ and $8$ carry the action with weights $\pm\tfrac12$, and why is the family infinite?</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinors Spaces</a>. The source's plane $\mathbb{C}\tilde\Pi_+$, its spinor spaces $\mathbb{B}\tilde\Pi_\pm$ and its bispinor space become
+$$
+\mathbb{C}P\subset M_2(\mathbb{C})P\subset M_2(\mathbb{C})=M_2P\oplus M_2P_{\perp},
+$$
+with $P=\tfrac12(\mathrm I_2+n\cdot\sigma)$ a rank-one projection. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. The idempotence of $P$ and the plane. The phase $e^{-i\theta/2}$ and the weights $\pm\tfrac12$. That the plane is invariant under the rotations about $n$ alone. The first closure, the minimal left ideal of complex dimension two, and the second, the Peirce splitting. The index of the family, which in the display is the sphere of axes. The dimensions against the Peirce corners.</p>
+<p><strong>What the article does not do.</strong> It does not treat the determinant or the spectrum on these spaces, which are <a href="the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html">The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$</a> and <a href="the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$</a>; it does not treat the spinors themselves, which is <a href="spinors-and-dirac-spinors-in-the-biquaternion-algebra-in-m2c.html">Spinors and Dirac Spinors in the Biquaternion Algebra in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$; $E_k=-i\sigma_k$; the unit real axis $n$ gives the projection $P=\tfrac12(\mathrm I_2+n\cdot\sigma)$; the rotor is $A=\cos\tfrac\theta2\mathrm I_2-i\sin\tfrac\theta2\,(n\cdot\sigma)=\cos\tfrac\theta2\mathrm I_2+\sin\tfrac\theta2\,(n\cdot E)$. Left multiplication is $L_A(Y)=AY$.</p>
+<p><strong>Boundaries.</strong> The carrier's place among the three is <a href="the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html">From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$</a>. The label is <a href="from-the-spin-group-to-the-spin-of-a-single-rotor-in-m2c.html">From the Spin Group to the Spin of a Single Rotor in $M_2(\mathbb{C})$</a>. The sectors are <a href="the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, and the display is <a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>.</p>
+<p><strong>Letters.</strong> $P$ a rank-one projection, $n$ its axis, $P_{\perp}=\mathrm I_2-P$, $\Sigma$ the plane, $S_\pm$ the two left ideals.</p>
+<h2 id="the-plane">The Plane</h2>
+<p><strong>The projection.</strong> For a unit real $n$,
+$$
+P=\frac{\mathrm I_2+n\cdot\sigma}{2},\qquad P^2=P,\qquad \operatorname{rank}P=1,\qquad \operatorname{tr}P=1,
+$$
+verified exactly. The idempotence is one line: $(n\cdot\sigma)^2=|n|^2\mathrm I_2=\mathrm I_2$.</p>
+<p><strong>The plane.</strong>
+$$
+\Sigma(n)=\mathbb{C}P=\mathbb{R}\{P,iP\},
+$$
+of real dimension two and complex dimension one.</p>
+<p><strong>The complementary projection.</strong> $P_{\perp}=\mathrm I_2-P=\tfrac12(\mathrm I_2-n\cdot\sigma)$ satisfies $PP_{\perp}=0$, and the two projections sum to the identity; verified exactly.</p>
+<p><strong>The action.</strong> Left multiplication, $Y\mapsto AY$: one-sided, and this is what separates the plane from the other two carriers.</p>
+<p><strong>The half angle.</strong> Since $n\cdot\sigma\,P=P$ and $E_kP=-iP$ on the axis,
+$$
+A\,P=\left(\cos\tfrac\theta2-i\sin\tfrac\theta2\right)P=e^{-i\theta/2}P,
+$$
+verified exactly for a generic angle. The half angle is a consequence of $E_k=-i\sigma_k$, not an insertion.</p>
+<p><strong>The weights.</strong> The generator $\tfrac12n\cdot E$ acts on the plane as $-\tfrac i2$; the two real eigenvalues are the scalar and its conjugate, so the spectrum is $\{\pm\tfrac12\}$ and $2s+1=2$.</p>
+<p><strong>The full turn.</strong> $-\mathrm I_2$ times $P$ is $-P$: the operator is $-\mathrm{id}$, the sign $(-1)^{2s}=-1$, and it is a half turn of the real plane.</p>
+<h2 id="the-plane-is-not-invariant-for-the-whole-group">The Plane Is Not Invariant for the Whole Group</h2>
+<p><strong>The transverse multiplication.</strong> $\sigma_1P$ is not a multiple of $P$: the projection onto $\mathbb{C}P$ leaves a residual of size $1$ in the matrix norm, verified. So a transverse rotation sends $P$ out of the plane.</p>
+<p><strong>The reading.</strong> The plane is a carrier for the circle of rotations about $n$ alone. This is the one place among the three carriers where carrier and group do not match, and it is why the spin-half case needs two closures.</p>
+<h2 id="the-first-closure-the-left-ideals">The First Closure: The Left Ideals</h2>
+<p><strong>The space.</strong>
+$$
+S_+(n)=M_2(\mathbb{C})P=\{YP\},\qquad \dim_\mathbb{C}S_+=2,\ \dim_\mathbb{R}S_+=4,
+$$
+verified: the span of $\{P,\sigma_1P,\sigma_2P,\sigma_3P\}$ has complex dimension two.</p>
+<p><strong>Why it is closed.</strong> $A(YP)=(AY)P$, so left multiplication stays inside, for every matrix $A$ and not only for the rotors.</p>
+<p><strong>Why it is minimal.</strong> A left ideal $I\subseteq S_+$ is a subspace carried into itself by every left multiplication; the smallest such spaces are the $M_2P$ for rank-one $P$, which are exactly the minimal left ideals. The dimension two over $\mathbb{C}$ is the smallest that supports the action.</p>
+<p><strong>The second ideal.</strong> $S_-(n)=M_2P_{\perp}$, of the same dimensions, with $S_+\cap S_-=\{0\}$ since $PP_{\perp}=0$ and the sum is direct:
+$$
+M_2(\mathbb{C})=S_+\oplus S_-,\qquad 2+2=4\ \text{over }\mathbb{C}.
+$$</p>
+<p><strong>What the first step adds.</strong> Not the complex structure: the plane is already a complex line and $i$ acts inside it. It adds the transverse direction, which is two real dimensions.</p>
+<h2 id="the-second-closure-the-bispinor-space">The Second Closure: The Bispinor Space</h2>
+<p><strong>The space.</strong> The sum of the two ideals is the whole algebra:
+$$
+M_2(\mathbb{C})=M_2P\oplus M_2P_{\perp}.
+$$
+A bispinor space is the algebra together with a Peirce basis, which is the pair $\{P,P_{\perp}\}$.</p>
+<p><strong>The two steps.</strong> The first goes from real dimension two to four and repairs invariance; the second goes from four to eight and completes the pair. The two are different in kind.</p>
+<p><strong>The Peirce corners.</strong> The four spaces $PM_2P$, $PM_2P_{\perp}$, $P_{\perp}M_2P$, $P_{\perp}M_2P_{\perp}$ each have complex dimension one, hence real dimension two. The two ideals group them two by two: $S_+$ contains the first and the second, $S_-$ the third and the fourth.</p>
+<p><strong>The count.</strong> Four corners of real dimension two, two ideals of real dimension four, one algebra of real dimension eight.</p>
+<h2 id="the-index-of-the-family">The Index of the Family</h2>
+<p><strong>The sign.</strong> $P(-n)=\mathrm I_2-P(n)=P_{\perp}(n)$, verified exactly. So the unordered pair $\{P,P_{\perp}\}$ depends on $n$ up to sign, and the family of bispinor spaces is indexed by the real projective plane.</p>
+<p><strong>The sphere.</strong> The set of rank-one projections in the display is the sphere: writing $n$ as the unit vector of $\mathbb{R}^3$, the map $n\mapsto P(n)$ is one to one onto $\{P:P^2=P,\ P=P^{\dagger},\ \operatorname{tr}P=1\}$, and $n$ and $-n$ give the complementary pair. So one index set serves both readings, and the display names it as the sphere of axes.</p>
+<p><strong>No canonical member.</strong> Nothing in the algebra singles out an axis, so nothing singles out a plane, an ideal or a bispinor space. A statement about one of them is a statement about all, and the axis is a parameter.</p>
+<p><strong>As sets, one space.</strong> Every bispinor space is $M_2(\mathbb{C})$; what varies is the splitting. The ideals, by contrast, are proper subspaces and genuinely differ from axis to axis.</p>
+<h2 id="what-the-family-teaches">What the Family Teaches</h2>
+<p><strong>The other carriers do not move.</strong> $\mathbb{C}\mathrm I_2$ and $\mathfrak{su}(2)$ are the same at every axis; only the spin-half closure moves, because only it is built from an idempotent.</p>
+<p><strong>Spaces exceed carriers.</strong> There are three carriers and infinitely many ideals, because a carrier is a module and a module can be realised in many subspaces.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>The axis $n=e_3$.</strong> $P=\operatorname{diag}(1,0)$, $P_{\perp}=\operatorname{diag}(0,1)$. The ideal $S_+$ is the set of matrices with second column zero:
+$$
+S_+=\left\{\begin{pmatrix}a&0\\ c&0\end{pmatrix}\right\},\qquad \dim_\mathbb{C}=2 .
+$$
+The plane is the set of matrices $\begin{pmatrix}\lambda&0\\0&0\end{pmatrix}$.</p>
+<p><strong>The transverse direction.</strong> $\sigma_1P=\begin{pmatrix}0&0\\1&0\end{pmatrix}$ is in $S_+$ and not in the plane: this is the second complex line of the ideal.</p>
+<p><strong>The rotor about $e_3$.</strong> $A=\operatorname{diag}(e^{-i\theta/2},e^{i\theta/2})$, and $AP=e^{-i\theta/2}P$.</p>
+<h2 id="where-math105-differs">Where $n=2$ Differs</h2>
+<p><strong>The dimension of the ideal.</strong> At $n=2$ a minimal left ideal has complex dimension two and real dimension four; the plane inside it has real dimension two. At order $n$ the ideal has complex dimension $n$, and the plane is still a line.</p>
+<p><strong>The index of the family.</strong> At $n=2$ the family of projections is the sphere $S^2$, indexed by the real projective plane of axes. At order $n$ the family is the complex projective space $\mathbb{CP}^{n-1}$, of real dimension $2n-2$, which is bigger than the space of real axes.</p>
+<p><strong>The bispinor space.</strong> At $n=2$ the splitting into two ideals of equal dimension is a splitting into $2+2$. At order $n$ it is $n+n$, and the Peirce corners number $n^2$.</p>
+<h2 id="summary">Summary</h2>
+<p>The spin-half carrier is the plane $\mathbb{C}P$ at a rank-one projection, of real dimension two, with weights $\pm\tfrac12$ and a full turn acting as $-1$. It is invariant under the rotations about $n$ alone, since a transverse multiplication leaves the line.</p>
+<p>The first closure is the minimal left ideal $M_2P$, of complex dimension two, closed under left multiplication by every matrix and minimal with that property. The second closure is the Peirce splitting $M_2=M_2P\oplus M_2P_{\perp}$, of complex dimension four: as a set the bispinor space is the algebra, and what varies with the axis is the splitting.</p>
+<p>The family is indexed by the sphere of axes, with $n$ and $-n$ giving the complementary pair; there is no canonical member, and the only carrier whose closure moves with the axis is this one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P=\tfrac12(\mathrm I_2+n\cdot\sigma)$</td>
+<td>rank-one projection at the axis $n$</td>
+</tr>
+<tr>
+<td>$P_{\perp}=\mathrm I_2-P$</td>
+<td>the complementary projection</td>
+</tr>
+<tr>
+<td>$\Sigma=\mathbb{C}P$</td>
+<td>the spin-half plane</td>
+</tr>
+<tr>
+<td>$S_\pm=M_2P,\,M_2P_{\perp}$</td>
+<td>the two minimal left ideals</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the rotation angle, twice the rotor angle</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>the rotor matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-half-bispinor-spaces.html">Introduction to the Spin-Half Bispinors Spaces</a>, for the source's family and its two closures.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html">The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$</a>, for the determinant on the ideal.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$</a>, for the spectrum of an element of the ideal.</li>
+<li><a href="spinors-and-dirac-spinors-in-the-biquaternion-algebra-in-m2c.html">Spinors and Dirac Spinors in the Biquaternion Algebra in $M_2(\mathbb{C})$</a>, for the elements of these spaces read as spinors.</li>
+<li><a href="the-carriers-the-representation-the-spin-and-the-closure-in-m2c.html">From the Spin to the Carriers and the Closures in $M_2(\mathbb{C})$</a>, for the three carriers and the four closures.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Which Spin Lives in Which Reading at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The four lists of The Four Carrier Lists of One Algebra use the same sixteen dimensions, and the question is which spin, that is which label…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="which-spin-lives-in-which-reading-at-math0"><strong>Which Spin Lives in Which Reading at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The four lists of <em>The Four Carrier Lists of One Algebra</em> use the same sixteen dimensions, and the question is which spin, that is which label, occurs in which reading. The article answers with a table and with the diagonal contents of the factorised and block readings.</p>
+<p><strong>The order of the article.</strong> The first section fixes the table of spins against the four readings. The second computes the diagonal contents. The third checks them against the Clebsch–Gordan rule and finds $V_2\oplus3V_1\oplus2V_0$ of dimensions $5+9+2$. The fourth identifies the half-integer pair. The fifth draws the lesson and the boundary.</p>
+<p><strong>It assumes</strong> <em>The Four Carrier Lists of One Algebra at $n=4$</em> for the four lists and <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the principal one. The row at order two is <em>Which Spin Lives in Which Reading</em>.</p>
+<p><strong>The result in one line.</strong> Spin $3$ occurs as a piece only in the principal reading, spin $2$ in the principal reading and as a diagonal content of the factorised one, spin $1$ in three readings, and the half-integer $\tfrac32$ only on the module and on the minimal left ideals.</p>
+<p><strong>Boundaries.</strong> The article compares the readings and computes the diagonal contents; it does not compute the Casimir of the factorised or block groups, which would refine the diagonal contents.</p>
+<h2 id="the-table">The Table</h2>
+<p><strong>Proposition.</strong> The occurrences of the spins in the four readings are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>spin</th>
+<th>dimension</th>
+<th>principal</th>
+<th>$U(4)$</th>
+<th>factorised</th>
+<th>block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$3$</td>
+<td>$7$</td>
+<td>piece $V_3$</td>
+<td>none</td>
+<td>content of $(1,1)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$5$</td>
+<td>piece $V_2$</td>
+<td>none</td>
+<td>content of $(1,1)$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\tfrac32$</td>
+<td>$4$</td>
+<td>module only</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$1$</td>
+<td>$3$</td>
+<td>piece $V_1$</td>
+<td>none</td>
+<td>pieces $(1,0)$ and $(0,1)$</td>
+<td>content of the diagonal blocks</td>
+</tr>
+<tr>
+<td>$\tfrac12$</td>
+<td>$2$</td>
+<td>none</td>
+<td>none</td>
+<td>none</td>
+<td>the pair in the corners</td>
+</tr>
+<tr>
+<td>$0$</td>
+<td>$1$</td>
+<td>piece $V_0$</td>
+<td>the scalars</td>
+<td>piece $(0,0)$</td>
+<td>the scalars of each block</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The principal column is the decomposition of the tensor square. The $U(4)$ column is the decomposition $\mathbb{C}\mathrm I\oplus\mathfrak{sl}_4$, and the traceless part contains no proper invariant piece. The factorised column is the tensor product $1\otimes1+1\otimes3+3\otimes1+3\otimes3$, whose diagonal contents are computed in the next section. The block column is the splitting into the two diagonal and two off-diagonal blocks.</p>
+<p><strong>Corollary.</strong> Spin $3$ occurs as a piece in the principal reading alone, and spin $2$ as a piece in the principal reading alone.</p>
+<p><em>Proof.</em> The table: the other lists have no piece of dimension $7$ or $5$.</p>
+<p><strong>Corollary.</strong> Spin $1$ occurs in three readings: as the piece $V_1$, as the two triplets of the factorised list, and as the diagonal content of the block list.</p>
+<p><em>Proof.</em> The dimensions $3$ in the table.</p>
+<p><strong>The reading.</strong> The table is the precise form of the statement that the phrase "the spins of $M_4(\mathbb{C})$" is ambiguous: the same label appears in different readings and not in others.</p>
+<h2 id="the-diagonal-contents">The Diagonal Contents</h2>
+<p><strong>Proposition.</strong> In the factorised reading, restricting the action to the diagonal copy $SU(2)\subset SU(2)\times SU(2)$ gives the pieces $(1,0)$ and $(0,1)$ both equal to the triplet $V_1$, the piece $(0,0)$ equal to $V_0$, and the piece $(1,1)$ equal to $V_2\oplus V_1\oplus V_0$.</p>
+<p><em>Proof.</em> The diagonal copy acts on $\mathbb{C}^{2}\otimes\mathbb{C}^{2}$ by $g\otimes g$, so on $\operatorname{End}(\mathbb{C}^{2})\otimes\operatorname{End}(\mathbb{C}^{2})$ by the tensor product of the conjugation actions; the pieces $(1,0)$ and $(0,1)$ are the triplets, and $(1,1)$ is the tensor product $V_1\otimes V_1$, which decomposes as $V_2\oplus V_1\oplus V_0$ by the Clebsch–Gordan rule.</p>
+<p><strong>Corollary.</strong> The diagonal contents of the factorised list are $V_2\oplus3V_1\oplus2V_0$, of dimensions $5+9+2=16$.</p>
+<p><em>Proof.</em> One $V_2$ and one $V_1$ and one $V_0$ from $(1,1)$, one $V_1$ from each triplet and one $V_0$ from the trivial piece.</p>
+<p><strong>Corollary.</strong> The principal reading gives $V_3\oplus V_2\oplus V_1\oplus V_0$, of dimensions $7+5+3+1=16$, which is a different decomposition of the same space into the same labels with different multiplicities.</p>
+<p><em>Proof.</em> The principal list and the diagonal contents differ in the multiplicities of $V_3$ and $V_1$.</p>
+<p><strong>The reading.</strong> The factorised reading, restricted to the diagonal, is coarser than the principal one: it forgets the piece of dimension seven and doubles the triplet and the singlet.</p>
+<h2 id="the-half-integer-pair">The Half-Integer Pair</h2>
+<p><strong>Proposition.</strong> In the block reading, the two off-diagonal corner blocks each split into a triplet and a singlet, and the two singlets form a two-dimensional piece on which the labels are the pair $(\tfrac12,\tfrac12)$.</p>
+<p><em>Proof.</em> Each corner is a four-dimensional space of homomorphisms between two two-dimensional spaces; under the block copy it decomposes as the scalars plus the traceless part, $1+3$; the two singlets combine into the two-dimensional piece, which carries the two half-integer eigenvalues.</p>
+<p><strong>Corollary.</strong> The half-integer pair is the only place in the four readings where a label of the form $\tfrac12$ occurs as a piece, and it is not a carrier of the principal copy.</p>
+<p><em>Proof.</em> The table, and the carriers have integer labels.</p>
+<p><strong>Corollary.</strong> The module's label $\tfrac32$ occurs in none of the four lists: it is the label of the module and of the ideals, and not of a piece of the algebra.</p>
+<p><em>Proof.</em> The four lists have integer labels; the module has $\tfrac32$.</p>
+<p><strong>The reading.</strong> The half-integer appears in the block reading as a pair in a corner, in the principal reading not at all, and in the module always. The three occurrences are of different kinds.</p>
+<h2 id="the-lesson">The Lesson</h2>
+<p><strong>Proposition.</strong> The multiplicity of a label depends on the reading: $V_1$ occurs once in the principal reading, three times in the diagonal contents, and twice as a factor in the factorised list.</p>
+<p><em>Proof.</em> The table and the diagonal contents.</p>
+<p><strong>Corollary.</strong> The ambiguity is resolved only by naming the group; without the group the question "how many times does spin one occur" has three answers.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> The Clebsch–Gordan check $5+9+2=16$ confirms that the diagonal contents exhaust the algebra, and the principal check $7+5+3+1=16$ confirms the same for the principal list.</p>
+<p><em>Proof.</em> The two sums.</p>
+<p><strong>The boundary.</strong> The article treats the four readings of the two lists with diagonal contents; a finer analysis would need the Casimir of each group, which is not computed here.</p>
+<h2 id="the-check-of-the-dimensions">The Check of the Dimensions</h2>
+<p><strong>The reading by labels.</strong> The label reading assigns to each carrier one term, of dimension the odd number attached to its label, and the four terms are the isotypic components of the algebra; the check is that the sum of the odd numbers is the square of the dimension of the module.</p>
+<p><strong>The reading by blocks.</strong> The block reading assigns the carriers to the four blocks of the copy, and the check is that each carrier contributes to exactly one block once the labels are grouped by parity; the two odd-dimensional carriers fill the two off-diagonal blocks and the two even ones fill the diagonal.</p>
+<p><strong>The reading by real forms.</strong> The real reading assigns to each carrier its real form, of dimension equal to the complex dimension, and the check is that the real dimensions of the carriers together with their imaginary parts exhaust the thirty-two real dimensions of the algebra.</p>
+<h2 id="summary">Summary</h2>
+<p>The table of spins against the four readings has spin $3$ as a piece in the principal reading only, spin $2$ as a piece there and as a diagonal content of the factorised reading, spin $1$ in three readings, the half-integer $\tfrac32$ on the module and the ideals only, and the half-integer pair in the corners of the block reading.</p>
+<p>The diagonal contents of the factorised list are $V_2\oplus3V_1\oplus2V_0$, of dimensions $5+9+2=16$, checked against the Clebsch–Gordan rule for $(1,1)\cong V_2\oplus V_1\oplus V_0$; the principal list is $V_3\oplus V_2\oplus V_1\oplus V_0$, of dimensions $7+5+3+1=16$.</p>
+<p>A label without a group has no multiplicity. The phrase "the spins of $M_4(\mathbb{C})$" is resolved only by naming the reading.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(1,0),(0,1),(1,1)$</td>
+<td>the pieces of the factorised reading</td>
+</tr>
+<tr>
+<td>$V_k$</td>
+<td>the carrier of label $k$</td>
+</tr>
+<tr>
+<td>$(\tfrac12,\tfrac12)$</td>
+<td>the pair in the corners of the block reading</td>
+</tr>
+<tr>
+<td>$5+9+2$</td>
+<td>the diagonal contents of the factorised list</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-carrier-lists-of-one-algebra-at-n-4.html">The Four Carrier Lists of One Algebra at $n=4$</a>, for the four lists.</li>
+<li><a href="the-su2-of-m4c-acting-on-sixteen-dimensions.html">The $\mathrm{SU}(2)$ of $M_4(\mathbb{C})$ Acting on Sixteen Dimensions</a>, for the action.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the principal list.</li>
+<li><a href="which-spin-lives-in-which-reading.html">Which Spin Lives in Which Reading</a>, for the row at order two.</li>
+<li><a href="the-spin-decomposition-of-m4c.html">The Spin Decomposition of $M_4(\mathbb{C})$</a>, for the weights.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

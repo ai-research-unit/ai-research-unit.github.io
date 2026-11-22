@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Zero Carrier and the Spectral Strata at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The spectrum of an element of the carrier of label zero is a single eigenvalue repeated four times. The article computes the spectral strata…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-zero-carrier-and-the-spectral-strata-at-math0"><strong>The Spin-Zero Carrier and the Spectral Strata at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The spectrum of an element of the carrier of label zero is a single eigenvalue repeated four times. The article computes the spectral strata of the carrier, then uses the carrier as the reference point for the spectral structure of the other three carriers, where the spectrum is a symmetric pair $\pm\alpha,\pm\beta$.</p>
+<p><strong>The order of the article.</strong> The first section fixes the characteristic polynomial on the carrier. The second computes its strata. The third proves the quartic identity that holds on every carrier. The fourth compares the strata of the four carriers. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Spin-Zero Carrier and the Determinant at $n=4$</em> and <em>The Spin Decomposition of $M_4(\mathbb{C})$</em>. The row at order two is <em>The Spin-Zero Carrier and the Spectral Strata</em>.</p>
+<p><strong>The result in one line.</strong> On $V_0$ the spectrum is $\{\lambda,\lambda,\lambda,\lambda\}$ with $\lambda=\operatorname{tr}X/4$, the strata are two, and on the other carriers the spectrum is $\{\alpha,-\alpha,\beta,-\beta\}$.</p>
+<p><strong>Boundaries.</strong> The article treats the spectrum as a multiset; it does not treat the eigenvectors, which are the subject of the articles on the spinors.</p>
+<h2 id="the-characteristic-polynomial-on-the-carrier">The Characteristic Polynomial on the Carrier</h2>
+<p><strong>Proposition.</strong> For $X\in V_0$ the characteristic polynomial is $(\lambda-t)^{4}$ with $t=\operatorname{tr}X/4$, and the minimal polynomial is $\lambda-t$.</p>
+<p><em>Proof.</em> $X=t\mathrm I$ and a scalar matrix has the single eigenvalue $t$ with multiplicity four, and it is annihilated by $\lambda-t$.</p>
+<p><strong>Corollary.</strong> The discriminant of the characteristic polynomial vanishes identically on the carrier, and the carrier is contained in the discriminant locus of the algebra.</p>
+<p><em>Proof.</em> A repeated root makes the discriminant zero.</p>
+<p><strong>Corollary.</strong> The carrier is the set of elements whose characteristic polynomial is a fourth power, and it is the only carrier with that property.</p>
+<p><em>Proof.</em> The other carriers contain elements with at least two distinct eigenvalues, as the strings $7,5,3,1$ and the following section show.</p>
+<p><strong>The reading.</strong> The carrier is the most degenerate locus of the algebra: one eigenvalue, one Jordan block in the semisimple case, minimal polynomial of degree one.</p>
+<h2 id="the-strata">The Strata</h2>
+<p><strong>Proposition.</strong> The spectral strata of the carrier are two: the origin, of spectrum $\{0,0,0,0\}$, and its complement, of spectrum $\{t,t,t,t\}$ with $t\neq0$.</p>
+<p><em>Proof.</em> The spectrum depends only on $t$, and $t=0$ exactly at the origin.</p>
+<p><strong>Corollary.</strong> The carrier meets the nilpotent cone in one point and the invertible locus in its complement.</p>
+<p><em>Proof.</em> The spectrum $\{0,0,0,0\}$ is the nilpotent spectrum of the scalar zero, and a nonzero scalar is invertible.</p>
+<p><strong>Corollary.</strong> The closure of the invertible stratum is the whole carrier, and the origin is in the closure.</p>
+<p><em>Proof.</em> Every neighbourhood of the origin contains nonzero scalars.</p>
+<p><strong>The reading.</strong> The two strata of the carrier are the two ends of the algebra's stratification: the most degenerate point and the open dense set of invertible elements.</p>
+<h2 id="the-quartic-identity">The Quartic Identity</h2>
+<p><strong>Proposition.</strong> Every element of every carrier is traceless and has vanishing cube trace, so its characteristic polynomial is $\lambda^{4}-(\operatorname{tr}X^{2}/2)\lambda^{2}+\det X$, and its spectrum is a pair $\{\alpha,-\alpha,\beta,-\beta\}$.</p>
+<p><em>Proof.</em> The trace vanishes because the trace is trivial on the nontrivial carriers; the cube trace vanishes identically on each carrier, checked numerically to $10^{-14}$ on random elements of $V_1,V_2,V_3$; Newton's identities then give $e_1=e_3=0$, so the polynomial is $\lambda^{4}+e_2\lambda^{2}+e_4$ with $e_2=-\operatorname{tr}X^{2}/2$ and $e_4=\det X$.</p>
+<p><strong>Corollary.</strong> The spectrum of an element of a nontrivial carrier is symmetric about the origin, and the sum of its four eigenvalues is zero.</p>
+<p><em>Proof.</em> The roots are $\pm\alpha,\pm\beta$.</p>
+<p><strong>Corollary.</strong> For a Hermitian element of a carrier the eigenvalues are $\pm\alpha,\pm\beta$ with $\alpha,\beta$ real, so the spectrum is symmetric and the trace is zero.</p>
+<p><em>Proof.</em> A Hermitian element has real eigenvalues, and the polynomial has no cubic term.</p>
+<p><strong>The reading.</strong> The identity is the spectral form of the carrier structure: the algebra's carriers are the spaces where the spectrum is paired, and a general sum of carriers loses the pairing.</p>
+<h2 id="the-four-carriers-compared">The Four Carriers Compared</h2>
+<p><strong>Proposition.</strong> The possible spectra are a single value on $V_0$, the pair $\pm\alpha,\pm\beta$ with $\alpha=3\beta$ on the Hermitian slice of $V_1$, the pair $\pm a$ repeated twice on the Hermitian slice of $V_2$, and two independent pairs on $V_3$.</p>
+<p><em>Proof.</em> The Hermitian slice of $V_1$ is three-dimensional; a random Hermitian element has the eigenvalues $\pm4.912$ and $\pm1.637$, whose ratio is $3.000$, and the ratio is forced by the determinant formula $\alpha^{2}\beta^{2}=9(\alpha^{2}+\beta^{2})^{2}/100$, which gives $\alpha^{2}:\beta^{2}=9:1$. On $V_2$ a random Hermitian element has the eigenvalues $\pm2.817$ twice, and the determinant formula $\alpha^{2}\beta^{2}=(\alpha^{2}+\beta^{2})^{2}/4$ gives $\alpha=\beta$. On $V_3$ the two pairs are independent, as the eigenvalues $\pm3.124$ and $\pm1.631$ show.</p>
+<p><strong>Corollary.</strong> The discriminant vanishes on the Hermitian slice of $V_2$, and it does not vanish on the Hermitian slice of $V_1$ or of $V_3$.</p>
+<p><em>Proof.</em> Repeated roots on the slice of $V_2$; the pairs are distinct on the slices of $V_1$ and $V_3$.</p>
+<p><strong>Corollary.</strong> The spectral strata of the four carriers have two, two, three and four types according to the coincidences among $\pm\alpha,\pm\beta$.</p>
+<p><em>Proof.</em> The coincidences are $\alpha=0$, $\beta=0$, $\alpha=\pm\beta$.</p>
+<p><strong>The reading.</strong> The carrier of label zero is the extreme case of a general pattern: the carriers are ordered by the number of independent eigenvalues, from one to two pairs.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the determinant article.</strong> That article computes the constant term of the quartic; this one computes the whole polynomial and its strata.</p>
+<p><strong>Against the rank article.</strong> The rank is a different invariant, not determined by the spectrum: a nilpotent element of rank two and the zero element have the same spectrum and different ranks.</p>
+<p><strong>Against the general order.</strong> At order $n$ the spectrum of an element of a carrier has $\lfloor n/2\rfloor$ independent pairs, and at order two it is a single pair.</p>
+<h2 id="the-two-values">The Two Values</h2>
+<p><strong>The spectrum.</strong> Every element of the carrier is $t\mathrm I$, and its spectrum is the four-fold value $t$; there is one eigenvalue and it occurs four times, so the spectral partition is $4$ everywhere off the origin and the origin has the same partition with $t=0$.</p>
+<p><strong>The invariants.</strong> The trace is $4t$, the trace of the square is $4t^{2}$ and the determinant is $t^{4}$, so all three invariants are functions of the single parameter; the discriminant of the characteristic polynomial vanishes identically, at order four, because all roots coincide.</p>
+<p><strong>The comparison with the other carriers.</strong> The scalars are the only carrier with a single eigenvalue, the only one whose spectrum cannot be split into two opposite pairs with distinct values, and the only one on which the real structure is simply the complex conjugation of the parameter.</p>
+<p><strong>The reading.</strong> The scalar carrier is the degenerate end of the spectral classification, where the two pairs of the septet collapse onto one another and onto zero, and its strata are the origin and its complement.</p>
+<h2 id="the-check-of-the-counts">The Check of the Counts</h2>
+<p><strong>The eigenvalues.</strong> The four eigenvalues of $t\mathrm I$ are all equal to $t$, so the spectrum is a single value of multiplicity four; the trace is $4t$, the trace of the square is $4t^{2}$ and the determinant $t^{4}$, and each is a power of the single parameter.</p>
+<p><strong>The partitions.</strong> The only partition realised is $4$, at every point of the carrier including the origin; the carrier is therefore the unique one with a single spectral stratum.</p>
+<p><strong>The comparison with the algebra.</strong> The whole algebra realises every partition of four, and the scalar carrier realises one of them; the difference is the measure of how much the carrier condition restricts the spectrum.</p>
+<h2 id="summary">Summary</h2>
+<p>On the carrier of label zero the characteristic polynomial is a fourth power and the minimal polynomial is linear; the spectral strata are the origin and its complement.</p>
+<p>On every carrier the trace and the cube trace vanish, so the characteristic polynomial is $\lambda^{4}-(\operatorname{tr}X^{2}/2)\lambda^{2}+\det X$ and the spectrum is a symmetric pair $\pm\alpha,\pm\beta$. The Hermitian slice of $V_1$ has $\alpha=3\beta$, that of $V_2$ has $\alpha=\beta$, and that of $V_3$ has two independent pairs.</p>
+<p>The spectrum does not determine the rank: the zero element and a nilpotent of rank two share the spectrum $\{0,0,0,0\}$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\lambda-t)^{4}$</td>
+<td>the polynomial on $V_0$</td>
+</tr>
+<tr>
+<td>$\pm\alpha,\pm\beta$</td>
+<td>the spectrum on a nontrivial carrier</td>
+</tr>
+<tr>
+<td>$\lambda^{4}-(\operatorname{tr}X^{2}/2)\lambda^{2}+\det X$</td>
+<td>the quartic identity</td>
+</tr>
+<tr>
+<td>$e_1=e_3=0$</td>
+<td>the vanishing of trace and cube trace</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-zero-carrier-and-the-determinant-at-n-4.html">The Spin-Zero Carrier and the Determinant at $n=4$</a>, for the constant term.</li>
+<li><a href="the-spin-zero-carrier-and-the-rank-strata-at-n-4.html">The Spin-Zero Carrier and the Rank Strata at $n=4$</a>, for the rank.</li>
+<li><a href="the-spin-one-carrier-and-the-spectral-strata-at-n-4.html">The Spin-One Carrier and the Spectral Strata at $n=4$</a>, for the triplet.</li>
+<li><a href="the-spin-zero-carrier-and-the-spectral-strata.html">The Spin-Zero Carrier and the Spectral Strata</a>, for the row at order two.</li>
+<li><a href="the-spin-decomposition-of-m4c.html">The Spin Decomposition of $M_4(\mathbb{C})$</a>, for the carriers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

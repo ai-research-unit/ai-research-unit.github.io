@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Sided Operators on the N-Degenerate Sector in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. On the null cone,, the operator is singular. What is its array, its rank, its image, its kernel, its spectrum, its Jordan type and its…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="two-sided-operators-on-the-n-degenerate-sector-in-math0"><strong>Two-Sided Operators on the N-Degenerate Sector in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> On the null cone $\det A=0$, $A\neq0$, the operator $\mathrm{Sd}_A(Y)=AYA^{\dagger}$ is singular. What is its array, its rank, its image, its kernel, its spectrum, its Jordan type and its one-parameter group, on each of the two strata?</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="two-sided-operators-on-the-n-degenerate-sector.html">Two-Sided Operators on the N-Degenerate Sector</a>. The source's formula $\mathrm{Sd}_{\tilde Q}(\tilde X)=4a^2(v^{\dagger}\mathsf M_2(\tilde X)v)uu^{\dagger}$ is the whole article; the display $A=\mathsf M_2(\tilde Q)$ makes it a statement about a rank-one matrix and the two unit vectors of its singular value decomposition. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. The closed form $\mathrm{Sd}_A(Y)=4a^2(v^{\dagger}Yv)uu^{\dagger}$ and its consequences: rank one, image the line $\mathbb{C}uu^{\dagger}$, kernel of dimension three. The two strata: on $\Sigma_{01}$ the operator is $|c|^2$ times an idempotent, diagonalizable with spectrum $\{|c|^2,0,0,0\}$; on $\Sigma_{00}$ it is square-zero, with Jordan type $2+1+1$. The trace $|c|^2=4a^2\cos^2\theta$. The adjoint and the sector preservation. The exponentials. The fact that the image line is a null line, that is a rank-one projection of determinant zero.</p>
+<p><strong>What the article does not do.</strong> It does not treat the one-sided operators, which are <a href="one-sided-operators-on-the-n-degenerate-sector-in-m2c.html">One-Sided Operators on the N-Degenerate Sector in $M_2(\mathbb{C})$</a>. It does not treat the invertible case, which is <a href="two-sided-operators-on-the-n-regular-sector-in-m2c.html">Two-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>A note on the source.</strong> The source's text stops in the middle of the proof of its rank theorem, although its plan lists further sections. The statements below are computed from the display where the source is silent, and they agree with every statement the source makes before it stops.</p>
+<p><strong>Conventions.</strong> The display is $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, so $\operatorname{tr}A=2Q_t$ and $\det A=N=Q_t^2+B^2$. On the null cone, $A=2auv^{\dagger}$ with $u,v$ unit and $a=\lVert A\rVert_F/2$; the overlap is $v^{\dagger}u=\operatorname{tr}A/(2a)=Q_t/a=\cos\theta$. The strata are $\Sigma_{01}$ with $v^{\dagger}u\neq0$ and $\Sigma_{00}$ with $v^{\dagger}u=0$. Inner products on matrices are $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$.</p>
+<p><strong>Boundaries.</strong> The two-sided family is <a href="the-hermitian-pair-of-operators-acting-on-two-sides-in-m2c.html">The Hermitian Pair of Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>. The rank-one projections are <a href="the-spin-half-bispinor-spaces-and-n-norm-regularity-in-m2c.html">The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$</a>. The operator table is <a href="introduction-to-the-operators-on-the-four-sectors-in-m2c.html">Introduction to the Operators on the Four Sectors in $M_2(\mathbb{C})$</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, and the display is <a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>.</p>
+<p><strong>Letters.</strong> $A=2auv^{\dagger}$ is the parameter, $a$ the singular value, $u,v$ the slots, $P=uu^{\dagger}$, $P'=vv^{\dagger}$, $c=\operatorname{tr}A$, and $\theta$ the angle between the slots.</p>
+<h2 id="the-closed-form">The Closed Form</h2>
+<p><strong>The formula.</strong> For $A=2auv^{\dagger}$ and every $Y$,
+$$
+\mathrm{Sd}_A(Y)=AYA^{\dagger}=4a^2\,u\left(v^{\dagger}Yv\right)u^{\dagger}=4a^2\left(v^{\dagger}Yv\right)P,\qquad P=uu^{\dagger}.
+$$
+Verified on a random $Y$ with residual $2\cdot10^{-14}$.</p>
+<p><strong>The reading.</strong> The number $v^{\dagger}Yv$ is a scalar; the operator writes it on the fixed rank-one projection $P$. Everything about the two-sided operator on the null cone follows from that single sentence.</p>
+<p><strong>The rank.</strong> The scalar $v^{\dagger}Yv$ is not identically zero, since $Y=P$ gives $v^{\dagger}Pv=|v^{\dagger}u|^2$; so the rank is exactly one. The image is
+$$
+\operatorname{im}\mathrm{Sd}_A=\mathbb{C}P=\mathbb{C}uu^{\dagger},
+$$
+a line, on both strata.</p>
+<p><strong>The kernel.</strong> The kernel is
+$$
+\ker\mathrm{Sd}_A=\{Y:v^{\dagger}Yv=0\},
+$$
+one complex linear condition, hence of complex dimension three. Verified on both strata.</p>
+<p><strong>The scalar collapse.</strong> $\mathrm{Sd}_A=4a^2\,\mathrm{Sd}_{A_0}$ with $A_0=uv^{\dagger}$. The scalar is the square of the one-sided scalar $2a$, which is the doubling rule read at the null cone.</p>
+<p><strong>The trace.</strong> $\operatorname{tr}\mathrm{Sd}_A=4a^2|v^{\dagger}u|^2=|c|^2$, verified to $10^{-15}$. The determinant is zero, since the rank is one.</p>
+<h2 id="the-stratum-math59">The Stratum $\Sigma_{01}$</h2>
+<p><strong>The projection form.</strong> With $A=c\Pi$ and $\Pi^2=\Pi$,
+$$
+\mathrm{Sd}_A=|c|^2\mathrm{Sd}_\Pi,\qquad \mathrm{Sd}_\Pi^2=\mathrm{Sd}_\Pi,\qquad \mathrm{Sd}_A^2=|c|^2\mathrm{Sd}_A .
+$$
+Verified: the idempotence of $\mathrm{Sd}_\Pi$ to $7\cdot10^{-16}$ and the second identity to $1.4\cdot10^{-14}$.</p>
+<p><strong>The spectrum.</strong> The four eigenvalues are $|c|^2,0,0,0$, with algebraic multiplicities $1$ and $3$ and the same geometric multiplicities, so the operator is diagonalizable with minimal polynomial $X(X-|c|^2)$; verified on a non-Hermitian idempotent. The eigenvalue $|c|^2=4a^2\cos^2\theta$ is the square of the singular value times the squared overlap.</p>
+<p><strong>The projection is oblique.</strong> $\mathrm{Sd}_\Pi$ is a projection but not an orthogonal projection unless $\Pi$ is Hermitian: its adjoint is $\mathrm{Sd}_{\Pi^{\dagger}}$, and $\Pi^{\dagger}\neq\Pi$ exactly when the two slots are not parallel, that is $\kappa>1$.</p>
+<p><strong>The image.</strong> The image line is $\mathbb{C}P$ with $P=uu^{\dagger}$, which is a rank-one projection, hence an idempotent of determinant zero:
+$$
+P^2=P,\qquad P^{\dagger}=P,\qquad \det P=0 .
+$$
+It is the matrix form of the dictionary row "idempotent of norm zero".</p>
+<h2 id="the-stratum-math79">The Stratum $\Sigma_{00}$</h2>
+<p><strong>The square-zero form.</strong> With $v^{\dagger}u=0$,
+$$
+\mathrm{Sd}_A^2(Y)=4a^2\left(v^{\dagger}\left(4a^2(v^{\dagger}Yv)P\right)v\right)P=16a^4(v^{\dagger}Pv)(v^{\dagger}Yv)P=0,
+$$
+because $v^{\dagger}Pv=|v^{\dagger}u|^2=0$. So $\mathrm{Sd}_A^2=0$; verified exactly, and $\operatorname{tr}\mathrm{Sd}_A=0$.</p>
+<p><strong>The Jordan type.</strong> The ranks of $\mathrm{Sd}_A^k$ are $4,1,0$, so the type is
+$$
+J_2(0)\oplus0\oplus0 .
+$$
+One Jordan chain of length two, and two zero directions.</p>
+<p><strong>The meaning.</strong> On $\Sigma_{01}$ the operator is a scaled projection, on $\Sigma_{00}$ a square-zero map onto a single null line. The difference is exactly the vanishing of the overlap, which is the difference between the two strata.</p>
+<h2 id="adjoints-and-sectors">Adjoints and Sectors</h2>
+<p><strong>The adjoint.</strong> For the inner product $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$,
+$$
+\left\langle\mathrm{Sd}_A(X),Y\right\rangle=\tfrac12\operatorname{tr}\left(Y^{\dagger}AXA^{\dagger}\right)=\tfrac12\operatorname{tr}\left(A^{\dagger}Y^{\dagger}AX\right)=\left\langle X,\mathrm{Sd}_{A^{\dagger}}(Y)\right\rangle,
+$$
+so $\mathrm{Sd}_A^{*}=\mathrm{Sd}_{A^{\dagger}}$. The operator is self-adjoint exactly when $A$ is Hermitian.</p>
+<p><strong>The sectors.</strong> If $X^{\dagger}=\pm X$ then $\left(AXA^{\dagger}\right)^{\dagger}=\pm AXA^{\dagger}$, so both strata preserve the Hermitian and the skew sectors, and there are two real $4\times4$ arrays.</p>
+<p><strong>The positivity.</strong> On $\Sigma_{01}$ with $A$ Hermitian, $\mathrm{Sd}_A$ is a non-negative multiple of an orthogonal projection of rank one, so it is positive semidefinite of rank one. On $\Sigma_{00}$ it is never self-adjoint, since a non-zero square-zero map cannot be self-adjoint.</p>
+<p><strong>The composition.</strong> $\mathrm{Sd}_{AA'}=\mathrm{Sd}_A\mathrm{Sd}_{A'}$ holds at every point, so the map $A\mapsto\mathrm{Sd}_A$ is a representation even where it is not invertible.</p>
+<h2 id="the-exponential">The Exponential</h2>
+<p><strong>On $\Sigma_{01}$.</strong> Because $\mathrm{Sd}_A=|c|^2\mathrm{Sd}_\Pi$ with $\mathrm{Sd}_\Pi^2=\mathrm{Sd}_\Pi$,
+$$
+\exp\left(t\,\mathrm{Sd}_A\right)=\mathrm I_4+\left(e^{t|c|^2}-1\right)\mathrm{Sd}_\Pi,
+$$
+verified to $7\cdot10^{-15}$.</p>
+<p><strong>On $\Sigma_{00}$.</strong> Because $\mathrm{Sd}_A^2=0$,
+$$
+\exp\left(t\,\mathrm{Sd}_A\right)=\mathrm I_4+t\,\mathrm{Sd}_A,
+$$
+verified exactly.</p>
+<p><strong>The contrast.</strong> The two-sided group is a scaled projection flow on $\Sigma_{01}$ and a transvection on $\Sigma_{00}$. The one-sided groups of the same elements are a projection flow and a transvection as well, with the scalar $c$ instead of $|c|^2$: the two-sided reading squares the rate and keeps the rank-one image.</p>
+<h2 id="worked-examples">Worked Examples</h2>
+<p><strong>A Hermitian idempotent.</strong> $A=\operatorname{diag}(2,0)$: $u=v=(1,0)$, $a=1$, $P=\operatorname{diag}(1,0)$, and $\mathrm{Sd}_A(Y)=4Y_{11}E_{11}$, of rank one, trace $4$ and square $4\,\mathrm{Sd}_A$.</p>
+<p><strong>A non-Hermitian idempotent.</strong> The idempotent with $\kappa=2.07721$ has $|c|^2=6.25$, $\operatorname{tr}\mathrm{Sd}_A=6.25$, and the eigenvalue $6.25$ with geometric multiplicity one.</p>
+<p><strong>The standard nilpotent.</strong> $A=\begin{pmatrix}0&1\\0&0\end{pmatrix}$: $\mathrm{Sd}_A(Y)=(Y_{22})\,E_{11}$, of rank one and square zero, with type $2+1+1$.</p>
+<p><strong>A complex scalar multiple.</strong> $A=c\Pi$ with $\Pi$ Hermitian: $\mathrm{Sd}_A=|c|^2\mathrm{Sd}_\Pi$, an orthogonal projection up to the positive scale $|c|^2$.</p>
+<h2 id="where-math133-differs">Where $n=2$ Differs</h2>
+<p><strong>The rank.</strong> At $n=2$ a non-zero singular matrix has rank one, so the two-sided operator has rank one and its image is a line. At order $n$ a singular matrix of rank $r$ gives an operator of rank $r^2$ and an image of dimension $r^2$.</p>
+<p><strong>The kernel.</strong> At $n=2$ the kernel is $\{Y:v^{\dagger}Yv=0\}$, of dimension three. At order $n$ it is $\{Y:V^{\dagger}YV=0\}$ for the right slot matrix $V$, of dimension $n^2-1$ when $r=1$.</p>
+<p><strong>The strata.</strong> At $n=2$ the two strata have types $\operatorname{diag}(|c|^2,0,0,0)$ and $J_2(0)\oplus0\oplus0$. At order $n$ the types are partitions of $n^2$ and the second stratum has a longer chain.</p>
+<p><strong>What does not differ.</strong> The closed form $4a^2(v^{\dagger}Yv)uu^{\dagger}$, the scalar collapse, the multiplicativity and the two exponentials are the same at every order.</p>
+<h2 id="summary">Summary</h2>
+<p>On the null cone the matrix is $A=2auv^{\dagger}$ and the two-sided operator is
+$$
+\mathrm{Sd}_A(Y)=4a^2\left(v^{\dagger}Yv\right)uu^{\dagger},
+$$
+of rank one, image the line $\mathbb{C}uu^{\dagger}$ and kernel $\{Y:v^{\dagger}Yv=0\}$ of dimension three; verified to $2\cdot10^{-14}$. Its trace is $|c|^2=4a^2\cos^2\theta$, and its determinant is zero.</p>
+<p>On $\Sigma_{01}$ it is $|c|^2$ times the idempotent $\mathrm{Sd}_\Pi$ of the idempotent $\Pi$, with spectrum $\{|c|^2,0,0,0\}$ and geometric multiplicities $1,3$. On $\Sigma_{00}$ it is square-zero, with Jordan type $J_2(0)\oplus0\oplus0$. The adjoint is $\mathrm{Sd}_{A^{\dagger}}$, both strata preserve the Hermitian and the skew sectors, and the exponentials are $\mathrm I_4+(e^{t|c|^2}-1)\mathrm{Sd}_\Pi$ and $\mathrm I_4+t\mathrm{Sd}_A$.</p>
+<p>The image line is the rank-one projection $uu^{\dagger}$: an idempotent of determinant zero, the matrix form of an idempotent of norm zero.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A=2auv^{\dagger}$</td>
+<td>the parameter on the null cone</td>
+</tr>
+<tr>
+<td>$a=\lVert A\rVert_F/2$</td>
+<td>the singular value</td>
+</tr>
+<tr>
+<td>$u,v$</td>
+<td>the left and right slots</td>
+</tr>
+<tr>
+<td>$P=uu^{\dagger}$</td>
+<td>the rank-one projection spanning the image</td>
+</tr>
+<tr>
+<td>$c=\operatorname{tr}A$</td>
+<td>the eigenvalue on $\Sigma_{01}$</td>
+</tr>
+<tr>
+<td>$\Pi$</td>
+<td>the idempotent with $A=c\Pi$</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the angle between the slots, $\cos\theta=\lvert v^{\dagger}u\rvert$</td>
+</tr>
+<tr>
+<td>$\mathrm{Sd}_A$</td>
+<td>$Y\mapsto AYA^{\dagger}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="two-sided-operators-on-the-n-degenerate-sector.html">Two-Sided Operators on the N-Degenerate Sector</a>, for the source's closed form and its reading through the Peirce corners.</li>
+<li><a href="one-sided-operators-on-the-n-degenerate-sector-in-m2c.html">One-Sided Operators on the N-Degenerate Sector in $M_2(\mathbb{C})$</a>, for the rank-two one-sided operators of the same elements.</li>
+<li><a href="two-sided-operators-on-the-n-regular-sector-in-m2c.html">Two-Sided Operators on the N-Regular Sector in $M_2(\mathbb{C})$</a>, for the invertible case and the doubling rule away from the cone.</li>
+<li><a href="the-hermitian-pair-of-operators-acting-on-two-sides-in-m2c.html">The Hermitian Pair of Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>, for the general two-sided family.</li>
+<li><a href="introduction-to-the-operators-on-the-four-sectors-in-m2c.html">Introduction to the Operators on the Four Sectors in $M_2(\mathbb{C})$</a>, for the sector table in one page.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

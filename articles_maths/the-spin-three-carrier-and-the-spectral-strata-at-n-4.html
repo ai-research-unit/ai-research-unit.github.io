@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Three Carrier and the Spectral Strata at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. On the carrier of label three the spectrum is with and independent, so the carrier realises four spectral strata: the generic one with four…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-three-carrier-and-the-spectral-strata-at-math0"><strong>The Spin-Three Carrier and the Spectral Strata at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> On the carrier of label three the spectrum is $\{\pm\alpha,\pm\beta\}$ with $\alpha$ and $\beta$ independent, so the carrier realises four spectral strata: the generic one with four distinct eigenvalues, the two strata where the pairs collide or one pair vanishes, and the nilpotent stratum. The article computes them.</p>
+<p><strong>The order of the article.</strong> The first section fixes the spectrum and the two invariant parameters. The second lists the strata and their dimensions. The third computes the discriminant. The fourth contrasts the carrier with the quintet and the triplet. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain</em> and <em>The Spin-Two Carrier and the Trace Form at $n=4$</em>.</p>
+<p><strong>The result in one line.</strong> The spectrum on $V_3$ is $\{\pm\alpha,\pm\beta\}$ with $\alpha^{2}+\beta^{2}=-\operatorname{tr}(X^{2})/2$ and $\alpha^{2}\beta^{2}=\det X$, the strata have dimensions $7,6,6,5$, and the discriminant is proportional to $\alpha^{2}\beta^{2}(\alpha^{2}-\beta^{2})^{4}$.</p>
+<p><strong>Boundaries.</strong> The article treats the spectrum as a multiset; the ranks and the forms are treated in the adjacent articles.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>Proposition.</strong> Every element of $V_3$ is traceless with vanishing cube trace, so its characteristic polynomial is $\lambda^{4}+e_2\lambda^{2}+e_4$ and its spectrum is $\{\pm\alpha,\pm\beta\}$ with $\alpha^{2}+\beta^{2}=-e_2=-\operatorname{tr}(X^{2})/2$ and $\alpha^{2}\beta^{2}=e_4=\det X$.</p>
+<p><em>Proof.</em> The trace and the cube trace vanish on the carrier; the polynomial is even, so its roots are paired; Newton's identities give the two elementary symmetric functions displayed.</p>
+<p><strong>Corollary.</strong> The two parameters $q=\operatorname{tr}(X^{2})$ and $d=\det X$ are independent on the carrier, unlike on the quintet.</p>
+<p><em>Proof.</em> The quadric $\operatorname{tr}(X^{2})=0$ carries the matrix unit $E_{03}$, whose determinant is zero, and also elements of rank four, one of which has determinant $14.1472+45.0994\,i$; the two values of the determinant at the same value of $q$ are different, so no function of $q$ can give the determinant.</p>
+<p><strong>Corollary.</strong> The spectrum has at most four distinct values and its multiplicities are those of a partition of four with parts of size at most two.</p>
+<p><em>Proof.</em> The roots come in opposite pairs.</p>
+<p><strong>The reading.</strong> The septet is spectrally two-dimensional: two free parameters, $q$ and $d$, in place of the single parameter of the quintet.</p>
+<h2 id="the-strata">The Strata</h2>
+<p><strong>Proposition.</strong> The spectral strata of the carrier are: the generic stratum, where $\alpha^{2}\neq\beta^{2}$ and both are nonzero, of complex dimension seven; the stratum $\det X=0$, where one pair vanishes, of dimension six; the stratum $\alpha^{2}=\beta^{2}$, where the two pairs collide, of dimension six; and the nilpotent stratum $\alpha=\beta=0$, of dimension five.</p>
+<p><em>Proof.</em> The vanishing of the determinant is one equation; the collision of the pairs is the vanishing of the discriminant, also one equation; the nilpotent stratum imposes both, and the conditions are independent since $q$ and $d$ are independent parameters.</p>
+<p><strong>Corollary.</strong> The carrier has one open stratum and three closed ones of codimension one or two.</p>
+<p><em>Proof.</em> The dimensions displayed.</p>
+<p><strong>Corollary.</strong> The stratum $\det X=0$ is the union of the strata of rank at most three, and it is a hypersurface cut out by one quartic equation.</p>
+<p><em>Proof.</em> Singularity is the vanishing of the determinant, and the ranks below four are realised by $E_{03}$ and by the nilpotents.</p>
+<p><strong>The reading.</strong> The septet has the richest spectral stratification of the four carriers, with one stratum for each way the two pairs can degenerate.</p>
+<h2 id="the-discriminant">The Discriminant</h2>
+<p><strong>Proposition.</strong> The discriminant of the characteristic polynomial is proportional to $\alpha^{2}\beta^{2}(\alpha^{2}-\beta^{2})^{4}$, so it vanishes exactly on the union of the two hypersurfaces $\det=0$ and $\alpha^{2}=\beta^{2}$.</p>
+<p><em>Proof.</em> The discriminant is the product of the squared differences of the roots: the differences are $2\alpha$, $2\beta$, $\alpha+\beta$, $\alpha-\beta$ and their negatives, and the product of their squares gives the formula.</p>
+<p><strong>Corollary.</strong> The discriminant vanishes to order two on the determinant hypersurface and to order four on the collision hypersurface.</p>
+<p><em>Proof.</em> The exponents in the formula.</p>
+<p><strong>Corollary.</strong> The discriminant is not a square and not a function of the determinant.</p>
+<p><em>Proof.</em> The exponents two and four and the presence of both factors.</p>
+<p><strong>The reading.</strong> The discriminant of the septet is the product of the two independent degenerations, and its two factors are the two ways a symmetric spectrum can fail to be generic.</p>
+<h2 id="the-comparison">The Comparison</h2>
+<p><strong>Proposition.</strong> On the triplet the spectrum is $\pm3\lambda/2,\pm\lambda/2$, one parameter; on the quintet it is $\{\pm s,\pm s\}$, one parameter; on the septet it is $\{\pm\alpha,\pm\beta\}$, two parameters; on the scalars it is $\{t,t,t,t\}$, one parameter.</p>
+<p><em>Proof.</em> The four computations.</p>
+<p><strong>Corollary.</strong> The number of spectral parameters is two for the septet and one for each of the other carriers, so the septet is the only carrier whose spectrum is not a function of a single invariant.</p>
+<p><em>Proof.</em> The comparison.</p>
+<p><strong>Corollary.</strong> The septet is the carrier whose spectral strata have the largest dimensions, since its carrier has the largest dimension.</p>
+<p><em>Proof.</em> The dimensions $7,6,6,5$ against $3,2$ for the triplet and $5,4,4$ for the quintet.</p>
+<p><strong>The reading.</strong> The septet is the least rigid carrier, and its spectral strata are the model for the generic behaviour of the algebra.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the rank article.</strong> The rank strata refine the determinant hypersurface, which is one of the spectral strata.</p>
+<p><strong>Against the Hermitian form article.</strong> The Hermitian slice has the spectrum $\{\pm a,\pm b\}$ with $a$ and $b$ real and independent.</p>
+<p><strong>Against the quintet.</strong> The quintet has the spectrum $\{\pm s,\pm s\}$ and only two strata, and its discriminant is a power of the trace form.</p>
+<h2 id="a-final-observation">A Final Observation</h2>
+<p><strong>The two parameters.</strong> The trace of the square and the determinant are independent on the septet, and each of them is an invariant polynomial of degree two and four respectively; the intermediate symmetric functions vanish identically, so the ring of invariant polynomials on the carrier is generated by two elements and has no odd generator.</p>
+<p><strong>The Hermitian slice.</strong> On the Hermitian slice the two parameters become real and positive: the trace of the square is a sum of squares and the determinant is a product of two positive numbers, so every Hermitian element of the carrier has the spectrum $\{\pm a,\pm b\}$ with $a$ and $b$ real.</p>
+<h2 id="the-strata-and-the-weight-string">The Strata and the Weight String</h2>
+<p><strong>The strata in the weight basis.</strong> In the weight basis the two parameters are the two elementary symmetric functions of the squared eigenvalues, and the strata are the loci where one of them degenerates; the highest weight vector has both parameters zero, so it lies in the smallest stratum.</p>
+<p><strong>The nilpotent stratum.</strong> The nilpotent stratum is the intersection of the two hypersurfaces, and it contains the matrix unit $E_{03}$ of the highest weight; the stratum therefore meets the extreme weight spaces, which is why the septet's spectral picture and its weight picture are different.</p>
+<p><strong>The generic stratum.</strong> The generic element has four distinct eigenvalues, and the four eigenspaces are lines that vary with the element; the carrier is therefore the space of all symmetric spectra, and the generic stratum is its open dense part.</p>
+<p><strong>The reading.</strong> The spectral strata of the septet are organised by the weight string, and the highest weight vector is the element where the two degenerations meet.</p>
+<h2 id="the-check-of-the-counts">The Check of the Counts</h2>
+<p><strong>The eigenvalues.</strong> The four eigenvalues are the two pairs $\pm\alpha$ and $\pm\beta$, so the spectrum has two free values and the trace and the cube trace vanish; the two elementary symmetric functions are the sums of squares and the product of squares.</p>
+<p><strong>The partitions.</strong> The partitions realised are $1+1+1+1$ generically, $2+1+1$ when one pair vanishes, $2+2$ when the pairs coincide, and $4$ at the origin; the three degenerate partitions correspond to the three closed strata.</p>
+<p><strong>The comparison with the algebra.</strong> The whole algebra realises the same four partitions, because the septet is the generic carrier; the other carriers realise proper subsets, and the scalar carrier realises only one.</p>
+<h2 id="summary">Summary</h2>
+<p>The spectrum on the carrier of label three is $\{\pm\alpha,\pm\beta\}$ with the two parameters $\operatorname{tr}(X^{2})$ and $\det X$ independent. The spectral strata are the generic stratum of dimension seven, the determinant hypersurface and the collision hypersurface of dimension six, and the nilpotent stratum of dimension five.</p>
+<p>The discriminant is proportional to $\alpha^{2}\beta^{2}(\alpha^{2}-\beta^{2})^{4}$, the product of the two independent degenerations, so the septet is the only carrier whose spectrum is not a function of one invariant.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\{\pm\alpha,\pm\beta\}$</td>
+<td>the spectrum</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(X^{2})$, $\det X$</td>
+<td>the two independent parameters</td>
+</tr>
+<tr>
+<td>$7,6,6,5$</td>
+<td>the dimensions of the strata</td>
+</tr>
+<tr>
+<td>$\alpha^{2}\beta^{2}(\alpha^{2}-\beta^{2})^{4}$</td>
+<td>the discriminant</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-three-carrier-of-m4c.html">Introduction to the Spin-Three Carrier at $n=4$: the Top of the Chain</a>, for the carrier.</li>
+<li><a href="the-spin-three-carrier-and-the-rank-strata-at-n-4.html">The Spin-Three Carrier and the Rank Strata at $n=4$</a>, for the ranks.</li>
+<li><a href="the-spin-three-carrier-and-the-hermitian-form-at-n-4.html">The Spin-Three Carrier and the Hermitian Form at $n=4$</a>, for the Hermitian slice.</li>
+<li><a href="the-spin-two-carrier-and-the-trace-form-at-n-4.html">The Spin-Two Carrier and the Trace Form at $n=4$</a>, for the comparison.</li>
+<li><a href="the-spin-zero-carrier-and-the-spectral-strata-at-n-4.html">The Spin-Zero Carrier and the Spectral Strata at $n=4$</a>, for the scalars.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

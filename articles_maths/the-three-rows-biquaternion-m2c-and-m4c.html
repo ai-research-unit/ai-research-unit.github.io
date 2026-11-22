@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Three Rows: $\mathbb{B}$, $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The corpus treats three algebras in the same way: the biquaternions, the two-by-two complex matrices and the four-by-four complex matrices.…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-three-rows-math0-math1-and-math2"><strong>The Three Rows: $\mathbb{B}$, $M_2(\mathbb{C})$ and $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The corpus treats three algebras in the same way: the biquaternions, the two-by-two complex matrices and the four-by-four complex matrices. The article places the three rows side by side, states which numbers change and which stay the same, and explains why the middle row is not a separate theory but the same one as the first, read over the complex numbers.</p>
+<p><strong>The order of the article.</strong> The first section fixes the three algebras and their dimensions. The second compares their modules and labels. The third compares their decompositions and kernels. The fourth states the law that generates one row from the next. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Biquaternions as a Clifford Algebra</em> and <em>The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</em>.</p>
+<p><strong>The result in one line.</strong> The biquaternions are the real algebra $M_2(\mathbb{C})$, of real dimension eight and complex dimension four, and $M_4(\mathbb{C})$ is the same construction with the module doubled twice: complex dimensions $4\to16$ and $2\to4$.</p>
+<p><strong>Boundaries.</strong> The article compares the rows; the detailed articles for each row remain the reference for the single cases.</p>
+<h2 id="the-three-algebras">The Three Algebras</h2>
+<p><strong>Proposition.</strong> $\mathbb{B}=\mathbb{H}\otimes_{\mathbb{R}}\mathbb{C}$ is isomorphic to $M_2(\mathbb{C})$ as a real algebra, of real dimension eight and complex dimension four, and $M_4(\mathbb{C})$ has complex dimension sixteen and real dimension thirty-two.</p>
+<p><em>Proof.</em> The quaternions form a four-dimensional real algebra and their complexification is the matrix algebra of two-by-two complex matrices, of complex dimension four and real dimension eight; the algebra of four-by-four complex matrices has $16$ complex and $32$ real dimensions.</p>
+<p><strong>Corollary.</strong> The three rows have real dimensions $8$, $8$ and $32$, so the first two coincide as algebras and the third is the next case.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> Each algebra is simple over its own field, so each has no nontrivial two-sided ideals.</p>
+<p><em>Proof.</em> A full matrix algebra is simple, and the biquaternions are a full matrix algebra over the complex numbers.</p>
+<p><strong>The reading.</strong> There are two algebras and three rows: the biquaternion row and the two-by-two row are the same algebra read over different fields.</p>
+<h2 id="the-modules-and-the-labels">The Modules and the Labels</h2>
+<p><strong>Proposition.</strong> The module is $V_{1/2}$ of dimension two for the row of order two and $V_{3/2}$ of dimension four for the row of order four; the label is $(n-1)/2$ in both cases.</p>
+<p><em>Proof.</em> The module is the space of column vectors, of dimension $n$, and the copy acts on it as the symmetric power $\operatorname{Sym}^{n-1}$ of the two-dimensional representation, whose label is $(n-1)/2$.</p>
+<p><strong>Corollary.</strong> The labels of the algebra are the integers $0$ to $n-1$, and the module carries the half-integer label.</p>
+<p><em>Proof.</em> The tensor square of the module with its dual decomposes into the integer labels; the module itself carries the half-integer label.</p>
+<p><strong>Corollary.</strong> At order two the algebra carries the labels zero and one, of dimensions $1$ and $3$; at order four it carries zero to three, of dimensions $1,3,5,7$.</p>
+<p><em>Proof.</em> The dimensions $2k+1$ for the label $k$.</p>
+<p><strong>The reading.</strong> The row of order two has a module of dimension two and one nontrivial carrier; the row of order four has a module of dimension four and three nontrivial carriers.</p>
+<h2 id="the-decompositions-and-the-kernels">The Decompositions and the Kernels</h2>
+<p><strong>Proposition.</strong> In both rows the algebra decomposes into the carriers with multiplicity one, and the kernel of the map from the copy to the special unitary group is $\{\pm\mathrm I\}$.</p>
+<p><em>Proof.</em> The tensor square of the module with its dual is multiplicity-free in both cases; the representation $\operatorname{Sym}^{n-1}$ of the two-dimensional module is faithful up to the sign, so the kernel is the centre of the copy.</p>
+<p><strong>Corollary.</strong> In both rows every summand label is an integer while the module label is half-integral.</p>
+<p><em>Proof.</em> The decomposition of the tensor square.</p>
+<p><strong>Corollary.</strong> The quaternionic structure of the module holds in both rows, and the real forms of the carriers exist in both rows because their labels are integers.</p>
+<p><em>Proof.</em> The indicator of the module is $(-1)^{n-1}$, which is $-1$ for $n=2$ and $n=4$, and the indicator of an integer label is $+1$.</p>
+<p><strong>The reading.</strong> The two rows share the same structural facts: multiplicity-free decomposition, integer carriers, half-integer module, two-element kernel.</p>
+<h2 id="the-law-of-the-rows">The Law of the Rows</h2>
+<p><strong>Proposition.</strong> The passage from the row of order two to the row of order four squares the complex dimension of the algebra, $4\to16$, doubles the dimension of the module, $2\to4$, and multiplies the number of carriers by three, $2\to4$ counting the scalars.</p>
+<p><em>Proof.</em> The dimension of the algebra is $n^{2}$ and that of the module is $n$.</p>
+<p><strong>Corollary.</strong> The real dimension grows from eight to thirty-two, a factor of four, while the complex dimension grows by a factor of four as well.</p>
+<p><em>Proof.</em> The dimensions displayed.</p>
+<p><strong>Corollary.</strong> The next row would have module of dimension six, algebra of dimension thirty-six, label five halves and four nontrivial carriers.</p>
+<p><em>Proof.</em> The law with $n=6$.</p>
+<p><strong>The reading.</strong> The rows form a sequence indexed by the dimension of the module, and each row is generated by the same three ingredients: the module, the copy and the tensor square.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the biquaternion articles.</strong> Those articles treat the row of order two in detail, including the quaternionic real structure.</p>
+<p><strong>Against the spin group article.</strong> That article treats the copy, the symmetric power and the kernel at order four.</p>
+<p><strong>Against the law of the module.</strong> The general statement of the sequence is the subject of <em>The Law of the Module and the Chain of Carriers at Every $n$</em>.</p>
+<h2 id="a-final-observation">A Final Observation</h2>
+<p><strong>The invariants that do not change.</strong> In both rows the algebra is simple, the decomposition is multiplicity-free, the module is quaternionic and the kernel is the centre; the numbers change and the structure does not, which is the reason a single set of proofs serves two rows.</p>
+<p><strong>The row of order six.</strong> The next case would have a module of dimension six, a quaternionic structure again because six minus one is odd, and an algebra of dimension thirty-six with the carriers of labels zero to five.</p>
+<h2 id="the-same-proof-twice">The Same Proof Twice</h2>
+<p><strong>The transfer of the proofs.</strong> Every proof in the row of order four that uses only the Clebsch–Gordan rule, the multiplicity-free decomposition and the sign rule transfers to the row of order two without change, because none of them uses the value of the dimension; the proofs that use the number four, such as the count of the ranks, do not transfer.</p>
+<p><strong>The two kinds of statement.</strong> A statement is structural when it names the module, the copy and the carriers; it is numerical when it names a dimension, a rank or a signature. The structural statements hold in both rows, and the numerical ones must be recomputed.</p>
+<p><strong>The example.</strong> The statement that every carrier label is an integer is structural and holds in both rows; the statement that the left multiplication by a matrix of rank three has rank twelve is numerical and holds only at order four.</p>
+<p><strong>The reading.</strong> The three rows are one theory with numerical parameters, and the comparison is the separation of the statements that survive the change of the parameter from those that do not.</p>
+<h2 id="summary">Summary</h2>
+<p>The biquaternions and the two-by-two complex matrices are the same algebra read over two fields, of dimensions eight real and four complex; the four-by-four complex matrices are the next case, of dimensions thirty-two real and sixteen complex. The module has dimension $n$ and label $(n-1)/2$, and the algebra decomposes into the integer carriers with multiplicity one in both rows.</p>
+<p>The kernel of the map to the special unitary group is the centre in both rows, and the module is quaternionic in both, while the carriers are real type because their labels are integers.</p>
+<p><strong>The place in the corpus.</strong> The comparison fixes the vocabulary of the sequence: module, copy, carriers, kernel, real form. Every later article that speaks of the row of order four is speaking of the same five objects with the numbers of that row, and the row of order two is the smallest instance in which they all occur.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}\cong M_2(\mathbb{C})$</td>
+<td>the biquaternion row</td>
+</tr>
+<tr>
+<td>$M_4(\mathbb{C})$</td>
+<td>the row of order four</td>
+</tr>
+<tr>
+<td>$4\to16$, $2\to4$</td>
+<td>the growth of the dimensions</td>
+</tr>
+<tr>
+<td>$0,1$ and $0,1,2,3$</td>
+<td>the carrier labels</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-biquaternions-as-a-clifford-algebra.html">The Biquaternions as a Clifford Algebra</a>, for the first row.</li>
+<li><a href="the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html">The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</a>, for the third row.</li>
+<li><a href="the-law-of-the-module-and-the-chain-of-carriers.html">The Law of the Module and the Chain of Carriers at Every $n$</a>, for the general statement.</li>
+<li><a href="the-four-carrier-lists-of-one-algebra-at-n-4.html">The Four Carrier Lists of One Algebra at $n=4$</a>, for the readings.</li>
+<li><a href="the-spin-zero-carrier-of-the-biquaternion-algebra.html">The Spin Zero Carrier of the Biquaternion Algebra</a>, for the scalar carrier at order two.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

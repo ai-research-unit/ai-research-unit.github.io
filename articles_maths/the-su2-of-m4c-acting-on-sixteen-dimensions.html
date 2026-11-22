@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $\mathrm{SU}(2)$ of $M_4(\mathbb{C})$ Acting on Sixteen Dimensions — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The principal copy acts on the algebra, and the algebra is a complex space of dimension sixteen, hence a real space of dimension thirty-two.…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-of-math1-acting-on-sixteen-dimensions"><strong>The $\mathrm{SU}(2)$ of $M_4(\mathbb{C})$ Acting on Sixteen Dimensions</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The principal copy acts on the algebra, and the algebra is a complex space of dimension sixteen, hence a real space of dimension thirty-two. The article separates the two numbers, describes the action, and compares it with the action at order two, where the algebra is four-real-dimensional.</p>
+<p><strong>The order of the article.</strong> The first section fixes the two dimensions and the real dimensions of the carriers. The second describes the action and the loss of the algebra structure. The third compares the adjoint action with the left multiplication and the different decompositions they give. The fourth makes the comparison with the biquaternion case. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> and <em>The Four Carrier Lists of One Algebra at $n=4$</em>. The row at order two is <em>The $\mathrm{SU}(2)$ of the Biquaternion Algebra Acting on Four Dimensions</em>.</p>
+<p><strong>The result in one line.</strong> The algebra is sixteen-dimensional over $\mathbb{C}$ and thirty-two-dimensional over $\mathbb{R}$, the four carriers have real dimensions $14,10,6,2$, and the copy acts orthogonally with the kernel $\{\pm\mathrm I\}$.</p>
+<p><strong>Boundaries.</strong> The article treats the principal copy only; the other groups acting on the same space are the subject of <em>The Four Carrier Lists of One Algebra</em>.</p>
+<h2 id="the-two-dimensions">The Two Dimensions</h2>
+<p><strong>Proposition.</strong> $\dim_{\mathbb{C}}M_4(\mathbb{C})=16$ and $\dim_{\mathbb{R}}M_4(\mathbb{C})=32$.</p>
+<p><em>Proof.</em> The complex dimension is $4^{2}=16$ and the real dimension is twice the complex one.</p>
+<p><strong>Corollary.</strong> The carriers have complex dimensions $7,5,3,1$ and real dimensions $14,10,6,2$.</p>
+<p><em>Proof.</em> A complex subspace of complex dimension $d$ is a real subspace of dimension $2d$.</p>
+<p><strong>Corollary.</strong> The four real dimensions sum to $32$, as the four complex ones sum to $16$.</p>
+<p><em>Proof.</em> $14+10+6+2=32$.</p>
+<p><strong>The reading.</strong> The number sixteen in the title is the complex dimension; the real space on which the copy acts has dimension thirty-two, and the phrase "acting on sixteen dimensions" refers to the complex count.</p>
+<h2 id="the-action">The Action</h2>
+<p><strong>Proposition.</strong> The action $\Phi_q(X)=\rho(q)X\rho(q)^{-1}$ is a real-linear action of $SU(2)$ by complex-linear maps, and its kernel is $\{\pm\mathrm I\}$.</p>
+<p><em>Proof.</em> Conjugation by a matrix is complex-linear and invertible; it preserves the product, so it is an algebra automorphism; the kernel is computed as in <em>Why the Conjugation Labels Are Integer</em>.</p>
+<p><strong>Corollary.</strong> The action is orthogonal for the Hermitian form $\operatorname{tr}(X^{\dagger}Y)$, and it preserves the real and imaginary parts of the entries.</p>
+<p><em>Proof.</em> $\operatorname{tr}((\rho X\rho^{-1})^{\dagger}\rho Y\rho^{-1})=\operatorname{tr}(X^{\dagger}Y)$ because $\rho$ is unitary; a complex-linear map preserving the Hermitian form preserves the real and imaginary parts.</p>
+<p><strong>Corollary.</strong> The action does not preserve the algebra structure as an object of the category of algebras: it preserves the product, but the decomposition into carriers is not a decomposition into ideals.</p>
+<p><em>Proof.</em> The carriers are not closed under multiplication, as <em>The Truncated Rule</em> shows.</p>
+<p><strong>The reading.</strong> The action is by automorphisms, so it preserves the product; what it does not do is respect the product in the sense of splitting the algebra into subalgebras.</p>
+<h2 id="two-commuting-actions">Two Commuting Actions</h2>
+<p><strong>Proposition.</strong> Left multiplication $X\mapsto AX$ and right multiplication $X\mapsto XB$ commute, and the adjoint action is the composition of a left multiplication by $\rho(q)$ with a right multiplication by $\rho(q)^{-1}$.</p>
+<p><em>Proof.</em> $(AX)B=A(XB)$; and $\rho(q)X\rho(q)^{-1}$ is exactly the composition.</p>
+<p><strong>Corollary.</strong> The adjoint action is a subaction of the product of the two one-sided actions, and the two-sided operators $T_{A,B}$ contain the adjoint action as the case $B=A^{-1}$.</p>
+<p><em>Proof.</em> The definitions.</p>
+<p><strong>Corollary.</strong> The decompositions given by left multiplication and by the adjoint action are different: the left action is the defining action on $\mathbb{C}^{4}$ copied sixteen times, with the pieces of dimension four given by the columns, while the adjoint action gives the four carriers.</p>
+<p><em>Proof.</em> Left multiplication by $A$ acts on the columns of $X$ each as $A$ acts on $\mathbb{C}^{4}$; the adjoint action mixes the entries.</p>
+<p><strong>The reading.</strong> The same space carries the module sixteen times under left multiplication and the four carriers under conjugation, which is another instance of the ambiguity of the word "spin".</p>
+<h2 id="the-biquaternion-comparison">The Biquaternion Comparison</h2>
+<p><strong>Proposition.</strong> The biquaternion algebra $\mathbb{B}$ is four-real-dimensional, and the conjugation action of its copy $SU(2)$ decomposes it as the triplet $V_1$ and the scalars $V_0$, of real dimensions $3+1$.</p>
+<p><em>Proof.</em> $\mathbb{B}\cong\mathbb{C}\otimes\mathbb{H}$ has real dimension four and complex dimension two; under conjugation the imaginary quaternions form a triplet and the scalars a singlet.</p>
+<p><strong>Corollary.</strong> The biquaternion action is the defining action on the triplet, and the algebra is the sum of the defining module and the trivial one.</p>
+<p><em>Proof.</em> The conjugation action on $\mathbb{H}$ fixes the real line and rotates the imaginary part.</p>
+<p><strong>Corollary.</strong> The number sixteen is not a dimension at order two: the complex dimension is four and the real dimension is four as well, since the algebra is a real algebra of real dimension four.</p>
+<p><em>Proof.</em> $\mathbb{B}$ is four-real-dimensional, and its complexification is $M_2(\mathbb{C})$.</p>
+<p><strong>The reading.</strong> The two rows share the law $n^{2}$ for the complex dimension and nothing else about the number sixteen; at order two the algebra is four-real-dimensional, and at order four it is thirty-two-real-dimensional.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the four lists.</strong> The four carrier lists are lists of pieces for four groups; this article fixes the principal one and the dimensions of the space on which it acts.</p>
+<p><strong>Against the ideals.</strong> The left multiplication by the algebra is not the conjugation action; the ideals are invariant under the first and not under the second.</p>
+<p><strong>Against the module.</strong> The module has complex dimension four and real dimension eight, and it is not a subspace of the algebra; its action is the defining one and not the adjoint one.</p>
+<h2 id="a-final-observation">A Final Observation</h2>
+<p><strong>The real count.</strong> The algebra has sixteen complex dimensions and thirty-two real dimensions, and the copy acts by thirty-two-by-thirty-two real matrices; the complex count sixteen is the one that matches the four carriers, and the real count is twice it.</p>
+<p><strong>The invariant subspaces.</strong> The invariant real subspaces are the real forms of the complex carriers, and their dimensions are twice the complex dimensions; the four carriers therefore account for the whole real space, with no leftover.</p>
+<h2 id="the-note-on-order-two">The Note on Order Two</h2>
+<p><strong>The lower analogue.</strong> At order two the copy acts on the algebra of four complex dimensions, so the analogue of the sixteen-dimensional space is four-dimensional; the carriers are the scalars and the triplet, and the invariant form is the trace form of the quaternions.</p>
+<p><strong>The comparison.</strong> The multiplication of the dimensions by four between the two rows is the same factor that takes the module of dimension two to the module of dimension four, and the pattern of the carriers is the same with one term fewer.</p>
+<h2 id="the-check-of-the-action">The Check of the Action</h2>
+<p><strong>The invariant subspaces.</strong> The action preserves the four carriers, each of which is irreducible, and it preserves the trace form and the Hermitian form; the invariant subspaces are therefore exactly the sums of carriers, and there are sixteen of them, one for each subset of the four labels.</p>
+<p><strong>The generators.</strong> The three generators act on the algebra by the commutator, and their matrices are sixteen-by-sixteen; the bracket of two of them is the third, so the image of the copy in the algebra of endomorphisms is three-dimensional. Its centraliser is the sum of the four matrix algebras $\operatorname{End}(V_k)$, of total dimension $49+25+9+1=84$, and the algebra generated by the left and right multiplications, of dimension $32$, sits inside it as a proper subalgebra.</p>
+<p><strong>The trace.</strong> The trace of every generator on the algebra vanishes, because the algebra is the tensor square of the module with its dual and the trace is the product of two traceless factors; the action therefore lies in the special linear algebra, as it must.</p>
+<h2 id="summary">Summary</h2>
+<p>The algebra is sixteen-dimensional over $\mathbb{C}$ and thirty-two-dimensional over $\mathbb{R}$, and the principal copy acts on it by conjugation, which is a real-linear action by complex-linear automorphisms with kernel $\{\pm\mathrm I\}$. The four carriers have real dimensions $14,10,6,2$.</p>
+<p>Left multiplication and the adjoint action commute and give different decompositions: the first is the defining action on the columns, the second is the carrier decomposition. The adjoint action is the case $B=A^{-1}$ of the two-sided operators.</p>
+<p>The biquaternion algebra is four-real-dimensional, and its conjugation action gives the triplet and the scalars, of real dimensions $3+1$; the number sixteen is not a dimension there.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$16$, $32$</td>
+<td>the complex and real dimensions of $M_4(\mathbb{C})$</td>
+</tr>
+<tr>
+<td>$14,10,6,2$</td>
+<td>the real dimensions of the carriers</td>
+</tr>
+<tr>
+<td>$\Phi_q$</td>
+<td>the conjugation action</td>
+</tr>
+<tr>
+<td>$T_{A,B}$</td>
+<td>the two-sided operator $X\mapsto AXB$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-carrier-lists-of-one-algebra-at-n-4.html">The Four Carrier Lists of One Algebra at $n=4$</a>, for the other groups.</li>
+<li><a href="the-ten-ranks-of-the-two-sided-operators-at-n-4.html">The Ten Ranks of the Two-Sided Operators at $n=4$</a>, for $T_{A,B}$.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the content.</li>
+<li><a href="the-su2-of-the-biquaternion-algebra-acting-on-four-dimensions.html">The $\mathrm{SU}(2)$ of the Biquaternion Algebra Acting on Four Dimensions</a>, for the row at order two.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the carriers.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

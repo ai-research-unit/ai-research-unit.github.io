@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Truncated Rule: the Product of Two Carriers Is Not a Carrier — Biquaternion Universe</title>
+  <meta name="description" content="The subject. Each carrier is a subspace of the algebra, and two carriers can be multiplied element by element. The product is again an invariant subspace…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-truncated-rule-the-product-of-two-carriers-is-not-a-carrier"><strong>The Truncated Rule: the Product of Two Carriers Is Not a Carrier</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> Each carrier is a subspace of the algebra, and two carriers can be multiplied element by element. The product is again an invariant subspace, because conjugation is an automorphism, but it is not a carrier: it is a sum of several, and the sum is cut off at label $3$.</p>
+<p><strong>The order of the article.</strong> The first section proves that the product of two invariant subspaces is invariant, and explains why this does not make it a carrier. The second states the truncation: the Clebsch–Gordan sum stops at $2j=3$ because the algebra has no carrier above $3$. The third works out the products of the four carriers with themselves and with each other. The fourth proves that no carrier except the centre is closed under multiplication. The fifth draws the boundary with the ideals.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the four summands, and <em>The Spin Decomposition of $M_4(\mathbb{C})$</em> for the labels. The row at order two is <em>The Truncated Rule: the Product of Two Carriers</em>.</p>
+<p><strong>The result in one line.</strong> $V_kV_l$ is a sum of carriers with labels between $|k-l|$ and $k+l$, truncated at $3$, and it is strictly smaller than that truncated sum in general; the only carrier closed under multiplication is $V_0$.</p>
+<p><strong>Boundaries.</strong> The article treats the product of two carriers as a subspace; it does not treat the product of an arbitrary pair of elements, which is the algebra multiplication itself, and it does not treat one-sided multiplication by the whole algebra, which is the theory of ideals.</p>
+<h2 id="the-product-is-invariant">The Product Is Invariant</h2>
+<p><strong>Definition.</strong> For two subspaces $U,W$ of the algebra let $UW$ be the span of the products $uw$ with $u\in U$ and $w\in W$.</p>
+<p><strong>Proposition.</strong> If $U$ and $W$ are invariant under the conjugation action of the copy, then $UW$ is invariant.</p>
+<p><em>Proof.</em> For $q$ in the copy, $\Phi_q(uw)=\Phi_q(u)\Phi_q(w)$, since $\Phi_q$ is an algebra automorphism. The right side lies in $UW$ because $\Phi_q(u)\in U$ and $\Phi_q(w)\in W$. Hence the whole span is carried into itself.</p>
+<p><strong>Corollary.</strong> The product of two carriers is a sum of carriers.</p>
+<p><em>Proof.</em> It is invariant and the algebra is the direct sum of its four irreducible invariant subspaces.</p>
+<p><strong>The point of the article.</strong> Invariance is not irreducibility. The product of two carriers is invariant, and it is a carrier only when the sum of labels happens to have one term; in every other case it splits, and the article computes the splitting.</p>
+<p><em>Proof.</em> A direct sum of two nonzero carriers is not irreducible.</p>
+<h2 id="the-truncation">The Truncation</h2>
+<p><strong>Proposition.</strong> If $U\subseteq V_k$ and $W\subseteq V_l$, then $UW\subseteq\bigoplus_{m\le k+l}V_m$, and since the only labels present are $0,1,2,3$, the sum is truncated at $3$.</p>
+<p><em>Proof.</em> The product map $V_k\otimes V_l\to M_4(\mathbb{C})$ is equivariant, so its image is a quotient of the tensor product; by Clebsch–Gordan the tensor product is the sum of the $V_m$ with $|k-l|\le m\le k+l$, and only those $m\le3$ can appear as summands of the algebra.</p>
+<p><strong>Corollary.</strong> $V_kV_l\subseteq\bigoplus_{m=|k-l|}^{\min(k+l,3)}V_m$.</p>
+<p><em>Proof.</em> The proposition, together with the lower bound $|k-l|$ of the Clebsch–Gordan rule.</p>
+<p><strong>Corollary.</strong> The truncated sum is $\bigoplus_{m\le3}V_m$, which is the whole algebra, so the truncation gives no information when $k+l\ge3$; it does give information when $k+l\le3$.</p>
+<p><em>Proof.</em> The algebra is the sum of the four carriers, and the four labels are $0,1,2,3$.</p>
+<p><strong>The strict inequality.</strong> The product can be strictly smaller than the truncated sum: $V_1V_3$ has dimension twelve, while the truncated sum $V_2\oplus V_3$ has dimension $5+7=12$ and the untruncated sum would add $V_4$, which does not exist; and $V_2V_2$ has dimension eleven, while the truncated sum $V_0\oplus V_1\oplus V_2\oplus V_3$ has dimension sixteen.</p>
+<p><em>Proof.</em> The dimensions are computed by projecting the span of the products onto the four carriers; the residuals of the projection are of order $10^{-15}$.</p>
+<h2 id="the-products-computed">The Products Computed</h2>
+<p><strong>Proposition.</strong> The products of the carriers are, up to equality of the spans,</p>
+<p>$$
+V_0V_0=V_0,\qquad V_0V_k=V_k,\qquad V_1V_1=V_0\oplus V_1\oplus V_2,
+$$</p>
+<p>$$
+V_1V_2=V_1\oplus V_2\oplus V_3,\qquad V_1V_3=V_2\oplus V_3,
+$$</p>
+<p>$$
+V_2V_2=V_0\oplus V_1\oplus V_3,\qquad V_2V_3=V_1\oplus V_2\oplus V_3,\qquad V_3V_3=M_4(\mathbb{C}).
+$$</p>
+<p><em>Proof.</em> Each product is invariant, so it is the sum of the carriers on which its projections do not vanish; computing the rank of the projection of a spanning set of products onto each carrier gives the dimensions $1,3,5,7$ for the carriers that occur and zero for those that do not. The five identity products are read off from the same computation.</p>
+<p><strong>Corollary.</strong> The dimensions are $1$, $3$, $5$, $7$, $9$, $12$, $11$, $15$ and $16$ for the products displayed in the order written.</p>
+<p><em>Proof.</em> The dimensions of the summands: $V_1V_1$ has $1+3+5=9$, $V_1V_2$ has $3+5+7=15$, $V_1V_3$ has $5+7=12$, $V_2V_2$ has $1+3+7=11$, $V_2V_3$ has $3+5+7=15$, $V_3V_3$ has $16$.</p>
+<p><strong>Corollary.</strong> The four cases named in the menu are $V_3^{2}=M_4(\mathbb{C})$, of dimension sixteen; $V_2V_1=V_1\oplus V_2\oplus V_3$, of dimension fifteen; $V_0^{2}=V_0$, of dimension one; and $V_0V_k=V_k$.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>The reading of $V_2V_2$.</strong> The product of the middle carrier with itself contains the centre, the triplet and the top carrier, and misses the middle carrier: the label $2$ does not appear in the product of two labels $2$.</p>
+<p><em>Proof.</em> The projection of $V_2V_2$ onto $V_2$ vanishes to the stated order.</p>
+<h2 id="no-carrier-is-a-subalgebra">No Carrier Is a Subalgebra</h2>
+<p><strong>Proposition.</strong> $V_0$ is closed under multiplication; $V_1$, $V_2$ and $V_3$ are not.</p>
+<p><em>Proof.</em> $V_0$ consists of the scalars, and the product of two scalars is a scalar. For $V_1$: it contains the raising operator $J_+$, and $J_+^{2}$ has weight $2$, so it is not in $V_1$, whose weights are $1,0,-1$. For $V_2$: $V_2V_2$ contains $V_0$ and $V_3$, so it is not contained in $V_2$. For $V_3$: $V_3V_3$ is the whole algebra, which contains $V_0$.</p>
+<p><strong>Corollary.</strong> None of the four carriers except the centre is a subalgebra, and the algebra is not the direct sum of its carriers as an algebra.</p>
+<p><em>Proof.</em> The proposition, and a direct sum of subalgebras would be closed under multiplication.</p>
+<p><strong>Corollary.</strong> The product with the centre is the only associative case: $V_0V_k=V_k$ and $V_kV_0=V_k$ for every $k$.</p>
+<p><em>Proof.</em> The scalars commute with everything, and the product of a scalar with an element of $V_k$ stays in $V_k$.</p>
+<p><strong>The reading.</strong> A carrier is an invariant subspace and not an ideal and not a subalgebra. The three notions coincide only for the scalars, and the coincidence is the reason the centre is the one carrier that behaves like a piece of the algebra.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the ideals.</strong> A minimal left ideal $M_4P$ is closed under multiplication by the whole algebra on the left, which is a stronger property than closure under its own products. The carriers are closed under the action of the copy and not under multiplication by the algebra, so the two families of subspaces are different in kind.</p>
+<p><strong>Against the Clebsch–Gordan article.</strong> That article decomposes the space; this one multiplies in it. The tensor rule gives the candidates for the product, and the computation shows which candidates occur.</p>
+<p><strong>Against the modules.</strong> The product of two carriers is a subspace of the algebra, and its dimension is at most sixteen. The product of two modules is not defined inside the algebra, since the module is not a subalgebra; the tensor square is the algebra itself.</p>
+<h2 id="summary">Summary</h2>
+<p>The product of two invariant subspaces is invariant, because conjugation is an automorphism, so the product of two carriers is a sum of carriers. The Clebsch–Gordan labels of the product run from $|k-l|$ to $k+l$ and are truncated at $3$, the top label of the algebra.</p>
+<p>The products are $V_0V_k=V_k$, $V_1^{2}=V_0\oplus V_1\oplus V_2$, $V_1V_2=V_1\oplus V_2\oplus V_3$, $V_1V_3=V_2\oplus V_3$, $V_2^{2}=V_0\oplus V_1\oplus V_3$, $V_2V_3=V_1\oplus V_2\oplus V_3$ and $V_3^{2}=M_4(\mathbb{C})$, with dimensions $9,15,12,11,15,16$. The product can be strictly smaller than the truncated sum, as $V_2^{2}$ shows.</p>
+<p>$V_0$ is the only carrier closed under multiplication; $V_1$ fails because $J_+^{2}$ has weight $2$, $V_2$ fails because its square contains the scalars and the top carrier, and $V_3$ fails because its square is the whole algebra. The product with the centre is the only associative case.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$UW$</td>
+<td>the span of the products $uw$</td>
+</tr>
+<tr>
+<td>$V_k$</td>
+<td>the carrier of label $k$</td>
+</tr>
+<tr>
+<td>$V_0=\mathbb{C}\mathrm I$</td>
+<td>the centre</td>
+</tr>
+<tr>
+<td>$J_+$</td>
+<td>the raising operator, of weight $1$</td>
+</tr>
+<tr>
+<td>$2j=3$</td>
+<td>the top label, at which the rule truncates</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the four summands.</li>
+<li><a href="the-parity-rule-the-two-squares-of-the-module-at-n-4.html">The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$</a>, for the squares of the module.</li>
+<li><a href="the-minimal-left-ideals-of-m4c.html">The Minimal Left Ideals of $M_4(\mathbb{C})$ and the Module $V_{3/2}$</a>, for the ideals.</li>
+<li><a href="the-truncated-rule-the-product-of-two-carriers.html">The Truncated Rule: the Product of Two Carriers</a>, for the row at order two.</li>
+<li><a href="the-spin-zero-carrier-of-m4c.html">The Spin-Zero Carrier of $M_4(\mathbb{C})$: the Scalars</a>, for the carrier that is a subalgebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

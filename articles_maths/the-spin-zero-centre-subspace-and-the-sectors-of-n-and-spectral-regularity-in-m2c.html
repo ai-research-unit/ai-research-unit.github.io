@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The two predicates are and. Which of the four sectors cut by them does the centre meet, in what stratum, and why is the pattern the same as…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity-in-math0"><strong>The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The two predicates are $\det A\neq0$ and $\Delta\neq0$. Which of the four sectors cut by them does the centre meet, in what stratum, and why is the pattern the same as in the biquaternion algebra?</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity</a>. There the predicates are $N\neq0$ and $B^2\neq0$; here they are $\det A\neq0$ and $\Delta\neq0$, with $N=\det A$ and $B^2=-\tfrac14\Delta$. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. The identity $N-B^2=Q_t^2$, read as $\det A-\left(\det A-\tfrac14\tau^2\right)=\tfrac14\tau^2$. The four intersections of the centre with the four sectors. That the intersection with $\Sigma_{10}$ is exactly the scalar stratum, so no central element is a Jordan element. The table of $N-B^2$ across the three carriers. Invariance of the sectors under scaling and under unitary conjugation, and the orbit reading. The carrier table.</p>
+<p><strong>What the article does not do.</strong> It does not re-derive the two predicates separately, which are <a href="the-spin-zero-centre-subspace-and-n-norm-regularity-in-m2c.html">The Spin-Zero Centre Subspace and N Norm Regularity in $M_2(\mathbb{C})$</a> and <a href="the-spin-zero-centre-subspace-and-spectral-regularity-in-m2c.html">The Spin-Zero Centre Subspace and Spectral Regularity in $M_2(\mathbb{C})$</a>; it does not treat the sectors on the other two carriers, which are <a href="the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a> and <a href="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$; $Q_t=\tfrac12\operatorname{tr}A=\tfrac12\tau$; $N=\det A$; $B^2=\det A-\tfrac14\tau^2$; $\Delta=\tau^2-4\det A=-4B^2$. The sector $\Sigma_{ij}$ is given by $\det\neq0$ for $i=1$ and $\Delta\neq0$ for $j=1$.</p>
+<p><strong>Boundaries.</strong> The subspace is <a href="the-spin-zero-centre-subspace-in-m2c.html">Introduction to the Spin-Zero Centre Subspace in $M_2(\mathbb{C})$</a>. The definitions of the sectors are <a href="relations-between-the-n-norm-and-spectral-regularity-and-degeneracy.html">Relations between the N Norm and Spectral Regularity and Degeneracy</a>. The dictionary is <a href="m2c-pauli-representation-operators.html">The Pauli Representation : Operators</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>.</p>
+<p><strong>Letters.</strong> $A$ a matrix, $\tau$ its trace, $\lambda=\tau/2$ the scalar coordinate, $N$ a nilpotent matrix, $P$ a rank-one projection.</p>
+<h2 id="the-predicates-in-the-math36-display">The Predicates, in the $2\times2$ Display</h2>
+<p><strong>The norm and the square of the traceless part.</strong>
+$$
+N(A)=\det A,\qquad B^2(A)=\det A-\tfrac14(\operatorname{tr}A)^2,\qquad \Delta=-4B^2 .
+$$
+All three are polynomials in the two elementary symmetric functions $\tau$ and $\delta=\det A$.</p>
+<p><strong>The arrays of the two strata.</strong>
+$$
+\lambda\mathrm I_2=\begin{pmatrix}\lambda&0\\0&\lambda\end{pmatrix},
+\qquad
+\lambda(\mathrm I_2+N)=\begin{pmatrix}\lambda&\lambda\\0&\lambda\end{pmatrix},
+\qquad
+N=\begin{pmatrix}0&1\\0&0\end{pmatrix},
+$$
+with $N^2=0$ and $N\neq0$, so the second array has minimal polynomial $(x-\lambda)^2$ and is not diagonalisable.</p>
+<p><strong>The identity.</strong>
+$$
+N-B^2=\tfrac14\tau^2=Q_t^2 ,
+$$
+verified on a hundred random matrices to better than $10^{-14}$.</p>
+<p><strong>The sectors.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>$\det\neq0$, $\Delta\neq0$</td>
+<td>doubly regular</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$\det\neq0$, $\Delta=0$</td>
+<td>invertible with repeated eigenvalue</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>$\det=0$, $\Delta\neq0$</td>
+<td>singular, distinct eigenvalues</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\det=0$, $\Delta=0$</td>
+<td>doubly degenerate</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The strata of $\Sigma_{10}$.</strong> The <strong>scalar stratum</strong> is $\Sigma_{10}^{\mathrm s}=\{\lambda\mathrm I_2:\lambda\neq0\}$: minimal polynomial of degree one. The <strong>Jordan stratum</strong> is $\Sigma_{10}^{\mathrm J}=\{\lambda(\mathrm I_2+N):\lambda\neq0,\ N\neq0,\ N^2=0\}$: minimal polynomial $(x-\lambda)^2$.</p>
+<h2 id="the-centre-and-the-two-predicates">The Centre and the Two Predicates</h2>
+<p><strong>The determinant.</strong> $\det(\lambda\mathrm I_2)=\lambda^2$, non-zero exactly for $\lambda\neq0$.</p>
+<p><strong>The discriminant.</strong> $\Delta(\lambda\mathrm I_2)=(2\lambda)^2-4\lambda^2=0$ identically, because the traceless part vanishes.</p>
+<p><strong>The spectrum.</strong> $\{\lambda,\lambda\}$: one value, algebraic multiplicity two, eigenspace all of $\mathbb{C}^2$.</p>
+<h2 id="the-four-intersections">The Four Intersections</h2>
+<h3 id="the-sector-math67">The Sector $\Sigma_{11}$</h3>
+<p><strong>The statement.</strong> $\mathbb{C}\mathrm I_2\cap\Sigma_{11}=\varnothing$, since $\Delta=0$ at every central matrix, the identity included. The identity of the algebra is not a generic element: it has a double eigenvalue.</p>
+<h3 id="the-sector-math70">The Sector $\Sigma_{10}$</h3>
+<p><strong>The statement.</strong> $\mathbb{C}\mathrm I_2\cap\Sigma_{10}=\mathbb{C}^{\times}\mathrm I_2$.</p>
+<p><strong>The split.</strong> $\mathbb{C}\mathrm I_2=\mathbb{C}^{\times}\mathrm I_2\sqcup\{0\}$: the punctured line in $\Sigma_{10}$ and the origin in $\Sigma_{00}$.</p>
+<p><strong>A group inside one sector.</strong> The punctured centre is closed under multiplication and inversion, with inverse $\lambda^{-1}\mathrm I_2$. It is the only carrier on which the elements of one sector form a group.</p>
+<h3 id="the-sector-math76">The Sector $\Sigma_{01}$</h3>
+<p><strong>The statement.</strong> $\mathbb{C}\mathrm I_2\cap\Sigma_{01}=\varnothing$: $\det=0$ forces $\lambda=0$, and there $\Delta=0$ too.</p>
+<p><strong>The reason.</strong> On the centre one predicate is identically false, so the simultaneous conditions of this sector cannot hold.</p>
+<h3 id="the-sector-math81">The Sector $\Sigma_{00}$</h3>
+<p><strong>The statement.</strong> $\mathbb{C}\mathrm I_2\cap\Sigma_{00}=\{0\}$, the zero matrix alone.</p>
+<p><strong>The origin in every closure.</strong> The zero matrix lies in the closure of each sector, since each sector is the complement of a zero locus of a polynomial that vanishes at the origin.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sector</th>
+<th>condition on $\lambda$</th>
+<th>intersection</th>
+<th>$\dim_\mathbb{R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Sigma_{11}$</td>
+<td>impossible</td>
+<td>$\varnothing$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}$</td>
+<td>$\lambda\neq0$</td>
+<td>$\mathbb{C}^{\times}\mathrm I_2$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$\Sigma_{01}$</td>
+<td>impossible</td>
+<td>$\varnothing$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$\Sigma_{00}$</td>
+<td>$\lambda=0$</td>
+<td>$\{0\}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-intersection-with-the-scalar-stratum">The Intersection with the Scalar Stratum</h2>
+<p><strong>The identity of the two sets.</strong> $\mathbb{C}\mathrm I_2\cap\Sigma_{10}=\Sigma_{10}^{\mathrm s}$.</p>
+<p><strong>No Jordan element.</strong> The Jordan stratum $\Sigma_{10}^{\mathrm J}$ is met in no point: a central matrix has no nilpotent part, and its minimal polynomial is $x-\lambda$, of degree one.</p>
+<p><strong>The centre is the vertex of the discriminant.</strong> The locus $\{\Delta=0\}$ is a complex hypersurface, singular exactly along $\{\tau^2=4\delta\}$ with zero traceless part, which is the scalar line. So the centre minus the origin is the smooth locus of the hypersurface along the scalar direction.</p>
+<p><strong>Why the stratum and not the sector.</strong> The sector $\Sigma_{10}$ has complex dimension three and two strata. The centre occupies one stratum completely and is the smallest complex subspace that does. A statement that a central matrix lies in $\Sigma_{10}$ would leave open whether it can be defective; it cannot.</p>
+<h2 id="the-difference-of-the-two-conditions">The Difference of the Two Conditions</h2>
+<p><strong>On the centre.</strong> $N-B^2=\lambda^2=N$: one predicate is the whole determinant and the other is identically zero.</p>
+<p><strong>On the other two carriers.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\tau/2$</th>
+<th>$N=\det$</th>
+<th>$B^2$</th>
+<th>$N-B^2$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}\mathrm I_2$</td>
+<td>$\lambda$</td>
+<td>$\lambda^2$</td>
+<td>$0$</td>
+<td>$\lambda^2$</td>
+</tr>
+<tr>
+<td>ideal $M_2P$</td>
+<td>$\lambda$</td>
+<td>$0$</td>
+<td>$-\lambda^2/4$</td>
+<td>$\lambda^2/4$</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{su}(2)$</td>
+<td>$0$</td>
+<td>$\lvert v\rvert^2$</td>
+<td>$\lvert v\rvert^2$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The three readings.</strong> On the centre the two predicates are disjoint, one being a square and the other zero; on the ideal they are opposite in sign; on the vector part they coincide. All three are the identity $N-B^2=(\tau/2)^2$ read at three subspaces.</p>
+<p><strong>The check.</strong> Verified on a hundred random elements per carrier: the residuals of $\det(Y\!P)=0$, of $B^2(Y\!P)+\lambda^2/4=0$ and of $\det=|v|^2$ with $\operatorname{tr}=0$ are at the $10^{-15}$ level.</p>
+<h2 id="the-sector-is-a-property-of-the-orbit">The Sector Is a Property of the Orbit</h2>
+<p><strong>Scaling.</strong> $\det(cA)=c^2\det A$ and $\Delta(cA)=c^2\Delta(A)$ for complex $c$: each sector is a cone with its apex removed, except $\Sigma_{00}$.</p>
+<p><strong>Unitary conjugation.</strong> For $U$ unitary, $\det(UAU^{\dagger})=\det A$ and $\operatorname{tr}(UAU^{\dagger})=\operatorname{tr}A$, so both predicates are preserved. The adjoint action of $\mathrm U(2)$ therefore preserves every sector.</p>
+<p><strong>The orbit of a central matrix.</strong> It is a point, because every unitary fixes a scalar matrix. The sector of a central matrix is a property of the matrix alone.</p>
+<h2 id="the-centre-against-the-other-two-carriers">The Centre Against the Other Two Carriers</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>sectors met</th>
+<th>in $\Sigma_{11}$</th>
+<th>in $\Sigma_{10}$</th>
+<th>in $\Sigma_{01}$</th>
+<th>in $\Sigma_{00}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}\mathrm I_2$</td>
+<td>two</td>
+<td>$\varnothing$</td>
+<td>$\mathbb{C}^{\times}\mathrm I_2$</td>
+<td>$\varnothing$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>ideal $M_2P$</td>
+<td>two</td>
+<td>$\varnothing$</td>
+<td>$\varnothing$</td>
+<td>$M_2P\setminus\{0\}$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{su}(2)$</td>
+<td>two</td>
+<td>$\mathfrak{su}(2)\setminus\{0\}$</td>
+<td>$\varnothing$</td>
+<td>$\varnothing$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The pattern.</strong> Each carrier meets two sectors, the three regular sectors receive one carrier each, and the only sector all three meet is $\Sigma_{00}$, at the origin.</p>
+<p><strong>The two cones.</strong> The centre lies in the discriminant locus at every point; the ideal lies in the singular locus $\{\det=0\}$ at every point; the vector part lies in neither.</p>
+<h2 id="where-math159-differs">Where $n=2$ Differs</h2>
+<p><strong>The discriminant.</strong> At $n=2$ the discriminant is one complex number and its zero locus is one hypersurface. At order $n$ it is the discriminant of the characteristic polynomial, and the sector structure is stratified by the partitions of $n$.</p>
+<p><strong>The strata.</strong> At $n=2$ the sector $\Sigma_{10}$ has two strata, the scalar one and one Jordan type (a single block). At order $n$ it has $n$ Jordan types, and the scalar stratum is one of them.</p>
+<p><strong>What does not differ.</strong> The identity $N-B^2=(\tau/2)^2$, the four sectors, and the fact that a central element lies in $\Sigma_{10}$ away from the origin are the same at every order.</p>
+<h2 id="summary">Summary</h2>
+<p>The centre meets only two sectors: the punctured line in $\Sigma_{10}$ and the origin in $\Sigma_{00}$. The determinant on the centre is $\lambda^2$ and the discriminant is zero identically, because the traceless part vanishes.</p>
+<p>The intersection with $\Sigma_{10}$ is exactly the scalar stratum: no central matrix is a Jordan matrix. In the identity $N-B^2=(\tau/2)^2$ the centre is the case where the two predicates are farthest apart, one being the whole determinant and the other zero; on the ideal they are opposite in sign, and on the vector part they coincide.</p>
+<p>Both predicates are homogeneous of degree two and invariant under unitary conjugation, so each sector is a union of adjoint orbits. The adjoint orbit of a central matrix is a point.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tau,\ \delta=\det A$</td>
+<td>the two elementary symmetric functions</td>
+</tr>
+<tr>
+<td>$\lambda=\tau/2$</td>
+<td>the scalar coordinate</td>
+</tr>
+<tr>
+<td>$\Delta=\tau^2-4\delta$</td>
+<td>the discriminant</td>
+</tr>
+<tr>
+<td>$\Sigma_{ij}$</td>
+<td>the sector with $\det\neq0$ iff $i=1$ and $\Delta\neq0$ iff $j=1$</td>
+</tr>
+<tr>
+<td>$\Sigma_{10}^{\mathrm s},\ \Sigma_{10}^{\mathrm J}$</td>
+<td>the scalar and Jordan strata</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>a nilpotent matrix, $N^2=0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-zero-centre-subspace-and-the-sectors-of-n-and-spectral-regularity.html">The Spin-Zero Centre Subspace and the Sectors of N and Spectral Regularity</a>, for the source's four intersections and its stratum argument.</li>
+<li><a href="the-spin-zero-centre-subspace-and-n-norm-regularity-in-m2c.html">The Spin-Zero Centre Subspace and N Norm Regularity in $M_2(\mathbb{C})$</a>, for the determinant on the centre.</li>
+<li><a href="the-spin-zero-centre-subspace-and-spectral-regularity-in-m2c.html">The Spin-Zero Centre Subspace and Spectral Regularity in $M_2(\mathbb{C})$</a>, for the discriminant on the centre.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>, for the sector $\Sigma_{01}$ and the ideal.</li>
+<li><a href="the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>, for the sector $\Sigma_{11}$ and the vector part.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

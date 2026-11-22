@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinors and Dirac Spinors in $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The article fixes the vocabulary. A spinor is a vector of the module of dimension four; a Weyl spinor is a vector of one of the two halves of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="spinors-and-dirac-spinors-in-math0"><strong>Spinors and Dirac Spinors in $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The article fixes the vocabulary. A spinor is a vector of the module of dimension four; a Weyl spinor is a vector of one of the two halves of dimension two; a Dirac spinor is a pair of Weyl spinors, that is a vector of the whole module. The article shows where each object lives in the algebra.</p>
+<p><strong>The order of the article.</strong> The first section defines the three kinds of spinor. The second locates them in the algebra. The third treats the pairing and the reality conditions. The fourth compares the dimension counts with the biquaternion row. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$</em> and <em>The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</em>. The row at order two is <em>Spinors and Dirac Spinors</em>.</p>
+<p><strong>The result in one line.</strong> A spinor is an element of $V_{3/2}=\mathbb{C}^{4}$, a Weyl spinor an element of one of the two halves $S_{\pm}$ of dimension two, and a Dirac spinor a pair of Weyl spinors, that is a spinor.</p>
+<p><strong>Boundaries.</strong> The article fixes terminology and localisation; the identities among bispinors are the subject of <em>The Fierz–Kofink Identities at $n=4$</em>.</p>
+<h2 id="the-three-kinds">The Three Kinds</h2>
+<p><strong>Definition.</strong> A <strong>spinor</strong> is a vector of $V_{3/2}=\mathbb{C}^{4}$; a <strong>Weyl spinor</strong> is a vector of one of the two halves $S_{+}$ or $S_{-}$ of dimension two; a <strong>Dirac spinor</strong> is a pair $(\psi_{+},\psi_{-})$ of Weyl spinors, that is a vector of $S_{+}\oplus S_{-}$.</p>
+<p><strong>Proposition.</strong> The three spaces have dimensions four, two and four, and the Dirac spinor is the same object as the spinor: $S_{+}\oplus S_{-}\cong V_{3/2}$.</p>
+<p><em>Proof.</em> The halves are two-dimensional and their sum is four-dimensional; the sum is the whole module.</p>
+<p><strong>Corollary.</strong> The label $\tfrac32$ belongs to the spinor and to the Dirac spinor, and the halves carry the pair $(\tfrac12,\tfrac12)$.</p>
+<p><em>Proof.</em> The halves are the pieces of the block reading; the whole module has the label $\tfrac32$.</p>
+<p><strong>Corollary.</strong> A Dirac spinor is a pair of Weyl spinors, and the decomposition into halves is not invariant under the principal copy but only under the block copy.</p>
+<p><em>Proof.</em> The halves are invariant under the block copy and not under the principal one, which mixes them.</p>
+<p><strong>The reading.</strong> The three words describe two spaces: the module of dimension four and its splitting into two halves of dimension two.</p>
+<h2 id="where-they-live">Where They Live</h2>
+<p><strong>Proposition.</strong> The spinors are the columns of the algebra: the minimal left ideal $M_4P_0$ consists of the matrices whose only nonzero column is the first, and it is isomorphic to $\mathbb{C}^{4}$.</p>
+<p><em>Proof.</em> Left multiplication by $P_0$ selects the first column; the map from the column to the matrix is an isomorphism onto the ideal.</p>
+<p><strong>Corollary.</strong> The dual spinors are the rows, and the minimal right ideal $P_0M_4$ consists of the matrices whose only nonzero row is the first.</p>
+<p><em>Proof.</em> The transpose of the left statement.</p>
+<p><strong>Corollary.</strong> A bispinor is a matrix, that is a spinor times a dual spinor summed over a basis, which is the content of the bispinor identification.</p>
+<p><em>Proof.</em> The rank-one matrices are $\psi\bar\chi^{\dagger}$ and they span the algebra.</p>
+<p><strong>The reading.</strong> The spinors are the columns, the dual spinors the rows, and the algebra is the space of bispinors: the three objects are the three ways of looking at a matrix.</p>
+<h2 id="pairing-and-reality">Pairing and Reality</h2>
+<p><strong>Proposition.</strong> The module carries an invariant alternating form $\omega$, and the pairing of a spinor with a dual spinor is the evaluation; there is no invariant symmetric form.</p>
+<p><em>Proof.</em> The Frobenius–Schur indicator of $V_{3/2}$ is $-1$, so the invariant form is alternating and unique up to a scalar.</p>
+<p><strong>Corollary.</strong> The symmetry between a spinor and its dual is antisymmetric, so a spinor is never paired with itself to a nonzero scalar.</p>
+<p><em>Proof.</em> $\omega(\psi,\psi)=0$ for an alternating form.</p>
+<p><strong>Corollary.</strong> The reality condition is quaternionic: there is an anti-linear $T$ with $T^{2}=-1$, and a Majorana spinor in the strict sense, which would need $T^{2}=+1$, does not exist.</p>
+<p><em>Proof.</em> $T\bar T=(-1)^{2j}=-1$ at $2j=3$; a real structure would need $T^{2}=+1$.</p>
+<p><strong>The reading.</strong> The half-integral label forces the alternating pairing and the quaternionic reality condition, exactly as it forces the absence of a real form of the module.</p>
+<h2 id="the-comparison-with-order-two">The Comparison with Order Two</h2>
+<p><strong>Proposition.</strong> At order two the module is $V_{1/2}$ of dimension two, the pairing is again alternating, and the quaternionic structure is the multiplication by $j$ on $\mathbb{H}$.</p>
+<p><em>Proof.</em> $2j=1$ is odd, so the indicator is $-1$; the module $V_{1/2}$ is $\mathbb{C}^{2}$ with the quaternionic structure of $\mathbb{H}$.</p>
+<p><strong>Corollary.</strong> At order two there are no Weyl halves: the module has dimension two and cannot split into two invariant lines.</p>
+<p><em>Proof.</em> A splitting into lines would need two invariant one-dimensional subspaces, and the module is irreducible.</p>
+<p><strong>Corollary.</strong> At order four the number of Weyl spinors is two and at order two there is one spinor; the count is the number of halves, which is two exactly when the module has even dimension greater than two.</p>
+<p><em>Proof.</em> The halves exist when the module can be split by the block copy, which needs a two-dimensional block structure.</p>
+<p><strong>The reading.</strong> The words "Weyl" and "Dirac" belong to the row of order four; at order two there is only the spinor, of dimension two.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the bispinor introduction.</strong> That article treats the space of pairs; this one names the members of the pair.</p>
+<p><strong>Against the quaternionic article.</strong> That article computes the indicator; this one reads the reality condition from it.</p>
+<p><strong>Against the Fierz article.</strong> The classification of spinors by the rank of the associated bispinor is the next article.</p>
+<h2 id="the-vocabulary-in-the-module">The Vocabulary in the Module</h2>
+<p><strong>The Dirac spinor.</strong> An element of the module is a Dirac spinor of the algebra, and its four components are the coordinates in the standard basis; the copy acts on it through the three generators, and the weights are the four half-integers.</p>
+<p><strong>The Weyl spinor.</strong> Under the block copy the module splits into two two-component halves, and a Weyl spinor is a nonzero element of one half; the Cartan generator acts on the halves with the two signs, so a Weyl spinor is an eigenvector of the chirality up to a phase.</p>
+<p><strong>The Majorana spinor.</strong> A Majorana condition is a real structure on the module, and the module of half-integer label does not carry one; the quaternionic structure gives an anti-linear map whose square is minus one, so it defines a symplectic pairing rather than a real form.</p>
+<p><strong>The reading.</strong> The three words name three different objects: an element of the four-dimensional module, an element of a two-dimensional half, and a real element, which does not exist at this order.</p>
+<h2 id="the-check-of-the-components">The Check of the Components</h2>
+<p><strong>The four components.</strong> A Dirac spinor has four complex components, and the copy acts on them through the three generators; the components are the coordinates in the basis of weight vectors, and the weights are the four half-integers.</p>
+<p><strong>The two halves.</strong> Under the block copy the components split into two pairs, and each pair is a Weyl spinor; the split is the decomposition of the module under the subgroup, and it is not invariant under the whole copy.</p>
+<p><strong>The reality.</strong> The module has no real structure, so no Majorana condition can be imposed; the quaternionic structure pairs the module with its conjugate, and the pairing is antilinear with square minus one.</p>
+<h2 id="summary">Summary</h2>
+<p>A spinor is a vector of the module of dimension four, a Weyl spinor a vector of one of its two halves of dimension two, and a Dirac spinor a pair of Weyl spinors. The Dirac spinor and the spinor are the same object; the halves are invariant under the block copy and not under the principal one.</p>
+<p>The spinors are the columns of the algebra and the dual spinors its rows; the bispinors are the matrices. The invariant pairing is alternating, and the reality condition is quaternionic, so a strict Majorana spinor does not exist at order four.</p>
+<p>At order two there is one spinor of dimension two and no halves.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_{3/2}=\mathbb{C}^{4}$</td>
+<td>the spinors and the Dirac spinors</td>
+</tr>
+<tr>
+<td>$S_{\pm}$</td>
+<td>the Weyl halves, dimension two</td>
+</tr>
+<tr>
+<td>$(\tfrac12,\tfrac12)$</td>
+<td>the labels of the halves</td>
+</tr>
+<tr>
+<td>$\omega$</td>
+<td>the invariant alternating form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="introduction-to-the-spin-three-halves-bispinor-spaces-at-n-4.html">Introduction to the Spin-$\tfrac32$ Bispinor Spaces at $n=4$</a>, for the bispinors.</li>
+<li><a href="the-quaternionic-structure-of-the-module-at-n-4.html">The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</a>, for the reality conditions.</li>
+<li><a href="the-fierz-kofink-identities-at-n-4.html">The Fierz–Kofink Identities and the Classification of Spinors at $n=4$</a>, for the classification.</li>
+<li><a href="spinors-and-dirac-spinors.html">Spinors and Dirac Spinors</a>, for the row at order two.</li>
+<li><a href="the-spin-three-halves-bispinors-and-the-minimal-left-ideals-at-n-4.html">The Spin-$\tfrac32$ Bispinors and the Minimal Left Ideals</a>, for the ideals.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-One Carrier and the Rank Strata at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The rank of an element of the carrier of label one is three or four. The article proves it, describes the two strata, and reads the nilpotent…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-one-carrier-and-the-rank-strata-at-math0"><strong>The Spin-One Carrier and the Rank Strata at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The rank of an element of the carrier of label one is three or four. The article proves it, describes the two strata, and reads the nilpotent stratum as the single orbit of the highest weight vector.</p>
+<p><strong>The order of the article.</strong> The first section computes the rank from the spectrum. The second describes the two strata. The third treats the nilpotent cone and its orbit structure. The fourth compares with the ranks in the other carriers and with the biquaternion row. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Spin-One Carrier of $M_4(\mathbb{C})$: the Adjoint Triplet</em> and <em>The Spin-One Carrier and the Spectral Strata at $n=4$</em>. The row at order two is <em>The Spin-One Carrier and the Rank Strata</em>.</p>
+<p><strong>The result in one line.</strong> The rank of an element of $V_1$ is four when $\lambda\neq0$ and three when $\lambda=0$ and the element is nonzero, so the carrier has exactly two rank strata.</p>
+<p><strong>Boundaries.</strong> The article treats the rank inside the triplet; the rank law for the one-sided operators is treated in <em>The Left Ideals and the Image of a Left Multiplication at $n=4$</em>.</p>
+<h2 id="the-rank-from-the-spectrum">The Rank from the Spectrum</h2>
+<p><strong>Proposition.</strong> For $X=aJ_x+bJ_y+cJ_z$ the rank is four if $\lambda\neq0$ and three if $\lambda=0$ with $X\neq0$.</p>
+<p><em>Proof.</em> The eigenvalues are $\pm3\lambda/2,\pm\lambda/2$, all nonzero for $\lambda\neq0$; for $\lambda=0$ all eigenvalues vanish and the element is a nonzero nilpotent, whose rank is at most three; a nilpotent of rank at most two in the triplet would be zero, since the nilpotent cone is a single orbit of the highest weight vector, of rank three.</p>
+<p><strong>Corollary.</strong> The carrier contains no element of rank one or two, and its minimal rank is three.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> The rank is a function of the invariant parameter: it is four off the isotropic cone and three on it, except at the origin.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>The reading.</strong> The rank of an element of the triplet is determined by whether the invariant quadratic form vanishes.</p>
+<h2 id="the-two-strata">The Two Strata</h2>
+<p><strong>Proposition.</strong> The rank-four stratum is the complement of the isotropic cone, open and dense, and the rank-three stratum is the isotropic cone minus the origin, of complex dimension two.</p>
+<p><em>Proof.</em> The spectrum and the dimension of the cone.</p>
+<p><strong>Corollary.</strong> The closure of the rank-three stratum contains the origin, and the rank-four stratum is its complement.</p>
+<p><em>Proof.</em> The cone is closed and contains the origin.</p>
+<p><strong>Corollary.</strong> The rank-three stratum is connected and is a single orbit up to scaling.</p>
+<p><em>Proof.</em> The nonzero points of an irreducible cone form one orbit under the group.</p>
+<p><strong>The reading.</strong> The two strata of the triplet are the open semisimple locus and a single nilpotent orbit.</p>
+<h2 id="the-nilpotent-cone">The Nilpotent Cone</h2>
+<p><strong>Proposition.</strong> The nilpotent elements of the triplet are the nonzero multiples of $J_+$ and $J_-$ under conjugation, and they form a single orbit of the copy, of real dimension four.</p>
+<p><em>Proof.</em> The cone $\lambda=0$ is the orbit of the highest weight vector under the complexification of the copy; the stabiliser is a Borel subgroup, so the orbit has dimension $6-2=4$ in the real picture and $2$ in the complex picture of the projective cone.</p>
+<p><strong>Corollary.</strong> The nilpotent cone has complex dimension two and is the closure of a single orbit.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> The rank-three stratum is not the whole isotropic cone but the cone minus the origin, and the origin is the only element of rank zero in the carrier.</p>
+<p><em>Proof.</em> The origin is the only element with all eigenvalues zero and all entries zero.</p>
+<p><strong>The reading.</strong> The nilpotent cone is the smallest stratum of the triplet and the only one with a nontrivial orbit structure.</p>
+<h2 id="the-comparison">The Comparison</h2>
+<p><strong>Proposition.</strong> The ranks in the four carriers are $0,4$; $3,4$; $2,3,4$; and $1,2,3,4$, so the triplet is the second carrier in the order of the labels and the second in the order of the minimal rank.</p>
+<p><em>Proof.</em> The four lists and the earlier computations.</p>
+<p><strong>Corollary.</strong> The triplet's minimal rank three is the rank of a single Jordan block of size four, the largest nilpotent rank in the algebra.</p>
+<p><em>Proof.</em> A nilpotent of size four has a single block and rank three.</p>
+<p><strong>Corollary.</strong> At order two the carrier of label one has rank two or three, since the matrices are $2\times2$ and the adjoint consists of traceless matrices.</p>
+<p><em>Proof.</em> At order two the algebra is $M_2(\mathbb{C})$ and a nonzero traceless element is nilpotent of rank one or semisimple of rank two.</p>
+<p><strong>The reading.</strong> The minimal rank of the triplet is the largest nilpotent rank, and it is the rank of the highest weight vector.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the spectral article.</strong> That article computes the spectrum; this one reads the rank from it, and the rank is determined by the vanishing of the invariant quadratic form.</p>
+<p><strong>Against the trace form article.</strong> The isotropic cone is the cone of the trace form, so the rank-three stratum is the cone of the metric.</p>
+<p><strong>Against the bispinor rank articles.</strong> Those articles stratify the whole algebra; this one stratifies a single carrier.</p>
+<h2 id="the-rank-as-a-function-of-the-form">The Rank as a Function of the Form</h2>
+<p><strong>Proposition.</strong> The rank of an element of the triplet is four exactly when the invariant quadratic form does not vanish and three exactly when it vanishes at a nonzero element, so the rank is a function of the form alone.</p>
+<p><em>Proof.</em> The spectrum is $\{\pm3\lambda/2,\pm\lambda/2\}$ with $5\lambda^{2}=q$, so the four eigenvalues are nonzero for $q\neq0$ and all vanish for $q=0$.</p>
+<p><strong>Corollary.</strong> A naive count might place the ranks of the triplet at two and three, the ranks of a traceless two-by-two matrix; the computation refutes it, because the Cartan generator of the triplet is invertible of rank four and its eigenvalues are all nonzero.</p>
+<p><em>Proof.</em> The generator $J_z$ has the eigenvalues $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$.</p>
+<p><strong>Corollary.</strong> The rank-three stratum is the nilpotent cone, and it is the set where the rank drops by exactly one.</p>
+<p><em>Proof.</em> The rank is four everywhere else.</p>
+<p><strong>The reading.</strong> On the triplet the rank, the spectrum and the metric are one piece of information, and the carrier has none of the finer stratification that the septet possesses.</p>
+<h2 id="the-note-on-order-two">The Note on Order Two</h2>
+<p><strong>The lower analogue.</strong> At order two the triplet is the space of imaginary quaternions, and an element $x$ acts on the algebra by the bracket; the adjoint operator has the eigenvalues $0,\pm i|x|$, so its rank is two for every nonzero $x$ and zero at the origin.</p>
+<p><strong>The comparison.</strong> The triplet therefore realises the ranks zero and two at order two and the ranks three and four at order four; the ranks one and three at order four, and the rank one at order two, are not realised, and the pattern is a consequence of the dimension of the module.</p>
+<h2 id="the-check-of-the-two-strata">The Check of the Two Strata</h2>
+<p><strong>The semisimple stratum.</strong> The complement of the isotropic cone is the semisimple stratum, and on it the four eigenvalues are the two pairs $\pm3\lambda/2$ and $\pm\lambda/2$ with $\lambda\neq0$; the stratum is connected in the complex topology and has two components in the real topology, according to the sign of $\lambda$.</p>
+<p><strong>The nilpotent stratum.</strong> The isotropic cone minus the origin is the stratum of the nilpotent elements, and each of them has rank three and a single Jordan block of size four; the cone is the common boundary of the two real components of the semisimple stratum.</p>
+<p><strong>The comparison of the counts.</strong> The triplet has two strata and the quintet has two, while the septet has four; the number of strata grows with the number of free parameters of the spectrum, not with the dimension of the carrier.</p>
+<h2 id="summary">Summary</h2>
+<p>The rank of an element of the triplet is four when the invariant quadratic form does not vanish and three when it vanishes at a nonzero element. The two strata are the open semisimple locus and the isotropic cone minus the origin, which is a single nilpotent orbit of complex dimension two.</p>
+<p>Among the four carriers the triplet is the second in the order of the labels, and its minimal rank three is the largest nilpotent rank of the algebra.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\lambda^{2}=a^{2}+b^{2}+c^{2}$</td>
+<td>the invariant parameter</td>
+</tr>
+<tr>
+<td>$\lambda\neq0$</td>
+<td>the rank-four stratum</td>
+</tr>
+<tr>
+<td>$\lambda=0$</td>
+<td>the nilpotent cone</td>
+</tr>
+<tr>
+<td>$3,4$</td>
+<td>the two ranks</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-one-carrier-of-m4c.html">The Spin-One Carrier of $M_4(\mathbb{C})$: the Adjoint Triplet</a>, for the carrier.</li>
+<li><a href="the-spin-one-carrier-and-the-spectral-strata-at-n-4.html">The Spin-One Carrier and the Spectral Strata at $n=4$</a>, for the spectrum.</li>
+<li><a href="the-spin-two-carrier-and-the-rank-strata-at-n-4.html">The Spin-Two Carrier and the Rank Strata at $n=4$</a>, for the quintet.</li>
+<li><a href="the-spin-one-carrier-and-the-rank-strata.html">The Spin-One Carrier and the Rank Strata</a>, for the row at order two.</li>
+<li><a href="the-spin-zero-carrier-and-the-rank-strata-at-n-4.html">The Spin-Zero Carrier and the Rank Strata at $n=4$</a>, for the scalars.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

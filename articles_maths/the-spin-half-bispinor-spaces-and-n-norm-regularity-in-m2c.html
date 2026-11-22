@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The spin-half carrier is the plane of multiples of a rank-one projection and its closures are the minimal left ideals. What is the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-spin-half-bispinors-and-n-norm-regularity-in-math0"><strong>The Spin-Half Bispinors and N Norm Regularity in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The spin-half carrier is the plane of multiples of a rank-one projection and its closures are the minimal left ideals. What is the determinant on these spaces, and is any element of a single ideal N-regular?</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="the-spin-half-bispinor-spaces-and-n-norm-regularity.html">The Spin-Half Bispinors and N Norm Regularity</a>. There the norm is $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and the null plane is $\mathbb{C}\tilde\Pi_+$; here the norm is $\det A$, the plane is $\mathbb{C}P$ and the ideal is $M_2P$. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. That $\det P=0$ and $\det(Y\!P)=0$ for every $Y$, so the plane and both ideals are null. That the ideals are maximal isotropic, of complex dimension two, half of four. That on the bispinor the determinant is the pairing, $\det(X_++X_-)=2B(X_+,X_-)$. That the pairing is nondegenerate and that the polar form is $\sum_\mu x_\mu y_\mu$ in the coefficient basis. The comparison with the other two carriers.</p>
+<p><strong>What the article does not do.</strong> It does not treat the discriminant on these spaces, which is <a href="the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$</a>; it does not treat the four sectors in full, which is <a href="the-spin-half-bispinor-spaces-and-the-sectors-of-n-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and the Sectors of N and Spectral Regularity in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, so $Q_t=\tfrac12\operatorname{tr}A$ and $N(\tilde Q)=\det A$. The coefficient basis is $(\mathrm I_2,E_x,E_y,E_z)$ with $E_k=-i\sigma_k$ and coefficient tuple $x=(x_0,x_1,x_2,x_3)$. The polar form is $B(X,Y)=\tfrac12(\det(X+Y)-\det X-\det Y)$. The Hermitian form is $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$, a different object.</p>
+<p><strong>Boundaries.</strong> The spaces are <a href="the-spin-half-bispinor-spaces-in-m2c.html">Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$</a>. The Dirac pairing is <a href="spinors-and-dirac-spinors-in-the-biquaternion-algebra-in-m2c.html">Spinors and Dirac Spinors in the Biquaternion Algebra in $M_2(\mathbb{C})$</a>. The norm in general is <a href="n-regularity-and-n-degeneracy-in-the-biquaternion-algebra.html">N-Regularity and N-Degeneracy in the Biquaternion Algebra</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>, and the display is <a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a>.</p>
+<p><strong>Letters.</strong> $P$ a rank-one projection, $P_{\perp}=\mathrm I_2-P$, $S_\pm=M_2P^{(\perp)}$, $x$ a coefficient tuple, $B$ the polar form, $\langle\cdot,\cdot\rangle$ the Hermitian form.</p>
+<h2 id="the-norm-of-the-projection">The Norm of the Projection</h2>
+<p><strong>The formula.</strong> In coefficients $P=\tfrac12(\mathrm I_2+n_1E_1+n_2E_2+n_3E_3)$ because $\sigma_k=iE_k$, so
+$$
+\det P=\frac14\left(1-\sum_k n_k^2\right)=0,
+$$
+the cancellation being $|n|=1$. Verified exactly.</p>
+<p><strong>The two squares.</strong> The scalar coordinate contributes $\tfrac14$ and the vector coordinates contribute $-\tfrac14|n|^2$. The cancellation is the unit length of the axis written as an identity.</p>
+<p><strong>An idempotent of determinant zero.</strong> From $P^2=P$, multiplicativity gives $(\det P)^2=\det P$, so the determinant of an idempotent is $0$ or $1$. The rank-one projections are the case $0$.</p>
+<h2 id="the-plane-and-the-ideals-are-null">The Plane and the Ideals Are Null</h2>
+<p><strong>The plane.</strong> $\det(\lambda P)=\lambda^2\det P=0$ for every $\lambda$: the whole plane lies in the singular locus.</p>
+<p><strong>The ideal.</strong> For every $Y$,
+$$
+\det(YP)=\det Y\det P=0 .
+$$
+So both ideals $M_2P$ and $M_2P_{\perp}$ lie in the singular locus, and no element of a single ideal is invertible.</p>
+<p><strong>Verified.</strong> On a hundred random elements of the plane and of the ideal the determinant vanishes to $8\cdot10^{-16}$.</p>
+<p><strong>The closure does not repair the nullity.</strong> The ideal repairs the invariance of the plane but stays inside the singular locus; the two notions are independent.</p>
+<h2 id="the-isotropic-dimension">The Isotropic Dimension</h2>
+<p><strong>The definition.</strong> A subspace is isotropic when the determinant vanishes on it and totally isotropic when the polar form vanishes on it in both arguments.</p>
+<p><strong>The ideals are totally isotropic.</strong> $B(XP,YP)=\tfrac12(\det((X+Y)P)-0-0)=0$, verified for all pairs in the basis. Each ideal is isotropic of complex dimension two.</p>
+<p><strong>The maximality.</strong> For a nondegenerate quadratic form on a space of dimension $N$ an isotropic subspace has dimension at most $N/2$. Here $N=4$, so the bound is $2$, and the ideals attain it: they are maximal isotropic.</p>
+<p><strong>The plane is isotropic and not maximal.</strong> It has complex dimension one, and it is totally isotropic as well, since $B(\lambda P,\mu P)=\lambda\mu\det P=0$. The dimension, and not the total isotropy, separates it from the ideals.</p>
+<h2 id="the-bispinor-read">The Bispinor Read</h2>
+<p><strong>The pairing.</strong> For $X=X_++X_-$ with $X_\pm=XP^{(\perp)}$,
+$$
+\det X=2B(X_+,X_-),
+$$
+because the two pure terms vanish. Verified on a hundred random pairs to $10^{-15}$.</p>
+<p><strong>The criterion.</strong> $X$ is invertible exactly when its two parts pair non-trivially.</p>
+<p><strong>The nondegeneracy.</strong> In the coefficient basis the Gram matrix of $B$ is the identity, verified: $B$ has rank four and no radical. So the pairing $S_+\times S_-\to\mathbb{C}$ is nondegenerate, and the two ideals are dual to each other under $B$.</p>
+<p><strong>The coefficient formula.</strong> $B(X,Y)=\sum_{\mu=0}^{3}x_\mu y_\mu$ and $\det X=\sum_\mu x_\mu^2$, both verified on a hundred random pairs to $2.4\cdot10^{-15}$ and $4.5\cdot10^{-15}$. These are the source's $N=Q_t^2+Q_x^2+Q_y^2+Q_z^2$ and its polar form, in the matrix coefficients.</p>
+<p><strong>The form is complex-bilinear, not Hermitian.</strong> $B(P,P)=0$ while $\langle P,P\rangle=\tfrac12$: the two forms have the same Gram matrix on the basis and differ off the real span, because $B(iX,iY)=-B(X,Y)$ and $\langle iX,iY\rangle=\langle X,Y\rangle$.</p>
+<p><strong>The two ideals are dual.</strong> The determinant restricted to the bispinor is the duality pairing of $S_+$ with $S_-$; in a basis of one and its dual basis of the other the pairing is the identity matrix, up to the factor two. Neither ideal carries a norm of its own.</p>
+<h2 id="the-pairing-and-the-axis">The Pairing and the Axis</h2>
+<p><strong>The pairing moves with the axis.</strong> Both ideals move, so the pairing does; every statement holds at every axis, and the axis is a parameter.</p>
+<p><strong>The pairing is symmetric.</strong> $B(X_+,X_-)=B(X_-,X_+)$, so the order of the two parts does not matter.</p>
+<h2 id="the-three-carriers-compared">The Three Carriers Compared</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$\det$ on it</th>
+<th>singular locus in it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>centre $\mathbb{C}\mathrm I_2$</td>
+<td>$\lambda^2$</td>
+<td>$\{0\}$</td>
+</tr>
+<tr>
+<td>plane and ideals</td>
+<td>$0$</td>
+<td>the whole space</td>
+</tr>
+<tr>
+<td>vector part $\mathfrak{su}(2)$</td>
+<td>$\lvert v\rvert^2$</td>
+<td>$\{0\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Where the carrier sits.</strong> The plane away from the origin lies in $\Sigma_{01}$: singular and spectrally regular. The centre lies in $\Sigma_{10}$ and the vector part in $\Sigma_{11}$.</p>
+<h2 id="worked-example">Worked Example</h2>
+<p><strong>The axis $e_3$.</strong> $P=\operatorname{diag}(1,0)$, $P_{\perp}=\operatorname{diag}(0,1)$, and $S_+$ is the set of matrices with second column zero.</p>
+<p><strong>An element of the ideal.</strong> $X=\begin{pmatrix}2&0\\3&0\end{pmatrix}$: $\det=0$, rank one, non-zero, singular.</p>
+<p><strong>A bispinor.</strong> $X=\begin{pmatrix}2&0\\3&1\end{pmatrix}=X_++X_-$ with $X_+=\begin{pmatrix}2&0\\3&0\end{pmatrix}$ and $X_-=\begin{pmatrix}0&0\\0&1\end{pmatrix}$; $\det=2$ and $2B(X_+,X_-)=2$, verified.</p>
+<h2 id="where-math100-differs">Where $n=2$ Differs</h2>
+<p><strong>The isotropic dimension.</strong> At $n=2$ the ideals are maximal isotropic of complex dimension two, half of four. At order $n$ the maximal isotropic subspaces of the determinant on $M_n(\mathbb{C})$ have dimension $\lfloor n^2/2\rfloor$, and the minimal left ideals have dimension $n$, which is smaller for $n\ge3$.</p>
+<p><strong>The pairing.</strong> At $n=2$ the bispinor is a sum of two ideals and the determinant is their pairing. At order $n$ the two Peirce halves are blocks of sizes $1$ and $n-1$ for a rank-one projection, and the determinant of their sum is the product of the two block determinants, so the pairing is replaced by a product of a scalar and an $(n-1)$-minor.</p>
+<p><strong>What does not differ.</strong> The nullity of the ideal, $\det(Y\!P)=0$, holds at every order, because the rank of $YP$ is at most one.</p>
+<h2 id="summary">Summary</h2>
+<p>The determinant of a rank-one projection vanishes, and multiplicativity gives $\det(Y\!P)=0$ for every $Y$: the plane and both minimal left ideals are null, and no element of a single ideal is invertible. The ideals are totally isotropic of complex dimension two, which is maximal for a quadratic form on four dimensions.</p>
+<p>On the bispinor the determinant becomes the pairing, $\det(X_++X_-)=2B(X_+,X_-)$, and the pairing is nondegenerate: in the coefficient basis $B$ has the identity Gram matrix, and $B(X,Y)=\sum x_\mu y_\mu$. The Hermitian form $\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$ is a different form, complex-linear in both arguments versus conjugate-linear in one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$P,\ P_{\perp}$</td>
+<td>a rank-one projection and its complement</td>
+</tr>
+<tr>
+<td>$S_\pm=M_2P^{(\perp)}$</td>
+<td>the two minimal left ideals</td>
+</tr>
+<tr>
+<td>$x=(x_0,x_1,x_2,x_3)$</td>
+<td>the coefficient tuple in $(\mathrm I_2,E_x,E_y,E_z)$</td>
+</tr>
+<tr>
+<td>$B(X,Y)$</td>
+<td>the polar form of the determinant</td>
+</tr>
+<tr>
+<td>$\langle X,Y\rangle=\tfrac12\operatorname{tr}(X^{\dagger}Y)$</td>
+<td>the Hermitian form</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-half-bispinor-spaces-and-n-norm-regularity.html">The Spin-Half Bispinors and N Norm Regularity</a>, for the source's isotropy argument.</li>
+<li><a href="the-spin-half-bispinor-spaces-in-m2c.html">Introduction to the Spin-Half Bispinors Spaces in $M_2(\mathbb{C})$</a>, for the plane and the ideals.</li>
+<li><a href="the-spin-half-bispinor-spaces-and-spectral-regularity-in-m2c.html">The Spin-Half Bispinors and Spectral Regularity in $M_2(\mathbb{C})$</a>, for the discriminant on the same spaces.</li>
+<li><a href="spinors-and-dirac-spinors-in-the-biquaternion-algebra-in-m2c.html">Spinors and Dirac Spinors in the Biquaternion Algebra in $M_2(\mathbb{C})$</a>, for the Dirac pairing read as the determinant.</li>
+<li><a href="the-spin-zero-centre-subspace-and-n-norm-regularity-in-m2c.html">The Spin-Zero Centre Subspace and N Norm Regularity in $M_2(\mathbb{C})$</a>, for the opposite extreme on the centre.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

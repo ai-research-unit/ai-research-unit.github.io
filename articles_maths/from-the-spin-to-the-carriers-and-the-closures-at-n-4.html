@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From the Spin to the Carriers and the Closures at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The spin is the label of the module, and the carriers are the pieces of the algebra. The article connects the two: every carrier is the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="from-the-spin-to-the-carriers-and-the-closures-at-math0"><strong>From the Spin to the Carriers and the Closures at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The spin is the label of the module, and the carriers are the pieces of the algebra. The article connects the two: every carrier is the closure of a single weight vector under the copy, the four carriers arise from four top weight vectors, and the cumulative sums give the chain $1,4,9,16$.</p>
+<p><strong>The order of the article.</strong> The first section defines the closure of a vector. The second proves that the closure of a nonzero element of a carrier is the whole carrier. The third identifies the four generating vectors and their weights. The fourth computes the chain of cumulative dimensions. The fifth contrasts closure with linear span and with multiplication, and draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Spin Decomposition of $M_4(\mathbb{C})$</em> for the weights and <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> for the carriers. The row at order two is <em>From the Spin to the Carriers and the Closures</em>.</p>
+<p><strong>The result in one line.</strong> The closure of a nonzero element of $V_k$ is $V_k$, the four top weight vectors $E_{03},E_{02},E_{01},E_{00}$ generate the four carriers, and the closures have dimensions $7,5,3,1$ with cumulative sums $1,4,9,16$.</p>
+<p><strong>Boundaries.</strong> The article does not treat the algebraic closure under multiplication, which is the product of carriers; it treats the closure under the group only. It does not treat the ideals, which are closed under left multiplication by the algebra.</p>
+<h2 id="the-closure">The Closure</h2>
+<p><strong>Definition.</strong> For $X$ in the algebra, the <strong>closure</strong> of $X$ under the copy is the smallest invariant subspace containing $X$, that is the linear span of the orbit $\{\Phi_q(X):q\in SU(2)\}$.</p>
+<p><strong>Proposition.</strong> The closure of $X$ is invariant, it is the smallest invariant subspace containing $X$, and it is the sum of the isotypic components that meet the orbit of $X$.</p>
+<p><em>Proof.</em> The span of an orbit is invariant because the group acts on the orbit; any invariant subspace containing $X$ contains the orbit, hence contains its span; and in a completely reducible module the span of an orbit is the sum of the isotypic components it meets.</p>
+<p><strong>Corollary.</strong> The closure of $X$ is a sum of carriers, and it is a single carrier exactly when the orbit of $X$ meets exactly one carrier.</p>
+<p><em>Proof.</em> The proposition and the decomposition of the algebra.</p>
+<p><strong>Corollary.</strong> The dimension of the closure is a sum of the numbers $1,3,5,7$.</p>
+<p><em>Proof.</em> The closure is a sum of carriers.</p>
+<h2 id="the-closure-of-an-element-of-a-carrier">The Closure of an Element of a Carrier</h2>
+<p><strong>Proposition.</strong> If $X\in V_k$ is nonzero, the closure of $X$ is $V_k$.</p>
+<p><em>Proof.</em> The carrier $V_k$ is irreducible, so the invariant subspace generated by $X$ is either zero or all of $V_k$; it is nonzero because it contains $X$.</p>
+<p><strong>Corollary.</strong> The closure of any nonzero element of $V_k$ has dimension $2k+1$, and the closures of two nonzero elements of the same carrier coincide.</p>
+<p><em>Proof.</em> The proposition, and the carrier is the same.</p>
+<p><strong>Corollary.</strong> The closure of $E_{03}$ is $V_3$, of $E_{02}$ is $V_2$, of $E_{01}$ is $V_1$ and of $E_{00}$ is $V_0$; the closures of the four weight vectors generate the four carriers.</p>
+<p><em>Proof.</em> Each $E_{0j}$ lies in the carrier of the relevant label, as its weight and the string show; the closure of a nonzero element of $V_k$ is $V_k$.</p>
+<p><strong>The numerical check.</strong> Applying random elements of the group to $E_{03}$ and taking the span of the resulting vectors gives a seven-dimensional space whose orthogonal complement is the sum of the other three carriers, with residuals of order $10^{-16}$.</p>
+<p><em>Proof.</em> The orbit spans an invariant subspace, and the invariant subspaces are the sums of carriers.</p>
+<h2 id="the-four-generators">The Four Generators</h2>
+<p><strong>Proposition.</strong> The four top weight vectors are $E_{03},E_{02},E_{01},E_{00}$, of weights $3,2,1,0$, and each is the highest weight vector of its carrier.</p>
+<p><em>Proof.</em> $E_{0j}$ has weight $m_0-m_j=3-j$, so the weights are $3,2,1,0$; the raising operator kills each of them because there is no vector of higher weight in the carrier, by the strings $3,2,1,0,-1,-2,-3$ and so on.</p>
+<p><strong>Corollary.</strong> The four carriers are the closures of four vectors, and the labels are read from the weights of those vectors.</p>
+<p><em>Proof.</em> The proposition and the closure theorem.</p>
+<p><strong>Corollary.</strong> The module's top weight vector has weight $\tfrac32$, which is not a weight of the algebra, so the module is not the closure of any element of the algebra.</p>
+<p><em>Proof.</em> The algebra's weights are integers, and no vector of the algebra has weight $\tfrac32$.</p>
+<p><strong>The reading.</strong> The passage from the spin to the carriers replaces the half-integer top weight by the integer weights $3,2,1,0$: the module's ladder is the ideal's business, and the algebra's ladders are the carriers'.</p>
+<h2 id="the-chain">The Chain</h2>
+<p><strong>Proposition.</strong> The invariant subspace spanned by the carriers of labels at most $k$ has dimension $(k+1)^{2}$, so the chain of such subspaces has dimensions $1,4,9,16$.</p>
+<p><em>Proof.</em> The sum of the first $k+1$ odd numbers is $(k+1)^{2}$: $1=1$, $1+3=4$, $1+3+5=9$, $1+3+5+7=16$.</p>
+<p><strong>Corollary.</strong> The chain is $V_0\subset V_0\oplus V_1\subset V_0\oplus V_1\oplus V_2\subset M_4(\mathbb{C})$, of dimensions $1,4,9,16$, and each step adds one carrier.</p>
+<p><em>Proof.</em> The proposition and the four carrier dimensions.</p>
+<p><strong>Corollary.</strong> The chain is the sequence of closures of the sets $\{E_{00}\}$, $\{E_{00},E_{01}\}$, $\{E_{00},E_{01},E_{02}\}$ and the four generators.</p>
+<p><em>Proof.</em> The closures of the generators are the carriers, and the closure of a finite set is the sum of the closures.</p>
+<p><strong>The reading.</strong> The chain of squares $1,4,9,16$ is the cumulative form of the carrier dimensions $1,3,5,7$; the difference between consecutive squares is the next odd number.</p>
+<h2 id="closure-span-and-product">Closure, Span and Product</h2>
+<p><strong>Proposition.</strong> The closure of a set is larger than its span in general: the span of $E_{03}$ is a line, and its closure is a seven-dimensional carrier.</p>
+<p><em>Proof.</em> The orbit of $E_{03}$ contains the six other vectors of the ladder, which are not multiples of $E_{03}$.</p>
+<p><strong>Corollary.</strong> The closure of a set is smaller than the subspace generated by it under multiplication: the algebra generated by $E_{03}$ is the whole matrix algebra, since $E_{03}$ is a rank-one matrix.</p>
+<p><em>Proof.</em> A rank-one matrix generates $M_4(\mathbb{C})$ as an algebra, and its closure under the group is only $V_3$.</p>
+<p><strong>Corollary.</strong> Three closures are therefore distinct: linear span, group closure and algebra generation, of dimensions $1$, $7$ and $16$ for the single element $E_{03}$.</p>
+<p><em>Proof.</em> The two propositions and the rank-one generation.</p>
+<p><strong>The boundary.</strong> The article treats the group closure; the algebra generation is the product theory of <em>The Truncated Rule</em>, and the linear span is trivial.</p>
+<h2 id="the-check-of-the-map">The Check of the Map</h2>
+<p><strong>The map.</strong> The map from a spin to a carrier is the projection onto the isotypic component, and the map from a carrier to a closure is the topological closure in the algebra; the two maps compose to the closure of the projection, which is the carrier itself because the projection is continuous and the carrier is closed.</p>
+<p><strong>The fibres.</strong> The fibre of the projection over a point of a carrier is an affine space of the complementary dimension, and the fibres over the various carriers are parallel; the map is therefore a linear projection with kernel the sum of the other carriers.</p>
+<p><strong>The compatibility.</strong> The projection commutes with the action, with the trace form and with the Hermitian form, so the closure of a carrier is the carrier and the closure of a weight vector is its orbit; the three structures agree on the map and on its image.</p>
+<h2 id="summary">Summary</h2>
+<p>The closure of a vector under the copy is the smallest invariant subspace containing it, and it is a sum of carriers. The closure of any nonzero element of a carrier is the whole carrier, by irreducibility, so the four top weight vectors $E_{03},E_{02},E_{01},E_{00}$ generate $V_3,V_2,V_1,V_0$.</p>
+<p>The cumulative sums of the carrier dimensions are $1,4,9,16=(k+1)^{2}$, and they form the chain $V_0\subset V_0\oplus V_1\subset V_0\oplus V_1\oplus V_2\subset M_4(\mathbb{C})$.</p>
+<p>Closure, span and algebra generation are three different operations: for $E_{03}$ they give dimensions $1$, $7$ and $16$. The closure is the operation that produces the carriers, and the spin enters through the weights of the generating vectors.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>closure of $X$</td>
+<td>the span of the orbit $\Phi_q(X)$</td>
+</tr>
+<tr>
+<td>$E_{03},E_{02},E_{01},E_{00}$</td>
+<td>the four top weight vectors</td>
+</tr>
+<tr>
+<td>$7,5,3,1$</td>
+<td>the dimensions of the closures</td>
+</tr>
+<tr>
+<td>$1,4,9,16$</td>
+<td>the cumulative sums $(k+1)^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-decomposition-of-m4c.html">The Spin Decomposition of $M_4(\mathbb{C})$</a>, for the weights.</li>
+<li><a href="the-closures-of-a-weight-vector-at-n-4.html">The Closures of a Weight Vector: the Chain from $V_0$ to $V_3$</a>, for the chain.</li>
+<li><a href="the-four-carrier-lists-of-one-algebra-at-n-4.html">The Four Carrier Lists of One Algebra at $n=4$</a>, for the other decompositions.</li>
+<li><a href="from-the-spin-to-the-carriers-and-the-closures.html">From the Spin to the Carriers and the Closures</a>, for the row at order two.</li>
+<li><a href="the-truncated-rule-the-product-of-two-carriers-at-n-4.html">The Truncated Rule: the Product of Two Carriers Is Not a Carrier</a>, for the algebra generation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

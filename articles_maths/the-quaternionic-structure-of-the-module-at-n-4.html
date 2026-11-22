@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The module is a complex vector space of dimension four carrying an irreducible unitary action of. It also carries an anti-linear map that…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-quaternionic-structure-of-the-module-why-math0-admits-real-forms"><strong>The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The module $V_{3/2}$ is a complex vector space of dimension four carrying an irreducible unitary action of $SU(2)$. It also carries an anti-linear map $T$ that commutes with the action up to complex conjugation, and the square of that map is a scalar. The scalar is $-1$, so the module is quaternionic and not real.</p>
+<p><strong>The order of the article.</strong> The first section constructs $T$ and proves the intertwining relation. The second computes $T^{2}$ and the Frobenius–Schur indicator. The third draws the consequences for the half-integer and the integer carriers. The fourth locates the real spaces of dimension four inside the module. The fifth passes to the algebra of order two and explains why the biquaternion row is a real algebra. The sixth separates the two kinds of real structure.</p>
+<p><strong>It assumes</strong> <em>The Four Weights of the Module and the Half Angle at $n=4$</em> for the weight basis. The general theory of the indicator is quoted from the representation theory of compact groups; the row at order two is <em>The Spin-Half Bispinor Spaces</em>.</p>
+<p><strong>The result in one line.</strong> $T^{2}=(-1)^{2j}$, so the carriers of half-integer label are quaternionic and the carriers of integer label are real; $V_{3/2}$ is quaternionic, and a quaternionic line inside it has real dimension four.</p>
+<p><strong>A word on the title.</strong> The phrase <em>real forms</em> in the title is read in the sense of real subspaces of the module, and the largest of them are the quaternionic lines of real dimension four. The module itself has no real form, since $T^{2}=-\mathrm I$; the real spaces it contains are the quaternionic lines, and they are the subject of the fourth section. The distinction between the two readings is drawn once and for all in the last section.</p>
+<p><strong>Boundaries.</strong> The article does not construct the real algebra of quaternions inside the matrix algebra; that is <em>The Two Base Fields $M_4(\mathbb{R})$ inside $M_4(\mathbb{C})$</em> and the biquaternion articles. It does not treat the reality of the algebra action, which is <em>The Spin Content of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-anti-linear-intertwiner">The Anti-Linear Intertwiner</h2>
+<p><strong>Definition.</strong> Let $v_m$ be the orthonormal weight vector of weight $m$ and put</p>
+<p>$$
+T\Bigl(\sum_m c_m v_m\Bigr)=\sum_m (-1)^{j-m}\,\overline{c_m}\,v_{-m}.
+$$</p>
+<p>This is an anti-linear map of $V$ to itself: $T(c\,w)=\bar c\,Tw$ and $T(w+w')=Tw+Tw'$.</p>
+<p><em>Proof.</em> The definition is a sum of terms each anti-linear in the coefficient, and the coefficients $(-1)^{j-m}$ are real.</p>
+<p><strong>Proposition.</strong> $T$ is a bijection, and $T\rho(q)=\overline{\rho(q)}\,T$ for every $q$ in the copy, where the bar is the entrywise complex conjugate.</p>
+<p><em>Proof.</em> The map sends the orthonormal basis to an orthonormal basis up to signs, so it is invertible. For the relation, both sides are anti-linear in the vector and it suffices to check on the weight vectors. The conjugate representation $\overline{\rho}$ has the weights $-m$ on the conjugate of $v_m$, and the signs $(-1)^{j-m}$ are exactly the signs of the standard intertwiner between the representation and its conjugate; the two sides agree on each weight vector.</p>
+<p><strong>Proposition (uniqueness).</strong> Every anti-linear map $S$ with $S\rho(q)=\overline{\rho(q)}S$ is a real multiple of $T$.</p>
+<p><em>Proof.</em> The composite $T^{-1}S$ is complex-linear and commutes with every $\rho(q)$; the module is irreducible and the complex numbers are the only operators commuting with an irreducible complex representation, by Schur's lemma. Hence $T^{-1}S=\lambda\mathrm I$ for a real $\lambda$, since both maps are anti-linear.</p>
+<p><strong>Corollary.</strong> The structure is canonical up to a positive real scalar, and the sign of its square is an invariant of the representation.</p>
+<p><em>Proof.</em> The scalar $\lambda$ changes $S^{2}$ by $\lambda^{2}$, which is positive for real $\lambda$; the sign of the square is therefore unchanged.</p>
+<h2 id="the-square-and-the-indicator">The Square and the Indicator</h2>
+<p><strong>Proposition.</strong> $T^{2}=(-1)^{2j}\mathrm I$. At $j=\tfrac32$ this is $-\mathrm I$.</p>
+<p><em>Proof.</em> On a weight vector, $T^{2}v_m=(-1)^{j-m}(-1)^{j+m}v_m=(-1)^{2j}v_m$, since the conjugate of a real coefficient is itself and the two applications reverse the weight twice. At $j=\tfrac32$ the exponent $2j=3$ is odd.</p>
+<p><strong>Definition.</strong> The <strong>Frobenius–Schur indicator</strong> of the irreducible representation is the sign of $T^{2}$, that is, $(-1)^{2j}$.</p>
+<p><strong>Corollary.</strong> The indicator is $-1$, and the representation is quaternionic, for $j=\tfrac12$ and $j=\tfrac32$; it is $+1$, and the representation is real, for $j=1$, $j=2$ and $j=3$.</p>
+<p><em>Proof.</em> The exponent $2j$ is odd exactly for the two half-integer labels among these five.</p>
+<p><strong>The table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>carrier</th>
+<th>$2j$</th>
+<th>$T^{2}$</th>
+<th>type</th>
+<th>real dimension of the form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_{1/2}$</td>
+<td>$1$</td>
+<td>$-1$</td>
+<td>quaternionic</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$V_1$</td>
+<td>$2$</td>
+<td>$+1$</td>
+<td>real</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$V_{3/2}$</td>
+<td>$3$</td>
+<td>$-1$</td>
+<td>quaternionic</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$V_2$</td>
+<td>$4$</td>
+<td>$+1$</td>
+<td>real</td>
+<td>$5$</td>
+</tr>
+<tr>
+<td>$V_3$</td>
+<td>$6$</td>
+<td>$+1$</td>
+<td>real</td>
+<td>$7$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary.</strong> The four carriers of the algebra and the module split into two quaternionic and three real representations, and the module is one of the quaternionic two.</p>
+<p><em>Proof.</em> The table.</p>
+<h2 id="the-consequences-for-the-carriers">The Consequences for the Carriers</h2>
+<p><strong>Proposition.</strong> For an integer label $k$ the fixed points of $T$ form a real subspace of real dimension $2k+1$, whose complexification is $V_k$.</p>
+<p><em>Proof.</em> $T^{2}=\mathrm I$ makes $T$ a real structure; the fixed points of an anti-linear involution on a complex space of dimension $2k+1$ have real dimension $2k+1$, and the complexification is the whole space.</p>
+<p><strong>Corollary.</strong> The real form of $V_1$ has dimension three, of $V_2$ dimension five, of $V_3$ dimension seven.</p>
+<p><em>Proof.</em> The proposition with $k=1,2,3$.</p>
+<p><strong>Proposition.</strong> For a half-integer label the map $T$ is a quaternionic structure: $T^{2}=-\mathrm I$, and the module becomes a vector space over the quaternions, with the imaginary unit $i$ acting as multiplication by $i$ and the unit $j$ acting as $T$.</p>
+<p><em>Proof.</em> The relations $i^{2}=j^{2}=-1$ and $ij=-ji$ are the complex structure of the vector space and the anti-linearity of $T$.</p>
+<p><strong>Corollary.</strong> $V_{3/2}$ has complex dimension four, real dimension eight and quaternionic dimension two, and it admits no real subspace $W$ with $W\otimes_{\mathbb{R}}\mathbb{C}=V_{3/2}$.</p>
+<p><em>Proof.</em> The real dimension of a quaternionic vector space is four times its quaternionic dimension, so the quaternionic dimension is two. A real form would be the fixed space of an anti-linear involution; $T^{2}=-\mathrm I$ has no nonzero fixed vector, since $Tv=v$ would give $T^{2}v=v$ and also $T^{2}v=-v$.</p>
+<h2 id="real-spaces-of-dimension-four-inside-the-module">Real Spaces of Dimension Four Inside the Module</h2>
+<p><strong>Proposition.</strong> The complex span of the two weight vectors $v_{3/2}$ and $v_{-3/2}$ is stable under $T$, and as a real space of dimension four it is a quaternionic line.</p>
+<p><em>Proof.</em> $Tv_{3/2}=v_{-3/2}$ and $Tv_{-3/2}=(-1)^{3}v_{3/2}=-v_{3/2}$, both inside the span; the span has complex dimension two and real dimension four, and it is stable under multiplication by $i$ and by $T$, hence under the quaternions.</p>
+<p><strong>Corollary.</strong> The module is a direct sum of two quaternionic lines, for instance the line spanned by the extreme weights and the line spanned by the two middle weights.</p>
+<p><em>Proof.</em> The two spans are $T$-stable, of complex dimension two each, and their sum is the whole module.</p>
+<p><strong>Corollary.</strong> Every quaternionic line has real dimension four, and the module contains a two-parameter family of them, since a quaternionic line is determined by a point of the quaternionic projective line.</p>
+<p><em>Proof.</em> The dimension count and the definition of the quaternionic projective line.</p>
+<p><strong>The reading.</strong> The phrase "a real form of dimension four" is correct for a quaternionic line and incorrect for the module: the module has real dimension eight. The distinction is the whole content of the sign of $T^{2}$.</p>
+<h2 id="the-passage-to-order-two">The Passage to Order Two</h2>
+<p><strong>Proposition.</strong> At $n=2$ the module is $V_{1/2}$, of complex dimension two and real dimension four, and $T^{2}=-\mathrm I$; the module is a single quaternionic line.</p>
+<p><em>Proof.</em> The weights are $\pm\tfrac12$, and the computation of the square gives $-1$; a quaternionic space of real dimension four has quaternionic dimension one.</p>
+<p><strong>Corollary.</strong> The real algebra of the quaternions acts on $V_{1/2}$ by complex-linear maps, and the algebra of all such maps is $M_2(\mathbb{C})$, the biquaternion algebra.</p>
+<p><em>Proof.</em> The quaternions act by $i$ and $T$, and the real dimension of $M_2(\mathbb{C})$ is eight, which is the real dimension of $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$.</p>
+<p><strong>Proposition.</strong> There is no eight-dimensional real division algebra, by the theorem of Frobenius, and the biquaternion algebra is not one: it is $M_2(\mathbb{C})$ and it has zero divisors.</p>
+<p><em>Proof.</em> Frobenius classifies the finite-dimensional real division algebras as $\mathbb{R}$, $\mathbb{C}$ and $\mathbb{H}$, of dimensions one, two and four. The biquaternion algebra contains the rank-one matrix $E_{00}$, which is a zero divisor.</p>
+<p><strong>Corollary.</strong> The enlargement from $n=2$ to $n=4$ does not produce a division algebra of dimension eight: it produces the matrix algebra of order four, which has zero divisors of every rank.</p>
+<p><em>Proof.</em> The proposition, and the rank-one elements of $M_4(\mathbb{C})$.</p>
+<h2 id="the-two-kinds-of-real-structure">The Two Kinds of Real Structure</h2>
+<p><strong>The distinction.</strong> A real structure is an anti-linear involution; a quaternionic structure is an anti-linear map whose square is minus the identity. The first produces a real form and the second produces a quaternionic structure, and the two are distinguished by the sign of $T^{2}$ alone.</p>
+<p><em>Proof.</em> The definitions and the two propositions above.</p>
+<p><strong>Corollary.</strong> The half-integer carriers are the ones on which the sign is negative, and the biquaternion row consists exactly of such carriers: $V_{1/2}$ at $n=2$, and the module $V_{3/2}$ at $n=4$.</p>
+<p><em>Proof.</em> The table of indicators.</p>
+<p><strong>The reading.</strong> The biquaternion algebra is a real algebra because the module of its spin group is quaternionic, and the module of order four is quaternionic for the same reason: the parity of $2j$. The integer carriers of the algebra of order four are real, and that is why the algebra carries real forms of dimensions three, five and seven and the module carries none.</p>
+<p><em>Proof.</em> The two preceding corollaries.</p>
+<h2 id="summary">Summary</h2>
+<p>The module carries an anti-linear intertwiner $T$ with $T\rho=\overline{\rho}T$, unique up to a real scalar, and $T^{2}=(-1)^{2j}\mathrm I$. At $j=\tfrac32$ the square is $-1$: the module is quaternionic, of quaternionic dimension two and real dimension eight, and it contains no real form. A quaternionic line inside it has real dimension four, and the module is a sum of two such lines.</p>
+<p>The integer carriers $V_1,V_2,V_3$ have $T^{2}=+1$ and therefore carry real forms of dimensions three, five and seven. At $n=2$ the module $V_{1/2}$ is a single quaternionic line, the quaternions act on it, and the algebra of all complex-linear maps is $M_2(\mathbb{C})$, the biquaternion algebra, which is not a division algebra and is not of dimension eight as a division algebra.</p>
+<p>The distinction between the two kinds of real structure is the sign of $T^{2}$, and the sign is the parity of $2j$. Half-integer carriers are quaternionic, integer carriers are real, and the module of order four belongs to the first class.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$T$</td>
+<td>the anti-linear intertwiner</td>
+</tr>
+<tr>
+<td>$T^{2}=(-1)^{2j}\mathrm I$</td>
+<td>the Frobenius–Schur indicator</td>
+</tr>
+<tr>
+<td>quaternionic</td>
+<td>$T^{2}=-\mathrm I$</td>
+</tr>
+<tr>
+<td>real</td>
+<td>$T^{2}=+\mathrm I$</td>
+</tr>
+<tr>
+<td>$V_{3/2}$</td>
+<td>the module, quaternionic, real dimension eight</td>
+</tr>
+<tr>
+<td>quaternionic line</td>
+<td>a $T$-stable complex line pair, real dimension four</td>
+</tr>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the quaternions, real dimension four</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-four-weights-of-the-module-and-the-half-angle-at-n-4.html">The Four Weights of the Module and the Half Angle at $n=4$</a>, for the weight basis used in the definition of $T$.</li>
+<li><a href="the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html">The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</a>, for the action that $T$ intertwines.</li>
+<li><a href="the-spin-half-bispinor-spaces.html">The Spin-Half Bispinor Spaces</a>, for the row at order two.</li>
+<li><a href="the-spin-content-of-m4c.html">The Spin Content of $M_4(\mathbb{C})$</a>, for the four carriers and their labels.</li>
+<li><a href="the-two-base-fields-m4r-inside-m4c.html">The Two Base Fields $M_4(\mathbb{R})$ inside $M_4(\mathbb{C})$</a>, for the real slices of the matrix algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

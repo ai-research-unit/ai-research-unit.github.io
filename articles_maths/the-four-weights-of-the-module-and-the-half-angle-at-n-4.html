@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Weights of the Module and the Half Angle at $n=4$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. The module of the principal copy has four weights,, one per dimension. The article writes the weight basis, proves that the four weights are…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-weights-of-the-module-and-the-half-angle-at-math0"><strong>The Four Weights of the Module and the Half Angle at $n=4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> The module of the principal copy has four weights, $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$, one per dimension. The article writes the weight basis, proves that the four weights are distinct, computes the lowering operator with its normalisations, and reads the half angle of the rotor on the resulting phases.</p>
+<p><strong>The order of the article.</strong> The first section writes the weight basis and proves that it is a basis. The second computes the lowering operator and the normalisations. The third draws the two consequences, irreducibility and multiplicity one. The fourth reads the phases of the rotor on each weight. The fifth counts the dimension from the label, and the sixth explains why no smaller faithful module sits inside the module.</p>
+<p><strong>It assumes</strong> <em>The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</em> for the copy, and <em>From the Spin Group to the Spin of a Single Rotor at $n=4$</em> for the rotor. The model at order two is <em>The Spin-Half Bispinor Spaces</em>, where the weight string has two members.</p>
+<p><strong>The result in one line.</strong> Four weights, four dimensions, one half angle: the string $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$ is strictly decreasing with step one, and every weight is a half-integer.</p>
+<p><strong>Boundaries.</strong> The article does not treat the anti-linear structure that pairs a weight with its opposite; that is <em>The Quaternionic Structure of the Module at $n=4$</em>. It does not treat the action on the algebra, which is <em>The Spin Decomposition of $M_4(\mathbb{C})$</em>.</p>
+<h2 id="the-weight-basis">The Weight Basis</h2>
+<p><strong>Definition.</strong> Let $u,v$ be the standard basis of $S=\mathbb{C}^2$. The <strong>weight vectors</strong> of the module $V=\operatorname{Sym}^3 S$ are the four monomials</p>
+<p>$$
+u^3,\qquad u^2v,\qquad uv^2,\qquad v^3,
+$$</p>
+<p>and the <strong>weight</strong> of a monomial is the exponent of $u$ minus the exponent of $v$, halved.</p>
+<p><strong>Proposition.</strong> The four weight vectors are a basis of $V$, and their weights are $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$ in the order displayed.</p>
+<p><em>Proof.</em> The monomials of degree three in two variables are four and are independent. The torus of $SU(2)$ acts on $u$ with weight $\tfrac12$ and on $v$ with weight $-\tfrac12$, so on $u^av^b$ with $a+b=3$ it acts with weight $\tfrac12(a-b)$; the four values of $a-b$ are $3,1,-1,-3$.</p>
+<p><strong>Corollary.</strong> The weights are distinct, so the module is <strong>multiplicity-free</strong>: each weight occurs once, and the four weight vectors are the only eigenvectors of $J_z$ up to scalar.</p>
+<p><em>Proof.</em> Four distinct eigenvalues of a diagonal operator on a four-dimensional space, with one eigenvector each.</p>
+<p><strong>Corollary.</strong> The sum of the four weights is zero, and the multiset is symmetric about zero.</p>
+<p><em>Proof.</em> $\tfrac32+\tfrac12-\tfrac12-\tfrac32=0$, and the multiset is invariant under $m\mapsto-m$.</p>
+<p><strong>The normalisation.</strong> The monomials are orthogonal for the standard inner product on the symmetric power but not of equal length: their squared norms are $1,2,2,1$. Dividing each by its norm gives the orthonormal weight basis in which the ladder coefficients are $\sqrt3,2,\sqrt3$.</p>
+<p><em>Proof.</em> The norm of $u^av^b$ is $\sqrt{a!\,b!}$ for the standard Fock normalisation of $u$ and $v$, which gives $1,\sqrt2,\sqrt2,1$.</p>
+<h2 id="the-lowering-operator">The Lowering Operator</h2>
+<p><strong>Definition.</strong> The lowering operator is $J_-=J_+^{\dagger}$, and on a weight vector it acts by</p>
+<p>$$
+J_-\,v_m=\sqrt{j(j+1)-m(m-1)}\;v_{m-1},
+$$</p>
+<p>where $j=\tfrac32$ and $v_m$ is the weight vector of weight $m$.</p>
+<p><strong>Proposition.</strong> The coefficients are $\sqrt3,2,\sqrt3$ on the three steps from the top to the bottom, and each is nonzero.</p>
+<p><em>Proof.</em> With $j=\tfrac32$ one has $j(j+1)=\tfrac{15}{4}$. For $m=\tfrac32$ the coefficient is $\sqrt{\tfrac{15}{4}-\tfrac34}=\sqrt3$; for $m=\tfrac12$ it is $\sqrt{\tfrac{15}{4}+\tfrac14}=2$; for $m=-\tfrac12$ it is $\sqrt{\tfrac{15}{4}+\tfrac34}=\sqrt3$.</p>
+<p><strong>Corollary.</strong> The lowering operator carries the top weight vector to a nonzero multiple of the next, and so on down the string, and it kills the bottom weight vector.</p>
+<p><em>Proof.</em> The three coefficients are nonzero, and the formula at $m=-\tfrac32$ gives the factor $\sqrt{\tfrac{15}{4}-\tfrac{15}{4}}=0$.</p>
+<p><strong>Proposition (irreducibility).</strong> Every weight vector is a multiple of $J_-^{k}u^3$ for a suitable $k$, so the module is generated by $u^3$ and has no proper submodule.</p>
+<p><em>Proof.</em> The top weight vector is $u^3$; applying $J_-$ three times reaches $v^3$ through the two intermediate vectors, each time with a nonzero coefficient. A submodule containing $u^3$ contains all four, hence is the whole module; and a submodule not containing $u^3$ is contained in the span of the three lower weight vectors, which is not stable under $J_+$, so it is zero.</p>
+<p><strong>Corollary.</strong> The module is irreducible as a module of the copy, and the four weights determine it up to isomorphism.</p>
+<p><em>Proof.</em> Irreducibility is the proposition; an irreducible module of a compact group is determined by its highest weight.</p>
+<h2 id="the-phases">The Phases</h2>
+<p><strong>Proposition.</strong> Under the rotor $R(\theta)=\exp(-i\theta J_z)$ the weight vector $v_m$ is multiplied by $e^{-im\theta}$, and the four phases are $e^{-3i\theta/2},e^{-i\theta/2},e^{i\theta/2},e^{3i\theta/2}$.</p>
+<p><em>Proof.</em> The weight vector is an eigenvector of $J_z$ with eigenvalue $m$, so the exponential acts by the exponential of $-i\theta m$.</p>
+<p><strong>Corollary.</strong> The four phases are the odd powers of the fundamental phase $e^{-i\theta/2}$, namely its third, first, minus-first and minus-third powers.</p>
+<p><em>Proof.</em> $2m$ runs over $-3,-1,1,3$.</p>
+<p><strong>The half angle.</strong> The half angle is the angle $\theta/2$ of the element of $SU(2)$ before the representation is applied. On the module it is multiplied by the weight, and the products $m\theta$ are half-integers times $\theta$, so the module sees the half angle raised to the odd powers $2m$. The lowest weight, $-\tfrac32$, carries the phase $e^{3i\theta/2}$, which is the cube of $e^{i\theta/2}$; the weight $\tfrac12$ carries $e^{i\theta/2}$ itself, which is the half angle unaugmented.</p>
+<p><em>Proof.</em> The four phases displayed, read as powers of $e^{i\theta/2}$.</p>
+<p><strong>Corollary.</strong> No phase of the module is independent of the half angle, and the module is the carrier on which the half angle is visible with the largest exponent three.</p>
+<p><em>Proof.</em> Every phase is an odd power of $e^{i\theta/2}$, and the largest odd power is three.</p>
+<h2 id="the-count-of-dimensions">The Count of Dimensions</h2>
+<p><strong>Proposition.</strong> The dimension of the module of highest weight $j$ is $2j+1$; at $j=\tfrac32$ this is $4$, which is the number of weights and the number of coordinates.</p>
+<p><em>Proof.</em> The weights of an irreducible module of highest weight $j$ are $-j,-j+1,\dots,j$, one each, and their number is $2j+1$.</p>
+<p><strong>Corollary.</strong> The identity $2s+1=4$ is not a coincidence of the display: it counts the weights, the dimensions and the coordinates at once.</p>
+<p><em>Proof.</em> The proposition with $s=\tfrac32$.</p>
+<p><strong>The general row.</strong> At $n$ the module of the principal copy is $\operatorname{Sym}^{n-1}S$, of highest weight $\tfrac{n-1}{2}$, and the dimension is $n$. At $n=2$ the weights are $\pm\tfrac12$; at $n=3$ they are $1,0,-1$; at $n=4$ they are the four of this article.</p>
+<p><em>Proof.</em> The dimension of $\operatorname{Sym}^{n-1}$ of a two-dimensional space is $n$.</p>
+<h2 id="no-smaller-faithful-module">No Smaller Faithful Module</h2>
+<p><strong>Proposition.</strong> The module has no proper submodule, so no smaller module of the copy sits inside it.</p>
+<p><em>Proof.</em> Irreducibility.</p>
+<p><strong>Proposition.</strong> A faithful module of the copy must have an odd value of $2j$, since $-\mathrm I$ acts by $(-1)^{2j}$; the smallest faithful module of the abstract group is the defining module of dimension two, which is not a submodule of $V$.</p>
+<p><em>Proof.</em> The action of $-\mathrm I$ on the module of highest weight $j$ is the scalar $(-1)^{2j}$; faithfulness forces this scalar to differ from $1$, so $2j$ is odd. The defining module of dimension two is faithful and is not a submodule of $V$, since $V$ is irreducible of dimension four.</p>
+<p><strong>Corollary.</strong> Inside the algebra the smallest faithful module of the copy is the module itself, of dimension four, and no module of dimension two appears as an invariant subspace of $\mathbb{C}^4$.</p>
+<p><em>Proof.</em> The two propositions, together with the irreducibility of $V$.</p>
+<p><strong>The reading.</strong> The label $\tfrac32$ is forced by two requirements at once: faithfulness, which demands an odd $2j$, and irreducibility at dimension four, which fixes $j$ as soon as the dimension is four. A smaller faithful module exists abstractly and does not exist inside the module.</p>
+<h2 id="summary">Summary</h2>
+<p>The module has the four weight vectors $u^3,u^2v,uv^2,v^3$ with the distinct weights $\tfrac32,\tfrac12,-\tfrac12,-\tfrac32$; the weights are distinct, so the module is multiplicity-free. The lowering operator has the normalisations $\sqrt3,2,\sqrt3$ and kills only the bottom weight vector, so the top weight vector generates the whole module and the module is irreducible.</p>
+<p>Under the rotor each weight is multiplied by $e^{im\theta}$, and the four phases are the odd powers of the half-angle phase $e^{i\theta/2}$. The count $2s+1=4$ is the number of weights, of dimensions and of coordinates. No smaller faithful module of the copy sits inside the module: the only submodule is the whole space, and faithfulness is the parity of $2j$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u,v$</td>
+<td>the basis of $S=\mathbb{C}^2$</td>
+</tr>
+<tr>
+<td>$u^av^b$, $a+b=3$</td>
+<td>the weight vectors of $V=\operatorname{Sym}^3 S$</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>a weight, $\tfrac12(a-b)$</td>
+</tr>
+<tr>
+<td>$J_-,J_+$</td>
+<td>the lowering and raising operators</td>
+</tr>
+<tr>
+<td>$j=\tfrac32$</td>
+<td>the highest weight</td>
+</tr>
+<tr>
+<td>$2j+1$</td>
+<td>the dimension, four</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-spin-group-at-n-4-the-principal-copy-and-its-kernel.html">The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$</a>, for the generators and the kernel.</li>
+<li><a href="from-the-spin-group-to-the-spin-of-a-single-rotor-at-n-4.html">From the Spin Group to the Spin of a Single Rotor at $n=4$</a>, for the phases after $2\pi$ and $4\pi$.</li>
+<li><a href="the-quaternionic-structure-of-the-module-at-n-4.html">The Quaternionic Structure of the Module at $n=4$</a>, for the pairing of opposite weights.</li>
+<li><a href="the-spin-half-bispinor-spaces.html">The Spin-Half Bispinor Spaces</a>, for the row at order two.</li>
+<li><a href="the-spin-decomposition-of-m4c.html">The Spin Decomposition of $M_4(\mathbb{C})$</a>, for the weight multiset of the algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

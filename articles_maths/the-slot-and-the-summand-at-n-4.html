@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in $M_4(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The subject. At every order there is a slot: the label of the module, fixed by the dimension through. At even orders the slot is a half-integer and is not…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-slot-and-the-summand-math0-in-math1-and-math2-in-math3"><strong>The Slot and the Summand: $\tfrac12$ in $\mathbb{B}$ and $\tfrac32$ in $M_4(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The subject.</strong> At every order there is a slot: the label of the module, fixed by the dimension through $2j=n-1$. At even orders the slot is a half-integer and is not a summand label; at odd orders it is an integer and is one. At order four the slot is $\tfrac32$ and the summands are $0,1,2,3$; at order two the slot is $\tfrac12$ and the summands are $0,1$.</p>
+<p><strong>The order of the article.</strong> The first section states the identity $2j=n-1$ and derives the three invariants of the slot. The second lists the two rows side by side. The third proves the parallel and identifies what differs. The fourth treats the odd orders, where the slot is a summand. The fifth draws the boundary.</p>
+<p><strong>It assumes</strong> <em>The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</em> and <em>Where the Half-Integers Go in $M_4(\mathbb{C})$</em>. The row at order two is <em>The Slot and the Summand</em>.</p>
+<p><strong>The result in one line.</strong> The slot is $\tfrac{n-1}{2}$, its module has dimension $n$ and $n$ weights, and its top weight is $\tfrac{n-1}{2}$; at $n=4$ the slot is $\tfrac32$ and the summands are $0,1,2,3$.</p>
+<p><strong>Boundaries.</strong> The article fixes the vocabulary of slot, module and summand; it does not re-derive the decomposition, and it does not treat the ideals except to name the object that carries the slot.</p>
+<h2 id="the-slot-and-its-invariants">The Slot and Its Invariants</h2>
+<p><strong>Definition.</strong> The <strong>slot</strong> of the row of order $n$ is the number $j=\tfrac{n-1}{2}$; the <strong>summands</strong> are the integer labels $k$ occurring in the decomposition of the algebra.</p>
+<p><strong>Proposition.</strong> The dimension of the module is $2j+1=n$, the number of its weights is $n$, and its maximal weight is $j=\tfrac{n-1}{2}$.</p>
+<p><em>Proof.</em> The module is the symmetric power $\operatorname{Sym}^{2j}$ of the two-dimensional module, of dimension $2j+1=n$; an irreducible module of highest weight $j$ has the weights $j,j-1,\dots,-j$, of which there are $2j+1=n$.</p>
+<p><strong>Corollary.</strong> The three invariants of the slot are $n$, $n$ and $\tfrac{n-1}{2}$: the dimension, the number of weights and the maximal weight.</p>
+<p><em>Proof.</em> The proposition.</p>
+<p><strong>Corollary.</strong> The sum of the dimensions of the summands is $n^{2}$, the square of the dimension of the module.</p>
+<p><em>Proof.</em> $\sum_{k=0}^{n-1}(2k+1)=n^{2}$.</p>
+<p><strong>The reading.</strong> The identity $2j=n-1$ ties the slot to the size of the algebra: the module's top weight is half the distance from $0$ to $n-1$, and the summands are the integers of that interval.</p>
+<h2 id="the-two-rows-side-by-side">The Two Rows Side by Side</h2>
+<p><strong>Proposition.</strong> At $n=2$ the algebra is $M_2(\mathbb{C})$, of dimension four, with the summands $0,1$ of dimensions $1,3$; the slot is $\tfrac12$, the module has dimension two and the weights $\pm\tfrac12$.</p>
+<p><em>Proof.</em> The tensor square of $V_{1/2}$ is $V_1\oplus V_0$, of dimensions $3+1=4$; the module has the two weights $\pm\tfrac12$.</p>
+<p><strong>Proposition.</strong> At $n=4$ the algebra is $M_4(\mathbb{C})$, of dimension sixteen, with the summands $0,1,2,3$ of dimensions $1,3,5,7$; the slot is $\tfrac32$, the module has dimension four and the weights $\pm\tfrac32,\pm\tfrac12$.</p>
+<p><em>Proof.</em> The tensor square of $V_{3/2}$ is $V_3\oplus V_2\oplus V_1\oplus V_0$, of dimensions $7+5+3+1=16$; the module has the four weights $\pm\tfrac32,\pm\tfrac12$.</p>
+<p><strong>Corollary.</strong> The two rows are the cases $n=2$ and $n=4$ of one formula: $n$ summands $0,\dots,n-1$, total dimension $n^{2}$, module of dimension $n$ with the slot $\tfrac{n-1}{2}$.</p>
+<p><em>Proof.</em> The two propositions and the identity $2j=n-1$.</p>
+<p><strong>Corollary.</strong> In both rows the slot is a half-integer and is not a summand.</p>
+<p><em>Proof.</em> $\tfrac12$ is not among $0,1$, and $\tfrac32$ is not among $0,1,2,3$.</p>
+<p><strong>Proposition.</strong> At $n=2$ the same computation inside the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ gives the slot $\tfrac12$, the module $V_{1/2}$ of dimension two, and the summands $0,1$; the row of the biquaternion algebra is the row of order two.</p>
+<p><em>Proof.</em> The biquaternion algebra is $M_2(\mathbb{C})$ as a complex algebra, and the conjugation action of its copy $SU(2)$ has the module $V_{1/2}$ and the two carriers $V_1,V_0$.</p>
+<p><strong>The reading.</strong> The two rows agree in structure and differ in the value of the slot. The structure is the formula; the value is the order.</p>
+<h2 id="what-differs">What Differs</h2>
+<p><strong>Proposition.</strong> The differences between the rows are the size of the algebra, $4$ against $16$; the number of summands, $2$ against $4$; the dimension of the module, $2$ against $4$; and the value of the slot, $\tfrac12$ against $\tfrac32$.</p>
+<p><em>Proof.</em> The two lists above.</p>
+<p><strong>Corollary.</strong> The dimension of the algebra is the square of the dimension of the module, and the number of summands is the dimension of the module.</p>
+<p><em>Proof.</em> $n^{2}$ and $n$ with $n=\dim V$.</p>
+<p><strong>Corollary.</strong> Nothing else differs: the weight strings, the parity rule, the intersection table and the rank stratification are the same statements at the two orders with the numbers changed.</p>
+<p><em>Proof.</em> Each of these statements is a function of $j$ and $n$ only.</p>
+<p><strong>The reading.</strong> The row at order four is the row at order two with the slot raised from $\tfrac12$ to $\tfrac32$; the mechanism is the same and the sizes are larger.</p>
+<h2 id="the-odd-orders">The Odd Orders</h2>
+<p><strong>Proposition.</strong> At odd $n$ the slot $\tfrac{n-1}{2}$ is an integer and is one of the summands; at $n=3$ the summands are $0,1,2$, the slot is $1$, and the module of dimension three is the carrier $V_1$.</p>
+<p><em>Proof.</em> $2j=n-1$ is even for odd $n$, so $j$ is an integer, and the summands $0,\dots,n-1$ contain $j$; the dimension $2j+1=n$ is odd, as the dimensions of the carriers are.</p>
+<p><strong>Corollary.</strong> At odd $n$ the module is a subspace of the algebra, namely one of its carriers; at even $n$ it is not, and it occurs only as a minimal left ideal.</p>
+<p><em>Proof.</em> A carrier is a subspace of the algebra, and at even $n$ its label is not an integer, so no carrier has the module's label.</p>
+<p><strong>Corollary.</strong> The distinction between the slot and the summand is a property of even order; at odd order the slot is a summand and the vocabulary collapses.</p>
+<p><em>Proof.</em> The two cases of the parity of $2j$.</p>
+<p><strong>The reading.</strong> The phrase "the module is not a subspace of the algebra" is true at even order and false at odd order; the article states it only where it holds.</p>
+<h2 id="the-boundary">The Boundary</h2>
+<p><strong>Against the half-integer article.</strong> That article follows the half-integer into the weights and the eigenvalues; this one fixes the slot as an object and compares the two rows. Both use the identity $2j=n-1$.</p>
+<p><strong>Against the ideal.</strong> At even $n$ the module is realised as a minimal left ideal $M_nP$, and the slot is the label of that ideal; the ideal is not a summand, and the summands are the carriers.</p>
+<p><strong>Against the general order.</strong> The statements are stated for $n=2$ and $n=4$; the extension is the identity $2j=n-1$ and the sum $\sum(2k+1)=n^{2}$.</p>
+<h2 id="the-check-of-the-distinction">The Check of the Distinction</h2>
+<p><strong>The slot.</strong> A slot is a position in the tensor square, that is a pair of weights whose difference is the weight of the slot; the slots are the $4\times4=16$ positions, and each carries a single matrix unit.</p>
+<p><strong>The summand.</strong> A summand is a carrier, and it collects the slots whose differences lie in the same weight string; the summand therefore groups several slots, and the grouping is the Clebsch–Gordan decomposition.</p>
+<p><strong>The count.</strong> The number of slots is sixteen and the number of summands is four; the number of slots in a summand is the square of the dimension of its label, and the squares $16,9,4,1$ are the multiplicities with which the labels appear in the tensor square, each label occurring as many times as its dimension.</p>
+<h2 id="summary">Summary</h2>
+<p>The slot of the row of order $n$ is $j=\tfrac{n-1}{2}$, and its three invariants are the dimension $2j+1=n$, the number $n$ of weights and the maximal weight $j$. The summands are the integers $0,\dots,n-1$, of total dimension $n^{2}$, which is the square of the module's dimension.</p>
+<p>At $n=2$ the algebra is $M_2(\mathbb{C})$ with the summands $0,1$ of dimensions $1,3$ and the slot $\tfrac12$; at $n=4$ the algebra is $M_4(\mathbb{C})$ with the summands $0,1,2,3$ of dimensions $1,3,5,7$ and the slot $\tfrac32$. In both rows the slot is a half-integer and not a summand.</p>
+<p>At odd order the slot is an integer and is a summand, and the module is a carrier; the distinction between slot and summand is a property of even order.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$j=\tfrac{n-1}{2}$</td>
+<td>the slot</td>
+</tr>
+<tr>
+<td>$2j+1=n$</td>
+<td>the dimension of the module</td>
+</tr>
+<tr>
+<td>$0,\dots,n-1$</td>
+<td>the summand labels</td>
+</tr>
+<tr>
+<td>$n^{2}$</td>
+<td>the total dimension of the summands</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="where-the-half-integers-go-in-m4c.html">Where the Half-Integers Go in $M_4(\mathbb{C})$</a>, for the half-integer.</li>
+<li><a href="the-clebsch-gordan-decomposition-of-m4c.html">The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$</a>, for the summands.</li>
+<li><a href="why-the-conjugation-labels-are-integer-at-n-4.html">Why the Conjugation Labels Are Integer at $n=4$</a>, for the parity argument.</li>
+<li><a href="the-slot-and-the-summand.html">The Slot and the Summand</a>, for the row at order two.</li>
+<li><a href="the-law-of-the-module-and-the-chain-of-carriers.html">The Law of the Module and the Chain of Carriers</a>, for the general order.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

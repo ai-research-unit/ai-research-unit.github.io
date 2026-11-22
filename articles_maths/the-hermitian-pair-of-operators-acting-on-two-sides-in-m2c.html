@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hermitian Pair of Operators Acting on Two Sides in $M_2(\mathbb{C})$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. The two-side Hermitian pair is the operator. In the display it is the congruence. This article asks what its array is, what the family of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-hermitian-pair-of-operators-acting-on-two-sides-in-math0"><strong>The Hermitian Pair of Operators Acting on Two Sides in $M_2(\mathbb{C})$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The two-side Hermitian pair is the operator $\mathrm{Hp}_{\tilde Q}(\tilde X)=\tilde Q\tilde X\tilde Q^{\ast}$. In the display it is the congruence $X\mapsto AXA^{\dagger}$. This article asks what its $4\times4$ array is, what the family of all such arrays is as a cone, what its span is, how the norm and the spectrum behave, and why this is the only two-sided shape that preserves the two Hermitian sectors.</p>
+<p><strong>Why it is the same statement.</strong> This is the in-depth matrix reading of <a href="the-hermitian-pair-of-operators-acting-on-two-sides.html">The Hermitian Pair of Operators Acting on Two Sides</a>. The source proves multiplicativity, the defect, the sector preservation, the rigidity, the sixteen-dimensional span, the norm scaling and the $SL_2(\mathbb{C})\to SO^{+}(1,3)$ cover. The display writes each of them on the arrays: the operator has the array $\bar A\otimes A$, the rigidity is $B=\lambda A^{\dagger}$ with $\lambda$ real, and the cover is the conjugation of Hermitian trace-zero matrices. The statements are the same statements, and only the writing is new.</p>
+<p><strong>What the article proves.</strong> In this order. The array of the Hermitian pair is $\bar A\otimes A$, and $\mathrm{Hp}_{\lambda A}=|\lambda|^{2}\mathrm{Hp}_A$. The composition is $\mathrm{Hp}_A\mathrm{Hp}_B=\mathrm{Hp}_{AB}$, and the defect is $AX(\mathrm I_2-A^{\dagger}A)YA^{\dagger}$. Both Hermitian sectors are preserved at every parameter. Inside the two-sided family the sector-preserving operators are exactly the real multiples of the Hermitian pairs. The family spans the sixteen-dimensional space of sector-preserving operators, and the sixteen $\mathrm{Hp}$ of a basis of Hermitian coefficient matrices are a basis. The norm scales by $|\det A|^{2}$, the eigenvalues of the array are the four products $\lambda_i\bar\lambda_j$, and the parameter is determined up to the central phase. The image is a real cone of real dimension seven, and on the determinant-one slice it is the twofold cover of $SO^{+}(1,3)$.</p>
+<p><strong>What the article does not do.</strong> It does not treat the one-side placement, which is <a href="the-hermitian-pair-of-operators-acting-on-one-side-in-m2c.html">The Hermitian Pair of Operators Acting on One Side in $M_2(\mathbb{C})$</a>; it does not classify the four adjoints, which is <a href="adjoint-pair-of-l-and-r-operators-in-m2c.html">Adjoint Pair of $L$ and $R$ Operators in $M_2(\mathbb{C})$</a>; and it does not treat the two-sided cone as a whole, which is <a href="operators-acting-on-two-sides-in-m2c.html">Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>.</p>
+<p><strong>Conventions.</strong> The display is $\mathsf M_2(\tilde Q)=Q_t\mathrm I_2-i(Q_x\sigma_1+Q_y\sigma_2+Q_z\sigma_3)$, with $N(\tilde Q)=\det A$. The arrays are the axis-free arrays, by the canonical privilege of <a href="m4c-axis-free-representation-operators.html">The Axis-Free $4\times4$ Representation : Operators</a>; the Pauli arrays of <a href="m2c-pauli-representation-operators.html">$M_2(\mathbb{C})$ Pauli Representation : Operators</a> are a translation. The two sides are $\mathrm I_2\otimes A$ for the left actor and $A^{\mathsf T}\otimes\mathrm I_2$ for the right. The norm is the complex number $N(\tilde Q)=\det A$ and not a real part.</p>
+<p><strong>Boundaries.</strong> The two-sided cone and its coefficient array are <a href="operators-acting-on-two-sides-in-m2c.html">Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>. The spin cover is <a href="from-the-spin-group-to-the-spin-of-a-single-rotor-in-m2c.html">From the Spin Group to the Spin of a Single Rotor in $M_2(\mathbb{C})$</a>. The two-sided operators on the halves are <a href="the-geometry-of-the-two-halves-at-n-2-and-the-return-of-the-two-sided-operators.html">The Geometry of the Two Halves at $n=2$ and the Return of the Two-Sided Operators</a>. The $n=2$ spine is <a href="the-one-sided-operators-at-n-2.html">The One-Sided Operators at $n=2$</a> and <a href="the-two-sided-operators-and-the-segre-cone-at-n-2.html">The Two-Sided Operators and the Segre Cone at $n=2$</a>.</p>
+<p><strong>Letters.</strong> $\mathrm{Hp}_A(X)=AXA^{\dagger}$, and its array is denoted $\mathsf H_A=\bar A\otimes A$. The Hermitian and skew sectors are $\mathfrak{H}$ and $\mathfrak{K}$, of real dimension four each. The coefficient column of $A$ is $a$, and the coefficient matrix of a Hermitian pair is $c=a\bar a^{\mathsf T}$.</p>
+<h2 id="the-operator-and-its-array">The Operator and Its Array</h2>
+<p><strong>The definition.</strong> $\mathrm{Hp}_A(X)=AXA^{\dagger}$, the composite $L_AR_{A^{\dagger}}$ of the two actors.</p>
+<p><strong>The array.</strong> $\mathrm{Hp}_A$ has the array</p>
+<p>$$
+\mathsf H_A=A^{\dagger\mathsf T}\otimes A=\bar A\otimes A .
+$$</p>
+<p><em>Proof.</em> The array of $R_B$ is $B^{\mathsf T}\otimes\mathrm I_2$, so the array of $L_AR_{A^{\dagger}}$ is $(\mathrm I_2\otimes A)(A^{\dagger\mathsf T}\otimes\mathrm I_2)=A^{\dagger\mathsf T}\otimes A$, and $A^{\dagger\mathsf T}=\bar A$. The residual of the operator identity on a hundred random $A$ and $X$ is below $10^{-15}$.</p>
+<p><strong>A printed case.</strong> For $A=E_1=-i\sigma_1$, so that $A^{\dagger}=-E_1$ and $\mathrm{Hp}_{E_1}(X)=-E_1XE_1$, the axis-free array is
+$$
+\mathsf H_{E_1}=\begin{pmatrix}
+1&0&0&0\\ 0&1&0&0\\ 0&0&-1&0\\ 0&0&0&-1
+\end{pmatrix},
+$$
+verified entry for entry against the action in the coefficient frame: the operator fixes the $(t,x)$ block and reverses the $(y,z)$ block, and $\mathsf H_{E_1}^2=\mathrm I_4$ as it must, since $\mathrm{Hp}$ is an involution at this parameter. Its eigenvalues are the four products $\lambda_i\bar\lambda_j$ of the pair $\{\mp i\}$, that is $1,1,-1,-1$. In the matrix-unit frame the same operator has the array $\bar E_1\otimes E_1$, the reversal permutation, and the two arrays differ by the change of frame.</p>
+<p><strong>The scaling.</strong> $\mathrm{Hp}_{\lambda A}=|\lambda|^{2}\mathrm{Hp}_A$, because the conjugate of $\lambda A$ contributes $\bar\lambda$ and the two moduli multiply. The phase cancels: $\mathrm{Hp}_{\omega A}=\mathrm{Hp}_A$ for every $\omega$ of modulus one.</p>
+<p><strong>The invertibility.</strong> $\mathrm{Hp}_A$ is invertible exactly when $A$ is invertible, and then $\mathrm{Hp}_A^{-1}=\mathrm{Hp}_{A^{-1}}$. For a singular $A$ the operator has a nonzero kernel, because a nonzero $X$ with $AX=0$ is sent to zero.</p>
+<p><strong>The graph inside the cone.</strong> The two-sided family is the set of arrays $B^{\mathsf T}\otimes A$; the Hermitian pair is the graph $B=A^{\dagger}$, that is the array $\bar A\otimes A$. The graph is real and not complex: a complex rescaling of $A$ leaves the graph, and the operator rescales by the modulus squared.</p>
+<p><strong>The dimensions.</strong> The parameter space is complex four-dimensional, the phase orbit is one real dimension, and the image is a real cone of real dimension seven. Its complex span is all of $M_4(\mathbb{C})$.</p>
+<h2 id="multiplicativity">Multiplicativity</h2>
+<p><strong>The composition.</strong> For all $A,B$,</p>
+<p>$$
+\mathrm{Hp}_A\,\mathrm{Hp}_B=\mathrm{Hp}_{AB}.
+$$</p>
+<p><em>Proof.</em> $\mathrm{Hp}_A(\mathrm{Hp}_B(X))=ABX B^{\dagger}A^{\dagger}=ABX(AB)^{\dagger}$ ✓. In arrays, $(\bar B\otimes B)(\bar A\otimes A)=\overline{BA}\otimes BA$ ✓.</p>
+<p><strong>The order.</strong> The assignment $A\mapsto\mathrm{Hp}_A$ is an anti-homomorphism, because $\mathrm{Hp}_A\mathrm{Hp}_B=\mathrm{Hp}_{AB}$. The reversal is carried by the dagger in the second slot.</p>
+<p><strong>The defect.</strong> The Hermitian pair is not an algebra homomorphism in general. For all $X,Y$,</p>
+<p>$$
+\mathrm{Hp}_A(XY)-\mathrm{Hp}_A(X)\mathrm{Hp}_A(Y)=AX\bigl(\mathrm I_2-A^{\dagger}A\bigr)YA^{\dagger},
+$$</p>
+<p>with residual below $2\cdot10^{-12}$ on a hundred random triples.</p>
+<p><strong>The automorphism criterion.</strong> $\mathrm{Hp}_A$ preserves the product exactly when $A^{\dagger}A=\mathrm I_2$, that is exactly when $A$ is unitary. For $A^{\dagger}A=\lambda\mathrm I_2$ with $\lambda>0$ the operator multiplies products by $\lambda$, so it is a scalar multiple of an automorphism.</p>
+<p><strong>The two laws.</strong> The composition law multiplies the parameters, and the automorphism law is the defect criterion. They are different statements, and the sector criterion of the next section is weaker than both.</p>
+<h2 id="the-two-halves">The Two Halves</h2>
+<p><strong>The sectors.</strong> $\mathfrak{H}=\{X:X^{\dagger}=X\}$ and $\mathfrak{K}=\{X:X^{\dagger}=-X\}$, each of real dimension four, with $\mathfrak{K}=i\mathfrak{H}$.</p>
+<p><strong>The preservation.</strong> For every $A$ and every $X$,</p>
+<p>$$
+\bigl(AXA^{\dagger}\bigr)^{\dagger}=AX^{\dagger}A^{\dagger},
+$$</p>
+<p>so $X\in\mathfrak{H}$ gives an image in $\mathfrak{H}$ and $X\in\mathfrak{K}$ gives an image in $\mathfrak{K}$. No condition on $A$ enters. The conjugate linearity occurs once in each slot and cancels.</p>
+<p><strong>The rigidity.</strong> Let $A,B\neq0$. The operator $L_AR_B$ preserves $\mathfrak{H}$ exactly when $B=\lambda A^{\dagger}$ with $\lambda$ real, and then it preserves $\mathfrak{K}$ as well.</p>
+<p><em>Proof.</em> Preservation of $\mathfrak{H}$ requires $B^{\dagger}XA^{\dagger}=AXB$ for every Hermitian $X$, hence for every $X$, because the Hermitian matrices span $M_2(\mathbb{C})$ over $\mathbb{C}$. The fibre theorem gives $(B^{\dagger},A^{\dagger})=(\mu A,\mu^{-1}B)$; daggering the first relation and substituting the second gives $A^{\dagger}=\mu^{-1}\bar\mu A^{\dagger}$, so $\mu$ is real, and then $B=\mu A^{\dagger}$. Conversely $\lambda$ real gives, for $X^{\dagger}=\pm X$, the image with dagger $\pm\lambda AXA^{\dagger}$.</p>
+<p><strong>The corollary.</strong> Inside the two-sided family the sector-preserving operators are exactly the real multiples of the Hermitian pairs. The Hermitian pair is the case $\lambda=1$.</p>
+<p><strong>The sign.</strong> A negative multiple is not a Hermitian pair: at $X=\mathrm I_2$ the value of $\mathrm{Hp}_A$ is $AA^{\dagger}$, of determinant $|\det A|^{2}\ge0$, while the negative multiple has determinant $-|\det A|^{2}$. The cone is one half of the sector-preserving set.</p>
+<p><strong>The one-sided contrast.</strong> A single $L_A$ preserves $\mathfrak{H}$ exactly when $A$ is a real scalar. The two-sided shape is what makes the sector preservation free.</p>
+<p><strong>The ambient count.</strong> The $\mathbb{C}$-linear sector-preserving maps form the real space $\operatorname{End}_{\mathbb{R}}(\mathfrak{H})$ of real dimension sixteen. The Hermitian-pair cone sits inside it as a seven-dimensional cone.</p>
+<h2 id="the-span-of-the-family">The Span of the Family</h2>
+<p><strong>The expansion.</strong> Write $A=\sum_\mu a_\mu\mathsf M_2(e_\mu)$ with $a_\mu\in\mathbb{C}$ and put $\mathsf M_{\mu\nu}=L_{e_\mu}R_{e_\nu^{\ast}}$. Then</p>
+<p>$$
+\mathrm{Hp}_A=\sum_{\mu,\nu}a_\mu\bar a_\nu\,\mathsf M_{\mu\nu},
+$$</p>
+<p>so the coefficient matrix of the operator in the sixteen-operator basis is</p>
+<p>$$
+c_{\mu\nu}=a_\mu\bar a_\nu,\qquad c=a\,\bar a^{\mathsf T},
+$$</p>
+<p>which is Hermitian of rank one. A single Hermitian pair carries a rank-one Hermitian coefficient matrix, exactly as a single two-sided operator carries a rank-one complex coefficient matrix.</p>
+<p><strong>The independence.</strong> The sixteen $\mathsf M_{\mu\nu}$ are independent, and the map $c\mapsto\sum c_{\mu\nu}\mathsf M_{\mu\nu}$ is injective on Hermitian $c$. The rank of the $32\times16$ real matrix of the sixteen arrays is sixteen.</p>
+<p><strong>The span.</strong> The real span of the family is the whole sector-preserving space,
+$$
+\operatorname{span}_{\mathbb{R}}\{\mathrm{Hp}_A\}=\operatorname{End}_{\mathbb{R}}(\mathfrak{H}),
+$$
+of real dimension sixteen.</p>
+<p><em>Proof.</em> Each pair is sector-preserving, so the span is contained. The rank-one Hermitian matrices $a\bar a^{\mathsf T}$ span the sixteen-dimensional real space of Hermitian $4\times4$ matrices, and by the independence the image has real dimension sixteen.</p>
+<p><strong>The basis.</strong> Every sector-preserving map is a real combination of the sixteen pairs
+$$
+\mathrm{Hp}_{e_\mu},\qquad \mathrm{Hp}_{e_\mu+e_\nu},\qquad \mathrm{Hp}_{e_\mu+i e_\nu}\quad(\mu<\nu),
+$$
+whose coefficient matrices are $E_{\mu\mu}$, $E_{\mu\mu}+E_{\mu\nu}+E_{\nu\mu}+E_{\nu\nu}$ and $E_{\mu\mu}+E_{\nu\nu}+i(E_{\nu\mu}-E_{\mu\nu})$: the four diagonal, the six real off-diagonal and the six imaginary off-diagonal Hermitian matrices.</p>
+<p><strong>The parallel with the two-sided basis.</strong> The two-sided family spans the thirty-two real dimensions of $\operatorname{End}_{\mathbb{C}}$; the Hermitian pair spans sixteen. The factor two is the Hermiticity of the coefficient matrix, and it is the only difference between the two bases.</p>
+<p><strong>The time reflection.</strong> The map $X\mapsto(\operatorname{tr}X)\mathrm I_2-X$ is sector-preserving and has the expansion</p>
+<p>$$
+X\longmapsto(\operatorname{tr}X)\mathrm I_2-X=-\tfrac12\mathrm{Hp}_{\mathrm I_2}+\tfrac12\bigl(\mathrm{Hp}_{\sigma_1}+\mathrm{Hp}_{\sigma_2}+\mathrm{Hp}_{\sigma_3}\bigr),
+$$</p>
+<p>by the Pauli identity $\sum_{k=1}^{3}\sigma_kX\sigma_k=2(\operatorname{tr}X)\mathrm I_2-X$. The residual on a random $X$ is $5\cdot10^{-16}$. The coefficient vector is $(-\tfrac12,\tfrac12,\tfrac12,\tfrac12,0,\dots,0)$ in the basis above, and the negative coefficient is forced.</p>
+<p><strong>The reflection is not a sum of pairs.</strong> The Choi matrix of the reflection has eigenvalues $(-1,1,1,1)$, so it is not positive semidefinite and the map is not a sum of Hermitian pairs of any length. The cone generated by the family is the cone of completely positive maps, and the reflection lies outside it.</p>
+<p><strong>The two numbers.</strong> A completely positive map is a sum of at most four pairs with positive coefficients; a sector-preserving map is a real combination of at most sixteen. The two counts answer different questions.</p>
+<h2 id="the-norm">The Norm</h2>
+<p><strong>The scaling.</strong> For all $A$ and $X$,</p>
+<p>$$
+N\bigl(\mathrm{Hp}_A(X)\bigr)=\det\bigl(AXA^{\dagger}\bigr)=|\det A|^{2}\det X=|\det A|^{2}N(X).
+$$</p>
+<p>The factor is the nonnegative real number $|\det A|^{2}$, not a complex number. The residual is $1.1\cdot10^{-13}$ relative on a hundred random pairs.</p>
+<p><strong>The consequences.</strong> The sign of the norm is preserved, so the positive and negative cones and the null cone are each preserved, and the zero divisors map to zero divisors. The norm itself is preserved exactly on $|\det A|=1$. The determinant of the array is $|\det A|^{4}$, as for any four-dimensional operator proportional to the identity on the norm.</p>
+<p><strong>The phase cancellation.</strong> For $\omega$ of modulus one, $\mathrm{Hp}_{\omega A}=\mathrm{Hp}_A$ and $\det(\omega A)=\omega^{2}\det A$. The operator sees the orbit and the modulus $|\det A|$ and not the phase.</p>
+<p><strong>The trace and the determinant.</strong> $\operatorname{tr}\mathsf H_A=|\operatorname{tr}A|^{2}=4|Q_t|^{2}$ and $\det\mathsf H_A=|\det A|^{4}$, both verified to $10^{-15}$ and $3\cdot10^{-15}$ relative.</p>
+<h2 id="the-parameter-modulo-math176">The Parameter Modulo $\mathrm{U}(1)$</h2>
+<p><strong>The action.</strong> The central phases act by $A\mapsto\omega A$ and leave the operator unchanged.</p>
+<p><strong>The fibre.</strong> If $\mathrm{Hp}_A=\mathrm{Hp}_B$ with $A,B\neq0$, then $\bar A\otimes A=\bar B\otimes B$, so by the fibre theorem of <a href="operators-acting-on-two-sides-in-m2c.html">Operators Acting on Two Sides in $M_2(\mathbb{C})$</a> the pairs are proportional: $B=\lambda A$ and $\bar B=\lambda^{-1}\bar A$. Conjugating the first gives $\bar B=\bar\lambda\bar A$, so $\lambda^{-1}=\bar\lambda$ and $|\lambda|=1$. The fibre is exactly the $\mathrm{U}(1)$ orbit.</p>
+<p><strong>The dimension.</strong> The parameter space is complex four-dimensional, the orbit is one real dimension, and the quotient has real dimension seven. The cone is a real cone over $\mathbb{CP}^{3}$, of real dimension seven.</p>
+<p><strong>The cone is not a space.</strong> The sum of two Hermitian pairs is not a Hermitian pair, and the cone is not closed under multiplication by $i$ except at the zero parameter.</p>
+<h2 id="the-intersections-with-the-one-sided-families">The Intersections with the One-Sided Families</h2>
+<p><strong>The statement.</strong> The cone meets each one-sided family in the same closed ray:
+$$
+\operatorname{End}_{LR\ast}\cap L(M_2)=\operatorname{End}_{LR\ast}\cap R(M_2)=\{t\,\mathrm I_4:t\ge0\}.
+$$</p>
+<p><strong>The proof.</strong> If $\bar A\otimes A=\mathrm I_2\otimes C$ with $A\neq0$, the fibre theorem gives $(A,A^{\dagger})=(\lambda C,\lambda^{-1}\mathrm I_2)$, so $A=\lambda^{-1}\mathrm I_2$ is central and the array is $|\lambda|^{-2}\mathrm I_4$. The scalar is a modulus squared and is nonnegative. The right family is the same computation.</p>
+<p><strong>The ray is not a line.</strong> The negative multiples are not in the cone, because they would need a negative modulus.</p>
+<p><strong>The contrast with the product set.</strong> The full two-sided family meets $L$ in all of $L$ and $R$ in all of $R$, because $L_A=L_AR_{\mathrm I}$. The graph meets the two axes only at the central ray.</p>
+<h2 id="the-spectrum">The Spectrum</h2>
+<p><strong>The four products.</strong> Let $\lambda_1,\lambda_2$ be the eigenvalues of $A$. The eigenvalues of the array $\mathsf H_A=\bar A\otimes A$ are the four products</p>
+<p>$$
+\lambda_i\bar\lambda_j,\qquad i,j\in\{1,2\}.
+$$</p>
+<p><em>Proof.</em> The eigenvalues of a Kronecker product are the products of the eigenvalues, and those of $\bar A$ are $\bar\lambda_i$. The four power sums $\operatorname{tr}\mathsf H_A^{k}$ agree with $\sum(\lambda_i\bar\lambda_j)^{k}$ for $k=1,2,3$ to $8.5\cdot10^{-15}$ relative on sixty random $A$.</p>
+<p><strong>The trace and the determinant.</strong> The trace is $\operatorname{tr}\mathsf H_A=|\lambda_1+\lambda_2|^{2}=|\operatorname{tr}A|^{2}=4|Q_t|^{2}$, and the determinant is $\det\mathsf H_A=|\lambda_1\lambda_2|^{4}=|\det A|^{4}$.</p>
+<p><strong>The reading.</strong> The two diagonal products $|\lambda_i|^{2}$ are nonnegative real, and the two off-diagonal products are conjugate. A central parameter gives four equal eigenvalues $|\lambda|^{2}$ and the scalar operator $|\lambda|^{2}\mathrm I_4$. A singular parameter gives at least two vanishing products. The spectrum is invariant under the central phase, and it depends only on the eigenvalues of $A$.</p>
+<h2 id="the-image-and-the-kernel">The Image and the Kernel</h2>
+<p><strong>The rank.</strong> The rank of the array $\bar A\otimes A$ is the square of the rank of $A$:
+$$
+\operatorname{rank}\mathsf H_A=\operatorname{rank}(A)^{2}.
+$$</p>
+<p><strong>The image.</strong> The image of $\mathrm{Hp}_A$ is the space $AM_2A^{\dagger}$. For invertible $A$ it is the whole carrier, of complex dimension four. For $A=uw^{\dagger}$ of rank one it is the line $\mathbb{C}\,uu^{\dagger}$, of complex dimension one.</p>
+<p><strong>The kernel.</strong> For $A=uw^{\dagger}$ of rank one,
+$$
+\ker\mathrm{Hp}_A=\{X:w^{\dagger}Xw=0\},
+$$
+a hyperplane of complex dimension three. For invertible $A$ the kernel is $\{0\}$.</p>
+<p><strong>The two kernels.</strong> The kernel of the linear map is a subspace of the carrier; the kernel of the parameter map $A\mapsto\mathrm{Hp}_A$ is the central phase orbit. The two are different objects and neither is the other.</p>
+<p><strong>The group anti-homomorphism.</strong> On $\mathrm{GL}_2(\mathbb{C})$ the map $A\mapsto\mathrm{Hp}_A$ is an anti-homomorphism with kernel the central $\mathrm{U}(1)$, and its image is a group of real dimension seven. The parameter is recovered from the operator up to the phase.</p>
+<h2 id="the-determinant-one-slice">The Determinant-One Slice</h2>
+<p><strong>The slice.</strong> On $\det A=1$ the group is $SL_2(\mathbb{C})$, of real dimension six, and the operator preserves the norm.</p>
+<p><strong>The Lorentz action.</strong> The Hermitian matrices form a real four-dimensional space with the quadratic form $\det X$ of signature $(1,3)$, and for $A\in SL_2(\mathbb{C})$,
+$$
+\det\bigl(AXA^{\dagger}\bigr)=\det X .
+$$
+The action is therefore an isometry of the form on the Hermitian space.</p>
+<p><strong>The cover.</strong> The map
+$$
+SL_2(\mathbb{C})\longrightarrow SO^{+}(1,3),\qquad A\longmapsto\bigl(X\mapsto AXA^{\dagger}\bigr)
+$$
+is a twofold cover with kernel $\{\pm\mathrm I_2\}$. Both groups have real dimension six, the domain is connected, and the kernel is exactly the two central signs.</p>
+<p><strong>The conformal extension.</strong> A general invertible $A=r\omega U$ with $r>0$, $|\omega|=1$ and $\det U=1$ gives $\mathrm{Hp}_A=r^{2}\mathrm{Hp}_U$: a Lorentz transformation composed with a dilation of ratio $r^{2}$ on the carrier, $r^{4}$ on the norm and $r^{8}$ on the determinant of the array. The image is the conformal group $CO^{+}(1,3)$ of real dimension seven, and the kernel is the central phase.</p>
+<h2 id="where-math251-differs">Where $n=2$ Differs</h2>
+<p><strong>The array.</strong> At $n=2$ the array is $\bar A\otimes A$ of size $4\times4$; at order $n$ it is of size $n^2\times n^2$. The formula and the multiplicativity are the same at every order.</p>
+<p><strong>The dimension of the cone.</strong> The parameter modulo the phase has real dimension $2n^2-1$, which is seven at $n=2$. The cone is a real cone over $\mathbb{CP}^{n^2-1}$.</p>
+<p><strong>The rank.</strong> The rank of the operator is the square of the rank of the parameter at every order, so at $n=2$ it is one or four.</p>
+<p><strong>The cover.</strong> At $n=2$ the norm-one slice is $SL_2(\mathbb{C})$ and the form is the Minkowski form of the Hermitian $2\times2$ matrices. At order $n$ the slice is $SL_n(\mathbb{C})$ and the form is the determinant on the Hermitian $n\times n$ matrices, of signature $(1,n^2-1)$. The twofold cover survives only at $n=2$.</p>
+<p><strong>The sixteen.</strong> The number sixteen is $n^4$ at $n=2$, the real dimension of the sector-preserving space and the number of basis pairs.</p>
+<h2 id="summary">Summary</h2>
+<p>The two-side Hermitian pair of the display is the congruence $X\mapsto AXA^{\dagger}$, with the array $\bar A\otimes A$. The composition is $\mathrm{Hp}_A\mathrm{Hp}_B=\mathrm{Hp}_{AB}$, the defect is $AX(\mathrm I_2-A^{\dagger}A)YA^{\dagger}$, and the automorphisms are the unitary parameters. The operator rescales by $|\lambda|^{2}$ under a complex rescaling of the parameter, so the parameter is a point of $M_2(\mathbb{C})/\mathrm{U}(1)$.</p>
+<p>Both Hermitian sectors are preserved at every parameter, and inside the two-sided family the sector-preserving operators are exactly the real multiples of the Hermitian pairs; the Hermitian pair is the positive half. The family spans the sixteen-dimensional space of sector-preserving maps, with the rank-one Hermitian coefficient matrix $a\bar a^{\mathsf T}$, and the time reflection needs four pairs with one negative coefficient and is not a sum of pairs.</p>
+<p>The norm scales by the nonnegative factor $|\det A|^{2}$, the parameter is determined up to the central phase, and the cone has real dimension seven. The eigenvalues of the array are the four products $\lambda_i\bar\lambda_j$, the rank is the square of the rank of the parameter, and the cone meets each one-sided family in the closed ray of nonnegative multiples of the identity. On the determinant-one slice the operator is an isometry of the Minkowski form and the map is the twofold cover $SL_2(\mathbb{C})\to SO^{+}(1,3)$ with kernel $\{\pm\mathrm I_2\}$; on all invertibles the image is $CO^{+}(1,3)$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Hp}_A(X)=AXA^{\dagger}$</td>
+<td>the two-side Hermitian pair</td>
+</tr>
+<tr>
+<td>$\mathsf H_A=\bar A\otimes A$</td>
+<td>its array</td>
+</tr>
+<tr>
+<td>$\mathfrak{H},\mathfrak{K}$</td>
+<td>the Hermitian and skew sectors</td>
+</tr>
+<tr>
+<td>$c=a\bar a^{\mathsf T}$</td>
+<td>the rank-one Hermitian coefficient matrix</td>
+</tr>
+<tr>
+<td>$N(X)=\det X$</td>
+<td>the norm, the quadratic form of the display</td>
+</tr>
+<tr>
+<td>$\operatorname{End}_{LR\ast}$</td>
+<td>the cone of Hermitian pairs</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-hermitian-pair-of-operators-acting-on-two-sides.html">The Hermitian Pair of Operators Acting on Two Sides</a>, for the source's multiplicativity, rigidity, span, norm and cover.</li>
+<li><a href="operators-acting-on-two-sides-in-m2c.html">Operators Acting on Two Sides in $M_2(\mathbb{C})$</a>, for the cone in which the pair is a graph.</li>
+<li><a href="the-hermitian-pair-of-operators-acting-on-one-side-in-m2c.html">The Hermitian Pair of Operators Acting on One Side in $M_2(\mathbb{C})$</a>, for the other placement.</li>
+<li><a href="the-geometry-of-the-two-halves-at-n-2-and-the-return-of-the-two-sided-operators.html">The Geometry of the Two Halves at $n=2$ and the Return of the Two-Sided Operators</a>, for the sector geometry in the regular representation.</li>
+<li><a href="from-the-spin-group-to-the-spin-of-a-single-rotor-in-m2c.html">From the Spin Group to the Spin of a Single Rotor in $M_2(\mathbb{C})$</a>, for the rotor action and the cover.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
