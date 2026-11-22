@@ -61,7 +61,7 @@ $$
 \mathbb{CP}^{3}_{\ \text{(the carrier)}}\times\mathbb{CP}^{1}_{\ \text{(the }R\text{ doublet)}}\times\mathbb{CP}^{1}_{\ \text{(the }L\text{ doublet)}},
 $$
 
-and each factor of that product is a choice of vacuum, not a choice of group. The group is fixed; the vacuum is a point; the chain is the stabiliser of that point read off factor by factor.
+and each factor of that product is a choice of vacuum, not a choice of group. The group is fixed; the vacuum is a point; the chain is the stabiliser of that point read off factor by factor. The word *flag* is used for that nesting of stabilisers and not for its geometric namesake: a geometric flag is a chain of subspaces of one vector space, and these three lines live in three different spaces, each a line in the module of the previous unbroken factor.
 
 **Completeness.** Rank $5=3+1+1$ at the top; rank $2+1+1+1=5$ after the first step; $2+1+1=4$ after the second; $2+1=3$ at the bottom. One rank is lost at each of the last two steps and none at the first, and §3 gives the reason.
 
@@ -89,7 +89,7 @@ A frame that predicted any other total would be wrong before any dynamics were c
 
 **Why the count matters.** Because the assignment is not a count: which six become massive at $M_{C}$, and which three at $M_{R}$, depends on which vacuum is chosen. A frame could have the right totals and the wrong rows — if a leptoquark stayed massless, colour would be broken and the chain would be a different chain. The rows of §4 are the content; the totals are the arithmetic check on them.
 
-**The Goldstones.** Every massive state is one eaten real scalar, so the twelve massive states consume twelve of the scalar sector's twenty-four real numbers; the other twelve survive as scalars, and $12+12=24$ is the scalar article's count stated in this article's language. Grouped by broken generator the twelve are $6+2+4$ — six for the leptoquarks, two for the $W_R^{\pm}$, four for the $W^{\pm}$, the $Z$ and the $Z_R$. Grouped by the scale at which each state becomes massive they are $6+3+3$, as in the table. The two groupings agree in total and differ only in where the $Z_R$ is placed, because its eigenvector mixes the $R$-doublet direction with $B-L$: its mass is counted at $M_{R}$, while its Goldstone comes out of the bidoublet.
+**The Goldstones.** Every massive state is one eaten real scalar, so the twelve massive states consume twelve of the scalar sector's twenty-four real numbers; the other twelve survive as scalars, and $12+12=24$ is [the scalar article](the-scalar-sector-and-the-leptoquark-bounds.html)'s count stated in this article's language. Grouped by broken generator the twelve are $6+2+4$ — six for the leptoquarks, two for the $W_R^{\pm}$, four for the $W^{\pm}$, the $Z$ and the $Z_R$ — and two of those four are neutral, because they are eaten by the $Z$ and the $Z_R$ and are not the scalar sector's two physical neutral states. Grouped by the scale at which each state becomes massive they are $6+3+3$, as in the table. The two groupings agree in total and differ only in where the $Z_R$ is placed, because its eigenvector mixes the $R$-doublet direction with $B-L$: its mass is counted at $M_{R}$, while its Goldstone comes out of the bidoublet.
 
 ## 3. Why the First Step Is Different
 
@@ -154,14 +154,14 @@ All three are gauge fields, and none of them is one of the scalar sector's neutr
 $$
 \mathcal M^2=\sum_{i=1,2}v_i^2\,a_ia_i^{\mathsf T},
 \qquad
-a_1=\bigl(0,-\tfrac12,\sqrt{\tfrac38}\bigr)v_R,
+a_1=\bigl(0,\tfrac12,-\sqrt{\tfrac38}\bigr)v_R,
 \qquad
 a_2=\bigl(\tfrac12,-\tfrac12,0\bigr)v ,
 $$
 
-where the entries are $(q_L,\,q_R,\,q_{15})$ in units of the three couplings, and the $B-L$ generator is normalised so that its eigenvalue on the unit line is $\sqrt{\tfrac38}$.
+where the entries are the eigenvalues of $(T_{3L},\,T_{3R},\,T^{15})$ on the field that takes the vev, with $T^{15}$ the Cartan normalised by $\operatorname{tr}(T^{15})^{2}=\tfrac12$ and hence $B-L=\sqrt{8/3}\,T^{15}$. So $a_1$ is the lepton line of the $(\mathbf4,\mathbf1,\mathbf2)$ — $T_{3R}=+\tfrac12$, $B-L=-1$, hence $T^{15}=-\sqrt{3/8}$ — and $a_2$ is the upper component of the bidoublet. Two annihilations fix the relative signs. Hypercharge is unbroken on the first vacuum, $Y=T_{3R}+\tfrac12(B-L)=0$, and both vacua must leave the photon massless, $Q=T_{3L}+T_{3R}+\tfrac12(B-L)$, which in this normalisation is the vector $(1,1,\sqrt{2/3})$: it gives $0+\tfrac12+\sqrt{2/3}\cdot(-\sqrt{3/8})=0$ on $a_1$ and $\tfrac12-\tfrac12+0=0$ on $a_2$. Only the products $a_ia_i^{\mathsf T}$ enter $\mathcal M^2$, so the overall sign of each $a_i$ is free; the relative signs are not, and the two tests above are what fixes them.
 
-**5.4 The rank.** $\mathcal M^2$ is a sum of two rank-one matrices, so its rank is at most two, so it has at least one zero eigenvalue. It has exactly one, because $a_1$ and $a_2$ are independent: $a_1\cdot a_2=\tfrac14v_Rv\ne0$ and they are not parallel. So there is one massless neutral and two massive, always, for any two independent neutral vacua. A frame with two neutral vacua and no massless neutral would violate this, and that is the structural reason the photon is not optional.
+**5.4 The rank.** $\mathcal M^2$ is a sum of two rank-one matrices, so its rank is at most two, so it has at least one zero eigenvalue. It has exactly one, because $a_1$ and $a_2$ are independent: $a_1\cdot a_2=-\tfrac14v_Rv\ne0$ and they are not parallel. So there is one massless neutral and two massive, always, for any two independent neutral vacua. A frame with two neutral vacua and no massless neutral would violate this, and that is the structural reason the photon is not optional.
 
 ## 6. The Photon, Which Is a Mixture and Not a Factor
 
@@ -170,16 +170,16 @@ where the entries are $(q_L,\,q_R,\,q_{15})$ in units of the three couplings, an
 **6.1 Not a gauge boson.** The unbroken abelian factor at the end of the chain is generated by $B$, the fifteenth $\mathrm{SU}(4)$ Cartan. The photon is not $B$. It is the combination of $W_L^3$, $W_R^3$ and $B$ that annihilates both neutral vacua, and its coefficients are the null vector of the neutral mass matrix:
 
 $$
-a_1\times a_2\ \propto\ \bigl(\sqrt{\tfrac38},\ \sqrt{\tfrac38},\ \tfrac12\bigr)
+a_1\times a_2\ \propto\ -\bigl(\sqrt{\tfrac38},\ \sqrt{\tfrac38},\ \tfrac12\bigr)
 \qquad\Longrightarrow\qquad
 A_\mu\ \propto\ W^3_{L\mu}+W^3_{R\mu}+\sqrt{\tfrac23}\,B_\mu .
 $$
 
-The coefficients are $(1,\,1,\,\sqrt{2/3})$, and the $\sqrt{2/3}$ is a normalisation rather than a dynamical number. It is the fifteenth Cartan's eigenvalue on the unit line, and it is fixed by $\operatorname{tr}(T^{15})^2=\tfrac12$ — the same identity that makes the $B-L$ generator proportional to $(1,-\tfrac13,-\tfrac13,-\tfrac13)$.
+The coefficients are $(1,\,1,\,\sqrt{2/3})$ up to the overall sign, which is free because a photon is a line. The $\sqrt{2/3}$ is a normalisation rather than a dynamical number. It is the fifteenth Cartan's eigenvalue on the unit line, and it is fixed by $\operatorname{tr}(T^{15})^2=\tfrac12$ — the same identity that makes the $B-L$ generator proportional to $(-1,\tfrac13,\tfrac13,\tfrac13)$.
 
 **6.2 Geometry.** The two vacua annihilate two different combinations of the three neutral generators, so the requirement that one combination survives both gives one null direction. That is a rank statement about a sum of two rank-one matrices, and it holds for any couplings whatever: the mixing pattern is fixed, and only the numerical size of each coefficient depends on how strongly each field couples.
 
-**6.3 What the article does not say.** It does not say what the couplings are, it does not evaluate the null vector at a particular point, and it does not state the angle that follows from it. The angle is in the coupling article, which is the only place in this category where the coefficient values are written.
+**6.3 What the article does not say.** It does not say what the couplings are, it does not evaluate the null vector at a particular point, and it does not state the angle that follows from it. The angle is in the coupling article, which is the only place in this category where the coefficient values are written. **The mixture itself has its own article**, [The Photon as the Unbroken Mixture](the-photon-as-the-unbroken-mixture.html), which derives the direction three ways and shows it to be the coefficient vector of $Q$.
 
 ## 7. The Two Massive Neutrals
 
@@ -191,7 +191,7 @@ $$
 M_Z^2=\tfrac14\bigl(g_L^2+g_Y^2\bigr)v^2 .
 $$
 
-At equal couplings the light eigenvalue of $\mathcal M^2$ is $0.4\,v^2$ against the predicted $\tfrac25\,v^2$. So the frame reproduces the Standard Model's neutral mass relation, not merely its group.
+At equal couplings, with $g_Y^2=\tfrac35g^2$ from the matching relation, the predicted value is $\tfrac14(g_L^2+g_Y^2)v^2=\tfrac25g^2v^2$, and the light eigenvalue of $\mathcal M^2$ is $0.4\,g^2v^2$. The two are the same number, and that is the check: the normalisations entering $a_1$ and $a_2$ are consistent with the Standard Model's relation $M_Z^2=\tfrac14(g_L^2+g_Y^2)v^2$ and not merely with its group. The agreement is the leading term in $v/v_R$ — the eigenvalue is $0.3994\,g^2v^2$ at $v/v_R=10^{-1}$ — which is the sense in which the Standard Model is recovered below $M_{R}$, at tree level.
 
 **7.2 The heavy neutral.** Its coefficient is $\tfrac58$.
 
@@ -199,7 +199,7 @@ $$
 M_{Z_R}^2=\tfrac58\,g^2v_R^2 .
 $$
 
-The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $\tfrac58$ is nothing but $|a_1|^2=\tfrac14+\tfrac38$: one quarter from $T_{3R}$ and three eighths from the $B-L$ normalisation. The $Z_R$ is therefore heavier than the $W_R$ by a fixed factor, which §8 states.
+The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $\tfrac58$ is nothing but $|a_1|^2=\tfrac14+\tfrac38$: one quarter from $T_{3R}$ and three eighths from the $B-L$ normalisation. At $v=0$ the matrix is rank one, so the other two eigenvalues vanish there: the $Z_R$ mass is entirely $M_{R}$'s, and the light neutral's comes entirely from $v$. The $Z_R$ is therefore heavier than the $W_R$ by the ratio of the two coefficients, $\sqrt{(5/8)/(1/4)}=\sqrt{5/2}\simeq1.58$ at equal couplings; with the couplings split the squared ratio is $1+\tfrac32(g_4/g_R)^2$, which carries $g_4/g_R$ and is the coupling article's business.
 
 ## 8. The Coupling Statements and Where They Live
 
@@ -209,7 +209,7 @@ The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $
 
 **What stays.** The photon's composition is a mixture with coefficients proportional to the couplings; the coefficients are carried symbolically, and the article never substitutes a value for them. The mixing is group theory, and the value of the mixing is the coupling article's business.
 
-**The failure.** That the minimal frame fails is recorded in §4 of the coupling article, with its arithmetic. It is neither weakened here nor repeated.
+**The failure.** The equal-coupling condition implies two numbers at once, $\sin^2\theta_W=\tfrac38$ and $g_4=g_L$, and they are met four decades apart — $10^{13}$ GeV and $10^{17}$ GeV — so no single threshold satisfies both. That is the failure; §4 of the coupling article gives the arithmetic, and it is neither weakened here nor repeated.
 
 ## 9. What Is Robust and What Is Not
 
@@ -267,8 +267,8 @@ The absolute size of the spectrum, and the ratios among its masses, which move w
 | the neutral fields | $\{W_L^3,W_R^3,B\}$ against the scalar sector's two | three gauge, two scalar, different objects |
 | the neutral rank | sum of two rank-one matrices | $2$, so one zero eigenvalue |
 | the photon ratios | null vector of $\mathcal M^2$ | $(1,1,0.816497)$ against $(1,1,\sqrt{2/3})$ |
-| the light neutral | eigenvalue against $\tfrac14(1+\tfrac35)v^2$ | $0.4v^2$ against $0.4v^2$ |
-| the heavy neutral | eigenvalue at $v\to0$ | $0.625\,g^2v_R^2=\tfrac58$ |
+| the light neutral | eigenvalue against $\tfrac14(g_L^2+g_Y^2)v^2$ with $g_Y^2=\tfrac35g^2$ | $0.4\,g^2v^2$ against $\tfrac25g^2v^2$, same number |
+| the heavy neutral | eigenvalue at $v\to0$ | $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$ |
 | proton decay | three leptoquark vertices per unit $B$ | dimension nine, so no proton-decay bound |
 
 ## 12. Distinctions That Are Easy to Lose
@@ -303,9 +303,9 @@ The three neutral states are not three scalars, and not two scalars and a gauge 
 
 **The photon.** $W_L^3+W_R^3+\sqrt{2/3}\,B$, the null direction of the neutral mass matrix. The $\sqrt{2/3}$ is the normalisation of the fifteenth Cartan, and it is the only coupling-adjacent number this article states.
 
-**The masses.** Each is a coupling squared times a vacuum expectation value squared, with the coefficients given by the vacuum: $\tfrac14$ for the light charged pair, $\tfrac14$ and $\tfrac58$ for the two heavy neutrals, $\tfrac12$ for the leptoquark. The coefficients are structure; the couplings are not supplied here.
+**The masses.** Each is a coupling squared times a vacuum expectation value squared, with the coefficients given by the vacuum: $\tfrac14$ for the light charged pair and for the heavy charged pair, $\tfrac12$ for each leptoquark, and at equal couplings $\tfrac25$ for the $Z$ and $\tfrac58$ for the $Z_R$. The first three hold for any couplings; the last two move with $g_4/g_R$. The coefficients are structure; the couplings are not supplied here.
 
-**The ratios.** $M_{W_R}/M_W=v_R/v$, which is the ratio of the two vacua and carries no coupling. The ratios involving $g_4$ and $g_R$ are in the coupling article.
+**The ratios.** $M_{W_R}/M_W=(g_R/g_L)(v_R/v)$: the ratio of the two vacua, times the coupling ratio that the chain does not fix. At equal couplings it reduces to $v_R/v$, and the ratios involving $g_4$ and $g_R$ are in the coupling article.
 
 **The failure.** Recorded in the coupling article, in §4.
 
@@ -318,11 +318,11 @@ The three neutral states are not three scalars, and not two scalars and a gauge 
 | $M_{C}$ | the scale of $\mathrm{SU}(4)\to\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$ |
 | $M_{R}$ | the scale of $\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}\to\mathrm{U}(1)_Y$; $=M_{C}$ in the minimal frame |
 | $M_{W}$ | the electroweak scale, measured |
-| $T^{15}$ | the $\mathrm{SU}(4)$ Cartan generator proportional to $(1,-\tfrac13,-\tfrac13,-\tfrac13)$ |
+| $T^{15}$ | the $\mathrm{SU}(4)$ Cartan generator proportional to $(-1,\tfrac13,\tfrac13,\tfrac13)$ |
 | $q,t$ | the expansion coefficients of $Y$ in the basis $\{T^{15},T_{3R}\}$, $q^{2}=\tfrac23$, $t=1$ |
 | $B$ | the surviving $\mathrm{SU}(4)$ Cartan field, $A^{15}$, the $B-L$ boson |
 | $\mathcal M^2$ | the $3\times3$ neutral mass matrix, a sum of two rank-one terms |
-| $a_1,a_2$ | the two vacuum vectors in the neutral basis, in units of the couplings |
+| $a_1,a_2$ | the two vacuum vectors, the charges of the two vevs in the neutral basis $(T_{3L},T_{3R},B-L)$ |
 | $X$ | a leptoquark, one of the six, charge $\pm\tfrac23$, colour triplet |
 | $v,v_R$ | the electroweak and colour-breaking vacuum expectation values |
 | $\rho$ | $M_W^2/(M_Z^2\cos^2\theta_W)$, $1$ at tree level in the alignment limit |
@@ -331,10 +331,13 @@ The three neutral states are not three scalars, and not two scalars and a gauge 
 ## Further Reading
 
 - [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The group, the sixteen, the declaration (A) and the frame in which this chain runs.
+- [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the ledger of where each of the twenty-one generators goes.
+- [The Photon as the Unbroken Mixture: One Null Direction, Three Parents](the-photon-as-the-unbroken-mixture.html). §6's statement of the mixture in full: the three routes to the direction, why it is null, and the boundary against the coupling article.
 - [The Scalar Sector and the Leptoquark Bounds](the-scalar-sector-and-the-leptoquark-bounds.html). Which fields do this breaking, how many real components they carry, and what their Goldstones require.
 - [The $W$ and $Z$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The two light neutral and charged states, before this article mixes them.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The matching relations, the angle they produce, and the failure that follows.
 - [The Weinberg Angle, the Neutral Current and the $Z$ Coupling](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The angle as a ratio of two couplings.
+- [Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The four hypercharge conditions, which hold identically on the sixteen and are not restated here.
 - [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The tree-level relation $\rho=1$ that §9.5 does not claim as a theorem.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). Why colour is a stabiliser at every scale, which is the eight massless rows of §4.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). The same chain read as an embedding, and the point at which it stops being one.

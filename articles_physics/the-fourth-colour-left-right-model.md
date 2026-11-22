@@ -63,12 +63,12 @@ The corpus adopts an extension of the Standard Model. The group it uses to descr
 | families | $3$ | $3$ | none; no fourth generation |
 | scalars | $4$ real degrees of freedom | $24$: eight and four complex components in a $(\mathbf4,\mathbf1,\mathbf2)$ and a $(\mathbf1,\mathbf2,\mathbf2)$ | a factor $6$, and the sector that genuinely grows |
 | surviving scalars | one Higgs | twelve real: four from the bidoublet, eight from $\Phi$ | $24$ real components against $12$ broken generators, so twelve survive; two neutral states mix, and the lighter is the $125$ GeV candidate |
-| scales | one | two | $M_{C}\gtrsim250$ TeV, a ratio $M_{C}/M_{Z}\gtrsim2.7\times10^{3}$ |
+| scales | one | two, $M_{C}$ and $M_{R}$ | $M_{C}\gtrsim2.3\times10^{2}$ TeV, so $M_{C}/M_{Z}\gtrsim2.5\times10^{3}$ |
 | hierarchy | the electroweak scale, unexplained | $M_{C}$ and $M_{EW}$ both | the same problem, with a new gap to stabilise |
 
 Three of those rows are where the model grows, and this article does not soften them. The scalar sector grows by a factor of six: twenty-four real components in place of the Standard Model's four, and twelve of them are eaten, because the chain breaks exactly twelve generators. The minimal sector is not short of scalars, and the count is worth stating because it is the one place where a plausible reading goes wrong. The $(\mathbf4,\mathbf1,\mathbf2)$ holds eight complex components, that is sixteen real ones; the breaking of $\mathrm{SU}(4)$ and of $\mathrm{SU}(2)_R$ removes eight of them as Goldstones and leaves eight — a colour triplet and one charged singlet, all $\mathrm{SU}(2)_L$ singlets. The bidoublet holds four complex components, eight real ones; the electroweak breaking removes four and leaves four, a charged pair and two neutral states, and the lighter neutral one is what a $125$ GeV resonance would be. So the failure is not a shortage of scalars. It is a wrong mass relation. One bidoublet couples the down-type quarks and the charged leptons through the same Yukawa matrix, so the two mass matrices come out proportional and their spectra must coincide in shape. The measured spectra do not, and the comparison with its values is in the coupling article. That is a failure of content rather than of arithmetic, and its repair is a second bidoublet or a $(\mathbf{15},\mathbf2,\mathbf2)$ — and the $(\mathbf{15},\mathbf2,\mathbf2)$ brings colour-triplet scalars that can mediate proton decay at dimension six. The new scale brings the hierarchy question in a sharper form: the model must explain why $M_{C}/M_{EW}$ is what it is. And the leptoquark bound *pushes that scale up*, which makes both problems worse, not better.
 
-What is genuinely small is the fermion sector, and what is genuinely cheap is the limit. Break the larger group and the Standard Model comes out, with the same fields, the same couplings and the same Lagrangian, so every measurement the Standard Model passes this model passes, and for the same reason. A reader who wants the Standard Model back can have it by taking $M_{C}\to\infty$. The case for the extension therefore cannot rest on agreement with experiment, which it inherits; it has to rest on what the extension explains and on how it sits in the algebra. That is what the six reasons below are about.
+What is genuinely small is the fermion sector, and what is genuinely cheap is the limit. Break the larger group and the Standard Model comes out, with the same fields, the same couplings and the same Lagrangian, so every measurement the Standard Model passes this model passes, and for the same reason. A reader who wants the Standard Model back can have it by taking the $\mathrm{SU}(2)_R$ breaking scale to infinity, $M_{R}\to\infty$, with $M_{C}$ finite; $M_{C}\to\infty$ alone would leave $G_{4LR}$ unbroken, which is not the Standard Model. The case for the extension therefore cannot rest on agreement with experiment, which it inherits; it has to rest on what the extension explains and on how it sits in the algebra. That is what the six reasons below are about.
 
 A framework has to describe the particles with some group, and the choice is not free. The corpus could have stayed with $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ and treated the algebra as a language for its equations: keep $G_{\mathrm{SM}}$ as the gauge group, ask nothing of the algebra beyond notation, and let the carrier, the two-sided product and the operators stay the vocabulary in which the equations are written. Hypercharge would remain an imported number, quarks and leptons would remain separate representations, and there would be no fourth colour, no leptoquark and no $W_R$. Nothing would be false under that choice, and nothing would be at risk.
 
@@ -81,12 +81,12 @@ The six reasons, in descending order of strength: the empirical, the structural,
 **1. The empirical.** No measurement contradicts it. Every place where the model differs from the Standard Model sits at or above the colour-breaking scale, and the scale is bounded from below, not from above. The six leptoquarks mediate $K_L\to\mu e$ at tree level with no CKM suppression, and the measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ forces
 
 $$
-M_X\gtrsim 2.5\times10^{2}\ \mathrm{TeV},
+M_X\gtrsim 2.3\times10^{2}\ \mathrm{TeV},
 $$
 
 which is a lower bound on the new physics rather than a bound on the model's consistency. Below that scale the two theories are the same theory: the same group content, the same couplings, the same fields.
 
-The lower bound is not free. Satisfying $K_L\to\mu e$ requires $M_{C}$ above $250$ TeV, and every difficulty of the model grows with $M_{C}$: the hierarchy $M_{C}/M_{EW}$ grows, the one-loop running of the three couplings gets worse, and the leptoquarks recede from reach. The null result is satisfied for $M_{C}\gtrsim250$ TeV, and that pushes the model into the region where its other problems are sharpest. It is a lower bound on the new physics and a lower bound on the model's discomfort.
+The lower bound is not free. Satisfying $K_L\to\mu e$ requires $M_{X}$ above $2.3\times10^{2}$ TeV, and with $M_{C}$ tied to it, every difficulty of the model grows with $M_{C}$: the hierarchy $M_{C}/M_{EW}$ grows, the one-loop running of the three couplings gets worse, and the leptoquarks recede from reach. The null result is satisfied for $M_{C}\gtrsim2.3\times10^{2}$ TeV, and that pushes the model into the region where its other problems are sharpest. It is a lower bound on the new physics and a lower bound on the model's discomfort.
 
 Agreement with experiment is cheap — any extension that reduces to the Standard Model agrees with it — so this reason is necessary and not sufficient. It is listed first because a candidate that failed it would need no further discussion, not because it is evidence.
 
@@ -124,7 +124,7 @@ The left–right group is the competitor, and it is a closer call than $\mathrm{
 
 **5. Explanatory yield.** It answers five questions the Standard Model leaves open — given (A), and not for free. Hypercharge stops being an imported number and becomes $Y=T_{3R}+\tfrac12(B-L)$. Charge quantisation stops being an observation about the electron and becomes $\operatorname{tr}_{\mathbf4}(B-L)=3\cdot\tfrac13-1=0$. The four anomaly conditions stop being conditions and become identities. $\nu_R$ stops being optional and becomes the fourth component of the $\bar{\mathbf4}$. Custodial symmetry stops being accidental and becomes the diagonal of a gauged pair.
 
-The qualifier is the same one every time, and it is not a detail. The first two promotions need the eigenvalues of $B-L$ on the quartet to be $(1,-\tfrac13,-\tfrac13,-\tfrac13)$, and those are fixed by the declaration that the fourth colour is the lepton, not by the group. Without (A) the group still has a traceless diagonal; it does not know which direction is the lepton. So the form of this reason is: five questions are answered given (A), and (A) is the model's one load-bearing declaration. The anomaly cancellation is the one item that is genuinely structural — the sixteen is anomaly-free by construction, as a real multiplet of a complex group must be — but even that is a property of the multiplet the declaration chooses. Five promotions for one assumption, not five for nothing.
+The qualifier is the same one every time, and it is not a detail. The first two promotions need the eigenvalues of $B-L$ on the quartet, lepton first, to be $(-1,\tfrac13,\tfrac13,\tfrac13)$, and those are fixed by the declaration that the fourth colour is the lepton, not by the group. Without (A) the group still has a traceless diagonal; it does not know which direction is the lepton. So the form of this reason is: five questions are answered given (A), and (A) is the model's one load-bearing declaration. The anomaly cancellation is the one item that is genuinely structural — the sixteen is anomaly-free by construction, as a real multiplet of a complex group must be — but even that is a property of the multiplet the declaration chooses. Five promotions for one assumption, not five for nothing.
 
 **6. Falsifiability.** It is falsifiable, and the predictions are of one kind. Six states with fixed charge, fixed colour and a mass ratio fixed in terms of the couplings, and a tree-level $K_L\to\mu e$. A frame that predicts six states with no adjustable mass can be checked, and the check has a shape: a leptoquark search, or a better bound. The mass ratio and the angle are coupling statements, and this article does not state them.
 
@@ -168,7 +168,7 @@ $$
 
 Read the two terms as the two chiralities. The first holds the left-handed doublet of the quartet — three quark colours and one lepton, each doubled by $SU(2)_L$. The second holds the right-handed partners as singlets of $SU(2)_L$ and doublets of $SU(2)_R$. So $\nu_R$ is not added: it is the fourth component of the $\bar{\mathbf 4}$, and it is required the moment the lepton is a colour.
 
-Why the split $15=8+1+6$ is what makes this work. $B-L$ is a generator of the $\mathrm{SU}(4)$, with eigenvalues $(1,-\tfrac13,-\tfrac13,-\tfrac13)$ on the quartet, and $\mathbf 4\to\mathbf 3\oplus\mathbf 1$ under $\mathrm{SU}(3)$. That is exactly the quark–lepton split, and it is (A): the algebra supplies the split $\mathbb C e_t\oplus B_V$, and the declaration says the line is the lepton.
+Why the split $15=8+1+6$ is what makes this work. $B-L$ is a generator of the $\mathrm{SU}(4)$, with eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$ on the quartet, in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$, and $\mathbf 4\to\mathbf 3\oplus\mathbf 1$ under $\mathrm{SU}(3)$. That is exactly the quark–lepton split, and it is (A): the algebra supplies the split $\mathbb C e_t\oplus B_V$, and the declaration says the line is the lepton.
 
 The check that the assignment is forced, and not merely possible. Three conditions have to hold at once, and each one is a trace:
 
@@ -238,7 +238,7 @@ M=\sum_{\mu,\nu}c_{\mu\nu}\,L_{e_\mu}R_{e_\nu},\qquad
 \ell(M)=\operatorname{rank}\bigl(c_{\mu\nu}\bigr)\le4 .
 $$
 
-The bound is four because a single two-sided product has a rank-one array. $L_bR_c$ corresponds to $bc^{\mathsf T}$, so a sum of $k$ products has array of rank at most $k$ and every endomorphism of $\mathbb B$ is a sum of at most four. This is stated and verified in [The Meaning of $\mathrm{SU}(4)$ in the Endomorphisms of the Biquaternion Algebra](../articles_internal/SU4-meaning.html), §*The Carrier, the Six Words, and the Condition*.
+The bound is four because a single two-sided product has a rank-one array. $L_bR_c$ corresponds to $bc^{\mathsf T}$, so a sum of $k$ products has array of rank at most $k$ and every endomorphism of $\mathbb B$ is a sum of at most four. This is stated and verified in [The Meaning of $\mathrm{SU}(4)$ in the Endomorphisms of the Biquaternion Algebra](../articles_internal/structure/structure-SU4-meaning.html), §*The Carrier, the Six Words, and the Condition*.
 
 The rank matters, not the count of nonzero words. The nonzero-word count is the finer measure and the corpus uses it where an element is diagonal. On a generic element the two differ sharply: fifteen words, four products. The product count is the one quoted below, because it is what "how far into the endomorphisms the generator sits" means; the word count is quoted where a generator's support is the point.
 
@@ -367,11 +367,12 @@ Every number in this article, run again.
 | $T_{a}$ | the fifteen $\mathrm{SU}(4)$ generators, anti-Hermitian and traceless |
 | $\tau_i$ | the three generators of each $\mathrm{SU}(2)$ |
 | $D$ | $\operatorname{diag}(-3,1,1,1)$, the traceless diagonal of the $\mathrm{SU}(4)$; the abelian direction is $\mathbb R\,iD$ |
-| $B-L$ | $-\tfrac13D$, the eigenvalues $(1,-\tfrac13,-\tfrac13,-\tfrac13)$ on the quartet |
+| $B-L$ | $+\tfrac13D$, the eigenvalues $(-1,\tfrac13,\tfrac13,\tfrac13)$ on the quartet, in the order $(e_t,\vec e_x,\vec e_y,\vec e_z)$ — the same statement as $\operatorname{diag}(\tfrac13,\tfrac13,\tfrac13,-1)$ with the lepton last |
 | $T_{3L},T_{3R}$ | the two Cartan generators, one per $\mathrm{SU}(2)$ |
 | $Y$ | $T_{3R}+\tfrac12(B-L)$, hypercharge as a combination |
 | $g_4,g_L,g_R$ | the three couplings, symbolic; no equality is asserted here |
 | $M_{C}$ | the $\mathrm{SU}(4)$ breaking scale, a parameter |
+| $M_{R}$ | the $\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ breaking scale, a parameter |
 | $\mathfrak m$ | the six generators mixing $\mathbb C e_t$ with $B_V$, the leptoquark directions |
 | $iD$ | $i\operatorname{diag}(-3,1,1,1)$, the diagonal generator of the $\mathrm{SU}(4)$ |
 | $L_{\vec e_a},R_{\vec e_a}$ | left and right multiplication by the imaginary units |
@@ -380,12 +381,14 @@ Every number in this article, run again.
 
 ## Further Reading
 
+- [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: The Group, the Two Sides, and Why the Standard Model Does Not Gauge It](su2l-times-su2r-the-group-the-two-sides-and-why-the-standard-model-does-not-gauge-it.html). The two factors on their own: what the algebra builds, the two modules, the four roles, and why the Standard Model uses the group without gauging it.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The general principle this frame is an instance of.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html). The connection, the curvature and the Yang–Mills action for a group of this size.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The ceiling on the algebra's own compact structure, which *Where Each Factor Comes From* and *The Carrier Is a Copy* meet again.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). The two-sided action, before it is gauged.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). What the algebra's own action carries, and what it does not.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). The same ceiling read as a statement about unification, in both readings.
+- [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the ledger of where each of the twenty-one generators goes.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). What the larger group moves of the colour obstruction and what it leaves standing.
 
 **The traps.** Each one is a place where a reader can be misled by a true sentence.

@@ -578,14 +578,30 @@ def prune_orphans():
     # deployed article page that no longer has a matching source. This also
     # removes pages left in a collection by a file that moved to the other one.
     # The legacy aliases are the exception: they have no source by design.
+    #
+    # The collection may hold subfolders, which mirror the source tree, so the
+    # comparison is on the path relative to the collection and not on the stem:
+    # two drafts of the same name in different subfolders are two pages.
     keep = {(DEPLOY / alias).resolve() for _, alias in LEGACY_COPIES}
     for coll in COLLECTIONS:
         built = {str(f.relative_to(coll["src"]).with_suffix(".html")) for f in coll["articles"]}
+        emptied = set()
         for stale in coll["deploy"].rglob("*.html"):
             rel = str(stale.relative_to(coll["deploy"]))
             if rel not in built and stale.resolve() not in keep:
                 stale.unlink()
                 print(f"Removed orphan: {coll['src'].name}/{rel}")
+                emptied.add(stale.parent)
+        # A subfolder whose last page was just removed is gone from the source
+        # too. Drop it so the deployed tree keeps mirroring the source tree,
+        # bottom up, and stop at the collection root.
+        for folder in sorted(emptied, key=lambda p: len(p.parts), reverse=True):
+            while (folder != coll["deploy"] and folder.is_dir()
+                   and not any(folder.iterdir())):
+                stale_dir = folder
+                folder = folder.parent
+                stale_dir.rmdir()
+                print(f"Removed empty folder: {coll['src'].name}/{stale_dir.relative_to(coll['deploy'])}")
     # ──────────────────────────────────────────────────────────────────────
 
 

@@ -361,6 +361,7 @@ The two upstream items are a chiral matter representation with a declared carrie
 ## Further Reading
 
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the connection, the adjoint curvature, the Bianchi identity, the gauge-invariant density, the Lie-algebra decomposition $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, and the open matter-representation question this article inherits.
+- [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: The Group, the Two Sides, and Why the Standard Model Does Not Gauge It](su2l-times-su2r-the-group-the-two-sides-and-why-the-standard-model-does-not-gauge-it.html) — the doubled group whose chiral half this article's wall concerns; the two modules, and the tie that would be needed.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian origin of the connection, the central $\mathrm{U}(1)$, the linear mass and the real structure, and the gauge-fixing gap.
 
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html) — the chirality structure of the field, the vector-like centre, the mass selection rule, the chiral charge as a single right multiplication, and the real-structure qualification that bears on hypercharge.
