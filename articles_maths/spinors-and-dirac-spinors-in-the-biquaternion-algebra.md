@@ -434,7 +434,7 @@ swaps them, since $\tilde\Pi_+(\vec u_{\mathrm r})=\tilde\Pi_-(-\vec u_{\mathrm 
 
 ## What the Definitions Do Not Use
 
-**No array.** The idempotent, the weights, the plane, the ideals and the pairing are elements and identities of the algebra. No matrix is needed to
+**No array.** The idempotent, the weights, the plane, the ideals and the pairing are elements and identities of the algebra. No array is needed to
 state them, and none is used above. An array can be written afterwards, as the coordinates of an element in a chosen frame, and then the two parts of a
 Dirac spinor are two columns; the columns are a consequence of the decomposition and not its definition.
 

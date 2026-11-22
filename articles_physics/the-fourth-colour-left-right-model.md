@@ -102,7 +102,17 @@ The reason is one of licensing and not of membership. What matters is not what t
 | $\mathrm{SU}(2)_L$ | $3$ | left multiplication, $\{L_{\vec e_a}\}$ — endomorphisms whose parameter is $\vec e_a$ |
 | $\mathrm{SU}(2)_R$ | $3$ | right multiplication, $\{R_{\vec e_a}\}$ — endomorphisms whose parameter is $\vec e_a$ |
 
-The precision the slogan needs is this. One of the twenty-one generators is an element of the algebra — the central phase, $\mathbb R(ie_t)$. The six sides are endomorphisms of length one whose parameters are the imaginary units: $L_{\vec e_a}$ acts on an element, and the element it multiplies by is $\vec e_a$. The other fifteen are the unitary group of the carrier, which is a group *of* the algebra's action and not *in* the algebra: $\dim_{\mathbb R}\mathbb B=8$, and fifteen does not fit inside eight. So the statement is not "twenty-one out of twenty-one live in the algebra" but "every one of the twenty-one is a structure the algebra supplies; one is literally in the algebra, six are endomorphisms whose parameters are algebra elements, and fifteen are the unitary group of the carrier" — which is stronger than the Standard Model can claim, and stronger because it is precise. The distinction matters because the fifteen are the factor that has to be declared: the carrier is given, but that its four dimensions are colour is (A).
+The precision the slogan needs is this. One of the twenty-one generators is an element of the algebra — the central phase, $\mathbb R(ie_t)$. The six sides are endomorphisms of length one whose parameters are the imaginary units: $L_{\vec e_a}$ acts on an element, and the element it multiplies by is $\vec e_a$. The other fifteen are the unitary group of the carrier, which is a group *of* the algebra's action and not *in* the algebra: $\dim_{\mathbb R}\mathbb B=8$, and fifteen does not fit inside eight. So the statement is not "twenty-one out of twenty-one live in the algebra" but "every one of the twenty-one is a structure the algebra supplies; one is literally in the algebra, six are endomorphisms whose parameters are algebra elements, and fifteen are the unitary group of the carrier" — which is stronger than the Standard Model can claim, and stronger because it is precise.
+
+**The ledger on the carrier is sixteen, not twenty-two, and the difference is stated once because it is easy to get wrong.** The six are *inside* the fifteen, not beside it: $L_{\vec e_a}$ and $R_{\vec e_a}$ are traceless and skew-adjoint for $\operatorname{tr}(X^\dagger Y)$, hence elements of $\mathfrak{su}(4)$, and they are independent, so $\mathfrak{su}(2)_L\oplus\mathfrak{su}(2)_R$ is a six-dimensional subalgebra of the fifteen. The carrier therefore supplies
+$$
+\dim_{\mathbb R}\mathfrak u(4)=16=15+1 ,
+$$
+with no room for a twenty-second dimension. **The number $21=15+3+3$ is the dimension of the product group on the formal copy, and on the copy the two triplets are counted again** — which is what the copy is for, and it is why the copy must be declared rather than found. Said the other way: $15+6=21$ is a double count, and $15+6-6=15$ is the algebra.
+
+**What the overlap costs, in one line.** The six are not cleanly colour or cleanly leptoquark: half of each $L_{\vec e_a}$ is a colour rotation and half is a leptoquark direction, because $L(\vec e_x)e_t=\vec e_x$ and $L(\vec e_x)\vec e_x=-e_t$. **So $\mathrm{SU}(4)$ alone does not factor into colour times weak, and no subgroup of it does; the product exists only on the copy.**
+
+The distinction matters because the fifteen are the factor that has to be declared: the carrier is given, but that its four dimensions are colour is (A).
 
 The comparison factor by factor is the substance of the reason:
 

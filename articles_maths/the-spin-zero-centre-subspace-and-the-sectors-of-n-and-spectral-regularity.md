@@ -233,7 +233,7 @@ N(uXu^{*})=N(X),\qquad B^{2}(uXu^{*})=B^{2}(X).
 $$
 
 *Proof.* The norm is multiplicative, so $N(uXu^{*})=N(u)N(X)N(u^{*})=N(X)$, since $N(u)N(u^{*})=N(e_t)=1$. The scalar part is half the trace in the
-matrix model and the trace is invariant under conjugation, so $Q_t$ is preserved; then $B^{2}=N-Q_t^{2}$ is preserved as well.
+entry model and the trace is invariant under conjugation, so $Q_t$ is preserved; then $B^{2}=N-Q_t^{2}$ is preserved as well.
 
 **Corollary (the sector belongs to the orbit).** The conjugation by unitary elements preserves the sector of every element, so the sector is a
 function of the orbit and not of the representative. On the centre the orbit is a single point, since every unitary element fixes every central element; the sector of a central

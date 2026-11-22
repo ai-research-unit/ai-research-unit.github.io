@@ -40,7 +40,7 @@ The first and the third lines are the two summands of the series, and the second
 
 The article works on real spaces, and the reason is the question itself and not a preference of notation. A spatial rotation acts on a real space, a subspace that a rotation leaves alone is a real subspace, and the question asks for those subspaces. The decomposition above is stated over the complex numbers, where the series lives; the carriers are its real forms, of real dimensions $1$, $2$ and $3$, and every spectrum below is read on them. The complex structure $i$ is an element of the algebra and not a scalar of the ground field, so a complex line of the algebra is also a real plane, and the passages between the two readings are named where they occur. It is one of the operators, on the same footing as $\vec e_x,\vec e_y,\vec e_z$, and the fact that it is available is what the closure steps use.
 
-Three things are not claimed. The article does not read the label $s$ as anything but a spectral quantity: it is the largest weight of a carrier, and no physical vocabulary is attached to it. It does not present the closures as a decomposition, because they are not one: the four closure dimensions sum to $18$, and the algebra has real dimension $8$. And the plane of real dimension $2$ is not a matrix group returning under another name. It is the smallest faithful carrier of the double cover, and it is realized inside $\mathbb{B}$ by the algebra's own $i$; what can be read into it is a choice of display, not a structure of the algebra.
+Three things are not claimed. The article does not read the label $s$ as anything but a spectral quantity: it is the largest weight of a carrier, and no physical vocabulary is attached to it. It does not present the closures as a decomposition, because they are not one: the four closure dimensions sum to $18$, and the algebra has real dimension $8$. And the plane of real dimension $2$ is not a group of arrays returning under another name. It is the smallest faithful carrier of the double cover, and it is realized inside $\mathbb{B}$ by the algebra's own $i$; what can be read into it is a choice of display, not a structure of the algebra.
 
 No argument array is printed anywhere below, at any point, and this is deliberate. An array carries a frame, the frame singles out a direction, and the direction is not part of the algebra: a display that fixes one axis absorbs whatever depends on that axis, and the page then stops showing it. Every statement here is made at a general axis $\vec u_{\mathrm r}$ and proved from two identities that hold at that axis. The rule and its reasons are those of *Matrix Representations Conventions*.
 
@@ -268,7 +268,7 @@ $$
 S^3=\{q\in\mathbb{H}:N(q)=1\},
 $$
 
-of real dimension $3$, and the map to $SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$. The group is $S^3$. Every spin below is the label of a carrier of this group: the rotor acts on space by the two-sided product and one-sidedly on the carrier, and the label is read from that action. As groups $S^3=\mathrm{Spin}(3)\cong SU(2)$, and $SU(2)$ is the standard $2\times2$ complex display of the same group. A matrix realization of it is a separate choice, a display of the same object, and no display is used below: the computation is a computation about real left multiplication on the quaternion layer.
+of real dimension $3$, and the map to $SO(\mathfrak{k})$ is onto with kernel $\{\pm e_t\}$. The group is $S^3$. Every spin below is the label of a carrier of this group: the rotor acts on space by the two-sided product and one-sidedly on the carrier, and the label is read from that action. As groups $S^3=\mathrm{Spin}(3)\cong SU(2)$, and $SU(2)$ is the standard $2\times2$ complex display of the same group. A realization of it by arrays is a separate choice, a display of the same object, and no display is used below: the computation is a computation about real left multiplication on the quaternion layer.
 
 **The left-regular generators.** Read the quaternion layer $\mathbb{H}=\mathbb{R}e_t\oplus\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$ as a real space of dimension $4$. Left multiplication by $\vec e_k$ is the real operator $L_k:=L_{\vec e_k}$, and the three of them satisfy
 
@@ -428,7 +428,7 @@ On the tensor carrier of real dimension $16$ the spectrum of $\mathbf{A}^2_{\mat
 
 **Remark (no spin $2$).** The pair gives $0$ and $1$ and nothing else, and the arithmetic says why. Spin $2$ would need $j_1+j_2=2$ with both labels from halves present in the product, which needs four factors of $\tfrac12$, or the product $\mathfrak{k}\otimes\mathfrak{k}$ of two vector parts, whose labels are $1\otimes1=0\oplus1\oplus2$. Neither is the pair acting on two sides. A pair is two factors, and two halves reach $1$.
 
-**Remark (the check is not circular).** The addition rule is a theorem about the carriers of $S^3$, stated before any matrix is written. The total Casimir is defined independently, as a sum of squares of explicit operators. The equation $-j(j+1)$ then identifies the eigenvalues $0$ and $-2$ with the labels $0$ and $1$. Neither step uses the other, and their agreement is the content of the check.
+**Remark (the check is not circular).** The addition rule is a theorem about the carriers of $S^3$, stated before any array is written. The total Casimir is defined independently, as a sum of squares of explicit operators. The equation $-j(j+1)$ then identifies the eigenvalues $0$ and $-2$ with the labels $0$ and $1$. Neither step uses the other, and their agreement is the content of the check.
 
 **The three spins.** The slot and the product together give
 
@@ -588,7 +588,7 @@ $$
 
 **Theorem (the multiplication carriers).** Up to isomorphism there is one simple left $\mathbb{B}$-module, of complex dimension $2$: every minimal left ideal is a copy of it, and every left ideal is a sum of copies.
 
-*Proof.* A minimal left ideal is $S=\mathbb{B}e$ for a primitive idempotent $e$, and two such ideals are isomorphic as left modules whenever their idempotents are conjugate, which for a full matrix algebra is always. Let $W$ be a simple left module. It is a quotient of the regular module $\mathbb{B}$, hence $\mathbb{B}/M$ for a maximal left ideal $M$, and every such quotient is a minimal left ideal up to a sum of minimal ones. All the minimal ones are copies of one module, so the simple module is unique up to isomorphism. Its complex dimension is $2$, since $\mathbb{B}$ is the algebra of endomorphisms of a two-dimensional complex space and the minimal left ideals are its columns.
+*Proof.* A minimal left ideal is $S=\mathbb{B}e$ for a primitive idempotent $e$, and two such ideals are isomorphic as left modules whenever their idempotents are conjugate, which for the full endomorphism algebra is always. Let $W$ be a simple left module. It is a quotient of the regular module $\mathbb{B}$, hence $\mathbb{B}/M$ for a maximal left ideal $M$, and every such quotient is a minimal left ideal up to a sum of minimal ones. All the minimal ones are copies of one module, so the simple module is unique up to isomorphism. Its complex dimension is $2$, since $\mathbb{B}$ is the algebra of endomorphisms of a two-dimensional complex space and the minimal left ideals are its columns.
 
 **Theorem (the conjugation carriers).** Up to isomorphism there are exactly two: the centre, the trivial module of complex dimension $1$, and the scalar-free part, the adjoint module of complex dimension $3$.
 
@@ -608,7 +608,7 @@ An irreducible $W$ is therefore one of these two summands. The centre is a compl
 
 **Corollary (three and not four).** Up to isomorphism the carriers of $\mathbb{B}$ are three: the trivial module of complex dimension $1$, the module of a minimal left ideal of complex dimension $2$, and the adjoint module of complex dimension $3$. One comes from multiplication and two from conjugation, and there is no fourth, because a carrier is irreducible for one of the two actions and both actions are now classified.
 
-**Remark (what is counted).** The count is a count for the two actions the algebra carries on itself: multiplication, which is an action of the algebra, and conjugation, which is an action of the group of invertibles by automorphisms. No third action is used anywhere in this group of articles. Left and right multiplication give the same types, because the algebra is a full matrix algebra, and the derived form of the conjugation is the bracket.
+**Remark (what is counted).** The count is a count for the two actions the algebra carries on itself: multiplication, which is an action of the algebra, and conjugation, which is an action of the group of invertibles by automorphisms. No third action is used anywhere in this group of articles. Left and right multiplication give the same types, because the algebra is a full endomorphism algebra, and the derived form of the conjugation is the bracket.
 
 **Remark (copies are not types).** $S_+$ and $S_-$ are two carriers of one type, not two types. The multiplicity is a property of the algebra as a module, not a count of types, and it is the reason the weight string of the whole algebra repeats.
 
@@ -674,7 +674,7 @@ $$
 
 **The complex structure.** $i$ is used twice: it is what the first closure adjoins, and it is what the idempotent $\tilde\Pi_+$ contains. No carrier is defined by means of it, and the weights are real numbers throughout.
 
-**The norm.** The norm is used three times. It identifies the rotor as an invertible element, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$. It gives the pure part its positive definite form, which is what makes $SO(\mathfrak{k})$ a group of rotations. And its polar form $\beta$ is the invariant form of *Three and No More*, where it does the work that the trace form does in a treatment by matrices. The spectra, the spin and the sign of the full turn use the product, the star and the commutator only.
+**The norm.** The norm is used three times. It identifies the rotor as an invertible element, $\tilde u_{\mathrm r}\tilde u_{\mathrm r}^{*}=e_t$. It gives the pure part its positive definite form, which is what makes $SO(\mathfrak{k})$ a group of rotations. And its polar form $\beta$ is the invariant form of *Three and No More*, where it does the work that the trace form does in a treatment by arrays. The spectra, the spin and the sign of the full turn use the product, the star and the commutator only.
 
 **No array.** No argument array is used, and no basis is fixed. The two identities $\vec u_{\mathrm r}\tilde\Pi_+=-i\tilde\Pi_+$ and $[\tfrac12\vec u_{\mathrm r},\vec v]=\vec u_{\mathrm r}\times\vec v$ carry every computation, and the spectra are read from the scalar action on the plane and from the exhibited eigenvectors on the vector part. A display in a fixed frame would have introduced the axis into statements that do not contain one.
 
@@ -919,7 +919,7 @@ The scalar term is $2i\operatorname{Im}(\alpha\bar\beta)$, and it vanishes exact
 - [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the plane, the two spinor spaces and the infinite family of bispinor spaces
 - [Introduction to the Spin-One Anti-Hermitian Subspace](the-spin-one-anti-hermitian-subspace.html), for the vector part, the cross product operator and the split $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$
 - [The Minimal Left Ideals of the Biquaternion Algebra](the-minimal-left-ideals-of-the-biquaternion-algebra.html), for the idempotents, the minimality and the splitting of the algebra
-- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the system of matrix units
+- [The Peirce Basis of the Biquaternion Algebra](the-peirce-basis-of-the-biquaternion-algebra.html), for the basis, the gauge and the system of Peirce units
 - [The Peirce Decomposition of the Biquaternion Algebra](the-peirce-decomposition-of-the-biquaternion-algebra.html), for the four corners and the diagonal part
 - [The Regular Module in the Biquaternion Algebra](the-regular-module-in-the-biquaternion-algebra.html), for the algebra read as a module over itself
 - [Subspaces and Decompositions of the Biquaternion Algebra](subspaces-and-decompositions-of-the-biquaternion-algebra.html), for the centre, the pure part and the two Hermitian halves

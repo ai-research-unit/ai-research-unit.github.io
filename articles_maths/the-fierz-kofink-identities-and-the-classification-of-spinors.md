@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A Dirac spinor carries, besides its four complex components, a collection of **tensor components** built from it and its adjoint: a scalar, a pseudoscalar, a vector, an axial vector and an antisymmetric tensor. These are the **bilinear covariants**, sixteen real components in all. They are not independent. They satisfy a system of quadratic relations — the **Fierz–Kofink identities**, also called the Fierz–Penrose–Kofink or FPK identities — which are the four-dimensional completion of the internal Fierz identity of *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions*. That article proves the internal, two-dimensional statement and records explicitly that the ambient four-dimensional rearrangement "is a statement about the ambient algebra and is not proved here". This article supplies it.
+A Dirac spinor carries, besides itself, a collection of **tensor components** built from it and from the Hermitian form: a scalar, a pseudoscalar, a vector, an axial vector and an antisymmetric tensor. These are the **bilinear covariants**, sixteen real components in all. They are not independent. They satisfy a system of quadratic relations — the **Fierz–Kofink identities**, also called the Fierz–Penrose–Kofink or FPK identities — which are the four-dimensional completion of the internal Fierz identity of *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions*. That article proves the internal, two-dimensional statement and records explicitly that the ambient four-dimensional rearrangement "is a statement about the ambient algebra and is not proved here". This article supplies it.
 
 The identities make possible a **classification** of spinors by their covariants, due to Lounesto. Lounesto's result is that there are exactly **six** possible configurations, gathered into three classes of "regular" spinors (those with at least one of the two scalars nonzero) and three of "singular" spinors, with the singular ones carrying a null vector. The classification is finite because the FPK identities constrain the covariants so tightly that only six configurations satisfy them. The device that turns the identities into the classification, and whose name the literature borrows, is the **Fierz aggregate** or **boomerang**: a single rank-one operator whose expansion in the sixteen basis operators is the tuple of covariants, which satisfies a short system of identities and from which the original spinor can be recovered.
 
@@ -13,34 +13,53 @@ This article is pure Clifford-algebra mathematics in the corpus's inertia, and i
 Let the spinor space be the biquaternion algebra $\mathbb B$ as a complex module of dimension four, with the two-sided operators $L_{a}R_{b}$, $L_a\tilde{Ξ}=a\tilde{Ξ}$, $R_b\tilde{Ξ}=\tilde{Ξ}b$, and the five frame operators
 
 $$
-iL_{e_t}R_{\vec e_x},\qquad iL_{\vec e_x}R_{\vec e_y},\qquad
-iL_{\vec e_y}R_{\vec e_y},\qquad iL_{\vec e_z}R_{\vec e_y},\qquad -iL_{e_t}R_{\vec e_z},
+\Gamma_0:=iR_{\vec e_x},\qquad
+\Gamma_k:=iL_{\vec e_k}R_{\vec e_y}\ (k=1,2,3),\qquad
+\Gamma_5:=-iR_{\vec e_z}.
 $$
 
-satisfying the four basis operators $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of the material interval, $\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4$. In the **Dirac basis** of the module, the basis in which the timelike basis operator is diagonal, the five basis operators read
+Each is an operator on $\mathbb B$ and nothing else is needed to name it: its value on the four units is read off the multiplication table, and that value is the whole of its content. The fifth frame operator is the product of the other four, $\Gamma_5=i\,\Gamma_0\Gamma_1\Gamma_2\Gamma_3$, and no array is written at any point below.
+
+**The relations.** With $\varepsilon=(1,-1,-1,-1)$,
 
 $$
-iR_{\vec e_x}=\begin{pmatrix} I_2 & 0 \\ 0 & -I_2 \end{pmatrix},\qquad
-iL_{\vec e_k}R_{\vec e_y}=\begin{pmatrix} 0 & \sigma_k \\ -\sigma_k & 0 \end{pmatrix}\ (k=1,2,3),
+\Gamma_0^2=\mathrm{id},\qquad
+\Gamma_k^2=-\mathrm{id},\qquad
+\Gamma_5^2=\mathrm{id},\qquad
+\{\Gamma_\mu,\Gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id},\qquad
+\{\Gamma_\mu,\Gamma_5\}=0 .
 $$
 
-with $\sigma_k$ the Pauli matrices, and
+*Warrant.* Each line is a computation on the four units. Applying $iR_{\vec e_x}$ twice gives $-X\vec e_x\vec e_x=X$, so $\Gamma_0^2=\mathrm{id}$. Applying $iL_{\vec e_k}R_{\vec e_y}$ twice gives $-\vec e_k^2X\vec e_y^2=-X$, so $\Gamma_k^2=-\mathrm{id}$. The pair $\Gamma_0$ and $\Gamma_k$ anticommutes because $\vec e_x$ and $\vec e_k$ anticommute on the right while $\vec e_k$ multiplies on the left; two spacelike operators anticommute for the same reason. The chirality operator inherits its square and its anticommutation from $(R_{\vec e_z})^2=-\mathrm{id}$.
+
+**The Hermitian form.** Write $X=X_te_t+X_x\vec e_x+X_y\vec e_y+X_z\vec e_z$ with complex coefficients and put
 
 $$
--iR_{\vec e_z} = i\,iR_{\vec e_x}\,iL_{\vec e_x}R_{\vec e_y}\,iL_{\vec e_y}R_{\vec e_y}\,iL_{\vec e_z}R_{\vec e_y} = \begin{pmatrix} 0 & I_2 \\ I_2 & 0 \end{pmatrix},
-\qquad (-iR_{\vec e_z})^{2}=\mathbb 1,\qquad (-iR_{\vec e_z})^{\dagger}=-iR_{\vec e_z} .
+\langle X,Y\rangle:=\bar X_tY_t+\bar X_xY_x+\bar X_yY_y+\bar X_zY_z .
 $$
 
-The basis operators are the corpus's frame (*Algebra and Element Conventions*), so the conventions are the corpus's own; the Dirac basis is a basis of the module, and the basis freedom changes no identity below.
+This is a positive definite Hermitian form on $\mathbb B$, the form in which the four units are orthonormal. The two operators $\Gamma_0$ and $\Gamma_5$ are self-adjoint for it, and the three $\Gamma_k$ are anti-self-adjoint: the adjoint of $iL_{\vec e_k}R_{\vec e_y}$ is $-iL_{\vec e_k}R_{\vec e_y}$, since transposing exchanges the two multiplications. Every bilinear below is the real part of $\langle \psi,M\psi\rangle$ for an operator $M$ that is self-adjoint or skew-adjoint, and is therefore a real number.
 
-**Definition.** For a spinor $\psi\in\mathbb B$ read in the Dirac basis, with $\psi^{\dagger}$ the conjugate transpose of its component column and the **Dirac adjoint** $\psi^{\dagger}\,iR_{\vec e_x}$, the **bilinear covariants** are
+**Definition.** For a spinor $\psi\in\mathbb B$ the **bilinear covariants** are
 
 $$
-\sigma=\psi^{\dagger}\,iR_{\vec e_x}\psi,\qquad \omega=i\,\psi^{\dagger}\,iR_{\vec e_x}\,(-iR_{\vec e_z})\psi,\qquad J_0=\psi^{\dagger}\,iR_{\vec e_x}\,iR_{\vec e_x}\psi,\qquad J_k=\psi^{\dagger}\,iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}\psi,
-\qquad K_0=-\psi^{\dagger}\,iR_{\vec e_x}\,(-iR_{\vec e_z})iR_{\vec e_x}\psi,\qquad K_k=-\psi^{\dagger}\,iR_{\vec e_x}\,(-iR_{\vec e_z})iL_{\vec e_k}R_{\vec e_y}\psi,\qquad S_{\mu\nu}=\psi^{\dagger}\,iR_{\vec e_x}\,\sigma_{\mu\nu}\psi,
+\sigma=\langle\psi,\Gamma_0\psi\rangle,\qquad
+\omega=i\,\langle\psi,\Gamma_0\Gamma_5\psi\rangle,\qquad
+J_0=\langle\psi,\psi\rangle,\qquad
+J_k=\langle\psi,\Gamma_0\Gamma_k\psi\rangle,
 $$
 
-The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscalar, $J$ the vector, $K$ the axial vector and $S$ the antisymmetric tensor. The five objects comprise $1+1+4+4+6=16$ real components, a basis of the space of sesquilinear forms on the module $\mathbb B$: the sixteen products of the five basis operators — the identity, the four generators, the six the product of two generators, the four $(-iR_{\vec e_z})$ times a generator and $-iR_{\vec e_z}$ — are the sixteen basis operators and a basis of $\operatorname{End}_{\mathbb C}(\mathbb B)=M_4(\mathbb C)$, so every sesquilinear form $\psi\mapsto\phi^{\dagger}M\psi$ is a combination of the covariants with coefficients the entries of $M$. This is the **completeness of the action**, the ambient form of the corpus's internal Fierz identity: the map $\mathbb B\to\operatorname{End}_{\mathbb C}(S)$ is an isomorphism in the internal case, and in the ambient case the sixteen basis operators are an isomorphism of $M_4(\mathbb C)$ onto the forms.
+$$
+K_0=-\langle\psi,\Gamma_0\Gamma_5\Gamma_0\psi\rangle,\qquad
+K_k=-\langle\psi,\Gamma_0\Gamma_5\Gamma_k\psi\rangle,\qquad
+S_{\mu\nu}=\langle\psi,\Gamma_0\sigma_{\mu\nu}\psi\rangle,
+\qquad
+\sigma_{\mu\nu}=\tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu],
+$$
+
+The first display carries the scalar and the start of the vector, the second the rest of the vector, the axial vector and the tensor. Every entry is a real number, a value of the Hermitian form against one operator, and no component of $\psi$ is ever named.
+
+The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscalar, $J$ the vector, $K$ the axial vector and $S$ the antisymmetric tensor. The five objects comprise $1+1+4+4+6=16$ real numbers. They are a basis of the real space of Hermitian sesquilinear forms on the module $\mathbb B$, and the reason is a count of operators. The sixteen products — the identity, the four $\Gamma_\mu$, the six $\Gamma_\mu\Gamma_\nu$ with $\mu<\nu$, the four $\Gamma_5\Gamma_\mu$ and $\Gamma_5$ — are a basis of the endomorphism space $\operatorname{End}_{\mathbb C}(\mathbb B)$, of complex dimension sixteen. Every sesquilinear form is therefore $\phi\mapsto\langle\phi,M\psi\rangle$ for one operator $M$ and a combination of the covariants with coefficients read from $M$. This is the **completeness of the action**, the ambient form of the corpus's internal Fierz identity: the map $\mathbb B\to\operatorname{End}_{\mathbb C}(S)$ is an isomorphism in the internal case, and in the ambient case the sixteen products are an isomorphism of $\operatorname{End}_{\mathbb C}(\mathbb B)$ onto the forms.
 
 **Remark (why the tensor is written with the commutator).** The symmetric product is not antisymmetric, and the tensor must be. The difference is therefore invisible in the three singular classes, where $\sigma=0$, which is the only place the $S$-conditions are used, so the classification below is unaffected by the choice. The commutator form is kept because it is the one whose name matches its symmetry, and the corpus records the degeneracy here rather than leaving it to a later reader.
 
@@ -48,7 +67,7 @@ The names are the standard ones: $\sigma$ is the scalar, $\omega$ the pseudoscal
 
 ## The Fierz–Kofink Identities
 
-**Theorem (the scalar FPK identities).** For every Dirac spinor $\psi$, with $J^2=\sum_\mu J_\mu J_\mu$, the sum taken over the $Q$ coordinate, so that the temporal coefficient is $iJ_0$, and similarly for $K$ and $J\cdot K$,
+**Theorem (the scalar FPK identities).** For every spinor $\psi$, with $J^2=\sum_\mu\varepsilon_\mu J_\mu J_\mu$ and similarly for $K$ and $J\cdot K$, the sign vector being the $\varepsilon=(1,-1,-1,-1)$ of the frame operators,
 
 $$
 \boxed{\; J^2=\sigma^2+\omega^2,\qquad J^2=-K^2,\qquad J\cdot K=0 \;}.
@@ -62,7 +81,7 @@ $$
 \boxed{\; J_\mu K_\nu-J_\nu K_\mu=\omega\,S_{\mu\nu}+\sigma\,\tilde S_{\mu\nu} \;}.
 $$
 
-*Derivation.* The identity is a Fierz rearrangement. The two products the product of the $J$ bilinear with the corresponding $K$ bilinear and the product of the $J$ bilinear with the corresponding $K$ bilinear are each expanded in the sixteen basis operators with the help of the internal Fierz identity of *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions*, and the difference of the two expansions is read off. Only the two scalars survive as coefficients, $\omega=\psi^{\dagger}\,iR_{\vec e_x}\,i\,-iR_{\vec e_z}\psi$ multiplying $S_{\mu\nu}$ and $\sigma=\psi^{\dagger}\,iR_{\vec e_x}\psi$ multiplying $\tilde S_{\mu\nu}$; the sign of the second term is the one that the orientation $\epsilon_{0123}=+1$ selects, and the opposite orientation reverses it. The corpus verified the result numerically in its own frame: on generic spinors the two sides agree to $10^{-14}$ relative, and on the singular classes both sides vanish identically.
+*Derivation.* The identity is a Fierz rearrangement. The two products the product of the $J$ bilinear with the corresponding $K$ bilinear and the product of the $J$ bilinear with the corresponding $K$ bilinear are each expanded in the sixteen basis operators with the help of the internal Fierz identity of *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions*, and the difference of the two expansions is read off. Only the two scalars survive as coefficients, $\omega$ multiplying $S_{\mu\nu}$ and $\sigma$ multiplying $\tilde S_{\mu\nu}$; the sign of the second term is the one that the orientation $\epsilon_{0123}=+1$ selects, and the opposite orientation reverses it. The corpus verified the result numerically in its own frame: on generic spinors the two sides agree to $10^{-14}$ relative, and on the singular classes both sides vanish identically.
 
 **Remark (why the tensor identity matters).** The three scalar identities fix the lengths of $J$ and $K$ and their orthogonality; the tensor identity fixes the *direction* of $S$ in terms of $J$ and $K$. Together they say that the sixteen real numbers $(\sigma,\omega,J,K,S)$ carry far less data than their count suggests: for a regular spinor $\sigma^2+\omega^2=J^2\neq0$, so $S$ is determined by $J$ and $K$ once $\sigma$ and $\omega$ are known. For a singular spinor $\sigma=\omega=0$, so $J$ is null and the tensor identity degenerates to $J_\mu K_\nu=J_\nu K_\mu$, which forces $K$ to be parallel to $J$ whenever $J\neq0$ — the statement that gives the singular classes their geometry.
 
@@ -73,28 +92,28 @@ $$
 **Definition (the aggregate).** The **Fierz aggregate** of $\psi$ is the rank-one operator
 
 $$
-Z=4\,\psi\psi^{\dagger}\,iR_{\vec e_x},\qquad\text{that is}\qquad Z\eta=4\,\psi\,(\psi^{\dagger}\,iR_{\vec e_x}\eta)\quad\text{for every }\eta\in\mathbb B .
+Z\eta=4\,\psi\,\langle\psi,\Gamma_0\eta\rangle\quad\text{for every }\eta\in\mathbb B ,
 $$
 
-Expanded in the sixteen basis operators, with the basis operators $\mathsf C_0=iR_{\vec e_x}$ and $\mathsf C_k=iL_{\vec e_k}R_{\vec e_y}$, every index written low and no sum on $\mu$, it reads
+Expanded in the sixteen products of the frame operators, with all indices written low and summed over, it reads
 
 $$
-Z = \sigma\,\mathbb 1 + J_\mu\mathsf C_\mu + iS_{\mu\nu}\mathsf C_\mu\mathsf C_\nu + K_\mu\,(-iR_{\vec e_z})\mathsf C_\mu - i\omega\,(-iR_{\vec e_z}),
+Z = \sigma\,\mathrm{id} + \varepsilon_\mu J_\mu\Gamma_\mu + i\,\varepsilon_\mu\varepsilon_\nu S_{\mu\nu}\Gamma_\mu\Gamma_\nu + \varepsilon_\mu K_\mu\Gamma_5\Gamma_\mu - i\omega\,\Gamma_5 .
 $$
 
-the sums running over $\mu$ and over $\mu<\nu$. The heights are not indices: a basis operator is labelled low, and the raised labels of the literature carry no metric factor that this corpus would have to supply.
+The signs $\varepsilon_\mu$ are the ones of the frame, and they appear because a raised index of the literature is a lowered index multiplied by $\varepsilon_\mu$. On the three spacelike components the two signs cancel and the terms read as the literature writes them; on the timelike component they do not, and a formula that sets every $\varepsilon$ to one is wrong in the four terms that carry a zero index. The expansion was checked against the rank-one form on generic spinors, term by term.
 
 **Statement (the aggregate form of the FPK identities).** The aggregate satisfies
 
 $$
-\boxed{\; Z^2=4\sigma Z,\quad Z\,iR_{\vec e_x}Z=4J_0Z,\quad Z\,iL_{\vec e_k}R_{\vec e_y}Z=4J_kZ,\quad Z\,i(-iR_{\vec e_z})Z=4\omega Z,\quad Z\,iR_{\vec e_x}(-iR_{\vec e_z})Z=4K_0Z,\quad Z\,iL_{\vec e_k}R_{\vec e_y}(-iR_{\vec e_z})Z=4K_kZ,\quad Z\sigma_{\mu\nu}Z=4S_{\mu\nu}Z \;}. 
+\boxed{\; Z^2=4\sigma Z,\quad Z\Gamma_0Z=4J_0Z,\quad Z\Gamma_kZ=4J_kZ,\quad i\,Z\Gamma_5Z=4\omega Z,\quad Z\Gamma_0\Gamma_5Z=4K_0Z,\quad Z\Gamma_k\Gamma_5Z=4K_kZ,\quad Z\sigma_{\mu\nu}Z=4S_{\mu\nu}Z \;}. 
 $$
 
-*Proof.* The aggregate is rank one, so every product collapses on the number in the middle. On a vector $\eta$, the generator times $Z\eta$ equals $4$ times the generator applied to $\psi$, times $(\psi^{\dagger}\,iR_{\vec e_x}\eta)$, hence $Z$(the generator)$Z\eta=16\,J_0\,\psi(\psi^{\dagger}\,iR_{\vec e_x}\eta)$ for the timelike and $16\,J_k\,\psi(\psi^{\dagger}\,iR_{\vec e_x}\eta)$ for the spacelike, equal to $4J\,Z\eta$; the other four identities are the same line with $\mathbb 1$, $i\,-iR_{\vec e_z}$, the product of a generator with $(-iR_{\vec e_z})$ and $\sigma_{\mu\nu}$ in place of the generator, and $Z^2\eta=16\sigma\,\psi(\psi^{\dagger}\,iR_{\vec e_x}\eta)=4\sigma Z\eta$.
+*Proof.* The aggregate is rank one: its image is the line $\mathbb C\psi$ and its value on $\eta$ is $4\langle\psi,\Gamma_0\eta\rangle$. Composing $Z$ with an operator $M$ on either side therefore collapses the result on the same line, and $ZMZ\eta=4\langle\psi,\Gamma_0M\psi\rangle\,Z\eta$. The seven identities are that one line read at $M=\mathrm{id}$, $\Gamma_0$, $\Gamma_k$, $i\Gamma_5$, $\Gamma_0\Gamma_5$, $\Gamma_k\Gamma_5$ and $\sigma_{\mu\nu}$, with the four values $\sigma$, $J_0$, $J_k$, $\omega$, $K_0$, $K_k$, $S_{\mu\nu}$ of the definition.
 
-**Statement (the inversion theorem).** If $\zeta$ is a fixed spinor with $\psi^{\dagger}\,iR_{\vec e_x}\zeta\neq0$, then $\psi$ is recovered from its aggregate by $\psi=Z\zeta/(4\psi^{\dagger}\,iR_{\vec e_x}\zeta)$. The aggregate therefore returns from the tensor densities to the spinor; this is why Lounesto named it the **boomerang**.
+**Statement (the inversion theorem).** If $\zeta$ is a fixed spinor with $\langle\psi,\Gamma_0\zeta\rangle\neq0$, then $\psi$ is recovered from its aggregate by $\psi=Z\zeta/(4\langle\psi,\Gamma_0\zeta\rangle)$. The aggregate therefore returns from the tensor densities to the spinor; this is why Lounesto named it the **boomerang**.
 
-Both statements follow from the rank-one form, and the sixteen-term expansion agrees with them to machine precision on generic spinors. The literature's expansion hides the metric in its bivectors, which is where its apparent sign differences come from; in the corpus's frame, with $\sigma_{\mu\nu}$ the bivector of the Gamma section, the axial identity reads $Z$(the generator)$(-iR_{\vec e_z})Z=4K_0Z$ for the timelike and $4K_kZ$ for the spacelike, and reordering the two basis operators reverses its sign.
+Both statements follow from the rank-one form, and the sixteen-term expansion agrees with them to machine precision on generic spinors. The axial identity needs the two frame operators in the order spacelike then chirality: $Z\Gamma_k\Gamma_5Z=4K_kZ$. The other order gives $-4K_kZ$, and a reader who reverses it without changing the sign of $K$ finds a contradiction that is not there.
 
 **Remark (why the classification is finite).** The aggregate form shows why there are only finitely many types. The sixteen coefficients of $Z$ are not free — they are the expansion of a rank-one operator — and the five relations above pin them to the signs and the vanishings of five objects, $\sigma$, $\omega$, $J$, $K$ and $S$. The FPK identities are exactly the compatibility conditions that a rank-one aggregate imposes on those signs, and they admit the six patterns of the table and no others.
 
@@ -113,29 +132,39 @@ Both statements follow from the rank-one form, and the sixteen-term expansion ag
 
 Classes $1$–$3$ are the **regular** spinors, those with at least one of $\sigma,\omega$ nonzero; classes $4$–$6$ are the **singular** spinors, with $\sigma=\omega=0$. The vector $J$ has positive square in the regular classes and is null in the singular ones, by the identity $J^2=\sigma^2+\omega^2$. The classification is due to Lounesto and is quoted here; the corpus verified that each class is non-empty by exhibiting a representative. The names in the last column are Lounesto's for the three singular classes; the two regular classes $2$ and $3$ carry no standard name in the classification, and the labels that other conventions attach to them depend on the choice of the chirality operator and on which scalar is set to zero, so the article keeps the algebraic description. The singular classes are likewise permuted between sources: the *flag-dipole* with both $K$ and $S$ nonzero is unambiguous, but the names *flagpole* and *dipole* are exchanged in some of the literature, and the algebraic conditions are the safe identifier.
 
-Set $\psi=(\chi,\phi)$ for the components of $\psi$ in the $+1$ and the $-1$ eigenspaces of the timelike basis operator $iR_{\vec e_x}$. Then
+**The two halves.** Put $\chi=P_+\psi$ and $\varphi=P_-\psi$, with
 
 $$
-\sigma=\psi^{\dagger}\,iR_{\vec e_x}\psi=\lvert\chi\rvert^2-\lvert\phi\rvert^2,\qquad \omega=i\,\psi^{\dagger}\,iR_{\vec e_x}\,-iR_{\vec e_z}\psi=-2\operatorname{Im}(\chi^{\dagger}\phi),
+P_\pm=\tfrac12\bigl(\mathrm{id}\pm\Gamma_0\bigr)
 $$
 
-so the regularity of a spinor is the size and the phase of the single quantity $\chi^{\dagger}\phi$.
-
-**Proposition (all six classes are non-empty).** In the Dirac basis of the module and with the covariants above, the following spinors are representatives:
+the two projectors onto the $\pm1$ eigenspaces of the timelike frame operator. They are orthogonal projectors, $\chi+\varphi=\psi$, and the two halves are orthogonal for $\langle\cdot,\cdot\rangle$. Then
 
 $$
-\boxed{\; \begin{aligned}
-\text{class 1:}&\quad \psi=\frac{1}{\sqrt3}\,(1,\,i,\,0,\,1)^{\mathsf T} &&(\sigma=\tfrac13,\ \omega=\tfrac23),\\
-\text{class 2:}&\quad \psi=(1,\,0,\,1/\sqrt2,\,0)^{\mathsf T} &&(\sigma=\tfrac12,\ \omega=0),\\
-\text{class 3:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,i,\,0)^{\mathsf T} &&(\sigma=0,\ \omega=-1),\\
-\text{class 4:}&\quad \psi=\frac{1}{\sqrt6}\,(1,\,1+i,\,1,\,-1-i)^{\mathsf T} &&(\sigma=\omega=0,\ K\neq0,\ S\neq0),\\
-\text{class 5:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,0,\,1)^{\mathsf T} &&(\sigma=\omega=0,\ K=0,\ S\neq0),\\
-\text{class 6:}&\quad \psi=\frac{1}{\sqrt2}\,(1,\,0,\,1,\,0)^{\mathsf T} &&(\sigma=\omega=0,\ K\neq0,\ S=0)\end{aligned} \;}.
+\sigma=\lVert\chi\rVert^2-\lVert\varphi\rVert^2,
+\qquad
+\omega=2\operatorname{Im}\langle\chi,\Gamma_5\varphi\rangle,
 $$
 
-*Proof.* Each representative was computed numerically and its covariants evaluated. The two scalars and the class membership are as displayed; for the singular classes the distinction is between the vanishing of the **vector** $K$ and the vanishing of the **tensor** $S$, not of their norms. Class 5 is $(1,0,0,1)^{\mathsf T}/\sqrt2$, the diagonal spinor with equal and opposite space components; there $\sigma=\lvert\chi\rvert^2-\lvert\phi\rvert^2=0$ and $\omega=-2\operatorname{Im}(\chi^{\dagger}\phi)=0$ because $\chi^{\dagger}\phi=0$ is real, while $K$ vanishes identically and $S$ does not. Class 6 is $(1,0,1,0)^{\mathsf T}/\sqrt2$, the spinor with equal upper and lower two-spinors; there $\sigma=0$ and $\omega=0$, $S$ vanishes identically, and $K$ does not — it is null, $K^2=0$, which is why it is invisible to the square $K^2$ and visible only to the vector itself. Class 4 is the least obvious: $(1,1+i,1,-1-i)^{\mathsf T}/\sqrt6$ has $\sigma=\omega=0$ with both $K$ and $S$ nonzero, and it is the type that the special choices $\phi=\pm\chi$ and $\phi\perp\chi$ do not reach.
+the first because the cross terms vanish, the second because $\Gamma_5$ exchanges the two eigenspaces. So the regularity of a spinor is the comparison of the two lengths and the phase of the single number $\langle\chi,\Gamma_5\varphi\rangle$.
 
-**Remark (the degenerate choices).** The three singular classes are easy to confuse, because the families $\phi=\chi$, $\phi=-\chi$, $\phi\perp\chi$ and $\phi=\pm i\chi$ produce class 6, class 6, class 5 and class 3 respectively, while class 4 is reached only by a genuinely generic phase. The special spinor $(1,0,1,0)^{\mathsf T}$ has $K\neq0$ but $K^2=0$, so a check that tests $\lvert K\rvert^2$ rather than the vector $K$ will misreport it as class 5; the vector test is the correct one. This is recorded because it is exactly the trap a later editor would fall into.
+**Proposition (all six classes are non-empty).** The following spinors are representatives:
+
+Class $1$: $\psi=e_t+i(\vec e_x+\vec e_y)$, with $\sigma=2$ and $\omega=2$.
+
+Class $2$: $\psi=\tfrac{1+i}{2}\vec e_y+\tfrac{1-i}{2}\vec e_z$, with $\sigma=1$ and $\omega=0$.
+
+Class $3$: $\psi=\tfrac{1+i}{2}\vec e_x+\tfrac{1-i}{2}\vec e_z$, with $\sigma=0$ and $\omega=-1$.
+
+Class $4$: $\psi=\vec e_x+\tfrac{1+i}{2}\vec e_y$, with $\sigma=\omega=0$, $K\neq0$ and $S\neq0$.
+
+Class $5$: $\psi=\tfrac{1+i}{2}\vec e_z$, with $\sigma=\omega=0$, $K=0$ and $S\neq0$.
+
+Class $6$: $\psi=\tfrac{1+i}{2}\vec e_x+\tfrac{1-i}{2}\vec e_y$, with $\sigma=\omega=0$, $K\neq0$ and $S=0$.
+
+*Proof.* Each representative was evaluated on the covariants above and its class read off, and the values are exactly the ones displayed. For the singular classes the distinction is between the vanishing of the **vector** $K$ and the vanishing of the **tensor** $S$, not of their squares: in both class $4$ and class $6$ the vector $K$ is null, $K^2=0$, so a test on $K^2$ alone cannot separate class $6$ from class $5$. Class $5$ is a single vector unit times a phase; the two halves have equal length and $\langle\chi,\Gamma_5\varphi\rangle$ is real, so $\sigma=\omega=0$, and the axial vector vanishes identically while the tensor does not. Class $6$ is two vector units with the phases that make the tensor vanish; $K$ does not vanish, it is null, and it is visible only to the vector. Class $4$ is the least obvious: $\sigma=\omega=0$ with both $K$ and $S$ nonzero, and it is the type that the two special choices below do not reach.
+
+**Remark (the degenerate choices).** The three singular classes are easy to confuse. With one half fixed and the other taken as $\varphi=c\Gamma_5\chi$, the choice $c=\pm1$ gives class $6$ and the choice $c=\pm i$ gives class $3$, while taking $\varphi$ orthogonal to $\Gamma_5\chi$ with equal length gives class $5$. Class $4$ is reached only by a relative phase that is neither of these, and no one-parameter choice of the alignment reaches it. A check that tests $K^2$ rather than the vector $K$ misreports class $6$ as class $5$, because $K$ is null there.
 
 **Remark (the flag-dipole is the type Fauser singles out).** The class $4$ spinors — $\sigma=\omega=0$ with both $K$ and $S$ nonzero — are the type that the usual list of Dirac, real and chiral spinors does not exhaust, and they are the reason the classification is more than a relabelling of the known spinors. In the modern literature they are called **type-4** or **flag-dipole** spinors. This is the class Fauser, citing Lounesto, describes as "a new unknown type of spinor", and the one that the Fierz aggregate was introduced to expose.
 
@@ -143,7 +172,7 @@ $$
 
 ## Relation to the Corpus
 
-**The internal and the ambient Fierz identities.** The corpus's internal Fierz identity says that the left action $L\colon\mathbb B\to\operatorname{End}_{\mathbb C}(S)$ is an isomorphism, so every endomorphism of the two-dimensional module is a left multiplication and the four basis elements are a basis. The ambient identity of this article says that the sixteen basis operators are a basis of $M_4(\mathbb C)$, so every sesquilinear form on the four-dimensional module is a combination of the sixteen covariants. The two are the same theorem in dimensions two and four; the internal one is the case the corpus has already verified, and the ambient one is the statement that *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions* records as "a statement about the ambient algebra and is not proved here". This article supplies it.
+**The internal and the ambient Fierz identities.** The corpus's internal Fierz identity says that the left action $L\colon\mathbb B\to\operatorname{End}_{\mathbb C}(S)$ is an isomorphism, so every endomorphism of the two-dimensional module is a left multiplication and the four basis elements are a basis. The ambient identity of this article says that the sixteen products of the frame operators are a basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$, so every sesquilinear form on the four-dimensional module is a combination of the sixteen covariants. The two are the same theorem in dimensions two and four; the internal one is the case the corpus has already verified, and the ambient one is the statement that *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions* records as "a statement about the ambient algebra and is not proved here". This article supplies it.
 
 **The classification and the corpus's idempotents.** The corpus builds spinors as elements of the Peirce carriers $\mathbb B\tilde\Pi_1$, generated by primitive idempotents; in this algebra the carrier is the minimal left ideal. The Lounesto classification is a classification of **four-component spinors** by their tensor densities, which is a different slicing of the same space: the idempotent fixes the module and the chirality, while the covariants fix the type. The two are compatible — every Lounesto class contains idempotent-generated spinors — and the relation between the primitive idempotent and the class is not recorded in the corpus and is left to the open questions.
 
@@ -161,27 +190,27 @@ $$
 
 ## The Legacy Pauli Gamma Formulation
 
-The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of matrices, $\gamma_0^2=I_4$ and $\gamma_k^2=-I_4$. The frame belongs to the coordinate, not to the array.
+The Pauli and gamma formulation is legacy: the reasons are explained in the article *Why AXF Matrices instead of Pauli and Gamma Matrices*. The generators carry no frame label: $\gamma_\mu$ is one set of operators, $\gamma_0^2=\mathrm{id}$ and $\gamma_k^2=-\mathrm{id}$. The frame belongs to the coordinate, not to the symbol.
 
-The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=M_4(\mathbb{C})$, not a different algebra.
+The gammas are a frame of $\mathrm{Cl}_{1,3}(\mathbb{C})=\operatorname{End}_{\mathbb{C}}(\mathbb B)$, not a different algebra.
 
-Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ}b$, and $c(M)$ is the coefficient matrix of $M$ in the basis of the sixteen products.
+Here $L_a$ and $R_b$ are the left and right multiplications, $L_a\tilde{Ξ}=a\tilde{Ξ}$ and $R_b\tilde{Ξ}=\tilde{Ξ}b$, and $c(M)$ is the coefficient tuple of $M$ in the basis of the sixteen products.
 
 $$
 \gamma_0=iL_{e_t}R_{\vec e_x},\quad \gamma_1=iL_{\vec e_x}R_{\vec e_y},\quad \gamma_2=iL_{\vec e_y}R_{\vec e_y},\quad \gamma_3=iL_{\vec e_z}R_{\vec e_y},\quad \gamma_5=-iL_{e_t}R_{\vec e_z} .
 $$
 
-A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$.
+A single product is a pure tensor; the products form the seven-dimensional cone $\operatorname{rank}c(M)\le1$, and a general element is a sum of at most four, with $\ell(M)=\operatorname{rank}c(M)$; the rank is that of the rank-one operator, since the tuple is its coefficients.
 
-$\gamma_5$ is the reference-frame representative of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the Dirac module.
+$\gamma_5$ is the reference-frame representative of the chirality operator; the central grading $\chi=i\tilde{Ζ}_{\mathrm{ad}}$ — the difference of the two central idempotents of the complexified algebra, so $\chi^2=e_t$ — is a different object, represented by $\gamma_5$ on the module.
 
-The dictionary is complex-linear; over $\mathbb{R}$ the products span $\mathrm{Cl}_{1,3}(\mathbb{R})\cong M_2(\mathbb{H})$ and the basis operators span $\mathrm{Cl}_{3,1}(\mathbb{R})\cong M_4(\mathbb{R})$.
+The dictionary is complex-linear; over $\mathbb{R}$ the six products of two frame operators span $\mathrm{Cl}_{1,3}(\mathbb{R})$ and the four frame operators along with their products span $\mathrm{Cl}_{3,1}(\mathbb{R})$, both real algebras of operators on $\mathbb B$.
 
 **The identities the bodies cite.** In the $\gamma$ reading, with $\varepsilon=(1,-1,-1,-1)$ the sign vector of the basis operators,
 $$
-\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}I_4,\qquad
-(\gamma_k)^2=-I_4,\qquad
-\gamma_5^2=I_4,\qquad
+\{\gamma_\mu,\gamma_\nu\}=2\varepsilon_\mu\delta_{\mu\nu}\,\mathrm{id},\qquad
+(\gamma_k)^2=-\mathrm{id},\qquad
+\gamma_5^2=\mathrm{id},\qquad
 \{\gamma_\mu,\gamma_5\}=0,
 $$
 $$
@@ -199,26 +228,26 @@ $$
 -\varepsilon_\mu\delta_{\mu\rho}\varepsilon_\nu\delta_{\nu\sigma}
 +\varepsilon_\mu\delta_{\mu\sigma}\varepsilon_\nu\delta_{\nu\rho}\bigr).
 $$
-The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4I_4$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}I_4$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$.
+The contraction sums follow from the squares. No index is raised: the summed index carries the weight $\varepsilon_\mu$, so that $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\mu=4\,\mathrm{id}$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\mu=-2\gamma_\alpha$, $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\alpha\gamma_\beta\gamma_\mu=4\varepsilon_\alpha\delta_{\alpha\beta}\,\mathrm{id}$ and $\sum_\mu\varepsilon_\mu\gamma_\mu\gamma_\gamma\gamma_\beta\gamma_\alpha\gamma_\mu=2\gamma_\gamma\gamma_\beta\gamma_\alpha$. The traces are traces of operators on the four-dimensional module, and they are the only place where the dimension four enters the formulae.
 ## Summary
 
-A Dirac spinor carries sixteen **bilinear covariants** — a scalar, a pseudoscalar, a vector, an axial vector and an antisymmetric tensor — which are not independent but satisfy the **Fierz–Kofink identities**. The scalar part of the system is $J^2=\sigma^2+\omega^2$, $J^2=-K^2$, $J\cdot K=0$; the tensor part is $J_\mu K_\nu-J_\nu K_\mu=\omega S_{\mu\nu}+\sigma\tilde S_{\mu\nu}$, and both are displayed here in the corpus's own conventions. The identities are equivalently expressed through the **Fierz aggregate** $Z=4\psi\psi^{\dagger}\,iR_{\vec e_x}$, the rank-one operator whose sixteen basis operator coefficients are the covariants; it satisfies $Z^2=4\sigma Z$ and its companions and returns the spinor as $\psi=Z\zeta/(4\psi^{\dagger}\,iR_{\vec e_x}\zeta)$ — Lounesto's **boomerang**. The identities force the covariants into exactly **six classes**, three regular ($\sigma$ or $\omega$ nonzero) and three singular ($\sigma=\omega=0$, with the possible vanishings of $K$ and $S$): Dirac, the two other regular types, the **flag-dipole**, the flagpole and the dipole. All six classes were verified to be non-empty by explicit representatives. The flag-dipole is the type the usual list of Dirac, real and chiral spinors does not exhaust and the one the classification was introduced to expose. This article supplies the four-dimensional completion of the corpus's internal Fierz identity, which the bilinear article records as missing, and it states the classification in the corpus's signs, with every formula displayed here checked in those signs. It is pure Clifford-algebra mathematics, with no framework speculation, and it is the ambient companion of the two-dimensional Fierz identity the corpus already carries.
+A Dirac spinor carries sixteen **bilinear covariants** — a scalar, a pseudoscalar, a vector, an axial vector and an antisymmetric tensor — which are not independent but satisfy the **Fierz–Kofink identities**. The scalar part of the system is $J^2=\sigma^2+\omega^2$, $J^2=-K^2$, $J\cdot K=0$; the tensor part is $J_\mu K_\nu-J_\nu K_\mu=\omega S_{\mu\nu}+\sigma\tilde S_{\mu\nu}$, and both are displayed here in the corpus's own conventions. The identities are equivalently expressed through the **Fierz aggregate** $Z\eta=4\psi\langle\psi,\Gamma_0\eta\rangle$, the rank-one operator whose sixteen coefficients in the products of the frame operators are the covariants; it satisfies $Z^2=4\sigma Z$ and its companions and returns the spinor as $\psi=Z\zeta/(4\langle\psi,\Gamma_0\zeta\rangle)$ — Lounesto's **boomerang**. The identities force the covariants into exactly **six classes**, three regular ($\sigma$ or $\omega$ nonzero) and three singular ($\sigma=\omega=0$, with the possible vanishings of $K$ and $S$): Dirac, the two other regular types, the **flag-dipole**, the flagpole and the dipole. All six classes were verified to be non-empty by explicit representatives. The flag-dipole is the type the usual list of Dirac, real and chiral spinors does not exhaust and the one the classification was introduced to expose. This article supplies the four-dimensional completion of the corpus's internal Fierz identity, which the bilinear article records as missing, and it states the classification in the corpus's signs, with every formula displayed here checked in those signs. It is pure Clifford-algebra mathematics, with no framework speculation, and it is the ambient companion of the two-dimensional Fierz identity the corpus already carries.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $iL_{e_t}R_{\vec e_x}$, $iL_{\vec e_k}R_{\vec e_y}$, $-iL_{e_t}R_{\vec e_z}$ | The frame operators, $L_{a}R_{b}$; the four basis operators $iR_{\vec e_x}$ and $iL_{\vec e_k}R_{\vec e_y}$ carry the operator relation of the material interval |
-| $-iL_{e_t}R_{\vec e_z}$ | The chirality operator (pseudoscalar) |
-| $\psi^{\dagger}\,iR_{\vec e_x}$ | Dirac adjoint |
-| $\sigma=\psi^{\dagger}\,iR_{\vec e_x}\psi$, $\omega=i\psi^{\dagger}\,iR_{\vec e_x}\,-iR_{\vec e_z}\psi$ | Scalar and pseudoscalar densities |
-| $J_0=\psi^{\dagger}\,iR_{\vec e_x}\,iR_{\vec e_x}\psi$ and $J_k=\psi^{\dagger}\,iR_{\vec e_x}\,iL_{\vec e_k}R_{\vec e_y}\psi$ | Vector |
-| $K_0=-\psi^{\dagger}\,iR_{\vec e_x}\,(-iR_{\vec e_z})iR_{\vec e_x}\psi$ and $K_k=-\psi^{\dagger}\,iR_{\vec e_x}\,(-iR_{\vec e_z})iL_{\vec e_k}R_{\vec e_y}\psi$ | Axial vector |
-| $S_{\mu\nu}=\psi^{\dagger}\,iR_{\vec e_x}\,\sigma_{\mu\nu}\psi$, $\sigma_{\mu\nu}$ the bivector of the Gamma section | Antisymmetric tensor |
+| $\Gamma_0=iR_{\vec e_x}$, $\Gamma_k=iL_{\vec e_k}R_{\vec e_y}$, $\Gamma_5=-iR_{\vec e_z}$ | The frame operators, $L_{a}R_{b}$; the four frame operators carry the operator relation of the material interval |
+| $\Gamma_5=-iR_{\vec e_z}$ | The chirality operator (pseudoscalar) |
+| $\eta\mapsto\langle\psi,\Gamma_0\eta\rangle$ | Dirac adjoint, as the linear form on the module |
+| $\sigma=\langle\psi,\Gamma_0\psi\rangle$, $\omega=i\langle\psi,\Gamma_0\Gamma_5\psi\rangle$ | Scalar and pseudoscalar densities |
+| $J_0=\langle\psi,\psi\rangle$ and $J_k=\langle\psi,\Gamma_0\Gamma_k\psi\rangle$ | Vector |
+| $K_0=-\langle\psi,\Gamma_0\Gamma_5\Gamma_0\psi\rangle$ and $K_k=-\langle\psi,\Gamma_0\Gamma_5\Gamma_k\psi\rangle$ | Axial vector |
+| $S_{\mu\nu}=\langle\psi,\Gamma_0\sigma_{\mu\nu}\psi\rangle$, $\sigma_{\mu\nu}=\tfrac{i}{2}[\Gamma_\mu,\Gamma_\nu]$ | Antisymmetric tensor |
 | $J^2=\sigma^2+\omega^2=-K^2$, $J\cdot K=0$ | The scalar FPK identities |
-| $Z=4\psi\psi^{\dagger}\,iR_{\vec e_x}$ | Fierz aggregate (boomerang), rank one |
+| $Z\eta=4\psi\langle\psi,\Gamma_0\eta\rangle$ | Fierz aggregate (boomerang), rank one |
 | $Z^2=4\sigma Z$ | The aggregate form of the identities |
-| $\psi=Z\zeta$ | The inversion theorem |
+| $\psi=Z\zeta/(4\langle\psi,\Gamma_0\zeta\rangle)$ | The inversion theorem |
 | flag-dipole, flagpole, dipole | The three singular classes $4,5,6$ |
 
 ## Further Reading

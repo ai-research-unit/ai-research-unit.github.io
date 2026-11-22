@@ -2,13 +2,13 @@
 
 ## Introduction
 
-The spin group is the group of unit quaternions, that is the sphere $S^3$. This article follows one thread from that group to the number $\tfrac12$, and then from $\tfrac12$ to the pair $0$ and $1$: why an element of the group must act by a two-sided product, how the three real $4\times4$ generators of left multiplication carry that action, and how the quadratic Casimir of those three generators returns spin $\tfrac12$. It then takes the square of that carrier, and the square splits as $0\oplus1$ and nothing else. That is the Clebsch–Gordan series $\tfrac12\otimes\tfrac12=0\oplus1$ of a square of the half-integer slot, stated at the level of the algebra in *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*.
+The spin group is the group of unit quaternions, that is the sphere $S^3$. This article follows one thread from that group to the number $\tfrac12$, and then from $\tfrac12$ to the pair $0$ and $1$: why an element of the group must act by a two-sided product, how the three generators of left multiplication carry that action, and how the quadratic Casimir of those three generators returns spin $\tfrac12$. It then takes the square of that carrier, and the square splits as $0\oplus1$ and nothing else. That is the Clebsch–Gordan series $\tfrac12\otimes\tfrac12=0\oplus1$ of a square of the half-integer slot, stated at the level of the algebra in *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*.
 
-**The thread in one paragraph.** To act on an algebra while preserving its multiplication, an element must act on both sides. One-sided multiplication is not an algebra map. The two-sided product is therefore forced, and it is the only inner-type action available. The spin group is the compact group of elements whose two-sided product is conjugation by the inverse with no scalar in front. Left multiplication by such an element is a real $4\times4$ orthogonal matrix, the three generators are real antisymmetric matrices, and the sum of their squares is a multiple of the identity. That multiple is $-\tfrac34$, and the Hermitian normalization is $+\tfrac34$. The number $\tfrac34$ is $s(s+1)$ at $s=\tfrac12$. Read with the series, the two results are one statement: $\tfrac12$ is the label of the slot, and $\tfrac12\otimes\tfrac12=0\oplus1$ is the square of that slot, so the Casimir identifies the factor and the split of the square gives the two integer labels.
+**The thread in one paragraph.** To act on an algebra while preserving its multiplication, an element must act on both sides. One-sided multiplication is not an algebra map. The two-sided product is therefore forced, and it is the only inner-type action available. The spin group is the compact group of elements whose two-sided product is conjugation by the inverse with no scalar in front. Left multiplication by such an element is a real orthogonal operator on $\mathbb{H}$, the three generators are skew-adjoint operators, and the sum of their squares is a multiple of the identity. That multiple is $-\tfrac34$, and the Hermitian normalization is $+\tfrac34$. The number $\tfrac34$ is $s(s+1)$ at $s=\tfrac12$. Read with the series, the two results are one statement: $\tfrac12$ is the label of the slot, and $\tfrac12\otimes\tfrac12=0\oplus1$ is the square of that slot, so the Casimir identifies the factor and the split of the square gives the two integer labels.
 
-**What the article does not claim.** Three sentences are excluded by construction, and each is repaired in *Corrections*. The spin group is $S^3=\mathrm{Spin}(3)$; it is isomorphic to $SU(2)$, and $SU(2)$ is the image of one of its displays. The spin group is not any matrix group; it is $S^3$, and a matrix group is an image of it. The three $L$-generators do not give all spins; they give one spin, on one carrier. That one spin is the label of the slot that the series squares, and the labels $0$ and $1$ are labels of summands of the square, not labels of a one-sided carrier.
+**What the article does not claim.** Three sentences are excluded by construction, and each is repaired in *Corrections*. The spin group is $S^3=\mathrm{Spin}(3)$; it is isomorphic to $SU(2)$, and $SU(2)$ is the image of one of its displays. The spin group is not any group of operators on a space; it is $S^3$, and every such group is an image of it under one action. The three $A$-generators do not give all spins; they give one spin, on one carrier. That one spin is the label of the slot that the series squares, and the labels $0$ and $1$ are labels of summands of the square, not labels of a one-sided carrier.
 
-**Roadmap.** The forcing of the two-sided form comes first, with the four conjugations of the biquaternion algebra and the two two-sided operators that matter. Then the spin group, its identification with the spin group, and its double cover. Then the $L$-generators, the Casimir, and the extraction of $\tfrac12$. Then two rotors, the split into $0\oplus1$, and the reason the split is forced. Then what the generators do not give, the corrections, and the numerical check.
+**Roadmap.** The forcing of the two-sided form comes first, with the four conjugations of the biquaternion algebra and the two two-sided operators that matter. Then the spin group, its identification with the spin group, and its double cover. Then the generators, the Casimir, and the extraction of $\tfrac12$. Then two rotors, the split into $0\oplus1$, and the reason the split is forced. Then what the generators do not give, the corrections, and the numerical check.
 
 ## Why the Two-Sided Action Is Necessary
 
@@ -82,7 +82,7 @@ $$
 
 the unit quaternions under quaternion multiplication. Its real dimension is three. The corpus also writes it $Sp(1)$ and calls its elements versors.
 
-**The group and its displays.** $\mathrm{Spin}(3)$ is the sphere. It is not a set of matrices. A **matrix display** is a homomorphism from it into $GL(V)$, for a real or complex space $V$. The $2\times2$ complex display has image $SU(2)$, and the $4\times4$ real left-regular display has image a three-dimensional subgroup of $SO(4)$. Both are images; neither is the group.
+**The group and its actions.** $\mathrm{Spin}(3)$ is the sphere. It is not a set of operators. An **action** is a homomorphism from it into $GL(V)$, for a real or complex space $V$. The defining complex action on $\mathbb{C}^2$ has image $SU(2)$, and the left regular action $X\mapsto\tilde qX$ on $\mathbb{H}$ has image a three-dimensional subgroup of $SO(\mathbb{H})$. Both are images; neither is the group.
 
 **The spin group.** In the Clifford algebra $\mathrm{Cl}(V)$ of a real space with a positive definite form, the **spin group** is
 
@@ -110,87 +110,79 @@ is a surjective homomorphism of Lie groups with kernel $\{+1,-1\}$.
 
 ## The Left-Regular Generators
 
-**The matrix.** On the real basis $\mathcal{E}=(e_t,\vec e_x,\vec e_y,\vec e_z)$ of $\mathbb{H}$, left multiplication by $\tilde q$ is the linear map $X\mapsto\tilde qX$, and its matrix has the products $\tilde qe_\nu$ as columns,
+**The action, and why it is an operator and not an array.** Left multiplication by $\tilde q$ is a real-linear map of $\mathbb{H}$,
 
 $$
-L(\tilde q)_{\mu\nu}=\bigl[\tilde qe_\nu\bigr]_{\mu},
-\qquad
-L(\tilde q)=
-\begin{pmatrix}
-q_t&-q_x&-q_y&-q_z\\
-q_x&q_t&-q_z&q_y\\
-q_y&q_z&q_t&-q_x\\
-q_z&-q_y&q_x&q_t
-\end{pmatrix}.
+\rho_L(\tilde q)(X)=\tilde q X .
 $$
 
-The first column is the coordinate column of $\tilde q$ itself, since $\tilde qe_t=\tilde q$, so the matrix determines the quaternion and the display is injective.
+It is multiplicative, $\rho_L(\tilde q\tilde p)=\rho_L(\tilde q)\rho_L(\tilde p)$, and it fixes nothing else: $\rho_L(\tilde q)(e_t)=\tilde q$, so the element is recovered from the operator and $\rho_L$ is faithful. The identity element gives the identity operator, and $\rho_L(\tilde q)^{-1}=\rho_L(\tilde q^{-1})$. No basis is chosen at any point, and none is needed: everything below is a statement about the four-dimensional real space $\mathbb{H}$ and the operators on it.
 
-**The three generators.** With $L_k:=L(\vec e_k)$,
+**The three generators.** Write $A_k:=\rho_L(\vec e_k)$, so that $A_k(X)=\vec e_kX$. Each is fixed by its values on the four units, which are read off the multiplication table: $A_x(e_t)=\vec e_x$, $A_x(\vec e_x)=-e_t$, $A_x(\vec e_y)=\vec e_z$, $A_x(\vec e_z)=-\vec e_y$, and the cyclic analogues. Those four values say what the operator does and are the whole of its content.
+
+**The form the operators preserve.** Put $\langle X,Y\rangle_{\natural}:=\operatorname{Sc}(XY^{\natural})$, the positive definite real form of the algebra. Then
 
 $$
-L_x=\begin{pmatrix}0&-1&0&0\\1&0&0&0\\0&0&0&-1\\0&0&1&0\end{pmatrix},\qquad
-L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
-L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix}.
+\langle \tilde qX,\tilde qY\rangle_{\natural}=\operatorname{Sc}\bigl(\tilde qXY^{\natural}\tilde q^{\natural}\bigr)=\operatorname{Sc}\bigl(\tilde q^{\natural}\tilde q\,XY^{\natural}\bigr)=N(\tilde q)\,\langle X,Y\rangle_{\natural},
 $$
 
-Each is real, antisymmetric, and a signed permutation matrix, and each has zero diagonal. The entries are the structure constants of $\mathbb{H}$, hence integers.
+so a unit element acts by an isometry and $\rho_L$ lands in the orthogonal group $O(\mathbb{H})$; the determinant is $N(\tilde q)^{2}=1$ on the group, so it lands in $SO(\mathbb{H})$. This is the operator twin of orthogonality, and it is proved without an array.
 
 **The four properties.** Each is a one-line consequence of $\vec e_k^2=-e_t$ and $\vec e_x\vec e_y=\vec e_z$.
 
-1. $L_k\in M_4(\mathbb{R})$ and $L_k^{\mathsf T}=-L_k$.
-2. $L_k^2=-\mathrm{I}_4$, because applying left multiplication by $\vec e_k$ twice is left multiplication by $\vec e_k^2=-e_t$.
-3. $[L_x,L_y]=2L_z$, and cyclically, because $L$ is multiplicative and $\vec e_x\vec e_y=2\vec e_z$ in the commutator.
-4. No $L_k$ is diagonal, and this is not an accident of the display: a real diagonal antisymmetric matrix is zero.
+1. **Skew-adjoint.** $\langle A_kX,Y\rangle_{\natural}+\langle X,A_kY\rangle_{\natural}=\operatorname{Sc}\bigl((\vec e_k+\vec e_k^{\natural})XY^{\natural}\bigr)=0$, since $\vec e_k^{\natural}=-\vec e_k$. The operator is skew-adjoint, that is anti-Hermitian, for the form, and the statement involves no basis.
+2. **Square minus the identity.** $A_k^2=-\mathrm{id}$, because applying left multiplication by $\vec e_k$ twice is left multiplication by $\vec e_k^2=-e_t$.
+3. **The bracket.** $[A_x,A_y]=2A_z$, and cyclically, because $\rho_L$ is multiplicative and $\vec e_x\vec e_y-\vec e_y\vec e_x=2\vec e_z$.
+4. **No invariant line.** $A_k$ has no real eigenvalue, since $A_k^2=-\mathrm{id}$ and a real eigenvalue $\lambda$ would give $\lambda^2=-1$. So $A_k$ fixes no line and preserves no one-dimensional real subspace. This is a property of the operator and not of a display: no choice of basis can give a skew-adjoint square root of $-\mathrm{id}$ a real eigenvector.
 
 **The algebra and the group.** Define
 
 $$
-\mathfrak{g}_L:=\operatorname{span}_{\mathbb{R}}\{L_x,L_y,L_z\},\qquad
-\mathrm{Spin}(3)_L:=\exp(\mathfrak{g}_L)=\{\,L(\tilde q):\tilde q\in\mathrm{Spin}(3)\,\}\subset SO(4).
+\mathfrak{g}_L:=\operatorname{span}_{\mathbb{R}}\{A_x,A_y,A_z\}\subset\mathfrak{so}(\mathbb{H}),\qquad
+\mathrm{Spin}(3)_L:=\exp(\mathfrak{g}_L)=\{\,\rho_L(\tilde q):\tilde q\in\mathrm{Spin}(3)\,\}\subset SO(\mathbb{H}).
 $$
 
-The algebra has real dimension three, the group has real dimension three, and $L$ is an isomorphism of Lie groups onto its image. The image is one of the two isoclinic copies of $S^3$ in the six-dimensional $SO(4)$.
+The algebra has real dimension three, and it is a Lie algebra because the bracket closes on it. The group is its image under the exponential, of real dimension three, and $\rho_L$ is an isomorphism of Lie groups onto it. The image is one of the two isoclinic copies of $S^3$ in the six-dimensional $SO(\mathbb{H})$: for a unit $\vec u$, the operator $A(\vec u)$ rotates the plane $\operatorname{span}_{\mathbb{R}}\{e_t,\vec u\}$ and the plane $\vec u^{\perp}$ by the same angle, which is checked directly from $\vec ue_t=\vec u$ and from $\vec u\vec v=\vec u\times\vec v$ for $\vec v\perp\vec u$.
 
-**The exponential in closed form.** For a unit imaginary quaternion $\vec u$ and real $\theta$, the matrix $U=n_xL_x+n_yL_y+n_zL_z$ satisfies $U^2=-\mathrm{I}_4$, so
+**The exponential in closed form.** For a unit imaginary quaternion $\vec u$ and real $\theta$, the operator $A(\vec u)=n_xA_x+n_yA_y+n_zA_z$ satisfies $A(\vec u)^2=-\mathrm{id}$, so the series collapses,
 
 $$
-\exp(\theta U)=\cos\theta\,\mathrm{I}_4+\sin\theta\,U=L\bigl(\cos\theta\,e_t+\sin\theta\,\vec u\bigr).
+\exp\bigl(\theta A(\vec u)\bigr)=\cos\theta\,\mathrm{id}+\sin\theta\,A(\vec u)=\rho_L\bigl(\cos\theta\,e_t+\sin\theta\,\vec u\bigr).
 $$
 
-The exponential is surjective onto the group and is not injective: the spheres of radius $2\pi k$ in $\mathfrak{g}_L$ go to $\mathrm{I}_4$, and the sphere of radius $\pi$ goes to $-\mathrm{I}_4$. The sign of a rotor is visible in the matrix, $L(-\tilde q)=-L(\tilde q)$, and the trace separates the two, $\operatorname{tr}L(\tilde q)=4q_t$.
+The exponential is surjective onto the group and is not injective: the spheres of radius $2\pi k$ in $\mathfrak{g}_L$ go to the identity, and the sphere of radius $\pi$ goes to $-\mathrm{id}$. The sign of a rotor is carried by the operator, $\rho_L(-\tilde q)=-\rho_L(\tilde q)$, and the trace separates the two, $\operatorname{tr}\rho_L(\tilde q)=4q_t$, the trace being that of a linear operator and hence basis-free. The determinant is $\det\rho_L(\tilde q)=N(\tilde q)^{2}=\lvert q\rvert^{4}$.
 
 ## The Casimir and the Number One Half
 
 **Step 1: normalize the generators.** The standard convention is $[J_i,J_j]=\varepsilon_{ijk}J_k$. The displayed bracket is twice that, so
 
 $$
-J_k:=\tfrac12L_k,\qquad [J_i,J_j]=\varepsilon_{ijk}J_k .
+J_k:=\tfrac12A_k,\qquad [J_i,J_j]=\varepsilon_{ijk}J_k .
 $$
 
 **Step 2: form the quadratic Casimir.** Set
 
 $$
-\mathbf{J}^2:=J_x^2+J_y^2+J_z^2=\tfrac14\bigl(L_x^2+L_y^2+L_z^2\bigr).
+\mathbf{J}^2:=J_x^2+J_y^2+J_z^2=\tfrac14\bigl(A_x^2+A_y^2+A_z^2\bigr).
 $$
 
 The element is invariant: it commutes with each $J_k$, because $\sum_k[J_i,J_k^2]=0$ by antisymmetry of $\varepsilon$. So its value is the same on every vector of an irreducible carrier, and it is a scalar there.
 
-**Step 3: evaluate.** Since $L_k^2=-\mathrm{I}_4$, the sum of the three squares is $-3\mathrm{I}_4$, and
+**Step 3: evaluate.** Since $A_k^2=-\mathrm{id}$, the sum of the three squares is $-3\,\mathrm{id}$, and
 
 $$
-\mathbf{J}^2=-\tfrac34\,\mathrm{I}_4 .
+\mathbf{J}^2=-\tfrac34\,\mathrm{id} .
 $$
 
-The sign is the sign of the real normalization. The three $J_k$ are real antisymmetric, so they are anti-Hermitian, and the sum of their squares is negative definite.
+The sign is the sign of the real normalization. The three $J_k$ are skew-adjoint for the real form, so they are anti-Hermitian, and the sum of their squares is negative definite.
 
 **Step 4: read the number.** The spectral theorem for the compact group is stated with Hermitian generators, so pass to
 
 $$
-H_k:=iJ_k=\tfrac i2L_k .
+H_k:=iJ_k=\tfrac i2A_k .
 $$
 
-The three are Hermitian, since $L_k$ is real antisymmetric, and they obey the physicists' bracket,
+The three are Hermitian, since $A_k$ is skew-adjoint for the real form, and they obey the physicists' bracket,
 
 $$
 [H_i,H_j]=i\varepsilon_{ijk}H_k ,
@@ -199,7 +191,7 @@ $$
 and their Casimir is the negative of the previous one,
 
 $$
-\mathbf{H}^2=H_x^2+H_y^2+H_z^2=\tfrac34\,\mathrm{I}_4 .
+\mathbf{H}^2=H_x^2+H_y^2+H_z^2=\tfrac34\,\mathrm{id} .
 $$
 
 On an irreducible carrier $\mathbf{H}^2=s(s+1)$ times the identity, by the definition of the spin of the carrier. Therefore
@@ -210,17 +202,17 @@ $$
 
 since $s\ge0$, the other root being $-\tfrac32$.
 
-**The weights, as a second reading.** The eigenvalues of $H_z$ on $\mathbb{R}^4$ are $+\tfrac12$ twice and $-\tfrac12$ twice, so the weight set is $\{\pm\tfrac12\}$ and the carrier has complex dimension $2s+1=2$. The real dimension is $4$, twice the complex dimension, because the left-regular carrier is quaternionic: multiplication by $i$ is a real operator that commutes with the action and is not a scalar, so every complex dimension counts twice.
+**The weights, as a second reading.** The eigenvalues of $H_z$ on $\mathbb{H}$ are $+\tfrac12$ twice and $-\tfrac12$ twice, so the weight set is $\{\pm\tfrac12\}$ and the carrier has complex dimension $2s+1=2$. The real dimension is $4$, twice the complex dimension, because the left-regular carrier is quaternionic: multiplication by the central $i$ is a real operator that commutes with the action and is not a scalar, so every complex dimension counts twice.
 
-**Why the number is not read off a basis.** The three eigenvalues $\pm\tfrac12$ do not depend on the axis: the axis is a unit imaginary quaternion $\vec u$, the generator $U$ is conjugate to $L_z$ inside $\mathfrak{g}_L$, and conjugation preserves the spectrum. The spin is a property of the carrier, not of a direction, and no frame is chosen in the computation.
+**Why the number is not read off a basis.** The three eigenvalues $\pm\tfrac12$ do not depend on the axis: the axis is a unit imaginary quaternion $\vec u$, the generator $A(\vec u)$ is conjugate to $A_z$ inside $\mathfrak{g}_L$ by $\rho_L$ of a rotor carrying one axis to the other, and conjugation by an invertible operator preserves the spectrum. The spin is a property of the carrier, not of a direction, and no frame is chosen in the computation.
 
-**Why the eigenvalue is the whole story.** The carrier $\mathbb{R}^4$ is irreducible for the rotor action, as proved in *The Spin Group via 4×4 Real Matrices*. On an irreducible carrier the Casimir has one eigenvalue, so $\tfrac34$ is not an average over a spectrum but the spectrum. Had the carrier split, the sum of the squares would have had several eigenvalues and the spin would not be a single number.
+**Why the eigenvalue is the whole story.** The carrier $\mathbb{H}$ is irreducible for the rotor action, as proved in *The Left Regular Action of the Spin Group*. On an irreducible carrier the Casimir has one eigenvalue, so $\tfrac34$ is not an average over a spectrum but the spectrum. Had the carrier split, the sum of the squares would have had several eigenvalues and the spin would not be a single number.
 
-**The statement.** The left-regular representation on $\mathbb{R}^4$ carries spin $\tfrac12$. The three $L$-generators are the spin-$\tfrac12$ generators in real $4\times4$ form, and the number is read from $\sum_kL_k^2=-3\mathrm{I}_4$ with no complex number and no array.
+**The statement.** The left-regular representation on $\mathbb{H}$ carries spin $\tfrac12$. The three $A$-generators are the spin-$\tfrac12$ generators as operators on a real four-dimensional space, and the number is read from $\sum_kA_k^2=-3\,\mathrm{id}$ with no complex number and no array.
 
 ## Two Rotors: Spin Zero and Spin One
 
-**The composite.** Two rotors are two systems, each carrying spin $\tfrac12$ on its own spinor space $S$. The space $S$ is $\mathbb{R}^4$ read as a complex two-space through one of the complex structures of the previous article, and its two weight lines are the two weight spaces of $H_u$; the corpus's spinor plane is one of them, read over the reals. The composite carrier is the tensor square $S\otimes S$, of complex dimension four. The group acts by $g\cdot(x\otimes y)=gx\otimes gy$, and the generator of the axis $\vec u$ acts by
+**The composite.** Two rotors are two systems, each carrying spin $\tfrac12$ on its own spinor space $S$. The space $S$ is $\mathbb{H}$ read as a complex two-space through a complex structure of the previous section, the operator $J_u(X)=Xu$ for a unit imaginary $u$, and its two weight lines are the two weight spaces of $H_u$; the corpus's spinor plane is one of them, read over the reals. The composite carrier is the tensor square $S\otimes S$, of complex dimension four. The group acts by $g\cdot(x\otimes y)=gx\otimes gy$, and the generator of the axis $\vec u$ acts by
 
 $$
 A_{\mathrm{tot}}=A\otimes\mathrm{I}+\mathrm{I}\otimes A ,
@@ -295,34 +287,34 @@ that is $\{1,0,0,-1\}$, which is $\{0\}\cup\{\pm1,0\}$: one weight of the single
 
 The three values are $s(s+1)$ at $s=0,\tfrac12,1$. The same quadratic element gives all three, and the difference is the module, not the element.
 
-**The $L$-generators are tied to one carrier.** The three matrices $L_k$ act on $\mathbb{R}^4$ and nowhere else. They are the spin-$\tfrac12$ generators, and the number they return is $\tfrac12$. They do not return $\tfrac32$, and no change of basis in $\mathbb{R}^4$ will make them do so, because the carrier is irreducible and its spin is fixed by its dimension and its weights.
+**The $A$-generators are tied to one carrier.** The three operators $A_k$ act on $\mathbb{H}$ and nowhere else. They are the spin-$\tfrac12$ generators, and the number they return is $\tfrac12$. They do not return $\tfrac32$, and no change of basis in $\mathbb{H}$ will make them do so, because the carrier is irreducible and its spin is fixed by its dimension and its weights.
 
 **Other spins require other carriers.** To obtain spin $s$ the same procedure is applied on a carrier of complex dimension $2s+1$: form the Casimir of the representation, read its eigenvalue, solve $s(s+1)=\lambda$. The procedure is uniform; the input is the carrier. On the vector part the representation is the adjoint one, the Casimir value is $2$, and the spin is $1$.
 
 **The quadratic is not injective.** The value $\lambda=s(s+1)$ determines $s$ only up to $s\mapsto-1-s$. The value $\tfrac34$ is compatible with $s=\tfrac12$ and with $s=-\tfrac32$. The largest weight being non-negative, or the dimension being $2s+1$, fixes the choice. A computation that reads the Casimir alone and reports a spin has used one datum where two are needed.
 
-**The sign.** The value $-\tfrac34$ on the real antisymmetric generators and $+\tfrac34$ on the Hermitian ones differ by $i^2$, since $H_k=iJ_k$. Both are correct, and a reader who meets one in one article and the other in another has met one invariant in two normalizations. The magnitude $\tfrac34$ is what carries the spin.
+**The sign.** The value $-\tfrac34$ on the skew-adjoint generators and $+\tfrac34$ on the Hermitian ones differ by $i^2$, since $H_k=iJ_k$. Both are correct, and a reader who meets one in one article and the other in another has met one invariant in two normalizations. The magnitude $\tfrac34$ is what carries the spin.
 
-**What the sphere gives and what a matrix gives.** Everything above is a statement about the sphere $S^3$ and about one display of it on $\mathbb{R}^4$. A reader who takes the display for the group will conclude that the spin is a property of a $4\times4$ matrix. It is not: it is a property of the carrier, and the same sphere has other carriers with other spins.
+**What the sphere gives, and what an operator on one carrier gives.** Everything above is a statement about the sphere $S^3$ and about one action of it, the left regular action on $\mathbb{H}$. A reader who takes that action for the group will conclude that the spin is a property of an operator on a four-dimensional space. It is not: it is a property of the carrier, and the same sphere has other carriers with other spins.
 
 ## Corrections
 
 **The sentences that must not be written as they stand.** Each is a real error in the form given, and each is repaired by one of the sections above.
 
 1. **"The spin group is $SU(2)$", written as an equality of objects.** As an isomorphism the sentence is true, $\mathrm{Spin}(3)\cong SU(2)$; as an equality it is false. $SU(2)$ is the image of one display, the $2\times2$ complex one, and the isomorphism is that display.
-2. **"The spin group is a matrix group."** It is a subset of $\mathbb{H}$, which is an algebra. Every matrix group in this article is an image of it under a display.
+2. **"The spin group is a group of operators on a space."** It is a subset of $\mathbb{H}$, which is an algebra. Every group of operators in this article is an image of it under one action.
 3. **"$Spin(n)$ is $S^3$."** $Spin(3)$ is $S^3$. For $n\ge4$ the spin group is a cover of $SO(n)$ of dimension $\binom n2$, and it is not a sphere.
-4. **"The $L$-generators give all spins."** They give $\tfrac12$, on $\mathbb{R}^4$. Another spin needs another carrier, and the same Casimir read there.
+4. **"The $A$-generators give all spins."** They give $\tfrac12$, on $\mathbb{H}$. Another spin needs another carrier, and the same Casimir read there.
 5. **"One-sided multiplication can act by an automorphism after a normalization."** It cannot, for an invertible element other than the unit; the count of factors forbids it.
 6. **"The two-sided operator is conjugation by the inverse for a rotor and something else for a boost, because a boost has $\tilde U_{\mathrm b}^{\natural}\ne\tilde U_{\mathrm b}^{-1}$."** The premise is false: a boost has norm one, so $\tilde U_{\mathrm b}^{\natural}=\tilde U_{\mathrm b}^{-1}$ and the $\natural$-operator is conjugation by the inverse for it as well. The genuine difference between the sectors is that the $*$-operator, which is the one that carries Hermitian elements to Hermitian elements, is not conjugation by the inverse on a boost, since $\tilde U_{\mathrm b}^{*}=\tilde U_{\mathrm b}\ne\tilde U_{\mathrm b}^{-1}$.
 7. **"The Casimir eigenvalue is the spin."** It is $s(s+1)$. The spin follows after the root is chosen, and the quadratic has two roots.
-8. **"The Casimir of the left-regular display is $+\tfrac34$."** It is $-\tfrac34$ for the real antisymmetric generators, and $+\tfrac34$ for the Hermitian ones $H_k=iJ_k$. Both are the same invariant in two normalizations.
+8. **"The Casimir of the left-regular action is $+\tfrac34$."** It is $-\tfrac34$ for the skew-adjoint generators, and $+\tfrac34$ for the Hermitian ones $H_k=iJ_k$. Both are the same invariant in two normalizations.
 9. **"Two rotors give spin $\tfrac12$ again, or spin $2$."** They give $0$ and $1$. The tensor square of a two-dimensional carrier has dimension four, and the two integer carriers exhaust it.
 10. **"The sign of a full turn is a property of the spin group."** It is a property of a carrier. It is $-1$ on the single spinor plane and $+1$ on both summands of the tensor square, and the group is the same in the three cases.
 
 ## Verification
 
-**How the numbers were obtained.** The two-sided identities were checked on random biquaternions with all sixteen real coefficients drawn independently, in double precision, and the algebraic ones were checked exactly with the structure constants of $\mathbb{H}$. The Casimir was formed from the three real matrices $L_k$ and from the Hermitian $H_k=iJ_k$, and the tensor square was built with the Leibniz generator $A\otimes\mathrm{I}+\mathrm{I}\otimes A$; the exponentials were computed from the series, not from the closed form.
+**How the numbers were obtained.** The two-sided identities were checked on random biquaternions with all sixteen real coefficients drawn independently, in double precision, and the algebraic ones were checked exactly with the structure constants of $\mathbb{H}$. The Casimir was formed from the three operators $A_k$ and from the Hermitian $H_k=iJ_k$, and the tensor square was built with the Leibniz generator $A\otimes\mathrm{id}+\mathrm{id}\otimes A$; the exponentials were computed from the series, not from the closed form.
 
 | claim | what was computed | residual |
 | --- | --- | --- |
@@ -338,19 +330,19 @@ The three values are $s(s+1)$ at $s=0,\tfrac12,1$. The same quadratic element gi
 | the $\natural$-operator is multiplicative at norm one | the same, with a rotor | $1.8\cdot10^{-15}$ |
 | the bracket of the halves | $[J_x,J_y]-J_z$ | $0$ |
 | the Hermitian bracket | $[H_x,H_y]-iH_z$ | $0$ |
-| the Casimir, real normalization | $\sum_kJ_k^2+\tfrac34\mathrm{I}_4$ | $0$ |
-| the Casimir, Hermitian normalization | $\sum_kH_k^2-\tfrac34\mathrm{I}_4$ | $0$ |
+| the Casimir, real normalization | $\sum_kJ_k^2+\tfrac34\,\mathrm{id}$ | $0$ |
+| the Casimir, Hermitian normalization | $\sum_kH_k^2-\tfrac34\,\mathrm{id}$ | $0$ |
 | the weights | eigenvalues of $H_z$ | $\pm\tfrac12$, each twice |
-| the tensor weights | eigenvalues of $H_z\otimes\mathrm{I}+\mathrm{I}\otimes H_z$ | $\{1,0,0,-1\}$ |
+| the tensor weights | eigenvalues of $H_z\otimes\mathrm{id}+\mathrm{id}\otimes H_z$ | $\{1,0,0,-1\}$ |
 | the tensor Casimir | eigenvalues of $\mathbf{H}^2_{\mathrm{tot}}$ | $0$ once, $2$ thrice |
 | the split | dimensions of the symmetric and antisymmetric parts | $3$ and $1$ |
 | the split is invariant | commutator of the swap with the Casimir | $0$ |
-| the full turn | $\exp(2\pi i\,\mathbf{H})$ on the tensor square | $+\mathrm{I}_4$ |
-| the full turn on one rotor | $\exp(2\pi i\,H_z)$ on the spinor plane | $-\mathrm{I}_2$ |
+| the full turn | $\exp(2\pi i\,\mathbf{H})$ on the tensor square | $+\mathrm{id}$ |
+| the full turn on one rotor | $\exp(2\pi i\,H_z)$ on the spinor plane | $-\mathrm{id}$ |
 
 **The two rows that carry the article.** The Casimir row is the extraction of the number: the sum of the three squares is a scalar, and the scalar is $\pm\tfrac34$. The tensor Casimir row is the split: two eigenvalues, $0$ and $2$, and no third, which is why the composite has exactly the two spins.
 
-**One check that is not numerical.** The irreducibility of $\mathbb{R}^4$ and the completeness of the list of carriers are exact statements and no sample can confirm them. They are proved elsewhere in the corpus, and the numbers above confirm only the instances computed.
+**One check that is not numerical.** The irreducibility of $\mathbb{H}$ and the completeness of the list of carriers are exact statements and no sample can confirm them. They are proved elsewhere in the corpus, and the numbers above confirm only the instances computed.
 
 ## Summary
 
@@ -358,13 +350,13 @@ The two-sided product is forced. A one-sided multiplication is multiplicative on
 
 In the biquaternion algebra two two-sided operators are available. The $\natural$-operator equals the norm times conjugation by the inverse, so it is an automorphism exactly on the norm-one surface, where it is conjugation by the inverse; the rotor sphere and the boost hyperboloid both lie on that surface. The $*$-operator always preserves the Hermitian adjoint and is conjugation by the inverse exactly on the unitary elements. On the rotor sphere the two operators coincide, because a real unit quaternion has $\tilde u^{*}=\tilde u^{\natural}=\tilde u^{-1}$; that coincidence is what makes a rotor the element whose two-sided action is unambiguous.
 
-The spin group is $S^3$, of real dimension three, and it is $Spin(3)$; for $n\ge4$ the spin group is a different object. The double cover $S^3\to SO(3)$ has kernel $\{\pm1\}$, a full turn upstairs is $-e_t$ downstairs the identity, and two turns upstairs are the identity. The Lie algebra is spanned by the three bivectors, which in the real left-regular display are the matrices $L_x,L_y,L_z$.
+The spin group is $S^3$, of real dimension three, and it is $Spin(3)$; for $n\ge4$ the spin group is a different object. The double cover $S^3\to SO(3)$ has kernel $\{\pm1\}$, a full turn upstairs is $-e_t$ downstairs the identity, and two turns upstairs are the identity. The Lie algebra is spanned by the three bivectors, which in the left-regular action are the operators $A_x,A_y,A_z$ of left multiplication by the three imaginary units.
 
-The Casimir of the halved generators is $\mathbf{J}^2=-\tfrac34\mathrm{I}_4$ in the real antisymmetric normalization and $\mathbf{H}^2=+\tfrac34\mathrm{I}_4$ in the Hermitian one. On the irreducible carrier $\mathbb{R}^4$ the Casimir is a scalar, $s(s+1)=\tfrac34$, and $s=\tfrac12$. The weights $\pm\tfrac12$ confirm it, and the dimension counts it twice because the carrier is quaternionic.
+The Casimir of the halved generators is $\mathbf{J}^2=-\tfrac34\,\mathrm{id}$ in the skew-adjoint normalization and $\mathbf{H}^2=+\tfrac34\,\mathrm{id}$ in the Hermitian one. On the irreducible carrier $\mathbb{H}$ the Casimir is a scalar, $s(s+1)=\tfrac34$, and $s=\tfrac12$. The weights $\pm\tfrac12$ confirm it, and the dimension counts it twice because the carrier is quaternionic.
 
 Two rotors give the tensor square, of dimension four, which splits by the swap into the antisymmetric part of dimension one and the symmetric part of dimension three. The Casimir takes the values $0$ and $2$ there, that is $s(s+1)$ at $s=0$ and $s=1$, and the full turn is $+1$ on both summands. The composite is therefore an action of the rotation group, and its two summands are the complexified fixed line and the complexified vector part.
 
-What the $L$-generators do not give is the rest of the spectrum. They act on one carrier, they return one spin, and the same Casimir read on other carriers returns the others.
+What the $A$-generators do not give is the rest of the spectrum. They act on one carrier, they return one spin, and the same Casimir read on other carriers returns the others.
 
 ## Summary of Notation
 
@@ -376,10 +368,10 @@ What the $L$-generators do not give is the rest of the spectrum. They act on one
 | $\langle\tilde Q\rangle_{\natural}$ | the value of the quaternion norm, $Q_t^2+Q_x^2+Q_y^2+Q_z^2$ |
 | $\Theta_{\natural}$, $\Theta_{*}$ | $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{\natural}$ and $\tilde X\mapsto\tilde Q\tilde X\tilde Q^{*}$ |
 | $\mathrm{Spin}(3)=S^3=Sp(1)$ | the spin group: unit quaternions |
-| $L(\tilde q)$, $L_x,L_y,L_z$ | the real left-regular matrix and its three generators |
-| $\mathfrak{g}_L$, $\mathrm{Spin}(3)_L$ | $\operatorname{span}_{\mathbb{R}}\{L_k\}$ and $\exp(\mathfrak{g}_L)\subset SO(4)$ |
-| $J_k=\tfrac12L_k$ | the normalized generators, $[J_i,J_j]=\varepsilon_{ijk}J_k$ |
-| $H_k=iJ_k=\tfrac i2L_k$ | the Hermitian generators, $[H_i,H_j]=i\varepsilon_{ijk}H_k$ |
+| $\rho_L(\tilde q)$, $A_x,A_y,A_z$ | the left regular action $X\mapsto\tilde qX$ and its three generators |
+| $\mathfrak{g}_L$, $\mathrm{Spin}(3)_L$ | $\operatorname{span}_{\mathbb{R}}\{A_k\}$ and $\exp(\mathfrak{g}_L)\subset SO(\mathbb{H})$ |
+| $J_k=\tfrac12A_k$ | the normalized generators, $[J_i,J_j]=\varepsilon_{ijk}J_k$ |
+| $H_k=iJ_k=\tfrac i2A_k$ | the Hermitian generators, $[H_i,H_j]=i\varepsilon_{ijk}H_k$ |
 | $\mathbf{H}^2$ | the quadratic Casimir $\sum_kH_k^2$, equal to $s(s+1)$ on an irreducible carrier |
 | $s$ | the spin of a carrier, read from the Casimir and the dimension |
 | $S$ | the spinor space of complex dimension two, carrying $s=\tfrac12$ |
@@ -387,7 +379,7 @@ What the $L$-generators do not give is the rest of the spectrum. They act on one
 
 ## Further Reading
 
-- [The Spin Group via 4×4 Real Matrices](the-spin-group-via-4x4-real-matrices.html), for the left-regular display, its generators, its exponential and the proof that no generator is diagonal.
+- [The Left Regular Action of the Spin Group](the-left-regular-action-of-the-spin-group.html), for the action $X\mapsto\tilde qX$, its generators, its exponential and the proof that no element of the algebra marks an axis.
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table, the quadratic element and the identity $2s+1=\dim_\mathbb{R}$.
 - [Quaternion Rotations and Reflections](quaternion-rotations-and-reflections.html), for the group of unit quaternions and the double cover $Sp(1)\to SO(3)$.
 - [The Two-Sided Operators and the Spin Group](the-two-sided-operators-and-the-spin-group.html), for the two-sided operators of the algebra and their relation to the spin group.
