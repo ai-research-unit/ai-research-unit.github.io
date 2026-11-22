@@ -381,7 +381,7 @@ Every number in this article, run again.
 
 ## Further Reading
 
-- [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: The Group, the Two Sides, and Why the Standard Model Does Not Gauge It](su2l-times-su2r-the-group-the-two-sides-and-why-the-standard-model-does-not-gauge-it.html). The two factors on their own: what the algebra builds, the two modules, the four roles, and why the Standard Model uses the group without gauging it.
+- [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group](su2l-times-su2r-two-sides-six-generators-one-group.html). The two factors on their own: what the algebra builds, the two modules, the four roles, and what the algebra does not supply.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The general principle this frame is an instance of.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html). The connection, the curvature and the Yang–Mills action for a group of this size.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The ceiling on the algebra's own compact structure, which *Where Each Factor Comes From* and *The Carrier Is a Copy* meet again.

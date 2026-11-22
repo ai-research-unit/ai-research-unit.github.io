@@ -130,7 +130,7 @@ The framework shares the Lie algebra of the electroweak pair, $\mathfrak{u}(2)=\
 
 ## Further Reading
 
-- [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: The Group, the Two Sides, and Why the Standard Model Does Not Gauge It](su2l-times-su2r-the-group-the-two-sides-and-why-the-standard-model-does-not-gauge-it.html). The doubled group rather than the pair: where the two factors sit in the algebra, the two modules they can act on, and why only one of the four roles is gauged.
+- [$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group](su2l-times-su2r-two-sides-six-generators-one-group.html). The doubled group rather than the pair: where the two factors sit in the algebra, the two modules they can act on, and the four roles, of which only one is gauged.
 - [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html) — the audit of the whole model, of which this article is the electroweak part.
 - [Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) — the sector's own boundary: the chiral obstacle, hypercharge, the scalar sector, gauge fixing.
 - [The Gauge Extension of the Central Phase: The Centre Bounds the Gauge Group](the-gauge-extension-of-the-central-phase-the-centre-bounds-the-gauge-group.html) — the quotient, the kernel lattice, and the no-go that caps the group.

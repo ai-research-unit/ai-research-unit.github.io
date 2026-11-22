@@ -18,11 +18,11 @@ The article sorts every item into one of three categories, and the distinction c
 2. **Obstacle with a known route.** The object does not exist, but the route to it is identifiable, usually because standard field theory or a finite algebraic check supplies the computation and the framework must reproduce it on its own carrier.
 3. **Obstacle with no route yet.** No mechanism has been proposed, and naming an object is not the same as having a route to it. Colour, weak isospin, hypercharge, and the scalar sector are in this class.
 
-The spine of the article is the three gauge factors. Each is stated with its source and its status: $\mathrm{U}(1)$ from the abelian gauge principle; $\mathrm{SU}(2)$ from the material-sector decomposition; $SU(3)$ from nothing. The matter and scalar sectors are treated next: the chiral-fermion issue is open, hypercharge is underived, and the scalar and symmetry-breaking sector is unbuilt.
+The spine of the article is the three gauge factors. Each is stated with its source and its status: $\mathrm{U}(1)$ from the abelian gauge principle; $\mathrm{SU}(2)$ from the material-sector decomposition; $SU(3)$ from nothing. The pair of which the observed group is a broken phase is treated next, so that the comparison is stated once and not assumed elsewhere. The matter and scalar sectors follow: the chiral-fermion issue is open, hypercharge is underived, and the scalar and symmetry-breaking sector is unbuilt.
 
 Three temptations are refused. (a) The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, whose commutator algebra contains $\mathrm{SU}(2)$, is not a derivation of $SU(2)_L$: weak isospin is a chiral structure, and the chirality problem must be resolved first. (b) The factors are not assembled into a product group and called the Standard Model's gauge group, because no hypercharge assignment is derived and one of the three factors is absent altogether. (c) Where the article counts what the framework supplies, it counts framework objects and not Standard Model parameters. Each refusal is argued where it arises.
 
-The Standard Model is the low-energy phase of $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, which the frame article builds on a formal copy of the carrier. The ceiling below is a statement about what the algebra's own action carries, and the larger group does not remove it.
+The Standard Model is the low-energy phase of $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, which [the frame article](the-fourth-colour-left-right-model.html) builds on a formal copy of the carrier and whose weak pair [the group article](su2l-times-su2r-two-sides-six-generators-one-group.html) builds at the element level. The ceiling below is a statement about what the algebra's own action carries, and the larger group does not remove it.
 
 **The scope of the finding.** The group whose generators are elements of $\mathbb B$ is $\mathrm{U}(2)$, and none of the Standard Model's four structures is derived there. That is not the test the frame article applies. Its test asks two things: whether a generator lives in $\operatorname{End}_{\mathbb C}(\mathbb B)$, and which module its group acts on. $G_{4LR}$ passes both, acting on a formal copy of the carrier; the test is stated in the frame article, §*Where Each Factor Comes From, and How Firmly*. Both statements therefore hold: the algebra's own action stops at $\mathrm{U}(2)$, and the frame admits $G_{4LR}$, because the Standard Model is what $G_{4LR}$ breaks to and the address belongs to $G_{4LR}$ rather than to the broken group.
 
@@ -209,6 +209,79 @@ What the framework's compact algebra actually is, as a Lie algebra, is $\mathrm{
 
 The electroweak part is developed on its own in *The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock*, which carries the group-level distinction, the parity lock read on representations, the check of the observed hypercharge table against it, and the pair's own table of items. This article keeps the one-line statement and does not restate the argument. The gap, in one line, is this: the framework reaches the Lie algebra of the electroweak pair as a direct sum of a vector-like abelian factor and a vector-like $\mathrm{SU}(2)$, and it does not reach the pair as a theory.
 
+### Why the Standard Model Gauges One Side and Not Two
+
+**The group is available, and the question is why only half of it is used.** The pair $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ sits in the endomorphisms of $\mathbb{B}$ at the element level and at no cost, as $L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4)$; [The Group, the Two Sides, and Six Generators](su2l-times-su2r-two-sides-six-generators-one-group.html) §2 builds it there and §4 lists the four roles it plays in physics. **The statement this section makes is not a framework derivation**: the pair is itself framed on a formal copy of the carrier, so nothing here derives the observed group. What it does is locate the observed group inside the larger one, and state what the larger one costs.
+
+**The first reason is the charged current.** Reinstating parity would require a right-handed charged current of the same size as the observed one, and it is not there. The measured parity violation is maximal and not partial, so the two factors cannot be even approximately symmetric at the electroweak scale. This is the reason that is quoted, and it is the weakest of the four, because it is a statement about the vacuum rather than about the group.
+
+**The second is the right-handed neutrino.** For the right-handed electron to be a doublet it needs a partner, and the only candidate is a right-handed neutrino. That state is not required by the observed spectrum and has never been seen as a gauge state; it is allowed, and its mass is bounded from above only by cosmology. So the group costs a particle the low-energy content does not need.
+
+**The third is structural, and it is the sharpest: the group forces the sixteen.** Electric charge in the frame is
+
+$$
+Q=T_{3L}+T_{3R}+\tfrac12(B-L),
+$$
+
+so $B-L$ must itself be a gauge symmetry, because $Q$ is a combination of gauge generators. And the abelian factor is anomaly-free exactly when the right-handed neutrino is included, since the two conditions
+
+$$
+\textstyle\sum(B-L)=0,\qquad \sum(B-L)^{3}=0
+$$
+
+hold on the sixteen and fail on the fifteen. The chain is then a sequence of implications rather than a choice:
+
+$$
+\text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \nu_R\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
+$$
+
+**A theory with half the group is free to be odd, and the observed one is odd.** The arithmetic is in [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html), and the count is in the content section below.
+
+**The fourth reason is that the factor is broken, not absent, and hypercharge is its remnant.** The neutral generator of the broken factor survives as a circle and mixes with $B-L$:
+
+$$
+Y=T_{3R}+\tfrac12(B-L).
+$$
+
+**The check is exact, and it is the reason hypercharge is not an independent invention in this frame:**
+
+| field | $T_{3L}$ | $T_{3R}$ | $B-L$ | $Y=T_{3R}+\tfrac12(B-L)$ | $Q=T_{3L}+Y$ |
+|---|---|---|---|---|---|
+| $\nu_L$ | $+\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $0$ |
+| $e_L$ | $-\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $-1$ |
+| $\nu_R$ | $0$ | $+\tfrac12$ | $-1$ | $0$ | $0$ |
+| $e_R$ | $0$ | $-\tfrac12$ | $-1$ | $-1$ | $-1$ |
+| $u_L$ | $+\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac16$ | $+\tfrac23$ |
+| $d_L$ | $-\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac16$ | $-\tfrac13$ |
+| $u_R$ | $0$ | $+\tfrac12$ | $+\tfrac13$ | $+\tfrac23$ | $+\tfrac23$ |
+| $d_R$ | $0$ | $-\tfrac12$ | $+\tfrac13$ | $-\tfrac13$ | $-\tfrac13$ |
+
+**Two readings of that table, and the second is the one worth keeping.** The first is bookkeeping: the hypercharges come out right, so the relation is true. **The second is structural: the charge formula is parity-symmetric.** The two Cartans enter $Q$ on the same footing, and $Y$ is by definition the piece beyond $T_{3L}$, so substituting $T_{3R}$ for $T_{3L}$ throughout returns the same formula with the same charges. **The observed theory therefore does not violate parity by its charges; it violates it by its multiplet assignment** — a doublet here, a singlet there, and the right-handed neutrino omitted. **Parity is broken by the choice of module and not by the choice of numbers**, which is why the framework's hypercharge item is filed as underived rather than as contradicted: the assignment is the missing object, and the arithmetic above does not supply it.
+
+**The chiral wall closes the argument, and this is where it differs from the reasons above.** From the group article §3: non-abelian chiral one-sided multiplication does not exist. The observed $SU(2)_L$ couples only to left-handed fields, so it is chiral non-abelian, so the algebra cannot supply it as a one-sided action. **That is the ceiling of this article restated at the pair**, and it is the reason the parity question cannot be settled by choosing a bigger group: the missing object is the tie between an operator side and a spinor letter, not a generator.
+
+**The chain, written once.**
+
+$$
+\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}
+\ \xrightarrow{\ \langle\Delta_R\rangle\ }\
+\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_{Y}
+\ \xrightarrow{\ \langle\Phi\rangle\ }\
+\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}} .
+$$
+
+**The middle term is the observed group, and this is the exact sense in which it is a phase.** It is not a theory that declined the pair; it is the low-energy description of a theory that broke one factor of it, and hypercharge is the left-over. **The scale of that breaking is bounded from below only**, so nothing forbids the pair and nothing requires it — which is why the fourth role of the group article is a hypothesis and not a fact, and why this article's ceiling survives the framing: a larger group does not build the objects the ceiling counts.
+
+**What this section adds to the audit's checks.**
+
+| claim | check | result |
+|---|---|---|
+| hypercharge | the eight rows against $Y=T_{3R}+\tfrac12(B-L)$ | all eight exact |
+| the parity reading | substitute $T_{3R}$ for $T_{3L}$ in $Q$ | the same formula, the same charges |
+| the sixteen | the two $B-L$ anomaly sums | $0$ and $0$ on sixteen, not on fifteen |
+
+**What the section does not claim.** That the framework derives the pair, the breaking, or the hypercharge table. The pair is imported on a formal copy of the carrier; the breaking is a scalar sector this article files as unbuilt; and the assignment is put in by hand. **The section's content is the comparison between two imported frames, and its only framework statement is the negative one: the algebra supplies the group and does not supply the module.**
+
 ## The Matter Sector: Chirality, Hypercharge, Content
 
 ### The chiral-fermion issue
@@ -221,7 +294,7 @@ Not established: a chiral gauge group. The framework's canonical gauge group is 
 
 ### Hypercharge is underived
 
-The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific assignment table and a chiral action, and it is the ingredient that makes the electric charge $Ϙ = T_3 + Y$ and cancels the gauge and gravitational anomalies. The framework has a $\mathrm{U}(1)$ — the $*$-unitary centre — but the assignment table is not derivable from it, and no source in the series supplies one. The only abelian charge the framework possesses is a single parameter $ϙ$, the same for every element; the gauge principle supplies no second abelian direction, no non-central abelian action is available to it, and there is no anomaly computation from which an assignment could be inferred. **No route yet.**
+The Standard Model's hypercharge is a specific $\mathrm{U}(1)$ with a specific assignment table and a chiral action, and it is the ingredient that makes the electric charge $Ϙ = T_3 + Y$ and cancels the gauge and gravitational anomalies. The framework has a $\mathrm{U}(1)$ — the $*$-unitary centre — but the assignment table is not derivable from it, and no source in the series supplies one. The only abelian charge the framework possesses is a single parameter $ϙ$, the same for every element; the gauge principle supplies no second abelian direction, no non-central abelian action is available to it, and there is no anomaly computation from which an assignment could be inferred. **No route yet.** The eight-row check of §*Why the Standard Model Gauges One Side and Not Two* does not change this: it is a consistency check inside an imported frame, and it begins from $B-L$ eigenvalues the frame assigns by hand.
 
 ### The content is not selected — and what the framework supplies, counted
 
@@ -327,6 +400,7 @@ What is not established is everything Standard-Model-specific.
 - **$SU(2)$.** The compact algebra and its gauge machinery exist, but the factor acts vector-like, so it is not $SU(2)_L$; weak isospin is chiral and the chirality problem is unresolved. The isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, whose commutator algebra contains $\mathrm{SU}(2)$, is a coincidence of algebra, not a derivation of weak isospin. **No route yet.**
 - **$SU(3)$.** Nothing derives a colour group or a three-valued internal structure; the dimension ceiling and the module-dimension parity forbid both on the present construction. **No route yet.**
 - **The product.** The framework's compact algebra $\mathrm{U}(2)$ is locally the electroweak direct sum $\mathrm{SU}(2)\oplus\mathrm{U}(1)$, but the abelian factor is vector-like, no hypercharge assignment is derived, and the relative coupling and mixing angle are unconstrained. The factors are present as a direct sum; the electroweak theory is not. The group-level statement — the quotient against the product, the parity lock, and the check of the observed hypercharge table — is *The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock*.
+- **The pair.** $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ is available at the element level and the observed group is its broken phase, with hypercharge as the survivor and the sixteen forced by the anomaly conditions. That chain is a comparison between two imported frames; it derives neither the group nor the assignment, and the charge formula being parity-symmetric is a statement about the numbers and not about the multiplets.
 - **The matter sector.** The chirality kinematics are exact; the chiral gauge group is absent, the hypercharge is underived, and the representation content and generation number are not selected. **No route yet.**
 - **The scalar sector.** Unbuilt. The mass selection rule names what a compensating scalar would have to carry, and the framework supplies no scalar field with the required quantum numbers, and no corresponding potential, expectation value, or Yukawa coupling. **No route yet.**
 
@@ -367,12 +441,14 @@ No section assumes a Standard Model structure. The three gauge factors are each 
 | **Standard-model notation, not framework objects** | |
 | $SU(3)_c$, $SU(2)_L$, $\mathrm{U}(1)_Y$ | Colour, weak-isospin and hypercharge groups — no route yet |
 | $T_3$, $Y$, $Ϙ=T_3+Y$ | Weak isospin, hypercharge, electric charge — underived |
+| $T_{3L}, T_{3R}$, $B-L$ | The two weak Cartans and the fourth-colour diagonal, written out where the pair's hypercharge relation is checked |
 | $\theta_W$ | Electroweak mixing angle — no relation supplied |
 | Higgs doublet, vacuum expectation value, Yukawa coupling | Scalar and symmetry-breaking sector — unbuilt |
 
 ## Further Reading
 
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html#why-the-pauli-and-the-gamma-displays-are-refused), for the reasons the AXF matrices replace the Pauli and gamma matrices.
+- [The Group, the Two Sides, and Six Generators](su2l-times-su2r-two-sides-six-generators-one-group.html) — $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ built at the element level, its two modules, and the four roles it plays; §*Why the Standard Model Gauges One Side and Not Two* above is where this audit uses it.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html) — the electroweak part of this audit developed on its own: the algebra shared and the group not shared, the parity lock on the representations, the hypercharge table checked against it, and the pair's table of items.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html) — the abelian gauge principle, the centre and its $*$-unitary part, the connection, the covariant derivative, and the origin of the $\mathrm{U}(1)$ factor this article follows.
 - [Non-Abelian Gauge Fields in Biquaternionic Form](non-abelian-gauge-fields-in-biquaternionic-form.html) — the immediate parent; the decomposition $\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2)$, the adjoint connection and curvature, the Bianchi identity, the gauge-invariant density, and the open reality-class gap.

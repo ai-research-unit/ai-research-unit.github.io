@@ -1,28 +1,30 @@
-# __$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: The Group, the Two Sides, and Why the Standard Model Does Not Gauge It__
+# __$\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$: Two Sides, Six Generators, One Group__
 
 ## Introduction
 
-**The question.** The frame's gauge group carries two $\mathrm{SU}(2)$ factors, one on each side. Where does a doubled $\mathrm{SU}(2)$ come from in this algebra, and why does the Standard Model, which has the same algebra available, gauge only half of it?
+**The question.** The frame's gauge group carries two $\mathrm{SU}(2)$ factors, one on each side. Where does a doubled $\mathrm{SU}(2)$ come from in this algebra, and what does it act on?
 
 **The answer in three lines.**
 
 $$
 \boxed{\;
-L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4),\quad \dim=3+3=6,
+L(\mathfrak{k})\oplus R(\mathfrak{k})=\mathfrak{so}(4),\quad \dim=3+3=6,\quad \operatorname{rank}=2,
 \qquad
-Y=T_{3R}+\tfrac12(B-L),\quad Q=T_{3L}+Y .
+\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R=\mathrm{Spin}(4)
 \;}
 $$
 
-**The group is the algebra's own product, at the element level, for free**, as the two one-sided families of the vector part. **The Standard Model uses it twice as a global symmetry** — the chiral symmetry of the strong sector and the custodial symmetry of the scalar sector — **and uses its broken remnant as hypercharge.** What it does not do is gauge it unbroken. So the honest answer to the title's question is not that the Standard Model declines the group. It is that the Standard Model is the phase in which the right-handed factor is broken.
+**The group is the algebra's own product, at the element level, for free**, as the two one-sided families of the vector part. **Its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$**, and the sign of one bracket is what distinguishes them. **And the same group acts on two different modules**, spacetime and internal, of which only the second is a gauge factor.
 
-**What this article claims.** That the group is present in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ without an operator layer; that its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$, distinguished by the sign of one bracket; that the same group acts on two different modules, spacetime and internal, and that only the second is a gauge factor; that three of its four roles in physics are already realised; and that the fourth is excluded at low energy by the module and not by the algebra.
+**What this article claims.** That the group is present in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ without an operator layer; that its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$, distinguished by the sign of one bracket; that the same group acts on two different modules, spacetime and internal, and that only the second is a gauge factor; that three of its four roles in physics are already realised; and that whether the fourth is realised is a question about the module and not about the algebra.
 
-**What this article does not claim.** That the algebra supplies a chiral gauge theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the *chiral wall*, stated in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and restated for the frame in [The Fourth-Colour Left–Right Model](the-fourth-colour-left-right-model.html); §3 and §5.5 quote it and do not re-derive it. **Nor does this article state any coupling value**; where the two factors' strengths would enter, it names the structure and stops.
+**What this article does not claim.** That the algebra supplies a chiral gauge theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the *chiral wall*, stated in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and restated for the frame in [The Fourth-Colour Left–Right Model](the-fourth-colour-left-right-model.html); §3 and §6 quote it and do not re-derive it. **Nor does this article state any coupling value**; where the two factors' strengths would enter, it names the structure and stops.
+
+**Where the other question is answered.** Why the low-energy gauge group has one weak factor and not two is a question about hypercharge, about the multiplet assignment and about a breaking, and it is the Standard Model's chapter: [The Standard Model as the Low-Energy Phase](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html), §*Why the Standard Model Gauges One Side and Not Two*. **This article keeps the group; that section keeps the comparison.**
 
 **One word, five jobs.** *Left* and *right* name, in this corpus, the slot an operator acts on, the label of an element, the helicity of a field, the multiplication side in a product, and — in $\mathrm{SU}(2)_L$ — a gauge factor. **Five meanings of two words is how this subject goes wrong**, so this article says *side* for the multiplication, *letter* for the chirality slot, and *factor* for the gauge group.
 
-**The order.** §1 fixes the group as an abstract object. §2 finds it in the algebra and separates its two halves. §3 separates the two modules the group can act on, which is the technical heart. §4 lists the four roles it plays in physics. §5 answers the question in the title. §6 is the cost. §7 is what would settle it.
+**The order.** §1 fixes the group as an abstract object. §2 finds it in the algebra and separates its two halves. §3 separates the two modules the group can act on, which is the technical heart. §4 lists the four roles it plays in physics. §5 is the cost, §6 is what would settle it, §7 is the checks and §8 the distinctions.
 
 ## 1. The Group
 
@@ -168,11 +170,11 @@ $$
 
 **The third row decides everything.** One-sided multiplication acts on both letters alike, because $L_{\tilde Q}$ carries no information about which letter of its argument it multiplies. **The general statement is the chiral wall**: among one-sided multiplications, those that respect a chirality split commute with the chirality operator, and that centraliser is abelian. **Abelian and chiral is available, at the centre; non-abelian and vector-like is available, at $L(\mathfrak{k})$ and $R(\mathfrak{k})$; non-abelian and chiral is not available** without a two-sided structure whose sides are tied to the letters.
 
-**And that is what a left–right model asks for.** One non-abelian factor per chirality requires the two-sided structure and the tie *side* $\leftrightarrow$ *letter*. **The corpus has the two sides and has the two letters and does not exhibit the map.** So the frame's chirality is put in by the assignment of multiplets — a declaration — and not by the algebra. §5.5 returns to this once.
+**And that is what a left–right model asks for.** One non-abelian factor per chirality requires the two-sided structure and the tie *side* $\leftrightarrow$ *letter*. **The corpus has the two sides and has the two letters and does not exhibit the map.** So the frame's chirality is put in by the assignment of multiplets — a declaration — and not by the algebra. §6 returns to this once.
 
 ## 4. Four Roles in Physics
 
-**The same group, four statuses.** Keeping them apart is what makes §5 answerable.
+**The same group, four statuses.** Keeping them apart is what makes the fourth row answerable.
 
 | role | group | status in nature | broken by | what survives |
 |---|---|---|---|---|
@@ -193,74 +195,11 @@ $$
 
 The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g_L\tilde Qg_R^{*}$, a central vacuum is diagonal-invariant, and the two mass matrices come out proportional. The detail is in [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html).
 
-**Role four, the gauge symmetry.** The only role not realised: the two sides promoted to local symmetries with their own gauge fields. **Nothing in the data requires it, and nothing excludes it above its breaking scale.**
+**Role four, the gauge symmetry.** The only role not realised: the two sides promoted to local symmetries with their own gauge fields. **Nothing in the data requires it, and nothing excludes it above its breaking scale.** Why the observed theory stops at one factor is a question about hypercharge and the multiplet assignment, and it is answered in [The Standard Model as the Low-Energy Phase](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html), §*Why the Standard Model Gauges One Side and Not Two*.
 
-**The lesson of the table.** "The Standard Model does not use this group" is false as stated. **It uses it as an exact global symmetry of the strong sector, as an approximate global symmetry of the scalar sector, and as the source of hypercharge.** What it does not do is gauge it unbroken.
+**The lesson of the table.** The group is not an unused object. **Three of the four roles are realised: an exact global symmetry of the strong sector, an approximate one in the scalar sector, and the rotation group of the carrier.** The fourth is the only one nature does not exhibit at low energy, and the reason belongs to the Standard Model's chapter rather than to this one. **What the table settles here is narrower and enough: the group is native, and only its use is a choice.**
 
-## 5. Why the Standard Model Does Not Gauge It
-
-**Five reasons, and the last one is structural.**
-
-**5.1 The charged current is purely $V-A$.** Reinstating parity would require a right-handed charged current of the same size as the observed one, and it is not there. **The measured parity violation is maximal and not partial**, so the two factors cannot be approximately symmetric at the electroweak scale.
-
-**5.2 The right-handed neutrino.** For the right-handed electron to be a doublet it needs a partner, and the only candidate is a right-handed neutrino. **That state is not required by the Standard Model and has never been seen as a gauge state**; it is allowed, and its mass is bounded from above only by cosmology. So the group costs a particle the model does not need.
-
-**5.3 The group forces the sixteen.** This is the sharpest reason, and it is a chain rather than a choice. Charge in the frame is
-
-$$
-Q=T_{3L}+T_{3R}+\tfrac12(B-L),
-$$
-
-so $B-L$ must itself be a gauge symmetry, because $Q$ is a combination of gauge generators. **And the abelian factor is anomaly-free exactly when the right-handed neutrino is included**, since the two conditions
-
-$$
-\textstyle\sum(B-L)=0,\qquad \sum(B-L)^{3}=0
-$$
-
-hold on the sixteen and fail on the fifteen. So
-
-$$
-\text{gauge }\mathrm{SU}(2)_R\ \Longrightarrow\ \text{gauge }B-L\ \Longrightarrow\ \nu_R\ \text{required}\ \Longrightarrow\ \text{matter is sixteen}.
-$$
-
-**The group demands the even multiplet.** A theory with half the group is free to be odd, and the Standard Model is odd. The arithmetic is in [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html).
-
-**5.4 It is broken, not absent, and hypercharge is the remnant.** The neutral generator of the broken factor survives as a global circle, and it mixes with $B-L$:
-
-$$
-Y=T_{3R}+\tfrac12(B-L).
-$$
-
-**The check is exact**, and it is the reason hypercharge is not an independent invention:
-
-| field | $T_{3L}$ | $T_{3R}$ | $B-L$ | $Y=T_{3R}+\tfrac12(B-L)$ | $Q=T_{3L}+Y$ |
-|---|---|---|---|---|---|
-| $\nu_L$ | $+\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $0$ |
-| $e_L$ | $-\tfrac12$ | $0$ | $-1$ | $-\tfrac12$ | $-1$ |
-| $\nu_R$ | $0$ | $+\tfrac12$ | $-1$ | $0$ | $0$ |
-| $e_R$ | $0$ | $-\tfrac12$ | $-1$ | $-1$ | $-1$ |
-| $u_L$ | $+\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac16$ | $+\tfrac23$ |
-| $d_L$ | $-\tfrac12$ | $0$ | $+\tfrac13$ | $+\tfrac16$ | $-\tfrac13$ |
-| $u_R$ | $0$ | $+\tfrac12$ | $+\tfrac13$ | $+\tfrac23$ | $+\tfrac23$ |
-| $d_R$ | $0$ | $-\tfrac12$ | $+\tfrac13$ | $-\tfrac13$ | $-\tfrac13$ |
-
-**Two readings of that table, and the second is the interesting one.** The first is bookkeeping: the hypercharges come out right, so the relation is true. **The second is structural: the charge formula is parity-symmetric.** The two Cartans enter $Q$ on the same footing, and $Y$ is by definition the piece beyond $T_{3L}$, so substituting $T_{3R}$ for $T_{3L}$ throughout returns the same formula with the same charges. **So the Standard Model does not violate parity by its charges; it violates it by its multiplet assignment** — a doublet here, a singlet there, and the right-handed neutrino omitted. **Parity is broken by the choice of module and not by the choice of numbers**, which is the precise sense in which the frame "restores" it: the module changes and the arithmetic does not.
-
-**5.5 The chiral wall.** From §3: chiral non-abelian one-sided multiplication does not exist. **The Standard Model's $\mathrm{SU}(2)_L$ couples only to left-handed fields, so it is chiral non-abelian, so the algebra cannot supply it as a one-sided action.** The corpus's $L(\mathfrak{k})$ is vector-like and therefore is not weak isospin; weak isospin is the corpus's $\mathrm{SU}(2)$ plus a chirality projection, and the projection is the missing object. **Note what this does not say.** It does not say $\mathrm{SU}(2)_L$ is illegitimate because its generators are absent — the group $\mathrm{SU}(2)$ is licensed twice over, as $L(\mathfrak{k})$ and as $R(\mathfrak{k})$. **The failure is on the module and not on the group**, which is the distinction the wall exists to make.
-
-**The chain, written once.**
-
-$$
-\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}
-\ \xrightarrow{\ \langle\Delta_R\rangle\ }\
-\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_{Y}
-\ \xrightarrow{\ \langle\Phi\rangle\ }\
-\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}} .
-$$
-
-**The middle term is the Standard Model.** It is not a theory that declined the group; it is the low-energy description of a theory that broke one factor of it, and hypercharge is the left-over. **The scale of that breaking is bounded from below only**, so nothing forbids the group and nothing requires it — which is exactly why the fourth role is a hypothesis and not a fact.
-
-## 6. What the Group Costs
+## 5. What the Group Costs
 
 **The claim, in one line.** The algebra's alphabet is $\mathrm{SU}(2)$ and a circle, and a factor that is a copy of the alphabet costs nothing.
 
@@ -279,15 +218,15 @@ $$
 
 **Why the doubling is not an accident of naming.** The two factors are not two copies chosen for convenience. **One is the self-dual half of a four-dimensional rotation and the other is the anti-self-dual half**, and the carrier's dimension is four, so the split is canonical. A reader who wants one structural fact from this article should take that one.
 
-## 7. What Would Settle It
+## 6. What Would Settle It
 
 **The observations, in order of directness.** A resonance of the right-handed charged boson decaying to a lepton and a heavy neutral, which is the cleanest. **A right-handed charged current at low energy**, which would appear as a $V+A$ admixture in beta decay and in muon decay. **Neutrinoless double beta decay**, which needs the heavy Majorana neutral the group supplies. **And a measured departure from $\rho=1$**, which would break the custodial diagonal that role three relies on.
 
-**The corpus's missing object, and it is one object.** A **chiral carrier**: a map that ties the operator side to the spinor letter, so that one side acts on one letter and the other side on the other. **With it, the multiplet assignment becomes a construction instead of a declaration**, and the wall of §5.5 comes down. Without it the frame's chirality is put in by hand and is honest about it.
+**The corpus's missing object, and it is one object.** A **chiral carrier**: a map that ties the operator side to the spinor letter, so that one side acts on one letter and the other side on the other. **With it, the multiplet assignment becomes a construction instead of a declaration**, and the wall of §3 comes down. Without it the frame's chirality is put in by hand and is honest about it.
 
 **What the group does not need.** It needs no new algebra, no new layer, no exceptional structure and no octonion. **The group is present, of dimension six, at the element level, split into self-dual and anti-self-dual halves by an explicit computation, with the two factors commuting and each a copy of the algebra's own rotor group.** Everything else in this article is a consequence of that sentence or a refusal to go beyond it.
 
-## 8. The Checks
+## 7. The Checks
 
 | claim | check | result |
 |---|---|---|
@@ -303,15 +242,12 @@ $$
 | the tie | $g_R=g_L^{*}$ instead of $g_R=g_L$ | $\mathrm{SL}(2,\mathbb{C})$, hence the Lorentz group |
 | the modules | carrier against tensor factors | $8$ real against $16$ complex |
 | the chirality of one side | $L_{\tilde Q}$ on the two letters | the same action, so vector-like |
-| hypercharge | the eight rows against $Y=T_{3R}+\tfrac12(B-L)$ | all eight exact |
-| the parity reading | substitute $T_{3R}$ for $T_{3L}$ in $Q$ | the same formula, the same charges |
-| the sixteen | the two $B-L$ anomaly sums | $0$ and $0$ on sixteen, not on fifteen |
 | the cost | $\mathfrak{su}(3)$ against $\mathfrak{u}(2)$ | $8$ against $4$, so one layer |
 | the ceiling | $\mathfrak{so}(10)$ against $\mathfrak{u}(4)\oplus\mathfrak{u}(4)$ | $45$ against $32$ |
 
-**The rows that carry the article.** The identity $L\oplus R=\mathfrak{so}(4)$ is what makes the group free. The sign of the bracket is what makes the two factors mirror images rather than copies. The eight hypercharge rows are what make hypercharge a remnant rather than a postulate. **And the parity row is what separates the two readings of §5.4**: the numbers are symmetric and the multiplets are not.
+**The two rows that carry the article.** The identity $L\oplus R=\mathfrak{so}(4)$ is what makes the group free. The sign of the bracket is what makes the two factors mirror images rather than copies. **The remaining rows are checks on those two**: the mirror and the cover follow from the same computation, and the cost row is the dimension count.
 
-## 9. Distinctions That Are Easy to Lose
+## 8. Distinctions That Are Easy to Lose
 
 The group is not the pair's group. $\mathrm{SU}(2)\times\mathrm{SU}(2)$ is a product of two factors; the electroweak pair of the Standard Model, $\mathrm{SU}(2)\times\mathrm{U}(1)$, is a different group with a different quotient structure, and [The Electroweak Pair](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html) is where that difference is computed.
 
@@ -319,13 +255,13 @@ Native is not gauged. The group's presence at the element level is a fact about 
 
 Spacetime is not internal. The same group is $\mathrm{Spin}(4)_{E}$ on the carrier and an internal factor on the tensor factors, and the left–right model needs the second (§3).
 
-Parity is broken by the module and not by the charges. The charge formula is symmetric under $L\leftrightarrow R$; the multiplet assignment is not (§5.4).
+Parity is broken by the module and not by the charges. The multiplet assignment is what breaks it; a charge bookkeeping symmetric under $L\leftrightarrow R$ is compatible with either choice, which is the point [The Standard Model as the Low-Energy Phase](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html) makes about the observed spectrum.
 
-Broken is not absent. The Standard Model is the middle term of a three-term chain, and hypercharge is the survivor (§5).
+Broken is not absent. A factor that is no longer gauged below a scale has not left the algebra; the breaking chain is the Standard Model's chapter, and it is where the survivor is identified.
 
-The chiral wall is a statement about the module. The group is licensed twice over; what is missing is the tie between an operator side and a spinor letter (§3, §5.5).
+The chiral wall is a statement about the module. The group is licensed twice over; what is missing is the tie between an operator side and a spinor letter (§3, §6).
 
-Not observed is not excluded. The fourth role is bounded from below only, and that is why it is a hypothesis rather than a refutation (§5).
+Not observed is not excluded. The fourth role is bounded from below only, and that is why it is a hypothesis rather than a refutation (§4).
 
 ## Summary
 
@@ -337,7 +273,7 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 
 **The four roles.** Spacetime rotations, exact; the chiral symmetry of the strong sector, approximate and spontaneously broken; the custodial symmetry of the scalar sector, approximate and giving $\rho=1$; the gauged left–right symmetry, not observed.
 
-**Why the Standard Model does not gauge it.** Because it uses it: as a global symmetry twice, and as the source of hypercharge, $Y=T_{3R}+\tfrac12(B-L)$. The Standard Model is the phase in which the right-handed factor is broken, and hypercharge is the survivor. Its charges are parity-symmetric; its multiplets are not.
+**Where the fourth role is decided.** Not here. Whether nature gauges the group, and why the low-energy theory gauges one factor of it, are questions about hypercharge, about the multiplet assignment and about a breaking; [The Standard Model as the Low-Energy Phase](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html) takes them up, and this article stops at the group the algebra supplies.
 
 **The cost.** Two $\mathrm{SU}(2)$'s and a circle are free, because the alphabet is $\mathrm{SU}(2)$; colour costs a layer; a group needing a separate $\mathrm{SU}(3)$ with a commuting $\mathrm{SU}(2)$ is over budget.
 
@@ -355,13 +291,10 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 | $\rho$ | here the display $\mathrm{Spin}(3)\times\mathrm{Spin}(3)\to\mathrm{SO}(4)$; also the mass ratio of §4 |
 | $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | the tied two-sided action; the tie is what gives the Lorentz group |
 | $\mathbb{B}_L$, $\mathbb{B}_R$ | the two tensor factors, $\{\mathrm{I}_2\otimes A\}$ and $\{B^{\mathsf T}\otimes\mathrm{I}_2\}$ |
-| $T_{3L}$, $T_{3R}$ | the two Cartan generators, one per factor |
-| $B-L$ | baryon minus lepton number, the abelian generator |
-| $Y=T_{3R}+\tfrac12(B-L)$ | hypercharge as the remnant of the broken right-handed factor |
-| $\Delta_R$, $\Phi$ | the scalars that break the right-handed factor and then the electroweak pair |
 
 ## Further Reading
 
+- [The Standard Model as the Low-Energy Phase: The $\mathrm{U}(2)$ Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). Why the low-energy theory gauges one side and not two, and hypercharge as the broken factor's remnant.
 - [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). $\mathrm{SU}(2)\times\mathrm{U}(1)$ against the algebra's $\mathrm{U}(2)$, and the selection rule the quotient imposes.
 - [Electroweak Theory in the Biquaternion Framework: The $\mathrm{U}(2)$ Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The wall of §3 at its four levels, and the ledger of what each level would need.
@@ -371,7 +304,5 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 - [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html). The tie $R_{\tilde Q^{*}}$ and the twofold cover of the Lorentz group.
 - [The Transposition of the Two Sides](../articles_maths/the-transposition-of-the-two-sides.html). The conversion between the two factors, and the difference between a side and a letter.
 - [The Pauli Representation Operators](../articles_maths/m4c-pauli-representation-operators.html). $\mathbb{B}_L=\{\mathrm{I}_2\otimes A\}$ and $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm{I}_2\}$, the internal tensor factors of §3.
-- [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues used in the hypercharge table.
-- [Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The two $B-L$ conditions that force the sixteen.
 - [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The third role, computed.
 - [The Nonlinear Sigma Model and the Chiral Field in Biquaternionic Form](the-nonlinear-sigma-model-and-the-chiral-field-in-biquaternionic-form.html). The second role, and the left–right action on the pion field.
