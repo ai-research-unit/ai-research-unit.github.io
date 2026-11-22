@@ -10,6 +10,8 @@ The spin group is the group of unit quaternions. It is the sphere $S^3$ with the
 
 **What the article argues.** The $4\times4$ real display is a faithful writing of the same group, with the same Lie algebra up to isomorphism, the same exponential and the same composition law. It differs from the $2\times2$ display in three ways that matter, and the rest follows from them: the field is $\mathbb{R}$ and not $\mathbb{C}$, the matrix is twice as large, and no generator is diagonal. The third difference is the one that matters, and it is a theorem and not a preference, because a real diagonal antisymmetric matrix is zero. In the complex display exactly one generator is diagonal, and the display therefore marks an axis. The mark is the choice of a complex structure on $\mathbb{H}$, which is a point of $S^2$.
 
+**What a display does not carry.** A display is a map into matrices, and the spin labels do not come from it. They come from one series: the algebra is the square of the slot, the slot is $V_{1/2}$, and $\tfrac12\otimes\tfrac12=0\oplus1$. A display shows the slot and nothing else. The left regular layer is of real dimension four, which is two complex dimensions, and the defining display shows the same two; neither distinguishes $0$ from $1$, because both labels belong to the square of the slot and not to the slot. This is stated and proved in *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*, and it is the precise sense in which the three spins are a property of the carriers and not of any display.
+
 **Roadmap.** The next section fixes the vocabulary and refuses the conflation. Then come the complex display, briefly, because the comparison needs it; the real display in full; the two side by side; the structural theorems; the two lists of what changes and what does not; the worked examples; the trade; the sentences that must not be written; the numerical check.
 
 ## The Spin Group and Its Matrix Representations
@@ -424,6 +426,7 @@ The structural results are these. The image is one of the two isoclinic copies o
 
 ## Further Reading
 
+- [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html), for the series that holds the spin labels, which no display carries
 - [Quaternion Rotations and Reflections](quaternion-rotations-and-reflections.html), for the group of unit quaternions, its polar form, the double cover $Sp(1)\to SO(3)$ and the two-sided action that exhausts $SO(4)$.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the axis-free frame, the rule $L_{\mathrm{axf}}(\tilde Q)_{\mu\nu}=[\tilde Qe_\nu]_\mu$, the $2\times2$ element display and the reasons no Pauli array is written in a body section.
 - [Four-Dimensional Rotations](four-dimensional-rotations.html), for the normal form of a rotation of $\mathbb{R}^4$ as a pair of planar rotations and for the angle pair that the isoclinic case degenerates.

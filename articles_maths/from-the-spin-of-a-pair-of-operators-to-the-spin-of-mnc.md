@@ -8,7 +8,7 @@
 
 **Why the article is needed.** The biquaternion passage begins with the pair of rotors and ends with the three labels $0,\tfrac12,1$. At general $n$ the same passage begins with a pair and ends with a list of $n$ integer labels. The step that produces the list must be separated from the step that produces the pair, and the separation is what this article records.
 
-**Boundaries.** The theorem about the decomposition is *The Spin Decomposition of $M_n(\mathbb{C})$* and is quoted, not reproved, here. The operators themselves are *The One-Sided Operators of $M_n(\mathbb{C})$* and *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*. The biquaternion original is *From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides*.
+**Boundaries.** The theorem about the decomposition is *The Spin Decomposition of $M_n(\mathbb{C})$* and is quoted, not reproved, here. The operators themselves are *The One-Sided Operators of $M_n(\mathbb{C})$* and *The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$*. The biquaternion original is *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*.
 
 **Conventions.** $L_A(X)=AX$, $R_B(X)=XB$, $T_{A,B}=L_AR_B$. The principal copy is the image of $\operatorname{Sym}^{n-1}$, and $j=\tfrac{n-1}{2}$ throughout. The weights of the module are $m_a=j-a$ for $a=0,\dots,n-1$.
 
@@ -144,7 +144,7 @@ The pair $(L,R)$ is two commuting copies of the principal copy, with the diagona
 
 ## Further Reading
 - [The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$](the-spin-decomposition-of-mnc.html), for the theorem quoted here.
-- [From the Spin of a Single Rotor to the Spin of a Pair of Operators Acting on Two Sides](from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html), for the case $n=2$.
+- [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html), for the case $n=2$.
 - [The One-Sided Operators of $M_n(\mathbb{C})$](the-one-sided-operators-of-mnc.html), for the left copy.
 - [The Two-Sided Operators and the Segre Cone of $M_n(\mathbb{C})$](the-two-sided-operators-and-the-segre-cone-of-mnc.html), for the two-sided family.
 - [The Enveloping Operator Algebra of $M_n(\mathbb{C})$ and the Bi-module Structure](the-enveloping-operator-algebra-of-mnc.html), for the pair as an algebra.

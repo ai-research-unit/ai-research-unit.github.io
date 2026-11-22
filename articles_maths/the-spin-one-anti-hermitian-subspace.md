@@ -6,6 +6,8 @@ The carrier of spin $1$ is the vector part of the algebra, of real dimension $3$
 
 The case is the opposite of the spin-zero case in one respect and the opposite of the spin-half case in another. The subspace is three-dimensional, so the spectrum has three members instead of one; the action is two-sided, so the eigenvalues are integers instead of halves; and the closure is unique, since it does not depend on an axis. Nothing here is a family.
 
+**Where the label comes from.** The label $1$ is the second summand of the Clebsch–Gordan series, $\mathbb{B}\cong V_1\oplus V_0$, and the summand is the image of the projector $P_1=\tfrac12(\mathrm{id}-\natural)$, built from the natural conjugation and from nothing else. The subspace below is that image, so the label is placed by the projector and not attached to the space afterwards; the three weights confirm it. Nothing here depends on an axis, and this is the difference between a summand and a factor.
+
 **The question in one line.** Which real subspace of $\mathbb{B}$ of dimension $3$ is carried onto itself by every unitary element, and which space of dimension $4$ contains it.
 
 **The answer in one line.** The vector part $\mathfrak{k}=\mathbb{R}\vec e_x\oplus\mathbb{R}\vec e_y\oplus\mathbb{R}\vec e_z$, and the anti-Hermitian space $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$.
@@ -178,6 +180,7 @@ The spin-one carrier is the vector part $\mathfrak{k}$, of real dimension $3$. I
 
 ## Further Reading
 
+- [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html), for the series $\mathbb{B}\cong V_1\oplus V_0$, the two projectors and the label of the slot
 - [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html), for the indefinite form of inertia $(3,1)$ and its null cone
 - [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html), for the purely imaginary spectrum and the degenerate line of the closure
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table and the four closures

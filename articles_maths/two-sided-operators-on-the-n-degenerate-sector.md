@@ -2,6 +2,8 @@
 
 ## Introduction
 
+**The two projectors of the algebra.** Two endomorphisms of $\mathbb{B}$ are not of the polar family and are worth naming at the start, because they act on every sector: $P_{0}=\tfrac12(\mathrm{id}+\natural)$ and $P_{1}=\tfrac12(\mathrm{id}-\natural)$, with $P_{0}^{2}=P_{0}$, $P_{1}^{2}=P_{1}$, $P_{0}P_{1}=0$ and $P_{0}+P_{1}=\mathrm{id}$. Their images are the centre $\mathbb{C}e_t$ and the complexified vector part $\mathbb{C}\mathfrak{k}$, the two summands of the Clebsch–Gordan series $V_{1/2}\otimes V_{1/2}=V_{1}\oplus V_{0}$ of the algebra. They are canonical, they carry no parameter, and nothing in this article depends on them; they are named here because they are the only two idempotent endomorphisms that come with the algebra itself. The decomposition is *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*.
+
 This article treats the two-sided operator, the Hermitian pair $\mathrm{Sd}_{\tilde Q}$, on the **null cone** $N=\langle\tilde Q\rangle_{\natural}=0$, the closed set of real codimension two. It is the two-sided companion of *One-Sided Operators on the N-Degenerate Sector*, the same polar pair read on two sides.
 
 The two-sided operator is the Hermitian congruence

@@ -8,6 +8,14 @@ Three operators carry the polar word $\tilde Q=\tilde Q_H\tilde Q_0$ on the alge
 
 **Forward pointers.** The operator theory of the two-sided operator, with its multiplicativity and its parameter modulo the central phase, is *The Hermitian Pair of Operators Acting on Two Sides*. Its matrix reading is the congruence $X\mapsto MXM^{\dagger}$ of the entry model, and its operator reading is the composite $R_{\tilde Q^{*}}\circ L_{\tilde Q}$ of the frame-free article; the two readings agree by §*The Four Products $\lambda_i\bar\lambda_j$* of the same article. The six sector articles of this group are in the Further Reading: one one-sided and one two-sided operator article for each of the two values of $N$, four in all, and two exponential articles that read the same operators through the exponential. Inside each of the four, the two values of $B^{2}$ are two sections of one theory and not two theories: $N$ alone fixes the rank, the invertibility and the image, and $B^{2}$ alone fixes the eigenvalue count and the Jordan type.
 
+**The two projectors of the algebra.** Two further operators belong to the same algebra of $\mathbb{C}$-linear endomorphisms, and they are not of the polar family: they are idempotent and they split every element into its centre and its vector part,
+
+$$
+P_{0}=\tfrac12\bigl(\mathrm{id}+\natural\bigr),\qquad P_{1}=\tfrac12\bigl(\mathrm{id}-\natural\bigr),\qquad P_{0}^{2}=P_{0},\quad P_{1}^{2}=P_{1},\quad P_{0}P_{1}=0,\quad P_{0}+P_{1}=\mathrm{id}.
+$$
+
+The images are the centre $\mathbb{C}e_t$ and the complexified vector part $\mathbb{C}\mathfrak{k}$, and the split is the $n=2$ case of the spin decomposition of $M_n(\mathbb{C})$, $M_n\cong\bigoplus_{k=0}^{n-1}V_k$, namely $M_2\cong V_1\oplus V_0$. It is unlike every operator below in one respect that matters: it is canonical, because it is built from the conjugation alone, with no parameter, no axis and no basis. The operators of the four sectors carry a parameter $\tilde Q$; the two projectors carry none. The decomposition is stated and proved in *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*, and both summands are invariant under $\mathrm{Sd}_{\tilde u}$ for a unit $\tilde u$, since that operator is a conjugation.
+
 ## The Three Operators
 
 $$

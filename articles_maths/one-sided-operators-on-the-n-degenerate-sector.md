@@ -2,6 +2,8 @@
 
 ## Introduction
 
+**The two projectors of the algebra.** Two endomorphisms of $\mathbb{B}$ are not of the polar family and are worth naming at the start, because they act on every sector: $P_{0}=\tfrac12(\mathrm{id}+\natural)$ and $P_{1}=\tfrac12(\mathrm{id}-\natural)$, with $P_{0}^{2}=P_{0}$, $P_{1}^{2}=P_{1}$, $P_{0}P_{1}=0$ and $P_{0}+P_{1}=\mathrm{id}$. Their images are the centre $\mathbb{C}e_t$ and the complexified vector part $\mathbb{C}\mathfrak{k}$, the two summands of the Clebsch–Gordan series $V_{1/2}\otimes V_{1/2}=V_{1}\oplus V_{0}$ of the algebra. They are canonical, they carry no parameter, and nothing in this article depends on them; they are named here because they are the only two idempotent endomorphisms that come with the algebra itself. The decomposition is *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*.
+
 The quaternion norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ splits the biquaternion algebra in two. This article treats the second half, the **null cone** $N=0$, a closed set of real dimension six and real codimension two.
 
 The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $\vec e_x\vec e_y=\vec e_z$ and $\vec e_x^{2}=\vec e_y^{2}=\vec e_z^{2}=-e_t$. The Hermitian conjugation is $\tilde X^{*}=\overline{\tilde X^{\natural}}$. Two forms are used and they must be kept apart: the quaternionic norm $\langle\tilde X\rangle_{\natural}=\sum_\mu X_\mu^{2}$, which vanishes on the null cone, and the Hermitian norm $\langle\tilde X\rangle_{*}=\operatorname{Sc}(\tilde X\tilde X^{*})$, which does not. The matrix model $\mathsf M_2$ sends $e_t$ to $I_2$ and $\vec e_k$ to $-i\sigma_k$, and it is multiplicative.

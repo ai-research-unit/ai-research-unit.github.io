@@ -6,6 +6,8 @@ One carrier of the biquaternion algebra under the rotation action has spin $0$, 
 
 The carrier is the smallest of the three and the one with no argument. The rotation does not move it. An element of the centre is a complex multiple of the identity, and every conjugation by a unitary element fixes it, so the operator of the action is the identity at every axis and the generator is zero.
 
+**Where the label comes from.** The label $0$ is a summand of the Clebsch–Gordan series of the algebra, $\mathbb{B}\cong V_1\oplus V_0$, and the summand is the image of the projector $P_0=\tfrac12(\mathrm{id}+\natural)$, built from the natural conjugation and from nothing else. The subspace below is that image, so the label is not read off the space after the fact: the projector puts the space there, and the weights confirm the label.
+
 **The question in one line.** A carrier is a real subspace that the group carries onto itself and that has no invariant real subspace. Which subspace of $\mathbb{B}$ is fixed by every unitary element, of real dimension $1$.
 
 **The answer in one line.** The real line $\mathbb{R}e_t$, and its closure $\mathbb{C}e_t$ of real dimension $2$.
@@ -158,6 +160,7 @@ The carrier of spin $0$ is the real line $\mathbb{R}e_t$, of real dimension $1$.
 
 ## Further Reading
 
+- [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html), for the series $\mathbb{B}\cong V_1\oplus V_0$, the two projectors and the label of the slot
 - [The Spin-Zero Centre Subspace and N Norm Regularity](the-spin-zero-centre-subspace-and-n-norm-regularity.html), for the $N$ norm on the centre and the isotropic lines of its real part
 - [The Spin-Zero Centre Subspace and Spectral Regularity](the-spin-zero-centre-subspace-and-spectral-regularity.html), for the double eigenvalue of a central element and the degenerate cone
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the completeness of the list, the spin table and the four closures

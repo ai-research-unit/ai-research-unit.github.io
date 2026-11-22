@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The spin group is the group of unit quaternions, that is the sphere $S^3$. This article follows one thread from that group to the number $\tfrac12$: why an element of the group must act by a two-sided product, how the three real $4\times4$ generators of left multiplication carry that action, and how the quadratic Casimir of those three generators returns spin $\tfrac12$. It then combines two rotors, and the combination returns exactly two spins, $0$ and $1$, and nothing else.
+The spin group is the group of unit quaternions, that is the sphere $S^3$. This article follows one thread from that group to the number $\tfrac12$, and then from $\tfrac12$ to the pair $0$ and $1$: why an element of the group must act by a two-sided product, how the three real $4\times4$ generators of left multiplication carry that action, and how the quadratic Casimir of those three generators returns spin $\tfrac12$. It then takes the square of that carrier, and the square splits as $0\oplus1$ and nothing else. That is the Clebsch–Gordan series $\tfrac12\otimes\tfrac12=0\oplus1$ of a square of the half-integer slot, stated at the level of the algebra in *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*.
 
-**The thread in one paragraph.** To act on an algebra while preserving its multiplication, an element must act on both sides. One-sided multiplication is not an algebra map. The two-sided product is therefore forced, and it is the only inner-type action available. The spin group is the compact group of elements whose two-sided product is conjugation by the inverse with no scalar in front. Left multiplication by such an element is a real $4\times4$ orthogonal matrix, the three generators are real antisymmetric matrices, and the sum of their squares is a multiple of the identity. That multiple is $-\tfrac34$, and the Hermitian normalization is $+\tfrac34$. The number $\tfrac34$ is $s(s+1)$ at $s=\tfrac12$.
+**The thread in one paragraph.** To act on an algebra while preserving its multiplication, an element must act on both sides. One-sided multiplication is not an algebra map. The two-sided product is therefore forced, and it is the only inner-type action available. The spin group is the compact group of elements whose two-sided product is conjugation by the inverse with no scalar in front. Left multiplication by such an element is a real $4\times4$ orthogonal matrix, the three generators are real antisymmetric matrices, and the sum of their squares is a multiple of the identity. That multiple is $-\tfrac34$, and the Hermitian normalization is $+\tfrac34$. The number $\tfrac34$ is $s(s+1)$ at $s=\tfrac12$. Read with the series, the two results are one statement: $\tfrac12$ is the label of the slot, and $\tfrac12\otimes\tfrac12=0\oplus1$ is the square of that slot, so the Casimir identifies the factor and the split of the square gives the two integer labels.
 
-**What the article does not claim.** Three sentences are excluded by construction, and each is repaired in *Corrections*. The spin group is $S^3=\mathrm{Spin}(3)$; it is isomorphic to $SU(2)$, and $SU(2)$ is the image of one of its displays. The spin group is not any matrix group; it is $S^3$, and a matrix group is an image of it. The three $L$-generators do not give all spins; they give one spin, on one carrier.
+**What the article does not claim.** Three sentences are excluded by construction, and each is repaired in *Corrections*. The spin group is $S^3=\mathrm{Spin}(3)$; it is isomorphic to $SU(2)$, and $SU(2)$ is the image of one of its displays. The spin group is not any matrix group; it is $S^3$, and a matrix group is an image of it. The three $L$-generators do not give all spins; they give one spin, on one carrier. That one spin is the label of the slot that the series squares, and the labels $0$ and $1$ are labels of summands of the square, not labels of a one-sided carrier.
 
 **Roadmap.** The forcing of the two-sided form comes first, with the four conjugations of the biquaternion algebra and the two two-sided operators that matter. Then the spin group, its identification with the spin group, and its double cover. Then the $L$-generators, the Casimir, and the extraction of $\tfrac12$. Then two rotors, the split into $0\oplus1$, and the reason the split is forced. Then what the generators do not give, the corrections, and the numerical check.
 
@@ -244,6 +244,14 @@ $$
 $$
 
 The first term is $\tfrac32$ times the identity on the four-dimensional square. For the second, $\sum_kH_k\otimes H_k$ is the swap in the normalization of $\mathfrak{su}(2)$: it acts as $+\tfrac14$ on the symmetric part and as $-\tfrac34$ on the antisymmetric part, which is checked on a basis and which the trace identity $3\cdot\tfrac14+1\cdot(-\tfrac34)=0$ confirms. Adding, the symmetric part gets $\tfrac32+\tfrac12=2$ and the antisymmetric part gets $\tfrac32-\tfrac32=0$. ∎
+
+**The swap projectors are the projectors of the algebra.** The two eigenspaces of $\sigma$ are the images of
+
+$$
+P_{+}=\tfrac12\bigl(\mathrm{id}+\sigma\bigr),\qquad P_{-}=\tfrac12\bigl(\mathrm{id}-\sigma\bigr),
+$$
+
+with $P_{\pm}^{2}=P_{\pm}$, $P_{+}P_{-}=0$ and $P_{+}+P_{-}=\mathrm{id}$, which is the algebra of an involution halved and the same construction as the two projectors $\tfrac12(\mathrm{id}\pm\natural)$ of *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*. The antisymmetric summand is the singlet and the symmetric one is the triplet, so $P_{-}$ plays the role of $P_{0}$ and $P_{+}$ the role of $P_{1}$. The identification of the square $S\otimes S$ with the algebra passes through the isomorphism of the slot with its dual, and that is the place where a sign may enter; the assignment of summands does not depend on it.
 
 **The spins.** The two values are $s(s+1)$ at the two integer spins,
 

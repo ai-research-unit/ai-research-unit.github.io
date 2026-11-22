@@ -6,6 +6,8 @@ The carrier of spin $\tfrac12$ is a plane, of real dimension $2$, and its closur
 
 The family is infinite, and this is the point of the article. There is a plane for every unit real axis, two spinor spaces for every axis, and one bispinor space for every axis up to a sign, so the algebra carries infinitely many spaces of each kind. Nothing singles one of them out. The situation is the one known from the Peirce basis: a basis is a choice, and the algebra has as many bases as it has axes.
 
+**Where the label comes from.** The label $\tfrac12$ is the label of the slot that the Clebsch–Gordan series squares: $\mathbb{B}\cong S\otimes S^{*}$ with $S=V_{1/2}$, and $V_{1/2}\otimes V_{1/2}=V_1\oplus V_0$. The slot is a factor and not a summand, so it is not the image of a projector of the algebra. It is realized by a minimal left ideal, and a minimal left ideal needs an idempotent and an axis. That is why this carrier is a family where the two integer carriers are single subspaces: the axis is the price of realizing a factor inside the algebra, and no projector can pay it.
+
 **The question in one line.** Which real subspaces of $\mathbb{B}$ of dimension $2$, $4$ and $8$ carry the action with weights $\pm\tfrac12$.
 
 **The answer in one line.** The plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\Pi_+(\vec u_{\mathrm r})$, the spinor spaces $S_\pm(\vec u_{\mathrm r})=\mathbb{B}\tilde\Pi_\pm(\vec u_{\mathrm r})$, and their sum, a bispinor space, which as a set is $\mathbb{B}$.
@@ -151,6 +153,7 @@ The spin-half carrier is the plane $\Sigma(\vec u_{\mathrm r})=\mathbb{C}\tilde\
 
 ## Further Reading
 
+- [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html), for the series $\mathbb{B}\cong V_1\oplus V_0$, the two projectors and the label of the slot
 - [The Spin-Half Bispinors and N Norm Regularity](the-spin-half-bispinor-spaces-and-n-norm-regularity.html), for the nullity of the plane and of the ideals, and the pairing of the two halves
 - [The Spin-Half Bispinors and Spectral Regularity](the-spin-half-bispinor-spaces-and-spectral-regularity.html), for the spectrum $\{0,\lambda\}$ of the plane and the degenerate plane inside a spinor space
 - [From the Spin to the Carriers and the Closures](the-carriers-the-representation-the-spin-and-the-closure.html), for the three carriers, the spin table and the four closures

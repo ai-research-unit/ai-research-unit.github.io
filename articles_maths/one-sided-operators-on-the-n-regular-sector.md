@@ -2,6 +2,8 @@
 
 ## Introduction
 
+**The two projectors of the algebra.** Two endomorphisms of $\mathbb{B}$ are not of the polar family and are worth naming at the start, because they act on every sector: $P_{0}=\tfrac12(\mathrm{id}+\natural)$ and $P_{1}=\tfrac12(\mathrm{id}-\natural)$, with $P_{0}^{2}=P_{0}$, $P_{1}^{2}=P_{1}$, $P_{0}P_{1}=0$ and $P_{0}+P_{1}=\mathrm{id}$. Their images are the centre $\mathbb{C}e_t$ and the complexified vector part $\mathbb{C}\mathfrak{k}$, the two summands of the Clebsch–Gordan series $V_{1/2}\otimes V_{1/2}=V_{1}\oplus V_{0}$ of the algebra. They are canonical, they carry no parameter, and nothing in this article depends on them; they are named here because they are the only two idempotent endomorphisms that come with the algebra itself. The decomposition is *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*.
+
 The quaternion norm $N=\langle\tilde Q\rangle_{\natural}=Q_t^{2}+B^{2}$ splits the biquaternion algebra in two, and the split is the primary one for the operators: $N\neq0$ is the group of invertibles $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, open and dense of real dimension eight, and $N=0$ is the null cone, closed of real dimension six. This article treats the first half.
 
 Throughout, $\tilde Q$ lies in the **N-regular sector**, so $N\neq0$ and $\tilde Q$ is invertible. The biquaternion algebra acts on itself by left and right multiplication. For a parameter $\tilde Q$ the two **one-sided operators** are

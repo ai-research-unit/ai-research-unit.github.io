@@ -37,7 +37,9 @@ LEGACY_COPIES = [
      "articles_maths/the-rotor-group-via-4x4-real-matrices.html"),
     ("articles_maths/from-the-spin-group-to-the-spin-of-a-single-rotor.html",
      "articles_maths/from-the-rotor-to-the-spin-of-the-rotor.html"),
-    ("articles_maths/from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html",
+    ("articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html",
+     "articles_maths/from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html"),
+    ("articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html",
      "articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html"),
     # The fourth-colour left-right model: the files are renamed, the old URL
     # stays alive.
