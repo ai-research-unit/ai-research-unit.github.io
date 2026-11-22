@@ -406,10 +406,10 @@ while the $(\bar{\mathbf4},\mathbf1,\mathbf2)$ contributes nothing because $T_{3
 
 ## Further Reading
 
-- [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The group, the sixteen, the declaration (A), and $15=8+1+6$ with $D=\operatorname{diag}(-3,1,1,1)$.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The group, the sixteen, the declaration (A), and $15=8+1+6$ with $D=\operatorname{diag}(-3,1,1,1)$.
 - [The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons](the-breaking-chain-and-the-boson-spectrum.html). The budget $21\to15\to12\to9$, the rank budget, the neutral mass matrix and the photon as its null vector.
 - [The Electroweak Gauge Group and the Hypercharge Assignment](the-electroweak-gauge-group-and-the-hypercharge-assignment.html). The anomaly system solved in full, the three rays, and the discrete choice among them.
-- [Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The four hypercharge rows, all satisfied identically on the sixteen.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The four hypercharge rows, all satisfied identically on the sixteen.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). Why the eight are unbroken at every scale.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The mixture that survives the chain, before the two vacua are imposed.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The matching relations and the scale-bearing statements this article does not print.

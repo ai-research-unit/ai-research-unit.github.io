@@ -13,7 +13,7 @@ Throughout, $(G,\sigma)$ is an involutive group with $\sigma$ an anti-automorphi
 
 **Proposition (the two fixed sets in dual form).** $G^{\sigma}=I(\alpha)$ and $G^{\alpha}=I(\sigma)$. Hence $\sigma$ is free if and only if $I(\alpha)=\{e\}$, and $\alpha$ is free if and only if $I(\sigma)=\{e\}$.
 
-**Proof.** $g\in G^{\sigma}$ means $\sigma(g)=g$; applying $\iota$ and using $\alpha=\sigma\iota$ gives $\alpha(g)=g^{-1}$, that is $g\in I(\alpha)$. The second statement is the same with the roles of $\sigma$ and $\alpha$ exchanged, and the versions for freeness follow. Both identities are recorded in *Involutive Groups*, §4.
+**Proof.** $g\in G^{\sigma}$ means $\sigma(g)=g$; applying $\iota$ and using $\alpha=\sigma\iota$ gives $\alpha(g)=g^{-1}$, that is $g\in I(\alpha)$. The second statement is the same with the roles of $\sigma$ and $\alpha$ exchanged, and the versions for freeness follow. Both identities are recorded in *Involutive Groups*.
 
 **Remark (the two notions are dual and not equivalent).** Freeness of $\sigma$ and freeness of $\alpha$ are different conditions, and neither implies the other. On the cyclic group $C_3=\langle r\rangle$ the inversion $\sigma=\iota$, which is an automorphism because $C_3$ is abelian, is free: $\sigma(r)=r^{-1}\neq r$ and $\sigma(r^{2})=r\neq r^{2}$. Its associated automorphism is $\alpha=\sigma\iota=\mathrm{id}$, which fixes every element and is as far from free as possible. So a free involution may have an associated automorphism that is not free. The asymmetry is exactly the asymmetry between the fixed and the inverted sets.
 
@@ -55,7 +55,7 @@ $$
 \qquad t^{2}=e,
 $$
 
-of *Involutive Groups*, §9, a group of order $2\lvert G\rvert$ in which $G$ is normal of index two and conjugation by $t$ realises $\alpha$.
+of *Involutive Groups*, a group of order $2\lvert G\rvert$ in which $G$ is normal of index two and conjugation by $t$ realises $\alpha$.
 
 **Remark (which involution is free).** The set-theoretic quotient and double cover are built from the involution $\sigma$ and only need it to be an involution. The group-theoretic extension is built from the involutive automorphism $\alpha$, which is the datum that acts on $G$ by automorphisms; the two agree when $\sigma$ is itself an automorphism, that is when $G$ is abelian.
 
@@ -75,7 +75,7 @@ so $\psi(\alpha(g))=\psi(g^{-1})$; injectivity of $\psi$ gives $\alpha(g)=g^{-1}
 
 ## The Standard Examples
 
-**Example (the dihedral example).** Let $G=C_n=\langle r\rangle$ with $n$ odd and let $\sigma=\iota$ be the inversion, which is an automorphism because $C_n$ is abelian and is free because $n$ is odd. The orbits are the pairs $\{r^{k},r^{-k}\}$, the quotient has $(n+1)/2$ elements, and the group-theoretic double cover is the dihedral group $D_n=C_n\rtimes C_2$ of *Involutive Groups*, §9, in which the complement acts by the inversion $r\mapsto r^{-1}$. In $D_n$ the rotations are the paired elements and the reflections are the added coset; the double cover $C_n\to C_n/\langle\iota\rangle$ is the shadow of the split extension on the underlying sets.
+**Example (the dihedral example).** Let $G=C_n=\langle r\rangle$ with $n$ odd and let $\sigma=\iota$ be the inversion, which is an automorphism because $C_n$ is abelian and is free because $n$ is odd. The orbits are the pairs $\{r^{k},r^{-k}\}$, the quotient has $(n+1)/2$ elements, and the group-theoretic double cover is the dihedral group $D_n=C_n\rtimes C_2$ of *Involutive Groups*, in which the complement acts by the inversion $r\mapsto r^{-1}$. In $D_n$ the rotations are the paired elements and the reflections are the added coset; the double cover $C_n\to C_n/\langle\iota\rangle$ is the shadow of the split extension on the underlying sets.
 
 **Example (the antipodal example).** Let $F$ be a field of characteristic different from two and let $G=(F,+)$ be its additive group with $\sigma(x)=-x$. The involution is free, since $-x=x$ is $2x=0$ and $2$ is invertible in $F$; the orbits are the antipodal pairs $\{x,-x\}$, and the quotient has one point for each pair. The group-theoretic double cover is the semidirect product $F\rtimes C_2$ in which the complement acts by negation. Over a field of characteristic two the negation is the identity, which is not free, so freeness is a property of the pair (group, field) and not of the additive group alone.
 
@@ -87,7 +87,7 @@ so $\psi(\alpha(g))=\psi(g^{-1})$; injectivity of $\psi$ gives $\alpha(g)=g^{-1}
 
 An involution $\sigma$ of $G$ is **free** when $G^{\sigma}=\{e\}$, and the associated automorphism $\alpha=\sigma\iota$ is free when $G^{\alpha}=\{e\}$; by the dual identities $G^{\sigma}=I(\alpha)$ and $G^{\alpha}=I(\sigma)$ the two notions are the vanishing of the two inverted sets, and neither implies the other, as $C_3$ with its free inversion and its identity automorphism shows. The canonical free involution is the inversion on a group with no element of order two; on a finite group this is odd order.
 
-A free involution generates a free action of the two-element group on the underlying set, so every orbit has two elements and the **orbit quotient** $G/\langle\sigma\rangle$ is a set with a **two-to-one projection** $\pi$, the **double cover**, whose nontrivial deck transformation is $\sigma$ and whose cardinality is $\lvert G\rvert/2$ for finite $G$. The projection carries no group structure, because a homomorphism with trivial kernel is injective and $\pi$ is two-to-one. The group-theoretic double cover uses the involutive automorphism $\alpha$ and is the split extension $G\rtimes C_2$ of *Involutive Groups*, §9.
+A free involution generates a free action of the two-element group on the underlying set, so every orbit has two elements and the **orbit quotient** $G/\langle\sigma\rangle$ is a set with a **two-to-one projection** $\pi$, the **double cover**, whose nontrivial deck transformation is $\sigma$ and whose cardinality is $\lvert G\rvert/2$ for finite $G$. The projection carries no group structure, because a homomorphism with trivial kernel is injective and $\pi$ is two-to-one. The group-theoretic double cover uses the involutive automorphism $\alpha$ and is the split extension $G\rtimes C_2$ of *Involutive Groups*.
 
 A finite abelian group with a free involutive automorphism has odd order and the automorphism is the inversion, the abelian case being proved by the bijectivity of $g\mapsto\alpha(g)g^{-1}$; the general finite case, without the abelian hypothesis, is a theorem of the literature. The standard free involutions are the inversion of a cyclic group of odd order, whose extension is the dihedral group, and the negation of the additive group of a field of characteristic different from two, the antipodal involution.
 

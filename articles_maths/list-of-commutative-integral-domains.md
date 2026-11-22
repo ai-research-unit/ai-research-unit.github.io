@@ -11,7 +11,7 @@ The article introduces nothing and proves nothing. It records examples and non-e
 
 ## What a Domain Adds
 
-An integral domain is a commutative ring with $1 \neq 0$ and no zero divisors: $ab = 0$ forces $a = 0$ or $b = 0$. Equivalently, every nonzero element is cancellable. The definition and its consequences are in *Rings*, §12, and the first examples are $\mathbb{Z}$ and every field; a field is a domain because a nonzero element is invertible, so it can never be a zero divisor.
+An integral domain is a commutative ring with $1 \neq 0$ and no zero divisors: $ab = 0$ forces $a = 0$ or $b = 0$. Equivalently, every nonzero element is cancellable. The definition and its consequences are in *Rings*, and the first examples are $\mathbb{Z}$ and every field; a field is a domain because a nonzero element is invertible, so it can never be a zero divisor.
 
 | Object | Why it is a domain | Introduced in |
 |---|---|---|
@@ -19,7 +19,7 @@ An integral domain is a commutative ring with $1 \neq 0$ and no zero divisors: $
 | every field, for instance $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{F}_p$, $\mathbb{Q}_p$ | a nonzero element is invertible, hence not a zero divisor | *Fields* |
 | $\mathbb{Z}[x]$, $k[x_1, \dots, x_n]$ | a product of nonzero polynomials is nonzero over a domain | *Polynomial Rings and Rational Functions* |
 | $k[[x]]$ | a product of series with nonzero leading term has nonzero leading term | *Examples of Rings and Fields* |
-| any subring of a domain | inherited from the larger ring | *Rings*, §3 |
+| any subring of a domain | inherited from the larger ring | *Rings* |
 | $\operatorname{Frac}(R)$ of a domain $R$ | a field, and every domain embeds in it | *Localization and the Fraction Field* |
 
 Every domain has a field of fractions, and the passage to it is recorded in *Localization and the Fraction Field*. The domains of this article are the commutative ones; the non-commutative domains, in which cancellation holds on both sides but the ring need not be commutative, are the subject of *List of Domains*.

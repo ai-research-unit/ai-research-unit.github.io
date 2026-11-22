@@ -12,18 +12,18 @@ The lowest groups are the cyclic ones, finite and infinite, and their direct sum
 
 | Group | The property it has | Introduced in |
 |---|---|---|
-| $(\mathbb{Z},+)$ | the infinite cyclic group, abelian, with trivial derived subgroup | *Groups*, §1 |
-| $\mathbb{Z}/n\mathbb{Z}$ | the cyclic group of order $n$, abelian | *Groups*, §1 |
+| $(\mathbb{Z},+)$ | the infinite cyclic group, abelian, with trivial derived subgroup | *Groups* |
+| $\mathbb{Z}/n\mathbb{Z}$ | the cyclic group of order $n$, abelian | *Groups* |
 | $C_n = \langle x \mid x^n = 1\rangle$ | the cyclic group of order $n$, $Z(C_n) = C_n$, $[C_n,C_n] = 1$ | *Finite Groups and Symmetry* |
 | Finite abelian groups | direct sums of cyclic groups, as the structure theorem classifies them | *Finitely Generated Abelian Groups* |
 | Divisible abelian groups | abelian groups in which every element is divisible, classified by their torsion | *Infinite Abelian Groups* |
 | Free abelian group $\mathbb{Z}^{(I)}$ | the abelian group with a basis, with rank $|I|$ | *Infinite Abelian Groups* |
 | $\mathbb{Z}_p$ | the additive group of $p$-adic integers, profinite and torsion-free | *Profinite Groups and the Krull Topology* |
 | $D_n$ | the dihedral group of order $2n$; $Z(D_n)$ is trivial for odd $n$ and of order $2$ for even $n$; $[D_n,D_n] = \langle r^2\rangle$ | *Finite Groups and Symmetry* |
-| $Q_8$ | the quaternion group of order $8$; $Z(Q_8) = \{\pm1\}$, $[Q_8,Q_8] = \{\pm1\}$, every subgroup normal | *Groups*, §20 |
-| Group of order $p^2$ | abelian, isomorphic to $\mathbb{Z}/p^2\mathbb{Z}$ or $\mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z}$ | *Groups*, §13 |
-| Group of order $pq$, $p < q$ | cyclic unless $p \mid q-1$, in which case a non-abelian semidirect product occurs | *Groups*, §13 |
-| Non-example: $(\mathbb{Z}\setminus\{0\}, \cdot)$ | a monoid that fails inverses: only $\pm1$ are invertible | *Groups*, §1 |
+| $Q_8$ | the quaternion group of order $8$; $Z(Q_8) = \{\pm1\}$, $[Q_8,Q_8] = \{\pm1\}$, every subgroup normal | *Groups* |
+| Group of order $p^2$ | abelian, isomorphic to $\mathbb{Z}/p^2\mathbb{Z}$ or $\mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z}$ | *Groups* |
+| Group of order $pq$, $p < q$ | cyclic unless $p \mid q-1$, in which case a non-abelian semidirect product occurs | *Groups* |
+| Non-example: $(\mathbb{Z}\setminus\{0\}, \cdot)$ | a monoid that fails inverses: only $\pm1$ are invertible | *Groups* |
 
 ## Symmetric and Alternating Groups
 
@@ -31,12 +31,12 @@ The **symmetric group** $S_n$ is the group of bijections of an $n$-element set, 
 
 | Group | The property it has | Introduced in |
 |---|---|---|
-| $S_n$ | the symmetric group of order $n!$; $Z(S_n) = 1$ and $[S_n,S_n] = A_n$ for $n \geq 3$ | *Groups*, §1 |
-| $S_{\mathrm{ab},n}$ | the abelianisation, isomorphic to $\mathbb{Z}/2\mathbb{Z}$ for $n \geq 3$ | *Groups*, §9 |
+| $S_n$ | the symmetric group of order $n!$; $Z(S_n) = 1$ and $[S_n,S_n] = A_n$ for $n \geq 3$ | *Groups* |
+| $S_{\mathrm{ab},n}$ | the abelianisation, isomorphic to $\mathbb{Z}/2\mathbb{Z}$ for $n \geq 3$ | *Groups* |
 | $A_n$ | the alternating group of order $n!/2$, normal in $S_n$ | *Groups* |
 | $A_n$, $n \geq 5$ | a finite simple group, the alternating family of the classification | *The Classification of Finite Simple Groups* |
 | $S_2$, $S_3$ | $S_2 \cong C_2$; $S_3 \cong D_3$ | *Finite Groups and Symmetry* |
-| Non-example: $S_n$, $n \geq 3$ | a group that fails commutativity | *Groups*, §1 |
+| Non-example: $S_n$, $n \geq 3$ | a group that fails commutativity | *Groups* |
 | Non-example: $A_4$ | a group of order $12$ that fails simplicity: its Klein four-subgroup is normal | *Finite Groups and Symmetry* |
 
 ## Matrix and Classical Groups
@@ -50,7 +50,7 @@ The **general linear group** $GL_n(F)$ is the group of invertible $n \times n$ m
 | $PGL_n(F)$ | the quotient of $GL_n(F)$ by its scalar matrices | *The General Linear Group* |
 | $PSL_n(F)$ | the quotient of $SL_n(F)$ by its scalar matrices, simple for the large cases | *Finite Simple Groups of Lie Type* |
 | $\operatorname{Aff}(V) = V \rtimes GL(V)$ | the affine group, the translations extended by the linear group | *Affine Spaces and Translations* |
-| $R^\times$ | the group of invertibles of a ring | *Groups*, §1 |
+| $R^\times$ | the group of invertibles of a ring | *Groups* |
 | $M_n(k)^\times$ | the invertibles of a matrix algebra, equal to $GL_n(k)$ | *Matrix Algebras* |
 | Warning: $O(V,\mathfrak{Q})$, $\mathrm{U}(V,h)$, $Sp(V,\omega)$, $\operatorname{Spin}$, $\operatorname{Pin}$ | not group-layer objects: each is defined by a form and a distance, so it belongs to Part II | *The General Linear Group*; *Finite Groups and Symmetry* |
 
@@ -85,7 +85,7 @@ A **solvable group** has a finite derived series reaching the identity and a **n
 |---|---|---|
 | Solvable group | a group whose derived series terminates at $1$ | *Solvable and Nilpotent Groups* |
 | Nilpotent group | a group whose lower central series terminates at $1$ | *Solvable and Nilpotent Groups* |
-| $p$-group | a group of order $p^k$, nilpotent, with nontrivial centre | *Groups*, §13 |
+| $p$-group | a group of order $p^k$, nilpotent, with nontrivial centre | *Groups* |
 | Hall subgroup | a subgroup whose order and index are coprime, the solvable analogue of a Sylow subgroup | *Solvable and Nilpotent Groups* |
 | Fitting and Frattini subgroups | the largest normal nilpotent subgroup; the intersection of the maximal subgroups | *Solvable and Nilpotent Groups* |
 | Finite simple group | a group with no nontrivial proper normal subgroup | *The Classification of Finite Simple Groups* |

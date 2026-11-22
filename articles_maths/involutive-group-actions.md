@@ -47,7 +47,7 @@ is stable under $\sigma$, and $\sigma$ restricts to an involution of $G^{\Gamma}
 
 ## The Induced Involution on Quotients
 
-Let $N\trianglelefteq G$ be a $\sigma$-stable normal subgroup, so that $\sigma$ induces an involution $\bar\sigma$ of $G/N$ by $\bar\sigma(gN)=\sigma(g)N$; this is the induced involution of *Involutive Groups*, §7.
+Let $N\trianglelefteq G$ be a $\sigma$-stable normal subgroup, so that $\sigma$ induces an involution $\bar\sigma$ of $G/N$ by $\bar\sigma(gN)=\sigma(g)N$; this is the induced involution of *Involutive Groups*.
 
 **Proposition (the action descends when the subgroup is stable).** Suppose $N$ is both $\sigma$-stable and $\Gamma$-stable. Then the action of $\Gamma$ descends to $G/N$, it preserves the induced involution $\bar\sigma$, and $(G/N,\bar\sigma)$ is an involutive $\Gamma$-group.
 
@@ -61,7 +61,7 @@ $$
 
 so the containment is strict, the image having index two in the fixed set of the quotient.
 
-**Proof.** An element $\sigma(g)=g$ has image $\bar\sigma(gN)=\sigma(g)N=gN$, so $\pi(G^{\sigma})\subseteq(G/N)^{\bar\sigma}$; the containment is the one of *Involutive Groups*, §7, and the strict example $\mathbb{Z}/4\mathbb{Z}$ with its subgroup of order two, recorded there, shows it can be strict. A class $gN$ fixed by $\bar\sigma$ has $\sigma(g)=g\,n$ for some $n\in N$; replacing $g$ by $g\,n'$ with $n'\in N$ changes $n$ to $n'^{2}n$, because $N$ is central and $\sigma$ acts trivially on it, so the defect $n$ is fixed exactly up to the squares $N^{2}$ of $N$. For a central $N$ with trivial action the squares are $2N$ and the cokernel is the group $N/2N$ of coinvariants of the two-element group with coefficients in $N$; for $N$ of order two this is $N$ again, so the image has index two in the fixed set of the quotient. The $\mathbb{Z}/4\mathbb{Z}$ example of *Involutive Groups*, §7 is the case $N$ of order two inside the cyclic group of order four.
+**Proof.** An element $\sigma(g)=g$ has image $\bar\sigma(gN)=\sigma(g)N=gN$, so $\pi(G^{\sigma})\subseteq(G/N)^{\bar\sigma}$; the containment is the one of *Involutive Groups*, and the strict example $\mathbb{Z}/4\mathbb{Z}$ with its subgroup of order two, recorded there, shows it can be strict. A class $gN$ fixed by $\bar\sigma$ has $\sigma(g)=g\,n$ for some $n\in N$; replacing $g$ by $g\,n'$ with $n'\in N$ changes $n$ to $n'^{2}n$, because $N$ is central and $\sigma$ acts trivially on it, so the defect $n$ is fixed exactly up to the squares $N^{2}$ of $N$. For a central $N$ with trivial action the squares are $2N$ and the cokernel is the group $N/2N$ of coinvariants of the two-element group with coefficients in $N$; for $N$ of order two this is $N$ again, so the image has index two in the fixed set of the quotient. The $\mathbb{Z}/4\mathbb{Z}$ example of *Involutive Groups* is the case $N$ of order two inside the cyclic group of order four.
 
 ## The Equivariant Maps and the Quotient Category
 
@@ -99,7 +99,7 @@ $$
 
 The two are equal when $\sigma(\gamma\cdot g')=\tau(\gamma')\cdot\sigma(g)$, which is the twisted compatibility applied to $\gamma\cdot g'$ and rearranged; with $\tau=\mathrm{id}$ it is the plain compatibility $\sigma(\gamma\cdot g')=\gamma'\cdot\sigma(g)$.
 
-**Remark (the two roles of the action).** The construction reads the action twice: once to form the semidirect product, and once through the compatibility that makes the involution of the extension. When the action is trivial, $G\rtimes\Gamma=G\times\Gamma$ and the involution is the componentwise one of *Involutive Groups*, §8.
+**Remark (the two roles of the action).** The construction reads the action twice: once to form the semidirect product, and once through the compatibility that makes the involution of the extension. When the action is trivial, $G\rtimes\Gamma=G\times\Gamma$ and the involution is the componentwise one of *Involutive Groups*.
 
 ## Summary
 

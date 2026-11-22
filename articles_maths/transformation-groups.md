@@ -63,7 +63,7 @@ The verification that $\operatorname{Aut}(X)$ is a subgroup of $\operatorname{sy
 
 **Example.** Let $X$ be a graph, a set with a set of two-element subsets, the edges. An automorphism is a bijection permuting vertices that maps edges to edges and non-edges to non-edges. For the complete graph on $n$ vertices every bijection qualifies, so $\operatorname{Aut}(K_n) = S_n$, whereas for a path with $n \geq 2$ vertices there are exactly two automorphisms.
 
-**Example.** Let $X = G$ be a group. An automorphism of the group structure is a bijection $\sigma$ with $\sigma(ab) = \sigma(a)\sigma(b)$ for all $a, b \in G$, and these form the group $\operatorname{Aut}(G)$ of *Groups*, §5. For each $u \in G$ the conjugation $c_u(x) = u x u^{-1}$ is an automorphism, the map $u \mapsto c_u$ has image the normal subgroup $\operatorname{Inn}(G)$ of inner automorphisms, and $\operatorname{Inn}(G) \cong G / Z(G)$.
+**Example.** Let $X = G$ be a group. An automorphism of the group structure is a bijection $\sigma$ with $\sigma(ab) = \sigma(a)\sigma(b)$ for all $a, b \in G$, and these form the group $\operatorname{Aut}(G)$ of *Groups*. For each $u \in G$ the conjugation $c_u(x) = u x u^{-1}$ is an automorphism, the map $u \mapsto c_u$ has image the normal subgroup $\operatorname{Inn}(G)$ of inner automorphisms, and $\operatorname{Inn}(G) \cong G / Z(G)$.
 
 **Example.** Let $X$ be a set with no structure at all. Every bijection is an automorphism, so $\operatorname{Aut}(X) = \operatorname{sym}(X)$. The symmetric group is thus the automorphism group of the weakest structure and the largest group of transformations of $X$.
 

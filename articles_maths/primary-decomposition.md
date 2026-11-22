@@ -6,7 +6,7 @@ An integer factors uniquely into prime powers, and the ideal-theoretic counterpa
 
 The decomposition is not unique — one can always drop redundant components and refine others — but the ambiguity is controlled by two uniqueness theorems. The minimal associated primes and the corresponding primary components are unique, and the set of associated primes is unique; only the components attached to embedded primes are free to vary. This is the sense in which a primary decomposition is "unique up to the ambiguity that does not matter".
 
-The theory is the algebraic form of the decomposition of an algebraic set into irreducible components, and it is the tool behind the Hilbert Nullstellensatz. Throughout, $R$ is a commutative Noetherian ring with $1 \neq 0$; the chain conditions and the nilradical are from *Noetherian and Artinian Rings*, localization and the ideal correspondence from *Localization and the Fraction Field*, and prime and maximal ideals from *Rings*, §§6–7. Where a result requires that the ring be Noetherian this is stated, since primary decomposition fails without it.
+The theory is the algebraic form of the decomposition of an algebraic set into irreducible components, and it is the tool behind the Hilbert Nullstellensatz. Throughout, $R$ is a commutative Noetherian ring with $1 \neq 0$; the chain conditions and the nilradical are from *Noetherian and Artinian Rings*, localization and the ideal correspondence from *Localization and the Fraction Field*, and prime and maximal ideals from *Rings*. Where a result requires that the ring be Noetherian this is stated, since primary decomposition fails without it.
 
 ---
 

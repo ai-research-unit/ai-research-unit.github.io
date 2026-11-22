@@ -50,7 +50,7 @@ The two completions of $\mathbb{Q}$ at the Archimedean and the non-Archimedean p
 
 | Field | Characteristic | Residue field and value group | Extensions and closures | Introduced in |
 |---|---|---|---|---|
-| $k(x)$, $k(x_1, \dots, x_n)$ | $\operatorname{char} k$ | — | the fraction field of $k[x]$; a purely transcendental extension | *Fields*, §19 |
+| $k(x)$, $k(x_1, \dots, x_n)$ | $\operatorname{char} k$ | — | the fraction field of $k[x]$; a purely transcendental extension | *Fields* |
 | $k((t))$ | $\operatorname{char} k$ | $k$, value group $\mathbb{Z}$ | the completion of $k(t)$ at the $t$-adic valuation | *Absolute Values, Valuations and Completions* |
 | $\mathbb{F}_p((t))$ | $p$ | $\mathbb{F}_p$, value group $\mathbb{Z}$ | the completion of $\mathbb{F}_p(t)$ | *Absolute Values, Valuations and Completions* |
 | the Puiseux series field | $0$ | — | the real closure of $\mathbb{R}(t)$ with $t$ infinite | *Real-Closed and Complete Ordered Fields* |
@@ -87,7 +87,7 @@ The case of $\mathbb{R}$ is the Galois theory of $\mathbb{C}$ over $\mathbb{R}$:
 | $\mathbb{H}$ | a division ring, but not commutative; a skew field | *Quaternion Algebra* |
 | the division ring of fractions of $A_1(k)$ | not commutative | *Ore Domains and Division Rings of Fractions* |
 | $\mathbb{Z}$, $\mathbb{Z}[x]$, $\mathbb{Z}[i]$ | commutative domains that are not fields: not every nonzero element is invertible | *The Integers*, *Examples of Rings and Fields* |
-| the zero ring $\{0\}$ | excluded by the convention $1 \neq 0$; a field has $1 \neq 0$ | *Rings*, §2 |
+| the zero ring $\{0\}$ | excluded by the convention $1 \neq 0$; a field has $1 \neq 0$ | *Rings* |
 
 A commutative division ring is a field, so $\mathbb{H}$ is excluded by commutativity alone and not by the absence of inverses. By Wedderburn's little theorem a finite division ring is a field, so there is no finite skew field and *List of Division Rings and Skew Fields* is left with the infinite ones.
 

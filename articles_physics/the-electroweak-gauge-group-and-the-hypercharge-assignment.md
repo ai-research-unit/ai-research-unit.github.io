@@ -1,4 +1,4 @@
-# __The Electroweak Gauge Group and the Hypercharge Assignment in the Fourth-Colour Left–Right Model: The Group and the Derived $Y$__
+# __The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$__
 
 ## Introduction
 
@@ -18,7 +18,7 @@ The strongest objection, named at the start. A computation that reproduces a kno
 
 The order. The group and its two couplings; the three labels and the charge; the anomaly system derived rather than quoted; its linear part solved; the cubic and the three rays; what the conditions leave free; the Witten condition; the scalar's hypercharge and the chain that follows from it; and the framework's position.
 
-This article is now written in the Fourth-Colour Left–Right Model. The group it describes is $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, and the hypercharge it assigns is derived rather than imported: $Y=T_{3R}+\tfrac12(B-L)$, a combination of the two Cartans with the traceless quartet charge. Every hypercharge value in the tables below is unchanged, and none of them is now a free input. The tier is T3 — the numbers are the same, their origin is not.
+This article is now written in the Four Colours Left–Right Model. The group it describes is $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, and the hypercharge it assigns is derived rather than imported: $Y=T_{3R}+\tfrac12(B-L)$, a combination of the two Cartans with the traceless quartet charge. Every hypercharge value in the tables below is unchanged, and none of them is now a free input. The tier is T3 — the numbers are the same, their origin is not.
 
 ## The Group and Its Two Couplings
 
@@ -96,7 +96,7 @@ The charge audit. Recomputing the seven charges from the two labels in exact rat
 
 ## The Anomaly System
 
-Why a chiral theory needs conditions. A gauge symmetry whose left- and right-handed couplings differ can be broken by the quantum measure. The failure is the triangle diagram with three gauge currents, and its coefficient is a sum over the left-handed Weyl fields minus the same sum over the right-handed ones. [Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) derives the coefficient, proves the three lemmas below and verifies the conditions on the observed assignment. This article organises the same material as a system to be solved, which that article does not do.
+Why a chiral theory needs conditions. A gauge symmetry whose left- and right-handed couplings differ can be broken by the quantum measure. The failure is the triangle diagram with three gauge currents, and its coefficient is a sum over the left-handed Weyl fields minus the same sum over the right-handed ones. [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) derives the coefficient, proves the three lemmas below and verifies the conditions on the observed assignment. This article organises the same material as a system to be solved, which that article does not do.
 
 The coefficient. For generators $T_a$ acting on a left-handed Weyl field in the representation $R$,
 
@@ -321,7 +321,7 @@ The framework reaches the algebra of the group and not the assignment. Its abeli
 ## Further Reading
 
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The content this assignment is written for, and the charge table the solution reproduces.
-- [Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The derivation of the triangle coefficient, the three lemmas, and the verification of the conditions on the observed spectrum.
 - [The Gauge Principle in Biquaternionic Form](the-gauge-principle-in-biquaternionic-form.html). The central phase and the charge parameter $ϙ$.
 - [Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)](why-the-biquaternion-algebra-reaches-su-2-but-not-su-3.html). The intrinsic compact algebra $\mathfrak{su}(2)\oplus\mathfrak{u}(1)$ and the colour ceiling.
 - [Chiral Fermions in the Biquaternion Framework](chiral-fermions-in-the-biquaternion-framework.html). Why a central charge cannot be chiral, and the non-central case as the open question.

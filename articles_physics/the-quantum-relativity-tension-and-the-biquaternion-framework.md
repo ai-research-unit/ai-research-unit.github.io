@@ -64,7 +64,7 @@ This is the common ground, and it is established: it is the content of the found
 
 Seven ideas. Six are numbered against the difficulties — ideas 3 and 4 both against difficulty 1, from its two sides. Idea 2 is ground for the relativistic side of several difficulties rather than an answer to one. Difficulties 5 (quantisation) and 6 (the path-integral weight) have no numbered idea of their own: the framework's relation to them is recorded in the programmes below. The table at the end of the section records the correspondence. Each idea is given as the idea, the mechanism, and the edge.
 
-### 1. Put states and observables in one subspace
+### Put states and observables in one subspace
 
 **The idea.** Make the objects of the quantum description elements of one four-dimensional real space instead of two different kinds of object.
 
@@ -72,7 +72,7 @@ Seven ideas. Six are numbered against the difficulties — ideas 3 and 4 both ag
 
 **The edge.** What the normalised Hermitian form, read as the trace, gives is the probability **formula**: for an idempotent and a state the pairing is $p_\pm=\langle\tilde\Pi_{1,2},\tilde{Ϛ}_{\Psi}\rangle_{*}/\langle\tilde{Ϛ}_{\Psi},e_t\rangle_{*}=\mathrm{Sc}(\tilde\Pi_{1,2}\tilde{Ϛ}_{\Psi}^{*})/\mathrm{Sc}(\tilde{Ϛ}_{\Psi})=\tfrac12(1\pm\vec u\cdot\vec s_{\Psi})$, with the trace reading last, at normalisation. What it does not give is the identification of those numbers with physical frequencies. The framework relocates the Born rule from a postulate to a property of the pairing; it does not remove the interpretive step. The idea answers difficulty 2 in the structural sense and not in the operational sense, and the separation is stated in *The Born Rule from the Hermitian Form — Derivation and Comparison*.
 
-### 2. Let the symmetries and the operators live in the same biquaternion space
+### Let the symmetries and the operators live in the same biquaternion space
 
 **The idea.** Do not build a quantum theory and then extend it relativistically. Start from an algebra whose own transformations already are the relativistic ones.
 
@@ -82,7 +82,7 @@ Seven ideas. Six are numbered against the difficulties — ideas 3 and 4 both ag
 
 **Compact and non-compact generators.** The transformations of the frame divide into the compact rotations and the non-compact boosts, and the algebra separates them by the sign of its own invariant form: the three real vector units generate the compact $\mathfrak{su}(2)$ of the rotations and the three imaginary units the non-compact boosts, the invariant form being negative on the first triple and positive on the second. The split is the generator-level form of the same dichotomy the state side uses — the compact slice of the acting elements is where the discrete internal charge lives and the non-compact directions where the continuous rapidity lives (*The Physical Interpretation of the 12 Products*) — so the division of labour between a discrete and a continuous internal label is the sign of one algebraic form. The owner is *The Physical Interpretation of the 12 Products*.
 
-### 3. Derive the signs from the imaginary unit
+### Derive the signs from the imaginary unit
 
 **The idea.** Make the Lorentzian sign pattern a consequence of the algebra rather than a postulate about a metric.
 
@@ -90,7 +90,7 @@ Seven ideas. Six are numbered against the difficulties — ideas 3 and 4 both ag
 
 **The edge.** The derived signs fix the arena. It does not by itself settle the problem of time, which is a statement about dynamics and constraints: the Hamiltonian constraint of canonical quantum gravity and the absence of a preferred time are not addressed by making the time coordinate algebraic. Ideas 3 and 4 share difficulty 1 and each answers a different part of it.
 
-### 4. Make the time a coordinate of the algebra
+### Make the time a coordinate of the algebra
 
 **The idea.** Treat the imaginary character of the time as a structural fact, so that the asymmetry between a parameter and a coordinate has no room to arise.
 
@@ -100,7 +100,7 @@ Seven ideas. Six are numbered against the difficulties — ideas 3 and 4 both ag
 
 **The edge.** This is a statement about the kinematic structure, and it is not yet a dynamics. What is missing is the same object that difficulty 1 names: a formulation in which the constraint structure carries the content, and in which the Schrödinger equation is recovered as a sector equation rather than assumed. *The Schrödinger Equation in Biquaternionic Form* and *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form* give the kinematic pieces; the constraint analysis is not written.
 
-### 5. Read the two evolutions as two classes of acting element
+### Read the two evolutions as two classes of acting element
 
 **The idea.** Stop treating the $*$-unitary evolution and the measurement update as two different kinds of process, and treat them as one process with two kinds of actor.
 
@@ -116,7 +116,7 @@ and the idempotents lie on the algebra's **zero-divisor cone**, whose geometry I
 
 **The dagger identity.** The two classes of acting element are separated by one algebraic fact, and it is the same fact that separates the two evolutions. The dagger product $\tilde{Q}_2\tilde{Q}_2^{*}$ is positive semidefinite, of rank two off the zero-divisor cone and at most one on it, since $\mathrm{Sc}(\tilde{Q}_2\tilde{Q}_2^{*})=\mathrm{Sc}(\tilde{Q}_2^{*}\tilde{Q}_2)=\lVert\tilde{Q}_2\rVert^{2}\geq0$. A $*$-unitary $\tilde{Q}_2$ has $\tilde{Q}_2\tilde{Q}_2^{*}=e_t$ and is rank two; a Hermitian idempotent $\tilde{\Pi}$ has $\tilde{\Pi}\tilde{\Pi}^{*}=\tilde{\Pi}$, of rank one, and lies on the cone. The reversible evolution therefore sits at the top of the dagger's range and the idempotent at its degenerate bottom, and the passage from one to the other is a **drop of rank**. That is the algebraic form of the statement that positivity is the *state* condition: the state is what the dagger sends to a rank-one element, and the reversible operation what it sends to a rank-two one. The interpretation is *The Physical Interpretation of the 12 Products*.
 
-### 6. Read the two statistics from the two classes of representation
+### Read the two statistics from the two classes of representation
 
 **The idea.** Look for spin–statistics in the representation theory of the one algebra rather than in the axioms of a field theory.
 
@@ -124,7 +124,7 @@ and the idempotents lie on the algebra's **zero-divisor cone**, whose geometry I
 
 **The edge.** The spin half is algebraic; the **statistics** half — which bracket is imposed, the anticommutator or the commutator — is transcribed from field theory and not forced by the algebra. The one-mode statement is finite-dimensional, and the field algebra is infinite-dimensional, where both the exterior and the symmetric algebra are available; that the algebra's finite content is exactly the fermionic one is suggestive and not a derivation. *The Spin–Statistics Theorem in Biquaternionic Form* exhibits the theorem in biquaternionic form and states the gap. The idea is the most promising place for a genuinely new result, precisely because it is where the algebra might do work that the field-theoretic axioms do.
 
-### 7. Let the correlation and the light cone share one cone
+### Let the correlation and the light cone share one cone
 
 **The idea.** Give entanglement and causality one biquaternion space instead of treating one as a correlation and the other as a constraint.
 

@@ -3,7 +3,7 @@
 
 ## Introduction
 
-An involutive automorphism $\alpha$ of a group $G$ has a fixed subgroup $G^{\alpha}$, and it also has a larger set of elements with which it is compatible in a weaker sense: those whose inner automorphism commutes with $\alpha$. That set is a subgroup, it contains the fixed subgroup and the centre, and it is exactly the set of elements whose conjugacy defect under $\alpha$ is central. It is the group-level form of the centraliser of the involution, and it is what this article calls the commuting algebra of the involution; the name is justified at the end, where the group algebra is mentioned, and the group itself is the object throughout. The article is the fourth of the involutive `*`-articles; the fixed subgroup is owned by *Involutions and the Fixed-Point Subgroup*, the semidirect product by *Involutive Groups*, §9, and the inner automorphism group by *The Conjugation Representation*.
+An involutive automorphism $\alpha$ of a group $G$ has a fixed subgroup $G^{\alpha}$, and it also has a larger set of elements with which it is compatible in a weaker sense: those whose inner automorphism commutes with $\alpha$. That set is a subgroup, it contains the fixed subgroup and the centre, and it is exactly the set of elements whose conjugacy defect under $\alpha$ is central. It is the group-level form of the centraliser of the involution, and it is what this article calls the commuting algebra of the involution; the name is justified at the end, where the group algebra is mentioned, and the group itself is the object throughout. The article is the fourth of the involutive `*`-articles; the fixed subgroup is owned by *Involutions and the Fixed-Point Subgroup*, the semidirect product by *Involutive Groups*, and the inner automorphism group by *The Conjugation Representation*.
 
 Throughout, $(G,\sigma)$ is an involutive group, $\alpha=\sigma\iota$ is the associated involutive automorphism, $\iota$ is the inversion, $c_g$ is the inner automorphism $x\mapsto gxg^{-1}$, and the action of a subgroup on the fixed subgroup follows *Involutive Group Actions*.
 
@@ -62,7 +62,7 @@ $$
 
 ## The Commuting Subgroup and the Semidirect Product
 
-Let $t$ be the element of order two acting on $G$ by $\alpha$ in the semidirect product $G\rtimes\langle t\rangle$ of *Involutive Groups*, §9, so that $tgt^{-1}=\alpha(g)$.
+Let $t$ be the element of order two acting on $G$ by $\alpha$ in the semidirect product $G\rtimes\langle t\rangle$ of *Involutive Groups*, so that $tgt^{-1}=\alpha(g)$.
 
 **Proposition (the commutation with $t$).** For $g\in G$ the commutator with $t$ is $[g,t]=g\alpha(g)^{-1}$, and
 

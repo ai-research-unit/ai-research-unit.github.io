@@ -12,7 +12,7 @@ We begin with the definition of a module over a commutative ring, then introduce
 
 # Part I: Modules over a Commutative Ring
 
-## 1. Definition of a Module
+## Definition of a Module
 
 Let $R$ be a commutative ring with identity. An **$R$-module** is an abelian group $(M, +)$ equipped with a scalar multiplication
 
@@ -32,7 +32,7 @@ satisfying the following axioms for all $r, s \in R$ and $m, n \in M$:
 
 If $R$ is a field, an $R$-module is exactly a **vector space** over $R$. So modules generalize vector spaces to arbitrary commutative rings.
 
-## 2. Elementary Properties
+## Elementary Properties
 
 Let $M$ be an $R$-module. The following properties follow from the axioms.
 
@@ -60,7 +60,7 @@ $$
 r(m - n) = r m - r n, \qquad (r - s)m = r m - s m.
 $$
 
-## 3. Examples of Modules
+## Examples of Modules
 
 **(a) The ring itself.** Every commutative ring $R$ is an $R$-module, with scalar multiplication given by the ring multiplication.
 
@@ -86,7 +86,7 @@ is an $R$-module with componentwise addition and scalar multiplication.
 
 # Part II: Submodules and Homomorphisms
 
-## 4. Submodules
+## Submodules
 
 A subset $N \subseteq M$ of an $R$-module $M$ is a **submodule** if:
 
@@ -96,7 +96,7 @@ A subset $N \subseteq M$ of an $R$-module $M$ is a **submodule** if:
 
 A submodule of a module over a field is exactly a vector subspace.
 
-## 5. Module Homomorphisms
+## Module Homomorphisms
 
 Let $M$ and $N$ be $R$-modules. An **$R$-module homomorphism** is a function
 
@@ -126,7 +126,7 @@ $$
 
 The kernel is a submodule of $M$, and the image is a submodule of $N$.
 
-## 6. Quotient Modules
+## Quotient Modules
 
 Let $M$ be an $R$-module and $N \subseteq M$ a submodule. The **quotient module** $M/N$ is the set of cosets
 
@@ -152,7 +152,7 @@ $$
 
 # Part III: Free Modules and Bases
 
-## 7. Linear Independence
+## Linear Independence
 
 Let $M$ be an $R$-module. A subset $S \subseteq M$ is **linearly independent** if for every finite subset $\{m_1, \ldots, m_k\} \subseteq S$, the equation
 
@@ -166,7 +166,7 @@ A subset $S \subseteq M$ **spans** $M$ if every element of $M$ can be written as
 
 A **basis** of $M$ is a linearly independent spanning set.
 
-## 8. Free Modules
+## Free Modules
 
 An $R$-module $M$ is **free** if it has a basis. If $M$ has a basis of cardinality $n$, then $M \cong R^n$.
 
@@ -182,13 +182,13 @@ An $R$-module $M$ is **free** if it has a basis. If $M$ has a basis of cardinali
 - $\mathbb{Z}/n\mathbb{Z}$ is a $\mathbb{Z}$-module that is not free for $n \geq 2$.
 - Any ideal $I \subseteq R$ that is not principal is not free as an $R$-module in general.
 
-## 9. Rank
+## Rank
 
 If $M$ is a free $R$-module with a basis of cardinality $n$, we say that $M$ has **rank** $n$. Over a field, the rank is the dimension, and it is well-defined: every basis has the same cardinality.
 
 Over a commutative ring with $1 \neq 0$, the rank of a free module is well-defined: every such ring has the **invariant basis number** property. This property can fail for non-commutative rings: there are non-commutative rings over which $R^m \cong R^n$ for $m \neq n$.
 
-## 10. Torsion
+## Torsion
 
 An element $m \in M$ is a **torsion element** if there exists a nonzero $r \in R$ such that
 
@@ -208,7 +208,7 @@ Over a field, every module is torsion-free. Over a general commutative ring, tor
 
 # Part IV: Comparison with Vector Spaces
 
-## 11. What Carries Over
+## What Carries Over
 
 Many of the basic notions of linear algebra carry over to modules over a commutative ring without change:
 
@@ -218,7 +218,7 @@ Many of the basic notions of linear algebra carry over to modules over a commuta
 - Free modules and bases.
 - Linear independence and spanning sets.
 
-## 12. What Does Not Carry Over
+## What Does Not Carry Over
 
 Several key properties of vector spaces fail for modules over a general commutative ring:
 
@@ -232,11 +232,11 @@ Several key properties of vector spaces fail for modules over a general commutat
 
 **(e) Invertibility is detected by units, not by non-zero determinants.** Over a field, every linear map has a determinant, and invertibility is equivalent to nonzero determinant. Over a general ring, the determinant is still defined, but invertibility is equivalent to the determinant being a **unit** of the ring.
 
-## 13. The Case of a Field
+## The Case of a Field
 
 When $R = F$ is a field, the theory of $F$-modules is exactly the theory of vector spaces over $F$. Every module is free, every submodule is a direct summand, every basis has the same cardinality, and there is no torsion. The classification of finitely generated $F$-modules is trivial: every finitely generated $F$-module is isomorphic to $F^n$ for some $n$.
 
-## 14. The Case of $\mathbb{Z}$
+## The Case of $\mathbb{Z}$
 
 When $R = \mathbb{Z}$, the theory of $\mathbb{Z}$-modules is exactly the theory of abelian groups. Not every abelian group is free: for example, $\mathbb{Z}/n\mathbb{Z}$ is not free. The classification of finitely generated $\mathbb{Z}$-modules is the **structure theorem for finitely generated abelian groups**: every finitely generated abelian group is isomorphic to
 
@@ -246,7 +246,7 @@ $$
 
 for some $r \geq 0$ and $n_1, \ldots, n_k \geq 2$.
 
-## 15. The Case of $\mathbb{C}_{\mathrm{spl}}$
+## The Case of $\mathbb{C}_{\mathrm{spl}}$
 
 When $R = \mathbb{C}_{\mathrm{spl}}$, the split complex numbers, the theory of $\mathbb{C}_{\mathrm{spl}}$-modules is more subtle because $\mathbb{C}_{\mathrm{spl}}$ has zero divisors. A $\mathbb{C}_{\mathrm{spl}}$-module need not be free, and torsion can occur. But since $\mathbb{C}_{\mathrm{spl}} \cong \mathbb{R} \times \mathbb{R}$ as a ring, every $\mathbb{C}_{\mathrm{spl}}$-module decomposes as a pair of $\mathbb{R}$-vector spaces:
 
@@ -260,7 +260,7 @@ where $M_1$ and $\mathsf{M}_2$ are real vector spaces. This reduces the theory o
 
 # Part V: Summary
 
-## 16. Summary of the Theory
+## Summary of the Theory
 
 | Notion | Over a field $F$ | Over a commutative ring $R$ |
 |---|---|---|
@@ -274,7 +274,7 @@ where $M_1$ and $\mathsf{M}_2$ are real vector spaces. This reduces the theory o
 | Determinant | Defined | Defined, invertibility iff unit |
 | Classification | Trivial for f.g. modules | Structure theorem for PIDs |
 
-## 17. The Role of Commutative Rings
+## The Role of Commutative Rings
 
 Commutative rings are the natural setting for:
 

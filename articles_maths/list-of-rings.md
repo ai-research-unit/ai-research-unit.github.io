@@ -36,18 +36,18 @@ The quaternions $\mathbb{H}$ are the non-commutative ring whose every nonzero el
 | $R \times S$ | the pairs $(u, v)$ of invertibles | $(1, 0)(0, 1) = 0$ | a product of the ideals of the factors | *Examples of Rings and Fields* |
 | $\mathbb{Z}/4\mathbb{Z}$ | $\{1, 3\}$ | $2$ is nilpotent, $2^2 = 0$, so the ring is not reduced | local with maximal ideal $(2)$; Artinian | *Reduced Rings and the Nilradical* |
 | $\mathbb{Z}/6\mathbb{Z}$ | $\{1, 5\}$ | $2 \cdot 3 = 0$, neither factor zero | the product $\mathbb{F}_2 \times \mathbb{F}_3$; finite, Artinian | *Modular Arithmetic and the Ring of Residues* |
-| the zero ring $\{0\}$ | $1 = 0$ | — | excluded by the convention $1 \neq 0$ | *Rings*, §2 |
+| the zero ring $\{0\}$ | $1 = 0$ | — | excluded by the convention $1 \neq 0$ | *Rings* |
 
 The non-example that fixes this section is $\mathbb{Z}/6\mathbb{Z}$: it is reduced, being the product $\mathbb{F}_2 \times \mathbb{F}_3$, and it is not an integral domain, since $2 \cdot 3 = 0$ with both factors nonzero.
 
 ## Characteristic
 
-The characteristic is that of *Rings*, §1: the least $n \geq 1$ with $n \cdot 1 = 0$, or $0$ if there is none. The table records where each value occurs among the rings above.
+The characteristic is that of *Rings*: the least $n \geq 1$ with $n \cdot 1 = 0$, or $0$ if there is none. The table records where each value occurs among the rings above.
 
 | Characteristic | Rings | Introduced in |
 |---|---|---|
-| $0$ | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$ | *Rings*, §1; *The Integers*, *The Rational Numbers*, *The Real Numbers*, *The Complex Numbers*, *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Quaternion Algebra*, *Split-Biquaternion Algebra*, *Introduction to the Algebra of Biquaternions* |
-| $0$ | $R[x]$, $R[[x]]$, $k(x)$, $k((t))$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-5}]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$ | *Polynomial Rings and Rational Functions*, *Formal Power Series and Completion*, *Fields*, §19, *Absolute Values, Valuations and Completions*, *Examples of Rings and Fields*, *Algebraic Number Theory*, *Bézout Domains* |
+| $0$ | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$, $\mathbb{C}_{\mathrm{spl}}$, $\mathbb{C}_{\mathrm{dln}}$, $\mathbb{H}$, $\mathbb{B}_{\mathrm{spl}}$, $\mathbb{B}$ | *Rings*; *The Integers*, *The Rational Numbers*, *The Real Numbers*, *The Complex Numbers*, *Split-Complex Algebra*, *Dual-Numbers Algebra*, *Quaternion Algebra*, *Split-Biquaternion Algebra*, *Introduction to the Algebra of Biquaternions* |
+| $0$ | $R[x]$, $R[[x]]$, $k(x)$, $k((t))$, $\mathbb{Z}[i]$, $\mathbb{Z}[\sqrt{2}]$, $\mathbb{Z}[\sqrt{-5}]$, $\mathcal{O}_K$, $\overline{\mathbb{Z}}$ | *Polynomial Rings and Rational Functions*, *Formal Power Series and Completion*, *Fields*, *Absolute Values, Valuations and Completions*, *Examples of Rings and Fields*, *Algebraic Number Theory*, *Bézout Domains* |
 | $p$ | $\mathbb{F}_p$, $\mathbb{F}_{p^n}$ | *Finite Fields* |
 | $p$ | $\mathbb{F}_p[[t]]$ | *Local Fields* |
 | $n$ | $\mathbb{Z}/n\mathbb{Z}$ | *Modular Arithmetic and the Ring of Residues* |
@@ -62,7 +62,7 @@ A finite ring has nonzero characteristic, and a ring of characteristic $0$ conta
 | $R[x]$ | the invertibles of $R$ | none when $R$ is a domain | principal when $R$ is a field; Noetherian when $R$ is | *Polynomial Rings and Rational Functions* |
 | $R[x_1, \dots, x_n]$ | the invertibles of $R$ | none when $R$ is a domain | finitely generated ideals, Noetherian when $R$ is | *Polynomial Rings and Rational Functions* |
 | $R[[x]]$ | the series with unit constant term | none when $R$ is a domain | local when $R$ is a field | *Formal Power Series and Completion* |
-| $k(x)$ | every nonzero rational function | none | only $0$ and $k(x)$; field | *Fields*, §19 |
+| $k(x)$ | every nonzero rational function | none | only $0$ and $k(x)$; field | *Fields* |
 | $k((t))$ | the Laurent series with nonzero leading term | none | the valuation ring $k[[t]]$; field | *Absolute Values, Valuations and Completions* |
 | $k[[x]]$ | the series with nonzero constant term | none when $k$ is a field | local with maximal ideal $(x)$ | *Examples of Rings and Fields* |
 | $k[x, x^{-1}]$ | the monomials $c x^m$, $c \neq 0$ | none | principal; the group ring $k[\mathbb{Z}]$ | *Group Algebras* |
@@ -119,7 +119,7 @@ An object that a reader may expect among the rings, and does not find, is record
 |---|---|---|
 | the octonions $\mathbb{O}$ | a division algebra, but multiplication is not associative, so $\mathbb{O}$ is not a ring | *Octonion Algebra* |
 | the sedenions $\mathbb{S}$ | a sixteen-dimensional real algebra with zero divisors, whose multiplication is not associative; neither a ring nor a division algebra | *Division Algebras* |
-| the zero ring $\{0\}$ | a ring, but excluded from every list by the corpus convention $1 \neq 0$ | *Rings*, §2 |
+| the zero ring $\{0\}$ | a ring, but excluded from every list by the corpus convention $1 \neq 0$ | *Rings* |
 | a Lie algebra $\mathrm{G}$ | not a ring: the bracket is bilinear and antisymmetric but not associative | *Lie Algebras* |
 
 ## Summary

@@ -4,7 +4,7 @@
 
 Localization is the operation of adjoining inverses for a chosen set of elements. It is the ring-theoretic analogue of passing from $\mathbb{Z}$ to $\mathbb{Q}$, and it is the basic tool that lets one study a ring near a prime ideal while forgetting the rest. Two constructions are its extreme cases: inverting every nonzero element of an integral domain produces the **fraction field** $\operatorname{Frac}(R)$, and inverting every element outside a prime ideal produces a **local ring** $R_\mathrm{P}$, one in which a single maximal ideal controls the whole structure.
 
-The construction is carried out here in full, including the equivalence relation, because for rings with zero divisors the naive rule $r/s = r'/s'$ if and only if $rs' = r's$ is wrong and must be replaced by a rule that permits clearing annihilators. Throughout, $R$ is a commutative ring with $1 \neq 0$; it need not be a domain, and where a domain is required this is stated. Units and zero divisors are as in *Rings*, §§8–9, associates as in *Integral Domains*, and ideals and quotients are as in *Rings*, §§6–7.
+The construction is carried out here in full, including the equivalence relation, because for rings with zero divisors the naive rule $r/s = r'/s'$ if and only if $rs' = r's$ is wrong and must be replaced by a rule that permits clearing annihilators. Throughout, $R$ is a commutative ring with $1 \neq 0$; it need not be a domain, and where a domain is required this is stated. Units and zero divisors are as in *Rings*, associates as in *Integral Domains*, and ideals and quotients are as in *Rings*.
 
 ---
 

@@ -112,7 +112,7 @@ No-signaling is not a dynamical theorem in this interpretation; it is the cyclic
 
 With the algebraic structure of the entangled subsystem in place, we can ask what the framework contributes to each of the five debates.
 
-### 1. Local realism and "spooky action at a distance"
+### Local realism and "spooky action at a distance"
 
 The EPR argument asks whether quantum physics is *complete*: whether the state description exhausts physical reality, or whether there are additional "elements of reality" that the formalism does not represent. The argument proceeds by assuming local realism — that physical properties are localized and that no influence propagates faster than light — and concludes that either quantum physics is incomplete or the assumption of local realism is wrong.
 
@@ -120,7 +120,7 @@ The biquaternion framework does not answer this question. What it does is state 
 
 Whether this structural interpretation satisfies a local realist depends on what "local realism" is taken to require. If local realism requires that all correlations be traceable to dynamical influences propagating through space, then the framework's interpretation of entanglement is incompatible with it — as is standard quantum physics. If local realism can be rephrased as a requirement on the *structure* of physical states, then the framework offers a language in which the requirement can be more sharply stated. The framework does not legislate which of these interpretations is correct; it merely makes the structural character of the correlations more explicit.
 
-### 2. Violation of Bell's inequalities
+### Violation of Bell's inequalities
 
 Bell's theorem says that no local hidden-variable model can reproduce the quantum correlations of the singlet. The framework reproduces the standard correlation function $E(\vec u_a, \vec u_b) = -\vec u_a\cdot\vec u_b$ and the standard Tsirelson bound $2\sqrt{2}$ for the CHSH combination. Bell's theorem is untouched.
 
@@ -128,7 +128,7 @@ What the framework changes is the *location* of the non-classicality. In the Hil
 
 This is a clarification of where the quantum character sits, not a resolution of the tension. Bell's theorem stands: the algebra is not a local hidden-variable model, and its correlations cannot be simulated by any local classical model.
 
-### 3. The measurement problem
+### The measurement problem
 
 The measurement problem is the fact that standard quantum physics has two kinds of time evolution — $*$-unitary and projective — and the formalism does not say when each applies. Various solutions have been proposed (many-worlds, decoherence, collapse models, relational quantum physics), but there is no consensus.
 
@@ -141,7 +141,7 @@ The reversible/irreversible dichotomy is not an additional postulate; it is the 
 
 But the reframing does not solve the problem. The framework does not say which idempotent is selected in a given measurement, or why the transition from $*$-unitary to idempotent action occurs. The selection problem persists. What the framework offers is a cleaner *statement* of the problem, not a solution.
 
-### 4. Instantaneous correlation versus no-communication
+### Instantaneous correlation versus no-communication
 
 The conceptual tension is that measurements on one particle seem to instantaneously affect the state of a distant particle, while relativity forbids faster-than-light communication. The resolution is that the "effect" is conditional — the conditional state of particle 2 depends on Alice's choice, but the unconditional state does not — and the no-communication theorem shows that no signal can be transmitted.
 
@@ -149,7 +149,7 @@ In the biquaternion framework, this resolution has a clean algebraic form. The c
 
 This is not a new resolution; it is the standard resolution stated in algebraic language. But the algebraic form makes vivid *why* the tension is conceptual and not physical: the correlations live in the joint state, the joint state is not accessible from either factor alone, and the reduction that gives the reduced state of either factor is invariant under local operations on the other.
 
-### 5. Quantum versus classical entanglement
+### Quantum versus classical entanglement
 
 The most contested debate in the list is whether "entanglement" is a strictly quantum phenomenon or whether analogous non-separable structures in classical wave optics and classical vector spaces deserve the name. The dispute is partly terminological and partly substantive, and the two are not always clearly separated.
 
@@ -168,7 +168,7 @@ $$
 \tilde\Pi_A \otimes \tilde\Pi_B \quad (\text{quantum}) \qquad \text{and} \qquad \tilde Q_A \otimes \tilde\Pi_B \quad (\text{classical}),
 $$
 
-which is the same reversible/irreversible dichotomy that the framework already uses to distinguish evolution from measurement (see Section 3 of this list).
+which is the same reversible/irreversible dichotomy that the framework already uses to distinguish evolution from measurement (see *The measurement problem* of this list).
 
 The companion article, *The Quantum–Classical Divide in the Biquaternion Framework: An Operational Criterion*, develops this in detail. It engages with the Korolkova–Sánchez-Soto–Leuchs paper, maps the paper's four subsets (two objects; non-local; two measurements; non-separable) to the framework's algebra, distinguishes fundamental from derived elements of the tensor-product space, and states what the framework adds — a natural algebraic home for the criterion, and a structural reason for it — and what remains open — a dynamics of the cross-sector coupling, and an empirical prediction the operational criterion does not already have.
 
@@ -278,7 +278,7 @@ The honest position is this. The framework makes certain structural features of 
 - J. S. Bell, "On the Einstein–Podolsky–Rosen paradox," *Physics* **1** (1964) 195–200, for Bell's theorem.
 - E. Schrödinger, "Discussion of probability relations between separated systems," *Mathematical Proceedings of the Cambridge Philosophical Society* **31** (1935) 555–563, for the original discussion of the reduced density matrix and steering.
 - A. Aspect, P. Grangier, G. Roger, "Experimental tests of realistic local theories via Bell's theorem," *Physical Review Letters* **47** (1981) 460–463, and subsequent experiments, for the experimental violation of Bell's inequalities.
-- N. Korolkova, L. Sánchez-Soto, and G. Leuchs, "An operational distinction between quantum entanglement and classical non-separability," arXiv:2405.15692 (2024), for the operational criterion discussed in Section 5 and developed in the companion article.
+- N. Korolkova, L. Sánchez-Soto, and G. Leuchs, "An operational distinction between quantum entanglement and classical non-separability," arXiv:2405.15692 (2024), for the operational criterion discussed in *Quantum versus classical entanglement* and developed in the companion article.
 - Michael A. Nielsen and Isaac L. Chuang, *Quantum Computation and Quantum Information* (Cambridge, 2000), for the standard treatment of entanglement, Bell states, and the no-communication theorem.
 - Wojciech H. Zurek, "Decoherence, einselection, and the quantum origins of the classical," *Reviews of Modern Physics* **75** (2003) 715–775, for the modern understanding of the quantum/classical transition.
 - Robert F. Spekkens, "Evidence for the epistemic view of quantum states: A toy theory," *Physical Review A* **75** (2007) 032110, and subsequent work, for a careful treatment of the quantum/classical divide.

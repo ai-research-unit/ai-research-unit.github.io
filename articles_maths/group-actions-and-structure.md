@@ -33,7 +33,7 @@ $$
 
 so the size of every orbit divides $|G|$.
 
-**Proof.** If $b = a h$ with $h \in \operatorname{Stab}(x)$, then $b \cdot x = a \cdot (h \cdot x) = a \cdot x$, so $\Phi_x$ is well defined. It is surjective by definition of the orbit. If $a \cdot x = b \cdot x$, then $b^{-1} a \cdot x = x$, so $b^{-1} a \in \operatorname{Stab}(x)$ and hence $a \operatorname{Stab}(x) = b \operatorname{Stab}(x)$; so $\Phi_x$ is injective. When $G$ is finite, $G / \operatorname{Stab}(x)$ is a coset space of size $[G : \operatorname{Stab}(x)]$, which equals $|G| / |\operatorname{Stab}(x)|$ by *Groups*, §6.
+**Proof.** If $b = a h$ with $h \in \operatorname{Stab}(x)$, then $b \cdot x = a \cdot (h \cdot x) = a \cdot x$, so $\Phi_x$ is well defined. It is surjective by definition of the orbit. If $a \cdot x = b \cdot x$, then $b^{-1} a \cdot x = x$, so $b^{-1} a \in \operatorname{Stab}(x)$ and hence $a \operatorname{Stab}(x) = b \operatorname{Stab}(x)$; so $\Phi_x$ is injective. When $G$ is finite, $G / \operatorname{Stab}(x)$ is a coset space of size $[G : \operatorname{Stab}(x)]$, which equals $|G| / |\operatorname{Stab}(x)|$ by *Groups*.
 
 The theorem is the workhorse of the subject. Two immediate consequences are used constantly. First, the orbit decomposition
 
@@ -43,7 +43,7 @@ $$
 
 expresses the size of a $G$-set as a sum of divisors of $|G|$. Second, if $G$ acts transitively on $X$, then $X$ is isomorphic to the coset $G$-set $G/H$ for $H = \operatorname{Stab}(x)$, and so the transitive $G$-sets are classified up to isomorphism by the conjugacy classes of subgroups of $G$.
 
-**Example.** The action of $S_4$ on the six two-element subsets of $\{1,2,3,4\}$ is transitive, and the stabiliser of $\{1,2\}$ has order $4$, so $6 = 24/4$, in accordance with *Groups*, §11.
+**Example.** The action of $S_4$ on the six two-element subsets of $\{1,2,3,4\}$ is transitive, and the stabiliser of $\{1,2\}$ has order $4$, so $6 = 24/4$, in accordance with *Groups*.
 
 **Example.** Let $H \leq G$ and let $G$ act on $G/H$ by left translation. The action is transitive and the stabiliser of the coset $H$ is $H$ itself. The kernel of the action is the **core** $\bigcap_{a \in G} a H a^{-1}$, the largest subgroup of $H$ normal in $G$; thus $G/\operatorname{core}(H)$ embeds in $\operatorname{sym}(G/H)$.
 

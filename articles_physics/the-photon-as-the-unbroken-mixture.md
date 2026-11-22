@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The electromagnetism section of this category is a set of articles whose equations are exact and whose field is one field. The fourth-colour left–right model adds a group with three neutral gauge bosons instead of two. What does that addition change in the section, given that Maxwell's equations are not touched?
+**The question.** The electromagnetism section of this category is a set of articles whose equations are exact and whose field is one field. The Four Colours Left–Right Model adds a group with three neutral gauge bosons instead of two. What does that addition change in the section, given that Maxwell's equations are not touched?
 
 **The answer in one line.**
 
@@ -20,11 +20,11 @@ $$
 
 **What the article claims.** That the photon is a particular combination of three neutral gauge fields; that the combination's **direction** is fixed by two neutrality conditions and requires no choice; that the direction is the coefficient vector of $Q$, so the photon is the unique combination that carries zero charge on every vacuum; and that the section's other articles survive verbatim, their equations untouched.
 
-**What the article does not claim.** That the photon's dynamics changes. That photon mass or charge quantisation is modified. That the mixture is observable: it is not, at any energy, and §5 says why. **And it does not compute the photon's coefficients in the three gauge fields**, because those coefficients carry the three couplings; they are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). §4 states that boundary.
+**What the article does not claim.** That the photon's dynamics changes. That photon mass or charge quantisation is modified. That the mixture is observable: it is not, at any energy, and *Why the Mixture Is Unobservable* says why. **And it does not compute the photon's coefficients in the three gauge fields**, because those coefficients carry the three couplings; they are in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). *Direction and Coordinates: Where This Article Stops* states that boundary.
 
 **Why the distinction matters.** The neutral sector has a shape and a size. The shape — three fields, one surviving combination, its direction — is fixed by the vacuum and is arithmetic. The size — how much of each field the photon contains — is fixed by the three couplings and moves when they do. **An article that prints the first as though it were the second smuggles a moving number into a fixed statement.** This article keeps the first and sends the second to the article that owns the couplings.
 
-## 1. Why the Photon Is the Mixed Object
+## Why the Photon Is the Mixed Object
 
 **Three neutral fields, two conditions, one direction.** That counting is the whole argument, and everything else in the article is a computation of it.
 
@@ -46,9 +46,9 @@ $$
 
 **1.3 The counting, stated as the whole argument.** Three neutral fields, two independent vacuum conditions, one null direction. **A frame with two neutral fields and one condition would have to choose which combination is the photon. This frame does not have to choose**, and that is the difference the fourth colour makes to the electromagnetic section.
 
-**1.4 The objection, and the answer.** The objection: a null direction of a mass matrix is a fact about masses, so the photon's composition has been read off the mass spectrum and is not independent. **The answer: the null direction is a fact about charge.** §2.2 shows that the direction is the coefficient vector of $Q$, and that its being null is the neutrality of the two vacua. The mass matrix is one way to reach the direction, not the reason it exists.
+**1.4 The objection, and the answer.** The objection: a null direction of a mass matrix is a fact about masses, so the photon's composition has been read off the mass spectrum and is not independent. **The answer: the null direction is a fact about charge.** *The Direction, Derived Three Ways* shows that the direction is the coefficient vector of $Q$, and that its being null is the neutrality of the two vacua. The mass matrix is one way to reach the direction, not the reason it exists.
 
-## 2. The Direction, Derived Three Ways
+## The Direction, Derived Three Ways
 
 **Three routes, and they agree.** Each is a computation on the same three-dimensional neutral space; none of them needs a numerical value of a coupling.
 
@@ -74,7 +74,7 @@ $$
 \bigl(1,\ 1,\ \tfrac12\cdot\sqrt{\tfrac83}\bigr)=\bigl(1,\,1,\,\sqrt{\tfrac23}\bigr)=\bigl(1,\,1,\,0.816497\bigr) .
 $$
 
-**The overall sign of each $a_i$ is free**, because only the products $a_ia_i^{\mathsf T}$ enter the matrix, and the sign of the null vector is free because a photon is a line. **The relative sign of $a_1$ and $a_2$ is not free**, and the two neutrality tests of §2.2 are what fix it.
+**The overall sign of each $a_i$ is free**, because only the products $a_ia_i^{\mathsf T}$ enter the matrix, and the sign of the null vector is free because a photon is a line. **The relative sign of $a_1$ and $a_2$ is not free**, and the two neutrality tests of *The Direction, Derived Three Ways* are what fix it.
 
 **2.2 The direction is the charge vector, and that is why it is null.** This is the route that explains the other two. Write the charge in the neutral-generator basis,
 
@@ -100,7 +100,7 @@ $$
 \text{left-handed: }\bigl(\tfrac12,-\tfrac12,0\bigr).
 $$
 
-**A direction that annihilates both is orthogonal to both**, so it is the cross product of the two rows, which is again the vector of §2.1. Writing the two conditions as equations on $(a,b,c)$,
+**A direction that annihilates both is orthogonal to both**, so it is the cross product of the two rows, which is again the vector of *The Direction, Derived Three Ways*. Writing the two conditions as equations on $(a,b,c)$,
 
 $$
 \tfrac12 b-\sqrt{\tfrac38}\,c=0,
@@ -112,7 +112,7 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **2.4 Why three routes and not one claim.** Routes 2.1 and 2.3 use the same two vectors, because **the vacuum vector of a scalar line is the charge vector of the fermion line it corresponds to** — the two neutral scalars that take the vevs are the partners of the two neutral leptons. So 2.1 is the scalar side of an identity and 2.3 is the fermion side. **The agreement is a consistency check on the embedding, not a coincidence**, and route 2.2 is why the identity holds at all: $d$ is $Q$'s coefficient vector, and both routes test the neutrality of the same two lines.
 
-## 3. What the Triple Says
+## What the Triple Says
 
 **Two numbers and a normalisation.** The triple is not three independent facts.
 
@@ -122,9 +122,9 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **3.3 The third entry is not an independent prediction.** Its value follows from the normalisation of one generator and from the factor $\tfrac12$ that hypercharge already carries. **A reader who counts three numbers here thinks the photon's composition is less constrained than it is**: two conditions on three unknowns leave one direction, and the direction's third entry is a bookkeeping choice, not a measurement.
 
-**3.4 Why the same $\sqrt{3/8}$ keeps appearing.** It is the eigenvalue of $T^{15}$ on a lepton line, $B-L=-1$ with $B-L=\sqrt{8/3}\,T^{15}$, so $T^{15}=-\sqrt{3/8}$. **The same number enters $|a_1|^2=\tfrac14+\tfrac38=\tfrac58$**, which is the coefficient of the heavy neutral's mass, and it enters the neutrality test of §2.2 by cancelling exactly. One normalisation, three appearances, and no coupling anywhere in the three.
+**3.4 Why the same $\sqrt{3/8}$ keeps appearing.** It is the eigenvalue of $T^{15}$ on a lepton line, $B-L=-1$ with $B-L=\sqrt{8/3}\,T^{15}$, so $T^{15}=-\sqrt{3/8}$. **The same number enters $|a_1|^2=\tfrac14+\tfrac38=\tfrac58$**, which is the coefficient of the heavy neutral's mass, and it enters the neutrality test of *The Direction, Derived Three Ways* by cancelling exactly. One normalisation, three appearances, and no coupling anywhere in the three.
 
-## 4. Direction and Coordinates: Where This Article Stops
+## Direction and Coordinates: Where This Article Stops
 
 **One distinction, stated once, and it decides what belongs here.**
 
@@ -136,9 +136,9 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **4.4 Why the triple is so often mistaken for the coordinates.** In the case the unified literature studies, the three couplings are equal, the weighting is the same for all three fields, and the coordinates coincide with the direction. **The triple is then both at once**, and that is the origin of the misreading: what looks like a property of the photon is a property of the photon and of an assumption about three couplings. **The direction is the photon's. The coincidence is the assumption's.**
 
-**4.5 What follows for this article.** No number printed here depends on a coupling. **The direction, the rank of the mass matrix, the neutrality conditions, the field-strength statement of §6 and the observability argument of §5 are all scale-free**, and they are the article's content.
+**4.5 What follows for this article.** No number printed here depends on a coupling. **The direction, the rank of the mass matrix, the neutrality conditions, the field-strength statement of *The Photon and the Corpus's Own Electromagnetism* and the observability argument of *Why the Mixture Is Unobservable* are all scale-free**, and they are the article's content.
 
-## 5. Why the Mixture Is Unobservable
+## Why the Mixture Is Unobservable
 
 **The reason the section can keep its equations, and the reason a critic cannot ask for a measurement.**
 
@@ -150,7 +150,7 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **5.4 The honest formulation.** The frame adds a true statement about the photon's identity that no experiment can test. **That is not a weakness of the statement — a structural statement need not be testable — but it does mean the electromagnetic section's experimental content is untouched, and it must not be presented as newly supported.**
 
-## 6. The Photon and the Corpus's Own Electromagnetism
+## The Photon and the Corpus's Own Electromagnetism
 
 **One connection the frame can make and the literature cannot, and it is worth stating carefully.**
 
@@ -160,9 +160,9 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **6.3 The compatibility as a test.** Take the frame's $A_\mu$ and compute its field strength. It is $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$ with no extra term, because a linear combination adds no term to the exterior derivative. **So the category's bivector construction applies to the mixture verbatim**, which is why the section's other articles need no edit.
 
-**6.4 What would break the compatibility.** A coefficient that varied in spacetime. **It does not: the coefficients are numbers.** A number that depends on the renormalisation scale is still constant in spacetime, so the scale dependence of §4.2 leaves $F=\mathrm dA$ untouched, and the compatibility is not hostage to the coupling sector.
+**6.4 What would break the compatibility.** A coefficient that varied in spacetime. **It does not: the coefficients are numbers.** A number that depends on the renormalisation scale is still constant in spacetime, so the scale dependence of *Direction and Coordinates: Where This Article Stops* leaves $F=\mathrm dA$ untouched, and the compatibility is not hostage to the coupling sector.
 
-## 7. What the Frame Adds to the Section
+## What the Frame Adds to the Section
 
 **One article and one completed sentence, and nothing else.**
 
@@ -180,7 +180,7 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **7.4 Why one article and not an edit everywhere.** Because the mixture is a fact about the field's identity, and the identity is used once, at the field's definition. **Everything after that is dynamics, and dynamics does not care which linear combination of heavy fields a light field is made of.** The Standard Model's own textbooks state the $W^{3}$–$B$ mixture once and then never again, and the section's articles are written the same way.
 
-## 8. The Checks
+## The Checks
 
 | claim | check | result |
 |---|---|---|
@@ -202,17 +202,17 @@ gives $a=b=2\sqrt{3/8}\,c$, whose ratios are $(1,1,\sqrt{2/3})$ once more.
 
 **The row that is an identity rather than a coincidence.** $a_1\cdot d=a_2\cdot d=0$ is one statement twice: **both vacuum lines are neutral, and $Q$ is the operator that says so.** The photon survives the chain not because a $3\times3$ determinant happens to vanish, but because the unbroken direction was chosen to be the charge.
 
-## 9. Distinctions That Are Easy to Lose
+## Distinctions That Are Easy to Lose
 
-The direction is not the coefficients. $(1,1,\sqrt{2/3})$ is a vector on generators; the coefficients in the three gauge fields are that vector weighted by the three couplings, and they are in the coupling article (§4).
+The direction is not the coefficients. $(1,1,\sqrt{2/3})$ is a vector on generators; the coefficients in the three gauge fields are that vector weighted by the three couplings, and they are in the coupling article (*Direction and Coordinates: Where This Article Stops*).
 
-The mixture does not modify Maxwell's equations. It is a statement about the field's identity, and $F=\mathrm dA$ is unchanged (§6.3).
+The mixture does not modify Maxwell's equations. It is a statement about the field's identity, and $F=\mathrm dA$ is unchanged (*The Photon and the Corpus's Own Electromagnetism*).
 
-Unobservable does not mean unimportant. A structural statement need not be testable; it must not be sold as tested (§5.4).
+Unobservable does not mean unimportant. A structural statement need not be testable; it must not be sold as tested (*Why the Mixture Is Unobservable*).
 
-The $\sqrt{2/3}$ is not a dynamical number. It is the fifteenth Cartan's normalisation, and it moves with a choice of generator basis (§3.2).
+The $\sqrt{2/3}$ is not a dynamical number. It is the fifteenth Cartan's normalisation, and it moves with a choice of generator basis (*What the Triple Says*).
 
-The photon is not $B$. The $\mathrm{U}(1)$ boson at the end of the chain is $B$; the photon is the combination of three fields that annihilates both neutrals (§1.1, §2.3).
+The photon is not $B$. The $\mathrm{U}(1)$ boson at the end of the chain is $B$; the photon is the combination of three fields that annihilates both neutrals (*Why the Photon Is the Mixed Object*, *The Direction, Derived Three Ways*).
 
 Three neutral gauge bosons are not three scalars. All three are gauge fields, and the scalar sector's neutral states are a separate object.
 
@@ -226,7 +226,7 @@ Three neutral gauge bosons are not three scalars. All three are gauge fields, an
 
 **The three routes.** The null vector of the neutral mass matrix, the coefficient vector of $Q$, and the cross product of the two neutral lepton lines. The first and the third test the same two vectors from the scalar and the fermion side; the second is why they agree.
 
-**The boundary.** The direction is algebra and is settled here. The coefficients in the three gauge fields, and the value of the angle that follows from them, are the coupling article's (§4).
+**The boundary.** The direction is algebra and is settled here. The coefficients in the three gauge fields, and the value of the angle that follows from them, are the coupling article's (*Direction and Coordinates: Where This Article Stops*).
 
 **The addition.** One article of three statements, and one sentence completed in the articles that define the field; their equations are unchanged.
 
@@ -252,8 +252,8 @@ Three neutral gauge bosons are not three scalars. All three are gauge fields, an
 - [The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons](the-breaking-chain-and-the-boson-spectrum.html). The chain, the neutral mass matrix, and the same triple in its own place.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The photon's coefficients in the three gauge fields, and the value of the angle they produce.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the $B-L$ normalisation behind $\sqrt{2/3}$.
-- [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The group, the sixteen, and the covariant derivative whose neutral part is mixed here.
-- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html). The category's own construction, which the mixture leaves intact (§6).
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The group, the sixteen, and the covariant derivative whose neutral part is mixed here.
+- [Maxwell's Equations in the Biquaternionic Formulation](maxwells-equations-in-the-biquaternionic-formulation.html). The category's own construction, which the mixture leaves intact (*The Photon and the Corpus's Own Electromagnetism*).
 - [The Field-Strength Biquaternion and Its Invariants](the-field-strength-biquaternion-and-its-invariants.html). $F$ as a bivector, and why a linear combination adds no term to it.
 - [The Photon in Biquaternionic Form](the-photon-in-biquaternionic-form.html). The same field in the category's own language, with its polarisation and helicity, and no gauge group.
 - [The $W$ and $Z$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The two massive neutrals the mixture leaves behind.

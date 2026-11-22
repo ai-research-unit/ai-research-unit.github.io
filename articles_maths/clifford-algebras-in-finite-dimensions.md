@@ -25,7 +25,7 @@ We indicate where these differences matter. When we wish to specialize to a fiel
 
 # Part I: The Definition and Universal Property
 
-## 1. The Definition
+## The Definition
 
 Let $R$ be a commutative ring (in which 2 is invertible), and let $M$ be a free $R$-module of finite rank $n$ with a quadratic form $\mathfrak{Q}$.
 
@@ -43,7 +43,7 @@ $$
 
 This definition makes sense over any commutative ring.
 
-## 2. The Universal Property
+## The Universal Property
 
 The construction has a universal property. Let $A$ be a unital associative algebra over $R$. Any $R$-linear map $f : M \to A$ such that
 
@@ -55,7 +55,7 @@ for all $v \in M$ extends uniquely to an algebra homomorphism $Cl(M, \mathfrak{Q
 
 This property is what we mean when we say the Clifford algebra is the "largest" algebra in which the relation $v^2 = \mathfrak{Q}(v) \cdot 1$ holds. It holds over any commutative ring.
 
-## 3. The Fundamental Relation
+## The Fundamental Relation
 
 The fundamental relation
 
@@ -71,7 +71,7 @@ holds over any commutative ring in which 2 is invertible, where $B$ is the bilin
 
 # Part II: The Radical and the Reduction to the Non-Degenerate Case
 
-## 4. The Radical
+## The Radical
 
 The **radical** of $Q$ is the submodule
 
@@ -89,7 +89,7 @@ It is the kernel of the linear map $M \to M^*$, $v \mapsto \langle v,\cdot\rangl
 
 The radical is the obstruction to non-degeneracy, and it is the source of the nilpotent factor in the decomposition.
 
-## 5. The Reduction
+## The Reduction
 
 Over a field, every subspace of a finite-dimensional vector space is a direct summand. So the radical $\mathrm{rad}(Q)$ is a direct summand of $M$, and there is a complement $W$ with
 
@@ -99,7 +99,7 @@ $$
 
 where the restriction of $Q$ to $W$ is non-degenerate. Over a general commutative ring, the radical need not be a direct summand, and the decomposition requires an additional hypothesis. We assume the radical is a direct summand when we state the decomposition over a general commutative ring.
 
-## 6. The Decomposition of a Degenerate Clifford Algebra
+## The Decomposition of a Degenerate Clifford Algebra
 
 **Theorem.** Let $M$ be a free $R$-module of finite rank with quadratic form $\mathfrak{Q}$, radical $\mathrm{rad}(Q)$, and induced non-degenerate form $\bar{Q}$ on $M/\mathrm{rad}(Q)$. Suppose that $M$ is the direct sum of $\mathrm{rad}(Q)$ and a complement $W$ on which $Q$ is non-degenerate. Then there is an algebra isomorphism
 
@@ -121,7 +121,7 @@ The isomorphism is not canonical: it depends on the choice of complement $W$.
 
 **Key difference from the field case.** Over a field, every module is free, so the complement always exists. Over a general commutative ring, the module need not be free, and the complement need not exist. The decomposition holds under the additional hypothesis that the radical is a direct summand.
 
-## 7. The Non-Degenerate Factor
+## The Non-Degenerate Factor
 
 The factor $Cl(M/\mathrm{rad}(Q), \bar{Q})$ is the ordinary Clifford algebra of a non-degenerate form. Its structure depends on the ring $R$ and on the form $\bar{Q}$.
 
@@ -129,7 +129,7 @@ Over a general commutative ring, the non-degenerate Clifford algebra is a centra
 
 **Key difference from the field case.** Over a general commutative ring, the classification of non-degenerate Clifford algebras is much more subtle than over a field. It requires the theory of quadratic forms over rings, and the Brauer group is replaced by the Brauer group of Azumaya algebras over $R$. The classification is the subject of the article *Clifford Algebras over Commutative Rings*.
 
-## 8. The Nilpotent Factor
+## The Nilpotent Factor
 
 The factor $\Lambda(\mathrm{rad}(Q))$ is the **exterior algebra** on the radical. If $(r_i)_{i \in I}$ is a basis of $\mathrm{rad}(Q)$, then
 
@@ -153,7 +153,7 @@ So the degenerate Clifford algebra is semisimple iff the quadratic form is non-d
 
 **The structure of $\Lambda(\mathrm{rad}(Q))$.** Since $M$ has finite rank, $\mathrm{rad}(Q)$ is free of finite rank $r$, and $\Lambda(\mathrm{rad}(Q))$ is free of rank $2^r$. It is local when the base ring is a field, with unique maximal ideal $\Lambda^{\geq 1}(\mathrm{rad}(Q))$; over a non-local ring it need not be local, since the base ring then contributes further maximal ideals.
 
-## 9. The Rank of a Degenerate Clifford Algebra
+## The Rank of a Degenerate Clifford Algebra
 
 Let $M$ be free of finite rank $n$, with radical $\mathrm{rad}(Q)$ of rank $r$ and non-degenerate quotient $M/\mathrm{rad}(Q)$ of rank $n - r$. Then
 
@@ -163,7 +163,7 @@ $$
 
 The non-degenerate factor contributes $2^{n-r}$, and the radical factor contributes $2^r$. The total rank is $2^n$, as expected. The decomposition is compatible with the rank count.
 
-## 10. The Grading and the Filtration in the Degenerate Case
+## The Grading and the Filtration in the Degenerate Case
 
 The tensor product decomposition is compatible with the $\mathbb{Z}/2$-grading of the Clifford algebra and with the natural filtration.
 
@@ -195,7 +195,7 @@ $$
 
 The tensor product decomposition is compatible with the filtration: the filtration on $Cl(M/\mathrm{rad}(Q), \bar{Q})$ and the grading on $\Lambda(\mathrm{rad}(Q))$ combine to give the filtration on $Cl(M, \mathfrak{Q})$.
 
-## 11. The Lie Algebra Structure in the Degenerate Case
+## The Lie Algebra Structure in the Degenerate Case
 
 The Clifford algebra carries a Lie bracket, defined by the commutator
 
@@ -221,7 +221,7 @@ $$
 
 # Part III: Basis and Rank in the Non-Degenerate Case
 
-## 12. Basis
+## Basis
 
 Let $M$ be free of finite rank $n$, with basis $e_1, \ldots, e_n$. The Clifford algebra $Cl(M, \mathfrak{Q})$ has a basis given by the products of generators with strictly increasing indices, including the empty product:
 
@@ -231,7 +231,7 @@ $$
 
 The proof is the same over any commutative ring. Every product of generators can be reordered into a product with increasing indices, using the anticommutation relations $e_i e_j = -e_j e_i$ for $i \neq j$. Each repeated factor $e_i^2$ can be replaced by the scalar $\mathfrak{Q}(e_i)$. So the basis is precisely the set of products with increasing indices.
 
-## 13. Rank
+## Rank
 
 The rank of $Cl(M, \mathfrak{Q})$ as a free $R$-module is
 
@@ -251,13 +251,13 @@ This is true over any commutative ring. The rank does not depend on the ring, on
 
 **Key difference from the field case.** Over a field, the rank is the dimension, and it is well-defined. Over a general commutative ring, the Clifford algebra is free of rank $2^n$ only if the module $M$ is free of rank $n$. If $M$ is not free, the Clifford algebra need not be free, and its rank may not be well-defined.
 
-## 14. $k$-Vectors and Multivectors
+## $k$-Vectors and Multivectors
 
 The elements of degree $k$ are called **$k$-vectors**. The elements of degree 0 are scalars, the elements of degree 1 are vectors, the elements of degree 2 are **bivectors**, the elements of degree 3 are **trivectors**, and so on. Elements that are sums of $k$-vectors of different degrees are called **multivectors**.
 
-## 15. The Volume Element
+## The Volume Element
 
-Let $e_1, \ldots, e_n$ be an **orthogonal** basis, one with $B(e_i, e_j) = 0$ for $i \neq j$, so that the generators anticommute; such a basis exists whenever the form is diagonalizable (§26), in particular over a field, but not over a general commutative ring. The product of all basis generators
+Let $e_1, \ldots, e_n$ be an **orthogonal** basis, one with $B(e_i, e_j) = 0$ for $i \neq j$, so that the generators anticommute; such a basis exists whenever the form is diagonalizable (*The Orthogonal Direct Sum and the Signature*), in particular over a field, but not over a general commutative ring. The product of all basis generators
 
 $$
 \omega = e_1 e_2 \cdots e_n
@@ -278,7 +278,7 @@ So the square of the volume element is a scalar, determined by the discriminant 
 
 This is a finite-dimensional phenomenon: it depends on the existence of a basis and on the rank $n$.
 
-## 16. The Centre
+## The Centre
 
 The **centre** of $Cl(M, \mathfrak{Q})$ is the set of elements that commute with every element. In finite dimensions:
 
@@ -291,7 +291,7 @@ So the Clifford algebra is central exactly when $n$ is even. When $n$ is odd, th
 
 # Part IV: The Even Subalgebra
 
-## 17. The Decomposition
+## The Decomposition
 
 The Clifford algebra decomposes into an even part and an odd part:
 
@@ -301,7 +301,7 @@ $$
 
 where the even part is spanned by the basis elements of even degree (the unit, the bivectors, the four-vectors, etc.) and the odd part by the basis elements of odd degree (the generators, the trivectors, etc.).
 
-## 18. Why the Even Part Is a Subalgebra
+## Why the Even Part Is a Subalgebra
 
 The even part is closed under multiplication. To see this, note that the grade of a product is determined by the grades of the factors modulo 2. If $u$ has grade $k$ and $v$ has grade $\ell$, then the product $uv$ has grade $k + \ell$ modulo 2. This is because each generator $e_i$ either appears in $u$, or in $v$, or in both. If it appears in both, it can be eliminated using $e_i^2 = \mathfrak{Q}(e_i)$, which reduces the count by 2. So the parity of the total count is the sum of the parities.
 
@@ -316,7 +316,7 @@ In particular, the even part is closed under multiplication: it is a subalgebra 
 
 This is true over any commutative ring.
 
-## 19. The Even Subalgebra as a Clifford Algebra
+## The Even Subalgebra as a Clifford Algebra
 
 In finite dimensions, the even subalgebra is itself a Clifford algebra. If $M$ is free of finite rank $n$ with quadratic form $\mathfrak{Q}$, and if $\dim M \geq 1$, then
 
@@ -340,7 +340,7 @@ The isomorphism $Cl^+(M, \mathfrak{Q}) \cong Cl(M', Q')$ is the basis of the ind
 
 # Part V: The Anti-Involutions
 
-## 20. Reversion
+## Reversion
 
 The **reversion** anti-involution is the map
 
@@ -356,7 +356,7 @@ $$
 
 Reversion is an anti-involution: it satisfies $(xy)^{r} = y^{r}x^{r}$ and $(x^{r})^{r} = x$.
 
-## 21. Clifford Conjugation
+## Clifford Conjugation
 
 The **Clifford conjugation** anti-involution is the map
 
@@ -372,7 +372,7 @@ $$
 
 Clifford conjugation is also an anti-involution: it satisfies $(xy)^{\natural} = y^{\natural} x^{\natural}$ and $\overline{x^{\natural}} = x$.
 
-## 22. The Grade Involution
+## The Grade Involution
 
 By composing reversion and Clifford conjugation, we get the **grade involution**:
 
@@ -390,7 +390,7 @@ So the grade involution multiplies an element of grade $k$ by $(-1)^k$. It fixes
 
 The grade involution is an involution, not an anti-involution: it satisfies $\alpha(xy) = \alpha(x)\alpha(y)$ and $\alpha(\alpha(x)) = x$.
 
-## 23. The Behavior on Each Grade
+## The Behavior on Each Grade
 
 The behavior of the three maps depends on the grade of the element. For an element of grade $k$:
 
@@ -404,7 +404,7 @@ These signs depend only on $k$ modulo 4, not on the ring.
 
 # Part VI: The Tensor Product Decomposition
 
-## 24. The Decomposition
+## The Decomposition
 
 The Clifford algebra of a direct sum of two modules with quadratic forms is the graded tensor product of the Clifford algebras of the summands:
 
@@ -414,7 +414,7 @@ $$
 
 In the graded tensor product, odd elements from the two factors anticommute, rather than commute. This ensures that the images of $v_1 \in M_1$ and $v_2 \in \mathsf{M}_2$ anticommute, as required by the Clifford relations.
 
-## 25. Why This Matters
+## Why This Matters
 
 The decomposition reduces the classification of Clifford algebras to the one-dimensional cases. Over any commutative ring, a free module of finite rank can be written as a direct sum of free submodules of rank 1. So the Clifford algebra decomposes as a graded tensor product of rank-one Clifford algebras.
 
@@ -422,7 +422,7 @@ The classification of the rank-one cases, and the resulting periodic pattern, de
 
 **Key difference from the field case.** Over a field, the decomposition is always available because every vector space is free and can be decomposed into one-dimensional subspaces. Over a general commutative ring, the decomposition is available only if the module is free of finite rank. If the module is not free, the decomposition may not exist, and the classification is more subtle.
 
-## 26. The Orthogonal Direct Sum and the Signature
+## The Orthogonal Direct Sum and the Signature
 
 In finite dimensions, the quadratic form can be diagonalized when the base ring is a field: there is a basis in which
 
@@ -438,7 +438,7 @@ $$
 
 This is the form in which the classification is usually stated. The scalars $a_i$ determine the rank-one factors, and their product (up to squares) is the discriminant of the form. Over a field, the discriminant and the Hasse invariant are the complete invariants of the quadratic form, and they determine the Clifford algebra up to isomorphism. Over a general commutative ring, the situation is more subtle.
 
-## 27. The Graded Tensor Product and the Parity
+## The Graded Tensor Product and the Parity
 
 The graded tensor product has a subtlety: the parity of an element in the tensor product is the sum of the parities of its factors. This is compatible with the $\mathbb{Z}/2$-grading of the Clifford algebra:
 
@@ -497,9 +497,9 @@ The classification of the rank-one cases, and the structure of the Clifford alge
 
 # Part VII: The Square Root of a Multivector in the Euclidean Algebra \(Cl_{3,0}\)
 
-## 28. The Problem and the Central Reduction
+## The Problem and the Central Reduction
 
-Fix the Euclidean Clifford algebra \(Cl_{3,0}\), with generators \(e_1,e_2,e_3\), \(e_k^2=+1\) for \(k=1,2,3\), and volume element \(\omega=e_1e_2e_3\). The volume element is central because \(n=3\) is odd (§15), and its square is \(\omega^2=-1\) (§15); it therefore supplies a central imaginary unit inside the algebra, and \(\{1,\omega\}\) spans a copy of the complex numbers in the centre (§16).
+Fix the Euclidean Clifford algebra \(Cl_{3,0}\), with generators \(e_1,e_2,e_3\), \(e_k^2=+1\) for \(k=1,2,3\), and volume element \(\omega=e_1e_2e_3\). The volume element is central because \(n=3\) is odd (*The Volume Element*), and its square is \(\omega^2=-1\) (*The Volume Element*); it therefore supplies a central imaginary unit inside the algebra, and \(\{1,\omega\}\) spans a copy of the complex numbers in the centre (*The Centre*).
 
 The algebra is eight-dimensional over \(R=\mathbb{R}\), so every element has a unique expression
 
@@ -507,7 +507,7 @@ $$
 A = a + b\,\omega,
 $$
 
-where \(a\) and \(b\) are **paravectors** of the underlying three-dimensional space, that is, sums of a scalar and a vector (§14). Because \(\omega\) is central with \(\omega^2=-1\), the product rule is
+where \(a\) and \(b\) are **paravectors** of the underlying three-dimensional space, that is, sums of a scalar and a vector (*$k$-Vectors and Multivectors*). Because \(\omega\) is central with \(\omega^2=-1\), the product rule is
 
 $$
 (a+b\omega)(c+d\omega) = (ac-bd) + (ad+bc)\,\omega,
@@ -521,7 +521,7 @@ $$
 
 The **square-root problem** is: given \(B\in Cl_{3,0}\), find every \(A\) with \(A^2=B\). The reduction to the paravector decomposition is what makes the problem two-dimensional in appearance while remaining eight-dimensional in content, and it is the route by which the square roots of a quaternion or a complex quaternion are obtained once that algebra is identified with \(Cl_{3,0}\).
 
-## 29. The Coupling Equations
+## The Coupling Equations
 
 Write the two paravectors in scalar–vector form,
 
@@ -623,7 +623,7 @@ $$
 |\beta^2-\gamma|^2 = b_S^2 + b_I^2 =: \Delta .
 $$
 
-## 30. The Isolated Roots
+## The Isolated Roots
 
 **Theorem.** A multivector \(B\) with \(b_1,b_2,b_3,b_{12},b_{13},b_{23}\) not all zero has an isolated square root in \(Cl_{3,0}\) for each complex number \(z\) satisfying \(4z^2-4\beta z+\gamma=0\) with \(z\neq0\), namely
 
@@ -639,18 +639,18 @@ $$
 
 and the vectors are \(v_k=(s b_k+S c_k)/(2\sigma)\), \(V_k=(s c_k-S b_k)/(2\sigma)\). The two signs of \(s\) give the two roots \(\pm A\), so that a nonzero \(z\) contributes a pair.
 
-**Proof.** \(\sigma=|z|=s^2+S^2>0\) for \(z\neq0\), so the linear system is solvable and \(v,V\) are given by the formulas of §29. The scalars are recovered from \(z\) by \(s^2=(\sigma+\delta)/2\) and \(S^2=(\sigma-\delta)/2\), and the relative sign of \(s\) and \(S\) is fixed by \(2sS=\tau\); changing both signs gives \(-A\). The lemma of §29 shows that the quadratic is exactly the remaining pair of graded equations, so every solution of the quadratic yields a root and only those.
+**Proof.** \(\sigma=|z|=s^2+S^2>0\) for \(z\neq0\), so the linear system is solvable and \(v,V\) are given by the formulas of *The Coupling Equations*. The scalars are recovered from \(z\) by \(s^2=(\sigma+\delta)/2\) and \(S^2=(\sigma-\delta)/2\), and the relative sign of \(s\) and \(S\) is fixed by \(2sS=\tau\); changing both signs gives \(-A\). The lemma of *The Coupling Equations* shows that the quadratic is exactly the remaining pair of graded equations, so every solution of the quadratic yields a root and only those.
 
 Because the quadratic is of degree two, the count of isolated roots is read off its discriminant:
 
 - if \(b_S+ib_I\neq0\), the two values \(z=(\beta\pm\rho)/2\), \(\rho^2=b_S+ib_I\), are distinct; a value with \(|z|\neq0\) contributes two roots, a value with \(z=0\) contributes none. The generic count is **four** roots, dropping to **two** when one of the two values of \(z\) vanishes;
 - if \(b_S+ib_I=0\), the two values coincide and there are **two** roots (or none, when the common value \(\beta/2\) also vanishes), so the count drops.
 
-The vanishing of one value of \(z\) is exactly the case \(b_S\ge0\) and \(b_I=0\), which is the degeneracy that opens the one-parameter family of §31.
+The vanishing of one value of \(z\) is exactly the case \(b_S\ge0\) and \(b_I=0\), which is the degeneracy that opens the one-parameter family of *The Complex-Scalar Family of Roots*.
 
-## 31. The Complex-Scalar Family of Roots
+## The Complex-Scalar Family of Roots
 
-The reduction of §29 assumed \(\sigma=s^2+S^2\neq0\). The complementary case is genuine and produces a family rather than isolated points.
+The reduction of *The Coupling Equations* assumed \(\sigma=s^2+S^2\neq0\). The complementary case is genuine and produces a family rather than isolated points.
 
 **Theorem.** If and only if \(b_1=b_2=b_3=b_{12}=b_{13}=b_{23}=0\), that is, if and only if \(B=b_0+b_{123}\omega\) is a complex scalar in the subalgebra spanned by \(1\) and \(\omega\), the roots of \(B\) include the whole four-parameter family
 
@@ -660,26 +660,26 @@ $$
 
 with \(v\) and \(V\) real vectors subject only to those two equations.
 
-**Proof.** A root with \(s=S=0\) has the form \(A=v+V\omega\), and \(A^2=(\mathfrak{Q}(v)-\mathfrak{Q}(V))+2B(v,V)\omega\) by the product rule of §28. Conversely the graded equations with \(s=S=0\) force \(b_k=c_k=0\) for every \(k\). The two displayed equations are two affine equations in the six components of \((v,V)\), so their solution set has real dimension four; it is nonempty over \(\mathbb{R}\) because the pair \((\mathfrak{Q}(v),B(v,V))\) takes all prescribed values.
+**Proof.** A root with \(s=S=0\) has the form \(A=v+V\omega\), and \(A^2=(\mathfrak{Q}(v)-\mathfrak{Q}(V))+2B(v,V)\omega\) by the product rule of *The Problem and the Central Reduction*. Conversely the graded equations with \(s=S=0\) force \(b_k=c_k=0\) for every \(k\). The two displayed equations are two affine equations in the six components of \((v,V)\), so their solution set has real dimension four; it is nonempty over \(\mathbb{R}\) because the pair \((\mathfrak{Q}(v),B(v,V))\) takes all prescribed values.
 
-The family sits in the four cases where the data are a complex scalar. When \(b_0b_{123}\neq0\) the two values of \(z\) are distinct and nonzero, so the four isolated roots of §30 coexist with the family; when one value of \(z\) vanishes the family is present and two isolated roots remain; when both vanish the family is the whole root set. The root of \(0\) is the extreme instance: \(b_0=b_{123}=0\), and the roots of \(0\) are the nonzero elements of the family, the null elements \(v+V\omega\) with \(\mathfrak{Q}(v)=\mathfrak{Q}(V)\) and \(B(v,V)=0\) — the isotropic cone of the form.
+The family sits in the four cases where the data are a complex scalar. When \(b_0b_{123}\neq0\) the two values of \(z\) are distinct and nonzero, so the four isolated roots of *The Isolated Roots* coexist with the family; when one value of \(z\) vanishes the family is present and two isolated roots remain; when both vanish the family is the whole root set. The root of \(0\) is the extreme instance: \(b_0=b_{123}=0\), and the roots of \(0\) are the nonzero elements of the family, the null elements \(v+V\omega\) with \(\mathfrak{Q}(v)=\mathfrak{Q}(V)\) and \(B(v,V)=0\) — the isotropic cone of the form.
 
-## 32. The Classification
+## The Classification
 
-Collecting §30 and §31, every \(B\in Cl_{3,0}\) falls into exactly one of the following cases.
+Collecting *The Isolated Roots* and *The Complex-Scalar Family of Roots*, every \(B\in Cl_{3,0}\) falls into exactly one of the following cases.
 
 - **No root.** \(b_S+ib_I=0\), \(\beta=0\), and \(B\) not a complex scalar: for instance \(B=e_3+e_{23}\). Then the quadratic has only the value \(z=0\), which the linear system cannot support. A necessary condition is \(b_0=b_{123}=0\) and \(b_S=b_I=0\).
 - **Two roots.** \(b_S+ib_I=0\) and \(\beta\neq0\), or one value of \(z\) vanishes: the quadratic supplies a single nonzero complex number \(z\), hence the pair \(\pm A\).
 - **Four roots.** \(b_S+ib_I\neq0\) and both values of \(z\) nonzero: two pairs \(\pm A\). This is the generic case.
-- **A complex-scalar family, alone or alongside isolated roots.** \(B=b_0+b_{123}\omega\): the four-parameter family of §31, together with the isolated roots supplied by the values of \(z\).
+- **A complex-scalar family, alone or alongside isolated roots.** \(B=b_0+b_{123}\omega\): the four-parameter family of *The Complex-Scalar Family of Roots*, together with the isolated roots supplied by the values of \(z\).
 
 The three central values of the algebra illustrate the trichotomy: \(B=1\) has the two roots \(\pm1\) and a family; \(B=-1\) has the two roots \(\pm\omega\) and a family; \(B=0\) has the family alone, its nonzero members the null elements.
 
-## 33. The Interpretation of the Data
+## The Interpretation of the Data
 
-The two data \(b_0\) and \(b_{123}\) have a direct reading in terms of the unknown root \(A=v+V\omega\) when it is a complex scalar, that is, in the complex-scalar case of §31: \(b_0 = \mathfrak{Q}(v)-\mathfrak{Q}(V)\), and \(b_{123}=2B(v,V)\) controls their mutual relation. So the scalar coefficient fixes a pair of concentric quadrics on which \(v\) and \(V\) must lie, and the pseudoscalar coefficient fixes their mutual relation; this is the geometric reading of the square-root problem given by Acus and Dargys, whose Clifford-layer algorithm is the closed form of §30–§31 written in the variables \(b_S,b_I,\Delta\).
+The two data \(b_0\) and \(b_{123}\) have a direct reading in terms of the unknown root \(A=v+V\omega\) when it is a complex scalar, that is, in the complex-scalar case of *The Complex-Scalar Family of Roots*: \(b_0 = \mathfrak{Q}(v)-\mathfrak{Q}(V)\), and \(b_{123}=2B(v,V)\) controls their mutual relation. So the scalar coefficient fixes a pair of concentric quadrics on which \(v\) and \(V\) must lie, and the pseudoscalar coefficient fixes their mutual relation; this is the geometric reading of the square-root problem given by Acus and Dargys, whose Clifford-layer algorithm is the closed form of *The Isolated Roots* and *The Complex-Scalar Family of Roots* written in the variables \(b_S,b_I,\Delta\).
 
-For a general element the same two numbers are the real and imaginary parts of the complex number \(\beta^2-\gamma\) of §29, and the existence of roots is decided by its vanishing: \(b_S+ib_I=0\) is the boundary between the four roots and the two, and \(\beta=0\) on that boundary is the frontier with the rootless case.
+For a general element the same two numbers are the real and imaginary parts of the complex number \(\beta^2-\gamma\) of *The Coupling Equations*, and the existence of roots is decided by its vanishing: \(b_S+ib_I=0\) is the boundary between the four roots and the two, and \(\beta=0\) on that boundary is the frontier with the rootless case.
 
 ## Summary
 
@@ -693,7 +693,7 @@ For a general element the same two numbers are the real and imaginary parts of t
 
 **The complex-scalar family** occurs exactly when \(B=b_0+b_{123}\omega\) is a complex scalar: the roots then include the four-parameter family \(v+V\omega\) with \(\mathfrak{Q}(v)-\mathfrak{Q}(V)=b_0\), \(2B(v,V)=b_{123}\), alongside the isolated roots. The roots of \(0\) are the null elements of this family.
 
-**The reading** of the two data is \(b_0=\mathfrak{Q}(v)-\mathfrak{Q}(V)\) and \(b_{123}=2B(v,V)\) in the complex-scalar family: the values \(\mathfrak{Q}(v)\), \(\mathfrak{Q}(V)\) and a bilinear term. The closed form is due to Acus and Dargys; the quadratic of §29 is the form in which this article states and proves it.
+**The reading** of the two data is \(b_0=\mathfrak{Q}(v)-\mathfrak{Q}(V)\) and \(b_{123}=2B(v,V)\) in the complex-scalar family: the values \(\mathfrak{Q}(v)\), \(\mathfrak{Q}(V)\) and a bilinear term. The closed form is due to Acus and Dargys; the quadratic of *The Coupling Equations* is the form in which this article states and proves it.
 
 ---
 

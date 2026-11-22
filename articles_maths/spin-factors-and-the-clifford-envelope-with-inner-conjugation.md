@@ -84,7 +84,7 @@ The middle space has dimension $\dim V - 1$, which is the degree-two shape: two 
 
 ### Construction from the Tensor Algebra
 
-Let $T(V) = \bigoplus_{n\geq0} V^{\otimes n}$ be the tensor algebra of $V$, as in *Tensor Powers and the Free Algebra* and *Modules*, §13. The **Clifford algebra** of the quadratic form $\mathfrak{Q}$ is the quotient
+Let $T(V) = \bigoplus_{n\geq0} V^{\otimes n}$ be the tensor algebra of $V$, as in *Tensor Powers and the Free Algebra* and *Modules*. The **Clifford algebra** of the quadratic form $\mathfrak{Q}$ is the quotient
 
 $$
 \mathrm{Cl}(V, \mathfrak{Q}) = T(V) \big/ I_q ,

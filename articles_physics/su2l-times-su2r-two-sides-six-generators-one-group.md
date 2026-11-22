@@ -18,15 +18,15 @@ $$
 
 **What this article claims.** That the group is present in $\operatorname{End}_{\mathbb{C}}(\mathbb{B})$ without an operator layer; that its two factors are the self-dual and anti-self-dual halves of $\mathfrak{so}(4)$, distinguished by the sign of one bracket; that the same group acts on two different modules, spacetime and internal, and that only the second is a gauge factor; that three of its four roles in physics are already realised; and that whether the fourth is realised is a question about the module and not about the algebra.
 
-**What this article does not claim.** That the algebra supplies a chiral gauge theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the *chiral wall*, stated in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and restated for the frame in [The Fourth-Colour Left–Right Model](the-fourth-colour-left-right-model.html); §3 and §6 quote it and do not re-derive it. **Nor does this article state any coupling value**; where the two factors' strengths would enter, it names the structure and stops.
+**What this article does not claim.** That the algebra supplies a chiral gauge theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the *chiral wall*, stated in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and restated for the frame in [The Four Colours Left–Right Model](the-four-colours-left-right-model.html); *One Group, Two Modules* and *What Would Settle It* quote it and do not re-derive it. **Nor does this article state any coupling value**; where the two factors' strengths would enter, it names the structure and stops.
 
 **Where the other question is answered.** Why the low-energy gauge group has one weak factor and not two is a question about hypercharge, about the multiplet assignment and about a breaking, and it is the Standard Model's chapter: [The Standard Model as the Low-Energy Phase](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html), §*Why the Standard Model Gauges One Side and Not Two*. **This article keeps the group; that section keeps the comparison.**
 
 **One word, five jobs.** *Left* and *right* name, in this corpus, the slot an operator acts on, the label of an element, the helicity of a field, the multiplication side in a product, and — in $\mathrm{SU}(2)_L$ — a gauge factor. **Five meanings of two words is how this subject goes wrong**, so this article says *side* for the multiplication, *letter* for the chirality slot, and *factor* for the gauge group.
 
-**The order.** §1 fixes the group as an abstract object. §2 finds it in the algebra and separates its two halves. §3 separates the two modules the group can act on, which is the technical heart. §4 lists the four roles it plays in physics. §5 is the cost, §6 is what would settle it, §7 is the checks and §8 the distinctions.
+**The order.** *The Group* fixes the group as an abstract object. *The Two Sides in the Algebra* finds it in the algebra and separates its two halves. *One Group, Two Modules* separates the two modules the group can act on, which is the technical heart. *Four Roles in Physics* lists the four roles it plays in physics. *What the Group Costs* is the cost, *What Would Settle It* is what would settle it, *The Checks* is the checks and *Distinctions That Are Easy to Lose* the distinctions.
 
-## 1. The Group
+## The Group
 
 **The algebra.** Complexified, the Lie algebra is two simple ideals that commute:
 
@@ -67,9 +67,9 @@ $$
 \mathrm{SL}(2,\mathbb{C})=\text{its diagonal}.
 $$
 
-**So the left–right group and the Lorentz group are not two unrelated structures.** They are the untied and the tied versions of one object, and §2 shows that the corpus builds exactly this tie, with the involution $*$ as the tie.
+**So the left–right group and the Lorentz group are not two unrelated structures.** They are the untied and the tied versions of one object, and *The Two Sides in the Algebra* shows that the corpus builds exactly this tie, with the involution $*$ as the tie.
 
-## 2. The Two Sides in the Algebra
+## The Two Sides in the Algebra
 
 **Three addresses.** With $\mathfrak{k}=\operatorname{span}_{\mathbb{R}}(\vec e_x,\vec e_y,\vec e_z)$, the algebra's rotor group enters the endomorphisms of $\mathbb{B}$ at three places:
 
@@ -140,9 +140,9 @@ $$
 
 **What the table says.** The corpus contains both groups and the difference between them is one involution. **Untie the two sides and the group is $\mathrm{SU}(2)\times\mathrm{SU}(2)$; tie them by Hermitian conjugation and it is the Lorentz group.** Physics uses the tied version for spacetime and the untied version for internal symmetry, and the arithmetic is the same arithmetic in both cases.
 
-## 3. One Group, Two Modules
+## One Group, Two Modules
 
-**The danger.** §2 shows that the group is native. It does not show that the group can be an *internal* gauge symmetry, and that difference is the whole question. **A group is not a physical symmetry until a module is named**, and this group acts here on two modules that are not the same physics.
+**The danger.** *The Two Sides in the Algebra* shows that the group is native. It does not show that the group can be an *internal* gauge symmetry, and that difference is the whole question. **A group is not a physical symmetry until a module is named**, and this group acts here on two modules that are not the same physics.
 
 **The first module: the carrier.** $\mathbb{B}$ itself, real dimension eight, with the vector part $\mathfrak{k}$ of dimension three carrying the adjoint action. Here the group is
 
@@ -150,7 +150,7 @@ $$
 \mathrm{Spin}(4)_{E}=\mathrm{SU}(2)\times\mathrm{SU}(2)\ \text{acting on the four-dimensional real carrier},
 $$
 
-the Euclidean rotation group, whose Lorentzian relative is the tied version of §2. **This is a spacetime group and its indices are spacetime indices.**
+the Euclidean rotation group, whose Lorentzian relative is the tied version of *The Two Sides in the Algebra*. **This is a spacetime group and its indices are spacetime indices.**
 
 **The second module: the operator algebra.** $\mathcal{E}_{\mathbb{C}}=\mathbb{B}\otimes_{\mathbb{C}}\mathbb{B}$, of complex dimension sixteen, where the two tensor factors are the two sides:
 
@@ -170,9 +170,9 @@ $$
 
 **The third row decides everything.** One-sided multiplication acts on both letters alike, because $L_{\tilde Q}$ carries no information about which letter of its argument it multiplies. **The general statement is the chiral wall**: among one-sided multiplications, those that respect a chirality split commute with the chirality operator, and that centraliser is abelian. **Abelian and chiral is available, at the centre; non-abelian and vector-like is available, at $L(\mathfrak{k})$ and $R(\mathfrak{k})$; non-abelian and chiral is not available** without a two-sided structure whose sides are tied to the letters.
 
-**And that is what a left–right model asks for.** One non-abelian factor per chirality requires the two-sided structure and the tie *side* $\leftrightarrow$ *letter*. **The corpus has the two sides and has the two letters and does not exhibit the map.** So the frame's chirality is put in by the assignment of multiplets — a declaration — and not by the algebra. §6 returns to this once.
+**And that is what a left–right model asks for.** One non-abelian factor per chirality requires the two-sided structure and the tie *side* $\leftrightarrow$ *letter*. **The corpus has the two sides and has the two letters and does not exhibit the map.** So the frame's chirality is put in by the assignment of multiplets — a declaration — and not by the algebra. *What Would Settle It* returns to this once.
 
-## 4. Four Roles in Physics
+## Four Roles in Physics
 
 **The same group, four statuses.** Keeping them apart is what makes the fourth row answerable.
 
@@ -183,7 +183,7 @@ $$
 | custodial symmetry of the scalar sector | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, global and accidental | approximate | the mass splittings | $\mathrm{SU}(2)_V$, hence $\rho=1$ |
 | gauged electroweak left–right | $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ | **not observed** | its own breaking scale | $\mathrm{SU}(2)_L$ |
 
-**Role one, spacetime.** The group is the rotation group of four dimensions and the Euclidean partner of the Lorentz group, related by the tie of §2. **The weak interaction's maximal parity violation is a statement about the internal factors and has nothing to do with this role**; a left–right model restores parity in the internal factor, not in spacetime.
+**Role one, spacetime.** The group is the rotation group of four dimensions and the Euclidean partner of the Lorentz group, related by the tie of *The Two Sides in the Algebra*. **The weak interaction's maximal parity violation is a statement about the internal factors and has nothing to do with this role**; a left–right model restores parity in the internal factor, not in spacetime.
 
 **Role two, the strong sector.** With two light flavours the strong interaction has an approximate global symmetry of this shape, spontaneously broken to the diagonal, and the pions are the three Goldstones of the broken half. **The corpus carries it** as the nonlinear sigma field with the action $\tilde Q\mapsto g_L\tilde Qg_R^{*}$, its invariant metric, its currents and its decay constant; see [The Nonlinear Sigma Model and the Chiral Field](the-nonlinear-sigma-model-and-the-chiral-field-in-biquaternionic-form.html) and [The Chiral Theory, the Lagrangian, the Pion and the Decay Constant](the-chiral-theory-and-the-lagrangian-the-pion-and-the-decay-constant.html).
 
@@ -199,7 +199,7 @@ The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g
 
 **The lesson of the table.** The group is not an unused object. **Three of the four roles are realised: an exact global symmetry of the strong sector, an approximate one in the scalar sector, and the rotation group of the carrier.** The fourth is the only one nature does not exhibit at low energy, and the reason belongs to the Standard Model's chapter rather than to this one. **What the table settles here is narrower and enough: the group is native, and only its use is a choice.**
 
-## 5. What the Group Costs
+## What the Group Costs
 
 **The claim, in one line.** The algebra's alphabet is $\mathrm{SU}(2)$ and a circle, and a factor that is a copy of the alphabet costs nothing.
 
@@ -218,15 +218,15 @@ The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g
 
 **Why the doubling is not an accident of naming.** The two factors are not two copies chosen for convenience. **One is the self-dual half of a four-dimensional rotation and the other is the anti-self-dual half**, and the carrier's dimension is four, so the split is canonical. A reader who wants one structural fact from this article should take that one.
 
-## 6. What Would Settle It
+## What Would Settle It
 
 **The observations, in order of directness.** A resonance of the right-handed charged boson decaying to a lepton and a heavy neutral, which is the cleanest. **A right-handed charged current at low energy**, which would appear as a $V+A$ admixture in beta decay and in muon decay. **Neutrinoless double beta decay**, which needs the heavy Majorana neutral the group supplies. **And a measured departure from $\rho=1$**, which would break the custodial diagonal that role three relies on.
 
-**The corpus's missing object, and it is one object.** A **chiral carrier**: a map that ties the operator side to the spinor letter, so that one side acts on one letter and the other side on the other. **With it, the multiplet assignment becomes a construction instead of a declaration**, and the wall of §3 comes down. Without it the frame's chirality is put in by hand and is honest about it.
+**The corpus's missing object, and it is one object.** A **chiral carrier**: a map that ties the operator side to the spinor letter, so that one side acts on one letter and the other side on the other. **With it, the multiplet assignment becomes a construction instead of a declaration**, and the wall of *One Group, Two Modules* comes down. Without it the frame's chirality is put in by hand and is honest about it.
 
 **What the group does not need.** It needs no new algebra, no new layer, no exceptional structure and no octonion. **The group is present, of dimension six, at the element level, split into self-dual and anti-self-dual halves by an explicit computation, with the two factors commuting and each a copy of the algebra's own rotor group.** Everything else in this article is a consequence of that sentence or a refusal to go beyond it.
 
-## 7. The Checks
+## The Checks
 
 | claim | check | result |
 |---|---|---|
@@ -247,21 +247,21 @@ The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g
 
 **The two rows that carry the article.** The identity $L\oplus R=\mathfrak{so}(4)$ is what makes the group free. The sign of the bracket is what makes the two factors mirror images rather than copies. **The remaining rows are checks on those two**: the mirror and the cover follow from the same computation, and the cost row is the dimension count.
 
-## 8. Distinctions That Are Easy to Lose
+## Distinctions That Are Easy to Lose
 
 The group is not the pair's group. $\mathrm{SU}(2)\times\mathrm{SU}(2)$ is a product of two factors; the electroweak pair of the Standard Model, $\mathrm{SU}(2)\times\mathrm{U}(1)$, is a different group with a different quotient structure, and [The Electroweak Pair](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html) is where that difference is computed.
 
-Native is not gauged. The group's presence at the element level is a fact about the algebra; a gauge symmetry is a fact about a module (§3).
+Native is not gauged. The group's presence at the element level is a fact about the algebra; a gauge symmetry is a fact about a module (*One Group, Two Modules*).
 
-Spacetime is not internal. The same group is $\mathrm{Spin}(4)_{E}$ on the carrier and an internal factor on the tensor factors, and the left–right model needs the second (§3).
+Spacetime is not internal. The same group is $\mathrm{Spin}(4)_{E}$ on the carrier and an internal factor on the tensor factors, and the left–right model needs the second (*One Group, Two Modules*).
 
 Parity is broken by the module and not by the charges. The multiplet assignment is what breaks it; a charge bookkeeping symmetric under $L\leftrightarrow R$ is compatible with either choice, which is the point [The Standard Model as the Low-Energy Phase](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html) makes about the observed spectrum.
 
 Broken is not absent. A factor that is no longer gauged below a scale has not left the algebra; the breaking chain is the Standard Model's chapter, and it is where the survivor is identified.
 
-The chiral wall is a statement about the module. The group is licensed twice over; what is missing is the tie between an operator side and a spinor letter (§3, §6).
+The chiral wall is a statement about the module. The group is licensed twice over; what is missing is the tie between an operator side and a spinor letter (*One Group, Two Modules*, *What Would Settle It*).
 
-Not observed is not excluded. The fourth role is bounded from below only, and that is why it is a hypothesis rather than a refutation (§4).
+Not observed is not excluded. The fourth role is bounded from below only, and that is why it is a hypothesis rather than a refutation (*Four Roles in Physics*).
 
 ## Summary
 
@@ -288,21 +288,21 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 | $\mathrm{ad}(\mathfrak{k})$ | the diagonal family $L_{\vec e_k}-R_{\vec e_k}$, the derivation |
 | $\Lambda^{2}_{\pm}$ | the self-dual and anti-self-dual two-forms, the two ideals of $\mathfrak{so}(4)$ |
 | $\star$ | the Hodge star on two-forms, $\star^{2}=\mathrm{id}$, exchanging the ideals |
-| $\rho$ | here the display $\mathrm{Spin}(3)\times\mathrm{Spin}(3)\to\mathrm{SO}(4)$; also the mass ratio of §4 |
+| $\rho$ | here the display $\mathrm{Spin}(3)\times\mathrm{Spin}(3)\to\mathrm{SO}(4)$; also the mass ratio of *Four Roles in Physics* |
 | $\mathrm{Hp}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | the tied two-sided action; the tie is what gives the Lorentz group |
 | $\mathbb{B}_L$, $\mathbb{B}_R$ | the two tensor factors, $\{\mathrm{I}_2\otimes A\}$ and $\{B^{\mathsf T}\otimes\mathrm{I}_2\}$ |
 
 ## Further Reading
 
 - [The Standard Model as the Low-Energy Phase: The $\mathrm{U}(2)$ Ceiling and the Four Unbuilt Sectors](the-standard-model-in-the-biquaternion-framework-the-u2-ceiling-and-the-four-unbuilt-sectors.html). Why the low-energy theory gauges one side and not two, and hypercharge as the broken factor's remnant.
-- [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). $\mathrm{SU}(2)\times\mathrm{U}(1)$ against the algebra's $\mathrm{U}(2)$, and the selection rule the quotient imposes.
-- [Electroweak Theory in the Biquaternion Framework: The $\mathrm{U}(2)$ Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The wall of §3 at its four levels, and the ledger of what each level would need.
+- [Electroweak Theory in the Biquaternion Framework: The $\mathrm{U}(2)$ Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The wall of *One Group, Two Modules* at its four levels, and the ledger of what each level would need.
 - [The Lie Algebra $\mathfrak{so}(4)$](../articles_maths/the-lie-algebra-skew-4-and-so-4.html). $\mathfrak{so}(4)=\Lambda^{2}_{+}\oplus\Lambda^{2}_{-}$, the self-dual basis, and the identification of $L(\vec e_k)$ with $-\omega_k$ and $R(\vec e_k)$ with $-\tau_k$.
 - [The Spin Group: Unit Elements, Rotors and the Two-to-One Cover](../articles_maths/the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html). The display $\rho$ computed, and the warning that the group is a three-sphere and not a set of matrices.
 - [The Clebsch–Gordan Decomposition of the Biquaternion Algebra](../articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html). $s=\tfrac12$ per factor and $0\oplus1$ for the pair.
 - [The Hermitian Pair of Operators Acting on Two Sides](../articles_maths/the-hermitian-pair-of-operators-acting-on-two-sides.html). The tie $R_{\tilde Q^{*}}$ and the twofold cover of the Lorentz group.
 - [The Transposition of the Two Sides](../articles_maths/the-transposition-of-the-two-sides.html). The conversion between the two factors, and the difference between a side and a letter.
-- [The Pauli Representation Operators](../articles_maths/m4c-pauli-representation-operators.html). $\mathbb{B}_L=\{\mathrm{I}_2\otimes A\}$ and $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm{I}_2\}$, the internal tensor factors of §3.
+- [The Pauli Representation Operators](../articles_maths/m4c-pauli-representation-operators.html). $\mathbb{B}_L=\{\mathrm{I}_2\otimes A\}$ and $\mathbb{B}_R=\{B^{\mathsf T}\otimes\mathrm{I}_2\}$, the internal tensor factors of *One Group, Two Modules*.
 - [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The third role, computed.
 - [The Nonlinear Sigma Model and the Chiral Field in Biquaternionic Form](the-nonlinear-sigma-model-and-the-chiral-field-in-biquaternionic-form.html). The second role, and the left–right action on the pion field.

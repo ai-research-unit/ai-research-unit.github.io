@@ -5,7 +5,7 @@
 
 Every construction of a graded algebra from a module begins with the tensor powers of that module. This article builds the tensor powers $V^{\otimes n}$, assembles them into the tensor algebra $T(V) = \bigoplus_{n \geq 0} V^{\otimes n}$ with concatenation as product, and identifies $T(V)$ as the free associative algebra on $V$ by its universal property. The free algebra $R\langle X\rangle$ on a set $X$ is the tensor algebra of the free module on $X$, so it is a special case, and the two are treated together.
 
-Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $V$ is an $R$-module. The tensor product of modules and its universal property are assumed from *Modules*, §13; the construction here is the iterated use of that product. The tensor product of two *algebras*, with its own product formula, is a different construction and is not covered here; this article uses only the tensor product of modules.
+Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $V$ is an $R$-module. The tensor product of modules and its universal property are assumed from *Modules*; the construction here is the iterated use of that product. The tensor product of two *algebras*, with its own product formula, is a different construction and is not covered here; this article uses only the tensor product of modules.
 
 The tensor algebra is the source of the quotient presentations of the number systems and of the symmetric, exterior and Clifford algebras: all of these are quotients of $T(V)$ by ideals generated in low degree, and that construction is not covered here. What is fixed here is the free object, before any relation is imposed.
 
@@ -34,7 +34,7 @@ V^{\otimes m} \otimes_R V^{\otimes n} \;\cong\; V^{\otimes (m+n)}, \qquad
 V^{\otimes m} \otimes_R V^{\otimes n} \;\cong\; V^{\otimes n} \otimes_R V^{\otimes m},
 $$
 
-the first given by concatenation, $(v_1 \otimes \cdots \otimes v_m) \otimes (w_1 \otimes \cdots \otimes w_n) \mapsto v_1 \otimes \cdots \otimes v_m \otimes w_1 \otimes \cdots \otimes w_n$, extended $R$-linearly, and the second by the symmetry of the tensor product (*Modules*, §13). The first isomorphism is the reason the tensor algebra below is associative.
+the first given by concatenation, $(v_1 \otimes \cdots \otimes v_m) \otimes (w_1 \otimes \cdots \otimes w_n) \mapsto v_1 \otimes \cdots \otimes v_m \otimes w_1 \otimes \cdots \otimes w_n$, extended $R$-linearly, and the second by the symmetry of the tensor product (*Modules*). The first isomorphism is the reason the tensor algebra below is associative.
 
 **Basis and dimension.** If $V$ is free with basis $\{e_i\}_{i \in I}$, then $V^{\otimes n}$ is free with basis the tensors
 
@@ -48,7 +48,7 @@ $$
 \dim_R V^{\otimes n} = d^{\,n}.
 $$
 
-In particular, for a two-dimensional free module the tensor power has dimension $2^n$. Over a general commutative ring the rank is well defined by the invariant basis number property (*Modules*, §10), so this dimension is unambiguous.
+In particular, for a two-dimensional free module the tensor power has dimension $2^n$. Over a general commutative ring the rank is well defined by the invariant basis number property (*Modules*), so this dimension is unambiguous.
 
 **Functoriality.** An $R$-linear map $f : V \to W$ induces $f^{\otimes n} : V^{\otimes n} \to W^{\otimes n}$ by
 
@@ -206,7 +206,7 @@ $$
 
 where $\sqcup$ is the **free product** of algebras, the coproduct in the category of unital associative algebras. This is the algebra-level complement of the tensor product of algebras, which is the coproduct in the commutative case; both are treated. The identification follows from the universal property, since linear maps $V \oplus W \to A$ correspond to pairs of linear maps $V \to A$ and $W \to A$.
 
-**Extension of scalars.** Let $R \to S$ be a homomorphism of commutative rings and let $V_S = V \otimes_R S$ be the base change of $V$ (*Modules*, §13). Then
+**Extension of scalars.** Let $R \to S$ be a homomorphism of commutative rings and let $V_S = V \otimes_R S$ be the base change of $V$ (*Modules*). Then
 
 $$
 T(V_S) \;\cong\; T(V) \otimes_R S

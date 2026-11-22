@@ -27,7 +27,7 @@ with the chain $21\to15\to12\to9$ in dimensions and $5\to5\to4\to3$ in rank, dri
 
 **Two meanings of "neutral".** Two counts are in play in this model and they are not the same. This article's three neutral states are gauge fields — $W^3_L$, $W^3_R$ and $B$, the fields that mix before the photon separates out. The scalar sector's two neutral states are real scalars, the $125$ GeV candidate and its heavier partner. Three gauge, two scalar, and neither count constrains the other; adding $3+2$ adds gauge bosons to scalars.
 
-## 1. The Flag, Which Is the Chain
+## The Flag, Which Is the Chain
 
 **Three lines.** In three spaces, and the chain is the sequence of their stabilisers.
 
@@ -63,9 +63,9 @@ $$
 
 and each factor of that product is a choice of vacuum, not a choice of group. The group is fixed; the vacuum is a point; the chain is the stabiliser of that point read off factor by factor. The word *flag* is used for that nesting of stabilisers and not for its geometric namesake: a geometric flag is a chain of subspaces of one vector space, and these three lines live in three different spaces, each a line in the module of the previous unbroken factor.
 
-**Completeness.** Rank $5=3+1+1$ at the top; rank $2+1+1+1=5$ after the first step; $2+1+1=4$ after the second; $2+1=3$ at the bottom. One rank is lost at each of the last two steps and none at the first, and §3 gives the reason.
+**Completeness.** Rank $5=3+1+1$ at the top; rank $2+1+1+1=5$ after the first step; $2+1+1=4$ after the second; $2+1=3$ at the bottom. One rank is lost at each of the last two steps and none at the first, and *Why the First Step Is Different* gives the reason.
 
-## 2. The Dimension Budget, Read Three Ways
+## The Dimension Budget, Read Three Ways
 
 **The three steps.**
 
@@ -87,11 +87,11 @@ A frame that predicted any other total would be wrong before any dynamics were c
 
 **As a theorem.** This is the sense in which the count is not dynamics. The number of massless gauge bosons equals the dimension of the unbroken group, always, because the Higgs mechanism eats exactly one Goldstone per broken generator. The last row's massless count is $9=8+1$, and $8+1$ is $\dim\bigl(\mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}}\bigr)$. So $9+12$ is a statement about group dimensions, and it would be a scandal if it failed.
 
-**Why the count matters.** Because the assignment is not a count: which six become massive at $M_{C}$, and which three at $M_{R}$, depends on which vacuum is chosen. A frame could have the right totals and the wrong rows — if a leptoquark stayed massless, colour would be broken and the chain would be a different chain. The rows of §4 are the content; the totals are the arithmetic check on them.
+**Why the count matters.** Because the assignment is not a count: which six become massive at $M_{C}$, and which three at $M_{R}$, depends on which vacuum is chosen. A frame could have the right totals and the wrong rows — if a leptoquark stayed massless, colour would be broken and the chain would be a different chain. The rows of *The Twenty-One, Classified* are the content; the totals are the arithmetic check on them.
 
 **The Goldstones.** Every massive state is one eaten real scalar, so the twelve massive states consume twelve of the scalar sector's twenty-four real numbers; the other twelve survive as scalars, and $12+12=24$ is [the scalar article](the-scalar-sector-and-the-leptoquark-bounds.html)'s count stated in this article's language. Grouped by broken generator the twelve are $6+2+4$ — six for the leptoquarks, two for the $W_R^{\pm}$, four for the $W^{\pm}$, the $Z$ and the $Z_R$ — and two of those four are neutral, because they are eaten by the $Z$ and the $Z_R$ and are not the scalar sector's two physical neutral states. Grouped by the scale at which each state becomes massive they are $6+3+3$, as in the table. The two groupings agree in total and differ only in where the $Z_R$ is placed, because its eigenvector mixes the $R$-doublet direction with $B-L$: its mass is counted at $M_{R}$, while its Goldstone comes out of the bidoublet.
 
-## 3. Why the First Step Is Different
+## Why the First Step Is Different
 
 **The structural fact.** The six that leave at $M_{C}$ are all charged, and that is worth stating.
 
@@ -105,9 +105,9 @@ They are the leptoquarks, and they are the only place in the whole chain where a
 
 **3.2 No rank.** A Cartan generator is diagonal, and a generator with $B-L=\pm\tfrac43$ is off-diagonal by construction — it moves the unit line into the vector part. So the first step is the only step that breaks a group without breaking a Cartan direction, and that is why rank is untouched while six bosons get mass.
 
-**3.3 The neutral sector.** After the first step there are still three neutral gauge bosons in play — $W_L^3$, $W_R^3$, and the surviving $B-L$ field — and two of them must eventually become $Z$ and $Z_R$. The three neutral states are a consequence of the first step not touching the Cartan, which is why §5 is about them rather than about this step.
+**3.3 The neutral sector.** After the first step there are still three neutral gauge bosons in play — $W_L^3$, $W_R^3$, and the surviving $B-L$ field — and two of them must eventually become $Z$ and $Z_R$. The three neutral states are a consequence of the first step not touching the Cartan, which is why *Why Three Neutral States* is about them rather than about this step.
 
-## 4. The Twenty-One, Classified
+## The Twenty-One, Classified
 
 **The full list.** Every gauge boson of the frame, with its representation under the groups that survive.
 
@@ -121,7 +121,7 @@ They are the leptoquarks, and they are the only place in the whole chain where a
 | $W_R^{\pm}$ | $2$ | $\mathbf 1$ | $\pm1$ | $\propto v_R^2$ | $M_{R}$ |
 | $Z_R$ | $1$ | $\mathbf 1$ | $0$ | $\propto v_R^2$ | $M_{R}$ |
 
-**Two zeros, two reasons.** The gluons are zero because $\mathrm{SU}(3)$ is a stabiliser at every scale — an unbroken non-abelian group. The photon is zero because $\mathrm{U}(1)_{\mathrm{em}}$ is the residual of the whole chain: it is the one combination of three fields that annihilates every vacuum of §1, and that is a statement about eigenvectors, not about stabilisers.
+**Two zeros, two reasons.** The gluons are zero because $\mathrm{SU}(3)$ is a stabiliser at every scale — an unbroken non-abelian group. The photon is zero because $\mathrm{U}(1)_{\mathrm{em}}$ is the residual of the whole chain: it is the one combination of three fields that annihilates every vacuum of *The Flag, Which Is the Chain*, and that is a statement about eigenvectors, not about stabilisers.
 
 **The only coloured massive states.** The six leptoquarks are the only coloured massive states in the theory. Colour is never broken, and the objects that carry colour and mass at once are exactly the six that mix the unit line with the vector part.
 
@@ -161,7 +161,7 @@ Q(W^{\pm})=\pm1+0+0=\pm1,
 Q(\gamma)=0 .
 $$
 
-## 5. Why Three Neutral States
+## Why Three Neutral States
 
 **The dimension of the sector.** The neutral sector is three-dimensional before the first breaking, and it stays three-dimensional until the last.
 
@@ -189,7 +189,7 @@ where the entries are the eigenvalues of $(T_{3L},\,T_{3R},\,T^{15})$ on the fie
 
 **5.4 The rank.** $\mathcal M^2$ is a sum of two rank-one matrices, so its rank is at most two, so it has at least one zero eigenvalue. It has exactly one, because $a_1$ and $a_2$ are independent: $a_1\cdot a_2=-\tfrac14v_Rv\ne0$ and they are not parallel. So there is one massless neutral and two massive, always, for any two independent neutral vacua. A frame with two neutral vacua and no massless neutral would violate this, and that is the structural reason the photon is not optional.
 
-## 6. The Photon, Which Is a Mixture and Not a Factor
+## The Photon, Which Is a Mixture and Not a Factor
 
 **The object.** One object, reached from the mass matrix alone, because the mass matrix is geometry and the couplings are not.
 
@@ -207,7 +207,7 @@ The coefficients are $(1,\,1,\,\sqrt{2/3})$ up to the overall sign, which is fre
 
 **6.3 What the article does not say.** It does not say what the couplings are, it does not evaluate the null vector at a particular point, and it does not state the angle that follows from it. The angle is in the coupling article, which is the only place in this category where the coefficient values are written. **The mixture itself has its own article**, [The Photon as the Unbroken Mixture](the-photon-as-the-unbroken-mixture.html), which derives the direction three ways and shows it to be the coefficient vector of $Q$.
 
-## 7. The Two Massive Neutrals
+## The Two Massive Neutrals
 
 **Both eigenvalues.** Exactly, in the minimal vacuum.
 
@@ -227,7 +227,7 @@ $$
 
 The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $\tfrac58$ is nothing but $|a_1|^2=\tfrac14+\tfrac38$: one quarter from $T_{3R}$ and three eighths from the $B-L$ normalisation. At $v=0$ the matrix is rank one, so the other two eigenvalues vanish there: the $Z_R$ mass is entirely $M_{R}$'s, and the light neutral's comes entirely from $v$. The $Z_R$ is therefore heavier than the $W_R$ by the ratio of the two coefficients, $\sqrt{(5/8)/(1/4)}=\sqrt{5/2}\simeq1.58$ at equal couplings; with the couplings split the squared ratio is $1+\tfrac32(g_4/g_R)^2$, which carries $g_4/g_R$ and is the coupling article's business.
 
-## 8. The Coupling Statements and Where They Live
+## The Coupling Statements and Where They Live
 
 **One home.** The tree-level mass ratios with $g_L=g_R=g_4$ imposed, the three scales with their bounds, the three matching relations, and the running that shows the boundary condition failing are all coupling statements. This category keeps its coupling statements in one place, [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
 
@@ -235,9 +235,9 @@ The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $
 
 **What stays.** The photon's composition is a mixture with coefficients proportional to the couplings; the coefficients are carried symbolically, and the article never substitutes a value for them. The mixing is group theory, and the value of the mixing is the coupling article's business.
 
-**The failure.** The equal-coupling condition implies two numbers at once, $\sin^2\theta_W=\tfrac38$ and $g_4=g_L$, and they are met four decades apart — $10^{13}$ GeV and $10^{17}$ GeV — so no single threshold satisfies both. That is the failure; §4 of the coupling article gives the arithmetic, and it is neither weakened here nor repeated.
+**The failure.** The equal-coupling condition implies two numbers at once, $\sin^2\theta_W=\tfrac38$ and $g_4=g_L$, and they are met four decades apart — $10^{13}$ GeV and $10^{17}$ GeV — so no single threshold satisfies both. That is the failure; *The Twenty-One, Classified* of the coupling article gives the arithmetic, and it is neither weakened here nor repeated.
 
-## 9. What Is Robust and What Is Not
+## What Is Robust and What Is Not
 
 **Four strengths.** They must not be blurred.
 
@@ -245,13 +245,13 @@ The heavy eigenvalue at $v\to0$ is $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$, and the $
 
 **9.2 The photon's composition.** A mixture of $W_L^3$, $W_R^3$ and $B$ with coefficients proportional to the couplings. This holds whenever the three fields are present and two independent neutral vacua are chosen, and it does not depend on the scalar content. What the coefficients are is a coupling question, and it is not answered here.
 
-**9.3 The list.** Six leptoquarks, two charged $W_R$, one $Z_R$, two light charged, one $Z$. The list follows from the count of §2 and the groupings of §4, and it survives any choice of vacuum. The ratios among those masses are not robust and are not stated here.
+**9.3 The list.** Six leptoquarks, two charged $W_R$, one $Z_R$, two light charged, one $Z$. The list follows from the count of *The Dimension Budget, Read Three Ways* and the groupings of *The Twenty-One, Classified*, and it survives any choice of vacuum. The ratios among those masses are not robust and are not stated here.
 
 **9.4 The absolute scale.** $v_R$ is bounded from below by the leptoquark bound and from above by nothing in the frame. The spectrum's shape is predicted; its overall size is not.
 
 **9.5 One loop.** These are tree-level relations. The $\rho$ parameter, the $Z$–$W$ mass ratio and the $Z_R$ mass all take radiative corrections, and in a model with a bidoublet the tree-level $\rho=1$ is an alignment statement rather than a theorem. [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html) owns that question, and this article does not pre-empt it.
 
-## 10. What the Chain and the Spectrum Establish
+## What the Chain and the Spectrum Establish
 
 **Fixed, in five lines.**
 
@@ -277,7 +277,7 @@ The scalar content. Which fields do the breaking is a choice, and the companion 
 
 The absolute size of the spectrum, and the ratios among its masses, which move with the scales.
 
-## 11. The Checks
+## The Checks
 
 | claim | check | result |
 |---|---|---|
@@ -297,7 +297,7 @@ The absolute size of the spectrum, and the ratios among its masses, which move w
 | the heavy neutral | eigenvalue at $v\to0$ | $0.625\,g^2v_R^2=\tfrac58g^2v_R^2$ |
 | proton decay | three leptoquark vertices per unit $B$ | dimension nine, so no proton-decay bound |
 
-## 12. Distinctions That Are Easy to Lose
+## Distinctions That Are Easy to Lose
 
 $M_{C}$ is not fixed by unification: nothing in this article fixes it, and the coupling article shows that the running does not either.
 
@@ -307,13 +307,13 @@ The three lines are not three independent choices: two of the three have nothing
 
 "Proton decay does not bound it" does not mean "proton decay is absent": $B$ is violated, in thirds, and dimension-nine operators are there — they are simply unreachable.
 
-The photon is not the $\mathrm{U}(1)$ boson: the $\mathrm{U}(1)$ boson is $B$, and the photon is the mixture that survives (§6).
+The photon is not the $\mathrm{U}(1)$ boson: the $\mathrm{U}(1)$ boson is $B$, and the photon is the mixture that survives (*The Photon, Which Is a Mixture and Not a Factor*).
 
-The count is not a dynamical achievement; it is $\dim G-\dim H$ and would be a scandal if it failed (§2).
+The count is not a dynamical achievement; it is $\dim G-\dim H$ and would be a scandal if it failed (*The Dimension Budget, Read Three Ways*).
 
 $M_X=\sqrt2M_{W_R}$ is not a prediction: the $\sqrt2$ is the group's, and it is multiplied by $g_4/g_R$, which the group does not fix.
 
-The three neutral states are not three scalars, and not two scalars and a gauge boson: all three are gauge fields, and the scalar sector's two neutral states are a separate object (Introduction, §5.1).
+The three neutral states are not three scalars, and not two scalars and a gauge boson: all three are gauge fields, and the scalar sector's two neutral states are a separate object (Introduction, *Why Three Neutral States*).
 
 ## Summary
 
@@ -333,7 +333,7 @@ The three neutral states are not three scalars, and not two scalars and a gauge 
 
 **The ratios.** $M_{W_R}/M_W=(g_R/g_L)(v_R/v)$: the ratio of the two vacua, times the coupling ratio that the chain does not fix. At equal couplings it reduces to $v_R/v$, and the ratios involving $g_4$ and $g_R$ are in the coupling article.
 
-**The failure.** Recorded in the coupling article, in §4.
+**The failure.** Recorded in the coupling article, in *The Twenty-One, Classified*.
 
 **The strength.** The count and the photon's composition are robust; the ratios are conditional on the minimal vacuum; the overall scale is bounded only from below.
 
@@ -352,18 +352,18 @@ The three neutral states are not three scalars, and not two scalars and a gauge 
 | $X$ | a leptoquark, one of the six, charge $\pm\tfrac23$, colour triplet |
 | $v,v_R$ | the electroweak and colour-breaking vacuum expectation values |
 | $\rho$ | $M_W^2/(M_Z^2\cos^2\theta_W)$, $1$ at tree level in the alignment limit |
-| $\mathbb{CP}^{3}\times\mathbb{CP}^{1}\times\mathbb{CP}^{1}$ | the vacuum manifold: the three lines of §1 |
+| $\mathbb{CP}^{3}\times\mathbb{CP}^{1}\times\mathbb{CP}^{1}$ | the vacuum manifold: the three lines of *The Flag, Which Is the Chain* |
 
 ## Further Reading
 
-- [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The group, the sixteen, the declaration (A) and the frame in which this chain runs.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The group, the sixteen, the declaration (A) and the frame in which this chain runs.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace that fixes the $B-L$ eigenvalues, and the ledger of where each of the twenty-one generators goes.
-- [The Photon as the Unbroken Mixture: One Null Direction, Three Parents](the-photon-as-the-unbroken-mixture.html). §6's statement of the mixture in full: the three routes to the direction, why it is null, and the boundary against the coupling article.
+- [The Photon as the Unbroken Mixture: One Null Direction, Three Parents](the-photon-as-the-unbroken-mixture.html). *The Photon, Which Is a Mixture and Not a Factor*'s statement of the mixture in full: the three routes to the direction, why it is null, and the boundary against the coupling article.
 - [The Scalar Sector and the Leptoquark Bounds](the-scalar-sector-and-the-leptoquark-bounds.html). Which fields do this breaking, how many real components they carry, and what their Goldstones require.
 - [The $W$ and $Z$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html). The two light neutral and charged states, before this article mixes them.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The matching relations, the angle they produce, and the failure that follows.
 - [The Weinberg Angle, the Neutral Current and the $Z$ Coupling](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The angle as a ratio of two couplings.
-- [Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The four hypercharge conditions, which hold identically on the sixteen and are not restated here.
-- [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The tree-level relation $\rho=1$ that §9.5 does not claim as a theorem.
-- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). Why colour is a stabiliser at every scale, which is the eight massless rows of §4.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html). The four hypercharge conditions, which hold identically on the sixteen and are not restated here.
+- [Custodial Symmetry and the $\rho$ Parameter in Biquaternionic Form](custodial-symmetry-and-the-rho-parameter-in-biquaternionic-form.html). The tree-level relation $\rho=1$ that *What Is Robust and What Is Not* does not claim as a theorem.
+- [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The Colour Wall, Restated](quantum-chromodynamics-in-the-biquaternion-framework-the-dimension-ceiling-and-the-colour-wall.html). Why colour is a stabiliser at every scale, which is the eight massless rows of *The Twenty-One, Classified*.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). The same chain read as an embedding, and the point at which it stops being one.

@@ -18,7 +18,7 @@ A finite group is built from its simple composition factors by Jordan–Hölder,
 | Burnside $p^aq^b$ theorem | a group of order $p^a q^b$ is solvable, so no nonabelian simple group has an order with only two prime factors | *The Classification of Finite Simple Groups* |
 | Jordan–Hölder theorem | the composition factors of a finite group are unique up to isomorphism and order | *The Classification of Finite Simple Groups* |
 | Non-example: $A_4$ | a group of order $12$ that fails simplicity: its Klein four-subgroup is normal | *Finite Groups and Symmetry* |
-| Non-example: a group of order $pq$, $p<q$, $p\nmid q-1$ | a group of two-prime order that fails simplicity: it is cyclic | *Groups*, §13 |
+| Non-example: a group of order $pq$, $p<q$, $p\nmid q-1$ | a group of two-prime order that fails simplicity: it is cyclic | *Groups* |
 
 ## The Cyclic Groups of Prime Order
 
@@ -28,7 +28,7 @@ The cyclic groups $\mathbb{Z}/p\mathbb{Z}$ of prime order form the abelian famil
 |---|---|---|
 | $\mathbb{Z}/p\mathbb{Z}$, $p$ prime | the cyclic group of prime order $p$; simple and abelian | *The Classification of Finite Simple Groups* |
 | $C_p$ | the same group in the multiplicative notation of the finite-groups article | *Finite Groups and Symmetry* |
-| Non-example: $\mathbb{Z}/n\mathbb{Z}$, $n$ composite | a cyclic group that fails simplicity: it has a proper nontrivial subgroup | *Groups*, §1 |
+| Non-example: $\mathbb{Z}/n\mathbb{Z}$, $n$ composite | a cyclic group that fails simplicity: it has a proper nontrivial subgroup | *Groups* |
 
 ## The Alternating Groups
 

@@ -90,7 +90,7 @@ The two ladders of this pair of articles run in parallel and meet at the top. Th
 |---|---|---|
 | $\mathbb{S}$ | the sedenions, with zero divisors and non-associative multiplication | *Division Algebras* |
 | $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$, $\mathbb{C}$ | commutative domains; they lie on the ladder of *List of Structures from Rings to Fields* | *The Integers*, *The Rational Numbers*, *The Real Numbers*, *The Complex Numbers* |
-| the zero ring $\{0\}$ | excluded by the convention $1 \neq 0$ | *Rings*, §2 |
+| the zero ring $\{0\}$ | excluded by the convention $1 \neq 0$ | *Rings* |
 
 ## Summary
 

@@ -44,7 +44,7 @@ By *The Symmetric Algebra of a Module*, the symmetric algebra of a free module o
 
 ### The Tensor Product as a Coproduct
 
-Recall from *Modules*, §13, that the tensor product $A \otimes_R B$ of two $R$-modules exists with its universal property for bilinear maps. For algebras, the product on the tensor product is the one induced by
+Recall from *Modules*, that the tensor product $A \otimes_R B$ of two $R$-modules exists with its universal property for bilinear maps. For algebras, the product on the tensor product is the one induced by
 
 $$
 (a \otimes b)(a' \otimes b') = aa' \otimes bb',

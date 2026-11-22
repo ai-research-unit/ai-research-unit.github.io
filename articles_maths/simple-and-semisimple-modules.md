@@ -249,7 +249,7 @@ The length is therefore additive on short exact sequences, and it measures the d
 
 **(c) Commutative semisimple rings.** For a commutative ring $R$, semisimplicity is equivalent to $R$ being a finite product of fields. Indeed a product of fields is semisimple, and conversely the Wedderburn–Artin factors of a commutative semisimple ring are commutative division rings, hence fields.
 
-**(d) The polynomial algebra.** $F[x]$ is a principal ideal domain, so it is not artinian: the descending chain $(x) \supset (x^2) \supset (x^3) \supset \cdots$ does not stabilize. Its Jacobson radical is zero, but it is not semisimple, which shows that the artinian hypothesis in the criterion of §Semisimplicity criteria cannot be dropped. Its modules are classified by the structure theorem of *Modules* §15.
+**(d) The polynomial algebra.** $F[x]$ is a principal ideal domain, so it is not artinian: the descending chain $(x) \supset (x^2) \supset (x^3) \supset \cdots$ does not stabilize. Its Jacobson radical is zero, but it is not semisimple, which shows that the artinian hypothesis in the criterion of §Semisimplicity criteria cannot be dropped. Its modules are classified by the structure theorem of *Modules*.
 
 **(e) Local algebras.** The quotient $F[x]/(x^n)$ is a local ring with maximal ideal $(x)/(x^n)$ and radical $J=(x)/(x^n) \neq 0$; its unique simple module is $F$, on which $x$ acts as $0$. It is not semisimple for $n \geq 2$, and its regular module has length $n$ with repeated composition factor $F$.
 

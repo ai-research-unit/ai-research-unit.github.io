@@ -245,7 +245,7 @@ which equals $\sigma(g', h')\sigma(g, h) = (\tau^{-1}(h'), \tau(g'))(\tau^{-1}(h
 
 ### Dihedral and Dicyclic Groups
 
-**Example.** Take $G = C_n$ cyclic and $\alpha$ the inversion, an involutive automorphism; the extension is the dihedral group $D_n \cong C_n \rtimes C_2$, with the generator of $C_2$ acting by inversion. For $n$ odd prime this is the whole story of the groups of order $2n$: a group of order $2p$ with $p$ an odd prime is cyclic $C_{2p}$ or dihedral $D_p$, because $\operatorname{Aut}(C_p) \cong C_{p-1}$ has a unique element of order two, the inversion (*Groups*, §13 and §16).
+**Example.** Take $G = C_n$ cyclic and $\alpha$ the inversion, an involutive automorphism; the extension is the dihedral group $D_n \cong C_n \rtimes C_2$, with the generator of $C_2$ acting by inversion. For $n$ odd prime this is the whole story of the groups of order $2n$: a group of order $2p$ with $p$ an odd prime is cyclic $C_{2p}$ or dihedral $D_p$, because $\operatorname{Aut}(C_p) \cong C_{p-1}$ has a unique element of order two, the inversion (*Groups*).
 
 **Example.** The dicyclic group $\operatorname{Dic}_n$ is a non-split extension of $C_{2n}$ by $C_2$ in which the generator of the quotient acts by inversion and the complement squares to the element of order two of $\langle a\rangle$; so it is not a semidirect product $C_{2n} \rtimes C_2$, although the action of the quotient on the kernel is exactly the inversion. The dicyclic groups are exactly the finite groups with a unique element of order two that are not cyclic (*Finite Groups and Symmetry*, "Dicyclic Groups"). The example shows that the involutive automorphism of the kernel does not determine the extension: the split and the non-split extensions with the same action are different groups.
 

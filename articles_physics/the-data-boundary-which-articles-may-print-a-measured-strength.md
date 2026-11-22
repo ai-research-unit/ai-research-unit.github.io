@@ -115,5 +115,5 @@ The permission has four edges drawn, and the sharpest is the fourth: the low-ene
 
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The single claim, its arithmetic, its failure, and the Yukawa sector under the same test.
 - [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The second claim: the mixing as a ratio, with the form the generators fix.
-- [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The frame, stated with every strength a symbol.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame, stated with every strength a symbol.
 - [The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons](the-breaking-chain-and-the-boson-spectrum.html). The chain, with the coupling block kept in the coupling article.

@@ -1,6 +1,6 @@
 # __An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles__
 
-*Ledger note.* Every mass and every lifetime in this article is measured data, transcribed from the Particle Data Group and marked as data where it is used. A mass is used here as an input and never as a prediction. The one exception is the arithmetic of section 6, which is ordinary phase space.
+*Ledger note.* Every mass and every lifetime in this article is measured data, transcribed from the Particle Data Group and marked as data where it is used. A mass is used here as an input and never as a prediction. The one exception is the arithmetic of *Lifetime: the One Relation Phase Space Computes*, which is ordinary phase space.
 
 ## Introduction
 
@@ -8,11 +8,11 @@ The classification of one generation is a closed list. Sixteen cells, one name p
 
 This article is about that second copy and the third. It asks what distinguishes a generation from its neighbours, and it gets exactly three answers. Charge, colour, weak isospin and $B-L$ are the same in all three columns, so they cannot distinguish anything. Mass differs, lifetime differs, and the decay pattern differs. Those three differences are the whole of flavour, and the first task is to show that they are not three independent things.
 
-The order of the article follows the order of the argument. Section 1 fixes the vocabulary. Section 2 shows why no gauge measurement can see the generation index at all, which is the structural fact the rest depends on. Sections 3 and 4 draw the table and separate the six independent masses from the eighteen entries that colour and chirality multiply them into. Sections 5, 6 and 7 take the three handles one at a time. Section 8 says what each handle looks like in a detector. Sections 9 and 10 record the one sharp prediction the model makes in this sector and the one place where a flavour label is measured to change.
+The order of the article follows the order of the argument. *Three Words, Used Precisely* fixes the vocabulary. *Why the Index Is Inert* shows why no gauge measurement can see the generation index at all, which is the structural fact the rest depends on. *The Sixteen Rows* and 4 draw the table and separate the six independent masses from the eighteen entries that colour and chirality multiply them into. *Mass: the Column the Model Does Not Compute*, 6 and 7 take the three handles one at a time. *How Each Handle Is Seen* says what each handle looks like in a detector. *The One Sharp Prediction: Sameness* and 10 record the one sharp prediction the model makes in this sector and the one place where a flavour label is measured to change.
 
 A companion article, [The Excitation Ladder Theory of Flavour](the-excitation-ladder-theory-of-flavour.html), takes the same three handles and asks whether the columns are levels of one tower. That question is deliberately absent here. This article is the introduction, and an introduction should leave the reader with the phenomena and no theory of them.
 
-## 1. Three Words, Used Precisely
+## Three Words, Used Precisely
 
 Generation, flavour and family name one object from three directions, and the corpus keeps the directions apart.
 
@@ -22,9 +22,9 @@ Generation, flavour and family name one object from three directions, and the co
 
 *Family* is the informal word for the set of three columns taken together, and it carries no technical content.
 
-The distinction between the first two is the whole content of sections 9 and 10. A generation is a bookkeeping device that is always diagonal. A flavour is a basis that can be misaligned with the mass basis, and the misalignment is what makes oscillation and mixing possible.
+The distinction between the first two is the whole content of *The One Sharp Prediction: Sameness* and 10. A generation is a bookkeeping device that is always diagonal. A flavour is a basis that can be misaligned with the mass basis, and the misalignment is what makes oscillation and mixing possible.
 
-## 2. Why the Index Is Inert
+## Why the Index Is Inert
 
 The fermions of one generation form the module $\mathbf{16}$. Three generations are the tensor product of that module with a three-dimensional space on which the algebra acts trivially:
 
@@ -50,9 +50,9 @@ No gauge measurement distinguishes the columns. A charge measurement returns $q$
 
 No neutral gauge boson changes the label at tree level. A gauge vertex is the unit on the flavour index, so the label cannot change at a vertex. Every flavour-changing process in the model is therefore either a charged-current process, which moves the label by construction, or a loop, which is suppressed by the same small misalignment. This statement has a name, GIM, and it is an identity following from $VV^{\dagger}=1$ rather than a dynamical accident.
 
-The only free object in the sector is the Yukawa matrix. Since no generator can distinguish the columns, the entire difference between them must sit in the one place the algebra does not constrain. At the renormalisable level the only gauge-invariant object that can tell the columns apart is the Yukawa coupling, which needs the scalar to be invariant at all. Section 5 counts what that place contains.
+The only free object in the sector is the Yukawa matrix. Since no generator can distinguish the columns, the entire difference between them must sit in the one place the algebra does not constrain. At the renormalisable level the only gauge-invariant object that can tell the columns apart is the Yukawa coupling, which needs the scalar to be invariant at all. *Mass: the Column the Model Does Not Compute* counts what that place contains.
 
-## 3. The Sixteen Rows
+## The Sixteen Rows
 
 The classification article's two octets stack into sixteen rows, and each generation needs a name, a mass and a lifetime. The whole table is therefore sixteen rows by twelve columns, and it is drawn here in full, because the repetition is the point. Masses are in MeV and lifetimes in seconds, both measured.
 
@@ -77,7 +77,7 @@ The classification article's two octets stack into sixteen rows, and each genera
 
 Four readings of this table are facts about the model rather than facts about the data.
 
-The charge column does not change across a row. That is section 2, read off a table. Every row carries one charge for all three generations.
+The charge column does not change across a row. That is *Why the Index Is Inert*, read off a table. Every row carries one charge for all three generations.
 
 The name, mass and lifetime columns do not change between a row and its colour copies. Rows 3, 5, 7 carry one number three times, because colour is unbroken and the three colours are one particle.
 
@@ -85,11 +85,11 @@ The same columns do not change between a chiral pair. Rows 2 and 10 carry one nu
 
 So the sixteen rows carry four distinct masses per generation, and twelve distinct masses in the whole table: nine electrically charged fermion masses and three neutrino masses. That is the entire flavour content of the model, and it is what the three handles below have to explain.
 
-**The rows name particles, and the masses are the particles'.** Charge conjugation does not add a row: the antiparticle of a field is a conjugate mode of that same field, with the same mass, the opposite $Q$, the opposite $B-L$ and conjugate colour, and the charges are listed in [Particle Classification](particle-classification-three-grids-one-name-in-every-cell.html), §9A. So the sixteen rows are the whole of the matter and the antiparticles add no mass, no lifetime and no branching ratio. **Antiparticles are not a fourth handle.** They are the same three handles with the signs of the charges reversed, which is why they are mentioned here once and not tabulated twice.
+**The rows name particles, and the masses are the particles'.** Charge conjugation does not add a row: the antiparticle of a field is a conjugate mode of that same field, with the same mass, the opposite $Q$, the opposite $B-L$ and conjugate colour, and the charges are listed in [Particle Classification](particle-classification-three-grids-one-name-in-every-cell.html), *The One Sharp Prediction: Sameness*A. So the sixteen rows are the whole of the matter and the antiparticles add no mass, no lifetime and no branching ratio. **Antiparticles are not a fourth handle.** They are the same three handles with the signs of the charges reversed, which is why they are mentioned here once and not tabulated twice.
 
-The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<0.45$ eV from tritium decay (the 2024 KATRIN limit) and $\sum m_\nu<0.12$ eV from cosmology, so the entries read stable and the oscillation is treated separately in section 10. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\nu_R$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of section 5 places it at a scale that is not written anywhere in this table.
+The neutrino rows are the ones that are not numbers. A light neutrino mass is bounded and not measured, $m_\beta<0.45$ eV from tritium decay (the 2024 KATRIN limit) and $\sum m_\nu<0.12$ eV from cosmology, so the entries read stable and the oscillation is treated separately in *The One Exception: Oscillation*. The bound applies to the light eigenstates only. The right-handed row is the one that carries no bound at all: in the model's spectrum $\nu_R$ is a gauge singlet, its mass is not constrained by tritium decay, and the seesaw of *Mass: the Column the Model Does Not Compute* places it at a scale that is not written anywhere in this table.
 
-## 4. The Three Handles
+## The Three Handles
 
 Read the table by column instead of by row and the tripling appears as three differences.
 
@@ -103,7 +103,7 @@ Only the first is independent. A width is fixed once the mass is known and the o
 
 This is the article's central structural claim, and it is worth stating in the form a reader can check. Given the three masses of a sector, the three lifetimes and the three decay patterns follow. Given the three lifetimes, the three masses do not follow.
 
-## 5. Mass: the Column the Model Does Not Compute
+## Mass: the Column the Model Does Not Compute
 
 The masses of the table are input. Nine of them belong to electrically charged fermions and are measured directly; the remaining three are neutrino masses, and those are bounded rather than measured. Measured, the charged set spans five orders of magnitude in the lepton sector and five in the quark sector:
 
@@ -135,7 +135,7 @@ The negative result is the headline. A generic matrix has no preferred spectrum,
 
 Two structural remarks do belong to the model. The right-handed neutrino slot exists, so the seesaw mechanism needs no field the model does not already have. And because the scalar sector is fixed and small, the number of Yukawa matrices is finite and small, though small is not the same as few.
 
-## 6. Lifetime: the One Relation Phase Space Computes
+## Lifetime: the One Relation Phase Space Computes
 
 A lifetime is the inverse width, $\tau=\hbar/\Gamma$, and the width is fixed by the mass and by the open channels. For the muon and the tau the final state is the same, $\ell\to e\bar\nu_e\nu_\ell$, and the parent mass is far above every threshold. The width then scales as the fifth power of the parent mass:
 
@@ -175,7 +175,7 @@ The three lifetimes, in one line: the tau lives $2.90\times10^{-13}$ s, the muon
 
 The top quark is the extreme case of the same statement. Its width is so large that it decays before it can hadronise, at about $5\times10^{-25}$ s, an order of magnitude shorter than the hadronisation time. A particle that decays before it dresses is the cleanest possible demonstration that its lifetime is its mass.
 
-## 7. Decay Pattern: Which Channels Are Open
+## Decay Pattern: Which Channels Are Open
 
 A decay pattern is the mass column filtered through the conservation laws. Charge, colour and $B-L$ are conserved, so a channel opens exactly when the quantum numbers match and the kinematics allow it.
 
@@ -191,7 +191,7 @@ The muon's single channel is why it is the cleanest laboratory in the model. One
 
 Production is the other half of the pattern. Strong and electromagnetic production conserve the label, so a flavour is made in pairs: $e^+e^-\to\mu^+\mu^-$, $\to c\bar c$, $\to b\bar b$. A single muon cannot be produced without a $\mu^+$, which is why the thresholds that reveal a new flavour are pair thresholds.
 
-## 8. How Each Handle Is Seen
+## How Each Handle Is Seen
 
 Each handle has its own experimental signature, and the list is the operational content of the whole article.
 
@@ -206,9 +206,9 @@ Each handle has its own experimental signature, and the list is the operational 
 
 The historical order matches the table, and that is not a coincidence. The muon was found as a track that stopped where a track should not. The strange quark was found as a particle that lived too long for its mass. The charm and beauty quarks were found as thresholds and displaced vertices. The top was found as a resonance whose width exceeds the strong-interaction scale, so it decays before it can hadronise. In every case the discovery was a mass, and the confirmation was a lifetime or a branching ratio. No discovery in the list was a new charge.
 
-That is the empirical shape of the tripling, and it matches section 2 exactly. Three columns that differ in nothing the gauge sector sees can only be found by weighing them.
+That is the empirical shape of the tripling, and it matches *Why the Index Is Inert* exactly. Three columns that differ in nothing the gauge sector sees can only be found by weighing them.
 
-## 9. The One Sharp Prediction: Sameness
+## The One Sharp Prediction: Sameness
 
 Because the three columns couple identically, the $Z$ must decay into $e^+e^-$, $\mu^+\mu^-$ and $\tau^+\tau^-$ at the same rate. Measured at LEP:
 
@@ -224,7 +224,7 @@ One precision note about the table. The quantities LEP measures directly are rat
 
 This is the model's only sharp prediction in this sector, and it is a prediction of sameness rather than of a number. It deserves the emphasis because it is easy to mistake for a triviality. A model in which the three columns coupled differently would pass every other test in this article and fail this one.
 
-## 10. The One Exception: Oscillation
+## The One Exception: Oscillation
 
 Neutrino oscillation is the only measured change of flavour, and it exists because the neutrino mass matrix cannot be rotated away. For the charged leptons the rotation $V$ in $Y=U\operatorname{diag}(y)V^{\dagger}$ is a field redefinition with no consequence. For the neutrinos the mass term is Majorana, so the same rotation leaves a physical residue:
 
@@ -236,7 +236,7 @@ Read as a statement about this article's subject, the formula needs two things: 
 
 It is also the only place where a flavour label changes during propagation, with neither a charged current nor a loop involved.
 
-## 11. Negative Results, Stated Once
+## Negative Results, Stated Once
 
 Four things this article does not have, listed so that no reader supplies them.
 
@@ -246,13 +246,13 @@ No mass is derived. The three masses of a sector are the eigenvalues of an arbit
 
 No mixing angle and no phase is derived. Nine of the eighteen real parameters of $Y$ survive, and all nine are measured.
 
-Flavour-changing neutral currents are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of section 9.
+Flavour-changing neutral currents are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of *The One Sharp Prediction: Sameness*.
 
 One thing the model does get, kept separate from the four. The leptoquarks couple flavour-blind at leading order, so the dipole coefficients for $\ell_i\to\ell_j\gamma$ are proportional to $\delta_{ij}$ times a common loop function. A null result on $\mu\to e\gamma$ therefore propagates to $\tau\to\mu\gamma$, $\tau\to e\gamma$ and the quark channels with a predicted pattern, which is developed in [Charged Lepton Flavour Violation: One Operator and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html). That is the opposite of the mass problem: the model cannot say why the masses differ, and it can say that the bosons do not care that they do.
 
-## 12. Checks
+## Checks
 
-Every number below was recomputed from the values in section 3 before it was written.
+Every number below was recomputed from the values in *The Sixteen Rows* before it was written.
 
 | claim | check | result |
 |---|---|---|
@@ -281,4 +281,4 @@ Every number below was recomputed from the values in section 3 before it was wri
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
 - [Charged Lepton Flavour Violation: One Operator and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html). The flavour-blind coupling and its predicted pattern.
 
-External data. The masses and lifetimes in section 3 are the Particle Data Group values, Review of Particle Physics, and the $Z$ widths of section 9 are the LEP line-shape results. Both are time-dependent compilations, so the numbers here should be quoted with a date when they are carried forward.
+External data. The masses and lifetimes in *The Sixteen Rows* are the Particle Data Group values, Review of Particle Physics, and the $Z$ widths of *The One Sharp Prediction: Sameness* are the LEP line-shape results. Both are time-dependent compilations, so the numbers here should be quoted with a date when they are carried forward.

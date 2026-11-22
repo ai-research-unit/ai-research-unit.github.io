@@ -106,7 +106,7 @@ question is being asked.
 
 So the two readings survive, with one clause removed. Reading A remains true as a statement about the framework's group: the gauge group is $\mathrm U(2)$, the abelian factor is the central phase, and the ceiling is exact. What it cannot also claim is that this phase *is* hypercharge. Reading B is untouched, since it already denies that the algebra contains the needed structure.
 
-Where the computation is. The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Gauge Group and the Hypercharge Assignment in the Fourth-Colour Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
+Where the computation is. The refusal is computed, with the assignment table and the anomaly conditions, in [The Electroweak Gauge Group and the Hypercharge Assignment in the Four Colours Left–Right Model: The Group and the Derived $Y$](the-electroweak-gauge-group-and-the-hypercharge-assignment.html), §*Why the Assignment Is Not Derivable Here*. That article reaches the same conclusion from the other end: the framework supplies the algebra of the group and not the assignment, and one central charge cannot supply two numbers for one species.
 
 ## What Is Not Claimed
 

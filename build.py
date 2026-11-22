@@ -41,10 +41,16 @@ LEGACY_COPIES = [
      "articles_maths/from-the-spin-of-a-single-rotor-to-the-spin-of-a-pair.html"),
     ("articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-algebra.html",
      "articles_maths/from-the-spin-of-the-rotor-to-the-spin-of-a-pair.html"),
-    # The fourth-colour left-right model: the files are renamed, the old URL
-    # stays alive.
-    ("articles_physics/the-fourth-colour-left-right-model.html",
+    # The Four Colours Left–Right Model: the files are renamed, the old URLs
+    # stay alive. Every retired address copies the same live page.
+    ("articles_physics/the-four-colours-left-right-model.html",
      "articles_physics/the-pati-salam-model-in-the-biquaternion-framework.html"),
+    ("articles_physics/the-four-colours-left-right-model.html",
+     "articles_physics/the-fourth-colour-left-right-model.html"),
+    ("articles_internal/the-coupling-sector-of-the-four-colours-model.html",
+     "articles_internal/the-coupling-sector-of-the-fourth-colour-model.html"),
+    ("articles_internal/internal-note-the-four-colours-left-right-model.html",
+     "articles_internal/internal-note-the-fourth-colour-left-right-model.html"),
 ]
 
 # One date for the whole site: the moment the last build started. build_diff.py

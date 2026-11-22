@@ -43,7 +43,7 @@ $$
 a(m+n)=am+an, \qquad (a+b)m=am+bm, \qquad (ab)m=a(bm), \qquad 1_A m = m.
 $$
 
-These are the axioms (M1)–(M4) of *Modules* §1, with the general ring now carrying an $R$-algebra structure. A **right $A$-module** is defined with the action written on the right, $M \times A \to M$, $(m,a)\mapsto ma$, subject to
+These are the axioms (M1)–(M4) of *Modules*, with the general ring now carrying an $R$-algebra structure. A **right $A$-module** is defined with the action written on the right, $M \times A \to M$, $(m,a)\mapsto ma$, subject to
 
 $$
 (m+n)a=ma+na, \qquad m(a+b)=ma+mb, \qquad m(ab)=(ma)b, \qquad m1_A=m.
@@ -71,7 +71,7 @@ For a right $A$-module the same statement holds with $\operatorname{End}_{\mathb
 
 ## Elementary Identities
 
-The following hold in every left $A$-module, by the argument of *Modules* §2:
+The following hold in every left $A$-module, by the argument of *Modules*:
 
 $$
 0_A m = 0, \qquad a 0 = 0, \qquad (-a)m = a(-m) = -(am), \qquad (-a)(-m)=am,
@@ -93,7 +93,7 @@ The base ring acts through the unit: for $r \in R$, $r m = (r 1_A)m$. Consequent
 
 **(c) The regular module.** The algebra $A$ acts on itself by left multiplication, $\rho(a)(b)=ab$; the resulting left module is the **left regular module** ${}_A A$. Its submodules are exactly the left ideals of $A$. Likewise, $A$ acts on itself by right multiplication, giving the right regular module $A_A$, whose submodules are the right ideals, and the two-sided ideals are the submodules of the bimodule ${}_A A_A$. This example is the reason the theory of one-sided ideals is the theory of submodules of the regular module.
 
-**(d) Free modules.** The direct sum $A^n = A \oplus \cdots \oplus A$ of $n$ copies of ${}_A A$ is the free left $A$-module of rank $n$, with standard basis $e_1,\dots,e_n$. Every free module is a direct sum of copies of the regular module; this is the algebra-level form of the statement of *Modules* §9.
+**(d) Free modules.** The direct sum $A^n = A \oplus \cdots \oplus A$ of $n$ copies of ${}_A A$ is the free left $A$-module of rank $n$, with standard basis $e_1,\dots,e_n$. Every free module is a direct sum of copies of the regular module; this is the algebra-level form of the statement of *Modules*.
 
 **(e) Matrix algebras.** Let $A=M_n(F)$ and let $S=F^n$ be the space of column vectors, acted on by matrix multiplication. Then $S$ is a left $M_n(F)$-module, the **defining module** of the matrix algebra, and it is simple. The left regular module is $M_n(F)$, which as a left module is
 
@@ -105,11 +105,11 @@ the summands being the spaces of matrices supported in a single column. Thus the
 
 **(f) Group algebras.** For a group $G$ and a commutative ring $R$, the group algebra $R[G]$ is the free $R$-module on the elements of $G$ with the product extending the group multiplication bilinearly; it is a unital associative $R$-algebra, generally noncommutative when $G$ is nonabelian. An $R[G]$-module is exactly a representation of $G$ on an $R$-module, that is, a group homomorphism $G \to \operatorname{Aut}_R(M)$. The theory is developed from the module side , and the group algebra is the bridge between group theory and the module theory of this category.
 
-**(g) Division algebras.** A unital associative algebra $D$ over a field $F$ is a **division algebra** if every nonzero element is invertible. Then $D$ is a division ring, and by *Modules* §19 every $D$-module is free, so the module theory of $D$ is linear algebra with scalars in a division ring. The quaternions $\mathbb{H}$ are the classical real example, and their modules are not covered here.
+**(g) Division algebras.** A unital associative algebra $D$ over a field $F$ is a **division algebra** if every nonzero element is invertible. Then $D$ is a division ring, and by *Modules* every $D$-module is free, so the module theory of $D$ is linear algebra with scalars in a division ring. The quaternions $\mathbb{H}$ are the classical real example, and their modules are not covered here.
 
 **(h) Algebras with zero divisors.** The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the complexification of $\mathbb{H}$, is a unital associative $\mathbb{C}$-algebra isomorphic to $M_2(\mathbb{C})$. It is not a division algebra; it has zero divisors, and as example (e) shows, not every $\mathbb{B}$-module is free. The simple module is the defining module of the picture algebra, treated .
 
-**(i) Polynomial algebras.** For a field $F$ and an indeterminate $x$, the polynomial algebra $F[x]$ is commutative, and an $F[x]$-module structure on a vector space $V$ is exactly an $F$-linear operator $T:V\to V$, with $x \cdot v=T(v)$. The finitely generated modules over the principal ideal domain $F[x]$ are classified by the structure theorem of *Modules* §15, and the classification is the rational and Jordan normal forms.
+**(i) Polynomial algebras.** For a field $F$ and an indeterminate $x$, the polynomial algebra $F[x]$ is commutative, and an $F[x]$-module structure on a vector space $V$ is exactly an $F$-linear operator $T:V\to V$, with $x \cdot v=T(v)$. The finitely generated modules over the principal ideal domain $F[x]$ are classified by the structure theorem of *Modules*, and the classification is the rational and Jordan normal forms.
 
 ## Submodules and Quotients
 
@@ -123,7 +123,7 @@ $$
 (m+N)+(m'+N)=(m+m')+N, \qquad a(m+N)=am+N,
 $$
 
-the action being well defined because $N$ is closed under scalars. The **natural projection** $\pi: M \to M/N$, $\pi(m)=m+N$, is $A$-linear and surjective with kernel $N$. This is the quotient module of *Modules* §5.
+the action being well defined because $N$ is closed under scalars. The **natural projection** $\pi: M \to M/N$, $\pi(m)=m+N$, is $A$-linear and surjective with kernel $N$. This is the quotient module of *Modules*.
 
 The **correspondence theorem** holds in the algebra setting exactly as in the ring setting: for a submodule $N \subseteq M$, the submodules of $M/N$ correspond bijectively, by $L \mapsto L/N$, to the submodules of $M$ containing $N$, and the correspondence preserves inclusions, sums and intersections. In particular the submodules of the regular module ${}_A A$ are the left ideals of $A$, and those of $A/N$ for a left ideal $N$ correspond to the left ideals lying between $N$ and $A$.
 
@@ -151,7 +151,7 @@ For left $A$-modules the three isomorphism theorems hold by the same coset argum
 
 **(c)** $(M/N)/(P/N) \cong M/P$ for submodules $N \subseteq P \subseteq M$, the quotient $P/N$ being a submodule of $M/N$ identified through the correspondence theorem.
 
-The proofs pass to cosets as in *Modules* §7. The first isomorphism theorem has the following useful form.
+The proofs pass to cosets as in *Modules*. The first isomorphism theorem has the following useful form.
 
 **Proposition.** Let $M$ be a left $A$-module and $f \in \operatorname{Hom}_A(A,M)$, where $A$ is the left regular module. Then $f$ is determined by $m=f(1_A)$, and $f \mapsto f(1_A)$ is an isomorphism of abelian groups
 
@@ -213,7 +213,7 @@ A nonzero module is simple if and only if it is isomorphic to $A/\mathrm{M}$ for
 
 ## Free, Projective and the Rigidity of the Algebra
 
-A **free** left $A$-module is a direct sum of copies of ${}_A A$, equivalently a module with a basis in the sense of *Modules* §9: a set $B$ such that every element has a unique expression as a finite $A$-linear combination of elements of $B$. That a basis element has trivial annihilator is immediate. Every module is a quotient of a free module: choosing a generator set $\{m_i\}$ of $M$ and mapping the free module on the same index set to $M$ by $e_i \mapsto m_i$ gives a surjection, so $M \cong F/K$ for free $F$ and submodule $K$.
+A **free** left $A$-module is a direct sum of copies of ${}_A A$, equivalently a module with a basis in the sense of *Modules*: a set $B$ such that every element has a unique expression as a finite $A$-linear combination of elements of $B$. That a basis element has trivial annihilator is immediate. Every module is a quotient of a free module: choosing a generator set $\{m_i\}$ of $M$ and mapping the free module on the same index set to $M$ by $e_i \mapsto m_i$ gives a surjection, so $M \cong F/K$ for free $F$ and submodule $K$.
 
 A left $A$-module $P$ is **projective** if every diagram of $A$-linear maps with $q$ surjective can be completed, equivalently if every short exact sequence $0 \to L \to N \to P \to 0$ splits, equivalently if $P$ is a direct summand of a free module. Free modules are projective. Over a division ring every module is free, hence projective; over a general algebra this fails, and the failure is where the algebra-specific phenomena begin. The basic examples are these.
 
@@ -221,11 +221,11 @@ A left $A$-module $P$ is **projective** if every diagram of $A$-linear maps with
 - Over the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$, the same description holds with $n=2$ and $F=\mathbb{C}$: the defining module $S=\mathbb{C}^2$ is projective but not free, and a finitely generated $\mathbb{B}$-module is free precisely when its complex dimension is divisible by $4$.
 - Over a division algebra, and in particular over $\mathbb{H}$, every module is free, so projectivity is automatic.
 
-The contrast between $\mathbb{H}$ and $\mathbb{B}$ is the theme of: the first is a division algebra, the second a matrix algebra, and freeness of modules distinguishes them. Over a division ring the rank of a free module is well defined, by the invariant basis number property of *Modules* §19; over a general algebra the rank of a free module exists whenever $A$ has invariant basis number, which holds when $A$ is commutative by *Modules* §10 and when $A$ has a maximal two-sided ideal $\mathrm{M}$ with $A/\mathrm{M}$ left artinian — then $A/\mathrm{M}$ is a matrix ring over a division ring and has invariant basis number, and tensoring $A^{(I)}\cong A^{(J)}$ with $A/\mathrm{M}$ over $A$ gives $(A/\mathrm{M})^{(I)}\cong(A/\mathrm{M})^{(J)}$, hence $|I|=|J|$ — in particular when $A$ is a finite-dimensional algebra over a field.
+The contrast between $\mathbb{H}$ and $\mathbb{B}$ is the theme of: the first is a division algebra, the second a matrix algebra, and freeness of modules distinguishes them. Over a division ring the rank of a free module is well defined, by the invariant basis number property of *Modules*; over a general algebra the rank of a free module exists whenever $A$ has invariant basis number, which holds when $A$ is commutative by *Modules* and when $A$ has a maximal two-sided ideal $\mathrm{M}$ with $A/\mathrm{M}$ left artinian — then $A/\mathrm{M}$ is a matrix ring over a division ring and has invariant basis number, and tensoring $A^{(I)}\cong A^{(J)}$ with $A/\mathrm{M}$ over $A$ gives $(A/\mathrm{M})^{(I)}\cong(A/\mathrm{M})^{(J)}$, hence $|I|=|J|$ — in particular when $A$ is a finite-dimensional algebra over a field.
 
 ## Direct Sums, Products and Idempotents
 
-For a family $\{M_i\}$ of left $A$-modules, the **direct product** $\prod_i M_i$ and the **direct sum** $\bigoplus_i M_i$ are defined componentwise exactly as in *Modules* §8; for finite index sets they coincide, and we write $M_1 \oplus \cdots \oplus M_n$. The sum is the coproduct and the product the product in the category of left $A$-modules.
+For a family $\{M_i\}$ of left $A$-modules, the **direct product** $\prod_i M_i$ and the **direct sum** $\bigoplus_i M_i$ are defined componentwise exactly as in *Modules*; for finite index sets they coincide, and we write $M_1 \oplus \cdots \oplus M_n$. The sum is the coproduct and the product the product in the category of left $A$-modules.
 
 For submodules $N_1,\dots,N_k \subseteq M$, the internal direct sum $M=N_1\oplus\cdots\oplus N_k$ means that every $m$ has a unique expression $m=n_1+\cdots+n_k$ with $n_i \in N_i$; equivalently $M=N_1+\cdots+N_k$ and $N_i \cap \sum_{j \neq i} N_j=0$ for each $i$. A submodule $N$ is a **direct summand** if $M=N\oplus N'$ for some $N'$.
 
@@ -237,7 +237,7 @@ Applying the proposition to the regular module, an idempotent $e \in A$ gives th
 
 ## Nakayama's Lemma over Noncommutative Rings
 
-The Jacobson radical of $A$ is the intersection of its maximal left ideals; equivalently, the intersection of its maximal right ideals, and it is a two-sided ideal $J(A)$. It is treated . The following form of Nakayama's lemma holds for modules over a noncommutative ring and is the noncommutative counterpart of *Modules* §11.
+The Jacobson radical of $A$ is the intersection of its maximal left ideals; equivalently, the intersection of its maximal right ideals, and it is a two-sided ideal $J(A)$. It is treated . The following form of Nakayama's lemma holds for modules over a noncommutative ring and is the noncommutative counterpart of *Modules*.
 
 **Theorem (Nakayama).** Let $I \subseteq J(A)$ be a two-sided ideal contained in the Jacobson radical, let $M$ be a finitely generated left $A$-module, and let $N \subseteq M$ be a submodule. If $M=N+IM$ then $M=N$. In particular, if $IM=M$ then $M=0$.
 

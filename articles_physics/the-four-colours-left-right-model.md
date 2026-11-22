@@ -1,4 +1,4 @@
-# __The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration__
+# __The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration__
 
 ## Introduction
 
@@ -28,7 +28,7 @@ C:\ (\mathbf4,\mathbf2,\mathbf1)\longmapsto(\bar{\mathbf4},\mathbf2,\mathbf1),
 (\bar{\mathbf4},\mathbf1,\mathbf2)\longmapsto(\mathbf4,\mathbf1,\mathbf2),
 $$
 
-and $C(S)\neq S$. What closes $S$ is $C$ composed with the exchange of the two weak factors, which is $CP$ in this frame because parity is the $L\leftrightarrow R$ swap: $CP(S)=S$. **Left-right symmetry is therefore the statement that the sixteen is closed under the composed operation and under neither factor alone**, and the antiparticles sit inside the sixteen as conjugate modes, with the charges $Q\to-Q$, $B-L\to-(B-L)$, colour $\to\bar 3$ listed cell by cell in [Particle Classification](particle-classification-three-grids-one-name-in-every-cell.html), §9A. $C$ is broken and $CP$ is not, which is what the letters in the name of the frame mean. It brings six new gauge bosons — the leptoquarks — which carry colour and lepton number at once and mediate proton decay unless they are heavy. The chain to the Standard Model runs in two steps,
+and $C(S)\neq S$. What closes $S$ is $C$ composed with the exchange of the two weak factors, which is $CP$ in this frame because parity is the $L\leftrightarrow R$ swap: $CP(S)=S$. **Left-right symmetry is therefore the statement that the sixteen is closed under the composed operation and under neither factor alone**, and the antiparticles sit inside the sixteen as conjugate modes, with the charges $Q\to-Q$, $B-L\to-(B-L)$, colour $\to\bar 3$ listed cell by cell in [Particle Classification](particle-classification-three-grids-one-name-in-every-cell.html), in the section on the conjugate grid. $C$ is broken and $CP$ is not, which is what the letters in the name of the frame mean. It brings six new gauge bosons — the leptoquarks — which carry colour and lepton number at once and mediate proton decay unless they are heavy. The chain to the Standard Model runs in two steps,
 
 $$
 G_{4LR}\ \longrightarrow\ \mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\ \longrightarrow\ \mathrm{SU}(3)\times\mathrm{U}(1)_{\mathrm{em}} ,
@@ -66,7 +66,7 @@ The corpus adopts an extension of the Standard Model. The group it uses to descr
 
 **The extension, in numbers.**
 
-| | Standard Model | the fourth-colour model | the change |
+| | Standard Model | the Four Colours Model | the change |
 |---|---|---|---|
 | gauge generators | $12$ | $21$ | $+9$, a factor $1.75$ — not a rounding error |
 | fermions per family | $15$ | $15$ | none: $\nu_R$ is the fourth component of the $\bar{\mathbf4}$, not an addition |

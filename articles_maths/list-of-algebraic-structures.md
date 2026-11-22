@@ -13,10 +13,10 @@ A **monoid** is the lowest rung the corpus writes down: one associative operatio
 | Structure | The property it has | Introduced in |
 |---|---|---|
 | Monoid | one associative binary operation with an identity | *Universal Properties and Categories* |
-| Group | a monoid in which every element is invertible | *Groups*, §1 |
-| Abelian group | a group whose operation is commutative | *Groups*, §1 |
-| Non-example: $(\mathbb{Z} \setminus \{0\}, \cdot)$ | a monoid that fails inverses; only $\pm 1$ are invertible | *Groups*, §1 |
-| Non-example: the symmetric group $S_n$, $n \geq 3$ | a group that fails commutativity | *Groups*, §1 |
+| Group | a monoid in which every element is invertible | *Groups* |
+| Abelian group | a group whose operation is commutative | *Groups* |
+| Non-example: $(\mathbb{Z} \setminus \{0\}, \cdot)$ | a monoid that fails inverses; only $\pm 1$ are invertible | *Groups* |
+| Non-example: the symmetric group $S_n$, $n \geq 3$ | a group that fails commutativity | *Groups* |
 | Non-example: $\mathbb{N}$ under addition | a commutative monoid that fails additive inverses | *The Natural Numbers* (Part V) |
 
 ## The Two-Operation Rungs
@@ -25,10 +25,10 @@ A **ring** is an abelian group carrying a second operation, a multiplication tha
 
 | Structure | The property it has | Introduced in |
 |---|---|---|
-| Ring | an abelian group with an associative multiplication distributive over the addition | *Rings*, §1 |
-| Commutative ring | a ring whose multiplication is commutative | *Commutative Rings*; stated in *Rings*, §5 |
+| Ring | an abelian group with an associative multiplication distributive over the addition | *Rings* |
+| Commutative ring | a ring whose multiplication is commutative | *Commutative Rings*; stated in *Rings* |
 | Reduced ring | a commutative ring with no nonzero nilpotent | *Reduced Rings and the Nilradical* |
-| Integral domain | a commutative ring with $1 \neq 0$ and no zero divisors | *Integral Domains*; stated in *Rings*, §12 |
+| Integral domain | a commutative ring with $1 \neq 0$ and no zero divisors | *Integral Domains*; stated in *Rings* |
 | GCD domain | a domain in which any two elements have a greatest common divisor | *GCD Domains* |
 | Bézout domain | a domain in which every finitely generated ideal is principal | *Bézout Domains* |
 | Unique factorisation domain | a domain in which every nonzero nonunit factors uniquely into irreducibles | *Unique Factorisation Domains* |
@@ -36,7 +36,7 @@ A **ring** is an abelian group carrying a second operation, a multiplication tha
 | Euclidean domain | a domain carrying a Euclidean degree function and division with remainder | *Euclidean Domains* |
 | Division ring | a ring with $1 \neq 0$ in which every nonzero element is invertible | *Division Rings* |
 | Ore domain | a domain in which every two nonzero elements have a common left and a common right multiple | *Ore Domains and Division Rings of Fractions* |
-| Field | a commutative ring with $1 \neq 0$ in which every nonzero element is invertible | *Fields*, §1 |
+| Field | a commutative ring with $1 \neq 0$ in which every nonzero element is invertible | *Fields* |
 | Non-example: $\mathbb{Z}$ | an integral domain that fails the field axiom: $2$ has no inverse | *The Integers* (Part V); *Rings* |
 | Non-example: the split-complex numbers $\mathbb{C}_{\mathrm{spl}}$ | a commutative ring that fails the domain axiom: $(1+j)(1-j) = 0$ | *Examples of Rings and Fields* |
 | Non-example: the dual numbers $\mathbb{C}_{\mathrm{dln}}$ | a commutative ring that fails the domain axiom: $\varepsilon^2 = 0$ | *Examples of Rings and Fields* |
@@ -88,12 +88,12 @@ The ladder is a list of one added axiom per rung, and the table reads it in that
 | Rung | The axiom it adds to the rung above | A structure at the rung | Introduced in |
 |---|---|---|---|
 | Monoid | associativity and an identity, from a bare operation | $(\mathbb{N}, +)$ | *Universal Properties and Categories* |
-| Group | inverses | $(\mathbb{Z}, +)$ | *Groups*, §1 |
-| Abelian group | commutativity | $(\mathbb{Z}, +)$ | *Groups*, §1 |
-| Ring | a second operation, distributing over the first | $\mathbb{Z}$ | *Rings*, §1 |
-| Commutative ring | commutativity of the second operation | $\mathbb{Z}$ | *Rings*, §5 |
-| Integral domain | no zero divisors | $\mathbb{Z}$ | *Rings*, §12 |
-| Field | inverses for the nonzero elements | $\mathbb{Q}$ | *Fields*, §1 |
+| Group | inverses | $(\mathbb{Z}, +)$ | *Groups* |
+| Abelian group | commutativity | $(\mathbb{Z}, +)$ | *Groups* |
+| Ring | a second operation, distributing over the first | $\mathbb{Z}$ | *Rings* |
+| Commutative ring | commutativity of the second operation | $\mathbb{Z}$ | *Rings* |
+| Integral domain | no zero divisors | $\mathbb{Z}$ | *Rings* |
+| Field | inverses for the nonzero elements | $\mathbb{Q}$ | *Fields* |
 | Module | an action of a ring on an abelian group | $\mathbb{Z}^n$ | *Modules* |
 | Vector space | the scalars form a field | $\mathbb{R}^n$ | *Vector Spaces* |
 | Algebra | the abelian group carries a bilinear product | $M_2(\mathbb{R})$ | *Algebras* |

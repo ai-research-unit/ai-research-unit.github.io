@@ -11,7 +11,7 @@ A group presentation may be written so that the involution it carries is visible
 
 **Proposition (the descended map is an involution).** With the notation above, the extension of $\sigma_S$ to $F(S)$ is an anti-automorphism of order two, it preserves the normal closure of $R$ when $\sigma(R)=R$, and it descends to an involution of $G$.
 
-**Proof.** The formula defines a map on words that reverses the product order and whose square is the identity, so it is an anti-automorphism of $F(S)$ of order two. If $r\in R$ then $\sigma(r)\in R$ by hypothesis, so the normal closure is stable; the descended map on $G=F(S)/\langle\langle R\rangle\rangle$ is therefore well defined, and it is an involution because $\sigma_S$ is. This is the involutive presentation of *Involutive Groups*, §10, read through a presentation.
+**Proof.** The formula defines a map on words that reverses the product order and whose square is the identity, so it is an anti-automorphism of $F(S)$ of order two. If $r\in R$ then $\sigma(r)\in R$ by hypothesis, so the normal closure is stable; the descended map on $G=F(S)/\langle\langle R\rangle\rangle$ is therefore well defined, and it is an involution because $\sigma_S$ is. This is the involutive presentation of *Involutive Groups*, read through a presentation.
 
 **Proposition (every involutive group is presented).** Every involutive group $(G,\sigma)$ has an involutive presentation: take $S=G$ with $\sigma_S=\sigma$ and $R$ the set of relations $g\cdot h=gh$ for all $g,h\in G$.
 
@@ -47,7 +47,7 @@ A group presentation may be written so that the involution it carries is visible
 
 ## The Word Problem of the Extension
 
-Let $\alpha$ be an involutive automorphism of $G$, computable on a generating set, and let $G\rtimes\langle t\rangle$ be the semidirect product of *Involutive Groups*, §9, with $tgt^{-1}=\alpha(g)$.
+Let $\alpha$ be an involutive automorphism of $G$, computable on a generating set, and let $G\rtimes\langle t\rangle$ be the semidirect product of *Involutive Groups*, with $tgt^{-1}=\alpha(g)$.
 
 **Theorem.** The word problem of $G$ is decidable if and only if the word problem of $G\rtimes\langle t\rangle$ is decidable.
 

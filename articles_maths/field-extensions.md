@@ -6,7 +6,7 @@ A field extension is a pair of fields $F \subseteq K$; it is studied by forgetti
 
 This article develops the calculus of degrees and minimal polynomials. It proves the tower law, which makes the degree multiplicative over intermediate fields, and it shows that an element is algebraic exactly when it generates a finite extension, in which case the extension is the quotient of a polynomial ring by the irreducible polynomial that vanishes at the element. These are the foundations on.
 
-Throughout, $F \subseteq K$ are fields, so $\operatorname{char} F = \operatorname{char} K$ by *Fields*, §3, and $K$ is a vector space over $F$ in the sense. The prime subfield of $F$, the Frobenius map, and the basic field axioms are assumed from *Fields*. Where a result requires that $2$ be invertible, or that a polynomial be separable, this is flagged.
+Throughout, $F \subseteq K$ are fields, so $\operatorname{char} F = \operatorname{char} K$ by *Fields*, and $K$ is a vector space over $F$ in the sense. The prime subfield of $F$, the Frobenius map, and the basic field axioms are assumed from *Fields*. Where a result requires that $2$ be invertible, or that a polynomial be separable, this is flagged.
 
 ---
 

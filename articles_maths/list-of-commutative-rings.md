@@ -53,7 +53,7 @@ These rings are all integral domains, so none has a zero divisor; they separate 
 | $k[x_1, \dots, x_n]$ | $n$ | $k^{\times}$ | none | *Polynomial Rings and Rational Functions* |
 | $R[[x]]$ | $1$ when $R$ is a field | the series with unit constant term | none when $R$ is a domain | *Formal Power Series and Completion* |
 | $k[[x]]$ | $1$ | the series with nonzero constant term | none | *Examples of Rings and Fields* |
-| $k(x)$ | $0$ | all nonzero | none | *Fields*, §19 |
+| $k(x)$ | $0$ | all nonzero | none | *Fields* |
 | $k((t))$ | $0$ | all nonzero | none | *Absolute Values, Valuations and Completions* |
 | $\mathbb{Z}_{(p)}$ | $1$ | the fractions with numerator prime to $p$ | none | *Localization and the Fraction Field* |
 | $\mathbb{Z}[x]$ | $2$ | $\pm 1$ | none | *Polynomial Rings and Rational Functions* |

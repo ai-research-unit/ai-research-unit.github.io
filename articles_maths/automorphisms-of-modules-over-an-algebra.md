@@ -186,7 +186,7 @@ A caution on the opposite. For $D$ a field, transposition identifies $M_n(D)$ wi
 
 ## Worked Case: The Quaternions
 
-The quaternions $\mathbb{H}$ are a division algebra over $\mathbb{R}$, so every $\mathbb{H}$-module is free by *Modules* §19. Let $M=\mathbb{H}^n$.
+The quaternions $\mathbb{H}$ are a division algebra over $\mathbb{R}$, so every $\mathbb{H}$-module is free by *Modules*. Let $M=\mathbb{H}^n$.
 
 **Proposition.** $\operatorname{End}_{\mathbb{H}}(\mathbb{H}^n)\cong M_n(\mathbb{H}_{\mathrm{opp}})$, and $\operatorname{Aut}_{\mathbb{H}}(\mathbb{H}^n)\cong GL_n(\mathbb{H})$. In particular $\operatorname{Aut}_{\mathbb{H}}(\mathbb{H})\cong \mathbb{H}^{\times}$, the nonzero quaternions.
 

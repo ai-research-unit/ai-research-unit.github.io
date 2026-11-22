@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The model.** This article classifies the particles of one model and no other: **the fourth-colour left–right model**, the model the corpus adopts, set out in [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The name is stated first because every name below belongs to that model and to nothing else. It is not the Standard Model's particle list, and it is not a general classification of everything the algebra could describe: it is the spectrum of this frame, under this group, with this one declaration.
+**The model.** This article classifies the particles of one model and no other: **the Four Colours Left–Right Model**, the model the corpus adopts, set out in [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The name is stated first because every name below belongs to that model and to nothing else. It is not the Standard Model's particle list, and it is not a general classification of everything the algebra could describe: it is the spectrum of this frame, under this group, with this one declaration.
 
 **The structure.** The frame is one group with three factors,
 
@@ -16,7 +16,7 @@ acting on a formal copy of the quartet. $\mathrm{SU}(4)$ acts on the four dimens
 
 **What the model declares and what it derives, in one paragraph, because the names depend on the difference.** The carrier supplies the group, the canonical split $\mathbf 4=\mathbf 1\oplus\mathbf 3$, the two-sided action and the traceless diagonal. What it does **not** supply is which of the four dimensions is the lepton; that is the model's one load-bearing declaration, (A), and every charge in this article is computed after it. The chiral assignment is declared too. Everything else below is arithmetic on those two declarations.
 
-**The answer, and it is a picture.** Three grids of cells, one grid per factor: a $4\times4$ for $\mathrm{SU}(4)$ over the labels $t,x,y,z$, and a $2\times2$ for each $\mathrm{SU}(2)$ over the labels $\uparrow,\downarrow$. Each is drawn as a matrix, with the symbol of the boson and the name of the particle inside the cell. A cell is a direction, not a generator — a cell and its mirror image are the two halves of one plane, and the plane's two particles are their combinations. That single fact is what makes the grids readable and is stated once in §2.
+**The answer, and it is a picture.** Three grids of cells, one grid per factor: a $4\times4$ for $\mathrm{SU}(4)$ over the labels $t,x,y,z$, and a $2\times2$ for each $\mathrm{SU}(2)$ over the labels $\uparrow,\downarrow$. Each is drawn as a matrix, with the symbol of the boson and the name of the particle inside the cell. A cell is a direction, not a generator — a cell and its mirror image are the two halves of one plane, and the plane's two particles are their combinations. That single fact is what makes the grids readable and is stated once in *The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell*.
 
 **The count, in one line.**
 
@@ -28,11 +28,11 @@ $$
 
 so **twenty-four cells, twenty-one generators, three trace directions.** The three cells that hold no generator are the three traces, one per factor, and that is why the group is $21$ and not $24$.
 
-**What this article is.** A nomenclature built on that structure. Every name in every cell is a name already in the corpus; the grid is the frame's own decomposition, drawn. §8 lists the spectrum the grids produce, and §9 and §10 give the fermions and the scalars that sit on the same cells.
+**What this article is.** A nomenclature built on that structure. Every name in every cell is a name already in the corpus; the grid is the frame's own decomposition, drawn. *The Spectrum: Twenty-One Generators, Twenty-One Particles* lists the spectrum the grids produce, and *The Fermions, on the Same Cells* and *The Scalars, Which Are Not on the Grids* give the fermions and the scalars that sit on the same cells.
 
 **What this article is not, stated at the top because it governs every entry.** It is not a coupling sector. The model carries three gauge couplings as symbols multiplying their generators and fixes none of their values; it fixes no scalar multiplet; and it predicts no mass relation. Everything below is content and charge — what exists, in which cell, with which name and which $Q$ — and none of it depends on a coupling. Where a number in this family cannot be written without a scale, it is the literature's and it is flagged as such.
 
-## 1. What Each Factor Acts On
+## What Each Factor Acts On
 
 **Three factors, three carriers, and the index each one uses.**
 
@@ -105,7 +105,7 @@ $$
 
 **The one genuine coincidence, stated as one.** The number $16$ is also the dimension of the bifundamental $(\mathbf4,\mathbf2,\mathbf2)$, because $4\times2\times2$ does not care which factor is which. **The fermion content of this model is not that representation**; the equality is arithmetic, and the block table above is what distinguishes the two objects.
 
-## 2. The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell
+## The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell
 
 **How to read a cell.** Cell $(i,j)$ is the direction that moves index $j$ into index $i$. A cell alone is not a generator: it is one of the two amplitudes of the plane $\{i,j\}$, and the plane's two directions are the amplitude and its reverse. **The two particles of a plane are the two real combinations of its two amplitudes**, which is why each cell can carry a particle name and why the pair of mirrored cells carries a pair of particles.
 
@@ -192,11 +192,11 @@ and the vanishing of the trace is the same statement as the four diagonal entrie
 
 **Four diagonal cells, three generators.** The diagonal of the $4\times4$ has four cells and the tracelessness condition leaves three independent combinations: $B-L$ in the corner and two in the colour block. The fourth combination — all four entries equal — is the trace direction $iI$, and it is not a generator of $\mathrm{SU}(4)$: it is the direction $\det=1$ removes. **That is the first of the three removed cells, and the other two are the diagonal cells of the next two grids.** So the $4\times4$ holds sixteen cells and fifteen generators, and the missing one is not a hole in the picture but the definition of $\mathrm{SU}(4)$.
 
-## 3. The $\mathrm{SU}(2)_L$ Grid, $2\times2$
+## The $\mathrm{SU}(2)_L$ Grid, $2\times2$
 
 **Three generators, four cells, in a $2\times2$.** The index is the left doublet, and the grid names the left weak bosons.
 
-**The grid.** The same drawing as §2, one factor smaller. Rows are *from*, columns are *to*.
+**The grid.** The same drawing as *The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell*, one factor smaller. Rows are *from*, columns are *to*.
 
 $$
 \begin{array}{ccc}
@@ -221,7 +221,7 @@ So $\mathrm{SU}(2)_L$ acts on two doublets per generation: one leptonic and one 
 
 **The diagonal cell is one generator and the other is the trace.** The two diagonal cells of a $2\times2$ hold two real numbers and the constraint that their sum vanish leaves one, $W^3_L$. The other is the trace, the direction removed by $\det=1$ again. **So $\mathfrak u(2)_L=4=3+1$ and $\mathfrak{su}(2)_L=3$.**
 
-## 4. The $\mathrm{SU}(2)_R$ Grid, $2\times2$
+## The $\mathrm{SU}(2)_R$ Grid, $2\times2$
 
 **The grid.** The same drawing, a different copy, and the names change because the particles do.
 
@@ -246,9 +246,9 @@ $$
 
 **The right neutrino is not an addition, and the grid says why.** $\nu_{eR}$ sits in the up-type slot of the right doublet because the right doublet is the doublet of the conjugate quartet $\bar{\mathbf 4}$, and the $\bar{\mathbf 4}$ has four components of which one is the lepton. A model that has to add $\nu_R$ by hand has no right doublet to put it in.
 
-**The two $2\times2$ grids are not the same grid twice.** They are two factors acting on two copies, and on the carrier their generators lie *inside* the $4\times4$ grid rather than beside it: $L_{\vec e_a}$ and $R_{\vec e_a}$ are traceless and skew-adjoint, hence in $\mathfrak{su}(4)$, so the six weak generators form a six-dimensional subalgebra of the fifteen. That is why the frame's $21$ is the dimension of the product group on the declared copy and not the dimension of anything on the carrier. §5 states the arithmetic.
+**The two $2\times2$ grids are not the same grid twice.** They are two factors acting on two copies, and on the carrier their generators lie *inside* the $4\times4$ grid rather than beside it: $L_{\vec e_a}$ and $R_{\vec e_a}$ are traceless and skew-adjoint, hence in $\mathfrak{su}(4)$, so the six weak generators form a six-dimensional subalgebra of the fifteen. That is why the frame's $21$ is the dimension of the product group on the declared copy and not the dimension of anything on the carrier. *The Ledger of the Three Grids* states the arithmetic.
 
-## 5. The Ledger of the Three Grids
+## The Ledger of the Three Grids
 
 **Twenty-four cells, twenty-one generators, three traces.**
 
@@ -261,7 +261,7 @@ $$
 
 **So $21=24-3$, and the three removed cells are the same cell three times.** In each factor it is the trace direction, the one that $\det=1$ takes out: $\mathfrak u(N)=N^2$ and $\mathfrak{su}(N)=N^2-1$. That is why the frame's arithmetic read as grids is $16-1+4-1+4-1=15+3+3$.
 
-**And the twenty-one survive as twenty-one states, but not one for one in the same order.** Three of them are ingredients: the two neutral components of the weak grids and the $(\nu,\nu)$ corner. §8 states that.
+**And the twenty-one survive as twenty-one states, but not one for one in the same order.** Three of them are ingredients: the two neutral components of the weak grids and the $(\nu,\nu)$ corner. *The Spectrum: Twenty-One Generators, Twenty-One Particles* states that.
 
 **The one place the three grids are not independent, stated because it is easy to get wrong.** On the formal copy the three factors are a product and the three grids are three independent sets of cells: $15+3+3=21$. On the carrier they are not, because the carrier supplies only $\mathfrak u(4)$:
 
@@ -269,9 +269,9 @@ $$
 \dim_{\mathbb R}\mathfrak u(4)=16=15+1 ,
 $$
 
-and the six weak generators sit inside the fifteen. So $15+6=21$ is a double count on the carrier and $15+6-6=15$ is the algebra; the twenty-one exists only where the copy is declared, which is why the copy must be declared and cannot be found. The grids of §2, §3 and §4 are drawn on the copy, and that is the sense in which they are three grids and not one.
+and the six weak generators sit inside the fifteen. So $15+6=21$ is a double count on the carrier and $15+6-6=15$ is the algebra; the twenty-one exists only where the copy is declared, which is why the copy must be declared and cannot be found. The grids of *The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell*, *The $\mathrm{SU}(2)_L$ Grid, $2\times2$* and *The $\mathrm{SU}(2)_R$ Grid, $2\times2$* are drawn on the copy, and that is the sense in which they are three grids and not one.
 
-## 6. Where the Five Names of the Corner Come From
+## Where the Five Names of the Corner Come From
 
 **One cell, five names, and this is the worst collision in the corpus.** The $(\nu,\nu)$ cell of the $4\times4$ grid is written, in the corpus and in the literature:
 
@@ -287,7 +287,7 @@ and the six weak generators sit inside the fifteen. So $15+6=21$ is a double cou
 
 **The collision is with hypercharge.** In the electroweak literature $B_\mu$ is the hypercharge field, a different object, mixed into the photon by a different coefficient. The frame's $B$ is the $(\nu,\nu)$ cell. They are not the same field and they do not even have the same charge: the frame's is $B-L$, the literature's is $Y$. **Write $B'$ or $C$ for the frame's field, and keep $B$ for hypercharge**; no number in any article changes.
 
-## 7. The Sextet, Which Is the Six Cells of the Mixed Band
+## The Sextet, Which Is the Six Cells of the Mixed Band
 
 **Three planes, two cells each, two particles each.** The mixed band of the $4\times4$ grid is the $\nu$ row and the $\nu$ column, and its six off-corner cells are the leptoquarks.
 
@@ -301,7 +301,7 @@ and the six weak generators sit inside the fifteen. So $15+6=21$ is a double cou
 
 **And $\bar X$ is not a different kind of object.** It is the reverse amplitude of the same plane, which is why its mass is the same and its charge is the opposite. A reader who takes $X$ and $\bar X$ for two species has read a factor of two into the sextet that is not there: there are six particles because there are three colour planes and two directions each.
 
-## 8. The Spectrum: Twenty-One Generators, Twenty-One Particles
+## The Spectrum: Twenty-One Generators, Twenty-One Particles
 
 **Twenty-one cells hold generators; three of them are ingredients; the ingredients become particles. The two counts agree at the end of the chain and not at the beginning.**
 
@@ -326,9 +326,9 @@ $$
 
 The coefficients are not free: $\gamma$ is the unique null direction of the $3\times3$ neutral mass matrix. **An ingredient is a cell that no particle occupies, because a particle is made of it** — and that is why $21$ cells and $21$ particles are not the same $21$.
 
-## 9. The Fermions, on the Same Cells
+## The Fermions, on the Same Cells
 
-**Sixteen per generation, and they occupy the cells of the $4\times4$ grid times the cells of the two $2\times2$ grids.** A fermion is one quartet index (four values) times one doublet index (two values per chirality), and $4\cdot2=8$ per chirality, so $16$ per generation. **That is the product rule of §1 read off the grids: the $4$ is the quartet's size, the $2$ is a doublet's size, and the second $2$ is the chirality block.** The tables below are the rule written out, one row per value of each index.
+**Sixteen per generation, and they occupy the cells of the $4\times4$ grid times the cells of the two $2\times2$ grids.** A fermion is one quartet index (four values) times one doublet index (two values per chirality), and $4\cdot2=8$ per chirality, so $16$ per generation. **That is the product rule of *What Each Factor Acts On* read off the grids: the $4$ is the quartet's size, the $2$ is a doublet's size, and the second $2$ is the chirality block.** The tables below are the rule written out, one row per value of each index.
 
 **The left octet: the $4\times4$ index times the $L$ grid's up/down.**
 
@@ -347,13 +347,13 @@ The coefficients are not free: $\gamma$ is the unique null direction of the $3\t
 
 **Three remarks about the pairing.**
 
-- **The colour index is $\mathbf3$ on the left and $\bar{\mathbf3}$ on the right, and the two readings differ in the sign of $Q$.** The four labels are the same four, but the right octet sits in the conjugate quartet, which is why the sixteen is anomaly-free by construction. The rows above name particles, so they carry the particle's charges; a row written in the $\bar{\mathbf4}$ carries the negatives. §9A fixes the convention and is where the difference is stated properly.
+- **The colour index is $\mathbf3$ on the left and $\bar{\mathbf3}$ on the right, and the two readings differ in the sign of $Q$.** The four labels are the same four, but the right octet sits in the conjugate quartet, which is why the sixteen is anomaly-free by construction. The rows above name particles, so they carry the particle's charges; a row written in the $\bar{\mathbf4}$ carries the negatives. *The Fermions, on the Same Cells*A fixes the convention and is where the difference is stated properly.
 - **A massive fermion needs both octets.** $e_L$ and $e_R$ are two cells and one electron at low energy; the electron is the Dirac combination of the two. So a count of *cells* is sixteen and a count of *particles* is fewer.
-- **Three generations multiply the table by three**, so forty-eight Weyl fields and ninety-six states once the antiparticles of §9A are counted. The number of generations is not fixed by the grid; that is the subject of a separate article and the grid says nothing about it.
+- **Three generations multiply the table by three**, so forty-eight Weyl fields and ninety-six states once the antiparticles of *The Fermions, on the Same Cells*A are counted. The number of generations is not fixed by the grid; that is the subject of a separate article and the grid says nothing about it.
 
-## 9A. The Conjugate Grid
+## The Conjugate Grid
 
-**The sixteen rows of §9 are every fermion of a generation, and the antiparticles are already inside them.** That is worth stating first, because the algebra invites the opposite reading. Charge conjugation maps the sixteen to a different representation, so the map cannot be read off the table by inspection, and the temptation is to add a second sixteen of fields. **No second multiplet is needed**: the antiparticle of a field is a conjugate mode of that same field, and the model contains no fermion that the sixteen lacks. What the map gives is a list of *quantum numbers* for the antiparticle states. This section writes that list out, because it is what fixes the charges of the antiparticles and the action of $C$ on the spectrum.
+**The sixteen rows of *The Fermions, on the Same Cells* are every fermion of a generation, and the antiparticles are already inside them.** That is worth stating first, because the algebra invites the opposite reading. Charge conjugation maps the sixteen to a different representation, so the map cannot be read off the table by inspection, and the temptation is to add a second sixteen of fields. **No second multiplet is needed**: the antiparticle of a field is a conjugate mode of that same field, and the model contains no fermion that the sixteen lacks. What the map gives is a list of *quantum numbers* for the antiparticle states. This section writes that list out, because it is what fixes the charges of the antiparticles and the action of $C$ on the spectrum.
 
 ### The Operation
 
@@ -405,7 +405,7 @@ The right octet gives the same table with $R$ in place of $L$. So one rule cover
 | the left octet | $L$ | $\bar 3$ | $-Q$ | $-(B-L)$ |
 | the right octet | $R$ | $\bar 3$ | $-Q$ | $-(B-L)$ |
 
-**No row of this table is a new field.** Each row names one state of the field in the corresponding row of §9, and that state is counted inside that field and not beside it. The table is therefore a table of numbers, and it adds nothing to the fermion content.
+**No row of this table is a new field.** Each row names one state of the field in the corresponding row of *The Fermions, on the Same Cells*, and that state is counted inside that field and not beside it. The table is therefore a table of numbers, and it adds nothing to the fermion content.
 
 ### The Count
 
@@ -447,7 +447,7 @@ The neutrino is not its own antiparticle here. $B-L$ is gauged and comes from in
 
 **The same sixteen rows can be read two ways and the two readings disagree in the sign of $Q$ on eight of them.** Named as particles, a right-handed quark carries $Q=+\tfrac23$ and $B-L=+\tfrac13$. Placed in the $\bar{\mathbf4}$, whose weights are the negatives of the $\mathbf4$'s, the same cell carries $Q=-\tfrac23$. Neither reading is wrong; they are a name and a representation, and mixing them is what produces a table that contradicts itself.
 
-The rule used in this article is one sentence: **a name denotes a particle, so every row of §9 carries the particle's own quantum numbers, and the conjugate rows carry the negatives.** The anomaly of the representations is then computed on $(\mathbf4,\mathbf2,\mathbf1)$ and $(\bar{\mathbf4},\mathbf1,\mathbf2)$, where the second block's entries are the conjugates of the named right-handed fields, which is why $+2-2=0$ rather than $+2+2$.
+The rule used in this article is one sentence: **a name denotes a particle, so every row of *The Fermions, on the Same Cells* carries the particle's own quantum numbers, and the conjugate rows carry the negatives.** The anomaly of the representations is then computed on $(\mathbf4,\mathbf2,\mathbf1)$ and $(\bar{\mathbf4},\mathbf1,\mathbf2)$, where the second block's entries are the conjugates of the named right-handed fields, which is why $+2-2=0$ rather than $+2+2$.
 
 ### What Is Measured
 
@@ -464,7 +464,7 @@ The rule used in this article is one sentence: **a name denotes a particle, so e
 
 The equality of the first two rows is what $CPT$ forces and what the model's exact $CP$ closure reproduces cell by cell. The last row is the one thing the conjugate grid does not explain: the spectrum is symmetric under $CP$, and the universe is not.
 
-## 10. The Scalars, Which Are Not on the Grids
+## The Scalars, Which Are Not on the Grids
 
 **Twenty-four real components, twelve eaten, twelve surviving.** Scalars are bosons and are not gauge bosons, so they do not occupy a cell of any grid: a scalar is a field whose value is a vector in a representation, not a direction in the algebra.
 
@@ -494,14 +494,14 @@ $6+2+2+1+1=12$. The two neutral states mix, so $h^0$ and $H^0$ are interaction e
 
 **Two things the tables do not say, and one the corpus retracted.** Both belong here because this article lists sectors and a list invites the reading that each sector is settled.
 
-- **The frame predicts no mass relation, because it fixes no scalar multiplet.** What is structural is a *count*: one bidoublet puts the down-type quarks and the charged leptons in one Yukawa term, so one matrix serves two sectors and the spectra come out **proportional**. That sentence has no scale in it and no coupling in it. The numerical equalities people write from it — $m_d=m_e$, $m_u=m_\nu$ — are the **Pati–Salam literature's published condition, not this model's prediction**, and the corpus quarantines them in [The Coupling Sector of the Fourth-Colour Left–Right Model: A Retired Working Record](../articles_internal/the-coupling-sector-of-the-fourth-colour-model.html), whose ledger note says so in its first line. Of the four per-generation ratios the literature then checks, two hold and two fail by orders of magnitude ($m_d/m_e=1$ against a measured $9.1$, $m_u/m_\nu=1$ against $\sim4\times10^{7}$). **A model that claims no number misses nothing and proves nothing**; that is the trade, and it is the corpus's own verdict on its own coupling sector.
+- **The frame predicts no mass relation, because it fixes no scalar multiplet.** What is structural is a *count*: one bidoublet puts the down-type quarks and the charged leptons in one Yukawa term, so one matrix serves two sectors and the spectra come out **proportional**. That sentence has no scale in it and no coupling in it. The numerical equalities people write from it — $m_d=m_e$, $m_u=m_\nu$ — are the **Pati–Salam literature's published condition, not this model's prediction**, and the corpus quarantines them in [The Coupling Sector of the Four Colours Left–Right Model: A Retired Working Record](../articles_internal/the-coupling-sector-of-the-four-colours-model.html), whose ledger note says so in its first line. Of the four per-generation ratios the literature then checks, two hold and two fail by orders of magnitude ($m_d/m_e=1$ against a measured $9.1$, $m_u/m_\nu=1$ against $\sim4\times10^{7}$). **A model that claims no number misses nothing and proves nothing**; that is the trade, and it is the corpus's own verdict on its own coupling sector.
 - **Two neutral states is structural; their mixing angle is not.** The bidoublet's eight real components leave two neutral directions after the breaking, and that count is arithmetic. But the angle that rotates them into mass eigenstates is an entry of the potential, so it is scale-bearing and not fixed. **The $125$ GeV state is therefore a mixture of two directions, and *which* mixture is not something the frame decides.**
 
 **The word to avoid is "the Higgs coupling".** This model leaves all three gauge couplings symbolic and predicts none of them; it fixes no scalar multiplet; and the observed state is a mass eigenstate of an unfixed mixing. **So the corpus does not have a coupling claim to patch — it has no coupling claims at all in this sector**, and an article that says "the minimal sector gives $m_d=m_e$" has imported the literature's claim into a model whose ledger refuses it.
 
 **One caution on the letters.** The symbols $S$, $h$, $H^{\pm}$, $h^0$, $H^0$ are conventional and are introduced here so that the twelve can be listed; the corpus names them "a colour triplet, a charged singlet, $H^{\pm}$ and two neutral states". The multiplets, the counts and the fates are the corpus's; no claim depends on the choice of letter.
 
-## 11. Names That Collide, and the One-Word Fix
+## Names That Collide, and the One-Word Fix
 
 | the collision | what it hides | the fix |
 |---|---|---|
@@ -516,9 +516,9 @@ $6+2+2+1+1=12$. The two neutral states mix, so $h^0$ and $H^0$ are interaction e
 
 **The mass collision is the worst.** The quaternionic norm $\mathcal N=-m^2c^2$ is a quartic invariant a boost preserves. The finite mass $m$ is a parameter of the finite Dirac operator. A mass eigenvalue is what a mass matrix returns. A mass scale $M_C$, $M_R$, $M_W$ is where a mass is generated. $M_X=\sqrt2\,M_{W_R}$ relates two of the fourth kind. **The equality $m_d=m_e$ is not of those four kinds at all: it is the Pati–Salam literature's per-generation condition, transcribed and flagged, and this model predicts no such relation because it fixes no scalar multiplet.** A sentence that says "the mass is $M_C$" mixes the fourth kind with the third.
 
-## 12. The Seven Cells Touching the $\nu$ Index
+## The Seven Cells Touching the $\nu$ Index
 
-**One arrangement fact, and it is the grid's own.** Seven generators have a nonzero entry in the $\nu$ row or the $\nu$ column. In the grid of §2 they are visible without any computation: everything in the $\nu$ row, everything in the $\nu$ column, and the corner.
+**One arrangement fact, and it is the grid's own.** Seven generators have a nonzero entry in the $\nu$ row or the $\nu$ column. In the grid of *The $\mathrm{SU}(4)$ Grid, $4\times4$, with a Name in Every Cell* they are visible without any computation: everything in the $\nu$ row, everything in the $\nu$ column, and the corner.
 
 | what it does with the $\nu$ line | cells | count | names |
 |---|---|---|---|
@@ -529,7 +529,7 @@ $6+2+2+1+1=12$. The two neutral states mix, so $h^0$ and $H^0$ are interaction e
 
 $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So the sextet is exactly the set of gauge bosons that can change the lepton number, the corner measures it, and the eight gluons are the block that cannot.**
 
-> **What this is not.** The $\nu$ index is the algebra's time unit, so "touching the $\nu$ index" is the algebra's own statement. It does not follow that these seven are spacetime objects: they are internal gauge directions that happen to touch the coordinate $e_t$, and the identification of the four coordinates with colour is the declaration of §1.
+> **What this is not.** The $\nu$ index is the algebra's time unit, so "touching the $\nu$ index" is the algebra's own statement. It does not follow that these seven are spacetime objects: they are internal gauge directions that happen to touch the coordinate $e_t$, and the identification of the four coordinates with colour is the declaration of *What Each Factor Acts On*.
 
 ## The Checks
 
@@ -564,7 +564,7 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 | the conjugation, involution | $C(C(Q))$ | $Q$ |
 | the conjugation on the quartet | $C(e_x)$, $C(e_y)$, $C(e_z)$ | $-e_x$, $+e_y$, $-e_z$ |
 | the chirality blocks | $E_\pm=\tfrac12(1\pm ie_z)$ under $C$ | preserved |
-| the antiparticle states | rows, against the rows of §9 | $16$, each inside its own field |
+| the antiparticle states | rows, against the rows of *The Fermions, on the Same Cells* | $16$, each inside its own field |
 | the Weyl fields per generation | $8$ Dirac $\times2$ | $16$ |
 | the states per generation | $8$ Dirac $\times4$ | $32$ |
 | the fields, three generations | $3\times16$ | $48$ |
@@ -574,7 +574,7 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 
 ## Summary
 
-**The model.** The fourth-colour left–right model, $G_{4LR}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, the frame the corpus adopts, with its one load-bearing declaration that the line $\mathbb C e_t$ is the lepton.
+**The model.** The Four Colours Left–Right Model, $G_{4LR}=\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, the frame the corpus adopts, with its one load-bearing declaration that the line $\mathbb C e_t$ is the lepton.
 
 **The structure.** One group, three factors, $15+3+3=21$, acting on a quartet and two doublets.
 
@@ -611,11 +611,11 @@ $1+3+3=7$, and the $3+3$ is the two directions of the three mixed planes. **So t
 | ingredient | a cell no particle occupies, because a particle is made of it |
 | $C$ | charge conjugation, $Q^{\mathrm c}=-e_y\bar Qe_y$ |
 | $E_\pm$ | the two chirality blocks, $\tfrac12(1\pm ie_z)$ |
-| antiparticle state | a conjugate mode of a field, with the charges of §9A |
+| antiparticle state | a conjugate mode of a field, with the charges of *The Fermions, on the Same Cells*A |
 
 ## Further Reading
 
-- [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The frame, the declaration, and the ledger $\dim\mathfrak u(4)=16=15+1$.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame, the declaration, and the ledger $\dim\mathfrak u(4)=16=15+1$.
 - [The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons](the-breaking-chain-and-the-boson-spectrum.html). The fates and the scales.
 - [Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go](charge-quantisation-from-the-fourth-colour-one-trace-one-third.html). The trace, and the two misreadings of the ledger.
 - [The Scalar Sector and the Leptoquark Bounds: Twenty-Four Real Components, Six Unseen States, Two Scales](the-scalar-sector-and-the-leptoquark-bounds.html). The scalars and the sextet's bounds.

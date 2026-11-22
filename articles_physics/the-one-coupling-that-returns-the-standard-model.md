@@ -12,7 +12,7 @@ $$
 
 **Three declarations.** The equation is the first. The second is a scale, $M_R$, at which the equation is imposed. The third is a content statement: below $M_R$ the matter is exactly the Standard Model's, three generations with one doublet. An equation without a scale is not a statement, and a scale without content is not a prediction. The three are listed together because two of them alone prove nothing.
 
-## 1. What "Returns the Standard Model" Means
+## What "Returns the Standard Model" Means
 
 **One thing.** It is worth separating from two things it does not mean.
 
@@ -26,9 +26,9 @@ $$
 
 which is a trace identity, $\operatorname{tr}(T^{15})^2=\tfrac12$, and not a dynamical statement. With that identity in place the system closes, and what comes out is a value for $g_R$.
 
-**1.3 One output.** The output is $g_R$, and §3 shows that the output is a function of the scale rather than a number the theory fixes. A value that moves with a choice must not be quoted as though it were a prediction.
+**1.3 One output.** The output is $g_R$, and *The One Scale* shows that the output is a function of the scale rather than a number the theory fixes. A value that moves with a choice must not be quoted as though it were a prediction.
 
-## 2. The Arithmetic, Which Is Exact
+## The Arithmetic, Which Is Exact
 
 **Three steps.** The third is the number every article on the electroweak sector quotes.
 
@@ -77,7 +77,7 @@ $$
 
 The number $\tfrac38$ is not a measurement and not a guess. It is the trace normalisation of one Cartan generator, added to one.
 
-## 3. The One Scale
+## The One Scale
 
 **The scale is free.** The equation is imposed at a scale, and that single sentence is the limitation of the recovery; it is stated before the numbers.
 
@@ -108,7 +108,7 @@ and the solution exists only while the bracket is positive. Two consequences fol
 
 **3.3 What it confirms.** The relation reproduces $\alpha_{\mathrm{em}}$, $\alpha_s$ and $\sin^2\theta_W$ at $M_Z$ exactly and for any admissible pair of scales, because each is built from those three numbers at $M_Z$ and run up. Those three are data at $M_Z$ — $\alpha^{-1}(M_Z)=127.95$ and $\sin^2\theta_W=0.23122$ among them — and the relation is imposed on top of them. A statement that reproduces its own inputs is a consistency condition, and a consistency condition confirms nothing.
 
-### 3.4 The One Number a Coupling Produces
+### The One Number a Coupling Produces
 
 **One contact with a measurement.** Above the $W_R$ floor, the model's single contact with data is $K_L\to\mu e$. The operator is $g_4^2/(2M_X^2)$ times a hadronic matrix element, the rate scales as $M_X^{-4}$, and the coupling is fixed by the first matching relation $g_3=g_4$ at $M_C$:
 
@@ -127,7 +127,7 @@ $$
 
 The bound is $M_X\gtrsim2.3\times10^{2}$ TeV, and it is a band of a factor of two rather than an order of magnitude, because the rate carries the fourth power of the mass. This is the only number in the model that a search can contradict, and it is a coupling's number: the rate is proportional to $g_4^4$, and the bound follows only once $g_4$ is replaced by a measured $\alpha_s$. The channel, its quantum numbers, its tree-level character and the reason $K_S$ does not do the same are structural and are in [Charged Lepton Flavour Violation](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html); the substitution that turns the channel into a mass bound is what this section adds.
 
-## 4. The Boundary Condition, and Why It Fails
+## The Boundary Condition, and Why It Fails
 
 **The equal-coupling case.** It is $g_4=g_L=g_R$ at one scale, and it is the only case in which $\tfrac38$ is a prediction rather than a condition. Written as a boundary condition it is one sentence, and written as a check it is two numbers.
 
@@ -144,7 +144,7 @@ The two scales are four decades apart, and no single scale is both. That is the 
 
 **4.3 What the failure does not touch.** It destroys the prediction $\tfrac38$ and it does not touch the group, the sixteen, the charges, the anomalies, the boson count or the leptoquark content. Those are algebraic and they do not depend on any coupling value.
 
-## 5. The Three-Scale Variant, and Why It Does Not Rescue It
+## The Three-Scale Variant, and Why It Does Not Rescue It
 
 **One repair.** It does not work.
 
@@ -174,7 +174,7 @@ $$
 
 A single Weyl doublet moves $c_2$ by $\tfrac13$, so this asks for about thirty more left doublets than right doublets. That is not a threshold correction. It is a different theory.
 
-## 6. The Yukawa Sector: The Same Question
+## The Yukawa Sector: The Same Question
 
 The gauge couplings are not the only ones that carry a scale. The Yukawa sector is where the same question bites next, and there it is answered by counting.
 
@@ -207,11 +207,11 @@ and that is a statement about the number of matrices, not about any value. One m
 
 The last column is where the scale enters, and it enters twice: once in the ratio "at $m_b$", and once in the phrase "once the running is included".
 
-**6.4 What the counting leaves standing.** The argument that the minimal scalar sector is insufficient does not depend on any of these numbers. One bidoublet gives one matrix for two sectors; the data do not show proportional spectra; therefore the sector needs a second matrix. The repair is a second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$, or the colour-singlet component of a $(\mathbf{15},\mathbf2,\mathbf2)$. What the arithmetic of §6.3 adds is the size of the miss, not the existence of it.
+**6.4 What the counting leaves standing.** The argument that the minimal scalar sector is insufficient does not depend on any of these numbers. One bidoublet gives one matrix for two sectors; the data do not show proportional spectra; therefore the sector needs a second matrix. The repair is a second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$, or the colour-singlet component of a $(\mathbf{15},\mathbf2,\mathbf2)$. What the arithmetic of *The Yukawa Sector: The Same Question* adds is the size of the miss, not the existence of it.
 
 **6.5 The quartic.** The scalar potential's quartic is a coupling with a value at a scale and a running like any other, and it belongs in the same place as these.
 
-## 7. What the Relation Does and Does Not Fix
+## What the Relation Does and Does Not Fix
 
 **What it is.** A single relation, derived twice, that ties the hypercharge coupling at $M_R$ to the $\mathrm{SU}(4)$ coupling at $M_C$; a scale at which the relation is imposed; a content statement below the scale; and a statement of what the relation does not fix.
 
@@ -219,7 +219,7 @@ The last column is where the scale enters, and it enters twice: once in the rati
 
 **The summary sentence.** The relation reproduces the three measured couplings for any admissible pair of scales, by adjusting $g_R$, and it predicts none of them.
 
-## 8. The Checks
+## The Checks
 
 | claim | check | result |
 |---|---|---|
@@ -234,19 +234,19 @@ The last column is where the scale enters, and it enters twice: once in the rati
 | the required asymmetry | $2\pi\times44.6/27$ | about $10$, or thirty doublets |
 | the ratio of masses | $\sqrt2\,g_4/g_R$ | $2.2$ to $3.1$ |
 
-## 9. Distinctions That Are Easy to Lose
+## Distinctions That Are Easy to Lose
 
-The recovery is not a derivation: it shows that the measured numbers below are consistent at one scale, and it does not explain their values (§1.1).
+The recovery is not a derivation: it shows that the measured numbers below are consistent at one scale, and it does not explain their values (*What "Returns the Standard Model" Means*).
 
-The output is not a prediction: $g_R$ moves with the chosen scales, between $0.62$ and $0.73$ of $g_L$ (§3.2).
+The output is not a prediction: $g_R$ moves with the chosen scales, between $0.62$ and $0.73$ of $g_L$ (*The One Scale*).
 
-$\tfrac38$ is not a prediction of the unified case: it holds at $1.02\times10^{13}$ GeV, where colour is $13\%$ short (§4.1).
+$\tfrac38$ is not a prediction of the unified case: it holds at $1.02\times10^{13}$ GeV, where colour is $13\%$ short (*The Boundary Condition, and Why It Fails*).
 
-The failure of the unified case is not arithmetic: the equality is not preserved by the matter content between the thresholds (§4.2).
+The failure of the unified case is not arithmetic: the equality is not preserved by the matter content between the thresholds (*The Boundary Condition, and Why It Fails*).
 
-The three-scale variant is not a repair: parity makes the two $\mathrm{SU}(2)$ coefficients equal, so the extra scale cannot move the gap (§5.2).
+The three-scale variant is not a repair: parity makes the two $\mathrm{SU}(2)$ coefficients equal, so the extra scale cannot move the gap (*The Three-Scale Variant, and Why It Does Not Rescue It*).
 
-The scalar sector's defect is not a numerical mismatch: it is one matrix serving two sectors, which is counting and needs no scale (§6.2).
+The scalar sector's defect is not a numerical mismatch: it is one matrix serving two sectors, which is counting and needs no scale (*The Yukawa Sector: The Same Question*).
 
 ## Summary
 
@@ -281,7 +281,7 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 
 ## Further Reading
 
-- [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The group, the sixteen, the chain and the declarations, with no coupling value.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The group, the sixteen, the chain and the declarations, with no coupling value.
 - [The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons](the-breaking-chain-and-the-boson-spectrum.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The angle as a ratio, and the neutral current written symbolically.
 - [The Scalar Sector and the Leptoquark Bounds: Twenty-Four Real Components, Six Unseen States, Two Scales](the-scalar-sector-and-the-leptoquark-bounds.html). The multiplet list and the states, with the mass ratios referred here.

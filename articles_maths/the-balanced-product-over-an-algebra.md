@@ -5,7 +5,7 @@
 
 The tensor product of modules over a commutative ring is built from bilinear maps, and its defining relation moves scalars freely from one factor to the other. Over a noncommutative algebra that relation must be replaced by a weaker one: the only scalars that may be moved are those acting on the right of the first factor and on the left of the second, and the resulting **balanced product** $M\otimes_A N$ is generally only an abelian group. This article constructs the balanced product over an algebra, derives its universal property, describes the bimodule structure it carries, and isolates the point at which centrality is forced. It is the algebra-level counterpart of the balanced product over a ring, and its purpose in this category is to make the algebra-level tensor product available for Morita theory, change of rings and group representation theory.
 
-The conventions are those of *Modules over an Algebra*: $R$ is a commutative ring with identity, $A$ is a unital associative $R$-algebra, and ${}_A M_B$ denotes an $(A,B)$-bimodule. The balanced product is written $M\otimes_A N$ with $M$ a right $A$-module and $N$ a left $A$-module, so that the ring symbol appears on the side common to the two factors. When $A=R$ is commutative this reduces to the ordinary tensor product of *Modules* §13 and *Vector Spaces*, and the reader may consult those articles for the commutative theory.
+The conventions are those of *Modules over an Algebra*: $R$ is a commutative ring with identity, $A$ is a unital associative $R$-algebra, and ${}_A M_B$ denotes an $(A,B)$-bimodule. The balanced product is written $M\otimes_A N$ with $M$ a right $A$-module and $N$ a left $A$-module, so that the ring symbol appears on the side common to the two factors. When $A=R$ is commutative this reduces to the ordinary tensor product of *Modules* and *Vector Spaces*, and the reader may consult those articles for the commutative theory.
 
 Two points of substance are developed here. The first is that the balanced relation $ma\otimes n=m\otimes an$ is precisely what survives of scalar movement, and that the second of the two candidate ways of letting $A$ act on the balanced product of two bimodules — through the left action on the second factor — exists exactly on the centre $Z(A)$, where it agrees with the action through the first factor whenever the bimodules have matching left and right central actions. This is the sense in which the balanced product is central rather than merely linear. The second is that the base ring $R$, being central in $A$, always supplies $M\otimes_A N$ with an $R$-module structure, so the balanced product is never less than linear over $R$ even when it is not an $A$-module.
 
@@ -63,7 +63,7 @@ $$
 
 Put $M\otimes_A N=G/K$ and $m\otimes n=[m,n]+K$. The quotient is designed so that $\iota$ is additive in each variable and balanced, and any $A$-balanced $f$ extends uniquely to a homomorphism $G\to P$ that vanishes on $K$, hence descends uniquely to $M\otimes_A N$. Uniqueness of the pair $(M\otimes_A N,\iota)$ up to unique isomorphism follows from the universal property by the usual argument.
 
-The theorem is *the* definition of the balanced product in the sense that any construction with the same universal property is canonically isomorphic to this one. The relations above are exactly the relations of *Modules* §13 in the commutative case, with the scalar-movement relation weakened to the balanced relation.
+The theorem is *the* definition of the balanced product in the sense that any construction with the same universal property is canonically isomorphic to this one. The relations above are exactly the relations of *Modules* in the commutative case, with the scalar-movement relation weakened to the balanced relation.
 
 ### Generators and relations
 
@@ -229,7 +229,7 @@ Dually, for a right $A$-module $M$, a left $A$-module $N$ and an abelian group $
 
 ## Examples
 
-**(a) Over a commutative ring.** If $A=R$ is commutative, every left module is a right module by $mr=rm$, the balanced relation $mr\otimes n=m\otimes rn$ is the bilinearity relation, and $M\otimes_R N$ is the ordinary tensor product of *Modules* §13, with its universal property for bilinear maps. The balanced product of this article is the noncommutative generalisation, and over a field it is the tensor product of vector spaces, with $\dim_F(M\otimes_F N)=(\dim_F M)(\dim_F N)$.
+**(a) Over a commutative ring.** If $A=R$ is commutative, every left module is a right module by $mr=rm$, the balanced relation $mr\otimes n=m\otimes rn$ is the bilinearity relation, and $M\otimes_R N$ is the ordinary tensor product of *Modules*, with its universal property for bilinear maps. The balanced product of this article is the noncommutative generalisation, and over a field it is the tensor product of vector spaces, with $\dim_F(M\otimes_F N)=(\dim_F M)(\dim_F N)$.
 
 **(b) The regular module as an invertible element.** For every right $A$-module $M$ and left $A$-module $N$ one has $M\otimes_A A\cong M$ and $A\otimes_A N\cong N$, by §Bimodules and the Tensor Product.
 

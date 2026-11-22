@@ -195,4 +195,4 @@ The three findings. The contact is an exact Gaussian elimination followed by a m
 - [The Lagrangian and the W and Z Bosons](the-lagrangian-and-the-w-and-z-bosons.html) — the action the eliminated field belongs to.
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the charged and neutral currents in one action.
 - [Møller Scattering in Biquaternionic Form](moller-scattering-in-biquaternionic-form.html) — the neutral-current counterpart of the elimination.
-- [Anomalies and Anomaly Cancellation in the Fourth-Colour Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the divergence of the axial current this action gauges.
+- [Anomalies and Anomaly Cancellation in the Four Colours Left–Right Model: Four Conditions Become None](anomalies-and-anomaly-cancellation-in-biquaternionic-form.html) — the divergence of the axial current this action gauges.

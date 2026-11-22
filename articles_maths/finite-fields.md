@@ -16,7 +16,7 @@ Throughout, $p$ is a prime, $q = p^n$ with $n \geq 1$, and $\mathbb{F}_p = \math
 
 **Theorem.** Every field $K$ has a prime field isomorphic to $\mathbb{Q}$ if $\operatorname{char} K = 0$ and to $\mathbb{F}_p$ if $\operatorname{char} K = p$. In particular a finite field has characteristic $p > 0$ and contains $\mathbb{F}_p$.
 
-**Proof.** The unique ring homomorphism $\mathbb{Z} \to K$ has kernel $0$ or $(p)$ for a prime $p$, by *Fields*, §3. In the first case it extends to an embedding $\mathbb{Q} \to K$, whose image is the smallest subfield. In the second it induces an embedding $\mathbb{F}_p \to K$, and the image is the smallest subfield. A finite field cannot contain $\mathbb{Q}$, since $\mathbb{Q}$ is infinite.
+**Proof.** The unique ring homomorphism $\mathbb{Z} \to K$ has kernel $0$ or $(p)$ for a prime $p$, by *Fields*. In the first case it extends to an embedding $\mathbb{Q} \to K$, whose image is the smallest subfield. In the second it induces an embedding $\mathbb{F}_p \to K$, and the image is the smallest subfield. A finite field cannot contain $\mathbb{Q}$, since $\mathbb{Q}$ is infinite.
 
 **Proposition.** Let $K$ be a finite field. Then $\lvert K \rvert = p^n$, where $p = \operatorname{char} K$ and $n = [K:\mathbb{F}_p]$.
 

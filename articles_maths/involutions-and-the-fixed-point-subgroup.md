@@ -21,7 +21,7 @@ So the only question is closure under multiplication, and there the anti-automor
 
 **Theorem (the criterion).** The fixed set $G^{\sigma}$ is a subgroup of $G$ if and only if its elements commute pairwise; equivalently, if and only if $G^{\sigma}$ is abelian. When this holds, $G^{\sigma}$ is an abelian subgroup of $G$, and it is the largest subgroup of $G$ on which $\sigma$ acts as the identity.
 
-**Proof.** $G^{\sigma}$ contains $e$ and is inversion-closed. It is closed under multiplication if and only if $ab\in G^{\sigma}$ for all $a,b\in G^{\sigma}$, which by the closure computation is exactly the pairwise commutation. If $H\leq G$ is fixed pointwise by $\sigma$ then $H\subseteq G^{\sigma}$ by definition, so $G^{\sigma}$ is the largest such subgroup, and it is abelian because it is a subgroup whose elements commute pairwise. This is the criterion stated in *Involutive Groups*, §4.
+**Proof.** $G^{\sigma}$ contains $e$ and is inversion-closed. It is closed under multiplication if and only if $ab\in G^{\sigma}$ for all $a,b\in G^{\sigma}$, which by the closure computation is exactly the pairwise commutation. If $H\leq G$ is fixed pointwise by $\sigma$ then $H\subseteq G^{\sigma}$ by definition, so $G^{\sigma}$ is the largest such subgroup, and it is abelian because it is a subgroup whose elements commute pairwise. This is the criterion stated in *Involutive Groups*.
 
 **Remark (the two sources of failure).** The criterion can fail in two visibly different ways: the fixed set may be a subgroup that is not central, or it may not be a subgroup at all. The involution on $S_3$ given by $\sigma=\iota\alpha$ with $\alpha$ the conjugation by a transposition has $G^{\sigma}=\{e,(1\,2),(1\,2\,3),(1\,3\,2)\}$, four elements that do not close, so the fixed set is not a subgroup; the inversion on $A_4$ has fixed set the Klein four group $V_4=\{e,(1\,2)(3\,4),(1\,3)(2\,4),(1\,4)(2\,3)\}$, which is a subgroup and is not central in $A_4$.
 
@@ -31,7 +31,7 @@ When the criterion holds, $G^{\sigma}$ is a subgroup with several forced propert
 
 **Proposition (the fixed-point subgroup is abelian and self-centralising in the sense of elements).** Let $H=G^{\sigma}$ be a subgroup. Then $H$ is abelian, $\sigma|_H=\mathrm{id}$, and $H\subseteq C_G(H)$; the normaliser $N_G(H)$ contains $H$ and is $\sigma$-stable.
 
-**Proof.** The abelian property is the criterion. Every element of $H$ is fixed, so $\sigma$ restricts to the identity of $H$. The centraliser contains $H$ exactly because $H$ is abelian. For the normaliser, if $g\in N_G(H)$ then $\sigma(g)\in N_G(\sigma(H))=N_G(H)$ because $\sigma$ is an automorphism of the subgroup lattice (*Involutive Groups*, §3), so $N_G(H)$ is $\sigma$-stable.
+**Proof.** The abelian property is the criterion. Every element of $H$ is fixed, so $\sigma$ restricts to the identity of $H$. The centraliser contains $H$ exactly because $H$ is abelian. For the normaliser, if $g\in N_G(H)$ then $\sigma(g)\in N_G(\sigma(H))=N_G(H)$ because $\sigma$ is an automorphism of the subgroup lattice (*Involutive Groups*), so $N_G(H)$ is $\sigma$-stable.
 
 **Proposition (the pairing with the inverted set).** The fixed set and the inverted set meet in the $\sigma$-fixed elements of order at most two: $G^{\sigma}\cap I(\sigma)=\{g:g=g^{-1},\ \sigma(g)=g\}=\{g\in G^{\sigma}:g^{2}=e\}$. In particular, when $G^{\sigma}$ is a subgroup its intersection with $I(\sigma)$ is the $2$-torsion of $G^{\sigma}$.
 

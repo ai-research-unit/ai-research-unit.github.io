@@ -10,9 +10,9 @@ The hypothesis is that there are no elementary particles, only fields and their 
 
 The ontology is not new. Quantum field theory already holds that a particle is a pole of a propagator, that fields are primary, and that no object has a measured radius. What is new is only the second clause, that the flavours are rungs of a single tower, so that rung $n+1$ is built from the same medium as rung $n$. Everything below tests that clause and nothing else.
 
-The verdict can be given first. The ladder fails if its rungs are counted in mass. It works if they are counted in amplitude. In amplitude it meets one exact numerical closure, holding to six parts in a million. That is one correspondence and no derivation, and the two are kept apart throughout.
+The verdict can be given first. The ladder fails if its rungs are counted in mass. It works if they are counted in amplitude: the steps then grow by a constant factor, and the count follows. That is a reading of the spacings and no derivation of them, and the two are kept apart throughout.
 
-## 1. Flavour Is a Level, Not a Charge
+## Flavour Is a Level, Not a Charge
 
 The claim rests on a fact the classification article established. The fermions of one generation form a module of the algebra, and the tripling is a tensor product with a space on which the algebra acts trivially:
 
@@ -28,7 +28,7 @@ There is a second reason to expect the rungs of a tower to be ordered rather tha
 
 One word is used in a fixed sense. A resonance here means a pole of the propagator, not a geometric singularity. A rung is a pole with a real part and, above rung 1, a width.
 
-## 2. The Ladder Fails in Mass
+## The Ladder Fails in Mass
 
 A tower has a spacing, and the quantity to test is the step between consecutive rungs. For the charged leptons the two steps are
 
@@ -49,7 +49,7 @@ The naive form of the theory is therefore excluded, and it is worth saying so in
 
 The corpus's own algebra gives an independent warning. The biquaternion algebra is a field-first framework with a module and spin structures, and it has no dispersion relation. It cannot produce a ladder in any variable, because a ladder is dynamics and the algebra is kinematics. That is the same reason the corpus cannot count generations, recorded as a negative result in [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html).
 
-## 3. The Ladder Works in Amplitude
+## The Ladder Works in Amplitude
 
 In a medium amplitudes add and energies go as the square of an amplitude, so the natural variable is not $m$ but $\sqrt m$:
 
@@ -75,25 +75,17 @@ A mass tower that compresses by $12.3$ is an amplitude tower that expands by $10
 | $\sqrt m$ | $9.564$ | $31.874$ | grows by $3.333$ |
 | $\log m$ | $5.332$ | $2.823$ | shrinks by $1.889$ |
 
-No column is constant, so the ladder is not an equal-spacing tower in any of these variables. That is the honest reading, and it moves the question from spacing to closure.
+No column is constant, so the ladder is not an equal-spacing tower in any of these variables. That is the honest reading, and it moves the question from the spacing to the number of rungs.
 
-## 4. The Closure: One Exact Number
+## No Exact Closure
 
-The amplitude reading finds one exact number, and the number is old:
+**The amplitude ladder fixes spacings and predicts no sum, so this article claims no exact numerical closure.** A wave ladder sets the interval between neighbouring rungs. It places no condition on a combination of three masses, and a combination of three measured numbers that happens to land near a simple fraction is not a consequence of the picture. Relations of that kind are reported elsewhere in the corpus and are not counted here as evidence for the ladder.
 
-$$
-Q=\frac{m_e+m_\mu+m_\tau}{\left(\sqrt{m_e}+\sqrt{m_\mu}+\sqrt{m_\tau}\right)^{2}}=0.6666605,
-\qquad
-\frac23=0.6666667 .
-$$
+**What the ladder gives is the growth of the steps and the count.** The two amplitude steps are $9.564$ and $31.874$, a growth of $3.333$, and that growth is a property of the two spacings and of nothing else. *The Rung Count Belongs to a Tower* takes the count from the same ladder. Those are the two things this article offers, and it stops there.
 
-The deviation is $6.1\times10^{-6}$. This is Koide's relation, published in 1981, and it is the strongest correspondence the amplitude reading has. It is also a numerical fact with no accepted derivation in any theory.
+No mass and no scale is predicted. The arithmetic on the spacings, the fits that fix the count for the charged leptons, and the attempted predictions of a fourth mass are kept in [Flavour Research: The Ladder Arithmetic](../articles_internal/flavour-research.html), so that this article carries the idea and not its calculus.
 
-What the fact means can be put in one sentence. Three measured masses land on a rational number, and they land on it in the variable a wave ladder uses. That is a correspondence, not a mechanism. The theory does not yet say why the number is $2/3$; it says only that a picture in which levels add as amplitudes is the picture in which the number appears at all.
-
-No mass and no scale is predicted, and the closure is not derived. The article states the fact and stops. The form that carries the closure across rung counts, the bound it places on the number of rungs, the fits that fix the count for the charged leptons, and the attempted predictions of a fourth mass are kept in [Flavour Research: The Ladder Arithmetic](../articles_internal/flavour-research.html), so that this article carries the idea and not its calculus.
-
-## 5. The Rung Count Belongs to a Tower
+## The Rung Count Belongs to a Tower
 
 The ladder has a count, and the theory does not fix it. This is where the name comes from, and where the theory is most exposed.
 
@@ -115,7 +107,7 @@ A fourth rung of this tower could not hide above the tau. A closed ladder does n
 
 It does not settle the theory. A separate tower carries its own scale and its own starting phase, so a second tower may carry four, five, six or seven rungs and remain invisible, its rungs standing where that sector has not been looked for. The rung count is a property of a tower, not of the theory.
 
-## 6. The Early Universe
+## The Early Universe
 
 A medium at temperature $T$ populates a rung of mass $m$ by the Boltzmann factor,
 
@@ -142,7 +134,7 @@ Two corrections keep the reading honest. The ratio approaches parity and never p
 
 One thing temperature cannot do is change the count. At every temperature above 2 MeV there are three generations. Temperature decides how many rungs are lit, never how many exist.
 
-## 7. The Fourth Rung
+## The Fourth Rung
 
 Two different objects are called a fourth flavour, and only one of them is excluded.
 
@@ -162,42 +154,40 @@ The exclusion of the first does not depend on collider energy. A heavy chiral fa
 
 Each entry constrains a rung that is light, or chiral, or both. A heavy rung of a medium satisfies all four at once, which is why the position that heavier rungs lie beyond present reach is defensible here and is not defensible for a chiral family.
 
-## 8. What the Theory Owes
+## What the Theory Owes
 
 Three debts remain, and the theory is incomplete until they are paid.
 
-The first is a dispersion relation. A medium has $\omega(k)$, and a tower is the eigenvalue problem of that relation; without one the spectrum is undefined and the rung count is not a well-posed question. The second is a composition rule that produces $2/3$ from its own structure and explains why the rungs are equally spaced in phase. The third is a width rule: section 1 settles rung 1 by conservation, and the theory must also say why rungs 2 and 3 have the widths they have, which for the charged leptons is the fifth-power law of [An Introduction to Flavour](an-introduction-to-flavour.html).
+The first is a dispersion relation. A medium has $\omega(k)$, and a tower is the eigenvalue problem of that relation; without one the spectrum is undefined and the rung count is not a well-posed question. The second is a composition rule that produces the constant step from its own structure and explains why the rungs are equally spaced in phase. The third is a width rule: *Flavour Is a Level, Not a Charge* settles rung 1 by conservation, and the theory must also say why rungs 2 and 3 have the widths they have, which for the charged leptons is the fifth-power law of [An Introduction to Flavour](an-introduction-to-flavour.html).
 
 The corpus supplies exactly the ontology this theory wants, and none of the dynamics. The biquaternion algebra is field-first: a module, spin structures, no points. It has no dispersion relation, because it is kinematics. The first debt is therefore one the corpus cannot pay, and claiming otherwise would be the one unrecoverable error available here.
 
-What the theory does not owe is a derivation of three. Three is what the charged-lepton tower measures, the closure admits any count, and the count belongs to a tower. A theory that owed three would have assumed its own answer.
+What the theory does not owe is a derivation of three. Three is what the charged-lepton tower measures, any count is admitted by the picture, and the count belongs to a tower. A theory that owed three would have assumed its own answer.
 
-## 9. The Ledger
+## The Ledger
 
 | item | status |
 |---|---|
-| why flavour is not a charge | explained by the model's structure, section 1 |
-| why rung 1 is stable | explained by conservation, section 1 |
-| why the naive mass ladder fails | quantified, section 2 |
-| the amplitude variable | motivated, with no equally good alternative, section 3 |
-| the closure at $2/3$ | one exact numerical correspondence, $6\times10^{-6}$, section 4 |
-| why this tower counts three | measured, not derived, section 5 |
-| why a fourth rung is not above the tau | predicted, section 5 |
-| a derivation of $2/3$ | absent |
+| why flavour is not a charge | explained by the model's structure, *Flavour Is a Level, Not a Charge* |
+| why rung 1 is stable | explained by conservation, *Flavour Is a Level, Not a Charge* |
+| why the naive mass ladder fails | quantified, *The Ladder Fails in Mass* |
+| the amplitude variable | motivated, with no equally good alternative, *The Ladder Works in Amplitude* |
+| an exact numerical closure | none claimed, *No Exact Closure* |
+| why this tower counts three | measured, not derived, *The Rung Count Belongs to a Tower* |
+| why a fourth rung is not above the tau | predicted, *The Rung Count Belongs to a Tower* |
+| a derivation of the amplitude step | absent |
 | a derivation of the scale and phase | absent |
 | a derivation of any quark mass | absent |
 
-One closure is reproduced and the reason for it is missing. That is the position Koide's relation has held for forty years, and the theory's contribution is to say where the closure could come from: rungs of one tower, counted in amplitude, closed at $N$.
+The amplitude ladder reproduces the spacings of one tower and derives nothing further. What the theory adds is the count: rungs of one tower, spaced in amplitude, with $N$ fixed by measurement and not by principle.
 
 The scope is equally plain. The quantum numbers of one generation are derived, in the classification article. The three copies and every flavour-breaking parameter are input, here. The theory adds a reading of the second and not a derivation of it.
 
-## 10. Falsification
+## Falsification
 
-Four statements would end the theory as written.
+Three statements would end the theory as written.
 
 A charged lepton found at the gap position of a four-rung ladder, near 46 or 425 MeV, would confirm a longer ladder and destroy the three-rung reading of this tower.
-
-A measured violation of the closure above experimental precision, roughly $10^{-6}$ in the mass ratios, would falsify the amplitude reading.
 
 A deviation from QED in $e^+e^-\to\mu^+\mu^-$ would confirm a medium, since a structure of size $1/\Lambda$ gives
 
@@ -209,7 +199,7 @@ and present data put $\Lambda>10$ TeV. Continued absence of such a signal pushes
 
 A fourth chiral family would end it. That one is already excluded, which is why the theory must be a ladder of a medium and not a ladder of chiral generations. The theory is permitted to propose more rungs. It is not permitted to propose them as chiral families.
 
-## 11. Checks
+## Checks
 
 Every number below was recomputed from the measured masses before it was written.
 
@@ -222,8 +212,6 @@ Every number below was recomputed from the measured masses before it was written
 | the amplitude gaps | $10.279-0.7148$, $42.153-10.279$ | $9.564$, $31.874$ |
 | the amplitude steps | $31.874/9.564$ | $3.333$ |
 | the logarithmic steps | $\ln 206.77$, $\ln 16.82$ | $5.332$, $2.823$ |
-| Koide's ratio | $(m_e+m_\mu+m_\tau)/(\sum\sqrt m)^2$ | $0.6666605$ |
-| Koide against $2/3$ | $0.6666605$ against $0.6666667$ | $6.1\times10^{-6}$ |
 | the thermal ratio at 152 MeV | $e^{-(m_\mu-m_e)/T}$ | $0.501$ |
 | the thermal ratio at 2.563 GeV | $e^{-(m_\tau-m_e)/T}$ | $0.500$ |
 | the width ratio against the fifth power | $1.3486\times10^{6}$ against $1.3451\times10^{6}$ | agrees to 0.26 per cent |
@@ -234,7 +222,6 @@ Every number below was recomputed from the measured masses before it was written
 |---|---|
 | $N$ | the number of rungs of a tower, not fixed by the theory |
 | $i$ | the rung index |
-| $Q$ | Koide's ratio, measured at $2/3$ |
 | rung | a level of combined excitation, a pole with a mass |
 
 ## Further Reading
@@ -245,4 +232,4 @@ Every number below was recomputed from the measured masses before it was written
 - [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
 - [Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html). The prediction of sameness, the model's other sharp flavour statement.
-- [The Fourth-Colour Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-fourth-colour-left-right-model.html). The frame whose module the ladder multiplies.
+- [The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration](the-four-colours-left-right-model.html). The frame whose module the ladder multiplies.

@@ -12,11 +12,11 @@ To a Lie group $G$ one associates its tangent space at the identity, $\mathrm{G}
 
 # Part I: Lie Groups and the Classical Matrix Groups
 
-## 1. Smooth Manifolds (Recalled)
+## Smooth Manifolds (Recalled)
 
 A **smooth manifold** of dimension $n$ is a second-countable Hausdorff space $M$ with a maximal atlas of charts $\phi : \Omega \to \mathbb{R}^n$ whose transition maps are smooth; smooth maps and their derivatives $df_p : T_pM \to T_{f(p)}N$ are defined in charts. The pushforward of a vector field $X$ by a diffeomorphism $F$ is written $F_*X$.
 
-## 2. Definition of a Lie Group
+## Definition of a Lie Group
 
 A **Lie group** is a group $G$ that is also a smooth manifold, such that the maps
 
@@ -32,9 +32,9 @@ $$
 \Psi_g = L_g \circ R_{g^{-1}} : h \mapsto ghg^{-1}
 $$
 
-is an automorphism of $G$ and a diffeomorphism; since it fixes $e$, its derivative at $e$ is an invertible linear map of $T_eG$, the source of the adjoint representation (§15).
+is an automorphism of $G$ and a diffeomorphism; since it fixes $e$, its derivative at $e$ is an invertible linear map of $T_eG$, the source of the adjoint representation (*The Adjoint Representation*).
 
-## 3. The Classical Matrix Groups
+## The Classical Matrix Groups
 
 Let $\mathbb{K}$ be $\mathbb{R}$ or $\mathbb{C}$, and write $A^* = \overline{A}^{\,T}$ in the complex case. The classical groups are
 
@@ -71,9 +71,9 @@ The real dimensions are:
 | $Sp(n)$ | $\mathbb{H}$ | $n(2n+1)$ |
 | $Sp(2n,\mathbb{R})$ | $\mathbb{R}$ | $n(2n+1)$ |
 
-Each is a closed subgroup of a general linear group, itself a Lie group with polynomial multiplication and rational inversion. The defining conditions are level sets of smooth maps with surjective derivative; for instance $A \mapsto A^TA$ has derivative $H \mapsto A^TH + H^TA$, so the regular value theorem makes $O(n)$ an embedded submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$, and the same argument gives the table (Cartan's closed subgroup theorem, §12, is an alternative). The group operations restrict from the ambient group, so each group is a Lie group. Here $O(n)$ is compact with identity component $SO(n)$, of index $2$, while $\mathrm{U}(n)$ and $SU(n)$ are compact connected with $\mathrm{U}(n)/SU(n) \cong \mathrm{U}(1)$.
+Each is a closed subgroup of a general linear group, itself a Lie group with polynomial multiplication and rational inversion. The defining conditions are level sets of smooth maps with surjective derivative; for instance $A \mapsto A^TA$ has derivative $H \mapsto A^TH + H^TA$, so the regular value theorem makes $O(n)$ an embedded submanifold of dimension $n^2 - n(n+1)/2 = n(n-1)/2$, and the same argument gives the table (Cartan's closed subgroup theorem, *Lie Subgroups and Lie Subalgebras*, is an alternative). The group operations restrict from the ambient group, so each group is a Lie group. Here $O(n)$ is compact with identity component $SO(n)$, of index $2$, while $\mathrm{U}(n)$ and $SU(n)$ are compact connected with $\mathrm{U}(n)/SU(n) \cong \mathrm{U}(1)$.
 
-## 4. Further Examples
+## Further Examples
 
 The additive group $\mathbb{R}^n$ is an abelian Lie group of dimension $n$, and $\mathbb{C}^n$ is a real Lie group of dimension $2n$. A **torus**
 
@@ -103,7 +103,7 @@ is a simply connected nilpotent Lie group of dimension $3$, with the Heisenberg 
 
 # Part II: The Lie Algebra of a Lie Group
 
-## 5. Left-Invariant Vector Fields
+## Left-Invariant Vector Fields
 
 A **vector field** $X$ on $G$ assigns to each $g$ a tangent vector $X_g \in T_gG$, smoothly in $g$, and is equivalently a derivation of $C^\infty(G)$. It is **left-invariant** if $(L_g)_*X = X$ for all $g$, that is, if
 
@@ -117,7 +117,7 @@ $$
 \{\text{left-invariant vector fields}\} \xrightarrow{\ \sim\ } T_eG.
 $$
 
-## 6. The Lie Bracket
+## The Lie Bracket
 
 Vector fields carry the **commutator bracket**
 
@@ -125,7 +125,7 @@ $$
 [X,Y]f = X(Yf) - Y(Xf), \qquad f \in C^\infty(G),
 $$
 
-which is bilinear, antisymmetric, and satisfies the Jacobi identity. It is natural under diffeomorphisms: $F_*[X,Y] = [F_*X, F_*Y]$. Since left translations are diffeomorphisms, $(L_g)_*[X,Y] = [X,Y]$ whenever $X, Y$ are left-invariant, so the left-invariant fields form a Lie subalgebra. Transporting the bracket across the isomorphism of §5 gives a bracket on $T_eG$.
+which is bilinear, antisymmetric, and satisfies the Jacobi identity. It is natural under diffeomorphisms: $F_*[X,Y] = [F_*X, F_*Y]$. Since left translations are diffeomorphisms, $(L_g)_*[X,Y] = [X,Y]$ whenever $X, Y$ are left-invariant, so the left-invariant fields form a Lie subalgebra. Transporting the bracket across the isomorphism of *Left-Invariant Vector Fields* gives a bracket on $T_eG$.
 
 **Definition.** The **Lie algebra of $G$** is $\mathrm{G} = T_eG$ with this bracket, written $\mathrm{G} = \operatorname{Lie}(G)$.
 
@@ -143,7 +143,7 @@ $$
 
 The left-invariant convention is the standard one and is used throughout this series.
 
-## 7. The Lie Algebra of a Matrix Group
+## The Lie Algebra of a Matrix Group
 
 If $G \subseteq GL_n(\mathbb{R})$ is a closed subgroup, its Lie algebra is
 
@@ -157,7 +157,7 @@ $$
 [X,Y] = XY - YX.
 $$
 
-Indeed the left-invariant fields determined by $X, Y$ are $A \mapsto AX$ and $A \mapsto AY$, whose commutator at $I$ is $XY - YX$. The tangent space is the kernel of the derivative of the defining equations: $d(\det)_I = \operatorname{tr}$ gives $\mathrm{SL}_n = \{\operatorname{tr}H = 0\}$; $A^TA = I$ gives $\mathrm{SO}(n) = \{H^T = -H\}$; and $A^*A = I$ gives $\mathrm{U}(n) = \{H^* = -H\}$. Similarly $\mathrm{SU}(n) = \{H^* = -H,\ \operatorname{tr}H = 0\}$, and $\mathrm{Sp}(n)$, $\mathrm{Sp}(2n,\mathbb{R})$ satisfy $H^* = -H$ and $H^TJ + JH = 0$ respectively. Each has the real dimension of the corresponding group in §3, and these algebras coincide with those classified in *Structure of Lie Algebras*; in particular $\mathrm{SO}(3)$ is $\mathbb{R}^3$ with the cross product, and $\mathrm{GL}_2(\mathbb{C})$ is the biquaternions with the commutator bracket.
+Indeed the left-invariant fields determined by $X, Y$ are $A \mapsto AX$ and $A \mapsto AY$, whose commutator at $I$ is $XY - YX$. The tangent space is the kernel of the derivative of the defining equations: $d(\det)_I = \operatorname{tr}$ gives $\mathrm{SL}_n = \{\operatorname{tr}H = 0\}$; $A^TA = I$ gives $\mathrm{SO}(n) = \{H^T = -H\}$; and $A^*A = I$ gives $\mathrm{U}(n) = \{H^* = -H\}$. Similarly $\mathrm{SU}(n) = \{H^* = -H,\ \operatorname{tr}H = 0\}$, and $\mathrm{Sp}(n)$, $\mathrm{Sp}(2n,\mathbb{R})$ satisfy $H^* = -H$ and $H^TJ + JH = 0$ respectively. Each has the real dimension of the corresponding group in *The Classical Matrix Groups*, and these algebras coincide with those classified in *Structure of Lie Algebras*; in particular $\mathrm{SO}(3)$ is $\mathbb{R}^3$ with the cross product, and $\mathrm{GL}_2(\mathbb{C})$ is the biquaternions with the commutator bracket.
 
 For an abelian group all brackets vanish, and different groups can share a Lie algebra: $S^1$ and $\mathbb{R}$ both have Lie algebra $\mathbb{R}$ but are not isomorphic. The Lie algebra records local data only.
 
@@ -165,7 +165,7 @@ For an abelian group all brackets vanish, and different groups can share a Lie a
 
 # Part III: The Exponential Map
 
-## 8. One-Parameter Subgroups and the Exponential Map
+## One-Parameter Subgroups and the Exponential Map
 
 A **one-parameter subgroup** of $G$ is a smooth homomorphism $\gamma : \mathbb{R} \to G$, so $\gamma(0) = e$ and $\gamma(s+t) = \gamma(s)\gamma(t)$. Left-invariant vector fields are **complete** (their flows extend by translation), so for each $X \in \mathrm{G}$ there is a unique one-parameter subgroup $\gamma_X$ with $\gamma_X(0) = e$ and $\gamma_X'(0) = X$. The **exponential map** is
 
@@ -173,7 +173,7 @@ $$
 \exp : \mathrm{G} \to G, \qquad \exp(X) = \gamma_X(1).
 $$
 
-## 9. Properties of the Exponential Map
+## Properties of the Exponential Map
 
 **(a)** $\exp(tX) = \gamma_X(t)$ for all $t$, hence $\exp(0) = e$.
 
@@ -188,7 +188,7 @@ $$
 
 **(e)** For a matrix group, $\exp(X) = \sum_{k \geq 0} X^k/k!$, the matrix exponential.
 
-**(f)** For $g \in G$, $\ g\exp(X)g^{-1} = \exp(\operatorname{Ad}_gX)$, with $\operatorname{Ad}_g$ as in §15.
+**(f)** For $g \in G$, $\ g\exp(X)g^{-1} = \exp(\operatorname{Ad}_gX)$, with $\operatorname{Ad}_g$ as in *The Adjoint Representation*.
 
 **(g)** **Baker–Campbell–Hausdorff:** for sufficiently small $X, Y$ there is $Z \in \mathrm{G}$ with $\exp(X)\exp(Y) = \exp(Z)$ and
 $$
@@ -198,7 +198,7 @@ a convergent series of iterated brackets. Thus the group law near $e$ is determi
 
 **(h)** If $G$ is connected, $\exp(\mathrm{G})$ generates $G$.
 
-## 10. Limits of the Exponential Map
+## Limits of the Exponential Map
 
 The map $\exp$ is a local diffeomorphism at $0$, but in general it is neither injective nor surjective.
 
@@ -215,7 +215,7 @@ lies in $SL_2(\mathbb{R})$ but equals no $\exp(X)$ with $X$ real. A real matrix 
 
 # Part IV: Homomorphisms and the Lie Correspondence
 
-## 11. Lie Group Homomorphisms and Their Differentials
+## Lie Group Homomorphisms and Their Differentials
 
 A **Lie group homomorphism** is a map $\varphi : G \to H$ that is both a group homomorphism and smooth; it is an **isomorphism** if it is bijective with smooth inverse. Every continuous group homomorphism between Lie groups is automatically smooth.
 
@@ -237,7 +237,7 @@ The assignment $G \mapsto \mathrm{G}$ is functorial: $d(\psi \circ \varphi)_e = 
 
 For a homomorphism $\varphi : G \to H$: $\operatorname{Lie}(\ker\varphi) = \ker d\varphi_e$; the image is an immersed Lie subgroup with $\operatorname{Lie}(\varphi(G)) = \operatorname{im}d\varphi_e$; if $G, H$ are connected of the same dimension and $d\varphi_e$ is an isomorphism, then $\varphi$ is a covering map, and an isomorphism if $G$ is simply connected; if $\varphi$ is surjective with $H$ connected, then $G/\ker\varphi \cong H$.
 
-## 12. Lie Subgroups and Lie Subalgebras
+## Lie Subgroups and Lie Subalgebras
 
 A **Lie subalgebra** of $\mathrm{G}$ is a subspace $\mathrm{H}$ with $[\mathrm{H},\mathrm{H}] \subseteq \mathrm{H}$. An **embedded Lie subgroup** of $G$ is a subgroup that is an embedded submanifold; the group operations then restrict to smooth maps, and its Lie algebra is $\mathrm{H} = T_eH \subseteq T_eG$. An **immersed Lie subgroup** (analytic subgroup) is a subgroup with a smooth structure making the inclusion an injective immersion; it need not be embedded.
 
@@ -253,7 +253,7 @@ Under it $\dim H = \dim\mathrm{H}$, and inclusions correspond to inclusions. For
 
 **Example.** In the torus $T^2 = \mathbb{R}^2/\mathbb{Z}^2$, the subgroup $H = \{(\exp(2\pi it), \exp(2\pi i\alpha t)) : t \in \mathbb{R}\}$ with $\alpha$ irrational is a connected immersed subgroup of dimension $1$, with Lie algebra the line $\mathbb{R}\cdot(1,\alpha)$. It is dense, hence neither closed nor embedded, and its closure is all of $T^2$; thus a one-dimensional subalgebra can generate a dense subgroup.
 
-## 13. The Lie Correspondence for Simply Connected Groups
+## The Lie Correspondence for Simply Connected Groups
 
 **Lie's third theorem.** Every finite-dimensional real Lie algebra $\mathrm{G}$ is the Lie algebra of some simply connected Lie group $G$.
 
@@ -261,7 +261,7 @@ Under it $\dim H = \dim\mathrm{H}$, and inclusions correspond to inclusions. For
 
 **Universal covering group.** Every connected Lie group $G$ has a simply connected **universal covering group** $G_{\mathrm{cov}}$ with a covering homomorphism $\pi : G_{\mathrm{cov}} \to G$ and $\operatorname{Lie}(G_{\mathrm{cov}}) \cong \mathrm{G}$. The kernel $\pi_1(G)$ is a discrete central subgroup, and $G \cong G_{\mathrm{cov}}/\pi_1(G)$. Examples: $\mathbb{R} \to S^1$ with $\pi_1(S^1) = \mathbb{Z}$; $SU(2) \to SO(3)$ with $\pi_1(SO(3)) = \mathbb{Z}/2$; and $\operatorname{Spin}(n) \to SO(n)$ for $n \geq 3$, which is simply connected.
 
-## 14. Connected, Simply Connected, and Compact Examples
+## Connected, Simply Connected, and Compact Examples
 
 | Group | Connected | Simply connected | Compact |
 |---|---|---|---|
@@ -285,7 +285,7 @@ A compact connected Lie group has finite fundamental group exactly when its univ
 
 # Part V: The Adjoint Representation and Structure
 
-## 15. The Adjoint Representation
+## The Adjoint Representation
 
 For $g \in G$, conjugation $\Psi_g(h) = ghg^{-1}$ fixes $e$, so its derivative at $e$ is an invertible linear map
 
@@ -313,7 +313,7 @@ $$
 
 If $G$ is connected, then $\ker\operatorname{Ad} = Z(G)$, so the **adjoint group** satisfies $\operatorname{Ad}(G) \cong G/Z(G)$, with Lie algebra $\operatorname{ad}(\mathrm{G}) \cong \mathrm{G}/Z(\mathrm{G})$. Connectedness is needed here: for $O(2)$, whose Lie algebra is abelian of dimension $1$, the rotations in $SO(2)$ act trivially on $\mathrm{SO}(2)$ while the reflections act by $-1$, so $\ker\operatorname{Ad} = SO(2) \neq Z(O(2)) = \{\pm I\}$.
 
-## 16. The Derived Subgroup; Solvable and Nilpotent Groups
+## The Derived Subgroup; Solvable and Nilpotent Groups
 
 The **commutator** of $g, h \in G$ is $[g,h] = ghg^{-1}h^{-1}$, and the **derived subgroup** $[G,G]$ is generated by all commutators. It is normal, and $G/[G,G]$ is the largest abelian quotient of $G$. Define the **derived series** by
 
@@ -331,7 +331,7 @@ The group $G$ is **solvable** if $G^{(k)} = \{e\}$ for some $k$, and **nilpotent
 
 Examples: abelian groups are nilpotent of step $1$; the Heisenberg group $H_3(\mathbb{R})$ is nilpotent of step $2$, with derived subgroup equal to its centre; the invertible upper triangular matrices form a solvable group, whose unipotent subgroup (all diagonal entries $1$) is nilpotent; and for $n \geq 2$, $[\mathrm{GL}_n,\mathrm{GL}_n] = \mathrm{SL}_n$ and $[\mathrm{SL}_n,\mathrm{SL}_n] = \mathrm{SL}_n \neq 0$, so $\mathrm{GL}_n$, hence $GL_n$, is neither solvable nor nilpotent. The underlying Lie algebra facts are Engel's theorem, that a finite-dimensional $\mathrm{G}$ is nilpotent if and only if every $\operatorname{ad}_X$ is nilpotent, and Lie's theorem, that a solvable subalgebra of $\mathrm{GL}(V)$ over an algebraically closed field of characteristic $0$ is simultaneously triangularizable.
 
-## 17. Quotients by Normal Closed Subgroups
+## Quotients by Normal Closed Subgroups
 
 Let $N \subseteq G$ be a **closed normal subgroup**. Then $G/N$ carries a unique smooth manifold structure making the quotient map $\pi : G \to G/N$ a smooth surjective submersion; with it, $G/N$ is a Lie group and
 
@@ -339,7 +339,7 @@ $$
 \operatorname{Lie}(G/N) \cong \mathrm{G}/\mathrm{N}, \qquad \mathrm{N} = \operatorname{Lie}(N).
 $$
 
-The map $\pi$ is a principal $N$-bundle, and $G/N$ is connected, respectively compact, when $G$ is. More generally, for any closed subgroup $H$ the homogeneous space $G/H$ has a unique smooth structure making $\pi : G \to G/H$ a submersion, with $\dim G/H = \dim G - \dim H$; when $H$ is normal this is a Lie group. Closedness is essential: the quotient by a dense subgroup such as the irrational line of §12 is not a manifold.
+The map $\pi$ is a principal $N$-bundle, and $G/N$ is connected, respectively compact, when $G$ is. More generally, for any closed subgroup $H$ the homogeneous space $G/H$ has a unique smooth structure making $\pi : G \to G/H$ a submersion, with $\dim G/H = \dim G - \dim H$; when $H$ is normal this is a Lie group. Closedness is essential: the quotient by a dense subgroup such as the irrational line of *Lie Subgroups and Lie Subalgebras* is not a manifold.
 
 **First isomorphism theorem.** For a Lie group homomorphism $\varphi : G \to H$, the kernel is a closed normal subgroup, the image is an immersed Lie subgroup, and $\varphi$ induces an isomorphism of Lie groups $G/\ker\varphi \cong \varphi(G)$.
 
@@ -349,7 +349,7 @@ Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^
 
 # Part VI: Summary
 
-## 19. Lie Groups in the Wider Corpus
+## Lie Groups in the Wider Corpus
 
 - The group of invertibles of the biquaternion algebra is $\mathbb{B}^\times \cong GL_2(\mathbb{C})$, a real Lie group of dimension $8$ whose Lie algebra is $\mathrm{GL}_2(\mathbb{C})$ with the commutator bracket, in agreement with *Structure of Lie Algebras*; the biquaternion exponential is treated in a separate article of the biquaternion series.
 - The unit quaternions form $S^3 \cong SU(2) \cong Sp(1)$, the double cover of $SO(3)$, and $SL_2(\mathbb{C})$ is the double cover of the identity component $SO^+(1,3)$ of the Lorentz group.
@@ -359,7 +359,7 @@ Examples: $\mathbb{R}/\mathbb{Z} \cong S^1$, $\mathbb{R}^n/\mathbb{Z}^n \cong T^
 
 ## Summary
 
-- A Lie group is a group and a smooth manifold with smooth group operations; the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, and $Sp(2n,\mathbb{R})$ are the basic examples, with real dimensions as in §3.
+- A Lie group is a group and a smooth manifold with smooth group operations; the classical matrix groups $GL_n$, $SL_n$, $O(n)$, $SO(n)$, $\mathrm{U}(n)$, $SU(n)$, $Sp(n)$, and $Sp(2n,\mathbb{R})$ are the basic examples, with real dimensions as in *The Classical Matrix Groups*.
 - Its Lie algebra $\mathrm{G} = T_eG$ is the space of left-invariant vector fields with the commutator bracket; for matrix groups $[X,Y] = XY - YX$.
 - The exponential map is a local diffeomorphism at $0$, natural in homomorphisms, and surjective for connected compact groups, connected nilpotent groups, and $GL_n(\mathbb{C})$, but not in general.
 - Lie group homomorphisms differentiate to Lie algebra homomorphisms, and the differential functor is an equivalence between simply connected Lie groups and finite-dimensional real Lie algebras; Lie subalgebras correspond to connected immersed Lie subgroups, closed subgroups being embedded.
