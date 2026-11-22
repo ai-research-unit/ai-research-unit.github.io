@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This entry reads the polar-decomposition subsection of the mathematical category. Eighteen articles, one object and one split. The object is a biquaternion written as a scale, a phase and two exponentials of a unit axis. The split is the grouping of those four factors into two, and there are exactly three ways to make it. The mathematics carries out the split twice, once on the sector where the element has two distinct eigenvalues and once on the sector where it has one.
+This entry reads the polar-decomposition subsection of the mathematical category. Sixteen articles, one object and one split. The object is a biquaternion written as a scale, a phase and two exponentials of a unit axis. The split is the grouping of those four factors into two, and there are exactly three ways to make it. The mathematics carries out the split twice, once on the sector where the element has two distinct eigenvalues and once on the sector where it has one.
 
 $$
 \boxed{\;\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r},\qquad
@@ -34,7 +34,7 @@ Boundaries. The complete polar decomposition, with its four factors, is the subj
 
 ## The Source Table
 
-The nine articles cover one sector, $N\neq0$, in both of its spectral halves: each article proves its own existence, uniqueness and logarithm, and the spectral half is stated inside the article rather than split off into a companion.
+The seven articles cover one sector, $N\neq0$, in both of its spectral halves: each article proves its own existence, uniqueness and logarithm, and the spectral half is stated inside the article rather than split off into a companion.
 
 | the block: $N\neq0$ | what it owns |
 | --- | --- |
@@ -45,13 +45,11 @@ The nine articles cover one sector, $N\neq0$, in both of its spectral halves: ea
 | [The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html) | the scale-with-boost bracketing, the two involutive kinds, the total domain, and the unipotent product at the wall |
 | [Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](../articles_maths/relations-between-the-complete-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html) | the comparison of the polar frame with the eigenbasis, the normal case, the non-normal gap; and the Jordan chain where the eigenbasis fails |
 | [Worked Examples of the Complete Polar Decomposition in the Eigenbasis of an N-Regular Biquaternion](../articles_maths/worked-examples-of-the-complete-polar-decomposition-in-the-eigenbasis-of-an-n-regular-biquaternion.html) | the numerical cases of the comparison and of the failure of the eigenbasis |
-| [The One-Sided Operator Exponential on the N-Regular Sector](../articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html) | the representation identity, the spectrum on one slot, the half-angle, and the defective case |
-| [The Two-Sided Exponential on the N-Regular Sector](../articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html) | the quadratic operator, the four products, the doubling rule, and the null rotation without a common eigenbasis |
 
 
-The shape of the table is the shape of the section. Nine articles for the sector with two eigenvalues and nine for the sector with one, and the two sets are parallel line by line: the word, its relation to the eigenbasis, its numbers, its numbers with the eigenbasis, the three pairings, and the two actions. The parallelism is the section's claim: the polar decomposition does not care whether the element is semisimple, and every other decomposition in the algebra does.
+The shape of the table is the shape of the section. Seven articles for the sector with two eigenvalues and nine for the sector with one, and the two sets are parallel in their core: the word, its relation to the eigenbasis, its numbers with the eigenbasis, and the three pairings. The two actions are no longer separate articles: the one-sided and the two-sided exponentials are §*The Exponential of the One-Sided Operator* of *One-Sided Operators on the N-Regular Sector* and §*The Exponential of the Two-Sided Operator* of *Two-Sided Operators on the N-Regular Sector*. The parallelism is the section's claim: the polar decomposition does not care whether the element is semisimple, and every other decomposition in the algebra does.
 
-The two articles that carry the most weight are the first of each block, which prove the word and its uniqueness. Everything else in the section is either a reading of the word (the three pairings), a comparison of the word with another structure (the eigenbasis relations), or an analytic consequence of it (the two exponentials). The worked examples exist because the gap between the polar frame and the eigenframe is numerical before it is conceptual.
+The two articles that carry the most weight are the first of each block, which prove the word and its uniqueness. Everything else in the section is either a reading of the word (the three pairings), a comparison of the word with another structure (the eigenbasis relations), or an analytic consequence of it (the two exponentials, now read inside the operator articles). The worked examples exist because the gap between the polar frame and the eigenframe is numerical before it is conceptual.
 
 ## The Results in Brief
 
@@ -601,8 +599,8 @@ Eight readings, each with a boundary. The word is a flow split into rate and fra
 - [The Hamilton Root Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-hamilton-root-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), the scale-with-phase bracketing and the eigenbasis.
 - [The Cartan Hermitian Pairing of the Complete Polar Decomposition of an N-Regular Biquaternion](../articles_maths/the-cartan-hermitian-pairing-of-the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), the scale-with-boost bracketing and its total domain.
 - [Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](../articles_maths/relations-between-the-complete-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html), the normal case and the gap.
-- [The One-Sided Operator Exponential on the N-Regular Sector](../articles_maths/the-one-sided-operator-exponential-on-the-n-regular-sector.html), the representation identity and the half-angle.
-- [The Two-Sided Exponential on the N-Regular Sector](../articles_maths/the-two-sided-exponential-on-the-n-regular-sector.html), the four products and the doubling rule.
+- [One-Sided Operators on the N-Regular Sector](../articles_maths/one-sided-operators-on-the-n-regular-sector.html), §*The Exponential of the One-Sided Operator*, the representation identity and the half-angle.
+- [Two-Sided Operators on the N-Regular Sector](../articles_maths/two-sided-operators-on-the-n-regular-sector.html), §*The Exponential of the Two-Sided Operator* and §*The Doubling Rule*, the four products and the doubling.
 - [The N Norm: Mass, Angle and the Cone](the-n-norm-mass-angle-and-the-cone.html), the reading of the central modulus.
 - [The H Norm: Amplitude and Frame](the-h-norm-amplitude-and-frame.html), the amplitude as the measure that survives the largest group of motions.
 - [Spin-Velocity Locking on the Degenerate Sector](spin-velocity-locking-on-the-degenerate-sector.html), the lock read for a fluid.

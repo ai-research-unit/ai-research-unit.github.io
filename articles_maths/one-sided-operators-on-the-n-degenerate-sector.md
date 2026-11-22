@@ -1013,7 +1013,7 @@ The norm fixes the rank and the spectral condition fixes the defect, on both str
 ## Further Reading
 
 - [Two-Sided Operators on the N-Degenerate Sector](two-sided-operators-on-the-n-degenerate-sector.html), for the two-sided operator on the same two strata.
-- [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator exponential off the null cone, where the four-factor word exists.
+- [One-Sided Operators on the N-Regular Sector](one-sided-operators-on-the-n-regular-sector.html), §*The Exponential of the One-Sided Operator*, for the operator exponential off the null cone, where the four-factor word exists.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor polar pair used throughout.
 - [Introduction to the Operators on the Four Sectors](introduction-to-the-operators-on-the-four-sectors.html), for the three operators, the doubling rule and the table of the four sectors.
 - [The N-Degenerate, Spectrally Regular Sector](the-n-degenerate-spectrally-regular-sector.html) and [The N-Degenerate, Spectrally Degenerate Sector](the-n-degenerate-spectrally-degenerate-sector.html), for the element-level descriptions of $\Sigma_{01}$ and $\Sigma_{00}$.

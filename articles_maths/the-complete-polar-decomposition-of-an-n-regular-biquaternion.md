@@ -2000,8 +2000,8 @@ The four statements to carry away are these. On the $\natural$-regular set the g
 - [The Eigenbasis of a Spectrally Regular Biquaternion](the-eigenbasis-of-a-spectrally-regular-biquaternion.html), for the eigenbasis, the Peirce corners and the spinors.
 - [The N-Regular, Spectrally Degenerate Sector](the-n-regular-spectrally-degenerate-sector.html), for the normal forms and the two strata of the wall.
 - [The Spectrum](the-spectrum-of-a-biquaternion.html), for the four sectors and the discriminants.
-- [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator form of the exact logarithm on the wall.
-- [The Two-Sided Exponential on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the two-sided operator form.
+- [One-Sided Operators on the N-Regular Sector](one-sided-operators-on-the-n-regular-sector.html), §*The Exponential at the Wall*, for the operator form of the exact logarithm on the wall.
+- [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), §*The Exponential at the Wall*, for the two-sided operator form.
 - [Biquaternion Elementary Functions](biquaternion-elementary-functions.html), for the exponential, the logarithm, the kernel and the fibre.
 - [Biquaternion Lie Group and Exponential Structure](biquaternion-lie-group-and-exponential-structure.html), for the Cartan decomposition and the Baker–Campbell–Hausdorff series.
 - [Conventions in Mathematics](algebra-and-element-conventions.html), for the notation.

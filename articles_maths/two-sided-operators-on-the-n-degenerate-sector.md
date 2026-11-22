@@ -944,6 +944,6 @@ The norm fixes the rank and the image; the spectral condition fixes the eigenval
 ## Further Reading
 
 - [One-Sided Operators on the N-Degenerate Sector](one-sided-operators-on-the-n-degenerate-sector.html), for the one-sided companion on the same two strata.
-- [The Two-Sided Exponential on the N-Regular Sector](the-two-sided-exponential-on-the-n-regular-sector.html), for the exponential of the two-sided operator off the null cone.
+- [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), §*The Exponential of the Two-Sided Operator*, for the exponential of the two-sided operator off the null cone.
 - [The Polar Decomposition of an N-Degenerate Biquaternion](the-polar-decomposition-of-an-n-degenerate-biquaternion.html), for the two-factor polar pair used here.
 - [Introduction to the Operators on the Four Sectors](introduction-to-the-operators-on-the-four-sectors.html), for the three operators, the doubling rule and the table of the four sectors.

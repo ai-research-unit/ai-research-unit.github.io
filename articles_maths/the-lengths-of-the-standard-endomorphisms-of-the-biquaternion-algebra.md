@@ -6,7 +6,7 @@
 
 **The answer.** One for every operator that is itself a product, however many multipliers it has; two for every sum of a left and a right multiplication, for every derivation, and for the symmetrised products; three for a diagonal scaling whose four signed averages have exactly one vanishing member; four for the reflections, the coordinate projections, the transposes and the generic operator. All four values occur, and each occurs among operators the corpus writes without effort.
 
-**The rule that decides.** The length is the rank of the array $c(M)$, and the array of a product of multipliers is an outer product of the two coefficient columns. The array of a sum is the sum of the outer products. So the question *how many products* becomes the question *how many arrays of rank one*, and the answer is read from the multipliers without any search.
+**The rule that decides.** The length is the rank of the array $c(M)$, and the array of a product of multipliers is the outer product of the two coefficient vectors. The array of a sum is the sum of the outer products. So the question *how many products* becomes the question *how many arrays of rank one*, and the answer is read from the multipliers without any search.
 
 **The one family that needs a computation.** The diagonal scalings are not products, and their arrays are diagonal but not read off the eigenvalues. The four diagonal entries are the four signed averages of the eigenvalue vector, and the length is the number of them that do not vanish. This one theorem covers the identity, the conjugation, the coordinate projections and every truncation of the coordinates, and it is where the value three appears.
 
@@ -30,13 +30,13 @@
 $$
 c(M)_{\mu\nu}=\tfrac14\operatorname{tr}\bigl(T_{\mu\nu}^{\dagger}M\bigr),\qquad T_{\mu\nu}=L_{e_\mu}R_{e_\nu},
 $$
-and the length is $\ell(M)=\operatorname{rank}c(M)$. The array of a product is an outer product of the coefficient columns,
+and the length is $\ell(M)=\operatorname{rank}c(M)$. Write $c_{\tilde Q}$ for the coefficient vector of an element $\tilde Q$. The array of a product is the outer product of two such vectors,
 $$
-c\bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)=[\tilde Q_1]\,[\tilde Q_2]^{\mathsf T},
+c\bigl(L_{\tilde Q_1}R_{\tilde Q_2}\bigr)_{\mu\nu}=c_{\tilde Q_1,\mu}\,c_{\tilde Q_2,\nu},
 $$
 so a product has length one whatever its operator rank, and a sum of $k$ products has an array of rank at most $k$. **Every statement below is a statement about one of these two displays.**
 
-**The two conventions that the numbers depend on.** The array is written in the basis of products of the units, in the order $(t,x,y,z)$, and the sign of a coefficient depends on the conjugation that fixes the basis. The lengths do not depend on either choice, because a change of basis acts on the two slots of the tensor by invertible factors and preserves the rank. The intermediate displays, such as $\tfrac14\operatorname{diag}(1,-1,-1,-1)$, are written in the canonical frame of *Matrix Representations Conventions*.
+**The two conventions that the numbers depend on.** The array is written in the basis of products of the units, in the order $(t,x,y,z)$, and the sign of a coefficient depends on the conjugation that fixes the basis. The lengths do not depend on either choice, because a change of basis acts on the two slots of the tensor by invertible factors and preserves the rank. The intermediate displays, such as the four entries $\tfrac14(1,-1,-1,-1)$, are written in the basis of the four units fixed by *Matrix Representations Conventions*.
 
 ## Length One: The Dressed Multiplications
 
@@ -44,19 +44,19 @@ so a product has length one whatever its operator rank, and a sum of $k$ product
 
 | operator | definition | array | operator rank |
 |---|---|---|---|
-| the identity | $\tilde X\mapsto\tilde X$ | $[e_t][e_t]^{\mathsf T}$ | $4$ |
-| a left multiplication | $\tilde X\mapsto\tilde Q\tilde X$ | $[\tilde Q][e_t]^{\mathsf T}$ | $0,2,4$ |
-| a right multiplication | $\tilde X\mapsto\tilde X\tilde P$ | $[e_t][\tilde P]^{\mathsf T}$ | $0,2,4$ |
-| a two-sided product | $\tilde X\mapsto\tilde Q\tilde X\tilde P$ | $[\tilde Q][\tilde P]^{\mathsf T}$ | $0,1,2,4$ |
-| the Hermitian pair | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | $[\tilde Q][\tilde Q^{*}]^{\mathsf T}$ | $0,1,4$ |
-| the adjoint, or inner automorphism | $\mathrm{Ad}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{-1}}$ | $[\tilde Q][\tilde Q^{-1}]^{\mathsf T}$ | $4$ |
-| the complex structure | $\tilde X\mapsto i\tilde X$ | $[ie_t][e_t]^{\mathsf T}$ | $4$ |
-| a Peirce corner | $\tilde X\mapsto\tilde\Pi_i\tilde X\tilde\Pi_j$ | $[\tilde\Pi_i][\tilde\Pi_j]^{\mathsf T}$ | $0,1$ |
-| a one-sided Peirce projection | $\tilde X\mapsto\tilde X\tilde\Pi_j$ | $[e_t][\tilde\Pi_j]^{\mathsf T}$ | $0,2$ |
+| the identity | $\tilde X\mapsto\tilde X$ | $c_{e_t}c_{e_t}^{\mathsf T}$ | $4$ |
+| a left multiplication | $\tilde X\mapsto\tilde Q\tilde X$ | $c_{\tilde Q}c_{e_t}^{\mathsf T}$ | $0,2,4$ |
+| a right multiplication | $\tilde X\mapsto\tilde X\tilde P$ | $c_{e_t}c_{\tilde P}^{\mathsf T}$ | $0,2,4$ |
+| a two-sided product | $\tilde X\mapsto\tilde Q\tilde X\tilde P$ | $c_{\tilde Q}c_{\tilde P}^{\mathsf T}$ | $0,1,2,4$ |
+| the Hermitian pair | $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{*}}$ | $c_{\tilde Q}c_{\tilde Q^{*}}^{\mathsf T}$ | $0,1,4$ |
+| the adjoint, or inner automorphism | $\mathrm{Ad}_{\tilde Q}=L_{\tilde Q}R_{\tilde Q^{-1}}$ | $c_{\tilde Q}c_{\tilde Q^{-1}}^{\mathsf T}$ | $4$ |
+| the complex structure | $\tilde X\mapsto i\tilde X$ | $c_{ie_t}c_{e_t}^{\mathsf T}$ | $4$ |
+| a Peirce corner | $\tilde X\mapsto\tilde\Pi_i\tilde X\tilde\Pi_j$ | $c_{\tilde\Pi_i}c_{\tilde\Pi_j}^{\mathsf T}$ | $0,1$ |
+| a one-sided Peirce projection | $\tilde X\mapsto\tilde X\tilde\Pi_j$ | $c_{e_t}c_{\tilde\Pi_j}^{\mathsf T}$ | $0,2$ |
 
 **Why the length is one in every row.** Each row is a product by construction, and the array of a product is an outer product, of rank one unless a multiplier vanishes. The Hermitian pair is a product because the second slot is the fixed element $\tilde Q^{*}$: the star is applied to the parameter and not to the operator, so the pair is complex-linear and is the two-sided product with multipliers $\tilde Q$ and $\tilde Q^{*}$. The adjoint is a product because the inverse is a fixed element.
 
-**The adjoint, and what the word gauge names.** The operator $\mathrm{Ad}_{\tilde Q}$ has array of rank one and operator rank four, the two columns of the array being $[\tilde Q]$ and $[\tilde Q^{-1}]$. The gap between the two numbers is the point of the row: length one and invertible are independent properties. The name *gauge* belongs elsewhere. The gauge of the corpus is the rescaling of a Peirce frame, $E_{ij}\mapsto(t_i/t_j)E_{ij}$, and that rescaling is conjugation by a diagonal element $\operatorname{diag}(t_1,t_2)$, in the frame where the two idempotents are diagonal, since on the matrix unit $\operatorname{diag}(t_1,t_2)E_{12}\operatorname{diag}(t_1,t_2)^{-1}=(t_1/t_2)E_{12}$. The Peirce gauge is therefore the diagonal torus inside the adjoint action, of one parameter in $M_2(\mathbb{C})$, and the adjoint is the larger group of all conjugations. The physical word for $\mathrm{Ad}$ is rotation rather than gauge: it fixes $e_t$ and acts on the traceless part, which is the complexified rotation group.
+**The adjoint, and what the word gauge names.** The operator $\mathrm{Ad}_{\tilde Q}$ has array of rank one and operator rank four, the two factors of the outer product being $c_{\tilde Q}$ and $c_{\tilde Q^{-1}}$. The gap between the two numbers is the point of the row: length one and invertible are independent properties. The name *gauge* belongs elsewhere. The gauge of the corpus is the rescaling of a Peirce frame, $E_{ij}\mapsto(t_i/t_j)E_{ij}$, and that rescaling is conjugation by the element $t_1\tilde\Pi_1+t_2\tilde\Pi_2$, since $\tilde\Pi_1\tilde X\tilde\Pi_2$ is scaled by $t_1/t_2$ under it. The Peirce gauge is therefore the diagonal torus inside the adjoint action, of one parameter in $M_2(\mathbb{C})$, and the adjoint is the larger group of all conjugations. The physical word for $\mathrm{Ad}$ is rotation rather than gauge: it fixes $e_t$ and acts on the traceless part, which is the complexified rotation group.
 
 **The one-sided families are inside the two-sided one.** A left multiplication is $L_{\tilde Q}R_{e_t}$ and a right multiplication is $L_{e_t}R_{\tilde Q}$, so the one-sided families are the two coordinate faces of the cone of products. The identity is the vertex pattern $L_{e_t}R_{e_t}$, and the products with both multipliers in the centre are its scalar multiples.
 
@@ -70,13 +70,13 @@ so a product has length one whatever its operator rank, and a sum of $k$ product
 
 **Proposition.** For $\tilde Q$ and $\tilde P$ such that $L_{\tilde Q}+R_{\tilde P}\neq0$, the length of $L_{\tilde Q}+R_{\tilde P}$ is two unless $\tilde Q$ or $\tilde P$ is central, in which case it is one.
 
-*Proof.* The array is $[\tilde Q][e_t]^{\mathsf T}+[e_t][\tilde P]^{\mathsf T}$. It has rank one exactly when the two outer products are proportional, which happens exactly when $[\tilde Q]$ is proportional to $[e_t]$, that is when $\tilde Q$ is central, or when $[\tilde P]$ is proportional to $[e_t]$. Otherwise it has rank two.
+*Proof.* The array is $c_{\tilde Q}c_{e_t}^{\mathsf T}+c_{e_t}c_{\tilde P}^{\mathsf T}$. It has rank one exactly when the two outer products are proportional, which happens exactly when $c_{\tilde Q}$ is proportional to $c_{e_t}$, that is when $\tilde Q$ is central, or when $c_{\tilde P}$ is proportional to $c_{e_t}$. Otherwise it has rank two.
 
 **The derivation.** The commutator with an element is a difference of a left and a right multiplication,
 $$
 \operatorname{ad}_{\tilde Q}=L_{\tilde Q}-R_{\tilde Q},\qquad \operatorname{ad}_{\tilde Q}(\tilde X)=\tilde Q\tilde X-\tilde X\tilde Q .
 $$
-Its array is $[\tilde Q][e_t]^{\mathsf T}-[e_t][\tilde Q]^{\mathsf T}$, of rank two for a non-central $\tilde Q$ and of rank zero for a central one. So **every derivation of this form has length two**, and its operator rank is two, which is the dimension of the image modulo the centre. The qualification *of this form* costs nothing: the derivations of a central simple algebra are inner, and $\mathbb{B}\cong M_2(\mathbb{C})$ is central simple, so $\operatorname{ad}_{\tilde Q}$ with $\tilde Q\in\mathbb{B}$ already runs over every derivation of the algebra. The derivation is the operator of the Lie bracket, and its length two is the statement that a bracket is the difference of two products.
+Its array is $c_{\tilde Q}c_{e_t}^{\mathsf T}-c_{e_t}c_{\tilde Q}^{\mathsf T}$, of rank two for a non-central $\tilde Q$ and of rank zero for a central one. So **every derivation of this form has length two**, and its operator rank is two, which is the dimension of the image modulo the centre. The qualification *of this form* costs nothing: the derivations of a central simple algebra are inner, and $\mathbb{B}\cong M_2(\mathbb{C})$ is central simple, so $\operatorname{ad}_{\tilde Q}$ with $\tilde Q\in\mathbb{B}$ already runs over every derivation of the algebra. The derivation is the operator of the Lie bracket, and its length two is the statement that a bracket is the difference of two products.
 
 **The symmetrised product.** The Jordan product with a parameter is
 $$
@@ -94,13 +94,9 @@ of length two for non-central $\tilde Q$. The anticommutator $L_{\tilde Q}+R_{\t
 $$
 D_a(\tilde X)=\sum_\mu a_\mu x_\mu e_\mu ,
 $$
-the scaling of the four coordinates. The identity is $D_{(1,1,1,1)}$, the quaternion conjugation is $D_{(1,-1,-1,-1)}$, the projection onto the coordinate line $\mathbb{C}e_\mu$ is $D_{e_\mu}$, the truncation to a set $S$ of coordinates is $D_{\mathbf 1_S}$, and $\operatorname{diag}(1,2,3,4)$ in the unit basis is $D_{(1,2,3,4)}$. The family is four-dimensional and commutative, and it meets the cone of products exactly at the four rays of the products $L_{e_\mu}R_{e_\mu}$.
+the scaling of the four coordinates. The identity is $D_{(1,1,1,1)}$, the quaternion conjugation is $D_{(1,-1,-1,-1)}$, the projection onto the coordinate line $\mathbb{C}e_\mu$ is $D_{e_\mu}$, the truncation to a set $S$ of coordinates is $D_{\mathbf 1_S}$, and the scaling of eigenvalue vector $(1,2,3,4)$ is $D_{(1,2,3,4)}$. The family is four-dimensional and commutative, and it meets the cone of products exactly at the four rays of the products $L_{e_\mu}R_{e_\mu}$.
 
-**Theorem (the length of a diagonal scaling).** The array of $D_a$ is diagonal,
-$$
-c(D_a)=\operatorname{diag}(b_t,b_x,b_y,b_z),
-$$
-with
+**Theorem (the length of a diagonal scaling).** The array of $D_a$ is diagonal, with the four entries $b_t,b_x,b_y,b_z$ on its diagonal, where
 $$
 b_t=\tfrac14(a_t+a_x+a_y+a_z),\quad
 b_x=\tfrac14(-a_t-a_x+a_y+a_z),\quad
@@ -109,7 +105,7 @@ b_z=\tfrac14(-a_t+a_x+a_y-a_z),
 $$
 and $\ell(D_a)=\#\{\mu:\ b_\mu\neq0\}$.
 
-*Proof.* Compute the four products $L_{e_\mu}R_{e_\mu}$ on the units. For $\mu=t$ the product is the identity, of eigenvalue vector $v_t=(1,1,1,1)$. For an imaginary $\mu$ the product negates $e_t$ and $e_\mu$ and fixes the two remaining units; so $v_x=(-1,-1,1,1)$, $v_y=(-1,1,-1,1)$ and $v_z=(-1,1,1,-1)$. The four vectors are pairwise orthogonal with squared norm four, so the dual basis of $(v_\mu)$ is $\tfrac14(v_\mu)$, and every vector $a$ expands as $a=\tfrac14\sum_\mu(v_\mu\cdot a)v_\mu$. The map $a\mapsto D_a$ is linear, and $D_{v_\mu}=L_{e_\mu}R_{e_\mu}$ because $v_\mu$ was computed as the eigenvalue vector of that product; applying the linear map to the expansion of $a$ gives $D_a=\tfrac14\sum_\mu(v_\mu\cdot a)L_{e_\mu}R_{e_\mu}$. A diagonal scaling is determined by its eigenvalue vector, so the equality of eigenvalue vectors is the equality of operators. The array of $L_{e_\mu}R_{e_\mu}$ is the matrix unit $E_{\mu\mu}$, so the array of $D_a$ is diagonal with the four coefficients displayed, and its rank is the number of nonzero entries. **The length of a diagonal scaling is the number of nonzero signed averages of its eigenvalue vector.**
+*Proof.* Compute the four products $L_{e_\mu}R_{e_\mu}$ on the units. For $\mu=t$ the product is the identity, of eigenvalue vector $v_t=(1,1,1,1)$. For an imaginary $\mu$ the product negates $e_t$ and $e_\mu$ and fixes the two remaining units; so $v_x=(-1,-1,1,1)$, $v_y=(-1,1,-1,1)$ and $v_z=(-1,1,1,-1)$. The four vectors are pairwise orthogonal with squared norm four, so the dual basis of $(v_\mu)$ is $\tfrac14(v_\mu)$, and every vector $a$ expands as $a=\tfrac14\sum_\mu(v_\mu\cdot a)v_\mu$. The map $a\mapsto D_a$ is linear, and $D_{v_\mu}=L_{e_\mu}R_{e_\mu}$ because $v_\mu$ was computed as the eigenvalue vector of that product; applying the linear map to the expansion of $a$ gives $D_a=\tfrac14\sum_\mu(v_\mu\cdot a)L_{e_\mu}R_{e_\mu}$. A diagonal scaling is determined by its eigenvalue vector, so the equality of eigenvalue vectors is the equality of operators. The array of $L_{e_\mu}R_{e_\mu}$ is the unit array $E_{\mu\mu}$, so the array of $D_a$ is diagonal with the four coefficients displayed, and its rank is the number of nonzero entries. **The length of a diagonal scaling is the number of nonzero signed averages of its eigenvalue vector.**
 
 **The table of the named cases.** The theorem answers every row at once.
 
@@ -121,8 +117,8 @@ and $\ell(D_a)=\#\{\mu:\ b_\mu\neq0\}$.
 | the projection onto $\mathbb{C}e_t$ | $(1,0,0,0)$ | $\tfrac14(1,-1,-1,-1)$ | $4$ |
 | the truncation to $\{t,x\}$ | $(1,1,0,0)$ | $\tfrac12(1,-1,0,0)$ | $2$ |
 | the truncation to $\{t,x,y\}$ | $(1,1,1,0)$ | $\tfrac14(3,-1,-1,1)$ | $4$ |
-| $\operatorname{diag}(1,2,3,4)$ | $(1,2,3,4)$ | $(\tfrac52,1,\tfrac12,0)$ | $3$ |
-| $\operatorname{diag}(1,2,3,5)$ | $(1,2,3,5)$ | $(\tfrac{11}{4},\tfrac54,\tfrac34,-\tfrac14)$ | $4$ |
+| $D_{(1,2,3,4)}$ | $(1,2,3,4)$ | $(\tfrac52,1,\tfrac12,0)$ | $3$ |
+| $D_{(1,2,3,5)}$ | $(1,2,3,5)$ | $(\tfrac{11}{4},\tfrac54,\tfrac34,-\tfrac14)$ | $4$ |
 
 **The four short scalings.** A diagonal scaling has length one exactly when three of its four averages vanish, and the vectors with that property are the four rays of $v_t,v_x,v_y,v_z$, which are the four diagonal products $L_{e_\mu}R_{e_\mu}$. The identity is the ray of $v_t$, and the central scalings are the scalar multiples of the identity. Every other scaling of the family has length two, three or four, and the generic one has four.
 
@@ -148,11 +144,11 @@ and $\ell(D_a)=\#\{\mu:\ b_\mu\neq0\}$.
 
 **The permutations, and the parity that decides.** A permutation of the four units is not a diagonal scaling, and parity fixes its length.
 
-*The odd ones are not products.* No product has determinant $-1$ in the model, because $L_{\tilde Q}$ is $\mathrm I_2\otimes\mathsf M_2(\tilde Q)$ and $R_{\tilde P}$ is $\mathsf M_2(\tilde P)^{\mathsf T}\otimes\mathrm I_2$, so that
+*The odd ones are not products.* No product has determinant $-1$. The left multiplication acts by $\tilde Q$ on each of the two Peirce columns and the right multiplication acts by $\tilde P$ on each of them, so
 $$
-\det L_{\tilde Q}=\det\mathsf M_2(\tilde Q)^{2},\qquad \det R_{\tilde P}=\det\mathsf M_2(\tilde P)^{2},
+\det L_{\tilde Q}=(\det\tilde Q)^{2},\qquad \det R_{\tilde P}=(\det\tilde P)^{2},
 $$
-so the determinant of a product is a square and in particular never $-1$; an odd permutation of the units has determinant $-1$, so it is not a product. The sixteen entries of its array are a direct computation from the multiplication table, and over the twelve odd permutations they take the closed form $\tfrac12\Sigma$ with $\Sigma$ a signed permutation matrix. The odd permutations fall in two conjugacy classes, a transposition and a four-cycle, and one representative of each is enough to display the form:
+so the determinant of a product is a square and in particular never $-1$; an odd permutation of the units has determinant $-1$, so it is not a product. The sixteen entries of its array are a direct computation from the multiplication table, and over the twelve odd permutations they take the closed form $\tfrac12\Sigma$ with $\Sigma$ a signed permutation array. The odd permutations fall in two conjugacy classes, a transposition and a four-cycle, and one representative of each is enough to display the form:
 $$
 \tfrac12\begin{pmatrix}1&0&0&0\\0&-1&0&0\\0&0&0&-1\\0&0&-1&0\end{pmatrix}\quad(y\ z),\qquad
 \tfrac12\begin{pmatrix}0&0&-1&0\\0&0&0&-1\\0&-1&0&0\\1&0&0&0\end{pmatrix}\quad(t\ z\ x\ y).
@@ -200,7 +196,7 @@ The first is the conjugation $\tilde X\mapsto\epsilon\tilde X\epsilon^{-1}$, whi
 | $0$ | the zero operator |
 | $1$ | the identity, $L_{\tilde Q}$, $R_{\tilde P}$, $L_{\tilde Q}R_{\tilde P}$, $\Theta_{\tilde Q}$, $\mathrm{Ad}_{\tilde Q}$, $i\,\cdot$, the Peirce corners, the even permutations of the units |
 | $2$ | $L_{\tilde Q}+R_{\tilde P}$, the derivations, the symmetrised products, the sums of two and of three Peirce corners, the truncations to two coordinates |
-| $3$ | the diagonal scalings with exactly one vanishing signed average, such as $\operatorname{diag}(1,2,3,4)$ |
+| $3$ | the diagonal scalings with exactly one vanishing signed average, such as $D_{(1,2,3,4)}$ |
 | $4$ | $\natural$, the sign flips, the odd permutations, the transpose, the coordinate projections, the truncations to one and to three coordinates, the generic operator |
 
 **The classes are not the strata.** The table of the length one class is a list of operators, not the whole stratum of length one: the stratum is the Segre cone, of dimension seven, and the products with two invertible multipliers are its open dense part. The same remark holds for the other rows. What the table asserts is that each stratum is met by the named operators, and that no named operator of the corpus is left without a place.
@@ -215,7 +211,7 @@ Every operator that is a product has length one, whatever its operator rank: the
 
 Every sum of a left and a right multiplication has length two unless one multiplier is central, and the derivations and the symmetrised products belong to this class. The sums of two and of three Peirce corners also have length two, the second one with operator rank three.
 
-The diagonal scalings satisfy a closed rule: the array is diagonal, its four entries are the signed averages of the eigenvalue vector, and the length is the number of nonzero entries. The only short scalings are the four diagonal products, of which the identity is one; the conjugation and the coordinate projections have length four, and the value three occurs exactly on the hyperplane where one average vanishes, as at $\operatorname{diag}(1,2,3,4)$.
+The diagonal scalings satisfy a closed rule: the array is diagonal, its four entries are the signed averages of the eigenvalue vector, and the length is the number of nonzero entries. The only short scalings are the four diagonal products, of which the identity is one; the conjugation and the coordinate projections have length four, and the value three occurs exactly on the hyperplane where one average vanishes, as at $D_{(1,2,3,4)}$.
 
 The reflections, the transposes, the odd permutations of the coordinates, the truncations to one and to three coordinates, and the generic operator have length four.
 
@@ -243,4 +239,4 @@ The length is not a function of the rank of the operator. Two rank-one projectio
 - [The Hermitian Pair of Operators Acting on Two Sides](the-hermitian-pair-of-operators-acting-on-two-sides.html), for the fourth family.
 - [The Transposition of the Two Sides](the-transposition-of-the-two-sides.html), for the conversion between the families and the transpose of the model.
 - [The Sylvester Operator and the Kronecker Sum of $M_4(\mathbb{C})$](the-sylvester-operator-and-the-kronecker-sum-of-m4c.html), for the derivation as a difference of a left and a right multiplication.
-- [The Length and the Two Ranks at $n=4$](the-length-and-the-two-ranks-at-n-4.html), for the matrix form of the same statements.
+- [The Length and the Two Ranks at $n=4$](the-length-and-the-two-ranks-at-n-4.html), for the same statements at the size of this algebra.

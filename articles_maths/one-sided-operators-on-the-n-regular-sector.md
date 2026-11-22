@@ -24,7 +24,7 @@ $$
 
 with $\varrho>0$, $\theta_{\mathrm{pha}}\in\left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right]$, $\theta_{\mathrm{rpd}}\ge0$, $\theta_{\mathrm{axr}}\in[0,2\pi]$ and real unit axes $\vec u_{\mathrm b},\vec u_{\mathrm r}$, acting by a single multiplication, on the left or on the right, and the transformation it produces on a biquaternion.
 
-The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta_{\mathrm{axr}}/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta_{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided operator pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is in *The One-Sided Operator Exponential on the N-Regular Sector* and *The Two-Sided Exponential on the N-Regular Sector*.
+The one-sided operator is the spinor action. Left multiplication by the rotor $\tilde u_{\mathrm r}$ has the eigenvalues $e^{\pm i\theta_{\mathrm{axr}}/2}$ on each Peirce column, and left multiplication by the boost $\tilde U_{\mathrm b}$ has $e^{\mp\theta_{\mathrm{rpd}}/2}$. Each Peirce column is one Weyl spinor, and the whole of $L$ is two copies of it. The two-sided operator pairs two such slots. The exponent reading of these eigenvalues — the half-angle, the half-rapidity and their doubling — is §*The Exponential of the One-Sided Operator* below and §*The Doubling Rule* of *Two-Sided Operators on the N-Regular Sector*.
 
 The one-sided operator is $\mathbb{C}$-linear, and the map from the parameter to the operator is faithful. It multiplies the complex norm by $\varrho^{2}e^{2i\theta_{\mathrm{pha}}}$. It does not, in general, preserve the two real forms $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$. Its block form in the splitting $\mathbb{B}=\mathbb{B}_{\Psi}\oplus\mathbb{B}_{\Phi}$ is
 
@@ -53,7 +53,7 @@ $$
 
 It is multiplication by the central imaginary, the complex structure $J$ of the algebra read over $\mathbb{R}$. It satisfies $J^{2}=-\mathrm{id}$ and $J^{-1}=J^{3}=L_{-i}$. The sign $i$ or $-i$ is the direction of the exchange. This is the operator that the two-sided operator cancels: $\mathrm{Sd}_i(\tilde X)=i\tilde X(-i)=\tilde X$. The one-sided operator sees the phase; the two-sided operator does not.
 
-The plan is the following. §*Conventions* fixes the notation. §*The One-Sided Operators* gives the elementary properties and the factorisation through the polar word. §*The Eigenbasis and the Two Spinor Spaces* reads the eigenbasis, the two Peirce spinor spaces, and proves that the half-angle action on a spinor is the one-sided operator. §*The Two Real Forms* proves the block decomposition and the sector criterion. §*The Pure Central Phase of $\pi/2$* treats the exchange in detail, in coordinates and for a general phase. §*The Four Factors, One-Sided* reads the scale, the boost and the rotor. §*The Image and the Kernel* compares the one-sided and the two-sided images. §*The Wall $B^{2}=0$* treats the unipotent case. §*The Boundary: the Null Cone* records the comparison with the N-degenerate article. The article closes with the summary, the notation and the readings.
+The plan is the following. §*Conventions* fixes the notation. §*The One-Sided Operators* gives the elementary properties and the factorisation through the polar word. §*The Eigenbasis and the Two Spinor Spaces* reads the eigenbasis, the two Peirce spinor spaces, and proves that the half-angle action on a spinor is the one-sided operator. §*The Two Real Forms* proves the block decomposition and the sector criterion. §*The Pure Central Phase of $\pi/2$* treats the exchange in detail, in coordinates and for a general phase. §*The Four Factors, One-Sided* reads the scale, the boost and the rotor. §*The Exponential of the One-Sided Operator* proves the element identity, the half-spin theorem and the exponent table. §*The Image and the Kernel* compares the one-sided and the two-sided images. §*The Wall $B^{2}=0$* treats the unipotent case, its Jordan structure and the shear that its exponential produces. §*The Boundary: the Null Cone* records the comparison with the N-degenerate article. The article closes with the summary, the notation and the readings.
 
 ## Conventions
 
@@ -545,7 +545,7 @@ $$
 L_r=R_r=\varrho\,\mathrm{id}.
 $$
 
-In the block decomposition $D_r=\varrho\,\mathrm{id}$ and $O_r=0$: the scale preserves both sectors and multiplies every coordinate by $\varrho$. The norm is multiplied by $\varrho^{2}$, because it is quadratic in the element. The two-sided operator acts by $\varrho^{2}$, once on each side. The determinant of $L_r$ is $\varrho^{4}$ on the complex four-space and $\varrho^{8}$ on the real eight-space. The exponent form of the comparison is in the companion.
+In the block decomposition $D_r=\varrho\,\mathrm{id}$ and $O_r=0$: the scale preserves both sectors and multiplies every coordinate by $\varrho$. The norm is multiplied by $\varrho^{2}$, because it is quadratic in the element. The two-sided operator acts by $\varrho^{2}$, once on each side. The determinant of $L_r$ is $\varrho^{4}$ on the complex four-space and $\varrho^{8}$ on the real eight-space. The exponent form of the comparison is §*The Exponents of the Four Factors*.
 
 ### The Boost
 
@@ -590,6 +590,155 @@ $$
 The first two terms are in $\mathbb{B}_{\Psi}$: a real scalar and an imaginary vector. The last two terms are in $\mathbb{B}_{\Phi}$: an imaginary scalar and the real vector $c\vec b+s\vec u\times\vec b$. The rotor mixes the two sectors in general. For $a=0$ the $\mathbb{B}_{\Psi}$ part is the real scalar $-s\,\vec u\cdot\vec b$, which vanishes only when $\vec b$ is perpendicular to $\vec u$; the $\mathbb{B}_{\Phi}$ part is the real vector $c\vec b+s\vec u\times\vec b$.
 
 The rotor is of norm one, so $L_{\tilde u_{\mathrm r}}$ preserves the complex norm and is $\mathbb{C}$-orthogonal. It also preserves the real quaternion subspace $\mathbb{B}_{H}$ and its imaginary multiple $\mathbb{B}_{iH}$, because it is a real quaternion and left multiplication by a real quaternion preserves the subalgebra $\mathbb{B}_{H}$ and the module $\mathbb{B}_{iH}$. On $\mathbb{B}_{H}$ it is an isometry of the Euclidean norm. It does not preserve $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$.
+
+## The Exponential of the One-Sided Operator
+
+### The Element Identity
+
+**Theorem.** For every $\tilde Q\in\mathbb{B}$ and every $t\in\mathbb{C}$,
+$$
+\boxed{\;\exp\bigl(tL_{\tilde Q}\bigr)=L_{\exp(t\tilde Q)},\qquad
+\exp\bigl(tR_{\tilde Q}\bigr)=R_{\exp(t\tilde Q)}\;}
+$$
+
+*Proof.* Left multiplication is multiplicative, $L_{\tilde Q}^{n}=L_{\tilde Q^{n}}$, so the exponential series is
+$$
+\exp\bigl(tL_{\tilde Q}\bigr)
+=\sum_{n\ge0}\frac{t^{n}}{n!}L_{\tilde Q}^{n}
+=\sum_{n\ge0}L_{t^{n}\tilde Q^{n}/n!}
+=L_{\exp(t\tilde Q)} .
+$$
+The same computation holds on the right, because $R_{\tilde Q}^{n}=R_{\tilde Q^{n}}$: the right multiplication is an anti-representation, and a single element commutes with its own powers.
+
+**The spectrum of the group.** On $\Sigma_{11}$ the operator is diagonalisable, with the eigenvalues $\lambda_+,\lambda_+,\lambda_-,\lambda_-$ of §*The Eigenbasis*, so its exponential has the eigenvalues $e^{t\lambda_+}$ twice and $e^{t\lambda_-}$ twice, where $\lambda_\pm=Q_t\pm iB$. Its determinant and trace are
+$$
+\det\exp\bigl(tL_{\tilde Q}\bigr)=\exp\bigl(4tQ_t\bigr),
+\qquad
+\operatorname{tr}\exp\bigl(tL_{\tilde Q}\bigr)
+=2\bigl(e^{t\lambda_+}+e^{t\lambda_-}\bigr)
+=4e^{tQ_t}\cos(tB).
+$$
+
+**The rate is the eigenvalue, not its square.** For a central element $\tilde Q=c\,e_t$ the operator is $c\,\mathrm{id}$ and the group is $e^{tc}\,\mathrm{id}$; the two-sided operator of the same element is $\lvert c\rvert^{2}\mathrm{id}$, and its group is $e^{t\lvert c\rvert^{2}}\mathrm{id}$. The one-sided rate is $c$, the two-sided rate is $\lvert c\rvert^{2}$.
+
+The identity holds at every point of the sector, so the norm decides nothing new: invertibility, the rate and the group law are uniform. The wall $B^{2}=0$ decides only the **shape** of the one-parameter group, and §*The Exponential at the Wall* computes it.
+
+### The Polar Word on a Spinor
+
+Write the polar word as $\tilde Q=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and put
+$$
+\lambda_\pm=\varrho\,e^{i\theta_{\mathrm{pha}}}\,\mu_\pm,\qquad
+\mu_+\mu_-=1 .
+$$
+The numbers $\mu_\pm$ are the eigenvalues of the unit factor $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$. On either spinor space the operator multiplies the first coordinate by $\lambda_+$ and the second by $\lambda_-$, so the spinor coordinates carry the pair $(\lambda_+,\lambda_-)$.
+
+For each pure factor, read with the other factors absent, the pair is elementary. The scale $\varrho$ gives $\mu_+=\mu_-=1$. The central phase $\exp(i\theta_{\mathrm{pha}})$ gives $\mu_+=\mu_-=1$ and multiplies both coordinates by $\exp(i\theta_{\mathrm{pha}})$. The boost gives
+$$
+\tilde U_{\mathrm b}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}\Bigr)
+\quad\Longrightarrow\quad
+\mu_+=e^{-\theta_{\mathrm{rpd}}/2},\qquad \mu_-=e^{\theta_{\mathrm{rpd}}/2},
+$$
+and the rotor gives
+$$
+\tilde u_{\mathrm r}=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}\Bigr)
+\quad\Longrightarrow\quad
+\mu_+=e^{i\theta_{\mathrm{axr}}/2},\qquad \mu_-=e^{-i\theta_{\mathrm{axr}}/2}.
+$$
+
+**Theorem (the half-spin theorem).** The one-sided operator produces the half-angle and the half-rapidity; the two-sided operator produces the full angle and the full rapidity. For the rotor,
+$$
+\boxed{\;
+L_{\tilde u_{\mathrm r}}=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\,L_{\vec u_{\mathrm r}}\Bigr)
+\ \Longrightarrow\ (\alpha,\beta)\longmapsto(e^{i\theta_{\mathrm{axr}}/2}\alpha,\ e^{-i\theta_{\mathrm{axr}}/2}\beta),
+\qquad
+\mathrm{Sd}_{\tilde u_{\mathrm r}}=\exp\Bigl(\tfrac{\theta_{\mathrm{axr}}}{2}\,\mathrm{ad}_{\vec u_{\mathrm r}}\Bigr)
+\ \Longrightarrow\ \vec v\longmapsto R_{\vec u_{\mathrm r}}(\theta_{\mathrm{axr}})\vec v
+\; }.
+$$
+The exponent is $\tfrac{\theta_{\mathrm{axr}}}{2}$ in both readings. The exponent $\tfrac{\theta_{\mathrm{axr}}}{2}$ of $L_{\tilde u_{\mathrm r}}$ multiplies the two spinor coordinates by $e^{i\theta_{\mathrm{axr}}/2}$ and $e^{-i\theta_{\mathrm{axr}}/2}$, hence the output is the half-angle; the same $\tfrac{\theta_{\mathrm{axr}}}{2}$ in $\mathrm{ad}_{\vec u}(X)=[\vec u,X]$ gives the rotation of angle $\theta_{\mathrm{axr}}$, because $\mathrm{ad}_{\vec u}=2\,[\vec u\times]$ and the factor $2$ doubles it. The boost is the same:
+$$
+\boxed{\;
+L_{\tilde U_{\mathrm b}}=\exp\Bigl(i\tfrac{\theta_{\mathrm{rpd}}}{2}\,L_{\vec u_{\mathrm b}}\Bigr)
+\ \Longrightarrow\ (\alpha,\beta)\longmapsto(e^{-\theta_{\mathrm{rpd}}/2}\alpha,\ e^{\theta_{\mathrm{rpd}}/2}\beta),
+\qquad
+\mathrm{Sd}_{\tilde U_{\mathrm b}}\ \Longrightarrow\ \text{rapidity }\theta_{\mathrm{rpd}}
+\; }.
+$$
+A spinor transforms by half of what a vector transforms by, and the operator that produces the half is the one-sided one. This is the precise sense in which the spin representation of the polar word is the one-sided operator and the vector representation is the two-sided one. The spectral form of the same statement is §*The Spectrum of the Two-Sided Operator* and §*The Pure Factors and the Full Rotor* of *Two-Sided Operators on the N-Regular Sector*.
+
+The following table collects the pure factors. The last column is the nontrivial factor in the spectrum of the two-sided operator, that is, in the products $\lambda_i\bar\lambda_j$.
+
+| factor | $\mu_+,\mu_-$ | exponent per coordinate | nontrivial two-sided factor |
+|---|---|---|---|
+| scale $\varrho$ | $1,1$ | $\ln \varrho$ | $\varrho^{2}$ |
+| phase $\exp(i\theta_{\mathrm{pha}})$ | $1,1$ | $i\theta_{\mathrm{pha}}$ | $1$ |
+| boost $\tilde U_{\mathrm b}$ | $e^{-\theta_{\mathrm{rpd}}/2},e^{\theta_{\mathrm{rpd}}/2}$ | $\mp\theta_{\mathrm{rpd}}/2$ | $e^{\pm\theta_{\mathrm{rpd}}}$ |
+| rotor $\tilde u_{\mathrm r}$ | $e^{i\theta_{\mathrm{axr}}/2},e^{-i\theta_{\mathrm{axr}}/2}$ | $\pm i\theta_{\mathrm{axr}}/2$ | $e^{\pm i\theta_{\mathrm{axr}}}$ |
+
+The scale and the phase are central. Their rows are read as scalar multipliers of a word with $B\neq0$; for a purely central element $B=0$, every basis is an eigenbasis, and the single eigenvalue is $Q_t$.
+
+For a general word the two factors do not commute, and $\mu_\pm$ are not separately exponentials of half the boost and half the rotor angle. The pair is still $(\lambda_+,\lambda_-)$; the half-angle formulas are the statement for the pure factors, and for commuting axes. The general relation between the spectral data and the polar angles is *Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion*, §*The Spectral Data from the Polar Factors*.
+
+### The Weight Relation and the Two Copies
+
+The algebra is the tensor product of a spinor space and its dual,
+$$
+\mathbb{B}\cong S\otimes S^{*},
+$$
+where $S=\mathbb{C}^{2}$ is the spinor space and $S^{*}$ its dual, and $S_+\cong S_-\cong S$ as left modules. Left multiplication acts on the first factor, right multiplication on the second:
+$$
+L_{\tilde Q}=\Delta_{\mathrm{rep}}(\tilde Q)\otimes 1,
+\qquad
+R_{\tilde Q}=1\otimes\Delta_{\mathrm{rep}}(\tilde Q)^{T},
+\qquad
+R_{\tilde Q^{*}}=1\otimes\bar\Delta_{\mathrm{rep}}(\tilde Q),
+$$
+where $\Delta_{\mathrm{rep}}$ is the defining representation on $S$ and $\bar\Delta_{\mathrm{rep}}$ its conjugate. The two factors commute, so the exponents add:
+$$
+\exp\bigl(tL_A\bigr)\exp\bigl(sR_B\bigr)=\exp\bigl(tL_A+sR_B\bigr).
+$$
+
+For the rotor, $\Delta_{\mathrm{rep}}(\tilde u_{\mathrm r})$ has weights $e^{\pm i\theta_{\mathrm{axr}}/2}$ and $\bar\Delta_{\mathrm{rep}}(\tilde u_{\mathrm r})$ has weights $e^{\mp i\theta_{\mathrm{axr}}/2}$. The tensor weights, in additive notation, are the four sums
+$$
+\tfrac{\theta_{\mathrm{axr}}}{2}-\tfrac{\theta_{\mathrm{axr}}}{2}=0,\qquad
+\tfrac{\theta_{\mathrm{axr}}}{2}+\tfrac{\theta_{\mathrm{axr}}}{2}=\theta_{\mathrm{axr}},\qquad
+-\tfrac{\theta_{\mathrm{axr}}}{2}-\tfrac{\theta_{\mathrm{axr}}}{2}=-\theta_{\mathrm{axr}},\qquad
+-\tfrac{\theta_{\mathrm{axr}}}{2}+\tfrac{\theta_{\mathrm{axr}}}{2}=0,
+$$
+that is $(\theta_{\mathrm{axr}},0,0,-\theta_{\mathrm{axr}})$. For the boost, both slots carry $e^{\mp\theta_{\mathrm{rpd}}/2}$ because the boost is Hermitian, and the sums are $(\theta_{\mathrm{rpd}},0,0,-\theta_{\mathrm{rpd}})$. These are the weights of the vector. The invariant statement is that the weights of $S\otimes S^{*}$ are the pairwise sums of the weights of $S$ and $S^{*}$; the factor two sits in the pairing, not in a rescaling of the angle.
+
+**"Half" is relative.** The angle $\theta_{\mathrm{axr}}$ is defined by the vector action, as the rotation of $\mathbb{R}^{3}$. The spinor weight is $\theta_{\mathrm{axr}}/2$ because the rotor is $\exp(\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r})$. A different normalisation of the angle would change the number and not the relation.
+
+**The whole operator is two copies.** On $\mathbb{B}=S_+\oplus S_-$ the two summands are isomorphic as left modules, so
+$$
+\operatorname{spec}L_{\tilde u_{\mathrm r}}
+=\{e^{i\theta_{\mathrm{axr}}/2},e^{i\theta_{\mathrm{axr}}/2},
+e^{-i\theta_{\mathrm{axr}}/2},e^{-i\theta_{\mathrm{axr}}/2}\},
+$$
+each weight twice. The one-sided operator is $2\Delta_{\mathrm{rep}}$ as a left module: two copies of the Weyl module, not the Dirac module $\Delta_{\mathrm{rep}}\oplus\bar\Delta_{\mathrm{rep}}$. One Peirce column is one elementary spinor, a Weyl spinor in the language of physics; the whole of $L$ is a pair of them, which is a Dirac spinor (*Spinors and Dirac Spinors in the Biquaternion Algebra*, §*The Pair Is a Multiplicity*). The precise phrase is therefore: the one-sided operator, restricted to one Peirce component, is the half-spin.
+
+**The two Peirce copies are not the two Lorentz chiralities.** Both $S_+$ and $S_-$ carry the same representation $\Delta_{\mathrm{rep}}$; they differ by the Peirce idempotent, not by the Lorentz chirality. The two Lorentz chiralities are the two tensor factors $S$ and $S^{*}$, that is the left and right slots.
+
+**Factor by factor.** For a general word the factors do not commute and $\lambda_\pm$ are not $e^{\pm i\theta_{\mathrm{axr}}/2}$ or $e^{\mp\theta_{\mathrm{rpd}}/2}$. There is no single half-angle of a general polar word; the additive relation is the statement for the pure factors and for commuting axes.
+
+**The whole of $L$ is twisted.** $L_{\tilde Q}$ also carries the scale $\varrho$ and the phase $e^{i\theta_{\mathrm{pha}}}$. The spinor statement concerns the norm-one, phase-one part $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$; the full operator is the twisted spinor representation of the module.
+
+**The double cover.** Replacing $\tilde u_{\mathrm r}$ by $-\tilde u_{\mathrm r}$ leaves the two-sided operator unchanged and changes $L$ by $-1$. On the norm-one slice the two-sided operator determines the element only up to sign; $L$ distinguishes the sign. The half-angle is therefore defined only after the lift to the double cover is chosen, and $L$ is the operator that carries the choice.
+
+**Corollary (the one-sided operator is the spinor action).** The operator $L_{\tilde Q}$ is the action of $\tilde Q$ on a single spinor. It preserves chirality, acts by the same module on $S_+$ and $S_-$, and its rotor and boost exponents are half those of the two-sided operator.
+
+### The Exponents of the Four Factors
+
+The following table collects the exponents. The **exponent** is the element $A$ such that the factor is $\exp(A)$; the **scalar parameter** is the real or imaginary coefficient inside that exponential, and the **two-sided output** is the parameter of the corresponding transformation in the two-sided operator.
+
+| factor | exponent $A$ | scalar parameter | two-sided output |
+|---|---|---|---|
+| scale $\varrho$ | $\ln \varrho$ | $\ln \varrho$ | $2\ln \varrho$ |
+| phase $\exp(i\theta_{\mathrm{pha}})$ | $i\theta_{\mathrm{pha}}$ | $\theta_{\mathrm{pha}}$ | $0$ |
+| boost $\tilde U_{\mathrm b}$ | $i\tfrac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ | $\tfrac{\theta_{\mathrm{rpd}}}{2}$ | $\theta_{\mathrm{rpd}}$ |
+| rotor $\tilde u_{\mathrm r}$ | $\tfrac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$ | $\tfrac{\theta_{\mathrm{axr}}}{2}$ | $\theta_{\mathrm{axr}}$ |
+
+The rule is the number of slots. A one-sided operator is one factor of the word, so its exponent is the exponent of that factor: the scale keeps $\ln \varrho$, the phase keeps $i\theta_{\mathrm{pha}}$, the boost keeps the half-rapidity in $i\theta_{\mathrm{rpd}}/2\,\vec u_{\mathrm b}$, the rotor keeps the half-angle in $\theta_{\mathrm{axr}}/2\,\vec u_{\mathrm r}$. A two-sided operator uses two slots, the parameter and its Hermitian conjugate. For the Hermitian factors the two exponents are equal and add, giving $2\ln \varrho$ for the scale and $\theta_{\mathrm{rpd}}$ for the boost; for the $*$-unitary rotor they are opposite and the conjugation gives the angle $\theta_{\mathrm{axr}}$; for the central imaginary phase they cancel to $0$. The doubling is therefore a two-slot phenomenon for the scale, the boost and the rotor, and the phase is its exceptional case (§*The Doubling Rule* of *Two-Sided Operators on the N-Regular Sector*).
 
 ## The Image and the Kernel
 
@@ -716,6 +865,29 @@ The product is unipotent up to $\varepsilon$, while the two factors are not. Thi
 
 The one-sided operator therefore sees the defect more directly than the element. The element is defective but scalar; the operator is defective on a four-dimensional space and exhibits the two blocks explicitly.
 
+### The Exponential at the Wall
+
+On the wall the element is $Q_t(e_t+\vec\Upsilon)$ with $\vec\Upsilon^{2}=0$, so the operator is $Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$, and its exponential is a shear:
+$$
+\boxed{\;\exp\bigl(tL_{\tilde Q}\bigr)
+=e^{tQ_t}\bigl(I+tQ_t\,L_{\vec\Upsilon}\bigr)\;}
+$$
+for every complex $t$. In particular $\exp L_{\tilde Q}=e^{Q_t}(I+Q_tL_{\vec\Upsilon})$.
+
+*Proof.* $L_{\tilde Q}=Q_t(I+L_{\vec\Upsilon})$ and $L_{\vec\Upsilon}^{2}=L_{\vec\Upsilon^{2}}=0$. The two terms commute, being polynomials in $L_{\vec\Upsilon}$, so the exponential is $e^{tQ_t}\exp(tQ_tL_{\vec\Upsilon})$, and the second factor truncates at degree one.
+
+**The group is a line of shears.** It moves the identity along the nilpotent direction and stops at degree one; it has no period and carries no angle. The polar angles are in the factors: $L_{\tilde U_{\mathrm b}}$ has the eigenvalues $e^{\pm\theta_{\mathrm{rpd}}/2}$, each twice, and $L_{\tilde u_{\mathrm r}}$ has $e^{\pm i\theta_{\mathrm{axr}}/2}$, each twice. Their product has the single eigenvalue $Q_t$, with two Jordan blocks of size two, and its spectrum carries no angle at all. In the regular sector the eigenvalues of $L_{\tilde Q}$ are $\varrho\,e^{i\theta_{\mathrm{pha}}}\mu_\pm$ with $\mu_\pm=U_t\pm i\sqrt{1-U_t^{2}}$ and $U_t=\operatorname{Sc}\tilde U$; at the wall $U_t\to\varepsilon$ and both eigenvalues tend to $\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon=Q_t$.
+
+**The two angles are locked.** The wall removes neither factor; it removes two real degrees of freedom. Write $\vec\Upsilon=\vec A+i\vec B$ with $\vec A$ and $\vec B$ real, so that $\vec A\cdot\vec B=0$ and $\lvert\vec A\rvert=\lvert\vec B\rvert=a$. The regular word carries two independent exponents, $i\frac{\theta_{\mathrm{rpd}}}{2}\vec u_{\mathrm b}$ and $\frac{\theta_{\mathrm{axr}}}{2}\vec u_{\mathrm r}$, about two independent axes. At the wall the exact exponent is $\vec\Upsilon$ itself, and the formal sum of the two factor exponents differs from it by the log defect of *The Complete Polar Decomposition of an N-Regular Biquaternion*, §*The Formal Exponent and the Defect at the Wall*, whose cross term $i\varepsilon\tanh\frac{\theta_{\mathrm{rpd}}}{2}\tan\frac{\theta_{\mathrm{axr}}}{2}\,\vec u_{\mathrm b}\times\vec u_{\mathrm r}$ is non-zero because the axes are orthogonal. What the wall leaves is a pair of constraints between the two factors:
+$$
+\boxed{\;\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0,\qquad
+\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a.\;}
+$$
+
+*Proof.* From the coordinate boxes of *The Complete Polar Decomposition of an N-Regular Biquaternion*, $\cosh\frac{\theta_{\mathrm{rpd}}}{2}=\sqrt{1+a^2}$, $\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$, $\lvert\cos\frac{\theta_{\mathrm{axr}}}{2}\rvert=1/\sqrt{1+a^2}$ and $\sin\frac{\theta_{\mathrm{axr}}}{2}=a/\sqrt{1+a^2}$. Hence $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=a=\sinh\frac{\theta_{\mathrm{rpd}}}{2}$. The axes are $\vec u_{\mathrm b}\propto\vec B+\vec A\times\vec B$ and $\vec u_{\mathrm r}=\varepsilon\vec A/a$. The vectors $\vec B$ and $\vec A\times\vec B$ are both orthogonal to $\vec A$, because $\vec A\cdot\vec B=0$, so $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$.
+
+**One slot against two.** At the wall the spinor exponent is $\vec\Upsilon$, carried by the left slot, and the vector exponent of the two-sided operator is $\vec\Upsilon$ in the left slot plus $\vec\Upsilon^{*}$ in the right. That is the wall form of the doubling: the scalar part appears once per slot, which is why the modulus is $Q_t$ in the one-sided reading and $\lvert Q_t\rvert^{2}$ in the two-sided one, and not a doubled exponent.
+
 ### Worked Example
 
 Take $\tilde Q=e_t+\vec e_x+i\vec e_y$. In the basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$,
@@ -738,7 +910,7 @@ i & 0 & 0 & -1\\
 \end{pmatrix}.
 $$
 
-The second matrix squares to zero and has rank two. The first is the identity plus the second, so it has the single eigenvalue $1$, two Jordan blocks of size two, determinant $1$ and trace $4$.
+The second matrix squares to zero and has rank two. The first is the identity plus the second, so it has the single eigenvalue $1$, two Jordan blocks of size two, determinant $1$ and trace $4$. The exponential is $e^{t}\bigl(I+t\,\mathsf M(L_{\vec\Upsilon})\bigr)$: the identity plus $t$ times the nilpotent part, multiplied by $e^{t}$, and at $t=1$ it is $e$ times the unipotent matrix above, as §*The Exponential at the Wall* requires.
 
 The polar factors are left multiplications by
 
@@ -830,9 +1002,11 @@ $$
 
 the image of $\mathbb{B}_{\Phi}$ has $*$-eigenvalue $-\exp(-2i\theta_{\mathrm{pha}})$, and the sectors are reached exactly at $\theta_{\mathrm{pha}}\equiv0$ and $\theta_{\mathrm{pha}}\equiv\pi/2$ modulo $\pi$.
 
-The scale acts as $\varrho$, not $\varrho^{2}$. The phase acts as $\exp(i\theta_{\mathrm{pha}})$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is in *The One-Sided Operator Exponential on the N-Regular Sector* and *The Two-Sided Exponential on the N-Regular Sector*.
+The scale acts as $\varrho$, not $\varrho^{2}$. The phase acts as $\exp(i\theta_{\mathrm{pha}})$, not as the identity. The boost and the rotor are $\mathbb{C}$-orthogonal and mix the sectors. The one-sided operator has one slot; the two-sided operator pairs two slots. The exponent reading of the half-angle, the half-rapidity and the doubling is §*The Exponential of the One-Sided Operator* above.
 
-On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $L_{\tilde Q}=Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$. The operator has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^{2}$, rank two for $L_{\vec\Upsilon}$, geometric multiplicity two and two Jordan blocks of size two, with $\det_{\mathbb{C}}L_{\tilde Q}=Q_t^{4}$ and $\operatorname{tr}L_{\tilde Q}=4Q_t$. The polar factors $L_{\tilde U_{\mathrm b}}$ and $L_{\tilde u_{\mathrm r}}$ are not unipotent; their product is. The image of $L_{\vec\Upsilon}$ is the left ideal $\mathbb{B}\vec\Upsilon$ and its kernel is the right annihilator, both of complex dimension two.
+Off the wall the exponential has the eigenvalues $e^{t\lambda_\pm}$, each twice, the determinant $\exp(4tQ_t)$ and the trace $4e^{tQ_t}\cos(tB)$.
+
+On the wall $B^{2}=0$ the element is $\tilde Q=Q_t(e_t+\vec\Upsilon)$ and $L_{\tilde Q}=Q_t(I+L_{\vec\Upsilon})$ with $L_{\vec\Upsilon}^{2}=0$. The operator has the single eigenvalue $Q_t$, minimal polynomial $(X-Q_t)^{2}$, rank two for $L_{\vec\Upsilon}$, geometric multiplicity two and two Jordan blocks of size two, with $\det_{\mathbb{C}}L_{\tilde Q}=Q_t^{4}$ and $\operatorname{tr}L_{\tilde Q}=4Q_t$. The polar factors $L_{\tilde U_{\mathrm b}}$ and $L_{\tilde u_{\mathrm r}}$ are not unipotent; their product is. The image of $L_{\vec\Upsilon}$ is the left ideal $\mathbb{B}\vec\Upsilon$ and its kernel is the right annihilator, both of complex dimension two. Its exponential is the shear $\exp(tL_{\tilde Q})=e^{tQ_t}(I+tQ_tL_{\vec\Upsilon})$, with no period and no angle, while the polar angles survive in the factors and are locked by $\vec u_{\mathrm b}\cdot\vec u_{\mathrm r}=0$ and $\varepsilon\tan\frac{\theta_{\mathrm{axr}}}{2}=\sinh\frac{\theta_{\mathrm{rpd}}}{2}=a$.
 
 In the eigenbasis the left multiplication is diagonal,
 $$
@@ -844,7 +1018,7 @@ The two spinor spaces $S_+=\mathbb{B}\tilde\Pi_+$ and $S_-=\mathbb{B}\tilde\Pi_-
 $$
 \Delta=\begin{pmatrix}\lambda_+&0\\0&\lambda_-\end{pmatrix},
 $$
-so $L_{\tilde Q}$ acts by $\Delta$ on both and never mixes them. The algebra is $S\otimes S^{*}$; $L$ acts on each copy of $S$ and is $2\Delta_{\mathrm{rep}}$, two copies of the Weyl spinor. The spectral form of the half-spin and of the doubling is in the companion article.
+so $L_{\tilde Q}$ acts by $\Delta$ on both and never mixes them. The algebra is $S\otimes S^{*}$; $L$ acts on each copy of $S$ and is $2\Delta_{\mathrm{rep}}$, two copies of the Weyl spinor. The spectral form of the half-spin and of the doubling is §*The Exponential of the One-Sided Operator* above and §*The Doubling Rule* of *Two-Sided Operators on the N-Regular Sector*.
 
 The image of the one-sided action on the invertibles is $\mathbb{B}^{\times}\cong GL(2,\mathbb{C})$, of real dimension eight, with trivial kernel. The image of the two-sided action is $CO^{+}(1,3)$, of real dimension seven, with kernel $U(1)$. The missing dimension is the phase. On the null cone the one-sided operator has rank two and image the right ideal $\tilde Q\mathbb{B}$; the two-sided operator has rank one and image the line $\mathbb{C}\tilde Q\tilde Q^{*}$.
 
@@ -874,7 +1048,10 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 | $\Delta=\operatorname{diag}(\lambda_+,\lambda_-)$ | the common spinor matrix on $S_+$ and $S_-$ |
 | $S,S^{*}$ | the spinor space $\mathbb{C}^{2}$ and its dual, with $\mathbb{B}\cong S\otimes S^{*}$ |
 | $\Delta_{\mathrm{rep}},\bar\Delta_{\mathrm{rep}}$ | the defining representation on $S$ and its conjugate |
+| $\mu_\pm=\lambda_\pm/(\varrho\,e^{i\theta_{\mathrm{pha}}})$ | the eigenvalues of the unit factor, the pair on one spinor slot |
 | $\mathsf M^{\tilde Q}$ | the eigenbasis matrix model, not the Pauli model $\mathsf M_2$ |
+| $\vec\Upsilon=\vec A+i\vec B$, $a$ | the null vector on the wall, $\lvert\vec A\rvert=\lvert\vec B\rvert=a$, $\vec A\cdot\vec B=0$ |
+| $L_{\vec\Upsilon}$ | the left multiplication by the null vector, $L_{\vec\Upsilon}^{2}=0$ |
 | $J=L_i=R_i$ | the pure central phase of $\pi/2$, the complex structure |
 | $g$ | the Minkowski form, $\langle\tilde Q\rangle_{\natural}$ on $\mathbb{B}_{\Psi}$ and $-\langle\tilde Q\rangle_{\natural}$ on $\mathbb{B}_{\Phi}$ |
 | $GL(2,\mathbb{C})$ | the image of the one-sided action on the invertibles |
@@ -883,8 +1060,7 @@ The one-sided multiplication is a left translation of the algebra. The two-sided
 
 ## Further Reading
 
-- [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the two-sided operator, the factor-by-factor doubling rule and the cancellation of the phase.
-- [The One-Sided Operator Exponential on the N-Regular Sector](the-one-sided-operator-exponential-on-the-n-regular-sector.html), for the operator exponential, the half-spin theorem and the weights.
+- [Two-Sided Operators on the N-Regular Sector](two-sided-operators-on-the-n-regular-sector.html), for the two-sided operator, the spectral form of its exponential, the doubling rule and the cancellation of the phase.
 - [The N-Regular, Spectrally Regular Sector](the-n-regular-spectrally-regular-sector.html), §*The Eigenbasis, the Nilpotents, and the Peirce Corners*, for the basis, the two Peirce spinor spaces and the diagonal action used here.
 - [Relations between the Complete Polar Decomposition and Eigenbasis of an N-Regular Biquaternion](relations-between-the-complete-polar-decomposition-and-eigenbasis-of-an-n-regular-biquaternion.html), for the general dictionary between the spectral data and the polar angles when the axes do not commute.
 - [The Complete Polar Decomposition of an N-Regular Biquaternion](the-complete-polar-decomposition-of-an-n-regular-biquaternion.html), for the four factors, the modulus, the branch and the domain, and §*The Operator Reading: the Twist*, for the same word read on the spinor module.
