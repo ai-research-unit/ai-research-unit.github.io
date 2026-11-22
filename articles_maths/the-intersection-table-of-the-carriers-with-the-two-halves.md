@@ -6,11 +6,11 @@
 
 **The order of the article.** The table comes first; its margins and its forcing second. The alternating pattern of the entries follows, then the comparison with the row of the elements, and the reading closes.
 
-**It assumes** *The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$*, *The Symmetric and Antisymmetric Parts of the Operator Space* and *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*. **The row of the elements is** where the table has two rows and two columns; here it has four rows and two columns.
+**It assumes** *The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$*, *The Symmetric and Antisymmetric Parts of the Operator Space* and *The Clebsch–Gordan Decomposition of the Operators*. **The row of the elements is** where the table has two rows and two columns; here it has four rows and two columns.
 
 **The result in one line.** The intersections are $(7,0)$, $(0,5)$, $(3,0)$ and $(0,1)$ for the labels $3,2,1,0$, so each carrier meets exactly one square, in its full dimension.
 
-**Boundaries.** The parity rule is *The Parity Rule*; the failure of invariance under the Cartan element is *Neither Half Is Invariant*; the carriers are defined in *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*.
+**Boundaries.** The parity rule is *The Parity Rule*; the failure of invariance under the Cartan element is *Neither Half Is Invariant*; the carriers are defined in *The Clebsch–Gordan Decomposition of the Operators*.
 
 ## The Table
 
@@ -115,4 +115,4 @@ $$
 - [The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$](the-parity-rule-the-two-squares-of-the-module.html), for the assignment of the carriers to the squares.
 - [The Symmetric and Antisymmetric Parts of the Operator Space](the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space.html), for the two halves.
 - [Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$](neither-half-is-invariant-the-cartan-element.html), for the action that does not respect the table.
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the four carriers.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four carriers.

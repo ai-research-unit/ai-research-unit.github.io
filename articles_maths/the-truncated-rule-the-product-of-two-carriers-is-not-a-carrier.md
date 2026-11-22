@@ -6,11 +6,11 @@
 
 **The order of the article.** The product rule and its table come first; the failure of closure second. The truncation follows, then the scalars, and the filtered reading closes the article.
 
-**It assumes** *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*, *The Two-Sided Operators and the Segre Cone* and *$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation*. **The row of the elements is** where the carriers are the two summands of a four-dimensional algebra and the product rule is the rule of the quaternion units; here there are four carriers and no closure.
+**It assumes** *The Clebsch–Gordan Decomposition of the Operators*, *The Two-Sided Operators and the Segre Cone* and *$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation*. **The row of the elements is** where the carriers are the two summands of a four-dimensional algebra and the product rule is the rule of the quaternion units; here there are four carriers and no closure.
 
 **The result in one line.** $V_iV_j\subseteq\bigoplus_{k=|i-j|}^{\min(i+j,3)}V_k$, the sum has more than one term except when one label is zero, and only $V_0$ is a subalgebra.
 
-**Boundaries.** The decomposition is *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*; the two squares are *The Parity Rule*; the algebra structure of the operators is *$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation*.
+**Boundaries.** The decomposition is *The Clebsch–Gordan Decomposition of the Operators*; the two squares are *The Parity Rule*; the algebra structure of the operators is *$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation*.
 
 ## The Product Rule
 
@@ -90,7 +90,7 @@ $$
 
 ## Further Reading
 
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the four carriers.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four carriers.
 - [$\operatorname{End}(\mathbb{B})$ as an Algebra: the Regular Representation](end-b-as-an-algebra-the-regular-representation.html), for the product that is truncated.
 - [The Parity Rule: $\operatorname{Sym}^{2}=V_3\oplus V_1$ and $\Lambda^{2}=V_2\oplus V_0$](the-parity-rule-the-two-squares-of-the-module.html), for the other decomposition of the sixteen.
 - [The Copy Acting on Sixteen Dimensions](the-copy-acting-on-sixteen-dimensions.html), for the action and the loss of the algebra structure.

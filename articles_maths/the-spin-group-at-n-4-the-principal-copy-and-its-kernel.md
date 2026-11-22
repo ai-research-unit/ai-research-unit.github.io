@@ -6,7 +6,7 @@
 
 **The order of the article.** The first section builds the copy and fixes the generators. The second proves that the conjugation action is unitary and by algebra automorphisms. The third computes the kernel, first on the module and then on the algebra. The fourth draws the consequence, that the algebra action is an action of $SO(3)$ and that its labels are therefore integers. The fifth compares the two kernels and states what the difference costs and what it buys.
 
-**It assumes** *The Matrix Algebra $M_4(\mathbb{C})$* for the conventions, and *The Spin Content of $M_4(\mathbb{C})$* for the four carrier lists. The row at order two is *The Spin Group: Unit Elements, Rotors and the Two-to-One Cover*; the rotor is *From the Spin Group to the Spin of a Single Rotor at $n=4$*.
+**It assumes** *The Matrix Algebra $M_4(\mathbb{C})$* for the conventions, and *The Spin Content of $M_4(\mathbb{C})$* for the four carrier lists. The row at order two is *The Spin Group via $4\times4$ Real Matrices*; the rotor is *From the Spin Group to the Spin of a Single Rotor at $n=4$*.
 
 **The result in one line.** The module is faithful and carries the half-integer label $\tfrac32$; the algebra action has kernel $\{\pm\mathrm I\}$ and carries the integer labels $0,1,2,3$; the difference between the two statements is one element, $-\mathrm I$.
 
@@ -146,4 +146,4 @@ The factorisation through $SO(3)$ is the reason every label of a summand is an i
 - [From the Spin Group to the Spin of a Single Rotor at $n=4$](from-the-spin-group-to-the-spin-of-a-single-rotor-at-n-4.html), for the sign after $2\pi$.
 - [The Four Weights of the Module and the Half Angle at $n=4$](the-four-weights-of-the-module-and-the-half-angle-at-n-4.html), for the weight basis and the lowering operator.
 - [The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$](the-clebsch-gordan-decomposition-of-m4c.html), for the decomposition used in the section on faithfulness.
-- [The Spin Group: Unit Elements, Rotors and the Two-to-One Cover](the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html), for the row at order two.
+- [The Spin Group via $4\times4$ Real Matrices](the-spin-group-via-4x4-real-matrices.html), for the row at order two.

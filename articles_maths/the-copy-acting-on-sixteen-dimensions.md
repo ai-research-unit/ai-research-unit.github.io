@@ -6,7 +6,7 @@
 
 **The order of the article.** The two actions come first; the isotypic theorem second. The four carriers of the conjugation follow, then the commutativity of the actions, and the reading closes.
 
-**It assumes** *Why the Conjugation Labels Are Integer*, *The Four Carrier Lists* and *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*. **The row of the elements is** where the same two actions act on the four-dimensional algebra, with the left action isotypic of multiplicity two and the conjugation splitting into two carriers.
+**It assumes** *Why the Conjugation Labels Are Integer*, *The Four Carrier Lists* and *The Clebsch–Gordan Decomposition of the Operators*. **The row of the elements is** where the same two actions act on the four-dimensional algebra, with the left action isotypic of multiplicity two and the conjugation splitting into two carriers.
 
 **The result in one line.** The left action has the single isotypic component of multiplicity four and the scalar Casimir $\tfrac{15}{4}$; the conjugation action has the four isotypic components of dimensions $7,5,3,1$ and the four Casimir values $12,6,2,0$.
 
@@ -97,6 +97,37 @@ $$
 
 **The reading.** The two actions are told apart by their commutants. The left action has the smallest possible commutant consistent with an isotypic module of multiplicity four, and the conjugation action has a larger one, which is why its decomposition is finer. The size of the commutant is the number of copies in one case and the number of carriers in the other.
 
+## The Matrix of the Coefficients
+
+**Theorem.** The coefficients of the change of basis between the sixteen products and the sixteen coupled states form a $16\times16$ orthogonal matrix, real in the Condon–Shortley convention.
+
+*Proof.* Both families are orthonormal bases of the same space, so the matrix of the passage is orthogonal, and the phase convention makes it real.
+
+**Corollary.** The rows are orthonormal, the columns are orthonormal, and the matrix multiplied by its transpose is the identity.
+
+*Proof.* The two statements are the same statement read twice on an orthogonal matrix.
+
+**The reading.** The four carriers are the four blocks of rows of one orthogonal matrix, and the Casimir is diagonal on the coupled side because it acts by a scalar on each block. The sixteen dimensions of this article are the sixteen rows, and the four carriers are the four sizes $7,5,3,1$.
+
+## The Ladder
+
+**Proposition.** The copy contains a raising operator $E$ and a lowering operator $F$ with $[H,E]=E$, $[H,F]=-F$ and $[E,F]=2H$, where $H$ is the Cartan element of the copy.
+
+*Proof.* The copy is $\mathfrak{sl}_2(\mathbb{C})$. Take $H$ to be the Cartan element, $E$ the combination of the two remaining generators that raises the weight by one, and $F$ the combination that lowers it; the three brackets are then the defining relations of the algebra, with the factor two that the normalisation of the matrix elements fixes.
+
+**Proposition (the matrix elements).** In the standard normalisation
+$$
+E\lvert j,m\rangle=\sqrt{(j-m)(j+m+1)}\lvert j,m+1\rangle,\qquad F\lvert j,m\rangle=\sqrt{(j+m)(j-m+1)}\lvert j,m-1\rangle .
+$$
+
+*Proof.* The two operators are adjoint to each other for the invariant form, and the product $EF$ must act on $\lvert j,m\rangle$ by the value that makes $[E,F]=2H$ hold; the two square roots are the unique positive solution of that equation at each step, with the top state annihilated by $E$ and the bottom by $F$.
+
+**Corollary.** A finite string must end, so the label is a half-integer and the string has $2j+1$ members, and the sixteen dimensions of this article are the sums of four such strings.
+
+*Proof.* A string that can be raised must reach a vector annihilated by $E$; a vector of weight $m$ is annihilated exactly when $m=j$, and the same at the bottom.
+
+**The reading.** The ladder is the reason the four carriers exist and the reason their sizes are odd numbers: each carrier is one string, and a string has $2J+1$ members. The blocks of rows of the matrix of this article are those strings, of sizes $7,5,3,1$.
+
 ## The Reading
 
 **What the left action knows.** One number, the Casimir, and one multiplicity, four. A statement about the left action that uses any other invariant is either trivial or wrong.
@@ -110,4 +141,4 @@ $$
 - [Why the Conjugation Labels Are Integer](why-the-conjugation-labels-are-integer.html), for the weights of the conjugation action.
 - [The Four Carrier Lists](the-four-carrier-lists-of-one-algebra.html), for the four actions and their decompositions.
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the two-sided structure.
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the four carriers.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four carriers.

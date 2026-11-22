@@ -10,7 +10,7 @@
 
 **The result in one line.** The algebra is a slot of half-integer label $\tfrac12$ and dimension two, the operator algebra is a summand of label $\tfrac32$ and dimension four, and the passage is the symmetric cube, which multiplies the label by three.
 
-**Boundaries.** The weights are *The Four Weights of the Module and the Half Angle*; the decomposition of the operator space is *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*; the identity of the two labels is also read in *From the Spin Decomposition to the Weight Strings*.
+**Boundaries.** The weights are *The Four Weights of the Module and the Half Angle*; the decomposition of the operator space is *The Clebsch–Gordan Decomposition of the Operators*; the identity of the two labels is also read in *From the Spin Decomposition to the Weight Strings*.
 
 ## The Two Labels
 
@@ -92,6 +92,20 @@
 
 **The reading.** The two spaces are twins of dimension four with different symmetry. The algebra keeps a singlet because it is a square, and the operators have none because they are a cube. This is the reason the operators carry the half-integer label and the algebra does not.
 
+## The Two Lattices
+
+**Definition.** The **lattice of labels** is the set of the half-integers $0,\tfrac12,1,\tfrac32,2,\dots$, and for each member $j$ there is one simple module $V_j$, of dimension $2j+1$.
+
+**Proposition.** The labels of the slot are $\tfrac12$ and the labels of the summand are $\tfrac32$; the first is half-integer and the second is an integer.
+
+*Proof.* The algebra is a slot of dimension two, so $2j+1=2$ and $j=\tfrac12$; the operators are a summand of dimension four, so $j=\tfrac32$.
+
+**Corollary (which group carries which).** The label $\tfrac12$ belongs to $\mathrm{SU}(2)$ and not to $\mathrm{SO}(3)$, and the label $\tfrac32$ belongs to $\mathrm{SU}(2)$ and not to $\mathrm{SO}(3)$ either; only the integer labels descend to the rotation group.
+
+*Proof.* The group $\mathrm{SU}(2)$ is the sphere $S^3$ and the rotation group is its quotient by the antipodal pair; a label $j$ changes sign along the antipodal pair exactly when $j$ is a half-integer, so a half-integer label is not a representation of the quotient. The label $\tfrac32$ is a half-integer as well, although its dimension is even.
+
+**The reading.** The doubling of the article multiplies the label by three, and it does not change the lattice: a half-integer remains half-integer. So the slot and the summand are both spin representations, and the passage between them stays inside the half-integer lattice. The two systems of the operator space are the two factors of the square, and the doubling is the passage from one system to the pair.
+
 ## The Reading
 
 **One object, two names.** The slot and the summand are the same module at two levels of one construction; the names record which level a statement belongs to. A statement about a spinor is a statement about the slot; a statement about an operator is a statement about the summand.
@@ -107,4 +121,4 @@
 - [The Four Weights of the Module and the Half Angle](the-four-weights-of-the-module-and-the-half-angle.html), for the two strings.
 - [The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$](the-spin-group-the-principal-copy-and-the-kernel.html), for the symmetric cube.
 - [The Minimal Left Ideals and the Module $V_{3/2}$](the-minimal-left-ideals-and-the-module.html), for the module of the operators as a left ideal.
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the square of the summand.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the square of the summand.

@@ -6,11 +6,11 @@
 
 **The order of the article.** The two closures come first; the four values second. The chain from a vector to the algebra follows, and the reading closes the article.
 
-**It assumes** *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*, *The Truncated Rule: the Product of Two Carriers Is Not a Carrier* and *The Copy Acting on Sixteen Dimensions*. **The row of the elements is** where the closure of the module under products is the whole algebra, and the closure of the scalars is the scalars.
+**It assumes** *The Clebsch–Gordan Decomposition of the Operators*, *The Truncated Rule: the Product of Two Carriers Is Not a Carrier* and *The Copy Acting on Sixteen Dimensions*. **The row of the elements is** where the closure of the module under products is the whole algebra, and the closure of the scalars is the scalars.
 
 **The result in one line.** The closure of $V_0$ is $V_0$, the closure of $V_1$ and of $V_2$ is $F_3$, the whole algebra, and the closure of $V_3$ is also the whole algebra, so every non-scalar carrier generates everything.
 
-**Boundaries.** The product rule is *The Truncated Rule*; the filtration is defined there as well; the carriers themselves are *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*.
+**Boundaries.** The product rule is *The Truncated Rule*; the filtration is defined there as well; the carriers themselves are *The Clebsch–Gordan Decomposition of the Operators*.
 
 ## The Two Closures
 
@@ -86,6 +86,18 @@ has at most four distinct terms, and each inclusion can be strict.
 
 **The reading.** One operator of nonzero weight is enough to generate the algebra, provided the copy is allowed to act. Without the copy, a single operator generates only its own powers, and the difference is exactly the difference between the carrier and the algebra closure.
 
+## The Rows of the Matrix
+
+**Proposition.** For a fixed label $J$ and a fixed weight $M$ the coefficients $\langle\tfrac32,m_1;\tfrac32,m_2\vert J,M\rangle$ are the coordinates of one state in the products, and the row they form is of unit length.
+
+*Proof.* The state is one member of an orthonormal basis, so its coordinates in another orthonormal basis form a row of an orthogonal matrix.
+
+**Corollary.** The sixteen states are the sixteen rows of the matrix, and the four carriers are the four blocks of rows, of sizes $7$, $5$, $3$ and $1$.
+
+*Proof.* One row for each pair of a label and a weight, and one block for each carrier.
+
+**The reading.** A carrier is a block of rows, and the block of the top carrier is the largest. The closures of this article are computed inside a block, and the products do not respect the blocks: a product of two rows of one block leaves the block, which is why the product of two carriers is not a carrier, as *The Truncated Rule* shows.
+
 ## The Reading
 
 **Carriers are not subalgebras.** The four carriers are the invariant subspaces of an action; they are not closed under the product, and the closures measure the gap. The gap is the content of the truncated rule.
@@ -96,7 +108,7 @@ has at most four distinct terms, and each inclusion can be strict.
 
 ## Further Reading
 
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the four carriers.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four carriers.
 - [The Truncated Rule: the Product of Two Carriers Is Not a Carrier](the-truncated-rule-the-product-of-two-carriers-is-not-a-carrier.html), for the products and the filtration.
 - [The Copy Acting on Sixteen Dimensions](the-copy-acting-on-sixteen-dimensions.html), for the action that produces the carriers.
 - [$A$ Real Vector Space of Dimension One](the-spin-zero-carrier-of-the-biquaternion-operators.html), for the scalar carrier.

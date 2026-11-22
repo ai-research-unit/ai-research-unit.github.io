@@ -10,7 +10,7 @@
 
 **The result in one line.** There is an anti-linear $T$ with $T\rho(\xi)=\rho(\bar\xi)T$, unique up to a scalar, and $T^{2}=-c\,\mathrm I$ with $c>0$: the module admits no real form of dimension four, and the real forms it does admit are quaternionic, of complex dimension four and real dimension eight.
 
-**Boundaries.** The integer carriers and their real dimensions are *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*; the conjugation of the labels is *Why the Conjugation Labels Are Integer*; the anti-linear maps in general are *Conjugate-Linear Maps and the Conjugate Dual*.
+**Boundaries.** The integer carriers and their real dimensions are *The Clebsch–Gordan Decomposition of the Operators*; the conjugation of the labels is *Why the Conjugation Labels Are Integer*; the anti-linear maps in general are *Conjugate-Linear Maps and the Conjugate Dual*.
 
 ## The Intertwiner
 

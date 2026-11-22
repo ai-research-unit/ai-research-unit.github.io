@@ -80,7 +80,7 @@ $$
 \mathrm{SU}(2)=\{\tilde u\in\mathbb{H}:\langle\tilde u\rangle_{\natural}=1\}=\mathrm{Spin}(3)=\mathrm{Sp}(1)=SU(2),
 $$
 
-of real dimension three. So the three Goldstones are coordinates on $\mathrm{SU}(2)$, the count is $3=\dim S^3=\dim\mathrm{SU}(2)=\dim SO(3)$, and unitary gauge is the choice of one point of the manifold. That much is a labelling, and it costs nothing: it does not say which carrier the sphere came from, and every statement so far survives it. The corpus's account of the group as an object rather than as a matrix display is [The Spin Group via 4×4 Real Matrices](../articles_maths/the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html); the operator vocabulary used below is fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
+of real dimension three. So the three Goldstones are coordinates on $\mathrm{SU}(2)$, the count is $3=\dim S^3=\dim\mathrm{SU}(2)=\dim SO(3)$, and unitary gauge is the choice of one point of the manifold. That much is a labelling, and it costs nothing: it does not say which carrier the sphere came from, and every statement so far survives it. The corpus's account of the group as an object rather than as a matrix display is [The Spin Group via 4×4 Real Matrices](../articles_maths/the-spin-group-via-4x4-real-matrices.html); the operator vocabulary used below is fixed in [Representation Is a Function of Spin](representation-is-a-function-of-spin.html).
 
 Where the identification stops. The labelling earns its keep only if a rotor acts on that sphere by left multiplication, that is, only if some carrier of the algebra is left-stable and carries spin zero. Two computations settle whether one is, and both are one line.
 

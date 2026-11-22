@@ -6,7 +6,7 @@
 
 **The order of the article.** The two squares and their dimensions come first; the parity rule and its checks second. The consequences for the carriers follow, and the comparison with the row of the elements closes the article.
 
-**It assumes** *The Symmetric and Antisymmetric Parts of the Operator Space*, *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$* and *The Transposition of the Two Sides*. **The row of the elements is** where the same rule gives $\operatorname{Sym}^{2}=V_1$ and $\Lambda^{2}=V_0$; here the doubled label produces two carriers in each square.
+**It assumes** *The Symmetric and Antisymmetric Parts of the Operator Space*, *The Clebsch–Gordan Decomposition of the Operators* and *The Transposition of the Two Sides*. **The row of the elements is** where the same rule gives $\operatorname{Sym}^{2}=V_1$ and $\Lambda^{2}=V_0$; here the doubled label produces two carriers in each square.
 
 **The result in one line.** $\operatorname{Sym}^{2}V_{3/2}=V_3\oplus V_1$ and $\Lambda^{2}V_{3/2}=V_2\oplus V_0$, with $10=7+3$ and $6=5+1$, so the parity of the label is the parity of the square.
 
@@ -100,9 +100,21 @@ $$
 
 **The reading.** One rule, two rows: the parity is the same, the number of carriers differs. This is why the statement of the rule can be made once and used twice, and why the row of the operators is the first place where a square carries two carriers.
 
+## The Sign of the Exchange
+
+**Proposition.** The exchange of the two factors of the tensor square multiplies a coefficient of the change of basis by $(-1)^{j_1+j_2-J}$, so at the square the exponent is $3-J$.
+
+*Proof.* The exchange is an odd permutation of the three labels of the $3$-$j$ symbol, which carries the sign $(-1)^{j_1+j_2+J}$.
+
+**Corollary.** The carriers of label $3$ and $1$ have coefficients symmetric in the two factors, and the carriers of label $2$ and $0$ have coefficients alternating.
+
+*Proof.* The sign is $+1$ at $J=3$ and $J=1$, and $-1$ at $J=2$ and $J=0$.
+
+**The reading.** The parity rule of this article is the sign of the exchange read on the change of basis: the two symmetric summands are those whose coefficients do not change when the two factors are exchanged, and the two alternating ones are those whose coefficients change sign.
+
 ## Further Reading
 
 - [The Symmetric and Antisymmetric Parts of the Operator Space](the-symmetric-and-antisymmetric-parts-of-the-biquaternion-operator-space.html), for the two halves as eigenspaces.
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the four carriers.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four carriers.
 - [The Transposition of the Two Sides](the-transposition-of-the-two-sides.html), for the involution whose eigenspaces are the squares.
 - [Neither Half Is Invariant: the Cartan Element Carries $\operatorname{Sym}$ into $\Lambda$](neither-half-is-invariant-the-cartan-element.html), for the failure of the squares under another action.

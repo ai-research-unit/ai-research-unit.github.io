@@ -8,7 +8,7 @@
 
 **Why the article is needed.** At $n=2$ the number of real dimensions is small enough that the orbit picture and the carrier decomposition can be confused with each other. At $n=4$ the space has thirty-two real dimensions and the orbits have dimension at most three; the two pictures separate completely. An article that transfers the biquaternion orbit description to $n=4$ will be wrong by an order of magnitude in dimension.
 
-**Boundaries.** The carrier decomposition is *The Spin Decomposition of $M_n(\mathbb{C})$*; the counting of carriers is *The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$*; the real forms of the algebra are *The Real Structures of the Operators of $M_n(\mathbb{C})$*; the biquaternion case is *The Spin Group: Unit Elements, Rotors and the Two-to-One Cover*.
+**Boundaries.** The carrier decomposition is *The Spin Decomposition of $M_n(\mathbb{C})$*; the counting of carriers is *The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$*; the real forms of the algebra are *The Real Structures of the Operators of $M_n(\mathbb{C})$*; the biquaternion case is *The Spin Group via $4\times4$ Real Matrices*.
 
 **Conventions.** The action is $X\mapsto gXg^{-1}$ for $g\in SU(2)$ in the principal copy. The orbit dimension is computed as the rank of the map $\xi\mapsto[\xi,X]$ from $\mathfrak{su}_2$ to $M_n$. The real dimension of $M_n$ is $2n^2$.
 
@@ -146,7 +146,7 @@ The principal $SU(2)$ acts on the $2n^2$ real dimensions of $M_n$ with orbits of
 ## Further Reading
 - [The Spin Decomposition of $M_n(\mathbb{C})$: $n$ Carriers, One for Each Spin from $0$ to $n-1$](the-spin-decomposition-of-mnc.html), for the complex decomposition.
 - [The Carriers, the Closures and the Spin of $M_n(\mathbb{C})$](the-carriers-the-closures-and-the-spin-of-mnc.html), for the counts.
-- [The Spin Group: Unit Elements, Rotors and the Two-to-One Cover](the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html), for the case $n=2$ read over $\mathbb{R}$.
+- [The Spin Group via $4\times4$ Real Matrices](the-spin-group-via-4x4-real-matrices.html), for the case $n=2$ read over $\mathbb{R}$.
 - [The Real Structures of the Operators of $M_n(\mathbb{C})$, including Lie Algebras and Lie Groups](the-real-structures-of-the-operators-of-mnc.html), for the real forms.
 - [The Odd Rows: $M_3(\mathbb{C})$ and $M_5(\mathbb{C})$](the-odd-rows-m3-and-m5.html), for the rows where the action factors through $SO(3)$.
 - [The Spin Content of $M_4(\mathbb{C})$](the-spin-content-of-m4c.html), for the case $n=4$ in four readings.

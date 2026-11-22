@@ -6,11 +6,11 @@
 
 **The order of the article.** The requirement on the weights comes first; the requirement on the Casimir second. The requirement on the type follows, then the single reason, and the reading closes the article.
 
-**It assumes** *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*, *Why the Conjugation Labels Are Integer* and *The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$*. **The row of the elements is** where the same question asks for a carrier of label $\tfrac32$ in a four-dimensional algebra, and the same three requirements fail.
+**It assumes** *The Clebsch–Gordan Decomposition of the Operators*, *Why the Conjugation Labels Are Integer* and *The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$*. **The row of the elements is** where the same question asks for a carrier of label $\tfrac32$ in a four-dimensional algebra, and the same three requirements fail.
 
 **The result in one line.** A carrier of label $\tfrac52$ would need a weight $\tfrac52$ in the operator space, the Casimir eigenvalue $\tfrac{35}{4}$, and a quaternionic type; the largest weight is $3$, the eigenvalues are $12,6,2,0$, and the space is a square, so all three fail.
 
-**Boundaries.** The existing carriers are *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*; the weights are *The Spin Decomposition*; the types are *The Quaternionic Structure of the Module*.
+**Boundaries.** The existing carriers are *The Clebsch–Gordan Decomposition of the Operators*; the weights are *The Spin Decomposition*; the types are *The Quaternionic Structure of the Module*.
 
 ## The Weight Requirement
 
@@ -78,6 +78,18 @@
 
 **The dimensional echo.** The four carriers exhaust sixteen dimensions, and any fifth would have to be paid for out of the sixteen; the smallest half-integer carrier, of label $\tfrac12$, would need two complex dimensions and a quaternionic doubling to four real ones, leaving twelve to the rest. The count alone does not forbid it, which is why the weight argument is the decisive one.
 
+## The Selection Rule
+
+**Proposition.** A coefficient $\langle\tfrac32,m_1;\tfrac32,m_2\vert J,M\rangle$ vanishes unless $m_1+m_2=M$.
+
+*Proof.* A state of weight $M$ is a sum of products of weight $M$ and of no others.
+
+**Corollary.** No half-integer label occurs, because the products of the module have integer weights and a label is the weight of a product.
+
+*Proof.* The weights of the module are $\pm\tfrac32$ and $\pm\tfrac12$, so every sum $m_1+m_2$ is an integer; a label of the square is such a sum, so it is an integer.
+
+**The reading.** The requirement fails at the count of the weights, before any Casimir is computed: the selection rule forbids the coefficient, and the multiset of the square forbids the half-integer weight that a half-integer label would need.
+
 ## The Reading
 
 **What would be needed.** A module whose tensor square has a half-integer label, that is, a module with a quarter-integer weight, or an odd number of factors with a residual half shift. Neither exists among the modules of this copy.
@@ -88,7 +100,7 @@
 
 ## Further Reading
 
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the four labels present.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four labels present.
 - [Why the Conjugation Labels Are Integer](why-the-conjugation-labels-are-integer.html), for the integrality of the differences.
 - [The Spin Decomposition: Four Carriers and the Weight Multiset $0^{4},\pm1^{3},\pm2^{2},\pm3$](the-spin-decomposition-four-carriers-and-the-weight-multiset.html), for the largest weight.
 - [The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms](the-quaternionic-structure-of-the-module-and-the-real-forms.html), for the type of a half-integer carrier.

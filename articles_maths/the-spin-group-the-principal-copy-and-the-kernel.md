@@ -88,5 +88,5 @@ and the isomorphism is canonical up to the choice of $S$.
 
 - [The Minimal Left Ideals and the Module $V_{3/2}$](the-minimal-left-ideals-and-the-module.html), for the spinor spaces.
 - [The Four Weights of the Module and the Half Angle](the-four-weights-of-the-module-and-the-half-angle.html), for the weights.
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the decomposition of the sixteen.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the decomposition of the sixteen.
 - [The One-Sided Operators](the-one-sided-operators-of-the-biquaternion-algebra.html), for the left multiplications generating the copy.

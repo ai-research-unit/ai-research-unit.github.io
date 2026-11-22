@@ -14,7 +14,7 @@
 
 **The overlap, declared.** The table and the list of properties below overlap *Quaternion Algebra* and the doubling article, and the overlap is deliberate. A construction must produce the object the other two articles use, and a reader who arrives from either of them must meet the same sixteen products. What is new here is the order of the argument, the associativity proof from the display, and the accounting of what is chosen and what is forced.
 
-**Boundaries.** The algebra as an algebraic structure, with its vector subspaces and its Lie algebra, is *Quaternion Algebra*, above this article in this category. The doubling step, its nine derivations and the argument that fixes the twist are *The Cayley–Dickson Construction of the Quaternion Algebra*, beside this one. The classes of element are *The Specificities of the Quaternion Algebra*; the norm, its multiplicativity and the invertibility criterion it supplies are *Norm and Invertibility in the Quaternion Algebra*; the matrix models are *Quaternion Linear Representations* and *The Spin Group: Unit Elements, Rotors and the Two-to-One Cover*. The same construction with the signs of two squares changed is *Split-Quaternion Algebra*, and the same construction on the biquaternion algebra is *The Axis-Free Construction of the Biquaternion Algebra*, in the Biquaternions category.
+**Boundaries.** The algebra as an algebraic structure, with its vector subspaces and its Lie algebra, is *Quaternion Algebra*, above this article in this category. The doubling step, its nine derivations and the argument that fixes the twist are *The Cayley–Dickson Construction of the Quaternion Algebra*, beside this one. The classes of element are *The Specificities of the Quaternion Algebra*; the norm, its multiplicativity and the invertibility criterion it supplies are *Norm and Invertibility in the Quaternion Algebra*; the matrix models are *Quaternion Linear Representations* and *The Spin Group via $4\times4$ Real Matrices*. The same construction with the signs of two squares changed is *Split-Quaternion Algebra*, and the same construction on the biquaternion algebra is *The Axis-Free Construction of the Biquaternion Algebra*, in the Biquaternions category.
 
 ## The Data
 
@@ -207,7 +207,7 @@ L_y=\begin{pmatrix}0&0&-1&0\\0&0&0&1\\1&0&0&0\\0&-1&0&0\end{pmatrix},\qquad
 L_z=\begin{pmatrix}0&0&0&-1\\0&0&-1&0\\0&1&0&0\\1&0&0&0\end{pmatrix},
 $$
 
-with $L_t=\mathrm I_4$. The display is the one of *The Spin Group: Unit Elements, Rotors and the Two-to-One Cover*, and the proof below uses three of the properties that article records.
+with $L_t=\mathrm I_4$. The display is the one of *The Spin Group via $4\times4$ Real Matrices*, and the proof below uses three of the properties that article records.
 
 **Why this display and no other.** Each generator has exactly one nonzero entry in each row and each column, that entry $\pm1$, a zero diagonal and determinant $+1$. No generator is diagonal and no generator carries a direction: the three are the three signed permutations of one cycle, and a cyclic relabelling of the units permutes them. A display with a direction inside it would put one unit on the diagonal and two off it, and the proof would then be a proof about that unit. This one is not.
 
@@ -497,7 +497,7 @@ The first properties follow in a few lines each: the centre is the scalar line, 
 - [The Cayley–Dickson Construction of the Quaternion Algebra](the-cayley-dickson-construction-of-the-quaternion-algebra.html), for the doubling route, the nine derivations of the table and the argument that fixes the twist.
 - [The Specificities of the Quaternion Algebra](the-specificities-of-the-quaternion-algebra.html), for the classes of element and the Frobenius and Hurwitz theorems.
 - [Norm and Invertibility in the Quaternion Algebra](norm-and-invertibility-in-the-quaternion-algebra.html), for the norm as a quadratic form, its polarisation and the group of invertibles.
-- [The Spin Group: Unit Elements, Rotors and the Two-to-One Cover](the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html), for the left regular display, the four properties of its generators and the group they generate.
+- [The Spin Group via $4\times4$ Real Matrices](the-spin-group-via-4x4-real-matrices.html), for the left regular display, the four properties of its generators and the group they generate.
 - [Matrix Representations Conventions](matrix-representations-conventions.html), for the axis-free array and the reason the coefficient basis is the one that names no direction.
 - [Split-Quaternion Algebra](split-quaternion-algebra.html), for the same construction with one square changed, and the three idempotents it then carries.
 - [The Axis-Free Construction of the Biquaternion Algebra](the-axis-free-construction-of-the-biquaternion-algebra.html), in the Biquaternions category, for the same route taken with complex coefficients.

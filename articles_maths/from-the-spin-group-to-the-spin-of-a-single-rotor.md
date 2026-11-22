@@ -6,7 +6,7 @@ The spin group is the group of unit quaternions, that is the sphere $S^3$. This 
 
 **The thread in one paragraph.** To act on an algebra while preserving its multiplication, an element must act on both sides. One-sided multiplication is not an algebra map. The two-sided product is therefore forced, and it is the only inner-type action available. The spin group is the compact group of elements whose two-sided product is conjugation by the inverse with no scalar in front. Left multiplication by such an element is a real orthogonal operator on $\mathbb{H}$, the three generators are skew-adjoint operators, and the sum of their squares is a multiple of the identity. That multiple is $-\tfrac34$, and the Hermitian normalization is $+\tfrac34$. The number $\tfrac34$ is $s(s+1)$ at $s=\tfrac12$. Read with the series, the two results are one statement: $\tfrac12$ is the label of the slot, and $\tfrac12\otimes\tfrac12=0\oplus1$ is the square of that slot, so the Casimir identifies the factor and the split of the square gives the two integer labels.
 
-**What the article does not claim.** Three sentences are excluded by construction, and each is repaired in *Corrections*. The spin group is $S^3=\mathrm{Spin}(3)$. It is not any group of operators on a space; it is $S^3$, and every such group is an image of it under one action, related to it by a map that need not be injective. The three $A$-generators do not give all spins; they give one spin, on one carrier. That one spin is the label of the slot that the series squares, and the labels $0$ and $1$ are labels of summands of the square, not labels of a one-sided carrier.
+**What the article does not claim.** Three sentences are excluded by construction, and each is repaired in *Corrections*. The spin group is $S^3=\mathrm{Spin}(3)$; it is isomorphic to $SU(2)$, and $SU(2)$ is the image of one of its displays. The spin group is not any group of operators on a space; it is $S^3$, and every such group is an image of it under one action. The three $A$-generators do not give all spins; they give one spin, on one carrier. That one spin is the label of the slot that the series squares, and the labels $0$ and $1$ are labels of summands of the square, not labels of a one-sided carrier.
 
 **Roadmap.** The forcing of the two-sided form comes first, with the four conjugations of the biquaternion algebra and the two two-sided operators that matter. Then the spin group, its identification with the spin group, and its double cover. Then the generators, the Casimir, and the extraction of $\tfrac12$. Then two rotors, the split into $0\oplus1$, and the reason the split is forced. Then what the generators do not give, the corrections, and the numerical check.
 
@@ -82,7 +82,7 @@ $$
 
 the unit quaternions under quaternion multiplication. Its real dimension is three. The corpus also writes it $Sp(1)$ and calls its elements versors.
 
-**The group and its actions.** $\mathrm{Spin}(3)$ is the sphere. It is not a set of operators. An **action** is a homomorphism from it into $GL(V)$, for a real or complex space $V$. The conjugation has image the rotations of the vector part, of kernel $\{\pm e_t\}$, and the left regular action $X\mapsto\tilde qX$ on $\mathbb{H}$ has image a three-dimensional subgroup of $SO(\mathbb{H})$. Both are images; neither is the group.
+**The group and its actions.** $\mathrm{Spin}(3)$ is the sphere. It is not a set of operators. An **action** is a homomorphism from it into $GL(V)$, for a real or complex space $V$. The defining complex action on $\mathbb{C}^2$ has image $SU(2)$, and the left regular action $X\mapsto\tilde qX$ on $\mathbb{H}$ has image a three-dimensional subgroup of $SO(\mathbb{H})$. Both are images; neither is the group.
 
 **The spin group.** In the Clifford algebra $\mathrm{Cl}(V)$ of a real space with a positive definite form, the **spin group** is
 
@@ -301,7 +301,7 @@ The three values are $s(s+1)$ at $s=0,\tfrac12,1$. The same quadratic element gi
 
 **The sentences that must not be written as they stand.** Each is a real error in the form given, and each is repaired by one of the sections above.
 
-1. **"The spin group is the group of rotations", written as equality of objects.** The sentence takes an image for the group. The conjugation carries the spin group onto the rotations of the vector part, two-to-one, with kernel $\{\pm e_t\}$; the rotation by $2\pi$ is the image of the rotor of angle $\pi$, which is $-e_t$ and not the identity.
+1. **"The spin group is $SU(2)$", written as an equality of objects.** As an isomorphism the sentence is true, $\mathrm{Spin}(3)\cong SU(2)$; as an equality it is false. $SU(2)$ is the image of one display, the $2\times2$ complex one, and the isomorphism is that display.
 2. **"The spin group is a group of operators on a space."** It is a subset of $\mathbb{H}$, which is an algebra. Every group of operators in this article is an image of it under one action.
 3. **"$Spin(n)$ is $S^3$."** $Spin(3)$ is $S^3$. For $n\ge4$ the spin group is a cover of $SO(n)$ of dimension $\binom n2$, and it is not a sphere.
 4. **"The $A$-generators give all spins."** They give $\tfrac12$, on $\mathbb{H}$. Another spin needs another carrier, and the same Casimir read there.

@@ -6,7 +6,7 @@
 
 **The order of the article.** The four actions come first; the lists second, one section each. The reading then puts the lists side by side.
 
-**It assumes** *The Copy Acting on Sixteen Dimensions*, *Why the Conjugation Labels Are Integer* and *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*. **The row of the elements is** where the same four actions give the four lists of the four-dimensional algebra.
+**It assumes** *The Copy Acting on Sixteen Dimensions*, *Why the Conjugation Labels Are Integer* and *The Clebsch–Gordan Decomposition of the Operators*. **The row of the elements is** where the same four actions give the four lists of the four-dimensional algebra.
 
 **The result in one line.** The principal copy gives four copies of the module, the rotor copy eight copies of the spinor, the full unit group gives the identity line and the traceless hyperplane, the pair of copies gives the four blocks of a chosen splitting of the module, and the two conjugations give the carriers $7+5+3+1$ and the pieces $2+9+5$.
 

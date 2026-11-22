@@ -10,7 +10,7 @@
 
 **The result in one line.** Under conjugation the weights are the differences of the weights of the module, hence integers, so the conjugation labels are $3,2,1,0$, the algebra is graded by integers, and the conjugation action carries no sign after a full turn.
 
-**Boundaries.** The conjugation action as a whole is *The Conjugation Action, the Orbits and the Flag Variety*; the decomposition into carriers is *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*; the sign is *From the Spin Group to the Spin of a Single Rotor*.
+**Boundaries.** The conjugation action as a whole is *The Conjugation Action, the Orbits and the Flag Variety*; the decomposition into carriers is *The Clebsch–Gordan Decomposition of the Operators*; the sign is *From the Spin Group to the Spin of a Single Rotor*.
 
 ## The Two Actions
 
@@ -102,4 +102,4 @@ $$
 - [The Conjugation Action, the Orbits and the Flag Variety](the-adjoint-action-the-orbits-and-the-flag-variety.html), for the conjugation action.
 - [Operators Acting on Two Sides](operators-acting-on-two-sides.html), for the two actions compared.
 - [The Quaternionic Structure of the Module: Why $V_{3/2}$ Admits Real Forms](the-quaternionic-structure-of-the-module-and-the-real-forms.html), for the reality of the carriers.
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the integer labels.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the integer labels.

@@ -6,11 +6,11 @@
 
 **The order of the article.** The differences and the multiset come first; the check by the carriers second. The meeting of the four carriers at weight zero follows, then the symmetry, and the two counts close the article.
 
-**It assumes** *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*, *The Four Weights of the Module and the Half Angle* and *The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$*. **The row of the elements is** where the corresponding multiset has four entries, $\pm1$ and $0$ twice; here the doubled string gives sixteen.
+**It assumes** *The Clebsch–Gordan Decomposition of the Operators*, *The Four Weights of the Module and the Half Angle* and *The Spin Group: the Principal Copy, $\operatorname{Sym}^{3}$ and the Kernel $\{\pm\mathrm I\}$*. **The row of the elements is** where the corresponding multiset has four entries, $\pm1$ and $0$ twice; here the doubled string gives sixteen.
 
 **The result in one line.** The multiset of the sixteen weights is $0^{4},(\pm1)^{3},(\pm2)^{2},(\pm3)^{1}$, its multiplicities sum to sixteen, and each weight occurs once in every carrier whose label dominates it.
 
-**Boundaries.** The decomposition into carriers is *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*; the action of the copy is *The Copy Acting on Sixteen Dimensions*; the squares of the module are *The Parity Rule*.
+**Boundaries.** The decomposition into carriers is *The Clebsch–Gordan Decomposition of the Operators*; the action of the copy is *The Copy Acting on Sixteen Dimensions*; the squares of the module are *The Parity Rule*.
 
 ## The Differences
 
@@ -117,9 +117,21 @@ and the union reproduces the multiplicities.
 
 **The reading.** The multiset is not a coincidence of dimensions but a staircase, and the staircase is the statement that the four carriers are nested by their labels. Anyone who knows the multiplicities can redraw the carriers, and anyone who knows the carriers can read off the multiplicities.
 
+## The Two Bases and the Count
+
+**The products.** The sixteen products $\lvert\tfrac32,m_1\rangle\otimes\lvert\tfrac32,m_2\rangle$ are a basis of the tensor square, and the weight of a product is the sum $m_1+m_2$.
+
+**The coupled states.** The sixteen states $\lvert J,M\rangle$ are the second basis, one string of length $2J+1$ in each carrier.
+
+**Proposition.** At each weight $M$ the number of products equals the number of coupled states, $4-\lvert M\rvert$.
+
+*Proof.* The products of weight $M$ are the pairs with $m_1+m_2=M$, of which there are $4-\lvert M\rvert$; the coupled states of weight $M$ are those of the labels $J\ge\lvert M\rvert$, also $4-\lvert M\rvert$ in number.
+
+**The reading.** The multiset $0^{4},\pm1^{3},\pm2^{2},\pm3^{1}$ is that count read at every weight. The staircase of this article is the equality of two bases read weight by weight, and the four carriers of the decomposition are the four strings of the second basis.
+
 ## Further Reading
 
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the four carriers.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four carriers.
 - [The Four Weights of the Module and the Half Angle](the-four-weights-of-the-module-and-the-half-angle.html), for the four weights of the module.
 - [The Copy Acting on Sixteen Dimensions](the-copy-acting-on-sixteen-dimensions.html), for the action that produces the multiset.
 - [The Intersection Table: Where Each Carrier Meets $\operatorname{Sym}$ and $\Lambda$](the-intersection-table-of-the-carriers-with-the-two-halves.html), for the same carriers against the two squares.

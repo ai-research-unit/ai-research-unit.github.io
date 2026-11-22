@@ -6,7 +6,7 @@
 
 **The order of the article.** The carrier comes first; the two real halves second. The invariance follows, then the trace, then the intersection with the one-sided families, and the reading closes.
 
-**It assumes** *The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$*, *The One-Sided Operators* and *The Transposition of the Two Sides*. **The row of the spin-zero carrier is** where the scalars of the algebra form the analogous line, of real dimension one and complex dimension one.
+**It assumes** *The Clebsch–Gordan Decomposition of the Operators*, *The One-Sided Operators* and *The Transposition of the Two Sides*. **The row of the spin-zero carrier is** where the scalars of the algebra form the analogous line, of real dimension one and complex dimension one.
 
 **The result in one line.** The carrier $V_0$ is the complex line $\mathbb{C}\,\mathrm I$, of complex dimension one and real dimension two, fixed by every action of the copy and equal to the intersection $L_{\mathbb{B}}\cap R_{\mathbb{B}}$.
 
@@ -99,7 +99,7 @@ $$
 
 ## Further Reading
 
-- [The Clebsch–Gordan Decomposition: $\tfrac32\otimes\tfrac32=\bigoplus_{k=0}^{3}V_k$](the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html), for the four carriers.
+- [The Clebsch–Gordan Decomposition of the Operators](the-clebsch-gordan-decomposition-of-the-operators.html), for the four carriers.
 - [The One-Sided Operators](the-one-sided-operators-of-the-biquaternion-algebra.html), for the two families whose intersection is the carrier.
 - [The Spin-Zero Carrier and the Determinant](the-spin-zero-carrier-and-the-determinant.html), for the multiplicative invariant on the carrier.
 - [The Copy Acting on Sixteen Dimensions](the-copy-acting-on-sixteen-dimensions.html), for the two actions that fix or move the carrier.
