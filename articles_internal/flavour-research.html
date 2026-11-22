@@ -729,6 +729,330 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<h2 id="14-two-coordinates-of-one-vector-foots-angle-math304-and-the-phase-math305">14. Two Coordinates of One Vector: Foot's Angle $45^{\circ}$ and the Phase $2/9$</h2>
+<p><em>Scope.</em> This section was added after the note was closed. It resolves one question the note left in the air, whether Foot's $45^{\circ}$ and the phase $2/9$ are two facts or one, and it changes nothing above it. They are one vector read in polar and azimuthal form. The section derives both coordinates, gives their measured values, and states what neither can explain. Where it disagrees with §3 or §6, the disagreement is recorded here and the earlier text is left standing, so that the two readings can be compared.</p>
+<h3 id="141-the-identity-and-a-bound-the-note-did-not-have">14.1 The identity, and a bound the note did not have</h3>
+<p><strong>[PUBLISHED]</strong> R. Foot (hep-ph/9402242, 1994) reads the relation as an angle. Write the amplitude vector and the democratic vector,</p>
+<p>$$
+\vec a=\left(\sqrt{m_1},\sqrt{m_2},\sqrt{m_3}\right),\qquad \vec u=(1,1,1),
+$$</p>
+<p>and let $\varphi$ be the angle between them. Then $\vec u\cdot\vec a=\sum\sqrt m$ and $|\vec u|^{2}=3$, so</p>
+<p>$$
+Q=\frac{|\vec a|^{2}}{(\vec u\cdot\vec a)^{2}}=\frac{1}{3\cos^{2}\varphi},
+\qquad
+\cos\varphi=\frac{\sum\sqrt m}{\sqrt{3}\sqrt{\sum m}} .
+$$</p>
+<p>This is exact for every triple of positive masses. It carries no physics, and Foot says so: the angle is a rewriting of $2/3$ and not a derivation of it.</p>
+<p>Two bounds follow, and the lower one is new here. Since $\cos^{2}\varphi\le 1$, $Q\ge 1/3$, with equality exactly when the three amplitudes are equal. Since $Q\le1$ by Cauchy–Schwarz (§2.1), $\cos\varphi\ge 1/\sqrt3$, which is Foot's cone, $\varphi\le 54.7356^{\circ}$. §2.1 states the upper bound only; the lower bound $Q\ge1/3$ is the same identity read at the other end, and it rules out any triple flatter than the degenerate one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>triple</th>
+<th>$Q$</th>
+<th>$\varphi$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>equal masses</td>
+<td>$0.333333$</td>
+<td>$0^{\circ}$</td>
+</tr>
+<tr>
+<td>$e,\mu,\tau$</td>
+<td>$0.6666605$</td>
+<td>$44.9997^{\circ}$</td>
+</tr>
+<tr>
+<td>$d,s,b$</td>
+<td>$0.7314277$</td>
+<td>$47.5398^{\circ}$</td>
+</tr>
+<tr>
+<td>$u,c,t$</td>
+<td>$0.8489808$</td>
+<td>$51.2003^{\circ}$</td>
+</tr>
+<tr>
+<td>one mass only</td>
+<td>$1.000000$</td>
+<td>$54.7356^{\circ}$</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="142-the-map-is-one-to-one-so-the-angle-carries-the-coefficient">14.2 The map is one to one, so the angle carries the coefficient</h3>
+<p><strong>[ALGEBRA]</strong> The map from $Q$ to $\varphi$ is monotone and invertible on $[1/3,1]$, as Foot notes. Nothing is added by writing the angle, and nothing is lost.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$Q$</th>
+<th>$1/3$</th>
+<th>$1/2$</th>
+<th>$2/3$</th>
+<th>$3/4$</th>
+<th>$1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varphi$</td>
+<td>$0^{\circ}$</td>
+<td>$35.264^{\circ}$</td>
+<td>$45^{\circ}$</td>
+<td>$48.190^{\circ}$</td>
+<td>$54.736^{\circ}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So $45^{\circ}$ is not a fact about degrees.</strong> It is $\tan\varphi=1$, and the invariant statement is the one 14.3 proves. A theory that produces $45^{\circ}$ and a theory that produces $2/3$ have produced the same number.</p>
+<h3 id="143-the-angle-is-the-variance">14.3 The angle is the variance</h3>
+<p><strong>[ALGEBRA]</strong> With $\bar a$ the mean amplitude and $\sigma_a$ its standard deviation over the three rungs,</p>
+<p>$$
+\tan\varphi=\frac{\sigma_a}{\bar a},
+\qquad
+Q=\frac{1+\tan^{2}\varphi}{3}.
+$$</p>
+<p>Measured, $\sigma_a/\bar a=0.9999908$ and $\varphi=44.9997^{\circ}$. This is the warrant missing from §2.3, which asserted the $45^{\circ}$ reading without the formula behind it.</p>
+<p>The form is worth having because it is scale-free: $\sigma_a/\bar a$ is invariant under $a_i\to\lambda a_i$, so Koide is the statement that the three amplitudes are as spread as their own mean. That is a shape statement, and it is the only one the closure makes.</p>
+<h3 id="144-the-phase-is-the-azimuth">14.4 The phase is the azimuth</h3>
+<p><strong>[ALGEBRA]</strong> Every triple of amplitudes has exactly one representation</p>
+<p>$$
+\sqrt{m_i}=\mu+R\cos\left(\delta+\frac{2\pi i}{3}\right),
+\qquad i=1,2,3,
+$$</p>
+<p>with $\mu=\bar a$ and $R\ge0$. Three parameters, three amplitudes: this is a change of coordinates, and it reproduces any triple exactly. Checked on $[1,2,4]$ and on $[1,1,10]$, both to machine precision.</p>
+<p>In these coordinates the closure is a statement about the radius:</p>
+<p>$$
+Q=\frac{1}{3}\left(1+\frac{R^{2}}{2\mu^{2}}\right),
+\qquad
+Q=\frac23\iff R=\sqrt2\,\mu ,
+$$</p>
+<p>and $\delta$ does not appear. <strong>$Q$ is blind to the phase.</strong> That is the exact form of §2.4's sentence "the circle contains no information beyond Koide": the circle is the locus $R=\sqrt2\mu$, and the phase is the position on it. The ratio $R/(\sqrt2\mu)$ is $\tan\varphi$ of 14.3, so the polar angle and the radius are one number.</p>
+<p>The equal spacing $2\pi/3$ also has a geometric warrant at $N=3$, which §3 does not credit. The three coordinate axes of $\mathbb R^{3}$ project onto the plane orthogonal to $\vec u$ as three coplanar unit directions at mutual angles $\arccos\left(-\tfrac12\right)=120^{\circ}$, and the three amplitudes are the components of one vector along them, plus the constant $\bar a$. Nothing else could happen: the spacing is the projection of the axes and not a choice. For $N$ axes the same construction gives $\arccos\left(-\tfrac{1}{N-1}\right)$, which is $109.47^{\circ}$ at $N=4$ and tends to $90^{\circ}$, so the $2\pi/N$ spacing of §5 is not this projection for any $N\neq3$.</p>
+<h3 id="145-the-phase-measured">14.5 The phase, measured</h3>
+<p><strong>[MEASURED, PUBLISHED]</strong> Solving the three masses for $\delta$ in the convention of 14.4,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>quantity</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu$</td>
+<td>$17.71556\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>$R$</td>
+<td>$25.05336\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>$R/(\sqrt2\mu)=\tan\varphi$</td>
+<td>$0.9999908$</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>$0.2222296$ rad $=12.73282^{\circ}$</td>
+</tr>
+<tr>
+<td>$2/9$</td>
+<td>$0.2222222$ rad $=12.73240^{\circ}$</td>
+</tr>
+<tr>
+<td>difference</td>
+<td>$7.4\times10^{-6}$ rad, $0.00042^{\circ}$</td>
+</tr>
+<tr>
+<td>first-rung argument $\delta+120^{\circ}$</td>
+<td>$132.7328^{\circ}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The convention matters and is stated once: $\delta$ is defined by $i=1,2,3$ attached to $e,\mu,\tau$ and by the plus sign in $\cos(\delta+2\pi i/3)$. Relabelling the rungs shifts $\delta$ by $120^{\circ}$, and flipping the sign convention replaces $\delta$ by $-\delta$. The number $2/9$ means nothing without the convention.</p>
+<p>With $Q=2/3$ imposed, the reconstruction is most sensitive to $\delta$ in the light rung:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\delta$</th>
+<th>$m_e$</th>
+<th>$m_\mu$</th>
+<th>$m_\tau$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fitted $0.2222296$</td>
+<td>$0.51077$</td>
+<td>$105.6570$</td>
+<td>$1776.879$</td>
+</tr>
+<tr>
+<td>$2/9$</td>
+<td>$0.51097$</td>
+<td>$105.6533$</td>
+<td>$1776.882$</td>
+</tr>
+<tr>
+<td>measured</td>
+<td>$0.51100$</td>
+<td>$105.6584$</td>
+<td>$1776.860$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Imposing $\delta=2/9$ with $m_e$ and $m_\mu$ as input predicts $m_\tau=1776.9665$ MeV, against $1776.9664$ in the literature (arXiv:1210.4125) and $1776.86$ measured. That prediction is as good as the closure's own, and the two are not simultaneous: $Q=2/3$ and $\delta=2/9$ cannot both be exact for the measured masses.</p>
+<p>Three pairwise estimates agree to $1.4\times10^{-5}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>pair used</th>
+<th>$\delta$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e,\mu$</td>
+<td>$0.2222220$</td>
+</tr>
+<tr>
+<td>$e,\tau$</td>
+<td>$0.2222208$</td>
+</tr>
+<tr>
+<td>$\mu,\tau$</td>
+<td>$0.2222345$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The agreement is not independent evidence.</strong> The spread is the $Q$ residual, because all three estimates are the same three masses read differently.</p>
+<h3 id="146-what-the-two-lenses-do-not-do">14.6 What the two lenses do not do</h3>
+<ol>
+<li><strong>They do not explain $2/3$.</strong> The angle is $2/3$; the phase parametrisation is a coordinate change. Both are exact and neither is a mechanism.</li>
+<li><strong>They are not two independent facts.</strong> $\varphi$ and $\delta$ are the polar and azimuthal angles of one vector. A fit to one is a fit to the same three masses as the other.</li>
+<li><strong>$2/9$ is not derived.</strong> No argument here produces it. The corpus's candidates live outside it: a Green's-function constant $2\pi^{2}/9$ on a $Z_3$-sampled circle, with a free normalisation, and a hypercharge rule $\delta=(1+|Y|)/9$ that fits the leptons and the up quarks and fails its own sum rule. Both are quoted in <code>articles_external/Koide/</code> and neither is adopted.</li>
+<li><strong>$45^{\circ}$ is not fundamental because it is round.</strong> The invariant is $\sigma_a=\bar a$. Written in degrees it is a numeral that happens to be an integer in the units we inherited.</li>
+<li><strong>The phase is not evidence of order replacing chaos.</strong> Three numbers to three parameters is a reparametrisation. The only content is that $\delta$ is small and close to a short fraction, and small numbers of that kind are common in fitted triples.</li>
+<li><strong>Neither coordinate fixes the other.</strong> This is the point §6 gets wrong, and 14.7 shows the counterexample.</li>
+</ol>
+<h3 id="147-where-this-disagrees-with-3-and-6">14.7 Where this disagrees with §3 and §6</h3>
+<p>Both disagreements are exact, and both are stated without editing the earlier sections.</p>
+<p><strong>§3 calls the phase spacing an assumption. At $N=3$ it is geometry.</strong> By 14.4 the three samples at $120^{\circ}$ are the projections of the three axes, so the spacing is forced by the dimension and not assumed. What is assumed in the circle ansatz is the radius condition $R=\sqrt2\mu$, which is $Q=2/3$ itself, together with the value of $\delta$. §3's table is right that the closure is an identity of the ansatz; its sentence about the spacing is not.</p>
+<p>For $N\neq3$ the note's extension is a choice and not a projection, since the projected spacing is $\arccos(-1/(N-1))$. The fits of §5 test that choice, and their failure is a fact about the choice.</p>
+<p><strong>§6 makes the electron's distance from the node equal to $Q$. It is the phase.</strong> The node, where an amplitude vanishes, is at $\delta=15^{\circ}$; its position is fixed by the coefficient $\sqrt2$ and so by $Q$. The electron's distance from it is $15^{\circ}-\delta=2.267^{\circ}$, and that number is $\delta$, which $Q$ does not fix. The counterexample is exact and uses the note's own formula, normalised with $R=\sqrt2\mu$ so that every row has $Q=2/3$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\delta$</th>
+<th>amplitudes $/\mu$</th>
+<th>masses at $\mu=17.71556$</th>
+<th>$Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$15^{\circ}$ (node)</td>
+<td>$0.0000$, $0.6340$, $2.3660$</td>
+<td>$0$, $126.1$, $1756.9$</td>
+<td>$2/3$</td>
+</tr>
+<tr>
+<td>$12.7328^{\circ}$ (measured)</td>
+<td>$0.0403$, $0.5802$, $2.3795$</td>
+<td>$0.511$, $105.66$, $1776.88$</td>
+<td>$2/3$</td>
+</tr>
+<tr>
+<td>$0^{\circ}$</td>
+<td>$0.2929$, $0.2929$, $2.4142$</td>
+<td>$26.9$, $26.9$, $1829.2$</td>
+<td>$2/3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every row has $Q=2/3$ exactly, and the light rung ranges from zero to $26.9$ MeV. So the node's location is $Q$ and the distance from it is not. The sentence in §12 that retracts "the node distance as a separate finding" therefore retracts too much: the distance is a second coordinate, and it is the phase the note fits in §5 without naming it.</p>
+<p>The positivity window is the same statement from the other side. Requiring $\sqrt{m_i}\ge0$ for all three rungs confines $\delta$ to $(-15^{\circ},15^{\circ})$ modulo $120^{\circ}$, whose edges are the nodes. The measured $\delta$ sits $2.267^{\circ}$ inside that boundary.</p>
+<h3 id="148-what-the-section-leaves-open">14.8 What the section leaves open</h3>
+<p>The amplitude vector has three coordinates: a scale $\mu$, a polar angle $\varphi$, and an azimuth $\delta$. Koide fixes $\varphi=45^{\circ}$. Nothing in the note fixes $\delta$, and $\delta$ is where the remaining content sits, because $\varphi$ is $Q$ under another name.</p>
+<p>That reframes the target of §11. A mechanism for flavour must produce two numbers and not one: a shape ratio $\sigma_a/\bar a$ equal to $1$, and a phase $\delta$ equal to a short fraction of a radian. The first is a ratio and can come from a projection or an alignment. The second is an angle and needs a boundary condition on a finite tower, which the corpus does not have. The gap named at the end of §10 is therefore unchanged in kind and narrower in statement.</p>
+<p>One falsifiable shape is worth recording. If any other triple closes, it must appear at $45^{\circ}$ in the table of 14.2, and its phase must be computed in the convention of 14.5. The quark sectors sit at $47.54^{\circ}$ and $51.20^{\circ}$, so they do not close, and their phases are not quoted here because their masses need a stated scale before the number means anything.</p>
+<h3 id="149-checks-made-inside-this-section">14.9 Checks made inside this section</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the identity</td>
+<td>$Q$ from $1/(3\cos^{2}\varphi)$, leptons</td>
+<td>$0.66666051$</td>
+</tr>
+<tr>
+<td>the lower bound</td>
+<td>$Q$ for equal masses</td>
+<td>$1/3$</td>
+</tr>
+<tr>
+<td>the cone</td>
+<td>$\arccos(1/\sqrt3)$</td>
+<td>$54.73561^{\circ}$</td>
+</tr>
+<tr>
+<td>the coefficient map</td>
+<td>$Q=1/2$, $3/4$</td>
+<td>$35.264^{\circ}$, $48.190^{\circ}$</td>
+</tr>
+<tr>
+<td>the variance form</td>
+<td>$\sigma_a/\bar a$, leptons</td>
+<td>$0.9999908$</td>
+</tr>
+<tr>
+<td>$\varphi$ measured</td>
+<td>$\arctan(\sigma_a/\bar a)$</td>
+<td>$44.99974^{\circ}$</td>
+</tr>
+<tr>
+<td>the decomposition</td>
+<td>$[1,2,4]$ and $[1,1,10]$</td>
+<td>reproduced, error $<10^{-15}$</td>
+</tr>
+<tr>
+<td>the radius form</td>
+<td>$R^{2}/(2\mu^{2})$ against $3Q-1$</td>
+<td>$0.99998153$ both</td>
+</tr>
+<tr>
+<td>the $120^{\circ}$ spacing</td>
+<td>$\arccos(-1/2)$, and $\arccos(-1/3)$ at $N=4$</td>
+<td>$120^{\circ}$, $109.471^{\circ}$</td>
+</tr>
+<tr>
+<td>the phase</td>
+<td>$\arctan\!\left[\sqrt3(a_\mu-a_e)/(2a_\tau-a_\mu-a_e)\right]$</td>
+<td>$0.2222296$</td>
+</tr>
+<tr>
+<td>the $\tau$ prediction</td>
+<td>$\delta=2/9$ with $m_e$, $m_\mu$</td>
+<td>$1776.9665$ MeV</td>
+</tr>
+<tr>
+<td>the counterexample</td>
+<td>$\delta=0$, $\mu=\bar a$</td>
+<td>$26.9$, $26.9$, $1829.2$ MeV, $Q=2/3$</td>
+</tr>
+<tr>
+<td>the window</td>
+<td>$1+\sqrt2\cos(\delta+120^{\circ})$ at $\delta=\pm15^{\circ}$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="notation">Notation</h2>
 <div class="table-scroll"><table>
 <thead>

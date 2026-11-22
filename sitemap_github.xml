@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ai-research-unit.github.io/index.html</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/disclaimer.html</loc>
@@ -14,11 +14,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/introduction-to-the-biquaternion-universe.html</loc>
-    <lastmod>2026-11-20</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/ai-physics-review.html</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-22</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/why-biquaternions.html</loc>
@@ -10721,7 +10721,7 @@
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_maths/the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_maths/the-spin-group-via-4x4-real-matrices.html</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
@@ -10869,7 +10869,7 @@
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_maths/the-clebsch-gordan-decomposition-of-the-biquaternion-operators.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_maths/the-clebsch-gordan-decomposition-of-the-operators.html</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
@@ -13253,7 +13253,7 @@
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_maths/the-spin-group-via-4x4-real-matrices.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_maths/the-spin-group-unit-elements-rotors-and-the-two-to-one-cover.html</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
   <url>
