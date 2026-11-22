@@ -72,7 +72,7 @@
         <h1 id="tensor-powers-and-the-free-algebra"><strong>Tensor Powers and the Free Algebra</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p>Every construction of a graded algebra from a module begins with the tensor powers of that module. This article builds the tensor powers $V^{\otimes n}$, assembles them into the tensor algebra $T(V) = \bigoplus_{n \geq 0} V^{\otimes n}$ with concatenation as product, and identifies $T(V)$ as the free associative algebra on $V$ by its universal property. The free algebra $R\langle X\rangle$ on a set $X$ is the tensor algebra of the free module on $X$, so it is a special case, and the two are treated together.</p>
-<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $V$ is an $R$-module. The tensor product of modules and its universal property are assumed from <em>Modules</em>, §13; the construction here is the iterated use of that product. The tensor product of two <em>algebras</em>, with its own product formula, is a different construction and is not covered here; this article uses only the tensor product of modules.</p>
+<p>Throughout, $R$ is a commutative ring with identity $1 \neq 0$ and $V$ is an $R$-module. The tensor product of modules and its universal property are assumed from <em>Modules</em>; the construction here is the iterated use of that product. The tensor product of two <em>algebras</em>, with its own product formula, is a different construction and is not covered here; this article uses only the tensor product of modules.</p>
 <p>The tensor algebra is the source of the quotient presentations of the number systems and of the symmetric, exterior and Clifford algebras: all of these are quotients of $T(V)$ by ideals generated in low degree, and that construction is not covered here. What is fixed here is the free object, before any relation is imposed.</p>
 <h2 id="tensor-powers">Tensor Powers</h2>
 <p><strong>Definition.</strong> Let $V$ be an $R$-module. The <strong>tensor powers</strong> of $V$ are the modules</p>
@@ -90,7 +90,7 @@ $$</p>
 V^{\otimes m} \otimes_R V^{\otimes n} \;\cong\; V^{\otimes (m+n)}, \qquad
 V^{\otimes m} \otimes_R V^{\otimes n} \;\cong\; V^{\otimes n} \otimes_R V^{\otimes m},
 $$</p>
-<p>the first given by concatenation, $(v_1 \otimes \cdots \otimes v_m) \otimes (w_1 \otimes \cdots \otimes w_n) \mapsto v_1 \otimes \cdots \otimes v_m \otimes w_1 \otimes \cdots \otimes w_n$, extended $R$-linearly, and the second by the symmetry of the tensor product (<em>Modules</em>, §13). The first isomorphism is the reason the tensor algebra below is associative.</p>
+<p>the first given by concatenation, $(v_1 \otimes \cdots \otimes v_m) \otimes (w_1 \otimes \cdots \otimes w_n) \mapsto v_1 \otimes \cdots \otimes v_m \otimes w_1 \otimes \cdots \otimes w_n$, extended $R$-linearly, and the second by the symmetry of the tensor product (<em>Modules</em>). The first isomorphism is the reason the tensor algebra below is associative.</p>
 <p><strong>Basis and dimension.</strong> If $V$ is free with basis $\{e_i\}_{i \in I}$, then $V^{\otimes n}$ is free with basis the tensors</p>
 <p>$$
 e_{i_1} \otimes e_{i_2} \otimes \cdots \otimes e_{i_n}, \qquad i_1, \dots, i_n \in I,
@@ -99,7 +99,7 @@ $$</p>
 <p>$$
 \dim_R V^{\otimes n} = d^{\,n}.
 $$</p>
-<p>In particular, for a two-dimensional free module the tensor power has dimension $2^n$. Over a general commutative ring the rank is well defined by the invariant basis number property (<em>Modules</em>, §10), so this dimension is unambiguous.</p>
+<p>In particular, for a two-dimensional free module the tensor power has dimension $2^n$. Over a general commutative ring the rank is well defined by the invariant basis number property (<em>Modules</em>), so this dimension is unambiguous.</p>
 <p><strong>Functoriality.</strong> An $R$-linear map $f : V \to W$ induces $f^{\otimes n} : V^{\otimes n} \to W^{\otimes n}$ by</p>
 <p>$$
 f^{\otimes n}(v_1 \otimes \cdots \otimes v_n) = f(v_1) \otimes \cdots \otimes f(v_n),
@@ -193,7 +193,7 @@ $$</p>
 T(V \oplus W) \;\cong\; T(V) \sqcup T(W),
 $$</p>
 <p>where $\sqcup$ is the <strong>free product</strong> of algebras, the coproduct in the category of unital associative algebras. This is the algebra-level complement of the tensor product of algebras, which is the coproduct in the commutative case; both are treated. The identification follows from the universal property, since linear maps $V \oplus W \to A$ correspond to pairs of linear maps $V \to A$ and $W \to A$.</p>
-<p><strong>Extension of scalars.</strong> Let $R \to S$ be a homomorphism of commutative rings and let $V_S = V \otimes_R S$ be the base change of $V$ (<em>Modules</em>, §13). Then</p>
+<p><strong>Extension of scalars.</strong> Let $R \to S$ be a homomorphism of commutative rings and let $V_S = V \otimes_R S$ be the base change of $V$ (<em>Modules</em>). Then</p>
 <p>$$
 T(V_S) \;\cong\; T(V) \otimes_R S
 $$</p>

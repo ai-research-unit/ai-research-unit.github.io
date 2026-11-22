@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coupling Sector of the Four Colours Left–Right Model: A Retired Working Record — Biquaternion Universe</title>
+  <meta name="description" content="Ledger note, binding since the coupling migration. Every coupling value in this note is a transcription of the literature or of a recomputation, not a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-coupling-sector-of-the-four-colours-leftright-model-a-retired-working-record"><strong>The Coupling Sector of the Four Colours Left–Right Model: A Retired Working Record</strong></h1>
+<p><strong>Ledger note, binding since the coupling migration.</strong> Every coupling value in this note is a transcription of the literature or of a recomputation, <strong>not a statement of the corpus's model</strong>. <strong>The corpus's single coupling statement is in <code>articles_physics/the-one-coupling-that-returns-the-standard-model.md</code></strong>; this file is a working record, and it is not a place where a coupling is claimed. An equality of the form $m_d=m_e$ at a scale, where it appears below, is the literature's published condition and not this model's prediction.</p>
+<h2 id="introduction">Introduction</h2>
+<p><strong>Status: retired.</strong> Every coupling statement this note contains is now in the public article <a href="../articles_physics/the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model</a>, which is the single place the corpus keeps such a statement. <strong>What this note keeps that the public article does not is the recomputation history</strong>: which of its three items survived the recheck, which changed, and why. <strong>It is a record, not an authority, and nothing here should be cited as a coupling claim.</strong></p>
+<p><strong>One section was added to it after the retirement, and it is §3A.</strong> <a href="../articles_physics/the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture</a> was purged of every coupling statement, because the mixture's direction is algebra and its coordinates are not. <strong>The coordinates had to go somewhere, and this record is the file that quarantines such statements</strong>, so §3A is now the only place in the corpus where the photon's composition in the three gauge fields is computed. <strong>The public article keeps the direction and cross-refers; this record keeps the numbers and flags them.</strong></p>
+<p><strong>The coupling sector is the unfinished half of this model, and it is unfinished in three separate places.</strong> The group is fixed, the sixteen is fixed, the charges are derived, the anomalies cancel, the boson count closes, the leptoquark floor follows from one measured decay. <strong>None of that depends on a coupling.</strong> What depends on a coupling is everything a reader would want next: why the three couplings have the values they have, whether they meet somewhere, and how far the model can run before its own consistency fails.</p>
+<p><strong>Three problems are open, and they are not the same kind of problem.</strong> The first is a missing prediction: $g_R$ is fixed by the data rather than by the theory. The second is a missing derivation: nothing above $M_C$ restores $g_4=g_L=g_R$, and one loop says nothing can, for a structural reason. The third is a missing bound: the reality of $g_R$ constrains the content, not the scales, and the constraint bites only if the content is heavy enough.</p>
+<p><strong>What this article does not claim.</strong> It does not claim the model is wrong, and it does not claim the model is confirmed. <strong>It claims that the coupling sector reproduces three measured numbers by construction and predicts none of them, and it states that as a defect rather than as a success.</strong></p>
+<p><strong>Where the contrast belongs.</strong> Pati–Salam is the case $g_4=g_L=g_R$ at one scale. That case made a prediction, the prediction was checked, and it failed. <strong>The failure is recomputed here from the published measurements, because the corpus's earlier tables of it do not reproduce</strong> (§10). <strong>The verdict survives the correction; the numbers do not.</strong></p>
+<h2 id="0-the-vocabulary-structural-scale-bearing-measured">0. The Vocabulary: Structural, Scale-Bearing, Measured</h2>
+<p><strong>One test sorts every coupling statement in this note, and the test is a single question: can the sentence drop the scale?</strong></p>
+<p><strong>The five things this note quarantines are one thing seen five ways.</strong> A value, a boundary condition at a scale, a running, a matching, and a ratio called exact all fail the test in the same manner: <strong>none of them can be written without naming an energy.</strong> That is what unites them, and it is also why the algebra cannot adjudicate them. An object that cannot be stated without a scale is not an object the algebra has an opinion about.</p>
+<ul>
+<li><strong>A value needs a scale.</strong> $\alpha_s$ alone means nothing; $\alpha_s(M_Z)$ is a number.</li>
+<li><strong>A boundary condition is a scale statement.</strong> "$g_4=g_L$ at $M_{PS}$" carries the scale in the sentence.</li>
+<li><strong>A running is two scales and the path between them.</strong></li>
+<li><strong>A matching is two descriptions at one scale.</strong></li>
+<li><strong>A ratio is exact only because two couplings were set equal at one scale.</strong></li>
+</ul>
+<p><strong>The technical synonym is "renormalised coupling", and the synonym is not an improvement.</strong> A renormalisation condition <em>is</em> a boundary condition at a scale, so the phrase is exact and unhelpful: it names the apparatus instead of the defect. <strong>Scale-bearing</strong> is the plainer word, and it is the one this note uses.</p>
+<p><strong>Three categories follow, and the note is organised by them.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th>test</th>
+<th>where it lives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>structural coupling</strong></td>
+<td>can drop the scale: a symbol multiplying a generator, a trace normalisation</td>
+<td>everywhere, untouched</td>
+</tr>
+<tr>
+<td><strong>scale-bearing coupling</strong></td>
+<td>cannot drop the scale</td>
+<td>this article only, flagged</td>
+</tr>
+<tr>
+<td><strong>measured coupling</strong></td>
+<td>external data</td>
+<td>stays where it is used, marked as data</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The middle row is the reason this note exists.</strong> A structural coupling is decided by the algebra, so an error in one is caught by a trace identity: $\operatorname{tr}T_aT_b=\tfrac12\delta_{ab}$ either holds or it does not, and the check is exact. A scale-bearing coupling is decided by nothing in the algebra — it is either imposed or measured — so <strong>an error in one is invisible until an experiment, and it moves when the scale moves.</strong> That is why they are quarantined and not merely labelled. A label can be read past; a quarantine is a statement about where the text is allowed to appear, and it is the stronger of the two.</p>
+<h2 id="1-the-four-couplings-and-the-one-tie">1. The Four Couplings and the One Tie</h2>
+<p><strong>The gauge group is $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, and it carries four coupling constants below the first breaking.</strong> One of them belongs to $\mathrm{SU}(4)$, one to $\mathrm{SU}(2)_L$, one to $\mathrm{SU}(2)_R$, and one to the surviving abelian factor that the $\mathrm{SU}(4)$ Cartan provides.</p>
+<p><strong>The covariant derivative, written once so that the normalisations are fixed.</strong></p>
+<p>$$
+D_\mu=\partial_\mu-ig_4\sum_{a=1}^{15}A_{a,\mu}T_a-ig_L\sum_{i=1}^{3}W_{L,i,\mu}\tau_i-ig_R\sum_{i=1}^{3}W_{R,i,\mu}\tau_i ,
+$$</p>
+<p><strong>with $\operatorname{tr}T_aT_b=\tfrac12\delta_{ab}$ on the quartet.</strong> That normalisation is not cosmetic. <strong>It is what makes the $B-L$ coupling a computed number rather than a free one</strong>, because the $B-L$ generator is the fifteenth Cartan, $\operatorname{diag}(1,1,1,-1)/\sqrt{8}$, and its strength is fixed by the same $g_4$ that multiplies every other generator.</p>
+<p><strong>Two of the four are independent, and two follow from the group.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>coupling</th>
+<th>status</th>
+<th>what fixes it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_4$</td>
+<td><strong>tied</strong></td>
+<td>$g_4=g_3(M_C)$, because $\mathrm{SU}(3)\subset\mathrm{SU}(4)$ and one coupling serves both</td>
+</tr>
+<tr>
+<td>$g_{B-L}$</td>
+<td><strong>not independent</strong></td>
+<td>$g_{B-L}^2=\tfrac38g_4^2$ at $M_C$, from the trace normalisation</td>
+</tr>
+<tr>
+<td>$g_L$</td>
+<td>free</td>
+<td>measured below $M_R$ as the $\mathrm{SU}(2)_L$ coupling</td>
+</tr>
+<tr>
+<td>$g_R$</td>
+<td>free</td>
+<td><strong>fixed in practice by the matching at $M_R$</strong> (§2)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Sorted by §0's test, the table splits cleanly and the split is the article's structure.</strong> The $B-L$ row is structural: $g_{B-L}^2=\tfrac38g_4^2$ is a trace normalisation, it can be written with no scale in it, and it holds at every scale at which the embedding is the same. The other three cannot drop the scale. <strong>The tie $g_4=g_3(M_C)$ is derived and still scale-bearing</strong>, because the sentence names $M_C$; the equality is forced and <em>where it holds</em> is not. $g_L$ and $g_R$ are scale-bearing outright, and $g_R$ is measured as well — measured at $M_Z$, run up, then matched.</p>
+<p><strong>That combination is why the tie is worth keeping and why it predicts nothing on its own.</strong> A relation that is derived but scale-bearing survives every change of normalisation and none of the changes of scale, which is exactly the behaviour §3 records: the $\sqrt2$ survives, the ratio $g_4/g_R$ does not.</p>
+<p><strong>The count behind the three eighths, over the sixteen.</strong> With $g_L=g_R=g_4$ at $M_C$, the angle follows from a ratio of traces, and both traces are counts of states rather than normalisations:</p>
+<p>$$
+\sin^{2}\theta_W=\frac{\operatorname{tr}(T_{3L}^{2})}{\operatorname{tr}(T_{3L}^{2})+\operatorname{tr}(Y^{2})}=\frac{2}{2+\tfrac{10}{3}}=\frac{6}{16}=\frac38 ,
+$$</p>
+<p>with $\operatorname{tr}(T_{3L}^{2})=8\cdot\tfrac14=2$ over the eight doublet states and $\operatorname{tr}(Y^{2})=\tfrac{6}{36}+\tfrac43+\tfrac13+\tfrac12+1=\tfrac{10}{3}$ over the quark and lepton singlets. <strong>The $\tfrac38$ of the $B-L$ normalisation and the $\tfrac38$ of this ratio are the same number reached two ways</strong>, which is the check that the entry in the table above is a consequence and not a convention.</p>
+<p><strong>The tie is the whole reason the model is a statement about nature.</strong> If $g_4$ were free, the model would be the Standard Model with extra fields and a relabelling of the abelian factor. <strong>Because $g_4=g_3(M_C)$, the fourth colour is tied to the strong coupling at the scale where colour is a stabiliser, and the leptoquarks inherit a mass floor from that.</strong> That floor is the model's one experimental commitment, and §3 shows what it costs.</p>
+<p><strong>The count is honest and it is not a success.</strong> Three quantities can be chosen — $M_C$, $M_R$ and $g_R$ — and three are measured — $\alpha_s$, $\alpha_{\mathrm{em}}$ and $\sin^2\theta_W$. <strong>The count says nothing by itself.</strong> Whether the three choices can reproduce the three measurements is a computation, and §2 does it.</p>
+<h2 id="2-the-matching-and-why-it-reproduces-the-data">2. The Matching, and Why It Reproduces the Data</h2>
+<p><strong>Below $M_R$ the theory is the Standard Model, field for field.</strong> The group is $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, the matter is three generations, and the couplings are the measured ones. <strong>So the three measured numbers are inputs at $M_Z$, not outputs of the model.</strong> What the model supplies is what happens above $M_R$.</p>
+<p><strong>At $M_R$ the two abelian factors merge into hypercharge.</strong> The hypercharge generator is $Y=T_{3R}+\tfrac12(B-L)$, so the hypercharge field is a mixture of the $W_R^3$ and the $B-L$ field, and its coupling is the harmonic sum of the two.</p>
+<p>$$
+\frac{1}{g_Y^2}=\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2} .
+$$</p>
+<p><strong>The factor $\tfrac14$ is the coefficient of $B-L$ in $Y$, squared.</strong> It is not a convention: a mixture with coefficients $1$ and $\tfrac12$ adds $1$ and $\tfrac14$ to the inverse squares. <strong>The corpus's own frame derives the same relation from the photon's composition</strong>, with the three denominators $1$, $1$ and $\tfrac23$ summing to $\tfrac83$, and that sum is the origin of every $\tfrac38$ in the literature.</p>
+<p><strong>The matching is one equation, and it is solved for $g_R$.</strong> Nothing else in the model depends on $g_R$, no experiment measures it, and no symmetry fixes it. <strong>So the model spends its freedom there.</strong> The price is stated in §4 and it is the first open problem.</p>
+<p><strong>The computation, in four steps.</strong> Fix $M_C$ and $M_R$. Then $g_4=g_3(M_C)$ and $g_{B-L}(M_C)=\sqrt{\tfrac38}g_4$. Run $g_{B-L}$ down to $M_R$ and $g_L$, $g_Y$ up from $M_Z$ to $M_R$. <strong>Then solve the matching for $g_R$, which is possible only if the right-hand side is positive.</strong></p>
+<p>$$
+\frac{1}{g_R^2}=\frac{1}{g_Y^2}-\frac{1}{4g_{B-L}^2}>0 .
+$$</p>
+<p><strong>The numbers, with the one-loop Standard Model slopes below $M_R$ and $b_{B-L}=12$ between the scales.</strong> Every row reproduces $\sin^2\theta_W=0.2312$, $\alpha_{\mathrm{em}}^{-1}=127.9$ and $\alpha_s=0.118$ at $M_Z$ exactly, because each row is built from those three numbers.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M_C$ (TeV)</th>
+<th>$M_R$ (TeV)</th>
+<th>$g_4$</th>
+<th>$g_{B-L}(M_R)$</th>
+<th>$g_Y(M_R)$</th>
+<th>$g_R$</th>
+<th>$g_L$</th>
+<th>$g_R/g_L$</th>
+<th>$M_X/M_{W_R}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2.5\times10^{2}$</td>
+<td>$10^{2}$</td>
+<td>$0.852$</td>
+<td>$0.512$</td>
+<td>$0.372$</td>
+<td>$0.399$</td>
+<td>$0.616$</td>
+<td>$0.65$</td>
+<td>$3.0$</td>
+</tr>
+<tr>
+<td>$2.5\times10^{2}$</td>
+<td>$10$</td>
+<td>$0.852$</td>
+<td>$0.490$</td>
+<td>$0.367$</td>
+<td>$0.396$</td>
+<td>$0.627$</td>
+<td>$0.63$</td>
+<td>$3.0$</td>
+</tr>
+<tr>
+<td>$2.5\times10^{2}$</td>
+<td>$2$</td>
+<td>$0.852$</td>
+<td>$0.477$</td>
+<td>$0.364$</td>
+<td>$0.393$</td>
+<td>$0.635$</td>
+<td>$0.62$</td>
+<td>$3.1$</td>
+</tr>
+<tr>
+<td>$10^{7}$</td>
+<td>$10^{6}$</td>
+<td>$0.766$</td>
+<td>$0.452$</td>
+<td>$0.377$</td>
+<td>$0.415$</td>
+<td>$0.606$</td>
+<td>$0.69$</td>
+<td>$2.6$</td>
+</tr>
+<tr>
+<td>$10^{7}$</td>
+<td>$10^{5}$</td>
+<td>$0.766$</td>
+<td>$0.437$</td>
+<td>$0.372$</td>
+<td>$0.411$</td>
+<td>$0.616$</td>
+<td>$0.67$</td>
+<td>$2.6$</td>
+</tr>
+<tr>
+<td>$10^{9}$</td>
+<td>$10^{7}$</td>
+<td>$0.688$</td>
+<td>$0.397$</td>
+<td>$0.383$</td>
+<td>$0.437$</td>
+<td>$0.596$</td>
+<td>$0.73$</td>
+<td>$2.2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the last two columns as the model's only output.</strong> $g_R$ comes out between $0.62$ and $0.73$ of $g_L$, and the leptoquark-to-$W_R$ mass ratio between $2.2$ and $3.1$. <strong>Everything else in the table is a measured number run to a chosen scale.</strong></p>
+<p><strong>The table is the proof that the coupling failure is gone.</strong> No scale has to fit anything, because the three couplings are not required to meet. <strong>What the table does not do is predict. That is §4.</strong></p>
+<h2 id="3-what-the-tie-buys-and-what-it-costs">3. What the Tie Buys, and What It Costs</h2>
+<p><strong>The surviving tie, $g_4=g_3(M_C)$, buys one number: the leptoquark's mass in units of the $W_R$ mass.</strong></p>
+<p>$$
+M_X=\sqrt{2}\,\frac{g_4}{g_R}\,M_{W_R}\simeq(2.2\text{–}3.1)\,M_{W_R} .
+$$</p>
+<p><strong>The $\sqrt2$ is structural.</strong> It comes from the ratio of the $\mathrm{SU}(4)$ generator normalisations on the off-diagonal block, and it survives every change of scale. <strong>The factor $g_4/g_R$ is what the strip changed</strong>: in the unified case it is one, and the ratio is exactly $\sqrt2$.</p>
+<p><strong>The neutral partner carries the same two fractions, and that is a second check on the normalisation.</strong></p>
+<p>$$
+M_{Z_R}^{2}=\tfrac58\,g^{2}v_R^{2},\qquad \tfrac58=\tfrac14+\tfrac38,\qquad M_{Z_R}=\sqrt{\tfrac52}\,M_{W_R} .
+$$</p>
+<p><strong>One quarter is the $T_{3R}$ share and three eighths is the $B-L$ share</strong>, so the number that sets the angle also sets a mass ratio. <strong>The same $\tfrac38$ therefore appears in three places — the angle, the third entry of the photon's null vector, whose contribution to $1/e^{2}$ is $\tfrac23/g_4^{2}$, and this coefficient — and a wrong normalisation anywhere would move all three at once.</strong> <strong>Only the third entry of that vector carries the $\tfrac38$</strong>; its leading pair is the statement $g_L=g_R$, which is a different and stronger assumption, and §3A separates the two because an earlier form of this paragraph ran them together.</p>
+<p><strong>The cost is that the floor moves with the row.</strong> $K_L\to\mu e$ bounds $M_X\gtrsim2\times10^{2}$ TeV, and dividing by the ratio gives $M_{W_R}\gtrsim70$–$90$ TeV. <strong>A reader who quotes $M_{W_R}\gtrsim160$ TeV is quoting the unified ratio</strong>, where $\sqrt2\,M_{W_R}=230$ TeV; the stripped model's floor is a factor $2.2$–$3.1$ lower. <strong>That is not a weakening of the bound, because the bound is on $M_X$ and $M_X$ is what the decay measures.</strong></p>
+<p><strong>Two consequences follow, and both are exact.</strong> The $W_R$ and $Z_R$ are out of LHC reach for any allowed row. <strong>And the leptoquark floor is the only place where the tie meets an experiment</strong>, which is why the model has no second experimental commitment.</p>
+<h2 id="3a-the-photons-coordinates-and-what-the-strip-does-to-them">3A. The Photon's Coordinates, and What the Strip Does to Them</h2>
+<p><strong>This section is the coupling half of the photon article, and it is here because that article was purged of it.</strong> <a href="../articles_physics/the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture</a> now states the mixture's <strong>direction</strong> and nothing else. What that direction becomes when it is distributed over three gauge fields is a statement about three couplings, so it belongs in the file that quarantines them.</p>
+<p><strong>3A.1 The division of labour, in one line each.</strong> The direction $d=(1,1,\sqrt{2/3})$ in $(T_{3L},T_{3R},T^{15})$ is fixed by two neutrality conditions and is the coefficient vector of $Q$; it is algebra and it is scale-free. The <strong>coordinates</strong> $c_i$ of the photon in the three gauge fields are the direction divided by the three couplings; they are dynamics and they move with the row. <strong>Every number in this section is conditional on a row, and no row is a prediction.</strong></p>
+<p><strong>3A.2 The coordinates, from canonical normalisation.</strong> The gauge fields carry kinetic terms normalised by their couplings, so the canonically normalised photon is the null combination written in that basis:</p>
+<p>$$
+A_\mu=\sum_i c_iA_{i,\mu},\qquad c_i=e\,\frac{d_i}{g_i},\qquad \frac{1}{e^{2}}=\sum_i\frac{d_i^{2}}{g_i^{2}}=\frac{1}{g_L^{2}}+\frac{1}{g_R^{2}}+\frac{1}{4g_{B-L}^{2}} .
+$$</p>
+<p><strong>The third term is the one to read twice.</strong> In the $T^{15}$ basis the coefficient is $\sqrt{2/3}$ and the coupling is $g_{15}=g_4$, because the fifteenth Cartan is normalised like the other fourteen; in the $B-L$ basis the coefficient is $\tfrac12$ and the coupling is $g_{B-L}$, with $g_{15}^{2}=\tfrac83g_{B-L}^{2}$. The two give the same term, $\tfrac23/g_4^{2}=\tfrac14/g_{B-L}^{2}$, and <strong>that $\tfrac14$ is the square of the $\tfrac12$ — the same $\tfrac14$ that appears in the matching relation of §2, and for the same reason.</strong> So the photon's composition and the hypercharge matching are one equation written twice: the coefficient of $B-L$ in $Y$ and in $Q$ is the same coefficient.</p>
+<p><strong>3A.3 The equal-coupling case, which is the only case where the coordinates equal the direction.</strong> Set $g_L=g_R=g_4$ and $g_{B-L}^{2}=\tfrac38g_4^{2}$, hence $g_{15}=g_4$. Then all three denominators in $1/e^{2}$ are $g_4^{2}$:</p>
+<p>$$
+\frac{1}{e^{2}}=\frac{1}{g_4^{2}}\Bigl(1+1+\frac{2}{3}\Bigr)=\frac{8}{3g_4^{2}},
+\qquad
+e^{2}=\tfrac38\,g_4^{2},
+\qquad
+\sin^{2}\theta_W=\frac{e^{2}}{g_L^{2}}=\tfrac38 ,
+$$</p>
+<p>and the coordinates are $(1,1,\sqrt{2/3})$ up to normalisation — <strong>the same triple as the direction.</strong> That is why the two look like one statement in the unified literature, and why the appearance is misleading here: <strong>the equality of the two triples is a consequence of $g_L=g_R$, not a fact about the photon.</strong></p>
+<p><strong>3A.4 The split case, in the numbers of §2's table.</strong> With the running values from §2, the coordinates separate from the direction, and the amount by which they separate is the model's only quantitative statement about the photon:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$M_C$ (TeV)</th>
+<th>$M_R$ (TeV)</th>
+<th>$c_R/c_L$</th>
+<th>$c_B/c_L$</th>
+<th>$\sin^{2}\theta_W(M_R)=e^{2}/g_L^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2.5\times10^{2}$</td>
+<td>$10^{2}$</td>
+<td>$1.54$</td>
+<td>$0.60$</td>
+<td>$0.267$</td>
+</tr>
+<tr>
+<td>$2.5\times10^{2}$</td>
+<td>$10$</td>
+<td>$1.58$</td>
+<td>$0.64$</td>
+<td>$0.255$</td>
+</tr>
+<tr>
+<td>$10^{7}$</td>
+<td>$10^{6}$</td>
+<td>$1.46$</td>
+<td>$0.67$</td>
+<td>$0.279$</td>
+</tr>
+<tr>
+<td>$10^{9}$</td>
+<td>$10^{7}$</td>
+<td>$1.36$</td>
+<td>$0.75$</td>
+<td>$0.292$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The direction is $(1,1,0.816)$ in every row and the coordinates are not</strong>, which is the whole content of the separation. The leading pair moves by up to $58\%$ and the third entry by up to $26\%$; the angle that the equal-coupling case calls $\tfrac38$ is between $0.255$ and $0.292$. <strong>These are derived from the fitted rows and they are not predictions</strong>, exactly like the $g_R$ column they come from: they are what the measurements, run to a chosen scale, say the photon's composition would be.</p>
+<p><strong>3A.5 What this corrects, and it is three things.</strong></p>
+<ul>
+<li><strong>The photon article's central check was a check of one case.</strong> Its first form derived the triple from $c_i=e/g_i$, the inverse-coupling route, and reported that the eigenvector and that derivation agree — "the check that matters", because the eigenvector knows nothing of normalisation. The agreement holds, and it holds <strong>only at $g_L=g_R$</strong>, so it tested the unified case rather than the mixture. That derivation has been moved out of the article and stands here as §3A.3. <strong>The check that replaced it is stronger, and it is the article's §2.2</strong>: the direction is the charge vector, so its nullness is the neutrality of the two vacua, an identity for every vev and every set of couplings.</li>
+<li><strong>§3's "three places" needed an entry read differently.</strong> Of the three, only the third carries the $\tfrac38$. The leading $1,1$ of the triple is $g_L=g_R$, an assumption about two couplings, and quoting the triple as a place where the $\tfrac38$ is read overstates what the $\tfrac38$ does.</li>
+<li><strong>The ledger's $\sin^{2}\theta_W=\tfrac38$ row stays conditional, and this section is the arithmetic of why.</strong> The value is the equal-coupling value; the strip leaves $0.255$–$0.292$ in its place at $M_R$. <strong>Neither number is a prediction of the measured $0.2312$</strong>: the first is a boundary condition of a case the model does not occupy, the second is an output of the fit.</li>
+</ul>
+<p><strong>3A.6 What the strip does not move.</strong> The direction and the neutrality identity; the rank-two argument and the uniqueness of the null line; the statement that a linear combination of connections is a connection, hence $F=\mathrm dA$ with no extra term; the fact that the third term in $1/e^{2}$ is $\tfrac14/g_{B-L}^{2}$ and is the square of the coefficient $\tfrac12$; and the matching relation of §2, which is that same identity seen from the hypercharge side. <strong>So the strip takes four numbers — the triple as coordinates, $e^{2}=\tfrac38g_4^{2}$, $\sin^{2}\theta_W=\tfrac38$, and $M_{Z_R}=\sqrt{5/2}\,M_{W_R}$ — and leaves every structural statement about the mixture intact.</strong></p>
+<p><strong>3A.7 Observability, stated with the couplings in view.</strong> The photon's coordinates are not observable at any energy, for the reason the photon article gives: the fields it is composed of are heavy. What a future measurement could reach is the <strong>mixing of the massive neutrals</strong>, which depends on the same coefficients and on the two vevs, and which is a property of the $Z$ and $Z_R$ rather than of the photon. <strong>That mixing is where a coupling in this section could first be checked, and it is out of reach for every allowed row</strong> — which is the same statement, in the neutral sector, as §9's "a null result is the model's own expectation".</p>
+<h2 id="4-the-first-open-problem-math277-is-an-output">4. The First Open Problem: $g_R$ Is an Output</h2>
+<p><strong>The model predicts no coupling.</strong> $g_R$ is chosen so that the three measured numbers come out right, and that is the definition of a fit rather than of a prediction. <strong>The distinction is not pedantic: a fitted number cannot be wrong, and therefore cannot be tested.</strong></p>
+<p><strong>State the mechanism in one sentence.</strong> The matching equation has one unknown, $g_R$, and three measured inputs on the other side, so it always has a solution in the region where the bracket is positive, and the solution is whatever the inputs require. <strong>The model's agreement with $\alpha_{\mathrm{em}}$, $\alpha_s$ and $\sin^2\theta_W$ is therefore an identity, not evidence.</strong></p>
+<p><strong>What the model does produce, and it is worth naming.</strong> $g_R/g_L$ comes out between $0.62$ and $0.73$, and the ratio <em>moves</em> with the scales. <strong>That is an output.</strong> An output is a function of the choices; a prediction is a number fixed without choosing anything. <strong>The model has none of the second kind in the gauge sector.</strong></p>
+<p><strong>Why this is worse than it sounds, and why it is still better than the alternative.</strong> Pati–Salam had a prediction here — $\sin^2\theta_W=\tfrac38$ at $M_{PS}$ — and the prediction failed (§7). <strong>A failed prediction is a defeat; an absent prediction is a blank.</strong> The blank is the better position to be in, and it is not a position from which anything can be confirmed.</p>
+<p><strong>What would count as a fix, stated so that the standard is clear.</strong> Three things would, and the corpus has none of them:</p>
+<ol>
+<li><strong>A derivation of $g_R$ from the carrier.</strong> A reason, from the algebra or from the two-sided product, why the right-handed coupling should take a particular value at a particular scale.</li>
+<li><strong>A relation between $g_R$ and $g_L$ at a scale other than $M_C$</strong>, forced by a symmetry rather than imposed by hand.</li>
+<li><strong>A measurement that over-determines the system</strong>: one more number than there are choices, so that a row can be excluded.</li>
+</ol>
+<p><strong>The forbidden sentence.</strong> Not "the model predicts the gauge couplings." <strong>The honest sentence is the longer one: <em>the model reproduces the three measured couplings for any $(M_C,M_R)$ in a stated region, by adjusting $g_R$, and predicts no value for them.</em></strong></p>
+<h2 id="5-the-second-open-problem-whether-anything-above-math294-restores-the-equality">5. The Second Open Problem: Whether Anything Above $M_C$ Restores the Equality</h2>
+<p><strong>The proposal, stated fairly, because it deserves that.</strong> Keep everything and add a third scale: $M_{PS}>M_C>M_R$, with $g_4=g_L=g_R$ imposed at $M_{PS}$ and nothing changed below. <strong>The unified model is then the degenerate case $M_{PS}=M_C=M_R$, and the stripped model is the case where the condition is dropped.</strong> The argument for the middle case is real: the extra segment changes the running, and couplings that failed to meet in one step might meet in three.</p>
+<p><strong>The count comes first, and it already tells most of the story.</strong> Two conditions on three scales is a curve, not a point. <strong>So the variant is not empty, generically.</strong> But a curve is a free parameter, and a free parameter is freedom spent on a scale rather than on a number. <strong>The question is not whether it exists; it is whether it predicts.</strong></p>
+<p><strong>The obstruction can be seen before any number is run, and it is a symmetry.</strong> Above $M_R$ the content is parity-symmetric: $(\mathbf4,\mathbf2,\mathbf1)$ with $(\bar{\mathbf4},\mathbf1,\mathbf2)$, $(\mathbf1,\mathbf2,\mathbf1)$ with $(\mathbf1,\mathbf1,\mathbf2)$, and a bidoublet $(\mathbf1,\mathbf2,\mathbf2)$. <strong>Every $\mathrm{SU}(2)_L$ multiplet has an $\mathrm{SU}(2)_R$ partner of the same dimension, so the two beta coefficients are equal as a matter of symmetry.</strong></p>
+<p>$$
+c_{2L}=c_{2R} .
+$$</p>
+<p><strong>Equal coefficients freeze the difference.</strong> Running both from $M_R$ to $M_{PS}$ adds the same amount to each inverse coupling, so the gap is transported unchanged.</p>
+<p>$$
+\frac{1}{\alpha_L(M_{PS})}-\frac{1}{\alpha_R(M_{PS})}=\frac{1}{\alpha_L(M_R)}-\frac{1}{\alpha_R(M_R)} .
+$$</p>
+<p><strong>So the second condition is not a condition at $M_{PS}$ at all.</strong> It is a condition at $M_R$, and the third scale buys nothing for it.</p>
+<p>$$
+g_L(M_{PS})=g_R(M_{PS})\iff g_L(M_R)=g_R(M_R) .
+$$</p>
+<p><strong>This is what the "extra running gives colour more room" argument misses.</strong> The extra running does give colour room — $c_4=\tfrac{32}{3}$ and $c_2=\tfrac{19}{6}$ differ, so $g_4$ and $g_L$ do meet — <strong>but it does nothing to $g_R$ relative to $g_L$, because parity makes their running identical.</strong> The obstruction is not colour.</p>
+<p><strong>The size of the gap, in the numbers of §2.</strong> At $M_C=250$ TeV and $M_R=M_C$, $1/\alpha_R=78.2$ against $1/\alpha_L=33.6$, so the gap is $-44.6$ in inverse-coupling units, and $g_R/g_L=0.65$. <strong>That gap has to be closed by something, and the freeze says running cannot close it.</strong></p>
+<p><strong>What could close it, and at what price.</strong> Only breaking parity above $M_R$, which allows $\Delta c_2\ne0$ and lets the gap run. <strong>Then the required asymmetry is set by the number of e-folds available.</strong> With $M_C=250$ TeV, colour meets at $t\approx27$ e-folds, so</p>
+<p>$$
+\Delta c_2\simeq2\pi\frac{44.6}{27}\simeq10 ,
+$$</p>
+<p><strong>and a single Weyl doublet moves $c_2$ by $\tfrac13$, so this asks for about thirty more $\mathrm{SU}(2)_L$ doublets than $\mathrm{SU}(2)_R$ doublets above $M_R$.</strong> That is not a threshold correction. <strong>It is a different theory, and one with no reason behind the number thirty.</strong></p>
+<p><strong>The verdict, in four sentences.</strong> The variant is not empty: a solution exists, at $M_C\simeq M_R\simeq5\times10^{13}$ TeV. It is not a repair: at that solution $g_R$ is fitted, not predicted, so the agreement at $M_Z$ is the input returning. It is obstructed by the wrong coupling: colour arrives on time for every $M_C$, and $g_R=g_L$ never does, because parity freezes it. <strong>And it leaves one free parameter and zero predictions, which is the definition of the problem rather than of its solution.</strong></p>
+<p><strong>The caveat that applies to every number in this section.</strong> These are one-loop estimates with the coefficients stated, on minimal content with $b_{B-L}=12$. <strong>Two of them move under different content: the meeting scale and the required asymmetry.</strong> The conclusion does not move, because it rests on the freeze — an equality of beta coefficients forced by parity, not a numerical coincidence — and on the sign of the gap, which is $-27\%$ to $-38\%$ and would have to reverse. <strong>What two loops could change is where the curve lives, not whether it is a curve.</strong></p>
+<h2 id="6-the-third-open-problem-the-reality-of-math344">6. The Third Open Problem: The Reality of $g_R$</h2>
+<p><strong>The matching has a solution only while the bracket is positive.</strong> That is not an experimental statement, and it is not a statement about nature. <strong>It is a statement about the model: outside that region the theory has no real right-handed coupling, which means the content cannot be what the model says it is between the two scales.</strong></p>
+<p>$$
+\frac{1}{g_R^2}=\frac{1}{g_Y^2}-\frac{1}{4g_{B-L}^2}>0
+\quad\Longleftrightarrow\quad
+\alpha_{B-L}^{-1}<4\,\alpha_Y^{-1} .
+$$</p>
+<p><strong>The condition is exact, and it is a coupling constraint rather than a measurement.</strong> Nothing in it refers to a detector. <strong>What it does refer to is the running, and the running is set by the beta coefficients, which are set by the multiplet list.</strong></p>
+<p><strong>Whether the constraint ever bites is decided by one comparison of two numbers.</strong> Below $M_C$, as the scale falls, $\alpha_Y^{-1}$ grows at $b_Y/(2\pi)$ and $\alpha_{B-L}^{-1}$ at $b_{B-L}/(2\pi)$, and the right-hand side of the condition grows four times as fast as the left. <strong>So the bracket shrinks only if</strong></p>
+<p>$$
+b_{B-L}>4b_Y=\frac{20}{3}b_1\approx27.3 ,
+$$</p>
+<p><strong>where $b_Y=\tfrac{41}{6}$ is the hypercharge coefficient and $b_1=\tfrac{41}{10}$ its grand-unified normalisation.</strong> That is the whole criterion. <strong>The ceiling exists if and only if the $B-L$ coefficient is more than about twenty-seven.</strong></p>
+<p><strong>The numbers, for $M_C=250$ TeV.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$b_{B-L}$</th>
+<th>largest $M_C/M_R$ with real $g_R$</th>
+<th>that $M_R$</th>
+<th>inside the one-loop domain?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$12$</td>
+<td>none below $10^{12}$</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$40$</td>
+<td>none below $10^{12}$</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr>
+<td>$120$</td>
+<td>$1.6\times10^{9}$</td>
+<td>$0.15$ MeV</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$150$</td>
+<td>$9.1\times10^{6}$</td>
+<td>$27$ MeV</td>
+<td>no</td>
+</tr>
+<tr>
+<td>$200$</td>
+<td>$8.8\times10^{4}$</td>
+<td>$2.8$ GeV</td>
+<td>no</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The published figure, $M_C/M_R\lesssim10^{6}$–$10^{7}$, is the $b_{B-L}\approx150$ row.</strong> It is a correct computation of the condition for that coefficient, and it is not the model's number, because the model's minimal content gives $b_{B-L}\approx10$ to $12$ — a direct count over three generations and the scalar multiplets gives about ten, and the corpus's figure of twelve is close to it. <strong>That is not a small discrepancy: the criterion is exponential in the coefficient, so a factor of thirteen in $b_{B-L}$ moves the ceiling by twelve orders of magnitude in the ratio.</strong></p>
+<p><strong>And in every row where the ceiling exists, it sits below the electroweak scale.</strong> A ceiling at $M_R=27$ MeV is a statement about the extrapolation of one-loop running through the QCD transition, not about the model. <strong>The honest form of the third problem is therefore not a bound but a condition: the reality of $g_R$ constrains the content, and at the minimal content it constrains nothing that a reader can check.</strong></p>
+<p><strong>What follows for the model, and it is the useful part.</strong> The third problem is not independent of the first two. <strong>The content that would make the ceiling bite is the same freedom the model leaves open in the spin-0 sector</strong>, so a reader who adds multiplets changes the ceiling, and a reader who fixes the multiplet list acquires a bound. <strong>The coupling sector's third defect is therefore a missing multiplet list, and the missing multiplet list is a missing scalar sector — which the frame article already admits it does not have.</strong></p>
+<h2 id="7-what-patisalam-did-and-what-it-cost">7. What Pati–Salam Did, and What It Cost</h2>
+<p><strong>Pati–Salam is the case $g_4=g_L=g_R$ at one scale, and that single assumption is the whole of the difference.</strong> It is worth stating what the assumption bought before stating what it cost, because the model's reputation rests on the buying rather than on the paying.</p>
+<p><strong>What the corpus took from it, and what it refused, is one line.</strong> The group, the sixteen, the branchings, the $\mathbb{Z}_2$ quotient, the trace that puts lepton number inside $\mathrm{SU}(4)$, the parity automorphism that makes the two multiplets one: <strong>all kept, because none of them is a coupling statement and every one of them is built by the algebra.</strong> The single assumption $g_L=g_R=g_4$ at one scale: <strong>refused, because it is scale-bearing and it is the assumption the measurements contradict.</strong> So the Four Colours Left–Right Model is Pati–Salam with that one postulate removed — the same frame, $g_4=g_3(M_C)$ left as the only tie, $g_R$ left free — and what the removal costs is the number $\tfrac38$ and with it the only prediction either version had. <strong>That is why the model these notes now describe claims no coupling at all: the claim that failed is not replaced by a weaker one, it is dropped.</strong></p>
+<p><strong>What it bought is one exact number.</strong> At $M_{PS}$, with $g_L=g_R=g_4$ and $g_{B-L}^2=\tfrac38g_4^2$, the photon's composition gives</p>
+<p>$$
+\frac{1}{e^2}=\frac{1}{g_L^2}+\frac{1}{g_R^2}+\frac{1}{4g_{B-L}^2}=\frac{1}{g_4^2}\left(1+1+\frac{2}{3}\right)=\frac{8}{3g_4^2},
+$$</p>
+<p><strong>so $e^2=\tfrac38g_4^2$ and</strong></p>
+<p>$$
+\sin^2\theta_W(M_{PS})=\frac{e^2}{g_L^2}=\frac38 .
+$$</p>
+<p><strong>The trap in the arithmetic, which is worth recording because it is easy to fall into and hard to notice.</strong> A reader who normalises the abelian generator in the Grand-Unified convention, writing $\operatorname{tr}(Y/2)^{2}$ in the denominator, computes</p>
+<p>$$
+\frac{\operatorname{tr}\,(Y/2)^{2}}{\operatorname{tr}T_{3L}^{2}+\operatorname{tr}\,(Y/2)^{2}}
+=\frac{5/6}{2+5/6}=\frac{5}{17}=0.294 ,
+$$</p>
+<p><strong>and $0.294$ is not $\tfrac38$. The two numbers differ by $21\%$ and only the second is the angle.</strong> The reason is that $\tfrac38$ is a ratio over $Q$, the charge that is unbroken, and the ratio over $Q$ is the only one in which the equality of the three couplings cancels; the normalisation of $Y$ never enters it. <strong>A table that quotes $0.294$ as the Pati–Salam prediction has normalised the wrong generator, and it will make the model look as if it fails at a scale where it does not.</strong></p>
+<p><strong>That is a prediction in the strict sense.</strong> One assumption, one scale, one number, and the number is fixed without choosing anything. <strong>It is the model's claim to be more than a relabelling, and it is also the claim that failed.</strong></p>
+<p><strong>The failure has two faces, and they are one failure seen from two ends.</strong> Run the measured couplings up from $M_Z$ and ask at which scale each of the two conditions holds.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>scale where it holds</th>
+<th>what is wrong there</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sin^2\theta_W=\tfrac38$</td>
+<td>$1.02\times10^{13}$ GeV</td>
+<td>$\alpha_3^{-1}=36.8$ against $\alpha_L^{-1}=42.4$; <strong>colour is $13.2\%$ short</strong></td>
+</tr>
+<tr>
+<td>$g_4=g_L$</td>
+<td>$9.79\times10^{16}$ GeV</td>
+<td>$\sin^2\theta_W=0.4365$ against $\tfrac38$; <strong>the angle is $16.4\%$ high</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two scales are four decades apart, and no single scale can be both.</strong> That is the failure, stated as an arithmetic fact rather than as a percentage of something: <strong>one boundary value cannot satisfy two conditions that hold at different energies.</strong></p>
+<p><strong>The second face is the one the corpus should quote, because it is the sharper.</strong> At the scale where the angle is exact — the scale the prediction actually picks out — <strong>colour is $13\%$ short in its inverse coupling.</strong> A reader who asks "which is late, colour or the angle?" gets the answer "colour, by four decades", and it is the colour mismatch that kills the model, not the angle.</p>
+<p><strong>The mass relations, which are the other half of the claim.</strong> A single bidoublet puts down-type quarks and charged leptons in one Yukawa term, so it gives one matrix for two sectors, hence <strong>proportional spectra</strong> — a statement about counting, with no scale in it. <strong>The per-generation equalities the literature writes from it, and their measured comparison, are in the flagged public article, §6.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>ratio</th>
+<th>measured</th>
+<th>predicted</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_d/m_e$</td>
+<td>$4.67/0.511=9.1$</td>
+<td>$1$</td>
+<td><strong>fails by $9$</strong></td>
+</tr>
+<tr>
+<td>$m_s/m_\mu$</td>
+<td>$93.4/105.7=0.88$</td>
+<td>$1$</td>
+<td><strong>holds to $12\%$</strong></td>
+</tr>
+<tr>
+<td>$m_b/m_\tau$</td>
+<td>$2.35$ at $m_b$; $\simeq1$ after running</td>
+<td>$1$</td>
+<td><strong>holds after running</strong></td>
+</tr>
+<tr>
+<td>$m_u/m_\nu$</td>
+<td>$\sim4\times10^{7}$</td>
+<td>$1$</td>
+<td><strong>fails by seven orders</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of four hold and two fail, and the pattern is not random.</strong> The relation is right where the masses are large and wrong where they are small, which is what a leading-order relation broken by the first generation's small Yukawa couplings looks like. <strong>That is a more informative failure than a relation that is simply false, and it is why the corpus's earlier "wrong by a factor $2.2$" was worse than wrong: it hid the pattern.</strong></p>
+<p><strong>The direction is the part that tables hide.</strong> One bidoublet puts the down-type quarks and the charged leptons in one Yukawa term and the up-type quarks and the neutrinos in the conjugate of it, so the relations it gives are</p>
+<p>$$
+m_d=m_e\qquad\text{and}\qquad m_u=m_\nu ,
+$$</p>
+<p><strong>and not $m_u=m_d$ or $m_e=m_\nu$.</strong> The pairings are fixed by the $\mathrm{SU}(4)$ index, not by the generation, so a table that pairs the up quark with the down quark has lost the group and kept only the word "relation". <strong>Every row above is one of the two correct pairings, and a reader who re-derives the rows from a wrong pairing will get verdicts that look better than the theory's.</strong></p>
+<p><strong>The scalar that makes the neutrino mass renormalisable, which the record should name.</strong> The dimension-five operator of the type-I seesaw is not the whole story in a theory with scalars in the $\mathbf{10}$ or the $\mathbf{15}$ of $\mathrm{SU}(4)$: the multiplets $(\mathbf{10},\mathbf1,\mathbf3)$ and $(\mathbf{15},\mathbf1,\mathbf3)$ contain a triplet of $\mathrm{SU}(2)_R$ whose vacuum value gives $\nu_R$ a mass directly. <strong>The mass is tied to $M_R$, and the content needed is inside the sixteen's own group, so the type-I seesaw runs with no field beyond the ones already present.</strong> That is a statement about content and not a coupling claim, which is why it is recorded here and not in a public article.</p>
+<p><strong>The standard repair is unavailable here, and that is the structural point.</strong> The literature's answer to the coupling failure is $\mathrm{SO}(10)$, which contains $\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ as a maximal subgroup and whose extra running closes the gap. <strong>The corpus has argued elsewhere that a larger simple group does not fit on the carrier.</strong> So the repair that the field used is outside the framework, and what remains is a patchwork assembled from inside a smaller algebra.</p>
+<p><strong>The repair that is available costs the prediction, and the cost is in the running rather than at the matching.</strong> A second bidoublet, or a $(\mathbf{15},\mathbf2,\mathbf2)$, separates the up-sector Yukawa from the down-sector one, which is what the mass relations need. It also changes the one-loop beta coefficients above $M_{PS}$, so the value the theory lands on at $M_Z$ moves. <strong>The tree-level number $\tfrac38$ at $M_{PS}$ survives, because it is a ratio of traces over the sixteen and no scalar enters it. What does not survive is the claim that the theory reaches the measured $0.231$ from $(M_{PS},\alpha_4)$ alone.</strong> A repaired model therefore keeps the exact number and loses the numerical success, which is the opposite trade from the one usually quoted.</p>
+<p><strong>Pati–Salam claims more, but fails more.</strong> It claimed a number, and the number was checked, and it missed. <strong>The Four Colours Left–Right Model claims no number, and therefore misses nothing, and therefore proves nothing.</strong> That is the trade, and it is the honest way to state it.</p>
+<h3 id="the-inventory-sorted-by-what-it-kills">The Inventory, Sorted by What It Kills</h3>
+<p><strong>The same rows, read against the Four Colours Model rather than against Pati–Salam.</strong> Every row is a measurement, the model's answer and a verdict, and the sorting is the point.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>what is measured</th>
+<th>measured</th>
+<th>the model</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\sin^2\theta_W$, $\alpha_{\mathrm{em}}$, $\alpha_s$ together</td>
+<td>$(0.2312,\ 1/128,\ 0.118)$</td>
+<td>reproduced by construction; $\tfrac38$ conditional</td>
+<td><strong>the constraint, not a conflict</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>$m_d/m_e$</td>
+<td>$9.1$</td>
+<td>no relation claimed</td>
+<td><strong>not a claim</strong></td>
+</tr>
+<tr>
+<td>3</td>
+<td>$m_u/m_\nu$</td>
+<td>$\sim4\times10^{7}$</td>
+<td>no relation claimed</td>
+<td><strong>not a claim</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td>$m_s/m_\mu$</td>
+<td>$0.88$</td>
+<td>no relation claimed</td>
+<td><strong>not a claim</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>$m_b/m_\tau$</td>
+<td>$2.35$ at $m_b$; $\simeq1$ after running</td>
+<td>no relation claimed</td>
+<td><strong>not a claim</strong></td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\rho$</td>
+<td>$1.00038\pm0.00020$</td>
+<td>$1$ for aligned vevs; a tuning otherwise</td>
+<td>a tuning, not a failure</td>
+</tr>
+<tr>
+<td>7</td>
+<td>dark matter</td>
+<td>$\Omega_{\mathrm{DM}}\simeq0.26$</td>
+<td>no candidate</td>
+<td><strong>absent</strong></td>
+</tr>
+<tr>
+<td>8</td>
+<td>baryon asymmetry</td>
+<td>$\eta\simeq6\times10^{-10}$</td>
+<td>too slow in the gauge sector</td>
+<td><strong>absent</strong>, fixable</td>
+</tr>
+<tr>
+<td>9</td>
+<td>neutrino masses</td>
+<td>$\lesssim0.1$ eV</td>
+<td>needs a seesaw</td>
+<td><strong>absent</strong>, fixable</td>
+</tr>
+<tr>
+<td>10</td>
+<td>leptoquarks</td>
+<td>not seen</td>
+<td>$M_X\gtrsim2\times10^{2}$ TeV</td>
+<td><strong>untested</strong></td>
+</tr>
+<tr>
+<td>11</td>
+<td>$W_R$, $Z_R$</td>
+<td>not seen</td>
+<td>$\gtrsim70$ TeV</td>
+<td><strong>untested</strong></td>
+</tr>
+<tr>
+<td>12</td>
+<td>$p\to e^{+}\pi^{0}$</td>
+<td>$\tau>2.4\times10^{34}$ yr</td>
+<td>dimension nine</td>
+<td><strong>consistent</strong></td>
+</tr>
+<tr>
+<td>13</td>
+<td>$K_L\to\mu e$</td>
+<td>$<4.7\times10^{-12}$</td>
+<td>at the limit around $230$ TeV</td>
+<td><strong>at the limit</strong></td>
+</tr>
+<tr>
+<td>14</td>
+<td>$\mu\to e\gamma$</td>
+<td>$<4.2\times10^{-13}$</td>
+<td>$\sim10^{-15}$</td>
+<td><strong>consistent</strong></td>
+</tr>
+<tr>
+<td>15</td>
+<td>neutron EDM</td>
+<td>$<1.8\times10^{-26}\,e\,\mathrm{cm}$</td>
+<td>no new phase in the gauge sector</td>
+<td><strong>consistent</strong></td>
+</tr>
+<tr>
+<td>16</td>
+<td>$m_h$</td>
+<td>$125.25$ GeV</td>
+<td>quartic free</td>
+<td><strong>no prediction</strong></td>
+</tr>
+<tr>
+<td>17</td>
+<td>$g-2$</td>
+<td>$\sim4\sigma$ from $e^{+}e^{-}$ data</td>
+<td>no tree-level contribution</td>
+<td><strong>no prediction</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Read the verdict column as three groups and the table stops being a score card.</strong> Rows $1$–$5$ are where Pati–Salam made claims and this model does not. Rows $7$–$9$ are absences, not conflicts. Rows $10$–$15$ are untested or confirmed, and a null result there is what the model predicts.</p>
+<p><strong>The discipline that the table enforces.</strong> A model that predicts nothing observable at current sensitivity and sees nothing is confirmed, not excluded. <strong>The failure of Pati–Salam was in row $1$ and rows $2$–$5$, where it made definite numerical claims and missed them. The Four Colours Model makes none there, which is why it has no conflict and also why it has no confirmation.</strong></p>
+<p><strong>What is absent is absent, not wrong.</strong> Dark matter, the baryon asymmetry and the neutrino masses are three missing chapters, not three false pages. <strong>A reader who wants the model to explain the universe will be disappointed; a reader who wants it to describe the gauge sector will not.</strong></p>
+<h2 id="8-the-patch-menu-and-why-it-does-not-repair-the-coupling">8. The Patch Menu, and Why It Does Not Repair the Coupling</h2>
+<p><strong>Four patches address the unified model's failures, and none of them touches $g_R$.</strong> They are listed here because the migration keeps the option of adding them, and because two of them change the third open problem.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>patch</th>
+<th>what it fixes</th>
+<th>cost</th>
+<th>effect on the coupling sector</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a seesaw multiplet, $(\mathbf{10},\mathbf1,\mathbf3)$ or the $(\mathbf{15},\mathbf2,\mathbf2)$</td>
+<td>$m_u=m_\nu$; neutrino masses</td>
+<td>one multiplet, one scale</td>
+<td>none; it fixes a mass relation</td>
+</tr>
+<tr>
+<td>leptogenesis through $\nu_R$</td>
+<td>the baryon asymmetry</td>
+<td>none beyond the seesaw</td>
+<td>none</td>
+</tr>
+<tr>
+<td>a second bidoublet $(\mathbf1,\mathbf2,\mathbf2)$</td>
+<td>$m_d/m_e$; independent up and down matrices</td>
+<td>one field, two more vevs, a $\rho$ tuning</td>
+<td>none on $g_R$; changes $b_{B-L}$</td>
+</tr>
+<tr>
+<td>extra matter, e.g. the $(\mathbf{15},\mathbf2,\mathbf2)$</td>
+<td>the beta functions</td>
+<td>diquark couplings, proton decay, a discrete symmetry</td>
+<td><strong>raises $b_{B-L}$, which is the only knob for the ceiling of §6</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The last row is the one that matters for this article.</strong> Every patch that adds coloured or $B-L$-charged matter raises $b_{B-L}$, and §6's criterion says the ceiling appears once $b_{B-L}$ passes about twenty-seven. <strong>So the third open problem is not solved by adding matter; it is created by adding matter.</strong> That is worth stating plainly: the model is unbounded at minimal content and bounded at rich content, and neither situation is a prediction.</p>
+<p><strong>The patch that would repair the coupling properly is the one the framework refuses.</strong> Embedding in $\mathrm{SO}(10)$ replaces one boundary value and two conditions with one coupling and no conditions, which is why it works in the literature. <strong>The corpus cannot take that route, and it should say so in every article that mentions the coupling failure rather than offering the patches as a substitute.</strong></p>
+<h2 id="9-against-the-standard-model-two-standards">9. Against the Standard Model: Two Standards</h2>
+<p><strong>The comparison is not between two models of the same ambition, and pretending otherwise is the unfairness that makes the corpus's rhetoric easy to attack.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the Four Colours Model</th>
+<th>the Standard Model</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>what it claims about couplings</td>
+<td>three independent, one tied to $g_3$</td>
+<td>three independent, each measured</td>
+</tr>
+<tr>
+<td>what it predicts</td>
+<td>nothing in the gauge sector</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td>the mass relations</td>
+<td>not predicted, because no multiplet is fixed</td>
+<td>not predicted</td>
+</tr>
+<tr>
+<td>dark matter</td>
+<td>no candidate</td>
+<td>no candidate</td>
+</tr>
+<tr>
+<td>neutrino masses</td>
+<td>needs a seesaw</td>
+<td>zero in the minimal version</td>
+</tr>
+<tr>
+<td>the baryon asymmetry</td>
+<td>too slow in the gauge sector</td>
+<td>CP violation far too small</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>On most rows the two are in the same position, and on one the Standard Model is worse.</strong> The minimal Standard Model has strictly massless neutrinos, which oscillation data refutes, so it is not merely incomplete but wrong. <strong>The Four Colours Model has $\nu_R$ already, which is the field the extension needs.</strong></p>
+<p><strong>What the comparison does not license.</strong> It does not license treating the absence of predictions as a merit. <strong>A model that predicts nothing cannot be confirmed, and a model that cannot be confirmed is not a scientific advance over one that can be checked and fails.</strong> It is a different kind of object, and the corpus should say which kind it is holding.</p>
+<p><strong>What the comparison does license.</strong> It licenses the claim that the model is not refuted. <strong>Every null result — leptoquarks, $W_R$, $Z_R$, proton decay, the muon channels — is what the model predicts at current sensitivity, because its states sit above the reach of the machines.</strong> A model that predicts "nothing observable yet" and sees nothing is confirmed, not excluded. <strong>The failure of Pati–Salam was in a place where it made a definite numerical claim; this model makes none there.</strong></p>
+<h2 id="10-what-the-record-got-wrong-and-how">10. What the Record Got Wrong, and How</h2>
+<p><strong>Three numbers in the corpus's earlier ledgers do not reproduce, and they are corrected here rather than absorbed, because a coupling article built on them would fail its first check.</strong></p>
+<p><strong>The running table runs three couplings the wrong way.</strong> An earlier note tabulated $\alpha_1^{-1}$ and $\alpha_2^{-1}$ as falling with energy — $22.5$ and $13.3$ at $250$ TeV against $59.0$ and $29.6$ at $M_Z$. <strong>Both are asymptotically free, so both inverse couplings rise.</strong> The correct values at $250$ TeV are $\alpha_1^{-1}=53.8$, $\alpha_2^{-1}=33.6$, and the electromagnetic inverse coupling is $123$, not $51$. <strong>The test that catches this is one line: $\alpha_2^{-1}$ cannot fall from $29.6$ to $13.3$ while $\alpha_3^{-1}$ rises from $8.5$ to $17.3$, because $\mathrm{SU}(2)_L$ is as asymptotically free as $\mathrm{SU}(3)$.</strong></p>
+<p><strong>The $g_{B-L}$ column implies a beta coefficient thirteen times the stated one.</strong> The table gave $g_{B-L}=0.429$ at $100$ TeV from $0.522$ at $250$ TeV, a fall that requires $b_{B-L}\approx150$ over half an e-fold. <strong>With $b_{B-L}=12$ the value is $0.512$, and the whole downstream column moves with it.</strong> §2's table is recomputed.</p>
+<p><strong>The hypercharge coefficient was applied in the wrong normalisation, which moves one scale by a factor two.</strong> The earlier computation ran $\alpha_Y^{-1}$ with $b_1=\tfrac{41}{10}$, the coefficient of the grand-unified normalisation, while using the un-normalised $\alpha_Y^{-1}$ itself. <strong>The correct coefficient is $b_Y=\tfrac53b_1=\tfrac{41}{6}$, so $\alpha_Y^{-1}$ runs $\tfrac53$ times faster and the crossing where $g_R=g_L$ sits at $5\times10^{13}$ TeV, not $2.5\times10^{13}$.</strong></p>
+<p><strong>The factor of $2.5$ in the electromagnetic coupling does not exist.</strong> It came from the broken running table. <strong>The real defect at $250$ TeV is a $27\%$ miss in $\sin^2\theta_W$ and a $48\%$ miss in $\alpha_3^{-1}$; the sharpest single statement is the $13\%$ colour shortfall at $10^{13}$ GeV</strong> (§7).</p>
+<p><strong>What the corrections change and what they do not.</strong> They change $g_R/g_L$ from $0.67$–$0.94$ to $0.62$–$0.73$, $M_X/M_{W_R}$ from $1.8$–$2.9$ to $2.2$–$3.1$, and the ceiling from a bound at $10^{6}$–$10^{7}$ to a condition with a threshold at $b_{B-L}\approx27$. <strong>They do not change a single verdict: the coupling triple fails for Pati–Salam, the strip removes the failure, $g_R$ remains an output, and the equality is not restored by a third scale.</strong></p>
+<h2 id="11-the-ledger">11. The Ledger</h2>
+<p><strong>Avowedly split into three columns, because the separation is the point.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the group, the sixteen, the charges, the anomalies, the boson count</td>
+<td><strong>derived</strong></td>
+</tr>
+<tr>
+<td>$g_4=g_3(M_C)$</td>
+<td><strong>derived</strong>, from $\mathrm{SU}(3)\subset\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>the matching relation for $g_Y$</td>
+<td><strong>derived</strong>, from the photon's composition</td>
+</tr>
+<tr>
+<td>the photon's direction $(1,1,\sqrt{2/3})$</td>
+<td><strong>derived</strong>, from $Q$ and the two neutral vacua (§3A.1)</td>
+</tr>
+<tr>
+<td>the photon's coordinates in the three fields</td>
+<td><strong>an output</strong>, given a row (§3A.4)</td>
+</tr>
+<tr>
+<td>$M_X\simeq(2.2\text{–}3.1)M_{W_R}$</td>
+<td><strong>derived from the tie</strong>, given a row</td>
+</tr>
+<tr>
+<td>the three measured couplings at $M_Z$</td>
+<td><strong>reproduced by construction</strong></td>
+</tr>
+<tr>
+<td>$g_R/g_L\in[0.62,0.73]$</td>
+<td><strong>an output</strong>, not a prediction</td>
+</tr>
+<tr>
+<td>the ceiling $M_C/M_R$</td>
+<td><strong>a condition on the content</strong>, not a bound</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W=\tfrac38$</td>
+<td><strong>conditional</strong>: true only if $g_R=g_L$</td>
+</tr>
+<tr>
+<td>a value of $M_C$</td>
+<td><strong>not predicted</strong>, only floored by $K_L\to\mu e$</td>
+</tr>
+<tr>
+<td>a value of $g_R$</td>
+<td><strong>not predicted</strong></td>
+</tr>
+<tr>
+<td>any unification</td>
+<td><strong>not claimed</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two rows that a careless reading turns into predictions are the mass ratio and the coupling ratio.</strong> $M_X/M_{W_R}$ is derived <em>given a row</em>, and the row is chosen. <strong>The number $g_R/g_L$ is computed <em>from</em> the measurements, so it cannot check them.</strong></p>
+<p><strong>The same ledger sorted by §0's test, which is the ledger this note actually keeps.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>category</th>
+<th>the rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>structural</strong></td>
+<td>the group, the sixteen, the charges, the anomalies, the boson count, $g_{B-L}^2=\tfrac38g_4^2$, the matching relation for $g_Y$, the photon's direction $(1,1,\sqrt{2/3})$</td>
+</tr>
+<tr>
+<td><strong>scale-bearing</strong></td>
+<td>$g_4=g_3(M_C)$, $M_X/M_{W_R}$ once the row is chosen, the photon's coordinates $c_i=e\,d_i/g_i$ (§3A), $\sin^2\theta_W=\tfrac38$ at the scale where $g_R=g_L$, every running and every meeting scale</td>
+</tr>
+<tr>
+<td><strong>measured</strong></td>
+<td>$\alpha_{\mathrm{em}}$, $\alpha_s$, $\sin^2\theta_W$ at $M_Z$; the leptoquark floor, which comes from $K_L\to\mu e$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The photon splits across the top two rows, and that is the clearest case of the sorting.</strong> Its direction is structural: a trace-normalisation statement, checkable exactly, the same in every row. Its coordinates are scale-bearing: they are the direction divided by three running couplings, and they move with the row. <strong>One object, two categories, and no way to tell which is which without asking whether the sentence can drop the scale.</strong></p>
+<p><strong>The sorting answers the question the two-column ledger leaves open.</strong> Every structural row is a fact about this model and can be checked by a trace. Every scale-bearing row is a fact about a point on a trajectory, so it is only as good as the trajectory — and the trajectory is computed at one loop, from a content list that is itself not fixed. <strong>That is the whole content of "the couplings are fitted": nothing in the middle row can be refuted without a measurement.</strong></p>
+<h2 id="12-what-would-change-the-picture">12. What Would Change the Picture</h2>
+<p><strong>Five things would, and they are listed in order of what they would settle.</strong></p>
+<ol>
+<li><strong>A derivation of $g_R$ from the carrier.</strong> Nothing else would do as much, because it would convert the model's only fitted number into a prediction and give the coupling sector something to test.</li>
+<li><strong>A reason, from the algebra, that $g_L=g_R$ at some scale — or that it does not hold.</strong> This is §11.4 of the migration note restated: the strip is presently a choice between two defensible positions rather than a consequence.</li>
+<li><strong>A discovery of the leptoquark.</strong> It would fix $M_X$, hence $M_C$, hence the row, and the row would make $g_R$ and $M_{W_R}$ determinate. <strong>One detection would turn three free choices into one.</strong></li>
+<li><strong>A fixed multiplet list.</strong> It would give $b_{B-L}$, hence the ceiling of §6, hence the first real upper bound the model has on its own scales.</li>
+<li><strong>A two-loop computation with thresholds.</strong> It would move the meeting scales of §7 and the curve of §5, and it would not move the freeze, because the freeze is an equality of coefficients rather than a number.</li>
+</ol>
+<p><strong>What would not change the picture.</strong> A null result at the LHC. <strong>Every state the model predicts sits above the reach of the machine, so a null result is the model's own expectation rather than a test of it.</strong></p>
+<h2 id="summary">Summary</h2>
+<p><strong>The model has three couplings, not one, and exactly one tie survives: $g_4=g_3(M_C)$.</strong> Everything else that looks like a relation is either a consequence of the trace normalisation — $g_{B-L}^2=\tfrac38g_4^2$ — or a free choice.</p>
+<p><strong>The couplings reproduce the data by construction.</strong> Below $M_R$ the theory is the Standard Model, so $\alpha_{\mathrm{em}}$, $\alpha_s$ and $\sin^2\theta_W$ are inputs at $M_Z$; above it, one matching equation fixes $g_R$ from $(M_C,M_R)$. <strong>No row of the table is a fit in the statistical sense, and no row is evidence for the model.</strong></p>
+<p><strong>The first open problem is that $g_R$ is an output.</strong> It comes out between $0.62$ and $0.73$ of $g_L$, it moves with the scales, and nothing in the theory fixes it. <strong>The model therefore predicts no coupling, and cannot be confirmed by one.</strong></p>
+<p><strong>The second is that the equality cannot be restored above $M_C$.</strong> Parity makes $c_{2L}=c_{2R}$, which freezes the gap between $g_L$ and $g_R$, so a third scale moves the meeting of colour and leaves the meeting of the two $\mathrm{SU}(2)$ factors exactly where it was. <strong>Closing the gap needs about thirty more left doublets than right doublets, which is a different theory.</strong></p>
+<p><strong>The third is that the reality of $g_R$ bounds the content, not the scales.</strong> The condition is $\alpha_{B-L}^{-1}<4\alpha_Y^{-1}$, and it bites only if $b_{B-L}>4b_Y\approx27$. <strong>The minimal content gives about ten to twelve, so at minimal content there is no ceiling; the published $10^{6}$–$10^{7}$ is the $b_{B-L}\approx150$ row, and in every row where the ceiling exists it lies below the electroweak scale.</strong></p>
+<p><strong>Pati–Salam is the case $g_4=g_L=g_R$, and it claimed $\sin^2\theta_W=\tfrac38$.</strong> That claim is checkable and it fails: the angle is exact at $10^{13}$ GeV where colour is $13\%$ short, and colour is exact at $10^{17}$ GeV where the angle is $16\%$ high. <strong>The two conditions hold four decades apart, so no single scale satisfies both, and that is the failure in one line.</strong></p>
+<p><strong>What the model is, in one sentence.</strong> It is a model whose structure is derived, whose couplings are fitted, and whose only experimental commitment is a leptoquark floor — <strong>and it is honest about all three, which is more than the unified version was.</strong></p>
+<p><strong>The vocabulary, in one line.</strong> Ask whether the sentence can drop the scale. If it can, the algebra decides it and a trace catches the error; if it cannot, nothing decides it, and only an experiment can. <strong>Everything in this note's middle category is quarantined here for that reason and not for a reason of taste</strong> — §0.</p>
+<p><strong>The photon's coordinates, and the only place they are computed.</strong> The mixture's direction, $(1,1,\sqrt{2/3})$ in $(T_{3L},T_{3R},T^{15})$, is algebra and lives in the photon note: it is the coefficient vector of $Q$, and it is null because both vacua are electrically neutral. <strong>Its coordinates in the three gauge fields are $c_i=e\,d_i/g_i$, and they are here, §3A.</strong> At equal couplings they equal the direction and the three denominators of $1/e^{2}$ sum to $\tfrac83$; split, the leading pair moves to $1{:}1.36$–$1{:}1.58$, the third entry to $0.60$–$0.75$, and the angle called $\tfrac38$ becomes $0.255$–$0.292$ at $M_R$. <strong>So the $\tfrac38$ was never a fact about the photon. It is a fact about the equal-coupling case, read off the photon.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_4$</td>
+<td>the $\mathrm{SU}(4)$ coupling, tied to $g_3(M_C)$</td>
+</tr>
+<tr>
+<td>$g_{B-L}$</td>
+<td>the abelian coupling of the fifteenth Cartan, $g_{B-L}^2=\tfrac38g_4^2$ at $M_C$</td>
+</tr>
+<tr>
+<td>$g_L$, $g_R$</td>
+<td>the $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ couplings</td>
+</tr>
+<tr>
+<td>$g_Y$</td>
+<td>the hypercharge coupling, $\tfrac{1}{g_Y^2}=\tfrac{1}{g_R^2}+\tfrac{1}{4g_{B-L}^2}$ at $M_R$</td>
+</tr>
+<tr>
+<td>$\alpha_i^{-1}$</td>
+<td>inverse couplings, $4\pi/g_i^2$</td>
+</tr>
+<tr>
+<td>$b_i$</td>
+<td>one-loop beta coefficients, in $\alpha^{-1}(\mu)=\alpha^{-1}(M_Z)-\tfrac{b_i}{2\pi}\ln(\mu/M_Z)$</td>
+</tr>
+<tr>
+<td>$b_Y$</td>
+<td>$41/6$, the hypercharge coefficient in the un-normalised convention</td>
+</tr>
+<tr>
+<td>$M_C$</td>
+<td>the scale at which $\mathrm{SU}(4)$ breaks to $\mathrm{SU}(3)\times\mathrm{U}(1)_{B-L}$</td>
+</tr>
+<tr>
+<td>$M_R$</td>
+<td>the scale at which $\mathrm{SU}(2)_R$ breaks, giving hypercharge</td>
+</tr>
+<tr>
+<td>$M_{PS}$</td>
+<td>the single scale of the unified model, $M_C=M_R=M_{PS}$</td>
+</tr>
+<tr>
+<td>$c_{2L}$, $c_{2R}$</td>
+<td>the $\mathrm{SU}(2)$ beta coefficients, equal above $M_R$ by parity</td>
+</tr>
+<tr>
+<td>$M_X$</td>
+<td>the leptoquark mass, $\sqrt2\,(g_4/g_R)M_{W_R}$</td>
+</tr>
+<tr>
+<td>$d$</td>
+<td>the photon's direction in $(T_{3L},T_{3R},T^{15})$, $(1,1,\sqrt{2/3})$, the coefficient vector of $Q$</td>
+</tr>
+<tr>
+<td>$c_L,c_R,c_B$</td>
+<td>the photon's coordinates in the three gauge fields, $c_i=e\,d_i/g_i$, §3A</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The frame: the group, the sixteen, the chain and the declarations.</li>
+<li><a href="../articles_physics/the-breaking-chain-and-the-boson-spectrum.html">The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons</a>. The neutral mass matrix, the null vector, and the three denominators in their own place.</li>
+<li><a href="../articles_physics/the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture: One Null Direction, Three Parents</a>. The mixture's direction in the neutral space, purged of the coupling; §3A of this note is its other half.</li>
+<li><a href="../articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html">The Scalar Sector and the Leptoquark Bounds: Twenty-Four Real Components, Six Unseen States, Two Scales</a>. The multiplet list the third problem turns on.</li>
+<li><a href="../articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html">Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It</a>. Where $M_X\gtrsim2\times10^{2}$ TeV comes from.</li>
+<li><a href="../articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a>. Why $\mathrm{SO}(10)$ is unavailable here.</li>
+<li><a href="internal-note-the-four-colours-left-right-model.html">Internal Note: The Four Colours Left–Right Model</a>. §7 for what of the translation survives the strip and §7.5 for the ledger of the ten statements it changed.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

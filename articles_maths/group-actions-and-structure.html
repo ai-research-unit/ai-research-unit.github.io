@@ -89,13 +89,13 @@ $$</p>
 \boxed{\;|\operatorname{Orb}(x)| = [G : \operatorname{Stab}(x)] = \frac{|G|}{|\operatorname{Stab}(x)|}\;},
 $$</p>
 <p>so the size of every orbit divides $|G|$.</p>
-<p><strong>Proof.</strong> If $b = a h$ with $h \in \operatorname{Stab}(x)$, then $b \cdot x = a \cdot (h \cdot x) = a \cdot x$, so $\Phi_x$ is well defined. It is surjective by definition of the orbit. If $a \cdot x = b \cdot x$, then $b^{-1} a \cdot x = x$, so $b^{-1} a \in \operatorname{Stab}(x)$ and hence $a \operatorname{Stab}(x) = b \operatorname{Stab}(x)$; so $\Phi_x$ is injective. When $G$ is finite, $G / \operatorname{Stab}(x)$ is a coset space of size $[G : \operatorname{Stab}(x)]$, which equals $|G| / |\operatorname{Stab}(x)|$ by <em>Groups</em>, §6.</p>
+<p><strong>Proof.</strong> If $b = a h$ with $h \in \operatorname{Stab}(x)$, then $b \cdot x = a \cdot (h \cdot x) = a \cdot x$, so $\Phi_x$ is well defined. It is surjective by definition of the orbit. If $a \cdot x = b \cdot x$, then $b^{-1} a \cdot x = x$, so $b^{-1} a \in \operatorname{Stab}(x)$ and hence $a \operatorname{Stab}(x) = b \operatorname{Stab}(x)$; so $\Phi_x$ is injective. When $G$ is finite, $G / \operatorname{Stab}(x)$ is a coset space of size $[G : \operatorname{Stab}(x)]$, which equals $|G| / |\operatorname{Stab}(x)|$ by <em>Groups</em>.</p>
 <p>The theorem is the workhorse of the subject. Two immediate consequences are used constantly. First, the orbit decomposition</p>
 <p>$$
 |X| = \sum_{\text{orbits } \mathcal{O}} |\mathcal{O}|
 $$</p>
 <p>expresses the size of a $G$-set as a sum of divisors of $|G|$. Second, if $G$ acts transitively on $X$, then $X$ is isomorphic to the coset $G$-set $G/H$ for $H = \operatorname{Stab}(x)$, and so the transitive $G$-sets are classified up to isomorphism by the conjugacy classes of subgroups of $G$.</p>
-<p><strong>Example.</strong> The action of $S_4$ on the six two-element subsets of $\{1,2,3,4\}$ is transitive, and the stabiliser of $\{1,2\}$ has order $4$, so $6 = 24/4$, in accordance with <em>Groups</em>, §11.</p>
+<p><strong>Example.</strong> The action of $S_4$ on the six two-element subsets of $\{1,2,3,4\}$ is transitive, and the stabiliser of $\{1,2\}$ has order $4$, so $6 = 24/4$, in accordance with <em>Groups</em>.</p>
 <p><strong>Example.</strong> Let $H \leq G$ and let $G$ act on $G/H$ by left translation. The action is transitive and the stabiliser of the coset $H$ is $H$ itself. The kernel of the action is the <strong>core</strong> $\bigcap_{a \in G} a H a^{-1}$, the largest subgroup of $H$ normal in $G$; thus $G/\operatorname{core}(H)$ embeds in $\operatorname{sym}(G/H)$.</p>
 <h3 id="the-conjugation-action-and-the-class-equation">The Conjugation Action and the Class Equation</h3>
 <p>The action of $G$ on itself by conjugation, $a \cdot x = a x a^{-1}$, has for orbits the <strong>conjugacy classes</strong>, and the stabiliser of $x$ is the <strong>centraliser</strong></p>
