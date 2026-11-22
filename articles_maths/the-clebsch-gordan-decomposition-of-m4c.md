@@ -4,7 +4,7 @@
 
 **The subject.** The algebra of order four is the tensor square of its own spin module, and the tensor square of the module of label $\tfrac32$ decomposes into four irreducible pieces of labels $3,2,1,0$. The article proves the identification, computes the four summands with their dimensions, and expresses the projectors as polynomials in the Casimir.
 
-**The order of the article.** The first section identifies the algebra with $V\otimes V^{*}$ and then with $V\otimes V$. The second applies the Clebsch–Gordan rule and counts dimensions. The third checks the result on weights. The fourth records the Casimir spectrum and the projectors. The fifth states the general rule at order $n$ and draws the boundary with the articles on the individual carriers.
+**The order of the article.** The first section identifies the algebra with $V\otimes V^{*}$ and then with $V\otimes V$. The section after it writes the action of the rotor on the algebra as the Hermitian pair $\rho(U)M\rho(U)^{\dagger}$, one operator on each side. The next applies the Clebsch–Gordan rule and counts dimensions. The third checks the result on weights. The fourth records the Casimir spectrum and the projectors. The fifth states the general rule at order $n$ and draws the boundary with the articles on the individual carriers.
 
 **It assumes** *The Four Weights of the Module and the Half Angle at $n=4$* for the weight basis and *The Spin Group at $n=4$: the Principal Copy, $\operatorname{Sym}^3$ and the Kernel $\{\pm\mathrm I\}$* for the copy. The row at order two is *The Clebsch–Gordan Decomposition of the Biquaternion Algebra*.
 
@@ -29,6 +29,52 @@
 **Corollary.** The conjugation action on the algebra is the tensor product of the module with itself.
 
 *Proof.* The two propositions composed.
+
+## The Hermitian Pair of Operators Acting on Two Sides
+
+**Definition.** Let $U$ be an element of the spin group and let $\rho(U)$ be its matrix of label $\tfrac32$ on $V_{3/2}=\mathbb{C}^4$. The **Hermitian pair** of $\rho(U)$ is the pair $\bigl(\rho(U),\rho(U)^{\dagger}\bigr)$, read as two operators, one acting on the left of a matrix and one on the right. The pair acts on the algebra by
+$$
+\Phi_U:\ M\longmapsto \rho(U)\,M\,\rho(U)^{\dagger},\qquad M\in M_4(\mathbb{C}).
+$$
+The two members of the pair are Hermitian conjugates of each other, and each is unitary, so the pair is the operator and its inverse.
+
+**Proposition.** $\Phi_U$ is a linear map of the sixteen-dimensional space into itself, and it is invertible, with inverse $\Phi_{U^{\dagger}}$.
+
+*Proof.* Linearity in $M$ is clear. The product $\rho(U)\rho(U)^{\dagger}=I$ gives $\Phi_{U}\Phi_{U^{\dagger}}=\Phi_{U^{\dagger}}\Phi_U=\mathrm{id}$, because $\rho(U^{\dagger})=\rho(U)^{-1}=\rho(U)^{\dagger}$.
+
+**Proposition (one side is not enough).** The left multiplication $M\mapsto\rho(U)M$ alone is not a map of algebras, and the same for the right; the pair together is.
+
+*Proof.* The left map sends $MN$ to $\rho(U)MN$, while the product of the images is $\rho(U)M\rho(U)N$, and the two differ unless $\rho(U)=\mathrm I$. The pair sends $MN$ to $\rho(U)MN\rho(U)^{\dagger}$, which is the product of $\rho(U)M\rho(U)^{\dagger}$ and $\rho(U)N\rho(U)^{\dagger}$.
+
+**Theorem.** Under the identification $\operatorname{End}(V_{3/2})\cong V_{3/2}\otimes V_{3/2}^{*}$ of the first section, the pair is the tensor product of the matrix and the contragredient matrix,
+$$
+\Phi_U=\rho(U)\otimes\rho(U)^{*} .
+$$
+For $\mathrm{SU}(2)$ the contragredient is equivalent to the matrix itself, because the module carries an invariant alternating form; the pair is therefore, up to that equivalence, the tensor square $\rho(U)\otimes\rho(U)$ acting on $V_{3/2}\otimes V_{3/2}$.
+
+*Proof.* Write $M$ as the sum of its sixteen matrix units; the map sends a unit to the outer product of a column read through $\rho(U)$ and a row read through $\rho(U)^{\dagger}$, which is the tensor product of the two actions, one on each factor. The second factor is the complex conjugate matrix, which is the contragredient read in a fixed basis, and for $\mathrm{SU}(2)$ it is equivalent to the matrix itself.
+
+**Corollary (the four carriers are invariant).** Each of the four summands $V_3,V_2,V_1,V_0$ is carried into itself by the pair.
+
+*Proof.* The pair is a tensor product of two copies of the same irreducible module, so it commutes with the copy acting diagonally; a map commuting with the copy preserves the isotypic decomposition, and here each label occurs once.
+
+**Corollary (the pair is unitary on sixteen dimensions).** For the Hilbert–Schmidt form $\langle A,B\rangle=\operatorname{tr}(A^{\dagger}B)$ the map $\Phi_U$ is unitary; the sixteen-by-sixteen matrix of the pair is therefore an element of $U(16)$, and of $SU(16)$ because its determinant is one.
+
+*Proof.* $\langle\Phi_U A,\Phi_U B\rangle=\operatorname{tr}(\rho(U)A^{\dagger}\rho(U)^{\dagger}\rho(U)B\rho(U)^{\dagger})=\operatorname{tr}(A^{\dagger}B)$. The determinant is one because the pair is a tensor product of two matrices of determinant one.
+
+**Proposition (the pair has period $2\pi$ in the angle).** If $U$ is replaced by $-U$, the pair is unchanged, while $\rho(-U)=-\rho(U)$. So the pair has the period $2\pi$ of the rotation group and the matrix $\rho$ has the period $4\pi$ of the sphere.
+
+*Proof.* $\Phi_{-U}(M)=(-1)M(-1)=M$ for the factor in front and the factor behind, while $\rho(-U)=-\rho(U)$ because the exponential of a shift by $2\pi$ in the angle multiplies the matrix by $-1$.
+
+**Proposition (the infinitesimal pair).** At $U=e^{-i\vec\theta\cdot\vec J}$ the derivative of the pair at $\vec\theta=0$ is $M\mapsto-i[\vec\theta\cdot\vec J,M]$, that is $-i\operatorname{ad}_{\vec\theta\cdot\vec J}$. The Lie algebra of the pair is spanned by the three $\operatorname{ad}_{J_i}$, and the Casimir of the pair is $\sum_i\operatorname{ad}_{J_i}^{2}$.
+
+*Proof.* Differentiate $\rho(U)M\rho(U)^{\dagger}$ at the identity, using $\rho(U)^{\dagger}=\rho(U)^{-1}$; the two terms are $[\vec\theta\cdot\vec J,M]$ and its negative is absorbed by the $i$.
+
+**Corollary (the two routes to the four carriers coincide).** The Casimir of the pair has the spectrum $0,2,6,12$ with multiplicities $1,3,5,7$, the same four values the Clebsch–Gordan rule gives, and the pair acts on the summand of label $k$ as the matrix of label $k$.
+
+*Proof.* The Casimir of the tensor product is the sum of the two Casimirs plus twice the mixed term; on $V_{3/2}\otimes V_{3/2}$ the sum is $\tfrac{15}{4}+\tfrac{15}{4}+2\sum_i J_i\otimes J_i$, which on the summand of label $k$ takes the value $k(k+1)$. The second statement is the corollary on the invariance of the summands.
+
+**The reading.** The pair is the reason the algebra carries four carriers and not one. A single matrix $\rho(U)$ of label $\tfrac32$ generates, through its action on the two sides, the representations of labels $3,2,1,0$ at once: the label of the carrier is the label of the symmetric or alternating piece of the tensor square, and the pair sees only those pieces. The pair is also the reason the labels are integers. The matrix changes sign when the rotor goes once around, and the pair does not, so the pair is a representation of the rotation group and the four carriers are its representations; the matrix is a representation of the sphere over it.
 
 ## The Rule
 
@@ -70,7 +116,7 @@ together with $2,\;1,\;0,\;-1,\;-2$ and $1,\;0,\;-1$ and $0$.
 
 ## The Casimir and the Projectors
 
-**Definition.** The **Casimir element** of the copy acting on the algebra is $C=-\sum_{i}\operatorname{ad}_{J_i}^{2}$, where $J_1,J_2,J_3$ are the three Hermitian generators.
+**Definition.** The **Casimir element** of the copy acting on the algebra is $C=\sum_{i}\operatorname{ad}_{J_i}^{2}$, where $J_1,J_2,J_3$ are the three Hermitian generators. The sign is the one that makes the Casimir positive: the operator $\operatorname{ad}_{J}$ is self-adjoint for the Hilbert–Schmidt form, so $\operatorname{ad}_{J}^{2}$ is positive semidefinite and the displayed sum is the positive operator whose eigenvalues are the values $k(k+1)$.
 
 **Proposition.** $C$ acts on the summand of label $k$ by the scalar $k(k+1)$, so its spectrum on the algebra is $0,2,6,12$ with multiplicities $1,3,5,7$, computed to a residual of order $10^{-15}$.
 
@@ -130,7 +176,9 @@ At order $n$ the decomposition is $\bigoplus_{k=0}^{n-1}V_k$ with $\sum(2k+1)=n^
 |---|---|
 | $V=V_{3/2}$ | the module, complex dimension four |
 | $V_k$ | the carrier of label $k$, dimension $2k+1$ |
-| $C=-\sum_i\operatorname{ad}_{J_i}^{2}$ | the Casimir of the conjugation action |
+| $C=\sum_i\operatorname{ad}_{J_i}^{2}$ | the Casimir of the conjugation action |
+| $\rho(U)$ | the matrix of the rotor of label $\tfrac32$, of order four |
+| $\rho(U)M\rho(U)^{\dagger}$ | the Hermitian pair of the rotor acting on the two sides |
 | $\Pi_k$ | the projector onto the carrier of label $k$ |
 | $0^{4},\pm1^{3},\pm2^{2},\pm3$ | the weight multiset of the algebra |
 | $n^{2}$ | the sum of the dimensions |

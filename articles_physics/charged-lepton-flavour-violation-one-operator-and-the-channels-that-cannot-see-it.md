@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The layer. The operator is a statement about the frame's gauge sector on a formal copy of the carrier: the leptoquarks are the six of *The Number, Which Is Not in This Article* of the scalar article, and what they do to lepton flavour is fixed by the group and by nothing else. Its Layer-A input is a single line — $\mathfrak{su}(4)$ splits as $8+1+6$ around the unit line — and every number below is a bound or a prediction that follows from that one operator, not a derivation from the algebra.
+The layer. The operator is a statement about the frame's gauge sector on a formal copy of the carrier: the leptoquarks are the six of *The Number, Which Is Not in This Article* of the scalar article, and what they do to lepton flavour is fixed by the group and by the mass matrices, and by nothing else. Its Layer-A input is a single line — $\mathfrak{su}(4)$ splits as $8+1+6$ around the unit line — and every number below is a bound or a prediction that follows from that one operator, not a derivation from the algebra.
 
 The question. The six leptoquarks convert quarks into leptons. Which lepton-flavour-violating processes do they mediate, at what order, and which experiment can see them?
 
@@ -11,9 +11,11 @@ The answer.
 $$
 \boxed{\;
 \text{one operator, both chiralities, } \Delta F=1:\qquad
-\frac{g_4^{2}}{2M_X^{2}}\Bigl[\bigl(\bar d\,\gamma^{\mu}P_L e\bigr)\bigl(\bar s\,\gamma_{\mu}P_L\mu\bigr)+(L\to R)\Bigr]+\text{h.c.}
+\frac{g_4^{2}}{2M_X^{2}}\,K_{de}K_{s\mu}^{*}\Bigl[\bigl(\bar d\,\gamma^{\mu}P_L e\bigr)\bigl(\bar s\,\gamma_{\mu}P_L\mu\bigr)+(L\to R)\Bigr]+\text{h.c.}
 \;}
 $$
+
+$K=X_d^{\dagger}X_e$. The factor is the leptoquark's mixing matrix: the gauge-basis unit read in the mass basis. It is to the six leptoquarks what the CKM is to the $W$, and the frame writes it, as it writes the CKM, without deriving it. The second box assumes $|K_{de}|=|K_{s\mu}|=1$; a smaller entry lowers the rate and the bound with it.
 
 $$
 \boxed{\;
@@ -23,7 +25,7 @@ M_X\gtrsim2.3\times10^{2}\ \mathrm{TeV},
 \qquad
 \mathcal B(K_S\to\mu e)\sim10^{-20},
 \qquad
-\mathcal B(\mu\to e\gamma)\sim10^{-15}
+\mathcal B(\mu\to e\gamma)\lesssim10^{-15}
 \;}
 $$
 
@@ -31,21 +33,25 @@ The frame's flavour violation is a kaon measurement, and the muon experiments ca
 
 Not tree level. It is natural to expect that $\mu$–$e$ conversion is the sharpest channel, since it is a $\Delta F=1$ process with no loop in the Standard Model either. In this frame it is not tree level. The leptoquark $X^{2/3}$ couples a down-type quark to a charged lepton, so the tree-level diagram is $s\bar d\to X\to\mu\bar e$, which is $K_L\to\mu e$; the operator $\bar\mu\Gamma e\,\bar q\Gamma'q$ that conversion needs requires two leptoquark vertices, which is a loop. The tree-level channel is the kaon one, and it is the only one that sets a bound. Everything else is one loop down, and *Where Each Channel Sits* shows how far down.
 
-What the article establishes. That the gauge sector has no flavour index, so one operator and one number control every channel; that the operator is $V\pm A$ only, so it selects $K_L$ and gives $K_S\to\mu e$ at the $|\epsilon_K|^2$ level; that the tree-level rate and the resulting bound are as boxed; that the muon channels are suppressed by a loop and a chirality flip, and are three to four orders of magnitude below their experimental reach at the scale the kaon bound forces; and that this ranking is what the frame's flavour blindness produces.
+What the article establishes. That the gauge sector has no flavour index of its own, so one operator and one coupling control every channel, and the operator's flavour structure is one matrix $K=X_d^\dagger X_e$; that the operator is $V\pm A$ only, so it selects $K_L$ and gives $K_S\to\mu e$ at the $|\epsilon_K|^2$ level; that the tree-level rate and the resulting bound are as boxed, for $|K_{de}K_{s\mu}|$ of order one; that the muon channels are suppressed by the mixing, a loop and a chirality flip, and are far below their experimental reach at the scale the kaon bound forces; and that this ranking is what the frame's flavour blindness produces.
 
-Not established. That the leptoquarks exist. That the loop coefficients are computed here — they are not, and *The Muon Channels Need a Loop* says exactly how far the estimate goes and what it would take to do better. That the bound is precise to better than a factor of a few: *The Number, Which Is Not in This Article* gives the band and says where the round figure used elsewhere in the corpus sits in it.
+Not established. That the leptoquarks exist. That the entries of $K$ are derived — they are not, and the frame writes them as it writes the CKM. That the loop coefficients are computed here — they are not, and *The Muon Channels Need a Loop* says exactly how far the estimate goes and what it would take to do better. That the bound is precise to better than a factor of a few: *The Number, Which Is Not in This Article* gives the band and says where the round figure used elsewhere in the corpus sits in it.
 
-## Why the Gauge Sector Cannot Mix Generations
+## What the Gauge Sector Fixes, and What the Mass Basis Adds
 
-One coupling, no flavour index. That is the whole of this section.
+One coupling, no flavour index in the gauge basis, and one matrix in the mass basis. That is the whole of this section.
 
 1.1 One covariant derivative. The gauge field of the frame is one object acting on the quartet, with one coupling $g_4$. There is no matrix in generation space, because the group does not know that generations exist: $\mathrm{SU}(4)$ acts on the four colours of one generation, and the second and third generations are copies of the same module. The coupling of $X$ to the first-generation down quark and to the second are the same number, and there is nowhere in the gauge sector for a difference to live.
 
-1.2 The Yukawa sector. The CKM and PMNS matrices are properties of the fermion mass matrices, which the frame writes and does not derive. The gauge sector's contribution to any flavour transition is therefore a pure number times a hadronic matrix element — no angles, no phases, no Wolfenstein parameters.
+That is a statement in the gauge basis. The physical states are mass eigenstates, and the vertex joins a down-type quark to a charged lepton — two sectors whose mass matrices are diagonalised by different unitaries. The rotation therefore does not cancel, and leaves $K_{ij}=(X_d^{\dagger}X_e)_{ij}$. The same thing happens at the $W$: the gauge vertex is the unit in the gauge basis and the CKM in the mass basis. The gauge sector supplies the coupling; $K$ is the flavour sector's.
 
-1.3 What it allows. It gives a bound with no free parameters: one measurement fixes $M_X$ and then predicts every other channel of the same operator class. It forbids the model any mechanism for suppressing one channel while keeping another: a frame with a flavour structure in the gauge sector could hide from $K_L\to\mu e$ and appear in $\mu\to e\gamma$; this one cannot. That is why a single bound covers the whole sector, and why *What Would Falsify the Frame* can state a clean falsification condition.
+1.2 The Yukawa sector. The CKM and PMNS matrices are properties of the fermion mass matrices, which the frame writes and does not derive. $K$ is the third of the same kind, $X_d^{\dagger}X_e$, the relative rotation of the down-quark and charged-lepton diagonalisations. So the gauge sector's contribution carries one coupling and no angle of its own: the angles are the mass matrices', as they are in the CKM. The operator's flavour structure is fixed only once $K$ is known, and the frame does not know it.
 
-**1.4 Generation enters as mass.** It enters as a kinematic factor. The operator converts, say, an $s$ into a $\mu$; whether the external states are first or second generation changes the hadronic matrix element and the phase space, not the coupling. Every ratio among the channels of *The Semileptonic Channels* is therefore a statement about QCD, not about the model.
+The frame's own counting says which case this is. One bidoublet gives $M_d\propto M_e$, one rotation, and $K=\mathbb 1$: no lepton flavour violation at all. The proportional spectra that follow are the ones the data reject, so the sector carries a second matrix, and with two matrices the rotations differ. The frame does not know $K$; it knows that $K$ is not the identity, because it knows that one bidoublet is not enough.
+
+1.3 What it allows. It gives a bound with one scale: one measurement fixes $M_X$ for a given $K$, and then fixes every other channel of the same operator class at that $K$. It forbids the gauge sector any mechanism for suppressing one channel while keeping another: a frame with a flavour structure in the gauge coupling could hide from $K_L\to\mu e$ and appear in $\mu\to e\gamma$. Here the only suppression available is $K$, which enters every channel and enters the dipole as a GIM sum. That is why a single bound covers the whole sector, and why *What Would Falsify the Frame* can state a falsification condition — one that tests $K$ as well as the gauge sector.
+
+**1.4 Generation enters twice.** Once as the matrix $K$, which is common to every channel and which the frame does not derive, and once as a kinematic factor. The operator converts, say, an $s$ into a $\mu$; whether the external states are first or second generation changes the hadronic matrix element and the phase space. For a fixed $K$, every ratio among the channels of *The Semileptonic Channels* is therefore a statement about QCD, not about the model.
 
 ## The One Operator, and Its Two Chiralities
 
@@ -55,7 +61,7 @@ One four-fermion operator per chirality. Integrating out the six leptoquarks giv
 
 $$
 \mathcal L_{\mathrm{eff}}\supset
-\frac{g_4^{2}}{2M_X^{2}}\Bigl[
+\frac{g_4^{2}}{2M_X^{2}}\,K_{de}K_{s\mu}^{*}\Bigl[
 \bigl(\bar d\,\gamma^{\mu}P_L e\bigr)\bigl(\bar s\,\gamma_{\mu}P_L\mu\bigr)
 +
 \bigl(\bar d\,\gamma^{\mu}P_R e\bigr)\bigl(\bar s\,\gamma_{\mu}P_R\mu\bigr)
@@ -125,7 +131,7 @@ $$
 4.1 The amplitude. With $\langle0|A^{\mu}|\bar K^{0}\rangle=i f_K p^{\mu}$ and the $1/\sqrt2$ of the $K_L$ composition,
 
 $$
-\mathcal M=\frac{g_4^{2}}{2M_X^{2}}\cdot\frac{f_K}{\sqrt2}\cdot
+\mathcal M=\frac{g_4^{2}}{2M_X^{2}}K_{de}K_{s\mu}^{*}\cdot\frac{f_K}{\sqrt2}\cdot
 p^{\mu}\,\bar u_e\gamma_{\mu}\tfrac12(1-\gamma^{5})v_\mu ,
 $$
 
@@ -134,7 +140,7 @@ and the spin sum, using $p\!\!/=p\!\!/_e+p\!\!/_\mu$ and the Dirac equations, co
 $$
 \sum_{\mathrm{spins}}|\mathcal M|^{2}
 =
-\frac{g_4^{4}}{8M_X^{4}}\,f_K^{2}\,m_K^{2}\bigl(m_e^{2}+m_\mu^{2}\bigr).
+\frac{g_4^{4}}{8M_X^{4}}\,\lvert K_{de}\rvert^{2}\lvert K_{s\mu}\rvert^{2}\,f_K^{2}\,m_K^{2}\bigl(m_e^{2}+m_\mu^{2}\bigr).
 $$
 
 The helicity suppression is visible here and it is the reason the rate is small: a pseudoscalar cannot decay into two leptons without a mass insertion, so the amplitude is proportional to $m_\mu$ and the rate to $m_\mu^{2}$. A frame that predicted a rate without a mass factor would be predicting a rate for a decay that cannot happen.
@@ -142,12 +148,12 @@ The helicity suppression is visible here and it is the reason the rate is small:
 4.2 The rate.
 
 $$
-\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,f_K^{2}\,m_\mu^{2}\,m_K}{128\pi\,M_X^{4}},
+\Gamma(K_L\to\mu e)=\frac{g_4^{4}\,\lvert K_{de}\rvert^{2}\lvert K_{s\mu}\rvert^{2}\,f_K^{2}\,m_\mu^{2}\,m_K}{128\pi\,M_X^{4}},
 $$
 
 and the branching ratio is that over $\Gamma_K=1.287\times10^{-17}$ GeV.
 
-4.3 The check. It is a real check, because the normalisation is the one place a factor of eight hides. Set $g_4=1$ and $M_X=10^{5}$ GeV: the formula gives $\Gamma=3.37\times10^{-27}$ GeV and $\mathcal B=2.62\times10^{-10}$. The same normalisation, applied to the textbook $K\to\mu\nu$ rate $(G_F\sin\theta_c)^{2}f_K^{2}m_Km_\mu^{2}/8\pi$, reproduces $\mathcal B(K\to\mu\nu)$ — and a formula that got the $K\to\mu\nu$ normalisation wrong by eight would have been visible there, where the branching ratio is measured to a per cent. The mass factor is pinned from both sides as well: replacing $m_\mu^{2}m_K$ by $m_K^{3}$ would raise the rate by $m_K^{2}/m_\mu^{2}=22.2$, and replacing it by $m_\mu^{4}$ would lower it by $m_\mu^{2}/m_K^{2}=0.045$ — a factor of twenty-two either way, which no choice of $g_4$ can absorb, because $g_4$ is fixed by $\alpha_s$ to $10\%$. So the two-body rate has no free normalisation left.
+4.3 The check. It is a real check, because the normalisation is the one place a factor of eight hides. Set $g_4=1$, $|K_{de}K_{s\mu}|=1$ and $M_X=10^{5}$ GeV: the formula gives $\Gamma=3.37\times10^{-27}$ GeV and $\mathcal B=2.62\times10^{-10}$. The same normalisation, applied to the textbook $K\to\mu\nu$ rate $(G_F\sin\theta_c)^{2}f_K^{2}m_Km_\mu^{2}/8\pi$, reproduces $\mathcal B(K\to\mu\nu)$ — and a formula that got the $K\to\mu\nu$ normalisation wrong by eight would have been visible there, where the branching ratio is measured to a per cent. The mass factor is pinned from both sides as well: replacing $m_\mu^{2}m_K$ by $m_K^{3}$ would raise the rate by $m_K^{2}/m_\mu^{2}=22.2$, and replacing it by $m_\mu^{4}$ would lower it by $m_\mu^{2}/m_K^{2}=0.045$ — a factor of twenty-two either way, which no choice of $g_4$ can absorb, because $g_4$ is fixed by $\alpha_s$ to $10\%$. So the two-body rate has no free normalisation left beyond $K$.
 
 ## The Number, Which Is Not in This Article
 
@@ -158,14 +164,14 @@ With $g_4$ from the matching condition. That substitution is a coupling statemen
 5.2 The shape, not the value. The rate carries the fourth power of the mass:
 
 $$
-\mathcal B(K_L\to\mu e)\propto\frac{g_4^{4}}{M_X^{4}} .
+\mathcal B(K_L\to\mu e)\propto\frac{g_4^{4}\,\lvert K_{de}K_{s\mu}\rvert^{2}}{M_X^{4}} .
 $$
 
 A bound in $M_X$ is therefore sharp: a factor of two in the mass is a factor of sixteen in the rate. That statement is structural, and it is the only one about size that this article makes.
 
 5.3 Where the value is. The table of $\mathcal B$ against $M_X$, the resulting floor, and the width of its band are in the coupling article, *Why $K_L$ and Not $K_S$*.
 
-**5.4 What the article keeps.** It gives up a number and keeps its claim. The claim is that one operator with one coupling controls every channel in this sector, because the gauge sector carries no generation index — and that claim is exactly what a reader needs in order to know that a single null result constrains all the channels at once. The number changes with the scale; the claim does not.
+**5.4 What the article keeps.** It gives up a number and keeps its claim. The claim is that one operator with one coupling and one matrix controls every channel in this sector, because the gauge sector carries no generation index of its own — and that claim is exactly what a reader needs in order to know that a single null result constrains all the channels at once, once $K$ is fixed. The number changes with the scale; the claim does not.
 
 ## The Semileptonic Channels
 
@@ -193,16 +199,16 @@ Three more processes. All of them are the same operator at second order, and all
 | $\mu\to eee$ | dipole plus a four-fermion contact | one loop, dominated by the dipole |
 | $\mu$–$e$ conversion | dipole plus a contact term on the nucleus | one loop, then a nuclear overlap |
 
-7.3 The scaling. The dipole coefficient is a loop factor times a chirality flip over the leptoquark mass squared:
+7.3 The scaling. The dipole coefficient is a loop factor times a chirality flip over the leptoquark mass squared, summed over the internal quark with the two entries of $K$:
 
 $$
-C_{\mathrm{dip}}\sim\frac{e\,g_4^{2}}{16\pi^{2}}\cdot\frac{m_\mu}{M_X^{2}},
+C_{\mathrm{dip}}\sim\frac{e\,g_4^{2}}{16\pi^{2}}\cdot\frac{m_\mu}{M_X^{2}}\sum_q K_{qe}K_{q\mu}^{*}f\!\left(\frac{m_q^{2}}{M_X^{2}}\right),
 \qquad
 \mathcal B(\mu\to e\gamma)=384\pi^{2}\left|\frac{C_{\mathrm{dip}}}{\,4G_Fm_\mu/\sqrt2\,}\right|^{2}
-\approx1.1\times10^{-15}\ \text{at }2.3\times10^{2}\ \mathrm{TeV}.
+\lesssim1.1\times10^{-15}\ \text{at }2.3\times10^{2}\ \mathrm{TeV}.
 $$
 
-The number is an estimate: the coefficient of the loop function is order one and depends on which internal quark dominates, and the two chiralities contribute at different orders in $m_q/M_X$. What is not an estimate is the scaling $C_{\mathrm{dip}}\propto g_4^{2}m_\mu/M_X^{2}$, which is fixed by dimension, chirality and the loop, and which is what the comparison of *Where Each Channel Sits* needs.
+The number is an upper estimate. The sum is a GIM sum: unitarity of $K$ cancels the constant part of $f$, so the amplitude carries the mass splitting $m_q^{2}/M_X^{2}$ of the internal quarks as well as the mixing, and it vanishes when the coupling is diagonal. The coefficient of the loop function is order one, and the two chiralities contribute at different orders in $m_q/M_X$. What is not an estimate is the scaling $C_{\mathrm{dip}}\propto g_4^{2}m_\mu/M_X^{2}$ times the mixing, which is fixed by dimension, chirality and the loop, and which is what the comparison of *Where Each Channel Sits* needs.
 
 7.4 The other two follow the dipole by numbers that are not the model's. For a dipole-dominated $\mu\to e$ transition the ratios are fixed by QED and by the nucleus:
 
@@ -220,17 +226,17 @@ So the three muon channels are not independent tests: they are one dipole seen t
 
 The comparison. The reason it is decisive rather than marginal.
 
-8.1 At the scale the kaon bound forces. At $M_X=2.3\times10^{2}$ TeV the four channels read:
+8.1 At the scale the kaon bound forces. At $M_X=2.3\times10^{2}$ TeV, with $|K_{de}K_{s\mu}|=1$ and the order-one estimate of *The Muon Channels Need a Loop*, the four channels read:
 
 | channel | mechanism | predicted | current limit | headroom |
 |---|---|---|---|---|
 | $K_L\to\mu e$ | tree | $4.7\times10^{-12}$ | $4.7\times10^{-12}$ | at the limit |
 | $K^{+}\to\pi^{+}\mu^{+}e^{-}$ | tree | same order | $\sim10^{-11}$ | a factor of a few |
-| $\mu\to e\gamma$ | one loop | $1.1\times10^{-15}$ | $4.2\times10^{-13}$ | $380\times$ below |
-| $\mu\to eee$ | one loop | $\sim7\times10^{-18}$ | $1.0\times10^{-12}$ | $1.5\times10^{5}\times$ below |
-| $\mu$–$e$ conversion | one loop | $\sim6\times10^{-18}$ | $4.3\times10^{-12}$ | $8\times10^{5}\times$ below |
+| $\mu\to e\gamma$ | one loop | $\lesssim1.1\times10^{-15}$ | $4.2\times10^{-13}$ | at least $380\times$ below |
+| $\mu\to eee$ | one loop | $\lesssim7\times10^{-18}$ | $1.0\times10^{-12}$ | at least $1.5\times10^{5}\times$ below |
+| $\mu$–$e$ conversion | one loop | $\lesssim6\times10^{-18}$ | $4.3\times10^{-12}$ | at least $8\times10^{5}\times$ below |
 
-8.2 Can any $M_X$ work?
+8.2 Can any $M_X$ work? The equations below use the order-one estimate of *The Muon Channels Need a Loop*. A smaller dipole — from the GIM factor or from a small $K$ — lowers the $M_X$ a signal would need and raises the kaon rate at that $M_X$, so the exclusion is stronger than the numbers show. This is the weakest case.
 
 $$
 \mathcal B(\mu\to e\gamma)=4.2\times10^{-13}
@@ -256,7 +262,7 @@ $$
 
 So the answer is no. Every value of $M_X$ that would put a dipole signal inside the reach of MEG puts the kaon rate two and a half orders of magnitude above a limit that has stood for two decades; the projected Mu3e reach narrows the gap to a factor of nine, which is still an exclusion but no longer a comfortable one, and that is the one place where this frame's flavour sector could move in the next decade. The frame's charged-lepton flavour violation is invisible to the muon experiments, not because the coupling is small but because the channel that is not helicity-suppressed is already excluded below the scale where the loop channels would appear.
 
-**8.3 The experiment.** It tells an experimentalist which experiment to run: a kaon experiment, and specifically a semileptonic one, because *The Semileptonic Channels* puts it within a factor of two of the two-body rate while its limit is weaker. It tells the corpus that the model's flavour sector has exactly one live number, and that every other channel is a corollary.
+**8.3 The experiment.** It tells an experimentalist which experiment to run: a kaon experiment, and specifically a semileptonic one, because *The Semileptonic Channels* puts it within a factor of two of the two-body rate while its limit is weaker. It tells the corpus that the model's flavour sector has exactly one live scale, and that every other channel is a corollary at a fixed $K$.
 
 ## What Would Falsify the Frame
 
@@ -264,11 +270,11 @@ Three observations. Each one removes a specific assumption.
 
 9.1 A kaon signal. That would not be a falsification but a confirmation of the bound's direction: it would fix $M_X$ and put the whole heavy spectrum at $2.5$ to $4\times10^{2}$ TeV, which *The Semileptonic Channels* of the spectrum article already does.
 
-9.2 A dipole signal alone. This is the sharp one, and *Where Each Channel Sits* makes it quantitative: the ratio of the two rates is fixed by the loop, so a dipole signal at $M_X$ predicts a kaon rate about $4\times10^{3}$ times larger at the same $M_X$. A dipole signal whose $M_X$ is excluded by the kaon bound says that the gauge sector has a flavour index — that the coupling of $X$ to the second generation differs from its coupling to the first. That is not a modification of the frame's group; it is a second declaration, of the same kind as the fourth colour being the lepton, and the model would then have two load-bearing assumptions instead of one.
+9.2 A dipole signal alone. This is the sharp one, and *Where Each Channel Sits* makes it quantitative for a fixed $K$: a dipole signal at $M_X$ predicts a kaon rate about $4\times10^{3}$ times larger at the same $M_X$. A dipole signal whose $M_X$ is excluded by the kaon bound says either that $K$ is strongly hierarchical — the $(d,e)$ and $(s,\mu)$ entries small, the entries that feed the dipole large — or that the gauge sector has a flavour index, with the coupling of $X$ to the second generation different from its coupling to the first. The first is a statement about the Yukawa sector; the second is a second declaration, of the same kind as the fourth colour being the lepton.
 
 9.3 A $K_S$ signal alone. By *Why $K_L$ and Not $K_S$* the frame predicts this channel at $10^{-20}$ and forbids it at leading order. A signal would say the operator is not $V\pm A$ — that the leptoquarks have scalar partners with mixed chiralities, which the gauge sector does not supply. This is the cleanest of the three, because it tests the operator's structure rather than its size.
 
-**9.4 What none of them can do.** None can distinguish this frame from any other Four Colours Model with the same flavour content, because that sector is the same in all of them. What the frame adds is not a different prediction but a place to put it: one operator, one number, and the statement that the number has only one live channel.
+**9.4 What none of them can do.** None can distinguish this frame from any other Four Colours Model with the same flavour content, because that sector is the same in all of them. What the frame adds is not a different prediction but a place to put it: one operator, one coupling, one matrix, and the statement that the matrix has only one live channel at the bound scale.
 
 ## What Is Robust and What Is Not
 
@@ -278,9 +284,9 @@ Three observations. Each one removes a specific assumption.
 
 10.2 The $K_S$ selection. The axial matrix element's oddness and the eigenstate's symmetry are exact statements about the matrix element; the only correction is $\epsilon_K$, which is measured.
 
-10.3 The two-body rate. The rate's factors are fixed by the matrix element and the coupling; the bound is firm to the band of *The Number, Which Is Not in This Article*, which is a factor of two in $M_X$.
+10.3 The two-body rate. The rate's factors are fixed by the matrix element, the coupling and $K$; for a given $K$ the bound is firm to the band of *The Number, Which Is Not in This Article*, which is a factor of two in $M_X$.
 
-10.4 The loop channels. *The Muon Channels Need a Loop* is a scaling with an order-one coefficient that this article does not compute. The ranking of *Where Each Channel Sits* survives any coefficient in $[0.3,3]$, which moves the $\mu\to e\gamma$ line by a factor of three in rate and $1.3$ in $M_X$ — and the conclusion, that no $M_X$ makes a muon signal visible, survives because the gap is three orders of magnitude.
+10.4 The loop channels. *The Muon Channels Need a Loop* is a scaling with an order-one coefficient that this article does not compute. The ranking of *Where Each Channel Sits* survives any coefficient in $[0.3,3]$, which moves the $\mu\to e\gamma$ line by a factor of three in rate and $1.3$ in $M_X$, and a smaller coefficient — the GIM factor is one — only widens the gap. The conclusion, that no $M_X$ makes a muon signal visible, survives because the gap is at least three orders of magnitude.
 
 10.5 The third generation. The frame's $\mathrm{SU}(4)$ is generation-blind, so $\tau\to\mu\gamma$ and $\tau\to e\gamma$ are in the same class as $\mu\to e\gamma$ with a loop and an $m_\tau$ insertion; their limits are far weaker and their predictions far smaller, and this article does not quantify them.
 
@@ -297,7 +303,7 @@ Three observations. Each one removes a specific assumption.
 | the spin sum | $p\!\!/=p\!\!/_e+p\!\!/_\mu$, Dirac equations | $m_K^{2}(m_e^{2}+m_\mu^{2})$, helicity suppressed |
 | the normalisation | the same form applied to $K\to\mu\nu$ | $\mathcal B=0.63$ against the measured $0.635$ |
 | the $K_S$ rate | $\epsilon_K^{2}\Gamma_{L}/\Gamma_S$ | $4\times10^{-20}$ |
-| the dipole | $C_{\mathrm{dip}}\sim eg_4^{2}m_\mu/(16\pi^{2}M_X^{2})$ | $1.1\times10^{-15}$, an estimate |
+| the dipole | $C_{\mathrm{dip}}\sim eg_4^{2}m_\mu/(16\pi^{2}M_X^{2})$, maximal mixing, no GIM splitting | $\mathcal B\lesssim1.1\times10^{-15}$, an upper estimate |
 | the dipole ratios | standard QED for a dipole-dominated transition | $\mu\to eee$: $6\times10^{-3}$; conversion: $5\times10^{-3}$ |
 | the two-body factor | $m_K^{2}/m_\mu^{2}$ against $m_\mu^{2}/m_K^{2}$ | $22.2$ against $0.045$, so the mass factor is pinned |
 
@@ -311,23 +317,23 @@ The agreement with the corpus's $250$ TeV is not luck: it needs the $1/128\pi$ n
 
 The loop numbers of *The Muon Channels Need a Loop* are not computed coefficients; they are scalings with an order-one function, and *The Muon Channels Need a Loop* says what a real calculation would need.
 
-The absence of a muon signal is not a small coupling: the coupling is fixed, and the muon channels are invisible because the kaon channel excludes every scale at which they would appear (*Where Each Channel Sits*).
+The absence of a muon signal is not a small coupling: the gauge coupling is fixed, and the muon channels are invisible because they need a loop, a GIM-suppressed mixing and a chirality flip, and because the kaon channel excludes every scale at which they would appear (*Where Each Channel Sits*).
 
-A future $\mu\to e\gamma$ signal would not be a confirmation of this frame: it is the one signal the frame cannot produce at any allowed mass (*What Would Falsify the Frame*).
+A future $\mu\to e\gamma$ signal would not be a confirmation of this frame: it is the one signal the frame puts below every reach at any allowed mass (*What Would Falsify the Frame*).
 
 ## Summary
 
-The one operator. $\dfrac{g_4^{2}}{2M_X^{2}}[(\bar d\gamma^{\mu}P_Le)(\bar s\gamma_\mu P_L\mu)+(\bar d\gamma^{\mu}P_Re)(\bar s\gamma_\mu P_R\mu)]$, from integrating out the six leptoquarks, with both chiralities because the frame gauges both factors with one coupling.
+The one operator. $\dfrac{g_4^{2}}{2M_X^{2}}K_{de}K_{s\mu}^{*}[(\bar d\gamma^{\mu}P_Le)(\bar s\gamma_\mu P_L\mu)+(\bar d\gamma^{\mu}P_Re)(\bar s\gamma_\mu P_R\mu)]$, from integrating out the six leptoquarks, with both chiralities because the frame gauges both factors with one coupling.
 
-The one number. $\mathcal B(K_L\to\mu e)=g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4}\Gamma_K)$, giving $3.5\times10^{-12}$ at $250$ TeV and a bound of $2.3\times10^{2}$ TeV against $4.7\times10^{-12}$.
+The one number and the one matrix. $\mathcal B(K_L\to\mu e)=g_4^{4}|K_{de}|^{2}|K_{s\mu}|^{2}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4}\Gamma_K)$, giving $3.5\times10^{-12}$ at $250$ TeV and a bound of $2.3\times10^{2}$ TeV against $4.7\times10^{-12}$ when $|K_{de}K_{s\mu}|=1$. A smaller entry lowers the rate by the fourth power of the entry product and the bound by its square root.
 
 The one structure. $V\pm A$ only, so only the axial part acts, so only the odd combination survives, so $K_L$ decays and $K_S$ does not: $\mathcal B(K_S\to\mu e)\sim10^{-20}$.
 
-**The channels that cannot see it.** $\mu\to e\gamma$, $\mu\to eee$ and $\mu$–$e$ conversion need a loop and a chirality flip, and land two and a half to six orders of magnitude below their limits at the bound scale. Every $M_X$ that would make them visible is already excluded by $K_L\to\mu e$, by $400$ times at MEG's reach and $9$ times at Mu3e's.
+**The channels that cannot see it.** $\mu\to e\gamma$, $\mu\to eee$ and $\mu$–$e$ conversion need a loop, a chirality flip and a GIM-suppressed mixing, and land at least two and a half to six orders of magnitude below their limits at the bound scale. Every $M_X$ that would make them visible is already excluded by $K_L\to\mu e$, by $400$ times at MEG's reach and $9$ times at Mu3e's.
 
-The falsification. A dipole signal whose $M_X$ the kaon bound excludes means the gauge sector has a flavour index — a second declaration. A $K_S\to\mu e$ signal at leading order means the operator is not $V\pm A$ — not the frame's leptoquarks.
+The falsification. A dipole signal whose $M_X$ the kaon bound excludes means $K$ is hierarchical, or the gauge sector has a flavour index — a second declaration. A $K_S\to\mu e$ signal at leading order means the operator is not $V\pm A$ — not the frame's leptoquarks.
 
-The verdict. The frame's flavour sector has one live number and one live experiment: a kaon, not a muon.
+The verdict. The frame's flavour sector has one live scale, one matrix and one live experiment: a kaon, not a muon.
 
 ## Summary of Notation
 
@@ -335,6 +341,7 @@ The verdict. The frame's flavour sector has one live number and one live experim
 |---|---|
 | $X$ | a leptoquark, one of the six, $Q=\pm\tfrac23$, colour triplet or antitriplet |
 | $g_4$ | the $\mathrm{SU}(4)$ coupling, $g_4^{2}=4\pi\alpha_s(M_X)$ by the matching relation |
+| $K$ | the leptoquark mixing matrix $X_d^{\dagger}X_e$, the analogue of the CKM; written, not derived |
 | $M_X$ | the leptoquark mass, $=\sqrt2\,M_{W_R}$ in the minimal vacuum |
 | $f_K$ | the kaon decay constant, $156.2$ MeV |
 | $\Gamma_K$ | the $K_L$ width, $1.287\times10^{-17}$ GeV |

@@ -24,7 +24,7 @@ an isomorphism because $\mathbb{B}\cong M_2(\mathbb{C})$ is a central simple alg
 
 **The letters.** $\mathbb{B}$ is the biquaternion algebra with basis $(e_t,\vec e_x,\vec e_y,\vec e_z)$ and $\vec e_x^2=\vec e_y^2=\vec e_z^2=-e_t$. The letters, the four families and the adjoint signs are those of *Operator Family Conventions*: $L$, $R$, $LR$ and $\Theta$. The sixteen basis products are $T_{\mu\nu}=L_{e_\mu}R_{e_\nu}$, with Greek indices running over $t,x,y,z$. The coefficient array is $c(M)$, the length is $\ell(M)$, $\natural$ is the quaternion conjugation, $\operatorname{Sc}$ the scalar part, and $\operatorname{rank}$ the rank of a family of vectors, hence of an array.
 
-**The order of the article.** The ambient and the two endomorphism algebras come first, because the word *endomorphism* has to be fixed before it is counted. The basis theorem follows, then the array, then the length, then the witnesses that make four sharp. The ladder of strata, the comparison with the singular decomposition, the construction of a decomposition and the list of what the length is not close the argument. The real boundary and the split category are stated last, because they are statements about the scope of the theorem and not about the algebra.
+**The order of the article.** The ambient and the two endomorphism algebras come first, because the word *endomorphism* has to be fixed before it is counted. The basis theorem follows, then the array, then the length, then the witnesses that make four sharp. The ladder of strata follows, and then the block structure of the array and the null cone of label two, which is the one place where the length changes inside a block. The comparison with the singular decomposition, the construction of a decomposition and the list of what the length is not close the argument. The real boundary and the split category are stated last, because they are statements about the scope of the theorem and not about the algebra.
 
 ## The Ambient and the Two Endomorphism Algebras
 
@@ -156,6 +156,49 @@ of rank four: the determinant of this integer array is $-33124$, so the array, o
 
 **What the ladder forbids.** A bound of the form $\ell(M)\le f(\operatorname{rank}M)$ with $f(1)\le3$ is false: the projection onto the scalar line has image rank one and length four. No bound that grows with the image rank is available either, because the rank-one operators of length four are dense in the rank-one stratum, so the length is four on almost every rank-one operator.
 
+## The Null Cone of Label Two
+
+**The four blocks.** The left index of the array runs over the scalar line $e_t$ and the vector triple $e_x,e_y,e_z$, and so does the right index. The array therefore splits into four blocks: the corner $(t,t)$ of one entry, the two arms $(i,t)$ and $(t,j)$ of three entries each, and the vector square $(i,j)$ of nine.
+
+**Proposition (the four blocks are invariant).** Let $\tilde U$ be invertible and let $\Phi=L_{\tilde U}R_{\tilde U^{-1}}$, the conjugation $\tilde X\mapsto\tilde U\tilde X\tilde U^{-1}$. Let $\mathsf R$ be the matrix of that conjugation on the vector triple, $\tilde U e_i\tilde U^{-1}=\sum_k\mathsf R_{ki}e_k$. Then
+$$
+c\bigl(\Phi M\Phi^{-1}\bigr)=\operatorname{diag}(1,\mathsf R)\,c(M)\,\operatorname{diag}(1,\mathsf R)^{\mathsf T}.
+$$
+Each block is carried into itself, the factor is complex orthogonal of determinant one, and the length is constant on the orbit.
+
+*Proof.* On a basis product, $\Phi T_{\mu\nu}\Phi^{-1}=T_{\tilde Ue_\mu\tilde U^{-1},\,\tilde Ue_\nu\tilde U^{-1}}$. The element $e_t$ is central, so the scalar slot is fixed and the vector slot is carried by $\mathsf R$; hence the diagonal form. The algebra automorphism preserves the trace, so the scalar part of an element is preserved and $\mathsf R$ acts inside the vector triple, and it preserves the norm form $\tilde v\bar{\tilde v}$, so $\mathsf R^{\mathsf T}\mathsf R=I$; the determinant is one because the conjugations form the connected group $SO(3,\mathbb{C})$. Congruence by invertible factors preserves the rank, hence, by the theorem on the length, the length. Checked on ten complex units: the residual of the congruence is $4\cdot10^{-14}$, and the entries outside a block vanish to the same order.
+
+**The length inside a block.** An element whose array is supported in one block has the length of that block, since the rank of a matrix with support in one block is the rank of the block.
+
+| block | entries | shape | lengths |
+|---|---|---|---|
+| the corner $(t,t)$ | $1$ | $1\times1$ | $1$ |
+| the left arm $(i,t)$ | $3$ | $3\times1$ | $1$ |
+| the right arm $(t,j)$ | $3$ | $1\times3$ | $1$ |
+| the vector square $(i,j)$ | $9$ | $3\times3$ | $1,2,3$ |
+
+**Corollary.** No element supported in a single block has length four. The maximum length inside a block is the number of rows or of columns that the block occupies, and only the vector square reaches three.
+
+**The three pieces of the vector square.** A $3\times3$ block $B$ splits as
+$$
+B=\lambda I+A+S,\qquad \lambda=\tfrac13\operatorname{tr}B,\quad A^{\mathsf T}=-A,\quad S^{\mathsf T}=S,\quad \operatorname{tr}S=0,
+$$
+of dimensions $1,3,5$. The congruence preserves the three pieces: symmetry is carried by any $\mathsf R$, and the trace by the relation $\mathsf R^{\mathsf T}\mathsf R=I$. They are the three summands of the tensor square of the vector triple, $3\otimes3=1\oplus3\oplus5$, of labels $0,1,2$ by the rule of *The Clebsch–Gordan Decomposition of the Operators*.
+
+**Theorem (the length of the label-two element).** Let $M$ be supported in the vector square with block $S$ symmetric, traceless and nonzero. Then $\ell(M)=\operatorname{rank}S$, and
+$$
+\ell(M)=2\iff\det S=0\iff\operatorname{tr}S^{3}=0\iff\text{the eigenvalues are }(\sigma,-\sigma,0)\text{ with }\sigma\neq0,
+$$
+and $\ell(M)=3$ otherwise.
+
+*Proof.* The array is block diagonal with block $S$ and zeros elsewhere, so its rank is $\operatorname{rank}S$. A rank-one symmetric matrix is $c\,vv^{\mathsf T}$, of trace $c\,v^{\mathsf T}v\neq0$, so a traceless matrix has no rank one and the values are $0,2,3$. For a traceless symmetric matrix $\operatorname{tr}S^{3}=3\det S$, because $a^{3}+b^{3}+c^{3}=3abc$ when $a+b+c=0$. A vanishing determinant is a vanishing eigenvalue, and the trace zero then leaves the other two equal and opposite.
+
+**Corollary (the skew part).** On the skew part the length is two: a nonzero skew $3\times3$ matrix has even rank, and rank two is the only possibility, since rank three is odd.
+
+**The cone.** The elements of length two are the null cone of the label, cut by the single cubic $\operatorname{tr}S^{3}$ in the five coefficients of $S$. The cone has dimension four in the five-dimensional space, and its complement, where the length is three, is dense and open. Length three is the rule and length two is the exception.
+
+**The reading.** The length is constant on each orbit and not on the label: label two carries both values, two on the cone and three off it, so the label alone does not determine the length. Nor is any label-two element a single product: length one would need a rank-one block, and the traceless condition forbids it, so the label costs one term at least. Over the real form $S$ is a traceless quadratic form on the vector triple, the cone is the set of the degenerate ones, and a rank-two point is a pair of planes.
+
 ## Two Lengths, Two Arrays
 
 **The other decomposition.** *The SVD Decomposition of Endomorphisms of the Biquaternion Algebra* writes an endomorphism as a sum of rank-one endomorphisms $\mathcal P_{\tilde U,\tilde V}(\tilde X)=\tilde U\langle\tilde X,\tilde V\rangle_{*}$, with weights $\rho_1\ge\dots\ge\rho_4\ge0$, and the number of terms is the number of nonzero weights, at most four. That count is the rank of the operator itself, read in a frame orthonormal for the Hermitian form, and it is a number attached to the map.
@@ -233,6 +276,8 @@ Four is attained by the quaternion conjugation, which is $-\tfrac12\sum_\mu L_{e
 
 The theorem is about $\operatorname{End}_{\mathbb{C}}(\mathbb{B})=M_4(\mathbb{C})$ and not about the module endomorphisms $\mathbb{B}^{\mathrm{opp}}$, of dimension four; over the reals the products span thirty-two of sixty-four dimensions, and a general real-linear map needs eight terms.
 
+Inside a block of the array the length is the rank of that block, so no element supported in one block has length four; inside the vector square the length is the rank of a $3\times3$ matrix, and on the traceless symmetric part, the label two, it is two exactly on the null cone $\det S=0$ and three off it.
+
 The four of this article is not the four of the singular decomposition. The two decompositions use two different arrays, and they disagree at the two most elementary operators: the identity is one product and four atoms, the projection onto the scalar line is four products and one atom.
 
 ## Summary of Notation
@@ -251,6 +296,8 @@ The four of this article is not the four of the singular decomposition. The two 
 | $\operatorname{rank}$ | the rank of a family of vectors, hence of an array | *Algebra and Element Conventions* |
 | $\mathcal P_{\tilde U,\tilde V}$ | the unweighted rank-one endomorphism of the singular decomposition | *The SVD Decomposition of Endomorphisms of the Biquaternion Algebra* |
 | $\rho_k$ | the weights of the singular decomposition | *The SVD Decomposition of Endomorphisms of the Biquaternion Algebra* |
+| $\mathsf R$ | the matrix of the conjugation $\tilde X\mapsto\tilde U\tilde X\tilde U^{-1}$ on the vector triple | this article |
+| $B=\lambda I+A+S$ | the vector square of the array, split into trace, skew and traceless symmetric parts | this article |
 
 ## Further Reading
 

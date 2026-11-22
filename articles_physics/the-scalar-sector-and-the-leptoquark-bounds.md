@@ -129,17 +129,17 @@ with the quantum numbers forcing $|\Delta B|=\tfrac13$ and $|\Delta L|=1$ per fe
 
 6.2 Mixing with the photon and the $Z$ Since they are charged, they contribute to the oblique parameters and to $Z\to\ell\ell$ at loop level. The corrections are suppressed by $(v/v_R)^2$ and are unobservable for $M_X$ above a few hundred TeV.
 
-6.3 $K_L\to\mu e$ at tree level. That is the whole bound. The diagram is $s\bar d\to X\to\mu\bar e$, with no loop and no CKM suppression:
+6.3 $K_L\to\mu e$ at tree level. That is the whole bound. The diagram is $s\bar d\to X\to\mu\bar e$, with no loop:
 
 $$
 \mathcal M\propto\frac{g_4^2}{M_X^2},
 \qquad
-\mathcal B(K_L\to\mu e)\ \propto\ \frac{g_4^{4}}{M_X^{4}}f_K^2m_K .
+\mathcal B(K_L\to\mu e)\ \propto\ \frac{g_4^{4}\,\lvert K_{de}K_{s\mu}\rvert^{2}}{M_X^{4}}f_K^2m_K .
 $$
 
-Because it is a tree-level flavour-changing neutral current with no suppression, the bound is severe, and it is a coupling statement. The measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ is converted into a bound on $M_X$ using $g_4^2=4\pi\alpha_s(M_X)$, a kaon decay constant, the generator normalisation $\operatorname{tr}T^{A}T^{B}=\tfrac12\delta^{AB}$ and the rate $g_4^{4}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$.
+Because it is a tree-level flavour-changing process in a neutral meson with no loop suppression, the bound is severe, and it is a coupling statement. The measured null result $\mathcal B(K_L\to\mu e)<4.7\times10^{-12}$ is converted into a bound on $M_X$ using $g_4^2=4\pi\alpha_s(M_X)$, a kaon decay constant, the generator normalisation $\operatorname{tr}T^{A}T^{B}=\tfrac12\delta^{AB}$ and the rate $g_4^{4}\lvert K_{de}K_{s\mu}\rvert^{2}f_K^{2}m_\mu^{2}m_K/(128\pi M_X^{4})$.
 
-Not derived here. It depends on the leptoquark chirality and on the hadronic matrix element, and it is a number produced by a coupling. It is quoted, with its inputs and its spread, in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html); what this article supplies is the channel, its quantum numbers, and the reason the channel is unsuppressed.
+Not derived here. It depends on the leptoquark chirality and on the hadronic matrix element, and it is a number produced by a coupling. It is quoted, with its inputs and its spread, in [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html); what this article supplies is the channel, its quantum numbers, and the reason the channel is not loop-suppressed.
 
 **The order of magnitude.** The bound comes out at $M_X\gtrsim2.3\times10^{2}$ TeV, so the round $2.5\times10^{2}$ used here is right to within the coefficient's band: [Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html) does that calculation and carries the $K_S$ prediction that follows from the same operator. This single number is the strongest model-independent statement in the frame, and it is worth being clear what kind of statement it is: not a prediction, but a lower bound on a parameter, obtained from a measured null result. *How Firm the Bound Is* says how firm it is.
 
@@ -366,7 +366,7 @@ The defect. One bidoublet means one Yukawa matrix for two sectors, so the down-t
 
 The leptoquarks. $\mathfrak m=\mathbf3_{2/3}\oplus\bar{\mathbf3}_{-2/3}$, six states, $B-L=\pm\tfrac43$, $Q=\pm\tfrac23$, colour triplet or antitriplet. They exist because the fourth colour is gauged; colour being a stabiliser makes them the only coloured massive bosons in the theory.
 
-What they do. Convert quarks into leptons, $\Delta B=\tfrac13$ per fermion leg, with $B-L$ conserved because the $X$ carries $\pm\tfrac43$ itself; mediate $K_L\to\mu e$ at tree level with no suppression.
+What they do. Convert quarks into leptons, $\Delta B=\tfrac13$ per fermion leg, with $B-L$ conserved because the $X$ carries $\pm\tfrac43$ itself; mediate $K_L\to\mu e$ at tree level with no loop suppression.
 
 The bound. A bound on $M_X$ and a bound on $M_{W_R}$ are the same bound up to $\sqrt2\,g_4/g_R$. The numerical value is in the coupling article, because it is obtained by turning a coupling into a rate.
 

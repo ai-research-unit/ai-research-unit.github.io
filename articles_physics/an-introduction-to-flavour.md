@@ -48,7 +48,7 @@ Three consequences follow, and they organise everything else in this article.
 
 No gauge measurement distinguishes the columns. A charge measurement returns $q$ three times. This is why the tripling is invisible to every experiment that measures a coupling, and why flavour had to be discovered by weighing particles rather than by counting charges.
 
-No neutral gauge boson changes the label at tree level. A gauge vertex is the unit on the flavour index, so the label cannot change at a vertex. Every flavour-changing process in the model is therefore either a charged-current process, which moves the label by construction, or a loop, which is suppressed by the same small misalignment. This statement has a name, GIM, and it is an identity following from $VV^{\dagger}=1$ rather than a dynamical accident.
+No neutral gauge boson changes the label at tree level. A gauge vertex is the unit on the flavour index in the gauge basis, and a neutral current joins two fields with the same mass matrix, so the rotation cancels as $X^{\dagger}X=1$. A vertex that joins two different sectors does not cancel: the $W$ leaves $X_u^{\dagger}X_d$, the CKM, and a leptoquark leaves $X_d^{\dagger}X_e$. So the flavour-changing processes are the charged-current ones, the leptoquark ones, and the loops. The absence of the neutral ones has a name, GIM, and it is an identity following from $VV^{\dagger}=1$ rather than a dynamical accident.
 
 The only free object in the sector is the Yukawa matrix. Since no generator can distinguish the columns, the entire difference between them must sit in the one place the algebra does not constrain. At the renormalisable level the only gauge-invariant object that can tell the columns apart is the Yukawa coupling, which needs the scalar to be invariant at all. *Mass: the Column the Model Does Not Compute* counts what that place contains.
 
@@ -226,7 +226,7 @@ This is the model's only sharp prediction in this sector, and it is a prediction
 
 ## The One Exception: Oscillation
 
-Neutrino oscillation is the only measured change of flavour, and it exists because the neutrino mass matrix cannot be rotated away. For the charged leptons the rotation $V$ in $Y=U\operatorname{diag}(y)V^{\dagger}$ is a field redefinition with no consequence. For the neutrinos the mass term is Majorana, so the same rotation leaves a physical residue:
+Neutrino oscillation is the only measured change of flavour, and it exists because the neutrino mass matrix cannot be rotated away. For the charged leptons the rotation $V$ in $Y=U\operatorname{diag}(y)V^{\dagger}$ is a field redefinition of the Standard Model's own currents; in this frame it is one factor of the leptoquark mixing $K$. For the neutrinos the mass term is Majorana, so the same rotation leaves a physical residue:
 
 $$
 P(\nu_e\to\nu_\mu)=\sin^{2}2\theta\,\sin^{2}\!\left(\frac{\Delta m^{2}L}{4E}\right).
@@ -246,9 +246,9 @@ No mass is derived. The three masses of a sector are the eigenvalues of an arbit
 
 No mixing angle and no phase is derived. Nine of the eighteen real parameters of $Y$ survive, and all nine are measured.
 
-Flavour-changing neutral currents are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of *The One Sharp Prediction: Sameness*.
+Flavour-changing neutral currents of the neutral gauge bosons are absent at tree level. That is a prediction rather than a gap, and its test is the LEP table of *The One Sharp Prediction: Sameness*. A leptoquark exchange is not one of them: it carries colour and charge, and the tree-level kaon channel is its business.
 
-One thing the model does get, kept separate from the four. The leptoquarks couple flavour-blind at leading order, so the dipole coefficients for $\ell_i\to\ell_j\gamma$ are proportional to $\delta_{ij}$ times a common loop function. A null result on $\mu\to e\gamma$ therefore propagates to $\tau\to\mu\gamma$, $\tau\to e\gamma$ and the quark channels with a predicted pattern, which is developed in [Charged Lepton Flavour Violation: One Operator and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html). That is the opposite of the mass problem: the model cannot say why the masses differ, and it can say that the bosons do not care that they do.
+One thing the model does get, kept separate from the four. The leptoquarks couple flavour-blind in the gauge basis: one coupling for every generation. In the mass basis that unit becomes the unitary matrix $K=X_d^{\dagger}X_e$, the leptoquark's CKM, so the tree-level contact term carries two of its entries and the dipole carries a GIM sum over all three. The frame fixes neither the entries nor the sum; what it fixes is that every channel is read off one matrix and one coupling, which is developed in [Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html). That is the opposite of the mass problem: the model cannot say why the masses differ, and it can say that the bosons do not care that they do.
 
 ## Checks
 
@@ -279,6 +279,6 @@ Every number below was recomputed from the values in *The Sixteen Rows* before i
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the algebra does not count them.
 - [The Yukawa Sector: Fermion Mass Matrices and Their Diagonalisation](the-yukawa-sector-fermion-mass-matrices-and-their-diagonalisation.html). Where the mass matrix is written and why its eigenvalues are input.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The misalignment between the flavour basis and the mass basis.
-- [Charged Lepton Flavour Violation: One Operator and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html). The flavour-blind coupling and its predicted pattern.
+- [Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It](charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html). The flavour-blind coupling, its mixing matrix and its predicted pattern.
 
 External data. The masses and lifetimes in *The Sixteen Rows* are the Particle Data Group values, Review of Particle Physics, and the $Z$ widths of *The One Sharp Prediction: Sameness* are the LEP line-shape results. Both are time-dependent compilations, so the numbers here should be quoted with a date when they are carried forward.
