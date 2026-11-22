@@ -538,6 +538,7 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>So a fourth mass cannot be predicted from the leptons' own numbers.</strong> Three data, two parameters, one constraint: the circle is already saturated. A fourth number needs a fourth input, and the only candidates are a second tower's data, a dynamical rule (which is §8), or a symmetry (which the corpus does not have for flavour).</p>
+<p><strong>A fourth route is recorded in §15</strong>, the shifted Koide $(m_2,m_3,m_4)$. It fails like the other three, and it fails in a way worth keeping, because the arithmetic is explicit and the failure is a number rather than a judgement.</p>
 <h2 id="10-what-i-think">10. What I Think</h2>
 <p>Opinion, separated from the rest and marked as opinion. Each line carries my confidence.</p>
 <ol>
@@ -729,21 +730,320 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h2 id="14-two-coordinates-of-one-vector-foots-angle-math304-and-the-phase-math305">14. Two Coordinates of One Vector: Foot's Angle $45^{\circ}$ and the Phase $2/9$</h2>
-<p><em>Scope.</em> This section was added after the note was closed. It resolves one question the note left in the air, whether Foot's $45^{\circ}$ and the phase $2/9$ are two facts or one, and it changes nothing above it. They are one vector read in polar and azimuthal form. The section derives both coordinates, gives their measured values, and states what neither can explain. Where it disagrees with §3 or §6, the disagreement is recorded here and the earlier text is left standing, so that the two readings can be compared.</p>
-<h3 id="141-the-identity-and-a-bound-the-note-did-not-have">14.1 The identity, and a bound the note did not have</h3>
-<p><strong>[PUBLISHED]</strong> R. Foot (hep-ph/9402242, 1994) reads the relation as an angle. Write the amplitude vector and the democratic vector,</p>
+<h2 id="14-two-coordinates-of-one-vector-foots-angle-math305-and-the-phase-math306">14. Two Coordinates of One Vector: Foot's Angle $45^{\circ}$ and the Phase $2/9$</h2>
+<p><em>Scope.</em> This section was added after the note was closed. It answers one question the note left in the air, whether Foot's $45^{\circ}$ and the phase $2/9$ are two facts or one. They are one vector read in polar and azimuthal form. The section changes nothing above it: where it disagrees with §3 or §6, the disagreement is recorded in 14.13 and the earlier text is left standing, so the two readings can be compared.</p>
+<p>The object is Koide's ratio in its stated form,</p>
 <p>$$
-\vec a=\left(\sqrt{m_1},\sqrt{m_2},\sqrt{m_3}\right),\qquad \vec u=(1,1,1),
+Q=\frac{m_1+m_2+m_3}{\left(\sqrt{m_1}+\sqrt{m_2}+\sqrt{m_3}\right)^{2}},
 $$</p>
-<p>and let $\varphi$ be the angle between them. Then $\vec u\cdot\vec a=\sum\sqrt m$ and $|\vec u|^{2}=3$, so</p>
+<p>with a square root on each term of the denominator. The section shows that the numerator is a squared length, the denominator is the square of one dot product, and the ratio between them is a function of a single angle. Every step is written out, because the content of the geometric reading is the cancellation at 14.4.</p>
+<h3 id="141-the-two-vectors">14.1 The two vectors</h3>
+<p><strong>[PUBLISHED]</strong> R. Foot (hep-ph/9402242, 1994) makes the reading. Put the three square roots at the coordinates of a vector, and put the symmetric direction beside it:</p>
 <p>$$
-Q=\frac{|\vec a|^{2}}{(\vec u\cdot\vec a)^{2}}=\frac{1}{3\cos^{2}\varphi},
+\vec a=\left(\sqrt{m_1},\sqrt{m_2},\sqrt{m_3}\right),
 \qquad
-\cos\varphi=\frac{\sum\sqrt m}{\sqrt{3}\sqrt{\sum m}} .
+\vec u=(1,1,1).
 $$</p>
-<p>This is exact for every triple of positive masses. It carries no physics, and Foot says so: the angle is a rewriting of $2/3$ and not a derivation of it.</p>
-<p>Two bounds follow, and the lower one is new here. Since $\cos^{2}\varphi\le 1$, $Q\ge 1/3$, with equality exactly when the three amplitudes are equal. Since $Q\le1$ by Cauchy–Schwarz (§2.1), $\cos\varphi\ge 1/\sqrt3$, which is Foot's cone, $\varphi\le 54.7356^{\circ}$. §2.1 states the upper bound only; the lower bound $Q\ge1/3$ is the same identity read at the other end, and it rules out any triple flatter than the degenerate one.</p>
+<p>Call $\vec a$ the amplitude vector and $\vec u$ the democratic vector. The name is Foot's: a democratic vector gives the same weight to every rung. Their squared lengths follow from their definitions, and nothing else in the section needs an assumption.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>vector</th>
+<th>components</th>
+<th>squared length</th>
+<th>value for the leptons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\vec a$</td>
+<td>$\left(\sqrt{m_1},\sqrt{m_2},\sqrt{m_3}\right)$</td>
+<td>$m_1+m_2+m_3$</td>
+<td>$1883.029\ \mathrm{MeV}$</td>
+</tr>
+<tr>
+<td>$\vec u$</td>
+<td>$(1,1,1)$</td>
+<td>$3$</td>
+<td>$3$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Three choices are made in those two lines, and each matters.</p>
+<ol>
+<li>The coordinates are square roots, not masses. Only then is the numerator of $Q$ the squared norm of the vector.</li>
+<li>The second vector is $(1,1,1)$, not $(1,1,-1)$ and not a weighted vector. Only an unweighted sum reproduces $\sum\sqrt m$.</li>
+<li>The same vector serves all three rungs. That is why the formula is symmetric in the three masses, and why it cannot tell which rung is which.</li>
+</ol>
+<h3 id="142-step-1-the-numerator-is-the-squared-length">14.2 Step 1: the numerator is the squared length</h3>
+<p><strong>[ALGEBRA]</strong> The squared length of $\vec a$ is the sum of the squares of its coordinates, and each coordinate is a square root:</p>
+<p>$$
+|\vec a|^{2}=\left(\sqrt{m_1}\right)^{2}+\left(\sqrt{m_2}\right)^{2}+\left(\sqrt{m_3}\right)^{2}=m_1+m_2+m_3 .
+$$</p>
+<p>So the numerator of $Q$ is $|\vec a|^{2}$ and nothing else. Three consequences follow at once.</p>
+<ul>
+<li>The numerator is a norm, so it is positive for any triple of positive masses. $Q$ is positive.</li>
+<li>The numerator is quadratic in the amplitudes. A common rescaling of the three masses rescales it by the same factor as the denominator, which is why 14.4 cancels.</li>
+<li>Numerically, $|\vec a|^{2}=0.511+105.658+1776.86=1883.029$ MeV, and $|\vec a|=43.39389\ \mathrm{MeV}^{1/2}$.</li>
+</ul>
+<h3 id="143-step-2-the-denominator-is-the-square-of-one-dot-product">14.3 Step 2: the denominator is the square of one dot product</h3>
+<p><strong>[ALGEBRA]</strong> The dot product of the two vectors is one scalar,</p>
+<p>$$
+\vec u\cdot\vec a=1\cdot\sqrt{m_1}+1\cdot\sqrt{m_2}+1\cdot\sqrt{m_3}=\sum_{i}\sqrt{m_i},
+$$</p>
+<p>because every component of $\vec u$ equals one. Its square is the denominator of $Q$:</p>
+<p>$$
+\left(\vec u\cdot\vec a\right)^{2}=\left(\sum_i\sqrt{m_i}\right)^{2}.
+$$</p>
+<p>Two remarks, both needed for the next step.</p>
+<ul>
+<li>The dot product is not the length of $\vec a$. It is the length of $\vec a$ times the cosine of the angle to $\vec u$, times $|\vec u|$. The deficit is the cosine, and that is the only place the angle can enter.</li>
+<li>The denominator is the square of a scalar, so it is not $|\vec a|^{2}|\vec u|^{2}$. The two differ by $\cos^{2}\varphi$, and that difference is the whole content of the geometric reading.</li>
+</ul>
+<p>For the leptons, $\vec u\cdot\vec a=53.14669\ \mathrm{MeV}^{1/2}$ and $\left(\vec u\cdot\vec a\right)^{2}=2824.570$ MeV.</p>
+<h3 id="144-step-3-the-angle-enters-and-the-length-cancels">14.4 Step 3: the angle enters, and the length cancels</h3>
+<p><strong>[ALGEBRA]</strong> Let $\varphi$ be the angle between $\vec a$ and $\vec u$. The definition of the dot product in terms of that angle is</p>
+<p>$$
+\vec u\cdot\vec a=|\vec u|\,|\vec a|\cos\varphi .
+$$</p>
+<p>Square it:</p>
+<p>$$
+\left(\vec u\cdot\vec a\right)^{2}=|\vec u|^{2}\,|\vec a|^{2}\cos^{2}\varphi .
+$$</p>
+<p>Insert $|\vec u|^{2}=3$:</p>
+<p>$$
+\left(\vec u\cdot\vec a\right)^{2}=3\,|\vec a|^{2}\cos^{2}\varphi .
+$$</p>
+<p>Divide $|\vec a|^{2}$ by that expression. The length appears in the numerator and in the denominator, so it cancels:</p>
+<p>$$
+Q=\frac{|\vec a|^{2}}{\left(\vec u\cdot\vec a\right)^{2}}
+=\frac{|\vec a|^{2}}{3\,|\vec a|^{2}\cos^{2}\varphi}
+=\frac{1}{3\cos^{2}\varphi}.
+$$</p>
+<p><strong>The cancellation is the entire geometric content.</strong> $Q$ does not depend on how long $\vec a$ is. It depends on the direction of $\vec a$ and on nothing else. Two triples with proportional amplitude vectors have the same $Q$ whatever their masses, and a check on the leptons confirms it: scaling all three masses by $100$ leaves $Q$ at $0.6666605$.</p>
+<p>The inverse form is used everywhere below:</p>
+<p>$$
+\cos\varphi=\frac{1}{\sqrt{3Q}},
+\qquad
+\cos^{2}\varphi=\frac{1}{3Q}.
+$$</p>
+<p>Since $0<\cos^{2}\varphi\le1$, the identity also bounds $Q$ from below. With $\cos^{2}\varphi=1$ the three amplitudes are equal and $Q=1/3$; with $\cos\varphi=1/\sqrt3$, the Cauchy–Schwarz edge of §2.1, one amplitude vanishes and $Q=1$. So</p>
+<p>$$
+\frac13\le Q\le1 .
+$$</p>
+<p>§2.1 states the upper bound only. The lower bound $Q\ge1/3$ is the same identity read at the other end, and it says that no triple has amplitudes flatter than the degenerate one.</p>
+<h3 id="145-step-4-the-numbers-for-the-lepton-triple">14.5 Step 4: the numbers for the lepton triple</h3>
+<p><strong>[MEASURED]</strong> Each intermediate quantity, in the order it is used:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>quantity</th>
+<th>expression</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the masses</td>
+<td>$m_e,m_\mu,m_\tau$</td>
+<td>$0.511$, $105.658$, $1776.86$ MeV</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the coordinates</td>
+<td>$\sqrt{m_i}$</td>
+<td>$0.714842$, $10.279026$, $42.152817\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>numerator</td>
+<td>$|\vec a|^{2}=\sum m$</td>
+<td>$1883.029$ MeV</td>
+</tr>
+<tr>
+<td>4</td>
+<td>length</td>
+<td>$|\vec a|$</td>
+<td>$43.39389\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>length of $\vec u$</td>
+<td>$\sqrt3$</td>
+<td>$1.732051$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>dot product</td>
+<td>$\vec u\cdot\vec a=\sum\sqrt m$</td>
+<td>$53.14669\ \mathrm{MeV}^{1/2}$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>denominator</td>
+<td>$\left(\vec u\cdot\vec a\right)^{2}$</td>
+<td>$2824.570$ MeV</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ratio</td>
+<td>$Q$</td>
+<td>$0.66666051$</td>
+</tr>
+<tr>
+<td>9</td>
+<td>cosine</td>
+<td>$\vec u\cdot\vec a/(|\vec u|\,|\vec a|)$</td>
+<td>$0.7071100$</td>
+</tr>
+<tr>
+<td>10</td>
+<td>squared cosine</td>
+<td>$\cos^{2}\varphi$</td>
+<td>$0.5000046$</td>
+</tr>
+<tr>
+<td>11</td>
+<td>the identity</td>
+<td>$1/(3\cos^{2}\varphi)$</td>
+<td>$0.6666605$</td>
+</tr>
+<tr>
+<td>12</td>
+<td>the angle</td>
+<td>$\arccos(0.7071100)$</td>
+<td>$44.99974^{\circ}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Step 11 is a check and not a new number: $1/(3\times0.5000046)=0.6666605$ reproduces step 8 from the cosine alone.</p>
+<p>A third route passes through the orthogonal split, which 14.7 uses and which is worth writing here because it shows what the angle measures. Separate $\vec a$ into a part along the diagonal and a part orthogonal to it:</p>
+<p>$$
+\vec a=a_{\parallel}\hat u+\vec v,
+\qquad
+a_{\parallel}=\hat u\cdot\vec a=\frac{\sum\sqrt m}{\sqrt3}=30.68425\ \mathrm{MeV}^{1/2},
+\qquad
+\vec v\cdot\vec u=0 ,
+$$</p>
+<p>with $\hat u=\vec u/\sqrt3$. Then $|\vec v|^{2}=|\vec a|^{2}-a_{\parallel}^{2}=941.506\ \mathrm{MeV}$ against $a_{\parallel}^{2}=941.523$, so $|\vec v|=30.68397$ and</p>
+<p>$$
+\tan\varphi=\frac{|\vec v|}{a_{\parallel}}=0.9999908,
+\qquad
+Q=\frac{a_{\parallel}^{2}+|\vec v|^{2}}{3a_{\parallel}^{2}}=\frac{1+\tan^{2}\varphi}{3}=0.6666605 .
+$$</p>
+<p>So the angle is the ratio of the off-diagonal part of the amplitude vector to its diagonal part. Koide is the statement that the two parts have the same length.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>route</th>
+<th>expression</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A, from the masses</td>
+<td>$\sum m/\left(\sum\sqrt m\right)^{2}$</td>
+<td>$0.66666051$</td>
+</tr>
+<tr>
+<td>B, from the cosine</td>
+<td>$1/(3\cos^{2}\varphi)$</td>
+<td>$0.66666051$</td>
+</tr>
+<tr>
+<td>C, from the split</td>
+<td>$\left(a_{\parallel}^{2}+|\vec v|^{2}\right)/3a_{\parallel}^{2}$</td>
+<td>$0.66666051$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three routes, one number.</strong> The routes compute the same quantity, so their agreement tests the arithmetic and not the physics. It does test that no step was misstated, which is what the table is for.</p>
+<h3 id="146-step-5-the-inverse-and-what-math412-says">14.6 Step 5: the inverse, and what $45^{\circ}$ says</h3>
+<p><strong>[ALGEBRA]</strong> Solving 14.4 for the angle gives $\cos^{2}\varphi=1/(3Q)$, hence $\cos\varphi=1/\sqrt{3Q}$ and $\varphi=\arccos\left(1/\sqrt{3Q}\right)$. For the leptons, $1/(3Q)=0.5000046$, $\cos\varphi=0.7071100$, and $1/\sqrt2=0.7071068$; the difference is $3.2\times10^{-6}$, which is the $Q$ residual carried through a square root. So</p>
+<p>$$
+Q=\frac23\iff\cos^{2}\varphi=\frac12\iff\varphi=45^{\circ}.
+$$</p>
+<p>The statement has four equivalent forms. They are one equation, and each names a different object:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>form</th>
+<th>statement</th>
+<th>lepton value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the ratio</td>
+<td>$Q=2/3$</td>
+<td>$0.66666051$</td>
+</tr>
+<tr>
+<td>the angle</td>
+<td>$\cos^{2}\varphi=1/2$</td>
+<td>$0.5000046$</td>
+</tr>
+<tr>
+<td>the vectors</td>
+<td>$|\vec a|^{2}=\tfrac23\left(\vec u\cdot\vec a\right)^{2}$</td>
+<td>$1883.029$ against $1883.047$</td>
+</tr>
+<tr>
+<td>the parts</td>
+<td>$|\vec v|=a_{\parallel}$</td>
+<td>$30.68397$ against $30.68425$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The last two carry content. The first is a number; the second is one numeral in one unit; the third fixes the projection on the diagonal relative to the length; the fourth says the off-diagonal part has the length of the diagonal part. <strong>The invariant statement of Koide's $45^{\circ}$ is $|\vec v|=a_{\parallel}$, equivalently $\sigma_a=\bar a$.</strong> In degrees, $45$ is an integer only because of the unit we inherited, and a reading of the relation that rests on the roundness of $45$ rests on the unit.</p>
+<p>Two consequences follow, and the note keeps both.</p>
+<ul>
+<li>$Q$ measures a shape and not a scale, by 14.4. A mechanism that fixes $Q$ must fix a direction in amplitude space.</li>
+<li>$Q=2/3$ is the same condition in three dimensions as $Q=2/N$ is in $N$ dimensions: the amplitude vector at $45^{\circ}$ to the diagonal. §2.2's $N\ge3$ argument and Foot's angle are then one statement, and neither counts rungs.</li>
+</ul>
+<h3 id="147-the-angle-is-the-variance">14.7 The angle is the variance</h3>
+<p><strong>[ALGEBRA]</strong> The angle of 14.5 has a statistical name. For the three coordinates of $\vec v$,</p>
+<p>$$
+\vec a-\bar a\,\vec u=\vec v,
+\qquad
+\sigma_a^{2}=\frac13\sum_i\left(a_i-\bar a\right)^{2}=\frac{|\vec v|^{2}}{3},
+$$</p>
+<p>because the mean of the three components of $\vec v$ is zero by construction. Dividing by $a_{\parallel}=\sqrt3\,\bar a$,</p>
+<p>$$
+\tan\varphi=\frac{|\vec v|}{a_{\parallel}}=\frac{\sqrt3\,\sigma_a}{\sqrt3\,\bar a}=\frac{\sigma_a}{\bar a},
+\qquad
+Q=\frac{1+\tan^{2}\varphi}{3}.
+$$</p>
+<p>Measured, $\sigma_a/\bar a=0.9999908$ and $\varphi=44.9997^{\circ}$. This is the warrant that §2.3 asserted without a proof: §2.3 wrote $\operatorname{var}/\bar a^{2}=0.999982$ and said the vector sits at $45^{\circ}$; the identity here is the reason, and the two numbers differ only because one is squared.</p>
+<p>The form is worth keeping because it is scale-free. $\sigma_a/\bar a$ is invariant under $a_i\to\lambda a_i$, so Koide says the three amplitudes are as spread as their own mean. That is the only shape statement the closure makes.</p>
+<h3 id="148-the-map-is-one-to-one-so-the-angle-carries-the-coefficient">14.8 The map is one to one, so the angle carries the coefficient</h3>
+<p><strong>[ALGEBRA]</strong> $Q\mapsto\varphi$ is monotone on $[1/3,1]$, as Foot notes, and it is invertible: $\varphi=\arccos(1/\sqrt{3Q})$. Nothing is added by writing the angle, and nothing is lost.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$Q$</th>
+<th>$1/3$</th>
+<th>$1/2$</th>
+<th>$2/3$</th>
+<th>$3/4$</th>
+<th>$1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varphi$</td>
+<td>$0^{\circ}$</td>
+<td>$35.264^{\circ}$</td>
+<td>$45^{\circ}$</td>
+<td>$48.190^{\circ}$</td>
+<td>$54.736^{\circ}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Foot makes the same point with other coefficients: $3/4$ corresponds to $48.189^{\circ}$ and $1/2$ to $35.264^{\circ}$. A theory that produces $45^{\circ}$ and a theory that produces $2/3$ have produced the same number, and neither has produced a mechanism.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -780,57 +1080,98 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h3 id="142-the-map-is-one-to-one-so-the-angle-carries-the-coefficient">14.2 The map is one to one, so the angle carries the coefficient</h3>
-<p><strong>[ALGEBRA]</strong> The map from $Q$ to $\varphi$ is monotone and invertible on $[1/3,1]$, as Foot notes. Nothing is added by writing the angle, and nothing is lost.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>$Q$</th>
-<th>$1/3$</th>
-<th>$1/2$</th>
-<th>$2/3$</th>
-<th>$3/4$</th>
-<th>$1$</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\varphi$</td>
-<td>$0^{\circ}$</td>
-<td>$35.264^{\circ}$</td>
-<td>$45^{\circ}$</td>
-<td>$48.190^{\circ}$</td>
-<td>$54.736^{\circ}$</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>So $45^{\circ}$ is not a fact about degrees.</strong> It is $\tan\varphi=1$, and the invariant statement is the one 14.3 proves. A theory that produces $45^{\circ}$ and a theory that produces $2/3$ have produced the same number.</p>
-<h3 id="143-the-angle-is-the-variance">14.3 The angle is the variance</h3>
-<p><strong>[ALGEBRA]</strong> With $\bar a$ the mean amplitude and $\sigma_a$ its standard deviation over the three rungs,</p>
-<p>$$
-\tan\varphi=\frac{\sigma_a}{\bar a},
-\qquad
-Q=\frac{1+\tan^{2}\varphi}{3}.
-$$</p>
-<p>Measured, $\sigma_a/\bar a=0.9999908$ and $\varphi=44.9997^{\circ}$. This is the warrant missing from §2.3, which asserted the $45^{\circ}$ reading without the formula behind it.</p>
-<p>The form is worth having because it is scale-free: $\sigma_a/\bar a$ is invariant under $a_i\to\lambda a_i$, so Koide is the statement that the three amplitudes are as spread as their own mean. That is a shape statement, and it is the only one the closure makes.</p>
-<h3 id="144-the-phase-is-the-azimuth">14.4 The phase is the azimuth</h3>
-<p><strong>[ALGEBRA]</strong> Every triple of amplitudes has exactly one representation</p>
+<p>The quark sectors sit $2.54^{\circ}$ and $6.20^{\circ}$ outside the closing angle, so they do not close. That is §1's failure written as an angular distance.</p>
+<h3 id="149-the-phase-is-the-azimuth">14.9 The phase is the azimuth</h3>
+<p><strong>[ALGEBRA]</strong> The angle $\varphi$ fixes the direction of $\vec a$ relative to $\vec u$ but not its position around $\vec u$. A second angle is needed, and one representation supplies it. Every triple of amplitudes has exactly one representation</p>
 <p>$$
 \sqrt{m_i}=\mu+R\cos\left(\delta+\frac{2\pi i}{3}\right),
 \qquad i=1,2,3,
 $$</p>
-<p>with $\mu=\bar a$ and $R\ge0$. Three parameters, three amplitudes: this is a change of coordinates, and it reproduces any triple exactly. Checked on $[1,2,4]$ and on $[1,1,10]$, both to machine precision.</p>
-<p>In these coordinates the closure is a statement about the radius:</p>
+<p>with $\mu=\bar a$ and $R\ge0$. Three parameters, three amplitudes, no assumption: this is a change of coordinates, and it reproduces any triple exactly. Checked on $[1,2,4]$ and on $[1,1,10]$, both to machine precision, and on the leptons with $\mu=17.71556$, $R=25.05336$, $\delta=0.2222296$.</p>
+<p>Two sums carry the whole of the closure in this language, and each is checked at $\delta=0$, where the cosines are $1$, $-1/2$, $-1/2$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>sum</th>
+<th>value</th>
+<th>at $\delta=0$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\sum_i\cos\left(\delta+2\pi i/3\right)$</td>
+<td>$0$</td>
+<td>$1-\tfrac12-\tfrac12=0$</td>
+</tr>
+<tr>
+<td>$\sum_i\cos^{2}\left(\delta+2\pi i/3\right)$</td>
+<td>$3/2$</td>
+<td>$1+\tfrac14+\tfrac14=1.5$</td>
+</tr>
+</tbody>
+</table></div>
+<p>With those two, the numerator and the denominator of $Q$ follow in one line each:</p>
 <p>$$
-Q=\frac{1}{3}\left(1+\frac{R^{2}}{2\mu^{2}}\right),
+\sum_i m_i=3\mu^{2}+\tfrac32 R^{2},
 \qquad
-Q=\frac23\iff R=\sqrt2\,\mu ,
+\left(\sum_i\sqrt{m_i}\right)^{2}=9\mu^{2},
 $$</p>
-<p>and $\delta$ does not appear. <strong>$Q$ is blind to the phase.</strong> That is the exact form of §2.4's sentence "the circle contains no information beyond Koide": the circle is the locus $R=\sqrt2\mu$, and the phase is the position on it. The ratio $R/(\sqrt2\mu)$ is $\tan\varphi$ of 14.3, so the polar angle and the radius are one number.</p>
-<p>The equal spacing $2\pi/3$ also has a geometric warrant at $N=3$, which §3 does not credit. The three coordinate axes of $\mathbb R^{3}$ project onto the plane orthogonal to $\vec u$ as three coplanar unit directions at mutual angles $\arccos\left(-\tfrac12\right)=120^{\circ}$, and the three amplitudes are the components of one vector along them, plus the constant $\bar a$. Nothing else could happen: the spacing is the projection of the axes and not a choice. For $N$ axes the same construction gives $\arccos\left(-\tfrac{1}{N-1}\right)$, which is $109.47^{\circ}$ at $N=4$ and tends to $90^{\circ}$, so the $2\pi/N$ spacing of §5 is not this projection for any $N\neq3$.</p>
-<h3 id="145-the-phase-measured">14.5 The phase, measured</h3>
-<p><strong>[MEASURED, PUBLISHED]</strong> Solving the three masses for $\delta$ in the convention of 14.4,</p>
+<p>so</p>
+<p>$$
+Q=\frac{3\mu^{2}+\tfrac32R^{2}}{9\mu^{2}}=\frac13\left(1+\frac{R^{2}}{2\mu^{2}}\right).
+$$</p>
+<p><strong>$\delta$ does not appear.</strong> $Q$ is blind to the phase, and the closure is a statement about the radius:</p>
+<p>$$
+Q=\frac23\iff R=\sqrt2\,\mu .
+$$</p>
+<p>The ratio $R/(\sqrt2\mu)$ is $\tan\varphi$ of 14.5, so the radius and the polar angle are one number. The circle of §2.4 is the locus $R=\sqrt2\mu$; the phase is the position on it. That is the exact form of §2.4's sentence "the circle contains no information beyond Koide".</p>
+<h3 id="1410-the-math525-spacing-is-a-projection-not-an-assumption">14.10 The $120^{\circ}$ spacing is a projection, not an assumption</h3>
+<p><strong>[ALGEBRA]</strong> §3 calls the equal spacing an assumption. At $N=3$ it is not one, and the proof is three lines. Let $\hat e_i$ be the three coordinate axes of $\mathbb R^{3}$ and project each onto the plane orthogonal to $\hat u$:</p>
+<p>$$
+\vec p_i=\hat e_i-\left(\hat e_i\cdot\hat u\right)\hat u
+=\hat e_i-\tfrac13(1,1,1).
+$$</p>
+<p>Then, because $\hat e_i\cdot\hat e_j=\delta_{ij}$ and $|\hat u|^{2}=1$,</p>
+<p>$$
+\vec p_i\cdot\vec p_j=\delta_{ij}-\tfrac13,
+\qquad
+|\vec p_i|^{2}=\tfrac23 .
+$$</p>
+<p>For $i\neq j$ the cosine between the projections is $\left(-\tfrac13\right)/\left(\tfrac23\right)=-\tfrac12$, which is $120^{\circ}$. So the three amplitudes are the components of one vector along three directions forced to be equally spaced. <strong>Nothing else could happen:</strong> the spacing is the dimension of the space, not a choice about it.</p>
+<p>The same construction in $N$ dimensions gives $\cos\theta_{ij}=-1/(N-1)$, hence</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>projected angle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$180^{\circ}$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$120^{\circ}$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$109.47^{\circ}$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$104.48^{\circ}$</td>
+</tr>
+<tr>
+<td>$\to\infty$</td>
+<td>$90^{\circ}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>So the $2\pi/N$ spacing used in §5 is not this projection for any $N\neq3$. At $N=4$ the projected spacing is $109.47^{\circ}$, not $90^{\circ}$. The fits of §5 test a chosen extension of the ansatz, and their failure is a fact about the choice. What the circle ansatz assumes is the radius condition $R=\sqrt2\mu$, which is $Q=2/3$ itself, together with the value of $\delta$; the spacing it does not assume.</p>
+<h3 id="1411-the-phase-measured">14.11 The phase, measured</h3>
+<p><strong>[MEASURED, PUBLISHED]</strong> Solving the three masses for $\delta$ in the convention of 14.9:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -869,7 +1210,14 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The convention matters and is stated once: $\delta$ is defined by $i=1,2,3$ attached to $e,\mu,\tau$ and by the plus sign in $\cos(\delta+2\pi i/3)$. Relabelling the rungs shifts $\delta$ by $120^{\circ}$, and flipping the sign convention replaces $\delta$ by $-\delta$. The number $2/9$ means nothing without the convention.</p>
+<p>The closed form is worth writing, because it shows that the phase is a ratio of differences of amplitudes and not a fitted number:</p>
+<p>$$
+\tan\delta=\frac{\sqrt3\left(a_\mu-a_e\right)}{2a_\tau-a_\mu-a_e}
+=\frac{\sqrt3\left(10.279026-0.714842\right)}{2(42.152817)-10.279026-0.714842}
+=\frac{16.5657}{73.3118}=0.22596 .
+$$</p>
+<p>With $\arctan$ that is $\delta=0.2222296$, and the two lines behind it are $\cos(\delta+240^{\circ})-\cos(\delta+120^{\circ})=\sqrt3\sin\delta$ and $2\cos\delta-\cos(\delta+240^{\circ})-\cos(\delta+120^{\circ})=3\cos\delta$.</p>
+<p>The convention is part of the number and is stated once. $\delta$ is defined by $i=1,2,3$ attached to $e,\mu,\tau$ and by the plus sign in $\cos(\delta+2\pi i/3)$, so the $e$ rung carries the argument $\delta+120^{\circ}$ and the $\tau$ rung carries $\delta$. Relabelling the rungs shifts $\delta$ by $120^{\circ}$, and using a minus sign replaces $\delta$ by $-\delta$. The number $2/9$ means nothing without the convention.</p>
 <p>With $Q=2/3$ imposed, the reconstruction is most sensitive to $\delta$ in the light rung:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -926,19 +1274,18 @@ $$</p>
 </tbody>
 </table></div>
 <p><strong>The agreement is not independent evidence.</strong> The spread is the $Q$ residual, because all three estimates are the same three masses read differently.</p>
-<h3 id="146-what-the-two-lenses-do-not-do">14.6 What the two lenses do not do</h3>
+<h3 id="1412-what-the-two-lenses-do-not-do">14.12 What the two lenses do not do</h3>
 <ol>
 <li><strong>They do not explain $2/3$.</strong> The angle is $2/3$; the phase parametrisation is a coordinate change. Both are exact and neither is a mechanism.</li>
 <li><strong>They are not two independent facts.</strong> $\varphi$ and $\delta$ are the polar and azimuthal angles of one vector. A fit to one is a fit to the same three masses as the other.</li>
-<li><strong>$2/9$ is not derived.</strong> No argument here produces it. The corpus's candidates live outside it: a Green's-function constant $2\pi^{2}/9$ on a $Z_3$-sampled circle, with a free normalisation, and a hypercharge rule $\delta=(1+|Y|)/9$ that fits the leptons and the up quarks and fails its own sum rule. Both are quoted in <code>articles_external/Koide/</code> and neither is adopted.</li>
-<li><strong>$45^{\circ}$ is not fundamental because it is round.</strong> The invariant is $\sigma_a=\bar a$. Written in degrees it is a numeral that happens to be an integer in the units we inherited.</li>
+<li><strong>$2/9$ is not derived.</strong> No argument here produces it. The corpus's candidates live outside this section: a Green's-function constant $2\pi^{2}/9$ on a $Z_3$-sampled circle, with a free normalisation, and a hypercharge rule $\delta=(1+|Y|)/9$ that fits the leptons and the up quarks and fails its own sum rule. Both are quoted in <code>articles_external/Koide/</code> and neither is adopted.</li>
+<li><strong>$45^{\circ}$ is not fundamental because it is round.</strong> The invariant is $|\vec v|=a_{\parallel}$, equivalently $\sigma_a=\bar a$.</li>
 <li><strong>The phase is not evidence of order replacing chaos.</strong> Three numbers to three parameters is a reparametrisation. The only content is that $\delta$ is small and close to a short fraction, and small numbers of that kind are common in fitted triples.</li>
-<li><strong>Neither coordinate fixes the other.</strong> This is the point §6 gets wrong, and 14.7 shows the counterexample.</li>
+<li><strong>Neither coordinate fixes the other.</strong> $Q$ is blind to $\delta$ by 14.9, and 14.13 shows that $Q$ does not fix the distance from the node.</li>
 </ol>
-<h3 id="147-where-this-disagrees-with-3-and-6">14.7 Where this disagrees with §3 and §6</h3>
+<h3 id="1413-where-this-disagrees-with-3-and-6">14.13 Where this disagrees with §3 and §6</h3>
 <p>Both disagreements are exact, and both are stated without editing the earlier sections.</p>
-<p><strong>§3 calls the phase spacing an assumption. At $N=3$ it is geometry.</strong> By 14.4 the three samples at $120^{\circ}$ are the projections of the three axes, so the spacing is forced by the dimension and not assumed. What is assumed in the circle ansatz is the radius condition $R=\sqrt2\mu$, which is $Q=2/3$ itself, together with the value of $\delta$. §3's table is right that the closure is an identity of the ansatz; its sentence about the spacing is not.</p>
-<p>For $N\neq3$ the note's extension is a choice and not a projection, since the projected spacing is $\arccos(-1/(N-1))$. The fits of §5 test that choice, and their failure is a fact about the choice.</p>
+<p><strong>§3 calls the phase spacing an assumption. At $N=3$ it is geometry.</strong> By 14.10 the three samples at $120^{\circ}$ are the projections of the three axes, so the spacing is forced by the dimension. What is assumed in the circle ansatz is the radius condition $R=\sqrt2\mu$, which is $Q=2/3$ itself, together with the value of $\delta$. §3's table is right that the closure is an identity of the ansatz; its sentence about the spacing is not.</p>
 <p><strong>§6 makes the electron's distance from the node equal to $Q$. It is the phase.</strong> The node, where an amplitude vanishes, is at $\delta=15^{\circ}$; its position is fixed by the coefficient $\sqrt2$ and so by $Q$. The electron's distance from it is $15^{\circ}-\delta=2.267^{\circ}$, and that number is $\delta$, which $Q$ does not fix. The counterexample is exact and uses the note's own formula, normalised with $R=\sqrt2\mu$ so that every row has $Q=2/3$:</p>
 <div class="table-scroll"><table>
 <thead>
@@ -972,11 +1319,11 @@ $$</p>
 </table></div>
 <p>Every row has $Q=2/3$ exactly, and the light rung ranges from zero to $26.9$ MeV. So the node's location is $Q$ and the distance from it is not. The sentence in §12 that retracts "the node distance as a separate finding" therefore retracts too much: the distance is a second coordinate, and it is the phase the note fits in §5 without naming it.</p>
 <p>The positivity window is the same statement from the other side. Requiring $\sqrt{m_i}\ge0$ for all three rungs confines $\delta$ to $(-15^{\circ},15^{\circ})$ modulo $120^{\circ}$, whose edges are the nodes. The measured $\delta$ sits $2.267^{\circ}$ inside that boundary.</p>
-<h3 id="148-what-the-section-leaves-open">14.8 What the section leaves open</h3>
+<h3 id="1414-what-the-section-leaves-open">14.14 What the section leaves open</h3>
 <p>The amplitude vector has three coordinates: a scale $\mu$, a polar angle $\varphi$, and an azimuth $\delta$. Koide fixes $\varphi=45^{\circ}$. Nothing in the note fixes $\delta$, and $\delta$ is where the remaining content sits, because $\varphi$ is $Q$ under another name.</p>
 <p>That reframes the target of §11. A mechanism for flavour must produce two numbers and not one: a shape ratio $\sigma_a/\bar a$ equal to $1$, and a phase $\delta$ equal to a short fraction of a radian. The first is a ratio and can come from a projection or an alignment. The second is an angle and needs a boundary condition on a finite tower, which the corpus does not have. The gap named at the end of §10 is therefore unchanged in kind and narrower in statement.</p>
-<p>One falsifiable shape is worth recording. If any other triple closes, it must appear at $45^{\circ}$ in the table of 14.2, and its phase must be computed in the convention of 14.5. The quark sectors sit at $47.54^{\circ}$ and $51.20^{\circ}$, so they do not close, and their phases are not quoted here because their masses need a stated scale before the number means anything.</p>
-<h3 id="149-checks-made-inside-this-section">14.9 Checks made inside this section</h3>
+<p>One falsifiable shape is worth recording. If any other triple closes, it must appear at $45^{\circ}$ in the table of 14.8, and its phase must be computed in the convention of 14.11. The quark sectors sit at $47.54^{\circ}$ and $51.20^{\circ}$, so they do not close, and their phases are not quoted here because their masses need a stated scale before the number means anything.</p>
+<h3 id="1415-checks-made-inside-this-section">14.15 Checks made inside this section</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -987,9 +1334,24 @@ $$</p>
 </thead>
 <tbody>
 <tr>
+<td>the numerator</td>
+<td>$\sum m$ for the leptons</td>
+<td>$1883.029$ MeV</td>
+</tr>
+<tr>
+<td>the denominator</td>
+<td>$\left(\sum\sqrt m\right)^{2}$</td>
+<td>$2824.570$ MeV</td>
+</tr>
+<tr>
 <td>the identity</td>
-<td>$Q$ from $1/(3\cos^{2}\varphi)$, leptons</td>
+<td>$1/(3\cos^{2}\varphi)$</td>
 <td>$0.66666051$</td>
+</tr>
+<tr>
+<td>the cancellation</td>
+<td>$Q$ with all masses scaled by $100$</td>
+<td>$0.6666605$, unchanged</td>
 </tr>
 <tr>
 <td>the lower bound</td>
@@ -1002,24 +1364,24 @@ $$</p>
 <td>$54.73561^{\circ}$</td>
 </tr>
 <tr>
-<td>the coefficient map</td>
-<td>$Q=1/2$, $3/4$</td>
-<td>$35.264^{\circ}$, $48.190^{\circ}$</td>
-</tr>
-<tr>
-<td>the variance form</td>
-<td>$\sigma_a/\bar a$, leptons</td>
-<td>$0.9999908$</td>
-</tr>
-<tr>
-<td>$\varphi$ measured</td>
-<td>$\arctan(\sigma_a/\bar a)$</td>
+<td>the inverse</td>
+<td>$\arccos\left(1/\sqrt{3Q}\right)$</td>
 <td>$44.99974^{\circ}$</td>
 </tr>
 <tr>
-<td>the decomposition</td>
-<td>$[1,2,4]$ and $[1,1,10]$</td>
-<td>reproduced, error $<10^{-15}$</td>
+<td>the split</td>
+<td>$a_{\parallel}$ and $|\vec v|$</td>
+<td>$30.68425$, $30.68397$</td>
+</tr>
+<tr>
+<td>the three routes</td>
+<td>A, B, C</td>
+<td>$0.66666051$ each</td>
+</tr>
+<tr>
+<td>the cosine sums</td>
+<td>$1-\tfrac12-\tfrac12$ and $1+\tfrac14+\tfrac14$</td>
+<td>$0$, $1.5$</td>
 </tr>
 <tr>
 <td>the radius form</td>
@@ -1027,14 +1389,24 @@ $$</p>
 <td>$0.99998153$ both</td>
 </tr>
 <tr>
-<td>the $120^{\circ}$ spacing</td>
-<td>$\arccos(-1/2)$, and $\arccos(-1/3)$ at $N=4$</td>
-<td>$120^{\circ}$, $109.471^{\circ}$</td>
+<td>the decomposition</td>
+<td>$[1,2,4]$ and $[1,1,10]$</td>
+<td>reproduced, error $<10^{-15}$</td>
 </tr>
 <tr>
-<td>the phase</td>
-<td>$\arctan\!\left[\sqrt3(a_\mu-a_e)/(2a_\tau-a_\mu-a_e)\right]$</td>
-<td>$0.2222296$</td>
+<td>the projection</td>
+<td>$\vec p_i\cdot\vec p_j=-1/3$, $|\vec p_i|^{2}=2/3$</td>
+<td>$\cos=-1/2$, $120^{\circ}$</td>
+</tr>
+<tr>
+<td>the $N=4$ projection</td>
+<td>$-1/(N-1)$</td>
+<td>$109.471^{\circ}$</td>
+</tr>
+<tr>
+<td>the closed form for the phase</td>
+<td>$\sqrt3(a_\mu-a_e)/(2a_\tau-a_\mu-a_e)$</td>
+<td>$0.22596$, $\delta=0.2222296$</td>
 </tr>
 <tr>
 <td>the $\tau$ prediction</td>
@@ -1053,6 +1425,672 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
+<h3 id="1416-is-the-value-math761-an-accident-a-counted-answer">14.16 Is the Value $2/3$ an Accident? A Counted Answer</h3>
+<p>§10 item 7 records the relation as "a coincidence with a good parametrisation". That verdict is too weak, and this subsection replaces it with a number. The question has an answer, the answer is about one in a thousand, and the standing difficulty is not improbability at all.</p>
+<h4 id="14161-what-has-to-be-counted">14.16.1 What has to be counted</h4>
+<p>Three triples are in the data: the charged leptons and the two quark sectors. One of them closes to six parts in a million and the other two miss by $0.18$ and $0.065$. The claim "accident" says that the closing triple is an unremarkable draw from the space of possible triples. That claim is testable, because the space of triples has a measure.</p>
+<p><strong>[ALGEBRA]</strong> Fix the direction of the amplitude vector and let it be uniform in the positive octant, which is the natural measure for three positive masses with no scale. Since $Q$ depends on direction only (14.4), a direction has one coordinate, $c=\cos\varphi\in[1/\sqrt3,1]$, uniform in $c$. With $Q=1/(3c^{2})$,</p>
+<p>$$
+f_Q(q)=\frac{q^{-3/2}}{2\sqrt3\left(1-1/\sqrt3\right)}=0.6830\,q^{-3/2},
+\qquad
+\int_{1/3}^{1}f_Q\,dq=1 .
+$$</p>
+<p>The density falls from $3.55$ at $Q=1/3$ to $0.683$ at $Q=1$, so the democratic end is the crowded end. At $Q=2/3$ the density is $1.2548$.</p>
+<p>The window is fixed by the data, not chosen: $Q$ is measured to $\pm6.2\times10^{-6}$ of $2/3$. The probability that one structureless triple lands in that window is</p>
+<p>$$
+P=2\,(6.2\times10^{-6})\,(1.2548)=1.56\times10^{-5},
+$$</p>
+<p>which is one in $64{,}000$. The answer moves by less than a factor of two under a different prior on $Q$: uniform in $Q$ gives one in $54{,}000$, and a Monte Carlo over a uniform amplitude simplex gives one in $100{,}000$. <strong>The scale of the answer is $10^{-5}$, and it does not depend on the choice of measure.</strong></p>
+<h4 id="14162-the-correction-that-has-to-be-made-and-the-answer-it-gives">14.16.2 The correction that has to be made, and the answer it gives</h4>
+<p>The figure of 14.16.1 is not yet the right one, because a hit on any short fraction would have been noticed and written up. The window has to be multiplied by the number of short fractions that sit in the range.</p>
+<p><strong>[ALGEBRA]</strong> The fractions with denominator at most nine inside $[1/3,1]$ number twenty:</p>
+<p>$$
+\tfrac13,\ \tfrac38,\ \tfrac25,\ \tfrac37,\ \tfrac49,\ \tfrac12,\ \tfrac59,\ \tfrac47,\ \tfrac35,\ \tfrac58,\ \tfrac23,\ \tfrac57,\ \tfrac34,\ \tfrac79,\ \tfrac45,\ \tfrac56,\ \tfrac67,\ \tfrac78,\ \tfrac89,\ 1 .
+$$</p>
+<p>Twenty candidates, three triples, and the same window of $1.86\times10^{-5}$ in $Q$ each time:</p>
+<p>$$
+P_{\text{corrected}}=3\times20\times1.86\times10^{-5}=1.1\times10^{-3}.
+$$</p>
+<p><strong>The honest figure is one in nine hundred, which is about three sigma.</strong> It is not one in $64{,}000$. A reader who quotes the smaller number has counted one candidate value after seeing which value won.</p>
+<p>Three sigma is a real hit and not a proof. It is the level at which a result is worth pursuing and not the level at which a result is believed.</p>
+<h4 id="14163-the-part-that-needs-no-probability">14.16.3 The part that needs no probability</h4>
+<p>One property of $2/3$ is exact and does not enter the count above, because it is the same number restated. It is still worth separating, since it converts the number into a statement about the rung count.</p>
+<p><strong>[ALGEBRA]</strong> For $N$ rungs the ratio $Q$ is confined to $[1/N,1]$: the floor is the democratic triple and the ceiling is the single-mass triple. The closure value is $2/N$. The midpoint of the interval is $(1/N+1)/2=(N+1)/(2N)$. Then</p>
+<p>$$
+\frac{N+1}{2N}=\frac{2}{N}\iff N+1=4\iff N=3 .
+$$</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$N$</th>
+<th>closure value $2/N$</th>
+<th>midpoint of $[1/N,1]$</th>
+<th>equal</th>
+<th>position in its interval</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$2$</td>
+<td>$1.000$</td>
+<td>$0.750$</td>
+<td>no</td>
+<td>$1.000$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$0.667$</td>
+<td>$0.667$</td>
+<td><strong>yes</strong></td>
+<td>$0.500$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$0.500$</td>
+<td>$0.625$</td>
+<td>no</td>
+<td>$0.333$</td>
+</tr>
+<tr>
+<td>$5$</td>
+<td>$0.400$</td>
+<td>$0.600$</td>
+<td>no</td>
+<td>$0.250$</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>$0.333$</td>
+<td>$0.583$</td>
+<td>no</td>
+<td>$0.200$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three is the only count for which the closure value is the middle of its own allowed range.</strong> So the sentence "$Q=2/3$" and the sentence "three rungs" are the same sentence, once the bound is known. This is a sharpening of what the number means; it is not extra evidence, and the section does not count it twice.</p>
+<p>A second exact tie comes from 14.10. The closure value sits at the fraction $1/(N-1)$ of its interval, and the projected spacing of the rung directions has cosine $-1/(N-1)$. The same magnitude appears on both sides, and at $N=3$ both are $1/2$: the coefficient is half way up its range, and the directions are $120^{\circ}$ apart. Table of the first column and table of 14.10 are the same row index.</p>
+<h4 id="14164-what-the-corpus-supplies-at-math827-and-what-it-does-not">14.16.4 What the corpus supplies at $2/3$, and what it does not</h4>
+<p>The corpus produces $2/3$ exactly, several times. The list has to be read with care, because the appearances are not all independent, and two of them move with a choice of basis.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>where</th>
+<th>the statement</th>
+<th>origin</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u_R$ hypercharge</td>
+<td>$Y=+2/3$</td>
+<td>$Q=T_3+\tfrac12(B-L)$ with $B-L=+\tfrac13$ on a quark</td>
+<td>exact, ratio-fixed</td>
+</tr>
+<tr>
+<td>the quartet trace</td>
+<td>$3\left(+\tfrac13\right)+(-1)=0$</td>
+<td>three colours against one lepton</td>
+<td>exact, ratio-fixed</td>
+</tr>
+<tr>
+<td>the charge spectrum of one ideal</td>
+<td>$0,\ \tfrac13,\ \tfrac23,\ 1$</td>
+<td>the minimal left ideal of the colour algebra</td>
+<td>exact</td>
+</tr>
+<tr>
+<td>the photon direction</td>
+<td>$\sqrt{2/3}$ on the fifteenth Cartan</td>
+<td>$\tfrac12\sqrt{8/3}$ with $\operatorname{tr}(T^{15})^{2}=\tfrac12$</td>
+<td>moves with the generator basis</td>
+</tr>
+<tr>
+<td>the one-loop coefficient</td>
+<td>$b_0=11-\tfrac23 N_f$</td>
+<td>the Weyl-fermion Dynkin index</td>
+<td>convention on the index</td>
+</tr>
+<tr>
+<td>the cubic anomaly</td>
+<td>terms in $(2/3)^{3}$</td>
+<td>the hypercharge values above</td>
+<td>exact, ratio-fixed</td>
+</tr>
+</tbody>
+</table></div>
+<p>Sources: <a href="../articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go</a>, <a href="../articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model Content</a>, <a href="../articles_physics/the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture</a>, and <a href="../articles_physics/the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon: An Octet Outside the Biquaternion Algebra</a>.</p>
+<p><strong>Two honest deductions.</strong> First, the appearances are not six independent sightings. The first, second, third and sixth rows are one fact: the trace $3\cdot\tfrac13-1=0$, which fixes a ratio of $1$ to $3$. The fourth and fifth rows are normalisations and move with a convention, and the photon article says so itself. So the model produces $2/3$ <strong>once</strong>, at the level of a trace ratio, and everything else descends from it or from a basis choice.</p>
+<p>Second, the origin of the trace ratio is a count. Three colours share the quark eigenvalue, so a third is forced, and $2/3$ follows from $2\cdot\tfrac13$. The charge article states the count explicitly: "the denominator is a count ... three is the number of dimensions the algebra supplies for them".</p>
+<h4 id="14165-the-two-values-of-math846-and-the-one-thing-they-do-not-share">14.16.5 The two values of $2/3$, and the one thing they do not share</h4>
+<p>Both values descend from three, and the resemblance is real. It is not yet a derivation.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th></th>
+<th>the model's $2/3$</th>
+<th>Koide's $2/3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the three</td>
+<td>the number of colours, $\mathbf{4}=\mathbf{3}\oplus\mathbf{1}$</td>
+<td>the number of rungs of one tower</td>
+</tr>
+<tr>
+<td>the object</td>
+<td>a ratio of $B-L$ eigenvalues</td>
+<td>a ratio of sums of masses</td>
+</tr>
+<tr>
+<td>what fixes it</td>
+<td>the trace $\sum_i\lambda_i=0$ on four states</td>
+<td>the direction of $\vec a$ at the midpoint of its interval</td>
+</tr>
+<tr>
+<td>status</td>
+<td>structural, exact, scale-free</td>
+<td>measured, exact to $6\times10^{-6}$</td>
+</tr>
+<tr>
+<td>the missing step</td>
+<td>none</td>
+<td>why $\sigma_a=\bar a$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the two values share is the numeral and the number three. What they do not share is the object it is a ratio of.</strong> A colour trace is a statement about the dimension of a representation. Koide's ratio is a statement about the shape of a mass spectrum. Nothing in the corpus maps one onto the other, and this section does not claim to.</p>
+<p>That is the precise form of the objection that has to be answered. It is not "the coincidence is improbable". It is "the coincidence is probable enough at three sigma, and the numeral is produced by two different counting games".</p>
+<h4 id="14166-the-verdict-and-what-would-overturn-it">14.16.6 The verdict, and what would overturn it</h4>
+<ol>
+<li><strong>The value is not an accident.</strong> One in nine hundred after the correction for short fractions, and the closing triple is the only one of three. Confidence: moderate to high.</li>
+<li><strong>The stronger claim, that the model predicts it, is not established.</strong> The model's $2/3$ is a trace ratio of $1$ to $3$; Koide's is a mass ratio. Confidence: certain that the step is missing.</li>
+<li><strong>§10 item 7 is too weak and should be read with this subsection.</strong> "A coincidence with a good parametrisation" was written before the probability was counted. The correct statement is: a three-sigma hit on a value the algebra also produces, whose mechanism is unidentified.</li>
+<li><strong>The number is worth pursuing, and the target is unchanged.</strong> It is 14.14's: a mechanism must give $\sigma_a=\bar a$ and a phase $\delta$. A trace ratio cannot do that by itself, because it carries no mass scale and no spectrum.</li>
+</ol>
+<p>Three outcomes would end the reading, and each is a measurement rather than an argument:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>outcome</th>
+<th>effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$ drifts by more than $10^{-3}$ between the pole and a common scale (§11, first row)</td>
+<td>the value is a low-energy accident after all</td>
+</tr>
+<tr>
+<td>a fourth charged lepton appears and does not close</td>
+<td>the closure is a property of the triple, not of a tower</td>
+</tr>
+<tr>
+<td>the neutrino or quark sector closes at $Q=2/N$ with $N\neq3$</td>
+<td>the rung count is not three, and 14.16.3 loses its unique solution</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="14167-checks-made-inside-this-subsection">14.16.7 Checks made inside this subsection</h4>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>check</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the density of $Q$</td>
+<td>$\int_{1/3}^{1}0.6830\,q^{-3/2}dq$</td>
+<td>$1.000$</td>
+</tr>
+<tr>
+<td>the density at $2/3$</td>
+<td>$0.6830\times(2/3)^{-3/2}$</td>
+<td>$1.255$</td>
+</tr>
+<tr>
+<td>the naive probability</td>
+<td>$2(6.2\times10^{-6})(1.255)$</td>
+<td>$1.56\times10^{-5}$, one in $64{,}000$</td>
+</tr>
+<tr>
+<td>the prior dependence</td>
+<td>uniform in $Q$, amplitude simplex</td>
+<td>one in $54{,}000$, one in $100{,}000$</td>
+</tr>
+<tr>
+<td>the short fractions</td>
+<td>denominators $\le9$ in $[1/3,1]$</td>
+<td>$20$</td>
+</tr>
+<tr>
+<td>the corrected probability</td>
+<td>$3\times20\times1.86\times10^{-5}$</td>
+<td>$1.1\times10^{-3}$, one in $900$</td>
+</tr>
+<tr>
+<td>the midpoint identity</td>
+<td>$(1/N+1)/2=2/N$</td>
+<td>$N=3$ only</td>
+</tr>
+<tr>
+<td>the position in the interval</td>
+<td>$\left(2/N-1/N\right)/\left(1-1/N\right)$</td>
+<td>$1/(N-1)$</td>
+</tr>
+<tr>
+<td>the tie with 14.10</td>
+<td>$\lvert\cos\theta_{ij}\rvert$ against the position</td>
+<td>both $1/(N-1)$; both $1/2$ at $N=3$</td>
+</tr>
+<tr>
+<td>the trace</td>
+<td>$3\left(+\tfrac13\right)+(-1)$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>the $u_R$ charge</td>
+<td>$\tfrac12+\tfrac12\left(+\tfrac13\right)$</td>
+<td>$+\tfrac23$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="15-increment-the-shifted-koide-math895-and-why-recovering-the-electron-is-not-evidence">15. Increment: The Shifted Koide $(m_2,m_3,m_4)$, and Why Recovering the Electron Is Not Evidence</h2>
+<p><strong>This section is an increment, not a result.</strong> It records one substitution, the algebra it forces, and the two questions the substitution raises. The first question is whether the relation still says anything once shifted; the answer is that it says the same thing twice and nothing more. The second is whether the shifted relation predicts a fourth mass; it does, and the prediction is dead on arrival. The arithmetic is kept because it took an afternoon and it settles both questions.</p>
+<h3 id="151-the-substitution-and-the-quadratic-it-forces">15.1 The substitution, and the quadratic it forces</h3>
+<p><strong>[ALGEBRA]</strong> The relation of §1 is written for the triple $(m_1,m_2,m_3)$. Shift the indices by one rung:</p>
+<p>$$
+Q=\frac{m_2+m_3+m_4}{\left(\sqrt{m_2}+\sqrt{m_3}+\sqrt{m_4}\right)^{2}}=\frac{2}{3},
+\qquad (m_2,m_3,m_4)=(m_\mu,m_\tau,m_4).
+$$</p>
+<p><strong>[ALGEBRA]</strong> With $a_i=\sqrt{m_i}$, $S=a_2+a_3$ and $T=a_2^{2}+a_3^{2}$, clearing the denominator gives a quadratic in the one unknown $a_4$:</p>
+<p>$$
+a_4^{2}-4S\,a_4+3T-2S^{2}=0 .
+$$</p>
+<p><strong>[ALGEBRA]</strong> Its discriminant is $24S^{2}-12T=12\left(a_2^{2}+4a_2a_3+a_3^{2}\right)$, which is positive for any two positive masses. <strong>So the shifted relation never fails to offer a solution. It always has two real roots, one above the pair and one below it.</strong> That fact is the first sign that the substitution buys nothing: an equation that always has a solution cannot fail, and an equation that cannot fail is not a test.</p>
+<p><strong>[ALGEBRA]</strong> The roots in closed form, with $m_4=a_4^{2}$:</p>
+<p>$$
+m_4=\left[\,2\left(a_2+a_3\right)\;\pm\;\sqrt{3\left(a_2^{2}+4a_2a_3+a_3^{2}\right)}\,\right]^{2}.
+$$</p>
+<h3 id="152-the-two-roots">15.2 The two roots</h3>
+<p><strong>[ALGEBRA applied to data]</strong> With the PDG masses, $a_2=10.279026$ and $a_3=42.152817\ \mathrm{MeV}^{1/2}$:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>root</th>
+<th>$\sqrt{m_4}$</th>
+<th>$m_4$</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$+$</td>
+<td>$209.012781$</td>
+<td>$43\,686.3$ MeV $=43.6863$ GeV</td>
+<td>a new mass, the prediction</td>
+</tr>
+<tr>
+<td>$-$</td>
+<td>$0.714592$</td>
+<td>$0.510641$ MeV</td>
+<td>the electron, to $0.07\%$</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>comparison</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>predicted $\sqrt{m_e}$</td>
+<td>$0.714592$</td>
+</tr>
+<tr>
+<td>measured $\sqrt{m_e}$</td>
+<td>$0.714842$</td>
+</tr>
+<tr>
+<td>difference in amplitude</td>
+<td>$-0.0350\%$</td>
+</tr>
+<tr>
+<td>difference in mass</td>
+<td>$-0.0700\%$</td>
+</tr>
+<tr>
+<td>$Q$ at the predicted root</td>
+<td>$0.666666666667$, exact by construction</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The minus root is the electron.</strong> That is the observation to be explained, and it is explained below: it is guaranteed, and it carries no information.</p>
+<h3 id="153-is-it-circular-three-separate-questions">15.3 Is it circular? Three separate questions</h3>
+<p>The word circular hides three different questions, and they have three different answers.</p>
+<p><strong>Question 1: was the value $2/3$ fitted to the leptons?</strong> <strong>[PUBLISHED]</strong> No. Koide stated the rational $2/3$ in 1981, before any fit, and §14.16 counts what that costs. So the original agreement of $6.2\times10^{-6}$ is evidence, and this section does not touch it.</p>
+<p><strong>Question 2: is the recovery of the electron new evidence?</strong> <strong>[ALGEBRA]</strong> No, and this is provable in one line. Write the quadratic of 15.1 for an arbitrary third amplitude $z$:</p>
+<p>$$
+z^{2}-4S z+3T-2S^{2}=0
+\quad\Longleftrightarrow\quad
+\frac{a_2^{2}+a_3^{2}+z^{2}}{\left(a_2+a_3+z\right)^{2}}=\frac{2}{3}.
+$$</p>
+<p>The left side is the statement "the pair $(a_2,a_3)$ completes to $z$ with $Q=2/3$"; the right side is "the triple satisfies $Q=2/3$". <strong>They are the same statement.</strong> So the recovery is not evidence <em>additional</em> to the original — but "not additional" is not "empty", and §15.8 corrects a draft of this paragraph that said otherwise. The shared statement is one genuine constraint on three masses, and it is worth what §1 says it is worth. A numerical check confirms the implication runs both ways: over $20\,000$ random triples, the completion never returns the third mass unless $Q=2/3$ holds, and over $2\,000$ constructed triples with $Q=2/3$ it returns it every time.</p>
+<p><strong>Question 3: is it circular in the vicious sense?</strong> <strong>[ALGEBRA]</strong> Not quite, and the distinction matters. A vicious circle is a test whose input contains its own output. Here the input is two measured masses and the output is a third measured mass that was not used. That is a legitimate consistency check, and it passes. What it is not is an independent one. <strong>A relation with three slots and one identity can be read from any two slots, and every reading is the same reading.</strong></p>
+<p><strong>The counting, stated correctly.</strong> The flavour block has three charged-lepton masses and one relation on them. Two of the three are free at the level of <em>raw data</em>, and one is fixed by the relation. <strong>That is a real reduction of one parameter, and this section must say so plainly: it is the grade-two claim of the corpus, not a null result.</strong> What the shifted reading does not supply is a <em>second</em> constraint. Substitute $(m_2,m_3,m_4)$ and the relation is still one equation on one unknown, because it is the same equation. One constraint can remove one parameter. It cannot remove two, and it cannot be spent twice.</p>
+<p><strong>[ALGEBRA]</strong> If the reader wants the general statement: for $Q=2/N$ and a tower of $N$ rungs, the relation is one equation on $N$ masses, so the tower has $N-1$ free shapes and the relation fixes one. Reading the relation from any pair returns the remaining amplitude, always. That is §2.3 in another coordinate, and it is why §3's table has "predictions beyond $Q$: none".</p>
+<p><strong>But "one constraint" is not "no constraint".</strong> The distinction is the whole of this section, and an earlier draft of it got the distinction wrong by writing that the shifted reading "predicts nothing". It predicts the third mass, it predicts it correctly, and it is worth the same as the original statement. §15.8 corrects the draft.</p>
+<h3 id="154-why-the-electron-comes-back-and-why-it-comes-back-low">15.4 Why the electron comes back, and why it comes back low</h3>
+<p><strong>[ALGEBRA]</strong> The electron's measured value sits inside the relation's error, so the recovery is accurate to that error. The size of the error depends on which mass carries it, because $Q$ is not equally sensitive to the three.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mass varied</th>
+<th>$\partial Q/\partial\ln m$</th>
+<th>shift in that mass needed to absorb the whole $6.2\times10^{-6}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_e$</td>
+<td>$-0.01757$</td>
+<td>$+0.0350\%$</td>
+</tr>
+<tr>
+<td>$m_\mu$</td>
+<td>$-0.18306$</td>
+<td>$+0.0034\%$</td>
+</tr>
+<tr>
+<td>$m_\tau$</td>
+<td>$+0.20063$</td>
+<td>$-0.0031\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>$Q$ is eleven times more sensitive to $m_\tau$ than to $m_e$.</strong> So the same $6.2\times10^{-6}$ shows up as $0.07\%$ when it is charged to the electron and as $0.003\%$ when it is charged to the tau. That is exactly the pair of numbers observed: predicting $m_\tau$ from $(m_e,m_\mu)$ gives $1776.97$ MeV against a measured $1776.86$, a miss of $0.006\%$; predicting $m_e$ from $(m_\mu,m_\tau)$ gives $0.510641$ against $0.510999$, a miss of $0.070\%$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>direction</th>
+<th>prediction</th>
+<th>measured</th>
+<th>miss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(e,\mu)\to\tau$</td>
+<td>$1776.97$ MeV</td>
+<td>$1776.86$ MeV</td>
+<td>$+0.006\%$</td>
+</tr>
+<tr>
+<td>$(\mu,\tau)\to e$</td>
+<td>$0.510641$ MeV</td>
+<td>$0.510999$ MeV</td>
+<td>$-0.070\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two rows are one equation at two magnifications.</strong> Neither is a discovery, and neither is the original fact damaged: the fact is $Q=2/3$, and both rows are it.</p>
+<h3 id="155-route-d-the-prediction-and-its-death">15.5 Route D: the prediction, and its death</h3>
+<p><strong>[ALGEBRA]</strong> The large root is the only thing in this section that was not already known, because it predicts a mass that does not appear in the input and does not exist in the data.</p>
+<p>$$
+m_4=43.6863\ \mathrm{GeV}.
+$$</p>
+<p><strong>[MEASURED]</strong> That mass is excluded. A sequential charged lepton at $43.7$ GeV would have been pair-produced copiously at LEP II, whose searches for pair-produced charged leptons with standard couplings closed the region below about $100$ GeV. A sequential lepton in that range with a neutrino lighter than $m_Z/2$ would also have widened the $Z$ lineshape, which counts three light neutrinos. Either argument alone is enough.</p>
+<p><strong>So the shifted relation is falsified, and the falsification is clean.</strong> It is not a matter of taste, a tolerance, or a scheme. The relation offers a number, the number is in a closed region, and the region was closed thirty years ago.</p>
+<p><strong>[ALGEBRA]</strong> Add route D to the table of §9:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>route</th>
+<th>construction</th>
+<th>outcome</th>
+<th>verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D</td>
+<td>shift Koide to $(m_\mu,m_\tau,m_4)$ and solve for $m_4$</td>
+<td>large root $43.6863$ GeV; small root $=m_e$</td>
+<td>large root excluded; small root is §15.3</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>§9's conclusion survives its fourth test, and the reason is the counting of 15.3.</strong> The relation is already saturated by the triple it was written for. Every further use of it, in either direction, returns a number that is either already in the input or excluded by experiment.</p>
+<h3 id="156-what-the-substitution-does-buy-the-partner-map-and-its-exact-fixed-point">15.6 What the substitution does buy: the partner map and its exact fixed point</h3>
+<p><strong>[ALGEBRA]</strong> One thing survives, and it is algebra rather than physics. Treat the large root as a map on a pair of amplitudes:</p>
+<p>$$
+P(x,y)=2(x+y)+\sqrt{3\left(x^{2}+4xy+y^{2}\right)} .
+$$</p>
+<p><strong>[ALGEBRA]</strong> Iterating from $(a_\mu,a_\tau)$ gives a tower, in GeV:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>$e$</th>
+<th>$\mu$</th>
+<th>$\tau$</th>
+<th>$4$</th>
+<th>$5$</th>
+<th>$6$</th>
+<th>$7$</th>
+<th>$8$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mass</td>
+<td>$0.000511$</td>
+<td>$0.1057$</td>
+<td>$1.7769$</td>
+<td>$43.686$</td>
+<td>$988.80$</td>
+<td>$22\,767$</td>
+<td>$522\,317$</td>
+<td>$1.199\times10^{7}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>[ALGEBRA]</strong> The amplitude ratios converge fast: $4.9585$, $4.7575$, $4.7984$, $4.7898$, $4.7916$. The limit is exact, and it is not the value one gets by taking $x/y\to0$.</p>
+<p>$$
+r=2\left(1+\frac1r\right)+\sqrt{3\left(1+\frac4r+\frac1{r^{2}}\right)}
+\;\Longrightarrow\;
+r^{4}-4r^{3}-3r^{2}-4r+1=0 ,
+$$</p>
+<p>which is palindromic, so $t=r+1/r$ obeys $t^{2}-4t-5=0$, giving $t=5$ and</p>
+<p>$$
+r_{*}=\frac{5+\sqrt{21}}{2}=4.791287847 ,
+\qquad
+r_{*}^{2}=\frac{23+5\sqrt{21}}{2}=22.956439 .
+$$</p>
+<p><strong>Two warnings about this number, because both are easy to get wrong.</strong></p>
+<p><strong>[ALGEBRA]</strong> The naive asymptotic $2+\sqrt3=3.732051$ is not the fixed point. It is what the map gives when the lower amplitude is negligible, and at the fixed point the lower amplitude is $1/4.79$ of the upper, not negligible. The correct equation keeps both terms and gives $4.79$.</p>
+<p><strong>[ALGEBRA]</strong> The fixed point is a property of the map, not of the leptons. Nothing in the data forces the tower to sit on it, and the tower does not:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>measured ratio</th>
+<th>$r_{*}^{2}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_\mu/m_e$</td>
+<td>$206.77$</td>
+<td>$22.96$</td>
+</tr>
+<tr>
+<td>$m_\tau/m_\mu$</td>
+<td>$16.82$</td>
+<td>$22.96$</td>
+</tr>
+<tr>
+<td>$m_4/m_\tau$</td>
+<td>$24.59$</td>
+<td>$22.96$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The tower converges to its fixed point above the tau, not below it.</strong> That is a statement about the iteration, and it kills one tempting reading: a Koide-completed tower is not geometrically spaced, and it is not arithmetically spaced either. It has no constant spacing at all until it is far above the data. So §3's equal-phase ansatz and this map are not two descriptions of one object, and neither of them is the measured spectrum.</p>
+<h3 id="157-verdict-and-what-it-changes">15.7 Verdict, and what it changes</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>question</th>
+<th>answer</th>
+<th>tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>does the shifted relation predict a fourth mass?</td>
+<td>yes, $43.6863$ GeV</td>
+<td>[ALGEBRA]</td>
+</tr>
+<tr>
+<td>does that mass exist?</td>
+<td>no, the region is closed</td>
+<td>[MEASURED]</td>
+</tr>
+<tr>
+<td>are the three leptons related?</td>
+<td><strong>yes, one symmetric constraint, any two give the third</strong></td>
+<td>[ALGEBRA]+[MEASURED]</td>
+</tr>
+<tr>
+<td>is the electron recovery independent of $Q=2/3$?</td>
+<td>no, but it is not empty either; §15.8</td>
+<td>[ALGEBRA]</td>
+</tr>
+<tr>
+<td>is the original $Q=2/3$ damaged?</td>
+<td>no, untouched</td>
+<td>[ALGEBRA]</td>
+</tr>
+<tr>
+<td>is the substitution circular?</td>
+<td>no; it is a check read from another side</td>
+<td>[ALGEBRA]</td>
+</tr>
+<tr>
+<td>does anything new survive?</td>
+<td>one algebra: $r_{*}=(5+\sqrt{21})/2$</td>
+<td>[ALGEBRA]</td>
+</tr>
+<tr>
+<td>does §10 change?</td>
+<td>no</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The lesson is narrower than the draft of §15.3 made it.</strong> A symmetric relation on three numbers can be read from any side, and every reading is the same reading. That is not a defect; it is what relatedness is. The defect would be to think the third reading is a new test. It is the same test, and the same test is worth one in nine hundred.</p>
+<p><strong>What would have changed the note.</strong> A large root inside a live window would have been the first genuine prediction of the programme, and §10 item 7 would have had to be rewritten. The root is at $43.7$ GeV, which is not a live window, so §10 item 7 stands as written.</p>
+<h3 id="158-recoverable-is-what-related-means-correcting-the-draft-of-153">15.8 "Recoverable" Is What "Related" Means: correcting the draft of 15.3</h3>
+<p><strong>[ALGEBRA]</strong> An earlier draft of 15.3 said that recovering the electron "adds exactly zero". That sentence was wrong, and it is worth putting the correction in the record rather than editing it away.</p>
+<p><strong>The claim that was wrong.</strong> In physics, three quantities are called related when any one of them is fixed by the other two. That is not a metaphor and not a weakening; it is the definition. If $m_e$ follows from $(m_\mu,m_\tau)$, then the three masses are related. The previous draft used a parameter count to argue the recovery was empty, and the count says the opposite of what I claimed: <strong>one relation on three masses removes one parameter. The removal is the content.</strong></p>
+<p><strong>The stronger form of the point, which the draft missed entirely.</strong> The relation is symmetric in its three arguments, so the triple can be read from any of its three sides, and all three readings return the same three numbers. With $a_4$ chosen to close the $(\mu,\tau)$ pair:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>read from</th>
+<th>large root</th>
+<th>small root</th>
+<th>returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$(\mu,\tau)$</td>
+<td>$209.0128$</td>
+<td>$0.714592$</td>
+<td>$a_4$, and the electron</td>
+</tr>
+<tr>
+<td>$(\tau,m_4)$</td>
+<td>$994.3834$</td>
+<td>$10.279026$</td>
+<td>$a_4$, and the muon</td>
+</tr>
+<tr>
+<td>$(m_4,\mu)$</td>
+<td>$835.0144$</td>
+<td>$42.152817$</td>
+<td>$a_4$, and the tau</td>
+</tr>
+</tbody>
+</table></div>
+<p>The small roots are $\sqrt{m_e}$, $\sqrt{m_\mu}$ and $\sqrt{m_\tau}$ to six figures, in the order they were not supplied. <strong>So "reading the relation backwards" is not a second, weaker test. It is the same test seen from another side, which is precisely what a symmetric constraint looks like.</strong> My earlier framing treated the symmetry as a defect. It is the definition of the relation being three-way rather than a formula for one variable.</p>
+<p><strong>[ALGEBRA applied to data]</strong> What the recovery is worth, therefore, is exactly what $Q=2/3$ is worth, no more and no less:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>estimate</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>naive, uniform $Q$ over $[1/3,1]$</td>
+<td>one in $54{,}000$</td>
+</tr>
+<tr>
+<td>corrected for short fractions and the search, §14.16</td>
+<td>one in $900$</td>
+</tr>
+<tr>
+<td>my earlier draft</td>
+<td>"zero" — withdrawn</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What the recovery still does not establish, and this is a narrower claim than the draft made.</strong> It does not separate "related" from "lawfully related". Three things hold it back, and none of them is a parameter count.</p>
+<ol>
+<li><strong>Two roots, one accepted.</strong> The pair admits two completions, $0.510641$ MeV and $43.6863$ GeV. A rule returns one answer; this returns two, and we accept the branch that matches a particle we already know. <strong>A constraint that offers a choice and is credited for the convenient branch is weaker than a constraint that offers none.</strong></li>
+<li><strong>No fourth rung.</strong> The relation closes the triple and cannot be extended from inside it. Forcing a fourth gives $43.6863$ GeV, which LEP II excluded (§15.5). A law of the tower would have produced a particle; the relation produced a number in a closed region.</li>
+<li><strong>The other triples fail.</strong> The same relation applied where it was not fitted gives $Q(u,c,t)=0.848790$ and $Q(d,s,b)=0.731288$, against $2/3$. <strong>A relation that holds for one triple out of three, and was found on that triple, is related-or-coincidental and not yet lawful.</strong></li>
+</ol>
+<p><strong>The corrected position, in one sentence.</strong> The charged leptons are related by one symmetric constraint to six parts in a million; that constraint removes one parameter from the flavour block; and whether it is a law of nature or a numerical fact about these three is undecided, with the three tests above as the reason it is undecided.</p>
+<p><strong>What would move it from related to lawful.</strong> Two of the three are already in §11.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>test</th>
+<th>what it would show</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$ survives running the masses to a common scale</td>
+<td>the relation is not a low-energy accident</td>
+<td>open, §11 row 1</td>
+</tr>
+<tr>
+<td>a second triple closes at $Q=2/N$</td>
+<td>the constraint is not private to the leptons</td>
+<td>open, §11 row 2; quarks currently fail</td>
+</tr>
+<tr>
+<td>a derivation of $2/3$ and of the phase</td>
+<td>the constraint is structural</td>
+<td>open, no candidate</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So the answer to the question that produced this section is: no, it is not circular, and yes, the three are related.</strong> The draft of 15.3 denied the second half. That denial was the error, and this subsection is the correction.</p>
 <h2 id="notation">Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -1069,6 +2107,26 @@ $$</p>
 <tr>
 <td>$a_i$</td>
 <td>$\sqrt{m_i}$, the amplitude</td>
+</tr>
+<tr>
+<td>$\vec a$</td>
+<td>the amplitude vector $(\sqrt{m_1},\sqrt{m_2},\sqrt{m_3})$</td>
+</tr>
+<tr>
+<td>$\vec u$, $\hat u$</td>
+<td>the democratic vector $(1,1,1)$ and its unit $\vec u/\sqrt3$</td>
+</tr>
+<tr>
+<td>$\varphi$</td>
+<td>the angle between $\vec a$ and $\vec u$, 14.1</td>
+</tr>
+<tr>
+<td>$a_{\parallel}$, $\vec v$</td>
+<td>the parts of $\vec a$ along $\hat u$ and orthogonal to it</td>
+</tr>
+<tr>
+<td>$R$, $\delta$</td>
+<td>the radius and the phase of the circle, 14.9</td>
 </tr>
 <tr>
 <td>$M$</td>
@@ -1097,6 +2155,14 @@ $$</p>
 <tr>
 <td>$d$</td>
 <td>the spatial dimension of the medium</td>
+</tr>
+<tr>
+<td>$P(x,y)$</td>
+<td>the Koide partner map, 15.6</td>
+</tr>
+<tr>
+<td>$r_{*}$</td>
+<td>its fixed amplitude ratio, $(5+\sqrt{21})/2$, 15.6</td>
 </tr>
 </tbody>
 </table></div>

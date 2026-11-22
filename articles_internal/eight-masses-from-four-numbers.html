@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eight Masses from Four Numbers: The Chekanov–Kjellerstrand Systems Read Against the Frame and Against the Size of Their Library — Biquaternion Universe</title>
+  <meta name="description" content="Status of this note. Every claim below carries one of the tags used in Flavour Research. A claim tagged [MEASURED] is a number from experiment…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="eight-masses-from-four-numbers-the-chekanovkjellerstrand-systems-read-against-the-frame-and-against-the-size-of-their-library"><strong>Eight Masses from Four Numbers: The Chekanov–Kjellerstrand Systems Read Against the Frame and Against the Size of Their Library</strong></h1>
+<p><em>Status of this note.</em> Every claim below carries one of the tags used in <a href="flavour-research.html">Flavour Research</a>. A claim tagged [MEASURED] is a number from experiment; [PUBLISHED] is a claim of the two papers; [ALGEBRA] is exact arithmetic on stated inputs; [ANSATZ] is an assumption made here; [SPECULATION] is a guess; [FAILED] is a thing tried and found wanting.</p>
+<p><em>Ledger on values.</em> This note transcribes numbers from two papers and from the Particle Data Group. Every coupling value it touches is the literature's, quoted to explain an equation and never asserted as a claim of the model. The corpus makes one scale-bearing coupling statement, and it is in <a href="../articles_physics/the-one-coupling-that-returns-the-standard-model.html">The One Coupling That Returns the Standard Model</a>. Nothing here is a second one. Masses are data, and a mass is not a coupling.</p>
+<p><em>Scope.</em> This note is about two external papers. It is not a menu entry, it states no result of the model, and it changes no article of the corpus.</p>
+<p><em>On the scan.</em> The hit rates and the chain count in <em>The Test the Papers Do Not Run</em> are my own computation, not the papers'. I generated random expressions over the papers' ingredients with my own grammar and my own complexity measure, which is node count and not their analytic rank. The absolute numbers therefore belong to my generator and not to theirs. The order of magnitude is what matters and it is robust: a library of a million expressions, a tolerance of one percent, and a target set of eight numbers cannot fail to yield simple fits, whatever the exact grammar.</p>
+<h2 id="introduction">Introduction</h2>
+<p>Two preprints by S. V. Chekanov (Argonne) and H. Kjellerstrand (Malmö) search the constants of the Standard Model with genetic programming and then argue that the output of the search is not noise. The first is arXiv 2507.00225, <em>Discovering the Underlying Analytic Structure Within Standard Model Constants Using Artificial Intelligence</em>. The second is arXiv 2509.07713, <em>Evidence of Relationships Among Fundamental Constants of the Standard Model</em>. This note reads both against the Four Colours Left–Right Model.</p>
+<p>The verdict comes first.</p>
+<p>The papers do not use neural networks. The method is genetic programming, an evolutionary search over symbolic expressions, and a summary that calls it a neural network misdescribes the evidence. Their strongest product is two systems of eight equations, one fixing the six quark masses and the two vector-boson masses from four measured numbers, the other from two. Recomputation confirms the first system to better than $1.3\%$ on seven of its eight entries, and it reproduces the measured consecutive mass ratios to within $2\%$ at every step. The statistical claim is that these systems are simpler than the same search run on smeared constants, at $p\approx0.5\%$; recomputation confirms $2.60\sigma$ and $2.45\sigma$, with a width taken from fifteen sets, so the significance carries an uncertainty of its own.</p>
+<p>That test is real, and it answers the wrong question. So I ran the one the papers do not run, with the same ingredients and the same tolerances. Random low-complexity expressions match each measured ratio to within one percent at a rate between $0.01\%$ and $0.36\%$, so a library of a million is expected to contain between one hundred and four thousand hits per ratio. At the papers' own five-digit precision, my sample of four hundred thousand expressions produced two hits for $m_Z/m_W$, which scales to about five in their library. For the chain, the pool of simple constants I could generate holds $10\,779$ distinct values, so there are $1.7\times10^{28}$ chains of seven links, and about $10^{18}$ of them match all seven ratios to $2\%$.</p>
+<p>The conclusion is that the two systems are the expected output of the search, not a discovery. The papers' $2.5\sigma$ measures how compressible the measured numbers are, and compressible they are; it does not measure whether a structure exists. <em>The Test the Papers Do Not Run</em> carries the computation, and <em>The Two Systems Disagree with Each Other</em> carries the fact that settles it.</p>
+<p>The frame has exactly one point of contact with the papers, and the contact is exact. Their equation for the vector-boson ratio is the frame's tree-level relation with the electroweak angle written as a function of the CP phase. The frame cannot explain that identification, because the phase lives in the flavour factor and the frame declares that factor inert. That is the honest position: the papers reach one number the frame owns and one it does not.</p>
+<h2 id="what-the-two-papers-are-and-what-they-are-not">What the Two Papers Are, and What They Are Not</h2>
+<h3 id="the-first-paper-a-search-over-expression-trees">The first paper: a search over expression trees</h3>
+<p>[PUBLISHED] The first paper states a method and a library. It takes nineteen constants from the Particle Data Group, represents an analytic expression as a tree, and evolves a population of trees until one reproduces a chosen constant from the others to within that constant's experimental error. The technique is symbolic regression driven by genetic programming: expressions are crossed, mutated and selected, and no model structure is imposed in advance.</p>
+<p>[PUBLISHED] The output is a list of <em>snippets</em>. A snippet is one closed-form expression that returns one target constant from the others, together with a number that says how far the returned value sits from the measurement. More than one million snippets were produced, up to simplicity rank $50$ for each input. The paper prints only the simplest, and the files are released on GitHub.</p>
+<p>[PUBLISHED] The paper's own verdict is negative, and it says so twice: the lowest-rank expressions show no repeated constants or functions that would indicate an underlying regularity, the frequencies of the small integers are about uniform, and most snippets are expected to be numerical coincidence. A reader who stops at the tables will over-read the paper. The paper's authors do not.</p>
+<h3 id="the-second-paper-a-filter-two-systems-and-one-test">The second paper: a filter, two systems, and one test</h3>
+<p>[PUBLISHED] The second paper post-processes the snippets of the first. It adds dimensional analysis, which the first paper lacked, so that masses carry units of MeV and need no rescaling by the $\rho$ meson. It then imposes four criteria: dimensional consistency; the behaviour that every mass vanishes when the Higgs mass vanishes; minimum rank; and a fallback that lowers the required precision for a mass that resists.</p>
+<p>[PUBLISHED] What emerges is two complete systems of eight equations. The first expresses each of the six quark masses and the two vector-boson masses as a multiple of the Higgs mass. The second arranges the same eight masses in a chain, each proportional to the one below it, with the electron mass at the bottom.</p>
+<p>[PUBLISHED] The test is a comparison of complexity. Fifteen pseudo-experiments smear the Standard Model constants inside windows that are multiples of their experimental errors, rerun the search on each, and record how complex the best systems are. The two real systems are simpler than the smeared ones. The paper reads that as evidence against coincidence.</p>
+<h3 id="what-neither-paper-contains">What neither paper contains</h3>
+<p>[FAILED] Neither paper names a gauge group, assigns a charge, checks an anomaly, or derives an expression. A formula containing $\arctan((10-\delta)^2)$ is not a statement about a symmetry, and the search has no way to prefer a formula that a group would produce. This is not a criticism of the execution. It is the boundary of the method, and the frame is what sits on the other side of it.</p>
+<p>[FAILED] Neither paper tests its relations against a second data set, because there is no second data set. The nineteen numbers are the whole of the evidence, and the search has seen all of them.</p>
+<h2 id="the-vocabulary-symbol-by-symbol">The Vocabulary, Symbol by Symbol</h2>
+<p>The papers and the frame use the same letters for different objects in two places. The table fixes both readings before any claim is made.</p>
+<h3 id="the-particles-by-name">The particles, by name</h3>
+<p>Every symbol in the two papers is a mass or a mixing parameter of a named particle. The names are the Standard Model's, and the frame keeps them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>particle</th>
+<th>what kind of object</th>
+<th>in the frame</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_e$</td>
+<td>electron</td>
+<td>charged lepton, generation 1</td>
+<td>the lepton line of the quartet</td>
+</tr>
+<tr>
+<td>$m_\mu$</td>
+<td>muon</td>
+<td>charged lepton, generation 2</td>
+<td>same cell, second rung</td>
+</tr>
+<tr>
+<td>$m_\tau$</td>
+<td>tau</td>
+<td>charged lepton, generation 3</td>
+<td>same cell, third rung</td>
+</tr>
+<tr>
+<td>$m_u$</td>
+<td>up quark</td>
+<td>quark, generation 1, charge $+\tfrac23$</td>
+<td>colour cell, red say</td>
+</tr>
+<tr>
+<td>$m_d$</td>
+<td>down quark</td>
+<td>quark, generation 1, charge $-\tfrac13$</td>
+<td>colour cell, red say</td>
+</tr>
+<tr>
+<td>$m_s$</td>
+<td>strange quark</td>
+<td>quark, generation 2</td>
+<td>same cell, second rung</td>
+</tr>
+<tr>
+<td>$m_c$</td>
+<td>charm quark</td>
+<td>quark, generation 2</td>
+<td>same cell, second rung</td>
+</tr>
+<tr>
+<td>$m_b$</td>
+<td>bottom quark</td>
+<td>quark, generation 3</td>
+<td>same cell, third rung</td>
+</tr>
+<tr>
+<td>$m_t$</td>
+<td>top quark</td>
+<td>quark, generation 3</td>
+<td>same cell, third rung</td>
+</tr>
+<tr>
+<td>$m_W$</td>
+<td>$W$ boson</td>
+<td>charged vector boson</td>
+<td>$W^{\pm}_L$ of the frame</td>
+</tr>
+<tr>
+<td>$m_Z$</td>
+<td>$Z$ boson</td>
+<td>neutral vector boson</td>
+<td>a mixture of $W^3_L$, $W^3_R$, $B'$</td>
+</tr>
+<tr>
+<td>$m_H$</td>
+<td>Higgs boson</td>
+<td>the observed scalar, $125$ GeV</td>
+<td>the lighter of two neutral states</td>
+</tr>
+</tbody>
+</table></div>
+<p>[ALGEBRA] The frame's list of gauge bosons is longer than the Standard Model's, and the two papers never mention the extra ones. The frame has twenty-one: eight gluons, six leptoquarks $X^{r},X^{g},X^{b}$ and their conjugates, the two charged pairs $W^{\pm}$ and $W^{\pm}_R$, and the three neutral states $\gamma$, $Z$ and $Z_R$. The papers predict nothing for the leptoquarks, for the $W_R$, for the $Z_R$, or for anything coloured. Their eight masses are the eight that the Standard Model also has.</p>
+<h3 id="the-constants-the-search-was-given">The constants the search was given</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>name</th>
+<th>the object, not its value</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\alpha^{-1}$</td>
+<td>inverse fine-structure constant</td>
+<td>the strength of electromagnetism at zero momentum</td>
+<td>measured coupling, value in the flagged article</td>
+</tr>
+<tr>
+<td>$\alpha_S$</td>
+<td>strong coupling at the $Z$ pole</td>
+<td>the strength of the strong force at one named scale</td>
+<td>measured coupling, value in the flagged article</td>
+</tr>
+<tr>
+<td>$\theta_{12},\theta_{23},\theta_{13}$</td>
+<td>CKM angles</td>
+<td>three coordinates of the quark mixing matrix</td>
+<td>measured, see the next section</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>CKM phase</td>
+<td>the one CP-odd coordinate of that matrix</td>
+<td>measured, see the next section</td>
+</tr>
+<tr>
+<td>$\pi$</td>
+<td>the circle constant</td>
+<td>mathematics, not a measurement</td>
+<td>exact</td>
+</tr>
+</tbody>
+</table></div>
+<p>[ALGEBRA] The two couplings enter the papers' equations as numbers of about $10^{2}$ and $10^{-1}$, and the two carry different scales: the first is quoted at zero momentum, the second at the $Z$ pole. A mass formula that multiplies a mass by a power of $\alpha^{-1}$ is therefore mixing scales, because the mass has a scale of its own. The papers do not address this. It is the strongest technical objection in this note, and it is developed in <em>The Objections, Strongest First</em>.</p>
+<h3 id="the-two-measures-the-search-invented">The two measures the search invented</h3>
+<p>Both papers rank expressions, and neither rank is a physical quantity. They are defined here because every claim of the papers is stated in them.</p>
+<p><em>The analytic rank</em> $r$ is a complexity score of one expression. Each operation costs a fixed number of points, and so does each symbol: a constant such as $\pi$ contributes one point, a plain integer contributes its value, a subtraction contributes three. The number $\delta=\pi-2$ has rank $6$: one for $\pi$, two for the $2$, three for the subtraction. A lower rank means a shorter expression.</p>
+<p><em>The complexity</em> $C$ is a score of a whole system. It is the total rank of the system multiplied by the number of free parameters the system needs. A system that fits with few parameters and short formulas scores low. The papers' argument is that the real constants produce a lower $C$ than smeared constants do.</p>
+<p>[ALGEBRA] Both measures are inventions of the authors, and both are load-bearing. Change the cost of a subtraction from three points to two and every conclusion moves. The papers are candid about the definition and silent about its arbitrariness. The complexity test is nonetheless a real test, because it is applied identically to the real data and to the smeared data; the measure need not be canonical to be a fair comparison. It needs only to be fixed before the comparison, and it is.</p>
+<h2 id="the-angles-and-why-one-of-them-sits-in-a-mass-formula">The Angles, and Why One of Them Sits in a Mass Formula</h2>
+<p>Three of the four flavour parameters of the frame appear in the papers' mass formulas. Their meaning has to be fixed before the formulas can be read.</p>
+<h3 id="the-ckm-matrix-in-one-paragraph">The CKM matrix in one paragraph</h3>
+<p>[ALGEBRA] A quark has a state in which it couples to the $W$ boson, and a state in which it has a definite mass. The two bases need not coincide. The matrix that rotates one into the other is the Cabibbo–Kobayashi–Maskawa matrix $V_{\mathrm{CKM}}$, and the charged current reads $W^{+}_\mu\,\bar u_i \gamma^\mu (V_{\mathrm{CKM}})_{ij} d_j$: the $W$ couples an up-type quark of one generation to a superposition of down-type quarks of all three.</p>
+<p>[ALGEBRA] The matrix is $3\times3$ and unitary, so it carries nine real parameters. Six quark fields can each be rephased, and one overall phase does nothing, so five phases are unobservable. Nine minus five leaves four: three angles and one phase. The count is a computation, not a convention, and it is the reason a CP-odd phase is a parameter of the model rather than a choice of basis.</p>
+<h3 id="the-three-angles-and-the-sines-the-papers-quote">The three angles, and the sines the papers quote</h3>
+<p>[ALGEBRA] In the standard parametrisation the matrix is a product of three rotations, one per pair of generations: $\theta_{12}$ rotates generations one and two, $\theta_{23}$ rotates two and three, $\theta_{13}$ rotates one and three. Written as sines, the three are $s_{12}$, $s_{23}$ and $s_{13}$.</p>
+<p>[MEASURED] The papers quote $0.22501$, $0.04183$ and $0.003732$. These are the sines, not the angles. The angles are $13.0^\circ$, $2.4^\circ$ and $0.21^\circ$, which is how the content article prints them. A reader who takes $0.0037$ for an angle in radians will think the quoted number is three times too small.</p>
+<p>[ALGEBRA] The three sines are strongly ordered, by roughly a factor of five and then a factor of eleven. That ordering is the reason a small parameter exists at all. $\theta_{13}$ is the smallest, so its powers form a ladder: $\theta_{13}^{1/2}=0.061$, $\theta_{13}=0.0037$, $\theta_{13}^{3/2}=0.00023$. Multiplied by the Higgs mass and divided by a small integer, that ladder spans a factor of about two hundred and seventy, which is the range the quark masses occupy. <em>Solution (a), Particle by Particle</em> shows that this is exactly what the paper's formulas do.</p>
+<h3 id="the-phase-which-is-the-one-that-cannot-be-removed">The phase, which is the one that cannot be removed</h3>
+<p>[ALGEBRA] The phase $\delta$ multiplies the one-three rotation and cannot be absorbed by any rephasing. It is the single source of CP violation in the quark sector, and it is measured in decays of $B$ mesons, through the angles of the unitarity triangle.</p>
+<p>[MEASURED] Its value is about $1.15$ radians, that is $65^\circ$, with an uncertainty of about $2\%$. The papers use $1.147$.</p>
+<p>[ALGEBRA] This is why its appearance in a mass formula is strange. A mass is a real eigenvalue of a Hermitian operator. A CP phase is the argument of a complex rotation between two bases. The two objects belong to different parts of the flavour problem, and the papers connect them by writing $\delta$ into $m_t$ and into the vector-boson ratio.</p>
+<p>[SPECULATION] If that connection is real, it is the most interesting statement in either paper: the quark mass spectrum and the CP phase would share one number, so the phase would not be a separate input but a coordinate that also orders the masses. No mechanism for this is proposed, and the frame has none. It is recorded here as an open item, not as a result.</p>
+<h3 id="the-weinberg-angle-which-is-a-different-object">The Weinberg angle, which is a different object</h3>
+<p>[ALGEBRA] The electroweak mixing angle $\theta_W$ is not a flavour angle. It rotates the two neutral gauge fields $W^3$ and $B$ into the $Z$ and the photon, with $\tan\theta_W=g_{\mathrm Y}/g$. It involves no generation index and no quark.</p>
+<p>[ALGEBRA] The frame's breaking chain produces the same rotation from three fields rather than two, because the fourth colour adds $B'$. The photon is the direction that stays massless; $Z$ and $Z_R$ are the two directions orthogonal to it.</p>
+<p>[ALGEBRA] The tree-level relation between the two vector-boson masses is $m_W=m_Z\cos\theta_W$. It holds when the breaking is done by one doublet per factor, because a custodial $\mathrm{SU}(2)$ protects it. The second paper's eighth equation is this relation with a substitution, and <em>The One Place the Frame and the Search Touch</em> computes the substitution.</p>
+<h2 id="the-word-factor-in-two-senses">The Word Factor, in Two Senses</h2>
+<p>The request that produced this note asked for the factors to be defined. The word carries two meanings in the material, and they must not be run together.</p>
+<h3 id="the-frames-factors">The frame's factors</h3>
+<p>[ALGEBRA] A factor of the frame is a factor of the gauge group: $\mathrm{SU}(4)$, $\mathrm{SU}(2)_L$, $\mathrm{SU}(2)_R$. Their dimensions are $15$, $3$ and $3$, and their sum is $21$. The fermion count is a product over the factors, $4\times2\times2=16$, because a fermion carries one index value per factor. The boson count is a sum of squares, $16+4+4=24$, less the three traces.</p>
+<p>[ALGEBRA] The frame's integers are therefore $4$, $2$, $2$, $15$, $3$, $3$, $21$, $16$ and $24$. Each has a derivation: the quartet's four values, a doublet's two slots, the two chirality blocks, and the dimensions that follow. None is fitted.</p>
+<h3 id="the-papers-factors">The papers' factors</h3>
+<p>[ALGEBRA] A factor in the papers is a multiplicative factor in an expression: the $3$ in $m_H/(3(\alpha^{-1})^2)$, the $1/6$ in $m_H\theta_{13}^{3/2}/6$, the $9$ in $9m_H\theta_{13}(1-\theta_{13})$. These are integers and small fractions chosen by the search because they shorten the expression, not because a group supplies them.</p>
+<p>[ALGEBRA] The papers' integers are $3$, $4$, $5$, $6$, $7$, $9$ and $10$, together with $\pi$ and $1/7$. Nothing in either paper says where they come from. The rank measure rewards small integers, so their smallness is partly an artefact of the scoring.</p>
+<h3 id="the-one-third-and-the-integers-that-have-no-home">The one third, and the integers that have no home</h3>
+<p>[ALGEBRA] The frame has one integer with a derivational home: the third. The charge quantum is $e/(N-1)$, and $N-1=3$ because the lepton stands against three colours. The trace of $B-L$ over the quartet vanishes, $\tfrac13+\tfrac13+\tfrac13-1=0$, and that vanishing is the proton–electron charge relation.</p>
+<p>[ALGEBRA] The papers' arithmetic is built from halves and whole numbers, not thirds. They use $\theta_{13}^{1/2}$ and $\theta_{13}^{3/2}$, and they use $3$, $5$, $6$, $9$, $10$. The single integer the two vocabularies share is the $3$, and the papers use it as a coefficient in the up-quark formula, $m_u=m_H/(3(\alpha^{-1})^2)$.</p>
+<p>[SPECULATION] A reader sympathetic to the frame will want that $3$ to be the colour count. It cannot be claimed: the search chose it because it shortened the expression, and $3$ is the commonest coefficient in any such search. The coincidence is recorded and not used.</p>
+<h2 id="solution-a-particle-by-particle">Solution (a), Particle by Particle</h2>
+<p>The first system has four inputs and eight outputs. Each equation is read here by the particle it names, not by its algebra.</p>
+<h3 id="the-four-inputs">The four inputs</h3>
+<p>[PUBLISHED] The inputs are the Higgs mass $m_H$, the inverse fine-structure constant $\alpha^{-1}$, the CKM phase $\delta$, and the smallest mixing sine $\theta_{13}$. Two of the four are masses or angles of the flavour problem; one is an electromagnetic coupling; one is the mass of the scalar that the frame says is a mixture of two neutral states.</p>
+<p>[ALGEBRA] The system fixes no up-type mass from another up-type mass and no down-type mass from another down-type mass. Every entry is a multiple of $m_H$ alone. The single scale of the system is therefore the Higgs mass, and the five dimensionless ratios among the six quark masses are the whole of the content.</p>
+<h3 id="the-six-quark-masses">The six quark masses</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>particle</th>
+<th>the paper's expression</th>
+<th>what the expression uses</th>
+<th>deviation from measurement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_u$</td>
+<td>$m_H/(3(\alpha^{-1})^2)$</td>
+<td>the fine-structure constant squared</td>
+<td>$+2.9\%$</td>
+</tr>
+<tr>
+<td>$m_d$</td>
+<td>$m_H\theta_{13}^{3/2}/6$</td>
+<td>the smallest mixing sine, power $3/2$</td>
+<td>$+1.2\%$</td>
+</tr>
+<tr>
+<td>$m_s$</td>
+<td>$m_H\theta_{13}/5$</td>
+<td>the smallest mixing sine, power $1$</td>
+<td>$-0.05\%$</td>
+</tr>
+<tr>
+<td>$m_c$</td>
+<td>$m_H\theta_{13}^{1/2}/6$</td>
+<td>the smallest mixing sine, power $1/2$</td>
+<td>$+0.14\%$</td>
+</tr>
+<tr>
+<td>$m_b$</td>
+<td>$9m_H\theta_{13}(1-\theta_{13})$</td>
+<td>the smallest mixing sine, twice</td>
+<td>$+0.16\%$</td>
+</tr>
+<tr>
+<td>$m_t$</td>
+<td>$m_H(\delta+\delta/5)$</td>
+<td>the CP phase</td>
+<td>$-0.14\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>[ALGEBRA] Four of the six are powers of one number. Since $\theta_{13}$ is the smallest of the mixing sines, its powers are naturally ordered and naturally spaced, and dividing by $5$, $6$ or $9$ moves each one by less than an order of magnitude. The hierarchy of the down-type and up-type quarks is thereby written as a ladder in $\theta_{13}$, and the ladder is short: exponents $1/2$, $1$ and $3/2$.</p>
+<p>[ALGEBRA] The top quark is the one entry that uses the phase. It uses it as $\delta(1+1/5)$, the factor $6/5$ being the only structure in the formula, and no power of $\theta_{13}$ appears.</p>
+<p>[ALGEBRA] The up quark uses neither the phase nor the sine. Its formula is the only one that contains a coupling, and it is the entry with the largest deviation, $+2.9\%$. That deviation is inside the quoted error, because the up-quark mass itself is known to about $3\%$; the fit is therefore not evidence of precision, it is evidence that the up quark is the least constrained entry in the table.</p>
+<h3 id="the-two-vector-bosons">The two vector bosons</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>particle</th>
+<th>the paper's expression</th>
+<th>the deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_W$</td>
+<td>$m_H/\arctan((10-\delta)^2)$</td>
+<td>$-0.015\%$</td>
+</tr>
+<tr>
+<td>$m_Z$</td>
+<td>$m_W\,\delta\cos(\delta-1)$</td>
+<td>$-0.013\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>[ALGEBRA] The second of these is not an independent statement. It is a ratio, $m_Z/m_W=\delta\cos(\delta-1)$, and a ratio of two masses is exactly what a gauge sector supplies. The next section treats it as what it is.</p>
+<p>[ALGEBRA] The first is the strange entry. An arctangent of a squared difference of integers and a phase is not an object any symmetry produces. It is the clearest single example of a formula that fits and explains nothing, and the paper prints it without embarrassment because the paper's claim is about complexity, not about mechanism.</p>
+<h3 id="what-the-exponents-are-doing">What the exponents are doing</h3>
+<p>[ALGEBRA] The four exponents in the $\theta_{13}$ entries are $3/2$, $1$, $1/2$ and $1$. The square root of $0.0037$ is $0.061$, which is sixteen times the number itself, and its three-halves power is sixteen times smaller. So the four entries sit at three scales about sixteen apart, and the integers $5$, $6$, $9$ trim them.</p>
+<p>[ANSATZ] The natural way to read the pattern is that $\theta_{13}$ supplies the ladder and the integers supply the rungs. Under that reading the quark hierarchy is generated by a mixing angle, which inverts the usual logic: normally the mixing is a consequence of the mismatch between two Yukawa matrices, and here the mixing would be primary and the masses its powers. The papers do not propose this reading, and it is the one idea in them that the frame could use, because the frame has the mixing angle as an arena and no principle to place it.</p>
+<h2 id="solution-b-read-as-a-chain-of-ratios">Solution (b), Read as a Chain of Ratios</h2>
+<p>The second system has two inputs and eight outputs, which is a stronger claim than the first. It buys that strength with a structure the first system does not have.</p>
+<h3 id="the-eight-constants-against-the-eight-measured-ratios">The eight constants against the eight measured ratios</h3>
+<p>[PUBLISHED] The chain is $m_u=m_e(\pi+1)$, $m_d=m_u(\delta+1)$, $m_s=m_d(6\pi+1)$, $m_c=m_s(4\pi+1)$, $m_b=m_c(\pi+1/7)$, $m_t=m_b\pi(\pi+10)$, $m_W=m_t/(\delta+1)$, $m_Z=m_W\delta\cos(\delta-1)$.</p>
+<p>[ALGEBRA] Each step multiplies by a constant. The chain therefore fixes the seven consecutive ratios of the eight masses plus the electron mass, and the ratios are the whole of the content. Recomputation against the measured masses gives the following.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>measured ratio</th>
+<th>the paper's constant</th>
+<th>deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e\to u$</td>
+<td>$4.2270$</td>
+<td>$\pi+1=4.1416$</td>
+<td>$-2.02\%$</td>
+</tr>
+<tr>
+<td>$u\to d$</td>
+<td>$2.1759$</td>
+<td>$\delta+1=2.1470$</td>
+<td>$-1.33\%$</td>
+</tr>
+<tr>
+<td>$d\to s$</td>
+<td>$19.8936$</td>
+<td>$6\pi+1=19.8496$</td>
+<td>$-0.22\%$</td>
+</tr>
+<tr>
+<td>$s\to c$</td>
+<td>$13.6150$</td>
+<td>$4\pi+1=13.5664$</td>
+<td>$-0.36\%$</td>
+</tr>
+<tr>
+<td>$c\to b$</td>
+<td>$3.2859$</td>
+<td>$\pi+1/7=3.2844$</td>
+<td>$-0.05\%$</td>
+</tr>
+<tr>
+<td>$b\to t$</td>
+<td>$41.2527$</td>
+<td>$\pi(\pi+10)=41.2855$</td>
+<td>$+0.08\%$</td>
+</tr>
+<tr>
+<td>$t\to W$</td>
+<td>$0.4657$</td>
+<td>$1/(\delta+1)=0.4658$</td>
+<td>$+0.004\%$</td>
+</tr>
+<tr>
+<td>$W\to Z$</td>
+<td>$1.1346$</td>
+<td>$\delta\cos(\delta-1)=1.1346$</td>
+<td>$+0.001\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>[ALGEBRA] Six of the eight constants reproduce their ratio to better than $0.4\%$. Two miss by more than $1\%$, and both are at the bottom of the chain, where the masses are least precise.</p>
+<h3 id="the-accumulation-which-is-the-papers-own-failure">The accumulation, which is the paper's own failure</h3>
+<p>[ALGEBRA] The deviations do not cancel. They have the same sign for the first five steps, so they add. The product of the eight constants times the electron mass is $87\,683$ MeV against a measured $Z$ mass of $91\,188$ MeV, a shortfall of $3.8\%$. The papers quote $87\,827$ MeV for the same product, which is the same shortfall computed with a slightly different phase; the difference between the two numbers is not material to the argument.</p>
+<p>[PUBLISHED] The papers state the failure themselves and repair it by rerunning the search with the measured mass at each step. That repair raises the total rank from $118$ to $126$ and destroys the claim's shape: a chain that must be fed the measured mass at every rung is not a chain that predicts the top.</p>
+<p>[ALGEBRA] This is the honest status of solution (b). As a predictive chain it fails by $3.8\%$ at the far end. As a description of the ratios it succeeds to $2\%$ at every step. Those two statements are both true, and only the second is worth recording.</p>
+<h2 id="the-one-place-the-frame-and-the-search-touch">The One Place the Frame and the Search Touch</h2>
+<p>The papers' last equation and the frame's tree-level relation are the same equation. The identification is worth stating carefully, because it is the only place where the two bodies of work meet.</p>
+<h3 id="their-equation-for-the-vector-boson-ratio">Their equation for the vector-boson ratio</h3>
+<p>[PUBLISHED] The paper writes $m_Z=m_W\,\delta\cos(\delta-1)$, that is</p>
+<p>$$
+\frac{m_Z}{m_W}=\delta\cos(\delta-1).
+$$</p>
+<p>[ALGEBRA] With $\delta=1.147$ the right-hand side is $1.1346295$. The measured ratio is $1.1346138$. The agreement is better than two parts in a hundred thousand.</p>
+<h3 id="what-the-agreement-is-worth">What the agreement is worth</h3>
+<p>[ALGEBRA] The frame writes the same ratio as $m_W=m_Z\cos\theta_W$, that is</p>
+<p>$$
+\frac{m_Z}{m_W}=\frac{1}{\cos\theta_W}.
+$$</p>
+<p>[ALGEBRA] Equating the two gives a definition of the electroweak angle in terms of the CP phase:</p>
+<p>$$
+\cos\theta_W=\frac{1}{\delta\cos(\delta-1)}=0.88135 ,
+$$</p>
+<p>against a measured ratio $m_W/m_Z=0.88136$. The two differ in the fifth decimal.</p>
+<p>[MEASURED] That is a coincidence of two independently measured quantities. $\delta$ is measured in $B$ decays. The vector-boson ratio is measured at colliders. Nothing in the Standard Model relates them, and the papers' formula relates them through a cosine.</p>
+<p>[ALGEBRA] It is not a test of the frame. The relation $m_W=m_Z\cos\theta_W$ holds at tree level in any model whose breaking is done by one doublet per factor, because a custodial symmetry protects it. The frame predicts it, the Standard Model predicts it, and the papers' equation reproduces it. All three agree, and none of them is distinguished by the agreement.</p>
+<p>[ALGEBRA] What is left after that deflation is a coincidence and no more: the equation says the electroweak angle follows the CP phase, and no symmetry in either framework produces that. Later sections show that a search of this size produces such an equation about five times over, so the coincidence does not become a mechanism.</p>
+<h3 id="what-the-frame-cannot-supply">What the frame cannot supply</h3>
+<p>[ALGEBRA] The frame cannot explain the identification, and the reason is structural. In the frame the flavour factor is inert: three generations are a tensor product with $\mathbb{C}^3$ on which the group acts trivially, and every operator the model builds is the identity on that factor. The phase $\delta$ is a coordinate on that factor. The angle $\theta_W$ is a coordinate on the gauge factor. A relation between them would need an object that sits in both, and the frame has none.</p>
+<p>[SPECULATION] A relation of that kind could only come from the scalar sector, because the Yukawa matrix is the one object that couples the flavour factor to the gauge quantum numbers. The frame's scalar sector is fixed and small, with one bidoublet and one $\Phi$ in the minimal version, so the number of Yukawa matrices is finite and the mixing among them is one relative rotation. Whether that rotation can be tied to the gauge mixing is a question the corpus has never asked. The papers do not answer it, and the coincidence they print is too common to be the answer.</p>
+<h2 id="the-test-recomputed">The Test, Recomputed</h2>
+<p>The papers' statistical claim is a single comparison. It is recomputed here from the numbers the papers print.</p>
+<h3 id="the-two-numbers">The two numbers</h3>
+<p>[PUBLISHED] Fifteen pseudo-experiments smear the constants inside their errors and rerun the search. The complexity of the best real system is compared with the distribution of the best smeared systems.</p>
+<p>[PUBLISHED] The total complexity of the two real systems is $C_a+C_b=565$. The smeared distribution for the sum has mean $890$ and width $125$. The one-sided probability of a value as low as $565$ is quoted as $0.46\%$.</p>
+<p>[ALGEBRA] Recomputation gives $z=(890-565)/125=2.60$, and the one-sided normal probability at $2.60$ is $0.47\%$. The paper's figure is right.</p>
+<p>[PUBLISHED] For solution (b) alone the mean is $304$ and the width $76$, against $C_b=118$. The quoted probability is $0.72\%$.</p>
+<p>[ALGEBRA] Recomputation gives $z=(304-118)/76=2.45$, and the one-sided probability is $0.72\%$. That figure is right too.</p>
+<h3 id="an-arithmetic-slip">An arithmetic slip</h3>
+<p>[PUBLISHED] The paper states that $565$ is obtained by adding $146\times3$ for the first system to $118$ for the second.</p>
+<p>[ALGEBRA] The eight ranks of the first system sum to $149$, not $146$: $17+22+12+17+21+16+22+22=149$. And $149\times3+118=565$ exactly, while $146\times3+118=556$. So the printed total is right and the printed arithmetic is wrong; the correct addend is $149\times3=447$.</p>
+<p>[ALGEBRA] The slip is harmless to the conclusion and worth recording, because it shows that the number $565$ was computed from the ranks and then transcribed with a typo into the prose. A reader who tries to reproduce it from the text alone will get $556$ and doubt the paper.</p>
+<h3 id="two-hypotheses-on-one-sample">Two hypotheses on one sample</h3>
+<p>[ALGEBRA] The two probabilities are not independent tests. Both are computed from the same fifteen sets, and both are reported as evidence for the same conclusion. A reader who treats them as two chances to succeed gets a combined probability of about $1.2\%$, not $0.5\%$.</p>
+<p>[ALGEBRA] The widths are estimated from fifteen sets, so they carry their own error. For a normal distribution the standard error of a width estimated from $n$ points is the width over $\sqrt{2(n-1)}$, which here is $125/\sqrt{28}\approx24$, that is $19\%$ of the width. The significance is therefore $2.6\pm0.5$, and the probability lies between $0.2\%$ and $1\%$ on the paper's own model.</p>
+<p>[ALGEBRA] The honest summary of the test is that it excludes chance at about two and a half sigma, and that two and a half sigma is not a discovery. It is a reason to look, and the papers themselves say a stronger conclusion needs more computer time.</p>
+<h3 id="the-null-is-a-smear-not-a-random-number">The null is a smear, not a random number</h3>
+<p>[ALGEBRA] The smearing is not arbitrary. Each constant is displaced uniformly inside a window whose half-width is a multiple of its own experimental error, and the multiple grows with the mass: twenty for the up quark, forty for the down, sixty for the strange, and so on to one hundred and eighty for the Higgs.</p>
+<p>[ALGEBRA] The windows are wide. The up-quark window is $\pm1.40$ MeV on a mass of $2.16$, and the down-quark window is $\pm2.80$ MeV on $4.70$. Recomputation gives the two intervals as $[0.76,\,3.56]$ and $[1.90,\,7.50]$, and they overlap. The paper states that the construction prevents overlap and so preserves the hierarchy of masses. For the two lightest quarks it does not, on the paper's own error bars.</p>
+<p>[ALGEBRA] So the null is "the same table, perturbed by up to two-thirds at the light end", and the ordering is preserved only in the mean. That makes the test stronger than a narrow perturbation, not weaker: the real constants keep their simple systems while values displaced by tens of percent keep them less often.</p>
+<p>[ALGEBRA] It is still not the widest null. A test against constants drawn without reference to the measured values would answer the sceptic's question, which is whether a hierarchy admits short formulas at all. The papers do not run it.</p>
+<h3 id="the-honest-summary-of-their-test">The honest summary of their test</h3>
+<p>[ALGEBRA] Their test excludes one hypothesis: that the measured values are no more compressible than values near them. It does not exclude a bigger one: that any set of eight ordered masses is compressible at this precision. The second hypothesis is the one a sceptic holds, and it is testable. The next section tests it.</p>
+<h2 id="the-test-the-papers-do-not-run">The Test the Papers Do Not Run</h2>
+<p>The question a sceptic asks is not "are these numbers compressible". It is "would a search of this size, over these ingredients, at these tolerances, have produced such a system anyway". That question has a number for an answer, and the number can be computed without their code.</p>
+<h3 id="the-trial-factor">The trial factor</h3>
+<p>[ALGEBRA] The method is a search over a library. The library is the set of all expressions up to some complexity, and the papers say it holds more than one million entries per input. The acceptance rule is a tolerance: a snippet is kept if it returns its target constant to within a quoted number of percent, usually between $1\%$ and $2\%$.</p>
+<p>[ALGEBRA] So the question is what fraction of a million-entry library falls within one or two percent of a given target by accident. That fraction is measurable. I built a generator over the papers' own ingredients — $\pi$, $e$, the small integers, $\delta$, $\theta_{13}$ — with the same operations, and drew four hundred thousand expressions of two to nine nodes.</p>
+<p>[ALGEBRA] The measured hit rates are these. For $m_Z/m_W=1.1346$, $1.44\%$ of random expressions land within one percent, and $0.14$ per thousand within one part in a thousand. For $m_t/m_b=41.25$, $0.12$ per thousand within one percent. For $m_b/m_c=3.29$, one per thousand. For $m_u/m_e=4.23$, $0.65$ per thousand. Averaged over the eight targets, roughly one random expression in three hundred hits a given ratio to one percent.</p>
+<p>[ALGEBRA] Multiply by the library. One expression in three hundred, over a million expressions, is three thousand hits per ratio. The smallest hits are short: a two-node expression, $\log\pi=1.1447$, lands within one percent of the vector-boson ratio; a three-node expression, $6-e=3.2817$, lands within one percent of $m_b/m_c$; a four-node expression, $3\sqrt2=4.2426$, lands within one percent of $m_u/m_e$.</p>
+<p>[ALGEBRA] At the papers' own precision the count is smaller and still nonzero. My four hundred thousand expressions produced two hits within one part in a hundred thousand of $m_Z/m_W$, both at seven nodes. Scaled to their library, that is about five.</p>
+<p>[ALGEBRA] So the first system is not surprising. It is eight entries selected from a library in which each entry has thousands of one-percent matches. The search did not find a structure. It found, as it was built to find, the shortest expression in a very large set that happens to land near a number.</p>
+<h3 id="the-chain-is-not-a-discovery-but-a-certainty">The chain is not a discovery but a certainty</h3>
+<p>[ALGEBRA] The second system is a chain of seven links, and the arithmetic is starker.</p>
+<p>[ALGEBRA] A link is a simple constant. From the same generator I collected every distinct value between $1.2$ and $60$ obtainable with at most six nodes: $10\,779$ of them. Seven links chosen from that pool give $K^7=1.7\times10^{28}$ chains.</p>
+<p>[ALGEBRA] Each link must reproduce its measured ratio to two percent. If the seven links were drawn independently, the chance that all seven land inside their windows is $(0.04)^7\approx1.6\times10^{-10}$.</p>
+<p>[ALGEBRA] Multiply. $1.7\times10^{28}$ chains times $1.6\times10^{-10}$ is about $10^{18}$ chains that fit all seven ratios to two percent. The chance of finding such a chain is not small. It is one, to eighteen decimal places.</p>
+<p>[ALGEBRA] The search therefore could not have failed to produce a chain. What it produced was one chain among $10^{18}$, selected for shortness. That is a statement about the size of the library and not about the constants.</p>
+<p>[ALGEBRA] The papers' pre-registration deserves credit here. They fixed the rank measure and the tolerance before the comparison, which is why their result is a real measurement of compressibility. But compressibility is the one thing a chain of seven free constants has by construction. The measurement was guaranteed to succeed on its own premises.</p>
+<h2 id="the-two-systems-disagree-with-each-other">The Two Systems Disagree with Each Other</h2>
+<p>One fact settles the matter without any statistics, and the papers print both halves of it.</p>
+<h3 id="the-same-mass-two-formulas">The same mass, two formulas</h3>
+<p>[ALGEBRA] The two systems claim to describe the same eight masses. They do not agree with each other, and the disagreement is not small.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>mass</th>
+<th>system (a)</th>
+<th>system (b)</th>
+<th>measured</th>
+<th>(a) against (b)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_u$</td>
+<td>$2.22$ MeV</td>
+<td>$2.12$ MeV</td>
+<td>$2.16$ MeV</td>
+<td>$5.0\%$</td>
+</tr>
+<tr>
+<td>$m_d$</td>
+<td>$4.76$ MeV</td>
+<td>$4.54$ MeV</td>
+<td>$4.70$ MeV</td>
+<td>$4.7\%$</td>
+</tr>
+<tr>
+<td>$m_s$</td>
+<td>$93.5$ MeV</td>
+<td>$90.2$ MeV</td>
+<td>$93.5$ MeV</td>
+<td>$3.6\%$</td>
+</tr>
+<tr>
+<td>$m_c$</td>
+<td>$1275$ MeV</td>
+<td>$1224$ MeV</td>
+<td>$1273$ MeV</td>
+<td>$4.1\%$</td>
+</tr>
+<tr>
+<td>$m_b$</td>
+<td>$4190$ MeV</td>
+<td>$4019$ MeV</td>
+<td>$4183$ MeV</td>
+<td>$4.2\%$</td>
+</tr>
+<tr>
+<td>$m_t$</td>
+<td>$172\,325$ MeV</td>
+<td>$165\,918$ MeV</td>
+<td>$172\,560$ MeV</td>
+<td>$3.8\%$</td>
+</tr>
+<tr>
+<td>$m_W$</td>
+<td>$80\,357$ MeV</td>
+<td>$77\,279$ MeV</td>
+<td>$80\,369$ MeV</td>
+<td>$3.8\%$</td>
+</tr>
+<tr>
+<td>$m_Z$</td>
+<td>$91\,176$ MeV</td>
+<td>$87\,683$ MeV</td>
+<td>$91\,188$ MeV</td>
+<td>$3.8\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p>[ALGEBRA] Each column fits the measurement on its own. The two columns differ by four percent. Both statements cannot describe one structure.</p>
+<h3 id="why-that-is-decisive">Why that is decisive</h3>
+<p>[ALGEBRA] If either system were the arithmetic of the constants, the other could not exist. A real relation fixes a number, and two relations that fix the same number to four percent apart are two formulas that have each captured a different accident.</p>
+<p>[ALGEBRA] This is what a coincidence looks like when it is caught. A structure is robust: perturb the search, and the same relations return. Here, two runs of the same method on the same data returned two incompatible sets. The papers present both as successes, and the fact that they present both is the admission.</p>
+<p>[ALGEBRA] Solution (b) also fails against the measured values in the same direction at every step, which is the $3.8\%$ accumulation recorded above. A structure does not miss in one direction eight times.</p>
+<h3 id="the-five-digit-agreement-decomposed">The five-digit agreement, decomposed</h3>
+<p>[ALGEBRA] The papers' most precise single result is $m_Z/m_W=\delta\cos(\delta-1)$ to two parts in a hundred thousand. It is a genuine coincidence between two independently measured quantities, and it is also explainable as an accident of where $\delta$ happens to sit.</p>
+<p>[ALGEBRA] Solve for the angle: $\cos(y)=1.1346138/1.147=0.9892012$, so $y=0.14709$ radians. And $\delta-1=0.14700$ radians. The cosine is therefore evaluated at almost exactly $\delta-1$, and the product returns the ratio because $1/\delta=0.8718$ is close to $\cos(\delta-1)=0.9892$ only after the multiplication. The mechanism is a near-identity: $\delta$ is just past one, so $\delta-1$ is small, so $\cos(\delta-1)$ is just under one, so $\delta\cos(\delta-1)$ is just over one, in the neighbourhood of $m_Z/m_W$.</p>
+<p>[ALGEBRA] That is why a short expression of this shape lands on the ratio. It is not a claim that the equation is vacuous; the coincidence with the measured ratio is real, to five digits, between a flavour parameter and a gauge ratio. It is a claim that expressions of this shape are numerous and their landings are common.</p>
+<p>[ALGEBRA] The scan puts a number on that. Expressions of seven nodes or fewer containing $\delta$ reproduced $1.1346$ to one part in a hundred thousand twice in four hundred thousand draws, which is about five times in a library of a million. A coincidence that arrives five times over carries no evidence of structure.</p>
+<p>[ALGEBRA] The general shape is the same for every result in the papers. An expression of several nodes has several free integers, and the search tunes them until the output lands on the target. The landings are real. The tuning is what makes them look like discoveries.</p>
+<h2 id="what-the-papers-have">What the Papers Have</h2>
+<p>To be fair about what survives, the list is short and it is not empty.</p>
+<p>[ALGEBRA] They have a working symbolic-regression pipeline, released, that does dimensional analysis correctly and enforces the vanishing of all masses with the Higgs mass. That is engineering of some value, and anyone starting this work should read it.</p>
+<p>[ALGEBRA] They have a careful and honest statement of their own statistical method, including the observation that the first paper's output is mostly coincidence. The second paper's error is not dishonesty. It is the belief that a narrow null refutes a wide one.</p>
+<p>[ALGEBRA] They have a set of eight ratios that any future theory must reproduce, printed in one place with their tolerances. That is a useful table of targets, and it is the part of the work that will last.</p>
+<p>[ALGEBRA] They do not have a relation. Eight equations that fit to a percent, chosen from a library where thousands fit to a percent, and two systems that contradict each other by four percent, are a demonstration of the size of the library.</p>
+<h2 id="what-it-does-to-the-thirteen">What It Does to the Thirteen</h2>
+<p>The frame's flavour block is thirteen of the nineteen parameters: three charged-lepton masses, six quark masses, three mixing angles and one phase. The papers' systems act on six of those thirteen.</p>
+<h3 id="the-reduction-in-the-corpuss-own-grade">The reduction in the corpus's own grade</h3>
+<p>[ALGEBRA] The corpus grades a claim about a parameter in three ways: a value, a relation, or a constraint. A value is a principle returning the measured number. A relation makes one parameter a function of another and reduces the count by one. A constraint forbids a region.</p>
+<p>[ALGEBRA] Both systems make each of the six quark masses a function of parameters already in the count, so each would reduce the block by six if it were true. Neither is, for the reasons the test gives, and the two of them together cannot be true because they disagree by four percent.</p>
+<p>[ALGEBRA] Six relations would be the largest reduction claimed by any paper in the batch, and it would be grade two, the achievable and falsifiable grade. A framework that produced six relations would have done something that no framework in the corpus has done. The conditional is the whole of the sentence: the count falls by six if the relations hold, and by nothing if they do not.</p>
+<p>[ALGEBRA] The test above answers the conditional. Each of the six relations was drawn from a library in which hundreds to thousands of expressions hit the same target to the same tolerance. The reduction is therefore not available. Thirteen stays thirteen.</p>
+<h3 id="where-the-freedom-goes">Where the freedom goes</h3>
+<p>[ALGEBRA] The reduction is not free. The six relations were selected from a library of a million or more candidates by a rule that rewards short expressions and small integers. The freedom that leaves the parameters re-enters as the freedom to choose the rule.</p>
+<p>[ANSATZ] That is why the complexity test matters more than any single equation. It is an attempt to fix the rule's arbitrariness by measuring the rule's output against a null. If the test holds, the rule is doing work that chance does not do. If it fails, the six relations are six fitted curves and the count does not fall at all. It fails, on the wider null of <em>The Test the Papers Do Not Run</em>.</p>
+<p>[ALGEBRA] So the frame's own measure gives the verdict: the papers' claim would be a six-unit reduction in the count, and the evidence for it is a two-and-a-half-sigma test of a complexity measure the authors invented, against a null that keeps the measured values at its centre. The wider null dissolves the claim, and the two systems contradicting each other closes it.</p>
+<h2 id="what-the-chain-is-about-and-what-the-defect-is-about">What the Chain Is About, and What the Defect Is About</h2>
+<p>Two relations in the corpus look similar to the papers' chain and are not.</p>
+<h3 id="ratios-inside-a-sector-ratios-between-sectors">Ratios inside a sector, ratios between sectors</h3>
+<p>[ALGEBRA] The papers' chain relates quarks to quarks: up to down, down to strange, and so on, ending at the vector bosons. It says nothing about the relation between a quark mass and a lepton mass. Its ratios are intra-sector.</p>
+<p>[ALGEBRA] The frame's defect is inter-sector. In the minimal version one bidoublet carries one Yukawa matrix, and one matrix serves the down-type quarks and the charged leptons, so the two spectra are proportional and the three cross-sector ratios would be equal. The measured spectra are not proportional, and the corpus's judgement is that the triple is two-thirds successful at the unification scale, with the first generation failing outright. The values and the running live in the flagged article, not here.</p>
+<p>[ALGEBRA] The two questions are therefore disjoint. The papers answer "why is the top heavier than the bottom" with a constant. The frame answers "why is the bottom heavier than the tau" with a defect and a repair. Neither answers the other's question, and a reader who tries to combine them will produce a claim neither supports.</p>
+<h3 id="math400-in-the-papers-and-math401-in-the-frame">$m_H$ in the papers and $m_H$ in the frame</h3>
+<p>[ALGEBRA] In the papers, $m_H$ is one of the nineteen and a measured input. Every quark mass is a multiple of it, so it is the single source of the mass scale.</p>
+<p>[ALGEBRA] In the frame, the $125$ GeV state is an output. The scalar sector has twenty-four real components against twelve broken generators, so twelve survive; the two neutral states mix through the potential, and the lighter of the two is the observed scalar. Its mass is a function of the quartics and of the mixing angle, and the frame computes neither.</p>
+<p>[ALGEBRA] The consequence for the count is immediate. The papers' first system uses $m_H$ as input, and $m_H$ is entry nineteen. A reduction that consumes the Higgs mass has not eliminated entry nineteen; it has made the six quark masses functions of it. The count falls by six and no more, and the fall is real only if the relations are.</p>
+<p>[SPECULATION] There is a reading in which the frame likes the papers' first system. If every fermion mass is proportional to the one surviving neutral scalar's value, then the frame's scalar sector supplies the mechanism that the papers' formulas presuppose, and the papers supply the arithmetic that the frame's scalar sector cannot. The division of labour is attractive and not yet a fit. The frame's mechanism carries two vacuum expectation values from one bidoublet, and the papers' arithmetic carries one scale; nothing in the papers distinguishes the two, so the match has not been made.</p>
+<h2 id="what-it-does-to-the-ladder">What It Does to the Ladder</h2>
+<p>The second system is a chain, and the corpus already has a theory of chains.</p>
+<h3 id="two-hierarchies-not-one">Two hierarchies, not one</h3>
+<p>[ALGEBRA] The excitation ladder counts flavour as rungs of one tower and tests whether the spacings are constant. In mass they are not: the charged-lepton steps are $206.8$ and $16.8$, a compression by a factor $12.3$. In amplitude they are $9.56$ and $31.87$, a growth by $3.33$, and the growth is the ladder's one quantitative success.</p>
+<p>[ALGEBRA] The papers' chain has no constant ratio. Its seven ratios are $4.23$, $2.18$, $19.9$, $13.6$, $3.29$, $41.3$, $0.47$. They are not geometric, not arithmetic, and not constant in the square root.</p>
+<p>[ALGEBRA] So the papers' chain is not an excitation ladder. It is a ladder with a different rung height at every step, which is to say it is a list of ratios with names. The papers' contribution is the naming, not the spacing.</p>
+<p>[ALGEBRA] The two pictures are compatible and independent. The ladder explains the lepton spacings with one growth factor and no parameter. The papers explain the quark and vector-boson ratios with seven constants and one phase. The ladder says nothing about quarks, the papers say nothing about spacings, and neither derives the other.</p>
+<p>[SPECULATION] If the papers' constants are right, the ladder's amplitude growth $3.33$ and the papers' first ratio $\pi+1=4.14$ are two unrelated numbers doing similar work at different scopes. A theory that produced both would have to explain why a tower's growth and a chain's first rung are different, and no such theory exists in the corpus.</p>
+<h2 id="what-it-does-to-the-lepton-sector">What It Does to the Lepton Sector</h2>
+<p>The second system begins at the electron and stops before the muon. That omission is informative.</p>
+<h3 id="the-electron-as-the-seed">The electron as the seed</h3>
+<p>[ALGEBRA] In solution (b) the electron mass is the anchor: every quark mass and both vector-boson masses are multiples of it. The frame has no reason for that. The electron is the ground rung of the charged-lepton tower, and the papers make it the seed of the quark tower.</p>
+<p>[ALGEBRA] The papers justify the choice by a physical remark: because the electron mass is proportional to the Higgs vacuum expectation value through a Yukawa coupling, setting the electron mass to zero sets everything above it to zero. That is a consistency condition, and it is satisfied. It is not a reason to prefer the electron over any other mass in the chain, and the papers present it as a consistency check rather than a derivation.</p>
+<h3 id="the-muon-and-the-tau-which-resist">The muon and the tau, which resist</h3>
+<p>[PUBLISHED] The muon and the tau do not enter the chain. The papers report two separate formulas for them, and describe both results as slightly outside the modern experimental uncertainties: $105.659$ MeV for the muon against a measured $105.658$, and $1776.14$ MeV for the tau against a measured $1776.9$.</p>
+<p>[ALGEBRA] Recomputation gives $+0.001$ MeV and $-0.79$ MeV. The muon lands within one standard deviation of the measurement and the tau misses it by about nine.</p>
+<p>[PUBLISHED] The electrons fare worse: the paper states that no relation linking $m_e$ to $m_H$ was found unless the electron's error was inflated, and it therefore takes $m_e$ as free input.</p>
+<p>[ALGEBRA] So the lepton sector does not close. Two of the three charged leptons need formulas of rank $21$ and $20$, which is higher than most quark entries, and the third cannot be linked to the scalar at all. The pattern that organises the quarks stops at the leptons, and the papers report that plainly.</p>
+<p>[ALGEBRA] The frame's reading is that this is the correct place for the pattern to stop. The charged leptons are the ground states of their own towers; the quarks are a separate sector with its own Yukawa matrix. A single arithmetic that covered both would be a statement the frame does not make and cannot use.</p>
+<p>[SPECULATION] The one loose thread worth naming is that $\delta$ appears in the top-quark formula and in the vector-boson ratio, and $\delta$ is also the phase that would control CP violation in the lepton sector if the neutrino mixing matrix had a Dirac phase. If the phase is shared, then charged-lepton flavour violation becomes a place where the sharing could be seen. The CLFV article says the frame's rate is set by the leptoquark mass and a single operator, so a shared phase would enter there as a complex coupling. That is a question, not a result: the papers' formulas contain no lepton-flavour-violating operator, and the frame's operator contains no $\delta$.</p>
+<h2 id="the-objections-strongest-first">The Objections, Strongest First</h2>
+<p>Each objection is stated at its strongest, and then answered as far as it can be answered.</p>
+<h3 id="1-the-null-is-too-narrow-and-the-trial-factor-is-ignored">1. The null is too narrow, and the trial factor is ignored</h3>
+<p>[ALGEBRA] The papers compare the measured values with perturbations of themselves. They never compare with the thing that decides the question, which is the size of the library. A search that tries a million expressions and keeps any that land within a percent does not need a structure to succeed; it needs only arithmetic.</p>
+<p><em>Answer.</em> There is no answer that saves the claim. Their test measures compressibility, and compressibility is what a search of a million expressions produces by construction. <em>The Test the Papers Do Not Run</em> gives the hit rates and the chain count.</p>
+<h3 id="2-fifteen-sets-so-the-width-is-uncertain">2. Fifteen sets, so the width is uncertain</h3>
+<p>[ALGEBRA] The significance is $2.6\pm0.5$. Fifteen pseudo-experiments with five thousand processor-hours each is a real expenditure and a small sample.</p>
+<p><em>Answer.</em> The sample is adequate to exclude chance at two sigma and inadequate to establish a discovery. The papers say so.</p>
+<h3 id="3-two-hypotheses-on-one-sample">3. Two hypotheses on one sample</h3>
+<p>[ALGEBRA] Both probabilities come from the same fifteen sets, and reporting the smaller one is a selection. The combined figure is $1.2\%$.</p>
+<p><em>Answer.</em> The selection is mild and the papers print both numbers and their inputs, so a reader can do the correction. It is done here.</p>
+<h3 id="4-the-rank-is-an-invented-measure">4. The rank is an invented measure</h3>
+<p>[ALGEBRA] A subtraction costs three points and $\pi$ costs one. Nothing fixes those costs, and a different schedule would produce a different library and a different complexity.</p>
+<p><em>Answer.</em> The measure is fixed before the comparison and applied identically to both arms, which is what fairness requires. Its arbitrariness limits the interpretation of the absolute numbers and not the sign of the comparison.</p>
+<h3 id="5-the-scale-of-math438">5. The scale of $\alpha$</h3>
+<p>[ALGEBRA] The first system's up-quark formula uses the fine-structure constant at zero momentum, while the mass it predicts has a scale of its own. The two differ by several percent of running, and the formula's precision is finer than the mismatch.</p>
+<p><em>Answer.</em> There is no answer. This is the strongest technical objection in the note. A formula that uses a coupling at one scale to fix a mass at another is a formula whose agreement cannot be interpreted as mechanism. It is fatal to any reading of the $m_u$ entry as structure, and it leaves the other five quark entries untouched.</p>
+<h3 id="6-light-quark-masses-are-scheme-numbers">6. Light-quark masses are scheme numbers</h3>
+<p>[ALGEBRA] The up, down and strange masses are quoted in a subtraction scheme at a named scale. They are not directly measured. A relation among them is a relation among scheme-dependent numbers.</p>
+<p><em>Answer.</em> The dependence is a few percent for $m_s$ and larger for $m_u$ and $m_d$, which is the same order as the deviations. The papers use one consistent scheme, which is the best that can be done; the interpretation is limited accordingly.</p>
+<h3 id="7-no-group-no-charge-no-anomaly">7. No group, no charge, no anomaly</h3>
+<p>[ALGEBRA] Neither paper assigns a charge, names a representation or checks an anomaly. A formula that fits six masses would fit them equally well in a theory with the wrong charges.</p>
+<p><em>Answer.</em> This is not a fault of the method but its boundary, and it is the reason the frame is the right place to read the papers. The frame supplies the names and the charges; the papers supply a candidate arithmetic for the magnitudes. Neither is complete and the division is clean.</p>
+<h3 id="8-the-integers-are-unowned">8. The integers are unowned</h3>
+<p>[ALGEBRA] The $9$, the $10$, the $6\pi+1$ and the $\pi+1/7$ have no derivation. The frame's integers all do.</p>
+<p><em>Answer.</em> The comparison is unfair to the papers in one direction and to the frame in the other. The frame derives its integers and fixes none of the masses. The papers fix the masses and derive none of their integers. A reader who wants one theory to do both has to wait.</p>
+<h2 id="what-the-frame-should-take-from-this">What the Frame Should Take From This</h2>
+<p>[ALGEBRA] The corpus should record one lesson and no result. The lesson is that a fit is not a relation, and the difference is the size of the library it was drawn from. The frame's own numbers — four colours, twenty-one generators, one third — come from a group and a trace, and their evidence is that the group forces them, not that a search found them.</p>
+<p>[ANSATZ] The practical rule that follows: any claim of the form "these measured numbers satisfy this simple expression" must be accompanied by the hit rate of the same expression class over a comparable library. Without that number, a one-percent fit carries no information. The two papers print the fit and not the rate, and the rate is what decides.</p>
+<p>[ALGEBRA] The frame is untouched by all of this. It predicts no mass, so nothing here confirms it, and it predicts no mass, so nothing here refutes it. The papers' failure is the failure of a method that has no group to constrain it, and the frame's immunity is the immunity of a framework that constrains itself too much to make this kind of claim.</p>
+<h2 id="what-would-refute-which">What Would Refute Which</h2>
+<p>The two bodies of work are falsified by different measurements, and the table keeps them apart.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>claim</th>
+<th>refuted by</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the papers' first system</td>
+<td>the hit rate of its expression class; each entry has hundreds to thousands of one-percent matches in the library</td>
+<td>refuted</td>
+</tr>
+<tr>
+<td>the papers' second system as a predictor</td>
+<td>the $3.8\%$ shortfall at the $Z$ mass</td>
+<td>refuted, by the papers' own admission</td>
+</tr>
+<tr>
+<td>the papers' second system as a description</td>
+<td>the chain count, about $10^{18}$ fitting chains</td>
+<td>refuted</td>
+</tr>
+<tr>
+<td>both systems as structure</td>
+<td>their mutual disagreement of four percent</td>
+<td>refuted</td>
+</tr>
+<tr>
+<td>the frame's group and charges</td>
+<td>a measured violation of $3q+\ell=0$</td>
+<td>open</td>
+</tr>
+<tr>
+<td>the frame's chiral assignment</td>
+<td>a fourth generation, or a scalar content different from twenty-four real components</td>
+<td>open</td>
+</tr>
+<tr>
+<td>the frame's scalar sector</td>
+<td>no second neutral state beyond the observed one, or a second bidoublet absent from the spectrum</td>
+<td>open</td>
+</tr>
+</tbody>
+</table></div>
+<p>[ALGEBRA] The asymmetry is worth stating. The papers are refuted by arithmetic, and the arithmetic was available before any experiment. The frame is refuted by content, and the content needs a measurement. Neither refutes the other, and the corpus's interest in the papers is now a lesson rather than a result.</p>
+<h2 id="summary">Summary</h2>
+<p>The two papers are a genetic-programming search and a statistical defence of its output. They are not a neural-network result, and a summary that says so is wrong.</p>
+<p>The first paper generates more than a million snippets and says, correctly, that no pattern is visible. The second paper filters them into two systems of eight equations: one fixes the six quark masses and the two vector-boson masses from the Higgs mass, the phase, a mixing sine and a coupling; the other fixes the same eight from the electron mass and the phase.</p>
+<p>Recomputation confirms the first system to better than $1.3\%$ on seven of eight entries, and the second as a description of the seven consecutive mass ratios to better than $2\%$ at every step. Recomputation also confirms the second system's failure as a predictor: the chain undershoots the $Z$ mass by $3.8\%$.</p>
+<p>The statistical claim is $2.60\sigma$ for the sum and $2.45\sigma$ for the chain alone, computed from fifteen smeared sets, so the significance carries $\pm0.5\sigma$ of its own. The paper's printed arithmetic contains a slip: $146\times3+118=556$, and the correct addend is $149\times3=447$.</p>
+<p>All of that is consistent, and none of it is evidence of structure. The papers never divide by the size of their library. When that division is done, the picture inverts. Random expressions over the same ingredients hit each measured ratio to one percent at a rate of one in three hundred, so a library of a million holds thousands of hits per ratio. The pool of simple constants holds $10\,779$ values, so seven-link chains number $1.7\times10^{28}$, and about $10^{18}$ of them fit all seven ratios. Even the five-digit vector-boson agreement is expected about five times over.</p>
+<p>The decisive fact needs no statistics. The two systems describe the same eight masses and disagree by four percent at every entry. Two formulas that fix one number four percent apart are two accidents, not one structure, and a real structure would have returned from both runs.</p>
+<p>The frame meets the papers in one place. Their equation for the vector-boson ratio is the frame's tree-level relation with the electroweak angle expressed through the CP phase, and the two agree in the fifth decimal. The relation itself is common to every model with one doublet per factor, so it distinguishes nothing. The identification of the angle with the phase is a numerical coincidence that a search of this size produces five times, and the frame cannot explain it, because the phase sits in the flavour factor and that factor is inert.</p>
+<p>The verdict on the papers is that they contain no relation. They contain a released pipeline, an honest account of their own method, a useful table of eight ratios with tolerances, and a demonstration of how large a library of simple expressions is. The flavour block stays at thirteen. The lesson that goes into the record is that a fit without a hit rate is not a finding.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_H$</td>
+<td>Higgs mass; in the papers an input, in the frame the lighter of two neutral states</td>
+</tr>
+<tr>
+<td>$m_e,m_\mu,m_\tau$</td>
+<td>electron, muon, tau masses</td>
+</tr>
+<tr>
+<td>$m_u,m_d,m_s,m_c,m_b,m_t$</td>
+<td>up, down, strange, charm, bottom, top masses</td>
+</tr>
+<tr>
+<td>$m_W,m_Z$</td>
+<td>charged and neutral vector-boson masses</td>
+</tr>
+<tr>
+<td>$\alpha^{-1}$</td>
+<td>inverse fine-structure constant, a measured coupling at zero momentum</td>
+</tr>
+<tr>
+<td>$\alpha_S$</td>
+<td>strong coupling at the $Z$ pole, a measured coupling at one scale</td>
+</tr>
+<tr>
+<td>$\theta_{12},\theta_{23},\theta_{13}$</td>
+<td>CKM angles, quoting sines in the papers and degrees in the corpus</td>
+</tr>
+<tr>
+<td>$\delta$</td>
+<td>CKM phase, the one CP-odd coordinate of the mixing matrix</td>
+</tr>
+<tr>
+<td>$\theta_W$</td>
+<td>electroweak mixing angle, defined by $\tan\theta_W=g_{\mathrm Y}/g$</td>
+</tr>
+<tr>
+<td>$r$</td>
+<td>analytic rank, the papers' complexity score of one expression</td>
+</tr>
+<tr>
+<td>$C$</td>
+<td>complexity, total rank times number of free parameters</td>
+</tr>
+<tr>
+<td>$\Delta_D$</td>
+<td>relative difference between a snippet's output and the measurement</td>
+</tr>
+<tr>
+<td>$G_{4LR}$</td>
+<td>$\mathrm{SU}(4)\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$, the frame's group</td>
+</tr>
+<tr>
+<td>$B'$</td>
+<td>the $B-L$ gauge boson, the $(\nu,\nu)$ cell of the frame's grid</td>
+</tr>
+<tr>
+<td>$X^{r},X^{g},X^{b}$</td>
+<td>the leptoquark gauge bosons, one per colour</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="../articles_physics/the-four-colours-left-right-model.html">The Four Colours Left–Right Model: Four Colours, $21$ Generators, One Declaration</a>. The group, the sixteen and the declaration, which is what the papers lack.</li>
+<li><a href="../articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>. The three grades of fixing, and the thirteen that the papers would reduce to seven.</li>
+<li><a href="../articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. The list, with the angles in degrees and the schemes of the masses.</li>
+<li><a href="../articles_physics/an-introduction-to-flavour.html">An Introduction to Flavour: Mass, Lifetime, Decay Pattern, the Three Handles</a>. Why the generation index is inert, which is why the frame cannot relate the phase to the gauge mixing.</li>
+<li><a href="../articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>. The other hierarchy, and the one place where a constant growth is found.</li>
+<li><a href="flavour-research.html">Flavour Research: The Ladder Arithmetic</a>. The lever-arm arithmetic, with its tags, beside which this note's accounting is to be read.</li>
+<li><a href="../articles_physics/the-scalar-sector-and-the-leptoquark-bounds.html">The Scalar Sector and the Leptoquark Bounds</a>. Twenty-four real components, twelve survivors, and the one-bidoublet defect.</li>
+<li><a href="../articles_physics/the-breaking-chain-and-the-boson-spectrum.html">The Breaking Chain and the Boson Spectrum: One Flag, Three Scales, Twenty-One Bosons</a>. Where the vector-boson ratio is fixed, and what the fourth colour adds to the neutral mixing.</li>
+<li><a href="../articles_physics/charged-lepton-flavour-violation-one-operator-and-the-channels-that-cannot-see-it.html">Charged Lepton Flavour Violation: One Operator, One Number, and the Channels That Cannot See It</a>. The place where a shared phase would show, and why it would not be seen in every channel.</li>
+<li><a href="../articles_physics/charge-quantisation-from-the-fourth-colour-one-trace-one-third.html">Charge Quantisation from the Fourth Colour: One Trace, One Third, and Where the Twenty-One Generators Go</a>. The frame's only derived integer, beside the papers' unowned ones.</li>
+<li><a href="../articles_physics/particle-classification-three-grids-one-name-in-every-cell.html">Particle Classification: Three Grids, One Name in Every Cell</a>. The names of the twenty-one bosons, of which the papers name only the $W$ and the $Z$.</li>
+<li><a href="the-coupling-sector-of-the-fourth-colour-model.html">The Coupling Sector of the Four Colours Left–Right Model: A Retired Working Record</a>. That record, with the ledger that governs values in internal notes.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
