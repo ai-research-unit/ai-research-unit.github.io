@@ -79,7 +79,7 @@ S=\int\mathrm{d}^{4}\varrho\;\Bigl\{\tfrac12\sum_\mu\varepsilon_\mu\bigl(\partia
 -\tfrac12k_m^{2}\varrho^{2}\,\mathcal{V}
 +\text{(the frame's terms)}\Bigr\},
 $$</p>
-<p>with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{q}{\hbar}A_\mu$ the mechanical phase gradient and $\mathcal V$ the invariant length's frame factor. Three blocks and the same four brackets as the Dirac chart.</p>
+<p>with $\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi q}{h}A_\mu$ the mechanical phase gradient and $\mathcal V$ the invariant length's frame factor. Three blocks and the same four brackets as the Dirac chart.</p>
 <p>The amplitude's kinetic term is order two; the mass term is order zero; the phase's bracket is order zero. <strong>So the deletion of the amplitude's kinetic term is a deletion across two orders</strong>, which is what makes it controlled.</p>
 <p>There the field was real, the phase unavailable, and the oscillation in the amplitude. The amplitude's kinetic term was then of the same size as the mass term, so deleting it was not an approximation. <strong>The two actions are the same action; the two limits differ because the two words differ.</strong></p>
 <p>For $\tilde A=A_0e^{i(\vec k\cdot\vec r-\omega r'_{t})}\tilde U$ with constant $A_0$ and $\tilde U$, the amplitude's kinetic term vanishes identically. The truncated action therefore reproduces every constant-envelope plane wave exactly, and its corrections are what a varying envelope costs.</p>
@@ -87,7 +87,7 @@ $$</p>
 <p>The covariant Proca action, the minimal substitution, the transverse polarisation and the Madelung-like pair are standard. Added here: the comparison of the two Proca deletions in one ledger, the exactness statement on constant envelopes, and the reading of the free/coupled split as a split of carriers.</p>
 <p>The word is defined for $\varrho>0$; the limit is a statement on the chart's domain; the cone is $\varrho=0$.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+iq\tilde A_\mu/\hbar$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=mc/\hbar$; $\epsilon=1/(\pi_{\Phi}L)$.</p>
+<p>The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled polar variational parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; $\tilde\nabla_{\mathrm{gco},\Phi,\mu}=\partial_\mu+\frac{2\pi iq\tilde A_\mu}{h}$; the complete polar decomposition $\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; $\varepsilon_\mu$ the metric signs; $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r_{t}^{\prime\,2}$; $k_m=\frac{2\pi mc}{h}$; $\epsilon=1/(\pi_{\Phi}L)$.</p>
 <h2 id="the-action-in-the-non-quantum-limit-the-blocks">The Action in the Non-Quantum Limit: The Blocks</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -170,7 +170,7 @@ $$</p>
 <p>$$
 \partial_{r'_{t}}\bigl(\rho_{\mathrm{num}}\,\mathcal E/c\bigr)+\vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\,\vec\pi\bigr)=0,
 \qquad
-\vec\pi=\hbar\vec\kappa ,
+\vec\pi=\frac{h}{2\pi}\vec\kappa ,
 $$</p>
 <p>the continuity equation for the charge density and the mechanical current. It is exact in the pair and unchanged by the deletion, because the deleted block carries no phase.</p>
 <p>Varying the amplitude. With the kinetic block deleted,</p>
@@ -231,11 +231,11 @@ $$</p>
 <td>The scale; the density</td>
 </tr>
 <tr>
-<td>$\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+qA_\mu/\hbar$</td>
+<td>$\kappa^{\mathrm{kin}}_\mu=\partial_\mu\theta_{\mathrm{pha}}+\frac{2\pi qA_\mu}{h}$</td>
 <td>The mechanical phase gradient</td>
 </tr>
 <tr>
-<td>$\hbar\vec\kappa=\vec\pi$, $\hbar c\kappa_t=\mathcal E$</td>
+<td>$\frac{h}{2\pi}\vec\kappa=\vec\pi$, $\frac{h}{2\pi} c\kappa_t=\mathcal E$</td>
 <td>Mechanical momentum and energy</td>
 </tr>
 <tr>
@@ -243,7 +243,7 @@ $$</p>
 <td>The invariant length's frame factor; not closed in the six angles</td>
 </tr>
 <tr>
-<td>$k_m=mc/\hbar$</td>
+<td>$k_m=\frac{2\pi mc}{h}$</td>
 <td>The mass wave number</td>
 </tr>
 <tr>

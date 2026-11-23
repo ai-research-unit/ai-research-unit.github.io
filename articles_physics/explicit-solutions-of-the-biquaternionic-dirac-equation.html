@@ -89,7 +89,7 @@ $$</p>
 \boxed{\;\tilde{Ξ}(\tilde R_\Phi) = \tilde{Ξ}_{0} \exp\!\left(i\,\mathrm{Sc}\!\left(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}\right)\right)
 = \tilde{Ξ}_{0}\,\exp\!\big(i(\vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z)-k_{t}^{\prime} r'_t)\big)\;},
 $$</p>
-<p>where $\tilde{Ξ}_{0} \in \mathbb{B}$ is a constant biquaternion, $\tilde{K}_{\Phi}=\frac{\tilde{P}_{\Phi}}{\hbar}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{0}$ and differentiates to left multiplication by $i\tilde{K}_{\Phi}$,</p>
+<p>where $\tilde{Ξ}_{0} \in \mathbb{B}$ is a constant biquaternion, $\tilde{K}_{\Phi}=\frac{2\pi \tilde{P}_{\Phi}}{h}= i k_{t}^{\prime} e_t + \vec e_x k_1 + \vec e_y k_2 + \vec e_z k_3$ (with $k_{t}^{\prime} = \omega/c$) is the wave biquaternion, and $\tilde R_\Phi = e_t (i r'_t) + \vec e_x r_x + \vec e_y r_y + \vec e_z r_z$ is the four-position biquaternion. The scalar part $\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_\Phi^{\natural}) = \vec k_\Phi\cdot(r_x\,\vec e_x+r_y\,\vec e_y+r_z\,\vec e_z) - k_{t}^{\prime} r'_t$ is real, so the exponent $i\,\mathrm{Sc}(\tilde{K}_{\Phi}\tilde{R}_{\Phi}^{\natural})$ is a purely imaginary central element; the exponential therefore commutes with $\tilde{Ξ}_{0}$ and differentiates to left multiplication by $i\tilde{K}_{\Phi}$,</p>
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ} = i\tilde{K}_{\Phi}\,\tilde{Ξ},
 $$</p>
@@ -98,7 +98,7 @@ $$</p>
 \tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0,
 $$</p>
 <p>i.e., the polarization biquaternion $\tilde{Ξ}_{0}$ is annihilated by the wave biquaternion $\tilde{K}_{\Phi}$. This is the momentum-space massless equation in the algebra; its kernel has complex dimension two, and the basis operator acts on it with the two eigenvalues $+1$ and $-1$, one state each. Those two states are the two helicities in the frame whose third direction is the momentum's, one of each value, so the full massless field is the pair of this equation and its conjugate.</p>
-<p>Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0$ exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null: $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\hbar^{2}= 0$, equivalently $k_{t}^{\prime\,2} = k_\Phi^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, one state of each value; for non-null $\tilde{K}_{\Phi}$ the kernel is trivial.</p>
+<p>Nonzero solutions of $\tilde{K}_{\Phi}\tilde{Ξ}_{0} = 0$ exist only when $\tilde{K}_{\Phi}$ is a zero divisor in $\mathbb{B}$, that is, when $\tilde{K}_{\Phi}$ is null: $\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}= \tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}/\frac{h^{2}}{4\pi^{2}}= 0$, equivalently $k_{t}^{\prime\,2} = k_\Phi^{2}$, the massless dispersion relation. In that case the kernel is a two-dimensional complex vector space, one state of each value; for non-null $\tilde{K}_{\Phi}$ the kernel is trivial.</p>
 <h3 id="massive-plane-waves">Massive Plane Waves</h3>
 <p>For the massive equation a single central-phase plane wave,</p>
 <p>$$
@@ -117,7 +117,7 @@ $$</p>
 <p>so a nonzero solution requires the <strong>mass-shell condition</strong></p>
 <p>$$\tilde{K}_{\Phi}\tilde{K}_{\Phi}^{\natural}=-k_m^{2},
 $$</p>
-<p>i.e., $-k_{t}^{\prime\,2} + \|\vec k_\Phi\|^2 = -k_m^{2}$, which is the standard mass-shell relation $k_{t}^{\prime\,2} = \|\vec k_\Phi\|^2 + k_m^{2}$ (with $k_{t}^{\prime}=\omega/c$ and $E=\hbar c\,k_{t}^{\prime}$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =\hbar\,\vec k_\Phi$), the same shell as the four-momentum kinematics of <em>The Dirac Equation in Biquaternionic Form</em>. The two signs of $k_{t}^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.</p>
+<p>i.e., $-k_{t}^{\prime\,2} + \|\vec k_\Phi\|^2 = -k_m^{2}$, which is the standard mass-shell relation $k_{t}^{\prime\,2} = \|\vec k_\Phi\|^2 + k_m^{2}$ (with $k_{t}^{\prime}=\omega/c$ and $E=\frac{h}{2\pi} c\,k_{t}^{\prime}$). This is the biquaternion form of the standard relativistic energy-momentum relation $E^2 = \vec p^2 c^2 +m^{2}\,c^{4}$ (with $\vec p =\frac{h}{2\pi}\,\vec k_\Phi$), the same shell as the four-momentum kinematics of <em>The Dirac Equation in Biquaternionic Form</em>. The two signs of $k_{t}^{\prime}$ are the two frequency branches — the particle and the antiparticle — and with the two spin states they give the four solutions that the field carries.</p>
 <h2 id="the-field-as-the-gradient-of-a-scalar-potential">The Field as the Gradient of a Scalar Potential</h2>
 <p>The completion of the next section has a shifted form, and the shift is the operator of the companion <em>The Biquaternion D'Alembertian and Its Green's Functions</em>. With the <strong>shifted gradient</strong> $\tilde\nabla_\Phi+\kappa$,
 $$
@@ -192,7 +192,7 @@ $$</p>
 <td>The field and its two components, as in <em>The Dirac Equation in Biquaternionic Form</em></td>
 </tr>
 <tr>
-<td>$\tilde K_\Phi=i k_t^{\prime}e_t+\vec k_\Phi=\tilde P_\Phi/\hbar$</td>
+<td>$\tilde K_\Phi=i k_t^{\prime}e_t+\vec k_\Phi=\frac{2\pi \tilde P_\Phi}{h}$</td>
 <td>The wave biquaternion; $k_t^{\prime}=\omega/c$</td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ $$</p>
 <td>The four-position biquaternion</td>
 </tr>
 <tr>
-<td>$k_m=\dfrac{mc}{\hbar}$</td>
+<td>$k_m=\frac{2\pi mc}{h}$</td>
 <td>The mass wave number, the coefficient of the mass term</td>
 </tr>
 <tr>

@@ -148,12 +148,12 @@ $$
 \qquad
 \Box_\Phi \to \frac{\omega^2}{c^2} - \vec k_\Phi^2 .
 $$
-The symbol was checked by finite differences on such a wave, with the numerical value of $\Box_\Phi\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k_\Phi^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k_\Phi^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box_\Phi \to k_m^{2}$ is the shifted cone. Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
+The symbol was checked by finite differences on such a wave, with the numerical value of $\Box_\Phi\tilde{Ξ}$ agreeing with $(\omega^2/c^2 - \vec k_\Phi^2)\tilde{Ξ}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k_\Phi^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box_\Phi \to k_m^{2}$ is the shifted cone. Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.</p>
 <p>The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial/\partial R_t = -i\partial/\partial r'_t$, the operator above is $\Box_\Phi = \Delta_\Phi - \partial^2/\partial {r'_{t}}^2$, and the physical mass equation is
 $$
 \left(\Box_\Phi - k_m^{2}\right)\tilde{Ξ} = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The companion article <em>Exercise: Chirality and the Weyl Spinors</em> carries $\hbar$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \vec\nabla_\Phi^2$; its mass equation is $(\Box_\Phi-k_m^{2})\tilde{Ξ} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box_\Phi$ means the series convention above and the mass term is $-k_m^{2}$ with $k_m=mc/\hbar$.</p>
+whose symbol reproduces $\omega^2 = c^2\vec k_\Phi^2 + c^2k_m^{2}$. The companion article <em>Exercise: Chirality and the Weyl Spinors</em> carries $\frac{h}{2\pi}$ and works with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box_\Phi = -\partial^2/\partial {r'_{t}}^2 + \vec\nabla_\Phi^2$; its mass equation is $(\Box_\Phi-k_m^{2})\tilde{Ξ} = 0$, the same equation as here and as in every other companion. Throughout this article $\Box_\Phi$ means the series convention above and the mass term is $-k_m^{2}$ with $k_m=\frac{2\pi mc}{h}$.</p>
 <h3 id="self-adjointness">Self-adjointness</h3>
 <p>The adjoint of the gradient is computed with the Hermitian pairing on fields,
 $$
@@ -275,7 +275,7 @@ whose Fourier transform is $1/(k_4^2 + \vec k_\Phi^2 - i\epsilon)$. Two facts ma
 <h2 id="the-massive-operator">The Massive Operator</h2>
 <p>Adding the mass term shifts the operator by a central scalar,
 $$
-\Box_\Phi - k_m^{2} , \qquad k_m=\dfrac{mc}{\hbar} ,
+\Box_\Phi - k_m^{2} , \qquad k_m=\frac{2\pi mc}{h} ,
 $$
 and the defining equation becomes $(\Box_\Phi - k_m^{2})G = -\delta$. In the $i r'_t$ variables the shifted operator is Helmholtz's, $-\Delta_\Phi + k_m^{2}$, and its invariant fundamental solution is the four-dimensional Yukawa kernel
 $$
@@ -497,7 +497,7 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 </tr>
 <tr>
 <td>$G^{(1/k_m)}_{\mathrm{inv}} = \frac{k_m}{4\pi^2\rho}\mathrm{Ki}_{1}(\rho\,k_m)$</td>
-<td>Massive invariant kernel; the label $1/k_m$ names the massive case, whose coefficient is $k_m=\hbar/(mc)$</td>
+<td>Massive invariant kernel; the label $1/k_m$ names the massive case, whose coefficient is $k_m=\frac{h}{2\pi mc}$</td>
 </tr>
 <tr>
 <td>$\tilde{G}_{\Phi,\tilde\nabla_\Phi} = (\tilde\nabla_\Phi)^{\natural}G_{\Box,\Phi} \in \mathbb{B}_{\Phi}$</td>

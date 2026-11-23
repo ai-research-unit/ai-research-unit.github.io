@@ -73,20 +73,20 @@
 <h2 id="introduction">Introduction</h2>
 <p>Write the parent's coupled polar action, delete the one term carrying a spatial derivative of the scale, and the two variations of what is left are the covariant Hamilton–Jacobi equation and the covariant continuity equation.</p>
 <p>The parent supplies the action and its split into three coupling pieces. <a href="the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html">The Lagrangian and the Coupled Schrödinger Equation in Polar Variables</a> writes the coupled Lagrangian, shows that the connection enters the kinetic term through one covariant replacement, and separates that term into the free, paramagnetic and diamagnetic pieces. Its Euler–Lagrange equations are the covariant pair. This article orders the terms and deletes one.</p>
-<p>The deletion is the free one and it is the only one. The term deleted here is the same term deleted in the free variational companion, $-\frac{\hbar^{2}}{2m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, and the connection does not touch it: it carries no $\theta_{\mathrm{pha}}$ and no $\vec A$. One term, the same term, in both families.</p>
+<p>The deletion is the free one and it is the only one. The term deleted here is the same term deleted in the free variational companion, $-\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, and the connection does not touch it: it carries no $\theta_{\mathrm{pha}}$ and no $\vec A$. One term, the same term, in both families.</p>
 <p>The article's central clarification is about the coupling, and it is a warning. The parent's split into free, paramagnetic and diamagnetic pieces invites a second expansion, in powers of $q$. That expansion is not this limit and it is not compatible with it. All three pieces carry the same order in $\epsilon$, because the parameter counts derivatives of the scale and none of the three has one. The coupling is not small in this limit; it is leading, and a reader who treats $q\vec A$ as a perturbation is computing a different approximation of a different equation.</p>
 <p>The consequence for the leading term. The leading term is the full covariant kinetic energy $\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}/2m$, not the free one plus corrections. The limit's leading equation changes value when the potential is switched on and its order never does, which is the same statement the equation-route companion makes and the reason the two agree term for term.</p>
 <p>What the article establishes, in five sentences. The parent's action has five terms, three of order zero in the phase and one of order two in the scale, and the fifth is the potential energy. The single deletion leaves the covariant classical action, whose variation with respect to the scale is the eikonal in the kinetic momentum and whose variation with respect to the phase is the covariant continuity equation, the second unchanged by the deletion. The truncated action is gauge invariant exactly, with the phase translated and the potential shifted, and the invariance is the parent's statement that the gauge group is one coordinate of the chart. The three coupling pieces are of one order, so the coupling enters the leading term and no expansion in it exists.</p>
 <p>What is not new. The covariant Madelung action, the paramagnetic–diamagnetic split, the covariant continuity equation and the derivation of the covariant Hamilton–Jacobi equation from an action are standard, and the split is in every textbook on the hydrodynamical formulation of a charged field. Added here: the ordering of the parent's five terms against one parameter, the statement that all three coupling pieces are leading, and the reading of the truncated action's gauge invariance on the chart.</p>
 <p>The restriction is the free one. The action is the central field's, $\theta_{\mathrm{rpd}}=0$ and $\tilde u_{\mathrm r}=\varepsilon e_{t}$, and the parent proves that class is invariant exactly under a central Hamiltonian. The limit is defined there and nowhere else, in this family as in the other three.</p>
-<p>The sign, stated once. The parent's coupling is $ϙ$ with $ϙ=-q$; its action carries $+ϙ\varphi\,\varrho^{2}$, which is $-q\varphi\,\varrho^{2}$ here, and its covariant gradient is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A$, which is $(\vec\nabla_\Phi S-q\vec A)/\hbar$ here. Every display below uses $q$, the electric charge, and $\vec\pi=\vec\nabla_\Phi S-q\vec A$.</p>
+<p>The sign, stated once. The parent's coupling is $ϙ$ with $ϙ=-q$; its action carries $+ϙ\varphi\,\varrho^{2}$, which is $-q\varphi\,\varrho^{2}$ here, and its covariant gradient is $\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A$, which is $(\vec\nabla_\Phi S-q\vec A)\frac{2\pi}{h}$ here. Every display below uses $q$, the electric charge, and $\vec\pi=\vec\nabla_\Phi S-q\vec A$.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i\hbar\nabla-q\vec A$; $S=\hbar\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.</p>
+<p>The conventions are restated here so that every sign below is checkable from this page alone. Those of the coupled variational polar parent: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with $e_{t}=1$ and $\vec e_\mu^{2}=-e_{t}$; $\mathrm{Sc}$ the coefficient of $e_{t}$; the complete polar decomposition $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\tilde U_{\Psi,\mathrm b}\tilde u_{\mathrm r}$; the connection $\tilde A_\Phi=i(\varphi/c)e_{t}+\vec A$; the operator $\hat H^{\mathrm{gco}}=\tilde{\vec\pi}^{\,2}/2m+q\varphi+\hat V$ with $\tilde{\vec\pi}=-i \frac{h}{2\pi}\nabla-q\vec A$; $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$; $\Delta_\Phi$ the Laplacian of the material sector.</p>
 <h2 id="the-action-in-the-non-quantum-limit-the-orders">The Action in the Non-Quantum Limit: The Orders</h2>
 <p>The parent's action for the central field in the operator setting.</p>
 <p>$$
-S_{\mathrm{cpl}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\hbar\,\varrho^{2}\dot\theta_{\mathrm{pha}}
--\frac{\hbar^{2}}{2m}\Bigl(\lvert\vec\nabla_\Phi \varrho\rvert^{2}+\varrho^{2}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}\Bigr)
+S_{\mathrm{cpl}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}
+-\frac{h^{2}}{8\pi^{2}m}\Bigl(\lvert\vec\nabla_\Phi \varrho\rvert^{2}+\varrho^{2}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}\Bigr)
 -\varrho^{2}V_{\mathrm{op}}+ϙ\varphi\,\varrho^{2}\Bigr],
 $$</p>
 <p>with $ϙ=-q$. Five terms, and the parent's display is reproduced without change.</p>
@@ -101,17 +101,17 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$-\hbar\,\varrho^{2}\dot\theta_{\mathrm{pha}}$</td>
+<td>$-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}$</td>
 <td>scale squared, one time derivative of the phase</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$-\frac{\hbar^{2}}{2m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}$</td>
+<td>$-\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}\rvert^{2}$</td>
 <td>scale squared, two spatial derivatives of the phase</td>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$-\frac{\hbar q}{m}\varrho^{2}\,\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$</td>
+<td>$-\frac{h q}{2\pi m}\varrho^{2}\,\vec A\cdot\vec\nabla_\Phi\theta_{\mathrm{pha}}$</td>
 <td>scale squared, one spatial derivative of the phase and the potential</td>
 <td>$0$</td>
 </tr>
@@ -121,7 +121,7 @@ $$</p>
 <td>$0$</td>
 </tr>
 <tr>
-<td>$-\frac{\hbar^{2}}{2m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$</td>
+<td>$-\frac{h^{2}}{8\pi^{2}m}\lvert\vec\nabla_\Phi \varrho\rvert^{2}$</td>
 <td>two spatial derivatives of the scale</td>
 <td>$2$</td>
 </tr>
@@ -132,13 +132,13 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The three middle rows are the parent's one term, split. The parent separates $-\frac{\hbar^{2}}{2m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\rvert^{2}$ into the free kinetic term, the paramagnetic term linear in $\vec A$, and the diamagnetic term quadratic in $\vec A$, and gives the sign of the third as the reason the energy is bounded below: the quadratic term is positive for every $\vec A$.</p>
+<p>The three middle rows are the parent's one term, split. The parent separates $-\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\rvert^{2}$ into the free kinetic term, the paramagnetic term linear in $\vec A$, and the diamagnetic term quadratic in $\vec A$, and gives the sign of the third as the reason the energy is bounded below: the quadratic term is positive for every $\vec A$.</p>
 <p><strong>All three carry order zero, and that is the article's sharpest statement about the coupling.</strong> The parameter counts spatial derivatives of the scale. None of the three pieces has one. The paramagnetic term is linear in the phase's gradient and linear in the potential, and it is leading, which is the variational face of the companion's rule that the criterion is written on the mechanical momentum: $\vec\pi$ contains $\vec A$, so a piece of $\lvert\vec\pi\rvert^{2}$ that is linear in $\vec A$ is part of the leading term and not a correction to it.</p>
 <p>There is no expansion in $q$, and the reason is one sentence. An expansion in $q$ would order the three pieces as $q^{0}$, $q^{1}$, $q^{2}$, which is a bookkeeping in the coupling rather than in the derivatives; the limit's parameter is the derivative count and the two bookkeepings are different. A truncated series in $q$ would truncate the leading term of this limit, and that is a different approximation of the same equation.</p>
 <p>Delete the only order-two term. That is the whole of the limit:</p>
 <p>$$
-S_{\mathrm{cl}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\hbar\,\varrho^{2}\dot\theta_{\mathrm{pha}}
--\frac{\hbar^{2}}{2m}\varrho^{2}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}
+S_{\mathrm{cl}}=\int \mathrm{d}t'\,\mathrm{d}^{3}x\;\Bigl[-\frac{h}{2\pi}\,\varrho^{2}\dot\theta_{\mathrm{pha}}
+-\frac{h^{2}}{8\pi^{2}m}\varrho^{2}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}
 -\varrho^{2}V_{\mathrm{op}}+ϙ\varphi\,\varrho^{2}\Bigr].
 $$</p>
 <p>Nothing else changes, and no term is resealed. The connection sits in the kinetic term exactly where the parent put it, and the potential energy keeps its coefficient.</p>
@@ -159,23 +159,23 @@ $$</p>
 <h2 id="the-variation-varying-the-scale-the-covariant-eikonal">The Variation: Varying the Scale: the Covariant Eikonal</h2>
 <p>The scale's variation of the truncated action. No term of $S_{\mathrm{cl}}$ carries a derivative of $\varrho$, so the Euler–Lagrange equation is algebraic:</p>
 <p>$$
--2\varrho\Bigl(\hbar\,\dot\theta_{\mathrm{pha}}+\frac{\hbar^{2}}{2m}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}+V_{\mathrm{op}}-ϙ\varphi\Bigr)=0 ,
+-2\varrho\Bigl(\frac{h}{2\pi}\,\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}+V_{\mathrm{op}}-ϙ\varphi\Bigr)=0 ,
 $$</p>
 <p>that is, away from the node $\varrho=0$,</p>
 <p>$$
 \boxed{\ \partial_{t'}S+\frac{\lvert\vec\nabla_\Phi S-q\vec A\rvert^{2}}{2m}+q\varphi+V_{\mathrm{op}}=0\ }
 $$</p>
-<p>with $S=\hbar\theta_{\mathrm{pha}}$ and $ϙ=-q$. <strong>This is the covariant Hamilton–Jacobi equation</strong>, and it is the companion's order zero.</p>
-<p>With the term kept, the same variation carries the quantum potential. Then $\partial L/\partial(\partial_{i}\varrho)=-\frac{\hbar^{2}}{m}\partial_{i}\varrho$ and the equation gains a divergence:</p>
+<p>with $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$ and $ϙ=-q$. <strong>This is the covariant Hamilton–Jacobi equation</strong>, and it is the companion's order zero.</p>
+<p>With the term kept, the same variation carries the quantum potential. Then $\partial L/\partial(\partial_{i}\varrho)=-\frac{h^{2}}{(2\pi)^{2} m}\partial_{i}\varrho$ and the equation gains a divergence:</p>
 <p>$$
--2\varrho\Bigl(\hbar\dot\theta_{\mathrm{pha}}+\frac{\hbar^{2}}{2m}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\Bigr\rvert^{2}+V_{\mathrm{op}}-ϙ\varphi\Bigr)+\frac{\hbar^{2}}{m}\Delta_\Phi \varrho=0 ,
+-2\varrho\Bigl(\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+\frac{h^{2}}{8\pi^{2}m}\Bigl\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\Bigr\rvert^{2}+V_{\mathrm{op}}-ϙ\varphi\Bigr)+\frac{h^{2}}{(2\pi)^{2} m}\Delta_\Phi \varrho=0 ,
 $$</p>
-<p>which divided by $-2\varrho$ is the parent's Hamilton–Jacobi equation with $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$. The two differ by exactly the deleted term and by nothing else, and the potential's coefficient is the same in both.</p>
+<p>which divided by $-2\varrho$ is the parent's Hamilton–Jacobi equation with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$. The two differ by exactly the deleted term and by nothing else, and the potential's coefficient is the same in both.</p>
 <p>The quantum potential does not carry the connection, and the action shows why. The deleted term is $\lvert\vec\nabla_\Phi \varrho\rvert^{2}$, a function of the scale alone. The scale is invariant under the gauge group, so its gradient is too, and the divergence that follows from it is $Q$ and nothing more. This is the variational form of the parent's first finding, which the equation route obtains by inspection.</p>
 <h2 id="the-constraints-the-action-imposes-gauge-invariance-of-the-truncated-action">The Constraints the Action Imposes: Gauge Invariance of the Truncated Action</h2>
 <p>The transformation on the chart. With $\Gamma$ real, the phase is translated, the vector potential shifted, and the scalar potential shifted:</p>
 <p>$$
-\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{q}{\hbar}\Gamma,
+\theta_{\mathrm{pha}}\longmapsto\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\Gamma,
 \qquad
 \vec A\longmapsto\vec A+\vec\nabla_\Phi\Gamma,
 \qquad
@@ -183,18 +183,18 @@ $$</p>
 $$</p>
 <p>Two combinations are invariant and the action is built from them. The covariant gradient is unchanged, because the phase's shift and the potential's shift cancel inside one bracket:</p>
 <p>$$
-\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{q}{\hbar}\vec A\ \longmapsto\ \vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{q}{\hbar}\vec\nabla_\Phi\Gamma-\frac{q}{\hbar}\vec A-\frac{q}{\hbar}\vec\nabla_\Phi\Gamma=\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{q}{\hbar}\vec A ,
+\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A\ \longmapsto\ \vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi q}{h}\vec\nabla_\Phi\Gamma-\frac{2\pi q}{h}\vec A-\frac{2\pi q}{h}\vec\nabla_\Phi\Gamma=\vec\nabla_\Phi\theta_{\mathrm{pha}}-\frac{2\pi q}{h}\vec A ,
 $$</p>
 <p>and so is the kinetic energy, because the rate's shift and the scalar potential's shift cancel in the same way:</p>
 <p>$$
-\hbar\dot\theta_{\mathrm{pha}}+q\varphi\ \longmapsto\ \hbar\dot\theta_{\mathrm{pha}}+q\dot\Gamma+q\varphi-q\dot\Gamma=\hbar\dot\theta_{\mathrm{pha}}+q\varphi .
+\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+q\varphi\ \longmapsto\ \frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+q\dot\Gamma+q\varphi-q\dot\Gamma=\frac{h}{2\pi}\dot\theta_{\mathrm{pha}}+q\varphi .
 $$</p>
 <p>The two canceling pairs are the two terms that carry the time derivative. In the action the first term shifts by $-q \varrho^{2}\dot\Gamma$ and the potential-energy term by $+q \varrho^{2}\dot\Gamma$, term for term and pointwise, so no boundary term is produced and no integration by parts is needed. <strong>The truncated action is gauge invariant exactly</strong>, and the parent's reading is the reason it must be: the gauge group translates one coordinate of the word and leaves the other seven, so a term built from the scale and the invariant combination of the phase cannot see it.</p>
 <p>The limit and the gauge transformation commute. The deletion is the removal of a term built from the scale alone, so it removes a gauge invariant quantity. Deleting and gauging in either order gives the same action, and that is a one-line statement here and a computation in an equation-first account.</p>
 <h2 id="the-structural-consequence-varying-the-phase-the-covariant-transport-unchanged">The Structural Consequence: Varying the Phase: the Covariant Transport, Unchanged</h2>
 <p>The phase's variation of the truncated action.</p>
 <p>$$
-\hbar\,\partial_{t'}\varrho^{2}+\frac{\hbar}{m}\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\bigl(\vec\nabla_\Phi S-q\vec A\bigr)\Bigr)=0 ,
+\frac{h}{2\pi}\,\partial_{t'}\varrho^{2}+\frac{h}{2\pi m}\vec\nabla_\Phi\cdot\Bigl(\varrho^{2}\bigl(\vec\nabla_\Phi S-q\vec A\bigr)\Bigr)=0 ,
 $$</p>
 <p>that is</p>
 <p>$$
@@ -202,7 +202,7 @@ $$</p>
 $$</p>
 <p>the covariant continuity equation, whose current is the kinetic momentum over the mass.</p>
 <p>It is identical on the full action, and the reason is again the deleted term's content. The deleted term contains no $\theta_{\mathrm{pha}}$ and no $\vec A$, so both derivatives of the Lagrangian with respect to the phase are unchanged. The transport equation is not an order of an expansion: it is invariant under the deletion, and that invariance is the variational statement that the connection changes the current's carrier and not its structure.</p>
-<p>The paramagnetic term is what puts $\vec A$ into the current. Differentiating $\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A\rvert^{2}$ with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns the covariant gradient, so the momentum conjugate to the phase is $\hbar \varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{ϙ}{\hbar}\vec A)=\varrho^{2}\vec\pi$, the current. <strong>The piece that looks like a perturbation in the action is the piece that makes the current gauge invariant</strong>, and that is why it cannot be dropped.</p>
+<p>The paramagnetic term is what puts $\vec A$ into the current. Differentiating $\lvert\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A\rvert^{2}$ with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns the covariant gradient, so the momentum conjugate to the phase is $\frac{h}{2\pi} \varrho^{2}(\vec\nabla_\Phi\theta_{\mathrm{pha}}+\frac{2\pi ϙ}{h}\vec A)=\varrho^{2}\vec\pi$, the current. <strong>The piece that looks like a perturbation in the action is the piece that makes the current gauge invariant</strong>, and that is why it cannot be dropped.</p>
 <h2 id="the-noether-currents-density-charge-and-energy">The Noether Currents: Density, Charge and Energy</h2>
 <p>The current is the density times the transport velocity, and the limit makes that literal. The phase's momentum is the density,
 $$
@@ -242,7 +242,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 <td>The scale; the density is $\varrho^{2}$ on the central field</td>
 </tr>
 <tr>
-<td>$\theta_{\mathrm{pha}}$, $S=\hbar\theta_{\mathrm{pha}}$</td>
+<td>$\theta_{\mathrm{pha}}$, $S=\frac{h}{2\pi}\theta_{\mathrm{pha}}$</td>
 <td>The central angle; the action</td>
 </tr>
 <tr>
@@ -270,7 +270,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 <td>The parameter; one power per derivative of the scale</td>
 </tr>
 <tr>
-<td>$Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$</td>
+<td>$Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$</td>
 <td>Quantum potential; the deleted term's equation</td>
 </tr>
 <tr>
@@ -318,7 +318,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 <tbody>
 <tr>
 <td>with respect to $\varrho$</td>
-<td>covariant eikonal with $+\frac{\hbar^{2}}{m}\Delta_\Phi \varrho$</td>
+<td>covariant eikonal with $+\frac{h^{2}}{(2\pi)^{2} m}\Delta_\Phi \varrho$</td>
 <td>covariant eikonal alone</td>
 </tr>
 <tr>
@@ -329,7 +329,7 @@ and the phase's Euler–Lagrange equation is the continuity equation $\partial_{
 </tbody>
 </table></div>
 <p>The second row was compared symbolically and is equal as written. The deleted term carries neither $\theta_{\mathrm{pha}}$ nor $\vec A$, so the two derivatives of the Lagrangian with respect to the phase are the same expression, and no rearrangement is needed to see it.</p>
-<p>The first row was checked as a function of the potentials. Keeping the term, the $\varrho$-equation divided by $-2\varrho$ is the companion's Hamilton–Jacobi equation with $Q=-\hbar^{2}\Delta_\Phi \varrho/(2m\varrho)$; deleting the term removes the divergence and leaves the bracket. The coefficients of $q\varphi$ and of $\lvert\vec A\rvert^{2}$ were checked against the parent's $+ϙ\varphi$ with $ϙ=-q$ and agree.</p>
+<p>The first row was checked as a function of the potentials. Keeping the term, the $\varrho$-equation divided by $-2\varrho$ is the companion's Hamilton–Jacobi equation with $Q=-\frac{h^{2}}{4\pi^{2}}\Delta_\Phi \varrho/(2m\varrho)$; deleting the term removes the divergence and leaves the bracket. The coefficients of $q\varphi$ and of $\lvert\vec A\rvert^{2}$ were checked against the parent's $+ϙ\varphi$ with $ϙ=-q$ and agree.</p>
 <p>The current was checked to be the conjugate momentum. Differentiating the kinetic term with respect to $\vec\nabla_\Phi\theta_{\mathrm{pha}}$ returns $\varrho^{2}\vec\pi$, and its Euler–Lagrange equation is the divergence of that current. The paramagnetic term is what makes the conjugate momentum the kinetic one and not the canonical one.</p>
 <p>What was not checked. No boundary-value problem was solved and no flux was computed. The claims are about terms and identities, and both were verified as algebra.</p>
       </div>

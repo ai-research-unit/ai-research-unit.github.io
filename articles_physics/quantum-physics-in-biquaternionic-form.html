@@ -253,27 +253,27 @@ $$</p>
 \tilde\Pi_{\mathrm{id}}(r'_t) = \tilde Q(r'_t)\,\tilde\Pi_{\mathrm{id}}(0)\,\tilde Q(r'_t)^{*},
 $$</p>
 <p>where $r'_t=c\,t'$ is the coordinate time carried as a length (<em>Physics Units and Common Elements Conventions</em>) and $\tilde Q(r'_t)$ is a <strong>$*$-unitary biquaternion</strong>, $\tilde Q\tilde Q^{*} = e_t$, satisfying the <strong>Schrödinger equation</strong></p>
-<p>$$i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde Q(r'_t) = \tilde H_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
+<p>$$i\,\frac{h}{2\pi}\,c\,\frac{d}{dr'_{t}}\tilde Q(r'_t) = \tilde H_\Psi\,\tilde Q(r'_t), \qquad \tilde Q(0) = e_t,
 $$</p>
 <p>with $\tilde H_\Psi = h_t e_t + i\vec h_\Psi \in \mathbb{B}_{\Psi}$ the Hamiltonian, a Hermitian element. The glyph carries the sector and needs no abbreviation: the evolution formulas write $\tilde H_\Psi$, not a bare $H$.</p>
 <p><strong>The solution.</strong> We have $-i\tilde H_\Psi = -i h_t e_t + \vec h_\Psi$. The scalar part and the vector part commute, so</p>
 <p>$$
-\boxed{\;\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})\left(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\,\vec u_\Psi\right)\;},
+\boxed{\;\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})\left(\cos(|\vec h_\Psi|\frac{2\pi r'_{t}}{h\,c})\,e_t + \sin(|\vec h_\Psi|\frac{2\pi r'_{t}}{h\,c})\,\vec u_\Psi\right)\;},
 $$</p>
 <p>where $\vec u_\Psi = \vec h_\Psi/|\vec h_\Psi|$ (for $\vec h_\Psi \neq 0$). The exponential of the vector part uses $\vec u_\Psi^2 = -e_t$, which gives the trigonometric form.</p>
-<p>The angle is $\theta_{\mathrm{evo}}=h_t\,r'_t/(\hbar\,c)$, the scalar part of $\tilde H_\Psi$ times the interval over $\hbar\,c$, so that the central scalar in the display is $\exp(-i\theta_{\mathrm{evo}})=\exp(-ih_t\,r'_t/(\hbar\,c))$. The generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.</p>
-<p>The element $\tilde Q(r'_t)$ is <strong>$*$-unitary</strong>, $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$, hence an element of the group $\mathrm{U}(2) \subset \mathbb{B}$. It is not Hermitian in general: with $\theta = |\vec h_\Psi|\frac{r'_{t}}{\hbar\,c}$ its conjugate is $\tilde Q(r'_t)^{*} = \exp(+i\theta_{\mathrm{evo}})\left(\cos\theta\,e_t - \sin\theta\,\vec u_\Psi\right)$, which differs from $\tilde Q(r'_t)$ except at isolated times, and the conjugation it performs is therefore not a projection.</p>
+<p>The angle is $\theta_{\mathrm{evo}}=\frac{2\pi h_t\,r'_t}{h\,c}$, the scalar part of $\tilde H_\Psi$ times the interval over $\frac{h}{2\pi}\,c$, so that the central scalar in the display is $\exp(-i\theta_{\mathrm{evo}})=\exp(-\frac{2\pi ih_t\,r'_t}{h\,c})$. The generator is anti-Hermitian, so its scalar part is purely imaginary and the angle is real.</p>
+<p>The element $\tilde Q(r'_t)$ is <strong>$*$-unitary</strong>, $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$, hence an element of the group $\mathrm{U}(2) \subset \mathbb{B}$. It is not Hermitian in general: with $\theta = |\vec h_\Psi|\frac{2\pi r'_{t}}{h\,c}$ its conjugate is $\tilde Q(r'_t)^{*} = \exp(+i\theta_{\mathrm{evo}})\left(\cos\theta\,e_t - \sin\theta\,\vec u_\Psi\right)$, which differs from $\tilde Q(r'_t)$ except at isolated times, and the conjugation it performs is therefore not a projection.</p>
 <p><strong>The scalar part of the Hamiltonian does not affect the state.</strong> Since $\exp(-i\theta_{\mathrm{evo}})$ is a central complex scalar, and since the conjugation</p>
 <p>$$
 \tilde Q(r'_t)\,\tilde\Pi_{\mathrm{id}}\,\tilde Q(r'_t)^{*} = \exp(-i\theta_{\mathrm{evo}})\tilde u\,\tilde\Pi_{\mathrm{id}}\,\exp(+i\theta_{\mathrm{evo}})\tilde u^{*} = \tilde u\,\tilde\Pi_{\mathrm{id}}\,\tilde u^{*}
 $$</p>
-<p>(with $\tilde u = \cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\vec u_\Psi$ a unit real quaternion), the phase $\exp(-i\theta_{\mathrm{evo}})$ cancels out. So only the vector part $\vec h_\Psi$ of the Hamiltonian affects the state evolution. This is the standard result: the scalar part of the Hamiltonian contributes only to a global, unobservable phase.</p>
+<p>(with $\tilde u = \cos(|\vec h_\Psi|\frac{2\pi r'_{t}}{h\,c})e_t + \sin(|\vec h_\Psi|\frac{2\pi r'_{t}}{h\,c})\vec u_\Psi$ a unit real quaternion), the phase $\exp(-i\theta_{\mathrm{evo}})$ cancels out. So only the vector part $\vec h_\Psi$ of the Hamiltonian affects the state evolution. This is the standard result: the scalar part of the Hamiltonian contributes only to a global, unobservable phase.</p>
 <p><strong>Time evolution of a mixed state.</strong> A general state $\tilde{Ϛ}_{\Psi} = \tfrac{1}{2}(e_t + i\vec s_{\Psi})$ evolves by the same conjugation:</p>
 <p>$$
 \tilde{Ϛ}_{\Psi}(r'_t) = \tilde Q(r'_t)\,\tilde{Ϛ}_{\Psi}(0)\,\tilde Q(r'_t)^{*}.
 $$</p>
 <p>This is the <strong>von Neumann equation</strong>, expressed as a rotor conjugation. In differential form, it is</p>
-<p>$$i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde{Ϛ}_{\Psi}(r'_t) = [\tilde H_\Psi, \tilde{Ϛ}_{\Psi}(r'_t)],
+<p>$$i\,\frac{h}{2\pi}\,c\,\frac{d}{dr'_{t}}\tilde{Ϛ}_{\Psi}(r'_t) = [\tilde H_\Psi, \tilde{Ϛ}_{\Psi}(r'_t)],
 $$</p>
 <p>with the commutator defined in the biquaternion algebra.</p>
 <p><strong>Interpretation.</strong> The $*$-unitary $\tilde Q(r'_t)$ is an inner automorphism of the algebra: conjugation by a $*$-unitary biquaternion preserves multiplication. Its action on $\mathbb{B}_{\Psi}$ keeps the scalar part fixed and rotates the imaginary vector part, giving the standard precession of a spin-1/2 in a magnetic field, expressed as the biquaternion rotation.</p>
@@ -284,14 +284,14 @@ $$</p>
 $$</p>
 <p>The evolved observable takes the glyph $\tilde O_\Psi$ and the Hamiltonian keeps $\tilde H_\Psi$, so that the generator and the element it moves do not share a letter.</p>
 <p>The evolution equation is the <strong>Heisenberg equation</strong></p>
-<p>$$i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde O_\Psi(r'_t) = [\tilde O_\Psi(r'_t), \tilde H_\Psi],
+<p>$$i\,\frac{h}{2\pi}\,c\,\frac{d}{dr'_{t}}\tilde O_\Psi(r'_t) = [\tilde O_\Psi(r'_t), \tilde H_\Psi],
 $$</p>
 <p>where $\tilde H_\Psi$ is the Hamiltonian.</p>
-<p><strong>Derivation.</strong> We compute the time derivative of $\tilde O_\Psi(r'_t) = \tilde Q^{*}\tilde O_\Psi\tilde Q$, using the Schrödinger equation $i\,\hbar\,c\,\frac{d\tilde Q}{dr'_{t}}= \tilde H_\Psi\tilde Q$ and its adjoint $-i\,\hbar\,c\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}\tilde H_\Psi$:</p>
+<p><strong>Derivation.</strong> We compute the time derivative of $\tilde O_\Psi(r'_t) = \tilde Q^{*}\tilde O_\Psi\tilde Q$, using the Schrödinger equation $i\,\frac{h}{2\pi}\,c\,\frac{d\tilde Q}{dr'_{t}}= \tilde H_\Psi\tilde Q$ and its adjoint $-i\,\frac{h}{2\pi}\,c\left(d\tilde Q/dr'_t\right)^{*} = \tilde Q^{*}\tilde H_\Psi$:</p>
 <p>$$
-i\,\hbar\,c\,\frac{d}{dr'_{t}}\tilde O_\Psi =i\,\hbar\,c\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde O_\Psi\tilde Q + \tilde Q^{*}\tilde O_\Psi\,d\tilde Q/dr'_t\right) = -\tilde Q^{*}\tilde H_\Psi\tilde O_\Psi\tilde Q + \tilde Q^{*}\tilde O_\Psi\tilde H_\Psi\tilde Q = \tilde Q^{*}[\tilde O_\Psi, \tilde H_\Psi]\tilde Q.
+i\,\frac{h}{2\pi}\,c\,\frac{d}{dr'_{t}}\tilde O_\Psi =i\,\frac{h}{2\pi}\,c\left(\left(d\tilde Q/dr'_t\right)^{*}\tilde O_\Psi\tilde Q + \tilde Q^{*}\tilde O_\Psi\,d\tilde Q/dr'_t\right) = -\tilde Q^{*}\tilde H_\Psi\tilde O_\Psi\tilde Q + \tilde Q^{*}\tilde O_\Psi\tilde H_\Psi\tilde Q = \tilde Q^{*}[\tilde O_\Psi, \tilde H_\Psi]\tilde Q.
 $$</p>
-<p>Since $\tilde Q(r'_t) = \exp(-i\tilde H_\Psi r'_t/(\hbar\,c))$ is a function of $\tilde H_\Psi$, it <strong>commutes with $\tilde H_\Psi$</strong>, and so does $\tilde Q^{*}$. The last expression is therefore $[\tilde Q^{*}\tilde O_\Psi\tilde Q, \tilde H_\Psi] = [\tilde O_\Psi(r'_t), \tilde H_\Psi]$, which is the Heisenberg equation. For the choice $\tilde O_\Psi=\tilde H_\Psi$ the right-hand side vanishes: the Hamiltonian is conserved under its own flow.</p>
+<p>Since $\tilde Q(r'_t) = \exp(-\frac{2\pi i\tilde H_\Psi r'_t}{h\,c})$ is a function of $\tilde H_\Psi$, it <strong>commutes with $\tilde H_\Psi$</strong>, and so does $\tilde Q^{*}$. The last expression is therefore $[\tilde Q^{*}\tilde O_\Psi\tilde Q, \tilde H_\Psi] = [\tilde O_\Psi(r'_t), \tilde H_\Psi]$, which is the Heisenberg equation. For the choice $\tilde O_\Psi=\tilde H_\Psi$ the right-hand side vanishes: the Hamiltonian is conserved under its own flow.</p>
 <p>The two pictures are related by a $*$-unitary transformation and give the same physical predictions.</p>
 <h3 id="reversibility">Reversibility</h3>
 <p>The evolution generated by a Hermitian Hamiltonian is <strong>$*$-unitary</strong>: the element $\tilde Q(r'_t)$ satisfies $\tilde Q(r'_t)\tilde Q(r'_t)^{*} = e_t$. The evolution is therefore <strong>reversible</strong>: the state at any later time can be recovered from an earlier time by applying $\tilde Q(r'_t)^{*}$.</p>
@@ -497,7 +497,7 @@ $$</p>
 <td>Projective measurement</td>
 </tr>
 <tr>
-<td>$\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})(\cos(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})e_t + \sin(|\vec h_\Psi|\frac{r'_{t}}{\hbar\,c})\vec u_\Psi)$</td>
+<td>$\tilde Q(r'_t) = \exp(-i\theta_{\mathrm{evo}})(\cos(|\vec h_\Psi|\frac{2\pi r'_{t}}{h\,c})e_t + \sin(|\vec h_\Psi|\frac{2\pi r'_{t}}{h\,c})\vec u_\Psi)$</td>
 <td>$*$-Unitary evolution</td>
 </tr>
 <tr>

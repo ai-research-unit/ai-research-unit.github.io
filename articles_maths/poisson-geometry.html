@@ -182,11 +182,11 @@ $$</p>
 <p><strong>Proof.</strong> The anchor extends to a map of graded algebras $\mathrm{X}^\bullet(M) \to \Omega^\bullet(M)$ that sends a multivector field to the form obtained by lowering indices with $\omega$; it is an isomorphism of vector spaces. Pulling back the differential along the anchor gives $d_\pi \mapsto d$ and $d_\pi = [\pi,\cdot]$ corresponds to the de Rham differential.</p>
 <p><strong>Remark.</strong> For a general Poisson structure the anchor is not an isomorphism and the Poisson cohomology is genuinely larger than the de Rham cohomology of the leaves; it is the natural home of the invariants of a Poisson manifold, and it was introduced as the cohomology of the algebra of functions with the Hamiltonian differential. Its algebraic counterpart for an abstract Poisson algebra is the subject of <em>Poisson and Gerstenhaber Algebras</em>, and the deformation theory it controls — the passage from a Poisson structure to a noncommutative associative multiplication — is Kontsevich's theorem, stated below.</p>
 <h2 id="deformation-quantisation">Deformation Quantisation</h2>
-<p><strong>Definition.</strong> Let $(M, \pi)$ be a Poisson manifold. A <strong>star product</strong> is an associative $\mathbb{R}[[\hbar]]$-bilinear product on $C^\infty(M)[[\hbar]]$ of the form</p>
+<p><strong>Definition.</strong> Let $(M, \pi)$ be a Poisson manifold. A <strong>star product</strong> is an associative $\mathbb{R}[[h_{\mathrm{def}}]]$-bilinear product on $C^\infty(M)[[h_{\mathrm{def}}]]$ of the form</p>
 <p>$$
-f * g = fg + \hbar\,\{f,g\} + \sum_{r \geq 2}\hbar^{\,r}\, C_r(f, g),
+f * g = fg + h_{\mathrm{def}}\,\{f,g\} + \sum_{r \geq 2}h_{\mathrm{def}}^{\,r}\, C_r(f, g),
 $$</p>
-<p>where the $C_r$ are bidifferential operators and $\hbar$ is a formal parameter, with unit the constant function $1$. The deformation is <strong>trivial</strong> if it is isomorphic to the undeformed product by an $\mathbb{R}[[\hbar]]$-linear isomorphism of the form $\mathrm{id} + \hbar(\cdots)$.</p>
+<p>where the $C_r$ are bidifferential operators and $h_{\mathrm{def}}$ is a formal parameter, with unit the constant function $1$. The deformation is <strong>trivial</strong> if it is isomorphic to the undeformed product by an $\mathbb{R}[[h_{\mathrm{def}}]]$-linear isomorphism of the form $\mathrm{id} + h_{\mathrm{def}}(\cdots)$.</p>
 <p><strong>Theorem (Kontsevich).</strong> Every Poisson manifold admits a star product; more precisely, the equivalence classes of star products are in bijection with the equivalence classes of Poisson structures under the action of formal diffeomorphisms, so that the formality of the little discs operad identifies the deformation of the commutative product with the Poisson structure itself.</p>
 <p><strong>Proof sketch.</strong> The statement is the formality theorem for the operad of little discs: the chain complex of the operad is quasi-isomorphic to its homology, which is the operad governing Poisson structures, and the quasi-isomorphism can be chosen to intertwine the deformation complexes. The resulting star products are constructed by explicit integrals over configuration spaces, the weights being those of the formality morphism.</p>
 <p><strong>Remark.</strong> Deformation quantisation belongs to the interface of algebra, geometry and analysis: the star product is an algebraic object, its existence is a theorem of formal geometry, and the interpretation of the deformation as a Weyl-type calculus requires the analytic setting of Part III. The constant-coefficient case on a symplectic vector space is the Weyl–Moyal product of <em>Symplectic Forms and Poisson Brackets</em>, and the algebraic framework of the deformation is that of <em>Poisson and Gerstenhaber Algebras</em>; this article records the result for the manifold case and refers the analytic theory forward.</p>
@@ -272,7 +272,7 @@ $$</p>
 <td>Poisson differential and Poisson cohomology</td>
 </tr>
 <tr>
-<td>$f * g = fg + \hbar\{f,g\} + \cdots$</td>
+<td>$f * g = fg + h_{\mathrm{def}}\{f,g\} + \cdots$</td>
 <td>Star product; Kontsevich's deformation quantisation</td>
 </tr>
 </tbody>

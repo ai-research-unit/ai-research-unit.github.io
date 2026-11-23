@@ -88,7 +88,7 @@ $$</p>
 <p><strong>Scope.</strong> The coefficient is the constant mass wave number $k_m$ throughout, as in the parent's §<em>The Equation in Polar Variables</em>, and §<em>The Potential Term</em> states the generalisation to a Hermitian coefficient in one line. The operator case, in which the coefficient varies in space and time, is the standard Madelung problem of the parent's non-relativistic limit and is not re-derived here.</p>
 <p>The formalism is that of <em>The Lagrangian and Hamiltonian Mechanics</em>, and the action principle is that of <em>The Lagrangian and the Non-Quantum Limit: The Action Principle</em>; this article applies the principle to the Klein–Gordon equation in its polar form.</p>
 <h2 id="conventions">Conventions</h2>
-<p><strong>The conventions are restated here so that every sign below is checkable from this page alone.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the element-form companion: the quaternionic pairing gives $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ for complex coefficients, which is not real, and it is not used. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ with $r'_t=c\,t'$, the four-position is $\tilde R_\Phi=i r'_t e_t+\vec r$, and $k_m=mc/\hbar$. The action is a functional of the eight parameters over four-dimensional space, and the material time is $r'_t=c\,t'$ throughout, so every temporal derivative below is a derivative in a length. Every symbol is defined where it first appears, and §<em>Summary of Notation</em> collects the letters with their domains.</p>
+<p><strong>The conventions are restated here so that every sign below is checkable from this page alone.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with $e_t=1$ and $\vec e_\mu^{2}=-e_t$; $i$ is the central scalar imaginary; $\mathbb{B}_{C}$ is the centre; $\mathbb{B}_{\Psi}$ and $\mathbb{B}_{\Phi}$ are the Hermitian and anti-Hermitian fixed subspaces; $^{*}$ is Hermitian conjugation and $^{\natural}$ quaternion conjugation; $\mathrm{Sc}$ is the coefficient of $e_t$. The pairing is $\mathrm{Sc}(\cdot^{*}\cdot)$ throughout, as in the element-form companion: the quaternionic pairing gives $\mathrm{Sc}(A^{\natural}A)=\sum_\mu a_\mu^{2}$ for complex coefficients, which is not real, and it is not used. The d'Alembertian is $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial r'^{2}_{t}$ with $r'_t=c\,t'$, the four-position is $\tilde R_\Phi=i r'_t e_t+\vec r$, and $k_m=\frac{2\pi mc}{h}$. The action is a functional of the eight parameters over four-dimensional space, and the material time is $r'_t=c\,t'$ throughout, so every temporal derivative below is a derivative in a length. Every symbol is defined where it first appears, and §<em>Summary of Notation</em> collects the letters with their domains.</p>
 <h2 id="the-action-in-polar-variables">The Action in Polar Variables</h2>
 <p>The element-form action of the companion is</p>
 <p>$$
@@ -145,7 +145,7 @@ $$</p>
 <p><strong>The metric is the induced one.</strong> Writing $g_{ab}(p)=\mathrm{Sc}\big[(\partial\tilde\Xi/\partial p_{a})^{*}(\partial\tilde\Xi/\partial p_{b})\big]$ for the eight parameters $p_{a}$, the kinetic Lagrangian is $g_{ab}\sum_\mu\partial_\mu p_{a}\partial_\mu p_{b}$ with the metric signs of the action, and $g$ is the pull-back of the flat Hermitian metric of $\mathbb{C}^{4}$ by the word. Since $\mathrm{Sc}(A^{*}A)=\sum_\mu\lvert a_\mu\rvert^{2}$ is a sum of squares, $g$ is positive semi-definite in every direction, and it is positive definite wherever the word's Jacobian has full rank, which is everywhere on the $N$-regular set.</p>
 <p><strong>The check.</strong> Six random parameter sets with random axes, all four angles varying, were compared against the boxed formula: the two agree to a relative $4\times10^{-10}$, which is the truncation of the difference quotient. Each term was also isolated separately: with only the amplitude, only the rapidity, only the phase or only the rotor varying, the value is $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$ times the square of that rate, and the two cross terms appear only when both of their parameters vary.</p>
 <p><strong>Where the rapidity goes.</strong></p>
-<p>The Schrödinger companion computes a kinetic term that is linear in one velocity, $-\hbar \varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\tfrac{\hbar}{2}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$, and the factor $\cosh\theta_{\mathrm{rpd}}$ appears there multiplying the phase rate alone. Here the same factor multiplies every square, and the sinh multiplies two cross terms instead of one.</p>
+<p>The Schrödinger companion computes a kinetic term that is linear in one velocity, $-\frac{h}{2\pi} \varrho^{2}\cosh\theta_{\mathrm{rpd}}\,\dot\theta_{\mathrm{pha}}+\tfrac{h}{4\pi}\varrho^{2}\sinh\theta_{\mathrm{rpd}}\,(\vec\Omega\cdot\vec u_{\mathrm b})$, and the factor $\cosh\theta_{\mathrm{rpd}}$ appears there multiplying the phase rate alone. Here the same factor multiplies every square, and the sinh multiplies two cross terms instead of one.</p>
 <p>The difference is the order of the action. In a first-order action the kinetic term is $\mathrm{Sc}(i\tilde\Xi^{*}\partial\tilde\Xi)$, one bracket and not two, so the only thing the boost can do is weight that one bracket: the cosh is a coefficient of a velocity. In a second-order action the kinetic term is $\mathrm{Sc}((\partial\tilde\Xi)^{*}\partial\tilde\Xi)$, a product of two brackets, so the boost's Hermitian part can multiply either of them and the same cosh becomes a metric entry. The function of the rapidity is the same function and comes from the same place, the frame density $\varrho^{2}\cosh\theta_{\mathrm{rpd}}$; it is the power of the velocity that differs.</p>
 <p><strong>The potential term.</strong></p>
 <p>The potential term is $\mathrm{Sc}(\tilde\Xi^{*}\tilde M\tilde\Xi)$ with $\tilde M\in\mathbb{B}_{\Psi}$ Hermitian, and for $\tilde M=k_m^{2}e_t$ it is $k_m^{2}\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)=k_m^{2}\varrho^{2}\cosh\theta_{\mathrm{rpd}}$. For a general Hermitian coefficient the rotor drops out and the rapidity does not,</p>
@@ -168,7 +168,7 @@ $$</p>
 <p>$$
 S_{\mathrm{central}}=\int\mathrm{d}^{4}x\;\Bigl[(\partial_{r'_t}\varrho)^{2}-\lvert\nabla \varrho\rvert^{2}+\varrho^{2}\bigl((\partial_{r'_t}\theta_{\mathrm{pha}})^{2}-\lvert\nabla\theta_{\mathrm{pha}}\rvert^{2}\bigr)-k_m^{2}\varrho^{2}\Bigr],
 $$</p>
-<p>which is Madelung's relativistic action for the pair $(\varrho,S_{\tilde\Xi})$ with $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$. The signs are the Minkowski ones, so the amplitude equation of the next section carries the d'Alembertian and not the Laplacian.</p>
+<p>which is Madelung's relativistic action for the pair $(\varrho,S_{\tilde\Xi})$ with $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$. The signs are the Minkowski ones, so the amplitude equation of the next section carries the d'Alembertian and not the Laplacian.</p>
 <p><strong>The pairing. Inherited, and the substitution cannot disturb it.</strong> The parent pairs with $\mathrm{Sc}(\cdot^{*}\cdot)$ and carries $\mathrm{Sc}\bigl[(\partial\tilde\Xi)^{*}\partial\tilde\Xi-k_m^{2}\tilde\Xi^{*}\tilde\Xi\bigr]$. The chart writes the two real fields $\varrho$ and $\theta_{\mathrm{pha}}$, and the pair becomes a sum of two squares with the weights the metric fixes:</p>
 <p>$$
 \mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde\Xi\,(\mathcal A_\mu\mathcal A_\mu^{*})\bigr]=\varrho^{2}\bigl[(\partial_\mu\ln\varrho)^{2}+(\partial_\mu\theta_{\mathrm{pha}})^{2}\bigr],
@@ -186,15 +186,15 @@ $$</p>
 \qquad\Longleftrightarrow\qquad
 \vec\nabla_\Phi\cdot\bigl(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi}\bigr)-\partial_{r'_t}\bigl(\rho_{\mathrm{num}}\partial_{r'_t}S_{\tilde\Xi}\bigr)=0,
 $$</p>
-<p>which is the parent's transport equation. The two forms differ by the overall sign and by the factor $\hbar$, and neither changes the solution set.</p>
+<p>which is the parent's transport equation. The two forms differ by the overall sign and by the factor $\frac{h}{2\pi}$, and neither changes the solution set.</p>
 <p><strong>Varying the amplitude.</strong> $\partial S/\partial \varrho=0$ gives</p>
 <p>$$
 \Box_\Phi \varrho+\varrho\bigl((\partial\theta_{\mathrm{pha}})^{2}-k_m^{2}\bigr)=0
 \qquad\Longleftrightarrow\qquad
-\Bigl(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\Bigr)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\hbar^{2}\frac{\Box_\Phi \varrho}{\varrho},
+\Bigl(\frac{\partial S_{\tilde\Xi}}{\partial r'_t}\Bigr)^{2}-\lvert\nabla S_{\tilde\Xi}\rvert^{2}=m^{2}c^{2}-\frac{h^{2}}{4\pi^{2}}\frac{\Box_\Phi \varrho}{\varrho},
 $$</p>
-<p>which is the parent's amplitude equation, that is, the mass shell with the quantum potential $Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$ on the right. The equivalence uses $\hbar k_m=mc$ and multiplies by $\hbar^{2}$.</p>
-<p><strong>The check is an identity.</strong> Varying $\varrho$ in the central action and integrating by parts gives $2\varrho$ times the bracket of the first display up to the overall factor $-\hbar^{2}$, and varying $\theta_{\mathrm{pha}}$ gives $2\varrho^{2}$ times the bracket of the second, with no boundary term for fields that vanish at the boundary. The two brackets are the two displays, so the Euler–Lagrange equations of the polar action are the parent's pair by construction, and the only input is $\hbar k_m=mc$.</p>
+<p>which is the parent's amplitude equation, that is, the mass shell with the quantum potential $Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$ on the right. The equivalence uses $\frac{h}{2\pi} k_m=mc$ and multiplies by $\frac{h^{2}}{4\pi^{2}}$.</p>
+<p><strong>The check is an identity.</strong> Varying $\varrho$ in the central action and integrating by parts gives $2\varrho$ times the bracket of the first display up to the overall factor $-\frac{h^{2}}{4\pi^{2}}$, and varying $\theta_{\mathrm{pha}}$ gives $2\varrho^{2}$ times the bracket of the second, with no boundary term for fields that vanish at the boundary. The two brackets are the two displays, so the Euler–Lagrange equations of the polar action are the parent's pair by construction, and the only input is $\frac{h}{2\pi} k_m=mc$.</p>
 <p><strong>Nothing else.</strong> The variation of $\varepsilon$ is not an equation: the sign is a branch of the modulus and not a coordinate, as the parent's §<em>The half turn, and the modulus</em> states. The central field therefore has two equations for two functions, and they are the parent's.</p>
 <h3 id="the-general-element">The general element</h3>
 <p>For the eight parameters the statement is one line and it is exact.</p>
@@ -259,14 +259,14 @@ $$</p>
 <p>On a central field the phase current of the companion is</p>
 <p>$$
 j_{r'_t}=2\,\mathrm{Re}\,\mathrm{Sc}\big[i(\partial_{r'_t}\tilde\Xi)^{*}\tilde\Xi\big]
-=2\varrho^{2}\,\partial_{r'_t}\theta_{\mathrm{pha}}=\frac{2\varrho^{2}}{\hbar}\,\partial_{r'_t}S_{\tilde\Xi},
+=2\varrho^{2}\,\partial_{r'_t}\theta_{\mathrm{pha}}=\frac{2\pi 2\varrho^{2}}{h}\,\partial_{r'_t}S_{\tilde\Xi},
 \qquad
 j_\eta=-2\varrho^{2}\,\partial_{r_\eta}\theta_{\mathrm{pha}},
 $$</p>
-<p>because $\mathcal{A}_\mu=\partial_\mu\ln \varrho+i\partial_\mu\theta_{\mathrm{pha}}$, so that $i\mathcal{A}_\mu^{*}$ has scalar part $\partial_\mu\theta_{\mathrm{pha}}$. The charge density is therefore the density times the phase rate, and the phase rate is minus the energy over $\hbar c$,</p>
+<p>because $\mathcal{A}_\mu=\partial_\mu\ln \varrho+i\partial_\mu\theta_{\mathrm{pha}}$, so that $i\mathcal{A}_\mu^{*}$ has scalar part $\partial_\mu\theta_{\mathrm{pha}}$. The charge density is therefore the density times the phase rate, and the phase rate is minus the energy over $\frac{h}{2\pi} c$,</p>
 <p>$$
-j_{r'_t}=2\rho_{\mathrm{num}}\frac{\partial_{r'_t}S_{\tilde\Xi}}{\hbar}
-=-\frac{2\rho_{\mathrm{num}}E}{\hbar c}
+j_{r'_t}=2\rho_{\mathrm{num}}\frac{2\pi \partial_{r'_t}S_{\tilde\Xi}}{h}
+=-\frac{2\pi 2\rho_{\mathrm{num}}E}{h c}
 =-2k_m\frac{\rho_{\mathrm{num}}E}{mc^{2}}
 =-2k_m\,\rho_{\mathrm{chg}},
 \qquad
@@ -359,7 +359,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\theta_{\mathrm{pha}}\in(-\pi/2,\pi/2]$</td>
-<td>Phase angle; $S_{\tilde\Xi}=\hbar\theta_{\mathrm{pha}}$</td>
+<td>Phase angle; $S_{\tilde\Xi}=\frac{h}{2\pi}\theta_{\mathrm{pha}}$</td>
 </tr>
 <tr>
 <td>$\theta_{\mathrm{rpd}}\ge0$</td>
@@ -402,7 +402,7 @@ $$</p>
 <td>The eight parameters as coordinates</td>
 </tr>
 <tr>
-<td>$k_m=mc/\hbar$</td>
+<td>$k_m=\frac{2\pi mc}{h}$</td>
 <td>Mass wave number</td>
 </tr>
 <tr>
@@ -422,7 +422,7 @@ $$</p>
 <td>Energy density; four squares plus $\varrho^{2}V$</td>
 </tr>
 <tr>
-<td>$Q_{\mathrm{qnt}}=-\hbar^{2}\Box_\Phi \varrho/(2m\varrho)$</td>
+<td>$Q_{\mathrm{qnt}}=-\frac{h^{2}}{4\pi^{2}}\Box_\Phi \varrho/(2m\varrho)$</td>
 <td>Quantum potential of the amplitude equation</td>
 </tr>
 </tbody>

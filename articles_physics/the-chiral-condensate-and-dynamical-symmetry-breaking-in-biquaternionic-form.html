@@ -76,7 +76,7 @@
 <p>$$
 \tilde\nabla_\Phi\tilde{Ξ}_{R} = k_m\tilde{Ξ}_{L} , \qquad (\tilde\nabla_\Phi)^{\natural}\tilde{Ξ}_{L} = k_m\tilde{Ξ}_{R} .
 $$</p>
-<p>Here $k_m=mc/\hbar$ is the mass wave number, the inverse of the mass length.</p>
+<p>Here $k_m=\frac{2\pi mc}{h}$ is the mass wave number, the inverse of the mass length.</p>
 <p>The framework carries two first-order writings of one mass coupling, and this article keeps them apart from the first line. The <strong>gradient equation</strong> is that pair on the algebra: every derivative acts by left multiplication, the two members are conjugate, and no chirality term is one of its terms, because no right multiplication is one. The <strong>two-sided equation</strong> is $(\mathcal{D}-k_m)\tilde{Ξ}=0$, in which every derivative sits between a left multiplier and a right multiplier, and its letter is $\mathcal{D}$ and not a pair glyph, because it is one operator on one element and not a pair; the basis operator that carries it is the frame's fifth basis operator $\xi:\ Q\mapsto-iQ\vec e_z$, and that basis operator multiplies on the <strong>right</strong>, which is where the chirality is: the side, not the basis operator, is the notion. The condensate, its bilinears and the axial rotation are read from the two-sided equation; the gradient equation supplies the mass shell. The section <em>The Pair, the Two-Sided Equation and the Chirality</em> states both, and every later section says which one it uses.</p>
 <p>This article asks what the framework supplies for the condensate. The answer is a short chain of algebraic facts and one large missing physical input. The categories are the corpus's: <strong>established</strong> (and recomputed here), <strong>transcribed</strong> from the standard literature, and <strong>gap</strong> (left visible).</p>
 <ul>
@@ -137,7 +137,7 @@ $$</p>
 Q\ \xrightarrow{\ z\ }\ i\,e_zQ\,\vec e_y\ \xrightarrow{\ y\ }\ \vec e_xQ\ \xrightarrow{\ x\ }\ -i\,Q\,\vec e_y\ \xrightarrow{\ t\ }\ -Q\,\vec e_z ,
 $$</p>
 <p>the four factors of $i$ multiplying to $i^{4}=+1$. The composite is $-R_{\vec e_z}$, and $i$ times it is the corpus's fifth basis operator of the frame, $\xi=-iR_{\vec e_z}$, which is the fifth basis operator. That the composite is a pure right multiplication is not an accident of the order: the left slots multiply to $-\vec e_t$, a central scalar, and a central scalar has no side, so only the right multiplications are left standing. This is recorded once, here, because it is the one place where the four generators are used together.</p>
-<p><strong>The frame, the coordinates and the invertibles.</strong> Every derivative in a two-sided display is with respect to $x_\mu=(r'_t,r_x,r_y,r_z)$ and the constants are carried; the $i r'_t$ normalization $Q_t=i q'_t$ is named only where the gradient is written. In these coordinates $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so the contraction that reproduces $\Box_\Phi$ carries the tuple $(-1,+1,+1,+1)$ in the material coordinates, while the generators carry the same vector with the opposite overall sign, $\varepsilon_\mu$; the minus between them is taken once, in $\mathcal{D}^{2}$, and no display below carries a second sign vector. The plain form, read as the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the gap-equation section writes every mass through $k_m=m\,c/\hbar$.</p>
+<p><strong>The frame, the coordinates and the invertibles.</strong> Every derivative in a two-sided display is with respect to $x_\mu=(r'_t,r_x,r_y,r_z)$ and the constants are carried; the $i r'_t$ normalization $Q_t=i q'_t$ is named only where the gradient is written. In these coordinates $\partial^2/\partial R_t^2=-\partial^2/\partial {r'_t}^2$, so the contraction that reproduces $\Box_\Phi$ carries the tuple $(-1,+1,+1,+1)$ in the material coordinates, while the generators carry the same vector with the opposite overall sign, $\varepsilon_\mu$; the minus between them is taken once, in $\mathcal{D}^{2}$, and no display below carries a second sign vector. The plain form, read as the reduction formula $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$, is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; the gap-equation section writes every mass through $k_m=\frac{2\pi m\,c}{h}$.</p>
 <p>The framework results used here are those of the companion articles:</p>
 <ul>
 <li>Companion article <em>Chiral Fermions in the Biquaternion Framework</em>, for the chiral classification and the two parts named by the subscript.</li>
@@ -279,7 +279,7 @@ $$</p>
 <p>$$
 \boxed{\;m = 4N_c\,G\,m\,I_1(m)\;}
 \qquad
-I_1(m) = \int_0^{\Lambda}\frac{d^3p}{(2\pi\hbar)^3}\frac{1}{\sqrt{\vec p^2+m^2}} .
+I_1(m) = \int_0^{\Lambda}\frac{d^3p}{h^{3}}\frac{1}{\sqrt{\vec p^2+m^2}} .
 $$</p>
 <p>The equation always has the <strong>chiral</strong> solution $m=0$. Dividing by $m$, a nontrivial solution requires $1 = 4N_cG\,I_1(m)$, and since $I_1$ decreases with $m$ the threshold is set at $m=0$:</p>
 <p>$$
@@ -343,7 +343,7 @@ $$</p>
 <p>The dynamical coefficient is therefore a common mass for the two values: the off-diagonal coupling has rotated into the mass-shell condition of each half. This is the framework's positive statement that a condensate-generated $m$ is a physical mass and not a bookkeeping device, and it uses no more than the factorisation of the d'Alembertian on which the linear mass pair rests.</p>
 <p><strong>The effective potential.</strong> The mean-field energy of the condensate is the standard one. Writing $\sigma=-2G\langle\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ}\rangle$ for the order parameter, which equals $m$ at the minimum, the effective potential at zero temperature is</p>
 <p>$$
-V(\sigma) \;=\; \frac{\sigma^{2}}{4G} \;-\; 2N_c\int^{\Lambda}\frac{d^3p}{(2\pi\hbar)^3}\,\sqrt{\vec p^{2}+\sigma^{2}} ,
+V(\sigma) \;=\; \frac{\sigma^{2}}{4G} \;-\; 2N_c\int^{\Lambda}\frac{d^3p}{h^{3}}\,\sqrt{\vec p^{2}+\sigma^{2}} ,
 $$</p>
 <p>where the normalization of the first term is tied to the $(\tilde{Ξ}^*iR_{\mathrm{axf},\vec e_x}\tilde{Ξ})^{2}$ coupling convention used above. Its stationarity condition is</p>
 <p>$$
@@ -542,7 +542,7 @@ $$</p>
 <td>Four-fermion coupling and critical coupling</td>
 </tr>
 <tr>
-<td>$I_1(m)=\int^\Lambda\frac{d^3p}{(2\pi\hbar)^3}(\vec p^2+m^2)^{-1/2}$</td>
+<td>$I_1(m)=\int^\Lambda\frac{d^3p}{h^{3}}(\vec p^2+m^2)^{-1/2}$</td>
 <td>Gap-equation integral</td>
 </tr>
 <tr>
