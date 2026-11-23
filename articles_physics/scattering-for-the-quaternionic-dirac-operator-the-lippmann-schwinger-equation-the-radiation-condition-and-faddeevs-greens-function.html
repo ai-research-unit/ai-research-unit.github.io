@@ -109,13 +109,14 @@ N^2 = \mu_r\epsilon_r, \qquad N = n + i\kappa ,
 $$</p>
 <p>where $n$ is the usual refractive index and $\kappa$ the <strong>extinction coefficient</strong> describing the attenuation of the field in the medium. This is the quantity the tomography of the Introduction reconstructs, and it is a scalar field of the medium rather than an ingredient of the algebra.</p>
 <h3 id="the-quaternionic-reformulation">The quaternionic reformulation</h3>
-<p>With the normalised fields $\vec E\mapsto\sqrt{\epsilon}\,\vec E$ and $\vec H\mapsto\sqrt{\mu}\,\vec H$, the time-harmonic system becomes the pair</p>
+<p>With the fields in the integer-dimension normalisation $\vec{\mathcal E}=\vec E$ and $\vec{\mathcal H}=Z\vec H$, the time-harmonic system becomes the pair</p>
 <p>$$
-D_\epsilon \vec E = -2\pi i\nu_{\Phi}\vec H - \frac{\rho}{\sqrt{\epsilon}}, \qquad
-D_{\imath} \vec H = 2\pi i\nu_{\Phi}\vec E + \sqrt{\mu}\,\vec j, \qquad
-D_\alpha = D_3 + \operatorname{grad}\log\sqrt{\alpha},
+D_\epsilon \vec{\mathcal E} = -2\pi i\nu_{\Phi}\vec{\mathcal H} - \frac{\rho}{\epsilon}, \qquad
+D_{\mu} \vec{\mathcal H} = 2\pi i\nu_{\Phi}\vec{\mathcal E} + Z\,\vec j, \qquad
+D_\alpha = D_3 + \tfrac12\operatorname{grad}\ln\alpha,
 $$</p>
-<p>with $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}=\omega/c$ the angular wavenumber of the medium, so that $\nu_{\Phi}=\omega/(2\pi c)$. The operator $D_\alpha$ here carries the same symbol as the corpus's $D_\alpha = D_3+R_\alpha$ but is <strong>not the same operator</strong>: the coefficient is the gradient coefficient $\operatorname{grad}\log\sqrt{\alpha}$, which <em>Electromagnetism in Media — The Local Complex Structure at Work</em> writes $D\pm L_{\vec\alpha_f}$, a <strong>fixed vector field</strong> multiplying on the left, rather than a constant element of the algebra. The pair above is the Kravchenko reformulation of Maxwell's equations in inhomogeneous media that the corpus's electromagnetic articles already record; it enters this article only as the reason the scattering problem below is a Maxwell problem.</p>
+<p>the physical fields being recovered as $\vec E=\vec{\mathcal E}$ and $\vec H=\vec{\mathcal H}/Z$. Both halves of the pair are in volts per square metre, and the source terms are too: $\rho/\epsilon$ and $Z\vec j$. The source's own pair, with the square root of the permittivity under the electric field and the square root of the permeability under the magnetic field, is this one scaled by a constant.</p>
+<p>with $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}=\omega/c$ the angular wavenumber of the medium, so that $\nu_{\Phi}=\omega/(2\pi c)$. The operator $D_\alpha$ here carries the same symbol as the corpus's $D_\alpha = D_3+R_\alpha$ but is <strong>not the same operator</strong>: the coefficient is the gradient coefficient $\tfrac12\operatorname{grad}\ln\alpha$, which <em>Electromagnetism in Media — The Local Complex Structure at Work</em> writes $D\pm L_{\vec\alpha_f}$, a <strong>fixed vector field</strong> multiplying on the left, rather than a constant element of the algebra. The pair above is the Kravchenko reformulation of Maxwell's equations in inhomogeneous media that the corpus's electromagnetic articles already record; it enters this article only as the reason the scattering problem below is a Maxwell problem.</p>
 <h3 id="the-force-free-case">The force-free case</h3>
 <p>The one place in the source where the operator appears with a variable coefficient and a physical name is the <strong>force-free magnetic field</strong> of magnetohydrodynamics, characterised by</p>
 <p>$$
