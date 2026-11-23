@@ -12,7 +12,7 @@ A rotation preserves it and a boost does not: a boost along the axis sends $\vec
 
 The subspace $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$ is of real dimension four, it is carried onto itself by the whole group, and the direction that was added is the central generator $ie_t$ and not the identity. The identity $e_t$ lies in the other half. So the closure is not the triple with a label attached: it is the triple with one more generator, and the group needs that generator to close.
 
-The norm is $N(i\eta+\vec v)=\lvert\vec v\rvert^{2}-\eta^{2}$, a real form with the signs $(3,1)$, positive definite on the carrier and negative definite on the added line. The square of the vector part is $B^{2}=\lvert\vec v\rvert^{2}$, non-negative, so the spectrally degenerate locus of the sector is the added line alone. One invariant measures the mass and the other measures the motion, both are real numbers, and no other carrier has that.
+The norm is $N(iq'_t+\vec v)=\lvert\vec v\rvert^{2}-{q'_t}^{2}$, a real form with the signs $(3,1)$, positive definite on the carrier and negative definite on the added line. The square of the vector part is $B^{2}=\lvert\vec v\rvert^{2}$, non-negative, so the spectrally degenerate locus of the sector is the added line alone. One invariant measures the mass and the other measures the motion, both are real numbers, and no other carrier has that.
 
 Every nonzero element of the triple has $N\neq0$ and $B^{2}\neq0$, so the triple without its origin is contained in $\Sigma_{11}$, the region the corpus names mass in motion. The centre is confined to $\Sigma_{10}$ and the plane to $\Sigma_{01}$; the triple is the third and the last of the three, and it completes the sequence in which the two predicates are repaired one at a time.
 
@@ -31,8 +31,8 @@ Boundaries. The subspace, the closure and the weights are *Introduction to the S
 | mathematical content | source article |
 | --- | --- |
 | the vector part, the adjoint action, the closure, the generator and the three weights | [Introduction to the Spin-One Anti-Hermitian Subspace](../articles_maths/the-spin-one-anti-hermitian-subspace.html) |
-| the norm $\lvert\vec v\rvert^{2}-\eta^{2}$, the signs $(3,1)$, the orthogonality and the null cone | [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html) |
-| the square $B^{2}=\lvert\vec v\rvert^{2}$, the spectrum $i(\eta\pm\lvert\vec v\rvert)$ and the degenerate line | [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html) |
+| the norm $\lvert\vec v\rvert^{2}-{q'_t}^{2}$, the signs $(3,1)$, the orthogonality and the null cone | [The Spin-One Anti-Hermitian Subspace and N Norm Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-n-norm-regularity.html) |
+| the square $B^{2}=\lvert\vec v\rvert^{2}$, the spectrum $i(q'_t\pm\lvert\vec v\rvert)$ and the degenerate line | [The Spin-One Anti-Hermitian Subspace and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-spectral-regularity.html) |
 | the four sectors inside the closure and the reach of the carrier | [The Spin-One Anti-Hermitian Subspace and the Sectors of N and Spectral Regularity](../articles_maths/the-spin-one-anti-hermitian-subspace-and-the-sectors-of-n-and-spectral-regularity.html) |
 | the list of three carriers, the criterion of the weight string and the four closure rules | [From the Spin to the Carriers and the Closures](../articles_maths/the-carriers-the-representation-the-spin-and-the-closure.html) |
 | the bracket, the Lie algebra $\mathfrak{u}(2)=\mathfrak{u}(1)\oplus\mathfrak{su}(2)$ and the abelian ideal | [Lie Algebras of Sesqualgebras](../articles_maths/lie-algebras-of-sesqualgebras.html) |
@@ -55,9 +55,9 @@ The full turn. $\exp(2\pi C(\vec u))=\mathrm{id}$ and $-\mathrm{id}$ acts as the
 
 The closure. The material sector $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of real dimension $4$, invariant under the whole group and a Lie algebra under the bracket.
 
-The two invariants. $N(i\eta+\vec v)=\lvert\vec v\rvert^{2}-\eta^{2}$ and $B^{2}(i\eta+\vec v)=\lvert\vec v\rvert^{2}$; the first has the signs $(3,1)$ and the second is non-negative.
+The two invariants. $N(iq'_t+\vec v)=\lvert\vec v\rvert^{2}-{q'_t}^{2}$ and $B^{2}(iq'_t+\vec v)=\lvert\vec v\rvert^{2}$; the first has the signs $(3,1)$ and the second is non-negative.
 
-The spectrum. $\operatorname{spec}(i\eta+\vec v)=\{i(\eta+\lvert\vec v\rvert),\,i(\eta-\lvert\vec v\rvert)\}$, purely imaginary, degenerate exactly on the line $\mathbb{R}(ie_t)$.
+The spectrum. $\operatorname{spec}(iq'_t+\vec v)=\{i(q'_t+\lvert\vec v\rvert),\,i(q'_t-\lvert\vec v\rvert)\}$, purely imaginary, degenerate exactly on the line $\mathbb{R}(ie_t)$.
 
 The reach. $\mathfrak{k}\setminus\{0\}\subseteq\Sigma_{11}$; the closure meets all four sectors.
 
@@ -300,20 +300,20 @@ The reach is different for the two. The distinction is not only dimensional. The
 
 ## The Two Numbers: the Norm and the Spectrum
 
-The norm on the closure. For real $\eta$ and real $\vec v$ the norm is
+The norm on the closure. For real $q'_t$ and real $\vec v$ the norm is
 
 $$
-N(i\eta+\vec v)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=(i\eta)^{2}+\lvert\vec v\rvert^{2}=\lvert\vec v\rvert^{2}-\eta^{2},
+N(iq'_t+\vec v)=Q_t^{2}+Q_x^{2}+Q_y^{2}+Q_z^{2}=(iq'_t)^{2}+\lvert\vec v\rvert^{2}=\lvert\vec v\rvert^{2}-{q'_t}^{2},
 $$
 
-a real number, residual $0$ over one hundred random sector elements. **On the triple it is $\lvert\vec v\rvert^{2}$, positive definite, and its least value on the unit sphere is $1$ exactly.** On the added line it is $-\eta^{2}$, negative definite, and on the imaginary triple $i\mathfrak{k}$ it is $-\lvert\vec v\rvert^{2}$, also negative definite, to $0$ over one hundred draws.
+a real number, residual $0$ over one hundred random sector elements. **On the triple it is $\lvert\vec v\rvert^{2}$, positive definite, and its least value on the unit sphere is $1$ exactly.** On the added line it is $-{q'_t}^{2}$, negative definite, and on the imaginary triple $i\mathfrak{k}$ it is $-\lvert\vec v\rvert^{2}$, also negative definite, to $0$ over one hundred draws.
 
 The two summands are orthogonal. The polar form couples them to nothing,
 
 $$
-B(i\eta,\vec v)=0,
+B(iq'_t,\vec v)=0,
 \qquad
-N(i\eta+\vec v)=N(i\eta)+N(\vec v),
+N(iq'_t+\vec v)=N(iq'_t)+N(\vec v),
 $$
 
 so the norm of a sector element is the sum of the norms of its two pieces and the two pieces never interfere.
@@ -323,7 +323,7 @@ The signs, and where the indefiniteness comes from. The form has the signs $(3,1
 The square of the vector part. The other invariant is
 
 $$
-B^{2}(i\eta+\vec v)=Q_x^{2}+Q_y^{2}+Q_z^{2}=\lvert\vec v\rvert^{2},
+B^{2}(iq'_t+\vec v)=Q_x^{2}+Q_y^{2}+Q_z^{2}=\lvert\vec v\rvert^{2},
 $$
 
 a non-negative real number, residual $0$ over one hundred random elements. It does not see the time slot at all. So the spectrally degenerate locus of the closure is the set where the vector part vanishes, which is the added line:
@@ -337,7 +337,7 @@ of real dimension one.
 The null cone. The norm vanishes where the two lengths are equal,
 
 $$
-\mathcal N\cap\mathbb{B}_\Phi=\{i\eta+\vec v:\lvert\vec v\rvert^{2}=\eta^{2}\},
+\mathcal N\cap\mathbb{B}_\Phi=\{iq'_t+\vec v:\lvert\vec v\rvert^{2}={q'_t}^{2}\},
 $$
 
 a cone of real dimension three with two nappes, each nappe meeting each sphere of the closure in a sphere of dimension two. The cone meets the triple at the origin and the line at the origin, and it separates the region of positive norm from the region of negative norm.
@@ -345,23 +345,23 @@ a cone of real dimension three with two nappes, each nappe meeting each sphere o
 The spectrum. The two eigenvalues of a sector element are
 
 $$
-\operatorname{spec}(i\eta+\vec v)=\bigl\{i(\eta+\lvert\vec v\rvert),\,i(\eta-\lvert\vec v\rvert)\bigr\},
+\operatorname{spec}(iq'_t+\vec v)=\bigl\{i(q'_t+\lvert\vec v\rvert),\,i(q'_t-\lvert\vec v\rvert)\bigr\},
 $$
 
-verified to $1.8\times10^{-15}$ over one hundred random elements. Both lie on the imaginary axis and are symmetric about $i\eta$. On the carrier, with $\eta=0$, the spectrum is $\{\pm i\lvert\vec v\rvert\}$ and the two eigenvalues are distinct for every nonzero vector, so the carrier is spectrally regular away from the origin.
+verified to $1.8\times10^{-15}$ over one hundred random elements. Both lie on the imaginary axis and are symmetric about $iq'_t$. On the carrier, with $q'_t=0$, the spectrum is $\{\pm i\lvert\vec v\rvert\}$ and the two eigenvalues are distinct for every nonzero vector, so the carrier is spectrally regular away from the origin.
 
 Why the spectrum is imaginary. The closure is defined by $X^{*}=-X$, and the two eigenvalues are $Q_t\pm iB$ with $Q_t=iq'_t$ and $B=\lvert\vec v\rvert$. The scalar part supplies the $iq'_t$ and the vector part supplies a real $B$, so both corrections are imaginary. The reality of $\vec v$ is what makes $B$ real; on a general complex element $B$ need not be real and the eigenvalues need not be imaginary.
 
-A sector element is on the cone when $\lvert\vec v\rvert=\lvert\eta\rvert$ and on the degenerate line when $\vec v=0$; both hold only at the origin. So the cone and the degenerate line are a cone and a line crossing in one point, and neither contains the other. The plane of the spin-half case had the opposite relation: the whole plane was on the cone and the degenerate locus was one point of it.
+A sector element is on the cone when $\lvert\vec v\rvert=\lvertq'_t\rvert$ and on the degenerate line when $\vec v=0$; both hold only at the origin. So the cone and the degenerate line are a cone and a line crossing in one point, and neither contains the other. The plane of the spin-half case had the opposite relation: the whole plane was on the cone and the degenerate locus was one point of it.
 
 The two numbers side by side. The residuals of the identities of this section, on one hundred elements each:
 
 | identity | residual |
 | --- | --- |
-| $N(i\eta+\vec v)=\lvert\vec v\rvert^{2}-\eta^{2}$ | $0$ |
-| $B^{2}(i\eta+\vec v)=\lvert\vec v\rvert^{2}$ | $0$ |
-| $B(i\eta,\vec v)=0$ | $0$ |
-| $\operatorname{spec}(i\eta+\vec v)=i(\eta\pm\lvert\vec v\rvert)$ | $1.8\times10^{-15}$ |
+| $N(iq'_t+\vec v)=\lvert\vec v\rvert^{2}-{q'_t}^{2}$ | $0$ |
+| $B^{2}(iq'_t+\vec v)=\lvert\vec v\rvert^{2}$ | $0$ |
+| $B(iq'_t,\vec v)=0$ | $0$ |
+| $\operatorname{spec}(iq'_t+\vec v)=i(q'_t\pm\lvert\vec v\rvert)$ | $1.8\times10^{-15}$ |
 | $N(2\pi i\vec\nu_{\Phi})=-\lvert\vec v\rvert^{2}$ | $0$ |
 | least $N$ on the unit sphere of $\mathfrak{k}$ | $1$, exactly |
 
@@ -370,18 +370,18 @@ The two numbers side by side. The residuals of the identities of this section, o
 One sign and its cause. The interval of the closure is indefinite because one term carries $i$,
 
 $$
-N(i\eta+\vec v)=-\eta^{2}+\lvert\vec v\rvert^{2},
+N(iq'_t+\vec v)=-{q'_t}^{2}+\lvert\vec v\rvert^{2},
 $$
 
-and the $i$ is what makes the time term negative while the three space terms are positive. With a real $\eta$ in place of $i\eta$ the same space would carry a Euclidean four-coordinate geometry and no cone at all.
+and the $i$ is what makes the time term negative while the three space terms are positive. With a real $q'_t$ in place of $iq'_t$ the same space would carry a Euclidean four-coordinate geometry and no cone at all.
 
-**The convention, stated as a convention.** The placement of the central imaginary on the time slot is a convention of the corpus and not a theorem of the algebra. The other half of the algebra makes the opposite placement, $\mathbb{B}_\Psi=\mathbb{R}e_t\oplus i\mathfrak{k}$ with elements $\eta+i\vec v$, and its norm is
+**The convention, stated as a convention.** The placement of the central imaginary on the time slot is a convention of the corpus and not a theorem of the algebra. The other half of the algebra makes the opposite placement, $\mathbb{B}_\Psi=\mathbb{R}e_t\oplus i\mathfrak{k}$ with elements $q'_t+i\vec v$, and its norm is
 
 $$
-N(\eta+i\vec v)=\eta^{2}-\lvert\vec v\rvert^{2},
+N(q'_t+i\vec v)={q'_t}^{2}-\lvert\vec v\rvert^{2},
 $$
 
-of the signs $(1,3)$, with a real spectrum $\eta\pm\lvert\vec v\rvert$ instead of an imaginary one. Both halves are equally indefinite and both carry a cone; what differs is which triple is real, and the carrier is the real one. The corpus chooses the anti-Hermitian half because the triple is real there, and it records the choice.
+of the signs $(1,3)$, with a real spectrum $q'_t\pm\lvert\vec v\rvert$ instead of an imaginary one. Both halves are equally indefinite and both carry a cone; what differs is which triple is real, and the carrier is the real one. The corpus chooses the anti-Hermitian half because the triple is real there, and it records the choice.
 
 What the convention does not change. The dimensions, the bracket, the weights, the invariance of the sector under the group and the two-to-one cover are the same on both halves. What the convention changes is the sign of the norm, and with it the causal reading. So the entry states the interval as a consequence of the placement rather than as a consequence of the algebra.
 
@@ -421,7 +421,7 @@ The origin. All three carriers contain the origin, and the origin is in $\Sigma_
 
 5. The rest frame is the spectrally degenerate locus. The degenerate locus of the sector is the line $\mathbb{R}(ie_t)$, and a momentum at rest is $i\,mc\,e_t$, which is on that line. So the eigenvalues of the momentum coalesce exactly when the particle is at rest, and the spectral degeneracy of the material sector is the rest frame. Conversely the region $\Sigma_{11}$, where the vector part does not vanish, is motion: this is the precise content of the corpus's name "mass in motion" for that region, and it is a statement about the spectrum and not a metaphor.
 
-6. Mass is the norm and motion is the square of the vector part. The two invariants of the sector are independent: $N=\lvert\vec v\rvert^{2}-\eta^{2}$ reads the interval and $B^{2}=\lvert\vec v\rvert^{2}$ reads the motion. For a momentum $p=i\,p'_te_t+\vec p$ the first is $-m^{2}c^{2}$ and the second is $\lvert\vec p\rvert^{2}$, so the pair $(N,B^{2})$ is the pair (mass, momentum) in invariant form. No other carrier has two independent real invariants, because on the centre and on the plane one of the two vanishes identically. The four-region classification is therefore a classification of momenta, and it is available only here.
+6. Mass is the norm and motion is the square of the vector part. The two invariants of the sector are independent: $N=\lvert\vec v\rvert^{2}-{q'_t}^{2}$ reads the interval and $B^{2}=\lvert\vec v\rvert^{2}$ reads the motion. For a momentum $p=i\,p'_te_t+\vec p$ the first is $-m^{2}c^{2}$ and the second is $\lvert\vec p\rvert^{2}$, so the pair $(N,B^{2})$ is the pair (mass, momentum) in invariant form. No other carrier has two independent real invariants, because on the centre and on the plane one of the two vanishes identically. The four-region classification is therefore a classification of momenta, and it is available only here.
 
 7. The light cone needs the added direction, so masslessness is not in the carrier. A nonzero element of the triple has $N=\lvert\vec v\rvert^{2}>0$, so no point of the carrier is null and the carrier never touches the cone away from the origin. A null momentum needs both slots, $p=i\,E e_t+E\hat k$, with the two lengths equal. So the carrier of the spin cannot hold a massless state on its own, and the closure is what makes one available. The physics is the standard one: the momentum of a photon has a time component, and its spatial part alone is spacelike.
 
@@ -441,7 +441,7 @@ The origin. All three carriers contain the origin, and the origin is in $\Sigma_
 
 No dynamics. The entry writes the carrier, the closure and the two invariants, and it writes no field equation. The Proca equation, the Lorenz condition and the mass shell are cited as the objects that use the carrier, and the derivation is *The Proca Equation: Massive Spin 1 in Biquaternionic Form*. Nothing here is derived from a Lagrangian and no solution is written.
 
-The placement of the central imaginary is a convention. The signs $(3,1)$ are a consequence of writing the time slot as $i\eta$ and not a consequence of the algebra. The other half of the algebra gives $(1,3)$ with the same construction, and the entry states the choice rather than deriving it. A reader who wants a Euclidean four-space can have one by moving the $i$, and the carrier of the spin is unaffected.
+The placement of the central imaginary is a convention. The signs $(3,1)$ are a consequence of writing the time slot as $iq'_t$ and not a consequence of the algebra. The other half of the algebra gives $(1,3)$ with the same construction, and the entry states the choice rather than deriving it. A reader who wants a Euclidean four-space can have one by moving the $i$, and the carrier of the spin is unaffected.
 
 The identification of the triple with the three spin states is an interpretation. The algebra supplies a three-dimensional carrier with the weight string $(1,0,-1)$ and a group acting by the adjoint representation. That the three weights are the three polarizations of a vector particle is a physical reading, supported by the corpus's Proca and Maxwell articles, and it is not a theorem of the algebra.
 
@@ -471,9 +471,9 @@ The full turn. $\exp(2\pi C(\vec u))=\mathrm{id}$ and $-e_t$ acts as the identit
 
 The closure. $\mathbb{B}_\Phi=\mathbb{R}(ie_t)\oplus\mathfrak{k}$, of real dimension four, invariant under the whole group to $8.9\times10^{-16}$, a Lie algebra $\mathfrak{u}(1)\oplus\mathfrak{su}(2)$, and $1\oplus0$ under the rotations. The added direction is the central generator $ie_t$ and not the identity.
 
-The two invariants. $N=\lvert\vec v\rvert^{2}-\eta^{2}$, of the signs $(3,1)$, positive definite on the triple and negative definite on the line, the two summands orthogonal; $B^{2}=\lvert\vec v\rvert^{2}$, non-negative, with $\{B^{2}=0\}=\mathbb{R}(ie_t)$ on the sector.
+The two invariants. $N=\lvert\vec v\rvert^{2}-{q'_t}^{2}$, of the signs $(3,1)$, positive definite on the triple and negative definite on the line, the two summands orthogonal; $B^{2}=\lvert\vec v\rvert^{2}$, non-negative, with $\{B^{2}=0\}=\mathbb{R}(ie_t)$ on the sector.
 
-The spectrum. $\{i(\eta+\lvert\vec v\rvert),i(\eta-\lvert\vec v\rvert)\}$ to $1.8\times10^{-15}$, purely imaginary, degenerate exactly on the added line. The cone is $\lvert\vec v\rvert=\lvert\eta\rvert$ and meets the degenerate line only at the origin.
+The spectrum. $\{i(q'_t+\lvert\vec v\rvert),i(q'_t-\lvert\vec v\rvert)\}$ to $1.8\times10^{-15}$, purely imaginary, degenerate exactly on the added line. The cone is $\lvert\vec v\rvert=\lvertq'_t\rvert$ and meets the degenerate line only at the origin.
 
 The reach. $\mathfrak{k}\setminus\{0\}\subseteq\Sigma_{11}$; the sector meets all four regions. The triple is the only carrier confined to one region, and the sector is the only object that spans the classification.
 

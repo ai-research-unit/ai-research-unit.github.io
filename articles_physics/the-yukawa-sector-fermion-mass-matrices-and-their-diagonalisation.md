@@ -214,14 +214,14 @@ with $s_{ij}=\sin\theta_{ij}$, $c_{ij}=\cos\theta_{ij}$. The three angles are $\
 The hierarchy of the angles, and what the Wolfenstein form adds. The angles are not of comparable size: $\theta_{12}$ is thirteen degrees, $\theta_{23}$ is two, $\theta_{13}$ is a fifth of one. The Wolfenstein form makes the hierarchy explicit by expanding in $\digamma_{\mathrm{ckm},12}=s_{12}=0.225$:
 
 $$
-V=\begin{pmatrix}1-\digamma_{\mathrm{ckm},12}^{2}/2 & \digamma_{\mathrm{ckm},12} & A\digamma_{\mathrm{ckm},12}^{3}\left(\bar\rho-i\bar\eta\right)\\
+V=\begin{pmatrix}1-\digamma_{\mathrm{ckm},12}^{2}/2 & \digamma_{\mathrm{ckm},12} & A\digamma_{\mathrm{ckm},12}^{3}\left(\bar\rho-i\digamma_{\mathrm{wlf}}\right)\\
 -\digamma_{\mathrm{ckm},12} & 1-\digamma_{\mathrm{ckm},12}^{2}/2 & A\digamma_{\mathrm{ckm},12}^{2}\\
-A\digamma_{\mathrm{ckm},12}^{3}\left(1-\bar\rho-i\bar\eta\right) & -A\digamma_{\mathrm{ckm},12}^{2} & 1\end{pmatrix}+O\left(\digamma_{\mathrm{ckm},12}^{4}\right),
+A\digamma_{\mathrm{ckm},12}^{3}\left(1-\bar\rho-i\digamma_{\mathrm{wlf}}\right) & -A\digamma_{\mathrm{ckm},12}^{2} & 1\end{pmatrix}+O\left(\digamma_{\mathrm{ckm},12}^{4}\right),
 $$
 
-with $A=0.826$ and $\bar\rho=0.159$, $\bar\eta=0.352$. The pair is the barred one that the data are quoted in, and the bar is not decoration: $\bar\rho=\rho(1-\digamma_{\mathrm{ckm},12}^{2}/2)$ to this order, so writing the unbarred numbers in the barred slots shifts both by $2.5$ per cent. The powers of $\digamma_{\mathrm{ckm},12}$ are the statement that the mixing between neighbouring generations is large and between the first and third is tiny.
+with $A=0.826$ and $\bar\rho=0.159$, $\digamma_{\mathrm{wlf}}=0.352$. The pair is the barred one that the data are quoted in, and the bar is not decoration: $\bar\rho=\rho(1-\digamma_{\mathrm{ckm},12}^{2}/2)$ to this order, so writing the unbarred numbers in the barred slots shifts both by $2.5$ per cent. The powers of $\digamma_{\mathrm{ckm},12}$ are the statement that the mixing between neighbouring generations is large and between the first and third is tiny.
 
-**Why the pattern is unexplained.** Nothing in the model fixes $\digamma_{\mathrm{ckm},12}\simeq0.22$ or $A\simeq0.83$. They are not two *of* the thirteen, and the distinction is the section's own subject: the four mixing parameters are $\theta_{12}$, $\theta_{23}$, $\theta_{13}$ and $\delta$, and $\digamma_{\mathrm{ckm},12}=s_{12}$, $A=s_{23}/s_{12}^{2}$, $\bar\rho$ and $\bar\eta$ are one rewriting of those four — a change of variables, not a change of count. So "the model does not fix $\digamma_{\mathrm{ckm},12}$" and "the model does not fix $\theta_{12}$" are the same statement twice, and the sector's puzzle is that four measured numbers have no principle behind them — not that eight do, which is what adding the two sets together would give.
+**Why the pattern is unexplained.** Nothing in the model fixes $\digamma_{\mathrm{ckm},12}\simeq0.22$ or $A\simeq0.83$. They are not two *of* the thirteen, and the distinction is the section's own subject: the four mixing parameters are $\theta_{12}$, $\theta_{23}$, $\theta_{13}$ and $\delta$, and $\digamma_{\mathrm{ckm},12}=s_{12}$, $A=s_{23}/s_{12}^{2}$, $\bar\rho$ and $\digamma_{\mathrm{wlf}}$ are one rewriting of those four — a change of variables, not a change of count. So "the model does not fix $\digamma_{\mathrm{ckm},12}$" and "the model does not fix $\theta_{12}$" are the same statement twice, and the sector's puzzle is that four measured numbers have no principle behind them — not that eight do, which is what adding the two sets together would give.
 
 ## Where CP Violation Lives
 
@@ -241,7 +241,7 @@ $$
 J=s_{12}s_{23}s_{13}c_{12}c_{23}c_{13}^{2}\sin\delta=3.117\times10^{-5} ,
 $$
 
-and the definition gives the same number to four digits. The Wolfenstein form gives $J=A^{2}\digamma_{\mathrm{ckm},12}^{6}\bar\eta\left(1-\digamma_{\mathrm{ckm},12}^{2}/2\right)=3.04\times10^{-5}$, the difference of $2.6$ per cent from the exact value being the $O(\digamma_{\mathrm{ckm},12}^{4})$ terms dropped.
+and the definition gives the same number to four digits. The Wolfenstein form gives $J=A^{2}\digamma_{\mathrm{ckm},12}^{6}\digamma_{\mathrm{wlf}}\left(1-\digamma_{\mathrm{ckm},12}^{2}/2\right)=3.04\times10^{-5}$, the difference of $2.6$ per cent from the exact value being the $O(\digamma_{\mathrm{ckm},12}^{4})$ terms dropped.
 
 Why three numbers near $3\times10^{-5}$ circulate, and which is which. The three are $3.117\times10^{-5}$, which is what the four parameters as quoted above produce; $3.04\times10^{-5}$, which is the Wolfenstein truncation of the same four; and $3.08\times10^{-5}$, which the global fit quotes as its direct determination of the invariant, and which [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html) uses as $J_{\mathrm{CKM}}$. The spread between the first and the third is $1.2$ per cent, the size of the fit's own uncertainty on $J$: it is a computation against a measurement, not two computations disagreeing. This article uses $3.12\times10^{-5}$ everywhere, because it follows from the four parameters the article states and a reader can reproduce it; the ratio in the lepton comparison below moves by $1$ per cent if $3.08$ is used instead, which is the least of the reasons that ratio is quoted to an order of magnitude.
 
@@ -253,9 +253,9 @@ $$
 
 with each product over the three masses of one charge. Each product is antisymmetric, so a permutation of one triple flips it; the two together are invariant under a simultaneous reordering, which is why the identity is unambiguous once both triples are ordered the same way, and they are taken in increasing order here. Both sides were computed on random complex mass matrices and agree to machine precision. Read one way it is a formula for the invariant in terms of the matrices alone, with no reference to the mixing angles; read the other way it says a non-zero $J$ needs non-degenerate masses of *both* charges, since either product vanishing makes the left side vanish too. That is what makes CP violation a property of the mass matrices and not of a parametrisation of $V$: the commutator vanishes if and only if $H_u$ and $H_d$ can be diagonalised together, and the denominator carries the degeneracies.
 
-Why the smallness is not a fine-tuning. $J$ carries $\digamma_{\mathrm{ckm},12}^{6}$, so the smallness of the mixing angles produces it: $J\sim0.225^{6}\approx1.3\times10^{-4}$ times the factors $A^{2}\eta\approx0.24$. **CP violation in the quark sector is small because the mixing is hierarchical, not because a phase was tuned to zero.**
+Why the smallness is not a fine-tuning. $J$ carries $\digamma_{\mathrm{ckm},12}^{6}$, so the smallness of the mixing angles produces it: $J\sim0.225^{6}\approx1.3\times10^{-4}$ times the factors $A^{2}\digamma_{\mathrm{wlf}}\approx0.24$. **CP violation in the quark sector is small because the mixing is hierarchical, not because a phase was tuned to zero.**
 
-The unitarity triangle. The relation $V_{ud}V_{ub}^{*}+V_{cd}V_{cb}^{*}+V_{td}V_{tb}^{*}=0$ is a triangle in the complex plane; in the rescaled coordinates of the Wolfenstein form its apex is $(\bar\rho,\bar\eta)$, and the angles computed from the pair above are
+The unitarity triangle. The relation $V_{ud}V_{ub}^{*}+V_{cd}V_{cb}^{*}+V_{td}V_{tb}^{*}=0$ is a triangle in the complex plane; in the rescaled coordinates of the Wolfenstein form its apex is $(\bar\rho,\digamma_{\mathrm{wlf}})$, and the angles computed from the pair above are
 
 $$
 \alpha=91.6^{\circ} ,
@@ -267,7 +267,7 @@ $$
 \alpha+\beta+\gamma=180^{\circ} .
 $$
 
-Two things about those three numbers. The third, $\gamma$, coincides numerically with the CP phase $\delta$ of the standard parametrisation, and that is neither a coincidence nor a typo: at leading order in $\digamma_{\mathrm{ckm},12}$ both equal $\arctan\left(\bar\eta/\bar\rho\right)$, and they separate only at $O(\digamma_{\mathrm{ckm},12}^{2})$. And the rounded inputs differ between articles: *The CKM Matrix and CP Violation in Biquaternionic Form* takes $\bar\eta=0.348$ and gets $22.5^{\circ}$, $65.4^{\circ}$ and $92^{\circ}$, while *Meson Mixing, Rare Decays and the Unitarity Triangle* takes $0.3523$ and gets the three above. The second set is used here because that article also reproduces $\sin2\beta=0.7128$ from its closure test, and the $0.3^{\circ}$ between the two sets is a rounding of the input rather than a disagreement about the triangle.
+Two things about those three numbers. The third, $\gamma$, coincides numerically with the CP phase $\delta$ of the standard parametrisation, and that is neither a coincidence nor a typo: at leading order in $\digamma_{\mathrm{ckm},12}$ both equal $\arctan\left(\digamma_{\mathrm{wlf}}/\bar\rho\right)$, and they separate only at $O(\digamma_{\mathrm{ckm},12}^{2})$. And the rounded inputs differ between articles: *The CKM Matrix and CP Violation in Biquaternionic Form* takes $\digamma_{\mathrm{wlf}}=0.348$ and gets $22.5^{\circ}$, $65.4^{\circ}$ and $92^{\circ}$, while *Meson Mixing, Rare Decays and the Unitarity Triangle* takes $0.3523$ and gets the three above. The second set is used here because that article also reproduces $\sin2\beta=0.7128$ from its closure test, and the $0.3^{\circ}$ between the two sets is a rounding of the input rather than a disagreement about the triangle.
 
 The area of the triangle is $\lvert J\rvert/2$, which is the geometric statement of the previous paragraph: the invariant, not the phase, is twice the area, and a degenerate triangle is no CP violation.
 
@@ -453,7 +453,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 | $s_{ij}$, $c_{ij}$ | $\sin\theta_{ij}$, $\cos\theta_{ij}$ |
 | $\theta_{ij}$, $\delta$ | The three mixing angles and the CP phase |
 | $J$ | The Jarlskog invariant, $3.12\times10^{-5}$ in the quark sector |
-| $A$, $\digamma_{\mathrm{ckm},12}$, $\bar\rho$, $\bar\eta$ | Wolfenstein parameters, $0.826$, $0.225$, $0.159$, $0.352$ |
+| $A$, $\digamma_{\mathrm{ckm},12}$, $\bar\rho$, $\digamma_{\mathrm{wlf}}$ | Wolfenstein parameters, $0.826$, $0.225$, $0.159$, $0.352$ |
 | $v$ | $246.22$ GeV, the vacuum expectation value |
 | $y_f$ | $\sqrt2m_f/v$, the Yukawa coupling |
 | $M_H$ | $125.09$ GeV, the Higgs mass |
@@ -481,7 +481,7 @@ The framework supplies the home of the matrices and not their entries. Its fermi
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The Jarlskog invariant, the six triangles and the running of the mixing parameters, at length.
 - [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html). The angles, the mass-squared differences and the neutrino spectrum quoted in §*Neutrinos*.
 - [The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form](the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html). The second CP-odd parameter, $\bar\theta$, which this article's $J$ does not constrain.
-- [Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html). The $\bar\eta$ and the triangle angles of §*Where CP Violation Lives*, and the closure test that decides which rounding of them to use.
+- [Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html). The $\digamma_{\mathrm{wlf}}$ and the triangle angles of §*Where CP Violation Lives*, and the closure test that decides which rounding of them to use.
 - [The Weinberg Angle and the Three Neutral States: $\tfrac38$ Conditional on $g_R=g_L$](the-weinberg-angle-the-neutral-current-and-the-z-coupling.html). The scheme-dependence lesson that §*What the Higgs Coupling Makes Testable* applies to the Higgs width.
 
 Of the companions this article names, a dedicated article on the flavour puzzle — the pattern of the masses and of the mixings — is not yet in the corpus. [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html) is not it: that article is about the scalar mass and the quadratic sensitivity, which is a different question from the fermion spectrum. The CKM matrix and CP violation is in the corpus and appears in the list above; the neutrino numbers of §*Neutrinos* are the PMNS article's, quoted here so that the sector stands as one piece.

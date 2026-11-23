@@ -47,23 +47,23 @@ which is what fixes the sources, not the fields. Two remarks separate this syste
 Eliminating one field in the usual way gives the **Helmholtz reduction**. Applying the curl to the second equation of $(1)$ and using the first, and then using $\mathrm{rot}\,\mathrm{rot}=\mathrm{grad}\,\mathrm{div}-\Delta_\Phi$, the two complex amplitudes satisfy the homogeneous Helmholtz equations wherever the sources vanish,
 
 $$
-\Delta_\Phi\vec E+\eta\vec E=0,
+\Delta_\Phi\vec E+\digamma_{\mathrm{hlm}}\vec E=0,
 \qquad
-\Delta_\Phi\vec H+\eta\vec H=0,
+\Delta_\Phi\vec H+\digamma_{\mathrm{hlm}}\vec H=0,
 \qquad
-\eta:=i\omega\mu\sigma_*+\omega^2\mu\epsilon ,
+\digamma_{\mathrm{hlm}}:=i\omega\mu\sigma_*+\omega^2\mu\epsilon ,
 \tag{3}
 $$
 
-with the same constant for both. The parameter $\eta$ is the square of the medium wavenumber:
+with the same constant for both. The parameter $\digamma_{\mathrm{hlm}}$ is the square of the medium wavenumber:
 
 $$
-\alpha^2=\eta,
+\alpha^2=\digamma_{\mathrm{hlm}},
 \qquad
 \operatorname{Im}\alpha\ge0 ,
 $$
 
-and it is this $\alpha$ — not $\omega\sqrt{\epsilon\mu}$ — that the function theory of the article runs on when conduction is present. In the lossless case $\sigma_*=0$ the two agree, $\eta=\omega^2\mu\epsilon$,
+and it is this $\alpha$ — not $\omega\sqrt{\epsilon\mu}$ — that the function theory of the article runs on when conduction is present. In the lossless case $\sigma_*=0$ the two agree, $\digamma_{\mathrm{hlm}}=\omega^2\mu\epsilon$,
 
 $$
 2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}=\frac{\omega}{c},
@@ -130,7 +130,7 @@ $$
 which is the physical time-harmonic Maxwell operator $M$ up to the ordering of the two rows, with the solenoidal pairs as its natural domain. The difference between the two is exactly what the source means by a "better" object. The domain of the physical operator is a subspace cut out by the divergence conditions, so that the system can only be posed on pairs satisfying them and the operator cannot be iterated without re-imposing them; the domain of $N$ is all pairs of complex-quaternionic functions, with no side condition at all. And the algebra improves with the domain:
 
 $$
-\boxed{\;N N^{\dagger}=-(\Delta_\Phi+\eta)\,I_2\;},
+\boxed{\;N N^{\dagger}=-(\Delta_\Phi+\digamma_{\mathrm{hlm}})\,I_2\;},
 \qquad
 N^{\dagger}=\begin{pmatrix} D_3 & i\omega\mu \\[2pt] \sigma & D_3 \end{pmatrix},
 \tag{8}
@@ -142,7 +142,7 @@ The relation between the two operators is not merely a containment. Written in m
 
 ## The Diagonalisation and the Two Conjugate Function Theories
 
-The scalar square $(8)$ already says that a pair annihilated by $N$ is metaharmonic, that is, a solution of $(\Delta_\Phi+\eta)I_2$. The sharper statement is that $N$ is, by a similarity, a **direct sum of two first-order operators**, and that the two are conjugate. With $\alpha$ a square root of $\eta$ and
+The scalar square $(8)$ already says that a pair annihilated by $N$ is metaharmonic, that is, a solution of $(\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2$. The sharper statement is that $N$ is, by a similarity, a **direct sum of two first-order operators**, and that the two are conjugate. With $\alpha$ a square root of $\digamma_{\mathrm{hlm}}$ and
 
 $$
 b:=\frac{i\omega\mu}{\alpha},
@@ -221,10 +221,10 @@ which are precisely the two circularly polarised combinations $Ξ,\tilde{Ξ}$ of
 There is a second structural theorem, which the source states for the Helmholtz null-set. Let
 
 $$
-\mathcal{R}_\imath:=\ker\bigl((\Delta_\Phi+\eta)I_2\bigr)
+\mathcal{R}_\imath:=\ker\bigl((\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2\bigr)
 $$
 
-be the space of pair-valued metaharmonic functions, that is, of pairs whose two components are solutions of the Helmholtz equation with the same $\eta$. The factorisation $(8)$ shows at once that $\ker N$ sits inside it, since $(\Delta_\Phi+\eta)f=-N N^{\dagger}f$, but the sharper statement is that $\mathcal{R}_\imath$ is the **direct sum of two rotated copies of $\ker N$**. The two rotations are the two orientations of the conjugating matrix, and the two summands are the images of two complementary projections
+be the space of pair-valued metaharmonic functions, that is, of pairs whose two components are solutions of the Helmholtz equation with the same $\digamma_{\mathrm{hlm}}$. The factorisation $(8)$ shows at once that $\ker N$ sits inside it, since $(\Delta_\Phi+\digamma_{\mathrm{hlm}})f=-N N^{\dagger}f$, but the sharper statement is that $\mathcal{R}_\imath$ is the **direct sum of two rotated copies of $\ker N$**. The two rotations are the two orientations of the conjugating matrix, and the two summands are the images of two complementary projections
 
 $$
 Q_x+Q_y=I,
@@ -369,7 +369,7 @@ Four boundaries are worth stating, because the reformulation invites more than i
 
 The first is a matter of fidelity. The source's Section 3 realises the similarity $(11)$ through two pairs of matrices $A_i,B_i$, and states the projections $(15)$ and the decomposition $(16)$ in that form. The present article uses the book's equivalent arrangement — the conjugating matrix $C$ of $(11)$, whose entries follow from the diagonalisation itself — and the identity $(11)$ and the factorisations $(8)$ and $(13)$ have been recomputed symbol by symbol, one Fourier mode at a time, for the lossy and the lossless case alike. The source's own matrices are not reproduced, because the available copy of the paper is a scan whose text layer is degraded in the formulas; a reader who needs the exact matrices should consult the paper rather than this article.
 
-The second is that the "better algebraic and analytic properties" of the general operator are, in the source, a qualitative claim. What is verifiable, and what is used here, is the precise part of it: $N$ is defined on all pairs where the physical operator is defined only on solenoidal pairs, and the square of $N$ is **scalar**, $-(\Delta_\Phi+\eta)I_2$, while the square of the vector operator is not. The rest of the claim — the explicitness of the kernels, the behaviour under the projections $(15)$ — is used, not re-proved, and belongs to the source.
+The second is that the "better algebraic and analytic properties" of the general operator are, in the source, a qualitative claim. What is verifiable, and what is used here, is the precise part of it: $N$ is defined on all pairs where the physical operator is defined only on solenoidal pairs, and the square of $N$ is **scalar**, $-(\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2$, while the square of the vector operator is not. The rest of the claim — the explicitness of the kernels, the behaviour under the projections $(15)$ — is used, not re-proved, and belongs to the source.
 
 The third is the scope of $(14)$. The correspondence $\ker N\cong\ker(D_3-\alpha)\times\ker(D_3+\alpha)$ is stated for the sourceless system, on a domain on which the decomposition $(16)$ exists; with sources the two equations $(12)$ acquire the right-hand sides of $(7)$ and the correspondence becomes an inhomogeneous one. The decomposition $(16)$ itself is a statement about the **constant-coefficient** theory: a variable coefficient breaks the simple similarity, and it is exactly the failure recorded in the articles on inhomogeneous media, where the recoverable shift is the gradient coefficient $\mathrm{grad}\,\xi_{\mathrm{scl}}/\xi_{\mathrm{scl}}$ rather than a constant and the operator does not factor as a pair of conjugates of the same type.
 
@@ -377,7 +377,7 @@ The fourth is physical. Nothing here is a new prediction. The article records a 
 
 ## Summary
 
-The ordinary time-harmonic Maxwell system in a homogeneous isotropic medium, possibly lossy, is the system $(1)$, with the conduction absorbed into the complex conductivity $\sigma=\sigma_*-i\omega\epsilon$ and the Helmholtz reduction carried by the single complex parameter $\eta=i\omega\mu\sigma_*+\omega^2\mu\epsilon$, whose square root $\alpha$ is the medium wavenumber. The quaternionic Maxwell operator is the $2\times2$ matrix $N$ of $(6)$; it acts on all pairs of complex-quaternionic functions, its restriction to solenoidal pairs is the physical Maxwell operator, and its square is the scalar Helmholtz operator, $NN^{\dagger}=-(\Delta_\Phi+\eta)I_2$. That scalar square is what the physical operator lacks and what makes the function theory available.
+The ordinary time-harmonic Maxwell system in a homogeneous isotropic medium, possibly lossy, is the system $(1)$, with the conduction absorbed into the complex conductivity $\sigma=\sigma_*-i\omega\epsilon$ and the Helmholtz reduction carried by the single complex parameter $\digamma_{\mathrm{hlm}}=i\omega\mu\sigma_*+\omega^2\mu\epsilon$, whose square root $\alpha$ is the medium wavenumber. The quaternionic Maxwell operator is the $2\times2$ matrix $N$ of $(6)$; it acts on all pairs of complex-quaternionic functions, its restriction to solenoidal pairs is the physical Maxwell operator, and its square is the scalar Helmholtz operator, $NN^{\dagger}=-(\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2$. That scalar square is what the physical operator lacks and what makes the function theory available.
 
 The diagonalisation $(11)$ by the matrix $C$, with the coherence factor $b=i\omega\mu/\alpha$, turns $N$ into the direct sum of the two mutually conjugate Cauchy–Riemann operators $D_3\mp\alpha$, whose squares are the scalar Helmholtz operators of $(13)$. Consequently the time-harmonic fields are in one-to-one correspondence with pairs of mutually conjugate hyperholomorphic functions, $\ker N\cong\ker(D_3-\alpha)\times\ker(D_3+\alpha)$; in the lossless normalised variables the two combinations are the circularly polarised $\tilde E_{\Phi}\pm i\tilde H$ of the chiral reduction at $\beta=0$; and the Helmholtz null-set itself is the direct sum of the two rotated copies of $\ker N$ of $(16)$, which is the time-harmonic analogue of the splitting of the wave operator into its two first-order factors.
 
@@ -393,15 +393,15 @@ The kernel of the theory is the outgoing Helmholtz kernel $\mathrm{Sd}_\alpha$ o
 | $\epsilon,\mu$ | Permittivity and permeability; possibly complex |
 | $\sigma_*$ | Real ohmic conductivity of the medium |
 | $\sigma=\sigma_*-i\omega\epsilon$ | Complex conductivity carried by the first Maxwell equation |
-| $\eta=i\omega\mu\sigma_*+\omega^2\mu\epsilon$ | Helmholtz parameter of the reduction |
-| $\alpha^2=\eta$, $\operatorname{Im}\alpha\ge0$ | Medium wavenumber; $\alpha=2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}$ when $\sigma_*=0$ |
+| $\digamma_{\mathrm{hlm}}=i\omega\mu\sigma_*+\omega^2\mu\epsilon$ | Helmholtz parameter of the reduction |
+| $\alpha^2=\digamma_{\mathrm{hlm}}$, $\operatorname{Im}\alpha\ge0$ | Medium wavenumber; $\alpha=2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}$ when $\sigma_*=0$ |
 | $2\pi\nu_{\Phi}=\omega\sqrt{\epsilon\mu}=\omega/c$ | Lossless medium wavenumber |
-| $N$ | Quaternionic Maxwell operator $(6)$; $NN^{\dagger}=-(\Delta_\Phi+\eta)I_2$ |
+| $N$ | Quaternionic Maxwell operator $(6)$; $NN^{\dagger}=-(\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2$ |
 | $M$ | Physical time-harmonic Maxwell operator, defined on solenoidal pairs |
 | $b=i\omega\mu/\alpha$ | Coherence factor of the diagonalisation; $b=iZ$ when $\sigma_*=0$ |
 | $C$ | Diagonalising matrix $(11)$; $CNC^{-1}=\mathrm{diag}(D_3-\alpha,D_3+\alpha)$ |
 | $Ξ,\tilde{Ξ}$ | Diagonalising combinations $\vec E\pm b\vec H$; conjugate Cauchy–Riemann solutions |
-| $\mathcal{R}_\imath$ | Metaharmonic pairs $\ker((\Delta_\Phi+\eta)I_2)$ |
+| $\mathcal{R}_\imath$ | Metaharmonic pairs $\ker((\Delta_\Phi+\digamma_{\mathrm{hlm}})I_2)$ |
 | $Q_i=\tfrac{1}{2\alpha}A_iNB_i$ | The two complementary projections, $Q_x+Q_y=I$ |
 | $\mathrm{Sd}_\alpha=-\exp(i\theta_{\mathrm{shf}})e^{-\kappa_{\mathrm{dmp}}\lvert x\rvert}/(4\pi\lvert x\rvert)$ | Outgoing Helmholtz fundamental solution |
 | $\mathcal{V}_{\mathrm{vek},\pm\alpha}=-(D_3\mp\alpha)\mathrm{Sd}_\alpha$ | Fundamental solution of $D_3\pm\alpha$ |

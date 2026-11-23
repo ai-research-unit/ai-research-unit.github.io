@@ -164,7 +164,7 @@ $$
 The singular values are the diagonal entries, so the **Lyapunov spectrum** is
 
 $$
-\boxed{\;\varkappa_{\mathrm{lyp},1} = 0, \qquad \varkappa_{\mathrm{lyp},2} = \eta_3 = -\Gamma\;}.
+\boxed{\;\varkappa_{\mathrm{lyp},1} = 0, \qquad \varkappa_{\mathrm{lyp},2} = \varkappa_{\mathrm{lyp},3} = -\Gamma\;}.
 $$
 
 The zero exponent is the pointer axis, along which the state is unchanged; the two negative exponents are the transverse directions, in which distinctions decay at rate $\Gamma$. The sum of the exponents gives the volume contraction,
@@ -274,7 +274,7 @@ the factor $\tfrac{1}{2}$ reflecting the quadratic character of $\langle\cdot\ra
 | $\delta\tilde{Ϛ}_{\Psi} = \tfrac{i}{2}\delta\vec s_{\Psi}$ | Tangent vector (scalar-free element of $\mathbb{B}_{\Psi}$) |
 | $\langle\delta\tilde{Ϛ}_{\Psi}\rangle_{\natural} = -\tfrac{1}{4}|\delta\vec s_{\Psi}|^2 e_t$ | Biquaternion norm of a tangent vector (negative definite) |
 | $\varkappa_{\mathrm{lyp}}(v) = \lim_t \tfrac{1}{2r'_t}\log|\langle\delta\tilde{Ϛ}_{\Psi}(r'_t)\rangle_{\natural}/\langle\delta\tilde{Ϛ}_{\Psi}(0)\rangle_{\natural}|$ | Lyapunov exponent in the biquaternion norm |
-| $\varkappa_{\mathrm{lyp},1}\ge\varkappa_{\mathrm{lyp},2}\ge\eta_3$ | Lyapunov spectrum |
+| $\varkappa_{\mathrm{lyp},1}\ge\varkappa_{\mathrm{lyp},2}\ge\varkappa_{\mathrm{lyp},3}$ | Lyapunov spectrum |
 | $\tilde u(r'_t)$, $\tilde u\tilde u^{*} = e_t$ | Matrix-$*$-unitary rotor (reversible flow) |
 | $\tilde{Ϛ}_{\Psi}\mapsto\tilde u\tilde{Ϛ}_{\Psi}\tilde u^{*}$ | Rotor conjugation; isometry, $\varkappa_{\mathrm{lyp},\imath}=0$ |
 | $Ξ_{r'_{t}}$, $L(r'_t)$, $\vec t(r'_t)$ | Channel semigroup and its affine Bloch action |

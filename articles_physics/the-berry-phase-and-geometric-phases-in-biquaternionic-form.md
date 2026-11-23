@@ -82,11 +82,11 @@ which is exactly the **Bloch sphere** of pure states of $\mathbb{B}_{\Psi}$. Thi
 
 The instantaneous eigenstate of $\tilde H_\Psi = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{\mathrm{id},1,2}(\vec u_R)$. It is natural to try to build the Berry connection out of it. One cannot, and the reason is worth stating as a lemma, because it is the first place the framework's two notions of "state" separate.
 
-**Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi_{\mathrm{id}}(\eta)$ be a smooth family of idempotents with $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 1$. Then
+**Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi_{\mathrm{id}}(\digamma_{\mathrm{prm}})$ be a smooth family of idempotents with $2\,\mathrm{Sc}(\tilde\Pi_{\mathrm{id}}) = 1$. Then
 
 $$
 2\,\mathrm{Sc}\!\left(\tilde\Pi_{\mathrm{id}}\,\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}}\right) = 0
-\qquad\text{for every parameter } \eta_{\imath} .
+\qquad\text{for every parameter value } \digamma_{\mathrm{prm},\imath} .
 $$
 
 **Proof.** Since $\tilde\Pi_{\mathrm{id}}^2 = \tilde\Pi_{\mathrm{id}}$, differentiating gives $\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}} = (\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}})\tilde\Pi_{\mathrm{id}} + \tilde\Pi_{\mathrm{id}}(\partial/\partial R_{\imath}\tilde\Pi_{\mathrm{id}})$. Taking the scalar part and using cyclicity of $\mathrm{Sc}$ on $\mathbb{B}$,
