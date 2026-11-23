@@ -119,12 +119,12 @@ $$</p>
 <p>the Hopf–Lax formula. The formula is exact, it is a minimum over the initial data, and it is the closest a fluid comes to a superposition principle: the minimum replaces the sum, and the envelope replaces the interference.</p>
 <p><strong>So the inviscid favourable case gives a nonlinear equation, a finite-time catastrophe and a variational formula.</strong> None of the three is a linear wave equation, and the reason is that the characteristic speed is the unknown itself.</p>
 <h2 id="the-viscous-case-linearises-to-a-diffusion-equation">The Viscous Case Linearises to a Diffusion Equation</h2>
-<p>Adding viscosity gives Burgers' equation, and Burgers' equation is exactly linearisable. With $\nu_{\mathrm{kin}}>0$,</p>
+<p>Adding viscosity gives Burgers' equation, and Burgers' equation is exactly linearisable. With $\digamma_{\mathrm{kin}}>0$,</p>
 <p>$$
-\partial_{t'}u+u\,\partial_xu=\nu_{\mathrm{kin}}\,\partial_{xx}u ,
+\partial_{t'}u+u\,\partial_xu=\digamma_{\mathrm{kin}}\,\partial_{xx}u ,
 $$</p>
-<p>and the Hopf–Cole transformation $u=-2\nu_{\mathrm{kin}}\partial_x\ln\psi$ carries it into $\partial_{t'}\psi=\nu_{\mathrm{kin}}\partial_{xx}\psi$. The check is a differentiation and it is exact, as <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a> verifies on the heat kernel, where $u=x/t'$.</p>
-<p>The linearisation smooths the catastrophe instead of removing the nonlinearity's origin. The shock of the inviscid case becomes a layer of width of order $\nu_{\mathrm{kin}}/u$, and the layer's profile is the heat kernel's logarithm. So the viscous case has a linear equivalent and the equivalent is parabolic: its frequency is imaginary, its kernel is positive, and its solutions do not oscillate.</p>
+<p>and the Hopf–Cole transformation $u=-2\digamma_{\mathrm{kin}}\partial_x\ln\psi$ carries it into $\partial_{t'}\psi=\digamma_{\mathrm{kin}}\partial_{xx}\psi$. The check is a differentiation and it is exact, as <a href="viscosity-and-the-rayleigh-dissipation-function.html">Viscosity and the Rayleigh Dissipation Function</a> verifies on the heat kernel, where $u=x/t'$.</p>
+<p>The linearisation smooths the catastrophe instead of removing the nonlinearity's origin. The shock of the inviscid case becomes a layer of width of order $\digamma_{\mathrm{kin}}/u$, and the layer's profile is the heat kernel's logarithm. So the viscous case has a linear equivalent and the equivalent is parabolic: its frequency is imaginary, its kernel is positive, and its solutions do not oscillate.</p>
 <p><strong>The point of the example is that linearity and waving come apart.</strong> A reader who equates "linearisable" with "has a wave equivalent" will take Burgers' equation as a counterexample to the section. It is not: it is the case that shows the section's thesis must be stated about <em>wave</em> equations, which is how it is stated.</p>
 <h2 id="the-dispersive-case-is-nonlinear-and-integrable">The Dispersive Case Is Nonlinear and Integrable</h2>
 <p>Adding dispersion instead of viscosity gives the Korteweg–de Vries equation. In the weakly nonlinear long-wave limit of a shallow layer of depth $H_0$, the surface elevation obeys</p>
@@ -151,7 +151,7 @@ P=-4\partial_x^{3}+6u\,\partial_x+3\,\partial_xu,
 \partial_{t'}L=[P,L],
 $$</p>
 <p>and the pair's first operator is a Schrödinger operator whose potential is the fluid. The inverse scattering transform solves the initial-value problem by evolving the scattering data linearly and reconstructing the potential, so the <em>method</em> is linear and the <em>equation</em> is not.</p>
-<p>The auxiliary problem is where a linear Schrödinger equation appears, and its unknown is not the fluid. The scattering problem is $-\varphi_{xx}+u\varphi=\lambda\varphi$: the fluid $u$ is the potential, and $\varphi$ is an auxiliary wave function that has no fluid reading. So the linear equation of the pair is linear in the wrong variable, and a reader who takes it for the fluid's wave equivalent has taken the potential for the solution. The error is the same one the previous articles name in another place: reading a term of an equation for the unknown.</p>
+<p>The auxiliary problem is where a linear Schrödinger equation appears, and its unknown is not the fluid. The scattering problem is $-\omicron_{\mathrm{aux},xx}+u\omicron_{\mathrm{aux}}=\lambda\omicron_{\mathrm{aux}}$: the fluid $u$ is the potential, and $\omicron_{\mathrm{aux}}$ is an auxiliary wave function that has no fluid reading. So the linear equation of the pair is linear in the wrong variable, and a reader who takes it for the fluid's wave equivalent has taken the potential for the solution. The error is the same one the previous articles name in another place: reading a term of an equation for the unknown.</p>
 <h2 id="what-one-dimension-teaches">What One Dimension Teaches</h2>
 <p><strong>The best case gives no linear wave equation, and the reason is structural.</strong> In one dimension the vorticity obstruction is vacuous and the count closes, so the reverse map is defined on the whole barotropic class. Its output is nonlinear whenever the pressure is non-constant, and the three approximate equations of this article are what the nonlinearity does in three regimes: a catastrophe, a smoothed catastrophe and a dispersive balance.</p>
 <p>The two linear objects that do appear are of two other kinds. The heat equation of the viscous case is parabolic: it is the wave equation continued to imaginary time, and its solutions do not oscillate. The scattering problem of the integrable case is linear in an auxiliary function and has the fluid as its potential. Neither is the fluid's wave equivalent.</p>
@@ -213,7 +213,7 @@ $$</p>
 <td>Hopf–Cole potential</td>
 </tr>
 <tr>
-<td>$\nu_{\mathrm{kin}}$</td>
+<td>$\digamma_{\mathrm{kin}}$</td>
 <td>Kinematic viscosity</td>
 </tr>
 <tr>
@@ -237,7 +237,7 @@ $$</p>
 <td>Lax pair of the KdV equation</td>
 </tr>
 <tr>
-<td>$\varphi$</td>
+<td>$\omicron_{\mathrm{aux}}$</td>
 <td>Auxiliary wave function of the scattering problem</td>
 </tr>
 <tr>

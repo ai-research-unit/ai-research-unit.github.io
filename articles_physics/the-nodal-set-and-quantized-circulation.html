@@ -166,7 +166,7 @@ $$</p>
 <p>The sign of the charge is the orientation of the loop and nothing else. Reversing the loop reverses the sign of $\kappa$ and leaves $\lvert n\rvert$ unchanged, as the third row of the table shows. The physical content is the pair $(\lvert n\rvert,\text{direction})$, and a convention that fixes the direction of the loop fixes the sign. This article adopts no convention beyond the right-handed one of the frame, and no statement below depends on it.</p>
 <h2 id="the-node-under-the-current-and-the-stress">The Node under the Current and the Stress</h2>
 <h3 id="the-current-is-regular-where-the-velocity-is-not">The current is regular where the velocity is not</h3>
-<p>The velocity diverges at the node and the current does not, because the density vanishes faster. With a phase winding $n$ the gradient of the phase is $\vec\nabla_\Phi\theta_{\mathrm{phs}}=n\,\hat\varphi/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is</p>
+<p>The velocity diverges at the node and the current does not, because the density vanishes faster. With a phase winding $n$ the gradient of the phase is $\vec\nabla_\Phi\theta_{\mathrm{phs}}=n\,\hat{\omicron_{\mathrm{azi}}}/r$ in cylindrical coordinates about the axis, so the velocity's magnitude is</p>
 <p>$$
 \lvert\vec v\rvert=\frac{h\lvert n\rvert}{2\pi m\,r},
 $$</p>
@@ -202,9 +202,9 @@ $$</p>
 <h3 id="the-vortex-ansatz-and-what-it-leaves-to-the-field-equation">The vortex ansatz, and what it leaves to the field equation</h3>
 <p>A phase winding and a real amplitude turn the field equation into two real equations, and the node is compatible with both. Write</p>
 <p>$$
-\tilde\Xi=f(r)\,e^{in\varphi}\,e^{-ik_t r'_t}\,e_t
+\tilde\Xi=f(r)\,e^{in\omicron_{\mathrm{ang}}}\,e^{-ik_t r'_t}\,e_t
 $$</p>
-<p>with $f$ real and positive away from the axis, $r$ the distance from the axis, $\varphi$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\frac{h}{2\pi} c\,k_t$. The action is $S_{\tilde\Xi}=\frac{h}{2\pi}(n\varphi-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi} n\,\hat\varphi/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\frac{h}{2\pi} k_t$.</p>
+<p>with $f$ real and positive away from the axis, $r$ the distance from the axis, $\omicron_{\mathrm{ang}}$ the angle about it and $k_t$ the temporal wave number of the ansatz, the energy being $E=\frac{h}{2\pi} c\,k_t$. The action is $S_{\tilde\Xi}=\frac{h}{2\pi}(n\omicron_{\mathrm{ang}}-k_t r'_t)$, so $\vec\nabla_\Phi S_{\tilde\Xi}=\frac{h}{2\pi} n\,\hat{\omicron_{\mathrm{azi}}}/r$ and $\partial S_{\tilde\Xi}/\partial r'_t=-\frac{h}{2\pi} k_t$.</p>
 <p>The transport equation is satisfied identically. It reads $\vec\nabla_\Phi\cdot(\rho_{\mathrm{num}}\vec\nabla_\Phi S_{\tilde\Xi})-\partial(\rho_{\mathrm{num}}\partial S_{\tilde\Xi}/\partial r'_t)/\partial r'_t=0$; the first term is the divergence of a purely azimuthal field whose magnitude depends on $r$ alone, and the second is the time derivative of a quantity that does not depend on time. Both vanish.</p>
 <p>The amplitude equation is one ordinary differential equation in $r$. With $\Box_\Phi=\Delta_\Phi-\partial^{2}/\partial {r'_t}^{2}$ and the phase above, the polar form's first equation becomes</p>
 <p>$$
@@ -350,7 +350,7 @@ $$</p>
 <td>Distance from the nodal axis</td>
 </tr>
 <tr>
-<td>$\varphi$</td>
+<td>$\omicron_{\mathrm{ang}}$</td>
 <td>Angle about the axis</td>
 </tr>
 <tr>

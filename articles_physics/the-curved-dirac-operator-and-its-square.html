@@ -154,9 +154,9 @@ $$</p>
 <p>is the Laplace–Beltrami operator acting on the field, with $G$ the inverse metric written as a matrix because it is the inverse and not a component. With $\vec\nabla_\Phi^{*}\vec\nabla_\Phi=-\Box_{g,\Phi}$ the identity is the standard Lichnerowicz formula $\vec\nabla_\Phi^{*}\vec\nabla_\Phi+\tfrac14\mathrm{Ric}$ in Lorentzian signature, the form of <em>Spin Geometry</em>.</p>
 <p><strong>The reading.</strong> The square is taken on the <strong>basis operator</strong>: the operator acting on $\mathbb{B}$ read as a four-dimensional complex vector space, that is, its left-regular representation. Its representative is not the coefficient matrix of left multiplication by $\tilde F_\mu$ — that matrix squares with a vector cross term left over. It is the sum of the four frame basis operators of the matrix-representation conventions, weighted by the inverse vierbein. The four close on the plain weight $\varepsilon_a$, with $\varepsilon=(1,-1,-1,-1)$:</p>
 <p>$$
-\{iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\nu(a)}},\,iL_{\mathrm{axf},e_b}R_{\mathrm{axf},\vec e_{\nu(b)}}\}=2\varepsilon_a\delta_{ab}I_4,
+\{iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}},\,iL_{\mathrm{axf},e_b}R_{\mathrm{axf},\vec e_{\mathrm{spt}(b)}}\}=2\varepsilon_a\delta_{ab}I_4,
 $$</p>
-<p>with $\nu(t)=x$ and $\nu(\eta)=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.</p>
+<p>with $\mathrm{spt}(t)=x$ and $\mathrm{spt}(\eta)=y$. Those are the Clifford relations of a Dirac spinor, and they are why the result is the Lichnerowicz formula rather than some other second-order operator.</p>
 <p><strong>Why the algebra element does not square to a scalar.</strong> In the rigid frame $\tilde\nabla_\Phi^{2}$ carries the vector term $-2i\sum_\eta\vec e_\eta\,\partial^2/\partial r'_t\partial x_\eta$, so the algebra square is a biquaternion-valued operator and not the scalar Lichnerowicz square. The identity is true of the basis operator and false of the algebra element, and a version of this article that omitted the distinction would be wrong.</p>
 <p><strong>The sign, fixed by the flat limit.</strong> The basis operators square to $+I_4$ on the time leg and to $-I_4$ on each spatial leg, so the rigid square is $\partial^2/\partial{r'_t}^2-\Delta_\Phi=-\Box_{g,\Phi}$. The curvature term must then carry the opposite sign to the Laplacian term, which is the sign displayed. No sign is chosen freely: the flat limit and the signature fix it.</p>
 <p><strong>The check that was run.</strong> The identity was recomputed on a conformal metric in two dimensions, in both sign conventions of the basis operators, with the connection taken from the frame. It held identically in the geometer's convention, in which the basis operators square to minus the norm, and the sign flips with the convention as it must.</p>
@@ -283,8 +283,8 @@ $$</p>
 <td>Lichnerowicz square, taken on the basis operator</td>
 </tr>
 <tr>
-<td>$iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\nu(a)}}$</td>
-<td>the four frame basis operators; $\nu(t)=x$, $\nu(\eta)=y$</td>
+<td>$iL_{\mathrm{axf},e_a}R_{\mathrm{axf},\vec e_{\mathrm{spt}(a)}}$</td>
+<td>the four frame basis operators; $\mathrm{spt}(t)=x$, $\mathrm{spt}(\eta)=y$</td>
 </tr>
 <tr>
 <td>$\varepsilon_a$</td>

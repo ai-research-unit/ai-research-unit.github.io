@@ -76,17 +76,17 @@
 <p>Why that is a result and not a tautology. In the free rung the vorticity vanishes and the mode basis is the whole of the physics, since the density, the velocity and the quantum layer are all readable mode by mode. Here the vorticity is non-zero and no mode carries it. The two rungs have the same Fourier basis and different physics, and the difference is a property of the connection, which is external to the field. The transform tells the two apart by one quantity: whether the profile of the connection is constant.</p>
 <p>Position in the block. This is the charged companion of <a href="the-fourier-transform-and-the-schrodinger-fluid.html">The Fourier Transform and the Schrödinger Fluid</a> and the Fourier companion of <a href="the-charged-schrodinger-fluid.html">The Charged Schrödinger Fluid: The Vorticity Is the Magnetic Field</a>. It repeats, at this rung, the mode-counting finding of <a href="the-fourier-transform-and-the-coupled-dirac-equation-in-biquaternionic-polar-variables.html">The Fourier Transform and the Coupled Dirac Equation in Biquaternionic Polar Variables</a>, and it repeats it deliberately: the two rungs ask the same question and the answer is the same, with the vorticity named in place of the mode count.</p>
 <h2 id="conventions">Conventions</h2>
-<p>The charged companion's: $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$ with $\varphi$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{2\pi i\varkappa}{h}A_\mu$, and the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are</p>
+<p>The charged companion's: $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$ with $\omicron_{\mathrm{pot}}$ and $\vec A$ real, the coupling $\varkappa$ being minus the electric charge, the covariant derivative $\partial_\mu+\frac{2\pi i\varkappa}{h}A_\mu$, and the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\Gamma}{h})$ with $\Gamma$ real. The field is central, $\tilde\Xi=\varrho\,e^{i\theta_{\mathrm{pha}}}\varepsilon\,e_t$, and the two invariants are</p>
 <p>$$
 \vec\pi=\frac{h}{2\pi}\nabla\theta_{\mathrm{pha}}-q\vec A=\vec\nabla_\Phi S-q\vec A,
 \qquad
-\mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi,
+\mathcal E=-\frac{h}{2\pi}\,\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\omicron_{\mathrm{pot}},
 \qquad
 \vec v=\frac{\vec\pi}{m}.
 $$</p>
-<p>The transform's symbol rule is the free companion's. The curvature is $\vec B=\vec\nabla_\Phi\times\vec A$ and $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$.</p>
+<p>The transform's symbol rule is the free companion's. The curvature is $\vec B=\vec\nabla_\Phi\times\vec A$ and $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$.</p>
 <h2 id="the-mode-of-a-flat-connection">The Mode of a Flat Connection</h2>
-<p><strong>A constant connection leaves the mode a mode.</strong> Take $\tilde A_\Phi$ constant, so that $\vec B=0$ and $\varphi$ is constant. A plane wave $\tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}e_t$ is a solution with the label</p>
+<p><strong>A constant connection leaves the mode a mode.</strong> Take $\tilde A_\Phi$ constant, so that $\vec B=0$ and $\omicron_{\mathrm{pot}}$ is constant. A plane wave $\tilde\Xi=a\,e^{i(\vec k\cdot\vec r-\omega t')}e_t$ is a solution with the label</p>
 <p>$$
 \vec\pi=\frac{h}{2\pi}\vec k-q\vec A,
 \qquad
@@ -95,7 +95,7 @@ $$</p>
 \vec\nabla_\Phi\times\vec v=0 ,
 $$</p>
 <p>and the last equality is the article's first result. The velocity is constant and its curl is exactly zero, and the check on one hundred events gave $\max\lvert\nabla\times\vec v\rvert=2.5\times10^{-16}$ for a constant $\vec A$.</p>
-<p>The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\varphi=-\partial_{t'}\chi$ the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.</p>
+<p>The constant connection is a pure gradient and the mode is free in disguise. With $\vec A=\vec\nabla_\Phi\chi$ and $\omicron_{\mathrm{pot}}=-\partial_{t'}\chi$ the gauge transformation $\lambda=\exp(\frac{2\pi i\varkappa\chi}{h})$ removes the connection and multiplies the field by a central phase, which moves the label and changes nothing else. So a mode of a flat connection is gauge-equivalent to a free mode with a translated wave number, and the translation is $\frac{2\pi \varkappa\vec A}{h}$.</p>
 <p>The two labels, and which one the fluid reads.</p>
 <p>$$
 \tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-\frac{2\pi \varkappa}{h}\tilde A_\Phi ,
@@ -202,7 +202,7 @@ $$</p>
 <td>The coupling; minus the electric charge</td>
 </tr>
 <tr>
-<td>$\tilde A_\Phi=i(\varphi/c)e_t+\vec A$</td>
+<td>$\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$</td>
 <td>The connection</td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ $$</p>
 <td>The kinetic momentum</td>
 </tr>
 <tr>
-<td>$\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\varphi$</td>
+<td>$\mathcal E=-\frac{h}{2\pi}\partial_{t'}\theta_{\mathrm{pha}}+\varkappa\omicron_{\mathrm{pot}}$</td>
 <td>The kinetic energy</td>
 </tr>
 <tr>
@@ -218,7 +218,7 @@ $$</p>
 <td>The velocity</td>
 </tr>
 <tr>
-<td>$\vec B=\vec\nabla_\Phi\times\vec A$, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$</td>
+<td>$\vec B=\vec\nabla_\Phi\times\vec A$, $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$</td>
 <td>The field strength</td>
 </tr>
 <tr>

@@ -310,14 +310,14 @@ $$</p>
 <p>A single basis operator is a tensor $a\otimes b$ read through $L_aR_b$, so its coefficient matrix has rank one; the basis operators form the cone $\operatorname{rank}c(M)\le1$, and every element of $M_4(\mathbb{C})$ is a sum of at most four of them. $\gamma_5$ is a pure right multiplier, which is what makes it a chirality: its side is the right slot, and its eigenvalues are $\pm1$ with multiplicity two each.</p>
 <p><strong>The current in the older spelling.</strong> The conserved current of the older literature is the bilinear built with the generator of the coordinate and with the adjoint row,</p>
 <p>$$
-j_\mu=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_\mu}R_{\vec e_{\nu(\mu)}}\tilde\Xi,
+j_\mu=\tilde\Xi^{\dagger}iR_{\vec e_x}\,iL_{e_\mu}R_{\vec e_{\mathrm{spt}(\mu)}}\tilde\Xi,
 \qquad
-\nu(t)=x,\ \nu(\eta)=y .
+\mathrm{spt}(t)=x,\ \mathrm{spt}(\eta)=y .
 $$</p>
 <p>Its time component is $\tilde\Xi^{\dagger}\tilde\Xi$ and its spatial components are $\tilde\Xi^{\dagger}\alpha_\eta\tilde\Xi$ with $\alpha_\eta=L_{\vec e_\eta}R_{\vec e_z}$.</p>
 <p><strong>The dictionary, and the point of making it.</strong> Every ingredient of that display is a basis operator of the algebra except one: the adjoint row is built on $iR_{\vec e_x}$, a one-sided operator. Read as a pairing, the same object is</p>
 <p>$$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\nu(\mu)}\bigr)\vec e_x\bigr),
+j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr),
 $$</p>
 <p>a scalar part of three factors: the field, an invertible element, the field again. <strong>The adjoint row and the right multiplier $\vec e_x$ are the same datum in two spellings.</strong> The older form hides it inside the adjoint; the pairing shows it as the last factor, and the last factor is a frame unit and not a field.</p>
 <p><strong>Why this matters here.</strong> It says that the conserved current is available inside the algebra, as a <em>triple</em> product with two fixed frame units, and that no fourth object and no second carrier is needed. It also says why the naive bilinear $i\tilde\Xi\tilde\Xi^{*}$ cannot be the current: a product of the field with its conjugate carries no fixed unit, so the two parts enter with the same sign, and the current needs them with opposite signs. The variational companion proves this, computes the repaired object, and shows the failure on an exact solution.</p>
@@ -373,7 +373,7 @@ $$</p>
 <p>The magnetic moment sits in the same factor as the velocity, so the Larmor rate is $ϙB/m$ and the gyromagnetic ratio is two; the article locates the coupling and cites the derivation of the value.</p>
 <p>The conserved current is not a product of the field with its conjugate. It is a pairing with two fixed frame units, which is the older literature's adjoint row in the algebra's spelling:</p>
 <p>$$
-j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\nu(\mu)}\bigr)\vec e_x\bigr).
+j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}\,i\,\bigl(i e_\mu\tilde\Xi\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x\bigr).
 $$</p>
 <p>The naive $i\tilde\Xi\tilde\Xi^{*}$ is gauge invariant and of the density sign, and the two parts enter it with the same sign, so it is not conserved. The variational companion proves the positive statement and exhibits the failure.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
@@ -470,7 +470,7 @@ $$</p>
 <td>Components of the canonical $\tilde K_\Phi$; the mass shell is displaced by $-\frac{2\pi ϙ}{h}\tilde A_{\Phi}$</td>
 </tr>
 <tr>
-<td>$j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}i(i e_\mu\tilde\Xi\vec e_{\nu(\mu)})\vec e_x\bigr)$</td>
+<td>$j_\mu=\mathrm{Sc}\bigl(\tilde\Xi^{*}i(i e_\mu\tilde\Xi\vec e_{\mathrm{spt}(\mu)})\vec e_x\bigr)$</td>
 <td>The conserved current; two fixed frame units</td>
 </tr>
 <tr>

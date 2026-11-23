@@ -87,27 +87,27 @@ $$</p>
 <h3 id="induction">Induction</h3>
 <p>A character of $B$ is fixed by two data:</p>
 <p>$$
-\chi_{\nu,n_{\mathrm{par}}}\bigl(m(\theta_{\mathrm{axr}})a(\theta_{\mathrm{rpd}})n\bigr)=e^{in_{\mathrm{par}}\theta_{\mathrm{axr}}}\,e^{\nu\theta_{\mathrm{rpd}}},
-\qquad n_{\mathrm{par}}\in\tfrac12\mathbb{Z},\quad \nu\in\mathbb{C}.
+\chi_{\digamma_{\mathrm{par}},n_{\mathrm{par}}}\bigl(m(\theta_{\mathrm{axr}})a(\theta_{\mathrm{rpd}})n\bigr)=e^{in_{\mathrm{par}}\theta_{\mathrm{axr}}}\,e^{\digamma_{\mathrm{par}}\theta_{\mathrm{rpd}}},
+\qquad n_{\mathrm{par}}\in\tfrac12\mathbb{Z},\quad \digamma_{\mathrm{par}}\in\mathbb{C}.
 $$</p>
-<p>The induced representation $I^{\nu,n_{\mathrm{par}}}=\operatorname{Ind}_B^G\chi_{\nu,n_{\mathrm{par}}}$ acts on sections of a line bundle over the sky, and the parameter $\nu$ is the <strong>exponent</strong>: it is the weight with which the boost subgroup rescales the fibre.</p>
+<p>The induced representation $I^{\digamma_{\mathrm{par}},n_{\mathrm{par}}}=\operatorname{Ind}_B^G\chi_{\digamma_{\mathrm{par}},n_{\mathrm{par}}}$ acts on sections of a line bundle over the sky, and the parameter $\digamma_{\mathrm{par}}$ is the <strong>exponent</strong>: it is the weight with which the boost subgroup rescales the fibre.</p>
 <h3 id="why-this-is-the-right-starting-point">Why This Is the Right Starting Point</h3>
-<p>Every irreducible admissible representation of $SL_2(\mathbb{C})$ is a subquotient of some $I^{\nu,n_{\mathrm{par}}}$ — the subquotient theorem. So the series is not an example; it is the catalogue, and the finite-dimensional representations are among its subquotients.</p>
+<p>Every irreducible admissible representation of $SL_2(\mathbb{C})$ is a subquotient of some $I^{\digamma_{\mathrm{par}},n_{\mathrm{par}}}$ — the subquotient theorem. So the series is not an example; it is the catalogue, and the finite-dimensional representations are among its subquotients.</p>
 <h3 id="the-parameter">The Parameter</h3>
-<p>$\nu$ is complex and $n_{\mathrm{par}}$ is discrete. Two identifications reduce the parameter space: $\nu$ and $-\nu$ give contragredient representations, and $n_{\mathrm{par}}$ and $-n_{\mathrm{par}}$ give conjugates. So the essential parameter is the pair $(\nu\bmod\pm,n_{\mathrm{par}}\bmod\pm)$, and the physical labels of the block are read from it.</p>
+<p>$\digamma_{\mathrm{par}}$ is complex and $n_{\mathrm{par}}$ is discrete. Two identifications reduce the parameter space: $\digamma_{\mathrm{par}}$ and $-\digamma_{\mathrm{par}}$ give contragredient representations, and $n_{\mathrm{par}}$ and $-n_{\mathrm{par}}$ give conjugates. So the essential parameter is the pair $(\digamma_{\mathrm{par}}\bmod\pm,n_{\mathrm{par}}\bmod\pm)$, and the physical labels of the block are read from it.</p>
 <h2 id="the-principal-series">The Principal Series</h2>
 <h3 id="the-definition">The Definition</h3>
-<p>The <strong>principal series</strong> is $\nu$ purely imaginary:</p>
+<p>The <strong>principal series</strong> is $\digamma_{\mathrm{par}}$ purely imaginary:</p>
 <p>$$
-\nu=i\rho,\qquad \rho\in\mathbb{R}.
+\digamma_{\mathrm{par}}=i\rho,\qquad \rho\in\mathbb{R}.
 $$</p>
-<p>The character is then unitary: $\lvert e^{\nu\theta_{\mathrm{rpd}}}\rvert=1$ for real $\theta_{\mathrm{rpd}}$, so $\chi_{\nu,n_{\mathrm{par}}}$ is a character into the unit circle.</p>
+<p>The character is then unitary: $\lvert e^{\digamma_{\mathrm{par}}\theta_{\mathrm{rpd}}}\rvert=1$ for real $\theta_{\mathrm{rpd}}$, so $\chi_{\digamma_{\mathrm{par}},n_{\mathrm{par}}}$ is a character into the unit circle.</p>
 <h3 id="why-it-is-unitary">Why It Is Unitary</h3>
 <p>Induction preserves unitarity when the inducing character is unitary and the inducing subgroup is closed and unimodular-compatible. Concretely, the inner product</p>
 <p>$$
 \langle f_1,f_2\rangle=\int_{G/B}\overline{f_1(x)}\,f_2(x)\,d\mu(x)
 $$</p>
-<p>on $L^{2}$ sections is invariant, because the cocycle that appears when the group acts is $\chi_{\nu,n_{\mathrm{par}}}$ evaluated on the $B$-component, and its modulus is one. So the invariance of the inner product is the statement $\lvert\chi\rvert=1$.</p>
+<p>on $L^{2}$ sections is invariant, because the cocycle that appears when the group acts is $\chi_{\digamma_{\mathrm{par}},n_{\mathrm{par}}}$ evaluated on the $B$-component, and its modulus is one. So the invariance of the inner product is the statement $\lvert\chi\rvert=1$.</p>
 <p>That is the whole proof, and it is worth contrasting with the finite-dimensional case: there, the same computation produces the factor $e^{(n_{\mathrm{par}}+n)\theta_{\mathrm{rpd}}}$, whose modulus is not one, and the representation fails.</p>
 <h3 id="the-labels">The Labels</h3>
 <p>The principal series is labelled by</p>
@@ -119,25 +119,25 @@ $$</p>
 <p>The principal series is the home of the massless and the continuous-spin representations. The label $\rho$ is the continuous-spin parameter, and the discrete label $n_{\mathrm{par}}$ is a helicity-like charge. The block's massless representations sit at the boundary values of $\rho$ where the module becomes reducible.</p>
 <h2 id="the-complementary-series">The Complementary Series</h2>
 <h3 id="the-definition-of-the-complementary-series">The Definition of the Complementary Series</h3>
-<p>The <strong>complementary series</strong> is $\nu$ real with</p>
+<p>The <strong>complementary series</strong> is $\digamma_{\mathrm{par}}$ real with</p>
 <p>$$
-0<\lvert\nu\rvert<1,
+0<\lvert\digamma_{\mathrm{par}}\rvert<1,
 $$</p>
 <p>with the same inducing data and a <em>different</em> inner product.</p>
 <h3 id="why-the-math40-product-fails-there">Why the $L^{2}$ Product Fails There</h3>
-<p>For real $\nu$ the character has modulus $e^{\nu\theta_{\mathrm{rpd}}}\neq1$, so the $L^{2}$ inner product is not invariant: the group action rescales sections by a positive factor that depends on the point. The naive product is therefore not the one to use.</p>
+<p>For real $\digamma_{\mathrm{par}}$ the character has modulus $e^{\digamma_{\mathrm{par}}\theta_{\mathrm{rpd}}}\neq1$, so the $L^{2}$ inner product is not invariant: the group action rescales sections by a positive factor that depends on the point. The naive product is therefore not the one to use.</p>
 <h3 id="the-nonlocal-product">The Nonlocal Product</h3>
 <p>Instead one uses the intertwining operator</p>
 <p>$$
-(J_{\nu}f)(x)=\int_{G/B}\lvert c(x,y)\rvert^{-1-\nu}f(y)\,d\mu(y),
+(J_{\digamma_{\mathrm{par}}}f)(x)=\int_{G/B}\lvert c(x,y)\rvert^{-1-\digamma_{\mathrm{par}}}f(y)\,d\mu(y),
 $$</p>
 <p>which is a nonlocal integral operator with a kernel singular on the diagonal, and one defines</p>
 <p>$$
-\langle f_1,f_2\rangle_{\nu}=\langle f_1,J_{\nu}f_2\rangle_{L^{2}} .
+\langle f_1,f_2\rangle_{\digamma_{\mathrm{par}}}=\langle f_1,J_{\digamma_{\mathrm{par}}}f_2\rangle_{L^{2}} .
 $$</p>
-<p>The operator $J_\nu$ is positive definite exactly in the range $\lvert\nu\rvert<1$ (for the spherical case), and that positivity is the unitarity of the complementary series. Outside the range it has negative directions, and the "inner product" is indefinite.</p>
+<p>The operator $J_{\digamma_{\mathrm{par}}}$ is positive definite exactly in the range $\lvert\digamma_{\mathrm{par}}\rvert<1$ (for the spherical case), and that positivity is the unitarity of the complementary series. Outside the range it has negative directions, and the "inner product" is indefinite.</p>
 <h3 id="why-it-is-called-complementary">Why It Is Called Complementary</h3>
-<p>Because its parameter range complements the principal series' in the plane of $\nu$: the principal series is the imaginary axis, the complementary series is the open interval $(-1,1)$ on the real axis, and the two together with their boundary points exhaust the unitary parameters for this family. The name is a statement about the parameter plane and not about the representations' contents.</p>
+<p>Because its parameter range complements the principal series' in the plane of $\digamma_{\mathrm{par}}$: the principal series is the imaginary axis, the complementary series is the open interval $(-1,1)$ on the real axis, and the two together with their boundary points exhaust the unitary parameters for this family. The name is a statement about the parameter plane and not about the representations' contents.</p>
 <h2 id="the-discrete-series-and-temperedness">The Discrete Series and Temperedness</h2>
 <h3 id="the-discrete-series">The Discrete Series</h3>
 <p>The third series is not induced from the Borel subgroup at all. A unitary module belongs to the <strong>discrete series</strong> when its matrix coefficients are square-integrable on the group, so that the module occurs as a direct summand of the regular representation $L^{2}(G)$ rather than as a direct integral of induced modules.</p>
@@ -146,30 +146,30 @@ $$</p>
 <h3 id="temperedness">Temperedness</h3>
 <p>A unitary module is <strong>tempered</strong> when its matrix coefficients lie in $L^{2+\epsilon}(G)$ for every $\epsilon>0$: they decay at least as fast as an $L^{2}$ function, but the borderline case is not required.</p>
 <ul>
-<li>The principal series is tempered. Its parameters are on the imaginary axis, $\nu=i\rho$ with $\rho$ real, and the growth of the matrix coefficients is oscillatory rather than exponential.</li>
-<li>The complementary series is not tempered. Its parameter is real with $\lvert\nu\rvert<1$, and its matrix coefficients decay more slowly than $L^{2}$ requires; that is the same failure that forced the nonlocal inner product.</li>
+<li>The principal series is tempered. Its parameters are on the imaginary axis, $\digamma_{\mathrm{par}}=i\rho$ with $\rho$ real, and the growth of the matrix coefficients is oscillatory rather than exponential.</li>
+<li>The complementary series is not tempered. Its parameter is real with $\lvert\digamma_{\mathrm{par}}\rvert<1$, and its matrix coefficients decay more slowly than $L^{2}$ requires; that is the same failure that forced the nonlocal inner product.</li>
 <li>The discrete series is tempered, since square-integrability is stronger than membership in every $L^{2+\epsilon}$.</li>
 </ul>
 <p>Temperedness is the property that decides membership in the Plancherel formula. The Plancherel measure of the Lorentz group is supported on the tempered part of the unitary dual, with a continuous density on the principal series; the complementary series is a set of measure zero for it. So a reader who asks "which modules enter the harmonic analysis of the group" gets the tempered ones, and a reader who asks "which modules describe a physical state" gets them too, because a state must be normalisable in a sense the group respects.</p>
 <h2 id="the-exceptional-cases">The Exceptional Cases</h2>
-<h3 id="the-boundary-math62">The Boundary $\lvert\nu\rvert=1$</h3>
-<p>At $\nu=\pm1$ the intertwining operator degenerates: it is no longer invertible, and the representation is reducible, with a finite-dimensional subquotient. The complementary series therefore terminates at $\nu=\pm1$ and does not continue to larger $\lvert\nu\rvert$.</p>
+<h3 id="the-boundary-math62">The Boundary $\lvert\digamma_{\mathrm{par}}\rvert=1$</h3>
+<p>At $\digamma_{\mathrm{par}}=\pm1$ the intertwining operator degenerates: it is no longer invertible, and the representation is reducible, with a finite-dimensional subquotient. The complementary series therefore terminates at $\digamma_{\mathrm{par}}=\pm1$ and does not continue to larger $\lvert\digamma_{\mathrm{par}}\rvert$.</p>
 <p>This is the same phenomenon as a spin chain's "special" couplings: the parameter value at which an operator's positivity fails is a value at which the module changes its composition.</p>
 <h3 id="the-reducibility-points">The Reducibility Points</h3>
-<p>At special $\nu$ — integers, with parity fixed by $n_{\mathrm{par}}$ — the induced representation has a finite-dimensional subquotient, and the quotient or submodule is one of the representations of <em>The Finite-Dimensional Representations and Their Unitarity Defect</em>. So the finite-dimensional representations are not a separate family: they are the points of the parameter plane at which the series has a kink.</p>
-<h3 id="math68">$\nu=0$</h3>
-<p>$\nu=0$ is the middle of the complementary interval and the limit of the principal series as $\rho\to0$. The representation there is reducible and has the trivial representation as a subquotient. So $\nu=0$ is simultaneously the interior of the complementary range and a reducibility point, which is why the spherical function's analysis needs the parameter kept away from zero.</p>
+<p>At special $\digamma_{\mathrm{par}}$ — integers, with parity fixed by $n_{\mathrm{par}}$ — the induced representation has a finite-dimensional subquotient, and the quotient or submodule is one of the representations of <em>The Finite-Dimensional Representations and Their Unitarity Defect</em>. So the finite-dimensional representations are not a separate family: they are the points of the parameter plane at which the series has a kink.</p>
+<h3 id="math68">$\digamma_{\mathrm{par}}=0$</h3>
+<p>$\digamma_{\mathrm{par}}=0$ is the middle of the complementary interval and the limit of the principal series as $\rho\to0$. The representation there is reducible and has the trivial representation as a subquotient. So $\digamma_{\mathrm{par}}=0$ is simultaneously the interior of the complementary range and a reducibility point, which is why the spherical function's analysis needs the parameter kept away from zero.</p>
 <h3 id="the-degenerate-math72">The Degenerate $n_{\mathrm{par}}$</h3>
 <p>$n_{\mathrm{par}}=0$ is the spherical case: the representation has a vector fixed by the maximal compact subgroup. For $n_{\mathrm{par}}\neq0$ the series is nonspherical and the analysis of the intertwining operator is the same with a matrix-valued kernel. The block uses the spherical case, and the statement of the parameter range is the same.</p>
 <h3 id="the-two-signs">The Two Signs</h3>
-<p>The contragredient of $I^{\nu,n_{\mathrm{par}}}$ is $I^{-\nu,-n_{\mathrm{par}}}$. For imaginary $\nu$ this is the complex conjugate representation, $I^{\bar\nu,-n_{\mathrm{par}}}$, so the principal series is closed under contragredience and its members are self-contragredient up to the exchange $n_{\mathrm{par}}\to-n_{\mathrm{par}}$. For real $\nu$ the contragredient is a genuinely different member with the exponent's sign reversed. That is a real difference between the two series and it is why the complementary series is paired. The sign of $\nu$ is invisible in the principal series' labels and visible in the complementary series'.</p>
+<p>The contragredient of $I^{\digamma_{\mathrm{par}},n_{\mathrm{par}}}$ is $I^{-\digamma_{\mathrm{par}},-n_{\mathrm{par}}}$. For imaginary $\digamma_{\mathrm{par}}$ this is the complex conjugate representation, $I^{\bar\digamma_{\mathrm{par}},-n_{\mathrm{par}}}$, so the principal series is closed under contragredience and its members are self-contragredient up to the exchange $n_{\mathrm{par}}\to-n_{\mathrm{par}}$. For real $\digamma_{\mathrm{par}}$ the contragredient is a genuinely different member with the exponent's sign reversed. That is a real difference between the two series and it is why the complementary series is paired. The sign of $\digamma_{\mathrm{par}}$ is invisible in the principal series' labels and visible in the complementary series'.</p>
 <h2 id="the-labels-of-the-representations">The Labels of the Representations</h2>
 <h3 id="the-two-labels">The Two Labels</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>series</th>
-<th>$\nu$</th>
+<th>$\digamma_{\mathrm{par}}$</th>
 <th>continuous label</th>
 <th>discrete label</th>
 </tr>
@@ -183,8 +183,8 @@ $$</p>
 </tr>
 <tr>
 <td>complementary</td>
-<td>real, $0<\lvert\nu\rvert<1$</td>
-<td>$\nu$</td>
+<td>real, $0<\lvert\digamma_{\mathrm{par}}\rvert<1$</td>
+<td>$\digamma_{\mathrm{par}}$</td>
 <td>$n_{\mathrm{par}}\in\tfrac12\mathbb{Z}$</td>
 </tr>
 <tr>
@@ -198,7 +198,7 @@ $$</p>
 <h3 id="what-the-labels-are-not">What the Labels Are Not</h3>
 <p>They are not the mass and the spin. The mass and the spin are Poincaré labels, computed from the two Casimirs of <em>$P$, $T$ and the Representation Labels</em>; the labels $(\rho,n_{\mathrm{par}})$ are Lorentz labels, and a physical one-particle module is an induced representation of the Poincaré group whose fibre is a Lorentz module. The two label sets are related but not identical, and a reader who conflates them will expect the wrong counting.</p>
 <h3 id="the-casimir">The Casimir</h3>
-<p>On the series the Lorentz Casimir takes a continuous real value determined by $\nu$, and the value is monotone in $\lvert\nu\rvert$ on the complementary interval. At the reducibility points it coincides with the finite-dimensional value. The normalisation is a convention; the structural statement is that the Casimir is real on the whole unitary parameter set, which is exactly what unitarity requires.</p>
+<p>On the series the Lorentz Casimir takes a continuous real value determined by $\digamma_{\mathrm{par}}$, and the value is monotone in $\lvert\digamma_{\mathrm{par}}\rvert$ on the complementary interval. At the reducibility points it coincides with the finite-dimensional value. The normalisation is a convention; the structural statement is that the Casimir is real on the whole unitary parameter set, which is exactly what unitarity requires.</p>
 <h3 id="the-reading">The Reading</h3>
 <p>The finite-dimensional defect measured the growth of a representation under a boost. In the series there is no growth: the parameter is either imaginary, so the boost acts by a phase, or real and small, so the nonlocal product absorbs the growth. That is the sense in which the series is the "unitarised" version of the finite-dimensional labels.</p>
 <h2 id="what-the-block-uses">What the Block Uses</h2>
@@ -206,11 +206,11 @@ $$</p>
 <p>The boundary values of the principal series are the massless labels, and the helicity is the discrete label at the boundary. That is why the massless representations are "at the edge of the series" and not "the massless limit of a massive series": the parameter space's boundary is where they sit.</p>
 <h3 id="the-cosmological-and-thermal-uses">The Cosmological and Thermal Uses</h3>
 <p>The series is what a Lorentz-invariant thermal or cosmological two-point function is expanded in, because only unitary representations can appear in a spectral decomposition. The complementary series appears in the Euclidean continuation, where its parameter becomes the scaling dimension of a boundary operator.</p>
-<p>That last statement is the block's bridge to the conformal material: the complementary series' parameter is the shadow of a conformal dimension, and the bound $\lvert\nu\rvert<1$ is the unitarity bound.</p>
+<p>That last statement is the block's bridge to the conformal material: the complementary series' parameter is the shadow of a conformal dimension, and the bound $\lvert\digamma_{\mathrm{par}}\rvert<1$ is the unitarity bound.</p>
 <h3 id="what-is-not-done-here">What Is Not Done Here</h3>
 <p>The block does not construct the series as a Hilbert space, does not prove the positivity of the intertwining operator, and does not compute the Plancherel measure. Those are three substantial theorems, they are in the references, and none of the block's physical statements depends on them.</p>
 <h2 id="summary">Summary</h2>
-<p>The irreducible unitary representations of the Lorentz group are induced from the Borel subgroup with a character $e^{2im\alpha}e^{\nu\theta_{\mathrm{rpd}}}$. For $\nu$ purely imaginary the induced $L^{2}$ representation is unitary with the ordinary inner product, and that is the principal series, labelled $(i\rho,n_{\mathrm{par}})$. For real $\nu$ with $\lvert\nu\rvert<1$ a nonlocal intertwining operator supplies an invariant product and the representation is unitary, and that is the complementary series. At $\lvert\nu\rvert=1$ the operator degenerates, and at integer $\nu$ the representation has a finite-dimensional subquotient, which is how the finite-dimensional representations of the previous article appear as points of the same catalogue. The finite-dimensional defect has no counterpart here: the parameter is imaginary or small, and the boost's growth is a phase or is absorbed. The third series is the discrete one: it is not induced from the Borel subgroup but occurs as a direct summand of $L^{2}(G)$, and it exists because the group and its maximal compact subgroup have the same rank. Of the three, the principal and the discrete series are tempered and the complementary series is not, so the Plancherel density lives on the principal series.</p>
+<p>The irreducible unitary representations of the Lorentz group are induced from the Borel subgroup with a character $e^{2im\alpha}e^{\digamma_{\mathrm{par}}\theta_{\mathrm{rpd}}}$. For $\digamma_{\mathrm{par}}$ purely imaginary the induced $L^{2}$ representation is unitary with the ordinary inner product, and that is the principal series, labelled $(i\rho,n_{\mathrm{par}})$. For real $\digamma_{\mathrm{par}}$ with $\lvert\digamma_{\mathrm{par}}\rvert<1$ a nonlocal intertwining operator supplies an invariant product and the representation is unitary, and that is the complementary series. At $\lvert\digamma_{\mathrm{par}}\rvert=1$ the operator degenerates, and at integer $\digamma_{\mathrm{par}}$ the representation has a finite-dimensional subquotient, which is how the finite-dimensional representations of the previous article appear as points of the same catalogue. The finite-dimensional defect has no counterpart here: the parameter is imaginary or small, and the boost's growth is a phase or is absorbed. The third series is the discrete one: it is not induced from the Borel subgroup but occurs as a direct summand of $L^{2}(G)$, and it exists because the group and its maximal compact subgroup have the same rank. Of the three, the principal and the discrete series are tempered and the complementary series is not, so the Plancherel density lives on the principal series.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -225,15 +225,15 @@ $$</p>
 <td>the minimal parabolic subgroup</td>
 </tr>
 <tr>
-<td>$\chi_{\nu,n_{\mathrm{par}}}$</td>
-<td>the character $e^{in_{\mathrm{par}}\theta_{\mathrm{axr}}}e^{\nu\theta_{\mathrm{rpd}}}$</td>
+<td>$\chi_{\digamma_{\mathrm{par}},n_{\mathrm{par}}}$</td>
+<td>the character $e^{in_{\mathrm{par}}\theta_{\mathrm{axr}}}e^{\digamma_{\mathrm{par}}\theta_{\mathrm{rpd}}}$</td>
 </tr>
 <tr>
 <td>$\theta_{\mathrm{rpd}}$</td>
 <td>the boost coordinate of the Borel element, i.e. the rapidity, written $\theta_{\mathrm{rpd}}$ elsewhere in the block</td>
 </tr>
 <tr>
-<td>$\nu$</td>
+<td>$\digamma_{\mathrm{par}}$</td>
 <td>the exponent, the continuous parameter</td>
 </tr>
 <tr>
@@ -241,15 +241,15 @@ $$</p>
 <td>the discrete charge, the $M$-weight</td>
 </tr>
 <tr>
-<td>$I^{\nu,n_{\mathrm{par}}}$</td>
+<td>$I^{\digamma_{\mathrm{par}},n_{\mathrm{par}}}$</td>
 <td>the induced representation</td>
 </tr>
 <tr>
-<td>$J_\nu$</td>
+<td>$J_{\digamma_{\mathrm{par}}}$</td>
 <td>the intertwining operator</td>
 </tr>
 <tr>
-<td>$\lvert\nu\rvert<1$</td>
+<td>$\lvert\digamma_{\mathrm{par}}\rvert<1$</td>
 <td>the complementary range</td>
 </tr>
 </tbody>

@@ -288,14 +288,14 @@ with the coefficient $1/2$ confirmed by a numerical limit in which both rapiditi
 $$
 V_{ij} = -\frac{Gm^{2}}{\left|x_{B,j}-x_{A,i}\right|} .
 $$</p>
-<p><strong>The branch phases, and where they sit in the algebra.</strong> After a laboratory time $t$ the branch $|ij\rangle$ carries the phase $\varphi_{ij} = -V_{ij}\frac{2\pi t}{h}$, which is the phase of a $*$-unitary element of the material sector,
+<p><strong>The branch phases, and where they sit in the algebra.</strong> After a laboratory time $t$ the branch $|ij\rangle$ carries the phase $\omicron_{\mathrm{ang},ij} = -V_{ij}\frac{2\pi t}{h}$, which is the phase of a $*$-unitary element of the material sector,
 $$
-\tilde U_{ij} = \cos\varphi_{ij}\,e_t + \sin\varphi_{ij}\,\left(i e_t\right), \qquad \tilde U_{ij}\tilde U_{ij}^{*} = e_t ,
+\tilde U_{ij} = \cos\omicron_{\mathrm{ang},ij}\,e_t + \sin\omicron_{\mathrm{ang},ij}\,\left(i e_t\right), \qquad \tilde U_{ij}\tilde U_{ij}^{*} = e_t ,
 $$
 verified on 100 random phases. The generator is $i e_t$, the central element whose square is $-e_t$: the clock of the composition product, and the element the probability product does not contain. A phase drawn from an energy is therefore a material-sector element, while the path qubit it acts on is an informational-sector one.</p>
 <p><strong>The entangling phase.</strong> Three of the four phases are removable. A common phase on $A$'s branches, a common phase on $B$'s branches, and a global phase are each absorbed by a $*$-unitary factor acting on one subsystem or on the pair, and none of them can change the entanglement. The one combination that no local operation touches is
 $$
-\delta = \varphi_{00}+\varphi_{11}-\varphi_{01}-\varphi_{10}
+\delta = \omicron_{\mathrm{ang},00}+\omicron_{\mathrm{ang},11}-\omicron_{\mathrm{ang},01}-\omicron_{\mathrm{ang},10}
 = \frac{2\pi Gm^{2}t}{h}\left(\frac{2}{R}-\frac{1}{R+d}-\frac{1}{R-d}\right)
 = -\frac{2\pi 2Gm^{2}t\,d^{2}}{h\,R\left(R^{2}-d^{2}\right)} ,
 $$
@@ -307,7 +307,7 @@ agreeing with the closed form to a relative $3.9\times10^{-4}$ over 100 configur
 <p><strong>What the combination measures.</strong> It is a mixed second difference of the potential. A constant potential and a uniform field both give $\delta = 0$, verified on 100 configurations of $V(x)=ax+b$, and the leading surviving term is the tidal one, of order $d^{2}/R^{3}$. A uniform potential shifts every branch equally; a uniform field is removed by the freely falling frame. Only the difference of the field across the superposition leaves a record in the state. This is the equivalence principle read as a statement about the algebra rather than as a restriction on the potential, and it is the same statement as the unital property of the channel above: what a common factor does is invisible, and what a <em>difference</em> does is not.</p>
 <p><strong>The state and the concurrence.</strong> With both masses initially in the symmetric superposition $\tfrac{1}{\sqrt2}(|0\rangle+|1\rangle)$ and no other coupling, the state after the interaction is pure,
 $$
-\left|\tilde{Ξ}\right\rangle = \tfrac12\sum_{ij}e^{i\varphi_{ij}}\left|ij\right\rangle ,
+\left|\tilde{Ξ}\right\rangle = \tfrac12\sum_{ij}e^{i\omicron_{\mathrm{ang},ij}}\left|ij\right\rangle ,
 $$
 and its concurrence is
 $$
@@ -375,7 +375,7 @@ $$
 $$
 The channel is $*$-unitary exactly when the Wigner rotation is branch-independent, and otherwise it changes the entanglement. In the symmetric two-branch case it is the dephasing about the Wigner axis, with the parallel Bloch component preserved and the transverse components damped by $\cos\theta_{\mathrm{wgn}}$; the single-particle entropy produced is $h((1+r_{\mathrm{red}})/2)$, and the concurrence of a maximally entangled pair decreases monotonically with the boost rapidity, equalling $\cos\theta_{\mathrm{wgn}}$ for the symmetric configuration. For a state with $|\xi\rangle = (|\!\uparrow\uparrow\rangle+|\!\downarrow\downarrow\rangle)/\sqrt2$, $A$ in a symmetric two-branch superposition with $\theta = 0.8$ and speed $0.5c$, and $B$ at sharp momentum along the boost axis, the concurrence falls from $1$ at $\theta_{\mathrm{rpd}} = 0$ to $0.98127650$ at $\theta_{\mathrm{rpd}} = 1$ and $0.92765115$ at $\theta_{\mathrm{rpd}} = 2.5$, with the von Neumann entropy of the two-qubit spin state rising from $0$ to $0.076532$ and $0.224468$.</p>
 <p>The invariant behind the computation is the spinor symplectic concurrence $\mathcal{C}(\tilde{Ξ}) = |\tilde{Ξ}^{\mathsf T}(\epsilon\otimes\epsilon)\tilde{Ξ}|$, which is exactly $SL(2,\mathbb{C})\otimes SL(2,\mathbb{C})$-invariant because $\tilde U_{\mathrm{lor}}{}^{\mathsf T}\epsilon\tilde U_{\mathrm{lor}} = \langle\tilde U_{\mathrm{lor}}\rangle_{\natural}\epsilon = \epsilon$. The frame dependence appears only in the normalized ratio, because a boost preserves the bilinear pairing but not the spinor norm; a sharp momentum has a single branch and the effect cancels. The entanglement of the full state, momentum included, is frame-independent, and no local operation changes the marginal statistics of the other particle; what is frame-dependent is the partial description that discards the momentum, and what produces it is the momentum dependence of the little-group rotor.</p>
-<p>The same channel is produced by a gravitational potential, and there the branch phase is the one a laboratory can supply. Two masses $m$ separated by $R$, each superposed over $d$, accumulate the entangling phase $\delta = (Gm^{2}\frac{2\pi t}{h})(2/R-1/(R+d)-1/(R-d)) = -2Gm^{2}td^{2}/(\frac{h}{2\pi} R(R^{2}-d^{2}))$, which is a mixed second difference of the potential and therefore vanishes for a constant potential and for a uniform field: only the tidal term survives. The branch phase $\varphi_{ij} = -V_{ij}\frac{2\pi t}{h}$ is a $*$-unitary element of the material sector generated by $i e_t$, the two path qubits are informational-sector elements, and the concurrence of the resulting pure state is $\left|\sin(\delta/2)\right|$ — $0.105286$ after one second for $m = 10^{-14}$ kg, $R = 200\,\mu$m and $d = 100\,\mu$m, reaching $1$ at $14.9$ s. The framework contributes no deviation from this standard phase; it contributes the identification of the mechanism as a material-sector phase acting on an informational-sector state, which is the cross-sector coupling the <em>Empirical Status</em> article records as absent elsewhere.</p>
+<p>The same channel is produced by a gravitational potential, and there the branch phase is the one a laboratory can supply. Two masses $m$ separated by $R$, each superposed over $d$, accumulate the entangling phase $\delta = (Gm^{2}\frac{2\pi t}{h})(2/R-1/(R+d)-1/(R-d)) = -2Gm^{2}td^{2}/(\frac{h}{2\pi} R(R^{2}-d^{2}))$, which is a mixed second difference of the potential and therefore vanishes for a constant potential and for a uniform field: only the tidal term survives. The branch phase $\omicron_{\mathrm{ang},ij} = -V_{ij}\frac{2\pi t}{h}$ is a $*$-unitary element of the material sector generated by $i e_t$, the two path qubits are informational-sector elements, and the concurrence of the resulting pure state is $\left|\sin(\delta/2)\right|$ — $0.105286$ after one second for $m = 10^{-14}$ kg, $R = 200\,\mu$m and $d = 100\,\mu$m, reaching $1$ at $14.9$ s. The framework contributes no deviation from this standard phase; it contributes the identification of the mechanism as a material-sector phase acting on an informational-sector state, which is the cross-sector coupling the <em>Empirical Status</em> article records as absent elsewhere.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -454,11 +454,11 @@ The channel is $*$-unitary exactly when the Wigner rotation is branch-independen
 <td>Potential energy of branch $ij$, with $x_{A,i}$, $x_{B,j}$ the branch positions</td>
 </tr>
 <tr>
-<td>$\varphi_{ij} = -V_{ij}\frac{2\pi t}{h}$</td>
-<td>Branch phase; the $*$-unitary element is $\cos\varphi_{ij}\,e_t+\sin\varphi_{ij}\,ie_t$</td>
+<td>$\omicron_{\mathrm{ang},ij} = -V_{ij}\frac{2\pi t}{h}$</td>
+<td>Branch phase; the $*$-unitary element is $\cos\omicron_{\mathrm{ang},ij}\,e_t+\sin\omicron_{\mathrm{ang},ij}\,ie_t$</td>
 </tr>
 <tr>
-<td>$\delta = \varphi_{00}+\varphi_{11}-\varphi_{01}-\varphi_{10}$</td>
+<td>$\delta = \omicron_{\mathrm{ang},00}+\omicron_{\mathrm{ang},11}-\omicron_{\mathrm{ang},01}-\omicron_{\mathrm{ang},10}$</td>
 <td>Gravitational entangling phase, $= -2Gm^{2}td^{2}/\left(\frac{h}{2\pi} R\left(R^{2}-d^{2}\right)\right)$</td>
 </tr>
 </tbody>

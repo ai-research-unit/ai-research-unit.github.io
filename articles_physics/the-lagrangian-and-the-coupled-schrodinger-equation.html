@@ -76,16 +76,16 @@
 <p>$$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
 -\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
-+ϙ\varphi\,\tilde\Xi^{*}\tilde\Xi\Big],
++ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$</p>
-<p>with $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$ and $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$. It is the free action with two replacements: every spatial derivative becomes the covariant one, and one term in the potential is added. That is the whole of the coupling in the action, and it is the same one rule that the element-form companion states for the equation.</p>
+<p>with $D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$ and $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$. It is the free action with two replacements: every spatial derivative becomes the covariant one, and one term in the potential is added. That is the whole of the coupling in the action, and it is the same one rule that the element-form companion states for the equation.</p>
 <p><strong>Three findings.</strong></p>
-<p><em>First, the action is real for a general element, and the reality is structural.</em> The kinetic term is Hermitian, the gradient term is a sum of moduli and therefore a positive real number, and the potential term is Hermitian because $ϙ\varphi$ is a real scalar. $\mathrm{Sc}$ of a Hermitian element is real, so the three terms are real separately and no cancellation between them is needed (§<em>The Action in Element Form, Coupled</em>).</p>
-<p><em>Second, the connection enters the action in one place and the variation puts it in two.</em> The action carries the connection inside $D_\eta$ and inside $ϙ\varphi$; the equation carries it in the kinetic operator and in the potential. The two are one substitution seen from two sides, and the boundary-term identity that relates the gradient form to the operator form is what makes the variation produce the equation and not a different one (§<em>The Variation</em>).</p>
+<p><em>First, the action is real for a general element, and the reality is structural.</em> The kinetic term is Hermitian, the gradient term is a sum of moduli and therefore a positive real number, and the potential term is Hermitian because $ϙ\omicron_{\mathrm{pot}}$ is a real scalar. $\mathrm{Sc}$ of a Hermitian element is real, so the three terms are real separately and no cancellation between them is needed (§<em>The Action in Element Form, Coupled</em>).</p>
+<p><em>Second, the connection enters the action in one place and the variation puts it in two.</em> The action carries the connection inside $D_\eta$ and inside $ϙ\omicron_{\mathrm{pot}}$; the equation carries it in the kinetic operator and in the potential. The two are one substitution seen from two sides, and the boundary-term identity that relates the gradient form to the operator form is what makes the variation produce the equation and not a different one (§<em>The Variation</em>).</p>
 <p><em>Third, the local phase transformation leaves the action invariant exactly, with no boundary term.</em> The kinetic term gains $-ϙ\,\partial_{t'}\Gamma\,n$ and the potential term gains $+ϙ\,\partial_{t'}\Gamma\,n$, and the two gains are equal and opposite. The gradient term is invariant by covariance. So the invariance is term by term, and it is the clearest statement of why the covariant derivative and the potential are one object (§<em>The Constraints the Action Imposes: Gauge Invariance of the Action</em>).</p>
 <p><strong>What is not claimed.</strong> The action is not new: it is the standard action of a non-relativistic charged scalar field, written in the algebra's letters. The current it delivers is the element-form companion's current, not a second one. No new prediction and no new solution. The article's content is the closure of the variational statement — the action's reality, the variation's exactness, the invariance's exactness, and the current's identity with the equation's — and the honest record of the one thing it does not do, which is the local energy flux.</p>
 <h2 id="conventions">Conventions</h2>
-<p><strong>The conventions are restated here so that every sign below is checkable from this page alone.</strong> The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\varphi/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy is $-ϙ\varphi$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.</p>
+<p><strong>The conventions are restated here so that every sign below is checkable from this page alone.</strong> The algebra, the two sectors, the pairing $\mathrm{Sc}(\cdot^{*}\cdot)$, the two settings and the letters are the free variational companion's, with one addition: the connection $\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$, the coupling $ϙ$, and the covariant derivative $\tilde\nabla_{\mathrm{gco},\Phi}=\tilde\nabla_\Phi+\frac{2\pi iϙ}{h}\tilde A_\Phi$. The charge $ϙ$ is minus the electric charge of the older convention, so the mechanical momentum is $\vec\pi=-i \frac{h}{2\pi}\nabla-q\vec A$ and the potential energy is $-ϙ\omicron_{\mathrm{pot}}$. Time is $t'$ and $r'_t=c\,t'$ is the parent's material length.</p>
 <h2 id="the-action-in-element-form-coupled">The Action in Element Form, Coupled</h2>
 <p><strong>The kinetic term is Hermitian.</strong> Write $K=\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)$. Then</p>
 <p>$$
@@ -96,8 +96,8 @@ $$</p>
 <p>$$
 \mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)=\sum_{\mu=0}^{3}\big|(D_\eta\tilde\Xi)_\mu\big|^{2}\ \ge 0,
 $$</p>
-<p>a sum of four moduli. This is the one place where the coupling changes the action's <em>sign structure</em> rather than its letters: the free gradient term is $\sum_\mu|\partial_\eta\tilde\Xi_\mu|^{2}$, also positive, and the covariant version is positive because $D_\eta$'s added term is anti-Hermitian and therefore does not disturb the modulus. The consequence is that the action's kinetic part is bounded below by zero and the energy is bounded below whenever $ϙ\varphi$ is, which is the diamagnetic statement in its variational form.</p>
-<p><strong>The potential term is Hermitian.</strong> $ϙ\varphi\,\tilde\Xi^{*}\tilde\Xi$ satisfies $[\cdot]^{*}=ϙ\varphi\,\tilde\Xi^{*}\tilde\Xi$ because $ϙ\varphi$ is real and $\tilde\Xi^{*}\tilde\Xi$ is Hermitian; its $\mathrm{Sc}$ is $ϙ\varphi\,n$ with $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)\ge0$. The sign is the companions': $+$ in the action, so that the variation gives $-ϙ\varphi$ in the equation, which is the Hamiltonian with the potential energy subtracted.</p>
+<p>a sum of four moduli. This is the one place where the coupling changes the action's <em>sign structure</em> rather than its letters: the free gradient term is $\sum_\mu|\partial_\eta\tilde\Xi_\mu|^{2}$, also positive, and the covariant version is positive because $D_\eta$'s added term is anti-Hermitian and therefore does not disturb the modulus. The consequence is that the action's kinetic part is bounded below by zero and the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is, which is the diamagnetic statement in its variational form.</p>
+<p><strong>The potential term is Hermitian.</strong> $ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi$ satisfies $[\cdot]^{*}=ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi$ because $ϙ\omicron_{\mathrm{pot}}$ is real and $\tilde\Xi^{*}\tilde\Xi$ is Hermitian; its $\mathrm{Sc}$ is $ϙ\omicron_{\mathrm{pot}}\,n$ with $n=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)\ge0$. The sign is the companions': $+$ in the action, so that the variation gives $-ϙ\omicron_{\mathrm{pot}}$ in the equation, which is the Hamiltonian with the potential energy subtracted.</p>
 <p><strong>The action is real.</strong> Each of the three terms is Hermitian and $\mathrm{Sc}$ of a Hermitian element is real, so the integrand is real and $S$ is real. No term needs the other to cancel an imaginary part, and that is a stronger statement than reality of the sum.</p>
 <p><strong>The pairing.</strong> The action uses $\mathrm{Sc}(\cdot^{*}\cdot)$ and not $\mathrm{Sc}(\cdot^{\natural}\cdot)$. The reason is the free article's: the Hamiltonian is Hermitian for that pairing, and the action that reproduces the equation must use the pairing the equation's Hermiticity is stated in. The quaternion conjugate is used in the corpus where the corpus uses it — the quaternionic norm, the second-order operators of the Klein–Gordon article, the current of the Dirac article — and it is not used here.</p>
 <p><strong>The two writings of the kinetic term.</strong> The action's gradient term can be written as a modulus or as an operator sandwich,</p>
@@ -111,28 +111,28 @@ $$</p>
 <p>$$
 E=\mathrm{Sc}\big(\tilde\Xi^{*}\tilde H^{\mathrm{gco}}_\Psi\tilde\Xi\big),
 \qquad
-\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A),
+\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A),
 $$</p>
 <p>and it is conserved because $\tilde H^{\mathrm{gco}}_\Psi$ commutes with itself: $\frac{d}{dt'}E=\mathrm{Sc}(\partial_{t'}\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi+\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\partial_{t'}\tilde\Xi)=0$ on solutions. This is the free article's computation with the shifted element, and it needs no new argument.</p>
 <p><strong>The operator setting.</strong> The energy density is</p>
 <p>$$
-e=\frac{h^{2}}{8\pi^{2}m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\varphi\,n,
+e=\frac{h^{2}}{8\pi^{2}m}\sum_\eta\mathrm{Sc}\big((D_\eta\tilde\Xi)^{*}(D_\eta\tilde\Xi)\big)-ϙ\omicron_{\mathrm{pot}}\,n,
 $$</p>
 <p>which is the free article's density with the covariant gradient and the potential energy. Its spatial integral is the expectation of $\hat H^{\mathrm{gco}}$ on solutions, up to a boundary term, and <strong>it is conserved for a time-independent connection</strong>: the potential's contribution to the time derivative is exactly the work the field does against the potential, and the two cancel in the integral.</p>
 <p><strong>What the article does not do.</strong> It does not print the local energy flux. The local conservation law $\partial_{t'}e+\vec\nabla_\Phi\cdot\vec s=0$ holds, but the flux that makes it hold is not the naive one and it carries a term in the potential's gradient; the article states the density, states the global conservation, and leaves the flux to the stress-energy article, which is where the improvement terms are treated. This is a deliberate omission and not a lemma: a wrong flux would be worse than none.</p>
-<p><strong>The positivity.</strong> The first term of $e$ is positive and the second is positive or negative according to the sign of $ϙ\varphi$; so the energy is bounded below whenever $ϙ\varphi$ is bounded above, which is the diamagnetic statement again and the reason the operator setting's flow is well posed for a confining potential.</p>
+<p><strong>The positivity.</strong> The first term of $e$ is positive and the second is positive or negative according to the sign of $ϙ\omicron_{\mathrm{pot}}$; so the energy is bounded below whenever $ϙ\omicron_{\mathrm{pot}}$ is bounded above, which is the diamagnetic statement again and the reason the operator setting's flow is well posed for a confining potential.</p>
 <h2 id="the-variation">The Variation</h2>
 <p><strong>Varying the field.</strong> Treating $\tilde\Xi$ and $\tilde\Xi^{*}$ as independent — legitimate over $\mathbb{C}$ — and integrating the gradient term by parts,</p>
 <p>$$
 \frac{\delta S}{\delta\tilde\Xi^{*}}
-=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{h^{2}}{8\pi^{2}m}\sum_\eta D_\eta^{2}\tilde\Xi+ϙ\varphi\,\tilde\Xi
-=\;i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi-\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi+ϙ\varphi\,\tilde\Xi .
+=i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi+\frac{h^{2}}{8\pi^{2}m}\sum_\eta D_\eta^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi
+=\;i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi-\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi+ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi .
 $$</p>
 <p>Setting it to zero and multiplying by $-1$ gives</p>
 <p>$$
-i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi-ϙ\varphi\,\tilde\Xi,
+i \frac{h}{2\pi}\,\partial_{t'}\tilde\Xi=\frac{1}{2m}\sum_\eta\big(-i \frac{h}{2\pi} D_\eta\big)^{2}\tilde\Xi-ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi,
 $$</p>
-<p>which is the companion's equation, with $\vec\pi_\eta=-i \frac{h}{2\pi} D_\eta$ the mechanical momentum. The two signs in the residual are worth one check: the gradient term's plus sign in $\delta S/\delta\tilde\Xi^{*}$ is the boundary-term identity of the preceding section read backwards, and the potential term's plus sign is the sign of $+ϙ\varphi$ in the action. Both signs are the free article's and the coupling only renames the letters.</p>
+<p>which is the companion's equation, with $\vec\pi_\eta=-i \frac{h}{2\pi} D_\eta$ the mechanical momentum. The two signs in the residual are worth one check: the gradient term's plus sign in $\delta S/\delta\tilde\Xi^{*}$ is the boundary-term identity of the preceding section read backwards, and the potential term's plus sign is the sign of $+ϙ\omicron_{\mathrm{pot}}$ in the action. Both signs are the free article's and the coupling only renames the letters.</p>
 <p><strong>Eight real equations, not one.</strong> $\delta\tilde\Xi^{*}$ ranges over the eight real components of $\mathbb{B}$, and $\mathrm{Sc}$ is non-degenerate, so the vanishing of the bracket for every variation is the vanishing of the bracket as an element of $\mathbb{B}$. The eight components of the residual are the eight real Euler–Lagrange equations; they are not independent statements but one statement in eight coordinates, and the article states it once. The polar companion is the same statement in the chart's eight coordinates, and its §<em>The Euler–Lagrange Equations</em> is where the coordinate version of this paragraph lives.</p>
 <p><strong>The conjugate variation.</strong> Varying $\tilde\Xi$ instead of $\tilde\Xi^{*}$ gives the conjugate of the residual, so no second equation is produced: the action is real and the two variations are conjugates. This is the free article's observation, and the coupling does not change it, because the connection's coefficients are real scalars and the action's reality is term by term.</p>
 <p><strong>What the variation does not produce.</strong> It does not produce a Maxwell equation. The connection is a fixed background here, and varying it would produce the inhomogeneous Maxwell equation with the current of §<em>The Noether Current</em> as source; that step belongs to the Maxwell article's action-and-source section and is not repeated. It also does not produce a constraint on the field's amplitude: the equation is linear, so the variation is a linear equation and the space of solutions is a vector space.</p>
@@ -143,7 +143,7 @@ $$</p>
 \qquad
 \vec A\longmapsto\vec A-\vec\nabla_\Phi\Gamma,
 \qquad
-\varphi\longmapsto\varphi+\partial_{t'}\Gamma .
+\omicron_{\mathrm{pot}}\longmapsto\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma .
 $$</p>
 <p><strong>The gradient term.</strong> $D_\eta\tilde\Xi\mapsto\lambda D_\eta\tilde\Xi$ by the covariance identity, and $\lambda$ is a central unit, so $|D_\eta\tilde\Xi|^{2}$ is invariant. The term contributes nothing to the variation of the action.</p>
 <p><strong>The kinetic term, and its gain.</strong> With $\vartheta=\frac{2\pi ϙ\Gamma}{h}$ the two halves of the kinetic term become</p>
@@ -159,7 +159,7 @@ $$</p>
 =-ϙ\,\partial_{t'}\Gamma\,\tilde\Xi^{*}\tilde\Xi,
 $$</p>
 <p>and taking $\mathrm{Sc}$ gives $-ϙ\,\partial_{t'}\Gamma\,n$.</p>
-<p><strong>The potential term, and its gain.</strong> $ϙ\varphi$ becomes $ϙ(\varphi+\partial_{t'}\Gamma)$, so the term gains $+ϙ\,\partial_{t'}\Gamma\,n$. <strong>The two gains are equal and opposite, and the action is invariant exactly.</strong> There is no boundary term to discard and no improvement to make: the local transformation is a symmetry of the Lagrangian and not only of the action.</p>
+<p><strong>The potential term, and its gain.</strong> $ϙ\omicron_{\mathrm{pot}}$ becomes $ϙ(\omicron_{\mathrm{pot}}+\partial_{t'}\Gamma)$, so the term gains $+ϙ\,\partial_{t'}\Gamma\,n$. <strong>The two gains are equal and opposite, and the action is invariant exactly.</strong> There is no boundary term to discard and no improvement to make: the local transformation is a symmetry of the Lagrangian and not only of the action.</p>
 <p><strong>Why the two gains match, and what it says.</strong> The kinetic gain is the derivative of the gauge function times the density, with the coupling's sign; the potential gain is the same object with the opposite sign. The matching is the statement that the covariant time derivative and the potential energy are one object split across two terms of the action — the split that the element-form companion records as the opposite signs of $D_t$ and $D_\eta$. A reader who wants a single sentence: <em>the action is invariant because the potential's shift and the phase's shift are the same shift.</em></p>
 <p><strong>What the invariance does not say.</strong> It says nothing about the operator setting's domains or about large gauge functions with nonzero winding; those are the polar companion's open question 2 and the flux discussion, and the action's invariance is local and does not decide them.</p>
 <h2 id="the-structural-consequence-the-lorentz-force">The Structural Consequence: The Lorentz Force</h2>
@@ -169,7 +169,7 @@ $$</p>
 \qquad
 \mathcal P_\eta=\frac{h}{2\pi}\,\mathrm{Im}\,\mathrm{Sc}\big(\tilde\Xi^{*}D_\eta\tilde\Xi\big)=m\,j_\eta,
 $$</p>
-<p>with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.</p>
+<p>with $\mathcal P$ the momentum density, $T$ the stress tensor, $\rho_{\mathrm{chg}}:=ϙn$ the charge density, $\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$ and $\vec B=\vec\nabla_\Phi\times\vec A$. The overall minus sign is the coupling's: the corpus's $ϙ$ is minus the electric charge, so a charge density $\rho_{\mathrm{chg}}$ feels $-\rho_{\mathrm{chg}}(\vec E+\vec v\times\vec B)$ in these letters, which is $+q(\vec E+\vec v\times\vec B)$ in the older ones.</p>
 <p><strong>The status of the statement.</strong> It is the standard identity for the Schrödinger field, and the article states it and does not perform it: the computation requires the stress tensor's improvement term, and the free article's §<em>The Noether Currents</em> already points at the stress-energy article for that object. It is recorded here because it is the one place where the coupling's two entries in the equation — the covariant derivative and the potential — appear together in a single conservation law, and because §<em>Open Questions</em> lists it as the check that would close the article's variational ledger.</p>
 <p><strong>What the identity would show.</strong> That the field's momentum is not conserved, that the rate at which it is not conserved is the Lorentz force, and that the force is the sum of an electric part from the potential's gradient and a magnetic part from the current crossed with the field. The free article has no such statement because a free field has no force to feel.</p>
 <h2 id="the-noether-currents">The Noether Currents</h2>
@@ -199,9 +199,9 @@ $$</p>
 <p>$$
 S=\int dt'\,d^{3}x\;\mathrm{Sc}\Big[\frac{i h}{4\pi}\big(\tilde\Xi^{*}\partial_{t'}\tilde\Xi-(\partial_{t'}\tilde\Xi^{*})\tilde\Xi\big)
 -\frac{h^{2}}{8\pi^{2}m}\sum_\eta\big(D_\eta\tilde\Xi\big)^{*}\big(D_\eta\tilde\Xi\big)
-+ϙ\varphi\,\tilde\Xi^{*}\tilde\Xi\Big],
++ϙ\omicron_{\mathrm{pot}}\,\tilde\Xi^{*}\tilde\Xi\Big],
 $$</p>
-<p>and its variation with respect to $\tilde\Xi^{*}$ is the coupled Schrödinger equation. The action is real term by term: the kinetic term is Hermitian, the gradient term is a sum of moduli and positive, and the potential term is Hermitian because $ϙ\varphi$ is real.</p>
+<p>and its variation with respect to $\tilde\Xi^{*}$ is the coupled Schrödinger equation. The action is real term by term: the kinetic term is Hermitian, the gradient term is a sum of moduli and positive, and the potential term is Hermitian because $ϙ\omicron_{\mathrm{pot}}$ is real.</p>
 <p>The local phase transformation leaves the action invariant exactly, with the kinetic term gaining $-ϙ\partial_{t'}\Gamma\,n$ and the potential term gaining $+ϙ\partial_{t'}\Gamma\,n$. The two gains match because the potential's shift and the phase's shift are the same shift.</p>
 <p>The current is the free article's with covariant derivatives,</p>
 <p>$$
@@ -210,7 +210,7 @@ j_\eta=\frac{h}{4\pi mi}\,\mathrm{Sc}\Big(\tilde\Xi^{*}D_\eta\tilde\Xi-\big(D_\e
 j_t=n,
 $$</p>
 <p>and it has a second definition, $ϙj_\eta=-\partial L/\partial A_\eta$, which identifies it as the source of the Maxwell equation and shows why it is gauge invariant.</p>
-<p>The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in the constant setting, exactly conserved; the operator setting's energy density is the covariant modulus of the gradient minus $ϙ\varphi n$, with the integral conserved for a time-independent connection. The local flux is not printed here, and §<em>Open Questions</em> says so.</p>
+<p>The energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H^{\rm gco}_\Psi\tilde\Xi)$ in the constant setting, exactly conserved; the operator setting's energy density is the covariant modulus of the gradient minus $ϙ\omicron_{\mathrm{pot}} n$, with the integral conserved for a time-independent connection. The local flux is not printed here, and §<em>Open Questions</em> says so.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -253,8 +253,8 @@ $$</p>
 <td>The coupling; minus the electric charge of the older convention</td>
 </tr>
 <tr>
-<td>$\tilde A_\Phi=i(\varphi/c)e_t+\vec A$</td>
-<td>The material connection; $\varphi$ and $\vec A$ real</td>
+<td>$\tilde A_\Phi=i(\omicron_{\mathrm{pot}}/c)e_t+\vec A$</td>
+<td>The material connection; $\omicron_{\mathrm{pot}}$ and $\vec A$ real</td>
 </tr>
 <tr>
 <td>$D_\eta=\partial_\eta+\frac{2\pi iϙ}{h}A_\eta$</td>
@@ -281,7 +281,7 @@ $$</p>
 <td>The charge current and the charge density</td>
 </tr>
 <tr>
-<td>$\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\varphi)e_t+i(\vec h_\Psi-q\vec A)$</td>
+<td>$\tilde H^{\mathrm{gco}}_\Psi=(h_t-ϙ\omicron_{\mathrm{pot}})e_t+i(\vec h_\Psi-q\vec A)$</td>
 <td>The coupled Hamiltonian of the constant setting</td>
 </tr>
 <tr>
@@ -293,7 +293,7 @@ $$</p>
 <td>The gauge function and factor</td>
 </tr>
 <tr>
-<td>$\vec E=-\vec\nabla_\Phi\varphi-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$</td>
+<td>$\vec E=-\vec\nabla_\Phi\omicron_{\mathrm{pot}}-\partial_{t'}\vec A$, $\vec B=\vec\nabla_\Phi\times\vec A$</td>
 <td>The fields of the connection</td>
 </tr>
 </tbody>

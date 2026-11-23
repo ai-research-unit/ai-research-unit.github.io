@@ -123,7 +123,7 @@ $$</p>
 <h3 id="the-hamiltonian">The Hamiltonian</h3>
 <p>The Tavis–Cummings model couples $N$ two-level systems to a single bosonic mode with the Hamiltonian</p>
 <p>$$
-\tilde H_\Psi =h\nu_{c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\,\tilde S_{\Psi,\mathrm{tot},+}\right),
+\tilde H_\Psi =hf_{\mathrm{frq},c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger \tilde S_{\Psi,\mathrm{tot},-} + a\,\tilde S_{\Psi,\mathrm{tot},+}\right),
 $$</p>
 <p>where $a,a^\dagger$ are the mode operators, $\omega_c$ the mode frequency, $\omega_a$ the atomic transition frequency, and $g$ the single-spin coupling. The interaction conserves the total excitation number</p>
 <p>$$
@@ -133,7 +133,7 @@ $$</p>
 <h3 id="the-rotating-wave-approximation">The Rotating-Wave Approximation</h3>
 <p>The interaction kept is the <strong>rotating-wave</strong> term: the mode annihilates a photon while a spin is raised ($a\tilde S_{\Psi,\mathrm{tot},+}$), and creates one while a spin is lowered ($a^\dagger\tilde S_{\Psi,\mathrm{tot},-}$). The neglected counter-rotating terms $a^\dagger\tilde S_{\Psi,\mathrm{tot},+}$ and $a\tilde S_{\Psi,\mathrm{tot},-}$ oscillate at the sum frequency $\omega_a+\omega_c$ in the interaction picture and average to zero when $g\ll\omega_a,\omega_c$; this is the rotating-wave approximation, the same approximation as in the single-spin Rabi problem. In the algebra both terms are elements of $\mathbb{B}_{\Psi}$; the approximation selects the slowly varying combination.</p>
 <h3 id="the-single-excitation-sector-and-the-collective-rabi-splitting">The Single-Excitation Sector and the Collective Rabi Splitting</h3>
-<p>Restrict to the manifold with one excitation, spanned by the states $|1,\text{all down}\rangle$ (one photon, no excited spin) and $|0,\text{one excited}\rangle$ (no photon, one spin excited, in the symmetric combination). On resonance $\omega_a = \omega_c = \omega$ the two states are degenerate at energy $h\nu\,(1-N/2)$, and the interaction couples them with the matrix element</p>
+<p>Restrict to the manifold with one excitation, spanned by the states $|1,\text{all down}\rangle$ (one photon, no excited spin) and $|0,\text{one excited}\rangle$ (no photon, one spin excited, in the symmetric combination). On resonance $\omega_a = \omega_c = \omega$ the two states are degenerate at energy $hf_{\mathrm{frq}}\,(1-N/2)$, and the interaction couples them with the matrix element</p>
 <p>$$
 \langle  1,\text{all down}|g\,a\,\tilde S_{\Psi,\mathrm{tot},+}^{\vphantom{}^{*}}|0,\text{one excited}\rangle  =\frac{h}{2\pi}\,g\sqrt{N},
 $$</p>
@@ -155,7 +155,7 @@ $$</p>
 $$</p>
 <p>the <strong>Holstein–Primakoff</strong> transformation truncated at leading order. Substituting into the Tavis–Cummings Hamiltonian gives a quadratic two-mode problem,</p>
 <p>$$
-\tilde H_\Psi \approx  h\nu_{c}\,a^{\dagger}\,a+h\nu_{a}\left(\frac{N}{2}-b^\dagger b\right)
+\tilde H_\Psi \approx  hf_{\mathrm{frq},c}\,a^{\dagger}\,a+hf_{\mathrm{frq},a}\left(\frac{N}{2}-b^\dagger b\right)
 +\frac{h}{2\pi}\,g\sqrt{N}\left(a^\dagger b + a b^\dagger\right),
 $$</p>
 <p>whose normal modes are obtained by diagonalising the $2\times2$ coupling. On resonance the normal-mode splitting is again $2\,\frac{h}{2\pi}\,g\sqrt{N}$; the linearised theory is the large-$N$ limit of the exact single-excitation result, and it is the standard route to the collective normal modes.</p>
@@ -263,7 +263,7 @@ $$</p>
 <p>For $N$ spin-1/2 particles the collective operators $\tilde S_{\Psi,\mathrm{tot},\alpha} = \sum_i\tilde{S}_{\Psi,\alpha}^{(i)}$ are Hermitian elements of $\mathbb{B}_{\Psi}$ obeying the same $su(2)$ algebra with $s_{\mathrm{tot}} = N/2$. The symmetric states are the Dicke states $|s_{\mathrm{tot}},s_{\mathrm{tot},z}\rangle$, and the collective coherent state is the product of $N$ identical coherent states with mean spin $\frac{h\,N}{4\pi}\vec u$ and transverse variance $\frac{h^{2}\,N}{16\pi^{2}}$ — the standard quantum limit.</p>
 <p>The <strong>Tavis–Cummings model</strong>,</p>
 <p>$$
-\tilde H_\Psi =h\nu_{c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+}\right),
+\tilde H_\Psi =hf_{\mathrm{frq},c}\,a^{\dagger}\,a+ \omega_a\,\tilde S_{\Psi,\mathrm{tot},3} + g\left(a^\dagger\tilde S_{\Psi,\mathrm{tot},-} + a\tilde S_{\Psi,\mathrm{tot},+}\right),
 $$</p>
 <p>conserves the excitation number $a^\dagger a +\frac{2\pi \tilde{S}_{\Psi,\mathrm{tot},3}}{h}+ N/2$. In its single-excitation sector the collective coupling is $\frac{h}{2\pi}\,g\sqrt{N}$ and the collective Rabi splitting is</p>
 <p>$$
@@ -334,7 +334,7 @@ $$</p>
 <td>Single-spin coupling to the mode</td>
 </tr>
 <tr>
-<td>$\tilde H_\Psi =h\nu_{c}\,a^{\dagger}\,a+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$</td>
+<td>$\tilde H_\Psi =hf_{\mathrm{frq},c}\,a^{\dagger}\,a+ \omega_a\tilde S_{\Psi,\mathrm{tot},3} + g(a^\dagger\tilde S_{\Psi,\mathrm{tot},-}+a\tilde S_{\Psi,\mathrm{tot},+})$</td>
 <td>Tavis–Cummings Hamiltonian</td>
 </tr>
 <tr>

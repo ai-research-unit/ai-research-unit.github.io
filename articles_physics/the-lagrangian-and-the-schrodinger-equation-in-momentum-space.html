@@ -90,9 +90,9 @@ $$</p>
 <p>Hermitian coefficients. The counts are counts over Hermitian Hamiltonians. A non-Hermitian coefficient makes the action non-real at the potential term and the argument in the reality part of §<em>The Action</em> does not apply to the potential.</p>
 <p>One-time functionals. The action here is an integral over $t'$ and not over space, so the transform is in one variable. A four-dimensional action would need the transform in four, and the symbol would be a function of the four-wavevector; the structure of the argument would be unchanged.</p>
 <h2 id="the-action-in-momentum-space-the-quadratic-form-at-fixed-frequency">The Action in Momentum Space: The Quadratic Form at Fixed Frequency</h2>
-<p>One substitution. Put $\tilde\Xi=e^{-i\omega t'}\tilde X$ with $\tilde X$ constant. Then $\partial\tilde\Xi=-i\omega\tilde\Xi$, the antisymmetrised kinetic density is $h\nu\,\mathrm{Sc}(\tilde X^{*}\tilde X)$, and the action becomes</p>
+<p>One substitution. Put $\tilde\Xi=e^{-i\omega t'}\tilde X$ with $\tilde X$ constant. Then $\partial\tilde\Xi=-i\omega\tilde\Xi$, the antisymmetrised kinetic density is $hf_{\mathrm{frq}}\,\mathrm{Sc}(\tilde X^{*}\tilde X)$, and the action becomes</p>
 <p>$$
-S_\omega[\tilde X]=\int\mathrm{d}t'\;\mathrm{Sc}\Big[\tilde X^{*}\big(h\nu\,e_t-\tilde H_\Psi\big)\tilde X\Big]
+S_\omega[\tilde X]=\int\mathrm{d}t'\;\mathrm{Sc}\Big[\tilde X^{*}\big(hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi\big)\tilde X\Big]
 =\int\mathrm{d}t'\;\big\langle\tilde X,\sigma(\omega)\tilde X\big\rangle .
 $$</p>
 <p>The kernel is the symbol. The quadratic form's kernel is the symbol of the companion, element for element. Verified over one hundred draws of $(\tilde X,h_t,\vec h_\Psi,\omega)$: the difference between the two sides is zero to machine precision, because the two expressions are the same expression.</p>
@@ -118,14 +118,14 @@ $$</p>
 \tilde H_\Psi\,\tilde Z^{-1}=\tilde Z^{-1}\tilde H_\Psi,
 $$</p>
 <p>which is commutativity of the Hamiltonian with the root. The parent's uniformity requirement is a commutant condition, and only the central root satisfies it for every Hamiltonian.</p>
-<p>The spectrum's condition is the same condition. The frequencies are the zeros of $\det\big(h\nu(-i\tilde Z)-\tilde H_\Psi\big)$, and for $\tilde Z=\vec e_z$ the determinant is</p>
+<p>The spectrum's condition is the same condition. The frequencies are the zeros of $\det\big(hf_{\mathrm{frq}}(-i\tilde Z)-\tilde H_\Psi\big)$, and for $\tilde Z=\vec e_z$ the determinant is</p>
 <p>$$
-\Big(h_t^{2}-\big(h\nu+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
+\Big(h_t^{2}-\big(hf_{\mathrm{frq}}+h_z\big)^{2}-h_\perp^{2}\Big)^{2},
 $$</p>
-<p>with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros are $h\nu=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$.</p>
+<p>with $h_\perp^{2}=h_x^{2}+h_y^{2}$, verified to $1.4\times10^{-14}$. The zeros are $hf_{\mathrm{frq}}=-h_z\pm\sqrt{h_t^{2}-h_\perp^{2}}$, real exactly on the cone $h_t^{2}\ge h_x^{2}+h_y^{2}$.</p>
 <p>The counts. One hundred draws of a Hermitian Hamiltonian with coefficients uniform in $[-1,1]$: all roots real in $100$ draws for $i$, $32$ for $\vec e_z$, $30$ for $\vec e_x$ and $37$ for $(\vec e_x+\vec e_z)/\sqrt2$. For $\vec e_z$ the cone held in exactly the same $32$ draws, and on the cone the closed form matched to $2.0\times10^{-15}$.</p>
 <p>So the two requirements are different requirements. The action is real in $100$ draws out of $100$ for each root. The spectrum is real in $100$, $32$, $30$ and $37$. A variational principle that produces the equation therefore says nothing about whether the frequencies are real, and the gap between the two counts is the measure of how much it says nothing.</p>
-<p>Why the two differ. The action's reality is a statement about the kinetic coefficient's type: one of four types, decided by the root's Hermiticity. The spectrum's reality is a statement about the pencil $h\nu(-i\tilde Z)-\tilde H_\Psi$: two self-adjoint arrays, one of them indefinite, and an indefinite pencil has complex zeros. Type is weaker than definiteness, and the article's finding is that sentence.</p>
+<p>Why the two differ. The action's reality is a statement about the kinetic coefficient's type: one of four types, decided by the root's Hermiticity. The spectrum's reality is a statement about the pencil $hf_{\mathrm{frq}}(-i\tilde Z)-\tilde H_\Psi$: two self-adjoint arrays, one of them indefinite, and an indefinite pencil has complex zeros. Type is weaker than definiteness, and the article's finding is that sentence.</p>
 <p>What the parent's argument really establishes. The parent's uniqueness theorem is about the <em>flow</em>, and its conclusion is about the norm. Read here, it says that only the central root keeps the pencil positive for every Hamiltonian. The variational companion of this article does not contradict it and does not repeat it; it separates the two requirements that the parent's single argument carries.</p>
 <p>A caveat in the other direction. Reality of the spectrum does not imply that the action with that root is real for a non-Hermitian Hamiltonian, and the article makes no such claim. Both statements are about Hermitian coefficients, and both are about different objects: one about a functional, one about a pencil.</p>
 <h2 id="the-variation-the-boundary-term">The Variation: The Boundary Term</h2>
@@ -160,14 +160,14 @@ $$</p>
 <p>What the slope fixes. The slope fixes the normalisation of the transform and therefore the normalisation of $Q_N$ and $E$. One choice of $\frac{h}{2\pi}$ fixes both, and no second convention enters.</p>
 <h2 id="the-constraints-the-action-imposes-the-constraint-is-the-frequency">The Constraints the Action Imposes: The Constraint Is the Frequency</h2>
 <p>At fixed frequency the variation is algebraic. The substitution $\tilde\Xi=e^{-i\omega t'}\tilde X$ has removed the derivative, so the action $S_\omega$ is a quadratic form in the constant amplitude. Stationarity forces its bracket to vanish, and where the bracket is invertible the only stationary amplitude is zero.</p>
-<p>The condition is the eigenvalue problem the action section states. The bracket is $h\nu\,\mathrm{Sc}(\tilde X^{*}\tilde X)-\mathrm{Sc}\bigl[\tilde X^{*}\tilde H_\Psi\tilde X\bigr]$, so its singularity is exactly the statement that $\omega$ is an eigenvalue of $\frac{2\pi \tilde H_\Psi}{h}$. <strong>The constraint is a condition on the frequency and on nothing else</strong>; the amplitude is left free up to normalisation, which is not a restriction the action imposes.</p>
+<p>The condition is the eigenvalue problem the action section states. The bracket is $hf_{\mathrm{frq}}\,\mathrm{Sc}(\tilde X^{*}\tilde X)-\mathrm{Sc}\bigl[\tilde X^{*}\tilde H_\Psi\tilde X\bigr]$, so its singularity is exactly the statement that $\omega$ is an eigenvalue of $\frac{2\pi \tilde H_\Psi}{h}$. <strong>The constraint is a condition on the frequency and on nothing else</strong>; the amplitude is left free up to normalisation, which is not a restriction the action imposes.</p>
 <p>The set is the spectrum's zero set. At $k_m=0$ it is the paraboloid; a constant potential translates it, and the connection's temporal slot translates it again by its own amount. The shape is fixed by the kinetic term alone, which is why the constraint of this chart can be read off the first line of the action.</p>
 <p>What is absent. No Gauss law, because the connection is fixed at a mode; no boundary condition, because a variation at one frequency cannot see one; no constraint on the amplitude at a root. The constraint is purely kinematic, and the structural consequence's claim is exactly that nothing further is imposed.</p>
 <h2 id="the-structural-consequence-the-symbol-is-the-quadratic-form">The Structural Consequence: The Symbol Is the Quadratic Form</h2>
 <p>Two readings of one identity. Read as an operator, $\sigma(\omega)$ is an array; read as a quadratic form, it is $\tilde X\mapsto\langle\tilde X,\sigma(\omega)\tilde X\rangle$. The two agree on the diagonal and differ off it; the form determines the self-adjoint part of the array, and that is all the action can see.</p>
-<p>Reality of the form is self-adjointness. $S_\omega[\tilde X]$ is real for every $\tilde X$ exactly when $\sigma(\omega)$ is self-adjoint for the pairing, which is exactly when $h\nu\,e_t-\tilde H_\Psi$ is Hermitian, which is exactly when $\tilde H_\Psi$ is. <strong>So the reality of the fixed-frequency action at every frequency is the Hermiticity of the Hamiltonian</strong>, verified over one hundred draws on random $\tilde X$.</p>
+<p>Reality of the form is self-adjointness. $S_\omega[\tilde X]$ is real for every $\tilde X$ exactly when $\sigma(\omega)$ is self-adjoint for the pairing, which is exactly when $hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$ is Hermitian, which is exactly when $\tilde H_\Psi$ is. <strong>So the reality of the fixed-frequency action at every frequency is the Hermiticity of the Hamiltonian</strong>, verified over one hundred draws on random $\tilde X$.</p>
 <p>What the form cannot see. An anti-Hermitian part of the array contributes a purely imaginary value to the form and cancels in the sum with its conjugate. So the action is blind to the anti-Hermitian part, and its blindness is the reason the next section's statement is possible.</p>
-<p>The trace is the form on a basis. Summing the form over an orthonormal basis of the coefficient space gives $\operatorname{tr}\sigma(\omega)=4(h\nu-h_t)$. The action's trace is four times the mean frequency, and the determinant, which the form cannot see, is the square of the gap.</p>
+<p>The trace is the form on a basis. Summing the form over an orthonormal basis of the coefficient space gives $\operatorname{tr}\sigma(\omega)=4(hf_{\mathrm{frq}}-h_t)$. The action's trace is four times the mean frequency, and the determinant, which the form cannot see, is the square of the gap.</p>
 <h2 id="the-noether-currents-the-charge-per-mode">The Noether Currents: The Charge Per Mode</h2>
 <p>The charge at a mode. The Noether charge is the spatial integral of the temporal component of the current, and by Parseval it becomes a sum over modes. At one mode the summand is the bilinear of the amplitude,</p>
 <p>$$
@@ -183,9 +183,9 @@ $$</p>
 Q_N=\sum_j\lvert c_j\rvert^{2},
 $$</p>
 <p>which is Parseval's identity read as a charge. On a grid of $4096$ points a superposition of three integer modes gave $\sum_j\lvert c_j\rvert^{2}=1.562500000000$ and a grid norm equal to that number to the last printed digit. The norm is the charge, and the transform diagonalises it.</p>
-<p>The energy. The parent's constant-setting energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, which on a mode is $h\nu_j$ times the mode's norm. So</p>
+<p>The energy. The parent's constant-setting energy is $E=\mathrm{Sc}(\tilde\Xi^{*}\tilde H_\Psi\tilde\Xi)$, which on a mode is $hf_{\mathrm{frq},j}$ times the mode's norm. So</p>
 <p>$$
-E=\sum_j h\nu_j\lvert c_j\rvert^{2},
+E=\sum_j hf_{\mathrm{frq},j}\lvert c_j\rvert^{2},
 $$</p>
 <p>and the same grid gave $4.867427$ against $4.867500$ from the coefficients, the difference $7.3\times10^{-5}$ being the finite-difference gradient's error and not a structural one. Two functionals, one normalisation, and both diagonal in the transform.</p>
 <p>The weights are the spectrum. The energy's weights are the eigenvalues of the symbol, so the energy's transform is the symbol's value weighted by the charge. That is the sense in which the symbol is the action's Legendre transform, and the next section makes the statement exact.</p>
@@ -218,7 +218,7 @@ $$</p>
 <td>The action at fixed frequency; the quadratic form whose kernel is the symbol</td>
 </tr>
 <tr>
-<td>$\sigma(\omega)=h\nu\,e_t-\tilde H_\Psi$</td>
+<td>$\sigma(\omega)=hf_{\mathrm{frq}}\,e_t-\tilde H_\Psi$</td>
 <td>The symbol; the Euler–Lagrange operator of $S_\omega$</td>
 </tr>
 <tr>
@@ -246,7 +246,7 @@ $$</p>
 <td>The charge; Parseval's identity</td>
 </tr>
 <tr>
-<td>$E=\sum_j h\nu_j\lvert c_j\rvert^{2}$</td>
+<td>$E=\sum_j hf_{\mathrm{frq},j}\lvert c_j\rvert^{2}$</td>
 <td>The energy; the charge weighted by the spectrum</td>
 </tr>
 <tr>

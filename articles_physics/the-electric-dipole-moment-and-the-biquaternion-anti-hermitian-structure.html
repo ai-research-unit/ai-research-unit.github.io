@@ -314,14 +314,14 @@ $$</p>
 <p><strong>The transformation of the two terms.</strong> Under parity $\mathbf{P}$ the electric field is a vector, $\vec E\to-\vec E$, and the spin is a pseudovector, $i\vec e_\eta\to+i\vec e_\eta$, so the term $\vec E\cdot(\text{spin})\to-\vec E\cdot(\text{spin})$: the EDM term is $\mathbf{P}$-odd. Under time reversal $\mathbf{T}$ the electric field is even and the spin odd, so the term is odd again. Under charge conjugation $\mathbf{C}$ the field strength and the bilinear both change sign, and the term is even. The EDM is therefore $\mathbf{P}$- and $\mathbf{T}$-odd, and by the CPT theorem $\mathbf{CP}$-odd. The magnetic term $-\vec\mu\cdot\vec B$ is even under all three. The contrast is exact, and it is the chirality basis operator that carries it: the two operators differ by the composition with the chirality basis operator, and removing or restoring that basis operator is what flips the parity.</p>
 <p><strong>The bilinears.</strong> The sixteen bilinears fall into five shapes — scalar, vector, tensor, axial vector, pseudoscalar — and the chirality basis operator pairs the two that carry one free index and the two that carry two: the vector with the axial vector, the tensor with the pseudotensor. The four that enter here are</p>
 <p>$$
-\text{(vector)}\ \tilde{Ξ}^*i\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\bigr)\vec e_x,\qquad
+\text{(vector)}\ \tilde{Ξ}^*i\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\bigr)\vec e_x,\qquad
 \text{(tensor)}\ \tilde{Ξ}^*i\,\bigl(\mathcal{G}_{\mu\nu}\tilde{Ξ}\bigr)\vec e_x,
 $$</p>
 <p>$$
-\text{(axial)}\ \tilde{Ξ}^*i\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\vec e_z\bigr)\vec e_x,\qquad
+\text{(axial)}\ \tilde{Ξ}^*i\,\bigl(i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\vec e_z\bigr)\vec e_x,\qquad
 \text{(pseudotensor)}\ \tilde{Ξ}^*i\,\bigl(\mathcal{O}_{\mu\nu}\tilde{Ξ}\bigr)\vec e_x .
 $$</p>
-<p>Each is the field, the element the insertion multiplies it by, the unit $\vec e_{\nu(\mu)}$ that <em>Matrix Representations Conventions</em> attaches to the index, and the right factor $\vec e_x$ of the Dirac adjoint; the axial pair is the same product with the chirality factor appended, and in the last two the pair index decides which member of its family appears: the timelike pair gives the EDM insertion, the spatial pair the pseudotensor. A bilinear with free indices has no parity of its own, since its timelike and its spatial components transform oppositely; the parities are therefore those of the gauge-invariant operators, bilinear times field:</p>
+<p>Each is the field, the element the insertion multiplies it by, the unit $\vec e_{\mathrm{spt}(\mu)}$ that <em>Matrix Representations Conventions</em> attaches to the index, and the right factor $\vec e_x$ of the Dirac adjoint; the axial pair is the same product with the chirality factor appended, and in the last two the pair index decides which member of its family appears: the timelike pair gives the EDM insertion, the spatial pair the pseudotensor. A bilinear with free indices has no parity of its own, since its timelike and its spatial components transform oppositely; the parities are therefore those of the gauge-invariant operators, bilinear times field:</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -336,13 +336,13 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde{Ξ}^*i(i e_\mu\tilde{Ξ}\vec e_{\nu(\mu)})\vec e_x\,A_\mu$ (charge)</td>
+<td>$\tilde{Ξ}^*i(i e_\mu\tilde{Ξ}\vec e_{\mathrm{spt}(\mu)})\vec e_x\,A_\mu$ (charge)</td>
 <td>vector</td>
 <td>even</td>
 <td>even</td>
 <td>even</td>
 <td>even</td>
-<td>$i\,e_\mu$ on the left, $i\vec e_{\nu(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=k$</td>
+<td>$i\,e_\mu$ on the left, $i\vec e_{\mathrm{spt}(\mu)}$ on the right: Hermitian for $\mu=0$, anti-Hermitian for $\mu=k$</td>
 </tr>
 <tr>
 <td>$\tilde{Ξ}^*i(\mathcal{G}_{\mu\nu}\tilde{Ξ})\vec e_x\,F_{\mu\nu}$ (magnetic)</td>
@@ -371,7 +371,7 @@ $$</p>
 <p><strong>The electromagnetic vertex.</strong> The most general gauge-invariant vertex of an on-shell spin-$\tfrac12$ particle with the electromagnetic field, at momentum transfer $k_\Phi=p_2-p_1$, is</p>
 <p>$$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}
-= i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\,F_1(k_\Phi^2)
+= i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\,F_1(k_\Phi^2)
 +\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{G}_{\mu\nu}\tilde{Ξ}\,F_2(k_\Phi^2)
 +\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{O}_{\mu\nu}\tilde{Ξ}\,F_3(k_\Phi^2) + \cdots ,
 $$</p>
@@ -604,7 +604,7 @@ $$</p>
 <p>The form-factor decomposition</p>
 <p>$$
 \Gamma_\mu(p_2,p_1)\,\tilde{Ξ}
-= i\,e_\mu\,\tilde{Ξ}\,\vec e_{\nu(\mu)}\,F_1
+= i\,e_\mu\,\tilde{Ξ}\,\vec e_{\mathrm{spt}(\mu)}\,F_1
 +\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{G}_{\mu\nu}\tilde{Ξ}\,F_2
 +\frac{i}{2\,m\,c}\,k_{\Phi\nu}\,\mathcal{O}_{\mu\nu}\tilde{Ξ}\,F_3 + \cdots
 $$</p>
